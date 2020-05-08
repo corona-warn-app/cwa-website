@@ -26,4 +26,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Deploy
-      run: rsync -av --delete public/ /var/www/html/$GITHUB_REF
+      run: rsync -av --delete public/ /var/www/html/${GITHUB_REF##*/}
