@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a class="logo" href="/">
+      <img src="{{root}}assets/img/logo.svg" alt="App Logo" />
+    </a>
+  </div>
+  <div class="col col-xs-6 col-md-9">
+    <button class="btn-menu"></button>
+    <nav class="main-nav">
+      <button
+        class="btn-close"
+      ></button>
+      <ul class="menu">
+        <li class="item">
+          <a href="/about" class="{{#ifpage 'about'}}active{{/ifpage}}">About</a>
+        </li>
+        <li class="item">
+          <a href="/documentation"  class="{{#ifpage 'documentation'}}active{{/ifpage}}">Documentation</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
