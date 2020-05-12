@@ -26,6 +26,9 @@ jobs:
     - name: gulp build
       run: gulp build
 
+    - name: keepalive.html
+      run: echo "OK" > public/keepalive.html
+
     # Runs a single command using the runners shell
     - name: Deploy master
       uses: jakejarvis/s3-sync-action@master
