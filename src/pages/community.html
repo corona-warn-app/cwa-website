@@ -1,27 +1,21 @@
-<section>
-  <div class="row">
-    <div class="col col-xs-12">
-      <div class="headline">Community</div>
-      <div class="subheadline">
-        A better answer to distributed UI development - secure and infinitely scalable.
-      </div>
+<section class="">
+  <div class="container">
+    <div>
+      <h1>{{community.section-main.headline.title}}</h1>
+        <div>
+          {{#each community.section-main.headline.textblock}}
+            <p>{{.}}</p>
+          {{/each}}
+        </div>
+        {{> headline-component community.section-main.content.headline}}
     </div>
-  </div>
-  <div class="row">
-    
+    <div class="row">
+      
+    </div>
   </div>
 </section>
-
 <section>
-  <div class="col col-xs-12">
-      <div class="subheadline">
-        Who is involved?
-      </div>
-    </div>
-  <div class="row">
-    <div class="col col-xs-12">
-      {{> participants}}
-    </div>
+  <div class="container">
   </div>
 </section>
 
