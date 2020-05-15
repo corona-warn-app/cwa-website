@@ -10,10 +10,12 @@ $include-column-box-sizing: true !default;
 @import "functions";
 @import "variables";
 @import "mixins";
-@import "vendor/rfs";
+
+// @import "vendor/rfs";
 @import "containers";
 @import "grid";
 @import "utilities";
+
 // Only use the utilities we need
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-get-multiple(
@@ -31,26 +33,26 @@ $utilities: map-get-multiple(
     "align-content",
     "align-self",
     "margin",
-    "margin-x",
-    "margin-y",
-    "margin-top",
-    "margin-right",
-    "margin-bottom",
-    "margin-left",
-    "negative-margin",
-    "negative-margin-x",
-    "negative-margin-y",
-    "negative-margin-top",
-    "negative-margin-right",
-    "negative-margin-bottom",
-    "negative-margin-left",
-    "padding",
-    "padding-x",
-    "padding-y",
-    "padding-top",
-    "padding-right",
-    "padding-bottom",
-    "padding-left",
+    // "margin-x",
+    // "margin-y",
+    // "margin-top",
+    // "margin-right",
+    // "margin-bottom",
+    // "margin-left",
+    // "negative-margin",
+    // "negative-margin-x",
+    // "negative-margin-y",
+    // "negative-margin-top",
+    // "negative-margin-right",
+    // "negative-margin-bottom",
+    // "negative-margin-left",
+    // "padding",
+    // "padding-x",
+    // "padding-y",
+    // "padding-top",
+    // "padding-right",
+    // "padding-bottom",
+    // "padding-left",
     "text-align",
     "visibility",
     "align"
@@ -59,4 +61,11 @@ $utilities: map-get-multiple(
 
 @import "utilities/api";
 @import "reboot";
+// @import "forms";
 
+@import "type";
+@import "buttons";
+// @import "navbar";
+@import "nav";
+@import "header";
+@import "sticky-panel";

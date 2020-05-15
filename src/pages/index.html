@@ -1,7 +1,151 @@
 <section class="">
   <div class="container">
-    <div class="row align-center">
-      <h1>Index page</h1>
+    <div class="row">
+      <div class="col col-xs-12 col-md-6">
+        <h5>{{index.section-main.headline.titlecaption}}</h5>
+        <h1>{{index.section-main.headline.title}}</h1>
+        <p>{{index.section-main.content.text}}</p>
+        <p><a class="btn btn-secondary" href="{{index.section-main.content.button.url}}" title="{{index.section-main.content.button.title}}b">{{index.section-main.content.button.title}} <span class="icon icon-git"></span></a><br/>
+          {{#each index.section-main.content.links}}
+          <a class="btn btn-link btn-link-icon btn-link-icon_down" title="{{title}}" href="{{url}}">{{title}}</a>
+          {{/each}}
+        </p>
+      </div>
+      <div class="col col-xs-12 col-md-6">
+        <img class="" src="{{index.section-main.image.url}}" title="{{index.section-main.image.title}}" alt="{{index.section-main.image.title}}"/>
+      </div>
     </div>
   </div>
 </section>
+<section class="">
+  <div class="container">
+    {{#if index.section-image-ticker.headline}}
+    <div class="text-center">
+      {{> headline-component index.section-image-ticker.headline}}
+    </div>
+    {{/if}}
+    {{#if index.section-image-ticker.image-ticker}}
+    <div class="row">
+      {{#each index.section-image-ticker.image-ticker}}
+      {{#if image}}{{> image-ticker this=.}}{{/if}}
+      {{/each }}
+    </div>
+    {{/if}}
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    {{#if index.section-boxes}}
+      <div class="text-center">
+        {{> text-component index.section-boxes.title}}
+      </div>
+      {{#if index.section-boxes.boxes}}
+      <div class="row">
+        {{#each index.section-boxes.boxes}}
+          <div class="col-xs-12 col-md-6">
+            <div class="box">
+            {{> image-component this=.}}
+            {{> headline-component this=.}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      {{/if}}
+    {{/if}}
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    {{#if index.section-image-text}}
+    <div class="row">
+      <div class="col col-xs-12 col-md-6">
+        <img class="" src="{{index.section-image-text.image.url}}" title="{{index.section-image-text.image.title}}" alt="{{index.section-image-text.image.title}}"/>
+      </div>
+      <div class="col col-xs-12 col-md-6">
+        {{> headline-component index.section-image-text.headline}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</section>
+<section class="ff">
+  <div class="container">
+    {{#if index.section-feature-listing}}
+    <div class="text-center">
+      {{> headline-component index.section-feature-listing.headline}}
+    </div>
+    {{#each index.section-feature-listing.feature-list}}
+      <div class="text-center">
+        {{> image-component image}}
+        <h3 class="headline-light">{{headline.title}}</h3>
+      </div>
+      {{#if list}}
+      <ul class="feature-list row">
+        {{#each list}}
+          <li class="feature-list-item col col-md-6">{{> text-component this=.}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    {{/each}}
+    {{/if}}
+  </div>
+</section>
+<section class="">
+  <div class="container">
+    {{#if index.section-icon-listing}}
+    <div class="text-center">
+      {{> headline-component index.section-icon-listing.headline}}
+    </div>
+    <div class="icon-list">
+      {{#each index.section-icon-listing.icon-list}}
+        <a class="icon-list-item" href="{{url}}">
+          <img src="{{icon-url}}" alt="{{title}} Icon" />
+        </a>
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+</section>
+<sectio class="">
+  <div class="">
+    <div class="container">
+      <div class="text-center">
+        {{> headline-component index.section-join-project.headline}}
+      </div>
+      {{#if index.section-join-project.box}}
+        <div class="box box-flex">
+          {{> image-component index.section-join-project.box.image}}
+          <div class="box-inner">{{index.section-join-project.box.content.title}}</div>
+          <div class="box-inner box-inner_end">
+            {{#each index.section-join-project.box.content.links}}
+            <a class="btn btn-link btn-link-icon btn-link-icon_right" title="{{title}}" href="{{url}}">{{title}}</a>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      {{#if index.section-join-project.content}}
+        <div class="row">
+          {{#if index.section-join-project.content.icon-list}}
+          <div class="col col-xs-12 col-md-6 icon-list">
+            {{#each index.section-join-project.content.icon-list}}
+            <a class="icon-list-item" href="{{url}}">
+              <img src="{{icon-url}}" alt="{{title}} Icon" />
+            </a>
+            {{/each}}
+          </div>
+          {{/if}}
+          {{#if index.section-join-project.content.headline}}
+            <div class="col col-xs-12 col-md-6">
+              {{> headline-component index.section-join-project.content.headline}}
+            </div>
+          {{/if}}
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</sectio>

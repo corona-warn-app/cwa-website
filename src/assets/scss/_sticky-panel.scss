@@ -1,0 +1,15 @@
+.sticky-panel {
+    position: fixed;
+    background-color: #999;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 0;
+    padding: 15px;
+    &_bottom {
+        bottom: 0;
+    }
+    &.hidden {
+        display: none;
+    }
+}

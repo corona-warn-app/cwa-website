@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    &-image {
+        width: 48px;
+        height: 55px;
+        background: #f00;
+        display: block;
+        flex: 0 0 auto;
+    }
+    &-caption{
+        color: $white;
+    }
+    &-title {
+        text-transform: uppercase;
+    }
+    &-subtitle {
+        text-transform: uppercase;
+    }
+}
+
+.header {
+    background: #f00;
+    .nav-link,
+    .logo-caption {
+        color: $white;
+    }
+}

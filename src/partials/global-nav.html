@@ -1,21 +1,31 @@
-<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a class="logo" href="/">
-      <img src="{{root}}assets/img/logo.svg" alt="App Logo" />
+<div class="row navbar">
+  <div class="col-sm-6 col-md-3 hidden-xs">
+    <a class="logo" href="/index.html" title="Corona Warn-App">
+      <img src="{{root}}assets/img/logo.svg" alt="Corona Warn-App" class="logo-image" />
+      <span class="logo-caption">
+        <span class="logo-title">Corona</span>
+        <span class="logo-subtitle">Warn-App<br>Open Source Project</span>
+      </span>
     </a>
   </div>
   <div class="col col-xs-6 col-md-9">
-    <button class="btn-menu"></button>
-    <nav class="main-nav">
-      <button
-        class="btn-close"
-      ></button>
-      <ul class="menu">
-        <li class="item">
-          <a href="/about" class="{{#ifpage 'about'}}active{{/ifpage}}">About</a>
+    <nav class="">
+      <button class="btn-menu"></button>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="/community" class="nav-link{{#ifpage 'community'}} active{{/ifpage}}">About</a>
         </li>
-        <li class="item">
-          <a href="/documentation"  class="{{#ifpage 'documentation'}}active{{/ifpage}}">Documentation</a>
+        <li class="nav-item"><a href="/blog" class="nav-link disabled">Blog</a></li>
+        <li class="nav-item">
+          <a href="/faq"  class="nav-link{{#ifpage 'faq'}} active{{/ifpage}}">FAQ</a>
+        </li>
+      </ul>
+      <ul class="nav nav-right">
+        <li class="nav-item">
+          <a href="#github" class="nav-link nav-link_external"><img src="" class="nav-link-icon" /></a>
+        </li>
+        <li class="nav-item lang">
+          <a href="" class="nav-link active" title="English">EN</a>|<a class="nav-link" href="" title="Deutsch">DE</a>
         </li>
       </ul>
     </nav>
