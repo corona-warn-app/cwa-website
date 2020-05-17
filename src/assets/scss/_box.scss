@@ -15,4 +15,98 @@
     &-column {
         padding-top: $spacer;
     }
+    &_flex {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .box-inner {
+            flex: 1 0 auto;
+            &_end {
+                flex: 0 0 auto;
+            }
+        }
+    }
+    .image-block {
+        @media (min-width:$screen-sm) {
+            &:first-child {
+                padding-right: $spacer * 2.5;
+            }
+        }
+    }
+}
+
+.image-block {
+    text-align: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-center > & {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: inherit;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .section-feature-listing &,
+    .box & {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+
+.image-overflow {
+    position: absolute;
+    height: 100%;
+    min-height: 100%;
+    width: auto;
+    top: 0;
+    &-spacer {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &-container {
+        position: relative;
+    }
+    &_left {
+        right: 0.5rem;
+    }
+}
+
+.text-block {
+    .numeration {
+        color: $primary;
+        font-size: $h5-font-size;
+        font-weight: $font-weight-bold;
+        line-height: $headings-line-height * $h4-font-size;
+    }
+    &_indented {
+        padding-left: $grid-gutter-width;
+        position: relative;
+        @media (min-width: $screen-md){
+            padding-right: $card-spacer-x;
+        }
+        .numeration {
+            position: absolute;
+            left: 0;
+
+            img.icon {
+                position: absolute;
+                left: -4px;
+                width: auto;
+                height: auto;
+                max-height: 32px;
+                top: -2px;
+                display: inline-block;
+            }
+        }
+    }
 }

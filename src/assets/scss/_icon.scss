@@ -1,3 +1,9 @@
+@mixin image-icon($value) {
+    &_#{$value}:before {
+        background-image: url("../img/icons/#{$value}.svg");
+    }
+}
+
 .icon {
     overflow: visible;
     position: relative;
@@ -12,9 +18,13 @@
         left: 50%;
         transform: translate3d(-50%,-50%,0);
     }
-    &_git {
-        &:before {
-            background-image: url("../img/icons/icon-github.svg");
-        }
-    }
+    @include image-icon('github');
+    @include image-icon('arrow-down');
+    @include image-icon('arrow-right');
 }
+//     &_github {
+//         &:before {
+//             background-image: url("../img/icons/github.svg");
+//         }
+//     }
+// }

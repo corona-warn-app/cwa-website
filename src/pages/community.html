@@ -3,6 +3,7 @@ lang_en: true
 ---
 <section class="">
   <div class="container">
+    <div class="container-inner">
     <h1 class="headline headline-heavy">{{community.section-main.headline.title}}</h1>
     <div>
         {{#each community.section-main.headline.textblock}}
@@ -24,7 +25,7 @@ lang_en: true
         {{> headline-small-component community.section-main.content.simple-list}}
         {{/if}}
         {{#if community.section-main.content.simple-list.list}}
-          <ul class="list">
+          <ul class="list list_bullets">
           {{#each community.section-main.content.simple-list.list}}
             <li class="list-item">{{{.}}}</li>
           {{/each}}
@@ -38,21 +39,23 @@ lang_en: true
       {{/if}}
     </div>
     {{/if}}
+    </div>
   </div>
 </section>
-<section class="">
+<section class="section-intersect section_bg-light">
   {{#if community.section-contribute-listing}}
   <div class="container">
+    <div class="container-inner">
     {{#if community.section-contribute-listing.headline}}
     <div>{{> headline-component community.section-contribute-listing.headline}}</div>
     {{/if}}
     <div>
     {{#if community.section-contribute-listing.content}}
       {{> headline-component community.section-contribute-listing.content}}
-      <ul class="feature-list feature-list_plain row">
+      <ul class="list row">
         {{#each community.section-contribute-listing.content.feature-list}}
-        <li class="feature-list-item col-12 col-sm-6 col-md-4">
-          <span class="feature-list-icon"><img src="{{image.url}}" {{#if image.title}}title="{{image.title}}"{{/if}}/></span>
+        <li class="list-item col col-12 col-sm-6 col-md-4">
+          <span class="list-icon"><img src="{{image.url}}" {{#if image.title}}title="{{image.title}}"{{/if}}/></span>
           {{> text-component this=.}}
         </li>
         {{/each}}
@@ -62,6 +65,7 @@ lang_en: true
     {{#if community.section-contribute-listing.text}}
     <div class="text-center">{{> text-component community.section-contribute-listing}}</div>
     {{/if}}
+    </div>
   </div>
   {{#if community.section-contribute-listing.box}}
     <div class="container">
@@ -79,8 +83,8 @@ lang_en: true
   {{/if}}
   {{/if}}
 </section>
-<section class="">
+<section class="section-intersect section_bg-white">
   <div class="container text-center">
-    {{> headline-component community.section-start-contribute.headline}}
+    {{> headline-component community.section-start-contribute.headline icon='github'}}
   </div>
 </section>

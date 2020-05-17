@@ -1,16 +1,23 @@
 section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: ($spacer * 4);
+    padding-bottom: ($spacer * 4);
 }
 
 .section {
     &-main {
-        padding-top: 5rem;
+        padding-top: 0;
+
+        &-image {
+            max-width: 100%;
+            height: auto;
+            position: relative;
+            top: 1.5rem;
+        }
     }
     &-intersect {
         & + & {
-            margin-top: -5rem;
-            padding-top: 4.5rem;
+            margin-top: ($spacer * -5);
+            padding-top: ($spacer * 4.5);
         }
     }
     &_bg {

@@ -7,6 +7,19 @@
   .container {
     @include make-container();
     @include make-container-max-widths();
+    &-inner {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
+      &_lg {
+        max-width: 980px;
+      }
+      &_sm {
+        max-width: 680px;
+      }
+    }
   }
 
   // 100% wide container at all breakpoints

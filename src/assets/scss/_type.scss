@@ -130,6 +130,12 @@ h2,
       &:after {
         content: normal;
       }
+      + p {
+        margin-top: -0.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
     &-light {
       margin-bottom: 1.8rem;
