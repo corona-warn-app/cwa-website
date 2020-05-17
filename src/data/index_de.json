@@ -1,0 +1,226 @@
+{
+    "section-main" : {
+        "headline" : {
+            "titlecaption": "Corona-Warn-App Open Source Projekt",
+            "title": "Help us improve the COVID-19 exposure notification app"
+        },
+        "content": {
+            "text": "The Corona-Warn-App open-source project develops a tracking app based on technology with a decentralized approach that notifies users if they have been exposed to COVID-19. It maintains the highest security and data privacy standards to protect the end-users and encourage adoption.",
+            "button": {
+                "title": "Bring me to GitHub",
+                "url": ""
+            },
+            "links" : [
+                { "title": "Data privacy & security", "url": ""},
+                { "title": "Our partners", "url": ""}
+            ]
+        },
+        "image": {
+            "url" : "",
+            "title": ""
+        }
+    },
+    "section-image-ticker": {
+        "headline": {
+            "title": "How does the app work?"
+        },
+        "image-ticker": [
+            {},
+            {
+                "index": "01.",
+                "image": {"url": "path"},
+                "title": "Track nearby IDs",
+                "text": "In a background process an IoS/Android SDK registers (rolling) identifiers from phones in the vicinity using Bluetooth Low Energy and stores them locally – encrypted and inaccessible."
+            },
+            {
+                "index": "02.",
+                "image": {"url": "path", "right" : true },
+                "title": "Communicate test result of user with symptoms",
+                "text": "Tested user can get results communicated in the app, through a test results server using an authentication process with QR-codes."
+            },
+            {
+                "index": "03.",
+                "image": {"url": "path"},
+                "title": "Distribute list of COVID-19 positive identifiers",
+                "text": "In case of a positive test result, the user is asked to voluntarily upload the anonymous identifiers to the key server. To prevent misuse, it first verifies the positive test result. If confirmed, the key server adds the anonymous identifiers to the COVID-19-confirmed identifiers list, which is regularly broadcasted to all apps."
+            },
+            {
+                "index": "04.",
+                "image": {"url": "path-to-file","right": true },
+                "title": "Check for previous contact with COVID-19 positive identifier",
+                "text": "The SDK checks if any of the broadcasted list of COVID-19-confirmed identifiers was registered as being in the vicinity of that device. In case of exposure the risk is assessed, and the user receives corresponding instructions.",
+                "button": {"title": "Learn more in scoping document", "link": "#"}
+            }
+        ]
+    },
+    "section-boxes": {
+        "headline" : {
+            "title": "Stay up to date!"
+        },
+        "boxes" : [
+            {
+                "image": {"url": "path-to-file"},
+                "titlecaption": "Stay tuned!",
+                "title": "The Corona-Warn-App Blog is comming soon"
+            },
+            {
+                "image": {
+                    "url": "path-to-file"
+                },
+                "title": "More Questions",
+                "button": {
+                    "url": "",
+                    "title": "Check out FAQ",
+                    "class": "btn-link btn-link-icon btn-link-icon_right"
+                }
+            }
+        ]
+    },
+    "section-image-text": {
+        "image": {
+            "url" : "#",
+            "title": "testing title"
+        },
+        "headline": {
+            "title": "Join the open-source project!",
+            "textblock": [
+                "If you want to contribute, head over to GitHub to get started.",
+                "Learn about our <a href='#code-of-conduct' target='_blank'>Code of Conduct</a> and find out how to contribute on the <a href=''>Community page</a>."
+            ],
+            "button": {
+                "title": "Bring me to GitHub",
+                "url": ""
+            }
+        }
+    },
+    "section-feature-listing" : {
+        "headline" : {
+            "title" : "Data privacy and security"
+        },
+        "feature-list": [{
+            "image" : {
+                "url": "",
+                "title" : ""
+            },
+            "headline" : {
+                "title" : "Open source approach"
+            },
+            "list": [{
+                "title": "Transparency",
+                "text" : "Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."
+                },{
+                "title": "Power of the community",
+                "text": "increases security eirmod tempor invidunt ut aliquyam eirmod tempor invidunt ut labore et dolore magna aliquyam.."
+                }]
+        },{
+            "image" : {
+                "url": "",
+                "title" : ""
+            },
+            "headline" : {
+                "title" : "Decentralized approach"
+            },
+            "list": [{
+                "title": "Heavily inspired by the DP-3T",
+                "text" : "Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."
+                },{
+                "title": "Sensitive contact data",
+                "text": "increases security eirmod tempor invidunt ut aliquyam eirmod tempor invidunt ut labore et dolore magna aliquyam.."
+                },{
+                "title": "Identifiers of contacts",
+                "text": "are not accessible: the SDK checks for matches with the broadcasted list, but never reveals which identifiers triggered a match."
+                }]
+        },{
+            "image" : {
+                "url": "",
+                "title" : ""
+            },
+            "headline" : {
+                "title" : "Secure protocols"
+            },
+            "list": [{
+                "title": "One-time-tokens",
+                "text": "consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+            }, {
+                "title": "Authentication processes",
+                "text": "QR codes Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+            },{
+                "title": "Keeping personal test results",
+                "text": "and list of identifiers separate  aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+            }, {
+                "title": "Rolling IDs Lorem",
+                "text": "ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+            }]
+        }]
+    },
+    "section-icon-listing": {
+        "headline" : {
+            "title": "Our partners",
+            "text": "The German government has requested SAP and Deutsche Telekom to deliver the official Corona-Warn-App for Germany fully based on open source.<br>There are many more partners involved in creating this app as well as the global open source community."
+        },
+        "icon-list" : [{
+            "url": "#",
+            "icon-url": "",
+            "title": "Telecom"
+        }, {
+            "url": "#",
+            "icon-url": "",
+            "title": "SAP"
+        }, {
+            "url": "#",
+            "icon-url": "",
+            "title": "Fraunhover Institut"
+        }, {
+            "url": "#",
+            "icon-url": "",
+            "title": "Heimholz"
+        }, {
+            "url": "#",
+            "icon-url": "",
+            "title": "Bundeskanzleramt"
+        }, {
+            "url": "#",
+            "icon-url": "",
+            "title": "Robert Koch Institut"
+        }]
+    },
+    "section-join-project": {
+        "headline" : {
+            "title": "Join the open-source project!",
+            "button": {
+                "title": "Bring me to GitHub"
+            }
+        },
+        "box" : {
+            "image": {
+                "url": "path-to-file",
+                "title": "image-title"
+            },
+            "content": {
+                "title": "More Questions?",
+                "links": [{
+                    "title": "Check out FAQ",
+                    "url": "/faq"
+                }]
+            }
+        },
+        "content": {
+            "icon-list": [
+                {
+                    "url": "#",
+                    "icon-url": "",
+                    "title": "Google Play Store"
+                },
+                {
+                    "url": "#",
+                    "icon-url": "",
+                    "title": "Apple App Store"
+                }
+            ],
+            "headline" : {
+                "title": "Get the App!",
+                "text": "Now available via App Store and Google Play Store."
+            }
+        }
+    }
+}
