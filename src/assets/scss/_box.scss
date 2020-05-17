@@ -1,0 +1,18 @@
+.box {
+    border-radius: $border-radius;
+    background-color: $body-bg;
+    box-shadow: $box-shadow;
+    position: relative;
+    color: $body-color;
+    padding: $card-spacer-y $card-spacer-x;
+    
+    &_stretch {
+        height: 100%;
+    }
+    &_spaced {
+        margin-top: $spacer * 3;
+    }
+    &-column {
+        padding-top: $spacer;
+    }
+}

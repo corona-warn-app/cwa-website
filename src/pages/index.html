@@ -1,17 +1,21 @@
-<section class="">
+---
+lang_en: true
+---
+<section class="section-main">
   <div class="container">
     <div class="row">
-      <div class="col col-xs-12 col-md-6">
-        <h5>{{index.section-main.headline.titlecaption}}</h5>
-        <h1>{{index.section-main.headline.title}}</h1>
+      <div class="col col-12 col-md-6">
+        <h5 class="caption-headline caption-headline_blue">{{index.section-main.headline.titlecaption}}</h5>
+        <h1 class="headline headline-heavy">{{index.section-main.headline.title}}</h1>
         <p>{{index.section-main.content.text}}</p>
-        <p><a class="btn btn-secondary" href="{{index.section-main.content.button.url}}" title="{{index.section-main.content.button.title}}b">{{index.section-main.content.button.title}} <span class="icon icon-git"></span></a><br/>
+        <p class="btn-block text-left">
+          {{> button-icon-component button=index.section-main.content.button icon='git'}}<br>
           {{#each index.section-main.content.links}}
-          <a class="btn btn-link btn-link-icon btn-link-icon_down" title="{{title}}" href="{{url}}">{{title}}</a>
+          <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{title}}" href="{{url}}">{{title}}<span class="icon icon_down"></span></span></a>
           {{/each}}
         </p>
       </div>
-      <div class="col col-xs-12 col-md-6">
+      <div class="col col-12 col-md-6">
         <img class="" src="{{index.section-main.image.url}}" title="{{index.section-main.image.title}}" alt="{{index.section-main.image.title}}"/>
       </div>
     </div>
@@ -33,19 +37,19 @@
     {{/if}}
   </div>
 </section>
-<section class="">
+<section class="section_bg-gradient">
   <div class="container">
     {{#if index.section-boxes}}
       <div class="text-center">
-        {{> text-component index.section-boxes.title}}
+        {{> headline-component index.section-boxes.headline}}
       </div>
       {{#if index.section-boxes.boxes}}
       <div class="row">
         {{#each index.section-boxes.boxes}}
-          <div class="col-xs-12 col-md-6">
-            <div class="box">
+          <div class="col-12 col-md-6 box-column">
+            <div class="box box_stretch">
             {{> image-component this=.}}
-            {{> headline-component this=.}}
+            {{> headline-small-component this=.}}
             </div>
           </div>
         {{/each}}
@@ -58,17 +62,18 @@
   <div class="container">
     {{#if index.section-image-text}}
     <div class="row">
-      <div class="col col-xs-12 col-md-6">
+      <div class="col col-12 col-md-6">
         <img class="" src="{{index.section-image-text.image.url}}" title="{{index.section-image-text.image.title}}" alt="{{index.section-image-text.image.title}}"/>
       </div>
-      <div class="col col-xs-12 col-md-6">
-        {{> headline-component index.section-image-text.headline}}
+      <div class="col col-12 col-md-6">
+        {{> headline-plain-component index.section-image-text.headline}}
+        {{> button-icon-component index.section-image-text.headline icon='git'}}
       </div>
     </div>
     {{/if}}
   </div>
 </section>
-<section class="">
+<section class="section-feature-listing section_bg-light">
   <div class="container">
     {{#if index.section-feature-listing}}
     <div class="text-center">
@@ -106,32 +111,31 @@
     {{/if}}
   </div>
 </section>
-<section class="">
-  <div class="">
-    <div class="container">
+<section class="section-intersect section_bg-light">
+    <div class="container contents-normal">
       <div class="text-center">
-        {{> headline-component index.section-join-project.headline}}
+        {{> headline-plain-component index.section-join-project.headline}}
+        {{> button-icon-component button=index.section-join-project.headline.button icon='git'}}
       </div>
       {{#if index.section-join-project.box}}
-        <div class="box box-flex">
+        <div class="box box_spaced">
           {{> image-component index.section-join-project.box.image}}
           <div class="box-inner">{{index.section-join-project.box.content.title}}</div>
           <div class="box-inner box-inner_end">
             {{#each index.section-join-project.box.content.links}}
-            <a class="btn btn-link btn-link-icon btn-link-icon_right" title="{{title}}" href="{{url}}">{{title}}</a>
+            <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{title}}" href="{{url}}">{{title}}<span class="icon icon_right"></span></a>
             {{/each}}
           </div>
         </div>
-      </div>
       {{/if}}
     </div>
-  </div>
-  <div>
-    <div class="container">
+  </section>
+  <section class="section-intersect section_bg-white">
+    <div class="container contents-normal">
       {{#if index.section-join-project.content}}
-        <div class="row">
+        <div class="row justify-content-center align-items-center">
           {{#if index.section-join-project.content.icon-list}}
-          <div class="col col-xs-12 col-md-6 icon-list">
+          <div class="col col-12 col-sm-auto icon-list">
             {{#each index.section-join-project.content.icon-list}}
             <a class="icon-list-item" href="{{url}}">
               <img src="{{icon-url}}" alt="{{title}} Icon" />
@@ -140,12 +144,11 @@
           </div>
           {{/if}}
           {{#if index.section-join-project.content.headline}}
-            <div class="col col-xs-12 col-md-6">
+            <div class="col col-12 col-sm-auto">
               {{> headline-component index.section-join-project.content.headline}}
             </div>
           {{/if}}
         </div>
       {{/if}}
     </div>
-  </div>
 </section>

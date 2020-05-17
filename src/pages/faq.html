@@ -1,37 +1,38 @@
-<section>
-  <div class="row">
-    <div class="col col-xs-12">
-      <div class="headline">FAQ</div>
-      <div class="subheadline">
-        A better answer to distributed UI development - secure and infinitely scalable.
-      </div>
+---
+lang_en: true
+---
+<div class="container container_flex">
+  <aside class="side-menu">
+    <div class="menu-close hidden visisble-xs"><button class="btn btn-close"></button></div>
+    <ul class="nav flex-column js-scroll-navigate" data-target="main">
+      {{#each faq.section-main.sections}}
+      <li class="nav-item">
+        <a class="nav-link{{#if active}} active{{/if}}">{{title}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </aside>
+  <main class="main">
+    <h1 class="headline headline-heavy">{{faq.section-main.headline.title}}</h1>
+    {{#each faq.section-main.sections}}
+    {{> text-component this=.}}
+    <div class="accordion js-accordion" data-toggle="accordion-header">
+      {{#each accordion}}
+        <div class="accordion-header{{#if active}} active{{/if}}">
+          <h4 class="accordion-item-title">{{title}}</h4>
+          <span class="accordion-item-icon"></span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-item-content">
+            {{#if textblock}}
+            {{#each textblock}}
+            <p>{{{.}}}</p>
+            {{/each}}
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
     </div>
-  </div>
-  <div class="row">
-    
-  </div>
-</section>
-
-<section>
-  <div class="col col-xs-12">
-      <div class="subheadline">
-        Who is involved?
-      </div>
-    </div>
-  <div class="row">
-    <div class="col col-xs-12">
-      {{> participants}}
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="row">
-    <div class="col col-xs-12 text-center">
-      <div class="subheadline">
-        Ready to have a look?
-      </div>
-      <a class="btn-primary" href="#">LINK</a>
-    </div>
-  </div>
-</section>
+    {{/each}}
+  </main>
+</div>

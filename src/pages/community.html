@@ -1,31 +1,86 @@
+---
+lang_en: true
+---
 <section class="">
   <div class="container">
+    <h1 class="headline headline-heavy">{{community.section-main.headline.title}}</h1>
     <div>
-      <h1>{{community.section-main.headline.title}}</h1>
-        <div>
-          {{#each community.section-main.headline.textblock}}
-            <p>{{.}}</p>
-          {{/each}}
-        </div>
-        {{> headline-component community.section-main.content.headline}}
+        {{#each community.section-main.headline.textblock}}
+          <p>{{{.}}}</p>
+        {{/each}}
     </div>
+    <div>{{> headline-component community.section-main.content.headline}}</div>
+    {{#if community.section-main.content.simple-list}}
     <div class="row">
-      
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-  </div>
-</section>
-
-<section>
-  <div class="row">
-    <div class="col col-xs-12 text-center">
-      <div class="subheadline">
-        Ready to have a look?
+      {{#if community.section-main.content.simple-list.image}}
+      {{#unless community.section-main.content.simple-list.image.right}}
+      <div class="col col-12 col-md-6">
+        {{> image-component community.section-main.content.simple-list.image}}
       </div>
-      <a class="btn-primary" href="#">LINK</a>
+      {{/unless}}
+      {{/if}}
+      <div class="col col-12 col-md-6">
+        {{#if community.section-main.content.simple-list.title}}
+        {{> headline-small-component community.section-main.content.simple-list}}
+        {{/if}}
+        {{#if community.section-main.content.simple-list.list}}
+          <ul class="list">
+          {{#each community.section-main.content.simple-list.list}}
+            <li class="list-item">{{{.}}}</li>
+          {{/each}}
+          </ul>
+        {{/if}}
+      </div>
+      {{#if community.section-main.content.simple-list.image.right}}
+      <div class="col col-12 col-md-6">
+        {{> image-component community.section-main.content.simple-list.image}}
+      </div>
+      {{/if}}
     </div>
+    {{/if}}
+  </div>
+</section>
+<section class="">
+  {{#if community.section-contribute-listing}}
+  <div class="container">
+    {{#if community.section-contribute-listing.headline}}
+    <div>{{> headline-component community.section-contribute-listing.headline}}</div>
+    {{/if}}
+    <div>
+    {{#if community.section-contribute-listing.content}}
+      {{> headline-component community.section-contribute-listing.content}}
+      <ul class="feature-list feature-list_plain row">
+        {{#each community.section-contribute-listing.content.feature-list}}
+        <li class="feature-list-item col-12 col-sm-6 col-md-4">
+          <span class="feature-list-icon"><img src="{{image.url}}" {{#if image.title}}title="{{image.title}}"{{/if}}/></span>
+          {{> text-component this=.}}
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+    </div>
+    {{#if community.section-contribute-listing.text}}
+    <div class="text-center">{{> text-component community.section-contribute-listing}}</div>
+    {{/if}}
+  </div>
+  {{#if community.section-contribute-listing.box}}
+    <div class="box {{#if community.section-contribute-listing.box.class}}box_{community.section-contribute-listing.box.class}}{{/if}}">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-sm-6 col-md-4">
+              {{> image-component community.section-contribute-listing.box.image}}
+            </div>
+            <div class="col col-12 col-sm-6 col-md-5">
+              {{> text-component community.section-contribute-listing.box.content}}
+            </div>
+          </div>
+      </div>
+    </div>
+  {{/if}}
+  {{/if}}
+</section>
+<section class="">
+  <div class="container text-center">
+    {{> headline-component community.section-start-contribute.headline}}
   </div>
 </section>

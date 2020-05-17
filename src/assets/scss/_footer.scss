@@ -1,0 +1,81 @@
+.footer {
+    position: relative;
+    background-position: center;
+    @extend .section_bg-gradient;
+    color: $white;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+    a:not(.btn),
+    .copyright,
+    .small {
+        color: inherit;
+        text-decoration: none;
+    }
+    a:not(.btn) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .link-list {
+        @extend .d-flex;
+        @extend .justify-content-between;
+        margin-left: ($grid-gutter-width /2) * -1;
+        margin-right: ($grid-gutter-width /2) * -1;
+        @extend .justify-content-sm-end;
+
+        @media (min-width: $screen-sm){
+            flex-wrap: wrap;
+            width: auto;
+        }
+    }
+    .link-item {
+        justify-self: flex-end;
+        padding-left: ($grid-gutter-width /2);
+        padding-right: ($grid-gutter-width /2);
+        margin-bottom: 1.2rem;
+
+        strong,
+        a {
+            display: block;
+            white-space: nowrap;
+        }
+    }
+    .logo img {
+        height: 48px;
+    }
+    .logo {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.copyright-bar {
+    @extend .small;
+    @extend .d-flex;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    margin-left: ($grid-gutter-width /2) * -1;
+    margin-right: ($grid-gutter-width /2) * -1;
+
+    div {
+        flex: 1 0 auto;
+        padding-left: ($grid-gutter-width /2);
+        padding-right: ($grid-gutter-width /2);
+    }
+    
+    @media (min-width: $screen-sm){
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+        
+        div {
+            flex: 1 1 auto;
+        }
+    }
+    @media (min-width: $screen-md){
+        margin-top: 3.2rem;
+    }
+    .privacy a {
+        white-space: nowrap;
+    }
+}

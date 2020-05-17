@@ -1,0 +1,36 @@
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section {
+    &-main {
+        padding-top: 5rem;
+    }
+    &-intersect {
+        & + & {
+            margin-top: -5rem;
+            padding-top: 4.5rem;
+        }
+    }
+    &_bg {
+        &-light {
+            background-color: $light;
+            background-image: none;
+        }
+        &-white {
+            background-color: $white;
+            background-image: none;
+        }
+        &-gradient {
+            background-image: $background-image_gradient;
+            color: $white;
+
+            h2.headline {
+                &:after {
+                    border-color: $white;
+                }
+            }
+        }
+    }
+}

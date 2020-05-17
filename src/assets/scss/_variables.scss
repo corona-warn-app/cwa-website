@@ -13,9 +13,21 @@ $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+//$gray-800: #343a40 !default;
+//$gray-900: #212529 !default;
 $black:    #000 !default;
+
+//added
+$blue:       #1294d4 !default;
+$blue-light: #80cdec !default;
+$blue-pale:  #d4eaf7 !default;
+$blue-ice:   #edf2f7 !default;
+$cyan:       #56c3ee !default;
+$charcoal-grey:#3a3d3e !default;
+$charcoal-black: #000101 !default;
+//override
+$gray-900: #3a3d3e !default;
+$gray-800: #3a3d3e !default;
 
 // fusv-disable
 $grays: (
@@ -61,13 +73,14 @@ $colors: (
 // scss-docs-end colors-map
 
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary-light:  $blue-light !default;
+$secondary:     $blue-pale !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         $blue-ice !default;
+$dark:          $charcoal-grey !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -256,7 +269,7 @@ $body-text-align:           null !default;
 
 $link-color:                              $primary !default;
 $link-decoration:                         underline !default;
-$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-color:                        darken($link-color, 8%) !default;
 $link-hover-decoration:                   null !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
@@ -271,6 +284,11 @@ $stretched-link-z-index:                  1 !default;
 $paragraph-margin-bottom:   1rem !default;
 
 
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
@@ -279,11 +297,11 @@ $paragraph-margin-bottom:   1rem !default;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl,
+  xxl: $screen-xxl
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -297,11 +315,11 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  sm: 640px,
+  md: 920px,
+  lg: 1060px,
+  xl: 1220px,
+  xxl: 1280px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -313,14 +331,14 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           2.125rem !default;
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: 1rem !default;
+$container-padding-x: 1.25rem !default;
 
 
 // Components
@@ -330,16 +348,17 @@ $container-padding-x: 1rem !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius:               .375rem !default;
+$border-radius-sm:            .25rem !default;
+$border-radius-lg:            .375rem !default;
 
 $rounded-pill:                50rem !default;
 
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
-$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+$box-shadow:                  0 7px 23px -7px rgba(60, 69, 83, 0.54) !default; //0 .5rem 1rem rgba($charcoal-black, .15) !default;
+//box-shadow: ;
+$box-shadow-sm:               0 .125rem .25rem rgba($charcoal-black, .075) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($charcoal-black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($charcoal-black, .075) !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         $primary !default;
@@ -378,9 +397,9 @@ $embed-responsive-aspect-ratios: (
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Roboto', Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            var(--bs-font-sans-serif) !default;
+$font-family-base:            $font-family-sans-serif; //var(--bs-font-sans-serif) !default;
 // stylelint-enable value-keyword-case
 
 // $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
@@ -394,26 +413,26 @@ $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bolder:          900 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
+$line-height-base:            1.88 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h2-font-size:                $font-size-base * 2.125 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.375 !default;
+$h5-font-size:                $font-size-base * 1.125 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.26 !default;
 $headings-color:              null !default;
 
 // scss-docs-start display-headings
@@ -519,10 +538,10 @@ $table-variants: (
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         1.25rem !default;
 $input-btn-font-family:       null !default;
-$input-btn-font-size:         $font-size-base !default;
+$input-btn-font-size:         ($font-size-base * 0.9375) !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:         .2rem !default;
@@ -573,7 +592,7 @@ $btn-link-color:              $link-color !default;
 $btn-link-hover-color:        $link-hover-color !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
-$btn-block-spacing-y:         .5rem !default;
+$btn-block-spacing-y:         1.3rem !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;
@@ -958,9 +977,9 @@ $pagination-disabled-border-color:  $gray-300 !default;
 
 // Cards
 
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer / 2 !default;
+$card-spacer-y:                     1.375rem !default;
+$card-spacer-x:                     $card-spacer-y !default;
+$card-title-spacer-y:               $card-spacer-y / 2 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
@@ -973,7 +992,7 @@ $card-height:                       null !default;
 $card-color:                        null !default;
 $card-bg:                           $white !default;
 
-$card-img-overlay-padding:          $spacer !default;
+$card-img-overlay-padding:          $card-spacer-y !default;
 
 $card-group-margin:                 $grid-gutter-width / 2 !default;
 

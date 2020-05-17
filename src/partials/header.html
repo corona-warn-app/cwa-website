@@ -1,21 +1,23 @@
-<header class="header {{#ifpage 'index'}}header_home{{/ifpage}}">
+<header class="header{{#ifpage 'index'}} header_home{{/ifpage}}{{#if header-cls}} header-cls{{/if}}">
   <div class="container">
   {{> global-nav}}
   </div>
   {{#ifpage 'index'}}
-  <section class="sticky-panel sticky-panel_bottom js-hide-on-scroll hidden">
+  {{#if sticky-panel-active}}
+  <section class="sticky-panel sticky-panel_bottom js-hide-on-scroll">
     <div class="container">
       <div class="row">
-        <div class="col col-xs-12">
+        <div class="col col-12">
           <h1 class="headline">Header headline</h1>
           <a class="btn btn-primary" href="#">GET STARTED</a>
           <a class="btn btn-secondary" href="#" target="_blank">Test playground</a>
         </div>
-        <div class="col col-xs-12">
+        <div class="col col-12">
           <a href="#" target="_blank" class="play-button hidden-sm"></a>
         </div>
       </div>
     </div>
   </section>
+  {{/if}}
   {{/ifpage}}
 </header>
