@@ -23,10 +23,13 @@
         margin-left: ($grid-gutter-width /2) * -1;
         margin-right: ($grid-gutter-width /2) * -1;
         @extend .justify-content-sm-end;
+        flex-wrap: wrap;
 
         @media (min-width: $screen-sm){
-            flex-wrap: wrap;
+            flex-direction: row;
             width: auto;
+            max-width: none;
+            flex: 0 0 auto;
         }
     }
     .link-item {
@@ -34,11 +37,15 @@
         padding-left: ($grid-gutter-width /2);
         padding-right: ($grid-gutter-width /2);
         margin-bottom: 1.2rem;
+        width: 50%;
 
         strong,
         a {
             display: block;
             white-space: nowrap;
+        }
+        @media (min-width: $screen-sm){
+            width: auto;
         }
     }
     .logo img {
@@ -61,6 +68,7 @@
         flex: 1 0 auto;
         padding-left: ($grid-gutter-width /2);
         padding-right: ($grid-gutter-width /2);
+        max-width: 100%;
     }
     
     @media (min-width: $screen-sm){

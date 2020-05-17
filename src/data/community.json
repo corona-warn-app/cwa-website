@@ -14,7 +14,7 @@
             },
            "simple-list": {
                 "image": {
-                    "url": "#path",
+                    "url": "path",
                     "right": true
                 },
                 "title": "Contribution rules",
@@ -50,15 +50,8 @@
                     "title": "",
                     "url": "#"
                 },
-                "title": "To contribute code",
+                "title": "To contribute code or documentation",
                 "text": "In order to fix a bug or to implement a new feature contributions must be licensed under the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/LICENSE' target='_blank'>Apache 2.0 License</a>."
-            },{
-                "image": {
-                    "title": "",
-                    "url": "#"
-                },
-                "title": "To contribute documentation",
-                "text": "New documentation contributions must also be licensed under the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/LICENSE' target='_blank'>Apache 2.0 License</a>."
             },{
                 "image": {
                     "title": "",
@@ -66,6 +59,13 @@
                 },
                 "title": "To report a trivial fix or improvement",
                 "text": "Create a pull request, addressing a suitable code owner of the particular repository (see for example the documentation <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODEOWNERS' target='_blank' title=''>Code Owners</a>)."
+            },{
+                "image": {
+                    "title": "",
+                    "url": "#"
+                },
+                "title": "To report a significant security risk",
+                "text": "Make sure to follow the process outlined in the Security Policy that is accessible through the Security tab in each dev repository"
             }]
         },
         "text": "For any of the above make sure you provide as much info as you can. Follow the instructions here.",
