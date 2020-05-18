@@ -51,7 +51,9 @@ lang_en: true
     {{/if}}
     <div>
     {{#if community.section-contribute-listing.content}}
+      <div class="text-block text-block_spaced">
       {{> headline-component community.section-contribute-listing.content}}
+      </div>
       <ul class="list row">
         {{#each community.section-contribute-listing.content.feature-list}}
         <li class="list-item col col-12 col-sm-6 col-md-4">
@@ -63,7 +65,7 @@ lang_en: true
     {{/if}}
     </div>
     {{#if community.section-contribute-listing.text}}
-    <div class="text-center">{{> text-component community.section-contribute-listing}}</div>
+    <div class="text-block text-block_spaced-bottom text-center">{{> text-component community.section-contribute-listing}}</div>
     {{/if}}
     </div>
   </div>

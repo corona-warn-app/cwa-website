@@ -128,6 +128,17 @@
             }
         }
     }
+    &_spaced {
+        margin-top: $spacer * 2.5;
+        margin-bottom: $spacer * 2.5;
+
+        &-top {
+            margin-top: $spacer * 3.25;
+        }
+        &-bottom {
+            margin-bottom: $spacer * 3.25;
+        }
+    }
 }
 
 .container_flex {
