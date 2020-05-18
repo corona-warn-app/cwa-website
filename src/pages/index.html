@@ -12,8 +12,9 @@ get-app-enabled: false
         <p class="btn-block text-left">
           {{> button-component button=index.section-main.content.button icon='github'}}<br>
           {{#each index.section-main.content.links}}
-          <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{title}}" href="{{url}}">{{title}}<span class="icon icon_arrow-down"></span></span></a>
+          {{> button-link-component button=. direction='down'}}
           {{/each}}
+          {{> button-link-component button=. direction='down'}}
         </p>
       </div>
       <div class="col col-12 col-sm-12 col-md-12 col-lg-5">
@@ -56,8 +57,7 @@ get-app-enabled: false
               <h3 class="headline">{{title}}</h3>
               {{/if}}
               {{#if button}}
-              <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{button.title}}" href="{{button.url}}">{{button.title}}<span
-                  class="icon icon_arrow-right"></span></span></a>
+              {{> button-link-component button=button}}
               {{/if}}
               </div>
             </div>
@@ -78,7 +78,8 @@ get-app-enabled: false
         <img class="image-overflow image-overflow_left" src="{{root}}{{index.section-image-text.image.url}}" title="{{index.section-image-text.image.title}}" alt="{{index.section-image-text.image.title}}"/>
       </div>
       <div class="col col-12 col-md-6 text-center text-md-left">
-        {{> headline-component index.section-image-text.headline icon='github'}}
+        {{> headline-component title=index.section-image-text.headline.title}}
+        {{> text-component textblock=index.section-image-text.headline.textblock button=index.section-image-text.headline.button icon='github'}}
       </div>
     </div>
     {{/if}}
