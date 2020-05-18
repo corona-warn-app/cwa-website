@@ -13,10 +13,21 @@
 }
 
 .header {
-    position: relative;
     background-position: center;
     @extend .section_bg-gradient;
-
+    @if $header-mobile-sticky {
+        top: 0;
+        position: sticky;
+        z-index: 2;
+        
+        @media(min-width: $screen-md){
+            z-index: auto;
+            position: relative;
+        }
+    } @else {
+        position: relative;
+        z-index: 2;
+    }
     &_home {
         body & {
             background-image: none;
@@ -73,7 +84,7 @@
         text-decoration: none;
     }
     .nav-item {
-        font-weight: bold;
+        font-weight: $font-weight-bold;
     }
     .nav-item,
     .nav-link {

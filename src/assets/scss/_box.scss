@@ -124,16 +124,92 @@
     display: block;
 
     .side-menu {
-        position: fixed;
-        left: 0;
         transform: translate3d(-100%, 0, 0);
         width: 50vw;
-        max-width: 220px;
-        
+        max-width: 240px;
+        position: fixed;
+
+        @media (max-width: ($screen-md - 1)){
+            padding-left: $spacer * 1.25;
+            padding-top: 0.5* $spacer;
+            z-index: 1;
+            transition: transform 0.3s ease-in-out;
+            height: 100vh;
+            top: 0;
+
+            &:before {
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            &.active {
+                transform: translate3d(0, 0, 0);
+                z-index: 1;
+                height: 100vh;
+                left: 0;
+                top: 0;
+                padding-top: 130px;
+                background-color: $body-bg;
+                box-shadow: $box-shadow;
+                
+                &:after,
+                &:before {
+                    position: fixed;
+                    content: "";
+                    height: 100vh;
+                    width: 300vw;
+                    background-color: $dark;
+                    opacity: 0.2;
+                    display: block;
+                    top: 0;
+                    z-index: -1;
+                    left: 0;
+                }
+                &:after {
+                    position: fixed;
+                    background-color: $body-bg;
+                    width: 50vw;
+                    max-width: 240px;
+                    opacity: 1;
+                }
+                .menu-close .btn-close {
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter x='-64.1%25' y='-46.7%25' width='228.3%25' height='228.3%25' filterUnits='objectBoundingBox' id='a'%3e%3cfeMorphology radius='4' in='SourceAlpha' result='shadowSpreadOuter1'/%3e%3cfeOffset dy='8' in='shadowSpreadOuter1' result='shadowOffsetOuter1'/%3e%3cfeGaussianBlur stdDeviation='12.5' in='shadowOffsetOuter1' result='shadowBlurOuter1'/%3e%3cfeColorMatrix values='0 0 0 0 0.235294118 0 0 0 0 0.270588235 0 0 0 0 0.325490196 0 0 0 0.538625437 0' in='shadowBlurOuter1'/%3e%3c/filter%3e%3crect id='b' width='46' height='46' rx='4'/%3e%3c/defs%3e%3cg fill='none'%3e%3cg transform='matrix(-1 0 0 1 63 9)'%3e%3cuse fill='%23000' filter='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='%23FFF' xlink:href='%23b'/%3e%3c/g%3e%3cpath d='M37.415 40c.473 0 .881-.175 1.222-.525.341-.35.511-.798.511-1.343 0-.545-.17-.993-.511-1.343l-2.727-2.92h12.329c.492 0 .909-.185 1.25-.555.341-.37.511-.808.511-1.314s-.171-.944-.511-1.314c-.341-.37-.757-.555-1.25-.555h-12.329l2.784-2.92c.341-.35.511-.798.511-1.343 0-.545-.17-.993-.511-1.343-.341-.35-.758-.525-1.25-.525s-.909.175-1.25.525l-5.682 6.131c-.341.35-.511.798-.511 1.343 0 .506.171.934.511 1.285l5.682 6.19c.341.35.748.525 1.222.525z' fill='%23000' fill-rule='nonzero'/%3e%3c/g%3e%3c/svg%3e");
+                }
+            }
+            .menu-close {
+                position: absolute;
+                bottom: 0;
+                margin-left: 0;
+                left: 100%;
+                transform: translate3d(0, 0 0);
+                width: 80px;
+                height: 80px;
+                cursor: pointer;
+                z-index: 2;
+
+                .btn-close {
+                    width: 80px;
+                    height: 80px;
+                    position: static;
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter x='-64.1%25' y='-46.7%25' width='228.3%25' height='228.3%25' filterUnits='objectBoundingBox' id='a'%3e%3cfeMorphology radius='4' in='SourceAlpha' result='shadowSpreadOuter1'/%3e%3cfeOffset dy='8' in='shadowSpreadOuter1' result='shadowOffsetOuter1'/%3e%3cfeGaussianBlur stdDeviation='12.5' in='shadowOffsetOuter1' result='shadowBlurOuter1'/%3e%3cfeColorMatrix values='0 0 0 0 0.235294118 0 0 0 0 0.270588235 0 0 0 0 0.325490196 0 0 0 0.538625437 0' in='shadowBlurOuter1'/%3e%3c/filter%3e%3crect id='b' width='46' height='46' rx='4'/%3e%3c/defs%3e%3cg fill='none'%3e%3cg transform='translate(17 9)'%3e%3cuse fill='%23000' filter='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='%23FFF' xlink:href='%23b'/%3e%3c/g%3e%3cpath d='M42.585 40c-.473 0-.881-.175-1.222-.525-.341-.35-.511-.798-.511-1.343 0-.545.17-.993.511-1.343l2.727-2.92h-12.329c-.492 0-.909-.185-1.25-.555-.341-.37-.511-.808-.511-1.314s.171-.944.511-1.314c.341-.37.757-.555 1.25-.555h12.329l-2.784-2.92c-.341-.35-.511-.798-.511-1.343 0-.545.17-.993.511-1.343.341-.35.758-.525 1.25-.525s.909.175 1.25.525l5.682 6.131c.341.35.511.798.511 1.343 0 .506-.171.934-.511 1.285l-5.682 6.19c-.341.35-.748.525-1.222.525z' fill='%23000'/%3e%3c/g%3e%3c/svg%3e");
+                    &,
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border: none;
+                    }
+                }   
+            }
+        }
+
         .nav-link {
             cursor: pointer;
             position: relative;
             font-weight: $font-weight-normal;
+            color: inherit;
+            text-decoration: none;
 
             &:before {
                 top: auto;
@@ -149,6 +225,8 @@
             &:focus,
             &:active,
             &.active {
+                color: inherit;
+
                 &:before { content: ""}
             }
             &:focus,
@@ -156,13 +234,15 @@
             &.active {
                 font-weight: $font-weight-bold;
             }
-
         }
+        
     }
 
     .main {
         width: 100%;
         padding-top: $spacer * 2.125;
+        z-index: 0;
+        position: relative;
     }
     @media (min-width: $screen-md){
          display: flex;
@@ -186,5 +266,5 @@
             padding-top: $spacer * 2;
             margin-left: $grid-gutter-width;
         }
-     }
+    }
 }
