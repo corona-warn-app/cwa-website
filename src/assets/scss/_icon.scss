@@ -21,10 +21,9 @@
     @include image-icon('github');
     @include image-icon('arrow-down');
     @include image-icon('arrow-right');
+    &_img {
+        &:before {
+            content: normal;
+        }
+    }
 }
-//     &_github {
-//         &:before {
-//             background-image: url("../img/icons/github.svg");
-//         }
-//     }
-// }

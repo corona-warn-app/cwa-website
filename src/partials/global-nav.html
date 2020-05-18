@@ -8,36 +8,26 @@
     <button class="btn-menu js-toggle" data-target="#header-nav"></button>
     <nav class="header-nav" id="header-nav">
       <button class="btn-menu btn-menu_close js-toggle" data-target="#header-nav"></button>
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="/community" class="nav-link{{#ifpage 'community'}} active{{/ifpage}}">Community</a>
-        </li>
-        <li class="nav-item"><a href="/blog" class="nav-link disabled">Blog</a></li>
-        <li class="nav-item">
-          <a href="/faq"  class="nav-link{{#ifpage 'faq'}} active{{/ifpage}}">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon_github"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
-        </li>
-        <li class="nav-item lang">
-          <a href="" class="nav-link{{#unless lang_de}} active{{/unless}}" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" href="" title="Deutsch">DE</a>
-        </li>
-      </ul>
-    </nav>
-    <!--
       {{#if language.nav}}
+      <ul class="nav">
       {{#each language.nav}}
         <li class="nav-item">
-          <a href="{{root}}{{url}}" class="nav-link{{#unless external}}{{#ifpage id}} active{{/ifpage}}{{/unless}}{{#if external}} nav-link_external{{/if}}{{#if disabled}} disabled{{/if}}">
+          <a href="{{root}}{{url}}" class="nav-link{{#unless external}}{{#ifpage id}} active{{/ifpage}}{{/unless}}{{#if external}} nav-link_external{{/if}}{{#if disabled}} disabled{{/if}}"{{#if external}} target="_blank"{{/if}}>
             {{#unless icon}}
             {{title}}
             {{/unless}}
             {{#if icon}}
+            <span class="nav-link-icon icon_{{icon}}"><img src="{{root}}{{#unless icon-url}}assets/img/icons/{{icon}}.svg{{/unless}}{{#if icon-url}}{{icon-url}}{{/if}}" class="icon-image" /></span>
             {{/if}}
           </a>
         </li>
       {{/each}}
+      <li class="nav-item lang">
+          <a href="" class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
+            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" href="" title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
+      </li>
+      </ul>
       {{/if}}
-      -->
+    </nav>
   </div>
 </div>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Corona Warn App" />
+    <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}{{#unless page-description}}Corona Warn App{{/unless}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--
+    {{#if global.favicon}}
     <link
       rel="icon"
-      type="image/png"
+      type="image/{{#if global.favicon.type}}{{global.favicon.type}}{{/if}}{{#unless global.favicon.type}}png{{/unless}}"
       sizes="32x32"
-      href="{{root}}assets/img/favicon.png"
-    />-->
+      href="{{root}}{{global.favicon.url}}"
+    />
+    {{/if}}
 
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>Corona Warn App - {{page-title}}</title>
@@ -25,9 +26,12 @@
     <div class="main-content">
       {{> body}}
     </div>
-    
-    {{> footer}}
-
+    {{#unless lang_de}}
+    {{> footer language=global.lang.en}}
+    {{/unless}}
+    {{#if lang_de}}
+    {{> footer language=global.lang.de}}
+    {{/if}}
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

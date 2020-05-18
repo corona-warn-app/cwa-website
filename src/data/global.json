@@ -32,8 +32,14 @@
     "lang": {
         "en": {
             "lang": {
-                "en": "English",
-                "de": "German"
+                "en": {
+                    "long" : "English", 
+                    "short": "EN"
+                },
+                "de": {
+                    "long": "German",
+                    "short": "DE"
+                }
             },
             "nav": [{
                 "id": "community",
@@ -41,7 +47,7 @@
                 "url": "/community"
             }, {
                 "id": "blog",
-                "title": "Community",
+                "title": "Blog",
                 "disabled": true
             }, {
                 "id": "faq",
@@ -67,6 +73,7 @@
                 }, {
                 "id": "github",
                 "icon": "github",
+                "icon-url": "/assets/img/icons/github_white.svg",
                 "title": "our project on github",
                 "titlecaption": "Get involved",
                 "url": "https://github.com/corona-warn-app",
@@ -82,8 +89,14 @@
         },
         "de": {
             "lang": {
-                "en": "Englisch",
-                "de": "Deutsch"
+                "en": {
+                    "long": "Englisch",
+                    "short": "EN"
+                },
+                "de": {
+                    "long": "Deutsch",
+                    "short": "DE"
+                }
             },
             "nav": [
                 {
@@ -125,6 +138,7 @@
                 {
                     "id": "github",
                     "icon": "github",
+                    "icon-url": "/assets/img/icons/github_white.svg",
                     "title": "our project on github",
                     "titlecaption": "Get involved",
                     "url": "https://github.com/corona-warn-app",

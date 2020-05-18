@@ -1,6 +1,11 @@
 <header class="header{{#ifpage 'index'}} header_home{{/ifpage}}{{#if header-cls}} header-cls{{/if}}">
   <div class="container">
+  {{#unless lang_de}}
   {{> global-nav language=global.lang.en}}
+  {{/unless}}
+  {{#if lang_de}}
+  {{> global-nav language=global.lang.de}}
+  {{/if}}
   </div>
   {{#ifpage 'index'}}
   {{#if sticky-panel-active}}

@@ -162,9 +162,11 @@
 
     .main {
         width: 100%;
+        padding-top: $spacer * 2.125;
     }
-     @media (min-width: $screen-md){
+    @media (min-width: $screen-md){
          display: flex;
+         padding-top: 0;
 
          .side-menu {
             transform: translate3d(0, 0, 0);
