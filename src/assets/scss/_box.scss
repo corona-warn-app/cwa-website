@@ -8,7 +8,28 @@
     
     &_stretch {
         height: 100%;
+        
+        &.box_flex {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            > .image-block {
+                width: 30%;
+                padding-right: 0;
+                padding-left: 0;
+                img {
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 100%;
+                }
+            }
+            > div {
+                max-width: 70%;
+                padding-left: $spacer;
+            }
+        }
     }
+
     &_spaced {
         margin-top: $spacer * 3;
     }
@@ -21,6 +42,7 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+        height: 100%;
         .box-inner {
             flex: 1 0 auto;
             &_end {
@@ -29,15 +51,33 @@
         }
         @media (min-width:$screen-sm) {
             flex-direction: row;
+            align-items: center;
+            > .box-inner_flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex: 1 0 auto;
+
+                h3:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     .image-block {
-        max-width: 62px;
+        max-width: 30%;
+        img {
+            min-width: 90px;
+        }
 
         @media (min-width:$screen-sm) {
             max-width: none;
             &:first-child {
-                padding-right: $spacer * 2.5;
+                padding-right: $spacer * 1.25;
+            }
+            img {
+                min-width: 100px;
+                max-width: 160px;
             }
         }
     }
@@ -97,7 +137,6 @@
     &_left {
         right: 0.5rem;
     }
-    
 }
 
 .text-block {
@@ -138,6 +177,27 @@
         &-bottom {
             margin-bottom: $spacer * 3.25;
         }
+    }
+}
+.col-text {
+    order: 1;
+    margin-bottom: $spacer * 2;
+}
+.col-img {
+    order: 0;
+}
+
+@media(min-width: $screen-md){
+    .col-img,
+    .col-text {
+        order: auto;
+    }
+}
+
+p:not([class]) + .btn {
+    &.btn-primary,
+    &.btn-secondary {
+        margin-top: $spacer * 0.5;
     }
 }
 

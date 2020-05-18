@@ -14,8 +14,10 @@
       <div class="row justify-content-center">
         {{#each global.error.boxes}}
         <div class="col-12 col-sm-6 col-md-4 box-column">
-          <div class="box box_flex box_stretch">
+          <div class="box box_flex justify-content-center">
+            {{#if image}}
             {{> image-component this=.}}
+            {{/if}}
             <div class="col-8 col-sm-9 col-md-10">
               {{#if title}}
               <h3 class="headline">{{title}}</h3>

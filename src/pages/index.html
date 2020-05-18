@@ -14,7 +14,6 @@ get-app-enabled: false
           {{#each index.section-main.content.links}}
           {{> button-link-component button=. direction='down'}}
           {{/each}}
-          {{> button-link-component button=. direction='down'}}
         </p>
       </div>
       <div class="col col-12 col-sm-12 col-md-12 col-lg-5">
@@ -31,11 +30,11 @@ get-app-enabled: false
     </div>
     {{/if}}
     {{#if index.section-image-ticker.image-ticker}}
+    {{#each index.section-image-ticker.image-ticker}}
     <div class="row align-items-center">
-      {{#each index.section-image-ticker.image-ticker}}
       {{#if image}}{{> image-ticker this=. text-cls='text-block_indented'}}{{/if}}
-      {{/each }}
     </div>
+    {{/each }}
     {{/if}}
   </div>
 </section>
@@ -53,12 +52,13 @@ get-app-enabled: false
             <div class="box box_flex box_stretch">
               {{> image-component this=.}}
               <div>
-              {{#if title}}
+              {{> headline-small-component this=.}}
+              <!-- {{#if title}}
               <h3 class="headline">{{title}}</h3>
               {{/if}}
               {{#if button}}
               {{> button-link-component button=button}}
-              {{/if}}
+              {{/if}} -->
               </div>
             </div>
           </div>
@@ -135,11 +135,13 @@ get-app-enabled: false
       {{#if index.section-join-project.box}}
         <div class="box box_spaced box_flex">
           {{> image-component index.section-join-project.box.image}}
-          <div class="box-inner">{{> headline-small-component index.section-join-project.box.content}}</div>
-          <div class="box-inner box-inner_end">
-            {{#each index.section-join-project.box.content.links}}
-            <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{title}}" href="{{url}}">{{title}}<span class="icon icon_arrow-right"></span></a>
-            {{/each}}
+          <div class="box-inner_flex">
+            <div class="box-inner">{{> headline-small-component title=index.section-join-project.box.content.title}}</div>
+            <div class="box-inner box-inner_end">
+              {{#each index.section-join-project.box.content.links}}
+              <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{title}}" href="{{url}}">{{title}}<span class="icon icon_arrow-right"></span></a>
+              {{/each}}
+            </div>
           </div>
         </div>
       {{/if}}
