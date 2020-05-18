@@ -1,18 +1,18 @@
 {
     "section-main" : {
         "headline" : {
-            "titlecaption": "Corona-Warn-App Open Source Projekt",
-            "title": "Help us improve the COVID-19 exposure notification app"
+            "titlecaption": "Open Source Projekt für Corona-Warn-App",
+            "title": "Helft uns, die Corona-Warn-App zu verbessern"
         },
         "content": {
-            "text": "The Corona-Warn-App open-source project develops a tracking app based on technology with a decentralized approach that notifies users if they have been exposed to COVID-19. It maintains the highest security and data privacy standards to protect the end-users and encourage adoption.",
+            "text": "Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des SARS-CoV-2 (CoVID-19 Auslöser) in Deutschland nachzuverfolgen und zu unterbrechen. Die App basiert auf Technologien mit einem dezentralisierten Ansatz und informiert Nutzer, wenn sie mit einer infizierten Person in Kontakt standen. Transparenz ist von entscheidender Bedeutung, um Nutzer zu schützen und die Akzeptanz zu erhöhen.",
             "button": {
-                "title": "Bring me to GitHub",
+                "title": "GitHub aufrufen",
                 "url": ""
             },
             "links" : [
-                { "title": "Data privacy & security", "url": ""},
-                { "title": "Our partners", "url": ""}
+                { "title": "Datenschutz & Sicherheit", "url": ""},
+                { "title": "Unsere Partner", "url": ""}
             ]
         },
         "image": {
@@ -22,55 +22,55 @@
     },
     "section-image-ticker": {
         "headline": {
-            "title": "How does the app work?"
+            "title": "Wie funktioniert die App?"
         },
         "image-ticker": [
             {},
             {
                 "index": "01.",
                 "image": {"url": "path"},
-                "title": "Track nearby IDs",
-                "text": "In a background process an IoS/Android SDK registers (rolling) identifiers from phones in the vicinity using Bluetooth Low Energy and stores them locally – encrypted and inaccessible."
+                "title": "IDs in der Nähe sammeln",
+                "text": "Das Exposure Notification Framework (von Apple und Google) auf einem mobilen Gerät sendet einen Rolling Proximity Identifier und sucht gleichzeitig regelmäßig mithilfe der Technologie Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern."
             },
             {
                 "index": "02.",
                 "image": {"url": "path", "right" : true },
-                "title": "Communicate test result of user with symptoms",
-                "text": "Tested user can get results communicated in the app, through a test results server using an authentication process with QR-codes."
+                "title": "Testergebnis von Nutzer mit Symptomen mitteilen (optional)",
+                "text": "Wenn das jeweilige Labor den elektronischen Prozess unterstützt, können getestete Nutzer mit dem QR-Code, den sie während des Tests erhalten haben, ihre Ergebnisse abrufen."
             },
             {
                 "index": "03.",
                 "image": {"url": "path"},
-                "title": "Distribute list of COVID-19 positive identifiers",
-                "text": "In case of a positive test result, the user is asked to voluntarily upload the anonymous identifiers to the key server. To prevent misuse, it first verifies the positive test result. If confirmed, the key server adds the anonymous identifiers to the COVID-19-confirmed identifiers list, which is regularly broadcasted to all apps."
+                "title": "Liste von Schlüsseln der als infiziert gemeldeten Nutzer verteilen",
+                "text": "Im Falle eines positiven Testergebnisses werden Nutzer gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die Schlüssel des Nutzers in die Liste der als infiziert gemeldeten Nutzer ein, die regelmäßig an alle Apps gesendet wird."
             },
             {
                 "index": "04.",
                 "image": {"url": "path-to-file","right": true },
-                "title": "Check for previous contact with COVID-19 positive identifier",
-                "text": "The SDK checks if any of the broadcasted list of COVID-19-confirmed identifiers was registered as being in the vicinity of that device. In case of exposure the risk is assessed, and the user receives corresponding instructions.",
-                "button": {"title": "Learn more in scoping document", "link": "#"}
+                "title": "Prüfung auf Kontakt mit Nutzern, die sich als infiziert gemeldet haben",
+                "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Nutzer heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und der Nutzer erhält entsprechende Handlungsanweisungen.",
+                "button": {"title": "Weitere Infos im Scoping Dokument", "link": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md"}
             }
         ]
     },
     "section-boxes": {
         "headline" : {
-            "title": "Stay up to date!"
+            "title": "Bleib auf dem Laufenden!"
         },
         "boxes" : [
             {
                 "image": {"url": "path-to-file"},
                 "titlecaption": "Stay tuned!",
-                "title": "The Corona-Warn-App Blog is comming soon"
+                "title": "Der Corona-Warn-App Blog ist in Kürze verfügbar"
             },
             {
                 "image": {
                     "url": "path-to-file"
                 },
-                "title": "More Questions",
+                "title": "Noch Fragen?",
                 "button": {
                     "url": "",
-                    "title": "Check out FAQ",
+                    "title": "Hier geht‘s zu den FAQs",
                     "class": "btn-link btn-link-icon btn-link-icon_right"
                 }
             }
@@ -82,20 +82,19 @@
             "title": "testing title"
         },
         "headline": {
-            "title": "Join the open-source project!",
+            "title": "Mach mit beim Open-Source-Projekt!",
             "textblock": [
-                "If you want to contribute, head over to GitHub to get started.",
-                "Learn about our <a href='#code-of-conduct' target='_blank'>Code of Conduct</a> and find out how to contribute on the <a href=''>Community page</a>."
+                "Wenn Du an dem Projekt mitarbeiten möchtest, kannst Du zu GitHub wechseln und sofort loslegen. Hier kannst Du Dir auch die <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank'>Dokumentation</a> durchlesen, den <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank'>Code of COobduct</a> einsehen und mehr darüber erfahren, wie Du in der <a href='./community'>Community</a> mitarbeiten kannst."
             ],
             "button": {
-                "title": "Bring me to GitHub",
-                "url": ""
+                "title": "Mach mit in GitHub",
+                "url": "https://github.com/corona-warn-app/"
             }
         }
     },
     "section-feature-listing" : {
         "headline" : {
-            "title" : "Data privacy and security"
+            "title" : "Unsere Grundsätze für Datenschutz und Sicherheit"
         },
         "feature-list": [{
             "image" : {
@@ -103,14 +102,14 @@
                 "title" : ""
             },
             "headline" : {
-                "title" : "Open source approach"
+                "title" : "Open-Source-Ansatz"
             },
             "list": [{
-                "title": "Transparency",
-                "text" : "Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."
+                "title": "Transparenz",
+                "text" : "Nur durch Transparenz gewinnen wir das Vertrauen der Nutzer und erhöhen die Akzeptanz der App."
                 },{
-                "title": "Power of the community",
-                "text": "increases security eirmod tempor invidunt ut aliquyam eirmod tempor invidunt ut labore et dolore magna aliquyam.."
+                "title": "Die Community",
+                "text": "Die Community trägt zu mehr Sicherheit und Datenschutz bei, da die Community-Teilnehmer Probleme frühzeitig erkennen und bei deren Lösung unterstützen können."
                 }]
         },{
             "image" : {
@@ -118,7 +117,7 @@
                 "title" : ""
             },
             "headline" : {
-                "title" : "Decentralized approach"
+                "title" : "Datenschutz"
             },
             "list": [{
                 "title": "Heavily inspired by the DP-3T",
@@ -155,13 +154,13 @@
     },
     "section-icon-listing": {
         "headline" : {
-            "title": "Our partners",
-            "text": "The German government has requested SAP and Deutsche Telekom to deliver the official Corona-Warn-App for Germany fully based on open source.<br>There are many more partners involved in creating this app as well as the global open source community."
+            "title": "Unsere Partner",
+            "text": "Anfang Mai 2020 hat die Bundesregierung SAP und die Deutsche-Telekom-Tochter T-Systems gebeten, die offizielle Corona-Warn-App für Deutschland zu entwickeln. Die App soll nach dem Open-Source-Prinzip entwickelt werden und auf einem dezentralen Ansatz basieren. Folgende Partner unterstützen die Entwicklung der App, in die auch die globale Open-Source-Community eingebunden ist:"
         },
         "icon-list" : [{
             "url": "#",
             "icon-url": "",
-            "title": "Telecom"
+            "title": "Deutsche Telekom"
         }, {
             "url": "#",
             "icon-url": "",
@@ -186,9 +185,9 @@
     },
     "section-join-project": {
         "headline" : {
-            "title": "Join the open-source project!",
+            "title": "Mach mit beim Open Source Projekt!",
             "button": {
-                "title": "Bring me to GitHub"
+                "title": "GitHub aufrufen"
             }
         },
         "box" : {
@@ -197,9 +196,9 @@
                 "title": "image-title"
             },
             "content": {
-                "title": "More Questions?",
+                "title": "Mehr Fragen?",
                 "links": [{
-                    "title": "Check out FAQ",
+                    "title": "Hier geht‘s zu den FAQs",
                     "url": "/faq"
                 }]
             }
