@@ -33,21 +33,51 @@ section {
     }
     &_bg {
         &-light {
-            background-color: $light;
-            background-image: none;
+            &,
+            &:before {
+                background-color: $light;
+                background-image: none;
+            }
+            
         }
         &-white {
-            background-color: $white;
-            background-image: none;
+            &,
+            &:before {
+                background-color: $white;
+                background-image: none;
+            }
         }
         &-gradient {
-            background-image: $background-image_gradient;
+            &,
+            &:before {
+                background-image: $background-image_gradient;
+                background-color: transparent;
+            }
+            
             color: $white;
 
             h2.headline {
                 &:after {
                     border-color: $white;
                 }
+            }
+        }
+        &-skew {
+            position: relative;
+            background: transparent;
+            padding-top: ($spacer * 6);
+            padding-bottom: ($spacer * 4.5);
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: $spacer;
+                left: 0;
+                height: 110%;
+                width: 100%;
+                transform: skewY(2deg);
+                z-index: -1;
             }
         }
     }
