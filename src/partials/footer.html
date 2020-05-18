@@ -21,7 +21,7 @@
             {{/if}}
             {{#if links}}
             {{#each links}}
-            <a {{#if url}}href="{{url}}" {{/if}}{{#unless url}}class="disabled" {{/unless}}>
+            <a {{#if url}}href=".{{url}}" {{/if}}{{#unless url}}class="disabled" {{/unless}}>
               {{#unless icon}}{{title}}{{/unless}}
               {{#if icon}}<span class="icon icon_img icon_{{icon}}"><img
                   src="{{root}}{{#unless icon-url}}assets/img/icons/{{icon}}.svg{{/unless}}{{#if icon-url}}{{icon-url}}{{/if}}"

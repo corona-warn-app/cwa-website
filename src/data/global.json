@@ -24,7 +24,7 @@
                 "title": "Any questions?",
                 "button": {
                     "title": "Check out the FAQ",
-                    "url": "/faq"
+                    "url": "/faq.html"
                 }
             }
         ]
@@ -44,15 +44,16 @@
             "nav": [{
                 "id": "community",
                 "title": "Community",
-                "url": "/community"
+                "url": "/community.html"
             }, {
                 "id": "blog",
                 "title": "Blog",
-                "disabled": true
+                "disabled": true,
+                "deactivated": true
             }, {
                 "id": "faq",
                 "title": "FAQ",
-                "url": "/faq"
+                "url": "/faq.html"
             }, {
                 "id": "github",
                 "icon": "github",
@@ -72,25 +73,25 @@
                     },
                     {
                         "title": "FAQ",
-                        "url": "./faq"
+                        "url": "/faq"
                     }]
                 },
                 {
                     "title": "About",
                     "links": [{
                         "title": "Privacy Statement",
-                        "url": "./privacy"
+                        "url": "/privacy"
                     },
                     {
                         "title": "Imprint",
-                        "url": "./imprint"
+                        "url": "/imprint.html"
                     }]
                 },
                 {
                     "title": "Get involved",
                     "links": [{
                             "title": "Community",
-                            "url": "./community"
+                            "url": "/community"
                         },
                         {
                             "id": "github",
@@ -122,17 +123,18 @@
                 {
                     "id": "community",
                     "title": "Community",
-                    "url": "/community"
+                    "url": "/community.html"
                 },
                 {
                     "id": "blog",
-                    "title": "Community",
-                    "disabled": true
+                    "title": "Blog",
+                    "disabled": true,
+                    "deactivated": true
                 },
                 {
                     "id": "faq",
                     "title": "FAQ",
-                    "url": "/faq"
+                    "url": "/faq.html"
                 },
                 {
                     "id": "github",
@@ -155,7 +157,7 @@
                         },
                         {
                             "title": "FAQ",
-                            "url": "./faq"
+                            "url": "/faq.html"
                         }
                     ]
                 },
@@ -164,11 +166,11 @@
                     "links": [
                         {
                             "title": "Datenschutzerklärung",
-                            "url": "./privacy"
+                            "url": "/privacy.html"
                         },
                         {
                             "title": "Impressum",
-                            "url": "./imprint"
+                            "url": "/imprint.html"
                         }
                     ]
                 },
@@ -177,7 +179,7 @@
                     "links": [
                         {
                             "title": "Community",
-                            "url": "./community"
+                            "url": "/community.html"
                         },
                         {
                             "id": "github",
