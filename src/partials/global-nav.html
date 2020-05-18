@@ -13,7 +13,7 @@
       {{#each language.nav}}
         {{#unless deactivated}}
         <li class="nav-item">
-          <a href=".{{url}}" class="nav-link{{#unless external}}{{#ifpage id}} active{{/ifpage}}{{/unless}}{{#if external}} nav-link_external{{/if}}{{#if disabled}} disabled{{/if}}"{{#if external}} target="_blank"{{/if}}>
+          <a href="{{url}}" class="nav-link{{#unless external}}{{#ifpage id}} active{{/ifpage}}{{/unless}}{{#if external}} nav-link_external{{/if}}{{#if disabled}} disabled{{/if}}"{{#if external}} target="_blank"{{/if}}>
             {{#unless icon}}
             {{title}}
             {{/unless}}
