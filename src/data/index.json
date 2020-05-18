@@ -5,7 +5,7 @@
             "title": "Help us improve the Corona-Warn-App"
         },
         "content": {
-            "text": "The Corona-Warn-App is an app that helps trace infection chains of COVID-19 in Germany. The app is based on technologies with a decentralized approach and notifies users if they have been exposed to COVID-19. Transparency is key to both protect the app's end-users and to encourage adoption.",
+            "text": "The Corona-Warn-App is an app that helps trace infection chains of SARS-CoV-2 (which can cause COVID-19) in Germany. The app is based on technologies with a decentralized approach and notifies users if they have been exposed to COVID-19. Transparency is key to both protect the app's end-users and to encourage adoption.",
             "button": {
                 "title": "Bring me to GitHub",
                 "url": ""
@@ -28,7 +28,7 @@
             {
                 "index": "01.",
                 "image": {"url": "/assets/img/how-it-works-1.svg"},
-                "title": "Track nearby IDs",
+                "title": "Collect nearby identifiers",
                 "text": "The Exposure Notification framework (by Apple and Google) on a mobile device is broadcasting a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h."
             },
             {
@@ -40,13 +40,13 @@
             {
                 "index": "03.",
                 "image": {"url": "/assets/img/how-it-works-3.svg"},
-                "title": "Distribute list of keys of COVID-19 confirmed users",
-                "text": "In case of a positive test result, users are asked to voluntarily upload their temporary keys of up to the last 14 days to the server. To prevent misuse, the Corona-Warn-App backend first verifies the positive test result. If confirmed, the server adds the user’s keys to the COVID-19-confirmed list, which is regularly broadcasted to all apps."
+                "title": "Distribute list of keys of SARS-CoV-2 confirmed users",
+                "text": "In case of a positive test result, users are asked to voluntarily upload their temporary keys of up to the last 14 days to the server. To prevent misuse, the Corona-Warn-App backend first verifies the positive test result. If confirmed, the server adds the user’s keys to the SARS-CoV-2 confirmed list, which is regularly broadcasted to all apps."
             },
             {
                 "index": "04.",
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
-                "title": "Check for exposure to COVID-19 confirmed users",
+                "title": "Check for exposure to SARS-CoV-2 confirmed users",
                 "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification framework derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
                 "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md"},
                 "links": [{
@@ -131,7 +131,7 @@
                 "text": "Details will be outlined in a Data Privacy document (coming soon)."
                 },{
                 "title": "Two objectives",
-                "text": "Only personal data needed for the following two objectives will be processed: 1. Assess personal risk of infection, 2. Learn COVID-19 test results faster."
+                "text": "Only personal data needed for the following two objectives will be processed:<br>1. Assess personal risk of infection<br>2. Learn COVID-19 test results faster."
                 },{
                 "title": "Part of design",
                 "text": "It is part of the design process to ensure for each step that the app processes a minimum of required personal data that is handled with maximum protection."
@@ -145,14 +145,14 @@
                 "title" : "Security"
             },
             "list": [{
-                "title": "Secure Software Development Lifecycle",
-                "text": "Security assurance of application development through Secure Software Development Lifecycle, which includes among other things threat modeling and end-to-end risk assessment, security planning, security testing and penetration testing."
-            }, {
                 "title": "Open and transparent",
                 "text": "No security through obscurity: we follow an open and transparent approach."
             },{
                 "title": "Secure hosting",
                 "text": "Hosting conform to BSI C5, SOC 2 and SOC1/ISAE 3402."
+            },{
+                "title": "Secure Software Development Lifecycle",
+                "text": "Security assurance of application development through Secure Software Development Lifecycle, which includes among other things threat modeling and end-to-end risk assessment, security planning, security testing and penetration testing."
             }]
         }]
     },

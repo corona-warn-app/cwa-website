@@ -10,14 +10,14 @@
             "accordion": [
                 {
                     "active": true,
-                    "title": "When will the app be available?",
+                    "title": "When will the app be finished?",
                     "textblock": [
-                      "We are working with high priority to complete the application. Please understand that we cannot name a specific date. You can turn to the responsible federal ministry for this matter. However, the progression can be monitored in the code repository."  
+                      "We are doing all we can to finish development of the app, but please understand that we can't name a specific date at this point. For more information, please contact the responsible federal ministry. However, you can track the progress of development in the code repository."  
                     ]
                 },{
-                    "title" : "Where can I find information, ask questions or discuss topics regarding the Corona-Warn-App that are nót development related?",
+                    "title" : "Can I find information, ask questions or discuss topics here regarding the Corona-Warn-App that are not development related?",
                     "textblock": [
-                        "The Corona-Warn-App open-source project and its website corna-warn.app are concerned with the open-source development of the apps. Neither this website nor the GitHub repositories are the right place for discussion or information on topics unrelated to app development, like legal matters, end-user guidance, etc. For these, please visit/contact xyz."
+                        "The Corona-Warn-App open-source project and its website coronawarn.app involve the open-source development of the apps. Neither this website nor the GitHub repositories are the right place for discussion or information on topics unrelated to app development - such as legal matters, enduser guidance, and so on. We kindly ask you to respect this."
                     ]
                 }
             ]
@@ -26,26 +26,26 @@
             "id": "open-source",
             "accordion": [
                 {
-                    "title": "Why open source?",
+                    "title": "Why are we following an open-source approach?",
                     "textblock": [
-                        "We are convinced that the success of the solution depends on the users’ acceptance and trust. Through this open source approach, we want to create the transparency that is necessary for a strong foundation of trust. Furthermore, through this approach the broader public and their respective communities of experts have the possibility to actively contribute to the solution’s success via reviews and pull requests, for example."
+                        "We believe that the success of the solution depends directly on user acceptance and trust. Through this open-source approach, we want to create the transparency that is needed to create a strong foundation of trust. Furthermore, the open-source approach gives the broader public and the developer community to actively contribute to the solution’s success, for example, through reviews and pull requests."
                     ]
                 },
                 {
                     "title": "How can developers contribute to this project?",
                     "textblock": [
-                        "The open source project uses GitHub, a worldwide famous online service in this field that provides software and developing projects on their own servers. All of those who are interested can participate in this project by, for example, correcting mistakes in the code, posting questions and comments about the project, or help with the documentation. The cooperation within the community is liable to a Code of Conduct. You can get started by learning more on contributing <a href='./community'>here</a>."
+                        "The open-source project uses GitHub, a globally known online service in this field that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by mistakes in the source code, helping with the documentation, or contributing questions and comments to the project. Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='./community'>here</a>."
                     ]
                 },
                 {
-                    "title": "Why will the project be hosted on GitHub and not on another platform?",
+                    "title": "Why are you using GitHub instead of a different platform?",
                     "textblock": [
-                        "We are convinced that GitHub is a well-established and respected platform for open source projects. It is the world’s biggest open source platform with more than 40 million users, over 100 million repositories of which over 30 million are publicly accessible. In case someone doesn’t want to create a GitHub account, there is the possibility to see the code without a GitHub account."
+                        "We believe that GitHub is a well-established, respected platform for open-source projects. It is the world's largest open-source platform, with more than 40 million users and over 100 million repositories, over 30 million of which are publicly accessible.<br>If someone does not want to create a GitHub account, they can view the source code without an account."
                     ]
                 },{
-                    "title": "What Code of Conduct applies?",
+                    "title": "What code of conduct applies?",
                     "textblock": [
-                        "Only through mutual respect we can assure a successful development in a productive, collaborative community. All participants of the project community act on a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' title=''>Code of Conduct</a>. All violations against it can be reported to the parties responsible for this project or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> by all the members and this can entail consequences, like, warnings, or exclusions. "
+                        "Successful development in a productive, collaborative community is only possible through mutual respect. That's why all the members of the project community pledge to follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' title=''>code of conduct</a>. Violations of the code of conduct can be reported to the community managers or directly to <a href='mailto:corona-warn-app.opensource@sap.com 'target='_blank'>corona-warn-app.opensource@sap.com</a> by any member of the community. Violators may face consequences such as warnings or even exclusion from participating in the project."
                     ]
                 }
             ]
@@ -54,22 +54,21 @@
             "id": "application",
             "accordion": [
                 {
-                    "title": "What are the Security Features of the Corona App?",
+                    "title": "Won't the smartphone battery be drained more quickly with the app running?",
                     "textblock": [
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                        "The Corona Warn app uses the existing Bluetooth technology on user devices.<br>Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
+					]
+                },
+                {
+                    "title": "Will the app be made available anywhere else apart from the App Store or Google Play Store?",
+                    "textblock": [
+                        "We have no plans to make the app available outside of the Apple's App Store or Google Play Store.<br>The Corona-Warn-App will use the Exposure Notification APIs from Apple and Google and the community is of course invited to contribute and integrate additional APIs."
                     ]
                 },
                 {
-                    "title": "Lorem Ipsum dolor met",
+                    "title": "How will the development status in GitHub be uploaded to the app stores?",
                     "textblock": [
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    ]
-                },
-                {
-                    "title": "Lorem Ipsum dolor met",
-                    "textblock": [
-                        "Karem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                        "The app will be created using standard tools (such as Xcode and Android Studio) and then uploaded to the respective app stores. <a href='https://core.telegram.org/reproducible-builds 'target='_blank'>This guide</a> will help you verify that the source code in GitHub actually matches that of the app in the respective app stores."
                     ]
                 }
             ]
@@ -78,34 +77,21 @@
             "id": "technologies",
             "accordion": [
                 {
-                    "title": "How does it handley Privacy on my Data?",
+                    "title": "Can privacy protection of user data be guaranteed?",
                     "textblock": [
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                        "The decentralized data storage on the user devices guarantees privacy. We are working closely together with experts from the data privacy community and coordinating with one another throughout the development process. We are also working on a separate document dedicated to data privacy, which will be published soon. Furthermore, the open-source approach of the source code enables the community to review the functionality of the app and to leave comments."
                     ]
                 },
                 {
-                    "title": "Lorem Ipsum dolor met",
+                    "title": "Which data will be saved und who can access this data through Bluetooth?",
                     "textblock": [
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                        "Bluetooth will be used to send constantly changing IDs and receive IDs from other devices that have installed the app. No personal, geo-location, or other location data will be sent or stored.<br>Through use of the Exposure Notification API from Google and Apple, the IDs will remain in a secure area of the smartphone operating system.  The matching, which determines whether someone has been exposed to an infected person, is performed on the local smartphone. The phone will not send any data for matching.<br>If a user tests positively for infection, they will be asked to share their temporary exposure keys from the last 14 days. The keys can only be accessed by the Exposure Notification API if the user actively approves."
                     ]
                 },
                 {
-                    "title": "Lorem Ipsum dolor met",
+                    "title": "Doesn’t the open-source approach, which involves publishing the source code, put cybersecurity at risk?",
                     "textblock": [
-                        "Karem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    ]
-                },
-                {
-                    "title": "Lorem Ipsum dolor met",
-                    "textblock": [
-                        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                    ]
-                },
-                {
-                    "title": "Lorem Ipsum dolor met",
-                    "textblock": [
-                        "Karem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+                        "On the contrary: the open-source community increases the level of security of the software, because the source code is open to all and anyone can download it and comb through it line by line.<br>We believe that security is not helped by a lack of transparency. That's why we are following an open-source approach."
                     ]
                 }
             ]
