@@ -1,5 +1,6 @@
 ---
 lang_en: true
+get-app-enabled: false
 ---
 <section class="section-main">
   <div class="container">
@@ -144,6 +145,7 @@ lang_en: true
       </div>
     </div>
   </section>
+  {{#if get-app-enabled}}
   <section class="section-intersect section_bg-white">
     <div class="container contents-normal">
       {{#if index.section-join-project.content}}
@@ -165,4 +167,5 @@ lang_en: true
         </div>
       {{/if}}
     </div>
+    {{/if}}
 </section>

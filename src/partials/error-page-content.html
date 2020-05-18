@@ -10,8 +10,26 @@
           {{>image-component global.error.image }}
         </div>
       </div>
-      <div class="row">
+      {{#if global.error.boxes}}
+      <div class="row justify-content-center">
+        {{#each global.error.boxes}}
+        <div class="col-12 col-sm-6 col-md-4 box-column">
+          <div class="box box_flex box_stretch">
+            {{> image-component this=.}}
+            <div class="col-8 col-sm-9 col-md-10">
+              {{#if title}}
+              <h3 class="headline">{{title}}</h3>
+              {{/if}}
+              {{#if button}}
+              <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{button.title}}"
+                href="{{button.url}}">{{button.title}}<span class="icon icon_arrow-right"></span></span></a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
       </div>
+      {{/if}}
     </div>
   </div>
 </section>
