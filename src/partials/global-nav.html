@@ -1,14 +1,13 @@
 <div class="row navbar">
   <div class="col-sm-6 col-md-3 hidden-xs">
-    <a class="logo" href="/index.html" title="Corona Warn-App">
-      <img src="{{root}}assets/img/logo.svg" alt="Corona Warn-App" class="logo-image" />
+    <a class="logo" href="/index.html" title="{{language.logo.title}}">
+      <img src="{{root}}assets/img/logo.svg" alt="{{language.logo.title}}" class="logo-image" />
     </a>
   </div>
   <div class="col col-xs-6 col-md-9">
     <button class="btn-menu" data-toggle="header-nav"></button>
     <nav class="header-nav" id="header-nav">
       <button class="btn-menu btn-menu-close" data-toggle="header-nav"></button>
-      {{#if lang_en}}
       <ul class="nav">
         <li class="nav-item">
           <a href="/community" class="nav-link{{#ifpage 'community'}} active{{/ifpage}}">Community</a>
@@ -21,30 +20,24 @@
           <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon_github"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
         </li>
         <li class="nav-item lang">
-          <a href="" class="nav-link active" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link" href="" title="Deutsch">DE</a>
+          <a href="" class="nav-link{{#unless lang_de}} active{{/unless}}" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" href="" title="Deutsch">DE</a>
         </li>
       </ul>
-      {{/if}}
-      {{#if lang_de}}
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="/community" class="nav-link{{#ifpage 'community'}} active{{/ifpage}}">Community</a>
-        </li>
-        <li class="nav-item"><a href="/blog" class="nav-link disabled">Blog</a></li>
-        <li class="nav-item">
-          <a href="/faq" class="nav-link{{#ifpage 'faq'}} active{{/ifpage}}">FAQ</a>
-        </li>
-      </ul>
-      <ul class="nav nav-right">
-        <li class="nav-item">
-          <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon_github"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
-        </li>
-        <li class="nav-item lang">
-          <a href="" class="nav-link" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link active" href=""
-            title="Deutsch">DE</a>
-        </li>
-      </ul>
-      {{/if}}
     </nav>
+    <!--
+      {{#if language.nav}}
+      {{#each language.nav}}
+        <li class="nav-item">
+          <a href="{{root}}{{url}}" class="nav-link{{#unless external}}{{#ifpage id}} active{{/ifpage}}{{/unless}}{{#if external}} nav-link_external{{/if}}{{#if disabled}} disabled{{/if}}">
+            {{#unless icon}}
+            {{title}}
+            {{/unless}}
+            {{#if icon}}
+            {{/if}}
+          </a>
+        </li>
+      {{/each}}
+      {{/if}}
+      -->
   </div>
 </div>
