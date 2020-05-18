@@ -81,13 +81,22 @@
         display: block;
         width: 100%;
         height: auto;
+        
     }
     &-container {
         position: relative;
+        margin-top: $spacer;
+        margin-bottom: $spacer * 1.5;
+
+        @media (min-width: $screen-md){
+            margin-top: 0.5 * $spacer;
+            margin-bottom: 0.5 * $spacer;
+        }
     }
     &_left {
         right: 0.5rem;
     }
+    
 }
 
 .text-block {

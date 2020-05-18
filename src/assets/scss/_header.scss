@@ -226,6 +226,19 @@
             .btn-menu {
                 display: none;
             }
+            .nav-link {
+                &.active {
+                    position: relative;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: $spacer * 0.6;
+                        border-top: 2px solid $white;
+                        left: $spacer;
+                        right: $spacer;
+                    }
+                }
+            }
             .nav-link-icon {
                 &.icon_github {
                     position: relative;
