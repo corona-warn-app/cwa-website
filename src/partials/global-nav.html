@@ -5,9 +5,10 @@
     </a>
   </div>
   <div class="col col-xs-6 col-md-9">
-    <nav class="header-nav">
-      <button class="btn-menu"></button>
-      {{#unless lang_de}}
+    <button class="btn-menu" data-toggle="header-nav"></button>
+    <nav class="header-nav" id="header-nav">
+      <button class="btn-menu btn-menu-close" data-toggle="header-nav"></button>
+      {{#if lang_en}}
       <ul class="nav">
         <li class="nav-item">
           <a href="/community" class="nav-link{{#ifpage 'community'}} active{{/ifpage}}">Community</a>
@@ -16,16 +17,14 @@
         <li class="nav-item">
           <a href="/faq"  class="nav-link{{#ifpage 'faq'}} active{{/ifpage}}">FAQ</a>
         </li>
-      </ul>
-      <ul class="nav nav-right">
         <li class="nav-item">
-          <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon-git"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
+          <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon_github"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
         </li>
         <li class="nav-item lang">
-          <a href="" class="nav-link active" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link active" href="" title="Deutsch">DE</a>
+          <a href="" class="nav-link active" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link" href="" title="Deutsch">DE</a>
         </li>
       </ul>
-      {{/unless}}
+      {{/if}}
       {{#if lang_de}}
       <ul class="nav">
         <li class="nav-item">
@@ -38,7 +37,7 @@
       </ul>
       <ul class="nav nav-right">
         <li class="nav-item">
-          <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon-git"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
+          <a href="#github" class="nav-link nav-link_external" target="_blank"><span class="nav-link-icon icon_github"><img src="{{root}}assets/img/icons/github.svg" class="icon-image" /></span></a>
         </li>
         <li class="nav-item lang">
           <a href="" class="nav-link" title="English">EN</a><span class="nav-link-delimiter">|</span><a class="nav-link active" href=""

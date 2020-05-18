@@ -5,13 +5,24 @@ section {
 
 .section {
     &-main {
-        padding-top: 0;
-
+        padding-top: 6rem;
+        
+        @media (min-width: $screen-md) {
+            padding-top: 8rem;
+        }
+        @media (min-width: $screen-lg) {
+            padding-top: 0;
+        }
         &-image {
-            max-width: 100%;
-            height: auto;
-            position: relative;
-            top: 1.5rem;
+            display: none;
+
+            @media (min-width: $screen-lg) {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                position: relative;
+                top: 1.5rem;
+            }
         }
     }
     &-intersect {

@@ -106,6 +106,10 @@
   &-heavy {
     font-weight: $font-weight-bolder;
     margin-bottom: 0.8rem;
+
+    + h4.headline {
+      margin-top: $spacer * 1.75;
+    }
   }
 }
 
