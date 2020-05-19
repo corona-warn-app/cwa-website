@@ -2,22 +2,23 @@
     "section-main" : {
         "headline" : {
             "titlecaption": "Corona-Warn-App Open Source Project",
-            "title": "Help us improve the COVID-19 exposure notification app"
+            "title": "Help us improve the Corona-Warn-App"
         },
         "content": {
-            "text": "The Corona-Warn-App open-source project develops a tracking app based on technology with a decentralized approach that notifies users if they have been exposed to COVID-19. It maintains the highest security and data privacy standards to protect the end-users and encourage adoption.",
+            "text": "The Corona-Warn-App is an app that helps trace infection chains of SARS-CoV-2 (which can cause COVID-19) in Germany. The app is based on technologies with a decentralized approach and notifies users if they have been exposed to SARS-CoV-2. Transparency is key to both protect the app's end-users and to encourage adoption.",
             "button": {
                 "title": "Bring me to GitHub",
-                "url": ""
+                "url": "https://github.com/corona-warn-app",
+                "external": true
             },
             "links" : [
-                { "title": "Data privacy & security", "url": ""},
-                { "title": "Our partners", "url": ""}
+                { "title": "Data privacy & security", "url": "#privacy"},
+                { "title": "Our partners", "url": "#partners"}
             ]
         },
         "image": {
-            "url" : "",
-            "title": ""
+            "url" : "/assets/img/app-mockup@2x.png",
+            "title": "Corona Warn App"
         }
     },
     "section-image-ticker": {
@@ -25,31 +26,35 @@
             "title": "How does the app work?"
         },
         "image-ticker": [
-            {},
             {
                 "index": "01.",
-                "image": {"url": "path"},
-                "title": "Track nearby IDs",
-                "text": "In a background process an IoS/Android SDK registers (rolling) identifiers from phones in the vicinity using Bluetooth Low Energy and stores them locally – encrypted and inaccessible."
+                "image": {"url": "/assets/img/how-it-works-1.svg"},
+                "title": "Collect nearby identifiers",
+                "text": "The Exposure Notification framework (by Apple and Google) on a mobile device is broadcasting a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h."
             },
             {
                 "index": "02.",
-                "image": {"url": "path", "right" : true },
-                "title": "Communicate test result of user with symptoms",
-                "text": "Tested user can get results communicated in the app, through a test results server using an authentication process with QR-codes."
+                "image": {"url": "/assets/img/how-it-works-2.svg", "right" : true },
+                "title": "Communicate test result of user with symptoms (optional)",
+                "text": "If the lab in question supports the electronic process, tested users can use the QR code they received during the test to retrieve their results."
             },
             {
                 "index": "03.",
-                "image": {"url": "path"},
-                "title": "Distribute list of COVID-19 positive identifiers",
-                "text": "In case of a positive test result, the user is asked to voluntarily upload the anonymous identifiers to the key server. To prevent misuse, it first verifies the positive test result. If confirmed, the key server adds the anonymous identifiers to the COVID-19-confirmed identifiers list, which is regularly broadcasted to all apps."
+                "image": {"url": "/assets/img/how-it-works-3.svg"},
+                "title": "Distribute list of keys of SARS-CoV-2 confirmed users",
+                "text": "In case of a positive test result, users are asked to voluntarily upload their temporary keys of up to the last 14 days to the server. To prevent misuse, the Corona-Warn-App backend first verifies the positive test result. If confirmed, the server adds the user’s keys to the SARS-CoV-2 confirmed list, which is regularly broadcasted to all apps."
             },
             {
                 "index": "04.",
-                "image": {"url": "path-to-file","right": true },
-                "title": "Check for previous contact with COVID-19 positive identifier",
-                "text": "The SDK checks if any of the broadcasted list of COVID-19-confirmed identifiers was registered as being in the vicinity of that device. In case of exposure the risk is assessed, and the user receives corresponding instructions.",
-                "button": {"title": "Learn more in scoping document", "link": "#"}
+                "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
+                "title": "Check for exposure to SARS-CoV-2 confirmed users",
+                "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification framework derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
+                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md", "external": true},
+                "links": [{
+                        "title": "See details in architecture document",
+                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md",
+                        "external": true
+                }]
             }
         ]
     },
@@ -59,148 +64,164 @@
         },
         "boxes" : [
             {
-                "image": {"url": "path-to-file"},
+                "image": {"url": "/assets/img/news-blog.svg"},
                 "titlecaption": "Stay tuned!",
-                "title": "The Corona-Warn-App Blog is comming soon"
+                "title": "The Corona-Warn-App blog is coming soon"
             },
             {
                 "image": {
-                    "url": "path-to-file"
+                    "url": "/assets/img/faq.svg"
                 },
-                "title": "More Questions",
-                "button": {
-                    "url": "",
-                    "title": "Check out FAQ",
+                "title": "More Questions?",
+                "links": [{
+                    "url": "/en/faq/",
+                    "title": "Check out the FAQ",
                     "class": "btn-link btn-link-icon btn-link-icon_right"
-                }
+                }]
             }
         ]
     },
     "section-image-text": {
         "image": {
-            "url" : "#",
-            "title": "testing title"
+            "url" : "/assets/img/running-app@2x_.png",
+            "title": "..."
         },
         "headline": {
             "title": "Join the open-source project!",
             "textblock": [
                 "If you want to contribute, head over to GitHub to get started.",
-                "Learn about our <a href='#code-of-conduct' target='_blank'>Code of Conduct</a> and find out how to contribute on the <a href=''>Community page</a>."
+                "You can also read the <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank'>documentation</a>, learn about our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' title=''>Code of Conduct</a> and find out how to contribute on the <a href='/en/community/'>Community page</a>."
             ],
             "button": {
                 "title": "Bring me to GitHub",
-                "url": ""
+                "url": "https://github.com/corona-warn-app",
+                "icon": "github",
+                "external": true
             }
         }
     },
     "section-feature-listing" : {
+        "id": "privacy",
         "headline" : {
             "title" : "Data privacy and security"
         },
         "feature-list": [{
             "image" : {
-                "url": "",
-                "title" : ""
+                "url": "/assets/img/icons/open-source.svg",
+                "title" : "Open Source"
             },
             "headline" : {
                 "title" : "Open source approach"
             },
             "list": [{
                 "title": "Transparency",
-                "text" : "Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."
+                "text" : "Only through transparency can we earn the trust of the end-users and increase app adoption."
                 },{
                 "title": "Power of the community",
-                "text": "increases security eirmod tempor invidunt ut aliquyam eirmod tempor invidunt ut labore et dolore magna aliquyam.."
+                "text": "The power of the community increases security and data privacy protection by detecting issues early and helping to solve them."
                 }]
         },{
             "image" : {
-                "url": "",
-                "title" : ""
+                "url": "/assets/img/icons/decentralized.svg",
+                "title" : "Data Privacy"
             },
             "headline" : {
-                "title" : "Decentralized approach"
+                "title" : "Data Privacy and Safety"
             },
             "list": [{
-                "title": "Heavily inspired by the DP-3T",
-                "text" : "Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."
+                "title": "Decentralized approach",
+                "text" : "The architecture follows a decentralized approach – based on the <a href='https://github.com/DP-3T/documents' target='_blank' title=''>DP-3T</a> and <a href='https://tcn-coalition.org/' target='_blank' title=''>TCN</a> protocols, as well as the Privacy-Preserving Contact Tracing specifications by Apple and Google."
                 },{
-                "title": "Sensitive contact data",
-                "text": "increases security eirmod tempor invidunt ut aliquyam eirmod tempor invidunt ut labore et dolore magna aliquyam.."
+                "title": "Data Privacy document",
+                "text": "Details will be outlined in a Data Privacy document (coming soon)."
                 },{
-                "title": "Identifiers of contacts",
-                "text": "are not accessible: the SDK checks for matches with the broadcasted list, but never reveals which identifiers triggered a match."
+                "title": "Two objectives",
+                "text": "Only personal data needed for the following two objectives will be processed:<br>1. Assess personal risk of infection<br>2. Learn COVID-19 test results faster."
+                },{
+                "title": "Part of design",
+                "text": "It is part of the design process to ensure for each step that the app processes a minimum of required personal data that is handled with maximum protection."
                 }]
         },{
             "image" : {
-                "url": "",
-                "title" : ""
+                "url": "/assets/img/icons/lock.svg",
+                "title" : "Security"
             },
             "headline" : {
-                "title" : "Secure protocols"
+                "title" : "Security"
             },
             "list": [{
-                "title": "One-time-tokens",
-                "text": "consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-            }, {
-                "title": "Authentication processes",
-                "text": "QR codes Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "title": "Open and transparent",
+                "text": "No security through obscurity: we follow an open and transparent approach."
             },{
-                "title": "Keeping personal test results",
-                "text": "and list of identifiers separate  aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-            }, {
-                "title": "Rolling IDs Lorem",
-                "text": "ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                "title": "Secure Software Development Lifecycle",
+                "text": "Security assurance of application development through Secure Software Development Lifecycle, which includes among other things threat modeling and end-to-end risk assessment, security planning, security testing and penetration testing."
+            },{
+                "title": "Secure hosting",
+                "text": "Hosting conform to BSI C5, SOC 2 and SOC1/ISAE 3402."
             }]
-        }]
+        }],
+        "content": {
+            "button": {
+                "title": "See details in the documentation",
+                "icon": "github",
+                "url": "https://github.com/corona-warn-app/cwa-documentation/",
+                "external": true
+            }
+        }
     },
     "section-icon-listing": {
+        "id": "partners",
         "headline" : {
             "title": "Our partners",
-            "text": "The German government has requested SAP and Deutsche Telekom to deliver the official Corona-Warn-App for Germany fully based on open source.<br>There are many more partners involved in creating this app as well as the global open source community."
+            "text": "Early May 2020, the German government requested SAP and Deutsche Telekom subsidiary T-Systems to deliver the official Corona-Warn-App for Germany and should be open sourced and based on a decentralized approach. The following partners are supporting the development of the app together with the involvement of the global open source community."
         },
         "icon-list" : [{
-            "url": "#",
-            "icon-url": "",
-            "title": "Telecom"
-        }, {
-            "url": "#",
-            "icon-url": "",
-            "title": "SAP"
-        }, {
-            "url": "#",
-            "icon-url": "",
-            "title": "Fraunhover Institut"
-        }, {
-            "url": "#",
-            "icon-url": "",
-            "title": "Heimholz"
-        }, {
-            "url": "#",
-            "icon-url": "",
-            "title": "Bundeskanzleramt"
-        }, {
-            "url": "#",
-            "icon-url": "",
-            "title": "Robert Koch Institut"
-        }]
+                "icon-url": "/assets/img/partner/cispa_logo@1x.png",
+                "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
+                "title": "Cispa"
+            }, {
+                "icon-url": "/assets/img/partner/fraunhofer_logo.svg",
+                "title": "Fraunhofer Institut"
+            }, {
+                "icon-url": "/assets/img/partner/github_logo.svg",
+                "title": "GitHub"
+            }, {
+                "icon-url": "/assets/img/partner/Helmholtz_logo.svg",
+                "title": "Helmholtz"
+            }, {
+                "icon-url": "/assets/img/partner/rki-logo@1x.png",
+                "icon-set": "/assets/img/partner/rki-logo@1x.png 1x, /assets/img/partner/rki-logo@2x.png 2x",
+                "title": "Robert Koch Institut"
+            }, {
+                "icon-url": "/assets/img/partner/sap_logo@1x.png",
+                "icon-set": "/assets/img/partner/sap_logo@1x.png 1x, /assets/img/partner/sap_logo@2x.png 2x",
+                "title": "SAP"
+            }, {
+                "icon-url": "/assets/img/partner/T_Logo.svg",
+                "title": "Telecom"
+            }
+        ]
     },
     "section-join-project": {
         "headline" : {
             "title": "Join the open-source project!",
             "button": {
-                "title": "Bring me to GitHub"
+                "title": "Bring me to GitHub",
+                "external": "true",
+                "url": "https://github.com/corona-warn-app/",
+                "icon": "github"
             }
         },
         "box" : {
             "image": {
-                "url": "path-to-file",
-                "title": "image-title"
+                "url": "/assets/img/faq.svg",
+                "title": "FAQ"
             },
             "content": {
                 "title": "More Questions?",
                 "links": [{
-                    "title": "Check out FAQ",
-                    "url": "/faq"
+                    "title": "Check out the FAQ",
+                    "url": "/en/faq/"
                 }]
             }
         },
@@ -208,13 +229,15 @@
             "icon-list": [
                 {
                     "url": "#",
-                    "icon-url": "",
-                    "title": "Google Play Store"
+                    "icon-url": "/assets/img/google-play-badge.svg",
+                    "title": "Google Play Store",
+                    "external": true
                 },
                 {
                     "url": "#",
-                    "icon-url": "",
-                    "title": "Apple App Store"
+                    "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
+                    "title": "Apple App Store",
+                    "external": true
                 }
             ],
             "headline" : {

@@ -1,0 +1,40 @@
+.list {
+    padding-left: 0;
+    &,
+    &-item {
+        list-style: none;
+        .list-icon {
+            display: inline-block;
+            margin-bottom: $spacer * 0.6;
+        }
+    }
+    &_plain &-item:not(.col) {
+        padding-left: 0;
+    }
+    &_bullets &-item {
+        padding-left: 1rem;
+        position: relative;
+
+        &:before {
+            color: $primary-light;
+            content: '\2022';
+            left: 0;
+            position: absolute;
+            font-size: 1.75rem;
+            line-height: $line-height-base * 1rem;
+        }
+    }
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &-item {
+        padding: ($spacer * 1) ($spacer * 1.5);
+        @media (min-width: $screen-lg){
+            padding: ($spacer * 1.4) ($spacer * 2.2);
+        }
+    }
+}

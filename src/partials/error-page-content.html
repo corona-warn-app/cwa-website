@@ -1,35 +1,37 @@
-<section class="s-error no-padding">
-  <div class="container text-center">
-    <div class="top">
-      <div class="left">
-        CWA <br />
-        Yet another Error occured&#8424;
+<section class="error">
+  <div class="container">
+    <div class="container-inner container-inner_lg">
+      <div class="row justify-content-center justify-content-sm-between align-items-center">
+        <div class="col col-12 col-sm-8 col-md-6 contents-normal">
+          <h2 class="headline">{{global.error.title}}</h2>
+          <h4 class="headline">{{global.error.titlecaption}}</h4>
+        </div>
+        <div class="col col-12 col-sm-4 col-md-6">
+          {{>image-component global.error.image }}
+        </div>
       </div>
-    </div>
-    <div class="middle">
-      <div class="wr">
-        {{#ifpage '403'}}
-          Forbidden<br />
-          403 
-        {{/ifpage}}
-        {{#ifpage '404'}}
-          Game Over<br />
-          404
-        {{/ifpage}}
+      {{#if global.error.boxes}}
+      <div class="row justify-content-center">
+        {{#each global.error.boxes}}
+        <div class="col-12 col-sm-6 col-md-4 box-column">
+          <div class="box box_flex justify-content-center">
+            {{#if image}}
+            {{> image-component this=.}}
+            {{/if}}
+            <div class="col-8 col-sm-9 col-md-10">
+              {{#if title}}
+              <h3 class="headline">{{title}}</h3>
+              {{/if}}
+              {{#if button}}
+              <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{button.title}}"
+                href="{{button.url}}"{{#if button.external}} target="_blank"{{/if}}>{{button.title}}<span class="icon icon_arrow-right"></span></span></a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
       </div>
-    </div>
-    <div class="bottom">
-      <ul class="link-list link-list_social">
-        <li class="link-list-item">
-          <a href="https://twitter.com/luigiprojectio" target="blank">Continue to Twitter</a>
-        </li>
-        <li class="link-list-item">
-          <a href="https://slack.luigi-project.io" target="blank">Continue to Slack</a>
-        </li>
-        <li class="link-list-item">
-          <a href="https://github.com/SAP/luigi" target="blank">Continue to GitHub</a>
-        </li>
-      </ul>
+      {{/if}}
     </div>
   </div>
 </section>

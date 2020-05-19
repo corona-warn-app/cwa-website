@@ -1,1 +1,28 @@
-
+<header class="header{{#unless page-name}}{{#ifpage 'index'}} header_home{{/ifpage}}{{/unless}}{{#ifequal page-name 'index'}} header_home{{/ifequal}}{{#if header-cls}} header-cls{{/if}}">
+  <div class="container">
+  {{#unless lang_de}}
+  {{> global-nav language=global.lang.en}}
+  {{/unless}}
+  {{#if lang_de}}
+  {{> global-nav language=global.lang.de}}
+  {{/if}}
+  </div>
+  {{#ifpage 'index'}}
+  {{#if sticky-panel-active}}
+  <section class="sticky-panel sticky-panel_bottom js-hide-on-scroll">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h1 class="headline">Header headline</h1>
+          <a class="btn btn-primary" href="#">GET STARTED</a>
+          <a class="btn btn-secondary" href="#" target="_blank">Test playground</a>
+        </div>
+        <div class="col col-12">
+          <a href="#" target="_blank" class="play-button hidden-sm"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/if}}
+  {{/ifpage}}
+</header>

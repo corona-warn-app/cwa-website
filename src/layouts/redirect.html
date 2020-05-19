@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{#if global.favicon}}
+    <link
+      rel="icon"
+      type="image/{{#if global.favicon.type}}{{global.favicon.type}}{{/if}}{{#unless global.favicon.type}}png{{/unless}}"
+      sizes="32x32"
+      href="{{root}}{{global.favicon.url}}"
+    />
+    {{/if}}
+
+    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <title>{{page-title}}</title>
+    <script language="javascript"> if((navigator.language || navigator.userLanguage).toLowerCase().indexOf('de')>=0){ window.location.href = "./de/";}{window.location.href="./en/";} </script>
+  </head>
+  <body>
+  </body>
+</html>

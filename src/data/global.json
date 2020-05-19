@@ -1,0 +1,202 @@
+{
+    "error" : {
+        "title": "Sorry …",
+        "titlecaption": "Something went wrong but maybe you will find something else interesting.",
+        "image": {
+            "url":"/assets/img/error.svg",
+            "title": "Error"
+        },
+        "boxes": [
+            {
+                "title": "Join the open-source project!",
+                "button": {
+                    "title": "Bring me to GitHub",
+                    "url": "https://github.com/corona-warn-app",
+                    "external": true
+                }
+            }, {
+                "title": "Have a look at our homepage",
+                "button": {
+                    "title": "Go to homepage",
+                    "url": "/en/"
+                }
+            }, {
+                "title": "Any questions?",
+                "button": {
+                    "title": "Check out the FAQ",
+                    "url": "/en/faq/"
+                }
+            }
+        ]
+    },
+    "lang": {
+        "en": {
+            "lang": {
+                "en": {
+                    "long" : "English", 
+                    "short": "EN"
+                },
+                "de": {
+                    "long": "German",
+                    "short": "DE"
+                }
+            },
+            "nav": [{
+                "id": "community",
+                "title": "Community",
+                "url": "/en/community/"
+            }, {
+                "id": "blog",
+                "title": "Blog",
+                "disabled": true,
+                "deactivated": true
+            }, {
+                "id": "faq",
+                "title": "FAQ",
+                "url": "/en/faq/"
+            }, {
+                "id": "github",
+                "icon": "github",
+                "title": "Our project on GitHub",
+                "url": "https://github.com/corona-warn-app",
+                "external": true
+            }],
+            "logo": {
+                "title" : "Corona Warn App – Open Source Project"
+            },
+            "footer-nav": [
+                {
+                    "title": "Learn more",
+                    "links": [{
+                        "title":"Docs",
+                        "url": "https://github.com/corona-warn-app/cwa-documentation",
+                        "external": true
+                    },
+                    {
+                        "title": "FAQ",
+                        "url": "/en/faq/"
+                    }]
+                },
+                {
+                    "title": "About",
+                    "links": [{
+                        "title": "Privacy Statement",
+                        "url": "/en/privacy/"
+                    },
+                    {
+                        "title": "Legal notice",
+                        "url": "/en/imprint/"
+                    }]
+                },
+                {
+                    "title": "Get involved",
+                    "links": [{
+                            "title": "Community",
+                            "url": "/en/community/"
+                        },
+                        {
+                            "id": "github",
+                            "icon": "github",
+                            "icon-url": "/assets/img/icons/github_white.svg",
+                            "title": "our project on github",
+                            "url": "https://github.com/corona-warn-app",
+                            "external": true
+                        }
+                    ]
+                }
+            ],
+            "copyright": {
+                "text": "© 2020 - The authors of the Corona-Warn-App open-source project"
+            }
+        },
+        "de": {
+            "lang": {
+                "en": {
+                    "long": "Englisch",
+                    "short": "EN"
+                },
+                "de": {
+                    "long": "Deutsch",
+                    "short": "DE"
+                }
+            },
+            "nav": [
+                {
+                    "id": "community",
+                    "title": "Community",
+                    "url": "/de/community/"
+                },
+                {
+                    "id": "blog",
+                    "title": "Blog",
+                    "disabled": true,
+                    "deactivated": true
+                },
+                {
+                    "id": "faq",
+                    "title": "FAQ",
+                    "url": "/de/faq/"
+                },
+                {
+                    "id": "github",
+                    "icon": "github",
+                    "title": "Unser Projekt in GitHub",
+                    "url": "https://github.com/corona-warn-app",
+                    "external": true
+                }
+            ],
+            "logo": {
+                "title": "Corona Warn App – Open Source Projekt"
+            },
+            "footer-nav": [
+                {
+                    "title": "Mehr erfahren",
+                    "links": [
+                        {
+                            "title": "Dokumentation",
+                            "url": "https://github.com/corona-warn-app/cwa-documentation",
+                            "external": true
+                        },
+                        {
+                            "title": "FAQ",
+                            "url": "/de/faq/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Über uns",
+                    "links": [
+                        {
+                            "title": "Datenschutzerklärung",
+                            "url": "/de/privacy/"
+                        },
+                        {
+                            "title": "Impressum",
+                            "url": "/de/imprint/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Mitmachen",
+                    "links": [
+                        {
+                            "title": "Community",
+                            "url": "/de/community/"
+                        },
+                        {
+                            "id": "github",
+                            "icon": "github",
+                            "icon-url": "/assets/img/icons/github_white.svg",
+                            "title": "Unser Projekt in github",
+                            "url": "https://github.com/corona-warn-app",
+                            "external": true
+                        }
+                    ]
+                }
+            ],
+            "copyright": {
+                "text": "© 2020 - Mitwirkende Personen des Open-Source-Projekts für Corona-Warn-App"
+            }
+        }
+    } 
+}

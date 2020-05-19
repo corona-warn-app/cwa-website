@@ -1,33 +1,24 @@
 <div class="row navbar">
   <div class="col-sm-6 col-md-3 hidden-xs">
-    <a class="logo" href="/index.html" title="Corona Warn-App">
-      <img src="{{root}}assets/img/logo.svg" alt="Corona Warn-App" class="logo-image" />
-      <span class="logo-caption">
-        <span class="logo-title">Corona</span>
-        <span class="logo-subtitle">Warn-App<br>Open Source Project</span>
-      </span>
+    <a class="logo" href="/{{#if lang_de}}de{{else}}en{{/if}}/" title="{{language.logo.title}}">
+      <img src="{{root}}assets/img/logo.svg" alt="{{language.logo.title}}" class="logo-image" />
     </a>
   </div>
   <div class="col col-xs-6 col-md-9">
-    <nav class="">
-      <button class="btn-menu"></button>
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="/community" class="nav-link{{#ifpage 'community'}} active{{/ifpage}}">About</a>
-        </li>
-        <li class="nav-item"><a href="/blog" class="nav-link disabled">Blog</a></li>
-        <li class="nav-item">
-          <a href="/faq"  class="nav-link{{#ifpage 'faq'}} active{{/ifpage}}">FAQ</a>
-        </li>
+    <button class="btn-menu js-toggle" data-target="#header-nav"></button>
+    <nav class="header-nav" id="header-nav">
+      <button class="btn-menu btn-menu_close js-toggle" data-target="#header-nav"></button>
+      {{#if language.nav}}
+      <ul class="nav js-main-navigation">
+      {{#each language.nav}}
+        {{> navlist-item item=.}}
+      {{/each}}
+      <li class="nav-item lang">
+          <a {{#if lang_de}}href="/en/{{#if @root.page-name}}{{@root.page-name}}/{{/if}}"{{/if}} class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
+            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" {{#unless lang_de}}href="/de/{{#if @root.page-name}}{{@root.page-name}}/{{/if}}"{{/unless}} title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
+      </li>
       </ul>
-      <ul class="nav nav-right">
-        <li class="nav-item">
-          <a href="#github" class="nav-link nav-link_external"><img src="" class="nav-link-icon" /></a>
-        </li>
-        <li class="nav-item lang">
-          <a href="" class="nav-link active" title="English">EN</a>|<a class="nav-link" href="" title="Deutsch">DE</a>
-        </li>
-      </ul>
+      {{/if}}
     </nav>
   </div>
 </div>

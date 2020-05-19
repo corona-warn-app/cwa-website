@@ -1,0 +1,100 @@
+{
+    "section-main": {
+        "headline": {
+            "title": "Frequently Asked Questions about the Corona-Warn-App project"
+        },
+        "sections": [{
+            "title": "General",
+            "id": "general",
+            "active": true,
+            "accordion": [
+                {
+                    "active": true,
+                    "title": "When will the app be finished?",
+                    "textblock": [
+                      "We are doing all we can to finish development of the app, but please understand that we can't name a specific date at this point. However, you can track the progress of development in the code repository."  
+                    ]
+                },{
+                    "title" : "Can I find information, ask questions or discuss topics here regarding the Corona-Warn-App that are not development related?",
+                    "textblock": [
+                        "The Corona-Warn-App open-source project and its website coronawarn.app involve the open-source development of the apps. Neither this website nor the GitHub repositories are the right place for discussion or information on topics unrelated to app development - such as legal matters, enduser guidance, and so on. We kindly ask you to respect this."
+                    ]
+                }
+            ]
+        },{
+            "title": "Open Source",
+            "id": "open-source",
+            "accordion": [
+                {
+                    "title": "Why are we following an open-source approach?",
+                    "textblock": [
+                        "We believe that the success of the solution depends directly on user acceptance and trust. Through this open-source approach, we want to create the transparency that is needed to create a strong foundation of trust. Furthermore, the open-source approach gives the broader public and the developer community to actively contribute to the solution’s success, for example, through reviews and pull requests."
+                    ]
+                },
+                {
+                    "title": "How can developers contribute to this project?",
+                    "textblock": [
+                        "The open-source project uses GitHub, a globally known online service in this field that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by mistakes in the source code, helping with the documentation, or contributing questions and comments to the project. Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
+                    ]
+                },
+                {
+                    "title": "Why are you using GitHub instead of a different platform?",
+                    "textblock": [
+                        "We believe that GitHub is a well-established, respected platform for open-source projects. It is the world's largest open-source platform, with more than 40 million users and over 100 million repositories, over 30 million of which are publicly accessible.<br>If someone does not want to create a GitHub account, they can view the source code without an account."
+                    ]
+                },{
+                    "title": "What code of conduct applies?",
+                    "textblock": [
+                        "Successful development in a productive, collaborative community is only possible through mutual respect. That's why all the members of the project community pledge to follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' title=''>code of conduct</a>. Violations of the code of conduct can be reported to the community managers or directly to <a href='mailto:corona-warn-app.opensource@sap.com 'target='_blank'>corona-warn-app.opensource@sap.com</a> by any member of the community. Violators may face consequences such as warnings or even exclusion from participating in the project."
+                    ]
+                }
+            ]
+        },{
+            "title": "Application",
+            "id": "application",
+            "accordion": [
+                {
+                    "title": "Won't the smartphone battery be drained more quickly with the app running?",
+                    "textblock": [
+                        "The Corona Warn app uses the existing Bluetooth technology on user devices.<br>Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
+					]
+                },
+                {
+                    "title": "Will the app be made available anywhere else apart from the App Store or Google Play Store?",
+                    "textblock": [
+                        "We have no plans to make the app available outside of the Apple's App Store or Google Play Store.<br>The Corona-Warn-App will use the Exposure Notification APIs from Apple and Google and the community is of course invited to contribute and integrate additional APIs."
+                    ]
+                },
+                {
+                    "title": "How will the development status in GitHub be uploaded to the app stores?",
+                    "textblock": [
+                        "The app will be created using standard tools (such as Xcode and Android Studio) and then uploaded to the respective app stores. We are aware of the topic how you can verify that the source code in GitHub actually matches that of the app in the respective app stores. You can find details on the topic's progress in this <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank'>issue</a> in GitHub."
+                    ]
+                }
+            ]
+        },{
+            "title": "Technologies",
+            "id": "technologies",
+            "accordion": [
+                {
+                    "title": "Can privacy protection of user data be guaranteed?",
+                    "textblock": [
+                        "The decentralized data storage on the user devices guarantees privacy. We are working closely together with experts from the data privacy community and coordinating with one another throughout the development process. We are also working on a separate document dedicated to data privacy, which will be published soon. Furthermore, the open-source approach of the source code enables the community to review the functionality of the app and to leave comments."
+                    ]
+                },
+                {
+                    "title": "Which data will be saved und who can access this data through Bluetooth?",
+                    "textblock": [
+                        "Bluetooth will be used to send constantly changing IDs and receive IDs from other devices that have installed the app. No personal, geo-location, or other location data will be sent or stored.<br>Through use of the Exposure Notification API from Google and Apple, the IDs will remain in a secure area of the smartphone operating system.  The matching, which determines whether someone has been exposed to an infected person, is performed on the local smartphone. The phone will not send any data for matching.<br>If a user tests positively for infection, they will be asked to share their temporary exposure keys from the last 14 days. The keys can only be accessed by the Exposure Notification API if the user actively approves."
+                    ]
+                },
+                {
+                    "title": "Doesn’t the open-source approach, which involves publishing the source code, put cybersecurity at risk?",
+                    "textblock": [
+                        "On the contrary: the open-source community increases the level of security of the software, because the source code is open to all and anyone can download it and comb through it line by line.<br>We believe that security is not helped by a lack of transparency. That's why we are following an open-source approach."
+                    ]
+                }
+            ]
+        }]
+    }
+}

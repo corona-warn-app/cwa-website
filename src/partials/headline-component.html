@@ -2,15 +2,16 @@
 <h5 class="headline-caption">{{titlecaption}}</h5>
 {{/if}}
 {{#if title}}
-<h2 class="headline">{{title}}</h2>
+<h2 class="headline"{{#if id}} id="{{id}}"{{/if}}>{{title}}</h2>
 {{/if}}
 {{#if subtitle}}
 <h4 class="sub-headline">{{subtitle}}</h4>
 {{/if}}
 {{#if text}}
-<p>{{text}}</p>
+<p>{{{text}}}</p>
 {{/if}}
 
 {{#if button}}
-<a class="btn {{#if button.class}}{{button.class}}{{/if}}{{#unless button.class}}btn-secondary{{/unless}}" href="{{button.link}}">{{button.title}}</a>
+<a class="btn {{#if button.class}}{{button.class}}{{/if}}{{#unless button.class}}btn-secondary{{/unless}}" href="{{button.link}}">{{button.title}}{{#if button.icon}}<span class="icon icon_{{button.icon}}"></span>{{/if}}{{#unless button.icon}}{{#if icon}}<span class="icon icon_{{icon}}"></span>{{/if}}{{/unless}}
+</a>
 {{/if}}

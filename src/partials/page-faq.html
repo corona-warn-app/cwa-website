@@ -1,0 +1,38 @@
+{{#if page-contents}}
+<div class="container container_flex">
+  <aside class="side-menu active js-menu" id="side-menu">
+    <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
+    <ul class="nav flex-column js-scroll-navigate" data-target="main">
+      {{#each page-contents.section-main.sections}}
+      <li class="nav-item">
+        <a class="nav-link{{#if active}} active{{/if}}"{{#if id}} href="#{{id}}"{{/if}}>{{title}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </aside>
+  <main class="main">
+    <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+    {{#each page-contents.section-main.sections}}
+
+      {{> text-component this=.}}
+      <dl class="accordion js-accordion" data-toggle="accordion-header">
+      {{#each accordion}}
+        <dt class="accordion-header{{#if active}} active{{/if}}">
+          <h4 class="accordion-item-title">{{title}}</h4>
+          <span class="accordion-item-icon"></span>
+        </dt>
+        <dd class="accordion-body">
+          <div class="accordion-item-content">
+            {{#if textblock}}
+            {{#each textblock}}
+            <p>{{{.}}}</p>
+            {{/each}}
+            {{/if}}
+          </div>
+        </dd>
+      {{/each}}
+      </dl>
+    {{/each}}
+  </main>
+</div>
+{{/if}}

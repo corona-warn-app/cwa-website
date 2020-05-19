@@ -1,3 +1,10 @@
-<header class="header__error-page">
-  {{> global-nav}}
+<header class="header header_error-page">
+  <div class="container">
+  {{#unless lang_de}}
+  {{> global-nav language=global.lang.en}}
+  {{/unless}}
+  {{#if lang_de}}
+  {{> global-nav language=global.lang.de}}
+  {{/if}}
+  </div>
 </header>
