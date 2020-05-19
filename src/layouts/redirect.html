@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
-    <script language="javascript">window.location.href="./en/"</script>
+    <script language="javascript"> if((navigator.language || navigator.userLanguage).toLowerCase().indexOf('de')>=0){ window.location.href = "./de/";}{window.location.href="./en/";} </script>
   </head>
   <body>
   </body>
