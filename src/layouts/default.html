@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
-  <body>
+  <body class="{{#unless @root.page-name}}{{#ifpage 'index'}}page-home{{/ifpage}}{{/unless}}{{#if @root.page-name}}page-{{@root.page-name}}{{/if}}">
     {{!-- Pages you create in the src/pages/ folder are inserted here when the
     flattened page is created. --}} 
     

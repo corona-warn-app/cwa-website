@@ -65,15 +65,44 @@
                 background-size: auto;
                 background-position: left bottom;
             }
+
+        }
+        .page-home & {
+            @media(min-width: $screen-lg){
+                margin-bottom: 5 * $spacer;
+            }
+            @media(min-width: $screen-xl){
+                margin-bottom: $spacer;
+            }
         }
         @media (min-width: $screen-xl) {
             &:before,
             &:after {
-                height: 320px;
+                min-height: 320px;
+                height: 23vw;
             }
             &:after {
                 background-size: cover;
                 background-position: center bottom;
+            }
+        }
+        @media (min-width: $screen-xl + 180px){
+            &:before,
+            &:after {
+               height: 20vw;
+               transform: translate3d(0,-2%,0);
+            }
+        }
+        @media (min-width: 2200px){
+            &:before,
+            &:after {
+                transform: translate3d(0,-10%,0);
+            }
+        }
+        @media (min-width: 2200px){
+            &:before,
+            &:after {
+                transform: translate3d(0,-20%,0);
             }
         }
     }
