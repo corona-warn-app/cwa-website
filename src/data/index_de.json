@@ -5,7 +5,7 @@
             "title": "Helft uns, die Corona-Warn-App zu verbessern"
         },
         "content": {
-            "text": "Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des SARS-CoV-2 (COVID-19 Auslöser) in Deutschland nachzuverfolgen und zu unterbrechen. Die App basiert auf Technologien mit einem dezentralisierten Ansatz und informiert Nutzer, wenn sie mit einer infizierten Person in Kontakt standen. Transparenz ist von entscheidender Bedeutung, um Nutzer zu schützen und die Akzeptanz zu erhöhen.",
+            "text": "Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des SARS-CoV-2 (COVID-19 Auslöser) in Deutschland nachzuverfolgen und zu unterbrechen. Die App basiert auf Technologien mit einem dezentralisierten Ansatz und informiert Personen, wenn sie mit einer infizierten Person in Kontakt standen. Transparenz ist von entscheidender Bedeutung, um die Bevölkerung zu schützen und die Akzeptanz zu erhöhen.",
             "button": {
                 "title": "GitHub aufrufen",
                 "url": "https://github.com/corona-warn-app",
@@ -36,23 +36,23 @@
             {
                 "index": "02.",
                 "image": {"url": "/assets/img/how-it-works-2.svg", "right" : true },
-                "title": "Testergebnis von Nutzer mit Symptomen mitteilen (optional)",
-                "text": "Wenn das jeweilige Labor den elektronischen Prozess unterstützt, können getestete Nutzer mit dem QR-Code, den sie während des Tests erhalten haben, ihre Ergebnisse abrufen."
+                "title": "Testergebnis von Personen mit Symptomen mitteilen (optional)",
+                "text": "Wenn das jeweilige Labor den elektronischen Prozess unterstützt, können getestete Personen mit dem QR-Code, den sie während des Tests erhalten haben, ihre Ergebnisse abrufen."
             },
             {
                 "index": "03.",
                 "image": {"url": "/assets/img/how-it-works-3.svg"},
-                "title": "Liste von Schlüsseln der als infiziert gemeldeten Nutzer verteilen",
-                "text": "Im Falle eines positiven Testergebnisses werden Nutzer gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die Schlüssel des Nutzers in die Liste der als infiziert gemeldeten Nutzer ein, die regelmäßig an alle Apps gesendet wird."
+                "title": "Liste von Schlüsseln der als infiziert gemeldeten Personen verteilen",
+                "text": "Im Falle eines positiven Testergebnisses werden Personen gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die Schlüssel der Person in die Liste der als infiziert gemeldeten Personen ein, die regelmäßig an alle Apps gesendet wird."
             },
             {
                 "index": "04.",
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
-                "title": "Prüfung auf Kontakt mit Nutzern, die sich als infiziert gemeldet haben",
-                "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Nutzer heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und der Nutzer erhält entsprechende Handlungsanweisungen.",
-                "button": {"title": "Weitere Infos im Scoping Dokument", "link": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md"},
+                "title": "Prüfung auf Kontakt mit Personen, die sich als infiziert gemeldet haben",
+                "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Personen heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und die Person erhält entsprechende Handlungsanweisungen.",
+                "button": {"title": "Weitere Infos im Scoping-Dokument", "link": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md"},
                 "links": [{
-                        "title": "Weitere Infos im Architecture Dokument - EN",
+                        "title": "Weitere Infos im Architectur-Dokument - EN",
                         "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md"
                 }]
             }
@@ -66,7 +66,7 @@
             {
                 "image": {"url": "/assets/img/news-blog.svg"},
                 "titlecaption": "Stay tuned!",
-                "title": "Corona-Warn-App Open Source Blog in Kürze verfügbar"
+                "title": "Corona-Warn-App Open Source-Blog in Kürze verfügbar"
             },
             {
                 "image": {
@@ -114,10 +114,10 @@
             },
             "list": [{
                 "title": "Transparenz",
-                "text" : "Nur durch Transparenz gewinnen wir das Vertrauen der Nutzer und erhöhen die Akzeptanz der App."
+                "text" : "Nur durch Transparenz gewinnen wir das Vertrauen der Bevölkerung und erhöhen die Akzeptanz der App."
                 },{
                 "title": "Die Community",
-                "text": "Die Community trägt zu mehr Sicherheit und Datenschutz bei, da die Community-Teilnehmer Probleme frühzeitig erkennen und bei deren Lösung unterstützen können."
+                "text": "Die Community trägt zu mehr Sicherheit und Datenschutz bei, da die Community-Mitglieder Probleme frühzeitig erkennen und bei deren Lösung unterstützen können."
                 }]
         },{
             "image" : {
@@ -129,13 +129,13 @@
             },
             "list": [{
                 "title": "Dezentraler Ansatz",
-                "text" : "Die Architektur beruht auf einem dezentralen Ansatz, beispielsweise auf den Protokollen DP-3T  <a href='https://github.com/DP-3T/documents' target='_blank' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' title=''>TCN</a>, und basiert auf den Exposure-Notification-API Spezifikationen von Apple und Google."
+                "text" : "Die Architektur beruht wie die Protokolle DP-3T <a href='https://github.com/DP-3T/documents' target='_blank' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' title=''>TCN</a> auf einem dezentralen Ansatz und baut auf den Exposure-Notification-API-Spezifikationen von Apple und Google auf."
                 },{
                 "title": "Zwei Zwecke",
                 "text": "Es werden nur personenbezogene Daten verarbeitet, die für die folgenden beiden Zwecke erforderlich sind:<br>1. zur Beurteilung des persönlichen Infektionsrisikos<br>2. zur schnelleren Übermittlung des SARS-CoV-2-Testergebnisses"
                 },{
                 "title": "Datenschutzdokument",
-                "text": "Nähere Einzelheiten werden in einem Datenschutzdokument dargelegt werden und steht demnächst zur Verfügung."
+                "text": "Nähere Einzelheiten werden in einem Datenschutzdokument dargelegt werden. Dies steht demnächst zur Verfügung."
                 },{
                 "title": "Im Design-Prozess",
                 "text": "Im Design-Prozess wird für jeden Schritt sichergestellt, dass die App möglichst wenige der benötigten personenbezogenen Daten verarbeitet und für diese Daten ein größtmöglicher Schutz besteht."
@@ -146,7 +146,7 @@
                 "title" : "Sicherheit"
             },
             "headline" : {
-                "title" : "Secure protocols"
+                "title" : "Sicherheit"
             },
             "list": [{
                 "title": "Offen und transparent",
@@ -171,7 +171,7 @@
     "section-icon-listing": {
         "id": "partners",
         "headline" : {
-            "title": "Unsere Partner",
+            "title": "Unsere Partnerinnen und Partner",
             "text": "Anfang Mai 2020 hat die Bundesregierung SAP und die Deutsche-Telekom-Tochter T-Systems gebeten, die offizielle Corona-Warn-App für Deutschland zu entwickeln. Die App soll nach dem Open-Source-Prinzip entwickelt werden und auf einem dezentralen Ansatz basieren. Folgende Partner unterstützen die Entwicklung der App, in die auch die globale Open-Source-Community eingebunden ist:"
         },
         "icon-list" : [{
@@ -203,7 +203,7 @@
     },
     "section-join-project": {
         "headline" : {
-            "title": "Mach mit beim Open Source Projekt!",
+            "title": "Mach mit beim Open Source-Projekt!",
             "button": {
                 "url": "https://github.com/corona-warn-app",
                 "title": "GitHub aufrufen",
