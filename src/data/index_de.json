@@ -5,10 +5,10 @@
             "title": "Helft uns, die Corona-Warn-App zu verbessern"
         },
         "content": {
-            "text": "Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des SARS-CoV-2 (CoVID-19 Auslöser) in Deutschland nachzuverfolgen und zu unterbrechen. Die App basiert auf Technologien mit einem dezentralisierten Ansatz und informiert Nutzer, wenn sie mit einer infizierten Person in Kontakt standen. Transparenz ist von entscheidender Bedeutung, um Nutzer zu schützen und die Akzeptanz zu erhöhen.",
+            "text": "Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des SARS-CoV-2 (COVID-19 Auslöser) in Deutschland nachzuverfolgen und zu unterbrechen. Die App basiert auf Technologien mit einem dezentralisierten Ansatz und informiert Nutzer, wenn sie mit einer infizierten Person in Kontakt standen. Transparenz ist von entscheidender Bedeutung, um Nutzer zu schützen und die Akzeptanz zu erhöhen.",
             "button": {
                 "title": "GitHub aufrufen",
-                "url": "https://github.com/corona-warn-app/",
+                "url": "https://github.com/corona-warn-app",
                 "icon": "github",
                 "external": true
             },
@@ -50,7 +50,11 @@
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
                 "title": "Prüfung auf Kontakt mit Nutzern, die sich als infiziert gemeldet haben",
                 "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Nutzer heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und der Nutzer erhält entsprechende Handlungsanweisungen.",
-                "button": {"title": "Weitere Infos im Scoping Dokument", "link": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md"}
+                "button": {"title": "Weitere Infos im Scoping Dokument", "link": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md"},
+                "links": [{
+                        "title": "Weitere Infos im Architecture Dokument - EN",
+                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md"
+                }]
             }
         ]
     },
@@ -62,7 +66,7 @@
             {
                 "image": {"url": "/assets/img/news-blog.svg"},
                 "titlecaption": "Stay tuned!",
-                "title": "Der Corona-Warn-App Blog ist in Kürze verfügbar"
+                "title": "Corona-Warn-App Open Source Blog in Kürze verfügbar"
             },
             {
                 "image": {
@@ -85,7 +89,7 @@
         "headline": {
             "title": "Mach mit beim Open-Source-Projekt!",
             "textblock": [
-                "Wenn Du an dem Projekt mitarbeiten möchtest, kannst Du zu GitHub wechseln und sofort loslegen. Hier kannst Du Dir auch die <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank'>Dokumentation</a> durchlesen, den <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank'>Code of COobduct</a> einsehen und mehr darüber erfahren, wie Du in der <a href='./community'>Community</a> mitarbeiten kannst."
+                "Wenn Du an dem Projekt mitarbeiten möchtest, kannst Du zu GitHub wechseln und sofort loslegen. Hier kannst Du Dir auch die <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank'>Dokumentation</a> durchlesen, den <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank'>Code of Conduct</a> einsehen und mehr darüber erfahren, wie Du in der <a href='./community'>Community</a> mitarbeiten kannst."
             ],
             "button": {
                 "title": "Mach mit in GitHub",
@@ -124,35 +128,35 @@
                 "title" : "Datenschutz"
             },
             "list": [{
-                "title": "Heavily inspired by the DP-3T",
-                "text" : "Elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam."
+                "title": "Dezentraler Ansatz",
+                "text" : "Die Architektur beruht auf einem dezentralen Ansatz, beispielsweise auf den Protokollen DP-3T  <a href='https://github.com/DP-3T/documents' target='_blank' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' title=''>TCN</a>, und basiert auf den Exposure-Notification-API Spezifikationen von Apple und Google."
                 },{
-                "title": "Sensitive contact data",
-                "text": "increases security eirmod tempor invidunt ut aliquyam eirmod tempor invidunt ut labore et dolore magna aliquyam.."
+                "title": "Zwei Zwecke",
+                "text": "Es werden nur personenbezogene Daten verarbeitet, die für die folgenden beiden Zwecke erforderlich sind:<br>1. zur Beurteilung des persönlichen Infektionsrisikos<br>2. zur schnelleren Übermittlung des SARS-CoV-2-Testergebnisses"
                 },{
-                "title": "Identifiers of contacts",
-                "text": "are not accessible: the SDK checks for matches with the broadcasted list, but never reveals which identifiers triggered a match."
+                "title": "Datenschutzdokument",
+                "text": "Nähere Einzelheiten werden in einem Datenschutzdokument dargelegt werden und steht demnächst zur Verfügung."
+                },{
+                "title": "Im Design-Prozess",
+                "text": "Im Design-Prozess wird für jeden Schritt sichergestellt, dass die App möglichst wenige der benötigten personenbezogenen Daten verarbeitet und für diese Daten ein größtmöglicher Schutz besteht."
                 }]
         },{
             "image" : {
                 "url": "/assets/img/icons/lock.svg",
-                "title" : "Security"
+                "title" : "Sicherheit"
             },
             "headline" : {
                 "title" : "Secure protocols"
             },
             "list": [{
-                "title": "One-time-tokens",
-                "text": "consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                "title": "Offen und transparent",
+                "text": "Das Prinzip „Security through obscurity“, bei dem die Sicherheit eines Systems durch die Geheimhaltung seiner Funktionsweise gewährleistet wird, greift bei diesem Projekt nicht: Wir verfolgen einen offenen und transparenten Ansatz."
             }, {
-                "title": "Authentication processes",
-                "text": "QR codes Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-            },{
-                "title": "Keeping personal test results",
-                "text": "and list of identifiers separate  aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+                "title": "Secure Software Development Lifecycle",
+                "text": "Die Sicherheit der Anwendungsentwicklung wird durch den Secure Software Development Lifecycle gewährleistet. Dieser umfasst unter anderem die Modellierung von Bedrohungen (Threat Modeling), eine durchgängige Risikobewertung, die Sicherheitsplanung sowie Sicherheits- und Penetrationstests."
             }, {
-                "title": "Rolling IDs Lorem",
-                "text": "ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                "title": "Hosting",
+                "text": "Das Hosting entspricht BSI C5, SOC 2 und SOC1/ISAE 3402."
             }]
         }],
         "content": {
@@ -171,6 +175,7 @@
             "text": "Anfang Mai 2020 hat die Bundesregierung SAP und die Deutsche-Telekom-Tochter T-Systems gebeten, die offizielle Corona-Warn-App für Deutschland zu entwickeln. Die App soll nach dem Open-Source-Prinzip entwickelt werden und auf einem dezentralen Ansatz basieren. Folgende Partner unterstützen die Entwicklung der App, in die auch die globale Open-Source-Community eingebunden ist:"
         },
         "icon-list" : [{
+<<<<<<< HEAD
                 "icon-url": "/assets/img/partner/cispa_logo@1x.png",
                 "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
                 "title": "Cispa"
@@ -196,6 +201,32 @@
                 "title": "Telecom"
             }
         ]
+=======
+            "url": "#",
+            "icon-url": "/assets/img/partner/fraunhofer-vector-logo.svg",
+            "title": "Fraunhofer Institut"
+        }, {
+            "url": "#",
+            "icon-url": "/assets/img/partner/google-2015-logo.svg",
+            "title": "Google"
+        }, {
+            "url": "#",
+            "icon-url": "/assets/img/partner/telekom-logo-2013.svg",
+            "title": "Telekom"
+        }, {
+            "url": "#",
+            "icon-url": "/assets/img/partner/sap-best-r-grad-blk.svg",
+            "title": "SAP"
+        }, {
+            "url": "#",
+            "icon-url": "/assets/img/partner/kassenaerztliche-bundesvereinigung.svg",
+            "title": "Kassenärtzliche Vereinigung"
+        }, {
+            "url": "#",
+            "icon-url": "/assets/img/partner/bundesministerumg-fuer-gesundheit.svg",
+            "title": "Bundesministerum für Gesundheit"
+        }]
+>>>>>>> content-editing
     },
     "section-join-project": {
         "headline" : {
