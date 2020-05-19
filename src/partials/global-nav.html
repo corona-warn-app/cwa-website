@@ -9,26 +9,13 @@
     <nav class="header-nav" id="header-nav">
       <button class="btn-menu btn-menu_close js-toggle" data-target="#header-nav"></button>
       {{#if language.nav}}
-      <ul class="nav">
+      <ul class="nav js-main-navigation">
       {{#each language.nav}}
-        {{#unless deactivated}}
-        <li class="nav-item">
-          <a href="{{url}}" class="nav-link{{#unless external}}{{#ifpage id}} active{{/ifpage}}{{/unless}}{{#if external}} nav-link_external{{/if}}{{#if disabled}} disabled{{/if}}"{{#if external}} target="_blank"{{/if}}>
-            {{#unless icon}}
-            {{title}}
-            {{/unless}}
-            {{#if icon}}
-            <span class="nav-link-icon icon_{{icon}}">
-              {{#unless icon-url}}<img src="{{root}}/assets/img/icons/{{icon}}.svg" class="icon-image" />{{/unless}}
-            </span>
-            {{/if}}
-          </a>
-        </li>
-        {{/unless}}
+        {{> navlist-item item=.}}
       {{/each}}
       <li class="nav-item lang">
-          <a {{#if lang_de}}href="{{root}}en/{{#unless page-en}}{{page}}{{/unless}}{{#if page-en}}{{page-en}}{{/if}}.html"{{/if}} class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
-            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" {{#unless lang_de}}href="{{root}}de/{{#unless page-de}}{{page}}{{/unless}}{{#if page-de}}{{page-de}}{{/if}}.html"{{/unless}} title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
+          <a {{#if lang_de}}href="/en/{{#if @root.page-name}}{{@root.page-name}}/{{/if}}"{{/if}} class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
+            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" {{#unless lang_de}}href="/de/{{#if @root.page-name}}{{@root.page-name}}/{{/if}}"{{/unless}} title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
       </li>
       </ul>
       {{/if}}

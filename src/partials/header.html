@@ -1,4 +1,4 @@
-<header class="header{{#ifpage 'index'}} header_home{{/ifpage}}{{#if header-cls}} header-cls{{/if}}">
+<header class="header{{#unless page-name}}{{#ifpage 'index'}} header_home{{/ifpage}}{{/unless}}{{#ifequal page-name 'index'}} header_home{{/ifequal}}{{#if header-cls}} header-cls{{/if}}">
   <div class="container">
   {{#unless lang_de}}
   {{> global-nav language=global.lang.en}}

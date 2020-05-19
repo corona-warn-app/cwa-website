@@ -1,13 +1,9 @@
----
-lang_de: true
-page-title: Open-Source-Projekt für Corona-Warn-App – FAQ
-page-description: Antworten auf häufig gestellte Fragen über das Open-Source-Projekt für die Corona-Warn-App. Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des Coronavirus in Deutschland nachzuverfolgen.
----
+{{#if page-contents}}
 <div class="container container_flex">
   <aside class="side-menu active js-menu" id="side-menu">
     <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
     <ul class="nav flex-column js-scroll-navigate" data-target="main">
-      {{#each faq_de.section-main.sections}}
+      {{#each page-contents.section-main.sections}}
       <li class="nav-item">
         <a class="nav-link{{#if active}} active{{/if}}"{{#if id}} href="#{{id}}"{{/if}}>{{title}}</a>
       </li>
@@ -15,8 +11,8 @@ page-description: Antworten auf häufig gestellte Fragen über das Open-Source-P
     </ul>
   </aside>
   <main class="main">
-    <h1 class="headline headline-heavy">{{faq_de.section-main.headline.title}}</h1>
-    {{#each faq_de.section-main.sections}}
+    <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+    {{#each page-contents.section-main.sections}}
 
       {{> text-component this=.}}
       <dl class="accordion js-accordion" data-toggle="accordion-header">
@@ -39,3 +35,4 @@ page-description: Antworten auf häufig gestellte Fragen über das Open-Source-P
     {{/each}}
   </main>
 </div>
+{{/if}}
