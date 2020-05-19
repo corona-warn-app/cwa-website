@@ -12,7 +12,7 @@
           <div class="link-item">
             <strong>{{title}}</strong>
             {{#if button}}
-            <a {{#if button.url}}href="{{button.url}}"{{/if}}{{#unless button.url}}class="disabled"{{/unless}}>
+            <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>
               {{#unless button.icon}}{{button.title}}{{/unless}}
               {{#if button.icon}}<span class="icon icon_img icon_{{button.icon}}"><img
                   src="{{root}}{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
@@ -21,7 +21,7 @@
             {{/if}}
             {{#if links}}
             {{#each links}}
-            <a {{#if url}}href="{{url}}" {{/if}}{{#unless url}}class="disabled" {{/unless}}>
+            <a {{#if url}}href="{{url}}" {{#if external}} target="_blank"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}}>
               {{#unless icon}}{{title}}{{/unless}}
               {{#if icon}}<span class="icon icon_img icon_{{icon}}"><img
                   src="{{root}}{{#unless icon-url}}assets/img/icons/{{icon}}.svg{{/unless}}{{#if icon-url}}{{icon-url}}{{/if}}"
