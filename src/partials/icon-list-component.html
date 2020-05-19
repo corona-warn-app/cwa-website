@@ -1,0 +1,9 @@
+{{#if icon-list}}
+<div class="{{#if class}}{{class}}{{/if}} icon-list">
+    {{#each icon-list}}
+    <a class="icon-list-item" {{#if url}}href="{{url}}" target="_blank"{{/if}}>
+        <img src="{{icon-url}}" alt="{{title}} Icon"{{#if icon-set}} srcset="{{icon-set}}"{{/if}}/>
+    </a>
+    {{/each}}
+</div>
+{{/if}}

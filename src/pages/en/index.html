@@ -24,7 +24,7 @@ page-description: The website of open-source project Corona-Warn-App. The Corona
     </div>
   </div>
 </section>
-<section class="">
+<section class=""{{#if index.section-image-ticker.id}} id="{{index.section-image-ticker.id}}"{{/if}}>
   <div class="container">
     {{#if index.section-image-ticker.headline}}
     <div class="text-center">
@@ -40,7 +40,7 @@ page-description: The website of open-source project Corona-Warn-App. The Corona
     {{/if}}
   </div>
 </section>
-<section class="section_bg-gradient section_bg-skew">
+<section class="section_bg-gradient section_bg-skew"{{#if index.section-boxes.id}} id="{{index.section-boxes.id}}"{{/if}}>
   <div class="container">
     {{#if index.section-boxes}}
     <div class="container-inner container-inner_lg">
@@ -65,7 +65,7 @@ page-description: The website of open-source project Corona-Warn-App. The Corona
     {{/if}}
   </div>
 </section>
-<section class="section_bg-white">
+<section class="section_bg-white"{{#if index.section-image-text.id}} id="{{index.section-image-text.id}}"{{/if}}>
   <div class="container">
     {{#if index.section-image-text}}
     <div class="row align-items-center">
@@ -75,13 +75,13 @@ page-description: The website of open-source project Corona-Warn-App. The Corona
       </div>
       <div class="col col-12 col-md-6 text-center text-md-left">
         {{> headline-component title=index.section-image-text.headline.title}}
-        {{> text-component textblock=index.section-image-text.headline.textblock button=index.section-image-text.headline.button icon='github'}}
+        {{> text-component textblock=index.section-image-text.headline.textblock button=index.section-image-text.headline.button}}
       </div>
     </div>
     {{/if}}
   </div>
 </section>
-<section class="section-feature-listing section_bg-light">
+<section class="section-feature-listing section_bg-light"{{#if index.section-feature-listing.id}} id="{{index.section-feature-listing.id}}"{{/if}}>
   <div class="container">
     {{#if index.section-feature-listing}}
     <div class="container-inner container-inner_lg">
@@ -102,31 +102,30 @@ page-description: The website of open-source project Corona-Warn-App. The Corona
       {{/if}}
     {{/each}}
     </div>
+      {{#if index.section-feature-listing.content}}
+        {{#if index.section-feature-listing.content.button}}
+        <div class="text-center">{{> button-component button=index.section-feature-listing.content.button}}</div>
+        {{/if}}
+      {{/if}}
     {{/if}}
   </div>
 </section>
-<section class="">
+<section class=""{{#if index.section-icon-listing.id}} id="{{index.section-icon-listing.id}}"{{/if}}>
   <div class="container">
     {{#if index.section-icon-listing}}
     <div class="text-center container-inner container-inner_sm">
       {{> headline-component index.section-icon-listing.headline}}
     </div>
-    <div class="icon-list">
-      {{#each index.section-icon-listing.icon-list}}
-        <a class="icon-list-item" href="{{url}}">
-          <img src="{{icon-url}}" alt="{{title}} Icon" />
-        </a>
-      {{/each}}
-    </div>
+    {{> icon-list-component index.section-icon-listing}}
     {{/if}}
   </div>
 </section>
-<section class="section-intersect section_bg-light section_bg-skew">
+<section class="section-intersect section_bg-light section_bg-skew"{{#if index.section-join-project.id}} id="{{index.section-join-project.id}}"{{/if}}>
     <div class="container contents-normal">
       <div class="container-inner container-inner_lg">
       <div class="text-center">
         {{> headline-plain-component index.section-join-project.headline}}
-        {{> button-component button=index.section-join-project.headline.button icon='github'}}
+        {{> button-component button=index.section-join-project.headline.button}}
       </div>
       {{#if index.section-join-project.box}}
         <div class="box box_spaced box_flex">

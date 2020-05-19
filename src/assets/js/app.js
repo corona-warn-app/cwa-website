@@ -9,7 +9,8 @@ $(document).ready(function(){
     });
     $('.js-menu .js-scroll-navigate a').click(function(){
         $(this).parents('.js-menu').first().removeClass('active');
-        console.log("click");
+        $(this).parents('.js-menu').first().find('a').removeClass('active');
+        $(this).addClass('active');
     })
 })
 

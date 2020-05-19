@@ -8,11 +8,12 @@
             "text": "The Corona-Warn-App is an app that helps trace infection chains of SARS-CoV-2 (which can cause COVID-19) in Germany. The app is based on technologies with a decentralized approach and notifies users if they have been exposed to COVID-19. Transparency is key to both protect the app's end-users and to encourage adoption.",
             "button": {
                 "title": "Bring me to GitHub",
-                "url": ""
+                "url": "https://github.com/corona-warn-app/",
+                "external": true
             },
             "links" : [
-                { "title": "Data privacy & security", "url": ""},
-                { "title": "Our partners", "url": ""}
+                { "title": "Data privacy & security", "url": "#privacy"},
+                { "title": "Our partners", "url": "#partners"}
             ]
         },
         "image": {
@@ -48,10 +49,11 @@
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
                 "title": "Check for exposure to SARS-CoV-2 confirmed users",
                 "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification framework derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
-                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md"},
+                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md", "external": true},
                 "links": [{
                         "title": "See details in architecture dokument",
-                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md"
+                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md",
+                        "external": true
                 }]
             }
         ]
@@ -92,11 +94,14 @@
             ],
             "button": {
                 "title": "Bring me to GitHub",
-                "url": "https://github.com/corona-warn-app"
+                "url": "https://github.com/corona-warn-app",
+                "icon": "github",
+                "external": true
             }
         }
     },
     "section-feature-listing" : {
+        "id": "privacy",
         "headline" : {
             "title" : "Data privacy and security"
         },
@@ -154,44 +159,57 @@
                 "title": "Secure Software Development Lifecycle",
                 "text": "Security assurance of application development through Secure Software Development Lifecycle, which includes among other things threat modeling and end-to-end risk assessment, security planning, security testing and penetration testing."
             }]
-        }]
+        }],
+        "content": {
+            "button": {
+                "title": "See Details in documentation",
+                "icon": "github",
+                "url": "https://github.com/corona-warn-app/cwa-documentation/",
+                "external": true
+            }
+        }
     },
     "section-icon-listing": {
+        "id": "partners",
         "headline" : {
             "title": "Our partners",
             "text": "Early May 2020, the German government requested SAP and Deutsche Telekom subsidiary T-Systems to deliver the official Corona-Warn-App for Germany open sourced and based on a decentralized approach. The following partners are supporting the development of the app together with the involvement of the global open source community."
         },
         "icon-list" : [{
-            "url": "#",
-            "icon-url": "/assets/img/partner/fraunhofer-vector-logo.svg",
-            "title": "Fraunhover Institut"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/google-2015-logo.svg",
-            "title": "Google"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/telekom-logo-2013.svg",
-            "title": "Telekom"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/sap-best-r-grad-blk.svg",
-            "title": "SAP"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/kassenaerztliche-bundesvereinigung.svg",
-            "title": "Kassenärtzliche Vereinigung"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/bundesministerumg-fuer-gesundheit.svg",
-            "title": "Bundesministerum für Gesundheit"
-        }]
+                "icon-url": "/assets/img/partner/cispa_logo@1x.png",
+                "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
+                "title": "Cispa"
+            }, {
+                "icon-url": "/assets/img/partner/fraunhofer_logo.svg",
+                "title": "Fraunhofer Institut"
+            }, {
+                "icon-url": "/assets/img/partner/github_logo.svg",
+                "title": "GitHub"
+            }, {
+                "icon-url": "/assets/img/partner/Helmholtz_logo.svg",
+                "title": "Helmholtz"
+            }, {
+                "icon-url": "/assets/img/partner/RKI_logo@1x.png",
+                "icon-set": "/assets/img/partner/RKI_logo@1x.png 1x, /assets/img/partner/RKI_logo@2x.png 2x",
+                "title": "Robert Koch Institut"
+            }, {
+                "icon-url": "/assets/img/partner/sap_logo@1x.png",
+                "icon-set": "/assets/img/partner/sap_logo@1x.png 1x, /assets/img/partner/sap_logo@2x.png 2x",
+                "title": "SAP"
+            }, {
+                "icon-url": "/assets/img/partner/T_Logo.svg",
+                "title": "Telecom"
+            }
+        ]
     },
     "section-join-project": {
         "headline" : {
             "title": "Join the open-source project!",
             "button": {
-                "title": "Bring me to GitHub"
+                "title": "Bring me to GitHub",
+                "external": "true",
+                "url": "https://github.com/corona-warn-app/",
+                "icon": "github"
             }
         },
         "box" : {
@@ -212,12 +230,14 @@
                 {
                     "url": "#",
                     "icon-url": "/assets/img/google-play-badge.svg",
-                    "title": "Google Play Store"
+                    "title": "Google Play Store",
+                    "external": true
                 },
                 {
                     "url": "#",
                     "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
-                    "title": "Apple App Store"
+                    "title": "Apple App Store",
+                    "external": true
                 }
             ],
             "headline" : {

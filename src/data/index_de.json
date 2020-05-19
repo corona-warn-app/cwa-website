@@ -8,11 +8,13 @@
             "text": "Die Corona-Warn-App ist eine App, die hilft, Infektionsketten des SARS-CoV-2 (CoVID-19 Auslöser) in Deutschland nachzuverfolgen und zu unterbrechen. Die App basiert auf Technologien mit einem dezentralisierten Ansatz und informiert Nutzer, wenn sie mit einer infizierten Person in Kontakt standen. Transparenz ist von entscheidender Bedeutung, um Nutzer zu schützen und die Akzeptanz zu erhöhen.",
             "button": {
                 "title": "GitHub aufrufen",
-                "url": ""
+                "url": "https://github.com/corona-warn-app/",
+                "icon": "github",
+                "external": true
             },
             "links" : [
-                { "title": "Datenschutz & Sicherheit", "url": ""},
-                { "title": "Unsere Partner", "url": ""}
+                { "title": "Datenschutz & Sicherheit", "url": "#privacy"},
+                { "title": "Unsere Partner", "url": "#partners"}
             ]
         },
         "image": {
@@ -87,11 +89,14 @@
             ],
             "button": {
                 "title": "Mach mit in GitHub",
-                "url": "https://github.com/corona-warn-app/"
+                "url": "https://github.com/corona-warn-app/",
+                "icon": "github",
+                "external": true
             }
         }
     },
     "section-feature-listing" : {
+        "id": "privacy",
         "headline" : {
             "title" : "Unsere Grundsätze für Datenschutz und Sicherheit"
         },
@@ -149,44 +154,57 @@
                 "title": "Rolling IDs Lorem",
                 "text": "ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
             }]
-        }]
+        }],
+        "content": {
+            "button": {
+                "title": "See Details in documentation",
+                "icon": "github",
+                "url": "https://github.com/corona-warn-app/cwa-documentation/",
+                "external": true
+            }
+        }
     },
     "section-icon-listing": {
+        "id": "partners",
         "headline" : {
             "title": "Unsere Partner",
             "text": "Anfang Mai 2020 hat die Bundesregierung SAP und die Deutsche-Telekom-Tochter T-Systems gebeten, die offizielle Corona-Warn-App für Deutschland zu entwickeln. Die App soll nach dem Open-Source-Prinzip entwickelt werden und auf einem dezentralen Ansatz basieren. Folgende Partner unterstützen die Entwicklung der App, in die auch die globale Open-Source-Community eingebunden ist:"
         },
         "icon-list" : [{
-            "url": "#",
-            "icon-url": "/assets/img/partner/fraunhofer-vector-logo.svg",
-            "title": "Fraunhover Institut"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/google-2015-logo.svg",
-            "title": "Google"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/telekom-logo-2013.svg",
-            "title": "Telekom"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/sap-best-r-grad-blk.svg",
-            "title": "SAP"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/kassenaerztliche-bundesvereinigung.svg",
-            "title": "Kassenärtzliche Vereinigung"
-        }, {
-            "url": "#",
-            "icon-url": "/assets/img/partner/bundesministerumg-fuer-gesundheit.svg",
-            "title": "Bundesministerum für Gesundheit"
-        }]
+                "icon-url": "/assets/img/partner/cispa_logo@1x.png",
+                "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
+                "title": "Cispa"
+            }, {
+                "icon-url": "/assets/img/partner/fraunhofer_logo.svg",
+                "title": "Fraunhofer Institut"
+            }, {
+                "icon-url": "/assets/img/partner/github_logo.svg",
+                "title": "GitHub"
+            }, {
+                "icon-url": "/assets/img/partner/Helmholtz_logo.svg",
+                "title": "Helmholtz"
+            }, {
+                "icon-url": "/assets/img/partner/RKI_logo@1x.png",
+                "icon-set": "/assets/img/partner/RKI_logo@1x.png 1x, /assets/img/partner/RKI_logo@2x.png 2x",
+                "title": "Robert Koch Institut"
+            }, {
+                "icon-url": "/assets/img/partner/sap_logo@1x.png",
+                "icon-set": "/assets/img/partner/sap_logo@1x.png 1x, /assets/img/partner/sap_logo@2x.png 2x",
+                "title": "SAP"
+            }, {
+                "icon-url": "/assets/img/partner/T_Logo.svg",
+                "title": "Telecom"
+            }
+        ]
     },
     "section-join-project": {
         "headline" : {
             "title": "Mach mit beim Open Source Projekt!",
             "button": {
-                "title": "GitHub aufrufen"
+                "title": "GitHub aufrufen",
+                "url": "https://github.com/corona-warn-app/",
+                "external": true,
+                "icon": "github"
             }
         },
         "box" : {
@@ -207,12 +225,14 @@
                 {
                     "url": "#",
                     "icon-url": "/assets/img/google-play-badge.svg",
-                    "title": "Google Play Store"
+                    "title": "Google Play Store",
+                    "external": true
                 },
                 {
                     "url": "#",
                     "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
-                    "title": "Apple App Store"
+                    "title": "Apple App Store",
+                    "external": true
                 }
             ],
             "headline" : {
