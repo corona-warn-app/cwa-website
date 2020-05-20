@@ -6,12 +6,9 @@
     <meta name="description" content="{{page-description}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="{{root}}assets/img/favicon.png"
-    /> -->
+    {{#if global.favicon}}
+    {{> favicon favicon=global.favicon}}
+    {{/if}}
 
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
@@ -25,6 +22,5 @@
     {{> body}}
     </div>
     {{> footer language=global.lang.en}}
-    <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

@@ -6,12 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{#if global.favicon}}
-    <link
-      rel="icon"
-      type="image/{{#if global.favicon.type}}{{global.favicon.type}}{{/if}}{{#unless global.favicon.type}}png{{/unless}}"
-      sizes="{{#if global.favicon.size}}{{global.favicon.size}}x{{global.favicon.size}}{{else}}32x32{{/if}}"
-      href="{{root}}{{global.favicon.url}}"
-    />
+    {{> favicon favicon=global.favicon}}
     {{/if}}
 
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
