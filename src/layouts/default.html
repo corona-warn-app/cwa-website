@@ -9,7 +9,7 @@
     <link
       rel="icon"
       type="image/{{#if global.favicon.type}}{{global.favicon.type}}{{/if}}{{#unless global.favicon.type}}png{{/unless}}"
-      sizes="32x32"
+      sizes="{{#if global.favicon.size}}{{global.favicon.size}}x{{global.favicon.size}}{{else}}32x32{{/if}}"
       href="{{root}}{{global.favicon.url}}"
     />
     {{/if}}
