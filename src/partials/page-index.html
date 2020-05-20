@@ -68,7 +68,7 @@
     <div class="row align-items-center">
       <div class="col col-12 col-md-6 image-overflow-container">
         <img class="image-overflow-spacer" src="{{root}}/assets/img/spacer.gif" />
-        <img class="image-overflow image-overflow_left" src="{{root}}{{page-contents.section-image-text.image.url}}"
+        <img class="image-overflow image-overflow_left" src="{{root}}{{page-contents.section-image-text.image.url}}"{{#if page-contents.section-image-text.image.url-set}} srcset="{{page-contents.section-image-text.image.url-set}}"{{/if}}
           title="{{page-contents.section-image-text.image.title}}" alt="{{page-contents.section-image-text.image.title}}" />
       </div>
       <div class="col col-12 col-md-6 text-center text-md-left">
@@ -118,7 +118,7 @@
     <div class="text-center container-inner container-inner_sm">
       {{> headline-component page-contents.section-icon-listing.headline}}
     </div>
-    {{> icon-list-component index.section-icon-listing}}
+    {{> icon-list-component page-contents.section-icon-listing}}
     {{/if}}
   </div>
 </section>
@@ -128,7 +128,7 @@
     <div class="container-inner container-inner_lg">
       <div class="text-center">
         {{> headline-plain-component page-contents.section-join-project.headline}}
-        {{> button-component button=page-contents.section-join-project.headline.button icon='github'}}
+        {{> button-component button=page-contents.section-join-project.headline.button}}
       </div>
       {{#if page-contents.section-join-project.box}}
       <div class="box box_spaced box_flex">
