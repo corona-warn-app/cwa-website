@@ -170,3 +170,12 @@
   {{/if}}
 </section>
 {{/if}}
+{{#unless get-app-enabled}}
+{{#if page-contents.section-soon-available}}
+<section class="section-intersect section_bg-white">
+  <div class="container contents-normal text-center">
+    {{> headline-component page-contents.section-soon-available.headline}}
+  </div>
+</section>
+{{/if}}
+{{/unless}}
