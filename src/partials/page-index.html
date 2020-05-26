@@ -14,8 +14,7 @@
         </p>
       </div>
       <div class="col col-12 col-sm-12 col-md-12 col-lg-5">
-        <img class="section-main-image" src="{{root}}{{page-contents.section-main.image.url}}"
-          title="{{page-contents.section-main.image.title}}" alt="{{page-contents.section-main.image.title}}" />
+        <img class="section-main-image" {{> image-attributes image=page-contents.section-main.image}}/>
       </div>
     </div>
   </div>
@@ -67,9 +66,8 @@
     {{#if page-contents.section-image-text}}
     <div class="row align-items-center">
       <div class="col col-12 col-md-6 image-overflow-container">
-        <img class="image-overflow-spacer" src="{{root}}assets/img/spacer.gif" />
-        <img class="image-overflow image-overflow_left" src="{{page-contents.section-image-text.image.url}}"{{#if page-contents.section-image-text.image.url-set}} srcset="{{page-contents.section-image-text.image.url-set}}"{{/if}}
-          title="{{page-contents.section-image-text.image.title}}" alt="{{page-contents.section-image-text.image.title}}" />
+        <img class="image-overflow-spacer" src="/assets/img/spacer.gif" alt="" />
+        <img class="image-overflow image-overflow_left" {{> image-attributes image=page-contents.section-image-text.image}}/>
       </div>
       <div class="col col-12 col-md-6 text-center text-md-left">
         {{> headline-component title=page-contents.section-image-text.headline.title}}
@@ -89,7 +87,7 @@
       </div>
       {{#each page-contents.section-feature-listing.feature-list}}
       <div class="text-center">
-        {{> image-component image}}
+        {{> image-component image=image}}
         <h3 class="headline-light">{{headline.title}}</h3>
       </div>
       {{#if list}}
@@ -97,7 +95,7 @@
         {{#each list}}
         <li class="list-item col col-12 col-md-6">
           <div class="text-block_indented"><span class="numeration"><img class="icon"
-                src="{{root}}/assets/img/icons/virus.svg" /></span>{{> text-component this=.}}</div>
+                src="/assets/img/icons/virus.svg" alt="" /></span>{{> text-component this=.}}</div>
         </li>
         {{/each}}
       </ul>
@@ -132,7 +130,7 @@
       </div>
       {{#if page-contents.section-join-project.box}}
       <div class="box box_spaced box_flex">
-        {{> image-component page-contents.section-join-project.box.image}}
+        {{> image-component image=page-contents.section-join-project.box.image}}
         <div class="box-inner_flex">
           <div class="box-inner">{{> headline-small-component title=page-contents.section-join-project.box.content.title}}</div>
           <div class="box-inner box-inner_end">

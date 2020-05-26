@@ -14,7 +14,7 @@
         {{#if page-contents.section-main.content.simple-list.image}}
         {{#unless page-contents.section-main.content.simple-list.image.right}}
         <div class="col col-12 col-md-6">
-          {{> image-component page-contents.section-main.content.simple-list.image}}
+          {{> image-component image=page-contents.section-main.content.simple-list.image}}
         </div>
         {{/unless}}
         {{/if}}
@@ -32,7 +32,7 @@
         </div>
         {{#if page-contents.section-main.content.simple-list.image.right}}
         <div class="col col-12 col-md-6">
-          {{> image-component page-contents.section-main.content.simple-list.image}}
+          {{> image-component image=page-contents.section-main.content.simple-list.image}}
         </div>
         {{/if}}
       </div>
@@ -55,8 +55,7 @@
         <ul class="list row">
           {{#each page-contents.section-contribute-listing.content.feature-list}}
           <li class="list-item col col-12 col-sm-6 col-md-4">
-            <span class="list-icon"><img src="{{image.url}}" {{#if image.title}}title="{{image.title}}"
-                {{/if}} /></span>
+            <span class="list-icon"><img {{> image-attributes image=image}}/></span>
             {{> text-component this=.}}
           </li>
           {{/each}}
@@ -75,7 +74,7 @@
       class="box {{#if page-contents.section-contribute-listing.box.class}}box_{{page-contents.section-contribute-listing.box.class}}{{/if}}">
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-4">
-          {{> image-component page-contents.section-contribute-listing.box.image}}
+          {{> image-component image=page-contents.section-contribute-listing.box.image}}
         </div>
         <div class="col col-12 col-sm-6 col-md-5">
           {{> text-component page-contents.section-contribute-listing.box.content}}

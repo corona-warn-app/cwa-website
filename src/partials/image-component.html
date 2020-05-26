@@ -1,2 +1,1 @@
-<div class="image-block"><img src="{{root}}{{#unless image.url}}{{#if url}}{{url}}{{/if}}{{/unless}}{{#if image.url}}{{image.url}}{{/if}}"/></div>
-<!-- {{url}} -->
+<div class="image-block"><img {{> image-attributes image=image}}/></div>
