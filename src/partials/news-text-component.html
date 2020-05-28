@@ -1,7 +1,16 @@
 <div class="container">
+{{#unless lang_de}}
 {{#if date}}
 <h5 class="headline-caption">{{date}} {{#if author}}| by {{{author}}}{{/if}}</h5>
 {{/if}}
 <h4 class="headline">{{{title}}}</h4>
 {{> button-link-component button=source direction='right' titleprefix='Read more in'}}
+{{/unless}}
+{{#if lang_de}}
+{{#if date_de}}
+<h5 class="headline-caption">{{date_de}} {{#if author}}| von {{{author}}}{{/if}}</h5>
+{{/if}}
+<h4 class="headline">{{{title}}}</h4>
+{{> button-link-component button=source direction='right' titleprefix='Lies mehr auf'}}
+{{/if}}
 </div>
