@@ -19,6 +19,26 @@
                     "textblock": [
                         "The Corona-Warn-App open-source project and its website coronawarn.app involve the open-source development of the apps. Neither this website nor the GitHub repositories are the right place for discussion or information on topics unrelated to app development - such as legal matters, enduser guidance, and so on. We kindly ask you to respect this."
                     ]
+                },{
+                    "title" : "What concrete goals is the German government pursuing with the development of a contact tracing app?",
+                    "textblock": [
+                        "The Corona-Warn-App pursues the main goal of informing people who have had contact with a person infected with Corona as soon as possible about this contact. From an epidemiological point of view, the processes of contact tracing can be accelerated by the Corona-Warn-App as it supports informing people at risk faster. As a result, possible infection chains can be detected and interrupted earlier. This can also help to relax existing restrictions in order to return social life to normal. In addition to the decisive hygiene and behavioural rules to prevent an infection and many other measures, such as the expansion of tests or better contact tracking by health authorities, the Corona-Warn-App is therefore a further element in the fight against the Corona pandemic."
+                    ]
+                },{
+                    "title" : "In the end, what were the decisive reasons for favouring the decentralised approach to contact tracing?",
+                    "textblock": [
+                        "In April 2020, a scientific debate had developed, which was conducted in public under the keyword \"centralized vs. decentralized storage\". In addition to arguments that were comprehensible in terms of content, a partly ideological debate on centralised storage developed, which had the potential to jeopardise confidence in this technological approach. A loss of confidence in the general public would have endangered all efforts and endeavours to be able to detect chains of infection earlier and interrupt them more quickly with digital support. For this reason, the Federal Government took action and adapted the project philosophy in the sense of a decentralized approach."
+                    ]
+                },{
+                    "title" : "Was there a risk and cost/benefit evaluation of the two variants (centralised/decentralised) and if so, can this evaluation be published?",
+                    "textblock": [
+                        "A scientifically sound evaluation is not available due to the complexity of this topic, also due to the lack of practical experience with the underlying technologies and for the reasons mentioned above. Both approaches have advantages and disadvantages in terms of usability and have been intensively discussed with expert personnel from university and non-university research institutions, the Robert Koch Institute, the Federal Office for Information Security (BSI) and the Federal Commissioner for Data Protection and Freedom of Information (BfDI). The current development of the Corona-Warn-App is also being closely accompanied by scientific research."
+                    ]
+                },{
+                    "title" : "What specific constraints has the German government imposed on the contractors SAP and Deutsche Telekom for the development?",
+                    "textblock": [
+                        "Besides the decentralized storage of contacts using the interfaces provided by Google and Apple, the discussions also focused on the publication of the developed software components under an open source license. It is also planned to offer the application through the official Google and Apple stores. Since this is an agile development process, the requirements are constantly being refined. A further requirement for the development process was the early and intensive involvement of and coordination with BfDI and BSI."
+                    ]
                 }
             ]
         },{
@@ -69,6 +89,12 @@
                     "title": "How will the development status in GitHub be uploaded to the app stores?",
                     "textblock": [
                         "The app will be created using standard tools (such as Xcode and Android Studio) and then uploaded to the respective app stores. We are aware of the topic how you can verify that the source code in GitHub actually matches that of the app in the respective app stores. You can find details on the topic's progress in this <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank'>issue</a> in GitHub."
+                    ]
+                },
+                {
+                    "title": "Is there or will there be a TestFlight/beta version?",
+                    "textblock": [
+                        "Preliminary versions of the app (independent of the operating system) are currently only available to the Corona-Warn-App project team and our partners (German Federal Government, Robert Koch-Institute, BSI, BfDI etc.)."
                     ]
                 }
             ]

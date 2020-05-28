@@ -19,6 +19,26 @@
                     "textblock": [
                         "Im Open-Source-Projekt für die Corona-Warn-App und auf der zugehörigen Website coronawarn.app geht es um die Open-Source-Entwicklung der App. Die Website und die GitHub-Repositories sind nur für Themen im Zusammenhang mit der App-Entwicklung gedacht, nicht für Informationen zu anderen Themen, wie rechtliche Fragen, Informationen zur Nutzung usw."
                     ]
+                },{
+                    "title" : "Welche konkreten Ziele verfolgt die Bundesregierung mit der Entwicklung einer Kontaktverfolgungs-App?",
+                    "textblock": [
+                        "Die Corona-Warn-App verfolgt das Hauptziel, Personen, die Kontakt mit einer mit Corona infizierten Person hatten, schnellstmöglich über diesen Kontakt zu informieren. Aus epidemiologischer Sicht können die Prozesse der Kontaktnachverfolgung beschleunigt werden, in dem die Corona-Warn-App dabei unterstützt, gefährdete Personen schneller zu informieren. Dadurch können mögliche Infektionsketten früher erkannt und unterbrochen werden. Dies kann auch dabei helfen, die bestehenden Beschränkungen zu lockern, um das gesellschaftliche Leben wieder zu normalisieren. Neben den entscheidenden Hygiene- und Verhaltensregeln zur Vorbeugung einer Infektion und vielen anderen Maßnahmen, wie zum Beispiel der Ausweitung der Tests oder der besseren Kontaktnachverfolgung durch Gesundheitsämter ist die Corona-Warn-App deshalb ein weiteres Element bei der Bekämpfung der Corona-Pandemie."
+                    ]
+                },{
+                    "title" : "Welche Gründe waren am Ende ausschlaggebend dafür, den dezentralen Ansatz zur Kontaktfallverfolgung zu favorisieren?",
+                    "textblock": [
+                        "Im April 2020 hatte sich eine wissenschaftliche Debatte entwickelt, die in der Öffentlichkeit unter dem Schlagwort „zentrale vs. dezentrale Speicherung“ geführt wurde. Neben inhaltlich nachvollziehbaren Argumenten entwickelte sich eine teils ideologische Auseinandersetzung zur zentralen Speicherung, die das Potential hatte, das Vertrauen in diesen technologischen Ansatz zu gefährden. Ein Vertrauensverlust der Bevölkerung hätte alle Bemühungen und Anstrengungen gefährdet, Infektionsketten mit digitaler Unterstützung früher erkennen und schneller unterbrechen zu können. Daher sind ist die Bundesregierung aktiv geworden und hat die Projektphilosophie im Sinne eines dezentralen Ansatzes angepasst."
+                    ]
+                },{
+                    "title" : "Gab es eine Risiko- sowie Kosten/Nutzen-Evaluation der beiden Varianten (zentral/dezentral) und wenn ja, kann diese Evaluation publiziert werden?",
+                    "textblock": [
+                        "Eine wissenschaftlich belastbare Evaluation liegt aufgrund der Komplexität dieser Thematik und auch aufgrund der fehlenden praktischen Erfahrung mit den zugrunde liegenden Technologien sowie aus o.g. Gründen nicht vor. Beide Ansätze haben Vor- und Nachteile im Hinblick auf die Nutzbarkeit und wurden intensiv mit fachkundigem Personal universitärer aber auch außeruniversitärer Forschungseinrichtungen, dem Robert Koch-Institut sowie des Bundesamts für Sicherheit in der Informationstechnik (BSI) und des Beauftragten für den Datenschutz und die Informationsfreiheit (BfDI) diskutiert. Auch bei der jetzigen Entwicklung der Corona-Warn-App findet eine enge wissenschaftliche Begleitung statt."
+                    ]
+                },{
+                    "title" : "Welche konkreten Nebenbedingungen hat die Bundesregierung den Auftragnehmern SAP und Deutsche Telekom für die Entwicklung auferlegt?",
+                    "textblock": [
+                        "Gegenstand der Diskussionen waren, neben der dezentralen Speicherung der Kontakte unter Verwendung der von Google und Apple bereitgestellten Schnittstellen, auch die Veröffentlichung der entwickelten Softwarekomponenten unter einer Open Source-Lizenz. Es ist zudem vorgesehen, die Anwendung über die offiziellen Stores von Google und Apple anzubieten. Da es sich um einen agilen Entwicklungsprozess handelt, werden die Anforderungen laufend weiterentwickelt. Eine weitere Anforderung für den Entwicklungsprozess war die frühzeitige und intensive Einbeziehung von und Abstimmung mit BfDI und BSI."
+                    ]
                 }
             ]
         },{
@@ -69,6 +89,12 @@
                     "title": "Wie wird sich der Stand in GitHub auf die App in den App Stores übertragen?",
                     "textblock": [
                         "Die App wird über Standardwerkzeuge (z.B. Xcode, Android Studio) erstellt und dann in die jeweiligen App Stores hochgeladen. Das Thema, ob der Code in GitHub wirklich mit der App in den jeweiligen App Stores übereinstimmt ('Reproducable Builds'), haben wir auf dem Schirm und werden entsprechende Informationen veröffentlichen, sobald sie verfügbar sind. Details zum Fortschritt findest Du im entsprechenden <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank'>GitHub-Issue</a>."
+                    ]
+                },
+                {
+                    "title": "Gibt es oder wird es eine TestFlight/Beta-Version geben?",
+                    "textblock": [
+                        "Vorläufige Versionen der App (unabhängig vom Betriebssystem) stehen derzeit nur dem Projektteam der Corona-Warn-App und unseren Partnern (Bundesregierung, Robert-Koch-Institut, BSI, BfDI etc.) zur Verfügung."
                     ]
                 }
             ]
