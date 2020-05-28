@@ -43,6 +43,7 @@
       <div class="text-center">
         {{> headline-component page-contents.section-boxes.headline}}
       </div>
+      {{#unless page-contents.section-boxes.slider}}
       {{#if page-contents.section-boxes.boxes}}
       <div class="row">
         {{#each page-contents.section-boxes.boxes}}
@@ -56,6 +57,17 @@
         </div>
         {{/each}}
       </div>
+      {{/if}}
+      {{/unless}}
+      {{#if page-contents.section-boxes.slider}}
+        {{#ifequal page-contents.section-boxes.slider.target 'news'}}
+          {{> slider-component slides=news.entries amount=page-contents.section-boxes.slider.amount type=page-contents.section-boxes.slider.target }}
+          {{#if page-contents.section-boxes.slider.button}}
+          <div class="box_slider-caption">
+              {{> button-link-component button=page-contents.section-boxes.slider.button direction="right" }}
+          </div>
+          {{/if}}
+        {{/ifequal}}
       {{/if}}
     </div>
     {{/if}}

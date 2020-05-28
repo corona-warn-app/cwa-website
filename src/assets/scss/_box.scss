@@ -81,6 +81,23 @@
             }
         }
     }
+    &_slider {
+        .slick-list {
+            padding-top: $spacer;
+            padding-bottom: $spacer * 1.5;
+        }
+        &-caption {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 $spacer;
+            @media (min-width: $screen-lg){
+                padding: 0 $spacer * 2;
+            }
+            @media (min-width: 420px){
+                transform: translate3d(0, -38px, 0);
+            }
+        }
+    }
 }
 
 .image-block {

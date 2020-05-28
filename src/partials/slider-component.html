@@ -1,0 +1,17 @@
+<div class="box_slider js-slider">
+    {{#if type}}
+    {{#ifequal type 'news'}}
+    {{#each (limit slides amount)}}
+    <div class="box js-slide">
+        {{> news-text-component this=.}}
+    </div>
+    {{/each}}
+    {{/ifequal}}
+    {{else}}
+    {{#each (limit slides amount)}}
+    <div class="box js-slide">
+    {{.}}
+    </div>
+    {{/each}}
+    {{/if}}
+</div>

@@ -1,0 +1,17 @@
+<section class="section-news">
+    <div class="container">
+        <div class="text-center container-inner container-inner_sm contents-normal">
+            {{> headline-component page-contents.headline }}
+        </div>
+        <div class="card-list">
+            {{#each page-contents.entries}}
+            <div class="card-list-item">
+                {{#if image}}
+                {{> image-component image=image}}
+                {{/if}}
+                {{> news-text-component this=.}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
