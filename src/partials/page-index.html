@@ -61,7 +61,7 @@
       {{/unless}}
       {{#if page-contents.section-boxes.slider}}
         {{#ifequal page-contents.section-boxes.slider.target 'news'}}
-          {{> slider-component slides=news.entries amount=page-contents.section-boxes.slider.amount type=page-contents.section-boxes.slider.target }}
+          {{> slider-component slides=news_combined.entries amount=page-contents.section-boxes.slider.amount type=page-contents.section-boxes.slider.target }}
           {{#if page-contents.section-boxes.slider.button}}
           <div class="box_slider-caption">
               {{> button-link-component button=page-contents.section-boxes.slider.button direction="right" }}
