@@ -41,12 +41,12 @@
         overflow: hidden;
         border-radius: 0 0 $border-radius $border-radius;
         box-sizing: border-box;
-        border: 1px solid $accordion-border-color;
-        border-top-width: 0;
+        border: 0 solid $accordion-border-color;
     }
     > dt.active + dd,
     &-header.active + &-body {
         max-height: 9000px;
+        border-width: 1px;
         p:last-child {
             margin-bottom: 0.2rem;
         }
