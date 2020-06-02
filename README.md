@@ -3,6 +3,10 @@
 </p>
 
 <hr />
+
+<p align="center">
+    <a href="https://observatory.mozilla.org/analyze/coronawarn.app" title="Latest Results"><img src="https://img.shields.io/mozilla-observatory/grade/coronawarn.app" alt="Mozilla HTTP Observatory Grade"></a>
+</p>
 <p align="center">
     <a href="#about-this-repository">About this Repository</a> • 
     <a href="#development">Development</a> •
