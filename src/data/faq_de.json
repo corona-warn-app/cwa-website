@@ -15,7 +15,7 @@
                       "Wir arbeiten mit Hochdruck an der Fertigstellung der Applikation. Wie von <a href='https://www.linkedin.com/pulse/corona-warn-app-wichtige-meilensteine-der-entwicklung-juergen-mueller/' target='_blank'>Jürgen Müller</a> in seinem Blogpost angekündigt, wird sie Mitte Juni über die entsprechenden App Stores zum Download zur Verfügung stehen. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."  
                     ]
                 },{
-                    "title" : "Kann ich Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind? ",
+                    "title" : "Kann ich hier Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind? ",
                     "textblock": [
                         "Im Open-Source-Projekt für die Corona-Warn-App und auf der zugehörigen Website coronawarn.app geht es um die Open-Source-Entwicklung der App. Die Website und die GitHub-Repositories sind nur für Themen im Zusammenhang mit der App-Entwicklung gedacht, nicht für Informationen zu anderen Themen, wie rechtliche Fragen, Informationen zur Nutzung usw."
                     ]
@@ -37,7 +37,7 @@
                 },{
                     "title" : "Welche konkreten Nebenbedingungen hat die Bundesregierung den Auftragnehmern SAP und Deutsche Telekom für die Entwicklung auferlegt?",
                     "textblock": [
-                        "Gegenstand der Diskussionen waren neben der dezentralen Speicherung der Kontakte unter Verwendung der von Google und Apple bereitgestellten Schnittstellen auch die Veröffentlichung der entwickelten Softwarekomponenten unter einer Open Source-Lizenz. Es ist zudem vorgesehen, die Anwendung über die offiziellen Stores von Google und Apple anzubieten. Da es sich um einen agilen Entwicklungsprozess handelt, werden die Anforderungen laufend weiterentwickelt. Eine weitere Anforderung für den Entwicklungsprozess war die frühzeitige und intensive Einbeziehung von und Abstimmung mit BfDI und BSI."
+                        "Gegenstand der Diskussionen waren neben der dezentralen Speicherung der Kontakte, unter Verwendung der von Google und Apple bereitgestellten Schnittstellen, auch die Veröffentlichung der entwickelten Softwarekomponenten unter einer Open Source-Lizenz. Es ist zudem vorgesehen, die Anwendung über die offiziellen Stores von Google und Apple anzubieten. Da es sich um einen agilen Entwicklungsprozess handelt, werden die Anforderungen laufend weiterentwickelt. Eine weitere Anforderung für den Entwicklungsprozess war die frühzeitige und intensive Einbeziehung von und Abstimmung mit BfDI und BSI."
                     ]
                 }
             ]
@@ -119,7 +119,7 @@
                     "title": "Was wird genau gespeichert und wer kann auf die über Bluetooth gesammelten Daten zugreifen?",
                     "textblock": [
                         "Über Bluetooth werden konstant wechselnde IDs versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie Geolokations- oder sonstigen ortsbezogenen Daten.",
-						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die IDs in einem gesichertem Bereich des Betriebssystems des Handys.  Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
+						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die IDs in einem gesichertem Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
 						"Sobald eine Person positiv getestet wurde, wird sie gebeten, ihre Temporary Exposure Keys der letzten 14 Tage zu teilen. Der Zugriff auf diese Schlüssel erfolgt über die Exposure Notification API, allerdings nur dann, wenn die Person aktiv ihre Zustimmung gegeben hat."
                     ]
                 },
