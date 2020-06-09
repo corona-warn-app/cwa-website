@@ -10,41 +10,74 @@
             "accordion": [
                 {
                     "active": true,
-                    "title": "Wann ist die App fertig? ",
+                    "title": "Muss ich diese App verwenden?",
                     "textblock": [
-                      "Wir arbeiten mit Hochdruck an der Fertigstellung der Applikation. Wie von <a href='https://www.linkedin.com/pulse/corona-warn-app-wichtige-meilensteine-der-entwicklung-juergen-mueller/' target='_blank' rel='noopener noreferrer'>Jürgen Müller</a> in seinem Blogpost angekündigt, wird sie Mitte Juni über die entsprechenden App Stores zum Download zur Verfügung stehen. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."  
+                      "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Du kannst selbst entscheiden, ob Du die Testergebnisse abrufst und ob Du sie bei einem positiven Befund als Diagnoseschlüssel übermittelst – nichts geschieht ohne Deine Zustimmung." ,
+                      "Außerdem kannst Du sowohl in der App selbst als auch in den Einstellungen Deines Smartphones die Nutzung der COVID-19-Kontaktfunktion deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren."
+                    ]
+                },
+                {
+                    "title": "Wann ist die App fertig?",
+                    "textblock": [
+                      "Wir arbeiten mit Hochdruck an der Fertigstellung der App. Wie von SAP-Vorstandsmitglied <a href='https://www.linkedin.com/pulse/corona-warn-app-wichtige-meilensteine-der-entwicklung-juergen-mueller/' target='_blank' rel='noopener noreferrer'>Jürgen Müller in einem Blogpost</a> angekündigt, wird sie Mitte Juni über die entsprechenden App Stores zum Download zur Verfügung stehen. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."  
                     ]
                 },{
-                    "title" : "Kann ich hier Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind? ",
+                    "title" : "Wo bekomme ich die App?",
                     "textblock": [
-                        "Im Open-Source-Projekt für die Corona-Warn-App und auf der zugehörigen Website coronawarn.app geht es um die Open-Source-Entwicklung der App. Die Website und die GitHub-Repositories sind nur für Themen im Zusammenhang mit der App-Entwicklung gedacht, nicht für Informationen zu anderen Themen, wie rechtliche Fragen, Informationen zur Nutzung usw."
+                        "Sobald die App zur Verfügung steht, könnt Ihr sie im App Store von Apple bzw. im Google Play Store herunterladen."
                     ]
                 },{
-                    "title" : "Welche konkreten Ziele verfolgt die Bundesregierung mit der Entwicklung einer Kontaktverfolgungs-App?",
+                    "title" : "Welche konkreten Ziele verfolgt die Bundesregierung mit der Entwicklung einer App zur Begegnungsnachverfolgung?",
                     "textblock": [
-                        "Die Corona-Warn-App verfolgt das Hauptziel, Personen, die Kontakt mit einer mit Corona infizierten Person hatten, schnellstmöglich über diesen Kontakt zu informieren. Aus epidemiologischer Sicht können die Prozesse der Kontaktnachverfolgung beschleunigt werden, indem die Corona-Warn-App dabei unterstützt, gefährdete Personen schneller zu informieren.",
+                        "Die Corona-Warn-App verfolgt das Hauptziel, Personen, die Begegnungen mit einer mit COVID-19 infizierten Person hatten, schnellstmöglich über diese Begegnung zu informieren. Aus epidemiologischer Sicht können die Prozesse der Begegnungsnachverfolgung beschleunigt werden, indem die Corona-Warn-App dabei unterstützt, gefährdete Personen schneller zu informieren.",
                         "Dadurch können mögliche Infektionsketten früher erkannt und unterbrochen werden. Dies kann auch dabei helfen, die bestehenden Beschränkungen zu lockern, um das gesellschaftliche Leben wieder zu normalisieren.",
-                        "Neben den entscheidenden Hygiene- und Verhaltensregeln zur Vorbeugung einer Infektion und vielen anderen Maßnahmen, wie zum Beispiel der Ausweitung der Tests oder der besseren Kontaktnachverfolgung durch Gesundheitsämter ist die Corona-Warn-App deshalb ein weiteres Element bei der Bekämpfung der Corona-Pandemie."
+                        "Neben den entscheidenden Hygiene- und Verhaltensregeln zur Vorbeugung einer Infektion und vielen anderen Maßnahmen, wie zum Beispiel der Ausweitung der Tests oder der besseren Begegnungsnachverfolgung durch Gesundheitsämter, ist die Corona-Warn-App deshalb ein weiteres Element bei der Bekämpfung der Corona-Pandemie."
                     ]
                 },{
-                    "title" : "Welche Gründe waren am Ende ausschlaggebend dafür, den dezentralen Ansatz zur Kontaktfallverfolgung zu favorisieren?",
+                    "title" : "Welche Gründe waren am Ende ausschlaggebend dafür, den dezentralen Ansatz zur Begegnungsnachverfolgung zu favorisieren?",
                     "textblock": [
-                        "Im April 2020 hatte sich eine wissenschaftliche Debatte entwickelt, die in der Öffentlichkeit unter dem Schlagwort „zentrale vs. dezentrale Speicherung“ geführt wurde. Neben inhaltlich nachvollziehbaren Argumenten entwickelte sich eine teils ideologische Auseinandersetzung zur zentralen Speicherung, die das Potential hatte, das Vertrauen in diesen technologischen Ansatz zu gefährden.",
+                        "Im April 2020 hatte sich eine wissenschaftliche Debatte entwickelt, die in der Öffentlichkeit unter dem Schlagwort „zentrale vs. dezentrale Speicherung“ geführt wurde. Neben inhaltlich nachvollziehbaren Argumenten entwickelte sich eine teils ideologische Auseinandersetzung zur zentralen Speicherung, die das Potenzial hatte, das Vertrauen in diesen technologischen Ansatz zu gefährden.",
                         "Ein Vertrauensverlust der Bevölkerung hätte alle Bemühungen und Anstrengungen gefährdet, Infektionsketten mit digitaler Unterstützung früher erkennen und schneller unterbrechen zu können. Daher ist die Bundesregierung aktiv geworden und hat die Projektphilosophie im Sinne eines dezentralen Ansatzes angepasst."
                     ]
                 },{
-                    "title" : "Gab es eine Risiko- sowie Kosten/Nutzen-Evaluation der beiden Varianten (zentral/dezentral) und wenn ja, kann diese Evaluation publiziert werden?",
+                    "title" : "Gab es eine Risiko- sowie Kosten/Nutzen-Evaluation der beiden Varianten (zentral/dezentral) und, wenn ja, kann diese Evaluation eingesehen werden?",
                     "textblock": [
                         "Eine wissenschaftlich belastbare Evaluation liegt aufgrund der Komplexität dieser Thematik und auch aufgrund der fehlenden praktischen Erfahrung mit den zugrunde liegenden Technologien sowie aus o.g. Gründen nicht vor.",
-                        "Beide Ansätze haben Vor- und Nachteile im Hinblick auf die Nutzbarkeit und wurden intensiv mit fachkundigem Personal universitärer aber auch außeruniversitärer Forschungseinrichtungen, des Robert Koch-Instituts sowie des Bundesamts für Sicherheit in der Informationstechnik (BSI) und des Beauftragten für den Datenschutz und die Informationsfreiheit (BfDI) diskutiert",
+                        "Beide Ansätze haben Vor- und Nachteile im Hinblick auf die Nutzbarkeit und wurden intensiv mit fachkundigem Personal universitärer aber auch außeruniversitärer Forschungseinrichtungen, des Robert Koch-Instituts sowie des Bundesamts für Sicherheit in der Informationstechnik (BSI) und des Beauftragten für den Datenschutz und die Informationsfreiheit (BfDI) diskutiert.",
                         "Auch bei der jetzigen Entwicklung der Corona-Warn-App findet eine enge wissenschaftliche Begleitung statt."
                     ]
                 },{
                     "title" : "Welche konkreten Nebenbedingungen hat die Bundesregierung den Auftragnehmern SAP und Deutsche Telekom für die Entwicklung auferlegt?",
                     "textblock": [
-                        "Gegenstand der Diskussionen waren neben der dezentralen Speicherung der Kontakte, unter Verwendung der von Google und Apple bereitgestellten Schnittstellen, auch die Veröffentlichung der entwickelten Softwarekomponenten unter einer Open Source-Lizenz.",
+                        "Gegenstand der Diskussionen waren neben der dezentralen Speicherung der Begegnungen unter Verwendung der von Google und Apple bereitgestellten Schnittstellen auch die Veröffentlichung der entwickelten Softwarekomponenten unter einer Open-Source-Lizenz.",
                         "Es ist zudem vorgesehen, die Anwendung über die offiziellen Stores von Google und Apple anzubieten. Da es sich um einen agilen Entwicklungsprozess handelt, werden die Anforderungen laufend weiterentwickelt.",
-                        "Eine weitere Anforderung für den Entwicklungsprozess war die frühzeitige und intensive Einbeziehung von und Abstimmung mit BfDI und BSI."
+                        "Eine weitere Anforderung für den Entwicklungsprozess war die frühzeitige und intensive Einbeziehung des BfDI und des BSI sowie eine enge Abstimmung mit diesen Stellen."
+                    ]
+                },{
+                    "title" : "Wie ist gewährleistet, dass ich bei der Nutzung der Corona-Warn-App anonym bleibe?",
+                    "textblock": [
+                        "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
+                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z.B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Diagnoseschlüssel per TeleTAN hochgeladen werden, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
+                    ]
+                },{
+                    "title" : "Wo kann ich Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind?",
+                    "textblock": [
+                        "Im Open-Source-Projekt für die Corona-Warn-App und auf der zugehörigen Website coronawarn.app geht es um die Open-Source-Entwicklung der App. Die Website und die GitHub-Repositories sind nur für Themen im Zusammenhang mit der App-Entwicklung gedacht, nicht für Informationen zu anderen Aspekten, wie rechtliche Fragen, Informationen für die nutzenden Personen usw. Fragen diesbezüglich könnt Ihr über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen."
+                    ]
+                },{
+                    "title" : "Können die übermittelten Informationen zu mir und meinen früheren Aktivitäten zurückverfolgt werden?",
+                    "textblock": [
+                        "Das Smartphone erzeugt so genannte Temporary Exposure Keys. Diese werden zufällig und ausschließlich lokal auf dem Gerät generiert. Es ist kryptografisch nicht möglich, zwei zufällig generierte Diagnoseschlüssel zu einem Gerät zurückzuverfolgen, ohne weitere Informationen zu haben oder Zugang zum sicheren Speicher des Geräts zu erhalten. Darüber hinaus werden nur Schlüssel der letzten 14 Tage gemeldet. Ein darüberhinausgehendes Weiterverfolgen ist nicht möglich oder vorgesehen."
+                    ]
+                },{
+                    "title" : "Werden Bewegungs- oder Begegnungsprofile zentral gespeichert?",
+                    "textblock": [
+                        "Weder Dein Standort noch die Informationen über eine mögliche Begegnung zu einer infizierten Person werden zentral gespeichert. Das System weiß zu jedem Zeitpunkt nur, dass ein Diagnoseschlüssel zu einer positiv getesteten Person gehört. Das System weiß weder, wen diese Person getroffen hat, noch wo oder wann es zu der Begegnung kam. Damit die App erkennen kann, dass eine Begegnung stattgefunden hat, ist keine Identifizierung notwendig. Eine Identifizierung ist nur erforderlich, um die Ergebnisse abzurufen und den Diagnoseschlüssel zu übermitteln. Die App verbindet sich im Rahmen dieses Projekts nicht mit irgendwelchen Profilen in sozialen Medien und wird dies auch in Zukunft nicht tun."
+                    ]
+                },{
+                    "title" : "Gibt es eine zentrale Stelle, die die Kontrolle über alle Begegnungsereignisse hat?",
+                    "textblock": [
+                        "Die App selbst speichert keinerlei Informationen über einzelne potenzielle Begegnungsereignisse. Das Exposure Notification Framework, auf dem die App aufbaut, speichert in sicherer Form die sichtbaren Rolling Proximity Identifiers (RPIs) auf den Smartphones ab, die sich innerhalb eines bestimmten Zeitraums in nächster Nähe aufgehalten haben. Selbst wenn die zentrale Infrastruktur kompromittiert wird, kann diese Information nicht zu einem Smartphone zurückverfolgt werden, wenn nicht ohnehin schon Zugriff auf das Smartphone besteht. Selbst dann kann die App selbst nicht auf die RPIs zugreifen. Auf die Diagnoseschlüssel kann nur mit Zustimmung der nutzenden Person zugegriffen werden, und auch dies ist nur für einen kurzen Zeitraum möglich. Vor der Verarbeitung der Daten werden die Informationen entfernt, die die Diagnoseschlüssel und die Verbindungsmetadaten miteinander verknüpfen."
                     ]
                 }
             ]
@@ -53,65 +86,99 @@
             "id": "open-source",
             "accordion": [
                 {
-                    "title": "Warum verfolgen wir einen Open-Source-Ansatz? ",
+                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
                     "textblock": [
-                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der Bevölkerung abhängt.",
-                        "Durch den gewählten Open-Source-Ansatz möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Durch Open Source haben die Öffentlichkeit und die Entwicklungscommunity darüber hinaus die Möglichkeit, aktiv zum Erfolg der Lösung beizutragen, z.B. in Form von Reviews und Pull Requests."
+                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
+                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z.B. in Form von Reviews und Pull Requests."
                     ]
                 },
                 {
-                    "title": "Wie können Menschen zum Projekt beitragen? ",
+                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
                     "textblock": [
-                        "Das Open-Source-Projekt verwendet GitHub, einen in diesem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, bspw. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
+                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
+                    ]
+                },
+                {
+                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
+                    "textblock": [
+                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z.B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
                         "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
                     ]
                 },
                 {
-                    "title": "Warum GitHub und nicht eine andere Plattform? ",
+                    "title": "Warum GitHub und nicht eine andere Plattform?",
                     "textblock": [
-                        "Wir sind der Auffassung, dass GitHub eine stark etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen Mitgliedern und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
-                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit den Code einzusehen."
+                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
+                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
                     ]
                 },{
-                    "title": "Welcher Code of Conduct ist maßgebend?",
+                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
                     "textblock": [
-                        "Nur in gegenseitigem Respekt ist eine erfolgreiche Entwicklung in einer produktiven, kollaborierenden Community möglich. Alle Mitglieder der Projektcommunity befolgen deshalb einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
-                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und Konsequenzen wie Verwarnung oder Ausschluss nach sich ziehen."
+                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
+                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
                     ]
                 }
             ]
         },{
-            "title": "Applikation",
+            "title": "Smartphone-App",
             "id": "application",
             "accordion": [
                 {
-                    "title": "Wird die Smartphone-Batterie nicht schnell leerlaufen mit der App im Hintergrund?",
+                    "title": "Welche personenbezogenen Daten werden in der App gespeichert?",
                     "textblock": [
-                        "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Durch die Einbeziehung der Exposure Notification API von Apple und Google kann die App die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy) verwendet werden."
+                        "Wie in der Datenschutz-Grundverordnung (DSGVO) vorgeschrieben, ist die Datenminimierung das oberste Gebot für die Umsetzung der App. Die nutzenden Personen können und müssen in Verbindung mit der App ausschließlich die folgenden Angaben machen:",
+                        "<ul><li>Zustimmung zur Nutzung des Exposure Notification Frameworks</li><li>Eingabe von TANs zur Verifizierung von Testergebnissen</li><li>Zustimmung zum Upload der täglichen Diagnoseschlüssel</li></ul>",
+                        "Apps können über das Exposure Notification Framework keine Daten zum Standort sammeln. Die Diagnoseschlüssel werden nur für den epidemiologisch relevanten Zeitraum von 14 Tagen zentral gespeichert und nach den 14 Tagen automatisch entfernt."
 					]
                 },
                 {
-                    "title": "Wird die App auch auf alternativen Plattformen zu App Store und Google Play Store zur Verfügung gestellt?",
+                    "title": "Wird mein Smartphone-Akku nicht schnell leerlaufen mit der App im Hintergrund?",
                     "textblock": [
-                        "Wir beabsichtigen nicht, die App in anderen App Stores außer denen von Google oder Apple zur Verfügung zu stellen. Die App wird die Apple und Google Exposure Notification APIs verwenden. Die Community kann sich gerne einbringen und sie für andere APIs übernehmen."
+                        "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy) verwenden."
                     ]
                 },
                 {
-                    "title": "Wie wird sich der Stand in GitHub auf die App in den App Stores übertragen?",
+                    "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
+                    "textblock": [
+                        "iPhone: Die App läuft auf iOS-Smartphones ab dem iPhone 6s. Die Version des Betriebssystems muss  iOS 13.5 oder höher sein, da mit dieser Version die Exposure Notification API eingeführt wurde.",
+                        "Android: Die App läuft auf Smartphones ab Android 6 ('Marshmallow'). Die Exposure Notification API wurde hier bereits über die Google-Play-Dienste eingespielt.",
+                        "Weitere Fragen zu den Betriebssystemen können nur die Hersteller selbst beantworten."
+                    ]
+                },
+                {
+                    "title": "Wird die App auch auf alternativen Plattformen zu App Store und Google Play Store zur Verfügung gestellt? ",
+                    "textblock": [
+                        "Wir beabsichtigen nicht, die App in anderen App Stores außer denen von Google oder Apple zur Verfügung zu stellen. Die App wird die Apple und Google Exposure Notification APIs verwenden. Die Community kann sich gerne einbringen und die App für andere APIs übernehmen."
+                    ]
+                },
+                {
+                    "title": "Wie wird der Stand in GitHub auf die App in den App Stores übertragen?",
                     "textblock": [
                         "Die App wird über Standardwerkzeuge (z.B. Xcode, Android Studio) erstellt und dann in die jeweiligen App Stores hochgeladen.",
                         "Das Thema, ob der Code in GitHub wirklich mit der App in den jeweiligen App Stores übereinstimmt ('Reproducable Builds'), haben wir auf dem Schirm und werden entsprechende Informationen veröffentlichen, sobald sie verfügbar sind. Details zum Fortschritt findest Du im entsprechenden <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
                     ]
                 },
                 {
-                    "title": "Gibt es oder wird es eine TestFlight/Beta-Version geben?",
+                    "title": "Wie erfolgt die Information über ein Infektionsrisiko?",
                     "textblock": [
-                        "Vorläufige Versionen der App (unabhängig vom Betriebssystem) stehen derzeit nur dem Projektteam der Corona-Warn-App und unseren Partnern (Bundesregierung, Robert-Koch-Institut, BSI etc.) zur Verfügung."
+                        "So funktioniert die App:",
+                        "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden.</li><li>Falls Du positiv getestet wurdest, kannst Du Deine Diagnoseschlüssel auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass ein Begegnung mit einer Person bestand, die positiv auf Corona getestet wurde.</li><li>Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel wie in Schritt 1 beschrieben notwendig. Die Information über eine Begegnung aus Schritt 3 benötigt keine Bluetooth-Verbindung.</li></ol>",
+                        "Das <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a> beschreibt den technischen Ablauf im Detail."
+                    ]
+                },{
+                    "title" : "Wie erfolgt die Kommunikation zwischen Server und Smartphone?",
+                    "textblock": [
+                        "Die Details dazu findest Du (in englischer Sprache) in unserem <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a>."
                     ]
                 },{
                     "title" : "Wer wird das Backend der App betreiben?",
                     "textblock": [
-                        "Die Deutsche Telekom wird das Backend der App auf eine sichere, skalierbare und stabile Weise betreiben."
+                        "Das Backend der App wird von der Deutschen Telekom betrieben. Dabei kommt die <a href='https://open-telekom-cloud.com/' target='_blank' rel='noopener noreferrer'>Open Telekom Cloud (OTC)</a> zum Einsatz"
+                    ]
+                },{
+                    "title" : "Gibt es oder wird es eine TestFlight/Beta-Version geben?",
+                    "textblock": [
+                        "Vorläufige Versionen der App (unabhängig vom Betriebssystem) stehen derzeit nur dem Projektteam der Corona-Warn-App und unseren Partnern zur Verfügung."
                     ]
                 }
             ]
@@ -120,23 +187,30 @@
             "title": "Technologie",
             "accordion": [
                 {
-                    "title": "Ist ein datenschutzkonformer Umgang mit den Nutzungsdaten möglich?",
+                    "title": "Ist ein datenschutzkonformer Umgang mit den Nutzerdaten möglich?",
                     "textblock": [
                         "Die dezentrale Datenspeicherung auf den Geräten garantiert Datenschutz.",
-						"Wir arbeiten sehr eng mit Fachleuten aus der Datenschutzcommunity zusammen und stimmen uns während des Entwicklungsprozesses eng miteinander ab. Zudem arbeiten wir an einem dedizierten Dokument zur Datensicherheit, das schon bald publiziert werden soll.",
+						"Wir arbeiten sehr eng mit Experten aus der Datenschutz-Community zusammen und stimmen uns während des Entwicklungsprozesses eng miteinander ab. Zudem arbeiten wir an einem dedizierten Dokument zur Datensicherheit, das schon bald publiziert werden soll.",
 						"Die Quelloffenheit des Codes sorgt zudem dafür, dass die Community die Funktionsweise der App überprüfen und Anmerkungen abgeben kann."
+                    ]
+                },
+                {
+                    "title": "Kann ich durch Abhören des Netzwerkverkehrs als Corona-positiv identifiziert werden? ",
+                    "textblock": [
+                        "Dies wird durch verschiedene technische Maßnahmen verhindert, z.B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und Erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar macht. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden.",
+						"Darüber hinaus stellen aktuelle etablierte Verschlüsselungsmechanismen wie HTTPS sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können."
                     ]
                 },
                 {
                     "title": "Was wird genau gespeichert und wer kann auf die über Bluetooth gesammelten Daten zugreifen?",
                     "textblock": [
-                        "Über Bluetooth werden konstant wechselnde IDs versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie Geolokations- oder sonstigen ortsbezogenen Daten.",
-						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die IDs in einem gesichertem Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
-						"Sobald eine Person positiv getestet wurde, wird sie gebeten, ihre Temporary Exposure Keys der letzten 14 Tage zu teilen. Der Zugriff auf diese Schlüssel erfolgt über die Exposure Notification API, allerdings nur dann, wenn die Person aktiv ihre Zustimmung gegeben hat."
+                        "Über Bluetooth werden konstant wechselnde Zufallskennungen versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
+						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufallskennungen in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
+						"Sobald eine Person positiv getestet wurde, wird sie gebeten, seine Temporary Exposure Keys der letzten 14 Tage zu teilen. Der Zugriff auf diese Schlüssel erfolgt über die Exposure Notification API, allerdings nur dann, wenn die nutzende Person aktiv ihre Zustimmung gegeben hat."
                     ]
                 },
                 {
-                    "title": "Ist das Offenlegen des Quellcodes mit diesem Open-Source-Ansatz keine Gefahr für die Cyber-Security?",
+                    "title": "Ist das Offenlegen des Quellcodes mit diesem Open-Source-Ansatz keine Gefahr für die Cybersecurity?",
                     "textblock": [
                         "Im Gegenteil: Die Open-Source-Community erhöht die Sicherheit der Software, da der Quellcode offen liegt und alle interessierten Personen den Code herunterladen und Zeile für Zeile überprüfen können.",
 						"Wir glauben daran, dass Sicherheit nicht durch Intransparenz gewährleistet wird. Deshalb verfolgen wir einen Open-Source-Ansatz."

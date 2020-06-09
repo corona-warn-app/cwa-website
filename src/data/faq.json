@@ -10,41 +10,73 @@
             "accordion": [
                 {
                     "active": true,
-                    "title": "When will the app be finished?",
+                    "title": "Do I have to use this app?",
                     "textblock": [
-                      "We are doing all we can to finish development of the app. As announced by <a href='https://www.linkedin.com/pulse/corona-warn-app-wichtige-meilensteine-der-entwicklung-juergen-mueller/' target='_blank' rel='noopener noreferrer'>Juergen Mueller in his blog post</a>, it will be available via the respective app stores mid of June. Moreover, you can track the progress of development in the respective code repositories."  
+                      "No. The app has two functions: It enables you to retrieve test results electronically, and it helps to identify possible exposures you have had to people diagnosed with COVID-19. You are free to decide whether to retrieve your test results, and whether you want to submit your results as diagnosis keys if your results are positive. Nothing will happen without your explicit consent.",
+                      "At any point in time, you can deactivate the COVID-19 Exposure Notifications feature either in the app itself or in your device's settings, and of course you can always uninstall the app completely."  
                     ]
                 },{
-                    "title" : "Can I find information, ask questions or discuss topics here regarding the Corona-Warn-App that are not development related?",
+                    "title": "When will the app be ready?",
                     "textblock": [
-                        "The Corona-Warn-App open-source project and its website coronawarn.app involve the open-source development of the apps. Neither this website nor the GitHub repositories are the right place for discussion or information on topics unrelated to app development - such as legal matters, enduser guidance, and so on. We kindly ask you to respect this."
+                      "We are doing all we can to finish the app. As announced in a <a href='https://www.linkedin.com/pulse/corona-warn-app-wichtige-meilensteine-der-entwicklung-juergen-mueller/' target='_blank' rel='noopener noreferrer'>blog post by Jürgen Müller</a>, member of the SAP Executive Board, the app will be available in mid-June to download from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."  
                     ]
                 },{
-                    "title" : "What concrete goals is the German government pursuing with the development of a contact tracing app?",
+                    "title" : "Where can I get the app?",
                     "textblock": [
-                        "The Corona-Warn-App pursues the main goal of informing people who have had contact with a person infected with Corona as soon as possible about this contact. From an epidemiological point of view, the processes of contact tracing can be accelerated by the Corona-Warn-App as it supports informing people at risk faster.",
-                        "As a result, possible infection chains can be detected and interrupted earlier. This can also help to relax existing restrictions in order to return social life to normal.",
-                        "In addition to the decisive hygiene and behavioural rules to prevent an infection and many other measures, such as the expansion of tests or better contact tracking by health authorities, the Corona-Warn-App is therefore a further element in the fight against the Corona pandemic."
+                        "As soon as the app is available, you will be a download it from the Apple App Store or Google Play Store."
                     ]
                 },{
-                    "title" : "In the end, what were the decisive reasons for favouring the decentralised approach to contact tracing?",
+                    "title" : "What are the specific objectives of the Federal Government with the development of an exposure (contact) tracing app?",
                     "textblock": [
-                        "In April 2020, a scientific debate had developed, which was conducted in public under the keyword \"centralized vs. decentralized storage\". In addition to arguments that were comprehensible in terms of content, a partly ideological debate on centralised storage developed, which had the potential to jeopardise confidence in this technological approach.",
-                        "A loss of confidence in the general public would have endangered all efforts and endeavours to be able to detect chains of infection earlier and interrupt them more quickly with digital support. For this reason, the Federal Government took action and adapted the project philosophy in the sense of a decentralized approach."
+                        "The main objective of the Corona-Warn-App is to notify users as quickly as possible if they have been exposed to a person diagnosed with COVID-19. From an epidemiological perspective, exposure tracing processes can be accelerated because the Corona-Warn-App helps to notify people at risk more quickly.",
+                        "This means that potential infection chains can be identified and interrupted earlier. This can also help to relax the existing restrictions in order to normalize social life.",
+                        "In addition to essential hygiene and behavior rules to prevent infection and many other measures, such as increasing the number of tests and improving exposure tracing through public health authorities, the Corona-Warn-App is another element in the fight against the coronavirus pandemic."
                     ]
                 },{
-                    "title" : "Was there a risk and cost/benefit evaluation of the two variants (centralised/decentralised) and if so, can this evaluation be published?",
+                    "title" : "What were the reasons for favoring the decentralized approach to exposure tracing?",
                     "textblock": [
-                        "A scientifically sound evaluation is not available due to the complexity of this topic, also due to the lack of practical experience with the underlying technologies and for the reasons mentioned above.",
+                        "In April 2020, a scientific debate emerged on the key concept \"centralized versus decentralized data storage\", which was conducted under the public eye. In addition to plausible arguments in terms of content, a partly ideological debate on centralized storage developed, which had the potential to jeopardize confidence in this technological approach.",
+                        "A loss of confidence among the public would have endangered all the efforts of identifying and breaking infection chains early using digital support. For this reason, the Federal Government took action and adapted a decentralized approach as the project philosophy."
+                    ]
+                },{
+                    "title" : "Was a risk and cost/benefit evaluation of the two variants (centralized/decentralized) carried out, and if so, can this evaluation be viewed?",
+                    "textblock": [
+                        "A scientifically-reliable evaluation is not available due to the complexity of this topic, the lack of practical experience with the underlying technologies, and for the reasons mentioned above.",
                         "Both approaches have advantages and disadvantages in terms of usability and have been intensively discussed with expert personnel from university and non-university research institutions, the Robert Koch Institute, the Federal Office for Information Security (BSI) and the Federal Commissioner for Data Protection and Freedom of Information (BfDI).",
                         "The current development of the Corona-Warn-App is also being closely accompanied by scientific research."
                     ]
                 },{
-                    "title" : "What specific constraints has the German government imposed on the contractors SAP and Deutsche Telekom for the development?",
+                    "title" : "What specific constraints has the German government imposed on the contractors, SAP and Deutsche Telekom, for the development?",
                     "textblock": [
-                        "Besides the decentralized storage of contacts using the interfaces provided by Google and Apple, the discussions also focused on the publication of the developed software components under an open source license.",
-                        "It is also planned to offer the application through the official Google and Apple stores. Since this is an agile development process, the requirements are constantly being refined.",
-                        "A further requirement for the development process was the early and intensive involvement of and coordination with BfDI and BSI."
+                        "Besides the decentralized storage of encounters using the interfaces provided by Google and Apple, the discussions also focused on the publication of the developed software components under an open source license.",
+                        "The app will be made available in the official Google and Apple app stores. As this is an agile development process, requirements are constantly evolving.",
+                        "An additional requirement for the development process was the early and intensive involvement of the BfDI and the BSI, as well as close coordination with these bodies."
+                    ]
+                },{
+                    "title" : "How do you guarantee that I remain anonymous when using the Corona-Warn-App?",
+                    "textblock": [
+                        "Devices in close proximity to yours collect “rolling proximity identifiers” (RPI). These are IDs that guarantee data privacy and change constantly in short intervals, thereby preventing devices from being tracked. Apart from these IDs, other devices in close proximity cannot retrieve any other information from your device. These IDs can only be linked to pseudonymous diagnosis keys, which are needed to perform risk identification. A connection with user IDs or your device's International Mobile Equipment Identity (IMEI) is not possible.",
+                        "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via TeleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed."
+                    ]
+                },{
+                    "title" : "Where can I find information, ask questions, or discuss topics regarding the Corona-Warn-App that are not development-related?",
+                    "textblock": [
+                        "Information contained in the open source project for the Corona-Warn-App and on its website coronawarn.app is about the open source development of the app. The website and the GitHub repositories are not the right place for discussion or information on topics unrelated to app development – such as legal matters, end-user guidance, and so on. For questions related to these topics, please use the <a href='https://www.bundesregierung.de/breg-en/service/contact' target='_blank' rel='noopener noreferrer'>contact form of the Federal Government</a>."
+                    ]
+                },{
+                    "title" : "Can transmitted information be linked back to me and my past activities?",
+                    "textblock": [
+                        "Your device generates temporary exposure keys. These are generated randomly and only on your device. It is cryptographically not possible to trace two randomly-generated diagnosis keys back to a device without having further information or gaining access to the device's secure storage. In addition, only keys from the last 14 days are reported. It is not possible or planned to track any other data."
+                    ]
+                },{
+                    "title" : "Is movement or encounter data saved centrally?",
+                    "textblock": [
+                        "Your location and data about your possible exposure to people diagnosed with COVID-19 are never stored centrally. At any given point, the system is only aware that a diagnosis key belongs to a person diagnosed with COVID-19. The system does not know who this person met, nor when or where the encounter took place. No identification is required for the app to identify that an encounter took place. You only have to identify yourself to retrieve test results and to submit your diagnosis key. Linking the app to any social media profiles is not, and will not in future, be implemented in this project."
+                    ]
+                },{
+                    "title" : "Is there a central entity in control of all exposure events?",
+                    "textblock": [
+                        "The app itself does not store any information about individual potential exposure events. The Exposure Notification Framework, on which the app is based, stores the visible Rolling Proximity Identifiers (RPIs) on the devices that are located in close proximity and within a defined time period. Even if the central server infrastructure is compromised, this information cannot be linked back to a device without having access to it in the first place. Even then, the app itself cannot access the RPIs. Diagnosis keys can only be accessed with user consent and then only for a short period of time. Information that links diagnosis keys and connection metadata is removed before this data is processed."
                     ]
                 }
             ]
@@ -55,14 +87,20 @@
                 {
                     "title": "Why are we following an open-source approach?",
                     "textblock": [
-                        "We believe that the success of the solution depends directly on user acceptance and trust.",
-                        "Through this open-source approach, we want to create the transparency that is needed to create a strong foundation of trust. Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the solution’s success, for example, through reviews and pull requests."
+                        "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
+                        "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
                     ]
                 },
                 {
-                    "title": "How can developers contribute to this project?",
+                    "title": "Can I really see all source code of the project?",
                     "textblock": [
-                        "The open-source project uses GitHub, a globally known online service in this field that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by fixing mistakes in the source code, helping with the documentation, or contributing questions and comments to the project.",
+                        "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
+                    ]
+                },
+                {
+                    "title": "How can the development community contribute to the project? ",
+                    "textblock": [
+                        "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
                         "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
                     ]
                 },
@@ -75,71 +113,106 @@
                 },{
                     "title": "What code of conduct applies?",
                     "textblock": [
-                        "Successful development in a productive, collaborative community is only possible through mutual respect. That's why all the members of the project community pledge to follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>code of conduct</a>.",
-                        "Violations of the code of conduct can be reported to the community managers or directly to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> by any member of the community. Violators may face consequences such as warnings or even exclusion from participating in the project."
+                        "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
+                        "Any member can report violations of the code of conduct to the project managers or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
                     ]
                 }
             ]
         },{
-            "title": "Application",
+            "title": "Device App",
             "id": "application",
             "accordion": [
                 {
-                    "title": "Won't the smartphone battery be drained more quickly with the app running?",
+                    "title": "What personal data is stored in the app?",
                     "textblock": [
-                        "The Corona-Warn-App uses the existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
+                        "As mandated by the General Data Protection Regulation (GDPR), data minimization is a paramount principle in the implementation of the app. The only inputs that users can and have to provide to the app are:",
+                        "<ul><li>Permissions for using the exposure notification framework</li><li>TANs for test result verification</li><li>Consent to upload daily diagnosis keys</li></ul>",
+                        "Location data is not and cannot be collected by apps using the exposure notification framework. Diagnosis keys are only stored centrally for the epidemiologically relevant period of 14 days and removed automatically after that period."
 					]
                 },
                 {
-                    "title": "Will the app be made available anywhere else apart from the Apple App Store or Google Play Store?",
+                    "title": "Will the device battery drain more quickly with the app running in the background?",
                     "textblock": [
-                        "We have no plans to make the app available outside of the Apple App Store or Google Play Store. The Corona-Warn-App will use the Exposure Notification APIs from Apple and Google and the community is of course invited to contribute and integrate additional APIs."
-                    ]
+                        "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
+					]
+                },
+                {
+                    "title": "Will the app be made available on platforms other than Apple App Store and Google Play Store?",
+                    "textblock": [
+                        "We do not intend to make the app available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
+					]
+                },
+                {
+                    "title": "What are the minimum operating system requirements for my phone?",
+                    "textblock": [
+                        "iPhone: The app will run on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your iPhone’s operating system needs to be on iOS 13.5 or higher.",
+                        "Android: The app will run on phones with Android 6 ('Marshmallow') or higher. The Exposure Notification API has been installed on these phones automatically via the Google Play services.",
+                        "For other operating system-related questions, please contact Apple or Google."
+					]
                 },
                 {
                     "title": "How will the development status in GitHub be uploaded to the app stores?",
                     "textblock": [
-                        "The app will be created using standard tools (such as Xcode and Android Studio) and then be uploaded to the respective app stores.",
-                        "We are aware of the topic how you can verify that the source code in GitHub actually matches that of the app in the respective app stores. You can find details on the topic's progress in this <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>issue</a> in GitHub."
+                        "The app is developed using standard tools (such as Xcode and Android Studio) and uploaded to Apple App Store and Google Play Store.",
+                        "We will be able to publish information as soon as it is available on the issue as to whether the code in GitHub is really the same as that in the app in the respective app stores ('reproducible builds'). You can find further information on the progress of this issue in the respective <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>GitHub issue</a>."
                     ]
                 },
                 {
-                    "title": "Is there or will there be a TestFlight/beta version?",
+                    "title": "How do you get information about a risk of infection?",
                     "textblock": [
-                        "Preliminary versions of the app (independent of the operating system) are currently only available to the Corona-Warn-App project team and our partners (German Federal Government, Robert Koch-Institute, BSI etc.)."
+                        "This is how the app works:",
+                        "<ol><li>All devices that have the Corona-Warn-App installed send and receive pseudonymized keys, which are saved locally on your device.</li><li>If you are diagnosed with COVID-19, you can upload your diagnosis keys to the server. At regular intervals, all devices with the app receive these keys from this server and check if they have saved a matching key via Bluetooth.</li><li>If there is a match between a key downloaded from the server and a key saved locally on your device, this means you had an encounter with a person who has been diagnosed with COVID-19.</li><li>A Bluetooth connection is only necessary for sending and receiving pseudonymized keys as described in step 1. Information about an encounter from step 3 does not require a Bluetooth connection.</li></ol>",
+                        "The <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a> describes the technical process in detail."
                     ]
                 },{
-                    "title" : "Who will operate the backend of the app?",
+                    "title" : "How do the server and device communicate with each other?",
                     "textblock": [
-                        "Deutsche Telekom will operate and run the backend for the app in a safe, scalable and stable manner."
+                        "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
+                    ]
+                },{
+                    "title" : "Who will operate the app backend?",
+                    "textblock": [
+                        "The backend of the app is operated by Deutsche Telekom. <a href='https://open-telekom-cloud.com/' target='_blank' rel='noopener noreferrer'>Open Telekom Cloud (OTC)</a> is used here."
+                    ]
+                },{
+                    "title" : "Will there be a beta version of the app?",
+                    "textblock": [
+                        "Beta versions of the app (independent of the operating system) are currently available only to the project team of the Corona-Warn-App and our partners."
                     ]
                 }
             ]
         },{
-            "title": "Technologies",
+            "title": "Technology",
             "id": "technologies",
             "accordion": [
                 {
-                    "title": "Can privacy protection of user data be guaranteed?",
+                    "title": "Can data privacy be guaranteed?",
                     "textblock": [
-                        "The decentralized data storage on the user devices guarantees privacy.",
-                        "We are working closely together with experts from the data privacy community and coordinating with one another throughout the development process. We are also working on a separate document dedicated to data privacy, which will be published soon.",
+                        "Decentralized data storage on user devices guarantees data privacy.",
+                        "We are working very closely together with experts from the data privacy community and coordinating with one another throughout the development process. We are also working on a separate document dedicated to data security, which will be published soon.",
                         "Furthermore, the open-source approach of the source code enables the community to review the functionality of the app and to leave comments."
+                    ]
+                },
+                {
+                    "title": "Can I be identified as COVID-19-positive by network traffic monitoring?",
+                    "textblock": [
+                        "This is prevented by various technical measures, for example, by randomly creating and sending false notifications. These fake notifications cannot be distinguished from valid notifications and create a type of background noise. The transmission of TANs and upload of infection data cannot be distinguished from this background noise. So, even with monitored network traffic, plausible deniability is still possible.",
+                        "Furthermore, state of the art and well-established encryption mechanisms, for example using HTTP over TLS (HTTPS), ensure that messages are also not readable for outside viewers. Metadata is removed before processing user data for the transmission of diagnosis keys. This prevents data from being linked together at database level."
                     ]
                 },
                 {
                     "title": "Which data will be saved und who can access this data through Bluetooth?",
                     "textblock": [
-                        "Bluetooth will be used to send constantly changing IDs and receive IDs from other devices that have installed the app. No personal, geo-location, or other location data will be sent or stored.",
-                        "Through use of the Exposure Notification API from Google and Apple, the IDs will remain in a secure area of the smartphone operating system.  The matching, which determines whether someone has been exposed to an infected person, is performed on the local smartphone. The phone will not send any data for matching.",
-                        "If a user tests positively for infection, they will be asked to share their temporary exposure keys from the last 14 days. The keys can only be accessed by the Exposure Notification API if the user actively approves."
+                        "Bluetooth will be used to send constantly changing random IDs from other devices that have installed the app. No personal, geo-location, or other location data will be sent or stored.",
+                        "Through use of the Exposure Notification API from Google and Apple, the random IDs will remain in a secure area of the device's operating system. The matching, which determines whether someone has been exposed to an infected person, is performed on the local device. The device will not send any data for matching.",
+                        "As soon as a user is diagnosed with COVID-19, they will be asked to share their temporary exposure keys from the last 14 days. These keys can only be accessed by the Exposure Notification API if the user actively gives consent."
                     ]
                 },
                 {
                     "title": "Doesn’t the open-source approach, which involves publishing the source code, put cybersecurity at risk?",
                     "textblock": [
                         "On the contrary: the open-source community increases the level of security of the software, because the source code is open to all and anyone can download it and comb through it line by line.",
-                        "We believe that security is not helped by a lack of transparency. That's why we are following an open-source approach."
+                        "We believe that security is not helped by a lack of transparency. That is why we are taking an open-source approach."
                     ]
                 }
             ]
