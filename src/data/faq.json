@@ -196,8 +196,8 @@
                 {
                     "title": "Can I be identified as COVID-19-positive by network traffic monitoring?",
                     "textblock": [
-                        "This is prevented by various technical measures, for example, by randomly creating and sending false notifications. These fake notifications cannot be distinguished from valid notifications and create a type of background noise. The transmission of TANs and upload of infection data cannot be distinguished from this background noise. So, even with monitored network traffic, plausible deniability is still possible.",
-                        "Furthermore, state of the art and well-established encryption mechanisms, for example using HTTP over TLS (HTTPS), ensure that messages are also not readable for outside viewers. Metadata is removed before processing user data for the transmission of diagnosis keys. This prevents data from being linked together at database level."
+                        "State of the art and well-established encryption mechanisms, for example using HTTP over TLS (HTTPS), ensure that messages are not readable for outside viewers. Metadata is removed before processing user data for the transmission of diagnosis keys. This prevents data from being linked together at database level.",
+                        "Furthermore, various additional technical measures will be introduced shortly, for example, by randomly creating and sending false notifications. These false notifications cannot be distinguished from valid notifications and create a type of background noise. The transmission of TANs and upload of infection data cannot be distinguished from this background noise. So, even with monitored network traffic, plausible deniability is still possible."
                     ]
                 },
                 {
