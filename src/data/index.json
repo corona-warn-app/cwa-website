@@ -49,17 +49,7 @@
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
                 "title": "Check for exposure to SARS-CoV-2 confirmed users",
                 "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification framework derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
-                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md", "external": true},
-                "links": [{
-                        "title": "See details in architecture document",
-                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md",
-                        "external": true
-                },
-                {
-                    "title": "Further information in the terms of use",
-                    "url": "/assets/documents/cwa-eula-en.pdf",
-                    "external": false
-                }]
+                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md", "external": true}
             }
         ]
     },
