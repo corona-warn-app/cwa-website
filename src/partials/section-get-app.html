@@ -1,0 +1,25 @@
+{{#if @root.get-app-enabled}}
+<section class="{{section-class}}">
+  <div class="container contents-normal">
+    {{#if section-cancelable}}<div class="section-container-close"><button class="btn btn_close js-section-close"></button></div>{{/if}}
+    {{#if section-contents}}
+    <div class="row justify-content-center align-items-center">
+      {{#if section-contents.icon-list}}
+      <div class="col col-12 col-md-6 col-lg-auto icon-list icon-list_inline">
+        {{#each section-contents.icon-list}}
+        <a class="icon-list-item" href="{{url}}"{{#if external}} target="_blank"{{/if}}>
+          <img src="{{icon-url}}" alt="{{title}} Icon" />
+        </a>
+        {{/each}}
+      </div>
+      {{/if}}
+      {{#if section-contents.headline}}
+      <div class="col col-12 col-md-6 col-lg-auto text-center text-md-left">
+        {{> headline-component section-contents.headline}}
+      </div>
+      {{/if}}
+    </div>
+    {{/if}}
+  </div>
+</section>
+{{/if}}

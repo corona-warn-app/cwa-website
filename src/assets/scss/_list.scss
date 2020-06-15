@@ -37,6 +37,12 @@
             padding: ($spacer * 1.4) ($spacer * 2.2);
         }
     }
+    &_inline &-item {
+        padding: ($spacer * 1) ($spacer * 0.5);
+        @media (min-width: $screen-lg){
+            padding: ($spacer * 1) ($spacer * 0.75);
+        }
+    }
 }
 
 .card-list {

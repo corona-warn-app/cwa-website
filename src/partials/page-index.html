@@ -19,6 +19,7 @@
     </div>
   </div>
 </section>
+{{> section-get-app section-contents=page-contents.section-join-project.content section-class='section-sticky section_bg-white hidden js-section-sticky' section-cancelable=true}}
 <section class="" {{#if page-contents.section-image-ticker.id}} id="{{page-contents.section-image-ticker.id}}" {{/if}}>
   <div class="container">
     {{#if page-contents.section-image-ticker.headline}}
@@ -157,32 +158,8 @@
     </div>
   </div>
 </section>
-{{#if get-app-enabled}}
-<section class="section-intersect section_bg-white">
-  <div class="container contents-normal">
-    {{#if page-contents.section-join-project.content}}
-    <div class="row justify-content-center align-items-center">
-      {{#if page-contents.section-join-project.content.icon-list}}
-      <div class="col col-12 col-sm-auto icon-list">
-        {{#each page-contents.section-join-project.content.icon-list}}
-        <a class="icon-list-item" href="{{url}}">
-          <img src="{{icon-url}}" alt="{{title}} Icon" />
-        </a>
-        {{/each}}
-      </div>
-      {{/if}}
-      {{#if page-contents.section-join-project.content.headline}}
-      <div class="col col-12 col-sm-auto">
-        {{> headline-component page-contents.section-join-project.content.headline}}
-      </div>
-      {{/if}}
-    </div>
-    {{/if}}
-  </div>
-  {{/if}}
-</section>
-{{/if}}
-{{#unless get-app-enabled}}
+{{> section-get-app section-contents=page-contents.section-join-project.content section-class='section-intersect section_bg-white'}}
+{{#unless @root.get-app-enabled}}
 {{#if page-contents.section-soon-available}}
 <section class="section-intersect section_bg-white">
   <div class="container contents-normal text-center">
@@ -191,3 +168,4 @@
 </section>
 {{/if}}
 {{/unless}}
+{{/if}}
