@@ -57,7 +57,7 @@
                     "title" : "Wie ist gewährleistet, dass ich bei der Nutzung der Corona-Warn-App anonym bleibe?",
                     "textblock": [
                         "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
-                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z.B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Diagnoseschlüssel per TeleTAN hochgeladen werden, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
+                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z. B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Diagnoseschlüssel per TeleTAN hochgeladen werden, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
                     ]
                 },{
                     "title" : "Wo kann ich Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind?",
@@ -89,7 +89,7 @@
                     "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
                     "textblock": [
                         "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
-                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z.B. in Form von Reviews und Pull Requests."
+                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
                     ]
                 },
                 {
@@ -101,7 +101,7 @@
                 {
                     "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
                     "textblock": [
-                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z.B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
+                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
                         "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
                     ]
                 },
@@ -154,7 +154,7 @@
                 {
                     "title": "Wie wird der Stand in GitHub auf die App in den App Stores übertragen?",
                     "textblock": [
-                        "Die App wird über Standardwerkzeuge (z.B. Xcode, Android Studio) erstellt und dann in die jeweiligen App Stores hochgeladen.",
+                        "Die App wird über Standardwerkzeuge (z. B. Xcode, Android Studio) erstellt und dann in die jeweiligen App Stores hochgeladen.",
                         "Das Thema, ob der Code in GitHub wirklich mit der App in den jeweiligen App Stores übereinstimmt ('Reproducable Builds'), haben wir auf dem Schirm und werden entsprechende Informationen veröffentlichen, sobald sie verfügbar sind. Details zum Fortschritt findest Du im entsprechenden <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
                     ]
                 },
@@ -198,7 +198,7 @@
                     "title": "Kann ich durch Abhören des Netzwerkverkehrs als Corona-positiv identifiziert werden? ",
                     "textblock": [
                         "Etablierte Verschlüsselungsmechanismen wie HTTPS stellen sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können.",
-						"Darüber hinaus wird es in Kürze weitere technische Maßnahmen geben, z.B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
+						"Darüber hinaus wird es in Kürze weitere technische Maßnahmen geben, z. B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
                     ]
                 },
                 {
