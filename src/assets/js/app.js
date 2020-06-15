@@ -49,4 +49,3 @@ $(document).ready(function(){
         $(document).on('scroll', autohideSticky);
     }
 });
-
