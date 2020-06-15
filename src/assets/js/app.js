@@ -13,7 +13,6 @@ $(document).ready(function(){
         $(this).parents('.js-menu').first().find('a').removeClass('active');
         $(this).addClass('active');
     });
-    console.log($.slick);
     $('.js-slider').slick({
         dots: true,
         infinite: true,
@@ -29,4 +28,3 @@ $(document).ready(function(){
         }]
     });
 });
-
