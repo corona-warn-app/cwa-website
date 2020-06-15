@@ -90,12 +90,15 @@ section {
                 position: absolute;
                 top: $spacer;
                 left: 0;
-                height: 104%;
+                height: 110%;
                 width: 100%;
                 transform: skewY(2deg);
                 z-index: -1;
                 margin-top: -2%;
             }
+        }
+        &-featured {
+            z-index: 0;
         }
     }
     &-sticky {
