@@ -18,7 +18,7 @@
                 },{
                     "title": "When will the app be ready?",
                     "textblock": [
-                      "We are doing all we can to finish the app. As announced in a <a href='https://www.linkedin.com/pulse/corona-warn-app-wichtige-meilensteine-der-entwicklung-juergen-mueller/' target='_blank' rel='noopener noreferrer'>blog post by Jürgen Müller</a>, member of the SAP Executive Board, the app will be available in mid-June to download from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."  
+                      "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."  
                     ]
                 },{
                     "title" : "Where can I get the app?",
@@ -43,14 +43,15 @@
                     "textblock": [
                         "A scientifically-reliable evaluation is not available due to the complexity of this topic, the lack of practical experience with the underlying technologies, and for the reasons mentioned above.",
                         "Both approaches have advantages and disadvantages in terms of usability and have been intensively discussed with expert personnel from university and non-university research institutions, the Robert Koch Institute, the Federal Office for Information Security (BSI) and the Federal Commissioner for Data Protection and Freedom of Information (BfDI).",
-                        "The current development of the Corona-Warn-App is also being closely accompanied by scientific research."
+                        "The further development of the Corona-Warn-App will also be closely accompanied by scientific research."
                     ]
                 },{
                     "title" : "What specific constraints has the German government imposed on the contractors, SAP and Deutsche Telekom, for the development?",
                     "textblock": [
                         "Besides the decentralized storage of encounters using the interfaces provided by Google and Apple, the discussions also focused on the publication of the developed software components under an open source license.",
-                        "The app will be made available in the official Google and Apple app stores. As this is an agile development process, requirements are constantly evolving.",
-                        "An additional requirement for the development process was the early and intensive involvement of the BfDI and the BSI, as well as close coordination with these bodies."
+                        "The app will be available in the official Google and Apple app stores.",
+                        "An additional requirement for the development process was the early and intensive involvement of the BfDI and the BSI, as well as close coordination with these bodies.",
+			"As this is an agile development process, requirements are constantly evolving."
                     ]
                 },{
                     "title" : "How do you guarantee that I remain anonymous when using the Corona-Warn-App?",
@@ -206,6 +207,13 @@
                         "Bluetooth will be used to send constantly changing random IDs from other devices that have installed the app. No personal, geo-location, or other location data will be sent or stored.",
                         "Through use of the Exposure Notification API from Google and Apple, the random IDs will remain in a secure area of the device's operating system. The matching, which determines whether someone has been exposed to an infected person, is performed on the local device. The device will not send any data for matching.",
                         "As soon as a user is diagnosed with COVID-19, they will be asked to share their temporary exposure keys from the last 14 days. These keys can only be accessed by the Exposure Notification API if the user actively gives consent."
+                    ]
+                },
+		{
+                    "title": "Is Bluetooth really secure? What can I do to prevent attackers from introducing malicious software into my phone?",
+                    "textblock": [
+                        "To increase the security of your device in general, you should always install the latest security updates as well as the latest operating system version for your phone. With this, you make sure that your device fulfills the latest security specifications of the Bluetooth protocol that are available.",
+                        "Especially Android systems should always be on the latest Android version (typically published in the previous month, see <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>). Here you can find detailed information on how to determine the latest Android version for you: <a href='https://support.google.com/android/answer/7680439?hl=en' target='_blank' rel='noopener noreferrer'>Check & update your Android version</a>"
                     ]
                 },
                 {
