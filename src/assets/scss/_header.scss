@@ -19,7 +19,7 @@
         top: 0;
         position: sticky;
         z-index: 2;
-        
+
         @media(min-width: $screen-md){
             z-index: auto;
             position: relative;
@@ -280,6 +280,7 @@
             .nav-link-icon {
                 &.icon_github {
                     position: relative;
+                    margin-right: 10px;
                     &:before {
                         content: "";
                         background-image: url("../img/icons/github_white.svg");
