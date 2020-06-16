@@ -13,7 +13,7 @@ const named = require('vinyl-named');
 const autoprefixer = require('autoprefixer');
 var sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
-
+const webp = require('gulp-webp');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -144,6 +144,8 @@ function javascript() {
 function images() {
   return gulp
     .src('src/assets/img/**/*')
+    .pipe(webp())
+    .pipe(gulp.dest('dist'))
     .pipe(
       $.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })]))
     )
