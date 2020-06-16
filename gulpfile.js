@@ -5,14 +5,11 @@ const yargs = require('yargs');
 const browser = require('browser-sync');
 const gulp = require('gulp');
 const panini = require('panini');
-//const rimraf = require('rimraf');
-//const sherpa = require('style-sherpa');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const webpackStream = require('webpack-stream');
 const webpack2 = require('webpack');
 const named = require('vinyl-named');
-const uncss = require('uncss');
 const autoprefixer = require('autoprefixer');
 
 // Load all Gulp plugins into one variable
@@ -145,7 +142,7 @@ function images() {
   return gulp
     .src('src/assets/img/**/*')
     .pipe(
-      $.if(PRODUCTION, $.imagemin([$.imagemin.jpegtran({ progressive: true })]))
+      $.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })]))
     )
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
