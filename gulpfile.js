@@ -145,7 +145,7 @@ function images() {
   return gulp
     .src('src/assets/img/**/*')
     .pipe(webp())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest(PATHS.dist + '/assets/img'))
     .pipe(
       $.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })]))
     )
