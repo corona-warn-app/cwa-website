@@ -138,6 +138,12 @@
                         "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy)."
                     ]
                 },
+		{
+                    "title": "Muss ich die App immer geöffnet lassen, damit Begegnungen aufgezeichnet werden?",
+                    "textblock": [
+                        "Nein. Solange Du in der App die Risiko-Ermittlung aktiviert hast und Bluetooth eingeschaltet ist, werden Begegnungen aufgezeichnet. Du kannst die App schließen."
+                    ]
+                },
                 {
                     "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
                     "textblock": [
@@ -181,6 +187,11 @@
                     "textblock": [
                         "Es handelt sich hier um eine Besonderheit von Android. Bluetooth-Geräte in Deiner Nähe können nur gefunden werden, wenn auch die Standortermittlung aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation).",
 			 "Die Corona-Warn-App muss in der Lage sein, Geräte in der Nähe zu finden, also muss die Standortermittlung als Voraussetzung aktiviert werden. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden."
+                    ]
+                },{
+                    "title" : "iOS: Funktioniert die Risiko-Ermittlung noch, wenn ich Bluetooth im Kontrollzentrum abschalte, aber in den Systemeinstellungen aktiviert lasse?",
+                    "textblock": [
+                        "Ja. Mit der Option im Kontrollzentrum (siehe <a href='https://support.apple.com/de-de/HT208086' target='_blank' rel='noopener noreferrer'>Bluetooth und WLAN im Kontrollzentrum verwenden</a>) trennst Du lediglich vorübergehend die Verbindung zu aktuell verbundenem Bluetooth-Zubehör. Bluetooth an sich ist in den Systemeinstellungen aber nach wie vor aktiv."
                     ]
                 },{
                     "title" : "Ich bin gehörlos oder schwerhörig, telefonieren ist problematisch für mich. Worauf muss ich bei der Nutzung der App achten?",
