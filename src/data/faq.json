@@ -137,6 +137,12 @@
                         "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
 					]
                 },
+		{
+                    "title": "Will encounters still be logged when I close the app?",
+                    "textblock": [
+                        "Yes. As long as you have activated risk identification in the app and Bluetooth is on, encounters are logged. The app itself doesn't have to be open for this."
+                    			]
+                },
                 {
                     "title": "Will the app be made available on platforms other than Apple App Store and Google Play Store?",
                     "textblock": [
@@ -180,6 +186,11 @@
                     "textblock": [
                         "This is a special case for Android. Bluetooth devices in close proximity can only be detected if Location is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android developer documentation).",
 			 "Corona-Warn-App must be able to detect devices in close proximity to identify the risk, so activating Location is a prerequisite. However: The app will never record your location and will never use GPS."
+                    ]
+                },{
+                    "title" : "iOS: Will risk identification still work if I turn off Bluetooth in my Control Center while keeping it activated in the system settings?",
+                    "textblock": [
+                        "Yes. The option in Control Center (see <a href='https://support.apple.com/en-us/HT208086' target='_blank' rel='noopener noreferrer'>Use Bluetooth and Wi-Fi in Control Center</a>) only disconnects your phone temporarily from any Bluetooth accessories that are currently connected. Bluetooth itself remains activated in the system settings."
                     ]
                 },{
                     "title" : "I'm deaf or hard of hearing, so making phone calls is a problem for me. What do I have to keep in mind when I'm using the app?",
