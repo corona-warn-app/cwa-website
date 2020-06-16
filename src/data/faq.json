@@ -176,9 +176,10 @@
                         "The backend of the app is operated by Deutsche Telekom. <a href='https://open-telekom-cloud.com/' target='_blank' rel='noopener noreferrer'>Open Telekom Cloud (OTC)</a> is used here."
                     ]
                 },{
-                    "title" : "Will there be a beta version of the app?",
+                    "title" : "Android: When activating risk identification or Bluetooth I'm asked to activate my location. Do I have to do this?",
                     "textblock": [
-                        "Beta versions of the app (independent of the operating system) are currently available only to the project team of the Corona-Warn-App and our partners."
+                        "This is a special case for Android. Bluetooth devices in close proximity can only be detected if Location is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android developer documentation).,
+			 "Corona-Warn-App must be able to detect devices in close proximity to identify the risk, so activating Location is a prerequisite. However: The app will never record your location and will never use GPS!"
                     ]
                 }
             ]
