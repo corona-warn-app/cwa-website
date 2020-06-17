@@ -21,7 +21,7 @@ const $ = plugins();
 // Check for --develop or --dev flag
 var PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
 
-// Load settings from settings.yml
+// Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
 
 function loadConfig() {
