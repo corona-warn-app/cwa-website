@@ -32,14 +32,14 @@ You need [Node.js](https://nodejs.org/en/), [NPM](https://www.npmjs.com/) and [G
 Clone the repository and ensure to have all requirements installed. To build the website, switch to the ```cwa-website``` base directory and execute the commands
 
 ```bash
-  npm install
-  gulp build
+npm install
+gulp build
 ```
 
-After a successful build, you'll have a new folder ```public``` in the repository's base directory. It contains the generated files for the complete website. To test the generated content, simply use a local web server such as http-server by executing the command 
+After a successful build, you'll have a new folder ```public``` in the repository's base directory. It contains the generated files for the complete website. To test the generated content, simply use a local web server such as http-server by executing the command
 
 ```bash
-  http-server
+http-server
 ```
 It will automatically use ```public``` as base directory, go to ```localhost:8080``` to view the website.
 
