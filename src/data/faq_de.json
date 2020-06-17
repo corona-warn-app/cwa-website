@@ -28,6 +28,14 @@
                     ]
                 },{
                     "active": true,
+                    "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortermittlung. Muss ich das aktivieren?",
+                    "anchor": "android_location",
+                    "textblock": [
+                        "Es handelt sich hier um eine Besonderheit von Android. Bluetooth-Geräte in Deiner Nähe können nur gefunden werden, wenn auch die Standortermittlung aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation).",
+			            "Die Corona-Warn-App muss in der Lage sein, Geräte in der Nähe zu finden, also muss die Standortermittlung als Voraussetzung aktiviert werden. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden."
+                    ]
+                },{
+                    "active": true,
                     "title" : "Warum ist die App nicht in internationalen App Stores (außer Deutschland) verfügbar?",
                     "anchor": "international",
                     "textblock": [
@@ -257,13 +265,6 @@
                     "anchor": "backend_ops",
                     "textblock": [
                         "Das Backend der App wird von der Deutschen Telekom betrieben. Dabei kommt die <a href='https://open-telekom-cloud.com/' target='_blank' rel='noopener noreferrer'>Open Telekom Cloud (OTC)</a> zum Einsatz."
-                    ]
-                },{
-                    "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortermittlung. Muss ich das aktivieren?",
-                    "anchor": "android_location",
-                    "textblock": [
-                        "Es handelt sich hier um eine Besonderheit von Android. Bluetooth-Geräte in Deiner Nähe können nur gefunden werden, wenn auch die Standortermittlung aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation).",
-			 "Die Corona-Warn-App muss in der Lage sein, Geräte in der Nähe zu finden, also muss die Standortermittlung als Voraussetzung aktiviert werden. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden."
                     ]
                 },{
                     "title" : "iOS: Funktioniert die Risiko-Ermittlung noch, wenn ich Bluetooth im Kontrollzentrum abschalte, aber in den Systemeinstellungen aktiviert lasse?",
