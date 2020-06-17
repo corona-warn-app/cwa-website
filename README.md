@@ -44,7 +44,7 @@ To test the generated content, simply use a local web server such as http-server
 npm start
 ```
 
-It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8080` to view the website.
+It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
 ### Updating coronawarn.app
 
