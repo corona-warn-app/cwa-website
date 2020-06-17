@@ -8,6 +8,12 @@ $(document).ready(function(){
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
     });
+
+    if (document.querySelector(".page-faq")) {
+        const { hash } = window.location;
+        hash && $(hash).parent() && $(hash).parent().addClass("active");
+    }
+
     $('.js-menu .js-scroll-navigate a').on('click tap', function(){
         $(this).parents('.js-menu').first().removeClass('active');
         $(this).parents('.js-menu').first().find('a').removeClass('active');
