@@ -33,7 +33,7 @@
                     "textblock": [
                         "Die Corona-Warn-App fragt Deinen Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Deiner Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Deinem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch deinen Standort erfassen!",
 			"Da die Corona-Warn-App per Bluetooth Geräte in Deiner Nähe erkennen muss, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden. Du kannst das gerne selbst folgendermaßen nachprüfen:",
-			    "<ol><li>Öffne die Einstellungen Deines Smartphones (nicht die Einstellungen in der App!)</li><li>Wähle 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Schau Dir die Liste der Apps an, die auf Deinen Standort zugreifen können, wenn Du es zulässt. Du siehst: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
+			    "<ol><li>Öffne die Einstellungen Deines Smartphones (nicht die Einstellungen in der App!).</li><li>Wähle 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Schau Dir die Liste der Apps an, die auf Deinen Standort zugreifen können, wenn Du es zulässt. Du siehst: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
 			 "An dieser Stelle könntest Du anderen Apps die Berechtigung für den Standortzugriff erteilen oder entziehen, aber da die Corona-Warn-App diese Berechtigung nicht braucht, ist sie auch nicht aufgelistet.",
 			 "Hinweis: Wie oben beschrieben, muss die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort' allerdings aktiviert sein, da sonst der Austausch der verschlüsselten Zufallscodes zur Risiko-Ermittlung nicht funktioniert."
                     ]
@@ -68,7 +68,7 @@
                     "title": "Muss ich diese App verwenden?",
                     "anchor": "have_to_use",
                     "textblock": [
-                      "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Du kannst selbst entscheiden, ob Du die Testergebnisse abrufst und ob Du sie bei einem positiven Befund als Diagnoseschlüssel übermittelst – nichts geschieht ohne Deine Zustimmung." ,
+                      "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Du kannst selbst entscheiden, ob Du die Testergebnisse abrufst und ob Du sie bei einem positiven Befund als Diagnoseschlüssel ('Positivkennung') übermittelst – nichts geschieht ohne Deine Zustimmung." ,
                       "Außerdem kannst Du sowohl in der App selbst als auch in den Einstellungen Deines Smartphones die Nutzung der COVID-19-Kontaktfunktion deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren."
                     ]
                 },
@@ -119,8 +119,8 @@
                     "title" : "Wie ist gewährleistet, dass ich bei der Nutzung der Corona-Warn-App anonym bleibe?",
                     "anchor": "anonymous",
                     "textblock": [
-                        "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
-                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z. B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Diagnoseschlüssel per TeleTAN hochgeladen werden, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
+                        "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln ('Positivkennungen') verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
+                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z. B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Positivkennung per TeleTAN hochgeladen wird, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
                     ]
                 },{
                     "title" : "Wo kann ich Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind?",
@@ -132,19 +132,19 @@
                     "title" : "Können die übermittelten Informationen zu mir und meinen früheren Aktivitäten zurückverfolgt werden?",
                     "anchor": "traceback",
                     "textblock": [
-                        "Das Smartphone erzeugt so genannte Temporary Exposure Keys. Diese werden zufällig und ausschließlich lokal auf dem Gerät generiert. Es ist kryptografisch nicht möglich, zwei zufällig generierte Diagnoseschlüssel zu einem Gerät zurückzuverfolgen, ohne weitere Informationen zu haben oder Zugang zum sicheren Speicher des Geräts zu erhalten. Darüber hinaus werden nur Schlüssel der letzten 14 Tage gemeldet. Ein darüberhinausgehendes Weiterverfolgen ist nicht möglich oder vorgesehen."
+                        "Das Smartphone erzeugt so genannte Temporary Exposure Keys. Diese werden zufällig und ausschließlich lokal auf dem Gerät generiert. Es ist kryptografisch nicht möglich, zwei zufällig generierte Diagnoseschlüssel ('Positivkennungen') zu einem Gerät zurückzuverfolgen, ohne weitere Informationen zu haben oder Zugang zum sicheren Speicher des Geräts zu erhalten. Darüber hinaus werden nur Schlüssel der letzten 14 Tage gemeldet. Ein darüberhinausgehendes Weiterverfolgen ist nicht möglich oder vorgesehen."
                     ]
                 },{
                     "title" : "Werden Bewegungs- oder Begegnungsprofile zentral gespeichert?",
                     "anchor": "central_storage",
                     "textblock": [
-                        "Weder Dein Standort noch die Informationen über eine mögliche Begegnung zu einer infizierten Person werden zentral gespeichert. Das System weiß zu jedem Zeitpunkt nur, dass ein Diagnoseschlüssel zu einer positiv getesteten Person gehört. Das System weiß weder, wen diese Person getroffen hat, noch wo oder wann es zu der Begegnung kam. Damit die App erkennen kann, dass eine Begegnung stattgefunden hat, ist keine Identifizierung notwendig. Eine Identifizierung ist nur erforderlich, um die Ergebnisse abzurufen und den Diagnoseschlüssel zu übermitteln. Die App verbindet sich im Rahmen dieses Projekts nicht mit irgendwelchen Profilen in sozialen Medien und wird dies auch in Zukunft nicht tun."
+                        "Weder Dein Standort noch die Informationen über eine mögliche Begegnung zu einer infizierten Person werden zentral gespeichert. Das System weiß zu jedem Zeitpunkt nur, dass ein Diagnoseschlüssel ('Positivkennung') zu einer positiv getesteten Person gehört. Das System weiß weder, wen diese Person getroffen hat, noch wo oder wann es zu der Begegnung kam. Damit die App erkennen kann, dass eine Begegnung stattgefunden hat, ist keine Identifizierung notwendig. Eine Identifizierung ist nur erforderlich, um die Ergebnisse abzurufen und die Positivkennung zu übermitteln. Die App verbindet sich im Rahmen dieses Projekts nicht mit irgendwelchen Profilen in sozialen Medien und wird dies auch in Zukunft nicht tun."
                     ]
                 },{
                     "title" : "Gibt es eine zentrale Stelle, die die Kontrolle über alle Begegnungsereignisse hat?",
                     "anchor": "central_entity",
                     "textblock": [
-                        "Die App selbst speichert keinerlei Informationen über einzelne potenzielle Begegnungsereignisse. Das Exposure Notification Framework, auf dem die App aufbaut, speichert in sicherer Form die sichtbaren Rolling Proximity Identifiers (RPIs) auf den Smartphones ab, die sich innerhalb eines bestimmten Zeitraums in nächster Nähe aufgehalten haben. Selbst wenn die zentrale Infrastruktur kompromittiert wird, kann diese Information nicht zu einem Smartphone zurückverfolgt werden, wenn nicht ohnehin schon Zugriff auf das Smartphone besteht. Selbst dann kann die App selbst nicht auf die RPIs zugreifen. Auf die Diagnoseschlüssel kann nur mit Zustimmung der nutzenden Person zugegriffen werden, und auch dies ist nur für einen kurzen Zeitraum möglich. Vor der Verarbeitung der Daten werden die Informationen entfernt, die die Diagnoseschlüssel und die Verbindungsmetadaten miteinander verknüpfen."
+                        "Die App selbst speichert keinerlei Informationen über einzelne potenzielle Begegnungsereignisse. Das Exposure Notification Framework, auf dem die App aufbaut, speichert in sicherer Form die sichtbaren Rolling Proximity Identifiers (RPIs) auf den Smartphones ab, die sich innerhalb eines bestimmten Zeitraums in nächster Nähe aufgehalten haben. Selbst wenn die zentrale Infrastruktur kompromittiert wird, kann diese Information nicht zu einem Smartphone zurückverfolgt werden, wenn nicht ohnehin schon Zugriff auf das Smartphone besteht. Selbst dann kann die App selbst nicht auf die RPIs zugreifen. Auf die Diagnoseschlüssel ('Positivkennungen') kann nur mit Zustimmung der nutzenden Person zugegriffen werden, und auch dies ist nur für einen kurzen Zeitraum möglich. Vor der Verarbeitung der Daten werden die Informationen entfernt, die die Poisitivkennung und die Verbindungsmetadaten miteinander verknüpfen."
                     ]
                 }
             ]
@@ -200,8 +200,8 @@
                     "anchor": "personal_data",
                     "textblock": [
                         "Wie in der Datenschutz-Grundverordnung (DSGVO) vorgeschrieben, ist die Datenminimierung das oberste Gebot für die Umsetzung der App. Die nutzenden Personen können und müssen in Verbindung mit der App ausschließlich die folgenden Angaben machen:",
-                        "<ul><li>Zustimmung zur Nutzung des Exposure Notification Frameworks</li><li>Eingabe von TANs zur Verifizierung von Testergebnissen</li><li>Zustimmung zum Upload der täglichen Diagnoseschlüssel</li></ul>",
-                        "Apps können über das Exposure Notification Framework keine Daten zum Standort sammeln. Die Diagnoseschlüssel werden nur für den epidemiologisch relevanten Zeitraum von 14 Tagen zentral gespeichert und nach den 14 Tagen automatisch entfernt."
+                        "<ul><li>Zustimmung zur Nutzung des Exposure Notification Frameworks</li><li>Eingabe von TANs zur Verifizierung von Testergebnissen</li><li>Zustimmung zum Upload der täglichen Diagnoseschlüssel ('Positivkennungen')</li></ul>",
+                        "Apps können über das Exposure Notification Framework keine Daten zum Standort sammeln. Die Positivkennungen werden nur für den epidemiologisch relevanten Zeitraum von 14 Tagen zentral gespeichert und nach den 14 Tagen automatisch entfernt."
 					]
                 },
                 {
@@ -228,10 +228,10 @@
                     ]
                 },
 		{
-                    "title": "Werden die gesammelten Zufallskennungen in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
+                    "title": "Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
                     "anchor": "backup",
                     "textblock": [
-                        "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufallskennungen können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
+                        "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufallscodes können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
                     ]
                 },
                 {
@@ -254,7 +254,7 @@
                     "anchor": "risk_info",
                     "textblock": [
                         "So funktioniert die App:",
-                        "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden.</li><li>Falls Du positiv getestet wurdest, kannst Du Deine Diagnoseschlüssel auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass eine Begegnung mit einer Person bestand, die positiv auf Corona getestet wurde.</li><li>Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel wie in Schritt 1 beschrieben notwendig. Die Information über eine Begegnung aus Schritt 3 benötigt keine Bluetooth-Verbindung.</li></ol>",
+                        "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden.</li><li>Falls Du positiv getestet wurdest, kannst Du Deine Diagnoseschlüssel ('Positivkennung') auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass eine Begegnung mit einer Person bestand, die positiv auf Corona getestet wurde.</li><li>Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel wie in Schritt 1 beschrieben notwendig. Die Information über eine Begegnung aus Schritt 3 benötigt keine Bluetooth-Verbindung.</li></ol>",
                         "Das <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a> beschreibt den technischen Ablauf im Detail."
                     ]
                 },{
@@ -302,7 +302,7 @@
                     "title": "Kann ich durch Abhören des Netzwerkverkehrs als Corona-positiv identifiziert werden? ",
                     "anchor": "traffic_monitoring",
                     "textblock": [
-                        "Etablierte Verschlüsselungsmechanismen wie HTTPS stellen sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können.",
+                        "Etablierte Verschlüsselungsmechanismen wie HTTPS stellen sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln ('Positivkennungen') werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können.",
 						"Darüber hinaus wird es in Kürze weitere technische Maßnahmen geben, z. B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
                     ]
                 },
@@ -310,8 +310,8 @@
                     "title": "Was wird genau gespeichert und wer kann auf die über Bluetooth gesammelten Daten zugreifen?",
                     "anchor": "data_access",
                     "textblock": [
-                        "Über Bluetooth werden konstant wechselnde Zufallskennungen versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
-						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufallskennungen in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
+                        "Über Bluetooth werden konstant wechselnde Zufallscodes versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
+						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufallscodes in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
 						"Sobald eine Person positiv getestet wurde, wird sie gebeten, die Temporary Exposure Keys der letzten 14 Tage zu teilen. Der Zugriff auf diese Schlüssel erfolgt über die Exposure Notification API, allerdings nur dann, wenn die nutzende Person aktiv ihre Zustimmung gegeben hat."
                     ]
                 },
