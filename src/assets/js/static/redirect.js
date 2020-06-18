@@ -1,23 +1,21 @@
-var href = "./en/";
+var lang = "en";
+
 if (
   typeof navigator.languages !== "undefined" &&
   navigator.languages.length > 0
 ) {
   for (var i = 0; i < navigator.languages.length; ++i) {
-    var lowerCaseValue = navigator.languages[i].toLowerCase();
-    if (lowerCaseValue.indexOf("de") >= 0) {
-      href = "./de/";
-      break;
-    } else if (lowerCaseValue.indexOf("en") >= 0) {
-      href = "./en/";
+    var tag = navigator.languages[i].slice(0, 2).toLowerCase();
+    if (tag === "de" || tag === "en") {
+      lang = tag;
       break;
     }
   }
 } else if (
-  (navigator.language || navigator.userLanguage).toLowerCase().indexOf("de") >=
-  0
+  (navigator.language || navigator.userLanguage).slice(0, 2).toLowerCase() ===
+  "de"
 ) {
-  href = "./de/";
+  lang = "de";
 }
 
-window.location.href = href;
+window.location.href = "./" + lang + "/";
