@@ -127,6 +127,9 @@ section {
         max-width: inherit;
         width: inherit;
         padding: inherit;
+        height: 0;
+        overflow: visible;
+        
         .btn_close {
             position: relative;
             margin: ($spacer * -1.5) 0 0;
