@@ -28,11 +28,14 @@
                     ]
                 },{
                     "active": true,
-                    "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortermittlung. Muss ich das aktivieren?",
+                    "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
                     "anchor": "android_location",
                     "textblock": [
-                        "Es handelt sich hier um eine Besonderheit von Android. Bluetooth-Geräte in Deiner Nähe können nur gefunden werden, wenn auch die Standortermittlung aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation).",
-			            "Die Corona-Warn-App muss in der Lage sein, Geräte in der Nähe zu finden, also muss die Standortermittlung als Voraussetzung aktiviert werden. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden."
+                        "Die Corona-Warn-App fragt Deinen Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Deiner Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Deinem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch deinen Standort erfassen!",
+			"Da die Corona-Warn-App per Bluetooth Geräte in Deiner Nähe erkennen muss, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden. Du kannst das gerne selbst folgendermaßen nachprüfen:",
+			    "<ol><li>Öffne die Einstellungen Deines Smartphones (nicht die Einstellungen in der App!)</li><li>Wähle 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Schau Dir die Liste der Apps an, die auf Deinen Standort zugreifen können, wenn Du es zulässt. Du siehst: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
+			 "An dieser Stelle könntest Du anderen Apps die Berechtigung für den Standortzugriff erteilen oder entziehen, aber da die Corona-Warn-App diese Berechtigung nicht braucht, ist sie auch nicht aufgelistet.",
+			 "Hinweis: Wie oben beschrieben, muss die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort' allerdings aktiviert sein, da sonst der Austausch der verschlüsselten Zufallscodes zur Risiko-Ermittlung nicht funktioniert."
                     ]
                 },{
                     "active": true,
