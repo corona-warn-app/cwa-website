@@ -53,6 +53,13 @@
                     ]
                 },{
                     "active": true,
+                    "title" : "Apple: In my COVID-19 Exposure Logging settings it says: 'Corona-Warn has checked your log of collected random IDs 0 times over the past 24 hours.' Does this mean that exposure logging isn’t working?",
+                    "anchor": "no_log_check",
+                    "textblock": [
+                        "Exposure logging is working, don’t worry. You can find this iOS note under 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'. It means that the back-end server has not sent any diagnosis keys to your device yet, so Corona-Warn-App hasn’t received anything to check against the collected random IDs on your phone. As soon as persons diagnosed with COVID-19 have uploaded their diagnosis keys, this check is triggered."
+                    ]
+                },{
+                    "active": true,
                     "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
                     "anchor": "smartwatch",
                     "textblock": [
