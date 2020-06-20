@@ -43,19 +43,14 @@
                 "index": "03.",
                 "image": {"url": "/assets/img/how-it-works-3.svg"},
                 "title": "Liste von Schlüsseln der als infiziert gemeldeten Personen verteilen",
-                "text": "Im Falle eines positiven Testergebnisses werden Personen gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die Schlüssel der Person in die Liste der als infiziert gemeldeten Personen ein, die regelmäßig an alle Apps gesendet wird."
+                "text": "Im Falle eines positiven Testergebnisses werden Personen gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die temporären Schlüssel in eine Liste ein, die regelmäßig an alle Apps gesendet wird."
             },
             {
                 "index": "04.",
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
                 "title": "Prüfung auf Kontakt mit Personen, die sich als infiziert gemeldet haben",
                 "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Personen heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und die Person erhält entsprechende Handlungsanweisungen.",
-                "button": {"title": "Weitere Infos im Scoping-Dokument", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md", "external": true},
-                "links": [{
-                        "title": "Weitere Infos im Architektur-Dokument - EN",
-                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md",
-                        "external": true
-                }]
+                "button": {"title": "Weitere Infos im Scoping-Dokument", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md", "external": true}
             }
         ]
     },
@@ -99,7 +94,7 @@
         "headline": {
             "title": "Mach mit beim Open-Source-Projekt!",
             "textblock": [
-                "Wenn Du an dem Projekt mitarbeiten möchtest, kannst Du zu GitHub wechseln und sofort loslegen. Hier kannst Du Dir auch die <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank'>Dokumentation</a> durchlesen, den <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank'>Code of Conduct</a> einsehen und mehr darüber erfahren, wie Du in der <a href='/de/community/'>Community</a> mitarbeiten kannst."
+                "Wenn Du an dem Projekt mitarbeiten möchtest, kannst Du zu GitHub wechseln und sofort loslegen. Hier kannst Du Dir auch die <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank' rel='noopener noreferrer'>Dokumentation</a> durchlesen, den <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer'>Code of Conduct</a> einsehen und mehr darüber erfahren, wie Du in der <a href='/de/community/'>Community</a> mitarbeiten kannst."
             ],
             "button": {
                 "title": "Mach mit in GitHub",
@@ -124,7 +119,7 @@
             },
             "list": [{
                 "title": "Transparenz",
-                "text" : "Nur durch Transparenz gewinnen wir das Vertrauen der Bevölkerung und erhöhen die Akzeptanz der App."
+                "text" : "Nur durch Transparenz gewinnen wir das Vertrauen der Bevölkerung und erhöhen die Akzeptanz der App. Unser <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Architektur-Dokument (Englisch)</a> und die <a href='/assets/documents/cwa-eula-de.pdf' target='_blank' rel='noopener noreferrer'>Nutzungsbedingungen</a> sind offen einsehbar."
                 },{
                 "title": "Die Community",
                 "text": "Die Community trägt zu mehr Sicherheit und Datenschutz bei, da die Community-Mitglieder Probleme frühzeitig erkennen und bei deren Lösung unterstützen können."
@@ -139,13 +134,13 @@
             },
             "list": [{
                 "title": "Dezentraler Ansatz",
-                "text" : "Die Architektur beruht wie die Protokolle <a href='https://github.com/DP-3T/documents' target='_blank' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' title=''>TCN</a> auf einem dezentralen Ansatz und baut auf den Exposure-Notification-API-Spezifikationen von Apple und Google auf."
+                "text" : "Die Architektur beruht wie die Protokolle <a href='https://github.com/DP-3T/documents' target='_blank' rel='noopener noreferrer' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' rel='noopener noreferrer' title=''>TCN</a> auf einem dezentralen Ansatz und baut auf den Exposure-Notification-API-Spezifikationen von Apple und Google auf."
                 },{
                 "title": "Zwei Zwecke",
                 "text": "Es werden nur personenbezogene Daten verarbeitet, die für die folgenden beiden Zwecke erforderlich sind:<br>1. zur Beurteilung des persönlichen Infektionsrisikos<br>2. zur schnelleren Übermittlung des SARS-CoV-2-Testergebnisses"
                 },{
                 "title": "Datenschutzdokument",
-                "text": "Nähere Einzelheiten werden in einem Datenschutzdokument dargelegt werden. Dies steht demnächst zur Verfügung."
+                "text": "Einzelheiten werden in der <a href='/assets/documents/cwa-privacy-notice-de.pdf'>Datenschutzerklärung des Robert Koch-Instituts</a> näher dargelegt. Weitere Details finden Sie in der <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf'>Datenschutz-Folgenabschätzung</a> sowie den zugehörigen Anlagen <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1.pdf'>1</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage2.pdf'>2</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage3.pdf'>3</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage4.pdf'>4</a> und <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage5.pdf'>5</a>."
                 },{
                 "title": "Im Design-Prozess",
                 "text": "Im Design-Prozess wird für jeden Schritt sichergestellt, dass die App möglichst wenige der benötigten personenbezogenen Daten verarbeitet und für diese Daten ein größtmöglicher Schutz besteht."
@@ -241,21 +236,21 @@
         "content": {
             "icon-list": [
                 {
-                    "url": "#",
-                    "icon-url": "/assets/img/google-play-badge.svg",
-                    "title": "Google Play Store",
+                    "url": "https://apps.apple.com/de/app/corona-warn-app/id1512595757",
+                    "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
+                    "title": "Apple App Store",
                     "external": true
                 },
                 {
-                    "url": "#",
-                    "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
-                    "title": "Apple App Store",
+                    "url": "https://play.google.com/store/apps/details?id=de.rki.coronawarnapp",
+                    "icon-url": "/assets/img/google-play-badge.svg",
+                    "title": "Google Play Store",
                     "external": true
                 }
             ],
             "headline" : {
-                "title": "Get the App!",
-                "text": "Now available via App Store and Google Play Store."
+                "title": "App mit!",
+                "text": "Jetzt zum Download verfügbar im <nobr>Apple App Store</nobr> und auf <nobr>Google Play</nobr>."
             }
         }
     },

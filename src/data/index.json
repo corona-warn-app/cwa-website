@@ -30,7 +30,7 @@
                 "index": "01.",
                 "image": {"url": "/assets/img/how-it-works-1.svg"},
                 "title": "Collect nearby identifiers",
-                "text": "The Exposure Notification framework (by Apple and Google) on a mobile device is broadcasting a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h."
+                "text": "The Exposure Notification framework (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h."
             },
             {
                 "index": "02.",
@@ -49,12 +49,7 @@
                 "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
                 "title": "Check for exposure to SARS-CoV-2 confirmed users",
                 "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification framework derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
-                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md", "external": true},
-                "links": [{
-                        "title": "See details in architecture document",
-                        "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md",
-                        "external": true
-                }]
+                "button": {"title": "Learn more in scoping document", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md", "external": true}
             }
         ]
     },
@@ -99,7 +94,7 @@
             "title": "Join the open-source project!",
             "textblock": [
                 "If you want to contribute, head over to GitHub to get started.",
-                "You can also read the <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank'>documentation</a>, learn about our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' title=''>Code of Conduct</a> and find out how to contribute on the <a href='/en/community/'>Community page</a>."
+                "You can also read the <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank' rel='noopener noreferrer'>documentation</a>, learn about our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a> and find out how to contribute on the <a href='/en/community/'>Community page</a>."
             ],
             "button": {
                 "title": "Bring me to GitHub",
@@ -124,7 +119,7 @@
             },
             "list": [{
                 "title": "Transparency",
-                "text" : "Only through transparency can we earn the trust of the end-users and increase app adoption."
+                "text" : "Only through transparency can we earn the trust of the end-users and increase app adoption. Our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>architecture document</a> and the <a href='/assets/documents/cwa-eula-de.pdf' target='_blank' rel='noopener noreferrer'>terms of use</a> are openly accessible."
                 },{
                 "title": "Power of the community",
                 "text": "The power of the community increases security and data privacy protection by detecting issues early and helping to solve them."
@@ -139,10 +134,10 @@
             },
             "list": [{
                 "title": "Decentralized approach",
-                "text" : "The architecture follows a decentralized approach – based on the <a href='https://github.com/DP-3T/documents' target='_blank' title=''>DP-3T</a> and <a href='https://tcn-coalition.org/' target='_blank' title=''>TCN</a> protocols, as well as the Privacy-Preserving Contact Tracing specifications by Apple and Google."
+                "text" : "The architecture follows a decentralized approach – based on the <a href='https://github.com/DP-3T/documents' target='_blank' rel='noopener noreferrer' title=''>DP-3T</a> and <a href='https://tcn-coalition.org/' target='_blank' rel='noopener noreferrer' title=''>TCN</a> protocols, as well as the Privacy-Preserving Contact Tracing specifications by Apple and Google."
                 },{
                 "title": "Data Privacy document",
-                "text": "Details will be outlined in a Data Privacy document (coming soon)."
+                "text": "Details are outlined in the <a href='/assets/documents/cwa-privacy-notice-en.pdf'>privacy notice</a> of the Robert Koch Institute. Additional insights are available in the <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf'>Data Protection Impact Assessment (German only)</a> and the corresponding annexes <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1.pdf'>1</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage2.pdf'>2</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage3.pdf'>3</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage4.pdf'>4</a> and <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage5.pdf'>5</a>"
                 },{
                 "title": "Two objectives",
                 "text": "Only personal data needed for the following two objectives will be processed:<br>1. Assess personal risk of infection<br>2. Learn COVID-19 test results faster."
@@ -241,21 +236,21 @@
         "content": {
             "icon-list": [
                 {
-                    "url": "#",
-                    "icon-url": "/assets/img/google-play-badge.svg",
-                    "title": "Google Play Store",
+                    "url": "https://apps.apple.com/de/app/corona-warn-app/id1512595757",
+                    "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
+                    "title": "Apple App Store",
                     "external": true
                 },
                 {
-                    "url": "#",
-                    "icon-url": "/assets/img/App_Store_Badge_US-UK.svg",
-                    "title": "Apple App Store",
+                    "url": "https://play.google.com/store/apps/details?id=de.rki.coronawarnapp",
+                    "icon-url": "/assets/img/google-play-badge.svg",
+                    "title": "Google Play Store",
                     "external": true
                 }
             ],
             "headline" : {
                 "title": "Get the App!",
-                "text": "Now available via App Store and Google Play Store."
+                "text": "Now available via <nobr>App Store</nobr> and <nobr>Google Play Store</nobr>."
             }
         }
     },

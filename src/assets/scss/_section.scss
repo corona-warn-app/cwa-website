@@ -94,6 +94,66 @@ section {
                 width: 100%;
                 transform: skewY(2deg);
                 z-index: -1;
+                margin-top: -2%;
+            }
+        }
+        &-featured {
+            z-index: 0;
+        }
+    }
+    &-sticky {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        box-shadow: $box-shadow;
+        z-index: 1;
+        padding-top: $spacer * 1.25;
+        padding-bottom: $spacer * 1.25;
+        opacity: 1;
+        transition: opacity 0.3s 0.05s ease-in-out, visibility 0s 0s ease-in;
+        visibility: visible;
+
+        &.invisible,
+        &.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s 0s ease-in-out, visibility 0s 0.3s ease-in;
+        }
+    }
+    &-container-close {
+        position: absolute;
+        text-align: right;
+        max-width: inherit;
+        width: inherit;
+        padding: inherit;
+        height: 0;
+        overflow: visible;
+        
+        .btn_close {
+            position: relative;
+            margin: ($spacer * -1.5) 0 0;
+            padding: $spacer;
+
+            &:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                background: transparent url("../img/icons/cross_close.svg") center no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%,-50%,0);
+            }
+            @media (min-width: 360px){
+                 margin: 0 $spacer;
+            }
+            &,
+            &:hover,
+            &:active,
+            &:focus {
+                outline: none;
+                box-shadow: none;
             }
         }
     }

@@ -18,7 +18,7 @@
       <dl class="accordion js-accordion" data-toggle="accordion-header">
       {{#each accordion}}
         <dt class="accordion-header{{#if active}} active{{/if}}">
-          <h4 class="accordion-item-title">{{title}}</h4>
+          <h4 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h4>
           <span class="accordion-item-icon"></span>
         </dt>
         <dd class="accordion-body">
@@ -28,6 +28,7 @@
             <p>{{{.}}}</p>
             {{/each}}
             {{/if}}
+            <p>{{#if anchor}}<a class="nav-link" href="#{{anchor}}">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
           </div>
         </dd>
       {{/each}}

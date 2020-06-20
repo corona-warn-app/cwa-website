@@ -82,6 +82,7 @@
         }
     }
     &_slider {
+        z-index: 0;
         .slick-list {
             padding-top: $spacer;
             padding-bottom: $spacer * 1.5;
@@ -279,7 +280,7 @@ p:not([class]) + .btn {
                 bottom: 0;
                 margin-left: 0;
                 left: 100%;
-                transform: translate3d(0, 0 0);
+                transform: translate3d(0, 0, 0);
                 width: 80px;
                 height: 80px;
                 cursor: pointer;

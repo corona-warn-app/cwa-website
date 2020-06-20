@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta http-equiv="refresh" content="2; URL=https://www.coronawarn.app/en/">
+    <meta http-equiv="refresh" content="2; URL=https://www.coronawarn.app/{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{#if global.favicon}}
     <link
@@ -15,16 +15,8 @@
     />
     {{/if}}
 
-    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
-    <script language="javascript">
-      if((navigator.language || navigator.userLanguage).toLowerCase().indexOf('de') >= 0) {
-        window.location.href = "./de/";
-      }
-      else {
-        window.location.href = "./en/";
-      }
-    </script>
+    <script src="{{root}}assets/js/static/redirect.js"></script>
   </head>
   <body>
   </body>

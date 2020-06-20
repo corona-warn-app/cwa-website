@@ -1,6 +1,6 @@
 {{#unless item.deactivated}}
 <li class="nav-item">
-    <a href="{{item.url}}" class="nav-link{{#unless item.external}}{{#ifequal @root.page-name item.id}} active{{/ifequal}}{{/unless}}{{#if item.external}} nav-link_external{{/if}}{{#if item.disabled}} disabled{{/if}}"{{#if item.external}} target="_blank"{{/if}}>
+    <a href="{{item.url}}" class="nav-link{{#unless item.external}}{{#ifequal @root.page-name item.id}} active{{/ifequal}}{{/unless}}{{#if item.external}} nav-link_external{{/if}}{{#if item.disabled}} disabled{{/if}}"{{#if item.external}} target="_blank" rel="noopener noreferrer"{{/if}}>
     {{#unless item.icon}}
     {{item.title}}
     {{/unless}}
