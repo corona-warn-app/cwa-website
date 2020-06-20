@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import './lib/slick.min.js';
 //import 'what-input';
+import throttle from 'lodash.throttle';
 
 window.jQuery = $;
 
@@ -47,11 +48,13 @@ $(document).ready(function(){
                 }
             }
         }
+        const throttledAutohideSticky = throttle(autohideSticky, 500)
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
             $(document).off('scroll', autohideSticky);
         });
         $('.js-section-sticky').removeClass('hidden');
-        $(document).on('scroll', autohideSticky);
+
+        $(document).on('scroll', throttledAutohideSticky);
     }
 });
