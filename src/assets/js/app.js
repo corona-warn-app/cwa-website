@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import './lib/slick.min.js';
+import throttle from 'lodash.throttle';
 
 window.jQuery = $;
 
@@ -56,7 +57,7 @@ $(document).ready(function(){
         }]
     });
     if ($('.js-section-sticky').index() >= 0){
-        const autohideSticky = function(){
+        const autoHideSticky = function(){
             const top = $(document).scrollTop(),
                 maxTop = $(window).height() / 4;
             if ($('.js-section-sticky').hasClass('invisible')) {
@@ -69,11 +70,14 @@ $(document).ready(function(){
                 }
             }
         }
+        const throttledAutoHideSticky = throttle(autoHideSticky, 500)
+
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
-            $(document).off('scroll', autohideSticky);
+            $(document).off('scroll', throttledAutoHideSticky);
         });
         $('.js-section-sticky').removeClass('hidden');
-        $(document).on('scroll', autohideSticky);
+
+        $(document).on('scroll', throttledAutoHideSticky);
     }
 });
