@@ -2,7 +2,7 @@ import $ from 'jquery';
 // import './lib/slick.min.js';
 
 // import './lib/glider.min.js'
-import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
+import Glide, { Controls, Breakpoints, Swipe } from '@glidejs/glide/dist/glide.modular.esm'
 
 //import 'what-input';
 import throttle from 'lodash.throttle';
@@ -25,17 +25,14 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 
-    const cardSlider = new Glide('.glider', {
+    const cardSlider = new Glide('.glide', {
         type: 'carousel',
-        slidesToShow: 2,
-        slidesToScroll: 5,
-        draggable: true,
-        dots: '.dots',
-        arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-        }
-    }).mount({ Controls, Breakpoints })
+        startAt: 1,
+        perView: 2,
+        swipeThreshold: 10,
+        dragThreshold: 10,
+        perTouch: 1,
+    }).mount({ Controls, Breakpoints, Swipe })
 
     /*
     $('.js-slider').slick({
