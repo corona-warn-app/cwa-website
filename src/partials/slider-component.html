@@ -1,26 +1,39 @@
-<div class="box_slider js-slider">
-    {{#if type}}
-    {{#ifequal type 'news'}}
-        {{#unless lang_de}}
-        {{#each (limit slides amount)}}
-        <div class="box js-slide">
-            {{> news-text-component this=.}}
+<div class="box_slider js-slider glider">
+    <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+            {{#if type}}
+            {{#ifequal type 'news'}}
+                {{#unless lang_de}}
+                {{#each (limit slides amount)}}
+                <div class="box js-slide glide__slide">
+                    {{> news-text-component this=.}}
+                </div>
+                {{/each}}
+                {{/unless}}
+                {{#if lang_de}}
+                {{#each (limit slides amount)}}
+                <div class="box js-slide glide__slide">
+                    {{> news-text-component this=. lang_de=true}}
+                </div>
+                {{/each}}
+                {{/if}}
+            {{/ifequal}}
+            {{else}}
+            {{#each (limit slides amount)}}
+            <div class="box js-slide glide__slide">
+            {{.}}
+            </div>
+            {{/each}}
+            {{/if}}
         </div>
-        {{/each}}
-        {{/unless}}
-        {{#if lang_de}}
-        {{#each (limit slides amount)}}
-        <div class="box js-slide">
-            {{> news-text-component this=. lang_de=true}}
-        </div>
-        {{/each}}
-        {{/if}}
-    {{/ifequal}}
-    {{else}}
-    {{#each (limit slides amount)}}
-    <div class="box js-slide">
-    {{.}}
     </div>
-    {{/each}}
-    {{/if}}
+    <div data-glide-el="controls">
+        <button data-glide-dir="<<">Start</button>
+        <button data-glide-dir=">>">End</button>
+    </div>
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+    </div>
 </div>

@@ -1,5 +1,9 @@
 import $ from 'jquery';
-import './lib/slick.min.js';
+// import './lib/slick.min.js';
+
+// import './lib/glider.min.js'
+import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
+
 //import 'what-input';
 import throttle from 'lodash.throttle';
 
@@ -20,6 +24,20 @@ $(document).ready(function(){
         $(this).parents('.js-menu').first().find('a').removeClass('active');
         $(this).addClass('active');
     });
+
+    const cardSlider = new Glide('.glider', {
+        type: 'carousel',
+        slidesToShow: 2,
+        slidesToScroll: 5,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        }
+    }).mount({ Controls, Breakpoints })
+
+    /*
     $('.js-slider').slick({
         dots: true,
         infinite: true,
@@ -34,6 +52,7 @@ $(document).ready(function(){
             }
         }]
     });
+    */
     if ($('.js-section-sticky').index() >= 0){
         const autohideSticky = function(){
             const top = $(document).scrollTop(),
