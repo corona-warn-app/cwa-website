@@ -27,29 +27,20 @@ $(document).ready(function(){
 
     const cardSlider = new Glide('.glide', {
         type: 'carousel',
-        startAt: 1,
+        startAt: 0,
         perView: 2,
-        swipeThreshold: 10,
-        dragThreshold: 10,
+        autoplay: 300,
+        gap: 30,
         perTouch: 1,
+        focusAt: 1,
+        breakpoints: {
+            /// max-width bps
+            768: {
+                perView: 1
+            },
+        }
     }).mount({ Controls, Breakpoints, Swipe })
 
-    /*
-    $('.js-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint : 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
-    });
-    */
     if ($('.js-section-sticky').index() >= 0){
         const autohideSticky = function(){
             const top = $(document).scrollTop(),
