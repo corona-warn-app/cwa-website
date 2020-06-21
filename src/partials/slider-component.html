@@ -28,12 +28,12 @@
         </div>
     </div>
     <div data-glide-el="controls">
-        <button data-glide-dir="<<">Start</button>
-        <button data-glide-dir=">>">End</button>
+        <button data-glide-dir="<">Prev</button>
+        <button data-glide-dir=">">Next</button>
     </div>
     <div class="glide__bullets" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0"></button>
-        <button class="glide__bullet" data-glide-dir="=1"></button>
-        <button class="glide__bullet" data-glide-dir="=2"></button>
+        {{#each (limit slides amount)}}
+            <button class="glide__bullet" data-glide-dir="={{@index}}"></button>
+        {{/each}}
     </div>
 </div>
