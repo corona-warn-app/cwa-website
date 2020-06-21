@@ -14,6 +14,7 @@ const webpack2 = require('webpack');
 const named = require('vinyl-named');
 const uncss = require('uncss');
 const autoprefixer = require('autoprefixer');
+const tildeImporter = require('node-sass-tilde-importer');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -90,8 +91,10 @@ function sass() {
     .pipe($.sourcemaps.init())
     .pipe(
       $.sass({
-        includePaths: PATHS.sass
-      }).on('error', $.sass.logError)
+        includePaths: PATHS.sass,
+        importer: tildeImporter,
+      })
+      .on('error', $.sass.logError)
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
