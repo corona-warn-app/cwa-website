@@ -24,7 +24,7 @@
                     "title": "Android: Warum sind Android 6 und Google Play-Dienste Mindestvoraussetzungen?",
                     "anchor": "googleplay",
                     "textblock": [
-                      "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."  
+                      "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                     ]
                 },{
                     "active": true,
@@ -98,7 +98,15 @@
                     "textblock": [
                         "Eine Umsetzung auf Tablets, Smartwatches und Wearables ist im Moment nicht geplant. Wir konzentrieren uns – auch aufgrund der Verfügbarkeit der nötigen Schnittstellen – ausschließlich auf Smartphones. Sollte sich daran etwas ändern, werden wir das entsprechend kommunizieren und bewerben."
                     ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Ich bekomme folgende Benachrichtigung: 'Region für Kontaktmitteilung geändert. COVID-19-Kontaktmitteilungen werden von \"Corona-Warn\" in dieser Region möglicherweise nicht unterstützt'",
+                    "anchor": "iphone_region_change",
+                    "textblock": [
+                        "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Die Kontaktermittlung funktioniert hier auch weiterhin. Um dies zu prüfen kannst Du auch auf Deinem Gerät unter \"Einstellungen -> Datenschutz -> Health -> COVID-19-Kontakprotokoll\" den Status der Kontaktermittlung überprüfen. Apple arbeitet an einer Lösung die voraussichtlich mit dem nächsten iOS Update ausgeliefert wird."
+                    ]
                 }
+
             ]
         },{
             "title": "Allgemeines",
@@ -116,7 +124,7 @@
                     "title": "Wann ist die App fertig?",
                     "anchor": "when_ready",
                     "textblock": [
-                      "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."  
+                      "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."
                     ]
                 },{
                     "title" : "Wo bekomme ich die App?",
@@ -362,7 +370,7 @@
                         "Um generell die maximale Sicherheit Deines Endgeräts zu gewährleisten, solltest Du immer die aktuellsten Sicherheitsupdates und das neueste für Dein Endgerät verfügbare Betriebssystem installiert haben. Dadurch stellst Du sicher, dass Dein Smartphone in Bezug auf die Sicherheit die neueste jeweils verfügbare Bluetooth-Spezifikation erfüllt.",
 			"Speziell bei Android-Systemen sollte aktuell die Android-Version des jeweils vergangenen Monats (siehe <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>) installiert sein. Detaillierte Informationen, wie Du die jeweils aktuelle Android-Version herausfindest, findest Du hier: <a href='https://support.google.com/android/answer/7680439?hl=de' target='_blank' rel='noopener noreferrer'>Android-Version prüfen und aktualisieren</a>."
                     ]
-                },  
+                },
                 {
                     "title": "Ist das Offenlegen des Quellcodes mit diesem Open-Source-Ansatz keine Gefahr für die Cybersecurity?",
                     "anchor": "oss_dangerous",
