@@ -74,6 +74,19 @@
                     ]
                 },{
                     "active": true,
+                    "title" : "Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                    "anchor": "no_risk_update_ios",
+                    "textblock": [
+                        "An sich sollte die Corona-Warn-App problemlos im Hintergrund laufen. Bitte überprüfe die folgenden Einstellungen Deines Smartphones:",
+                        "<b>Hintergrundaktualisierung (allgemein)</b>",
+			"Es ist wichtig, dass Du grundsätzlich die Hintergrundaktualisierung per WLAN und mobile Daten zulässt. Wähle hierzu in den Geräte-Einstellungen 'Allgemein' > 'Hintergrundaktualisierung' und aktiviere die Hintergrundaktualisierung für 'WLAN & Mobile Daten'.",
+                        "Damit lässt Du grundsätzlich zu, dass Apps im Hintergrund Aktualisierungen empfangen können. Welche Apps das tatsächlich tun, kannst du aber für jede App einzeln entscheiden (siehe nächster Schritt).",
+                        "<b>Wichtig: Die mobilen Daten, die bei der Verwendung der Corona-Warn-App übertragen werden, kosten Dich keinen Cent und werden nicht von Deinem vertraglichen Datenvolumen o. ä. abgezogen!</b>",
+			"<b>Hintergrundaktualisierung der Corona-Warn-App</b>",
+			"Bitte prüfe, ob Du die Hintergrundaktualisierung auch für die Corona-Warn-App selbst ausdrücklich erlaubst. Öffne hierzu ebenso die Geräte-Einstellungen, wähle 'Corona-Warn' und aktiviere die Optionen 'Hintergrundaktualisierung' und 'Mobile Daten'. Wie oben erwähnt: Du bezahlst nichts für die mobilen Daten, die über die App übermittelt werden."
+                    ]
+                },{
+                    "active": true,
                     "title" : "Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                     "anchor": "no_risk_update",
                     "textblock": [
@@ -90,13 +103,6 @@
                         "Einige User melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich am COVID-19-Kontaktprotokoll des Betriebssystems. Wende Dich hierzu bitte an den Hersteller Deines Geräts.",
 			"Apple-Geräte: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
 			"Android-Geräte: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
-                    ]
-                },{
-                    "active": true,
-                    "title" : "Wird es die App auch für Tablets, Smartwatches und andere Wearables geben?",
-                    "anchor": "smartwatch",
-                    "textblock": [
-                        "Eine Umsetzung auf Tablets, Smartwatches und Wearables ist im Moment nicht geplant. Wir konzentrieren uns – auch aufgrund der Verfügbarkeit der nötigen Schnittstellen – ausschließlich auf Smartphones. Sollte sich daran etwas ändern, werden wir das entsprechend kommunizieren und bewerben."
                     ]
                 },{
                     "active": true,
@@ -257,6 +263,13 @@
                     "anchor": "battery",
                     "textblock": [
                         "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy)."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Wird es die App auch für Tablets, Smartwatches und andere Wearables geben?",
+                    "anchor": "smartwatch",
+                    "textblock": [
+                        "Eine Umsetzung auf Tablets, Smartwatches und Wearables ist im Moment nicht geplant. Wir konzentrieren uns – auch aufgrund der Verfügbarkeit der nötigen Schnittstellen – ausschließlich auf Smartphones. Sollte sich daran etwas ändern, werden wir das entsprechend kommunizieren und bewerben."
                     ]
                 },
 		{
