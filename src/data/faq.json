@@ -74,7 +74,20 @@
                     ]
                 },{
                     "active": true,
-                    "title" : "Android: My risk status has not been updated for over a day. Internet was available, what's wrong?",
+                    "title" : "Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                    "anchor": "no_risk_update_ios",
+                    "textblock": [
+                        "Usually, Corona-Warn-App will just run in the background. Please check the following device settings on your phone:",
+                        "<b>Background App Refresh (in General)</b>",
+			"Corona-Warn-App must be able to refresh in the background both via Wi-Fi and cellular data, so you have to allow this in general. Open your device settings, choose 'General' > 'Background App Refresh' and activate 'Wi-Fi & Cellular Data'.",
+                        "This means that you allow background refreshing in general, but you can decide for each individual app if it really refreshes in the background (see next section).",
+                        "<b>Important: Cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</b>",
+			"<b>Background App Refresh for Corona-Warn-App</b>",
+			"Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
                     "anchor": "no_risk_update",
                     "textblock": [
                         "This problem is due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, there is a workaround for this:",
@@ -90,13 +103,6 @@
                         "Some users report that their phones behave differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phones and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We’re investigating these problems, but this is likely a problem with the Exposure Notification API. Please contact your device manufacturer.",
 			"Apple phones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a>.",
 			"Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a>."
-                    ]
-                },{
-                    "active": true,
-                    "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
-                    "anchor": "smartwatch",
-                    "textblock": [
-                        "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course widely communicate this."
                     ]
                 },{
                     "active": true,
@@ -257,6 +263,13 @@
                     "textblock": [
                         "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
 					]
+                },{
+                    "active": true,
+                    "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
+                    "anchor": "smartwatch",
+                    "textblock": [
+                        "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course widely communicate this."
+                    ]
                 },
 		{
                     "title": "Will exposure logging still work when I close the app?",
