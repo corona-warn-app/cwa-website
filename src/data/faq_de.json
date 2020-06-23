@@ -46,6 +46,15 @@
                     ]
                 },{
                     "active": true,
+                    "title" : "Warum gibt es für die Verwendung der Corona-Warn-App auf Android und Apple unterschiedliche Altersbeschränkungen?",
+                    "anchor": "age_restriction",
+                    "textblock": [
+                        "Personen unter 16 Jahren dürfen die App verwenden, wenn ein Erziehungsberechtigter dem zustimmt. Die Altersbeschränkung ab 16 Jahren ist notwendig, da die App im Sinne der Datenschutzgrundverordnung (DSGVO) der EU besonders schützenswerte Daten verarbeitet. Nach Vorgabe der DSGVO können Minderjährige erst nach Vollendung des 16. Lebensjahres wirksam in die Verarbeitung der Daten einwilligen. Dies gilt grundsätzlich für beide Betriebssysteme.",
+			"Wie streng dies jedoch tatsächlich gehandhabt wird, ist in beiden App Stores unterschiedlich:",
+			"<ul><li>Apple wendet im App Store strengere Kriterien an, darunter auch zu Altersbeschränkungen nach DSGVO. Deshalb ist die App ab '17+' freigegeben, und Apple fordert ggf. einen Altersnachweis an.</li><li>Im Google Play Store gilt dagegen die USK-Spezifikation. Gemäß USK ist die App für alle Altersgruppen zugelassen, deshalb gilt im Google Play Store ein Mindestalter von 0 Jahren.</li></ul>"
+                    ]
+                },{
+                    "active": true,
                     "title" : "Android: Die App ist nicht als APK verfügbar, weder auf GitHub, noch auf F-Droid usw. Werdet Ihr die App auch als APK veröffentlichen?",
                     "anchor": "apk",
                     "textblock": [
@@ -64,6 +73,13 @@
 			"Wenn der Fehler weiterhin auftritt, obwohl Du alle Schritte ausgeführt hast, aktiviert Dein Gerät die Risiko-Ermittlung möglicherweise etwas zeitverzögert. Bitte schließe die Corona-Warn-App, warte zwei Stunden und versuche es dann erneut.",
 			"Hinweis zu den Google Mobile Services: Damit die Corona-Warn-App funktioniert, muss Google die Google Mobile Services auf Deinem Gerät automatisch aktualisieren. Manuell ist das nicht möglich. Falls Du die Google Play-Dienste auf die neueste Version aktualisiert hast wie oben beschrieben, musst Du noch auf das automatische Update der Google Mobile Services warten. Versuche es in diesem Fall am nächsten Tag erneut.",
 			"Wir entwickeln die Corona-Warn-App ständig weiter und versuchen, mögliche app-seitige Ursachen für diesen Fehler zu beheben."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Ich teste die Betaversion von iOS 14. Warum funktioniert die Corona-Warn-App nicht?",
+                    "anchor": "ios_14_beta",
+                    "textblock": [
+                        "Auf Geräten mit iOS 14 Beta (verfügbar seit 22.06.2020) startet die Corona-Warn-App aktuell nicht oder mit einer Fehlermeldung. Das liegt daran, dass die Exposure Notification API auf iOS 14 noch nicht verfügbar ist. Siehe <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
                     ]
                 },{
                     "active": true,
@@ -175,6 +191,12 @@
                     "textblock": [
                         "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln ('Positivkennungen') verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
                         "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z. B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Positivkennung per TeleTAN hochgeladen wird, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
+                    ]
+                },{
+                    "title" : "Werden die Kontaktprotokolle bzw. die gesammelten zufälligen IDs von meinem Smartphone gelöscht, wenn ich die App deinstalliere?",
+                    "anchor": "delete_random_ids",
+                    "textblock": [
+                        "Nein. Die Kontaktprotokolle bzw. die gesammelten zufälligen IDs werden erst von Deinem Gerät entfernt, wenn du sie über die Geräte-Einstellungen löschst. Das bedeutet, dass keine Begegnungen verloren gehen, wenn Du die App deinstallierst und später erneut installierst."
                     ]
                 },{
                     "title" : "Wo kann ich Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind?",
