@@ -203,49 +203,6 @@
                 }
             ]
         },{
-            "title": "Open Source",
-            "id": "open-source",
-            "accordion": [
-                {
-                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
-                    "anchor": "why_oss",
-                    "textblock": [
-                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
-                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
-                    ]
-                },
-                {
-                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
-                    "anchor": "oss_complete",
-                    "textblock": [
-                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
-                    ]
-                },
-                {
-                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
-                    "anchor": "how_to_contribute",
-                    "textblock": [
-                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
-                        "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
-                    ]
-                },
-                {
-                    "title": "Warum GitHub und nicht eine andere Plattform?",
-                    "anchor": "github",
-                    "textblock": [
-                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
-                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
-                    ]
-                },{
-                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
-                    "anchor": "coc",
-                    "textblock": [
-                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
-                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
-                    ]
-                }
-            ]
-        },{
             "title": "Smartphone-App",
             "id": "application",
             "accordion": [
@@ -345,6 +302,49 @@
                         "Grundsätzlich: Die App ist barrierefrei entwickelt worden (siehe <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md#barrierefreiheit' target='_blank' rel='noopener noreferrer'>Scoping-Dokument</a>) und unterstützt die gängigen Bedienungshilfen des Smartphone-Betriebssystems.",
 			"In der Regel ist eine Kommunikation per Telefon nicht notwendig. Im Falle eines positiven Befunds erhältst Du das Testergebnis standardmäßig mittels eines QR-Codes, den Du in der App einlesen kannst. Falls das Testzentrum bzw. das Labor diesen Weg nicht unterstützt oder Du den QR-Code nicht scannen möchtest, erhältst Du eine TAN. Nur wenn Du mit einem positiven Befund weder einen QR-Code noch eine TAN erhalten hast, müsstest Du die Hotline anrufen, was über die App nicht bzw. nur über Dritte möglich wäre.",
 			"Solltest du wegen einer Hörschwäche nicht telefonieren können, empfiehlt es sich, darauf gleich beim Test hinzuweisen, da auch hier für die weitere Kommunikation besondere Maßnahmen einzuhalten sind. So kann sichergestellt werden, dass Du die TAN - wenn benötigt - gleich vorab schriftlich erhältst."
+                    ]
+                }
+            ]
+        },{
+            "title": "Open Source",
+            "id": "open-source",
+            "accordion": [
+                {
+                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
+                    "anchor": "why_oss",
+                    "textblock": [
+                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
+                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
+                    ]
+                },
+                {
+                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
+                    "anchor": "oss_complete",
+                    "textblock": [
+                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
+                    ]
+                },
+                {
+                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
+                    "anchor": "how_to_contribute",
+                    "textblock": [
+                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
+                        "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
+                    ]
+                },
+                {
+                    "title": "Warum GitHub und nicht eine andere Plattform?",
+                    "anchor": "github",
+                    "textblock": [
+                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
+                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
+                    ]
+                },{
+                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
+                    "anchor": "coc",
+                    "textblock": [
+                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
+                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
                     ]
                 }
             ]
