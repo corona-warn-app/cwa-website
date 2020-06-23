@@ -76,6 +76,13 @@
                     ]
                 },{
                     "active": true,
+                    "title" : "Apple: I'm testing the beta version of iOS 14. Why is Corona-Warn-App not working?",
+                    "anchor": "ios_14_beta",
+                    "textblock": [
+                        "On devices with iOS 14 beta, Corona-Warn-App doesn't start or only displays an error message. The reason is that the Exposure Notification Framework is not yet available on devices with iOS 14. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
+                    ]
+                },{
+                    "active": true,
                     "title" : "Apple: In my COVID-19 Exposure Logging settings it says: 'Corona-Warn has checked your log of collected random IDs 0 times over the past 24 hours.' Does this mean that exposure logging isn’t working?",
                     "anchor": "no_log_check",
                     "textblock": [
@@ -101,7 +108,7 @@
                     "textblock": [
                         "This problem is due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, there is a workaround for this:",
                         "<ol><li>Go to the device settings.</li><li>Choose 'Apps' or 'Apps & Notifications'. submenu item</li><li>Choose 'Corona-Warn'.</li><li>Choose 'Power usage'.</li><li>Choose 'App launch'.</li><li>Disable 'Manage automatically'.</li><li>Activate 'Auto-launch'.</li><li>Activate 'Secondary launch'.</li><li>Activate 'Run in Background'.</li><li>Restart your phone.</li><li>Launch Corona-Warn-App.</li></ol>",
-                        "These problems can also occur in other applications. For this reason, other manufacturers have already provided a lot of information, including device-specific information, to help solve this problem. Further information can be found for example <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>at Slack</a>. If our generic tips do not help, please try <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>the tips from the Slack documentation</a> for the app 'Corona-Warn' and the corresponding smartphone.",
+                        "These problems can also occur in other applications. For this reason, other manufacturers have already provided a lot of information, including device-specific information, to help solve this problem. Further information can be found for example <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>on Slack</a>. If our generic tips do not help, please try <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>the tips from the Slack documentation</a> for the app 'Corona-Warn' and the corresponding smartphone.",
                         "We are working on an extension of the Android app so that this setting can be done directly in the app and you don't have to go through the device settings in a complicated way."
                     ]
                 },{
