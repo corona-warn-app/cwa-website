@@ -202,50 +202,7 @@
                 }
             ]
         },{
-            "title": "Open Source",
-            "id": "open-source",
-            "accordion": [
-                {
-                    "title": "Why are we following an open-source approach?",
-                    "anchor": "why_oss",
-                    "textblock": [
-                        "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
-                        "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
-                    ]
-                },
-                {
-                    "title": "Can I really see all source code of the project?",
-                    "anchor": "oss_complete",
-                    "textblock": [
-                        "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
-                    ]
-                },
-                {
-                    "title": "How can the development community contribute to the project? ",
-                    "anchor": "how_to_contribute",
-                    "textblock": [
-                        "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
-                        "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
-                    ]
-                },
-                {
-                    "title": "Why are you using GitHub instead of a different platform?",
-                    "anchor": "github",
-                    "textblock": [
-                        "We believe that GitHub is a well-established, respected platform for open-source projects. It is the world's largest open-source platform, with more than 40 million users and over 100 million repositories, over 30 million of which are publicly accessible.",
-                        "If someone does not want to create a GitHub account, they can view the source code without an account."
-                    ]
-                },{
-                    "title": "What code of conduct applies?",
-                    "anchor": "coc",
-                    "textblock": [
-                        "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
-                        "Any member can report violations of the code of conduct to the project managers or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
-                    ]
-                }
-            ]
-        },{
-            "title": "Device App",
+            "title": "Smartphone App",
             "id": "application",
             "accordion": [
                 {
@@ -344,6 +301,49 @@
                         "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
 			"In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a QR code, which you can scan in the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have neither received a QR code nor a TAN, you would have to call the hotline, which you might not be able to do without outside help.",
 			"If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing."
+                    ]
+                }
+            ]
+        },{
+            "title": "Open Source",
+            "id": "open-source",
+            "accordion": [
+                {
+                    "title": "Why are we following an open-source approach?",
+                    "anchor": "why_oss",
+                    "textblock": [
+                        "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
+                        "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
+                    ]
+                },
+                {
+                    "title": "Can I really see all source code of the project?",
+                    "anchor": "oss_complete",
+                    "textblock": [
+                        "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
+                    ]
+                },
+                {
+                    "title": "How can the development community contribute to the project? ",
+                    "anchor": "how_to_contribute",
+                    "textblock": [
+                        "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
+                        "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
+                    ]
+                },
+                {
+                    "title": "Why are you using GitHub instead of a different platform?",
+                    "anchor": "github",
+                    "textblock": [
+                        "We believe that GitHub is a well-established, respected platform for open-source projects. It is the world's largest open-source platform, with more than 40 million users and over 100 million repositories, over 30 million of which are publicly accessible.",
+                        "If someone does not want to create a GitHub account, they can view the source code without an account."
+                    ]
+                },{
+                    "title": "What code of conduct applies?",
+                    "anchor": "coc",
+                    "textblock": [
+                        "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
+                        "Any member can report violations of the code of conduct to the project managers or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
                     ]
                 }
             ]
