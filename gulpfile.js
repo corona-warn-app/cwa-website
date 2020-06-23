@@ -11,6 +11,8 @@ const webpackStream = require('webpack-stream');
 const webpack2 = require('webpack');
 const named = require('vinyl-named');
 const autoprefixer = require('autoprefixer');
+var sitemap = require('gulp-sitemap');
+
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -30,7 +32,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(gulp.parallel(pages, javascript, images, copy), sass)
+  gulp.series(gulp.parallel(pages, javascript, images, copy), sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -191,4 +193,18 @@ function watch() {
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images, browser.reload));
+}
+
+// generate an up-to-date sitemap
+function build_sitemap() {
+  return gulp
+    .src([PATHS.dist + "/**/*.html", "!" + PATHS.dist + '/error.html'])
+    .pipe(sitemap({
+      siteUrl: "https://coronawarn.app",
+      priority: function(siteUrl, loc, entry) {
+        // Reduce priority by 0.2 per level
+        return 1.0 - (entry.file.split('/').length - 1) * 0.2
+      }
+    }))
+    .pipe(gulp.dest(PATHS.dist))
 }
