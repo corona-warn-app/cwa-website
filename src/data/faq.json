@@ -24,7 +24,7 @@
                     "title": "Android: Why are Android 6 and Google Play Services minimum requirements?",
                     "anchor": "googleplay",
                     "textblock": [
-                      "Google introduces the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available as of Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot change these facts."  
+                      "Google introduces the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available as of Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot change these facts."
                     ]
                 },{
                     "active": true,
@@ -74,10 +74,42 @@
                     ]
                 },{
                     "active": true,
-                    "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
-                    "anchor": "smartwatch",
+                    "title" : "Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                    "anchor": "no_risk_update_ios",
                     "textblock": [
-                        "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course widely communicate this."
+                        "Usually, Corona-Warn-App will just run in the background. Please check the following device settings on your phone:",
+                        "<b>Background App Refresh (in General)</b>",
+			"Corona-Warn-App must be able to refresh in the background both via Wi-Fi and cellular data, so you have to allow this in general. Open your device settings, choose 'General' > 'Background App Refresh' and activate 'Wi-Fi & Cellular Data'.",
+                        "This means that you allow background refreshing in general, but you can decide for each individual app if it really refreshes in the background (see next section).",
+                        "<i>Important: Mobile/cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</i>",
+			"<b>Background App Refresh for Corona-Warn-App</b>",
+			"Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                    "anchor": "no_risk_update",
+                    "textblock": [
+                        "This problem is due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, there is a workaround for this:",
+                        "<ol><li>Go to the device settings.</li><li>Choose 'Apps' or 'Apps & Notifications'. submenu item</li><li>Choose 'Corona-Warn'.</li><li>Choose 'Power usage'.</li><li>Choose 'App launch'.</li><li>Disable 'Manage automatically'.</li><li>Activate 'Auto-launch'.</li><li>Activate 'Secondary launch'.</li><li>Activate 'Run in Background'.</li><li>Restart your phone.</li><li>Launch Corona-Warn-App.</li></ol>",
+                        "These problems can also occur in other applications. For this reason, other manufacturers have already provided a lot of information, including device-specific information, to help solve this problem. Further information can be found for example <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>at Slack</a>. If our generic tips do not help, please try <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>the tips from the Slack documentation</a> for the app 'Corona-Warn' and the corresponding smartphone.",
+                        "We are working on an extension of the Android app so that this setting can be done directly in the app and you don't have to go through the device settings in a complicated way."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Since I installed the app, my phone sometimes behaves oddly. Example: There are occasional problems with other apps and devices that use Bluetooth. What can I do?",
+                    "anchor": "various_device_problems",
+                    "textblock": [
+                        "Some users report that their phones behave differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phones and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We’re investigating these problems, but this is likely a problem with the Exposure Notification API. Please contact your device manufacturer.",
+			"Apple phones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a>.",
+			"Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
+                    "anchor": "iphone_region_change",
+                    "textblock": [
+                        "This message is issued directly by the Exposure Notification Framework of the operation system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which hopefully will be delivered with the next iOS update."
                     ]
                 }
             ]
@@ -90,13 +122,13 @@
                     "anchor": "have_to_use",
                     "textblock": [
                       "No. The app has two functions: It enables you to retrieve test results electronically, and it helps to identify possible exposures you have had to people diagnosed with COVID-19. You are free to decide whether to retrieve your test results, and whether you want to submit your results as diagnosis keys if your results are positive. Nothing will happen without your explicit consent.",
-                      "At any point in time, you can deactivate the COVID-19 Exposure Notifications feature either in the app itself or in your device's settings, and of course you can always uninstall the app completely."  
+                      "At any point in time, you can deactivate the COVID-19 Exposure Notifications feature either in the app itself or in your device's settings, and of course you can always uninstall the app completely."
                     ]
                 },{
                     "title": "When will the app be ready?",
                     "anchor": "when_ready",
                     "textblock": [
-                      "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."  
+                      "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."
                     ]
                 },{
                     "title" : "Where can I get the app?",
@@ -170,50 +202,7 @@
                 }
             ]
         },{
-            "title": "Open Source",
-            "id": "open-source",
-            "accordion": [
-                {
-                    "title": "Why are we following an open-source approach?",
-                    "anchor": "why_oss",
-                    "textblock": [
-                        "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
-                        "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
-                    ]
-                },
-                {
-                    "title": "Can I really see all source code of the project?",
-                    "anchor": "oss_complete",
-                    "textblock": [
-                        "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
-                    ]
-                },
-                {
-                    "title": "How can the development community contribute to the project? ",
-                    "anchor": "how_to_contribute",
-                    "textblock": [
-                        "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
-                        "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
-                    ]
-                },
-                {
-                    "title": "Why are you using GitHub instead of a different platform?",
-                    "anchor": "github",
-                    "textblock": [
-                        "We believe that GitHub is a well-established, respected platform for open-source projects. It is the world's largest open-source platform, with more than 40 million users and over 100 million repositories, over 30 million of which are publicly accessible.",
-                        "If someone does not want to create a GitHub account, they can view the source code without an account."
-                    ]
-                },{
-                    "title": "What code of conduct applies?",
-                    "anchor": "coc",
-                    "textblock": [
-                        "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
-                        "Any member can report violations of the code of conduct to the project managers or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
-                    ]
-                }
-            ]
-        },{
-            "title": "Device App",
+            "title": "Smartphone App",
             "id": "application",
             "accordion": [
                 {
@@ -225,18 +214,34 @@
                         "Location data is not and cannot be collected by apps using the exposure notification framework. Diagnosis keys are only stored centrally for the epidemiologically relevant period of 14 days and removed automatically after that period."
 					]
                 },
+		{
+                    "title": "When I'm not connected to a Wi-Fi network, will I be charged for any mobil data transmitted via the app?",
+                    "anchor": "mobile_data_costs",
+                    "textblock": [
+                        "No. Mobile data that are transmitted via Corona-Warn-App when diagnosis keys are uploaded or when the server notifies you in case of exposure is free of charge and will not be deducted from your data plan. The German network providers will bear these costs."
+                    ]
+                },
                 {
                     "title": "Will the device battery drain more quickly with the app running in the background?",
                     "anchor": "battery",
                     "textblock": [
                         "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
 					]
+                },{
+                    "active": true,
+                    "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
+                    "anchor": "smartwatch",
+                    "textblock": [
+                        "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course widely communicate this."
+                    ]
                 },
 		{
                     "title": "Will exposure logging still work when I close the app?",
                     "anchor": "close_app",
                     "textblock": [
-                        "Yes. As long as you have activated risk identification in the app and Bluetooth is on, exposure is logged. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it."
+                        "Yes. As long as you have activated risk identification in the app and Bluetooth is on, exposure is logged in the background. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
+			"See also:",
+			"<ul><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update_ios'>Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update'>Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
                     			]
                 },
                 {
@@ -303,6 +308,49 @@
                         "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
 			"In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a QR code, which you can scan in the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have neither received a QR code nor a TAN, you would have to call the hotline, which you might not be able to do without outside help.",
 			"If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing."
+                    ]
+                }
+            ]
+        },{
+            "title": "Open Source",
+            "id": "open-source",
+            "accordion": [
+                {
+                    "title": "Why are we following an open-source approach?",
+                    "anchor": "why_oss",
+                    "textblock": [
+                        "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
+                        "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
+                    ]
+                },
+                {
+                    "title": "Can I really see all source code of the project?",
+                    "anchor": "oss_complete",
+                    "textblock": [
+                        "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
+                    ]
+                },
+                {
+                    "title": "How can the development community contribute to the project? ",
+                    "anchor": "how_to_contribute",
+                    "textblock": [
+                        "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
+                        "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
+                    ]
+                },
+                {
+                    "title": "Why are you using GitHub instead of a different platform?",
+                    "anchor": "github",
+                    "textblock": [
+                        "We believe that GitHub is a well-established, respected platform for open-source projects. It is the world's largest open-source platform, with more than 40 million users and over 100 million repositories, over 30 million of which are publicly accessible.",
+                        "If someone does not want to create a GitHub account, they can view the source code without an account."
+                    ]
+                },{
+                    "title": "What code of conduct applies?",
+                    "anchor": "coc",
+                    "textblock": [
+                        "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
+                        "Any member can report violations of the code of conduct to the project managers or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
                     ]
                 }
             ]

@@ -24,7 +24,7 @@
                     "title": "Android: Warum sind Android 6 und Google Play-Dienste Mindestvoraussetzungen?",
                     "anchor": "googleplay",
                     "textblock": [
-                      "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."  
+                      "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                     ]
                 },{
                     "active": true,
@@ -74,12 +74,45 @@
                     ]
                 },{
                     "active": true,
-                    "title" : "Wird es die App auch für Tablets, Smartwatches und andere Wearables geben?",
-                    "anchor": "smartwatch",
+                    "title" : "Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                    "anchor": "no_risk_update_ios",
                     "textblock": [
-                        "Eine Umsetzung auf Tablets, Smartwatches und Wearables ist im Moment nicht geplant. Wir konzentrieren uns – auch aufgrund der Verfügbarkeit der nötigen Schnittstellen – ausschließlich auf Smartphones. Sollte sich daran etwas ändern, werden wir das entsprechend kommunizieren und bewerben."
+                        "An sich sollte die Corona-Warn-App problemlos im Hintergrund laufen. Bitte überprüfe die folgenden Einstellungen Deines Smartphones:",
+                        "<b>Hintergrundaktualisierung (allgemein)</b>",
+			"Es ist wichtig, dass Du grundsätzlich die Hintergrundaktualisierung per WLAN und mobile Daten zulässt. Wähle hierzu in den Geräte-Einstellungen 'Allgemein' > 'Hintergrundaktualisierung' und aktiviere die Hintergrundaktualisierung für 'WLAN & Mobile Daten'.",
+                        "Damit lässt Du grundsätzlich zu, dass Apps im Hintergrund Aktualisierungen empfangen können. Welche Apps das tatsächlich tun, kannst du aber für jede App einzeln entscheiden (siehe nächster Schritt).",
+                        "<i>Wichtig: Die mobilen Daten, die bei der Verwendung der Corona-Warn-App übertragen werden, kosten Dich keinen Cent und werden nicht von Deinem vertraglichen Datenvolumen o. ä. abgezogen!</i>",
+			"<b>Hintergrundaktualisierung der Corona-Warn-App</b>",
+			"Bitte prüfe, ob Du die Hintergrundaktualisierung auch für die Corona-Warn-App selbst ausdrücklich erlaubst. Öffne hierzu ebenso die Geräte-Einstellungen, wähle 'Corona-Warn' und aktiviere die Optionen 'Hintergrundaktualisierung' und 'Mobile Daten'. Wie oben erwähnt: Du bezahlst nichts für die mobilen Daten, die über die App übermittelt werden."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                    "anchor": "no_risk_update",
+                    "textblock": [
+                        "Dieses Problem ist auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und wenden oft zu aggressives Energiesparen an. Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit im Hintergrund den Risikostatus nicht aktualisieren. Hierzu gibt es allerdings einen Workaround:",
+                        "<ol><li>Öffne die Geräte-Einstellungen.</li><li>Wähle 'Apps' bzw. 'Apps & Benachrichtigungen'.</li><li>Wähle 'Corona-Warn'.</li><li>Wähle 'Akkuverbrauch'.</li><li>Wähle 'App-Start'.</li><li>Deaktiviere 'Automatisch verwalten'.</li><li>Aktiviere 'Auto-Start'.</li><li>Aktiviere 'Sekundärer Start'.</li><li>Aktiviere 'Im Hintergrund ausführen'.</li><li>Starte Dein Smartphone neu.</li><li>Starte die Corona-Warn-App.</li></ol>",
+                        "Diese Probleme können auch bei anderen Anwendungen auftreten. Andere Hersteller haben deswegen bereits sehr viele, auch gerätespezifische Informationen zur Lösung bereitgestellt. Weitere Informationen findest Du z. B. <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>bei Slack</a>. Wenn unsere generischen Tipps nicht helfen, versuche bitte <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>die Tipps aus der Slack-Dokumentation</a> für die Corona-Warn-App und das entsprechende Smartphone anzuwenden.",
+                        "Wir arbeiten an einer Erweiterung der Android-App, sodass diese Einstellung direkt in der App vorgenommen werden kann und man nicht mehr umständlich über die Geräte-Einstellungen gehen muss."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
+                    "anchor": "various_device_problems",
+                    "textblock": [
+                        "Einige User melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich am COVID-19-Kontaktprotokoll des Betriebssystems. Wende Dich hierzu bitte an den Hersteller Deines Geräts.",
+			"Apple-Geräte: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
+			"Android-Geräte: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Ich bekomme folgende Benachrichtigung: 'Region für Kontaktmitteilung geändert. COVID-19-Kontaktmitteilungen werden von \"Corona-Warn\" in dieser Region möglicherweise nicht unterstützt'",
+                    "anchor": "iphone_region_change",
+                    "textblock": [
+                        "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Du kannst die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, kannst Du in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontakprotokoll' den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird."
                     ]
                 }
+
             ]
         },{
             "title": "Allgemeines",
@@ -97,7 +130,7 @@
                     "title": "Wann ist die App fertig?",
                     "anchor": "when_ready",
                     "textblock": [
-                      "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."  
+                      "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."
                     ]
                 },{
                     "title" : "Wo bekomme ich die App?",
@@ -170,49 +203,6 @@
                 }
             ]
         },{
-            "title": "Open Source",
-            "id": "open-source",
-            "accordion": [
-                {
-                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
-                    "anchor": "why_oss",
-                    "textblock": [
-                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
-                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
-                    ]
-                },
-                {
-                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
-                    "anchor": "oss_complete",
-                    "textblock": [
-                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
-                    ]
-                },
-                {
-                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
-                    "anchor": "how_to_contribute",
-                    "textblock": [
-                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
-                        "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
-                    ]
-                },
-                {
-                    "title": "Warum GitHub und nicht eine andere Plattform?",
-                    "anchor": "github",
-                    "textblock": [
-                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
-                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
-                    ]
-                },{
-                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
-                    "anchor": "coc",
-                    "textblock": [
-                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
-                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
-                    ]
-                }
-            ]
-        },{
             "title": "Smartphone-App",
             "id": "application",
             "accordion": [
@@ -233,10 +223,27 @@
                     ]
                 },
 		{
+                    "title": "Wenn ich die App außerhalb eines WLANs nutze, kommen dann Kosten für die Übertragung mobiler Daten auf mich zu?",
+                    "anchor": "mobile_data_costs",
+                    "textblock": [
+                        "Nein. Die mobilen Daten, die die Corona-Warn-App überträgt, um Diagnoseschlüssel ('Positivkennungen') hochzuladen oder im Fall einer Risiko-Begegnung vom Backend-Server benachrichtigt zu werden, kosten Dich keinen Cent und werden nicht von Deinem vertraglichen Datenvolumen o. ä. abgezogen. Dazu haben sich die deutschen Netzbetreiber verpflichtet."
+                    ]
+                },
+		{
+                    "active": true,
+                    "title" : "Wird es die App auch für Tablets, Smartwatches und andere Wearables geben?",
+                    "anchor": "smartwatch",
+                    "textblock": [
+                        "Eine Umsetzung auf Tablets, Smartwatches und Wearables ist im Moment nicht geplant. Wir konzentrieren uns – auch aufgrund der Verfügbarkeit der nötigen Schnittstellen – ausschließlich auf Smartphones. Sollte sich daran etwas ändern, werden wir das entsprechend kommunizieren und bewerben."
+                    ]
+                },
+		{
                     "title": "Muss ich die App immer geöffnet lassen, damit Begegnungen aufgezeichnet werden?",
                     "anchor": "close_app",
                     "textblock": [
-                        "Nein. Solange Du in der App die Risiko-Ermittlung aktiviert hast und Bluetooth eingeschaltet ist, werden Begegnungen aufgezeichnet. Du kannst die App bedenkenlos schließen, sowohl durch Minimieren als auch durch 'Swipe-to-quit'."
+                        "Nein. Solange Du in der App die Risiko-Ermittlung aktiviert hast und Bluetooth eingeschaltet ist, werden Begegnungen aufgezeichnet. Du kannst die App bedenkenlos schließen, sowohl durch Minimieren als auch durch 'Swipe-to-quit'.",
+			"Siehe auch:",
+			"<ul><li><a href='https://www.coronawarn.app/de/faq/#no_risk_update_ios'>Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?</a></li><li><a href='https://www.coronawarn.app/de/faq/#no_risk_update'>Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?</a></li></ul>"
                     ]
                 },
                 {
@@ -307,6 +314,49 @@
                 }
             ]
         },{
+            "title": "Open Source",
+            "id": "open-source",
+            "accordion": [
+                {
+                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
+                    "anchor": "why_oss",
+                    "textblock": [
+                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
+                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
+                    ]
+                },
+                {
+                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
+                    "anchor": "oss_complete",
+                    "textblock": [
+                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
+                    ]
+                },
+                {
+                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
+                    "anchor": "how_to_contribute",
+                    "textblock": [
+                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
+                        "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
+                    ]
+                },
+                {
+                    "title": "Warum GitHub und nicht eine andere Plattform?",
+                    "anchor": "github",
+                    "textblock": [
+                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
+                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
+                    ]
+                },{
+                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
+                    "anchor": "coc",
+                    "textblock": [
+                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
+                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
+                    ]
+                }
+            ]
+        },{
             "id": "technologies",
             "title": "Technologie",
             "accordion": [
@@ -343,7 +393,7 @@
                         "Um generell die maximale Sicherheit Deines Endgeräts zu gewährleisten, solltest Du immer die aktuellsten Sicherheitsupdates und das neueste für Dein Endgerät verfügbare Betriebssystem installiert haben. Dadurch stellst Du sicher, dass Dein Smartphone in Bezug auf die Sicherheit die neueste jeweils verfügbare Bluetooth-Spezifikation erfüllt.",
 			"Speziell bei Android-Systemen sollte aktuell die Android-Version des jeweils vergangenen Monats (siehe <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>) installiert sein. Detaillierte Informationen, wie Du die jeweils aktuelle Android-Version herausfindest, findest Du hier: <a href='https://support.google.com/android/answer/7680439?hl=de' target='_blank' rel='noopener noreferrer'>Android-Version prüfen und aktualisieren</a>."
                     ]
-                },  
+                },
                 {
                     "title": "Ist das Offenlegen des Quellcodes mit diesem Open-Source-Ansatz keine Gefahr für die Cybersecurity?",
                     "anchor": "oss_dangerous",

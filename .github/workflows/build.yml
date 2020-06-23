@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request 
+# Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       run: npm install
 
     - name: gulp build
-      run: gulp build
+      run: npm run build
 
     - name: Deploy
       run: rsync -av --delete public/ /var/www/html/${GITHUB_REF##*/}

@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import './lib/slick.min.js';
-//import 'what-input';
 
 window.jQuery = $;
 
