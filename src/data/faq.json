@@ -16,7 +16,7 @@
                     "title": "Apple: Why is iOS 13.5 a minimum requirement?",
                     "anchor": "ios135",
                     "textblock": [
-                      "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple does no longer support devices that are older than 4-5 years. We as app developers, unfortunately, cannot change these facts."
+                      "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
                     ]
                 },
                 {
@@ -24,17 +24,17 @@
                     "title": "Android: Why are Android 6 and Google Play Services minimum requirements?",
                     "anchor": "googleplay",
                     "textblock": [
-                      "Google introduces the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available as of Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot change these facts."
+                      "Google delivers the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available starting with Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot influence this."
                     ]
                 },{
                     "active": true,
-                    "title" : "Android: When activating risk identification or Bluetooth I'm asked to activate my location. Do I have to do this?",
+                    "title" : "Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?",
                     "anchor": "android_location",
                     "textblock": [
-                        "Corona-Warn-App does not track your location and doesn't have the permission to do this. The reason for this message is an Android requirement: Bluetooth devices in close proximity can only be detected if 'Use location' is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in the Android developer documentation). However, this doesn't mean that apps that use Bluetooth can automatically track your location!",
-			 "Since Corona-Warn-App must be able to detect devices in close proximity, you have to activate the general system setting 'Use location'. However: The app will never record your location and will never use GPS. You can verify this yourself:",
-			"<ol><li>Open 'Settings' on your phone (not the settings of the app!).</li><li>Choose 'Security & Location' > 'Location' > 'App level permissions'.</li><li>You see a list of apps that can use your location if you give them permission. Corona-Warn-App is not listed here.</li></ol>",
-			"You could now allow or deny other apps to use your location, but since Corona-Warn-App doesn't need this permission, it doesn't even appear in the list.",
+                        "Corona-Warn-App does not track your location and does not have permission to do this. The reason for this message is an Android requirement: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in the Android developer documentation). However, this doesn't mean that apps that use Bluetooth can automatically track your location.",
+			 "Since Corona-Warn-App must be able to detect devices in close proximity, you must activate the general system setting 'Use location'. However: The app will never record your location and will never use GPS. You can verify this yourself:",
+			"<ol><li>Open 'Settings' on your phone (not the settings of the app).</li><li>Choose 'Security & Location' > 'Location' > 'App level permissions'.</li><li>You see a list of apps that can use your location if you give them permission. Corona-Warn-App is not listed here.</li></ol>",
+			"Here you can allow or deny other apps to use your location, but since Corona-Warn-App doesn't need this permission, it doesn't even appear in the list.",
 			"Again, as described above: You should not deactivate 'Use location' under 'Settings' > 'Security & Location' > 'Location', because this is a prerequisite for exchanging the encrypted random IDs."
                     ]
                 },{
@@ -42,7 +42,7 @@
                     "title" : "Why is the app not available in international app stores (other than Germany)?",
                     "anchor": "international",
                     "textblock": [
-                        "This restriction to German app stores is expected to be a temporary constraint, because a number of legal aspects haven’t been clarified yet. We will check with the Robert Koch Institute as soon as possible when we can offer the app in international app stores as well. We will keep you posted!"
+                        "This restriction to German app stores is expected to be a temporary constraint, because a few legal issues haven’t been clarified yet. We will check with the Robert Koch Institute as soon as possible when we can offer the app in international app stores as well. We will keep you posted."
                     ]
                 },{
                     "active": true,
@@ -58,7 +58,7 @@
                     "title" : "Android: The app isn’t available as an APK, neither on GitHub nor on F-Droid etc. Will you also deliver the app as an APK?",
                     "anchor": "apk",
                     "textblock": [
-                        "There are no plans to deliver the app as an APK at the moment, because the app requires Google Play. By distributing the app via Google Play Store, we can be sure that we meet all requirements for the app. However, the developer community currently checks if the app can be enhanced so we can also make it available as an independent APK. For details, please check <a href='https://github.com/corona-warn-app/cwa-documentation/issues/5' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/issues/5</a> and <a href='https://github.com/corona-warn-app/cwa-app-android/issues/514' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/514</a>."
+                        "There are no plans to deliver the app as an APK at the moment because the app requires Google Play. By distributing the app via Google Play Store, we can be sure that we meet all requirements for the app. However, the developer community is currently checking if the app can be enhanced so we can also make it available as an independent APK. For details, please see <a href='https://github.com/corona-warn-app/cwa-documentation/issues/5' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/issues/5</a> and <a href='https://github.com/corona-warn-app/cwa-app-android/issues/514' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/514</a>."
                     ]
                 },{
                     "active": true,
@@ -106,7 +106,7 @@
                     "title" : "Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
                     "anchor": "no_risk_update",
                     "textblock": [
-                        "First, please ensure that you are running the current version of the app. Open the Google Play Store to check if an update for the Corona-Warn-App is available. If yes, please install it and try also a restart of the device to mitigate the problem.",
+                        "First, please ensure that you are running the current version of the app. Open the Google Play Store to check if an update for Corona-Warn-App is available. If yes, please install it and also restart your device to mitigate the problem.",
                         "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, there is a workaround for this:",
                         "<ol><li>Go to the device settings.</li><li>Choose 'Apps' or 'Apps & Notifications'. submenu item</li><li>Choose 'Corona-Warn'.</li><li>Choose 'Power usage'.</li><li>Choose 'App launch'.</li><li>Disable 'Manage automatically'.</li><li>Activate 'Auto-launch'.</li><li>Activate 'Secondary launch'.</li><li>Activate 'Run in Background'.</li><li>Restart your phone.</li><li>Launch Corona-Warn-App.</li></ol>",
                         "These problems can also occur in other applications. For this reason, other manufacturers have already provided a lot of information, including device-specific information, to help solve this problem. Further information can be found for example <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>on Slack</a>. If our generic tips do not help, please try <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>the tips from the Slack documentation</a> for the app 'Corona-Warn' and the corresponding smartphone.",
@@ -255,14 +255,14 @@
                     "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
                     "anchor": "smartwatch",
                     "textblock": [
-                        "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course widely communicate this."
+                        "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course communicate this widely."
                     ]
                 },
 		{
                     "title": "Will exposure logging still work when I close the app?",
                     "anchor": "close_app",
                     "textblock": [
-                        "Yes. As long as you have activated risk identification in the app and Bluetooth is on, exposure is logged in the background. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
+                        "Yes. As long as you have activated exposure logging in the app and Bluetooth is on, encounters are logged in the background. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
 			"See also:",
 			"<ul><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update_ios'>Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update'>Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
                     			]
@@ -319,7 +319,7 @@
                         "The backend of the app is operated by Deutsche Telekom. <a href='https://open-telekom-cloud.com/' target='_blank' rel='noopener noreferrer'>Open Telekom Cloud (OTC)</a> is used here."
                     ]
                 },{
-                    "title" : "iOS: Will risk identification still work if I turn off Bluetooth in my Control Center while keeping it activated in the system settings?",
+                    "title" : "iOS: Will exposure logging still work if I turn off Bluetooth in my Control Center while keeping it activated in the system settings?",
                     "anchor": "ios_logging_bt",
                     "textblock": [
                         "Yes. The option in Control Center (see <a href='https://support.apple.com/en-us/HT208086' target='_blank' rel='noopener noreferrer'>Use Bluetooth and Wi-Fi in Control Center</a>) only disconnects your phone temporarily from any Bluetooth accessories that are currently connected. Bluetooth itself remains activated in the system settings."
@@ -329,7 +329,7 @@
                     "anchor": "hearing_impaired",
                     "textblock": [
                         "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
-			"In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a QR code, which you can scan in the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have neither received a QR code nor a TAN, you would have to call the hotline, which you might not be able to do without outside help.",
+			"In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a QR code, which you can scan into the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have received neither a QR code nor a TAN, would you have to call the hotline, which you might not be able to do without outside help.",
 			"If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing."
                     ]
                 }
@@ -408,11 +408,11 @@
                     ]
                 },
 		{
-                    "title": "Is Bluetooth really secure? What can I do to prevent attackers from introducing malicious software into my phone?",
+                    "title": "Is Bluetooth really secure? What can I do to prevent attackers from introducing malicious software into my device?",
                     "anchor": "bt_security",
                     "textblock": [
-                        "To increase the security of your device in general, you should always install the latest security updates as well as the latest operating system version for your phone. With this, you make sure that your device fulfills the latest security specifications of the Bluetooth protocol that are available.",
-                        "Especially Android systems should always be on the latest Android version (typically published in the previous month, see <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>). Here you can find detailed information on how to determine the latest Android version for you: <a href='https://support.google.com/android/answer/7680439?hl=en' target='_blank' rel='noopener noreferrer'>Check & update your Android version</a>."
+                        "To increase the security of your device in general, you should always install the latest security updates as well as the latest operating system version for your device. By doing this, you make sure that your device fulfills the latest security specifications of the Bluetooth protocol that are available.",
+                        "Especially Android systems should always be on the latest Android version (typically published in the previous month, see <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>). Here you can find detailed information on how to find the latest Android version for your device: <a href='https://support.google.com/android/answer/7680439?hl=en' target='_blank' rel='noopener noreferrer'>Check & update your Android version</a>."
                     ]
                 },
                 {
