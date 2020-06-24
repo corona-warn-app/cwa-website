@@ -257,7 +257,8 @@
                     "title": "Will the device battery drain more quickly with the app running in the background?",
                     "anchor": "battery",
                     "textblock": [
-                        "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology."
+                        "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
+			"<b>Note on Android</b>: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='https://www.coronawarn.app/en/faq/#android_location'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>). This means that also other apps on your device could use your location, which might be a reason for higher power consumption. To avoid this, you should check which apps actually use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps to use your location if you think they don't need this permission. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
 					]
                 },{
                     "active": true,
