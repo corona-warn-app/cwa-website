@@ -46,6 +46,10 @@ $(document).ready(function(){
                 newItem.classList.add('active');
             }
         });
+
+        if (location.hash !== '') {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        }
     }
 
     $('.js-slider').slick({
