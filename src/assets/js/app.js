@@ -36,6 +36,18 @@ $(document).ready(function(){
         }
     });
 
+    const menu = document.querySelector('.js-scroll-navigate');
+    if (menu !== null) {
+        window.addEventListener('hashchange', () => {
+            const oldItem = menu.querySelector('a.active');
+            const newItem = menu.querySelector('a[href="' + location.hash + '"]');
+            if (newItem !== null && oldItem !== null) {
+                oldItem.classList.remove('active');
+                newItem.classList.add('active');
+            }
+        });
+    }
+
     $('.js-slider').slick({
         dots: true,
         infinite: true,
