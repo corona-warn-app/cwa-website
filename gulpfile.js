@@ -12,6 +12,7 @@ const webpack2 = require('webpack');
 const named = require('vinyl-named');
 const autoprefixer = require('autoprefixer');
 var sitemap = require('gulp-sitemap');
+const rimraf = require('rimraf');
 
 
 // Load all Gulp plugins into one variable
@@ -32,7 +33,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(gulp.parallel(pages, javascript, images, copy), sass, build_sitemap)
+  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -40,9 +41,9 @@ gulp.task('default', gulp.series('build', server, watch));
 
 // Delete the "dist" folder
 // This happens every time a build starts
-// function clean(done) {
-//   rimraf(PATHS.dist, done);
-// }
+function clean(done) {
+   rimraf(PATHS.dist, done);
+}
 
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
