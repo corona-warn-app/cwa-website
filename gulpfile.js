@@ -33,7 +33,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-    gulp.series(gulp.parallel(pages, javascript, images_minify, copy), images_webp, sass, build_sitemap)
+    gulp.series(clean, gulp.parallel(pages, javascript, images_minify, copy), images_webp, sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
