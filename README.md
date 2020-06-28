@@ -43,6 +43,13 @@ After a successful build, you'll have a new folder ```public``` in the repositor
 ```
 It will automatically use ```public``` as base directory, go to ```localhost:8080``` to view the website.
 
+### Testing
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. tests are located in the ```cypress/integration``` folder and can be run with:
+```bash
+  npm test
+```
+
+
 ### Updating coronawarn.app
 
 Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
