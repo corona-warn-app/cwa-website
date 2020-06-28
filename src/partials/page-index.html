@@ -14,10 +14,7 @@
         </p>
       </div>
       <div class="col col-12 col-sm-12 col-md-12 col-lg-5">
-          <picture class="section-main-image">
-            <source srcset="{{page-contents.section-main.image.url-webp}}" type="image/webp">
-              <img class="section-main-image" src="{{page-contents.section-main.image.url}}"" title="{{page-contents.section-main.image.title}}"/>
-          </picture>
+        <img class="section-main-image" {{> image-attributes image=page-contents.section-main.image}}/>
       </div>
     </div>
   </div>
@@ -83,12 +80,7 @@
     <div class="row align-items-center">
       <div class="col col-12 col-md-6 image-overflow-container">
         <img class="image-overflow-spacer" src="/assets/img/spacer.gif" alt="" />
-
-          <picture class="image-overflow image-overflow_left">
-            <source srcset="{{page-contents.section-image-text.image.url-webp}}" type="image/webp">
-            <img class="image-overflow image-overflow_left"  src="{{page-contents.section-image-text.image.url}}"" title="{{page-contents.section-image-text.image.title}}"/>
-          </picture>
-
+        <img class="image-overflow image-overflow_left" {{> image-attributes image=page-contents.section-image-text.image}}/>
       </div>
       <div class="col col-12 col-md-6 text-center text-md-left">
         {{> headline-component title=page-contents.section-image-text.headline.title}}
