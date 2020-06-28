@@ -55,7 +55,7 @@
         <ul class="list row">
           {{#each page-contents.section-contribute-listing.content.feature-list}}
           <li class="list-item col col-12 col-sm-6 col-md-4">
-            <span class="list-icon"><img {{> image-attributes image=image}}/></span>
+            <span class="list-icon">{{> image-component image=image}}</span>
             {{> text-component this=.}}
           </li>
           {{/each}}
