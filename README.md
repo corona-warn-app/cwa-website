@@ -8,7 +8,7 @@
     <a href="https://observatory.mozilla.org/analyze/coronawarn.app" title="Latest Results"><img src="https://img.shields.io/mozilla-observatory/grade/coronawarn.app" alt="Mozilla HTTP Observatory Grade"></a>
 </p>
 <p align="center">
-    <a href="#about-this-repository">About this Repository</a> • 
+    <a href="#about-this-repository">About this Repository</a> •
     <a href="#development">Development</a> •
     <a href="#documentation">Documentation</a> •
     <a href="#support-and-feedback">Support and Feedback</a> •
@@ -25,23 +25,26 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need [Node.js](https://nodejs.org/en/), [NPM](https://www.npmjs.com/) and [Gulp](https://gulpjs.com/) to build the website. Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test it locally.
+You need [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test it locally.
 
 ### Getting started
 
-Clone the repository and ensure to have all requirements installed. To build the website, switch to the ```cwa-website``` base directory and execute the commands
+Clone the repository and ensure to have all requirements installed. To build the website, switch to the `cwa-website` base directory and execute the commands
 
 ```bash
-  npm install
-  gulp build
+npm install
+npm run build
 ```
 
-After a successful build, you'll have a new folder ```public``` in the repository's base directory. It contains the generated files for the complete website. To test the generated content, simply use a local web server such as http-server by executing the command 
+After a successful build, you'll have a new folder `public` in the repository's base directory. It contains the generated files for the complete website.
+
+To test the generated content, simply use a local web server such as http-server by executing the command
 
 ```bash
-  http-server
+npm start
 ```
-It will automatically use ```public``` as base directory, go to ```localhost:8080``` to view the website.
+
+It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
 ### Testing
 [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. tests are located in the ```cypress/integration``` folder and can be run with:
@@ -54,7 +57,7 @@ It will automatically use ```public``` as base directory, go to ```localhost:808
 
 Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
 
-## Documentation  
+## Documentation
 The full documentation for the Corona-Warn-App can be found in the [cwa-documentation](https://github.com/corona-warn-app/cwa-documentation) repository. The documentation repository contains technical documents, architecture information, and white papers related to this implementation.
 
 ## Support and Feedback
@@ -65,7 +68,7 @@ The following channels are available for discussions, feedback, and support requ
 | **General discussion, issues, bugs**   | <a href="https://github.com/corona-warn-app/cwa-website/issues/new/choose" title="General Discussion"><img src="https://img.shields.io/github/issues/corona-warn-app/cwa-website/question.svg?style=flat-square"></a> </a>   |
 | **Other requests**    | <a href="mailto:corona-warn-app.opensource@sap.com" title="Email CWA Team"><img src="https://img.shields.io/badge/email-CWA%20team-green?logo=mail.ru&style=flat-square&logoColor=white"></a> |
 
-## How to contribute  
+## How to contribute
 
 The German government has asked SAP and Deutsche Telekom AG to develop the Corona-Warn-App for Germany as open source software. Deutsche Telekom is providing the network and mobile technology and will operate and run the backend for the app in a safe, scalable and stable manner. SAP is responsible for the app development, its framework and the underlying platform. Therefore, development teams of SAP and Deutsche Telekom are contributing to this project. At the same time our commitment to open source means that we are enabling -in fact encouraging- all interested parties to contribute and become part of its developer community.
 
@@ -75,7 +78,7 @@ For more information about how to contribute, the project structure, as well as 
 
 Copyright (c) 2020 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
 
-Licensed under the **Apache License, Version 2.0** (the "License"); you may not use this file except in compliance with the License. 
+Licensed under the **Apache License, Version 2.0** (the "License"); you may not use this file except in compliance with the License.
 
 You may obtain a copy of the License at https://www.apache.org/licenses/LICENSE-2.0.
 

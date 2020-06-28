@@ -3,31 +3,173 @@
         "headline": {
             "title": "Häufig gestellte Fragen zum Corona-Warn-App-Projekt"
         },
+        "texts": {
+            "permalink": "Link zu dieser Antwort"
+        },
         "sections": [{
-            "title": "Allgemeines",
+            "title": "Meist gestellt",
             "active": true,
-            "id": "general",
+            "id": "most_asked",
             "accordion": [
                 {
                     "active": true,
-                    "title": "Muss ich diese App verwenden?",
+                    "title": "Apple: Warum ist iOS 13.5 Mindestvoraussetzung?",
+                    "anchor": "ios135",
                     "textblock": [
-                      "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Du kannst selbst entscheiden, ob Du die Testergebnisse abrufst und ob Du sie bei einem positiven Befund als Diagnoseschlüssel übermittelst – nichts geschieht ohne Deine Zustimmung." ,
+                      "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Die unterstützten Gerätemodelle findest Du unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
+                    ]
+                },
+                {
+                    "active": true,
+                    "title": "Android: Warum sind Android 6 und Google Play-Dienste Mindestvoraussetzungen?",
+                    "anchor": "googleplay",
+                    "textblock": [
+                      "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
+                    "anchor": "android_location",
+                    "textblock": [
+                        "Die Corona-Warn-App fragt Deinen Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Deiner Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Deinem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch deinen Standort erfassen!",
+			"Da die Corona-Warn-App per Bluetooth Geräte in Deiner Nähe erkennen muss, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden. Du kannst das gerne selbst folgendermaßen nachprüfen:",
+			    "<ol><li>Öffne die Einstellungen Deines Smartphones (nicht die Einstellungen in der App!).</li><li>Wähle 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Schau Dir die Liste der Apps an, die auf Deinen Standort zugreifen können, wenn Du es zulässt. Du siehst: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
+			 "An dieser Stelle könntest Du anderen Apps die Berechtigung für den Standortzugriff erteilen oder entziehen, aber da die Corona-Warn-App diese Berechtigung nicht braucht, ist sie auch nicht aufgelistet.",
+			 "Hinweis: Wie oben beschrieben, muss die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort' allerdings aktiviert sein, da sonst der Austausch der verschlüsselten Zufallscodes zur Risiko-Ermittlung nicht funktioniert."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Warum ist die App nicht in einigen internationalen App Stores verfügbar?",
+                    "anchor": "international",
+                    "textblock": [
+                        "Nach eingehender Prüfung der Situation wurde festgestellt, dass eine Veröffentlichung der Corona-Warn-App in App Stores außerhalb von Deutschland im Moment aus rechtlichen Gründen nur nach einer Einzelfallprüfung möglich ist. Rechtliche Beratungen haben ergeben, dass bei einer Veröffentlichung in internationalen App-Stores das Recht des entsprechenden Landes zu berücksichtigen und auf die Corona-Warn-App anzuwenden ist. Das gilt insbesondere für den Datenschutz, eventuell nötige Auskunftsansprüche dortiger Behörden sowie weitere Vertrags- und Verbraucherschutzregularien.",
+                        "Das Robert Koch-Institut als Herausgeber der App wird diese Prüfung für die entsprechenden Länder veranlassen und die App nach erfolgreicher rechtlicher Prüfung freischalten. In einem ersten Schritt wird das RKI die App für einige Staaten Europas freigeben. Diese sind: Niederlande, Belgien, Luxemburg, Frankreich, Österreich, Tschechien, Polen, Dänemark, Rumänien und Bulgarien. Bis zur Verfügbarkeit der App für die einzelnen Länder können noch einige Stunden bis wenige Tage vergehen, wir bitten hier um etwas Geduld.",
+                        "Weitere Länder werden im Moment geprüft und schrittweise in den App Stores freigegeben. Das Robert Koch-Institut bittet um Verständnis, dass es während des laufenden Überprüfungsprozesses zu konkreten Ländern und dem Status ihrer Freigabe keine Auskunft erteilen kann."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Warum gibt es für die Verwendung der Corona-Warn-App auf Android und Apple unterschiedliche Altersbeschränkungen?",
+                    "anchor": "age_restriction",
+                    "textblock": [
+                        "Personen unter 16 Jahren dürfen die App verwenden, wenn ein Erziehungsberechtigter dem zustimmt. Die Altersbeschränkung ab 16 Jahren ist notwendig, da die App im Sinne der Datenschutzgrundverordnung (DSGVO) der EU besonders schützenswerte Daten verarbeitet. Nach Vorgabe der DSGVO können Minderjährige erst nach Vollendung des 16. Lebensjahres wirksam in die Verarbeitung der Daten einwilligen. Dies gilt grundsätzlich für beide Betriebssysteme.",
+			"Wie streng dies jedoch tatsächlich gehandhabt wird, ist in beiden App Stores unterschiedlich:",
+			"<ul><li>Apple wendet im App Store strengere Kriterien an, darunter auch zu Altersbeschränkungen nach DSGVO. Deshalb ist die App ab '17+' freigegeben, und Apple fordert ggf. einen Altersnachweis an.</li><li>Im Google Play Store gilt dagegen die USK-Spezifikation. Gemäß USK ist die App für alle Altersgruppen zugelassen, deshalb gilt im Google Play Store ein Mindestalter von 0 Jahren.</li></ul>"
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Die App ist nicht als APK verfügbar, weder auf GitHub, noch auf F-Droid usw. Werdet Ihr die App auch als APK veröffentlichen?",
+                    "anchor": "apk",
+                    "textblock": [
+                        "Im Moment ist eine Auslieferung auf alternativen Wegen (Download per APK, F-Droid etc.) aus verschiedenen Gründen nicht geplant.",
+                        "Zum einen liegt die Verantwortung für die Auslieferung der App beim Robert Koch-Institut, welches rechtlich und inhaltlich für die Verteilung verantwortlich ist. Im Moment ist hier nur die Auslieferung über die jeweiligen App Stores im Fokus. Weiterhin funktioniert die App nur mit Google Play Services. Mit einer Verteilung über den Play Store kann davon ausgegangen werden, dass Google Play Services instaliert sind. Auf anderen Vertriebswegen können wir diese Annahmen im Moment nicht treffen.",
+                        "Die Auslieferung der bestehenden App auf anderen Kanälen ist im Moment als Anfrage auf <a href='https://github.com/corona-warn-app/cwa-wishlist/issues/57' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-wishlist#57</a> publiziert. Die Diskussion rund um alternative Vertriebsplattformen wie F-Droid findet sich auf <a href='https://github.com/corona-warn-app/cwa-documentation/issues/5' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-documentation#5</a>. Wir werden mit den Partnern klären, inwiefern und wann wir diesen Wünschen nachkommen können.",
+                        "Weiterhin gibt es in der Entwickler-Community eine Initiative, die Corona-Warn-App über entsprechende Erweiterungen unabhängig von Google Play Services lauffähig zu bekommen. Details hierzu finden sich im Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/75' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-android#75</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Ich bekomme beim Einrichten der App folgenden Fehler: URSACHE: 3. Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(17). Was bedeutet das?",
+                    "anchor": "cause_3",
+                    "textblock": [
+                        "Dieser Fehler kann bei der ersten Aktivierung der Risiko-Ermittlung oder auch später in den App-Einstellungen oder auf dem Hauptbildschirm auftreten. Der Fehler bedeutet, dass Dein Gerät aus einem oder mehreren der folgenden Gründe die Risiko-Ermittlung nicht durchführen kann:",
+			"<ul><li>Deine Google Play-Dienste sind veraltet.</li><li>Deine Google Play-Landesversion ist nicht Deutschland.</li><li>Du hast die Corona-Warn-App nicht über den offiziellen Google Play Store installiert.</li><li>Dein Gerät wurde modifiziert (z. B. gerootet).</li><li>Du hast mehrere Benutzerkonten auf Deinem Gerät, und die App wird für einen nicht-primären User (ohne Administrationsrechte) ausgeführt.</li><li>Der Hersteller Deines Geräts hat die Google Play-Dienste und den Google Play Store für Dein Gerät nicht verfügbar gemacht (betrifft z. B. einige Modelle von Huawei und Xiaomi).</li><li>Die Google Mobile Services sind veraltet.</li></ul>",
+			"<b>Fehlerbehebung</b>",
+			"Viele betroffene User konnten den Fehler durch die folgenden Schritte beheben:",
+			"<ol><li>Aktualisiere die Google Play-Dienste auf die neueste Version. Siehe: <a href='https://play.google.com/store/apps/details?id=com.google.android.gms&hl=de' target='_blank' rel='noopener noreferrer'>Google Play-Dienste</a>. In den Geräte-Einstellungen unter 'Apps & Benachrichtigungen' > 'Google Play-Dienste' > 'Erweitert' kannst Du ganz unten die Version überprüfen. Beachte hierzu auch den Hinweis zu den Google Mobile Services unten in dieser Antwort.</li><li>Leere den Cache und die Daten der Google Play-Dienste in den Geräte-Einstellungen unter 'Apps & Benachrichtigungen' > 'Google Play-Dienste' > 'Speicher' > 'Speicherinhalt/Daten löschen' bzw. 'Cache leeren'.</li><li>Ändere die Landesversion von Google Play auf Deutschland wie hier beschrieben: <a href='https://support.google.com/googleplay/answer/7431675?hl=de' target='_blank' rel='noopener noreferrer'>Google Play-Landesversion ändern</a>.</li><li>Prüfe, ob Dein Gerät generell die Risiko-Ermittlung in Deutschland unterstützt: In den Geräte-Einstellungen unter 'Google' > 'Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten' sollte die Corona-Warn-App aufgeführt sein.</li><li>Stelle sicher, dass das Benutzerkonto, mit dem Du Dein Gerät verwendest, Administratorrechte hat: Geräte-Einstellungen > 'System' > 'Erweitert' > 'Mehrere Nutzer'.</li><li>Stelle vor der Installation sicher, dass Du eine bestehende Internetverbindung hast und Bluetooth sowie die allgemeine Standortverwendung aktiviert sind (siehe auch <a href='https://www.coronawarn.app/de/faq/' target='_blank' rel='noopener noreferrer'>hier</a>).</li><li>Starte Dein Gerät neu.</li><li>Deinstalliere die Corona-Warn-App und installiere sie erneut über den Google Play Store (<a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp&hl=de&showAllReviews=true' target='_blank' rel='noopener noreferrer'>Corona-Warn-App</a>).</li></ol>",
+			"Wenn der Fehler weiterhin auftritt, obwohl Du alle Schritte ausgeführt hast, aktiviert Dein Gerät die Risiko-Ermittlung möglicherweise etwas zeitverzögert. Bitte schließe die Corona-Warn-App, warte zwei Stunden und versuche es dann erneut.",
+			"Hinweis zu den Google Mobile Services: Damit die Corona-Warn-App funktioniert, muss Google die Google Mobile Services auf Deinem Gerät automatisch aktualisieren. Manuell ist das nicht möglich. Falls Du die Google Play-Dienste auf die neueste Version aktualisiert hast wie oben beschrieben, musst Du noch auf das automatische Update der Google Mobile Services warten. Versuche es in diesem Fall am nächsten Tag erneut.",
+			"Wir entwickeln die Corona-Warn-App ständig weiter und versuchen, mögliche app-seitige Ursachen für diesen Fehler zu beheben."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Ich teste die Betaversion von iOS 14. Warum funktioniert die Corona-Warn-App nicht?",
+                    "anchor": "ios_14_beta",
+                    "textblock": [
+                        "Auf Geräten mit iOS 14 Beta (verfügbar seit 22.06.2020) startet die Corona-Warn-App aktuell nicht oder mit einer Fehlermeldung. Das liegt daran, dass die Exposure Notification API auf iOS 14 noch nicht verfügbar ist. Siehe <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: In den Einstellungen für das COVID-19-Kontaktprotokoll steht: 'Corona-Warn hat dein Protokoll mit erfassten zufälligen IDs während der letzten 24 Stunden 0-mal überprüft'. Funktioniert die Risiko-Ermittlung nicht?",
+                    "anchor": "no_log_check",
+                    "textblock": [
+                        "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' stammt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Dein Gerät versendet hat und die Corona-Warn-App damit auch noch keinen Abgleich mit den auf Deinem Gerät gesammelten Zufallscodes durchführen konnte. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                    "anchor": "no_risk_update_ios",
+                    "textblock": [
+                        "An sich sollte die Corona-Warn-App problemlos im Hintergrund laufen. Bitte überprüfe die folgenden Einstellungen Deines Smartphones:",
+                        "<b>Hintergrundaktualisierung (allgemein)</b>",
+			"Es ist wichtig, dass Du grundsätzlich die Hintergrundaktualisierung per WLAN und mobile Daten zulässt. Wähle hierzu in den Geräte-Einstellungen 'Allgemein' > 'Hintergrundaktualisierung' und aktiviere die Hintergrundaktualisierung für 'WLAN & Mobile Daten'.",
+                        "Damit lässt Du grundsätzlich zu, dass Apps im Hintergrund Aktualisierungen empfangen können. Welche Apps das tatsächlich tun, kannst du aber für jede App einzeln entscheiden (siehe nächster Schritt).",
+                        "<i>Wichtig: Die mobilen Daten, die bei der Verwendung der Corona-Warn-App übertragen werden, kosten Dich keinen Cent und werden nicht von Deinem vertraglichen Datenvolumen o. ä. abgezogen!</i>",
+			"<b>Hintergrundaktualisierung der Corona-Warn-App</b>",
+			"Bitte prüfe, ob Du die Hintergrundaktualisierung auch für die Corona-Warn-App selbst ausdrücklich erlaubst. Öffne hierzu ebenso die Geräte-Einstellungen, wähle 'Corona-Warn' und aktiviere die Optionen 'Hintergrundaktualisierung' und 'Mobile Daten'. Wie oben erwähnt: Du bezahlst nichts für die mobilen Daten, die über die App übermittelt werden."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                    "anchor": "no_risk_update",
+                    "textblock": [
+                        "Zuallerst stelle bitte sicher dass Du die neueste Version der App installiert hast. Öffne den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Falls das der Fall ist, installiere das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen.",
+                        "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und wenden oft zu aggressives Energiesparen an. Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit im Hintergrund den Risikostatus nicht aktualisieren. Hierzu gibt es allerdings einen Workaround:",
+                        "<ol><li>Öffne die Geräte-Einstellungen.</li><li>Wähle 'Apps' bzw. 'Apps & Benachrichtigungen'.</li><li>Wähle 'Corona-Warn'.</li><li>Wähle 'Akkuverbrauch'.</li><li>Wähle 'App-Start'.</li><li>Deaktiviere 'Automatisch verwalten'.</li><li>Aktiviere 'Auto-Start'.</li><li>Aktiviere 'Sekundärer Start'.</li><li>Aktiviere 'Im Hintergrund ausführen'.</li><li>Starte Dein Smartphone neu.</li><li>Starte die Corona-Warn-App.</li></ol>",
+                        "Diese Probleme können auch bei anderen Anwendungen auftreten. Andere Hersteller haben deswegen bereits sehr viele, auch gerätespezifische Informationen zur Lösung bereitgestellt. Weitere Informationen findest Du z. B. <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>bei Slack</a>. Wenn unsere generischen Tipps nicht helfen, versuche bitte <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>die Tipps aus der Slack-Dokumentation</a> für die Corona-Warn-App und das entsprechende Smartphone anzuwenden.",
+                        "Wir arbeiten an einer Erweiterung der Android-App, sodass diese Einstellung direkt in der App vorgenommen werden kann und man nicht mehr umständlich über die Geräte-Einstellungen gehen muss."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Warum wird der Risiko-Status nur einmal alle 24 Stunden neu ermittelt?",
+                    "anchor": "risk_update_24",
+                    "textblock": [
+                        "Um die Konsistenz zwischen den Apps zu gewährleisten und aufgrund von Einschränkungen im API gibt es derzeit die Restriktion auf die 24 Stunden. Das Thema ist aber aufgenommen und wird so bald wie möglich von der Entwicklung bearbeitet."
+ , "Mehr Infos finden Sie auf Englisch unter <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."                    ]
+                },{
+                    "active": true,
+                    "title" : "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
+                    "anchor": "various_device_problems",
+                    "textblock": [
+                        "Einige User melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich am COVID-19-Kontaktprotokoll des Betriebssystems. Wende Dich hierzu bitte an den Hersteller Deines Geräts.",
+			"Apple-Geräte: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
+			"Android-Geräte: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Ich bekomme folgende Benachrichtigung: 'Region für Kontaktmitteilung geändert. COVID-19-Kontaktmitteilungen werden von \"Corona-Warn\" in dieser Region möglicherweise nicht unterstützt'",
+                    "anchor": "iphone_region_change",
+                    "textblock": [
+                        "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Du kannst die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, kannst Du in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird."
+                    ]
+                }
+
+            ]
+        },{
+            "title": "Allgemeines",
+            "id": "general",
+            "accordion": [
+                {
+                    "title": "Muss ich diese App verwenden?",
+                    "anchor": "have_to_use",
+                    "textblock": [
+                      "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Du kannst selbst entscheiden, ob Du die Testergebnisse abrufst und ob Du sie bei einem positiven Befund als Diagnoseschlüssel ('Positivkennung') übermittelst – nichts geschieht ohne Deine Zustimmung." ,
                       "Außerdem kannst Du sowohl in der App selbst als auch in den Einstellungen Deines Smartphones die Nutzung der COVID-19-Kontaktfunktion deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren."
                     ]
                 },
                 {
                     "title": "Wann ist die App fertig?",
+                    "anchor": "when_ready",
                     "textblock": [
-                      "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."  
+                      "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."
                     ]
                 },{
                     "title" : "Wo bekomme ich die App?",
+                    "anchor": "where_to_get",
                     "textblock": [
-                        "Sobald die App zur Verfügung steht, könnt Ihr sie im App Store von Apple bzw. im Google Play Store herunterladen."
+                        "Seit die App zur Verfügung steht, könnt Ihr sie im App Store von Apple bzw. im Google Play Store herunterladen."
                     ]
                 },{
                     "title" : "Welche konkreten Ziele verfolgt die Bundesregierung mit der Entwicklung einer App zur Begegnungsnachverfolgung?",
+                    "anchor": "objectives",
                     "textblock": [
                         "Die Corona-Warn-App verfolgt das Hauptziel, Personen, die Begegnungen mit einer mit COVID-19 infizierten Person hatten, schnellstmöglich über diese Begegnung zu informieren. Aus epidemiologischer Sicht können die Prozesse der Begegnungsnachverfolgung beschleunigt werden, indem die Corona-Warn-App dabei unterstützt, gefährdete Personen schneller zu informieren.",
                         "Dadurch können mögliche Infektionsketten früher erkannt und unterbrochen werden. Dies kann auch dabei helfen, die bestehenden Beschränkungen zu lockern, um das gesellschaftliche Leben wieder zu normalisieren.",
@@ -35,12 +177,14 @@
                     ]
                 },{
                     "title" : "Welche Gründe waren am Ende ausschlaggebend dafür, den dezentralen Ansatz zur Begegnungsnachverfolgung zu favorisieren?",
+                    "anchor": "reasoning_decentralized",
                     "textblock": [
                         "Im April 2020 hatte sich eine wissenschaftliche Debatte entwickelt, die in der Öffentlichkeit unter dem Schlagwort „zentrale vs. dezentrale Speicherung“ geführt wurde. Neben inhaltlich nachvollziehbaren Argumenten entwickelte sich eine teils ideologische Auseinandersetzung zur zentralen Speicherung, die das Potenzial hatte, das Vertrauen in diesen technologischen Ansatz zu gefährden.",
                         "Ein Vertrauensverlust der Bevölkerung hätte alle Bemühungen und Anstrengungen gefährdet, Infektionsketten mit digitaler Unterstützung früher erkennen und schneller unterbrechen zu können. Daher ist die Bundesregierung aktiv geworden und hat die Projektphilosophie im Sinne eines dezentralen Ansatzes angepasst."
                     ]
                 },{
                     "title" : "Gab es eine Risiko- sowie Kosten/Nutzen-Evaluation der beiden Varianten (zentral/dezentral) und, wenn ja, kann diese Evaluation eingesehen werden?",
+                    "anchor": "constraints",
                     "textblock": [
                         "Eine wissenschaftlich belastbare Evaluation liegt aufgrund der Komplexität dieser Thematik und auch aufgrund der fehlenden praktischen Erfahrung mit den zugrunde liegenden Technologien sowie aus o.g. Gründen nicht vor.",
                         "Beide Ansätze haben Vor- und Nachteile im Hinblick auf die Nutzbarkeit und wurden intensiv mit fachkundigem Personal universitärer aber auch außeruniversitärer Forschungseinrichtungen, des Robert Koch-Instituts sowie des Bundesamts für Sicherheit in der Informationstechnik (BSI) und des Beauftragten für den Datenschutz und die Informationsfreiheit (BfDI) diskutiert.",
@@ -56,67 +200,40 @@
                     ]
                 },{
                     "title" : "Wie ist gewährleistet, dass ich bei der Nutzung der Corona-Warn-App anonym bleibe?",
+                    "anchor": "anonymous",
                     "textblock": [
-                        "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
-                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z. B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Diagnoseschlüssel per TeleTAN hochgeladen werden, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
+                        "Die Geräte in Deiner Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Deiner Nähe keine weiteren Informationen von Deinem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln ('Positivkennungen') verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Deines Geräts ist nicht möglich.",
+                        "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z. B. eine Person, die jeden Tag im Bus neben Dir sitzt, Dich selbst dann nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Du die Erlaubnis erteilst, dass Deine Positivkennung per TeleTAN hochgeladen wird, musst Du dich auch identifizieren. Diese Identifizierung dient aber nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Solltest Du trotzdem noch Bedenken haben, könntest Du dafür ein anderes Gerät als das verwenden, auf dem Du die Corona-Warn-App installiert hast."
+                    ]
+                },{
+                    "title" : "Werden die Kontaktprotokolle bzw. die gesammelten zufälligen IDs von meinem Smartphone gelöscht, wenn ich die App deinstalliere?",
+                    "anchor": "delete_random_ids",
+                    "textblock": [
+                        "Nein. Die Kontaktprotokolle bzw. die gesammelten zufälligen IDs werden erst von Deinem Gerät entfernt, wenn du sie über die Geräte-Einstellungen löschst. Das bedeutet, dass keine Begegnungen verloren gehen, wenn Du die App deinstallierst und später erneut installierst."
                     ]
                 },{
                     "title" : "Wo kann ich Informationen finden, Fragen stellen oder Themen diskutieren, bei denen es um die Corona-Warn-App geht, die aber nicht entwicklungsbezogen sind?",
+                    "anchor": "non_dev_related",
                     "textblock": [
                         "Im Open-Source-Projekt für die Corona-Warn-App und auf der zugehörigen Website coronawarn.app geht es um die Open-Source-Entwicklung der App. Die Website und die GitHub-Repositories sind nur für Themen im Zusammenhang mit der App-Entwicklung gedacht, nicht für Informationen zu anderen Aspekten, wie rechtliche Fragen, Informationen für die nutzenden Personen usw. Fragen diesbezüglich könnt Ihr über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen."
                     ]
                 },{
                     "title" : "Können die übermittelten Informationen zu mir und meinen früheren Aktivitäten zurückverfolgt werden?",
+                    "anchor": "traceback",
                     "textblock": [
-                        "Das Smartphone erzeugt so genannte Temporary Exposure Keys. Diese werden zufällig und ausschließlich lokal auf dem Gerät generiert. Es ist kryptografisch nicht möglich, zwei zufällig generierte Diagnoseschlüssel zu einem Gerät zurückzuverfolgen, ohne weitere Informationen zu haben oder Zugang zum sicheren Speicher des Geräts zu erhalten. Darüber hinaus werden nur Schlüssel der letzten 14 Tage gemeldet. Ein darüberhinausgehendes Weiterverfolgen ist nicht möglich oder vorgesehen."
+                        "Das Smartphone erzeugt so genannte Temporary Exposure Keys. Diese werden zufällig und ausschließlich lokal auf dem Gerät generiert. Es ist kryptografisch nicht möglich, zwei zufällig generierte Diagnoseschlüssel ('Positivkennungen') zu einem Gerät zurückzuverfolgen, ohne weitere Informationen zu haben oder Zugang zum sicheren Speicher des Geräts zu erhalten. Darüber hinaus werden nur Schlüssel der letzten 14 Tage gemeldet. Ein darüberhinausgehendes Weiterverfolgen ist nicht möglich oder vorgesehen."
                     ]
                 },{
                     "title" : "Werden Bewegungs- oder Begegnungsprofile zentral gespeichert?",
+                    "anchor": "central_storage",
                     "textblock": [
-                        "Weder Dein Standort noch die Informationen über eine mögliche Begegnung zu einer infizierten Person werden zentral gespeichert. Das System weiß zu jedem Zeitpunkt nur, dass ein Diagnoseschlüssel zu einer positiv getesteten Person gehört. Das System weiß weder, wen diese Person getroffen hat, noch wo oder wann es zu der Begegnung kam. Damit die App erkennen kann, dass eine Begegnung stattgefunden hat, ist keine Identifizierung notwendig. Eine Identifizierung ist nur erforderlich, um die Ergebnisse abzurufen und den Diagnoseschlüssel zu übermitteln. Die App verbindet sich im Rahmen dieses Projekts nicht mit irgendwelchen Profilen in sozialen Medien und wird dies auch in Zukunft nicht tun."
+                        "Weder Dein Standort noch die Informationen über eine mögliche Begegnung zu einer infizierten Person werden zentral gespeichert. Das System weiß zu jedem Zeitpunkt nur, dass ein Diagnoseschlüssel ('Positivkennung') zu einer positiv getesteten Person gehört. Das System weiß weder, wen diese Person getroffen hat, noch wo oder wann es zu der Begegnung kam. Damit die App erkennen kann, dass eine Begegnung stattgefunden hat, ist keine Identifizierung notwendig. Eine Identifizierung ist nur erforderlich, um die Ergebnisse abzurufen und die Positivkennung zu übermitteln. Die App verbindet sich im Rahmen dieses Projekts nicht mit irgendwelchen Profilen in sozialen Medien und wird dies auch in Zukunft nicht tun."
                     ]
                 },{
                     "title" : "Gibt es eine zentrale Stelle, die die Kontrolle über alle Begegnungsereignisse hat?",
+                    "anchor": "central_entity",
                     "textblock": [
-                        "Die App selbst speichert keinerlei Informationen über einzelne potenzielle Begegnungsereignisse. Das Exposure Notification Framework, auf dem die App aufbaut, speichert in sicherer Form die sichtbaren Rolling Proximity Identifiers (RPIs) auf den Smartphones ab, die sich innerhalb eines bestimmten Zeitraums in nächster Nähe aufgehalten haben. Selbst wenn die zentrale Infrastruktur kompromittiert wird, kann diese Information nicht zu einem Smartphone zurückverfolgt werden, wenn nicht ohnehin schon Zugriff auf das Smartphone besteht. Selbst dann kann die App selbst nicht auf die RPIs zugreifen. Auf die Diagnoseschlüssel kann nur mit Zustimmung der nutzenden Person zugegriffen werden, und auch dies ist nur für einen kurzen Zeitraum möglich. Vor der Verarbeitung der Daten werden die Informationen entfernt, die die Diagnoseschlüssel und die Verbindungsmetadaten miteinander verknüpfen."
-                    ]
-                }
-            ]
-        },{
-            "title": "Open Source",
-            "id": "open-source",
-            "accordion": [
-                {
-                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
-                    "textblock": [
-                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
-                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
-                    ]
-                },
-                {
-                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
-                    "textblock": [
-                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
-                    ]
-                },
-                {
-                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
-                    "textblock": [
-                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
-                        "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
-                    ]
-                },
-                {
-                    "title": "Warum GitHub und nicht eine andere Plattform?",
-                    "textblock": [
-                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
-                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
-                    ]
-                },{
-                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
-                    "textblock": [
-                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
-                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
+                        "Die App selbst speichert keinerlei Informationen über einzelne potenzielle Begegnungsereignisse. Das Exposure Notification Framework, auf dem die App aufbaut, speichert in sicherer Form die sichtbaren Rolling Proximity Identifiers (RPIs) auf den Smartphones ab, die sich innerhalb eines bestimmten Zeitraums in nächster Nähe aufgehalten haben. Selbst wenn die zentrale Infrastruktur kompromittiert wird, kann diese Information nicht zu einem Smartphone zurückverfolgt werden, wenn nicht ohnehin schon Zugriff auf das Smartphone besteht. Selbst dann kann die App selbst nicht auf die RPIs zugreifen. Auf die Diagnoseschlüssel ('Positivkennungen') kann nur mit Zustimmung der nutzenden Person zugegriffen werden, und auch dies ist nur für einen kurzen Zeitraum möglich. Vor der Verarbeitung der Daten werden die Informationen entfernt, die die Poisitivkennung und die Verbindungsmetadaten miteinander verknüpfen."
                     ]
                 }
             ]
@@ -126,26 +243,47 @@
             "accordion": [
                 {
                     "title": "Welche personenbezogenen Daten werden in der App gespeichert?",
+                    "anchor": "personal_data",
                     "textblock": [
                         "Wie in der Datenschutz-Grundverordnung (DSGVO) vorgeschrieben, ist die Datenminimierung das oberste Gebot für die Umsetzung der App. Die nutzenden Personen können und müssen in Verbindung mit der App ausschließlich die folgenden Angaben machen:",
-                        "<ul><li>Zustimmung zur Nutzung des Exposure Notification Frameworks</li><li>Eingabe von TANs zur Verifizierung von Testergebnissen</li><li>Zustimmung zum Upload der täglichen Diagnoseschlüssel</li></ul>",
-                        "Apps können über das Exposure Notification Framework keine Daten zum Standort sammeln. Die Diagnoseschlüssel werden nur für den epidemiologisch relevanten Zeitraum von 14 Tagen zentral gespeichert und nach den 14 Tagen automatisch entfernt."
+                        "<ul><li>Zustimmung zur Nutzung des Exposure Notification Frameworks</li><li>Eingabe von TANs zur Verifizierung von Testergebnissen</li><li>Zustimmung zum Upload der täglichen Diagnoseschlüssel ('Positivkennungen')</li></ul>",
+                        "Apps können über das Exposure Notification Framework keine Daten zum Standort sammeln. Die Positivkennungen werden nur für den epidemiologisch relevanten Zeitraum von 14 Tagen zentral gespeichert und nach den 14 Tagen automatisch entfernt."
 					]
                 },
                 {
                     "title": "Wird mein Smartphone-Akku nicht schnell leerlaufen mit der App im Hintergrund?",
+                    "anchor": "battery",
                     "textblock": [
-                        "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy)."
+                        "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy).",
+			"<b>Besonderheit bei Android</b>: Bluetooth-Geräte in Deiner Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf den Gerät aktiviert ist (Details siehe <a href='https://www.coronawarn.app/de/faq/#android_location'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, solltest Du prüfen, welche Apps tatsächlich Deinen Standort nutzen. Öffne hierzu die Geräte-Einstellungen und wähle 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'. Hier kannst Du installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Deinen Standort zu, deshalb ist sie nicht aufgelistet."
+                    ]
+                },
+		{
+                    "title": "Wenn ich die App außerhalb eines WLANs nutze, kommen dann Kosten für die Übertragung mobiler Daten auf mich zu?",
+                    "anchor": "mobile_data_costs",
+                    "textblock": [
+                        "Nein. Die mobilen Daten, die die Corona-Warn-App überträgt, um Diagnoseschlüssel ('Positivkennungen') hochzuladen oder im Fall einer Risiko-Begegnung vom Backend-Server benachrichtigt zu werden, kosten Dich keinen Cent und werden nicht von Deinem vertraglichen Datenvolumen o. ä. abgezogen. Dazu haben sich die deutschen Netzbetreiber verpflichtet."
+                    ]
+                },
+		{
+                    "title" : "Wird es die App auch für Tablets, Smartwatches und andere Wearables geben?",
+                    "anchor": "smartwatch",
+                    "textblock": [
+                        "Eine Umsetzung auf Tablets, Smartwatches und Wearables ist im Moment nicht geplant. Wir konzentrieren uns – auch aufgrund der Verfügbarkeit der nötigen Schnittstellen – ausschließlich auf Smartphones. Sollte sich daran etwas ändern, werden wir das entsprechend kommunizieren und bewerben."
                     ]
                 },
 		{
                     "title": "Muss ich die App immer geöffnet lassen, damit Begegnungen aufgezeichnet werden?",
+                    "anchor": "close_app",
                     "textblock": [
-                        "Nein. Solange Du in der App die Risiko-Ermittlung aktiviert hast und Bluetooth eingeschaltet ist, werden Begegnungen aufgezeichnet. Du kannst die App schließen."
+                        "Nein. Solange Du in der App die Risiko-Ermittlung aktiviert hast und Bluetooth eingeschaltet ist, werden Begegnungen aufgezeichnet. Du kannst die App bedenkenlos schließen, sowohl durch Minimieren als auch durch 'Swipe-to-quit'.",
+			"Siehe auch:",
+			"<ul><li><a href='https://www.coronawarn.app/de/faq/#no_risk_update_ios'>Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?</a></li><li><a href='https://www.coronawarn.app/de/faq/#no_risk_update'>Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?</a></li></ul>"
                     ]
                 },
                 {
                     "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
+                    "anchor": "minimum_requirements",
                     "textblock": [
                         "iPhone: Die App läuft auf iOS-Smartphones ab dem iPhone 6s. Die Version des Betriebssystems muss  iOS 13.5 oder höher sein, da mit dieser Version die Exposure Notification API eingeführt wurde.",
                         "Android: Die App läuft auf Smartphones ab Android 6 ('Marshmallow'). Die Exposure Notification API wurde hier bereits über die Google-Play-Dienste eingespielt.",
@@ -153,19 +291,22 @@
                     ]
                 },
 		{
-                    "title": "Werden die gesammelten Zufallskennungen in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
+                    "title": "Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
+                    "anchor": "backup",
                     "textblock": [
-                        "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufallskennungen können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
+                        "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufallscodes können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
                     ]
                 },
                 {
                     "title": "Wird die App auch auf alternativen Plattformen zu App Store und Google Play Store zur Verfügung gestellt? ",
+                    "anchor": "other_platforms",
                     "textblock": [
                         "Wir beabsichtigen nicht, die App in anderen App Stores außer denen von Google oder Apple zur Verfügung zu stellen. Die App wird die Apple und Google Exposure Notification APIs verwenden. Die Community kann sich gerne einbringen und die App für andere APIs übernehmen."
                     ]
                 },
                 {
                     "title": "Wie wird der Stand in GitHub auf die App in den App Stores übertragen?",
+                    "anchor": "dev_status",
                     "textblock": [
                         "Die App wird über Standardwerkzeuge (z. B. Xcode, Android Studio) erstellt und dann in die jeweiligen App Stores hochgeladen.",
                         "Das Thema, ob der Code in GitHub wirklich mit der App in den jeweiligen App Stores übereinstimmt ('Reproducible Builds'), haben wir auf dem Schirm und werden entsprechende Informationen veröffentlichen, sobald sie verfügbar sind. Details zum Fortschritt findest Du im entsprechenden <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
@@ -173,38 +314,80 @@
                 },
                 {
                     "title": "Wie erfolgt die Information über ein Infektionsrisiko?",
+                    "anchor": "risk_info",
                     "textblock": [
                         "So funktioniert die App:",
-                        "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden.</li><li>Falls Du positiv getestet wurdest, kannst Du Deine Diagnoseschlüssel auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass eine Begegnung mit einer Person bestand, die positiv auf Corona getestet wurde.</li><li>Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel wie in Schritt 1 beschrieben notwendig. Die Information über eine Begegnung aus Schritt 3 benötigt keine Bluetooth-Verbindung.</li></ol>",
+                        "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden.</li><li>Falls Du positiv getestet wurdest, kannst Du Deine Diagnoseschlüssel ('Positivkennung') auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass eine Begegnung mit einer Person bestand, die positiv auf Corona getestet wurde.</li><li>Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel wie in Schritt 1 beschrieben notwendig. Die Information über eine Begegnung aus Schritt 3 benötigt keine Bluetooth-Verbindung.</li></ol>",
                         "Das <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a> beschreibt den technischen Ablauf im Detail."
                     ]
                 },{
                     "title" : "Wie erfolgt die Kommunikation zwischen Server und Smartphone?",
+                    "anchor": "client_server",
                     "textblock": [
                         "Die Details dazu findest Du (in englischer Sprache) in unserem <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a>."
                     ]
                 },{
                     "title" : "Wer wird das Backend der App betreiben?",
+                    "anchor": "backend_ops",
                     "textblock": [
                         "Das Backend der App wird von der Deutschen Telekom betrieben. Dabei kommt die <a href='https://open-telekom-cloud.com/' target='_blank' rel='noopener noreferrer'>Open Telekom Cloud (OTC)</a> zum Einsatz."
                     ]
                 },{
-                    "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortermittlung. Muss ich das aktivieren?",
-                    "textblock": [
-                        "Es handelt sich hier um eine Besonderheit von Android. Bluetooth-Geräte in Deiner Nähe können nur gefunden werden, wenn auch die Standortermittlung aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation).",
-			 "Die Corona-Warn-App muss in der Lage sein, Geräte in der Nähe zu finden, also muss die Standortermittlung als Voraussetzung aktiviert werden. Allerdings wird die App zu keiner Zeit Deinen Standort erfassen oder GPS verwenden."
-                    ]
-                },{
                     "title" : "iOS: Funktioniert die Risiko-Ermittlung noch, wenn ich Bluetooth im Kontrollzentrum abschalte, aber in den Systemeinstellungen aktiviert lasse?",
+                    "anchor": "ios_logging_bt",
                     "textblock": [
                         "Ja. Mit der Option im Kontrollzentrum (siehe <a href='https://support.apple.com/de-de/HT208086' target='_blank' rel='noopener noreferrer'>Bluetooth und WLAN im Kontrollzentrum verwenden</a>) trennst Du lediglich vorübergehend die Verbindung zu aktuell verbundenem Bluetooth-Zubehör. Bluetooth an sich ist in den Systemeinstellungen aber nach wie vor aktiv."
                     ]
                 },{
                     "title" : "Ich bin gehörlos oder schwerhörig. Telefonieren ist problematisch für mich. Worauf muss ich bei der Nutzung der App achten?",
+                    "anchor": "hearing_impaired",
                     "textblock": [
                         "Grundsätzlich: Die App ist barrierefrei entwickelt worden (siehe <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md#barrierefreiheit' target='_blank' rel='noopener noreferrer'>Scoping-Dokument</a>) und unterstützt die gängigen Bedienungshilfen des Smartphone-Betriebssystems.",
 			"In der Regel ist eine Kommunikation per Telefon nicht notwendig. Im Falle eines positiven Befunds erhältst Du das Testergebnis standardmäßig mittels eines QR-Codes, den Du in der App einlesen kannst. Falls das Testzentrum bzw. das Labor diesen Weg nicht unterstützt oder Du den QR-Code nicht scannen möchtest, erhältst Du eine TAN. Nur wenn Du mit einem positiven Befund weder einen QR-Code noch eine TAN erhalten hast, müsstest Du die Hotline anrufen, was über die App nicht bzw. nur über Dritte möglich wäre.",
 			"Solltest du wegen einer Hörschwäche nicht telefonieren können, empfiehlt es sich, darauf gleich beim Test hinzuweisen, da auch hier für die weitere Kommunikation besondere Maßnahmen einzuhalten sind. So kann sichergestellt werden, dass Du die TAN - wenn benötigt - gleich vorab schriftlich erhältst."
+                    ]
+                }
+            ]
+        },{
+            "title": "Open Source",
+            "id": "open-source",
+            "accordion": [
+                {
+                    "title": "Warum verfolgen wir einen Open-Source-Ansatz?",
+                    "anchor": "why_oss",
+                    "textblock": [
+                        "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
+                        "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z. B. in Form von Reviews und Pull Requests."
+                    ]
+                },
+                {
+                    "title": "Sehe ich wirklich den kompletten Code des Projekts?",
+                    "anchor": "oss_complete",
+                    "textblock": [
+                        "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
+                    ]
+                },
+                {
+                    "title": "Wie kann die Entwicklungs-Community zum Projekt beitragen?",
+                    "anchor": "how_to_contribute",
+                    "textblock": [
+                        "Das Open-Source-Projekt verwendet GitHub, einen in dem Bereich weltbekannten Onlinedienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt. Dort können sich alle Interessierten am Projekt beteiligen, z. B. durch das Beheben von Fehlern im Code, bei der Dokumentation oder durch das Einbringen von Fragen und Kommentaren zum Projekt.",
+                        "Die Zusammenarbeit innerhalb der Community unterliegt einem Code of Conduct. Alle Richtlinien zur Beteiligung findest Du <a href='/de/community/'>hier</a>."
+                    ]
+                },
+                {
+                    "title": "Warum GitHub und nicht eine andere Plattform?",
+                    "anchor": "github",
+                    "textblock": [
+                        "Wir sind der Auffassung, dass GitHub eine sehr gut etablierte und entsprechend respektierte Plattform für Open-Source-Projekte ist. GitHub ist die weltweit größte Open-Source-Plattform mit über 40 Millionen registrierten Personen und mehr als 100 Millionen Repositories, davon >30 Millionen öffentlich zugänglich.",
+                        "Wenn jemand keinen GitHub-Account erstellen möchte, gibt es auch ohne Account die Möglichkeit, den Code einzusehen."
+                    ]
+                },{
+                    "title": "Welche Verhaltensregeln gelten für die Mitwirkung?",
+                    "anchor": "coc",
+                    "textblock": [
+                        "Ein Entwicklungsprojekt in einer produktiven, kollaborierenden Community kann nur Erfolg haben, wenn wir uns gegenseitig mit Respekt begegnen. Alle Mitglieder der Projekt-Community müssen sich deshalb an einen <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct (Verhaltenskodex)</a> halten.",
+                        "Verstöße gegen den Code of Conduct können von allen Mitgliedern der Community an die Projektverantwortlichen oder an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> gemeldet werden und ziehen Konsequenzen wie Verwarnung oder Ausschluss nach sich."
                     ]
                 }
             ]
@@ -214,6 +397,7 @@
             "accordion": [
                 {
                     "title": "Ist ein datenschutzkonformer Umgang mit den Nutzerdaten möglich?",
+                    "anchor": "data_privacy",
                     "textblock": [
                         "Die dezentrale Datenspeicherung auf den Geräten garantiert Datenschutz.",
 						"Wir arbeiten sehr eng mit Experten aus der Datenschutz-Community zusammen und stimmen uns während des Entwicklungsprozesses eng miteinander ab. Zudem arbeiten wir an einem dedizierten Dokument zur Datensicherheit, das schon bald publiziert werden soll.",
@@ -222,28 +406,32 @@
                 },
                 {
                     "title": "Kann ich durch Abhören des Netzwerkverkehrs als Corona-positiv identifiziert werden? ",
+                    "anchor": "traffic_monitoring",
                     "textblock": [
-                        "Etablierte Verschlüsselungsmechanismen wie HTTPS stellen sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können.",
-						"Darüber hinaus wird es in Kürze weitere technische Maßnahmen geben, z. B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
+                        "Etablierte Verschlüsselungsmechanismen wie HTTPS stellen sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln ('Positivkennungen') werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können.",
+						"Darüber hinaus wird es in Kürze weitere technische Maßnahmen geben, z. B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet und dann im Backend wieder verworfen werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
                     ]
                 },
                 {
                     "title": "Was wird genau gespeichert und wer kann auf die über Bluetooth gesammelten Daten zugreifen?",
+                    "anchor": "data_access",
                     "textblock": [
-                        "Über Bluetooth werden konstant wechselnde Zufallskennungen versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
-						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufallskennungen in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
+                        "Über Bluetooth werden konstant wechselnde Zufallscodes versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
+						"Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufallscodes in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
 						"Sobald eine Person positiv getestet wurde, wird sie gebeten, die Temporary Exposure Keys der letzten 14 Tage zu teilen. Der Zugriff auf diese Schlüssel erfolgt über die Exposure Notification API, allerdings nur dann, wenn die nutzende Person aktiv ihre Zustimmung gegeben hat."
                     ]
                 },
 		{
                     "title": "Ist die eingesetzte Bluetooth-Technologie wirklich sicher? Wie kann ich verhindern, dass ich mir eventuell schädliche Software einfange?",
+                    "anchor": "bt_security",
                     "textblock": [
                         "Um generell die maximale Sicherheit Deines Endgeräts zu gewährleisten, solltest Du immer die aktuellsten Sicherheitsupdates und das neueste für Dein Endgerät verfügbare Betriebssystem installiert haben. Dadurch stellst Du sicher, dass Dein Smartphone in Bezug auf die Sicherheit die neueste jeweils verfügbare Bluetooth-Spezifikation erfüllt.",
-			"Speziell bei Android-Systemen sollte aktuell die Android-Version des jeweils vergangenen Monats (siehe <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>) installiert sein. Detaillierte Informationen, wie Du die jeweils aktuelle Android-Version herausfindest, findest Du hier: <a href='https://support.google.com/android/answer/7680439?hl=de' target='_blank' rel='noopener noreferrer'>Android-Version prüfen und aktualisieren</a>"
+			"Speziell bei Android-Systemen sollte aktuell die Android-Version des jeweils vergangenen Monats (siehe <a href='https://source.android.com/security/bulletin' target='_blank' rel='noopener noreferrer'>Android Security Bulletins</a>) installiert sein. Detaillierte Informationen, wie Du die jeweils aktuelle Android-Version herausfindest, findest Du hier: <a href='https://support.google.com/android/answer/7680439?hl=de' target='_blank' rel='noopener noreferrer'>Android-Version prüfen und aktualisieren</a>."
                     ]
-                },  
+                },
                 {
                     "title": "Ist das Offenlegen des Quellcodes mit diesem Open-Source-Ansatz keine Gefahr für die Cybersecurity?",
+                    "anchor": "oss_dangerous",
                     "textblock": [
                         "Im Gegenteil: Die Open-Source-Community erhöht die Sicherheit der Software, da der Quellcode offen liegt und alle interessierten Personen den Code herunterladen und Zeile für Zeile überprüfen können.",
 						"Wir glauben daran, dass Sicherheit nicht durch Intransparenz gewährleistet wird. Deshalb verfolgen wir einen Open-Source-Ansatz."
