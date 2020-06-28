@@ -5,7 +5,13 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:run:chrome": "./node_modules/.bin/cypress run --browser chrome",
+    "cypress:run:firefox": "./node_modules/.bin/cypress run --browser firefox",
+    "test": "start-server-and-test start http://localhost:8000 cypress:run",
+    "test:chrome": "start-server-and-test start http://localhost:8000 cypress:run:chrome",
+    "test:firefox": "start-server-and-test start http://localhost:8000 cypress:run:firefox"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "Apache-2.0",
@@ -35,5 +41,9 @@
     "webpack-stream": "^5.2.1",
     "yargs": "^15.3.1"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "start-server-and-test": "^1.11.0",
+    "cypress": "^4.8.0"
+  }
 }
