@@ -118,6 +118,12 @@
                         "We are working on an extension of the Android app so that this setting can be done directly in the app and you don't have to go through the device settings in a complicated way."
                     ]
                 },{
+                    "title": "An encounter has been reported, but the risk status stays green",
+                    "anchor": "encounter_but_green",
+                    "textblock": [
+                      "All active Corona-Warn-Apps download the diagnosis keys released on the Corona-Warn-App server regularly and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this indicates that the user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.", "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are discarded as harmless. This is why the Corona-Warn-App can display encounters, but the risk status stays the same."
+                    ]
+                },{
                     "active": true,
                     "title" : "Why is the risk status only once every 24 hours?",
                     "anchor": "risk_update_24",
@@ -290,8 +296,13 @@
 			"See also:",
 			"<ul><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update_ios'>Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update'>Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
                     			]
-                },
-                {
+                },{
+                    "title": "What happens if I switch off Bluetooth (and for Android, the location)?",
+                    "anchor": "bluetooth_off",
+                    "textblock": [
+                      "Encounters with other smartphones that have the Corona-Warn-App running will not be logged, because the smartphones do not exchange the random IDs. Therefore, make sure to have Bluetooth (and for Android, the location) active whenever you meet someone, be it guests or when you're on the road."
+                    ]
+                },{
                     "title": "Will the app be made available on platforms other than Apple App Store and Google Play Store?",
                     "anchor": "other_platforms",
                     "textblock": [
