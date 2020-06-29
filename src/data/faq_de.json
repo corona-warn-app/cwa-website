@@ -118,6 +118,12 @@
                         "Wir arbeiten an einer Erweiterung der Android-App, sodass diese Einstellung direkt in der App vorgenommen werden kann und man nicht mehr umständlich über die Geräte-Einstellungen gehen muss."
                     ]
                 },{
+                    "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
+                    "anchor": "encounter_but_green",
+                    "textblock": [
+                      "Alle aktiven Corona-Warn-Apps laden regelmäßig vom Corona-Warn-App-Server die dort veröffentlichten Positivkennungen herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Ein solches Zusammenpassen zeigt an, dass sich das Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, an dem Tag, zu dem die Positivkennung gehört, begegnet sind.", "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h., ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert."
+                    ]
+                },{
                     "active": true,
                     "title" : "Warum wird der Risiko-Status nur einmal alle 24 Stunden neu ermittelt?",
                     "anchor": "risk_update_24",
@@ -292,8 +298,13 @@
 			"Siehe auch:",
 			"<ul><li><a href='https://www.coronawarn.app/de/faq/#no_risk_update_ios'>Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?</a></li><li><a href='https://www.coronawarn.app/de/faq/#no_risk_update'>Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?</a></li></ul>"
                     ]
-                },
-                {
+                },{
+                    "title": "Was passiert, wenn ich Bluetooth (und bei Android den Standort) ausschalte?",
+                    "anchor": "bluetooth_off",
+                    "textblock": [
+                      "Begegnungen mit anderen Smartphones, die die Corona-Warn-App laufen haben, können nicht aufgezeichnet werden, weil keine Zufallscodes ausgetauscht werden. Haben Sie deswegen bitte immer Bluetooth (und bei Android den Standort) aktiviert, wenn Sie Kontakt zu anderen Leuten haben, zum Beispiel, wenn Sie Gäste bekommen oder Sie unterwegs sind."
+                    ]
+                },{
                     "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
                     "anchor": "minimum_requirements",
                     "textblock": [
