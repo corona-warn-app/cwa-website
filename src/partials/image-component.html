@@ -1,1 +1,13 @@
-<div class="image-block"><img {{> image-attributes image=image}}/></div>
+<div class="image-block">
+	{{#if image.url-webp}}
+		<picture>
+			<source srcset="{{image.url-webp}}" type="image/webp">
+		
+		<img src="{{image.url}}"{{#if image.url-set}} srcset="{{image.url-set}}"{{/if}}{{#if image.title}} title="{{image.title}}"{{#unless image.alt}} alt="{{image.title}}"{{/unless}}{{/if}}{{#if image.alt}} alt="{{image.alt}}"{{/if}} {{#unless image.alt}} {{#unless image.title}} alt="" {{/unless}} {{/unless}}/>
+
+
+  		</picture>
+	{{else}}
+		<img src="{{image.url}}"{{#if image.url-set}} srcset="{{image.url-set}}"{{/if}}{{#if image.title}} title="{{image.title}}"{{#unless image.alt}} alt="{{image.title}}"{{/unless}}{{/if}}{{#if image.alt}} alt="{{image.alt}}"{{/if}} {{#unless image.alt}} {{#unless image.title}} alt="" {{/unless}} {{/unless}}/>
+	{{/if}}
+</div>
