@@ -13,7 +13,7 @@ const named = require('vinyl-named');
 const autoprefixer = require('autoprefixer');
 var sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
-
+const webp = require('gulp-webp');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -33,7 +33,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass, build_sitemap)
+    gulp.series(clean, gulp.parallel(pages, javascript, images_minify, copy), images_webp, sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -141,12 +141,19 @@ function javascript() {
 
 // Copy images to the "dist" folder
 // In production, the images are compressed
-function images() {
+function images_minify() {
   return gulp
     .src('src/assets/img/**/*')
     .pipe(
       $.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })]))
     )
+    .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+}
+
+function images_webp() {
+  return gulp
+    .src('src/assets/img/**/*')
+    .pipe(webp())
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
@@ -193,7 +200,7 @@ function watch() {
     .on('all', gulp.series(javascript, browser.reload));
   gulp
     .watch('src/assets/img/**/*')
-    .on('all', gulp.series(images, browser.reload));
+    .on('all', gulp.series(images_minify, images_webp, browser.reload));
 }
 
 // generate an up-to-date sitemap
