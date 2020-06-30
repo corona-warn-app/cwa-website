@@ -118,6 +118,7 @@
                         "Wir arbeiten an einer Erweiterung der Android-App, sodass diese Einstellung direkt in der App vorgenommen werden kann und man nicht mehr umständlich über die Geräte-Einstellungen gehen muss."
                     ]
                 },{
+                    "active": true,
                     "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                     "anchor": "encounter_but_green",
                     "textblock": [
@@ -131,12 +132,14 @@
                         "Um die Konsistenz zwischen den Apps zu gewährleisten und aufgrund von Einschränkungen im API gibt es derzeit die Restriktion auf die 24 Stunden. Das Thema ist aber aufgenommen und wird so bald wie möglich von der Entwicklung bearbeitet."
  , "Mehr Infos finden Sie auf Englisch unter <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."                    ]
                 },{
+                    "active": true,
                     "title" : "Mein Kontaktprotokoll zeigt mehrere zeitgleiche Überprüfungen an. Ist das ein Fehler?",
                     "anchor": "multiple_exposure_checks",
                     "textblock": [
                         "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind eine separate Überprüfung des Kontaktprotokolls durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Kontaküberprüfungs-Historie vorhanden sind. Sie können zudem beim Klick auf die Details der Überprüfungen sehen, dass jeweils unterschiedlich viele Schlüssel geprüft werden."
                     ]
                 },{
+                    "active": true,
                     "title" : "Android: Benachrichtigung zu möglicher Begegnung... - Wöchentliches Update",
                     "anchor": "notif_weekly_update",
                     "textblock": [

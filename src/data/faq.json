@@ -118,6 +118,7 @@
                         "We are working on an extension of the Android app so that this setting can be done directly in the app and you don't have to go through the device settings in a complicated way."
                     ]
                 },{
+                    "active": true,
                     "title": "An encounter has been reported, but the risk status stays green",
                     "anchor": "encounter_but_green",
                     "textblock": [
@@ -131,12 +132,14 @@
                         "For reasons of consistency between the app operating systems and because of API restrictions, we are basically restricted to the 24h interval. But: Improvements are in the backlog and they will be tackled as soon as possible."
  , "For more information, see <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."                    ]
                 },{
+                    "active": true,
                     "title" : "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
                     "anchor": "multiple_exposure_checks",
                     "textblock": [
                         "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
                     ]
                 },{
+                    "active": true,
                     "title" : "Android: Notification of possible encounters... - Weekly Update",
                     "anchor": "notif_weekly_update",
                     "textblock": [
