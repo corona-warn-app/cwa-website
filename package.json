@@ -1,7 +1,7 @@
 {
   "name": "corona-warn-app-landingpage",
   "version": "1.0.0",
-  "description": "Corona Warn App landingpage template",
+  "description": "Corona Warn App landing page template",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -13,7 +13,7 @@
     "test:chrome": "start-server-and-test start http://localhost:8000 cypress:run:chrome",
     "test:firefox": "start-server-and-test start http://localhost:8000 cypress:run:firefox"
   },
-  "author": "ZURB <foundation@zurb.com>",
+  "author": "SAP Corona Warn-App Open Source Team <corona-warn-app.opensource@sap.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/core": "^7.10.2",
