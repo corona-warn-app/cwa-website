@@ -20,6 +20,8 @@ $(document).ready(function(){
     });
 
     const anchors = Array.from(document.querySelectorAll('.js-anchor'));
+    const menu = document.querySelector('.js-scroll-navigate');
+
     document.addEventListener('scroll', () => {
         const negativeOffsets = anchors
             .map((anchor) => Math.floor(anchor.getBoundingClientRect().top))
@@ -29,28 +31,15 @@ $(document).ready(function(){
         if (current >= 0) {
             const hash = '#' + anchors[current].id;
 
-            if (location.hash !== hash) {
-                history.replaceState(null, null, hash);
-                window.dispatchEvent(new HashChangeEvent('hashchange'));
-            }
-        }
-    });
-
-    const menu = document.querySelector('.js-scroll-navigate');
-    if (menu !== null) {
-        window.addEventListener('hashchange', () => {
             const oldItem = menu.querySelector('a.active');
-            const newItem = menu.querySelector('a[href="' + location.hash + '"]');
+            const newItem = menu.querySelector('a[href="' + hash + '"]');
+
             if (newItem !== null && oldItem !== null) {
                 oldItem.classList.remove('active');
                 newItem.classList.add('active');
             }
-        });
-
-        if (location.hash !== '') {
-            window.dispatchEvent(new HashChangeEvent('hashchange'));
         }
-    }
+    });
 
     $('.js-slider').slick({
         dots: true,
