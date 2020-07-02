@@ -289,11 +289,22 @@
                         "We do not intend to make the app available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
 					]
                 },
-		{
+		        {
                     "title": "Will the collected random IDs be included when I back up data on my phone?",
                     "anchor": "backup",
                     "textblock": [
                         "No, they are not included in the backup. This also means that you can't restore the collected random IDs on the same or a different phone."
+                    ]
+                },
+                {
+                    "title": "Are the exposure logs/random IDs removed from my phone when I uninstall the app?",
+                    "anchor": "delete_random_ids",
+                    "textblock": [
+                        "Deleting the app should always be a last resort for solving one of the known or other issues with the app.",
+                        "Since the app cannot delete the exposure logs by itself, whether it is cleared or not is a decision of the Exposure Notification Framework.",
+                        "In the current version, deleting the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
+                        "On Android devices, the log is deleted if Corona-Warn-App was the last app using the framework on the device. If you have SwissCovid or Immuni installed in addition to the Corona-Warn-App, the log will only be removed if these additional apps are de-installed or you manually trigger deletion of the exposure log.",
+                        "The way de-installation is handled can change without further notice or any changes to the Corona-Warn-App itself. Hence, please use this means only as a last resort in error resolution."
                     ]
                 },
                 {
