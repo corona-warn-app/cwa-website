@@ -16,21 +16,21 @@
                     "title": "Apple: ENErrorDomain-Error 5",
                     "anchor": "ENError5",
                     "textblock": [
-                      "This issue shouldn't occur any more. The issue is raised by Apple's Exposure Notification Framework. Unfortunately, neither a restart of your device nor a reinstallation of the app work."
+                      "The issue ENErrorDomain 5 is raised by the Exposure Notification Framework that Apple provides and the app uses. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more."
                     ]
                 },{
                     "active": true,
                     "title": "Apple: ENErrorDomain-Error 11",
                     "anchor": "ENError11",
                     "textblock": [
-                      "The issue is thrown by Apple's Exposure Notification Framework. According to our information, it should disappear after one day, but it seems to come back. We are in touch with Apple and hope they will provide a solution soon. We'll update you as soon as we know more."
+                        "The error ENErrorDomain 11 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to sources at Apple, the issue shall be fixed with the release of iOS 13.6. Until then, please try whether restarting your devices solves the issue. This was helpful for many users."
                     ]
                 },{
                     "active": true,
                     "title": "Apple: ENErrorDomain-Error 13",
                     "anchor": "ENError13",
                     "textblock": [
-                      "The issue means that the risk is checked too often, as per day, only one check is supported. The next day, the issue should disappear, but it seems to come back. We are in touch with Apple and hope they will provide a solution soon. We'll update you as soon as we know more."
+                        "The error ENErrorDomain 11 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.  According to sources at Apple, the issue shall be fixed with the release of iOS 13.6. Unfortunately, there is no known workaround for this issue, but according to our information, the functionality of the app is unaffected by this issue."
                     ]
                 },{
                     "active": true,
@@ -44,7 +44,7 @@
                     "title" : "Apple: Not enough memory for the contact protocol",
                     "anchor": "memory",
                     "textblock": [
-                        "This error is raised by the operating system and already communicated to development and Apple. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
+                        "This error is raised by the operating system. Apple is informed and is working to solve it. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                     ]
                 },{
                     "active": true,
