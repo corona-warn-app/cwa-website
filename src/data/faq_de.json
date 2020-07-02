@@ -7,6 +7,86 @@
             "permalink": "Link zu dieser Antwort"
         },
         "sections": [{
+            "title": "Häufige Probleme",
+            "active": true,
+            "id": "most_asked",
+            "accordion": [
+                {
+                    "active": true,
+                    "title": "Apple: ENErrorDomain-Fehler 5",
+                    "anchor": "ENError5",
+                    "textblock": [
+                      "Dieser Fehler sollte nicht mehr auftreten. Der Fehler kommt vom Exposure Notification Framework von Apple. Leider hilft hier kein Neustart und auch keine Neuinstallation."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Apple: ENErrorDomain-Fehler 11",
+                    "anchor": "ENError11",
+                    "textblock": [
+                      "Der Fehler kommt vom Exposure Notification Framework und sollte nach unseren derzeitigen Informationen nach einem Tag verschwinden. Leider tritt er aber häufig auch an Folgetagen auf. Wir sind mit Apple in Kontakt und hoffen, zeitnah eine Lösung zu finden, über die wir Sie dann auch so bald wie möglich informieren."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Apple: ENErrorDomain-Fehler 13",
+                    "anchor": "ENError13",
+                    "textblock": [
+                      "Der Fehler besagt, dass der Risikocheck zu häufig durchgeführt wurde. Am Tag darf nur ein Check durchgeführt werden. Sie können diesen Fehler ignorieren. Am nächsten Tag sollte wieder alles normal funktionieren. Leider tritt er aber häufig auch an Folgetagen auf. Wir sind auch wegen dieses Fehlers mit Apple in Kontakt und hoffen auch hier zeitnah eine Lösung kommunizieren zu können."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Ich bekomme folgende Benachrichtigung: 'Region für Kontaktmitteilung geändert. COVID-19-Kontaktmitteilungen werden von \"Corona-Warn\" in dieser Region möglicherweise nicht unterstützt'",
+                    "anchor": "iphone_region_change",
+                    "textblock": [
+                        "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Du kannst die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, kannst Du in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Zu wenig Speicherplatz",
+                    "anchor": "memory",
+                    "textblock": [
+                        "Diese Fehlermeldung kommt aus dem Betriebssystem und ist bereits an die Entwicklung bzw. an Apple gemeldet. Die Corona-Warn-App benötigt nur ca. 20 MB Speicherplatz auf dem Handy. Die Größe kann sich durch eventuelle Updates laufend verändern (wenn auch nur minimal). Zusätzlich fallen weitere Speicherkapazitäten durch die von der App zwischengespeicherten Daten an."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: URSACHE 3 – Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(10)",
+                    "anchor": "API10",
+                    "textblock": [
+                        "Der Fehler (10) in Zusammenhang mit der fehlenden Risikoermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Fehler bei Kommunikation mit Google API (39508)",
+                    "anchor": "API39508",
+                    "textblock": [
+                        "Das ist ein bekannter Fehler. Die Kontaktereignisse werden weiterhin aufgezeichnet. Daher würden wir Sie bitten, die App nicht zu löschen. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Anzahl der Schlüssel auf 0 zurückgesetzt",
+                    "anchor": "keys0",
+                    "textblock": [
+                        "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Benachrichtigung zu möglicher Begegnung... - Wöchentliches Update",
+                    "anchor": "notif_weekly_update",
+                    "textblock": [
+                        "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Das Exposure Notification Framework sendet diese Benachrichtigung. Sie sieht so ähnlich aus wie die weiteren Benachrichtigungen aus der Corona-Warn-App, zum Beispiel, wenn Sie Ihr Bluetooth deaktiviert haben. Sie können Ihren Risikostatus direkt in der Corona-Warn-App einsehen."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Wird mein Smartphone-Akku nicht schnell leerlaufen mit der App im Hintergrund?",
+                    "anchor": "battery",
+                    "textblock": [
+                        "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy).",
+			"<b>Besonderheit bei Android</b>: Bluetooth-Geräte in Deiner Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf den Gerät aktiviert ist (Details siehe <a href='https://www.coronawarn.app/de/faq/#android_location'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, solltest Du prüfen, welche Apps tatsächlich Deinen Standort nutzen. Öffne hierzu die Geräte-Einstellungen und wähle 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'. Hier kannst Du installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Deinen Standort zu, deshalb ist sie nicht aufgelistet."
+                    ]
+                }
+
+
+            ]
+        },{
             "title": "Verfügbarkeit",
             "id": "availability",
             "accordion": [

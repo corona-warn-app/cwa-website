@@ -7,6 +7,86 @@
             "permalink": "Link to this answer"
         },
         "sections": [{
+            "title": "Common Issues",
+            "active": true,
+            "id": "most_asked",
+            "accordion": [
+                {
+                    "active": true,
+                    "title": "Apple: ENErrorDomain-Error 5",
+                    "anchor": "ENError5",
+                    "textblock": [
+                      "This issue shouldn't occur any more. The issue is raised by Apple's Exposure Notification Framework. Unfortunately, neither a restart of your device nor a reinstallation of the app work."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Apple: ENErrorDomain-Error 11",
+                    "anchor": "ENError11",
+                    "textblock": [
+                      "The issue is thrown by Apple's Exposure Notification Framework. According to our information, it should disappear after one day, but it seems to come back. We are in touch with Apple and hope they will provide a solution soon. We'll update you as soon as we know more."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Apple: ENErrorDomain-Error 13",
+                    "anchor": "ENError13",
+                    "textblock": [
+                      "The issue means that the risk is checked too often, as per day, only one check is supported. The next day, the issue should disappear, but it seems to come back. We are in touch with Apple and hope they will provide a solution soon. We'll update you as soon as we know more."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
+                    "anchor": "iphone_region_change",
+                    "textblock": [
+                        "This message is issued directly by the Exposure Notification Framework of the operation system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which hopefully will be delivered with the next iOS update."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Apple: Not enough memory for the contact protocol",
+                    "anchor": "memory",
+                    "textblock": [
+                        "This error is raised by the operating system and already communicated to development and Apple. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Error when communicating with Google API(10)",
+                    "anchor": "API10",
+                    "textblock": [
+                        "This error, in connection with missing risk identification, is currently fixed together with Google. We can reassure you that your contacts are still traced. We thus ask you to not deinstall the app."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Error when communicating with Google API(39508)",
+                    "anchor": "API39508",
+                    "textblock": [
+                        "This issue is well known, but we can confirm that contract tracing will continue. That's why we would suggest not to delete the app as of now. We are intensively working together with Google on solving this issue and will get back to you as soon as possible."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: 0 keys displayed",
+                    "anchor": "keys0",
+                    "textblock": [
+                        "This is a known display error. The app is still working correctly. We're currently working to solve this problem together with Google."
+                    ]
+                },{
+                    "active": true,
+                    "title" : "Android: Notification of possible encounters... - Weekly Update",
+                    "anchor": "notif_weekly_update",
+                    "textblock": [
+                        "This is a general notification that does not mean that exposures were detected. The Exposure Notification Framework sends this notification. It looks like other notifications of the Corona-Warn-App, for example, when Bluetooth is deactivated. You can look up the risk status directly in the Corona-Warn-App."
+                    ]
+                }, {
+		"active": true,
+                    "title": "Will the device battery drain more quickly with the app running in the background?",
+                    "anchor": "battery",
+                    "textblock": [
+                        "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
+			"<b>Note on Android</b>: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='https://www.coronawarn.app/en/faq/#android_location'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>). This means that also other apps on your device could use your location, which might be a reason for higher power consumption. To avoid this, you should check which apps actually use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps to use your location if you think they don't need this permission. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
+					]
+                }
+
+
+            ]
+        },{
             "title": "Availability",
             "active": true,
             "id": "availability",
