@@ -121,7 +121,7 @@
                     "anchor": "international",
                     "textblock": [
                         "After a detailed examination of the situation it was determined that for legal reasons any publication of the Corona-Warn-App in App Stores outside of Germany is currently only possible after a case-by-case assessment. Legal consultations have shown that in the case of publication in international App Stores, the law of the respective country must be considered and applied to the Corona-Warn-App. This applies in particular to data protection, any necessary claims for information by local authorities and other contractual and consumer protection regulations.",
-                        "The Robert Koch-Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>United Kingdom</li></ul>",
+                        "The Robert Koch-Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Belgien</li><li>Bulgarien</li><li>Dänemark</li><li>Finnland</li><li>Frankreich</li><li>Griechenland</li><li>Irland</li><li>Island</li><li>Italy</li><li>Kroatien</li><li>Lettland</li><li>Litauen</li><li>Luxemburg</li><li>Malta</li><li>Niederlande</li><li>Norwegen</li><li>Polen</li><li>Portugal</li><li>Rumänien</li><li>Schweiz</li><li>Slowakei</li><li>Slowenien</li><li>Spanien</li><li>Sweden</li><li>Tschechische Republik</li><li>Ungarn</li><li>Vereinigtes Königreich</li><li>Zypern</li><li>Österreich</li></ul>",
                         "More countries are currently being checked and will be released in the App Stores step by step. The Robert Koch-Institute asks for your understanding that it cannot provide any information on specific countries and the status of their release during the ongoing review process."
                     ]
                 },{
@@ -369,11 +369,22 @@
                         "We do not intend to make the app available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
 					]
                 },
-		{
+		        {
                     "title": "Will the collected random IDs be included when I back up data on my phone?",
                     "anchor": "backup",
                     "textblock": [
                         "No, they are not included in the backup. This also means that you can't restore the collected random IDs on the same or a different phone."
+                    ]
+                },
+                {
+                    "title": "Are the exposure logs/random IDs removed from my phone when I uninstall the app?",
+                    "anchor": "delete_random_ids",
+                    "textblock": [
+                        "Deleting the app should always be a last resort for solving one of the known or other issues with the app.",
+                        "Since the app cannot delete the exposure logs by itself, whether it is cleared or not is a decision of the Exposure Notification Framework.",
+                        "In the current version, deleting the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
+                        "On Android devices, the log is deleted if Corona-Warn-App was the last app using the framework on the device. If you have SwissCovid or Immuni installed in addition to the Corona-Warn-App, the log will only be removed if these additional apps are de-installed or you manually trigger deletion of the exposure log.",
+                        "The way de-installation is handled can change without further notice or any changes to the Corona-Warn-App itself. Hence, please use this means only as a last resort in error resolution."
                     ]
                 },
                 {

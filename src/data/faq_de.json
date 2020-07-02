@@ -121,7 +121,7 @@
                     "anchor": "international",
                     "textblock": [
                         "Nach eingehender Prüfung der Situation wurde festgestellt, dass eine Veröffentlichung der Corona-Warn-App in App Stores außerhalb von Deutschland im Moment aus rechtlichen Gründen nur nach einer Einzelfallprüfung möglich ist. Rechtliche Beratungen haben ergeben, dass bei einer Veröffentlichung in internationalen App-Stores das Recht des entsprechenden Landes zu berücksichtigen und auf die Corona-Warn-App anzuwenden ist. Das gilt insbesondere für den Datenschutz, eventuell nötige Auskunftsansprüche dortiger Behörden sowie weitere Vertrags- und Verbraucherschutzregularien.",
-                        "Das Robert Koch-Institut als Herausgeber der App wird diese Prüfung für die entsprechenden Länder veranlassen und die App nach erfolgreicher rechtlicher Prüfung freischalten. Derzeit hat das RKI die App für folgende Staaten Europas freigeben: <ul><li>Belgien</li><li>Bulgarien</li><li>Dänemark</li><li>Finnland</li><li>Frankreich</li><li>Griechenland</li><li>Irland</li><li>Island</li><li>Kroatien</li><li>Lettland</li><li>Litauen</li><li>Luxemburg</li><li>Malta</li><li>Niederlande</li><li>Norwegen</li><li>Polen</li><li>Portugal</li><li>Rumänien</li><li>Schweiz</li><li>Slowakei</li><li>Slowenien</li><li>Spanien</li><li>Tschechische Republik</li><li>Ungarn</li><li>Vereinigtes Königreich</li><li>Zypern</li><li>Österreich</li></ul>",
+                        "Das Robert Koch-Institut als Herausgeber der App wird diese Prüfung für die entsprechenden Länder veranlassen und die App nach erfolgreicher rechtlicher Prüfung freischalten. Derzeit hat das RKI die App für folgende Staaten Europas freigeben: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italien</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Schweden</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>United Kingdom</li></ul>",
                         "Weitere Länder werden im Moment geprüft und schrittweise in den App Stores freigegeben. Das Robert Koch-Institut bittet um Verständnis, dass es während des laufenden Überprüfungsprozesses zu konkreten Ländern und dem Status ihrer Freigabe keine Auskunft erteilen kann."
                     ]
                 },{
@@ -371,11 +371,22 @@
                         "Weitere Fragen zu den Betriebssystemen können nur die Hersteller selbst beantworten."
                     ]
                 },
-		{
+                {
                     "title": "Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
                     "anchor": "backup",
                     "textblock": [
                         "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufallscodes können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
+                    ]
+                },
+                {
+                    "title": "Werden die gesammelten Zufallscodes beim Deinstallieren der App entfernt?",
+                    "anchor": "delete_random_ids",
+                    "textblock": [
+                        "Eine Deinstallation der App sollte immer die letzte mögliche Lösung für bekannte oder neu auftretende Probleme sein.",
+                        "Die App selbst kann das Covid-19-Kontaktprotokoll nicht löschen. Daher obliegt es dem Exposure Notification Framework (ENF) zu entscheiden, ob diese Daten gelöscht werden oder nicht.",
+                        "In der derzeitigen Version bleibt bei einer Deinstalltion unter iOS das Kontaktprotokoll erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
+                        "Auf Android-Geräten wird das Kontaktprotokoll gelöscht, falls die Corona-Warn-App die letzte App war, die das ENF nutzt. Falls sie zusätzlich z.B. SwissCovid oder Immuni installiert haben bleibt das Kontaktprotkoll erhalten bis auch diese Apps gelöscht werden oder Sie händisch eine Löschung des Kontaktprotokolls veranlassen.",
+                        "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, empfehlen wir eine App-Löschung wirklich nur in Ausnahmenfällen."
                     ]
                 },
                 {
