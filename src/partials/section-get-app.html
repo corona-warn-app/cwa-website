@@ -7,7 +7,7 @@
       {{#if section-contents.icon-list}}
       <div class="col col-12 col-md-6 col-lg-auto icon-list icon-list_inline">
         {{#each section-contents.icon-list}}
-        <a class="icon-list-item" href="{{url}}"{{#if external}} target="_blank"{{/if}}>
+        <a class="icon-list-item" href="{{url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}>
           <img src="{{icon-url}}" alt="{{title}} Icon" />
         </a>
         {{/each}}
