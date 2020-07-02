@@ -38,7 +38,11 @@
     </div>
     <div class="copyright-bar">
       <div class="copyright text-center text-sm-left">{{language.copyright.text}}</div>
-      <div class="privacy text-center text-sm-right"><a href="{{language.privacy.url}}"{{#if language.privacy.external}} target="_blank" rel="noopener noreferrer"{{/if}}>{{language.privacy.title}}</a></div>
+      <div class="privacy text-center text-sm-right">
+        {{#if language.privacy}}
+        <a href="{{language.privacy.url}}"{{#if language.privacy.external}} target="_blank" rel="noopener noreferrer"{{/if}}>{{language.privacy.title}}</a>
+        {{/if}}
+      </div>
     </div>
   </div>
 </footer>
