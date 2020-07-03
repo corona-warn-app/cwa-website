@@ -7,37 +7,37 @@
             "permalink": "Link to this answer"
         },
         "sections": [{
-            "title": "Common Issues",
+            "title": "Common Issues - Apple",
             "active": true,
-            "id": "most_asked",
+            "id": "most_asked_iOS",
             "accordion": [
                 {
                     "active": true,
                     "title": "Apple: ENErrorDomain-Error 5",
                     "anchor": "ENError5",
                     "textblock": [
-                      "The error ENErrorDomain 5 is raised by the Exposure Notification Framework that Apple provides and the app uses. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more."
+                      "The ENErrorDomain 5 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
                     ]
                 },{
                     "active": true,
                     "title": "Apple: ENErrorDomain-Error 11",
                     "anchor": "ENError11",
                     "textblock": [
-                        "The error ENErrorDomain 11 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to sources at Apple, the issue shall be fixed with the release of iOS 13.6. Until then, please try whether restarting your devices solves the issue. This was helpful for many users."
+                        "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the issue shall be fixed with the iOS 13.6 release. Until then, please try whether restarting your devices solves the issue. After another 24 hours, the error was gone in most cases."
                     ]
                 },{
                     "active": true,
                     "title": "Apple: ENErrorDomain-Error 13",
                     "anchor": "ENError13",
                     "textblock": [
-                        "The error ENErrorDomain 11 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.  According to sources at Apple, the issue shall be fixed with the release of iOS 13.6. Unfortunately, there is no known workaround for this issue, but according to our information, the functionality of the app is unaffected by this issue."
+                        "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.  It is an information that on this day, an exposure check already took place. Please wait for another 24 hours for the next exposure identification to take place. Then, this information will no longer be displayed."
                     ]
                 },{
                     "active": true,
                     "title" : "Apple: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
                     "anchor": "iphone_region_change",
                     "textblock": [
-                        "This message is issued directly by the Exposure Notification Framework of the operation system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which hopefully will be delivered with the next iOS update."
+                        "This message is issued directly by the Exposure Notification Framework of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update."
                     ]
                 },{
                     "active": true,
@@ -46,26 +46,35 @@
                     "textblock": [
                         "This error is raised by the operating system. Apple is informed and is working to solve it. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                     ]
-                },{
+                }
+
+
+            ]
+        },{
+            "title": "Common Issues - Android",
+            "active": true,
+            "id": "most_asked_Android",
+            "accordion": [
+              {
                     "active": true,
                     "title" : "Error when communicating with Google API(10)",
                     "anchor": "API10",
                     "textblock": [
-                        "This error, in connection with missing risk identification, is currently fixed together with Google. We can reassure you that your contacts are still traced. We thus ask you to not deinstall the app."
+                        "This error, in connection with missing risk identification, is currently fixed together with Google. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids'>the logged exposures</a>."
                     ]
                 },{
                     "active": true,
                     "title" : "Error when communicating with Google API(39508)",
                     "anchor": "API39508",
                     "textblock": [
-                        "This issue is well known, but we can confirm that contract tracing will continue. That's why we would suggest not to delete the app as of now. We are intensively working together with Google on solving this issue and will get back to you as soon as possible."
+                        "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids'>the logged exposures</a>."
                     ]
                 },{
                     "active": true,
                     "title" : "Android: 0 keys displayed",
                     "anchor": "keys0",
                     "textblock": [
-                        "This is a known display error. The app is still working correctly. We're currently working to solve this problem together with Google."
+                        "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                     ]
                 },{
                     "active": true,
@@ -121,7 +130,7 @@
                     "anchor": "international",
                     "textblock": [
                         "After a detailed examination of the situation it was determined that for legal reasons any publication of the Corona-Warn-App in App Stores outside of Germany is currently only possible after a case-by-case assessment. Legal consultations have shown that in the case of publication in international App Stores, the law of the respective country must be considered and applied to the Corona-Warn-App. This applies in particular to data protection, any necessary claims for information by local authorities and other contractual and consumer protection regulations.",
-                        "The Robert Koch-Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Belgien</li><li>Bulgarien</li><li>Dänemark</li><li>Finnland</li><li>Frankreich</li><li>Griechenland</li><li>Irland</li><li>Island</li><li>Italy</li><li>Kroatien</li><li>Lettland</li><li>Litauen</li><li>Luxemburg</li><li>Malta</li><li>Niederlande</li><li>Norwegen</li><li>Polen</li><li>Portugal</li><li>Rumänien</li><li>Schweiz</li><li>Slowakei</li><li>Slowenien</li><li>Spanien</li><li>Sweden</li><li>Tschechische Republik</li><li>Ungarn</li><li>Vereinigtes Königreich</li><li>Zypern</li><li>Österreich</li></ul>",
+                        "The Robert Koch-Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Sweden</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>United Kingdom</li></ul>",
                         "More countries are currently being checked and will be released in the App Stores step by step. The Robert Koch-Institute asks for your understanding that it cannot provide any information on specific countries and the status of their release during the ongoing review process."
                     ]
                 },{
