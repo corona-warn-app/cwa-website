@@ -13,10 +13,14 @@
             "accordion": [
                 {
                     "active": true,
-                    "title": "Apple: 9 of 14 days active",
+                    "title": "Apple: wrong number of active days",
                     "anchor": "days_active_Apple",
                     "textblock": [
-                      "When counting the active days, there is an error displayed currently: When '14 of 14 active days' is reached, the number of active days that is displayed doesn't stay 14 out of 14, but seemingly randomly displays another number of active days, for example, 3 out of 14 active days.", "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. From here onwards, the time in which the exposure logging was inactive in any way is subtracted from the 14 days, and the number of active days is rounded off.", "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>", "The error is solved in iOS.", "For detailled informationen, see Github: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796' target='_blank' rel='noopener noreferrer'>github.com/corona-warn-app/cwa-app-android/issues/796</a>."
+                      "When counting the active days, there is an error displayed currently: When '14 of 14 active days' is reached, the number of active days that is displayed doesn't stay 14 out of 14, but seemingly randomly displays another number of active days, for example, 3 out of 14 active days.",
+                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. From here onwards, the time in which the exposure logging was inactive in any way is subtracted from the 14 days, and the number of active days is rounded off.",
+                      "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
+                      "The error is solved in iOS.",
+                      "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this Comment on Github</a>."
                     ]
                 },{
                     "active": true,
