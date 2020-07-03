@@ -7,37 +7,37 @@
             "permalink": "Link zu dieser Antwort"
         },
         "sections": [{
-            "title": "Häufige Probleme",
+            "title": "Häufige Probleme - Apple",
             "active": true,
-            "id": "most_asked",
+            "id": "most_asked_iOS",
             "accordion": [
                 {
                     "active": true,
                     "title": "Apple: ENErrorDomain-Fehler 5",
                     "anchor": "ENError5",
                     "textblock": [
-                      "Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, so dass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immernoch auftritt, bitten wir Sie um etwas Geduld bis die Änderung auf Ihrem Gerät ankommt."
+                      "Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immernoch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
                     ]
                 },{
                     "active": true,
                     "title": "Apple: ENErrorDomain-Fehler 11",
                     "anchor": "ENError11",
                     "textblock": [
-                      "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Der Fehler soll nach Angaben von Apple in den nächsten Wochen mit iOS 13.6 behoben werden. Bis dahin können Sie versuchen, ob ein Neustart Ihres iPhones und 24h warten den Fehler verschwinden lässt. Dies hat in den meisten Fällen geholfen."
+                      "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Der Fehler soll nach Angaben von Apple in den nächsten Wochen mit iOS 13.6 behoben werden. Bis dahin können Sie versuchen, Ihr iPhone neu zu starten. 24 Stunden später war der Fehler in den meisten Fällen verschwunden."
                     ]
                 },{
                     "active": true,
                     "title": "Apple: ENErrorDomain-Fehler 13",
                     "anchor": "ENError13",
                     "textblock": [
-                      "Der Fehler ENErrorDomain 13 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Es handelt sich dabei um eine Information, dass an diesem Tag bereits eine Risikoanalyse durchgeführt worde. Bitte warten Sie 24h, damit die Information verschwindet und eine erneute Risikoanalyse durchgeführt werden kann."
+                      "Der Fehler ENErrorDomain 13 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Es handelt sich dabei um eine Information, dass an diesem Tag bereits eine Risikoanalyse durchgeführt worden ist. Bitte warten Sie 24 Stunden, dann wird erneut eine Risikoanalyse durchgeführt und diese Information vwird nicht mehr angezeigt."
                     ]
                 },{
                     "active": true,
                     "title" : "Apple: Ich bekomme folgende Benachrichtigung: 'Region für Kontaktmitteilung geändert. COVID-19-Kontaktmitteilungen werden von \"Corona-Warn\" in dieser Region möglicherweise nicht unterstützt'",
                     "anchor": "iphone_region_change",
                     "textblock": [
-                        "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Du kannst die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, kannst Du in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird."
+                        "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Sie können die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, können Sie in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird."
                     ]
                 },{
                     "active": true,
@@ -46,7 +46,14 @@
                     "textblock": [
                         "Diese Fehlermeldung kommt aus dem Betriebssystem. Apple ist informiert und arbeitet an einer Behebung des Fehlers. Die Corona-Warn-App benötigt nur ca. 20 MB Speicherplatz auf dem Handy. Die Größe kann sich durch eventuelle Updates laufend verändern (wenn auch nur minimal). Zusätzlich fallen weitere Speicherkapazitäten durch die von der App zwischengespeicherten Daten an."
                     ]
-                },{
+                }
+            ]
+        },{
+            "title": "Häufige Probleme - Android",
+            "active": true,
+            "id": "most_asked_Android",
+            "accordion": [
+                {
                     "active": true,
                     "title" : "Android: URSACHE 3 – Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(10)",
                     "anchor": "API10",
@@ -121,7 +128,7 @@
                     "anchor": "international",
                     "textblock": [
                         "Nach eingehender Prüfung der Situation wurde festgestellt, dass eine Veröffentlichung der Corona-Warn-App in App Stores außerhalb von Deutschland im Moment aus rechtlichen Gründen nur nach einer Einzelfallprüfung möglich ist. Rechtliche Beratungen haben ergeben, dass bei einer Veröffentlichung in internationalen App-Stores das Recht des entsprechenden Landes zu berücksichtigen und auf die Corona-Warn-App anzuwenden ist. Das gilt insbesondere für den Datenschutz, eventuell nötige Auskunftsansprüche dortiger Behörden sowie weitere Vertrags- und Verbraucherschutzregularien.",
-                        "Das Robert Koch-Institut als Herausgeber der App wird diese Prüfung für die entsprechenden Länder veranlassen und die App nach erfolgreicher rechtlicher Prüfung freischalten. Derzeit hat das RKI die App für folgende Staaten Europas freigeben: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italien</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Schweden</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>United Kingdom</li></ul>",
+                        "Das Robert Koch-Institut als Herausgeber der App wird diese Prüfung für die entsprechenden Länder veranlassen und die App nach erfolgreicher rechtlicher Prüfung freischalten. Derzeit hat das RKI die App für folgende Staaten Europas freigeben: <ul><li>Belgien</li><li>Bulgarien</li><li>Dänemark</li><li>Finnland</li><li>Frankreich</li><li>Griechenland</li><li>Irland</li><li>Island</li><li>Italien</li><li>Kroatien</li><li>Lettland</li><li>Litauen</li><li>Luxemburg</li><li>Malta</li><li>Niederlande</li><li>Norwegen</li><li>Österreich</li><li>Polen</li><li>Portugal</li><li>Rumänien</li><li>Schweiz</li><li>Slowakei</li><li>Slowenien</li><li>Spanien</li><li>Schweden</li><li>Tschechische Republik</li><li>Ungarn</li><li>Vereinigtes Königreich</li><li>Zypern</li></ul>",
                         "Weitere Länder werden im Moment geprüft und schrittweise in den App Stores freigegeben. Das Robert Koch-Institut bittet um Verständnis, dass es während des laufenden Überprüfungsprozesses zu konkreten Ländern und dem Status ihrer Freigabe keine Auskunft erteilen kann."
                     ]
                 },{
