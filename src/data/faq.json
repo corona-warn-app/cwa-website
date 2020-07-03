@@ -60,14 +60,14 @@
                     "title" : "Error when communicating with Google API(10)",
                     "anchor": "API10",
                     "textblock": [
-                        "This error, in connection with missing risk identification, is currently fixed together with Google. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids'>the logged exposures</a>."
+                        "This error, in connection with missing risk identification, is currently fixed together with Google. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>."
                     ]
                 },{
                     "active": true,
                     "title" : "Error when communicating with Google API(39508)",
                     "anchor": "API39508",
                     "textblock": [
-                        "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids'>the logged exposures</a>."
+                        "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>."
                     ]
                 },{
                     "active": true,
@@ -89,7 +89,7 @@
                     "anchor": "battery",
                     "textblock": [
                         "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
-			"<b>Note on Android</b>: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='https://www.coronawarn.app/en/faq/#android_location'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>). This means that also other apps on your device could use your location, which might be a reason for higher power consumption. To avoid this, you should check which apps actually use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps to use your location if you think they don't need this permission. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
+			"<b>Note on Android</b>: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>). This means that also other apps on your device could use your location, which might be a reason for higher power consumption. To avoid this, you should check which apps actually use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps to use your location if you think they don't need this permission. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
 					]
                 }
 
@@ -363,7 +363,7 @@
                     "textblock": [
                         "Yes. As long as you have activated exposure logging in the app and Bluetooth is on, encounters are logged in the background. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
 			"See also:",
-			"<ul><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update_ios'>Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='https://www.coronawarn.app/en/faq/#no_risk_update'>Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
+			"<ul><li><a href='#no_risk_update_ios' target='_blank' rel='noopener'>Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='#no_risk_update' target='_blank' rel='noopener'>Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
                     			]
                 },{
                     "title": "What happens if I switch off Bluetooth (and for Android, the location)?",
