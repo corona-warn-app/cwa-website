@@ -121,6 +121,7 @@
             "id": "availability",
             "accordion": [
                 {
+		            "active": true,
                     "title": "Apple: Why is iOS 13.5 a minimum requirement?",
                     "anchor": "ios135",
                     "textblock": [
@@ -128,13 +129,14 @@
                     ]
                 },
                 {
+		            "active": true,
                     "title": "Android: Why are Android 6 and Google Play Services minimum requirements?",
                     "anchor": "googleplay",
                     "textblock": [
                       "Google delivers the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available starting with Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot influence this."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?",
                     "anchor": "android_location",
                     "textblock": [
@@ -145,7 +147,7 @@
 			"Again, as described above: You should not deactivate 'Use location' under 'Settings' > 'Security & Location' > 'Location', because this is a prerequisite for exchanging the encrypted random IDs."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "In which international app stores is the app available?",
                     "anchor": "international",
                     "textblock": [
@@ -154,7 +156,7 @@
                         "More countries are currently being checked and will be released in the App Stores step by step. The Robert Koch-Institute asks for your understanding that it cannot provide any information on specific countries and the status of their release during the ongoing review process."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Why are there different age restrictions to use the app on Android and Apple devices?",
                     "anchor": "age_restriction",
                     "textblock": [
@@ -163,7 +165,7 @@
 			"<ul><li>Apple applies stricter criteria in its store, including data protection and GDPR age restrictions. This results in the specification '17+' in the App Store. Apple may require you to verify your age.</li><li>Google Play Store, on the other hand, only applies USK specifications. According to the USK, the app is approved for all age groups, which is why the minimum age in Google Play Store is 0.</li></ul>"
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Android: The app isn’t available as an APK, neither on GitHub nor on F-Droid etc. Will you also deliver the app as an APK?",
                     "anchor": "apk",
                     "textblock": [
@@ -173,7 +175,7 @@
                         "Furthermore, there is an initiative in the developer community to make the Corona-Warn-App executable independently of Google Play Services via appropriate extensions. Details can be found in the issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/75' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-android#75</a>."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Android: While setting up the app, I’m getting the following error: 'CAUSE: 3. Something went wrong. Error when communication with Google API (17).' What does this mean?",
                     "anchor": "cause_3",
                     "textblock": [
@@ -187,21 +189,21 @@
 			"We’re constantly improving the app and will try to remove possible app-related causes of this error."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Apple: I'm testing the beta version of iOS 14. Why is Corona-Warn-App not working?",
                     "anchor": "ios_14_beta",
                     "textblock": [
                         "On devices with iOS 14 beta (available since June 22, 2020) Corona-Warn-App currently doesn't start or only displays an error message. The reason is that the Exposure Notification API is not yet available on devices with iOS 14. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Apple: In my COVID-19 Exposure Logging settings it says: 'Corona-Warn has checked your log of collected random IDs 0 times over the past 24 hours.' Does this mean that exposure logging isn’t working?",
                     "anchor": "no_log_check",
                     "textblock": [
                         "Exposure logging is working, don’t worry. You can find this iOS note under 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'. It means that the back-end server has not sent any diagnosis keys to your device yet, so Corona-Warn-App hasn’t received anything to check against the collected random IDs on your phone. As soon as persons diagnosed with COVID-19 have uploaded their diagnosis keys, this check is triggered."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Apple: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
                     "anchor": "no_risk_update_ios",
                     "textblock": [
@@ -214,7 +216,7 @@
 			"Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Android: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
                     "anchor": "no_risk_update",
                     "textblock": [
@@ -225,34 +227,42 @@
                         "We are working on an extension of the Android app so that this setting can be done directly in the app and you don't have to go through the device settings in a complicated way."
                     ]
                 },{
-
+		            "active": true,
                     "title": "An encounter has been reported, but the risk status stays green",
                     "anchor": "encounter_but_green",
                     "textblock": [
                       "All active Corona-Warn-Apps download the diagnosis keys released on the Corona-Warn-App server regularly and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this indicates that the user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.", "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are discarded as harmless. This is why the Corona-Warn-App can display encounters, but the risk status stays the same."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Why is the risk status only once every 24 hours?",
                     "anchor": "risk_update_24",
                     "textblock": [
                         "For reasons of consistency between the app operating systems and because of API restrictions, we are basically restricted to the 24h interval. But: Improvements are in the backlog and they will be tackled as soon as possible."
  , "For more information, see <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."                    ]
                 },{
-
+		            "active": true,
                     "title" : "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
                     "anchor": "multiple_exposure_checks",
                     "textblock": [
                         "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
                     ]
                 },{
-
+		            "active": true,
                     "title" : "Since I installed the app, my phone sometimes behaves oddly. Example: There are occasional problems with other apps and devices that use Bluetooth. What can I do?",
                     "anchor": "various_device_problems",
                     "textblock": [
                         "Some users report that their phones behave differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phones and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We’re investigating these problems, but this is likely a problem with the Exposure Notification API. Please contact your device manufacturer.",
 			"Apple phones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a>.",
 			"Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Why does the app stop at 14 of 14 days saved? What does 14 of 14 days save actually mean?",
+                    "anchor": "days_active_explanation",
+                    "textblock": [
+                        "The Corona-Warn-App collects contact events for the past 14 days. Older contacts are not relevant for the risk assessment and will therefore be discarded. Hence, the app will always show \"14 of 14 days saved\" if it was active for the entire time frame. The count does not start over after 14 days. If exposure logging is active and a risk status is being displayed, the app is working as expected.",
+                        "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 or less active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
                     ]
                 }
             ]

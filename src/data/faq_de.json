@@ -118,6 +118,7 @@
             "id": "availability",
             "accordion": [
                 {
+                    "active": true,
                     "title": "Apple: Warum ist iOS 13.5 Mindestvoraussetzung?",
                     "anchor": "ios135",
                     "textblock": [
@@ -125,14 +126,14 @@
                     ]
                 },
                 {
-
+                    "active": true,
                     "title": "Android: Warum sind Android 6 und Google Play-Dienste Mindestvoraussetzungen?",
                     "anchor": "googleplay",
                     "textblock": [
                       "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
                     "anchor": "android_location",
                     "textblock": [
@@ -143,7 +144,7 @@
 			 "Hinweis: Wie oben beschrieben, muss die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort' allerdings aktiviert sein, da sonst der Austausch der verschlüsselten Zufallscodes zur Risiko-Ermittlung nicht funktioniert."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "In welchen internationalen App Stores ist die App verfügbar?",
                     "anchor": "international",
                     "textblock": [
@@ -152,7 +153,7 @@
                         "Weitere Länder werden im Moment geprüft und schrittweise in den App Stores freigegeben. Das Robert Koch-Institut bittet um Verständnis, dass es während des laufenden Überprüfungsprozesses zu konkreten Ländern und dem Status ihrer Freigabe keine Auskunft erteilen kann."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Warum gibt es für die Verwendung der Corona-Warn-App auf Android und Apple unterschiedliche Altersbeschränkungen?",
                     "anchor": "age_restriction",
                     "textblock": [
@@ -161,7 +162,7 @@
 			"<ul><li>Apple wendet im App Store strengere Kriterien an, darunter auch zu Altersbeschränkungen nach DSGVO. Deshalb ist die App ab '17+' freigegeben, und Apple fordert ggf. einen Altersnachweis an.</li><li>Im Google Play Store gilt dagegen die USK-Spezifikation. Gemäß USK ist die App für alle Altersgruppen zugelassen, deshalb gilt im Google Play Store ein Mindestalter von 0 Jahren.</li></ul>"
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Android: Die App ist nicht als APK verfügbar, weder auf GitHub, noch auf F-Droid usw. Werdet Ihr die App auch als APK veröffentlichen?",
                     "anchor": "apk",
                     "textblock": [
@@ -171,7 +172,7 @@
                         "Weiterhin gibt es in der Entwickler-Community eine Initiative, die Corona-Warn-App über entsprechende Erweiterungen unabhängig von Google Play Services lauffähig zu bekommen. Details hierzu finden sich im Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/75' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-android#75</a>."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Android: Ich bekomme beim Einrichten der App folgenden Fehler: URSACHE: 3. Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(17). Was bedeutet das?",
                     "anchor": "cause_3",
                     "textblock": [
@@ -185,21 +186,21 @@
 			"Wir entwickeln die Corona-Warn-App ständig weiter und versuchen, mögliche app-seitige Ursachen für diesen Fehler zu beheben."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Apple: Ich teste die Betaversion von iOS 14. Warum funktioniert die Corona-Warn-App nicht?",
                     "anchor": "ios_14_beta",
                     "textblock": [
                         "Auf Geräten mit iOS 14 Beta (verfügbar seit 22.06.2020) startet die Corona-Warn-App aktuell nicht oder mit einer Fehlermeldung. Das liegt daran, dass die Exposure Notification API auf iOS 14 noch nicht verfügbar ist. Siehe <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Apple: In den Einstellungen für das COVID-19-Kontaktprotokoll steht: 'Corona-Warn hat dein Protokoll mit erfassten zufälligen IDs während der letzten 24 Stunden 0-mal überprüft'. Funktioniert die Risiko-Ermittlung nicht?",
                     "anchor": "no_log_check",
                     "textblock": [
                         "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' stammt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Dein Gerät versendet hat und die Corona-Warn-App damit auch noch keinen Abgleich mit den auf Deinem Gerät gesammelten Zufallscodes durchführen konnte. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Apple: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                     "anchor": "no_risk_update_ios",
                     "textblock": [
@@ -212,7 +213,7 @@
 			"Bitte prüfe, ob Du die Hintergrundaktualisierung auch für die Corona-Warn-App selbst ausdrücklich erlaubst. Öffne hierzu ebenso die Geräte-Einstellungen, wähle 'Corona-Warn' und aktiviere die Optionen 'Hintergrundaktualisierung' und 'Mobile Daten'. Wie oben erwähnt: Du bezahlst nichts für die mobilen Daten, die über die App übermittelt werden."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Android: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                     "anchor": "no_risk_update",
                     "textblock": [
@@ -223,34 +224,42 @@
                         "Wir arbeiten an einer Erweiterung der Android-App, sodass diese Einstellung direkt in der App vorgenommen werden kann und man nicht mehr umständlich über die Geräte-Einstellungen gehen muss."
                     ]
                 },{
-
+                    "active": true,
                     "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                     "anchor": "encounter_but_green",
                     "textblock": [
                       "Alle aktiven Corona-Warn-Apps laden regelmäßig vom Corona-Warn-App-Server die dort veröffentlichten Positivkennungen herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Ein solches Zusammenpassen zeigt an, dass sich das Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, an dem Tag, zu dem die Positivkennung gehört, begegnet sind.", "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h., ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Warum wird der Risiko-Status nur einmal alle 24 Stunden neu ermittelt?",
                     "anchor": "risk_update_24",
                     "textblock": [
                         "Um die Konsistenz zwischen den Apps zu gewährleisten und aufgrund von Einschränkungen im API gibt es derzeit die Restriktion auf die 24 Stunden. Das Thema ist aber aufgenommen und wird so bald wie möglich von der Entwicklung bearbeitet."
  , "Mehr Infos finden Sie auf Englisch unter <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."                    ]
                 },{
-
+                    "active": true,
                     "title" : "Mein Kontaktprotokoll zeigt mehrere zeitgleiche Überprüfungen an. Ist das ein Fehler?",
                     "anchor": "multiple_exposure_checks",
                     "textblock": [
                         "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind eine separate Überprüfung des Kontaktprotokolls durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Kontaküberprüfungs-Historie vorhanden sind. Sie können zudem beim Klick auf die Details der Überprüfungen sehen, dass jeweils unterschiedlich viele Schlüssel geprüft werden."
                     ]
                 },{
-
+                    "active": true,
                     "title" : "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
                     "anchor": "various_device_problems",
                     "textblock": [
                         "Einige User melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich am COVID-19-Kontaktprotokoll des Betriebssystems. Wende Dich hierzu bitte an den Hersteller Deines Geräts.",
 			"Apple-Geräte: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
 			"Android-Geräte: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
+                    ]
+                },{
+                    "active": true,
+                    "title": "Warum stoppt die Anzeige bei \"14 von 14 Tagen aktiv\"? Was bedeutet \"14 von 14 Tagen aktiv\" überhaupt?",
+                    "anchor": "days_active_explanation",
+                    "textblock": [
+                        "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risikoermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
+                        "Sollten sie die App nach Erreichen der 14 Tage deaktivieren, kann die Anzeige auch zurückspringen auf 13 oder weniger aktive Tage. Dies kann z.B. durch eine der folgenden Aktionen ausgelöst werden:<ul><li>Bluetooth Deaktivierung</li><li>Abschalten der Hintergrundaktualisierung für die App, so dass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Einschalten des Flugmodus</li><li>Ausschalten des Smartphones</li><li>Neustart des Smartphones</li></ul>"
                     ]
                 }
 
