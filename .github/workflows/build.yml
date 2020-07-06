@@ -31,5 +31,5 @@ jobs:
     - name: gulp build
       run: npm run build
 
-    - name: Deploy
-      run: rsync -av --delete public/ /var/www/html/${GITHUB_REF##*/}
+    #- name: Deploy
+    #  run: rsync -av --delete public/ /var/www/html/${GITHUB_REF##*/}
