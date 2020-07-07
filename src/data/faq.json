@@ -16,11 +16,9 @@
                     "title": "[Apple/iOS]: wrong number of active days",
                     "anchor": "days_active_Apple",
                     "textblock": [
-                      "When counting the active days, there is an error displayed currently: When '14 of 14 active days' is reached, the number of active days that is displayed doesn't stay 14 out of 14, but seemingly randomly displays another number of active days, for example, 3 out of 14 active days.",
-                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. From here onwards, the time in which the exposure logging was inactive in any way is subtracted from the 14 days, and the number of active days is rounded off.",
-                      "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
-                      "The error is solved in iOS. The updated version is available in the App Store.",
-                      "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this Comment on Github</a>."
+                      "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days.",
+                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at 13 active days.",
+                      "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>"
                     ]
                 },{
                     "active": true,
@@ -62,11 +60,10 @@
                     "title": "[Google/Android]: Wrong number of active days",
                     "anchor": "days_active_Android",
                     "textblock": [
-                      "When counting the active days, there is an error displayed currently: When '14 of 14 active days' is reached,the number of active days that is displayed doesn't stay 14 out of 14, but seemingly randomly displays another number of active days, for example, 3 out of 14 active days.",
-                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. From here onwards, the time in which the exposure logging was inactive in any way is subtracted from the 14 days, and the number of active days is rounded off.",
+                      "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days.",
+                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at 13 active days.",
                       "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth or the location service were deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
-                      "It is planned that the solution will be part of the next release in July.",
-                      "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this Comment on Github</a>."
+                      "It is planned that the solution will be part of the next release in July."
                     ]
                 }, {
                     "active": true,
@@ -215,7 +212,7 @@
                     "anchor": "days_active_explanation",
                     "textblock": [
                         "The Corona-Warn-App collects contact events for the past 14 days. Older contacts are not relevant for the risk assessment and will therefore be discarded. Hence, the app will always show \"14 of 14 days saved\" if it was active for the entire time frame. The count does not start over after 14 days. If exposure logging is active and a risk status is being displayed, the app is working as expected.",
-                        "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 or less active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
+                        "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 (or fewer) active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling the background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
                     ]
                 }, {
                     "title": "Will exposure logging still work when I close the app?",
