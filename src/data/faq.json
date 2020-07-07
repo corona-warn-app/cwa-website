@@ -7,13 +7,13 @@
             "permalink": "Link to this answer"
         },
         "sections": [{
-            "title": "Common Issues - Apple",
+            "title": "Common Issues",
             "active": true,
-            "id": "most_asked_iOS",
+            "id": "most_asked",
             "accordion": [
                 {
                     "active": true,
-                    "title": "Apple: wrong number of active days",
+                    "title": "[Apple/iOS]: wrong number of active days",
                     "anchor": "days_active_Apple",
                     "textblock": [
                       "When counting the active days, there is an error displayed currently: When '14 of 14 active days' is reached, the number of active days that is displayed doesn't stay 14 out of 14, but seemingly randomly displays another number of active days, for example, 3 out of 14 active days.",
@@ -24,50 +24,42 @@
                     ]
                 },{
                     "active": true,
-                    "title": "Apple: ENErrorDomain-Error 5",
+                    "title": "[Apple/iOS]: ENErrorDomain-Error 5",
                     "anchor": "ENError5",
                     "textblock": [
                       "The ENErrorDomain 5 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
                     ]
                 },{
                     "active": true,
-                    "title": "Apple: ENErrorDomain-Error 11",
+                    "title": "[Apple/iOS]: ENErrorDomain-Error 11",
                     "anchor": "ENError11",
                     "textblock": [
                         "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the issue shall be fixed with the iOS 13.6 release. Until then, please try whether restarting your devices solves the issue. After another 24 hours, the error was gone in most cases."
                     ]
                 },{
                     "active": true,
-                    "title": "Apple: ENErrorDomain-Error 13",
+                    "title": "[Apple/iOS]: ENErrorDomain-Error 13",
                     "anchor": "ENError13",
                     "textblock": [
                         "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.  It is an information that on this day, an exposure check already took place. Please wait for another 24 hours for the next exposure identification to take place. Then, this information will no longer be displayed."
                     ]
                 },{
                     "active": true,
-                    "title" : "Apple: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
+                    "title" : "[Apple/iOS]: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
                     "anchor": "iphone_region_change",
                     "textblock": [
                         "This message is issued directly by the Exposure Notification Framework of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update."
                     ]
                 },{
                     "active": true,
-                    "title" : "Apple: Not enough memory for the contact protocol",
+                    "title" : "[Apple/iOS]: Not enough memory for the contact protocol",
                     "anchor": "memory",
                     "textblock": [
                         "This error is raised by the operating system. Apple is informed and is working to solve it. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                     ]
-                }
-
-
-            ]
-        },{
-            "title": "Common Issues - Android",
-            "id": "most_asked_Android",
-            "accordion": [
-              {
+                } , {
                     "active": true,
-                    "title": "Android: wrong number of active days",
+                    "title": "[Google/Android]: Wrong number of active days",
                     "anchor": "days_active_Android",
                     "textblock": [
                       "When counting the active days, there is an error displayed currently: When '14 of 14 active days' is reached,the number of active days that is displayed doesn't stay 14 out of 14, but seemingly randomly displays another number of active days, for example, 3 out of 14 active days.",
@@ -78,28 +70,28 @@
                     ]
                 }, {
                     "active": true,
-                    "title" : "Error when communicating with Google API(10)",
+                    "title" : "[Google/Android]: Error when communicating with Google API(10)",
                     "anchor": "API10",
                     "textblock": [
                         "This error, in connection with missing risk identification, is currently fixed together with Google. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove the logged exposures, see also <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/en/faq/#delete_random_ids</a>."
                     ]
                 },{
                     "active": true,
-                    "title" : "Error when communicating with Google API(39508)",
+                    "title" : "[Google/Android]: Error when communicating with Google API(39508)",
                     "anchor": "API39508",
                     "textblock": [
                         "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>."
                     ]
                 },{
                     "active": true,
-                    "title" : "Android: 0 keys displayed",
+                    "title" : "[Google/Android]: 0 keys displayed",
                     "anchor": "keys0",
                     "textblock": [
                         "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                     ]
                 },{
                     "active": true,
-                    "title" : "Android: Notification of possible encounters... - Weekly Update",
+                    "title" : "[Google/Android]: Notification of possible encounters... - Weekly Update",
                     "anchor": "notif_weekly_update",
                     "textblock": [
                         "This is a general notification that does not mean that exposures were detected. The Exposure Notification Framework sends this notification. It looks like other notifications of the Corona-Warn-App, for example, when Bluetooth is deactivated. You can look up the risk status directly in the Corona-Warn-App."
