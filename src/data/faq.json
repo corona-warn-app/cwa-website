@@ -112,7 +112,7 @@
             "title": "Availability",
             "id": "availability",
             "accordion": [
-                { "active": true
+                {   "active": true,
                     "title": "What are the minimum operating system requirements for my phone?",
                     "anchor": "minimum_requirements",
                     "textblock": [
@@ -142,7 +142,7 @@
                       "Google delivers the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available starting with Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot influence this."
                     ]
                 },{
-			"active": true
+			        "active": true,
                     "title" : "In which languages is the Corona-Warn-App available?",
                     "anchor": "available_languages",
                     "textblock": [
@@ -177,28 +177,28 @@
                         "Furthermore, there is an initiative in the developer community to make the Corona-Warn-App executable independently of Google Play Services via appropriate extensions. Details can be found in the issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/75' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-android#75</a>."
                     ]
                 },{
-			"active": true
+			        "active": true,
                     "title" : "Will the app also be available on tablets, smart watches, and other wearables?",
                     "anchor": "smartwatch",
                     "textblock": [
                         "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course communicate this widely."
                     ]
                 },{
-			"active": true
+			        "active": true,
                     "title": "Will the app be made available on platforms other than Apple App Store and Google Play Store?",
                     "anchor": "other_platforms",
                     "textblock": [
                         "We do not intend to make the app available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
 					]
                 },{
-			"active": true
+			        "active": true,
                     "title": "When will the app be ready?",
                     "anchor": "when_ready",
                     "textblock": [
                       "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."
                     ]
                 },{
-			"active": true
+			        "active": true,
                     "title" : "Where can I get the app?",
                     "anchor": "where_to_get",
                     "textblock": [
