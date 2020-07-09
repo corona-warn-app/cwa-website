@@ -12,25 +12,28 @@
   </aside>
   <main class="main">
     <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+    <input type="search" id="faq-search"></input>
     {{#each page-contents.section-main.sections}}
 
       {{> text-component this=.}}
       <dl class="accordion js-accordion" data-toggle="accordion-header">
       {{#each accordion}}
-        <dt class="accordion-header{{#if active}} active{{/if}}">
-          <h4 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h4>
-          <span class="accordion-item-icon"></span>
-        </dt>
-        <dd class="accordion-body">
-          <div class="accordion-item-content">
-            {{#if textblock}}
-            {{#each textblock}}
-            <p>{{{.}}}</p>
-            {{/each}}
-            {{/if}}
-            <p>{{#if anchor}}<a href="#{{anchor}}">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
-          </div>
-        </dd>
+        <div id="{{anchor}}">
+          <dt class="accordion-header{{#if active}} active{{/if}}">
+            <h4 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h4>
+            <span class="accordion-item-icon"></span>
+          </dt>
+          <dd class="accordion-body">
+            <div class="accordion-item-content">
+              {{#if textblock}}
+              {{#each textblock}}
+              <p>{{{.}}}</p>
+              {{/each}}
+              {{/if}}
+              <p>{{#if anchor}}<a href="#{{anchor}}">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
+            </div>
+          </dd>
+        </div>
       {{/each}}
       </dl>
     {{/each}}

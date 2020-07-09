@@ -75,5 +75,55 @@ $(document).ready(function(){
         });
         $('.js-section-sticky').removeClass('hidden');
         $(document).on('scroll', autohideSticky);
-    }
+    };
+
+    // load FAQs
+    // TODO: check whether to load english or german FAQs
+    let faq = [];
+    $.get("/assets/data/faq.json", (data) => {
+        $(data['section-main'].sections).each((i, section) => {
+            $(section.accordion).each((ii, faqEntry) => {
+                faq.push([faqEntry.anchor, faqEntry.title.toLowerCase() + " " + faqEntry.textblock.map((x) => x.toLowerCase()).join(" ")]);
+            })
+        })
+    })
+
+    // react to keystrokes in the search bar
+    $('#faq-search').on('keyup', (event) => {
+        const curSearch = event.target.value.toLowerCase();
+        // only search for longer terms and react to empty search (aka delete input)
+        if(curSearch.length < 2 && curSearch.length > 0) {
+            return;
+        }
+
+        const hide = [];
+        const show = [];
+
+        // Yeah, slow. But in the end, this is only 50-100 entries
+        $(faq).each((_, entry) => {
+            // text and header does not match
+            if(entry[1].search(curSearch) !== -1 || curSearch.length === 0) {
+                show.push("div[id='" + entry[0] + "']");
+            } else {
+                hide.push("div[id='" + entry[0] + "']");
+            }
+        });
+
+        // show all matches
+        if (show.length > 0) {
+            document.querySelectorAll(show).forEach((link) => {
+                console.log()
+                $(link).show();
+            });
+        }
+
+        // hide everything that does not match
+        if (hide.length > 0) {
+            document.querySelectorAll(hide).forEach((link) => {
+                $(link).hide();
+            });
+        }
+    });
+
+
 });
