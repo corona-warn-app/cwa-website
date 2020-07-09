@@ -435,7 +435,7 @@
                     "anchor": "non_dev_related",
 			"active": true,
                     "textblock": [
-                        "Im Open-Source-Projekt für die Corona-Warn-App und auf der zugehörigen Website coronawarn.app geht es um die Open-Source-Entwicklung der App. Die Website und die GitHub-Repositories sind nur für Themen im Zusammenhang mit der App-Entwicklung gedacht, nicht für Informationen zu anderen Aspekten, wie rechtliche Fragen, Informationen für die nutzenden Personen usw. Fragen diesbezüglich können Sie über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen."
+                        "Im Open-Source-Projekt für die Corona-Warn-App auf github.com/corona-warn-app und auf der Website coronawarn.app geht es viel um die Open-Source-Entwicklung der App. Informationen zu den allgemeinen Aspekten, auch rechtliche Fragen und Informationen für die nutzenden Personen gibt es auf https://www.bundesregierung.de/breg-de/themen/corona-warn-app. Fragen können Sie über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen."
                     ]
                 },{
                     "title" : "Gibt es eine zentrale Stelle, die die Kontrolle über alle Begegnungsereignisse hat?",
@@ -445,7 +445,7 @@
                         "Die App selbst speichert keinerlei Informationen über einzelne potenzielle Begegnungsereignisse. Das Exposure Notification Framework, auf dem die App aufbaut, speichert in sicherer Form die sichtbaren Rolling Proximity Identifiers (RPIs) auf den Smartphones ab, die sich innerhalb eines bestimmten Zeitraums in nächster Nähe aufgehalten haben. Selbst wenn die zentrale Infrastruktur kompromittiert wird, kann diese Information nicht zu einem Smartphone zurückverfolgt werden, wenn nicht ohnehin schon Zugriff auf das Smartphone besteht. Selbst dann kann die App selbst nicht auf die RPIs zugreifen. Auf die Diagnoseschlüssel ('Positivkennungen') kann nur mit Zustimmung der nutzenden Person zugegriffen werden, und auch dies ist nur für einen kurzen Zeitraum möglich. Vor der Verarbeitung der Daten werden die Informationen entfernt, die die Poisitivkennung und die Verbindungsmetadaten miteinander verknüpfen."
                     ]
                 },{
-                    "title" : "Wer wird das Backend der App betreiben?",
+                    "title" : "Wer betreibt das Backend der App?",
                     "anchor": "backend_ops",
 			"active": true,
                     "textblock": [
