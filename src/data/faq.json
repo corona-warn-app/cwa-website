@@ -437,7 +437,7 @@
                     "anchor": "non_dev_related",
 			"active": true,
                     "textblock": [
-                        "Information contained in the open source project for the Corona-Warn-App and on its website coronawarn.app is about the open source development of the app. The website and the GitHub repositories are not the right place for discussion or information on topics unrelated to app development – such as legal matters, end-user guidance, and so on. For questions related to these topics, please use the <a href='https://www.bundesregierung.de/breg-en/service/contact' target='_blank' rel='noopener noreferrer'>contact form of the Federal Government</a>."
+                        "The open source project for the Corona-Warn-App on github.com/corona-warn-app and the website coronawarn.app is all about the open source development of the app. For information about general topics, legal matters, and using the app, you can also see https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch. For questions related to these topics, please use the <a href='https://www.bundesregierung.de/breg-en/service/contact' target='_blank' rel='noopener noreferrer'>contact form of the Federal Government</a>.."
                     ]
                 },{
                     "title" : "Is there a central entity in control of all exposure events?",
@@ -447,7 +447,7 @@
                         "The app itself does not store any information about individual potential exposure events. The Exposure Notification Framework, on which the app is based, stores the visible Rolling Proximity Identifiers (RPIs) on the devices that are located in close proximity and within a defined time period. Even if the central server infrastructure is compromised, this information cannot be linked back to a device without having access to it in the first place. Even then, the app itself cannot access the RPIs. Diagnosis keys can only be accessed with user consent and then only for a short period of time. Information that links diagnosis keys and connection metadata is removed before this data is processed."
                     ]
                 },{
-                    "title" : "Who will operate the app backend?",
+                    "title" : "Who operates the app backend?",
                     "anchor": "backend_ops",
 			"active": true,
                     "textblock": [
