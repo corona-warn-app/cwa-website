@@ -78,12 +78,15 @@ $(document).ready(function(){
     };
 
     // load FAQs
-    // TODO: check whether to load english or german FAQs
     let faq = [];
-    $.get("/assets/data/faq.json", (data) => {
+    let lang = window.location.pathname.slice(0,3);
+    let fn = "faq" + (lang === "/de" ? "_de" : "") + ".json";
+
+    $.get("/assets/data/" + fn, (data) => {
         $(data['section-main'].sections).each((i, section) => {
             $(section.accordion).each((ii, faqEntry) => {
-                faq.push([faqEntry.anchor, faqEntry.title.toLowerCase() + " " + faqEntry.textblock.map((x) => x.toLowerCase()).join(" ")]);
+                let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+                faq.push([faqEntry.anchor, searchEntry.toLowerCase()]);
             })
         })
     })
