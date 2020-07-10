@@ -83,12 +83,15 @@ $(document).ready(function(){
     let fn = "faq" + (lang === "/de" ? "_de" : "") + ".json";
 
     $.get("/assets/data/" + fn, (data) => {
-        $(data['section-main'].sections).each((i, section) => {
-            $(section.accordion).each((ii, faqEntry) => {
+        let qCount = 0;
+        $(data['section-main'].sections).each((_, section) => {
+            $(section.accordion).each((_, faqEntry) => {
                 let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
                 faq[faqEntry.anchor] = searchEntry.toLowerCase();
+                qCount += 1;
             })
-        })
+        });
+        $("#match-count").text(qCount.toString() + "/" + qCount.toString());
     })
 
     // react to keystrokes in the search bar
@@ -124,7 +127,11 @@ $(document).ready(function(){
             document.querySelectorAll(hide).forEach((div) => {
                 $(div).hide();
             });
-        }
+        };
+
+        let totalCount = (show.length + hide.length).toString();
+        let sCount = show.length.toString().padStart(totalCount.length, "0");
+        $("#match-count").html(sCount + "/" + totalCount);
     });
 
 
