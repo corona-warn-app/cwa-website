@@ -11,16 +11,7 @@
             "active": true,
             "id": "most_asked",
             "accordion": [
-                {
-                    "active": true,
-                    "title": "[Apple/iOS]: wrong number of active days",
-                    "anchor": "days_active_Apple",
-                    "textblock": [
-                      "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
-                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
-                      "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>", "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>."
-                    ]
-                },{
+               {
                     "active": true,
                     "title": "[Apple/iOS]: ENErrorDomain-Error 5",
                     "anchor": "ENError5",
@@ -598,6 +589,24 @@
                         "We believe that security is not helped by a lack of transparency. That is why we are taking an open-source approach."
                     ]
                 }
+            ]
+        },{
+            "title": "Resolved",
+            "id": "resolved",
+            "accordion": [
+                {
+                    "active": true,
+                    "title": "[Apple/iOS]: wrong number of active days",
+                    "anchor": "days_active_Apple",
+                    "textblock": [
+                      "Update: This display error is resolved by now. Please update the Corona-Warn-App to the latest version. The app will now count up the number of active days, until the 14 active days are reached, as intended.",
+			"When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
+                      "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
+                      "Exposure logging can be deactivated, for example, by the following:", "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>", "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>."
+                    ]
+                }
+
+
             ]
         }]
     }
