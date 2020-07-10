@@ -13,14 +13,6 @@
             "accordion": [
                {
                     "active": true,
-                    "title": "[Apple/iOS]: Falsche Anzeige der Zahl aktiver Tage",
-                    "anchor": "days_active_Apple",
-                    "textblock": [
-                      "Bei der Zählung der aktiven Tage gibt es derzeit einen Fehler, der dazu führt, dass bei Erreichen von '14 von 14 Tagen aktiv' die Anzeige der Anzahl aktiver Tage nicht bei 14 von 14 Tagen bleibt, sondern statisch auf „13 von 14 Tagen aktiv“ oder weniger stehen bleibt.",
-                      "Dieser Fehler betrifft nur die Anzeige der aktiven Tage in der Corona-Warn-App. Die Funktion selbst ist nicht eingeschränkt, das heißt, die Schlüssel werden weiterhin ausgetauscht und die Risiko-Ermittlung wird weiterhin durchgeführt. Es gehen keine Daten verloren. Technisch gesehen handelt es sich hier um einen Rundungsfehler, der auftritt, wenn die Anzahl aktiver Tage der Risiko-Ermittlung nicht mehr zunimmt, sondern statisch bei 14 Tagen bleibt. Wenn die Risiko-Ermittlung auch nur kurzfristig in irgendeiner Form nicht aktiv war, bleibt der Zähler bei einem niedrigeren Wert, also etwa bei 13 Tagen stehen.",
-                      "Mögliche Ursachen für eine Deaktivierung der Risiko-Ermittlung:", "<ol><li>Bluetooth wurden deaktiviert, auch nur für einen kurzen Zeitraum</li><li>Die Hintergrundaktualisierung für die App war nicht aktiv, so dass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Der Flugmodus wurde eingeschaltet, auch nur für einen kurzen Zeitraum</li><li>Das Smartphone war ausgeschaltet</li><li>Das Smartphone wurde neu gestartet</li></ol>" , "Detaillierte Informationen dazu stehen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>in diesem Kommentar auf GitHub</a> (englisch)." ]
-                }, {
-                    "active": true,
                     "title": "[Apple/iOS]: ENErrorDomain-Fehler 5",
                     "anchor": "ENError5",
                     "textblock": [
@@ -597,6 +589,21 @@
                         "Im Gegenteil: Die Open-Source-Community erhöht die Sicherheit der Software, da der Quellcode offen liegt und alle interessierten Personen den Code herunterladen und Zeile für Zeile überprüfen können.",
 						"Wir glauben daran, dass Sicherheit nicht durch Intransparenz gewährleistet wird. Deshalb verfolgen wir einen Open-Source-Ansatz."
                     ]
+                }
+            ]
+        },{
+            "id": "resolved",
+            "title": "Geklärt",
+            "accordion": [
+             {
+                    "active": true,
+                    "title": "[Apple/iOS]: Falsche Anzeige der Zahl aktiver Tage",
+                    "anchor": "days_active_Apple",
+                    "textblock": [
+                      "Aktuell: Dieser Anzeigefehler ist inzwischen behoben. Bitte aktualisieren Sie die Corona-Warn-App auf die neueste Version. Die App zählt jetzt die aktiven Tage weiter, bis sie, wie vorgesehen, 14 erreicht hat.",
+			"Bei der Zählung der aktiven Tage gibt es derzeit einen Fehler, der dazu führt, dass bei Erreichen von '14 von 14 Tagen aktiv' die Anzeige der Anzahl aktiver Tage nicht bei 14 von 14 Tagen bleibt, sondern statisch auf „13 von 14 Tagen aktiv“ oder weniger stehen bleibt.",
+                      "Dieser Fehler betrifft nur die Anzeige der aktiven Tage in der Corona-Warn-App. Die Funktion selbst ist nicht eingeschränkt, das heißt, die Schlüssel werden weiterhin ausgetauscht und die Risiko-Ermittlung wird weiterhin durchgeführt. Es gehen keine Daten verloren. Technisch gesehen handelt es sich hier um einen Rundungsfehler, der auftritt, wenn die Anzahl aktiver Tage der Risiko-Ermittlung nicht mehr zunimmt, sondern statisch bei 14 Tagen bleibt. Wenn die Risiko-Ermittlung auch nur kurzfristig in irgendeiner Form nicht aktiv war, bleibt der Zähler bei einem niedrigeren Wert, also etwa bei 13 Tagen stehen.",
+                      "Mögliche Ursachen für eine Deaktivierung der Risiko-Ermittlung:", "<ol><li>Bluetooth wurden deaktiviert, auch nur für einen kurzen Zeitraum</li><li>Die Hintergrundaktualisierung für die App war nicht aktiv, so dass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Der Flugmodus wurde eingeschaltet, auch nur für einen kurzen Zeitraum</li><li>Das Smartphone war ausgeschaltet</li><li>Das Smartphone wurde neu gestartet</li></ol>" , "Detaillierte Informationen dazu stehen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>in diesem Kommentar auf GitHub</a> (englisch)." ]
                 }
             ]
         }]
