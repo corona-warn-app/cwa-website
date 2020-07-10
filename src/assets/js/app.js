@@ -78,7 +78,7 @@ $(document).ready(function(){
     };
 
     // load FAQs
-    let faq = [];
+    let faq = {};
     let lang = window.location.pathname.slice(0,3);
     let fn = "faq" + (lang === "/de" ? "_de" : "") + ".json";
 
@@ -86,7 +86,7 @@ $(document).ready(function(){
         $(data['section-main'].sections).each((i, section) => {
             $(section.accordion).each((ii, faqEntry) => {
                 let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-                faq.push([faqEntry.anchor, searchEntry.toLowerCase()]);
+                faq[faqEntry.anchor] = searchEntry.toLowerCase();
             })
         })
     })
@@ -103,27 +103,26 @@ $(document).ready(function(){
         const show = [];
 
         // Yeah, slow. But in the end, this is only 50-100 entries
-        $(faq).each((_, entry) => {
+        $.each(faq, (anchor, text) => {
             // text and header does not match
-            if(entry[1].search(curSearch) !== -1 || curSearch.length === 0) {
-                show.push("div[id='" + entry[0] + "']");
+            if(curSearch.length === 0 || text.search(curSearch) !== -1) {
+                show.push("div[id='" + anchor + "']");
             } else {
-                hide.push("div[id='" + entry[0] + "']");
+                hide.push("div[id='" + anchor + "']");
             }
         });
 
         // show all matches
         if (show.length > 0) {
-            document.querySelectorAll(show).forEach((link) => {
-                console.log()
-                $(link).show();
+            document.querySelectorAll(show).forEach((div) => {
+                $(div).show();
             });
         }
 
         // hide everything that does not match
         if (hide.length > 0) {
-            document.querySelectorAll(hide).forEach((link) => {
-                $(link).hide();
+            document.querySelectorAll(hide).forEach((div) => {
+                $(div).hide();
             });
         }
     });

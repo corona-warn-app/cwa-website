@@ -12,7 +12,17 @@
   </aside>
   <main class="main">
     <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
-    <input type="search" id="faq-search"></input>
+
+      <form>
+        <!-- Actual search box -->
+        <div class="form-group">
+          <div class="col-6">
+            <input type="text" class="form-control form-control-sm" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search">
+          </div>
+        </div>
+      </form>
+      <hr />
+
     {{#each page-contents.section-main.sections}}
 
       {{> text-component this=.}}

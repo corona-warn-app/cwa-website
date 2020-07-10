@@ -6,6 +6,8 @@
  */
 
 $include-column-box-sizing: true !default;
+$form-grid-gutter-width: 30 !default;
+$form-check-input-margin-x: 0 !default;
 
 @import "functions";
 @import "variables";
@@ -63,7 +65,7 @@ $utilities: map-get-multiple(
 
 @import "utilities/api";
 @import "reboot";
-// @import "forms";
+@import "forms";
 @import "type";
 @import "icon";
 @import "buttons";
