@@ -11,7 +11,7 @@
     </ul>
   </aside>
   <main class="main">
-    <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+    <h1 class="headline headline-heavy" id="top">{{page-contents.section-main.headline.title}}</h1>
 
     <form>
       <!-- Actual search box -->
@@ -42,6 +42,7 @@
               {{/each}}
               {{/if}}
               <p>{{#if anchor}}<a href="#{{anchor}}">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
+              <p><a href="#top">{{../../page-contents.section-main.texts.to_top}}</a></p>
             </div>
           </dd>
         </div>
