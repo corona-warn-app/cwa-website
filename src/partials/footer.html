@@ -1,15 +1,15 @@
 <footer class="footer {{#ifpage 'index'}}footer_home{{/ifpage}}">
   <div class="container align-items-between">
     <div class="row justify-content-between">
-      <div class="col-8 col-sm-4 col-md-4">
+      <div class="col-8 col-sm-5 col-md-4">
         <a class="logo" href="/{{#if lang_de}}de{{else}}en{{/if}}/">
           <img src="{{root}}assets/img/logo.svg" alt="App Logo" />
         </a>
       </div>
-      <div class="col-16 col-sm-8 col-md-8">
-        <div class="link-list">
+      <div class="col-16 col-sm-7 col-md-8">
+        <div class="row">
           {{#each language.footer-nav}}
-          <div class="link-item">
+          <div class="link-item col-6 col-md-4">
             <strong>{{title}}</strong>
             {{#if button}}
             <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>

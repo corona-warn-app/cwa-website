@@ -5,15 +5,15 @@ const yargs = require('yargs');
 const browser = require('browser-sync');
 const gulp = require('gulp');
 const panini = require('panini');
-//const rimraf = require('rimraf');
-//const sherpa = require('style-sherpa');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const webpackStream = require('webpack-stream');
 const webpack2 = require('webpack');
 const named = require('vinyl-named');
-const uncss = require('uncss');
 const autoprefixer = require('autoprefixer');
+var sitemap = require('gulp-sitemap');
+const rimraf = require('rimraf');
+const webp = require('gulp-webp');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -21,7 +21,7 @@ const $ = plugins();
 // Check for --develop or --dev flag
 var PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
 
-// Load settings from settings.yml
+// Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
 
 function loadConfig() {
@@ -33,7 +33,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(gulp.parallel(pages, javascript, images, copy), sass)
+    gulp.series(clean, gulp.parallel(pages, javascript, images_minify, copy), images_webp, sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -41,9 +41,9 @@ gulp.task('default', gulp.series('build', server, watch));
 
 // Delete the "dist" folder
 // This happens every time a build starts
-// function clean(done) {
-//   rimraf(PATHS.dist, done);
-// }
+function clean(done) {
+   rimraf(PATHS.dist, done);
+}
 
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
@@ -141,12 +141,19 @@ function javascript() {
 
 // Copy images to the "dist" folder
 // In production, the images are compressed
-function images() {
+function images_minify() {
   return gulp
     .src('src/assets/img/**/*')
     .pipe(
-      $.if(PRODUCTION, $.imagemin([$.imagemin.jpegtran({ progressive: true })]))
+      $.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })]))
     )
+    .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+}
+
+function images_webp() {
+  return gulp
+    .src('src/assets/img/**/*')
+    .pipe(webp())
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
@@ -193,5 +200,19 @@ function watch() {
     .on('all', gulp.series(javascript, browser.reload));
   gulp
     .watch('src/assets/img/**/*')
-    .on('all', gulp.series(images, browser.reload));
+    .on('all', gulp.series(images_minify, images_webp, browser.reload));
+}
+
+// generate an up-to-date sitemap
+function build_sitemap() {
+  return gulp
+    .src([PATHS.dist + "/**/*.html", "!" + PATHS.dist + '/error.html'])
+    .pipe(sitemap({
+      siteUrl: "https://coronawarn.app",
+      priority: function(siteUrl, loc, entry) {
+        // Reduce priority by 0.2 per level
+        return 1.0 - (entry.file.split('/').length - 1) * 0.2
+      }
+    }))
+    .pipe(gulp.dest(PATHS.dist))
 }

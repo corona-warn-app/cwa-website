@@ -19,7 +19,8 @@
         },
         "image": {
             "url" : "/assets/img/app-mockup@2x.png",
-            "title": "Corona-Warn-App"
+            "url-webp": "/assets/img/app-mockup@2x.webp",
+            "title": "Corona Warn App"
         }
     },
     "section-image-ticker": {
@@ -31,7 +32,7 @@
                 "index": "01.",
                 "image": {"url": "/assets/img/how-it-works-1.svg"},
                 "title": "IDs in der Nähe sammeln",
-                "text": "Das Exposure Notification Framework (von Apple und Google) auf einem mobilen Gerät sendet einen Rolling Proximity Identifier und sucht gleichzeitig regelmäßig mithilfe der Technologie Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern."
+                "text": "Das Exposure Notification Framework (von Apple und Google) auf einem mobilen Gerät sendet einen regelmäßig wechselnden Code (sogenannte Rolling Proximity IDs) und sucht gleichzeitig mithilfe von Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern."
             },
             {
                 "index": "02.",
@@ -88,7 +89,7 @@
     "section-image-text": {
         "image": {
             "url" : "/assets/img/running-app.png",
-            "url-set": "/assets/img/running-app.png 1x, /assets/img/running-app@2x.png 2x",
+            "url-set": "/assets/img/running-app.webp, /assets/img/running-app.webp 1x, /assets/img/running-app@2x.webp 2x, /assets/img/running-app.png 1x, /assets/img/running-app@2x.png 2x",
             "title": "..."
         },
         "headline": {
@@ -180,6 +181,12 @@
             "text": "Anfang Mai 2020 hat die Bundesregierung SAP und die Deutsche-Telekom-Tochter T-Systems gebeten, die offizielle Corona-Warn-App für Deutschland zu entwickeln. Die App soll nach dem Open-Source-Prinzip entwickelt werden und auf einem dezentralen Ansatz basieren. Folgende Partner unterstützen die Entwicklung der App, in die auch die globale Open-Source-Community eingebunden ist:"
         },
         "icon-list" : [{
+                "icon-url": "/assets/img/partner/bcg_logo.svg",
+                "title": "Boston Consulting Group"
+            },{
+                "icon-url": "/assets/img/partner/bcgdv_logo.svg",
+                "title": "BCG Digital Ventures"
+            },{
                 "icon-url": "/assets/img/partner/cispa_logo@1x.png",
                 "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
                 "title": "Cispa"
@@ -192,6 +199,10 @@
             }, {
                 "icon-url": "/assets/img/partner/Helmholtz_logo.svg",
                 "title": "Helmholtz"
+            }, {
+                "icon-url": "/assets/img/partner/logo_msg@1x.png",
+                "icon-set": "/assets/img/partner/logo_msg@1x.png 1x, /assets/img/partner/logo_msg@2x.png 2x",
+                "title": "msg systems ag"
             }, {
                 "icon-url": "/assets/img/partner/rki-logo@1x.png",
                 "icon-set": "/assets/img/partner/rki-logo@1x.png 1x, /assets/img/partner/rki-logo@2x.png 2x",
@@ -250,7 +261,7 @@
             ],
             "headline" : {
                 "title": "App mit!",
-                "text": "Jetzt zum Download verfügbar im <nobr>Apple App Store</nobr> und auf <nobr>Google Play</nobr>."
+                "text": "Jetzt zum Download verfügbar im <span class='nobr'>Apple App Store</span> und auf <span class='nobr'>Google Play</span>."
             }
         }
     },

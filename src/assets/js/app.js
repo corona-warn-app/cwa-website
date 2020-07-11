@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import './lib/slick.min.js';
-//import 'what-input';
 
 window.jQuery = $;
 
@@ -19,6 +18,29 @@ $(document).ready(function(){
         $(this).parents('.js-menu').first().find('a').removeClass('active');
         $(this).addClass('active');
     });
+
+    const anchors = Array.from(document.querySelectorAll('.js-anchor'));
+    const menu = document.querySelector('.js-scroll-navigate');
+
+    document.addEventListener('scroll', () => {
+        const negativeOffsets = anchors
+            .map((anchor) => Math.floor(anchor.getBoundingClientRect().top))
+            .filter(offset => offset <= 0);
+        const current = negativeOffsets.indexOf(Math.max(...negativeOffsets));
+
+        if (current >= 0) {
+            const hash = '#' + anchors[current].id;
+
+            const oldItem = menu.querySelector('a.active');
+            const newItem = menu.querySelector('a[href="' + hash + '"]');
+
+            if (newItem !== null && oldItem !== null) {
+                oldItem.classList.remove('active');
+                newItem.classList.add('active');
+            }
+        }
+    });
+
     $('.js-slider').slick({
         dots: true,
         infinite: true,

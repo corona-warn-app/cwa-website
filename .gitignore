@@ -40,7 +40,6 @@ build/Release
 # Dependency directories and files
 node_modules/
 jspm_packages/
-package-lock.json
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -113,3 +112,9 @@ public
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# cypress
+cypress/screenshots/
+cypress/plugins/
+cypress/support/
+cypress/videos/

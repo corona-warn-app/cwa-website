@@ -18,6 +18,7 @@
         },
         "image": {
             "url" : "/assets/img/app-mockup@2x.png",
+            "url-webp" : "/assets/img/app-mockup@2x.webp",
             "title": "Corona Warn App"
         }
     },
@@ -87,6 +88,7 @@
     "section-image-text": {
         "image": {
             "url" : "/assets/img/running-app.png",
+            "url-webp" : "/assets/img/running-app.webp",
             "url-set": "/assets/img/running-app.png 1x, /assets/img/running-app@2x.png 2x",
             "title": "..."
         },
@@ -180,6 +182,12 @@
             "text": "Early May 2020, the German government requested SAP and Deutsche Telekom subsidiary T-Systems to deliver the official Corona-Warn-App for Germany, based on open source and a decentralized approach. The following partners are supporting the development of the app together with the involvement of the global open source community."
         },
         "icon-list" : [{
+                "icon-url": "/assets/img/partner/bcg_logo.svg",
+                "title": "Boston Consulting Group"
+            },{
+                "icon-url": "/assets/img/partner/bcgdv_logo.svg",
+                "title": "BCG Digital Ventures"
+            },{
                 "icon-url": "/assets/img/partner/cispa_logo@1x.png",
                 "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
                 "title": "Cispa"
@@ -192,6 +200,10 @@
             }, {
                 "icon-url": "/assets/img/partner/Helmholtz_logo.svg",
                 "title": "Helmholtz"
+            }, {
+                "icon-url": "/assets/img/partner/logo_msg@1x.png",
+                "icon-set": "/assets/img/partner/logo_msg@1x.png 1x, /assets/img/partner/logo_msg@2x.png 2x",
+                "title": "msg systems ag"
             }, {
                 "icon-url": "/assets/img/partner/rki-logo@1x.png",
                 "icon-set": "/assets/img/partner/rki-logo@1x.png 1x, /assets/img/partner/rki-logo@2x.png 2x",
@@ -250,7 +262,7 @@
             ],
             "headline" : {
                 "title": "Get the App!",
-                "text": "Now available via <nobr>App Store</nobr> and <nobr>Google Play Store</nobr>."
+                "text": "Now available via <span class='nobr'>App Store</span> and <span class='nobr'>Google Play Store</span>."
             }
         }
     },
