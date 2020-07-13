@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import './lib/slick.min.js';
+import 'slick-carousel';
 
 window.jQuery = $;
 
