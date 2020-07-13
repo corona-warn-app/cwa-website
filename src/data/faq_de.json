@@ -245,6 +245,13 @@
                         "Ja. Mit der Option im Kontrollzentrum (siehe <a href='https://support.apple.com/de-de/HT208086' target='_blank' rel='noopener noreferrer'>Bluetooth und WLAN im Kontrollzentrum verwenden</a>) trennen Sie lediglich vorübergehend die Verbindung zum aktuell verbundenen Bluetooth-Zubehör. Bluetooth an sich ist in den Systemeinstellungen aber nach wie vor aktiv."
                     ]
                 },{
+                    "title" : "[Apple/iOS]: Migration auf neues Gerät bzw. Backup/Restore - App funktioniert nicht",
+                    "anchor": "migration_Apple",
+			"active": true,
+                    "textblock": [
+                        "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risikoermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.", "Das ist leider ein bekanntes Problem mit der Sicherung der Zufallscodes, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.","Bitte installieren Sie die Corona-Warn-App auf Ihrem neuen iPhone neu."
+                    ]
+                },{
                     "title": "Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
                     "anchor": "backup",
 			"active": true,
@@ -345,6 +352,13 @@
                         "<ol><li>Öffnen Sie die Geräte-Einstellungen.</li><li>Wählen Sie 'Apps' bzw. 'Apps & Benachrichtigungen'.</li><li>Wählen Sie 'Corona-Warn'.</li><li>Wählen Sie 'Akkuverbrauch'.</li><li>Wählen Sie 'App-Start'.</li><li>Deaktivieren Sie 'Automatisch verwalten'.</li><li>Aktivieren Sie 'Auto-Start'.</li><li>Aktivieren Sie 'Sekundärer Start'.</li><li>Aktivieren Sie 'Im Hintergrund ausführen'.</li><li>Starten Sie das Smartphone neu.</li><li>Starten Sie die Corona-Warn-App.</li></ol>",
                         "Diese Probleme können auch bei anderen Anwendungen auftreten. Andere Hersteller haben deswegen bereits sehr viele, auch gerätespezifische Informationen zur Lösung bereitgestellt. Weitere Informationen finden Sie etwa <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>bei Slack</a>. Wenn unsere allgemeinen Tipps nicht helfen, versuchen Sie bitte <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>die Tipps aus der Slack-Dokumentation</a> für die Corona-Warn-App und Ihr Smartphone anzuwenden.",
                         "Wir arbeiten an einer Erweiterung der Android-App, sodass Sie diese Einstellung direkt in der App vornehmen können und nicht mehr umständlich über die Geräte-Einstellungen gehen müssen."
+                    ]
+                },{
+                    "title" : "[Google/Android]: Ursache:9002 Etwas ist schief gelaufen (sqlite)",
+                    "anchor": "cause9002",
+			"active": true,
+                    "textblock": [
+                        "Es kommt auf einzelnen Geräten (z.B. Huawei P20 Pro) zu Problemen beim Zugriff auf die verschlüsselte Datenbank der App. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption). Leider konnte die eigentliche Ursache noch nicht gefunden werden. Details dazu finden Sie unter <a href='https://www.corona-warn-app/cwa-app-android#642' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-android#642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen."
                     ]
                 },{
                     "title" : "[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
