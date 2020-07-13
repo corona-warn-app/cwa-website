@@ -1,5 +1,6 @@
 import $ from 'jquery';
-import './lib/slick.min.js';
+import throttle from 'lodash.throttle';
+import 'slick-carousel';
 
 window.jQuery = $;
 
@@ -22,7 +23,11 @@ $(document).ready(function(){
     const anchors = Array.from(document.querySelectorAll('.js-anchor'));
     const menu = document.querySelector('.js-scroll-navigate');
 
-    document.addEventListener('scroll', () => {
+    const handleScrollFAQMenu = function() {
+        if (!anchors.length) {
+            return
+        }
+
         const negativeOffsets = anchors
             .map((anchor) => Math.floor(anchor.getBoundingClientRect().top))
             .filter(offset => offset <= 0);
@@ -39,7 +44,9 @@ $(document).ready(function(){
                 newItem.classList.add('active');
             }
         }
-    });
+    };
+    const throttledHandleScrollFAQMenu = throttle(handleScrollFAQMenu, 500)
+    document.addEventListener('scroll', throttledHandleScrollFAQMenu)
 
     $('.js-slider').slick({
         dots: true,
@@ -56,7 +63,7 @@ $(document).ready(function(){
         }]
     });
     if ($('.js-section-sticky').index() >= 0){
-        const autohideSticky = function(){
+        const autoHideSticky = function(){
             const top = $(document).scrollTop(),
                 maxTop = $(window).height() / 4;
             if ($('.js-section-sticky').hasClass('invisible')) {
@@ -69,11 +76,13 @@ $(document).ready(function(){
                 }
             }
         }
+        const throttledAutoHideSticky = throttle(autoHideSticky, 500)
+        document.addEventListener('scroll', throttledAutoHideSticky)
+
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
-            $(document).off('scroll', autohideSticky);
+            $(document).off('scroll', throttledAutoHideSticky);
         });
         $('.js-section-sticky').removeClass('hidden');
-        $(document).on('scroll', autohideSticky);
     }
 });
