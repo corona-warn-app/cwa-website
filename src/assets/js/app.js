@@ -1,6 +1,6 @@
 import $ from 'jquery';
-import './lib/slick.min.js';
 import throttle from 'lodash.throttle';
+import 'slick-carousel';
 
 window.jQuery = $;
 
