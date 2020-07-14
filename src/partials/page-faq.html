@@ -13,16 +13,16 @@
   <main class="main">
     <h1 class="headline headline-heavy" id="top">{{page-contents.section-main.headline.title}}</h1>
 
-    <form>
+    <form method="get">
       <!-- Actual search box -->
       <div class="input-group mb-2 mr-sm-2">
         <div class="input-group-prepend input-group-sm">
           <div class="input-group-text"><span id="match-count">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}</div>
         </div>
-        <input type="text" class="form-control form-control-sm" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search">
+        <input type="text" class="form-control form-control-sm" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
       </div>
     </form>
-      <hr />
+    <hr />
 
     {{#each page-contents.section-main.sections}}
 

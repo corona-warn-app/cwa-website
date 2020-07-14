@@ -87,6 +87,12 @@ $(document).ready(function(){
         faq = data;
         let faqCount = Object.keys(data).length.toString();
         $("#match-count").text(faqCount + "/" + faqCount);
+
+        // find out whether there are search strings added
+        var urlParams = new URLSearchParams(window.location.search);
+        if(urlParams.has("search")){
+            updateResults(urlParams.get("search"), faq);
+        }
     })
 
     // react to keystrokes in the search bar
@@ -96,38 +102,42 @@ $(document).ready(function(){
         if(curSearch.length < 2 && curSearch.length > 0) {
             return;
         }
-
-        const hide = [];
-        const show = [];
-
-        // Yeah, slow. But in the end, this is only 50-100 entries
-        Object.keys(faq).forEach((anchor) => {
-            let text = faq[anchor];
-            let anchorDiv = "div[id='" + anchor + "-div']"
-            // text and header does not match
-            if(curSearch.length === 0 || text.search(curSearch) !== -1) {
-                show.push(anchorDiv);
-            } else {
-                hide.push(anchorDiv);
-            }
-        });
-
-        // show all matches
-        if (show.length > 0) {
-            document.querySelectorAll(show).forEach((div) => {
-                $(div).show({duration: 300});
-            });
-        }
-
-        // hide everything that does not match
-        if (hide.length > 0) {
-            document.querySelectorAll(hide).forEach((div) => {
-                $(div).hide({duration: 300});
-            });
-        };
-
-        let totalCount = (show.length + hide.length).toString();
-        let sCount = show.length.toString().padStart(totalCount.length, "0");
-        $("#match-count").html(sCount + "/" + totalCount);
+        updateResults(curSearch, faq);
     });
 });
+
+var updateResults = function(searchString, faq) {
+
+    const hide = [];
+    const show = [];
+
+    // Yeah, slow. But in the end, this is only 50-100 entries
+    Object.keys(faq).forEach((anchor) => {
+        let text = faq[anchor];
+        let anchorDiv = "div[id='" + anchor + "-div']"
+        // text and header does not match
+        if(searchString.length === 0 || text.search(searchString) !== -1) {
+            show.push(anchorDiv);
+        } else {
+            hide.push(anchorDiv);
+        }
+    });
+
+    // show all matches
+    if (show.length > 0) {
+        document.querySelectorAll(show).forEach((div) => {
+            $(div).show({duration: 300});
+        });
+    }
+
+    // hide everything that does not match
+    if (hide.length > 0) {
+        document.querySelectorAll(hide).forEach((div) => {
+            $(div).hide({duration: 300});
+        });
+    };
+
+    let totalCount = (show.length + hide.length).toString();
+    let sCount = show.length.toString().padStart(totalCount.length, "0");
+    $("#match-count").html(sCount + "/" + totalCount);
+}
