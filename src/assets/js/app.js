@@ -103,11 +103,12 @@ $(document).ready(function(){
         // Yeah, slow. But in the end, this is only 50-100 entries
         Object.keys(faq).forEach((anchor) => {
             let text = faq[anchor];
+            let anchorDiv = "div[id='" + anchor + "-div']"
             // text and header does not match
             if(curSearch.length === 0 || text.search(curSearch) !== -1) {
-                show.push("div[id='" + anchor + "']");
+                show.push(anchorDiv);
             } else {
-                hide.push("div[id='" + anchor + "']");
+                hide.push(anchorDiv);
             }
         });
 
