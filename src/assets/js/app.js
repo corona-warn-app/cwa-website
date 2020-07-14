@@ -85,8 +85,8 @@ $(document).ready(function(){
     // do an AJAX call to get the right FAQ document
     $.get("/assets/data/" + fn, (data) => {
         faq = data;
-        let faqCount = Object.keys(data).length;
-        $("#match-count").text(faqCount.toString() + "/" + faqCount.toString());
+        let faqCount = Object.keys(data).length.toString();
+        $("#match-count").text(faqCount + "/" + faqCount);
     })
 
     // react to keystrokes in the search bar
@@ -101,7 +101,8 @@ $(document).ready(function(){
         const show = [];
 
         // Yeah, slow. But in the end, this is only 50-100 entries
-        $.each(faq, (anchor, text) => {
+        Object.keys(faq).forEach((anchor) => {
+            let text = faq[anchor];
             // text and header does not match
             if(curSearch.length === 0 || text.search(curSearch) !== -1) {
                 show.push("div[id='" + anchor + "']");
