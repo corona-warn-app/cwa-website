@@ -82,16 +82,11 @@ $(document).ready(function(){
     let lang = window.location.pathname.slice(0,3);
     let fn = "faq" + (lang === "/de" ? "_de" : "") + ".json";
 
+    // do an AJAX call to get the right FAQ document
     $.get("/assets/data/" + fn, (data) => {
-        let qCount = 0;
-        $(data['section-main'].sections).each((_, section) => {
-            $(section.accordion).each((_, faqEntry) => {
-                let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-                faq[faqEntry.anchor] = searchEntry.toLowerCase();
-                qCount += 1;
-            })
-        });
-        $("#match-count").text(qCount.toString() + "/" + qCount.toString());
+        faq = data;
+        let faqCount = Object.keys(data).length;
+        $("#match-count").text(faqCount.toString() + "/" + faqCount.toString());
     })
 
     // react to keystrokes in the search bar
@@ -133,6 +128,4 @@ $(document).ready(function(){
         let sCount = show.length.toString().padStart(totalCount.length, "0");
         $("#match-count").html(sCount + "/" + totalCount);
     });
-
-
 });
