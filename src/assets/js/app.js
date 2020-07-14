@@ -118,14 +118,14 @@ $(document).ready(function(){
         // show all matches
         if (show.length > 0) {
             document.querySelectorAll(show).forEach((div) => {
-                $(div).show();
+                $(div).show({duration: 300});
             });
         }
 
         // hide everything that does not match
         if (hide.length > 0) {
             document.querySelectorAll(hide).forEach((div) => {
-                $(div).hide();
+                $(div).hide({duration: 300});
             });
         };
 
