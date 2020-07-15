@@ -114,7 +114,7 @@
 					long minutesBetweenExpiryAndSubmission = Duration.between(expiryDateTime, submissionDateTime).toMinutes();
 				</tspan>
 				<tspan x="299.85489" y="483.50925">
-					if (minutesBetweenExpiryAndSubmission <= expiryPolicyMinutes) {
+					if (minutesBetweenExpiryAndSubmission = expiryPolicyMinutes) {
 				</tspan>
 				<tspan x="299.85489" y="500.1759">
 					// truncatedTo floors the value, so we need to add an hour to the DISTRIBUTION_PADDING to compensate that.
