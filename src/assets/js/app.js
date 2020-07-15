@@ -118,6 +118,7 @@ $(document).ready(function(){
             });
         };
 
+        // update the total count of results
         let totalCount = (show.length + hide.length).toString();
         let sCount = show.length.toString().padStart(totalCount.length, "0");
         document.getElementById("match-count").innerHTML = sCount + "/" + totalCount;
