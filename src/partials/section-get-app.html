@@ -1,13 +1,17 @@
 {{#if @root.get-app-enabled}}
 <section class="{{section-class}}">
   <div class="container contents-normal">
-    {{#if section-cancelable}}<div class="section-container-close"><button class="btn btn_close js-section-close"></button></div>{{/if}}
     {{#if section-contents}}
+    {{#if section-cancelable}}
+    <div class="section-container-close">
+      <button class="btn btn_close js-section-close" {{#if section-contents.close-btn}}title="{{section-contents.close-btn.title}}"{{/if}}></button>
+    </div>
+    {{/if}}
     <div class="row justify-content-center align-items-center">
       {{#if section-contents.icon-list}}
       <div class="col col-12 col-md-6 col-lg-auto icon-list icon-list_inline">
         {{#each section-contents.icon-list}}
-        <a class="icon-list-item" href="{{url}}"{{#if external}} target="_blank"{{/if}}>
+        <a class="icon-list-item" href="{{url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}>
           <img src="{{icon-url}}" alt="{{title}} Icon" />
         </a>
         {{/each}}
