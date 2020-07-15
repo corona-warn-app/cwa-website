@@ -14,6 +14,7 @@ const autoprefixer = require('autoprefixer');
 var sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
 const webp = require('gulp-webp');
+var jsonTransform = require('gulp-json-transform');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -33,7 +34,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-    gulp.series(clean, gulp.parallel(pages, javascript, images_minify, copy), images_webp, sass, build_sitemap)
+    gulp.series(clean, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -155,6 +156,22 @@ function images_webp() {
     .src('src/assets/img/**/*')
     .pipe(webp())
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+}
+
+function copyFAQs() {
+  return gulp
+    .src(["src/data/faq.json", "src/data/faq_de.json"])
+    .pipe(jsonTransform(function(data, file) {
+      let faq = {}
+      data['section-main'].sections.forEach((section) => {
+        section.accordion.forEach((faqEntry) => {
+            let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+            faq[faqEntry.anchor] = searchEntry.toLowerCase();
+        })
+      });
+      return faq;
+    }))
+    .pipe(gulp.dest(PATHS.dist + "/assets/data"));
 }
 
 // Start a server with BrowserSync to preview the site in

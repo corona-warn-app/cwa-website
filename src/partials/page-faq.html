@@ -12,26 +12,40 @@
   </aside>
   <main class="main">
     <h1 class="headline headline-heavy" id="top">{{page-contents.section-main.headline.title}}</h1>
+
+    <form method="get">
+      <!-- Actual search box -->
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend input-group-sm">
+          <div class="input-group-text"><span id="match-count">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}</div>
+        </div>
+        <input type="text" class="form-control form-control-sm" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
+      </div>
+    </form>
+    <hr />
+
     {{#each page-contents.section-main.sections}}
 
       {{> text-component this=.}}
       <dl class="accordion js-accordion" data-toggle="accordion-header">
       {{#each accordion}}
-        <dt class="accordion-header{{#if active}} active{{/if}}">
-          <h4 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h4>
-          <span class="accordion-item-icon"></span>
-        </dt>
-        <dd class="accordion-body">
-          <div class="accordion-item-content">
-            {{#if textblock}}
-            {{#each textblock}}
-            <p>{{{.}}}</p>
-            {{/each}}
-            {{/if}}
-            {{#if anchor}}<p><a href="#{{anchor}}">{{../../page-contents.section-main.texts.permalink}}</a></p>{{/if}}
-            <p><a href="#top">{{../../page-contents.section-main.texts.to_top}}</a></p>
-          </div>
-        </dd>
+        <div id="{{anchor}}-div">
+          <dt class="accordion-header{{#if active}} active{{/if}}">
+            <h4 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h4>
+            <span class="accordion-item-icon"></span>
+          </dt>
+          <dd class="accordion-body">
+            <div class="accordion-item-content">
+              {{#if textblock}}
+              {{#each textblock}}
+              <p>{{{.}}}</p>
+              {{/each}}
+              {{/if}}
+              <p>{{#if anchor}}<a href="#{{anchor}}">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
+              <p><a href="#top">{{../../page-contents.section-main.texts.to_top}}</a></p>
+            </div>
+          </dd>
+        </div>
       {{/each}}
       </dl>
     {{/each}}
