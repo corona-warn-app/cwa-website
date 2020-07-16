@@ -15,12 +15,12 @@
                 "active": true,
                 "id": "most_asked",
                 "accordion": [
-                    {
+                   {
                         "active": true,
-                        "title": "[Apple/iOS]: ENErrorDomain-Fehler 5",
-                        "anchor": "ENError5",
+                        "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
+                        "anchor": "iOS_136",
                         "textblock": [
-                            "Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immer noch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
+                            "Nach dem Update auf die aktuelle iOS-Version 13.6 werden uns vereinzelt Probleme gemeldet, etwa, dass die Risiko-Ermittlung nicht mehr eingeschalten werden kann, weil die aktuelle Region nicht unterstützt wird. Details dazu finden Sie im GitHub-Issue corona-warn-app/cwa-app-ios#911.","Wir arbeiten gerade daran, die Ursache zu identifizieren.","Wir informieren Sie hier so bald wie möglich über Korrekturen oder Schritte zur Fehlerbehebung."
                         ]
                     },
                     {
@@ -699,12 +699,19 @@
                             "<ol><li>Bluetooth wurden deaktiviert, auch nur für einen kurzen Zeitraum</li><li>Die Hintergrundaktualisierung für die App war nicht aktiv, so dass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Der Flugmodus wurde eingeschaltet, auch nur für einen kurzen Zeitraum</li><li>Das Smartphone war ausgeschaltet</li><li>Das Smartphone wurde neu gestartet</li></ol>",
                             "Detaillierte Informationen dazu stehen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>in diesem Kommentar auf GitHub</a> (englisch)."
                         ]
-                    }, {
+                    },{
+                        "active": true,
+                        "title": "[Apple/iOS]: ENErrorDomain-Fehler 5",
+                        "anchor": "ENError5",
+                        "textblock": [
+                            "Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immer noch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
+                        ]
+                    },{
                         "active": true,
                         "title": "Wann wurden diese FAQ zuletzt aktualisiert?",
                         "anchor": "update_faq",
                         "textblock": [
-                            "Stand: 14.07.2020"
+                            "Stand: 16.07.2020"
                         ]
                     }
                 ]
