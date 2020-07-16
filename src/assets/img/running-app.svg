@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 890 550" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:cc="http://creativecommons.org/ns#" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<metadata>
+		<RDF>
+			<Work rdf:about="">
+				<format>image/svg+xml</format>
+				<type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+			</Work>
+		</RDF>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<defs>
+		<filter id="a" color-interpolation-filters="sRGB">
+			<feFlood flood-color="rgb(0,0,0)" flood-opacity=".49804" result="flood"/>
+			<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+			<feGaussianBlur in="composite1" result="blur" stdDeviation="2"/>
+			<feOffset dx="1" dy="1" result="offset"/>
+			<feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+		</filter>
+	</defs>
+	<g display="none">
+		<rect x="-60.824" y="-52.562" width="1010.5" height="562.01" fill="none" style="paint-order:fill markers stroke"/>
+		<image x="-.21971" y=".36488" width="890" height="550" preserveAspectRatio="none" xlink:href="running-app.png"/>
+	</g>
+	<g filter="url(#a)">
+		<rect x="79.923" y="29.814" width="736.32" height="487.68" fill="#c9ccd0" stroke="#c9ccd0" stroke-linejoin="round" stroke-width="45" style="paint-order:fill markers stroke"/>
+		<path d="m8.8507 525.8 877.59 0.30412c0.48318 10.758-3.1147 13.412-7.2989 14.902l-860.56 1.0137c-7.2319-1.8174-10.143-7.5235-9.7318-16.22z" fill="#e0e3e4" fill-rule="evenodd" stroke="#eee" stroke-width=".5"/>
+	</g>
+	<g stroke-linejoin="round">
+		<rect x="82.447" y="46.951" width="731.41" height="452.72" fill="#3a3d3e" stroke="#3a3d3e" stroke-width="5" style="paint-order:fill markers stroke"/>
+		<g fill="#fff" stroke-linecap="round">
+			<rect x="82.447" y="46.951" width="731.41" height="29.975" stroke="#fff" stroke-width="5" style="paint-order:fill markers stroke"/>
+			<g fill-rule="evenodd" stroke-width="4">
+				<path d="m427.22 62.131h71.682" stroke="#d4eaf7" style="paint-order:stroke fill markers"/>
+				<path d="m522.28 62.131h71.682" stroke="#7acbe1" style="paint-order:stroke fill markers"/>
+				<path d="m618.02 62.131h71.682" stroke="#c00f2d" style="paint-order:stroke fill markers"/>
+				<path d="m715.18 62.131h71.108" stroke="#59112b" style="paint-order:stroke fill markers"/>
+			</g>
+		</g>
+	</g>
+	<g transform="matrix(.69207 0 0 .78487 -73.106 -1.3464)">
+		<text x="503.05984" y="125.8588" fill="#7acbe1" font-family="'Courier New',Courier,monospace" font-size="16.96px" font-weight="bold" letter-spacing="0px" stroke-width="1px" word-spacing="0px" style="line-height:125%" xml:space="preserve">
+			<tspan x="503.05984" y="125.8588">/**</tspan>
+			<tspan x="503.05984" y="147.05931"> * Returns the submission timestamp of a {@link DiagnosisKey} </tspan>
+			<tspan x="503.05984" y="168.25981"> * as a {@link LocalDateTime}.</tspan>
+			<tspan x="503.05984" y="189.46031"> */</tspan>
+			<tspan x="503.05984" y="210.66081" fill="#e6e6e6">protected LocalDateTime getSubmissionDateTime(DiagnosisKey diagnosisKey) {</tspan>
+			<tspan x="503.05984" y="231.86131" fill="#e6e6e6">  return LocalDateTime.ofEpochSecond(diagnosisKey.getSubmissionTimestamp() </tspan>
+			<tspan x="503.05984" y="253.06181" fill="#e6e6e6">    * ONE_HOUR_INTERVAL_SECONDS, 0, UTC);</tspan>
+			<tspan x="503.05984" y="274.26233" fill="#e6e6e6">}</tspan>
+			<tspan x="503.05984" y="295.46283"/>
+			<tspan x="503.05984" y="316.66333">/**</tspan>
+			<tspan x="503.05984" y="337.86383"> * Returns all diagnosis keys that should be distributed on a specific date.</tspan>
+			<tspan x="503.05984" y="359.06433"> */</tspan>
+			<tspan x="503.05984" y="380.26483" fill="#e6e6e6">public List getDiagnosisKeysForDate(LocalDate date) {</tspan>
+			<tspan x="503.05984" y="401.46533" fill="#e6e6e6">  return this.distributableDiagnosisKeys.keySet().stream()</tspan>
+			<tspan x="503.05984" y="422.66583" fill="#e6e6e6">    .filter(dateTime -> dateTime.toLocalDate().equals(date))</tspan>
+			<tspan x="503.05984" y="443.86633" fill="#e6e6e6">    .map(this::getDiagnosisKeysForHour)</tspan>
+			<tspan x="503.05984" y="465.06683" fill="#e6e6e6">    .flatMap(List::stream)</tspan>
+			<tspan x="503.05984" y="486.26733" fill="#e6e6e6">    .collect(Collectors.toList());</tspan>
+			<tspan x="503.05984" y="507.46783" fill="#e6e6e6">}</tspan>
+			<tspan x="503.05984" y="528.66833"/>
+			<tspan x="503.05984" y="549.86884">/**</tspan>
+			<tspan x="503.05984" y="571.06934"> * Returns all diagnosis keys that should be distributed in a specific hour.</tspan>
+			<tspan x="503.05984" y="592.26984"> */</tspan>
+			<tspan x="503.05984" y="613.47034" fill="#e6e6e6">public List getDiagnosisKeysForHour(LocalDateTime hour) {</tspan>
+			<tspan x="503.05984" y="634.67084" fill="#e6e6e6">  return Optional</tspan>
+		</text>
+	</g>
+	<rect x="74.106" y="502.13" width="755.24" height="16.462" fill="#cacdd1" style="paint-order:stroke fill markers"/>
+</svg>

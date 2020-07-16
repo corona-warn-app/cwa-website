@@ -31,7 +31,12 @@
                 "index": "01.",
                 "image": {"url": "/assets/img/how-it-works-1.svg"},
                 "title": "Collect nearby identifiers",
-                "text": "The Exposure Notification framework (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h."
+                "text": "The Exposure Notification framework (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h.",
+                "button": {
+                    "title": "Too complicated? Here's a simple video explanation.",
+                    "url": "https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch/how-does-the-corona-warn-app-work-and-what-does-it-do--1758870",
+                    "external": true
+                }
             },
             {
                 "index": "02.",
@@ -87,10 +92,8 @@
     },
     "section-image-text": {
         "image": {
-            "url" : "/assets/img/running-app.png",
-            "url-webp" : "/assets/img/running-app.webp",
-            "url-set": "/assets/img/running-app.png 1x, /assets/img/running-app@2x.png 2x",
-            "title": "..."
+            "url" : "/assets/img/running-app.svg",
+            "title": "example source code"
         },
         "headline": {
             "title": "Join the open-source project!",
@@ -191,6 +194,10 @@
                 "icon-url": "/assets/img/partner/cispa_logo@1x.png",
                 "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
                 "title": "Cispa"
+            },{
+                "icon-url": "/assets/img/partner/detecon-logo@1x.png",
+                "icon-set": "/assets/img/partner/detecon-logo@1x.png 1x, /assets/img/partner/detecon-logo@2x.png 2x",
+                "title": "Detecon"
             }, {
                 "icon-url": "/assets/img/partner/fraunhofer_logo.svg",
                 "title": "Fraunhofer Institut"
