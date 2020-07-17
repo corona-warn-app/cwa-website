@@ -49,34 +49,43 @@
 			</g>
 		</g>
 	</g>
-	<g transform="matrix(.69207 0 0 .78487 -73.106 -1.3464)">
-		<text x="503.05984" y="125.8588" fill="#7acbe1" font-family="'Courier New',Courier,monospace" font-size="16.96px" font-weight="bold" letter-spacing="0px" stroke-width="1px" word-spacing="0px" style="line-height:125%">
-			<tspan x="503.05984" y="125.8588">/**</tspan>
-			<tspan x="503.05984" y="147.05931"> * Returns the submission timestamp of a {@link DiagnosisKey} </tspan>
-			<tspan x="503.05984" y="168.25981"> * as a {@link LocalDateTime}.</tspan>
-			<tspan x="503.05984" y="189.46031"> */</tspan>
-			<tspan x="503.05984" y="210.66081" fill="#e6e6e6">protected LocalDateTime getSubmissionDateTime(DiagnosisKey diagnosisKey) {</tspan>
-			<tspan x="503.05984" y="231.86131" fill="#e6e6e6">  return LocalDateTime.ofEpochSecond(diagnosisKey.getSubmissionTimestamp() </tspan>
-			<tspan x="503.05984" y="253.06181" fill="#e6e6e6">    * ONE_HOUR_INTERVAL_SECONDS, 0, UTC);</tspan>
-			<tspan x="503.05984" y="274.26233" fill="#e6e6e6">}</tspan>
-			<tspan x="503.05984" y="295.46283"/>
-			<tspan x="503.05984" y="316.66333">/**</tspan>
-			<tspan x="503.05984" y="337.86383"> * Returns all diagnosis keys that should be distributed on a specific date.</tspan>
-			<tspan x="503.05984" y="359.06433"> */</tspan>
-			<tspan x="503.05984" y="380.26483" fill="#e6e6e6">public List getDiagnosisKeysForDate(LocalDate date) {</tspan>
-			<tspan x="503.05984" y="401.46533" fill="#e6e6e6">  return this.distributableDiagnosisKeys.keySet().stream()</tspan>
-			<tspan x="503.05984" y="422.66583" fill="#e6e6e6">    .filter(dateTime -> dateTime.toLocalDate().equals(date))</tspan>
-			<tspan x="503.05984" y="443.86633" fill="#e6e6e6">    .map(this::getDiagnosisKeysForHour)</tspan>
-			<tspan x="503.05984" y="465.06683" fill="#e6e6e6">    .flatMap(List::stream)</tspan>
-			<tspan x="503.05984" y="486.26733" fill="#e6e6e6">    .collect(Collectors.toList());</tspan>
-			<tspan x="503.05984" y="507.46783" fill="#e6e6e6">}</tspan>
-			<tspan x="503.05984" y="528.66833"/>
-			<tspan x="503.05984" y="549.86884">/**</tspan>
-			<tspan x="503.05984" y="571.06934"> * Returns all diagnosis keys that should be distributed in a specific hour.</tspan>
-			<tspan x="503.05984" y="592.26984"> */</tspan>
-			<tspan x="503.05984" y="613.47034" fill="#e6e6e6">public List getDiagnosisKeysForHour(LocalDateTime hour) {</tspan>
-			<tspan x="503.05984" y="634.67084" fill="#e6e6e6">  return Optional</tspan>
+	<g>
+		<text x="255" y="100" font-family="'Courier New',Courier,monospace" font-size="12px" font-weight="bold" letter-spacing="0px" stroke-width="1px" word-spacing="0px" xml:space="preserve">
+			<tspan fill="#7acbe1">
+				<tspan x="255" y="100">/**</tspan>
+				<tspan x="255" y="115">&#160;* Returns the submission timestamp of a {@link DiagnosisKey} </tspan>
+				<tspan x="255" y="130">&#160;* as a {@link LocalDateTime}.</tspan>
+				<tspan x="255" y="145">&#160;*/</tspan>
+			</tspan>
+			<tspan fill="#e6e6e6">
+				<tspan x="255" y="160">protected LocalDateTime getSubmissionDateTime(DiagnosisKey diagnosisKey) {</tspan>
+				<tspan x="255" y="175">&#160;&#160;return LocalDateTime.ofEpochSecond(diagnosisKey.getSubmissionTimestamp() </tspan>
+				<tspan x="255" y="190">&#160;&#160;&#160;&#160;* ONE_HOUR_INTERVAL_SECONDS, 0, UTC);</tspan>
+				<tspan x="255" y="205">}</tspan>
+			</tspan>
+			<tspan fill="#7acbe1">
+				<tspan x="255" y="250">/**</tspan>
+				<tspan x="255" y="265">&#160;* Returns all diagnosis keys that should be distributed on a specific date.</tspan>
+				<tspan x="255" y="280">&#160;*/</tspan>
+			</tspan>
+			<tspan fill="#e6e6e6">
+				<tspan x="255" y="295">public List getDiagnosisKeysForDate(LocalDate date) {</tspan>
+				<tspan x="255" y="310">&#160;&#160;return this.distributableDiagnosisKeys.keySet().stream()</tspan>
+				<tspan x="255" y="325">&#160;&#160;&#160;&#160;.filter(dateTime -> dateTime.toLocalDate().equals(date))</tspan>
+				<tspan x="255" y="340">&#160;&#160;&#160;&#160;.map(this::getDiagnosisKeysForHour)</tspan>
+				<tspan x="255" y="355">&#160;&#160;&#160;&#160;.flatMap(List::stream)</tspan>
+				<tspan x="255" y="370">&#160;&#160;&#160;&#160;.collect(Collectors.toList());</tspan>
+				<tspan x="255" y="385">}</tspan>
+			</tspan>
+			<tspan fill="#7acbe1">
+			<tspan x="255" y="430">/**</tspan>
+			<tspan x="255" y="445">&#160;* Returns all diagnosis keys that should be distributed in a specific hour.</tspan>
+			<tspan x="255" y="460">&#160;*/</tspan>
+			</tspan>
+			<tspan fill="#e6e6e6">
+				<tspan x="255" y="475">public List getDiagnosisKeysForHour(LocalDateTime hour) {</tspan>
+				<tspan x="255" y="490">&#160;&#160;return Optional</tspan>
+			</tspan>
 		</text>
 	</g>
-	<rect x="74.106" y="502.13" width="755.24" height="16.462" fill="#cacdd1" style="paint-order:stroke fill markers"/>
 </svg>
