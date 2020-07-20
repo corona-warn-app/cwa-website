@@ -112,7 +112,7 @@
                         "title": "[Google/Android]: Notification of possible encounters... - Weekly Update",
                         "anchor": "notif_weekly_update",
                         "textblock": [
-                            "This is a general notification that does not mean that exposures were detected. The Exposure Notification Framework sends this notification. It looks like other notifications of the Corona-Warn-App, for example, when Bluetooth is deactivated. You can look up the risk status directly in the Corona-Warn-App."
+                            "This is a general notification. It does not mean that exposures were detected. The Exposure Notification Framework sends this notification. It looks like other notifications of the Corona-Warn-App, for example, when Bluetooth is deactivated. You can look up the risk status directly in the Corona-Warn-App."
                         ]
                     },
                     {
@@ -120,8 +120,8 @@
                         "title": "Will the device battery drain more quickly with the app running in the background?",
                         "anchor": "battery",
                         "textblock": [
-                            "The Corona-Warn-App uses existing Bluetooth technology on user devices. Thanks to incorporation of the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
-                            "<b>Note on Android phones</b>: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>). This means that also other apps on your device could use your location, which might be a reason for higher power consumption. To avoid this, you should check which apps actually use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps to use your location if you think they don't need this permission. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
+                            "The Corona-Warn-App uses the latest Bluetooth technology: Thanks to the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
+                            "<b>Note for Android phones</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
                         ]
                     }
                 ]
@@ -135,8 +135,8 @@
                         "title": "What are the minimum operating system requirements for my phone?",
                         "anchor": "minimum_requirements",
                         "textblock": [
-                            "Apple/iOS: The app will run on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your iPhone’s operating system needs to be on iOS 13.5 or higher.",
-                            "Google/Android: The app will run on phones with Android 6 ('Marshmallow') or higher. The Exposure Notification API has been installed on these phones automatically via the Google Play services.",
+                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS 13.5 or higher.",
+                            "Google/Android: Corona-Warn-App runs on phones with Android 6 ('Marshmallow') or higher. Google Play services install the Exposure Notification API automatically.",
                             "For other operating system-related questions, please contact Apple or Google."
                         ]
                     },
@@ -300,10 +300,10 @@
                         "active": true,
                         "textblock": [
                             "Deleting the app should always be a last resort for solving one of the known or other issues with the app.",
-                            "Since the app cannot delete the exposure logs by itself, whether it is cleared or not is a decision of the Exposure Notification Framework.",
+                            "Since the app cannot delete the exposure logs by itself, whether they are cleared or not is a decision of the Exposure Notification Framework.",
                             "In the current version, deleting the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
                             "On Android devices, the log is deleted if Corona-Warn-App was the last app using the framework on the device. If you have SwissCovid or Immuni installed in addition to the Corona-Warn-App, the log will only be removed if these additional apps are de-installed or you manually trigger deletion of the exposure log.",
-                            "The way de-installation is handled can change without further notice or any changes to the Corona-Warn-App itself. Hence, please use this means only as a last resort in error resolution."
+                            "The way de-installation is handled can change without notice, The same applies to any changes made to the Corona-Warn-App itself. Therefore, only deinstall the app as a last resort to resolve an error."
                         ]
                     },
                     {
@@ -311,7 +311,7 @@
                         "anchor": "encounter_but_green",
                         "active": true,
                         "textblock": [
-                            "All active Corona-Warn-Apps download the diagnosis keys released on the Corona-Warn-App server regularly and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this indicates that the user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.",
+                            "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means that the user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.",
                             "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are discarded as harmless. This is why the Corona-Warn-App can display encounters, but the risk status stays the same.", "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
                         ]
                     },
@@ -330,7 +330,7 @@
                         "anchor": "test_negative",
                         "active": true,
                         "textblock": [
-                            "Thank you that you want to help. The app is all about informing your contacts when you have tested positive for COVID-19. This is why the app doesn't provide that you enter a negative test result."
+                            "Thank you that you want to help. Corona-Warn-App is all about informing your contacts when you have tested positive for COVID-19. That's why you won't find an option for entering a negative test result."
                         ]
                     },
                     {
@@ -614,9 +614,9 @@
                         "anchor": "data_access",
                         "active": true,
                         "textblock": [
-                            "Bluetooth will be used to send constantly changing random IDs from other devices that have installed the app. No personal, geo-location, or other location data will be sent or stored.",
-                            "Through use of the Exposure Notification API from Google and Apple, the random IDs will remain in a secure area of the device's operating system. The matching, which determines whether someone has been exposed to an infected person, is performed on the local device. The device will not send any data for matching.",
-                            "As soon as a user is diagnosed with COVID-19, they will be asked to share their temporary exposure keys from the last 14 days. These keys can only be accessed by the Exposure Notification API if the user actively gives consent."
+                            "Bluetooth is used to send constantly changing random IDs from other devices that have installed the app. No personal, geo-location, or other location data is sent or stored.",
+                            "Using the Exposure Notification API from Google and Apple, the random IDs remain in a secure area of the device's operating system. The matching, which determines whether someone has been exposed to an infected person, is performed on the local device. The device does not send any data for matching.",
+                            "As soon as a user is diagnosed with COVID-19, they're asked to share their temporary exposure keys from the last 14 days. These keys can only be accessed by the Exposure Notification API if the user actively gives consent."
                         ]
                     },
                     {
