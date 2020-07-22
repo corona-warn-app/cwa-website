@@ -160,6 +160,8 @@ $(document).ready(function(){
             }
         });
 
+        // listen to the keyup event, i.e., when a character was entered into the form
+        // and the value of the field was properly updated
         searchField.addEventListener("keyup", (event) => {
             const curSearch = event.target.value.toLowerCase();
             // only search for longer terms and react to empty search (aka delete input)
@@ -177,4 +179,12 @@ $(document).ready(function(){
             clearSearchParam(event.target.hash);
         });
     });
+
+    // remove any hashes when submitting the search form
+    var searchForm = document.getElementById("faq-search-form");
+    if(searchForm !== null){
+        searchForm.addEventListener("submit", (event) => {
+            history.pushState("", document.title, window.location.pathname + window.location.search);
+        })
+    }
 });
