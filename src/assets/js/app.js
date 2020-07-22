@@ -172,7 +172,7 @@ $(document).ready(function(){
 
     // add an event listener to each faqAnchor that provides a clean URL w/o search parameter
     var faqAnchors = document.getElementsByClassName("faq-anchor");
-    Array.from(faqAnchors).forEach(function(element) {
+    Array.from(faqAnchors).forEach((element) => {
         element.addEventListener('click', (event) => {
             clearSearchParam(event.target.hash);
         });
