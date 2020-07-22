@@ -54,21 +54,7 @@
                         "textblock": [
                             "This error is raised by the operating system. Apple is informed and is working to solve it. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                         ]
-                    },
-                    {
-                        "active": true,
-                        "title": "[Google/Android]: Wrong number of active days",
-                        "anchor": "days_active_Android",
-                        "textblock": [
-                            "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
-                            "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
-                            "Exposure logging can be deactivated, for example, by the following:",
-                            "<ol><li>Bluetooth or the location service were deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
-                            "It is planned that this will resolved with the next release.",
-                            "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>"
-                        ]
-                    },
-                    {
+                    }, {
                         "title": "[Google/Android]: While setting up the app, I’m getting the following error: 'CAUSE: 3. Something went wrong. Error when communication with Google API (17).' What does this mean?",
                         "anchor": "cause_3",
                         "active": true,
@@ -106,16 +92,7 @@
                         "textblock": [
                             "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                         ]
-                    },
-                    {
-                        "active": true,
-                        "title": "[Google/Android]: Notification of possible encounters... - Weekly Update",
-                        "anchor": "notif_weekly_update",
-                        "textblock": [
-                            "This is a general notification. It does not mean that exposures were detected. The Exposure Notification Framework sends this notification. It looks like other notifications of the Corona-Warn-App, for example, when Bluetooth is deactivated. You can look up the risk status directly in the Corona-Warn-App."
-                        ]
-                    },
-                    {
+                    }, {
                         "active": true,
                         "title": "Will the device battery drain more quickly with the app running in the background?",
                         "anchor": "battery",
@@ -241,15 +218,7 @@
                 "title": "Use",
                 "id": "application",
                 "accordion": [
-                    {
-                        "title": "Why does the app stop at 14 of 14 days saved? What does 14 of 14 days save actually mean?",
-                        "anchor": "days_active_explanation",
-                        "active": true,
-                        "textblock": [
-                            "The Corona-Warn-App collects contact events for the past 14 days. Older contacts are not relevant for the risk assessment and will therefore be discarded. Hence, the app will always show \"14 of 14 days saved\" if it was active for the entire time frame. The count does not start over after 14 days. If exposure logging is active and a risk status is being displayed, the app is working as expected.",
-                            "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 (or fewer) active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling the background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
-                        ]
-                    },
+                    
                     {
                         "title": "Will exposure logging still work when I close the app?",
                         "anchor": "close_app",
@@ -374,8 +343,14 @@
                         "textblock": [
                             "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
                         ]
-                    },
-                    {
+                    }, {
+                        "active": true,
+                        "title": "[Google/Android]: Notification of possible encounters... - Weekly Update",
+                        "anchor": "notif_weekly_update",
+                        "textblock": [
+                            "This is a general notification. It does not mean that exposures were detected. The Exposure Notification Framework sends this notification. It looks like other notifications of the Corona-Warn-App, for example, when Bluetooth is deactivated. You can look up the risk status directly in the Corona-Warn-App."
+                        ]
+                    },  {
                         "title": "[Apple/iOS]: In my COVID-19 Exposure Logging settings it says: 'Corona-Warn has checked your log of collected random IDs 0 times over the past 24 hours.' Does this mean that exposure logging isn’t working?",
                         "anchor": "no_log_check",
                         "active": true,
@@ -716,10 +691,30 @@
                         ]
                     },{
                         "active": true,
+                        "title": "[Google/Android]: Wrong number of active days",
+                        "anchor": "days_active_Android",
+                        "textblock": [
+                            "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
+                            "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
+                            "Exposure logging can be deactivated, for example, by the following:",
+                            "<ol><li>Bluetooth or the location service were deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
+                            "It is planned that this will resolved with the next release.",
+                            "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>"
+                        ]
+                    },{
+                        "title": "Why does the app stop at 14 of 14 days saved? What does 14 of 14 days save actually mean?",
+                        "anchor": "days_active_explanation",
+                        "active": true,
+                        "textblock": [
+                            "The Corona-Warn-App collects contact events for the past 14 days. Older contacts are not relevant for the risk assessment and will therefore be discarded. Hence, the app will always show \"14 of 14 days saved\" if it was active for the entire time frame. The count does not start over after 14 days. If exposure logging is active and a risk status is being displayed, the app is working as expected.",
+                            "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 (or fewer) active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling the background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
+                        ]
+                    },{
+                        "active": true,
                         "title": "When were the FAQ last updated?",
                         "anchor": "update_faq",
                         "textblock": [
-                            "Updated July 21, 2020"
+                            "Updated July 22, 2020"
                         ]
                     }
                 ]
