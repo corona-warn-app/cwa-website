@@ -124,6 +124,14 @@ $(document).ready(function(){
         document.getElementById("match-count").innerHTML = sCount + "/" + totalCount;
     }
 
+    // This removes all search parameters from the URL. While the page ignores search parameters, if the hash is set,
+    // this just gives users cleaner URLs when clicking on the links and copying the url from the address bar.
+    const clearSearchParam = function(hash = "") {
+        var clean_uri = location.protocol + "//" + location.host + location.pathname;
+        clean_uri += hash;
+        window.history.replaceState({}, document.title, clean_uri);
+    }
+
     // check if the faq-search text field is present
     let searchField = document.getElementById("faq-search");
     if(searchField !== null){
@@ -141,7 +149,14 @@ $(document).ready(function(){
             // find out whether there are search strings added
             var urlParams = new URLSearchParams(window.location.search);
             if(urlParams.has("search")){
-                updateResults(urlParams.get("search"), faq);
+                const { hash } = window.location;
+                // if we have a deeplink w/ a hash, ignore the search parameter
+                if(!hash || hash === "") {
+                    // otherwise, set the search string in the input
+                    searchField.value = urlParams.get("search");
+                    // and update the result list
+                    updateResults(urlParams.get("search"), faq);
+                }
             }
         });
 
@@ -153,5 +168,13 @@ $(document).ready(function(){
             }
             updateResults(curSearch, faq);
         });
-    }
+    };
+
+    // add an event listener to each faqAnchor that provides a clean URL w/o search parameter
+    var faqAnchors = document.getElementsByClassName("faq-anchor");
+    Array.from(faqAnchors).forEach(function(element) {
+        element.addEventListener('click', (event) => {
+            clearSearchParam(event.target.hash);
+        });
+    });
 });
