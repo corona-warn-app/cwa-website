@@ -343,7 +343,14 @@
                         "textblock": [
                             "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
                         ]
-                    }, {
+                    },  {
+                        "title": "My exposure log shows checks for less than 14 days",
+                        "anchor": "exposure_check",
+                        "active": true,
+                        "textblock": [
+                            "The iPhone settings display the exposure checks for the last 14 days: 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'.", "It might be that entries are displayed for less than 14 days, although exposure risk was checked correctly. The reason is, that Apple has set a fixed limit of 100 entries for this log. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed.","Please note: The log is just a history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","When the app was running constantly during the last two weeks, you should see 13 or 14 checks within the last 24 hours. If you use the app only recently (let's say for 7 days), less checks for the last 24 hours are displayed (here: 7 checks), one for every day that the Corona-Warn-App was running constantly."
+                        ]
+                    },{
                         "active": true,
                         "title": "[Google/Android]: Notification of possible encounters... - Weekly Update",
                         "anchor": "notif_weekly_update",
@@ -378,10 +385,9 @@
                         "active": true,
                         "textblock": [
                             "First, please ensure that you are running the current version of the app. Open the Google Play Store to check if an update for Corona-Warn-App is available. If yes, please install it and also restart your device to mitigate the problem.",
-                            "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, there is a workaround for this:",
-                            "<ol><li>Go to the device settings.</li><li>Choose 'Apps' or 'Apps & Notifications'. submenu item</li><li>Choose 'Corona-Warn'.</li><li>Choose 'Power usage'.</li><li>Choose 'App launch'.</li><li>Disable 'Manage automatically'.</li><li>Activate 'Auto-launch'.</li><li>Activate 'Secondary launch'.</li><li>Activate 'Run in Background'.</li><li>Restart your phone.</li><li>Launch Corona-Warn-App.</li></ol>",
-                            "These problems can also occur in other applications. For this reason, other manufacturers have already provided a lot of information, including device-specific information, to help solve this problem. Further information can be found for example <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>on Slack</a>. If our generic tips do not help, please try <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>the tips from the Slack documentation</a> for the app 'Corona-Warn' and the corresponding smartphone.",
-                            "We are working on an extension of the Android app so that this setting can be done directly in the app and you don't have to go through the device settings in a complicated way."
+                            "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:",
+                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
+                            "If this setting did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced the similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>."
                         ]
                     },
                     {
@@ -714,7 +720,7 @@
                         "title": "When were the FAQ last updated?",
                         "anchor": "update_faq",
                         "textblock": [
-                            "Updated July 22, 2020"
+                            "Updated July 23, 2020"
                         ]
                     }
                 ]
