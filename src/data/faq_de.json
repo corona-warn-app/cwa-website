@@ -344,6 +344,13 @@
                             "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind eine separate Überprüfung des Kontaktprotokolls durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Kontaküberprüfungs-Historie vorhanden sind. Sie können zudem beim Klick auf die Details der Überprüfungen sehen, dass jeweils unterschiedlich viele Schlüssel geprüft werden."
                         ]
                     }, {
+                        "title": "In den Begegnungsüberprüfungen sind die Aufzeichnungen von weniger als 14 Tagen gespeichert",
+                        "anchor": "exposure_check",
+                        "active": true,
+                        "textblock": [
+                            "Die Einstellungen Ihres iPhones zeigen die Begegnungsüberprüfungen der letzten 14 Tage an: Datenschutz > Health > COVID-19-Begegnungsaufzeichnungen > Begegnungsüberprüfungen.","Es kann vorkommen, dass hier Einträge für weniger als 14 Tage angezeigt werden, obwohl die Risiko-Ermittlung an jedem der letzten 14 Tagen korrekt durchgeführt wurde. Das liegt daran, dass Apple ein festes Limit von 100 Einträgen für diese Übersicht festgelegt hat. Wird dieses Limit überschritten, werden nur die neuesten Einträge behalten. Wir sind mit Apple in Kontakt, damit die Übersicht in Zukunft vollständig angezeigt wird.","Bitte beachten Sie: Diese Übersicht zeigt nur eine Historie an. Jeden Tag werden die Begegnungen der letzten 14 Tage geprüft und das Risiko daraus ermittelt. Wichtig ist also, dass die Übersicht Begegnungsüberprüfungen während der letzten 24 Stunden anzeigt.","Wenn die App in den letzten 2 Wochen dauerhaft aktiv war, sollten Sie in der Regel 13 oder 14 Überprüfungen in den letzten 24 Stunden sehen. Wenn Sie die App erst seit Kurzem nutzen (etwa seit 7 Tagen), werden entsprechend weniger Überprüfungen in den letzten 24 Stunden (hier 7 Überprüfungen) angezeigt, eine für jeden Tag, an dem die Corona-Warn-App lief."
+                        ]
+                    }, {
                         "active": true,
                         "title": "[Google/Android]: Benachrichtigung zu möglicher Begegnung... - Wöchentliches Update",
                         "anchor": "notif_weekly_update",
@@ -379,10 +386,10 @@
                         "active": true,
                         "textblock": [
                             "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Falls das der Fall ist, installieren Sie das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen.",
-                            "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, versuchen Sie folgendes:",
-                            "<ol><li>Öffnen Sie die Geräte-Einstellungen.</li><li>Wählen Sie 'Apps' bzw. 'Apps & Benachrichtigungen'.</li><li>Wählen Sie 'Corona-Warn'.</li><li>Wählen Sie 'Akkuverbrauch'.</li><li>Wählen Sie 'App-Start'.</li><li>Deaktivieren Sie 'Automatisch verwalten'.</li><li>Aktivieren Sie 'Auto-Start'.</li><li>Aktivieren Sie 'Sekundärer Start'.</li><li>Aktivieren Sie 'Im Hintergrund ausführen'.</li><li>Starten Sie das Smartphone neu.</li><li>Starten Sie die Corona-Warn-App.</li></ol>",
-                            "Diese Probleme können auch bei anderen Anwendungen auftreten. Andere Hersteller haben deswegen bereits sehr viele, auch gerätespezifische Informationen zur Lösung bereitgestellt. Weitere Informationen finden Sie etwa <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>bei Slack</a>. Wenn unsere allgemeinen Tipps nicht helfen, versuchen Sie bitte <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>die Tipps aus der Slack-Dokumentation</a> für die Corona-Warn-App und Ihr Smartphone anzuwenden.",
-                            "Wir arbeiten an einer Erweiterung der Android-App, sodass Sie diese Einstellung direkt in der App vornehmen können und nicht mehr umständlich über die Geräte-Einstellungen gehen müssen."
+                            "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:",
+                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivät'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivät und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
+                            "Für den Fall, dass auch diese Einstellung nicht den gewünschten Effekt hat, können Sie weitere, gerätespezifische, Einstellungen vornehmen. Software-Hersteller, wie etwa Slack, bei denen die gleichen Probleme auftreten, haben deswegen bereits sehr viele Informationen zur Lösung bereitgestellt. Versuchen Sie deshalb bitte, die Tipps aus der Slack-Dokumentation für die Corona-Warn-App und Ihr Smartphone anzuwenden: <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>Bekannte-Probleme-mit-Android</a>.",
+                            
                         ]
                     },
                     {
@@ -716,7 +723,7 @@
                         "title": "Wann wurden diese FAQ zuletzt aktualisiert?",
                         "anchor": "update_faq",
                         "textblock": [
-                            "Stand: 22.07.2020"
+                            "Stand: 23.07.2020"
                         ]
                     }
                 ]
