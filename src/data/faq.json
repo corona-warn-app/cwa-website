@@ -11,6 +11,39 @@
         },
         "sections": [
             {
+                "title": "Background Updates",
+                "active": true,
+                "id": "background_updates",
+                "accordion": [
+                    {
+                        "title": "[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                        "anchor": "no_risk_update_ios",
+                        "active": true,
+                        "textblock": [
+                            "<b>Usually, Corona-Warn-App will just run in the background. If this is not the case, please open the app regularly, at least once a day. We are working on an update to solve existing problems.</b>",
+                            "In addition, please check the following device settings on your phone:",
+                            "<b>Background App Refresh (in General)</b>",
+                            "Corona-Warn-App must be able to refresh in the background both via Wi-Fi and cellular data, so you have to allow this in general. Open your device settings, choose 'General' > 'Background App Refresh' and activate 'Wi-Fi & Cellular Data'.",
+                            "This means that you allow background refreshing in general, but you can decide for each individual app if it really refreshes in the background (see next section).",
+                            "<i>Important: Mobile/cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</i>",
+                            "<b>Background App Refresh for Corona-Warn-App</b>",
+                            "Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                        "anchor": "no_risk_update",
+                        "active": true,
+                        "textblock": [
+                            "First, please ensure that you are running the current version of the app. Open the Google Play Store to check if an update for Corona-Warn-App is available. If yes, please install it and also restart your device to mitigate the problem.",
+                            "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. <b>Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
+                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>", "In the power-saving settings of your phone, you can check that there's an exception set for the Corona-Warn-App.",
+                            "If this setting did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced the similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Common Issues",
                 "active": true,
                 "id": "most_asked",
@@ -363,31 +396,6 @@
                         "active": true,
                         "textblock": [
                             "Exposure logging is working, don’t worry. You can find this iOS note under 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'. It means that the back-end server has not sent any diagnosis keys to your device yet. Thus, the Corona-Warn-App hasn’t received any keys to check against the collected random IDs on your phone. As soon as persons diagnosed with COVID-19 have uploaded their diagnosis keys, this check is triggered."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
-                        "anchor": "no_risk_update_ios",
-                        "active": true,
-                        "textblock": [
-                            "Usually, Corona-Warn-App will just run in the background. Please check the following device settings on your phone:",
-                            "<b>Background App Refresh (in General)</b>",
-                            "Corona-Warn-App must be able to refresh in the background both via Wi-Fi and cellular data, so you have to allow this in general. Open your device settings, choose 'General' > 'Background App Refresh' and activate 'Wi-Fi & Cellular Data'.",
-                            "This means that you allow background refreshing in general, but you can decide for each individual app if it really refreshes in the background (see next section).",
-                            "<i>Important: Mobile/cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</i>",
-                            "<b>Background App Refresh for Corona-Warn-App</b>",
-                            "Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
-                        "anchor": "no_risk_update",
-                        "active": true,
-                        "textblock": [
-                            "First, please ensure that you are running the current version of the app. Open the Google Play Store to check if an update for Corona-Warn-App is available. If yes, please install it and also restart your device to mitigate the problem.",
-                            "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive energy saving measures. Corona-Warn-App is affected by these energy saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:",
-                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>", "In the power-saving settings of your phone, you can check that there's an exception set for the Corona-Warn-App.",
-                            "If this setting did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced the similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>."
                         ]
                     },
                     {
