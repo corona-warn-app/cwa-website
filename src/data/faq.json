@@ -12,8 +12,8 @@
         "sections": [
             {
                 "title": "Background Updates",
-                "active": true,
                 "id": "background_updates",
+                "active": true,
                 "accordion": [
                     {
                         "title": "[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
@@ -46,49 +46,50 @@
             },
             {
                 "title": "Common Issues",
-                "active": true,
                 "id": "most_asked",
+                "active": true,
                 "accordion": [
                    {
-                        "active": true,
-                        "title": "[Apple/iOS]: Problems after updating to iOS 13.6",
-                        "anchor": "iOS_136",
-                        "textblock": [
+                       "title": "[Apple/iOS]: Problems after updating to iOS 13.6",
+                       "anchor": "iOS_136",
+                       "active": true,
+                       "textblock": [
                             "After updating to the current iOS version 13.6., several users report that the exposure logging cannot be activated because the exposure logging would not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.","We've reported the problem to Apple immediately. Apple has assured us that they are working at full speed to fix this error.","We'll keep you updated about how the troubleshooting progresses."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: ENErrorDomain-Error 11",
                         "anchor": "ENError11",
+                        "active": true,
                         "textblock": [
                             "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the issue will be fixed with the iOS 13.6 release. Until then, please check whether restarting your devices resolves the issue. In most cases, the error was gone after another 24 hours."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: ENErrorDomain-Error 13",
                         "anchor": "ENError13",
+                        "active": true,
                         "textblock": [
                             "The ENErrorDomain 13 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.  It is the information that on this day, an exposure check already took place. Please restart your phone and do not open the app for 24 hours. Then, the next exposure identification takes place and this information should no longer be displayed. Please do not remove and reinstall the Corona-Warn-App, as it still works as intended."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
                         "anchor": "iphone_region_change",
+                        "active": true,
                         "textblock": [
                             "This message is issued directly by the Exposure Notification Framework of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update. Please open the Corona-Warn-App once again to make sure that the background app refresh continues to work."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: Not enough memory for the contact protocol",
                         "anchor": "memory",
+                        "active": true,
                         "textblock": [
                             "This error is raised by the operating system. Apple is informed and is working to solve it. The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                         ]
-                    }, {
+                    }, 
+                    {
                         "title": "[Google/Android]: While setting up the app, I’m getting the following error: 'CAUSE: 3. Something went wrong. Error when communication with Google API (17).' What does this mean?",
                         "anchor": "cause_3",
                         "active": true,
@@ -103,27 +104,27 @@
                             "We’re constantly improving the app and will try to remove possible app-related causes of this error."
                         ]
                     },
-                   
                     {
-                        "active": true,
                         "title": "[Google/Android]: Error when communicating with Google API(39508)",
                         "anchor": "API39508",
+                        "active": true,
                         "textblock": [
                             "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall or reset the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>.", 
                             "The error means that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive. The error should disappear after 24 hours."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Google/Android]: 0 keys displayed",
                         "anchor": "keys0",
+                        "active": true,
                         "textblock": [
                             "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                         ]
-                    }, {
-                        "active": true,
+                    }, 
+                    {
                         "title": "Will the device battery drain more quickly with the app running in the background?",
                         "anchor": "battery",
+                        "active": true,
                         "textblock": [
                             "The Corona-Warn-App uses the latest Bluetooth technology: Thanks to the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
                             "<b>Note for Android phones</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
@@ -136,9 +137,9 @@
                 "id": "availability",
                 "accordion": [
                     {
-                        "active": true,
                         "title": "What are the minimum operating system requirements for my phone?",
                         "anchor": "minimum_requirements",
+                        "active": true,
                         "textblock": [
                             "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS 13.5 or higher.",
                             "Google/Android: Corona-Warn-App runs on phones with Android 6 ('Marshmallow') or higher. Google Play services install the Exposure Notification API automatically.",
@@ -146,41 +147,41 @@
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: Why is iOS 13.5 a minimum requirement?",
                         "anchor": "ios135",
+                        "active": true,
                         "textblock": [
                             "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: I'm testing the beta version of iOS 14. Why is Corona-Warn-App not working?",
                         "anchor": "ios_14_beta",
+                        "active": true,
                         "textblock": [
                             "On devices with iOS 14 beta (available since June 22, 2020) Corona-Warn-App currently doesn't start or only displays an error message. The reason is that the Exposure Notification API is not yet available on devices with iOS 14. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Google/Android]: Why are Android 6 and Google Play Services minimum requirements?",
                         "anchor": "googleplay",
+                        "active": true,
                         "textblock": [
                             "Google delivers the required Exposure Notification API for contact tracing apps with Google Play Services. The API is supported starting with Android API level 23. This version is available starting with Android version 6.0, see <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. This was decided solely by Google. In addition, older devices sometimes don’t support Bluetooth Low Energy. We as app developers, unfortunately, cannot influence this."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "In which languages is the Corona-Warn-App available?",
                         "anchor": "available_languages",
+                        "active": true,
                         "textblock": [
                             "The app is currently available in Turkish (from version 1.1.1), English and German. The telephone hotline (<a href='tel:+498007540001'>+49 800 7540001</a>) answers in Turkish, English and German. More languages are to come. We'll keep you up to date.", "The language of the app is derived from the language that is configured in the smartphone's language settings. To display the app in German, for example, change the language settings to German."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "In which international app stores is the app available?",
                         "anchor": "international",
+                        "active": true,
                         "textblock": [
                             "After a detailed examination of the situation it was determined that for legal reasons any publication of the Corona-Warn-App in App Stores outside of Germany is currently only possible after a case-by-case assessment. Legal consultations have shown that in the case of publication in international App Stores, the law of the respective country must be considered and applied to the Corona-Warn-App. This applies in particular to data protection, any necessary claims for information by local authorities and other contractual and consumer protection regulations.",
                             "The Robert Koch-Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Germany</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Sweden</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>United Kingdom</li></ul>",
@@ -188,9 +189,9 @@
                         ]
                     },
                     {
-                        "active": true,
                         "title": "Why are there different age restrictions to use the app on Android and Apple devices?",
                         "anchor": "age_restriction",
+                        "active": true,
                         "textblock": [
                             "Persons under the age of 16 may use the app if their parents or legal guardians give their consent. The age restriction of 16 years and older is necessary, because the app processes data that is particularly worthy of protection under the General Data Protection Regulation (GDPR) of the European Union. According to the GDPR, minors can only give their effective consent to the processing of data after the age of 16. In principle, this applies to both app stores.",
                             "However, the level of strictness is different in both app stores:",
@@ -198,9 +199,9 @@
                         ]
                     },
                     {
-                        "active": true,
                         "title": "[Google/Android]: The app isn’t available as an APK, neither on GitHub nor on F-Droid etc. Will you also deliver the app as an APK?",
                         "anchor": "apk",
+                        "active": true,
                         "textblock": [
                             "At the moment a delivery via alternative distribution channels (download via APK, F-Droid etc.) is not planned for various reasons.",
                             "On the one hand, the Robert Koch Institute, which is legally and content-wise responsible for its distribution, is responsible for the delivery of the app. At the moment, the focus is only on delivery via the respective App Stores. Furthermore, the app only works with Google Play Services. With a distribution via the Play Store it can be assumed that Google Play Services are installed. We cannot make these assumptions for other distribution channels at the moment.",
@@ -209,33 +210,33 @@
                         ]
                     },
                     {
-                        "active": true,
                         "title": "Will the app also be available on tablets, smart watches, and other wearables?",
                         "anchor": "smartwatch",
+                        "active": true,
                         "textblock": [
                             "We don’t plan to implement the app for tablets, smart watches, and other wearables. Our focus is on smart phones, for example because of the availability of the required APIs. If we change this approach, we will of course communicate this widely."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "Will the app be made available on platforms other than Apple App Store and Google Play Store?",
                         "anchor": "other_platforms",
+                        "active": true,
                         "textblock": [
                             "We do not intend to make the app available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "When will the app be ready?",
                         "anchor": "when_ready",
+                        "active": true,
                         "textblock": [
                             "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."
                         ]
                     },
                     {
-                        "active": true,
                         "title": "Where can I get the app?",
                         "anchor": "where_to_get",
+                        "active": true,
                         "textblock": [
                             "Since the app is available, you can download it from the Apple App Store or Google Play Store."
                         ]
@@ -337,7 +338,8 @@
                         "textblock": [
                             "Unfortunately not. Every positive test result that you enter in the app must be verified by labs before. The labs make sure that the result is not entered wrongly or on false pretense. At the moment, only labs in Germany are connected for verification. Therefore, you cannot enter a positive result that was tested in another country, for example, the Netherlands."
                         ]
-                    },{
+                    },
+                    {
                         "title": "How do I tell the app that I recovered from COVID-19?",
                         "anchor": "recovered",
                         "active": true,
@@ -371,21 +373,24 @@
                         "textblock": [
                             "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
                         ]
-                    },  {
+                    },  
+                    {
                         "title": "My exposure log shows checks for less than 14 days",
                         "anchor": "exposure_check",
                         "active": true,
                         "textblock": [
                             "The iPhone settings display the exposure checks for the last 14 days: 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'.", "It might be that entries are displayed for less than 14 days, although exposure risk was checked correctly. The reason is, that Apple has set a fixed limit of 100 entries for this log. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed.","Please note: The log is just a history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","When the app was running constantly during the last two weeks, you should see 13 or 14 checks within the last 24 hours. If you use the app only recently (let's say for 7 days), less checks for the last 24 hours are displayed (here: 7 checks), one for every day that the Corona-Warn-App was running constantly."
                         ]
-                    },{
-                        "active": true,
+                    },
+                    {
                         "title": "[Apple/iOS]: 'COVID-19 exposure logging... - Weekly Update'",
                         "anchor": "notif_weekly_update",
+                        "active": true,
                         "textblock": [
                             "This is a general notification. It does not mean that exposures were detected. The Exposure Notification Framework sends this notification and displays the icon. You can look up your current risk status directly in the Corona-Warn-App."
                         ]
-                    },  {
+                    },  
+                    {
                         "title": "[Apple/iOS]: In my COVID-19 Exposure Logging settings it says: 'Corona-Warn has checked your log of collected random IDs 0 times over the past 24 hours.' Does this mean that exposure logging isn’t working?",
                         "anchor": "no_log_check",
                         "active": true,
@@ -680,9 +685,9 @@
                 "id": "resolved",
                 "accordion": [
                     {
-                        "active": true,
                         "title": "[Apple/iOS]: wrong number of active days",
                         "anchor": "days_active_Apple",
+                        "active": true,
                         "textblock": [
                             "Update: This display error is resolved by now. Please update the Corona-Warn-App to the latest version. The app will now count up the number of active days, until the 14 active days are reached, as intended.",
                             "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
@@ -691,17 +696,19 @@
                             "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
                             "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>."
                         ]
-                    },{
-                        "active": true,
+                    },
+                    {
                         "title": "[Apple/iOS]: ENErrorDomain-Error 5",
                         "anchor": "ENError5",
+                        "active": true,
                         "textblock": [
                             "The ENErrorDomain 5 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
                         ]
-                    },{
-                        "active": true,
+                    },
+                    {
                         "title": "[Google/Android]: Wrong number of active days",
                         "anchor": "days_active_Android",
+                        "active": true,
                         "textblock": [
                             "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
                             "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
@@ -710,7 +717,8 @@
                             "It is planned that this will resolved with the next release.",
                             "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>"
                         ]
-                    },{
+                    },
+                    {
                         "title": "Why does the app stop at 14 of 14 days saved? What does 14 of 14 days save actually mean?",
                         "anchor": "days_active_explanation",
                         "active": true,
@@ -718,18 +726,20 @@
                             "The Corona-Warn-App collects contact events for the past 14 days. Older contacts are not relevant for the risk assessment and will therefore be discarded. Hence, the app will always show \"14 of 14 days saved\" if it was active for the entire time frame. The count does not start over after 14 days. If exposure logging is active and a risk status is being displayed, the app is working as expected.",
                             "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 (or fewer) active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling the background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
                         ]
-                    }, {
-                        "active": true,
+                    },
+                    {
                         "title": "[Google/Android]: Error when communicating with Google API(10)",
                         "anchor": "API10",
+                        "active": true,
                         "textblock": [
                             "UPDATE: This error is resolved by version 1.5 of the Exposure Notification Framework. For details about your ENF version, see <a href='#ENF_version' target='_blank' rel='noopener'>Which version of the COVID-19 Exposure Notification Framework is currently installed?</a>",
                             "This error, in connection with missing risk identification, is currently fixed together with Google. Exposure logging works as intended. Please do not deinstall the app, because this can remove the logged exposures, see also <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/en/faq/#delete_random_ids</a>."
                         ]
-                    },{
-                        "active": true,
+                    },
+                    {
                         "title": "When were the FAQ last updated?",
                         "anchor": "update_faq",
+                        "active": true,
                         "textblock": [
                             "Updated July 27, 2020"
                         ]
