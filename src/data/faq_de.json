@@ -107,18 +107,11 @@
                     },
                     {
                         "active": true,
-                        "title": "[Google/Android]: URSACHE 3 – Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(10)",
-                        "anchor": "API10",
-                        "textblock": [
-                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risikoermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
-                        ]
-                    },
-                    {
-                        "active": true,
                         "title": "[Google/Android]: Fehler bei Kommunikation mit Google API (39508)",
                         "anchor": "API39508",
                         "textblock": [
-                            "Das ist ein bekannter Fehler an dem wir bereits intensiv zusammen mit Google arbeiten. Die Kontaktereignisse werden weiterhin aufgezeichnet. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>."
+                            "Das ist ein bekannter Fehler an dem wir bereits intensiv zusammen mit Google arbeiten. Die Kontaktereignisse werden weiterhin aufgezeichnet. Daher bitten wir Sie, die App nicht zu deinstallieren oder zurückzusetzen, da hierbei Ihre aufgezeichneten Kontaktereignisse <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>.",
+                            "Der Fehler besagt, dass die Corona-Warn-App das Exposure Notification Framework zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufallscodes abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab. Der Fehler sollte nach 24 Stunden nicht mehr angezeigt werden."
                         ]
                     },
                     {
@@ -726,12 +719,21 @@
                             "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risikoermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
                             "Sollten sie die App nach Erreichen der 14 Tage deaktivieren, kann die Anzeige auch zurückspringen auf 13 (oder weniger) aktive Tage. Dies kann z.B. durch eine der folgenden Aktionen ausgelöst werden:<ul><li>Bluetooth deaktivieren</li><li>Hintergrundaktualisierung für die App abschalten, sodass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Einschalten des Flugmodus</li><li>Ausschalten des Smartphones</li><li>Neustart des Smartphones</li></ul>"
                         ]
+                    },
+                    {
+                        "active": true,
+                        "title": "[Google/Android]: URSACHE 3 – Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(10)",
+                        "anchor": "API10",
+                        "textblock": [
+                            "AKTUELL: Dieser Fehler ist mit der Version 1.5 des Exposure Notification Frameworks behoben. So sehen Sie nach, welche Version Sie installiert haben: <a href='#ENF_version' target='_blank' rel='noopener'>Welche Version des COVID-19-Kontaktprotokolls habe ich?</a>",
+                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risikoermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
+                        ]
                     },{
                         "active": true,
                         "title": "Wann wurden diese FAQ zuletzt aktualisiert?",
                         "anchor": "update_faq",
                         "textblock": [
-                            "Stand: 24.07.2020"
+                            "Stand: 27.07.2020"
                         ]
                     }
                 ]
