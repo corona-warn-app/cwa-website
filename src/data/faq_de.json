@@ -15,15 +15,7 @@
                 "id": "background_updates",
                 "active": true,
                 "accordion": [
-                  {
-                        "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
-                        "anchor": "encounter_but_green",
-                        "active": true,
-                        "textblock": [
-                            "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das, dass sich das Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, an dem Tag, zu dem die Positivkennung gehört, begegnet sind.",
-                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risikoermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
-                        ]
-                    }, {
+                   {
                         "title": "[Apple/iOS]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                         "anchor": "no_risk_update_ios",
                         "active": true,
@@ -57,7 +49,16 @@
                 "id": "most_asked",
                 "active": true,
                 "accordion": [
-                   {
+                  {
+                        "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
+                        "anchor": "encounter_but_green",
+                        "active": true,
+                        "textblock": [
+                            "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das, dass sich das Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, an dem Tag, zu dem die Positivkennung gehört, begegnet sind.",
+                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risikoermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
+                        ]
+                    },
+                    {
                        "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
                        "anchor": "iOS_136",
                        "active": true,
@@ -75,13 +76,6 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
-                        "anchor": "keys0",
-                        "active": true,
-                        "textblock": [
-                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
-                        ]
-                    },{
                         "title": "[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
                         "anchor": "android_location",
                         "active": true,
@@ -368,6 +362,14 @@
                             "Es kommt auf einzelnen Geräten (z.B. dem Huawei P20 Pro) zu Problemen beim Zugriff auf den verschlüsselten Bereich der App-Datenbank, in der Informationen zum Risiko-Status und der letzten Aktualisierung abgelegt sind. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption).",
                             "Leider konnte die eigentliche Ursache noch nicht gefunden werden. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.", 
                             "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Urache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Kommentar</a> an."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
+                        "anchor": "keys0",
+                        "active": true,
+                        "textblock": [
+                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
                         ]
                     },
                     {
