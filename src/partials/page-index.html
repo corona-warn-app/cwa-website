@@ -23,6 +23,28 @@
   </div>
 </section>
 {{> section-get-app section-contents=page-contents.section-join-project.content section-class='section-sticky section_bg-white hidden js-section-sticky' section-cancelable=true}}
+
+<section class="section_bg-white" {{#if page-contents.section-works-best.id}} id="{{page-contents.section-works-best.id}}" {{/if}}>
+  <div class="container">
+    {{#if page-contents.section-works-best}}
+    <div class="row align-items-center">
+      <div class="col col-12 col-md-6 image-overflow-container">
+        <img class="image-overflow-spacer" src="/assets/img/spacer.gif" alt="" />
+
+          <picture class="image-overflow image-overflow_left">
+            <img class="image-overflow image-overflow_left" src="{{page-contents.section-works-best.image.url}}"" title="{{page-contents.section-works-best.image.title}}"/>
+          </picture>
+
+      </div>
+      <div class="col col-12 col-md-6 text-center text-md-left">
+        {{> headline-component title=page-contents.section-works-best.headline.title}}
+        {{> text-component textblock=page-contents.section-works-best.headline.textblock button=page-contents.section-works-best.headline.button}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</section>
+
 <section class="" {{#if page-contents.section-image-ticker.id}} id="{{page-contents.section-image-ticker.id}}" {{/if}}>
   <div class="container">
     {{#if page-contents.section-image-ticker.headline}}
