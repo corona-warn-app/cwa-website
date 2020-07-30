@@ -214,20 +214,6 @@
                 "id": "application",
                 "accordion": [
                     {
-                        "title": "Was bedeutet die Überprüfung auf mögliche Begegnungen?",
-                        "anchor": "keys_matches",
-                        "active": true,
-                        "textblock": [
-                            "Die COVID-19-Begegnungsüberprüfungen zeigen an, wie viele Schlüssel Ihr Smartphone eingesammelt hat und wie viele davon einem gemeldeten positiven Testergebnis zuzuordnen sind. Mehr zum Ablauf unter <a href='#risk_info' target='_blank' rel='noopener'>Wie werde ich über ein Infektionsrisiko informiert?</a> mit einem Link zum ausführlichen Ablauf.",
-                            "Apple: 'Begegnungsüberprüfungen', Android: 'Überprüfungen auf mögliche Begegnungen':", 
-                            "An jedem Tag gibt es für jeden der letzten 14 Tage einen Eintrag, siehe <a href='#multiple_exposure_checks' target='_blank' rel='noopener'>Mein Kontaktprotokoll zeigt mehrere zeitgleiche Überprüfungen an</a>.",
-                            "Apple: 'Anzahl der bereitgestellten Schlüssel', Android: 'Anzahl der Schlüssel':",
-                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone im Laufe des Tages eingesammelt haben.",
-                            "Apple: 'Anzahl der abgeglichenen Schlüssel', Android: 'Anzahl der Treffer':",
-                            "Das ist die Anzahl der Schlüssel, für die der Abgleich einen Treffer zu einem gemeldeten positiven Testergebnis geliefert hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener'>Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter."
-                        ]
-                    },
-                    {
                         "title": "Muss ich die App immer geöffnet lassen, damit Begegnungen aufgezeichnet werden?",
                         "anchor": "close_app",
                         "active": true,
@@ -309,7 +295,7 @@
                         "textblock": [
                             "Nein, das ist leider nicht möglich. Jedes positive Test-Ergebnis, das in die App geladen wird, muss zuvor von Laboren überprüft worden sein. Diese stellen sicher, dass kein Missbrauch stattfindet und keine falsche Ergebnisse eingetragen werden. Dazu sind zur Zeit nur Labore in Deutschland angeschlossen. Sie können also kein positives Testergebnis aus anderen Ländern, zum Beispiel aus den Niederlanden, eingeben."
                         ]
-                    }, 
+                    },
                     {
                         "title": "Wie melde ich mich in der App wieder gesund?",
                         "anchor": "recovered",
@@ -317,7 +303,7 @@
                         "textblock": [
                             "Wenn Ihr Arzt oder das Gesundheitsamt Ihnen mitgeteilt hat, dass Sie von COVID-19 genesen sind, setzen Sie die Corona-Warn-App zurück:","<ol><li>Öffnen Sie 'Einstellungen'.<ul><li>[Google/Android]: Öffnen Sie das Menü der Corona-Warn-App, indem Sie auf der Startseite auf das 3-Punkte-Icon rechts oben tippen.</li><li>[Apple/iOS]: Scrollen Sie auf der Startseite nach unten.</li></ul></li><li>Tippen Sie auf 'Anwendung zurücksetzen'. Bestätigen Sie, dass Sie die App zurücksetzen wollen.</li><li>Sie kommen auf die Einführungsseiten der Corona-Warn-App.</li><li>Aktivieren Sie dort die Risiko-Ermittlung wieder. Weil nach aktuellem Forschungsstand nicht ausgeschlossen werden kann, dass Sie sich wieder infizieren, können Sie so weiter dazu beitragen, Infektionsketten zu unterbrechen.</li></ol>"
                         ]
-                    }, 
+                    },
                     {
                         "title": "Ich bin gehörlos oder schwerhörig. Telefonieren ist problematisch für mich. Worauf muss ich bei der Nutzung der App achten?",
                         "anchor": "hearing_impaired",
@@ -344,7 +330,7 @@
                         "textblock": [
                             "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind eine separate Überprüfung des Kontaktprotokolls durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Kontaküberprüfungs-Historie vorhanden sind. Sie können zudem beim Klick auf die Details der Überprüfungen sehen, dass jeweils unterschiedlich viele Schlüssel geprüft werden."
                         ]
-                    }, 
+                    },
                     {
                         "title": "In den Begegnungsüberprüfungen sind die Aufzeichnungen von weniger als 14 Tagen gespeichert",
                         "anchor": "exposure_check",
@@ -352,7 +338,7 @@
                         "textblock": [
                             "Die Einstellungen Ihres Smartphones zeigen die Begegnungsüberprüfungen der letzten 14 Tage an: Apple: 'Begegnungsüberprüfungen', Android: 'Überprüfung auf mögliche Begegnungen'. Wenn die App in den letzten 2 Wochen dauerhaft aktiv war, sollten Sie 14 Überprüfungen in den letzten 24 Stunden sehen.","Bitte beachten Sie: Diese Übersicht zeigt nur die Historie an. Jeden Tag werden die Begegnungen der letzten 14 Tage geprüft und das Risiko daraus ermittelt. Wichtig ist also, dass die Übersicht Begegnungsüberprüfungen während der letzten 24 Stunden anzeigt.","Es kann vorkommen, dass hier Einträge für weniger als 14 Tage angezeigt werden, obwohl die Risiko-Ermittlung an jedem der letzten 14 Tagen korrekt durchgeführt wurde. Dafür gibt es mehrere Gründe:","<ol><li>Diese Übersicht hat ein festes Limit von 100 Einträgen. Wird dieses Limit überschritten, werden nur die neuesten Einträge behalten. Sie sehen dann typischerweise die Einträge von 7 Tagen. Wir sind mit Apple in Kontakt, damit die Übersicht in Zukunft vollständig angezeigt wird.</li><li>Manchmal werden nur 13 Einträge für einen Kalendertag angezeigt. Der 14. Eintrag wurde nach der Überprüfung gelöscht. Das kann passieren, wenn sich der Zeitpunkt des Herunterladens der Schlüssel vom Server und der Zeitpunkt des Löschen von Schlüsseln auf Ihrem Smartphone, die älter als 14 Tage sind, überschneiden. Auch hier gilt, die Risiko-Ermittlung hat funktioniert. Eine ausführliche Erklärung mit Beispiel finden Sie (auf Englisch) unter <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>Wenn Sie die App erst seit Kurzem nutzen (zum Beispiel seit 5 Tagen), werden entsprechend weniger Überprüfungen in den letzten 24 Stunden (hier 5 Überprüfungen) angezeigt, eine für jeden Tag, an dem die Corona-Warn-App lief.</li></ol>"
                         ]
-                    }, 
+                    },
                     {
                         "title": "[Apple/iOS]: 'COVID-19-Kontaktprotokoll' - Wöchentliches Update",
                         "anchor": "notif_weekly_update",
@@ -375,7 +361,7 @@
                         "active": true,
                         "textblock": [
                             "Es kommt auf einzelnen Geräten (z.B. dem Huawei P20 Pro) zu Problemen beim Zugriff auf den verschlüsselten Bereich der App-Datenbank, in der Informationen zum Risiko-Status und der letzten Aktualisierung abgelegt sind. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption).",
-                            "Leider konnte die eigentliche Ursache noch nicht gefunden werden. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.", 
+                            "Leider konnte die eigentliche Ursache noch nicht gefunden werden. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.",
                             "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Urache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Kommentar</a> an."
                         ]
                     },
@@ -666,7 +652,7 @@
                             "Detaillierte Informationen dazu stehen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>in diesem Kommentar auf GitHub</a> (englisch)."
                         ]
                     },
-                    { 
+                    {
                         "title": "[Apple/iOS]: ENErrorDomain-Fehler 5",
                         "anchor": "ENError5",
                         "active": true,
@@ -710,7 +696,7 @@
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                            "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben. Wird Ihnen dieser Fehler dennoch weiterhin angezeigt, legen Sie bitte ein GitHub-Issue an unter <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/new?labels=bug&template=01_bugs.md&title=ENErrorDomain%20Error%2011%20on%20iOS%2013.6' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/new?labels=bug&template=01_bugs.md&title=ENErrorDomain%20Error%2011%20on%20iOS%2013.6</a>.", 
+                            "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben. Wird Ihnen dieser Fehler dennoch weiterhin angezeigt, legen Sie bitte ein GitHub-Issue an unter <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/new?labels=bug&template=01_bugs.md&title=ENErrorDomain%20Error%2011%20on%20iOS%2013.6' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/new?labels=bug&template=01_bugs.md&title=ENErrorDomain%20Error%2011%20on%20iOS%2013.6</a>.",
                             "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Der Fehler soll nach Angaben von Apple mit iOS 13.6 behoben werden. Bis dahin können Sie versuchen, Ihr iPhone neu zu starten. 24 Stunden später war der Fehler in den meisten Fällen verschwunden."
                         ]
                     },
@@ -728,7 +714,7 @@
                         "anchor": "iphone_region_change",
                         "active": true,
                         "textblock": [
-                           "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist diese Meldung behoben.", 
+                           "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist diese Meldung behoben.",
                            "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification Framework ausgelöst. Sie können die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, können Sie in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird.",
                             "Bitte öffnen Sie die Corona-Warn-App noch ein Mal kurz, um sicherzustellen, dass die Hintergrundaktualisierung weiter arbeitet."
                         ]

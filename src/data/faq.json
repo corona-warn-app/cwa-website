@@ -70,7 +70,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall or reset the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>.", 
+                            "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not deinstall or reset the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>.",
                             "The error means that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive. The error should disappear after 24 hours."
                         ]
                     },
@@ -212,21 +212,6 @@
                 "title": "Use",
                 "id": "application",
                 "accordion": [
-                    
-                     {
-                        "title": "What do the exposure check logs show?",
-                        "anchor": "keys_matches",
-                        "active": true,
-                        "textblock": [
-                            "The exposure check logs show how many keys your phone has collected and how many of them are matching a reported positive test result. For infos about the app flow, see <a href='#risk_info' target='_blank' rel='noopener'>How do you get information about a risk of infection?</a> containing a link to the detailed technical process.",
-                            "Exposure checks",
-                            "For each day, there is an entry for each of the last 14 days, see <a href='#multiple_exposure_checks' target='_blank' rel='noopener'>My exposure log shows multiple, simultaneous checks for exposures</a>.",
-                            "Apple: 'Provided Key Count', Android: 'Number of keys':",
-                            "This is the number of keys that your phone collected during that day.",
-                            "Apple: 'Matched Key Count', Android: 'Number of matches':",
-                            "This is the number of keys for which there is a matching reported positive test result. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener'>An encounter has been reported, but the risk status stays green</a>."
-                        ]
-                    },
                     {
                         "title": "Will exposure logging still work when I close the app?",
                         "anchor": "close_app",
@@ -344,7 +329,7 @@
                         "textblock": [
                             "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
                         ]
-                    },  
+                    },
                     {
                         "title": "My exposure log shows checks for less than 14 days",
                         "anchor": "exposure_check",
@@ -360,7 +345,7 @@
                         "textblock": [
                             "This is a general notification. It does not mean that exposures were detected. The Exposure Notification Framework sends this notification and displays the icon. You can look up your current risk status directly in the Corona-Warn-App."
                         ]
-                    },  
+                    },
                     {
                         "title": "[Apple/iOS]: In my COVID-19 Exposure Logging settings it says: 'Corona-Warn has checked your log of collected random IDs 0 times over the past 24 hours.' Does this mean that exposure logging isn’t working?",
                         "anchor": "no_log_check",
@@ -385,7 +370,7 @@
                         "textblock": [
                             "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                         ]
-                    }, 
+                    },
                     {
                         "title": "Since I installed the app, my phone sometimes behaves oddly. Example: There are occasional problems with other apps and devices that use Bluetooth. What can I do?",
                         "anchor": "various_device_problems",
@@ -725,7 +710,7 @@
                         "anchor": "iphone_region_change",
                         "active": true,
                         "textblock": [
-                           "UPDATE: After you updated to iOS version 13.6., this message is gone.", 
+                           "UPDATE: After you updated to iOS version 13.6., this message is gone.",
                            "This message is issued directly by the Exposure Notification Framework of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update. Please open the Corona-Warn-App once again to make sure that the background app refresh continues to work."
                         ]
                     },
@@ -737,7 +722,7 @@
                             "UPDATE: This error is raised by the operating system. After you updated to Apple iOS version 13.6., this error should be gone.",
                             "The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                         ]
-                    }, 
+                    },
                     {
                         "title": "[Google/Android]: While setting up the app, I’m getting the following error: 'CAUSE: 3. Something went wrong. Error when communication with Google API (17).' What does this mean?",
                         "anchor": "cause_3",
