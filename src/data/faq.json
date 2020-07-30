@@ -213,6 +213,20 @@
                 "id": "application",
                 "accordion": [
                     
+                     {
+                        "title": "What do the exposure check logs show?",
+                        "anchor": "keys_matches",
+                        "active": true,
+                        "textblock": [
+                            "The exposure check logs show how many keys your phone has collected and how many of them are matching a reported positive test result. For infos about the app flow, see <a href='#risk_info' target='_blank' rel='noopener'>How do you get information about a risk of infection?</a> containing a link to the detailed technical process.",
+                            "Exposure checks",
+                            "For each day, there is an entry for each of the last 14 days, see <a href='#multiple_exposure_checks' target='_blank' rel='noopener'>My exposure log shows multiple, simultaneous checks for exposures</a>.",
+                            "Apple: 'Provided Key Count', Android: 'Number of keys'",
+                            "This is the number of keys that your phone collected during that day.",
+                            "Apple: 'Matched Key Count', Android: 'Number of matches'",
+                            "This is the number of keys for which there is a matching reported positive test result. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener'>An encounter has been reported, but the risk status stays green</a>."
+                        ]
+                    },
                     {
                         "title": "Will exposure logging still work when I close the app?",
                         "anchor": "close_app",
@@ -743,7 +757,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated July 29, 2020"
+                            "Updated July 30, 2020"
                         ]
                     }
                 ]

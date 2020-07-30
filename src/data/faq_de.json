@@ -214,6 +214,20 @@
                 "id": "application",
                 "accordion": [
                     {
+                        "title": "Was bedeutet die Überprüfung auf mögliche Begegnungen?",
+                        "anchor": "keys_matches",
+                        "active": true,
+                        "textblock": [
+                            "Die COVID-19-Begegnungsüberprüfungen zeigen an, wie viele Schlüssel Ihr Smartphone eingesammelt hat und wie viele davon einem gemeldeten positiven Testergebnis zuzuordnen sind. Mehr zum Ablauf unter <a href='#risk_info' target='_blank' rel='noopener'>Wie werde ich über ein Infektionsrisiko informiert?</a> mit einem Link zum ausführlichen Ablauf.",
+                            "Apple: 'Begegnungsüberprüfungen', Android: 'Überprüfungen auf mögliche Begegnungen':", 
+                            "An jedem Tag gibt es für jeden der letzten 14 Tage einen Eintrag, siehe <a href='#multiple_exposure_checks' target='_blank' rel='noopener'>Mein Kontaktprotokoll zeigt mehrere zeitgleiche Überprüfungen an</a>.",
+                            "Apple: 'Anzahl der bereitgestellten Schlüssel', Android: 'Anzahl der Schlüssel':",
+                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone im Laufe des Tages eingesammelt haben.",
+                            "Apple: 'Anzahl der abgeglichenen Schlüssel', Android: 'Anzahl der Treffer':",
+                            "Das ist die Anzahl der Schlüssel, für die der Abgleich einen Treffer zu einem gemeldeten positiven Testergebnis geliefert hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener'>Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter."
+                        ]
+                    },
+                    {
                         "title": "Muss ich die App immer geöffnet lassen, damit Begegnungen aufgezeichnet werden?",
                         "anchor": "close_app",
                         "active": true,
@@ -747,7 +761,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 29.07.2020"
+                            "Stand: 30.07.2020"
                         ]
                     }
                 ]
