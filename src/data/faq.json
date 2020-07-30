@@ -213,6 +213,20 @@
                 "id": "application",
                 "accordion": [
                     {
+                        "title": "What do the exposure check logs show?",
+                        "anchor": "keys_matches",
+                        "active": true,
+                        "textblock": [
+                            "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For infos about the app flow, see <a href='#risk_info' target='_blank' rel='noopener noreferrer'>How do you get information about a risk of infection?</a> for details.",
+                            "<b>'Exposure checks'</b>",
+                            "For each day, there is an entry for each of the last 14 days, see <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>My exposure log shows multiple, simultaneous checks for exposures</a>.",
+                            "Apple: <b>'Provided Key Count'</b> | Android: <b>'Number of keys'</b>",
+                            "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
+                            "Apple: <b>'Matched Key Count'</b> | Android: <b>'Number of matches'</b>",
+                            "This is the number of keys that your phone collected for which there is a matching diagnosis key. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>An encounter has been reported, but the risk status stays green</a>."
+                        ]
+                    },
+                    {
                         "title": "Will exposure logging still work when I close the app?",
                         "anchor": "close_app",
                         "active": true,
