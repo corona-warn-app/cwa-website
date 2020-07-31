@@ -72,7 +72,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "Das ist ein bekannter Fehler an dem wir bereits intensiv zusammen mit Google arbeiten. Die Kontaktereignisse werden weiterhin aufgezeichnet. Daher bitten wir Sie, die App nicht zu deinstallieren oder zurückzusetzen, da hierbei Ihre aufgezeichneten Kontaktereignisse <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>.",
+                            "Das ist ein bekannter Fehler an dem wir bereits intensiv zusammen mit Google arbeiten. Die Begegnungen werden weiterhin aufgezeichnet. Daher bitten wir Sie, die App nicht zu deinstallieren oder zurückzusetzen, da hierbei Ihre aufgezeichneten Begegnungen <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>.",
                             "Der Fehler besagt, dass die Corona-Warn-App das Exposure Notification Framework zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufallscodes abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab. Der Fehler sollte nach 24 Stunden nicht mehr angezeigt werden."
                         ]
                     },
@@ -221,7 +221,7 @@
                         "textblock": [
                             "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden sie unter <a href='#risk_info' target='_blank' rel='noopener noreferrer'>Wie werde ich über ein Infektionsrisiko informiert?</a>",
                             "Apple: <b>'Begegnungsüberprüfungen'</b> | Android: <b>'Überprüfungen auf mögliche Begegnungen'</b>",
-                            "An jedem Tag gibt es für jeden der letzten 14 Tage einen Eintrag, siehe <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>Mein Kontaktprotokoll zeigt mehrere zeitgleiche Überprüfungen</a>.",
+                            "An jedem Tag gibt es für jeden der letzten 14 Tage einen Eintrag, siehe <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge</a>.",
                             "Apple: <b>'Anzahl der bereitgestellten Schlüssel'</b> | Android: <b>'Anzahl der Schlüssel'</b>",
                             "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
                             "Apple: <b>'Anzahl der abgeglichenen Schlüssel'</b> | Android: <b>'Anzahl der Treffer'</b>",
@@ -279,10 +279,10 @@
                         "active": true,
                         "textblock": [
                             "Eine Deinstallation der App sollte immer die letzte mögliche Lösung für bekannte oder neu auftretende Probleme sein.",
-                            "Die App selbst kann das Covid-19-Kontaktprotokoll nicht löschen. Daher obliegt es dem Exposure Notification Framework (ENF) zu entscheiden, ob diese Daten gelöscht werden oder nicht.",
-                            "In der derzeitigen Version bleibt bei einer Deinstalltion unter iOS das Kontaktprotokoll erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
-                            "Auf Android-Geräten wird das Kontaktprotokoll gelöscht, falls die Corona-Warn-App die letzte App war, die das ENF nutzt. Falls sie zusätzlich z.B. SwissCovid oder Immuni installiert haben bleibt das Kontaktprotokoll erhalten bis auch diese Apps gelöscht werden oder Sie händisch eine Löschung des Kontaktprotokolls veranlassen.",
-                            "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, empfehlen wir eine App-Löschung wirklich nur in Ausnahmefällen."
+                            "Die App selbst kann die Covid-19-Begegnungsaufzeichnungen nicht löschen. Daher obliegt es dem Exposure Notification Framework (ENF) zu entscheiden, ob diese Daten gelöscht werden oder nicht.",
+                            "In der derzeitigen Version bleiben bei einer Deinstalltion unter iOS die Begegnungsaufzeichnungen erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
+                            "Auf Android-Geräten werden die Begegnungsaufzeichnungen gelöscht, falls die Corona-Warn-App die letzte App war, die das ENF nutzt. Falls sie zusätzlich z.B. SwissCovid oder Immuni installiert haben, bleiben die Begegnungsaufzeichnungen erhalten, bis auch diese Apps gelöscht werden oder Sie händisch eine Löschung der Begegnungsaufzeichnungen veranlassen.",
+                            "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, empfehlen wir, wirklich nur in Ausnahmefällen die App zu löschen."
                         ]
                     },
                     {
@@ -339,11 +339,11 @@
                         ]
                     },
                     {
-                        "title": "Mein Kontaktprotokoll zeigt mehrere zeitgleiche Überprüfungen an. Ist das ein Fehler?",
+                        "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",
                         "active": true,
                         "textblock": [
-                            "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind eine separate Überprüfung des Kontaktprotokolls durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Kontaküberprüfungs-Historie vorhanden sind. Sie können zudem beim Klick auf die Details der Überprüfungen sehen, dass jeweils unterschiedlich viele Schlüssel geprüft werden."
+                            "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung der Begegnungsaufzeichnungen durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung der Begegnungsaufzeichnungen durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Überprüfungs-Historie vorhanden sind. Sie können zudem auf die Überprüfungseinträge klicken und sehen, dass immer unterschiedlich viele Schlüssel geprüft werden."
                         ]
                     },
                     {
@@ -363,11 +363,11 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: In den Einstellungen für das COVID-19-Kontaktprotokoll steht: 'Corona-Warn hat dein Protokoll mit erfassten zufälligen IDs während der letzten 24 Stunden 0-mal überprüft'. Funktioniert die Risiko-Ermittlung nicht?",
+                        "title": "[Apple/iOS]: In den Einstellungen für die COVID-19-Begegnungsaufzeichnungen steht: 'Corona-Warn hat dein Protokoll mit erfassten zufälligen IDs während der letzten 24 Stunden 0-mal überprüft'. Funktioniert die Risiko-Ermittlung nicht?",
                         "anchor": "no_log_check",
                         "active": true,
                         "textblock": [
-                            "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll'. Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufallscodes durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
+                            "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen'. Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufallscodes durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
                         ]
                     },
                     {
@@ -393,7 +393,7 @@
                         "anchor": "various_device_problems",
                         "active": true,
                         "textblock": [
-                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich am COVID-19-Kontaktprotokoll des Betriebssystems. Wenden Sie sich bitte an den Hersteller Ihres Geräts.",
+                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich an den COVID-19-Begegnungsaufzeichnungen des Betriebssystems. Wenden Sie sich bitte an den Hersteller Ihres Geräts.",
                             "[Apple/iOS]: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
                             "[Google/Android]: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
                         ]
@@ -407,11 +407,11 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Welche Version des COVID-19-Kontaktprotokolls habe ich?",
+                        "title": "[Google/Android]: Welche Version der COVID-19-Begegnungsaufzeichnungen habe ich?",
                         "anchor": "ENF_version",
                         "active": true,
                         "textblock": [
-                            "Google veröffentlicht die Infrastruktur für das COVID-19-Kontaktprotokoll, das Exposure Notification Framework (ENF), über Google Play, und damit unabhängig vom Android-Betriebssystem. Die <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENF-Version 1.5</a> brachte einige Verbesserungen und Fehlerkorrekturen.","So sehen Sie, welche Version Ihr Smartphone installiert hat:","<ol><li>Wählen Sie in den Einstellungen 'Google > Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, verwendet das Smartphone noch nicht die Version 1.5.</li><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen (zum Beispiel '15'), YY für die Jahreszahl und WW für die Wochenzahl. Wenn Sie dieses Format sehen, verwendet das Smartphone schon die Version 1.5.</li></ul></li></ol>", "Allgemeines und Release-Informationen zum COVID-19-Kontaktprotokoll finden Sie bei Google:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
+                            "Google veröffentlicht die Infrastruktur für die COVID-19-Begegnungsaufzeichnungen, das Exposure Notification Framework (ENF), über Google Play, und damit unabhängig vom Android-Betriebssystem. Die <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENF-Version 1.5</a> brachte einige Verbesserungen und Fehlerkorrekturen.","So sehen Sie, welche Version Ihr Smartphone installiert hat:","<ol><li>Wählen Sie in den Einstellungen 'Google > Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, verwendet das Smartphone noch nicht die Version 1.5.</li><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen (zum Beispiel '15'), YY für die Jahreszahl und WW für die Wochenzahl. Wenn Sie dieses Format sehen, verwendet das Smartphone schon die Version 1.5.</li></ul></li></ol>", "Allgemeines und Release-Informationen zu den COVID-19-Benachrichtigungen finden Sie bei Google:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
                         ]
                     }
                 ]
@@ -426,7 +426,7 @@
                         "active": true,
                         "textblock": [
                             "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Sie können selbst entscheiden, ob Sie die Testergebnisse abrufen und ob Sie sie bei einem positiven Befund als Diagnoseschlüssel ('Positivkennung') übermitteln – nichts geschieht ohne Ihre Zustimmung.",
-                            "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Kontaktfunktion deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren."
+                            "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Begegnungsaufzeichnungen deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren."
                         ]
                     },
                     {
@@ -563,7 +563,7 @@
                 ]
             },
             {
-                "id": "technologies",
+                "id": "privacy_security",
                 "title": "Datenschutz und Sicherheit",
                 "accordion": [
                     {
