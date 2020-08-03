@@ -672,6 +672,7 @@
                         "anchor": "days_active_Android",
                         "active": true,
                         "textblock": [
+                            "AKTUELL: Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank' rel='noopener'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.", 
                             "Bei der Zählung der aktiven Tage gibt es derzeit einen Fehler, der dazu führt, dass bei Erreichen von '14 von 14 Tagen aktiv' die Anzeige der Anzahl aktiver Tage nicht bei 14 von 14 Tagen bleibt, sondern statisch auf „13 von 14 Tagen aktiv“ oder weniger stehen bleibt.",
                             "Dieser Fehler betrifft nur die Anzeige der aktiven Tage in der Corona-Warn-App. Die Funktion selbst ist nicht eingeschränkt, das heißt, die Schlüssel werden weiterhin ausgetauscht und die Risiko-Ermittlung wird weiterhin durchgeführt. Es gehen keine Daten verloren. Technisch gesehen handelt es sich hier um einen Rundungsfehler, der auftritt, wenn die Anzahl aktiver Tage der Risiko-Ermittlung nicht mehr zunimmt, sondern statisch bei 14 Tagen bleibt. Wenn die Risiko-Ermittlung auch nur kurzfristig in irgendeiner Form nicht aktiv war, bleibt der Zähler bei einem niedrigeren Wert, also etwa bei 13 Tagen stehen.",
                             "Mögliche Ursachen für eine Deaktivierung der Risiko-Ermittlung:",
@@ -685,6 +686,7 @@
                         "anchor": "days_active_explanation",
                         "active": true,
                         "textblock": [
+                            "AKTUELL: Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank' rel='noopener'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.",
                             "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risikoermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
                             "Sollten sie die App nach Erreichen der 14 Tage deaktivieren, kann die Anzeige auch zurückspringen auf 13 (oder weniger) aktive Tage. Dies kann z.B. durch eine der folgenden Aktionen ausgelöst werden:<ul><li>Bluetooth deaktivieren</li><li>Hintergrundaktualisierung für die App abschalten, sodass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Einschalten des Flugmodus</li><li>Ausschalten des Smartphones</li><li>Neustart des Smartphones</li></ul>"
                         ]
