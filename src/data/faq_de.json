@@ -171,7 +171,7 @@
                         "active": true,
                         "textblock": [
                             "Im Moment ist eine Auslieferung auf alternativen Wegen (Download per APK, F-Droid etc.) aus verschiedenen Gründen nicht geplant.",
-                            "Zum einen liegt die Verantwortung für die Auslieferung der App beim Robert Koch-Institut, welches rechtlich und inhaltlich für die Verteilung verantwortlich ist. Im Moment ist hier nur die Auslieferung über die jeweiligen App Stores im Fokus. Weiterhin funktioniert die App nur mit Google Play Services. Mit einer Verteilung über den Play Store kann davon ausgegangen werden, dass Google Play Services instaliert sind. Auf anderen Vertriebswegen können wir diese Annahmen im Moment nicht treffen.",
+                            "Zum einen liegt die Verantwortung für die Auslieferung der App beim Robert Koch-Institut, welches rechtlich und inhaltlich für die Verteilung verantwortlich ist. Im Moment ist hier nur die Auslieferung über die jeweiligen App Stores im Fokus. Weiterhin funktioniert die App nur mit Google Play Services. Mit einer Verteilung über den Play Store kann davon ausgegangen werden, dass Google Play Services installiert sind. Auf anderen Vertriebswegen können wir diese Annahmen im Moment nicht treffen.",
                             "Die Auslieferung der bestehenden App auf anderen Kanälen ist im Moment als Anfrage auf <a href='https://github.com/corona-warn-app/cwa-wishlist/issues/57' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-wishlist#57</a> publiziert. Die Diskussion rund um alternative Vertriebsplattformen wie F-Droid findet sich auf <a href='https://github.com/corona-warn-app/cwa-documentation/issues/5' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-documentation#5</a>. Wir werden mit den Partnern klären, inwiefern und wann wir diesen Wünschen nachkommen können.",
                             "Weiterhin gibt es in der Entwickler-Community eine Initiative, die Corona-Warn-App über entsprechende Erweiterungen unabhängig von Google Play Services lauffähig zu bekommen. Details hierzu finden sich im Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/75' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-android#75</a>."
                         ]
@@ -189,7 +189,7 @@
                         "anchor": "other_platforms",
                         "active": true,
                         "textblock": [
-                            "Wir beabsichtigen nicht, die App in anderen App Stores außer denen von Google oder Apple zur Verfügung zu stellen. Die App wird die Apple und Google Exposure Notification APIs verwenden. Die Community kann sich gerne einbringen und die App für andere APIs übernehmen."
+                            "Es ist im Moment nicht absehbar, wann und ob wir die App in anderen App Stores außer denen von Google oder Apple zur Verfügung stellen können. Die App wird die Apple und Google Exposure Notification APIs verwenden. Die Community kann sich gerne einbringen und die App für andere APIs übernehmen."
                         ]
                     },
                     {
@@ -280,7 +280,7 @@
                         "textblock": [
                             "Eine Deinstallation der App sollte immer die letzte mögliche Lösung für bekannte oder neu auftretende Probleme sein.",
                             "Die App selbst kann die Covid-19-Begegnungsaufzeichnungen nicht löschen. Daher obliegt es dem Exposure Notification Framework (ENF) zu entscheiden, ob diese Daten gelöscht werden oder nicht.",
-                            "In der derzeitigen Version bleiben bei einer Deinstalltion unter iOS die Begegnungsaufzeichnungen erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
+                            "In der derzeitigen Version bleiben bei einer Deinstallation unter iOS die Begegnungsaufzeichnungen erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
                             "Auf Android-Geräten werden die Begegnungsaufzeichnungen gelöscht, falls die Corona-Warn-App die letzte App war, die das ENF nutzt. Falls sie zusätzlich z.B. SwissCovid oder Immuni installiert haben, bleiben die Begegnungsaufzeichnungen erhalten, bis auch diese Apps gelöscht werden oder Sie händisch eine Löschung der Begegnungsaufzeichnungen veranlassen.",
                             "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, empfehlen wir, wirklich nur in Ausnahmefällen die App zu löschen."
                         ]
@@ -291,7 +291,7 @@
                         "active": true,
                         "textblock": [
                             "So funktioniert die App:",
-                            "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden.</li><li>Falls Sie positiv getestet wurden, können Sie Ihre Diagnoseschlüssel ('Positivkennung') auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass es eine Begegnung mit einer Person gab, die positiv auf Corona getestet wurde.</li><li>Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel wie in Schritt 1 beschrieben notwendig. Die Information über eine Begegnung aus Schritt 3 benötigt keine Bluetooth-Verbindung.</li></ol>",
+                            "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden. Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel notwendig.</li><li>Falls Sie positiv getestet wurden, können Sie Ihre Diagnoseschlüssel ('Positivkennung') auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben. Hierfür muss Ihr Smartphone Zugang zum Internet haben, zum Beispiel über WLAN oder mobile Daten.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass es eine Begegnung mit einer Person gab, die positiv auf Corona getestet wurde. Für diesen Abgleich von Übereinstimmungen benötigen Sie keine Bluetooth-Verbindung.</li></ol>",
                             "Das <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a> beschreibt den technischen Ablauf im Detail."
                         ]
                     },
@@ -363,14 +363,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: In den Einstellungen für die COVID-19-Begegnungsaufzeichnungen steht: 'Corona-Warn hat dein Protokoll mit erfassten zufälligen IDs während der letzten 24 Stunden 0-mal überprüft'. Funktioniert die Risiko-Ermittlung nicht?",
-                        "anchor": "no_log_check",
-                        "active": true,
-                        "textblock": [
-                            "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen'. Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufallscodes durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: Ursache: 9002 Etwas ist schief gelaufen (sqlite)",
                         "anchor": "cause9002",
                         "active": true,
@@ -393,7 +385,7 @@
                         "anchor": "various_device_problems",
                         "active": true,
                         "textblock": [
-                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich an den COVID-19-Begegnungsaufzeichnungen des Betriebssystems. Wenden Sie sich bitte an den Hersteller Ihres Geräts.",
+                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich an grundlegenden Funktionen des Betriebssystems, auf die wir keinen Einfluss haben. Wenden Sie sich bitte an den Hersteller Ihres Geräts.",
                             "[Apple/iOS]: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
                             "[Google/Android]: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
                         ]
@@ -426,7 +418,7 @@
                         "active": true,
                         "textblock": [
                             "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Sie können selbst entscheiden, ob Sie die Testergebnisse abrufen und ob Sie sie bei einem positiven Befund als Diagnoseschlüssel ('Positivkennung') übermitteln – nichts geschieht ohne Ihre Zustimmung.",
-                            "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Begegnungsaufzeichnungen deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren."
+                            "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Begegnungsaufzeichnungen deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren. Bei der Deinstallation können alle aufgezeichneten Begegnungen verloren gehen, siehe <a href='#delete_random_ids' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes beim Deinstallieren der App entfernt?</a>."
                         ]
                     },
                     {
@@ -474,7 +466,7 @@
                         "anchor": "non_dev_related",
                         "active": true,
                         "textblock": [
-                            "Im Open-Source-Projekt für die Corona-Warn-App auf github.com/corona-warn-app und auf der Website coronawarn.app geht es viel um die Open-Source-Entwicklung der App. Informationen zu den allgemeinen Aspekten, auch rechtliche Fragen und Informationen für die nutzenden Personen gibt es auf https://www.bundesregierung.de/breg-de/themen/corona-warn-app. Fragen können Sie über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen.", "Auch direkt in der Corona-Warn-App finden Sie Informationen zur Nutzung und zum Datenschutz: Gehen Sie im Menü der App auf App-Informationen, und dort auf Nutzungsbedingungen und Datenschutzinformation."
+                            "Im Open-Source-Projekt für die Corona-Warn-App auf <a href='github.com/corona-warn-app' target='_blank' rel='noopener noreferrer'>github.com/corona-warn-app</a> und auf der Website <a href='coronawarn.app' target='_blank' rel='noopener noreferrer'>coronawarn.app</a> geht es viel um die Open-Source-Entwicklung der App. Informationen zu den allgemeinen Aspekten, auch rechtliche Fragen und Informationen für die nutzenden Personen gibt es auf <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app' target='_blank' rel='noopener noreferrer'>bundesregierung.de/breg-de/themen/corona-warn-app</a>. Fragen können Sie über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen.", "Auch direkt in der Corona-Warn-App finden Sie Informationen zur Nutzung und zum Datenschutz: Gehen Sie im Menü der App auf App-Informationen, und dort auf Nutzungsbedingungen und Datenschutzinformation."
                         ]
                     },
                     {
@@ -672,7 +664,7 @@
                         "anchor": "ENError5",
                         "active": true,
                         "textblock": [
-                            "Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immer noch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
+                            "AKTUELL: Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immer noch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
                         ]
                     },
                     {
@@ -748,6 +740,7 @@
                         "anchor": "cause_3",
                         "active": true,
                         "textblock": [
+                           "AKTUELL: Dieser Fehler ist inzwischen behoben.",
                             "Dieser Fehler kann bei der ersten Aktivierung der Risiko-Ermittlung oder auch später in den App-Einstellungen oder auf dem Hauptbildschirm auftreten. Der Fehler bedeutet, dass Ihr Gerät aus einem oder mehreren der folgenden Gründe die Risiko-Ermittlung nicht durchführen kann:",
                             "<ul><li>Ihre Google Play-Dienste sind veraltet.</li><li>Die App ist nicht in der Landesversion Ihres Google Play verfügbar. <a href='https://www.coronawarn.app/de/faq/#international' target='_blank' rel='noopener noreferrer'>Diese FAQ</a> nennt die unterstützten Landesversionen.</li><li>Sie haben die Corona-Warn-App nicht über den offiziellen Google Play Store installiert.</li><li>Ihr Gerät wurde modifiziert (z. B. gerootet).</li><li>Sie haben mehrere Benutzerkonten auf Ihrem Gerät, und die App wird für einen nicht-primären Nutzer (ohne Administrationsrechte) ausgeführt.</li><li>Der Hersteller Ihres Geräts hat die Google Play-Dienste und den Google Play Store für Ihr Gerät nicht zur Verfügung gestellt (betrifft z. B. einige Modelle von Huawei und Xiaomi).</li><li>Die Google Mobile Services sind veraltet.</li></ul>",
                             "<b>Fehlerbehebung</b>",
@@ -759,11 +752,19 @@
                         ]
                     },
                     {
+                        "title": "[Apple/iOS]: In den Einstellungen für die COVID-19-Begegnungsaufzeichnungen steht: 'Corona-Warn hat dein Protokoll mit erfassten zufälligen IDs während der letzten 24 Stunden 0-mal überprüft'. Funktioniert die Risiko-Ermittlung nicht?",
+                        "anchor": "no_log_check",
+                        "active": true,
+                        "textblock": [
+                           "AKTUELL: Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind.", "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen'. Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufallscodes durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
+                        ]
+                    },
+                    {
                         "title": "Wann wurden diese FAQ zuletzt aktualisiert?",
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 31.07.2020"
+                            "Stand: 3.8.2020"
                         ]
                     }
                 ]
