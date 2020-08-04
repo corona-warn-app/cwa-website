@@ -40,9 +40,9 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
   return `
 
   <div class="blog-entry">
-    <div class="title-2">
+    <h2 class="headline">
       ${blog.title}
-    </div>
+    </h2>
     <div class="sub-title"><span class="text">${getAuthors(blog.author)} on ${formatDate(blog.date, lang)}</span></div>
     ${content}
     ${button}

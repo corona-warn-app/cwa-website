@@ -1,11 +1,18 @@
 <section class="section-news">
     <div class="container">
-        <div class="text-center container-inner container-inner_sm contents-normal">
+        {{#if lang_de}}
+        {{> button-back-component button=page-contents.de.backToBlogButton}}
+        {{else}}
+        {{> button-back-component button=page-contents.en.backToBlogButton}}
+        {{/if}}
+
+        <div class="text-center container-inner container-inner_sm
+            contents-normal">
             {{#unless lang_de}}
-            {{> headline-component page-contents.headline }}
+            {{> headline-component page-contents.en.headline }}
             {{/unless}}
             {{#if lang_de}}
-            {{> headline-component page-contents.headline_de }}
+            {{> headline-component page-contents.de.headline }}
             {{/if}}
         </div>
         <div class="card-list">

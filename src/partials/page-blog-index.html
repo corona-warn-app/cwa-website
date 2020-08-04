@@ -1,0 +1,40 @@
+{{#if page-contents}}
+<section class="section-news">
+  <div class="container">
+    <div class="container-inner contents-normal">
+      {{#if lang_de}}
+      <h1 class="headline headline-heavy">
+        {{page-contents.de.headline.title}}
+      </h1>
+      <p>{{page-contents.de.headline.text}}</p>
+      {{else}}
+      <h1 class="headline headline-heavy">
+        {{page-contents.en.headline.title}}
+      </h1>
+      <p>{{page-contents.en.headline.text}}</p>
+      {{/if}}
+
+      <div class="blog-list">
+        {{#if lang_de}}
+        {{{blogentries 'de'}}}
+        {{else}}
+        {{{blogentries 'en'}}}
+        {{/if}}
+      </div>
+
+      <div class="text-right">
+        {{#unless lang_de}}
+        {{> button-link-component
+        button=page-contents.en.archiveButton
+        direction="right" }}
+        {{/unless}}
+        {{#if lang_de}}
+        {{> button-link-component
+        button=page-contents.de.archiveButton
+        direction="right" }}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/if}}
