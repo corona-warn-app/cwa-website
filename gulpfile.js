@@ -15,7 +15,7 @@ const sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
-const processBlogFiles = require('./src/helpers/blog-processor');
+const { processBlogFiles } = require('./src/services/blog-processor');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -57,8 +57,7 @@ function copy() {
 // Prepapre blog .md files to be used as HTML
 
 function buildBlogFiles(done) {
-  processBlogFiles('en');
-  // processBlogFiles('de');
+  processBlogFiles();
   done();
 }
 

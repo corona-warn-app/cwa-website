@@ -1,12 +1,15 @@
 ---
-title: Welcome to the corona-warn-app blog!
-seoMetaDescription: This is our first blog entry and it introduces our new blog section.
+lang_en: true
+page-title: Willkommen zum CWA Warn App Blog – News
+page-description: Stay up-to-date with blog posts on open-source project Corona-Warn-App. The Corona-Warn-App is an app that helps trace infection chains of COVID-19 in Germany.
+page-name: willkommen-zum-cwa-blog
+page-name_de: welcome-to-the-cwa-blog
 author:
   - Markus Edenhauser
 layout: blog
 ---
 
-The new blog section of our website will help you stay on top of the latest cwa news and updates.
+Der überarbeitete Blog hilft dir stehts am laufenden zu bleiben.
 <!-- Excerpt -->
 
 
