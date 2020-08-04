@@ -11,16 +11,17 @@ const webpackStream = require('webpack-stream');
 const webpack2 = require('webpack');
 const named = require('vinyl-named');
 const autoprefixer = require('autoprefixer');
-var sitemap = require('gulp-sitemap');
+const sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
 const webp = require('gulp-webp');
-var jsonTransform = require('gulp-json-transform');
+const jsonTransform = require('gulp-json-transform');
+const processBlogFiles = require('./src/helpers/blog-processor');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
 // Check for --develop or --dev flag
-var PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
+const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
 
 // Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
@@ -34,7 +35,7 @@ function loadConfig() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-    gulp.series(clean, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap)
+  gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap)
 );
 
 // Build the site, run the server, and watch for file changes
@@ -43,7 +44,7 @@ gulp.task('default', gulp.series('build', server, watch));
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
-   rimraf(PATHS.dist, done);
+  rimraf(PATHS.dist, done);
 }
 
 // Copy files out of the assets folder
@@ -51,6 +52,14 @@ function clean(done) {
 function copy() {
   gulp.src(PATHS.rootAssets).pipe(gulp.dest(PATHS.dist));
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+
+// Prepapre blog .md files to be used as HTML
+
+function buildBlogFiles(done) {
+  processBlogFiles('en');
+  // processBlogFiles('de');
+  done();
 }
 
 // Copy page templates into finished HTML files
@@ -161,12 +170,12 @@ function images_webp() {
 function copyFAQs() {
   return gulp
     .src(["src/data/faq.json", "src/data/faq_de.json"])
-    .pipe(jsonTransform(function(data, file) {
+    .pipe(jsonTransform(function (data, file) {
       let faq = {}
       data['section-main'].sections.forEach((section) => {
         section.accordion.forEach((faqEntry) => {
-            let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-            faq[faqEntry.anchor] = searchEntry.toLowerCase();
+          let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+          faq[faqEntry.anchor] = searchEntry.toLowerCase();
         })
       });
       return faq;
@@ -179,10 +188,10 @@ function server(done) {
   browser.init(
     {
       server: {
-          baseDir: PATHS.dist,
-          serveStaticOptions: {
-              extensions: ['html']
-          }
+        baseDir: PATHS.dist,
+        serveStaticOptions: {
+          extensions: ['html']
+        }
       },
       port: PORT
     },
@@ -199,6 +208,9 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
+  gulp
+    .watch('blog/**/*')
+    .on('all', gulp.series(buildBlogFiles, pages));
   gulp
     .watch('src/pages/**/*.html')
     .on('all', gulp.series(pages, browser.reload));
@@ -226,7 +238,7 @@ function build_sitemap() {
     .src([PATHS.dist + "/**/*.html", "!" + PATHS.dist + '/error.html'])
     .pipe(sitemap({
       siteUrl: "https://coronawarn.app",
-      priority: function(siteUrl, loc, entry) {
+      priority: function (siteUrl, loc, entry) {
         // Reduce priority by 0.2 per level
         return 1.0 - (entry.file.split('/').length - 1) * 0.2
       }
