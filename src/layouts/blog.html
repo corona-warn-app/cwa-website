@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
-  <body class="{{#unless @root.page-name}}{{#ifpage
+  <body class="blog-detail {{#unless @root.page-name}}{{#ifpage
     'index'}}page-home{{/ifpage}}{{/unless}}{{#if
     @root.page-name}}page-{{@root.page-name}}{{/if}}">
     {{!-- Pages you create in the src/pages/ folder are inserted here when the
@@ -25,8 +25,34 @@
 
     {{> header}}
 
-    <div class="main-content">
-      {{> body}}
+    <section>
+      <div class="container">
+        <div class="container-inner contents-normal">
+          {{#if lang_de}}
+          {{> button-back-component
+          button=blog.de.backToIndexButton}}
+          {{else}}
+          {{> button-back-component
+          button=blog.en.backToIndexButton}}
+          {{/if}}
+
+          {{#if lang_de}}
+          <h1 class="headline headline-heavy">
+            {{page-contents.de.headline.title}}
+          </h1>
+          <p>{{page-contents.de.headline.text}}</p>
+          {{else}}
+          <h1 class="headline headline-heavy">
+            {{page-contents.en.headline.title}}
+          </h1>
+          <p>{{page-contents.en.headline.text}}</p>
+          {{/if}}
+
+          <div class="blog-markdown-container">
+            {{> body}}
+          </div>
+        </div>
+      </div>
     </div>
     {{#unless lang_de}}
     {{> footer language=global.lang.en}}
