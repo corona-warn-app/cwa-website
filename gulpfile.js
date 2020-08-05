@@ -143,7 +143,7 @@ function javascript() {
       $.if(
         PRODUCTION,
         $.uglify().on('error', e => {
-          console.log(e);
+          console.error('Uglify error', e);
         })
       )
     )

@@ -2,6 +2,7 @@ const { readdirSync, readFileSync, writeFileSync } = require('fs');
 const path = require('path');
 const frontmatter = require('frontmatter');
 const marked = require('marked');
+const moment = require('moment');
 
 const languages = ['de', 'en'];
 const rootFolder = __dirname + '/../../';
@@ -14,9 +15,9 @@ const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[
  * @returns string 1. Aug, 2020 or 01.08.2020
  */
 const formatDate = (date, lang) => {
-  const d = new Date(Date.parse(date));
-  const options = { year: 'numeric', month: 'short', day: 'numeric' };
-  return d.toLocaleDateString(data[lang].dateLocale, options);
+  const mom = moment(date);
+  mom.locale(lang);
+  return mom.format('LL');
 }
 
 const hasValidDate = (dateStr) => {
@@ -59,6 +60,15 @@ const replaceImagePaths = (content) => {
   return content.replace(new RegExp(/..\/img/, 'g'), '../../assets/img/blog');
 }
 
+const validatePageName = (fileName, ...names) => {
+  for (let i = 0; i < names.length; i++) {
+    const isValid = new RegExp('^[a-z-_0-9]+$', 'g').test(names[i]);
+    if (!isValid) {
+      throw new Error(`Error processing ${fileName}: Invalid page-name (${names[i]}). It can only contain lowercase a-z 0-9 - or _ as valid characters.`);
+    }
+  }
+}
+
 const getBlogEntries = (lang) => {
   return readdirSync(blogMdPath())
     .filter(fileName => hasValidDate(fileName))
@@ -68,6 +78,10 @@ const getBlogEntries = (lang) => {
       const fileContent = readFileSync(path.join(blogMdPath(), fileName)).toString();
       const mdData = frontmatter(replaceImagePaths(fileContent.split('<!-- Excerpt -->')[0]));
       const date = fileName.substr(0, 10); // 10 is length of the date
+      const pageName = mdData.data['page-name'];
+      const pageNameDe = mdData.data['page-name_de'];
+
+      validatePageName(fileName, pageName, pageNameDe);
 
       const entry = {
         date,
@@ -75,8 +89,8 @@ const getBlogEntries = (lang) => {
         fileName,
         pageDescription: mdData.data['page-description'],
         slug: {
-          en: mdData.data['page-name'],
-          de: mdData.data['page-name_de'],
+          en: `${date}-${pageName}`,
+          de: `${date}-${pageNameDe}`
         },
         author: mdData.data.author,
         htmlExcerpt: marked(mdData.content),
@@ -91,11 +105,13 @@ const getBlogEntries = (lang) => {
 const writeBlogFiles = (blogEntries, lang) => {
   blogEntries.forEach(entry => {
     const blogHtml = `---
+lang_de: ${lang === 'de'}
 page-title: ${entry.title}
 page-description: ${entry.pageDescription}
 page-name: ${entry.slug.en}
 page-name_de: ${entry.slug.de}
 layout: blog
+is_blog_detail: true
 ---
 ${entry.blogContent}`;
     writeFileSync(blogHtmlPath(lang) + `/${entry.slug[lang]}.html`, blogHtml);

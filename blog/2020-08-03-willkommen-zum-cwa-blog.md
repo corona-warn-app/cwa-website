@@ -1,9 +1,8 @@
 ---
-lang_en: true
 page-title: Willkommen zum CWA Warn App Blog – News
 page-description: Stay up-to-date with blog posts on open-source project Corona-Warn-App. The Corona-Warn-App is an app that helps trace infection chains of COVID-19 in Germany.
-page-name: willkommen-zum-cwa-blog
-page-name_de: welcome-to-the-cwa-blog
+page-name: welcome-to-the-cwa-blog
+page-name_de: willkommen-zum-cwa-blog
 author:
   - Markus Edenhauser
 layout: blog

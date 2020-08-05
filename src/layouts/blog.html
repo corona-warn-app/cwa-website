@@ -35,9 +35,8 @@
           {{> button-back-component
           button=blog.en.backToIndexButton}}
           {{/if}}
-
           <div class="blog-markdown-container">
-            {{> body}}
+            {{> body}} <!-- this line should be on the very left -->
           </div>
           <div class="bottom-back-to-blog text-right">
             {{#if lang_de}}
