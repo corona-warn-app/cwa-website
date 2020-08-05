@@ -53,10 +53,13 @@ function copy() {
   gulp.src(PATHS.rootAssets).pipe(gulp.dest(PATHS.dist));
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'));
 }
-
+function copyBlogImgs() {
+  return gulp.src(PATHS.blogImages).pipe(gulp.dest(PATHS.dist + '/assets/img/blog'));
+}
 // Prepapre blog .md files to be used as HTML
 
 function buildBlogFiles(done) {
+  copyBlogImgs();
   processBlogFiles();
   done();
 }
@@ -212,23 +215,23 @@ function watch() {
     .on('all', gulp.series(buildBlogFiles, pages));
   gulp
     .watch('src/pages/**/*.html')
-    .on('all', gulp.series(pages, browser.reload));
+    .on('all', gulp.series(pages, reload));
   gulp
     .watch('src/{layouts,partials}/**/*.html')
-    .on('all', gulp.series(resetPages, pages, browser.reload));
+    .on('all', gulp.series(resetPages, pages, reload));
   gulp
     .watch('src/data/**/*.{js,json,yml}')
-    .on('all', gulp.series(resetPages, pages, browser.reload));
+    .on('all', gulp.series(resetPages, pages, reload));
   gulp
     .watch('src/helpers/**/*.js')
-    .on('all', gulp.series(resetPages, pages, browser.reload));
+    .on('all', gulp.series(resetPages, pages, reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp
     .watch('src/assets/js/**/*.js')
-    .on('all', gulp.series(javascript, browser.reload));
+    .on('all', gulp.series(javascript, reload));
   gulp
     .watch('src/assets/img/**/*')
-    .on('all', gulp.series(images_minify, images_webp, browser.reload));
+    .on('all', gulp.series(images_minify, images_webp, reload));
 }
 
 // generate an up-to-date sitemap

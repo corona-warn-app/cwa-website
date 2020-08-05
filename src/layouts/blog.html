@@ -36,20 +36,17 @@
           button=blog.en.backToIndexButton}}
           {{/if}}
 
-          {{#if lang_de}}
-          <h1 class="headline headline-heavy">
-            {{page-contents.de.headline.title}}
-          </h1>
-          <p>{{page-contents.de.headline.text}}</p>
-          {{else}}
-          <h1 class="headline headline-heavy">
-            {{page-contents.en.headline.title}}
-          </h1>
-          <p>{{page-contents.en.headline.text}}</p>
-          {{/if}}
-
           <div class="blog-markdown-container">
             {{> body}}
+          </div>
+          <div class="bottom-back-to-blog text-right">
+            {{#if lang_de}}
+            {{> button-back-component
+            button=blog.de.backToIndexButton}}
+            {{else}}
+            {{> button-back-component
+            button=blog.en.backToIndexButton}}
+            {{/if}}
           </div>
         </div>
       </div>

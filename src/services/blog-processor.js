@@ -36,18 +36,27 @@ const getAuthors = (authors) => {
 }
 
 const generateBlogEntry = (blog, content, lang, showButton = false) => {
-  const button = showButton ? `<p><a href="${blog.slug[lang]}" class="btn btn-lg btn-secondary">${data[lang].readMore}</a></p>` : '';
+  let button = '', headline = '';
+  if (showButton) {
+    button = `<p><a href="${blog.slug[lang]}" class="btn btn-lg btn-secondary">${data[lang].readMore}</a></p>`;
+    headline = `<h2 class="headline">${blog.title}</h2>`;
+  } else {
+    headline = `<h1 class="headline headline-heavy">${blog.title}</h1>`;
+  }
+
   return `
 
   <div class="blog-entry">
-    <h2 class="headline">
-      ${blog.title}
-    </h2>
+    ${headline}
     <div class="sub-title"><span class="text">${getAuthors(blog.author)} on ${formatDate(blog.date, lang)}</span></div>
     ${content}
     ${button}
   </div>
   `
+}
+
+const replaceImagePaths = (content) => {
+  return content.replace(new RegExp(/..\/img/, 'g'), '../../assets/img/blog');
 }
 
 const getBlogEntries = (lang) => {
@@ -57,7 +66,7 @@ const getBlogEntries = (lang) => {
     .reverse()
     .map(fileName => {
       const fileContent = readFileSync(path.join(blogMdPath(), fileName)).toString();
-      const mdData = frontmatter(fileContent.split('<!-- Excerpt -->')[0]);
+      const mdData = frontmatter(replaceImagePaths(fileContent.split('<!-- Excerpt -->')[0]));
       const date = fileName.substr(0, 10); // 10 is length of the date
 
       const entry = {
@@ -71,7 +80,7 @@ const getBlogEntries = (lang) => {
         },
         author: mdData.data.author,
         htmlExcerpt: marked(mdData.content),
-        htmlContent: marked(frontmatter(fileContent).content)
+        htmlContent: marked(replaceImagePaths(frontmatter(fileContent).content))
       };
       entry.blogExcerpt = generateBlogEntry(entry, entry.htmlExcerpt, lang, true);
       entry.blogContent = generateBlogEntry(entry, entry.htmlContent, lang);
