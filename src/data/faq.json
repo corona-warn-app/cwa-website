@@ -20,7 +20,8 @@
                         "anchor": "no_risk_update_ios",
                         "active": true,
                         "textblock": [
-                            "First, please ensure that you are running the current version of the app. You should have version 1.1.2 or higher. If you are running a lower version, open the App Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem. Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "First, please ensure that you are running the current version of iOS and the app. You should have app version 1.1.2 or higher. If you are running a lower version, open the App Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem. Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
                             "In addition, please check the following device settings on your phone:",
                             "<b>Background App Refresh (in General)</b>",
@@ -37,11 +38,13 @@
                         "active": true,
                         "textblock": [
                             "First, please ensure that you are running the current version of the app. You should have version 1.1.1 or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
                             "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>", 
-                            "In the power-saving settings of your phone, you can check that there's an exception set for the Corona-Warn-App.",
+                            "In the power-saving settings of your phone, you can make sure that there's an exception set for the Corona-Warn-App:",
                             "Unfortunately, in some phones, you might not be able to activate the prioritized background activity in the app settings. You can still activate the prioritized background activity: You do so directly in the energy saving settings. of your phone. Set an exception for the Corona-Warn-App. If this still doesn't update the risk status automatically in the background, please create a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub issue 933</a>, giving your phone type and the installed versions of the app and of the COVID-19 exposure notifications.",
-                            "If this setting did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced the similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>."
+                            "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
+                            "If all these recommendations did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced the similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>."
                         ]
                     }
                 ]
@@ -63,7 +66,10 @@
                        "anchor": "iOS_136",
                        "active": true,
                        "textblock": [
-                            "After updating to the current iOS version 13.6., several users report that the exposure logging cannot be activated because the exposure logging would not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.","We've reported the problem to Apple immediately. Apple has assured us that they are working at full speed to fix this error.","We'll keep you updated about how the troubleshooting progresses."
+                            "After updating to the current iOS version 13.6., exposure logging cannot be activated on some iPhones because exposure logging would not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
+                           "Apple quickly resolved the issue with a server patch, but some iPhones apparently still show the error. Occasionally, it can still happen that the exposure logging cannot be activated after updating from iOS 13.5.1 to 13.6. According to Apple, a few hundred iPhones are affected that were updated to iOS 13.6 shortly after the update was released. iPhones that were updated some days later are virtually not affected. Apple has assured us that they are working at full speed to provide a complete solution.",
+                           "If your iPhone currently shows the issue, Apple provided a way to fix it: Download a configuration profile and install it on your iPhone. Here are the step-by-step instructions:",
+                           "<ol><li>Download this configuration profile: <a href='http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig' target='_blank' rel='noopener noreferrer'>http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig</a></li><li>Open the Settings and choose 'Profile Downloaded'.</li><li>Choose 'Install', and follow the onscreen instructions.</li><li>Reboot your iPhone to complete the installation.</li><li>Activate exposure logging in the Settings under 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'.</li><li>Start the Corona-Warn-App and check whether exposure logging was activated.</li></ol>"
                         ]
                     },
                     {
@@ -121,11 +127,11 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: I'm testing the beta version of iOS 14. Why is Corona-Warn-App not working?",
+                        "title": "[Apple/iOS]: I'm testing the beta version of iOS 14. Why is Corona-Warn-App not yet supported?",
                         "anchor": "ios_14_beta",
                         "active": true,
                         "textblock": [
-                            "On devices with iOS 14 beta (available since June 22, 2020) Corona-Warn-App currently doesn't start or only displays an error message. The reason is that the Exposure Notification API is not yet available on devices with iOS 14. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
+                            "With iOS 14 Beta 4, the Exposure Notification framework is available. But this version is <a href='https://developer.apple.com/support/beta-software/' target='_blank' rel='noopener noreferrer'>still under development</a> and is not public. The Corona-Warn-App is not yet supported with iOS 14 Beta 4. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
                         ]
                     },
                     {
@@ -213,6 +219,15 @@
                 "title": "Use",
                 "id": "application",
                 "accordion": [
+                    {
+                        "title": "What to do with several QR codes?",
+                        "anchor": "QRcodes",
+                        "active": true,
+                        "textblock": [
+                            "At the moment, many families are tested at the airport after returning from their holidays. For each family member that is being tested, they get a leaflet that displays a QR-Code.",
+                            "<ol><li>Read through the leaflet carefully, to make sure if the QR code really is to be scanned with the Corona-Warn-App, or if it is meant for another test infrastructure.</li><li>Only if you made sure that the QR code is to be scanned with the Corona-Warn-App and not for another system, proceed in the Corona-Warn-App.</li><li>You can scan each QR code only once with the Corona-Warn-App. After scanning, the QR code expires. This prevents misusing the QR code.</li><li>If you received a QR code for your own test, scan it with the Corona-Warn-App and wait until the result result is retrieved. This can take from a couple of hours up to a few days. Open the Corona-Warn-App regularly to check if the test result is already available.</li><li>If you received additional QR codes for tests of your family members, for example, your kids who do not have their own phones, DO NOT scan their QR codes with your phone. Only use your QR code with your personal test and your personal smartphone. In any case, your family will be notified about their test results independently, usually by calling them.</li><li>If your QR code doesn't work and you received a positive test result: Call the verification hotline (+49 800 7540002) to receive a TeleTAN. You can then enter the TeleTAN in your Corona-Warn-App so that the persons you encountered in the past days can be informed over the Corona-Warn-App. Please pay attention to the recommendations the Corona-Warn-App displays.</li></ol>"
+                        ]
+                    },
                     {
                         "title": "What do the exposure check logs show?",
                         "anchor": "keys_matches",
@@ -351,6 +366,15 @@
                         "active": true,
                         "textblock": [
                             "Your phone settings display the exposure checks for the last 14 days: Apple: 'COVID-19 Exposure Logging', Android: 'Exposure checks'. When the app was running constantly during the last two weeks, you should see 14 checks within the last 24 hours.", "Please note: The log is just the history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:", "<ol><li>The log has a fixed limit of 100 entries. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed.</li><li>Sometimes, only 13 logs display for a day. The 14th entry was deleted only after risk calculation. This can happen when the time of downloading the keys from the server intersects with the time of deleting the keys that are older than 14 days from your phone. The same applies here: the exposure was checked properly. You'll find a detailed explanation and an example at <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639 ' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>If you use the app only recently (let's say for 5 days), less checks for the last 24 hours are displayed (here: 5 checks), one for every day that the Corona-Warn-App was running constantly.</li></ol>"
+                        ]
+                    },
+                    {
+                        "title": "Exposures are displayed for more than 14 days",
+                        "anchor": "status_14",
+                        "active": true,
+                        "textblock": [
+                            "Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
+                            "For some phones running Android, the exposures currently are displayed for more than 14 days. We're working on fixing this display error. You'll find up-to-date information in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub issue 911</a>."
                         ]
                     },
                     {
@@ -763,7 +787,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated August 3, 2020"
+                            "Updated August 5, 2020"
                         ]
                     }
                 ]
