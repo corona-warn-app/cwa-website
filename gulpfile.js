@@ -1,5 +1,4 @@
 'use strict';
-
 const plugins = require('gulp-load-plugins');
 const yargs = require('yargs');
 const browser = require('browser-sync');
@@ -55,11 +54,15 @@ function copy() {
   gulp.src(PATHS.rootAssets).pipe(gulp.dest(PATHS.dist));
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'));
 }
-function copyBlogImgs() {
-  return gulp.src(PATHS.blogImages).pipe(gulp.dest(PATHS.dist + '/assets/img/blog'));
-}
-// Prepapre blog .md files to be used as HTML
 
+function copyBlogImgs() {
+  return gulp.src([
+    'blog/**/*',
+    '!blog/**/*.md'
+  ])
+  .pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
+}
+// Prepare blog .md files to be used as HTML
 function buildBlogFiles(done) {
   copyBlogImgs();
   processBlogFiles();

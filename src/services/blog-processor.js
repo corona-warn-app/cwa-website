@@ -40,7 +40,7 @@ const getAuthors = (authors) => {
 const generateBlogEntry = (blog, content, lang, showButton = false) => {
   let button = '', headline = '';
   if (showButton) {
-    button = `<p><a href="${blog.slug[lang]}" class="btn btn-lg btn-secondary">${data[lang].readMore}</a></p>`;
+    button = `<p><a href="${blog.slug[lang]}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].readMore}</a></p>`;
     headline = `<h2 class="headline">${blog.title}</h2>`;
   } else {
     headline = `<h1 class="headline headline-heavy">${blog.title}</h1>`;
@@ -57,48 +57,49 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
   `
 }
 
-const replaceImagePaths = (content) => {
-  return content.replace(new RegExp(/..\/img/, 'g'), '../../assets/img/blog');
+const replaceImagePaths = (content, folderName) => {
+  return content.replace(new RegExp(/src=".\//, 'g'), `src="../../assets/img/blog/${folderName}/`);
 }
 
-const validatePageName = (fileName, ...names) => {
+const validatePageName = (folderName, ...names) => {
   for (let i = 0; i < names.length; i++) {
     const isValid = new RegExp('^[a-z-_0-9]+$', 'g').test(names[i]);
     if (!isValid) {
-      throw new Error(`Error processing ${fileName}: Invalid page-name (${names[i]}). It can only contain lowercase a-z 0-9 - or _ as valid characters.`);
+      throw new Error(`Error processing ${folderName}: Invalid page-name (${names[i]}). It can only contain lowercase a-z 0-9 - or _ as valid characters.`);
     }
   }
 }
 
 const getBlogEntries = (lang) => {
   return readdirSync(blogMdPath())
-    .filter(fileName => hasValidDate(fileName))
+    .filter(folderName => hasValidDate(folderName))
     .sort()
     .reverse()
-    .map(fileName => {
-      const fileContent = readFileSync(path.join(blogMdPath(), fileName)).toString();
-      const mdData = frontmatter(replaceImagePaths(fileContent.split('<!-- Excerpt -->')[0]));
-      const date = fileName.substr(0, 10); // 10 is length of the date
+    .map(folderName => {
+      const fileContent = readFileSync(path.join(blogMdPath(), folderName, 'index.md')).toString();
+      const mdData = frontmatter(fileContent);
+      const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
       const pageName = mdData.data['page-name'];
       const pageNameDe = mdData.data['page-name_de'];
 
-      validatePageName(fileName, pageName, pageNameDe);
+      validatePageName(folderName, pageName, pageNameDe);
 
       const entry = {
         date,
         dateFormatted: formatDate(date, lang),
         title: mdData.data['page-title'],
-        fileName,
+        folderName,
         pageDescription: mdData.data['page-description'],
         slug: {
           en: `${date}-${pageName}`,
           de: `${date}-${pageNameDe}`
         },
         author: mdData.data.author,
-        htmlExcerpt: marked(mdData.content),
-        htmlContent: marked(replaceImagePaths(frontmatter(fileContent).content))
+        htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
+        htmlContent: replaceImagePaths(marked(mdData.content), folderName)
       };
-      entry.blogExcerpt = generateBlogEntry(entry, entry.htmlExcerpt, lang, true);
+
+      entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);
       entry.blogContent = generateBlogEntry(entry, entry.htmlContent, lang);
       return entry;
     });
