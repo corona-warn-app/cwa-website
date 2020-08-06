@@ -1,9 +1,9 @@
 ---
-page-title: Corona 1.36
-page-description: SEO
-page-name: corona-1-36
-page-name_de: corona-1-36
-author: Jemand anders, Technical Writer @SAP
+page-title: Visual Test
+page-description: Seo Description
+page-name: visual-test-page
+page-name_de: visual-test-seite
+author: Markus Edenhauser
 layout: blog
 ---
 

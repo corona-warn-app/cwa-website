@@ -6,10 +6,12 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run:chrome": "./node_modules/.bin/cypress run --browser chrome",
     "cypress:run:firefox": "./node_modules/.bin/cypress run --browser firefox",
-    "test": "start-server-and-test start http://localhost:8000 cypress:run",
+    "test:prepare": "./cypress/prepare.sh",
+    "test:open": "start-server-and-test start http://localhost:8000 cypress:open",
+    "test": "npm run test:chrome",
     "test:chrome": "start-server-and-test start http://localhost:8000 cypress:run:chrome",
     "test:firefox": "start-server-and-test start http://localhost:8000 cypress:run:firefox"
   },
@@ -48,7 +50,7 @@
   "private": true,
   "devDependencies": {
     "cypress": "^4.11.0",
-    "cypress-visual-regression": "^1.4.0",
+    "cypress-plugin-snapshots": "^1.4.3",
     "frontmatter": "0.0.3",
     "marked": "^1.1.1",
     "moment": "^2.27.0",

@@ -9,7 +9,7 @@
       <div class="col-16 col-sm-7 col-md-8">
         <div class="row">
           {{#each language.footer-nav}}
-          <div class="link-item col-6 col-md-4">
+          <div class="link-item col-6 col-md-4"{{#if testid}} data-e2e="{{testid}}"{{/if}}>
             <strong>{{title}}</strong>
             {{#if button}}
             <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>

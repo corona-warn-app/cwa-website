@@ -116,7 +116,7 @@ const writeBlogJson = (blogEntries, lang) => {
       "source": {
         "title": "Blog",
         "external": false,
-        "url": `${lang}/blog/${entry.slug[lang]}`
+        "url": `blog/${entry.slug[lang]}`
       }
     }
   });
