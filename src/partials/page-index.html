@@ -104,10 +104,18 @@ section-cancelable=true}}
             {{/if}}
             {{/unless}}
             {{#if page-contents.section-boxes.slider}}
-            {{#ifequal page-contents.section-boxes.slider.target 'news'}}
-            {{> slider-component slides=news_archive_combined.entries
+            {{#ifequal page-contents.section-boxes.slider.target 'blog'}}
+            
+            {{#if lang_de}}
+            {{> slider-component slides=blogentries.de
             amount=page-contents.section-boxes.slider.amount
             type=page-contents.section-boxes.slider.target }}
+            {{else}}
+            {{> slider-component slides=blogentries.en
+            amount=page-contents.section-boxes.slider.amount
+            type=page-contents.section-boxes.slider.target }}
+            {{/if}}
+
             {{#if page-contents.section-boxes.slider.button}}
             <div class="box_slider-caption">
                 {{> button-link-component

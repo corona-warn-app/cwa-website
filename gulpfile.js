@@ -38,6 +38,8 @@ gulp.task(
   gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap)
 );
 
+gulp.task('blog', buildBlogFiles);
+
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
 

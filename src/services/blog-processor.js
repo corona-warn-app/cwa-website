@@ -1,4 +1,4 @@
-const { readdirSync, readFileSync, writeFileSync } = require('fs');
+const { existsSync, readdirSync, readFileSync, writeFileSync, exists } = require('fs');
 const path = require('path');
 const frontmatter = require('frontmatter');
 const marked = require('marked');
@@ -6,7 +6,8 @@ const moment = require('moment');
 
 const languages = ['de', 'en'];
 const rootFolder = __dirname + '/../../';
-const data = require(path.resolve(rootFolder, 'src', 'data', 'blog.json'));
+const dataFolder = path.resolve(rootFolder, 'src', 'data');
+const data = require(path.resolve(dataFolder, 'blog.json'));
 const blogMdPath = () => path.join(rootFolder, 'blog');
 const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[lang].baseSlug);
 
@@ -49,7 +50,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 
   <div class="blog-entry">
     ${headline}
-    <div class="sub-title"><span class="text">${getAuthors(blog.author)} on ${formatDate(blog.date, lang)}</span></div>
+    <div class="sub-title"><span class="text">${getAuthors(blog.author)} on ${blog.dateFormatted}</span></div>
     ${content}
     ${button}
   </div>
@@ -85,6 +86,7 @@ const getBlogEntries = (lang) => {
 
       const entry = {
         date,
+        dateFormatted: formatDate(date, lang),
         title: mdData.data['page-title'],
         fileName,
         pageDescription: mdData.data['page-description'],
@@ -101,6 +103,25 @@ const getBlogEntries = (lang) => {
       return entry;
     });
 }
+
+const writeBlogJson = (blogEntries, lang) => {
+  const entriesFile = path.join(dataFolder, 'blogentries.json');
+  const entries = existsSync(entriesFile) ? require(entriesFile) : {};
+  entries[lang] = blogEntries.map(entry => {
+    return {
+      "title": entry.title,
+      "author": getAuthors(entry.author),
+      "date": `on ${moment(entry.date).locale('en').format('MMM D')}`,
+      "date_de": moment(entry.date).locale('de').format('DD.MM.YYYY'),
+      "source": {
+        "title": "Blog",
+        "external": false,
+        "url": `${lang}/blog/${entry.slug[lang]}`
+      }
+    }
+  });
+  writeFileSync(entriesFile, JSON.stringify(entries, null, 2));
+};
 
 const writeBlogFiles = (blogEntries, lang) => {
   blogEntries.forEach(entry => {
@@ -122,6 +143,7 @@ const processBlogFiles = () => {
   languages.forEach(lang => {
     const blogEntries = getBlogEntries(lang);
     writeBlogFiles(blogEntries, lang);
+    writeBlogJson(blogEntries, lang);
   });
 };
 
