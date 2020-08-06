@@ -15,9 +15,12 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Cypress Docker image with Chrome v80
+    # and Firefox v73 pre-installed
+    container: cypress/browsers:node10.16.3-chrome80-ff73
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
     - name: Install requirements
       run: |
         sudo apt install -y automake npm nodejs libpng-dev libjpeg-dev
@@ -25,11 +28,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: npm install
-      run: npm install
+    - name: prepare e2e tests
+      run: npm run test:prepare
 
-    - name: gulp build
-      run: npm run build
-
-    #- name: Deploy
-    #  run: rsync -av --delete public/ /var/www/html/${GITHUB_REF##*/}
+    # Cypress gh action includes npm install, caching, etc
+    - name: run e2e tests
+      uses: cypress-io/github-action@v2
+      with:
+        browser: chrome
+      run: npm run test:chrome
