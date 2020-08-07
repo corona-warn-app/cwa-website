@@ -104,6 +104,73 @@
                     }
                 ]
             },
+                        {
+                "title": "Meldungen",
+                "id": "notification",
+                "accordion": [
+                    {
+                        "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
+                        "anchor": "multiple_exposure_checks",
+                        "active": true,
+                        "textblock": [
+                            "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung der Begegnungsaufzeichnungen durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung der Begegnungsaufzeichnungen durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Überprüfungs-Historie vorhanden sind. Sie können zudem auf die Überprüfungseinträge klicken und sehen, dass immer unterschiedlich viele Schlüssel geprüft werden."
+                        ]
+                    },
+                    {
+                        "title": "In den Begegnungsüberprüfungen sind die Aufzeichnungen von weniger als 14 Tagen gespeichert",
+                        "anchor": "exposure_check",
+                        "active": true,
+                        "textblock": [
+                            "Die Einstellungen Ihres Smartphones zeigen die Begegnungsüberprüfungen der letzten 14 Tage an: Apple: 'Begegnungsüberprüfungen', Android: 'Überprüfung auf mögliche Begegnungen'. Wenn die App in den letzten 2 Wochen dauerhaft aktiv war, sollten Sie 14 Überprüfungen in den letzten 24 Stunden sehen.","Bitte beachten Sie: Diese Übersicht zeigt nur die Historie an. Jeden Tag werden die Begegnungen der letzten 14 Tage geprüft und das Risiko daraus ermittelt. Wichtig ist also, dass die Übersicht Begegnungsüberprüfungen während der letzten 24 Stunden anzeigt.","Es kann vorkommen, dass hier Einträge für weniger als 14 Tage angezeigt werden, obwohl die Risiko-Ermittlung an jedem der letzten 14 Tagen korrekt durchgeführt wurde. Dafür gibt es mehrere Gründe:","<ol><li>Diese Übersicht hat ein festes Limit von 100 Einträgen. Wird dieses Limit überschritten, werden nur die neuesten Einträge behalten. Sie sehen dann typischerweise die Einträge von 7 Tagen. Wir sind mit Apple in Kontakt, damit die Übersicht in Zukunft vollständig angezeigt wird.</li><li>Manchmal werden nur 13 Einträge für einen Kalendertag angezeigt. Der 14. Eintrag wurde nach der Überprüfung gelöscht. Das kann passieren, wenn sich der Zeitpunkt des Herunterladens der Schlüssel vom Server und der Zeitpunkt des Löschen von Schlüsseln auf Ihrem Smartphone, die älter als 14 Tage sind, überschneiden. Auch hier gilt, die Risiko-Ermittlung hat funktioniert. Eine ausführliche Erklärung mit Beispiel finden Sie (auf Englisch) unter <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>Wenn Sie die App erst seit Kurzem nutzen (zum Beispiel seit 5 Tagen), werden entsprechend weniger Überprüfungen in den letzten 24 Stunden (hier 5 Überprüfungen) angezeigt, eine für jeden Tag, an dem die Corona-Warn-App lief.</li></ol>"
+                        ]
+                    },
+                    {
+                        "title": "Risiko-Begegnungen werden länger als 14 Tage angezeigt",
+                        "anchor": "status_14",
+                        "active": true,
+                        "textblock": [
+                            "Risiko-Begegnungen werden Ihnen bis zu 14 Tage nach dem Zeitpunkt der Begegnung mit dem Nutzer, der dann ein positives COVID-19-Testergebnis in der Corona-Warn-App gemeldet hat, angezeigt.",
+                            "Bei einigen Android-Smartphones kommt es aktuell vor, dass die Risiko-Begegnungen länger als 14 Tage angezeigt werden. Wir arbeiten an der Behebung dieses Anzeigefehlers. Aktuelle Informationen finden Sie auf Englisch im <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub-Issue 911</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS]: 'COVID-19-Begegnungsaufzeichnungen' - Wöchentliches Update",
+                        "anchor": "notif_weekly_update",
+                        "active": true,
+                        "textblock": [
+                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert-Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risikoermittlung unzureichend sind. Eine zuverlässige Risikoermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert-Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Ursache: 9002 Etwas ist schief gelaufen (sqlite)",
+                        "anchor": "cause9002",
+                        "active": true,
+                        "textblock": [
+                            "Es kommt auf einzelnen Geräten (z.B. dem Huawei P20 Pro) zu Problemen beim Zugriff auf den verschlüsselten Bereich der App-Datenbank, in der Informationen zum Risiko-Status und der letzten Aktualisierung abgelegt sind. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption). Das kann manchmal dazu führen, dass Sie die App nicht mehr öffnen können.",
+                            "Wir arbeiten daran, die Ursache zu finden und zu beheben. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.",
+                            "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Urache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Issue</a> an."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
+                        "anchor": "keys0",
+                        "active": true,
+                        "textblock": [
+                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
+                        ]
+                    },
+                    {
+                        "title": "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
+                        "anchor": "various_device_problems",
+                        "active": true,
+                        "textblock": [
+                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich an grundlegenden Funktionen des Betriebssystems, auf die wir keinen Einfluss haben. Wenden Sie sich bitte an den Hersteller Ihres Geräts.",
+                            "[Apple/iOS]: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
+                            "[Google/Android]: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
+                        ]
+                    }
+                ]
+            },
             {
                 "title": "Verfügbarkeit",
                 "id": "availability",
@@ -366,73 +433,6 @@
                         "active": true,
                         "textblock": [
                             "Google veröffentlicht die Infrastruktur für die COVID-19-Begegnungsaufzeichnungen, das Exposure Notification Framework (ENF), über Google Play, und damit unabhängig vom Android-Betriebssystem. Die <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENF-Version 1.5</a> brachte einige Verbesserungen und Fehlerkorrekturen.","So sehen Sie, welche Version Ihr Smartphone installiert hat:","<ol><li>Wählen Sie in den Einstellungen 'Google > Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, verwendet das Smartphone noch nicht die Version 1.5.</li><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen (zum Beispiel '15'), YY für die Jahreszahl und WW für die Wochenzahl. Wenn Sie dieses Format sehen, verwendet das Smartphone schon die Version 1.5.</li></ul></li></ol>", "Allgemeines und Release-Informationen zu den COVID-19-Benachrichtigungen finden Sie bei Google:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "Meldungen",
-                "id": "notification",
-                "accordion": [
-                    {
-                        "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
-                        "anchor": "multiple_exposure_checks",
-                        "active": true,
-                        "textblock": [
-                            "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung der Begegnungsaufzeichnungen durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung der Begegnungsaufzeichnungen durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Überprüfungs-Historie vorhanden sind. Sie können zudem auf die Überprüfungseinträge klicken und sehen, dass immer unterschiedlich viele Schlüssel geprüft werden."
-                        ]
-                    },
-                    {
-                        "title": "In den Begegnungsüberprüfungen sind die Aufzeichnungen von weniger als 14 Tagen gespeichert",
-                        "anchor": "exposure_check",
-                        "active": true,
-                        "textblock": [
-                            "Die Einstellungen Ihres Smartphones zeigen die Begegnungsüberprüfungen der letzten 14 Tage an: Apple: 'Begegnungsüberprüfungen', Android: 'Überprüfung auf mögliche Begegnungen'. Wenn die App in den letzten 2 Wochen dauerhaft aktiv war, sollten Sie 14 Überprüfungen in den letzten 24 Stunden sehen.","Bitte beachten Sie: Diese Übersicht zeigt nur die Historie an. Jeden Tag werden die Begegnungen der letzten 14 Tage geprüft und das Risiko daraus ermittelt. Wichtig ist also, dass die Übersicht Begegnungsüberprüfungen während der letzten 24 Stunden anzeigt.","Es kann vorkommen, dass hier Einträge für weniger als 14 Tage angezeigt werden, obwohl die Risiko-Ermittlung an jedem der letzten 14 Tagen korrekt durchgeführt wurde. Dafür gibt es mehrere Gründe:","<ol><li>Diese Übersicht hat ein festes Limit von 100 Einträgen. Wird dieses Limit überschritten, werden nur die neuesten Einträge behalten. Sie sehen dann typischerweise die Einträge von 7 Tagen. Wir sind mit Apple in Kontakt, damit die Übersicht in Zukunft vollständig angezeigt wird.</li><li>Manchmal werden nur 13 Einträge für einen Kalendertag angezeigt. Der 14. Eintrag wurde nach der Überprüfung gelöscht. Das kann passieren, wenn sich der Zeitpunkt des Herunterladens der Schlüssel vom Server und der Zeitpunkt des Löschen von Schlüsseln auf Ihrem Smartphone, die älter als 14 Tage sind, überschneiden. Auch hier gilt, die Risiko-Ermittlung hat funktioniert. Eine ausführliche Erklärung mit Beispiel finden Sie (auf Englisch) unter <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>Wenn Sie die App erst seit Kurzem nutzen (zum Beispiel seit 5 Tagen), werden entsprechend weniger Überprüfungen in den letzten 24 Stunden (hier 5 Überprüfungen) angezeigt, eine für jeden Tag, an dem die Corona-Warn-App lief.</li></ol>"
-                        ]
-                    },
-                    {
-                        "title": "Risiko-Begegnungen werden länger als 14 Tage angezeigt",
-                        "anchor": "status_14",
-                        "active": true,
-                        "textblock": [
-                            "Risiko-Begegnungen werden Ihnen bis zu 14 Tage nach dem Zeitpunkt der Begegnung mit dem Nutzer, der dann ein positives COVID-19-Testergebnis in der Corona-Warn-App gemeldet hat, angezeigt.",
-                            "Bei einigen Android-Smartphones kommt es aktuell vor, dass die Risiko-Begegnungen länger als 14 Tage angezeigt werden. Wir arbeiten an der Behebung dieses Anzeigefehlers. Aktuelle Informationen finden Sie auf Englisch im <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub-Issue 911</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: 'COVID-19-Begegnungsaufzeichnungen' - Wöchentliches Update",
-                        "anchor": "notif_weekly_update",
-                        "active": true,
-                        "textblock": [
-                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert-Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risikoermittlung unzureichend sind. Eine zuverlässige Risikoermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert-Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Ursache: 9002 Etwas ist schief gelaufen (sqlite)",
-                        "anchor": "cause9002",
-                        "active": true,
-                        "textblock": [
-                            "Es kommt auf einzelnen Geräten (z.B. dem Huawei P20 Pro) zu Problemen beim Zugriff auf den verschlüsselten Bereich der App-Datenbank, in der Informationen zum Risiko-Status und der letzten Aktualisierung abgelegt sind. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption). Das kann manchmal dazu führen, dass Sie die App nicht mehr öffnen können.",
-                            "Wir arbeiten daran, die Ursache zu finden und zu beheben. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.",
-                            "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Urache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Issue</a> an."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
-                        "anchor": "keys0",
-                        "active": true,
-                        "textblock": [
-                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
-                        ]
-                    },
-                    {
-                        "title": "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
-                        "anchor": "various_device_problems",
-                        "active": true,
-                        "textblock": [
-                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen derartige Probleme, allerdings liegt es vermutlich an grundlegenden Funktionen des Betriebssystems, auf die wir keinen Einfluss haben. Wenden Sie sich bitte an den Hersteller Ihres Geräts.",
-                            "[Apple/iOS]: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.",
-                            "[Google/Android]: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>."
                         ]
                     }
                 ]
