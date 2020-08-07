@@ -37,7 +37,7 @@ jobs:
     - name: Run e2e tests on Chrome
       uses: cypress-io/github-action@v2
       with:
-        command: npm run test:chrome
+        command: npm run test:chrome:ci
 
     # Store failed test screenshots as artifact
     - uses: actions/upload-artifact@v2

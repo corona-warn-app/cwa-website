@@ -8,11 +8,13 @@
     "build": "gulp build --production",
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run:chrome": "./node_modules/.bin/cypress run --browser chrome",
+    "cypress:run:chrome:ci": "cypress run --browser chrome",
     "cypress:run:firefox": "./node_modules/.bin/cypress run --browser firefox",
     "test:prepare": "./cypress/prepare.sh",
     "test:open": "start-server-and-test start http://localhost:8000 cypress:open",
     "test": "npm run test:chrome",
     "test:chrome": "start-server-and-test start http://localhost:8000 cypress:run:chrome",
+    "test:chrome:ci": "start-server-and-test start http://localhost:8000 cypress:run:chrome:ci",
     "test:firefox": "start-server-and-test start http://localhost:8000 cypress:run:firefox"
   },
   "author": "SAP Corona Warn-App Open Source Team <corona-warn-app.opensource@sap.com>",
