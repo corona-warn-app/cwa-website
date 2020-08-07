@@ -27,8 +27,11 @@ jobs:
     - name: Install root dependencies
       uses: bahmutov/npm-install@v1
 
+    - name: Show installed cypress packages
+      run: ls -lah node_modules/ | grep cypress
+
     - name: Prepare e2e tests
-      run: npm run test:prepare
+      run: npm run test:prepare    
 
     # Cypress gh action includes npm build
     - name: Run e2e tests on Chrome
@@ -43,5 +46,4 @@ jobs:
         name: cypress
         path: |
           cypress/screenshots
-          cypress/videos
         if-no-files-found: ignore
