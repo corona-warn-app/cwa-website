@@ -31,7 +31,7 @@ function loadConfig() {
 }
 
 function isCI() {
-  return !process.env.CI;
+  return !!process.env.CI;
 }
 
 // Build the "dist" folder by running all of the below tasks
