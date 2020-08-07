@@ -105,6 +105,73 @@
                 ]
             },
             {
+                "title": "Notifications",
+                "id": "notification",
+                "accordion": [
+                    {
+                        "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
+                        "anchor": "multiple_exposure_checks",
+                        "active": true,
+                        "textblock": [
+                            "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
+                        ]
+                    },
+                    {
+                        "title": "My exposure log shows checks for less than 14 days",
+                        "anchor": "exposure_check",
+                        "active": true,
+                        "textblock": [
+                            "Your phone settings display the exposure checks for the last 14 days: Apple: 'COVID-19 Exposure Logging', Android: 'Exposure checks'. When the app was running constantly during the last two weeks, you should see 14 checks within the last 24 hours.", "Please note: The log is just the history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:", "<ol><li>The log has a fixed limit of 100 entries. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed.</li><li>Sometimes, only 13 logs display for a day. The 14th entry was deleted only after risk calculation. This can happen when the time of downloading the keys from the server intersects with the time of deleting the keys that are older than 14 days from your phone. The same applies here: the exposure was checked properly. You'll find a detailed explanation and an example at <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639 ' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>If you use the app only recently (let's say for 5 days), less checks for the last 24 hours are displayed (here: 5 checks), one for every day that the Corona-Warn-App was running constantly.</li></ol>"
+                        ]
+                    },
+                    {
+                        "title": "Exposures are displayed for more than 14 days",
+                        "anchor": "status_14",
+                        "active": true,
+                        "textblock": [
+                            "Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
+                            "For some phones running Android, the exposures currently are displayed for more than 14 days. We're working on fixing this display error. You'll find up-to-date information in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub issue 911</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS]: 'COVID-19 exposure logging... - Weekly Update'",
+                        "anchor": "notif_weekly_update",
+                        "active": true,
+                        "textblock": [
+                            "This is a general notification, which does not mean that risk encounters have been identified. It is <b>not</b> a message or function of the Corona-Warn-App. Apple's Exposure Notification Framework (ENF) sends this notification and displays the icon. Apple's ENF provides information about any encounters with app users who were tested positive - without making a statement as to whether or not it was a critical encounter according to the Robert Koch Institute's algorithm. For example, encounters are also displayed in case the distance was more than 8 meters or in case it only lasted a few minutes. This means that the 'Weekly Update' only provides information about technical procedures of the ENF that are insufficient for an actual risk calculation. A reliable risk calculation takes place exclusively in the Corona-Warn-App under the scientific framework of the Robert Koch Institute. You can view your current risk status directly in the Corona-Warn-App."
+                        ]
+                    },
+                    {
+                        "title": "Cause: 9002 Something went wrong (sqlite)",
+                        "anchor": "cause9002",
+                        "active": true,
+                        "textblock": [
+                            "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the infos for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
+                            "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
+                            "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: 0 keys displayed",
+                        "anchor": "keys0",
+                        "active": true,
+                        "textblock": [
+                            "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
+                        ]
+                    },
+                    {
+                        "title": "Since I installed the app, my phone sometimes behaves oddly. Example: There are occasional problems with other apps and devices that use Bluetooth. What can I do?",
+                        "anchor": "various_device_problems",
+                        "active": true,
+                        "textblock": [
+                            "Some users report that their phones behave differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phones and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We’re investigating these problems, but this is likely a problem with the basic operating system functions, over which we have no control. Please contact your device manufacturer.",
+                            "Apple/iOS phones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a>.",
+                            "Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a>."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Availability",
                 "id": "availability",
                 "accordion": [
@@ -366,73 +433,6 @@
                         "active": true,
                         "textblock": [
                             "Google publishes the infrastructure for the COVID-19 Exposure Notifications with Google Play, that is, independently of the Android operating system. The <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>version 1.5</a> release brought some improvements and bug fixes.","To check which ENF version is installed on your phone:","<ol><li>In the Settings, go to 'Google > COVID-19 exposure notifications'</li><li>Scroll down the 'COVID-19 notifications' page. At the very bottom, the version is displayed in one of the following formats:<ul><li>YYWWxxxxx, where YY is the year (for example, 20) and WW is the week. If you see the version number in this format, your phone is not yet using version 1.5.</li><li>VVYYWWxxxxx, where VV is the version of the infrastructure for COVID-19 exposure notifications (for example, 15), YY is the year and WW is the week number. If this format is displayed, the device already uses version 1.5.</li></ul></li></ol>", "Google provides general and release information about the COVID-19 exposure notifications, see:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
-                        ]
-                    }
-                ]
-            },
-                        {
-                "title": "Notifications",
-                "id": "notification",
-                "accordion": [
-                    {
-                        "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
-                        "anchor": "multiple_exposure_checks",
-                        "active": true,
-                        "textblock": [
-                            "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entry are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
-                        ]
-                    },
-                    {
-                        "title": "My exposure log shows checks for less than 14 days",
-                        "anchor": "exposure_check",
-                        "active": true,
-                        "textblock": [
-                            "Your phone settings display the exposure checks for the last 14 days: Apple: 'COVID-19 Exposure Logging', Android: 'Exposure checks'. When the app was running constantly during the last two weeks, you should see 14 checks within the last 24 hours.", "Please note: The log is just the history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:", "<ol><li>The log has a fixed limit of 100 entries. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed.</li><li>Sometimes, only 13 logs display for a day. The 14th entry was deleted only after risk calculation. This can happen when the time of downloading the keys from the server intersects with the time of deleting the keys that are older than 14 days from your phone. The same applies here: the exposure was checked properly. You'll find a detailed explanation and an example at <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639 ' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>If you use the app only recently (let's say for 5 days), less checks for the last 24 hours are displayed (here: 5 checks), one for every day that the Corona-Warn-App was running constantly.</li></ol>"
-                        ]
-                    },
-                    {
-                        "title": "Exposures are displayed for more than 14 days",
-                        "anchor": "status_14",
-                        "active": true,
-                        "textblock": [
-                            "Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
-                            "For some phones running Android, the exposures currently are displayed for more than 14 days. We're working on fixing this display error. You'll find up-to-date information in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub issue 911</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: 'COVID-19 exposure logging... - Weekly Update'",
-                        "anchor": "notif_weekly_update",
-                        "active": true,
-                        "textblock": [
-                            "This is a general notification, which does not mean that risk encounters have been identified. It is <b>not</b> a message or function of the Corona-Warn-App. Apple's Exposure Notification Framework (ENF) sends this notification and displays the icon. Apple's ENF provides information about any encounters with app users who were tested positive - without making a statement as to whether or not it was a critical encounter according to the Robert Koch Institute's algorithm. For example, encounters are also displayed in case the distance was more than 8 meters or in case it only lasted a few minutes. This means that the 'Weekly Update' only provides information about technical procedures of the ENF that are insufficient for an actual risk calculation. A reliable risk calculation takes place exclusively in the Corona-Warn-App under the scientific framework of the Robert Koch Institute. You can view your current risk status directly in the Corona-Warn-App."
-                        ]
-                    },
-                    {
-                        "title": "Cause: 9002 Something went wrong (sqlite)",
-                        "anchor": "cause9002",
-                        "active": true,
-                        "textblock": [
-                            "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the infos for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
-                            "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
-                            "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: 0 keys displayed",
-                        "anchor": "keys0",
-                        "active": true,
-                        "textblock": [
-                            "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
-                        ]
-                    },
-                    {
-                        "title": "Since I installed the app, my phone sometimes behaves oddly. Example: There are occasional problems with other apps and devices that use Bluetooth. What can I do?",
-                        "anchor": "various_device_problems",
-                        "active": true,
-                        "textblock": [
-                            "Some users report that their phones behave differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phones and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We’re investigating these problems, but this is likely a problem with the basic operating system functions, over which we have no control. Please contact your device manufacturer.",
-                            "Apple/iOS phones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a>.",
-                            "Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a>."
                         ]
                     }
                 ]
