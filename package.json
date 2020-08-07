@@ -8,7 +8,7 @@
     "build": "gulp build --production",
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run:chrome": "./node_modules/.bin/cypress run --browser chrome",
-    "cypress:run:chrome:ci": "cypress run --browser chrome",
+    "cypress:run:chrome:ci": "pwd && ls -lah && ls -lah cypress/ && cypress run --browser chrome",
     "cypress:run:firefox": "./node_modules/.bin/cypress run --browser firefox",
     "test:prepare": "./cypress/prepare.sh",
     "test:open": "start-server-and-test start http://localhost:8000 cypress:open",
