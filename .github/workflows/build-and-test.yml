@@ -28,14 +28,18 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: prepare e2e tests
+    - name: Build
+      run: npm run build
+
+    - name: Prepare e2e tests
       run: npm run test:prepare
 
     # Cypress gh action includes npm install, caching, etc
-    - name: run e2e tests
+    - name: Run e2e tests on Chrome
       uses: cypress-io/github-action@v2
       with:
-        browser: chrome
+        command: npm run test:chrome
+
     # Store failed test screenshots as artifact
     - uses: actions/upload-artifact@v1
         if: failure()
