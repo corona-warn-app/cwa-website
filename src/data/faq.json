@@ -94,6 +94,16 @@
                         ]
                     },
                     {
+                        "title": "I have received a QR code during a test, which I would like to use to retrieve the test result via the Corona-Warn-App. When scanning it, I get an error or the test result could not be retrieved for days. What can I do?",
+                        "anchor": "qr_test",
+                        "active": true,
+                        "textblock": [
+                            "In some cases you may have received a QR code that is not compatible with the test retrieval system of the Corona-Warn-App or the QR code has not been activated for test retrieval. In order to avoid these problems, please check whether the medical staff has explicitly informed you about the possibility of retrieving the test result with the Corona-Warn-App and whether the correct form has been used. Only then you can be sure that the procedure used works with the Corona-Warn-App. You can find a sample form of the correct Form 10C <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400#issuecomment-669937832' target='_blank' rel='noopener noreferrer'>on GitHub</a>. It is essential that field 9 'Consent of the insured person to submit the test result for the purposes of the Corona-Warn-App' is ticked.",
+                            "If you have scanned your QR code into the app after a corona test and do not receive a test result via the app within a few days, it is possible that the respective laboratory is not yet fully cooperating with the Corona-Warn-App. In this case, please call the responsible medical staff or test centre/health authority to get your test result. Currently, 70-80% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person by another way.",
+                            "We are currently investigating how to improve the app's user interface to detect QR codes that are not working properly and inform you about them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>."
+                        ]
+                    },
+                    {
                         "title": "Will the device battery drain more quickly with the app running in the background?",
                         "anchor": "battery",
                         "active": true,
