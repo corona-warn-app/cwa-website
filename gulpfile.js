@@ -30,6 +30,10 @@ function loadConfig() {
   return yaml.load(ymlFile);
 }
 
+function isCI() {
+  return !process.env.CI;
+}
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
@@ -200,7 +204,8 @@ function server(done) {
           extensions: ['html']
         }
       },
-      port: PORT
+      port: PORT,
+      open: !isCI() // do not open webbrowser if running in CI
     },
     done
   );
@@ -213,7 +218,12 @@ function reload(done) {
 }
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
-function watch() {
+function watch(done) {
+  if (isCI()) {
+    console.log('Running in CI, skipping watch task.');
+    done();
+    return;
+  }
   gulp.watch(PATHS.assets, copy);
   gulp
     .watch('blog/**/*')
@@ -237,6 +247,7 @@ function watch() {
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
+  done();
 }
 
 // generate an up-to-date sitemap

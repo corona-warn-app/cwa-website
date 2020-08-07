@@ -27,20 +27,17 @@ jobs:
     - name: Install root dependencies
       uses: bahmutov/npm-install@v1
 
-    - name: Build
-      run: npm run build
-
     - name: Prepare e2e tests
       run: npm run test:prepare
 
-    # Cypress gh action includes npm install, caching, etc
+    # Cypress gh action includes npm build
     - name: Run e2e tests on Chrome
       uses: cypress-io/github-action@v2
       with:
         command: npm run test:chrome
 
     # Store failed test screenshots as artifact
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v2
       if: failure()
       with:
         name: cypress
