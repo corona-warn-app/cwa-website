@@ -21,12 +21,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Install requirements
-      run: |
-        sudo apt install -y automake npm nodejs libpng-dev libjpeg-dev
-
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+
+    - name: Install root dependencies
+        uses: bahmutov/npm-install@v1
 
     - name: Build
       run: npm run build
@@ -44,5 +43,8 @@ jobs:
     - uses: actions/upload-artifact@v1
       if: failure()
       with:
-        name: cypress-screenshots
-        path: cypress/screenshots
+        name: cypress
+        path: |
+          cypress/screenshots
+          cypress/videos
+        if-no-files-found: ignore
