@@ -374,6 +374,8 @@
                             "In the current version, deleting the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
                             "On Android devices, the log is deleted if Corona-Warn-App was the last app using the framework on the device. If you have SwissCovid or Immuni installed in addition to the Corona-Warn-App, the log will only be removed if these additional apps are de-installed or you manually trigger deletion of the exposure log.",
                             "The way de-installation is handled can change without notice, The same applies to any changes made to the Corona-Warn-App itself. Therefore, only uninstall the app as a last resort to resolve an error."
+                            "We recommend that before you reinstall the app, you try clearing the app data first as this will not delete the random IDs:"
+                            "<ul><li>On iOS devices, choose 'Settings' -> 'Reset App' on the home screen.</li><li>On Android devices, choose the three dots at the top right corner of the home screen and select 'Settings' -> 'Reset App".</li></ul>"
                         ]
                     },
                     {
