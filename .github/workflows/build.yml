@@ -15,21 +15,33 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Cypress Docker image with Chrome v80
+    # and Firefox v73 pre-installed
+    container: cypress/browsers:node10.16.3-chrome80-ff73
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-    - name: Install requirements
-      run: |
-        sudo apt install -y automake npm nodejs libpng-dev libjpeg-dev
-
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: npm install
-      run: npm install
+    - name: Install root dependencies
+      uses: bahmutov/npm-install@v1
 
-    - name: gulp build
-      run: npm run build
+    - name: Prepare e2e tests
+      run: npm run test:prepare    
 
-    #- name: Deploy
-    #  run: rsync -av --delete public/ /var/www/html/${GITHUB_REF##*/}
+    # Cypress gh action includes npm build
+    - name: Run e2e tests on Chrome
+      uses: cypress-io/github-action@v2
+      with:
+        command: npm run test:chrome
+
+    # Store failed test screenshots as artifact
+    - uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: cypress
+        path: |
+          cypress/screenshots
+          cypress/integration/__image_snapshots__
+        if-no-files-found: ignore

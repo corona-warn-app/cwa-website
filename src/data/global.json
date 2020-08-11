@@ -4,11 +4,11 @@
         "name": "favicon",
         "include": "all"
     },
-    "error" : {
+    "error": {
         "title": "Sorry …",
         "titlecaption": "Something went wrong but maybe you will find something else interesting.",
         "image": {
-            "url":"/assets/img/error.svg",
+            "url": "/assets/img/error.svg",
             "title": "Error"
         },
         "boxes": [
@@ -19,13 +19,15 @@
                     "url": "https://github.com/corona-warn-app",
                     "external": true
                 }
-            }, {
+            },
+            {
                 "title": "Have a look at our homepage",
                 "button": {
                     "title": "Go to homepage",
                     "url": "/en/"
                 }
-            }, {
+            },
+            {
                 "title": "Any questions?",
                 "button": {
                     "title": "Check out the FAQ",
@@ -38,7 +40,7 @@
         "en": {
             "lang": {
                 "en": {
-                    "long" : "English", 
+                    "long": "English",
                     "short": "EN"
                 },
                 "de": {
@@ -46,60 +48,66 @@
                     "short": "DE"
                 }
             },
-            "nav": [{
-                "id": "community",
-                "title": "Community",
-                "url": "/en/community/"
-            }, {
-                "id": "blog",
-                "title": "Blog",
-                "disabled": true,
-                "deactivated": true
-            }, {
-                "id": "news",
-                "title": "News",
-                "url": "/en/news/"
-            }, {
-                "id": "faq",
-                "title": "FAQ",
-                "url": "/en/faq/"
-            }, {
-                "id": "github",
-                "icon": "github",
-                "title": "Our project on GitHub",
-                "url": "https://github.com/corona-warn-app",
-                "external": true
-            }],
+            "nav": [
+                {
+                    "id": "community",
+                    "title": "Community",
+                    "url": "/en/community/"
+                },
+                {
+                    "id": "blog",
+                    "title": "Blog",
+                    "url": "/en/blog/",
+                    "activeStateMatcher": "20*"
+                },
+                {
+                    "id": "faq",
+                    "title": "FAQ",
+                    "url": "/en/faq/"
+                },
+                {
+                    "id": "github",
+                    "icon": "github",
+                    "title": "Our project on GitHub",
+                    "url": "https://github.com/corona-warn-app",
+                    "external": true
+                }
+            ],
             "logo": {
-                "title" : "Corona Warn App – Open Source Project"
+                "title": "Corona Warn App – Open Source Project"
             },
             "footer-nav": [
                 {
                     "title": "Learn more",
-                    "links": [{
-                        "title":"Docs",
-                        "url": "https://github.com/corona-warn-app/cwa-documentation",
-                        "external": true
-                    },
-                    {
-                        "title": "FAQ",
-                        "url": "/en/faq/"
-                    }]
+                    "links": [
+                        {
+                            "title": "Docs",
+                            "url": "https://github.com/corona-warn-app/cwa-documentation",
+                            "external": true
+                        },
+                        {
+                            "title": "FAQ",
+                            "url": "/en/faq/"
+                        }
+                    ]
                 },
                 {
                     "title": "About",
-                    "links": [{
-                        "title": "Privacy Statement",
-                        "url": "/en/privacy/"
-                    },
-                    {
-                        "title": "Legal notice",
-                        "url": "/en/imprint/"
-                    }]
+                    "links": [
+                        {
+                            "title": "Privacy Statement",
+                            "url": "/en/privacy/"
+                        },
+                        {
+                            "title": "Legal notice",
+                            "url": "/en/imprint/"
+                        }
+                    ]
                 },
                 {
                     "title": "Get involved",
-                    "links": [{
+                    "links": [
+                        {
                             "title": "Community",
                             "url": "/en/community/"
                         },
@@ -115,18 +123,23 @@
                 },
                 {
                     "title": "Hotline App",
-                    "links": [{
-                        "title": "+49 800 7540001",
-                        "url": "tel:+498007540001"
-                    }]
+                    "links": [
+                        {
+                            "title": "+49 800 7540001",
+                            "url": "tel:+498007540001"
+                        }
+                    ],
+                    "testid": "hotline-app"
                 },
                 {
                     "title": "Hotline TAN",
                     "links": [
-                    {
-                        "title": "+49 800 7540002",
-                        "url": "tel:+498007540002"
-                    }]
+                        {
+                            "title": "+49 800 7540002",
+                            "url": "tel:+498007540002"
+                        }
+                    ],
+                    "testid": "hotline-tan"
                 }
             ],
             "copyright": {
@@ -155,13 +168,8 @@
                 {
                     "id": "blog",
                     "title": "Blog",
-                    "disabled": true,
-                    "deactivated": true
-                },
-                {
-                    "id": "aktuelles",
-                    "title": "Aktuelles",
-                    "url": "/de/aktuelles/"
+                    "url": "/de/blog/",
+                    "activeStateMatcher": "20*"
                 },
                 {
                     "id": "faq",
@@ -226,18 +234,23 @@
                 },
                 {
                     "title": "Hotline App",
-                    "links": [{
-                        "title": "+49 800 7540001",
-                        "url": "tel:+498007540001"
-                    }]
+                    "links": [
+                        {
+                            "title": "+49 800 7540001",
+                            "url": "tel:+498007540001"
+                        }
+                    ],
+                    "testid": "hotline-app"
                 },
                 {
                     "title": "Hotline TAN",
                     "links": [
-                    {
-                        "title": "+49 800 7540002",
-                        "url": "tel:+498007540002"
-                    }]
+                        {
+                            "title": "+49 800 7540002",
+                            "url": "tel:+498007540002"
+                        }
+                    ],
+                    "testid": "hotline-tan"
                 }
             ],
             "copyright": {
@@ -246,5 +259,5 @@
                 "external": true
             }
         }
-    } 
+    }
 }
