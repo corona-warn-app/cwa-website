@@ -1,4 +1,4 @@
-const { existsSync, readdirSync, readFileSync, writeFileSync, exists } = require('fs');
+const { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, exists } = require('fs');
 const path = require('path');
 const frontmatter = require('frontmatter');
 const marked = require('marked');
@@ -58,7 +58,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 }
 
 const replaceImagePaths = (content, folderName) => {
-  return content.replace(new RegExp(/src=".\//, 'g'), `src="../../assets/img/blog/${folderName}/`);
+  return content.replace(new RegExp(/src=".\//, 'g'), `src="/assets/img/blog/${folderName}/`);
 }
 
 const validatePageName = (folderName, ...names) => {
@@ -136,7 +136,11 @@ layout: blog
 is_blog_detail: true
 ---
 ${entry.blogContent}`;
-    writeFileSync(blogHtmlPath(lang) + `/${entry.slug[lang]}.html`, blogHtml);
+    const blogFolder = path.join(blogHtmlPath(lang), entry.slug[lang]);
+    if (!existsSync(blogFolder)) {
+      mkdirSync(blogFolder);
+    }
+    writeFileSync(path.join(blogFolder, 'index.html'), blogHtml);
   });
 };
 
