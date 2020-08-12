@@ -53,7 +53,24 @@
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
-                   {
+                  {
+                        "title": "[Google/Android] The explanation for a risk encounter on the low risk card is contradictory",
+                        "anchor": "encounter_but_green",
+                        "active": true,
+                        "textblock": [
+                            "With the latest update (1.2.0), a misleading explanatory text was introduced for a low risk of infection. If there was an exposure and the app still shows a low risk for you, the risk of infection is still ranked as 'low' and not as 'increased' (as described in the current text).",
+                            "This error has already been corrected. The correction will be available shortly with version 1.2.1.",
+                        ]
+                    },
+                    {
+                        "title": "[iOS] I cannot open the app",
+                        "anchor": "encounter_but_green",
+                        "active": true,
+                        "textblock": [
+                            "Unfortunately, an error was introduced with the latest update (1.2.0): Many users were not able to open the app. The version 1.2.1 is now available and resolves this issue. Please update your app."
+                        ]
+                    },
+                    {
                         "title": "An encounter has been reported, but the risk status stays green",
                         "anchor": "encounter_but_green",
                         "active": true,
@@ -61,7 +78,8 @@
                             "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.",
                             "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are discarded as harmless. This is why the Corona-Warn-App can display encounters, but the risk status stays the same.", "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
                         ]
-                    },{
+                    },
+                    {
                        "title": "[Apple/iOS]: Problems after updating to iOS 13.6",
                        "anchor": "iOS_136",
                        "active": true,
