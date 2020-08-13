@@ -1,6 +1,7 @@
 ---
-page-title: App Store: Corona-Warn-App Version 1.2.1
-page-description: Im App Store ist die CWA-Version 1.2.1 erschienen
+page-title: "App Store: Corona-Warn-App Version 1.2.1"
+page-description: "Im App Store ist die CWA-Version 1.2.1 erschienen"
+
 page-name: cwa-version-1-2-1-app-store
 page-name_de: cwa-version-1-2-1-app-store
 author: Hanna Heine
