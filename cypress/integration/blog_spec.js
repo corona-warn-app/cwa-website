@@ -48,7 +48,7 @@ describe('Blog', () => {
   })
 
   describe('Visual Comparison', () => {
-    it.skip('detail page', () => {
+    it('detail page', () => {
       cy.visit('/en/blog/2099-01-01-visual-test-page')
       // To update a snapshot image just delete it from __image_snapshots__, run e2e test and store it in fixtures/snapshots
       cy.get('.container-inner')
