@@ -127,11 +127,11 @@ const writeBlogJson = (blogEntries, lang) => {
 const writeBlogFiles = (blogEntries, lang) => {
   blogEntries.forEach(entry => {
     const blogHtml = `---
-lang_de: ${lang === 'de'}
-page-title: ${entry.title}
-page-description: ${entry.pageDescription}
-page-name: ${entry.slug.en}
-page-name_de: ${entry.slug.de}
+lang_de: "${lang === 'de'}"
+page-title: "${entry.title}"
+page-description: "${entry.pageDescription}"
+page-name: "${entry.slug.en}"
+page-name_de: "${entry.slug.de}"
 layout: blog
 is_blog_detail: true
 ---
