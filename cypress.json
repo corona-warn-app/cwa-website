@@ -1,1 +1,14 @@
-{}
+{
+  "baseUrl": "http://localhost:8000",
+  "ignoreTestFiles": [
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "video": false,
+  "viewportWidth": 1000,
+  "viewportHeight": 600,
+  "pluginsFile":	"./cypress/plugins/index.js",
+  "supportFile":	"./cypress/support/index.js",
+  "fixturesFolder":	"./cypress/fixtures",
+  "screenshotsFolder":	"./cypress/screenshots"
+}

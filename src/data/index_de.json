@@ -1,6 +1,6 @@
 {
-    "section-main" : {
-        "headline" : {
+    "section-main": {
+        "headline": {
             "titlecaption": "Open-Source-Projekt für Corona-Warn-App",
             "title": "Helft uns, die Corona-Warn-App zu verbessern"
         },
@@ -12,14 +12,23 @@
                 "icon": "github",
                 "external": true
             },
-            "links" : [
-                { "title": "Funktionshinweise", "url": "#howto"},
-                { "title": "Datenschutz & Sicherheit", "url": "#privacy"},
-                { "title": "Unsere Partner", "url": "#partners"}
+            "links": [
+                {
+                    "title": "Funktionshinweise",
+                    "url": "#howto"
+                },
+                {
+                    "title": "Datenschutz & Sicherheit",
+                    "url": "#privacy"
+                },
+                {
+                    "title": "Unsere Partner",
+                    "url": "#partners"
+                }
             ]
         },
         "image": {
-            "url" : "/assets/img/app-mockup@2x.png",
+            "url": "/assets/img/app-mockup@2x.png",
             "url-webp": "/assets/img/app-mockup@2x.webp",
             "title": "Corona Warn App"
         }
@@ -27,7 +36,7 @@
     "section-works-best": {
         "id": "howto",
         "image": {
-            "url" : "/assets/img/community.svg",
+            "url": "/assets/img/community.svg",
             "title": "Community"
         },
         "headline": {
@@ -47,7 +56,9 @@
         "image-ticker": [
             {
                 "index": "01.",
-                "image": {"url": "/assets/img/how-it-works-1.svg"},
+                "image": {
+                    "url": "/assets/img/how-it-works-1.svg"
+                },
                 "title": "IDs in der Nähe sammeln",
                 "text": "Das Exposure Notification Framework (von Apple und Google) auf einem mobilen Gerät sendet einen regelmäßig wechselnden Code (sogenannte Rolling Proximity IDs) und sucht gleichzeitig mithilfe von Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern.",
                 "button": {
@@ -58,32 +69,46 @@
             },
             {
                 "index": "02.",
-                "image": {"url": "/assets/img/how-it-works-2.svg", "right" : true },
+                "image": {
+                    "url": "/assets/img/how-it-works-2.svg",
+                    "right": true
+                },
                 "title": "Testergebnis von Personen mit Symptomen mitteilen (optional)",
                 "text": "Wenn das jeweilige Labor den elektronischen Prozess unterstützt, können getestete Personen mit dem QR-Code, den sie während des Tests erhalten haben, ihre Ergebnisse abrufen."
             },
             {
                 "index": "03.",
-                "image": {"url": "/assets/img/how-it-works-3.svg"},
+                "image": {
+                    "url": "/assets/img/how-it-works-3.svg"
+                },
                 "title": "Liste von Schlüsseln der als infiziert gemeldeten Personen verteilen",
                 "text": "Im Falle eines positiven Testergebnisses werden Personen gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die temporären Schlüssel in eine Liste ein, die regelmäßig an alle Apps gesendet wird."
             },
             {
                 "index": "04.",
-                "image": {"url": "/assets/img/how-it-works-4.svg","right": true },
+                "image": {
+                    "url": "/assets/img/how-it-works-4.svg",
+                    "right": true
+                },
                 "title": "Prüfung auf Kontakt mit Personen, die sich als infiziert gemeldet haben",
                 "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Personen heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und die Person erhält entsprechende Handlungsanweisungen.",
-                "button": {"title": "Weitere Infos im Scoping-Dokument", "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md", "external": true}
+                "button": {
+                    "title": "Weitere Infos im Scoping-Dokument",
+                    "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md",
+                    "external": true
+                }
             }
         ]
     },
     "section-boxes": {
-        "headline" : {
+        "headline": {
             "title": "Bleib auf dem Laufenden!"
         },
-        "boxes" : [
+        "boxes": [
             {
-                "image": {"url": "/assets/img/news-blog.svg"},
+                "image": {
+                    "url": "/assets/img/news-blog.svg"
+                },
                 "titlecaption": "Stay tuned!",
                 "title": "Corona-Warn-App Open-Source-Blog in Kürze verfügbar"
             },
@@ -92,25 +117,27 @@
                     "url": "/assets/img/faq.svg"
                 },
                 "title": "Noch Fragen?",
-                "links": [{
-                    "url": "/de/faq/",
-                    "title": "Hier geht‘s zu den FAQs",
-                    "class": "btn-link btn-link-icon btn-link-icon_right"
-                }]
+                "links": [
+                    {
+                        "url": "/de/faq/",
+                        "title": "Hier geht‘s zu den FAQs",
+                        "class": "btn-link btn-link-icon btn-link-icon_right"
+                    }
+                ]
             }
         ],
         "slider": {
-            "target": "news",
+            "target": "blog",
             "button": {
-                "title": "Alle News",
-                "url": "/de/aktuelles/"
+                "title": "Lese unseren Blog",
+                "url": "/de/blog/"
             },
             "amount": 3
         }
     },
     "section-image-text": {
         "image": {
-            "url" : "/assets/img/running-app.svg",
+            "url": "/assets/img/running-app.svg",
             "title": "Beispiel Quellcode"
         },
         "headline": {
@@ -126,66 +153,82 @@
             }
         }
     },
-    "section-feature-listing" : {
+    "section-feature-listing": {
         "id": "privacy",
-        "headline" : {
-            "title" : "Unsere Grundsätze für Datenschutz und Sicherheit"
+        "headline": {
+            "title": "Unsere Grundsätze für Datenschutz und Sicherheit"
         },
-        "feature-list": [{
-            "image" : {
-                "url": "/assets/img/icons/open-source.svg",
-                "title" : "Open Source"
+        "feature-list": [
+            {
+                "image": {
+                    "url": "/assets/img/icons/open-source.svg",
+                    "title": "Open Source"
+                },
+                "headline": {
+                    "title": "Open-Source-Ansatz"
+                },
+                "list": [
+                    {
+                        "title": "Transparenz",
+                        "text": "Nur durch Transparenz gewinnen wir das Vertrauen der Bevölkerung und erhöhen die Akzeptanz der App. Unser <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Architektur-Dokument (Englisch)</a> und die <a href='/assets/documents/cwa-eula-de.pdf' target='_blank' rel='noopener noreferrer'>Nutzungsbedingungen</a> sind offen einsehbar."
+                    },
+                    {
+                        "title": "Die Community",
+                        "text": "Die Community trägt zu mehr Sicherheit und Datenschutz bei, da die Community-Mitglieder Probleme frühzeitig erkennen und bei deren Lösung unterstützen können."
+                    }
+                ]
             },
-            "headline" : {
-                "title" : "Open-Source-Ansatz"
+            {
+                "image": {
+                    "url": "/assets/img/icons/decentralized.svg",
+                    "title": "Datenschutz"
+                },
+                "headline": {
+                    "title": "Datenschutz"
+                },
+                "list": [
+                    {
+                        "title": "Dezentraler Ansatz",
+                        "text": "Die Architektur beruht wie die Protokolle <a href='https://github.com/DP-3T/documents' target='_blank' rel='noopener noreferrer' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' rel='noopener noreferrer' title=''>TCN</a> auf einem dezentralen Ansatz und baut auf den Exposure-Notification-API-Spezifikationen von Apple und Google auf."
+                    },
+                    {
+                        "title": "Zwei Zwecke",
+                        "text": "Es werden nur personenbezogene Daten verarbeitet, die für die folgenden beiden Zwecke erforderlich sind:<br>1. zur Beurteilung des persönlichen Infektionsrisikos<br>2. zur schnelleren Übermittlung des SARS-CoV-2-Testergebnisses"
+                    },
+                    {
+                        "title": "Datenschutzdokument",
+                        "text": "Einzelheiten werden in der <a href='/assets/documents/cwa-privacy-notice-de.pdf'>Datenschutzerklärung des Robert Koch-Instituts</a> näher dargelegt. Weitere Details finden Sie in der <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf'>Datenschutz-Folgenabschätzung</a> sowie den zugehörigen Anlagen <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1.pdf'>1</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage2.pdf'>2</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage3.pdf'>3</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage4.pdf'>4</a> und <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage5.pdf'>5</a>."
+                    },
+                    {
+                        "title": "Im Design-Prozess",
+                        "text": "Im Design-Prozess wird für jeden Schritt sichergestellt, dass die App möglichst wenige der benötigten personenbezogenen Daten verarbeitet und für diese Daten ein größtmöglicher Schutz besteht."
+                    }
+                ]
             },
-            "list": [{
-                "title": "Transparenz",
-                "text" : "Nur durch Transparenz gewinnen wir das Vertrauen der Bevölkerung und erhöhen die Akzeptanz der App. Unser <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Architektur-Dokument (Englisch)</a> und die <a href='/assets/documents/cwa-eula-de.pdf' target='_blank' rel='noopener noreferrer'>Nutzungsbedingungen</a> sind offen einsehbar."
-                },{
-                "title": "Die Community",
-                "text": "Die Community trägt zu mehr Sicherheit und Datenschutz bei, da die Community-Mitglieder Probleme frühzeitig erkennen und bei deren Lösung unterstützen können."
-                }]
-        },{
-            "image" : {
-                "url": "/assets/img/icons/decentralized.svg",
-                "title" : "Datenschutz"
-            },
-            "headline" : {
-                "title" : "Datenschutz"
-            },
-            "list": [{
-                "title": "Dezentraler Ansatz",
-                "text" : "Die Architektur beruht wie die Protokolle <a href='https://github.com/DP-3T/documents' target='_blank' rel='noopener noreferrer' title=''>DP-3T</a> und <a href='https://tcn-coalition.org/' target='_blank' rel='noopener noreferrer' title=''>TCN</a> auf einem dezentralen Ansatz und baut auf den Exposure-Notification-API-Spezifikationen von Apple und Google auf."
-                },{
-                "title": "Zwei Zwecke",
-                "text": "Es werden nur personenbezogene Daten verarbeitet, die für die folgenden beiden Zwecke erforderlich sind:<br>1. zur Beurteilung des persönlichen Infektionsrisikos<br>2. zur schnelleren Übermittlung des SARS-CoV-2-Testergebnisses"
-                },{
-                "title": "Datenschutzdokument",
-                "text": "Einzelheiten werden in der <a href='/assets/documents/cwa-privacy-notice-de.pdf'>Datenschutzerklärung des Robert Koch-Instituts</a> näher dargelegt. Weitere Details finden Sie in der <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf'>Datenschutz-Folgenabschätzung</a> sowie den zugehörigen Anlagen <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1.pdf'>1</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage2.pdf'>2</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage3.pdf'>3</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage4.pdf'>4</a> und <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage5.pdf'>5</a>."
-                },{
-                "title": "Im Design-Prozess",
-                "text": "Im Design-Prozess wird für jeden Schritt sichergestellt, dass die App möglichst wenige der benötigten personenbezogenen Daten verarbeitet und für diese Daten ein größtmöglicher Schutz besteht."
-                }]
-        },{
-            "image" : {
-                "url": "/assets/img/icons/lock.svg",
-                "title" : "Sicherheit"
-            },
-            "headline" : {
-                "title" : "Sicherheit"
-            },
-            "list": [{
-                "title": "Offen und transparent",
-                "text": "Das Prinzip „Security through obscurity“, bei dem die Sicherheit eines Systems durch die Geheimhaltung seiner Funktionsweise gewährleistet wird, greift bei diesem Projekt nicht: Wir verfolgen einen offenen und transparenten Ansatz."
-            }, {
-                "title": "Secure Software Development Lifecycle",
-                "text": "Die Sicherheit der Anwendungsentwicklung wird durch den Secure Software Development Lifecycle gewährleistet. Dieser umfasst unter anderem die Modellierung von Bedrohungen (Threat Modeling), eine durchgängige Risikobewertung, die Sicherheitsplanung sowie Sicherheits- und Penetrationstests."
-            }, {
-                "title": "Hosting",
-                "text": "Das Hosting entspricht BSI C5, SOC 2 und SOC1/ISAE 3402."
-            }]
-        }],
+            {
+                "image": {
+                    "url": "/assets/img/icons/lock.svg",
+                    "title": "Sicherheit"
+                },
+                "headline": {
+                    "title": "Sicherheit"
+                },
+                "list": [
+                    {
+                        "title": "Offen und transparent",
+                        "text": "Das Prinzip „Security through obscurity“, bei dem die Sicherheit eines Systems durch die Geheimhaltung seiner Funktionsweise gewährleistet wird, greift bei diesem Projekt nicht: Wir verfolgen einen offenen und transparenten Ansatz."
+                    },
+                    {
+                        "title": "Secure Software Development Lifecycle",
+                        "text": "Die Sicherheit der Anwendungsentwicklung wird durch den Secure Software Development Lifecycle gewährleistet. Dieser umfasst unter anderem die Modellierung von Bedrohungen (Threat Modeling), eine durchgängige Risikobewertung, die Sicherheitsplanung sowie Sicherheits- und Penetrationstests."
+                    },
+                    {
+                        "title": "Hosting",
+                        "text": "Das Hosting entspricht BSI C5, SOC 2 und SOC1/ISAE 3402."
+                    }
+                ]
+            }
+        ],
         "content": {
             "button": {
                 "title": "Siehe Details in der Dokumentation",
@@ -197,53 +240,66 @@
     },
     "section-icon-listing": {
         "id": "partners",
-        "headline" : {
+        "headline": {
             "title": "Unsere Partnerinnen und Partner",
             "text": "Anfang Mai 2020 hat die Bundesregierung SAP und die Deutsche-Telekom-Tochter T-Systems gebeten, die offizielle Corona-Warn-App für Deutschland zu entwickeln. Die App soll nach dem Open-Source-Prinzip entwickelt werden und auf einem dezentralen Ansatz basieren. Folgende Partner unterstützen die Entwicklung der App, in die auch die globale Open-Source-Community eingebunden ist:"
         },
-        "icon-list" : [{
+        "icon-list": [
+            {
                 "icon-url": "/assets/img/partner/bcg_logo.svg",
                 "title": "Boston Consulting Group"
-            },{
+            },
+            {
                 "icon-url": "/assets/img/partner/bcgdv_logo.svg",
                 "title": "BCG Digital Ventures"
-            },{
+            },
+            {
                 "icon-url": "/assets/img/partner/cispa_logo@1x.png",
                 "icon-set": "/assets/img/partner/cispa_logo@1x.png 1x, /assets/img/partner/cispa_logo@2x.png 2x",
                 "title": "Cispa"
-            },{
+            },
+            {
                 "icon-url": "/assets/img/partner/detecon-logo@1x.png",
                 "icon-set": "/assets/img/partner/detecon-logo@1x.png 1x, /assets/img/partner/detecon-logo@2x.png 2x",
                 "title": "Detecon"
-            },{
+            },
+            {
                 "icon-url": "/assets/img/partner/logo_edelman@1x.png",
                 "icon-set": "/assets/img/partner/logo_edelman@1x.png 1x, /assets/img/partner/logo_edelman@2x.png 2x",
                 "title": "Edelman"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/fraunhofer_logo.svg",
                 "title": "Fraunhofer Institut"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/HealthyTogehter_logo.svg",
                 "title": "Healthy Together"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/Helmholtz_logo.svg",
                 "title": "Helmholtz"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/logo_msg@1x.png",
                 "icon-set": "/assets/img/partner/logo_msg@1x.png 1x, /assets/img/partner/logo_msg@2x.png 2x",
                 "title": "msg systems ag"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/rki-logo@1x.png",
                 "icon-set": "/assets/img/partner/rki-logo@1x.png 1x, /assets/img/partner/rki-logo@2x.png 2x",
                 "title": "Robert Koch Institut"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/sap_logo@1x.png",
                 "icon-set": "/assets/img/partner/sap_logo@1x.png 1x, /assets/img/partner/sap_logo@2x.png 2x",
                 "title": "SAP"
-            }, {
+            },
+            {
                 "icon-url": "/assets/img/partner/T_Logo.svg",
                 "title": "Telecom"
-            },{
+            },
+            {
                 "icon-url": "/assets/img/partner/TUViT_logo@1x.png",
                 "icon-set": "/assets/img/partner/TUViT_logo@1x.png 1x, /assets/img/partner/TUViT_logo@2x.png 2x",
                 "title": "TÜViT"
@@ -251,7 +307,7 @@
         ]
     },
     "section-join-project": {
-        "headline" : {
+        "headline": {
             "title": "Mach mit beim Open-Source-Projekt!",
             "button": {
                 "url": "https://github.com/corona-warn-app",
@@ -260,17 +316,19 @@
                 "icon": "github"
             }
         },
-        "box" : {
+        "box": {
             "image": {
                 "url": "/assets/img/faq.svg",
                 "title": "FAQ"
             },
             "content": {
                 "title": "Mehr Fragen?",
-                "links": [{
-                    "title": "Hier geht‘s zu den FAQs",
-                    "url": "/de/faq/"
-                }]
+                "links": [
+                    {
+                        "title": "Hier geht‘s zu den FAQs",
+                        "url": "/de/faq/"
+                    }
+                ]
             }
         },
         "content": {
@@ -291,7 +349,7 @@
                     "external": true
                 }
             ],
-            "headline" : {
+            "headline": {
                 "title": "App mit!",
                 "text": "Jetzt zum Download verfügbar im <span class='nobr'>Apple App Store</span> und auf <span class='nobr'>Google Play</span>."
             }

@@ -1,0 +1,34 @@
+---
+lang_de: true
+page-title: Open-Source-Projekt für Corona-Warn-App – News
+page-description: Blog der Website coronawarn.app zum Open-Source-Projekt für die Corona-Warn-App.
+page-name: news
+---
+<!DOCTYPE html>
+<html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="refresh" content="2; URL=https://www.coronawarn.app/{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}/blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{#if global.favicon}}
+    <link
+      rel="icon"
+      type="image/{{#if global.favicon.type}}{{global.favicon.type}}{{/if}}{{#unless global.favicon.type}}png{{/unless}}"
+      sizes="32x32"
+      href="{{root}}{{global.favicon.url}}"
+    />
+    {{/if}}
+
+    <title>{{page-title}}</title>
+
+    <script>
+      setTimeout(function() {
+        window.location.href = window.location.origin + "/en/blog";
+      })
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
