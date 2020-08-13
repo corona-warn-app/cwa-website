@@ -53,7 +53,24 @@
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
-                   {
+                  {
+                        "title": "[Google/Android] The explanation for a risk encounter on the low risk card is contradictory",
+                        "anchor": "low_risk_text",
+                        "active": true,
+                        "textblock": [
+                            "With the latest update (1.2.0), a misleading explanatory text was introduced for a low risk of infection. If there was an exposure and the app still shows a low risk for you, the risk of infection is still ranked as 'low' and not as 'increased' (as described in the current text).",
+                            "This error has already been corrected. The correction is available with version 1.2.1. Please update the app."
+                        ]
+                    },
+                    {
+                        "title": "[iOS] I cannot open the app",
+                        "anchor": "app_does_not_open",
+                        "active": true,
+                        "textblock": [
+                            "Unfortunately, an error was introduced with the latest update (1.2.0): Many users were not able to open the app. The version 1.2.1 is now available and resolves this issue. Please update your app."
+                        ]
+                    },
+                    {
                         "title": "An encounter has been reported, but the risk status stays green",
                         "anchor": "encounter_but_green",
                         "active": true,
@@ -61,15 +78,14 @@
                             "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.",
                             "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are discarded as harmless. This is why the Corona-Warn-App can display encounters, but the risk status stays the same.", "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
                         ]
-                    },{
+                    },
+                    {
                        "title": "[Apple/iOS]: Problems after updating to iOS 13.6",
                        "anchor": "iOS_136",
                        "active": true,
                        "textblock": [
-                            "After updating to the current iOS version 13.6., exposure logging cannot be activated on some iPhones because exposure logging would not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
-                           "Apple quickly resolved the issue with a server patch, but some iPhones apparently still show the error. Occasionally, it can still happen that the exposure logging cannot be activated after updating from iOS 13.5.1 to 13.6. According to Apple, a few hundred iPhones are affected that were updated to iOS 13.6 shortly after the update was released. iPhones that were updated some days later are virtually not affected. Apple has assured us that they are working at full speed to provide a complete solution.",
-                           "If your iPhone currently shows the issue, Apple provided a way to fix it: Download a configuration profile and install it on your iPhone. Here are the step-by-step instructions:",
-                           "<ol><li>Download this configuration profile: <a href='http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig' target='_blank' rel='noopener noreferrer'>http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig</a></li><li>Open the Settings and choose 'Profile Downloaded'.</li><li>Choose 'Install', and follow the onscreen instructions.</li><li>Reboot your iPhone to complete the installation.</li><li>Activate exposure logging in the Settings under 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'.</li><li>Start the Corona-Warn-App and check whether exposure logging was activated.</li></ol>"
+                            "After updating to the iOS version 13.6, exposure logging couldn't be activated on some iPhones because exposure logging was seemingly not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
+                           "Apple has now released iOS version 13.6.1, which fixes this error. Please update your phone to iOS 13.6.1."
                         ]
                     },
                     {
@@ -373,7 +389,9 @@
                             "Since the app cannot delete the exposure logs by itself, whether they are cleared or not is a decision of the Exposure Notification Framework.",
                             "In the current version, deleting the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
                             "On Android devices, the log is deleted if Corona-Warn-App was the last app using the framework on the device. If you have SwissCovid or Immuni installed in addition to the Corona-Warn-App, the log will only be removed if these additional apps are de-installed or you manually trigger deletion of the exposure log.",
-                            "The way de-installation is handled can change without notice, The same applies to any changes made to the Corona-Warn-App itself. Therefore, only uninstall the app as a last resort to resolve an error."
+                            "The way de-installation is handled can change without notice, The same applies to any changes made to the Corona-Warn-App itself. Therefore, only uninstall the app as a last resort to resolve an error.",
+                            "We recommend that before you reinstall the app, you try clearing the app data first as this will not delete the random IDs:",
+                            "<ul><li>On iOS devices, choose 'Settings' -> 'Reset App' on the home screen.</li><li>On Android devices, choose the three dots at the top right corner of the home screen and select 'Settings' -> 'Reset App'.</li></ul>"
                         ]
                     },
                     {

@@ -54,6 +54,23 @@
                 "id": "most_asked",
                 "accordion": [
                   {
+                        "title": "[Google/Android] Der Text für das niedrige Risiko ist widersprüchlich",
+                        "anchor": "low_risk_text",
+                        "active": true,
+                        "textblock": [
+                            "In dem erklärenden Text für ein niedriges Infektionsrisiko wurde mit dem letzten Update eine sich widersprechende Beschreibung eingefügt. Wenn Sie eine Risiko-Begegnung hatten, die App aber weiter ein niedriges Risiko für Sie anzeigt, dann wird die Infektionswahrscheinlichkeit für Sie als niedrig eingestuft und nicht wie im Text derzeit geschrieben als erhöht.",
+                            "Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App."
+                        ]
+                    },
+                    {
+                        "title": "[iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
+                        "anchor": "app_does_not_open",
+                        "active": true,
+                        "textblock": [
+                            "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten. Inzwischen steht die Version 1.2.1 zur Verfügung, die dieses Problem behebt."
+                        ]
+                    },
+                    {
                         "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                         "anchor": "encounter_but_green",
                         "active": true,
@@ -373,7 +390,9 @@
                             "Die App selbst kann die Covid-19-Begegnungsaufzeichnungen nicht löschen. Daher obliegt es dem Exposure Notification Framework (ENF) zu entscheiden, ob diese Daten gelöscht werden oder nicht.",
                             "In der derzeitigen Version bleiben bei einer Deinstallation unter iOS die Begegnungsaufzeichnungen erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
                             "Auf Android-Geräten werden die Begegnungsaufzeichnungen gelöscht, falls die Corona-Warn-App die letzte App war, die das ENF nutzt. Falls sie zusätzlich z.B. SwissCovid oder Immuni installiert haben, bleiben die Begegnungsaufzeichnungen erhalten, bis auch diese Apps gelöscht werden oder Sie händisch eine Löschung der Begegnungsaufzeichnungen veranlassen.",
-                            "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, empfehlen wir, wirklich nur in Ausnahmefällen die App zu löschen."
+                            "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, empfehlen wir, wirklich nur in Ausnahmefällen die App zu löschen.",
+                            "Wir empfehlen daher, vor der Deinstallation zunächst die Daten in der App zurückzusetzen:",
+                            "<ul><li>[iOS] Auf iOS-Geräten finden Sie die Funktion 'Anwendung zurücksetzen' auf dem Einstiegsbild der App ganz unten unter 'Einstellungen'.</li><li>[Google/Android] Auf Android-Geräten wählen Sie unter den drei Punkten im oberen rechten Bereich des Einstiegsbilds 'Einstellungen' -> 'Anwendung zurücksetzen'.</li></ul>"
                         ]
                     },
                     {
