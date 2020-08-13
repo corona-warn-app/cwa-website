@@ -84,10 +84,8 @@
                        "anchor": "iOS_136",
                        "active": true,
                        "textblock": [
-                            "After updating to the current iOS version 13.6., exposure logging cannot be activated on some iPhones because exposure logging would not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
-                           "Apple quickly resolved the issue with a server patch, but some iPhones apparently still show the error. Occasionally, it can still happen that the exposure logging cannot be activated after updating from iOS 13.5.1 to 13.6. According to Apple, a few hundred iPhones are affected that were updated to iOS 13.6 shortly after the update was released. iPhones that were updated some days later are virtually not affected. Apple has assured us that they are working at full speed to provide a complete solution.",
-                           "If your iPhone currently shows the issue, Apple provided a way to fix it: Download a configuration profile and install it on your iPhone. Here are the step-by-step instructions:",
-                           "<ol><li>Download this configuration profile: <a href='http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig' target='_blank' rel='noopener noreferrer'>http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig</a></li><li>Open the Settings and choose 'Profile Downloaded'.</li><li>Choose 'Install', and follow the onscreen instructions.</li><li>Reboot your iPhone to complete the installation.</li><li>Activate exposure logging in the Settings under 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'.</li><li>Start the Corona-Warn-App and check whether exposure logging was activated.</li></ol>"
+                            "After updating to the iOS version 13.6, exposure logging couldn't be activated on some iPhones because exposure logging was seemingly not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
+                           "Apple has now released iOS version 13.6.1, which fixes this error. Please update your phone to iOS 13.6.1."
                         ]
                     },
                     {
