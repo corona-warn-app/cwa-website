@@ -1,22 +1,37 @@
 <div class="row navbar">
   <div class="col-sm-6 col-md-3 hidden-xs">
-    <a class="logo" href="/{{#if lang_de}}de{{else}}en{{/if}}/" title="{{language.logo.title}}">
-      <img src="{{root}}assets/img/logo.svg" alt="{{language.logo.title}}" class="logo-image" />
+    <a class="logo" href="/{{#if lang_de}}de{{else}}en{{/if}}/"
+      title="{{language.logo.title}}">
+      <img src="{{root}}assets/img/logo.svg" alt="{{language.logo.title}}"
+        class="logo-image" />
     </a>
   </div>
   <div class="col col-xs-6 col-md-9">
-    <button aria-label="Open Page Navigation Menu" class="btn-menu js-toggle" data-target="#header-nav"></button>
+    <button aria-label="Open Page Navigation Menu" class="btn-menu js-toggle"
+      data-target="#header-nav"></button>
     <nav class="header-nav" id="header-nav">
-      <button aria-label="Close Page Navigation Menu" class="btn-menu btn-menu_close js-toggle" data-target="#header-nav"></button>
+      <button aria-label="Close Page Navigation Menu" class="btn-menu
+        btn-menu_close js-toggle" data-target="#header-nav"></button>
       {{#if language.nav}}
       <ul class="nav js-main-navigation">
-      {{#each language.nav}}
+        {{#each language.nav}}
         {{> navlist-item item=.}}
-      {{/each}}
-      <li class="nav-item lang">
-          <a {{#if lang_de}}href="/en/{{#if @root.page-name_en}}{{@root.page-name_en}}/{{else}}{{#if @root.page-name}}{{@root.page-name}}/{{/if}}{{/if}}"{{/if}} class="nav-link{{#unless lang_de}} active{{/unless}}" title="{{language.lang.en.long}}">{{language.lang.en.short}}</a><span
-            class="nav-link-delimiter">|</span><a class="nav-link{{#if lang_de}} active{{/if}}" {{#unless lang_de}}href="/de/{{#if @root.page-name_de}}{{@root.page-name_de}}/{{else}}{{#if @root.page-name}}{{@root.page-name}}/{{/if}}{{/if}}"{{/unless}} title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
-      </li>
+        {{/each}}
+        <li class="nav-item lang">
+          <a {{#if
+            lang_de}}href="/en/{{#ifblogdetail}}blog/{{/ifblogdetail}}{{#if
+            @root.page-name_en}}{{@root.page-name_en}}{{else}}{{#if
+            @root.page-name}}{{@root.page-name}}{{/if}}{{/if}}" {{/if}}
+            class="nav-link{{#unless lang_de}} active{{/unless}}"
+            title="{{language.lang.en.long}}">{{language.lang.en.short}}</a>
+          <span class="nav-link-delimiter">|</span>
+          <a class="nav-link{{#if lang_de}}
+            active{{/if}}" {{#unless
+            lang_de}}href="/de/{{#ifblogdetail}}blog/{{/ifblogdetail}}{{#if
+            @root.page-name_de}}{{@root.page-name_de}}{{else}}{{#if
+            @root.page-name}}{{@root.page-name}}{{/if}}{{/if}}" {{/unless}}
+            title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>
+        </li>
       </ul>
       {{/if}}
     </nav>

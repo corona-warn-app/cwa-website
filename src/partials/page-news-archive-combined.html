@@ -1,0 +1,41 @@
+<section>
+  <div class="container">
+    {{#if lang_de}}
+    {{> button-back-component button=page-contents.de.backToBlogButton}}
+    {{else}}
+    {{> button-back-component button=page-contents.en.backToBlogButton}}
+    {{/if}}
+
+    <div class="text-center container-inner container-inner_sm
+      contents-normal">
+      {{#unless lang_de}}
+      {{> headline-component page-contents.en.headline }}
+      {{/unless}}
+      {{#if lang_de}}
+      {{> headline-component page-contents.de.headline }}
+      {{/if}}
+    </div>
+    <div class="card-list">
+      {{#unless lang_de}}
+      {{#each page-contents.entries}}
+      <div class="card-list-item">
+        {{#if image}}
+        {{> image-component image=image}}
+        {{/if}}
+        {{> news-text-component this=.}}
+      </div>
+      {{/each}}
+      {{/unless}}
+      {{#if lang_de}}
+      {{#each page-contents.entries}}
+      <div class="card-list-item">
+        {{#if image}}
+        {{> image-component image=image}}
+        {{/if}}
+        {{> news-text-component this=. lang_de=true}}
+      </div>
+      {{/each}}
+      {{/if}}
+    </div>
+  </div>
+</section>

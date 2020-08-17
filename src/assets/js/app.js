@@ -97,10 +97,19 @@ $(document).ready(function(){
             let text = faq[anchor];
             let anchorDiv = "div[id='" + anchor + "-div']"
             // text and header does not match or the search string is empty
-            if(searchString.length === 0 || text.search(searchString) !== -1) {
+            if(searchString.length === 0) {
                 show.push(anchorDiv);
             } else {
-                hide.push(anchorDiv);
+                // remove double spaces, split by space, and filter out empty strings
+                let searchTerms = searchString.replace(/ +(?= )/g,'').split(" ").filter(x => x.length > 0);
+                // perform the search for each term
+                let allHits = searchTerms.every(term => text.search(term.toLowerCase()) !== -1);
+                // put to hide, if no hit was found
+                if(!allHits) {
+                    hide.push(anchorDiv);
+                } else {
+                    show.push(anchorDiv);
+                }
             }
         });
 
@@ -163,7 +172,7 @@ $(document).ready(function(){
         // listen to the keyup event, i.e., when a character was entered into the form
         // and the value of the field was properly updated
         searchField.addEventListener("keyup", (event) => {
-            const curSearch = event.target.value.toLowerCase();
+            const curSearch = event.target.value;
             // only search for longer terms and react to empty search (aka delete input)
             if(curSearch.length < 2 && curSearch.length > 0) {
                 return;

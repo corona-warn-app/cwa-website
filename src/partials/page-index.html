@@ -1,177 +1,250 @@
 {{#if page-contents}}
 <section class="section-main">
-  <div class="container">
-    <div class="row align-items-lg-end justify-content-lg-between">
-      <div class="col col-12 col-sm-10 col-md-8 col-lg-6">
-        <h5 class="caption-headline caption-headline_blue">{{page-contents.section-main.headline.titlecaption}}</h5>
-        <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
-        <p>{{page-contents.section-main.content.text}}</p>
-        <p class="btn-block text-left">
-          {{> button-component button=page-contents.section-main.content.button icon='github'}}<br>
-          {{#each page-contents.section-main.content.links}}
-          {{> button-link-component button=. direction='down'}}
-          {{/each}}
-        </p>
-      </div>
-      <div class="col col-12 col-sm-12 col-md-12 col-lg-5">
-          <picture class="section-main-image">
-            <source srcset="{{page-contents.section-main.image.url-webp}}" type="image/webp">
-              <img class="section-main-image" src="{{page-contents.section-main.image.url}}"" title="{{page-contents.section-main.image.title}}"/>
-          </picture>
-      </div>
-    </div>
-  </div>
-</section>
-{{> section-get-app section-contents=page-contents.section-join-project.content section-class='section-sticky section_bg-white hidden js-section-sticky' section-cancelable=true}}
-<section class="" {{#if page-contents.section-image-ticker.id}} id="{{page-contents.section-image-ticker.id}}" {{/if}}>
-  <div class="container">
-    {{#if page-contents.section-image-ticker.headline}}
-    <div class="text-center">
-      {{> headline-component page-contents.section-image-ticker.headline}}
-    </div>
-    {{/if}}
-    {{#if page-contents.section-image-ticker.image-ticker}}
-    {{#each page-contents.section-image-ticker.image-ticker}}
-    <div class="row align-items-center">
-      {{#if image}}{{> image-ticker this=. text-cls='text-block_indented'}}{{/if}}
-    </div>
-    {{/each }}
-    {{/if}}
-  </div>
-</section>
-<section class="section_bg-gradient section_bg-skew" {{#if page-contents.section-boxes.id}} id="{{page-contents.section-boxes.id}}"
-  {{/if}}>
-  <div class="container">
-    {{#if page-contents.section-boxes}}
-    <div class="container-inner container-inner_lg">
-      <div class="text-center">
-        {{> headline-component page-contents.section-boxes.headline}}
-      </div>
-      {{#unless page-contents.section-boxes.slider}}
-      {{#if page-contents.section-boxes.boxes}}
-      <div class="row">
-        {{#each page-contents.section-boxes.boxes}}
-        <div class="col-12 col-md-6 box-column">
-          <div class="box box_flex box_stretch">
-            {{> image-component this=.}}
-            <div>
-              {{> headline-small-component this=.}}
+    <div class="container">
+        <div class="row align-items-lg-end justify-content-lg-between">
+            <div class="col col-12 col-sm-10 col-md-8 col-lg-6">
+                <h5 class="caption-headline caption-headline_blue">{{page-contents.section-main.headline.titlecaption}}</h5>
+                <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+                <p>{{page-contents.section-main.content.text}}</p>
+                <p class="btn-block text-left">
+                    {{> button-component
+                    button=page-contents.section-main.content.button
+                    icon='github'}}<br>
+                    {{#each page-contents.section-main.content.links}}
+                    {{> button-link-component button=. direction='down'}}
+                    {{/each}}
+                </p>
             </div>
-          </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-5">
+                <picture class="section-main-image">
+                    <source
+                        srcset="{{page-contents.section-main.image.url-webp}}"
+                        type="image/webp">
+                    <img class="section-main-image"
+                        src="{{page-contents.section-main.image.url}}""title="{{page-contents.section-main.image.title}}"
+                        />
+                </picture>
+            </div>
         </div>
-        {{/each}}
-      </div>
-      {{/if}}
-      {{/unless}}
-      {{#if page-contents.section-boxes.slider}}
-        {{#ifequal page-contents.section-boxes.slider.target 'news'}}
-          {{> slider-component slides=news_combined.entries amount=page-contents.section-boxes.slider.amount type=page-contents.section-boxes.slider.target }}
-          {{#if page-contents.section-boxes.slider.button}}
-          <div class="box_slider-caption">
-              {{> button-link-component button=page-contents.section-boxes.slider.button direction="right" }}
-          </div>
-          {{/if}}
-        {{/ifequal}}
-      {{/if}}
     </div>
-    {{/if}}
-  </div>
 </section>
-<section class="section_bg-white" {{#if page-contents.section-image-text.id}} id="{{page-contents.section-image-text.id}}" {{/if}}>
-  <div class="container">
-    {{#if page-contents.section-image-text}}
-    <div class="row align-items-center">
-      <div class="col col-12 col-md-6 image-overflow-container">
-        <img class="image-overflow-spacer" src="/assets/img/spacer.gif" alt="" />
+{{> section-get-app section-contents=page-contents.section-join-project.content
+section-class='section-sticky section_bg-white hidden js-section-sticky'
+section-cancelable=true}}
 
-          <picture class="image-overflow image-overflow_left">
-            <img class="image-overflow image-overflow_left" src="{{page-contents.section-image-text.image.url}}"" title="{{page-contents.section-image-text.image.title}}"/>
-          </picture>
+<section class="section_bg-white" {{#if page-contents.section-works-best.id}}
+    id="{{page-contents.section-works-best.id}}" {{/if}}>
+    <div class="container">
+        {{#if page-contents.section-works-best}}
+        <div class="row align-items-center">
+            <div class="col col-12 col-md-6 image-overflow-container">
+                <img class="image-overflow-spacer" src="/assets/img/spacer.gif"
+                    alt="" />
 
-      </div>
-      <div class="col col-12 col-md-6 text-center text-md-left">
-        {{> headline-component title=page-contents.section-image-text.headline.title}}
-        {{> text-component textblock=page-contents.section-image-text.headline.textblock button=page-contents.section-image-text.headline.button}}
-      </div>
+                <picture class="image-overflow image-overflow_left">
+                    <img class="image-overflow image-overflow_left"
+                        src="{{page-contents.section-works-best.image.url}}""title="{{page-contents.section-works-best.image.title}}"
+                        />
+                </picture>
+
+            </div>
+            <div class="col col-12 col-md-6 text-left">
+                {{> headline-component
+                title=page-contents.section-works-best.headline.title}}
+                {{> text-component
+                textblock=page-contents.section-works-best.headline.textblock
+                button=page-contents.section-works-best.headline.button}}
+            </div>
+        </div>
+        {{/if}}
     </div>
-    {{/if}}
-  </div>
 </section>
-<section class="section-feature-listing section_bg-light" {{#if page-contents.section-feature-listing.id}}
-  id="{{page-contents.section-feature-listing.id}}" {{/if}}>
-  <div class="container">
-    {{#if page-contents.section-feature-listing}}
-    <div class="container-inner container-inner_lg">
-      <div class="text-center">
-        {{> headline-component page-contents.section-feature-listing.headline}}
-      </div>
-      {{#each page-contents.section-feature-listing.feature-list}}
-      <div class="text-center">
-        {{> image-component image=image}}
-        <h3 class="headline-light">{{headline.title}}</h3>
-      </div>
-      {{#if list}}
-      <ul class="list row">
-        {{#each list}}
-        <li class="list-item col col-12 col-md-6">
-          <div class="text-block_indented"><span class="numeration"><img class="icon"
-                src="/assets/img/icons/virus.svg" alt="" /></span>{{> text-component this=.}}</div>
-        </li>
-        {{/each}}
-      </ul>
-      {{/if}}
-      {{/each}}
+
+<section class="" {{#if page-contents.section-image-ticker.id}}
+    id="{{page-contents.section-image-ticker.id}}" {{/if}}>
+    <div class="container">
+        {{#if page-contents.section-image-ticker.headline}}
+        <div class="text-center">
+            {{> headline-component page-contents.section-image-ticker.headline}}
+        </div>
+        {{/if}}
+        {{#if page-contents.section-image-ticker.image-ticker}}
+        {{#each page-contents.section-image-ticker.image-ticker}}
+        <div class="row align-items-center">
+            {{#if image}}{{> image-ticker this=.
+            text-cls='text-block_indented'}}{{/if}}
+        </div>
+        {{/each }}
+        {{/if}}
     </div>
-    {{#if page-contents.section-feature-listing.content}}
-    {{#if page-contents.section-feature-listing.content.button}}
-    <div class="text-center">{{> button-component button=page-contents.section-feature-listing.content.button}}</div>
-    {{/if}}
-    {{/if}}
-    {{/if}}
-  </div>
 </section>
-<section class="" {{#if page-contents.section-icon-listing.id}} id="{{page-contents.section-icon-listing.id}}" {{/if}}>
-  <div class="container">
-    {{#if page-contents.section-icon-listing}}
-    <div class="text-center container-inner container-inner_sm">
-      {{> headline-component page-contents.section-icon-listing.headline}}
+<section data-e2e="blog-slider" class="section_bg-gradient section_bg-skew" {{#if
+    page-contents.section-boxes.id}} id="{{page-contents.section-boxes.id}}"
+    {{/if}}>
+    <div class="container">
+        {{#if page-contents.section-boxes}}
+        <div class="container-inner container-inner_lg">
+            <div class="text-center">
+                {{> headline-component page-contents.section-boxes.headline}}
+            </div>
+            {{#unless page-contents.section-boxes.slider}}
+            {{#if page-contents.section-boxes.boxes}}
+            <div class="row">
+                {{#each page-contents.section-boxes.boxes}}
+                <div class="col-12 col-md-6 box-column">
+                    <div class="box box_flex box_stretch">
+                        {{> image-component this=.}}
+                        <div>
+                            {{> headline-small-component this=.}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{/unless}}
+            {{#if page-contents.section-boxes.slider}}
+            {{#ifequal page-contents.section-boxes.slider.target 'blog'}}
+            
+            {{#if lang_de}}
+            {{> slider-component slides=blogentries.de
+            amount=page-contents.section-boxes.slider.amount
+            type=page-contents.section-boxes.slider.target }}
+            {{else}}
+            {{> slider-component slides=blogentries.en
+            amount=page-contents.section-boxes.slider.amount
+            type=page-contents.section-boxes.slider.target }}
+            {{/if}}
+
+            {{#if page-contents.section-boxes.slider.button}}
+            <div class="box_slider-caption">
+                {{> button-link-component
+                button=page-contents.section-boxes.slider.button
+                direction="right" }}
+            </div>
+            {{/if}}
+            {{/ifequal}}
+            {{/if}}
+        </div>
+        {{/if}}
     </div>
-    {{> icon-list-component page-contents.section-icon-listing}}
-    {{/if}}
-  </div>
 </section>
-<section class="section-intersect section_bg-light section_bg-skew" {{#if page-contents.section-join-project.id}}
-  id="{{page-contents.section-join-project.id}}" {{/if}}>
-  <div class="container contents-normal">
-    <div class="container-inner container-inner_lg">
-      <div class="text-center">
-        {{> headline-plain-component page-contents.section-join-project.headline}}
-        {{> button-component button=page-contents.section-join-project.headline.button}}
-      </div>
-      {{#if page-contents.section-join-project.box}}
-      <div class="box box_spaced box_flex">
-        {{> image-component image=page-contents.section-join-project.box.image}}
-        <div class="box-inner_flex">
-          <div class="box-inner">{{> headline-small-component title=page-contents.section-join-project.box.content.title}}</div>
-          <div class="box-inner box-inner_end">
-            {{#each page-contents.section-join-project.box.content.links}}
-            <a class="btn btn-link btn-link_narrow btn-link_icon" title="{{title}}" alt="{{title}}" href="{{url}}">{{title}}<span
-                class="icon icon_arrow-right"></span></a>
+<section class="section_bg-white" {{#if page-contents.section-image-text.id}}
+    id="{{page-contents.section-image-text.id}}" {{/if}}>
+    <div class="container">
+        {{#if page-contents.section-image-text}}
+        <div class="row align-items-center">
+            <div class="col col-12 col-md-6 image-overflow-container">
+                <img class="image-overflow-spacer" src="/assets/img/spacer.gif"
+                    alt="" />
+
+                <picture class="image-overflow image-overflow_left">
+                    <img class="image-overflow image-overflow_left"
+                        src="{{page-contents.section-image-text.image.url}}""title="{{page-contents.section-image-text.image.title}}"
+                        />
+                </picture>
+
+            </div>
+            <div class="col col-12 col-md-6 text-center text-md-left">
+                {{> headline-component
+                title=page-contents.section-image-text.headline.title}}
+                {{> text-component
+                textblock=page-contents.section-image-text.headline.textblock
+                button=page-contents.section-image-text.headline.button}}
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</section>
+<section class="section-feature-listing section_bg-light" {{#if
+    page-contents.section-feature-listing.id}}
+    id="{{page-contents.section-feature-listing.id}}" {{/if}}>
+    <div class="container">
+        {{#if page-contents.section-feature-listing}}
+        <div class="container-inner container-inner_lg">
+            <div class="text-center">
+                {{> headline-component
+                page-contents.section-feature-listing.headline}}
+            </div>
+            {{#each page-contents.section-feature-listing.feature-list}}
+            <div class="text-center">
+                {{> image-component image=image}}
+                <h3 class="headline-light">{{headline.title}}</h3>
+            </div>
+            {{#if list}}
+            <ul class="list row">
+                {{#each list}}
+                <li class="list-item col col-12 col-md-6">
+                    <div class="text-block_indented"><span class="numeration"><img
+                                class="icon"
+                                src="/assets/img/icons/virus.svg" alt="" /></span>{{>
+                        text-component this=.}}</div>
+                </li>
+                {{/each}}
+            </ul>
+            {{/if}}
             {{/each}}
-          </div>
         </div>
-      </div>
-      {{/if}}
+        {{#if page-contents.section-feature-listing.content}}
+        {{#if page-contents.section-feature-listing.content.button}}
+        <div class="text-center">{{> button-component
+            button=page-contents.section-feature-listing.content.button}}</div>
+        {{/if}}
+        {{/if}}
+        {{/if}}
     </div>
-  </div>
 </section>
-{{> section-get-app section-contents=page-contents.section-join-project.content section-class='section-intersect section_bg-white'}}
+<section class="" {{#if page-contents.section-icon-listing.id}}
+    id="{{page-contents.section-icon-listing.id}}" {{/if}}>
+    <div class="container">
+        {{#if page-contents.section-icon-listing}}
+        <div class="text-center container-inner container-inner_sm">
+            {{> headline-component page-contents.section-icon-listing.headline}}
+        </div>
+        {{> icon-list-component page-contents.section-icon-listing}}
+        {{/if}}
+    </div>
+</section>
+<section class="section-intersect section_bg-light section_bg-skew" {{#if
+    page-contents.section-join-project.id}}
+    id="{{page-contents.section-join-project.id}}" {{/if}}>
+    <div class="container contents-normal">
+        <div class="container-inner container-inner_lg">
+            <div class="text-center">
+                {{> headline-plain-component
+                page-contents.section-join-project.headline}}
+                {{> button-component
+                button=page-contents.section-join-project.headline.button}}
+            </div>
+            {{#if page-contents.section-join-project.box}}
+            <div class="box box_spaced box_flex">
+                {{> image-component
+                image=page-contents.section-join-project.box.image}}
+                <div class="box-inner_flex">
+                    <div class="box-inner">{{> headline-small-component
+                        title=page-contents.section-join-project.box.content.title}}</div>
+                    <div class="box-inner box-inner_end">
+                        {{#each
+                        page-contents.section-join-project.box.content.links}}
+                        <a class="btn btn-link btn-link_narrow btn-link_icon"
+                            title="{{title}}" alt="{{title}}" href="{{url}}">{{title}}<span
+                                class="icon icon_arrow-right"></span></a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</section>
+{{> section-get-app section-contents=page-contents.section-join-project.content
+section-class='section-intersect section_bg-white'}}
 {{#unless @root.get-app-enabled}}
 {{#if page-contents.section-soon-available}}
 <section class="section-intersect section_bg-white">
-  <div class="container contents-normal text-center">
-    {{> headline-component page-contents.section-soon-available.headline}}
-  </div>
+    <div class="container contents-normal text-center">
+        {{> headline-component page-contents.section-soon-available.headline}}
+    </div>
 </section>
 {{/if}}
 {{/unless}}
