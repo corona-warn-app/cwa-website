@@ -1,7 +1,7 @@
 ---
 page-title: "Remarks about the QR-code process"
 page-description: "Remarks about the QR-code process"
-page-name: qr-code-process-remarks
+page-name: hinweis-qr-code-verfahren
 author: Janina Hoerdt
 layout: blog
 ---
