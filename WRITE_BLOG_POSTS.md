@@ -27,10 +27,9 @@ layout: blog
 Replace these parameters with real values:
 
 - `{DATE}` is your blog post's publication date, in the `YYYY-MM-DD` format.
-- `{PAGE_NAME}`
 - `{TITLE}`
 - `{DESCRIPTION}`
-- `{PAGE_NAME}` is the last part of the english site's address in the location bar. For example, if you want your blog post to appear under `https://coronawarn.app/blog/{DATE}-{ADDRESS}`, the name of your blog post folder should end with `{ADDRESS}`. For example, name the folder **2019-08-01-corona-1-3** to point to the `https://coronawarn.app/blog/2019-08-01-corona-1-3` link on the website. It can only consist of digits, lowercase characters `a-z`, dash `-` or underscore `_`.
+- `{PAGE_NAME}` is the last part of the english site's address in the location bar. For example, if you want your blog post to appear under `https://coronawarn.app/blog/{DATE}-{PAGE_NAME}`, the name of your blog post folder should end with `{ADDRESS}`. For example, name the folder **2019-08-01-corona-1-3** to point to the `https://coronawarn.app/blog/2019-08-01-corona-1-3` link on the website. It can only consist of digits, lowercase characters `a-z`, dash `-` or underscore `_`. **DO NOT** translate in the index_de.md file.
 - `{AUTHOR}` is your name with an optional position name.
 - `{CONTENT}` is written in Markdown and/or HTML. The content must include the `<!-- overview -->` comment which indicates the part of the blog post that will be displayed on the main page. The **Read more** button appears at the end of the paragraph.
 
