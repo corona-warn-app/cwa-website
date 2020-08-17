@@ -76,7 +76,9 @@ const getBlogEntries = (lang) => {
     .sort()
     .reverse()
     .map(folderName => {
-      const fileContent = readFileSync(path.join(blogMdPath(), folderName, 'index.md')).toString();
+      // figure out which language file to use - default is 'en', others added with _{lang} to filename
+      const fn = lang === "en" ? 'index.md' : 'index_' + lang + '.md';
+      const fileContent = readFileSync(path.join(blogMdPath(), folderName, fn)).toString();
       const mdData = frontmatter(fileContent);
       const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
       const pageName = mdData.data['page-name'];
