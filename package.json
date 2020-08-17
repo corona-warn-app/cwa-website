@@ -1,15 +1,17 @@
 {
   "name": "corona-warn-app-landingpage",
   "version": "1.0.0",
-  "description": "Corona Warn App landing page template",
+  "description": "Corona Warn App website coronawarn.app",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "cypress:run": "./node_modules/.bin/cypress run",
-    "cypress:run:chrome": "./node_modules/.bin/cypress run --browser chrome",
-    "cypress:run:firefox": "./node_modules/.bin/cypress run --browser firefox",
-    "test": "start-server-and-test start http://localhost:8000 cypress:run",
+    "cypress:open": "cypress open",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:firefox": "cypress run --browser firefox",
+    "test:prepare": "./cypress/prepare.sh",
+    "test:open": "start-server-and-test start http://localhost:8000 cypress:open",
+    "test": "npm run test:chrome",
     "test:chrome": "start-server-and-test start http://localhost:8000 cypress:run:chrome",
     "test:firefox": "start-server-and-test start http://localhost:8000 cypress:run:firefox"
   },
@@ -37,7 +39,7 @@
     "jquery": "^3.5.1",
     "js-yaml": "^3.14.0",
     "lodash.throttle": "^4.0.8",
-    "panini": "^1.6.3",
+    "panini": "^1.7.1",
     "rimraf": "^3.0.2",
     "slick-carousel": "^1.8.1",
     "vinyl-named": "^1.1.0",
@@ -47,7 +49,12 @@
   },
   "private": true,
   "devDependencies": {
-    "start-server-and-test": "^1.11.0",
-    "cypress": "^4.8.0"
+    "cypress": "^4.11.0",
+    "cypress-plugin-snapshots": "^1.4.3",
+    "frontmatter": "0.0.3",
+    "gulp-debug": "^4.0.0",
+    "marked": "^1.1.1",
+    "moment": "^2.27.0",
+    "start-server-and-test": "^1.11.0"
   }
 }
