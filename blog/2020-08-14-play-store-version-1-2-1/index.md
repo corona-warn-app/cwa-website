@@ -2,7 +2,6 @@
 page-title: "Corona-Warn-App version 1.2.1 available in Google Play Store"
 page-description: "Das Update der Corona-Warn-App auf Version 1.2.1 ist im Google Play Store verfügbar"
 page-name: playstore-version-1-2-1
-page-name_de: playstore-version-1-2-1
 author: Hanna Heine
 layout: blog
 ---

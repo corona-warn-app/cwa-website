@@ -2,7 +2,6 @@
 page-title: "Hinweise zum QR-Code Verfahren"
 page-description: "Hinweise zum QR-Code Verfahren"
 page-name: hinweis-qr-code-verfahren
-page-name_de: hinweis-qr-code-verfahren
 author: Janina Hoerdt
 layout: blog
 ---

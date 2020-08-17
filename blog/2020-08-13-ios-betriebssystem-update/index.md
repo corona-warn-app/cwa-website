@@ -2,7 +2,6 @@
 page-title: "Upgrade to iOS 13.6.1 improves interaction with the Corona-Warn-App"
 page-description: iOS-Nutzerinnen und Nutzern wird empfohlen das Upgrade auf iOS 13.6.1 durchzuführen
 page-name: ios-13-6-1
-page-name_de: ios-13-6-1
 author: Hanna Heine
 layout: blog
 ---

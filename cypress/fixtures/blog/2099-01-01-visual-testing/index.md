@@ -2,7 +2,6 @@
 page-title: Visual Test
 page-description: Seo Description
 page-name: visual-test-page
-page-name_de: visual-test-seite
 author: Markus Edenhauser
 layout: blog
 ---
@@ -29,12 +28,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum `markdown` sit amet `www.google.de`
 
-## Quotes 
+## Quotes
 Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-## Code 
+## Code
 
 We do also have code blocks besides `inline code style`:
 ```javascript
