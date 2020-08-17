@@ -3,6 +3,7 @@ const path = require('path');
 const frontmatter = require('frontmatter');
 const marked = require('marked');
 const moment = require('moment');
+const { rawListeners } = require('gulp');
 
 const languages = ['de', 'en'];
 const rootFolder = __dirname + '/../../';
@@ -40,7 +41,7 @@ const getAuthors = (authors) => {
 const generateBlogEntry = (blog, content, lang, showButton = false) => {
   let button = '', headline = '';
   if (showButton) {
-    button = `<p><a href="${blog.slug[lang]}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].readMore}</a></p>`;
+    button = `<p><a href="${blog.slug}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].readMore}</a></p>`;
     headline = `<h2 class="headline">${blog.title}</h2>`;
   } else {
     headline = `<h1 class="headline headline-heavy">${blog.title}</h1>`;
@@ -61,13 +62,11 @@ const replaceImagePaths = (content, folderName) => {
   return content.replace(new RegExp(/src=".\//, 'g'), `src="/assets/img/blog/${folderName}/`);
 }
 
-const validatePageName = (folderName, ...names) => {
-  for (let i = 0; i < names.length; i++) {
-    const isValid = new RegExp('^[a-z-_0-9]+$', 'g').test(names[i]);
+const validatePageName = (folderName, name) => {
+    const isValid = new RegExp('^[a-z-_0-9]+$', 'g').test(name);
     if (!isValid) {
-      throw new Error(`Error processing ${folderName}: Invalid page-name (${names[i]}). It can only contain lowercase a-z 0-9 - or _ as valid characters.`);
+      throw new Error(`Error processing ${folderName}: Invalid page-name (${name}). It can only contain lowercase a-z 0-9 - or _ as valid characters.`);
     }
-  }
 }
 
 const getBlogEntries = (lang) => {
@@ -76,13 +75,20 @@ const getBlogEntries = (lang) => {
     .sort()
     .reverse()
     .map(folderName => {
-      const fileContent = readFileSync(path.join(blogMdPath(), folderName, 'index.md')).toString();
+      // figure out which language file to use - default is 'en', others added with _{lang} to filename
+      const fn = lang === "en" ? 'index.md' : 'index_' + lang + '.md';
+      const fileContent = (() => {
+        try {
+          return readFileSync(path.join(blogMdPath(), folderName, fn)).toString();
+        } catch(e) {
+          throw("You need to create a file '" + fn + "', too!");
+        }
+      })();
       const mdData = frontmatter(fileContent);
       const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
       const pageName = mdData.data['page-name'];
-      const pageNameDe = mdData.data['page-name_de'];
 
-      validatePageName(folderName, pageName, pageNameDe);
+      validatePageName(folderName, pageName);
 
       const entry = {
         date,
@@ -90,10 +96,7 @@ const getBlogEntries = (lang) => {
         title: mdData.data['page-title'],
         folderName,
         pageDescription: mdData.data['page-description'],
-        slug: {
-          en: `${date}-${pageName}`,
-          de: `${date}-${pageNameDe}`
-        },
+        slug: `${date}-${pageName}`,
         author: mdData.data.author,
         htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
         htmlContent: replaceImagePaths(marked(mdData.content), folderName)
@@ -117,7 +120,7 @@ const writeBlogJson = (blogEntries, lang) => {
       "source": {
         "title": "Blog",
         "external": false,
-        "url": `blog/${entry.slug[lang]}`
+        "url": `blog/${entry.slug}`
       }
     }
   });
@@ -130,13 +133,12 @@ const writeBlogFiles = (blogEntries, lang) => {
 lang_de: ${lang === 'de'}
 page-title: "${entry.title}"
 page-description: "${entry.pageDescription}"
-page-name: "${entry.slug.en}"
-page-name_de: "${entry.slug.de}"
+page-name: "${entry.slug}"
 layout: blog
 is_blog_detail: true
 ---
 ${entry.blogContent}`;
-    const blogFolder = path.join(blogHtmlPath(lang), entry.slug[lang]);
+    const blogFolder = path.join(blogHtmlPath(lang), entry.slug);
     if (!existsSync(blogFolder)) {
       mkdirSync(blogFolder);
     }
