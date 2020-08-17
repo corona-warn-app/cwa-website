@@ -3,6 +3,7 @@ const path = require('path');
 const frontmatter = require('frontmatter');
 const marked = require('marked');
 const moment = require('moment');
+const { rawListeners } = require('gulp');
 
 const languages = ['de', 'en'];
 const rootFolder = __dirname + '/../../';
@@ -76,7 +77,13 @@ const getBlogEntries = (lang) => {
     .map(folderName => {
       // figure out which language file to use - default is 'en', others added with _{lang} to filename
       const fn = lang === "en" ? 'index.md' : 'index_' + lang + '.md';
-      const fileContent = readFileSync(path.join(blogMdPath(), folderName, fn)).toString();
+      const fileContent = (() => {
+        try {
+          return readFileSync(path.join(blogMdPath(), folderName, fn)).toString();
+        } catch(e) {
+          throw("You need to create a file '" + fn + "', too!");
+        }
+      })();
       const mdData = frontmatter(fileContent);
       const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
       const pageName = mdData.data['page-name'];
