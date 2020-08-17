@@ -2,9 +2,9 @@
 
 Follow these steps to add a new post on the website:
 
-1. Fork the `cwa-website` repository and create a new branch in your fork.
+1. Fork the `cwa-website` repository and create a new branch in your fork. If you have write permissions on the repo, you can also create a branch directly in CWA-website.
 2. Create a folder in the `blog` folder with a name following the `{DATE}-{PAGE_NAME}` format.
-3. Create a file named `index.md` in the newly created directory.
+3. Create a file named `index.md` (english) and a file `index_de.md` in the newly created directory.
 4. Prepare the content in a Markdown file.
 5. Make a pull request.
 6. Wait for the review.
@@ -17,7 +17,6 @@ The blog post should have the following format:
 page-title: {TITLE}
 page-description: {SEO_DESCRIPTION}
 page-name: {PAGE_NAME}
-page-name_de: {PAGE_NAME_DE}
 author: {AUTHOR}
 layout: blog
 ---
@@ -28,11 +27,9 @@ layout: blog
 Replace these parameters with real values:
 
 - `{DATE}` is your blog post's publication date, in the `YYYY-MM-DD` format.
-- `{PAGE_NAME}` 
-- `{TITLE}` 
-- `{DESCRIPTION}` 
-- `{PAGE_NAME}` is the last part of the english site's address in the location bar. For example, if you want your blog post to appear under `https://coronawarn.app/blog/{DATE}-{ADDRESS}`, the name of your blog post folder should end with `{ADDRESS}`. For example, name the folder **2019-08-01-corona-1-3** to point to the `https://coronawarn.app/blog/2019-08-01-corona-1-3` link on the website. It can only consist of digits, lowercase characters `a-z`, dash `-` or underscore `_`.
-- `{PAGE_NAME_DE}` is the same as `{PAGE_NAME}`, but is used for the German website URLs.
+- `{TITLE}`
+- `{DESCRIPTION}`
+- `{PAGE_NAME}` is the last part of the english site's address in the location bar. For example, if you want your blog post to appear under `https://coronawarn.app/blog/{DATE}-{PAGE_NAME}`, the name of your blog post folder should end with `{ADDRESS}`. For example, name the folder **2019-08-01-corona-1-3** to point to the `https://coronawarn.app/blog/2019-08-01-corona-1-3` link on the website. It can only consist of digits, lowercase characters `a-z`, dash `-` or underscore `_`. **DO NOT** translate in the index_de.md file.
 - `{AUTHOR}` is your name with an optional position name.
 - `{CONTENT}` is written in Markdown and/or HTML. The content must include the `<!-- overview -->` comment which indicates the part of the blog post that will be displayed on the main page. The **Read more** button appears at the end of the paragraph.
 
@@ -45,7 +42,6 @@ Example:
 page-title: Lorem Ipsum
 page-description: Lorem ipsum dolor sit amet.
 page-name: lorem-ipsum
-page-name_de: lorem-ipsum
 title: "Latin's not dead"
 author: "Cicero, Roman Philosopher"
 layout: blog
