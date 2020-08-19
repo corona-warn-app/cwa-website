@@ -47,9 +47,4 @@ jobs:
           SOURCE_DIR: "public"
           
       - name: set proper mime type for FAQ redirects
-        uses: "jusbrasil/github-action-s3cmd@master"
-        with:
-          args: "--region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/"
-        env:
-           ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY_ID }}
-           SECRET_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: "s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/"
