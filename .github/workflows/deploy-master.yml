@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Install requirements
         run: |
-          sudo apt install -y automake npm nodejs libpng-dev libjpeg-dev
+          sudo apt install -y automake npm nodejs libpng-dev libjpeg-dev s3cmd
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -45,3 +45,11 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_S3_ENDPOINT: ${{ secrets.AWS_S3_ENDPOINT }}
           SOURCE_DIR: "public"
+
+      - name: set proper mime type for FAQ redirects
+        uses: "jusbrasil/github-action-s3cmd@master"
+        with:
+          args: "modify --add-header='content-type':'text/html' s3://${{ secrets.AWS_S3_BUCKET }}/de/faq/(39508)"
+        env:
+           ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY_ID }}
+           SECRET_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
