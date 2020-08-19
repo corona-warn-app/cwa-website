@@ -47,7 +47,6 @@ jobs:
           SOURCE_DIR: "public"
           
       - name: set proper mime type for German FAQ redirects
-        run: "s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/"
-        
-      - name: set proper mime type for German FAQ redirects
-        run: "s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/en/faq/"        
+        run: |
+          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/
+          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/en/faq/
