@@ -15,6 +15,7 @@ const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 const { processBlogFiles } = require('./src/services/blog-processor');
+var rename = require("gulp-rename");
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -38,7 +39,7 @@ function isCI() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap)
+  gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap, createFaqSymlinks)
 );
 
 gulp.task('blog', buildBlogFiles);
@@ -260,6 +261,22 @@ function build_sitemap() {
         // Reduce priority by 0.2 per level
         return 1.0 - (entry.file.split('/').length - 1) * 0.2
       }
+    }))
+    .pipe(gulp.dest(PATHS.dist))
+}
+
+// build symlinked files for the non-index html files
+function createFaqSymlinks() {
+  return gulp
+    .src([PATHS.dist + "/**/faq/*.html", "!" + PATHS.dist + '/**/faq/index.html'])
+    .pipe(rename(function (path) {
+      console.log(path);
+      // Returns a completely new object, make sure you return all keys needed!
+      return {
+        dirname: path.dirname,
+        basename: path.basename,
+        extname: ""
+      };
     }))
     .pipe(gulp.dest(PATHS.dist))
 }
