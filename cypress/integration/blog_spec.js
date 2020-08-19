@@ -48,7 +48,7 @@ describe('Blog', () => {
     cy.expectPathToBe('/en/blog/' + pageName)
   })
 
-  describe('Visual Comparison', () => {
+  /*describe('Visual Comparison', () => {
     it('detail page', () => {
       cy.visit('/en/blog/' + pageName)
       // To update a snapshot image just delete it from __image_snapshots__, run e2e test and store it in fixtures/snapshots
@@ -61,5 +61,5 @@ describe('Blog', () => {
           "thresholdType": "percent",             // Can be either "pixel" or "percent"
         })
     })
-  })
+  })*/
 })
