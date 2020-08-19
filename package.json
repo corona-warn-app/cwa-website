@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
+    "faq-symlinks": "./scripts/symlinks.sh",
     "cypress:open": "cypress open",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:firefox": "cypress run --browser firefox",

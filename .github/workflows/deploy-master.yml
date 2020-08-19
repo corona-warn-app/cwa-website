@@ -30,6 +30,9 @@ jobs:
       - name: gulp build
         run: npm run build
 
+      - name: symlink faq fixes
+        run: npm run-script faq-symlinks
+
       - name: keepalive.html
         run: echo "OK" > public/keepalive.html
 
