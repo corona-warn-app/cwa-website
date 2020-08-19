@@ -39,7 +39,7 @@ function isCI() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap)
+  gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap, createFaqRedirects)
 );
 
 gulp.task('blog', buildBlogFiles);
@@ -265,12 +265,11 @@ function build_sitemap() {
     .pipe(gulp.dest(PATHS.dist))
 }
 
-// build symlinked files for the non-index html files
-function createFaqSymlinks() {
+// Just takes the properly build .html files and removes the ending
+function createFaqRedirects() {
   return gulp
     .src([PATHS.dist + "/**/faq/*.html", "!" + PATHS.dist + '/**/faq/index.html'])
     .pipe(rename(function (path) {
-      console.log(path);
       // Returns a completely new object, make sure you return all keys needed!
       return {
         dirname: path.dirname,
