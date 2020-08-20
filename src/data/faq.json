@@ -329,12 +329,18 @@
                         "active": true,
                         "textblock": [
                             "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For infos about the app flow, see <a href='#risk_info' target='_blank' rel='noopener noreferrer'>How do you get information about a risk of infection?</a> for details.",
-                            "<b>'Exposure checks'</b>",
+                            "<b>Exposure checks</b>",
                             "For each day, there is an entry for each of the last 14 days, see <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>My exposure log shows multiple, simultaneous checks for exposures</a>.",
-                            "Apple: <b>'Provided Key Count'</b> | Android: <b>'Number of keys'</b>",
+                            "<b>Provided Key Count</b> (Apple) | <b>Number of keys</b> (Android)",
                             "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
-                            "Apple: <b>'Matched Key Count'</b> | Android: <b>'Number of matches'</b>",
-                            "This is the number of keys that your phone collected for which there is a matching diagnosis key. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>An encounter has been reported, but the risk status stays green</a>."
+                            "<b>Matched Key Count</b> (Android) | <b>Number of matches</b> (Android)",
+                            "This is the number of keys that your phone collected for which there is a matching diagnosis key. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>An encounter has been reported, but the risk status stays green</a>.",
+                            "<b>Timestamp</b>",
+                            "Date and time at which the check happened. This is independent of the timestamp of potential exposures since every key stored in the downloaded files, a separate validity timestamp is stored.",
+                            "<b>Data Source</b>",
+                            "Identifies the app that initiated the check. If you, for example, also installed Immuni or SwissCovid, their app identifiers could be noted there instead of 'Corona-Warn'.",
+                            "<b>Hash</b>",
+                            "Checksum of the file containing the downloaded diagnosis keys. As long as the file content (diagnosis keys) does not change, this checksum will not change throughout the relevant time frame of 2 weeks."
                         ]
                     },
                     {
