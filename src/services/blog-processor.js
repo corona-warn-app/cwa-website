@@ -1,9 +1,8 @@
-const { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, exists } = require('fs');
+const { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, exists, writeFile } = require('fs');
 const path = require('path');
 const frontmatter = require('frontmatter');
 const marked = require('marked');
 const moment = require('moment');
-const { rawListeners } = require('gulp');
 
 const languages = ['de', 'en'];
 const rootFolder = __dirname + '/../../';
@@ -81,36 +80,41 @@ const getBlogEntries = (lang) => {
         try {
           return readFileSync(path.join(blogMdPath(), folderName, fn)).toString();
         } catch(e) {
-          throw("You need to create a file '" + fn + "', too!");
+          throw new Error("You need to create a file '" + fn + "', too!");
         }
       })();
       const mdData = frontmatter(fileContent);
-      const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
-      const pageName = mdData.data['page-name'];
-
-      validatePageName(folderName, pageName);
-
-      const entry = {
-        date,
-        dateFormatted: formatDate(date, lang),
-        title: mdData.data['page-title'],
-        folderName,
-        pageDescription: mdData.data['page-description'],
-        slug: `${date}-${pageName}`,
-        author: mdData.data.author,
-        htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
-        htmlContent: replaceImagePaths(marked(mdData.content), folderName)
-      };
-
-      entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);
-      entry.blogContent = generateBlogEntry(entry, entry.htmlContent, lang);
-      return entry;
+      return createPageEntry(folderName, mdData, lang)
     });
+}
+
+const createPageEntry =  (folderName, mdData, lang) => {
+  const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
+  const pageName = mdData.data['page-name'];
+  validatePageName(folderName, pageName);
+
+  const entry = {
+    date,
+    dateFormatted: formatDate(date, lang),
+    title: mdData.data['page-title'],
+    folderName,
+    pageDescription: mdData.data['page-description'],
+    slug: `${date}-${pageName}`,
+    author: mdData.data.author,
+    redirect: mdData.data.redirect,
+    htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
+    htmlContent: replaceImagePaths(marked(mdData.content), folderName)
+  };
+
+  entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);
+  entry.blogContent = generateBlogEntry(entry, entry.htmlContent, lang);
+  return entry;
 }
 
 const writeBlogJson = (blogEntries, lang) => {
   const entriesFile = path.join(dataFolder, 'blogentries.json');
   const entries = existsSync(entriesFile) ? require(entriesFile) : {};
+
   entries[lang] = blogEntries.map(entry => {
     return {
       "title": entry.title,
@@ -129,7 +133,7 @@ const writeBlogJson = (blogEntries, lang) => {
 
 const writeBlogFiles = (blogEntries, lang) => {
   blogEntries.forEach(entry => {
-    const blogHtml = `---
+    const fileContent = `---
 lang_de: ${lang === 'de'}
 page-title: "${entry.title}"
 page-description: "${entry.pageDescription}"
@@ -138,19 +142,40 @@ layout: blog
 is_blog_detail: true
 ---
 ${entry.blogContent}`;
-    const blogFolder = path.join(blogHtmlPath(lang), entry.slug);
-    if (!existsSync(blogFolder)) {
-      mkdirSync(blogFolder);
-    }
-    writeFileSync(path.join(blogFolder, 'index.html'), blogHtml);
+
+    writeBlogFile(lang, entry.slug, fileContent);
   });
 };
+
+// writes a blog entry file with a given body to the slug
+const writeBlogFile = (lang, slug, fileContent) => {
+  const blogFolder = path.join(blogHtmlPath(lang), slug);
+  if (!existsSync(blogFolder)) {
+    mkdirSync(blogFolder);
+  }
+  writeFileSync(path.join(blogFolder, 'index.html'), fileContent);
+}
+
+// this writes files that redirect to new blogposts in case an old one is substituted
+const writeBlogRedirects = (redirectEntries, lang) => {
+  redirectEntries.forEach(entry => {
+    const fileContent = `---
+lang_de: ${lang === 'de'}
+page-name: "${entry.slug}"
+---
+{{> page-redirect target-path="${entry.redirect}"}}`;
+    writeBlogFile(lang, entry.slug, fileContent);
+  })
+}
 
 const processBlogFiles = () => {
   languages.forEach(lang => {
     const blogEntries = getBlogEntries(lang);
-    writeBlogFiles(blogEntries, lang);
-    writeBlogJson(blogEntries, lang);
+    const redirects = blogEntries.filter(entry => {return entry.redirect !== undefined});
+    const activeEntries = blogEntries.filter(entry => {return entry.redirect === undefined});
+    writeBlogFiles(activeEntries, lang);
+    writeBlogRedirects(redirects, lang);
+    writeBlogJson(activeEntries, lang);
   });
 };
 
