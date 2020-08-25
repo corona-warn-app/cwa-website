@@ -42,7 +42,7 @@ gulp.task(
   gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap, createFaqRedirects)
 );
 
-gulp.task('blog', buildBlogFiles);
+gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
@@ -51,6 +51,10 @@ gulp.task('default', gulp.series('build', server, watch));
 // This happens every time a build starts
 function clean(done) {
   rimraf(PATHS.dist, done);
+}
+
+function cleanBlogs(done) {
+  rimraf(PATHS.blogOutputs, done);
 }
 
 // Copy files out of the assets folder
