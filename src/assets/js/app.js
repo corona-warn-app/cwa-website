@@ -157,15 +157,32 @@ $(document).ready(function(){
 
             // find out whether there are search strings added
             var urlParams = new URLSearchParams(window.location.search);
+            const { hash } = window.location;
             if(urlParams.has("search")){
-                const { hash } = window.location;
-                // if we have a deeplink w/ a hash, ignore the search parameter
+                // only perform search if no hash is set
                 if(!hash || hash === "") {
-                    // otherwise, set the search string in the input
+                    // set the search string in the input
                     searchField.value = urlParams.get("search");
                     // and update the result list
                     updateResults(urlParams.get("search"), faq);
                 }
+            }
+            // if we have a hash and that hash is not part of the faq list
+            let hashVal = hash.substring(1)
+            if(hash && !Object.keys(faq).includes(hashVal)) {
+                // then let's get the list of defined redirects
+                $.get("/assets/data/faq_redirects.json", (data) => {
+                    // and see whether there is a proper replacement (1:1 mapping)
+                    let replacement = data[hashVal];
+                    // if there is ...
+                    if(replacement){
+                        // ... just go there
+                        location.hash = "#" + replacement;
+                    } else {
+                        // otherwise, just search for the hash value
+                        updateResults(hashVal, faq);
+                    }
+                })
             }
         });
 
