@@ -15,11 +15,13 @@
 
     <form method="get" id="faq-search-form">
       <!-- Actual search box -->
-      <div class="input-group mb-2 mr-sm-2">
-        <div class="input-group-prepend input-group-sm">
-          <div class="input-group-text"><span id="match-count">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}</div>
+      <div class="input-group input-group-sm">
+        <div class="input-group-text">
+          <span class="input-group-addon">
+            <span id="match-count">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}
+          </span>
         </div>
-        <input type="text" class="form-control form-control-sm" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
+        <input type="text" class="form-control" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
       </div>
     </form>
     <hr />

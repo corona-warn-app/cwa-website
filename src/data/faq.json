@@ -40,7 +40,7 @@
                             "First, please ensure that you are running the current version of the app. You should have version 1.1.1 or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
                             "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
-                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>", 
+                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
                             "In the power-saving settings of your phone, you can make sure that there's an exception set for the Corona-Warn-App:",
                             "Unfortunately, in some phones, you might not be able to activate the prioritized background activity in the app settings. You can still activate the prioritized background activity: You do so directly in the energy saving settings. of your phone. Set an exception for the Corona-Warn-App. If this still doesn't update the risk status automatically in the background, please create a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub issue 933</a>, giving your phone type and the installed versions of the app and of the COVID-19 exposure notifications.",
                             "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
@@ -89,12 +89,13 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Error when communicating with Google API(39508)",
+                        "title": "[Google/Android]: Error when communicating with Google API (39508)",
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "This issue is well known, and we are intensively working together with Google on solving it. We can confirm that exposure logging works as intended. We thus ask you to not uninstall or reset the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>.",
-                            "The error means that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive. The error should disappear after 24 hours."
+                            "The notification indicates that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
+                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe. If it still occurs afterwards, please call the hotline or open an issue on GitHub.",
+                            "We ask you to not de-install or reset the app, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue."
                         ]
                     },
                     {
@@ -240,7 +241,8 @@
                         "anchor": "available_languages",
                         "active": true,
                         "textblock": [
-                            "The app is currently available in Turkish (from version 1.1.1), English and German. The telephone hotline (<a href='tel:+498007540001'>+49 800 7540001</a>) answers in Turkish, English and German. More languages are to come. We'll keep you up to date.", "The language of the app is derived from the language that is configured in the smartphone's language settings. To display the app in German, for example, change the language settings to German."
+                            "The app is currently available in the following languages:<ul><li>German</li><li>English</li><li>Turkish (as of version 1.1.1)</li><li>Bulgarian (as of version 1.2.0)</li><li>Polish (as of version 1.2.0)</li><li>Romanian (as of version 1.2.0)</li></ul>",
+                            "The telephone hotline (<a href='tel:+498007540001'>+49 800 7540001</a>) answers in Turkish, English and German. More languages are to come. We'll keep you up to date.", "The language of the app is derived from the language that is configured in the smartphone's language settings. To display the app in German, for example, change the language settings to German."
                         ]
                     },
                     {
@@ -258,7 +260,7 @@
                         "anchor": "age_restriction",
                         "active": true,
                         "textblock": [
-                            "Persons under the age of 16 may use the app if their parents or legal guardians give their consent. The age restriction of 16 years and older is necessary, because the app processes data that is particularly worthy of protection under the General Data Protection Regulation (GDPR) of the European Union. According to the GDPR, minors can only give their effective consent to the processing of data after the age of 16. In principle, this applies to both app stores.",
+                            "Persons aged 16 and older may use the app, which is targeted at users in Germany. The age restriction of 16 years and older is necessary, because the app processes data that is particularly worthy of protection under the General Data Protection Regulation (GDPR) of the European Union. According to the GDPR, minors can only give their effective consent to the processing of data after the age of 16. In principle, this applies to both app stores.",
                             "However, the level of strictness is different in both app stores:",
                             "<ul><li>Apple applies stricter criteria in its store, including data protection and GDPR age restrictions. This results in the specification '17+' in the App Store. Apple may require you to verify your age.</li><li>Google Play Store, on the other hand, only applies USK specifications. According to the USK, the app is approved for all age groups, which is why the minimum age in Google Play Store is 0.</li></ul>"
                         ]
@@ -327,12 +329,18 @@
                         "active": true,
                         "textblock": [
                             "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For infos about the app flow, see <a href='#risk_info' target='_blank' rel='noopener noreferrer'>How do you get information about a risk of infection?</a> for details.",
-                            "<b>'Exposure checks'</b>",
+                            "<b>Exposure checks</b>",
                             "For each day, there is an entry for each of the last 14 days, see <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>My exposure log shows multiple, simultaneous checks for exposures</a>.",
-                            "Apple: <b>'Provided Key Count'</b> | Android: <b>'Number of keys'</b>",
+                            "<b>Provided Key Count</b> (Apple) | <b>Number of keys</b> (Android)",
                             "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
-                            "Apple: <b>'Matched Key Count'</b> | Android: <b>'Number of matches'</b>",
-                            "This is the number of keys that your phone collected for which there is a matching diagnosis key. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>An encounter has been reported, but the risk status stays green</a>."
+                            "<b>Matched Key Count</b> (Apple) | <b>Number of matches</b> (Android)",
+                            "This is the number of keys that your phone collected for which there is a matching diagnosis key. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>An encounter has been reported, but the risk status stays green</a>.",
+                            "<b>Timestamp</b>",
+                            "Date and time at which the check happened. This is independent of the timestamp of potential exposures since every key stored in the downloaded files, a separate validity timestamp is stored.",
+                            "<b>Data Source</b>",
+                            "Identifies the app that initiated the check. If you, for example, also installed Immuni or SwissCovid, their app identifiers could be noted there instead of 'Corona-Warn'.",
+                            "<b>Hash</b>",
+                            "Checksum of the file containing the downloaded diagnosis keys. As long as the file content (diagnosis keys) does not change, this checksum will not change throughout the relevant time frame of 2 weeks."
                         ]
                     },
                     {
@@ -621,7 +629,7 @@
                         "active": true,
                         "textblock": [
                             "Decentralized data storage on user devices guarantees data privacy.",
-                            "We are working very closely together with experts from the data privacy community and coordinating with one another throughout the development process. We are also working on a separate document dedicated to data security, which will be published soon.",
+                            "We are working very closely together with experts from the data privacy community and coordinating with one another throughout the development process. We also prepared a separate document dedicated to data security, which is published <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf' target='_blank' rel='noopener noreferrer'>here</a> on coronawarn.app.",
                             "Furthermore, the open-source approach of the source code enables the community to review the functionality of the app and to leave comments."
                         ]
                     },
@@ -812,7 +820,7 @@
                         "anchor": "no_log_check",
                         "active": true,
                         "textblock": [
-                            "UDPATE: This notification is no longer displayed since the diagnosis keys are available on the server.", 
+                            "UDPATE: This notification is no longer displayed since the diagnosis keys are available on the server.",
                             "Exposure logging is working, don’t worry. You can find this iOS note under 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'. It means that the back-end server has not sent any diagnosis keys to your device yet. Thus, the Corona-Warn-App hasn’t received any keys to check against the collected random IDs on your phone. As soon as persons diagnosed with COVID-19 have uploaded their diagnosis keys, this check is triggered."
                         ]
                     },

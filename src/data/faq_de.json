@@ -84,18 +84,17 @@
                        "anchor": "iOS_136",
                        "active": true,
                        "textblock": [
-                            "Nach dem Update auf die aktuelle iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, weil Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie auf Englisch im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
-                           "Apple hatte das Problem durch einen Server-Patch schnell gelöst, doch bleiben scheinbar einige Geräte in diesem Fehlerzustand. In vereinzelten Fällen kann es deswegen immer noch vorkommen, dass sich die Risiko-Ermittlung nach dem Update von iOS 13.5.1 auf 13.6 nicht mehr aktivieren lässt. Es handelt sich laut Apple um einige hundert Geräte, auf denen kurz nach Veröffentlichung des Updates das iOS 13.6 eingespielt wurde. Geräte, die das Update einige Tage später erhalten haben, sind davon so gut wie nicht betroffen. Apple versicherte uns gegenüber, mit Hochdruck an einer ganzheitlichen Lösung zu arbeiten.",
-                           "Wenn dieser Fehler bei Ihnen aktuell auftritt, gibt es allerdings bereits jetzt eine von Apple bereitgestellte Möglichkeit, das Problem zu beheben: Laden Sie sich dazu ein Konfigurationsprofil herunter und installieren es auf Ihrem Gerät. Hier eine Schritt-für-Schritt-Anleitung:",
-                           "<ol><li>Laden Sie dieses Konfigurationsprofil herunter: <a href='http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig' target='_blank' rel='noopener noreferrer'>http://appldnld.apple.com/iOSProfiles/Reset_ExposureNotifications.mobileconfig</a></li><li>Öffnen Sie die Einstellungen und wählen Sie 'Profil geladen'.</li><li>Wählen Sie 'Installieren' und folgen Sie den Anweisungen auf dem Bildschirm.</li><li>Starten Sie Ihr iPhone neu, um die Installation abzuschließen.</li><li>Schalten Sie in den Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen' die Begegnungsaufzeichnungen ein.</li><li>Starten Sie die Corona-Warn-App und überprüfen Sie, ob die Risiko-Ermittlung erfolgreich aktiviert wurde.</li></ol>"      ]
+                            "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
+                           "Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1."      ]
                     },
                     {
                         "title": "[Google/Android]: Fehler bei Kommunikation mit Google API (39508)",
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "Das ist ein bekannter Fehler an dem wir bereits intensiv zusammen mit Google arbeiten. Die Begegnungen werden weiterhin aufgezeichnet. Daher bitten wir Sie, die App nicht zu deinstallieren oder zurückzusetzen, da hierbei Ihre aufgezeichneten Begegnungen <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>.",
-                            "Der Fehler besagt, dass die Corona-Warn-App das Exposure Notification Framework zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufallscodes abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab. Der Fehler sollte nach 24 Stunden nicht mehr angezeigt werden."
+                            "Die Meldung besagt, dass die Corona-Warn-App das Exposure Notification Framework zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufallscodes abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab.",
+                            "Dieses Verhalten kann durch verschieden andere Fehler ausgelöst werden, ist jedoch immer nur eine Folgeerscheinung. Die Meldung sollte nach 24 Stunden nicht mehr angezeigt werden. Bitte halten sie die App für diesen Zeitraum geschlossen. Sofern die Meldung auch nach 24h weiterhin auftritt, wenden sie sich bitte an die Hotline oder öffnen ein Issue auf Github.",
+                            "Wir bitten sie, die App nicht zu deinstallieren oder zurückzusetzen, da hierbei ihre aufgezeichneten Kontaktereignisse <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>, und eine Neuinstallation den Fehler nicht lösen kann"
                         ]
                     },
                     {
@@ -241,7 +240,8 @@
                         "anchor": "available_languages",
                         "active": true,
                         "textblock": [
-                            "Die App gibt es aktuell auf Deutsch, Englisch und Türkisch (ab Version 1.1.1). Die Hotline (<a href='tel:+498007540001'>+49 800 7540001</a>) wird auf Deutsch, Englisch und Türkisch bedient. Weitere Sprachen sind geplant. Wir halten Sie auf dem Laufenden.", "Die Sprache der App orientiert sich an der Sprache, die in den Systemeinstellungen Ihres Smartphones eingestellt ist. Um die App etwa auf Englisch anzuzeigen, ändern Sie die Sprache in den Einstellungen Ihres Smartphones auf Englisch."
+                            "Die App ist in den folgenden Sprachen verfügbar:<ul><li>Deutsch</li><li>Englisch</li><li>Türkisch (ab Version 1.1.1)</li><li>Bulgarisch (ab Version 1.2.0)</li><li>Polnisch (ab Version 1.2.0)</li><li>Rumänisch (ab Version 1.2.0)</li></ul>",
+                            "Die Hotline (<a href='tel:+498007540001'>+49 800 7540001</a>) wird auf Deutsch, Englisch und Türkisch bedient. Weitere Sprachen sind geplant. Wir halten Sie auf dem Laufenden.", "Die Sprache der App orientiert sich an der Sprache, die in den Systemeinstellungen Ihres Smartphones eingestellt ist. Um die App etwa auf Englisch anzuzeigen, ändern Sie die Sprache in den Einstellungen Ihres Smartphones auf Englisch."
                         ]
                     },
                     {
@@ -259,7 +259,7 @@
                         "anchor": "age_restriction",
                         "active": true,
                         "textblock": [
-                            "Personen unter 16 Jahren dürfen die App verwenden, wenn ein Erziehungsberechtigter dem zustimmt. Die Altersbeschränkung ab 16 Jahren ist notwendig, da die App im Sinne der Datenschutzgrundverordnung (DSGVO) der EU besonders schützenswerte Daten verarbeitet. Nach Vorgabe der DSGVO können Minderjährige erst nach Vollendung des 16. Lebensjahres wirksam in die Verarbeitung der Daten einwilligen. Dies gilt grundsätzlich für beide Betriebssysteme.",
+                            "Die App Nutzung ist ab 16 Jahren gestattet und richtet sich an Personen, die sich in Deutschland aufhalten. Die Altersbeschränkung ab 16 Jahren ist notwendig, da die App im Sinne der Datenschutzgrundverordnung (DSGVO) der EU besonders schützenswerte Daten verarbeitet. Nach Vorgabe der DSGVO können Minderjährige erst nach Vollendung des 16. Lebensjahres wirksam in die Verarbeitung der Daten einwilligen. Dies gilt grundsätzlich für beide Betriebssysteme.",
                             "Wie streng dies jedoch tatsächlich gehandhabt wird, ist in beiden App Stores unterschiedlich:",
                             "<ul><li>Apple wendet im App Store strengere Kriterien an, darunter auch zu Altersbeschränkungen nach DSGVO. Deshalb ist die App ab '17+' freigegeben, und Apple fordert ggf. einen Altersnachweis an.</li><li>Im Google Play Store gilt dagegen die USK-Spezifikation. Gemäß USK ist die App für alle Altersgruppen zugelassen, deshalb gilt im Google Play Store ein Mindestalter von 0 Jahren.</li></ul>"
                         ]
@@ -328,12 +328,18 @@
                         "active": true,
                         "textblock": [
                             "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden sie unter <a href='#risk_info' target='_blank' rel='noopener noreferrer'>Wie werde ich über ein Infektionsrisiko informiert?</a>",
-                            "Apple: <b>'Begegnungsüberprüfungen'</b> | Android: <b>'Überprüfungen auf mögliche Begegnungen'</b>",
+                            "<b>Begegnungsüberprüfungen</b> (Apple) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
                             "An jedem Tag gibt es für jeden der letzten 14 Tage einen Eintrag, siehe <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge</a>.",
-                            "Apple: <b>'Anzahl der bereitgestellten Schlüssel'</b> | Android: <b>'Anzahl der Schlüssel'</b>",
+                            "<b>Anzahl der bereitgestellten Schlüssel</b> (Apple) | <b>Anzahl der Schlüssel</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
-                            "Apple: <b>'Anzahl der abgeglichenen Schlüssel'</b> | Android: <b>'Anzahl der Treffer'</b>",
-                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter."
+                            "<b>Anzahl der abgeglichenen Schlüssel</b> (Apple) | <b>Anzahl der Treffer</b> (Android)",
+                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
+                            "<b>Zeitstempel</b>",
+                            "Datum und Uhrzeit an dem der Abgleich durchgeführt wurde. Diese ist unabhängig vom Zeitpunkt eventueller Begegnungen, da für jeden Diagnoseschlüssel in der Datei ein separates Gültigkeitsdatum abgelegt ist.",
+                            "<b>Datenquelle</b>",
+                            "App die den Abgleich veranlasst hat. Haben sie z.B. noch Immuni oder SwissCovid installiert, könnten auch deren App-Identifier dort an Stelle von 'Corona-Warn' stehen.",
+                            "<b>Hash</b>",
+                            "Prüfsumme für die Datei der heruntergeladenen Positivschlüssel. Sofern der Dateiinhalt (Positivkennungen) gleich bleibt, verändert sich auch diese Prüfsumme einer Datei für den relevanten Zeitraum von 2 Wochen nicht."
                         ]
                     },
                     {
@@ -622,7 +628,7 @@
                         "active": true,
                         "textblock": [
                             "Die dezentrale Datenspeicherung auf den Geräten garantiert Datenschutz.",
-                            "Wir arbeiten sehr eng mit Experten aus der Datenschutz-Community zusammen und stimmen uns während des Entwicklungsprozesses eng miteinander ab. Zudem arbeiten wir an einem dedizierten Dokument zur Datensicherheit, das schon bald publiziert werden soll.",
+                            "Wir arbeiten sehr eng mit Experten aus der Datenschutz-Community zusammen und stimmen uns während des Entwicklungsprozesses eng miteinander ab. Zudem erarbeiteten wir ein dediziertes Dokument zur Datensicherheit, das Sie <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf' target='_blank' rel='noopener noreferrer'>hier</a> auf coronawarn.app finden.",
                             "Die Quelloffenheit des Codes sorgt zudem dafür, dass die Community die Funktionsweise der App überprüfen und Anmerkungen abgeben kann."
                         ]
                     },
@@ -730,7 +736,7 @@
                         "anchor": "days_active_Android",
                         "active": true,
                         "textblock": [
-                            "AKTUELL: Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank' rel='noopener'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.", 
+                            "AKTUELL: Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank' rel='noopener'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.",
                             "Bei der Zählung der aktiven Tage gibt es derzeit einen Fehler, der dazu führt, dass bei Erreichen von '14 von 14 Tagen aktiv' die Anzeige der Anzahl aktiver Tage nicht bei 14 von 14 Tagen bleibt, sondern statisch auf „13 von 14 Tagen aktiv“ oder weniger stehen bleibt.",
                             "Dieser Fehler betrifft nur die Anzeige der aktiven Tage in der Corona-Warn-App. Die Funktion selbst ist nicht eingeschränkt, das heißt, die Schlüssel werden weiterhin ausgetauscht und die Risiko-Ermittlung wird weiterhin durchgeführt. Es gehen keine Daten verloren. Technisch gesehen handelt es sich hier um einen Rundungsfehler, der auftritt, wenn die Anzahl aktiver Tage der Risiko-Ermittlung nicht mehr zunimmt, sondern statisch bei 14 Tagen bleibt. Wenn die Risiko-Ermittlung auch nur kurzfristig in irgendeiner Form nicht aktiv war, bleibt der Zähler bei einem niedrigeren Wert, also etwa bei 13 Tagen stehen.",
                             "Mögliche Ursachen für eine Deaktivierung der Risiko-Ermittlung:",

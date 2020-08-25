@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
+    "faq-symlinks": "./scripts/symlinks.sh",
     "cypress:open": "cypress open",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:firefox": "cypress run --browser firefox",
@@ -31,6 +32,7 @@
     "gulp-json-transform": "^0.4.7",
     "gulp-load-plugins": "^2.0.3",
     "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sitemap": "^7.6.0",
     "gulp-sourcemaps": "^2.6.5",
