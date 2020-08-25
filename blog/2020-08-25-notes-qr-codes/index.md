@@ -2,11 +2,12 @@
 page-title: "QR Code scanned but no test result in the Corona-Warn-App" 
 page-description: "QR Code scanned but no test result in the Corona-Warn-App" 
 page-name: notes-qr-codes
+page-name_de: notes-qr-codes
 author: Janina Hoerdt
 layout: blog
 ---
 
-The Corona-Warn-App has been active for a few weeks now and has been downloaded over 16 million times. An essential part of the app is the QR code procedure, which allows tested users to report test results to the app pseudonymously. So far, this procedure has been used by more than 25,000 people and about 18,500 test results have been transmitted.
+The Corona-Warn-App has been active for a few weeks now and has been downloaded over 17.5 million times. An essential part of the app is the QR code procedure, which allows tested users to report test results to the app pseudonymously. So far, this procedure has been used by more than 25,000 people and about 18,500 test results have been transmitted.
 <!-- overview -->
 
 If a tested person receives a QR code, they are required to scan it and thus report the results to the app. In some cases, [error messages](https://www.coronawarn.app/en/faq/#qr_test) appear, in others the [test result cannot be retrieved](https://www.coronawarn.app/en/faq/#qr_test). Why is that and what to do in these cases?
