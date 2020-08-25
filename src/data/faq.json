@@ -457,12 +457,14 @@
                         ]
                     },
                     {
-                        "title": "Why is the risk status only updated once a day?",
+                        "title": "How often is the risk status updated?",
                         "anchor": "risk_update_24",
                         "active": true,
                         "textblock": [
-                            "This is due to consistency issues between the app operating systems and to API restrictions. But: Improvements are in the backlog and they will be tackled as soon as possible.",
-                            "For more information, see <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."
+                            "The Corona-Warn-App updates the risk status at least every 24 hours. The actual time can lag behind for a few hours from the time of the day before.",
+                            "Updating only around every 24 hours is due to API restrictions and to ensure consistency between the Corona-Warn-App versions for iOS and Android.",
+                            "For more information, see GitHub comment <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>.",
+                            "Improvements are on their way and they will be worked on as soon as possible."
                         ]
                     },
                     {
@@ -839,7 +841,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated August 6, 2020"
+                            "Updated August 25, 2020"
                         ]
                     }
                 ]
