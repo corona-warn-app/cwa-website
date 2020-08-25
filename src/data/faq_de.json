@@ -446,12 +446,14 @@
                         ]
                     },
                     {
-                        "title": "Warum wird der Risiko-Status nur einmal täglich neu ermittelt?",
+                        "title": "Wie oft wird der Risiko-Status aktualisiert?",
                         "anchor": "risk_update_24",
                         "active": true,
                         "textblock": [
-                            "Um die Konsistenz zwischen den Apps zu gewährleisten und aufgrund von Einschränkungen im API gibt es derzeit diese Einschränkung. Das Thema ist aber aufgenommen und wird so bald wie möglich von der Entwicklung bearbeitet.",
-                            "Mehr Infos finden Sie auf Englisch unter <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>."
+                            "Die Corona-Warn-App aktualisiert den Risiko-Status im Abstand von mindestens 24 Stunden. Dabei kann der genaue Zeitpunkt auch einige Stunden nach dem Zeitpunkt der Aktualisierung am Vortag liegen.",
+                            "Dass nur etwa alle 24 Stunden aktualisiert wird, liegt zum einen an Beschränkungen der Schnittstelle und gewährleistet zum anderen die Konsistenz zwischen den Corona-Warn-App-Versionen für iOS und Android.",
+                            "Eine ausführliche technische Begründung dafür finden Sie in englischer Sprache in Github unter <a href='https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-backlog/issues/2#issuecomment-647740143</a>.",
+                            "Das Thema ist aufgenommen und wird so bald wie möglich von der Entwicklung bearbeitet."
                         ]
                     },
                     {
@@ -830,7 +832,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 6.8.2020"
+                            "Stand: 25.8.2020"
                         ]
                     }
                 ]
