@@ -2,7 +2,6 @@
 page-title: "QR Code scanned but no test result in the Corona-Warn-App" 
 page-description: "QR Code scanned but no test result in the Corona-Warn-App" 
 page-name: notes-qr-codes
-page-name_de: notes-qr-codes
 author: Janina Hoerdt
 layout: blog
 ---
