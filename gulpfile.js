@@ -39,7 +39,18 @@ function isCI() {
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
   'build',
-  gulp.series(clean, buildBlogFiles, gulp.parallel(pages, javascript, images_minify, copy, copyFAQs), images_webp, sass, build_sitemap, createFaqRedirects)
+  gulp.series(
+    clean,
+    cleanBlogs,
+    buildBlogFiles,
+    gulp.parallel(
+      pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
+    ),
+    images_webp,
+    sass,
+    build_sitemap,
+    createFaqRedirects
+  )
 );
 
 gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
@@ -197,6 +208,10 @@ function copyFAQs() {
       return faq;
     }))
     .pipe(gulp.dest(PATHS.dist + "/assets/data"));
+}
+
+function copyFAQRedirects() {
+  return gulp.src("src/data/faq_redirects.json").pipe(gulp.dest(PATHS.dist + "/assets/data"));
 }
 
 // Start a server with BrowserSync to preview the site in
