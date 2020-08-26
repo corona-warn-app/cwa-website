@@ -41,6 +41,7 @@ gulp.task(
   'build',
   gulp.series(
     clean,
+    cleanBlogs,
     buildBlogFiles,
     gulp.parallel(
       pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
