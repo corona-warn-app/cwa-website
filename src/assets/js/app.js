@@ -180,6 +180,7 @@ $(document).ready(function(){
                         location.hash = "#" + replacement;
                     } else {
                         // otherwise, just search for the hash value
+                        searchField.value = hashVal;
                         updateResults(hashVal, faq);
                     }
                 })
