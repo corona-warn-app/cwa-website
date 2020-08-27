@@ -68,7 +68,7 @@ const validatePageName = (folderName, name) => {
     }
 }
 
-const getBlogEntries = (lang, skipRedirects = false) => {
+const getBlogEntries = (lang) => {
   return readdirSync(blogMdPath())
     .filter(folderName => hasValidDate(folderName))
     .sort()
@@ -86,9 +86,6 @@ const getBlogEntries = (lang, skipRedirects = false) => {
       const mdData = frontmatter(fileContent);
       return createPageEntry(folderName, mdData, lang)
     })
-    .filter(entry => {
-      return skipRedirects && entry.redirect === undefined
-    });
 }
 
 const createPageEntry =  (folderName, mdData, lang) => {
