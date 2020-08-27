@@ -85,7 +85,7 @@ const getBlogEntries = (lang) => {
       })();
       const mdData = frontmatter(fileContent);
       return createPageEntry(folderName, mdData, lang)
-    })
+    });
 }
 
 const createPageEntry =  (folderName, mdData, lang) => {
