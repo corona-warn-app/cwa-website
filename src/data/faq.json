@@ -53,23 +53,6 @@
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
-                  {
-                        "title": "[Google/Android] The explanation for a risk encounter on the low risk card is contradictory",
-                        "anchor": "low_risk_text",
-                        "active": true,
-                        "textblock": [
-                            "With the latest update (1.2.0), a misleading explanatory text was introduced for a low risk of infection. If there was an exposure and the app still shows a low risk for you, the risk of infection is still ranked as 'low' and not as 'increased' (as described in the current text).",
-                            "This error has already been corrected. The correction is available with version 1.2.1. Please update the app."
-                        ]
-                    },
-                    {
-                        "title": "[iOS] I cannot open the app",
-                        "anchor": "app_does_not_open",
-                        "active": true,
-                        "textblock": [
-                            "Unfortunately, an error was introduced with the latest update (1.2.0): Many users were not able to open the app. The version 1.2.1 is now available and resolves this issue. Please update your app."
-                        ]
-                    },
                     {
                         "title": "An encounter has been reported, but the risk status stays green",
                         "anchor": "encounter_but_green",
@@ -77,15 +60,6 @@
                         "textblock": [
                             "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has uploaded a diagnosis key on the day to which the diagnosis key belongs.",
                             "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are discarded as harmless. This is why the Corona-Warn-App can display encounters, but the risk status stays the same.", "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
-                        ]
-                    },
-                    {
-                       "title": "[Apple/iOS]: Problems after updating to iOS 13.6",
-                       "anchor": "iOS_136",
-                       "active": true,
-                       "textblock": [
-                            "After updating to the iOS version 13.6, exposure logging couldn't be activated on some iPhones because exposure logging was seemingly not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
-                           "Apple has now released iOS version 13.6.1, which fixes this error. Please update your phone to iOS 13.6.1."
                         ]
                     },
                     {
@@ -186,14 +160,6 @@
                             "If, when opening Corona-Warn-App, the current keys of positively tested users are to be downloaded from the server (because automatic data synchronization was not yet carried out on that day) and no internet connection can be established, you may receive the following error message: 'Cause: 9002, Something went wrong. timeout'. A 'java.net.SocketTimeoutException' is given as the cause under 'Details'. There are two different known causes that can lead to this error:",
                             "<ol><li><b>The internet connection is still being established.</b> If you have just switched on previously deactivated data connections (Wi-Fi or mobile) or restarted your phone and immediately open Corona-Warn-App, the internet connection may not have been fully established yet. There are also special apps that only enable data connections when the screen is switched on. In these cases the error message can occur. <b>Solution:</b> If the internet connection was deactivated or interrupted, wait a few seconds after switching on the internet connection before opening Corona-Warn-App. If you use an app to control data connections, set it up so that data connections in the background are enabled for Corona-Warn-App.</li><li><b>The internet connection is blocked.</b> This can be the case if you have either manually restricted data connections in your phone’s settings or if data connections for Corona-Warn-App have been automatically deactivated by your antivirus app and/or  firewall. <b>Solution:</b> Enable data usage in general as well as background data and unrestricted data usage in the settings of your phone for Corona-Warn-App. If you use an antivirus app and/or firewall on your phone, set it up so that there are no data usage restrictions for Corona-Warn-App.</li></ol>",
                             "Please refer to <a href='https://github.com/corona-warn-app/cwa-app-android/issues/998' target='_blank' rel='noopener noreferrer'>GitHub issue 998</a> for more information."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: 0 keys displayed",
-                        "anchor": "keys0",
-                        "active": true,
-                        "textblock": [
-                            "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                         ]
                     },
                     {
@@ -300,14 +266,6 @@
                         "active": true,
                         "textblock": [
                             "It's not foreseeable at the moment if and when the app will be available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
-                        ]
-                    },
-                    {
-                        "title": "When will the app be ready?",
-                        "anchor": "when_ready",
-                        "active": true,
-                        "textblock": [
-                            "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can also be tracked in the code repositories."
                         ]
                     },
                     {
@@ -723,6 +681,50 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                     {
+                        "title": "[Google/Android]: 0 keys displayed",
+                        "anchor": "keys0",
+                        "active": true,
+                        "textblock": [
+                           "UPDATE: This display error was resolved by a Google Play Services update, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>this GitHub comment</a>.",
+                           "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
+                        ]
+                    },
+                    {
+                        "title": "When will the app be ready?",
+                        "anchor": "when_ready",
+                        "active": true,
+                        "textblock": [
+                            "The app is available since June 16, 2020. You can download it from Google Play Store and Apple App Store. The development progress can still be tracked in the code repositories."
+                        ]
+                    },
+                    {
+                       "title": "[Apple/iOS]: Problems after updating to iOS 13.6",
+                       "anchor": "iOS_136",
+                       "active": true,
+                       "textblock": [
+                            "UPDATE: Apple has now released iOS version 13.6.1, which fixes this error. Please update your phone to iOS 13.6.1.",
+                           "After updating to the iOS version 13.6, exposure logging couldn't be activated on some iPhones because exposure logging was seemingly not be available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS] I cannot open the app",
+                        "anchor": "app_does_not_open",
+                        "active": true,
+                        "textblock": [
+                            "UPDATE: App version 1.2.1 is now available and resolves this issue. Please update your app.",
+                            "Unfortunately, an error was introduced with the latest update (1.2.0): Many users were not able to open the app."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android] The explanation for a risk encounter on the low risk card is contradictory",
+                        "anchor": "low_risk_text",
+                        "active": true,
+                        "textblock": [
+                             "UPDATE: This error has already been corrected. The correction is available with app version 1.2.1. Please update the app.",
+                            "With the latest update (1.2.0), a misleading explanatory text was introduced for a low risk of infection. If there was an exposure and the app still shows a low risk for you, the risk of infection is still ranked as 'low' and not as 'increased' (as described in the current text)."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: wrong number of active days",
                         "anchor": "days_active_Apple",
@@ -841,7 +843,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated August 25, 2020"
+                            "Updated August 27, 2020"
                         ]
                     }
                 ]
