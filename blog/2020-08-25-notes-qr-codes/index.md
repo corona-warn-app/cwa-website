@@ -7,7 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-The Corona-Warn-App has been active for a few weeks now and has been downloaded over 17.5 million times. An essential part of the app is the QR code procedure, which allows tested users to report test results to the app pseudonymously. So far, more than 440,000 test results have been digitally transmitted. 
+The Corona-Warn-App has been active for a few weeks now and has been downloaded over 17.6 million times. An essential part of the app is the QR code procedure, which allows tested users to report test results to the app pseudonymously. 
 <!-- overview -->
 
 If a tested person receives a QR code, they are required to scan it and thus report the results to the app. In some cases, [error messages](https://www.coronawarn.app/en/faq/#qr_test) appear, in others the [test result cannot be retrieved](https://www.coronawarn.app/en/faq/#qr_test). Why is that and what to do in these cases?
