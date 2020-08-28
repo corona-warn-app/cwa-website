@@ -146,7 +146,8 @@ $(document).ready(function(){
     if(searchField !== null){
         let faq = {};
         // do an AJAX call to get the searchable FAQ document
-        $.get("faq.json", (data) => {
+        // Converter ensures that even malformed mime-types are converted directly to JSON
+        $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
             faq = data;
             let faqCount = Object.keys(data).length.toString();
             document.getElementById("match-count").innerHTML = faqCount + "/" + faqCount;
