@@ -49,6 +49,10 @@ npm start
 
 It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
+### Changing Things
+
+Manuals for the most common use cases of updating website content are available in the [docs folder](./docs/).
+
 ### Testing
 
 [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. tests are located in the ```cypress/integration``` folder and can be run with:
