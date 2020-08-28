@@ -1,5 +1,9 @@
 {{#if title}}
-<h4 class="headline{{#if id}} js-anchor{{/if}}"{{#if id}} id="{{id}}"{{/if}}>{{{title}}}</h4>
+    {{#if large-title}}
+    <h2 class="headline{{#if id}} js-anchor{{/if}}"{{#if id}} id="{{id}}"{{/if}}>{{{title}}}</h2>
+    {{else}}
+    <h4 class="headline{{#if id}} js-anchor{{/if}}"{{#if id}} id="{{id}}"{{/if}}>{{{title}}}</h4>
+    {{/if}}
 {{/if}}
 {{#if text}}
 <p>{{{text}}}</p>

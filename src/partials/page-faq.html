@@ -28,12 +28,12 @@
 
     {{#each page-contents.section-main.sections}}
 
-      {{> text-component this=.}}
+      {{> text-component this=. large-title=true}}
       <dl class="accordion js-accordion" data-toggle="accordion-header">
       {{#each accordion}}
         <div id="{{anchor}}-div">
           <dt class="accordion-header{{#if active}} active{{/if}}">
-            <h4 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h4>
+            <h3 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h3>
             <span class="accordion-item-icon"></span>
           </dt>
           <dd class="accordion-body">
