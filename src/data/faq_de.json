@@ -54,12 +54,12 @@
                 "id": "most_asked",
                 "accordion": [
                     {
-                        "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
+                        "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                         "anchor": "encounter_but_green",
                         "active": true,
                         "textblock": [
                             "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, sind sich am angegebenen Tag begegnet.",
-                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risikoermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
+                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
                         ]
                     },
                     {
@@ -85,10 +85,11 @@
                         ]
                     },
                     {
-                        "title": "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
+                        "title": "Probleme mit dem QR-Code",
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
+                            "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
                             "In einigen Fällen kann es vorkommen, dass Sie einen QR-Code erhalten haben, der nicht mit dem Testabrufsystem der Corona-Warn-App kompatibel ist bzw. nicht für den Abruf des Tests freigeschaltet wurde. Um diese Probleme auszuschließen, prüfen Sie bitte, ob das ärztliche Fachpersonal Sie explizit auf die Möglichkeit des Abrufs des Testergebnisses mit der Corona-Warn-App hingewiesen hat und das korrekte Formular verwendet wurde. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert. Einen Beispielvordruck des korrekten Formulars 10C finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400#issuecomment-669937832' target='_blank' rel='noopener noreferrer'>auf GitHub</a>. Hier muss unbedingt das Feld 9 'Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App' angekreuzt sein.",
                             "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass das entsprechende Labor noch nicht vollständig mit der Corona-Warn-App zusammenarbeitet. Rufen Sie dann bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Derzeit sind 70-80% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss.",
                             "Wir prüfen gerade, wie die Verbesserung der Benutzerschnittstelle der App verbessert werden kann, um nicht funktionierende QR-Codes erkennen und Sie darüber informieren zu können. Weitere Details zu den Fehlern finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>auf GitHub</a>."
@@ -126,7 +127,7 @@
                         ]
                     },
                     {
-                        "title": "Risiko-Begegnungen werden länger als 14 Tage angezeigt",
+                        "title": "[Google/Android]: Risiko-Begegnungen werden länger als 14 Tage angezeigt",
                         "anchor": "status_14",
                         "active": true,
                         "textblock": [
@@ -139,7 +140,7 @@
                         "anchor": "notif_weekly_update",
                         "active": true,
                         "textblock": [
-                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert-Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risikoermittlung unzureichend sind. Eine zuverlässige Risikoermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert-Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
+                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risiko-Ermittlung unzureichend sind. Eine zuverlässige Risiko-Ermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
                         ]
                     },
                     {
@@ -302,7 +303,7 @@
                             "<b>Anzahl der bereitgestellten Schlüssel</b> (Apple) | <b>Anzahl der Schlüssel</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
                             "<b>Anzahl der abgeglichenen Schlüssel</b> (Apple) | <b>Anzahl der Treffer</b> (Android)",
-                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
+                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
                             "<b>Zeitstempel</b>",
                             "Datum und Uhrzeit an dem der Abgleich durchgeführt wurde. Diese ist unabhängig vom Zeitpunkt eventueller Begegnungen, da für jeden Diagnoseschlüssel in der Datei ein separates Gültigkeitsdatum abgelegt ist.",
                             "<b>Datenquelle</b>",
@@ -343,7 +344,7 @@
                         "anchor": "migration_Apple",
                         "active": true,
                         "textblock": [
-                            "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risikoermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
+                            "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risiko-Ermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
                             "Das ist leider ein bekanntes Problem mit der Sicherung der Zufallscodes, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.",
                             "Bitte installieren Sie die Corona-Warn-App auf Ihrem neuen iPhone neu."
                         ]
@@ -765,7 +766,7 @@
                         "active": true,
                         "textblock": [
                             "AKTUELL: Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank' rel='noopener'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.",
-                            "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risikoermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
+                            "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risiko-Ermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
                             "Sollten sie die App nach Erreichen der 14 Tage deaktivieren, kann die Anzeige auch zurückspringen auf 13 (oder weniger) aktive Tage. Dies kann z.B. durch eine der folgenden Aktionen ausgelöst werden:<ul><li>Bluetooth deaktivieren</li><li>Hintergrundaktualisierung für die App abschalten, sodass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Einschalten des Flugmodus</li><li>Ausschalten des Smartphones</li><li>Neustart des Smartphones</li></ul>"
                         ]
                     },
@@ -775,7 +776,7 @@
                         "active": true,
                         "textblock": [
                             "AKTUELL: Dieser Fehler ist mit der Version 1.5 des Exposure Notification Frameworks behoben. So sehen Sie nach, welche Version Sie installiert haben: <a href='#ENF_version' target='_blank' rel='noopener'>Welche Version des COVID-19-Kontaktprotokolls habe ich?</a>",
-                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risikoermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
+                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risiko-Ermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
                         ]
                     },
                     {

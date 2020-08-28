@@ -214,4 +214,13 @@ $(document).ready(function(){
             history.pushState("", document.title, window.location.pathname + window.location.search);
         })
     }
+
+    // smooth scrolling to anchor tag when clicking anchor link
+    $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 600);
+    });
 });
