@@ -40,7 +40,7 @@
                             "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Sie sollten mindestens Version 1.1.1 verwenden. Wenn eine niedrigere Version installiert ist, öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
                             "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
                             "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. <b>Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:</b>",
-                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivät'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivät und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
+                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivität'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivität und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
                             "Sie können in den Energiespar-Einstellungen Ihres Smartphones sicherstellen, dass für die Corona-Warn-App eine Ausnahme vom Energiesparen festgelegt ist:",
                             "Leider kann es sein, dass Sie bei einigen Smartphones die priorisierte Hintergrundaktivität nicht in den Einstellungen in der App einschalten können. Sie können die priorisierte Hintergrundaktivität dennoch aktivieren: Das machen Sie direkt in den Energiespar-Einstellungen Ihres Smartphones. Legen Sie dort eine Ausnahme für die Corona-Warn-App fest. Sollte dies immer noch nicht dazu führen, dass der Risikostatus automatisch im Hintergrund aktualisiert wird, schreiben Sie uns bitte einen Kommentar mit dem Smartphone-Typ und der installierten Version der App und der COVID-19-Benachrichtigungen in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub-Issue 933</a>.",
                             "Wenn mit der neuesten Version das Problem immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag.",
@@ -53,23 +53,6 @@
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
-                  {
-                        "title": "[Google/Android] Der Text für das niedrige Risiko ist widersprüchlich",
-                        "anchor": "low_risk_text",
-                        "active": true,
-                        "textblock": [
-                            "In dem erklärenden Text für ein niedriges Infektionsrisiko wurde mit dem letzten Update eine sich widersprechende Beschreibung eingefügt. Wenn Sie eine Risiko-Begegnung hatten, die App aber weiter ein niedriges Risiko für Sie anzeigt, dann wird die Infektionswahrscheinlichkeit für Sie als niedrig eingestuft und nicht wie im Text derzeit geschrieben als erhöht.",
-                            "Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App."
-                        ]
-                    },
-                    {
-                        "title": "[iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
-                        "anchor": "app_does_not_open",
-                        "active": true,
-                        "textblock": [
-                            "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten. Inzwischen steht die Version 1.2.1 zur Verfügung, die dieses Problem behebt."
-                        ]
-                    },
                     {
                         "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                         "anchor": "encounter_but_green",
@@ -78,14 +61,6 @@
                             "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, sind sich am angegebenen Tag begegnet.",
                             "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
                         ]
-                    },
-                    {
-                       "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
-                       "anchor": "iOS_136",
-                       "active": true,
-                       "textblock": [
-                            "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
-                           "Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1."      ]
                     },
                     {
                         "title": "[Google/Android]: Fehler bei Kommunikation mit Google API (39508)",
@@ -186,14 +161,6 @@
                             "Wenn beim Öffnen der Corona-Warn-App aktuelle Schlüssel positiv getesteter Nutzer vom Server heruntergeladen werden sollen (weil an diesem Tag noch kein automatischer Datenabgleich erfolgt war) und dabei keine Internetverbindung hergestellt werden kann, wird Ihnen möglicherweise eine Fehlermeldung 'Ursache: 9002, Etwas ist schiefgelaufen. timeout' angezeigt. Unter 'Details' wird als Ursache eine 'java.net.SocketTimeoutException' angegeben. Es sind zwei unterschiedliche Ursachen bekannt, die zu diesem Fehler führen können:",
                             "<ol><li><b>Die Internetverbindung befindet sich noch im Aufbau.</b> Wenn Sie deaktivierte Datenverbindungen (WLAN oder mobil) gerade eingeschaltet oder Ihr Smartphone neu gestartet haben und sogleich die Corona-Warn-App öffnen, wurde die Internetverbindung möglicherweise noch nicht vollständig hergestellt. Zudem gibt es spezielle Apps, die Datenverbindungen erst dann freigeben, wenn der Bildschirm angeschaltet wird. In diesen Fällen ist das Auftreten des Fehlers möglich. <b>Lösung:</b> War die Internetverbindung deaktiviert oder unterbrochen, warten Sie nach dem Einschalten der Internetverbindung einige Sekunden, bevor Sie die Corona-Warn-App öffnen. Falls Sie eine App zur Kontrolle von Datenverbindungen nutzen, stellen Sie sie so ein, dass Datenverbindungen im Hintergrund für die Corona-Warn-App freigegeben sind.</li><li><b>Die Internetverbindung wird blockiert.</b> Dies kann der Fall sein, wenn Sie entweder Datenverbindungen in den Einstellungen Ihres Smartphones manuell eingeschränkt haben oder wenn Datenverbindungen für die Corona-Warn-App von einer Antivirus-App und/oder einer Firewall automatisch deaktiviert wurden. <b>Lösung:</b> Geben Sie in den Einstellungen Ihres Smartphones (Netzwerk und Internet, Mobile Daten und WLAN) für die Corona-Warn-App die Datennutzung im Allgemeinen, sowie Hintergrunddaten und uneingeschränkte Datennutzung frei. Falls Sie eine Antivirus-App und/oder eine Firewall auf Ihrem Smartphone nutzen, stellen Sie sie so ein, dass für die Corona-Warn-App keine Einschränkungen in der Datennutzung bestehen.</li></ol>",
                             "In dem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/998' target='_blank' rel='noopener noreferrer'>GitHub-Issue 998</a> finden Sie weitere Informationen (englisch)."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
-                        "anchor": "keys0",
-                        "active": true,
-                        "textblock": [
-                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
                         ]
                     },
                     {
@@ -300,14 +267,6 @@
                         "active": true,
                         "textblock": [
                             "Es ist im Moment nicht absehbar, wann und ob wir die App in anderen App Stores außer denen von Google oder Apple zur Verfügung stellen können. Die App wird die Apple und Google Exposure Notification APIs verwenden. Die Community kann sich gerne einbringen und die App für andere APIs übernehmen."
-                        ]
-                    },
-                    {
-                        "title": "Wann ist die App fertig?",
-                        "anchor": "when_ready",
-                        "active": true,
-                        "textblock": [
-                            "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."
                         ]
                     },
                     {
@@ -741,6 +700,49 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                     {
+                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
+                        "anchor": "keys0",
+                        "active": true,
+                        "textblock": [
+                            "AKTUELL: Dieser Anzeigefehler wurde über ein Update der Google Play Services behoben, siehe <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>diesen GitHub-Kommentar</a> in englischer Sprache.",
+                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
+                        ]
+                    },
+                    {
+                        "title": "Wann ist die App fertig?",
+                        "anchor": "when_ready",
+                        "active": true,
+                        "textblock": [
+                            "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann weiterhin in den einzelnen Code-Repositories verfolgt werden."
+                        ]
+                    },
+                    {
+                       "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
+                       "anchor": "iOS_136",
+                       "active": true,
+                       "textblock": [
+                            "AKTUELL: Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1.",
+                           "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."   ]
+                    },
+                    {
+                        "title": "[Apple/iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
+                        "anchor": "app_does_not_open",
+                        "active": true,
+                        "textblock": [
+                           "AKTUELL: Inzwischen steht die App-Version 1.2.1 zur Verfügung, die dieses Problem behebt. Bitte aktualisieren Sie die App.",
+                           "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android] Der Text für das niedrige Risiko ist widersprüchlich",
+                        "anchor": "low_risk_text",
+                        "active": true,
+                        "textblock": [
+                            "AKTUELL: Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab App-Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App.",
+                            "In dem erklärenden Text für ein niedriges Infektionsrisiko wurde mit dem letzten Update eine sich widersprechende Beschreibung eingefügt. Wenn Sie eine Risiko-Begegnung hatten, die App aber weiter ein niedriges Risiko für Sie anzeigt, dann wird die Infektionswahrscheinlichkeit für Sie als niedrig eingestuft und nicht wie im Text derzeit geschrieben als erhöht."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Falsche Anzeige der Zahl aktiver Tage",
                         "anchor": "days_active_Apple",
@@ -861,7 +863,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 25.8.2020"
+                            "Stand: 28.8.2020"
                         ]
                     }
                 ]
