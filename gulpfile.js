@@ -194,15 +194,9 @@ function images_webp() {
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
-function copyFAQs(done){
-  copyFAQ("de");
-  copyFAQ("en");
-  done();
-}
-
-function copyFAQ(lang) {
+function copyFAQs() {
   return gulp
-    .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
+    .src(["src/data/faq.json", "src/data/faq_de.json"])
     .pipe(jsonTransform(function (data, file) {
       let faq = {}
       data['section-main'].sections.forEach((section) => {
@@ -213,8 +207,7 @@ function copyFAQ(lang) {
       });
       return faq;
     }))
-    .pipe(rename('faq.json'))
-    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/`));
+    .pipe(gulp.dest(PATHS.dist + "/assets/data"));
 }
 
 function copyFAQRedirects() {
