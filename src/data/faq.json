@@ -367,7 +367,7 @@
                             "In the current version, uninstalling the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
                             "On Android devices, the current implementation <a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api#methods' target='_blank' rel='noopener noreferrer'>deletes the 'database and keys' from the device</a> when uninstalling the app. Hence, you should expect that the collected random IDs are deleted when the app is uninstalled.",
                             "The way un-installation is handled can change without notice and without changes to the Corona-Warn-App itself. Therefore, only uninstall the app as a last resort to resolve an error and only when instructed to, e.g., by the hotline or developers on GitHub.",
-                            "We recommend that before you un- and re-install the app, you try clearing the app data first as this will not delete the random IDs:",
+                            "We recommend that before you re-install the app, you try clearing the app data first as this will not delete the random IDs:",
                             "<ul><li>On iOS devices, choose 'Settings' -> 'Reset App' on the home screen.</li><li>On Android devices, choose the three dots at the top right corner of the home screen and select 'Settings' -> 'Reset App'.</li></ul>"
                         ]
                     },
