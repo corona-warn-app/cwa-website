@@ -21,7 +21,9 @@
                         srcset="{{page-contents.section-main.image.url-webp}}"
                         type="image/webp">
                     <img class="section-main-image"
-                        src="{{page-contents.section-main.image.url}}""title="{{page-contents.section-main.image.title}}"
+                        src="{{page-contents.section-main.image.url}}"
+                        title="{{page-contents.section-main.image.title}}"
+                        alt="{{page-contents.section-main.image.alt}}"
                         />
                 </picture>
             </div>
@@ -43,7 +45,9 @@ section-cancelable=true}}
 
                 <picture class="image-overflow image-overflow_left">
                     <img class="image-overflow image-overflow_left"
-                        src="{{page-contents.section-works-best.image.url}}""title="{{page-contents.section-works-best.image.title}}"
+                        src="{{page-contents.section-works-best.image.url}}"
+                        title="{{page-contents.section-works-best.image.title}}"
+                        alt="{{page-contents.section-works-best.image.alt}}"
                         />
                 </picture>
 
@@ -105,7 +109,7 @@ section-cancelable=true}}
             {{/unless}}
             {{#if page-contents.section-boxes.slider}}
             {{#ifequal page-contents.section-boxes.slider.target 'blog'}}
-            
+
             {{#if lang_de}}
             {{> slider-component slides=blogentries.de
             amount=page-contents.section-boxes.slider.amount
@@ -140,7 +144,9 @@ section-cancelable=true}}
 
                 <picture class="image-overflow image-overflow_left">
                     <img class="image-overflow image-overflow_left"
-                        src="{{page-contents.section-image-text.image.url}}""title="{{page-contents.section-image-text.image.title}}"
+                        src="{{page-contents.section-image-text.image.url}}"
+                        title="{{page-contents.section-image-text.image.title}}"
+                        alt="{{page-contents.section-works-best.image.alt}}"
                         />
                 </picture>
 
@@ -175,10 +181,12 @@ section-cancelable=true}}
             <ul class="list row">
                 {{#each list}}
                 <li class="list-item col col-12 col-md-6">
-                    <div class="text-block_indented"><span class="numeration"><img
-                                class="icon"
-                                src="/assets/img/icons/virus.svg" alt="" /></span>{{>
-                        text-component this=.}}</div>
+                    <div class="text-block_indented">
+                        <span class="numeration">
+                            <img class="icon" src="/assets/img/icons/virus.svg" alt="Coronavirus - COVID-19" />
+                        </span>
+                        {{>text-component this=.}}
+                    </div>
                 </li>
                 {{/each}}
             </ul>
