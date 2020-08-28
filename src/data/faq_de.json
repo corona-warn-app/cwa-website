@@ -40,7 +40,7 @@
                             "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Sie sollten mindestens Version 1.1.1 verwenden. Wenn eine niedrigere Version installiert ist, öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
                             "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
                             "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. <b>Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:</b>",
-                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivät'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivät und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
+                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivität'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivität und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
                             "Sie können in den Energiespar-Einstellungen Ihres Smartphones sicherstellen, dass für die Corona-Warn-App eine Ausnahme vom Energiesparen festgelegt ist:",
                             "Leider kann es sein, dass Sie bei einigen Smartphones die priorisierte Hintergrundaktivität nicht in den Einstellungen in der App einschalten können. Sie können die priorisierte Hintergrundaktivität dennoch aktivieren: Das machen Sie direkt in den Energiespar-Einstellungen Ihres Smartphones. Legen Sie dort eine Ausnahme für die Corona-Warn-App fest. Sollte dies immer noch nicht dazu führen, dass der Risikostatus automatisch im Hintergrund aktualisiert wird, schreiben Sie uns bitte einen Kommentar mit dem Smartphone-Typ und der installierten Version der App und der COVID-19-Benachrichtigungen in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub-Issue 933</a>.",
                             "Wenn mit der neuesten Version das Problem immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag.",
@@ -53,39 +53,14 @@
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
-                  {
-                        "title": "[Google/Android] Der Text für das niedrige Risiko ist widersprüchlich",
-                        "anchor": "low_risk_text",
-                        "active": true,
-                        "textblock": [
-                            "In dem erklärenden Text für ein niedriges Infektionsrisiko wurde mit dem letzten Update eine sich widersprechende Beschreibung eingefügt. Wenn Sie eine Risiko-Begegnung hatten, die App aber weiter ein niedriges Risiko für Sie anzeigt, dann wird die Infektionswahrscheinlichkeit für Sie als niedrig eingestuft und nicht wie im Text derzeit geschrieben als erhöht.",
-                            "Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App."
-                        ]
-                    },
                     {
-                        "title": "[iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
-                        "anchor": "app_does_not_open",
-                        "active": true,
-                        "textblock": [
-                            "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten. Inzwischen steht die Version 1.2.1 zur Verfügung, die dieses Problem behebt."
-                        ]
-                    },
-                    {
-                        "title": "Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
+                        "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                         "anchor": "encounter_but_green",
                         "active": true,
                         "textblock": [
                             "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Corona-positiv getesteten Person, die die Positivkennung hochgeladen hat, sind sich am angegebenen Tag begegnet.",
-                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risikoermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
+                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich verworfen. Deswegen kann die Corona-Warn-App Ihnen Begegnungen gemeldet haben, ohne dass die Risikobewertung sich ändert.", "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
                         ]
-                    },
-                    {
-                       "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
-                       "anchor": "iOS_136",
-                       "active": true,
-                       "textblock": [
-                            "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>.",
-                           "Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1."      ]
                     },
                     {
                         "title": "[Google/Android]: Fehler bei Kommunikation mit Google API (39508)",
@@ -110,10 +85,11 @@
                         ]
                     },
                     {
-                        "title": "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
+                        "title": "Probleme mit dem QR-Code",
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
+                            "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
                             "In einigen Fällen kann es vorkommen, dass Sie einen QR-Code erhalten haben, der nicht mit dem Testabrufsystem der Corona-Warn-App kompatibel ist bzw. nicht für den Abruf des Tests freigeschaltet wurde. Um diese Probleme auszuschließen, prüfen Sie bitte, ob das ärztliche Fachpersonal Sie explizit auf die Möglichkeit des Abrufs des Testergebnisses mit der Corona-Warn-App hingewiesen hat und das korrekte Formular verwendet wurde. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert. Einen Beispielvordruck des korrekten Formulars 10C finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400#issuecomment-669937832' target='_blank' rel='noopener noreferrer'>auf GitHub</a>. Hier muss unbedingt das Feld 9 'Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App' angekreuzt sein.",
                             "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass das entsprechende Labor noch nicht vollständig mit der Corona-Warn-App zusammenarbeitet. Rufen Sie dann bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Derzeit sind 70-80% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss.",
                             "Wir prüfen gerade, wie die Verbesserung der Benutzerschnittstelle der App verbessert werden kann, um nicht funktionierende QR-Codes erkennen und Sie darüber informieren zu können. Weitere Details zu den Fehlern finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>auf GitHub</a>."
@@ -151,7 +127,7 @@
                         ]
                     },
                     {
-                        "title": "Risiko-Begegnungen werden länger als 14 Tage angezeigt",
+                        "title": "[Google/Android]: Risiko-Begegnungen werden länger als 14 Tage angezeigt",
                         "anchor": "status_14",
                         "active": true,
                         "textblock": [
@@ -164,7 +140,7 @@
                         "anchor": "notif_weekly_update",
                         "active": true,
                         "textblock": [
-                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert-Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risikoermittlung unzureichend sind. Eine zuverlässige Risikoermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert-Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
+                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risiko-Ermittlung unzureichend sind. Eine zuverlässige Risiko-Ermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
                         ]
                     },
                     {
@@ -188,15 +164,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
-                        "anchor": "keys0",
-                        "active": true,
-                        "textblock": [
-                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
-                        ]
-                    },
-                    {
-                        "title": "Probleme mit anderen Apps und Geräten, die Bluetooth verwenden",
+                        "title": "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
                         "anchor": "various_device_problems",
                         "active": true,
                         "textblock": [
@@ -307,14 +275,6 @@
                         ]
                     },
                     {
-                        "title": "Wann ist die App fertig?",
-                        "anchor": "when_ready",
-                        "active": true,
-                        "textblock": [
-                            "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann darüber hinaus in den einzelnen Code-Repositories verfolgt werden."
-                        ]
-                    },
-                    {
                         "title": "Wo bekomme ich die App?",
                         "anchor": "where_to_get",
                         "active": true,
@@ -348,7 +308,7 @@
                             "<b>Anzahl der bereitgestellten Schlüssel</b> (Apple) | <b>Anzahl der Schlüssel</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
                             "<b>Anzahl der abgeglichenen Schlüssel</b> (Apple) | <b>Anzahl der Treffer</b> (Android)",
-                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risikobegegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
+                            "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
                             "<b>Zeitstempel</b>",
                             "Datum und Uhrzeit an dem der Abgleich durchgeführt wurde. Diese ist unabhängig vom Zeitpunkt eventueller Begegnungen, da für jeden Diagnoseschlüssel in der Datei ein separates Gültigkeitsdatum abgelegt ist.",
                             "<b>Datenquelle</b>",
@@ -389,7 +349,7 @@
                         "anchor": "migration_Apple",
                         "active": true,
                         "textblock": [
-                            "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risikoermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
+                            "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risiko-Ermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
                             "Das ist leider ein bekanntes Problem mit der Sicherung der Zufallscodes, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.",
                             "Bitte installieren Sie die Corona-Warn-App auf Ihrem neuen iPhone neu."
                         ]
@@ -440,6 +400,16 @@
                         "active": true,
                         "textblock": [
                             "Nein, das ist leider nicht möglich. Jedes positive Test-Ergebnis, das in die App geladen wird, muss zuvor von Laboren überprüft worden sein. Diese stellen sicher, dass kein Missbrauch stattfindet und keine falsche Ergebnisse eingetragen werden. Dazu sind zur Zeit nur Labore in Deutschland angeschlossen. Sie können also kein positives Testergebnis aus anderen Ländern, zum Beispiel aus den Niederlanden, eingeben."
+                        ]
+                    },
+                    {
+                        "title": "Kann die Corona-Warn-App die Krankschreibung vom Arzt ersetzen?",
+                        "anchor": "sick_leave",
+                        "active": true,
+                        "textblock": [
+                            "Nein, das kann sie nicht. Das Verfahren des QR-Codes wurde zur Verifizierung von positiven Testergebnissen entwickelt. Die Information über die Corona-Warn-App ersetzt nicht den Befundbrief bzw. die Information vom Arzt oder Labor. Nur sie können Ihnen auch einen Nachweis für Ihren Arbeitgeber geben. ",
+                            "Der Grund ist folgender: Weil die Corona-Warn-App den dezentralen Ansatz verfolgt, enthalten die Benachrichtigungen der Corona-Warn-App keine persönlichen Informationen wie Name oder Geburtsdatum. Diese Identifizierungsmerkmale sind jedoch für eine Befreiung aus der Quarantäne notwendig.",
+                            "Zusätzlich zur Anzeige Ihres Ergebnisses in der Corona-Warn-App sollten Sie immer eine schriftliche Nachricht durch das Labor, die Teststelle oder Ihre Arztpraxis bekommen."
                         ]
                     },
                     {
@@ -500,6 +470,14 @@
                         "textblock": [
                             "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Sie können selbst entscheiden, ob Sie die Testergebnisse abrufen und ob Sie sie bei einem positiven Befund als Diagnoseschlüssel ('Positivkennung') übermitteln – nichts geschieht ohne Ihre Zustimmung.",
                             "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Begegnungsaufzeichnungen deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren. Bei der Deinstallation können alle aufgezeichneten Begegnungen verloren gehen, siehe <a href='#delete_random_ids' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes beim Deinstallieren der App entfernt?</a>."
+                        ]
+                    },
+                    {
+                        "title": "Wie oft wurde die Corona-Warn-App bisher heruntergeladen? Wie viele TeleTANs wurden ausgegeben?",
+                        "anchor": "numbers_RKI",
+                        "active": true,
+                        "textblock": [
+                            "Diese und weitere aktuelle Zahlen stellt das Robert Koch-Institut <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Kennzahlen.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'> auf seiner Webseite</a> zur Verfügung."
                         ]
                     },
                     {
@@ -727,6 +705,49 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                     {
+                        "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
+                        "anchor": "keys0",
+                        "active": true,
+                        "textblock": [
+                            "AKTUELL: Dieser Anzeigefehler wurde über ein Update der Google Play Services behoben, siehe <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>diesen GitHub-Kommentar</a> in englischer Sprache.",
+                            "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
+                        ]
+                    },
+                    {
+                        "title": "Wann ist die App fertig?",
+                        "anchor": "when_ready",
+                        "active": true,
+                        "textblock": [
+                            "Die App steht seit dem 16. Juni 2020 im App Store von Apple bzw. im Google Play Store zum Download zur Verfügung. Der Entwicklungsfortschritt kann weiterhin in den einzelnen Code-Repositories verfolgt werden."
+                        ]
+                    },
+                    {
+                       "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
+                       "anchor": "iOS_136",
+                       "active": true,
+                       "textblock": [
+                            "AKTUELL: Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1.",
+                           "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."   ]
+                    },
+                    {
+                        "title": "[Apple/iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
+                        "anchor": "app_does_not_open",
+                        "active": true,
+                        "textblock": [
+                           "AKTUELL: Inzwischen steht die App-Version 1.2.1 zur Verfügung, die dieses Problem behebt. Bitte aktualisieren Sie die App.",
+                           "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android] Der Text für das niedrige Risiko ist widersprüchlich",
+                        "anchor": "low_risk_text",
+                        "active": true,
+                        "textblock": [
+                            "AKTUELL: Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab App-Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App.",
+                            "In dem erklärenden Text für ein niedriges Infektionsrisiko wurde mit dem letzten Update eine sich widersprechende Beschreibung eingefügt. Wenn Sie eine Risiko-Begegnung hatten, die App aber weiter ein niedriges Risiko für Sie anzeigt, dann wird die Infektionswahrscheinlichkeit für Sie als niedrig eingestuft und nicht wie im Text derzeit geschrieben als erhöht."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Falsche Anzeige der Zahl aktiver Tage",
                         "anchor": "days_active_Apple",
@@ -768,7 +789,7 @@
                         "active": true,
                         "textblock": [
                             "AKTUELL: Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank' rel='noopener'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.",
-                            "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risikoermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
+                            "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risiko-Ermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
                             "Sollten sie die App nach Erreichen der 14 Tage deaktivieren, kann die Anzeige auch zurückspringen auf 13 (oder weniger) aktive Tage. Dies kann z.B. durch eine der folgenden Aktionen ausgelöst werden:<ul><li>Bluetooth deaktivieren</li><li>Hintergrundaktualisierung für die App abschalten, sodass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Einschalten des Flugmodus</li><li>Ausschalten des Smartphones</li><li>Neustart des Smartphones</li></ul>"
                         ]
                     },
@@ -778,7 +799,7 @@
                         "active": true,
                         "textblock": [
                             "AKTUELL: Dieser Fehler ist mit der Version 1.5 des Exposure Notification Frameworks behoben. So sehen Sie nach, welche Version Sie installiert haben: <a href='#ENF_version' target='_blank' rel='noopener'>Welche Version des COVID-19-Kontaktprotokolls habe ich?</a>",
-                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risikoermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
+                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risiko-Ermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
                         ]
                     },
                     {
@@ -847,7 +868,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 25.8.2020"
+                            "Stand: 28.8.2020"
                         ]
                     }
                 ]

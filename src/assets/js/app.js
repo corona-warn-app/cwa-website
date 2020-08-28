@@ -145,12 +145,9 @@ $(document).ready(function(){
     let searchField = document.getElementById("faq-search");
     if(searchField !== null){
         let faq = {};
-        // determine the right filename suffix based on the path
-        let lang = window.location.pathname.slice(0,3);
-        let fn = "faq" + (lang === "/de" ? "_de" : "") + ".json";
-
-        // do an AJAX call to get the right FAQ document
-        $.get("/assets/data/" + fn, (data) => {
+        // do an AJAX call to get the searchable FAQ document
+        // Converter ensures that even malformed mime-types are converted directly to JSON
+        $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
             faq = data;
             let faqCount = Object.keys(data).length.toString();
             document.getElementById("match-count").innerHTML = faqCount + "/" + faqCount;
@@ -214,4 +211,13 @@ $(document).ready(function(){
             history.pushState("", document.title, window.location.pathname + window.location.search);
         })
     }
+
+    // smooth scrolling to anchor tag when clicking anchor link
+    $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 600);
+    });
 });
