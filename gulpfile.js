@@ -194,20 +194,27 @@ function images_webp() {
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
-function copyFAQs() {
+function copyFAQs(done){
+  copyFAQ("de");
+  copyFAQ("en");
+  done();
+}
+
+function copyFAQ(lang) {
   return gulp
-    .src(["src/data/faq.json", "src/data/faq_de.json"])
+    .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
     .pipe(jsonTransform(function (data, file) {
       let faq = {}
       data['section-main'].sections.forEach((section) => {
         section.accordion.forEach((faqEntry) => {
           let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-          faq[faqEntry.anchor] = searchEntry.toLowerCase();
+          faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
         })
       });
       return faq;
     }))
-    .pipe(gulp.dest(PATHS.dist + "/assets/data"));
+    .pipe(rename('faq.json'))
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/`));
 }
 
 function copyFAQRedirects() {
