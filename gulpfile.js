@@ -208,7 +208,7 @@ function copyFAQ(lang) {
       data['section-main'].sections.forEach((section) => {
         section.accordion.forEach((faqEntry) => {
           let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-          faq[faqEntry.anchor] = searchEntry.toLowerCase();
+          faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
         })
       });
       return faq;
