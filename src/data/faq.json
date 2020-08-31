@@ -124,7 +124,7 @@
                         "anchor": "exposure_check",
                         "active": true,
                         "textblock": [
-                            "Your phone settings display the exposure checks for the last 14 days: Apple: 'COVID-19 Exposure Logging', Android: 'Exposure checks'. When the app was running constantly during the last two weeks, you should see 14 checks within the last 24 hours.", "Please note: The log is just the history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:", "<ol><li>The log has a fixed limit of 100 entries. If there are more entries, only the latest are kept. We're in contact with Apple and Google so that the complete log will be displayed.</li><li>Sometimes, only 13 logs display for a day. The 14th entry was deleted only after risk calculation. This can happen when the time of downloading the keys from the server intersects with the time of deleting the keys that are older than 14 days from your phone. The same applies here: the exposure was checked properly. You'll find a detailed explanation and an example at <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639 ' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>If you use the app only recently (let's say for 5 days), less checks for the last 24 hours are displayed (here: 5 checks), one for every day that the Corona-Warn-App was running constantly.</li></ol>"
+                            "Your phone settings display the exposure checks for the last 14 days: Apple: 'COVID-19 Exposure Logging', Android: 'Exposure checks'. When the app was running constantly during the last two weeks, you should see 14 checks within the last 24 hours.", "Please note: The log is just the history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:", "<ol><li>The log has a fixed limit of 100 entries on iOS devices. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed. The log limit of 100 entries on Android devices has been recently removed by Google at the end of August 2020.</li><li>Sometimes, only 13 logs display for a day. The 14th entry was deleted only after risk calculation. This can happen when the time of downloading the keys from the server intersects with the time of deleting the keys that are older than 14 days from your phone. The same applies here: the exposure was checked properly. You'll find a detailed explanation and an example at <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639 ' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>If you use the app only recently (let's say for 5 days), less checks for the last 24 hours are displayed (here: 5 checks), one for every day that the Corona-Warn-App was running constantly.</li></ol>"
                         ]
                     },
                     {
@@ -204,7 +204,7 @@
                         "anchor": "ios_14_beta",
                         "active": true,
                         "textblock": [
-                            "With iOS 14 Beta 4, the Exposure Notification framework is available. But this version is <a href='https://developer.apple.com/support/beta-software/' target='_blank' rel='noopener noreferrer'>still under development</a> and is not public. The Corona-Warn-App is not yet supported with iOS 14 Beta 4. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
+                            "Even though with iOS 14 Beta 4, the Exposure Notification framework is available now, the Corona-Warn-App does not support iOS 14 Beta-Versions. The Beta-Versions are <a href='https://developer.apple.com/support/beta-software/' target='_blank' rel='noopener noreferrer'>still under development</a> and are not public. See the <a href='https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-14-beta-release-notes' target='_blank' rel='noopener noreferrer'>iOS & iPadOS 14 Beta Release Notes</a>."
                         ]
                     },
                     {
@@ -868,7 +868,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated August 28, 2020"
+                            "Updated August 31, 2020"
                         ]
                     }
                 ]

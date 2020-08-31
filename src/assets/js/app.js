@@ -103,7 +103,7 @@ $(document).ready(function(){
                 // remove double spaces, split by space, and filter out empty strings
                 let searchTerms = searchString.replace(/ +(?= )/g,'').split(" ").filter(x => x.length > 0);
                 // perform the search for each term
-                let allHits = searchTerms.every(term => text.search(term.toLowerCase()) !== -1);
+                let allHits = searchTerms.every(term => text.includes(term.toLowerCase()));
                 // put to hide, if no hit was found
                 if(!allHits) {
                     hide.push(anchorDiv);

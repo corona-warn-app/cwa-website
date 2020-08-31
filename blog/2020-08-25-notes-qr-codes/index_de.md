@@ -7,7 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-Die Corona-Warn-App ist nun seit einigen Wochen aktiv und kann bereits über 17.5 Millionen Downloads verzeichnen. Ein wesentlicher Bestandteil der App ist das QR-Code-Verfahren, mit dessen Hilfe getestete NutzerInnen Testergebnisse pseudonymisiert an die App melden können. Bisher wurde dieses Verfahren von mehr als 25.000 Menschen genutzt und somit rund 18.500 Testergebnisse übermittelt.  
+Die Corona-Warn-App ist nun seit einigen Wochen aktiv und kann bereits über 17,6 Millionen Downloads verzeichnen. Ein wesentlicher Bestandteil der App ist das QR-Code-Verfahren, mit dessen Hilfe getestete NutzerInnen Testergebnisse pseudonymisiert an die App melden können.  
 <!-- overview -->
 
 
