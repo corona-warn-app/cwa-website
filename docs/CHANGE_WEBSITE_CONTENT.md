@@ -33,5 +33,5 @@ This is a rather random list of things to keep in mind when altering content:
 
 * Partials are language independent, data is not
 * For every change, you probably have to change two data files (on for each language)
-* English is the "main" language, i.e., {stuff}.json should contain the english text, {stuff}_de.json the german text
+* English is the "main" language, i.e., {stuff}.json should contain the English text, {stuff}_de.json the German text
 * Use a proper JSON formatter after making your changes (e.g. the format document option of VSCode) from time to time
