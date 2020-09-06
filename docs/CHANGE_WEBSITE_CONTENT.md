@@ -19,7 +19,7 @@ The markdown entry "layout" refers to a file in the [layouts folder](../src/layo
 The entry below the header defines which page content is rendered how.
 Let's consider the following example `{{> page-community page-contents=community_de}}`:
 
-* page-community refers to a partial named page-community.html in the [partials folder](../src/partials/)
+* page-community refers to a partial named `page-community.html` in the [partials folder](../src/partials/)
 * page-contents will be a variable that can be used in the partial
 * Its value is set to community_de, which refers to a file in the [data folder](../src/data/)
 
@@ -33,5 +33,5 @@ This is a rather random list of things to keep in mind when altering content:
 
 * Partials are language independent, data is not
 * For every change, you probably have to change two data files (one for each language)
-* English is the "main" language, i.e., {stuff}.json should contain the English text, {stuff}_de.json the German text
+* English is the "main" language, i.e., `{stuff}.json` should contain the English text, `{stuff}_de.json` the German text
 * Use a proper JSON formatter after making your changes (e.g. the format document option of VSCode) from time to time
