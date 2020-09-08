@@ -4,7 +4,7 @@ If you plan to replace an old blog post with an updated version and make sure th
 
 ## Create a new blogpost
 
-Just copy the old index.md and index_de.md files to a new folder with the right date (e.g., today).
+Just copy the old `index.md` and `index_de.md` files to a new folder with the right date (e.g., today).
 Rewrite the blog post as needed.
 
 ## Update the old blog post

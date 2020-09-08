@@ -12,7 +12,7 @@ const blogMdPath = () => path.join(rootFolder, 'blog');
 const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[lang].baseSlug);
 
 /**
- * Format english date from YYYY-MM-DD
+ * Format English date from YYYY-MM-DD
  * @returns string 1. Aug, 2020 or 01.08.2020
  */
 const formatDate = (date, lang) => {
