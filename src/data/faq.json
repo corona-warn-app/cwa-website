@@ -827,7 +827,7 @@
                         "active": true,
                         "textblock": [
                            "UPDATE: After you updated to iOS version 13.6., this message is gone.",
-                           "This message is issued directly by the Exposure Notification Framework of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update. Please open the Corona-Warn-App once again to make sure that the background app refresh continues to work."
+                           "This message is issued directly by the Exposure Notification Framework of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' (iOS 13.7 or higher: 'Settings' > 'Exposure Notifications' > 'Exposure Logging Status') on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update. Please open the Corona-Warn-App once again to make sure that the background app refresh continues to work."
                         ]
                     },
                     {
@@ -861,7 +861,7 @@
                         "active": true,
                         "textblock": [
                             "UDPATE: This notification is no longer displayed since the diagnosis keys are available on the server.",
-                            "Exposure logging is working, don’t worry. You can find this iOS note under 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging'. It means that the back-end server has not sent any diagnosis keys to your device yet. Thus, the Corona-Warn-App hasn’t received any keys to check against the collected random IDs on your phone. As soon as persons diagnosed with COVID-19 have uploaded their diagnosis keys, this check is triggered."
+                            "Exposure logging is working, don’t worry. You can find this iOS note under 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' (iOS 13.7 or higher: 'Settings' > 'Exposure Notifications' > 'Exposure Logging Status'). It means that the back-end server has not sent any diagnosis keys to your device yet. Thus, the Corona-Warn-App hasn’t received any keys to check against the collected random IDs on your phone. As soon as persons diagnosed with COVID-19 have uploaded their diagnosis keys, this check is triggered."
                         ]
                     },
                     {
