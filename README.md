@@ -61,7 +61,7 @@ Manuals for the most common use cases of updating website content are available 
   npm run test:prepare
   npm run test
 ```
-Alternatively, run `npm run test:open` for simpler test development. Be aware that you should only run ony file after another and not click on _Run all specs_ since the screenshot test library has a bug which causes falsy tests for _Visual Comparison_.
+Alternatively, run `npm run test:open` for simpler test development. Be aware that you should only run one file after another and not click on _Run all specs_ since the screenshot test library has a bug which causes falsy tests for _Visual Comparison_.
 
 `npm run test:prepare` copies fixtures from `./cypress/fixtures` that are required for e2e tests. Store your test assets there, if required.
 
