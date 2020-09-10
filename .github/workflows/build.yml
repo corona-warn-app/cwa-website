@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     # Cypress Docker image with Chrome v80
-    # and Firefox v73 pre-installed
-    container: cypress/browsers:node10.16.3-chrome80-ff73
+    # and Firefox v73 pre-installed  cypress/browsers:node14.7.0-chrome84 cypress/browsers:node10.16.3-chrome80-ff73
+    container: cypress/browsers:node14.7.0-chrome84
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
