@@ -3,7 +3,7 @@ describe('Blog', () => {
   const clickLanguage = (lng) => cy.get('.nav-item.lang a').contains(lng).click()
   const pageName = "2099-01-01-visual-test-page";
 
-  it('slider overview and go to blog detail page', () => {
+  /*it('slider overview and go to blog detail page', () => {
     cy.visit('/en/')
     cy.get('[data-e2e="blog-slider"] h2.headline').contains('Stay up to date!')
     cy.get('[data-e2e="blog-slider"] .slick-slide').contains('Visual Test')
@@ -12,7 +12,7 @@ describe('Blog', () => {
 
     cy.expectPathToBe('/en/blog/' + pageName)
   })
-
+*/
   it('blog language switching', () => {
     cy.visit('/en/blog/' + pageName)
     clickLanguage('DE')
