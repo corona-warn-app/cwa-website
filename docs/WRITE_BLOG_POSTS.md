@@ -103,6 +103,16 @@ See the example usage with mixed elements:
 
 ---
 
+### Add a document to your blogpost
+
+If you want to add, e.g. a PDF to your blog, the process is slightly different compared to images.
+
+Upload your document to `/src/assets/documents`, first.
+To then create a link in your blogpost, use the following snippet:
+`[Link Text](/assets/documents/yourdocumentname.pdf)`
+
+---
+
 ### Link to blog posts
 
 Use this pattern to add links to other blog posts:
