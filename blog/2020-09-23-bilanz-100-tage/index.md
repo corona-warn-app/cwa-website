@@ -1,14 +1,17 @@
 ---
-page-title: "Positive Bilanz nach 100 Tagen"
-page-description: "Positive Bilanz nach 100 Tagen"
+page-title: "A positive summary after 100 days"
+page-description: "A positive summary after 100 days"
 page-name: 100-tage-positive-bilanz
 page-name_de: 100-tage-positive-bilanz
 author: Hanna Heine
 layout: blog
 ---
 
-100 Tage nach dem Start der Corona-Warn-App können die Entwickler*innen der SAP und Deutschen Telekom eine positive Bilanz ziehen. Die App wurde seit der Veröffentlichung am 16. Juni mehr als 18,3 Millionen Mal heruntergeladen. Diese im europaweiten Vergleich hohe Downloadzahl zeigt, dass die Bevölkerung der App eine Chance gibt und bereit ist, eine intelligente Technologie im Kampf gegen die Ausbreitung der Pandemie zu nutzen.
+The developers at SAP and Deutsche Telekom regard the first 100 days since the Corona-Warn-App’s launch as a success. Since its release on June 16,  the app has been downloaded more than 18.3 million times. This high number of downloads compared to other European countries shows that the population is giving the app a chance and is willing to use an intelligent technology to fight the spread of the pandemic.
 
-In diesem [Dokument](/assets/documents/2020-09-23-cwa-daten-fakten.pdf) finden Sie weitere, auf dem aktuellen Datenstand beruhende Zahlen & Fakten zur Corona-Warn-App, zur Laboranbindung und zu übermittelten Testergebnissen.
+In this [document](https://www.coronawarn.app/assets/documents/2020-09-23-cwa-daten-fakten.pdf) (German only), based on the current data status, you will find further facts and figures about the Corona-Warn-App, the laboratory connection and the test results transmitted. 
 
 <!-- overview -->
+
+
+
