@@ -111,6 +111,10 @@ Upload your document to `/src/assets/documents`, first.
 To then create a link in your blogpost, use the following snippet:
 `[Link Text](/assets/documents/yourdocumentname.pdf)`
 
+If you need different files for different languages, just upload two versions and adapt the links in the index.md and index_de.md, accordingly.
+
+If you need to later exchange the file, just replace it in `/src/assets/documents`.
+
 ---
 
 ### Link to blog posts
