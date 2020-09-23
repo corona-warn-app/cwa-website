@@ -1,4 +1,4 @@
-name: Update prod
+name: Deploy Website
 # Test locally with act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 -j prod
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -13,6 +13,7 @@ jobs:
   prod:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -45,7 +46,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_S3_ENDPOINT: ${{ secrets.AWS_S3_ENDPOINT }}
           SOURCE_DIR: "public"
-          
+
       - name: Set mime type for FAQ redirects
         run: |
           s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/
