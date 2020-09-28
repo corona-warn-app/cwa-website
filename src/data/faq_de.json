@@ -116,6 +116,17 @@
                         ]
                     },
                     {
+                        "title": "[Google/Android]: Die Corona-Warn-App schließt sich sofort nach dem Öffnen",
+                        "anchor": "app_crash",
+                        "active": true,
+                        "textblock": [
+                            "Wenn die Corona-Warn-App durch einen Fehler im Betriebssystem oder durch aggressive Energiesparmaßnahmen des Telefons unerwartet beendet wird, kann es vorkommen, dass bei einem erneuten Start die Corona-Warn-App nicht mehr auf ihre verschlüsselten Datenbanken zugreifen kann. In diesem Fall schließt sie sich sofort wieder. Manchmal wurde vorher der <a href='#cause9002' target='_blank' rel='noopener'>Fehler Ursache: 9002 Etwas ist schief gelaufen (sqlite)</a> angezeigt.",
+                            "Wir arbeiten mit Hochdruck an einer Lösung des Problems.",
+                            "Die GitHub-Community hat eine Notfall-Lösung erarbeitet, die die Corna-Warn-App ohne Deinstallation wieder zum Laufen bringt. Da hierbei jedoch Daten verloren gehen können (z. B. registrierte COVID-19-Tests zur Online-Abfrage der Testergebnisse), sollten Sie diese Notfall-Lösung nur dann anwenden, wenn keine anderen Maßnahmen (insbesondere Vorschläge von der technischen Telefon-Hotline oder von Betreuern der Corona-Warn-App im Google Play Store) geholfen haben, und Sie die Hinweise zur Notfall-Lösung im GitHub-Issue vollständig zur Kenntnis genommen haben.",
+                            "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690614975' target='_blank' rel='noopener noreferrer'>Hier geht es zur Notfall-Lösung im GitHub-Issue</a>."
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
                         "anchor": "android_location",
                         "active": true,
