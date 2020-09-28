@@ -116,6 +116,17 @@
                         ]
                     },
                     {
+                        "title": "[Google/Android]: Corona-Warn-App closes itself immediately after starting",
+                        "anchor": "app_crash",
+                        "active": true,
+                        "textblock": [
+                            "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it closes itself immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
+                            "We are working flat out to find a solution to the problem.",
+                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
+                            "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615473' target='_blank' rel='noopener noreferrer'>Find the emergency solution in the GitHub issue here</a>."
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?",
                         "anchor": "android_location",
                         "active": true,
