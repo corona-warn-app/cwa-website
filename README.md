@@ -49,7 +49,7 @@ npm start
 
 It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
-### Changing Things
+### THINGS TO BE CHANGED
 
 Manuals for the most common use cases of updating website content are available in the [docs folder](./docs/).
 
