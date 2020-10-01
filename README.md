@@ -18,7 +18,7 @@
 </p>
 <hr />
 
-# Corona-Warn-App: Website
+# Corona-Warn-App: Website - An Amazing Project
 
 ## About this Repository
 
