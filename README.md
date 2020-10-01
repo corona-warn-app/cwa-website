@@ -22,7 +22,7 @@
 
 ## About this Repository
 
-This repository contains the source files of the official website for the Corona-Warn-App as it is available at [coronawarn.app](https://coronawarn.app). For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
+We would like to inform you that this repository contains the source files of the official website for the Corona-Warn-App as it is available at [coronawarn.app](https://coronawarn.app). For information about the project, please see our [documentation repository](https://github.com/corona-warn-app/cwa-documentation).
 
 ## Development
 
@@ -47,7 +47,7 @@ To test the generated content, simply use a local web server such as http-server
 npm start
 ```
 
-It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
+It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.Hope that all the above Instructions were very clear and you got the desired result.
 
 ### Changing Things
 
