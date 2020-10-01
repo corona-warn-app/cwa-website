@@ -1,8 +1,8 @@
-# Website Content Change
+# Website Content Change :- 
 
 The Website is created from a set of pages, templates, and json data using [panini](https://github.com/foundation/panini).
 
-## Finding the right page
+## Finding the right page :-
 
 In case you have to change some aspect of the page, a good approach is working your way back from the URL:
 
@@ -10,7 +10,7 @@ In case you have to change some aspect of the page, a good approach is working y
 * There's one folder for each language (en/de)
 * Each folder contains further subfolders for individually addressable pages (/blog, /faq, etc.)
 
-## The right template
+## The right template :-
 
 The HTML files in the page folders are not really html but a mix of markdown and Panini templates.
 
@@ -27,7 +27,7 @@ Within the partial, the different data elements become part of an HTML structure
 
 Partials can also call other partials using a similar snippet as used above.
 
-## Keep in mind
+## Keep in mind :-
 
 This is a rather random list of things to keep in mind when altering content:
 
