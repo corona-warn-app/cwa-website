@@ -1,4 +1,5 @@
-<p align="center">
+Get complete information about corona from our website and save your family:
+ b<p align="center">
  <a href="https://www.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png" width="400"></a>
 </p>
 
