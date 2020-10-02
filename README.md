@@ -79,7 +79,7 @@ The full documentation for the Corona-Warn-App can be found in the [cwa-document
 
 ## Support and Feedback
 
-The following channels are available for discussions, feedback, and support requests:
+The following channels are available for discussions, feedback and support requests:
 
 | Type                     | Channel                                                |
 | ------------------------ | ------------------------------------------------------ |
