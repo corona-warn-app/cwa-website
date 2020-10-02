@@ -7,9 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-Nach den ersten 100 Tagen nach dem Start der Corona-Warn-App konnten die Entwickler*innen der SAP und Deutschen Telekom eine positive Bilanz ziehen. Wie entwickelt sich der Trend weiter? 
-
-In diesem Beitrag finden Sie stets [die neusten Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2020-10-02-cwa-facts-and-figures.pdf) zur Corona-Warn-App, Laboranbindung und übermittelten Testergebnissen und können die Entwicklung der App mitverfolgen.
+In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2020-10-02-cwa-facts-and-figures.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zu Laboranbindungen und der Anzahl übermittelter Testergebnisse. 
 
 
 ### **Übersicht früherer Zahlen und Fakten** 
