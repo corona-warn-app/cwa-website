@@ -18,7 +18,7 @@
 </p>
 <hr />
 
-# Corona-Warn-App: Website
+# Corona-Warn-App: Stay Home Stay Safe
 
 ## About this Repository
 
