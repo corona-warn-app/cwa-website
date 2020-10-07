@@ -899,8 +899,8 @@
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                            "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben. Wird Ihnen dieser Fehler dennoch weiterhin angezeigt, hinterlassen sie bitte einen Kommentar in <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/972' target='_blank' rel='noopener noreferrer'>diesem Github Issue</a> und nennen sie ihre iOS Version und ihr iPhone Modell.",
-                            "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Der Fehler soll nach Angaben von Apple mit iOS 13.6 behoben werden. Bis dahin können Sie versuchen, Ihr iPhone neu zu starten. 24 Stunden später war der Fehler in den meisten Fällen verschwunden."
+                            "Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an.",
+                            "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird."
                         ]
                     },
                     {
@@ -972,7 +972,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 04.10.2020"
+                            "Stand: 07.10.2020"
                         ]
                     }
                 ]

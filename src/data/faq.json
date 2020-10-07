@@ -898,8 +898,8 @@
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                           "UPDATE: After you updated to iOS version 13.6., this error is gone. If it still displays after the upgrade, please comment <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/972' target='_blank' rel='noopener noreferrer'>in this GitHub issue</a> and state your iOS version and phone model.",
-                           "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the issue will be fixed with the iOS 13.6 release. Until then, please check whether restarting your devices resolves the issue. In most cases, the error was gone after another 24 hours."
+                           "Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exosure Notifications' and turn it back on again.",
+                           "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App."
                         ]
                     },
                     {
@@ -970,7 +970,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated October 04, 2020"
+                            "Updated October 07, 2020"
                         ]
                     }
                 ]
