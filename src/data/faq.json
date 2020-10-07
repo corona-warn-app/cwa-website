@@ -107,6 +107,17 @@
                 "id": "most_asked",
                 "accordion": [
                     {
+                        "title": "[Apple/iOS] Can’t enable exposure logging / Empty screen on iOS 13.7 / 14",
+                        "anchor": "ios_black_screen",
+                        "active": true,
+                        "textblock": [
+                            "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications can not be activated again after an update. The result is a black screen in the iOS settings.",
+                            "To fix the problem, proceed as follows:",
+                            "Settings > General > Reset > Reset Location and Privacy",
+                            "Afterwards the permissions in the Corona-Warn App have to be assigned again. You will be prompted to do so when the App is started."
+                        ]
+                    },
+                    {
                         "title": "An encounter has been reported, but the risk status stays green",
                         "anchor": "encounter_but_green",
                         "active": true,
