@@ -74,11 +74,21 @@
                             "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
                             "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. <b>Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:</b>",
                             "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivität'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivität und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
+                            "Samsung bietet für ihre Geräte zusätzlich einen sogenannten \"Ultra-Energiesparmodus\" an. Dieser verhindert oft eine erfolgreiche Hintergrundaktualisierung, selbst wenn 'Priorisierte Hintergrundaktivität' aktiviert ist. <b>Für eine ordnungsgemäße Funktion der Corona-Warn-App sollte der Ultra-Energiesparmodus daher ausgeschaltet sein.</b> Beachten Sie dazu die <a href='#max_power_save' target='_blank' rel='noopener'>Hinweise zum Ultra-Energiesparmodus auf Samsung-Geräten</a>.",
                             "Sie können in den Energiespar-Einstellungen Ihres Smartphones sicherstellen, dass für die Corona-Warn-App eine Ausnahme vom Energiesparen festgelegt ist:",
                             "Leider kann es sein, dass Sie bei einigen Smartphones die priorisierte Hintergrundaktivität nicht in den Einstellungen in der App einschalten können. Sie können die priorisierte Hintergrundaktivität dennoch aktivieren: Das machen Sie direkt in den Energiespar-Einstellungen Ihres Smartphones. Legen Sie dort eine Ausnahme für die Corona-Warn-App fest. Sollte dies immer noch nicht dazu führen, dass der Risikostatus automatisch im Hintergrund aktualisiert wird, schreiben Sie uns bitte einen Kommentar mit dem Smartphone-Typ und der installierten Version der App und der COVID-19-Benachrichtigungen in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub-Issue 933</a>.",
                             "Wenn mit der neuesten Version das Problem immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag.",
                             "Für den Fall, dass all diese Hinweise nicht den gewünschten Effekt hatten, können Sie weitere, gerätespezifische, Einstellungen vornehmen. Software-Hersteller, wie etwa Slack, bei denen die gleichen Probleme auftreten, haben deswegen bereits sehr viele Informationen zur Lösung bereitgestellt. Versuchen Sie deshalb bitte, die Tipps aus der Slack-Dokumentation für die Corona-Warn-App und Ihr Smartphone anzuwenden: <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>Bekannte Probleme mit Android-Benachrichtigungen</a>. Besitzen Sie ein <a href='#huawei_honor' target='_blank' rel='noopener'>Huawei- oder Honor-Smartphone, beachten Sie bitte auch diese Hinweise</a>."
                         ]
+                    },
+                    {
+                        "title": "[Google/Android]: Hinweise zum Ultra-Energiesparmodus auf Samsung-Geräten",
+                        "anchor": "max_power_save",
+                        "active": true,
+                        "textblock": [
+                            "Bei Benutzung des Ultra-Energiesparmodus auf Geräten von Samsung kann die Hintergrundaktualisierung trotz <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> fehlschlagen. Grund dafür ist wahrscheinlich, dass der Aktualisierungsprozess aufgrund der stark reduzierten Rechenleistung abgebrochen wird. Der Ultra-Energiesparmodus sollte deshalb in den Einstellungen deaktiviert werden:",
+                            "<ol><li>'Einstellungen' -> 'System' -> 'Energiesparmodus'</li><li>Wählen Sie 'Ultra-Energiesparmodus'.</li><li>Öffnen Sie das Menü in der oberen rechten Ecke und wählen Sie 'Ultra-Energiesparmodus deaktivieren'.</li></ol>"
+                         ]
                     },
                     {
                         "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
@@ -96,6 +106,17 @@
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS] Leerer Bildschirm auf iOS 13.7 / 14",
+                        "anchor": "ios_black_screen",
+                        "active": true,
+                        "textblock": [
+                            "Es gibt ein bekanntes Problem unter iOS 13.7 / 14 wo es in seltenen Fällen vorkommen kann dass sich die Begegnungsmitteilungen nach einem Update nicht mehr aktivieren lassen. Das Resultat ist ein schwarzer Bildschirm in den iOS Einstellungen.",
+                            "Um das Problem zu beheben gehen Sie wie folgt vor:",
+                            "Einstellungen > Allgemein > Zurücksetzen > Standort und Datenschutz",
+                            "Im Anschluss müssen die Berechtigungen in der Corona-Warn App erneut vergeben werden. Dazu werden Sie beim Start der App aufgefordert."
+                        ]
+                    },
                     {
                         "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                         "anchor": "encounter_but_green",
@@ -248,6 +269,14 @@
                         "active": true,
                         "textblock": [
                             "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Kann ich die App auch auf einem gerooteten Gerät nutzen?",
+                        "anchor": "rooted_devices",
+                        "active": true,
+                        "textblock": [
+                            "Nein, die App wird auf gerooten Geräten nicht unterstützt."
                         ]
                     },
                     {
@@ -498,7 +527,9 @@
                         "anchor": "mobile_data_costs",
                         "active": true,
                         "textblock": [
-                            "Nein. Für die Nutzung der Corona-Warn-App stellen die Netzbetreiber das mobile Datenvolumen innerhalb Deutschlands kostenfrei zur Verfügung (Zero-Rating). Die mobilen Daten, die die Corona-Warn-App überträgt, um Diagnoseschlüssel ('Positivkennungen') hochzuladen oder im Fall einer Risiko-Begegnung vom Backend-Server benachrichtigt zu werden, kosten Sie keinen Cent und werden nicht von Ihrem vertraglichen Datenvolumen o. ä. abgezogen. Dazu haben sich die deutschen Netzbetreiber verpflichtet."
+                            "Die deutschen Netzbetreiber haben sich zu einem sog. Zero-Rating verpflichtet. Das bedeutet, dass für die Nutzung der Corona-Warn-App das mobile Datenvolumen sowohl in Deutschland als auch innerhalb des EU-Auslands kostenfrei zur Verfügung gestellt wird. Die mobilen Daten, die die Corona-Warn-App überträgt, um Diagnoseschlüssel ('Positivkennungen') hochzuladen oder im Fall einer Risiko-Begegnung vom Backend-Server benachrichtigt zu werden, kosten Sie keinen Cent und werden nicht von Ihrem vertraglichen Datenvolumen o. ä. abgezogen.",
+                            "Das Zero-Rating gilt für alle SIM-Karten, die von deutschen Netzanbietern vertrieben werden. Egal, ob diese direkt vom Mobilfunkanbieter erworben wurden oder aber von einem Partnerunternehmen (bspw. Discounter).",
+                            "Für ausländische Anbieter von SIM-Karten bzw. Mobilfunktarifen können wir keine Aussage treffen. Die Entscheidung, ob die notwendigen Datenvolumina kostenfrei zur Verfügung gestellt werden oder nicht, liegt allein beim entsprechenden Anbieter."
                         ]
                     },
                     {
@@ -941,7 +972,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 06.10..2020"
+                            "Stand: 07.10.2020"
                         ]
                     }
                 ]

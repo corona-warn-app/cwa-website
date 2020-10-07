@@ -74,12 +74,22 @@
                             "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
                             "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
+                            "Samsung offers an additional \"Ultra Power Saving Mode\" for their devices. This mode often prevents a successful update of the risk status in the background, even if 'Prioritized Background Activity' has been selected. <b>To ensure a proper functionality of the Corona-Warn-App, the Ultra Power Saving Mode should be deactivated.</b> Please refer to the <a href='#max_power_save' target='_blank' rel='noopener'>Notes on the Ultra Power Saving Mode on Samsung devices</a> for further instructions.",
                             "In the power-saving settings of your phone, you can make sure that there's an exception set for the Corona-Warn-App:",
                             "Unfortunately, in some phones, you might not be able to activate the prioritized background activity in the app settings. You can still activate the prioritized background activity: You do so directly in the energy saving settings. of your phone. Set an exception for the Corona-Warn-App. If this still doesn't update the risk status automatically in the background, please create a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub issue 933</a>, giving your phone type and the installed versions of the app and of the COVID-19 exposure notifications.",
                             "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
                             "If all these recommendations did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced the similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>. If you have a <a href='#huawei_honor' target='_blank' rel='noopener'>Huawei or Honor phone, please also note these instructions</a>."
                         ]
 	                },
+                    {
+                        "title": "[Google/Android]: Notes on the Ultra Power Saving Mode on Samsung devices",
+                        "anchor": "max_power_save",
+                        "active": true,
+                        "textblock": [
+                            "The usage of the Ultra Power Saving Mode on Samsung devices can cause the background updates of the risk status to fail, even if <a href='#no_risk_update' target='_blank' rel='noopener'>Prioritized Background Activity is activated</a>. This behaviour is likely triggered by the strongly reduced processing power in this mode, which results in an abort of the background updating process. The Ultra Power Saving Mode should therefore be deactivated in the settings:",
+                            "<ol><li>'Settings' -> 'System' -> 'Power saving'</li><li>Select 'Ultra Power Saving Mode'.</li><li>Open the menu in the upper right and select 'Turn off Ultra power saving mode'.</li></ol>"
+                         ]
+                    },
                     {
                         "title": "[Google/Android]: Notes on devices from Huawei or Honor",
                         "anchor": "huawei_honor",
@@ -96,6 +106,17 @@
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS] Can’t enable exposure logging / Empty screen on iOS 13.7 / 14",
+                        "anchor": "ios_black_screen",
+                        "active": true,
+                        "textblock": [
+                            "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications can not be activated again after an update. The result is a black screen in the iOS settings.",
+                            "To fix the problem, proceed as follows:",
+                            "Settings > General > Reset > Reset Location and Privacy",
+                            "Afterwards the permissions in the Corona-Warn App have to be assigned again. You will be prompted to do so when the App is started."
+                        ]
+                    },
                     {
                         "title": "An encounter has been reported, but the risk status stays green",
                         "anchor": "encounter_but_green",
@@ -247,6 +268,14 @@
                         "active": true,
                         "textblock": [
                             "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Can I also use the app on a rooted device?",
+                        "anchor": "rooted_devices",
+                        "active": true,
+                        "textblock": [
+                            "No, the app is not supported on rooted devices."
                         ]
                     },
                     {
@@ -497,7 +526,9 @@
                         "anchor": "mobile_data_costs",
                         "active": true,
                         "textblock": [
-                            "No. For using the Corona-Warn-App, the network providers provide the mobile data volume free of charge within Germany (zero rating). Mobile data that are transmitted via Corona-Warn-App when diagnosis keys are uploaded or when the server notifies you in case of exposure is free of charge and will not be deducted from your data plan. The German network providers will bear these costs."
+                            "The German network operators have committed themselves to a so-called zero rating. This means that the mobile data volume for the use of the Corona-Warn-App is provided free of charge both in Germany and within the EU. Mobile data that are transmitted via Corona-Warn-App when diagnosis keys are uploaded or when the server notifies you in case of exposure is free of charge and will not be deducted from your data plan.",
+                            "The zero rating applies to all SIM cards that are distributed by German network providers. It does not matter whether they were purchased directly from the mobile phone provider or from a partner company (e.g. discounters).",
+                            "We are not able to provide any statement for foreign providers of SIM cards. The decision whether the necessary data volumes are provided free of charge or not, is solely up to the respective provider."
                         ]
                     },
                     {
@@ -939,7 +970,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated October 06, 2020"
+                            "Updated October 07, 2020"
                         ]
                     }
                 ]
