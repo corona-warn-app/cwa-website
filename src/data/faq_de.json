@@ -107,12 +107,23 @@
                 "id": "most_asked",
                 "accordion": [
                     {
+                        "title": "[Apple/iOS] Leerer Bildschirm auf iOS 13.7 / 14",
+                        "anchor": "ios_black_screen",
+                        "active": true,
+                        "textblock": [
+                            "Es gibt ein bekanntes Problem unter iOS 13.7 / 14 wo es in seltenen Fällen vorkommen kann dass sich die Begegnungsmitteilungen nach einem Update nicht mehr aktivieren lassen. Das Resultat ist ein schwarzer Bildschirm in den iOS Einstellungen.",
+                            "Um das Problem zu beheben gehen Sie wie folgt vor:",
+                            "Einstellungen > Allgemein > Zurücksetzen > Standort und Datenschutz",
+                            "Im Anschluss müssen die Berechtigungen in der Corona-Warn App erneut vergeben werden. Dazu werden Sie beim Start der App aufgefordert."
+                        ]
+                    },
+                    {
                         "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
                         "anchor": "encounter_but_green",
                         "active": true,
                         "textblock": [
                             "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Person die anschließend Corona-positiv getestet wurde, sind sich begegnet.",
-                            "Als nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
+                            "Als Nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
                             "Die verbleibenden Begegnungen werden in ihrer Gesamtheit unter Berücksichtigung ihres Abstands und ihrer Dauer sowie der vermutlichen Infektiosität der anderen Person(en) bewertet. Nicht immer ergibt diese Bewertung ein erhöhtes Risiko, in diesem Fall werden diese Begegnungen - zusammen mit den oben genannten harmlosen Begegnungen - in der Corona-Warn-App angezeigt aber die Risikobewertung ändert sich nicht.",
                             "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
                         ]
@@ -169,8 +180,8 @@
                         "textblock": [
                             "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy).",
                             "Der Akkuverbrauch der Corona-Warn-App teilt sich in zwei Faktoren: Den Verbrauch der App selbst und den Verbrauch aufgrund der Aufzeichnung der Begegnungen über das Exposure Notification Framework. Letzteres kann durch die Nutzung der jeweils aktuell verfügbaren Betriebssysteme für iOS und Android optimiert werden.",
-                            "Bitte beachten Sie bei der Interpretation Ihres Akkuverbrauchs, dass sich die Prozentangabe auf die vollständige Nutzung Ihres Telefons in den letzten 24 Stunden bezieht. Das bedeutet, dass ein häufig und intensiv genutztes Telefon einen sehr geringen Prozenzsatz pro App aufweist. Wenn Sie ihr Telefon hauptsächlich zum Telefonieren nutzen und nur gelegentlich Musik streamen oder soziale Medien nutzen, wird der Anteil pro App hingegen relativ hoch sein.",
-                            "<b>Besonderheit bei Android</b>: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung auf den Gerät allgemein aktiviert ist (Details siehe <a href='#android_location' target='_blank' rel='noopener'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, sollten Sie prüfen, welche Apps tatsächlich Ihren Standort nutzen. Dazu öffnen Sie die Geräte-Einstellungen und wählen 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'. Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
+                            "Bitte beachten Sie bei der Interpretation Ihres Akkuverbrauchs, dass sich die Prozentangabe auf die vollständige Nutzung Ihres Telefons in den letzten 24 Stunden bezieht. Das bedeutet, dass ein häufig und intensiv genutztes Telefon einen sehr geringen Prozentsatz pro App aufweist. Wenn Sie ihr Telefon hauptsächlich zum Telefonieren nutzen und nur gelegentlich Musik streamen oder soziale Medien nutzen, wird der Anteil pro App hingegen relativ hoch sein.",
+                            "<b>Besonderheit bei Android</b>: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung auf dem Gerät allgemein aktiviert ist (Details siehe <a href='#android_location' target='_blank' rel='noopener'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, sollten Sie prüfen, welche Apps tatsächlich Ihren Standort nutzen. Dazu öffnen Sie die Geräte-Einstellungen und wählen 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'. Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
                         ]
                     }
                 ]
@@ -210,7 +221,7 @@
                         "textblock": [
                             "Es kommt auf einzelnen Geräten (z.B. dem Huawei P20 Pro) zu Problemen beim Zugriff auf den verschlüsselten Bereich der App-Datenbank, in der Informationen zum Risiko-Status und der letzten Aktualisierung abgelegt sind. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption). Das kann manchmal dazu führen, dass Sie die App nicht mehr öffnen können.",
                             "Wir arbeiten daran, die Ursache zu finden und zu beheben. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.",
-                            "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Urache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Issue</a> an.",
+                            "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Ursache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Issue</a> an.",
                             "<b>Falls Sie die App nicht mehr öffnen können, lesen Sie bitte den Abschnitt <a href='#app_crash' target='_blank' rel='noopener'>'Die Corona-Warn-App schließt sich sofort nach dem Öffnen'</a>.</b>"
                         ]
                     },
@@ -239,7 +250,7 @@
                         "textblock": [
                             "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
                             "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen diese Probleme, allerdings liegt es vermutlich an grundlegenden Funktionen des Betriebssystems, auf die wir keinen Einfluss haben.", 
-                            "Versuchen Sie bitte folgendes: <ul><li>Starten Sie Ihr Smartphone neu.</li><li>Entkoppeln Sie die anderen über Bluetooth verbundenen Geräte und koppeln Sie sie neu.</li></ul>",
+                            "Versuchen Sie bitte Folgendes: <ul><li>Starten Sie Ihr Smartphone neu.</li><li>Entkoppeln Sie die anderen über Bluetooth verbundenen Geräte und koppeln Sie sie neu.</li></ul>",
                             "Wenn das nicht weiterhilft, wenden Sie sich an den Hersteller Ihres Geräts:",
                             "<ul><li[Apple/iOS]: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a>.</li><li>[Google/Android]: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>.</li></ul>"
                         ]
@@ -266,6 +277,14 @@
                         "active": true,
                         "textblock": [
                             "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Kann ich die App auch auf einem gerooteten Gerät nutzen?",
+                        "anchor": "rooted_devices",
+                        "active": true,
+                        "textblock": [
+                            "Nein, die App wird auf gerooten Geräten nicht unterstützt."
                         ]
                     },
                     {
@@ -355,7 +374,7 @@
                         "active": true,
                         "textblock": [
                             "Familien, die zum Beispiel nach dem Urlaub am Flughafen getestet werden, erhalten für jeden Test oft ein Merkblatt, auf dem ein QR-Code abgebildet ist.",
-                            "<ol><li>Lesen Sie das Merkblatt aufmerksam durch, ob der QR-Code wirklich in die Corona-Warn-App eingescannt werden soll, oder ob er für ein anderes Test-Verfahren gedacht ist.</li><li>Nur dann, wenn Sie sichergestellt haben, dass der QR-Code für die Corona-Warn-App bestimmt ist und nicht für ein anderes System, können Sie in der Corona-Warn-App fortfahren.</li><li>Sie können jeden QR-Code nur ein einziges Mal in die Corona-Warn-App einscannen, danach verfällt der QR-Code. Das schließt Mißbrauch aus.</li><li>Wenn Sie einen QR-Code für Ihren eigenen Test erhalten haben, scannen Sie den QR-Code ein und warten Sie im Anschluss bis das Ergebnis übermittelt wird. Das kann mehrere Stunden bis wenige Tage dauern. Öffnen Sie dazu die Corona-Warn-App regelmäßig und überprüfen Sie, ob das Testergebnis bereits vorliegt.</li><li>Wenn Sie weitere QR-Codes für Tests Ihrer Familienmitglieder erhalten haben, zum Beispiel Ihre Kinder, die aber kein eigenes Smartphone haben, verwenden Sie diese QR-Codes NICHT in Ihrem eigenen Gerät. Der QR-Code darf ausschließlich für Ihren persönlichen Test und Ihr persönliches Smartphone verwendet werden. Die Testergebnisse aller Familienmitglieder werden Ihnen auf jeden Fall nochmals unabhängig von der Corona-Warn-App (in der Regel per Telefon) mitgeteilt.</li><li>Wenn Ihr QR-Code nicht funktioniert und Sie ein positives Testergebnis erhalten haben: Rufen Sie die Verifizierungs-Hotline (+49 800 7540002) an, um eine TeleTAN zu erhalten. Diese können Sie in der Corona-Warn-App eingeben, sodass Ihre Begegnungen der vergangenen Tage über die Corona-Warn-App gewarnt werden können. Beachten Sie die Verhaltenshinweise in der Corona-Warn-App.</li></ol>"
+                            "<ol><li>Lesen Sie das Merkblatt aufmerksam durch, ob der QR-Code wirklich in die Corona-Warn-App eingescannt werden soll, oder ob er für ein anderes Test-Verfahren gedacht ist.</li><li>Nur dann, wenn Sie sichergestellt haben, dass der QR-Code für die Corona-Warn-App bestimmt ist und nicht für ein anderes System, können Sie in der Corona-Warn-App fortfahren.</li><li>Sie können jeden QR-Code nur ein einziges Mal in die Corona-Warn-App einscannen, danach verfällt der QR-Code. Das schließt Missbrauch aus.</li><li>Wenn Sie einen QR-Code für Ihren eigenen Test erhalten haben, scannen Sie den QR-Code ein und warten Sie im Anschluss bis das Ergebnis übermittelt wird. Das kann mehrere Stunden bis wenige Tage dauern. Öffnen Sie dazu die Corona-Warn-App regelmäßig und überprüfen Sie, ob das Testergebnis bereits vorliegt.</li><li>Wenn Sie weitere QR-Codes für Tests Ihrer Familienmitglieder erhalten haben, zum Beispiel Ihre Kinder, die aber kein eigenes Smartphone haben, verwenden Sie diese QR-Codes NICHT in Ihrem eigenen Gerät. Der QR-Code darf ausschließlich für Ihren persönlichen Test und Ihr persönliches Smartphone verwendet werden. Die Testergebnisse aller Familienmitglieder werden Ihnen auf jeden Fall nochmals unabhängig von der Corona-Warn-App (in der Regel per Telefon) mitgeteilt.</li><li>Wenn Ihr QR-Code nicht funktioniert und Sie ein positives Testergebnis erhalten haben: Rufen Sie die Verifizierungs-Hotline (+49 800 7540002) an, um eine TeleTAN zu erhalten. Diese können Sie in der Corona-Warn-App eingeben, sodass Ihre Begegnungen der vergangenen Tage über die Corona-Warn-App gewarnt werden können. Beachten Sie die Verhaltenshinweise in der Corona-Warn-App.</li></ol>"
                         ]
                     },
                     {
@@ -363,7 +382,7 @@
                         "anchor": "keys_matches",
                         "active": true,
                         "textblock": [
-                            "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden sie unter <a href='#risk_info' target='_blank' rel='noopener noreferrer'>Wie werde ich über ein Infektionsrisiko informiert?</a>",
+                            "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden Sie unter <a href='#risk_info' target='_blank' rel='noopener noreferrer'>Wie werde ich über ein Infektionsrisiko informiert?</a>",
                             "<b>Begegnungsüberprüfungen</b> (Apple) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
                             "An jedem Tag gibt es für jeden der letzten 14 Tage einen Eintrag, siehe <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge</a>.",
                             "<b>Anzahl der bereitgestellten Schlüssel</b> (Apple) | <b>Anzahl der Schlüssel</b> (Android)",
@@ -516,7 +535,9 @@
                         "anchor": "mobile_data_costs",
                         "active": true,
                         "textblock": [
-                            "Nein. Für die Nutzung der Corona-Warn-App stellen die Netzbetreiber das mobile Datenvolumen innerhalb Deutschlands kostenfrei zur Verfügung (Zero-Rating). Die mobilen Daten, die die Corona-Warn-App überträgt, um Diagnoseschlüssel ('Positivkennungen') hochzuladen oder im Fall einer Risiko-Begegnung vom Backend-Server benachrichtigt zu werden, kosten Sie keinen Cent und werden nicht von Ihrem vertraglichen Datenvolumen o. ä. abgezogen. Dazu haben sich die deutschen Netzbetreiber verpflichtet."
+                            "Die deutschen Netzbetreiber haben sich zu einem sog. Zero-Rating verpflichtet. Das bedeutet, dass für die Nutzung der Corona-Warn-App das mobile Datenvolumen sowohl in Deutschland als auch innerhalb des EU-Auslands kostenfrei zur Verfügung gestellt wird. Die mobilen Daten, die die Corona-Warn-App überträgt, um Diagnoseschlüssel ('Positivkennungen') hochzuladen oder im Fall einer Risiko-Begegnung vom Backend-Server benachrichtigt zu werden, kosten Sie keinen Cent und werden nicht von Ihrem vertraglichen Datenvolumen o. ä. abgezogen.",
+                            "Das Zero-Rating gilt für alle SIM-Karten, die von deutschen Netzanbietern vertrieben werden. Egal, ob diese direkt vom Mobilfunkanbieter erworben wurden oder aber von einem Partnerunternehmen (bspw. Discounter).",
+                            "Für ausländische Anbieter von SIM-Karten bzw. Mobilfunktarifen können wir keine Aussage treffen. Die Entscheidung, ob die notwendigen Datenvolumina kostenfrei zur Verfügung gestellt werden oder nicht, liegt allein beim entsprechenden Anbieter."
                         ]
                     },
                     {
@@ -886,8 +907,8 @@
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                            "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben. Wird Ihnen dieser Fehler dennoch weiterhin angezeigt, hinterlassen sie bitte einen Kommentar in <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/972' target='_blank' rel='noopener noreferrer'>diesem Github Issue</a> und nennen sie ihre iOS Version und ihr iPhone Modell.",
-                            "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Der Fehler soll nach Angaben von Apple mit iOS 13.6 behoben werden. Bis dahin können Sie versuchen, Ihr iPhone neu zu starten. 24 Stunden später war der Fehler in den meisten Fällen verschwunden."
+                            "Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an.",
+                            "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird."
                         ]
                     },
                     {
@@ -959,7 +980,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 04.10.2020"
+                            "Stand: 07.10.2020"
                         ]
                     }
                 ]
