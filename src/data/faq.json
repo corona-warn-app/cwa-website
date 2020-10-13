@@ -134,7 +134,8 @@
                         "active": true,
                         "textblock": [
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
-                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe. If it still occurs afterwards, please call the hotline or open an issue on GitHub.",
+                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
+                            "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1021' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
                             "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
                         ]
                     },
@@ -984,7 +985,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated October 07, 2020"
+                            "Updated October 13, 2020"
                         ]
                     }
                 ]
