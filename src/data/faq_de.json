@@ -45,7 +45,7 @@
                              "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
                              "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
                              "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
-                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufallscodes gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
+                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
                         ]
                     },
                    {
@@ -122,8 +122,8 @@
                         "anchor": "encounter_but_green",
                         "active": true,
                         "textblock": [
-                            "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufallscodes vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufallscodes aufgezeichnet hat, und das Smartphone der Person die anschließend Corona-positiv getestet wurde, sind sich begegnet.",
-                            "Als Nächstes wird für jede Positivkennung anhand aller dazu passenden Zufallscodes geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
+                            "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufalls-IDs vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufalls-IDs aufgezeichnet hat, und das Smartphone der Person die anschließend Corona-positiv getestet wurde, sind sich begegnet.",
+                            "Als Nächstes wird für jede Positivkennung anhand aller dazu passenden Zufalls-IDs geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
                             "Die verbleibenden Begegnungen werden in ihrer Gesamtheit unter Berücksichtigung ihres Abstands und ihrer Dauer sowie der vermutlichen Infektiosität der anderen Person(en) bewertet. Nicht immer ergibt diese Bewertung ein erhöhtes Risiko, in diesem Fall werden diese Begegnungen - zusammen mit den oben genannten harmlosen Begegnungen - in der Corona-Warn-App angezeigt aber die Risikobewertung ändert sich nicht.",
                             "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
                         ]
@@ -133,7 +133,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "Die Meldung besagt, dass die Corona-Warn-App das Exposure Notification Framework zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufallscodes abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab.",
+                            "Die Meldung besagt, dass die Corona-Warn-App das Exposure Notification Framework zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufalls-IDs abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab.",
                             "Dieses Verhalten kann durch verschiedene andere Fehler ausgelöst werden, ist jedoch immer nur eine Folgeerscheinung. Die Meldung sollte nach 24 Stunden nicht mehr angezeigt werden. Bitte halten sie die App für diesen Zeitraum geschlossen.",
                             "Wenn der Fehler danach immer noch auftritt schreiben Sie bitte einen Kommentar in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1021' target='_blank' rel='noopener noreferrer'>dazugerhörige GitHub Issue</a> und geben Sie die folgenden Informationen zu Ihrem Telefon an: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
                             "Wir bitten sie, die App nicht zu deinstallieren oder die Google Play Dienste zurückzusetzen, da hierbei ihre aufgezeichneten Kontaktereignisse <a href='#delete_random_ids' target='_blank' rel='noopener'>verloren gehen können</a>, und eine Neuinstallation den Fehler nicht lösen kann. Darüber hinaus bitten wir Sie, die App-Daten der Corona-Warn-App nicht zu löschen, da dies das Problem in diesem Fall ebenfalls nicht löst. Sie könnten jedoch andere wichtige Daten verlieren, z. B. einen zuvor registrierten COVID-19-Test."
@@ -159,7 +159,7 @@
                             "Da die Corona-Warn-App Geräte in Ihrer Nähe über Bluetooth erkennt, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Ihren Standort erfassen oder GPS verwenden. Sie können das gerne selbst folgendermaßen nachprüfen:",
                             "<ol><li>Öffnen Sie die Einstellungen Ihres Smartphones (nicht die Einstellungen in der App!).</li><li>Wählen Sie 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Sehen Sie sich die Liste der Apps an, die auf Ihren Standort zugreifen können, wenn Sie es zulassen. Sie sehen: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
                             "An dieser Stelle könnten Sie anderen Apps die Berechtigung für den Standortzugriff erteilen oder entziehen, aber da die Corona-Warn-App diese Berechtigung nicht braucht, ist sie auch nicht aufgeführt.",
-                            "Hinweis: Wie oben beschrieben: Aktivieren Sie die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort', da sonst der Austausch der verschlüsselten Zufallscodes zur Risiko-Ermittlung nicht funktioniert."
+                            "Hinweis: Wie oben beschrieben: Aktivieren Sie die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort', da sonst der Austausch der verschlüsselten Zufalls-IDs zur Risiko-Ermittlung nicht funktioniert."
                         ]
                     },
                     {
@@ -414,7 +414,7 @@
                         "anchor": "bluetooth_off",
                         "active": true,
                         "textblock": [
-                            "Dann können Begegnungen mit den anderen Smartphones, die die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufallscodes ausgetauscht werden. Haben Sie deswegen bitte immer Bluetooth und bei Android auch die Standort-Dienste aktiviert, wenn Sie in Kontakt mit anderen Leuten sind, zum Beispiel, wenn Sie Gäste bekommen oder Sie unterwegs sind.",
+                            "Dann können Begegnungen mit den anderen Smartphones, die die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufalls-IDs ausgetauscht werden. Haben Sie deswegen bitte immer Bluetooth und bei Android auch die Standort-Dienste aktiviert, wenn Sie in Kontakt mit anderen Leuten sind, zum Beispiel, wenn Sie Gäste bekommen oder Sie unterwegs sind.",
                             "Bei Android müssen die Standort-Dienste nur aktiviert sein, die Corona-Warn-App verwendet den Standort nicht. Für alle anderen Apps können Sie die Standortverwendung ausschalten, wenn Sie das möchten: siehe <a href='#android_location' target='_blank' rel='noopener'>Meldungen zur Aktivierung der Standortverwendung</a>."
                         ]
                     },
@@ -432,20 +432,20 @@
                         "active": true,
                         "textblock": [
                             "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risiko-Ermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
-                            "Das ist leider ein bekanntes Problem mit der Sicherung der Zufallscodes, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.",
+                            "Das ist leider ein bekanntes Problem mit der Sicherung der Zufalls-IDs, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufalls-IDs in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.",
                             "Bitte installieren Sie die Corona-Warn-App auf Ihrem neuen iPhone neu."
                         ]
                     },
                     {
-                        "title": "Werden die gesammelten Zufallscodes in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
+                        "title": "Werden die gesammelten Zufalls-IDs in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
                         "anchor": "backup",
                         "active": true,
                         "textblock": [
-                            "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufallscodes können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
+                            "Nein, diese sind nicht Bestandteil der Datensicherung. Das heißt, die gesammelten Zufalls-IDs können auch nicht auf dem selben oder einem anderen Gerät wiederhergestellt werden."
                         ]
                     },
                     {
-                        "title": "Werden die gesammelten Zufallscodes beim Deinstallieren der App entfernt?",
+                        "title": "Werden die gesammelten Zufalls-IDs beim Deinstallieren der App entfernt?",
                         "anchor": "delete_random_ids",
                         "active": true,
                         "textblock": [
@@ -454,7 +454,7 @@
                             "In der derzeitigen Version bleiben bei einer Deinstallation unter iOS die Begegnungsaufzeichnungen erhalten. Es gibt jedoch keine Garantien, wie lange diese Daten vorgehalten werden.",
                             "Auf Android-Geräten werden in der derzeitigen Implementierung beim Deinstallieren <a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api#methods' target='_blank' rel='noopener noreferrer'>'Datenbank und Schlüssel' vom Gerät gelöscht</a>. Sie sollten daher davon ausgehen, dass mit Deinstallation der App auch die Begegnungsaufzeichnungen verloren gehen.",
                             "Da sich dieses Verhalten bei der App-Deinstallation auch ohne Änderungen an der Corona-Warn-App jederzeit ändern kann, sollten sie die App wirklich nur in Ausnahmefällen deinstallieren oder wenn die Hotline oder Entwickler auf GitHub sie explizit darum bitten ",
-                            "Wir empfehlen daher, vor der Neu-installation zunächst die Daten in der App zurückzusetzen, da hierbei die gesammelten Zufallscodes nicht gelöscht werden:",
+                            "Wir empfehlen daher, vor der Neu-installation zunächst die Daten in der App zurückzusetzen, da hierbei die gesammelten Zufalls-IDs nicht gelöscht werden:",
                             "<ul><li>[iOS] Auf iOS-Geräten finden Sie die Funktion 'Anwendung zurücksetzen' auf dem Einstiegsbild der App ganz unten unter 'Einstellungen'.</li><li>[Google/Android] Auf Android-Geräten wählen Sie unter den drei Punkten im oberen rechten Bereich des Einstiegsbilds 'Einstellungen' -> 'Anwendung zurücksetzen'.</li></ul>"
                         ]
                     },
@@ -553,7 +553,7 @@
                         "active": true,
                         "textblock": [
                             "Nein. Die App ermöglicht zum einen den elektronischen Abruf von Testergebnissen und zum anderen hilft sie bei der Erkennung möglicher Risiko-Begegnungen (Begegnungen mit infizierten Personen). Sie können selbst entscheiden, ob Sie die Testergebnisse abrufen und ob Sie sie bei einem positiven Befund als Diagnoseschlüssel ('Positivkennung') übermitteln – nichts geschieht ohne Ihre Zustimmung.",
-                            "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Begegnungsaufzeichnungen deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren. Bei der Deinstallation können alle aufgezeichneten Begegnungen verloren gehen, siehe <a href='#delete_random_ids' target='_blank' rel='noopener'>Werden die gesammelten Zufallscodes beim Deinstallieren der App entfernt?</a>."
+                            "Außerdem können Sie sowohl in der App selbst als auch in den Einstellungen Ihres Smartphones die Nutzung der COVID-19-Begegnungsaufzeichnungen deaktivieren oder die App auch jederzeit wieder vollständig deinstallieren. Bei der Deinstallation können alle aufgezeichneten Begegnungen verloren gehen, siehe <a href='#delete_random_ids' target='_blank' rel='noopener'>Werden die gesammelten Zufalls-IDs beim Deinstallieren der App entfernt?</a>."
                         ]
                     },
                     {
@@ -716,8 +716,8 @@
                         "anchor": "data_access",
                         "active": true,
                         "textblock": [
-                            "Über Bluetooth werden konstant wechselnde Zufallscodes versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
-                            "Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufallscodes in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
+                            "Über Bluetooth werden konstant wechselnde Zufalls-IDs versendet und von den Geräten gesammelt, die die App installiert haben. Es erfolgt kein Versand und keine Speicherung von personenbezogenen Daten sowie von Geolokations- oder sonstigen ortsbezogenen Daten.",
+                            "Mit Hilfe der Exposure Notification API von Google und Apple verbleiben die Zufalls-IDs in einem gesicherten Bereich des Betriebssystems des Handys. Der Abgleich, ob man einer infizierten Person begegnet ist, geschieht lokal auf dem Handy. Es verlassen keine Daten zum „Matching“ (Abgleich) das Handy.",
                             "Sobald eine Person positiv getestet wurde, wird sie gebeten, die Temporary Exposure Keys der letzten 14 Tage zu teilen. Der Zugriff auf diese Schlüssel erfolgt über die Exposure Notification API, allerdings nur dann, wenn die nutzende Person aktiv ihre Zustimmung gegeben hat."
                         ]
                     },
@@ -953,7 +953,7 @@
                         "anchor": "no_log_check",
                         "active": true,
                         "textblock": [
-                           "AKTUELL: Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind.", "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen' (iOS 13.7 und höher: 'Einstellungen' > 'Begegnungsmitteilungen' > 'Status von Begegnungsaufzeichnungen'). Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufallscodes durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
+                           "AKTUELL: Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind.", "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen' (iOS 13.7 und höher: 'Einstellungen' > 'Begegnungsmitteilungen' > 'Status von Begegnungsaufzeichnungen'). Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufalls-IDs durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
                         ]
                     },
                     {
