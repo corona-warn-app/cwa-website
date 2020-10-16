@@ -227,6 +227,20 @@
                         ]
                     },
                     {
+                        "title": "Message: „Something went wrong. Due to a technical problem your app has been reset“",
+                        "anchor": "cause9002_recovery",
+                        "active": true,
+                        "textblock": [
+                            "Starting with Corona-Warn-App version 1.5.0 or higher, it may happen that after opening the app you get the notification „Something went wrong. Due to a technical problem your app was reset“.",
+                            "<h4>What happened?</h4> An error occurred while accessing the database, which means that the encrypted data can no longer be accessed. The Corona-Warn-App has detected this error and automatically reset the databases, so that access is now working again and the Corona-Warn-App can still inform you about your risk status. More technical details about this problem can be found below.",
+                            "<h4>What should you consider?</h4> Resetting the databases has no effect on the risk determination and therefore not on your risk status. All recorded encounters with other people using the app will be preserved. You will still be notified about risk encounters and can warn others if you test positive for COVID-19.",
+                            "However, if you have scanned a QR code for electronic notification of a COVID-19 test and the test result has not yet been sent to you in the App, resetting the databases will cause the test to lose its registration for electronic transmission. For data protection reasons, the QR code can unfortunately not be read in again. Please contact your physician or the laboratory to obtain your test result.",
+                            "Resetting the data also means that the information on how long your app has been active is lost (the number of active days is set to 0). Entries may have also been removed from the history of encounter records, which you can access via your Google Account settings. However, this has no effect on the risk determination and your risk status. After 24 hours at the latest, your risk status should be displayed again and new entries should appear in the history of the encounter records.",
+                            "<h4>Technical background</h4> The Corona-Warn-App was developed with the highest standards of data protection. For this purpose, data is stored in encrypted form and the program code of the app is made available for public review (open source approach). In order to realize data encryption for an app, developers like to fall back on program modules that have already been tried and tested in the past and are also made available as open source by other developers. This way, transparency for all components of the Corona-Warn-App can be guaranteed. Only recently it became known that an encryption module, which is also used by the Corona-Warn-App, works incorrectly if the memory for keys or passwords integrated in the Android operating system does not react reliably. This error leads to the fact that an encrypted database can no longer be opened. This in turn causes some users to see the message „Cause: 9002 Something went wrong (sqlite)“ or the app can no longer be opened. Of course, the Corona-Warn-App is thoroughly tested before each release of an update. However, this error never occurred during the tests and it is still difficult to reproduce.",
+                            "All parties involved work together to resolve the error as quickly as possible."
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Cause: 9002 Something went wrong (timeout)",
                         "anchor": "cause9002_timeout",
                         "active": true,
@@ -314,9 +328,8 @@
                         "anchor": "age_restriction",
                         "active": true,
                         "textblock": [
-                            "Persons aged 16 and older may use the app, which is targeted at users in Germany. The age restriction of 16 years and older is necessary, because the app processes data that is particularly worthy of protection under the General Data Protection Regulation (GDPR) of the European Union. According to the GDPR, minors can only give their effective consent to the processing of data after the age of 16. In principle, this applies to both app stores.",
-                            "However, the level of strictness is different in both app stores:",
-                            "<ul><li>Apple applies stricter criteria in its store, including data protection and GDPR age restrictions. This results in the specification '17+' in the App Store. Apple may require you to verify your age.</li><li>Google Play Store, on the other hand, only applies USK specifications. According to the USK, the app is approved for all age groups, which is why the minimum age in Google Play Store is 0.</li></ul>"
+                            "The app is aimed at people who are at least 16 years old. Of course, custodians are free to allow children and young people under the age of 16 to use the app.",
+                            "However, the age restrictions applicable in the Apple App Store and the Google Play Store are determined exclusively by the respective companies on the basis of various criteria. Therefore, the age limit in the Apple App Store is '12+' and in the PlayStore is '0+'."
                         ]
                     },
                     {
