@@ -70,7 +70,7 @@
                         "anchor": "no_risk_update",
                         "active": true,
                         "textblock": [
-                            "First, please ensure that you are running the current version of the app. You should have version 1.3.1 or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "First, please ensure that you are running the current version of the app. You should have version [android.current-app-version] or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
                             "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
                             "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
@@ -272,13 +272,13 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
-                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS 13.5 or higher.",
-                            "Google/Android: Corona-Warn-App runs on phones with Android 6 ('Marshmallow') or higher. Google Play services install the Exposure Notification API automatically.",
+                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS [ios.minimum-required-os-version] or higher.",
+                            "Google/Android: Corona-Warn-App runs on phones with Android [android.minimum-required-os-version] or higher. Google Play services install the Exposure Notification API automatically.",
                             "For other operating system-related questions, please contact Apple or Google."
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Why is iOS 13.5 a minimum requirement?",
+                        "title": "[Apple/iOS]: Why is iOS [ios.minimum-required-os-version] a minimum requirement?",
                         "anchor": "ios135",
                         "active": true,
                         "textblock": [
@@ -294,7 +294,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Why are Android 6 and Google Play Services minimum requirements?",
+                        "title": "[Google/Android]: Why are Android [android.minimum-required-os-version] and Google Play Services minimum requirements?",
                         "anchor": "googleplay",
                         "active": true,
                         "textblock": [
@@ -984,7 +984,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated October 17th, 2020"
+                            "Updated [last-update]"
                         ]
                     }
                 ]

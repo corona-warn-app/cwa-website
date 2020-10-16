@@ -70,7 +70,7 @@
                         "anchor": "no_risk_update",
                         "active": true,
                         "textblock": [
-                            "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Sie sollten mindestens Version 1.3.1 verwenden. Wenn eine niedrigere Version installiert ist, öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
+                            "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Sie sollten mindestens Version [android.current-app-version] verwenden. Wenn eine niedrigere Version installiert ist, öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
                             "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
                             "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. <b>Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:</b>",
                             "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivität'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivität und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
@@ -273,13 +273,13 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
-                            "[Apple/iOS]: Die App läuft auf iOS-Smartphones ab dem iPhone 6s. Die Version des Betriebssystems muss  iOS 13.5 oder höher sein, da mit dieser Version die Exposure Notification API eingeführt wurde.",
-                            "[Google/Android]: Die App läuft auf Smartphones ab Android 6 ('Marshmallow'). Die Exposure Notification API wurde hier bereits über die Google-Play-Dienste eingespielt.",
+                            "[Apple/iOS]: Die App läuft auf iOS-Smartphones ab dem iPhone 6s. Die Version des Betriebssystems muss iOS [ios.minimum-required-os-version] oder höher sein, da mit dieser Version die Exposure Notification API eingeführt wurde.",
+                            "[Google/Android]: Die App läuft auf Smartphones ab Android [android.minimum-required-os-version]. Die Exposure Notification API wurde hier bereits über die Google-Play-Dienste eingespielt.",
                             "Weitere Fragen zu den Betriebssystemen können nur die Hersteller selbst beantworten."
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Warum ist iOS 13.5 Mindestvoraussetzung?",
+                        "title": "[Apple/iOS]: Warum ist iOS [ios.minimum-required-os-version] Mindestvoraussetzung?",
                         "anchor": "ios135",
                         "active": true,
                         "textblock": [
@@ -295,11 +295,11 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Warum sind Android 6 und Google Play-Dienste Mindestvoraussetzungen?",
+                        "title": "[Google/Android]: Warum sind Android [android.minimum-required-os-version] und Google Play-Dienste Mindestvoraussetzungen?",
                         "anchor": "googleplay",
                         "active": true,
                         "textblock": [
-                            "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version 6.0 verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
+                            "Google liefert die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) über die Google Play-Dienste aus. Die API wird ab Android API Level 23 unterstützt. Diese Version ist ab Android-Version [android.minimum-required-os-version] verfügbar, siehe <a href='https://source.android.com/setup/start/build-numbers' target='_blank' rel='noopener noreferrer'>Codenames, Tags, and Build Numbers</a>. Diese Entscheidung wurde alleine von Google getroffen. Zudem fehlt auf älteren Geräten oft auch geräteseitig die Unterstützung für Bluetooth Low Energy. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                         ]
                     },
                     {
@@ -986,7 +986,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Stand: 17.10.2020"
+                            "Stand: [last-update]"
                         ]
                     }
                 ]
