@@ -14,17 +14,17 @@ Sowohl im Google Play Store als auch im Apple App Store steht ab sofort ein neue
 <!-- overview -->
 </br>
 
-## Unterstützung des europäischen Corona-App-Frameworks ermöglicht ## 
+## Unterstützung des europäischen Corona-App-Gateways ermöglicht ## 
 
-Die neue Version 1.5 der deutschen Corona-Warn-App unterstützt das europäische Corona-App-Framework.  
+Die neue Version 1.5 der deutschen Corona-Warn-App unterstützt das europäische Corona-App-Gateway.  
 
-Nach erfolgreicher Installation der neuen Version bekommen die Nutzer*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Framework sowie die angepassten [Datenschutzrichtlinien](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](https://www.coronawarn.app/assets/documents/cwa-eula-de.pdf). Eine Liste der teilnehmenden Länder ist über den Detailbildschirm der Risiko-Ermittlung zugänglich.  
+Nach erfolgreicher Installation der neuen Version bekommen die Nutzer*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Gateway sowie die angepassten [Datenschutzrichtlinien](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](https://www.coronawarn.app/assets/documents/cwa-eula-de.pdf). Eine Liste der teilnehmenden Länder ist über den Detailbildschirm der Risiko-Ermittlung zugänglich.  
 
 <img src="./efgs.jpg" title="Corona-Warn-App Risikostatus"></br>
 
 Nachdem Brüssel heute den [europäischen Gateway-Service](https://ec.europa.eu/commission/presscorner/detail/de/ip_20_1904) gestartet hat, können von nun an Zufalls-IDs sowie Diagnoseschlüssel mit den Corona-Apps der teilnehmenden Länder in der EU geteilt werden. Nach Deutschland, Italien und Irland folgen in Kürze weitere Staaten.  
 
-Der Gateway-Service sorgt für die Pseudonymisierung und Sicherheit der geteilten Schlüssel, die Identität der Nutzer*innen bleibt somit verborgen. Gleichzeitig fungiert dieser als Universal-Übersetzer, wodurch die verschiedenen IT-Systeme der einzelnen Länder miteinander kommunizieren können. Wenn eine neue App ab das Gateway angeschlossen wird, kann der Staat dabei zudem flexibel entscheiden, wie die Informationen über eine Infektion übermittelt werden. Erfahren Sie mehr zum europäischen Corona-App-Framework in dem [Blog](https://news.sap.com/germany/2020/10/eu-corona-gateway/) von Jürgen Müller, Mitglied des Vorstands der SAP SE und Chief Technology Officer (CTO), und Adel Al-Saleh, Vorstandsmitglied der Deutschen Telekom AG und T-Systems-CEO. 
+Der Gateway-Service sorgt für die Pseudonymisierung und Sicherheit der geteilten Schlüssel, die Identität der Nutzer*innen bleibt somit verborgen. Gleichzeitig fungiert dieser als Universal-Übersetzer, wodurch die verschiedenen IT-Systeme der einzelnen Länder miteinander kommunizieren können. Wenn eine neue App ab das Gateway angeschlossen wird, kann der Staat dabei zudem flexibel entscheiden, wie die Informationen über eine Infektion übermittelt werden. Erfahren Sie mehr zum europäischen Corona-App-Gateway in dem [Blog](https://news.sap.com/germany/2020/10/eu-corona-gateway/) von Jürgen Müller, Mitglied des Vorstands der SAP SE und Chief Technology Officer (CTO), und Adel Al-Saleh, Vorstandsmitglied der Deutschen Telekom AG und T-Systems-CEO. 
 
 </br>
 
