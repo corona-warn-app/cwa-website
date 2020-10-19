@@ -70,7 +70,7 @@
                         "anchor": "no_risk_update",
                         "active": true,
                         "textblock": [
-                            "First, please ensure that you are running the current version of the app. You should have version 1.3.1 or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "First, please ensure that you are running the current version of the app. You should have version [android.current-app-version] or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
                             "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
                             "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
@@ -126,28 +126,6 @@
                             "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are rated as harmless.",
                             "The remaining encounters are rated collectively according to their distance and duration as well as the presumed infectiousness of the other person(s). This rating doesn't always yield an increased risk in which case those encounters - together with the harmless encounters from above - will be shown in the Corona-Warn-App but the risk status will stay the same.", 
                             "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Error when communicating with Google API (39508)",
-                        "anchor": "API39508",
-                        "active": true,
-                        "textblock": [
-                            "The notification indicates that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
-                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
-                            "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1021' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
-                            "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Corona-Warn-App is closed immediately after starting",
-                        "anchor": "app_crash",
-                        "active": true,
-                        "textblock": [
-                            "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it is closed immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
-                            "We are working flat out to find a solution to the problem.",
-                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
-                            "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615473' target='_blank' rel='noopener noreferrer'>Find the emergency solution in the GitHub issue here</a>."
                         ]
                     },
                     {
@@ -216,14 +194,17 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Cause: 9002 Something went wrong (sqlite)",
-                        "anchor": "cause9002",
+                        "title": "Message: „Something went wrong. Due to a technical problem your app has been reset“",
+                        "anchor": "cause9002_recovery",
                         "active": true,
                         "textblock": [
-                            "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the info for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
-                            "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
-                            "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>.",
-                            "<b>If you can no longer open the app, please read the section <a href='#app_crash' target='_blank' rel='noopener'>'Corona-Warn-App is closed immediately after starting'</a>.</b>"
+                            "Starting with Corona-Warn-App version 1.5.0 or higher, it may happen that after opening the app you get the notification „Something went wrong. Due to a technical problem your app was reset“.",
+                            "<h4>What happened?</h4> An error occurred while accessing the database, which means that the encrypted data can no longer be accessed. The Corona-Warn-App has detected this error and automatically reset the databases, so that access is now working again and the Corona-Warn-App can still inform you about your risk status. More technical details about this problem can be found below.",
+                            "<h4>What should you consider?</h4> <b>Resetting the databases has no effect on the risk determination and therefore not on your risk status.</b> All recorded encounters with other people using the app will be preserved. You will still be notified about risk encounters and can warn others if you test positive for COVID-19.",
+                            "<b>However, if you have scanned a QR code for electronic notification of a COVID-19 test and the test result has not yet been sent to you in the App, resetting the databases will cause the test to lose its registration for electronic transmission. For data protection reasons, the QR code can unfortunately not be read in again. Please contact your physician or the laboratory to obtain your test result.</b>",
+                            "Resetting the data also means that the information on how long your app has been active is lost (the number of active days is set to 0). Entries may have also been removed from the history of encounter records, which you can access via your Google Account settings. (see <a href='#exposure_check' target='_blank' rel='noopener noreferrer'>here</a> and <a href='#keys_matches' target='_blank' rel='noopener noreferrer'>here</a>) However, this has no effect on the risk determination and your risk status. After 24 hours at the latest, your risk status should be displayed again and new entries should appear in the history of the encounter records.",
+                            "<h4>Technical background</h4> The Corona-Warn-App was developed with the highest standards of data protection. For this purpose, data is stored in encrypted form and the program code of the app is made available for public review (<a href='#open-source' target='_blank' rel='noopener noreferrer'>open source approach</a>). In order to realize data encryption for an app, developers like to fall back on program modules that have already been tried and tested in the past and are also made available as open source by other developers. This way, transparency for all components of the Corona-Warn-App can be guaranteed. Only recently it became known that an encryption module, which is also used by the Corona-Warn-App, works incorrectly if the memory for keys or passwords integrated in the Android operating system does not react reliably. This error leads to the fact that an encrypted database can no longer be opened. This in turn causes some users to see the message „<a href='#cause9002' target='_blank' rel='noopener noreferrer'>Cause: 9002 Something went wrong (sqlite)</a>“ or <a href='#app_crash' target='_blank' rel='noopener noreferrer'>the app can no longer be opened</a>. Of course, the Corona-Warn-App is thoroughly tested before each release of an update. However, this error never occurred during the tests and it is still difficult to reproduce.",
+                            "All parties involved work together to resolve the error as quickly as possible."
                         ]
                     },
                     {
@@ -258,13 +239,13 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
-                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS 13.5 or higher.",
-                            "Google/Android: Corona-Warn-App runs on phones with Android 6 ('Marshmallow') or higher. Google Play services install the Exposure Notification API automatically.",
+                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS [ios.minimum-required-os-version] or higher.",
+                            "Google/Android: Corona-Warn-App runs on phones with Android [android.minimum-required-os-version] or higher. Google Play services install the Exposure Notification API automatically.",
                             "For other operating system-related questions, please contact Apple or Google."
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Why is iOS 13.5 a minimum requirement?",
+                        "title": "[Apple/iOS]: Why is iOS [ios.minimum-required-os-version] a minimum requirement?",
                         "anchor": "ios135",
                         "active": true,
                         "textblock": [
@@ -280,7 +261,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Why are Android 6 and Google Play Services minimum requirements?",
+                        "title": "[Google/Android]: Why are Android [android.minimum-required-os-version] and Google Play Services minimum requirements?",
                         "anchor": "googleplay",
                         "active": true,
                         "textblock": [
@@ -310,13 +291,23 @@
                         ]
                     },
                     {
+                        "title": "In which countries can the Corona Warn App be used?",
+                        "anchor": "interoperability_countries",
+                        "active": true,
+                        "textblock": [
+                            "Together with the European Commission, an infrastructure for secure information exchange has been developed, known as the \"Interoperability Gateway\". This gateway enables the Corona Warn App to operate across national borders and to receive potential warning messages abroad.",
+                            "Below is a list of currently participating countries and details of the responsible health authorities:",
+                            "(status: 14.10.2020)",
+                            "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Croatia<br>(from 30.10.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td>Czech Republic<br>(from 31.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Palackého náměstí 4<br>120 00 Praha 2<br>Czech Republic<br>E-Mail: mzcr@mzcr.cz<br>Phone: +420 224971111</td></tr><tr><td>Denmark<br>(from 27.10.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 19.10.2020)</td><td>Centre for Disease Prevention and Control</td><td>Centre for Disease Prevention and Control<br>Duntes Street 22, k-5<br>LV-1005 Riga<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br>Phone: +371 67501590</td></tr></tbody></table>"
+                        ]
+                    },
+                    {
                         "title": "Why are there different age restrictions to use the app on Android and Apple devices?",
                         "anchor": "age_restriction",
                         "active": true,
                         "textblock": [
-                            "Persons aged 16 and older may use the app, which is targeted at users in Germany. The age restriction of 16 years and older is necessary, because the app processes data that is particularly worthy of protection under the General Data Protection Regulation (GDPR) of the European Union. According to the GDPR, minors can only give their effective consent to the processing of data after the age of 16. In principle, this applies to both app stores.",
-                            "However, the level of strictness is different in both app stores:",
-                            "<ul><li>Apple applies stricter criteria in its store, including data protection and GDPR age restrictions. This results in the specification '17+' in the App Store. Apple may require you to verify your age.</li><li>Google Play Store, on the other hand, only applies USK specifications. According to the USK, the app is approved for all age groups, which is why the minimum age in Google Play Store is 0.</li></ul>"
+                            "The app is aimed at people who are at least 16 years old. Of course, custodians are free to allow children and young people under the age of 16 to use the app.",
+                            "However, the age restrictions applicable in the Apple App Store and the Google Play Store are determined exclusively by the respective companies on the basis of various criteria. Therefore, the age limit in the Apple App Store is '12+' and in the PlayStore is '0+'."
                         ]
                     },
                     {
@@ -376,7 +367,7 @@
                         "textblock": [
                             "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For info about the app flow, see <a href='#risk_info' target='_blank' rel='noopener noreferrer'>How do you get information about a risk of infection?</a> for details.",
                             "<b>Exposure checks</b>",
-                            "For each day, there is an entry for each of the last 14 days, see <a href='#multiple_exposure_checks' target='_blank' rel='noopener noreferrer'>My exposure log shows multiple, simultaneous checks for exposures</a>.",
+                            "This value does not reflect the number of encounters. Please tap one level further: This is where the checks of up to 15 days are logged (today plus the last 14 days). Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
                             "<b>Provided Key Count</b> (Apple) | <b>Number of keys</b> (Android)",
                             "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
                             "<b>Matched Key Count</b> (Apple) | <b>Number of matches</b> (Android)",
@@ -735,7 +726,10 @@
                         "active": true,
                         "textblock": [
                             "Devices in close proximity to yours collect “rolling proximity identifiers” (RPI). These are IDs that guarantee data privacy and change constantly in short intervals, thereby preventing devices from being tracked. Apart from these IDs, other devices in close proximity cannot retrieve any other information from your device. These IDs can only be linked to pseudonymous diagnosis keys, which are needed to perform risk identification. A connection with user IDs or your device's International Mobile Equipment Identity (IMEI) is not possible.",
-                            "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via TeleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed."
+                            "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via TeleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed.",
+                            "<b>Why were dummy keys (fake diagnostic keys) initially created and used?</b><br/>A very small number of dummy keys could possibly result in transmitted diagnostic keys being assigned to a single user. To minimise this risk, fake diagnostic keys (dummy keys) were initially generated. This increased the number of diagnostic keys in the system in order to minimise the described re-identification risk.",
+                            "<b>Why is it now possible to do without the generation and use of dummy keys (fake diagnostic keys)?</b><br/>Due to the current increase in the number of infections, many diagnostic keys are already being managed in the CWA. Therefore the risk of re-identification is currently considered very low. With the connection of the CWA to the European Federation Gateway Service (EFGS), the number of diagnostic keys in the system will increase even further, as diagnostic keys from users in other countries will also be added. For this reason, the generation and use of fake diagnostic keys (dummy keys) can be easily avoided.",
+                            "<b>Will dummy keys (fake diagnostic keys) be used again if the corona pandemic should abate?</b><br/>If no better alternatives are found in the meantime, the generation of dummy keys (fake diagnosis keys) can be activated at short notice if required."
                         ]
                     },
                     {
@@ -788,6 +782,42 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                        "title": "[Google/Android]: Error when communicating with Google API (39508)",
+                        "anchor": "API39508",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "The notification indicates that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
+                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
+                            "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1021' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
+                            "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Cause: 9002 Something went wrong (sqlite)",
+                        "anchor": "cause9002",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the info for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
+                            "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
+                            "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>.",
+                            "<b>If you can no longer open the app, please read the section <a href='#app_crash' target='_blank' rel='noopener'>'Corona-Warn-App is closed immediately after starting'</a>.</b>"
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Corona-Warn-App is closed immediately after starting",
+                        "anchor": "app_crash",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it is closed immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
+                            "We are working flat out to find a solution to the problem.",
+                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
+                            "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615473' target='_blank' rel='noopener noreferrer'>Find the emergency solution in the GitHub issue here</a>."
+                        ]
+                    },
                     {
                         "title": "[Google/Android]: Exposures are displayed for more than 14 days",
                         "anchor": "status_14",
@@ -971,7 +1001,7 @@
                         "anchor": "update_faq",
                         "active": true,
                         "textblock": [
-                            "Updated October 13, 2020"
+                            "Updated [last-update]"
                         ]
                     }
                 ]

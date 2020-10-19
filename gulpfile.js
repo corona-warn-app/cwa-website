@@ -3,6 +3,7 @@ const plugins = require('gulp-load-plugins');
 const yargs = require('yargs');
 const browser = require('browser-sync');
 const gulp = require('gulp');
+const replace = require('gulp-replace');
 const panini = require('panini');
 const yaml = require('js-yaml');
 const fs = require('fs');
@@ -49,7 +50,8 @@ gulp.task(
     images_webp,
     sass,
     build_sitemap,
-    createFaqRedirects
+    createFaqRedirects,
+    replaceVersionNumbers
   )
 );
 
@@ -303,5 +305,19 @@ function createFaqRedirects() {
         extname: ""
       };
     }))
+    .pipe(gulp.dest(PATHS.dist))
+}
+
+// replaces some values inside json that cant be replaced with handlebars exprerssion since they are inside json
+function replaceVersionNumbers() {
+  return gulp
+    .src([PATHS.dist + "/**/*.html"])
+    .pipe(replace('[ios.latest-os-version]', '14.0.1'))
+    .pipe(replace('[ios.minimum-required-os-version]', '13.6'))
+    .pipe(replace('[ios.current-app-version]', '1.5'))
+    .pipe(replace('[android.latest-os-version]', '11'))
+    .pipe(replace('[android.minimum-required-os-version]', '6'))
+    .pipe(replace('[android.current-app-version]', '1.5'))
+    .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
