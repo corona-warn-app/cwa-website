@@ -129,28 +129,6 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Error when communicating with Google API (39508)",
-                        "anchor": "API39508",
-                        "active": true,
-                        "textblock": [
-                            "The notification indicates that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
-                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
-                            "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1021' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
-                            "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Corona-Warn-App is closed immediately after starting",
-                        "anchor": "app_crash",
-                        "active": true,
-                        "textblock": [
-                            "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it is closed immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
-                            "We are working flat out to find a solution to the problem.",
-                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
-                            "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615473' target='_blank' rel='noopener noreferrer'>Find the emergency solution in the GitHub issue here</a>."
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?",
                         "anchor": "android_location",
                         "active": true,
@@ -213,17 +191,6 @@
                         "active": true,
                         "textblock": [
                             "This is a general notification, which does not mean that risk encounters have been identified. It is <b>not</b> a message or function of the Corona-Warn-App. Apple's Exposure Notification Framework (ENF) sends this notification and displays the icon. Apple's ENF provides information about any encounters with app users who were tested positive - without making a statement as to whether or not it was a critical encounter according to the Robert Koch Institute's algorithm. For example, encounters are also displayed in case the distance was more than 8 meters or in case it only lasted a few minutes. This means that the 'Weekly Update' only provides information about technical procedures of the ENF that are insufficient for an actual risk calculation. A reliable risk calculation takes place exclusively in the Corona-Warn-App under the scientific framework of the Robert Koch Institute. You can view your current risk status directly in the Corona-Warn-App."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Cause: 9002 Something went wrong (sqlite)",
-                        "anchor": "cause9002",
-                        "active": true,
-                        "textblock": [
-                            "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the info for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
-                            "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
-                            "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>.",
-                            "<b>If you can no longer open the app, please read the section <a href='#app_crash' target='_blank' rel='noopener'>'Corona-Warn-App is closed immediately after starting'</a>.</b>"
                         ]
                     },
                     {
@@ -815,6 +782,42 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                        "title": "[Google/Android]: Error when communicating with Google API (39508)",
+                        "anchor": "API39508",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "The notification indicates that the Corona-Warn-App has called the Exposure Notification Framework too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
+                            "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
+                            "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1021' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
+                            "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Cause: 9002 Something went wrong (sqlite)",
+                        "anchor": "cause9002",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the info for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
+                            "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
+                            "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>.",
+                            "<b>If you can no longer open the app, please read the section <a href='#app_crash' target='_blank' rel='noopener'>'Corona-Warn-App is closed immediately after starting'</a>.</b>"
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Corona-Warn-App is closed immediately after starting",
+                        "anchor": "app_crash",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it is closed immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
+                            "We are working flat out to find a solution to the problem.",
+                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
+                            "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615473' target='_blank' rel='noopener noreferrer'>Find the emergency solution in the GitHub issue here</a>."
+                        ]
+                    },
                     {
                         "title": "[Google/Android]: Exposures are displayed for more than 14 days",
                         "anchor": "status_14",
