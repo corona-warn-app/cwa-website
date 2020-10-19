@@ -20,7 +20,7 @@ Die neue Version 1.5 der deutschen Corona-Warn-App unterstützt das europäische
 
 Nach erfolgreicher Installation der neuen Version bekommen die Nutzer*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Framework sowie die angepassten [Datenschutzrichtlinien](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](https://www.coronawarn.app/assets/documents/cwa-eula-de.pdf). Eine Liste der teilnehmenden Länder ist über den Detailbildschirm der Risiko-Ermittlung zugänglich.  
 
-<img src="./efgs.JPG" title="Corona-Warn-App Risikostatus"></br>
+<img src="./efgs.jpg" title="Corona-Warn-App Risikostatus"></br>
 
 Nachdem Brüssel heute den [europäischen Gateway-Service](https://ec.europa.eu/commission/presscorner/detail/de/ip_20_1904) gestartet hat, können von nun an Zufalls-IDs sowie Diagnoseschlüssel mit den Corona-Apps der teilnehmenden Länder in der EU geteilt werden. Nach Deutschland, Italien und Irland folgen in Kürze weitere Staaten.  
 
@@ -34,7 +34,7 @@ Nach dem Erhalt eines positiven Testergebnisses haben Nutzer\*innen nun die Mög
 
 Nutzer\*innen, die ihre Symptome erfassen möchten, werden gebeten den Symptomstart in einem Kalender anzugeben.
 
-<img src="./symptoms.JPG" title="Corona-Warn-App Risikostatus"></br>
+<img src="./symptoms.jpg" title="Corona-Warn-App Risikostatus"></br>
 
 
 ## Verbesserung der Textverständlichkeit 
