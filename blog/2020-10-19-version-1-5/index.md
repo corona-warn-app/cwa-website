@@ -18,7 +18,7 @@ A new update for the Corona-Warn-App is now available in both the Google Play St
 
 The new version 1.5 of the German Corona-Warn-App supports the new European interoperability gateway service, which allows national contact tracing and warning apps to interact with each other.  After successful installation of the new version, users will receive detailed information about the connection to the European interoperability framework as well as the adapted [data protection guidelines](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-en.pdf) and [terms of use](https://www.coronawarn.app/assets/documents/cwa-eula-en.pdf) when they start the app for the first time. A list of participating countries is accessible via the detail screen of the risk assessment.   
 
-<img src="./efgs_en.JPG" title="Corona-Warn-App Risikostatus"></br>
+<img src="./efgs_en.jpg" title="Corona-Warn-App Risikostatus"></br>
 
 Since Brussels launched the [European interoperability gateway service](https://ec.europa.eu/commission/presscorner/detail/en/ip_20_1904) today, random IDs and diagnostic keys can now be shared with the Corona warning apps of the participating countries in the EU. Germany, Italy and Ireland will soon be followed by other states.   
 
@@ -32,7 +32,7 @@ After receiving a positive test result, users can now voluntarily record their s
 
 Users who wish to record their symptoms are asked to enter the start of their symptoms in a calendar.   
 
-<img src="./symptoms_en.JPG" title="Corona-Warn-App Risikostatus"></br>
+<img src="./symptoms_en.jpg" title="Corona-Warn-App Risikostatus"></br>
 
 </br>
 
