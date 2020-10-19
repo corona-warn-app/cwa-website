@@ -7,7 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-Sowohl im Google Play Store als auch im Apple App Store steht ab sofort ein neues Update für die Corona-Warn-App bereit. Mit der Version 1.5 der App werden neue Funktionen eingeführt wie eine Symptomerfassung oder die Unterstützung des europäischen Corona-App-Frameworks. Zusätzlich werden auch einige „Bugs“ behoben und Verbesserungen geliefert. 
+Sowohl im Google Play Store als auch im Apple App Store steht ab sofort ein neues Update für die Corona-Warn-App bereit. Mit der Version 1.5 der App werden neue Funktionen eingeführt wie eine Symptomerfassung oder die Unterstützung des europäischen Corona-App-Gateways. Zusätzlich werden auch einige „Bugs“ behoben und Verbesserungen geliefert. 
 
 <span style=font-size:0.7em;>Hinweis für iOS Nutzer\*innen: Die App-Version 1.5 setzt mindestens die iOS-Version 13.6 voraus. iOS-Nutzer\*innen sind somit dazu angehalten, ihr Betriebssystem zu aktualisieren, bevor das Update auf die neue App-Version 1.5 gestartet wird.</span>
 
