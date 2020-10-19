@@ -7,7 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-A new update for the Corona-Warn-App is now available in both the Google Play Store and the Apple App Store. Version 1.5 of the App introduces new features such as symptom detection or support of the European Corona App framework. In addition, some "bugs" have been fixed and further improvements are delivered.  
+A new update for the Corona-Warn-App is now available in both the Google Play Store and the Apple App Store. Version 1.5 of the App introduces new features such as symptom detection or support of the European Corona App gateway. In addition, some "bugs" have been fixed and further improvements are delivered.  
 
 <span style=font-size:0.7em;>Note for iOS users: Version 1.5 of the app requires at least iOS version 13.6. So please check if your phone is on iOS 13.6 or higher before you update the app to the new app version 1.5.</span>
 
@@ -16,7 +16,7 @@ A new update for the Corona-Warn-App is now available in both the Google Play St
 
 ## Support of the EU Interoperability Gateway   
 
-The new version 1.5 of the German Corona-Warn-App supports the new European interoperability gateway service, which allows national contact tracing and warning apps to interact with each other.  After successful installation of the new version, users will receive detailed information about the connection to the European interoperability framework as well as the adapted [data protection guidelines](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-en.pdf) and [terms of use](https://www.coronawarn.app/assets/documents/cwa-eula-en.pdf) when they start the app for the first time. A list of participating countries is accessible via the detail screen of the risk assessment.   
+The new version 1.5 of the German Corona-Warn-App supports the new European interoperability gateway service, which allows national contact tracing and warning apps to interact with each other.  After successful installation of the new version, users will receive detailed information about the connection to the European interoperability gateway as well as the adapted [data protection guidelines](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-en.pdf) and [terms of use](https://www.coronawarn.app/assets/documents/cwa-eula-en.pdf) when they start the app for the first time. A list of participating countries is accessible via the detail screen of the risk assessment.   
 
 <img src="./efgs_en.jpg" title="European interoperability gateway service">
 
