@@ -35,19 +35,6 @@
                 "title": "Hintergrund&shy;aktualisierung",
                 "id": "background_updates",
                 "accordion": [
-                    {
-                        "title": "[Apple/iOS]: Die Risikoermittlung lässt sich nach dem Update auf iOS 14 nicht mehr aktivieren",
-                        "anchor": "no_risk_update_ios14",
-                        "active": true,
-                        "textblock": [
-                             "Nach dem Update auf iOS 14 melden einige Nutzer, dass die Risikoermittlung deaktiviert wurde und nicht mehr eingeschaltet werden kann.",
-                             "Dieses Problem ist bereits der Entwicklung gemeldet und sie arbeiten an einer Lösung. Um die App bis zur Behebung des Fehlers in vollem Umfang nutzen zu können, gehen Sie bitte wie folgt vor:",
-                             "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
-                             "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
-                             "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
-                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
-                        ]
-                    },
                    {
                         "title": "[Apple/iOS]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                         "anchor": "no_risk_update_ios",
@@ -106,6 +93,19 @@
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Die Risikoermittlung lässt sich nach dem Update auf iOS 14 nicht mehr aktivieren",
+                        "anchor": "no_risk_update_ios14",
+                        "active": true,
+                        "textblock": [
+                             "Nach dem Update auf iOS 14 melden einige Nutzer, dass die Risikoermittlung deaktiviert wurde und nicht mehr eingeschaltet werden kann.",
+                             "Dieses Problem ist bereits der Entwicklung gemeldet und sie arbeiten an einer Lösung. Um die App bis zur Behebung des Fehlers in vollem Umfang nutzen zu können, gehen Sie bitte wie folgt vor:",
+                             "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
+                             "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
+                             "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
+                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS] Leerer Bildschirm auf iOS 13.7 / 14",
                         "anchor": "ios_black_screen",
@@ -825,7 +825,7 @@
                         "anchor": "status_14",
                         "active": true,
                         "textblock": [
-                            "AKTUELL: Gefixed in 1.2. Risiko-Begegnungen werden Ihnen bis zu 14 Tage nach dem Zeitpunkt der Begegnung mit dem Nutzer, der dann ein positives COVID-19-Testergebnis in der Corona-Warn-App gemeldet hat, angezeigt.",
+                            "AKTUELL: Dieser Fehler wurde in Version 1.2 behoben. Risiko-Begegnungen werden Ihnen bis zu 14 Tage nach dem Zeitpunkt der Begegnung mit dem Nutzer, der dann ein positives COVID-19-Testergebnis in der Corona-Warn-App gemeldet hat, angezeigt.",
                             "Bei einigen Android-Smartphones kommt es aktuell vor, dass die Risiko-Begegnungen länger als 14 Tage angezeigt werden. Wir arbeiten an der Behebung dieses Anzeigefehlers. Aktuelle Informationen finden Sie auf Englisch im <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub-Issue 911</a>."
                         ]
                     },
@@ -886,14 +886,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: ENErrorDomain-Fehler 5",
-                        "anchor": "ENError5",
-                        "active": true,
-                        "textblock": [
-                            "AKTUELL: Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immer noch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: Falsche Anzeige der Zahl aktiver Tage",
                         "anchor": "days_active_Android",
                         "active": true,
@@ -927,11 +919,19 @@
                         ]
                     },
                     {
+                        "title": "[Apple/iOS]: ENErrorDomain-Fehler 5",
+                        "anchor": "ENError5",
+                        "active": true,
+                        "textblock": [
+                            "AKTUELL: Der Fehler ENErrorDomain 5 kommt vom Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Nach Angaben von Apple wurde die Ursache, die zu diesem Fehler führte, inzwischen behoben, sodass er in Zukunft nicht mehr vorkommen sollte. Falls der Fehler immer noch auftritt, bitten wir Sie um etwas Geduld, bis die Änderung auf Ihrem Gerät ankommt."
+                        ]
+                    },
+                    {
                         "title": "[Apple/iOS]: ENErrorDomain-Fehler 11",
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                            "Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an.",
+                            "AKTUELL: Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an.",
                             "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird."
                         ]
                     },
