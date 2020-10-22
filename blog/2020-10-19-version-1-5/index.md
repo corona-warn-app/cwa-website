@@ -20,8 +20,7 @@ The new version 1.5 of the German Corona-Warn-App supports the new European inte
 
 <img src="./efgs_en.jpg" title="European interoperability gateway service">
 
-Android users can find a list of participating countries via the three dot menu on the top right of the home screen of the app. There the user has to select “Settings”, followed by “Exposure Logging” and last “Transnational Exposure Logging” to get access. 
-However, iOS users can get access to this list via “Exposure Logging” on the top of the home of the app, where they have to go to “Transnational Exposure Logging” afterwards to see all the participating countries at a glance.
+Both Android and iOS users can get access to this list via “Exposure Logging” on the top of the home of the app, where they have to go to “Transnational Exposure Logging” afterwards to see all the participating countries at a glance.
 
 Since Brussels launched the [European interoperability gateway service](https://ec.europa.eu/commission/presscorner/detail/en/ip_20_1904) today, random IDs and diagnostic keys can now be shared with the Corona warning apps of the participating countries in the EU. Germany, Italy and Ireland will soon be followed by other states.   
 
