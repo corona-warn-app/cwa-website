@@ -22,8 +22,7 @@ Nach erfolgreicher Installation der neuen Version bekommen die Nutzer\*innen bei
 
 <img src="./efgs.jpg" title="Corona-Warn-App Risikostatus"></br>
 
-Android Nutzer\*innen finden eine Liste der teilnehmenden Länder über das Drei-Punkte-Menü oben rechts auf dem Startbildschirm der App. Dort wählen die Nutzer\*innen „Einstellungen“, gefolgt von „Risiko-Ermittlung“ und zuletzt „Länderübergreifende Risiko-Ermittlung“, um auf die Liste zuzugreifen. 
-iOS Nutzer\*innen hingegen, können Zugang zu dieser Liste über „Risiko-Ermittlung“ oben auf dem Startbildschirm der App erhalten. Dort müssen sie anschließend „Länderübergreifende Risiko-Ermittlung“ auswählen, um die Lister der teilnehmenden Länder einzusehen.
+Sowohl Android als auch iOS Nutzer\*innen können Zugang zu dieser Liste über „Risiko-Ermittlung“ oben auf dem Startbildschirm der App erhalten. Dort müssen sie anschließend „Länderübergreifende Risiko-Ermittlung“ auswählen, um die Liste der teilnehmenden Länder einzusehen.
 
 Nachdem Brüssel heute den [europäischen Gateway-Service](https://ec.europa.eu/commission/presscorner/detail/de/ip_20_1904) gestartet hat, können von nun an Zufalls-IDs sowie Diagnoseschlüssel mit den Corona-Apps der teilnehmenden Länder in der EU geteilt werden. Nach Deutschland, Italien und Irland folgen in Kürze weitere Staaten.  
 
