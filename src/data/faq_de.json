@@ -186,14 +186,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: 'COVID-19-Begegnungsaufzeichnungen' - Wöchentliches Update",
-                        "anchor": "notif_weekly_update",
-                        "active": true,
-                        "textblock": [
-                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risiko-Ermittlung unzureichend sind. Eine zuverlässige Risiko-Ermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: „Etwas ist schiefgelaufen. Aufgrund eines technischen Problems wurde Ihre App zurückgesetzt.“",
                         "anchor": "cause9002_recovery",
                         "active": true,
@@ -773,6 +765,17 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: 'COVID-19-Begegnungsaufzeichnungen' - Wöchentliches Update",
+                        "anchor": "notif_weekly_update",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/>Das Verhalten der iOS Benachrichtigung zur Begegnungsmitteilung wurde mit iOS Version 13.7 geändert. Eine Benachrichtigung wird jetzt nur noch monatlich angezeigt. Die Funktion kann in den iOS Einstellungen zudem vollständig deaktiviert werden:<br/>",
+                            "<ol><li>'Einstellungen' -> 'Begegnungsmitteilungen'</li><li>'Monatliches Update' ausschalten.</li></ol>",
+                            "Wir bitten Sie daher, ein Update auf die aktuelle iOS Version durchzuführen.<hr/>",
+                            "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification-Framework (ENF) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENF-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENF, die für eine tatsächliche Risiko-Ermittlung unzureichend sind. Eine zuverlässige Risiko-Ermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
+                        ]
+                    },
                     {
                         "title": "[Google/Android]: Fehler bei Kommunikation mit Google API (39508)",
                         "anchor": "API39508",
