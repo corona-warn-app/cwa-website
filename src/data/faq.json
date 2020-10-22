@@ -186,14 +186,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: 'COVID-19 exposure logging... - Weekly Update'",
-                        "anchor": "notif_weekly_update",
-                        "active": true,
-                        "textblock": [
-                            "This is a general notification, which does not mean that risk encounters have been identified. It is <b>not</b> a message or function of the Corona-Warn-App. Apple's Exposure Notification Framework (ENF) sends this notification and displays the icon. Apple's ENF provides information about any encounters with app users who were tested positive - without making a statement as to whether or not it was a critical encounter according to the Robert Koch Institute's algorithm. For example, encounters are also displayed in case the distance was more than 8 meters or in case it only lasted a few minutes. This means that the 'Weekly Update' only provides information about technical procedures of the ENF that are insufficient for an actual risk calculation. A reliable risk calculation takes place exclusively in the Corona-Warn-App under the scientific framework of the Robert Koch Institute. You can view your current risk status directly in the Corona-Warn-App."
-                        ]
-                    },
-                    {
                         "title": "Message: „Something went wrong. Due to a technical problem your app has been reset“",
                         "anchor": "cause9002_recovery",
                         "active": true,
@@ -772,6 +764,17 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: 'COVID-19 exposure logging... - Weekly Update'",
+                        "anchor": "notif_weekly_update",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>The behaviour of the iOS notification regarding exposure notifications has been changed with iOS version 13.7. A notification is now displayed in a monthly interval. It can be deactivated in the iOS settings:<br/>",
+                            "<ol><li>'Settings' -> 'Exposure Notifications'</li><li>Deactivate 'Monthly Update'.</li></ol>",
+                            "We therefore ask you to update to the newest iOS release.<hr/>",
+                            "This is a general notification, which does not mean that risk encounters have been identified. It is <b>not</b> a message or function of the Corona-Warn-App. Apple's Exposure Notification Framework (ENF) sends this notification and displays the icon. Apple's ENF provides information about any encounters with app users who were tested positive - without making a statement as to whether or not it was a critical encounter according to the Robert Koch Institute's algorithm. For example, encounters are also displayed in case the distance was more than 8 meters or in case it only lasted a few minutes. This means that the 'Weekly Update' only provides information about technical procedures of the ENF that are insufficient for an actual risk calculation. A reliable risk calculation takes place exclusively in the Corona-Warn-App under the scientific framework of the Robert Koch Institute. You can view your current risk status directly in the Corona-Warn-App."
+                        ]
+                    },
                     {
                         "title": "[Google/Android]: Error when communicating with Google API (39508)",
                         "anchor": "API39508",
