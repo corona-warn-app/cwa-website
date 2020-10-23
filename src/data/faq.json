@@ -36,19 +36,6 @@
                 "id": "background_updates",
                 "accordion": [
                     {
-                        "title": "[Apple/iOS]: Risk exposure can no longer be activated after updating to iOS 14",
-                        "anchor": "no_risk_update_ios14",
-                        "active": true,
-                        "textblock": [
-                             "After updating to iOS 14, some users report that risk exposure has been disabled and can no longer be turned on.",
-                             "This problem has already been reported to development and they are working on a solution. To be able to use the app to its full extent until the bug is fixed, please follow these steps:",
-                             "'Settings' > 'WiFi' > Switch 'WiFi' off.",
-                             "'Settings' > 'Exposure notifications' > 'Active region' (Corona-Warn-App) > 'Corona-Warn-App' > Switch 'Share exposure information' off and on again.",
-                             "'Settings' > 'WiFi' > Switch 'WiFi' on again.",
-                             "If the error still occurs although you have performed all steps, you have to reset and reinstall the application once. Your collected random ids will not be lost (<a href='#delete_random_ids'>see also here</a>). However, it will take 24 hours until the app resumes the data collected so."
-                        ]
-                    },
-                    {
                         "title": "[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
                         "anchor": "no_risk_update_ios",
                         "active": true,
@@ -106,6 +93,19 @@
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Risk exposure can no longer be activated after updating to iOS 14",
+                        "anchor": "no_risk_update_ios14",
+                        "active": true,
+                        "textblock": [
+                             "After updating to iOS 14, some users report that risk exposure has been disabled and can no longer be turned on.",
+                             "This problem has already been reported to development and they are working on a solution. To be able to use the app to its full extent until the bug is fixed, please follow these steps:",
+                             "'Settings' > 'WiFi' > Switch 'WiFi' off.",
+                             "'Settings' > 'Exposure notifications' > 'Active region' (Corona-Warn-App) > 'Corona-Warn-App' > Switch 'Share exposure information' off and on again.",
+                             "'Settings' > 'WiFi' > Switch 'WiFi' on again.",
+                             "If the error still occurs although you have performed all steps, you have to reset and reinstall the application once. Your collected random ids will not be lost (<a href='#delete_random_ids'>see also here</a>). However, it will take 24 hours until the app resumes the data collected so."
+                        ]
+		    },
                     {
                         "title": "[Apple/iOS] Can’t enable exposure logging / Empty screen on iOS 13.7 / 14",
                         "anchor": "ios_black_screen",
@@ -827,7 +827,7 @@
                         "anchor": "status_14",
                         "active": true,
                         "textblock": [
-                            "UPDATE: Fixed in 1.2. Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
+                            "UPDATE: This Issue was resolved in version 1.2. Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
                             "For some phones running Android, the exposures currently are displayed for more than 14 days. We're working on fixing this display error. You'll find up-to-date information in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub issue 911</a>."
                         ]
                     },
@@ -876,7 +876,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: wrong number of active days",
+                        "title": "[Apple/iOS]: Wrong number of active days",
                         "anchor": "days_active_Apple",
                         "active": true,
                         "textblock": [
@@ -886,14 +886,6 @@
                             "Exposure logging can be deactivated, for example, by the following:",
                             "<ol><li>Bluetooth was deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
                             "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: ENErrorDomain-Error 5",
-                        "anchor": "ENError5",
-                        "active": true,
-                        "textblock": [
-                            "UPDATE: The ENErrorDomain 5 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
                         ]
                     },
                     {
@@ -928,13 +920,22 @@
                             "UPDATE: This error is resolved by version 1.5 of the Exposure Notification Framework. For details about your ENF version, see <a href='#ENF_version' target='_blank' rel='noopener'>Which version of the COVID-19 Exposure Notification Framework is currently installed?</a>",
                             "This error, in connection with missing risk identification, is currently fixed together with Google. Exposure logging works as intended. Please do not uninstall the app, because this can remove the logged exposures, see also <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/en/faq/#delete_random_ids</a>."
                         ]
-                    }, {
+                    }, 
+			{
                         "title": "[Apple/iOS]: ENErrorDomain-Error 11",
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                           "Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exosure Notifications' and turn it back on again.",
+                           "UPDATE: Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exosure Notifications' and turn it back on again.",
                            "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App."
+                        ]
+                    },
+			{
+                        "title": "[Apple/iOS]: ENErrorDomain-Error 5",
+                        "anchor": "ENError5",
+                        "active": true,
+                        "textblock": [
+                            "UPDATE: The ENErrorDomain 5 error is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
                         ]
                     },
                     {
