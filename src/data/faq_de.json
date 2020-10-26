@@ -400,16 +400,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Migration auf neues Gerät bzw. Backup/Restore - App funktioniert nicht",
-                        "anchor": "migration_Apple",
-                        "active": true,
-                        "textblock": [
-                            "Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risiko-Ermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
-                            "Das ist leider ein bekanntes Problem mit der Sicherung der Zufalls-IDs, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufalls-IDs in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.",
-                            "Bitte installieren Sie die Corona-Warn-App auf Ihrem neuen iPhone neu."
-                        ]
-                    },
-                    {
                         "title": "Werden die gesammelten Zufalls-IDs in meiner Smartphone-Datensicherung (Backup) berücksichtigt?",
                         "anchor": "backup",
                         "active": true,
@@ -765,6 +755,16 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Migration auf neues Gerät bzw. Backup/Restore - App funktioniert nicht",
+                        "anchor": "migration_Apple",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/> Dieses Problem wurde mit Version 1.5.0 behoben.<hr/> Wenn Sie Ihre Daten über iTunes auf ein neues Gerät übertragen oder ein Backup wiederhergestellt haben, funktioniert die App nicht richtig. Auf den Startseiten landen Sie in einer Endlosschleife und/oder die Risiko-Ermittlung lässt sich nicht einschalten. Der Risikostatus wird nicht angezeigt.",
+                            "Das ist leider ein bekanntes Problem mit der Sicherung der Zufalls-IDs, siehe <a href='#backup' target='_blank' rel='noopener'>Werden die gesammelten Zufalls-IDs in meiner Smartphone-Datensicherung (Backup) berücksichtigt?</a>.",
+                            "Bitte installieren Sie die Corona-Warn-App auf Ihrem neuen iPhone neu."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: 'COVID-19-Begegnungsaufzeichnungen' - Wöchentliches Update",
                         "anchor": "notif_weekly_update",
