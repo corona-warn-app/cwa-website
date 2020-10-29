@@ -63,7 +63,7 @@
                     "alt": "Die Corona-Warn-App sammelt IDs in der Nähe"
                 },
                 "title": "IDs in der Nähe sammeln",
-                "text": "Das Exposure Notification Framework (von Apple und Google) auf einem mobilen Gerät sendet einen regelmäßig wechselnden Code (sogenannte Rolling Proximity IDs) und sucht gleichzeitig mithilfe von Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern.",
+                "text": "Das Exposure Notification System (von Apple und Google) auf einem mobilen Gerät sendet einen regelmäßig wechselnden Code (sogenannte Rolling Proximity IDs) und sucht gleichzeitig mithilfe von Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern.",
                 "button": {
                     "title": "Zu kompliziert? Hier gibt es ein einfaches Erklärvideo.",
                     "url": "https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-erklaerfilm-1758828",
@@ -97,7 +97,7 @@
                     "alt": "Die Corona-Warn-App prüft auf Risiko-Kontakte"
                 },
                 "title": "Prüfung auf Kontakt mit Personen, die sich als infiziert gemeldet haben",
-                "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Personen heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification Framework die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und die Person erhält entsprechende Handlungsanweisungen.",
+                "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Personen heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification System die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und die Person erhält entsprechende Handlungsanweisungen.",
                 "button": {
                     "title": "Weitere Infos im Scoping-Dokument",
                     "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/scoping_document.de.md",
