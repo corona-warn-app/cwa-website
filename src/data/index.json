@@ -62,7 +62,7 @@
                     "alt": "The Corona-Warn-App collects nearby identifiers"
                 },
                 "title": "Collect nearby identifiers",
-                "text": "The Exposure Notification framework (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h.",
+                "text": "The Exposure Notification System (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h.",
                 "button": {
                     "title": "Too complicated? Here's a simple video explanation.",
                     "url": "https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch/how-does-the-corona-warn-app-work-and-what-does-it-do--1758870",
@@ -96,7 +96,7 @@
                     "alt": "The Corona-Warn-App checks for positive contacts"
                 },
                 "title": "Check for exposure to SARS-CoV-2 confirmed users",
-                "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification framework derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
+                "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification System derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
                 "button": {
                     "title": "Learn more in scoping document",
                     "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md",
