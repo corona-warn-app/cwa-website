@@ -314,7 +314,7 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html"])
     .pipe(replace('[ios.latest-os-version]', '14.0.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '13.6'))
-    .pipe(replace('[ios.current-app-version]', '1.5.2'))
+    .pipe(replace('[ios.current-app-version]', '1.5.3'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
     .pipe(replace('[android.current-app-version]', '1.5.1'))
