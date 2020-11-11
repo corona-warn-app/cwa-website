@@ -32,67 +32,17 @@
                 ]
             },
             {
-                "title": "Background Updates",
-                "id": "background_updates",
-                "accordion": [
-                    {
-                        "title": "[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
-                        "anchor": "no_risk_update_ios",
-                        "active": true,
-                        "textblock": [
-                            "First, please ensure that you are running the current version of iOS and the app. The latest version of the Corona Warn App is currently <b>[ios.current-app-version]</b>. If you are running a lower version, open the App Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem. Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
-                            "Make sure that exposure logging is active.",
-                            "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
-                            "In addition, please check the following device settings on your phone:",
-                            "<b>Background App Refresh (in General)</b>",
-                            "Corona-Warn-App must be able to refresh in the background both via Wi-Fi and cellular data, so you have to allow this in general. Open your device settings, choose 'General' > 'Background App Refresh' and activate 'Wi-Fi & Cellular Data'.",
-                            "This means that you allow background refreshing in general, but you can decide for each individual app if it really refreshes in the background (see next section).",
-                            "<i>Important: Mobile/cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</i>",
-                            "<b>Background App Refresh for Corona-Warn-App</b>",
-                            "Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
-                        "anchor": "no_risk_update",
-                        "active": true,
-                        "textblock": [
-                            "First, please ensure that you are running the current version of the app. You should have version [android.current-app-version] or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
-                            "Make sure that exposure logging is active.",
-                            "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
-                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
-                            "Samsung offers an additional \"Ultra Power Saving Mode\" for their devices. This mode often prevents a successful update of the risk status in the background, even if 'Prioritized Background Activity' has been selected. <b>To ensure a proper functionality of the Corona-Warn-App, the Ultra Power Saving Mode should be deactivated.</b> Please refer to the <a href='#max_power_save' target='_blank' rel='noopener'>Notes on the Ultra Power Saving Mode on Samsung devices</a> for further instructions.",
-                            "In the power-saving settings of your phone, you can make sure that there's an exception set for the Corona-Warn-App:",
-                            "Unfortunately, in some phones, you might not be able to activate the prioritized background activity in the app settings. You can still activate the prioritized background activity: You do so directly in the energy saving settings. of your phone. Set an exception for the Corona-Warn-App. If this still doesn't update the risk status automatically in the background, please create a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub issue 933</a>, giving your phone type and the installed versions of the app and of the COVID-19 exposure notifications.",
-                            "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
-                            "If all these recommendations did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>. If you have a <a href='#huawei_honor' target='_blank' rel='noopener'>Huawei or Honor phone, please also note these instructions</a>."
-                        ]
-	                },
-                    {
-                        "title": "[Google/Android]: Notes on the Ultra Power Saving Mode on Samsung devices",
-                        "anchor": "max_power_save",
-                        "active": true,
-                        "textblock": [
-                            "The usage of the Ultra Power Saving Mode on Samsung devices can cause the background updates of the risk status to fail, even if <a href='#no_risk_update' target='_blank' rel='noopener'>Prioritized Background Activity is activated</a>. This behaviour is likely triggered by the strongly reduced processing power in this mode, which results in an abort of the background updating process. The Ultra Power Saving Mode should therefore be deactivated in the settings:",
-                            "<ol><li>'Settings' -> 'System' -> 'Power saving'</li><li>Select 'Ultra Power Saving Mode'.</li><li>Open the menu in the upper right and select 'Turn off Ultra power saving mode'.</li></ol>"
-                         ]
-                    },
-                    {
-                        "title": "[Google/Android]: Notes on devices from Huawei or Honor",
-                        "anchor": "huawei_honor",
-                        "active": true,
-                        "textblock": [
-                            "For devices from Huawei or Honor, in addition to <a href='#no_risk_update' target='_blank' rel='noopener'>switching on the Prioritized Background Activity</a>, additional settings may be necessary to improve the reliability of the background update, and to prevent <a href='#app_crash' target='_blank' rel='noopener'>unexpected crashes of the Corona-Warn-App when starting</a> the app. This applies in particular to older devices with EMUI 4, but also to newer devices.",
-                            "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
-                            "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
-                         ]
-                    }
-                ]
-            },
-            {
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Exposure Check Failed after updating to version 1.6.0",
+                        "anchor": "expcheck_160",
+                        "active": true,
+                        "textblock": [
+                             "After an update to app version 1.6.0, you might get the error 'Exposure Check Failed', even though there was a successful check in the past 24 hours. We are working on a solution for this error. In the meantime, try restarting your app. This helps in most cases."
+                        ]
+                    },
                     {
                         "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
                         "anchor": "battery_optimization_background",
@@ -171,6 +121,64 @@
                             "While interpreting your battery consumption, please note that the percentage refers to the full use of your phone in the last 24 hours. This means that a frequently and intensively used phone has a very low percentage of battery consumption per app. On the contrary, if you use your phone mainly to make phone calls and only occasionally stream music or use social media, the percentage per app will be relatively high.",
                             "<b>Note for Android phones</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
                         ]
+                    }
+                ]
+            },
+            {
+                "title": "Background Updates",
+                "id": "background_updates",
+                "accordion": [
+                    {
+                        "title": "[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                        "anchor": "no_risk_update_ios",
+                        "active": true,
+                        "textblock": [
+                            "First, please ensure that you are running the current version of iOS and the app. The latest version of the Corona Warn App is currently <b>[ios.current-app-version]</b>. If you are running a lower version, open the App Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem. Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "Make sure that exposure logging is active.",
+                            "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
+                            "In addition, please check the following device settings on your phone:",
+                            "<b>Background App Refresh (in General)</b>",
+                            "Corona-Warn-App must be able to refresh in the background both via Wi-Fi and cellular data, so you have to allow this in general. Open your device settings, choose 'General' > 'Background App Refresh' and activate 'Wi-Fi & Cellular Data'.",
+                            "This means that you allow background refreshing in general, but you can decide for each individual app if it really refreshes in the background (see next section).",
+                            "<i>Important: Mobile/cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</i>",
+                            "<b>Background App Refresh for Corona-Warn-App</b>",
+                            "Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
+                        "anchor": "no_risk_update",
+                        "active": true,
+                        "textblock": [
+                            "First, please ensure that you are running the current version of the app. You should have version [android.current-app-version] or higher. If you are running a lower version, open the Google Play Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem.  Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                            "Make sure that exposure logging is active.",
+                            "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
+                            "<ol><li>Open the app settings.</li><li>Choose 'Prioritized Background Activity'.</li><li>Activate the prioritized background activity and allow the suggested changes.</li></ol>",
+                            "Samsung offers an additional \"Ultra Power Saving Mode\" for their devices. This mode often prevents a successful update of the risk status in the background, even if 'Prioritized Background Activity' has been selected. <b>To ensure a proper functionality of the Corona-Warn-App, the Ultra Power Saving Mode should be deactivated.</b> Please refer to the <a href='#max_power_save' target='_blank' rel='noopener'>Notes on the Ultra Power Saving Mode on Samsung devices</a> for further instructions.",
+                            "In the power-saving settings of your phone, you can make sure that there's an exception set for the Corona-Warn-App:",
+                            "Unfortunately, in some phones, you might not be able to activate the prioritized background activity in the app settings. You can still activate the prioritized background activity: You do so directly in the energy saving settings. of your phone. Set an exception for the Corona-Warn-App. If this still doesn't update the risk status automatically in the background, please create a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub issue 933</a>, giving your phone type and the installed versions of the app and of the COVID-19 exposure notifications.",
+                            "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
+                            "If all these recommendations did not help as expected, you can make further, smartphone-specific, settings. Software  manufacturers, such as Slack, which faced similar problems, have already provided a lot of information to help solve this problem. Please try the tips from the Slack documentation for the Corona-Warn-App and your smartphone: <a href='https://slack.com/intl/en-gb/help/articles/360001562747-Known-issues-with-Android-notifications' target='_blank' rel='noopener noreferrer'>Known issues with Android notifications</a>. If you have a <a href='#huawei_honor' target='_blank' rel='noopener'>Huawei or Honor phone, please also note these instructions</a>."
+                        ]
+	                },
+                    {
+                        "title": "[Google/Android]: Notes on the Ultra Power Saving Mode on Samsung devices",
+                        "anchor": "max_power_save",
+                        "active": true,
+                        "textblock": [
+                            "The usage of the Ultra Power Saving Mode on Samsung devices can cause the background updates of the risk status to fail, even if <a href='#no_risk_update' target='_blank' rel='noopener'>Prioritized Background Activity is activated</a>. This behaviour is likely triggered by the strongly reduced processing power in this mode, which results in an abort of the background updating process. The Ultra Power Saving Mode should therefore be deactivated in the settings:",
+                            "<ol><li>'Settings' -> 'System' -> 'Power saving'</li><li>Select 'Ultra Power Saving Mode'.</li><li>Open the menu in the upper right and select 'Turn off Ultra power saving mode'.</li></ol>"
+                         ]
+                    },
+                    {
+                        "title": "[Google/Android]: Notes on devices from Huawei or Honor",
+                        "anchor": "huawei_honor",
+                        "active": true,
+                        "textblock": [
+                            "For devices from Huawei or Honor, in addition to <a href='#no_risk_update' target='_blank' rel='noopener'>switching on the Prioritized Background Activity</a>, additional settings may be necessary to improve the reliability of the background update, and to prevent <a href='#app_crash' target='_blank' rel='noopener'>unexpected crashes of the Corona-Warn-App when starting</a> the app. This applies in particular to older devices with EMUI 4, but also to newer devices.",
+                            "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
+                            "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
+                         ]
                     }
                 ]
             },
