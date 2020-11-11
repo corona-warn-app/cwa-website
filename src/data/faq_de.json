@@ -32,64 +32,6 @@
                 ]
             },
             {
-                "title": "Hintergrund&shy;aktualisierung",
-                "id": "background_updates",
-                "accordion": [
-                   {
-                        "title": "[Apple/iOS]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
-                        "anchor": "no_risk_update_ios",
-                        "active": true,
-                        "textblock": [
-                            "Zuerst stellen Sie bitte sicher,  dass die neuesten Versionen von iOS und der App installiert sind. Die aktuellste iOS Version der Corona Warn App ist aktuell <b>[ios.current-app-version]</b>. Wenn eine niedrigere Version installiert ist, öffnen Sie den App Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
-                            "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
-                            "Wenn das Problem mit der neuesten Version immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag. Wir arbeiten an weiteren Updates zur Lösung entsprechender Probleme.",
-                            "Bitte überprüfen Sie zusätzlich die folgenden Einstellungen Ihres Smartphones:",
-                            "<b>Hintergrundaktualisierung (allgemein)</b>",
-                            "Wichtig ist, dass Sie grundsätzlich die Hintergrundaktualisierung per WLAN und mobile Daten zulassen. Dazu wählen Sie in den Geräte-Einstellungen 'Allgemein' > 'Hintergrundaktualisierung' und aktivieren die Hintergrundaktualisierung für 'WLAN & Mobile Daten'.",
-                            "Damit lassen Sie grundsätzlich zu, dass Apps im Hintergrund Aktualisierungen empfangen können. Welche Apps das tatsächlich tun, können Sie aber für jede App einzeln entscheiden (siehe nächster Schritt).",
-                            "<i>Wichtig: Die mobilen Daten, die bei der Verwendung der Corona-Warn-App übertragen werden, kosten Sie keinen Cent und werden nicht von Ihrem vertraglichen Datenvolumen o. ä. abgezogen.</i>",
-                            "<b>Hintergrundaktualisierung der Corona-Warn-App</b>",
-                            "Bitte prüfen Sie, ob die Hintergrundaktualisierung auch für die Corona-Warn-App selbst ausdrücklich erlaubt ist. Dazu öffnen Sie auch die Geräte-Einstellungen, wählen 'Corona-Warn' und aktivieren die Optionen 'Hintergrundaktualisierung' und 'Mobile Daten'. Wie oben erwähnt: Sie bezahlen nichts für die mobilen Daten, die über die App übermittelt werden."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
-                        "anchor": "no_risk_update",
-                        "active": true,
-                        "textblock": [
-                            "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Sie sollten mindestens Version [android.current-app-version] verwenden. Wenn eine niedrigere Version installiert ist, öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
-                            "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
-                            "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. <b>Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:</b>",
-                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivität'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivität und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
-                            "Samsung bietet für ihre Geräte zusätzlich einen sogenannten \"Ultra-Energiesparmodus\" an. Dieser verhindert oft eine erfolgreiche Hintergrundaktualisierung, selbst wenn 'Priorisierte Hintergrundaktivität' aktiviert ist. <b>Für eine ordnungsgemäße Funktion der Corona-Warn-App sollte der Ultra-Energiesparmodus daher ausgeschaltet sein.</b> Beachten Sie dazu die <a href='#max_power_save' target='_blank' rel='noopener'>Hinweise zum Ultra-Energiesparmodus auf Samsung-Geräten</a>.",
-                            "Sie können in den Energiespar-Einstellungen Ihres Smartphones sicherstellen, dass für die Corona-Warn-App eine Ausnahme vom Energiesparen festgelegt ist:",
-                            "Leider kann es sein, dass Sie bei einigen Smartphones die priorisierte Hintergrundaktivität nicht in den Einstellungen in der App einschalten können. Sie können die priorisierte Hintergrundaktivität dennoch aktivieren: Das machen Sie direkt in den Energiespar-Einstellungen Ihres Smartphones. Legen Sie dort eine Ausnahme für die Corona-Warn-App fest. Sollte dies immer noch nicht dazu führen, dass der Risikostatus automatisch im Hintergrund aktualisiert wird, schreiben Sie uns bitte einen Kommentar mit dem Smartphone-Typ und der installierten Version der App und der COVID-19-Benachrichtigungen in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub-Issue 933</a>.",
-                            "Wenn mit der neuesten Version das Problem immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag.",
-                            "Für den Fall, dass all diese Hinweise nicht den gewünschten Effekt hatten, können Sie weitere, gerätespezifische, Einstellungen vornehmen. Software-Hersteller, wie etwa Slack, bei denen die gleichen Probleme auftreten, haben deswegen bereits sehr viele Informationen zur Lösung bereitgestellt. Versuchen Sie deshalb bitte, die Tipps aus der Slack-Dokumentation für die Corona-Warn-App und Ihr Smartphone anzuwenden: <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>Bekannte Probleme mit Android-Benachrichtigungen</a>. Besitzen Sie ein <a href='#huawei_honor' target='_blank' rel='noopener'>Huawei- oder Honor-Smartphone, beachten Sie bitte auch diese Hinweise</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Hinweise zum Ultra-Energiesparmodus auf Samsung-Geräten",
-                        "anchor": "max_power_save",
-                        "active": true,
-                        "textblock": [
-                            "Bei Benutzung des Ultra-Energiesparmodus auf Geräten von Samsung kann die Hintergrundaktualisierung trotz <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> fehlschlagen. Grund dafür ist wahrscheinlich, dass der Aktualisierungsprozess aufgrund der stark reduzierten Rechenleistung abgebrochen wird. Der Ultra-Energiesparmodus sollte deshalb in den Einstellungen deaktiviert werden:",
-                            "<ol><li>'Einstellungen' -> 'System' -> 'Energiesparmodus'</li><li>Wählen Sie 'Ultra-Energiesparmodus'.</li><li>Öffnen Sie das Menü in der oberen rechten Ecke und wählen Sie 'Ultra-Energiesparmodus deaktivieren'.</li></ol>"
-                         ]
-                    },
-                    {
-                        "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
-                        "anchor": "huawei_honor",
-                        "active": true,
-                        "textblock": [
-                            "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
-                            "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
-                            "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
-                         ]
-                    }
-                ]
-            },
-            {
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
@@ -174,7 +116,65 @@
                     }
                 ]
             },
-                        {
+            {
+                "title": "Hintergrund&shy;aktualisierung",
+                "id": "background_updates",
+                "accordion": [
+                   {
+                        "title": "[Apple/iOS]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                        "anchor": "no_risk_update_ios",
+                        "active": true,
+                        "textblock": [
+                            "Zuerst stellen Sie bitte sicher,  dass die neuesten Versionen von iOS und der App installiert sind. Die aktuellste iOS Version der Corona Warn App ist aktuell <b>[ios.current-app-version]</b>. Wenn eine niedrigere Version installiert ist, öffnen Sie den App Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
+                            "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
+                            "Wenn das Problem mit der neuesten Version immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag. Wir arbeiten an weiteren Updates zur Lösung entsprechender Probleme.",
+                            "Bitte überprüfen Sie zusätzlich die folgenden Einstellungen Ihres Smartphones:",
+                            "<b>Hintergrundaktualisierung (allgemein)</b>",
+                            "Wichtig ist, dass Sie grundsätzlich die Hintergrundaktualisierung per WLAN und mobile Daten zulassen. Dazu wählen Sie in den Geräte-Einstellungen 'Allgemein' > 'Hintergrundaktualisierung' und aktivieren die Hintergrundaktualisierung für 'WLAN & Mobile Daten'.",
+                            "Damit lassen Sie grundsätzlich zu, dass Apps im Hintergrund Aktualisierungen empfangen können. Welche Apps das tatsächlich tun, können Sie aber für jede App einzeln entscheiden (siehe nächster Schritt).",
+                            "<i>Wichtig: Die mobilen Daten, die bei der Verwendung der Corona-Warn-App übertragen werden, kosten Sie keinen Cent und werden nicht von Ihrem vertraglichen Datenvolumen o. ä. abgezogen.</i>",
+                            "<b>Hintergrundaktualisierung der Corona-Warn-App</b>",
+                            "Bitte prüfen Sie, ob die Hintergrundaktualisierung auch für die Corona-Warn-App selbst ausdrücklich erlaubt ist. Dazu öffnen Sie auch die Geräte-Einstellungen, wählen 'Corona-Warn' und aktivieren die Optionen 'Hintergrundaktualisierung' und 'Mobile Daten'. Wie oben erwähnt: Sie bezahlen nichts für die mobilen Daten, die über die App übermittelt werden."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
+                        "anchor": "no_risk_update",
+                        "active": true,
+                        "textblock": [
+                            "Zuerst stellen Sie bitte sicher, dass die neueste Version der App installiert ist. Sie sollten mindestens Version [android.current-app-version] verwenden. Wenn eine niedrigere Version installiert ist, öffnen Sie den Google Play Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
+                            "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
+                            "Falls das Problem auch in der neuesten Version auftritt, ist es in der Regel auf einzelne Energiesparmodi bzw. Akkueinstellungen verschiedener Hersteller zurückzuführen. Diese halten sich nicht vollständig an die Android-Spezifikation und sparen oft zu aggressiv Energie. <b>Die Corona-Warn-App ist von diesen Energiespar-Einstellungen betroffen und kann deswegen oft längere Zeit den Risikostatus nicht im Hintergrund aktualisieren. Sollte das der Fall sein, können Sie diese Einstellung in der Corona-Warn-App ändern:</b>",
+                            "<ol><li>Öffnen Sie die Einstellungen der App.</li><li>Wählen Sie 'Priorisierte Hintergrundaktivität'.</li><li>Aktivieren Sie die priorisierte Hintergrundaktivität und lassen Sie die vorgeschlagene Änderung zu.</li></ol>",
+                            "Samsung bietet für ihre Geräte zusätzlich einen sogenannten \"Ultra-Energiesparmodus\" an. Dieser verhindert oft eine erfolgreiche Hintergrundaktualisierung, selbst wenn 'Priorisierte Hintergrundaktivität' aktiviert ist. <b>Für eine ordnungsgemäße Funktion der Corona-Warn-App sollte der Ultra-Energiesparmodus daher ausgeschaltet sein.</b> Beachten Sie dazu die <a href='#max_power_save' target='_blank' rel='noopener'>Hinweise zum Ultra-Energiesparmodus auf Samsung-Geräten</a>.",
+                            "Sie können in den Energiespar-Einstellungen Ihres Smartphones sicherstellen, dass für die Corona-Warn-App eine Ausnahme vom Energiesparen festgelegt ist:",
+                            "Leider kann es sein, dass Sie bei einigen Smartphones die priorisierte Hintergrundaktivität nicht in den Einstellungen in der App einschalten können. Sie können die priorisierte Hintergrundaktivität dennoch aktivieren: Das machen Sie direkt in den Energiespar-Einstellungen Ihres Smartphones. Legen Sie dort eine Ausnahme für die Corona-Warn-App fest. Sollte dies immer noch nicht dazu führen, dass der Risikostatus automatisch im Hintergrund aktualisiert wird, schreiben Sie uns bitte einen Kommentar mit dem Smartphone-Typ und der installierten Version der App und der COVID-19-Benachrichtigungen in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub-Issue 933</a>.",
+                            "Wenn mit der neuesten Version das Problem immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag.",
+                            "Für den Fall, dass all diese Hinweise nicht den gewünschten Effekt hatten, können Sie weitere, gerätespezifische, Einstellungen vornehmen. Software-Hersteller, wie etwa Slack, bei denen die gleichen Probleme auftreten, haben deswegen bereits sehr viele Informationen zur Lösung bereitgestellt. Versuchen Sie deshalb bitte, die Tipps aus der Slack-Dokumentation für die Corona-Warn-App und Ihr Smartphone anzuwenden: <a href='https://slack.com/intl/de-de/help/articles/360001562747-Bekannte-Probleme-mit-Android%E2%80%91Benachrichtigungen' target='_blank' rel='noopener noreferrer'>Bekannte Probleme mit Android-Benachrichtigungen</a>. Besitzen Sie ein <a href='#huawei_honor' target='_blank' rel='noopener'>Huawei- oder Honor-Smartphone, beachten Sie bitte auch diese Hinweise</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Hinweise zum Ultra-Energiesparmodus auf Samsung-Geräten",
+                        "anchor": "max_power_save",
+                        "active": true,
+                        "textblock": [
+                            "Bei Benutzung des Ultra-Energiesparmodus auf Geräten von Samsung kann die Hintergrundaktualisierung trotz <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> fehlschlagen. Grund dafür ist wahrscheinlich, dass der Aktualisierungsprozess aufgrund der stark reduzierten Rechenleistung abgebrochen wird. Der Ultra-Energiesparmodus sollte deshalb in den Einstellungen deaktiviert werden:",
+                            "<ol><li>'Einstellungen' -> 'System' -> 'Energiesparmodus'</li><li>Wählen Sie 'Ultra-Energiesparmodus'.</li><li>Öffnen Sie das Menü in der oberen rechten Ecke und wählen Sie 'Ultra-Energiesparmodus deaktivieren'.</li></ol>"
+                         ]
+                    },
+                    {
+                        "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
+                        "anchor": "huawei_honor",
+                        "active": true,
+                        "textblock": [
+                            "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
+                            "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
+                            "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
+                         ]
+                    }
+                ]
+            },
+            {
                 "title": "Meldungen",
                 "id": "notification",
                 "accordion": [
