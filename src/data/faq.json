@@ -32,6 +32,99 @@
                 ]
             },
             {
+                "title": "Common Issues",
+                "id": "most_asked",
+                "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Exposure Check Failed after updating to version 1.6.0",
+                        "anchor": "expcheck_160",
+                        "active": true,
+                        "textblock": [
+                             "After an update to app version 1.6.0, you might get the error 'Exposure Check Failed', even though there was a successful check in the past 24 hours. We are working on a solution for this error. In the meantime, try restarting your app. This helps in most cases."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
+                        "anchor": "battery_optimization_background",
+                        "active": true,
+                        "textblock": [
+                             "When you switch on the prioritized background activity on some Android devices, the battery optimization for the Corona-Warn-App is not turned off on OS level. This is a known limitation for a limited number of Android devices. To turn off the battery optimization accordingly, restart your device."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS]: Risk exposure can no longer be activated after updating to iOS 14",
+                        "anchor": "no_risk_update_ios14",
+                        "active": true,
+                        "textblock": [
+                             "After updating to iOS 14, some users report that risk exposure has been disabled and can no longer be turned on.",
+                             "This problem has already been reported to development and they are working on a solution. To be able to use the app to its full extent until the bug is fixed, please follow these steps:",
+                             "'Settings' > 'WiFi' > Switch 'WiFi' off.",
+                             "'Settings' > 'Exposure notifications' > 'Active region' (Corona-Warn-App) > 'Corona-Warn-App' > Switch 'Share exposure information' off and on again.",
+                             "'Settings' > 'WiFi' > Switch 'WiFi' on again.",
+                             "If the error still occurs although you have performed all steps, you have to reset and reinstall the application once. Your collected random ids will not be lost (<a href='#delete_random_ids'>see also here</a>). However, it will take 24 hours until the app resumes the data collected so."
+                        ]
+		    },
+                    {
+                        "title": "[Apple/iOS] Can’t enable exposure logging / Empty screen on iOS 13.7 / 14",
+                        "anchor": "ios_black_screen",
+                        "active": true,
+                        "textblock": [
+                            "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications can not be activated again after an update. The result is a black screen in the iOS settings.",
+                            "To fix the problem, proceed as follows:",
+                            "Settings > General > Reset > Reset Location and Privacy",
+                            "Afterwards the permissions in the Corona-Warn App have to be assigned again. You will be prompted to do so when the App is started."
+                        ]
+                    },
+                    {
+                        "title": "An encounter has been reported, but the risk status stays green",
+                        "anchor": "encounter_but_green",
+                        "active": true,
+                        "textblock": [
+                            "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has subsequently uploaded their diagnosis keys.",
+                            "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are rated as harmless.",
+                            "The remaining encounters are rated collectively according to their distance and duration as well as the presumed infectiousness of the other person(s). This rating doesn't always yield an increased risk in which case those encounters - together with the harmless encounters from above - will be shown in the Corona-Warn-App but the risk status will stay the same.", 
+                            "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?",
+                        "anchor": "android_location",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/> If you are using Android 11 and the Corona-Warn-App version 1.5 or above, you don't have to allow location access in order to use the Corona-Warn-App. This notification is not applicable for Android 11 phones and will be removed in one of the following updates of the Corona-Warn-App.<hr/>",
+                            "Corona-Warn-App does not track your location and does not have permission to do this. The reason for this message is an Android requirement: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> and <a href='https://support.google.com/android/answer/9930236?hl=en' target='_blank' rel='noopener noreferrer'>About the Exposure Notifications System and Android location settings</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in the Android developer documentation). However, this doesn't mean that apps that use Bluetooth can automatically track your location.",
+                            "Since Corona-Warn-App must be able to detect devices in close proximity, you must activate the general system setting 'Use location'. However: The app will never record your location and will never use GPS. You can verify this yourself:",
+                            "<ol><li>Open 'Settings' on your phone (not the settings of the app).</li><li>Choose 'Security & Location' > 'Location' > 'App level permissions'.</li><li>You see a list of apps that can use your location if you give them permission. Corona-Warn-App is not listed here.</li></ol>",
+                            "Here you can allow or deny other apps to use your location, but since Corona-Warn-App doesn't need this permission, it doesn't even appear in the list.",
+                            "Again, as described above: You should not deactivate 'Use location' under 'Settings' > 'Security & Location' > 'Location', because this is a prerequisite for exchanging the encrypted random IDs."
+                        ]
+                    },
+                    {
+                        "title": "Problems when using the QR code",
+                        "anchor": "qr_test",
+                        "active": true,
+                        "textblock": [
+                            "I have received a QR code during a test, which I would like to use to retrieve the test result via the Corona-Warn-App. I get an error while scanning or the test result could not be retrieved for days. What can I do?",
+                            "In some cases you may have received a QR Code that is not compatible with the test retrieval system of the Corona-Warn-App or that has not been activated for retrieving the test. In order to avoid these problems, please check whether a) the laboratory with which the doctor or the test center works is connected to the Corona-Warn-App and b) the field 9 'Consent of the insured person to transmit the test result for the purpose of the Corona-Warn-App' has been ticked. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
+                            "If you have scanned your QR code into the App after a corona test and do not receive a test result via the App within a few days, it is possible that the respective laboratory is not yet fully cooperating with the Corona-Warn-App. Currently, 70-80% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way. In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result and would like to use the Corona-Warn-App to warn your risk encounters, call the hotline at +49 800 7540002 and participate in the TeleTan procedure.",
+                            "If you have already scanned the QR Code, it unfortunately cannot be scanned a second time, nor is it possible to delete a previously entered QR Code and scan it in again. We have to make sure that only one phone can scan the QR Code and transmit its diagnostic keys. For privacy reasons, we cannot store the phone's ID, so the QR Code is only valid for one scan.",
+                            "We are currently looking into how to improve the app's user interface to detect QR Codes that are not working and inform you about them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>."
+                        ]
+                    },
+                    {
+                        "title": "Will the device battery drain more quickly with the app running in the background?",
+                        "anchor": "battery",
+                        "active": true,
+                        "textblock": [
+                            "The Corona-Warn-App uses the latest Bluetooth technology: Thanks to the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
+                            "The battery consumption of the Corona-Warn-App is made up of two factors: the consumption of the app itself and the consumption due to the recording of the encounters via the Exposure Notification System. The latter can be optimized by using the currently available operating systems for iOS and Android.",
+                            "While interpreting your battery consumption, please note that the percentage refers to the full use of your phone in the last 24 hours. This means that a frequently and intensively used phone has a very low percentage of battery consumption per app. On the contrary, if you use your phone mainly to make phone calls and only occasionally stream music or use social media, the percentage per app will be relatively high.",
+                            "<b>Note for Android phones</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Background Updates",
                 "id": "background_updates",
                 "accordion": [
@@ -86,90 +179,6 @@
                             "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
                             "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
                          ]
-                    }
-                ]
-            },
-            {
-                "title": "Common Issues",
-                "id": "most_asked",
-                "accordion": [
-                    {
-                        "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
-                        "anchor": "battery_optimization_background",
-                        "active": true,
-                        "textblock": [
-                             "When you switch on the prioritized background activity on some Android devices, the battery optimization for the Corona-Warn-App is not turned off on OS level. This is a known limitation for a limited number of Android devices. To turn off the battery optimization accordingly, restart your device."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: Risk exposure can no longer be activated after updating to iOS 14",
-                        "anchor": "no_risk_update_ios14",
-                        "active": true,
-                        "textblock": [
-                             "After updating to iOS 14, some users report that risk exposure has been disabled and can no longer be turned on.",
-                             "This problem has already been reported to development and they are working on a solution. To be able to use the app to its full extent until the bug is fixed, please follow these steps:",
-                             "'Settings' > 'WiFi' > Switch 'WiFi' off.",
-                             "'Settings' > 'Exposure notifications' > 'Active region' (Corona-Warn-App) > 'Corona-Warn-App' > Switch 'Share exposure information' off and on again.",
-                             "'Settings' > 'WiFi' > Switch 'WiFi' on again.",
-                             "If the error still occurs although you have performed all steps, you have to reset and reinstall the application once. Your collected random ids will not be lost (<a href='#delete_random_ids'>see also here</a>). However, it will take 24 hours until the app resumes the data collected so."
-                        ]
-		    },
-                    {
-                        "title": "[Apple/iOS] Can’t enable exposure logging / Empty screen on iOS 13.7 / 14",
-                        "anchor": "ios_black_screen",
-                        "active": true,
-                        "textblock": [
-                            "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications can not be activated again after an update. The result is a black screen in the iOS settings.",
-                            "To fix the problem, proceed as follows:",
-                            "Settings > General > Reset > Reset Location and Privacy",
-                            "Afterwards the permissions in the Corona-Warn App have to be assigned again. You will be prompted to do so when the App is started."
-                        ]
-                    },
-                    {
-                        "title": "An encounter has been reported, but the risk status stays green",
-                        "anchor": "encounter_but_green",
-                        "active": true,
-                        "textblock": [
-                            "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has subsequently uploaded their diagnosis keys.",
-                            "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are rated as harmless.",
-                            "The remaining encounters are rated collectively according to their distance and duration as well as the presumed infectiousness of the other person(s). This rating doesn't always yield an increased risk in which case those encounters - together with the harmless encounters from above - will be shown in the Corona-Warn-App but the risk status will stay the same.", 
-                            "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?",
-                        "anchor": "android_location",
-                        "active": true,
-                        "textblock": [
-                            "Corona-Warn-App does not track your location and does not have permission to do this. The reason for this message is an Android requirement: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> and <a href='https://support.google.com/android/answer/9930236?hl=en' target='_blank' rel='noopener noreferrer'>About the Exposure Notifications System and Android location settings</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in the Android developer documentation). However, this doesn't mean that apps that use Bluetooth can automatically track your location.",
-                            "Since Corona-Warn-App must be able to detect devices in close proximity, you must activate the general system setting 'Use location'. However: The app will never record your location and will never use GPS. You can verify this yourself:",
-                            "<ol><li>Open 'Settings' on your phone (not the settings of the app).</li><li>Choose 'Security & Location' > 'Location' > 'App level permissions'.</li><li>You see a list of apps that can use your location if you give them permission. Corona-Warn-App is not listed here.</li></ol>",
-                            "Here you can allow or deny other apps to use your location, but since Corona-Warn-App doesn't need this permission, it doesn't even appear in the list.",
-                            "Again, as described above: You should not deactivate 'Use location' under 'Settings' > 'Security & Location' > 'Location', because this is a prerequisite for exchanging the encrypted random IDs."
-                        ]
-                    },
-                    {
-                        "title": "Problems when using the QR code",
-                        "anchor": "qr_test",
-                        "active": true,
-                        "textblock": [
-                            "I have received a QR code during a test, which I would like to use to retrieve the test result via the Corona-Warn-App. I get an error while scanning or the test result could not be retrieved for days. What can I do?",
-                            "In some cases you may have received a QR Code that is not compatible with the test retrieval system of the Corona-Warn-App or that has not been activated for retrieving the test. In order to avoid these problems, please check whether a) the laboratory with which the doctor or the test center works is connected to the Corona-Warn-App and b) the field 9 'Consent of the insured person to transmit the test result for the purpose of the Corona-Warn-App' has been ticked. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
-                            "If you have scanned your QR code into the App after a corona test and do not receive a test result via the App within a few days, it is possible that the respective laboratory is not yet fully cooperating with the Corona-Warn-App. Currently, 70-80% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way. In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result and would like to use the Corona-Warn-App to warn your risk encounters, call the hotline at +49 800 7540002 and participate in the TeleTan procedure.",
-                            "If you have already scanned the QR Code, it unfortunately cannot be scanned a second time, nor is it possible to delete a previously entered QR Code and scan it in again. We have to make sure that only one phone can scan the QR Code and transmit its diagnostic keys. For privacy reasons, we cannot store the phone's ID, so the QR Code is only valid for one scan.",
-                            "We are currently looking into how to improve the app's user interface to detect QR Codes that are not working and inform you about them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>."
-                        ]
-                    },
-                    {
-                        "title": "Will the device battery drain more quickly with the app running in the background?",
-                        "anchor": "battery",
-                        "active": true,
-                        "textblock": [
-                            "The Corona-Warn-App uses the latest Bluetooth technology: Thanks to the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
-                            "The battery consumption of the Corona-Warn-App is made up of two factors: the consumption of the app itself and the consumption due to the recording of the encounters via the Exposure Notification System. The latter can be optimized by using the currently available operating systems for iOS and Android.",
-                            "While interpreting your battery consumption, please note that the percentage refers to the full use of your phone in the last 24 hours. This means that a frequently and intensively used phone has a very low percentage of battery consumption per app. On the contrary, if you use your phone mainly to make phone calls and only occasionally stream music or use social media, the percentage per app will be relatively high.",
-                            "<b>Note for Android phones</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
-                        ]
                     }
                 ]
             },

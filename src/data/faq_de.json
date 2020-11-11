@@ -32,6 +32,99 @@
                 ]
             },
             {
+                "title": "Häufige Probleme",
+                "id": "most_asked",
+                "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Risiko-Überprüfung fehlgeschlagen nach dem Update auf Version 1.6.0",
+                        "anchor": "expcheck_160",
+                        "active": true,
+                        "textblock": [
+                             "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Batterieoptimierung wird nicht automatisch abgeschaltet nachdem die priorisierte Hintergrundaktivität aktiviert wurde",
+                        "anchor": "battery_optimization_background",
+                        "active": true,
+                        "textblock": [
+                             "Wenn Sie die priorisierte Hintergrundaktivität auf einigen Android-Geräten einschalten, wird die Batterieoptimierung für die Corona-Warn-App auf Betriebssystemebene nicht ausgeschaltet. Dies ist eine bekannte Einschränkung für eine begrenzte Anzahl von Android-Geräten. Um die Batterieoptimierung entsprechend zu deaktivieren, starten Sie Ihr Gerät neu."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS]: Die Risikoermittlung lässt sich nach dem Update auf iOS 14 nicht mehr aktivieren",
+                        "anchor": "no_risk_update_ios14",
+                        "active": true,
+                        "textblock": [
+                             "Nach dem Update auf iOS 14 melden einige Nutzer, dass die Risikoermittlung deaktiviert wurde und nicht mehr eingeschaltet werden kann.",
+                             "Dieses Problem ist bereits der Entwicklung gemeldet und sie arbeiten an einer Lösung. Um die App bis zur Behebung des Fehlers in vollem Umfang nutzen zu können, gehen Sie bitte wie folgt vor:",
+                             "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
+                             "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
+                             "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
+                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS] Leerer Bildschirm auf iOS 13.7 / 14",
+                        "anchor": "ios_black_screen",
+                        "active": true,
+                        "textblock": [
+                            "Es gibt ein bekanntes Problem unter iOS 13.7 / 14 wo es in seltenen Fällen vorkommen kann dass sich die Begegnungsmitteilungen nach einem Update nicht mehr aktivieren lassen. Das Resultat ist ein schwarzer Bildschirm in den iOS Einstellungen.",
+                            "Um das Problem zu beheben gehen Sie wie folgt vor:",
+                            "Einstellungen > Allgemein > Zurücksetzen > Standort und Datenschutz",
+                            "Im Anschluss müssen die Berechtigungen in der Corona-Warn App erneut vergeben werden. Dazu werden Sie beim Start der App aufgefordert."
+                        ]
+                    },
+                    {
+                        "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
+                        "anchor": "encounter_but_green",
+                        "active": true,
+                        "textblock": [
+                            "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufalls-IDs vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufalls-IDs aufgezeichnet hat, und das Smartphone der Person die anschließend Corona-positiv getestet wurde, sind sich begegnet.",
+                            "Als Nächstes wird für jede Positivkennung anhand aller dazu passenden Zufalls-IDs geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
+                            "Die verbleibenden Begegnungen werden in ihrer Gesamtheit unter Berücksichtigung ihres Abstands und ihrer Dauer sowie der vermutlichen Infektiosität der anderen Person(en) bewertet. Nicht immer ergibt diese Bewertung ein erhöhtes Risiko, in diesem Fall werden diese Begegnungen - zusammen mit den oben genannten harmlosen Begegnungen - in der Corona-Warn-App angezeigt aber die Risikobewertung ändert sich nicht.",
+                            "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
+                        "anchor": "android_location",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/> Wenn Sie Android 11 und die Corona-Warn-App ab Version 1.5 benutzen, müssen Sie die Standortverwendung nicht mehr aktivieren, um die Corona-Warn-App zu nutzen. Diese für Android Version 11 nicht zutreffende Benachrichtigung wird in einem der nächsten Updates der Corona-Warn-App entfernt.<hr/>",
+                            "Die Corona-Warn-App fragt Ihren Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Ihrem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> und <a href='https://support.google.com/android/answer/9930236?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungssystem und Android-Standorteinstellungen</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch Ihren Standort erfassen.",
+                            "Da die Corona-Warn-App Geräte in Ihrer Nähe über Bluetooth erkennt, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Ihren Standort erfassen oder GPS verwenden. Sie können das gerne selbst folgendermaßen nachprüfen:",
+                            "<ol><li>Öffnen Sie die Einstellungen Ihres Smartphones (nicht die Einstellungen in der App!).</li><li>Wählen Sie 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Sehen Sie sich die Liste der Apps an, die auf Ihren Standort zugreifen können, wenn Sie es zulassen. Sie sehen: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
+                            "An dieser Stelle könnten Sie anderen Apps die Berechtigung für den Standortzugriff erteilen oder entziehen, aber da die Corona-Warn-App diese Berechtigung nicht braucht, ist sie auch nicht aufgeführt.",
+                            "Hinweis: Wie oben beschrieben: Aktivieren Sie die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort', da sonst der Austausch der verschlüsselten Zufalls-IDs zur Risiko-Ermittlung nicht funktioniert."
+                        ]
+                    },
+                    {
+                        "title": "Probleme mit dem QR-Code",
+                        "anchor": "qr_test",
+                        "active": true,
+                        "textblock": [
+                            "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
+                            "In einigen Fällen kann es vorkommen, dass Sie einen QR-Code erhalten haben, der nicht mit dem Testabrufsystem der Corona-Warn-App kompatibel ist bzw. nicht für den Abruf des Tests freigeschaltet wurde. Um diese Probleme auszuschließen, erkundigen Sie sich bitte, ob a) das Labor, mit dem der Arzt oder das Testcenter zusammenarbeiten an die Corona-Warn-App angebunden ist und b) das Feld 9 'Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App' angekreuzt wurde. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert.",
+                            "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass das entsprechende Labor noch nicht vollständig mit der Corona-Warn-App zusammenarbeitet. Derzeit sind 70-80% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss. Rufen Sie dann bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Wird Ihnen dabei ein positives Testergebnis mitgeteilt und möchten Sie über die Corona-Warn-App Ihre Risikobegegnungen warnen, rufen Sie die Hotline unter der +49 800 7540002 an und nehmen Sie am TeleTan-Verfahren teil.",
+                            "Wenn Sie den QR Code bereits gescannt haben, kann dieser leider nicht ein zweites Mal gescannt werden, ebenso ist das Löschen eines zuvor eingegebenen QR Codes und erneutes einscannen nicht möglich. Wir müssen sicherstellen, dass nur ein Telefon den QR Code scannen und seine Diagnoseschlüssel übermitteln kann. Aus Datenschutzgründen können wir die ID des Telefons nicht speichern, deshalb ist der QR Code nur für einen Scan gültig.",
+                            "Wir prüfen gerade, wie die Verbesserung der Benutzerschnittstelle der App verbessert werden kann, um nicht funktionierende QR-Codes zu erkennen und Sie darüber informieren zu können. Weitere Details zu den Fehlern finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>auf GitHub</a>."
+                        ]
+                    },
+                    {
+                        "title": "Wird mein Smartphone-Akku nicht schnell leerlaufen mit der App im Hintergrund?",
+                        "anchor": "battery",
+                        "active": true,
+                        "textblock": [
+                            "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy).",
+                            "Der Akkuverbrauch der Corona-Warn-App teilt sich in zwei Faktoren: Den Verbrauch der App selbst und den Verbrauch aufgrund der Aufzeichnung der Begegnungen über das Exposure Notification System. Letzteres kann durch die Nutzung der jeweils aktuell verfügbaren Betriebssysteme für iOS und Android optimiert werden.",
+                            "Bitte beachten Sie bei der Interpretation Ihres Akkuverbrauchs, dass sich die Prozentangabe auf die vollständige Nutzung Ihres Telefons in den letzten 24 Stunden bezieht. Das bedeutet, dass ein häufig und intensiv genutztes Telefon einen sehr geringen Prozentsatz pro App aufweist. Wenn Sie ihr Telefon hauptsächlich zum Telefonieren nutzen und nur gelegentlich Musik streamen oder soziale Medien nutzen, wird der Anteil pro App hingegen relativ hoch sein.",
+                            "<b>Besonderheit bei Android</b>: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung auf dem Gerät allgemein aktiviert ist (Details siehe <a href='#android_location' target='_blank' rel='noopener'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, sollten Sie prüfen, welche Apps tatsächlich Ihren Standort nutzen. Dazu öffnen Sie die Geräte-Einstellungen und wählen 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'. Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Hintergrund&shy;aktualisierung",
                 "id": "background_updates",
                 "accordion": [
@@ -90,90 +183,6 @@
                 ]
             },
             {
-                "title": "Häufige Probleme",
-                "id": "most_asked",
-                "accordion": [
-                    {
-                        "title": "[Google/Android]: Batterieoptimierung wird nicht automatisch abgeschaltet nachdem die priorisierte Hintergrundaktivität aktiviert wurde",
-                        "anchor": "battery_optimization_background",
-                        "active": true,
-                        "textblock": [
-                             "Wenn Sie die priorisierte Hintergrundaktivität auf einigen Android-Geräten einschalten, wird die Batterieoptimierung für die Corona-Warn-App auf Betriebssystemebene nicht ausgeschaltet. Dies ist eine bekannte Einschränkung für eine begrenzte Anzahl von Android-Geräten. Um die Batterieoptimierung entsprechend zu deaktivieren, starten Sie Ihr Gerät neu."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: Die Risikoermittlung lässt sich nach dem Update auf iOS 14 nicht mehr aktivieren",
-                        "anchor": "no_risk_update_ios14",
-                        "active": true,
-                        "textblock": [
-                             "Nach dem Update auf iOS 14 melden einige Nutzer, dass die Risikoermittlung deaktiviert wurde und nicht mehr eingeschaltet werden kann.",
-                             "Dieses Problem ist bereits der Entwicklung gemeldet und sie arbeiten an einer Lösung. Um die App bis zur Behebung des Fehlers in vollem Umfang nutzen zu können, gehen Sie bitte wie folgt vor:",
-                             "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
-                             "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
-                             "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
-                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS] Leerer Bildschirm auf iOS 13.7 / 14",
-                        "anchor": "ios_black_screen",
-                        "active": true,
-                        "textblock": [
-                            "Es gibt ein bekanntes Problem unter iOS 13.7 / 14 wo es in seltenen Fällen vorkommen kann dass sich die Begegnungsmitteilungen nach einem Update nicht mehr aktivieren lassen. Das Resultat ist ein schwarzer Bildschirm in den iOS Einstellungen.",
-                            "Um das Problem zu beheben gehen Sie wie folgt vor:",
-                            "Einstellungen > Allgemein > Zurücksetzen > Standort und Datenschutz",
-                            "Im Anschluss müssen die Berechtigungen in der Corona-Warn App erneut vergeben werden. Dazu werden Sie beim Start der App aufgefordert."
-                        ]
-                    },
-                    {
-                        "title": "Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt",
-                        "anchor": "encounter_but_green",
-                        "active": true,
-                        "textblock": [
-                            "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufalls-IDs vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufalls-IDs aufgezeichnet hat, und das Smartphone der Person die anschließend Corona-positiv getestet wurde, sind sich begegnet.",
-                            "Als Nächstes wird für jede Positivkennung anhand aller dazu passenden Zufalls-IDs geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
-                            "Die verbleibenden Begegnungen werden in ihrer Gesamtheit unter Berücksichtigung ihres Abstands und ihrer Dauer sowie der vermutlichen Infektiosität der anderen Person(en) bewertet. Nicht immer ergibt diese Bewertung ein erhöhtes Risiko, in diesem Fall werden diese Begegnungen - zusammen mit den oben genannten harmlosen Begegnungen - in der Corona-Warn-App angezeigt aber die Risikobewertung ändert sich nicht.",
-                            "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?",
-                        "anchor": "android_location",
-                        "active": true,
-                        "textblock": [
-                            "Die Corona-Warn-App fragt Ihren Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Ihrem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> und <a href='https://support.google.com/android/answer/9930236?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungssystem und Android-Standorteinstellungen</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch Ihren Standort erfassen.",
-                            "Da die Corona-Warn-App Geräte in Ihrer Nähe über Bluetooth erkennt, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Ihren Standort erfassen oder GPS verwenden. Sie können das gerne selbst folgendermaßen nachprüfen:",
-                            "<ol><li>Öffnen Sie die Einstellungen Ihres Smartphones (nicht die Einstellungen in der App!).</li><li>Wählen Sie 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Sehen Sie sich die Liste der Apps an, die auf Ihren Standort zugreifen können, wenn Sie es zulassen. Sie sehen: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
-                            "An dieser Stelle könnten Sie anderen Apps die Berechtigung für den Standortzugriff erteilen oder entziehen, aber da die Corona-Warn-App diese Berechtigung nicht braucht, ist sie auch nicht aufgeführt.",
-                            "Hinweis: Wie oben beschrieben: Aktivieren Sie die allgemeine Systemeinstellung 'Standort verwenden' unter 'Einstellungen' > 'Sicherheit & Standort' > 'Standort', da sonst der Austausch der verschlüsselten Zufalls-IDs zur Risiko-Ermittlung nicht funktioniert."
-                        ]
-                    },
-                    {
-                        "title": "Probleme mit dem QR-Code",
-                        "anchor": "qr_test",
-                        "active": true,
-                        "textblock": [
-                            "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
-                            "In einigen Fällen kann es vorkommen, dass Sie einen QR-Code erhalten haben, der nicht mit dem Testabrufsystem der Corona-Warn-App kompatibel ist bzw. nicht für den Abruf des Tests freigeschaltet wurde. Um diese Probleme auszuschließen, erkundigen Sie sich bitte, ob a) das Labor, mit dem der Arzt oder das Testcenter zusammenarbeiten an die Corona-Warn-App angebunden ist und b) das Feld 9 'Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App' angekreuzt wurde. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert.",
-                            "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass das entsprechende Labor noch nicht vollständig mit der Corona-Warn-App zusammenarbeitet. Derzeit sind 70-80% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss. Rufen Sie dann bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Wird Ihnen dabei ein positives Testergebnis mitgeteilt und möchten Sie über die Corona-Warn-App Ihre Risikobegegnungen warnen, rufen Sie die Hotline unter der +49 800 7540002 an und nehmen Sie am TeleTan-Verfahren teil.",
-                            "Wenn Sie den QR Code bereits gescannt haben, kann dieser leider nicht ein zweites Mal gescannt werden, ebenso ist das Löschen eines zuvor eingegebenen QR Codes und erneutes einscannen nicht möglich. Wir müssen sicherstellen, dass nur ein Telefon den QR Code scannen und seine Diagnoseschlüssel übermitteln kann. Aus Datenschutzgründen können wir die ID des Telefons nicht speichern, deshalb ist der QR Code nur für einen Scan gültig.",
-                            "Wir prüfen gerade, wie die Verbesserung der Benutzerschnittstelle der App verbessert werden kann, um nicht funktionierende QR-Codes zu erkennen und Sie darüber informieren zu können. Weitere Details zu den Fehlern finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>auf GitHub</a>."
-                        ]
-                    },
-                    {
-                        "title": "Wird mein Smartphone-Akku nicht schnell leerlaufen mit der App im Hintergrund?",
-                        "anchor": "battery",
-                        "active": true,
-                        "textblock": [
-                            "Die Corona-Warn-App nutzt die vorhandene Bluetooth-Technologie der Endgeräte. Da die App die Exposure Notification API von Apple und Google verwendet, unterstützt sie die energieeffiziente Bluetooth-Technologie BLE (Bluetooth Low Energy).",
-                            "Der Akkuverbrauch der Corona-Warn-App teilt sich in zwei Faktoren: Den Verbrauch der App selbst und den Verbrauch aufgrund der Aufzeichnung der Begegnungen über das Exposure Notification System. Letzteres kann durch die Nutzung der jeweils aktuell verfügbaren Betriebssysteme für iOS und Android optimiert werden.",
-                            "Bitte beachten Sie bei der Interpretation Ihres Akkuverbrauchs, dass sich die Prozentangabe auf die vollständige Nutzung Ihres Telefons in den letzten 24 Stunden bezieht. Das bedeutet, dass ein häufig und intensiv genutztes Telefon einen sehr geringen Prozentsatz pro App aufweist. Wenn Sie ihr Telefon hauptsächlich zum Telefonieren nutzen und nur gelegentlich Musik streamen oder soziale Medien nutzen, wird der Anteil pro App hingegen relativ hoch sein.",
-                            "<b>Besonderheit bei Android</b>: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung auf dem Gerät allgemein aktiviert ist (Details siehe <a href='#android_location' target='_blank' rel='noopener'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, sollten Sie prüfen, welche Apps tatsächlich Ihren Standort nutzen. Dazu öffnen Sie die Geräte-Einstellungen und wählen 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'. Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
-                        ]
-                    }
-                ]
-            },
-                        {
                 "title": "Meldungen",
                 "id": "notification",
                 "accordion": [
