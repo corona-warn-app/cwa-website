@@ -22,7 +22,7 @@
                         "textblock": [
                             "Die technische Hotline (Telefon 0800 7540001) hilft Ihnen bei technischen Fragen rund um die Corona-Warn-App, zum Beispiel bei Problemen mit der Risiko-Ermittlung. Sie erreichen sie von Montag bis Samstag von 7 bis 22 Uhr (außer an bundesweiten Feiertagen), und sie ist für Sie innerhalb Deutschlands kostenfrei.",
                             "Die TAN-Hotline (Telefon 0800 7540002) hilft Ihnen bei der Eingabe der TAN, wenn Sie ein positives Testergebnis haben, und wenn Sie keine TAN oder kein Dokument mit QR-Code erhalten haben. Die Erreichbarkeit ist Montag bis Freitag von 8 bis 22 Uhr sowie Samstag und Sonntag von 10 bis 22 Uhr. Der Anruf ist kostenfrei.",
-                            "Falls das Testergebnis nicht in der Corona-Warn-App abrufbar ist, sollte das zuständige Fachpersonal, Testcenter oder Gesundheitsamt kontaktiert werden, um das Testergebnis zu erhalten. <a href='https://www.coronawarn.app/de/blog/2020-08-25-notes-qr-codes/'>Weitere Hinweise zum QR-Code Verfahren</a>",
+                            "Falls das Testergebnis nicht in der Corona-Warn-App abrufbar ist, sollte das zuständige Fachpersonal, Testcenter oder Gesundheitsamt kontaktiert werden, um das Testergebnis zu erhalten. <br/>Um Ihnen die Suche nach dem zuständigen Gesundheitsamt zu erleichtern, hat das RKI eine entsprechendes Tool zur Verfügung gestellt. Durch die Angabe der Postleitzahl oder des Wohnortes, wird sofort das zuständige Gesundheitsamt inklusive der Kontaktdaten angezeigt: <a href='https://tools.rki.de/PLZTool'>Robert-Koch-Institut Tool: Gesundheitsamt nach Postleitzahl oder Ort</a> <br/><a href='https://www.coronawarn.app/de/blog/2020-08-25-notes-qr-codes/'>Weitere Hinweise zum QR-Code Verfahren</a>",
                             "Die Webseiten der Bundesregierung bieten allgemeine Informationen und Videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
                             "Das Robert-Koch-Institut stellt auch Informationen zu epidemiologischen Aspekten zur Verfügung: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html</a>.",
                             "Als Medienvertreter richten Sie bitte Ihre Anfragen an <a href='mailto:press@sap.com'>press@sap.com</a>.",
@@ -35,14 +35,6 @@
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
-                    {
-                        "title": "[Apple/iOS]: Risiko-Überprüfung fehlgeschlagen nach dem Update auf Version 1.6.0",
-                        "anchor": "expcheck_160",
-                        "active": true,
-                        "textblock": [
-                             "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
-                        ]
-                    },
                     {
                         "title": "[Google/Android]: Batterieoptimierung wird nicht automatisch abgeschaltet nachdem die priorisierte Hintergrundaktivität aktiviert wurde",
                         "anchor": "battery_optimization_background",
@@ -790,6 +782,15 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Risiko-Überprüfung fehlgeschlagen nach dem Update auf Version 1.6.0",
+                        "anchor": "expcheck_160",
+                        "active": true,
+                        "textblock": [
+                             "<b>AKTUELL</b><br/>Das Problem ist in Version 1.6.1 behoben worden.<hr/>",
+                             "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Migration auf neues Gerät bzw. Backup/Restore - App funktioniert nicht",
                         "anchor": "migration_Apple",
