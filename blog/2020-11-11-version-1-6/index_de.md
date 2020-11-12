@@ -1,6 +1,6 @@
 ---
-page-title: "Corona-Warn-App Update: Version 1.6.1 erläutert Wechsel des Risikostatus"
-page-description: "Corona-Warn-App Update: Version 1.6.1 erläutert Wechsel des Risikostatus"
+page-title: "Corona-Warn-App Update: Version 1.6 erläutert Wechsel des Risikostatus"
+page-description: "Corona-Warn-App Update: Version 1.6 erläutert Wechsel des Risikostatus"
 page-name: version-1-6
 page-name_de: version-1-6
 author: Hanna Heine
@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-Die Corona-Warn-App hat ein Update erhalten, das ab sofort im App Store von Apple und dem Google Play Store zur Verfügung steht. Version 1.6.1 liefert detailliertere Erklärungen beim Wechsel des Risikostatus.  
+Die Corona-Warn-App hat ein Update erhalten, das ab sofort im App Store von Apple und dem Google Play Store zur Verfügung steht. Version 1.6 liefert detailliertere Erklärungen beim Wechsel des Risikostatus.  Ein [kurzfristiges Problem bezüglich der Risiko-Überprüfung](https://www.coronawarn.app/de/faq/#expcheck_160) konnte mit Version 1.6.1 bereits behoben werden. 
 
 
 <!-- overview -->
@@ -19,4 +19,4 @@ Des Weiteren wurde das Zusammenspiel von App und QR-Codes verbessert. Nutzer*inn
 
 Bei Geräten, auf denen die Hintergrundaktualisierung durch den Hersteller in den Standardeinstellungen deaktiviert ist, erhalten Nutzer*innen zudem eine Erinnerung die priorisierte Hintergrundaktivität zu erlauben, damit die App den Risikostatus jederzeit im Hintergrund ermitteln kann. 
 
-Ein [kurzfristiges Problem bezüglich der Risiko-Überprüfung](https://www.coronawarn.app/de/faq/#expcheck_160) konnte bereits behoben werden. 
+
