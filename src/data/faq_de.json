@@ -36,14 +36,6 @@
                 "id": "most_asked",
                 "accordion": [
                     {
-                        "title": "[Apple/iOS]: Risiko-Überprüfung fehlgeschlagen nach dem Update auf Version 1.6.0",
-                        "anchor": "expcheck_160",
-                        "active": true,
-                        "textblock": [
-                             "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: Batterieoptimierung wird nicht automatisch abgeschaltet nachdem die priorisierte Hintergrundaktivität aktiviert wurde",
                         "anchor": "battery_optimization_background",
                         "active": true,
@@ -789,6 +781,15 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Risiko-Überprüfung fehlgeschlagen nach dem Update auf Version 1.6.0",
+                        "anchor": "expcheck_160",
+                        "active": true,
+                        "textblock": [
+                             "<b>AKTUELL</b><br/>Das Problem ist in Version 1.6.1 behoben worden.<hr/>",
+                             "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Migration auf neues Gerät bzw. Backup/Restore - App funktioniert nicht",
                         "anchor": "migration_Apple",
