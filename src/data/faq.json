@@ -36,14 +36,6 @@
                 "id": "most_asked",
                 "accordion": [
                     {
-                        "title": "[Apple/iOS]: Exposure Check Failed after updating to version 1.6.0",
-                        "anchor": "expcheck_160",
-                        "active": true,
-                        "textblock": [
-                             "After an update to app version 1.6.0, you might get the error 'Exposure Check Failed', even though there was a successful check in the past 24 hours. We are working on a solution for this error. In the meantime, try restarting your app. This helps in most cases."
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
                         "anchor": "battery_optimization_background",
                         "active": true,
@@ -788,7 +780,16 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
-			 {
+                   {
+                        "title": "[Apple/iOS]: Exposure Check Failed after updating to version 1.6.0",
+                        "anchor": "expcheck_160",
+                        "active": true,
+                        "textblock": [
+                             "<b>UPDATE</b><br/>This issue has been fixed in Version 1.6.1. <hr/>", 
+                             "After an update to app version 1.6.0, you might get the error 'Exposure Check Failed', even though there was a successful check in the past 24 hours. We are working on a solution for this error. In the meantime, try restarting your app. This helps in most cases."
+                        ]
+                    },
+                    {
                         "title": "[Apple/iOS]: Migrating to new phone and backup and restore - app does not work",
                         "anchor": "migration_Apple",
                         "active": true,
