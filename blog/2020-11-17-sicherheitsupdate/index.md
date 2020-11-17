@@ -1,8 +1,8 @@
 ---
 page-title: "Security Update for the Corona-Warn-App Server"
 page-description: "Security Update for the Corona-Warn-App Server"
-page-name: security update
-page-name_de: security update
+page-name: security-update
+page-name_de: security-update
 author: Hanna Heine
 layout: blog
 ---
