@@ -312,12 +312,12 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '14.0.1'))
+    .pipe(replace('[ios.latest-os-version]', '14.2'))
     .pipe(replace('[ios.minimum-required-os-version]', '13.6'))
-    .pipe(replace('[ios.current-app-version]', '1.5.3'))
+    .pipe(replace('[ios.current-app-version]', '1.6.1'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '1.5.1'))
+    .pipe(replace('[android.current-app-version]', '1.6.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
