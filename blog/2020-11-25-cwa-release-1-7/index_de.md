@@ -7,7 +7,12 @@ author: Hanna Heine
 layout: blog
 ---
 
-Corona-Warn-App Version 1.7 ist ab sofort im Google Play Store und dem App Store von Apple erhältlich. Mit dem Update kann die Risikoüberprüfung nun mehrmals täglich erfolgen. Außerdem erhalten positiv getestete Nutzer*innen in Version 1.7 eine Erinnerung, wenn sie ihr Testergebnis noch nicht geteilt haben sollten. 
+Corona-Warn-App Version 1.7 ist ab sofort im Google Play Store und dem App Store von Apple erhältlich. Mit Einführung von Version 1.7 wurde auf einen kontrollierten Rollout in den App Stores umgestellt, da mittlerweile ein sehr hohes Downloadaufkommen der Corona-Warn-App vorherrscht. Das bedeutet: Die App wird den Nutzer\*innen in Wellen zur Verfügung gestellt. Dieses Verfahren ist üblich bei Apps mit solch einer großen Reichweite. 
+Während die Nutzer\*innen im Apple Appstore manuell ein Update anstoßen können, besteht diese Möglichkeit im Google Play Store nicht. Hier kann es vorkommen, dass die neue Version der Corona-Warn-App bis zu 48 Stunden später zur Verfügung steht.
+
+Mit dem Update kann die Risikoüberprüfung nun mehrmals täglich erfolgen. Außerdem erhalten positiv getestete Nutzer\*innen in Version 1.7 eine Erinnerung, wenn sie ihr Testergebnis noch nicht geteilt haben sollten. 
+
+
  
  
 <!-- overview -->
