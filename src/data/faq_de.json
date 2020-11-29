@@ -187,14 +187,6 @@
                 "id": "notification",
                 "accordion": [
                     {
-                        "title": "[Apple/iOS] 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
-                        "anchor": "ExposureDetectionIsAlreadyRunning",
-                        "active": true,
-                        "textblock": [                            
-                            "Die Meldung <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1497'>'ExposureDetectionIsAlreadyRunning'</a> <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1512#issuecomment-727206633'>kann ignoriert werden</a>. Die CWA funktioniert korrekt und dieses Problem wird in einem <a href='https://github.com/corona-warn-app/cwa-app-ios/pull/1510'> bevorstehenden Update korrigiert</a>."
-                        ]
-                    },
-                    {
                         "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",
                         "active": true,
@@ -799,6 +791,15 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS] 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
+                        "anchor": "ExposureDetectionIsAlreadyRunning",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/>Das Problem ist in Version 1.7.1 behoben worden.<hr/>",                            
+                            "Die Meldung <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1497'>'ExposureDetectionIsAlreadyRunning'</a> <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1512#issuecomment-727206633'>kann ignoriert werden</a>. Die CWA funktioniert korrekt und dieses Problem wird in einem <a href='https://github.com/corona-warn-app/cwa-app-ios/pull/1510'> bevorstehenden Update korrigiert</a>."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Risiko-Überprüfung fehlgeschlagen nach dem Update auf Version 1.6.0",
                         "anchor": "expcheck_160",
