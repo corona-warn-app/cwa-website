@@ -832,7 +832,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><b>IMPORTANT:</b><br/><b>After updating to version 1.5 it will take up to 24 hours until the error is gone.</b>",
+                            "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><b>IMPORTANT:</b><br/><b>After updating to version 1.5 it will take up to 24 hours until the error is gone.</b>",
                             "If you are still receiving the error after updating to 1.5 and waiting 24 hours, please report it in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a>.<hr/>",
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
                             "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
@@ -845,7 +845,7 @@
                         "anchor": "cause9002_timeout",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
                             "If, when opening Corona-Warn-App, the current keys of positively tested users are to be downloaded from the server (because automatic data synchronization was not yet carried out on that day) and no internet connection can be established, you may receive the following error message: 'Cause: 9002, Something went wrong. timeout'. A 'java.net.SocketTimeoutException' is given as the cause under 'Details'. There are two different known causes that can lead to this error:",
                             "<ol><li><b>The internet connection is still being established.</b> If you have just switched on previously deactivated data connections (Wi-Fi or mobile) or restarted your phone and immediately open Corona-Warn-App, the internet connection may not have been fully established yet. There are also special apps that only enable data connections when the screen is switched on. In these cases the error message can occur. <b>Solution:</b> If the internet connection was deactivated or interrupted, wait a few seconds after switching on the internet connection before opening Corona-Warn-App. If you use an app to control data connections, set it up so that data connections in the background are enabled for Corona-Warn-App.</li><li><b>The internet connection is blocked.</b> This can be the case if you have either manually restricted data connections in your phone’s settings or if data connections for Corona-Warn-App have been automatically deactivated by your antivirus app and/or  firewall. <b>Solution:</b> Enable data usage in general as well as background data and unrestricted data usage in the settings of your phone for Corona-Warn-App. If you use an antivirus app and/or firewall on your phone, set it up so that there are no data usage restrictions for Corona-Warn-App.</li></ol>",
                             "Please refer to <a href='https://github.com/corona-warn-app/cwa-app-android/issues/998' target='_blank' rel='noopener noreferrer'>GitHub issue 998</a> for more information."
@@ -856,7 +856,7 @@
                         "anchor": "cause9002",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
                             "On some phones (for example, Huawei P20 Pro), there could be problems when accessing the encrypted area of the app database, where the info for the risk status and the last updates are stored. Usually, this error displays a Cause: 9002 message with hints to the database used, SQLite, sqlite_master, a security exception, or an error with the decryption. It can sometimes be that you can't open the app.",
                             "We're working on identifying the cause and fixing it then. For details, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. There, we will keep you updated for fixing the error and additional hints.",
                             "If your phone type is not yet covered in the GitHub issue, write us the type in a comment. This helps us to determine the cause. If the GitHub issue doesn't cover your cause 9002 error, create a <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>new issue</a>.",
@@ -868,7 +868,7 @@
                         "anchor": "app_crash",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/>This bug has been fixed with the currently available version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
+                            "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
                             "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it is closed immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
                             "We are working flat out to find a solution to the problem.",
                             "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
@@ -880,7 +880,7 @@
                         "anchor": "status_14",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This Issue was resolved in version 1.2. Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
+                            "UPDATE: This Issue was resolved in version 1.2 of the Corona Warn App. Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
                             "For some phones running Android, the exposures currently are displayed for more than 14 days. We're working on fixing this display error. You'll find up-to-date information in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub issue 911</a>."
                         ]
                     },
