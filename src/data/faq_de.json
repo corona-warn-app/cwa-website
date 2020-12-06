@@ -790,6 +790,15 @@
                 "title": "Geklärt",
                 "accordion": [
                     {
+                        "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
+                        "anchor": "multiple_exposure_checks",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/>Seit Version 1.6.0 der Corona-Warn-App gibt es keine separaten Überprüfungen für die einzelnen Tage mehr. Stattdessen wird nach dem Download der aktuellen Diagnoseschlüssel vom Server eine einzelne Überprüfung von allen vorhandenen Diagnoseschlüsseln durchgeführt.<hr/>",
+                            "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung der Begegnungsaufzeichnungen durchgeführt. Dabei wird für jeden der letzte 14 Tage, für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung der Begegnungsaufzeichnungen durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Überprüfungs-Historie vorhanden sind. Sie können zudem auf die Überprüfungseinträge klicken und sehen, dass immer unterschiedlich viele Schlüssel geprüft werden."
+                        ]
+                    },
+                    {
                         "title": "[Apple/iOS] 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
                         "anchor": "ExposureDetectionIsAlreadyRunning",
                         "active": true,
