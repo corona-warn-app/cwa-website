@@ -187,14 +187,6 @@
                 "id": "notification",
                 "accordion": [
                     {
-                        "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
-                        "anchor": "multiple_exposure_checks",
-                        "active": true,
-                        "textblock": [
-                            "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entries are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
-                        ]
-                    },
-                    {
                         "title": "My exposure log shows checks for less than 14 days",
                         "anchor": "exposure_check",
                         "active": true,
@@ -788,16 +780,25 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
-                   {
+                    {
+                        "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
+                        "anchor": "multiple_exposure_checks",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>As of version 1.6.0 of the Corona Warn App, there are no longer separate checks for each day. Instead, the app performs a single check on all available diagnosis keys from the past 14 days when an update is downloaded from the server.<hr/>",
+                            "When the app downloads the current diagnosis keys from the server, a check of the exposure log is performed. During that process, a separate check is performed for each of the last 14 days, for which diagnosis keys are available. It is therefore not an error that multiple, seemingly simultaneous entries are visible in the exposure check history. You can further click on the details of each check to see that different amounts of keys were provided for each of them."
+                        ]
+                    },
+                    {
                         "title": "[Apple/iOS] 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
                         "anchor": "ExposureDetectionIsAlreadyRunning",
                         "active": true,
-                        "textblock": [    
+                        "textblock": [
                             "<b>UPDATE</b><br/>This issue has been fixed in version 1.7.1.<hr/>",                        
                             "The notification <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1497'>'ExposureDetectionIsAlreadyRunning'</a> <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1512#issuecomment-727206633'>can be ignored</a>. The CWA is still working correctly and this issue will be solved with a <a href='https://github.com/corona-warn-app/cwa-app-ios/pull/1510'>future release</a>."
                         ]
-                   },
-                   {
+                    },
+                    {
                         "title": "[Apple/iOS]: Exposure Check Failed after updating to version 1.6.0",
                         "anchor": "expcheck_160",
                         "active": true,
