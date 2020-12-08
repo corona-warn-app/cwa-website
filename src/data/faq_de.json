@@ -786,6 +786,64 @@
                 ]
             },
             {
+                "title": "Risko-Ermittlung",
+                "id": "risk_assessment",
+                "accordion": [
+                    {
+                        "title": "Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?",
+                        "anchor": "encounter_criteria",
+                        "active": true,
+                        "textblock": [
+                            "Die Corona-Warn-App hat drei verschiedene Statusanzeigen: \"unbekanntes Risiko\" (grau), \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
+                            "Bei der Status­anzeige „un­be­kanntes Risiko“ ist die Risiko-E­rmittlung noch nicht lange genug aktiv, um eine Risikoermittlung vorzunehmen.",
+                            "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis verschiedener Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
+                            "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, wie viele. Die App zeigt in diesem Fall folgenden Hinweis an: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
+                            "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem ärztlichen Bereitschaftsdienst unter 116117 oder dem Gesundheitsamt in Verbindung, um das weitere Vorgehen abzustimmen. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Sowohl das RKI als auch das Bundesministerium für Gesundheit haben jedoch entsprechende Orientierungshilfen bzw. Empfehlungen veröffentlicht."
+                        ]
+                    },
+                    {
+                        "title": "Ich habe die Meldung bekommen, dass ich eine niedrige Risikobegegnung hatte. Am nächsten Tag war sie wieder weg. Sollte das nicht erst nach 14 Tagen gelöscht werden?",
+                        "anchor": "encounter_deletion",
+                        "active": true,
+                        "textblock": [
+                            "Sobald die App die aktuellen Diagnoseschlüssel (Positivkennungen) vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzten 14 Tage, für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung des Kontaktprotokolls durchgeführt. Das bedeutet also, die App gleicht die Begegnungen der letzten 14 Tage mit den Positivkennungen ab, um zu überprüfen, ob es zu einem Kontakt mit einer positiv getesteten Person gekommen ist. Ist die Meldung über eine Begegnung mit niedrigem Risiko nach einem Tag verschwunden, bedeutet das, dass die entsprechende Begegnung in diesem Fall länger als 14 Tage zurückliegt."
+                        ]
+                    },
+                    {
+                        "title": "Ich habe in der App die Meldung bekommen, dass ich zwei Begegnungen mit niedrigem Risiko hatte. Die Statusanzeige ist aber grün geblieben. Muss ich mir Sorgen machen?",
+                        "anchor": "low_risk_green",
+                        "active": true,
+                        "textblock": [
+                            "Nein, denn auf Grundlage der Daten der Risiko-Ermittlung wird das Infektionsrisiko als niedrig eingestuft, da sich die Begegnung auf einen kurzen Zeitraum und/oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen und es besteht kein besonderer Handlungsbedarf. Es wird empfohlen, sich an die allgemein geltenden Abstands- und Hygieneregeln zu halten. Sie müssen sich bei Begegnungen mit niedrigem Risiko nicht testen lassen. Die Verhaltensvorschläge sowie Infos zum Ermittlungszeitraum als auch zum Infektionsrisiko finden Nutzer*innen in der App selbst, wenn sie auf „Niedriges Risik“ mit dem Finger tippen."
+                        ]
+                    },
+                    {
+                        "title": "Sind neue Begegnungen bei roter Statusanzeige solche mit niedrigem oder erhöhtem Risiko?",
+                        "anchor": "inc_risk_new_encounter",
+                        "active": true,
+                        "textblock": [
+                            "Wenn Sie in der aktuellen Version der App (1.7.1) eine rote Statusanzeige (erhöhtes Risiko) haben, werden alle zukünftigen Risikokontakte auch mit erhöhtem Risiko angezeigt. Das passiert auch, wenn es sich möglicherweise um Kontakte mit eigentlich niedrigem Risiko handelt. Dieses Verfahren soll in den kommenden Updates der Corona-Warn-App geändert werden."
+                        ]
+                    },
+                    {
+                        "title": "Werden Risikobegegnungen mit der gleichen Person mehrfach am Tag gezählt?",
+                        "anchor": "encounter_same_person",
+                        "active": true,
+                        "textblock": [
+                            "Mit der aktuellen Version des Exposure Notification Frameworks (V1), der Schnittstelle für Corona-Apps von Apple und Google, wird eine Person als eine Begegnung pro Tag gezählt."
+                        ]
+                    },
+                    {
+                        "title": "Wird eine Begegnung an verschiedenen Tagen mit ein und derselben Person mehrfach gezählt?",
+                        "anchor": "count_per_day",
+                        "active": true,
+                        "textblock": [
+                            "Ja. Mit der aktuellen Version des Exposure Notification Frameworks (V1), der Schnittstelle für Corona-Apps von Apple und Google, wird eine Person als eine Begegnung pro Tag gezählt. Das heißt: eine Person, der ich gestern und heute begegnet bin, wird als zwei Begegnungen gezählt. Ein Tag ist hierbei als Mitternacht „UTC“ bis Mitternacht „UTC“ des Folgetages definiert."
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
