@@ -36,11 +36,11 @@
                 "id": "most_asked",
                 "accordion": [
                     {
-                        "title": "Firewall/Router configuration: URSACHE: 4000, error during web request, HTTP status 901",
+                        "title": "Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901",
                         "anchor": "access-list",
                         "active": true,
                         "textblock": [
-                             "Some firewalls might prevent the CWA from contacting the backend. This might lead to error notifications, including 'URSACHE: 4000, error during web request, HTTP status 901'. In case you make use of a firewall (router or app), make sure to include the following domains in the access-list for web requests as well as for DNS requests:<br/>*.coronawarn.app<br/>*.t-online.de"
+                             "Some firewalls might prevent the CWA from contacting the backend. This might lead to error notifications, including 'CAUSE: 4000, error during web request, HTTP status 901'. In case you make use of a firewall (router or app), make sure to include the following domains in the access-list for web requests as well as for DNS requests:<br/>*.coronawarn.app<br/>*.t-online.de"
                         ]
                     },
                     {
