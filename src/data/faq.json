@@ -36,6 +36,14 @@
                 "id": "most_asked",
                 "accordion": [
                     {
+                        "title": "Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901",
+                        "anchor": "access-list",
+                        "active": true,
+                        "textblock": [
+                             "Some firewalls might prevent the CWA from contacting the backend. This might lead to error notifications, including 'CAUSE: 4000, error during web request, HTTP status 901'. In case you make use of a firewall (router or app), make sure to include the following domains in the access-list for web requests as well as for DNS requests:<br/>*.coronawarn.app<br/>*.t-online.de"
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
                         "anchor": "battery_optimization_background",
                         "active": true,
