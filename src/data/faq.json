@@ -100,15 +100,24 @@
                         ]
                     },
                     {
-                        "title": "Problems when using the QR code",
+                        "title": "I get an error while scanning the QR code. What can I do?",
+                        "anchor": "qr_scan",
+                        "active": true,
+                        "textblock": [
+                            "This problem can have two causes:",
+                            "<ol><li>The QR code is not compatible with the Corona-Warn-App.</li><li>The test result was not allowed to be transmitted.</li></ol>",
+                            "Please check whether the laboratory with which the doctor or the test center works is connected to the Corona-Warn-App and the field 9 'Consent of the insured person to transmit the test result for the purpose of the Corona-Warn-App' has been ticked. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
+                            "We are currently looking into how to improve the app's user interface to detect QR Codes that are not working and inform you about them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>."
+                        ]
+                    },
+                    {
+                        "title": "I have scanned a QR code, but the test result could not be retrieved for days.",
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
-                            "I have received a QR code during a test, which I would like to use to retrieve the test result via the Corona-Warn-App. I get an error while scanning or the test result could not be retrieved for days. What can I do?",
-                            "In some cases you may have received a QR Code that is not compatible with the test retrieval system of the Corona-Warn-App or that has not been activated for retrieving the test. In order to avoid these problems, please check whether a) the laboratory with which the doctor or the test center works is connected to the Corona-Warn-App and b) the field 9 'Consent of the insured person to transmit the test result for the purpose of the Corona-Warn-App' has been ticked. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
-                            "If you have scanned your QR code into the App after a corona test and do not receive a test result via the App within a few days, it is possible that the respective laboratory is not yet fully cooperating with the Corona-Warn-App. Currently, 70-80% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way. In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result and would like to use the Corona-Warn-App to warn your risk encounters, call the hotline at +49 800 7540002 and participate in the TeleTan procedure.",
-                            "If you have already scanned the QR Code, it unfortunately cannot be scanned a second time, nor is it possible to delete a previously entered QR Code and scan it in again. We have to make sure that only one phone can scan the QR Code and transmit its diagnostic keys. For privacy reasons, we cannot store the phone's ID, so the QR Code is only valid for one scan.",
-                            "We are currently looking into how to improve the app's user interface to detect QR Codes that are not working and inform you about them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>."
+                            "If you have scanned your QR code into the App after a corona test and do not receive a test result via the App within a few days, it is possible that the respective laboratory is not yet fully cooperating with the Corona-Warn-App. Currently, 90% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way.",
+                            "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a TeleTAN by calling the hotline at +49 800 7540002 to warn your risk encounters. Please enter the TeleTAN into the Corona Warn App by following these steps:",
+                            "<ul><li>'Inform & Help' -> 'Continue' -> 'TAN'</li></ul>"
                         ]
                     },
                     {
