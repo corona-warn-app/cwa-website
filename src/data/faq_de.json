@@ -100,15 +100,25 @@
                         ]
                     },
                     {
-                        "title": "Probleme mit dem QR-Code",
+                        "title": "Beim Einscannen erhalte des QR Codes ich einen Fehler. Was kann ich tun?",
+                        "anchor": "qr_scan",
+                        "active": true,
+                        "textblock": [
+                            "Dieses Problem kann zwei verschiedene Ursachen haben:",
+                            "<ol><li>Das Testabrufsystem des zuständigen Testlabors ist nicht mit der Corona-Warn-App kompatibel</li><li>Das Testergebnis wurde nicht zur Übermittlung freigeschaltet</li></ol>",
+                            "Erkundigen Sie sich daher bitte, ob das Labor, mit dem der Arzt oder das Testcenter zusammenarbeiten an die Corona-Warn-App angebunden ist und das Feld 9 'Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App' angekreuzt wurde. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert.",
+                            "Wir prüfen gerade, wie die Verbesserung der Benutzerschnittstelle der App verbessert werden kann, um nicht funktionierende QR-Codes zu erkennen und Sie darüber informieren zu können. Weitere Details zu den Fehlern finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>auf GitHub</a>."
+                        ]
+                    },
+                    {
+                        "title": "Ich habe einen QR Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.",
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
-                            "Ich habe im Rahmen eines Tests einen QR-Code erhalten, den ich zum Abruf des Testergebnisses über die Corona-Warn-App nutzen möchte. Beim Einscannen erhalte ich einen Fehler oder aber das Testergebnis konnte über Tage nicht abgerufen werden. Was kann ich tun?",
-                            "In einigen Fällen kann es vorkommen, dass Sie einen QR-Code erhalten haben, der nicht mit dem Testabrufsystem der Corona-Warn-App kompatibel ist bzw. nicht für den Abruf des Tests freigeschaltet wurde. Um diese Probleme auszuschließen, erkundigen Sie sich bitte, ob a) das Labor, mit dem der Arzt oder das Testcenter zusammenarbeiten an die Corona-Warn-App angebunden ist und b) das Feld 9 'Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App' angekreuzt wurde. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert.",
-                            "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass das entsprechende Labor noch nicht vollständig mit der Corona-Warn-App zusammenarbeitet. Derzeit sind 70-80% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss. Rufen Sie dann bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Wird Ihnen dabei ein positives Testergebnis mitgeteilt und möchten Sie über die Corona-Warn-App Ihre Risikobegegnungen warnen, rufen Sie die Hotline unter der +49 800 7540002 an und nehmen Sie am TeleTan-Verfahren teil.",
-                            "Wenn Sie den QR Code bereits gescannt haben, kann dieser leider nicht ein zweites Mal gescannt werden, ebenso ist das Löschen eines zuvor eingegebenen QR Codes und erneutes einscannen nicht möglich. Wir müssen sicherstellen, dass nur ein Telefon den QR Code scannen und seine Diagnoseschlüssel übermitteln kann. Aus Datenschutzgründen können wir die ID des Telefons nicht speichern, deshalb ist der QR Code nur für einen Scan gültig.",
-                            "Wir prüfen gerade, wie die Verbesserung der Benutzerschnittstelle der App verbessert werden kann, um nicht funktionierende QR-Codes zu erkennen und Sie darüber informieren zu können. Weitere Details zu den Fehlern finden Sie <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>auf GitHub</a>."
+                            "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass das entsprechende Labor noch nicht vollständig mit der Corona-Warn-App zusammenarbeitet. Derzeit sind 90% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss.",
+                            "Rufen Sie bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Wird Ihnen dabei ein positives Testergebnis mitgeteilt, können Sie über die Hotline unter der +49 800 7540002 eine TeleTAN beantragen, um über die Corona-Warn-App Ihre Risikobegegnungen zu warnen. Tragen Sie für diesen Zweck die erhaltene TeleTAN unter",
+                            "<ul><li>'Informieren & Helfen' -> 'Weiter' -> 'TAN'</li></ul>",
+                            "in die Corona-Warn-App ein."
                         ]
                     },
                     {
