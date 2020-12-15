@@ -7,7 +7,7 @@ author: Hilmar Schepp
 layout: blog
 ---
 
-<b>Apple now makes its Exposure Notification Framework available for the iOS 12.5 operating system version as well</b>
+Apple now makes its Exposure Notification Framework available for the iOS 12.5 operating system version as well
 <!-- overview -->
 
 We are pleased that Apple has now made its Exposure Notification Framework available for the iOS 12.5 operating system. The company is accommodating the request to also enable users of the older iPhone models 5s and 6 to download tracing apps.<br>
