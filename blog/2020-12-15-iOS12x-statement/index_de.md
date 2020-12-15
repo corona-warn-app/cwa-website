@@ -1,13 +1,13 @@
 ---
 page-title: "Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen" 
 page-description: "Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen" 
-page-name: iOS 12.5
-page-name_de: iOS 12.5
+page-name: iOS-12-5
+page-name_de: iOS-12-5
 author: Hilmar Schepp
 layout: blog
 ---
 
-<b>Apple stellt sein Exposure Notification Framework nun auch für die Betriebssystem-Version iOS 12.5 bereit</b>
+Apple stellt sein Exposure Notification Framework nun auch für die Betriebssystem-Version iOS 12.5 bereit
 <!-- overview -->
 
 Wir freuen uns, dass Apple sein Exposure Notification Framework nun auch für die Betriebssystem-Version iOS 12.5 bereitstellt. Das Unternehmen kommt damit der Forderung nach, auch Nutzern der älteren iPhone-Modelle 5s und 6 das Herunterladen von Tracing-Apps zu ermöglichen.<br>
