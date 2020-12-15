@@ -143,8 +143,13 @@ $(document).ready(function(){
 
     // check if the faq-search text field is present
     let searchField = document.getElementById("faq-search");
-    if(searchField !== null){
+    if(searchField !== null) {
         let faq = {};
+        const sideMenuItems = [];
+        $(".side-menu .nav-link").each(function() {
+            let item = $(this).get(0)
+            sideMenuItems.push(item.getAttribute('href').substring(1))
+        })
         // do an AJAX call to get the searchable FAQ document
         // Converter ensures that even malformed mime-types are converted directly to JSON
         $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
@@ -176,9 +181,12 @@ $(document).ready(function(){
                         // ... just go there
                         location.hash = "#" + replacement;
                     } else {
-                        // otherwise, just search for the hash value
-                        searchField.value = hashVal;
-                        updateResults(hashVal, faq);
+                        // Check if the hashVal isn't at the side-menu items. For prevent a bug when search the URL directly into another tab. 
+                        if (!sideMenuItems.includes(hashVal)){
+                            // if not, otherwise, just search for the hash value
+                            searchField.value = hashVal;
+                            updateResults(hashVal, faq);
+                        }
                     }
                 })
             }
