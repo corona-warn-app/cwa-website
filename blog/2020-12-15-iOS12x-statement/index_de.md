@@ -7,7 +7,7 @@ author: Hilmar Schepp
 layout: blog
 ---
 
-Apple stellt sein Exposure Notification Framework nun auch für die Betriebssystem-Version iOS 12.5 bereit
+<b>Apple stellt sein Exposure Notification Framework nun auch für die Betriebssystem-Version iOS 12.5 bereit</b>
 <!-- overview -->
 
 Wir freuen uns, dass Apple sein Exposure Notification Framework nun auch für die Betriebssystem-Version iOS 12.5 bereitstellt. Das Unternehmen kommt damit der Forderung nach, auch Nutzern der älteren iPhone-Modelle 5s und 6 das Herunterladen von Tracing-Apps zu ermöglichen.<br>
