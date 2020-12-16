@@ -568,7 +568,7 @@
                         "textblock": [
                             "The calculation of your individual risk is based on the following factors:",
                             "<ol><li> Duration of the encounter </li><li> Distance at the time of the encounter </li><li> Time that has elapsed since the encounter </li><li>Infectiousness (derived from information on when and whether symptoms occur).</li></ol>",
-                            "If the calculated risk exceeds a certain threshold specified by the Robert Koch Institute, users will receive a notification regarding an increased risk.",
+                            "If the calculated risk exceeds a certain <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>threshold</a> specified by the Robert Koch Institute, users will receive a notification regarding an increased risk.",
                             "The Corona Warn App has three different status indicators that indicate this risk: \"unknown risk\" (grey), \"low risk\" (green) and \"increased risk\" (red).",
                             "With the status display \"unknown risk\", the risk determination has not been active long enough to perform a risk determination.",
                             "If you see high-risk or low-risk encounters on your smartphone, it means that your smartphone and that of a person who later reported themselves as infected in the app have exchanged diagnostic keys via Bluetooth in the past 14 days. Based on the above mentioned criteria, this encounter is then classified as having an increased or low risk of infection.",
