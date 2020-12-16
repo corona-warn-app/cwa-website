@@ -252,6 +252,7 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
+                            "<b>AKTUELL</b><br/><a href='https://www.coronawarn.app/de/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen.</a><hr/>",
                             "[Apple/iOS]: Die App läuft auf iOS-Smartphones ab dem iPhone 6s. Die Version des Betriebssystems muss iOS [ios.minimum-required-os-version] oder höher sein, da mit dieser Version die Exposure Notification API eingeführt wurde.",
                             "[Google/Android]: Die App läuft auf Smartphones ab Android [android.minimum-required-os-version]. Die Exposure Notification API wurde hier bereits über die Google-Play-Dienste eingespielt.",
                             "Weitere Fragen zu den Betriebssystemen können nur die Hersteller selbst beantworten."
@@ -271,6 +272,7 @@
                         "anchor": "ios135",
                         "active": true,
                         "textblock": [
+                            "<b>AKTUELL</b><br/><a href='https://www.coronawarn.app/de/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen.</a><hr/>",
                             "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Mit dem Release 1.5 der Corona-Warn-App wird nun iOS 13.6 vorausgesetzt, da die Exposure Notification API nochmal angepasst und verbessert wurde. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                         ]
                     },
@@ -573,11 +575,14 @@
                         "anchor": "encounter_criteria",
                         "active": true,
                         "textblock": [
-                            "Die Corona-Warn-App hat drei verschiedene Statusanzeigen: \"unbekanntes Risiko\" (grau), \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
-                            "Bei der Status­anzeige „un­be­kanntes Risiko“ ist die Risiko-E­rmittlung noch nicht lange genug aktiv, um eine Risikoermittlung vorzunehmen.",
-                            "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis verschiedener Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
-                            "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, wie viele. Die App zeigt in diesem Fall folgenden Hinweis an: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
-                            "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem ärztlichen Bereitschaftsdienst unter 116117 oder dem Gesundheitsamt in Verbindung, um das weitere Vorgehen abzustimmen. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Sowohl das <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> als auch das <a href='https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/C/Coronavirus/Verordnungen/Corona-Test-VO_BAnz_AT_141020.pdf' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> haben jedoch entsprechende Orientierungshilfen bzw. Empfehlungen veröffentlicht."
+                            "Die Berechnung Ihres individuellen Infektionsrisikos basiert auf folgenden Faktoren:",
+                            "<ol><li> Dauer der Begegnung </li><li> Abstand bei der Begegnung </li><li> Zeit, die seit der Begegnung vergangen ist</li><li> Infektiosität (abgeleitet aus der Information, wann und ob die Symptome eingesetzt haben) </li></ol>",
+                            "Überschreitet der daraus ermittelte Risikowert eine <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>Schwelle</a>, die das Robert Koch-Institut vorgibt, erhalten die Benutzer eine Benachrichtigung über ein erhöhtes Infektionsrisiko.",
+                            "Die Corona-Warn-App hat drei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen: \"unbekanntes Risiko\" (grau), \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
+                            "Bei der Statusanzeige \"unbekanntes Risiko\" ist die Risiko-Ermittlung noch nicht lange genug aktiv, um eine Risikoermittlung vorzunehmen.",
+                            "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis der oben genannten Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
+                            "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, an wie vielen Tagen dies der Fall war. Ab der Version 1.9.1 der App sehen die Nutzer somit die Anzahl an Tagen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen. Zusätzlich wird folgender Hinweis angezeigt: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
+                            "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem ärztlichen Bereitschaftsdienst unter 116117 oder dem Gesundheitsamt in Verbindung, um das weitere Vorgehen abzustimmen. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Sowohl das <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> als auch das <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> haben jedoch entsprechende Orientierungshilfen bzw. Empfehlungen veröffentlicht. Die App zeigt ab Version 1.9.1 zudem an, an welchen Tag (innerhalb der letzten 14 Tage) letztmalig eine Begegnung mit erhöhtem Risiko stattgefunden hat. Hier sehen Sie nun ein genaues Datum, um Ihre Kontakte bzw. Ihr Verhalten an diesem Tag besser nachvollziehen zu können."
                         ]
                     },
                     {
@@ -597,19 +602,11 @@
                         ]
                     },
                     {
-                        "title": "Sind neue Begegnungen bei roter Statusanzeige solche mit niedrigem oder erhöhtem Risiko?",
-                        "anchor": "inc_risk_new_encounter",
-                        "active": true,
-                        "textblock": [
-                            "Wenn Sie in der aktuellen Version der App (1.7.1) eine rote Statusanzeige (erhöhtes Risiko) haben, werden alle zukünftigen Risikokontakte auch mit erhöhtem Risiko angezeigt. Das passiert auch, wenn es sich möglicherweise um Kontakte mit eigentlich niedrigem Risiko handelt. Dieses Verfahren soll in den kommenden Updates der Corona-Warn-App geändert werden."
-                        ]
-                    },
-                    {
                         "title": "Werden Risikobegegnungen mit der gleichen Person mehrfach am Tag gezählt?",
                         "anchor": "encounter_same_person",
                         "active": true,
                         "textblock": [
-                            "Mit der aktuellen Version des Exposure Notification Frameworks (V1), der Schnittstelle für Corona-Apps von Apple und Google, wird eine Person als eine Begegnung pro Tag gezählt."
+                            "Nein, denn mit Version 2 des Exposure Notification Frameworks (ENF) ändert sich die Art und Weise der Risikoermittlung. Nutzer*innen können damit die Anzahl an Tagen sehen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen."
                         ]
                     },
                     {
@@ -617,7 +614,7 @@
                         "anchor": "count_per_day",
                         "active": true,
                         "textblock": [
-                            "Ja. Mit der aktuellen Version des Exposure Notification Frameworks (V1), der Schnittstelle für Corona-Apps von Apple und Google, wird eine Person als eine Begegnung pro Tag gezählt. Das heißt: eine Person, der ich gestern und heute begegnet bin, wird als zwei Begegnungen gezählt. Ein Tag ist hierbei als Mitternacht „UTC“ bis Mitternacht „UTC“ des Folgetages definiert."
+                            "Ja, das ist richtig. Mit Version 2 des Exposure Notification Frameworks (ENF), der Schnittstelle für Corona-Apps von Apple und Google, werden die Tage gezählt, an denen Risikobegegnungen stattgefunden haben. Das heißt: eine Person, der man gestern und heute begegnet ist, wird als „Risikobegegnungen an zwei Tagen“ gezählt. Ein Tag ist hierbei als Mitternacht „UTC“ bis Mitternacht „UTC“ des Folgetages definiert."
                         ]
                     }
                 ]
