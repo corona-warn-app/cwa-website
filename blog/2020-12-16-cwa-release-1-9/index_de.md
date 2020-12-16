@@ -21,6 +21,7 @@ Bei mehreren Begegnungen mit erhöhtem Risiko (rot) wird Nutzer\*innen nun das D
 
 <br></br>
 
+Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem außerdem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus virologischer Sicht aber nicht relevant und werden von der Corona-Warn-App herausgefiltert.
 
 Des Weiteren wurde der **Ablauf** vom Einscannen des Testergebnisses bis zum Teilen der Diagnoseschlüssel verbessert, um **mehr Nutzer\*innen zu ermutigen** ihre Diagnoseschlüssel zu teilen und mit ihrem positiven Testergebnis andere zu warnen. Gemeinsam mit Google und Apple arbeiten die Entwickler\*innen daran, den Ablauf noch weiter zu verbessern und zu optimieren. 
 
