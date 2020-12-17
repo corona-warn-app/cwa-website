@@ -597,7 +597,7 @@
                             "<ul><li>Mindestens 10 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
                             "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
                             "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
-                            "Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpung:",
+                            "Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpfung:",
                             "<ul><li>Zeiten mit einer Dämpfung <55dB werden zu 100 Prozent berechnet</li>",
                             "<li>Zeiten mit einer Dämpfung >= 55dB und <63dB werden zu 50 Prozent berechnet</li></ul>",
                             "Basierend auf dem Transmission Risk Level (III bis VII) wird nur ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die gewichtete Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die gewichtete Kontaktzeit ergibt. Anhand dieser gewichteten Zeit wird nun entschieden, um was für eine Begegnung es sich bei diesem Zeitfenster handelt:",
