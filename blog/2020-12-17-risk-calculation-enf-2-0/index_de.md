@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Bisher hat die Corona-Warn-App eine oder mehrere Begegnungen mit niedrigem Risiko angezeigt. Seit dem Update auf Version 1.9 sind diese verschwunden, beziehungsweise ist die Zahl niedriger geworden. Das liegt daran, dass sich die Berechnung des Risikos unter Version 2 des Exposure Notification Framework (ENF) geändert hat. 
+Bisher hat die Corona-Warn-App eine oder mehrere Begegnungen mit niedrigem Risiko angezeigt. Seit dem Update auf Version 1.9 sind diese verschwunden, beziehungsweise ist die Zahl niedriger geworden. Das liegt daran, dass sich die Berechnung des Risikos unter Version 2 des Exposure Notification Framework (ENF) erheblich verbessert hat. Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen gezählt werden sollen. 
  
 <!-- overview -->
 
@@ -20,8 +20,6 @@ Bisher konnte die in der App angezeigte Anzahl der unkritischen Begegnungen nich
 **Vereinfacht ausgedrückt**: Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus aktueller epidemiologischer Sicht nicht relevant und werden von der Corona-Warn-App herausgefiltert.
 
 ## Berechnung des Risikos unter ENF 2.0 
-
-**Im Detail** bedeutet das:  Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen gezählt werden sollen. 
 
 Während in der Version 1.0 der Schnittstelle Durchschnittswerte der Dämpfung für alle Begegnungen mit einem anderen Gerät im Laufe des Tages genutzt wurden, erfolgt die Betrachtung in der neuen Version 2.0 nun jeweils für 30-minütige Zeitfenster. 
  
