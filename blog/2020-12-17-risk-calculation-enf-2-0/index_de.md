@@ -17,7 +17,7 @@ Mit Einführung der Version 1.9 der Corona-Warn-App wird eine neue Version des E
  
 Bisher wurde die in der App angezeigte Anzahl der Begegnungen nicht gefiltert. Das gilt bis zur Version 1.7.1. Das heißt: Auch Begegnungen mit sehr kurze Kontaktdauer (hier genügten wenige Sekunden) wurden gezählt und angezeigt. Aufgrund der hinterlegten Kriterien für die Risikoberechnung wurden diese allerdings nur als Begegnung mit geringem Risiko angezeigt.
 
-**Vereinfacht ausgedrückt**: Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus virologischer Sicht nicht relevant und werden von der Corona-Warn-App herausgefiltert.
+**Vereinfacht ausgedrückt**: Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus epidemiologischer Sicht nicht relevant und werden von der Corona-Warn-App herausgefiltert.
 
 ## Berechnung des Risikos unter ENF 2.0 
 
