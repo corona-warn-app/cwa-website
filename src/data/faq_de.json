@@ -571,6 +571,44 @@
                 "id": "risk_assessment",
                 "accordion": [
                     {
+                        "title": "Bisher hat meine App eine oder mehrere Begegnungen mit niedrigem Risiko anzeigt - seit dem Update sind diese verschwunden bzw. ist die Zahl niedriger geworden",
+                        "anchor": "encounter_count_19",
+                        "active": true,
+                        "textblock": [
+                            "Mit Einführung der Version 1.9 der Corona-Warn-App wird eine neue Version des Exposure Notification Frameworks (ENF) von Apple/Google verwendet, die Version 2.0. Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
+                            "Bisher wurde die in der App angezeigte Anzahl der Begegnungen nicht gefiltert. Das gilt bis zur Version 1.7.1. Das heißt: Auch Begegnungen mit sehr kurze Kontaktdauer (hier genügten wenige Sekunden) wurden gezählt und angezeigt. Aufgrund der hinterlegten Kriterien für die Risikoberechnung wurden diese allerdings nur als Begegnung mit geringem Risiko angezeigt.",
+                            "<b>Vereinfacht ausgedrückt:</b> Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus virologischer Sicht aber nicht relevant und werden von der Corona-Warn-App herausgefiltert.",
+                            "<b>Im Detail:</b>",
+                            "Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen gezählt werden sollen. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
+                            "Um als Begegnung berücksichtigt zu werden, müssen folgende Bedingungen innerhalb eines Zeitfensters von 30 Minuten erfüllt sein:",
+                            "<ul><li>Mindestens 10 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
+                            "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
+                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“.  "
+                        ]
+                    },
+                    {
+                        "title": "Wie erfolgt die Berechnung des Risikos mit der App (Version >=1.9)?",
+                        "anchor": "encounter_19_calc",
+                        "active": true,
+                        "textblock": [
+                            "Mit Einführung der Version 1.9 der App wird die neue Version 2.0 des Exposure Notification Frameworks von Apple/Google verwendet. Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
+                            "Während in der ersten Version 1.0 der Schnittstelle Durchschnittswerte der Dämpfung für alle Begegnungen mit einem anderen Gerät im Laufe des Tages genutzt wurden, erfolgt die Betrachtung in der neuen Version 2.0 nun jeweils für 30-minütige Zeitfenster.",
+                            "Jedes dieser Fenster muss bestimmte Kriterien erfüllen, um berücksichtigt zu werden:",
+                            "<ul><li>Mindestens 10 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
+                            "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
+                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
+                            "Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpung:",
+                            "<ul><li>Zeiten mit einer Dämpfung <55dB werden zu 100 Prozent berechnet</li>",
+                            "<li>Zeiten mit einer Dämpfung >= 55dB und <63dB werden zu 50 Prozent berechnet</li></ul>",
+                            "Basierend auf dem Transmission Risk Level (III bis VII) wird nur ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die gewichtete Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die gewichtete Kontaktzeit ergibt. Anhand dieser gewichteten Zeit wird nun entschieden, um was für eine Begegnung es sich bei diesem Zeitfenster handelt:",
+                            "<ul><li>Gewichtete Kontaktzeit <15 Minuten: Begegnung mit niedrigem Risiko (grün)</li>",
+                            "<li>Gewichtete Kontaktzeit >=15 Minuten: Begegnung mit erhöhtem Risiko (rot)</li></ul>",
+                            "Abschließend werden alle Zeitfenster eines Tages betrachtet (die gewichteten Kontaktzeiten) summiert. Ist deren Summe >= 15 Minuten, wird der Gesamtstatus rot, ansonsten ist dieser grün. Letztlich bedeutet das: Mehrere „grüne“ Begegnungen (Zeitfenster) können in Summe zu einem roten Status führen. Wer noch tiefer in die Materie einsteigen möchte: ",
+                            "Die aktualisierten Diagramme stehen auf Github: <a href='https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation'>https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation</a> zur Verfügung",
+                            "Ein Übersichtsdiagramm zeigt, wie jetzt gefiltert wird: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf'>https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf</a>"
+                        ]
+                    },
+                    {
                         "title": "Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?",
                         "anchor": "encounter_criteria",
                         "active": true,
