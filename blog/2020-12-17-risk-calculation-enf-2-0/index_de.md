@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Bisher hat die Corona-Warn-App eine oder mehrere Begegnungen mit niedrigem Risiko anzeigt. Seit dem Update auf Version 1.9 sind diese verschwunden, beziehungsweise ist die Zahl niedriger geworden. Das liegt daran, dass sich die Berechnung des Risikos unter Version 2 des Exposure Notification Framework (ENF) geändert hat. 
+Bisher hat die Corona-Warn-App eine oder mehrere Begegnungen mit niedrigem Risiko angezeigt. Seit dem Update auf Version 1.9 sind diese verschwunden, beziehungsweise ist die Zahl niedriger geworden. Das liegt daran, dass sich die Berechnung des Risikos unter Version 2 des Exposure Notification Framework (ENF) geändert hat. 
  
 <!-- overview -->
 
