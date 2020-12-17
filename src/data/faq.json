@@ -36,6 +36,14 @@
                 "id": "most_asked",
                 "accordion": [
                     {
+                        "title": "Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901",
+                        "anchor": "access-list",
+                        "active": true,
+                        "textblock": [
+                             "Some firewalls might prevent the CWA from contacting the backend. This might lead to error notifications, including 'CAUSE: 4000, error during web request, HTTP status 901'. In case you make use of a firewall (router or app), make sure to include the following domains in the access-list for web requests as well as for DNS requests:<br/>*.coronawarn.app<br/>*.t-online.de"
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
                         "anchor": "battery_optimization_background",
                         "active": true,
@@ -191,7 +199,12 @@
                         "anchor": "exposure_check",
                         "active": true,
                         "textblock": [
-                            "Your phone settings display the exposure checks for the last 14 days: Apple: 'COVID-19 Exposure Logging', Android: 'Exposure checks'. When the app was running constantly during the last two weeks, you should see at least 14 checks within the last 24 hours.", "Please note: The log is just the history. The exposures of the last 14 days are checked and the risk status calculated each and every day. The important thing is that the exposure logging for within the last 24 hours is shown.","It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:", "<ol><li>The log has a fixed limit of 100 entries on iOS devices. If there are more entries, only the latest are kept. We're in contact with Apple so that the complete log will be displayed. The log limit of 100 entries on Android devices has been recently removed by Google at the end of August 2020.</li><li>Sometimes, only 13 logs display for a day. The 14th entry was deleted only after risk calculation. This can happen when the time of downloading the keys from the server intersects with the time of deleting the keys that are older than 14 days from your phone. The same applies here: the exposure was checked properly. You'll find a detailed explanation and an example at <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639 ' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>If you use the app only recently (let's say for 5 days), fewer checks for the last 24 hours are displayed (here: 5 checks), one for every day that the Corona-Warn-App was running constantly.</li></ol>"
+                            "Your phone settings display the exposure checks for the last 14 days:",
+                            "<ul><li><b>iOS:</b> 'Settings' -> 'Exposure Notifications' -> 'Exposure Logging Status' -> 'Exposure Checks'</li><li><b>Android:</b> 'Settings' -> 'Google' -> 'COVID-19 exposure notifications' -> 'Exposure Checks'</li></ul>",
+                            "When the app was running constantly during the last two weeks, you should see at least one check every day for all of the past 14 days.",
+                            "Please note: The log is just the history. After every background update, the exposures of the last 14 days are checked and the risk status calculated. The important thing is that the exposure log shows at least one check for the last 24 hours.",
+                            "It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:",
+                            "<ol><li>The log has a fixed limit of 100 entries on iOS devices. On Android devices the limit is 300 entries. If there are more entries, only the latest are kept.</li><li>If you use the app only recently (let's say for 5 days), only checks that were made after setting up the app are displayed - at least one for every day that the Corona-Warn-App was running constantly.</li></ol>"
                         ]
                     },
                     {
@@ -230,6 +243,7 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
+                            "<b>UPDATE</b><br/><a href='https://www.coronawarn.app/en/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a><hr/>",
                             "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS [ios.minimum-required-os-version] or higher.",
                             "Google/Android: Corona-Warn-App runs on phones with Android [android.minimum-required-os-version] or higher. Google Play services install the Exposure Notification API automatically.",
                             "For other operating system-related questions, please contact Apple or Google."
@@ -249,6 +263,7 @@
                         "anchor": "ios135",
                         "active": true,
                         "textblock": [
+                            "<b>UPDATE</b><br/><a href='https://www.coronawarn.app/en/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a><hr/>",
                             "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With release 1.5 of the Corona Warn App, iOS 13.6 is now required, as the Exposure Notification API has again been adapted and improved. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
                         ]
                     },
@@ -299,8 +314,8 @@
                             "To view more information in the app, tap",
                             "<ol><li>'EXPOSURE LOGGING ACTIVE/STOPPED'</li><li>Then tap 'Transnational Exposure Logging'.</li><li>Scroll down to the list of countries.</li></ol>",
                             "Below is a list of currently participating countries and details of the responsible health authorities:",
-                            "(Status: 23.11.2020)",
-                            "<table class='table'><thead><tr><th>Country</th><th>Data Controller</th><th>Contact Details</th></tr></thead><tbody><tr><td>Croatia<br/>(from 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td>Czech Republic<br/>(pending)</td><td>Ministry of Health</td><td>Ministry of Health<br>Palackého náměstí 4<br>120 00 Praha 2<br>Czech Republic<br>E-Mail: mzcr@mzcr.cz<br>Phone: +420 224971111</td></tr><tr><td>Denmark<br>(from 6.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 6.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br> Phone: +371 675015 90 or -91</td></tr><tr><td>Netherlands<br>(from 30.11.2020)</td><td>CIBG (Centraal Informatiepunt Beroepen Gezondheidszorg)</td><td>CIBG<br>Postbus 16114<br/>2500 BC<br/> The Hague<br/>Netherlands <br>E-Mail:  CIBG-eHealth-EU@minvws.nl<br> Phone: +31 703405487</td></tr><tr><td>Poland<br>(from 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warsaw<br> Poland <br>E-Mail: protego@mc.gov.pl<br> Phone: +48 223453300</td></tr><tr><td>Spain<br>(from 6.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br> Spain <br>E-Mail: soporte.radarcovid@economia.gob.es<br> Phone: +34 91 258 28 52</td></tr></tbody></table>"
+                            "(Status: 15.12.2020)",
+                            "<table class='table'><thead><tr><th>Country</th><th>Data Controller</th><th>Contact Details</th></tr></thead><tbody><tr><td>Croatia<br/>(from 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td> Cyprus <br/>(from 15.12.2020)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nicosia<br>Cyprus<br>E-Mail: cyjointcontroller@mphs.moh.gov.cy</td></tr><tr><td>Czech Republic<br/>(pending)</td><td>Ministry of Health</td><td>Ministry of Health<br>Palackého náměstí 4<br>120 00 Praha 2<br>Czech Republic<br>E-Mail: mzcr@mzcr.cz<br>Phone: +420 224971111</td></tr><tr><td>Denmark<br>(from 6.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 6.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br> Phone: +371 675015 90 or -91</td></tr><tr><td>Netherlands<br>(from 30.11.2020)</td><td>Minister of Health, Welfare and Sports</td><td>Minister of Health, Welfare and Sports<br>Postbus 16114<br/>2500 BC<br/> The Hague<br/>Netherlands <br>E-Mail: CIBG-eHealth-EU@minvws.nl or FG-VWS@minvws.nl<br> Phone: +31 703405487 </td></tr><tr><td>Poland<br>(from 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warsaw<br> Poland <br>E-Mail: protego@mc.gov.pl<br> Phone: +48 223453300</td></tr><tr><td>Spain<br>(from 6.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br> Spain <br>E-Mail: soporte.radarcovid@economia.gob.es<br> Phone: +34 91 258 28 52</td></tr></tbody></table>"
                         ]
                     },
                     {
@@ -427,6 +442,17 @@
                         ]
                     },
                     {
+                        "title": "What do I have to consider when switching to a new device?",
+                        "anchor": "new_device",
+                        "active": true,
+                        "textblock": [
+                            "A backup of the old random IDs is unfortunately not possible, because the Exposure Notification API of Apple/Google does not allow the export of this data. To still be informed about possible risk encounters, we recommend that you keep a close view of the risk status on the old device for at least 14 days after you install the Corona Alert app on the new device. Please note the following instructions:",
+                            "<ul><li>Your old device must be able to perform regular checks for possible encounters. Therefore, leave the device permanently turned on and permanently connected to the Internet.</li><li>Keep the old device in a stationary location, e.g., in a specific place in your apartment. If possible, place the device in listening or visual range so that you are alerted early by a notification of the app.</li><li>Actively access the Corona-Warn-App on the old device at least once a day and check your risk status there.</li></ul>",
+                            "If you are tested for COVID-19 during these 14 days, enter the QR code on your new device. If the test result is positive, you should share the test result on both devices. For sharing a test result on multiple devices, please note <a href='#test_multiple_devices' target='_blank' rel='noopener noreferrer'> this </a> FAQ entry.",
+                            "After 14 days, your old device will no longer contain any relevant entries for risk assessment. You don't need to pay any further attention to the risk status on this device and can remove the Corona-Warn-App there."
+                        ]
+                    },
+                    {
                         "title": "Are the exposure logs/random IDs removed from my phone when I uninstall the app?",
                         "anchor": "delete_random_ids",
                         "active": true,
@@ -527,6 +553,59 @@
                         "active": true,
                         "textblock": [
                             "Google publishes the infrastructure for the COVID-19 Exposure Notifications with Google Play, that is, independently of the Android operating system. The <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>version 1.5</a> release brought some improvements and bug fixes.","To check which ENS version is installed on your phone:","<ol><li>In the Settings, go to 'Google > COVID-19 exposure notifications'</li><li>Scroll down the 'COVID-19 notifications' page. At the very bottom, the version is displayed in one of the following formats:<ul><li>YYWWxxxxx, where YY is the year (for example, 20) and WW is the week. If you see the version number in this format, your phone is not yet using version 1.5.</li><li>VVYYWWxxxxx, where VV is the version of the infrastructure for COVID-19 exposure notifications (for example, 15), YY is the year and WW is the week number. If this format is displayed, the device already uses version 1.5.</li></ul></li></ol>", "Google provides general and release information about the COVID-19 exposure notifications, see:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Risk Assessment",
+                "id": "risk_assessment",
+                "accordion": [
+                    {
+                        "title": "By which criteria are encounters evaluated and how do the recommendations for action differ?",
+                        "anchor": "encounter_criteria",
+                        "active": true,
+                        "textblock": [
+                            "The calculation of your individual risk is based on the following factors:",
+                            "<ol><li> Duration of the encounter </li><li> Distance at the time of the encounter </li><li> Time that has elapsed since the encounter </li><li>Infectiousness (derived from information on when and whether symptoms occur).</li></ol>",
+                            "If the calculated risk exceeds a certain <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>threshold</a> specified by the Robert Koch Institute, users will receive a notification regarding an increased risk.",
+                            "The Corona Warn App has three different status indicators that indicate this risk: \"unknown risk\" (grey), \"low risk\" (green) and \"increased risk\" (red).",
+                            "With the status display \"unknown risk\", the risk determination has not been active long enough to perform a risk determination.",
+                            "If you see high-risk or low-risk encounters on your smartphone, it means that your smartphone and that of a person who later reported themselves as infected in the app have exchanged diagnostic keys via Bluetooth in the past 14 days. Based on the above mentioned criteria, this encounter is then classified as having an increased or low risk of infection.",
+                            "If the app shows a \"low risk\" (green), the relevant threshold values have not been exceeded. Nevertheless, the app also informs you that your smartphone has recorded one or more encounters with (later positively tested) persons in the past 14 days and also shows on how many days this was the case. As of version 1.9.1 of the app, users will see the number of days on which risk encounters have taken place, rather than the number of encounters. In addition, the following note is displayed: \"A low risk exists in particular if your encounter was limited to a short period of time or a longer distance. You do not need to worry, and there is no particular need for action.\"",
+                            "If you get a \"increased risk\" (red), you should stay at home and reduce your direct contacts. Contact your general practitioner, the medical on-call service at 116117 or the health department to discuss how to proceed. The decision whether a so-called PCR test is performed is ultimately up to your doctor. However, both the <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> and the <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Federal Ministry of Health</a> have published corresponding guidelines and recommendations. As of version 1.9.1, the app also shows the last time (within the last 14 days) an encounter with increased risk took place. You can now see an exact date to better track your contacts or behaviour on that specific day."
+                        ]
+                    },
+                    {
+                        "title": "I received the message that I had a low risk encounter. The next day it was gone again. Shouldn't this be deleted after 14 days?",
+                        "anchor": "encounter_deletion",
+                        "active": true,
+                        "textblock": [
+                            "As soon as the app downloads the current diagnostic keys (positive IDs) from the server, a check of the contact log is performed. For each of the last 14 days for which diagnostic keys are available, a separate contact log check is performed. This means that the app compares the encounters of the last 14 days with the positive IDs to check whether there has been a contact with a person who tested positive. If the message about a low-risk encounter disappears after one day, this means that the corresponding encounter was more than 14 days ago in this case."
+                        ]
+                    },
+                    {
+                        "title": "I got the message in the app that I had two low risk encounters. But the status indicator remained green. Should I be worried?",
+                        "anchor": "low_risk_green",
+                        "active": true,
+                        "textblock": [
+                            "No, because based on the data of the risk assessment, the risk of infection is considered low because the encounter was limited to a short period of time and/or a longer distance. You do not need to worry and there is no particular need for action. It is recommended to follow the generally applicable rules of distance and hygiene. You do not need to get yourself tested after low risk encounters. Users can find the suggested behavior as well as information about the time of detection and the risk of infection in the app itself when they tap on \"Low risk\" with their finger."
+                        ]
+                    },
+                    {
+                        "title": "Are risk encounters with the same person counted several times a day?",
+                        "anchor": "encounter_same_person",
+                        "active": true,
+                        "textblock": [
+                            "No, because version 2 of the Exposure Notification Framework (ENF) changes the way the risk is determined. Users will be able to see the number of days that risk encounters have occurred, rather than the number of encounters."
+                        ]
+                    },
+                    {
+                        "title": "Is an encounter on different days with one and the same person counted several times?",
+                        "anchor": "count_per_day",
+                        "active": true,
+                        "textblock": [
+                            "Yes, that's right. Version 2 of the Exposure Notification Framework (ENF), the interface for Corona apps from Apple and Google, counts the days on which risk encounters have occurred. In other words, a person encountered yesterday and today is counted as \"risk encounters on two days.\" A day is defined here as midnight \"UTC\" to midnight \"UTC\" of the following day."
                         ]
                     }
                 ]

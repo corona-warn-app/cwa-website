@@ -36,6 +36,14 @@
                 "id": "most_asked",
                 "accordion": [
                     {
+                        "title": "Firewall/Router Konfiguration: URSACHE: 4000, error during web request, HTTP status 901",
+                        "anchor": "access-list",
+                        "active": true,
+                        "textblock": [
+                             "Einige Firewalls verhindern möglicherweise den Zugriff der CWA auf das Backend. Das kann in einigen Fällen zu einer Fehlermeldung führen, unter anderem 'URSACHE: 4000, error during web request, HTTP status 901'. Sollten sie eine Firewall benutzen (Router oder App), vergewissern sie sich, dass die folgenden Domains in der Access-Liste für Web- und den DNS-Requests berücksichtigt sind:<br/>*.coronawarn.app<br/>*.t-online.de"
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Batterieoptimierung wird nicht automatisch abgeschaltet nachdem die priorisierte Hintergrundaktivität aktiviert wurde",
                         "anchor": "battery_optimization_background",
                         "active": true,
@@ -199,7 +207,12 @@
                         "anchor": "exposure_check",
                         "active": true,
                         "textblock": [
-                            "Die Einstellungen Ihres Smartphones zeigen die Begegnungsüberprüfungen der letzten 14 Tage an: Apple: 'Begegnungsüberprüfungen', Android: 'Überprüfung auf mögliche Begegnungen'. Wenn die App in den letzten 2 Wochen dauerhaft aktiv war, sollten Sie mindestens 14 Überprüfungen in den letzten 24 Stunden sehen.","Bitte beachten Sie: Diese Übersicht zeigt nur die Historie an. Jeden Tag werden die Begegnungen der letzten 14 Tage geprüft und das Risiko daraus ermittelt. Wichtig ist also, dass die Übersicht Begegnungsüberprüfungen während der letzten 24 Stunden anzeigt.","Es kann vorkommen, dass hier Einträge für weniger als 14 Tage angezeigt werden, obwohl die Risiko-Ermittlung an jedem der letzten 14 Tagen korrekt durchgeführt wurde. Dafür gibt es mehrere Gründe:","<ol><li>Diese Übersicht hat ein festes Limit von 100 Einträgen auf iOS Geräten. Wird dieses Limit überschritten, werden nur die neuesten Einträge behalten. Sie sehen dann typischerweise die Einträge von 7 Tagen. Wir sind mit Apple in Kontakt, damit die Übersicht in Zukunft vollständig angezeigt wird. Die Protokollgrenze von 100 Einträgen auf Android-Geräten wurde kürzlich von Google Ende August 2020 entfernt.</li><li>Manchmal werden nur 13 Einträge für einen Kalendertag angezeigt. Der 14. Eintrag wurde nach der Überprüfung gelöscht. Das kann passieren, wenn sich der Zeitpunkt des Herunterladens der Schlüssel vom Server und der Zeitpunkt des Löschen von Schlüsseln auf Ihrem Smartphone, die älter als 14 Tage sind, überschneiden. Auch hier gilt, die Risiko-Ermittlung hat funktioniert. Eine ausführliche Erklärung mit Beispiel finden Sie (auf Englisch) unter <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/921#issuecomment-664301639</a>.</li><li>Wenn Sie die App erst seit Kurzem nutzen (zum Beispiel seit 5 Tagen), werden entsprechend weniger Überprüfungen in den letzten 24 Stunden (hier 5 Überprüfungen) angezeigt, eine für jeden Tag, an dem die Corona-Warn-App lief.</li></ol>"
+                            "Die Einstellungen Ihres Smartphones zeigen die Begegnungsüberprüfungen der letzten 14 Tage an:",
+                            "<ul><li><b>iOS:</b> 'Einstellungen' -> 'Begegnungsmitteilungen' -> 'Status von Begegnungsaufzeichnungen' -> 'Begegnungsüberprüfungen'</li><li><b>Android:</b> 'Einstellungen' -> 'Google' -> 'COVID-19-Benachrichtigungen' -> 'Überprüfung auf mögliche Begegnungen'</li></ul>",
+                            "Wenn die App in den letzten 2 Wochen dauerhaft aktiv war, sollten Sie mindestens eine Überprüfung für jeden der letzten 14 Tage sehen.",
+                            "Bitte beachten Sie: Diese Übersicht zeigt nur die Historie an. Nach jeder Hintergrundaktualisierung werden die Begegnungen der letzten 14 Tage geprüft und das Risiko daraus ermittelt. Wichtig ist also, dass die Übersicht mindestens eine Begegnungsüberprüfung während der letzten 24 Stunden anzeigt.",
+                            "Es kann vorkommen, dass hier Einträge für weniger als 14 Tage angezeigt werden, obwohl die Risiko-Ermittlung an jedem der letzten 14 Tagen korrekt durchgeführt wurde. Dafür gibt es mehrere Gründe:",
+                            "<ol><li>Diese Übersicht hat ein festes Limit von 100 Einträgen auf iOS Geräten. Auf Android-Geräten beträgt das Limit 300 Einträge. Wird dieses Limit überschritten, werden nur die neuesten Einträge behalten. </li><li>Wenn Sie die App erst seit Kurzem nutzen (zum Beispiel seit 5 Tagen), werden entsprechend nur Überprüfungen nach der Installation der App angezeigt - mindestens eine für jeden Tag, an dem die Corona-Warn-App lief.</li></ol>"
                         ]
                     },
                     {
@@ -239,6 +252,7 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
+                            "<b>AKTUELL</b><br/><a href='https://www.coronawarn.app/de/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen.</a><hr/>",
                             "[Apple/iOS]: Die App läuft auf iOS-Smartphones ab dem iPhone 6s. Die Version des Betriebssystems muss iOS [ios.minimum-required-os-version] oder höher sein, da mit dieser Version die Exposure Notification API eingeführt wurde.",
                             "[Google/Android]: Die App läuft auf Smartphones ab Android [android.minimum-required-os-version]. Die Exposure Notification API wurde hier bereits über die Google-Play-Dienste eingespielt.",
                             "Weitere Fragen zu den Betriebssystemen können nur die Hersteller selbst beantworten."
@@ -258,6 +272,7 @@
                         "anchor": "ios135",
                         "active": true,
                         "textblock": [
+                            "<b>AKTUELL</b><br/><a href='https://www.coronawarn.app/de/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen.</a><hr/>",
                             "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Mit dem Release 1.5 der Corona-Warn-App wird nun iOS 13.6 vorausgesetzt, da die Exposure Notification API nochmal angepasst und verbessert wurde. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                         ]
                     },
@@ -308,8 +323,8 @@
                             "Um weitere Informationen in der App zu sehen, klicken Sie",
                             "<ol><li>'RISIKO-ERMITTLUNG AKTIV (bzw. GESTOPPT) an'</li><li>Dann auf 'Länderübergreifende Risiko Ermittlung' klicken.</li><li>Scrollen Sie nach unten zu der Liste der Länder.</li></ol>",
                             "Nachstehend finden Sie eine Liste der derzeit teilnehmenden Länder und Angaben zu den zuständigen Gesundheitsbehörden:",
-                            "(Stand: 23.11.2020)",
-                            "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Dänemark<br>(ab 6.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Telefon: +45 72286600</td></tr><tr><td>Deutschland<br>(ab 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Telefon: +49 30187540</td></tr><tr><td>Irland<br>(ab 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Telefon: +353 87 688 3565</td></tr><tr><td>Italien<br>(ab 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Telefon: +39 65994694546</td></tr><tr><td>Kroatien<br/>(ab 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Telefon: + 385 14609000</td></tr><tr><td>Lettland<br>(ab 6.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Lettland<br>E-Mail: pasts@spkc.gov.lv<br>Telefon:  +371 675015 90 oder -91</td></tr><tr><td>Niederlande<br>(ab 30.11.2020)</td><td>CIBG (Centraal Informatiepunt Beroepen Gezondheidszorg)</td><td>CIBG<br>Postbus 16114<br/>2500 BC<br/> Den Haag<br/> Niederlande <br>E-Mail:  CIBG-eHealth-EU@minvws.nl<br> Telefon: +31 703405487</td></tr><tr><td>Polen<br>(ab 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warschau<br> Polen <br>E-Mail: protego@mc.gov.pl<br> Telefon: +48 223453300</td></tr><tr><td>Spanien<br>(ab 6.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br>Spanien<br>E-Mail: soporte.radarcovid@economia.gob.es<br>Telefon: + 34 91 258 28 52</td></tr><tr><td>Tschechien<br/>(bevorstehend)</td><td>Ministry of Health</td><td>Ministry of Health<br>Palackého náměstí 4<br>120 00 Praha 2<br>Czech Republic<br>E-Mail: mzcr@mzcr.cz<br>Telefon: +420 224971111</td></tr></tbody></table>"
+                            "(Stand: 15.12.2020)",
+                            "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Dänemark<br>(ab 6.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Telefon: +45 72286600</td></tr><tr><td>Deutschland<br>(ab 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Telefon: +49 30187540</td></tr><tr><td>Irland<br>(ab 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Telefon: +353 87 688 3565</td></tr><tr><td>Italien<br>(ab 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Telefon: +39 65994694546</td></tr><tr><td>Kroatien<br/>(ab 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Telefon: + 385 14609000</td></tr><tr><td>Lettland<br>(ab 6.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Lettland<br>E-Mail: pasts@spkc.gov.lv<br>Telefon:  +371 675015 90 oder -91</td></tr><tr><td>Niederlande<br>(ab 30.11.2020)</td><td> Minister of Health, Welfare and Sports </td><td> Minister of Health, Welfare and Sports <br>Postbus 16114<br/>2500 BC<br/> Den Haag<br/> Niederlande <br>E-Mail: CIBG-eHealth-EU@minvws.nl oder FG-VWS@minvws.nl<br> Telefon: +31 703405487</td></tr><tr><td>Polen<br>(ab 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warschau<br> Polen <br>E-Mail: protego@mc.gov.pl<br> Telefon: +48 223453300</td></tr><tr><td>Spanien<br>(ab 6.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br>Spanien<br>E-Mail: soporte.radarcovid@economia.gob.es<br>Telefon: + 34 91 258 28 52</td></tr><tr><td>Tschechien<br/>(bevorstehend)</td><td>Ministry of Health</td><td>Ministry of Health<br>Palackého náměstí 4<br>120 00 Praha 2<br>Czech Republic<br>E-Mail: mzcr@mzcr.cz<br>Telefon: +420 224971111</td></tr><tr><td>Zypern<br/>(ab 15.12.2020)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nikosia<br> Zypern <br>E-Mail: cyjointcontroller@mphs.moh.gov.cy</td></tr></tbody></table>"
                         ]
                     },
                     {
@@ -436,6 +451,17 @@
                         ]
                     },
                     {
+                        "title": "Was muss ich beim Wechsel auf ein neues Gerät beachten?",
+                        "anchor": "new_device",
+                        "active": true,
+                        "textblock": [
+                            "Ein Backup der alten Zufalls-IDs ist leider nicht möglich, da die Exposure Notification API von Apple/Google keinen Export dieser Daten erlaubt. Damit Sie trotzdem über mögliche Risikobegegnungen informiert werden, empfehlen wir Ihnen, den Risikostatus auf dem alten Gerät noch mindestens 14 Tage zu beobachten, nachdem Sie die Corona-Warn-App auf dem neuen Gerät installiert haben. Beachten Sie dazu folgende Hinweise:",
+                            "<ul><li>Ihr altes Gerät muss in der Lage sein, regelmäßige Überprüfungen auf mögliche Begegnungen durchzuführen. Lassen Sie das Gerät daher permanent eingeschaltet und dauerhaft mit dem Internet verbunden.</li><li>Bewahren Sie das alte Gerät an einem stationären Ort auf, z.B. an einem bestimmten Platz in Ihrer Wohnung. Falls möglich, platzieren Sie das Gerät in Hör- oder Sichtweite, sodass Sie bei einer Benachrichtigung der App frühzeitig gewarnt werden.</li><li>Rufen Sie die Corona-Warn-App auf dem alten Gerät mindestens einmal täglich aktiv auf und überprüfen Sie dort Ihren Risikostatus.</li></ul>",
+                            "Falls Sie innerhalb der 14 Tage auf COVID-19 getestet wurden, tragen Sie den QR-Code auf Ihrem neuen Gerät ein. Ist das Testergebnis positiv, sollten Sie das Testergebnis auf beiden Geräten teilen. Für das Teilen eines Testergebnisses auf mehreren Geräten beachten Sie bitte <a href='#test_multiple_devices' target='_blank' rel='noopener noreferrer'>diesen</a> FAQ Eintrag.",
+                            "Nach 14 Tagen enthält Ihr altes Gerät keine relevanten Einträge für die Risiko-Ermittlung mehr. Sie brauchen den Risikostatus auf diesem Gerät dann nicht weiter zu beachten und können die Corona-Warn-App dort entfernen."
+                        ]
+                    },
+                    {
                         "title": "Werden die gesammelten Zufalls-IDs beim Deinstallieren der App entfernt?",
                         "anchor": "delete_random_ids",
                         "active": true,
@@ -536,6 +562,59 @@
                         "active": true,
                         "textblock": [
                             "Google veröffentlicht die Infrastruktur für die COVID-19-Begegnungsaufzeichnungen, das Exposure Notification System (ENS), über Google Play, und damit unabhängig vom Android-Betriebssystem. Die <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENS-Version 1.5</a> brachte einige Verbesserungen und Fehlerkorrekturen.","So sehen Sie, welche Version Ihr Smartphone installiert hat:","<ol><li>Wählen Sie in den Einstellungen 'Google > Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, verwendet das Smartphone noch nicht die Version 1.5.</li><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen (zum Beispiel '15'), YY für die Jahreszahl und WW für die Wochenzahl. Wenn Sie dieses Format sehen, verwendet das Smartphone schon die Version 1.5.</li></ul></li></ol>", "Allgemeines und Release-Informationen zu den COVID-19-Benachrichtigungen finden Sie bei Google:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Risiko-Ermittlung",
+                "id": "risk_assessment",
+                "accordion": [
+                    {
+                        "title": "Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?",
+                        "anchor": "encounter_criteria",
+                        "active": true,
+                        "textblock": [
+                            "Die Berechnung Ihres individuellen Infektionsrisikos basiert auf folgenden Faktoren:",
+                            "<ol><li> Dauer der Begegnung </li><li> Abstand bei der Begegnung </li><li> Zeit, die seit der Begegnung vergangen ist</li><li> Infektiosität (abgeleitet aus der Information, wann und ob die Symptome eingesetzt haben) </li></ol>",
+                            "Überschreitet der daraus ermittelte Risikowert eine <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>Schwelle</a>, die das Robert Koch-Institut vorgibt, erhalten die Benutzer eine Benachrichtigung über ein erhöhtes Infektionsrisiko.",
+                            "Die Corona-Warn-App hat drei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen: \"unbekanntes Risiko\" (grau), \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
+                            "Bei der Statusanzeige \"unbekanntes Risiko\" ist die Risiko-Ermittlung noch nicht lange genug aktiv, um eine Risikoermittlung vorzunehmen.",
+                            "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis der oben genannten Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
+                            "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, an wie vielen Tagen dies der Fall war. Ab der Version 1.9.1 der App sehen die Nutzer somit die Anzahl an Tagen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen. Zusätzlich wird folgender Hinweis angezeigt: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
+                            "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem ärztlichen Bereitschaftsdienst unter 116117 oder dem Gesundheitsamt in Verbindung, um das weitere Vorgehen abzustimmen. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Sowohl das <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> als auch das <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> haben jedoch entsprechende Orientierungshilfen bzw. Empfehlungen veröffentlicht. Die App zeigt ab Version 1.9.1 zudem an, an welchen Tag (innerhalb der letzten 14 Tage) letztmalig eine Begegnung mit erhöhtem Risiko stattgefunden hat. Hier sehen Sie nun ein genaues Datum, um Ihre Kontakte bzw. Ihr Verhalten an diesem Tag besser nachvollziehen zu können."
+                        ]
+                    },
+                    {
+                        "title": "Ich habe die Meldung bekommen, dass ich eine niedrige Risikobegegnung hatte. Am nächsten Tag war sie wieder weg. Sollte das nicht erst nach 14 Tagen gelöscht werden?",
+                        "anchor": "encounter_deletion",
+                        "active": true,
+                        "textblock": [
+                            "Sobald die App die aktuellen Diagnoseschlüssel (Positivkennungen) vom Server lädt, wird eine Überprüfung des Kontaktprotokolls durchgeführt. Dabei wird für jeden der letzten 14 Tage, für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung des Kontaktprotokolls durchgeführt. Das bedeutet also, die App gleicht die Begegnungen der letzten 14 Tage mit den Positivkennungen ab, um zu überprüfen, ob es zu einem Kontakt mit einer positiv getesteten Person gekommen ist. Ist die Meldung über eine Begegnung mit niedrigem Risiko nach einem Tag verschwunden, bedeutet das, dass die entsprechende Begegnung in diesem Fall länger als 14 Tage zurückliegt."
+                        ]
+                    },
+                    {
+                        "title": "Ich habe in der App die Meldung bekommen, dass ich zwei Begegnungen mit niedrigem Risiko hatte. Die Statusanzeige ist aber grün geblieben. Muss ich mir Sorgen machen?",
+                        "anchor": "low_risk_green",
+                        "active": true,
+                        "textblock": [
+                            "Nein, denn auf Grundlage der Daten der Risiko-Ermittlung wird das Infektionsrisiko als niedrig eingestuft, da sich die Begegnung auf einen kurzen Zeitraum und/oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen und es besteht kein besonderer Handlungsbedarf. Es wird empfohlen, sich an die allgemein geltenden Abstands- und Hygieneregeln zu halten. Sie müssen sich bei Begegnungen mit niedrigem Risiko nicht testen lassen. Die Verhaltensvorschläge sowie Infos zum Ermittlungszeitraum als auch zum Infektionsrisiko finden Nutzer*innen in der App selbst, wenn sie auf „Niedriges Risiko“ mit dem Finger tippen."
+                        ]
+                    },
+                    {
+                        "title": "Werden Risikobegegnungen mit der gleichen Person mehrfach am Tag gezählt?",
+                        "anchor": "encounter_same_person",
+                        "active": true,
+                        "textblock": [
+                            "Nein, denn mit Version 2 des Exposure Notification Frameworks (ENF) ändert sich die Art und Weise der Risikoermittlung. Nutzer*innen können damit die Anzahl an Tagen sehen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen."
+                        ]
+                    },
+                    {
+                        "title": "Wird eine Begegnung an verschiedenen Tagen mit ein und derselben Person mehrfach gezählt?",
+                        "anchor": "count_per_day",
+                        "active": true,
+                        "textblock": [
+                            "Ja, das ist richtig. Mit Version 2 des Exposure Notification Frameworks (ENF), der Schnittstelle für Corona-Apps von Apple und Google, werden die Tage gezählt, an denen Risikobegegnungen stattgefunden haben. Das heißt: eine Person, der man gestern und heute begegnet ist, wird als „Risikobegegnungen an zwei Tagen“ gezählt. Ein Tag ist hierbei als Mitternacht „UTC“ bis Mitternacht „UTC“ des Folgetages definiert."
                         ]
                     }
                 ]
