@@ -47,7 +47,7 @@ Letztlich bedeutet das: Mehrere „grüne“ Begegnungen (Zeitfenster) können i
 
 Wer noch tiefer in die Materie einsteigen möchte:
 
-- Es stehen die aktualisierten Diagramme auf Github: https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation
+- Die aktualisierten Diagramme stehen auf Github zur Verfügung: https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation
 
-- Ein Übersichtsdiagramm zeigt, wie jetzt gefiltert wird: https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf
+- Ein Übersichtsdiagramm zeigt, wie jetzt gefiltert wird: https://github.com/corona-warn-app/cwa documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf
 
