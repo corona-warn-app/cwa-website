@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Previously, the Corona-Warn-App displayed one or more low risk encounters. Since the update, these have disappeared or rather the number decreased, because the risk calculation changed under Version 2 of the Exposure Notification Framework (ENF)
+Previously, the Corona-Warn-App displayed one or more low risk encounters. Since the update, these have disappeared or rather the number decreased, because the risk calculation improved significantly under Version 2 of the Exposure Notification Framework (ENF). With the interface's new version, it is now possible to control more precisely which encounters should be counted.
  
 <!-- overview -->
 
@@ -21,8 +21,6 @@ Previously, the number of non-critical encounters displayed in the app could not
 
 
 ## Risk calculation under ENF 2.0 
-
-**In detail** that means:  With the interface's new version, it is now possible to control more precisely which encounters should be counted.
 
 While the interface's first version 1.0 used average attenuation values for all encounters with another device during the course of the day, the new version 2.0 now considers 30-minute time windows.
 
