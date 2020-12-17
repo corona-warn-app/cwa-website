@@ -31,7 +31,7 @@ Um als Begegnung berücksichtigt zu werden, müssen folgende Bedingungen innerha
  
 Sind diese Kriterien **nicht** erfüllt, erfolgt **keine** Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.
  
-Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpung:
+Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpfung:
 - Zeiten mit einer Dämpfung <55dB werden zu 100 Prozent berechnet
 - Zeiten mit einer Dämpfung >= 55dB und <63dB werden zu 50 Prozent berechnet
  
