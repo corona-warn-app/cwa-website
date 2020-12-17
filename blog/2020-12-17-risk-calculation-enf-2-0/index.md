@@ -17,7 +17,7 @@ With the introduction of Corona-Warn-App version 1.9, a new version of the Expos
  
 Previously, the number of encounters displayed in the app have not been filtered. Up to version 1.7.1, encounters with very short contact durations (a few seconds were sufficient) were also counted and displayed in the app. However, due to the stored criteria for the risk calculation, these were only displayed as low-risk encounters.
 
-**In simplified terms**: Under Exposure Notification Version 2.0, the operating system also logs encounters with a risk lower than "low risk" (green). However, since these encounters are not relevant from a virological perspective, the Corona-Warn-App filters them out.
+**In simplified terms**: Under Exposure Notification Version 2.0, the operating system also logs encounters with a risk lower than "low risk" (green). However, since these encounters are not relevant from a epidemiological perspective, the Corona-Warn-App filters them out.
 
 
 ## Risk calculation under ENF 2.0 
