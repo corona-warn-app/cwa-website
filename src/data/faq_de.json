@@ -195,6 +195,19 @@
                 "id": "notification",
                 "accordion": [
                     {
+                       "title": "[Apple/iOS]: ENErrorDomain-Fehler 13",
+                       "anchor": "ENError13",
+                       "active": true,
+                       "textblock": [
+                           "<b>AKTUELL</b> 18.12.2020:  <br/>Wenn Sie auf die Corona-Warn-App Version 1.9.1. aktualisiert haben, kann bei einigen Benutzern folgende Fehlermeldung erscheinen:",
+                           "<ul><li>Deutsche Fehlermeldung: \"Fehler 13: Ihre Risiko-Ermittlung für den heutigen Tag wurde bereits durchgeführt. Bitte versuchen Sie es in 24 Stunden erneut.\"</li><li>Englische Fehlermeldung: \"Error 13: Your exposure logging for today has already been carried out. Please try again in 24 hours.\"</li></ul>",
+                           "Die Corona-Warn-App funktioniert trotz dieser Meldung korrekt. Sollten in diesem Zusammenhang noch weitere Probleme auftreten, können sie hier Ihr Problem detailliert schildern: <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1715' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-ios#1715</a>",
+                           "<hr/>VERALTETE INFORMATIONEN: <br/>",
+                           "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben.",
+                           "Der Fehler ENErrorDomain 13 kommt aus dem Exposure Notification System, das von Apple bereitgestellt und von der App genutzt wird. Es handelt sich dabei um eine Information, dass an diesem Tag bereits eine Risikoanalyse durchgeführt worden ist. Bitte starten Sie Ihr iPhone neu, und lassen die Corona-Warn-App für 24 Stunden geschlossen, dann wird erneut eine Risikoanalyse durchgeführt und dieser Fehler sollte nicht mehr angezeigt werden. Bitte deinstallieren Sie die Corona-Warn-App nicht, sie funktioniert weiterhin."
+                        ]
+                    },
+                    {
                         "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",
                         "active": true,
@@ -1115,15 +1128,6 @@
                         "textblock": [
                             "AKTUELL: Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an.",
                             "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification System, das von Apple bereitgestellt und von der App genutzt wird."
-                        ]
-                    },
-                    {
-                       "title": "[Apple/iOS]: ENErrorDomain-Fehler 13",
-                       "anchor": "ENError13",
-                       "active": true,
-                       "textblock": [
-                           "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben.",
-                           "Der Fehler ENErrorDomain 13 kommt aus dem Exposure Notification System, das von Apple bereitgestellt und von der App genutzt wird. Es handelt sich dabei um eine Information, dass an diesem Tag bereits eine Risikoanalyse durchgeführt worden ist. Bitte starten Sie Ihr iPhone neu, und lassen die Corona-Warn-App für 24 Stunden geschlossen, dann wird erneut eine Risikoanalyse durchgeführt und dieser Fehler sollte nicht mehr angezeigt werden. Bitte deinstallieren Sie die Corona-Warn-App nicht, sie funktioniert weiterhin."
                         ]
                     },
                     {
