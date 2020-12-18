@@ -195,6 +195,19 @@
                 "id": "notification",
                 "accordion": [
                     {
+                        "title": "[Apple/iOS]: ENErrorDomain-Error 13",
+                        "anchor": "ENError13",
+                        "active": true,
+                        "textblock": [
+                           "<b>UPDATE</b> 18.12.2020: <br/>If you updated to Corona-Warn-App version 1.9.1., some users may receive the following error message:",
+                           "<ul><li>German error message: \"Error 13: Your risk determination for today has already been performed. Please try again in 24 hours.\"</li><li>English error message: \"Error 13: Your exposure to today has already been carried out. Please try again in 24 hours.\"</li></ul>",
+                           "The Corona-Warn-App is functioning correctly despite this message. If you have any other problems in this context, you can describe your problem in detail here: <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1715' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-ios-1715</a>",
+                           "<hr/>OUTDATED INFORMATION: <br/>",
+                           "UPDATE: After you updated to iOS version 13.6., this error is gone.",
+                           "The ENErrorDomain 13 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App.  It is the information that on this day, an exposure check already took place. Please restart your phone and do not open the app for 24 hours. Then, the next exposure identification takes place and this information should no longer be displayed. Please do not remove and reinstall the Corona-Warn-App, as it still works as intended."
+                        ]
+                    },
+                    {
                         "title": "My exposure log shows checks for less than 14 days",
                         "anchor": "exposure_check",
                         "active": true,
@@ -1110,14 +1123,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: ENErrorDomain-Error 13",
-                        "anchor": "ENError13",
-                        "active": true,
-                        "textblock": [
-                           "UPDATE: After you updated to iOS version 13.6., this error is gone.",
-                           "The ENErrorDomain 13 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App.  It is the information that on this day, an exposure check already took place. Please restart your phone and do not open the app for 24 hours. Then, the next exposure identification takes place and this information should no longer be displayed. Please do not remove and reinstall the Corona-Warn-App, as it still works as intended."
-                        ]
-                    },{
                         "title": "[Apple/iOS]: I sometimes get the following notification: 'Exposure Notifications Region Changed. COVID-19 Exposure Notifications may not be supported by \"Corona-Warn\" in this region.'",
                         "anchor": "iphone_region_change",
                         "active": true,
