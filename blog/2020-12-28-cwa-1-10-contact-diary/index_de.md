@@ -11,7 +11,7 @@ Das nächste Update der Corona-Warn-App ist fertig. Nutzer\*innen können es inn
  
 <!-- overview -->
 
-### So funktioniert das Kontakttagebuch
+### So funktioniert das Kontakt-Tagebuch
 
 Der Bildschirm der Corona-Warn-App zeigt nun den neuen Bereich Kontakt-Tagebuch (Bild 1). Mit einem Tippen auf die Schaltfläche *Tagebuch führen* erhalten Nutzer\*innen eine kurze Erklärung der neuen Funktion (Bild 2). Danach kommen sie zu einer Übersicht der zurückliegenden 14 Tage. Sie können dort Begegnungen mit Personen oder besuchte Orte eintragen (Bild 3). 
 
@@ -27,9 +27,9 @@ Dazu klicken Nutzer\*innen auf den entsprechenden Tag in der Liste. Mit den Scha
 
 <br></br>
 
-<center> <img src="./person-hinzufuegen.jpg" title="Kontakt hinzufügen" style="align: center"> </center> <br></br>
+<center> <img src="./person-hinzufuegen.JPG" title="Kontakt hinzufügen" style="align: center"> </center> <br></br>
 
-<center> <img src="./ort-hinzufuegen.jpg" title="Ort hinzufügen" style="align: center"> </center>
+<center> <img src="./ort-hinzufuegen.JPG" title="Ort hinzufügen" style="align: center"> </center>
 
 <br></br>
 
@@ -42,7 +42,7 @@ Die Corona-Warn-App löscht die auf dem Smartphone gespeicherten Angaben automat
 
 <br></br>
 
-<center> <img src="./daten-loeschen.jpg" title="Daten löschen" style="align: center"> </center>
+<center> <img src="./daten-loeschen.JPG" title="Daten löschen" style="align: center"> </center>
 
 <br></br>
 
@@ -54,7 +54,7 @@ Die App exportiert die Kontaktliste im Format RTF (Rich Text Format). RTF ist we
 
 <br></br>
 
-<center> <img src="./kontakt-tagebuch-export.jpg" title="Liste exportieren" style="align: center"> </center>
+<center> <img src="./kontakt-tagebuch-export.JPG" title="Liste exportieren" style="align: center"> </center>
 
 <br></br>
 
@@ -70,7 +70,7 @@ Weitere Hinweise finden sich auch in der **Datenschutzerklärung**, die ebenfall
 
 <br></br>
 
-<center> <img src="./datenschutz-erklaerung.jpg" title="Erklärungen zum Datenschutz" style="align: center"> </center>
+<center> <img src="./datenschutz-erklaerung.JPG" title="Erklärungen zum Datenschutz" style="align: center"> </center>
 
 <br></br>
 
