@@ -30,9 +30,9 @@ In order to add people and locations to the journal, users can click on the corr
 
 <br></br>
 
-<center> <img src="./add-a-person.jpg" title="Adding a person" style="align: center"> </center> <br></br>
+<center> <img src="./add-a-person.JPG" title="Adding a person" style="align: center"> </center> <br></br>
 
-<center> <img src="./add-a-location.jpg" title="Adding a location" style="align: center"> </center>
+<center> <img src="./add-a-location.JPG" title="Adding a location" style="align: center"> </center>
 
 <br></br>
 
@@ -53,7 +53,7 @@ The app exports the contact list in RTF (Rich Text Format) which is widely used.
 
 <br></br>
 
-<center> <img src="./contact-list-export.jpg" title="Data export" style="align: center"> </center>
+<center> <img src="./contact-list-export.JPG" title="Data export" style="align: center"> </center>
 
 <br></br>
 
@@ -71,7 +71,7 @@ Further instructions can be found in the **privacy notice**, which can also be a
 
 <br></br>
 
-<center> <img src="./data-privacy.jpg" title="Explanation about data privacy" style="align: center"> </center>
+<center> <img src="./data-privacy.JPG" title="Explanation about data privacy" style="align: center"> </center>
 
 <br></br>
 
