@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-The next update of the Corona-Warn-App is ready and will be available for download in  the next 48 hours. The most important innovation in version 1.10 of the Corona-Warn-App is a **contact journal**. Users can use the app to voluntarily note the people they’ve met and places they’ve visited. This is important information for the health department and for tracing infection chains. However, it is difficult to recall that information over a time period of two weeks so the Contact Journal serves as a useful memory aid.
+The next update of the Corona-Warn-App is ready and will be available for download in  the next 48 hours. The most important innovation in version 1.10 of the Corona-Warn-App is a **contact journal**. Users can use the app to voluntarily note the people they’ve met and places they’ve visited. This is important information for the health department and for tracing infection chains. However, it is difficult to recall that information over a time period of two weeks so the contact journal serves as a useful memory aid.
  
 <!-- overview -->
 
