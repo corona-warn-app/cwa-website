@@ -104,7 +104,7 @@ For more information about how to contribute, the project structure, as well as 
 | [cwa-server]        | Backend implementation for the Apple/Google exposure notification API.|
 | [cwa-verification-server] | Backend implementation of the verification process.             |
 | [cwa-verification-portal] | The portal to interact with the verification server             |
-| [cwa-verification-iam]    | The identy and access management to interact with the verification server |
+| [cwa-verification-iam]    | The identity and access management to interact with the verification server |
 | [cwa-testresult-server]   | Receives the test results from connected laboratories           |
 
 
