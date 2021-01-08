@@ -272,7 +272,7 @@
                         "active": true,
                         "textblock": [
                             "<b>UPDATE</b><br/><a href='https://www.coronawarn.app/en/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a><hr/>",
-                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. The Exposure Notification API was introduced with iOS 13.5, so your operating system needs to be iOS [ios.minimum-required-os-version] or higher.",
+                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. Although the Exposure Notification API was introduced with iOS 13.5, your operating system needs to be iOS [ios.minimum-required-os-version] or higher, since Corona-Warn-App uses <a href='https://www.coronawarn.app/en/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a> which was introduced with iOS [ios.minimum-required-os-version].",
                             "Google/Android: Corona-Warn-App runs on phones with Android [android.minimum-required-os-version] or higher. Google Play services install the Exposure Notification API automatically.",
                             "For other operating system-related questions, please contact Apple or Google."
                         ]
@@ -292,7 +292,7 @@
                         "active": true,
                         "textblock": [
                             "<b>UPDATE</b><br/><a href='https://www.coronawarn.app/en/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a><hr/>",
-                            "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With release 1.5 of the Corona Warn App, iOS 13.6 is now required, as the Exposure Notification API has again been adapted and improved. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
+                            "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With release 1.9 of the Corona-Warn-App (and the use of <a href='https://www.coronawarn.app/en/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a>), iOS [ios.minimum-required-os-version] is now required, as version 2 of Exposure Notification API has been introduced with this version. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
                         ]
                     },
                     {
