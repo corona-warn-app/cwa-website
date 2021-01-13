@@ -1,6 +1,6 @@
 ---
-page-title: "Corona-Warn-App Problem mit Schluesselabgleich unter Android"
-page-description: "Corona-Warn-App Problem mit Schluesselabgleich unter Android"
+page-title: "Corona-Warn-App Problem mit Schlüsselabgleich unter Android"
+page-description: "Corona-Warn-App Problem mit Schlüsselabgleich unter Android"
 page-name: corona-warn-app-key-matching-issue-on-android-smartphones
 page-name_de: corona-warn-app-key-matching-issue-on-android-smartphones
 author: Hilmar Schepp
