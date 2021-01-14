@@ -65,7 +65,7 @@ Das Teilen von Kontaktlisten ist grundsätzlich sensibel. Nutzer\*innen sind dah
 
 *Private Personen oder Unternehmen dürfen von Ihnen nicht die Weitergabe der von Ihnen erfassten Informationen verlangen. Bitte respektieren Sie, wenn jemand nicht im Kontakt-Tagebuch erfasst werden möchte.*
 
-Weitere Hinweise finden sich auch in der **Datenschutzerklärung**, die ebenfalls über den Menüpunkt Info zugänglich ist. Wichtig sind insbesondere die Punkte 5d und 6e. Bei Punkt 5d heißt es unter anderem: 
+Weitere Hinweise finden sich auch in der **Datenschutzerklärung**, die ebenfalls über den Menüpunkt Info zugänglich ist. Wichtig sind insbesondere die Punkte 5d und 6e. Bei Punkt 5d heißt es unter anderem:
 
 *Die Nutzung des Kontakt-Tagebuchs ist freiwillig. Sie entscheiden selbst über die Speicherung der Einträge im Kontakt-Tagebuch. Sie sind insofern auch selbst für Ihre Einträge verantwortlich. Respektieren Sie daher bitte die Privatsphäre der Personen, die Sie in Ihr Kontakt-Tagebuch aufnehmen. Die Einträge sollen nicht an Dritte und nicht über unsichere Kommunikationskanäle weitergegeben werden. Das zuständige Gesundheitsamt wird Ihnen mitteilen, welche Informationen es für die Kontaktnachverfolgung von Ihnen benötigt und wie Sie diese zur Verfügung stellen können.*
 
