@@ -35,11 +35,10 @@ Dazu klicken Nutzer\*innen auf den entsprechenden Tag in der Liste. Mit den Scha
 
 Praktisch: Wer einen Ort erneut besucht oder eine Person wiederholt trifft, muss das kein zweites Mal eingeben. Beides hält das Kontakt-Tagebuch in einer Liste fest, sodass es sich für einen weiteren Tag bequem von der Liste auswählen lässt.
 
-### Löschen der Daten
+### Löschen und Bearbeiten der Daten
 Die Corona-Warn-App löscht die auf dem Smartphone gespeicherten Angaben automatisch nach 16 Tagen aus Datenschutzgründen und, um Speicherplatz freizugeben. Eine Ansteckungsgefahr besteht allgemein 14 Tage lang. Durch Zeitverschiebungen beispielsweise kann es aber zu Überschreitungen dieser 14 Tage kommen. Daher gewährt die App zwei Tage Puffer, bevor sie die Kontaktinformationen löscht.
 
-**Wichtig:** Kontaktdaten speichert die App grundsätzlich lediglich auf dem Smartphone, nicht aber auf einem Server. Nutzer\*innen können Personen und Orte selbstverständlich jederzeit auch manuell löschen. Sie tippen dazu auf das dafür vorgesehene Symbol (die drei eingekreisten Punkte) am oberen rechten Rand. Dort wählen sie *Personen bearbeiten* beziehungsweise *Orte bearbeiten* aus. Einzelne Personen und Orte lassen sich ebenso löschen wie die gesamte Liste. In diesem Menu können Nutzer\*innen zudem bestehende Personen- sowie Ortseinträge nachträglich ändern: etwa den Vornamen mit einem Nachnamen ergänzen.
-
+**Wichtig:** Kontaktdaten speichert die App grundsätzlich lediglich auf dem Smartphone, nicht aber auf einem Server. Nutzer\*innen können Personen und Orte selbstverständlich jederzeit auch manuell löschen. Sie tippen dazu auf das dafür vorgesehene Symbol (die drei eingekreisten Punkte) am oberen rechten Rand. Dort wählen sie *Personen bearbeiten* beziehungsweise *Orte bearbeiten* aus. Einzelne Personen und Orte lassen sich ebenso löschen wie die gesamte Liste. In diesem Menu können Nutzer\*innen zudem bestehende Personen- sowie Ortseinträge nachträglich ändern, um beispielsweise den Vornamen mit einem Nachnamen zu ergänzen. Nachdem Nutzer\*innen auf die drei eingekreisten Punkte und *Personen bearbeiten* oder *Orte bearbeiten* geklickt haben, können sie durch Tippen auf den Ort oder die Person den entsprechenden Eintrag bearbeiten. 
 <br></br>
 
 <center> <img src="./daten-loeschen.JPG" title="Daten löschen" style="align: center"> </center>
