@@ -11,6 +11,6 @@ Google has released a fix to solve the [key matching issue](https://www.coronawa
  
 <!-- overview -->
 
-Late in the evening on January 12, an issue with the Exposure Notifications System on Android began causing delays in the checking of potential exposures for those with apps installed. We have issued a fix. It may take a few hours for devices to catch up, and in some cases we will work directly with developers to help with recovery. The issue did not cause the loss of any data or potential exposures.“
+"Late in the evening on January 12, an issue with the Exposure Notifications System on Android began causing delays in the checking of potential exposures for those with apps installed. We have issued a fix. It may take a few hours for devices to catch up, and in some cases we will work directly with developers to help with recovery. The issue did not cause the loss of any data or potential exposures."
 
 
