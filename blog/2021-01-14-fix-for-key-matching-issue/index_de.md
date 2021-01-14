@@ -1,6 +1,6 @@
 ---
-page-title: "Problem mit Schlüssesabgleich unter Android behoben"
-page-description: "Problem mit Schlüssesabgleich unter Android behoben"
+page-title: "Problem mit Schlüsselabgleich unter Android behoben"
+page-description: "Problem mit Schlüsselabgleich unter Android behoben"
 page-name: android-key-matching-issue-fixed
 page-name_de: android-key-matching-issue-fixed
 author: Hanna Heine
