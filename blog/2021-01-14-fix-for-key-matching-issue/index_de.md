@@ -11,4 +11,4 @@ Google hat einen Fix herausgegeben, mit dem das [Problem des Schlüsselabgleichs
  
 <!-- overview -->
 
-Am späten Abend des 12. Januar begann ein Problem mit dem Expositions Benachrichtigungssystem auf Android, das zu Verzögerungen bei der Überprüfung potenzieller Expositionen für diejenigen mit installierten Apps führte. Wir haben einen Fix herausgegeben. Es kann ein paar Stunden dauern, bis die Geräte wieder auf dem neuesten Stand sind, und in einigen Fällen werden wir direkt mit den Entwicklern zusammenarbeiten, um bei der Wiederherstellung zu helfen. Das Problem hat weder zum Verlust von Daten noch zu deren Preisgabe geführt.
+"Am späten Abend des 12. Januar begann ein Problem mit dem Expositions Benachrichtigungssystem auf Android, das zu Verzögerungen bei der Überprüfung potenzieller Expositionen für diejenigen mit installierten Apps führte. Wir haben einen Fix herausgegeben. Es kann ein paar Stunden dauern, bis die Geräte wieder auf dem neuesten Stand sind, und in einigen Fällen werden wir direkt mit den Entwicklern zusammenarbeiten, um bei der Wiederherstellung zu helfen. Das Problem hat weder zum Verlust von Daten noch zu deren Preisgabe geführt."
