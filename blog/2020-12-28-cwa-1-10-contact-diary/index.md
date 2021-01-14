@@ -38,11 +38,14 @@ In order to add people and locations to the journal, users can click on the corr
 
 **Useful tip**: If users visit a place or meet a person repeatedly it is not necessary to enter the names and locations a second time. The journal records both the names and locations in a list. With a single tap both names and locations can be selected from the list for another day.
 
-### Deleting data
+### Deleting and editing data
 
 The Corona-Warn-App automatically deletes the information stored on a user’s smartphone after 16 days for privacy reasons and to free storage space. A risk of infection generally exists for 14 days, however, time differences for example, can cause the time period to be exceeded. Therefore, the app grants a two-day buffer before deleting the contact information. 
 
-**Important**: The app only stores contact data on the smartphone, not on a server. Of course, users can also delete people and places manually at any time. To do so, they can tap the button in the upper right corner and select *Edit People* or *Edit Places*. Individual people and places can be deleted as well as the entire list. In this menu, users can also change information about existing person and location entries, such as adding a last name to the first name.
+**Important**: The app only stores contact data on the smartphone, not on a server. Of course, users can also delete people and places manually at any time. To do so, they can tap the button in the upper right corner and select *Edit People* or *Edit Places*. Individual people and places can be deleted as well as the entire list. 
+
+In this menu, users can also change information about existing person and location entries, such as adding a last name to the first name. After they've clicked on the three dots and selected *Edit people* or *Edit places*, they can tap on the place or person they want to edit. 
+
 
 
 ### Exporting data
