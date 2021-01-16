@@ -15,7 +15,7 @@
                 "id": "support",
                 "active": true,
                 "accordion": [
-                   {
+                    {
                         "title": "Wer hilft bei Fragen zur Corona-Warn-App?",
                         "anchor": "who_can_help",
                         "active": true,
@@ -40,7 +40,7 @@
                         "anchor": "access-list",
                         "active": true,
                         "textblock": [
-                             "Einige Firewalls verhindern möglicherweise den Zugriff der CWA auf das Backend. Das kann in einigen Fällen zu einer Fehlermeldung führen, unter anderem 'URSACHE: 4000, error during web request, HTTP status 901'. Sollten sie eine Firewall benutzen (Router oder App), vergewissern sie sich, dass die folgenden Domains in der Access-Liste für Web- und den DNS-Requests berücksichtigt sind:<br/>*.coronawarn.app<br/>*.t-online.de"
+                            "Einige Firewalls verhindern möglicherweise den Zugriff der CWA auf das Backend. Das kann in einigen Fällen zu einer Fehlermeldung führen, unter anderem 'URSACHE: 4000, error during web request, HTTP status 901'. Sollten sie eine Firewall benutzen (Router oder App), vergewissern sie sich, dass die folgenden Domains in der Access-Liste für Web- und den DNS-Requests berücksichtigt sind:<br/>*.coronawarn.app<br/>*.t-online.de"
                         ]
                     },
                     {
@@ -48,7 +48,7 @@
                         "anchor": "battery_optimization_background",
                         "active": true,
                         "textblock": [
-                             "Wenn Sie die priorisierte Hintergrundaktivität auf einigen Android-Geräten einschalten, wird die Batterieoptimierung für die Corona-Warn-App auf Betriebssystemebene nicht ausgeschaltet. Dies ist eine bekannte Einschränkung für eine begrenzte Anzahl von Android-Geräten. Um die Batterieoptimierung entsprechend zu deaktivieren, starten Sie Ihr Gerät neu."
+                            "Wenn Sie die priorisierte Hintergrundaktivität auf einigen Android-Geräten einschalten, wird die Batterieoptimierung für die Corona-Warn-App auf Betriebssystemebene nicht ausgeschaltet. Dies ist eine bekannte Einschränkung für eine begrenzte Anzahl von Android-Geräten. Um die Batterieoptimierung entsprechend zu deaktivieren, starten Sie Ihr Gerät neu."
                         ]
                     },
                     {
@@ -56,12 +56,12 @@
                         "anchor": "no_risk_update_ios14",
                         "active": true,
                         "textblock": [
-                             "Nach dem Update auf iOS 14 melden einige Nutzer, dass die Risikoermittlung deaktiviert wurde und nicht mehr eingeschaltet werden kann.",
-                             "Dieses Problem ist bereits der Entwicklung gemeldet und sie arbeiten an einer Lösung. Um die App bis zur Behebung des Fehlers in vollem Umfang nutzen zu können, gehen Sie bitte wie folgt vor:",
-                             "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
-                             "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
-                             "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
-                             "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
+                            "Nach dem Update auf iOS 14 melden einige Nutzer, dass die Risikoermittlung deaktiviert wurde und nicht mehr eingeschaltet werden kann.",
+                            "Dieses Problem ist bereits der Entwicklung gemeldet und sie arbeiten an einer Lösung. Um die App bis zur Behebung des Fehlers in vollem Umfang nutzen zu können, gehen Sie bitte wie folgt vor:",
+                            "'Einstellungen' > 'WLAN' > 'WLAN' ausschalten.",
+                            "'Einstellungen' > 'Begegnungsmitteilungen' > 'Aktive Region' (Corona-Warn-App) > 'Corona-Warn-App' > 'Begegnungsinformationen teilen' einmal aus- und wieder einschalten.",
+                            "'Einstellungen' > 'WLAN' > 'WLAN' wieder einschalten.",
+                            "Wenn der Fehler weiterhin auftritt, obwohl Sie alle Schritte ausgeführt haben, müssen Sie die Anwendung 1x zurücksetzen und neu installieren. Ihre gesammelten Zufalls-IDs gehen dabei nicht verloren (<a href='#delete_random_ids'>siehe auch hier</a>). Es dauert jedoch 24 Stunden bis die App wieder auf die bisher gesammelten Daten zurückgreift."
                         ]
                     },
                     {
@@ -145,7 +145,7 @@
                 "title": "Hintergrund&shy;aktualisierung",
                 "id": "background_updates",
                 "accordion": [
-                   {
+                    {
                         "title": "[Apple/iOS]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                         "anchor": "no_risk_update_ios",
                         "active": true,
@@ -168,7 +168,7 @@
                         "active": true,
                         "textblock": [
                             "Wenn Sie auf Ihrem Gerät iOS Version 13.6.1 oder höher verwenden, ist die Funktion der Corona-Warn-App im Stromsparmodus nicht beeinträchtigt. Auf Geräten mit einer früheren iOS Version kann es zu Poblemen mit der Hintergrundaktualisierung kommen. <b>Wir bitten Sie daher, die iOS Version Ihres Geräts auf 13.6.1 oder höher zu aktualisieren, falls Sie den Stromsparmodus verwenden wollen.</b>"
-                         ]
+                        ]
                     },
                     {
                         "title": "[Google/Android]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
@@ -193,7 +193,7 @@
                         "textblock": [
                             "Bei Benutzung des Ultra-Energiesparmodus auf Geräten von Samsung kann die Hintergrundaktualisierung trotz <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> fehlschlagen. Grund dafür ist wahrscheinlich, dass der Aktualisierungsprozess aufgrund der stark reduzierten Rechenleistung abgebrochen wird. Der Ultra-Energiesparmodus sollte deshalb in den Einstellungen deaktiviert werden:",
                             "<ol><li>'Einstellungen' -> 'System' -> 'Energiesparmodus'</li><li>Wählen Sie 'Ultra-Energiesparmodus'.</li><li>Öffnen Sie das Menü in der oberen rechten Ecke und wählen Sie 'Ultra-Energiesparmodus deaktivieren'.</li></ol>"
-                         ]
+                        ]
                     },
                     {
                         "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
@@ -203,7 +203,7 @@
                             "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
                             "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
                             "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
-                         ]
+                        ]
                     }
                 ]
             },
@@ -212,15 +212,15 @@
                 "id": "notification",
                 "accordion": [
                     {
-                       "title": "[Apple/iOS]: ENErrorDomain-Fehler 13",
-                       "anchor": "ENError13",
-                       "active": true,
-                       "textblock": [
-                           "<b>AKTUELL</b> 18.12.2020:  <br/>Wenn Sie auf die Corona-Warn-App Version 1.9.1. aktualisiert haben, kann bei einigen Benutzern folgende Fehlermeldung erscheinen: \"Fehler 13: Ihre Risiko-Ermittlung für den heutigen Tag wurde bereits durchgeführt. Bitte versuchen Sie es in 24 Stunden erneut.\"",
-                           "Die Corona-Warn-App funktioniert trotz dieser Meldung korrekt. Sollten in diesem Zusammenhang noch weitere Probleme auftreten, können sie hier Ihr Problem detailliert schildern: <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1715' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-ios#1715</a>",
-                           "<hr/>VERALTETE INFORMATIONEN: <br/>",
-                           "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben.",
-                           "Der Fehler ENErrorDomain 13 kommt aus dem Exposure Notification System, das von Apple bereitgestellt und von der App genutzt wird. Es handelt sich dabei um eine Information, dass an diesem Tag bereits eine Risikoanalyse durchgeführt worden ist. Bitte starten Sie Ihr iPhone neu, und lassen die Corona-Warn-App für 24 Stunden geschlossen, dann wird erneut eine Risikoanalyse durchgeführt und dieser Fehler sollte nicht mehr angezeigt werden. Bitte deinstallieren Sie die Corona-Warn-App nicht, sie funktioniert weiterhin."
+                        "title": "[Apple/iOS]: ENErrorDomain-Fehler 13",
+                        "anchor": "ENError13",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b> 18.12.2020:  <br/>Wenn Sie auf die Corona-Warn-App Version 1.9.1. aktualisiert haben, kann bei einigen Benutzern folgende Fehlermeldung erscheinen: \"Fehler 13: Ihre Risiko-Ermittlung für den heutigen Tag wurde bereits durchgeführt. Bitte versuchen Sie es in 24 Stunden erneut.\"",
+                            "Die Corona-Warn-App funktioniert trotz dieser Meldung korrekt. Sollten in diesem Zusammenhang noch weitere Probleme auftreten, können sie hier Ihr Problem detailliert schildern: <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1715' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-ios#1715</a>",
+                            "<hr/>VERALTETE INFORMATIONEN: <br/>",
+                            "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist dieser Fehler behoben.",
+                            "Der Fehler ENErrorDomain 13 kommt aus dem Exposure Notification System, das von Apple bereitgestellt und von der App genutzt wird. Es handelt sich dabei um eine Information, dass an diesem Tag bereits eine Risikoanalyse durchgeführt worden ist. Bitte starten Sie Ihr iPhone neu, und lassen die Corona-Warn-App für 24 Stunden geschlossen, dann wird erneut eine Risikoanalyse durchgeführt und dieser Fehler sollte nicht mehr angezeigt werden. Bitte deinstallieren Sie die Corona-Warn-App nicht, sie funktioniert weiterhin."
                         ]
                     },
                     {
@@ -264,7 +264,7 @@
                         "active": true,
                         "textblock": [
                             "Seit ich die App installiert habe, macht mein Smartphone manchmal Probleme. Beispiel: Es gibt es manchmal Probleme mit anderen Apps und Geräten, die Bluetooth verwenden. Was kann ich tun?",
-                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen diese Probleme, allerdings liegt es vermutlich an grundlegenden Funktionen des Betriebssystems, auf die wir keinen Einfluss haben.", 
+                            "Einige Nutzer melden, dass sich ihr Smartphone manchmal seltsam verhält. Beispiel: Ab und zu bricht die Kommunikation zwischen dem Smartphone und Bluetooth-Geräten über andere Apps ab. Dies betrifft z. B. Smartwatches oder Bluetooth-Ohrhörer. Wir untersuchen diese Probleme, allerdings liegt es vermutlich an grundlegenden Funktionen des Betriebssystems, auf die wir keinen Einfluss haben.",
                             "Versuchen Sie bitte Folgendes: <ul><li>Starten Sie Ihr Smartphone neu.</li><li>Entkoppeln Sie die anderen über Bluetooth verbundenen Geräte und koppeln Sie sie neu.</li></ul>",
                             "Wenn das nicht weiterhilft, wenden Sie sich an den Hersteller Ihres Geräts:",
                             "<ul><li>Apple/iPhones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple-Support</a></li><li>Android Geräte: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Hilfe vom Hersteller Ihres Geräts</a>.</li></ul>"
@@ -327,9 +327,9 @@
                         "active": true,
                         "textblock": [
                             "Die App ist in den folgenden Sprachen verfügbar:<ul><li>Deutsch</li><li>Englisch</li><li>Türkisch (ab Version 1.1.1)</li><li>Bulgarisch (ab Version 1.2.0)</li><li>Polnisch (ab Version 1.2.0)</li><li>Rumänisch (ab Version 1.2.0)</li></ul>",
-                            "Die Hotline (<a href='tel:08007540001'>0800 7540001</a>) wird auf Deutsch, Englisch und Türkisch bedient. Weitere Sprachen sind geplant. Wir halten Sie auf dem Laufenden.", "Die Sprache der App orientiert sich an der Sprache, die in den Systemeinstellungen Ihres Smartphones eingestellt ist. Um die App etwa auf Englisch anzuzeigen, ändern Sie die Sprache in den Einstellungen Ihres Smartphones auf Englisch.",
+                            "Die Hotline (<a href='tel:08007540001'>0800 7540001</a>) wird auf Deutsch, Englisch und Türkisch bedient. Weitere Sprachen sind geplant. Wir halten Sie auf dem Laufenden.",
+                            "Die Sprache der App orientiert sich an der Sprache, die in den Systemeinstellungen Ihres Smartphones eingestellt ist. Um die App etwa auf Englisch anzuzeigen, ändern Sie die Sprache in den Einstellungen Ihres Smartphones auf Englisch.",
                             "Bitte beachten Sie, dass viele Länder eigene Corona-Apps haben. Weil die deutsche Corona-Warn-App auch in den App Stores und Play Stores dieser Länder verfügbar ist, könnten die Corona-Apps verwechselt werden. Achten Sie daher darauf, dass Sie die App Ihres Landes herunterladen."
-
                         ]
                     },
                     {
@@ -554,7 +554,8 @@
                         "anchor": "recovered",
                         "active": true,
                         "textblock": [
-                            "Wenn Ihr Arzt oder das Gesundheitsamt Ihnen mitgeteilt hat, dass Sie von COVID-19 genesen sind, setzen Sie die Corona-Warn-App zurück:","<ol><li>Öffnen Sie 'Einstellungen'.<ul><li>[Google/Android]: Öffnen Sie das Menü der Corona-Warn-App, indem Sie auf der Startseite auf das 3-Punkte-Icon rechts oben tippen.</li><li>[Apple/iOS]: Scrollen Sie auf der Startseite nach unten.</li></ul></li><li>Tippen Sie auf 'Anwendung zurücksetzen'. Bestätigen Sie, dass Sie die App zurücksetzen wollen.</li><li>Sie kommen auf die Einführungsseiten der Corona-Warn-App.</li><li>Aktivieren Sie dort die Risiko-Ermittlung wieder. Weil nach aktuellem Forschungsstand nicht ausgeschlossen werden kann, dass Sie sich wieder infizieren, können Sie so weiter dazu beitragen, Infektionsketten zu unterbrechen.</li></ol>"
+                            "Wenn Ihr Arzt oder das Gesundheitsamt Ihnen mitgeteilt hat, dass Sie von COVID-19 genesen sind, setzen Sie die Corona-Warn-App zurück:",
+                            "<ol><li>Öffnen Sie 'Einstellungen'.<ul><li>[Google/Android]: Öffnen Sie das Menü der Corona-Warn-App, indem Sie auf der Startseite auf das 3-Punkte-Icon rechts oben tippen.</li><li>[Apple/iOS]: Scrollen Sie auf der Startseite nach unten.</li></ul></li><li>Tippen Sie auf 'Anwendung zurücksetzen'. Bestätigen Sie, dass Sie die App zurücksetzen wollen.</li><li>Sie kommen auf die Einführungsseiten der Corona-Warn-App.</li><li>Aktivieren Sie dort die Risiko-Ermittlung wieder. Weil nach aktuellem Forschungsstand nicht ausgeschlossen werden kann, dass Sie sich wieder infizieren, können Sie so weiter dazu beitragen, Infektionsketten zu unterbrechen.</li></ol>"
                         ]
                     },
                     {
@@ -591,7 +592,11 @@
                         "anchor": "ENF_version",
                         "active": true,
                         "textblock": [
-                            "Google veröffentlicht die Infrastruktur für die COVID-19-Begegnungsaufzeichnungen, das Exposure Notification System (ENS), über Google Play, und damit unabhängig vom Android-Betriebssystem. Die <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENS-Version 1.5</a> brachte einige Verbesserungen und Fehlerkorrekturen.","So sehen Sie, welche Version Ihr Smartphone installiert hat:","<ol><li>Wählen Sie in den Einstellungen 'Google > Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, verwendet das Smartphone noch nicht die Version 1.5.</li><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen (zum Beispiel '15'), YY für die Jahreszahl und WW für die Wochenzahl. Wenn Sie dieses Format sehen, verwendet das Smartphone schon die Version 1.5.</li></ul></li></ol>", "Allgemeines und Release-Informationen zu den COVID-19-Benachrichtigungen finden Sie bei Google:", "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
+                            "Google veröffentlicht die Infrastruktur für die COVID-19-Begegnungsaufzeichnungen, das Exposure Notification System (ENS), über Google Play, und damit unabhängig vom Android-Betriebssystem. Die <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENS-Version 1.5</a> brachte einige Verbesserungen und Fehlerkorrekturen.",
+                            "So sehen Sie, welche Version Ihr Smartphone installiert hat:",
+                            "<ol><li>Wählen Sie in den Einstellungen 'Google > Benachrichtigungen zu möglicher Begegnung mit COVID-19-Infizierten'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, verwendet das Smartphone noch nicht die Version 1.5.</li><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen (zum Beispiel '15'), YY für die Jahreszahl und WW für die Wochenzahl. Wenn Sie dieses Format sehen, verwendet das Smartphone schon die Version 1.5.</li></ul></li></ol>",
+                            "Allgemeines und Release-Informationen zu den COVID-19-Benachrichtigungen finden Sie bei Google:",
+                            "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
                         ]
                     }
                 ]
@@ -761,7 +766,8 @@
                         "anchor": "non_dev_related",
                         "active": true,
                         "textblock": [
-                            "Im Open-Source-Projekt für die Corona-Warn-App auf <a href='https://github.com/corona-warn-app' target='_blank' rel='noopener noreferrer'>github.com/corona-warn-app</a> und auf der Website <a href='https://www.coronawarn.app/en/' target='_blank' rel='noopener noreferrer'>coronawarn.app</a> geht es viel um die Open-Source-Entwicklung der App. Informationen zu den allgemeinen Aspekten, auch rechtliche Fragen und Informationen für die nutzenden Personen gibt es auf <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app' target='_blank' rel='noopener noreferrer'>bundesregierung.de/breg-de/themen/corona-warn-app</a>. Fragen können Sie über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen.", "Auch direkt in der Corona-Warn-App finden Sie Informationen zur Nutzung und zum Datenschutz: Gehen Sie im Menü der App auf App-Informationen, und dort auf Nutzungsbedingungen und Datenschutzinformation."
+                            "Im Open-Source-Projekt für die Corona-Warn-App auf <a href='https://github.com/corona-warn-app' target='_blank' rel='noopener noreferrer'>github.com/corona-warn-app</a> und auf der Website <a href='https://www.coronawarn.app/en/' target='_blank' rel='noopener noreferrer'>coronawarn.app</a> geht es viel um die Open-Source-Entwicklung der App. Informationen zu den allgemeinen Aspekten, auch rechtliche Fragen und Informationen für die nutzenden Personen gibt es auf <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app' target='_blank' rel='noopener noreferrer'>bundesregierung.de/breg-de/themen/corona-warn-app</a>. Fragen können Sie über das <a href='https://www.bundesregierung.de/breg-de/service/kontakt' target='_blank' rel='noopener noreferrer'>Kontaktformular der Bundesregierung</a> stellen.",
+                            "Auch direkt in der Corona-Warn-App finden Sie Informationen zur Nutzung und zum Datenschutz: Gehen Sie im Menü der App auf App-Informationen, und dort auf Nutzungsbedingungen und Datenschutzinformation."
                         ]
                     },
                     {
@@ -786,6 +792,16 @@
                         "active": true,
                         "textblock": [
                             "Die Details dazu finden Sie (in englischer Sprache) in unserem <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a>."
+                        ]
+                    },
+                    {
+                        "title": "Kontakt-Tagebuch",
+                        "anchor": "contact_diary",
+                        "active": true,
+                        "textblock": [
+                            "Seit Einführung des Kontakt-Tagebuchs erhalten wir kontinuierlich Änderungs- und Verbesserungsvorschläge. Alle diese Ideen prüfen wir technisch und gemeinsam mit dem Auftraggeber bezüglich:",
+                            "<ul><li>Anwenderfreundlichkeit des UI,</li><li> Erweiterung durch Funktionen (z.B. Erfassen zusätzlicher Parameter),</li><li> technischer Umsetzbarkeit (bzw. der Aufwände für die Implementierung),</li><li> Nutzen für das Gesundheitsamt (sofern die Benutzer*innen der App entscheiden, Einträge des Tagebuchs diesem zur Verfügung zu stellen) sowie</li><li> rechtlicher Rahmenbedingungen und Grenzen.</li></ul>",
+                            "Die Menge der Hinweise zum Kontakt-Tagebuch bestätigt die aktive Unterstützung der Community und zeigt, dass diese neue Funktion positiv von den Benutzer*innen der App angenommen wird."
                         ]
                     }
                 ]
@@ -958,7 +974,7 @@
                         "anchor": "ExposureDetectionIsAlreadyRunning",
                         "active": true,
                         "textblock": [
-                            "<b>AKTUELL</b><br/>Das Problem ist in Version 1.7.1 behoben worden.<hr/>",                            
+                            "<b>AKTUELL</b><br/>Das Problem ist in Version 1.7.1 behoben worden.<hr/>",
                             "Die Meldung <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1497'>'ExposureDetectionIsAlreadyRunning'</a> <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1512#issuecomment-727206633'>kann ignoriert werden</a>. Die CWA funktioniert korrekt und dieses Problem wird in einem <a href='https://github.com/corona-warn-app/cwa-app-ios/pull/1510'> bevorstehenden Update korrigiert</a>."
                         ]
                     },
@@ -967,8 +983,8 @@
                         "anchor": "expcheck_160",
                         "active": true,
                         "textblock": [
-                             "<b>AKTUELL</b><br/>Das Problem ist in Version 1.6.1 behoben worden.<hr/>",
-                             "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
+                            "<b>AKTUELL</b><br/>Das Problem ist in Version 1.6.1 behoben worden.<hr/>",
+                            "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
                         ]
                     },
                     {
@@ -1049,7 +1065,7 @@
                             "Bei einigen Android-Smartphones kommt es aktuell vor, dass die Risiko-Begegnungen länger als 14 Tage angezeigt werden. Wir arbeiten an der Behebung dieses Anzeigefehlers. Aktuelle Informationen finden Sie auf Englisch im <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub-Issue 911</a>."
                         ]
                     },
-                     {
+                    {
                         "title": "[Google/Android]: Anzahl der Schlüssel auf 0 zurückgesetzt",
                         "anchor": "keys0",
                         "active": true,
@@ -1067,20 +1083,21 @@
                         ]
                     },
                     {
-                       "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
-                       "anchor": "iOS_136",
-                       "active": true,
-                       "textblock": [
+                        "title": "[Apple/iOS]: Probleme nach Update auf iOS 13.6",
+                        "anchor": "iOS_136",
+                        "active": true,
+                        "textblock": [
                             "AKTUELL: Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1.",
-                           "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."   ]
+                            "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."
+                        ]
                     },
                     {
                         "title": "[Apple/iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
                         "anchor": "app_does_not_open",
                         "active": true,
                         "textblock": [
-                           "AKTUELL: Inzwischen steht die App-Version 1.2.1 zur Verfügung, die dieses Problem behebt. Bitte aktualisieren Sie die App.",
-                           "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten."
+                            "AKTUELL: Inzwischen steht die App-Version 1.2.1 zur Verfügung, die dieses Problem behebt. Bitte aktualisieren Sie die App.",
+                            "Mit dem Update auf 1.2.0 trat bei vielen Nutzern das Problem auf, dass sie die Corona-Warn-App nicht mehr öffnen konnten."
                         ]
                     },
                     {
@@ -1134,8 +1151,9 @@
                         "anchor": "API10",
                         "active": true,
                         "textblock": [
+                            "<b>AKTUELL 14.01.2021</b><br/>Sollten Sie dieses Problem haben, schreiben Sie bitte Ihren Bericht hier: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1962' target='_blank' rel='noopener'>cwa-app-android/issues/1962</a>.<hr/>",
                             "AKTUELL: Dieser Fehler ist mit der Version 1.5 des Exposure Notification Systems behoben. So sehen Sie nach, welche Version Sie installiert haben: <a href='#ENF_version' target='_blank' rel='noopener'>Welche Version des COVID-19-Kontaktprotokolls habe ich?</a>",
-                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risiko-Ermittlung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
+                            "Der Fehler (10) in Zusammenhang mit der fehlenden Risiko-Überprüfung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank' rel='noopener'>https://www.coronawarn.app/de/faq/#delete_random_ids</a>."
                         ]
                     },
                     {
@@ -1160,8 +1178,8 @@
                         "anchor": "iphone_region_change",
                         "active": true,
                         "textblock": [
-                           "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist diese Meldung behoben.",
-                           "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification System ausgelöst. Sie können die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, können Sie in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' (iOS 13.7 und höher: 'Einstellungen' > 'Begegnungsmitteilungen' > 'Status von Begegnungsaufzeichnungen') den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird.",
+                            "AKTUELL: Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist diese Meldung behoben.",
+                            "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification System ausgelöst. Sie können die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, können Sie in den Geräte-Einstellungen unter 'Datenschutz' > 'Health' > 'COVID-19-Kontaktprotokoll' (iOS 13.7 und höher: 'Einstellungen' > 'Begegnungsmitteilungen' > 'Status von Begegnungsaufzeichnungen') den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird.",
                             "Bitte öffnen Sie die Corona-Warn-App noch ein Mal kurz, um sicherzustellen, dass die Hintergrundaktualisierung weiter arbeitet."
                         ]
                     },
@@ -1179,7 +1197,7 @@
                         "anchor": "cause_3",
                         "active": true,
                         "textblock": [
-                           "AKTUELL: Dieser Fehler ist inzwischen behoben.",
+                            "AKTUELL: Dieser Fehler ist inzwischen behoben.",
                             "Dieser Fehler kann bei der ersten Aktivierung der Risiko-Ermittlung oder auch später in den App-Einstellungen oder auf dem Hauptbildschirm auftreten. Der Fehler bedeutet, dass Ihr Gerät aus einem oder mehreren der folgenden Gründe die Risiko-Ermittlung nicht durchführen kann:",
                             "<ul><li>Ihre Google Play-Dienste sind veraltet.</li><li>Die App ist nicht in der Landesversion Ihres Google Play verfügbar. <a href='https://www.coronawarn.app/de/faq/#international' target='_blank' rel='noopener noreferrer'>Diese FAQ</a> nennt die unterstützten Landesversionen.</li><li>Sie haben die Corona-Warn-App nicht über den offiziellen Google Play Store installiert.</li><li>Ihr Gerät wurde modifiziert (z. B. gerootet).</li><li>Sie haben mehrere Benutzerkonten auf Ihrem Gerät, und die App wird für einen nicht-primären Nutzer (ohne Administrationsrechte) ausgeführt.</li><li>Der Hersteller Ihres Geräts hat die Google Play-Dienste und den Google Play Store für Ihr Gerät nicht zur Verfügung gestellt (betrifft z. B. einige Modelle von Huawei und Xiaomi).</li><li>Die Google Mobile Services sind veraltet.</li></ul>",
                             "<b>Fehlerbehebung</b>",
@@ -1195,7 +1213,8 @@
                         "anchor": "no_log_check",
                         "active": true,
                         "textblock": [
-                           "AKTUELL: Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind.", "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen' (iOS 13.7 und höher: 'Einstellungen' > 'Begegnungsmitteilungen' > 'Status von Begegnungsaufzeichnungen'). Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufalls-IDs durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
+                            "AKTUELL: Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind.",
+                            "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' > 'Datenschutz' > 'Health' > 'COVID-19-Begegnungsaufzeichnungen' (iOS 13.7 und höher: 'Einstellungen' > 'Begegnungsmitteilungen' > 'Status von Begegnungsaufzeichnungen'). Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufalls-IDs durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
                         ]
                     },
                     {
