@@ -33,7 +33,7 @@ Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, a
 - Zeiten mit einer Dämpfung <55dB werden zu 100 Prozent berechnet
 - Zeiten mit einer Dämpfung >= 55dB und <63dB werden zu 50 Prozent berechnet
  
-Basierend auf dem Transmission Risk Level (III bis VII) wird nur ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die gewichtete Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die gewichtete Kontaktzeit ergibt.
+Basierend auf dem Transmission Risk Level (III bis VIII) wird nur ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die gewichtete Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die gewichtete Kontaktzeit ergibt.
  
 Anhand dieser gewichteten Zeit wird nun entschieden, um was für eine Begegnung es sich bei diesem Zeitfenster handelt:
 - Gewichtete Kontaktzeit <15 Minuten: Begegnung mit niedrigem Risiko (grün)
@@ -49,5 +49,3 @@ Wer noch tiefer in die Materie einsteigen möchte:
 
 - Ein Übersichtsdiagramm zeigt, wie jetzt gefiltert wird: https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf 
  
-
-
