@@ -1000,10 +1000,15 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Error when communicating with Google API (39508)",
+                        "title": "[Google/Android]: Limit already reached (Previously: Error when communicating with Google API (39508))",
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
+                            "<b>UPDATE 16.01.2021</b><br/>The error notification reads now:",
+                            "<b>'Limit already reached'</b>",
+                            "<b>'No more exposure checks possible today, as you have reached the maximum number of checks per day defined by your operating system. Please check your risk status again tomorrow.'</b>",
+                            "The whole exposure checking went through a major update with the release of 1.9.1, see also the  <a href='https://www.coronawarn.app/en/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'> blog post from Dec 16, 2020</a>,  and since the release 1.9.1 no more reports on this issue have been submitted.", 
+                            "However, should you experience an issue related to this error notification, please submit your report here: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue 1459</a><hr/>",
                             "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><b>IMPORTANT:</b><br/><b>After updating to version 1.5 it will take up to 24 hours until the error is gone.</b>",
                             "If you are still receiving the error after updating to 1.5 and waiting 24 hours, please report it in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a>.<hr/>",
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
