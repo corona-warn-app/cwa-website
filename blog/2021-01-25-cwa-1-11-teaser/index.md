@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-With the next update to version 1.11, the Corona-Warn-App will contain statistics that give an overview of current key figures on the infection numbers in Germany. 
+With the next update to version 1.11, the Corona-Warn-App will contain some bug fixes and improvements, as well as statistics that give an overview of current key figures on the infection numbers in Germany. 
  
 <!-- overview -->
 
