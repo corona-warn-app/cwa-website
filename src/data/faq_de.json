@@ -32,6 +32,22 @@
                 ]
             },
             {
+                "title": "News",
+                "id": "news",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "In-App Statistiken ab Release 1.11",
+                        "anchor": "further_details",
+                        "active": true,
+                        "textblock": [
+                            "Wegen der hohen Dynamik der Pandemie bringt die Corona-Warn App mit dem Release 1.11. wichtige statistische Kennzahlen zum Infektionsgeschehen zu Anzeige. Diese Zahlen sollen den Anwendern helfen, die aktuelle Situation besser einzuschätzen und das eigene Verhalten anzupassen.",
+                            "Das Konzept des R-Werts und die Datengrundlagen seiner Berechnung wurden detailliert im Epidemiologischen Bulletin des RKIs <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 vom 23.04.2020)</a> beschrieben. Beispielrechnungen und die täglich aktualisierten R-Werte (4-Tages- und 7-Tages-R-Wert) stehen unter <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a> als Excel-Tabelle zur Verfügung."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
@@ -41,10 +57,10 @@
                         "active": true,
                         "textblock": [
                             "Das Sicherheitszertifikat <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b> ist möglicherweise auf Ihrem Gerät deaktiviert. Dies ist eine bekannte Ursache, um folgende Benachrichtigung auszulösen:",
-                            "<b>'URSACHE: 2001 Etwas ist schief gelaufen. An error occurred while trying to establish a secure connection to the server.'</b>",
+                            "<b>'URSACHE: 2001 Etwas ist schiefgelaufen. An error occurred while trying to establish a secure connection to the server.'</b>",
                             "Führen Sie die folgenden Schritte aus, um das Sicherheitszertifikat zu aktivieren (Der genaue Pfad hängt vom Gerät ab).",
                             "<ul><li>Einstellungen > Biometrische Daten und Sicherheit > Andere Sicherheitseinstellungen > Sicherheitszertifikate anzeigen, SYSTEM</li><li>Scrollen Sie nach unten zu <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Aktivieren Sie das Zertifikat mit dem Schieberegler</li></ul>",
-                            "Sollten diese Prozedur das Problem nicht beheben, schreiben SIe bitte Ihren Bericht hier: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
+                            "Sollten diese Schritte das Problem nicht beheben, schreiben Sie bitte Ihren Bericht hier: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
                         ]
                     },
                     {
@@ -266,7 +282,7 @@
                             "<h4>Was sollten Sie beachten?</h4> <b>Das Zurücksetzen der Datenbanken hat keine Auswirkung auf die Risiko-Ermittlung und damit auch nicht auf Ihren Risikostatus.</b> Alle aufgezeichneten Begegnungen mit anderen Personen, die die App nutzen, bleiben erhalten. Sie werden weiterhin über Risiko-Begegnungen benachrichtigt und können andere warnen, falls Sie positiv auf COVID-19 getestet wurden.",
                             "<b>Falls Sie aber einen QR-Code für die elektronische Benachrichtigung über einen COVID-19-Test eingelesen haben und Ihnen das Testergebnis bislang noch nicht in der App übermittelt wurde, ist durch das Zurücksetzen der Datenbanken die Registrierung des Tests für die elektronische Übermittlung verloren gegangen. Aus Datenschutzgründen kann der QR-Code leider nicht mehr erneut eingelesen werden. Bitte wenden Sie sich an Ihren Arzt oder das Labor, um Ihr Testergebnis zu erfahren.</b>",
                             "Durch das Zurücksetzen der Daten geht auch die Information verloren, wie lange Ihre App bereits aktiv war (die Anzahl der aktiven Tage wird auf 0 gesetzt). Gegebenenfalls wurden auch Einträge aus der Historie der Begegnungsaufzeichnungen entfernt, die Sie über die Einstellungen zu Ihrem Google-Konto erreichen. (siehe <a href='#exposure_check' target='_blank' rel='noopener noreferrer'>hier</a> und <a href='#keys_matches' target='_blank' rel='noopener noreferrer'>hier</a>) Dies hat jedoch keine Auswirkungen auf die Risiko-Ermittlung und Ihren Risikostatus. Spätestens nach 24 Stunden sollte Ihnen Ihr Risikostatus wieder angezeigt werden und neue Einträge in der Historie der Begegnungsaufzeichnungen sollten erscheinen.",
-                            "<h4>Technischer Hintergrund</h4> Die Corona-Warn-App wurde mit höchsten Ansprüchen an den Datenschutz entwickelt. Dafür werden einerseits Daten verschlüsselt abgespeichert und andererseits der Programmcode der App öffentlich zur Begutachtung zur Verfügung gestellt (<a href='#open-source' target='_blank' rel='noopener noreferrer'>Open-Source-Ansatz</a>). Um eine Datenverschlüsselung für eine App zu realisieren, greifen Entwickler gerne auf in der Vergangenheit bereits gut erprobte Programmmodule zurück, die von anderen Entwicklern ebenfalls als Open-Source zur Verfügung gestellt werden. Auf diese Weise kann Transparenz für sämtliche Bestandteile der Corona-Warn-App gewährleistet werden. Erst kürzlich wurde bekannt, dass ein Verschlüsselungsmodul, das auch von der Corona-Warn-App genutzt wird, fehlerhaft funktioniert, wenn der im Android Betriebssystem integrierte Speicher für Schlüssel oder Passwörter nicht zuverlässig reagiert. Dieser Fehler führt dazu, dass eine verschlüsselte Datenbank nicht mehr geöffnet werden kann. Das wiederum führt dazu, dass einige Nutzer die Meldung „<a href='#cause9002' target='_blank' rel='noopener noreferrer'>Ursache: 9002 Etwas ist schief gelaufen (sqlite)</a>“ sehen oder <a href='#app_crash' target='_blank' rel='noopener noreferrer'>sich die App nicht mehr öffnen lässt</a>. Selbstverständlich wird die Corona-Warn-App vor jeder Veröffentlichung eines Updates gründlich getestet. Allerdings trat dieser Fehler während der Tests nie auf und er lässt sich auch jetzt nur schwer reproduzieren.",
+                            "<h4>Technischer Hintergrund</h4> Die Corona-Warn-App wurde mit höchsten Ansprüchen an den Datenschutz entwickelt. Dafür werden einerseits Daten verschlüsselt abgespeichert und andererseits der Programmcode der App öffentlich zur Begutachtung zur Verfügung gestellt (<a href='#open-source' target='_blank' rel='noopener noreferrer'>Open-Source-Ansatz</a>). Um eine Datenverschlüsselung für eine App zu realisieren, greifen Entwickler gerne auf in der Vergangenheit bereits gut erprobte Programmmodule zurück, die von anderen Entwicklern ebenfalls als Open-Source zur Verfügung gestellt werden. Auf diese Weise kann Transparenz für sämtliche Bestandteile der Corona-Warn-App gewährleistet werden. Erst kürzlich wurde bekannt, dass ein Verschlüsselungsmodul, das auch von der Corona-Warn-App genutzt wird, fehlerhaft funktioniert, wenn der im Android Betriebssystem integrierte Speicher für Schlüssel oder Passwörter nicht zuverlässig reagiert. Dieser Fehler führt dazu, dass eine verschlüsselte Datenbank nicht mehr geöffnet werden kann. Das wiederum führt dazu, dass einige Nutzer die Meldung „<a href='#cause9002' target='_blank' rel='noopener noreferrer'>Ursache: 9002 Etwas ist schiefgelaufen (sqlite)</a>“ sehen oder <a href='#app_crash' target='_blank' rel='noopener noreferrer'>sich die App nicht mehr öffnen lässt</a>. Selbstverständlich wird die Corona-Warn-App vor jeder Veröffentlichung eines Updates gründlich getestet. Allerdings trat dieser Fehler während der Tests nie auf und er lässt sich auch jetzt nur schwer reproduzieren.",
                             "Alle Beteiligten arbeiten gemeinsam an einer möglichst raschen Fehlerbehebung."
                         ]
                     },
@@ -618,6 +634,18 @@
                 "id": "risk_assessment",
                 "accordion": [
                     {
+                        "title": "Unterschiedliche Anzeige von Risiken",
+                        "anchor": "dissimilar_indication_of_risk_status",
+                        "active": true,
+                        "textblock": [
+                            "Wie kommt es zu Unterschieden in der Infektionsrisikobewertung durch verschiedene CWA Apps, auch wenn die jeweiligen Smartphones sich nicht weit voneinander entfernt befanden?",
+                            "Abweichende Infektionsrisikobewertungen können mehrere Ursachen haben, beeinträchtigen aber nicht die Wirksamkeit der Corona-Warn-App (CWA).",
+                            "Die Einschätzung eines möglichen Infektionsrisikos hängt von der erkannten Kontaktdauer und dem ermittelten Abstand zum dem Smartphone eines CWA Nutzers ab, der sich dazu entschlossen hat, seinen positiven Testbescheid zu teilen. Die Ermittlung des Abstandes wird dabei auch von der Ausrichtung der beiden Smartphone-Antennen zueinander beeinflusst. Daher ist dieser Aspekt der Risikobewertung sehr stark von der exakten räumlichen Lage der beteiligten Smartphones abhängig.",
+                            "Zudem laufen viele Prozesse auf den Smartphones im Hintergrund ab und können daher zu unterschiedlichen Zeitpunkten starten. Beispiele für solche Prozesse sind die Risikoberechnung, das bei bestehendem WiFi-Zugang mehrfach am Tag stattfindende Laden von Positivschlüsseln. Aber auch die Suche nach anderen Smartphones mit aktiver CWA ist ein solcher Hintergrundprozess. ",
+                            "Des Weiteren unterstützt die CWA (abhängig von der Versionsnummer der App und dem genutzten Betriebssystem) unterschiedliche Versionen des Exposure Notification Framework (ENF). Dieses wird von Google und Apple entwickelt und zur Verfügung gestellt. Da nicht jedes Smartphone die neuste Version des ENF unterstützt, können unterschiedliche ENF Versionen zu abweichenden Risiko-Berechnungen führen."
+                        ]
+                    },
+                    {
                         "title": "Virus-Varianten („Mutationen“):",
                         "anchor": "mutation",
                         "active": true,
@@ -671,8 +699,7 @@
                             "Die Berechnung Ihres individuellen Infektionsrisikos basiert auf folgenden Faktoren:",
                             "<ol><li> Dauer der Begegnung </li><li> Abstand bei der Begegnung </li><li> Zeit, die seit der Begegnung vergangen ist</li><li> Infektiosität (abgeleitet aus der Information, wann und ob die Symptome eingesetzt haben) </li></ol>",
                             "Überschreitet der daraus ermittelte Risikowert eine <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>Schwelle</a>, die das Robert Koch-Institut vorgibt, erhalten die Benutzer eine Benachrichtigung über ein erhöhtes Infektionsrisiko.",
-                            "Die Corona-Warn-App hat drei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen: \"unbekanntes Risiko\" (grau), \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
-                            "Bei der Statusanzeige \"unbekanntes Risiko\" ist die Risiko-Ermittlung noch nicht lange genug aktiv, um eine Risikoermittlung vorzunehmen.",
+                            "Die Corona-Warn-App hat zwei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen:  \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
                             "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis der oben genannten Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
                             "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, an wie vielen Tagen dies der Fall war. Ab der Version 1.9.1 der App sehen die Nutzer somit die Anzahl an Tagen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen. Zusätzlich wird folgender Hinweis angezeigt: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
                             "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem Gesundheitsamt oder dem ärztlichen Bereitschaftsdienst unter 116117 in Verbindung, um das weitere Vorgehen abzustimmen. Sie können zudem die <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>Webseite</a> oder die App (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>) des ärztlichen Bereitschaftsdienstes nutzen, um direkt einen Termin zu vereinbaren. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Sowohl das <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> als auch das <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> haben jedoch entsprechende Orientierungshilfen bzw. Empfehlungen veröffentlicht. Die App zeigt ab Version 1.9.1 zudem an, an welchen Tag (innerhalb der letzten 14 Tage) letztmalig eine Begegnung mit erhöhtem Risiko stattgefunden hat. Hier sehen Sie nun ein genaues Datum, um Ihre Kontakte bzw. Ihr Verhalten an diesem Tag besser nachvollziehen zu können."
@@ -1034,7 +1061,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Ursache: 9002 Etwas ist schief gelaufen (timeout)",
+                        "title": "[Google/Android]: Ursache: 9002 Etwas ist schiefgelaufen (timeout)",
                         "anchor": "cause9002_timeout",
                         "active": true,
                         "textblock": [
@@ -1045,7 +1072,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Ursache: 9002 Etwas ist schief gelaufen (sqlite)",
+                        "title": "[Google/Android]: Ursache: 9002 Etwas ist schiefgelaufen (sqlite)",
                         "anchor": "cause9002",
                         "active": true,
                         "textblock": [
@@ -1062,7 +1089,7 @@
                         "active": true,
                         "textblock": [
                             "<b>AKTUELL</b><br/>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><hr/>",
-                            "Wenn die Corona-Warn-App durch einen Fehler im Betriebssystem oder durch aggressive Energiesparmaßnahmen des Telefons unerwartet beendet wird, kann es vorkommen, dass bei einem erneuten Start die Corona-Warn-App nicht mehr auf ihre verschlüsselten Datenbanken zugreifen kann. In diesem Fall schließt sie sich sofort wieder. Manchmal wurde vorher der <a href='#cause9002' target='_blank' rel='noopener'>Fehler Ursache: 9002 Etwas ist schief gelaufen (sqlite)</a> angezeigt.",
+                            "Wenn die Corona-Warn-App durch einen Fehler im Betriebssystem oder durch aggressive Energiesparmaßnahmen des Telefons unerwartet beendet wird, kann es vorkommen, dass bei einem erneuten Start die Corona-Warn-App nicht mehr auf ihre verschlüsselten Datenbanken zugreifen kann. In diesem Fall schließt sie sich sofort wieder. Manchmal wurde vorher der <a href='#cause9002' target='_blank' rel='noopener'>Fehler Ursache: 9002 Etwas ist schiefgelaufen (sqlite)</a> angezeigt.",
                             "Wir arbeiten mit Hochdruck an einer Lösung des Problems.",
                             "Die GitHub-Community hat eine Notfall-Lösung erarbeitet, die die Corna-Warn-App ohne Deinstallation wieder zum Laufen bringt. Da hierbei jedoch Daten verloren gehen können (z. B. registrierte COVID-19-Tests zur Online-Abfrage der Testergebnisse), sollten Sie diese Notfall-Lösung nur dann anwenden, wenn keine anderen Maßnahmen (insbesondere Vorschläge von der technischen Telefon-Hotline oder von Betreuern der Corona-Warn-App im Google Play Store) geholfen haben, und Sie die Hinweise zur Notfall-Lösung im GitHub-Issue vollständig zur Kenntnis genommen haben.",
                             "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690614975' target='_blank' rel='noopener noreferrer'>Hier geht es zur Notfall-Lösung im GitHub-Issue</a>."
@@ -1159,7 +1186,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: URSACHE 3 – Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(10)",
+                        "title": "[Google/Android]: URSACHE 3 – Etwas ist schiefgelaufen. Fehler bei Kommunikation mit Google API(10)",
                         "anchor": "API10",
                         "active": true,
                         "textblock": [
@@ -1205,7 +1232,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Ich bekomme beim Einrichten der App folgenden Fehler: URSACHE: 3. Etwas ist schief gelaufen. Fehler bei Kommunikation mit Google API(17). Was bedeutet das?",
+                        "title": "[Google/Android]: Ich bekomme beim Einrichten der App folgenden Fehler: URSACHE: 3. Etwas ist schiefgelaufen. Fehler bei Kommunikation mit Google API(17). Was bedeutet das?",
                         "anchor": "cause_3",
                         "active": true,
                         "textblock": [
