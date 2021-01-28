@@ -32,6 +32,22 @@
                 ]
             },
             {
+                "title": "News",
+                "id": "news",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "In-App Statistiken ab Release 1.11",
+                        "anchor": "further_details",
+                        "active": true,
+                        "textblock": [
+                            "Wegen der hohen Dynamik der Pandemie bringt die Corona-Warn App mit dem Release 1.11. wichtige statistische Kennzahlen zum Infektionsgeschehen zu Anzeige. Diese Zahlen sollen den Anwendern helfen, die aktuelle Situation besser einzuschätzen und das eigene Verhalten anzupassen.",
+                            "Das Konzept des R-Werts und die Datengrundlagen seiner Berechnung wurden detailliert im Epidemiologischen Bulletin des RKIs <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 vom 23.04.2020)</a> beschrieben. Beispielrechnungen und die täglich aktualisierten R-Werte (4-Tages- und 7-Tages-R-Wert) stehen unter <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a> als Excel-Tabelle zur Verfügung."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
@@ -618,6 +634,18 @@
                 "id": "risk_assessment",
                 "accordion": [
                     {
+                        "title": "Unterschiedliche Anzeige von Risiken",
+                        "anchor": "dissimilar_indication_of_risk_status",
+                        "active": true,
+                        "textblock": [
+                            "Wie kommt es zu Unterschieden in der Infektionsrisikobewertung durch verschiedene CWA Apps, auch wenn die jeweiligen Smartphones sich nicht weit voneinander entfernt befanden?",
+                            "Abweichende Infektionsrisikobewertungen können mehrere Ursachen haben, beeinträchtigen aber nicht die Wirksamkeit der Corona-Warn-App (CWA).",
+                            "Die Einschätzung eines möglichen Infektionsrisikos hängt von der erkannten Kontaktdauer und dem ermittelten Abstand zum dem Smartphone eines CWA Nutzers ab, der sich dazu entschlossen hat, seinen positiven Testbescheid zu teilen. Die Ermittlung des Abstandes wird dabei auch von der Ausrichtung der beiden Smartphone-Antennen zueinander beeinflusst. Daher ist dieser Aspekt der Risikobewertung sehr stark von der exakten räumlichen Lage der beteiligten Smartphones abhängig.",
+                            "Zudem laufen viele Prozesse auf den Smartphones im Hintergrund ab und können daher zu unterschiedlichen Zeitpunkten starten. Beispiele für solche Prozesse sind die Risikoberechnung, das bei bestehendem WiFi-Zugang mehrfach am Tag stattfindende Laden von Positivschlüsseln. Aber auch die Suche nach anderen Smartphones mit aktiver CWA ist ein solcher Hintergrundprozess. ",
+                            "Des Weiteren unterstützt die CWA (abhängig von der Versionsnummer der App und dem genutzten Betriebssystem) unterschiedliche Versionen des Exposure Notification Framework (ENF). Dieses wird von Google und Apple entwickelt und zur Verfügung gestellt. Da nicht jedes Smartphone die neuste Version des ENF unterstützt, können unterschiedliche ENF Versionen zu abweichenden Risiko-Berechnungen führen."
+                        ]
+                    },
+                    {
                         "title": "Virus-Varianten („Mutationen“):",
                         "anchor": "mutation",
                         "active": true,
@@ -671,8 +699,7 @@
                             "Die Berechnung Ihres individuellen Infektionsrisikos basiert auf folgenden Faktoren:",
                             "<ol><li> Dauer der Begegnung </li><li> Abstand bei der Begegnung </li><li> Zeit, die seit der Begegnung vergangen ist</li><li> Infektiosität (abgeleitet aus der Information, wann und ob die Symptome eingesetzt haben) </li></ol>",
                             "Überschreitet der daraus ermittelte Risikowert eine <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>Schwelle</a>, die das Robert Koch-Institut vorgibt, erhalten die Benutzer eine Benachrichtigung über ein erhöhtes Infektionsrisiko.",
-                            "Die Corona-Warn-App hat drei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen: \"unbekanntes Risiko\" (grau), \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
-                            "Bei der Statusanzeige \"unbekanntes Risiko\" ist die Risiko-Ermittlung noch nicht lange genug aktiv, um eine Risikoermittlung vorzunehmen.",
+                            "Die Corona-Warn-App hat zwei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen:  \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
                             "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis der oben genannten Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
                             "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, an wie vielen Tagen dies der Fall war. Ab der Version 1.9.1 der App sehen die Nutzer somit die Anzahl an Tagen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen. Zusätzlich wird folgender Hinweis angezeigt: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
                             "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem Gesundheitsamt oder dem ärztlichen Bereitschaftsdienst unter 116117 in Verbindung, um das weitere Vorgehen abzustimmen. Sie können zudem die <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>Webseite</a> oder die App (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>) des ärztlichen Bereitschaftsdienstes nutzen, um direkt einen Termin zu vereinbaren. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Sowohl das <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> als auch das <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> haben jedoch entsprechende Orientierungshilfen bzw. Empfehlungen veröffentlicht. Die App zeigt ab Version 1.9.1 zudem an, an welchen Tag (innerhalb der letzten 14 Tage) letztmalig eine Begegnung mit erhöhtem Risiko stattgefunden hat. Hier sehen Sie nun ein genaues Datum, um Ihre Kontakte bzw. Ihr Verhalten an diesem Tag besser nachvollziehen zu können."
