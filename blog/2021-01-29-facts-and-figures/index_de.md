@@ -7,11 +7,12 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zu Laboranbindungen und der Anzahl übermittelter Testergebnisse. 
+In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zu Laboranbindungen und der Anzahl übermittelter Testergebnisse. 
 
 
 ### **Übersicht früherer Zahlen und Fakten** 
 #### 2021
+* [29. Januar 2021](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf) 
 * [22. Januar 2021](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf) 
 
 #### 2020
