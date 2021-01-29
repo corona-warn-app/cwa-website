@@ -32,6 +32,24 @@
                 ]
             },
             {
+                "title": "News",
+                "id": "news",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "In-App statistics starting with release 1.11",
+                        "anchor": "further_details",
+                        "active": true,
+                        "textblock": [
+                            "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on the current occurrence of the infection starting with the 1.11 version of the app. The shown figures and graphs should guide users to better assess the current situation and to adjust their own behaviour.",
+                            "The number of new infections is published once a day by the RKI. ' Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ", 
+                            "The statistics displayed in the Corona-Warn-App get compiled from different sources and get formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g., reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
+                            "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
@@ -117,13 +135,15 @@
                         "anchor": "qr_scan",
                         "active": true,
                         "textblock": [
-                            "This problem can have two causes:",
+                            "This problem can have three causes:",
                             "<b>The code was already used once for registration</b>",
                             "Every QR code you receive can only be entered into the app once. If you use the Corona Warn App on multiple devices, the code can only be registered in one device.",
                             "If you have already registered the QR code, but then deleted it from the app, the code can also not be entered a second time.",
+                            "<b>The code you received is designed for another app or service</b>",
+                            "QR codes for the Corona Warn App are distributed on a standardized information sheet as part of form 10C. You can compare the QR code information you received with the <a href='https://www.kbv.de/media/sp/Ansichtsexemplar_Muster10C.pdf' target='_blank' rel='noopener noreferrer'>bottom half of this example form</a>. If you have not received the depicted information sheet, your QR code is likely incompatible to the app. In this case, please contact the doctor's office or testing center where you made the test and ask them where your QR code can be registered.",
                             "<b>The code you received was wrongly generated</b>",
-                            "In some cases, the error can occur during the first registration of the QR Code. This can happen if a test center generated the QR code in a wrong format.",
-                            "We are currently looking into how to improve the app to detect wrongly generated QR Codes and still accept them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>."
+                            "In some cases, the error can occur during the first registration of the QR Code. This can happen if a test center generated the QR code in a wrong format. We are currently looking into how to improve the app to detect wrongly generated QR Codes and still accept them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>.",
+                            "If you are sure that the QR code was not scanned before and you received the correct information sheet, but are still receiving errors, you can also report this case by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code as well as contact information of the doctor or test center where you received it. All non-essential personal data should be blacked out. We will then try to resolve QR code generation issues together with the involved parties."
                         ]
                     },
                     {
@@ -609,6 +629,18 @@
                 "id": "risk_assessment",
                 "accordion": [
                     {
+                        "title": "Dissimilar indication of risk status",
+                        "anchor": "dissimilar_indication_of_risk_status",
+                        "active": true,
+                        "textblock": [
+                            "Why do differences in infection risk status appear in different CWA apps, even for close-by smartphones?",
+                            "Varying infection risk ratings are caused by several reasons. However, they do not affect the effectiveness of the Corona-Warn-App (CWA).",
+                            "The assessment of a possible infection risk depends on the recorded contact duration and the determined distance to the smartphone of a CWA user who reported the positive test result.  The distance determination is thereby also affected by the orientation of the two smartphone antennas with respect to each other. Therefore, this aspect of the risk assessment depends largely on physical location of the involved smartphones and on spatial conditions.",
+                            "Moreover, many processes on the smartphones are background processes; they will start at different times depending on the scheduling of the operating system.  Examples of those processes are the risk calculation process, downloading of positive keys that takes place several times a day when WiFi access is available, and as well the scanning for other smartphones with an active CWA running.",
+                            "Furthermore, the CWA supports different Exposure Notification Framework (ENF) versions, depending on the version number of the app and the used operating system. This framework is implemented and provided by Google and Apple. Since not every smartphone supports the latest ENF release, also different ENF versions may lead to different risk calculations."
+                        ]
+                    },
+                    {
                         "title": "Virus variants (\"Mutations\")",
                         "anchor": "mutation",
                         "active": true,
@@ -661,9 +693,8 @@
                         "textblock": [
                             "The calculation of your individual risk is based on the following factors:",
                             "<ol><li> Duration of the encounter </li><li> Distance at the time of the encounter </li><li> Time that has elapsed since the encounter </li><li>Infectiousness (derived from information on when and whether symptoms occur).</li></ol>",
-                            "If the calculated risk exceeds a certain <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#risk-score-calculation' target='_blank' rel='noopener noreferrer'>threshold</a> specified by the Robert Koch Institute, users will receive a notification regarding an increased risk.",
-                            "The Corona Warn App has three different status indicators that indicate this risk: \"unknown risk\" (grey), \"low risk\" (green) and \"increased risk\" (red).",
-                            "With the status display \"unknown risk\", the risk determination has not been active long enough to perform a risk determination.",
+                            "If the calculated risk exceeds the threshold specified by the Robert Koch Institute, users will receive a notification regarding an increased risk. More information on the calculation of the threshold can be found in entry <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)?</a>.",
+                            "The Corona Warn App has two different status indicators that indicate this risk: \"low risk\" (green) and \"increased risk\" (red).",
                             "If you see high-risk or low-risk encounters on your smartphone, it means that your smartphone and that of a person who later reported themselves as infected in the app have exchanged diagnostic keys via Bluetooth in the past 14 days. Based on the above mentioned criteria, this encounter is then classified as having an increased or low risk of infection.",
                             "If the app shows a \"low risk\" (green), the relevant threshold values have not been exceeded. Nevertheless, the app also informs you that your smartphone has recorded one or more encounters with (later positively tested) persons in the past 14 days and also shows on how many days this was the case. As of version 1.9.1 of the app, users will see the number of days on which risk encounters have taken place, rather than the number of encounters. In addition, the following note is displayed: \"A low risk exists in particular if your encounter was limited to a short period of time or a longer distance. You do not need to worry, and there is no particular need for action.\"",
                             "If you get a \"increased risk\" (red), you should stay at home and reduce your direct contacts. Contact your general practitioner, the health department or the medical on-call service at 116117 to discuss how to proceed. You can also book an appointment directly via the 116117 on-call service's <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>website</a> or app (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>). The decision whether a so-called PCR test is performed is ultimately up to your doctor. However, both the <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Buerger/Orientierungshilfe_Buerger_de.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>RKI</a> and the <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Federal Ministry of Health</a> have published corresponding guidelines and recommendations. As of version 1.9.1, the app also shows the last time (within the last 14 days) an encounter with increased risk took place. You can now see an exact date to better track your contacts or behaviour on that specific day."
