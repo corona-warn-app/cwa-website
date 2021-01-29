@@ -7,7 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf) about the Corona-Warn-App, the connection to laboratories, as well as the number of transmitted test results. 
+In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf) about the Corona-Warn-App, the connection to laboratories, as well as the number of transmitted test results. 
 
 
 
@@ -15,6 +15,7 @@ In this post, you can find [regularly updated facts and figures](https://www.cor
 (German versions only) 
 
 #### 2021
+* [January 29, 2021](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf) 
 * [January 22, 2021](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf) 
 
 #### 2020
