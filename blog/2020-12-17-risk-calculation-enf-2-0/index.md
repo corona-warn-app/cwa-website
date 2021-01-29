@@ -34,7 +34,7 @@ However, if the conditions are met, the contact times are weighted depending on 
 - Times with an attenuation <55dB are calculated at 100%.
 - Times with an attenuation >= 55dB and <63dB are calculated at 50%.
 
-Based on the transmission risk level (III to VII), only a factor between 0.6 and 1.6 is determined. The weighted time from the previous step is multiplied by this factor, which then results in the weighted contact time.
+Based on the transmission risk level (III to VIII), only a factor between 0.6 and 1.6 is determined. The weighted time from the previous step is multiplied by this factor, which then results in the weighted contact time.
 This weighted time is now used to decide what type of encounter this time slot is:
 - Weighted contact time <15 minutes: Encounter with a low risk (green).
 - Weighted contact time >=15 minutes: Encounter with increased risk (red).
