@@ -646,7 +646,7 @@
                             "However, if the conditions are met, the contact times are weighted depending on the signal attenuation:",
                             "<ul><li>Times with an attenuation <55dB are calculated at 100%.</li>",
                             "<li>Times with an attenuation >= 55dB and <63dB are calculated at 50%</li></ul>",
-                            "Based on the transmission risk level (III to VIII), only a factor between 0.6 and 1.6 is determined. The weighted time from the previous step is multiplied by this factor, which then results in the weighted contact time. This weighted time is now used to decide what type of encounter this time slot is:",
+                            "Based on the transmission risk level (III to VII), only a factor between 0.6 and 1.6 is determined. The weighted time from the previous step is multiplied by this factor, which then results in the weighted contact time. This weighted time is now used to decide what type of encounter this time slot is:",
                             "<ul><li>Weighted contact time <15 minutes: Encounter with a low risk (green).</li>",
                             "<li>Weighted contact time >=15 minutes: Encounter with increased risk (red).</li></ul>",
                             "Finally, all time windows of a day are considered (the weighted contact times) and added up. If the sum is >= 15 minutes, the overall status becomes red, otherwise it is green. Ultimately, this means that several 'green' encounters (time windows) can result in a red status in total. For those who would like to dive even deeper into the subject:",
