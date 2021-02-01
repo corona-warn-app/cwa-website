@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Within the next 48 hours, users will be able to download the Corona-Warn-App’s next update. With version 1.11, the project team from Deutsche Telekom and SAP added an additional area with statistics to the app’s home screen. There, users can see current key figures on the infection numbers in Germany, as well as the number of users tested positive who have warned their fellow citizens via the app.
+Within the next 48 hours, users will be able to download the Corona-Warn-App’s next update. With version 1.11, the Deutsche Telekom and SAP's project team added an additional area with statistics to the app’s home screen. There, users can see current key figures on the infection numbers in Germany, as well as the number of users tested positive who have warned their fellow citizens via the app.
  
 <!-- overview -->
 
