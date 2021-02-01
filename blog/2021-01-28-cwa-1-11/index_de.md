@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Innerhalb der nächsten 48 Stunden können Nutzer\*innen das nächste Update der Corona-Warn-App herunterladen. Mit Version 1.11 erhält der Home-Bildschirm der App erstmals einen Bereich mit Statistiken. Dort können Nutzer\*innen sowohl die wichtigsten Kennzahlen zum aktuellen Infektionsgeschehen in Deutschland sehen, als auch die Anzahl positiver getesteter Nutzer*innen, die ihre Mitmenschen über die App gewarnt haben.
+Innerhalb der nächsten 48 Stunden können Nutzer\*innen das nächste Update der Corona-Warn-App herunterladen. Mit Version 1.11 hat das Projektteam der Deutschen Telekom und SAP dem Home-Bildschirm der App erstmals einen Bereich mit Statistiken hinzugefügt. Dort können Nutzer\*innen sowohl die wichtigsten Kennzahlen zum aktuellen Infektionsgeschehen in Deutschland sehen, als auch die Anzahl positiver getesteter Nutzer*innen, die ihre Mitmenschen über die App gewarnt haben.
  
 <!-- overview -->
 
