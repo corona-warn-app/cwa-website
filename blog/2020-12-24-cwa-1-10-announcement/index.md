@@ -8,7 +8,7 @@ layout: blog
 ---
  
 
-The next update of the Corona-Warn-App (version 1.10) will include a contact journal, where users can note the names of people they’ve met and locations they’ve visited.
+With the Corona-Warn-App's next update (version 1.10), Deutsche Telekom and SAP's project team add a contact journal to the app, where users can note the names of people they’ve met and locations they’ve visited.
  
 <!-- overview -->
 

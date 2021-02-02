@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Das nächste Update der Corona-Warn-App ist fertig. Nutzer\*innen können es innerhalb der nächsten 48 Stunden herunterladen. Wichtigste Neuerung: Version 1.10 führt ein **Kontakt-Tagebuch** ein. Nutzer\*innen können darin **freiwillig** Begegnungen und Orte notieren. Wen habe ich in den letzten vierzehn Tagen getroffen? Welche Orte habe ich in den vergangenen zwei Wochen besucht? Für das Gesundheitsamt und das Auffinden von Infektionsketten sind das wichtige Informationen. Aber wer kann sich schon so lange zurückerinnern? Das Kontakt-Tagebuch ist daher eine nützliche Gedächtnisstütze. Die Corona-Warn-App wird mit diesem neuen Feature zu einem aktiven täglichen Begleiter, um die Ausbreitung der Pandemie einzudämmen.
+Das Projektteam der Deutschen Telekom und SAP hat das nächste Update der Corona-Warn-App veröffentlicht. Nutzer\*innen können es innerhalb der nächsten 48 Stunden herunterladen. Wichtigste Neuerung: Version 1.10 führt ein **Kontakt-Tagebuch** ein. Nutzer\*innen können darin **freiwillig** Begegnungen und Orte notieren. Wen habe ich in den letzten vierzehn Tagen getroffen? Welche Orte habe ich in den vergangenen zwei Wochen besucht? Für das Gesundheitsamt und das Auffinden von Infektionsketten sind das wichtige Informationen. Aber wer kann sich schon so lange zurückerinnern? Das Kontakt-Tagebuch ist daher eine nützliche Gedächtnisstütze. Die Corona-Warn-App wird mit diesem neuen Feature zu einem aktiven täglichen Begleiter, um die Ausbreitung der Pandemie einzudämmen.
  
 <!-- overview -->
 
