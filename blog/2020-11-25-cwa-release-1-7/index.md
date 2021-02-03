@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-Corona-Warn-App Version 1.7 is now available in the Google Play Store and Apple’s App Store. With the update, the exposure check can be run several times a day. In addition, users who have tested positive will now receive a reminder if they haven’t shared their test result. 
+Corona-Warn-App Version 1.7 is now available in the Google Play Store and Apple’s App Store. With the update, Deutsche Telekom and SAP's project team enabled the exposure check to  run several times a day. In addition, users who have tested positive will now receive a reminder if they haven’t shared their test result. 
  
 <!-- overview -->
 
