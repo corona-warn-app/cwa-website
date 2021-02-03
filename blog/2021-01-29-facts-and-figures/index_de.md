@@ -1,6 +1,6 @@
 ---
 page-title: "Aktuelle Zahlen und Fakten"
-page-description: "Aktuelle Zahlen und Fakten - eine Zwischenbilanz"
+page-description: "Aktuelle Zahlen und Fakten"
 page-name: facts-and-figures
 page-name_de: facts-and-figures
 author: Janina Hoerdt
