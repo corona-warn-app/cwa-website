@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-Over the next 48 hours, the Corona-Warn-App's new version will be rolled out to all devices. Version 1.9 uses the updated version of the Exposure Notification Framework (ENF) provided by Apple and Google. The two companies have evolved the framework so that more precise pseudonymous information about encounters can be provided. 
+Deutsche Telekom and SAP's project team published a new version of the Corona-Warn-App which will be rolled out to all devices over the next 48 hours. Version 1.9 uses the updated version of the Exposure Notification Framework (ENF) provided by Apple and Google. The two companies have evolved the framework so that more precise pseudonymous information about encounters can be provided. 
 
  
 <!-- overview -->
