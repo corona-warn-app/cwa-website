@@ -1,13 +1,13 @@
 ---
-page-title: "Aktuelle Zahlen und Fakten - eine Zwischenbilanz"
-page-description: "Aktuelle Zahlen und Fakten - eine Zwischenbilanz"
+page-title: "Aktuelle Zahlen und Fakten"
+page-description: "Aktuelle Zahlen und Fakten"
 page-name: facts-and-figures
 page-name_de: facts-and-figures
 author: Janina Hoerdt
 layout: blog
 ---
 
-In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zu Laboranbindungen und der Anzahl übermittelter Testergebnisse. 
+In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse. 
 
 
 ### **Übersicht früherer Zahlen und Fakten** 
