@@ -312,7 +312,7 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '14.3'))
+    .pipe(replace('[ios.latest-os-version]', '14.4'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
     .pipe(replace('[ios.current-app-version]', '1.12'))
     .pipe(replace('[android.latest-os-version]', '11'))
