@@ -152,13 +152,14 @@
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
-                            "Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und innerhalb von wenigen Tagen kein Testergebnis über die App mitgeteilt bekommen, könnte es sein, dass",
+                            "Die komplette Bearbeitungsdauer eines Tests (von der Entnahme der Probe bei Ihrem Arzt oder Testzentrum bis zur Benachrichtigung in der App) kann bis zu 48 Stunden betragen. Sofern Sie nach einem Corona-Test Ihren QR-Code in die App eingescannt haben und spätestens 3 Tage nach Ihrem Test kein Testergebnis über die App mitgeteilt wurde, könnte es sein, dass",
                             "<ul><li>das entsprechende Labor noch nicht vollständig mit dem Backend der Corona-Warn-App zusammenarbeitet.</li><li>die Übermittlungsfreigabe des Testergebnisses an die Corona-Warn-App über das entsprechende Feld im Laborauftragsformular 10C/OEDG zum Testen nicht erteilt wurde.</li></ul>",
                             "Erkundigen Sie sich daher bitte, ob das Labor, mit dem der Arzt oder das Testcenter zusammenarbeiten, an die Corona-Warn-App angebunden ist und das Feld zur Übermittlungsfreigabe auf dem Formular angekreuzt ist. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert.",
                             "Derzeit sind 90% der vorhandenen Testkapazitäten in Deutschland durch den kompletten digitalen Prozess abgedeckt. Wir arbeiten mit den Laboren weiter daran, die Lücken zu schließen und alle Labore für den Prozess anzubinden und aufzurüsten. Deshalb kann es vorkommen, dass ein Labor zwar die Beauftragung für den Test mit dem richtigen Formular bekommt, das Testergebnis aber auf einem anderen Weg an die getestete Person übermitteln muss.",
                             "Rufen Sie bitte beim zuständigen ärztlichen Fachpersonal bzw. Testcenter/Gesundheitsamt an, um Ihr Testergebnis zu erhalten. Wird Ihnen dabei ein positives Testergebnis mitgeteilt, können Sie über die Hotline unter der 0800 7540002 eine TeleTAN beantragen, um über die Corona-Warn-App Ihre Risikobegegnungen zu warnen. Tragen Sie für diesen Zweck die erhaltene TeleTAN unter",
                             "<ul><li>'NÄCHSTE SCHRITTE' ->  'TAN-Eingabe'</li></ul>",
-                            "in die Corona-Warn-App ein."
+                            "in die Corona-Warn-App ein.",
+                            "Sie können Fälle bei denen Sie länger als 3 Tage auf das Testergebnis warten oder Labore, die nicht an die Corona-Warn-App angeschlossen sind, per Mail an <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a> melden. Bitte schicken Sie einen Scan des Informationsblatts inklusive des QR Codes mit und geben Sie das Datum an dem Sie getestet wurden, die Anzahl der Tage, die Sie auf das Testergebnis gewartet haben, sowie die Kontaktdaten des Arztes oder Testzentrums an. Alle nicht notwendigen persönlichen Daten sollten geschwärzt werden. Wir werden dann versuchen, Anbindungsprobleme und lange Wartezeiten mit den beteiligten Parteien zu beheben."
                         ]
                     },
                     {
@@ -561,6 +562,14 @@
                             "So funktioniert die App:",
                             "<ol><li>Alle Smartphones, die die App installiert haben, senden und empfangen pseudonymisierte Schlüssel, die dann lokal auf dem Smartphone gespeichert werden. Die Bluetooth-Verbindung ist nur für das Senden und Empfangen der pseudonymisierten Schlüssel notwendig.</li><li>Falls Sie positiv getestet wurden, können Sie Ihre Diagnoseschlüssel ('Positivkennung') auf den Server hochladen. Alle Smartphones mit der Corona-Warn-App empfangen in regelmäßigen Abständen die Schlüssel von diesem Server und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth lokal gespeichert haben. Hierfür muss Ihr Smartphone Zugang zum Internet haben, zum Beispiel über WLAN oder mobile Daten.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass es eine Begegnung mit einer Person gab, die positiv auf Corona getestet wurde. Für diesen Abgleich von Übereinstimmungen benötigen Sie keine Bluetooth-Verbindung.</li></ol>",
                             "Das <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a> beschreibt den technischen Ablauf im Detail."
+                        ]
+                    },
+                    {
+                        "title": "Wann erhalte ich mein Testergebnis in der App?",
+                        "anchor": "result_time",
+                        "active": true,
+                        "textblock": [
+                            "Bis der Test im Labor untersucht und das Testergebnis an die Server der Corona-Warn-App gemeldet wird, vergehen derzeit im Durchschnitt 22-28 Stunden. Jedoch kann die Wartezeit je nach beauftragtem Labor bis zu 48 Stunden betragen. In den allermeisten Fällen erhalten Sie Ihr Ergebnis also am nächsten oder übernächsten Tag. Falls Ihr Testergebnis nach 3 Tagen noch nicht in der App abrufbar ist, beachten Sie bitte die Hinweise im FAQ-Eintrag: <a href='#qr_test' target='_blank' rel='noopener noreferrer'>Ich habe einen QR Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden</a>."
                         ]
                     },
                     {
