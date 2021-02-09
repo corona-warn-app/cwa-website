@@ -332,21 +332,24 @@
                         ]
                     },
                     {
+                        "title": "[Apple/iOS]: Warum ist iOS 13.7 bzw iOS 12.5 Mindestvoraussetzung?",
+                        "anchor": "ios135",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL 10 Februar 2021</b><br/>Mit der Corona-Warn-App Version 1.12 werden zusätzlich auch die ältere iPhone Modelle iPhone 5s, iPhone 6, und iPhone 6 Plus unterstützt. Vorraussetzung ist auf diesen Geräten das iOS Betriebssystem mindestens auf die Version iOS 12.5 zu aktualisieren.",
+                            "Apple stellt für die Modelle iPhone SE (1. Generation), iPhone 6s, und neuere Modelle die Betriebsversion iOS 13.7 und höher bereit.",
+                            "Mehr Details zu den Systemvoraussetzungen finden Sie <a href='#minimum_requirements' target='_blank' rel='noopener noreferrer'>in diesem FAQ Eintrag.</a>",
+                            "Siehe auch den Blog <a href='https://www.coronawarn.app/de/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen.</a><hr/>",                            
+                            "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Mit dem Release 1.9 (und dem Update auf <a href='https://www.coronawarn.app/de/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'> Version 2 des Exposure Notification Frameworks</a>) der Corona-Warn-App wird nun iOS [ios.minimum-required-os-version] vorausgesetzt, da die Version 2 des Exposure Notification Frameworks mit dieser Version eingeführt wurde. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
+                        ]
+                    },
+                    {
                         "title": "Ich teste eine Beta-Version von iOS. Warum wird die Corona-Warn-App noch nicht unterstützt?",
                         "anchor": "beta_ios",
                         "active": true,
                         "textblock": [
                             "Wir unterstützen offiziell keine Beta-Versionen der jeweiligen Betriebssysteme. Diese sind noch in der Entwicklung und nicht für den produktiven Betrieb vorgesehen.",
                             "Wenn Sie als Teilnehmer am Apple Beta Software-Programm jedoch frühzeitig auf potentielle Fehler oder Inkompatibilitäten hinweisen möchten, <a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>nehmen wir Ihr Feedback gerne auf Github entgegen</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: Warum ist iOS [ios.minimum-required-os-version] Mindestvoraussetzung?",
-                        "anchor": "ios135",
-                        "active": true,
-                        "textblock": [
-                            "<b>AKTUELL</b><br/><a href='https://www.coronawarn.app/de/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen.</a><hr/>",
-                            "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Mit dem Release 1.9 (und dem Update auf <a href='https://www.coronawarn.app/de/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'> Version 2 des Exposure Notification Frameworks</a>) der Corona-Warn-App wird nun iOS [ios.minimum-required-os-version] vorausgesetzt, da die Version 2 des Exposure Notification Frameworks mit dieser Version eingeführt wurde. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
                         ]
                     },
                     {
