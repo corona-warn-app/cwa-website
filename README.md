@@ -28,7 +28,7 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test it locally.
+You need the LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test the deployment of the website locally.
 
 ### Getting started
 
@@ -41,7 +41,7 @@ npm run build
 
 After a successful build, you'll have a new folder `public` in the repository's base directory. It contains the generated files for the complete website.
 
-To test the generated content, simply use a local web server such as http-server by executing the command
+To test the generated content, simply execute the command
 
 ```bash
 npm start
