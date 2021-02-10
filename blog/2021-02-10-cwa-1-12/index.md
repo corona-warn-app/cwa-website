@@ -26,12 +26,16 @@ To use the Corona-Warn-App, owners of an iPhone 5s, 6 or 6 Plus should first ins
 
 ## Contact journal with exposure history
 
-Another new feature in version 1.12 is the **exposure history**, which users can find in the contact journal’s overview. It allows users to better assess the risk they’ve been exposed to: While the app’s home screen only shows the date of the latest encounter in case of several risk encounters, users now can use the contact journal to see when other encounters with a high or low risk took place. If they've had encounters with a high or low risk in the past 15 days, users can find the exposure history in the overview of their contact journal after they've selected "Open Journal", 
+Another new feature in version 1.12 is the **exposure history**, which users can find in the contact journal’s overview. It allows users to better assess the risk they’ve been exposed to: While the app’s home screen only shows the date of the latest encounter in case of several risk encounters, users now can use the contact journal to see when other encounters with a high or low risk took place. If they've had encounters with a high or low risk in the past 15 days, users can find the exposure history in the overview of their contact journal after they've selected "Open Journal".
+
+<br></br>
+<center> <img src="./exposure-history-en.jpg" title="Exposure History" style="align: center"></center>
+<br></br>
 
 
 ### Don’t draw false conclusions
 
-**Important note**: The contact journal serves as a private memory aid and is independent from the app’s contact tracing system. Therefore, it is very important to distinguish between the personal entries in the contact journal (places and people) and the app's tracing system: For privacy reasons, the Corona-Warn-App does not know where users have been or whom they’ve met. It only receives pseudonymized IDs of other smartphones. That’s why it cannot identify or display a connection between a place or person added to the contact journal and an increased risk. Hence there’s a note after each risk encounter in the exposure history: *"Increased risk based on encounters evaluated by the app. __These do not have to be related to the people and places you added to your journal__."* This means users must not draw false conclusions. An encounter with a high or low risk may or may not have taken place at a location or with a person added to the contact journal.
+**Important note**: The contact journal serves as a private memory aid and is independent from the app’s contact tracing system. Therefore, it is very important to distinguish between the personal entries in the contact journal (places and people) and the app's tracing system: For privacy reasons, the Corona-Warn-App does not know where users have been or whom they’ve met. It only receives pseudonymized IDs of other smartphones. That’s why it cannot identify or display a connection between a place or person added to the contact journal and an increased risk. Hence there’s a note after each risk encounter in the exposure history: *"Increased risk based on encounters evaluated by the app. __They are not necessarily related to the people and places you have recorded__."* This means users must not draw false conclusions. An encounter with a high or low risk may or may not have taken place at a location or with a person added to the contact journal.
 
 Such a separation of private entries and the app’s contact-tracing-system is also the reason why Apple and Google do not allow their interface to access users' address books.
 
