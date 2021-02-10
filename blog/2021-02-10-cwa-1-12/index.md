@@ -18,7 +18,7 @@ With version 1.12, users who have an **iPhone 5s, 6 or 6 Plus** can now use the 
 <center> <img src="./cwa-ios-12-5.jpg" title="Corona-Warn-App auf iPhone 5s" style="align: center"></center>
 <br></br>
 
-Users can use the Corona-Warn-App on iOS 12.5 without restrictions. The only difference to iPhones running on iOS 13.5 or a newer version: Under iOS 12.5, the Corona-Warn-App updates the risk calculation **in the background** up to two times a day, while it does so up to six times a day under iOS 13.5, given the smartphone is connected to Wifi. If users open the Corona-Warn-App under iOS 12.5 when connected to Wifi, they can trigger risk calculation manually, so that it can also be updated up to six times a day. 
+Users can use the Corona-Warn-App on iOS 12.5 without restrictions. The only difference: Under iOS 12.5, the Corona-Warn-App updates the risk calculation **in the background** up to two times a day, while it does so up to six times a day under iOS 13.7 and above, given the smartphone is connected to Wifi. If users open the Corona-Warn-App under iOS 12.5 when connected to Wifi, they can trigger risk calculation manually, so that it can also be updated up to six times a day. 
 
 To use the Corona-Warn-App, owners of an iPhone 5s, 6 or 6 Plus should first install the latest supported operating system (iOS 12.5). Then, they can download the app from Apple's app store.
 
