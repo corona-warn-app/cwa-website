@@ -17,7 +17,7 @@ Mit Version 1.12 können nun auch Nutzer*innen, die ein **iPhone 5s, 6 oder 6 Pl
 <center> <img src="./cwa-ios-12-5.jpg" title="Corona-Warn-App auf iPhone 5s" style="align: center"></center>
 <br></br>
 
-Nutzer\*innen können die Corona-Warn-App unter iOS 12.5, beziehungsweise 12.5.1, uneingeschränkt verwenden. Der einzige Unterschied zu iPhones, die iOS 13.5 oder höher nutzen: Unter iOS 12.5 aktualisiert die Corona-Warn-App die Risikoberechnung im Hintergrund bis zu zwei Mal am Tag, während das unter iOS 13.5 bis zu sechs Mal am Tag möglich ist, sofern das Smartphone mit dem WLAN verbunden ist. Öffnen Nutzer\*innen die Corona-Warn-App unter iOS 12.5 im WLAN, können sie die Risikoberechnung manuell auslösen, sodass sie dann ebenfalls bis zu sechs Mal am Tag aktualisiert werden kann.
+Nutzer\*innen können die Corona-Warn-App unter iOS 12.5, beziehungsweise 12.5.1, uneingeschränkt verwenden. Der einzige Unterschied: Unter iOS 12.5 aktualisiert die Corona-Warn-App die Risikoberechnung im Hintergrund bis zu zwei Mal am Tag, während das unter iOS 13.7 oder höher bis zu sechs Mal am Tag möglich ist, sofern das Smartphone mit dem WLAN verbunden ist. Öffnen Nutzer\*innen die Corona-Warn-App unter iOS 12.5 im WLAN, können sie die Risikoberechnung manuell auslösen, sodass sie dann ebenfalls bis zu sechs Mal am Tag aktualisiert werden kann.
 
 Um die Corona-Warn-App zu nutzen, sollten Besitzer\*innen eines iPhones 5s, 6 oder 6 Plus also zunächst das neue Betriebssystem (iOS 12.5.1) installieren. Anschließend können sie die App in Apples App-Store herunterladen.
 
