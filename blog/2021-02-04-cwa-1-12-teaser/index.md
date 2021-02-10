@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-The Corona-Warn-App’s next update will be available on February 10, 2021. With version 1.12, the Corona-Warn-App will be compatible with iOS 12.5 so that owners of older iPhones, such as the iPhone 5s, 6, and 6plus, can use the app. Deutsche Telekom and SAP’s project team also adds an exposure history to the contact journal. 
+The Corona-Warn-App’s next update will be available on February 10, 2021. With version 1.12, the Corona-Warn-App will be compatible with iOS 12.5 so that owners of older iPhones, such as the iPhone 5s, 6, and 6 Plus, can use the app. Deutsche Telekom and SAP’s project team also adds an exposure history to the contact journal. 
  
 <!-- overview -->
 
