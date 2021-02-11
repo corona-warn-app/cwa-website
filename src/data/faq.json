@@ -267,6 +267,19 @@
                         ]
                     },
                     {
+                        "title": "[Google/Android]: Error after resetting the app: Limit already reached",
+                        "anchor": "limit_reached",
+                        "active": true,
+                        "textblock": [
+                            "If you encounter the following error message after resetting the app, please wait until the next day before you open the app again.",
+                            "<b>'Limit already reached'</b>",
+                            "<b>'No more exposure checks possible today, as you have reached the maximum number of checks per day defined by your operating system. Please check your risk status again tomorrow.'</b>",
+                            "The error should have disappeared by then and the your risk status should be displayed correctly.",
+                            "This error can occur if you reset the app between 20:00 and 0:00 and your device was constantly connected to Wifi for the whole day. The Corona-Warn-App has a daily limit of 6 periodic checks. In this case, resetting the app triggers an unscheduled risk check that can exceed the daily limit.The functionality of the app is not affected by the failed check.",
+                            "If the error message is still present the next day, you can report this via a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>GitHub Issue 1459</a>."
+                        ]
+                    },
+                    {
                         "title": "My exposure log shows checks for less than 14 days",
                         "anchor": "exposure_check",
                         "active": true,

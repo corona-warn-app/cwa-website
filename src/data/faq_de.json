@@ -268,6 +268,19 @@
                         ]
                     },
                     {
+                        "title": "[Google/Android]: Fehlermeldung nach Zurücksetzen der App: Limit bereits erreicht",
+                        "anchor": "limit_reached",
+                        "active": true,
+                        "textblock": [
+                            "Falls Sie nach dem Zurücksetzen der App die folgende Fehlermeldung erhalten haben, warten Sie bitte bis zum nächsten Tag, bis Sie die App wieder öffnen.",
+                            "<b>'Limit bereits erreicht'</b>",
+                            "<b>'Heute sind keine weiteren Risiko-Überprüfungen möglich, weil das von Ihrem Betriebssystem festgelegte Limit von Risiko-Überprüfungen pro Tag bereits erreicht ist. Bitte überprüfen Sie Ihren Risikostatus morgen wieder.'</b>",
+                            "Der Fehler sollte dann verschwunden sein und Ihr Risiko-Status sollte korrekt angezeigt werden.",
+                            "Dieser Fehler kann auftreten, wenn Sie die App zwischen 20:00 Uhr und 0:00 Uhr zurücksetzen und ihr Gerät den gesamten Tag über eine konstante WLAN-Verbindung hatte. Die Corona-Warn-App hat ein Tageslimit von 6 regelmäßigen Risiko-Überprüfungen. In diesem Fall führt das Zurücksetzen der App zu einer außerplanmäßigen Risiko-Überprüfung, bei der das Tageslimit überschritten werden kann. Die Funktionalität der App wird durch die fehlgeschlagene Überprüfung nicht beeinträchtigt.",
+                            "Falls die Fehlermeldung am nächsten Tag noch vorhanden ist, können Sie dies über einen Kommentar in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>GitHub Issue 1459</a> melden."
+                        ]
+                    },
+                    {
                         "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",
                         "active": true,
