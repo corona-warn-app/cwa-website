@@ -7,7 +7,7 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In this post, you can find [regularly updated facts and figures]((https://www.coronawarn.app/assets/documents/2021-02-12-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
+In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-02-12-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
 
 
 
