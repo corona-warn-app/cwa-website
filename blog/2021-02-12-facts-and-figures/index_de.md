@@ -18,7 +18,6 @@ In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen 
 
 <!-- overview -->
 
-#### 2021
 * [22. Januar 2021](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf) 
 
 #### 2020
