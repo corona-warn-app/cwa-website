@@ -21,7 +21,6 @@ In this post, you can find [regularly updated facts and figures](https://www.cor
 
 <!-- overview -->
 
-#### 2021
 * [January 22, 2021](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf) 
 
 #### 2020
