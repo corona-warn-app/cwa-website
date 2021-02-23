@@ -9,7 +9,7 @@ layout: blog
  
 Das Projektteam der Deutschen Telekom und SAP passt die Risikoberechnung der Corona-Warn-App in Zusammenarbeit mit dem Robert Koch-Institut nach umfangreichen Tests durch das Fraunhofer Institut für Integrierte Schaltungen (IIS) weiter an. Begegnungen mit erhöhtem Risiko können dadurch noch besser erkannt und in der Corona-Warn-App entsprechend dargestellt werden. Kurzkontakte zwischen zwei Personen werden nun ab einer Dauer von mindestens 5 Minuten berücksichtigt, nicht wie vorher erst ab mindestens 10 Minuten. 
 
-Mit dieser Umstellung können nun mehrere Begegnungen kürzerer Dauer mit einer später positiv getesteten Person besser erfasst werden. Die entsprechenden Daten für diese Umstellung sind erst durch die Weiterentwicklung der Schnittstelle von Google und Apple verfügbar. Die nun durchgeführten Messungen haben bestätigt, dass die App mit dieser Anpassung besser und genauer warnen kann.  
+Mit dieser Umstellung können nun **mehrere Begegnungen kürzerer Dauer** mit einer später positiv getesteten Person besser erfasst werden. Die entsprechenden Daten für diese Umstellung sind erst durch die Weiterentwicklung der Schnittstelle von Google und Apple verfügbar. Die nun durchgeführten Messungen haben bestätigt, dass die App mit dieser Anpassung besser und genauer warnen kann.  
  
 <!-- overview -->
 
