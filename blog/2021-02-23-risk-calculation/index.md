@@ -1,5 +1,5 @@
 ---
-page-title: "RCorona-Warn-App’s risk calculation further adjusted after detailed tests"
+page-title: "Corona-Warn-App’s risk calculation further adjusted after detailed tests"
 page-description: "Corona-Warn-App’s risk calculation further adjusted after detailed tests"
 page-name: corona-warn-app-risk-calculation-optimization
 page-name_de: corona-warn-app-risk-calculation-optimization
