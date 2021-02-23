@@ -26,4 +26,6 @@ Dies führt auch dazu, dass die Begegnungen, die einen **tatsächlich relevanten
 
 Die Projektbeteiligten arbeiten kontinuierlich an einer Verbesserung der Messungen und der daraus resultierenden Konfigurationsparameter. Dabei diskutieren die Experten beispielsweise auch **neue Erkenntnisse** über die Ausbreitung und Infektiosität neu auftretender Virusmutationen (sogenannte „Variants of Concern“). Bei einer weiteren Anpassung der Risikoberechnung im Hinblick auf Entfernungen und Signaldämpfungen werden die Projektbeteiligten darüber an dieser Stelle ebenfalls informieren.
 
+Wer noch etwas tiefer in das Thema der Risikoberechnung einsteigen möchte, kann sich **Folge 11 des Corona-Warn-App-Podcasts** anhören. In der neuen Folge erklären Thomas Klingbeil, Software-Entwickler bei SAP und Dr. Justus Benzler, Epidemiologe am Robert Koch-Institut, die Risikoberechnung im Detail: [#CoronaWarnApp – Der digitale Virus-Wachhund - Folge 11 - YouTube](https://www.youtube.com/watch?v=OzGdXCl6Ozw&feature=youtu.be)
+
 
