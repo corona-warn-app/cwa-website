@@ -725,7 +725,7 @@
                             "Each of these windows must meet certain criteria to be considered:",
                             "<ul><li>The signal attenuation must have been below 73dB for at least 10 minutes (reduced to 5 minutes on Feb 23, 2021, see <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>blog post</a>) within the 30-minute window</li>",
                             "<li>The transmission risk level must be at least III (3). It is determined when sharing the diagnosis codes per day according to defined criteria such as symptom status and/or symptom onset</li></ul>",
-                            "If these criteria are <b>not</b> met, an encounter is <b>not count</b> within the app. It is a 'non-risk encounter'.  However, in the operating system's contact log, a count is performed. However, this is not an error.",
+                            "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'.  However, in the operating system's contact log, a count is performed. However, this is not an error.",
                             "However, if the conditions are met, the contact times are weighted depending on the signal attenuation:",
                             "<ul><li>Times with an attenuation <55dB are calculated at 100%.</li>",
                             "<li>Times with an attenuation >= 55dB and <63dB are calculated at 50%</li></ul>",
