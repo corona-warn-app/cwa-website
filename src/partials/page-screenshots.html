@@ -8,61 +8,43 @@
                 {{> text-component page-contents.section-main.content}}
                 </div>
             </div>
-
-
+            
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" href="#android_screenshots">Android Screenshots</a>
-                    <a class="nav-item nav-link" href="#ios_screenshots">iOS Screenshots</a>
+                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
+                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="android_screenshots">
-                    <div class="row">
-                        <h3 class="headline my-4">Einführung</h3>
-                        <div class="col-6 col-sm-4 col-md-3 mb-4">
-                            <a href="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
-                                <img src="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-fluid img-shadow" />
-                             </a>
+                    {{#each page-contents.android-screnshots.sections}}
+                        <div class="row">
+                            <h3 class="headline my-4">{{{title}}}</h3>
+                            {{#each images}}
+                                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                                    <a href="/assets/img/screenshots/{{{filename}}}" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
+                                        <img src="/assets/img/screenshots/{{{filename}}}" class="img-fluid img-shadow" alt="{{{alt}}}" />
+                                    </a>
+                                </div>
+                            {{/each}}
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 mb-4">
-                            <a href="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
-                                <img src="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-fluid img-shadow" />
-                             </a>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 mb-4">
-                            <a href="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
-                                <img src="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-fluid img-shadow" />
-                             </a>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 mb-4">
-                            <a href="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
-                                <img src="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-fluid img-shadow" />
-                             </a>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 mb-4">
-                            <a href="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
-                                <img src="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-fluid img-shadow" />
-                             </a>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 mb-4">
-                            <a href="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
-                                <img src="{{root}}assets/img/screenshots/HomeFragment_increased_risk.webp" class="img-fluid img-shadow" />
-                             </a>
-                        </div>
-                    </div>
+                    {{/each}}
                 </div>
                 <div class="tab-pane fade" id="ios_screenshots">
-
-                    TODO
-
+                    {{#each page-contents.ios-screnshots.sections}}
+                    <div class="row">
+                        <h3 class="headline my-4">{{{title}}}</h3>
+                        {{#each images}}
+                            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                                <a href="/assets/img/screenshots/{{{filename}}}" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
+                                    <img src="/assets/img/screenshots/{{{filename}}}" class="img-fluid img-shadow" alt="{{{alt}}}" />
+                                </a>
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/each}}
                 </div>
             </div>
-
-
-
-
-            
         </div>
     </div>
 </section>
