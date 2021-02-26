@@ -228,4 +228,286 @@ $(document).ready(function(){
     //        scrollTop: $($.attr(this, 'href')).offset().top
     //    }, 600);
     //});
+
+    // simple jquery tabs
+    $('.nav-tabs a').click(function(e) {
+        e.preventDefault();
+
+        //Toggle tab link
+        $(this).addClass('active').siblings().removeClass('active');
+
+        //Toggle target tab
+        $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
+      });
+
+
+      // pure js lightbox
+      (function(root, document) {
+        "use strict";
+    
+        var docElem = document.documentElement || "";
+        var docBody = document.body || "";
+        var animatedClass = "animated";
+        var btnCloseClass = "btn-close";
+        var containerClass = "img-lightbox";
+        var fadeInClass = "fadeIn";
+        var fadeInUpClass = "fadeIn";
+        var fadeOutClass = "fadeOut";
+        var fadeOutDownClass = "fadeOut";
+        var jsLightboxWindowIsBindedClass = "img-lightbox-window--is-binded";
+        var jsLightboxOpenClass = "img-lightbox--open";
+        var jsLightboxLinkIsBindedClass = "img-lightbox-link--is-binded";
+        var isLoadedClass = "is-loaded";
+        var dummySrc =
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+        var isMobile = navigator.userAgent.match(
+            /(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i
+        );
+        var isTouch =
+            isMobile !== null ||
+            document.createTouch !== undefined ||
+            "ontouchstart" in root ||
+            "onmsgesturechange" in root ||
+            navigator.msMaxTouchPoints;
+    
+        var debounce = function debounce(func, wait) {
+            var timeout;
+            var args;
+            var context;
+            var timestamp;
+            return function() {
+                context = this;
+                args = [].slice.call(arguments, 0);
+                timestamp = new Date();
+    
+                var later = function later() {
+                    var last = new Date() - timestamp;
+    
+                    if (last < wait) {
+                        timeout = setTimeout(later, wait - last);
+                    } else {
+                        timeout = null;
+                        func.apply(context, args);
+                    }
+                };
+    
+                if (!timeout) {
+                    timeout = setTimeout(later, wait);
+                }
+            };
+        };
+    
+        var callCallback = function callCallback(func, data) {
+            if (typeof func !== "function") {
+                return;
+            }
+    
+            var caller = func.bind(this);
+            caller(data);
+        };
+    
+        var setDisplayBlock = function setDisplayBlock(e) {
+            if (e) {
+                e.style.display = "block";
+            }
+        };
+    
+        var setDisplayNone = function setDisplayNone(e) {
+            if (e) {
+                e.style.display = "none";
+            }
+        };
+    
+        var hidejsLightbox = function hidejsLightbox(callback) {
+            var container =
+                document.getElementsByClassName(containerClass)[0] || "";
+            var img = container
+                ? container.getElementsByTagName("img")[0] || ""
+                : "";
+    
+            var hideContainer = function hideContainer() {
+                container.classList.remove(fadeInClass);
+                container.classList.add(fadeOutClass);
+    
+                var hideImg = function hideImg() {
+                    container.classList.remove(animatedClass);
+                    container.classList.remove(fadeOutClass);
+                    img.classList.remove(animatedClass);
+                    img.classList.remove(fadeOutDownClass);
+    
+                    img.onload = function() {
+                        container.classList.remove(isLoadedClass);
+                    };
+    
+                    img.src = dummySrc;
+                    setDisplayNone(container);
+                    callCallback(callback, root);
+                };
+    
+                var timer = setTimeout(function() {
+                    clearTimeout(timer);
+                    timer = null;
+                    hideImg();
+                }, 400);
+            };
+    
+            if (container && img) {
+                img.classList.remove(fadeInUpClass);
+                img.classList.add(fadeOutDownClass);
+                var timer = setTimeout(function() {
+                    clearTimeout(timer);
+                    timer = null;
+                    hideContainer();
+                }, 400);
+            }
+    
+            docElem.classList.remove(jsLightboxOpenClass);
+            docBody.classList.remove(jsLightboxOpenClass);
+        };
+    
+        var jsLightbox = function jsLightbox(linkClass, settings) {
+            var _linkClass = linkClass || "";
+    
+            var options = settings || {};
+            var rate = options.rate || 500;
+            var touch = options.touch;
+            var onError = options.onError;
+            var onLoaded = options.onLoaded;
+            var onCreated = options.onCreated;
+            var onClosed = options.onClosed;
+            var link = document.getElementsByClassName(_linkClass) || "";
+            var container =
+                document.getElementsByClassName(containerClass)[0] || "";
+            var img = container
+                ? container.getElementsByTagName("img")[0] || ""
+                : "";
+    
+            if (!container) {
+                container = document.createElement("div");
+                container.classList.add(containerClass);
+                var html = [];
+                html.push('<img src="' + dummySrc + '" alt="" />');
+                html.push(
+                    '<div class="half-circle-spinner"><div class="circle circle-1"></div><div class="circle circle-2"></div></div>'
+                );
+                html.push('<a href="javascript:void(0);" class="btn-close"></a>');
+                container.innerHTML = html.join("");
+                docBody.appendChild(container);
+                img = container
+                    ? container.getElementsByTagName("img")[0] || ""
+                    : "";
+                var btnClose = container
+                    ? container.getElementsByClassName(btnCloseClass)[0] || ""
+                    : "";
+    
+                var handlejsLightboxContainer = function handlejsLightboxContainer() {
+                    hidejsLightbox(onClosed);
+                };
+    
+                container.addEventListener("click", handlejsLightboxContainer);
+                btnClose.addEventListener("click", handlejsLightboxContainer);
+    
+                if (!docElem.classList.contains(jsLightboxWindowIsBindedClass)) {
+                    docElem.classList.add(jsLightboxWindowIsBindedClass);
+                    root.addEventListener("keyup", function(ev) {
+                        if (27 === (ev.which || ev.keyCode)) {
+                            hidejsLightbox(onClosed);
+                        }
+                    });
+                }
+            }
+    
+            var arrange = function arrange(e) {
+                var hrefString =
+                    e.getAttribute("href") || e.getAttribute("data-src") || "";
+                var dataTouch = e.getAttribute("data-touch") || "";
+    
+                if (!hrefString) {
+                    return;
+                }
+    
+                var handlejsLightboxLink = function handlejsLightboxLink(ev) {
+                    ev.stopPropagation();
+                    ev.preventDefault();
+                    docElem.classList.add(jsLightboxOpenClass);
+                    docBody.classList.add(jsLightboxOpenClass);
+                    container.classList.remove(isLoadedClass);
+    
+                    var logic = function logic() {
+                        if (onCreated) {
+                            callCallback(onCreated, root);
+                        }
+    
+                        container.classList.add(animatedClass);
+                        container.classList.add(fadeInClass);
+                        img.classList.add(animatedClass);
+                        img.classList.add(fadeInUpClass);
+    
+                        img.onload = function() {
+                            container.classList.add(isLoadedClass);
+    
+                            if (onLoaded) {
+                                callCallback(onLoaded, root);
+                            }
+                        };
+    
+                        img.onerror = function() {
+                            if (onError) {
+                                callCallback(onError, root);
+                            }
+                        };
+    
+                        img.src = hrefString;
+                        setDisplayBlock(container);
+                    };
+    
+                    debounce(logic, rate).call();
+                };
+    
+                if (!e.classList.contains(jsLightboxLinkIsBindedClass)) {
+                    e.classList.add(jsLightboxLinkIsBindedClass);
+                    e.addEventListener("click", handlejsLightboxLink);
+    
+                    if (isTouch && (touch || dataTouch)) {
+                        e.addEventListener("touchstart", handlejsLightboxLink);
+                    }
+                }
+            };
+    
+            if (container && img && link) {
+                var i, l;
+    
+                for (i = 0, l = link.length; i < l; i += 1) {
+                    arrange(link[i]);
+                }
+    
+                i = l = null;
+            }
+        };
+    
+        root.jsLightbox = jsLightbox;
+    })("undefined" !== typeof window ? window : this, document);
+    
+    (function (root) {
+        "use strict";
+        if (root.jsLightbox) {
+            jsLightbox("img-lightbox-link", {
+                onCreated: function () {
+                    /* show your preloader */
+                },
+                onLoaded: function () {
+                    /* hide your preloader */
+                },
+                onError: function () {
+                    /* hide your preloader */
+                },
+                onClosed: function () {
+                    /* hide your preloader */
+                },
+                rate: 500 /* default: 500 */ ,
+                touch: false /* default: false - use with care for responsive images in links on vertical mobile screens */
+            });
+        }
+    })("undefined" !== typeof window ? window : this);
+
 });
