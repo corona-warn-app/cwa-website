@@ -1,13 +1,28 @@
-"applinks": {
-  "details": [
-    {
-      "appIDs": [ "523TP53AQF.de.rki.corona-warn-app",  "523TP53AQF.de.rki.coronawarnapp-dev", "523TP53AQF.de.rki.coronawarnapp" ],
-      "components": [
-        {
-          "/": "/e1/*",
-          "comment": "Matches any URL whose path starts with /e1/"
-        }
-      ]
-    }
-  ]
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "523TP53AQF.de.rki.corona-warn-app",
+        "paths": [
+          "/e1/*",
+          "/E1/*"
+        ]
+      },
+      {
+        "appID": "523TP53AQF.de.rki.coronawarnapp-dev",
+        "paths": [
+          "/e1/*",
+          "/E1/*"
+        ]
+      },
+      {
+        "appID": "523TP53AQF.de.rki.coronawarnapp",
+        "paths": [
+          "/e1/*",
+          "/E1/*"
+        ]
+      }
+    ]
+  }
 }
