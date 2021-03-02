@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Mehr als 25,7 Millionen Menschen haben die Corona-Warn-App mittlerweile heruntergeladen. Die Wirksamkeit der App im Kampf gegen die Pandemie ist dabei direkt abhängig von der **Bereitschaft der Menschen** die App aktiv zu nutzen. Mehr als eine viertel Millionen Nutzer\*innen haben ihr positives Testergebnis bisher geteilt und ihre Mitmenschen damit vor einer potentiellen Infektion mit dem Corona-Virus gewarnt. Um die Annahmebereitschaft der App in der Bevölkerung noch weiter zu erhöhen, hat die Bergische Universität Wuppertal [eine Umfrage](https://umfrage.uni-wuppertal.de/index.php/765823?lang=de) zur Motivation von Nutzer*innen der Corona-Warn-App erstellt. 
+Mehr als 25,7 Millionen Menschen haben die Corona-Warn-App mittlerweile heruntergeladen. Die Wirksamkeit der App im Kampf gegen die Pandemie ist dabei direkt abhängig von der **Bereitschaft der Menschen** die App aktiv zu nutzen. Mehr als eine viertel Million Nutzer\*innen haben ihr positives Testergebnis bisher geteilt und ihre Mitmenschen damit vor einer potentiellen Infektion mit dem Corona-Virus gewarnt. Um die Annahmebereitschaft der App in der Bevölkerung noch weiter zu erhöhen, hat die Bergische Universität Wuppertal [eine Umfrage](https://umfrage.uni-wuppertal.de/index.php/765823?lang=de) zur Motivation von Nutzer*innen der Corona-Warn-App erstellt. 
  
 <!-- overview -->
 
