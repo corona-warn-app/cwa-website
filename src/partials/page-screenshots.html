@@ -12,7 +12,7 @@
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
-                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>
+                    <!--<a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>-->
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -22,7 +22,7 @@
                             <h3 class="headline my-4">{{{title}}}</h3>
                             {{#each images}}
                                 <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                    <a href="/assets/img/screenshots/{{{filename}}}" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
+                                    <a href="/assets/img/screenshots/{{{filename}}}" data-lightbox="{{{../anchor}}}">
                                         <img src="/assets/img/screenshots/{{{filename}}}" class="img-fluid img-shadow" alt="{{{alt}}}" />
                                     </a>
                                 </div>
@@ -36,7 +36,7 @@
                         <h3 class="headline my-4">{{{title}}}</h3>
                         {{#each images}}
                             <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                <a href="/assets/img/screenshots/{{{filename}}}" class="img-lightbox-link" aria-hidden="true" rel="lightbox">
+                                <a href="/assets/img/screenshots/{{{filename}}}" data-lightbox="{{{anchor}}}">
                                     <img src="/assets/img/screenshots/{{{filename}}}" class="img-fluid img-shadow" alt="{{{alt}}}" />
                                 </a>
                             </div>
