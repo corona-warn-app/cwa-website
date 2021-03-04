@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Über die nächsten 48 Stunden wird die neue Version 1.9 der Corona-Warn-App auf alle Geräte ausgerollt und stellt damit vor allem auf  Version 2 des Exposure Notification Frameworks (ENF) um, das von Apple und Google zur Verfügung gestellt wird. Beide Unternehmen haben die Schnittstelle weiterentwickelt, sodass nun genauere pseudonyme Informationen über Begegnungen zur Verfügung  gestellt werden können.
+Über die nächsten 48 Stunden wird die neue Version 1.9 der Corona-Warn-App auf alle Geräte ausgerollt. Das Projektteam der Deutschen Telekom und SAP stellt damit auf  Version 2 des Exposure Notification Frameworks (ENF) um, das von Apple und Google zur Verfügung gestellt wird. Beide Unternehmen haben die Schnittstelle weiterentwickelt, sodass nun genauere pseudonyme Informationen über Begegnungen zur Verfügung  gestellt werden können.
  
 <!-- overview -->
 

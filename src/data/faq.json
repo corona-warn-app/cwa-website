@@ -20,9 +20,9 @@
                         "anchor": "who_can_help",
                         "active": true,
                         "textblock": [
-                            "The technical hotline (telephone 0800 7540001) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with risk identification. You can reach the hotline from Monday to Saturday from 7 a.m. to 10 p.m. (except on German public holidays), and it is free of charge for you within Germany.",
-                            "The TAN hotline (telephone 0800 7540002) will help you to enter the TAN if you have a positive test result and if you have not received a TAN or document with a QR code. The hotline is available 24 hours a day, seven days a week. The call is free of charge.",
-                            "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB'>Robert-Koch-Institut Tool: Health authority by postal code or place</a> <br/><a href='https://www.coronawarn.app/de/blog/2020-08-25-notes-qr-codes/'>Further information on the QR Code procedure</a>",
+                            "The technical hotline (telephone 0800 7540001) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with risk identification. You can reach the technical hotline from Monday to Saturday from 7 a.m. to 10 p.m. (except on German public holidays), and it is free of charge for you within Germany.",
+                            "The TAN hotline (telephone 0800 7540002) will help you to enter the TAN if you have a positive test result and if you have not received a TAN or document with a QR code. The TAN hotline is available 24 hours a day, seven days a week. The call is free of charge.",
+                            "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB'>Robert-Koch-Institut Tool: Health authority by postal code or place</a> <br/><a href='../blog/2020-08-25-notes-qr-codes/'>Further information on the QR Code procedure</a>",
                             "The websites of the Federal Government are offering general information and videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
                             "The Robert Koch Institute also provides information on epidemiological aspects: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html</a>.",
                             "As a media representative, please direct your enquiries to <a href='mailto:press@sap.com'>press@sap.com</a>.",
@@ -41,8 +41,11 @@
                         "anchor": "further_details",
                         "active": true,
                         "textblock": [
-                            "Due to the high dynamics of the pandemic, the Corona-Warn app displays important statistical key figures on the current occurrence of the infection starting with the 1.11 version of the app. The shown figures and graphs should guide users to better assess the current situation and to adjust their own behaviour.",
-                            "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>."
+                            "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on the current occurrence of the infection starting with the 1.11 version of the app. The shown figures and graphs should guide users to better assess the current situation and to adjust their own behaviour.",
+                            "The number of new infections is published once a day by the RKI. 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ", 
+                            "The statistics displayed in the Corona-Warn-App get compiled from different sources and get formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
+                            "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>.",
+                            "To ensure the validity of the data in the CWA's statistics, all data sources are carefully verified for completeness and consistency.  Thus, the presentation of the data in the app may be deferred in comparison to other websites/sources. However, in terms of content, the values correspond to the official case numbers of the Robert Koch Institute."
                         ]
                     }
                 ]
@@ -52,7 +55,7 @@
                 "id": "most_asked",
                 "accordion": [
                     {
-                        "title": "CAUSE: 2001, trying to establish a secure connection to the server",
+                        "title": "[Google/Android]: CAUSE: 2001, trying to establish a secure connection to the server",
                         "anchor": "cause2001",
                         "active": true,
                         "textblock": [
@@ -64,7 +67,7 @@
                         ]
                     },
                     {
-                        "title": "Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901",
+                        "title": "[Google/Android]: Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901",
                         "anchor": "access-list",
                         "active": true,
                         "textblock": [
@@ -110,7 +113,7 @@
                         "active": true,
                         "textblock": [
                             "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has subsequently uploaded their diagnosis keys.",
-                            "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are rated as harmless and are not included in the app's risk calculation.",
+                            "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes (reduced to 5 minutes on Feb 23, 2021, see <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>blog post</a>) in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are rated as harmless and are not included in the app's risk calculation.",
                             "The remaining encounters are rated collectively according to their distance and duration as well as the presumed infectiousness of the other person(s). This rating doesn't always yield an increased risk. In this case those encounters will be shown in the Corona-Warn-App but the risk status will stay the same.",
                             "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
                         ]
@@ -149,12 +152,25 @@
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
-                            "If you scanned your QR code into the App after a Corona test and did not receive a test result via the App within a few days, it is possible that",
+                            "The processing time of a test (from taking the sample at your doctor's office or test center to the notification in the app) can be up to 48 hours. If you scanned your QR code into the App after a Corona test and did not receive a test result via the App within 3 days of making the test, it is possible that",
                             "<ul><li>the respective laboratory is not fully linked with the Corona Warn App backend.</li><li>the consent field allowing the transmission of the test result to the Corona-Warn-App was not ticked on the submission form (10C/OEGD) sent by your doctor to the laboratory.</li></ul>",
-                            "Please check whether the laboratory with which the doctor or the test center works is connected to the Corona-Warn-App and whether the consent field is checked on the form. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
+                            "Please check whether the laboratory working with your doctor or test center is connected to the Corona-Warn-App and whether the consent field is checked on the form. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
                             "Currently, 90% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way.",
-                            "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a TeleTAN by calling the hotline at 0800 7540002 to warn your risk encounters. Please enter the TeleTAN into the Corona Warn App by following these steps:",
-                            "<ul><li>'NEXT STEPS' -> 'Enter TAN'</li></ul>"
+                            "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a TeleTAN by calling the TAN hotline on 0800 7540002 to warn your contacts via the Corona-Warn-App. Before you are able to enter the TeleTAN into the app, you have to delete the pending test result from the app. To do this, please tap on",
+                            "<ul><li>'Display Test' -> 'Delete test</li></ul>",
+                            "Confirm again that you really want to remove the test result. Now you can enter the requested TeleTAN into the Corona Warn App by following these steps:",
+                            "<ul><li>'Next Steps' -> 'Enter TAN'</li></ul>",
+                            "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties."
+                        ]
+                    },
+                    {
+                        "title": "Red Card? How to go through Corona testing",
+                        "anchor": "red_card_how_to_test",
+                        "active": true,
+                        "textblock": [
+                            "If the Corona-Warn-App indicates a high infection risk with the red card, please isolate yourself quickly and consult a doctor to get screened if necessary.",
+                            "For a smooth testing process, to receive the test result and to warn others in case of a positive result, please follow the steps in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'>this overview from the Robert Koch Institute</a>.",
+                            "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='PDF'></a>"
                         ]
                     },
                     {
@@ -258,7 +274,7 @@
                         "active": true,
                         "textblock": [
                             "Your phone settings display the exposure checks for the last 14 days:",
-                            "<ul><li><b>iOS:</b> 'Settings' -> 'Exposure Notifications' -> 'Exposure Logging Status' -> 'Exposure Checks'</li><li><b>Android:</b> 'Settings' -> 'Google' -> 'COVID-19 exposure notifications' -> 'Exposure Checks'</li></ul>",
+                            "<ul><li><b>iOS:</b> 'Settings' -> 'Exposure Notifications' -> 'Exposure Logging Status' -> 'Exposure Checks'</li><li><b>Android:</b> 'Settings' -> 'Google' -> 'COVID-19 Exposure Notifications' -> three-dot icon -> 'Exposure Checks'</li></ul>",
                             "When the app was running constantly during the last two weeks, you should see at least one check every day for all of the past 14 days.",
                             "Please note: The log is just the history. After every background update, the exposures of the last 14 days are checked and the risk status calculated. The important thing is that the exposure log shows at least one check for the last 24 hours.",
                             "It might be that entries are displayed for less than 14 days, although exposure was checked correctly. There are several reasons:",
@@ -302,28 +318,49 @@
                         "anchor": "minimum_requirements",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/><a href='https://www.coronawarn.app/en/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a><hr/>",
-                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. Although the Exposure Notification API was introduced with iOS 13.5, your operating system needs to be iOS [ios.minimum-required-os-version] or higher, since Corona-Warn-App uses <a href='https://www.coronawarn.app/en/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a> which was introduced with iOS [ios.minimum-required-os-version].",
+                            "<b>UPDATE February 10, 2021</b>",
+                            "<b>iOS - Minimum operating system requirements</b>",
+                            "The minimum operating system level for iPhone 5s, iPhone 6 and iPhone 6 Plus devices is iOS 12.5. For iPhone SE (1st generation), iPhone 6s, iPhone 6s Plus and newer iOS devices the minimum is iOS 13.7. These versions of the iOS operating system include the necessary v2 version of the Apple Exposure Notification Framework.",
+                            "See also <a href='#ios135' target='_blank' rel='noopener noreferrer'>[Apple/iOS]: Why is iOS 13.7 a minimum requirement?</a> and the blog articles <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a> and <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 1.12 comes with two new features</a>",
+                            "<b>Android - Minimum operating system requirements</b>",
+                            "The minimum operating system level for all Android devices is version 6 of Android. In addition, the device must have Google Play services installed, with a minimum version 1.5 of the Google Exposure Notification System (ENS). See <a href='#ENF_version' target='_blank' rel='noopener noreferrer'>[Google/Android]: Which version of the COVID-19 Exposure Notification System is currently installed?</a> for instructions about how to find out which version of ENS is installed.<hr/>",
+                            "<b>Prior FAQ Entry</b>",
+                            "Apple/iOS: Corona-Warn-App runs on the iPhone 6s or higher. Although the Exposure Notification API was introduced with iOS 13.5, your operating system needs to be iOS [ios.minimum-required-os-version] or higher, since Corona-Warn-App uses <a href='../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a> which was introduced with iOS [ios.minimum-required-os-version].",
                             "Google/Android: Corona-Warn-App runs on phones with Android [android.minimum-required-os-version] or higher. Google Play services install the Exposure Notification API automatically.",
                             "For other operating system-related questions, please contact Apple or Google."
                         ]
                     },
                     {
-                        "title": "I am testing a beta version of iOS. Why is the Corona-Warn-App not yet supported?",
+                        "title": "[Apple/iOS]: Why is iOS 13.7 or iOS 12.5, respectively, a minimum requirement?",
+                        "anchor": "ios135",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE February 10, 2021</b><br/>The Corona-Warn-App version 1.12 also supports the older iPhone models iPhone 5s, iPhone 6, and iPhone 6 Plus. On these devices, the iOS operating system must be upgraded to at least iOS 12.5.",
+                            "Apple provides the operating system iOS 13.7 and higher versions for the iPhone SE (1st generation), iPhone 6s, and newer models.",
+                            "As of February 5, 2021, only the Corona-Warn-App (CWA) versions 1.5.3 and later are supported. For this reason, users with older versions will receive a notification to update their app accordingly. iOS users who have previously used iOS 13.5 and CWA version 1.3, for example, must now update the iOS operating system to at least iOS 13.7 in order to continue using the CWA. Only then can the technically correct operation of the app be ensured.",
+                            "<ul><li>Please update your iOS version first. Older smartphones, such as the iPhone SE, 6S or 6S Plus, also support the latest iOS operating system. This allows you to upgrade your iPhone to at least iOS 13.7. For security reasons, however, you should keep your iPhone up-to-date (currently iOS 14.4), as Apple also regularly fixes minor security vulnerabilities with the updates. You can do this on your iPhone under Settings - General - Software Update.</li><li>Subsequently, please update the Corona-Warn-App. The Corona-Warn-App must also be installed at least in version 1.5.3. The version 1.12.1 is already available.</li></ul><hr/>",
+
+                            "More details about the system requirements can be found <a href='#minimum_requirements' target='_blank' rel='noopener noreferrer'>in this FAQ entry.</a>",
+                            "See also the blog articles <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telecom and SAP will make the Corona Warn app available for iOS 12.5.</a> and <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 1.12 comes with two new features</a><hr/>",
+                            "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With version 1.9 of the Corona-Warn-App (and the use of <a href='../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a>), iOS [ios.minimum-required-os-version] is now required, as version 2 of Exposure Notification API has been introduced with this version. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
+
+
+
+
+
+
+
+
+
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS]: I am testing a beta version of iOS. Why is the Corona-Warn-App not yet supported?",
                         "anchor": "beta_ios",
                         "active": true,
                         "textblock": [
                             "We do not officially support beta versions of the respective operating systems. These are still in development and not intended for productive operation.",
                             "However, if you as a participant in the Apple beta software programme would like to point out potential errors or incompatibilities at an early stage, <a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>we are happy to receive your feedback on Github</a>."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: Why is iOS [ios.minimum-required-os-version] a minimum requirement?",
-                        "anchor": "ios135",
-                        "active": true,
-                        "textblock": [
-                            "<b>UPDATE</b><br/><a href='https://www.coronawarn.app/en/blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom and SAP to make Corona Warn app available for iOS 12.5.</a><hr/>",
-                            "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With release 1.9 of the Corona-Warn-App (and the use of <a href='https://www.coronawarn.app/en/blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a>), iOS [ios.minimum-required-os-version] is now required, as version 2 of Exposure Notification API has been introduced with this version. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
                         ]
                     },
                     {
@@ -348,7 +385,7 @@
                         "active": true,
                         "textblock": [
                             "The app is currently available in the following languages:<ul><li>German</li><li>English</li><li>Turkish (as of version 1.1.1)</li><li>Bulgarian (as of version 1.2.0)</li><li>Polish (as of version 1.2.0)</li><li>Romanian (as of version 1.2.0)</li></ul>",
-                            "The telephone hotline (<a href='tel:08007540001'>0800 7540001</a>) answers in Turkish, English and German. More languages are to come. We'll keep you up to date.",
+                            "The technical hotline (<a href='tel:08007540001'>0800 7540001</a>) answers in Turkish, English and German. More languages are to come. We'll keep you up to date.",
                             "The language of the app is derived from the language that is configured in the smartphone's language settings. To display the app in German, for example, change the language settings to German.",
                             "Please note that many countries release their own Corona tracking apps. Because the German Corona-Warn-App is also available in the app stores and play stores of these countries, the Corona tracking apps could be mixed up. Therefore, make sure that you download the app for your country."
                         ]
@@ -373,8 +410,8 @@
                             "To view more information in the app, tap",
                             "<ol><li>'EXPOSURE LOGGING ACTIVE/STOPPED'</li><li>Then tap 'Transnational Exposure Logging'.</li><li>Scroll down to the list of countries.</li></ol>",
                             "Below is a list of currently participating countries and details of the responsible health authorities:",
-                            "(Status: 14.01.2021)",
-                            "<table class='table'><thead><tr><th>Country</th><th>Data Controller</th><th>Contact Details</th></tr></thead><tbody><tr><td>Belgium<br>(from 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgium<br>E-Mail: coronalert@sciensano.be <i><b>or</b></i> dpo@sciensano.be<br>Phone: +32 479 317 455</td></tr><tr><td>Croatia<br/>(from 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td> Cyprus <br/>(from 15.12.2020)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nicosia<br>Cyprus<br>E-Mail: cyjointcontroller@mphs.moh.gov.cy</td></tr><tr><td>Czech Republic<br/>(pending)</td><td>Ministry of Health</td><td>Ministry of Health<br>Palackého náměstí 4<br>120 00 Praha 2<br>Czech Republic<br>E-Mail: mzcr@mzcr.cz<br>Phone: +420 224971111</td></tr><tr><td>Denmark<br>(from 06.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td> Finland <br>(from 07.01.2021)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finland<br>E-Mail: tietosuoja@thl.fi<br>Phone: +358 29 524 6000</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br> Phone: +371 675015 90 or -91</td></tr><tr><td>Netherlands<br>(from 30.11.2020)</td><td>Minister of Health, Welfare and Sports</td><td>Minister of Health, Welfare and Sports<br>Postbus 16114<br/>2500 BC<br/> The Hague<br/>Netherlands <br>E-Mail: CIBG-eHealth-EU@minvws.nl or FG-VWS@minvws.nl<br> Phone: +31 703405487 </td></tr><tr><td>Poland<br>(from 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warsaw<br> Poland <br>E-Mail: protego@mc.gov.pl<br> Phone: +48 223453300</td></tr><tr><td>Spain<br>(from 06.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br> Spain <br>E-Mail: soporte.radarcovid@economia.gob.es<br> Phone: +34 91 258 28 52</td></tr></tbody></table>"
+                            "(Status: 04.03.2021)",
+                            "<table class='table'><thead><tr><th>Country</th><th>Data Controller</th><th>Contact Details</th></tr></thead><tbody><tr><td>Austria (from 04.02.2021)</td><td>Austrian Red Cross</td><td>General ministry and blood donation centre for Vienna<br>Lower Austria and Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Vienna<br>Austria<br>E-Mail: service@roteskreuz.at<br>Phone: +43 1 58900 955</td></tr><tr><td>Belgium<br>(from 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgium<br>E-Mail: coronalert@sciensano.be <i><b>or</b></i> dpo@sciensano.be<br>Phone: +32 479 317 455</td></tr><tr><td>Croatia<br/>(from 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td> Cyprus <br/>(from 15.12.2020)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nicosia<br>Cyprus<br>E-Mail: cyjointcontroller@mphs.moh.gov.cy</td></tr><tr><td>Czech Republic<br/>(pending)</td><td>Ministry of Health of the Czech Republic</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Phone: +420 224 972 457</td></tr><tr><td>Denmark<br>(from 06.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td> Finland <br>(from 07.01.2021)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finland<br>E-Mail: tietosuoja@thl.fi<br>Phone: +358 29 524 6000</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert-Koch-Institut</td><td>Robert-Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br> Phone: +371 675015 90 or -91</td></tr><tr><td>Netherlands<br>(from 30.11.2020)</td><td>Minister of Health, Welfare and Sports</td><td>Minister of Health, Welfare and Sports<br>Postbus 16114<br/>2500 BC<br/> The Hague<br/>Netherlands <br>E-Mail: CIBG-eHealth-EU@minvws.nl or FG-VWS@minvws.nl<br> Phone: +31 703405487 </td></tr><tr><td>Norway<br>(from 15.02.2021)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norway<br>E-Mail: folkehelseinstituttet@fhi.no<br>Phone: +47 21 07 70 00</td></tr><tr><td>Poland<br>(from 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warsaw<br> Poland <br>E-Mail: protego@mc.gov.pl<br> Phone: +48 223453300</td></tr><tr><td>Slovenia<br>(from 15.02.2021)</td><td>Ministry of Public Administration (MJU) and Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slovenia<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>and<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slovenia<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><tr><td>Spain<br>(from 06.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br> Spain <br>E-Mail: soporte.radarcovid@economia.gob.es<br> Phone: +34 91 258 28 52</td></tr></tbody></table>"
                         ]
                     },
                     {
@@ -433,7 +470,7 @@
                         "active": true,
                         "textblock": [
                             "At the moment, many families are tested at the airport after returning from their holidays. For each family member that is being tested, they get a leaflet that displays a QR-Code.",
-                            "<ol><li>Read through the leaflet carefully, to make sure if the QR code really is to be scanned with the Corona-Warn-App, or if it is meant for another test infrastructure.</li><li>Only if you made sure that the QR code is to be scanned with the Corona-Warn-App and not for another system, proceed in the Corona-Warn-App.</li><li>You can scan each QR code only once with the Corona-Warn-App. After scanning, the QR code expires. This prevents misusing the QR code.</li><li>If you received a QR code for your own test, scan it with the Corona-Warn-App and wait until the result is retrieved. This can take from a couple of hours up to a few days. Open the Corona-Warn-App regularly to check if the test result is already available.</li><li>If you received additional QR codes for tests of your family members, for example, your kids who do not have their own phones, DO NOT scan their QR codes with your phone. Only use your QR code with your personal test and your personal smartphone. In any case, your family will be notified about their test results independently, usually by calling them.</li><li>If your QR code doesn't work and you received a positive test result: Call the verification hotline (0800 7540002) to receive a TeleTAN. You can then enter the TeleTAN in your Corona-Warn-App so that the persons you encountered in the past days can be informed over the Corona-Warn-App. Please pay attention to the recommendations the Corona-Warn-App displays.</li></ol>"
+                            "<ol><li>Read through the leaflet carefully, to make sure if the QR code really is to be scanned with the Corona-Warn-App, or if it is meant for another test infrastructure.</li><li>Only if you made sure that the QR code is to be scanned with the Corona-Warn-App and not for another system, proceed in the Corona-Warn-App.</li><li>You can scan each QR code only once with the Corona-Warn-App. After scanning, the QR code expires. This prevents misusing the QR code.</li><li>If you received a QR code for your own test, scan it with the Corona-Warn-App and wait until the result is retrieved. This can take from a couple of hours up to a few days. Open the Corona-Warn-App regularly to check if the test result is already available.</li><li>If you received additional QR codes for tests of your family members, for example, your kids who do not have their own phones, DO NOT scan their QR codes with your phone. Only use your QR code with your personal test and your personal smartphone. In any case, your family will be notified about their test results independently, usually by calling them.</li><li>If your QR code doesn't work and you received a positive test result: Call the TAN hotline (0800 7540002) to receive a TeleTAN. You can then enter the TeleTAN in your Corona-Warn-App so that the persons you encountered in the past days can be informed over the Corona-Warn-App. Please pay attention to the recommendations the Corona-Warn-App displays.</li></ol>"
                         ]
                     },
                     {
@@ -520,7 +557,7 @@
                             "Since the app cannot delete the exposure logs by itself, whether they are cleared or not is a decision of the Exposure Notification System.",
                             "In the current version, uninstalling the app on iOS devices leaves the exposure log intact without any guarantees for the duration of storage.",
                             "On Android devices, the current implementation <a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api#methods' target='_blank' rel='noopener noreferrer'>deletes the 'database and keys' from the device</a> when uninstalling the app. Hence, you should expect that the collected random IDs are deleted when the app is uninstalled.",
-                            "The way un-installation is handled can change without notice and without changes to the Corona-Warn-App itself. Therefore, only uninstall the app as a last resort to resolve an error and only when instructed to, e.g., by the hotline or developers on GitHub.",
+                            "The way un-installation is handled can change without notice and without changes to the Corona-Warn-App itself. Therefore, only uninstall the app as a last resort to resolve an error and only when instructed to, e.g., by the technical hotline or developers on GitHub.",
                             "We recommend that before you re-install the app, you try clearing the app data first as this will not delete the random IDs:",
                             "<ul><li>On iOS devices, choose 'Settings' -> 'Reset App' on the home screen.</li><li>On Android devices, choose the three dots at the top right corner of the home screen and select 'Settings' -> 'Reset App'.</li></ul>"
                         ]
@@ -536,6 +573,22 @@
                         ]
                     },
                     {
+                        "title": "When do I receive my test result in the app?",
+                        "anchor": "result_time",
+                        "active": true,
+                        "textblock": [
+                            "Currently, analyzing the test in the laboratory and reporting the test result to the Corona-Warn-App servers takes 22-28 hours on average. However, the waiting time can be up to 48 hours depending on the commissioned laboratory. In most cases, you will receive your result the next day or the day after. If your result is not available in the app after 3 days, please follow the advice in FAQ entry: <a href='#qr_test' target='_blank' rel='noopener noreferrer'>I have scanned a QR code, but the test result could not be retrieved for days</a>."
+                        ]
+                    },
+                    {
+                        "title": "Can I enter a test result from a Corona rapid test (Schnelltest)?",
+                        "anchor": "rapid_test",
+                        "active": true,
+                        "textblock": [
+                            "No, entering results from rapid tests is currently not supported by the Corona-Warn-App."
+                        ]
+                    },
+                    {
                         "title": "How do I enter a negative test result?",
                         "anchor": "test_negative",
                         "active": true,
@@ -548,7 +601,7 @@
                         "anchor": "test_multiple_devices",
                         "active": true,
                         "textblock": [
-                            "If you have more than one smartphone (e.g. work and private), we recommend that you install the CWA on your private device first. Also, when scanning QR codes and sharing a positive result, we recommend that you first use your private device. If you additionally want to share a positive result via your company device or any other additional smartphone, this can be done via a so-called TeleTAN. By contacting 0800 7540002 with a positive test result, you will receive a 10-digit TAN with which the test result can also be registered in the app. <b>Please note:</b> The TAN number is only valid for one hour."
+                            "If you have more than one smartphone (e.g. work and private), we recommend that you install the CWA on your private device first. Also, when scanning QR codes and sharing a positive result, we recommend that you first use your private device. If you additionally want to share a positive result via your company device or any other additional smartphone, this can be done via a so-called TeleTAN. By contacting the TAN hotline 0800 7540002 with a positive test result, you will receive a 10-digit TAN with which the test result can also be registered in the app. <b>Please note:</b> The TAN number is only valid for one hour."
                         ]
                     },
                     {
@@ -556,8 +609,8 @@
                         "anchor": "test_in_other_country",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/>Please note that currently, the hotline 0800 7540002 (as well as hotline 0800 7540001) can only be reached from Germany. We will update you soon with any further developments on this issue.<hr/>",
-                            "If you are in another EU country or in one of <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Tests.html' target='_blank' rel='noopener noreferrer'>these countries</a> and have made a molecular biological test (PCR test) which is positive, you can upload it to the Corona-Warn-App. To do so, it is necessary to verify your identity by calling the hotline 0800 7540002. You will receive a 10-digit TAN with which the test result can be registered in the app. Attention: The TAN is only valid for one hour!"
+                            "<b>UPDATE</b><br/>Please note that currently, the TAN hotline 0800 7540002 (as well as the technical hotline 0800 7540001) can only be reached from Germany. We will update you soon with any further developments on this issue.<hr/>",
+                            "If you are in another EU country or in one of <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Tests.html' target='_blank' rel='noopener noreferrer'>these countries</a> and have made a molecular biological test (PCR test) which is positive, you can upload it to the Corona-Warn-App. To do so, it is necessary to verify your identity by calling the TAN hotline 0800 7540002. You will receive a 10-digit TAN with which the test result can be registered in the app. Attention: The TAN is only valid for one hour!"
                         ]
                     },
                     {
@@ -585,7 +638,7 @@
                         "active": true,
                         "textblock": [
                             "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
-                            "In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a QR code, which you can scan into the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have received neither a QR code nor a TAN, would you have to call the hotline, which you might not be able to do without outside help.",
+                            "In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a QR code, which you can scan into the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have received neither a QR code nor a TAN, would you have to call the TAN hotline, which you might not be able to do without outside help.",
                             "If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing."
                         ]
                     },
@@ -609,15 +662,15 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Which version of the COVID-19 Exposure Notification System is currently installed?",
+                        "title": "[Google/Android]: Which version of the COVID-19 Exposure Notifications System is currently installed?",
                         "anchor": "ENF_version",
                         "active": true,
                         "textblock": [
-                            "Google publishes the infrastructure for the COVID-19 Exposure Notifications with Google Play, that is, independently of the Android operating system. The <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>version 1.5</a> release brought some improvements and bug fixes.",
+                            "Google publishes mobile device support for the COVID-19 Exposure Notifications System using the Google Play Store update services, as a module of Google Play services, that is, independently of the Android operating system. <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>Version 1.5</a> of the Exposure Notifications System (ENS), which was released in July 2020, introduced the ExposureWindow mode (also referred to as v2 mode) in addition to the previous v1 mode. The Exposure Notifications System Version 1.5 or higher is required for the Corona-Warn-App Version 1.9 and all higher versions of the app.",
                             "To check which ENS version is installed on your phone:",
-                            "<ol><li>In the Settings, go to 'Google > COVID-19 exposure notifications'</li><li>Scroll down the 'COVID-19 notifications' page. At the very bottom, the version is displayed in one of the following formats:<ul><li>YYWWxxxxx, where YY is the year (for example, 20) and WW is the week. If you see the version number in this format, your phone is not yet using version 1.5.</li><li>VVYYWWxxxxx, where VV is the version of the infrastructure for COVID-19 exposure notifications (for example, 15), YY is the year and WW is the week number. If this format is displayed, the device already uses version 1.5.</li></ul></li></ol>",
-                            "Google provides general and release information about the COVID-19 exposure notifications, see:",
-                            "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play Services's Exposure Notification module</a></li></ul>"
+                            "<ol><li>In your device Settings, go to 'Google > COVID-19 Exposure Notifications'</li><li>Scroll down the 'Exposure Notifications' page. At the bottom of the page, the version is displayed in one of the following formats:<ul><li>VVYYWWxxxxx, where VV is the version of the COVID-19 Exposure Notifications System, YY is the year and WW is the week number (e.g.'18210214000'). If this format is displayed, the device already has an ENS version of 1.5 or higher installed.</li><li>YYWWxxxxx, where YY is the year (for example, 20) and WW is the week. If you see the version number in this format, your phone has not been able to update to ENS version 1.5 or higher.</li></ul></li></ol>",
+                            "Google provides general and release information about the COVID-19 Exposure Notifications, see:",
+                            "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play services' Exposure Notifications module</a></li></ul>"
                         ]
                     }
                 ]
@@ -657,7 +710,7 @@
                             "<b>In detail:</b>",
                             "With the interface's new version, it is now possible to control more precisely which encounters should be counted. However, in the operating system's contact log, a count is performed. However, this is not an error.",
                             "To be considered as an encounter, the following conditions must be met within a 30-minute time window:",
-                            "<ul><li>The signal attenuation must have been below 73dB for at least 10 minutes within the 30-minute window</li>",
+                            "<ul><li>The signal attenuation must have been below 73dB for at least 10 minutes (reduced to 5 minutes on Feb 23, 2021, see <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>blog post</a>) within the 30-minute window</li>",
                             "<li>The transmission risk level must be at least III (3). It is determined when sharing the diagnosis codes per day according to defined criteria such as symptom status and/or symptom onset.</li></ul>",
                             "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'"
                         ]
@@ -670,13 +723,13 @@
                             "With the introduction of Corona-Warn-App version 1.9, a new version of the Exposure Notification Framework (ENF) from Apple/Google is used, version 2.0. The data from this interface is used as the basis for calculating the individual risk.",
                             "While the interface's first version 1.0 used average attenuation values for all encounters with another device during the course of the day, the new version 2.0 now considers 30-minute time windows.",
                             "Each of these windows must meet certain criteria to be considered:",
-                            "<ul><li>The signal attenuation must have been below 73dB for at least 10 minutes within the 30-minute window</li>",
+                            "<ul><li>The signal attenuation must have been below 73dB for at least 10 minutes (reduced to 5 minutes on Feb 23, 2021, see <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>blog post</a>) within the 30-minute window</li>",
                             "<li>The transmission risk level must be at least III (3). It is determined when sharing the diagnosis codes per day according to defined criteria such as symptom status and/or symptom onset</li></ul>",
-                            "If these criteria are <b>not</b> met, an encounter is <b>not count</b> within the app. It is a 'non-risk encounter'.  However, in the operating system's contact log, a count is performed. However, this is not an error.",
+                            "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'.  However, in the operating system's contact log, a count is performed. However, this is not an error.",
                             "However, if the conditions are met, the contact times are weighted depending on the signal attenuation:",
                             "<ul><li>Times with an attenuation <55dB are calculated at 100%.</li>",
                             "<li>Times with an attenuation >= 55dB and <63dB are calculated at 50%</li></ul>",
-                            "Based on the transmission risk level (III to VII), only a factor between 0.6 and 1.6 is determined. The weighted time from the previous step is multiplied by this factor, which then results in the weighted contact time. This weighted time is now used to decide what type of encounter this time slot is:",
+                            "Based on the transmission risk level (III to VIII), only a factor between 0.6 and 1.6 is determined. The weighted time from the previous step is multiplied by this factor, which then results in the weighted contact time. This weighted time is now used to decide what type of encounter this time slot is:",
                             "<ul><li>Weighted contact time <15 minutes: Encounter with a low risk (green).</li>",
                             "<li>Weighted contact time >=15 minutes: Encounter with increased risk (red).</li></ul>",
                             "Finally, all time windows of a day are considered (the weighted contact times) and added up. If the sum is >= 15 minutes, the overall status becomes red, otherwise it is green. Ultimately, this means that several 'green' encounters (time windows) can result in a red status in total. For those who would like to dive even deeper into the subject:",
@@ -750,7 +803,7 @@
                         "anchor": "numbers_RKI",
                         "active": true,
                         "textblock": [
-                            "The Robert Koch Institute provides these and other current numbers <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Kennzahlen.pdf?__blob=publicationFile' target='_blank' rel='noopener noreferrer'>on their website</a> (in German)."
+                            "The Robert Koch Institute provides these and other current numbers <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Archiv_Kennzahlen/WarnApp_KennzahlenTab.html' target='_blank' rel='noopener noreferrer'>on their website</a> (in German)."
                         ]
                     },
                     {
@@ -832,8 +885,9 @@
                         "active": true,
                         "textblock": [
                             "Since release of the contact journal function, we continuously received suggestions for changes and improvements. All those ideas will be reviewed technically and together with the client regarding:",
-                            "<ul><li>User friendliness of the UI,</li><li>extension by functions (e.g. recording of additional parameters),</li><li>technical feasibility (or the effort required for implementation), and</li><li>Benefit for the health authorities (if the user deceides to share the contact journal and provide this information)</li><li>legal framework and limits</li></ul>",
-                            "The number of comments regarding the contact journal confirms the active support of our community. We are pleased this new function is positively received by the app's users."
+                            "<ul><li>User friendliness of the UI,</li><li>extension by functions (e.g. recording of additional parameters),</li><li>technical feasibility (or the effort required for implementation), and</li><li>Benefit for the health authorities (if the user decides to share the contact journal and provide this information)</li><li>legal framework and limits</li></ul>",
+                            "The number of comments regarding the contact journal confirms the active support of our community. We are pleased this new function is positively received by the app's users.",
+                            "<hr> More information on how to use the contact journal can be found in <a href='../blog/2020-12-28-corona-warn-app-version-1-10/' target='_blank' rel='noopener noreferrer'>this</a> blog post."
                         ]
                     }
                 ]
@@ -1084,7 +1138,7 @@
                             "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><hr/>",
                             "If Corona-Warn-App is unexpectedly terminated due to an error in the operating system or aggressive energy-saving measures taken by the phone, it may happen that the Corona-Warn-App can no longer access its encrypted databases when it is restarted. In this case, it is closed immediately on start. Sometimes the <a href='#cause9002' target='_blank' rel='noopener'>error Cause: 9002 Something went wrong (sqlite)</a> was displayed before.",
                             "We are working flat out to find a solution to the problem.",
-                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical telephone hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
+                            "The GitHub community has developed an emergency solution that brings the Corona-Warn-App up and running again without uninstalling it. However, since data can be lost in this case (e.g. registered COVID-19 tests for online querying of the test results), you should only use this emergency solution if no other measures were helpful (in particular suggestions from the technical hotline or from supervisors of the Corona-Warn-App in the Google Play Store), and you have fully taken note of the information on the emergency solution in the GitHub issue.",
                             "<a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615473' target='_blank' rel='noopener noreferrer'>Find the emergency solution in the GitHub issue here</a>."
                         ]
                     },
@@ -1163,7 +1217,7 @@
                             "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
                             "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
                             "Exposure logging can be deactivated, for example, by the following:",
-                            "<ol><li>Bluetooth or the location service were deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
+                            "<ol><li>Bluetooth or the location service were deactivated, even for a short amount of time</li><li>Background updates for the app where not active, so that exposure logging was not done continuously</li><li>Flight mode was active, even for a short amount of time</li><li>The smartphone was turned off</li><li>The smartphone was restarted</li></ol>",
                             "It is planned that this will be resolved with the next release.",
                             "For detailed information, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/796#issuecomment-653061512' target='_blank' rel='noopener noreferrer'>this comment on GitHub</a>"
                         ]
@@ -1193,7 +1247,7 @@
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                            "UPDATE: Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exosure Notifications' and turn it back on again.",
+                            "UPDATE: Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exposure Notifications' and turn it back on again.",
                             "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App."
                         ]
                     },
