@@ -12,6 +12,7 @@
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
+                    <!-- will comment back in once ios screenshots are final -->
                     <!--<a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>-->
                 </div>
             </nav>
@@ -22,8 +23,13 @@
                             <h3 class="headline my-4">{{{title}}}</h3>
                             {{#each images}}
                                 <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                    <a href="/assets/img/screenshots/{{{filename}}}" data-lightbox="{{{../anchor}}}">
-                                        <img src="/assets/img/screenshots/{{{filename}}}" class="img-fluid img-shadow" alt="{{{alt}}}" />
+                                    <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                        <!-- webp for faster load times, if supported by browser -->
+                                        <picture>
+                                            <source srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
+                                            <source srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
+                                            <img src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow">
+                                        </picture>
                                     </a>
                                 </div>
                             {{/each}}
@@ -36,8 +42,12 @@
                         <h3 class="headline my-4">{{{title}}}</h3>
                         {{#each images}}
                             <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                <a href="/assets/img/screenshots/{{{filename}}}" data-lightbox="{{{anchor}}}">
-                                    <img src="/assets/img/screenshots/{{{filename}}}" class="img-fluid img-shadow" alt="{{{alt}}}" />
+                                <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{anchor}}}">
+                                    <picture>
+                                        <source srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
+                                        <source srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
+                                        <img src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow">
+                                    </picture>
                                 </a>
                             </div>
                         {{/each}}
