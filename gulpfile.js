@@ -70,10 +70,22 @@ function cleanBlogs(done) {
   rimraf(PATHS.blogOutputs, done);
 }
 
+const folders = [
+  PATHS.dist,
+  PATHS.dist + '/.well-known'
+];
+
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
+  folders.forEach(dir => {
+    if(!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+        console.log('folder created:', dir);    
+    }   
+  });
   gulp.src(PATHS.rootAssets).pipe(gulp.dest(PATHS.dist));
+  gulp.src(PATHS.wellKnown).pipe(gulp.dest(PATHS.dist + '/.well-known'));
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'));
 }
 
