@@ -32,3 +32,5 @@ When users open the Corona-Warn-App for the first time after the update to versi
 
 
 Once data donation is activated, users do not have to do anything else. The data is automatically transmitted in the background as long as data donation is activated. This does not incur any costs for users. The network operators cover the costs for data transmission in the mobile network, provided the user uses a German SIM card.
+
+In addition, the project team implemented a **separate tab** for the contact journal. Now, users can access their journals more quickly and switch between the home screen and the contact journal faster.
