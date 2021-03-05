@@ -14,7 +14,7 @@ Das Projektteam der Deutschen Telekom und SAP hat ein Update der Corona-Warn-App
 Der Link zur Befragung wird allen Nutzer\*innen angezeigt, die eine rote Kachel, also ein erhöhtes Risiko, haben. Sie dient dazu, die Wirksamkeit der App zu analysieren und besser zu verstehen, indem die Expert\*innen mehr über das Verhalten der Nutzer\*innen vor der Risikoberechnung und über ihr geplantes Verhalten danach erfahren. Damit können die Projektbeteiligten die App basierend auf dem Feedback der Nutzer\*innen weiter verbessern. 
 
 <br></br>
-<center> <img src="./rki-survey.png" title="Link zur RKI-Befragung" style="align: center"></center>
+<center> <img src="./rki-survey.png" title="Link zur RKI-Befragung" style="align: center" height="1024"></center>
 <br></br>
 
 
