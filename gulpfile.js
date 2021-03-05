@@ -329,7 +329,7 @@ function replaceVersionNumbers() {
     .pipe(replace('[ios.current-app-version]', '1.13.0'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '1.13.0'))
+    .pipe(replace('[android.current-app-version]', '1.13.2'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
