@@ -35,3 +35,5 @@ Beim ersten Öffnen der App nach dem Update auf Version 1.13 öffnet sich ein Po
 
 
 Sobald die Datenspende aktiviert ist, müssen Nutzer\*innen nichts weiter tun. Die freigegebenen Daten werden im Hintergrund automatisch übermittelt, solange die Datenspende aktiviert ist.  Für die Nutzer\*innen entstehen dadurch keine Kosten. Die Kosten für die Datenübertragung im Mobilfunknetz werden von den Netzbetreibern getragen, sofern der oder die Nutzer\*in eine deutsche SIM-Karte nutzt.
+
+Desweiteren hat das Projektteam eine eigene **Registerkarte** für das Kontakt-Tagebuch eingeführt, damit Nutzer\*innen schneller auf ihr Tagebuch zugreifen und zwischen Startseite und Kontakt-Tagebuch wechseln können.  
