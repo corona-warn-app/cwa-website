@@ -36,5 +36,7 @@ PATHS:
   # Paths to root assets
   rootAssets:
     - "src/root-assets/*"
+  wellKnown:
+    - "src/well-known/*"
   # Path to generated blog files residing in folders of type YYYY-MM-DD-TITLE
   blogOutputs: "src/pages/{de,en}/blog/*-*-*-*/"
