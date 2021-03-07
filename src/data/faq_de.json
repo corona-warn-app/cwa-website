@@ -672,15 +672,12 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Welche Version der COVID-19-Benachrichtigungen habe ich?",
+                        "title": "Welche Version der COVID-19-Benachrichtigungen habe ich?",
                         "anchor": "ENF_version",
                         "active": true,
                         "textblock": [
-                            "Google veröffentlicht die Unterstützung für mobile Geräte für die COVID-19-Benachrichtigungen, das Exposure Notifications System (ENS), über den Google Play Store, als ein Update zu den Google Play-Dienste, und damit unabhängig vom Android-Betriebssystem. <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENS-Version 1.5</a>, die in Juli 2020 veröffentlicht wurde, führte die zusätzliche ExposureWindow-Mode ein (auch unter der Bezeichnung 'v2-Mode' bekannt), neben der ursprünglichen v1-Mode. ENS-Version V1.5, oder höher, wird für die Corona-Warn-App Version 1.9 und höher benötigt.",
-                            "So sehen Sie, welche Version Ihr Smartphone installiert hat:",
-                            "<ol><li>Wählen Sie in den Einstellungen Ihres Smartphones 'Google > COVID-19-Benachrichtigungen'</li><li>Scrollen Sie auf der Seite 'COVID-19-Benachrichtigungen' ganz nach unten. Dort steht die Versionsnummer in einem der folgenden Formate:<ul><li>VVYYWWxxxxx, mit VV für die Version der Infrastruktur für COVID-19-Benachrichtigungen, YY für die Jahreszahl und WW für die Wochenzahl (zum Beispiel '18210214000'). Wenn Sie dieses Format sehen, verwendet das Smartphone schon die ENS Version 1.5 oder höher.</li><li>YYWWxxxxx, mit YY für die Jahreszahl (zum Beispiel '20') und WW für die Wochenzahl. Wenn Sie die Versionsnummer in diesem Format sehen, konnte das Smartphone noch kein Update auf Version 1.5 oder höher durchführen.</li></ul></li></ol>",
-                            "Allgemeines und Release-Informationen zu den COVID-19-Benachrichtigungen finden Sie bei Google:",
-                            "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play services' (Play-Dienste) Exposure Notifications module</a></li></ul>"
+                            "Sie können die installierte Version des Exposure Notification Frameworks direkt in der App abrufen:",
+                            "<ol><li>Öffnen Sie die App und tippen Sie auf 'Startmenü' in der unteren Navigationsleiste.</li><li>Tippen Sie auf das Dreipunktmenü in der oberen rechten Ecke.</li><li>Wählen Sie den Menüpunkt 'App-Informationen'.</li><li>Scrollen Sie in der Ansicht ganz nach unten. Die Versionsnummer ist dort unter dem Eintrag 'ENF version' aufgelistet.</li></ol>"
                         ]
                     }
                 ]
