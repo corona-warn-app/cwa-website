@@ -25,7 +25,7 @@
                     { "filename": "de/android/OnboardingTracingFragment", "alt": "Alternativer text" },
                     { "filename": "de/android/OnboardingTestFragment", "alt": "Alternativer text" },
                     { "filename": "de/android/OnboardingNotificationsFragment", "alt": "Alternativer text" },
-                    { "filename": "dummy_yellow", "alt": "Alternativer text" }
+                    { "filename": "de/android/OnboardingAnalyticsFragment", "alt": "Alternativer text" }
                 ]
             },
             {
@@ -93,10 +93,84 @@
         ]
     },
     "ios-screnshots": {
-        "tab-title": "iOS Screenshots (demnächst)",
+        "tab-title": "iOS Screenshots",
         "sections": [
             {
-                "title": "Demnächst verfügbar."
+                "title": "Einführung",
+                "anchor": "ios_onboarding",
+                "images": [
+                    { "filename": "de/ios/iPhone 11 Pro-AppStore_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-OnboardingFlow_EnablePermission_0002", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-OnboardingFlow_EnablePermission_0005", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-OnboardingFlow_EnablePermission_0008", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-OnboardingFlow_EnablePermission_0009", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-OnboardingFlow_EnablePermission_0010", "alt": "Alternativer text" }
+                ]
+            },
+            {
+                "title": "Risiko-Karten",
+                "anchor": "ios_cards",
+                "images": [
+                    { "filename": "de/ios/iPhone 11 Pro-homescreenrisk_level_low_risk_no_days_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-homescreenrisk_level_low_risk_one_day_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-homescreenrisk_level_high_risk_one_day_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-AppStore_0003", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-details_screen_risk_level_low_risk_one_day_active_tracing_5days_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-details_screen_risk_level_high_risk_one_day_active_tracing_5days_0001", "alt": "Alternativer text" }
+                ]
+            },
+            {
+                "title": "Kontakt-Tagebuch",
+                "anchor": "ios_journal",
+                "images": [
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_information_screen_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_information_screen_0002", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_information_screen_0003", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_listing1_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_listing_add_persons", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_listing_add_locations", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_listing_edit_persons", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-contact_journal_listing_edit_locations", "alt": "Alternativer text" }
+                ]
+            },
+            {
+                "title": "Aktuelle Zahlen",
+                "anchor": "ios_stats",
+                "images": [
+                    { "filename": "de/ios/iPhone 11 Pro-AppStore_0008", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-statistics_persons_warned", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-statistics_7Day_incidence", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-statistics_7Day_rvalue", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-statistics_info_screen_0001", "alt": "Alternativer text" }
+                ]
+            },
+            {
+                "title": "Test registrieren & andere warnen",
+                "anchor": "ios_registertest",
+                "images": [
+                    { "filename": "de/ios/iPhone 11 Pro-tan_submissionflow_qr_0002", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-tan_submissionflow_tan_0003", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-tan_submissionflow_qr_0003", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_available", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_pending", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_negative", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_positive_constent_given", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-tan_submissionflow_symptoms_selection0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_symptoms_onset_date_option", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-homescreenrisk_show_thankyou_screen_0001", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-homescreenrisk_show_thankyou_screen_0002", "alt": "Alternativer text" }
+                ]
+            },
+            {
+                "title": "Testergebnis abrufen",
+                "anchor": "ios_results",
+                "images": [
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_pending", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_negative", "alt": "Alternativer text" },
+                    { "filename": "de/ios/iPhone 11 Pro-submissionflow_screenshot_test_result_positive_constent_given", "alt": "Alternativer text" },
+                    { "filename": "dummy_yellow", "alt": "Alternativer text" },
+                    { "filename": "dummy_yellow", "alt": "Alternativer text" }
+                ]
             }
         ]
     }
