@@ -20,7 +20,7 @@ jobs:
       - name: Install requirements
         run: |
           curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
-          sudo apt-get install -y nodejs-dev libssl1.0-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
+          sudo apt-get update && apt-get install -y nodejs-dev libssl1.0-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
