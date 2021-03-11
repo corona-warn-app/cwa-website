@@ -1,0 +1,60 @@
+{{#if page-contents}}
+<section class="section">
+    <div class="container">
+        <div class="container-inner container-inner_lg">
+            <div class="row">
+                <div class="col ">
+                {{> headline-component page-contents.section-main.headline}}
+                {{> text-component page-contents.section-main.content}}
+                </div>
+            </div>
+            
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
+                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="android_screenshots">
+                    {{#each page-contents.android-screnshots.sections}}
+                        <div class="row">
+                            <h3 class="headline my-4">{{{title}}}</h3>
+                            {{#each images}}
+                                <div class="col-6 col-sm-4 col-md-3 mb-4">
+                                    <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                        <!-- webp for faster load times, if supported by browser -->
+                                        <picture>
+                                            <source srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
+                                            <source srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
+                                            <img src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow" alt="{{{alt}}}" title="{{{alt}}}">
+                                        </picture>
+                                    </a>
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/each}}
+                </div>
+                <div class="tab-pane fade" id="ios_screenshots">
+                    {{#each page-contents.ios-screnshots.sections}}
+                    <div class="row">
+                        <h3 class="headline my-4">{{{title}}}</h3>
+                        {{#each images}}
+                            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                                <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                    <picture>
+                                        <source srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
+                                        <source srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
+                                        <img src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow" alt="{{{alt}}}" title="{{{alt}}}">
+                                    </picture>
+                                </a>
+                            </div>
+                        {{/each}}
+                    </div>
+                {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}
