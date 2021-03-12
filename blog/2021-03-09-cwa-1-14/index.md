@@ -17,7 +17,7 @@ In version 1.14, the developers have once again implemented feedback from app us
 <center> <img src="./increasedRisk.jpg" title="Information on Risk Status" style="align: center"></center>
 <br></br>
 
-In addition, the project team added favored functions to the contact journal. Users can now enter how long they’ve stayed at a location. They can also specify whether they’ve met another person for more than 15 minutes or less, whether they wore a mask during the meeting, and whether they were outside our indoors.
+In addition, the project team added favored functions to the contact journal. Users can now enter how long they’ve stayed at a location. They can also specify whether they’ve met another person for more than 15 minutes or less, whether they wore a mask during the meeting, and whether they were outside or indoors.
 
 <br></br>
 <center> <img src="./cwa-1-14-location.png" title="Duration" style="align: center"> <img src="./cwa-1-14-person-info.png" title="Duration" style="align: center"></center>
