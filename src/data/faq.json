@@ -265,15 +265,14 @@
                 "id": "notification",
                 "accordion": [
                     {
-                        "title": "[Apple/iOS]: ENErrorDomain-Error 13",
+                        "title": "[Apple/iOS]: Error 13",
                         "anchor": "ENError13",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b> 18.12.2020: <br/>If you updated to Corona-Warn-App version 1.9.1., some users may receive the following error message: \"Error 13: Your exposure logging for today has already been carried out. Please try again in 24 hours.\"",
-                            "The Corona-Warn-App is functioning correctly despite this message. If you have any other problems in this context, you can describe your problem in detail here: <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1715' target='_blank' rel='noopener noreferrer'>corona-warn-app/cwa-app-ios-1715</a>",
-                            "<hr/>OUTDATED INFORMATION: <br/>",
-                            "UPDATE: After you updated to iOS version 13.6., this error is gone.",
-                            "The ENErrorDomain 13 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App.  It is the information that on this day, an exposure check already took place. Please restart your phone and do not open the app for 24 hours. Then, the next exposure identification takes place and this information should no longer be displayed. Please do not remove and reinstall the Corona-Warn-App, as it still works as intended."
+                            "The Error 13 is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App.",
+                            "It is the information that in the last 24h, six exposure checks already happened. Apple does not allow more than six exposure checks per 24h.",
+                            "You don't have to do anything, the Corona-Warn-App will go back to normal after 24 hours at the latest.",
+                            "Please do not remove and reinstall the Corona-Warn-App, as the error will still be shown, even after a reinstallation."
                         ]
                     },
                     {
