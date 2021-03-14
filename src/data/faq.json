@@ -269,10 +269,11 @@
                         "anchor": "ENError13",
                         "active": true,
                         "textblock": [
-                            "The Error 13 is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App.",
-                            "It is the information that in the last 24h, six exposure checks already happened. Apple does not allow more than six exposure checks per 24h.",
-                            "You don't have to do anything, the Corona-Warn-App will go back to normal after 24 hours at the latest.",
-                            "Please do not remove and reinstall the Corona-Warn-App, as the error will still be shown, even after a reinstallation."
+                            "The Error 13 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.",
+                            "It will appear if more than 6 exposure checks happened in the last 24h. Apple does not allow more than six exposure checks within 24h.",
+                            "The error will disappear after 24h at the latest. You don't have to do anything.",
+                            "Because the error is caused by the underlying Apple ENF, it will persist, even after reinstallation.",
+                            "If the Error doesn't disappear after 24h, please open a issue on <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/' target='_blank' rel='noopener noreferrer'>GitHub</a>."
                         ]
                     },
                     {
