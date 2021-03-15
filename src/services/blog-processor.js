@@ -61,6 +61,12 @@ const replaceImagePaths = (content, folderName) => {
   return content.replace(new RegExp(/src=".\//, 'g'), `src="/assets/img/blog/${folderName}/`);
 }
 
+const replaceVideo = (content, folderName) => {
+  videoHtml = '<div id="player-overlay"><video controls preload="metadata" poster="poster.jpg"><source src="$2" type="video/mp4"></source></video></div>'
+  const c = content.replace(/({{)([^>]*)(}})/gi, videoHtml);
+  return c
+}
+
 const validatePageName = (folderName, name) => {
     const isValid = new RegExp('^[a-z-_0-9]+$', 'g').test(name);
     if (!isValid) {
@@ -83,7 +89,7 @@ const getBlogEntries = (lang) => {
           throw new Error("You need to create a file '" + fn + "', too!");
         }
       })();
-      const mdData = frontmatter(fileContent);
+      const mdData = frontmatter(replaceVideo(fileContent, folderName));
       return createPageEntry(folderName, mdData, lang)
     });
 }
