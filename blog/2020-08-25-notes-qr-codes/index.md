@@ -10,7 +10,7 @@ layout: blog
 The Corona-Warn-App has been active for a few weeks now and has been downloaded over 17.6 million times. An essential part of the app is the QR code procedure, which allows tested users to report test results to the app pseudonymously. 
 <!-- overview -->
 
-If a tested person receives a QR code, they are required to scan it and thus report the results to the app. In some cases, [error messages](https://www.coronawarn.app/en/faq/#qr_test) appear, in others the [test result cannot be retrieved](https://www.coronawarn.app/en/faq/#qr_test). Why is that and what to do in these cases?
+If a tested person receives a QR code, they are required to scan it and thus report the results to the app. In some cases, [error messages](https://www.coronawarn.app/en/faq/#qr_scan) appear, in others the [test result cannot be retrieved](https://www.coronawarn.app/en/faq/#qr_test). Why is that and what to do in these cases?
 
 Possibility 1: During the test, the physician or test personnel did not indicate the necessary consent for data transfer to the Corona-Warn-App. The tick on the [form](https://github.com/corona-warn-app/cwa-documentation/issues/400#issuecomment-669937832) for "Consent of the insured person to transfer the test result for the purposes of the Corona-Warn-App" is missing. Without this consent, the QR Code cannot be further processed in the relevant laboratory and the test result will not be transferred to the Corona-Warn-App.
 
