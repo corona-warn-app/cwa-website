@@ -11,7 +11,7 @@ Die Corona-Warn-App ist nun seit einigen Wochen aktiv und kann bereits über 17,
 <!-- overview -->
 
 
-Erhält eine getestete Personen einen QR-Code, ist sie dazu angehalten, diesen zu scannen und so die Ergebnisse an die App zu übermitteln. In einigen Fällen erscheinen dabei jedoch [Fehlermeldungen](https://www.coronawarn.app/de/faq/#qr_test), in anderen kann das [Testergebnis nicht abgerufen werden](https://www.coronawarn.app/de/faq/#qr_test). Woran kann das liegen und was ist in diesen Fällen zu tun?
+Erhält eine getestete Personen einen QR-Code, ist sie dazu angehalten, diesen zu scannen und so die Ergebnisse an die App zu übermitteln. In einigen Fällen erscheinen dabei jedoch [Fehlermeldungen](https://www.coronawarn.app/de/faq/#qr_scan), in anderen kann das [Testergebnis nicht abgerufen werden](https://www.coronawarn.app/de/faq/#qr_test). Woran kann das liegen und was ist in diesen Fällen zu tun?
 
 Möglichkeit 1: Arzt oder Test-Personal haben beim Test nicht auf die notwendige Einwilligung zur Datenübertragung an die Corona-Warn-App hingewiesen. Der Haken auf dem [Formular](https://github.com/corona-warn-app/cwa-documentation/issues/400#issuecomment-669937832) zum „Einverständnis des Versicherten zum Übermitteln des Testergebnisses für Zwecke der Corona-Warn-App“ fehlt. Ohne diese Einwilligung kann der QR-Code im zuständigen Labor nicht weiterverarbeitet werden und es findet keine Übermittlung des Testergebnisses in die Corona Warn App statt.
 
