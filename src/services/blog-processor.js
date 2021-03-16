@@ -62,7 +62,7 @@ const replaceImagePaths = (content, folderName) => {
 }
 
 const replaceVideo = (content, folderName) => {
-  videoHtml = '<div id="player-overlay"><video controls preload="metadata" poster="poster.jpg"><source src="$2" type="video/mp4"></source></video></div>'
+  videoHtml = '<div id="player-overlay"><video controls preload="metadata" poster="$2.jpg"><source src="$2.mp4" type="video/mp4"></source><source src="$2.webm" type="video/webm"></source></video></div>'
   const c = content.replace(/({{)([^>]*)(}})/gi, videoHtml);
   return c
 }
