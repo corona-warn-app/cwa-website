@@ -3,7 +3,11 @@ function lazyload() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const lazyImage = entry.target;
-        lazyImage.src = lazyImage.dataset.src;
+        if(lazyImage.hasAttribute("data-src")) {
+          lazyImage.src = lazyImage.dataset.src;    
+        } else {
+          lazyImage.srcset = lazyImage.dataset.srcset;
+        }
         lazyImage.classList.remove("lazy");
         imgObserver.unobserve(lazyImage);
       }
