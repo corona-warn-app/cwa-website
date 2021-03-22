@@ -70,10 +70,22 @@ function cleanBlogs(done) {
   rimraf(PATHS.blogOutputs, done);
 }
 
+const folders = [
+  PATHS.dist,
+  PATHS.dist + '/.well-known'
+];
+
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
+  folders.forEach(dir => {
+    if(!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+        console.log('folder created:', dir);    
+    }   
+  });
   gulp.src(PATHS.rootAssets).pipe(gulp.dest(PATHS.dist));
+  gulp.src(PATHS.wellKnown).pipe(gulp.dest(PATHS.dist + '/.well-known'));
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + '/assets'));
 }
 
@@ -314,10 +326,10 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html"])
     .pipe(replace('[ios.latest-os-version]', '14.4'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '1.12.1'))
+    .pipe(replace('[ios.current-app-version]', '1.14.4'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '1.12'))
+    .pipe(replace('[android.current-app-version]', '1.14.3'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }

@@ -228,4 +228,16 @@ $(document).ready(function(){
     //        scrollTop: $($.attr(this, 'href')).offset().top
     //    }, 600);
     //});
+
+    // simple jquery tabs
+    $('.nav-tabs a').click(function(e) {
+        e.preventDefault();
+
+        //Toggle tab link
+        $(this).addClass('active').siblings().removeClass('active');
+
+        //Toggle target tab
+        $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
+      });
+
 });
