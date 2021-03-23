@@ -1,4 +1,5 @@
 {{#if page-contents}}
+<script src="/assets/js/lazyload.js"></script>
 <section class="section">
     <div class="container">
         <div class="container-inner container-inner_lg">
@@ -25,9 +26,9 @@
                                     <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
                                         <!-- webp for faster load times, if supported by browser -->
                                         <picture>
-                                            <source srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
-                                            <source srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
-                                            <img src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow" alt="{{{alt}}}" title="{{{alt}}}">
+                                            <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
+                                            <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
+                                            <img loading="lazy" data-src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
                                         </picture>
                                     </a>
                                 </div>
@@ -42,10 +43,11 @@
                         {{#each images}}
                             <div class="col-6 col-sm-4 col-md-3 mb-4">
                                 <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                    <!-- webp for faster load times, if supported by browser -->
                                     <picture>
-                                        <source srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
-                                        <source srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
-                                        <img src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow" alt="{{{alt}}}" title="{{{alt}}}">
+                                        <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
+                                        <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
+                                        <img loading="lazy" data-src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
                                     </picture>
                                 </a>
                             </div>

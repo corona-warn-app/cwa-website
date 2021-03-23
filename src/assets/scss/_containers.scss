@@ -26,6 +26,17 @@
     }
   }
 
+  video {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  #player-overlay {
+    background-color: #000;
+    z-index: 999;
+  }
+
   // 100% wide container at all breakpoints
   .container-fluid {
     @include make-container();
