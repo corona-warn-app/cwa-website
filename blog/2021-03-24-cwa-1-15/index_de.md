@@ -28,6 +28,3 @@ Da die Schweiz kein Mitglied der Europäischen Union ist, fällt sie nicht unter
 
 Neben der Schweizer App ist die Corona-Warn-App derzeit mit 16 weiteren Apps von EU-Mitgliedsstatten interoperabel, darunter Österreich, Italien und Spanien. Eine aktuelle Liste aller Länder finden Sie in den Einstellungen der Corona-Warn-App unter *Risiko-Ermittlung*, sowie [hier](https://www.coronawarn.app/de/faq/#interoperability_countries). 
 
-<br></br>
-<center> <img src="./.png" title="Länderübergreifende Risikoermittlung" style="align: center"></center>
-<br></br>
