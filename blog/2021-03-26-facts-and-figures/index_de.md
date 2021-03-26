@@ -18,28 +18,20 @@ In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen 
 
 
 
-
-
 <!-- overview -->
 
-<table>
-  <thead>
-    <tr>
-      <th>2021</th>
-      <th>2020</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>* [04. März 2021](https://www.coronawarn.app/assets/documents/2021-03-04-cwa-daten-fakten.pdf) 
+* [04. März 2021](https://www.coronawarn.app/assets/documents/2021-03-04-cwa-daten-fakten.pdf) 
 * [26. Februar 2021](https://www.coronawarn.app/assets/documents/2021-02-26-cwa-daten-fakten.pdf) 
 * [19. Februar 2021](https://www.coronawarn.app/assets/documents/2021-02-19-cwa-daten-fakten.pdf) 
 * [12. Februar 2021](https://www.coronawarn.app/assets/documents/2021-02-12-cwa-daten-fakten.pdf) 
 * [05. Februar 2021](https://www.coronawarn.app/assets/documents/2021-02-05-cwa-daten-fakten.pdf) 
 * [29. Januar 2021](https://www.coronawarn.app/assets/documents/2021-01-29-cwa-daten-fakten.pdf) 
 * [22. Januar 2021](https://www.coronawarn.app/assets/documents/2021-01-22-cwa-daten-fakten.pdf) 
-</td>
-      <td>* [18. Dezember 2020](https://www.coronawarn.app/assets/documents/2020-12-18-cwa-daten-fakten.pdf) 
+
+
+#### 2020
+
+* [18. Dezember 2020](https://www.coronawarn.app/assets/documents/2020-12-18-cwa-daten-fakten.pdf) 
 * [11. Dezember 2020](https://www.coronawarn.app/assets/documents/2020-12-11-cwa-daten-fakten.pdf) 
 * [04. Dezember 2020](https://www.coronawarn.app/assets/documents/2020-12-04-cwa-daten-fakten.pdf)
 * [27. November 2020](https://www.coronawarn.app/assets/documents/2020-11-26-cwa-daten-fakten.pdf)
@@ -50,14 +42,4 @@ In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen 
 * [16. Oktober 2020](https://www.coronawarn.app/assets/documents/2020-10-16-cwa-facts-and-figures.pdf)
 * [09. Oktober 2020](https://www.coronawarn.app/assets/documents/2020-10-09-cwa-facts-and-figures.pdf)
 * [02. Oktober 2020](https://www.coronawarn.app/assets/documents/2020-10-02-cwa-facts-and-figures.pdf)
-* [23. September 2020](https://www.coronawarn.app/assets/documents/2020-09-23-cwa-daten-fakten.pdf)</td>
-    </tr>
-    <tr>
-    </tr>
-  </tbody>
-</table>
-
-
-#### 2020
-
-
+* [23. September 2020](https://www.coronawarn.app/assets/documents/2020-09-23-cwa-daten-fakten.pdf)
