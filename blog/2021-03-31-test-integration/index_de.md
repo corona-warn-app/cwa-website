@@ -9,7 +9,7 @@ layout: blog
  
 ### Starke Partner unterstützen die neue Funktion
 
-Die Corona-Warn-App der Bundesregierung erhält eine weitere wichtige Funktion. Die App integriert künftig Schnelltests. Nutzer\*innen können die Bestätigung ihrer Schnelltests in der CWA abspeichern und im Kontakt-Tagebuch hinzufügen. Wer bei einem Schnelltest positiv auf Corona getestet wird, kann zudem künftig auch über die Corona-Warn-App Kontaktpersonen warnen.
+Die Corona-Warn-App der Bundesregierung erhält eine weitere wichtige Funktion. Die App integriert künftig Schnelltests. Nutzer\*innen können die Bestätigung ihrer **Schnelltests in der CWA abspeichern** und im Kontakt-Tagebuch hinzufügen. Wer bei einem Schnelltest positiv auf Corona getestet wird, kann zudem künftig auch über die Corona-Warn-App **Kontaktpersonen warnen**.
 
 <!-- overview -->
 
@@ -21,4 +21,4 @@ In der ersten Phase wollen sich **folgende Partner** an der Umsetzung der Schnel
 
 Ein Web-Portal bindet Schnelltest-Partner künftig an die Corona-Warn-App an. So sollen Ergebnisse von Schnelltests darüber umgehend an die App übermittelt werden. Voraussetzung ist, dass der Test nach dem Vier-Augen-Prinzip von geschulten und **autorisierten Mitarbeiter\*innen** durchgeführt wird. 
 
-Die Schnelltest-Funktion soll in der zweiten April-Hälfte zur Verfügung stehen. Zu den Details werden die Unternehmen zu einem späteren Zeitpunkt wie gewohnt über den bekannten Blog [https://coronawarn.app/de](https://coronawarn.app/de) informieren.
+Die Schnelltest-Funktion soll in der zweiten April-Hälfte zur Verfügung stehen. Zu den Details werden die Unternehmen zu einem späteren Zeitpunkt wie gewohnt an dieser Stelle informieren.
