@@ -85,7 +85,7 @@
                         "textblock": [
                             "This screen is shown on iPhones running an iOS version between iOS 13.5 and (including) iOS 13.6.1. On these iOS Versions, the necessary version 2 of the Exposure Notification Framework is not available. Therefore you need to update to iOS 13.7 or newer, to continue to use the Corona-Warn-App. More information can be found in <a href='../faq/#ios135' target='_blank' rel='noopener noreferrer'>this</a> FAQ entry."
                         ]
-                    },    
+                    },
                     {
                         "title": "[Google/Android]: CAUSE: 2001, trying to establish a secure connection to the server",
                         "anchor": "cause2001",
@@ -94,8 +94,8 @@
                             "The <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b> security certificate may be disabled on your device. This is a known cause to trigger the notification:",
                             "<b>'CAUSE: 2001 Something went wrong. An error occurred while trying to establish a secure connection to the server.'</b>",
                             "Follow these steps in order to activate the security certificate (The exact path depends on the device):",
-                            "<ul><li>Settings > Biometrics and security > Other security settings > View security certificates, SYSTEM</li><li>Scroll down to <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Enable the certificate using the slider</li></ul>",
-                            "Should this procedure not solve this issue, please write a report here:  <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
+                            "<ol><li>'Settings' -> 'Biometrics and security' -> 'Other security settings' -> 'View security certificates' -> 'SYSTEM'</li><li>Scroll down to <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Enable the certificate using the slider</li></ol>",
+                            "Should this procedure not solve this issue, please write a comment here:  <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
                         ]
                     },
                     {

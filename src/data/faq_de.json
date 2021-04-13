@@ -84,7 +84,7 @@
                         "textblock": [
                             "Dieser Bildschirm wird auf iPhones mit einer iOS-Version zwischen iOS 13.5 und (einschließlich) iOS 13.6.1 angezeigt. Auf diesen iOS-Versionen ist die benötigte Version 2 des Exposure Notification Frameworks nicht verfügbar. Deshalb muss erst auf iOS 13.7 oder neuer aktualisiert werden, um die Corona-Warn-App weiterhin verwenden zu können. Weitere Informationen finden Sie in <a href='../faq/#ios135' target='_blank' rel='noopener noreferrer'>diesem</a> FAQ Eintrag."
                         ]
-                    },   
+                    },
                     {
                         "title": "[Google/Android]: URSACHE: 2001, trying to establish a secure connection to the server",
                         "anchor": "cause2001",
@@ -93,8 +93,8 @@
                             "Das Sicherheitszertifikat <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b> ist möglicherweise auf Ihrem Gerät deaktiviert. Dies ist eine bekannte Ursache, um folgende Benachrichtigung auszulösen:",
                             "<b>'URSACHE: 2001 Etwas ist schiefgelaufen. An error occurred while trying to establish a secure connection to the server.'</b>",
                             "Führen Sie die folgenden Schritte aus, um das Sicherheitszertifikat zu aktivieren (Der genaue Pfad hängt vom Gerät ab).",
-                            "<ul><li>Einstellungen > Biometrische Daten und Sicherheit > Andere Sicherheitseinstellungen > Sicherheitszertifikate anzeigen, SYSTEM</li><li>Scrollen Sie nach unten zu <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Aktivieren Sie das Zertifikat mit dem Schieberegler</li></ul>",
-                            "Sollten diese Schritte das Problem nicht beheben, schreiben Sie bitte Ihren Bericht hier: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
+                            "<ol><li>'Einstellungen' -> 'Biometrische Daten und Sicherheit' -> 'Andere Sicherheitseinstellungen' -> 'Sicherheitszertifikate anzeigen' -> 'SYSTEM'</li><li>Scrollen Sie nach unten zu <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Aktivieren Sie das Zertifikat mit dem Schieberegler</li></ol>",
+                            "Sollten diese Schritte das Problem nicht beheben, schreiben Sie bitte einen Kommentar hier: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
                         ]
                     },
                     {
