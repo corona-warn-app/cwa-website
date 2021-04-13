@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    {{#if global.favicon}}
+      {{> favicon favicon=global.favicon}}
+    {{/if}}
+    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <title>{{page-title}}</title>
+  </head>
+  <body class="page-home">
+    <header class="header header_home">
+      <div class="container">
+        <div class="row navbar">
+          <div class="col-12 hidden-xs">
+            <a class="logo" href="https://www.coronawarn.app" title="Corona-Warn-App">
+              <img src="{{root}}assets/img/logo.svg" alt="Corona-Warn-App Logo" class="logo-image" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      {{> body}}
+    </div>
+    
+  </body>
+</html>
