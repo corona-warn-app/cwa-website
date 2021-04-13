@@ -242,14 +242,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Hinweise zum Stromsparmodus auf iOS-Geräten",
-                        "anchor": "ios_power_save",
-                        "active": true,
-                        "textblock": [
-                            "Wenn Sie auf Ihrem Gerät iOS Version 13.6.1 oder höher verwenden, ist die Funktion der Corona-Warn-App im Stromsparmodus nicht beeinträchtigt. Auf Geräten mit einer früheren iOS Version kann es zu Problemen mit der Hintergrundaktualisierung kommen. <b>Wir bitten Sie daher, die iOS Version Ihres Geräts auf 13.6.1 oder höher zu aktualisieren, falls Sie den Stromsparmodus verwenden wollen.</b>"
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: Mein Risikostatus wurde seit über einem Tag nicht mehr aktualisiert. Internet war aber verfügbar, was läuft hier falsch?",
                         "anchor": "no_risk_update",
                         "active": true,
@@ -1088,6 +1080,15 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Hinweise zum Stromsparmodus auf iOS-Geräten",
+                        "anchor": "ios_power_save",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/>Seit dem 5. Februar 2021 ist die Mindestversion der Corona-Warn-App die Version 1.5.3. Diese Version benötigt mindestens iOS 13.7 oder höher. Mit dieser iOS-Version wird die Funktion der Corona-Warn-App durch Aktivierung der Stromsparfunktion nicht beeinträchtigt.<hr/>",
+                            "Wenn Sie auf Ihrem Gerät iOS Version 13.6.1 oder höher verwenden, ist die Funktion der Corona-Warn-App im Stromsparmodus nicht beeinträchtigt. Auf Geräten mit einer früheren iOS Version kann es zu Problemen mit der Hintergrundaktualisierung kommen. <b>Wir bitten Sie daher, die iOS Version Ihres Geräts auf 13.6.1 oder höher zu aktualisieren, falls Sie den Stromsparmodus verwenden wollen.</b>"
+                        ]
+                    },
                     {
                         "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",
