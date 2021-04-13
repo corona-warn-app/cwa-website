@@ -275,16 +275,6 @@
                             "Bei Benutzung des Ultra-Energiesparmodus auf Geräten von Samsung kann die Hintergrundaktualisierung trotz <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> fehlschlagen. Grund dafür ist wahrscheinlich, dass der Aktualisierungsprozess aufgrund der stark reduzierten Rechenleistung abgebrochen wird. Der Ultra-Energiesparmodus sollte deshalb in den Einstellungen deaktiviert werden:",
                             "<ol><li>'Einstellungen' -> 'System' -> 'Energiesparmodus'</li><li>Wählen Sie 'Ultra-Energiesparmodus'.</li><li>Öffnen Sie das Menü in der oberen rechten Ecke und wählen Sie 'Ultra-Energiesparmodus deaktivieren'.</li></ol>"
                         ]
-                    },
-                    {
-                        "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
-                        "anchor": "huawei_honor",
-                        "active": true,
-                        "textblock": [
-                            "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
-                            "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
-                            "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
-                        ]
                     }
                 ]
             },
@@ -1088,6 +1078,17 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
+                        "anchor": "huawei_honor",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/>Das Problem wurde von den Geräteherstellern durch einen Patch behoben. Bitte installieren Sie die neusten Updates für Ihr Gerät.<hr/>",
+                            "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
+                            "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
+                            "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
+                        ]
+                    },
                     {
                         "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",

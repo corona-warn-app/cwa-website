@@ -275,16 +275,6 @@
                             "The usage of the Ultra Power Saving Mode on Samsung devices can cause the background updates of the risk status to fail, even if <a href='#no_risk_update' target='_blank' rel='noopener'>Prioritized Background Activity is activated</a>. This behaviour is likely triggered by the strongly reduced processing power in this mode, which results in an abort of the background updating process. The Ultra Power Saving Mode should therefore be deactivated in the settings:",
                             "<ol><li>'Settings' -> 'System' -> 'Power saving'</li><li>Select 'Ultra Power Saving Mode'.</li><li>Open the menu in the upper right and select 'Turn off Ultra power saving mode'.</li></ol>"
                         ]
-                    },
-                    {
-                        "title": "[Google/Android]: Notes on devices from Huawei or Honor",
-                        "anchor": "huawei_honor",
-                        "active": true,
-                        "textblock": [
-                            "For devices from Huawei or Honor, in addition to <a href='#no_risk_update' target='_blank' rel='noopener'>switching on the Prioritized Background Activity</a>, additional settings may be necessary to improve the reliability of the background update, and to prevent <a href='#app_crash' target='_blank' rel='noopener'>unexpected crashes of the Corona-Warn-App when starting</a> the app. This applies in particular to older devices with EMUI 4, but also to newer devices.",
-                            "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
-                            "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
-                        ]
                     }
                 ]
             },
@@ -1087,6 +1077,17 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                        "title": "[Google/Android]: Notes on devices from Huawei or Honor",
+                        "anchor": "huawei_honor",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>The problem was solved by the device manufacturers via a patch. Please install the latest updates for your device.<hr/>",
+                            "For devices from Huawei or Honor, in addition to <a href='#no_risk_update' target='_blank' rel='noopener'>switching on the Prioritized Background Activity</a>, additional settings may be necessary to improve the reliability of the background update, and to prevent <a href='#app_crash' target='_blank' rel='noopener'>unexpected crashes of the Corona-Warn-App when starting</a> the app. This applies in particular to older devices with EMUI 4, but also to newer devices.",
+                            "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
+                            "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
+                        ]
+                    },
                     {
                         "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
                         "anchor": "multiple_exposure_checks",
