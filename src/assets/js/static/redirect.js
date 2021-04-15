@@ -1,4 +1,8 @@
 var lang = "en";
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const target = urlParams.get('target')
+
 
 if (
   typeof navigator.languages !== "undefined" &&
@@ -18,4 +22,8 @@ if (
   lang = "de";
 }
 
-window.location.href = "./" + lang + "/";
+if(target != null) {
+  window.location.href = "./" + lang + "/" + target + "/";
+} else {
+  window.location.href = "./" + lang + "/";
+}
