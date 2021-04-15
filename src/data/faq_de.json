@@ -74,6 +74,34 @@
                 ]
             },
             {
+                "title": "News",
+                "id": "Event Check-In ",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "Wie funktioniert die Event-Registrierung in der Corona-Warn-App?",
+                        "anchor": "check_in_how_does_it_work",
+                        "active": true,
+                        "textblock": [
+                            "Die Corona-Warn-App (CWA) kann über die Bluetooth-Low-Energy-Technologie (BLE) ein Infektionsrisiko ermitteln, wenn Personen für die Dauer von mindestens 10 Minuten einen Kontakt im Abstand von bis zu ca. 1,5 Meter hatten. Nach heutigem Wissensstand breiten sich Aerosole <a href='https://www.ndr.de/nachrichten/info/Synapsen-Lueften-lueften-lueften,podcastsynapsen156.html' target='_blank' rel='noopener noreferrer'>(SARS-CoV-2 Übertragung durch Aerosole) </a> jedoch in schlecht gelüfteten Innenräumen weit über diese Distanz hinaus aus. Daher ist das Infektionsrisiko in diesen Fällen nicht auf einen Abstand von 1,5 Metern begrenzt. Das Risiko, sich in Innenräumen anzustecken, ist um ein Vielfaches höher als in Außenbereichen.",
+                            "Um auch solche Konstellationen in Innenräumen erkennen zu können, wurde die CWA um die Event-Registrierung erweitert. Damit warnt die App auch Personen, die sich zur gleichen Zeit in einem Raum mit einer SARS-CoV-2-infizierten Person aufgehalten haben. Personen registrieren sich mittels der Corona-Warn-App - ohne Angabe persönlicher Daten - zu einem Event oder einem Ort. Meldet sich ein Teilnehmer des Events oder Besucher des Ortes später als positiv getestet über die CWA, können alle anderen Personen pseudonym gewarnt werden, die zur gleichen Zeit am gleichen Event teilgenommen haben oder den gleichen Ort besucht haben."
+                        ]
+                    }, 
+                    {
+                        "title": "In-App Statistiken ab Release 1.11",
+                        "anchor": "further_details",
+                        "active": true,
+                        "textblock": [
+                            "Wegen der hohen Dynamik der Pandemie bringt die Corona-Warn-App mit dem Release 1.11. wichtige statistische Kennzahlen zum Infektionsgeschehen zur Anzeige. Diese Zahlen sollen den Anwendern helfen, die aktuelle Situation besser einzuschätzen und das eigene Verhalten anzupassen.",
+                            "Die Anzahl der Neuinfektionen wird einmal täglich vom Robert Koch-Institut (RKI) veröffentlicht. 'Gestern' bedeutet, dass in dem Wert alle gemeldeten Neuinfektionen vom Vortag bis 23:59 Uhr berücksichtigt wurden.",
+                            "Die weiteren in der Corona-Warn-App angezeigten Statistiken werden täglich in 15-Minuten-Intervallen aus verschiedenen Quellen konsolidiert und entsprechend für die App aufbereitet. Die Statistiken zeigen neben aggregierten Werten vom Vortag (z.B. gemeldete Neuinfektionen) auch den R-Wert, der über ein sogenanntes „Nowcasting“ eine Schätzung für den aktuellen Tag darstellt.",
+                            "Das Konzept des R-Werts und die Datengrundlagen seiner Berechnung wurden detailliert im Epidemiologischen Bulletin des RKIs <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 vom 23.04.2020)</a> beschrieben. Beispielrechnungen und die täglich aktualisierten R-Werte (4-Tages- und 7-Tages-R-Wert) stehen unter <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a> als Excel-Tabelle zur Verfügung.",
+                            "Um die Datenqualität in den Statistiken der App sicherzustellen, werden alle Datenquellen auf Vollständigkeit und Konsistenz geprüft. Daher kann sich die Anzeige der validen Daten in der App im Vergleich zu anderen Webseiten/Quellen zeitlich verzögern. Inhaltlich entsprechen die Werte den offiziellen Fallzahlen des RKIs."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Häufige Probleme",
                 "id": "most_asked",
                 "accordion": [
