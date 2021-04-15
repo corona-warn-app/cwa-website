@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
         console.log("redirect android");
-        window.location.href = 'https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=de.rki.coronawarnapp&hl=en';
+        window.location.href = 'market://details?id=de.rki.coronawarnapp';
         document.getElementById("store_apple").classList.add("d-none");
     }
     else if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
