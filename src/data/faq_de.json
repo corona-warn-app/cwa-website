@@ -102,8 +102,10 @@
                         "anchor": "access-list",
                         "active": true,
                         "textblock": [
-                            "Einige Firewalleinstellungen verhindern möglicherweise den Zugriff der CWA auf das Corona-Warn-App-Backend. Das kann in einigen Fällen zu einer Fehlermeldung führen, unter anderem 'URSACHE: 4000, error during web request, HTTP status 901'. Sollten sie eine Firewall benutzen (Router oder App), vergewissern sie sich, dass die folgenden Domains in der Access-Liste für Web- und den DNS-Requests berücksichtigt sind:",
-                            "<ul><li>*.coronawarn.app</li><li>*.t-online.de</li><ul>"
+                            "Einige Firewalleinstellungen verhindern möglicherweise den Zugriff der CWA auf das Corona-Warn-App-Backend. Das kann in einigen Fällen zu einer Fehlermeldung führen, unter anderem 'URSACHE: 4000, error during web request, HTTP status 901'. Sollten Sie eine Firewall benutzen (Router oder App), vergewissern Sie sich, dass die folgenden Domains in der Access-Liste für Web- und den DNS-Requests berücksichtigt sind:",
+                            "<ul><li>*.coronawarn.app</li><li>*.t-online.de</li><ul>",
+                            "Falls Sie zusätzlich die Nutzung der (optionalen) Datenspende-Funktion erlauben wollen, sollten Sie zusätzlich diese Domains zu Ihrer Access-Liste hinzufügen:",
+                            "<ul><li>befragungen.rki.de</li><li>www.howsmyssl.com</li><ul>"
                         ]
                     },
                     {
