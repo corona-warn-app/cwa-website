@@ -300,10 +300,8 @@
                         "anchor": "ENError13",
                         "active": true,
                         "textblock": [
-                            "Der Fehler 13 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird.",
-                            "Er tritt auf falls in den letzten 24 Stunden mehr als 6 Risiko-Überprüfungen durchgeführt wurden. Apple erlaubt nicht mehr als 6 Risiko-Überprüfungen innerhalb von 24 Stunden.",
-                            "Der Fehler wird nach spätestens 24 Stunden verschwinden. Sie müssen nichts weiter tun.",
-                            "Bitte installieren Sie die Corona-Warn-App nicht neu, da dieser Fehler aus Apples ENF kommt, wird er auch nach einer Neuinstallation weiter angezeigt werden.",
+                            "Der Fehler 13 kommt aus dem Exposure Notification Framework, das von Apple bereitgestellt und von der App genutzt wird. Er tritt auf falls in den letzten 24 Stunden mehr als 6 Risiko-Überprüfungen durchgeführt wurden. Apple erlaubt nicht mehr als 6 Risiko-Überprüfungen innerhalb von 24 Stunden. Der Fehler sollte nach spätestens 24 Stunden verschwinden. Sie müssen nichts weiter tun.",
+                            "Bitte installieren Sie die Corona-Warn-App nicht neu, da dieser Fehler von Apples Exposure Notification Framework ausgelöst wird, welches unabhängig von der App ist. Deshalb wird der Fehler auch nach einer Neuinstallation weiter angezeigt werden.",
                             "Falls der Fehler nach 24 Stunden nicht verschwindet, öffnen Sie bitte einen Issue auf <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/' target='_blank' rel='noopener noreferrer'>GitHub</a>."
                         ]
                     },
