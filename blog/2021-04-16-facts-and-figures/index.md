@@ -1,5 +1,5 @@
 ---
-page-title: "Current facts and figures"
+page-title: "Current facts and figures about the Corona-Warn-App"
 page-description: "Current facts and figures"
 page-name: facts-and-figures
 page-name_de: facts-and-figures
