@@ -22,12 +22,13 @@ Besucher\*innen, die später positiv auf COVID-19 getestet werden, können ihre 
 
 So können mögliche Cluster erkannt und Infektionsketten zielgerichtet unterbrochen werden.
 
+Im **Video-Walkthrough** (iOS-Beispiel) können Sie sehen, wie Sie Informationen teilen können, um andere zu warnen: {{/assets/video/03QrCodeWarnen}}
 
 ### Nutzer\*innen können eine rote oder grüne Warnung erhalten
 
 Ob Nutzer\*innen eine grüne oder rote Warnung erhalten, hängt davon ab, ob sich ihr Aufenthalt mit dem einer infizierten Person überschneidet. Waren sie **weniger als 10 Minuten** vor Ort, erhalten sie eine Warnung über eine Begegnung mit geringem Risiko (grüne Kachel). Hat sich der Aufenthalt mit der später positiv auf COVID-19 getesteten Person um **10 Minuten oder länger** überschnitten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit erhöhtem Risiko (rote Kachel). 
 
-Im **Kontakt-Tagebuch** können Nutzer*innen sehen, ob es sich bei einer Begegnung mit niedrigem oder erhöhtem Risiko um eine eventbasierte Warnung handelt.
+Im **Kontakt-Tagebuch** können Nutzer\*innen sehen, ob es sich bei einer Begegnung mit niedrigem oder erhöhtem Risiko um eine eventbasierte Warnung handelt.
 
 ### So funktionieren Check-In und Check-Out 
 
@@ -37,6 +38,8 @@ Darüber gelangen sie zu ihren Check-Ins, wo sie eine Übersicht über bereits v
 
 Alternativ können Veranstalter\*innen und Betreiber\*innen auch einen automatischen Check-Out nach einer zuvor festgelegten Zeit einstellen. Nutzer\*innen erhalten dann eine Benachrichtigung, dass sie ausgecheckt wurden, können die Zeit aber im Nachhinein über die Registerkarte unter Check-In manuell anpassen.
 
+**Video-Walkthrough**: So können Sie ein- oder auschecken (iOS-Beispiel): {{/assets/video/02QrCodeScannen}}
+
 
 ### So kann ein QR-Code erstellt werden
 
@@ -44,6 +47,8 @@ Nutzer\*innen können über den neuen Bereich auf dem Startbildschirm der Corona
 
 Dazu klicken sie einfach auf *QR-Code erstellen*. Anschließend können sie **Informationen zu der Veranstaltung** angeben: Nach der Auswahl der Kategorie  (z.B. Einzelhandel oder private Feier), können sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder ausgedruckt und vor Ort aufgehängt werden kann. 
 
+**Video-Walkthrough**: So können Sie einen QR-Code erstellen (iOS-Beispiel): {{/assets/video/01QRCodeErstellen}}
+ 
 
 ### Zwei verschiedene Event-Typen
 
