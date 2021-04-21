@@ -39,7 +39,7 @@ Darüber gelangen sie zu ihren Check-Ins, wo sie eine Übersicht über bereits v
 Alternativ können Veranstalter\*innen und Betreiber\*innen auch einen automatischen Check-Out nach einer zuvor festgelegten Zeit einstellen. Nutzer\*innen erhalten dann eine Benachrichtigung, dass sie ausgecheckt wurden, können die Zeit aber im Nachhinein über die Registerkarte unter Check-In manuell anpassen.
 
 **Video-Walkthrough**: So können Sie ein- oder auschecken (iOS-Beispiel):
-{{/assets/video/02qrcodescannen}}
+{{/assets/video/02qrcode-scannen}}
 
 ### So kann ein QR-Code erstellt werden
 
@@ -48,7 +48,7 @@ Nutzer\*innen können über den neuen Bereich auf dem Startbildschirm der Corona
 Dazu klicken sie einfach auf *QR-Code erstellen*. Anschließend können sie **Informationen zu der Veranstaltung** angeben: Nach der Auswahl der Kategorie  (z.B. Einzelhandel oder private Feier), können sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder ausgedruckt und vor Ort aufgehängt werden kann. 
 
 **Video-Walkthrough**: So können Sie einen QR-Code erstellen (iOS-Beispiel):
-{{/assets/video/01qrcodeerstellen}}
+{{/assets/video/01qrcode-erstellen}}
 
 ### Zwei verschiedene Event-Typen
 
