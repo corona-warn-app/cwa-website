@@ -113,40 +113,6 @@
                         ]
                     },
                     {
-                        "title": "Fragen und Antworten zum QR-Code:",
-                        "anchor": "check_in_qr_code",
-                        "active": true,
-                        "textblock": [
-                            "<b>Wer generiert den QR-Code?</b>",
-                            "Die Betreiberin/der Betreiber einer Lokation bzw. eines Events generiert den QR-Code.",
-                            "<b>Kann der QR-Code auch für die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</b>",
-                            "Selbstverständlich, das ist möglich.",
-                            "<b>Wo kann der QR-Code generiert werden?</b>",
-                            "Der QR-Code kann direkt in der App generiert werden. Ein entsprechend generierter QR-Code kann dann als PDF ausgedruckt werden oder direkt aus der App abgescannt werden.",
-                            "<b>Wird es eine Möglichkeit geben, auch ohne Smartphone einen Check In durchzuführen (Dongle o.ä.)?</b>",
-                            "Nein, das ist nicht möglich.",
-                            "<b>Womit sollte ich den QR-Code scannen?</b>",
-                            "Benutzen Sie ausschließlich die CWA zum Einscannen der QR-Codes: Ein QR-Code kann zwar grundsätzlich sowohl mit der nativen Kamera-App als auch mit der CWA gescannt werden. Um einem Missbrauch vorzubeugen, empfehlen wir aber die Verwendung der CWA zum Scannen der QR-Codes. Nur die CWA kann sicherstellen, dass legitime QR-Codes verarbeitet werden.",
-                            "<b>Was passiert, wenn ich einen QR-Code scanne, die CWA aber nicht installiert habe?</b>",
-                            "iOS-Nutzer*innen werden in den App Store geleitet, wo sie die App herunterladen können. Android-Nutzer*innen werden auf eine Website geleitet, von der sie in den Google Play Store gelangen, um die App herunterzuladen."
-                        ]
-                    },
-                    {
-                        "title": "Fragen und Antworten zur Warnung:",
-                        "anchor": "check_in_qr_warning",
-                        "active": true,
-                        "textblock": [
-                            "<b>Wie ist der Ablauf bei einem positiven Befund?<br>Bekommen alle, die den gleichen QR-Code gescannt haben, eine Warnung?<br>Was genau muss passieren, damit Nutzer, die in einer bestimmten Location eingecheckt waren, durch die neue Funktion eine Warnung der App bekommen?</b>",  
-                            "Der Ablauf basiert auf dem bestehenden Warn-Prozess der CWA: falls eine Teilnehmerin/ein Teilnehmer eines Events oder eben eine Besucherin/ein Besucher einer Lokation positiv getestet ist, sollte sie/er dieses Ergebnis über die CWA teilen. Dann erhalten alle anderen, die sich dort zu dem Zeitpunkt eingecheckt haben, unverzüglich eine Warnung, ohne dass die Gesundheitsämter belastet werden müssen. Die kann, je nach epidemiologischer Situation, in zwei Versionen ausfallen: 'geringes Risiko' (grüne Kachel) oder eben 'hohes Risiko' (rote Kachel).",
-                            "<b>Wie wird das Risiko ermittelt?<br>Wann erhalte ich eine Warnung über ein geringes Risiko (grüne Kachel), wann über ein hohes (rote Kachel)?</b>",
-                            "Die Berechnung des Risikos hängt davon ab, ob und wie lange sich der Aufenthalt eines Nutzers oder einer Nutzerin mit einer später positiv auf Covid-19 getesteten Person überschneidet. Überschneidet sich der Aufenthalt um weniger als 10 Minuten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit geringem Risiko (grüne Kachel). Hat sich der Aufenthalt mit der später positiv auf COVID-19 getesteten Person um 10 Minuten oder länger überschnitten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit erhöhtem Risiko (rote Kachel).",
-                            "<b>Kann der Nutzer erkennen worauf die Warnung basiert, d.h. wegen welchem gescannten QR-Code die Warnung erfolgt?</b>",
-                            "Ja, dies wird im Kontakttagebuch angezeigt. So kann bspw. auch abgeschätzt werden, ob Familienangehörige wie Kinder betroffen sind, die ebenfalls anwesend waren, aber die App nicht nutzen.",
-                            "<b>Können diese Informationen freiwillig dem Gesundheitsamt mitgeteilt werden? Wenn ja, welche Informationen fließen?</b>",
-                            "Nach einer roten Kachel-Warnung (hohes Risiko) sollte ich mich in Quarantäne begeben und umgehend einen PCR-Test machen lassen. Ist dieser positiv, muss vom Arzt/Testzentrum ohnehin eine Meldung ans Gesundheitsamt gehen. Es wird empfohlen das positive Testergebnis via der CWA zu teilen. Darüber hinaus können die Informationen über die bereits existierende Export-Funktion des Kontakttagebuchs manuell mit dem Gesundheitsamt geteilt werden."
-                        ]
-                    },
-                    {
                         "title": "Für welche Orte und Events eignet sich die Eventregistrierung?",
                         "anchor": "check_in_which_places_and_events",
                         "active": true,
@@ -180,6 +146,40 @@
                         "textblock": [
                             "Nein, denn die wesentlichen Merkmale der CWA - Dezentralität und Pseudonymität – bleiben mit der Event-Registrierung gewahrt. Es werden keine persönlichen Kontaktdaten registriert oder Ortsdaten übermittelt. Die Daten werden dezentral und pseudonym auf den Smartphones verarbeitet.",
                             "Der QR-Code beschreibt ein Event mit Attributen, eine detaillierte Adresse ist nicht erforderlich. Der QR-Code ist zudem eine Zufalls-ID, die in der CWA nicht weiterverarbeitet wird."
+                        ]
+                    },
+                    {
+                        "title": "Fragen und Antworten zum QR-Code:",
+                        "anchor": "check_in_qr_code",
+                        "active": true,
+                        "textblock": [
+                            "<b>Wer generiert den QR-Code?</b>",
+                            "Die Betreiberin/der Betreiber einer Lokation bzw. eines Events generiert den QR-Code.",
+                            "<b>Kann der QR-Code auch für die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</b>",
+                            "Selbstverständlich, das ist möglich.",
+                            "<b>Wo kann der QR-Code generiert werden?</b>",
+                            "Der QR-Code kann direkt in der App generiert werden. Ein entsprechend generierter QR-Code kann dann als PDF ausgedruckt werden oder direkt aus der App abgescannt werden.",
+                            "<b>Wird es eine Möglichkeit geben, auch ohne Smartphone einen Check In durchzuführen (Dongle o.ä.)?</b>",
+                            "Nein, das ist nicht möglich.",
+                            "<b>Womit sollte ich den QR-Code scannen?</b>",
+                            "Benutzen Sie ausschließlich die CWA zum Einscannen der QR-Codes: Ein QR-Code kann zwar grundsätzlich sowohl mit der nativen Kamera-App als auch mit der CWA gescannt werden. Um einem Missbrauch vorzubeugen, empfehlen wir aber die Verwendung der CWA zum Scannen der QR-Codes. Nur die CWA kann sicherstellen, dass legitime QR-Codes verarbeitet werden.",
+                            "<b>Was passiert, wenn ich einen QR-Code scanne, die CWA aber nicht installiert habe?</b>",
+                            "iOS-Nutzer*innen werden in den App Store geleitet, wo sie die App herunterladen können. Android-Nutzer*innen werden auf eine Website geleitet, von der sie in den Google Play Store gelangen, um die App herunterzuladen."
+                        ]
+                    },
+                    {
+                        "title": "Fragen und Antworten zur Warnung:",
+                        "anchor": "check_in_qr_warning",
+                        "active": true,
+                        "textblock": [
+                            "<b>Wie ist der Ablauf bei einem positiven Befund?<br>Bekommen alle, die den gleichen QR-Code gescannt haben, eine Warnung?<br>Was genau muss passieren, damit Nutzer, die in einer bestimmten Location eingecheckt waren, durch die neue Funktion eine Warnung der App bekommen?</b>",  
+                            "Der Ablauf basiert auf dem bestehenden Warn-Prozess der CWA: falls eine Teilnehmerin/ein Teilnehmer eines Events oder eben eine Besucherin/ein Besucher einer Lokation positiv getestet ist, sollte sie/er dieses Ergebnis über die CWA teilen. Dann erhalten alle anderen, die sich dort zu dem Zeitpunkt eingecheckt haben, unverzüglich eine Warnung, ohne dass die Gesundheitsämter belastet werden müssen. Die kann, je nach epidemiologischer Situation, in zwei Versionen ausfallen: 'geringes Risiko' (grüne Kachel) oder eben 'hohes Risiko' (rote Kachel).",
+                            "<b>Wie wird das Risiko ermittelt?<br>Wann erhalte ich eine Warnung über ein geringes Risiko (grüne Kachel), wann über ein hohes (rote Kachel)?</b>",
+                            "Die Berechnung des Risikos hängt davon ab, ob und wie lange sich der Aufenthalt eines Nutzers oder einer Nutzerin mit einer später positiv auf Covid-19 getesteten Person überschneidet. Überschneidet sich der Aufenthalt um weniger als 10 Minuten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit geringem Risiko (grüne Kachel). Hat sich der Aufenthalt mit der später positiv auf COVID-19 getesteten Person um 10 Minuten oder länger überschnitten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit erhöhtem Risiko (rote Kachel).",
+                            "<b>Kann der Nutzer erkennen worauf die Warnung basiert, d.h. wegen welchem gescannten QR-Code die Warnung erfolgt?</b>",
+                            "Ja, dies wird im Kontakttagebuch angezeigt. So kann bspw. auch abgeschätzt werden, ob Familienangehörige wie Kinder betroffen sind, die ebenfalls anwesend waren, aber die App nicht nutzen.",
+                            "<b>Können diese Informationen freiwillig dem Gesundheitsamt mitgeteilt werden? Wenn ja, welche Informationen fließen?</b>",
+                            "Nach einer roten Kachel-Warnung (hohes Risiko) sollte ich mich in Quarantäne begeben und umgehend einen PCR-Test machen lassen. Ist dieser positiv, muss vom Arzt/Testzentrum ohnehin eine Meldung ans Gesundheitsamt gehen. Es wird empfohlen das positive Testergebnis via der CWA zu teilen. Darüber hinaus können die Informationen über die bereits existierende Export-Funktion des Kontakttagebuchs manuell mit dem Gesundheitsamt geteilt werden."
                         ]
                     }
                 ]
