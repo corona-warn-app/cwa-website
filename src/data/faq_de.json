@@ -395,16 +395,6 @@
                             "Bei Benutzung des Ultra-Energiesparmodus auf Geräten von Samsung kann die Hintergrundaktualisierung trotz <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> fehlschlagen. Grund dafür ist wahrscheinlich, dass der Aktualisierungsprozess aufgrund der stark reduzierten Rechenleistung abgebrochen wird. Der Ultra-Energiesparmodus sollte deshalb in den Einstellungen deaktiviert werden:",
                             "<ol><li>'Einstellungen' -> 'System' -> 'Energiesparmodus'</li><li>Wählen Sie 'Ultra-Energiesparmodus'.</li><li>Öffnen Sie das Menü in der oberen rechten Ecke und wählen Sie 'Ultra-Energiesparmodus deaktivieren'.</li></ol>"
                         ]
-                    },
-                    {
-                        "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
-                        "anchor": "huawei_honor",
-                        "active": true,
-                        "textblock": [
-                            "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
-                            "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
-                            "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
-                        ]
                     }
                 ]
             },
@@ -561,7 +551,7 @@
                         "anchor": "interoperability_countries",
                         "active": true,
                         "textblock": [
-                            "Gemeinsam mit der EU-Kommission wurde eine Infrastruktur für einen sicheren Informationsaustausch entwickelt, die als sog. \"Interoperability Gateway\" bezeichnet wird. Dieses Gateway ermöglicht, dass die Corona-Warn-App über Landesgrenzen hinaus funktioniert und auch im Ausland potentielle Warnmeldungen empfangen werden können. Detaillierte Informationen zum Gateway bietet die EU-Kommission unter <a href='https://ec.europa.eu/commission/presscorner/detail/de/qanda_20_1905#gateway'>Coronavirus: EU-Datenabgleichsdienst für Kontaktnachverfolgungs- und Warn-Apps – Fragen und Antworten</a>. Damit auch Warnungen zwischen Nutzern der Schweizer Corona-App und der Corona-Warn-App möglich sind, betreibt das RKI zudem gemeinsam mit der Schweiz (Bundesamt für Gesundheit der Schweizerischen Eidgenossenschaft) einen weiteren Austausch-Server.",
+                            "Gemeinsam mit der EU-Kommission wurde eine Infrastruktur für einen sicheren Informationsaustausch entwickelt, die als sog. \"Interoperability Gateway\" bezeichnet wird. Dieses Gateway ermöglicht, dass die Corona-Warn-App über Landesgrenzen hinaus funktioniert und auch im Ausland potentielle Warnmeldungen empfangen werden können. Detaillierte Informationen zum Gateway bietet die EU-Kommission unter <a href='https://ec.europa.eu/commission/presscorner/detail/de/qanda_20_1905#gateway'>Coronavirus: EU-Datenabgleichsdienst für Kontaktnachverfolgungs- und Warn-Apps – Fragen und Antworten</a>. Damit auch Warnungen zwischen Nutzern der Schweizer Corona-App und der Corona-Warn-App möglich sind, betreibt das RKI zudem gemeinsam mit der Schweiz (Bundesamt für Gesundheit der Schweizerischen Eidgenossenschaft) einen weiteren Austausch-Server.",
                             "Um weitere Informationen in der App zu sehen, klicken Sie",
                             "<ol><li>'RISIKO-ERMITTLUNG AKTIV (bzw. GESTOPPT) an'</li><li>Dann auf 'Länderübergreifende Risiko Ermittlung' klicken.</li><li>Scrollen Sie nach unten zu der Liste der Länder.</li></ol>",
                             "Nachstehend finden Sie eine Liste der derzeit teilnehmenden Länder und Angaben zu den zuständigen Gesundheitsbehörden:",
@@ -1207,6 +1197,17 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "[Google/Android]: Hinweise zu Geräten von Huawei oder Honor",
+                        "anchor": "huawei_honor",
+                        "active": true,
+                        "textblock": [
+                            "<b>AKTUELL</b><br/>Das Problem wurde von den Geräteherstellern durch einen Patch behoben. Bitte installieren Sie die neusten Updates für Ihr Gerät.<hr/>",
+                            "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank' rel='noopener'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank' rel='noopener'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
+                            "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
+                            "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Hinweise zum Stromsparmodus auf iOS-Geräten",
                         "anchor": "ios_power_save",
