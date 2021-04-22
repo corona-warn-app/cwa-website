@@ -190,8 +190,10 @@ function GenerateQRCode() {
       let qrImg = new Image();
       qrImg.onload = function() {
         ctx.drawImage(qrImg, 275, 230);
-        console.log(ctx);
-        console.log(qrImg);
+        ctx.font = "30px sans-serif";
+        ctx.fillStyle = "black";
+        ctx.fillText(description, 225, 1460);
+        ctx.fillText(address, 225, 1510);
       }
       qrImg.src = qrUrl;
     }
