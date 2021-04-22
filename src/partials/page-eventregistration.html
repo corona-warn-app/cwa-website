@@ -1,0 +1,50 @@
+{{#if page-contents}}
+<section class="">
+  <div class="container">
+    <div class="container-inner">
+      <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+      <div class="row">
+        <div class="col col-12">
+          <select id="locationtype">
+            <option value="3">Einzelhandel</option>
+            <option value="4">Gastronomiebetrieb</option>
+            <option value="5">Handwerksbetrieb</option>
+            <option value="6">Arbeitsstätte</option>
+            <option value="7">Bildungsstätte</option>
+            <option value="8">öffentliche Gebäude</option>
+            <option value="1">anderer Ort</option>
+            <option value="9">Kulturveranstaltung</option>
+            <option value="10">Vereinsaktivität</option>
+            <option value="11">private Feier</option>
+            <option value="12">Gottesdienst</option>
+            <option value="2">anderes Event</option>
+            <option value="0">Sonstiges</option>
+          </select>
+        </div>
+        <div class="col col-12">
+          <label>Beschreibung
+            <input id="description" type="text" max="100">
+          </label>
+        </div>
+        <div class="col col-12">
+          <label>Anschrift
+            <input id="address" type="text" max="100">
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-12">
+          <button id="generateQR" class="btn btn-primary">Generieren</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-12">
+          <canvas id="eventqrcode"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/if}}
