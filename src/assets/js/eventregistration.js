@@ -1,6 +1,24 @@
 import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
+// import moment from 'moment';
+
+document.getElementById('locationtype').addEventListener('input', function (e) {
+  UpdateQRForm();
+});
+function UpdateQRForm() {
+  if (!document.getElementById("qrform")) {
+    return;
+  }
+
+  let locationtype = +document.getElementById('locationtype').value;
+  if (locationtype && (locationtype >= 9 || locationtype === 2)) {
+    document.getElementById('event-duration').classList.remove('d-none');
+  } else {
+    document.getElementById('event-duration').classList.add('d-none');
+  }
+}
+UpdateQRForm();
 
 document.getElementById('generateQR').addEventListener('click', function (e) {
   e.preventDefault();
@@ -64,13 +82,46 @@ function ValidateQRForm() {
     errors++;
   }
 
-  // TODO: Validate event start/end time
-  /*
   let locationtype = +document.getElementById('locationtype').value;
-  if (locationtype >== 9 || locationtype === 2) {
+  if (locationtype >= 9 || locationtype === 2) {
+    // TODO: Use momentjs to validate dates
+    let dateReg = /^\d{2}.\d{2}.\d{4}$/
+    let timeReg = /^\d{2}:\d{2}$/
 
+    let startdate = document.getElementById('starttime-date').value;
+    let starttime = document.getElementById('starttime-time').value;
+    if (!starttime || !startdate) {
+      document.getElementById('qr-error-starttimerequired').style.display = 'block';
+      errors++;
+    } else {
+      if (!dateReg.test(startdate)) {
+        document.getElementById('qr-error-starttimeinvaliddate').style.display = 'block';
+        errors++;
+      }
+
+      if (!timeReg.test(starttime)) {
+        document.getElementById('qr-error-starttimeinvalidtime').style.display = 'block';
+        errors++;
+      }
+    }
+
+    let enddate = document.getElementById('endtime-date').value;
+    let endtime = document.getElementById('endtime-time').value;
+    if (!endtime || !enddate) {
+      document.getElementById('qr-error-endtimerequired').style.display = 'block';
+      errors++;
+    } else {
+      if (!dateReg.test(enddate)) {
+        document.getElementById('qr-error-endtimeinvaliddate').style.display = 'block';
+        errors++;
+      }
+
+      if (!timeReg.test(endtime)) {
+        document.getElementById('qr-error-endtimeinvalidtime').style.display = 'block';
+        errors++;
+      }
+    }
   }
-  */
 
   return errors === 0;
 }
@@ -97,6 +148,8 @@ function GenerateQRCode() {
   traceLocation.setVersion(1);
   traceLocation.setDescription(description);
   traceLocation.setAddress(address);
+
+  // TODO: Parse date
   // traceLocation.setStarttimestamp(1619043942);
   // traceLocation.setEndtimestamp(1619045942);
 
