@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-Das Projektteam der Deutschen Telekom und SAP hat **Corona-Warn-App Version 2.0** veröffentlicht, die Nutzer\*innen innerhalb der nächsten 48 Stunden zur Verfügung steht. Mit dem Update erhält die Corona-Warn-App eine Funktionalität zur **Eventregistrierung**, mit der Nutzer*innen im Einzelhandel, bei Veranstaltungen  oder privaten Treffen per QR-Code einchecken können.
+Das Projektteam der Deutschen Telekom und SAP hat **Corona-Warn-App Version 2.0** veröffentlicht, die Nutzer\*innen innerhalb der nächsten 48 Stunden zur Verfügung steht. Mit dem Update erhält die Corona-Warn-App eine Funktionalität zur **Eventregistrierung**, mit der Nutzer\*innen im Einzelhandel, bei Veranstaltungen  oder privaten Treffen per QR-Code einchecken können. Während der Entwicklungsphase hat das Projektteam von Gesprächen mit Dr. Wouter Lueks und Prof. Carmela Troncoso von der EPFL (École polytechnique fédérale de Lausanne) profitiert, die ihre Einschätzungen dazu gegeben haben, wie ihr dezentrales, die Privatsphäre wahrendes Protokoll [CrowdNotifier](https://github.com/CrowdNotifier/documents) angepasst werden kann, um automatische Benachrichtigungen zu unterstützen.
 
 <!-- overview -->
 
@@ -59,13 +59,13 @@ Dazu klicken sie einfach auf *QR-Code erstellen*. Anschließend können sie **In
 
 Es gibt **zwei verschiedenen Szenarien**, in denen Veranstalter\*innen, Einzelhändler\*innen und Privatpersonen die neue Funktion der Eventregistrierung nutzen können. 
 
-**Szenario 1: Ad-hoc Event**
+**Szenario 1: Event**
 
-Ein Ad-hoc Event kann kurzfristig von Organisator\*innen angelegt werden und hat einen definierten Anfangs- und Endzeitpunkt. Dazu zählen beispielsweise private Treffen, Feiern oder kleinere Veranstaltungen. 
+Ein Event kann kurzfristig von Organisator\*innen angelegt werden und hat einen definierten Anfangs- und Endzeitpunkt. Dazu zählen beispielsweise private Treffen, Feiern oder kleinere Veranstaltungen. 
 
-**Szenario 2: Ständige Lokation**
+**Szenario 2: Ort**
 
-Sogenannte ständige Lokationen haben im Gegensatz zum Ad-hoc Event keinen festen Anfangs- und Endzeitpunk. In diesem Fall wird ein QR-Code typischerweise für einen längeren Zeitraum in einem Raum zur Verfügung gestellt. Besucher\*innen scannen diesen QR-Code bei jedem Besuch neu. Beispiele für eine ständige Lokation sind Friseure oder Restaurants.
+Orte haben im Gegensatz zu Events keinen festen Anfangs- und Endzeitpunkt. In diesem Fall wird ein QR-Code typischerweise für einen längeren Zeitraum in einem Raum zur Verfügung gestellt. Besucher\*innen scannen diesen QR-Code bei jedem Besuch neu. Beispiele für eine ständige Lokation sind Friseure oder Restaurants.
 
 
 
