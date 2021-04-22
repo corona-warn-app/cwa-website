@@ -1,13 +1,13 @@
 import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
-// import moment from 'moment';
+import moment from 'moment';
 
 document.getElementById('locationtype').addEventListener('input', function (e) {
   UpdateQRForm();
 });
 function UpdateQRForm() {
-  if (!document.getElementById("qrform")) {
+  if (!document.getElementById('qrform')) {
     return;
   }
 
@@ -84,9 +84,8 @@ function ValidateQRForm() {
 
   let locationtype = +document.getElementById('locationtype').value;
   if (locationtype >= 9 || locationtype === 2) {
-    // TODO: Use momentjs to validate dates
+    let timeReg = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/
     let dateReg = /^\d{2}.\d{2}.\d{4}$/
-    let timeReg = /^\d{2}:\d{2}$/
 
     let startdate = document.getElementById('starttime-date').value;
     let starttime = document.getElementById('starttime-time').value;
@@ -94,7 +93,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-starttimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(startdate)) {
+      if (!dateReg.test(startdate) || !moment(startdate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-starttimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -111,7 +110,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-endtimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(enddate)) {
+      if (!dateReg.test(enddate) || !moment(enddate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-endtimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -130,10 +129,11 @@ function GenerateQRCode() {
   let description = document.getElementById('description').value;
   let address = document.getElementById('address').value;
   let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
+  let locationtype = +document.getElementById('locationtype').value;
 
   let locationData = new proto.CWALocationData();
   locationData.setVersion(1);
-  locationData.setType(+document.getElementById('locationtype').value);
+  locationData.setType(locationtype);
   locationData.setDefaultcheckinlengthinminutes(+defaultcheckinlength);
 
   let crowdNotifierData = new proto.CrowdNotifierData();
@@ -149,9 +149,15 @@ function GenerateQRCode() {
   traceLocation.setDescription(description);
   traceLocation.setAddress(address);
 
-  // TODO: Parse date
-  // traceLocation.setStarttimestamp(1619043942);
-  // traceLocation.setEndtimestamp(1619045942);
+  if (locationtype >= 9 || locationtype === 2) {
+    let startdate = document.getElementById('starttime-date').value.split('.');
+    let starttime = document.getElementById('starttime-time').value;
+    traceLocation.setStarttimestamp(moment(startdate.reverse().join('-') + ' ' + starttime).format('X'));
+
+    let enddate = document.getElementById('endtime-date').value.split('.');
+    let endtime = document.getElementById('endtime-time').value;
+    traceLocation.setEndtimestamp(moment(enddate.reverse().join('-') + ' ' + endtime).format('X'));
+  }
 
   let payload = new proto.QRCodePayload();
   payload.setLocationdata(traceLocation);
