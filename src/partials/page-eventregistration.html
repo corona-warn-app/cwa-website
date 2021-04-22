@@ -5,46 +5,36 @@
       <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
       <form id="qrform">
         <div class="form-group row mb-2">
-          <label for="locationtype" class="col-sm-3 col-form-label">Ort/Event</label>
+          <label for="locationtype" class="col-sm-3 col-form-label">{{page-contents.section-main.form.fields.locationtype}}</label>
           <div class="col-sm-9">
-            <select id="locationtype" class="form-control">
-              <option value="3">Einzelhandel</option>
-              <option value="4">Gastronomiebetrieb</option>
-              <option value="5">Handwerksbetrieb</option>
-              <option value="6">Arbeitsstätte</option>
-              <option value="7">Bildungsstätte</option>
-              <option value="8">öffentliche Gebäude</option>
-              <option value="1">anderer Ort</option>
-              <option value="9">Kulturveranstaltung</option>
-              <option value="10">Vereinsaktivität</option>
-              <option value="11">private Feier</option>
-              <option value="12">Gottesdienst</option>
-              <option value="2">anderes Event</option>
-              <option value="0">Sonstiges</option>
+            <select id="locationtype" class="form-control" required>
+            {{#each page-contents.section-main.form.locationtypes}}
+              <option value="{{id}}">{{name}}</option>
+            {{/each}}
             </select>
           </div>
         </div>
         <div class="form-group row mb-2">
-          <label for="description" class="col-sm-3 col-form-label">Beschreibung</label>
+          <label for="description" class="col-sm-3 col-form-label">{{page-contents.section-main.form.fields.description}}</label>
           <div class="col-sm-9">
             <input id="description" class="form-control" type="text" max="100" required>
           </div>
         </div>
         <div class="form-group row mb-2">
-          <label for="address" class="col-sm-3 col-form-label">Anschrift</label>
+          <label for="address" class="col-sm-3 col-form-label">{{page-contents.section-main.form.fields.address}}</label>
           <div class="col-sm-9">
             <input id="address" class="form-control" type="text" max="100" required>
           </div>
         </div>
         <div class="form-group row mb-2">
-          <label for="defaultcheckinlength" class="col-sm-3 col-form-label">Auschecken nach Minuten</label>
+          <label for="defaultcheckinlength" class="col-sm-3 col-form-label">{{page-contents.section-main.form.fields.defaultcheckinlength}}</label>
           <div class="col-sm-9">
-            <input id="defaultcheckinlength" class="form-control" type="number" min="1" max="3600">
+            <input id="defaultcheckinlength" class="form-control" type="number" min="1" max="3600" required>
           </div>
         </div>
 
-        <button id="generateQR" value="show" class="btn btn-primary">Anzeigen</button>
-        <button id="downloadCode" value="download" class="btn btn-secondary">Herunterladen</button>
+        <button id="generateQR" value="show" class="btn btn-primary">{{page-contents.section-main.form.fields.show}}</button>
+        <button id="downloadCode" value="download" class="btn btn-secondary">{{page-contents.section-main.form.fields.download}}</button>
 
         <div class="row">
           <div class="col col-12">

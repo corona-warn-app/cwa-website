@@ -2,6 +2,31 @@
     "section-main": {
         "headline": {
             "title": "QR-Code erstellen"
+        },
+        "form": {
+            "fields": {
+                "locationtype": "Ort/Event",
+                "description": "Beschreibung",
+                "address": "Anschrift",
+                "defaultcheckinlength": "Auschecken nach Minuten",
+                "show": "Anzeigen",
+                "download": "Herunterladen"
+            },
+            "locationtypes": [
+                { "id": 3, "name": "Einzelhandel" },
+                { "id": 4, "name": "Gastronomiebetrieb" },
+                { "id": 5, "name": "Handwerksbetrieb" },
+                { "id": 6, "name": "Arbeitsstätte" },
+                { "id": 7, "name": "Bildungsstätte" },
+                { "id": 8, "name": "öffentliche Gebäude" },
+                { "id": 1, "name": "anderer Ort" },
+                { "id": 9, "name": "Kulturveranstaltung" },
+                { "id": 10, "name": "Vereinsaktivität" },
+                { "id": 11, "name": "private Feier" },
+                { "id": 12, "name": "Gottesdienst" },
+                { "id": 2, "name": "anderes Event" },
+                { "id": 0, "name": "Sonstiges" }
+            ]
         }
     }
 }
