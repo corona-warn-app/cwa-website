@@ -1,26 +1,25 @@
 ---
-page-title: "Die Bundesregierung integriert Schnelltests in die Corona-Warn-App"
-page-description: "Die Bundesregierung integriert Schnelltests in die Corona-Warn-App"
+page-title: "Federal Government integrates rapid COVID-19 tests into Corona-Warn-App"
+page-description: "Federal Government integrates rapid COVID-19 tests into Corona-Warn-App"
 page-name: corona-warn-app-test-integration
 page-name_de: corona-warn-app-test-integration
 author: Hanna Heine
 layout: blog
 ---
 
-*Currently, German only.*
 
-### Starke Partner unterstützen die neue Funktion
+### Strong partners support the new feature
 
-Die Corona-Warn-App der Bundesregierung erhält eine weitere wichtige Funktion. Die App integriert künftig Schnelltests. Nutzer\*innen können die Bestätigung ihres Schnelltests in der CWA abspeichern und im Kontakt-Tagebuch hinzufügen. Wer bei einem Schnelltest positiv auf Corona getestet wird, kann zudem künftig auch über die Corona-Warn-App Kontaktpersonen warnen.
+The federal government's Corona-Warn-App is getting another important feature. In the future, the app will integrate rapid COVID-19 tests. Users can **save the confirmation of their test** in the app and add them to the contact diary. In addition, anyone who tests positive for COVID-19 through a rapid test will also be able to **warn contacts** via the Corona-Warn-App in the future.
 
 <!-- overview -->
 
-Mit Schnelltest-Warnungen in der Corona-Warn-App können Bundesbürger\*innen ab 16 Jahren bald einen weiteren Beitrag zur Eindämmung der Pandemie leisten. Digitale Anwendungen sind neben den AHA-Regeln ein wichtiger Baustein in der Strategie der Bundesregierung gegen die Pandemie. 
+With rapid COVID-19 test alerts in the Corona-Warn-App, German citizens aged 16 and older will soon be able to make a further contribution to the pandemic's containment. Alongside the "AHA" rules (keep distance, follow hygiene precautions, wear a mask), digital apps are an important building block in the German government's strategy in fighting the pandemic.
 
-SAP und Deutsche Telekom entwickeln die Schnelltest-Funktion im Auftrag der Bundesregierung. Die Unternehmen führen dazu bereits konkrete Gespräche mit Partnern, die solche Tests durchführen oder entsprechende Angebote planen.
+SAP and Deutsche Telekom are developing the rapid test function on behalf of the German government. To this end, the companies are already holding concrete talks with partners who carry out such tests or are planning corresponding offerings.
 
-In der ersten Phase wollen sich **folgende Partner** an der Umsetzung der Schnelltest-Funktion in der Corona-Warn-App beteiligen: BUDNI, Deutscher Apothekerverband (DAV), dm-drogerie markt, DOCTORBOX, GALERIA Karstadt Kaufhof. Weitere sollen folgen. Interessierten Unternehmen bieten die Entwicklungspartner SAP und Telekom Kontakt über [corona-warn-app.opensource@sap.com](mailto:corona-warn-app.opensource@sap.com)
+In the first phase, the **following partners want to participate** in the implementation of the rapid test function in the Corona-Warn-App: BUDNI, Deutscher Apothekerverband (DAV), dm-drogerie markt, DOCTORBOX, GALERIA Karstadt Kaufhof. Others are to follow. Companies that are interested in participating can contact the development partners SAP and Telekom via [corona-warn-app.opensource@sap.com](mailto:corona-warn-app.opensource@sap.com)
 
-Ein Web-Portal bindet Schnelltest-Partner künftig an die Corona-Warn-App an. So sollen Ergebnisse von Schnelltests darüber umgehend an die App übermittelt werden. Voraussetzung ist, dass der Test nach dem Vier-Augen-Prinzip von geschulten und **autorisierten Mitarbeiter\*innen** durchgeführt wird. 
+A **web portal** will connect rapid test-partners to the Corona-Warn-App in the future. The test results will be transmitted immediately to the app. The prerequisite is that the test is carried out by trained and authorized employees in accordance with the dual control principle.
 
-Die Schnelltest-Funktion soll in der zweiten April-Hälfte zur Verfügung stehen. Zu den Details werden die Unternehmen zu einem späteren Zeitpunkt wie gewohnt über den bekannten Blog [https://coronawarn.app/de](https://coronawarn.app/de) informieren.
+The rapid test-function is supposed to be available in the second half of April. SAP and Deutsche Telekom will provide further information on the details here soon.
