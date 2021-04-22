@@ -368,14 +368,6 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Notes on the Low Power Mode on iOS devices",
-                        "anchor": "ios_power_save",
-                        "active": true,
-                        "textblock": [
-                            "If your device runs on iOS version 13.6.1 or later, the functionality of the Corona Warn App is not negatively affected by the Low Power Mode. On devices with an earlier iOS version, Low Power Mode may cause problems with updating the risk status in the background. <b>We therefore ask you to update the iOS version of your device to 13.6.1 or higher if you want to use the Low Power Mode.</b>"
-                        ]
-                    },
-                    {
                         "title": "[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?",
                         "anchor": "no_risk_update",
                         "active": true,
@@ -1213,6 +1205,15 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                        "title": "[Apple/iOS]: Notes on the Low Power Mode on iOS devices",
+                        "anchor": "ios_power_save",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>Since February 5, 2021 the minimum required version of the Corona Warn App is 1.5.3. This version requires iOS 13.7 or later. When using these iOS versions, the Corona-Warn-App is not negatively affected by activating Low Power Mode.<hr/>",
+                            "If your device runs on iOS version 13.6.1 or later, the functionality of the Corona Warn App is not negatively affected by the Low Power Mode. On devices with an earlier iOS version, Low Power Mode may cause problems with updating the risk status in the background. <b>We therefore ask you to update the iOS version of your device to 13.6.1 or higher if you want to use the Low Power Mode.</b>"
+                        ]
+                    },
                     {
                         "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
                         "anchor": "multiple_exposure_checks",
