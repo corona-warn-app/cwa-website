@@ -2,7 +2,7 @@ import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 
-document.getElementById("qrform").addEventListener("submit", function (e) {
+document.getElementById('qrform').addEventListener('submit', function (e) {
   e.preventDefault();
 
   let canvas = document.getElementById('eventqrcode');
@@ -21,18 +21,18 @@ document.getElementById("qrform").addEventListener("submit", function (e) {
 })
 
 function GenerateQRCode() {
-  let description = document.getElementById("description").value;
-  let address = document.getElementById("address").value;
-  let defaultcheckinlength = document.getElementById("defaultcheckinlength").value;
+  let description = document.getElementById('description').value;
+  let address = document.getElementById('address').value;
+  let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
 
   let locationData = new proto.CWALocationData();
   locationData.setVersion(1);
-  locationData.setType(+document.getElementById("locationtype").value);
+  locationData.setType(+document.getElementById('locationtype').value);
   locationData.setDefaultcheckinlengthinminutes(+defaultcheckinlength);
 
   let crowdNotifierData = new proto.CrowdNotifierData();
   crowdNotifierData.setVersion(1);
-  crowdNotifierData.setPublickey("gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA");
+  crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
 
   let seed = new Uint8Array(16);
   crypto.getRandomValues(seed);
@@ -54,7 +54,7 @@ function GenerateQRCode() {
   let qrContent = encode(payload.serializeBinary()).replace('+', '-').replace('/', '_').replace(/=+$/, '');
   let canvas = document.getElementById('eventqrcode');
    
-  QRCode.toCanvas(canvas, "https://e.coronawarn.app?v=1#" + qrContent, function (error) {
+  QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, function (error) {
     if (error) console.error(error)
   });
 }
