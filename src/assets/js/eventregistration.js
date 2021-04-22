@@ -27,7 +27,7 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
     GenerateQRCode();
 
     let canvas = document.getElementById('eventqrcode');
-    canvas.style.display = 'block';
+    canvas.classList.remove('d-none');
   }
 });
 
@@ -35,7 +35,7 @@ document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
 
   let canvas = document.getElementById('eventqrcode');
-  canvas.style.display = 'none';
+  canvas.classList.add('d-none');
 
   if (ValidateQRForm()) {
     GenerateQRCode();
