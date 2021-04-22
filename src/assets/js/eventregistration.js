@@ -23,7 +23,7 @@ document.getElementById("generateQR").addEventListener("click", function () {
 
   let crowdNotifierData = new proto.CrowdNotifierData();
   crowdNotifierData.setVersion(1);
-  crowdNotifierData.setPublickey("MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEc7DEstcUIRcyk35OYDJ95/hTg3UVhsaDXKT0zK7NhHPXoyzipEnOp3GyNXDVpaPi3cAfQmxeuFMZAIX2+6A5Xg==");
+  crowdNotifierData.setPublickey("gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA");
 
   let seed = new Uint8Array(16);
   crypto.getRandomValues(seed);
