@@ -9,9 +9,25 @@
                 "description": "Beschreibung",
                 "address": "Anschrift",
                 "defaultcheckinlength": "Auschecken nach Minuten",
+                "starttime": "Startzeit",
+                "endtime": "Endzeit",
                 "show": "Anzeigen",
                 "download": "Herunterladen"
             },
+            "errors": {
+                "descriptionrequired": "Es wird eine Beschreibung benötigt",
+                "descriptionmax": "Die Beschreibung darf maximal 100 Zeichen lang sein",
+                "addressrequired": "Es wird eine Adresse benötigt",
+                "addressmax": "Die Adresse darf maximal 100 Zeichen lang sein",
+                "defaultcheckinlengthrequired": "Bitte geben Sie eine Zeit bis zum Checkout an",
+                "defaultcheckinlengthnumber": "Die Zeit zum Auschecken muss eine Zahl sein",
+                "starttimerequired": "Die Startzeit wird benötigt",
+                "endtimerequired": "Die Endzeit wird benötigt",
+                "invaliddate": "Ungültiges Datumsformat",
+                "invalidtime": "Ungültiges Zeitformat"
+            },
+            "dateplaceholder": "DD.MM.JJJJ",
+            "timeplaceholder": "HH:MM",
             "locationtypes": [
                 { "id": 3, "name": "Einzelhandel" },
                 { "id": 4, "name": "Gastronomiebetrieb" },
