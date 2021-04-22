@@ -159,7 +159,7 @@ function GenerateQRCode() {
   payload.setVendordata(locationData.serializeBinary());
   payload.setVersion(1);
 
-  let qrContent = encode(payload.serializeBinary()).replace('+', '-').replace('/', '_').replace(/=+$/, '');
+  let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
   let canvas = document.getElementById('eventqrcode');
    
   QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, function (error) {
