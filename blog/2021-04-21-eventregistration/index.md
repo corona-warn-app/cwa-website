@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Deutsche Telekom and SAP’s project team have released **version 2.0 of the Corona-Warn-App**, which will be available to users within the next 48 hours. The update adds the **event registration feature** to the app, allowing users to check in via a QR code at retail stores, events or private meetings.
+Deutsche Telekom and SAP’s project team have released **version 2.0 of the Corona-Warn-App**, which will be available to users within the next 48 hours. The update adds the **event registration feature** to the app, allowing users to check in via a QR code at retail stores, events or private meetings. Corona-Warn-App 2.0 has benefitted from discussions with Dr. Wouter Lueks and Prof. Carmela Troncoso from EPFL (École polytechnique fédérale de Lausanne) on how to adapt their decentralized, privacy-preserving protocol [CrowdNotifier](https://github.com/CrowdNotifier/documents), to support automatic notifications.
 
 <!-- overview -->
 
