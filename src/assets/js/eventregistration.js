@@ -2,7 +2,16 @@ import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 
-document.getElementById('qrform').addEventListener('submit', function (e) {
+document.getElementById('generateQR').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  GenerateQRCode();
+
+  let canvas = document.getElementById('eventqrcode');
+  canvas.style.display = 'block';
+});
+
+document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
 
   let canvas = document.getElementById('eventqrcode');
@@ -10,15 +19,11 @@ document.getElementById('qrform').addEventListener('submit', function (e) {
 
   GenerateQRCode();
 
-  if (e.submitter.value === 'download') {
-    let dlLink = document.createElement('a');
-    dlLink.download = document.getElementById('description').value + '.png';
-    dlLink.href = document.getElementById('eventqrcode').toDataURL();
-    dlLink.click();
-  } else {
-    canvas.style.display = 'block';
-  }
-})
+  let dlLink = document.createElement('a');
+  dlLink.download = document.getElementById('description').value + '.png';
+  dlLink.href = document.getElementById('eventqrcode').toDataURL();
+  dlLink.click();
+});
 
 function GenerateQRCode() {
   let description = document.getElementById('description').value;
