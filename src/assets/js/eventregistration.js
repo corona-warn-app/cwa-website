@@ -5,10 +5,12 @@ import { encode } from 'uint8-to-base64';
 document.getElementById('generateQR').addEventListener('click', function (e) {
   e.preventDefault();
 
-  GenerateQRCode();
+  if (ValidateQRForm()) {
+    GenerateQRCode();
 
-  let canvas = document.getElementById('eventqrcode');
-  canvas.style.display = 'block';
+    let canvas = document.getElementById('eventqrcode');
+    canvas.style.display = 'block';
+  }
 });
 
 document.getElementById('downloadCode').addEventListener('click', function (e) {
@@ -17,13 +19,61 @@ document.getElementById('downloadCode').addEventListener('click', function (e) {
   let canvas = document.getElementById('eventqrcode');
   canvas.style.display = 'none';
 
-  GenerateQRCode();
+  if (ValidateQRForm()) {
+    GenerateQRCode();
 
-  let dlLink = document.createElement('a');
-  dlLink.download = document.getElementById('description').value + '.png';
-  dlLink.href = document.getElementById('eventqrcode').toDataURL();
-  dlLink.click();
+    let dlLink = document.createElement('a');
+    dlLink.download = document.getElementById('description').value + '.png';
+    dlLink.href = document.getElementById('eventqrcode').toDataURL();
+    dlLink.click();
+  }
 });
+
+function ValidateQRForm() {
+  let errors = 0;
+
+  let errorMessages = document.querySelectorAll('.invalid-feedback');
+  for (let i = 0; i < errorMessages.length; i++) {
+    errorMessages[i].style.display = 'none';
+  }
+
+  let description = document.getElementById('description').value;
+  if (!description.length) {
+    document.getElementById('qr-error-descriptionrequired').style.display = 'block';
+    errors++;
+  } else if (description.length > 100) {
+    document.getElementById('qr-error-descriptionmax').style.display = 'block';
+    errors++;
+  }
+
+  let address = document.getElementById('address').value;
+  if (!address.length) {
+    document.getElementById('qr-error-addressrequired').style.display = 'block';
+    errors++;
+  } else if (address.length > 100) {
+    document.getElementById('qr-error-addressmax').style.display = 'block';
+    errors++;
+  }
+
+  let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
+  if (!defaultcheckinlength) {
+    document.getElementById('qr-error-defaultcheckinlengthrequired').style.display = 'block';
+    errors++;
+  } else if (isNaN(defaultcheckinlength)) {
+    document.getElementById('qr-error-defaultcheckinlengthnumber').style.display = 'block';
+    errors++;
+  }
+
+  // TODO: Validate event start/end time
+  /*
+  let locationtype = +document.getElementById('locationtype').value;
+  if (locationtype >== 9 || locationtype === 2) {
+
+  }
+  */
+
+  return errors === 0;
+}
 
 function GenerateQRCode() {
   let description = document.getElementById('description').value;

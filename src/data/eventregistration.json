@@ -9,8 +9,22 @@
                 "description": "Description",
                 "address": "Address",
                 "defaultcheckinlength": "Checkout after minutes",
+                "starttime": "Start time",
+                "endtime": "End time",
                 "show": "Show",
                 "download": "Download"
+            },
+            "errors": {
+                "descriptionrequired": "The description is required",
+                "descriptionmax": "The description can only have a maximum of 100 characters",
+                "addressrequired": "The address is required",
+                "addressmax": "The address can only have a maximum of 100 characters",
+                "defaultcheckinlengthrequired": "The checkout time is required",
+                "defaultcheckinlengthnumber": "The checkout time needs to be a number",
+                "starttimerequired": "The start time is required",
+                "endtimerequired": "The end time is required",
+                "invaliddate": "Invalid date format",
+                "invalidtime": "Invalid time format"
             },
             "locationtypes": [
                 { "id": 3, "name": "Retail" },
