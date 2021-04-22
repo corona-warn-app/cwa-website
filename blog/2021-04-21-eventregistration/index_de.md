@@ -30,6 +30,11 @@ Ob Nutzer\*innen eine grüne oder rote Warnung erhalten, hängt davon ab, ob sic
 
 Im **Kontakt-Tagebuch** können Nutzer\*innen sehen, ob es sich bei einer Begegnung mit niedrigem oder erhöhtem Risiko um eine eventbasierte Warnung handelt.
 
+<br></br>
+<center> <img src="./erhöhtes-risiko-tagebuch.png" title="warnung im Kontakt-Tagebuch" style="align: center"> </center>
+<br></br>
+
+
 ### So funktionieren Check-In und Check-Out 
 
 In Version 2.0 der Corona-Warn-App finden Nutzer\*innen den **Reiter Check-In** in der Registerkarte der Corona-Warn-App. 
