@@ -56,13 +56,13 @@ Have a look at the **video walkthrough** to see how to create a QR Code (iOS exa
 
 There are two different scenarios in which organizers, retailers, and private individuals can use the new event registration feature.
 
-**Scenario 1: Ad-hoc event**
+**Scenario 1: event**
 
-An ad-hoc event can be created at short notice and has a defined start and end time. This includes, for example, private meetings, celebrations or smaller events. 
+An event can be created at short notice and has a defined start and end time. This includes, for example, private meetings, celebrations or smaller events. 
 
-**Scenario 2: Permanent location**
+**Scenario 2: place**
 
-In contrast to ad-hoc events, so-called permanent locations do not have a fixed start and end time. In this case, a QR code is typically made available in a room for a longer period of time. Guests re-scan this QR code each time they visit. Examples of a permanent location are hairdressers or restaurants.
+In contrast to events, places do not have a fixed start and end time. In this case, a QR code is typically made available in a room for a longer period of time. Guests re-scan this QR code each time they visit. Examples of a permanent location are hairdressers or restaurants.
 
 
 **Please note: attendees or guests who didn't install the Corona-Warn-App**
