@@ -10,6 +10,10 @@ document.getElementById('qrform').addEventListener('submit', function (e) {
 
   GenerateQRCode();
 
+  if (!e.submitter) {
+    e.submitter = e.target.querySelector('button');
+  }
+
   if (e.submitter.value === 'download') {
     let dlLink = document.createElement('a');
     dlLink.download = document.getElementById('description').value + '.png';
