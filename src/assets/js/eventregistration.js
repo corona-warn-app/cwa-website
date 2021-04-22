@@ -2,24 +2,30 @@ import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 
-document.getElementById("generateQR").addEventListener("click", function () {
+document.getElementById("qrform").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let canvas = document.getElementById('eventqrcode');
+  canvas.style.display = 'none';
+
+  GenerateQRCode();
+
+  if (e.submitter.value === 'download') {
+
+  } else {
+    canvas.style.display = 'block';
+  }
+})
+
+function GenerateQRCode() {
   let description = document.getElementById("description").value;
   let address = document.getElementById("address").value;
-
-  if (!address) {
-    alert("Bitte geben Sie eine Adresse an");
-    return;
-  }
-
-  if (!description) {
-    alert("Bitte geben Sie eine Anschrift an");
-    return;
-  }
+  let defaultcheckinlength = document.getElementById("defaultcheckinlength").value;
 
   let locationData = new proto.CWALocationData();
   locationData.setVersion(1);
   locationData.setType(+document.getElementById("locationtype").value);
-  locationData.setDefaultcheckinlengthinminutes(60);
+  locationData.setDefaultcheckinlengthinminutes(+defaultcheckinlength);
 
   let crowdNotifierData = new proto.CrowdNotifierData();
   crowdNotifierData.setVersion(1);
@@ -42,12 +48,10 @@ document.getElementById("generateQR").addEventListener("click", function () {
   payload.setVendordata(locationData.serializeBinary());
   payload.setVersion(1);
 
-  console.log(payload.serializeBinary());
   let qrContent = encode(payload.serializeBinary()).replace('+', '-').replace('/', '_').replace(/=+$/, '');
-  var canvas = document.getElementById('eventqrcode');
+  let canvas = document.getElementById('eventqrcode');
    
   QRCode.toCanvas(canvas, "https://e.coronawarn.app?v=1#" + qrContent, function (error) {
     if (error) console.error(error)
-    console.log('success!');
   });
-})
+}
