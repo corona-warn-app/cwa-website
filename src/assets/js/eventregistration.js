@@ -167,8 +167,34 @@ function GenerateQRCode() {
 
   let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
   let canvas = document.getElementById('eventqrcode');
+  let ctx = canvas.getContext('2d');
    
-  QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, function (error) {
-    if (error) console.error(error)
+  QRCode.toDataURL('https://e.coronawarn.app?v=1#' + qrContent, {
+    margin: 0,
+    width: 1100
+  }, function (err, qrUrl) {
+    if (err) {
+      console.error(err);
+      return;
+    }
+
+    let img = new Image();
+    img.onload = function() {
+      ctx.width = 1654;
+      ctx.height = 2339;
+      canvas.width = 1654;
+      canvas.height = 2339;
+      canvas.style.maxWidth = "100%"
+
+      ctx.drawImage(img, 0, 0);
+      let qrImg = new Image();
+      qrImg.onload = function() {
+        ctx.drawImage(qrImg, 275, 230);
+        console.log(ctx);
+        console.log(qrImg);
+      }
+      qrImg.src = qrUrl;
+    }
+    img.src = '/assets/img/pt-poster-1.0.0.png';
   });
 }
