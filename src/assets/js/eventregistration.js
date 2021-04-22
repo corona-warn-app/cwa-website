@@ -11,7 +11,10 @@ document.getElementById("qrform").addEventListener("submit", function (e) {
   GenerateQRCode();
 
   if (e.submitter.value === 'download') {
-
+    let dlLink = document.createElement('a');
+    dlLink.download = document.getElementById('description').value + '.png';
+    dlLink.href = document.getElementById('eventqrcode').toDataURL();
+    dlLink.click();
   } else {
     canvas.style.display = 'block';
   }
