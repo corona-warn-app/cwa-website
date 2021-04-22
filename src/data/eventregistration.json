@@ -2,6 +2,31 @@
     "section-main": {
         "headline": {
             "title": "Create QR-Code"
+        },
+        "form": {
+            "fields": {
+                "locationtype": "Place/Event",
+                "description": "Description",
+                "address": "Address",
+                "defaultcheckinlength": "Checkout after minutes",
+                "show": "Show",
+                "download": "Download"
+            },
+            "locationtypes": [
+                { "id": 3, "name": "Retail" },
+                { "id": 4, "name": "Hospitality" },
+                { "id": 5, "name": "Craft business" },
+                { "id": 6, "name": "Workplace" },
+                { "id": 7, "name": "Education facility" },
+                { "id": 8, "name": "Public building" },
+                { "id": 1, "name": "Other place" },
+                { "id": 9, "name": "Cultural event" },
+                { "id": 10, "name": "Club activities" },
+                { "id": 11, "name": "Private party" },
+                { "id": 12, "name": "Religious service" },
+                { "id": 2, "name": "Other event" },
+                { "id": 0, "name": "Other" }
+            ]
         }
     }
 }
