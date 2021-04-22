@@ -1,5 +1,5 @@
 ---
-page-title: "Aktuelle Zahlen und Fakten"
+page-title: "Aktuelle Zahlen und Fakten zur Corona-Warn-App"
 page-description: "Aktuelle Zahlen und Fakten"
 page-name: facts-and-figures
 page-name_de: facts-and-figures
