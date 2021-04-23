@@ -65,6 +65,10 @@ An event can be created at short notice and has a defined start and end time. Th
 In contrast to events, places do not have a fixed start and end time. In this case, a QR code is typically made available in a room for a longer period of time. Guests re-scan this QR code each time they visit. Examples of a permanent location are hairdressers or restaurants.
 
 
+If you are interested in the **event registration's technical specification**, you can find more information here: [https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md)
+
+<br></br>
+
 **Please note: attendees or guests who didn't install the Corona-Warn-App**
 
 iOS users who scan a QR code but didn't install the Corona-Warn-App will automatically be directed to Apple's App Store. There, they can download the app and then check in. Android users are directed to a website that takes them to the Google Play Store, where they can also download the Corona-Warn-App.
