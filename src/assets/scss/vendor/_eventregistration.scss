@@ -7,4 +7,9 @@
         border-radius: .375rem;
     }
 
+    .col-form-label:after {
+        content: " *";
+        color: red;
+      }
+
 }
