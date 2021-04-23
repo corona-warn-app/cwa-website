@@ -20,6 +20,11 @@ function UpdateQRForm() {
 }
 UpdateQRForm();
 
+document.getElementById('qrform').addEventListener('change', function (e) {
+  document.getElementById('eventplaceholder').classList.remove('d-none');
+  document.getElementById('eventqrcode').classList.add('d-none');
+});
+
 document.getElementById('generateQR').addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -34,10 +39,6 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
 
 document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
-
-  document.getElementById('eventplaceholder').classList.remove('d-none');
-  let canvas = document.getElementById('eventqrcode');
-  canvas.classList.add('d-none');
 
   if (ValidateQRForm()) {
     GenerateQRCode();
