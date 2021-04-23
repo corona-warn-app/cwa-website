@@ -20,28 +20,32 @@
                         "anchor": "who_can_help",
                         "active": true,
                         "textblock": [
-                            "The technical hotline (telephone 0800 7540001) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with risk identification. You can reach the technical hotline from Monday to Saturday from 7 a.m. to 10 p.m. (except on German public holidays), and it is free of charge for you within Germany.",
-                            "The TAN hotline (telephone 0800 7540002) will help you to enter the TAN if you have a positive test result and if you have not received a TAN or document with a QR code. The TAN hotline is available 24 hours a day, seven days a week. The call is free of charge.",
-                            "See also <a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>How to reach us from abroad</a>.",
-                            "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB'>Robert Koch Institute Tool: Health authority by postal code or place</a> <br/><a href='../blog/2020-08-25-notes-qr-codes/'>Further information on the QR Code procedure</a>",
-                            "The websites of the Federal Government are offering general information and videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
-                            "The Robert Koch Institute also provides information on epidemiological aspects: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html</a>.",
+                            "The technical hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with exposure logging. You can reach the technical hotline from Monday to Saturday from 7 a.m. to 10 p.m. (except on German national holidays), and it is free of charge for you within Germany.",
+                            "The TAN hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) will help you to enter the TAN if you have a positive test result and if you have not received a TAN or document with a QR code. The TAN hotline is available 24 hours a day, seven days a week. The call is free of charge from within Germany.",
+                            "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB'>Robert Koch Institute Tool: Health authority by postal code or place</a>",
+                            "Further information on the QR Code procedure can be found in this FAQ entry: <a href='#qr_test'>I have scanned a QR code, but the test result could not be retrieved for days.</a>",
+                            "The websites of the Federal Government are offering general information and videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch</a>.",
+                            "The Robert Koch Institute also provides information on epidemiological aspects: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html (German only)</a>.",
                             "As a media representative, please direct your enquiries to <a href='mailto:press@sap.com'>press@sap.com</a>.",
-                            "The various feedback channels of the <a href='https://www.coronawarn.app/de/community/'>Corona-Warn-App-Community<a/> will help you with your questions about the open source project of the Corona-Warn-App."
+                            "The various feedback channels of the <a href='https://www.coronawarn.app/en/community/'>Corona-Warn-App-Community<a/> will help you with your questions about the open source project of the Corona-Warn-App."
                         ]
                     },
                     {
-                        "title": "How to reach us from abroad - International phone numbers",
+                        "title": "How to reach us - International phone numbers",
                         "anchor": "international_phone_numbers",
                         "active": true,
                         "textblock": [
-                            "From abroad you can reach us at the following international phone numbers:",
-                            "Technical hotline: +49 30 498 75401 available Monday to Saturday from 7 a.m. to 10 p.m. German local time (except on national holidays)",
-                            "TAN hotline: +49 30 498 75402 available 24 hours a day, seven days a week",
-                            "Note: These numbers are <b>not free of charge</b> - the cost of the international call is based on the contract with your provider."
+                            "You can reach us by phone from within Germany and from abroad. The national numbers are free of charge, but are only available from within Germany. The international numbers are <b>not free of charge</b> - the cost of the international call is based on the contract with your provider.",
+                            "<b>Technical Hotline</b>",
+                            "The technical hotline will help you with technical questions about the Corona-Warn-App, for instance if you have problems with the exposure logging. It is available Monday to Saturday from 7 a.m. to 10 p.m. German local time (except on national holidays)",
+                            "<b>National:</b> 0800 7540001",
+                            "<b>International:</b> +49 30 498 75401",
+                            "<b>TAN Hotline</b>",
+                            "The TAN hotline will help you to enter the TAN if you have a positive test result and if you have not received a TAN or document with a QR code. The TAN hotline is available 24 hours a day, seven days a week.",
+                            "<b>National:</b> 0800 7540002",
+                            "<b>International:</b> +49 30 498 75402"
                         ]
                     }
-
                 ]
             },
             {
@@ -75,6 +79,126 @@
                 ]
             },
             {
+                "title": "Event Check-In",
+                "id": "check_in",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "Questions and answers about the event registration",
+                        "anchor": "check_in_index",
+                        "active": true,
+                        "textblock": [
+                            "<b> Questions and answers about functionality, misuse, and privacy:</b>",
+                            "<a href='../faq/#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'> How does event registration work in the Corona-Warn-App?</a></br><a href='../faq/#check_in_implementation' target='_self' rel='noopener noreferrer'> How is the event registration technically implemented?</a></br><a href='../faq/#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>For which locations and events is event registration suitable?</a></br><a href='../faq/#check_in_misuse' target='_self' rel='noopener noreferrer'>How do I as an event organizer prevent misuse?</a></br><a href='../faq/#check_in_ prevent_false_warnings' target='_self' rel='noopener noreferrer'>How do I prevent false warnings as an event participant?</a></br><a href='../faq/#check_in_privacy' target='_self' rel='noopener noreferrer'>Do I have to worry that the use of the event registration will make my whereabouts or personal data public?</a>",
+                            "<b> Questions and answers about the QR code:</b>",
+                            "<a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Who generates the QR code?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the QR code also be set up and used for a private birthday party, providing this is legally possible?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the QR code be generated?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Will there be a way to check in without a smartphone (dongle or similar)?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the QR code?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan a QR code but do not have the CWA installed on my smartphone?</a>",
+                            "<b> Questions and answers about the warning:</b>",
+                            "<a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can the user see what the alert is based on, i.e. which scanned QR code caused the warning? </a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a>"
+                        ]
+                    },
+                     {
+                        "title": "How does event registration work in the Corona-Warn-App?",
+                        "anchor": "check_in_how_does_it_work",
+                        "active": true,
+                        "textblock": [
+                            "The Corona-Warn-App (CWA) can use Bluetooth Low Energy (BLE) technology to determine a risk of infection if people have had contact up to approximately 1.5 meters apart for at least 10 minutes. However, according to current knowledge, aerosols spread far beyond this distance in poorly ventilated interiors <a href='https://www.ndr.de/nachrichten/info/Synapsen-Lueften-lueften-lueften,podcastsynapsen156.html' target='_blank' rel='noopener noreferrer'>(SARS-CoV-2 transmission by aerosols)</a>. Therefore, the risk of infection in these cases is not limited to a distance of 1.5 meters. The risk of getting infected indoors is many times higher than in outdoor areas.",
+                            "In order to be able to recognize such constellations indoors, the CWA has been extended by event registration. The app also warns people who have been in a room with a SARS-CoV-2 infected person at the same time. Persons register for an event or place by means of the CWA without providing personal data. If a participant of the event or visitor to the place later registers as positively tested via the CWA, all other persons who participated in the same event or visited the same place at the same time can be warned pseudonymously.",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "How is the event registration technically implemented?",
+                        "anchor": "check_in_implementation",
+                        "active": true,
+                        "textblock": [
+                            "Presence Tracing - in CWA also referred to as Event Registration - aims at notifying people of a potential SARS-CoV-2 exposure if they have been to the same venue at a similar time as a positively tested individual. It addresses the potential of airborne transmission in spaces with poor ventilation despite maintaining physical distance. As such, it complements BLE-based proximity tracing with the Exposure Notification Framework.",
+                            "CWA proposes a fully-automated decentral solution for Presence Tracing which works independent of local health authorities and the collaboration of the host of a venue. It integrates into the existing verification processes of CWA to issue warnings. The solution prioritizes the speed of issuing warnings over their accuracy. A higher degree of accuracy would require manual assessment by local health authorities and the respective resources to do so and is currently not in scope. The solution also protects the privacy of both venues and users, as details about a venue such as description or address are not shared with the CWA infrastructure. ",
+                            "In summary, the proposed solution allows a host to create a venue through CWA. All necessary data about the venue is encoded in a QR code which can be presented on a mobile device or printed out, for example to be posted at the entrance of the venue. An attendee can check in to the venue by scanning the QR code. Check-ins are stored locally on the mobile device and deleted automatically after two weeks.",
+                            "When an attendee tests positive for SARS-CoV-2, they can upload their check-ins along with their Diagnosis Keys to the CWA Server. The CWA Server publishes the relevant check-ins on CDN as warnings. Clients regularly download these warnings and match them against the local check-ins on the mobile device. If there is a match and the time an attendee spent at a venue overlaps with a warning for a sufficiently long time, the attendee receives a warning in CWA similar to how warnings are issued for BLE-based exposures.",
+                            "For more information on the implementation of the check-in feature, see here: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md</a>.",
+                            "<a href='https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/evreg-tam-block.png' target='_blank' rel='noopener'><img src='../../assets/img/faq/evreg-tam-block.png' alt='image' width='300'></a>",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "For which locations and events is event registration suitable?",
+                        "anchor": "check_in_which_places_and_events",
+                        "active": true,
+                        "textblock": [
+                            "The purpose of event registration is to identify risk contacts that are currently not detected with Bluetooth-Low-Energy Technology (BLE). The scope of application is therefore primarily geared to indoor use, where there is an increased risk of infection due to the distribution of aerosols in the room, even beyond the usual contact limit of 1.5 meters. Ideally, a separate QR code should be created for each room where visitors are staying. Each visitor then scans the QR code for the rooms in which she/he has stayed. This ensures that only those who have been exposed to an increased risk of infection are warned.",
+                            "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.", 
+                            "For outdoor events, the risk of infection is usually limited to a distance of 1.5 meters, which can already be detected with BLE technology, i.e. the usual use of the CWA. Basically, the event registration can be used here as well. However, it is not suitable for events in large outdoor areas, such as zoos.",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "How do I as an event organizer prevent misuse? ",
+                        "anchor": "check_in_misuse",
+                        "active": true,
+                        "textblock": [
+                            "A common form of misuse of the event registration can be carried out when people check in to an event or place even though they were not present. These individuals would then be warned by CWA if a person who duly checked in at the event would later be tested positive for SARS-CoV 2 and share their positive result via an app. In short, people are being warned even though there is no increased risk to them because they were not there at all. Therefore, some rules should be followed when dealing with your own QR codes:",
+                            "<ul><li>Only share the QR code with your visitors</li><li>Don't share the QR code via social media or websites</li><li>If you print and display the QR code, then preferably in an area that is only accessible to your visitors</li><li>Renew the QR code regularly, ideally once a day (in the CWA, a QR code can be easily transferred)</li><li>When creating the QR code, provide a meaningful title and exact location. This is the only way to ensure that your visitors check in for the correct event.</li><li>Regularly ensure that the QR code is easy to read and not obscured (e.g., by covering or painting over it)</li></ul>",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "How do I prevent false warnings as an event participant?",
+                        "anchor": "check_in_ prevent_false_warnings",
+                        "active": true,
+                        "textblock": [
+                            "<ul><li>Check in only for events or places you visit. Do not scan QR codes distributed through digital media or websites</li><li>Check-in to see if the title and location of the event (shown in the app after scanning) match the event you attended</li><li>The more accurately you specify the time of your attendance, the more accurately you can be warned or warn other participants</li><li>Already when checking in, specify as accurately as possible when you want to be checked out automatically. If your stay is shortened or extended, you can also manually correct the time after the automatic check-out has already taken place</li><li>Don't share photographed QR codes via social media or other channels</li></ul>",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "Do I have to worry that the use of the event registration will make my whereabouts or personal data public?",
+                        "anchor": "check_in_privacy",
+                        "active": true,
+                        "textblock": [
+                            "No, because the essential characteristics of the CWA - decentralization and pseudonymity - are preserved with the event registration. No personal contact details are registered, or location data is transmitted. The data is processed decentrally and pseudonymously on the smartphones.",
+                            "The QR code describes an event with attributes, a detailed address is not required. The QR code is also a random ID that is not processed in the CWA.",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "Questions and answers about the QR code:",
+                        "anchor": "check_in_qr_code",
+                        "active": true,
+                        "textblock": [
+                            "<b>Who generates the QR code?</b>",
+                            "The host of a location or event generates the QR code.",
+                            "<b>Can the QR code also be set up and used for a private birthday party, providing this is legally possible?</b>",
+                            "Yes of course, that is possible.",
+                            "<b>Where can the QR code be generated?</b>",
+                            "The QR code can be generated directly in the app and then printed as a PDF or scanned directly from the app.",
+                            "<b>Will there be a way to check in without a smartphone (dongle or similar)?</b>",
+                            "No, that is not possible.",
+                            "<b>How should I scan the QR code?</b>",
+                            "Use only the CWA to scan the QR codes: A QR code can be scanned with the native camera app as well as with the CWA. However, in order to prevent misuse, we recommend the use of the CWA to scan the QR codes. Only the CWA can ensure that legitimate QR codes are processed.",
+                            "<b>What happens if I scan a QR code but do not have the CWA installed on my smartphone?</b>",
+                            "iOS users are directed to the App Store, where they can download the app. Android users are directed to a website from which they can access the Google Play Store to download the app.",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    },
+                    {
+                        "title": "Questions and answers about the warning:",
+                        "anchor": "check_in_qr_warning",
+                        "active": true,
+                        "textblock": [
+                            "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",  
+                            "The procedure is based on the existing CWA warning process: If an event participant or a visitor of a location has tested positive, he/she should share this result via the CWA. As a result, all other participants who were checked in at the same time will receive an immediate warning without having to burden the health authorities. Depending on the epidemiological situation, the warning is displayed in one of two versions: 'low risk' (green tile) or 'high risk' (red tile).",
+                            "<b>How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)? </b>",
+                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about Covid-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
+                            "<b>Can the user see what the alert is based on, i.e. which scanned QR code caused the warning?</b>",
+                            "Yes, this is displayed in the contact journal. This allows users to determine, for example, whether other family members that were also present but do not have the app (such as children) were also put at risk. ",
+                            "<b>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</b>",
+                            "After a red tile warning (high risk) you should quarantine and have a PCR test taken immediately. If the test result is positive, a report is sent to the health authority by the doctor/test center. It is recommended that you share the positive test result via the CWA. In addition, the information can be also be shared manually with the health department using the existing export function of the contact diary.",
+                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Common Issues",
                 "id": "most_asked",
                 "accordion": [
@@ -103,7 +227,10 @@
                         "anchor": "access-list",
                         "active": true,
                         "textblock": [
-                            "Some firewalls might prevent the CWA from contacting the backend. This might lead to error notifications, including 'CAUSE: 4000, error during web request, HTTP status 901'. In case you make use of a firewall (router or app), make sure to include the following domains in the access-list for web requests as well as for DNS requests:<br/>*.coronawarn.app<br/>*.t-online.de"
+                            "Some firewall settings might prevent the CWA from contacting the Corona-Warn-App backend. This might lead to error notifications, including 'CAUSE: 4000, error during web request, HTTP status 901'. In case you make use of a firewall (router or app), make sure to include the following domains in the access-list for web requests as well as for DNS requests:",
+                            "<ul><li>*.coronawarn.app</li><li>*.t-online.de</li></ul>",
+                            "If you want to allow the usage of the (optional) survey system, you should additionally add these domains to your access-list:",
+                            "<ul><li>befragungen.rki.de</li><li>www.howsmyssl.com</li></ul>"
                         ]
                     },
                     {
@@ -135,8 +262,7 @@
                             "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications cannot be activated again after an update. The result is a black screen in the iOS settings.",
                             "Also, rare cases (after updates typically) with the error notification 'ENA.ExposureNotificationError-Error2' are known.",
                             "To fix the problem, proceed as follows:",
-                            "Settings > General > Reset > Reset Location and Privacy",
-                            "Afterwards the permissions in the Corona-Warn-App have to be assigned again. You will be prompted to do so when the App is started."
+                            "<ol><li>Navigate to the iOS settings</li><li>Select 'General' -> 'Reset' -> 'Reset Location and Privacy'</li><li>Afterwards the permissions in the Corona-Warn-App have to be assigned again. To do so, open the Corona-Warn-App and follow the instructions for the re-assignment of the permissions.</li></ol>"
                         ]
                     },
                     {
@@ -185,15 +311,14 @@
                         "active": true,
                         "textblock": [
                             "The processing time of a test (from taking the sample at your doctor's office or test center to the notification in the app) can be up to 48 hours. If you scanned your QR code into the App after a Corona test and did not receive a test result via the App within 3 days of making the test, it is possible that",
-                            "<ul><li>the respective laboratory is not fully linked with the Corona Warn App backend.</li><li>the consent field allowing the transmission of the test result to the Corona-Warn-App was not ticked on the submission form (10C/OEGD) sent by your doctor to the laboratory.</li></ul>",
+                            "<ul><li>the respective laboratory is not fully linked with the Corona-Warn-App backend.</li><li>the consent field allowing the transmission of the test result to the Corona-Warn-App was not ticked on the submission form (10C/OEGD) sent by your doctor to the laboratory.</li></ul>",
                             "Please check whether the laboratory working with your doctor or test center is connected to the Corona-Warn-App and whether the consent field is checked on the form. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
                             "Currently, 90% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way.",
-                            "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a TeleTAN by calling the TAN hotline on 0800 7540002 to warn your contacts via the Corona-Warn-App. Before you are able to enter the TeleTAN into the app, you have to delete the pending test result from the app. To do this, please tap on",
-                            "<ul><li>'Display Test' -> 'Delete test</li></ul>",
+                            "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a TeleTAN from the TAN Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see our phone numbers</a>) to warn your contacts via the Corona-Warn-App. Before you are able to enter the TeleTAN into the app, you have to delete the pending test result from the app. To do this, please tap on",
+                            "<ul><li>'Display Test' -> 'Delete test'</li></ul>",
                             "Confirm again that you really want to remove the test result. Now you can enter the requested TeleTAN into the Corona Warn App by following these steps:",
                             "<ul><li>'Next Steps' -> 'Enter TAN'</li></ul>",
-                            "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties.",
-                            "See also <a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>How to reach us from abroad</a>."
+                            "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties."
                         ]
                     },
                     {
@@ -212,10 +337,12 @@
                         "anchor": "battery",
                         "active": true,
                         "textblock": [
-                            "The Corona-Warn-App uses the latest Bluetooth technology: Thanks to the Exposure Notification API from Apple and Google, the app can use the energy-efficient BLE (Bluetooth Low Energy) technology.",
+                            "The Corona-Warn-App uses the existing Bluetooth technology of the devices: Because the app is built on top of the Exposure Notification Framework from Apple and Google, the energy-efficient BLE (Bluetooth Low Energy) technology is used.",
                             "The battery consumption of the Corona-Warn-App is made up of two factors: the consumption of the app itself and the consumption due to the recording of the encounters via the Exposure Notification System. The latter can be optimized by using the currently available operating systems for iOS and Android.",
-                            "While interpreting your battery consumption, please note that the percentage refers to the full use of your phone in the last 24 hours. This means that a frequently and intensively used phone has a very low percentage of battery consumption per app. On the contrary, if you use your phone mainly to make phone calls and only occasionally stream music or use social media, the percentage per app will be relatively high.",
-                            "<b>Note for Android phones</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location. Go to your device settings and choose 'Security & Location' > 'Location' > 'App level permissions'. Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
+                            "While interpreting your battery consumption, please note that the Corona-Warn-App's displayed percentage of battery usage is relative to the usage of all other apps in the last 24 hours. This means that a frequently and intensively used phone will show a very low percentage of battery consumption for the Corona-Warn-App. On the contrary, if you use your phone mainly to make phone calls and only occasionally stream music or use social media, the percentage of battery usage of the Corona-Warn-App will be relatively high.",
+                            "<b>Note for Android devices</b>: Bluetooth devices near your device can only be detected if 'Use location' is activated on your phone. For details, see <a href='#android_location' target='_blank' rel='noopener'>Android: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>. This means that other apps on your device could also use your location, which might be the reason for higher power consumption. To avoid this, you should check which apps use your location.",
+                            "<ol><li>Go to your device settings</li><li>Select 'Security & Location' -> 'Location' -> 'App level permissions'</li></ol>",
+                            "Here you can deny other apps permission to use your location if you don't think they need it. Since Corona-Warn-App doesn't need this permission, it doesn't appear in the list."
                         ]
                     }
                 ]
@@ -239,14 +366,6 @@
                             "<i>Important: Mobile/cellular data that are transmitted during the usage of Corona-Warn-App is free of charge and will not be deducted from your data plan!</i>",
                             "<b>Background App Refresh for Corona-Warn-App</b>",
                             "Check if you have activated background app refresh for Corona-Warn-App as well. Open the device settings, go to 'Corona-Warn', and activate 'Background App Refresh' as well as 'Mobile Data'. As mentioned above: You’re not charged for any data that is transmitted via Corona-Warn-App."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: Notes on the Low Power Mode on iOS devices",
-                        "anchor": "ios_power_save",
-                        "active": true,
-                        "textblock": [
-                            "If your device runs on iOS version 13.6.1 or later, the functionality of the Corona Warn App is not negatively affected by the Low Power Mode. On devices with an earlier iOS version, Low Power Mode may cause problems with updating the risk status in the background. <b>We therefore ask you to update the iOS version of your device to 13.6.1 or higher if you want to use the Low Power Mode.</b>"
                         ]
                     },
                     {
@@ -275,16 +394,6 @@
                             "The usage of the Ultra Power Saving Mode on Samsung devices can cause the background updates of the risk status to fail, even if <a href='#no_risk_update' target='_blank' rel='noopener'>Prioritized Background Activity is activated</a>. This behaviour is likely triggered by the strongly reduced processing power in this mode, which results in an abort of the background updating process. The Ultra Power Saving Mode should therefore be deactivated in the settings:",
                             "<ol><li>'Settings' -> 'System' -> 'Power saving'</li><li>Select 'Ultra Power Saving Mode'.</li><li>Open the menu in the upper right and select 'Turn off Ultra power saving mode'.</li></ol>"
                         ]
-                    },
-                    {
-                        "title": "[Google/Android]: Notes on devices from Huawei or Honor",
-                        "anchor": "huawei_honor",
-                        "active": true,
-                        "textblock": [
-                            "For devices from Huawei or Honor, in addition to <a href='#no_risk_update' target='_blank' rel='noopener'>switching on the Prioritized Background Activity</a>, additional settings may be necessary to improve the reliability of the background update, and to prevent <a href='#app_crash' target='_blank' rel='noopener'>unexpected crashes of the Corona-Warn-App when starting</a> the app. This applies in particular to older devices with EMUI 4, but also to newer devices.",
-                            "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
-                            "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
-                        ]
                     }
                 ]
             },
@@ -297,11 +406,9 @@
                         "anchor": "ENError13",
                         "active": true,
                         "textblock": [
-                            "The Error 13 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App.",
-                            "It will appear if more than 6 exposure checks happened in the last 24h. Apple does not allow more than 6 exposure checks within 24h.",
-                            "The error will disappear after 24h at the latest. You don't have to do anything.",
-                            "Please do not remove and reinstall the Corona-Warn-App, because the error is caused by the underlying Apple ENF, it will persist, even after reinstallation.",
-                            "If the Error doesn't disappear after 24h, please open a issue on <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/' target='_blank' rel='noopener noreferrer'>GitHub</a>."
+                            "The Error 13 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. It will appear if more than 6 exposure checks happened in the last 24 hours. Apple does not allow more than 6 exposure checks within 24 hours. The error will disappear after 24 hours at the latest. You don't have to do anything.",
+                            "Please do not remove and reinstall the Corona-Warn-App, because the error is caused by the underlying Apple Exposure Notification Framework which is independent from the app. Therefore, it will persist, even after reinstallation.",
+                            "If the Error doesn't disappear after 24h, please open an issue on <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/' target='_blank' rel='noopener noreferrer'>GitHub</a>."
                         ]
                     },
                     {
@@ -332,15 +439,14 @@
                         ]
                     },
                     {
-                        "title": "Problems with other apps and devices that use Bluetooth",
+                        "title": "I suddenly have problems with other apps and devices that use Bluetooth. What can I do?",
                         "anchor": "various_device_problems",
                         "active": true,
                         "textblock": [
-                            "Since I installed the app, my phone sometimes behaves oddly. Example: There are occasional problems with other apps and devices that use Bluetooth. What can I do?",
-                            "Some users report that their phones behave differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phones and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We’re investigating these problems, but this is likely a problem with the basic operating system functions, over which we have no control.",
-                            "Please try the following: <ul><li>Restart your phone.</li><li>Unpair the other Bluetooth-connected devices and recouple them.</li></ul>",
+                            "Some users report that their device behaves differently since they installed Corona-Warn-App. Example: Sometimes the communication between their phone and Bluetooth devices via other apps is interrupted. This affects, for example, smart watches or Bluetooth earphones. We are investigating these issues, but this is likely a problem with the basic operating system functions, over which we have no control.",
+                            "Please try the following: <ul><li>Restart your device.</li><li>Unpair the other Bluetooth-connected devices and recouple them.</li></ul>",
                             "If the above does not help, contact your device manufacturer:",
-                            "<ul><li>Apple/iPhones: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a></li><li>Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a></li></ul>"
+                            "<ul><li>Apple/iOS: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a></li><li>Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a></li></ul>"
                         ]
                     }
                 ]
@@ -447,8 +553,8 @@
                             "To view more information in the app, tap",
                             "<ol><li>'EXPOSURE LOGGING ACTIVE/STOPPED'</li><li>Then tap 'Transnational Exposure Logging'.</li><li>Scroll down to the list of countries.</li></ol>",
                             "Below is a list of currently participating countries and details of the responsible health authorities:",
-                            "(Status: 14.04.2021)",
-                            "<table class='table'><thead><tr><th>Country</th><th>Data Controller</th><th>Contact Details</th></tr></thead><tbody><tr><td>Austria (from 04.02.2021)</td><td>Austrian Red Cross</td><td>General ministry and blood donation centre for Vienna<br>Lower Austria and Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Vienna<br>Austria<br>E-Mail: service@roteskreuz.at<br>Phone: +43 1 58900 955</td></tr><tr><td>Belgium<br>(from 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgium<br>E-Mail: coronalert@sciensano.be <i><b>or</b></i> dpo@sciensano.be<br>Phone: +32 479 317 455</td></tr><tr><td>Croatia<br/>(from 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td> Cyprus <br/>(from 15.12.2020)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nicosia<br>Cyprus<br>E-Mail: cyjointcontroller@mphs.moh.gov.cy<br>E-Mail (DPO): MPHS_DPO@mphs.moh.gov.cy<br>Phone (DPO): +357 22605603</td></tr><tr><td>Czech Republic<br/>(from 22.03.2021)</td><td>Ministry of Health of the Czech Republic</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Phone: +420 224 972 457</td></tr><tr><td>Denmark<br>(from 06.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td> Finland <br>(from 07.01.2021)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finland<br>E-Mail: tietosuoja@thl.fi<br>Phone: +358 29 524 6000</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert Koch Institute</td><td>Robert Koch Institute<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br> Phone: +371 675015 90 or -91</td></tr><tr><td>Malta<br>(from 14.04.2021)</td><td>Department for Health Regulation</td><td>Department for Health Regulation<br>Office of the Superintendent of Public Health<br>St. Luke’s Hospital, Outpatients Block Level 1<br>St. Luke’s Square<br>Pietà PTA 1010<br>Malta<br>E-Mail: sph.health@gov.mt<br>E-Mail (DPO): dpo-osph@gov.mt<br>Phone: +356 2595 3302 / +356 2595 3303</td></tr><tr><td>Netherlands<br>(from 30.11.2020)</td><td>Minister of Health, Welfare and Sports</td><td>Minister of Health, Welfare and Sports<br>Postbus 16114<br/>2500 BC<br/> The Hague<br/>Netherlands <br>E-Mail: CIBG-eHealth-EU@minvws.nl or FG-VWS@minvws.nl<br> Phone: +31 703405487 </td></tr><tr><td>Norway<br>(from 15.02.2021)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norway<br>E-Mail: folkehelseinstituttet@fhi.no<br>Phone: +47 21 07 70 00</td></tr><tr><td>Poland<br>(from 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warsaw<br> Poland <br>E-Mail: protego@mc.gov.pl<br> Phone: +48 223453300</td></tr><tr><td>Slovenia<br>(from 15.02.2021)</td><td>Ministry of Public Administration (MJU) and Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slovenia<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>and<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slovenia<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><tr><td>Spain<br>(from 06.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br> Spain <br>E-Mail: soporte.radarcovid@economia.gob.es<br> Phone: +34 91 258 28 52</td></tr><tr><td>Switzerland<br>(from 24.03.2021)</td><td>Bundesamt für Gesundheit BAG</td><td>Bundesamt für Gesundheit BAG<br>3003 Bern<br>Switzerland<br>E-Mail: rech@bag.admin.ch<br>Phone: +41 58 462 69 98</td></tr></tbody></table>"
+                            "(Status: 19.04.2021)",
+                            "<table class='table'><thead><tr><th>Country</th><th>Data Controller</th><th>Contact Details</th></tr></thead><tbody><tr><td>Austria (from 04.02.2021)</td><td>Austrian Red Cross</td><td>General ministry and blood donation centre for Vienna<br>Lower Austria and Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Vienna<br>Austria<br>E-Mail: service@roteskreuz.at<br>Phone: +43 1 58900 955</td></tr><tr><td>Belgium<br>(from 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgium<br>E-Mail: coronalert@sciensano.be <i><b>or</b></i> dpo@sciensano.be<br>Phone: +32 479 317 455</td></tr><tr><td>Croatia<br/>(from 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Phone: + 385 14609000</td></tr><tr><td> Cyprus <br/>(from 15.12.2020)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nicosia<br>Cyprus<br>E-Mail: cyjointcontroller@mphs.moh.gov.cy<br>E-Mail (DPO): MPHS_DPO@mphs.moh.gov.cy<br>Phone (DPO): +357 22605603</td></tr><tr><td>Czech Republic<br/>(from 22.03.2021)</td><td>Ministry of Health of the Czech Republic</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Phone: +420 224 972 457</td></tr><tr><td>Denmark<br>(from 06.11.2020)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Phone: +45 72286600</td></tr><tr><td> Finland <br>(from 07.01.2021)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finland<br>E-Mail: tietosuoja@thl.fi<br>Phone: +358 29 524 6000</td></tr><tr><td>Germany<br>(from 17.10.2020)</td><td>Robert Koch Institute</td><td>Robert Koch Institute<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Phone: +49 30187540</td></tr><tr><td>Ireland<br>(from 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Phone: +353 87 688 3565</td></tr><tr><td>Italy<br>(from 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Phone: +39 65994694546</td></tr><tr><td>Latvia<br>(from 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Latvia<br>E-Mail: pasts@spkc.gov.lv<br> Phone: +371 675015 90 or -91</td></tr><tr><td>Malta<br>(from 15.04.2021)</td><td>Department for Health Regulation</td><td>Department for Health Regulation<br>Office of the Superintendent of Public Health<br>St. Luke’s Hospital, Outpatients Block Level 1<br>St. Luke’s Square<br>Pietà PTA 1010<br>Malta<br>E-Mail: sph.health@gov.mt<br>E-Mail (DPO): dpo-osph@gov.mt<br>Phone: +356 2595 3302 / +356 2595 3303</td></tr><tr><td>Netherlands<br>(from 30.11.2020)</td><td>Minister of Health, Welfare and Sports</td><td>Minister of Health, Welfare and Sports<br>Postbus 16114<br/>2500 BC<br/> The Hague<br/>Netherlands <br>E-Mail: CIBG-eHealth-EU@minvws.nl or FG-VWS@minvws.nl<br> Phone: +31 703405487 </td></tr><tr><td>Norway<br>(from 15.02.2021)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norway<br>E-Mail: folkehelseinstituttet@fhi.no<br>Phone: +47 21 07 70 00</td></tr><tr><td>Poland<br>(from 23.11.2020)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warsaw<br> Poland <br>E-Mail: protego@mc.gov.pl<br> Phone: +48 223453300</td></tr><tr><td>Slovenia<br>(from 15.02.2021)</td><td>Ministry of Public Administration (MJU) and Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slovenia<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>and<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slovenia<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><tr><td>Spain<br>(from 06.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br> Spain <br>E-Mail: soporte.radarcovid@economia.gob.es<br> Phone: +34 91 258 28 52</td></tr><tr><td>Switzerland<br>(from 24.03.2021)</td><td>Bundesamt für Gesundheit BAG</td><td>Bundesamt für Gesundheit BAG<br>3003 Bern<br>Switzerland<br>E-Mail: rech@bag.admin.ch<br>Phone: +41 58 462 69 98</td></tr></tbody></table>"
                         ]
                     },
                     {
@@ -492,7 +598,7 @@
                         "anchor": "where_to_get",
                         "active": true,
                         "textblock": [
-                            "Since the app is available, you can download it from the Apple App Store or Google Play Store."
+                            "You can download the Corona-Warn-App from the <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> or <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a>."
                         ]
                     }
                 ]
@@ -536,8 +642,8 @@
                         "anchor": "close_app",
                         "active": true,
                         "textblock": [
-                            "Yes. As long as you have activated exposure logging in the app and Bluetooth is on, encounters are logged in the background. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
-                            "To be on the safe side, open the app once a day after 24 hours. You'll find more info at <a href='https://www.coronawarn.app/en/#howto' target='_blank' rel='noopener noreferrer'>This is how the app works best</a>.",
+                            "Yes. As long as you have activated exposure logging in the app and Bluetooth (and Location Services on Android) is on, encounters are logged in the background by the Exposure Notification system integrated in iOS/Android. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
+                            "To be on the safe side, open the app once a day. You'll find more info at <a href='../#howto' target='_blank' rel='noopener noreferrer'>This is how the app works best</a>.",
                             "For the risk status to be updated automatically, make sure that background updates are active. For all the info, see these FAQ:",
                             "<ul><li><a href='#no_risk_update_ios' target='_blank' rel='noopener'>[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='#no_risk_update' target='_blank' rel='noopener'>[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
                         ]
@@ -568,11 +674,11 @@
                         ]
                     },
                     {
-                        "title": "Will the collected random IDs be included when I back up data on my phone?",
+                        "title": "Will the collected random IDs be included when I backup data on my phone?",
                         "anchor": "backup",
                         "active": true,
                         "textblock": [
-                            "No, they are not included in the backup. This also means that you can't restore the collected random IDs on the same or a different phone."
+                            "No, they are not included in the backup. This also means that you can't restore the collected random IDs on the same or a different device."
                         ]
                     },
                     {
@@ -580,9 +686,9 @@
                         "anchor": "new_device",
                         "active": true,
                         "textblock": [
-                            "A backup of the old random IDs is unfortunately not possible, because the Exposure Notification API of Apple/Google does not allow the export of this data. To still be informed about possible risk encounters, we recommend that you keep a close view of the risk status on the old device for at least 14 days after you install the Corona Alert app on the new device. Please note the following instructions:",
-                            "<ul><li>Your old device must be able to perform regular checks for possible encounters. Therefore, leave the device permanently turned on and permanently connected to the Internet.</li><li>Keep the old device in a stationary location, e.g., in a specific place in your apartment. If possible, place the device in listening or visual range so that you are alerted early by a notification of the app.</li><li>Actively access the Corona-Warn-App on the old device at least once a day and check your risk status there.</li></ul>",
-                            "If you are tested for COVID-19 during these 14 days, enter the QR code on your new device. If the test result is positive, you should share the test result on both devices. For sharing a test result on multiple devices, please note <a href='#test_multiple_devices' target='_blank' rel='noopener noreferrer'> this </a> FAQ entry.",
+                            "A backup of the old random IDs is unfortunately not possible, because the Exposure Notification Framework of Apple/Google does not allow the export of this data. To still be informed about possible risk encounters, we recommend that you keep a close view of the risk status on the old device for at least 14 days after you install the Corona-Warn-App on the new device. Please note the following instructions:",
+                            "<ul><li>Your old device must be able to perform regular checks for possible encounters. Therefore, leave the device permanently turned on and permanently connected to the Internet.</li><li>Keep the old device in a stationary location, e.g., in a specific place in your apartment. If possible, place the device where you can hear or see it so that you are alerted early by a notification of the app.</li><li>Actively access the Corona-Warn-App on the old device at least once a day and check your risk status there.</li></ul>",
+                            "If you are tested for COVID-19 during these 14 days, enter the QR code on your new device. If the test result is positive, you should share the test result on both devices. For sharing a test result on multiple devices, please note the FAQ entry <a href='#test_multiple_devices' target='_blank' rel='noopener noreferrer'>How do I share a positive test result on multiple devices?</a>.",
                             "After 14 days, your old device will no longer contain any relevant entries for risk assessment. You don't need to pay any further attention to the risk status on this device and can remove the Corona-Warn-App there."
                         ]
                     },
@@ -601,12 +707,12 @@
                         ]
                     },
                     {
-                        "title": "How do you get information about a risk of infection?",
+                        "title": "How do I get informed about a risk of infection?",
                         "anchor": "risk_info",
                         "active": true,
                         "textblock": [
                             "This is how the app works:",
-                            "<ol><li>All devices that have the Corona-Warn-App installed send and receive pseudonymized keys, which are saved locally on your device. A Bluetooth connection is only necessary for sending and receiving pseudonymized keys.</li><li>If you are diagnosed with COVID-19, you can upload your diagnosis keys to the server. At regular intervals, all devices with the app receive these keys from this server and check if they have saved a matching key via Bluetooth. For uploading, your phone must be able to access the Internet, for example, using WiFi or mobile data.</li><li>If there is a match between a key downloaded from the server and a key saved locally on your device, this means you were exposed to a person who has been diagnosed with COVID-19. Matching the encounters does not require a Bluetooth connection.</li></ol>",
+                            "<ol><li>All devices that have the Corona-Warn-App installed send and receive random IDs, which are saved locally on your device. A Bluetooth connection between two devices is only necessary for sending and receiving random IDs.</li><li>If you are diagnosed with COVID-19, you can upload the random IDs your device sent via Bluetooth to the Corona-Warn-App backend. At regular intervals, all devices with the app download these random IDs from the backend and check locally if they have received a matching key via Bluetooth. For uploading and downloading the random IDs, your phone must be able to access the Internet, for example, using WiFi or mobile data.</li><li>If there is a match between a key downloaded from the server and a key saved locally on your device, this means you were exposed to a person who has been diagnosed with COVID-19.</li><li>Based on the matched encounters, the app calculates your personal risk score that determines whether you get displayed a \"low risk\" (green) or \"high risk\" (red) card in the app. You can find out more about the risk calculation in the FAQ entry <a href='#encounter_criteria' target='_blank' rel='noopener noreferrer'>By which criteria are encounters evaluated and how do the recommendations for action differ?</a></li></ol>",
                             "The <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a> describes the technical process in detail."
                         ]
                     },
@@ -687,7 +793,7 @@
                         "active": true,
                         "textblock": [
                             "The Corona-Warn-App updates the risk status at least every 24 hours. The actual time can lag behind for a few hours from the time of the day before.",
-                            "Since CWA version 1.7, exposure checks are run up to 6 times per day when a Wi-Fi connection is present. The repeated daily check is performed automatically. While using mobile data, the check is only performed once every 24 hours due to the zero rating commitment of the network providers."
+                            "Since CWA version 1.7, exposure checks are run up to 6 times per day when a Wi-Fi connection is present. The repeated daily check is performed automatically. While using mobile data, the check is only performed once every 24 hours due to the <a href='#mobile_data_costs' target='_blank' rel='noopener noreferrer'>zero rating commitment</a> of the network providers."
                         ]
                     },
                     {
@@ -695,7 +801,7 @@
                         "anchor": "mobile_data_costs",
                         "active": true,
                         "textblock": [
-                            "The German network operators have committed themselves to a so-called zero rating. This means that the mobile data volume for the use of the Corona-Warn-App is provided free of charge both in Germany and within the EU. Mobile data that are transmitted via Corona-Warn-App when diagnosis keys are uploaded or when the server notifies you in case of exposure is free of charge and will not be deducted from your data plan.",
+                            "The German network operators have committed themselves to a so-called zero rating. This means that the mobile data volume for the use of the Corona-Warn-App is provided free of charge both in Germany and within the EU. Mobile data that is transmitted via the Corona-Warn-App when diagnosis keys are uploaded or when the server notifies you in case of exposure is free of charge and will not be deducted from your data plan.",
                             "The zero rating applies to all SIM cards that are distributed by German network providers. It does not matter whether they were purchased directly from the mobile phone provider or from a partner company (e.g. discounters).",
                             "We are not able to provide any statement for foreign providers of SIM cards. The decision whether the necessary data volumes are provided free of charge or not, is solely up to the respective provider."
                         ]
@@ -736,7 +842,9 @@
                         "anchor": "mutation",
                         "active": true,
                         "textblock": [
-                            "<b>Update</b><br/>To date, the risk assessment was improved and adapted on the 23.02.2021 and the 19.03.2021. More information can be found in <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>this</a> and <a href='../blog/2021-03-19-risk-calculation-improvement/' target='_blank' rel='noopener noreferrer'>this</a> blog post. We will continue to monitor the risk assessment regarding the virus and improve it if necessary.<hr/>",
+                            "<b>Update</b><br/>To date, the risk assessment was improved and adapted on the 23.02.2021, on the 19.03.2021 and on the 16.04.2021. More information can be found in our blog:",
+                            "<ul><li><a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>23.02.2021 - Corona-Warn-App’s risk calculation further adjusted after detailed tests</a></li><li><a href='../blog/2021-03-19-risk-calculation-improvement/' target='_blank' rel='noopener noreferrer'>19.03.2021 - Corona-Warn-App's risk calculation further improved</a></li><li><a href='../blog/2021-04-16-corona-warn-app-risk-calculation-further-improved/' target='_blank' rel='noopener noreferrer'>16.04.2021 - Project Team further improves Corona-Warn-App's risk calculation in response to current coronavirus situation</a></li></ul>",
+                            "We will continue to monitor the risk assessment regarding the virus and improve it if necessary.<hr/>",
                             "Since the very beginning of the pandemic, new virus variants have been discovered worldwide and examined and evaluated by experts with regard to infectiousness and health consequences. The Corona-Warn-App developers are in close contact with the authorities. If the risk of infection changes based on new findings, we certainly will adjust the risk calculation of the app."
                         ]
                     },
@@ -840,11 +948,11 @@
                         ]
                     },
                     {
-                        "title": "How often has the Corona-Warn-App been downloaded? How many TeleTANs have been issued?",
+                        "title": "Where do I find numbers and statistics about the Corona-Warn-App?",
                         "anchor": "numbers_RKI",
                         "active": true,
                         "textblock": [
-                            "The Robert Koch Institute provides these and other current numbers <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Archiv_Kennzahlen/WarnApp_KennzahlenTab.html' target='_blank' rel='noopener noreferrer'>on their website</a> (in German)."
+                            "The Robert Koch Institute provides current numbers and statistics <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Archiv_Kennzahlen/WarnApp_KennzahlenTab.html' target='_blank' rel='noopener noreferrer'>on their website</a> (in German)."
                         ]
                     },
                     {
@@ -1087,6 +1195,26 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                        "title": "[Google/Android]: Notes on devices from Huawei or Honor",
+                        "anchor": "huawei_honor",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>The problem was solved by the device manufacturers via a patch. Please install the latest updates for your device.<hr/>",
+                            "For devices from Huawei or Honor, in addition to <a href='#no_risk_update' target='_blank' rel='noopener'>switching on the Prioritized Background Activity</a>, additional settings may be necessary to improve the reliability of the background update, and to prevent <a href='#app_crash' target='_blank' rel='noopener'>unexpected crashes of the Corona-Warn-App when starting</a> the app. This applies in particular to older devices with EMUI 4, but also to newer devices.",
+                            "According to current information, a system update seems to be available for newer Huawei devices that is explicitly intended to fix the problems with Corona-Warn-App.",
+                            "The GitHub community has compiled suggestions for making additional settings and has also linked information about the system update. You can find all the details in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615554' target='_blank' rel='noopener noreferrer'>this GitHub issue</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Apple/iOS]: Notes on the Low Power Mode on iOS devices",
+                        "anchor": "ios_power_save",
+                        "active": true,
+                        "textblock": [
+                            "<b>UPDATE</b><br/>Since February 5, 2021 the minimum required version of the Corona Warn App is 1.5.3. This version requires iOS 13.7 or later. When using these iOS versions, the Corona-Warn-App is not negatively affected by activating Low Power Mode.<hr/>",
+                            "If your device runs on iOS version 13.6.1 or later, the functionality of the Corona Warn App is not negatively affected by the Low Power Mode. On devices with an earlier iOS version, Low Power Mode may cause problems with updating the risk status in the background. <b>We therefore ask you to update the iOS version of your device to 13.6.1 or higher if you want to use the Low Power Mode.</b>"
+                        ]
+                    },
                     {
                         "title": "My exposure log shows multiple, simultaneous checks for exposures. Is that an error?",
                         "anchor": "multiple_exposure_checks",
