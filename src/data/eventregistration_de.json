@@ -1,25 +1,30 @@
 {
     "section-main": {
         "headline": {
-            "title": "QR-Code erstellen"
+            "title": "QR-Code für Event Check-In erstellen"
         },
         "form": {
             "fields": {
                 "locationtype": "Ort/Event",
                 "description": "Beschreibung",
                 "address": "Anschrift",
-                "defaultcheckinlength": "Auschecken nach Minuten",
+                "defaultcheckinlength": "Typische Aufentshaltsdauer (Minuten)",
                 "starttime": "Startzeit",
                 "endtime": "Endzeit",
                 "show": "Anzeigen",
                 "download": "Herunterladen"
+            },
+            "placeholders": {
+                "description": "z.B. Einkaufszentrum",
+                "address": "z.B. Musterstr. 12, 12345 Musterstadt",
+                "defaultcheckinlength": "z.b. 45"
             },
             "errors": {
                 "descriptionrequired": "Es wird eine Beschreibung benötigt",
                 "descriptionmax": "Die Beschreibung darf maximal 100 Zeichen lang sein",
                 "addressrequired": "Es wird eine Adresse benötigt",
                 "addressmax": "Die Adresse darf maximal 100 Zeichen lang sein",
-                "defaultcheckinlengthrequired": "Bitte geben Sie eine Zeit bis zum Checkout an",
+                "defaultcheckinlengthrequired": "Bitte geben Sie eine typische Aufentshaltsdauer an",
                 "defaultcheckinlengthnumber": "Die Zeit zum Auschecken muss eine Zahl sein",
                 "starttimerequired": "Die Startzeit wird benötigt",
                 "endtimerequired": "Die Endzeit wird benötigt",
