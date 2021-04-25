@@ -11,7 +11,7 @@ The Corona-Warn-App community has developed a QR code generator for the app's we
 
 <!-- overview -->
 
-The Corona-Warn-App community provided the QR code generator to the project team on GitHub. The development team then reviewed the community's contribution and released the QR code generator in a customized form. We would like to take this opportunity to thank in particular @bastianjoel and all the community members involved for contributing to this new feature. This example shows again very well how useful the open source approach and the publication of the source code of the Corona warning app is.
+The Corona-Warn-App community provided the QR code generator to the project team on GitHub. The development team then reviewed the community's contribution and released the QR code generator in a customized form. We would like to take this opportunity to thank in particular @bastianjoel and all the community members involved for contributing to this new feature. This example shows again very well how useful the open source approach and the publication of the source code of the Corona-Warn-App is.
 
 
 <br></br>
