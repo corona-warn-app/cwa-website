@@ -24,6 +24,7 @@ PATHS:
   assets:
     - "src/assets/**/*"
     - "!src/assets/js/app.js"
+    - "!src/assets/js/eventregistration.js"
     - "!src/assets/js/lib/**/*"
     - "!src/assets/{img,scss}/**/*"
   # Paths to Sass libraries, which can then be loaded with @import
@@ -33,6 +34,7 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
+    - "src/assets/js/eventregistration.js"
   # Paths to root assets
   rootAssets:
     - "src/root-assets/*"
