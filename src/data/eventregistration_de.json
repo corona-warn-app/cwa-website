@@ -22,6 +22,7 @@
                 "defaultcheckinlength": "z.B. 45"
             },
             "errors": {
+                "locationtyperequired": "Es wird ein Ort/Event benötigt",
                 "descriptionrequired": "Es wird eine Beschreibung benötigt",
                 "descriptionmax": "Die Beschreibung darf maximal 100 Zeichen lang sein",
                 "addressrequired": "Es wird eine Adresse benötigt",
@@ -36,6 +37,7 @@
             "dateplaceholder": "TT.MM.JJJJ",
             "timeplaceholder": "HH:MM",
             "locationtypes": [
+                { "id": "", "name": "Bitte auswählen" },
                 { "id": 3, "name": "Einzelhandel" },
                 { "id": 4, "name": "Gastronomiebetrieb" },
                 { "id": 5, "name": "Handwerksbetrieb" },
