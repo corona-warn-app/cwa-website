@@ -22,6 +22,7 @@
                 "defaultcheckinlength": "e.g. 45"
             },
             "errors": {
+                "locationtyperequired": "The location type is required",
                 "descriptionrequired": "The description is required",
                 "descriptionmax": "The description can only have a maximum of 100 characters",
                 "addressrequired": "The address is required",
@@ -36,6 +37,7 @@
             "dateplaceholder": "DD.MM.YYYY",
             "timeplaceholder": "HH:MM",
             "locationtypes": [
+                { "id": "", "name": "Please choose" },
                 { "id": 3, "name": "Retail" },
                 { "id": 4, "name": "Hospitality" },
                 { "id": 5, "name": "Craft business" },

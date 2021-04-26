@@ -58,6 +58,12 @@ function ValidateQRForm() {
     errorMessages[i].style.display = 'none';
   }
 
+  let locationtype = document.getElementById('locationtype').value;
+  if (!locationtype.length) {
+    document.getElementById('qr-error-locationtyperequired').style.display = 'block';
+    errors++;
+  }
+
   let description = document.getElementById('description').value;
   if (!description.length) {
     document.getElementById('qr-error-descriptionrequired').style.display = 'block';
@@ -85,7 +91,6 @@ function ValidateQRForm() {
     errors++;
   }
 
-  let locationtype = +document.getElementById('locationtype').value;
   if (locationtype >= 9 || locationtype === 2) {
     let timeReg = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/
     let dateReg = /^\d{2}.\d{2}.\d{4}$/
