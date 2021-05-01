@@ -54,6 +54,15 @@
                 "active": true,
                 "accordion": [
                     {
+                        "title": "Information zur bereits von Google geschlossenen Sicherheitlücke im Exposure Notification Framework",
+                        "anchor": "google_security_vulnerability",
+                        "active": true,
+                        "textblock": [
+                            "Am 27. April 2021 erschienen Berichte, in denen über eine Sicherheitslücke des Exposure Notification Framework (ENF) im Android-Betriebssystem berichtet wurde. Diese Sicherheitslücke ermöglichte vorinstallierten Apps auf Android-Smartphones, auf Systemlogdateien zuzugreifen, somit Daten des ENF zu lesen, die eben auch von der Corona-Warn-App zur Verfügung gestellt werden. Google hat für Android einen Fix bereitgestellt, der laut Google mittlerweile bis zu 98% ausgerollt sein soll. Betroffen sind alle Android-Versionen, die die Google Play Services unterhalb der Version 21.15 nutzen.",
+                            "Alle Risiken zur Nutzung der CWA sind in der Datenschutzfolgeabschätzung  beschrieben (Risikodetails befinden sich in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Anlage 6 Abschnitt 4</a>)."
+                        ]
+                    },
+                    {
                         "title": "Datenspende und ereignisbasierte wissenschaftliche Befragung",
                         "anchor": "data_donation_and_EDUS",
                         "active": true,
