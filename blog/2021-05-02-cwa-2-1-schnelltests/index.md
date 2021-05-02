@@ -19,7 +19,7 @@ Since the announcement of the rapid test integration at the end of March, the pr
 
 ### Users can warn their fellow citizens even faster
 
-Users will have the opportunity to be tested for COVID-19 by trained and authorized staff at participating partners and receive the result of the rapid test via QR code. A negative result will then be displayed in the Corona-Warn-App for **48 hours**. A positive test results will be displayed in the app until the user has shared his or her result.
+Users will have the opportunity to be tested for COVID-19 by trained and authorized staff at participating partners and receive the result of the rapid test via QR code. A negative result will then be displayed in the Corona-Warn-App for **48 hours**. A positive test result will be displayed in the app until the user has shared his or her result.
 
 
 <br></br>
@@ -29,9 +29,9 @@ Users will have the opportunity to be tested for COVID-19 by trained and authori
 
 The app treats the rapid tests equally to the PCR tests. Users can warn their contacts in case of a **positive rapid test result** by sharing it via the app. Contacts will then receive a warning by their Corona-Warn-App about an exposure on one day with low risk (green card) or increased risk (red card). The app doesn’t show whether the warning was based on a rapid test or a PCR test.
 
-Although users' personal data is stored at the test sites so that staff can pass it on to the health department in case of a positive test, the Corona-Warn-App doesn’t safe personal data in accordance the decentralized approach.
+Although users' personal data is stored at the test sites so that staff can pass it on to the health department in case of a positive test, the Corona-Warn-App doesn’t save personal data in accordance with the decentralized approach.
 
-In case of a positive rapid test result, users should share their test result and take a PCR test to confirm or refute the result. In case of a positive PCR test, users should share this test result, too. This will allow them to warn users they may have met after having shared the rapid test result but before they’ve gotten their PCR test result. However, if the **PCR test is negative**, they do not have the option to withdraw their positive rapid test and warning.
+In case of a positive rapid test result, users should share their test result and take a PCR test to confirm or refute the result. In case of a positive PCR test, users should share this test result too. This will allow them to warn users they may have met after having shared the rapid test result but before they’ve gotten their PCR test result. However, if the **PCR test is negative**, they do not have the option to withdraw their positive rapid test and warning.
 
 <br></br>
 <center> <img src="./positive-test.png" title="Positive test result" style="align: center"></center>
