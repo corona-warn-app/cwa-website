@@ -9,7 +9,7 @@ layout: blog
 
 ### Eight partners participate from the beginning
 
-Deutsche Telekom and SAP’s project team have integrated the [announced rapid COVID-19 tests](https://www.coronawarn.app/en/blog/2021-03-31-corona-warn-app-test-integration/) in the Corona-Warn-App’s latest version (2.1) launching today. Users can now break infection chains and warn their fellow citizens even faster. The update will be available to all users within the next 48 hours. 
+Deutsche Telekom and SAP’s project team have integrated the [announced rapid COVID-19 tests](https://www.coronawarn.app/en/blog/2021-03-31-corona-warn-app-test-integration/) in the Corona-Warn-App’s latest version (2.1) launching today. Users can now break infection chains and warn their fellow citizens even faster. The update will be available to all users within the next 48 hours.
 
 <!-- overview -->
 
@@ -19,11 +19,11 @@ Since the announcement of the rapid test integration at the end of March, the pr
 
 ### Users can warn their fellow citizens even faster
 
-Users will have the opportunity to be tested for COVID-19 by trained and authorized staff at participating partners and receive the result of the rapid test via QR code. A negative result will then be displayed in the Corona-Warn-App for **48 hours**. A positive test results will be displayed in the app until the user has shared his or her result. 
+Users will have the opportunity to be tested for COVID-19 by trained and authorized staff at participating partners and receive the result of the rapid test via QR code. A negative result will then be displayed in the Corona-Warn-App for **48 hours**. A positive test results will be displayed in the app until the user has shared his or her result.
 
 
 <br></br>
-<center> <img src="./register-test.png" title="Register rapid test" style="align: center">  <img src="./register-test(2).png" title="Register rapid test" style="align: center"> <img src="./negative-test-timer.png" title="Negative test result" style="align: center"></center>
+<center><img src="./register-test.png" title="Register rapid test" style="align: center">  <img src="./register-test(2).png" title="Register rapid test" style="align: center"></center>
 <br></br>
 
 
@@ -37,16 +37,15 @@ In case of a positive rapid test result, users should share their test result an
 <center> <img src="./positive-test.png" title="Positive test result" style="align: center"></center>
 <br></br>
 
-Users who tested positive for COVID-19 and previously checked in to an event or at a location through the [**event registration feature**](https://www.coronawarn.app/en/blog/2021-04-21-corona-warn-app-version-2-0/) can share their check-ins along with the positive rapid test and/or PCR test result. 
+Users who tested positive for COVID-19 and previously checked in to an event or at a location through the [**event registration feature**](https://www.coronawarn.app/en/blog/2021-04-21-corona-warn-app-version-2-0/) can share their check-ins along with the positive rapid test and/or PCR test result.
 
-A **negative test result** in the app may serve users as evidence that they’ve obtained a negative rapid test result, if specified by law. However, the recognition of test evidence may vary from state to state. Users should therefore inform themselves about the respective criteria in their federal state. 
+A **negative test result** in the app may serve users as evidence that they’ve obtained a negative rapid test result, if specified by law. However, the recognition of test evidence may vary from state to state. Users should therefore inform themselves about the respective criteria in their federal state.
 
-To get the result in the app as quickly as possible, users should open the app timely after they’ve taken the test so that it updates and shows the test result. Although the Corona-Warn-App retrieves test results automatically in the background, this can take a little longer depending on the operating system. 
+To get the result in the app as quickly as possible, users should open the app timely after they’ve taken the test so that it updates and shows the test result. Although the Corona-Warn-App retrieves test results automatically in the background, this can take a little longer depending on the operating system.
 
 
 ### Users can now reach hotlines from abroad
 
-Users can now reach the **Corona-Warn-App’s technical support and TAN hotline** from abroad. Previously, both hotlines had a number that only worked in Germany. Users who are abroad can now call +49 30 498 75401 to reach the technical support and +49 30 498 75402 for the TAN hotline. 
+Users can now reach the **Corona-Warn-App’s technical support and TAN hotline** from abroad. Previously, both hotlines had a number that only worked in Germany. Users who are abroad can now call +49 30 498 75401 to reach the technical support and +49 30 498 75402 for the TAN hotline.
 
 Version 2.1 - like previous versions - will be delivered in a controlled rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the Corona-Warn-App’s new version can be available up to 48 hours later.
-
