@@ -36,21 +36,24 @@
             },
             "dateplaceholder": "DD.MM.YYYY",
             "timeplaceholder": "HH:MM",
-            "locationtypes": [
-                { "id": "", "name": "Please choose" },
-                { "id": 3, "name": "Retail" },
-                { "id": 4, "name": "Hospitality" },
+            "locationtypes_initial": "Please choose",
+            "locationtypes_header_place": "Place",
+            "locationtypes_places": [
                 { "id": 5, "name": "Craft business" },
-                { "id": 6, "name": "Workplace" },
                 { "id": 7, "name": "Education facility" },
+                { "id": 4, "name": "Hospitality" },
                 { "id": 8, "name": "Public building" },
-                { "id": 1, "name": "Other place" },
-                { "id": 9, "name": "Cultural event" },
+                { "id": 3, "name": "Retail" },
+                { "id": 6, "name": "Workplace" },
+                { "id": 1, "name": "Other place" }
+            ],
+            "locationtypes_header_event": "Event",
+            "locationtypes_events": [
                 { "id": 10, "name": "Club activities" },
+                { "id": 9, "name": "Cultural event" },
                 { "id": 11, "name": "Private party" },
                 { "id": 12, "name": "Religious service" },
-                { "id": 2, "name": "Other event" },
-                { "id": 0, "name": "Other" }
+                { "id": 2, "name": "Other event" }
             ]
         }
     }
