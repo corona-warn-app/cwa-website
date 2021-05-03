@@ -1,0 +1,46 @@
+{{#if page-contents}}
+    <section class="component download pt-lg-0 pb-0 pb-lg-5">
+        <div class="container h-100">
+            <picture class="download-mobile-image d-block d-lg-none">
+                <source srcset="{{page-contents.section-main.image.url-webp}}" type="image/webp">
+                <img class="download-mobile-image"
+                    src="{{page-contents.section-main.image.url}}"
+                    title="{{page-contents.section-main.image.title}}"
+                    alt="{{page-contents.section-main.image.alt}}"
+                    loading="lazy" />
+            </picture>
+            <div class="row align-items-end align-items-lg-center justify-content-lg-between h-100">
+                <div class="col col-12 col-lg-6 bg-white p-3">
+                    <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+                    <p class="lead">{{page-contents.section-main.content.text}}</p>
+
+                    <div class="row">
+                        <div class="col col-6 mb-3" id="store_apple">
+                            <a href="https://apps.apple.com/de/app/corona-warn-app/id1512595757" target="_blank" rel="noopener noreferrer">
+                                <img class="img-fluid w-100" src="/assets/img/App_Store_Badge_US-UK.svg" alt="Laden sie die Corona-Warn-App aus dem Apple App Store Icon">
+                            </a>
+                        </div>
+                        <div class="col col-6 mb-3" id="store_android">
+                            <a href="https://play.google.com/store/apps/details?id=de.rki.coronawarnapp" target="_blank" rel="noopener noreferrer">
+                                <img class="img-fluid w-100" src="/assets/img/google-play-badge.svg" alt="Laden sie die Corona-Warn-App aus dem Google Play Store Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-5 d-none d-lg-block">
+                    <picture class="section-main-image">
+                        <source
+                            srcset="{{page-contents.section-main.image.url-webp}}"
+                            type="image/webp">
+                        <img class="section-main-image"
+                            src="{{page-contents.section-main.image.url}}"
+                            title="{{page-contents.section-main.image.title}}"
+                            alt="{{page-contents.section-main.image.alt}}"
+                            loading="lazy" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{/if}}
