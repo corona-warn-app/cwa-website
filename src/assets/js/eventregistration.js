@@ -23,6 +23,7 @@ UpdateQRForm();
 document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventplaceholder').classList.remove('d-none');
   document.getElementById('eventqrcode').classList.add('d-none');
+  document.getElementById('downloadCode').disabled = true;
 });
 
 document.getElementById('generateQR').addEventListener('click', function (e) {
