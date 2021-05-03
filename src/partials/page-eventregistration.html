@@ -125,7 +125,12 @@
 
         </div>
         <div class="col col-12 col-lg-6 mt-4 mt-lg-0">
-          <img src="/assets/img/pt-poster-1.0.0.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" />
+          {{#unless lang_de}}
+          <img src="/assets/img/pt-poster-1.0.0-placeholder_en.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" />
+          {{/unless}}
+          {{#if lang_de}}
+          <img src="/assets/img/pt-poster-1.0.0-placeholder.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" />
+          {{/if}}
           <canvas id="eventqrcode" class="d-none eventqr-preview"></canvas>
         </div>
       </div>
