@@ -88,6 +88,130 @@
                 ]
             },
             {
+                "title": "Rapid antigen test",
+
+                "id": "rapid_antigen_test",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "Why are quick tests now integrated?",
+                        "anchor": "rat_why_integrate",
+                        "active": true,
+                        "textblock": [
+                            "In version 2.1 of the Corona-Warn-App, the project team from Deutsche Telekom and SAP has, as announced, integrated rapid tests so that chains of infection can be interrupted even faster.",
+                            "While PCR test results are only available and can be shared a day later, users can share positive rapid test results shortly after the test. This means that contacts are warned more quickly and chains of infection are broken more quickly.",
+                            "A negative test result can also be used by users as evidence of a negative rapid test result, if required by law. However, the recognition of test evidence may vary from state to state. Users should therefore inform themselves about the respective criteria in their federal state."
+                        ]
+                    },
+                    {
+                        "title": "How do I get my rapid antigen test result?",
+                        "anchor": "rat_how_get_result",
+                        "active": true,
+                        "textblock": [
+                            "From the 'Register your Test' section on the home screen of your Corona-Warn-App, you can add a test by scanning the QR code. To get the result in the app as soon as possible, you can refresh the test in the app until the result is available. Although the Corona-Warn-App also retrieves test results automatically in the background, it may take a little longer depending on your operating system."
+
+                        ]
+                    },
+                    {
+                        "title": "How long is a rapid antigen test valid? What does the count-down mean?",
+                        "anchor": "rat_how_long_valid",
+                        "active": true,
+                        "textblock": [
+                            "A negative rapid test result is valid for 48 hours after submission and can be used as evidence, if required by law. When you tap on your negative test result on the main screen of the app, you will see a counter that shows you how long your test result has already been available. After 48 hours, your rapid test result will automatically be removed. You can then take another rapid test and register it in the app.",
+                            "There is no limited validity for positive rapid test results, so no counter will be displayed to you in this case. As soon as you receive a positive test result, immediately follow the instructions displayed in the app."
+                        ]
+                    },
+                    {
+                        "title": "What privileges derive from a negative rapid test result? Can I use my test result in the app as proof of admission to shops or visiting hair salons, leisure activities, etc.?",
+                        "anchor": "rat_privileges",
+                        "active": true,
+                        "textblock": [
+                            "A negative test result can serve as proof of the existence of a negative rapid test result for you, if specified by law. However, the recognition of test evidence may vary from state to state. You should therefore inform yourself about the respective criteria in your federal state."
+                        ]
+                    },
+                    {
+                        "title": "How do I act if my rapid test result is positive?",
+                        "anchor": "rat_what_if_positive_result",
+                        "active": true,
+                        "textblock": [
+                            "In case of a positive test result, you should share your test result and immediately take a PCR test to confirm or revise the result. In case of a positive PCR test, you should share the test result again to alert contacts you may have met between the two tests. This is provided that the contacts also use the Corona-Warn-App and the risk calculation determines a high risk, based on duration and distance of contact. If the PCR test is negative, you will not have the option to withdraw your positive rapid test and warning."
+
+                        ]
+                    },
+                    {
+                        "title": "If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?",
+                        "anchor": "rat_red_card_which_test",
+                        "active": true,
+                        "textblock": [
+                            "If the Corona-Warn-App shows you an encounter with increased risk (red tile), you should take a PCR test and quarantine yourself."
+
+                        ]
+                    },
+                    {
+                        "title": "Are rapid antigen and PCR tests treated differently in the App?",
+                        "anchor": "rat_same_in_cwa",
+                        "active": true,
+                        "textblock": [
+                            "The rapid test is treated equally to the PCR test by the Corona-Warn-App. If you get tested at one of the Corona-Warn-App partners, you will receive your test result via QR code, which you can scan with the Corona-Warn-App. A negative test result will then be displayed in the Corona-Warn-App for 48 hours.",
+                            "In case of a positive test result, you can warn other people within the shortest possible time by sharing your result - as with a PCR test - and uploading it to the Corona-Warn-App server. The positive test result will be displayed in the app until you share it. If you were previously checked in to an event or location via Event Registration, you can share the positive test result along with your check-ins."
+
+                        ]
+                    },
+                    {
+                        "title": "Are warnings from a rapid antigen or PCR test differentiated?",
+                        "anchor": "rat_warning_not_differentiated",
+                        "active": true,
+                        "textblock": [
+                            "Contact persons receive a warning in their Corona-Warn-App about an encounter on a day with low (green tile) or increased risk (red tile). Whether the warning was based on a rapid test or on a PCR test is not displayed in the app."
+
+                        ]
+                    },
+                    {
+                        "title": "EFGS integration? Are positive results shared in other countries?",
+                        "anchor": "rat_efgs",
+                        "active": true,
+                        "textblock": [
+                            "Warnings based on a rapid test result are not shared with other EU countries via the EFGS (European Federation Gateway Service), including Switzerland, as the EFGS terms of use do not provide for rapid test warnings to be shared."
+                        ]
+                    },
+                    {
+                        "title": "What is the difference between PCR tests, rapid antigen tests and self-tests?",
+                        "anchor": "rat_differences_pcr",
+                        "active": true,
+                        "textblock": [
+                            "PCR tests are the 'gold standard' among corona tests. Sampling is performed by medical personnel - evaluation by laboratories.",
+                            "Rapid antigen tests: Have their name because the result is available quickly. They can only be performed by trained personnel. Similar to the PCR test, a nasal or throat swab is taken. However, in contrast to the PCR test, the evaluation takes place directly on site. Since March 8, 2021, everyone is entitled to at least one rapid test per week.",
+                            "Self-tests: Have their name because anyone can do these tests themselves, for example at home. The self-tests are intended for use by private individuals. For this purpose, sample collection and evaluation must be appropriately simple. The test can be performed with a nasal swab or saliva, for example. The Federal Institute for Drugs and Medical Devices, together with the Paul Ehrlich Institute, checks the quality and significance of the tests.",
+                            "Rapid and self-tests have a higher error rate compared to PCR tests. Therefore, after each positive rapid and self-test, a PCR test should always be done for confirmation."
+                        ]
+                    },
+                    {
+                        "title": "Can I share my positive rapid antigen test result via the TAN hotline?",
+                        "anchor": "rat_tan_hotline",
+                        "active": true,
+                        "textblock": [
+                            "It is not possible to share a positive rapid test result via the TAN hotline. Only rapid test results communicated via the app have been performed according to the dual control principle and by trained personnel, and can therefore be shared."
+                        ]
+                    },
+                    {
+                        "title": "Can I save/manage multiple rapid antigen tests?",
+                        "anchor": "rat_multiple_rat",
+                        "active": true,
+                        "textblock": [
+                            "No, only one rapid test can be registered in the app at a time. A negative rapid test is displayed in the app for 48 hours. After this time you can register a new test. You also have the option to remove the negative rapid test and result, and then register a new rapid test. Positive rapid tests are no longer displayed in the app once they have been shared.",
+                            "PCR tests are handled independently from rapid tests. This means you can have one PCR test and one rapid test registered in the app at the same time."
+                        ]
+                    },
+                    {
+                        "title": "Do the rapid antigen tests have different risk calculation parameters than a PCR tests?",
+                        "anchor": "rat_risk_parameter",
+                        "active": true,
+                        "textblock": [
+                            "No. For rapid tests as well as for PCR tests, the same criteria for risk calculation apply as before. If you receive a risk warning, you won't see in the app whether it was caused by sharing a quick test or PCR test result. The exact parameters for the calculation can be found in the FAQ article <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)</a>."                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Event Check-In",
                 "id": "check_in",
                 "active": true,
@@ -102,7 +226,7 @@
                             "<b> Questions and answers about the QR code:</b>",
                             "<a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Who generates the QR code?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the QR code also be set up and used for a private birthday party, providing this is legally possible?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the QR code be generated?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Will there be a way to check in without a smartphone (dongle or similar)?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the QR code?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan a QR code but do not have the CWA installed on my smartphone?</a>",
                             "<b> Questions and answers about the warning:</b>",
-                            "<a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can the user see what the alert is based on, i.e. which scanned QR code caused the warning? </a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a>"
+                            "<a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can the user see what the warning is based on, i.e. which scanned QR code caused the warning? </a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a>"
                         ]
                     },
                      {
@@ -197,8 +321,8 @@
                             "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",  
                             "The procedure is based on the existing CWA warning process: If an event participant or a visitor of a location has tested positive, he/she should share this result via the CWA. As a result, all other participants who were checked in at the same time will receive an immediate warning without having to burden the health authorities. Depending on the epidemiological situation, the warning is displayed in one of two versions: 'low risk' (green tile) or 'high risk' (red tile).",
                             "<b>How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)? </b>",
-                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about Covid-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
-                            "<b>Can the user see what the alert is based on, i.e. which scanned QR code caused the warning?</b>",
+                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about COVID-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
+                            "<b>Can the user see what the warning is based on, i.e. which scanned QR code caused the warning?</b>",
                             "Yes, this is displayed in the contact journal. This allows users to determine, for example, whether other family members that were also present but do not have the app (such as children) were also put at risk. ",
                             "<b>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</b>",
                             "After a red tile warning (high risk) you should quarantine and have a PCR test taken immediately. If the test result is positive, a report is sent to the health authority by the doctor/test center. It is recommended that you share the positive test result via the CWA. In addition, the information can be also be shared manually with the health department using the existing export function of the contact diary.",
@@ -1485,7 +1609,7 @@
                         "anchor": "ene",
                         "active": true,
                         "textblock": [
-                            "Exposure Notification Express (ENE) was additionally developed by Google and Apple to support health authorities worldwide who do not yet have an app and cannot or do not want to develop an app themselves. ENE simply provides standardized Covid-19 notifications, but does not digitize the process to the test result.",
+                            "Exposure Notification Express (ENE) was additionally developed by Google and Apple to support health authorities worldwide who do not yet have an app and cannot or do not want to develop an app themselves. ENE simply provides standardized COVID-19 notifications, but does not digitize the process to the test result.",
                             "Although risk encounters can be displayed, the diagnostic keys cannot be transmitted without further verification if the test result is positive. Nor can test results be transmitted with ENE.",
                             "For the German Corona-Warn-App (CWA), the introduction of Exposure Notification Express does not currently change anything. Regions that operate an app adapted to their own needs will continue to receive the encounter notifications from the Exposure Notification System directly and exclusively. In Germany, all exposure notifications are routed exclusively to the CWA. The high German standards for data protection apply. Risk assessment in Germany is carried out exclusively according to the epidemiological guidelines of the Robert Koch Institute (RKI). Users receive personal support from the hotlines if required.",
                             "According to current knowledge, the own app instead of the standard solution ENE offers countries the following advantages:",
