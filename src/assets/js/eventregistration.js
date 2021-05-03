@@ -104,12 +104,10 @@ function ValidateQRForm() {
     errors++;
   }
 
-  let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
-  if (!defaultcheckinlength) {
+  let defaultcheckinlengthHours = +document.getElementById('defaultcheckinlength-hours').value;
+  let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
+  if (!defaultcheckinlengthMinutes && !defaultcheckinlengthHours) {
     document.getElementById('qr-error-defaultcheckinlengthrequired').style.display = 'block';
-    errors++;
-  } else if (isNaN(defaultcheckinlength)) {
-    document.getElementById('qr-error-defaultcheckinlengthnumber').style.display = 'block';
     errors++;
   }
 
@@ -158,13 +156,14 @@ function ValidateQRForm() {
 function GenerateQRCode() {
   let description = document.getElementById('description').value;
   let address = document.getElementById('address').value;
-  let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
+  let defaultcheckinlengthHours = +document.getElementById('defaultcheckinlength-hours').value;
+  let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
   let locationtype = +document.getElementById('locationtype').value;
 
   let locationData = new proto.CWALocationData();
   locationData.setVersion(1);
   locationData.setType(locationtype);
-  locationData.setDefaultcheckinlengthinminutes(+defaultcheckinlength);
+  locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthHours * 60 + defaultcheckinlengthMinutes);
 
   let crowdNotifierData = new proto.CrowdNotifierData();
   crowdNotifierData.setVersion(1);
