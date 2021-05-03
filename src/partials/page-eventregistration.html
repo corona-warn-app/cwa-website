@@ -126,7 +126,6 @@
             <div class="row mt-4">
               <div class="col-12">
                 <button id="generateQR" value="show" class="btn btn-primary">{{page-contents.section-main.form.fields.show}}</button>
-                <button id="downloadCode" value="download" class="btn btn-secondary">{{page-contents.section-main.form.fields.download}}</button>
               </div>
             </div>
           </form>
@@ -140,6 +139,11 @@
           <img src="/assets/img/pt-poster-1.0.0-placeholder.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" />
           {{/if}}
           <canvas id="eventqrcode" class="d-none eventqr-preview"></canvas>
+          <div class="row mt-4">
+            <div class="col-12">
+              <button id="downloadCode" value="download" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.download}}</button>
+            </div>
+          </div>
         </div>
       </div>
 

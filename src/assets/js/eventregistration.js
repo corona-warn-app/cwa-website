@@ -31,6 +31,8 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
   if (ValidateQRForm()) {
     GenerateQRCode();
 
+    // Active download button
+    document.getElementById('downloadCode').disabled = false;
     document.getElementById('eventplaceholder').classList.add('d-none');
     let canvas = document.getElementById('eventqrcode');
     canvas.classList.remove('d-none');
@@ -40,14 +42,10 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
 document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (ValidateQRForm()) {
-    GenerateQRCode();
-
-    let dlLink = document.createElement('a');
-    dlLink.download = document.getElementById('description').value + '.png';
-    dlLink.href = document.getElementById('eventqrcode').toDataURL();
-    dlLink.click();
-  }
+  let dlLink = document.createElement('a');
+  dlLink.download = document.getElementById('description').value + '.png';
+  dlLink.href = document.getElementById('eventqrcode').toDataURL();
+  dlLink.click();
 });
 
 function ValidateQRForm() {
