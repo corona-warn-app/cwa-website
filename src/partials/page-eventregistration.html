@@ -14,9 +14,17 @@
               <label for="locationtype" class="col-12 col-form-label">{{page-contents.section-main.form.fields.locationtype}}</label>
               <div class="col-12">
                 <select id="locationtype" class="form-control" required>
-                {{#each page-contents.section-main.form.locationtypes}}
-                  <option value="{{id}}">{{name}}</option>
-                {{/each}}
+                  <option value="">{{page-contents.section-main.form.locationtypes_initial}}</option>
+                  <optgroup label="{{page-contents.section-main.form.locationtypes_header_place}}">
+                    {{#each page-contents.section-main.form.locationtypes_places}}
+                      <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                  </optgroup>
+                  <optgroup label="{{page-contents.section-main.form.locationtypes_header_event}}">
+                    {{#each page-contents.section-main.form.locationtypes_events}}
+                      <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                  </optgroup>
                 </select>
                 <div id="qr-error-locationtyperequired" class="invalid-feedback">
                   {{page-contents.section-main.form.errors.locationtyperequired}}
