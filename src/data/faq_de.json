@@ -517,6 +517,19 @@
                         ]
                     },
                     {
+                        "title": "[Google/Android]: Fehlermeldung nach Zurücksetzen der App: Limit bereits erreicht",
+                        "anchor": "limit_reached",
+                        "active": true,
+                        "textblock": [
+                            "Falls Sie nach dem Zurücksetzen der App die folgende Fehlermeldung erhalten haben, warten Sie bitte bis zum nächsten Tag, bis Sie die App wieder öffnen.",
+                            "<b>'Limit bereits erreicht'</b>",
+                            "<b>'Heute sind keine weiteren Risiko-Überprüfungen möglich, weil das von Ihrem Betriebssystem festgelegte Limit von Risiko-Überprüfungen pro Tag bereits erreicht ist. Bitte überprüfen Sie Ihren Risikostatus morgen wieder.'</b>",
+                            "Der Fehler sollte dann verschwunden sein und Ihr Risiko-Status sollte korrekt angezeigt werden.",
+                            "Dieser Fehler kann auftreten, wenn Sie die App zwischen 20:00 Uhr und 00:00 Uhr zurücksetzen und Ihr Gerät den gesamten Tag über eine konstante WLAN-Verbindung hatte. Die Corona-Warn-App hat ein Tageslimit von 6 regelmäßigen Risiko-Überprüfungen. In diesem Fall führt das Zurücksetzen der App zu einer außerplanmäßigen Risiko-Überprüfung, bei der das Tageslimit überschritten werden kann. Die Funktionalität der App wird durch die fehlgeschlagene Überprüfung nicht beeinträchtigt.",
+                            "Falls die Fehlermeldung am nächsten Tag noch vorhanden ist, können Sie dies über einen Kommentar in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>GitHub Issue 1459</a> melden."
+                        ]
+                    },
+                    {
                         "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
                         "anchor": "multiple_exposure_checks",
                         "active": true,
@@ -1399,6 +1412,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
+                            "<b>AKTUELL 16.01.2021</b><br/>Die Fehlermeldung lautet nun \"Limit bereits erreicht\". Bitte lesen Sie <a href='#limit_reached' target='_blank' rel='noopener'>den dazugehörigen FAQ-Eintrag</a> für weitere Informationen.",
                             "<b>AKTUELL</b><br/>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><b>WICHTIG:</b><br/><b>Nach dem Aktualisieren auf die Version 1.5 kann es bis zu 24 Stunden dauern bis das Problem behoben ist.</b>",
                             "Falls der Fehler nach dem Update auf 1.5 und 24 Stunden Wartezeit immer noch auftritt, schreiben Sie bitte einen Kommentar in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>dazugehörige GitHub Issue</a>.<hr/>",
                             "Die Meldung besagt, dass die Corona-Warn-App das Exposure Notification System zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufalls-IDs abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab.",

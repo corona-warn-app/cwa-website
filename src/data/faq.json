@@ -520,6 +520,19 @@
                         ]
                     },
                     {
+                        "title": "[Google/Android]: Error after resetting the app: Limit already reached",
+                        "anchor": "limit_reached",
+                        "active": true,
+                        "textblock": [
+                            "If you encounter the following error message after resetting the app, please wait until the next day before you open the app again.",
+                            "<b>'Limit already reached'</b>",
+                            "<b>'No more exposure checks possible today, as you have reached the maximum number of checks per day defined by your operating system. Please check your risk status again tomorrow.'</b>",
+                            "The error should have disappeared by then and your risk status should be displayed correctly.",
+                            "This error can occur if you reset the app between 20:00 and 00:00 and your device was constantly connected to Wi-Fi for the whole day. The Corona-Warn-App has a daily limit of 6 periodic checks. In this case, resetting the app triggers an unscheduled risk check that can exceed the daily limit. The functionality of the app is not affected by the failed check.",
+                            "If the error message is still present the next day, you can report this via a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>GitHub Issue 1459</a>."
+                        ]
+                    },
+                    {
                         "title": "My exposure log shows checks for less than 14 days",
                         "anchor": "exposure_check",
                         "active": true,
@@ -1401,6 +1414,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
+                            "<b>UPDATE 16.01.2021</b><br/>The error notification now reads \"Limit already reached\". Please see <a href='#limit_reached' target='_blank' rel='noopener'>the corresponding FAQ entry</a> for further information on this issue.",
                             "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><b>IMPORTANT:</b><br/><b>After updating to version 1.5 it will take up to 24 hours until the error is gone.</b>",
                             "If you are still receiving the error after updating to 1.5 and waiting 24 hours, please report it in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a>.<hr/>",
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
