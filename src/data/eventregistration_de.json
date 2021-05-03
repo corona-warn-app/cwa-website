@@ -36,19 +36,23 @@
             },
             "dateplaceholder": "TT.MM.JJJJ",
             "timeplaceholder": "HH:MM",
-            "locationtypes": [
-                { "id": "", "name": "Bitte auswählen" },
+            "locationtypes_initial": "Bitte auswählen",
+            "locationtypes_header_place": "Ort",
+            "locationtypes_places": [
+                { "id": 6, "name": "Arbeitsstätte" },
+                { "id": 7, "name": "Bildungsstätte" },
                 { "id": 3, "name": "Einzelhandel" },
                 { "id": 4, "name": "Gastronomiebetrieb" },
                 { "id": 5, "name": "Handwerksbetrieb" },
-                { "id": 6, "name": "Arbeitsstätte" },
-                { "id": 7, "name": "Bildungsstätte" },
                 { "id": 8, "name": "öffentliche Gebäude" },
-                { "id": 1, "name": "anderer Ort" },
-                { "id": 9, "name": "Kulturveranstaltung" },
-                { "id": 10, "name": "Vereinsaktivität" },
-                { "id": 11, "name": "private Feier" },
+                { "id": 1, "name": "anderer Ort" }
+            ],
+            "locationtypes_header_event": "Event",
+            "locationtypes_events": [
                 { "id": 12, "name": "Gottesdienst" },
+                { "id": 9, "name": "Kulturveranstaltung" },
+                { "id": 11, "name": "private Feier" },
+                { "id": 10, "name": "Vereinsaktivität" },
                 { "id": 2, "name": "anderes Event" }
             ]
         }
