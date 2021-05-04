@@ -24,6 +24,7 @@ document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventplaceholder').classList.remove('d-none');
   document.getElementById('eventqrcode').classList.add('d-none');
   document.getElementById('printCode').disabled = true;
+  document.getElementById('downloadCode').disabled = true;
 });
 
 document.getElementById('generateQR').addEventListener('click', function (e) {
@@ -33,6 +34,8 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
     GenerateQRCode();
 
     document.getElementById('printCode').disabled = false;
+    // Active download button
+    document.getElementById('downloadCode').disabled = false;
     document.getElementById('eventplaceholder').classList.add('d-none');
     let canvas = document.getElementById('eventqrcode');
     canvas.classList.remove('d-none');
@@ -42,14 +45,10 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
 document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (ValidateQRForm()) {
-    GenerateQRCode();
-
-    let dlLink = document.createElement('a');
-    dlLink.download = document.getElementById('description').value + '.png';
-    dlLink.href = document.getElementById('eventqrcode').toDataURL();
-    dlLink.click();
-  }
+  let dlLink = document.createElement('a');
+  dlLink.download = document.getElementById('description').value + '.png';
+  dlLink.href = document.getElementById('eventqrcode').toDataURL();
+  dlLink.click();
 });
 
 document.getElementById('printCode').addEventListener('click', function (e) {
