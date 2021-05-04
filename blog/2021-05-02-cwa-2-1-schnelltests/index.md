@@ -13,7 +13,7 @@ Deutsche Telekom and SAP’s project team have integrated the [announced rapid C
 
 <!-- overview -->
 
-Eight partners are participating in the launch of the rapid test integration, including **the German Federal Chancellery, the Bavarian Red Cross, dm-drogerie markt, Doctorbox, EcoCare the healthcare brand of Ecolog Deutschland GmbH (with Lidl among others), Huber Health Care, the Saarland Ministry of Education and Culture and testbuchen.de/No-Q**.  
+Eight partners are participating in the launch of the rapid test integration, including **the Bavarian Red Cross, dm-drogerie markt, Doctorbox, EcoCare the healthcare brand of Ecolog Deutschland GmbH (with Lidl among others), Huber Health Care, and testbuchen.de/No-Q**. In addition, the **German Federal Chancellery**, which tests its employees, amd the **Ministry of Education and Culture Saarland**, which provides rapid testing to teachers, are taking part. 
 
 Since the announcement of the rapid test integration at the end of March, the project team has received **125 requests** from test centers and the retail sector, among others, that are interested in participating in the integration.
 
