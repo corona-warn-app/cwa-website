@@ -19,7 +19,7 @@ Seit Ankündigung der Integration Ende März sind außerdem **125 Anfragen** von
 
 ### Nutzer\*innen können ihre Mitmenschen noch schneller warnen
 
-Nutzer\*innen haben damit die Möglichkeit, sich bei den beteiligten Partnern von geschulten und autorisierten Mitarbeiter*innen auf COVID-19 testen zu lassen und das Ergebnis des Schnelltests per QR-Code zu erhalten. Ein negatives Testergebnis wird dann für **48 Stunden** in der App angezeigt. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen.
+Nutzer\*innen haben damit die Möglichkeit, sich bei vielen der beteiligten Partner von geschulten und autorisierten Mitarbeiter\*innen auf COVID-19 testen zu lassen und das Ergebnis des Schnelltests per QR-Code zu erhalten. Ein negatives Testergebnis kann dann für **48 Stunden** in der App angezeigt werden. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen.
 
 <br></br>
 <center><img src="./schnelltest-registrieren.png" title="Schnelltest Registrieren" style="align: center"> <img src="./schnelltest-anzeigen.png" title="Schnelltest Anzeigen" style="align: center"></center>
