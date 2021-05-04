@@ -45,6 +45,8 @@ function UpdateQRForm() {
 document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventplaceholder').classList.remove('d-none');
   document.getElementById('eventqrcode').classList.add('d-none');
+  document.getElementById('printCode').disabled = true;
+  document.getElementById('downloadCode').disabled = true;
 });
 
 document.getElementById('generateQR').addEventListener('click', function (e) {
@@ -53,6 +55,9 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
   if (ValidateQRForm()) {
     GenerateQRCode();
 
+    document.getElementById('printCode').disabled = false;
+    // Active download button
+    document.getElementById('downloadCode').disabled = false;
     document.getElementById('eventplaceholder').classList.add('d-none');
     let canvas = document.getElementById('eventqrcode');
     canvas.classList.remove('d-none');
@@ -62,14 +67,36 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
 document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (ValidateQRForm()) {
-    GenerateQRCode();
+  let dlLink = document.createElement('a');
+  dlLink.download = document.getElementById('description').value + '.png';
+  dlLink.href = document.getElementById('eventqrcode').toDataURL();
+  dlLink.click();
+});
 
-    let dlLink = document.createElement('a');
-    dlLink.download = document.getElementById('description').value + '.png';
-    dlLink.href = document.getElementById('eventqrcode').toDataURL();
-    dlLink.click();
-  }
+document.getElementById('printCode').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  let printWindow = window.open();
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>${document.getElementById('description').value} - ${document.getElementById('address').value}</title>
+      </head>
+      <body style="margin:0;padding:0;width:100%">
+        <img id="img" />
+      </body>
+    </html>
+  `);
+
+  let img = printWindow.document.getElementById("img");
+  img.onload = function() {
+    // the image width needs to be set after the image was loaded for compatibility reasons
+    printWindow.document.getElementById("img").style.width = '100%';
+    printWindow.print();
+    printWindow.close();
+  };
+  printWindow.document.getElementById("img").src = document.getElementById('eventqrcode').toDataURL();
 });
 
 function ValidateQRForm() {
