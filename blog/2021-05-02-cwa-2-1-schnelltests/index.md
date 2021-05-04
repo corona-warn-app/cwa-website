@@ -19,7 +19,19 @@ Since the announcement of the rapid test integration at the end of March, the pr
 
 ### Users can warn their fellow citizens even faster
 
-Users will have the opportunity to be tested for COVID-19 by trained and authorized staff at participating partners and receive the result of the rapid test via QR code. A negative result will then be displayed in the Corona-Warn-App for **48 hours**. A positive test result will be displayed in the app until the user has shared his or her result.
+Users will have the opportunity to be tested for COVID-19 by trained and authorized staff at participating partners and receive the result of the rapid test via QR code. They can make an appointment via the partners' websites:
+
+- dm drogerie-märkte: [Schnelltest INOPAI (dm.de)](https://corona-schnelltest-zentren.dm.de/o/dm/login)
+
+- EcoCare (Lidl and Kaufland): [EcoCare - Bürgertest: EcoCare - Bürgertest](https://buergertest.ecocare.center/#c734)
+
+- testbuchen.de/No-Q (participating pharmacies, general practitioners and other test centers): [Finde deinen Testtermin (testbuchen.de)](https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999)
+
+- Bavarian Red Cross: [Mein Corona-Test | BRK](https://meintest.brk.de/)
+
+In the first days after the start of the integration, a few partners may still experience minor complications. Overall, however, the integration is running satisfactorily and users already seem to be using the option.
+
+After the test, a negative result will be displayed in the Corona-Warn-App for **48 hours**. A positive test results will be displayed in the app until the user has shared his or her result. 
 
 
 <br></br>
