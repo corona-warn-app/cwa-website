@@ -2,15 +2,38 @@ import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 import moment from 'moment';
+import Cleave from 'cleave.js';
+
+if (document.getElementById('qrform')) {
+  UpdateQRForm();
+
+  new Cleave('#starttime-date', {
+    date: true,
+    delimiter: '.',
+    datePattern: ['d', 'm', 'Y']
+  });
+
+  new Cleave('#starttime-time', {
+    time: true,
+    timePattern: ['h', 'm']
+  });
+
+  new Cleave('#endtime-date', {
+    date: true,
+    delimiter: '.',
+    datePattern: ['d', 'm', 'Y']
+  });
+
+  new Cleave('#endtime-time', {
+    time: true,
+    timePattern: ['h', 'm']
+  });
+}
 
 document.getElementById('locationtype').addEventListener('input', function (e) {
   UpdateQRForm();
 });
 function UpdateQRForm() {
-  if (!document.getElementById('qrform')) {
-    return;
-  }
-
   let locationtype = +document.getElementById('locationtype').value;
   if (locationtype && (locationtype >= 9 || locationtype === 2)) {
     document.getElementById('event-duration').classList.remove('d-none');
@@ -18,11 +41,12 @@ function UpdateQRForm() {
     document.getElementById('event-duration').classList.add('d-none');
   }
 }
-UpdateQRForm();
 
 document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventplaceholder').classList.remove('d-none');
   document.getElementById('eventqrcode').classList.add('d-none');
+  document.getElementById('printCode').disabled = true;
+  document.getElementById('downloadCode').disabled = true;
 });
 
 document.getElementById('generateQR').addEventListener('click', function (e) {
@@ -31,6 +55,9 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
   if (ValidateQRForm()) {
     GenerateQRCode();
 
+    document.getElementById('printCode').disabled = false;
+    // Active download button
+    document.getElementById('downloadCode').disabled = false;
     document.getElementById('eventplaceholder').classList.add('d-none');
     let canvas = document.getElementById('eventqrcode');
     canvas.classList.remove('d-none');
@@ -40,14 +67,36 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
 document.getElementById('downloadCode').addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (ValidateQRForm()) {
-    GenerateQRCode();
+  let dlLink = document.createElement('a');
+  dlLink.download = document.getElementById('description').value + '.png';
+  dlLink.href = document.getElementById('eventqrcode').toDataURL();
+  dlLink.click();
+});
 
-    let dlLink = document.createElement('a');
-    dlLink.download = document.getElementById('description').value + '.png';
-    dlLink.href = document.getElementById('eventqrcode').toDataURL();
-    dlLink.click();
-  }
+document.getElementById('printCode').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  let printWindow = window.open();
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>${document.getElementById('description').value} - ${document.getElementById('address').value}</title>
+      </head>
+      <body style="margin:0;padding:0;width:100%">
+        <img id="img" />
+      </body>
+    </html>
+  `);
+
+  let img = printWindow.document.getElementById("img");
+  img.onload = function() {
+    // the image width needs to be set after the image was loaded for compatibility reasons
+    printWindow.document.getElementById("img").style.width = '100%';
+    printWindow.print();
+    printWindow.close();
+  };
+  printWindow.document.getElementById("img").src = document.getElementById('eventqrcode').toDataURL();
 });
 
 function ValidateQRForm() {
@@ -82,12 +131,10 @@ function ValidateQRForm() {
     errors++;
   }
 
-  let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
-  if (!defaultcheckinlength) {
+  let defaultcheckinlengthHours = +document.getElementById('defaultcheckinlength-hours').value;
+  let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
+  if (!defaultcheckinlengthMinutes && !defaultcheckinlengthHours) {
     document.getElementById('qr-error-defaultcheckinlengthrequired').style.display = 'block';
-    errors++;
-  } else if (isNaN(defaultcheckinlength)) {
-    document.getElementById('qr-error-defaultcheckinlengthnumber').style.display = 'block';
     errors++;
   }
 
@@ -136,13 +183,14 @@ function ValidateQRForm() {
 function GenerateQRCode() {
   let description = document.getElementById('description').value;
   let address = document.getElementById('address').value;
-  let defaultcheckinlength = document.getElementById('defaultcheckinlength').value;
+  let defaultcheckinlengthHours = +document.getElementById('defaultcheckinlength-hours').value;
+  let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
   let locationtype = +document.getElementById('locationtype').value;
 
   let locationData = new proto.CWALocationData();
   locationData.setVersion(1);
   locationData.setType(locationtype);
-  locationData.setDefaultcheckinlengthinminutes(+defaultcheckinlength);
+  locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthHours * 60 + defaultcheckinlengthMinutes);
 
   let crowdNotifierData = new proto.CrowdNotifierData();
   crowdNotifierData.setVersion(1);
