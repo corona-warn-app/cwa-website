@@ -13,7 +13,7 @@ In der neuesten Version der Corona-Warn-App (2.1) hat das Projektteam aus Deutsc
 
 <!-- overview -->
 
-Zum Start der Schnelltestintegration beteiligen sich acht Partner, darunter das **Bundeskanzleramt, das Bayerische Rote Kreuz, dm-drogerie markt, Doctorbox, EcoCare, die Healthcare Marke von Ecolog Deutschland GmbH (mit unter anderem Lidl), Huber Health Care, das Ministerium für Bildung und Kultur Saarland und testbuchen.de/No-Q**.  
+Zum Start der Schnelltestintegration beteiligen sich acht Partner, darunter das das **Bayerische Rote Kreuz, dm-drogerie markt, Doctorbox, EcoCare, die Healthcare Marke von Ecolog Deutschland GmbH (mit unter anderem Lidl), Huber Health Care und  testbuchen.de/No-Q**. Außerdem sind das **Bundeskanzleramt**, das seine Mitarbeiter\*innen testet, und das **Ministerium für Bildung und Kultur Saarland**, das den Lehrer\*innen Schnelltests ermöglicht, zum Start dabei.
 
 Seit Ankündigung der Integration Ende März sind außerdem **125 Anfragen** von Schnelltest-Betreibern aus unter anderem Testzentren und dem Einzelhandel eingegangen, die sich an der Integration beteiligen möchten.
 
