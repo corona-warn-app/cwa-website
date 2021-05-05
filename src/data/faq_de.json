@@ -448,6 +448,19 @@
                             "<ol><li>Öffnen Sie die Geräte-Einstellungen</li><li>Wählen Sie 'Sicherheit & Standort' -> 'Standort' -> 'Berechtigungen auf App-Ebene'</li></ol>",
                             "Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn Sie denken, dass diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
                         ]
+                    },
+                    {
+                        "title": "[Google/Android] Auf meinem Hauptbildschirm werde ich gewarnt, dass mein Gerät nicht oder nicht vollständig kompatibel ist. Was bedeutet das?",
+                        "anchor": "incompatibility_warning",
+                        "active": true,
+                        "textblock": [
+                            "Wenn Sie diese Warnmeldung sehen, ist Ihr Gerät nicht in der Lage, Zufalls-IDs von anderen Geräten zu empfangen.",
+                            "Dies wird durch eine Einschränkung in der Kombination aus verwendeter Hard- und Software verursacht. Dadurch kann Bluetooth-Low-Energy im sogenannten „periphial mode“ nicht von der Corona-Warn-App verwendet werden.",
+                            "Sollten Sie sich entscheiden, Kontakte im Fall einer Infektion zu warnen, wird diese Benachrichtigung nur Personen erreichen, die gleichzeitig mit Ihnen an einer Lokation oder einem Event eingecheckt waren.",
+                            "Stellen Sie zunächst sicher, dass Sie die neuste Version des Betriebssystems Ihres Smartphones installiert haben. Wenn das Problem fortbesteht, wenden Sie sich bitte an Ihren Gerätehersteller.",
+                            "Falls Ihnen angezeigt wird, dass Ihr Gerät gänzlich inkompatibel ist, dann kann dies daran liegen, dass in Ihrem Gerät kein Bluetooth-Chip verbaut ist. In diesem Fall können Sie keine Zufalls-Ids von anderen empfangen und die Risiko-Berechnung kann nur Lokationen und Events, bei denen Sie eingecheckt waren, berücksichtigen.",
+                            "Die Funktionalität zum Einchecken ist von dem Problem <i>nicht</i> betroffen."
+                        ]
                     }
                 ]
             },
