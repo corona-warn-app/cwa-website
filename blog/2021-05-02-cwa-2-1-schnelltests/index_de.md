@@ -30,7 +30,7 @@ Nutzer\*innen haben damit die Möglichkeit, sich bei vielen der beteiligten Part
 - Bayerisches Rotes Kreuz: [Mein Corona-Test | BRK](https://meintest.brk.de/)
 
 
-In den ersten Tagen nach Start der Integration kann es bei wenigen Partnern noch zu kleineren Komplikationen kommen. Insgesamt läuft die Integration aber zufriedenstellend und die Nutzer\*innen scheinen die Option bereits sehr gut anzunehmen.
+In den ersten Tagen nach Start der Integration kann es bei wenigen Partnern noch zu kleineren technischen Schluckaufs kommen. Insgesamt läuft die Integration aber zufriedenstellend und die Nutzer\*innen scheinen die Option bereits sehr gut anzunehmen.
 
 Nach dem Test kann ein negatives Testergebnis für **48 Stunden** in der App angezeigt werden. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen. 
 
