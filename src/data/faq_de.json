@@ -971,15 +971,13 @@
                         "anchor": "encounter_count_19",
                         "active": true,
                         "textblock": [
-                            "Mit Einführung der Version 1.9 der Corona-Warn-App wird eine neue Version des Exposure Notification Frameworks (ENF) von Apple/Google verwendet, die Version 2.0. Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
-                            "Bisher wurde die in der App angezeigte Anzahl der Begegnungen nicht gefiltert. Das gilt bis zur Version 1.7.1. Das heißt: Auch Begegnungen mit sehr kurze Kontaktdauer (hier genügten wenige Sekunden) wurden gezählt und angezeigt. Aufgrund der hinterlegten Kriterien für die Risikoberechnung wurden diese allerdings nur als Begegnung mit geringem Risiko angezeigt.",
-                            "<b>Vereinfacht ausgedrückt:</b> Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus virologischer Sicht aber nicht relevant und werden von der Corona-Warn-App herausgefiltert.",
-                            "<b>Im Detail:</b>",
-                            "Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen gezählt werden sollen. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
+                            "Mit Einführung der Version 1.9 der Corona-Warn-App wird eine neue Version des Exposure Notification Frameworks (ENF) von Apple/Google verwendet, die Version 2.0 (auch bekannt als ExposureWindow Modus von Google). Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
+                            "Bis zur Version 1.7.1 wurde die in der App angezeigte Anzahl der Begegnungen nicht gefiltert. Das heißt: Auch Begegnungen mit sehr kurzer Kontaktdauer (hier genügten wenige Sekunden) wurden gezählt und angezeigt. Aufgrund der hinterlegten Kriterien für die Risikoberechnung wurden diese allerdings nur als Begegnung mit geringem Risiko angezeigt.",
+                            "Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen bei der Risikoberechnung berücksichtigt werden. Begegnungen mit sehr kurzer Kontaktdauer oder sehr geringer Signalstärke werden gefiltert, da das Ansteckungsrisiko dieser Begegnung nicht signifikant ist. Im Kontaktprotokoll des Betriebssystems werden diese Begegnungen zwar gezählt, werden jedoch nicht in die Risikoberechnung der App einbezogen.",
                             "Um als Begegnung berücksichtigt zu werden, müssen folgende Bedingungen innerhalb eines Zeitfensters von 30 Minuten erfüllt sein:",
-                            "<ul><li>Mindestens 10 Minuten (reduziert auf 5 Minuten am 23 Feb. 2021, siehe <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>Blogartikel</a>) innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
+                            "<ul><li>Mindestens 5 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 79dB gelegen haben</li>",
                             "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
-                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“.  "
+                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“."
                         ]
                     },
                     {

@@ -968,15 +968,13 @@
                         "anchor": "encounter_count_19",
                         "active": true,
                         "textblock": [
-                            "With the introduction of Corona-Warn-App version 1.9, a new version of the Exposure Notification Framework (ENF) from Apple/Google is used, version 2.0. The data from this interface is used as the basis for calculating the individual risk.",
-                            "Previously, the number of encounters displayed in the app has not been filtered. Up to version 1.7.1, encounters with very short contact durations (a few seconds were sufficient) were also counted and displayed in the app. However, due to the stored criteria for the risk calculation, these were only displayed as low-risk encounters.",
-                            "<b>In simplified terms:</b> Under Exposure Notification Version 2.0, the operating system also logs encounters with a risk lower than 'low risk' (green). However, since these encounters are not relevant from a virological perspective, the Corona-Warn-App filters them out.",
-                            "<b>In detail:</b>",
-                            "With the interface's new version, it is now possible to control more precisely which encounters should be counted. However, in the operating system's contact log, a count is performed. However, this is not an error.",
+                            "With the introduction of Corona-Warn-App version 1.9, a new version of the Exposure Notification Framework (ENF) from Apple/Google is used, version 2.0  (also known as ExposureWindow mode by Google). The data from this interface is used as the basis for calculating the individual risk.",
+                            "Up to version 1.7.1, the number of encounters displayed in the app has not been filtered. Encounters with very short contact durations (a few seconds were sufficient) were also counted and displayed in the app. However, due to the stored criteria for the risk calculation, these were only displayed as low-risk encounters.",
+                            "With the interface's new version, it is now possible to control more precisely which encounters are considered for the risk calculation. Encounters with a very short contact duration or very low signal strength are filtered, since they pose a non-significant risk of exposure. These encounters will still show up in the operating system's contact log, but do not count towards the overall risk score in the app.",
                             "To be considered as an encounter, the following conditions must be met within a 30-minute time window:",
-                            "<ul><li>The signal attenuation must have been below 73dB for at least 10 minutes (reduced to 5 minutes on Feb 23, 2021, see <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>blog post</a>) within the 30-minute window</li>",
+                            "<ul><li>The signal attenuation must have been below 79dB for at least 5 minutes.</li>",
                             "<li>The transmission risk level must be at least III (3). It is determined when sharing the diagnosis codes per day according to defined criteria such as symptom status and/or symptom onset.</li></ul>",
-                            "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'"
+                            "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'."
                         ]
                     },
                     {
