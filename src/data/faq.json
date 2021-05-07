@@ -88,6 +88,124 @@
                 ]
             },
             {
+                "title": "Rapid antigen test",
+                "id": "rapid_antigen_test",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "Why are quick tests now integrated?",
+                        "anchor": "rat_why_integrate",
+                        "active": true,
+                        "textblock": [
+                            "In version 2.1 of the Corona-Warn-App, the project team from Deutsche Telekom and SAP has, as announced, integrated rapid tests so that chains of infection can be interrupted even faster.",
+                            "While PCR test results are only available and can be shared a day later, users can share positive rapid test results shortly after the test. This means that contacts are warned more quickly and chains of infection are broken more quickly.",
+                            "A negative test result can also be used by users as evidence of a negative rapid test result, if required by law. However, the recognition of test evidence may vary from state to state. Users should therefore inform themselves about the respective criteria in their federal state."
+                        ]
+                    },
+                    {
+                        "title": "How do I get my rapid antigen test result?",
+                        "anchor": "rat_how_get_result",
+                        "active": true,
+                        "textblock": [
+                            "From the 'Register your Test' section on the home screen of your Corona-Warn-App, you can add a test by scanning the QR code. To get the result in the app as soon as possible, you can refresh the test in the app until the result is available. Although the Corona-Warn-App also retrieves test results automatically in the background, it may take a little longer depending on your operating system."
+                        ]
+                    },
+                    {
+                        "title": "How long is a rapid antigen test valid? What does the count-down mean?",
+                        "anchor": "rat_how_long_valid",
+                        "active": true,
+                        "textblock": [
+                            "A negative rapid test result is valid for 48 hours after submission and can be used as evidence, if required by law. When you tap on your negative test result on the main screen of the app, you will see a counter that shows you how long your test result has already been available. After 48 hours, your rapid test result will automatically be removed. You can then take another rapid test and register it in the app.",
+                            "There is no limited validity for positive rapid test results, so no counter will be displayed to you in this case. As soon as you receive a positive test result, immediately follow the instructions displayed in the app."
+                        ]
+                    },
+                    {
+                        "title": "What privileges derive from a negative rapid test result? Can I use my test result in the app as proof of admission to shops or visiting hair salons, leisure activities, etc.?",
+                        "anchor": "rat_privileges",
+                        "active": true,
+                        "textblock": [
+                            "A negative test result can serve as proof of the existence of a negative rapid test result for you, if specified by law. However, the recognition of test evidence may vary from state to state. You should therefore inform yourself about the respective criteria in your federal state."
+                        ]
+                    },
+                    {
+                        "title": "How do I act if my rapid test result is positive?",
+                        "anchor": "rat_what_if_positive_result",
+                        "active": true,
+                        "textblock": [
+                            "In case of a positive test result, you should share your test result and immediately take a PCR test to confirm or revise the result. In case of a positive PCR test, you should share the test result again to alert contacts you may have met between the two tests. This is provided that the contacts also use the Corona-Warn-App and the risk calculation determines a high risk, based on duration and distance of contact. If the PCR test is negative, you will not have the option to withdraw your positive rapid test and warning."
+                        ]
+                    },
+                    {
+                        "title": "If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?",
+                        "anchor": "rat_red_card_which_test",
+                        "active": true,
+                        "textblock": [
+                            "If the Corona-Warn-App shows you an encounter with increased risk (red tile), you should take a PCR test and quarantine yourself."
+                        ]
+                    },
+                    {
+                        "title": "Are rapid antigen and PCR tests treated differently in the App?",
+                        "anchor": "rat_same_in_cwa",
+                        "active": true,
+                        "textblock": [
+                            "The rapid test is treated equally to the PCR test by the Corona-Warn-App. If you get tested at one of the Corona-Warn-App partners, you will receive your test result via QR code, which you can scan with the Corona-Warn-App. A negative test result will then be displayed in the Corona-Warn-App for 48 hours.",
+                            "In case of a positive test result, you can warn other people within the shortest possible time by sharing your result - as with a PCR test - and uploading it to the Corona-Warn-App server. The positive test result will be displayed in the app until you share it. If you were previously checked in to an event or location via Event Registration, you can share the positive test result along with your check-ins."
+                        ]
+                    },
+                    {
+                        "title": "Are warnings from a rapid antigen or PCR test differentiated?",
+                        "anchor": "rat_warning_not_differentiated",
+                        "active": true,
+                        "textblock": [
+                            "Contact persons receive a warning in their Corona-Warn-App about an encounter on a day with low (green tile) or increased risk (red tile). Whether the warning was based on a rapid test or on a PCR test is not displayed in the app."
+                        ]
+                    },
+                    {
+                        "title": "EFGS integration? Are positive results shared in other countries?",
+                        "anchor": "rat_efgs",
+                        "active": true,
+                        "textblock": [
+                            "Warnings based on a rapid test result are not shared with other EU countries via the EFGS (European Federation Gateway Service), including Switzerland, as the EFGS terms of use do not provide for rapid test warnings to be shared."
+                        ]
+                    },
+                    {
+                        "title": "What is the difference between PCR tests, rapid antigen tests and self-tests?",
+                        "anchor": "rat_differences_pcr",
+                        "active": true,
+                        "textblock": [
+                            "PCR tests are the 'gold standard' among corona tests. Sampling is performed by medical personnel - evaluation by laboratories.",
+                            "Rapid antigen tests: Have their name because the result is available quickly. They can only be performed by trained personnel. Similar to the PCR test, a nasal or throat swab is taken. However, in contrast to the PCR test, the evaluation takes place directly on site. Since March 8, 2021, everyone is entitled to at least one rapid test per week.",
+                            "Self-tests: Have their name because anyone can do these tests themselves, for example at home. The self-tests are intended for use by private individuals. For this purpose, sample collection and evaluation must be appropriately simple. The test can be performed with a nasal swab or saliva, for example. The Federal Institute for Drugs and Medical Devices, together with the Paul Ehrlich Institute, checks the quality and significance of the tests.",
+                            "Rapid and self-tests have a higher error rate compared to PCR tests. Therefore, after each positive rapid and self-test, a PCR test should always be done for confirmation."
+                        ]
+                    },
+                    {
+                        "title": "Can I share my positive rapid antigen test result via the TAN hotline?",
+                        "anchor": "rat_tan_hotline",
+                        "active": true,
+                        "textblock": [
+                            "It is not possible to share a positive rapid test result via the TAN hotline. Only rapid test results communicated via the app have been performed according to the dual control principle and by trained personnel, and can therefore be shared."
+                        ]
+                    },
+                    {
+                        "title": "Can I save/manage multiple rapid antigen tests?",
+                        "anchor": "rat_multiple_rat",
+                        "active": true,
+                        "textblock": [
+                            "No, only one rapid test can be registered in the app at a time. A negative rapid test is displayed in the app for 48 hours. After this time you can register a new test. You also have the option to remove the negative rapid test and result, and then register a new rapid test. Positive rapid tests are no longer displayed in the app once they have been shared.",
+                            "PCR tests are handled independently from rapid tests. This means you can have one PCR test and one rapid test registered in the app at the same time."
+                        ]
+                    },
+                    {
+                        "title": "Do the rapid antigen tests have different risk calculation parameters than a PCR tests?",
+                        "anchor": "rat_risk_parameter",
+                        "active": true,
+                        "textblock": [
+                            "No. For rapid tests as well as for PCR tests, the same criteria for risk calculation apply as before. If you receive a risk warning, you won't see in the app whether it was caused by sharing a quick test or PCR test result. The exact parameters for the calculation can be found in the FAQ article <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)</a>."                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Event Check-In",
                 "id": "check_in",
                 "active": true,
@@ -98,11 +216,11 @@
                         "active": true,
                         "textblock": [
                             "<b> Questions and answers about functionality, misuse, and privacy:</b>",
-                            "<a href='../faq/#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'> How does event registration work in the Corona-Warn-App?</a></br><a href='../faq/#check_in_implementation' target='_self' rel='noopener noreferrer'> How is the event registration technically implemented?</a></br><a href='../faq/#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>For which locations and events is event registration suitable?</a></br><a href='../faq/#check_in_misuse' target='_self' rel='noopener noreferrer'>How do I as an event organizer prevent misuse?</a></br><a href='../faq/#check_in_ prevent_false_warnings' target='_self' rel='noopener noreferrer'>How do I prevent false warnings as an event participant?</a></br><a href='../faq/#check_in_privacy' target='_self' rel='noopener noreferrer'>Do I have to worry that the use of the event registration will make my whereabouts or personal data public?</a>",
+                            "<ul><li><a href='#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'> How does event registration work in the Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self' rel='noopener noreferrer'> How is the event registration technically implemented?</a></li><li><a href='#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>For which locations and events is event registration suitable?</a></li><li><a href='#check_in_misuse' target='_self' rel='noopener noreferrer'>How do I as an event organizer prevent misuse?</a></li><li><a href='#check_in_ prevent_false_warnings' target='_self' rel='noopener noreferrer'>How do I prevent false warnings as an event participant?</a></li><li><a href='#check_in_privacy' target='_self' rel='noopener noreferrer'>Do I have to worry that the use of the event registration will make my whereabouts or personal data public?</a></li></ul>",
                             "<b> Questions and answers about the QR code:</b>",
-                            "<a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Who generates the QR code?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the QR code also be set up and used for a private birthday party, providing this is legally possible?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the QR code be generated?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> Will there be a way to check in without a smartphone (dongle or similar)?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the QR code?</a></br><a href='../faq/#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan a QR code but do not have the CWA installed on my smartphone?</a>",
+                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Who generates the QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the QR code also be set up and used for a private birthday party, providing this is legally possible?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the QR code be generated?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Will there be a way to check in without a smartphone (dongle or similar)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan a QR code but do not have the CWA installed on my smartphone?</a></li></ul>",
                             "<b> Questions and answers about the warning:</b>",
-                            "<a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can the user see what the alert is based on, i.e. which scanned QR code caused the warning? </a></br><a href='../faq/#check_in_qr_warning' target='_self' rel='noopener noreferrer'> Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a>"
+                            "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Does everyone who scanned the same QR code get a warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can the user see what the alert is based on, i.e. which scanned QR code caused the warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a></li></ul>"
                         ]
                     },
                      {
@@ -112,7 +230,7 @@
                         "textblock": [
                             "The Corona-Warn-App (CWA) can use Bluetooth Low Energy (BLE) technology to determine a risk of infection if people have had contact up to approximately 1.5 meters apart for at least 10 minutes. However, according to current knowledge, aerosols spread far beyond this distance in poorly ventilated interiors <a href='https://www.ndr.de/nachrichten/info/Synapsen-Lueften-lueften-lueften,podcastsynapsen156.html' target='_blank' rel='noopener noreferrer'>(SARS-CoV-2 transmission by aerosols)</a>. Therefore, the risk of infection in these cases is not limited to a distance of 1.5 meters. The risk of getting infected indoors is many times higher than in outdoor areas.",
                             "In order to be able to recognize such constellations indoors, the CWA has been extended by event registration. The app also warns people who have been in a room with a SARS-CoV-2 infected person at the same time. Persons register for an event or place by means of the CWA without providing personal data. If a participant of the event or visitor to the place later registers as positively tested via the CWA, all other persons who participated in the same event or visited the same place at the same time can be warned pseudonymously.",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -126,7 +244,7 @@
                             "When an attendee tests positive for SARS-CoV-2, they can upload their check-ins along with their Diagnosis Keys to the CWA Server. The CWA Server publishes the relevant check-ins on CDN as warnings. Clients regularly download these warnings and match them against the local check-ins on the mobile device. If there is a match and the time an attendee spent at a venue overlaps with a warning for a sufficiently long time, the attendee receives a warning in CWA similar to how warnings are issued for BLE-based exposures.",
                             "For more information on the implementation of the check-in feature, see here: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md</a>.",
                             "<a href='https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/evreg-tam-block.png' target='_blank' rel='noopener'><img src='../../assets/img/faq/evreg-tam-block.png' alt='image' width='300'></a>",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -137,7 +255,7 @@
                             "The purpose of event registration is to identify risk contacts that are currently not detected with Bluetooth-Low-Energy Technology (BLE). The scope of application is therefore primarily geared to indoor use, where there is an increased risk of infection due to the distribution of aerosols in the room, even beyond the usual contact limit of 1.5 meters. Ideally, a separate QR code should be created for each room where visitors are staying. Each visitor then scans the QR code for the rooms in which she/he has stayed. This ensures that only those who have been exposed to an increased risk of infection are warned.",
                             "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.", 
                             "For outdoor events, the risk of infection is usually limited to a distance of 1.5 meters, which can already be detected with BLE technology, i.e. the usual use of the CWA. Basically, the event registration can be used here as well. However, it is not suitable for events in large outdoor areas, such as zoos.",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -147,7 +265,7 @@
                         "textblock": [
                             "A common form of misuse of the event registration can be carried out when people check in to an event or place even though they were not present. These individuals would then be warned by CWA if a person who duly checked in at the event would later be tested positive for SARS-CoV 2 and share their positive result via an app. In short, people are being warned even though there is no increased risk to them because they were not there at all. Therefore, some rules should be followed when dealing with your own QR codes:",
                             "<ul><li>Only share the QR code with your visitors</li><li>Don't share the QR code via social media or websites</li><li>If you print and display the QR code, then preferably in an area that is only accessible to your visitors</li><li>Renew the QR code regularly, ideally once a day (in the CWA, a QR code can be easily transferred)</li><li>When creating the QR code, provide a meaningful title and exact location. This is the only way to ensure that your visitors check in for the correct event.</li><li>Regularly ensure that the QR code is easy to read and not obscured (e.g., by covering or painting over it)</li></ul>",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -156,7 +274,7 @@
                         "active": true,
                         "textblock": [
                             "<ul><li>Check in only for events or places you visit. Do not scan QR codes distributed through digital media or websites</li><li>Check-in to see if the title and location of the event (shown in the app after scanning) match the event you attended</li><li>The more accurately you specify the time of your attendance, the more accurately you can be warned or warn other participants</li><li>Already when checking in, specify as accurately as possible when you want to be checked out automatically. If your stay is shortened or extended, you can also manually correct the time after the automatic check-out has already taken place</li><li>Don't share photographed QR codes via social media or other channels</li></ul>",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -166,7 +284,7 @@
                         "textblock": [
                             "No, because the essential characteristics of the CWA - decentralization and pseudonymity - are preserved with the event registration. No personal contact details are registered, or location data is transmitted. The data is processed decentrally and pseudonymously on the smartphones.",
                             "The QR code describes an event with attributes, a detailed address is not required. The QR code is also a random ID that is not processed in the CWA.",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -186,7 +304,7 @@
                             "Use only the CWA to scan the QR codes: A QR code can be scanned with the native camera app as well as with the CWA. However, in order to prevent misuse, we recommend the use of the CWA to scan the QR codes. Only the CWA can ensure that legitimate QR codes are processed.",
                             "<b>What happens if I scan a QR code but do not have the CWA installed on my smartphone?</b>",
                             "iOS users are directed to the App Store, where they can download the app. Android users are directed to a website from which they can access the Google Play Store to download the app.",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     },
                     {
@@ -197,12 +315,12 @@
                             "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",  
                             "The procedure is based on the existing CWA warning process: If an event participant or a visitor of a location has tested positive, he/she should share this result via the CWA. As a result, all other participants who were checked in at the same time will receive an immediate warning without having to burden the health authorities. Depending on the epidemiological situation, the warning is displayed in one of two versions: 'low risk' (green tile) or 'high risk' (red tile).",
                             "<b>How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)? </b>",
-                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about Covid-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
-                            "<b>Can the user see what the alert is based on, i.e. which scanned QR code caused the warning?</b>",
+                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about COVID-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
+                            "<b>Can the user see what the warning is based on, i.e. which scanned QR code caused the warning?</b>",
                             "Yes, this is displayed in the contact journal. This allows users to determine, for example, whether other family members that were also present but do not have the app (such as children) were also put at risk. ",
                             "<b>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</b>",
                             "After a red tile warning (high risk) you should quarantine and have a PCR test taken immediately. If the test result is positive, a report is sent to the health authority by the doctor/test center. It is recommended that you share the positive test result via the CWA. In addition, the information can be also be shared manually with the health department using the existing export function of the contact diary.",
-                            "<a href='../faq/#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
+                            "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
                     }
                 ]
@@ -216,7 +334,7 @@
                         "anchor": "update_iOS",
                         "active": true,
                         "textblock": [
-                            "This screen is shown on iPhones running an iOS version between iOS 13.5 and (including) iOS 13.6.1. On these iOS Versions, the necessary version 2 of the Exposure Notification Framework is not available. Therefore you need to update to iOS 13.7 or newer, to continue to use the Corona-Warn-App. More information can be found in <a href='../faq/#ios135' target='_blank' rel='noopener noreferrer'>this</a> FAQ entry."
+                            "This screen is shown on iPhones running an iOS version between iOS 13.5 and (including) iOS 13.6.1. On these iOS Versions, the necessary version 2 of the Exposure Notification Framework is not available. Therefore you need to update to iOS 13.7 or newer, to continue to use the Corona-Warn-App. More information can be found in <a href='#ios135' target='_blank' rel='noopener noreferrer'>this</a> FAQ entry."
                         ]
                     },
                     {
@@ -236,19 +354,6 @@
                         "active": true,
                         "textblock": [
                             "When you switch on the prioritized background activity on some Android devices, the battery optimization for the Corona-Warn-App is not turned off on OS level. This is a known limitation for a limited number of Android devices. To turn off the battery optimization accordingly, restart your device."
-                        ]
-                    },
-                    {
-                        "title": "[Apple/iOS]: Risk exposure can no longer be activated after updating to iOS 14",
-                        "anchor": "no_risk_update_ios14",
-                        "active": true,
-                        "textblock": [
-                            "After updating to iOS 14, some users report that risk exposure has been disabled and can no longer be turned on.",
-                            "This problem has already been reported to development and they are working on a solution. To be able to use the app to its full extent until the bug is fixed, please follow these steps:",
-                            "'Settings' > 'WiFi' > Switch 'WiFi' off.",
-                            "'Settings' > 'Exposure notifications' > 'Active region' (Corona-Warn-App) > 'Corona-Warn-App' > Switch 'Share exposure information' off and on again.",
-                            "'Settings' > 'WiFi' > Switch 'WiFi' on again.",
-                            "If the error still occurs although you have performed all steps, you have to reset and reinstall the application once. Your collected random ids will not be lost (<a href='#delete_random_ids'>see also here</a>). However, it will take 24 hours until the app resumes the data collected so."
                         ]
                     },
                     {
@@ -406,6 +511,19 @@
                             "The Error 13 is thrown by Apple's Exposure Notification Framework, which is used by the Corona-Warn-App. It will appear if more than 6 exposure checks happened in the last 24 hours. Apple does not allow more than 6 exposure checks within 24 hours. The error will disappear after 24 hours at the latest. You don't have to do anything.",
                             "Please do not remove and reinstall the Corona-Warn-App, because the error is caused by the underlying Apple Exposure Notification Framework which is independent from the app. Therefore, it will persist, even after reinstallation.",
                             "If the Error doesn't disappear after 24h, please open an issue on <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/' target='_blank' rel='noopener noreferrer'>GitHub</a>."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Error after resetting the app: Limit already reached",
+                        "anchor": "limit_reached",
+                        "active": true,
+                        "textblock": [
+                            "If you encounter the following error message after resetting the app, please wait until the next day before you open the app again.",
+                            "<b>'Limit already reached'</b>",
+                            "<b>'No more exposure checks possible today, as you have reached the maximum number of checks per day defined by your operating system. Please check your risk status again tomorrow.'</b>",
+                            "The error should have disappeared by then and your risk status should be displayed correctly.",
+                            "This error can occur if you reset the app between 20:00 and 00:00 and your device was constantly connected to Wi-Fi for the whole day. The Corona-Warn-App has a daily limit of 6 periodic checks. In this case, resetting the app triggers an unscheduled risk check that can exceed the daily limit. The functionality of the app is not affected by the failed check.",
+                            "If the error message is still present the next day, you can report this via a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>GitHub Issue 1459</a>."
                         ]
                     },
                     {
@@ -1193,6 +1311,19 @@
                 "id": "resolved",
                 "accordion": [
                     {
+                        "title": "[Apple/iOS]: Risk exposure can no longer be activated after updating to iOS 14",
+                        "anchor": "no_risk_update_ios14",
+                        "active": true,
+                        "textblock": [
+                            "After updating to iOS 14, some users report that risk exposure has been disabled and can no longer be turned on.",
+                            "This problem has already been reported to development and they are working on a solution. To be able to use the app to its full extent until the bug is fixed, please follow these steps:",
+                            "'Settings' > 'WiFi' > Switch 'WiFi' off.",
+                            "'Settings' > 'Exposure notifications' > 'Active region' (Corona-Warn-App) > 'Corona-Warn-App' > Switch 'Share exposure information' off and on again.",
+                            "'Settings' > 'WiFi' > Switch 'WiFi' on again.",
+                            "If the error still occurs although you have performed all steps, you have to reset and reinstall the application once. Your collected random ids will not be lost (<a href='#delete_random_ids'>see also here</a>). However, it will take 24 hours until the app resumes the data collected so."
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: CAUSE: 2001, trying to establish a secure connection to the server",
                         "anchor": "cause2001",
                         "active": true,
@@ -1277,6 +1408,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
+                            "<b>UPDATE 16.01.2021</b><br/>The error notification now reads \"Limit already reached\". Please see <a href='#limit_reached' target='_blank' rel='noopener'>the corresponding FAQ entry</a> for further information on this issue.",
                             "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona Warn App. We therefore ask you to update the app accordingly.<br/><b>IMPORTANT:</b><br/><b>After updating to version 1.5 it will take up to 24 hours until the error is gone.</b>",
                             "If you are still receiving the error after updating to 1.5 and waiting 24 hours, please report it in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a>.<hr/>",
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
@@ -1485,7 +1617,7 @@
                         "anchor": "ene",
                         "active": true,
                         "textblock": [
-                            "Exposure Notification Express (ENE) was additionally developed by Google and Apple to support health authorities worldwide who do not yet have an app and cannot or do not want to develop an app themselves. ENE simply provides standardized Covid-19 notifications, but does not digitize the process to the test result.",
+                            "Exposure Notification Express (ENE) was additionally developed by Google and Apple to support health authorities worldwide who do not yet have an app and cannot or do not want to develop an app themselves. ENE simply provides standardized COVID-19 notifications, but does not digitize the process to the test result.",
                             "Although risk encounters can be displayed, the diagnostic keys cannot be transmitted without further verification if the test result is positive. Nor can test results be transmitted with ENE.",
                             "For the German Corona-Warn-App (CWA), the introduction of Exposure Notification Express does not currently change anything. Regions that operate an app adapted to their own needs will continue to receive the encounter notifications from the Exposure Notification System directly and exclusively. In Germany, all exposure notifications are routed exclusively to the CWA. The high German standards for data protection apply. Risk assessment in Germany is carried out exclusively according to the epidemiological guidelines of the Robert Koch Institute (RKI). Users receive personal support from the hotlines if required.",
                             "According to current knowledge, the own app instead of the standard solution ENE offers countries the following advantages:",
