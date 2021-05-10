@@ -326,7 +326,7 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html"])
     .pipe(replace('[ios.latest-os-version]', '14.5.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.1.1'))
+    .pipe(replace('[ios.current-app-version]', '2.1.3'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
     .pipe(replace('[android.current-app-version]', '2.1.2'))
