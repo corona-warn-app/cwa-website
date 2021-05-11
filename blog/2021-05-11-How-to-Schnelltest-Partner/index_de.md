@@ -146,7 +146,7 @@ Unter Android:
 - Samsung Internet mit Anpassung: Nutzer\*innen sollten *Links in anderen Apps öffnen* in den Einstellungen auswählen
 - Firefox mit Anpassung: Nutzer\*innen sollten *Links in Apps öffnen* in den Einstellungen auswählen
 - Edge mit der vom Hersteller voreingestellten Konfiguration (default) 
-- Opera empfehlen wir nicht 
+- Opera sollte nicht verwendet werden
 
 Unter iOS:
 - Safari mit Anpassung: Nutzer\*innen sollten in den Smartphone-Einstellungen unter “Safari” und "Links öffnen" *Im neuen Tab* auswählen
