@@ -9,7 +9,8 @@ layout: blog
 
 *Currently, German version only.*
 
-Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
+
+Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer\*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
 
 <!-- overview -->
 
@@ -59,7 +60,7 @@ Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutz
 <center> <img src="./cwa-testergebnis.jpg" title="Testergebnis" style="align: center"></center>
 <br></br>
 
-## Ablauf testbuchen.de/No-Q (teilnehmende Apotheken)
+## Ablauf testbuchen.de / No-Q (teilnehmende Apotheken)
 
 #### Schritt 1: Termin buchen
 
@@ -81,8 +82,10 @@ Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutz
 <br></br>
 
 - Stimmen Sie den Datenschutzbestimmungen und der Einverständniserklärung zu und gehen Sie auf *Buchen* 
+- Nach der Durchführung des Tests erhalten Sie eine passwortgeschützte E-mail mit dem Testergebnis (pdf-Dokument)
 - Auf dem Dokument mit dem Testergebnis befindet sich auch der QR-Code, den Sie nun mit der Corona-Warn-App einscannen können, indem Sie auf der Startseite in Ihrer Corona-Warn-App unter "Test registrieren" auf *Nächste Schritte* gehen und anschließend auf *QR-Code scannen*.
 - Ihr Test ist dann registriert und das Testergebnis wird in der CoronaWarn-App bereitgestellt
+
 
 Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durchführen müssen, um den hohen Sicherheitsstandards zu genügen, die für die Einbindung in das Corona-Warn-App-System einzuhalten sind. Der Plattform Anbieter No-Q hat dazu die entsprechende technische Unterstützung seitens des Projektteams, um das in den nächsten Tagen abzuschließen. Sollte Ihnen der oben beschriebene Link also nicht angezeigt werden, gehört Ihre ausgewählte Teststelle zu denen, die noch nicht umgestellt haben. 
 
@@ -128,14 +131,14 @@ Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durc
 - Sie werden daraufhin automatisch in die **Corona-Warn-App** weitergeleitet. Dort können Sie Ihr Einverständnis geben, dass der Test übertragen werden soll. Im Anschluss ist der Test in der App registriert. 
 
 <br></br>
-<center> <img src="./cwa-einverständnis.jpg" title="Testergebnis" style="align: center"> <img src="./cwa-testergebnis-schwarz.jpg" title="Testergebnis" style="align: center">  </center>
+<center> <img src="./cwa-einverständnis.jpg" title="Testergebnis" style="align: center">  <img src="./cwa-testergebnis-schwarz.jpg" title="Testergebnis" style="align: center">  </center>
 <br></br>
 
 - Auf der **Startseite der App** wird Ihnen nun der Bereich „Schnelltest“ angezeigt. Über *Test anzeigen* gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird. 
 
 ## Stornierung eines Termins und Löschen des Tests
 
-Können Sie einen Termin nicht wahrnehmen, sollten Sie ihn stornieren. Für die dm drogerie-märkte und testbuchen.de/No-Q geht das über einen **Link in Ihrer Bestätigungs-E-Mail**. Bei EcoCare loggen Sie sich ein, gehen über das Menü in der oberen linken Ecke auf Dashboard und tippen Sie auf den Test, der Ihnen dort angezeigt wird. Dann wählen Sie *Bestellung stornieren*. In der Corona-Warn-App können Sie den Test entfernen, indem Sie unter "Schnelltest" *Test anzeigen* auswählen und dann *Test entfernen*.
+Können Sie einen Termin nicht wahrnehmen, sollten Sie ihn stornieren. Für die dm drogerie-märkte und testbuchen.de/No-Q geht das über einen **Link in Ihrer Bestätigungs-E-Mail**. Bei EcoCare loggen Sie sich ein, gehen über das Menü in der oberen linken Ecke auf *Dashboard* und wählen den Test, den Sie entfernen möchten. Dann wählen Sie *Bestellung stornieren*. In der Corona-Warn-App können Sie den Test entfernen, indem Sie unter "Schnelltest" *Test anzeigen* auswählen und dann *Test entfernen*.
 
 ## Registrierung über das Smartphone: Empfohlene Browser und Einstellungen
 
@@ -143,13 +146,13 @@ Damit die Übertragung des Testergebnisses in die Corona-Warn-App über die jewe
 
 Unter Android:
 - Chrome mit der vom Hersteller voreingestellten Konfiguration (default) 
-- Samsung Internet mit Anpassung: Nutzer*innen sollten Links in anderen Apps öffnen in den Einstellungen auswählen
-- Firefox mit Anpassung: Nutzer*innen sollten Links in Apps öffnen in den Einstellungen auswählen
+- Samsung Internet mit Anpassung: Nutzer\*innen sollten *Links in anderen Apps öffnen* in den Einstellungen auswählen
+- Firefox mit Anpassung: Nutzer\*innen sollten *Links in Apps öffnen* in den Einstellungen auswählen
 - Edge mit der vom Hersteller voreingestellten Konfiguration (default) 
 - Opera empfehlen wir nicht 
 
 Unter iOS:
-- Safari mit Anpassung: Nutze*innen sollten in den Smartphone-Einstellungen unter “Safari” und "Links öffnen" Im neuen Tab auswählen
+- Safari mit Anpassung: Nutzer\*innen sollten in den Smartphone-Einstellungen unter “Safari” und "Links öffnen" *Im neuen Tab* auswählen
 - Chrome mit der vom Hersteller voreingestellten Konfiguration (default)
 - Firefox mit der vom Hersteller voreingestellten Konfiguration (default)
 - Opera mit der vom Hersteller voreingestellten Konfiguration (default)
