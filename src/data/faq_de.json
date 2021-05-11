@@ -23,7 +23,7 @@
                             "Die technische Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei technischen Fragen rund um die Corona-Warn-App, zum Beispiel bei Problemen mit der Risiko-Ermittlung. Sie erreichen sie von Montag bis Samstag von 7 bis 22 Uhr (außer an bundesweiten Feiertagen), und sie ist für Sie innerhalb Deutschlands kostenfrei.",
                             "Die TAN-Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei der Eingabe der TAN, wenn Sie ein positives Testergebnis haben, und wenn Sie keine TAN oder kein Dokument mit QR-Code erhalten haben. Die TAN-Hotline ist 24 Stunden täglich an sieben Tagen in der Woche erreichbar. Der Anruf ist innerhalb Deutschlands kostenfrei.",
                             "Falls das Testergebnis nicht in der Corona-Warn-App abrufbar ist, sollte das zuständige Fachpersonal, Testcenter oder Gesundheitsamt kontaktiert werden, um das Testergebnis zu erhalten. <br/>Um Ihnen die Suche nach dem zuständigen Gesundheitsamt zu erleichtern, hat das RKI ein entsprechendes Tool zur Verfügung gestellt. Durch die Angabe der Postleitzahl oder des Wohnortes, wird sofort das zuständige Gesundheitsamt inklusive der Kontaktdaten angezeigt: <a href='https://tools.rki.de/PLZTool'>Robert Koch-Institut Tool: Gesundheitsamt nach Postleitzahl oder Ort</a>",
-                            "Weitere Hinweise zum QR-Code Verfahren finden Sie in diesem FAQ Eintrag: <a href='#qr_test'>Ich habe einen QR Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a>",
+                            "Weitere Hinweise zum QR-Code Verfahren finden Sie in diesem FAQ Eintrag: <a href='#qr_test'>Ich habe einen QR Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden</a>.",
                             "Die Webseiten der Bundesregierung bieten allgemeine Informationen und Videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
                             "Das Robert Koch-Institut stellt auch Informationen zu epidemiologischen Aspekten zur Verfügung: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html</a>.",
                             "Als Medienvertreter richten Sie bitte Ihre Anfragen an <a href='mailto:press@sap.com'>press@sap.com</a>.",
@@ -31,7 +31,7 @@
                         ]
                     },
                     {
-                        "title": "So erreichen Sie uns - Internationale Telefonnummern",
+                        "title": "So erreichen Sie uns",
                         "anchor": "international_phone_numbers",
                         "active": true,
                         "textblock": [
@@ -853,15 +853,6 @@
                         ]
                     },
                     {
-                        "title": "Kann ich das Ergebnis eines Corona-Schnelltests eingeben?",
-                        "anchor": "rapid_test",
-                        "active": true,
-                        "textblock": [
-                            "<b>Aktuell</b><br/>Es wird bald möglich das Testergebnis eines Corona-Schnelltests in die App einzutragen. Weitere Informationen finden Sie in <a href='../blog/2021-03-31-corona-warn-app-test-integration/' target='_blank' rel='noopener noreferrer'>diesem</a> Blog Post.<hr/>",
-                            "Nein, die Eingabe von Schnelltests wird von der Corona-Warn-App zurzeit nicht unterstützt."
-                        ]
-                    },
-                    {
                         "title": "Wie gebe ich mein negatives Testergebnis ein?",
                         "anchor": "test_negative",
                         "active": true,
@@ -981,15 +972,13 @@
                         "anchor": "encounter_count_19",
                         "active": true,
                         "textblock": [
-                            "Mit Einführung der Version 1.9 der Corona-Warn-App wird eine neue Version des Exposure Notification Frameworks (ENF) von Apple/Google verwendet, die Version 2.0. Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
-                            "Bisher wurde die in der App angezeigte Anzahl der Begegnungen nicht gefiltert. Das gilt bis zur Version 1.7.1. Das heißt: Auch Begegnungen mit sehr kurze Kontaktdauer (hier genügten wenige Sekunden) wurden gezählt und angezeigt. Aufgrund der hinterlegten Kriterien für die Risikoberechnung wurden diese allerdings nur als Begegnung mit geringem Risiko angezeigt.",
-                            "<b>Vereinfacht ausgedrückt:</b> Unter dem Exposure Notification Framework in Version 2 werden vom Betriebssystem Begegnungen erfasst, die ein geringeres Risiko als „niedriges Risiko“ (grün) aufweisen. Diese sind aus virologischer Sicht aber nicht relevant und werden von der Corona-Warn-App herausgefiltert.",
-                            "<b>Im Detail:</b>",
-                            "Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen gezählt werden sollen. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
+                            "Mit Einführung der Version 1.9 der Corona-Warn-App wurde eine neue Version des Exposure Notification Frameworks (ENF) von Apple/Google verwendet, die Version 2.0 (auch bekannt als ExposureWindow Modus von Google). Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
+                            "Bis zur Version 1.7.1 wurde die in der App angezeigte Anzahl der Begegnungen nicht gefiltert. Das heißt: Auch Begegnungen mit sehr kurzer Kontaktdauer (hier genügten wenige Sekunden) wurden gezählt und angezeigt. Aufgrund der hinterlegten Kriterien für die Risikoberechnung wurden diese allerdings nur als Begegnung mit geringem Risiko angezeigt.",
+                            "Mit der neuen Version der Schnittstelle kann nun präziser gesteuert werden, welche Begegnungen bei der Risikoberechnung berücksichtigt werden. Begegnungen mit sehr kurzer Kontaktdauer oder sehr geringer Signalstärke werden gefiltert, da das Ansteckungsrisiko dieser Begegnung nicht signifikant ist. Im Kontaktprotokoll des Betriebssystems werden diese Begegnungen zwar gezählt, werden jedoch nicht in die Risikoberechnung der App einbezogen.",
                             "Um als Begegnung berücksichtigt zu werden, müssen folgende Bedingungen innerhalb eines Zeitfensters von 30 Minuten erfüllt sein:",
-                            "<ul><li>Mindestens 10 Minuten (reduziert auf 5 Minuten am 23 Feb. 2021, siehe <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>Blogartikel</a>) innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
+                            "<ul><li>Mindestens 5 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 79dB gelegen haben</li>",
                             "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
-                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“.  "
+                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“."
                         ]
                     },
                     {
@@ -997,21 +986,20 @@
                         "anchor": "encounter_19_calc",
                         "active": true,
                         "textblock": [
-                            "Mit Einführung der Version 1.9 der App wird die neue Version 2.0 des Exposure Notification Frameworks von Apple/Google verwendet. Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
+                            "Mit Einführung der Version 1.9 der App wird die neue Version 2.0 des Exposure Notification Frameworks von Apple/Google verwendet (auch bekannt als ExposureWindow Modus von Google). Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
                             "Während in der ersten Version 1.0 der Schnittstelle Durchschnittswerte der Dämpfung für alle Begegnungen mit einem anderen Gerät im Laufe des Tages genutzt wurden, erfolgt die Betrachtung in der neuen Version 2.0 nun jeweils für 30-minütige Zeitfenster.",
                             "Jedes dieser Fenster muss bestimmte Kriterien erfüllen, um berücksichtigt zu werden:",
-                            "<ul><li>Mindestens 10 Minuten (reduziert auf 5 Minuten am 23 Feb. 2021, siehe <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>Blogartikel</a>) innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
+                            "<ul><li>Mindestens 5 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 79dB gelegen haben</li>",
                             "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
-                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
-                            "Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpfung:",
-                            "<ul><li>Zeiten mit einer Dämpfung <55dB werden zu 100 Prozent berechnet</li>",
-                            "<li>Zeiten mit einer Dämpfung >= 55dB und <63dB werden zu 50 Prozent berechnet</li></ul>",
-                            "Basierend auf dem Transmission Risk Level (III bis VIII) wird nun ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die gewichtete Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die gewichtete Kontaktzeit ergibt. Anhand dieser gewichteten Zeit wird nun entschieden, um was für eine Begegnung es sich bei diesem Zeitfenster handelt:",
-                            "<ul><li>Gewichtete Kontaktzeit <15 Minuten: Begegnung mit niedrigem Risiko (grün)</li>",
-                            "<li>Gewichtete Kontaktzeit >=15 Minuten: Begegnung mit erhöhtem Risiko (rot)</li></ul>",
-                            "Abschließend werden alle Zeitfenster eines Tages betrachtet (die gewichteten Kontaktzeiten) summiert. Ist deren Summe >= 15 Minuten, wird der Gesamtstatus rot, ansonsten ist dieser grün. Letztlich bedeutet das: Mehrere „grüne“ Begegnungen (Zeitfenster) können in Summe zu einem roten Status führen. Wer noch tiefer in die Materie einsteigen möchte: ",
-                            "Die aktualisierten Diagramme stehen auf Github: <a href='https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation'>https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation</a> zur Verfügung",
-                            "Ein Übersichtsdiagramm zeigt, wie jetzt gefiltert wird: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf'>https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf</a>"
+                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems werden diese Begegnungen zwar gezählt, werden jedoch nicht in die Risikoberechnung der App einbezogen.",
+                            "Sind die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpfung:",
+                            "<ul><li>Zeiten mit einer Dämpfung <63dB werden mit 80% gewichtet.</li>",
+                            "<li>Zeiten mit einer Dämpfung >=63dB und <73dB werden mit 100% gewichtet.</li>",
+                            "<li>Zeiten mit einer Dämpfung >= 73dB und <79dB werden mit 10% gewichtet.</li></ul>",
+                            "Basierend auf dem Transmission Risk Level (III bis VIII) wird nun ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die <i>gewichtete</i> Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die <i>normalisierte</i> Kontaktzeit ergibt. Abschließend werden alle normalisierten Kontaktzeiten aufsummiert. Letztlich bedeutet das: Mehrere kurze Begegnungen mit niedrigem Risiko können in Summe zu einem roten Status führen. Anhand dieser Summe der normalisierten Kontaktzeiten wird nun der endgültige Risikostatus bestimmt:",
+                            "<ul><li>Summe der Kontaktzeiten <5 Minuten: Nicht-Risiko-Begegnung(en) (grün)</li>",
+                            "<li>Summe der Kontaktzeiten >=5 Minuten und <9 Minuten: Begegnung(en) mit niedrigem Risiko (grün)</li>",
+                            "<li>Summe der Kontaktzeiten >=9 Minuten: Begegnung(en) mit hohem Risiko (rot)</li></ul>"
                         ]
                     },
                     {
@@ -1323,6 +1311,15 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                        "title": "Kann ich das Ergebnis eines Corona-Schnelltests eingeben?",
+                        "anchor": "rapid_test",
+                        "active": true,
+                        "textblock": [
+                            "<b>Aktuell</b><br/>Seit Version 2.1 ist es möglich das Testergebnis eines Corona-Schnelltests in die App einzutragen. Weitere Informationen finden Sie in <a href='../blog/2021-05-02-corona-warn-app-version-2-1/' target='_blank' rel='noopener noreferrer'>diesem</a> Blog Post und in den <a href='#rapid_antigen_test' target='_blank' rel='noopener noreferrer'>FAQs zum Schnelltest</a>.<hr/>",
+                            "Nein, die Eingabe von Schnelltests wird von der Corona-Warn-App zurzeit nicht unterstützt."
+                        ]
+                    },
                     {
                         "title": "[Apple/iOS]: Die Risikoermittlung lässt sich nach dem Update auf iOS 14 nicht mehr aktivieren",
                         "anchor": "no_risk_update_ios14",
