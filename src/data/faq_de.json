@@ -976,21 +976,20 @@
                         "anchor": "encounter_19_calc",
                         "active": true,
                         "textblock": [
-                            "Mit Einführung der Version 1.9 der App wird die neue Version 2.0 des Exposure Notification Frameworks von Apple/Google verwendet. Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
+                            "Mit Einführung der Version 1.9 der App wird die neue Version 2.0 des Exposure Notification Frameworks von Apple/Google verwendet (auch bekannt als ExposureWindow Modus von Google). Die Daten dieser Schnittstelle dienen als Grundlage zur Berechnung des individuellen Risikos.",
                             "Während in der ersten Version 1.0 der Schnittstelle Durchschnittswerte der Dämpfung für alle Begegnungen mit einem anderen Gerät im Laufe des Tages genutzt wurden, erfolgt die Betrachtung in der neuen Version 2.0 nun jeweils für 30-minütige Zeitfenster.",
                             "Jedes dieser Fenster muss bestimmte Kriterien erfüllen, um berücksichtigt zu werden:",
-                            "<ul><li>Mindestens 10 Minuten (reduziert auf 5 Minuten am 23 Feb. 2021, siehe <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>Blogartikel</a>) innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 73dB gelegen haben</li>",
+                            "<ul><li>Mindestens 5 Minuten innerhalb des 30-minütigen Fensters muss die Signaldämpfung unter 79dB gelegen haben</li>",
                             "<li>Das Transmission Risk Level muss mindestens III (3) betragen. Es wird beim Teilen der Diagnoseschlüssel pro Tag gemäß definierter Kriterien wie Symptomstatus und/oder Symptombeginn festgelegt</li></ul>",
-                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems hingegen erfolgt trotzdem eine Zählung. Dabei handelt es sich aber nicht um einen Fehler.",
-                            "Sind aber die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpfung:",
-                            "<ul><li>Zeiten mit einer Dämpfung <55dB werden zu 100 Prozent berechnet</li>",
-                            "<li>Zeiten mit einer Dämpfung >= 55dB und <63dB werden zu 50 Prozent berechnet</li></ul>",
-                            "Basierend auf dem Transmission Risk Level (III bis VIII) wird nun ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die gewichtete Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die gewichtete Kontaktzeit ergibt. Anhand dieser gewichteten Zeit wird nun entschieden, um was für eine Begegnung es sich bei diesem Zeitfenster handelt:",
-                            "<ul><li>Gewichtete Kontaktzeit <15 Minuten: Begegnung mit niedrigem Risiko (grün)</li>",
-                            "<li>Gewichtete Kontaktzeit >=15 Minuten: Begegnung mit erhöhtem Risiko (rot)</li></ul>",
-                            "Abschließend werden alle Zeitfenster eines Tages betrachtet (die gewichteten Kontaktzeiten) summiert. Ist deren Summe >= 15 Minuten, wird der Gesamtstatus rot, ansonsten ist dieser grün. Letztlich bedeutet das: Mehrere „grüne“ Begegnungen (Zeitfenster) können in Summe zu einem roten Status führen. Wer noch tiefer in die Materie einsteigen möchte: ",
-                            "Die aktualisierten Diagramme stehen auf Github: <a href='https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation'>https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation</a> zur Verfügung",
-                            "Ein Übersichtsdiagramm zeigt, wie jetzt gefiltert wird: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf'>https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf</a>"
+                            "Sind diese Kriterien <b>nicht</b> erfüllt, erfolgt <b>keine</b> Zählung innerhalb der App. Es handelt sich um eine „Nicht-Risiko-Begegnung“. Im Kontaktprotokoll des Betriebssystems werden diese Begegnungen zwar gezählt, werden jedoch nicht in die Risikoberechnung der App einbezogen.",
+                            "Sind die Bedingungen erfüllt, erfolgt eine Gewichtung der Kontaktzeiten, abhängig von der Signaldämpfung:",
+                            "<ul><li>Zeiten mit einer Dämpfung <63dB werden mit 80% gewichtet.</li>",
+                            "<li>Zeiten mit einer Dämpfung >=63dB und <73dB werden mit 100% gewichtet.</li>",
+                            "<li>Zeiten mit einer Dämpfung >= 73dB und <79dB werden mit 10% gewichtet.</li></ul>",
+                            "Basierend auf dem Transmission Risk Level (III bis VIII) wird nun ein Faktor zwischen 0,6 und 1,6 ermittelt. Mit diesem Faktor wird die <i>gewichtete</i> Zeit aus dem vorherigen Schritt multipliziert, woraus sich dann die <i>normalisierte</i> Kontaktzeit ergibt. Abschließend werden alle normalisierten Kontaktzeiten aufsummiert. Letztlich bedeutet das: Mehrere kurze Begegnungen mit niedrigem Risiko können in Summe zu einem roten Status führen. Anhand dieser Summe der normalisierten Kontaktzeiten wird nun der endgültige Risikostatus bestimmt:",
+                            "<ul><li>Summe der Kontaktzeiten <5 Minuten: Nicht-Risiko-Begegnung(en) (grün)</li>",
+                            "<li>Summe der Kontaktzeiten >=5 Minuten und <9 Minuten: Begegnung(en) mit niedrigem Risiko (grün)</li>",
+                            "<li>Summe der Kontaktzeiten >=9 Minuten: Begegnung(en) mit hohem Risiko (rot)</li></ul>"
                         ]
                     },
                     {
