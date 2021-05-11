@@ -79,9 +79,9 @@ Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutz
 <br></br>
 
 - Stimmen Sie den Datenschutzbestimmungen und der Einverständniserklärung zu und gehen Sie auf *Buchen* 
-- Nach der Durchführung des Tests erhalten Sie eine passwortgeschützte E-mail mit dem Testergebnis (pdf-Dokument)
+- Nach der Durchführung des Tests erhalten Sie eine passwortgeschützte E-Mail mit dem Testergebnis (pdf-Dokument)
 - Auf dem Dokument mit dem Testergebnis befindet sich auch der QR-Code, den Sie nun mit der Corona-Warn-App einscannen können, indem Sie auf der Startseite in Ihrer Corona-Warn-App unter "Test registrieren" auf *Nächste Schritte* gehen und anschließend auf *QR-Code scannen*.
-- Ihr Test ist dann registriert und das Testergebnis wird in der CoronaWarn-App bereitgestellt
+- Ihr Test ist dann registriert und das Testergebnis wird in der Corona-Warn-App bereitgestellt
 
 
 Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durchführen müssen, um den hohen Sicherheitsstandards zu genügen, die für die Einbindung in das Corona-Warn-App-System einzuhalten sind. Der Plattform Anbieter No-Q hat dazu die entsprechende technische Unterstützung seitens des Projektteams, um das in den nächsten Tagen abzuschließen. Sollte Ihnen der oben beschriebene Link also nicht angezeigt werden, gehört Ihre ausgewählte Teststelle zu denen, die noch nicht umgestellt haben. 
@@ -157,4 +157,4 @@ Unter iOS:
 
 
 
-Unternehmen, die interessiert sind ebenfalls als Partner Schnelltest-Ergebnisse in die Corona-Warn-App zu integrieren, können sich bei der Telekom und SAP per [E-Mail](mailto:registrierung.labore.pandemietest@t-systems.com) melden.
+Unternehmen, die **interessiert sind ebenfalls als Partner** Schnelltest-Ergebnisse in die Corona-Warn-App zu integrieren, können sich bei der Telekom und SAP per [E-Mail](mailto:registrierung.labore.pandemietest@t-systems.com) melden.
