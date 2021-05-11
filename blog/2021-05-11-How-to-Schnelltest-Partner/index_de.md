@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
+Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer\*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
 
 <!-- overview -->
 
@@ -135,7 +135,7 @@ Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durc
 
 ## Stornierung eines Termins und Löschen des Tests
 
-Können Sie einen Termin nicht wahrnehmen, sollten Sie ihn stornieren. Für die dm drogerie-märkte und testbuchen.de/No-Q geht das über einen **Link in Ihrer Bestätigungs-E-Mail**. Bei EcoCare loggen Sie sich ein, gehen über das Menü in der oberen linken Ecke auf Dashboard und tippen Sie auf den Test, der Ihnen dort angezeigt wird. Dann wählen Sie *Bestellung stornieren*. In der Corona-Warn-App können Sie den Test entfernen, indem Sie unter "Schnelltest" *Test anzeigen* auswählen und dann *Test entfernen*.
+Können Sie einen Termin nicht wahrnehmen, sollten Sie ihn stornieren. Für die dm drogerie-märkte und testbuchen.de/No-Q geht das über einen **Link in Ihrer Bestätigungs-E-Mail**. Bei EcoCare loggen Sie sich ein, gehen über das Menü in der oberen linken Ecke auf *Dashboard* und wählen den Test, den Sie entfernen möchten. Dann wählen Sie *Bestellung stornieren*. In der Corona-Warn-App können Sie den Test entfernen, indem Sie unter "Schnelltest" *Test anzeigen* auswählen und dann *Test entfernen*.
 
 ## Registrierung über das Smartphone: Empfohlene Browser und Einstellungen
 
@@ -143,13 +143,13 @@ Damit die Übertragung des Testergebnisses in die Corona-Warn-App über die jewe
 
 Unter Android:
 - Chrome mit der vom Hersteller voreingestellten Konfiguration (default) 
-- Samsung Internet mit Anpassung: Nutzer*innen sollten Links in anderen Apps öffnen in den Einstellungen auswählen
-- Firefox mit Anpassung: Nutzer*innen sollten Links in Apps öffnen in den Einstellungen auswählen
+- Samsung Internet mit Anpassung: Nutzer\*innen sollten *Links in anderen Apps öffnen* in den Einstellungen auswählen
+- Firefox mit Anpassung: Nutzer\*innen sollten *Links in Apps öffnen* in den Einstellungen auswählen
 - Edge mit der vom Hersteller voreingestellten Konfiguration (default) 
 - Opera empfehlen wir nicht 
 
 Unter iOS:
-- Safari mit Anpassung: Nutze*innen sollten in den Smartphone-Einstellungen unter “Safari” und "Links öffnen" Im neuen Tab auswählen
+- Safari mit Anpassung: Nutzer\*innen sollten in den Smartphone-Einstellungen unter “Safari” und "Links öffnen" *Im neuen Tab* auswählen
 - Chrome mit der vom Hersteller voreingestellten Konfiguration (default)
 - Firefox mit der vom Hersteller voreingestellten Konfiguration (default)
 - Opera mit der vom Hersteller voreingestellten Konfiguration (default)
