@@ -775,12 +775,22 @@
                         ]
                     },
                     {
-                        "title": "Was passiert, wenn ich Bluetooth und bei Android auch die Standort-Dienste ausschalte?",
-                        "anchor": "bluetooth_off",
+                        "title": "[Apple/iOS]: Was passiert, wenn ich Bluetooth ausschalte?",
+                        "anchor": "bluetooth_off_ios",
                         "active": true,
                         "textblock": [
-                            "Dann können Begegnungen mit den anderen Smartphones, die die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufalls-IDs ausgetauscht werden. Haben Sie deswegen bitte immer Bluetooth und bei Android auch die Standort-Dienste aktiviert, wenn Sie in Kontakt mit anderen Leuten sind, zum Beispiel, wenn Sie Gäste bekommen oder Sie unterwegs sind.",
-                            "Bei Android müssen die Standort-Dienste nur aktiviert sein, die Corona-Warn-App verwendet den Standort nicht. Für alle anderen Apps können Sie die Standortverwendung ausschalten, wenn Sie das möchten: siehe <a href='#android_location' target='_blank' rel='noopener'>Meldungen zur Aktivierung der Standortverwendung</a>."
+                            "Dann können Begegnungen mit den anderen Geräten, welche die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufalls-IDs ausgetauscht werden. Ebenso kann die App keine Überprüfung auf Risiko-Begegnungen durchgeführen. Haben Sie deswegen bitte zu jeder Zeit Bluetooth aktiviert, damit Sie bei einem hohen Risikostatus so schnell wie möglich gewarnt werden."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android]: Was passiert, wenn ich Bluetooth und die Standort-Dienste ausschalte?",
+                        "anchor": "bluetooth_off_android",
+                        "active": true,
+                        "textblock": [
+                            "Dann können Begegnungen mit den anderen Geräten, die die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufalls-IDs ausgetauscht werden. Bis einschließlich Android-Version 10 müssen die Standort-Dienste zwar aktiviert sein, die Corona-Warn-App verwendet die Standortinformationen jedoch nicht. Für alle anderen Apps können Sie die Standortverwendung ausschalten, wenn Sie das möchten. Mehr Informationen dazu finden Sie in diesem FAQ Eintrag:",
+                            "<a href='#android_location' target='_blank' rel='noopener'>[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>",
+                            "Ab Android-Version 11 können die Standort-Dienste ausgeschaltet werden, ohne dass die Funktionalität der App beeinträchtigt wird.",
+                            "Aktivieren Sie deswegen bitte immer Bluetooth (und bei Android bis zur Version 10 auch die Standort-Dienste), wenn Sie in Kontakt mit anderen Leuten sind, zum Beispiel, wenn Sie Gäste haben oder nach draußen gehen."
                         ]
                     },
                     {
