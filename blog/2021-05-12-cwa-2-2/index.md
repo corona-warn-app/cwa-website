@@ -31,7 +31,7 @@ After tapping on *Continue* to agree to the data protection and security, they c
 <center> <img src="./rapid-test-data.jpg" title="Rapid test profile data" style="align: center">  <img src="./rapid-test-profile.jpg" title="Rapid Test Profile" style="align: center">  <img src="./rapid-test-profile.PNG" title="Rapid Test Profile" style="align: center"></center>
 <br></br>
 
-Once created, the profile remains and can be shown again whenever it’s needed. Users can remove it by going to their rapid test profile in the Corona-Warn-App’s rapid test section and choosing *Remove Rapid Test Profile*.
+Once created, the profile remains and can be shown again whenever it’s needed. iOS users can remove it by going to their rapid test profile in the Corona-Warn-App’s rapid test section and choosing *Remove Rapid Test Profile*. Android users can remove a rapid test profile by going to their rapid test profile in the rapid test area of the Corona-Warn-App and selecting **"Remove"** in the 3-dot-icon.
 
 ### Users can create error reports in the Corona-Warn-App
 
