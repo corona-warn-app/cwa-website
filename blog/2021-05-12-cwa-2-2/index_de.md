@@ -11,11 +11,12 @@ Das Projektteam der Deutschen Telekom und SAP hat eine neue Version der Corona-W
 
 <!-- overview -->
 
-Mit Corona-Warn-App Version 2.2 erweitert das Projektteam den Schnelltest-Bereich. Nutzer\*innen können ein Schnelltest-Profil mit ihren persönlichen Daten in Form eines QR-Codes anlegen. An Teststellen teilnehmender Partner, die **kein eigenes Terminbuchungssystem** haben und an denen Nutzer*innen keinen Termin vorab vereinbaren müssen, wird dann lediglich der QR-Code in der App gescannt. So kann die **Registrierung vor Ort** beschleunigt werden.
+Mit Corona-Warn-App Version 2.2 erweitert das Projektteam den Schnelltest-Bereich. Nutzer\*innen können ein Schnelltest-Profil mit ihren persönlichen Daten in Form eines QR-Codes anlegen. An Teststellen teilnehmender Partner, die **kein eigenes Terminbuchungssystem** haben und an denen Nutzer\*innen keinen Termin vorab vereinbaren müssen, wird dann lediglich der QR-Code in der App gescannt. So kann die **Registrierung vor Ort** beschleunigt werden. 
+
+Diese Daten werden nur lokal auf dem jeweils eigenen Smartphone des Nutzers oder der Nutzerin gespeichert. Im Falle eines positiven Testergebnisses, sind die Mitarbeiter\*innen an den Teststellen verpflichtet, die Daten an das Gesundheitsamt weiterzuleiten.
 
 Die teilnehmenden Partner, bei denen Nutzer\*innen derzeit einen Schnelltest machen können, haben eigene Buchungssysteme. In Zukunft kann das Schnelltest-Profil aber insbesondere bei kleineren Partnern, die kein eigenes Buchungssystem haben werden, genutzt werden.
 
-Die Mitarbeiter\*innen an den Teststellen  benötigen die persönlichen Daten, um sie im Falle eines positiven Testergebnisses an das Gesundheitsamt weiterzuleiten. Aus diesem Grund ist vor Ort immer auch ein Abgleich mit dem Personalausweis nötig.
 
 ### Schnelltest-Profil anlegen - so gehts: 
 
