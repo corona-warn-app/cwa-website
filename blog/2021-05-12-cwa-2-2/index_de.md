@@ -45,7 +45,7 @@ Der technische Support prüft, ob es bereits eine Lösung für das Problem gibt.
 Um einen Fehlerbericht zu erstellen, können Nutzer\*innen in ihrer Corona-Warn-App nach unten scrollen und auf **„App-Informationen“** gehen. Ab Version 2.2 finden sie dort den Punkt **„Fehlerberichte“**. 
 
 <br></br>
-<center> <img src="./app-info-fehlerberichte.JPG" title="Fehlerbericht" style="align: center"></center>
+<center> <img src="./app-info-fehlerberichte.jpg" title="Fehlerbericht" style="align: center"></center>
 <br></br>
 
 Dort können Sie die **Fehleranalyse starten**. Anschließend müssen sie den **Fehler reproduzieren**. Erst, wenn der Fehler während der laufenden Fehleranalyse auftritt, können Sie die Analyse an das RKI senden.
