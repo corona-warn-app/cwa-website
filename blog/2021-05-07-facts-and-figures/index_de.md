@@ -7,19 +7,21 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2021-04-29-cwa-daten-fakten.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse. 
+In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](https://www.coronawarn.app/assets/documents/2021-05-07-cwa-daten-fakten.pdf)  zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse. 
 
 
 ### **Übersicht früherer Zahlen und Fakten** 
 
+* [06. Mai 2021](https://www.coronawarn.app/assets/documents/2021-05-07-cwa-daten-fakten.pdf)
 * [29. April 2021](https://www.coronawarn.app/assets/documents/2021-04-29-cwa-daten-fakten.pdf)
 * [22. April 2021](https://www.coronawarn.app/assets/documents/2021-04-22-cwa-daten-fakten.pdf)
-* [15. April 2021](https://www.coronawarn.app/assets/documents/2021-04-15-cwa-daten-fakten.pdf)
+
 
 
 
 <!-- overview -->
 
+* [15. April 2021](https://www.coronawarn.app/assets/documents/2021-04-15-cwa-daten-fakten.pdf)
 * [08. April 2021](https://www.coronawarn.app/assets/documents/2021-04-08-cwa-daten-fakten.pdf)
 * [01. April 2021](https://www.coronawarn.app/assets/documents/2021-04-01-cwa-daten-fakten.pdf)
 * [25. März 2021](https://www.coronawarn.app/assets/documents/2021-03-25-cwa-daten-fakten.pdf) 
