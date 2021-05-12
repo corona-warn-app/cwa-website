@@ -32,7 +32,7 @@ Dort können sie ihre persönlichen Daten, wie Name, Adresse und Telefonnummer, 
 <center> <img src="./profil-anlegen(2).jpg" title="Schnelltest-Profil Daten" style="align: center">  <img src="./profil-anlegen(3).jpg" title="Schnelltest-Profil" style="align: center">  <img src="./schnelltest-profil.jpg" title="Schnelltest-Profil" style="align: center"></center>
 <br></br>
 
-Einmal angelegt, bleibt das Profil bestehen und kann bei jedem Test wieder vorgezeigt werden. Nutzer\*innen können es wieder entfernen, indem sie im Schnelltest-Bereich der Corona-Warn-App auf ihr Schnelltest-Profil gehen und dort **„Schnelltest-Profil entfernen“** auswählen.
+Einmal angelegt, bleibt das Profil bestehen und kann bei jedem Test wieder vorgezeigt werden. Nutzer\*innen können es wieder entfernen, indem sie unter iOS im Schnelltest-Bereich der Corona-Warn-App auf ihr Schnelltest-Profil gehen und dort **„Schnelltest-Profil entfernen“** auswählen. Android-Nutzer\*innen können das Profil entfernen, indem sie im Schnelltest-Bereich der Corona-Warn-App auf ihr Schnelltest-Profil gehen und dort im 3-Punkte-Menü **"Entfernen"** auswählen.
 
 ### Nutzer\*innen können einen Fehlerbericht in der Corona-Warn-App erstellen
 
