@@ -104,6 +104,19 @@
                 "active": true,
                 "accordion": [
                     {
+                        "title": "Welche Partner beteiligen sich an der Schnelltestintegration? Bei welchen Partnern kann ich einen Schnelltest buchen?",
+                        "anchor": "rat_partner",
+                        "active": true,
+                        "textblock": [
+                            "Schnelltest-Termine können Sie bei folgenden Partnern vorab buchen:",
+                            "<ul><li><a href='https://meintest.brk.de' target='_blank' rel='noopener noreferrer'>Bayerisches Rote Kreuz</a></li><li><a href='https://corona-schnelltest-zentren.dm.de' target='_blank' rel='noopener noreferrer'>dm-drogerie markt</a></li><li><a href='https://buergertest.ecocare.center' target='_blank' rel='noopener noreferrer'> EcoCare (Kaufland und Lidl)</a></li><li><a href='https://testbuchen.de' target='_blank' rel='noopener noreferrer'>No-Q (teilnehmende Apotheken, Hausärzte und weitere Testzentren)</a></li></ul>",
+                            "Folgende Partner beteiligen sich auch an der Schnelltestintegration mit der Corona-Warn-App:",
+                            "<ul><li>Doctorbox</li><li>Huber Health Care</li></ul>",
+                            "Folgende Partner beteiligen sich auch an der Schnelltestintegration mit der Corona-Warn-App, bieten aber keine Schnelltests für die Allgemeinheit an:",
+                            "<ul><li>Das Bundeskanzleramt testet eigene Mitarbeiter*innen</li><li>Das Ministerium für Bildung und Kultur Saarland testet Lehrer*innen</li></ul>"
+                        ]
+                    },
+                    {
                         "title": "Warum werden jetzt Schnelltests integriert?",
                         "anchor": "rat_why_integrate",
                         "active": true,
@@ -214,6 +227,21 @@
                         "textblock": [
                             "Nein. Sowohl für Schnelltests, als auch für PCR-Tests gelten die gleichen Kriterien zur Risikoberechnung wie bisher. Falls Sie eine Risikowarnung erhalten, werden Sie in der App nicht sehen, ob diese durch das Teilen eines Schnelltest- oder eines PCR-Testergebnisses entstand. Die genauen Parameter zur Berechnung finden Sie im FAQ-Artikel <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>Wie erfolgt die Berechnung des Risikos mit der App (Version >=1.9)</a>."
                         ]
+                    },
+                    {
+                        "title": "Wozu dient ein Schnelltest-Profil?",
+                        "anchor": "rat_profile",
+                        "active": true,
+                        "textblock": [
+                            "Sie können ein Schnelltest-Profil mit Ihren persönlichen Daten in Form eines QR-Codes anlegen. An Teststellen teilnehmender Partner, an denen Sie keinen Termin vorab vereinbaren müssen und die kein eigenes Terminbuchungssystem haben, wird dann lediglich der QR-Code in der App gescannt und es ist keine weitere Registrierung mehr erforderlich. So kann die Registrierung vor Ort beschleunigt werden. Die Mitarbeiter*innen an den Teststellen benötigen Ihre persönlichen Daten, um sie im Falle eines positiven Testergebnisses an das Gesundheitsamt weiterzuleiten. Aus diesem Grund ist vor Ort immer auch ein Abgleich mit dem Personalausweis nötig. Einmal angelegt, bleibt das Profil bestehen und kann bei jedem Test wieder vorgezeigt werden."
+                        ]
+                    },
+                    {
+                        "title": "Wie kann ich ein Schnelltest-Profil anlegen, bearbeiten und entfernen?",
+                        "anchor": "rat_profile_create_edit_delete",
+                        "active": true,
+                        "textblock": [
+                            "<ul><li><b>Schnelltest-Profil anlegen:</b> Um ein Schnelltest-Profil anzulegen, können Sie auf der Startseite ihrer Corona-Warn-App unter „Test registrieren“ auf Nächste Schritte klicken. Dort finden Sie den Bereich „Schnelltest-Profil anlegen“. Dort können Sie Ihre persönlichen Daten, wie Name, Adresse und Telefonnummer, eintragen. Wenn alles eingetragen ist, können Sie die Daten speichern. Die Corona-Warn-App erstellt daraufhin einen QR-Code aus den Daten, den Sie an den Teststellen vorzeigen können.</li><li><b>Schnelltest-Profil entfernen (iOS):</b> Sie können ein Schnelltest-Profil wieder entfernen, indem Sie im Schnelltest-Bereich der Corona-Warn-App auf Ihr Schnelltest-Profil gehen und dort 'Schnelltest-Profil entfernen' auswählen.</li><li><b> Schnelltest-Profil entfernen (Android):</b> Sie können ein Schnelltest-Profil wieder entfernen, indem Sie im Schnelltest-Bereich der Corona-Warn-App auf Ihr Schnelltest-Profil gehen und dort im 3-Punkte-Menü 'Entfernen' auswählen.</li><li><b>Schnelltest-Profil bearbeiten:</b> Beabsichtigen Sie ein Schnelltest-Profil zu bearbeiten, können Sie es zunächst entfernen und danach ein neues Profil anlegen.</li></ul>"                        ]
                     }
                 ]
             },
@@ -471,7 +499,7 @@
                         "anchor": "no_risk_update_ios",
                         "active": true,
                         "textblock": [
-                            "Zuerst stellen Sie bitte sicher,  dass die neuesten Versionen von iOS und der App installiert sind. Die aktuellste iOS Version der Corona Warn App ist aktuell <b>[ios.current-app-version]</b>. Wenn eine niedrigere Version installiert ist, öffnen Sie den App Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
+                            "Zuerst stellen Sie bitte sicher,  dass die neuesten Versionen von iOS und der App installiert sind. Die aktuellste iOS Version der Corona-Warn-App ist aktuell <b>[ios.current-app-version]</b>. Wenn eine niedrigere Version installiert ist, öffnen Sie den App Store, um herauszufinden, ob es Updates für die Corona-Warn-App gibt. Installieren Sie dann das Update. Um weitere Probleme auszuschließen, kann nach dem Update auch ein Neustart des Geräts helfen. Öffnen Sie nach einem Neustart die Corona-Warn-App. Weitere Informationen zum Thema finden Sie <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in einem Blogpost auf LinkedIn</a>.",
                             "Stellen Sie sicher, dass die Risiko-Ermittlung aktiv ist.",
                             "Wenn das Problem mit der neuesten Version immer noch auftritt, öffnen Sie bitte regelmäßig die App, mindestens einmal pro Tag. Wir arbeiten an weiteren Updates zur Lösung entsprechender Probleme.",
                             "Bitte überprüfen Sie zusätzlich die folgenden Einstellungen Ihres Smartphones:",
@@ -599,7 +627,7 @@
                             "<b>AKTUELL 10. Februar 2021</b>",
                             "<b>iOS - Mindestvoraussetzungen für das Betriebssystem</b>",
                             "Für die Geräte iPhone 5s, iPhone 6 bzw. iPhone 6 Plus wird mindestens iOS Version 12.5 benötigt. Das iPhone SE (1. Generation), iPhone 6s, iPhone 6s Plus und neuere iOS-Geräte benötigen mindestens iOS Version 13.7. Diese Versionen des iOS-Betriebssystems beinhalten auch die benötigte Version v2 des Apple Exposure Notification Framework.",
-                            "Siehe auch <a href='#ios135' target='_blank' rel='noopener noreferrer'>[Apple/iOS]: Warum ist iOS 13.7 Mindestvoraussetzung?</a> und die Blog Artikel <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen</a> und <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App Version 1.12 mit zwei Neuerungen</a>.",
+                            "Siehe auch <a href='#ios135' target='_blank' rel='noopener noreferrer'>[Apple/iOS]: Warum ist iOS 13.7 Mindestvoraussetzung?</a> und die Blog Artikel <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona-Warn-App für iOS 12.5 verfügbar machen</a> und <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App Version 1.12 mit zwei Neuerungen</a>.",
                             "<b>Android - Mindestvoraussetzungen für das Betriebssystem</b>",
                             "Alle Android-Geräte benötigen mindestens Version 6 (Marshmallow) des Android-Betriebssystems. Zusätzlich muss das Gerät die Google Play-Dienste mit einer Mindestversion 1.5 des Google COVID-19-Benachrichtigungssystems installiert haben. Lesen Sie <a href='#ENF_version' target='_blank' rel='noopener noreferrer'>[Google/Android]: Welche Version der COVID-19-Benachrichtigungen habe ich?</a> um Informationen zu bekommen, wie man die installierte Version des COVID-19-Benachrichtigungssystems feststellt.<hr/>",
                             "<b>Vorheriger FAQ Eintrag</b>",
@@ -619,7 +647,7 @@
                             "Seit dem 5. Februar 2021 werden nur die Corona-Warn-App (CWA) Versionen 1.5.3 und höher unterstützt. Aus diesem Grund erhalten Nutzer mit älteren Versionen einen Hinweis, ihre App entsprechend zu aktualisieren. iOS Nutzer, die bisher beispielsweise iOS 13.5 und CWA Version 1.3 genutzt haben, müssen ihr iOS Betriebssystem nun zwingend auf mindestens iOS 13.7 aktualisieren, um die CWA weiterhin zu nutzen. Nur in diesem Fall kann eine technisch korrekte Funktion der App sichergestellt werden.",       
                             "<ul><li>Bitte führen Sie zunächst ein Update Ihrer iOS-Version durch. Auch ältere Smartphones, wie bspw. das iPhone SE, 6S oder 6S Plus unterstützen das neueste iOS Betriebssystem. Sie können Ihr iPhone somit mindestens auf iOS 13.7 aktualisieren. Aus Sicherheitsgründen sollten Sie Ihr iPhone immer aktuell halten, da Apple auch regelmäßig kleinere Sicherheitslücken mit den Updates behebt. Sie können dies auf Ihrem iPhone unter Einstellungen – Allgemein – Softwareupdate durchführen.</li><li>Im Anschluss aktualisieren Sie bitte die Corona-Warn-App. Die Corona-Warn-App muss zudem mindestens in der Version 1.5 installiert sein. Inzwischen ist bereits Version 1.12 verfügbar. Wir bitten Sie daher, Ihre Corona-Warn-App zu aktualisieren.</li> </ul>",
                             "Mehr Details zu den Systemvoraussetzungen finden Sie <a href='#minimum_requirements' target='_blank' rel='noopener noreferrer'>in diesem FAQ Eintrag.</a>",
-                            "Siehe auch die Blog Artikel <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen</a> und <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App Version 1.12 mit zwei Neuerungen</a>.",
+                            "Siehe auch die Blog Artikel <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telekom und SAP werden die Corona-Warn-App für iOS 12.5 verfügbar machen</a> und <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App Version 1.12 mit zwei Neuerungen</a>.",
                             "<hr/>",
                             "<b>Vorheriger FAQ Eintrag</b>",
                             "Apple hat die erforderliche Schnittstelle für Verfolgung von Begegnungen (Exposure Notification API) mit iOS 13.5 eingeführt, siehe <a href='https://support.apple.com/de-de/HT210393#135' target='_blank' rel='noopener noreferrer'>Informationen zu iOS 13-Updates</a>. Mit dem Release 1.9 (und dem Update auf <a href='../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'> Version 2 des Exposure Notification Frameworks</a>) der Corona-Warn-App wird nun iOS [ios.minimum-required-os-version] vorausgesetzt, da die Version 2 des Exposure Notification Frameworks mit dieser Version eingeführt wurde. Die unterstützten Gerätemodelle finden Sie unter anderem hier: <a href='https://support.apple.com/de-de/guide/iphone/iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Unterstützte iPhone-Modelle</a>. Leider bietet Apple keine Unterstützung mehr für Geräte an, die älter als 4-5 Jahre sind. An diesen Gegebenheiten können wir als App-Entwickler leider nichts ändern."
