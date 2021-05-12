@@ -488,6 +488,18 @@
                             "<ol><li>Öffnen Sie die Geräte-Einstellungen</li><li>Wählen Sie 'Sicherheit & Standort' -> 'Standort' -> 'Berechtigungen auf App-Ebene'</li></ol>",
                             "Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn Sie denken, dass diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
                         ]
+                    },
+                    {
+                        "title": "[Google/Android] Auf meinem Hauptbildschirm werde ich gewarnt, dass mein Gerät nicht oder nicht vollständig kompatibel ist. Was bedeutet das?",
+                        "anchor": "incompatibility_warning",
+                        "active": true,
+                        "textblock": [
+                            "Wenn Sie diese Warnmeldung sehen, ist Ihr Gerät nicht in der Lage, Zufalls-IDs an andere Geräte zu senden. Dies wird durch eine Einschränkung in der Kombination aus verwendeter Hardware und Software auf dem Gerät verursacht. Dadurch kann Bluetooth-Low-Energy im sogenannten „peripheral mode“ nicht von der Corona-Warn-App verwendet werden.",
+                            "Sollten Sie sich entscheiden, Kontakte im Fall einer Infektion zu warnen, wird diese Benachrichtigung nur Personen erreichen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren. Ihre eigene Risiko-Ermittlung ist <b>nicht betroffen</b>. Alle anderen Features der App sind ebenfalls nicht betroffen.",
+                            "Stellen Sie zunächst sicher, dass Sie die neuste Version des Betriebssystems Ihres Smartphones installiert haben. Wenn das Problem fortbesteht, wenden Sie sich bitte an Ihren Gerätehersteller.",
+                            "Falls Ihnen angezeigt wird, dass Ihr Gerät gänzlich inkompatibel ist, dann kann dies daran liegen, dass in Ihrem Gerät kein Bluetooth-Chip verbaut ist. Nur in diesem Fall können Sie keine Zufalls-IDs von anderen empfangen und die Risiko-Berechnung kann nur Orte und Events, bei denen Sie eingecheckt waren, berücksichtigen.",
+                            "<b>Die Funktionalitäten zum Einchecken, zum Abrufen von sowohl PCR- als auch Schnelltestergebnissen sowie das Kontakttagebuch funktionieren in jedem Fall trotz der Warnmeldung ohne Einschränkungen</b> und nur die Funktionen zum Nähe-basierten Austausch von Zufalls-IDs sind betroffen."
+                        ]
                     }
                 ]
             },
