@@ -13,13 +13,26 @@ In der neuesten Version der Corona-Warn-App (2.1) hat das Projektteam aus Deutsc
 
 <!-- overview -->
 
-Zum Start der Schnelltestintegration beteiligen sich acht Partner, darunter das **Bundeskanzleramt, das Bayerische Rote Kreuz, dm-drogerie markt, Doctorbox, EcoCare, die Healthcare Marke von Ecolog Deutschland GmbH (mit unter anderem Lidl), Huber Health Care, das Ministerium für Bildung und Kultur Saarland und testbuchen.de/No-Q**.  
+Zum Start der Schnelltestintegration beteiligen sich acht Partner, darunter das das **Bayerische Rote Kreuz, dm-drogerie markt, Doctorbox, EcoCare, die Healthcare Marke von Ecolog Deutschland GmbH (mit unter anderem Lidl), Huber Health Care und  testbuchen.de/No-Q**. Außerdem sind das **Bundeskanzleramt**, das seine Mitarbeiter\*innen testet, und das **Ministerium für Bildung und Kultur Saarland**, das den Lehrer\*innen Schnelltests ermöglicht, zum Start dabei.
 
-Seit Ankündigung der Integration Ende März sind außerdem **125 Anfragen** von Schnelltest-Betreibern aus unter anderem Testzentren und dem Einzelhandel eingegangen, die sich an der Integration beteiligen möchten.
+Seit Ankündigung der Integration Ende März sind außerdem **125 Anfragen** von Schnelltest-Betreibern aus unter anderem Testzentren und dem Einzelhandel eingegangen, die sich an der Integration beteiligen möchten. Interessierte Unternehmen können SAP und Telekom über [registrierung.labore.pandemietest@t-systems.com](mailto:registrierung.labore.pandemietest@t-systems.com) kontaktieren.
 
 ### Nutzer\*innen können ihre Mitmenschen noch schneller warnen
 
-Nutzer\*innen haben damit die Möglichkeit, sich bei den beteiligten Partnern von geschulten und autorisierten Mitarbeiter*innen auf COVID-19 testen zu lassen und das Ergebnis des Schnelltests per QR-Code zu erhalten. Ein negatives Testergebnis wird dann für **48 Stunden** in der App angezeigt. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen.
+Nutzer\*innen haben damit die Möglichkeit, sich bei vielen der beteiligten Partner von geschulten und autorisierten Mitarbeiter\*innen auf COVID-19 testen zu lassen und das Ergebnis des Schnelltests per QR-Code zu erhalten. **Schnelltest-Termine** können sie vorab buchen:
+
+- dm drogerie-märkte: [Schnelltest INOPAI (dm.de)](https://corona-schnelltest-zentren.dm.de/o/dm/login)
+
+- EcoCare (Lidl und Kaufland): [EcoCare - Bürgertest: EcoCare - Bürgertest](https://buergertest.ecocare.center/#c734)
+
+- testbuchen.de/No-Q (teilnehmende Apotheken, Hausärzte und weitere Testzentren): [Finde deinen Testtermin (testbuchen.de)](https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999)
+
+- Bayerisches Rotes Kreuz: [Mein Corona-Test | BRK](https://meintest.brk.de/)
+
+
+In den ersten Tagen nach Start der Integration kann es bei wenigen Partnern noch zu kleineren technischen Schluckaufs kommen. Insgesamt läuft die Integration aber zufriedenstellend und die Nutzer\*innen scheinen die Option bereits sehr gut anzunehmen.
+
+Nach dem Test kann ein negatives Testergebnis für **48 Stunden** in der App angezeigt werden. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen. 
 
 <br></br>
 <center><img src="./schnelltest-registrieren.png" title="Schnelltest Registrieren" style="align: center"> <img src="./schnelltest-anzeigen.png" title="Schnelltest Anzeigen" style="align: center"></center>
