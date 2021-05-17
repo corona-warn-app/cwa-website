@@ -82,7 +82,7 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 <br></br>
 
 - Stimmen Sie den Datenschutzbestimmungen und der Einverständniserklärung zu und gehen Sie auf *Buchen* 
-- Nach der Durchführung des Tests erhalten Sie eine E-Mail mit einem Link zur Seite mit dem Testergebnis.
+- Nach der Durchführung des Tests erhalten Sie eine E-Mail mit einem Link zur Seite mit Ihrem Testergebnis.
 - Auf dieser Seite befindet sich der QR-Code, den Sie nun mit der Corona-Warn-App einscannen können, indem Sie auf der Startseite in Ihrer Corona-Warn-App unter "Test registrieren" auf *Nächste Schritte* gehen und anschließend auf *QR-Code scannen*.
 - Ihr Test ist dann registriert und das Testergebnis wird in der Corona-Warn-App bereitgestellt
 
