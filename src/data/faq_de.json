@@ -48,13 +48,14 @@
                         ]
                     },
                     {
-                        "title": "Wie erstelle ich ein Fehler-Protokoll?",
+                        "title": "Wie erstelle ich ein Fehlerbericht?",
                         "anchor": "error_log",
                         "active": true,
                         "textblock": [
-                            "Mit Version 2.2 bietet die Corona-Warn-App eine Funktion zur technischen Problem-Analyse. Das Fehler-Protokoll soll den Entwicklern helfen, schneller eine Ursachen-Analyse zu ermöglichen und Fehler effizienter zu beseitigen.<br><b>Wichtig:</b> Melden Sie sich mit einem Problem bitte <b>zuerst</b> bei der Hotline (national: 0800 7540001 bzw. international: +49 30 498 75401), um zu prüfen, ob es ggf. schon eine Lösung dafür gibt. Ein Fehler-Protokoll wird nur benötigt, wenn das CWA-Team danach fragt.",
-                            "<ol><li>In einem solchen Fall öffnen Sie bitte ein Ticket auf GitHub und beschreiben Sie das Problem-Verhalten.</li><li>Starten Sie die Aufzeichnung in der CWA (---LINK oder Screenshot hier: Wie starte ich die Aufzeichnung?---)<br>- Versuchen Sie, das fehlerhafte Verhalten zu reproduzieren bzw. die Fehlermeldung zu erzeugen.<br>- Ist das gelungen, senden Sie den Fehlerbericht an den CWA-Server. Die Daten werden dabei anonymisiert und verschlüsselt. (Bei eigenem Interesse können Sie den Bericht auch lokal auf Ihrem Smartphone abspeichern.)<br>- Als Rückmeldung erhalten Sie eine eindeutige Kennung, die Sie auch in der Liste aller IDs finden <br>- Stoppen Sie die Fehleranalyse.</li><li>Aktualisieren Sie das GitHub-Ticket mit Ihrer eindeutigen Kennung vom Server, damit der aufgezeichnete Bericht Ihrem Ticket zugeordnet werden kann.</li></ol>",
-                            "Hinweise:<ul><li>Die Fehlerberichte werden nach 14 Tagen automatisch gelöscht.</li><li>Berichte, die unaufgefordert an den Server übertragen werden, können durch das CWA-Team nicht analysiert werden.</li><li>Für die Fehlerberichte gibt es keinen Rückkanal in die Corona-Warn-App. Das technische Team der CWA kann nur über GitHub zu einem Ticket kommunizieren.</li></ul>"
+                            "Mit Version 2.2 bietet die Corona-Warn-App (CWA) eine Funktion zur technischen Problem-Analyse. Fehlerberichte soll den Entwicklern helfen, schneller eine Ursachen-Analyse zu ermöglichen und Fehler effizienter zu beseitigen.<br><b>Wichtig:</b> Melden Sie sich mit einem Problem bitte <b>zuerst</b> bei der technischen Hotline (national: 0800 7540001 bzw. international: +49 30 498 75401), um zu prüfen, ob es ggf. schon eine Lösung dafür gibt. Ein Fehlerberichte wird nur benötigt, wenn das CWA-Team danach fragt.",
+                            "<ol><li>In dem Fall öffnen Sie bitte ein Issue auf GitHub und beschreiben Sie das Problem.</li><li>Starten Sie die Aufzeichnung in der CWA (<a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>siehe Blog-Artikel</a>).<br>- Versuchen Sie, das fehlerhafte Verhalten zu reproduzieren bzw. die Fehlermeldung zu erzeugen.<br>- Ist das gelungen, senden Sie den Fehlerbericht an den CWA-Server. Die Daten werden dabei anonymisiert und verschlüsselt. Bei Interesse können Sie den Bericht auch lokal auf Ihrem Smartphone abspeichern.<br>- Als Rückmeldung erhalten Sie eine eindeutige Kennung, die Sie auch in der Liste aller IDs finden <br>- Stoppen Sie die Fehleranalyse.</li><li>Aktualisieren Sie das GitHub-Issue mit Ihrer eindeutigen Kennung vom Server, damit der aufgezeichnete Bericht Ihrem Issue zugeordnet werden kann.</li></ol>",
+                            "Hinweise:<ul><li>Die Fehlerberichte werden nach 14 Tagen automatisch gelöscht.</li><li>Berichte, die unaufgefordert an den Server übertragen werden, können durch das CWA-Team nicht analysiert werden.</li><li>Für die Fehlerberichte gibt es keinen Rückkanal in die Corona-Warn-App. Das technische Team der CWA kann nur über GitHub zu einem Issue kommunizieren.</li></ul>",
+                            "Siehe auch den Blog-Artikel <a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App Version 2.2 ermöglicht die Erstellung von Schnelltest-Profil und Fehlerbericht</a>."
                         ]
                     }
                 ]
@@ -486,6 +487,19 @@
                             "<b>Besonderheit bei Android-Geräten</b>: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung auf dem Gerät allgemein aktiviert ist (Details siehe <a href='#android_location' target='_blank' rel='noopener'>Android: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>). Damit könnten auch andere Apps auf Ihrem Gerät die Standortdienste nutzen, was ein Grund für den erhöhten Stromverbrauch sein kann. Um dies zu umgehen, sollten Sie prüfen, welche Apps tatsächlich Ihren Standort nutzen:",
                             "<ol><li>Öffnen Sie die Geräte-Einstellungen</li><li>Wählen Sie 'Sicherheit & Standort' -> 'Standort' -> 'Berechtigungen auf App-Ebene'</li></ol>",
                             "Hier können Sie den installierten Apps die Berechtigung für den Standortzugriff entziehen, wenn Sie denken, dass diese nicht benötigt wird. Die Corona-Warn-App greift nicht auf Ihren Standort zu, deshalb ist sie nicht aufgeführt."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android] Auf meinem Hauptbildschirm werde ich gewarnt, dass mein Gerät nicht oder nicht vollständig kompatibel ist. Was bedeutet das?",
+                        "anchor": "incompatibility_warning",
+                        "active": true,
+                        "textblock": [
+                            "Wenn Sie diese Warnmeldung sehen, ist Ihr Gerät nicht in der Lage, Zufalls-IDs an andere Geräte zu senden. Dies wird durch eine Einschränkung in der Kombination aus verwendeter Hardware und Software auf dem Gerät verursacht. Dadurch kann Bluetooth-Low-Energy im sogenannten „peripheral mode“ nicht von der Corona-Warn-App verwendet werden.",
+                            "Sollten Sie sich entscheiden, Kontakte im Fall einer Infektion zu warnen, wird diese Benachrichtigung nur Personen erreichen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren. Ihre eigene Risiko-Ermittlung ist <b>nicht betroffen</b>. Alle anderen Features der App sind ebenfalls nicht betroffen.",
+                            "Stellen Sie zunächst sicher, dass Sie die neuste Version des Betriebssystems Ihres Smartphones installiert haben. Wenn das Problem fortbesteht, wenden Sie sich bitte an Ihren Gerätehersteller.",
+                            "Falls Ihnen angezeigt wird, dass Ihr Gerät gänzlich inkompatibel ist, dann kann dies daran liegen, dass in Ihrem Gerät kein Bluetooth-Chip verbaut ist. Nur in diesem Fall können Sie keine Zufalls-IDs von anderen empfangen und die Risiko-Berechnung kann nur Orte und Events, bei denen Sie eingecheckt waren, berücksichtigen.",
+                            "<b>Die Funktionalitäten zum Einchecken, zum Abrufen von sowohl PCR- als auch Schnelltestergebnissen sowie das Kontakttagebuch funktionieren in jedem Fall trotz der Warnmeldung ohne Einschränkungen</b> und nur die Funktionen zum Nähe-basierten Austausch von Zufalls-IDs sind betroffen.",
+                            "Bluetooth-Kompatibilitätsüberprüfungen und -Warnmeldungen wurden mit der Android Corona-Warn-App Version 2.2 eingeführt."
                         ]
                     }
                 ]
@@ -1007,7 +1021,7 @@
                         ]
                     },
                     {
-                        "title": "Bisher hat meine App eine oder mehrere Begegnungen mit niedrigem Risiko anzeigt - seit dem Update auf Version 1.9 der Corona-Warn App sind diese verschwunden bzw. ist die Zahl niedriger geworden",
+                        "title": "Bisher hat meine App eine oder mehrere Begegnungen mit niedrigem Risiko anzeigt - seit dem Update auf Version 1.9 der Corona-Warn-App sind diese verschwunden bzw. ist die Zahl niedriger geworden",
                         "anchor": "encounter_count_19",
                         "active": true,
                         "textblock": [
