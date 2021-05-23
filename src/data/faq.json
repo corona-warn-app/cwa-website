@@ -491,30 +491,29 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] A card on my Start Screen is notifying me that my device is only partially compatible. What does this mean?",
+                        "title": "[Google/Android] An “Incompatibility warning” card on my Start Screen is notifying me that my device is only partially compatible. What does this mean?",
                         "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
-                            "Since version 2.2, the Corona-Warn-App for Android contains a check which determines whether your device is fully capable of all Bluetooth-related features which the app needs to operate normally. If you are seeing this message, the operating system of your device is lacking a functionality that Corona-Warn-App normally uses.",
-                            "Due to this, your device is not able to <i>send</i> any random IDs via Bluetooth. However, you are still able to <i>receive</i> random IDs. Therefore, <b>your own risk assesment is not affected</b>.",
-                            "The only limitation which this incompatibility causes is that, in case you are infected and you decide to warn others, only users who were checked in to the same event or the same location, at the same time as you were, can be warned. All other features of the app are not affected.",
-                            "To resolve the problem, please ensure that you are using the latest version of the operating system available for your smartphone. If this doesn't help, please contact your device manufacturer.",
-                            "<b>Both Check-in and Contact Journal functionality, as well as retrieving PCR and rapid test results, is fully functional without restriction</b> and only proximity-based ID recording is affected.",
+                            "Since version 2.2, the Corona-Warn-App for Android checks whether your device is fully capable of all needed Bluetooth-related features. If you are seeing this message, the operating system of your device lacks the ability to <i>send</i> random IDs via Bluetooth. However, it is still able to <i>receive</i> random IDs. Therefore, <b>your own risk assesment is not affected</b>.",
+                            "The only limitation which this incompatibility causes is that it is not possible for you to warn contacts discovered via Bluetooth. However, users who were checked in to the same event or the same location, at the same time as you were, can still be warned. None of the other features are affected.",
+                            "To resolve the problem, please ensure that you are using the latest version of your smartphone's operating system. If this doesn't help, please <a href='https://support.google.com/android/answer/3094742?hl=en'>contact your device manufacturer</a>.",
+                            "<b>Both Check-in and Contact Journal functionality, as well as retrieving PCR and rapid test results, are fully functional without restriction</b> and only proximity-based ID recording is affected.",
                             "<hr/>",
                             "Technical explanation: Your hardware is capable of Bluetooth Low Energy, but your Bluetooth driver is missing a capability called “peripheral mode”. This can only be fixed by your device manufacturer through an update of your operating system. Because the capability is missing, the Corona-Warn-App cannot cause your device to periodically broadcast its own random IDs via Bluetooth."
                         ]
                     },
                     {
-                        "title": "[Google/Android] A card on my Start Screen is notifying me that my device is incompatible. What does this mean?",
+                        "title": "[Google/Android] An “Incompatibility warning” card on my Start Screen is indicating that my device is not compatible with Exposure Notifications att all. What does this mean?",
                         "anchor": "full_incompat",
                         "active": true,
                         "textblock": [
-                            "This does not usually happen on unmodified end-user devices. Therefore, this section doesn't apply to the vast majority of devices. Usually, your device would only be <a href='#part_incompat' target='_blank' rel='noopener'>partially incompatible</a>.",
-                            "In version 2.2, a check regarding Bluetooth capabilities of your device was added to the Corona-Warn-App for Android. If a warning message that links to this FAQ entry is shown, your device is not capable of Bluetooth Low Energy and can therefore neither send nor receive random IDs.",
+                            "This does not usually happen on unmodified end-user devices. Therefore, this section doesn't apply to the vast majority of devices. Most devices are, at most, <a href='#part_incompat' target='_blank' rel='noopener'>partially incompatible</a>.",
+                            "Since version 2.2, the Corona-Warn-App for Android checks the Bluetooth capabilities of your device. If a warning message that links to this FAQ entry is shown, your device is not capable of Bluetooth Low Energy and can therefore neither send nor receive random IDs.",
                             "Your risk assesment will only be based on events and locations you were checked in to.",
                             "Possible reasons for this message are:<ul><li>Your device does not contain the hardware that is required to use Bluetooth Low Energy.</li><li>Your device does not contain the software required to use the Bluetooth Low Energy capabilities of your hardware.</li><li>You are running the app in the Android Emulator.</li></ul>",
-                            "When in doubt, please ensure that you are using the latest version of the operating system available for your smartphone. For further assistance, please contact your device manufacturer.",
-                            "<b>Both Check-in and Contact Journal functionality, as well as retrieving PCR and rapid test results, is fully functional without restriction</b> and only proximity-based ID recording is affected."
+                            "When in doubt, please ensure that you are using the latest version of your smartphone's operating system. For further assistance, please <a href='https://support.google.com/android/answer/3094742?hl=en'>contact your device manufacturer</a>.",
+                            "<b>Both Check-in and Contact Journal functionality, as well as retrieving PCR and rapid test results, are fully functional without restriction</b> and only proximity-based ID recording is affected."
                         ]
                     }
                 ]
