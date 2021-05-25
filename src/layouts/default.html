@@ -30,5 +30,14 @@
     {{> footer language=global.lang.de}}
     {{/if}}
     <script src="{{root}}assets/js/app.js"></script>
+    {{#if lightbox}}
+    <script src="{{root}}assets/js/lightbox.min.js"></script>
+    {{/if}}
+    {{#if store-redirect}}
+    <script src="{{root}}assets/js/static/store-redirect.js"></script>
+    {{/if}}
+    {{#if eventregistration_js}}
+    <script src="{{root}}assets/js/eventregistration.js"></script>
+    {{/if}}
   </body>
 </html>

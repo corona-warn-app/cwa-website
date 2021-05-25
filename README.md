@@ -28,7 +28,7 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test it locally.
+You need the LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test the deployment of the website locally.
 
 ### Getting started
 
@@ -41,7 +41,7 @@ npm run build
 
 After a successful build, you'll have a new folder `public` in the repository's base directory. It contains the generated files for the complete website.
 
-To test the generated content, simply use a local web server such as http-server by executing the command
+To test the generated content, simply execute the command
 
 ```bash
 npm start
@@ -83,7 +83,7 @@ The following channels are available for discussions, feedback, and support requ
 
 | Type                     | Channel                                                |
 | ------------------------ | ------------------------------------------------------ |
-| **General discussion, issues, bugs**   | <a href="https://github.com/corona-warn-app/cwa-website/issues/new/choose" title="General Discussion"><img src="https://img.shields.io/github/issues/corona-warn-app/cwa-website/question.svg?style=flat-square"></a> </a>   |
+| **General discussion, issues, bugs**   | <a href="https://github.com/corona-warn-app/cwa-website/issues/new/choose" title="General Discussion"><img src="https://img.shields.io/github/issues/corona-warn-app/cwa-website?style=flat-square"></a> </a>   |
 | **Other requests**    | <a href="mailto:corona-warn-app.opensource@sap.com" title="Email CWA Team"><img src="https://img.shields.io/badge/email-CWA%20team-green?logo=mail.ru&style=flat-square&logoColor=white"></a> |
 
 ## How to contribute
@@ -91,6 +91,10 @@ The following channels are available for discussions, feedback, and support requ
 The German government has asked SAP and Deutsche Telekom AG to develop the Corona-Warn-App for Germany as open source software. Deutsche Telekom is providing the network and mobile technology and will operate and run the backend for the app in a safe, scalable and stable manner. SAP is responsible for the app development, its framework and the underlying platform. Therefore, development teams of SAP and Deutsche Telekom are contributing to this project. At the same time our commitment to open source means that we are enabling -in fact encouraging- all interested parties to contribute and become part of its developer community.
 
 For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](./CONTRIBUTING.md). By participating in this project, you agree to abide by its [Code of Conduct](./CODE_OF_CONDUCT.md) at all times.
+
+## Repositories
+
+A list of all public repositories from the Corona-Warn-App can be found [here](https://github.com/corona-warn-app/cwa-documentation/blob/master/README.md#repositories).
 
 ## Licensing
 
