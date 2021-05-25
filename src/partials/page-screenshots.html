@@ -10,19 +10,21 @@
                 </div>
             </div>
 
-            <select name="archived-screenshots">
-                {{#if lang_de}}
-                    <option value="">{{global.screenshots.archive-placeholder.de}}</option>
-                    {{#each global.screenshots.archive-dropdown}}
-                        <option value="/de{{link}}" >{{version}}</option>
-                    {{/each}}
-                {{else}}
-                <option value="">{{global.screenshots.archive-placeholder.en}}</option>
-                    {{#each global.screenshots.archive-dropdown}}
-                        <option value="/en{{link}}">{{version}}</option>
-                    {{/each}}
-                {{/if}}
-            </select>
+            <div class="d-flex justify-content-sm-end position-relative mb-3 mb-sm-0">
+                <select name="archived-screenshots" class="form-select form-select-sm w-auto position-sm-absolute">
+                    {{#if lang_de}}
+                        <option value="">{{global.screenshots.archive-placeholder.de}}</option>
+                        {{#each global.screenshots.archive-dropdown}}
+                            <option value="/de{{link}}" >{{version}}</option>
+                        {{/each}}
+                    {{else}}
+                    <option value="">{{global.screenshots.archive-placeholder.en}}</option>
+                        {{#each global.screenshots.archive-dropdown}}
+                            <option value="/en{{link}}">{{version}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
+            </div>
             
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
