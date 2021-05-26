@@ -18,7 +18,7 @@
                             <option value="/de{{link}}" >{{version}}</option>
                         {{/each}}
                     {{else}}
-                    <option value="">{{global.screenshots.archive-placeholder.en}}</option>
+                        <option value="">{{global.screenshots.archive-placeholder.en}}</option>
                         {{#each global.screenshots.archive-dropdown}}
                             <option value="/en{{link}}">{{version}}</option>
                         {{/each}}
@@ -49,6 +49,25 @@
                                     </a>
                                 </div>
                             {{/each}}
+                            <p>
+                                <a href="#{{{anchor}}}">
+                                    {{#if ../lang_de}}
+                                        {{../global.screenshots.anchorText.de}}
+                                    {{else}}
+                                        {{../global.screenshots.anchorText.en}}
+                                    {{/if}}
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#top">
+                                    {{#if ../lang_de}}
+                                        {{../global.screenshots.toTopText.de}}
+                                    {{else}}
+                                        {{../global.screenshots.toTopText.en}}
+                                    {{/if}}
+                                </a>
+                            </p>
+                            <hr/>
                         </div>
                     {{/each}}
                 </div>
@@ -68,6 +87,13 @@
                                 </a>
                             </div>
                         {{/each}}
+                        <p>
+                            <a href="" class="screenshots-anchor">Link</a>
+                        </p>
+                        <p>
+                            <a href="#top">To the top</a>
+                        </p>
+                        <hr/>
                     </div>
                 {{/each}}
                 </div>
