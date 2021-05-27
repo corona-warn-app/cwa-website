@@ -20,6 +20,9 @@
                 <p class="btn-block text-left">
                     {{> button-component
                     button=page-contents.section-main.content.button
+                    icon='github'}}
+                    {{> button-component
+                    button=page-contents.section-main.content.button2
                     icon='github'}}<br>
                     {{#each page-contents.section-main.content.links}}
                     {{> button-link-component button=. direction='down'}}
