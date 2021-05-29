@@ -102,6 +102,31 @@
                 ]
             },
             {
+                "title": "Vaccination Certificate",
+                "id": "vaccination_certificate",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "Questions and answers about the vaccination certificate",
+                        "anchor": "vaccination_certificate_index",
+                        "active": true,
+                        "textblock": [
+                            "<ul>",
+                            "<li><a href='#vaccination_certificate_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone?</a></li><li><a href='#vaccination_certificate_multiple_scan_possible' target='_self' rel='noopener noreferrer'>How can I transfer the vaccination certificate when changing device?</a></li><li><a href='#vaccination_certificate_multiple_scan_possible' target='_self' rel='noopener noreferrer'>What do I do if I lose my phone?</a></li><li><a href='#vaccination_certificate_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Will the vaccination certificate be included in my backup?</a></li><li><a href='#vaccination_certificate_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps?</a></li>",
+                            "</ul>"
+                        ]
+                    },
+                    {
+                        "title": "Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone? How can I transfer the vaccination certificate when changing device? What do I do if I lose my phone? Will the vaccination certificate be included in my backup? Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps?",
+                        "anchor": "vaccination_certificate_multiple_scan_possible",
+                        "active": true,
+                        "textblock": [
+                            "There is no limit to how often you scan the 2D barcode (QR code) of your vaccination certificates. You can add and manage the vaccination certificates on multiple devices, on a new device, on a device you have reset, and even in several apps. Therefore, a backup is not required."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Rapid Antigen Test",
                 "id": "rapid_antigen_test",
                 "active": true,
