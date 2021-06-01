@@ -7,17 +7,18 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-04-29-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
+In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-05-27-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
 
 
 
 ### **Overview of previous facts and figures** 
 (German versions only)
 
+* [May 27, 2021](https://www.coronawarn.app/assets/documents/2021-05-27-cwa-daten-fakten.pdf)
+* [May 20, 2021](https://www.coronawarn.app/assets/documents/2021-05-20-cwa-daten-fakten.pdf)
+* [May 12, 2021](https://www.coronawarn.app/assets/documents/2021-05-12-cwa-daten-fakten.pdf)
 
-* [April 29, 2021](https://www.coronawarn.app/assets/documents/2021-04-29-cwa-daten-fakten.pdf)
-* [April 22, 2021](https://www.coronawarn.app/assets/documents/2021-04-22-cwa-daten-fakten.pdf)
-* [April 15, 2021](https://www.coronawarn.app/assets/documents/2021-04-15-cwa-daten-fakten.pdf)
+
 
 
 
@@ -25,8 +26,11 @@ In this post, you can find [regularly updated facts and figures](https://www.cor
 
 <!-- overview -->
 
+* [May 06, 2021](https://www.coronawarn.app/assets/documents/2021-05-07-cwa-daten-fakten.pdf)
+* [April 29, 2021](https://www.coronawarn.app/assets/documents/2021-04-29-cwa-daten-fakten.pdf)
+* [April 22, 2021](https://www.coronawarn.app/assets/documents/2021-04-22-cwa-daten-fakten.pdf)
+* [April 15, 2021](https://www.coronawarn.app/assets/documents/2021-04-15-cwa-daten-fakten.pdf)
 * [April 8, 2021](https://www.coronawarn.app/assets/documents/2021-04-08-cwa-daten-fakten.pdf)
-
 * [April 1, 2021](https://www.coronawarn.app/assets/documents/2021-04-01-cwa-daten-fakten.pdf)
 * [March 25, 2021](https://www.coronawarn.app/assets/documents/2021-03-25-cwa-daten-fakten.pdf)
 * [March 18, 2021](https://www.coronawarn.app/assets/documents/2021-03-18-cwa-daten-fakten.pdf)

@@ -13,7 +13,7 @@
             <div class="form-group row mb-2">
               <label for="locationtype" class="col-12 col-form-label">{{page-contents.section-main.form.fields.locationtype}}</label>
               <div class="col-12">
-                <select id="locationtype" class="form-control" required>
+                <select id="locationtype" class="form-select form-control" required>
                   <option value="">{{page-contents.section-main.form.locationtypes_initial}}</option>
                   <optgroup label="{{page-contents.section-main.form.locationtypes_header_place}}">
                     {{#each page-contents.section-main.form.locationtypes_places}}
@@ -63,7 +63,7 @@
               <div class="col-12">
                 <div class="row">
                   <div class="col-5">
-                    <select id="defaultcheckinlength-hours" class="form-control">
+                    <select id="defaultcheckinlength-hours" class="form-select form-control">
                       <option value="0">00</option>
                       <option value="1">01</option>
                       <option value="2" selected>02</option>
@@ -94,7 +94,7 @@
                     <span class="time-sep">:</span>
                   </div>
                   <div class="col-5">
-                    <select id="defaultcheckinlength-minutes" class="form-control">
+                    <select id="defaultcheckinlength-minutes" class="form-select form-control">
                       <option>00</option>
                       <option>15</option>
                       <option>30</option>

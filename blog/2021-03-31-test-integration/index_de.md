@@ -17,7 +17,7 @@ Mit Schnelltest-Warnungen in der Corona-Warn-App können Bundesbürger\*innen ab
 
 SAP und Deutsche Telekom entwickeln die Schnelltest-Funktion im Auftrag der Bundesregierung. Die Unternehmen führen dazu bereits konkrete Gespräche mit Partnern, die solche Tests durchführen oder entsprechende Angebote planen.
 
-In der ersten Phase wollen sich **folgende Partner** an der Umsetzung der Schnelltest-Funktion in der Corona-Warn-App beteiligen: BUDNI, Deutscher Apothekerverband (DAV), dm-drogerie markt, DOCTORBOX, GALERIA Karstadt Kaufhof. Weitere sollen folgen. Interessierten Unternehmen bieten die Entwicklungspartner SAP und Telekom Kontakt über [corona-warn-app.opensource@sap.com](mailto:corona-warn-app.opensource@sap.com)
+In der ersten Phase wollen sich **folgende Partner** an der Umsetzung der Schnelltest-Funktion in der Corona-Warn-App beteiligen: BUDNI, Deutscher Apothekerverband (DAV), dm-drogerie markt, DOCTORBOX, GALERIA Karstadt Kaufhof. Weitere sollen folgen. Interessierten Unternehmen bieten die Entwicklungspartner SAP und Telekom Kontakt über [registrierung.labore.pandemietest@t-systems.com](mailto:registrierung.labore.pandemietest@t-systems.com)
 
 Ein Web-Portal bindet Schnelltest-Partner künftig an die Corona-Warn-App an. So sollen Ergebnisse von Schnelltests darüber umgehend an die App übermittelt werden. Voraussetzung ist, dass der Test nach dem Vier-Augen-Prinzip von geschulten und **autorisierten Mitarbeiter\*innen** durchgeführt wird. 
 
