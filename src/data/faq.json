@@ -491,7 +491,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen is notifying me that my device is only partially compatible. What does this mean?",
+                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen indicates that my device is only partially compatible. What does this mean?",
                         "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
@@ -504,16 +504,17 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] An “Incompatibility warning” card on my Start Screen is indicating that my device is not compatible with Exposure Notifications at all. What does this mean?",
+                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen indicates that my device is not compatible with Exposure Notifications at all. What does this mean?",
                         "anchor": "full_incompat",
                         "active": true,
                         "textblock": [
-                            "This does not usually happen on unmodified end-user devices. Therefore, this section doesn't apply to the vast majority of devices. Most devices are, at most, <a href='#part_incompat' target='_blank' rel='noopener'>partially incompatible</a>.",
-                            "Since version 2.2, the Corona-Warn-App for Android checks the Bluetooth capabilities of your device. If a warning message that links to this FAQ entry is shown, your device is not capable of Bluetooth Low Energy and can therefore neither send nor receive random IDs.",
-                            "Your risk assessment will only be based on events and locations you were checked in to.",
+                            "Since version 2.2, the Corona-Warn-App for Android checks whether your device supports all necessary Bluetooth features. If you are seeing this message, your device does not support the Bluetooth functionality needed for sending and receiving random IDs. Your risk assessment will therefore only be based on events and locations where you checked in.",
+                            "The Check-In functionality, the retrieval of PCR and rapid test results as well as the contact journal featue are not affected and can be used normally.",
                             "Possible reasons for this message are:<ul><li>Your device does not contain the hardware that is required to use Bluetooth Low Energy.</li><li>Your device does not contain the software required to use the Bluetooth Low Energy capabilities of your hardware.</li><li>You are running the app in the Android Emulator.</li></ul>",
-                            "When in doubt, please ensure that you are using the latest version of your smartphone's operating system. For further assistance, please <a href='https://support.google.com/android/answer/3094742?hl=en'>contact your device manufacturer</a>.",
-                            "<b>Both Check-in and Contact Journal functionality, as well as retrieving PCR and rapid test results, are fully functional without restriction</b> and only proximity-based ID recording is affected."
+                            "To resolve the problem, please update to the latest version of your smartphone's operating system. If this doesn't help, please <a href='https://support.google.com/android/answer/3094742?hl=en'>contact your device manufacturer</a>.",
+                            "<hr/>",
+                            "<b>Technical explanation</b>",
+                            "The Corona-Warn-App needs the Bluetooth Low Energy technology for the distribution of random IDs. However, this technology is not available on your device due to missing hardware or software support. Without this capability, the Corona-Warn-App can neither initiate your device to periodically broadcast its own random IDs via Bluetooth nor receive random IDs from other devices."
                         ]
                     }
                 ]
