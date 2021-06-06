@@ -493,16 +493,16 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] Eine Karte mit einer „Inkompatibilitätswarnung” auf meiner Startseite benachrichtigt mich, dass mein Gerät nur teilweise kompatibel ist. Was bedeutet das?",
+                        "title": "[Google/Android] Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nur teilweise kompatibel ist. Was bedeutet das?",
                         "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
-                            "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Nachricht sehen, kann das Betriebssystem Ihres Geräts keine Zufalls-IDs per Bluetooth <i>versenden</i>, allerdings jedoch <i>empfangen</i>. Deswegen <b>ist Ihre eigene Risiko-Ermittlung nicht betroffen</b>.",
-                            "Dadurch wird nur die Einschränkung verursacht, dass Sie Ihre Bluetooth-Kontakte nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, können trotzdem gewarnt werden. Keine der anderen Funktionen der App sind betroffen.",
-                            "Um das Problem zu beheben, stellen Sie bitte sicher, dass Sie die neuste Version des Betriebssystems Ihres Geräts verwenden. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
-                            "<b>Die Funktionalitäten zum Einchecken, zum Abrufen von sowohl PCR- als auch Schnelltestergebnissen sowie das Kontakttagebuch funktionieren trotz der Warnmeldung ohne Einschränkungen</b> und nur die Funktion zur nähebasierten Aufzeichnung von Zufalls-IDs ist betroffen.",
+                            "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Nachricht sehen, kann das Betriebssystem Ihres Geräts keine Zufalls-IDs per Bluetooth <i>versenden</i>, allerdings jedoch <i>empfangen</i>. <b>Ihre eigene Risiko-Ermittlung ist daher nicht betroffen</b>.",
+                            "Die einzige dadurch verursachte Einschränkung ist, dass Sie Ihre Bluetooth-Kontakte beim Teilen Ihres positiven Testergebnisses nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, werden jedoch weiterhin gewarnt. <b>Die Check-In-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuch sind nicht von der Inkompatibilität betroffen und können normal genutzt werden</b>.",
+                            "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Geräts. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
                             "<hr/>",
-                            "Technische Erklärung: Ihre Hardware unterstützt Bluetooth Low Energy, aber Ihrem Bluetooth-Treiber fehlt eine Funktion namens „peripheral mode”. Dies kann nur von Ihrem Gerätehersteller durch ein Systemupdate behoben werden. Weil diese Funktion nicht verfügbar ist, kann die Corona-Warn-App Ihr Gerät nicht periodisch eigene Zufalls-IDs aussenden lassen."
+                            "<b>Technische Erklärung</b>",
+                            "Ihre Bluetooth-Hardware in Ihrem Gerät unterstützt zwar die für die Verteilung der Zufalls-IDs notwendige Technologie Bluetooth Low Energy, jedoch fehlt im Bluetooth-Treiber Ihres Betriebssystems eine Funktion namens „peripheral mode”. Ohne diese Funktion kann die Corona-Warn-App Ihr Gerät nicht periodisch eigene Zufalls-IDs aussenden lassen. Dies kann nur von Ihrem Gerätehersteller durch ein Softwareupdate behoben werden."
                         ]
                     },
                     {
