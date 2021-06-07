@@ -7,16 +7,16 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-05-27-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
+In this post, you can find [regularly updated facts and figures](https://www.coronawarn.app/assets/documents/2021-06-03-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
 
 
 
 ### **Overview of previous facts and figures** 
 (German versions only)
 
+* [June 3, 2021](https://www.coronawarn.app/assets/documents/2021-06-03-cwa-daten-fakten.pdf)
 * [May 27, 2021](https://www.coronawarn.app/assets/documents/2021-05-27-cwa-daten-fakten.pdf)
 * [May 20, 2021](https://www.coronawarn.app/assets/documents/2021-05-20-cwa-daten-fakten.pdf)
-* [May 12, 2021](https://www.coronawarn.app/assets/documents/2021-05-12-cwa-daten-fakten.pdf)
 
 
 
@@ -26,6 +26,7 @@ In this post, you can find [regularly updated facts and figures](https://www.cor
 
 <!-- overview -->
 
+* [May 12, 2021](https://www.coronawarn.app/assets/documents/2021-05-12-cwa-daten-fakten.pdf)
 * [May 06, 2021](https://www.coronawarn.app/assets/documents/2021-05-07-cwa-daten-fakten.pdf)
 * [April 29, 2021](https://www.coronawarn.app/assets/documents/2021-04-29-cwa-daten-fakten.pdf)
 * [April 22, 2021](https://www.coronawarn.app/assets/documents/2021-04-22-cwa-daten-fakten.pdf)
