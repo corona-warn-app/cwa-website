@@ -50,7 +50,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 
   <div class="blog-entry">
     ${headline}
-    <div class="sub-title"><span class="text">${getAuthors(blog.author)} on ${blog.dateFormatted}</span></div>
+    <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}</span></div>
     ${content}
     ${button}
   </div>
