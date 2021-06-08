@@ -49,6 +49,14 @@ npm start
 
 It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
+If you want to build the website without optimizations, you can do so by running
+
+```bash
+npm run start-fast
+```
+
+This will disable image compression in exchange for faster build times.
+
 ### Changing Things
 
 Manuals for the most common use cases of updating website content are available in the [docs folder](./docs/).
