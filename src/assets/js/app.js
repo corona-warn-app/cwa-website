@@ -240,6 +240,11 @@ $(document).ready(function(){
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
       });
 
+    // Screenshots screen: redirect to selected option's value after changing version in dropdown
+    $('select[name="archived-screenshots"]').on("change", function(e) {
+        window.location.href = e.target.value;
+    });
+
     //   Add feature for tag auto-navigation with hash in the URL
     const scrollTo = (hash) => {
         location.hash = hash;
