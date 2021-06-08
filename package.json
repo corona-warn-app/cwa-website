@@ -4,6 +4,7 @@
   "description": "Corona Warn App website coronawarn.app",
   "main": "gulpfile.js",
   "scripts": {
+    "start-fast": "gulp --skip-compression",
     "start": "gulp",
     "build": "gulp build --production",
     "cypress:open": "cypress open",

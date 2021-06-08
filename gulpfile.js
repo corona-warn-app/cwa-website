@@ -24,6 +24,9 @@ const $ = plugins();
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
 
+// Check for --skip-compression flag
+const SKIP_COMPRESSION = yargs.argv.skipCompression;
+
 // Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
 
@@ -204,7 +207,9 @@ function images_minify() {
 function images_webp() {
   return gulp
     .src('src/assets/img/**/*')
-    .pipe(webp())
+    .pipe(
+        $.if(!SKIP_COMPRESSION, webp())
+    )
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
@@ -326,10 +331,10 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html"])
     .pipe(replace('[ios.latest-os-version]', '14.6'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.2.1'))
+    .pipe(replace('[ios.current-app-version]', '2.3.2'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.2.1'))
+    .pipe(replace('[android.current-app-version]', '2.3.2'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
