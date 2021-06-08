@@ -24,6 +24,9 @@ const $ = plugins();
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
 
+// Check for --skip-compression flag
+const SKIP_COMPRESSION = yargs.argv.skipCompression;
+
 // Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
 
@@ -204,7 +207,9 @@ function images_minify() {
 function images_webp() {
   return gulp
     .src('src/assets/img/**/*')
-    .pipe(webp())
+    .pipe(
+        $.if(!SKIP_COMPRESSION, webp())
+    )
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
