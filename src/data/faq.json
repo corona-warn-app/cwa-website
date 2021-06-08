@@ -59,13 +59,28 @@
                             "Notes:<ul><li>The error reports are automatically deleted after 14 days</li><li>Error reports that are transmitted to the server without request by the technical support cannot be analyzed and processed</li><li>There is no direct feedback channel for the error reports in the Corona-Warn-App. Technical support can only communicate with you via one of the above mentioned channels</li></ul>",
                             "For more info as well as screenshots, see the blog article <a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 2.2 enables creation of a rapid test profile and error reports</a>"
                         ]
+                    },
+                    {
+                        "title": "Where can I get tested?",
+                        "anchor": "where_can_i_get_tested",
+                        "active": true,
+                        "textblock": [
+                            "<b>Rapid antigen test sites</b> connected to the Corona-Warn-App are offered by the following partners:",
+                            "<ul><li>Appointments can be booked in advance via their websites:",
+                            "<ul><li><a href='https://meintest.brk.de' target='_blank' rel='noopener noreferrer'>Bavarian Red Cross</a></li><li><a href='https://corona-schnelltest-zentren.dm.de' target='_blank' rel='noopener noreferrer'>dm-drogerie markt</a></li><li><a href='https://buergertest.ecocare.center' target='_blank' rel='noopener noreferrer'> EcoCare (Kaufland und Lidl)</a></li><li><a href='https://testbuchen.de' target='_blank' rel='noopener noreferrer'>No-Q (participating pharmacies, family doctors and other test centers)</a></li></ul>",
+                            "</li><li>Without central website for booking appointments:",
+                            "<ul><li>Doctorbox</li><li>Huber Health Care</li></ul>",
+                            "</li><li>Appointments only for their own employees:",
+                            "<ul><li>The Federal Chancellery tests its own employees</li><li>Saarland's Ministry of Education and Culture tests teachers</li></ul>",
+                            "</li></ul><hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).", 
+                            "Another list of test sites from the Github community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
+                        ]
                     }
                 ]
             },
             {
                 "title": "News",
                 "id": "news",
-                "active": true,
                 "accordion": [
                     {
                         "title": "Information about the security vulnerability already fixed by Google in the Exposure Notification Framework",
@@ -102,21 +117,163 @@
                 ]
             },
             {
+                "title": "Vaccination Cert.",
+                "id": "vac_cert",
+                "active": true,
+                "accordion": [
+                    {
+                        "title": "Questions and answers about the vaccination certificate",
+                        "anchor": "vac_cert_index",
+                        "active": true,
+                        "textblock": [
+                            "<ul>",
+                            "<li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>How can I transfer the vaccination certificate when changing device?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>What do I do if I lose my phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Will the vaccination certificate be included in my backup?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps?</a></li>",
+                            "</ul>"
+                        ]
+                    },
+                    {
+                        "title": "What is the digital certificate of vaccination?",
+                        "anchor": "vac_cert_what",
+                        "active": true,
+                        "textblock": [
+                            "Starting with version 2.3 of the Corona-Warn-App (CWA), you can add your digital vaccination certificate to the CWA and thus securely and digitally prove your Corona vaccination status via QR code. The CWA indicates the complete vaccination protection 14 days after the last required vaccination. The digital vaccination certificate is an additional way to document vaccinations. Thereby you are able to digitally store information such as vaccination time and vaccine in a personalized manner on your smartphones. The use of digital certificate of vaccination in the CWA is voluntary. You can also prove your Corona vaccination in a different way."
+                        ]
+                    },
+                    {
+                        "title": "Why is there a digital proof of vaccination?",
+                        "anchor": "vac_cert_why",
+                        "active": true,
+                        "textblock": [
+                            "At the beginning of the year, the European Council decided to launch an interoperable and standardized proof of vaccination for medical purposes. Germany is now quickly implementing this European decision in order to be able to provide all citizens who wish to do so with a digital proof of vaccination. In the meantime, the European Commission has also presented a draft regulation regulating an EU-wide recognition framework for (digital) certificates for vaccinations, tests and for persons with COVID-19 recovered status in order to facilitate the free movement of travelers. The EU's Digital COVID Certificate forms the legal framework for the member states' solutions."
+                        ]
+                    },
+                    {
+                        "title": "Who can obtain an digital proof of vaccination? How do I get a vaccination certificate? If I already have full vaccination protection, how can I transfer the status to the Corona-Warn-App afterwards?",
+                        "anchor": "vac_cert_who",
+                        "active": true,
+                        "textblock": [
+                            "All persons who are entitled to a vaccination may also have a digital proof of vaccination available in addition to the paper-based vaccination certificate." ,
+                            "If necessary, you can obtain a Corona vaccination certificate from the doctor's office or vaccination center where the vaccination was carried out. Simply ask on site. However, vaccination centers and medical practices are not obliged to issue vaccination certificates." ,
+                            "Various ways are being explored to create digital vaccination certificates for Corona vaccinations afterwards. In principle, the subsequent issuance should take place where one has been vaccinated. If the appropriate contact details are available in the vaccination centers, the QR codes should be sent automatically by mail as far as possible. In addition, doctors and pharmacists could subsequently provide proof of vaccination."
+                        ]
+                    },
+                    {
+                        "title": "Can I use a complete vaccination status in the app as a travel permission?",
+                        "anchor": "vac_cert_privileges_travel",
+                        "active": true,
+                        "textblock": [
+                            "For example, whether you are allowed to travel with completed vaccination protection, depends on the regulations of the respective country.",
+                            "Among other things, you can use this   <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>tool</a> in order to plan your journey within the EU."
+                        ]
+                    },
+                    {
+                        "title": "How does digital proof of vaccination work?",
+                        "anchor": "vac_cert_how",
+                        "active": true,
+                        "textblock": [
+                            "The digital proof of vaccination is generated in the doctor's pratice or in a vaccination center. After entering or transferring the data, a vaccination certificate token (QR code) will be created for you, which you can scan directly with the Corona-Warn-App (CWA) or can be handed to you on a paper printout and later scanned with the CWA.  You can then manage your digital vaccination certificates on your smartphone."
+                        ]
+                    },
+                    {
+                        "title": "Can I show the QR code without an internet connection?",
+                        "anchor": "vac_cert_internet",
+                        "active": true,
+                        "textblock": [
+                            "Yes. As soon as the QR code is displayed in the Corona-Warn-App, you can show it at any time without being connected to the internet."
+                        ]
+                    },
+                    {
+                        "title": "Am I obliged to use the digital certificate of vaccination in the Corona-Warn-App? Will there still be the yellow paper-based vaccination booklet? Can I continue to use my yellow vaccination booklet? What about people who don't own a smartphone?",
+                        "anchor": "vac_cert_voluntary",
+                        "active": true,
+                        "textblock": [
+                            "The digital proof of vaccination via the Corona-Warn-App is a completely voluntary and complementary offer. If you do not have a digital certificate of vaccination or have lost it, the proof of vaccination via the well-known 'yellow booklet' (yellow vaccination passport) is still possible and valid. You can also prove Corona vaccinations with the printed Corona vaccination certificate for full vaccination."                        ]
+                    },
+                    {
+                        "title": "How is the proof of vaccination verified?",
+                        "anchor": "vac_cert_verification",
+                        "active": true,
+                        "textblock": [
+                            "The vaccination certificate (QR code) is used digitally via the CovPass-App or the Corona-Warn-App (CWA) or alternatively as a machine-readable print. The vaccination certificate contains only information about the vaccination status, the name of the vaccinated person, and the date of birth. For service providers who want to check the vaccination status, there will be a verification app to check the vaccination certificate. This allows the vaccination status to be scanned in a similar way to a barcode of a flight or train ticket. Alternatively, proof with the paper-based vaccination document is possible."
+                        ]
+                    },
+                    {
+                        "title": "Why has no joint EU-wide project been called out for proposal for a certificate?",
+                        "anchor": "vac_cert_eu",
+                        "active": true,
+                        "textblock": [
+                            "A joint EU call for proposals would have taken too much time and would have been difficult to implement due to the different vaccination information systems in the Member States. The EU approach is about regulating a recognition framework. Any cross-border pilots could be accompanied by the EU Commission. When implementing the Digital Proof of Vaccination in Germany, the EU requirements have been taken into account from the outset."
+                        ]
+                    },
+                    {
+                        "title": "Does my vaccination status affect the calculation of the risk? Does the calculation of the risk change if a vaccinated person has become infected, and then warns other users?",                        
+                        "anchor": "vac_cert_risk_assesment",
+                        "active": true,
+                        "textblock": [
+                            "Risk calculation and vaccination certificates are independent features of the app. The risk calculation does not take into account whether you are vaccinated against COVID-19. The calculation of the risk also does not change if a vaccinated person has become infected, and then warns other users."
+                        ]
+                    },
+                    {
+                        "title": "How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?",
+                        "anchor": "vac_cert_red_warning",
+                        "active": true,
+                        "textblock": [
+                            "Recommendation: If a vaccinated person receives a high risk warning, no quarantine is necessary initially, as long as no symptoms appear. If symptoms do occur, you should get tested immediately and go into immediate quarantine."
+                        ]
+                    },
+                    {
+                        "title": "Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone? How can I transfer the vaccination certificate when changing device? What do I do if I lose my phone? Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps? Will the vaccination certificate be included in my backup?",
+                        "anchor": "vac_cert_multiple_scan_possible",
+                        "active": true,
+                        "textblock": [
+                            "There is no limit to how often you can scan the QR code of your vaccination certificates. By scanning the QR code of your certificate you can add and manage the vaccination certificates: <ul><li>on multiple devices, e.g. on your private and business phone </li><li>on a new device, when changing device</li><li> in several apps, e.g. the Corona-Warn-App and the CovPass-App</li><li> on a device you have reset. The certificate is not included in the backup. </li></ul>"
+                        ]
+                    },
+                    {
+                        "title": "Can I save the vaccination certificates of relatives, such as children, in the Corona-Warn-App?",
+                        "anchor": "vac_cert_relatives",
+                        "active": true,
+                        "textblock": [
+                            "With the Corona-Warn-App, you can only scan and add vaccination certificates from one person. It is not possible to add your own and additionally, for example, that of your child or partner.<br>With the CovPass-App, the digital vaccination certificates of children or partners can be stored together on a smartphone."
+                        ]
+                    },
+                    {
+                        "title": "What data is displayed when checking the QR code?",
+                        "anchor": "vac_cert_privacy_data_shown",
+                        "active": true,
+                        "textblock": [
+                            "The QR code is displayed in the Corona-Warn-App. After scanning the QR code with the CovPassCheck-App, only the most necessary information can be seen: vaccination status, last name, first name and date of birth of the vaccinated person."
+                        ]
+                    },
+                    {
+                        "title": "Where is my personal data of the digital certificate of vaccination stored? Is there a central vaccination register?",
+                        "anchor": "vac_cert_privacy_data_decentral",
+                        "active": true,
+                        "textblock": [
+                            "No, there is no central vaccination register. When the Corona vaccination certificate is created, your data will be collected once by the vaccination site and transmitted to the RKI for signing. The data will be deleted there immediately. When you add the Corona vaccination certificate in the app, your personal information is only stored locally (decentralized) on your smartphone. You can decide for yourself if and when to delete this data on your device.",
+                            "All digital vaccination certificates are created only temporarily in the vaccination logging system and then deleted. Permanent storage is only realized decentral on the users' smartphones."
+                        ]
+                    },
+                    {
+                        "title": "How is abuse being prevented?",
+                        "anchor": "vac_cert_misuse_prevent",
+                        "active": true,
+                        "textblock": [
+                            "The QR code for digital certificate of vaccination may only be issued by authorized persons in vaccination centers, medical practices and hospitals. When reviewing digital vaccination certificates, a photo ID may be presented as appropriate. The digital proof of vaccination is cryptographically protected against changes."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Rapid Antigen Test",
                 "id": "rapid_antigen_test",
-                "active": true,
                 "accordion": [
                     {
                         "title": "Which partners participate in the rapid test integration? Which partners can I book a rapid antigen test with?",
                         "anchor": "rat_partner",
                         "active": true,
                         "textblock": [
-                            "Rapid antigen test appointments can be booked in advance with the following partners (German websites):",
-                            "<ul><li><a href='https://meintest.brk.de' target='_blank' rel='noopener noreferrer'>Bavarian Red Cross</a></li><li><a href='https://corona-schnelltest-zentren.dm.de' target='_blank' rel='noopener noreferrer'>dm-drugstore market</a></li><li><a href='https://buergertest.ecocare.center' target='_blank' rel='noopener noreferrer'> EcoCare (Kaufland and Lidl)</a></li><li><a href='https://testbuchen.de' target='_blank' rel='noopener noreferrer'>No-Q (participating pharmacies, family doctors and other test centres)</a></li></ul>",
-                            "The following partners also participate in the rapid test integration with the Corona-Warn-App:",
-                            "<ul><li>Doctorbox</li><li>Huber Health Care</li></ul>",
-                            "The following partners also participate in the rapid test integration with the Corona-Warn-App, but do not offer rapid antigen tests for the general public:",
-                            "<ul><li>The Federal Chancellery tests its own employees</li><li>The Ministry of Education and Culture Saarland tests teachers</li></ul>"
+                            "See <a href='#where_can_i_get_tested' target='_self' rel='noopener noreferrer'>Where can I get tested?</a>"
                         ]
                     },
                     {
@@ -138,12 +295,12 @@
                         ]
                     },
                     {
-                        "title": "How long is a rapid antigen test valid? What does the count-down mean?",
+                        "title": "How long is a rapid antigen test valid?",
                         "anchor": "rat_how_long_valid",
                         "active": true,
                         "textblock": [
-                            "A negative rapid test result is valid for 48 hours after submission and can be used as evidence, if required by law. When you tap on your negative test result on the main screen of the app, you will see a counter that shows you how long your test result has already been available. After 48 hours, your rapid test result will automatically be removed. You can then take another rapid test and register it in the app.",
-                            "There is no limited validity for positive rapid test results, so no counter will be displayed to you in this case. As soon as you receive a positive test result, immediately follow the instructions displayed in the app."
+                            "A negative rapid test result is valid for 48 hours after submission and can be used as evidence, if required by law. When you tap on your negative test result on the main screen of the app, under Android, you will see a counter that shows how long your test result has already been available. Under iOS, the date and time when the test result was issued is shown. After 48 hours, your rapid test result will automatically be removed. You can then take another rapid test and register it in the app.",
+                            "There is no limited validity for positive rapid test results, so no counter or the date of issue will be displayed to you in this case. As soon as you receive a positive test result, immediately follow the instructions displayed in the app."
                         ]
                     },
                     {
@@ -251,7 +408,6 @@
             {
                 "title": "Event Check-In",
                 "id": "check_in",
-                "active": true,
                 "accordion": [
                     {
                         "title": "Questions and answers about the event registration",
@@ -474,7 +630,7 @@
                             "If the Corona-Warn-App indicates a high infection risk with the red card, please isolate yourself quickly and consult a doctor to get screened if necessary.",
                             "For a smooth testing process, to receive the test result and to warn others in case of a positive result, please follow the steps in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'>this overview from the Robert Koch Institute</a>.",
                             "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='PDF'></a>",
-                            "See also: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
+                            "See also: <a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
                         ]
                     },
                     {
@@ -670,15 +826,6 @@
                             "More details about the system requirements can be found <a href='#minimum_requirements' target='_blank' rel='noopener noreferrer'>in this FAQ entry.</a>",
                             "See also the blog articles <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telecom and SAP will make the Corona-Warn-App available for iOS 12.5.</a> and <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 1.12 comes with two new features</a><hr/>",
                             "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With version 1.9 of the Corona-Warn-App (and the use of <a href='../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a>), iOS [ios.minimum-required-os-version] is now required, as version 2 of Exposure Notification API has been introduced with this version. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
-
-
-
-
-
-
-
-
-
                         ]
                     },
                     {
@@ -776,6 +923,16 @@
                         "active": true,
                         "textblock": [
                             "It's not foreseeable at the moment if and when the app will be available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
+                        ]
+                    },
+                    {
+                        "title": "A new version of the Corona-Warn-App is supposed to be available, but I have not received the update yet. What do I do?",
+                        "anchor": "release_time",
+                        "active": true,
+                        "textblock": [
+                            "Updates for the Corona-Warn-App are distributed using a so-called \"staged rollout\" over a timespan of 48 hours. This means that, instead of distributing the update immediately to every user, the update is gradually made available to a larger percentage of users over time. By using a staged rollout, critical bugs and crashes can be detected early and be addressed by the development team before they affect a large amount of users.",
+                            "The order in which users receive the update is randomly determined for every release by the app store vendors. Therefore, you might receive the update up to two days after the official release date. The Corona-Warn-App development team has no influence on the order in which users receive the update.",
+                            "<b>Please note:</b> On iOS, it is possible to manually trigger the update by visiting the App Store page of the Corona-Warn-App. This option does not exist on Android."
                         ]
                     },
                     {
