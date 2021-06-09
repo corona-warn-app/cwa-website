@@ -650,16 +650,30 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] Auf meinem Hauptbildschirm werde ich gewarnt, dass mein Gerät nicht oder nicht vollständig kompatibel ist. Was bedeutet das?",
-                        "anchor": "incompatibility_warning",
+                        "title": "[Google/Android] Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nur teilweise kompatibel ist. Was bedeutet das?",
+                        "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
-                            "Wenn Sie diese Warnmeldung sehen, ist Ihr Gerät nicht in der Lage, Zufalls-IDs an andere Geräte zu senden. Dies wird durch eine Einschränkung in der Kombination aus verwendeter Hardware und Software auf dem Gerät verursacht. Dadurch kann Bluetooth-Low-Energy im sogenannten „peripheral mode“ nicht von der Corona-Warn-App verwendet werden.",
-                            "Sollten Sie sich entscheiden, Kontakte im Fall einer Infektion zu warnen, wird diese Benachrichtigung nur Personen erreichen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren. Ihre eigene Risiko-Ermittlung ist <b>nicht betroffen</b>. Alle anderen Features der App sind ebenfalls nicht betroffen.",
-                            "Stellen Sie zunächst sicher, dass Sie die neuste Version des Betriebssystems Ihres Smartphones installiert haben. Wenn das Problem fortbesteht, wenden Sie sich bitte an Ihren Gerätehersteller.",
-                            "Falls Ihnen angezeigt wird, dass Ihr Gerät gänzlich inkompatibel ist, dann kann dies daran liegen, dass in Ihrem Gerät kein Bluetooth-Chip verbaut ist. Nur in diesem Fall können Sie keine Zufalls-IDs von anderen empfangen und die Risiko-Berechnung kann nur Orte und Events, bei denen Sie eingecheckt waren, berücksichtigen.",
-                            "<b>Die Funktionalitäten zum Einchecken, zum Abrufen von sowohl PCR- als auch Schnelltestergebnissen sowie das Kontakttagebuch funktionieren in jedem Fall trotz der Warnmeldung ohne Einschränkungen</b> und nur die Funktionen zum Nähe-basierten Austausch von Zufalls-IDs sind betroffen.",
-                            "Bluetooth-Kompatibilitätsüberprüfungen und -Warnmeldungen wurden mit der Android Corona-Warn-App Version 2.2 eingeführt."
+                            "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Meldung sehen, kann das Betriebssystem Ihres Geräts keine Zufalls-IDs per Bluetooth <i>versenden</i>, allerdings jedoch <i>empfangen</i>. <b>Ihre eigene Risiko-Ermittlung ist daher nicht betroffen</b>.",
+                            "Die einzige dadurch verursachte Einschränkung ist, dass Sie Ihre Bluetooth-Kontakte beim Teilen Ihres positiven Testergebnisses nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, werden jedoch weiterhin gewarnt. <b>Die Check-In-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden</b>.",
+                            "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Gerät. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
+                            "<hr/>",
+                            "<b>Technische Erklärung</b>",
+                            "Ihre Bluetooth-Hardware in Ihrem Gerät unterstützt zwar die für die Verteilung der Zufalls-IDs notwendige Technologie Bluetooth Low Energy, jedoch fehlt im Bluetooth-Treiber Ihres Betriebssystems eine Funktion namens „peripheral mode”. Ohne diese Funktion kann die Corona-Warn-App Ihr Gerät nicht periodisch eigene Zufalls-IDs aussenden lassen. Dies kann nur von Ihrem Gerätehersteller durch ein Softwareupdate behoben werden."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android] Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nicht mit Exposure Notifications kompatibel ist. Was bedeutet das?",
+                        "anchor": "full_incompat",
+                        "active": true,
+                        "textblock": [
+                            "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Meldung sehen, unterstützt Ihr Gerät nicht die notwendige Bluetooth-Funktionalität für das Versenden und Empfangen von Zufalls-IDs. Ihre Risiko-Ermittlung basiert daher lediglich auf Orten und Events, bei denen Sie sich eingecheckt haben.",
+                            "Die Check-In-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden.",
+                            "Mögliche Ursachen für diese Nachricht sind:<ul><li>Ihrem Gerät fehlt die Hardware, die für Bluetooth Low Energy notwendig ist.</li><li>Ihrem Gerät fehlt die Software, die benötigt wird, um die Bluetooth Low Energy-Funktionen Ihrer Hardware zu benutzen.</li><li>Sie führen die App im Android-Emulator aus.</li></ul>",
+                            "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Gerät. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
+                            "<hr/>",
+                            "<b>Technische Erklärung</b>",
+                            "Die Corona-Warn-App benötigt für die Verteilung von Zufalls-IDs die Technologie Bluetooth Low Energy. Diese steht jedoch aufgrund fehlender Hardware- oder Softwareunterstützung auf ihrem Gerät nicht zur Verfügung. Ohne diese Funktion kann die Corona-Warn-App Ihr Gerät weder periodisch eigene Zufalls-IDs aussenden lassen noch Zufalls-IDs von anderen Geräten empfangen."
                         ]
                     }
                 ]
