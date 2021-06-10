@@ -72,7 +72,7 @@
                             "<ul><li>Doctorbox</li><li>Huber Health Care</li></ul>",
                             "</li><li>Appointments only for their own employees:",
                             "<ul><li>The Federal Chancellery tests its own employees</li><li>Saarland's Ministry of Education and Culture tests teachers</li></ul>",
-                            "</li></ul><hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).", 
+                            "</li></ul><hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).",
                             "Another list of test sites from the Github community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
                         ]
                     }
@@ -101,14 +101,14 @@
                             "Further details regarding data protection can be found on this poster:",
                             "<a href='../../assets/documents/Poster_DataDonation_EDUS_evaluation_privacy_EN.pdf' target='_blank' rel='noopener noreferrer'>Evaluation of the Corona-Warn-App: How user privacy remains protected</a>."
                         ]
-                    }, 
+                    },
                     {
                         "title": "In-App statistics starting with release 1.11",
                         "anchor": "further_details",
                         "active": true,
                         "textblock": [
                             "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on current infections starting with the 1.11 version of the app. The figures displayed guide users to better assess the current situation and to adjust their own behaviour.",
-                            "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ", 
+                            "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ",
                             "The statistics displayed in the Corona-Warn-App are compiled from different sources and are formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
                             "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>.",
                             "To ensure the validity of the data in the CWA's statistics, all data sources are carefully verified for completeness and consistency.  Thus, the presentation of the data in the app may be slightly delayed in comparison to other websites/sources. However, in terms of content, the values correspond to the official case numbers of the RKI."
@@ -137,7 +137,9 @@
                         "textblock": [
                             "There are currently (as of 10 June 2021) some places from which certificates with QR codes are issued, which can be scanned with the app.",
                             "Usually, any document until today is not yet a valid digital <b>EU</b> vaccination certificate, but just a vaccination documentation according to §22 of the German Infection Protection Act, that is incompatible to the latest aligned European guidelines for a digital vaccination certificate. Therefore, this document, as well as the barcodes and QR codes in the yellow vaccination booklet, <b>cannot</b> be scanned with the Corona-Warn-App.",
-                            "The new digital certificate statements (that can be scanned) becomes available by authorized agencies, leveraging a central service implemented on behalf of the federal government. In some federal states, vaccination centres will automatically send these new digital certificate certificates by post. Starting on 14th of June 2021, those who have already been vaccinated can have the digital vaccination certificate issued in pharmacies on the basis of a vaccination record (yellow vaccination booklet or vaccination proof). The network of local sites will be expanded continuously.",
+                            "The new digital certificate statements (that can be scanned) becomes available by authorized agencies, leveraging a central service implemented on behalf of the federal government. In some federal states, vaccination centres will automatically send these new digital certificate certificates via mail. Starting on 14th of June 2021, those who have already been vaccinated can have the digital vaccination certificate issued in pharmacies on the basis of a vaccination record (yellow vaccination booklet or vaccination proof). The network of local sites will be expanded continuously.",
+                            "<b>Brandenburg vaccination centres:</b> digital certificates via mail starting end of next week. Source: <a href='https://twitter.com/MSGIV_BB/status/1402976485821009921'>MSGIV</a>",
+                            "<b>Bremen vaccination centres:</b> digital certificates via mail in the next two weeks. <a href='https://www.butenunbinnen.de/nachrichten/gesellschaft/digitaler-impfpass-bremen-100.html'>Source</a>",
                             "Example of EU digital COVID vaccination certificate:",
                             "<a href='https://user-images.githubusercontent.com/6367738/121354638-59aba880-c92f-11eb-98bb-9dcbc42d6742.jpg' target='_blank' rel='noopener'><img src='../../assets/img/faq/EU_digital_vaccination_certificate.jpg' alt='image' width='300'></a>"
                         ]
@@ -163,8 +165,8 @@
                         "anchor": "vac_cert_who",
                         "active": true,
                         "textblock": [
-                            "All persons who are entitled to a vaccination may also have a digital proof of vaccination available in addition to the paper-based vaccination certificate." ,
-                            "If necessary, you can obtain a Corona vaccination certificate from the doctor's office or vaccination center where the vaccination was carried out. Simply ask on site. However, vaccination centers and medical practices are not obliged to issue vaccination certificates." ,
+                            "All persons who are entitled to a vaccination may also have a digital proof of vaccination available in addition to the paper-based vaccination certificate.",
+                            "If necessary, you can obtain a Corona vaccination certificate from the doctor's office or vaccination center where the vaccination was carried out. Simply ask on site. However, vaccination centers and medical practices are not obliged to issue vaccination certificates.",
                             "Various ways are being explored to create digital vaccination certificates for Corona vaccinations afterwards. In principle, the subsequent issuance should take place where one has been vaccinated. If the appropriate contact details are available in the vaccination centers, the QR codes should be sent automatically by mail as far as possible. In addition, doctors and pharmacists could subsequently provide proof of vaccination."
                         ]
                     },
@@ -198,7 +200,8 @@
                         "anchor": "vac_cert_voluntary",
                         "active": true,
                         "textblock": [
-                            "The digital proof of vaccination via the Corona-Warn-App is a completely voluntary and complementary offer. If you do not have a digital certificate of vaccination or have lost it, the proof of vaccination via the well-known 'yellow booklet' (yellow vaccination passport) is still possible and valid. You can also prove Corona vaccinations with the printed Corona vaccination certificate for full vaccination."                        ]
+                            "The digital proof of vaccination via the Corona-Warn-App is a completely voluntary and complementary offer. If you do not have a digital certificate of vaccination or have lost it, the proof of vaccination via the well-known 'yellow booklet' (yellow vaccination passport) is still possible and valid. You can also prove Corona vaccinations with the printed Corona vaccination certificate for full vaccination."
+                        ]
                     },
                     {
                         "title": "How is the proof of vaccination verified?",
@@ -217,7 +220,7 @@
                         ]
                     },
                     {
-                        "title": "Does my vaccination status affect the calculation of the risk? Does the calculation of the risk change if a vaccinated person has become infected, and then warns other users?",                        
+                        "title": "Does my vaccination status affect the calculation of the risk? Does the calculation of the risk change if a vaccinated person has become infected, and then warns other users?",
                         "anchor": "vac_cert_risk_assesment",
                         "active": true,
                         "textblock": [
@@ -396,7 +399,8 @@
                         "anchor": "rat_risk_parameter",
                         "active": true,
                         "textblock": [
-                            "No. For rapid tests as well as for PCR tests, the same criteria for risk calculation apply as before. If you receive a risk warning, you won't see in the app whether it was caused by sharing a quick test or PCR test result. The exact parameters for the calculation can be found in the FAQ article <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)</a>."                        ]
+                            "No. For rapid tests as well as for PCR tests, the same criteria for risk calculation apply as before. If you receive a risk warning, you won't see in the app whether it was caused by sharing a quick test or PCR test result. The exact parameters for the calculation can be found in the FAQ article <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)</a>."
+                        ]
                     },
                     {
                         "title": "What is the purpose of a rapid test profile?",
@@ -433,7 +437,7 @@
                             "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Does everyone who scanned the same Event QR code get a warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can the user see what the alert is based on, i.e. which scanned Event QR code caused the warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a></li></ul>"
                         ]
                     },
-                     {
+                    {
                         "title": "How does event registration work in the Corona-Warn-App?",
                         "anchor": "check_in_how_does_it_work",
                         "active": true,
@@ -463,7 +467,7 @@
                         "active": true,
                         "textblock": [
                             "The purpose of event registration is to identify risk contacts that are currently not detected with Bluetooth-Low-Energy Technology (BLE). The scope of application is therefore primarily geared to indoor use, where there is an increased risk of infection due to the distribution of aerosols in the room, even beyond the usual contact limit of 1.5 meters. Ideally, a separate Event QR code should be created for each room where visitors are staying. Each visitor then scans the QR code for the rooms in which she/he has stayed. This ensures that only those who have been exposed to an increased risk of infection are warned.",
-                            "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.", 
+                            "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.",
                             "For outdoor events, the risk of infection is usually limited to a distance of 1.5 meters, which can already be detected with BLE technology, i.e. the usual use of the CWA. Basically, the event registration can be used here as well. However, it is not suitable for events in large outdoor areas, such as zoos.",
                             "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
@@ -522,7 +526,7 @@
                         "anchor": "check_in_qr_warning",
                         "active": true,
                         "textblock": [
-                            "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same Event QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",  
+                            "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same Event QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",
                             "The procedure is based on the existing CWA warning process: If an event participant or a visitor of a location has tested positive, he/she should share this result via the CWA. As a result, all other participants who were checked in at the same time will receive an immediate warning without having to burden the health authorities. Depending on the epidemiological situation, the warning is displayed in one of two versions: 'low risk' (green tile) or 'high risk' (red tile).",
                             "<b>How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)? </b>",
                             "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about COVID-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
@@ -833,7 +837,6 @@
                             "Apple provides the operating system iOS 13.7 and higher versions for the iPhone SE (1st generation), iPhone 6s, and newer models.",
                             "As of February 5, 2021, only the Corona-Warn-App (CWA) versions 1.5.3 and later are supported. For this reason, users with older versions will receive a notification to update their app accordingly. iOS users who have previously used iOS 13.5 and CWA version 1.3, for example, must now update the iOS operating system to at least iOS 13.7 in order to continue using the CWA. Only then can the technically correct operation of the app be ensured.",
                             "<ul><li>Please update your iOS version first. Older smartphones, such as the iPhone SE, 6S or 6S Plus, also support the latest iOS operating system. This allows you to upgrade your iPhone to at least iOS 13.7. For security reasons, however, you should keep your iPhone up-to-date (currently iOS 14.4), as Apple also regularly fixes minor security vulnerabilities with the updates. You can do this on your iPhone under Settings - General - Software Update.</li><li>Subsequently, please update the Corona-Warn-App. The Corona-Warn-App must also be installed at least in version 1.5.3. The version 1.12.1 is already available.</li></ul><hr/>",
-
                             "More details about the system requirements can be found <a href='#minimum_requirements' target='_blank' rel='noopener noreferrer'>in this FAQ entry.</a>",
                             "See also the blog articles <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telecom and SAP will make the Corona-Warn-App available for iOS 12.5.</a> and <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 1.12 comes with two new features</a><hr/>",
                             "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With version 1.9 of the Corona-Warn-App (and the use of <a href='../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a>), iOS [ios.minimum-required-os-version] is now required, as version 2 of Exposure Notification API has been introduced with this version. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
