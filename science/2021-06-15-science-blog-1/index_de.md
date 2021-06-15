@@ -254,7 +254,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 <div style="margin:20px 30px 30px 30px">
 
 <figure>
-<video src="./fraunhofer_iis_largeoffice.mp4" style="width:90.0%" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</em></figcaption>
+<video src="./v4_Teaser_CWA_Testkampagne.mp4" style="width:90.0%" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</em></figcaption>
 </figure>
 
 </div>
@@ -417,8 +417,7 @@ den kommenden Wochen regelmäßig in größerer Ausführlichkeit erfolgen.
 -   In der [ereignisbezogenen Befragung](#ereignisbezogenen-befragung) waren etwa 6% (792 von
     13.493) der in Folge der (roten) Warnung durchgeführten Tests
     positiv auf SARS-CoV-2. Ein Ergebnis, welches ähnlich hoch ist, wie
-    in der analogen Kontaktnachverfolgung. In der [Datenspende](#datenspende)
-    sind dies sogar 12 % (8.467 von 68.531). <span style="color: lightgrey;">(korrekte Wirksamkeit)</span>
+    in der analogen Kontaktnachverfolgung. <span style="color: lightgrey;">(korrekte Wirksamkeit)</span>
 
 -   Aus den Daten der Datenspende, der App Stores und des CWA-Backends
     lässt sich grob abschätzen, dass eine Nutzende, die ihr positives
@@ -435,7 +434,7 @@ zusätzlichen Nutzenden weiter gesteigert werden.
 <div style="margin:20px 30px 30px 30px">
 
 <figure>
-<video src="./ppa_warnings_cases.mp4" style="width:90.0%" controls=""><a href="./ppa_warnings_cases.mp4">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</a></video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
+<video src="./ppa_warnings_cases_fast.mp4" style="width:90.0%" controls=""><a href="./ppa_warnings_cases.mp4">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</a></video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
 </figure>
 
 </div>
