@@ -1,14 +1,13 @@
 ---
-page-title: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
-page-description: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
+page-title: "About the effectiveness and benefits of the Corona-Warn-App"
+page-description: "About the effectiveness and benefits of the Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA Team
 layout: science
 ---
 
-Science blog 1 Abstract
+An English version of this science blog article will follow in due course.
 
 <!-- overview -->
 
-Science blog 1 - Full text.
