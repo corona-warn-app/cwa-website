@@ -100,7 +100,7 @@ welchem Umfang sie dies tut.
 
 <br/>
 
-<center> <img src="./test_plotly-1.png" title="Abb. 1: Über die CWA registrierte Tests und deren Ergebnisse." style="align: center"></center>
+<center> <img src="./test_plotly-1.png" title="Abb. 1: Über die CWA registrierte Tests und deren Ergebnisse." /></center>
 
 <p class="caption">
 Abb. 1: Über die CWA registrierte Tests und deren Ergebnisse.
@@ -114,7 +114,7 @@ ungültig waren.
 
 <br/>
 
-<center> <img src="./sharing_plotly-1.png" title="Abb. 2: Über die CWA geteilte Testsergebnisse (teleTAN und QR-Code)." style="align: center"></center>
+<center> <img src="./sharing_plotly-1.png" title="Abb. 2: Über die CWA geteilte Testsergebnisse (teleTAN und QR-Code)." /></center>
 
 <p class="caption">
 Abb. 2: Über die CWA geteilte Testsergebnisse (teleTAN und QR-Code).
@@ -129,7 +129,7 @@ Tele-TAN-Verfahren.
 <br/>
 
 <center> <img src="./keys_trl_plotly-1.png" title="Abb. 3: Über die CWA geteilte Tagesschlüssel und deren Risikostufe
-(Transmission Risk Level, TRL)." style="align: center"></center>
+(Transmission Risk Level, TRL)."/></center>
 
 
 <p class="caption">
@@ -146,7 +146,7 @@ TRL) von 5 oder höher.
 
 <br/>
 
-<center> <img src="./plot_warnings_plotly-1.png" title="Abb. 4: CWA-Warnende und durch die CWA Gewarnte." style="align: center"></center>
+<center> <img src="./plot_warnings_plotly-1.png" title="Abb. 4: CWA-Warnende und durch die CWA Gewarnte." /></center>
 
 <p class="caption">
 Abb. 4: CWA-Warnende und durch die CWA Gewarnte.
@@ -243,10 +243,10 @@ die Zuverlässigkeit der BLE-Abstandsmessung in Labor-Experimenten von
 Fraunhofer IIS untersucht und bestätigt wurde. Über die tatsächlich
 beobachteten Verhältnisse wollen wir auch Auskunft geben.
 
-<div style="margin:20px 30px 30px 30px">
+<div class="m-4">
 
 <figure>
-<video src="./v4_Teaser_CWA_Testkampagne.mp4" style="width:90.0%" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</em></figcaption>
+<video src="./v4_Teaser_CWA_Testkampagne.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</em></figcaption>
 </figure>
 
 </div>
@@ -279,10 +279,10 @@ Kennzahlen (kumulativ und im Zeitverlauf) vorgesehen:
 
 ### Kennzahlen aus Nutzenden-Erhebungen
 
-<div style="float:right;margin:0px 10px 10px 30px">
+<div class="right-float">
 
 <figure>
-<img src="./edus_screen.png" style="width:2in" alt="CWA - ereignisbezogene Befragung" /><figcaption aria-hidden="true"><em>CWA - ereignisbezogene Befragung</em></figcaption>
+<img src="./edus_screen.png" class="w2in" alt="CWA - ereignisbezogene Befragung" /><figcaption aria-hidden="true"><em>CWA - ereignisbezogene Befragung</em></figcaption>
 </figure>
 
 </div>
@@ -322,10 +322,10 @@ CWA besser verstanden und die App dadurch fortlaufend in ihrer Funktion
 und in ihrer Benutzungsfreundlichkeit verbessert werden. Diese Daten
 werden seit Anfang März 2021 erhoben.
 
-<div style="float:left;margin:10px 30px 10px 10px">
+<div class="left-float">
 
 <figure>
-<img src="./ppa_screen.png" style="width:2in" alt="CWA - Datenspende" /><figcaption aria-hidden="true"><em>CWA - Datenspende</em></figcaption>
+<img src="./ppa_screen.png" class="w2in" alt="CWA - Datenspende" /><figcaption aria-hidden="true"><em>CWA - Datenspende</em></figcaption>
 </figure>
 
 </div>
@@ -423,10 +423,10 @@ und weiterhin einen wichtigen Beitrag leistet, Infektionsketten
 schneller zu beenden. Der Nutzen der CWA kann zudem mit jedem
 zusätzlichen Nutzenden weiter gesteigert werden.
 
-<div style="margin:20px 30px 30px 30px">
+<div class="m-4">
 
 <figure>
-<video src="./ppa_warnings_cases_fast.mp4" style="width:90.0%" controls=""><a href="./ppa_warnings_cases.mp4">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</a></video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
+<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls=""><a href="./ppa_warnings_cases.mp4">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</a></video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
 </figure>
 
 </div>
