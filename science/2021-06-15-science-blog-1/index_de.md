@@ -121,7 +121,7 @@ welchem Umfang sie dies tut.
 
 <div class="figure">
 
-<img src="blog_01_files/figure-markdown_github/test_plotly-1.png" alt="*Abb. 1: Über die CWA registrierte Tests und deren Ergebnisse.*" width="80%" height="80%" />
+<img src="./test_plotly-1.png" alt="*Abb. 1: Über die CWA registrierte Tests und deren Ergebnisse.*" width="80%" height="80%" />
 <p class="caption">
 *Abb. 1: Über die CWA registrierte Tests und deren Ergebnisse.*
 </p>
@@ -137,7 +137,7 @@ ungültig waren.
 
 <div class="figure">
 
-<img src="blog_01_files/figure-markdown_github/sharing_plotly-1.png" alt="*Abb. 2: Über die CWA geteilte Testsergebnisse (teleTAN und QR-Code).*" width="80%" height="80%" />
+<img src="./sharing_plotly-1.png" alt="*Abb. 2: Über die CWA geteilte Testsergebnisse (teleTAN und QR-Code).*" width="80%" height="80%" />
 <p class="caption">
 *Abb. 2: Über die CWA geteilte Testsergebnisse (teleTAN und QR-Code).*
 </p>
@@ -153,7 +153,7 @@ Tele-TAN-Verfahren.
 
 <div class="figure">
 
-<img src="blog_01_files/figure-markdown_github/keys_trl_plotly-1.png" alt="*Abb. 3: Über die CWA geteilte Tagesschlüssel und deren Risikostufe (Transmission Risk Level, TRL).*" width="80%" height="80%" />
+<img src="./keys_trl_plotly-1.png" alt="*Abb. 3: Über die CWA geteilte Tagesschlüssel und deren Risikostufe (Transmission Risk Level, TRL).*" width="80%" height="80%" />
 <p class="caption">
 *Abb. 3: Über die CWA geteilte Tagesschlüssel und deren Risikostufe
 (Transmission Risk Level, TRL).*
@@ -170,7 +170,7 @@ TRL) von 5 oder höher.
 
 <div class="figure">
 
-<img src="blog_01_files/figure-markdown_github/plot_warnings_plotly-1.png" alt="*Abb. 4: CWA-Warnende und durch die CWA Gewarnte.*" width="80%" height="80%" />
+<img src="./plot_warnings_plotly-1.png" alt="*Abb. 4: CWA-Warnende und durch die CWA Gewarnte.*" width="80%" height="80%" />
 <p class="caption">
 *Abb. 4: CWA-Warnende und durch die CWA Gewarnte.*
 </p>
@@ -207,7 +207,7 @@ Erhalt der Warnung zu analysieren und die entsprechenden Verzüge und
 Durchsatzraten anzugeben.
 
 [![*So funktioniert die Corona-Warn-App im
-Detail*](./media/cwa_function_detail.png "So funktioniert die Corona-Warn-App im Detail")](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Funktion_Detail.pdf?__blob=publicationFile)
+Detail*](./cwa_function_detail.png "So funktioniert die Corona-Warn-App im Detail")](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Funktion_Detail.pdf?__blob=publicationFile)
 
 Durch die Digitalisierung können wesentliche Prozesse beschleunigt und
 darüber hinaus auch skalierbar gemacht werden. Hierzu können erste
