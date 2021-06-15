@@ -145,7 +145,7 @@ page-title: "${entry.title}"
 page-description: "${entry.pageDescription}"
 page-name: "${entry.slug}"
 layout: science
-is_blog_detail: true
+is_science_detail: true
 ---
 ${entry.blogContent}`;
 
