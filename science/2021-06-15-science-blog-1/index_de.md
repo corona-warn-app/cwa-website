@@ -256,7 +256,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 <div class="m-4">
 
 <figure>
-<video src="./v4_Teaser_CWA_Testkampagne.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kallibrierung der Parameter</em></figcaption>
+<video src="./v4_Teaser_CWA_Testkampagne.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
 </figure>
 
 </div>
