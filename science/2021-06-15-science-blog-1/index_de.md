@@ -414,8 +414,7 @@ den kommenden Wochen regelmäßig in größerer Ausführlichkeit erfolgen.
 -   Ein guter Anteil der Nutzenden (61%), die ein positives Testergebnis
     über die CWA registriert und ihr Ergebnis erhalten haben (771.957),
     warnen über die CWA andere, indem sie ihr Testergebnis in der App
-    teilen (473.974). Der Anteil derjenigen, die ihren Test über die CWA
-    registriert haben liegt bei (51%). (Siehe [oben](#erfüllt-die-corona-warn-app-ihren-zweck).)
+    teilen (473.974). (Siehe [oben](#erfüllt-die-corona-warn-app-ihren-zweck).)
     <span>(Nutzen)</span>
 
 -   Viele der Nutzenden (aus [EDUS](#ereignisbezogenen-befragung): 73% (18.099 von 24.958))
