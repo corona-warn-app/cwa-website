@@ -39,7 +39,7 @@ Furthermore, users can now create an **error analysis** in the Corona-Warn-App i
 
 **Reporting an error**
 
-If users notice an error, they should **first contact the technical support**, for example via the hotline ([0800 7540001](tel:08007540001) or [+49 30 498 75401](tel:+493049875401) from abroad) or via [e-mail](mailto:corona-warn-app.opensource@sap.com). Technically experienced users can also contact the technical support via GitHub (for iOS problems via https://github.com/corona-warn-app/cwa-app-ios/issues and for Android problems via: https://github.com/corona-warn-app/cwa-app-android/issues). 
+If users notice an error, they should **first contact the technical support** via the hotline ([0800 7540001](tel:08007540001) or [+49 30 498 75401](tel:+493049875401) from abroad). Technically experienced users can also contact the technical support via GitHub (for iOS problems via https://github.com/corona-warn-app/cwa-app-ios/issues and for Android problems via: https://github.com/corona-warn-app/cwa-app-android/issues). 
 
 The technical support will check if there is already a solution for the problem. If this is not the case, they can **request the error report**. The team only analyzes reports that have been requested by the support. Users should not send them proactively without request. 
 
