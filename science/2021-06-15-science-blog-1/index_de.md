@@ -62,17 +62,20 @@ Erfüllung ihrer Zwecke geeignet ist und ob die Verarbeitung der
 anfallenden personenbezogenen (pseudonymisierten) Daten angemessen ist.
 In diesem Zusammenhang werden **drei Zwecke der CWA** genannt:
 
-Zweck 1 – Abruf des Testergebnisses  
+**Zweck 1 – Abruf des Testergebnisses**
+
 Personen, die auf SARS-CoV-2 getestet worden sind, sollen ihr
 Testergebnis ohne Verzögerung erhalten,
 
-Zweck 2 – Warnung Anderer  
+**Zweck 2 – Warnung Anderer**
+
 Personen, die ein positives Testergebnis erhalten haben, sollen andere
 Personen, die sich in ihrer unmittelbaren Nähe aufgehalten haben,
 darüber informieren bzw. warnen, dass für sie (d.h. für die anderen
 Personen) ein erhöhtes Infektionsrisiko bestanden hat,
 
-Zweck 3 – Risikoermittlung  
+**Zweck 3 – Risikoermittlung**
+
 Personen, die sich in unmittelbarer Nähe einer SARS-CoV-2- infizierten
 Person aufgehalten haben, sollen darüber informiert bzw. gewarnt werden,
 dass für sie ein erhöhtes Infektionsrisiko bestanden hat.
