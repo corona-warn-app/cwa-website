@@ -1554,6 +1554,38 @@
                             "Im Gegenteil: Die Open-Source-Community erhöht die Sicherheit der Software, da der Quellcode offen liegt und alle interessierten Personen den Code herunterladen und Zeile für Zeile überprüfen können.",
                             "Wir glauben daran, dass Sicherheit nicht durch Intransparenz gewährleistet wird. Deshalb verfolgen wir einen Open-Source-Ansatz."
                         ]
+                    },
+                    {
+                        "title": "Wozu dient das “In-App-Reset“ Feature der Corona-Warn-App?",
+                        "anchor": "in_app_reset",
+                        "active": true,
+                        "textblock": [
+                            "Sofern die Corona-Warn-App (CWA) nicht wie erwartet funktioniert, kann die In-App-Reset Funktion ('Anwendung zurücksetzen') genutzt werden, um einen Teil der von der CWA genutzten personenbezogenen Daten zu löschen, ohne die Funktionalitäten der CWA nach dem Zurücksetzen zu beeinträchtigen. Es ist zu beachten, dass bei einem In-App-Reset folgende Daten nicht gelöscht werden:",
+                            "<ul><li>Der Zeitpunkt, wann das Onboarding abgeschlossen wurde </li><li>Laufende Fehlerlogs</li><li>Bei Apple iOS: das API Token, damit die Datenspende bzw. die Funktion zur Teilnahme an Umfragen vom RKI zu bestimmten Ereignissen weiterhin funktioniert</li></ul>",
+                            "Diese Daten bleiben nach einem In-App-Reset auf dem Smartphone verschlüsselt gespeichert.",
+                            "Die Exposure Notification Framework (ENF)-Keys werden vom Betriebssystem verwaltet und können in den Systemeinstellungen von Android bzw. iOS gelöscht werden (Siehe  <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>Wie kann ich alle in der CWA gespeicherten Daten löschen?</a>)."
+                        ]
+                    },
+                    {
+                        "title": "Wie kann ich alle in der Corona-Warn-App gespeicherten Daten löschen?",
+                        "anchor": "delete_all_data_cwa",
+                        "active": true,
+                        "textblock": [
+                            "Durch die De-Installation der Corona-Warn-App (CWA) werden alle Daten der CWA gelöscht. Ein Nutzer sollte dabei aber beachten, dass zum Beispiel die Daten des Exposure Notification Frameworks (ENF) vom Betriebssystem seines Smartphones verwaltet werden. Daher werden diese ENF-Daten auf Android durch eine CWA-De-Installation nur dann gelöscht, wenn keine weitere Anwendung (App) auf dem Smartphone des Nutzers installiert wurde, die das ENF nutzt. Auf Apple iOS müssen die ENF-Daten manuell gelöscht werden, da sie durch die CWA-De-Installation nicht gelöscht werden.",
+                            "Alternativ kann der Nutzer auch die vom jeweiligen Betriebssystem bereitgestellten Funktionalitäten zum Löschen gespeicherter Daten einer Anwendung (App nutzen):",
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/speicherplatz-freigeben' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/7431795/speicherplatz-freigeben</a></li><li>(Apple) iOS: <a href='https://support.apple.com/de-de/HT201656' target='_self' rel='noopener noreferrer'>https://support.apple.com/de-de/HT201656</a></li></ul>" 
+                        ]
+                    },
+                    {
+                        "title": "Wie kann ich alle Daten und Einstellungen sämtlicher Anwendungen von meinem Smartphone löschen?",
+                        "anchor": "delete_all_data_all_apps",
+                        "active": true,
+                        "textblock": [
+                            "Die Betriebssystemhersteller bieten dazu in der Regel die Möglichkeit eines Zurücksetzens auf Werkseinstellungen an. Durch das Zurücksetzen des Smartphones gehen die Einstellungen und Daten des Nutzers verloren. Die genaue Vorgehensweise zum Zurücksetzen des Smartphones werden von den Betriebssystemherstellern beschrieben.",
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=de' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=de</a> </li><li>(Apple) iOS: <a href='https://support.apple.com/de-de/HT201252' target='_self' rel='noopener noreferrer'>https://support.apple.com/de-de/HT201252</a> </li></ul>",
+                            "Wenn Sie nur die Daten und Einstellungen im Zusammenhang mit der Corona-Warn-App (CWA) von Ihrem Smartphone löschen wollen, ist kein vollständiges Zurücksetzen Ihres Smartphones erforderlich. Es genügt, wenn Sie",
+                            "<ul><li>die CWA de-installieren (siehe  <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>Wie kann ich alle in der CWA gespeicherten Daten löschen?</a>),</li><li>die vom Betriebssystem verwalteten Daten des Exposure Notification Frameworks (ENF) löschen (siehe  <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>Wie kann ich alle in der CWA gespeicherten Daten löschen?</a>) und </li><li>ggf. das ENF in den Systemeinstellungen Ihres Betriebssystems deaktivieren.</li></ul>"
+                        ]
                     }
                 ]
             },
