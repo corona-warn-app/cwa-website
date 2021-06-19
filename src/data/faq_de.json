@@ -118,6 +118,62 @@
                 ]
             },
             {
+                "title": "Testzertifikat",
+                "id": "test_cert",
+                "accordion": [
+                    {
+                        "title": "Wozu dient das digitales COVID-Testzertifikat?",
+                        "anchor": "test_cert_why",
+                        "active": true,
+                        "textblock": [
+                            "Ab der Version 2.4 der Corona-Warn-App (CWA) können Sie ein digitales Testzertifikat über die App anfordern.  Durch die neue Funktion haben Sie die Möglichkeit, ihr negatives Testergebnis durch ein offizielles, digitales COVID-Testzertifikat in Form eines QR-Codes in der CWA nachzuweisen.  Innerhalb der Länder der Europäischen Union kann es als offiziell gültiger Nachweis eines negativen Testergebnisses dienen, den Sie beispielsweise für Reisen nutzen können oder in anderen gesetzlich vorgeschriebenen Fällen, wie z.B. einem Restaurantbesuch. Sie können dann den QR-Code in der CWA vorzeigen."
+                        ]
+                    },
+                    {
+                        "title": "Wie kann ich ein Testzertifikat anfordern?",
+                        "anchor": "test_cert_get",
+                        "active": true,
+                        "textblock": [
+                            "Das Zertifikat können Sie anfordern, indem sie einen Test in der Corona-Warn-App (CWA) registrieren: Dazu können sie auf dem Starbildschirm ihrer CWA auf 'Test registrieren' tippen und dann auf 'QR-Code scannen. Nachdem sie den QR-Code zur Test-Registrierung gescannt haben, öffnet sich automatisch das Fenster zum COVID-Testzertifikat. Dort können sie das 'Testzertifikat anfordern' oder ablehnen, falls sie keins erhalten möchten."
+                        ]
+                    },
+                    {
+                        "title": "Kann ich Testzertifikate für Schnelltests und PCR-Test anfordern?",
+                        "anchor": "test_cert_rat_and_pcr",
+                        "active": true,
+                        "textblock": [
+                            "Sie können sowohl für PCR- als auch für Schnelltests ein Zertifikat anfordern, das dann bei einem negativen Test ausgestellt wird.",
+                            "<b>Schnelltests</b><br>Bei Schnelltests kann es sein, dass die jeweilige Teststelle das digitale Zertifikat nicht unterstützt. In diesem Fall werden Sie nach dem Scannen des QR-Codes nicht zum Beantragen des Zertifikats weitergeleitet. Sie erhalten im Anschluss die Information, dass ein Testzertifikat nicht angefordert werden kann, da die Teststelle die Ausstellung von Testzertifikaten nicht unterstützt.","<b>PCR-Tests</b><br>Bei der Anforderung eines Testzertifikats für einen PCR-Test müssen Sie ihr Geburtsdatum angeben. Dabei ist wichtig, dass das Geburtsdatum mit dem übereinstimmt, das auch beim Abstrich für den PCR-Test angegeben wurde. Sollten die Geburtsdaten nicht übereinstimmen, beispielsweise aufgrund eines Tippfehlers, bekommen Sie weder das Testergebnis noch das Zertifikat über die App. Sie können das Geburtsdatum, das sie in der App eintragen, nachträglich nicht mehr ändern. Bevor Sie das Testzertifikat nach der Eingabe des Datums anfordern, sollten sie deshalb kurz überprüfen, ob das Datum auch wirklich korrekt ist."
+                        ]
+                    },
+                    {
+                        "title": "Wann erhalte ich mein Testzertifikat und wo finde ich es?",
+                        "anchor": "test_cert_when_and_where",
+                        "active": true,
+                        "textblock": [
+                            "Kurz nachdem das Testergebnis in der App vorliegt, erhalten Sie auch ihr Testzertifikat in der App -vorausgesetzt, Sie haben es vorher angefordert und die jeweilige Schnellteststelle unterstützt die Erstellung eines Zertifikats. Sie können es dann über den Reiter 'Zertifikate' in ihrer Registerkarte einsehen. Tippen sie auf das COVID-Testzertifikat, wird ihnen der QR-Code angezeigt, der zur Überprüfung gescannt werden kann, und weitere Informationen, wie Art des Tests, Datum und Uhrzeit der Durchführung und Testergebnis."
+                        ]
+                    },
+                    {
+                        "title": "Wie lange ist mein Testzertifikat gültig?",
+                        "anchor": "test_cert_validity",
+                        "active": true,
+                        "textblock": [
+                            "Wie lange das Zertifikat gültig ist, hängt von den Bestimmungen des jeweiligen Bundeslandes oder der Kommune ab."
+                        ]
+                    },
+                    {
+                        "title": "Wie wird meine Privatsphäre geschützt, wenn ich ein Testzertifikat erstelle?",
+                        "anchor": "test_cert_privacy",
+                        "active": true,
+                        "textblock": [
+                            "Zur Erstellung des Testzertifikats werden die Daten Ende-zu-Ende verschlüsselt und vom Labor, beziehungsweise der Schnellteststelle an die Corona-Warn-App übermittelt. Dafür werden die verschlüsselten Daten an das Robert Koch-Institut (RKI) übermittelt, um sie digital zu signieren und so die Gültigkeit des Zertifikats zu bestätigen. Die Daten können vom RKI nicht entschlüsselt werden und werden nach Zustellung des Zertifikats gelöscht.",
+                            "Testzertifikate werden unbefristet in der App gespeichert. Sie können Zertifikate manuell löschen, indem sie auf den Reiter 'Zertifikate' gehen, das jeweilige Testzertifikat auswählen und dann 'Testzertifikat entfernen' auswählen."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Impfzertifikat",
                 "id": "vac_cert",
                 "accordion": [
