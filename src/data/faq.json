@@ -842,12 +842,13 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: I am testing a beta version of iOS. Why is the Corona-Warn-App not yet supported?",
-                        "anchor": "beta_ios",
+                        "title": "I am testing a beta version of iOS/Android. What do I have to consider?",
+                        "anchor": "os_beta",
                         "active": true,
                         "textblock": [
-                            "We do not officially support beta versions of the respective operating systems. These are still in development and not intended for productive operation.",
-                            "However, if you as a participant in the Apple beta software programme would like to point out potential errors or incompatibilities at an early stage, <a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>we are happy to receive your feedback on Github</a>."
+                            "Beta versions of the respective operating systems are not officially supported because they are still in development and not intended for productive operation. You can still use the app normally, but you should be aware that you might encounter errors that are not present when using a release version of your operating system.",
+                            "However, if you experience errors, you can feel free to point them or other incompatibilities out by opening an issue on GitHub:",
+                            "<ul><li><a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>iOS Issue Tracker</a></li><li><a href='https://github.com/corona-warn-app/cwa-app-android/issues' target='_blank' rel='noopener noreferrer'>Android Issue Tracker</a></li></ul>"
                         ]
                     },
                     {
@@ -1404,8 +1405,8 @@
                         "anchor": "why_oss",
                         "active": true,
                         "textblock": [
-                            "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
-                            "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
+                            "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely and openly available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
+                            "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reporting of errors, discussions, code reviews and contributions via pull requests."
                         ]
                     },
                     {
@@ -1413,16 +1414,16 @@
                         "anchor": "oss_complete",
                         "active": true,
                         "textblock": [
-                            "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
+                            "Yes. The full source code of the app is openly available on <a href='https://github.com/corona-warn-app'>GitHub</a>. Code reviews and comments are possible before and after a version of the app is released. Questions about development topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss other central issues relevant for the app there. The discussion posts remain publicly available on GitHub."
                         ]
                     },
                     {
-                        "title": "How will the development status in GitHub be uploaded to the app stores?",
+                        "title": "How is the development status in GitHub transferred to the app in the app stores?",
                         "anchor": "dev_status",
                         "active": true,
                         "textblock": [
-                            "The app is developed using standard tools (such as Xcode and Android Studio) and uploaded to Apple App Store and Google Play Store.",
-                            "We will be able to publish information as soon as it is available on the issue as to whether the code in GitHub is really the same as that in the app in the respective app stores ('reproducible builds'). You can find further information on the progress of this issue in the respective <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>GitHub issue</a>."
+                            "The app is developed using standard tools (such as Android Studio for Android and Xcode for iOS). Releases are announced publicly on GitHub (<a href='https://github.com/corona-warn-app/cwa-app-android/releases' target='_blank' rel='noopener noreferrer'>Android</a>, <a href='https://github.com/corona-warn-app/cwa-app-ios/releases' target='_blank' rel='noopener noreferrer'>iOS</a>). The source code of each release is compiled into the app package which is published in the Apple App Store and Google Play Store.",
+                            "We will be able to publish information as soon as it is available on the issue as to whether the code in GitHub is really the same as that in the app in the respective app stores ('reproducible builds'). Further information on the progress of this issue can be found in the respective <a href='https://github.com/corona-warn-app/cwa-wishlist/issues/275' target='_blank' rel='noopener noreferrer'>GitHub issue</a>."
                         ]
                     },
                     {
@@ -1430,7 +1431,7 @@
                         "anchor": "how_to_contribute",
                         "active": true,
                         "textblock": [
-                            "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
+                            "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested is encouraged to get involved in the project here, for example, by fixing bugs in the source code, making feature requests, helping with the documentation, raising questions or commenting on the project.",
                             "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
                         ]
                     },
