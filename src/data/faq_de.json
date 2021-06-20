@@ -854,12 +854,13 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: Ich teste eine Beta-Version von iOS. Warum wird die Corona-Warn-App noch nicht unterstützt?",
-                        "anchor": "beta_ios",
+                        "title": "Ich teste eine Betaversion von iOS/Android. Was muss ich beachten?",
+                        "anchor": "os_beta",
                         "active": true,
                         "textblock": [
-                            "Wir unterstützen offiziell keine Beta-Versionen der jeweiligen Betriebssysteme. Diese sind noch in der Entwicklung und nicht für den produktiven Betrieb vorgesehen.",
-                            "Wenn Sie als Teilnehmer am Apple Beta Software-Programm jedoch frühzeitig auf potentielle Fehler oder Inkompatibilitäten hinweisen möchten, <a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>nehmen wir Ihr Feedback gerne auf Github entgegen</a>."
+                            "Betaversionen der jeweiligen Betriebssysteme werden nicht offiziell unterstützt, da sie sich noch in der Entwicklung befinden und nicht für den produktiven Einsatz vorgesehen sind. Sie können die App weiterhin normal benutzen, sollten aber daran denken, dass möglicherweise Fehler auftreten, die in der Releaseversion Ihres Betriebssystems nicht vorhanden sind.",
+                            "Falls bei Ihnen solche Fehler auftreten, können Sie diese oder andere Inkompatibilitäten jedoch gerne melden, indem Sie ein GitHub Issue erstellen:",
+                            "<ul><li><a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>iOS Issue Tracker</a></li><li><a href='https://github.com/corona-warn-app/cwa-app-android/issues' target='_blank' rel='noopener noreferrer'>Android Issue Tracker</a></li></ul>"
                         ]
                     },
                     {
@@ -1416,8 +1417,8 @@
                         "anchor": "why_oss",
                         "active": true,
                         "textblock": [
-                            "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt.",
-                            "Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen. Der Open-Source-Ansatz ermöglicht der Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z.&nbsp;B. in Form von Reviews und Pull Requests."
+                            "Wir sind der Auffassung, dass der Erfolg der Lösung unmittelbar von der Akzeptanz und dem Vertrauen der nutzenden Personen abhängt. Durch den gewählten Open-Source-Ansatz sind der vollständige Quelltext für die App und die Infrastruktur frei und ohne Zugangsbeschränkungen verfügbar. So möchten wir die für eine starke Vertrauensbasis notwendige Transparenz schaffen.",
+                            "Der Open-Source-Ansatz ermöglicht der breiten Öffentlichkeit und der Entwicklungs-Community außerdem, aktiv zu dem Erfolg der Lösung beizutragen, z.B. in Form von Fehlerberichten, Diskussionsbeiträgen, Code-Reviews und Implementierungsvorschlägen über Pull Requests."
                         ]
                     },
                     {
@@ -1425,7 +1426,7 @@
                         "anchor": "oss_complete",
                         "active": true,
                         "textblock": [
-                            "Ja. Der zentrale Code in Verbindung mit der Erkennung von Begegnungen und der Weitergabefunktion ist komplett auf GitHub öffentlich verfügbar. Der Code kann sowohl vor als auch nach der Veröffentlichung der App dort überprüft und kommentiert werden. Fragestellungen zu Themen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
+                            "Ja. Der gesamte Quelltext der App ist auf <a href='https://github.com/corona-warn-app'>GitHub</a> öffentlich verfügbar. Der Code kann dort sowohl vor als auch nach der Veröffentlichung einer neuen App-Version überprüft und kommentiert werden. Fragestellungen zu Entwicklungsthemen wie Sicherheit, Datenschutz usw. werden zusammen mit der Community geklärt. Jede Person kann einen eigenen Build der App erstellen und diesen testen. Abgesehen vom Quellcode diskutieren wir dort auch offen über zentrale Themen, die für die App relevant sind. Die Diskussionsbeiträge bleiben auf GitHub dauerhaft öffentlich einsehbar."
                         ]
                     },
                     {
