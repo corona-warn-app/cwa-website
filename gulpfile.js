@@ -16,6 +16,7 @@ const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 const { processBlogFiles } = require('./src/services/blog-processor');
+const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
 var rename = require("gulp-rename");
 
 // Load all Gulp plugins into one variable
@@ -46,7 +47,9 @@ gulp.task(
   gulp.series(
     clean,
     cleanBlogs,
+    cleanScienceBlogs,
     buildBlogFiles,
+    buildScienceBlogFiles,
     gulp.parallel(
       pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
     ),
@@ -59,6 +62,7 @@ gulp.task(
 );
 
 gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
+gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
@@ -73,6 +77,9 @@ function cleanBlogs(done) {
   rimraf(PATHS.blogOutputs, done);
 }
 
+function cleanScienceBlogs(done) {
+  rimraf(PATHS.blogScienceOutputs, done);
+}
 const folders = [
   PATHS.dist,
   PATHS.dist + '/.well-known'
@@ -99,13 +106,26 @@ function copyBlogImgs() {
   ])
   .pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
+function copyScienceBlogImgs() {
+  return gulp.src([
+    'science/**/*',
+    '!science/**/*.md'
+  ])
+  .pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+}
+
 // Prepare blog .md files to be used as HTML
 function buildBlogFiles(done) {
   copyBlogImgs();
   processBlogFiles();
   done();
 }
-
+// Prepare science blog .md files to be used as HTML
+function buildScienceBlogFiles(done) {
+  copyScienceBlogImgs();
+  processScienceBlogFiles();
+  done();
+}
 // Copy page templates into finished HTML files
 function pages() {
   return gulp
@@ -274,6 +294,9 @@ function watch(done) {
   gulp
     .watch('blog/**/*')
     .on('all', gulp.series(buildBlogFiles, pages));
+  gulp
+    .watch('science/**/*')
+    .on('all', gulp.series(buildScienceBlogFiles, pages));  
   gulp
     .watch('src/pages/**/*.html')
     .on('all', gulp.series(pages, reload));

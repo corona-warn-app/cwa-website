@@ -135,9 +135,9 @@
                         "anchor": "vac_cert_invalid",
                         "active": true,
                         "textblock": [
-                            "As of 14 June 2021: Since 14 June 2021 there are certificates with QR codes are issued in vaccination centers, which can be scanned with the app.",
-                            "Usually, any document until 14 June 2021 is not yet a valid digital <b>EU</b> vaccination certificate, but just a vaccination documentation according to §22 of the German Infection Protection Act, that is incompatible with the latest aligned European guidelines for a digital vaccination certificate. Therefore, this document, as well as the barcodes and QR codes in the yellow vaccination booklet, <b>cannot</b> be scanned with the Corona-Warn-App.",
-                            "The new digital certificate statements (that can be scanned) are in the process of being made available by authorized agencies. In some federal states, vaccination centers will automatically send these new digital certificates via mail. Starting on 14 June 2021, those who have already been vaccinated can have the digital vaccination certificate issued in pharmacies on the basis of a vaccination record (yellow vaccination booklet or vaccination proof), if you are not receiving a digitial certificate via mail. <a href='https://www.mein-apothekenmanager.de/' target='_blank' rel='noopener noreferrer'>Pharmacies search</a>.",
+                            "As of 14 June 2021: Since 14 June 2021 certificates with QR codes, which can be scanned with the app, are being issued in vaccination centers.",
+                            "Usually, any document issued before 14 June 2021 will not be a valid digital <b>EU</b> vaccination certificate, but just a vaccination documentation according to §22 of the German Infection Protection Act, that is incompatible with the latest aligned European guidelines for a digital vaccination certificate. Therefore, such a document, as well as the barcodes and QR codes in the yellow vaccination booklet, <b>cannot</b> be scanned with the Corona-Warn-App.",
+                            "The new digital certificate statements (that can be scanned) are in the process of being made available by authorized agencies. In some federal states, vaccination centers will automatically send these new digital certificates via mail. Starting on 14 June 2021, those who have already been vaccinated can have the digital vaccination certificate issued in pharmacies on the basis of a vaccination record (yellow vaccination booklet or vaccination proof), if they do not receive a digital certificate via mail. <a href='https://www.mein-apothekenmanager.de/' target='_blank' rel='noopener noreferrer'>Pharmacies search</a>.",
                             "In this news article you will find information about the <b>individual federal states:</b><br><a href='https://www.focus.de/gesundheit/coronavirus/covpass-digitaler-corona-impfpass-fuers-handy-startet-das-ist-der-stand-in-ihrem-bundesland_id_13385519.html' target='_blank' rel='noopener noreferrer'>Digitaler Corona-Impfpass startet - das ist der Stand in Ihrem Bundesland</a>.",
                             "Example of EU Digital COVID Vaccination Certificate:",
                             "<a href='https://user-images.githubusercontent.com/66998419/121585483-f014c280-ca32-11eb-83b1-38ef4a74719b.jpg' target='_blank' rel='noopener'><img src='../../assets/img/faq/EU_digital_vaccination_certificate_2.jpg' alt='image' width='300'></a>"
@@ -894,6 +894,7 @@
                         "anchor": "interoperability_countries",
                         "active": true,
                         "textblock": [
+                            "<img src='../../assets/img/faq/eu-flag.png' width=100px alt='EU flag'> This project was funded by the European Commission.",
                             "Together with the European Commission, an infrastructure for secure information exchange has been developed, known as the \"Interoperability Gateway\". This gateway enables the Corona-Warn-App to operate across national borders and to receive potential warning messages abroad. Detailed information about the Gateway is available from the European Commission in <a href='https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_1905#gateway'>Coronavirus: EU interoperability gateway for contact tracing and warning apps – Questions and Answers</a>. In order to also enable warnings between users of the Swiss coronavirus app and the Corona-Warn-App, the RKI also operates another exchange server together with Switzerland (Federal Office of Public Health of the Swiss Confederation).",
                             "To view more information in the app, tap",
                             "<ol><li>'EXPOSURE LOGGING ACTIVE/STOPPED'</li><li>Then tap 'Transnational Exposure Logging'.</li><li>Scroll down to the list of countries.</li></ol>",
@@ -1429,7 +1430,7 @@
                         "anchor": "how_to_contribute",
                         "active": true,
                         "textblock": [
-                            "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
+                            "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested is encouraged to get involved in the project here, for example, by fixing bugs in the source code, making feature requests, helping with the documentation, raising questions or commenting on the project.",
                             "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
                         ]
                     },
@@ -1540,6 +1541,38 @@
                         "textblock": [
                             "On the contrary: the open-source community increases the level of security of the software, because the source code is open to all and anyone can download it and comb through it line by line.",
                             "We believe that security is not helped by a lack of transparency. That is why we are taking an open-source approach."
+                        ]
+                    },
+                    {
+                        "title": "What is the 'In-App Reset' feature of the Corona-Warn-App for?",
+                        "anchor": "in_app_reset",
+                        "active": true,
+                        "textblock": [
+                            "If the Corona-Warn-App (CWA) does not work as expected, the In-App Reset function ('Reset Application') can be used to delete part of the personal data used by the CWA without compromising the functionalities of the CWA after resetting. It should be noted that during an in-app reset, the following data is not deleted:",
+                            "<ul><li>The time when onboarding was completed</li><li>Running error logs</li><li>For Apple iOS: the API token, so that the data donation or the function to participate in surveys from the RKI on certain events continues to work</li></ul>",
+                            "This data remains encrypted after an in-app reset on the smartphone.",
+                            "The Exposure Notification Framework (ENF) keys are managed by the operating system and can be deleted in the system settings of Android or iOS (See  <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>See How can I delete all data stored in the CWA?</a>)."
+                        ]
+                    },
+                    {
+                        "title": "How can I delete all data stored in the Corona-Warn-App?",
+                        "anchor": "delete_all_data_cwa",
+                        "active": true,
+                        "textblock": [
+                            "By uninstalling the Corona-Warn-App (CWA), all data of the CWA is deleted. However, a user should note that, for example, the data of the Exposure Notification Framework (ENF) is managed by the operating system of his smartphone. Therefore, this ENF data on Android is only deleted by uninstalling CWA if no other application (app) has been installed on the user's smartphone that uses the ENF. On Apple iOS, the ENF data must be deleted manually because it will not be deleted by uninstallating CWA.",
+                            "Alternatively, the user can also use the functionalities provided by the respective operating system to delete stored data of an application (app):",
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en</a></li><li>(Apple) iOS: <a href='https://support.apple.com/en-gb/HT201656' target='_self' rel='noopener noreferrer'>https://support.apple.com/en-gb/HT201656</a></li></ul>" 
+                        ]
+                    },
+                    {
+                        "title": "How can I delete all data and settings of all applications from my smartphone?",
+                        "anchor": "delete_all_data_all_apps",
+                        "active": true,
+                        "textblock": [
+                            "The operating system manufacturers usually offer the possibility of a reset to factory settings. By resetting the smartphone, the user's settings and data are lost. The exact procedure for resetting the smartphone is described by the operating system manufacturers.",
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=en' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=en</a> </li><li>(Apple) iOS: <a href='https://support.apple.com/en-gb/HT201252' target='_self' rel='noopener noreferrer'>https://support.apple.com/en-gb/HT201252</a> </li></ul>",
+                            "If you only want to delete the data and settings related to the Corona-Warn-App (CWA) from your smartphone, there is no need to completely reset your smartphone. It is enough if you",
+                            "<ul><li>uninstall the CWA (see <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>How can I delete all data stored in the CWA?</a>),</li><li>delete the exposure notification framework (ENF) data managed by the operating system (see <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>How can I delete all data stored in the CWA?</a>) and </li><li>if necessary, disable the ENF in the system settings of your operating system.</li></ul>"
                         ]
                     }
                 ]
@@ -1661,7 +1694,7 @@
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
                             "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
                             "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
-                            "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
+                            "We ask you to not uninstall the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
                         ]
                     },
                     {
