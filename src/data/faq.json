@@ -141,8 +141,8 @@
                         "anchor": "test_cert_rat_and_pcr",
                         "active": true,
                         "textblock": [
-                            "You can request a certificate for both PCR and rapid tests, which is then issued in the event of a negative test.",
-                            "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.","<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
+                            "You can request a certificate for both PCR and rapid tests, which are then issued in the event of a negative test.",
+                            "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.","<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
                         ]
                     },
                     {
@@ -150,7 +150,7 @@
                         "anchor": "test_cert_when_and_where",
                         "active": true,
                         "textblock": [
-                            "Shortly after the test result is available in the app, you will also receive your test certificate in the app - provided that you have requested it beforehand, and the respective rapid test site supports the creation of a certificate. You can then view it via the 'Certificates' tab in your tab. If they tap on the COVID test certificate, they will be shown the QR code that can be scanned for verification, and more information, such as type of test, date and time of execution and test result."
+                            "Shortly after the test result is available in the app, you will also receive your test certificate in the app - provided that you have requested it beforehand, and the respective rapid test site supports the creation of a certificate. You can then view it via the 'Certificates' tab. If you tap on the COVID test certificate, you will be shown the QR code that can be scanned for verification, and more information, such as type of test, date and time of execution and test result."
                         ]
                     },
                     {
@@ -166,7 +166,7 @@
                         "anchor": "test_cert_privacy",
                         "active": true,
                         "textblock": [
-                            "To create the test certificate, the data is encrypted end-to-end and transmitted from the laboratory or the rapid test site to the Corona Warning app. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the validity of the certificate. The data cannot be decrypted by the RKI and will be deleted after delivery of the certificate.",
+                            "To create the test certificate, the data is encrypted end-to-end and transmitted from the laboratory or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the validity of the certificate. The data cannot be decrypted by the RKI and will be deleted after delivery of the certificate.",
                             "Test certificates are stored in the app for an unlimited period of time. You can delete certificates manually by going to the 'Certificates' tab, selecting the respective test certificate and then selecting 'Remove test certificate'."
                         ]
                     }
