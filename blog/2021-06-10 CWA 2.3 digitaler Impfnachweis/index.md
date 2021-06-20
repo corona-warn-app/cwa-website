@@ -25,7 +25,7 @@ The digital vaccination certificate is an **electronic certificate** that can di
 As of version 2.3, users will find the **"Add Vaccination Certificate"** section on their app’s home screen. By tapping *Add*, they can scan the QR code they’ve received at the vaccination site to add the vaccination status to the Corona-Warn-App. The app will read the information from the QR code and display the appropriate vaccination status. 
 
 
-For many vaccines, users need two vaccinations to achieve full vaccination protection. In this case, after the first vaccination, the app initially displays an **"Vaccination incomplete"** on the home screen under the risk display. 
+For many vaccines, users need two vaccinations to achieve full vaccination protection. In this case, after the first vaccination, the app initially displays **"Vaccination incomplete"** on the home screen under the risk display. 
 
 
 Users can **"Register another vaccination"** in the vaccination certificate section of the app once they’ve received a second vaccination for full vaccination protection. For vaccination protection to be complete, 14 days must pass after the last required vaccination. Only then will the Corona-Warn-App show a status of "Complete Vaccination Protection." To see more information about each vaccination, such as the date or vaccine, users can tap on the vaccination ("Vaccination 1 of 2" or "Vaccination 2 of 2").
