@@ -11,11 +11,11 @@ Das Projektteam aus Deutscher Telekom und SAP hat Corona-Warn-App Version 2.3 ve
 
 <!-- overview -->
 
-Ab Version 2.3 der Corona-Warn-App können Nutzer\*innen ihren digitalen Impfnachweis in der App hinzufügen und so per QR-Code ihren Impfstatus vorweisen. Die Gültigkeit des Impfnachweises muss durch die CovPass-Check-App in Kombination mit einem Personalausweis überprüft werden. Die App zeigt den vollständigen Impfschutz 14 Tage nach der letzten benötigten Impfung an. Damit können Nutzer\*innen Informationen und Funktionen rund um das Corona-Virus **an einem Ort verwalten: der Corona-Warn-App.**
+Ab Version 2.3 der Corona-Warn-App können Nutzer\*innen ihren digitalen Impfnachweis in der App hinzufügen und so per QR-Code ihren Impfstatus vorweisen. Die App zeigt den vollständigen Impfschutz 14 Tage nach der letzten benötigten Impfung an. Damit können Nutzer\*innen Informationen und Funktionen rund um das Corona-Virus **an einem Ort verwalten: der Corona-Warn-App.**
 
-Der digitale Impfnachweis ist ein **elektronisches Zertifikat**, das Corona-Impfungen digital dokumentieren kann, beispielsweise auf dem Smartphone. Er kann in der Arztpraxis oder in einem Impfzentrum generiert werden: Nach Eingabe oder Übernahme der Daten wird ein QR-Code erstellt. Den können Nutzer*innen dann entweder mit der [CovPass-App](https://digitaler-impfnachweis-app.de/) oder der Corona-Warn-App scannen, um den **Impfnachweis in die App zu integrieren**. Natürlich kann aber auch der gelbe Impfausweis weiterhin als Nachweis des Impfstatus verwendet werden.
+Der digitale Impfnachweis ist ein **elektronisches Zertifikat**, das Corona-Impfungen digital dokumentieren kann, beispielsweise auf dem Smartphone. Er kann in der Arztpraxis oder in einem Impfzentrum generiert werden: Nach Eingabe oder Übernahme der Daten wird ein QR-Code erstellt. Den können Nutzer\*innen dann entweder mit der [CovPass-App](https://digitaler-impfnachweis-app.de/) oder der Corona-Warn-App scannen, um den **Impfnachweis in die App zu integrieren**. Natürlich kann aber auch der gelbe Impfausweis weiterhin als Nachweis des Impfstatus verwendet werden.
 
-
+Die **Gültigkeit** des digitalen Impfnachweises muss durch die **CovPass-Check-App** in Kombination mit einem Personalausweis überprüft werden.
 
 
 <br></br>
