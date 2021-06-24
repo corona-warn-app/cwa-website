@@ -126,6 +126,70 @@
                 ]
             },
             {
+                "title": "Test Certificate",
+                "id": "test_cert",
+                "accordion": [
+                    {
+                        "title": "Questions and answers about the test certificate",
+                        "anchor": "test_cert_index",
+                        "active": true,
+                        "textblock": [
+                            "<ul><li><a href='#test_cert_why'>What is the purpose of the digital COVID test certificate?</a></li><li><a href='#test_cert_get'>How can I request a test certificate?</a></li><li><a href='#test_cert_rat_and_pcr'>Can I request test certificates for rapid tests and PCR tests?</a></li><li><a href='#test_cert_when_and_where'>When will I receive my test certificate and where can I find it?</a></li><li><a href='#test_cert_validity'>How long is my test certificate valid?</a></li><li><a href='#test_cert_privacy'>How will my privacy be protected if I create a test certificate?</a></li></ul>"
+                         ]
+                    },
+                    {
+                        "title": "What is the purpose of the digital COVID test certificate?",
+                        "anchor": "test_cert_why",
+                        "active": true,
+                        "textblock": [
+                            "Starting with version 2.4 of the Corona-Warn-App (CWA), you can request a digital test certificate via the app. The new feature allows you to prove your negative test result through an official, digital COVID test certificate in the form of a QR code in the CWA. Within the countries of the European Union, it can serve as officially valid proof of a negative test result, which you can use, for example, for travel or in other legally prescribed cases, such as a visit to a restaurant. You can then show the QR code in the CWA."
+                        ]
+                    },
+                    {
+                        "title": "How can I request a test certificate?",
+                        "anchor": "test_cert_get",
+                        "active": true,
+                        "textblock": [
+                            "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Register Test' on the start screen of your CWA and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can 'request the test certificate' or reject it if you do not want to receive one."
+                        ]
+                    },
+                    {
+                        "title": "Can I request test certificates for rapid tests and PCR tests?",
+                        "anchor": "test_cert_rat_and_pcr",
+                        "active": true,
+                        "textblock": [
+                            "You can request a certificate for both PCR and rapid tests, which are then issued in the event of a negative test.",
+                            "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.","<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
+                        ]
+                    },
+                    {
+                        "title": "When will I receive my test certificate and where can I find it?",
+                        "anchor": "test_cert_when_and_where",
+                        "active": true,
+                        "textblock": [
+                            "Shortly after the test result is available in the app, you will also receive your test certificate in the app - provided that you have requested it beforehand, and the respective rapid test site supports the creation of a certificate. You can then view it via the 'Certificates' tab. If you tap on the COVID test certificate, you will be shown the QR code that can be scanned for verification, and more information, such as type of test, date and time of execution and test result."
+                        ]
+                    },
+                    {
+                        "title": "How long is my test certificate valid?",
+                        "anchor": "test_cert_validity",
+                        "active": true,
+                        "textblock": [
+                            "How long the certificate is valid depends on the regulations of the respective federal state or municipality."
+                        ]
+                    },
+                    {
+                        "title": "How will my privacy be protected if I create a test certificate?",
+                        "anchor": "test_cert_privacy",
+                        "active": true,
+                        "textblock": [
+                            "To create the test certificate, the data is encrypted end-to-end and transmitted from the laboratory or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the validity of the certificate. The data cannot be decrypted by the RKI and will be deleted after delivery of the certificate.",
+                            "Test certificates are stored in the app for an unlimited period of time. You can delete certificates manually by going to the 'Certificates' tab, selecting the respective test certificate and then selecting 'Remove test certificate'."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Vaccination Cert.",
                 "id": "vac_cert",
                 "accordion": [
