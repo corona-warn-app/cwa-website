@@ -54,6 +54,21 @@ tatsächlichen Gebrauch einer Sache zieht. Der Nutzen der Corona-Warn-App
 besteht in den verhinderten Neuinfektionen und darin, dass sie der
 Ausbreitung des Corona-Virus entgegenwirkt.
 
+Zweck  
+Als Zweck wird der Beweggrund einer zielgerichteten Tätigkeit oder eines 
+Verhaltens verstanden. Während das Eintreten einer Wirkung (Wirksamkeit) 
+und das Erreichen eines Zieles (Nutzen) den eigentlichen Beweggrund darstellt,
+ sollen im folgenden auch Teilziele als Zweck verstanden werden, 
+ die in ihrer Funktionalität zusammen beides ermöglichen und messbar sind.
+
+Für die Wirksamkeit spielen vorwiegend die Funktionalitäten des CWA-Systems 
+und das (verzugsarme) Zusammenspiel seiner Teile eine Rolle. 
+Für den Nutzen sind auch nichtfunktionale Eigenschaften, 
+wie Usability der App, aber auch organisatorische Aspekte, 
+wie das Zusammenspiel der beteiligten Akteure, entscheidend. 
+Nicht zuletzt ist für eine aktive Nutzung auch das Vertrauen in die angemessene 
+Verarbeitung der Daten und damit Datenschutz und Transparenz maßgeblich.
+
 ## Welche Zwecke muss die Corona-Warn-App erfüllen?
 
 Bereits in der Datenschutz-Folgeabschätzung (DSFA) ist festgelegt, dass
@@ -62,17 +77,20 @@ Erfüllung ihrer Zwecke geeignet ist und ob die Verarbeitung der
 anfallenden personenbezogenen (pseudonymisierten) Daten angemessen ist.
 In diesem Zusammenhang werden **drei Zwecke der CWA** genannt:
 
-Zweck 1 – Abruf des Testergebnisses  
+**Zweck 1 – Abruf des Testergebnisses**
+
 Personen, die auf SARS-CoV-2 getestet worden sind, sollen ihr
 Testergebnis ohne Verzögerung erhalten,
 
-Zweck 2 – Warnung Anderer  
+**Zweck 2 – Warnung Anderer**
+
 Personen, die ein positives Testergebnis erhalten haben, sollen andere
 Personen, die sich in ihrer unmittelbaren Nähe aufgehalten haben,
 darüber informieren bzw. warnen, dass für sie (d.h. für die anderen
 Personen) ein erhöhtes Infektionsrisiko bestanden hat,
 
-Zweck 3 – Risikoermittlung  
+**Zweck 3 – Risikoermittlung**
+
 Personen, die sich in unmittelbarer Nähe einer SARS-CoV-2- infizierten
 Person aufgehalten haben, sollen darüber informiert bzw. gewarnt werden,
 dass für sie ein erhöhtes Infektionsrisiko bestanden hat.
@@ -259,7 +277,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 <div class="m-4">
 
 <figure>
-<video src="./v4_Teaser_CWA_Testkampagne.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_largeoffice.mp4">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
+<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
 </figure>
 
 </div>

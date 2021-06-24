@@ -11,7 +11,7 @@ Deutsche Telekom and SAP’s project team have released Corona-Warn-App version 
 
 <!-- overview -->
 
-With version 2.3 of the Corona-Warn-App, users will be able to add their digital proof of vaccination to the app and **show their vaccination status** via QR code. The app displays their full vaccination coverage 14 days after the last required vaccination. With that, users can manage information and features related to the Corona virus in one place: the Corona-Warn-App.
+With version 2.3 of the Corona-Warn-App, users will be able to add their digital proof of vaccination to the app and **show their vaccination status** via QR code. The vaccination certificate's validity must be checked by scanning the QR code with the CovPass check app in combination with the validation of the ID card whenever users show their vaccination status. The app displays their full vaccination coverage 14 days after the last required vaccination. With that, users can manage information and features related to the Corona virus in one place: the Corona-Warn-App.
 
 The digital vaccination certificate is an **electronic certificate** that can digitally document Corona vaccinations, for example on a smartphone. It can be generated in the doctor's office or at a vaccination center: After entering or accepting the data, a QR code is generated. Users can scan the code either with the CovPass-App or the Corona-Warn-App (version 2.3) to integrate the proof of vaccination in the app. However, users can also use the familiar yellow vaccination certificate to prove their immunization status.
 

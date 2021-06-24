@@ -73,6 +73,7 @@
                             "</li><li>Appointments only for their own employees:",
                             "<ul><li>The Federal Chancellery tests its own employees</li><li>Saarland's Ministry of Education and Culture tests teachers</li></ul>",
                             "</li></ul><hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).",
+                            "<a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img src='../../assets/img/faq/BMG_testzentren.png' alt='image' width='300'></a>",
                             "Another list of test sites from the Github community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
                         ]
                     }
@@ -112,6 +113,14 @@
                             "The statistics displayed in the Corona-Warn-App are compiled from different sources and are formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
                             "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>.",
                             "To ensure the validity of the data in the CWA's statistics, all data sources are carefully verified for completeness and consistency.  Thus, the presentation of the data in the app may be slightly delayed in comparison to other websites/sources. However, in terms of content, the values correspond to the official case numbers of the RKI."
+                        ]
+                    },
+                    {
+                        "title": "Are recovery certificates supported?",
+                        "anchor": "rec_cert",
+                        "active": true,
+                        "textblock": [
+                            "Neither the current version 2.3 nor the future version 2.4 of the Corona-Warn-App support recovery certificates. Further information on this topic will follow at a later date."
                         ]
                     }
                 ]
@@ -974,7 +983,7 @@
                         "active": true,
                         "textblock": [
                             "The app is aimed at people who are at least 16 years old. Of course, custodians are free to allow children and young people under the age of 16 to use the app.",
-                            "However, the age restrictions applicable in the Apple App Store and the Google Play Store are determined exclusively by the respective companies on the basis of various criteria. Therefore, the age limit in the Apple App Store is '12+' and in the PlayStore is '0+'."
+                            "However, the age restrictions applicable in the Apple App Store and the Google Play Store are determined exclusively by the respective companies on the basis of various criteria. Therefore, the age limit in the Apple App Store is '17+' (Status: June 2021, previously it was '12+' ) and in the PlayStore is '0+'."
                         ]
                     },
                     {
