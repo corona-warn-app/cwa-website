@@ -17,7 +17,7 @@ In addition, users can now find test providers who support the submission of tes
 
 The new feature enables users to have their negative test result confirmed by an official digital COVID test certificate that contains their corona test data in the form of a QR code. Within the EU, it serves as valid proof of a negative test result, which users can use, for example, to travel or to visit a restaurant that requires proof. 
 
-At the appropriate location (e.g. in a restaurant or at the airport), those responsible must varify the certificate's validity by scanning the QR code with the CovPass Check app and checking the ID card. 
+At the appropriate location (e.g. in a restaurant or at the airport), those responsible must verify the certificate's validity by scanning the QR code with the CovPass Check app and checking the ID card.
 
 ### How users can request certificates for rapid tests and PCR tests:
 
