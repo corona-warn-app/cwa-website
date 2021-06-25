@@ -19,7 +19,7 @@ Durch die neue Funktion in Version 2.4 der CWA haben Nutzer\*innen die Möglichk
 
 ### Testzertifikate für Schnelltests und PCR-Test in der App anfordern – So geht’s: 
 
-Nutzer\*innen können sowohl für PCR- als auch für Schnelltests ein Zertifikat anfordern, indem sie einen **Test in der Corona-Warn-App registrieren**: Dazu können sie auf dem Starbildschirm ihrer Corona-Warn-App auf „Test registrieren“ tippen und dann auf „QR-Code scannen“. Nachdem sie den QR-Code zur Test-Registrierung gescannt haben, öffnet sich automatisch das Fenster, in dem sie das Testzertifikat anfordern oder ablehnen können. 
+Nutzer\*innen können sowohl für PCR- als auch für Schnelltests ein Zertifikat anfordern, indem sie einen **Test in der Corona-Warn-App registrieren**: Dazu können sie auf dem Startbildschirm ihrer Corona-Warn-App auf „Test registrieren“ tippen und dann auf „QR-Code scannen“. Nachdem sie den QR-Code zur Test-Registrierung gescannt haben, öffnet sich automatisch das Fenster, in dem sie das Testzertifikat anfordern oder ablehnen können. 
 
 <br></br>
 <center> <img src="./test-registrieren.png" title="Test registrieren" style="align: center">  <img src="./zertifikat-anfordern-schnelltest.png" title="Testzertifikat für Schnelltest anfordern" style="align: center">  <img src="./testergebnis-anfordern-pcr.png" title="Testzertifikat für PCR-Test anfordern" style="align: center"></center>
