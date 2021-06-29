@@ -17,7 +17,7 @@ At [https://twitter.com/coronawarnapp](https://twitter.com/coronawarnapp), the c
 
 New versions and features, numbers, facts and figures on effectiveness, questions and answers from the community - the most important information is now available on Twitter. We look forward to discussions, suggestions for improvement and experiences in using the CWA. 
 
-Sign up, follow, join the discussion: Twitter @coronawarnapp
+Sign up, follow, join the discussion: Twitter [@coronawarnapp](https://twitter.com/coronawarnapp)
 
 
 <br></br>
