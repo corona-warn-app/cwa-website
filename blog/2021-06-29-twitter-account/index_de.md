@@ -15,7 +15,7 @@ Unter [https://twitter.com/coronawarnapp](https://twitter.com/coronawarnapp) pos
 
 Neue Versionen und Funktionen, Kennzahlen, Daten und Fakten zur Wirksamkeit, die wichtigsten Fragen und Antworten aus der Community - das Wichtigste gibt es jetzt auf Twitter. Wir freuen uns auf Diskussionen, Verbesserungsvorschläge und Erfahrungen im Umgang mit der CWA. 
 
-Anmelden, folgen, mitdiskutieren: Twitter @coronawarnapp
+Anmelden, folgen, mitdiskutieren: Twitter [@coronawarnapp](https://twitter.com/coronawarnapp)
 
 
 <br></br>
