@@ -33,6 +33,10 @@
                 <p class="px-3">{{content.description}}</p>
               </div>
             {{/if}}
+            {{else}}
+            <div>
+              <p class="px-3">{{../page-contents.glossary.noContentText}}</p>
+            </div>
           {{/each }}
         </div>
       {{else}}
@@ -50,6 +54,10 @@
                 <p class="px-3">{{content.description}}</p>
               </div>
             {{/if}}
+            {{else}}
+            <div>
+              <p class="px-3">{{../page-contents.glossary.noContentText}}</p>
+            </div>
           {{/each }}
         </div>
       {{/if}}
