@@ -59,13 +59,25 @@
                             "Notes:<ul><li>The error reports are automatically deleted after 14 days</li><li>Error reports that are transmitted to the server without request by the technical support cannot be analyzed and processed</li><li>There is no direct feedback channel for the error reports in the Corona-Warn-App. Technical support can only communicate with you via one of the above mentioned channels</li></ul>",
                             "For more info as well as screenshots, see the blog article <a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 2.2 enables creation of a rapid test profile and error reports</a>"
                         ]
+                    },
+                    {
+                        "title": "Where can I get tested?",
+                        "anchor": "where_can_i_get_tested",
+                        "active": true,
+                        "textblock": [
+                            "Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.",
+                            "A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a>",
+                            "The list of test sites contains only those entries that have been reported by the partners concerned.",
+                            "<hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).",
+                            "<a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img src='../../assets/img/faq/BMG_testzentren.png' alt='image' width='300'></a>",
+                            "Another list of test sites from the GitHub community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
+                        ]
                     }
                 ]
             },
             {
                 "title": "News",
                 "id": "news",
-                "active": true,
                 "accordion": [
                     {
                         "title": "Information about the security vulnerability already fixed by Google in the Exposure Notification Framework",
@@ -86,17 +98,250 @@
                             "Further details regarding data protection can be found on this poster:",
                             "<a href='../../assets/documents/Poster_DataDonation_EDUS_evaluation_privacy_EN.pdf' target='_blank' rel='noopener noreferrer'>Evaluation of the Corona-Warn-App: How user privacy remains protected</a>."
                         ]
-                    }, 
+                    },
                     {
                         "title": "In-App statistics starting with release 1.11",
                         "anchor": "further_details",
                         "active": true,
                         "textblock": [
                             "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on current infections starting with the 1.11 version of the app. The figures displayed guide users to better assess the current situation and to adjust their own behaviour.",
-                            "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ", 
+                            "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ",
                             "The statistics displayed in the Corona-Warn-App are compiled from different sources and are formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
                             "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>.",
                             "To ensure the validity of the data in the CWA's statistics, all data sources are carefully verified for completeness and consistency.  Thus, the presentation of the data in the app may be slightly delayed in comparison to other websites/sources. However, in terms of content, the values correspond to the official case numbers of the RKI."
+                        ]
+                    },
+                    {
+                        "title": "Are recovery certificates supported?",
+                        "anchor": "rec_cert",
+                        "active": true,
+                        "textblock": [
+                            "Neither version 2.3 nor version 2.4 of the Corona-Warn-App support recovery certificates. Further information on this topic will follow at a later date."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Test Certificate",
+                "id": "test_cert",
+                "accordion": [
+                    {
+                        "title": "Questions and answers about the test certificate",
+                        "anchor": "test_cert_index",
+                        "active": true,
+                        "textblock": [
+                            "<ul><li><a href='#test_cert_why'>What is the purpose of the digital COVID test certificate?</a></li><li><a href='#test_cert_get'>How can I request a test certificate?</a></li><li><a href='#test_cert_rat_and_pcr'>Can I request test certificates for rapid tests and PCR tests?</a></li><li><a href='#test_cert_when_and_where'>When will I receive my test certificate and where can I find it?</a></li><li><a href='#test_cert_validity'>How long is my test certificate valid?</a></li><li><a href='#test_cert_privacy'>How will my privacy be protected if I create a test certificate?</a></li></ul>"
+                         ]
+                    },
+                    {
+                        "title": "What is the purpose of the digital COVID test certificate?",
+                        "anchor": "test_cert_why",
+                        "active": true,
+                        "textblock": [
+                            "Starting with version 2.4 of the Corona-Warn-App (CWA), you can request a digital test certificate via the app. The new feature allows you to prove your negative test result through an official, digital COVID test certificate in the form of a QR code in the CWA. Within the countries of the European Union, it can serve as officially valid proof of a negative test result, which you can use, for example, for travel or in other legally prescribed cases, such as a visit to a restaurant. You can then show the QR code in the CWA."
+                        ]
+                    },
+                    {
+                        "title": "How can I request a test certificate?",
+                        "anchor": "test_cert_get",
+                        "active": true,
+                        "textblock": [
+                            "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Register Test' on the start screen of your CWA and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can 'request the test certificate' or reject it if you do not want to receive one."
+                        ]
+                    },
+                    {
+                        "title": "Can I request test certificates for rapid tests and PCR tests?",
+                        "anchor": "test_cert_rat_and_pcr",
+                        "active": true,
+                        "textblock": [
+                            "You can request a certificate for both PCR and rapid tests, which are then issued in the event of a negative test.",
+                            "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.","<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
+                        ]
+                    },
+                    {
+                        "title": "When will I receive my test certificate and where can I find it?",
+                        "anchor": "test_cert_when_and_where",
+                        "active": true,
+                        "textblock": [
+                            "Shortly after the test result is available in the app, you will also receive your test certificate in the app - provided that you have requested it beforehand, and the respective rapid test site supports the creation of a certificate. You can then view it via the 'Certificates' tab. If you tap on the COVID test certificate, you will be shown the QR code that can be scanned for verification, and more information, such as type of test, date and time of execution and test result."
+                        ]
+                    },
+                    {
+                        "title": "How long is my test certificate valid?",
+                        "anchor": "test_cert_validity",
+                        "active": true,
+                        "textblock": [
+                            "How long the certificate is valid depends on the regulations of the respective federal state or municipality."
+                        ]
+                    },
+                    {
+                        "title": "How will my privacy be protected if I create a test certificate?",
+                        "anchor": "test_cert_privacy",
+                        "active": true,
+                        "textblock": [
+                            "To create the test certificate, the data is encrypted end-to-end and transmitted from the laboratory or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the validity of the certificate. The data cannot be decrypted by the RKI and will be deleted after delivery of the certificate.",
+                            "Test certificates are stored in the app for an unlimited period of time. You can delete certificates manually by going to the 'Certificates' tab, selecting the respective test certificate and then selecting 'Remove test certificate'."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Vaccination Cert.",
+                "id": "vac_cert",
+                "accordion": [
+                    {
+                        "title": "Questions and answers about the vaccination certificate",
+                        "anchor": "vac_cert_index",
+                        "active": true,
+                        "textblock": [
+                            "<ul>",
+                            "<li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>How can I transfer the vaccination certificate when changing device?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>What do I do if I lose my phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Will the vaccination certificate be included in my backup?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps?</a></li>",
+                            "</ul>"
+                        ]
+                    },
+                    {
+                        "title": "Why do I get the error message 'This QR code is not a valid vaccination certificate. (VC_PREFIX_INVALID)' when I try to scan my vaccination QR code?",
+                        "anchor": "vac_cert_invalid",
+                        "active": true,
+                        "textblock": [
+                            "The app can only successfully scan 'EU Digital COVIID Vaccination Certificates' and these are being issued by vaccination centers since 14 June 2021.",
+                            "Usually, any document issued before 14 June 2021 will not be a valid digital <b>EU</b> vaccination certificate, but just a vaccination documentation according to §22 of the German Infection Protection Act, that is incompatible with the latest aligned European guidelines for a digital vaccination certificate. Therefore, such a document, as well as the barcodes and QR codes in the yellow vaccination booklet, <b>cannot</b> be scanned with the Corona-Warn-App.",
+                            "The new digital certificate statements (that can be scanned) are in the process of being made available by authorized agencies. In some federal states, vaccination centers will automatically send these new digital certificates via mail or they may make them available online. Starting on 14 June 2021, those who have already been vaccinated can have the digital vaccination certificate issued in pharmacies on the basis of a vaccination record (yellow vaccination booklet or vaccination proof), if they do not receive a digital certificate via mail or online. <a href='https://www.mein-apothekenmanager.de/' target='_blank' rel='noopener noreferrer'>Pharmacies search</a>.",
+                            "In this news article you will find information about the <b>individual federal states:</b><br><a href='https://www.focus.de/gesundheit/coronavirus/covpass-digitaler-corona-impfpass-fuers-handy-startet-das-ist-der-stand-in-ihrem-bundesland_id_13385519.html' target='_blank' rel='noopener noreferrer'>Digitaler Corona-Impfpass startet - das ist der Stand in Ihrem Bundesland</a>.",
+                            "Example of EU Digital COVID Vaccination Certificate:",
+                            "<a href='https://user-images.githubusercontent.com/66998419/121585483-f014c280-ca32-11eb-83b1-38ef4a74719b.jpg' target='_blank' rel='noopener'><img src='../../assets/img/faq/EU_digital_vaccination_certificate_2.jpg' alt='image' width='300'></a>"
+                        ]
+                    },
+                    {
+                        "title": "What is the digital certificate of vaccination?",
+                        "anchor": "vac_cert_what",
+                        "active": true,
+                        "textblock": [
+                            "Starting with version 2.3 of the Corona-Warn-App (CWA), you can add your digital vaccination certificate to the CWA and thus securely and digitally prove your Corona vaccination status via QR code. The CWA indicates the complete vaccination protection 14 days after the last required vaccination. The digital vaccination certificate is an additional way to document vaccinations. Thereby you are able to digitally store information such as vaccination time and vaccine in a personalized manner on your smartphones. The use of digital certificate of vaccination in the CWA is voluntary. You can also prove your Corona vaccination in a different way."
+                        ]
+                    },
+                    {
+                        "title": "Why is there a digital proof of vaccination?",
+                        "anchor": "vac_cert_why",
+                        "active": true,
+                        "textblock": [
+                            "At the beginning of the year, the European Council decided to launch an interoperable and standardized proof of vaccination for medical purposes. Germany is now quickly implementing this European decision in order to be able to provide all citizens who wish to do so with a digital proof of vaccination. In the meantime, the European Commission has also presented a draft regulation regulating an EU-wide recognition framework for (digital) certificates for vaccinations, tests and for persons with COVID-19 recovered status in order to facilitate the free movement of travelers. The EU's Digital COVID Certificate forms the legal framework for the member states' solutions."
+                        ]
+                    },
+                    {
+                        "title": "Who can obtain an digital proof of vaccination? How do I get a vaccination certificate? If I already have full vaccination protection, how can I transfer the status to the Corona-Warn-App afterwards?",
+                        "anchor": "vac_cert_who",
+                        "active": true,
+                        "textblock": [
+                            "All persons who are entitled to a vaccination may also have a digital proof of vaccination available in addition to the paper-based vaccination certificate.",
+                            "If necessary, you can obtain a Corona vaccination certificate from the doctor's office or vaccination center where the vaccination was carried out. Simply ask on site. However, vaccination centers and medical practices are not obliged to issue vaccination certificates.",
+                            "Various ways are being explored to create digital vaccination certificates for Corona vaccinations afterwards. In principle, the subsequent issuance should take place where one has been vaccinated. If the appropriate contact details are available in the vaccination centers, the QR codes should be sent automatically by mail as far as possible. In addition, doctors and pharmacists could subsequently provide proof of vaccination."
+                        ]
+                    },
+                    {
+                        "title": "Can I use a complete vaccination status in the app as a travel permission?",
+                        "anchor": "vac_cert_privileges_travel",
+                        "active": true,
+                        "textblock": [
+                            "For example, whether you are allowed to travel with completed vaccination protection, depends on the regulations of the respective country.",
+                            "Among other things, you can use this   <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>tool</a> in order to plan your journey within the EU."
+                        ]
+                    },
+                    {
+                        "title": "How does digital proof of vaccination work?",
+                        "anchor": "vac_cert_how",
+                        "active": true,
+                        "textblock": [
+                            "The digital proof of vaccination is generated in the doctor's pratice or in a vaccination center. After entering or transferring the data, a vaccination certificate token (QR code) will be created for you, which you can scan directly with the Corona-Warn-App (CWA) or can be handed to you on a paper printout and later scanned with the CWA.  You can then manage your digital vaccination certificates on your smartphone."
+                        ]
+                    },
+                    {
+                        "title": "Can I show the QR code without an internet connection?",
+                        "anchor": "vac_cert_internet",
+                        "active": true,
+                        "textblock": [
+                            "Yes. As soon as the QR code is displayed in the Corona-Warn-App, you can show it at any time without being connected to the internet."
+                        ]
+                    },
+                    {
+                        "title": "Am I obliged to use the digital certificate of vaccination in the Corona-Warn-App? Will there still be the yellow paper-based vaccination booklet? Can I continue to use my yellow vaccination booklet? What about people who don't own a smartphone?",
+                        "anchor": "vac_cert_voluntary",
+                        "active": true,
+                        "textblock": [
+                            "The digital proof of vaccination via the Corona-Warn-App is a completely voluntary and complementary offer. If you do not have a digital certificate of vaccination or have lost it, the proof of vaccination via the well-known 'yellow booklet' (yellow vaccination passport) is still possible and valid. You can also prove Corona vaccinations with the printed Corona vaccination certificate for full vaccination."
+                        ]
+                    },
+                    {
+                        "title": "How is the proof of vaccination verified?",
+                        "anchor": "vac_cert_verification",
+                        "active": true,
+                        "textblock": [
+                            "The vaccination certificate (QR code) is used digitally via the CovPass-App or the Corona-Warn-App (CWA) or alternatively as a machine-readable print. The vaccination certificate contains only information about the vaccination status, the name of the vaccinated person, and the date of birth. For service providers who want to check the vaccination status, there will be a verification app to check the vaccination certificate. This allows the vaccination status to be scanned in a similar way to a barcode of a flight or train ticket. Alternatively, proof with the paper-based vaccination document is possible."
+                        ]
+                    },
+                    {
+                        "title": "Why has no joint EU-wide project been called out for proposal for a certificate?",
+                        "anchor": "vac_cert_eu",
+                        "active": true,
+                        "textblock": [
+                            "A joint EU call for proposals would have taken too much time and would have been difficult to implement due to the different vaccination information systems in the Member States. The EU approach is about regulating a recognition framework. Any cross-border pilots could be accompanied by the EU Commission. When implementing the Digital Proof of Vaccination in Germany, the EU requirements have been taken into account from the outset."
+                        ]
+                    },
+                    {
+                        "title": "Does my vaccination status affect the calculation of the risk? Does the calculation of the risk change if a vaccinated person has become infected, and then warns other users?",
+                        "anchor": "vac_cert_risk_assesment",
+                        "active": true,
+                        "textblock": [
+                            "Risk calculation and vaccination certificates are independent features of the app. The risk calculation does not take into account whether you are vaccinated against COVID-19. The calculation of the risk also does not change if a vaccinated person has become infected, and then warns other users."
+                        ]
+                    },
+                    {
+                        "title": "How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?",
+                        "anchor": "vac_cert_red_warning",
+                        "active": true,
+                        "textblock": [
+                            "Recommendation: If a vaccinated person receives a high risk warning, no quarantine is necessary initially, as long as no symptoms appear. If symptoms do occur, you should get tested immediately and go into immediate quarantine."
+                        ]
+                    },
+                    {
+                        "title": "Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone? How can I transfer the vaccination certificate when changing device? What do I do if I lose my phone? Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps? Will the vaccination certificate be included in my backup?",
+                        "anchor": "vac_cert_multiple_scan_possible",
+                        "active": true,
+                        "textblock": [
+                            "There is no limit to how often you can scan the QR code of your vaccination certificates. By scanning the QR code of your certificate you can add and manage the vaccination certificates: <ul><li>on multiple devices, e.g. on your private and business phone </li><li>on a new device, when changing device</li><li> in several apps, e.g. the Corona-Warn-App and the CovPass-App</li><li> on a device you have reset. The certificate is not included in the backup. </li></ul>"
+                        ]
+                    },
+                    {
+                        "title": "Can I save the vaccination certificates of relatives, such as children, in the Corona-Warn-App?",
+                        "anchor": "vac_cert_relatives",
+                        "active": true,
+                        "textblock": [
+                            "With the Corona-Warn-App, you can only scan and add vaccination certificates from one person. It is not possible to add your own and additionally, for example, that of your child or partner.<br>With the CovPass-App, the digital vaccination certificates of children or partners can be stored together on a smartphone."
+                        ]
+                    },
+                    {
+                        "title": "What data is displayed when checking the QR code?",
+                        "anchor": "vac_cert_privacy_data_shown",
+                        "active": true,
+                        "textblock": [
+                            "The QR code is displayed in the Corona-Warn-App. After scanning the QR code with the CovPassCheck-App, only the most necessary information can be seen: vaccination status, last name, first name and date of birth of the vaccinated person."
+                        ]
+                    },
+                    {
+                        "title": "Where is my personal data of the digital certificate of vaccination stored? Is there a central vaccination register?",
+                        "anchor": "vac_cert_privacy_data_decentral",
+                        "active": true,
+                        "textblock": [
+                            "No, there is no central vaccination register. When the Corona vaccination certificate is created, your data will be collected once by the vaccination site and transmitted to the RKI for signing. The data will be deleted there immediately. When you add the Corona vaccination certificate in the app, your personal information is only stored locally (decentralized) on your smartphone. You can decide for yourself if and when to delete this data on your device.",
+                            "All digital vaccination certificates are created only temporarily in the vaccination logging system and then deleted. Permanent storage is only realized decentral on the users' smartphones."
+                        ]
+                    },
+                    {
+                        "title": "How is abuse being prevented?",
+                        "anchor": "vac_cert_misuse_prevent",
+                        "active": true,
+                        "textblock": [
+                            "The QR code for digital certificate of vaccination may only be issued by authorized persons in vaccination centers, medical practices and hospitals. When reviewing digital vaccination certificates, a photo ID may be presented as appropriate. The digital proof of vaccination is cryptographically protected against changes."
                         ]
                     }
                 ]
@@ -104,19 +349,13 @@
             {
                 "title": "Rapid Antigen Test",
                 "id": "rapid_antigen_test",
-                "active": true,
                 "accordion": [
                     {
                         "title": "Which partners participate in the rapid test integration? Which partners can I book a rapid antigen test with?",
                         "anchor": "rat_partner",
                         "active": true,
                         "textblock": [
-                            "Rapid antigen test appointments can be booked in advance with the following partners (German websites):",
-                            "<ul><li><a href='https://meintest.brk.de' target='_blank' rel='noopener noreferrer'>Bavarian Red Cross</a></li><li><a href='https://corona-schnelltest-zentren.dm.de' target='_blank' rel='noopener noreferrer'>dm-drugstore market</a></li><li><a href='https://buergertest.ecocare.center' target='_blank' rel='noopener noreferrer'> EcoCare (Kaufland and Lidl)</a></li><li><a href='https://testbuchen.de' target='_blank' rel='noopener noreferrer'>No-Q (participating pharmacies, family doctors and other test centres)</a></li></ul>",
-                            "The following partners also participate in the rapid test integration with the Corona-Warn-App:",
-                            "<ul><li>Doctorbox</li><li>Huber Health Care</li></ul>",
-                            "The following partners also participate in the rapid test integration with the Corona-Warn-App, but do not offer rapid antigen tests for the general public:",
-                            "<ul><li>The Federal Chancellery tests its own employees</li><li>The Ministry of Education and Culture Saarland tests teachers</li></ul>"
+                            "See <a href='#where_can_i_get_tested' target='_self' rel='noopener noreferrer'>Where can I get tested?</a>"
                         ]
                     },
                     {
@@ -138,12 +377,12 @@
                         ]
                     },
                     {
-                        "title": "How long is a rapid antigen test valid? What does the count-down mean?",
+                        "title": "How long is a rapid antigen test valid?",
                         "anchor": "rat_how_long_valid",
                         "active": true,
                         "textblock": [
-                            "A negative rapid test result is valid for 48 hours after submission and can be used as evidence, if required by law. When you tap on your negative test result on the main screen of the app, you will see a counter that shows you how long your test result has already been available. After 48 hours, your rapid test result will automatically be removed. You can then take another rapid test and register it in the app.",
-                            "There is no limited validity for positive rapid test results, so no counter will be displayed to you in this case. As soon as you receive a positive test result, immediately follow the instructions displayed in the app."
+                            "A negative rapid test result is valid for 48 hours after submission and can be used as evidence, if required by law. When you tap on your negative test result on the main screen of the app, under Android, you will see a counter that shows how long your test result has already been available. Under iOS, the date and time when the test result was issued is shown. After 48 hours, your rapid test result will automatically be removed. You can then take another rapid test and register it in the app.",
+                            "There is no limited validity for positive rapid test results, so no counter or the date of issue will be displayed to you in this case. As soon as you receive a positive test result, immediately follow the instructions displayed in the app."
                         ]
                     },
                     {
@@ -228,7 +467,8 @@
                         "anchor": "rat_risk_parameter",
                         "active": true,
                         "textblock": [
-                            "No. For rapid tests as well as for PCR tests, the same criteria for risk calculation apply as before. If you receive a risk warning, you won't see in the app whether it was caused by sharing a quick test or PCR test result. The exact parameters for the calculation can be found in the FAQ article <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)</a>."                        ]
+                            "No. For rapid tests as well as for PCR tests, the same criteria for risk calculation apply as before. If you receive a risk warning, you won't see in the app whether it was caused by sharing a quick test or PCR test result. The exact parameters for the calculation can be found in the FAQ article <a href='#encounter_19_calc' target='_blank' rel='noopener noreferrer'>How does the app calculate the risk (version >=1.9)</a>."
+                        ]
                     },
                     {
                         "title": "What is the purpose of a rapid test profile?",
@@ -251,7 +491,6 @@
             {
                 "title": "Event Check-In",
                 "id": "check_in",
-                "active": true,
                 "accordion": [
                     {
                         "title": "Questions and answers about the event registration",
@@ -266,7 +505,7 @@
                             "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Does everyone who scanned the same Event QR code get a warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can the user see what the alert is based on, i.e. which scanned Event QR code caused the warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a></li></ul>"
                         ]
                     },
-                     {
+                    {
                         "title": "How does event registration work in the Corona-Warn-App?",
                         "anchor": "check_in_how_does_it_work",
                         "active": true,
@@ -296,7 +535,7 @@
                         "active": true,
                         "textblock": [
                             "The purpose of event registration is to identify risk contacts that are currently not detected with Bluetooth-Low-Energy Technology (BLE). The scope of application is therefore primarily geared to indoor use, where there is an increased risk of infection due to the distribution of aerosols in the room, even beyond the usual contact limit of 1.5 meters. Ideally, a separate Event QR code should be created for each room where visitors are staying. Each visitor then scans the QR code for the rooms in which she/he has stayed. This ensures that only those who have been exposed to an increased risk of infection are warned.",
-                            "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.", 
+                            "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.",
                             "For outdoor events, the risk of infection is usually limited to a distance of 1.5 meters, which can already be detected with BLE technology, i.e. the usual use of the CWA. Basically, the event registration can be used here as well. However, it is not suitable for events in large outdoor areas, such as zoos.",
                             "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
@@ -355,7 +594,7 @@
                         "anchor": "check_in_qr_warning",
                         "active": true,
                         "textblock": [
-                            "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same Event QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",  
+                            "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same Event QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",
                             "The procedure is based on the existing CWA warning process: If an event participant or a visitor of a location has tested positive, he/she should share this result via the CWA. As a result, all other participants who were checked in at the same time will receive an immediate warning without having to burden the health authorities. Depending on the epidemiological situation, the warning is displayed in one of two versions: 'low risk' (green tile) or 'high risk' (red tile).",
                             "<b>How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)? </b>",
                             "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about COVID-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
@@ -404,10 +643,10 @@
                         "anchor": "ios_black_screen",
                         "active": true,
                         "textblock": [
-                            "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications cannot be activated again after an update. The result is a black screen in the iOS settings.",
+                            "There is a known issue under iOS 13.7 / 14 where in rare cases the Exposure Notifications cannot be activated again after an update. The result is a black or white screen in the iOS settings.",
                             "Also, rare cases (after updates typically) with the error notification 'ENA.ExposureNotificationError-Error2' are known.",
                             "To fix the problem, proceed as follows:",
-                            "<ol><li>Navigate to the iOS settings</li><li>Select 'General' -> 'Reset' -> 'Reset Location and Privacy'</li><li>Afterwards the permissions in the Corona-Warn-App have to be assigned again. To do so, open the Corona-Warn-App and follow the instructions for the re-assignment of the permissions.</li></ol>"
+                            "<ol><li>Navigate to the iOS settings</li><li>Select 'General' -> 'Reset' -> 'Reset Location and Privacy'</li><li>Afterwards the permissions in the Corona-Warn-App have to be assigned again. To do so, open the Corona-Warn-App and follow the instructions for the re-assignment of the permissions.</li><li>Restart your smartphone.</li></ol>"
                         ]
                     },
                     {
@@ -444,7 +683,7 @@
                             "Every PCR-Test QR code you receive can only be entered into the app once. If you use the Corona-Warn-App on multiple devices, the code can only be registered in one device.",
                             "If you have already registered the QR code, but then deleted it from the app, the code can also not be entered a second time.",
                             "<b>The code you received is designed for another app or service</b>",
-                            "PCR-Test QR codes for the Corona-Warn-App are distributed on a standardized information sheet as part of form 10C. You can compare the QR code information you received with the <a href='https://www.kbv.de/media/sp/Ansichtsexemplar_Muster10C.pdf' target='_blank' rel='noopener noreferrer'>bottom half of this example form</a>. If you have not received the depicted information sheet, your QR code is likely incompatible to the app. In this case, please contact the doctor's office or testing center where you made the test and ask them where your QR code can be registered.",
+                            "PCR-Test QR codes for the Corona-Warn-App are distributed on a standardized information sheet as part of form 10C. You can compare the QR code information you received with the <a href='https://www.kbv.de/media/sp/Ansichtsexemplar_Muster10C.pdf' target='_blank' rel='noopener noreferrer'>bottom half of this example form</a>. If you have not received the depicted information sheet, your QR code is likely incompatible with the app. In this case, please contact the doctor's office or testing center where you made the test and ask them where your QR code can be registered.",
                             "<b>The code you received was wrongly generated</b>",
                             "In some cases, the error can occur during the first registration of the PCR-Test QR Code. This can happen if a test center generated the QR code in a wrong format. We are currently looking into how to improve the app to detect wrongly generated QR Codes and still accept them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>.",
                             "If you are sure that the QR code was not scanned before and you received the correct information sheet, but are still receiving errors, you can also report this case by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code as well as contact information of the doctor or test center where you received it. All non-essential personal data should be blacked out. We will then try to resolve QR code generation issues together with the involved parties."
@@ -474,7 +713,7 @@
                             "If the Corona-Warn-App indicates a high infection risk with the red card, please isolate yourself quickly and consult a doctor to get screened if necessary.",
                             "For a smooth testing process, to receive the test result and to warn others in case of a positive result, please follow the steps in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'>this overview from the Robert Koch Institute</a>.",
                             "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='PDF'></a>",
-                            "See also: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
+                            "See also: <a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
                         ]
                     },
                     {
@@ -491,16 +730,30 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] A card on my Start Screen is notifying me that my device is not or only partially compatible. What does this mean?",
-                        "anchor": "incompatibility_warning",
+                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen indicates that my device is only partially compatible. What does this mean?",
+                        "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
-                            "If you see such a notice, your device is not able to send any random IDs via Bluetooth. This can be caused by a restriction due to your combination of hardware and software on your device. Because of it, the Corona-Warn-App cannot use Bluetooth Low Energy in its so-called “peripheral mode”.",
-                            "In case you are infected and you decide to warn others, only users who were checked in to the same event or the same location, at the same time as you were, can be warned. Your own risk assessment is <b>not affected</b>. All other features of the app are also not affected.",
-                            "Please ensure that you are using the latest version of the operating system available for your smartphone. If the problem persists, please contact your device manufacturer.",
-                            "If the card shows that your device is completely incompatible, the cause could be that your device does not contain a Bluetooth chip. Only in this case, you cannot exchange random IDs with others and risk assessment can only base its calculation on locations and events you checked in to.",
-                            "<b>Both Check-in and Contact Journal functionality, as well as retrieving PCR and rapid test results, is fully functional without restriction in any case</b> and only proximity-based ID recording is affected.",
-                            "Bluetooth compatibility checking and warnings were introduced with Android Corona-Warn-App version 2.2."
+                            "Since version 2.2, the Corona-Warn-App for Android checks whether your device supports all necessary Bluetooth features. If you are seeing this message, the operating system of your device lacks the ability to <i>send</i> random IDs via Bluetooth. However, it is still able to <i>receive</i> random IDs. <b>Your own risk assessment is therefore not affected</b>.",
+                            "The only limitation caused by this is that you cannot warn contacts discovered via Bluetooth when sharing a positive test result. However, users who were checked in to the same event or the same location, at the same time as you were, will still be warned. The Check-In functionality, the retrieval of PCR and rapid test results as well as the contact journal feature are not affected and can be used normally.",
+                            "To resolve the problem, please update to the latest version of your device's operating system. If this doesn't help, please <a href='https://support.google.com/android/answer/3094742?hl=en'>contact your device manufacturer</a>.",
+                            "<hr/>",
+                            "<b>Technical explanation</b>",
+                            "Your device's Bluetooth hardware supports the Bluetooth Low Energy technology which is necessary for distributing random IDs. However, the Bluetooth driver of your operating system is missing a capability called “peripheral mode”. Without this capability, the Corona-Warn-App cannot initiate your device to periodically broadcast its own random IDs via Bluetooth. This can only be fixed by your device manufacturer via an update of your operating system."
+                        ]
+                    },
+                    {
+                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen indicates that my device is not compatible with Exposure Notifications at all. What does this mean?",
+                        "anchor": "full_incompat",
+                        "active": true,
+                        "textblock": [
+                            "Since version 2.2, the Corona-Warn-App for Android checks whether your device supports all necessary Bluetooth features. If you are seeing this message, your device does not support the Bluetooth functionality needed for sending and receiving random IDs. Your risk assessment will therefore only be based on events and locations where you checked in.",
+                            "The Check-In functionality, the retrieval of PCR and rapid test results as well as the contact journal feature are not affected and can be used normally.",
+                            "Possible reasons for this message are:<ul><li>Your device does not contain the hardware that is required to use Bluetooth Low Energy.</li><li>Your device does not contain the software required to use the Bluetooth Low Energy capabilities of your hardware.</li><li>You are running the app in the Android Emulator.</li></ul>",
+                            "To resolve the problem, please update to the latest version of your device's operating system. If this doesn't help, please <a href='https://support.google.com/android/answer/3094742?hl=en'>contact your device manufacturer</a>.",
+                            "<hr/>",
+                            "<b>Technical explanation</b>",
+                            "The Corona-Warn-App needs the Bluetooth Low Energy technology for the distribution of random IDs. However, this technology is not available on your device due to missing hardware or software support. Without this capability, the Corona-Warn-App can neither initiate your device to periodically broadcast its own random IDs via Bluetooth nor receive random IDs from other devices."
                         ]
                     }
                 ]
@@ -652,28 +905,19 @@
                             "Apple provides the operating system iOS 13.7 and higher versions for the iPhone SE (1st generation), iPhone 6s, and newer models.",
                             "As of February 5, 2021, only the Corona-Warn-App (CWA) versions 1.5.3 and later are supported. For this reason, users with older versions will receive a notification to update their app accordingly. iOS users who have previously used iOS 13.5 and CWA version 1.3, for example, must now update the iOS operating system to at least iOS 13.7 in order to continue using the CWA. Only then can the technically correct operation of the app be ensured.",
                             "<ul><li>Please update your iOS version first. Older smartphones, such as the iPhone SE, 6S or 6S Plus, also support the latest iOS operating system. This allows you to upgrade your iPhone to at least iOS 13.7. For security reasons, however, you should keep your iPhone up-to-date (currently iOS 14.4), as Apple also regularly fixes minor security vulnerabilities with the updates. You can do this on your iPhone under Settings - General - Software Update.</li><li>Subsequently, please update the Corona-Warn-App. The Corona-Warn-App must also be installed at least in version 1.5.3. The version 1.12.1 is already available.</li></ul><hr/>",
-
                             "More details about the system requirements can be found <a href='#minimum_requirements' target='_blank' rel='noopener noreferrer'>in this FAQ entry.</a>",
                             "See also the blog articles <a href='../blog/2020-12-15-ios-12-5' target='_blank' rel='noopener noreferrer'>Telecom and SAP will make the Corona-Warn-App available for iOS 12.5.</a> and <a href='../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 1.12 comes with two new features</a><hr/>",
                             "Apple introduced the required Exposure Notification API with iOS 13.5, see <a href='https://support.apple.com/en-us/HT210393#135' target='_blank' rel='noopener noreferrer'>About iOS 13 Updates</a>. With version 1.9 of the Corona-Warn-App (and the use of <a href='../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank' rel='noopener noreferrer'>version 2 of the Exposure Notification Framework</a>), iOS [ios.minimum-required-os-version] is now required, as version 2 of Exposure Notification API has been introduced with this version. You can find the supported devices here: <a href='https://support.apple.com/guide/iphone/supported-iphone-models-iphe3fa5df43/ios' target='_blank' rel='noopener noreferrer'>Supported iPhone Models</a>. Unfortunately, Apple no longer supports devices that are older than 4-5 years. We as app developers, unfortunately, cannot influence this."
-
-
-
-
-
-
-
-
-
                         ]
                     },
                     {
-                        "title": "[Apple/iOS]: I am testing a beta version of iOS. Why is the Corona-Warn-App not yet supported?",
-                        "anchor": "beta_ios",
+                        "title": "I am testing a beta version of iOS/Android. What do I have to consider?",
+                        "anchor": "os_beta",
                         "active": true,
                         "textblock": [
-                            "We do not officially support beta versions of the respective operating systems. These are still in development and not intended for productive operation.",
-                            "However, if you as a participant in the Apple beta software programme would like to point out potential errors or incompatibilities at an early stage, <a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>we are happy to receive your feedback on Github</a>."
+                            "Beta versions of the respective operating systems are not officially supported because they are still in development and not intended for productive operation. You can still use the app normally, but you should be aware that you might encounter errors that are not present when using a release version of your operating system.",
+                            "However, if you experience errors, you can feel free to point them or other incompatibilities out by opening an issue on GitHub:",
+                            "<ul><li><a href='https://github.com/corona-warn-app/cwa-app-ios/issues' target='_blank' rel='noopener noreferrer'>iOS Issue Tracker</a></li><li><a href='https://github.com/corona-warn-app/cwa-app-android/issues' target='_blank' rel='noopener noreferrer'>Android Issue Tracker</a></li></ul>"
                         ]
                     },
                     {
@@ -720,6 +964,7 @@
                         "anchor": "interoperability_countries",
                         "active": true,
                         "textblock": [
+                            "<img src='../../assets/img/faq/eu-flag.png' width=100px alt='EU flag'> This project was funded by the European Commission.",
                             "Together with the European Commission, an infrastructure for secure information exchange has been developed, known as the \"Interoperability Gateway\". This gateway enables the Corona-Warn-App to operate across national borders and to receive potential warning messages abroad. Detailed information about the Gateway is available from the European Commission in <a href='https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_1905#gateway'>Coronavirus: EU interoperability gateway for contact tracing and warning apps – Questions and Answers</a>. In order to also enable warnings between users of the Swiss coronavirus app and the Corona-Warn-App, the RKI also operates another exchange server together with Switzerland (Federal Office of Public Health of the Swiss Confederation).",
                             "To view more information in the app, tap",
                             "<ol><li>'EXPOSURE LOGGING ACTIVE/STOPPED'</li><li>Then tap 'Transnational Exposure Logging'.</li><li>Scroll down to the list of countries.</li></ol>",
@@ -734,7 +979,7 @@
                         "active": true,
                         "textblock": [
                             "The app is aimed at people who are at least 16 years old. Of course, custodians are free to allow children and young people under the age of 16 to use the app.",
-                            "However, the age restrictions applicable in the Apple App Store and the Google Play Store are determined exclusively by the respective companies on the basis of various criteria. Therefore, the age limit in the Apple App Store is '12+' and in the PlayStore is '0+'."
+                            "However, the age restrictions applicable in the Apple App Store and the Google Play Store are determined exclusively by the respective companies on the basis of various criteria. Therefore, the age limit in the Apple App Store is '17+' (Status: June 2021, previously it was '12+' ) and in the PlayStore is '0+'."
                         ]
                     },
                     {
@@ -762,6 +1007,16 @@
                         "active": true,
                         "textblock": [
                             "It's not foreseeable at the moment if and when the app will be available in other app stores except Google or Apple. The app will use the Apple and Google Exposure Notification APIs. The community is invited to contribute and use the app for other APIs."
+                        ]
+                    },
+                    {
+                        "title": "A new version of the Corona-Warn-App is supposed to be available, but I have not received the update yet. What do I do?",
+                        "anchor": "release_time",
+                        "active": true,
+                        "textblock": [
+                            "Updates for the Corona-Warn-App are distributed using a so-called \"staged rollout\" over a timespan of 48 hours. This means that, instead of distributing the update immediately to every user, the update is gradually made available to a larger percentage of users over time. By using a staged rollout, critical bugs and crashes can be detected early and be addressed by the development team before they affect a large amount of users.",
+                            "The order in which users receive the update is randomly determined for every release by the app store vendors. Therefore, you might receive the update up to two days after the official release date. The Corona-Warn-App development team has no influence on the order in which users receive the update.",
+                            "<b>Please note:</b> On iOS, it is possible to manually trigger the update by visiting the App Store page of the Corona-Warn-App. This option does not exist on Android."
                         ]
                     },
                     {
@@ -1219,8 +1474,8 @@
                         "anchor": "why_oss",
                         "active": true,
                         "textblock": [
-                            "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
-                            "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reviews and pull requests."
+                            "We believe that the success of the app depends directly on user acceptance and trust. With an open source approach, the full source code for the app and the infrastructure are freely and openly available without access restrictions. In this way, we create the transparency necessary for a strong basis of trust.",
+                            "Furthermore, the open-source approach gives the broader public and the developer community the opportunity to actively contribute to the app’s success, for example, through reporting of errors, discussions, code reviews and contributions via pull requests."
                         ]
                     },
                     {
@@ -1228,16 +1483,16 @@
                         "anchor": "oss_complete",
                         "active": true,
                         "textblock": [
-                            "Yes. All code central to risk identification and propagation functionality is available openly on GitHub. Reviews are possible before and after the app is released. Questions about topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss central issues there. The discussion posts remain publicly available on the GitHub."
+                            "Yes. The full source code of the app is openly available on <a href='https://github.com/corona-warn-app'>GitHub</a>. Code reviews and comments are possible before and after a version of the app is released. Questions about development topics such as security, data privacy will be clarified with the community. Each person can create their own build of the app and test it. Apart from the source code, we also discuss other central issues relevant for the app there. The discussion posts remain publicly available on GitHub."
                         ]
                     },
                     {
-                        "title": "How will the development status in GitHub be uploaded to the app stores?",
+                        "title": "How is the development status in GitHub transferred to the app in the app stores?",
                         "anchor": "dev_status",
                         "active": true,
                         "textblock": [
-                            "The app is developed using standard tools (such as Xcode and Android Studio) and uploaded to Apple App Store and Google Play Store.",
-                            "We will be able to publish information as soon as it is available on the issue as to whether the code in GitHub is really the same as that in the app in the respective app stores ('reproducible builds'). You can find further information on the progress of this issue in the respective <a href='https://github.com/corona-warn-app/cwa-documentation/issues/14' target='_blank' rel='noopener noreferrer'>GitHub issue</a>."
+                            "The app is developed using standard tools (such as Android Studio for Android and Xcode for iOS). Releases are announced publicly on GitHub (<a href='https://github.com/corona-warn-app/cwa-app-android/releases' target='_blank' rel='noopener noreferrer'>Android</a>, <a href='https://github.com/corona-warn-app/cwa-app-ios/releases' target='_blank' rel='noopener noreferrer'>iOS</a>). The source code of each release is compiled into the app package which is published in the Apple App Store and Google Play Store.",
+                            "We will be able to publish information as soon as it is available on the issue as to whether the code in GitHub is really the same as that in the app in the respective app stores ('reproducible builds'). Further information on the progress of this issue can be found in the respective <a href='https://github.com/corona-warn-app/cwa-wishlist/issues/275' target='_blank' rel='noopener noreferrer'>GitHub issue</a>."
                         ]
                     },
                     {
@@ -1245,7 +1500,7 @@
                         "anchor": "how_to_contribute",
                         "active": true,
                         "textblock": [
-                            "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested can get involved in the project here, for example, by removing mistakes in the source code, helping with the documentation, raising questions or commenting on the project.",
+                            "The open-source project uses GitHub, a globally known online service that hosts software development projects on its servers. Anyone interested is encouraged to get involved in the project here, for example, by fixing bugs in the source code, making feature requests, helping with the documentation, raising questions or commenting on the project.",
                             "Collaboration within the community follows a defined code of conduct. You can find all the guidelines for participation <a href='/en/community/'>here</a>."
                         ]
                     },
@@ -1356,6 +1611,38 @@
                         "textblock": [
                             "On the contrary: the open-source community increases the level of security of the software, because the source code is open to all and anyone can download it and comb through it line by line.",
                             "We believe that security is not helped by a lack of transparency. That is why we are taking an open-source approach."
+                        ]
+                    },
+                    {
+                        "title": "What is the 'In-App Reset' feature of the Corona-Warn-App for?",
+                        "anchor": "in_app_reset",
+                        "active": true,
+                        "textblock": [
+                            "If the Corona-Warn-App (CWA) does not work as expected, the In-App Reset function ('Reset Application') can be used to delete part of the personal data used by the CWA without compromising the functionalities of the CWA after resetting. It should be noted that during an in-app reset, the following data is not deleted:",
+                            "<ul><li>The time when onboarding was completed</li><li>Running error logs</li><li>For Apple iOS: the API token, so that the data donation or the function to participate in surveys from the RKI on certain events continues to work</li></ul>",
+                            "This data remains encrypted after an in-app reset on the smartphone.",
+                            "The Exposure Notification Framework (ENF) keys are managed by the operating system and can be deleted in the system settings of Android or iOS (See  <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>See How can I delete all data stored in the CWA?</a>)."
+                        ]
+                    },
+                    {
+                        "title": "How can I delete all data stored in the Corona-Warn-App?",
+                        "anchor": "delete_all_data_cwa",
+                        "active": true,
+                        "textblock": [
+                            "By uninstalling the Corona-Warn-App (CWA), all data of the CWA is deleted. However, a user should note that, for example, the data of the Exposure Notification Framework (ENF) is managed by the operating system of his smartphone. Therefore, this ENF data on Android is only deleted by uninstalling CWA if no other application (app) has been installed on the user's smartphone that uses the ENF. On Apple iOS, the ENF data must be deleted manually because it will not be deleted by uninstallating CWA.",
+                            "Alternatively, the user can also use the functionalities provided by the respective operating system to delete stored data of an application (app):",
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en</a></li><li>(Apple) iOS: <a href='https://support.apple.com/en-gb/HT201656' target='_self' rel='noopener noreferrer'>https://support.apple.com/en-gb/HT201656</a></li></ul>" 
+                        ]
+                    },
+                    {
+                        "title": "How can I delete all data and settings of all applications from my smartphone?",
+                        "anchor": "delete_all_data_all_apps",
+                        "active": true,
+                        "textblock": [
+                            "The operating system manufacturers usually offer the possibility of a reset to factory settings. By resetting the smartphone, the user's settings and data are lost. The exact procedure for resetting the smartphone is described by the operating system manufacturers.",
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=en' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=en</a> </li><li>(Apple) iOS: <a href='https://support.apple.com/en-gb/HT201252' target='_self' rel='noopener noreferrer'>https://support.apple.com/en-gb/HT201252</a> </li></ul>",
+                            "If you only want to delete the data and settings related to the Corona-Warn-App (CWA) from your smartphone, there is no need to completely reset your smartphone. It is enough if you",
+                            "<ul><li>uninstall the CWA (see <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>How can I delete all data stored in the CWA?</a>),</li><li>delete the exposure notification framework (ENF) data managed by the operating system (see <a href='#delete_all_data_cwa' target='_self' rel='noopener noreferrer'>How can I delete all data stored in the CWA?</a>) and </li><li>if necessary, disable the ENF in the system settings of your operating system.</li></ul>"
                         ]
                     }
                 ]
@@ -1477,7 +1764,7 @@
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
                             "It can be triggered by various other errors, but is always a consequence of them, not the root cause. The error should disappear after 24 hours. Please keep your app closed for this timeframe.",
                             "If it still occurs afterwards, please comment in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a> and provide the following information about your phone: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
-                            "We ask you to not de-install the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
+                            "We ask you to not uninstall the app or to reset the data of Google Play Services, because this can remove <a href='#delete_random_ids' target='_blank' rel='noopener'>the logged exposures</a>, and it will not resolve this issue. Additionally, we ask you to not delete the app data of Corona-Warn-App, as this will also not resolve the issue in this case, but you might lose other important data, like a formerly registered COVID-19 test."
                         ]
                     },
                     {
