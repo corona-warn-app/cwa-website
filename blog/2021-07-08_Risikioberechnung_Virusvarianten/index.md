@@ -2,7 +2,7 @@
 page-title: "Virus variants in the Corona-Warn-App"
 page-description: "Virus variants in the Corona-Warn-App"
 page-name: cwa-virus-variants
-page-name_de: cwa-virus-variants
+page-name_de: cwa-virusvarianten
 author: Robin Houben
 layout: blog
 ---
@@ -11,7 +11,7 @@ With regard to the newly emerging **"variants of concern"** (VoC), in particular
 
 <!-- overview -->
 
-At this point in time, the scientific evidence is not yet sufficient to make a change to the risk calculation. Various data sources are regularly evaluated to assess the current situation and are included in the decision-making process. The Project Team is following the recommendations for action for the "analog" contact tracing of the public health authorities in the risk calculation in the Corona warning app. As soon as there are changes here, the risk calculation in the Corona Warn App will also be adapted.
+At this point in time, the scientific evidence is not yet sufficient to make a change to the risk calculation. Various data sources are regularly evaluated to assess the current situation and are included in the decision-making process. The Project Team is following the recommendations for action for the "analog" contact tracing of the public health authorities in the risk calculation in the Corona-Warn-App. As soon as there are changes here, the risk calculation in the Corona-Warn-App will also be adapted.
 
 ### At least nine minutes
 
