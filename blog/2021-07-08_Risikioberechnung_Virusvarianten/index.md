@@ -7,7 +7,7 @@ author: Robin Houben
 layout: blog
 ---
 
-With regard to the newly emerging **"variants of concern"** (VoC), in particular the **delta variant** in Germany, the Project Team of the Corona-Warn-App is continuously monitoring possible adaptions of the performance of the app to the current circumstances. In this context, discussions on adapting the risk calculation continue to take place between the project participants from Robert Koch Institute, Deutsche Telekom, SAP and "The Fraunhofer Institute for Integrated Circuits IIS" (IIS).
+With regard to the newly emerging **"variants of concern"** (VoC), in particular the **delta variant** in Germany, the Project Team of the Corona-Warn-App is continuously monitoring possible adaptions of the performance of the app to the current circumstances. In this context, discussions on adapting the risk calculation continue to take place between the project participants from Robert Koch Institute, Deutsche Telekom, SAP and "The Fraunhofer Institute for Integrated Circuits IIS".
 
 <!-- overview -->
 
