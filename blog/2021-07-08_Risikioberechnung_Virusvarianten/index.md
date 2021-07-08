@@ -7,7 +7,7 @@ author: Robin Houben
 layout: blog
 ---
 
-With regard to the newly emerging **"variants of concern"** (VoC), in particular the **delta variant** in Germany, the Project Team of the Corona Warn App is continuously monitoring possible adaptions of the performance of the app to the current circumstances. In this context, discussions on adapting the risk calculation continue to take place between the project participants from Robert Koch Institute, Deutsche Telekom, SAP and "Fraunhofer für Integrierte Schaltungen" (IIS).
+With regard to the newly emerging **"variants of concern"** (VoC), in particular the **delta variant** in Germany, the Project Team of the Corona-Warn-App is continuously monitoring possible adaptions of the performance of the app to the current circumstances. In this context, discussions on adapting the risk calculation continue to take place between the project participants from Robert Koch Institute, Deutsche Telekom, SAP and "The Fraunhofer Institute for Integrated Circuits IIS" (IIS).
 
 <!-- overview -->
 
@@ -17,4 +17,4 @@ At this point in time, the scientific evidence is not yet sufficient to make a c
 
 Currently, an encounter with a person testing positive for SARS-CoV-2 must have been measured for at least 9 weighted minutes in a defined proximity area to be considered by the app as an encounter with increased risk ("red tile").
 
-The adjustment of the parameters is done server-sided, so users do not have to do anything here. As soon as there will be a new adjustment, the project team will inform about changes on the blog (https://www.coronawarn.app/en/blog) and on Twitter (@coronawarnapp).
+The adjustment of the parameters is done server-sided, so users do not have to do anything here. As soon as there will be a new adjustment, the project team will inform about changes on the blog (https://www.coronawarn.app/en/blog) and on Twitter (https://twitter.com/coronawarnapp).
