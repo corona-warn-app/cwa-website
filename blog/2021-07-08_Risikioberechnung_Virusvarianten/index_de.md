@@ -3,7 +3,7 @@ page-title: "Virusvarianten in der Corona-Warn-App"
 page-description: "Virusvarianten in der Corona-Warn-App"
 page-name: cwa-virusvarianten
 page-name_de: cwa-virusvarianten
-author: Robi Houben
+author: Robin Houben
 layout: blog
 ---
 
