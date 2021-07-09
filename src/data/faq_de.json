@@ -2004,13 +2004,13 @@
             "B": [
                 {
                     "term": "Business rules",
-                    "description": "Im Kontext der Einführung digitaler => Impfzertifikate für COVID19 wurde durch das eHealth Network der Europäischen Kommission und durch die EU-Länder abgestimmt, dass jedes Land die individuellen Regeln zusammenstellt, die im grenzüberschreitenden Reiseverkehr zu prüfen sind. Diese „Business Rules“ bestehen in der Regel aus zwei Kategorien: <ul><li>Ungültigkeitsregeln (invalidation rules) des Herausgeber-Landes (country of administration), die bestimmen, unter welchen Umständen ein Impfzertifikat nicht anerkannt wird</li><li>Akzeptanz-Regeln (acceptance rules) des Ziel-Landes (country of arrival), die erfüllt sein müssen, um in das Land einreisen zu können</li></ul>"
+                    "description": "Im Kontext der Einführung digitaler => Impfzertifikate für COVID-19 wurde durch das eHealth Network der Europäischen Kommission und durch die EU-Länder abgestimmt, dass jedes Land die individuellen Regeln zusammenstellt, die im grenzüberschreitenden Reiseverkehr zu prüfen sind. Diese „Business Rules“ bestehen in der Regel aus zwei Kategorien: <ul><li>Ungültigkeitsregeln (invalidation rules) des Herausgeber-Landes (country of administration), die bestimmen, unter welchen Umständen ein Impfzertifikat nicht anerkannt wird</li><li>Akzeptanz-Regeln (acceptance rules) des Ziel-Landes (country of arrival), die erfüllt sein müssen, um in das Land einreisen zu können</li></ul>"
                 }
             ],
             "D": [
                 {
                     "term": "DCC",
-                    "description": "Abkürzung für das digitale COVID Zertifikat der EU (Digital COVID Certificate)"
+                    "description": "Abkürzung für das digitale COVID-Zertifikat der EU (Digital COVID Certificate)."
                 },
                 {
                     "term": "Digitales Zertifikat",
@@ -2030,11 +2030,11 @@
             "G": [
                 {
                     "term": "Genesenen-Zertifikat",
-                    "description": "Das Genesenen-Zertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die nachweislich eine Covid-19-Erkrankung überstanden und die Immunität durch einen (PCR-) Test nachgewiesen hat."
+                    "description": "Das Genesenen-Zertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die nachweislich eine COVID-19-Erkrankung überstanden und die Immunität durch einen (PCR-) Test nachgewiesen hat."
                 },
                 {
                     "term": "Gültigkeit eines Zertifikats",
-                    "description": "Wir unterscheiden grundsätzlich<ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul>Das technische Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum hat (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats ist 1 Jahr nach Ausstellung.<br/><br/>*In* dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.B. in DE 1  Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit Impfung zählt also ab dem letzten Impfdatum (Datum X) <br/><br/> Die Check App prüft zunächst die technische Gültigkeit des Zertifikats und dann die inhaltliche/fachliche Gültigkeit. <br/><br/> Unerheblich davon, welche der beiden Gültigkeiten zuerst abläuft, in beiden Fällen wird das gesamte Zertifikat bei der Verifikation mit der Check App als „ungültig“ abgelehnt."
+                    "description": "Wir unterscheiden grundsätzlich<ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul>Das technische Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats ist 1 Jahr nach Ausstellung. <br/><br/> In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit Impfung zählt also ab dem letzten Impfdatum (Datum X). <br/><br/> Die Check App prüft zunächst die technische Gültigkeit des Zertifikats und dann die inhaltliche/fachliche Gültigkeit. <br/><br/> Unerheblich davon, welche der beiden Gültigkeiten zuerst abläuft, in beiden Fällen wird das gesamte Zertifikat bei der Verifikation mit der Check App als „ungültig“ abgelehnt."
                 }
             ],
             "I": [
@@ -2049,20 +2049,20 @@
             ],
             "P": [
                 {
-                    "term": "Prüf-Aapp / Prüfen eines Zertifikats / Verifizieren eines Zertifikats",
-                    "description": "Die reine Existenz eines (digitalen) Dokuments hat keine Nachweis-/Beweiskraft. Vielmehr *muss* jedes Dokument/Zertifikat auch auf die Gültigkeit und Validität überprüft werden. <br/><br/> Diese Prüfung erledigt eine spezielle App (in Deutschland durch die CovPass Check App), die Prüf-App. <br/><br/> Die einzelnen Länder haben möglicherweise unterschiedliche Implementierungen der Prüf-App. Aber alle Prüf-Apps nutzen dieselben – auf einem europäischen Gateway konsolidieren – Schlüssel der teilnehmenden Länder sowie die hinterlegten => Business Rules. Daher können alle Prüf-Apps künftig auch alle EU-Zertifikate validieren, sofern sie der Spezifikation des europäischen eHealth Network folgen."
+                    "term": "Prüf-App / Prüfen eines Zertifikats / Verifizieren eines Zertifikats",
+                    "description": "Die reine Existenz eines (digitalen) Dokuments hat keine Nachweis-/Beweiskraft. Vielmehr <b>muss</b> jedes Dokument/Zertifikat auch auf die Gültigkeit und Validität überprüft werden. <br/><br/> Diese Prüfung erledigt eine spezielle App (in Deutschland die CovPassCheck-App), die Prüf-App. <br/><br/> Die einzelnen Länder haben möglicherweise unterschiedliche Implementierungen der Prüf-App. Aber alle Prüf-Apps nutzen dieselben – auf einem europäischen Gateway konsolidieren – Schlüssel der teilnehmenden Länder sowie die hinterlegten => Business Rules. Daher können alle Prüf-Apps künftig auch alle EU-Zertifikate validieren, sofern sie der Spezifikation des europäischen eHealth Network folgen."
                 }
             ],
             "S": [
                 {
-                    "term": "Signatur (/Signierung eines Zertifikats)",
-                    "description": "Eine digitale Signatur ist das elektronische Äquivalent zu einer manuellen Unterschrift. Sie wird durch ein kryptographische Funktionen aus dem zu unterschreibenden Dokument erzeugt, ist unmittelbar mit einem elektronischen Dokument verbunden und hat folgende Zielstellungen: <ul><li>Nichtabstreitbarkeit, d.h. die unterschreibende Instanz kann nicht nachträglich abstreiten, das Dokument unterzeichnet zu haben</li><li>Echtheit des Dokuments, d.h. die Prüfung der Signatur macht auch sichtbar, wenn das Dokument nachträglich verändert wurde</li><li>Authentizität des Dokuments, d.h. es kann festgestellt werden, von wem das Dokumentunterzeichnet wurde</li></ul> <br/><br/> An eine Signatur werden daher hohe Anforderungen gestellt: <br/><ul><li>Die Signatur muss technisch überprüfbar sein.</li><li>Für den Prüfenden muss es einfach sein, die Signatur zu prüfen – gleichzeitig muss es für jeden anderen schwer sein, die Unterschrift zu fälschen</li><li>Die Signatur ist immer mit dem Dokument verbunden, passt nur zu diesem einen Dokument und darf nicht auf ein anderes Dokument übertragbar sein.</li><li>Der Unterzeichnende darf nicht in der Lage sein, eine Signatur in seinem Namen abzustreiten</li></ul>"
+                    "term": "Signatur (Signierung eines Zertifikats)",
+                    "description": "Eine digitale Signatur ist das elektronische Äquivalent zu einer manuellen Unterschrift. Sie wird durch ein kryptographische Funktionen aus dem zu unterschreibenden Dokument erzeugt, ist unmittelbar mit einem elektronischen Dokument verbunden und hat folgende Zielstellungen: <ul><li>Nichtabstreitbarkeit, d.h. die unterschreibende Instanz kann nicht nachträglich abstreiten, das Dokument unterzeichnet zu haben</li><li>Echtheit des Dokuments, d.h. die Prüfung der Signatur macht auch sichtbar, wenn das Dokument nachträglich verändert wurde</li><li>Authentizität des Dokuments, d.h. es kann festgestellt werden, von wem das Dokument unterzeichnet wurde </li></ul> <br/><br/> An eine Signatur werden daher hohe Anforderungen gestellt: <br/><ul><li>Die Signatur muss technisch überprüfbar sein </li><li>Für den Prüfenden muss es einfach sein, die Signatur zu prüfen – gleichzeitig muss es für jeden anderen schwer sein, die Unterschrift zu fälschen</li><li>Die Signatur ist immer mit dem Dokument verbunden, passt nur zu diesem einen Dokument und darf nicht auf ein anderes Dokument übertragbar sein </li><li>Der Unterzeichnende darf nicht in der Lage sein, eine Signatur in seinem Namen abzustreiten</li></ul>"
                 }
             ],
             "T": [
                 {
                     "term": "Testzertifikat",
-                    "description": "Das Impfzertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die mit einem Covid-19 PCR-Test mit einem negativen Ergebnis abgeschlossen hat."
+                    "description": "Das Testzertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die mit einem COVID-19 PCR-Test mit einem negativen Ergebnis abgeschlossen hat."
                 }
             ],
             "Z": [
