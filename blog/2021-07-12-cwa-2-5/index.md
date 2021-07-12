@@ -25,7 +25,7 @@ Certificates of recovery are stored indefinitely in the app. However, it depends
 
 In addition, the project team turns the app’s certificate section into a wallet, where tested, vaccinated, and recovered users can **manage their digital certificates** in the form of QR codes. They can also add certificates of recovery, vaccination certificates, as well as test and recovery certificates for other people, such as family members.
 
-At the corresponding checkpoints, such as airports for example, authorities verify the validity of the respective certificate by scanning the QR code with the CovPass check app and checking the ID card.
+<ins>At the corresponding checkpoints, such as airports for example, authorities verify the validity of the respective certificate by scanning the QR code with the CovPass check app and checking the ID card.</ins>
 
 Under the **"Certificates" tab**, all existing certificates are grouped by person. By selecting a person, users can see all certificates available for them in the app. 
 
