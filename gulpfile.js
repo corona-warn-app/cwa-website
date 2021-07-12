@@ -354,10 +354,10 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html"])
     .pipe(replace('[ios.latest-os-version]', '14.6'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.4.2'))
+    .pipe(replace('[ios.current-app-version]', '2.5.1'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.4.3'))
+    .pipe(replace('[android.current-app-version]', '2.5.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
