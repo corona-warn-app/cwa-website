@@ -117,11 +117,26 @@
                         "anchor": "rec_cert",
                         "active": true,
                         "textblock": [
-                            "Weder in Version 2.3 noch in Version 2.4 der Corona-Warn-App werden Genesenenzertifikate unterstützt. Weitere Information zu diesem Thema folgen zu einem späteren Zeitpunkt."
+                            "Ab der Version 2.5 der Corona-Warn-App werden Genesenenzertifikate unterstützt."
                         ]
                     }
                 ]
             },
+            {
+                "title": "EU Zertifikate",
+                "id": "eu_dcc",
+                "accordion": [
+                    {
+                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Zertifikat (HC_PREFIX_INVALID)', wenn ich versuche meinen QR-Code zu scannen?",
+                        "anchor": "hc_prefix_invalid",
+                        "active": true,
+                        "textblock": [
+                            "Unter dem Reiter Zertifikate kann die App kann nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
+                            "Siehe auch folgenden Eintrag zu <a href='#vac_cert_invalid' target='_self' rel='noopener'>ungültigen Impfzertifikaten</a>."
+                         ]
+                    }
+                ]
+            },       
             {
                 "title": "Testzertifikat",
                 "id": "test_cert",
@@ -245,7 +260,7 @@
                         "active": true,
                         "textblock": [
                             "Ob Sie mit einem vollständigen Impfschutz beispielsweise reisen dürfen, hängt von den Bestimmungen des jeweiligen Landes ab.",
-                            "Sie können unter anderem dieses <a href='https://reopen.europa.eu/de' target='_blank' rel='noopener noreferrer'>Webseite</a> benutzen, um ihre Reise innerhalb der EU zu planen."
+                            "Sie können unter anderem diese <a href='https://reopen.europa.eu/de' target='_blank' rel='noopener noreferrer'>Webseite</a> benutzen, um Ihre Reise innerhalb der EU zu planen."
                         ]
                     },
                     {
@@ -317,7 +332,7 @@
                         "anchor": "vac_cert_relatives",
                         "active": true,
                         "textblock": [
-                            "Mit der Corona-Warn-App können Sie nur Impfnachweise von einer Person scannen und der App hinzufügen. Es ist nicht möglich, den eigenen und zusätzlich beispielsweise den des Kindes oder des Partners/der Partnerin hinzuzufügen.<br>Mit der CovPass-App können digitale Impfnachweise von Kindern oder Partnern zusammen auf einem Smartphone gespeichert werden."
+                            "Ab der Version 2.5 der Corona-Warn-App können Sie Impfnachweise mehrerer Personen, beispielsweise den des Kindes oder des Partners/der Partnerin, scannen und der App hinzufügen.<br>Auch mit der CovPass-App können digitale Impfnachweise mehrerer Personen zusammen auf einem Smartphone gespeichert werden."
                         ]
                     },
                     {
@@ -501,7 +516,7 @@
                             "<b>Fragen und Antworten zur Funktionsweise, Missbrauch und Privatsphäre:</b>",
                             "<ul><li><a href='#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'>Wie funktioniert die Event-Registrierung in der Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self' rel='noopener noreferrer'>Wie ist die Event-Registrierung technisch umgesetzt?</a></li><li><a href='#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>Für welche Orte und Events eignet sich die Eventregistrierung?</a></li><li><a href='#check_in_misuse' target='_self' rel='noopener noreferrer'>Wie verhindere ich Missbrauch als Organisator eines Events?</a></li><li><a href='#check_in_ prevent_false_warnings' target='_self' rel='noopener noreferrer'>Wie verhindere ich falsche Warnungen als Teilnehmer eines Events?</a></li><li><a href='#check_in_privacy' target='_self' rel='noopener noreferrer'>Muss ich befürchten, dass durch das Nutzen der Event-Registrierung meine Aufenthaltsorte oder personenbezogenen Daten bekannt werden?</a></li></ul>",
                             "<b>Fragen und Antworten zum Event-QR-Code:</b>",
-                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wer generiert den Event-QR-Code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Kann der Event-QR-Code auch für die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wo kann der Event-QR-Code generiert werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wird es eine Möglichkeit geben, auch ohne Smartphone einen Check In durchzuführen (Dongle o.&nbsp;ä.)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Womit sollte ich den Event-QR-Code scannen?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Was passiert, wenn ich einen Event-QR-Code scanne, die CWA aber nicht installiert habe?</a></li></ul>",
+                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wer generiert den Event-QR-Code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Kann der Event-QR-Code auch für z.&nbsp;B. die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wo kann der Event-QR-Code generiert werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Können Event-QR-Codes von anderen Apps mit der CWA gescannt werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Ist es möglich, auch ohne Smartphone einen Check-in durchzuführen (Dongle o.&nbsp;ä.)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Womit sollte ich den Event-QR-Code scannen?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Was passiert, wenn ich einen Event-QR-Code scanne, die CWA aber nicht installiert habe?</a></li></ul>",
                             "<b>Fragen und Antworten zur Warnung:</b>",
                             "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Wie ist der Ablauf bei einem positiven Befund?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Bekommen alle, die den gleichen Event-QR-Code gescannt haben, eine Warnung?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Was genau muss passieren, damit Nutzer, die an einem bestimmten Ort eingecheckt waren, durch die neue Funktion eine Warnung der App bekommen?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Wie wird das Risiko ermittelt?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Wann erhalte ich eine Warnung über ein geringes Risiko (grüne Kachel), wann über ein hohes (rote Kachel)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Kann der Nutzer erkennen worauf die Warnung basiert, d.&nbsp;h. wegen welchem gescannten Event-QR-Code die Warnung erfolgt?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Können diese Informationen freiwillig dem Gesundheitsamt mitgeteilt werden? Wenn ja, welche Informationen fließen?</a></li></ul>"
                         ]
@@ -577,11 +592,13 @@
                         "textblock": [
                             "<b>Wer generiert den Event-QR-Code?</b>",
                             "Die Betreiberin/der Betreiber eines Ortes bzw. eines Events generiert den QR-Code.",
-                            "<b>Kann der QR-Code auch für die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</b>",
+                            "<b>Kann der QR-Code auch für z.&nbsp;B. die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</b>",
                             "Selbstverständlich, das ist möglich.",
                             "<b>Wo kann der Event-QR-Code generiert werden?</b>",
-                            "Der QR-Code kann direkt in der App generiert werden. Ein entsprechend generierter QR-Code kann dann als PDF ausgedruckt werden oder direkt aus der App abgescannt werden.",
-                            "<b>Wird es eine Möglichkeit geben, auch ohne Smartphone einen Check In durchzuführen (Dongle o.&nbsp;ä.)?</b>",
+                            "Der QR-Code kann direkt in der App oder <a href='../eventregistration' target='_self' rel='noopener noreferrer'>hier auf der Webseite</a> generiert werden. Ein entsprechend generierter QR-Code kann dann als PDF ausgedruckt werden oder direkt aus der App abgescannt werden.",
+                            "<b>Können Event-QR-Codes von anderen Apps mit der CWA gescannt werden?</b>",
+                            "Nein, aktuell ist es nicht möglich die Event-QR-Codes von anderen Apps mit der Corona-Warn-App zu scannen.",
+                            "<b>Ist es möglich, auch ohne Smartphone einen Check-in durchzuführen (Dongle o.&nbsp;ä.)?</b>",
                             "Nein, das ist nicht möglich.",
                             "<b>Womit sollte ich den Event-QR-Code scannen?</b>",
                             "Benutzen Sie ausschließlich die CWA zum Einscannen der QR-Codes: Ein QR-Code kann zwar grundsätzlich sowohl mit der nativen Kamera-App als auch mit der CWA gescannt werden. Um einem Missbrauch vorzubeugen, empfehlen wir aber die Verwendung der CWA zum Scannen der QR-Codes. Nur die CWA kann sicherstellen, dass legitime QR-Codes verarbeitet werden.",
@@ -737,7 +754,7 @@
                         "active": true,
                         "textblock": [
                             "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Meldung sehen, kann das Betriebssystem Ihres Geräts keine Zufalls-IDs per Bluetooth <i>versenden</i>, allerdings jedoch <i>empfangen</i>. <b>Ihre eigene Risiko-Ermittlung ist daher nicht betroffen</b>.",
-                            "Die einzige dadurch verursachte Einschränkung ist, dass Sie Ihre Bluetooth-Kontakte beim Teilen Ihres positiven Testergebnisses nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, werden jedoch weiterhin gewarnt. <b>Die Check-In-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden</b>.",
+                            "Die einzige dadurch verursachte Einschränkung ist, dass Sie Ihre Bluetooth-Kontakte beim Teilen Ihres positiven Testergebnisses nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, werden jedoch weiterhin gewarnt. <b>Die Check-in-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden</b>.",
                             "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Gerät. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
                             "<hr/>",
                             "<b>Technische Erklärung</b>",
@@ -750,7 +767,7 @@
                         "active": true,
                         "textblock": [
                             "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Meldung sehen, unterstützt Ihr Gerät nicht die notwendige Bluetooth-Funktionalität für das Versenden und Empfangen von Zufalls-IDs. Ihre Risiko-Ermittlung basiert daher lediglich auf Orten und Events, bei denen Sie sich eingecheckt haben.",
-                            "Die Check-In-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden.",
+                            "Die Check-in-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden.",
                             "Mögliche Ursachen für diese Nachricht sind:<ul><li>Ihrem Gerät fehlt die Hardware, die für Bluetooth Low Energy notwendig ist.</li><li>Ihrem Gerät fehlt die Software, die benötigt wird, um die Bluetooth Low Energy-Funktionen Ihrer Hardware zu benutzen.</li><li>Sie führen die App im Android-Emulator aus.</li></ul>",
                             "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Gerät. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
                             "<hr/>",
@@ -2004,13 +2021,13 @@
             "B": [
                 {
                     "term": "Business rules",
-                    "description": "Im Kontext der Einführung digitaler => Impfzertifikate für COVID19 wurde durch das eHealth Network der Europäischen Kommission und durch die EU-Länder abgestimmt, dass jedes Land die individuellen Regeln zusammenstellt, die im grenzüberschreitenden Reiseverkehr zu prüfen sind. Diese „Business Rules“ bestehen in der Regel aus zwei Kategorien: <ul><li>Ungültigkeitsregeln (invalidation rules) des Herausgeber-Landes (country of administration), die bestimmen, unter welchen Umständen ein Impfzertifikat nicht anerkannt wird</li><li>Akzeptanz-Regeln (acceptance rules) des Ziel-Landes (country of arrival), die erfüllt sein müssen, um in das Land einreisen zu können</li></ul>"
+                    "description": "Im Kontext der Einführung digitaler => Impfzertifikate für COVID-19 wurde durch das eHealth Network der Europäischen Kommission und durch die EU-Länder abgestimmt, dass jedes Land die individuellen Regeln zusammenstellt, die im grenzüberschreitenden Reiseverkehr zu prüfen sind. Diese „Business Rules“ bestehen in der Regel aus zwei Kategorien: <ul><li>Ungültigkeitsregeln (invalidation rules) des Herausgeber-Landes (country of administration), die bestimmen, unter welchen Umständen ein Impfzertifikat nicht anerkannt wird</li><li>Akzeptanz-Regeln (acceptance rules) des Ziel-Landes (country of arrival), die erfüllt sein müssen, um in das Land einreisen zu können</li></ul>"
                 }
             ],
             "D": [
                 {
                     "term": "DCC",
-                    "description": "Abkürzung für das digitale COVID Zertifikat der EU (Digital COVID Certificate)"
+                    "description": "Abkürzung für das digitale COVID-Zertifikat der EU (Digital COVID Certificate)."
                 },
                 {
                     "term": "Digitales Zertifikat",
@@ -2030,11 +2047,11 @@
             "G": [
                 {
                     "term": "Genesenen-Zertifikat",
-                    "description": "Das Genesenen-Zertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die nachweislich eine Covid-19-Erkrankung überstanden und die Immunität durch einen (PCR-) Test nachgewiesen hat."
+                    "description": "Das Genesenen-Zertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die nachweislich eine COVID-19-Erkrankung überstanden und die Immunität durch einen (PCR-) Test nachgewiesen hat."
                 },
                 {
                     "term": "Gültigkeit eines Zertifikats",
-                    "description": "Wir unterscheiden grundsätzlich<ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul>Das technische Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum hat (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats ist 1 Jahr nach Ausstellung.<br/><br/>*In* dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.B. in DE 1  Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit Impfung zählt also ab dem letzten Impfdatum (Datum X) <br/><br/> Die Check App prüft zunächst die technische Gültigkeit des Zertifikats und dann die inhaltliche/fachliche Gültigkeit. <br/><br/> Unerheblich davon, welche der beiden Gültigkeiten zuerst abläuft, in beiden Fällen wird das gesamte Zertifikat bei der Verifikation mit der Check App als „ungültig“ abgelehnt."
+                    "description": "Wir unterscheiden grundsätzlich<ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul>Das technische Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats ist 1 Jahr nach Ausstellung. <br/><br/> In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.&nbsp;B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit Impfung zählt also ab dem letzten Impfdatum (Datum X). <br/><br/> Die Check App prüft zunächst die technische Gültigkeit des Zertifikats und dann die inhaltliche/fachliche Gültigkeit. <br/><br/> Unerheblich davon, welche der beiden Gültigkeiten zuerst abläuft, in beiden Fällen wird das gesamte Zertifikat bei der Verifikation mit der Check App als „ungültig“ abgelehnt."
                 }
             ],
             "I": [
@@ -2049,20 +2066,20 @@
             ],
             "P": [
                 {
-                    "term": "Prüf-Aapp / Prüfen eines Zertifikats / Verifizieren eines Zertifikats",
-                    "description": "Die reine Existenz eines (digitalen) Dokuments hat keine Nachweis-/Beweiskraft. Vielmehr *muss* jedes Dokument/Zertifikat auch auf die Gültigkeit und Validität überprüft werden. <br/><br/> Diese Prüfung erledigt eine spezielle App (in Deutschland durch die CovPass Check App), die Prüf-App. <br/><br/> Die einzelnen Länder haben möglicherweise unterschiedliche Implementierungen der Prüf-App. Aber alle Prüf-Apps nutzen dieselben – auf einem europäischen Gateway konsolidieren – Schlüssel der teilnehmenden Länder sowie die hinterlegten => Business Rules. Daher können alle Prüf-Apps künftig auch alle EU-Zertifikate validieren, sofern sie der Spezifikation des europäischen eHealth Network folgen."
+                    "term": "Prüf-App / Prüfen eines Zertifikats / Verifizieren eines Zertifikats",
+                    "description": "Die reine Existenz eines (digitalen) Dokuments hat keine Nachweis-/Beweiskraft. Vielmehr <b>muss</b> jedes Dokument/Zertifikat auch auf die Gültigkeit und Validität überprüft werden. <br/><br/> Diese Prüfung erledigt eine spezielle App (in Deutschland die CovPassCheck-App), die Prüf-App. <br/><br/> Die einzelnen Länder haben möglicherweise unterschiedliche Implementierungen der Prüf-App. Aber alle Prüf-Apps nutzen dieselben – auf einem europäischen Gateway konsolidieren – Schlüssel der teilnehmenden Länder sowie die hinterlegten => Business Rules. Daher können alle Prüf-Apps künftig auch alle EU-Zertifikate validieren, sofern sie der Spezifikation des europäischen eHealth Network folgen."
                 }
             ],
             "S": [
                 {
-                    "term": "Signatur (/Signierung eines Zertifikats)",
-                    "description": "Eine digitale Signatur ist das elektronische Äquivalent zu einer manuellen Unterschrift. Sie wird durch ein kryptographische Funktionen aus dem zu unterschreibenden Dokument erzeugt, ist unmittelbar mit einem elektronischen Dokument verbunden und hat folgende Zielstellungen: <ul><li>Nichtabstreitbarkeit, d.h. die unterschreibende Instanz kann nicht nachträglich abstreiten, das Dokument unterzeichnet zu haben</li><li>Echtheit des Dokuments, d.h. die Prüfung der Signatur macht auch sichtbar, wenn das Dokument nachträglich verändert wurde</li><li>Authentizität des Dokuments, d.h. es kann festgestellt werden, von wem das Dokumentunterzeichnet wurde</li></ul> <br/><br/> An eine Signatur werden daher hohe Anforderungen gestellt: <br/><ul><li>Die Signatur muss technisch überprüfbar sein.</li><li>Für den Prüfenden muss es einfach sein, die Signatur zu prüfen – gleichzeitig muss es für jeden anderen schwer sein, die Unterschrift zu fälschen</li><li>Die Signatur ist immer mit dem Dokument verbunden, passt nur zu diesem einen Dokument und darf nicht auf ein anderes Dokument übertragbar sein.</li><li>Der Unterzeichnende darf nicht in der Lage sein, eine Signatur in seinem Namen abzustreiten</li></ul>"
+                    "term": "Signatur (Signierung eines Zertifikats)",
+                    "description": "Eine digitale Signatur ist das elektronische Äquivalent zu einer manuellen Unterschrift. Sie wird durch ein kryptographische Funktionen aus dem zu unterschreibenden Dokument erzeugt, ist unmittelbar mit einem elektronischen Dokument verbunden und hat folgende Zielstellungen: <ul><li>Nichtabstreitbarkeit, d.h. die unterschreibende Instanz kann nicht nachträglich abstreiten, das Dokument unterzeichnet zu haben</li><li>Echtheit des Dokuments, d.h. die Prüfung der Signatur macht auch sichtbar, wenn das Dokument nachträglich verändert wurde</li><li>Authentizität des Dokuments, d.h. es kann festgestellt werden, von wem das Dokument unterzeichnet wurde </li></ul> <br/><br/> An eine Signatur werden daher hohe Anforderungen gestellt: <br/><ul><li>Die Signatur muss technisch überprüfbar sein </li><li>Für den Prüfenden muss es einfach sein, die Signatur zu prüfen – gleichzeitig muss es für jeden anderen schwer sein, die Unterschrift zu fälschen</li><li>Die Signatur ist immer mit dem Dokument verbunden, passt nur zu diesem einen Dokument und darf nicht auf ein anderes Dokument übertragbar sein </li><li>Der Unterzeichnende darf nicht in der Lage sein, eine Signatur in seinem Namen abzustreiten</li></ul>"
                 }
             ],
             "T": [
                 {
                     "term": "Testzertifikat",
-                    "description": "Das Impfzertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die mit einem Covid-19 PCR-Test mit einem negativen Ergebnis abgeschlossen hat."
+                    "description": "Das Testzertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die mit einem COVID-19 PCR-Test mit einem negativen Ergebnis abgeschlossen hat."
                 }
             ],
             "Z": [
