@@ -131,7 +131,7 @@
                         "anchor": "hc_prefix_invalid",
                         "active": true,
                         "textblock": [
-                            "Unter dem Reiter Zertifikate kann die App kann nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
+                            "Unter dem Reiter Zertifikate kann die App nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
                             "Siehe auch folgenden Eintrag zu <a href='#vac_cert_invalid' target='_self' rel='noopener'>ungültigen Impfzertifikaten</a>."
                          ]
                     }
@@ -2047,11 +2047,11 @@
             "G": [
                 {
                     "term": "Genesenen-Zertifikat",
-                    "description": "Das Genesenen-Zertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die nachweislich eine COVID-19-Erkrankung überstanden und die Immunität durch einen (PCR-) Test nachgewiesen hat."
+                    "description": "Das Genesenen-Zertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die nachweislich eine COVID-19-Erkrankung überstanden und die Immunität durch einen PCR-Test nachgewiesen hat."
                 },
                 {
-                    "term": "Gültigkeit eines Zertifikats",
-                    "description": "Wir unterscheiden grundsätzlich<ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul>Das technische Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats ist 1 Jahr nach Ausstellung. <br/><br/> In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.&nbsp;B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit Impfung zählt also ab dem letzten Impfdatum (Datum X). <br/><br/> Die Check App prüft zunächst die technische Gültigkeit des Zertifikats und dann die inhaltliche/fachliche Gültigkeit. <br/><br/> Unerheblich davon, welche der beiden Gültigkeiten zuerst abläuft, in beiden Fällen wird das gesamte Zertifikat bei der Verifikation mit der Check App als „ungültig“ abgelehnt."
+                    "term": "Gültigkeit eines EU digitalen COVID-Zertifikats",
+                    "description": "Wir unterscheiden grundsätzlich<ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul>Das digitale Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats endet 1 Jahr nach Ausstellung. <br/><br/> <b> Impfzertifikat </b> <br/><br/> In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.&nbsp;B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit Impfung zählt also ab dem letzten Impfdatum (Datum X). <br/><br/> Ein Zertifikat ist solange valide, bis entweder die technische Gültigkeit oder die fachliche Gültigkeit abläuft."
                 }
             ],
             "I": [
@@ -2079,7 +2079,7 @@
             "T": [
                 {
                     "term": "Testzertifikat",
-                    "description": "Das Testzertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die mit einem COVID-19 PCR-Test mit einem negativen Ergebnis abgeschlossen hat."
+                    "description": "Das Testzertifikat ist ein => digitales Zertifikat, das einer Person ausgestellt wird, die einen COVID-19-Test mit einem negativen Ergebnis abgeschlossen hat."
                 }
             ],
             "Z": [
