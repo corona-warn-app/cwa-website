@@ -77,6 +77,16 @@ Alternatively, run `npm run test:open` for simpler test development. Be aware th
 
 Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, eg `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
 
+#### Cypress under Microsoft Windows
+
+If executing `$ npm run test:prepare` causes an error on Microsoft Windows
+
+`'.' is not recognized as an internal or external command,`
+
+ensure that [git](https://git-scm.com/downloads) is installed and execute the following command:
+
+`npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"`
+
 ### Updating coronawarn.app
 
 Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
