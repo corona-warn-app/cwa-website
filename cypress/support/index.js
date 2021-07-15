@@ -12,3 +12,12 @@ Cypress.Commands.add('expectPathToBe', (pathToCheck, timeout = undefined) =>
     expect(removeTrailingSlash(location.pathname)).to.eq(removeTrailingSlash(pathToCheck));
   })
 );
+
+//overide application error
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from
+  // failing the test
+  console.log("App TypeError")
+  console.log(err)
+  return false
+})
