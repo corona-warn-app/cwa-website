@@ -69,6 +69,7 @@
                             "Mittlerweile wurden mehr als 100 Schnelltest-Partner an die CWA-Infrastruktur angeschlossen und können die Ergebnisse in die App übermitteln.",
                             "Eine lokale Suche, die Ihnen in der Umgebung die kompatiblen Partner mit den Teststellen anzeigt, finden Sie hier: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a>",
                             "Die Liste der aufgeführten Teststellen enthält nur die Einträge, die von den betreffenden Partnern gemeldet wurden.",
+                            "<a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='image' width='300'></a>",
                             "<hr>Eine Übersicht der <b>PCR- und Schnell-Teststellen</b> finden Sie auf dieser <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG Seite</a> (nicht ersichtlich, ob die Teststelle an die CWA angebunden ist oder nicht).",
                             "<a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img src='../../assets/img/faq/BMG_testzentren.png' alt='image' width='300'></a>",
                             "Weitere Liste mit Teststellen aus der GitHub-Community : <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a>"
@@ -127,7 +128,7 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
-                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Zertifikat (HC_PREFIX_INVALID)', wenn ich versuche meinen QR-Code zu scannen?",
+                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Zertifikat (HC_PREFIX_INVALID)', wenn ich versuche einen QR-Code zu scannen?",
                         "anchor": "hc_prefix_invalid",
                         "active": true,
                         "textblock": [
@@ -211,12 +212,12 @@
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Kann ich mein Impfzertifikat auf mehreren Smartphones speichern, z.&nbsp;B. auf meinem Privat- und dem Geschäftshandy?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Wie kann ich die Impfbescheinigung beim Gerätewechsel übertragen?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Was mache ich, wenn ich mein Smartphone verloren habe?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Ist das Impfzertifikat in meinem Backup enthalten?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Kann ich das Zertifikat in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden?</a></li>",
+                            "<li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Kann ich Impfzertifikate auf mehreren Smartphones speichern, z.&nbsp;B. auf meinem Privat- und dem Geschäftshandy?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Wie kann ich Impfbescheinigungen beim Gerätewechsel übertragen?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Was mache ich, wenn ich mein Smartphone verloren habe?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Sind Impfzertifikate in meinem Backup enthalten?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Kann ich Zertifikate in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden?</a></li>",
                             "</ul>"
                         ]
                     },
                     {
-                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Impfzertifikat (VC_PREFIX_INVALID)', wenn ich versuche meinen Impf-QR-Code zu scannen?",
+                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Impfzertifikat (VC_PREFIX_INVALID)', wenn ich versuche einen Impf-QR-Code zu scannen?",
                         "anchor": "vac_cert_invalid",
                         "active": true,
                         "textblock": [
@@ -233,7 +234,7 @@
                         "anchor": "vac_cert_what",
                         "active": true,
                         "textblock": [
-                            "Ab Version 2.3 der Corona-Warn-App (CWA) können Sie Ihren digitalen Impfnachweis in der CWA hinzufügen und so per QR-Code Ihren Corona-Impfstatus bei Bedarf sicher und digital nachweisen. Die CWA zeigt den vollständigen Impfschutz 14 Tage nach der letzten benötigten Impfung an. Der digitale Impfnachweis ist eine zusätzliche Möglichkeit, um Impfungen zu dokumentieren. Sie können damit Informationen wie Impfzeitpunkt und Impfstoff personalisiert bequem auf Ihren Smartphones digital speichern. Die Nutzung des digitalen Impfnachweises in der CWA ist freiwillig. Sie können Ihre Corona-Impfung auch auf eine andere Weise nachweisen."
+                            "Ab Version 2.3 der Corona-Warn-App (CWA) können Sie Ihren digitalen Impfnachweis in der CWA hinzufügen und so per QR-Code Ihren Corona-Impfstatus bei Bedarf sicher und digital nachweisen. Ab Version 2.5 der App können digitale Impfnachweise für mehrere Personen in der App gespeichert werden. Die CWA zeigt den vollständigen Impfschutz 14 Tage nach der letzten benötigten Impfung an. Der digitale Impfnachweis ist eine zusätzliche Möglichkeit, um Impfungen zu dokumentieren. Sie können damit Informationen wie Impfzeitpunkt und Impfstoff personalisiert bequem auf Ihren Smartphones digital speichern. Die Nutzung des digitalen Impfnachweises in der CWA ist freiwillig. Sie können eine Corona-Impfung auch auf eine andere Weise nachweisen."
                         ]
                     },
                     {
@@ -320,11 +321,11 @@
                         ]
                     },
                     {
-                        "title": "Kann ich mein Impfzertifikat auf mehreren Smartphones speichern, z. B. auf meinem Privat- und dem Geschäftshandy? Wie kann ich die Impfbescheinigung beim Gerätewechsel übertragen? Was mache ich, wenn ich mein Smartphone verloren habe? Kann ich das Zertifikat in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden? Ist das Impfzertifikat in meinem Backup enthalten? ",
+                        "title": "Kann ich Impfzertifikate auf mehreren Smartphones speichern, z. B. auf meinem Privat- und dem Geschäftshandy? Wie kann ich Impfbescheinigungen beim Gerätewechsel übertragen? Was mache ich, wenn ich mein Smartphone verloren habe? Kann ich Zertifikate in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden? Sind Impfzertifikate in meinem Backup enthalten? ",
                         "anchor": "vac_cert_multiple_scan_possible",
                         "active": true,
                         "textblock": [
-                            "Es gibt keine Begrenzung, wie oft Sie den QR-Code Ihres Impfzertifikats scannen können. Indem Sie den QR-Code scannen, können Sie Impfzertifikate hinzufügen und verwalten: <ul><li>auf mehreren Geräten, </li><li>auf einem neuen Gerät, wenn Sie das Gerät wechseln</li><li>in mehreren Apps, z.&nbsp;B. in der Corona-Warn-App und der CovPass-App</li><li>auf einem zurückgesetzten Gerät. Das Zertifikat ist nicht in der Sicherung (Backup) enthalten.</li></ul>"
+                            "Es gibt keine Begrenzung, wie oft Sie den QR-Code eines Impfzertifikats scannen können. Indem Sie den QR-Code scannen, können Sie Impfzertifikate hinzufügen und verwalten: <ul><li>auf mehreren Geräten, </li><li>auf einem neuen Gerät, wenn Sie das Gerät wechseln</li><li>in mehreren Apps, z.&nbsp;B. in der Corona-Warn-App und der CovPass-App</li><li>auf einem zurückgesetzten Gerät. Zertifikate sind nicht in der Sicherung (Backup) enthalten.</li></ul>"
                         ]
                     },
                     {
@@ -344,11 +345,11 @@
                         ]
                     },
                     {
-                        "title": "Wo werden meine persönlichen Daten beim digitalen Impfnachweis gespeichert? Gibt es ein zentrales Impfregister?",
+                        "title": "Wo werden persönlichen Daten beim digitalen Impfnachweis gespeichert? Gibt es ein zentrales Impfregister?",
                         "anchor": "vac_cert_privacy_data_decentral",
                         "active": true,
                         "textblock": [
-                            "Nein, es gibt kein zentrales Impfregister. Bei Erstellung des Corona-Impfzertifikats werden Ihre Daten einmalig durch die Impfstelle erhoben und zur Signierung an das RKI übermittelt. Die Daten werden dort sofort wieder gelöscht. Wenn Sie das Corona-Impfzertifikat in der App hinzufügen, werden Ihre persönlichen Daten nur lokal (dezentral) auf Ihrem Smartphone gespeichert. Sie können selbst entscheiden, ob und wann Sie diese Daten auf Ihrem Gerät löschen.",
+                            "Nein, es gibt kein zentrales Impfregister. Bei Erstellung eines Corona-Impfzertifikats werden Daten einmalig durch die Impfstelle erhoben und zur Signierung an das RKI übermittelt. Die Daten werden dort sofort wieder gelöscht. Wenn Sie ein Corona-Impfzertifikat in der App hinzufügen, werden die persönlichen Daten nur lokal (dezentral) auf Ihrem Smartphone gespeichert. Sie können selbst entscheiden, ob und wann Sie diese Daten auf Ihrem Gerät löschen.",
                             "Alle digitalen Impfnachweise werden nur temporär im Impfprotokollierungssystem erstellt und anschließend gelöscht. Eine dauerhafte Speicherung ist nur dezentral auf den Smartphones der Nutzer vorgesehen."
                         ]
                     },
