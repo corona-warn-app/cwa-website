@@ -128,6 +128,17 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
+                    "title": "Welche EU-Zertifikate werden unterstützt?",
+                    "anchor": "eu_dcc_which",
+                    "active": true,
+                    "textblock": [
+                        "Ab <a href='../../de/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>Version 2.5</a> der Corona-Warn-App (CWA) werden alle drei Arten der EU digitalen COVID-Zertifikate unterstützt:",
+                        "<ul>  <li>digitales Impfzertifikat</li>  <li>digitales Genesenenzertifikat</li>  <li>digitales Testzertifikat</li> </ul>",
+                        "Bisher wurden digitale Impfzertifikate erstmalig mit <a href='../../de/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>Version 2.3</a> unterstützt, gefolgt von der zusätzlichen Unterstützung von digitalen Testzertifikaten in <a href='../../de/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>Version 2.4.</a> Mit der Veröffentlichung der <a href='../../de/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>Version 2.5</a> wurden digitale Genesenenzertifikate zusätzlich unterstützt.",
+                        "Die Verordnung über das <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_de' target='_blank' rel='noopener noreferrer'>digitale COVID-Zertifikat der EU</a> ist am 1. Juli 2021 in Kraft getreten. Das digitale COVID-Zertifikat der EU wird in allen EU-Mitgliedstaaten anerkannt."
+                    ]
+                  },
+                    {
                         "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Zertifikat (HC_PREFIX_INVALID)', wenn ich versuche einen QR-Code zu scannen?",
                         "anchor": "hc_prefix_invalid",
                         "active": true,
@@ -147,11 +158,11 @@
                         "anchor": "test_cert_index",
                         "active": true,
                         "textblock": [
-                            "<ul><li><a href='#test_cert_why'>Wozu dient das digitales COVID-Testzertifikat?</a></li><li><a href='#test_cert_get'>Wie kann ich ein Testzertifikat anfordern?</a></li><li><a href='#test_cert_rat_and_pcr'>Kann ich Testzertifikate für Schnelltests und PCR-Test anfordern?</a></li><li><a href='#test_cert_when_and_where'>Wann erhalte ich mein Testzertifikat und wo finde ich es?</a></li><li><a href='#test_cert_validity'>Wie lange ist mein Testzertifikat gültig?</a></li><li><a href='#test_cert_privacy'>Wie wird meine Privatsphäre geschützt, wenn ich ein Testzertifikat erstelle?</a></li></ul>"
+                            "<ul><li><a href='#test_cert_why'>Wozu dient das digitale COVID-Testzertifikat?</a></li><li><a href='#test_cert_get'>Wie kann ich ein Testzertifikat anfordern?</a></li><li><a href='#test_cert_rat_and_pcr'>Kann ich Testzertifikate für Schnelltests und PCR-Test anfordern?</a></li><li><a href='#test_cert_when_and_where'>Wann erhalte ich mein Testzertifikat und wo finde ich es?</a></li><li><a href='#test_cert_validity'>Wie lange ist mein Testzertifikat gültig?</a></li><li><a href='#test_cert_privacy'>Wie wird meine Privatsphäre geschützt, wenn ich ein Testzertifikat erstelle?</a></li></ul>"
                          ]
                     },
                     {
-                        "title": "Wozu dient das digitales COVID-Testzertifikat?",
+                        "title": "Wozu dient das digitale COVID-Testzertifikat?",
                         "anchor": "test_cert_why",
                         "active": true,
                         "textblock": [
@@ -167,7 +178,7 @@
                         ]
                     },
                     {
-                        "title": "Kann ich Testzertifikate für Schnelltests und PCR-Test anfordern?",
+                        "title": "Kann ich Testzertifikate für Schnelltests und PCR-Tests anfordern?",
                         "anchor": "test_cert_rat_and_pcr",
                         "active": true,
                         "textblock": [
@@ -242,7 +253,7 @@
                         "anchor": "vac_cert_why",
                         "active": true,
                         "textblock": [
-                            "Zu Beginn des Jahres wurde durch den Europäischen Rat beschlossen, einen interoperablen und standardisierten Impfnachweis für medizinische Zwecke auf den Weg zu bringen. Deutschland setzt diese europäische Entscheidung nun schnell um, um allen Bürgern, die dies wünschen, einen digitalen Impfnachweis zur Verfügung stellen zu können. Mittlerweile hat die Europäische Kommission auch einen Verordnungsentwurf zur Regelung eines EU-weiten Anerkennungsrahmens für (digitale) Zertifikate für Impfungen, Tests und für Personen mit COVID-19-Heilstatus vorgelegt, um die Reisefreizügigkeit zu erleichtern. Das Digitale COVID-Zertifikat der EU bildet den Rechtsrahmen für die Lösungen der Mitgliedsstaaten."
+                            "Zu Beginn des Jahres 2021 wurde durch den Europäischen Rat beschlossen, einen interoperablen und standardisierten Impfnachweis für medizinische Zwecke auf den Weg zu bringen. Deutschland setzte diese europäische Entscheidung schnell um, um allen Bürgern, die dies wünschen, einen digitalen Impfnachweis zur Verfügung stellen zu können. Mittlerweile hat die Europäische Kommission auch einen EU-weiten Anerkennungsrahmen für (digitale) Zertifikate für Impfungen, Tests und für Personen mit COVID-19-Heilstatus geregelt, um die Reisefreizügigkeit zu erleichtern. Das Digitale COVID-Zertifikat der EU bildet den Rechtsrahmen für die Lösungen der Mitgliedsstaaten. Im Abschnitt <a href='#eu_dcc_which' target='_self' rel='noopener noreferrer'>Welche EU-Zertifikate werden unterstützt?</a> können Sie über die Unterstützung der digitalen Zertifikate in der Corona-Warn-App nachlesen."
                         ]
                     },
                     {
@@ -1266,6 +1277,7 @@
                         "anchor": "ENF_version",
                         "active": true,
                         "textblock": [
+                            "<div class='right-float'><img src='../../assets/img/faq/enf_de.jpg' alt='image' width='300'></div>",
                             "Google veröffentlicht die Unterstützung für mobile Geräte für die COVID-19-Benachrichtigungen, das Exposure Notifications System (ENS), über den Google Play Store, als ein Update zu den Google Play-Dienste, und damit unabhängig vom Android-Betriebssystem. <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>ENS-Version 1.5</a>, die in Juli 2020 veröffentlicht wurde, führte die zusätzliche ExposureWindow-Mode ein (auch unter der Bezeichnung 'v2-Mode' bekannt), neben der ursprünglichen v1-Mode. ENS-Version V1.5, oder höher, wird für die Corona-Warn-App Version 1.9 und höher benötigt.",
                             "So sehen Sie, welche Version Ihr Smartphone installiert hat:",
                             "<ol><li>Öffnen Sie das Menü der Corona-Warn-App, indem Sie auf der Startseite auf das 3-Punkte-Icon rechts oben tippen. Danach tippen Sie auf 'App-Informationen'.</li><li>Scrollen Sie auf der Seite ganz nach unten, bis zur Zeile 'ENF Version'. Dort steht die Versionsnummer in dem folgenden Format:<ul><li>VVYYWWxxxxx, mit VV für die Version der COVID-19-Benachrichtigungen, YY für die Jahreszahl und WW für die Wochenzahl (zum Beispiel '18210214000' steht für Version 1.8).</li></ul></li></ol>",
