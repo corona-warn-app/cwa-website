@@ -2052,6 +2052,22 @@
                 {
                     "term": "Digital Certificate",
                     "description": "A certified document. It contains the subject's health information signed by a trusted issuer. <br/><br/> Every digital certificate has an issue date and an expiration date. After the certificate expires it must be renewed. <br/><br/> In the CWA we differentiate between: <br/><ul><li>Vaccination Certificate</li><li>Test Certificate</li><li>Recovery Certificate</li></ul>"
+                },
+                {
+                    "term": "Digital Signature",
+                    "description": "see Signature"
+                }
+            ],
+            "E": [
+                {
+                    "term": "EU DCC",
+                    "description": "See DCC"
+                }
+            ],
+            "S": [
+                {
+                    "term": "Signature",
+                    "description": "A digital signature is a signature that is created by a crytographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> <br/><br/> As a consequence, the signature must fulfill the following requirements: <br/><ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
                 }
             ]
         },
