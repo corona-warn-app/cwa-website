@@ -55,7 +55,7 @@
                             "The best place to share the unique report ID is where it was requested. You can also share the ID in the following ways:",
                             "<ul><li>Open an issue on GitHub (<a href='https://github.com/corona-warn-app/cwa-app-android/issues/new/choose' target='_blank' rel='noopener noreferrer'>Android</a> or <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/new/choose' target='_blank' rel='noopener noreferrer'>iOS</a>) and mention the ID of your error report</li><li> Share the ID with the technical support</li><li> Write a review on the Corona-Warn-App in the Apple App Store or Google Play Store and mention the ID of your error report</ul></li>",
                             "Regardless of which contact option you choose, the following tips will help to resolve your issue as quickly as possible:",
-                            "<ol><li>Describe the problem as accurately as possible</li><li>Start the error analysis in the CWA (<a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>see blog post</a>)<ul><li>Try to reproduce the incorrect behaviour or to generate the error message</li><li>If this is successful, send the error report to the CWA server. The data will be anonymized and encrypted</li><li>You can then find your unique ID on the bottom of the 'Error Reports' screen, scroll down and click on 'ID History'</li></ul></li><li>Stop the error analysis</li><li>Share the 'unique report ID' with the technical support</li></ol>",
+                            "<ol><li>Describe the problem as accurately as possible</li><li>Start the error analysis in the CWA (<a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>see blog post</a>)<ul><li>Try to reproduce the incorrect behaviour or to generate the error message</li><li>If this is successful, send the error report to the CWA server. The data will be anonymized and encrypted</li><li>You can then find your unique ID on the bottom of the 'Error Reports' screen, scroll down and click on 'ID History'</li></ul></li><li>Stop the error analysis</li><li>Share the 'unique report ID' with the technical support. On Android you can long press the ID and copy & paste it like normal text.</li></ol>",
                             "Notes:<ul><li>The error reports are automatically deleted after 14 days</li><li>Error reports that are transmitted to the server without request by the technical support cannot be analyzed and processed</li><li>There is no direct feedback channel for the error reports in the Corona-Warn-App. Technical support can only communicate with you via one of the above mentioned channels</li></ul>",
                             "For more info as well as screenshots, see the blog article <a href='../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App version 2.2 enables creation of a rapid test profile and error reports</a>"
                         ]
@@ -68,6 +68,7 @@
                             "Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.",
                             "A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a>",
                             "The list of test sites contains only those entries that have been reported by the partners concerned.",
+                            "<a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='image' width='300'></a>",
                             "<hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).",
                             "<a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img src='../../assets/img/faq/BMG_testzentren.png' alt='image' width='300'></a>",
                             "Another list of test sites from the GitHub community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
@@ -126,12 +127,40 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
-                        "title": "Why do I get the error message 'This QR code is not a valid  certificate. (HC_PREFIX_INVALID)' when I try to scan my QR code?",
+                      "title": "Which EU certificates are supported?",
+                      "anchor": "eu_dcc_which",
+                      "active": true,
+                      "textblock": [
+                          "Starting with <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a>, the Corona-Warn-App (CWA) supports all three types of EU Digital COVID Certificate:",
+                          "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
+                          "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
+                          "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
+                      ]
+                    },
+                    {
+                        "title": "Why do I get the error message 'This QR code is not a valid  certificate. (HC_PREFIX_INVALID)' when I try to scan a QR code?",
                         "anchor": "hc_prefix_invalid",
                         "active": true,
                         "textblock": [
-                            "Under the tab 'Certificates' the app can only  scan '<b>EU Digital </b>COVID  Certificates'.",
+                            "Under the tab 'Certificates' the app can only scan '<b>EU Digital</b> COVID  Certificates'.",
                             "See also the following entry on <a href='#vac_cert_invalid' target='_self' rel='noopener'>invalid vaccination certificates</a>."
+                        ]
+                    },
+                    {
+                        "title": "How long is my certificate valid​",
+                        "anchor": "eu_dcc_validity",
+                        "active": true,
+                        "textblock": [
+                            "The following text refers to EU digital COVID certificates issued in Germany, i.e. vaccination, test and recovery certificates. The figures given are the status as of July 2021.",
+                            "Basically, we distinguish between<ul><li>the validity of the digital certificate (the <b>technical validity</b>) and</li><li>the validity of the vaccination protection (the <b>effective vaccination validity</b>), i.e. the 'duration of protection'</li></ul>",
+                            "<b>Technical validity</b>",
+                            "The certificate as a document has an issue date and a technical date of expiry, just like your passport or identity card, for example. For all certificates, the date of expiry is set by the issuer of the certificate. Currently, in Germany, the digital vaccination, test and recovery certificates of the EU are usually issued with a technical validity of one year from the date of issue. ",
+                            "<b>Effective validity</b>",
+                            "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date or, strictly speaking, from the day after reaching the effectiveness of the vaccination protection (15 days after date X). While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may deviate from this. ",
+                            "In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days.",
+                            "<b>Check of the validity</b>",
+                            "The check app, in Germany the CovPassCheck app, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. ",
+                            "If, for example, you have your certificate issued only half a year after the vaccination, then the certificate will technically be valid for another year, but half a year of vaccination has already passed. This means that when checking for vaccination protection, it is recognized that after another six months the vaccination is no longer valid. After that, the check app will reject the certificate as 'invalid', although it is still technically valid, but the effective vaccination validity has expired."
                         ]
                     }
                 ]
@@ -210,16 +239,16 @@
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>How can I transfer the vaccination certificate when changing device?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>What do I do if I lose my phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Will the vaccination certificate be included in my backup?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps?</a></li>",
+                            "<li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I save a vaccination certificate on multiple smartphones, e.g., on my private and business phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>How can I transfer vaccination certificates when changing device?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>What do I do if I lose my phone?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Will vaccination certificates be included in my backup?</a></li><li><a href='#vac_cert_multiple_scan_possible' target='_self' rel='noopener noreferrer'>Can I manage certificates in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps?</a></li>",
                             "</ul>"
                         ]
                     },
                     {
-                        "title": "Why do I get the error message 'This QR code is not a valid vaccination certificate. (VC_PREFIX_INVALID)' when I try to scan my vaccination QR code?",
+                        "title": "Why do I get the error message 'This QR code is not a valid vaccination certificate. (VC_PREFIX_INVALID)' when I try to scan a vaccination QR code?",
                         "anchor": "vac_cert_invalid",
                         "active": true,
                         "textblock": [
-                            "The app can only successfully scan 'EU Digital COVIID Vaccination Certificates' and these are being issued by vaccination centers since 14 June 2021.",
+                            "The app can only successfully scan 'EU Digital COVID Vaccination Certificates' and these are being issued by vaccination centers since 14 June 2021.",
                             "Usually, any document issued before 14 June 2021 will not be a valid digital <b>EU</b> vaccination certificate, but just a vaccination documentation according to §22 of the German Infection Protection Act, that is incompatible with the latest aligned European guidelines for a digital vaccination certificate. Therefore, such a document, as well as the barcodes and QR codes in the yellow vaccination booklet, <b>cannot</b> be scanned with the Corona-Warn-App.",
                             "The new digital certificate statements (that can be scanned) are in the process of being made available by authorized agencies. In some federal states, vaccination centers will automatically send these new digital certificates via mail or they may make them available online. Starting on 14 June 2021, those who have already been vaccinated can have the digital vaccination certificate issued in pharmacies on the basis of a vaccination record (yellow vaccination booklet or vaccination proof), if they do not receive a digital certificate via mail or online. <a href='https://www.mein-apothekenmanager.de/' target='_blank' rel='noopener noreferrer'>Pharmacies search</a>.",
                             "In this news article you will find information about the <b>individual federal states:</b><br><a href='https://www.focus.de/gesundheit/coronavirus/covpass-digitaler-corona-impfpass-fuers-handy-startet-das-ist-der-stand-in-ihrem-bundesland_id_13385519.html' target='_blank' rel='noopener noreferrer'>Digitaler Corona-Impfpass startet - das ist der Stand in Ihrem Bundesland</a>.",
@@ -232,7 +261,7 @@
                         "anchor": "vac_cert_what",
                         "active": true,
                         "textblock": [
-                            "Starting with version 2.3 of the Corona-Warn-App (CWA), you can add your digital vaccination certificate to the CWA and thus securely and digitally prove your Corona vaccination status via QR code. The CWA indicates the complete vaccination protection 14 days after the last required vaccination. The digital vaccination certificate is an additional way to document vaccinations. Thereby you are able to digitally store information such as vaccination time and vaccine in a personalized manner on your smartphones. The use of digital certificate of vaccination in the CWA is voluntary. You can also prove your Corona vaccination in a different way."
+                            "Starting with version 2.3 of the Corona-Warn-App (CWA), you can add your digital vaccination certificate to the CWA and thus securely and digitally prove your Corona vaccination status via QR code. Beginning with version 2.5, certificates for more than one person can be stored in the app. The CWA indicates the complete vaccination protection 14 days after the last required vaccination. The digital vaccination certificate is an additional way to document vaccinations. Thereby you are able to digitally store information such as vaccination time and vaccine in a personalized manner on your smartphones. The use of a digital certificate of vaccination in the CWA is voluntary. You can also provide proof of Corona vaccination status in a different way."
                         ]
                     },
                     {
@@ -240,11 +269,11 @@
                         "anchor": "vac_cert_why",
                         "active": true,
                         "textblock": [
-                            "At the beginning of the year, the European Council decided to launch an interoperable and standardized proof of vaccination for medical purposes. Germany is now quickly implementing this European decision in order to be able to provide all citizens who wish to do so with a digital proof of vaccination. In the meantime, the European Commission has also presented a draft regulation regulating an EU-wide recognition framework for (digital) certificates for vaccinations, tests and for persons with COVID-19 recovered status in order to facilitate the free movement of travelers. The EU's Digital COVID Certificate forms the legal framework for the member states' solutions."
+                            "At the beginning of the year 2021, the European Council decided to launch an interoperable and standardized proof of vaccination for medical purposes. Germany quickly implemented this European decision in order to be able to provide all citizens who wish to participate with a digital proof of vaccination. In the meantime, the European Commission has regulated an EU-wide recognition framework for (digital) certificates for vaccinations, tests and for persons with COVID-19 recovered status in order to facilitate the free movement of travelers. The EU's Digital COVID Certificate forms the legal framework for the member states' solutions. See <a href='#eu_dcc_which' target='_self' rel='noopener noreferrer'>Which EU certificates are supported?</a> for details of the digital certificate support in the Corona-Warn-App."
                         ]
                     },
                     {
-                        "title": "Who can obtain an digital proof of vaccination? How do I get a vaccination certificate? If I already have full vaccination protection, how can I transfer the status to the Corona-Warn-App afterwards?",
+                        "title": "Who can obtain a digital proof of vaccination? How do I get a vaccination certificate? If I already have full vaccination protection, how can I transfer the status to the Corona-Warn-App afterwards?",
                         "anchor": "vac_cert_who",
                         "active": true,
                         "textblock": [
@@ -267,7 +296,7 @@
                         "anchor": "vac_cert_how",
                         "active": true,
                         "textblock": [
-                            "The digital proof of vaccination is generated in the doctor's pratice or in a vaccination center. After entering or transferring the data, a vaccination certificate token (QR code) will be created for you, which you can scan directly with the Corona-Warn-App (CWA) or can be handed to you on a paper printout and later scanned with the CWA.  You can then manage your digital vaccination certificates on your smartphone."
+                            "The digital proof of vaccination is generated in the doctor's practice or in a vaccination center. After entering or transferring the data, a vaccination certificate token (QR code) will be created for you, which you can scan directly with the Corona-Warn-App (CWA) or can be handed to you on a paper printout and later scanned with the CWA.  You can then manage your digital vaccination certificates on your smartphone."
                         ]
                     },
                     {
@@ -319,11 +348,11 @@
                         ]
                     },
                     {
-                        "title": "Can I save my vaccination certificate on multiple smartphones, e.g., on my private and business phone? How can I transfer the vaccination certificate when changing device? What do I do if I lose my phone? Can I manage the certificate in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps? Will the vaccination certificate be included in my backup?",
+                        "title": "Can I save a vaccination certificate on multiple smartphones, e.g., on my private and business phone? How can I transfer vaccination certificates when changing device? What do I do if I lose my phone? Can I manage certificates in the Corona-Warn-App and the CovPass-App at the same time, or do I have to choose one of the two apps? Will vaccination certificates be included in my backup?",
                         "anchor": "vac_cert_multiple_scan_possible",
                         "active": true,
                         "textblock": [
-                            "There is no limit to how often you can scan the QR code of your vaccination certificates. By scanning the QR code of your certificate you can add and manage the vaccination certificates: <ul><li>on multiple devices, e.g. on your private and business phone </li><li>on a new device, when changing device</li><li> in several apps, e.g. the Corona-Warn-App and the CovPass-App</li><li> on a device you have reset. The certificate is not included in the backup. </li></ul>"
+                            "There is no limit to how often you can scan the QR code of vaccination certificates. By scanning the QR code of a certificate you can add and manage the vaccination certificates: <ul><li>on multiple devices, e.g. on your private and business phone </li><li>on a new device, when changing device</li><li> in several apps, e.g. the Corona-Warn-App and the CovPass-App</li><li> on a device you have reset. Certificates are not included in the backup. </li></ul>"
                         ]
                     },
                     {
@@ -343,12 +372,12 @@
                         ]
                     },
                     {
-                        "title": "Where is my personal data of the digital certificate of vaccination stored? Is there a central vaccination register?",
+                        "title": "Where is personal data of a digital certificate of vaccination stored? Is there a central vaccination register?",
                         "anchor": "vac_cert_privacy_data_decentral",
                         "active": true,
                         "textblock": [
-                            "No, there is no central vaccination register. When the Corona vaccination certificate is created, your data will be collected once by the vaccination site and transmitted to the RKI for signing. The data will be deleted there immediately. When you add the Corona vaccination certificate in the app, your personal information is only stored locally (decentralized) on your smartphone. You can decide for yourself if and when to delete this data on your device.",
-                            "All digital vaccination certificates are created only temporarily in the vaccination logging system and then deleted. Permanent storage is only realized decentral on the users' smartphones."
+                            "No, there is no central vaccination register. When a Corona vaccination certificate is created, the data will be collected once by the vaccination site and transmitted to the RKI for signing. The data will be deleted there immediately. When you add a Corona vaccination certificate in the app, personal information is only stored locally (decentralized) on your smartphone. You can decide for yourself if and when to delete this data on your device.",
+                            "All digital vaccination certificates are created only temporarily in the vaccination logging system and then deleted. Permanent storage is only implemented decentrally on users' smartphones."
                         ]
                     },
                     {
@@ -515,7 +544,7 @@
                             "<b> Questions and answers about functionality, misuse, and privacy:</b>",
                             "<ul><li><a href='#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'>How does event registration work in the Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self' rel='noopener noreferrer'> How is the event registration technically implemented?</a></li><li><a href='#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>For which locations and events is event registration suitable?</a></li><li><a href='#check_in_misuse' target='_self' rel='noopener noreferrer'>How do I as an event organizer prevent misuse?</a></li><li><a href='#check_in_ prevent_false_warnings' target='_self' rel='noopener noreferrer'>How do I prevent false warnings as an event participant?</a></li><li><a href='#check_in_privacy' target='_self' rel='noopener noreferrer'>Do I have to worry that the use of the event registration will make my whereabouts or personal data public?</a></li></ul>",
                             "<b> Questions and answers about the Event QR code:</b>",
-                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Who generates the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the Event QR code also be set up and used for e.&nbsp;g. a private birthday party, providing this is legally possible?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the Event QR code be generated?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can Event QR codes from other apps be scanned with the CWA?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Is there a way to check in without a smartphone (dongle or similar)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan an Event QR code but do not have the CWA installed on my smartphone?</a></li></ul>",
+                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Who generates the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the Event QR code also be set up and used for e.g. a private birthday party, providing this is legally possible?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the Event QR code be generated?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can Event QR codes from other apps be scanned with the CWA?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Is there a way to check in without a smartphone (dongle or similar)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan an Event QR code but do not have the CWA installed on my smartphone?</a></li></ul>",
                             "<b> Questions and answers about the warning:</b>",
                             "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Does everyone who scanned the same Event QR code get a warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can the user see what the alert is based on, i.e. which scanned Event QR code caused the warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a></li></ul>"
                         ]
@@ -591,7 +620,7 @@
                         "textblock": [
                             "<b>Who generates the Event QR code?</b>",
                             "The host of a location or event generates the QR code.",
-                            "<b>Can the Event QR code also be set up and used for e.&nbsp;g. a private birthday party, providing this is legally possible?</b>",
+                            "<b>Can the Event QR code also be set up and used for e.g. a private birthday party, providing this is legally possible?</b>",
                             "Yes of course, that is possible.",
                             "<b>Where can the Event QR code be generated?</b>",
                             "The QR code can be generated directly in the app or <a href='../eventregistration' target='_self' rel='noopener noreferrer'>here on the website</a>  and then printed as a PDF or scanned directly from the app.",
@@ -1255,6 +1284,7 @@
                         "anchor": "ENF_version",
                         "active": true,
                         "textblock": [
+                            "<div class='right-float'><img src='../../assets/img/faq/enf_en.jpg' alt='image' width='300'></div>",
                             "Google publishes mobile device support for the COVID-19 Exposure Notifications System using the Google Play Store update services, as a module of Google Play services, that is, independently of the Android operating system. <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>Version 1.5</a> of the Exposure Notifications System (ENS), which was released in July 2020, introduced the ExposureWindow mode (also referred to as v2 mode) in addition to the previous v1 mode. The Exposure Notifications System Version 1.5 or higher is required for the Corona-Warn-App Version 1.9 and all higher versions of the app.",
                             "To check which ENS version is installed on your phone:",
                             "<ol><li>Open the Corona-Warn-App menu on the Start Screen by choosing the 3-dot icon on the top right, then tap 'App Information'.</li><li>Scroll down to the bottom of the page to the number next to 'ENF Version', which is displayed in the following format in Version 1.5 of the Exposure Notifications System and higher:<ul><li>VVYYWWxxxxx, where VV is the version of the COVID-19 Exposure Notifications System, YY is the year and WW is the week number (e.g.'18210214000' signifies Version 1.8).</li></ul></li></ol>",
@@ -1646,9 +1676,9 @@
                         "anchor": "delete_all_data_cwa",
                         "active": true,
                         "textblock": [
-                            "By uninstalling the Corona-Warn-App (CWA), all data of the CWA is deleted. However, a user should note that, for example, the data of the Exposure Notification Framework (ENF) is managed by the operating system of his smartphone. Therefore, this ENF data on Android is only deleted by uninstalling CWA if no other application (app) has been installed on the user's smartphone that uses the ENF. On Apple iOS, the ENF data must be deleted manually because it will not be deleted by uninstallating CWA.",
+                            "By uninstalling the Corona-Warn-App (CWA), all data of the CWA is deleted. However, a user should note that, for example, the data of the Exposure Notification Framework (ENF) is managed by the operating system of his smartphone. Therefore, this ENF data on Android is only deleted by uninstalling CWA if no other application (app) has been installed on the user's smartphone that uses the ENF. On Apple iOS, the ENF data must be deleted manually because it will not be deleted by uninstalling CWA.",
                             "Alternatively, the user can also use the functionalities provided by the respective operating system to delete stored data of an application (app):",
-                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en</a></li><li>(Apple) iOS: <a href='https://support.apple.com/en-gb/HT201656' target='_self' rel='noopener noreferrer'>https://support.apple.com/en-gb/HT201656</a></li></ul>" 
+                            "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/7431795/speicherplatz-freigeben?hl=en</a></li><li>(Apple) iOS: <a href='https://support.apple.com/en-gb/HT201656' target='_self' rel='noopener noreferrer'>https://support.apple.com/en-gb/HT201656</a></li></ul>"
                         ]
                     },
                     {
