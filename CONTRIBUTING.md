@@ -46,20 +46,23 @@ The following rule governs documentation contributions:
 
 ## Pull Request Checklist
 
-* Branch from the master branch and, if needed, rebase to the current master branch before submitting your pull request. If it doesn't merge cleanly with master, you may be asked to rebase your changes.
+* Use a [git GUI interface](https://git-scm.com/downloads/guis/) if you are new to `git`. It will help you getting familiar with the basic submission workflow.
+
+* Branch from the `master` branch and also target `master` with your Pull Request.
 
 * Commits should be as small as possible while ensuring that each commit is correct independently (i.e., each commit should compile and pass tests).
+  * If you notice a small error in your latest commit, you should [amend](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) fixes instead of creating a new commit.
+  * If you make several related fixup commits in a row, you should [squash](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) them into a single commit.
+  * Use [restore](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things) operations if you want to revert a change in a commit.
 
-* Test your changes as thoroughly as possible before you commit them. Preferably, automate your test by unit/integration tests. If tested manually, provide information about the test scope in the PR description (e.g. “Test passed: Upgrade version from 0.42 to 0.42.23.”).
-
-* Create _Work In Progress [WIP]_ pull requests only if you need clarification or an explicit review before you can continue your work item.
+* Create _Draft_ pull requests only if you need clarification or an explicit review before you can continue your work item.
 
 * If your patch is not getting reviewed or you need a specific person to review it, you can @-reply a reviewer asking for a review in the pull request or a comment, or you can ask for a review by contacting us via [email](mailto:corona-warn-app.opensource@sap.com).
 
 * Post review:
-  * If a review requires you to change your commit(s), please test the changes again.
-  * Amend the affected commit(s) and force push onto your branch.
+  * Integrate the requested changes into your submission.
   * Set respective comments in your GitHub review to resolved.
+  * [Rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) your PR to the latest upstream `master` branch.
   * Create a general PR comment to notify the reviewers that your amendments are ready for another round of review.
 
 ## Issues and Planning
