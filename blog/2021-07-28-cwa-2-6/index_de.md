@@ -75,7 +75,7 @@ Es kann vorkommen, dass ein Land verschiedene Regeln definiert hat, die aus **te
 **Ergebnis 4: Zertifikat ist nicht gültig**
 
 <br></br>
-<center> <img src="./nicht-gültig.png" title="Zertifikat nicht gültig" style="align: center"> <img src="./nicht-gültig(2).png" title="Zertifikat nicht gültig" style="align: center"> </center>
+<center> <img src="./nicht-gültig.png" title="Zertifikat nicht gültig" style="align: center"> </center>
 <br></br>
 
 Ein Zertifikat kann aber auch aus verschiedenen Gründen ungültig sein. Zum Beispiel: Eine oder mehrere **Regeln des Ziellandes sind nicht eingehalten**. Das kann vorkommmen, wenn ein Testzertifikat abgelaufen oder es zum Einreisezeitpunkt älter als 48 Stunden ist. Es können aber auch die **Regeln des Ausstellerlandes fehlschlagen**. Das könnte der Fall sein, wenn Testzertifikate eines bestimmten Testzentrums ungültig sind, weil es Fehler beim Ausstellen gemacht hat. Zuletzt kann ein Zertifikat auf Basis der **technischen Prüfung** ungültig sein, beispielsweise wenn das technische Ablaufdatum zum gewählten Reisezeitpunkt überschritten ist. 
