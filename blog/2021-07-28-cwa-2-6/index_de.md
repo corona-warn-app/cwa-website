@@ -7,7 +7,7 @@ author: Hanna Heine, 10:00 Uhr
 layout: blog
 ---
 
-# Projektteam veröffentlicht Corona-Warn-App Version 2.6
+## Projektteam veröffentlicht Corona-Warn-App Version 2.6
 
 Das Projektteam aus Deutscher Telekom und SAP hat Version 2.6 der Corona-Warn-App veröffentlicht. Darin können Nutzer\*innen **lokale 7-Tage-Inzidenzen** hinzufügen  und mit der **EU-Zertifikatsprüfung** vor einer Reise prüfen, ob ihre Zertifikate gültig sind. Außerdem ist es ab Version 2.6 möglich, ein bereits angelegtes **Schnelltest-Profil zu bearbeiten**. Die neue Version steht Nutzer\*innen innerhalb der nächsten 48 Stunden zur Verfügung.
 

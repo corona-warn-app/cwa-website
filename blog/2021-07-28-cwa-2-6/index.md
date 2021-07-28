@@ -7,7 +7,7 @@ author: Hanna Heine, 10 am
 layout: blog
 ---
 
-# Project team releases version 2.6 of the Corona-Warn-App
+## Project team releases version 2.6 of the Corona-Warn-App
 
 Deutsche Telekom and SAP’s project team have released version 2.6 of the Corona-Warn-App. Users can add **local 7-day incidences** and use the EU certificate check to find out if their certificates are valid before traveling. In addition users can edit a **rapid test profile that has already been created**.The new version will be available to users within the next 48 hours.
 
