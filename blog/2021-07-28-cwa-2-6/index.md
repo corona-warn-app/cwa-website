@@ -33,7 +33,7 @@ To **remove a local incidence** from the overview, users can swipe to the right 
 
 Users can now check before traveling whether their certificates (certificate of recovery, test, and/or vaccination certificate) are valid in a selected country at the time of their trip. For this purpose, the Corona-Warn-App considers the **applicable entry rules of the selected destination country** and matches them with various parameters of the certificate, such as date and type of test, test center or date of a vaccination. 
 
-Each European country that supports the EU's COVID digital certificate has the option to upload rules that the Corona-Warn-App can match for verification. At the launch of the new feature, **Germany, Spain, the Netherlands, Ireland, Luxembourg, and Lithuania** have provided rules, with more countries to follow in the coming weeks. 
+Each European country that supports the EU's COVID digital certificate has the option to upload rules that the Corona-Warn-App can match for verification. At the launch of the new feature, **Germany, Spain, the Netherlands, Ireland, Luxembourg, Slovenia and Lithuania** have provided rules, with more countries to follow in the coming weeks. 
 
 
 ### Checking the validity - here's how:

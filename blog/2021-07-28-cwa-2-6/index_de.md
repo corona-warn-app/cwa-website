@@ -32,7 +32,7 @@ Um eine lokale Inzidenz **aus der Übersicht zu entfernen**, können sie wieder 
 
 Nutzer\*innen können nun vor einer Reise prüfen, ob ihre Zertifikate (Test-, Genesenen-, und/oder Impfzertifikat) in einem ausgewählten Land zum Zeitpunkt ihrer Reise gültig sind. Die Corona-Warn-App berücksichtigt dafür die **geltenden Einreiseregeln des ausgewählten Reiselandes** und gleicht sie mit verschiedenen Parametern des Zertifikats ab, wie Datum und Art des Tests, Testzentrum oder Datum einer Impfung. 
 
-Jedes europäische Land, das digitale COVID-Zertifikate der EU unterstützt, hat die Möglichkeit, Regeln hochzuladen, die die Corona-Warn-App zur Überprüfung abgleichen kann. Zum Start der neuen Funktion haben **Deutschland, Spanien, die Niederlande, Irland, Luxemburg und Litauen** Regeln hinterlegt, weitere Länder folgen in den kommenden Wochen. 
+Jedes europäische Land, das digitale COVID-Zertifikate der EU unterstützt, hat die Möglichkeit, Regeln hochzuladen, die die Corona-Warn-App zur Überprüfung abgleichen kann. Zum Start der neuen Funktion haben **Deutschland, Spanien, die Niederlande, Irland, Luxemburg, Slowenien und Litauen** Regeln hinterlegt, weitere Länder folgen in den kommenden Wochen. 
 
 ### Zertifikat prüfen – so geht’s:
 
