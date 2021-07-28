@@ -82,7 +82,7 @@ Ein Zertifikat kann aber auch aus verschiedenen Gründen ungültig sein. Zum Bei
 
 ## Weitere neue Funktionen
 
-Ab Version 2.6 können Nutzer\*innen über die Kachel **„Sie lassen sich testen?“** auf der Startseite ihrer App alle wichtige Funktionen rund um ihre Tests verwalten. In der **Testverwaltung** haben sie ab dieser Version die Möglichkeit, eine **Teststelle in ihrer Nähe** zu finden, die an die Infrastruktur der Corona-Warn-App angebunden ist: Gehen die Nutzer\*innen auf „Testmöglichkeit finden“, werden sie zur Schnellteststellensuche auf der Website der Corona-Warn-App weitergeleitet. 
+Ab Version 2.6 können Nutzer\*innen über die Kachel **„Sie lassen sich testen?“** auf der Startseite ihrer App alle wichtigen Funktionen rund um ihre Tests verwalten. In der **Testverwaltung** haben sie ab dieser Version die Möglichkeit, eine **Teststelle in ihrer Nähe** zu finden, die an die Infrastruktur der Corona-Warn-App angebunden ist: Gehen die Nutzer\*innen auf „Testmöglichkeit finden“, werden sie zur Schnellteststellensuche auf der Website der Corona-Warn-App weitergeleitet. 
 
 Außerdem können sie in der Testverwaltung nun auch ein bereits angelegtes **Schnelltest-Profil bearbeiten**, um ihre angegebenen Daten zu ändern. Mehr Informationen zum Schnelltest-Profil finden Sie [hier](https://www.coronawarn.app/de/blog/2021-05-12-corona-warn-app-version-2-2/).
 
