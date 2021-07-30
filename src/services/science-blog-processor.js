@@ -109,7 +109,7 @@ const createPageEntry =  (folderName, mdData, lang) => {
     author: mdData.data.author,
     redirect: mdData.data.redirect,
     htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
-    htmlContent: replaceImagePaths(marked(mdData.content), folderName)
+    htmlContent: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[1]), folderName)
   };
 
   entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);
