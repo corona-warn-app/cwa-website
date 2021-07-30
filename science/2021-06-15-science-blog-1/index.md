@@ -4,6 +4,7 @@ page-description: "About the Effectiveness and Benefits of the Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA Team
+date: "2021-06-26"
 layout: science
 ---
 
