@@ -4,6 +4,7 @@ page-description: "About the Effectiveness and Benefits of the Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA Team
+date: "2021-06-26"
 layout: science
 ---
 
@@ -13,13 +14,13 @@ Some of the most important aspects of the app that have been discussed since its
 
 <!-- overview -->
 
--   [Defining effectiveness and benefits](#defining-effectiveness-and-benefits)
--   [What are the aims of the CWA?](#what-are-the-aims-of-the-cwa)
--   [Does the CWA fulfil its aims?](#does-the-cwa-fulfil-its-aims)
--   [What is the purpose of evaluating the CWA and what aspects play a role in the evaluation?](#what-is-the-purpose-of-evaluating-the-cwa-and-what-aspects-play-a-role-in-the-evaluation)
--   [Which figures are taken into account in the evaluation and where do the data come from?](#which-figures-are-taken-into-account-in-the-evaluation-and-where-do-the-data-come-from)
--   [What are the benefits of the Corona-Warn-App?](#what-are-the-benefits-of-the-corona-warn-app)
--   [More topics in the next few weeks](#more-topics-in-the-next-few-weeks)
+- [Defining effectiveness and benefits](#defining-effectiveness-and-benefits)
+- [What are the aims of the CWA?](#what-are-the-aims-of-the-cwa)
+- [Does the CWA fulfil its aims?](#does-the-cwa-fulfil-its-aims)
+- [What is the purpose of evaluating the CWA and what aspects play a role in the evaluation?](#what-is-the-purpose-of-evaluating-the-cwa-and-what-aspects-play-a-role-in-the-evaluation)
+- [Which figures are taken into account in the evaluation and where do the data come from?](#which-figures-are-taken-into-account-in-the-evaluation-and-where-do-the-data-come-from)
+- [What are the benefits of the Corona-Warn-App?](#what-are-the-benefits-of-the-corona-warn-app)
+- [More topics in the next few weeks](#more-topics-in-the-next-few-weeks)
 
 ## Defining effectiveness and benefits
 
@@ -88,7 +89,6 @@ Figure 2 shows the distribution of the test results provided via the CWA. A tota
 
 <br/>
 
-
 <div class="figure">
 
 <div id="htmlwidget-plotly-28851db5cd47cc1c16a6" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -121,9 +121,9 @@ The evaluation is aimed at examining the effectiveness and benefits of the CWA.
 
 Evidence of the app’s effectiveness – that its users infect fewer people than those who do not use the app – are based on the following two points:
 
--   People who are informed in a timely manner about a potential infection can reduce their contact with other people more quickly and thus prevent further transmission.
+- People who are informed in a timely manner about a potential infection can reduce their contact with other people more quickly and thus prevent further transmission.
 
--   The CWA can be used to inform friends and relatives but also strangers about their increased risk of infection.
+- The CWA can be used to inform friends and relatives but also strangers about their increased risk of infection.
 
 In order to investigate the first point, an analysis needs to be conducted of the steps that are taken from testing through to a user receiving a warning, in addition to data that would show the length of delay between these steps and throughput rates.
 
@@ -133,7 +133,6 @@ In order to investigate the first point, an analysis needs to be conducted of th
 </figure>
 </div>
 
-
 Digitisation enables essential processes to be accelerated and made scalable. The analysis can therefore also provide estimates of effect.
 
 It is difficult to provide figures for the second point due to the way that the app minimises data collection. As such, direct and indirect evidence from user surveys need to be used instead.
@@ -142,19 +141,19 @@ The CWA is part of the fight against the pandemic and it both supplements analog
 
 When attempting to measure effectiveness, therefore, it is important to answer the following questions:
 
--   Are test results being made available promptly?
--   How many people are providing warnings?
--   How many people are receiving warnings?
--   How many strangers are receiving warnings?
--   How many people who received a warning were infected?
--   How long does it take for a person who has been identified as at increased risk of infection to receive a warning?
--   How many people who receive a warning are warned by people who received a warning themselves?
+- Are test results being made available promptly?
+- How many people are providing warnings?
+- How many people are receiving warnings?
+- How many strangers are receiving warnings?
+- How many people who received a warning were infected?
+- How long does it take for a person who has been identified as at increased risk of infection to receive a warning?
+- How many people who receive a warning are warned by people who received a warning themselves?
 
 When it comes to usefulness, further questions about the actual way in which the app is used also play a role:
 
--   How many people have installed the CWA and how many people are actively using it?
--   What is the proportion of tests registered via the CWA in relation to total laboratory capacity?
--   How many people are providing warnings compared to the numbers of new infections?
+- How many people have installed the CWA and how many people are actively using it?
+- What is the proportion of tests registered via the CWA in relation to total laboratory capacity?
+- How many people are providing warnings compared to the numbers of new infections?
 
 Sometimes it is only possible to answer these questions (and account for the two points described above) by developing realistic models and simulations. The resulting figures can be used to make claims about how many cases of infection and the numbers of deaths that are being prevented by the CWA.
 
@@ -174,19 +173,17 @@ The app is to be evaluated in order to assess the contribution it makes to break
 
 An evaluation of whether the app fulfils its aims and is effective, as well as its acceptance and usage, involves the collection and analysis of the following data (cumulative and over time):
 
--   Data from user surveys (EDUS and PPA)
--   Data from back-end components from the CWA’s infrastructure (test registration, sharing and retrieval of daily keys),
--   Data from additional sources (case numbers, test capacities, Apple App Store and Google Play Store, model calculations and simulations)
+- Data from user surveys (EDUS and PPA)
+- Data from back-end components from the CWA’s infrastructure (test registration, sharing and retrieval of daily keys),
+- Data from additional sources (case numbers, test capacities, Apple App Store and Google Play Store, model calculations and simulations)
 
 ### Key data from user surveys
-
-
 
 The evaluation includes the [event-driven user survey](#the-event-driven-user-survey) (EDUS) and the possibility of regularly providing usage data via [data donation](#data-donation) (Privacy Preserving-Analytics, PPA).
 
 #### The event-driven user survey
 
-An online survey was undertaken among users who received a notification between the beginning of March and the beginning of May 2021 indicating that they were at ‘increased risk’. 
+An online survey was undertaken among users who received a notification between the beginning of March and the beginning of May 2021 indicating that they were at ‘increased risk’.
 The users were asked about their behaviour before they had received the risk notification and about their planned behaviour afterwards. The second part of the survey was carried out five days later and aimed to determine whether these users had actually implemented their planned behaviour. One of the goals of the survey, therefore, was to find out whether the risk notification provided by the CWA actually led users to change their behaviour.
 
 #### Data donation
@@ -195,14 +192,13 @@ The evaluation also involves an event-independent analysis of technical usage da
 
 Privacy Preserving Analytics (PPA) – the analysis of usage data while preserving privacy –helps provide a better understanding of how the CWA is used and enables its functions and user-friendliness to be continuously improved. Relevant data have been collected since the beginning of March 2021.
 
-
-
 The data donated by users can be used to examine:
--   Which events (e.g. a notification of an ‘increased risk’, a test registration, receipt of a test result, key submission to warn others) occur in the app and how often
--   When these events occur and how, and the interval between events
--   How users respond to these events
--   Where and when users cancel processes within the app
--   The demographic (e.g. age group, district) that these data are associated with
+
+- Which events (e.g. a notification of an ‘increased risk’, a test registration, receipt of a test result, key submission to warn others) occur in the app and how often
+- When these events occur and how, and the interval between events
+- How users respond to these events
+- Where and when users cancel processes within the app
+- The demographic (e.g. age group, district) that these data are associated with
 
 ### Key data from the CWA’s back end
 
@@ -214,19 +210,16 @@ The RKI has access to other key data sets which are gained from additional sourc
 
 In addition, conclusions about the current number of cases and the overall numbers of tests that have been carried out are also needed. Some questions, especially those relating to hypothetical scenarios (‘What if ...?’), can only be answered using heuristics, models and simulations.
 
-
-
 ## What are the benefits of the Corona-Warn-App?
 
 The [data sources](#which-figures-are-taken-into-account-in-the-evaluation-and-where-do-the-data-come-from) currently available enable initial conclusions to be made about the effectiveness and benefits of the CWA. A detailed analysis of relevant data will be carried out regularly in greater detail over the coming weeks.
 
--   A large proportion (88%) of users who were tested and received their test results via the CWA (and provided data via data donation on the delay: 976,084) reported that their test results were available either within 24 hours (724,187≃74%) or 2 days (136,990-14%). <span>(rechtzeitige Wirksamkeit)</span>
--   A good proportion of users (61%) who registered a positive test result via the CWA and who received their result via the app (771,957) shared their result, and therefore used the app to warn other people (473,974) (see [above](#does-the-cwa-fulfil-its-aims)). <span>(korrekte Wirksamkeit)</span>
--   Many of the users (data from the [EDUS](#the-event-driven-user-survey) : 73% (18,099 of 24,958)) were surprised to have received a notification that they were at ‘increased risk’. Therefore, the CWA often provides warnings outside of the user’s close and professional circle, and to people who would not be reachable without external support because of the lack of direct contact. <span>(zusätzliche Wirksamkeit)</span>
--   The majority of users who received a red warning (data from the [EDUS](#the-event-driven-user-survey): 87% (13,515 of 15,540)) also subsequently underwent testing. <span>(korrekte Wirksamkeit)</span>
--   The [EDUS](#the-event-driven-user-survey) survey shows that around 6% (792 of 13,493) of the tests carried out as a result of a (red) warning were positive for SARS-CoV-2. A result that is comparable to that from analogue contact tracing. <span>(korrekte Wirksamkeit)</span>
--   The data gathered via donation, the app stores and the CWA back end roughly indicate that users who share positive test results via their daily key warn around six other users, i.e. six other users receive a red warning showing them to be at ‘increased risk’ (see [above](#does-the-cwa-fulfil-its-aims)). <span>(korrekte Wirksamkeit)</span>
-
+- A large proportion (88%) of users who were tested and received their test results via the CWA (and provided data via data donation on the delay: 976,084) reported that their test results were available either within 24 hours (724,187≃74%) or 2 days (136,990-14%). <span>(rechtzeitige Wirksamkeit)</span>
+- A good proportion of users (61%) who registered a positive test result via the CWA and who received their result via the app (771,957) shared their result, and therefore used the app to warn other people (473,974) (see [above](#does-the-cwa-fulfil-its-aims)). <span>(korrekte Wirksamkeit)</span>
+- Many of the users (data from the [EDUS](#the-event-driven-user-survey) : 73% (18,099 of 24,958)) were surprised to have received a notification that they were at ‘increased risk’. Therefore, the CWA often provides warnings outside of the user’s close and professional circle, and to people who would not be reachable without external support because of the lack of direct contact. <span>(zusätzliche Wirksamkeit)</span>
+- The majority of users who received a red warning (data from the [EDUS](#the-event-driven-user-survey): 87% (13,515 of 15,540)) also subsequently underwent testing. <span>(korrekte Wirksamkeit)</span>
+- The [EDUS](#the-event-driven-user-survey) survey shows that around 6% (792 of 13,493) of the tests carried out as a result of a (red) warning were positive for SARS-CoV-2. A result that is comparable to that from analogue contact tracing. <span>(korrekte Wirksamkeit)</span>
+- The data gathered via donation, the app stores and the CWA back end roughly indicate that users who share positive test results via their daily key warn around six other users, i.e. six other users receive a red warning showing them to be at ‘increased risk’ (see [above](#does-the-cwa-fulfil-its-aims)). <span>(korrekte Wirksamkeit)</span>
 
 These preliminary figures show that the CWA is effective and useful and that it continues to make an important contribution to breaking chains of infection. Moreover, the benefits associated with the CWA increase with each additional user that installs the app.
 
