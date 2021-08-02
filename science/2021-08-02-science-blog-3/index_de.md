@@ -545,6 +545,8 @@ Im Familien-, Freundes- und Arbeitskreis ist es oftmals nicht möglich durchweg 
 
 ### 4.5 Zusammenhang zwischen Überraschtheit, Infektion und Kontaktaufnahme zum Gesundheitswesen
 
+Die Zusammenhänge zwischen der Überraschtheit, Infektion und Kontaktaufnahme zum Gesundheitswesen lassen sich in einer einzigen Grafik zusammenfassen.
+
 <figure>
     <img src="./fig_04.png" alt="Abbildung 4"/>
     <figcaption aria-hidden="true"><em>Abb. 4: EDUS - Zusammenhang zwischen Überraschtheit, Kontaktvorhaben zum Gesundheitswesen und Infektion.</em></figcaption>
