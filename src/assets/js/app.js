@@ -275,6 +275,10 @@ $(document).ready(function(){
             scrollTo(hash)
         }
     }
-    checkHashAndChangeTab()
+
+    // update the tab selection for an existing hash if the screenshot page is loaded
+    if (document.getElementById('screenshot-tabs')) {
+      checkHashAndChangeTab()
+    }
 
 });
