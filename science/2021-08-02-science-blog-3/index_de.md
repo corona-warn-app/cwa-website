@@ -572,6 +572,7 @@ In der Basisbefragung (direkt nach der roten Warnung) gaben etwas mehr als zwei 
 
 
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption><em>Tab. 11: EDUS - Testabsicht</em></caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
@@ -678,6 +679,7 @@ Die Teilnehmenden, die in der Basisbefragung angaben, einen Test zu planen, wurd
 
 
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption><em>Tab. 12: EDUS - Test-Art</em></caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
