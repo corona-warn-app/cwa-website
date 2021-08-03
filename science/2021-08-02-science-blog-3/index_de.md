@@ -491,7 +491,7 @@ Im Familien-, Freundes- und Arbeitskreis ist es oftmals nicht möglich durchweg 
 </figure>
 
 <table class="gt_table">
-  
+  <caption><em>Tab. 10: EDUS - Zusammenhang zwischen Überraschtheit und Infektion</em></caption>
   <thead class="gt_col_headings">
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
