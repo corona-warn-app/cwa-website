@@ -7,7 +7,7 @@ author: Open Source Team
 layout: blog
 ---
 
-Mithilfe der Statistikkacheln haben Sie nun innerhalb der App eine Übersicht über die bestätigten Neuinfektionen, warnende Personen, die 7-Tage-Inzidenz und den 7-Tage-R-Wert.
+Mithilfe der Statistikkacheln haben Sie innerhalb der App unter anderem eine Übersicht über die bestätigten Neuinfektionen, warnende Personen, die 7-Tage-Inzidenz und den 7-Tage-R-Wert. In diesem Blog-Beitrag werden diese Zahlen etwas näher erläutert.
 
 <!-- overview -->
 
@@ -18,9 +18,11 @@ Mithilfe der Statistikkacheln haben Sie nun innerhalb der App eine Übersicht ü
 
 ## Kachel "Bestätigte Neuinfektionen"
 
-<br></br>
-<center> <img src="./bestätigte-neuinfektionen.png" title="Bestätigte Neuinfektionen" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./bestätigte-neuinfektionen.png" alt="Bestätigte Neuinfektionen" width="300px"/>
+</figure>
+</div>
 
 **Bestätigte Neuinfektionen**
 
@@ -64,9 +66,11 @@ Diese Zahl gibt an, wie viele bestätigte Infektionen dem RKI insgesamt, d.h. se
 
 ## Kachel "Warnende Personen"
 
-<br></br>
-<center> <img src="./warnende-personen.png" title="Warnende Personen" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./warnende-personen.png" alt="Warnende Personen" width="300px"/>
+</figure>
+</div>
 
 **Warnende Personen**
 
@@ -102,9 +106,11 @@ Diese Zahl gibt an, wie viele positive PCR-Testergebnisse bisher insgesamt, d.h.
 
 ## Kachel "7-Tage-Inzidenz"
 
-<br></br>
-<center> <img src="./7-tage-inzidenz.png" title="7-Tage-Inzidenz" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./7-tage-inzidenz.png" alt="7-Tage-Inzidenz" width="300px"/>
+</figure>
+</div>
 
 **7-Tage-Inzidenz**
 
@@ -117,7 +123,7 @@ Diese Zahl ist identisch mit der von RKI veröffentlichen Zahl.[1]
 
 Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich die 7-Tage-Inzidenz gegenüber dem angezeigten Wert <u>vom</u> Vortag um **1**% oder mehr verändert hat - jeweils nach oben (<span style="color:red">rot</span>) oder nach unten (<span style="color:green">grün</span>), bei einer Veränderung kleiner als 1% waagerecht (<span style="color:grey">grau</span>).
 
-**Kommentare**
+**Kommentare:**
 
 - Für die 7-Tage-Inzidenz wird das <u>Meldedatum</u> zugrunde gelegt. Das ist das Datum, an dem ein Fall neu im lokal zuständigen Gesundheitsamt erfasst wurde. Es werden nur die dem RKI bekannten Fälle mit einem Meldedatum in den letzten 7 Tagen gezählt. Da die Gesundheitsämter ihre Zahlen nach unterschiedlichen Zeitplänen an das RKI übermitteln, entstehen ggf. Verzögerungen. Diese Verzögerungen durch die Gesundheitsämter führen daher systematisch zu einer Unterbewertung der Inzidenz. [3]
 
@@ -127,7 +133,7 @@ Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich die 7-Tage-Inzid
 
 - Der lokale Inzidenz-Wert ist abhängig von der Verteilung der Bevölkerung. Unterschiedliche Regionen haben unterschiedliche Bevölkerungszahlen. Daher wird die Inzidenz zum Vergleich und für die Diskussion erforderlicher Maßnahmen auf 100.000 Einwohner normiert. [2], [3]
 
-**Referenzen**
+**Referenzen:**
 
 [[1] RKI - Fallzahlen](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html)
 
@@ -139,9 +145,11 @@ Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich die 7-Tage-Inzid
 
 ## Kachel "7-Tage-R-Wert"
 
-<br></br>
-<center> <img src="./7-tage-r-wert.png" title="7-Tage-R-Wert" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./7-tage-r-wert.png" alt="7-Tage-R-Wert" width="300px"/>
+</figure>
+</div>
 
 **7-Tage-R-Wert**
 
@@ -151,7 +159,7 @@ Der berechnete Wert stellt mit einem mathematischen Modell eine Schätzung dar, 
 
 Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich der 7-Tage-R-Wert gegenüber dem angezeigten Wert <u>vom Vortag</u> um **1%** oder mehr verändert hat - jeweils nach oben (<span style="color:red">rot</span>) oder nach unten (<span style="color:green">green</span>), bei einer Veränderung kleiner als 1% waagerecht (<span style="color:grey">grau</span>).
 
-**Kommentare**
+**Kommentare:**
 
 - Der R-Wert ist ein Maß für die Übertragbarkeit des Erregers und für die Dynamik des Ausbruchgeschehens.
 

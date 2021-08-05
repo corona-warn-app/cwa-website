@@ -7,7 +7,7 @@ author: Open Source Team
 layout: blog
 ---
 
-Using the new statistic tiles, you are now able to get a quick overview of the confirmed new infections, the warnings by app users, the 7-day incidence and the 7-day r value.
+Using the statistic tiles, you are now able to get a quick overview of the confirmed new infections, the warnings by app users, the 7-day incidence and the 7-day r value. In this blog post, these numbers are explained in more detail.
 
 <!-- overview -->
 
@@ -18,9 +18,11 @@ Using the new statistic tiles, you are now able to get a quick overview of the c
 
 ## Tile "Confirmed New Infections"
 
-<br></br>
-<center> <img src="./confirmed-new-infections.png" title="Confirmed New Infections" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./confirmed-new-infections.png" alt="confirmed-new-infecitons" width="300px"/>
+</figure>
+</div>
 
 **Confirmed New Infections**
 
@@ -64,9 +66,11 @@ This number indicates the total number of confirmed infections registered with t
 
 ## Tile "Warnings by App Users"
 
-<br></br>
-<center> <img src="./warnings-by-app-users.png" title="Warnings by App Users" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./warnings-by-app-users.png" alt="Warnings by App Users" width="300px"/>
+</figure>
+</div>
 
 **Warnings by App Users**
 
@@ -100,9 +104,11 @@ This number indicates how many positive test scores have been shared by users so
 
 ## Tile "7-Day-Incidence"
 
-<br></br>
-<center> <img src="./7-day-incidence.png" title="7-Day Incidence" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./7-day-incidence.png" alt="7-Day Incidence" width="300px"/>
+</figure>
+</div>
 
 **7-Day Incidence**
 
@@ -114,7 +120,7 @@ This is the sum of the new infections of the last 7 days adjusted (in proportion
 
 The <i>**trend indicator**</i> shows with an arrow whether the 7-day Incidence of the current day has changed by **1%** or more compared to the indicated value <u>of the previous day</u> - upward (<span style="color:red">red</span>) or downward (<span style="color:green">green</span>) respectively, or a change smaller than 1% with "steady" (<span style="color:grey">grey</span>).
 
-**Comments**
+**Comments:**
 
 - The 7-day incidence is based on the <u>notification date</u>. This is the date on which an infection was first recorded at the local health office. Only those cases known to the RKI with a notification date in the last 7 days are counted. Since the local health offices report their figures to the Robert Koch-Institute according to different schedules, reporting delays may occur. Those late incoming reports regularly lead to an underestimation of the incidence with this approach. [3]
 
@@ -136,9 +142,11 @@ The <i>**trend indicator**</i> shows with an arrow whether the 7-day Incidence o
 
 ## TIle "7-Day R Value"
 
-<br></br>
-<center> <img src="./7-day-r-value.png" title="7-Day R Value" style="align: center"> </center>
-<br></br>
+<div class="right-float">
+<figure>
+    <img src="./7-day-r-value.png" alt="7-Day R Value" width="300px"/>
+</figure>
+</div>
 
 **7-Day R Value**
 
