@@ -1,13 +1,13 @@
 ---
-page-title: "Erläuterung der verschiedenen Kacheln in der Corona-Warn-App und die Herleitung der darin vorkommenden Zahlen"
-page-description: "Erläuterung der verschiedenen Kacheln in der Corona-Warn-App und die Herleitung der darin vorkommenden Zahlen"
-page-name: kacheln
-page-name_de: kacheln
+page-title: "Erläuterung der Statistikkacheln in der Corona-Warn-App"
+page-description: "Erläuterung der Statistikkacheln in der Corona-Warn-App"
+page-name: statistikkacheln
+page-name_de: statistikkacheln
 author: Open Source Team
 layout: blog
 ---
 
-Mithilfe der Kacheln haben Sie nun innerhalb der App eine Übersicht über die bestätigten Neuinfektionen, warnende Personen, die 7-Tage-Inzidenz und den 7-Tage-R-Wert.
+Mithilfe der Statistikkacheln haben Sie nun innerhalb der App eine Übersicht über die bestätigten Neuinfektionen, warnende Personen, die 7-Tage-Inzidenz und den 7-Tage-R-Wert.
 
 <!-- overview -->
 

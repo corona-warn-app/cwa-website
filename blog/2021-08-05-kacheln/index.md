@@ -1,13 +1,13 @@
 ---
-page-title: "Explanation of the different tiles in the Corona-Warn-App"
-page-description: "Explanation of the different tiles in the Corona-Warn-App"
-page-name: kacheln
-page-name_de: kacheln
+page-title: "Explanation of the statistic tiles in the Corona-Warn-App"
+page-description: "Explanation of the statistic tiles in the Corona-Warn-App"
+page-name: statistictiles
+page-name_de: statistictiles
 author: Open Source Team
 layout: blog
 ---
 
-Using the new tiles, you are now able to get a quick overview of the confirmed new infections, the warnings by app users, the 7-day incidence and the 7-day r value.
+Using the new statistic tiles, you are now able to get a quick overview of the confirmed new infections, the warnings by app users, the 7-day incidence and the 7-day r value.
 
 <!-- overview -->
 
