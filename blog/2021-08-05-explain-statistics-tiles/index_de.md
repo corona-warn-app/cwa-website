@@ -1,7 +1,7 @@
 ---
 page-title: "Erläuterung der Statistikkacheln in der Corona-Warn-App"
 page-description: "Erläuterung der Statistikkacheln in der Corona-Warn-App"
-page-name: statistikkacheln
+page-name: statistictiles
 page-name_de: statistikkacheln
 author: Open Source Team
 layout: blog
