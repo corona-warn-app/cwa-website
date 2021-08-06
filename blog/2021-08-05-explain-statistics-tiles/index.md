@@ -7,7 +7,7 @@ author: Open Source Team
 layout: blog
 ---
 
-Using the statistic tiles, you are now able to get a quick overview of the confirmed new infections, the warnings by app users, the 7-day incidence and the 7-day r value. In this blog post, these numbers are explained in more detail.
+Using the statistic tiles, you are now able to get a quick overview of the confirmed new infections, the warnings by app users, the 7-Day Incidence and the 7-Day R Value. In this blog post, these numbers are explained in more detail.
 
 <!-- overview -->
 
@@ -20,13 +20,13 @@ Using the statistic tiles, you are now able to get a quick overview of the confi
 
 <div class="right-float">
 <figure>
-    <img src="./confirmed-new-infections.png" alt="confirmed-new-infecitons" width="300px"/>
+    <img src="./confirmed-new-infections.png" alt="confirmed-new-infections" width="300px"/>
 </figure>
 </div>
 
 **Confirmed New Infections**
 
-This number reflects the new infections across Germany reported to the Robert Koch-Institute (RKI) on the given day.
+This number reflects the new infections across Germany reported to the Robert Koch Institute (RKI) on the given day.
 
 This tile presents three metrics:
 
@@ -44,7 +44,7 @@ The <i>**trend indicator**</i> shows with an arrow whether the 7-Day Average of 
 
 **3. Total**
 
-This number indicates the total number of confirmed infections registered with the Robert Koch-Institute from early 2020 to date.
+This number indicates the total number of confirmed infections registered with the Robert Koch Institute from early 2020 to date.
 
 **Comments:**
 
@@ -54,7 +54,7 @@ This number indicates the total number of confirmed infections registered with t
 
 - This metric as a nationwide sum for Germany is an absolute value. It is neither related to the local distribution of the population nor to the number of residents of a region.
 
-- The "7-day Average" is a linear average value. In opposition to that value, the "7-day incidence" cannot be considered a linear average of local incidences because the incidence is locally. [2] These two metrics are based on different baseline data, collected in different ways. Thus, both metrics cannot be derived directly from each other and, in rare cases, the two trend indicators may differ on a given day. [3]
+- The "7-Day Average" is a linear average value. In opposition to that value, the "7-Day Incidence" cannot be considered a linear average of local incidences because the incidence is locally. [2] These two metrics are based on different baseline data, collected in different ways. Thus, both metrics cannot be derived directly from each other and, in rare cases, the two trend indicators may differ on a given day. [3]
 
 **References:**
 
@@ -74,7 +74,7 @@ This number indicates the total number of confirmed infections registered with t
 
 **Warnings by App Users**
 
-This metric describes the number of App users across Germany (or anywhere else) who have shared their positive test score through the Corona Warn App to warn other users about a potential infection, either directly in the app after they received the positive test result or with a teleTAN issued by the verification hotline. [1]
+This metric describes the number of App users across Germany (or anywhere else) who have shared their positive test score through the Corona-Warn-App to warn other users about a potential infection, either directly in the app after they received the positive test result or with a teleTAN issued by the verification hotline. [1]
 
 This tile presents three metrics:
 
@@ -102,7 +102,7 @@ This number indicates how many positive test scores have been shared by users so
 
 [[1] RKI - WarnApp Kennzahlen](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Archiv_Kennzahlen/WarnApp_KennzahlenTab.html)
 
-## Tile "7-Day-Incidence"
+## Tile "7-Day Incidence"
 
 <div class="right-float">
 <figure>
@@ -118,11 +118,11 @@ This is the sum of the new infections of the last 7 days adjusted (in proportion
 
 'Up to yesterday' means the value includes all notified data from the previous day until 11:59 p.m. As long as the data could not be updated, the number refers to the day described by the date. The displayed number is identical to the one published by RKI. [1]
 
-The <i>**trend indicator**</i> shows with an arrow whether the 7-day Incidence of the current day has changed by **1%** or more compared to the indicated value <u>of the previous day</u> - upward (<span style="color:red">red</span>) or downward (<span style="color:green">green</span>) respectively, or a change smaller than 1% with "steady" (<span style="color:grey">grey</span>).
+The <i>**trend indicator**</i> shows with an arrow whether the 7-Day Incidence of the current day has changed by **1%** or more compared to the indicated value <u>of the previous day</u> - upward (<span style="color:red">red</span>) or downward (<span style="color:green">green</span>) respectively, or a change smaller than 1% with "steady" (<span style="color:grey">grey</span>).
 
 **Comments:**
 
-- The 7-day incidence is based on the <u>notification date</u>. This is the date on which an infection was first recorded at the local health office. Only those cases known to the RKI with a notification date in the last 7 days are counted. Since the local health offices report their figures to the Robert Koch-Institute according to different schedules, reporting delays may occur. Those late incoming reports regularly lead to an underestimation of the incidence with this approach. [3]
+- The 7-Day Incidence is based on the <u>notification date</u>. This is the date on which an infection was first recorded at the local health office. Only those cases known to the RKI with a notification date in the last 7 days are counted. Since the local health offices report their figures to the Robert Koch Institute according to different schedules, reporting delays may occur. Those late incoming reports regularly lead to an underestimation of the incidence with this approach. [3]
 
 - In the Corona-Warn-App the nationwide 7-Day Incidence is shown with reference to the total German population.
 
@@ -140,7 +140,7 @@ The <i>**trend indicator**</i> shows with an arrow whether the 7-day Incidence o
 
 [[4] Explanation Tile "Confirmed New Cases](#tile-confirmed-new-infections)
 
-## TIle "7-Day R Value"
+## Tile "7-Day R Value"
 
 <div class="right-float">
 <figure>
@@ -154,19 +154,19 @@ This measure describes the time-varying reproduction number in the current pande
 
 The calculated value represents an estimate based on observed infection data in the past and various parameters (including delays between diagnosis, notification, and reporting of infections) leveraging a mathematical model. [2], [3]
 
-The <i>**trend indicator**</i> shows with an arrow whether the 7-day R Value of the current day has changed by **1%** or more compared to the shown value <u>of the previous day</u> - upward (<span style="color:red">red</span>) or downward (<span style="color:green">green</span>) respectively, or a change smaller than 1% with "steady" (<span style=color:grey>grey</span>).
+The <i>**trend indicator**</i> shows with an arrow whether the 7-Day R Value of the current day has changed by **1%** or more compared to the shown value <u>of the previous day</u> - upward (<span style="color:red">red</span>) or downward (<span style="color:green">green</span>) respectively, or a change smaller than 1% with "steady" (<span style=color:grey>grey</span>).
 
 **Comments:**
 
 - The R value is a measure of the pathogen's transferability and of the dynamics of the outbreak .
 
-- Usually, in the course of a pandemic, the R Value will initially rise to levels well-above 1.The main **objective** is to stabilize a downward trend by means of appropriate measures and by adaption of personal behavior, i.e. to bring the **R Value permanently below 1**.
+- Usually, in the course of a pandemic, the R Value will initially rise to levels well-above 1. The main **objective** is to stabilize a downward trend by means of appropriate measures and by adaption of personal behavior, i.e. to bring the **R Value permanently below 1**.
 
 - The real-time calculation is made more difficult by the delays between infection, diagnosis and notification to the local health authorities. [4] In addition, the health offices report their data at different times to the Robert Koch Institute. [5]
 
-- For the most accurate estimate of the distribution of these delays, the historical case numbers and epidemiological experience are processed in a mathematical model (called "nowcasting"). [1] To compensate the daily reporting volatility and to have a sufficient number of reported cases for accurate calculation, the method uses a 7-day window and sets it in relation to a previous 7-day window with a 4-day offset (average Covid 19 generation time).
+- For the most accurate estimate of the distribution of these delays, the historical case numbers and epidemiological experience are processed in a mathematical model (called "nowcasting"). [1] To compensate the daily reporting volatility and to have a sufficient number of reported cases for accurate calculation, the method uses a 7-day window and sets it in relation to a previous 7-day window with a 4-day offset (average COVID-19 generation time).
 
-- The currently displayed 7-day R Value continuously changes according to the current infection situation. [6] New figures are incorporated into the calculation as well as new insights, reports, and subsequently gained knowledge. Only after a considerable time period the prediction corridor becomes sufficiently narrow; and the reproduction number attains a fix value. [7]
+- The currently displayed 7-Day R Value continuously changes according to the current infection situation. [6] New figures are incorporated into the calculation as well as new insights, reports, and subsequently gained knowledge. Only after a considerable time period the prediction corridor becomes sufficiently narrow; and the reproduction number attains a fix value. [7]
 
 **References:**
 
@@ -176,7 +176,7 @@ The <i>**trend indicator**</i> shows with an arrow whether the 7-day R Value of 
 
 [[3] RKI - Explanation of the R value (German language only)](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/R-Wert-Erlaeuterung.html)
 
-[[4] J.F.Lawless "Adjustments for reporting delays and the prediction of occured but not reported events" (1994)](https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1)
+[[4] J.F. Lawless "Adjustments for reporting delays and the prediction of occurred but not reported events" (1994)](https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1)
 
 [[5] Verril/Wütherich "Understanding Reporting Delay"](https://people.math.ethz.ch/~wueth/Papers/2016_reporting_delay.pdf)
 
