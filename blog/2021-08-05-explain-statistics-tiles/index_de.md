@@ -26,7 +26,7 @@ Mithilfe der Statistikkacheln haben Sie innerhalb der App unter anderem eine Üb
 
 **Bestätigte Neuinfektionen**
 
-Dies ist die Anzahl der Neuinfektionen über ganz Deutschland, die dem Robert-Koch-Institut (RKI) am angegebenen Tag bekannt gegeben wurden.
+Dies ist die Anzahl der Neuinfektionen über ganz Deutschland, die dem Robert Koch-Institut (RKI) am angegebenen Tag bekannt gegeben wurden.
 
 Auf dieser Kachel finden Sie 3 Kennzahlen:
 
@@ -44,13 +44,13 @@ Als <i>**Trendindikator**</i> zeigt ein Pfeil an, ob sich der 7-Tage-Mittelwert 
 
 **3. Gesamt**
 
-Diese Zahl gibt an, wie viele bestätigte Infektionen dem RKI insgesamt, d.h. seit Beginn der Pandemie Anfang 2020, bekannt geworden sind
+Diese Zahl gibt an, wie viele bestätigte Infektionen dem RKI insgesamt, d.&nbsp;h. seit Beginn der Pandemie Anfang 2020, bekannt geworden sind
 
 **Kommentare:**
 
 - Die Zahlen basieren auf den jeweils bis Mitternacht an das Robert Koch-Institut (RKI) übermittelten Neuinfektionen. Später eintreffende Nachübermittlungen werden erst im Rechnungslauf am nächsten Tag berücksichtigt.
 
-- Für die Anzahl der Neuinfektionen wird das <u>Datum der Bekanntgabe an das RKI</u> zugrunde gelegt, d.h. das Datum, an dem das Robert Koch-Institut von der Infektion erfährt. Da die Gesundheitsämter ihre Zahlen nach unterschiedlichen Zeitplänen an das RKI übermitteln, entstehen ggf. Verzögerungen.
+- Für die Anzahl der Neuinfektionen wird das <u>Datum der Bekanntgabe an das RKI</u> zugrunde gelegt, d.&nbsp;h. das Datum, an dem das Robert Koch-Institut von der Infektion erfährt. Da die Gesundheitsämter ihre Zahlen nach unterschiedlichen Zeitplänen an das RKI übermitteln, entstehen ggf. Verzögerungen.
 
 - Diese Kennzahl als Summe über ganz Deutschland ist ein absoluter Wert. Sie ist unabhängig von der Einwohnerzahl einer bestimmten Region.
 
@@ -88,13 +88,11 @@ Hier stellt die App das gleitende arithmetische Mittel (Durchschnitt) der Werte 
 
 Um tägliche leichte Schwankungen auszugleichen, zeigt der <i>**Trendindikator**</i> mit einem Pfeil, ob sich der 7-Tage-Mittelwert gegenüber dem <u>vor einer Woche</u> angezeigten Wert um 5% oder mehr verändert hat - jeweils nach oben oder nach unten, bei einer Veränderung kleiner als 5% waagerecht.
 
-Da allein aus der Veränderung der Anzahl der Warnungen nicht eindeutig eine positive oder negative
-
-Bewertung abgeleitet werden kann, wird der Pfeil immer grau gefärbt und zeigt nur die Richtung der Änderung an.
+Da allein aus der Veränderung der Anzahl der Warnungen nicht eindeutig eine positive oder negative Bewertung abgeleitet werden kann, wird der Pfeil immer grau gefärbt und zeigt nur die Richtung der Änderung an.
 
 **3. Gesamt**
 
-Diese Zahl gibt an, wie viele positive PCR-Testergebnisse bisher insgesamt, d.h. seit dem Start der CWA im Juni 2020, von den Anwendern geteilt wurden.
+Diese Zahl gibt an, wie viele positive PCR-Testergebnisse bisher insgesamt, d.&nbsp;h. seit dem Start der CWA im Juni 2020, von den Anwendern geteilt wurden.
 
 **Kommentare:**
 
@@ -118,7 +116,7 @@ Dies ist die Summe der Neuinfektionen der letzten 7 Tage normiert auf 100.000 Ei
 
 **Bis gestern** (oder Datum)
 
-‘Bis gestern‘ bedeutet, dass in dem Wert alle dem Robert Koch-Institut (RKI) bis 23:59 Uhr des Vortags übermittelten Neuinfektionen berücksichtigt wurden Falls die Daten noch nicht zeitnah aktualisiert werden konnten, zeigt das Datum den Tag an, auf den sich die Kennzahlen beziehen. 
+‘Bis gestern‘ bedeutet, dass in dem Wert alle dem Robert Koch-Institut (RKI) bis 23:59 Uhr des Vortags übermittelten Neuinfektionen berücksichtigt wurden. Falls die Daten noch nicht zeitnah aktualisiert werden konnten, zeigt das Datum den Tag an, auf den sich die Kennzahlen beziehen. 
 Diese Zahl ist identisch mit der von RKI veröffentlichen Zahl.[1]
 
 Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich die 7-Tage-Inzidenz gegenüber dem angezeigten Wert <u>vom</u> Vortag um **1**% oder mehr verändert hat - jeweils nach oben (<span style="color:red">rot</span>) oder nach unten (<span style="color:green">grün</span>), bei einer Veränderung kleiner als 1% waagerecht (<span style="color:grey">grau</span>).
@@ -153,7 +151,7 @@ Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich die 7-Tage-Inzid
 
 **7-Tage-R-Wert**
 
-Diese Kennzahl beschreibt die zeitlich variierende Reproduktionszahl im aktuellen Pandemie-Geschehen, d.h. wie viele weitere Menschen eine infizierte Person durchschnittlich infiziert hat.
+Diese Kennzahl beschreibt die zeitlich variierende Reproduktionszahl im aktuellen Pandemie-Geschehen, d.&nbsp;h. wie viele weitere Menschen eine infizierte Person durchschnittlich infiziert hat.
 
 Der berechnete Wert stellt mit einem mathematischen Modell eine Schätzung dar, die auf den beobachteten Infektionsdaten in der Vergangenheit und verschiedenen Parametern (inkl. Verzögerungen zwischen Diagnose, Meldung und Übermittlung der Infektionen) basiert. [2], [3]
 
@@ -163,11 +161,11 @@ Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich der 7-Tage-R-Wer
 
 - Der R-Wert ist ein Maß für die Übertragbarkeit des Erregers und für die Dynamik des Ausbruchgeschehens.
 
-- Im Verlauf einer Pandemie wird der R-Wert zunächst auf Werte über 1 ansteigen. **Ziel** ist es, durch geeignete Maßnahmen und Anpassung des persönlichen Verhaltens einen sinkenden Trend zu stabilisieren, d.h. **den R-Wert dauerhaft unter den Wert 1** zu bringen.
+- Im Verlauf einer Pandemie wird der R-Wert zunächst auf Werte über 1 ansteigen. **Ziel** ist es, durch geeignete Maßnahmen und Anpassung des persönlichen Verhaltens einen sinkenden Trend zu stabilisieren, d.&nbsp;h. **den R-Wert dauerhaft unter den Wert 1** zu bringen.
 
 - Die Berechnung des Echtzeit-Wertes wird durch zeitlichen Verzug zwischen der Infektion, der Diagnose und der Meldung an die Gesundheitsbehörden erschwert. [4] Dazu kommen die unterschiedlichen Zeitpunkte der Datenübermittlung durch die Gesundheitsämter an das Robert Koch-Institut. [5]
 
-- Für eine möglichst genaue Abschätzung der Verteilung dieser zeitlichen Verzüge werden die Fallzahlen aus der Vergangenheit und die epidemiologischen Erfahrungen in einem mathematischen Modell ("Nowcasting") verarbeitet. [1] Um tägliche Meldeschwankungen im Wochenverlauf auszugleichen und um eine hinreichende Anzahl von übermittelten Fällen für eine genaue Berechnung zu haben, nutzt das Verfahren ein 7-Tage-Fenster und setzt die Schätzzahl dieses Zeitraums ins Verhältnis zu der eines um 4 Tage (durchschnittliche Covid-19-Generationszeit) versetzten früheren 7-Tage-Fensters.
+- Für eine möglichst genaue Abschätzung der Verteilung dieser zeitlichen Verzüge werden die Fallzahlen aus der Vergangenheit und die epidemiologischen Erfahrungen in einem mathematischen Modell ("Nowcasting") verarbeitet. [1] Um tägliche Meldeschwankungen im Wochenverlauf auszugleichen und um eine hinreichende Anzahl von übermittelten Fällen für eine genaue Berechnung zu haben, nutzt das Verfahren ein 7-Tage-Fenster und setzt die Schätzzahl dieses Zeitraums ins Verhältnis zu der eines um 4 Tage (durchschnittliche COVID-19-Generationszeit) versetzten früheren 7-Tage-Fensters.
 
 - Der R-Wert verändert sich entsprechend dem aktuellen Infektionsgeschehen. [6] In die Berechnung für den aktuell angezeigten 7-Tage-R-Wert gehen dabei neue Zahlen ein als auch nachträglich gewonnene Erkenntnisse und Meldungen. Erst nach einem längeren Zeitraum ist der Prädiktionskorridor ausreichend eng und die Reproduktionszahl nimmt einen festen Wert an. [7]
 
@@ -179,7 +177,7 @@ Der <i>**Trendindikator**</i> zeigt mit einem Pfeil an, ob sich der 7-Tage-R-Wer
 
 [[3] RKI - Erläuterung zum R-Wert](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Projekte_RKI/R-Wert-Erlaeuterung.html)
 
-[[4] J.F.Lawless "Adjustments for reporting delays and the prediction of occured but not reported events" (1994)](https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1)
+[[4] J.F. Lawless "Adjustments for reporting delays and the prediction of occurred but not reported events" (1994)](https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1)
 
 [[5] Verril/Wütherich "Understanding Reporting Delay"](https://people.math.ethz.ch/~wueth/Papers/2016_reporting_delay.pdf)
 
