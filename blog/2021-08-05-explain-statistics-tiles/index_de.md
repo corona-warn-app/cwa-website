@@ -88,9 +88,7 @@ Hier stellt die App das gleitende arithmetische Mittel (Durchschnitt) der Werte 
 
 Um tägliche leichte Schwankungen auszugleichen, zeigt der <i>**Trendindikator**</i> mit einem Pfeil, ob sich der 7-Tage-Mittelwert gegenüber dem <u>vor einer Woche</u> angezeigten Wert um 5% oder mehr verändert hat - jeweils nach oben oder nach unten, bei einer Veränderung kleiner als 5% waagerecht.
 
-Da allein aus der Veränderung der Anzahl der Warnungen nicht eindeutig eine positive oder negative
-
-Bewertung abgeleitet werden kann, wird der Pfeil immer grau gefärbt und zeigt nur die Richtung der Änderung an.
+Da allein aus der Veränderung der Anzahl der Warnungen nicht eindeutig eine positive oder negative Bewertung abgeleitet werden kann, wird der Pfeil immer grau gefärbt und zeigt nur die Richtung der Änderung an.
 
 **3. Gesamt**
 
