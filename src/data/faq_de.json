@@ -400,6 +400,17 @@
                         "textblock": [
                             "Der QR-Code für den digitalen Impfnachweis darf nur von autorisierten Personen in Impfzentren, Arztpraxen und Krankenhäusern ausgestellt werden. Bei der Überprüfung von digitalen Impfnachweisen ist – wie in der analogen Welt auch – ggf. ergänzend ein Lichtbildausweis vorzulegen. Der digitale Impfnachweis ist kryptographisch vor Veränderungen geschützt."
                         ]
+                    },
+                    {
+                        "title": "Warum erhalte ich die Fehlermeldung 'VC_DOB_MISMATCH' oder 'VC_NAME_MISMATCH'?",
+                        "anchor": "vac_cert_mismatch",
+                        "active": true,
+                        "textblock": [
+                            "Diese Fehlermeldungen treten in den Corona-Warn-App-Versionen 2.3 und 2.4 auf. Der genaue Wortlaut der Fehlermeldung lautet: „Die persönlichen Daten dieses Impfzertifikats stimmen nicht mit denen der bereits registrierten Zertifikate überein. Sie können in der App nur Zertifikate einer Person registrieren“",
+                            "Die App liest lediglich die im QR-Code des Impfzertifikates enthaltenen Daten aus und stellt diese leserlich in der App dar. Wenn bspw. in den beiden Impfzertifikaten Tippfehler oder unterschiedliche Schreibweisen genutzt wurden, erkennt die App diese nicht als zusammengehörig an. Typische Beispiele sind: zusätzliche Leerzeichen, Tippfehler im Namen oder aber in der Angabe eines Titels.",
+                            "Wurde das zweite Impfzertifikat korrekt ausgestellt, genügt es in der Regel, das erste Impfzertifikat aus der Corona-Warn-App zu entfernen und dann das zweite Impfzertifikat neu einzuscannen. Die App erkennt, dass auch damit ein vollständiger Impfschutz (nach 14 Tagen) erreicht wird.",
+                            "Wenn die Daten allerdings im zweiten Impfzertifikat fehlerhaft sein sollten, kann nur der Aussteller des Zertifikats diese korrigieren."
+                        ]
                     }
                 ]
             },
