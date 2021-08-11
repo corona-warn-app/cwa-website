@@ -81,15 +81,6 @@
                 "id": "news",
                 "accordion": [
                     {
-                        "title": "Information about the security vulnerability already fixed by Google in the Exposure Notification Framework",
-                        "anchor": "google_security_vulnerability",
-                        "active": true,
-                        "textblock": [
-                            "On April 27, 2021, reports appeared that a vulnerability in the Exposure Notification Framework (ENF) in the Android operating system was announced. This vulnerability allowed pre-installed apps on Android smartphones to access system log files, thus reading ENF data that is also provided by the Corona-Warn-App (CWA). Google has provided a fix for Android, and says that it has now been rolled out up to 98%. All Android versions that use the Google Play Services below version 21.15 are affected.",
-                            "All risks associated with using the CWA are described in the Privacy Impact Assessment (risk details can be found in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Appendix 6, Section 4</a>)."
-                        ]
-                    },
-                    {
                         "title": "Data donation and event-based scientific survey",
                         "anchor": "data_donation_and_EDUS",
                         "active": true,
@@ -1733,6 +1724,15 @@
                 "title": "Resolved",
                 "id": "resolved",
                 "accordion": [
+                    {
+                      "title": "[Google/Android]: Fixed security vulnerability in the Exposure Notification Framework",
+                      "anchor": "google_security_vulnerability",
+                      "active": true,
+                      "textblock": [
+                          "On April 27, 2021, reports appeared that a vulnerability in the Exposure Notification Framework (ENF) in the Android operating system was announced. This vulnerability allowed pre-installed apps on Android smartphones to access system log files, thus reading ENF data that is also provided by the Corona-Warn-App (CWA). All Android versions that used the Google Play services below version 21.15 were affected. Google rolled out a fix in April 2021.",
+                          "All risks associated with using the CWA are described in the Privacy Impact Assessment (risk details can be found in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Appendix 6, Section 4</a>)."
+                      ]
+                    },
                     {
                         "title": "Can I enter a test result from a Corona rapid test (Schnelltest)?",
                         "anchor": "rapid_test",
