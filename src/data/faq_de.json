@@ -21,7 +21,7 @@
                         "active": true,
                         "textblock": [
                             "Die technische Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei technischen Fragen rund um die Corona-Warn-App, zum Beispiel bei Problemen mit der Risiko-Ermittlung. Sie erreichen sie von Montag bis Samstag von 7 bis 22 Uhr (außer an bundesweiten Feiertagen), und sie ist für Sie innerhalb Deutschlands kostenfrei.",
-                            "Die TAN-Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei der Eingabe der TAN, wenn Sie ein positives Testergebnis haben, und wenn Sie keine TAN oder kein Dokument mit PCR-Test-QR-Code erhalten haben. Die TAN-Hotline ist 24 Stunden täglich an sieben Tagen in der Woche erreichbar. Der Anruf ist innerhalb Deutschlands kostenfrei.",
+                            "Die TAN-Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei der Eingabe der TAN, wenn Sie ein positives PCR-Testergebnis haben, und wenn Sie keine TAN oder kein Dokument mit PCR-Test-QR-Code erhalten haben. Die TAN-Hotline ist 24 Stunden täglich an sieben Tagen in der Woche erreichbar. Der Anruf ist innerhalb Deutschlands kostenfrei.",
                             "Falls das Testergebnis nicht in der Corona-Warn-App abrufbar ist, sollte das zuständige Fachpersonal, Testcenter oder Gesundheitsamt kontaktiert werden, um das Testergebnis zu erhalten. <br/>Um Ihnen die Suche nach dem zuständigen Gesundheitsamt zu erleichtern, hat das RKI ein entsprechendes Tool zur Verfügung gestellt. Durch die Angabe der Postleitzahl oder des Wohnortes, wird sofort das zuständige Gesundheitsamt inklusive der Kontaktdaten angezeigt: <a href='https://tools.rki.de/PLZTool'>Robert Koch-Institut Tool: Gesundheitsamt nach Postleitzahl oder Ort</a>",
                             "Weitere Hinweise zum PCR-Test-QR-Code Verfahren finden Sie in diesem FAQ Eintrag: <a href='#qr_test'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a>",
                             "Die Webseiten der Bundesregierung bieten allgemeine Informationen und Videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
@@ -80,15 +80,6 @@
                 "title": "News",
                 "id": "news",
                 "accordion": [
-                    {
-                        "title": "Information zur bereits von Google geschlossenen Sicherheitlücke im Exposure Notification Framework",
-                        "anchor": "google_security_vulnerability",
-                        "active": true,
-                        "textblock": [
-                            "Am 27. April 2021 erschienen Berichte, in denen über eine Sicherheitslücke des Exposure Notification Framework (ENF) im Android-Betriebssystem berichtet wurde. Diese Sicherheitslücke ermöglichte vorinstallierten Apps auf Android-Smartphones, auf Systemlogdateien zuzugreifen, somit Daten des ENF zu lesen, die eben auch von der Corona-Warn-App zur Verfügung gestellt werden. Google hat für Android einen Fix bereitgestellt, der laut Google mittlerweile bis zu 98% ausgerollt sein soll. Betroffen sind alle Android-Versionen, die die Google Play Services unterhalb der Version 21.15 nutzen.",
-                            "Alle Risiken zur Nutzung der CWA sind in der Datenschutzfolgeabschätzung  beschrieben (Risikodetails befinden sich in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Anlage 6 Abschnitt 4</a>)."
-                        ]
-                    },
                     {
                         "title": "Datenspende und ereignisbasierte wissenschaftliche Befragung",
                         "anchor": "data_donation_and_EDUS",
@@ -173,6 +164,15 @@
                             "Jedes europäische Land, das digitale COVID-Zertifikate der EU unterstützt, hat die Möglichkeit Regeln hochzuladen, die die Corona-Warn-App zur Überprüfung abgleichen kann. Zum Start der neuen Funktion haben Irland, Litauen, Luxemburg, die Niederlande, Slowenien und Spanien, zusammen mit Deutschland, Regeln hinterlegt, weitere Länder folgen in den kommenden Wochen.",
                             "Zeigt die App nach Prüfung an, dass keine Einreiseregeln vorhanden sind, können Sie sich unter <a href='https://reopen.europa.eu/de' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/de</a> über die Regeln informieren."
                          ]
+                    },
+                    {
+                        "title": "Wie kann ich ein Zertifikat aus der Corona-Warn-App entfernen?",
+                        "anchor": "eu_dcc_remove",
+                        "active": true,
+                        "textblock": [
+                            "Mithilfe dieser Schritt-für-Schritt Anleitung können Sie Zertifikate aus der Corona-Warn-App entfernen. Bitte beachten Sie, dass die ersten drei Schritte für sowohl iOS als auch Android gelten, aber nur jeweils einer der letzten beiden Schritte befolgt werden muss, je nachdem welches Betriebssystem mit Ihrem übereinstimmt. Impfzertifikate, Testzertifikate und Genesenenzertifikate werden als 'Zertifikate' zusammengefasst, da der Ablauf bei allen identisch ist.",
+                            "<ul><li>Tippen Sie auf den Reiter 'Zertifikate'</li><li>Tippen Sie auf das Zertifikat, das Sie entfernen wollen</li><li>Scrollen Sie runter und tippen Sie auf die Kachel, die dem Zertifikat entspricht, das Sie löschen wollen</li><li>iOS: Tippen Sie unten auf dem Bildschirm auf 'Zertifikat entfernen'</li><li>Android: Tippen Sie auf das drei-Punkte-Icon oben rechts auf dem Bildschirm, und danach auf 'Entfernen'</li></ul>"
+                        ]
                     }
                 ]
             },       
@@ -294,12 +294,15 @@
                         ]
                     },
                     {
-                        "title": "Kann ein vollständiger Impfstatus in der App als Berechtigung zum Reisen dienen?",
+                        "title": "Kann ein Zertifikat in der App als Berechtigung zum Reisen dienen?",
                         "anchor": "vac_cert_privileges_travel",
                         "active": true,
                         "textblock": [
-                            "Ob Sie mit einem vollständigen Impfschutz beispielsweise reisen dürfen, hängt von den Bestimmungen des jeweiligen Landes ab.",
-                            "Sie können unter anderem diese <a href='https://reopen.europa.eu/de' target='_blank' rel='noopener noreferrer'>Webseite</a> benutzen, um Ihre Reise innerhalb der EU zu planen."
+                            "Das digitale Impfzertifikat der EU kann nicht nur in Deutschland genutzt werden. Das in Deutschland ausgestellte digitale Impfzertifikat der EU kann auch im EU-Ausland als Nachweis für erfolgte Impfungen gelten, wenn der jeweilige EU-Mitgliedstaat digitale Nachweise zulässt. Dasselbe gilt auch für Genesenenzertifikate und Testzertifikate. Die Gültigkeit Ihres Zertifikats kann ab Corona-Warn-App-Version 2.6 auch innerhalb der App vor Reiseantritt geprüft werden.",
+                            "Zudem prüfen die jeweiligen EU-Mitgliedstaaten im Allgemeinen auch mit ihren eigenen Prüf-Apps das entsprechende Zertifikat. Die Daten können dabei unabhängig von der Sprache des Zertifikates ausgelesen werden. Es ist daher unerheblich, in welcher Sprache Ihr Zertifikat auf Ihrem Gerät dargestellt wird.",
+                            "Das digitale Impfzertifikat der EU kann als ausgedruckter QR-Code oder als Scan in der Corona-Warn-App oder CovPass-App vorgezeigt werden. Der bekannte Impfnachweis in Form des gelben Impfausweises bleibt weiterhin gültig. Das neue digitale Impfzertifikat der EU für eine COVID-19-Impfung stellt lediglich eine nutzerfreundliche und vertrauenswürdige Ergänzung zum gelben Impfausweis dar, die einfach geprüft werden kann.",
+                            "Bitte beachten Sie, dass eine ausreichende Wirksamkeit des Impfschutzes erst 14 Tage nach der letzten notwendigen Impfung eintritt.",
+                            "Zusammengefasste Informationen über die in den europäischen Ländern jeweils geltenden Corona-Maßnahmen und Reisebeschränkungen finden Sie unter anderem auf der Seite: <a href='https://reopen.europa.eu/de' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/de</a>. Die Aktualisierung obliegt den jeweiligen Ländern. Dort finden Sie auch Hinweise, welche persönlichen Informationen und Dokumente Sie bei der Einreise vorlegen müssen. Die Datenverarbeitung unterliegt den Vorschriften des jeweiligen Einreiselandes. Einzelheiten erfahren Sie in den nationalen Informationsangeboten der jeweiligen EU-Länder, die auf der oben genannten Seite verlinkt sind."
                         ]
                     },
                     {
@@ -397,6 +400,17 @@
                         "active": true,
                         "textblock": [
                             "Der QR-Code für den digitalen Impfnachweis darf nur von autorisierten Personen in Impfzentren, Arztpraxen und Krankenhäusern ausgestellt werden. Bei der Überprüfung von digitalen Impfnachweisen ist – wie in der analogen Welt auch – ggf. ergänzend ein Lichtbildausweis vorzulegen. Der digitale Impfnachweis ist kryptographisch vor Veränderungen geschützt."
+                        ]
+                    },
+                    {
+                        "title": "Warum erhalte ich die Fehlermeldung 'VC_DOB_MISMATCH' oder 'VC_NAME_MISMATCH'?",
+                        "anchor": "vac_cert_mismatch",
+                        "active": true,
+                        "textblock": [
+                            "Diese Fehlermeldungen treten in den Corona-Warn-App-Versionen 2.3 und 2.4 auf. Der genaue Wortlaut der Fehlermeldung lautet: „Die persönlichen Daten dieses Impfzertifikats stimmen nicht mit denen der bereits registrierten Zertifikate überein. Sie können in der App nur Zertifikate einer Person registrieren“",
+                            "Die App liest lediglich die im QR-Code des Impfzertifikates enthaltenen Daten aus und stellt diese leserlich in der App dar. Wenn bspw. in den beiden Impfzertifikaten Tippfehler oder unterschiedliche Schreibweisen genutzt wurden, erkennt die App diese nicht als zusammengehörig an. Typische Beispiele sind: zusätzliche Leerzeichen, Tippfehler im Namen oder aber in der Angabe eines Titels.",
+                            "Wurde das zweite Impfzertifikat korrekt ausgestellt, genügt es in der Regel, das erste Impfzertifikat aus der Corona-Warn-App zu entfernen und dann das zweite Impfzertifikat neu einzuscannen. Die App erkennt, dass auch damit ein vollständiger Impfschutz (nach 14 Tagen) erreicht wird.",
+                            "Wenn die Daten allerdings im zweiten Impfzertifikat fehlerhaft sein sollten, kann nur der Aussteller des Zertifikats diese korrigieren."
                         ]
                     }
                 ]
@@ -768,10 +782,10 @@
                         "anchor": "red_card_how_to_test",
                         "active": true,
                         "textblock": [
-                            "Wenn die Corona-Warn-App Ihnen mit der roten Karte ein hohes Infektionsrisiko anzeigt, isolieren Sie sich bitte zügig und konsultieren Sie einen Arzt, um sich ggf. testen zu lassen.",
+                            "Wenn die Corona-Warn-App Ihnen mit der roten Karte ein hohes Infektionsrisiko anzeigt, isolieren Sie sich bitte zügig und konsultieren Sie einen Arzt, um ggf. einen PCR-Test durchführen zu lassen.",
                             "Für einen reibungslosen Ablauf beim Testen, zum Empfang des Testbefundes und zu Warnung Anderer bei einem positiven Ergebnis folgen Sie bitte den Schritten in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank' rel='noopener'>dieser Übersicht vom Robert Koch-Institut</a>.",
                             "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.jpg' alt='PDF'></a>",
-                            "Siehe auch: <a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a>"
+                            "Siehe auch: <ul><li><a href='#rat_red_card_which_test' target='_blank' rel='noopener'>Wenn ich eine hohe Risikobegegnung in der App angezeigt bekomme, d.&nbsp;h. eine rote Karte/Kachel, sollte ich dann einen Schnelltest oder PCR-Test machen?</a></li><li><a href='#vac_cert_red_warning' target='_blank' rel='noopener'>Wie sollte man sich verhalten, wenn man teil- oder vollständig geimpft ist, aber eine rote Warnung in der Corona-Warn-App erhält?</a></li><li><a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a></li></ul>"
                         ]
                     },
                     {
@@ -1720,6 +1734,15 @@
                 "id": "resolved",
                 "title": "Geklärt",
                 "accordion": [
+                    {
+                      "title": "[Google/Android]: Geschlossenen Sicherheitlücke im Exposure Notification Framework",
+                      "anchor": "google_security_vulnerability",
+                      "active": true,
+                      "textblock": [
+                          "Am 27. April 2021 erschienen Berichte, in denen über eine Sicherheitslücke des Exposure Notification Framework (ENF) im Android-Betriebssystem berichtet wurde. Diese Sicherheitslücke ermöglichte vorinstallierten Apps auf Android-Smartphones, auf Systemlogdateien zuzugreifen, somit Daten des ENF zu lesen, die eben auch von der Corona-Warn-App zur Verfügung gestellt werden. Betroffen waren alle Android-Versionen, die die Google Play-Dienste unterhalb der Version 21.15 nutzten. Google hat bereits in April 2021 einen Fix ausgerollt.",
+                          "Alle Risiken zur Nutzung der CWA sind in der Datenschutzfolgeabschätzung  beschrieben (Risikodetails befinden sich in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Anlage 6 Abschnitt 4</a>)."
+                      ]
+                    },
                     {
                         "title": "Kann ich das Ergebnis eines Corona-Schnelltests eingeben?",
                         "anchor": "rapid_test",
