@@ -69,7 +69,10 @@
   <div class="container">
     <div class="container-inner">
       {{#if page-contents.section-contribute-listing.headline}}
-      <div>{{> headline-component page-contents.section-contribute-listing.headline}}</div>
+      <div class="container text-center">
+        {{> headline-plain-component page-contents.section-contribute-listing.headline}}
+        {{> button-component button=page-contents.section-contribute-listing.headline.button}}
+      </div>
       {{/if}}
       <div>
         {{#if page-contents.section-contribute-listing.content}}
@@ -108,11 +111,5 @@
   </div>
   {{/if}}
   {{/if}}
-</section>
-<section class="section-intersect section_bg-white">
-  <div class="container text-center">
-    {{> headline-plain-component page-contents.section-start-contribute.headline}}
-    {{> button-component button=page-contents.section-start-contribute.headline.button}}
-  </div>
 </section>
 {{/if}}
