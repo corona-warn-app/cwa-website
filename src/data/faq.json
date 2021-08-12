@@ -173,6 +173,18 @@
                             "Using this step-by-step guide, you can remove certificates from the Corona-Warn-App. Please note that the first three steps apply to both iOS and Android, but only one of the last two steps needs to be followed, depending on which operating system matches yours. Vaccination certificates, test certificates and recovery certificates are mentioned as 'Certificates', since the process of removing them is identical.",
                             "<ul><li>Tap on the 'Certificates' tab</li><li>Tap on the certificate you would like to remove</li><li>Scroll down to and tap on the tile that matches the certificate you want to delete.</li><li>iOS: Tap on 'Delete Certificate' at the bottom of the screen</li><li>Android: Tap on the three-dot symbol on the top right of the screen, and then tap on 'Remove'</li></ul>"
                         ]
+                    },
+                    {
+                        "title": "Why do I get the error message that my certificate is invalid?",
+                        "anchor": "hc_signature_invalid",
+                        "active": true,
+                        "textblock": [
+                            "The signature of your certificate is invalid.",
+                            "This invalidates the entire certificate as a digital document. Therefore, it cannot be used as a proof and also cannot be imported into the app. If this error message occurs with a certificate that has already been imported, it is now marked as invalid.",
+                            "Please check if the validity of your certificate has expired:",
+                            "<ul><li>A vaccination certificate issued in Germany is usually valid for one year from the date of issue</li><li>A recovery certificate on the other hand may not be valid for longer than 180 days from the date of the last positive PCR test, as defined by the EU.</li></ul>",
+                            "If your certificate is technically still valid, it was obviously issued by an unauthorized body or incorrectly. In this case, we ask you to contact the <a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>technical hotline</a> and tell us when and by which body this certificate was issued. Then please have a new certificate with a valid signature issued by an authorized body."
+                        ]
                     }
                 ]
             },
