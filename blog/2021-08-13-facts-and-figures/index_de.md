@@ -12,7 +12,7 @@ In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen 
 
 ### **Übersicht früherer Zahlen und Fakten** 
 
-* [12. August 2021](https://www.coronawarn.app/assets/documents/2021-08-05-cwa-daten-fakten.pdf) 
+* [12. August 2021](https://www.coronawarn.app/assets/documents/2021-08-12-cwa-daten-fakten.pdf) 
 * [05. August 2021](https://www.coronawarn.app/assets/documents/2021-08-05-cwa-daten-fakten.pdf) 
 * [29. Juli 2021](https://www.coronawarn.app/assets/documents/2021-07-29-cwa-daten-fakten.pdf)
 
