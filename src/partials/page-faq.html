@@ -52,13 +52,10 @@
       {{/each}}
       </dl>
     {{/each}}
-  </main>
-</div>
-{{#if page-contents.glossary.glossaryWords}}
+    {{#if page-contents.glossary.glossaryWords}}
     <div class="container container_flex  my-5">
       <div class="d-flex flex-column w-100">
-        <p id="glossary"></p>
-        <h2 class="headline mb-0">{{page-contents.glossary.glossaryHeadline}}</h2>
+        <h2 class="headline mb-0" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h2>
         {{#if page-contents.glossary.optionalText}}
           <p class="mb-3">{{page-contents.glossary.optionalText}}</p>
         {{/if}}
@@ -124,4 +121,6 @@
       </div>
     </div>
   {{/if}}
+  </main>
+</div>
 {{/if}}
