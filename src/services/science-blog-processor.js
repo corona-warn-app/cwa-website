@@ -96,12 +96,13 @@ const getScienceBlogEntries = (lang) => {
 
 const createPageEntry =  (folderName, mdData, lang) => {
   const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
+  const date_display = mdData.data['date'];
   const pageName = mdData.data['page-name'];
   validatePageName(folderName, pageName);
 
   const entry = {
     date,
-    dateFormatted: formatDate(date, lang),
+    dateFormatted: formatDate(date_display, lang),
     title: mdData.data['page-title'],
     folderName,
     pageDescription: mdData.data['page-description'],
@@ -109,7 +110,7 @@ const createPageEntry =  (folderName, mdData, lang) => {
     author: mdData.data.author,
     redirect: mdData.data.redirect,
     htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
-    htmlContent: replaceImagePaths(marked(mdData.content), folderName)
+    htmlContent: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[1]), folderName)
   };
 
   entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);
