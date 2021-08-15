@@ -2083,6 +2083,79 @@
     },
     "glossary": {
         "glossaryHeadline": "Glossary",
+        "optionalText": "",
+        "glossaryWords": {
+            "B": [
+                {
+                    "term": "Business Rules",
+                    "description": "For the introduction of Digital COVID Certificates, the eHealth network of the European Commission and the EU member states agreed that every country compiles the individual rules which have to be checked for transnational travelling. These \"Business Rules\" have two categories:<ul><li>Invalidation Rules of the Country of Administration, which decide under which circumstances a certificate is rejected</li><li>Acceptance Rules of the Country of Arrival, which must be fulfilled to enter the country</li></ul>"
+                }
+            ],
+            "C": [
+                {
+                    "term": "Certificate",
+                    "description": "see Digital Certificate"
+                }
+            ],
+            "D": [
+                {
+                    "term": "DCC",
+                    "description": "Abbreviation of \"Digital COVID Certificate\"."
+                },
+                {
+                    "term": "Digital Certificate",
+                    "description": "A certified document. It contains the subject's health information signed by a trusted issuer. <br/><br/> Every digital certificate has an issue date and an expiration date. After the certificate expires it must be renewed. <br/><br/> In the CWA we differentiate between: <br/><ul><li>Vaccination Certificate</li><li>Test Certificate</li><li>Recovery Certificate</li></ul>"
+                },
+                {
+                    "term": "Digital Signature",
+                    "description": "see Signature"
+                }
+            ],
+            "E": [
+                {
+                    "term": "EU DCC",
+                    "description": "See DCC"
+                }
+            ],
+            "P": [
+            {
+                "term": "Proof of vaccination",
+                "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital => vaccination certificate."
+            }
+            ],
+            "R": [
+                {
+                    "term": "Recovery Certificate",
+                    "description": "The certificate of recovery is a => digital certificate issued for a person who has demonstrably recovered from COVID-19 and proved immunity by a PCR test."
+                }
+            ],
+            "S": [
+                {
+                    "term": "Signature",
+                    "description": "A digital signature is a signature that is created by a crytographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> <br/><br/> As a consequence, the signature must fulfill the following requirements: <br/><ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
+                }
+            ],
+            "T": [
+                {
+                    "term": "Test Certificate",
+                    "description": "A test certificate is a => digital certificate issued for a person who has completed a COVID-19 test with a negative result."
+                }
+            ],
+            "V": [
+                {
+                    "term": "Validity of an EU digital COVID certificate",
+                    "description": "Basically, we distinguish between <ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. <br/><br/> <b>Vaccination Certificate</b> <br/><br/>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g. in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So the effective validity of the vaccination counts from the last vaccination date (date X).  <br/><br/> A certificate is valid until either the technical validity or the effective validity expires."
+                },
+                {
+                    "term": "Vaccination certificate",
+                    "description": "The vaccination certificate is a => digital certificate issued for a person who has received a vaccination with a vaccine approved in the EU. Each vaccination certificate documents exactly one vaccination event (one dose). <br/><br/>The vaccination certificate represents a digital form of a => proof of vaccination."
+                },
+                {
+                    "term": "Verifier-App / Checking a certificate / Verifying a certificate",
+                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the CovPassCheck app), the check app. <br/><br/> Individual countries may have different implementations of the check app. However all check apps use the same - consolidated on a European gateway - keys of the participating countries as well as the stored => Business Rules. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
+                }
+            ]    
+        },
         "noContentText": "No entries available"
       }
 
