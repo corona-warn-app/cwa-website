@@ -24,7 +24,7 @@
         },
         "step2": {
             "title": "<b>Step 2: Opening and using the command prompt</b>",
-            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=/assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below",
+            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=/assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
             "image": {
                 "url": "/assets/img/event-qr-code-guide/taskbar.png",
                 "alt": "Taskbar"
@@ -67,7 +67,7 @@
                 "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
                 "alt": "Converting .csv file to QR codes"
             },
-            "text2": "After successful input, the command prompt will confirm the creation of the desired QR codes",
+            "text2": "After successful input, the command prompt will confirm the creation of the desired QR codes.",
             "image2": {
                 "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-confirmation.png",
                 "alt": "Confirmation of successfull convertion"
@@ -85,7 +85,7 @@
                 "url": "/assets/img/event-qr-code-guide/excel.png",
                 "alt": "Sample file in excel"
             },
-            "text2": "Adjust the data below the first line according to your needs. Ideally, do not change anything in the first line, as its entire content must remain present, but the order does not matter. Further information on the individual columns and their meaning can be found in the two following tables. To perform the creation process from now on it is best to start at step 4 again, but to save yourself some time you can also use the batch file we provide, which you can download <a href='/assets/documents/create-qrcodes.bat'>here</a>. If you plan to rename the sample file based on your intended use, keep in mind that you will then need to use your own file name instead of 'tables.csv'. If you have already used the batch file, have adjusted your data and want to create new QR Codes, but have <b>not</b> changed the name of the .csv file, run the batch file again with a double click. If you have changed the name of the .csv file, there are the following ways to adjust the batch file to it. Either open the command prompt (see step 2) and enter these two comma-separated lines one by one: '<b>cd /d %USERPROFILE%/Downloads/event-qr-codes, generateEventQRCodes.bat FILENAME.csv</b>', or edit the batch file and replace the name where 'tables.csv' is with your file name."
+            "text2": "Adjust the data below the first line according to your needs. Ideally, do not change anything in the first line, as its entire content must remain present, but the order does not matter. Further information on the individual columns and their meaning can be found in the two following tables. To perform the creation process from now on it is best to start at step 4 again, but to save yourself some time you can also use the batch file we provide, at the beginning of step 4. If you plan to rename the sample file based on your intended use, keep in mind that you will then need to use your own file name instead of 'tables.csv'. If you have already used the batch file, have adjusted your data and want to create new QR Codes, but have <b>not</b> changed the name of the .csv file, run the batch file again with a double click. If you have changed the name of the .csv file, there are the following ways to adjust the batch file to it. Either open the command prompt (see step 2) and enter these two comma-separated lines one by one: '<b>cd /d %USERPROFILE%/Downloads/event-qr-codes, generateEventQRCodes.bat FILENAME.csv</b>', or edit the batch file and replace the name where 'tables.csv' is with your file name."
         },
         "table1": {
             "title": "<b>Table 1: Explanation of each column</b>",
