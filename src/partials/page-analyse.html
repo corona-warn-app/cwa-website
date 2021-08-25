@@ -1,0 +1,169 @@
+{{#if page-contents}}
+<div class="container section_bg-light">
+
+	{{#if page-contents.topic}}
+		<div class="analyseTopic">
+			{{page-contents.topic}}
+		</div>
+	{{/if}}
+	{{#if page-contents.title}}
+		<h1 class="headline headline-heavy mt-3 mb-5">
+			{{page-contents.title}}
+		</h1>
+	{{/if}}
+
+
+
+	<div class="analyseRange">
+		
+		<div class="analyseRangePicker-label">
+			Zeitraum:
+		</div>
+		<div class="analyseRangePicker">
+			<button class="btn analyseRangePicker-btn ">
+				<span>&nbsp;</span>
+				<img src="/assets/img/icons/down.svg">
+			</button>
+			<div class="analyseRangePicker-layer">
+				{{#if page-contents.range.picker.inputs}}
+					<div class="analyseRangePicker-inputs">
+						{{page-contents.range.picker.inputs.from}}
+						<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.placeholder}}">
+						{{page-contents.range.picker.inputs.to}}
+						<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.placeholder}}">
+					</div>
+				{{/if}}
+				<div class="analyseRangePicker-picker"></div>
+				<div class="analyseRangePicker-actions">
+					{{#if page-contents.range.picker.cancel}}
+						<button class="btn analyseRangePicker-cancel">
+							{{page-contents.range.picker.cancel}}
+						</button>
+					{{/if}}
+					{{#if page-contents.range.picker.apply}}
+						<button class="btn btn-secondary analyseRangePicker-apply">
+							{{page-contents.range.picker.apply}}
+						</button>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+
+		{{#each page-contents.range.radio}}
+			<label class="analyseRangeRadio {{#if @first}}first{{/if}}">
+				<input type="radio" name="analyseRange" value="{{value}}">
+				<div class="analyseRangeRadio-box"></div>
+				<span>{{label}}</span>
+			</label>
+		{{/each}}
+	</div>
+
+
+	
+	<div class="row">
+		<div class="col-8">
+			<div class="analyseSwitch">
+				<div class="analyseSwitch-bg"></div>
+				{{#each page-contents.analyseSwitch}}
+				<button class="btn analyseSwitch-item {{#ifequal id ../page-contents.switchStart}}first{{/ifequal}}" data-id="{{id}}">
+					{{label}}
+				</button>
+				{{/each}}
+			</div>
+		</div>
+		{{#if page-contents.allExport}}
+			<div class="col-4 text-right">
+				<a class="btn btn-secondary" href="{{page-contents.allExport.link}}" target="_blank" rel="noopener noreferrer">
+					{{page-contents.allExport.title}}
+					<img src="/assets/img/icons/download.svg" class="ml-1">
+				</a>
+			</div>
+		{{/if}}
+	</div>
+	
+
+   
+	<div class="analyseBoards active" {{#if page-contents.translations}} data-translations='{{toJSON page-contents.translations}}'{{/if}}>
+		{{#if page-contents.boards.loading}}
+			<div class="analyseBoards-loading">
+				{{page-contents.boards.loading}}
+			</div>
+		{{/if}}
+		<div class="row">
+			{{#each page-contents.board}}
+				<div class="col-12 col-md-6">
+					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}}">
+						<div class="analyseBoard-head">
+							{{#if title}}
+								<div class="analyseBoard-title" data-title='{{toJSON title}}'>
+									{{lookup title ../page-contents.switchStart}}
+								</div>
+							{{/if}}
+							{{#if export}}
+								{{#if export.title}}
+									{{#if export.link}}
+										<a href="{{export.link}}" class="analyseBoard-export">
+											{{export.title}}
+										</a>
+									{{/if}}
+								{{/if}}
+							{{/if}}
+							{{#if info}}
+								<button class="btn analyseBoard-info">
+									<img src="/assets/img/icons/info.svg">
+								</button>
+							{{/if}}
+						</div>
+						
+						{{#if ../page-contents.boards.total}}
+							<div class="analyseBoard-total">
+								<div class="analyseBoard-total-value" data-key="{{totalKey}}"></div>
+								<div class="analyseBoard-total-label">
+									{{../page-contents.boards.total}}
+								</div>
+							</div>
+						{{/if}}
+							
+						<div class="analyseChart">
+							
+						</div>
+
+						{{#if tabs}}
+							<div class="analyseTabs">
+								{{#each tabs}}
+									<button class="btn analyseTabs-item {{#if @first}}first{{/if}}" data-value="{{@index}}">
+										{{label}}
+									</button>
+								{{/each}}
+							</div>
+						{{/if}}
+					</div>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+
+
+
+
+
+
+	
+	{{#if page-contents.moreLinks}}
+		{{#if page-contents.moreHeadline}}
+			<div class="text-center pt-3">
+				<h2 class="headline mt-5">
+					{{page-contents.moreHeadline}}
+				</h2>
+			</div>
+		{{/if}}
+		
+		<div class="analyseMore">
+			{{#each page-contents.moreLinks}}
+				<a href="{{link}}">{{title}}<img src="/assets/img/icons/external.svg"></a>
+			{{/each}}
+		</div>
+	{{/if}}
+
+</div>
+{{/if}}

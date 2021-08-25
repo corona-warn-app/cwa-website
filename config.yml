@@ -24,6 +24,8 @@ PATHS:
   assets:
     - "src/assets/**/*"
     - "!src/assets/js/app.js"
+    - "!src/assets/js/analyse.js"
+    - "!src/assets/js/analyse/**/*"
     - "!src/assets/js/eventregistration.js"
     - "!src/assets/js/lib/**/*"
     - "!src/assets/{img,scss}/**/*"
@@ -34,6 +36,7 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
+    - "src/assets/js/analyse.js"
     - "src/assets/js/eventregistration.js"
   # Paths to root assets
   rootAssets:

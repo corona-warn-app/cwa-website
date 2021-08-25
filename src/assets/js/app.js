@@ -257,6 +257,9 @@ $(document).ready(function(){
         const androidContent = document.querySelector("#android_screenshots")
         const iosContent = document.querySelector("#ios_screenshots")
         const contentClasses = ["show", "active"]
+
+        if(!iosTab || !androidTab) return;
+
         if (hashDevice === "android") {
             // Put tabs correctly
             iosTab.classList.remove("active")
