@@ -22,7 +22,7 @@
 		<div class="analyseRangePicker">
 			<button class="btn analyseRangePicker-btn ">
 				<span>&nbsp;</span>
-				<img src="/assets/img/icons/down.svg">
+				<img src="{{root}}assets/img/icons/down.svg">
 			</button>
 			<div class="analyseRangePicker-layer">
 				{{#if page-contents.range.picker.inputs}}
@@ -75,7 +75,7 @@
 			<div class="col-4 text-right">
 				<a class="btn btn-secondary" href="{{page-contents.allExport.link}}" target="_blank" rel="noopener noreferrer">
 					{{page-contents.allExport.title}}
-					<img src="/assets/img/icons/download.svg" class="ml-1">
+					<img src="{{root}}assets/img/icons/download.svg" class="ml-1">
 				</a>
 			</div>
 		{{/if}}
@@ -110,7 +110,7 @@
 							{{/if}}
 							{{#if info}}
 								<button class="btn analyseBoard-info">
-									<img src="/assets/img/icons/info.svg">
+									<img src="{{../root}}assets/img/icons/info.svg">
 								</button>
 							{{/if}}
 						</div>
@@ -160,7 +160,7 @@
 		
 		<div class="analyseMore">
 			{{#each page-contents.moreLinks}}
-				<a href="{{link}}">{{title}}<img src="/assets/img/icons/external.svg"></a>
+				<a href="{{link}}">{{title}}<img src="{{../root}}assets/img/icons/external.svg"></a>
 			{{/each}}
 		</div>
 	{{/if}}
