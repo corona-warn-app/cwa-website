@@ -32,7 +32,7 @@ $(() => {
 				start = now.minus({months: 6}).toISODate();
 				break;
 			case "1month":
-				start = now.minus({months: 1}).toISODate();
+				start = now.minus({days: 28}).toISODate();
 				break;
 		}
 
@@ -110,6 +110,8 @@ $(() => {
 	});
 
 	$(document).on("click",".analyseRangePicker-btn", function(e){
+		console.log("analyseRangePicker toggleClass")
+		picker.gotoDate(DateTime.fromJSDate(picker.getStartDate().dateInstance).toMillis())
 		$(".analyseRangePicker").toggleClass("active")
 	});
 

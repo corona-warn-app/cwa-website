@@ -15,7 +15,7 @@ before_script:
 
 npm install:
   stage: build
-  image: node
+  image: node:12
   script:
     - export PUBLIC_URL=https://preview.snk.de/${CI_PROJECT_PATH} && npm run build
   artifacts:

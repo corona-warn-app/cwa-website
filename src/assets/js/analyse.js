@@ -1,5 +1,8 @@
-import { combineLatest } from 'rxjs';
+import { combineLatest, combineLatestWith } from 'rxjs';
 import _get from 'lodash/get';
+import _mapValues from 'lodash/mapValues';
+import _cloneDeep from 'lodash/cloneDeep';
+import { DateTime } from 'luxon';
 
 import data$ from './analyse/data.js';
 import date$ from './analyse/date.js';
@@ -9,86 +12,67 @@ import tabs$ from './analyse/tabs.js';
 import chart from './analyse/chart.js';
 
 var $ = window.jQuery;
+window.$ = window.jQuery;
 
+let cache = {
+	store: {},
+	init: false,
+	set data(d){
+		if(JSON.stringify(this.store) != JSON.stringify(d)){
+	  		this.store = this.check(this.store, d);
+  		}
+	},
+	get data(){
+		return this.store;
+	},
+	check(oldObj, obj){
+		let charts = chart;
 
-console.log("analyse", date$, switchId$, tabs$)
-
-
-
-let cacheInit = false;
-let cacheObj = {};
-
-
-function setCacheItem(type, value){
-	if(JSON.stringify(cacheObj[type]) != JSON.stringify(value)){
-  		cacheObj[type] = value;
-    	detectChange(type, value);
-  	}
-}
-
-
-function detectChange(type,value) {
-	if(Object.keys(cacheObj).length == 5){
-
-		let charts;
-
-		if(!cacheInit){
-			// console.log("all filled");
+		if(!this.init){
 			$(".analyseBoards").removeClass("active");
-			cacheInit = true;
-			charts = chart;
-		}
-		else{
-			// console.log("detectChange", cacheObj);
-			// console.log("The variable has changed to", type, value);
-			charts = (type == "tabs1")? [chart[0]]: (type == "tabs2")? [chart[1]]: chart;
+			this.init = true;
+		}else{
+			charts = (oldObj.tabs1 != obj.tabs1)? [chart[1]]: (oldObj.tabs2 != obj.tabs2)? [chart[2]]: chart;
 		}
 
+		charts.forEach((s,i) => s.next(obj));
 
-		charts.forEach((s,i) => {
-			s.next(cacheObj)
-		});
-
-
-
-
+		return obj;
 	}
-}
+};
 
 
-combineLatest(data$, switchId$, date$, ...tabs$)
-	.subscribe(([dataOrg, switchId, date, tabs1, tabs2]) => {
-	    //filter data
-	    const data = filterData(dataOrg, date);
-
-	    setCacheItem("data", data)
-	    setCacheItem("switchId", switchId)
-	    setCacheItem("date", date)
-	    setCacheItem("tabs1", tabs1)
-	    setCacheItem("tabs2", tabs2)
+data$
+	.pipe(
+	    combineLatestWith(
+			switchId$, 
+			date$, 
+			...tabs$,
+		)
+	)
+	.subscribe((
+		[
+			data, 
+			switchId,
+			date, 
+			tabs1, 
+			tabs2,
+		]
+	) => {
+		cache.data = {
+			data: filterData(data, date),
+			switchId: switchId,
+			date: date, 
+			tabs1: tabs1,
+			tabs2: tabs2,
+		};
 	});
-
 
 
 
 function filterData(dataOrg, date){
-	let data = JSON.parse(JSON.stringify(dataOrg));
-	data.data.daily = _get(data, ["data", "daily"], []).filter(o => {
-		if(date[0] != null && date[1] != null ){
-		  return (date[0] <= o[0] && date[1] >= o[0])
-		}else{
-		  return true
-		}
-	});
-
-	data.data.weekly = _get(data, ["data", "weekly"], []).filter(o => {
-		if(date[0] != null && date[1] != null ){
-		  return (date[0] <= o[0] && date[1] >= o[0])
-		}else{
-		  return true
-		}
-	});
-
+	let data = _cloneDeep(dataOrg);
+	data.range = DateTime.fromISO(date[1]).diff(DateTime.fromISO(date[0])).as('days');
+	data.data = _mapValues(data.data, (a) => a.filter(o => (date[0] < o[0] && date[1] >= o[0])));
 	return data;
 }
-

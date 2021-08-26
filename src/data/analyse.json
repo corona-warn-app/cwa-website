@@ -114,20 +114,39 @@
         "app_downloads_cumulated": "Gesamt",
         "app_downloads_android_cumulated": "Android",
         "app_downloads_ios_cumulated": "IOS",
+        "app_downloads_daily": "Gesamt",
+        "app_downloads_android_daily": "Android",
+        "app_downloads_ios_daily": "IOS",
+        "app_downloads_7days_sum": "Gesamt",
+        "app_downloads_android_7days_sum": "Android",
+        "app_downloads_ios_7days_sum": "IOS",
+        "app_downloads_7days_avg": "Gesamt X̅",
+        "app_downloads_android_7days_avg": "Android X̅",
+        "app_downloads_ios_7days_avg": "IOS X̅",
         "qr_teletan_redeemable_cumulated": "Gesamt",
         "qr_redeemable_cumulated": "QR Codes",
         "teletan_redeemable_cumulated": "Teletans",
         "qr_not_redeemed_cumulated": "Nicht geteilt",
         "qr_redeemed_cumulated": "Geteilt",
         "teletan_not_redeemed_cumulated": "Nicht geteilt",
-        "teletan_redeemed_cumulated": "Geteilt"
+        "teletan_redeemed_cumulated": "Geteilt",
+        "qr_teletan_redeemable_7days_sum": "Gesamt",
+        "qr_redeemable_7days_sum": "QR Codes",
+        "teletan_redeemable_7days_sum": "Teletans",
+        "qr_not_redeemed_7days_sum": "Nicht geteilt",
+        "qr_redeemed_7days_sum": "Geteilt",
+        "teletan_not_redeemed_7days_sum": "Nicht geteilt",
+        "teletan_redeemed_7days_sum": "Geteilt",
+        "qr_teletan_redeemable_daily": "Gesamt",
+        "qr_redeemable_daily": "QR Codes",
+        "teletan_redeemable_daily": "Teletans",
+        "qr_not_redeemed_daily": "Nicht geteilt",
+        "qr_redeemed_daily": "Geteilt",
+        "teletan_not_redeemed_daily": "Nicht geteilt",
+        "teletan_redeemed_daily": "Geteilt"
     },
-    "switchStart": "1",
-    "analyseSwitch": [
-        {
-            "id": "1",
-            "label": "Kumuliert"
-        },
+    "switchStart": "2",
+    "switch": [
         {
             "id": "2",
             "label": "Täglich"
@@ -139,6 +158,10 @@
         {
             "id": "4",
             "label": "7-Tage-Mittelwert"
+        },
+        {
+            "id": "1",
+            "label": "Kumuliert"
         }
     ],
     "allExport": {
