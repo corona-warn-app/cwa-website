@@ -67,6 +67,35 @@ gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
 
+
+// minimize folder size by removing unnessaray file for the analyse page development
+gulp.task('build-analyse', gulp.series('build', minTestSize));
+
+function minTestSize(done) {
+  let rifs = []
+
+  const paths = [
+    "./public/assets/documents",
+    "./public/assets/video",
+    "./public/assets/screenshots",
+    "./public/assets/img/blog",
+    "./public/assets/img/science"
+  ];
+
+  paths.forEach((path)=>{
+    rifs.push(new Promise((resolve, reject) => {
+      rimraf(path, resolve);
+    }));
+  })
+
+
+  Promise.all(rifs).then((values) => {
+    done(values[0]);
+    console.log(values);
+  });
+}
+
+
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
@@ -189,6 +218,9 @@ let webpackConfig = {
         }
       }
     ]
+  },
+  performance: {
+    hints: false
   },
   devtool: !PRODUCTION && 'source-map'
 };

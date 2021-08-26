@@ -15,7 +15,7 @@ npm install:
   image: node:12
   script:
     - npm ci --cache .npm --prefer-offline
-    - export PUBLIC_URL=https://preview.snk.de/${CI_PROJECT_PATH} && npm run build
+    - export PUBLIC_URL=https://preview.snk.de/${CI_PROJECT_PATH} && npm run build-analyse
   artifacts:
     paths:
       - ./public
