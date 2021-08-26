@@ -78,12 +78,12 @@
               {{#each letter as |content|}}
                 {{#if @last}}
                   <div>
-                    <h5 class="mt-4 px-3" id="{{content.anchor}}"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
                   </div>
                 {{else}}
                   <div class="nav-tabs pb-3">
-                    <h5 class="mt-4 px-3" id="{{content.anchor}}"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
                   </div>
                 {{/if}}
@@ -99,12 +99,12 @@
               {{#each letter as |content|}}
                 {{#if @last}}
                   <div>
-                    <h5 class="mt-4 px-3" id="{{content.anchor}}"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
                   </div>
                   {{else}}
                   <div class="nav-tabs pb-3">
-                    <h5 class="mt-4 px-3" id="{{content.anchor}}"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
                   </div>
                 {{/if}}

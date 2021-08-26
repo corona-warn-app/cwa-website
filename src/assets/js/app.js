@@ -240,4 +240,22 @@ $(document).ready(function(){
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
       });
 
+      // glossary links onclick handler
+      $("a[href^='#glossary_']").on("click", function(e) {
+        let hash = location.hash.replace(/^#/, '');
+        if (hash) {
+            let glossaryLetter = hash[9]
+            let glossaryAnchor = hash.split('_'+glossaryLetter+'_')[0] + '_' + hash.split('_'+glossaryLetter+'_')[1]
+            console.log('glossaryLetter', glossaryLetter);
+            console.log('glossaryAnchor', glossaryAnchor); 
+
+            // switch tabs
+            $('#'+glossaryLetter.toUpperCase()+'-tab').addClass('active').siblings().removeClass('active');
+            $($('#'+glossaryLetter.toUpperCase()+'-tab').attr('href')).addClass('show active').siblings().removeClass('show active');
+
+            // go to glossary anchor
+            $(document).scrollTop( $("#"+glossaryAnchor).offset().top );
+        }
+      });
+
 });
