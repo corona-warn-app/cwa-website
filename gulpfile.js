@@ -94,7 +94,7 @@ function addbasepath() {
     .src("src/data/globalcopy.json")
     .pipe(jsonTransform(function (data, file) {
         let global = data
-        global['basepath'] = yargs.argv.basepath + "/public"
+        global['basepath'] = yargs.argv.basepath + "/public/"
         return global;
       }))
     .pipe(rename('global.json'))
