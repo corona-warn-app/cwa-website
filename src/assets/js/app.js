@@ -242,8 +242,12 @@ $(document).ready(function(){
 
       // glossary links onclick handler
       $("a[href^='#glossary_']").on("click", function(e) {
+        activateGlossary();
+      });
+
+      function activateGlossary() {
         let hash = location.hash.replace(/^#/, '');
-        if (hash) {
+        if (hash && hash.indexOf("glossary_") > -1) {
             // the glossary anchor
             let glossaryAnchor = hash;
 
@@ -257,6 +261,9 @@ $(document).ready(function(){
             // go to glossary anchor
             $(document).scrollTop( $("#"+glossaryAnchor).offset().top );
         }
-      });
 
+      }
+
+      // onload jump to glossary
+      activateGlossary(); 
 });
