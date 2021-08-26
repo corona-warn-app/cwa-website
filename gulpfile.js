@@ -68,8 +68,39 @@ gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 gulp.task('default', gulp.series('build', server, watch));
 
 
+
+
+
+
+
+
+
 // minimize folder size by removing unnessaray file for the analyse page development
-gulp.task('build-analyse', gulp.series('build', minTestSize));
+gulp.task('build-analyse', gulp.series(copyglobal, deleteglobal, addbasepath, 'build', minTestSize));
+
+
+function copyglobal() {
+  return gulp.src("src/data/global.json")
+    .pipe(rename('globalcopy.json'))
+    .pipe(gulp.dest("src/data/"));
+}
+
+function deleteglobal(done) {
+  rimraf("src/data/global.json", done);
+}
+
+function addbasepath() {
+  return gulp
+    .src("src/data/globalcopy.json")
+    .pipe(jsonTransform(function (data, file) {
+        let global = data
+        global['basepath'] = yargs.argv.basepath + "/public"
+        return global;
+      }))
+    .pipe(rename('global.json'))
+    .pipe(gulp.dest("src/data/"));
+}
+
 
 function minTestSize(done) {
   let rifs = []
@@ -94,6 +125,10 @@ function minTestSize(done) {
     console.log(values);
   });
 }
+
+
+
+
 
 
 // Delete the "dist" folder

@@ -1,11 +1,11 @@
 {{#if favicon}}
 {{#if favicon.include}}
 {{#ifequal favicon.include "all"}}
-<link rel="apple-touch-icon" sizes="180x180" href="{{root}}{{favicon.url}}{{favicon.name}}-180x180.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{{root}}{{favicon.url}}{{favicon.name}}-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="{{root}}{{favicon.url}}{{favicon.name}}-96x96.png">
-<link rel="icon" type="image/png" sizes="192x192" href="{{root}}{{favicon.url}}{{favicon.name}}-192x192.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{{root}}{{favicon.url}}{{favicon.name}}-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{favicon.url}}{{favicon.name}}-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{favicon.url}}{{favicon.name}}-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{{favicon.url}}{{favicon.name}}-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="{{favicon.url}}{{favicon.name}}-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{favicon.url}}{{favicon.name}}-16x16.png">
 {{/ifequal}}
 {{/if}}
 {{else}}
@@ -13,6 +13,6 @@
     rel="icon"
     type="image/{{#if favicon.type}}{{favicon.type}}{{/if}}{{#unless favicon.type}}png{{/unless}}"
     sizes="{{#if favicon.size}}{{favicon.size}}x{{favicon.size}}{{else}}32x32{{/if}}"
-    href="{{root}}{{favicon.url}}"
+    href="{{favicon.url}}"
 />
 {{/if}}

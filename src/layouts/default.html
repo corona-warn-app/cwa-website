@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
   <head>
+    <base href="{{global.basepath}}">
     <meta charset="utf-8" />
     <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -11,7 +12,7 @@
     {{> favicon favicon=global.favicon}}
     {{/if}}
 
-    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
   <body class="{{#unless @root.page-name}}{{#ifpage 'index'}}page-home{{/ifpage}}{{/unless}}{{#if @root.page-name}}page-{{@root.page-name}}{{/if}}">
@@ -28,18 +29,18 @@
     {{#if lang_de}}
     {{> footer language=global.lang.de}}
     {{/if}}
-    <script src="{{root}}assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     {{#if lightbox}}
-    <script src="{{root}}assets/js/lightbox.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
     {{/if}}
     {{#if store-redirect}}
-    <script src="{{root}}assets/js/static/store-redirect.js"></script>
+    <script src="assets/js/static/store-redirect.js"></script>
     {{/if}}
     {{#if eventregistration_js}}
-    <script src="{{root}}assets/js/eventregistration.js"></script>
+    <script src="assets/js/eventregistration.js"></script>
     {{/if}}
     {{#ifequal page-name 'analyse'}}
-    <script src="{{root}}assets/js/analyse.js"></script>
+    <script src="assets/js/analyse.js"></script>
     {{/ifequal}}
   </body>
 </html>
