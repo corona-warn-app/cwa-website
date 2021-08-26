@@ -244,10 +244,11 @@ $(document).ready(function(){
       $("a[href^='#glossary_']").on("click", function(e) {
         let hash = location.hash.replace(/^#/, '');
         if (hash) {
-            let glossaryLetter = hash[9]
-            let glossaryAnchor = hash.split('_'+glossaryLetter+'_')[0] + '_' + hash.split('_'+glossaryLetter+'_')[1]
-            console.log('glossaryLetter', glossaryLetter);
-            console.log('glossaryAnchor', glossaryAnchor); 
+            // the glossary anchor
+            let glossaryAnchor = hash;
+
+            // determine letter with dynamic language
+            let glossaryLetter = $("#"+glossaryAnchor).closest("[role=tabpanel]").attr("id");
 
             // switch tabs
             $('#'+glossaryLetter.toUpperCase()+'-tab').addClass('active').siblings().removeClass('active');
