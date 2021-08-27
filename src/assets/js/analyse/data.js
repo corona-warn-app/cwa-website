@@ -1,7 +1,6 @@
 import { of } from 'rxjs';
 import { fromFetch } from 'rxjs/fetch';
 import { switchMap, catchError, map, delay } from 'rxjs/operators';
-import totalValues from './totalValues.js';
 var $ = window.jQuery;
 
 console.log("data$")
@@ -33,11 +32,51 @@ const data$ = fromFetch(url).pipe(
  map(e => e[0])
 );
 
-
-data$.subscribe(e => {
-  // show total values
-  totalValues(e);
-});
-
-
 export default data$;
+
+// $(() => {
+// 	let translations = $(".analyseBoards").data("translations");
+
+// 	const usedKeys = Object.keys(translations);
+
+// 	data$.subscribe(e => {
+
+// 		let dailyKeys = e.keys.daily;
+// 		let weeklyKeys = e.keys.weekly;
+
+
+// 		let data = {
+// 			"daily":{
+// 				"unused":[],
+// 				"missing":[]
+// 			},
+// 			"weekly":{
+// 				"unused":[],
+// 				"missing":[]
+// 			}
+// 		}
+
+// 		data.daily.unused = dailyKeys.filter(x => !usedKeys.includes(x));
+// 		data.daily.missing = usedKeys.filter(x => !dailyKeys.includes(x));
+
+// 		const wusedKeys = usedKeys.filter(x => {
+
+// 			if(x == "effective_date" || x == "infections_published_cumulated" || x == "infections_published_daily" || x == "infections_published_7days_avg" || x == "infections_published_7days_sum" ){
+// 				return true;
+// 			}
+
+// 			return x.includes("_7days_sum") 
+// 		})
+
+// 		const wwusedKeys = usedKeys.filter(x => x.includes("_7days_sum")  )
+// 		wwusedKeys.push("effective_date");
+// 		data.weekly.missing = wwusedKeys.filter(x => !weeklyKeys.includes(x));
+// 		data.weekly.unused = weeklyKeys.filter(x => !wwusedKeys.includes(x));
+// 	  	console.log(JSON.stringify(data, 0, 2))
+// 	});
+
+// });
+
+
+
+

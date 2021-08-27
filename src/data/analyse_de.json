@@ -112,17 +112,11 @@
     ],
     "translations":{
 
-        "tests_total_cumulated": "Gesamt",
-        "tests_pcr_total_cumulated": "PCR  Tests",
-        "tests_rat_total_cumulated": "Antigen Schnelltests",
-        "tests_total_daily": "Gesamt",
-        "tests_pcr_total_daily": "PCR  Tests",
-        "tests_rat_total_daily": "Antigen Schnelltests",
-
-
-
-
-
+        "effective_date": "",
+        "infections_published_cumulated": "",
+        "infections_published_daily": "",
+        "infections_published_7days_avg": "",
+        "infections_published_7days_sum": "",
 
 
 
@@ -130,15 +124,66 @@
         "app_downloads_cumulated": "Gesamt",
         "app_downloads_android_cumulated": "Android",
         "app_downloads_ios_cumulated": "IOS",
+
         "app_downloads_daily": "Gesamt",
         "app_downloads_android_daily": "Android",
         "app_downloads_ios_daily": "IOS",
+
         "app_downloads_7days_sum": "Gesamt",
         "app_downloads_android_7days_sum": "Android",
         "app_downloads_ios_7days_sum": "IOS",
+
         "app_downloads_7days_avg": "Gesamt X̅",
         "app_downloads_android_7days_avg": "Android X̅",
         "app_downloads_ios_7days_avg": "IOS X̅",
+
+
+
+
+        "tests_total_cumulated": "Gesamt",
+        "tests_pcr_total_cumulated": "PCR Tests",
+        "tests_rat_total_cumulated": "Antigen Schnelltests",
+        "tests_pcr_positive_cumulated": "Positive",
+        "tests_pcr_negative_cumulated": "Negative",
+        "tests_pcr_invalide_cumulated": "Ungultig",
+        "tests_rat_positive_cumulated": "Positive",
+        "tests_rat_negative_cumulated": "Negative",
+        "tests_rat_invalide_cumulated": "Ungultig",
+
+        "tests_total_daily": "Gesamt",
+        "tests_pcr_total_daily": "PCR Tests",
+        "tests_rat_total_daily": "Antigen Schnelltests",
+        "tests_pcr_positive_daily": "Positive",
+        "tests_pcr_negative_daily": "Negative",
+        "tests_pcr_invalide_daily": "Ungultig",
+        "tests_rat_positive_daily": "Positive",
+        "tests_rat_negative_daily": "Negative",
+        "tests_rat_invalide_daily": "Ungultig",
+
+        "tests_total_7days_sum": "Gesamt",
+        "tests_pcr_total_7days_sum": "PCR Tests",
+        "tests_rat_total_7days_sum": "Antigen Schnelltests",
+        "tests_pcr_positive_7days_sum": "Positive",
+        "tests_pcr_negative_7days_sum": "Negative",
+        "tests_pcr_invalide_7days_sum": "Ungultig",
+        "tests_rat_positive_7days_sum": "Positive",
+        "tests_rat_negative_7days_sum": "Negative",
+        "tests_rat_invalide_7days_sum": "Ungultig",
+
+        "tests_total_7days_avg": "Gesamt X̅",
+        "tests_pcr_total_7days_avg": "PCR Tests X̅",
+        "tests_rat_total_7days_avg": "Antigen Schnelltests X̅",
+        "tests_pcr_positive_7days_avg": "Positive X̅",
+        "tests_pcr_negative_7days_avg": "Negative X̅",
+        "tests_pcr_invalide_7days_avg": "Ungultig X̅",
+        "tests_rat_positive_7days_avg": "Positive X̅",
+        "tests_rat_negative_7days_avg": "Negative X̅",
+        "tests_rat_invalide_7days_avg": "Ungultig X̅",
+
+
+
+
+
         "qr_teletan_redeemable_cumulated": "Gesamt",
         "qr_redeemable_cumulated": "QR Codes",
         "teletan_redeemable_cumulated": "Teletans",
@@ -146,6 +191,15 @@
         "qr_redeemed_cumulated": "Geteilt",
         "teletan_not_redeemed_cumulated": "Nicht geteilt",
         "teletan_redeemed_cumulated": "Geteilt",
+
+        "qr_teletan_redeemable_daily": "Gesamt",
+        "qr_redeemable_daily": "QR Codes",
+        "teletan_redeemable_daily": "Teletans",
+        "qr_not_redeemed_daily": "Nicht geteilt",
+        "qr_redeemed_daily": "Geteilt",
+        "teletan_not_redeemed_daily": "Nicht geteilt",
+        "teletan_redeemed_daily": "Geteilt",
+
         "qr_teletan_redeemable_7days_sum": "Gesamt",
         "qr_redeemable_7days_sum": "QR Codes",
         "teletan_redeemable_7days_sum": "Teletans",
@@ -153,15 +207,36 @@
         "qr_redeemed_7days_sum": "Geteilt",
         "teletan_not_redeemed_7days_sum": "Nicht geteilt",
         "teletan_redeemed_7days_sum": "Geteilt",
-        "qr_teletan_redeemable_daily": "Gesamt",
-        "qr_redeemable_daily": "QR Codes",
-        "teletan_redeemable_daily": "Teletans",
-        "qr_not_redeemed_daily": "Nicht geteilt",
-        "qr_redeemed_daily": "Geteilt",
-        "teletan_not_redeemed_daily": "Nicht geteilt",
-        "teletan_redeemed_daily": "Geteilt"
+
+        "qr_teletan_redeemable_7days_avg": "Gesamt X̅",
+        "qr_redeemable_7days_avg": "QR Codes X̅",
+        "teletan_redeemable_7days_avg": "Teletans X̅",
+        "qr_not_redeemed_7days_avg": "Nicht geteilt X̅",
+        "qr_redeemed_7days_avg": "Geteilt X̅",
+        "teletan_not_redeemed_7days_avg": "Nicht geteilt X̅",
+        "teletan_redeemed_7days_avg": "Geteilt X̅",
+
+
+
+
+
+        "ppa_risk_red_cumulated": "Rotes Risiko", 
+        "ppa_risk_green_cumulated": "Grunes Risiko",
+
+        "ppa_risk_red_daily": "Rotes Risiko", 
+        "ppa_risk_green_daily": "Grunes Risiko",
+
+        "ppa_risk_red_7days_sum": "Rotes Risiko", 
+        "ppa_risk_green_7days_sum": "Grunes Risiko",
+
+        "ppa_risk_red_7days_avg": "Rotes Risiko", 
+        "ppa_risk_green_7days_avg": "Grunes Risiko"
+
+
+        
+        
     },
-    "switchStart": "3",
+    "switchStart": "2",
     "switch": [
         {
             "id": "2",

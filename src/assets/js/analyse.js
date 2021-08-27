@@ -1,8 +1,9 @@
-import { combineLatest, combineLatestWith } from 'rxjs';
+import { combineLatestWith } from 'rxjs';
 import _get from 'lodash/get';
 import _mapValues from 'lodash/mapValues';
 import _cloneDeep from 'lodash/cloneDeep';
 import { DateTime } from 'luxon';
+
 
 import data$ from './analyse/data.js';
 import date$ from './analyse/date.js';
@@ -10,6 +11,7 @@ import switchId$ from './analyse/switch.js';
 import tabs$ from './analyse/tabs.js';
 
 import chart from './analyse/chart.js';
+import totalValues from './analyse/totalValues.js';
 
 var $ = window.jQuery;
 window.$ = window.jQuery;
@@ -30,6 +32,7 @@ let cache = {
 
 		if(!this.init){
 			$(".analyseBoards").removeClass("active");
+			totalValues(obj.data);
 			this.init = true;
 		}else{
 			charts = (oldObj.tabs1 != obj.tabs1)? [chart[1]]: (oldObj.tabs2 != obj.tabs2)? [chart[2]]: chart;
@@ -59,6 +62,7 @@ data$
 			tabs2,
 		]
 	) => {
+		console.log("##############")
 		cache.data = {
 			data: filterData(data, date),
 			switchId: switchId,

@@ -3,8 +3,6 @@ import { map, startWith } from 'rxjs/operators';
 
 const $ = window.jQuery;
 
-console.log("switchId$")
-
 const switchId$ = fromEvent(document.querySelectorAll(".analyseSwitch-item"), 'click')
 	.pipe(
 	    startWith({

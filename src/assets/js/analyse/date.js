@@ -9,11 +9,9 @@ const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';
 Settings.defaultLocale = documentLang;
 
-
 const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
 const now = DateTime.now().minus({days: 1});
 
-console.log("date")
 
 const date$ = new Subject;
 
@@ -89,7 +87,7 @@ $(() => {
 
 	$(document).on("click",".analyseRangePicker-btn", function(e){
 		if(picker.getStartDate()){
-			picker.gotoDate(DateTime.fromJSDate(picker.getStartDate().dateInstance).toMillis());
+			picker.gotoDate(DateTime.fromJSDate(picker.getStartDate().dateInstance));
 		}
 		$(".analyseRangePicker").toggleClass("active")
 	});
