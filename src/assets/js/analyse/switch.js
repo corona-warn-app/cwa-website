@@ -1,10 +1,10 @@
 import { fromEvent } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
-var $ = window.jQuery;
-
+const $ = window.jQuery;
 
 console.log("switchId$")
+
 const switchId$ = fromEvent(document.querySelectorAll(".analyseSwitch-item"), 'click')
 	.pipe(
 	    startWith({

@@ -21,7 +21,7 @@
                 "value": "6months"
             },
             {
-                "label": "Letzten Monat",
+                "label": "Letzte 28 Tage",
                 "value": "1month"
             }
         ]
@@ -111,6 +111,22 @@
         }
     ],
     "translations":{
+
+        "tests_total_cumulated": "Gesamt",
+        "tests_pcr_total_cumulated": "PCR  Tests",
+        "tests_rat_total_cumulated": "Antigen Schnelltests",
+        "tests_total_daily": "Gesamt",
+        "tests_pcr_total_daily": "PCR  Tests",
+        "tests_rat_total_daily": "Antigen Schnelltests",
+
+
+
+
+
+
+
+
+
         "app_downloads_cumulated": "Gesamt",
         "app_downloads_android_cumulated": "Android",
         "app_downloads_ios_cumulated": "IOS",
@@ -145,7 +161,7 @@
         "teletan_not_redeemed_daily": "Nicht geteilt",
         "teletan_redeemed_daily": "Geteilt"
     },
-    "switchStart": "2",
+    "switchStart": "3",
     "switch": [
         {
             "id": "2",

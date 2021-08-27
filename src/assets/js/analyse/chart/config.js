@@ -72,6 +72,159 @@ export default {
 			]
 		}	
 	},
+
+	"chart1": {
+		"1": [
+			{
+				"series": [
+					{
+						color: "#D68101",
+						data: "tests_total_cumulated"
+					},
+					{
+						color: "#892405",
+						data: "tests_pcr_total_cumulated"
+					},
+					{
+						color: "#D55127",
+						data: "tests_rat_total_cumulated"
+					}
+				],
+			},
+			{
+				"series": [
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_cumulated"
+					},
+					{
+						color: "#3BA8CE",
+						data: "qr_redeemed_cumulated"
+					}
+					
+				],
+				"stacked": true,
+				"type":"area"
+			},
+			{
+				"series": [
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_cumulated"
+					},
+					{
+						color: "#3BA8CE",
+						data: "teletan_redeemed_cumulated"
+					}
+					
+				],
+				"stacked": true,
+				"type":"area"
+			}
+		],
+		"2": [
+			{
+				"series": [
+					{
+						color: "#D68101",
+						data: "tests_total_daily",
+						type: "line"
+					},
+					{
+						color: "#892405",
+						data: "tests_pcr_total_daily",
+						type: "bar"
+					},
+					{
+						color: "#D55127",
+						data: "tests_rat_total_daily",
+						type: "bar"
+					}
+				],
+			},
+			{
+				"series": [
+					{
+						color: "#3BA8CE",
+						data: "qr_redeemed_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_daily"
+					}
+				],
+				"stacked": true,
+				"type":"bar"
+			},
+			{
+				"series": [
+					{
+						color: "#3BA8CE",
+						data: "teletan_redeemed_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_daily"
+					}
+				],
+				"stacked": true,
+				"type":"bar"
+			}
+		],
+		"3": [
+			{
+				"series": [
+					{
+						color: "#D68101",
+						data: "tests_total_7days_sum",
+						type: "line"
+					},
+					{
+						color: "#892405",
+						data: "tests_pcr_total_7days_sum",
+						type: "bar"
+					},
+					{
+						color: "#D55127",
+						data: "tests_rat_total_7days_sum",
+						type: "bar"
+					}
+				],
+			},
+			{
+				"series": [
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_7days_sum"
+					},
+					{
+						color: "#3BA8CE",
+						data: "qr_redeemed_7days_sum"
+					}
+					
+				],
+				"stacked": true,
+				"type":"bar"
+			},
+			{
+				"series": [
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_7days_sum"
+					},
+					{
+						color: "#3BA8CE",
+						data: "teletan_redeemed_7days_sum"
+					}
+					
+				],
+				"stacked": true,
+				"type":"bar"
+			}
+		]
+	},
+
+
 	"chart2": {
 		"1": [
 			{

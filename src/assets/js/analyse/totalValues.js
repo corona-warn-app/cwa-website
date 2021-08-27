@@ -12,7 +12,7 @@ function getValue(e, key){
 	const mode = "daily";
 	const index = _get(e, ["keys", mode]).indexOf(key);
 	const array =  _get(e, ["data", mode ])
-	return formatNumber(array[array.length - 1][index]);
+	return formatNumber(array[array.length - 2][index]);
 }
 
 
