@@ -242,11 +242,16 @@ $(document).ready(function(){
 
       // glossary links onclick handler
       $("a[href^='#glossary_']").on("click", function(e) {
-        activateGlossary();
+        let anchor = $(this).attr("href").replace(/^#/, '');
+        activateGlossary(anchor);
       });
 
-      function activateGlossary() {
+      function activateGlossary(anchor) {
         let hash = location.hash.replace(/^#/, '');
+
+        // if a link is clicked, get the hash from <a> instead from location.hash
+        if(anchor) { hash = anchor; }
+
         if (hash && hash.indexOf("glossary_") > -1) {
             // the glossary anchor
             let glossaryAnchor = hash;
