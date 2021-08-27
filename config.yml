@@ -25,6 +25,7 @@ PATHS:
     - "src/assets/**/*"
     - "!src/assets/js/app.js"
     - "!src/assets/js/eventregistration.js"
+    - "!src/assets/js/screenshots.js"
     - "!src/assets/js/lib/**/*"
     - "!src/assets/{img,scss}/**/*"
   # Paths to Sass libraries, which can then be loaded with @import
@@ -35,6 +36,7 @@ PATHS:
   entries:
     - "src/assets/js/app.js"
     - "src/assets/js/eventregistration.js"
+    - "src/assets/js/screenshots.js"
   # Paths to root assets
   rootAssets:
     - "src/root-assets/*"
