@@ -2,8 +2,8 @@ import Litepicker from 'litepicker';
 import Cleave from 'cleave.js';
 import { DateTime, Settings } from 'luxon';
 import { Subject } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
-var $ = window.jQuery;
+
+const $ = window.jQuery;
 
 const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';
@@ -11,52 +11,31 @@ Settings.defaultLocale = documentLang;
 
 
 const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
+const now = DateTime.now().minus({days: 1});
+
+console.log("date")
 
 const date$ = new Subject;
 
 $(() => {
 
-	console.log("date")
-
-
-
-	document.querySelectorAll('.analyseRangeRadio input').forEach((e) => {
-		const now = DateTime.now();
-		let start;
-
-		switch(e.value){
-			case "all":
-				start = '2020-01-01';
-				break;
-			case "6months":
-				start = now.minus({months: 6}).toISODate();
-				break;
-			case "1month":
-				start = now.minus({days: 28}).toISODate();
-				break;
-		}
-
-		e.value = [start, now.toISODate()];
+	$('.analyseRangeRadio input').each(function(){
+		const v = $(this).val();
+		const start = (v == "all")? '2020-01-01': now.minus((v == "6months")? {months: 6}: {days: 28}).toISODate();
+		$(this).val([start, now.toISODate()].join(","))
 	});
 
-
 	$(document).on("change",".analyseRangeRadio input", function(e){
-		const date = $(e.target).val().split(",");
-		picker.setDateRange(date[0],date[1]);
-		date$.next(date);
+		date$.next($(this).val().split(","));
 	});
 	
 
-
-
-
-
-	document.querySelectorAll('.analyseRangePicker-input').forEach((e) => {
-		new Cleave(e, {
+	$('.analyseRangePicker-input').each(function(){
+		new Cleave(this, {
 		    date: true,
 		    delimiter: (documentLang == "de")? '.': '/',
 		    dateMin: '2020-01-01',
-    		dateMax: DateTime.now().toISODate(),
+    		dateMax: now.toISODate(),
 		    datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
 		    // onValueChanged: function (e) {
 		 //    	if(e.target.rawValue.length != 8) return;
@@ -73,7 +52,7 @@ $(() => {
 		 //    	console.log(date,  dateFromPicker, DateTime.fromJSDate(dateFromPicker), DateTime.fromJSDate(picker.getEndDate().dateInstance));
 			// }
 		});
-	})
+	});
 
 
 	function pickerDateFormater(date){
@@ -89,16 +68,15 @@ $(() => {
 		numberOfColumns: 2,
 		numberOfMonths: 2,
 		minDate: '2020-01-01', 
-		maxDate: new Date(), 
+		maxDate: now, 
 		scrollToDate: false,
 		autoApply: true,
 		format: "YYYY-MM-DD",
 		buttonText: {"previousMonth":'<svg width="17" height="16" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg"><path style="transform-origin: center;transform: rotate(90deg);" d="M14.8236 6.33657L9.00004 12L3.17651 6.33657L4.55087 5L9.00004 9.34951L13.4492 5L14.8236 6.33657Z" fill="#3A3D3E"/></svg>',"nextMonth":'<svg width="17" height="16" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg"><path style="transform-origin: center;transform: rotate(-90deg);" d="M14.8236 6.33657L9.00004 12L3.17651 6.33657L4.55087 5L9.00004 9.34951L13.4492 5L14.8236 6.33657Z" fill="#3A3D3E"/></svg>'},
 		setup: (picker) => {
 
-			picker.on('clear:selection', (date1, date2) => {
-			   $(".analyseRangePicker-input-start").val("")
-			   $(".analyseRangePicker-input-end").val("")
+			picker.on('clear:selection', () => {
+			   $(".analyseRangePicker-input").val("")
 			});
 
 
@@ -110,8 +88,9 @@ $(() => {
 	});
 
 	$(document).on("click",".analyseRangePicker-btn", function(e){
-		console.log("analyseRangePicker toggleClass")
-		picker.gotoDate(DateTime.fromJSDate(picker.getStartDate().dateInstance).toMillis())
+		if(picker.getStartDate()){
+			picker.gotoDate(DateTime.fromJSDate(picker.getStartDate().dateInstance).toMillis());
+		}
 		$(".analyseRangePicker").toggleClass("active")
 	});
 
@@ -131,7 +110,7 @@ $(() => {
 
 
 	date$.subscribe(e => {
-
+		picker.setDateRange(...e);
 		$(".analyseRangePicker-btn span").html(`${DateTime.fromISO(e[0]).toLocaleString(dateLocaleFormat)} - ${DateTime.fromISO(e[1]).toLocaleString(dateLocaleFormat)}`);
 		$(".analyseRangePicker").removeClass("active");
 	});
