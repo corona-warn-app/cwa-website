@@ -117,15 +117,15 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
-                      "title": "Which EU certificates are supported?",
-                      "anchor": "eu_dcc_which",
-                      "active": true,
-                      "textblock": [
-                          "Starting with <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a>, the Corona-Warn-App (CWA) supports all three types of EU Digital COVID Certificate:",
-                          "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
-                          "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
-                          "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
-                      ]
+                        "title": "Which EU certificates are supported?",
+                        "anchor": "eu_dcc_which",
+                        "active": true,
+                        "textblock": [
+                            "Starting with <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a>, the Corona-Warn-App (CWA) supports all three types of EU Digital COVID Certificate:",
+                            "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
+                            "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
+                            "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
+                        ]
                     },
                     {
                         "title": "Why do I get the error message 'This QR code is not a valid  certificate. (HC_PREFIX_INVALID)' when I try to scan a QR code?",
@@ -196,7 +196,7 @@
                         "active": true,
                         "textblock": [
                             "<ul><li><a href='#test_cert_why'>What is the purpose of the digital COVID test certificate?</a></li><li><a href='#test_cert_get'>How can I request a test certificate?</a></li><li><a href='#test_cert_rat_and_pcr'>Can I request test certificates for rapid tests and PCR tests?</a></li><li><a href='#test_cert_when_and_where'>When will I receive my test certificate and where can I find it?</a></li><li><a href='#test_cert_validity'>How long is my test certificate valid?</a></li><li><a href='#test_cert_privacy'>How will my privacy be protected if I create a test certificate?</a></li></ul>"
-                         ]
+                        ]
                     },
                     {
                         "title": "What is the purpose of the digital COVID test certificate?",
@@ -1736,13 +1736,13 @@
                 "id": "resolved",
                 "accordion": [
                     {
-                      "title": "[Google/Android]: Fixed security vulnerability in the Exposure Notification Framework",
-                      "anchor": "google_security_vulnerability",
-                      "active": true,
-                      "textblock": [
-                          "On April 27, 2021, reports appeared that a vulnerability in the Exposure Notification Framework (ENF) in the Android operating system was announced. This vulnerability allowed pre-installed apps on Android smartphones to access system log files, thus reading ENF data that is also provided by the Corona-Warn-App (CWA). All Android versions that used the Google Play services below version 21.15 were affected. Google rolled out a fix in April 2021.",
-                          "All risks associated with using the CWA are described in the Privacy Impact Assessment (risk details can be found in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Appendix 6, Section 4</a>)."
-                      ]
+                        "title": "[Google/Android]: Fixed security vulnerability in the Exposure Notification Framework",
+                        "anchor": "google_security_vulnerability",
+                        "active": true,
+                        "textblock": [
+                            "On April 27, 2021, reports appeared that a vulnerability in the Exposure Notification Framework (ENF) in the Android operating system was announced. This vulnerability allowed pre-installed apps on Android smartphones to access system log files, thus reading ENF data that is also provided by the Corona-Warn-App (CWA). All Android versions that used the Google Play services below version 21.15 were affected. Google rolled out a fix in April 2021.",
+                            "All risks associated with using the CWA are described in the Privacy Impact Assessment (risk details can be found in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Appendix 6, Section 4</a>)."
+                        ]
                     },
                     {
                         "title": "Can I enter a test result from a Corona rapid test (Schnelltest)?",
@@ -2125,9 +2125,9 @@
             ],
             "P": [
                 {
-                "term": "Proof of vaccination",
-                "anchor": "vaccination_proof",
-                "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital => vaccination certificate."
+                    "term": "Proof of vaccination",
+                    "anchor": "vaccination_proof",
+                    "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital => vaccination certificate."
                 }
             ],
             "R": [
@@ -2170,6 +2170,6 @@
             ]    
         },
         "noContentText": "No entries available"
-      }
+    }
 
 }
