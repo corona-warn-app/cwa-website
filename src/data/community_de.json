@@ -31,47 +31,53 @@
         },
         "content": {
             "sub-headline": "Wenn Du zum ersten Mal mitmachst, gehe wie nachfolgend beschrieben vor:",
-            "feature-list": [{
-                "image": {
-                    "title": "Issue",
-                    "url": "/assets/img/icons/issue.svg",
-                    "alt": "'Issue'-icon"
+            "feature-list": [
+                {
+                    "image": {
+                        "title": "Issue",
+                        "url": "/assets/img/icons/issue.svg",
+                        "alt": "'Issue'-icon"
+                    },
+                    "title": "An einem 'Issue' arbeiten",
+                    "text": "Wenn Du ein Issue übernehmen möchtest, lege zunächst auf GitHub einen Kommentar dazu an mit der Info, dass Du daran arbeiten möchtest."
                 },
-                "title": "An einem 'Issue' arbeiten",
-                "text": "Wenn Du ein Issue übernehmen möchtest, lege zunächst auf GitHub einen Kommentar dazu an mit der Info, dass Du daran arbeiten möchtest."
-            },{
-                "image": {
-                    "title": "Fragen",
-                    "url": "/assets/img/icons/questions.svg",
-                    "alt": "Fragen-icon"
+                {
+                    "image": {
+                        "title": "Fragen",
+                        "url": "/assets/img/icons/questions.svg",
+                        "alt": "Fragen-icon"
+                    },
+                    "title": "Eine Frage stellen",
+                    "text": "Um einen Punkt zu klären, schreibe einfach einen Kommentar dazu. Jemand aus der Gruppe der verantwortlichen Personen wird darauf antworten."
                 },
-                "title": "Eine Frage stellen",
-                "text": "Um einen Punkt zu klären, schreibe einfach einen Kommentar dazu. Jemand aus der Gruppe der verantwortlichen Personen wird darauf antworten."
-            },{
-                "image": {
-                    "title": "Dokumentation",
-                    "url": "/assets/img/icons/documentation.svg",
-                    "alt": "Dokumentation-icon"
+                {
+                    "image": {
+                        "title": "Dokumentation",
+                        "url": "/assets/img/icons/documentation.svg",
+                        "alt": "Dokumentation-icon"
+                    },
+                    "title": "Code oder Dokumentation beitragen",
+                    "text": "Um einen Fehler zu beheben oder eine neue Funktion zu implementieren, muss der Beitrag unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/LICENSE' target='_blank' rel='noopener noreferrer'>Apache 2.0 License</a> lizensiert sein."
                 },
-                "title": "Code oder Dokumentation beitragen",
-                "text": "Um einen Fehler zu beheben oder eine neue Funktion zu implementieren, muss der Beitrag unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/LICENSE' target='_blank' rel='noopener noreferrer'>Apache 2.0 License</a> lizensiert sein."
-            },{
-                "image": {
-                    "title": "Verbesserung",
-                    "url": "/assets/img/icons/improvement.svg",
-                    "alt": "Verbesserung-icon"
+                {
+                    "image": {
+                        "title": "Verbesserung",
+                        "url": "/assets/img/icons/improvement.svg",
+                        "alt": "Verbesserung-icon"
+                    },
+                    "title": "Eine einfache Korrektur oder eine Verbesserung melden",
+                    "text": "Lege einen Pull Request an, in dem Du eine für den Code verantwortliche Person im entsprechenden Repository ansprichst (siehe z.&nbsp;B. die der Dokumentations-Repo <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODEOWNERS' target='_blank' rel='noopener noreferrer' title='Code Owners'>Code Owners</a>)."
                 },
-                "title": "Eine einfache Korrektur oder eine Verbesserung melden",
-                "text": "Lege einen Pull Request an, in dem Du eine für den Code verantwortliche Person im entsprechenden Repository ansprichst (siehe z.&nbsp;B. die der Dokumentations-Repo <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODEOWNERS' target='_blank' rel='noopener noreferrer' title='Code Owners'>Code Owners</a>)."
-            },{
-                "image": {
-                    "title": "Sicherheitsrisiko",
-                    "url": "/assets/img/icons/security.svg",
-                    "alt": "Sicherheitsrisiko-icon"
-                },
-                "title": "Ein wesentliches Sicherheitsrisiko melden",
-                "text": "Folge hierbei dem in der Sicherheitsrichtlinie beschriebenen Prozess. Die Richtlinie kann über die Registerkarte Security im jeweiligen Entwicklungs-Repository abgerufen werden."
-            }]
+                {
+                    "image": {
+                        "title": "Sicherheitsrisiko",
+                        "url": "/assets/img/icons/security.svg",
+                        "alt": "Sicherheitsrisiko-icon"
+                    },
+                    "title": "Ein wesentliches Sicherheitsrisiko melden",
+                    "text": "Folge hierbei dem in der Sicherheitsrichtlinie beschriebenen Prozess. Die Richtlinie kann über die Registerkarte Security im jeweiligen Entwicklungs-Repository abgerufen werden."
+                }
+            ]
         },
         "text": "Mache bei allen oben genannten Aktivitäten so viele Angaben wie möglich. Beachte bitte in jedem Fall die speziellen Anleitungen zur Mitarbeit im jeweiligen Repository.",
         "box": {

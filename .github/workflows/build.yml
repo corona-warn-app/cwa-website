@@ -26,5 +26,8 @@ jobs:
     - name: Install root dependencies
       uses: bahmutov/npm-install@v1
 
+    - name: Check JSON formatting
+      run: npm run-script check-format-json
+
     - name: Check if the page builds
       run: npm run-script build
