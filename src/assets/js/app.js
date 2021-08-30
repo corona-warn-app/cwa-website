@@ -240,41 +240,35 @@ $(document).ready(function(){
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
       });
 
-    // Screenshots screen: redirect to selected option's value after changing version in dropdown
-    $('select[name="archived-screenshots"]').on("change", function(e) {
-        window.location.href = e.target.value;
-    });
+      // glossary links onclick handler
+      $("a[href^='#glossary_']").on("click", function(e) {
+        let anchor = $(this).attr("href").replace(/^#/, '');
+        activateGlossary(anchor);
+      });
 
-    //   Add feature for tag auto-navigation with hash in the URL
-    const scrollTo = (hash) => {
-        location.hash = hash;
-    }
-    const checkHashAndChangeTab = () => {
-        const { hash } = window.location;
-        const hashDevice = hash.replace("#", "").split("_")[0]
-        const androidTab = document.querySelector('[href="#android_screenshots"]')
-        const iosTab = document.querySelector('[href="#ios_screenshots"]')
-        const androidContent = document.querySelector("#android_screenshots")
-        const iosContent = document.querySelector("#ios_screenshots")
-        const contentClasses = ["show", "active"]
-        if (hashDevice === "android") {
-            // Put tabs correctly
-            iosTab.classList.remove("active")
-            androidTab.classList.add("active")
-            // Show/hide content
-            iosContent.classList.remove(...contentClasses)
-            androidContent.classList.add(...contentClasses)
-            scrollTo(hash)
-        } else {
-            // Put tabs correctly
-            androidTab.classList.remove("active")
-            iosTab.classList.add("active")
-            // Show/hide content
-            androidContent.classList.remove(...contentClasses)
-            iosContent.classList.add(...contentClasses)
-            scrollTo(hash)
+      function activateGlossary(anchor) {
+        let hash = location.hash.replace(/^#/, '');
+
+        // if a link is clicked, get the hash from <a> instead from location.hash
+        if(anchor) { hash = anchor; }
+
+        if (hash && hash.indexOf("glossary_") > -1) {
+            // the glossary anchor
+            let glossaryAnchor = hash;
+
+            // determine letter with dynamic language
+            let glossaryLetter = $("#"+glossaryAnchor).closest("[role=tabpanel]").attr("id");
+
+            // switch tabs
+            $('#'+glossaryLetter.toUpperCase()+'-tab').addClass('active').siblings().removeClass('active');
+            $($('#'+glossaryLetter.toUpperCase()+'-tab').attr('href')).addClass('show active').siblings().removeClass('show active');
+
+            // go to glossary anchor
+            $(document).scrollTop( $("#"+glossaryAnchor).offset().top );
         }
-    }
-    checkHashAndChangeTab()
 
+      }
+
+      // onload jump to glossary
+      activateGlossary(); 
 });
