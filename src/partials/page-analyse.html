@@ -109,7 +109,7 @@
 								{{/if}}
 							{{/if}}
 							{{#if info}}
-								<button class="btn analyseBoard-info">
+								<button class="btn analyseBoard-info"  rel="{{info.title}}">
 									<img src="assets/img/icons/info.svg">
 								</button>
 							{{/if}}
@@ -142,7 +142,24 @@
 			{{/each}}
 		</div>
 	</div>
+	
 
+	
+	<div class="analyseModalBg"></div>
+	{{#each page-contents.board}}
+		<div class="analyseModal" rel="{{info.title}}">
+			<h2 class="headline analyseModal-title">
+				<button class="btn analyseModal-close">
+					<img src="assets/img/icons/close.svg">
+				</button>
+				{{info.title}}
+			</h2>
+			<div class="analyseModal-content">
+				{{#unless info.content}} content missing {{/unless}}
+				{{{info.content}}}
+			</div>
+		</div>
+	{{/each}}
 
 
 

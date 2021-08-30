@@ -114,5 +114,8 @@ export default {
       	bar: {
 
       	}
+  	},
+  	tooltip: {
+      enabled: false
   	}
 };
