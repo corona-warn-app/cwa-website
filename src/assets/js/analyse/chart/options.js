@@ -4,9 +4,9 @@ const lang = (documentLang == "de")? 'de-DE': 'en-US';
 
 export default {
 	stroke: {
-		width: 2
+		width: 2,
+	    dashArray: [0, 0, 0, 5, 5, 5]
 	},
-	colors: ["#bd3a63", "#d4eaf7", "#e8d0cd"],
 	series: [],
 	chart: {
 		id:"chart",

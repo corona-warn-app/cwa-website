@@ -6,7 +6,8 @@
 			{{page-contents.topic}}
 		</div>
 	{{/if}}
-	<div class="row mb-5">
+
+	<div class="row mb-4">
 		{{#if page-contents.title}}
 			<div class="col-auto mr-auto">
 				<h1 class="headline headline-heavy">
@@ -25,13 +26,12 @@
 	</div>
 	
 
-
-
 	<div class="analyseRange">
-		
-		<div class="analyseRangePicker-label">
-			Zeitraum:
-		</div>
+		{{#if page-contents.range.picker.timerange}}
+			<div class="analyseRangePicker-label">
+				{{page-contents.range.picker.timerange}}:
+			</div>
+		{{/if}}
 		<div class="analyseRangePicker">
 			<button class="btn analyseRangePicker-btn ">
 				<span>&nbsp;</span>
@@ -155,7 +155,7 @@
 		<div class="analyseModal" rel="{{info.title}}">
 			<h2 class="headline analyseModal-title">
 				<button class="btn analyseModal-close">
-					<img src="assets/img/icons/close.svg">
+					<img src="assets/img/icons/Close.svg">
 				</button>
 				{{info.title}}
 			</h2>

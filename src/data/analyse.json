@@ -1,10 +1,11 @@
 {
-    "topic": "Analyse",
-    "title": "Corona-Warn-App (CWA) : Kennzahlen",
+    "topic": "Analysis",
+    "title": "Corona-Warn-App (CWA) : Key figures",
     "range":{
         "picker": {
+            "timerange": "Period",
             "inputs": {
-                "from": "froms",
+                "from": "from",
                 "to": "to",
                 "placeholder": "mm/dd/yyyy"
             },
@@ -13,22 +14,45 @@
         },
         "radio": [
             {
-                "label": "Gesamter Zeitraum",
+                "label": "Entire period",
                 "value": "all"
             },
             {
-                "label": "Letzte 6 Monate",
+                "label": "Last 6 months",
                 "value": "6months"
             },
             {
-                "label": "Letzte 28 Tage",
+                "label": "Last 28 days",
                 "value": "1month"
             }
         ]
     },
+    "switchStart": "2",
+    "switch": [
+        {
+            "id": "2",
+            "label": "Daily"
+        },
+        {
+            "id": "3",
+            "label": "Weekly"
+        },
+        {
+            "id": "4",
+            "label": "7-day mean"
+        },
+        {
+            "id": "1",
+            "label": "Cumulative"
+        }
+    ],
+    "allExport": {
+        "title": "Export all data",
+        "link": "#"
+    },
     "boards": {
         "loading": "Loading...",
-        "total": "Total Anzahl bis gestern"
+        "total": "Total number until yesterday"
     },
     "board": [
         {
@@ -39,7 +63,7 @@
                 "4": "7-Tage-Mittelwert Teilungen"
             },
             "export": {
-                "title": "Exportieren",
+                "title": "Export",
                 "link": "#"
             },
             "info": {
@@ -67,7 +91,7 @@
                 "4": "7-Tage-Mittelwert Testsergebnisse"
             },
             "export": {
-                "title": "Exportieren",
+                "title": "Export",
                 "link": "#"
             },
              "info": {
@@ -95,7 +119,7 @@
                 "4": "7-Tage-Mittelwert Downloads"
             },
             "export": {
-                "title": "Exportieren",
+                "title": "Export",
                 "link": "#"
             },
             "info": {
@@ -112,7 +136,7 @@
                 "4": "7-Tage-Mittelwert Warnungen"
             },
             "export": {
-                "title": "Exportieren",
+                "title": "Export",
                 "link": "#"
             },
             "info": {
@@ -246,30 +270,7 @@
 
 
     },
-    "switchStart": "2",
-    "switch": [
-        {
-            "id": "2",
-            "label": "Täglich"
-        },
-        {
-            "id": "3",
-            "label": "Wöchentlich"
-        },
-        {
-            "id": "4",
-            "label": "7-Tage-Mittelwert"
-        },
-        {
-            "id": "1",
-            "label": "Kumuliert"
-        }
-    ],
-    "allExport": {
-        "title": "Alle Daten exportieren",
-        "link": "#"
-    },
-    "moreHeadline": "Weitere Dashboards",
+    "moreHeadline": "More dashboards",
     "moreLinks": [
         {
             "title": "Dashboard link 1",

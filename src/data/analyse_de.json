@@ -3,6 +3,7 @@
     "title": "Corona-Warn-App (CWA) : Kennzahlen",
     "range":{
         "picker": {
+            "timerange": "Zeitraum",
             "inputs": {
                 "from": "Von",
                 "to": "bis",
@@ -25,6 +26,29 @@
                 "value": "1month"
             }
         ]
+    },
+    "switchStart": "2",
+    "switch": [
+        {
+            "id": "2",
+            "label": "Täglich"
+        },
+        {
+            "id": "3",
+            "label": "Wöchentlich"
+        },
+        {
+            "id": "4",
+            "label": "7-Tage-Mittelwert"
+        },
+        {
+            "id": "1",
+            "label": "Kumuliert"
+        }
+    ],
+    "allExport": {
+        "title": "Alle Daten exportieren",
+        "link": "#"
     },
     "boards": {
         "loading": "Loading...",
@@ -247,29 +271,6 @@
 
         
         
-    },
-    "switchStart": "2",
-    "switch": [
-        {
-            "id": "2",
-            "label": "Täglich"
-        },
-        {
-            "id": "3",
-            "label": "Wöchentlich"
-        },
-        {
-            "id": "4",
-            "label": "7-Tage-Mittelwert"
-        },
-        {
-            "id": "1",
-            "label": "Kumuliert"
-        }
-    ],
-    "allExport": {
-        "title": "Alle Daten exportieren",
-        "link": "#"
     },
     "moreHeadline": "Weitere Dashboards",
     "moreLinks": [
