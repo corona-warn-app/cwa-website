@@ -1,5 +1,6 @@
 .page-analyse{
 	background: #edf2f7;
+	overflow-x: hidden;
 
 	.header .section_bg-white{
 		background: #edf2f7;
@@ -10,6 +11,11 @@
 		&:focus{
 			box-shadow: none;
 		}
+	}
+
+	&.fullscreen{
+		overflow: hidden !important;
+
 	}
 }
 
@@ -41,6 +47,7 @@
 			vertical-align: middle;	
 			margin-right: 35px;
 			margin-bottom: 16px;
+			max-width: 100%;
 
 			&-label{
 				display: inline-block;
@@ -60,10 +67,12 @@
 				text-align: left;
 				width: 305px;
 				padding: 16px;
+				padding-right: 40px;
 				font-weight: 500;
 				font-size: 15px;
 				line-height: 18px;
 				color: #3A3D3E;
+				max-width: 100%;
 
 				&:focus{
 					box-shadow: none;
@@ -199,6 +208,8 @@
 		font-size: 0;
 		position: relative;
 		white-space: nowrap;
+		overflow: hidden;
+		max-width: 100%;
 
 		&-bg{
 			position: absolute;
@@ -226,17 +237,40 @@
 				color: #fff;
 			}
 		}
+
+
+		@media (max-width: $screen-md){
+			&-item{
+				padding: 10px 10px;
+			}
+		}
+
+		@media (max-width: $screen-sm){
+			
+			&-item{
+				padding: 8px 6px;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+
+
 	}
 
 	&More{
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 78px;
-		margin-top: 48px; 
+		margin-bottom: 62px;
+		margin-top: 32px; 
+		flex-wrap: wrap;
+		margin-left: -16px;
+		margin-right: -16px;
+
 		a{
 			font-size: 15px;
 			line-height: 18px;
 			font-weight: 700;
+			padding: 16px;
 
 			img{
 				width: 14px;
@@ -244,6 +278,11 @@
 				transform: translateX(.3em);
 			}
 		}
+
+		@media (max-width: $screen-md){
+			flex-wrap: wrap;
+		}
+
 	}
 
 
@@ -284,6 +323,21 @@
 		padding: 24px;
 		position: relative;
 
+		&.fullscreen{
+			border-radius: 0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			z-index: 9999;
+		}
+
+
+		@media (max-width: $screen-md){
+			padding: 16px;
+		}
+
 		&_tabs{
 			margin-bottom: 24px + 34;
 		}
@@ -302,6 +356,7 @@
 			margin-left: auto;
 			font-weight: bold;
 			font-size: 13px;
+			padding-left: 16px;
 		}
 
 		&-info{
@@ -310,7 +365,38 @@
 			margin-right: -8px;
 			min-height: 0;
 			line-height: 0;
+
+			img{
+				width: 24px;
+				height: 24px;
+			}
 		}
+
+		&-fullscreen{
+			border: 0;
+			padding: 8px;
+			margin-right: -8px;
+			min-height: 0;
+			line-height: 0;
+			display: none;
+
+			img{
+				width: 24px;
+				height: 24px;
+			}
+			
+
+			&.fullscreen{
+				display: block;
+			}
+
+			@media (max-width: $screen-md){
+				display: block;
+			}
+
+
+		}
+
 
 		&-total{
 			margin-top: 24px;

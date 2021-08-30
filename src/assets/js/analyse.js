@@ -10,6 +10,7 @@ import date$ from './analyse/date.js';
 import switchId$ from './analyse/switch.js';
 import tabs$ from './analyse/tabs.js';
 
+import fullscreen from './analyse/fullscreen.js';
 import modal from './analyse/modal.js';
 import chart from './analyse/chart.js';
 import totalValues from './analyse/totalValues.js';
