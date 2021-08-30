@@ -9,8 +9,8 @@
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
     {{/if}}
-    <meta property="og:title content="" />
-    <meta property="og:description content="" />
+    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
