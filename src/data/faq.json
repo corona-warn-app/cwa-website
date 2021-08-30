@@ -2128,14 +2128,14 @@
                 {
                     "term": "Proof of vaccination",
                     "anchor": "vaccination_proof",
-                    "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital => vaccination certificate."
+                    "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital <a href='#glossary_vaccination_certificate'>vaccination certificate</a>."
                 }
             ],
             "R": [
                 {
                     "term": "Recovery Certificate",
                     "anchor": "recovery_certificate",
-                    "description": "The certificate of recovery is a => digital certificate issued for a person who has demonstrably recovered from COVID-19 and proved immunity by a PCR test."
+                    "description": "The certificate of recovery is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has demonstrably recovered from COVID-19 and proved immunity by a PCR test."
                 }
             ],
             "S": [
@@ -2149,7 +2149,7 @@
                 {
                     "term": "Test Certificate",
                     "anchor": "test_certificate",
-                    "description": "A test certificate is a => digital certificate issued for a person who has completed a COVID-19 test with a negative result."
+                    "description": "A test certificate is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has completed a COVID-19 test with a negative result."
                 }
             ],
             "V": [
@@ -2161,12 +2161,12 @@
                 {
                     "term": "Vaccination certificate",
                     "anchor": "vaccination_certificate",
-                    "description": "The vaccination certificate is a => digital certificate issued for a person who has received a vaccination with a vaccine approved in the EU. Each vaccination certificate documents exactly one vaccination event (one dose). <br/><br/>The vaccination certificate represents a digital form of a => proof of vaccination."
+                    "description": "The vaccination certificate is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has received a vaccination with a vaccine approved in the EU. Each vaccination certificate documents exactly one vaccination event (one dose). <br/><br/>The vaccination certificate represents a digital form of a <a href='#glossary_vaccination_proof'>proof of vaccination</a>."
                 },
                 {
                     "term": "Verifier-App / Checking a certificate / Verifying a certificate",
                     "anchor": "verify",
-                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the CovPassCheck app), the check app. <br/><br/> Individual countries may have different implementations of the check app. However all check apps use the same - consolidated on a European gateway - keys of the participating countries as well as the stored => Business Rules. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
+                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the CovPassCheck app), the check app. <br/><br/> Individual countries may have different implementations of the check app. However all check apps use the same - consolidated on a European gateway - keys of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
                 }
             ]
         },
