@@ -26,16 +26,21 @@
 		color: #1294D4;
 	}
 
+	&Export{
+		float: right;	
+	}
+
 
 	&Range{
 		font-size: 0;
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 
 		&Picker{
 			position: relative;
 			display: inline-block;
 			vertical-align: middle;	
 			margin-right: 35px;
+			margin-bottom: 16px;
 
 			&-label{
 				display: inline-block;
@@ -44,6 +49,7 @@
 				line-height: 18px;
 				vertical-align: middle;
 				margin-right: 16px;
+				margin-bottom: 16px;
 			}
 
 			&-btn{
@@ -154,6 +160,7 @@
 			margin-right: 24px;
 			cursor: pointer;
 			overflow: hidden;
+			margin-bottom: 16px;
 
 			&-box{
 				width: 24px;

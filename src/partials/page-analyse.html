@@ -2,15 +2,28 @@
 <div class="container section_bg-light">
 
 	{{#if page-contents.topic}}
-		<div class="analyseTopic">
+		<div class="analyseTopic mb-3">
 			{{page-contents.topic}}
 		</div>
 	{{/if}}
-	{{#if page-contents.title}}
-		<h1 class="headline headline-heavy mt-3 mb-5">
-			{{page-contents.title}}
-		</h1>
-	{{/if}}
+	<div class="row mb-5">
+		{{#if page-contents.title}}
+			<div class="col-auto mr-auto">
+				<h1 class="headline headline-heavy">
+					{{page-contents.title}}
+				</h1>
+			</div>
+		{{/if}}
+		{{#if page-contents.allExport}}
+			<div class="col-auto">
+				<a class="btn btn-secondary analyseExport" href="{{page-contents.allExport.link}}" target="_blank" rel="noopener noreferrer">
+					{{page-contents.allExport.title}}
+					<img src="assets/img/icons/download.svg" class="ml-1">
+				</a>
+			</div>
+		{{/if}}
+	</div>
+	
 
 
 
@@ -59,27 +72,16 @@
 	</div>
 
 
-	
-	<div class="row">
-		<div class="col-8">
-			<div class="analyseSwitch">
-				<div class="analyseSwitch-bg"></div>
-				{{#each page-contents.switch}}
-				<button class="btn analyseSwitch-item {{#ifequal id ../page-contents.switchStart}}first{{/ifequal}}" data-id="{{id}}">
-					{{label}}
-				</button>
-				{{/each}}
-			</div>
+	{{#if page-contents.switch}}
+		<div class="analyseSwitch">
+			<div class="analyseSwitch-bg"></div>
+			{{#each page-contents.switch}}
+			<button class="btn analyseSwitch-item {{#ifequal id ../page-contents.switchStart}}first{{/ifequal}}" data-id="{{id}}">
+				{{label}}
+			</button>
+			{{/each}}
 		</div>
-		{{#if page-contents.allExport}}
-			<div class="col-4 text-right">
-				<a class="btn btn-secondary" href="{{page-contents.allExport.link}}" target="_blank" rel="noopener noreferrer">
-					{{page-contents.allExport.title}}
-					<img src="assets/img/icons/download.svg" class="ml-1">
-				</a>
-			</div>
-		{{/if}}
-	</div>
+	{{/if}}
 	
 
    
