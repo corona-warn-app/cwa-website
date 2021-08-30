@@ -26,6 +26,18 @@ $(() => {
 	$(document).on("change",".analyseRangeRadio input", function(e){
 		date$.next($(this).val().split(","));
 	});
+
+
+	$(document).on("focus",".analyseRangePicker-input", function(e){
+		$(this).val("")
+	});
+
+	$(document).on("blur",".analyseRangePicker-input", function(e){
+		const name = $(this).attr("name")
+		const dateFromPicker = (name == "start")? picker.getStartDate().dateInstance: picker.getEndDate().dateInstance; 
+		$(this).val(DateTime.fromJSDate(dateFromPicker).toLocaleString(dateLocaleFormat));
+	});
+	
 	
 
 	$('.analyseRangePicker-input').each(function(){
@@ -35,20 +47,21 @@ $(() => {
 		    dateMin: '2020-01-01',
     		dateMax: now.toISODate(),
 		    datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
-		    // onValueChanged: function (e) {
-		 //    	if(e.target.rawValue.length != 8) return;
-		 //    	const date = DateTime.fromFormat(e.target.value, "D");
-		 //    	var dateFromPicker; 
-		 //    	switch(e.target.name){
-		 //    		case "start":
-		 //    			dateFromPicker = picker.getStartDate().dateInstance;
-		 //    			break;
-		 //    		case "end":
-		 //    			dateFromPicker = picker.getEndDate().dateInstance;
-		 //    			break;
-		 //    	}
-		 //    	console.log(date,  dateFromPicker, DateTime.fromJSDate(dateFromPicker), DateTime.fromJSDate(picker.getEndDate().dateInstance));
-			// }
+		    onValueChanged: function(e) {
+		    	if(e.target.rawValue.length != 8) return;
+		    	const dateInput = DateTime.fromFormat(e.target.value, "D");
+		    	const dateFromPicker = (e.target.name == "start")? picker.getEndDate().dateInstance: picker.getStartDate().dateInstance; 
+		    	const dates = [dateInput];
+
+		    	if(dateInput > dateFromPicker){
+					dates.unshift(dateFromPicker);
+		 		}else{
+		 			dates.push(dateFromPicker);
+		 		}
+
+		 		picker.setDateRange(...dates);
+		 		picker.gotoDate(dates[0]);
+			}
 		});
 	});
 

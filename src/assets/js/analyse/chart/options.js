@@ -50,7 +50,8 @@ export default {
 		show: true,
 		forceNiceScale: true,
 		labels: {
-			minWidth: 50,
+			minWidth: 0,
+			maxWidth: 60,
 			formatter: value => {
 				return new Intl.NumberFormat(lang).format(value)
 			},
