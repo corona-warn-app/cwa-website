@@ -51,9 +51,16 @@ export default {
 		forceNiceScale: true,
 		labels: {
 			minWidth: 0,
-			maxWidth: 60,
+			maxWidth: 45,
 			formatter: value => {
-				return new Intl.NumberFormat(lang).format(value)
+				let formatedValue;
+				if(value >= 1e6){
+					formatedValue = new Intl.NumberFormat(lang).format(value/1e6);
+					formatedValue = (documentLang == "de")? `${formatedValue} Mio.`:  `${formatedValue} mil.`
+				}else{
+					formatedValue = new Intl.NumberFormat(lang).format(value)
+				}
+				return formatedValue;
 			},
 			style:{
 				colors: ["#898B8B"],
