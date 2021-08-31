@@ -63,7 +63,13 @@ export default function(e, i){
 		chartConfigObj = _get(chartConfigObj, [(opt.chart.id == "chart1")? e.tabs1: (opt.chart.id == "chart2")? e.tabs2:[]], []);
 	}
 
-	opt.chart.type =  (e.data.range <= barThreshold)? _get(chartConfigObj, ["type"], "line"): "line";
+	opt.chart.type = _get(chartConfigObj, ["type"], "line");
+	if(opt.chart.type == "bar"){
+		opt.chart.type =  (e.data.range <= barThreshold)? opt.chart.type: "line";
+	}
+	
+
+
 	opt.chart.stacked = _get(chartConfigObj, ["stacked"], false);
 
 	const chartObj = _get(chartConfigObj, ["series"], []);

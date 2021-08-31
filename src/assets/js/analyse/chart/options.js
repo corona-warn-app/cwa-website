@@ -50,7 +50,7 @@ export default {
 		show: true,
 		forceNiceScale: true,
 		labels: {
-			minWidth: 0,
+			minWidth: 45,
 			maxWidth: 45,
 			formatter: value => {
 				let formatedValue;
