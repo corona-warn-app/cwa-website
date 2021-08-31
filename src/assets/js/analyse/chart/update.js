@@ -51,6 +51,10 @@ function timeFN(value, range, mode){
 
 
 export default function(e, i){
+
+	const mode = (e.switchId == 3)? "weekly": "daily"; 
+	const barThreshold = (mode == "daily")? 90: 400;
+
 	let opt = Object.assign({}, chartOptions);
 	opt.chart.id = `chart${i}`;
 
@@ -59,14 +63,12 @@ export default function(e, i){
 		chartConfigObj = _get(chartConfigObj, [(opt.chart.id == "chart1")? e.tabs1: (opt.chart.id == "chart2")? e.tabs2:[]], []);
 	}
 
-	opt.chart.type =  _get(chartConfigObj, ["type"], "line");
+	opt.chart.type =  (e.data.range <= barThreshold)? _get(chartConfigObj, ["type"], "line"): "line";
 	opt.chart.stacked = _get(chartConfigObj, ["stacked"], false);
 
 	const chartObj = _get(chartConfigObj, ["series"], []);
-	const mode = (e.switchId == 3)? "weekly": "daily"; 
-	const barThreshold = (mode == "daily")? 90: 400;
-
-	_set(opt, "xaxis.labels.formatter", (value) => timeFN(value, e.data.range, mode));
+	
+	_set(opt, "xaxis.labels.formatter", value => timeFN(value, e.data.range, mode));
 
 	opt.series = chartObj.map((obj)=>{
 		const index = getIndex(e.data, mode, obj.data);

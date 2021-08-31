@@ -70,20 +70,24 @@ $(() => {
 		return (date)? DateTime.fromJSDate(date.dateInstance).toLocaleString(dateLocaleFormat): "";
 	}
 
+	const pickerCols = (window.matchMedia("(max-width: 992px)").matches)? 1: 2;
+
 	const picker = new Litepicker({ 
 		element: document.querySelector('.analyseRangePicker-picker'),
 		inlineMode: true,
-		autoApply: false,
 		singleMode: false,
 		lang: documentLang,
-		numberOfColumns: 2,
-		numberOfMonths: 2,
+		numberOfColumns: pickerCols,
+		numberOfMonths: pickerCols,
 		minDate: '2020-01-01', 
 		maxDate: now, 
 		scrollToDate: false,
 		autoApply: true,
 		format: "YYYY-MM-DD",
-		buttonText: {"previousMonth":'<svg width="17" height="16" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg"><path style="transform-origin: center;transform: rotate(90deg);" d="M14.8236 6.33657L9.00004 12L3.17651 6.33657L4.55087 5L9.00004 9.34951L13.4492 5L14.8236 6.33657Z" fill="#3A3D3E"/></svg>',"nextMonth":'<svg width="17" height="16" viewBox="0 0 17 16"  xmlns="http://www.w3.org/2000/svg"><path style="transform-origin: center;transform: rotate(-90deg);" d="M14.8236 6.33657L9.00004 12L3.17651 6.33657L4.55087 5L9.00004 9.34951L13.4492 5L14.8236 6.33657Z" fill="#3A3D3E"/></svg>'},
+		buttonText: {
+			"previousMonth":'<svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.8912 21L5.75 12.75L13.8912 4.5L15.8125 6.447L9.56007 12.75L15.8125 19.053L13.8912 21Z" fill="#006082"/></svg>',
+			"nextMonth":'<svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.10882 3L17.25 11.25L9.10882 19.5L7.1875 17.553L13.4399 11.25L7.1875 4.947L9.10882 3Z" fill="#006082"/></svg>'
+		},
 		setup: (picker) => {
 
 			picker.on('clear:selection', () => {

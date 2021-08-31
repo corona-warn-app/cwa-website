@@ -105,12 +105,28 @@
 				padding: 32px 48px;
 				z-index: 1000;
 				display: none;
+
+				@media (max-width: $screen-sm){
+					position: fixed;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					overflow: auto;
+					padding: 32px 0;
+				}
 			}
 
 			
 
 			&.active &-layer{
 				display: block;
+				@media (max-width: $screen-sm){
+					display: flex;
+				}
 			}
 
 			&-actions{
@@ -124,6 +140,10 @@
 
 			}
 
+			&-cancel{
+				color: #006082;
+			}
+
 			&-picker{
 				font-size: 16px;
 			}
@@ -131,7 +151,26 @@
 			&-inputs{
 				font-size: 16px;
 				line-height: 30px;
-				margin-bottom: 48px;
+				margin-bottom: 24px;
+				display: flex;
+
+				&-set{
+					white-space: nowrap;
+					margin-bottom: 12px;
+				}
+
+				&-label{
+					display: inline-block;
+					@media (max-width: $screen-lg){
+						min-width: 40px;
+					}
+				}
+
+				@media (max-width: $screen-lg){
+					flex-direction: column;
+				}
+
+
 			}
 
 			&-input{
@@ -526,11 +565,18 @@
 
 
 :root {
+	--litepicker-day-color-hover: #3A3D3E;
 	--litepicker-month-weekday-color: #3A3D3E;
 	--litepicker-day-width: 48px;
 	--litepicker-is-start-color-bg: #006082;
 	--litepicker-is-in-range-color: #D4EAF7;
 	--litepicker-is-end-color-bg: var(--litepicker-is-start-color-bg);
+		
+
+
+	@media (max-width: $screen-sm){
+		--litepicker-day-width: 40px;
+	}
 }
 
 .litepicker{
@@ -574,6 +620,11 @@
 				width: 30px;
 			}
 		}
+
+
+		@media (max-width: $screen-lg){
+			width: var(--litepicker-month-width);
+		}
 	}
 
 	.container__days{
@@ -583,6 +634,20 @@
 			padding: 0;
 			margin: 2px 0;
 			font-size: 16px;
+
+			&.is-start-date,
+			&.is-end-date{
+				border-radius: 6px;
+			}
+
+			&:hover{
+				background: #fff;
+				border-radius: 6px;
+				color: #3A3D3E;
+				box-shadow: inset 0 0 0 1px #285F7F;
+
+
+			}
 		}	
 	}
 

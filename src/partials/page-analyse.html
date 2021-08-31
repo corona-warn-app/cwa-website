@@ -40,10 +40,18 @@
 			<div class="analyseRangePicker-layer">
 				{{#if page-contents.range.picker.inputs}}
 					<div class="analyseRangePicker-inputs">
-						{{page-contents.range.picker.inputs.from}}
-						<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.placeholder}}">
-						{{page-contents.range.picker.inputs.to}}
-						<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.placeholder}}">
+						<div class="analyseRangePicker-inputs-set">
+							<div class="analyseRangePicker-inputs-label">
+								{{page-contents.range.picker.inputs.from}}
+							</div>
+							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.placeholder}}">
+						</div>
+						<div class="analyseRangePicker-inputs-set">
+							<div class="analyseRangePicker-inputs-label">
+								{{page-contents.range.picker.inputs.to}}
+							</div>
+							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.placeholder}}">
+						</div>
 					</div>
 				{{/if}}
 				<div class="analyseRangePicker-picker"></div>
