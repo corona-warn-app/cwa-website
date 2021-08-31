@@ -71,6 +71,7 @@ $(() => {
 	}
 
 	const pickerCols = (window.matchMedia("(max-width: 992px)").matches)? 1: 2;
+	console.log("pickerCols", pickerCols)
 
 	const picker = new Litepicker({ 
 		element: document.querySelector('.analyseRangePicker-picker'),
