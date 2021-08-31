@@ -28,13 +28,13 @@
             
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
-                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>
+                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screenshots.tab-title}}</a>
+                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screenshots.tab-title}}</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="android_screenshots">
-                    {{#each page-contents.android-screnshots.sections}}
+                    {{#each page-contents.android-screenshots.sections}}
                         <div class="row">
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
                             {{#each images}}
@@ -67,7 +67,7 @@
                     {{/each}}
                 </div>
                 <div class="tab-pane fade" id="ios_screenshots">
-                    {{#each page-contents.ios-screnshots.sections}}
+                    {{#each page-contents.ios-screenshots.sections}}
                     <div class="row">
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
                         {{#each images}}
