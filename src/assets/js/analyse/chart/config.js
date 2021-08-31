@@ -71,15 +71,15 @@ export default {
 				},
 				{
 					color: "#D68101",
-					data: "app_downloads_7days_sum"
+					data: "app_downloads_daily"
 				},
 				{
 					color: "#6A1B4D",
-					data: "app_downloads_android_7days_sum"
+					data: "app_downloads_android_daily"
 				},
 				{
 					color: "#B2578D",
-					data: "app_downloads_ios_7days_sum"
+					data: "app_downloads_ios_daily"
 				}
 			]
 		}	
@@ -271,15 +271,15 @@ export default {
 					},
 					{
 						color: "#D68101",
-						data: "tests_total_7days_sum"
+						data: "tests_total_daily"
 					},
 					{
 						color: "#892405",
-						data: "tests_pcr_total_7days_sum"
+						data: "tests_pcr_total_daily"
 					},
 					{
 						color: "#D55127",
-						data: "tests_rat_total_7days_sum"
+						data: "tests_rat_total_daily"
 					}
 				],
 			},
@@ -299,15 +299,15 @@ export default {
 					},
 					{
 						color: "#FF774C",
-						data: "tests_pcr_positive_7days_sum"
+						data: "tests_pcr_positive_daily"
 					},
 					{
 						color: "#02B290",
-						data: "tests_pcr_negative_7days_sum"
+						data: "tests_pcr_negative_daily"
 					},
 					{
 						color: "#CAD5E2",
-						data: "tests_pcr_invalide_7days_sum"
+						data: "tests_pcr_invalide_daily"
 					}
 				]
 			},
@@ -327,15 +327,15 @@ export default {
 					},
 					{
 						color: "#FF774C",
-						data: "tests_rat_positive_7days_sum"
+						data: "tests_rat_positive_daily"
 					},
 					{
 						color: "#02B290",
-						data: "tests_rat_negative_7days_sum"
+						data: "tests_rat_negative_daily"
 					},
 					{
 						color: "#CAD5E2",
-						data: "tests_rat_invalide_7days_sum"
+						data: "tests_rat_invalide_daily"
 					}
 				]
 			}
@@ -509,15 +509,15 @@ export default {
 					},
 					{
 						color: "#D68101",
-						data: "qr_teletan_redeemable_7days_sum"
+						data: "qr_teletan_redeemable_daily"
 					},
 					{
 						color: "#6A1B4D",
-						data: "qr_redeemable_7days_sum"
+						data: "qr_redeemable_daily"
 					},
 					{
 						color: "#B2578D",
-						data: "teletan_redeemable_7days_sum"
+						data: "teletan_redeemable_daily"
 					}
 				]
 			},
@@ -533,11 +533,11 @@ export default {
 					},
 					{
 						color: "#57DAFF",
-						data: "qr_not_redeemed_7days_sum"
+						data: "qr_not_redeemed_daily"
 					},
 					{
 						color: "#3BA8CE",
-						data: "qr_redeemed_7days_sum"
+						data: "qr_redeemed_daily"
 					}
 				]
 			},
@@ -553,11 +553,11 @@ export default {
 					},
 					{
 						color: "#57DAFF",
-						data: "teletan_not_redeemed_7days_sum"
+						data: "teletan_not_redeemed_daily"
 					},
 					{
 						color: "#3BA8CE",
-						data: "teletan_redeemed_7days_sum"
+						data: "teletan_redeemed_daily"
 					}
 				]
 			}
@@ -577,7 +577,8 @@ export default {
 				}
 			],
 			"stacked": true,
-			"type":"area"
+			"type":"area",
+			"ghostTooltip": "ppa_total_warnings_cumulated"
 		},
 		"2": {
 			"series": [
@@ -591,7 +592,8 @@ export default {
 				}
 			],
 			"stacked": true,
-			"type":"bar"
+			"type":"bar",
+			"ghostTooltip": "ppa_total_warnings_daily"
 		},
 		"3": {
 			"series": [
@@ -605,7 +607,8 @@ export default {
 				}
 			],
 			"stacked": true,
-			"type":"bar"
+			"type":"bar",
+			"ghostTooltip": "ppa_total_warnings_sum"
 		},
 		"4": {
 			"series": [
@@ -619,11 +622,11 @@ export default {
 				},
 				{
 					color: "#FF6666",
-					data: "ppa_risk_red_7days_sum"
+					data: "ppa_risk_red_daily"
 				},
 				{
 					color: "#50DBB4",
-					data: "ppa_risk_green_7days_sum"
+					data: "ppa_risk_green_daily"
 				}
 			]
 		}		
