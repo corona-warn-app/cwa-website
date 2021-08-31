@@ -220,14 +220,14 @@ $(document).ready(function(){
         })
     }
 
-    // smooth scrolling to anchor tag when clicking anchor link
-    //$('a[href^="#"]').on('click', function (event) {
-    //    event.preventDefault();
-    //
-    //    $('html, body').animate({
-    //        scrollTop: $($.attr(this, 'href')).offset().top
-    //    }, 600);
-    //});
+    // mail protection using js
+    // mails are written like this:
+    // <a href="bob.smith...example...com" class="email">bob.smith...example...com</a>
+    $(".email").each(function() {
+        $(this).html( $(this).html().replace("...", "@").replace(/\.\.\./g, ".") );
+        $(this).attr( "href", "mailto:" + $(this).attr("href").replace("...", "@").replace(/\.\.\./g, ".") );
+    });
+
 
     // simple jquery tabs
     $('.nav-tabs a').click(function(e) {
