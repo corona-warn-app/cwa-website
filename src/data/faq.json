@@ -166,7 +166,7 @@
                     },
                     {
                         "title": "Why does the Corona-Warn-App on version 2.8 show that my certificate couldn't be validated although the previous version showed my certificate as valid?",
-                        "anchor": "dcc_validity_check_change",
+                        "anchor": "dcc_no_rules",
                         "active": true,
                         "textblock": [
                             "With version 2.8 the behavior of the certificate validity check has changed. Entry rules for travelers have been set up by all EU member countries, but until today only a few countries provided entry rules in machine-readable format which Corona-Warn-App can make use of. Before version 2.8, when there were no rules available to be downloaded for a certain country, after a check Corona-Warn-App displayed 'Certificate Valid' and explained in the following text, that for this country no rules were provided/could have been checked. 'Certificate Valid' referred to 'Technical Validity' in this case (more information on what the 'Technical Validity' is can be found in <a href='#eu_dcc_validity' target='_blank' rel='noopener noreferrer'>this</a> FAQ entry).",
