@@ -57,31 +57,20 @@
     "board": [
         {
             "title": {
-                "1": "Teilverhalten",
-                "2": "Teilverhalten",
-                "3": "Teilungen nach KW",
-                "4": "7-Tage-Mittelwert Teilungen"
+                "1": "Downloads",
+                "2": "Downloads",
+                "3": "Downloads nach KW",
+                "4": "7-Tage-Mittelwert Downloads"
             },
             "export": {
                 "title": "Export",
                 "link": "#"
             },
             "info": {
-                "title": "Teilverhalten",
-                "content": ""
+                "title": "Downloads",
+                "content": "Seit dem 16.06.2020 steht die Corona-Warn-App als Download für Android und iOS Geräte zur Verfügung. <br><br> Die Downloadzahlen zeigen an, wie oft die App heruntergeladen wurde. Durch den hohen Datenschutzstandard der Corona-Warn-App können aus diesen Zahlen keine Rückschlüsse bezüglich noch aktiver Nutzer gezogen werden."
             },
-            "totalKey":"persons_who_shared_keys_daily",
-            "tabs": [
-                {
-                    "label": "Gesamt"
-                },
-                {
-                    "label": "QR Codes"
-                },
-                {
-                    "label": "TeleTans"
-                }
-            ] 
+            "totalKey": "app_downloads_cumulated"
         },
         {
             "title": {
@@ -113,20 +102,31 @@
         },
         {
             "title": {
-                "1": "Downloads",
-                "2": "Downloads",
-                "3": "Downloads nach KW",
-                "4": "7-Tage-Mittelwert Downloads"
+                "1": "Teilverhalten",
+                "2": "Teilverhalten",
+                "3": "Teilungen nach KW",
+                "4": "7-Tage-Mittelwert Teilungen"
             },
             "export": {
                 "title": "Export",
                 "link": "#"
             },
             "info": {
-                "title": "Downloads",
-                "content": "Seit dem 16.06.2020 steht die Corona-Warn-App als Download für Android und iOS Geräte zur Verfügung. <br><br> Die Downloadzahlen zeigen an, wie oft die App heruntergeladen wurde. Durch den hohen Datenschutzstandard der Corona-Warn-App können aus diesen Zahlen keine Rückschlüsse bezüglich noch aktiver Nutzer gezogen werden."
+                "title": "Teilverhalten",
+                "content": ""
             },
-            "totalKey": "app_downloads_cumulated"
+            "totalKey":"qr_redeemable_cumulated",
+            "tabs": [
+                {
+                    "label": "Gesamt"
+                },
+                {
+                    "label": "QR Codes"
+                },
+                {
+                    "label": "TeleTans"
+                }
+            ] 
         },
         {
             "title": {
