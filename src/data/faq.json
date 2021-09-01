@@ -21,12 +21,12 @@
                         "active": true,
                         "textblock": [
                             "The technical hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with exposure logging. You can reach the technical hotline from Monday to Saturday from 7 a.m. to 10 p.m. (except on German national holidays), and it is free of charge for you within Germany.",
-                            "The TAN hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) will help you to enter the TAN if you have a positive test result and if you have not received a TAN or document with a PCR-Test QR code. The TAN hotline is available 24 hours a day, seven days a week. The call is free of charge from within Germany.",
+                            "The TAN hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) will help you to enter the TAN if you have a positive PCR test result and if you have not received a TAN or document with a PCR-Test QR code. The TAN hotline is available 24 hours a day, seven days a week. The call is free of charge from within Germany.",
                             "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB'>Robert Koch Institute Tool: Health authority by postal code or place</a>",
                             "Further information on the PCR-Test QR Code procedure can be found in this FAQ entry: <a href='#qr_test'>I have scanned a PCR-Test QR code, but the test result could not be retrieved for days.</a>",
                             "The websites of the Federal Government are offering general information and videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch</a>.",
                             "The Robert Koch Institute also provides information on epidemiological aspects: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html (German only)</a>.",
-                            "As a media representative, please direct your enquiries to <a href='mailto:press@sap.com'>press@sap.com</a>.",
+                            "As a media representative, please direct your enquiries to <a href='press...sap...com' class='email'>press...sap...com</a>.",
                             "The various feedback channels of the <a href='https://www.coronawarn.app/en/community/'>Corona-Warn-App-Community<a/> will help you with your questions about the open source project of the Corona-Warn-App."
                         ]
                     },
@@ -51,7 +51,7 @@
                         "anchor": "error_log",
                         "active": true,
                         "textblock": [
-                            "With version 2.2, the Corona-Warn-App (CWA) offers a new function for detailed technical problem analysis. The error report is intended to help the developers to perform a root cause analysis faster and to eliminate errors more efficiently. <br><b>Important:</b> Please report an issue to the technical support <b>first</b>, either by phone (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) or by e-mail (<a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>), to verify if there is already a known solution. An error report is only required if the technical support asks for this report.",
+                            "With version 2.2, the Corona-Warn-App (CWA) offers a new function for detailed technical problem analysis. The error report is intended to help the developers to perform a root cause analysis faster and to eliminate errors more efficiently. <br><b>Important:</b> Please report an issue to the technical support <b>first</b>, either by phone (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to see the phone numbers</a>) or by e-mail (<a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>), to verify if there is already a known solution. An error report is only required if the technical support asks for this report.",
                             "The best place to share the unique report ID is where it was requested. You can also share the ID in the following ways:",
                             "<ul><li>Open an issue on GitHub (<a href='https://github.com/corona-warn-app/cwa-app-android/issues/new/choose' target='_blank' rel='noopener noreferrer'>Android</a> or <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/new/choose' target='_blank' rel='noopener noreferrer'>iOS</a>) and mention the ID of your error report</li><li> Share the ID with the technical support</li><li> Write a review on the Corona-Warn-App in the Apple App Store or Google Play Store and mention the ID of your error report</ul></li>",
                             "Regardless of which contact option you choose, the following tips will help to resolve your issue as quickly as possible:",
@@ -65,12 +65,10 @@
                         "anchor": "where_can_i_get_tested",
                         "active": true,
                         "textblock": [
-                            "Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.",
-                            "A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a>",
-                            "The list of test sites contains only those entries that have been reported by the partners concerned.",
-                            "<a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='image' width='300'></a>",
-                            "<hr>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).",
-                            "<a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img src='../../assets/img/faq/BMG_testzentren.png' alt='image' width='300'></a>",
+                            "<div class='container'><div class='row'><div class='col-sm'><a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='image'></a></div><div class='col-sm'>Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.<br>A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a><br>The list of test sites contains only those entries that have been reported by the partners concerned.</div></div></div>",
+                            "<hr/>",
+                            "<div class='container'><div class='row'><div class='col-sm'><a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/BMG_testzentren.png' alt='image'></a></div><div class='col-sm'>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).</div></div>",
+                            "<hr/>",
                             "Another list of test sites from the GitHub community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
                         ]
                     }
@@ -81,19 +79,11 @@
                 "id": "news",
                 "accordion": [
                     {
-                        "title": "Information about the security vulnerability already fixed by Google in the Exposure Notification Framework",
-                        "anchor": "google_security_vulnerability",
-                        "active": true,
-                        "textblock": [
-                            "On April 27, 2021, reports appeared that a vulnerability in the Exposure Notification Framework (ENF) in the Android operating system was announced. This vulnerability allowed pre-installed apps on Android smartphones to access system log files, thus reading ENF data that is also provided by the Corona-Warn-App (CWA). Google has provided a fix for Android, and says that it has now been rolled out up to 98%. All Android versions that use the Google Play Services below version 21.15 are affected.",
-                            "All risks associated with using the CWA are described in the Privacy Impact Assessment (risk details can be found in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Appendix 6, Section 4</a>)."
-                        ]
-                    },
-                    {
                         "title": "Data donation and event-based scientific survey",
                         "anchor": "data_donation_and_EDUS",
                         "active": true,
                         "textblock": [
+                            "<b>UPDATE</b><br/>In our <a href=../science/ target='_blank' rel='noopener noreferrer'>Science Blog</a> we publish the results from the research undertaken by the Robert Koch Institute. This research is based on the data from the data donation and the event-based scientific survey.<hr/>",
                             "More information on the topics of data donation by the user and event-based scientific survey can be found in this blog entry:",
                             " <a href='../blog/2021-03-04-corona-warn-app-version-1-13/' target='_blank' rel='noopener noreferrer'> Users can provide data voluntarily to help improve the Corona-Warn-App further </a>.",
                             "Further details regarding data protection can be found on this poster:",
@@ -108,7 +98,7 @@
                             "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on current infections starting with the 1.11 version of the app. The figures displayed guide users to better assess the current situation and to adjust their own behaviour.",
                             "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ",
                             "The statistics displayed in the Corona-Warn-App are compiled from different sources and are formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
-                            "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='http://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>http://www.rki.de/covid-19-nowcasting</a>.",
+                            "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='https://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>https://www.rki.de/covid-19-nowcasting</a>.",
                             "To ensure the validity of the data in the CWA's statistics, all data sources are carefully verified for completeness and consistency.  Thus, the presentation of the data in the app may be slightly delayed in comparison to other websites/sources. However, in terms of content, the values correspond to the official case numbers of the RKI."
                         ]
                     },
@@ -127,15 +117,15 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
-                      "title": "Which EU certificates are supported?",
-                      "anchor": "eu_dcc_which",
-                      "active": true,
-                      "textblock": [
-                          "Starting with <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a>, the Corona-Warn-App (CWA) supports all three types of EU Digital COVID Certificate:",
-                          "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
-                          "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
-                          "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
-                      ]
+                        "title": "Which EU certificates are supported?",
+                        "anchor": "eu_dcc_which",
+                        "active": true,
+                        "textblock": [
+                            "Starting with <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a>, the Corona-Warn-App (CWA) supports all three types of EU Digital COVID Certificate:",
+                            "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
+                            "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
+                            "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
+                        ]
                     },
                     {
                         "title": "Why do I get the error message 'This QR code is not a valid  certificate. (HC_PREFIX_INVALID)' when I try to scan a QR code?",
@@ -156,7 +146,7 @@
                             "<b>Technical validity</b>",
                             "The certificate as a document has an issue date and a technical date of expiry, just like your passport or identity card, for example. For all certificates, the date of expiry is set by the issuer of the certificate. Currently, in Germany, the digital vaccination, test and recovery certificates of the EU are usually issued with a technical validity of one year from the date of issue. ",
                             "<b>Effective validity</b>",
-                            "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date or, strictly speaking, from the day after reaching the effectiveness of the vaccination protection (15 days after date X). While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may deviate from this. ",
+                            "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date. While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may deviate from this. ",
                             "In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days.",
                             "<b>Check of the validity</b>",
                             "The check app, in Germany the CovPassCheck app, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. ",
@@ -172,6 +162,27 @@
                             "Every European country that supports EU digital COVID certificates has the ability to upload rules that the Corona-Warn-App can match for verification. At the start of this new feature, Ireland, Lithuania, Luxembourg, the Netherlands, Slovenia and Spain, together with Germany, have uploaded rules, with more countries to follow in the coming weeks.",
                             "If the app shows after checking that there are no entry rules available, you can find out about the rules at <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>."
                         ]
+                    },
+                    {
+                        "title": "How do I remove a certificate from the Corona-Warn-App?",
+                        "anchor": "eu_dcc_remove",
+                        "active": true,
+                        "textblock": [
+                            "Using this step-by-step guide, you can remove certificates from the Corona-Warn-App. Please note that the first three steps apply to both iOS and Android, but only one of the last two steps needs to be followed, depending on which operating system matches yours. Vaccination certificates, test certificates and recovery certificates are mentioned as 'Certificates', since the process of removing them is identical.",
+                            "<ul><li>Tap on the 'Certificates' tab</li><li>Tap on the certificate you would like to remove</li><li>Scroll down to and tap on the tile that matches the certificate you want to delete.</li><li>iOS: Tap on 'Delete Certificate' at the bottom of the screen</li><li>Android: Tap on the three-dot symbol on the top right of the screen, and then tap on 'Remove'</li></ul>"
+                        ]
+                    },
+                    {
+                        "title": "Why do I get the error message that my certificate is invalid?",
+                        "anchor": "hc_signature_invalid",
+                        "active": true,
+                        "textblock": [
+                            "The signature of your certificate is invalid.",
+                            "This invalidates the entire certificate as a digital document. Therefore, it cannot be used as proof of health status and also cannot be imported into the app. If this error message occurs with a certificate that has already been imported, it is now marked as invalid.",
+                            "Please check if the validity of your certificate has expired:",
+                            "<ul><li>A vaccination certificate issued in Germany is usually valid for one year from the date of issue</li><li>A recovery certificate on the other hand may not be valid for longer than 180 days from the date of the last positive PCR test, as defined by the EU.</li></ul>",
+                            "If your certificate is technically still valid, it appears it was issued by an unauthorized body or incorrectly. In this case, we ask you to contact the <a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>technical hotline</a> and tell us when and by which body this certificate was issued. Then please have a new certificate with a valid signature issued by an authorized body."
+                        ]
                     }
                 ]
             },
@@ -185,7 +196,7 @@
                         "active": true,
                         "textblock": [
                             "<ul><li><a href='#test_cert_why'>What is the purpose of the digital COVID test certificate?</a></li><li><a href='#test_cert_get'>How can I request a test certificate?</a></li><li><a href='#test_cert_rat_and_pcr'>Can I request test certificates for rapid tests and PCR tests?</a></li><li><a href='#test_cert_when_and_where'>When will I receive my test certificate and where can I find it?</a></li><li><a href='#test_cert_validity'>How long is my test certificate valid?</a></li><li><a href='#test_cert_privacy'>How will my privacy be protected if I create a test certificate?</a></li></ul>"
-                         ]
+                        ]
                     },
                     {
                         "title": "What is the purpose of the digital COVID test certificate?",
@@ -200,7 +211,7 @@
                         "anchor": "test_cert_get",
                         "active": true,
                         "textblock": [
-                            "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Register Test' on the start screen of your CWA and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can 'request the test certificate' or reject it if you do not want to receive one."
+                            "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Manage Your Tests' on the Start Screen of your CWA (or on 'Register Test' for app versions until 2.5) and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can tap 'Request Test Certificate' or decline it if you do not want to receive one."
                         ]
                     },
                     {
@@ -209,7 +220,8 @@
                         "active": true,
                         "textblock": [
                             "You can request a certificate for both PCR and rapid tests, which are then issued in the event of a negative test.",
-                            "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.","<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
+                            "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.",
+                            "<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
                         ]
                     },
                     {
@@ -293,12 +305,15 @@
                         ]
                     },
                     {
-                        "title": "Can I use a complete vaccination status in the app as a travel permission?",
+                        "title": "Can I use a vaccination certificate in the app as a travel permission?",
                         "anchor": "vac_cert_privileges_travel",
                         "active": true,
                         "textblock": [
-                            "For example, whether you are allowed to travel with completed vaccination protection, depends on the regulations of the respective country.",
-                            "Among other things, you can use this   <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>tool</a> in order to plan your journey within the EU."
+                            "The EU digital COVID vaccination certificate can not only be used in Germany. The EU digital COVID vaccination certificate issued in Germany can also be regarded as proof of vaccinations in other EU countries if the respective EU member state allows digital proof. The same applies to recovery certificates and test certificates. From Corona-Warn-App version 2.6, the validity of your certificate can also be checked within the app before departure.",
+                            "In addition, the respective EU member states generally also check the corresponding certificate with their own verifier apps. The data can be read out regardless of the language of the certificate. It is therefore irrelevant in which language your certificate is displayed on your device.",
+                            "The EU digital COVID vaccination certificate can be presented as a printed QR code or as a scan in the Corona-Warn-App or CovPass-App. The known proof of vaccination in the form of the yellow vaccination booklet remains valid. The new EU digital COVID vaccination certificate is merely a user-friendly and trustworthy addition to the yellow vaccination booklet that can be easily checked.",
+                            "Please note that sufficient effectiveness of vaccination protection does not occur until 14 days after the last necessary vaccination.",
+                            "Summarized information about the corona measures and travel restrictions applicable in the European countries can be found on this page: <a href='https://reopen.europa.eu/en'  target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>. The update is the responsibility of the respective countries. There you will also find information on what personal information and documents you must present upon entry. Data processing is subject to the regulations of the respective country of entry. Details can be found on the national websites of the respective EU countries, which are linked on the above-mentioned page."
                         ]
                     },
                     {
@@ -397,6 +412,17 @@
                         "textblock": [
                             "The QR code for digital certificate of vaccination may only be issued by authorized persons in vaccination centers, medical practices and hospitals. When reviewing digital vaccination certificates, a photo ID may be presented as appropriate. The digital proof of vaccination is cryptographically protected against changes."
                         ]
+                    },
+                    {
+                        "title": "Why do I get the error message 'VC_DOB_MISMATCH' or 'VC_NAME_MISMATCH'?",
+                        "anchor": "vac_cert_mismatch",
+                        "active": true,
+                        "textblock": [
+                            "These error messages occur in Corona-Warn-App versions 2.3 and 2.4. The exact wording of the error message is: 'The personal data of this vaccination certificate does not match that of the certificates already registered. You can only register certificates of one person in the app'.",
+                            "The app only reads the data contained in the QR code of the vaccination certificate and displays it readable in the app. If, for example, typing errors or different spellings were used in the two vaccination certificates, the app does not recognize them as belonging together. Typical examples are: additional spaces, typing errors in the name or in the specification of a title.",
+                            "If the second vaccination certificate was issued correctly, it is usually sufficient to remove the first vaccination certificate in the Corona-Warn-App and then re-scan the second vaccination certificate. The app recognizes that this also achieves full vaccination protection (after 14 days).",
+                            "However, if the data in the second vaccination certificate is incorrect, only the issuer of the certificate can correct it."
+                        ]
                     }
                 ]
             },
@@ -427,7 +453,7 @@
                         "anchor": "rat_how_get_result",
                         "active": true,
                         "textblock": [
-                            "From the 'Register your Test' section on the home screen of your Corona-Warn-App, you can add a test by scanning the Rapid-Test QR code. To get the result in the app as soon as possible, you can refresh the test in the app until the result is available. Although the Corona-Warn-App also retrieves test results automatically in the background, it may take a little longer depending on your operating system."
+                            "From the 'Manage Your Test' section on the Start Screen of your Corona-Warn-App (or from 'Register Test' on app versions until 2.5), you can add a test by scanning the Rapid-Test QR code. To get the result in the app as soon as possible, you can refresh the test in the app until the result is available. Although the Corona-Warn-App also retrieves test results automatically in the background, it may take a little longer depending on your operating system."
                         ]
                     },
                     {
@@ -653,7 +679,7 @@
                             "<b>What is the procedure in case of a positive result?<br>Does everyone who scanned the same Event QR code get a warning?<br>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</b>",
                             "The procedure is based on the existing CWA warning process: If an event participant or a visitor of a location has tested positive, he/she should share this result via the CWA. As a result, all other participants who were checked in at the same time will receive an immediate warning without having to burden the health authorities. Depending on the epidemiological situation, the warning is displayed in one of two versions: 'low risk' (green tile) or 'high risk' (red tile).",
                             "<b>How is the risk determined?<br>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)? </b>",
-                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive about COVID-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
+                            "The calculation of the risk depends on whether and for how long a user's attendance overlaps with the attendance of a person who later tested positive for COVID-19. If the attendance overlaps by less than 10 minutes, users receive a warning for a low-risk encounter (green tile). If a user's attendance overlaps by 10 minutes or more with that of a person who later tested positive for COVID-19, users will receive a warning about an encounter with increased risk (red tile).",
                             "<b>Can the user see what the warning is based on, i.e. which scanned Event QR code caused the warning?</b>",
                             "Yes, this is displayed in the contact journal. This allows users to determine, for example, whether other family members that were also present but do not have the app (such as children) were also put at risk. ",
                             "<b>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</b>",
@@ -742,7 +768,7 @@
                             "PCR-Test QR codes for the Corona-Warn-App are distributed on a standardized information sheet as part of form 10C. You can compare the QR code information you received with the <a href='https://www.kbv.de/media/sp/Ansichtsexemplar_Muster10C.pdf' target='_blank' rel='noopener noreferrer'>bottom half of this example form</a>. If you have not received the depicted information sheet, your QR code is likely incompatible with the app. In this case, please contact the doctor's office or testing center where you made the test and ask them where your QR code can be registered.",
                             "<b>The code you received was wrongly generated</b>",
                             "In some cases, the error can occur during the first registration of the PCR-Test QR Code. This can happen if a test center generated the QR code in a wrong format. We are currently looking into how to improve the app to detect wrongly generated QR Codes and still accept them. You can find more details about the errors <a href='https://github.com/corona-warn-app/cwa-documentation/issues/400' target='_blank' rel='noopener noreferrer'>on GitHub</a>.",
-                            "If you are sure that the QR code was not scanned before and you received the correct information sheet, but are still receiving errors, you can also report this case by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code as well as contact information of the doctor or test center where you received it. All non-essential personal data should be blacked out. We will then try to resolve QR code generation issues together with the involved parties."
+                            "If you are sure that the QR code was not scanned before and you received the correct information sheet, but are still receiving errors, you can also report this case by mail to <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Please provide a scan of the information sheet with the QR code as well as contact information of the doctor or test center where you received it. All non-essential personal data should be blacked out. We will then try to resolve QR code generation issues together with the involved parties."
                         ]
                     },
                     {
@@ -750,7 +776,7 @@
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
-                            "The processing time of a test (from taking the sample at your doctor's office or test center to the notification in the app) can be up to 48 hours. If you scanned your PCR-Test QR code into the App after a Corona test and did not receive a test result via the App within 3 days of making the test, it is possible that",
+                            "The processing time of a PCR test (from taking the sample at your doctor's office or test center to the notification in the app) can be up to 48 hours. If you scanned your PCR-Test QR code into the App after a Corona test and did not receive a test result via the App within 3 days of making the test, it is possible that",
                             "<ul><li>the respective laboratory is not fully linked with the Corona-Warn-App backend.</li><li>the consent field allowing the transmission of the test result to the Corona-Warn-App was not ticked on the submission form (10C/OEGD) sent by your doctor to the laboratory.</li></ul>",
                             "Please check whether the laboratory working with your doctor or test center is connected to the Corona-Warn-App and whether the consent field is checked on the form. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
                             "Currently, 90% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way.",
@@ -758,7 +784,7 @@
                             "<ul><li>'Display Test' -> 'Delete test'</li></ul>",
                             "Confirm again that you really want to remove the test result. Now you can enter the requested TeleTAN into the Corona-Warn-App by following these steps:",
                             "<ul><li>'Next Steps' -> 'Enter TAN'</li></ul>",
-                            "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties."
+                            "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties."
                         ]
                     },
                     {
@@ -766,10 +792,10 @@
                         "anchor": "red_card_how_to_test",
                         "active": true,
                         "textblock": [
-                            "If the Corona-Warn-App indicates a high infection risk with the red card, please isolate yourself quickly and consult a doctor to get screened if necessary.",
+                            "If the Corona-Warn-App indicates a high infection risk with the red card, please isolate yourself quickly and consult a doctor to get a PCR test if necessary.",
                             "For a smooth testing process, to receive the test result and to warn others in case of a positive result, please follow the steps in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'>this overview from the Robert Koch Institute</a>.",
                             "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='PDF'></a>",
-                            "See also: <a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
+                            "See also: <ul><li><a href='#rat_red_card_which_test' target='_blank' rel='noopener'>If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?</a></li><li><a href='#vac_cert_red_warning' target='_blank' rel='noopener'>How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?</a></li><li><a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Where to get tested?</a></li></ul>"
                         ]
                     },
                     {
@@ -1209,11 +1235,11 @@
                         ]
                     },
                     {
-                        "title": "When do I receive my test result in the app?",
+                        "title": "When do I receive my PCR test result in the app?",
                         "anchor": "result_time",
                         "active": true,
                         "textblock": [
-                            "Currently, analyzing the test in the laboratory and reporting the test result to the Corona-Warn-App servers takes 22-28 hours on average. However, the waiting time can be up to 48 hours depending on the commissioned laboratory. In most cases, you will receive your result the next day or the day after. If your result is not available in the app after 3 days, please follow the advice in FAQ entry: <a href='#qr_test' target='_blank' rel='noopener noreferrer'>I have scanned a PCR-Test QR code, but the test result could not be retrieved for days</a>."
+                            "Currently, analyzing a PCR test in the laboratory and reporting the test result to the Corona-Warn-App servers takes 22-28 hours on average. However, the waiting time can be up to 48 hours depending on the commissioned laboratory. In most cases, you will receive your result the next day or the day after. If your result is not available in the app after 3 days, please follow the advice in FAQ entry: <a href='#qr_test' target='_blank' rel='noopener noreferrer'>I have scanned a PCR-Test QR code, but the test result could not be retrieved for days</a>."
                         ]
                     },
                     {
@@ -1221,7 +1247,8 @@
                         "anchor": "test_negative",
                         "active": true,
                         "textblock": [
-                            "Thank you that you want to help. Corona-Warn-App is all about informing your contacts when you have tested positive for COVID-19. That's why you won't find an option for entering a negative test result."
+                            "If you take a PCR test or rapid antigen test from test partners who are integrated with the Corona-Warn-App and who support digital certificates, you can request a digital test certificate which is issued in the event of a negative test. You can also scan in a digital test certificate QR code using the 'Certificates' tab of the app if you receive a digital test certificate outside of the app, for instance in paper form. The FAQ section <a href='#test_cert' target='_blank' rel='noopener noreferrer'>Test Certificate</a> provides more details.",
+                            "Negative test results are not communicated to your contacts. The Corona-Warn-App informs your contacts only if you have tested positive for COVID-19."
                         ]
                     },
                     {
@@ -1229,7 +1256,8 @@
                         "anchor": "test_multiple_devices",
                         "active": true,
                         "textblock": [
-                            "If you have more than one smartphone (e.g. work and private), we recommend that you install the CWA on your private device first. Also, when scanning PCR-Test QR codes and sharing a positive result, we recommend that you first use your private device. If you additionally want to share a positive result via your company device or any other additional smartphone, this can be done via a so-called TeleTAN. By contacting the TAN hotline 0800 7540002 with a positive test result, you will receive a 10-digit TAN with which the test result can also be registered in the app. <b>Please note:</b> The TAN number is only valid for one hour.",
+                            "You can share a positive test result from a PCR test on multiple devices. If you receive a positive test result from a rapid antigen test you can only share this result on one device. <a href='#rat_what_if_positive_result' target='_blank' rel='noopener noreferrer'>How do I act if my rapid test result is positive?</a> recommends that if you receive a positive rapid antigen test you should take a PCR test in addition. If the PCR test is then positive, you can share this result on multiple devices.",
+                            "If you have more than one smartphone (e.g. work and private), we recommend that you install the CWA on your private device first. Also, when scanning PCR-Test QR codes and sharing a positive PCR test result, we recommend that you first use your private device. If you additionally want to share a positive PCR test result via your company device or any other additional smartphone, this can be done via a so-called TeleTAN. By contacting the TAN hotline 0800 7540002 with a positive PCR test result, you will receive a 10-digit TAN with which the PCR test result can also be registered in the app. <b>Please note:</b> The TAN number is only valid for one hour.",
                             "See also <a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>How to reach us from abroad</a>."
                         ]
                     },
@@ -1576,7 +1604,7 @@
                         "active": true,
                         "textblock": [
                             "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
-                            "Any member can report violations of the code of conduct to the project managers or to <a href='mailto:corona-warn-app.opensource@sap.com'>corona-warn-app.opensource@sap.com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
+                            "Any member can report violations of the code of conduct to the project managers or to <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
                         ]
                     }
                 ]
@@ -1709,6 +1737,15 @@
                 "id": "resolved",
                 "accordion": [
                     {
+                        "title": "[Google/Android]: Fixed security vulnerability in the Exposure Notification Framework",
+                        "anchor": "google_security_vulnerability",
+                        "active": true,
+                        "textblock": [
+                            "On April 27, 2021, reports appeared that a vulnerability in the Exposure Notification Framework (ENF) in the Android operating system was announced. This vulnerability allowed pre-installed apps on Android smartphones to access system log files, thus reading ENF data that is also provided by the Corona-Warn-App (CWA). All Android versions that used the Google Play services below version 21.15 were affected. Google rolled out a fix in April 2021.",
+                            "All risks associated with using the CWA are described in the Privacy Impact Assessment (risk details can be found in <a href='../../assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank' rel='noopener noreferrer'>Appendix 6, Section 4</a>)."
+                        ]
+                    },
+                    {
                         "title": "Can I enter a test result from a Corona rapid test (Schnelltest)?",
                         "anchor": "rapid_test",
                         "active": true,
@@ -1739,7 +1776,8 @@
                             "<b>'CAUSE: 2001 Something went wrong. An error occurred while trying to establish a secure connection to the server.'</b>",
                             "Follow these steps in order to activate the security certificate. The exact path depends on the device.",
                             "<ol><li>'Settings' -> 'Biometrics and security' -> 'Other security settings' -> 'View security certificates' -> 'SYSTEM'</li><li>Scroll down to <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Enable the certificate using the slider</li></ol>",
-                            "Should this procedure not solve this issue, please write a comment here:  <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
+                            "If your network or device is using a firewall, check also that your device can access the domains listed in <a href='#access-list' target='_blank' rel='noopener'>[Google/Android]: Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901</a>.",
+                            "Should these procedures not solve this issue, please write a comment here:  <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener'>cwa-app-android/issues/968</a>."
                         ]
                     },
                     {
@@ -2045,7 +2083,94 @@
     },
     "glossary": {
         "glossaryHeadline": "Glossary",
+        "optionalText": "",
+        "permalink": "Link to this entry",
+        "linkToGlossary": "Link to the Glossary",
+        "glossaryWords": {
+            "B": [
+                {
+                    "term": "Business Rules",
+                    "anchor": "business_rules",
+                    "description": "For the introduction of Digital COVID Certificates, the eHealth network of the European Commission and the EU member states agreed that every country compiles the individual rules which have to be checked for transnational travelling. These \"Business Rules\" have two categories:<ul><li>Invalidation Rules of the Country of Administration, which decide under which circumstances a certificate is rejected</li><li>Acceptance Rules of the Country of Arrival, which must be fulfilled to enter the country</li></ul>"
+                }
+            ],
+            "C": [
+                {
+                    "term": "Certificate",
+                    "anchor": "certificate",
+                    "description": "See <a href='#glossary_digital_certificate'>Digital Certificate</a>"
+                }
+            ],
+            "D": [
+                {
+                    "term": "DCC",
+                    "anchor": "dcc",
+                    "description": "Abbreviation of \"Digital COVID Certificate\"."
+                },
+                {
+                    "term": "Digital Certificate",
+                    "anchor": "digital_certificate",
+                    "description": "A certified document. It contains the subject's health information signed by a trusted issuer. <br/><br/> Every digital certificate has an issue date and an expiration date. After the certificate expires it must be renewed. <br/><br/> In the CWA we differentiate between: <br/><ul><li>Vaccination Certificate</li><li>Test Certificate</li><li>Recovery Certificate</li></ul>"
+                },
+                {
+                    "term": "Digital Signature",
+                    "anchor": "digital_signature",
+                    "description": "See <a href='#glossary_signature'>Signature</a>"
+                }
+            ],
+            "E": [
+                {
+                    "term": "EU DCC",
+                    "anchor": "eu_dcc",
+                    "description": "See <a href='#glossary_dcc'>DCC</a>"
+                }
+            ],
+            "P": [
+                {
+                    "term": "Proof of vaccination",
+                    "anchor": "vaccination_proof",
+                    "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital <a href='#glossary_vaccination_certificate'>vaccination certificate</a>."
+                }
+            ],
+            "R": [
+                {
+                    "term": "Recovery Certificate",
+                    "anchor": "recovery_certificate",
+                    "description": "The certificate of recovery is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has demonstrably recovered from COVID-19 and proved immunity by a PCR test."
+                }
+            ],
+            "S": [
+                {
+                    "term": "Signature",
+                    "anchor": "signature",
+                    "description": "A digital signature is a signature that is created by a crytographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> <br/><br/> As a consequence, the signature must fulfill the following requirements: <br/><ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
+                }
+            ],
+            "T": [
+                {
+                    "term": "Test Certificate",
+                    "anchor": "test_certificate",
+                    "description": "A test certificate is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has completed a COVID-19 test with a negative result."
+                }
+            ],
+            "V": [
+                {
+                    "term": "Validity of an EU digital COVID certificate",
+                    "anchor": "validity",
+                    "description": "Basically, we distinguish between <ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. <br/><br/> <b>Vaccination Certificate</b> <br/><br/>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g. in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So the effective validity of the vaccination counts from the last vaccination date (date X).  <br/><br/> A certificate is valid until either the technical validity or the effective validity expires."
+                },
+                {
+                    "term": "Vaccination certificate",
+                    "anchor": "vaccination_certificate",
+                    "description": "The vaccination certificate is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has received a vaccination with a vaccine approved in the EU. Each vaccination certificate documents exactly one vaccination event (one dose). <br/><br/>The vaccination certificate represents a digital form of a <a href='#glossary_vaccination_proof'>proof of vaccination</a>."
+                },
+                {
+                    "term": "Verifier-App / Checking a certificate / Verifying a certificate",
+                    "anchor": "verify",
+                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the CovPassCheck app), the check app. <br/><br/> Individual countries may have different implementations of the check app. However all check apps use the same - consolidated on a European gateway - keys of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
+                }
+            ]
+        },
         "noContentText": "No entries available"
-      }
-
+    }
 }
