@@ -84,7 +84,6 @@ export default {
 			]
 		}	
 	},
-
 	"chart1": {
 		"1": [
 			{
@@ -106,6 +105,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "tests_pcr_total_cumulated",
+						name: "total"
+					},
+					{
 						color: "#FF774C",
 						data: "tests_pcr_positive_cumulated"
 					},
@@ -123,6 +127,11 @@ export default {
 			},
 			{
 				"series": [
+					{
+						ghost: true,
+						data: "tests_rat_total_cumulated",
+						name: "total"
+					},
 					{
 						color: "#FF774C",
 						data: "tests_rat_positive_cumulated"
@@ -163,6 +172,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "tests_pcr_total_daily",
+						name: "total"
+					},
+					{
 						color: "#FF774C",
 						data: "tests_pcr_positive_daily"
 					},
@@ -180,6 +194,11 @@ export default {
 			},
 			{
 				"series": [
+					{
+						ghost: true,
+						data: "tests_rat_total_daily",
+						name: "total"
+					},
 					{
 						color: "#FF774C",
 						data: "tests_rat_positive_daily"
@@ -220,6 +239,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "tests_pcr_total_7days_sum",
+						name: "total"
+					},
+					{
 						color: "#FF774C",
 						data: "tests_pcr_positive_7days_sum"
 					},
@@ -237,6 +261,11 @@ export default {
 			},
 			{
 				"series": [
+					{
+						ghost: true,
+						data: "tests_rat_total_7days_sum",
+						name: "total"
+					},
 					{
 						color: "#FF774C",
 						data: "tests_rat_positive_7days_sum"
@@ -286,6 +315,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "tests_pcr_total_7days_avg",
+						name: "total"
+					},
+					{
 						color: "#FF774C",
 						data: "tests_pcr_positive_7days_avg"
 					},
@@ -296,6 +330,11 @@ export default {
 					{
 						color: "#CAD5E2",
 						data: "tests_pcr_invalide_7days_avg"
+					},
+					{
+						ghost: true,
+						data: "tests_pcr_total_daily",
+						name: "total"
 					},
 					{
 						color: "#FF774C",
@@ -314,6 +353,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "tests_rat_total_7days_avg",
+						name: "total"
+					},
+					{
 						color: "#FF774C",
 						data: "tests_rat_positive_7days_avg"
 					},
@@ -324,6 +368,11 @@ export default {
 					{
 						color: "#CAD5E2",
 						data: "tests_rat_invalide_7days_avg"
+					},
+					{
+						ghost: true,
+						data: "tests_rat_total_daily",
+						name: "total"
 					},
 					{
 						color: "#FF774C",
@@ -341,8 +390,6 @@ export default {
 			}
 		]
 	},
-
-
 	"chart2": {
 		"1": [
 			{
@@ -364,6 +411,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "qr_redeemable_cumulated",
+						name: "total"
+					},
+					{
 						color: "#57DAFF",
 						data: "qr_not_redeemed_cumulated"
 					},
@@ -378,6 +430,11 @@ export default {
 			},
 			{
 				"series": [
+					{
+						ghost: true,
+						data: "teletan_redeemable_cumulated",
+						name: "total"
+					},
 					{
 						color: "#57DAFF",
 						data: "teletan_not_redeemed_cumulated"
@@ -415,6 +472,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "qr_redeemable_daily",
+						name: "total"
+					},
+					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_daily"
 					},
@@ -428,6 +490,11 @@ export default {
 			},
 			{
 				"series": [
+					{
+						ghost: true,
+						data: "teletan_redeemable_daily",
+						name: "total"
+					},
 					{
 						color: "#3BA8CE",
 						data: "teletan_redeemed_daily"
@@ -464,6 +531,11 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "qr_redeemable_7days_sum",
+						name: "total"
+					},
+					{
 						color: "#57DAFF",
 						data: "qr_not_redeemed_7days_sum"
 					},
@@ -478,6 +550,11 @@ export default {
 			},
 			{
 				"series": [
+					{
+						ghost: true,
+						data: "teletan_redeemable_7days_sum",
+						name: "total"
+					},
 					{
 						color: "#57DAFF",
 						data: "teletan_not_redeemed_7days_sum"
@@ -524,12 +601,22 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "qr_redeemable_7days_avg",
+						name: "total"
+					},
+					{
 						color: "#57DAFF",
 						data: "qr_not_redeemed_7days_avg"
 					},
 					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_7days_avg"
+					},
+					{
+						ghost: true,
+						data: "qr_redeemable_daily",
+						name: "total"
 					},
 					{
 						color: "#57DAFF",
@@ -544,12 +631,22 @@ export default {
 			{
 				"series": [
 					{
+						ghost: true,
+						data: "teletan_redeemable_7days_avg",
+						name: "total"
+					},
+					{
 						color: "#57DAFF",
 						data: "teletan_not_redeemed_7days_avg"
 					},
 					{
 						color: "#3BA8CE",
 						data: "teletan_redeemed_7days_avg"
+					},
+					{
+						ghost: true,
+						data: "teletan_redeemable_daily",
+						name: "total"
 					},
 					{
 						color: "#57DAFF",
@@ -563,10 +660,13 @@ export default {
 			}
 		]
 	},
-	
 	"chart3": {
 		"1": {
 			"series": [
+				{
+					ghost: true,
+					data: "ppa_total_warnings_cumulated"
+				},
 				{
 					color: "#FF6666",
 					data: "ppa_risk_red_cumulated"
@@ -583,6 +683,10 @@ export default {
 		"2": {
 			"series": [
 				{
+					ghost: true,
+					data: "ppa_total_warnings_daily"
+				},
+				{
 					color: "#FF6666",
 					data: "ppa_risk_red_daily"
 				},
@@ -598,6 +702,10 @@ export default {
 		"3": {
 			"series": [
 				{
+					ghost: true,
+					data: "ppa_total_warnings_7days_sum"
+				},
+				{
 					color: "#FF6666",
 					data: "ppa_risk_red_7days_sum"
 				},
@@ -608,10 +716,14 @@ export default {
 			],
 			"stacked": true,
 			"type":"bar",
-			"ghostTooltip": "ppa_total_warnings_sum"
+			"ghostTooltip": "ppa_total_warnings_7days_sum"
 		},
 		"4": {
 			"series": [
+				{
+					ghost: true,
+					data: "ppa_total_warnings_7days_avg"
+				},
 				{
 					color: "#FF6666",
 					data: "ppa_risk_red_7days_avg"
@@ -619,6 +731,10 @@ export default {
 				{
 					color: "#50DBB4",
 					data: "ppa_risk_green_7days_avg"
+				},
+				{
+					ghost: true,
+					data: "ppa_total_warnings_daily"
 				},
 				{
 					color: "#FF6666",

@@ -51,12 +51,13 @@ function timeFN(value, range, mode){
 
 
 export default function(e, i){
-
-	const mode = (e.switchId == 3)? "weekly": "daily"; 
-	const barThreshold = (mode == "daily")? 90: 400;
-
 	let opt = Object.assign({}, chartOptions);
-	opt.chart.id = `chart${i}`;
+
+	_set(opt, "mode", (e.switchId == 3)? "weekly": "daily");
+	const barThreshold = (opt.mode == "daily")? 90: 400;
+
+	
+	_set(opt, ["chart", "id"], `chart${i}`);
 
 	let chartConfigObj = _get(chartConfig, [opt.chart.id, e.switchId], []);
 	if(Array.isArray(chartConfigObj)){
@@ -67,22 +68,19 @@ export default function(e, i){
 	if(opt.chart.type == "bar"){
 		opt.chart.type =  (e.data.range <= barThreshold)? opt.chart.type: "line";
 	}
-	
 
-
-	opt.chart.stacked = _get(chartConfigObj, ["stacked"], false);
+	_set(opt, "chart.stacked", _get(chartConfigObj, ["stacked"], false));
+	_set(opt, "xaxis.labels.formatter", value => timeFN(value, e.data.range, opt.mode));
 
 	const chartObj = _get(chartConfigObj, ["series"], []);
-	
-	_set(opt, "xaxis.labels.formatter", value => timeFN(value, e.data.range, mode));
-
-	opt.series = chartObj.map((obj)=>{
-		const index = getIndex(e.data, mode, obj.data);
+	opt.seriesall = chartObj.map((obj)=>{
+		const index = getIndex(e.data, opt.mode, obj.data);
 		return {
+			ghost: obj.ghost,
 			color: (obj.color)? obj.color: undefined,
 			type: (obj.type)? (e.data.range <= barThreshold)? obj.type: "line": opt.chart.type,
-			name: (obj.name)? obj: translate(obj.data),
-			data: e.data.data[mode]
+			name: (obj.name)? translate(obj.name): translate(obj.data),
+			data: e.data.data[opt.mode]
 				.filter(f => f[index] != null)
 				.map(m => 
 					[
@@ -92,6 +90,7 @@ export default function(e, i){
 				)
 			}
 	});
+	opt.series = opt.seriesall.filter(e => !e["ghost"])
 
 	ApexCharts.exec(opt.chart.id, "updateOptions", opt, true)
 	console.log("chart update", opt.chart.id, e, opt)

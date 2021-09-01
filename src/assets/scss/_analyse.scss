@@ -666,3 +666,46 @@
 	right: -12px !important;
 	bottom: 0 !important;
 }
+
+
+
+.apexcharts-tooltip{
+	padding: 8px;
+	background: #fff !important;
+	box-shadow: 0px 8px 25px -7px rgba(60, 69, 83, 0.538625) !important;
+	border-radius: 4px !important;
+	border: 0 !important;
+
+	&.apexcharts-active{
+		opacity: 0 !important;
+
+		&[style]{
+			opacity: 1 !important;
+		}
+	}
+
+
+	.apexcharts-tooltip-date{
+		background: #D4EAF7;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 30px;
+		color: #1A2025;
+		margin: -8px;
+		margin-bottom: 4px;
+		line-height: 30px;
+		padding: 0 8px;
+	}
+
+	.apexcharts-tooltip-series-group{
+		display: flex;
+		padding: 0 !important;
+
+	}
+
+	.apexcharts-tooltip-text{
+		font-size: 11px;
+		line-height: 17px;
+	}
+
+}

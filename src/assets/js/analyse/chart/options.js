@@ -1,3 +1,5 @@
+import { DateTime } from 'luxon';
+
 const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';
 
@@ -94,6 +96,15 @@ export default {
 		},
 		axisTicks: {
 			show: false
+		},
+		crosshairs: {
+			show: true,
+			stroke: {
+				color: '#006082'
+			}
+		},
+		tooltip: {
+			enabled: false
 		}
 	},
 	legend: {
@@ -123,7 +134,41 @@ export default {
 
       	}
   	},
+  	markers: {
+
+  	},
   	tooltip: {
-      enabled: false
-  	}
+      enabled: true,
+      shared: true,
+	  custom: function({seriess, seriesIndex, dataPointIndex, w}) {
+	  	const mode = w.config.mode; 
+		const date = w.config.series[seriesIndex].data[dataPointIndex][0];
+
+		const series = w.config.seriesall.map(e => {
+			const value = e.data.find(e => e[0] == date)
+			return `
+				<div class="apexcharts-tooltip-series-group">
+				   	<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>
+					<div class="apexcharts-tooltip-text">
+						<div class="apexcharts-tooltip-y-group">
+							<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
+							<span class="apexcharts-tooltip-text-y-value">${(Array.isArray(value))? value[1]: "-" }</span>
+						</div>
+					</div>
+				</div>
+			`;
+		});
+
+		const dateT = DateTime.fromISO(date);
+		const formatedDate = (mode == "weekly")? dateT.toFormat((documentLang == "de")? "'KW' W": "'CW' W") + " - " + dateT.toLocaleString(DateTime.DATE_HUGE): dateT.toLocaleString(DateTime.DATE_HUGE);
+
+		return `
+			<div class="apexcharts-tooltip-date">${formatedDate}</div>
+			${series.join("")}
+		`
+	  }
+
+
+
+	}
 };
