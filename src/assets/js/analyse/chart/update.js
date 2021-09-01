@@ -1,5 +1,4 @@
 import ApexCharts from 'apexcharts'
-import { DateTime } from 'luxon';
 import _get from 'lodash/get';
 import _set from 'lodash/set';
 
@@ -10,75 +9,40 @@ import chartConfig from './config.js';
 import chartOptions from './options.js';
 
 
-const documentLang = document.documentElement.lang;
-const lang = (documentLang == "de")? 'de-DE': 'en-US';
 
-
-function getIndex(obj, mode, key){
-	const keys = _get(obj, ["keys", mode]);
-	return keys.indexOf(key);
+function getBarThreshold(opt){
+	const mode = _get(opt, ["mode"], "daily");	
+	const mobile = (window.matchMedia("(max-width: 992px)").matches);
+	const value = (mobile)? [30, 100]: [90, 400];
+	const barThreshold = (mode == "daily")? value[0]: value[1];
+	return (opt.range <= barThreshold);
 }
-
-function timeFN(value, range, mode){
-	// return format for weeky mode
-	if(mode == "weekly") return  DateTime.fromMillis(value).toFormat((documentLang == "de")? "'KW' W": "'CW' W");
-
-	const formats = {
-		"de": [
-			"MMM yy",
-			"d.LLL",
-			"MMM yy"
-		],
-		"en": [
-			"MMM yy",
-			"d/LLL",
-			"MMM yy"
-		]
-	};
-
-	let index = 0;
-
-	if(range <= 28 ){
-		index = 1;
-	}else if(range <= 90 ){
-		index = 2;
-	}
-
-	return DateTime.fromMillis(value).toFormat( _get(formats, [documentLang, index], ""))
-}
-
-
-
 
 export default function(e, i){
 	let opt = Object.assign({}, chartOptions);
-
-	_set(opt, "mode", (e.switchId == 3)? "weekly": "daily");
-	const barThreshold = (opt.mode == "daily")? 90: 400;
-
-	
 	_set(opt, ["chart", "id"], `chart${i}`);
+	_set(opt, ["mode"], (e.switchId == 3)? "weekly": "daily");
+	_set(opt, ["range"], e.data.range);
+	_set(opt, ["barThreshold"], getBarThreshold(opt));
 
 	let chartConfigObj = _get(chartConfig, [opt.chart.id, e.switchId], []);
 	if(Array.isArray(chartConfigObj)){
-		chartConfigObj = _get(chartConfigObj, [(opt.chart.id == "chart1")? e.tabs1: (opt.chart.id == "chart2")? e.tabs2:[]], []);
+		chartConfigObj = _get(chartConfigObj, [(opt.chart.id == "chart1")? e.tabs1: (opt.chart.id == "chart2")? e.tabs2: []], []);
 	}
 
-	opt.chart.type = _get(chartConfigObj, ["type"], "line");
-	if(opt.chart.type == "bar"){
-		opt.chart.type =  (e.data.range <= barThreshold)? opt.chart.type: "line";
-	}
 
-	_set(opt, "chart.stacked", _get(chartConfigObj, ["stacked"], false));
-	_set(opt, "xaxis.labels.formatter", value => timeFN(value, e.data.range, opt.mode));
+	let chartType = _get(chartConfigObj, ["type"], "line");
+	chartType = (chartType == "bar")? (opt.barThreshold)? chartType: "line": chartType;
+	_set(opt, ["chart", "type"], chartType);
 
-	const chartObj = _get(chartConfigObj, ["series"], []);
-	opt.seriesall = chartObj.map((obj)=>{
-		const index = getIndex(e.data, opt.mode, obj.data);
+	_set(opt, ["chart", "stacked"], _get(chartConfigObj, ["stacked"], false));
+
+	opt.seriesall = _get(chartConfigObj, ["series"], []).map((obj)=>{
+		const index = _get(e.data, ["keys", opt.mode], []).indexOf(obj.data);
 		return {
 			ghost: obj.ghost,
 			color: (obj.color)? obj.color: undefined,
-			type: (obj.type)? (e.data.range <= barThreshold)? obj.type: "line": opt.chart.type,
+			type: (obj.type)? (opt.barThreshold)? obj.type: "line": opt.chart.type,
 			name: (obj.name)? translate(obj.name): translate(obj.data),
 			data: e.data.data[opt.mode]
 				.filter(f => f[index] != null)
@@ -90,9 +54,9 @@ export default function(e, i){
 				)
 			}
 	});
-	opt.series = opt.seriesall.filter(e => !e["ghost"])
 
-	ApexCharts.exec(opt.chart.id, "updateOptions", opt, true)
-	console.log("chart update", opt.chart.id, e, opt)
+	opt.series = opt.seriesall.filter(e => !e["ghost"]);
+	ApexCharts.exec(opt.chart.id, "updateOptions", opt, true);
+	console.log("chart update", opt.chart.id, e, opt);
 		
 };

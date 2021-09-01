@@ -92,7 +92,10 @@ export default {
 				day: 'dd MMM',
 				hour: 'HH:mm',
 			},
-			formatter: undefined
+			formatter: function(value, timestamp, opts){
+				if(opts.w.config.mode == "weekly") return  DateTime.fromMillis(value).toFormat((documentLang == "de")? "'KW' W": "'CW' W");
+				return DateTime.fromMillis(value).toLocaleString((opts.w.config.range <= 28 )? { day: "2-digit", month: 'short' }: { month: 'short', year: '2-digit' });
+			}
 		},
 		axisTicks: {
 			show: false
