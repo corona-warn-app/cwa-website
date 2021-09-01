@@ -1,13 +1,10 @@
 import ApexCharts from 'apexcharts'
 import _get from 'lodash/get';
-import _set from 'lodash/set';
-
 
 import translate from '../translate.js';
 
 import chartConfig from './config.js';
 import chartOptions from './options.js';
-
 
 
 function getBarThreshold(opt){
@@ -20,22 +17,19 @@ function getBarThreshold(opt){
 
 export default function(e, i){
 	let opt = Object.assign({}, chartOptions);
-	_set(opt, ["chart", "id"], `chart${i}`);
-	_set(opt, ["mode"], (e.switchId == 3)? "weekly": "daily");
-	_set(opt, ["range"], e.data.range);
-	_set(opt, ["barThreshold"], getBarThreshold(opt));
+	opt.chart.id = `chart${i}`;
+	opt.mode = (e.switchId == 3)? "weekly": "daily";
+	opt.range = e.data.range;
+	opt.barThreshold = getBarThreshold(opt);
 
 	let chartConfigObj = _get(chartConfig, [opt.chart.id, e.switchId], []);
 	if(Array.isArray(chartConfigObj)){
 		chartConfigObj = _get(chartConfigObj, [(opt.chart.id == "chart1")? e.tabs1: (opt.chart.id == "chart2")? e.tabs2: []], []);
 	}
 
-
-	let chartType = _get(chartConfigObj, ["type"], "line");
-	chartType = (chartType == "bar")? (opt.barThreshold)? chartType: "line": chartType;
-	_set(opt, ["chart", "type"], chartType);
-
-	_set(opt, ["chart", "stacked"], _get(chartConfigObj, ["stacked"], false));
+	const chartType = _get(chartConfigObj, ["type"], "line");
+	opt.chart.type = (chartType == "bar")? (opt.barThreshold)? chartType: "line": chartType;
+	opt.chart.stacked = _get(chartConfigObj, ["stacked"], false);
 
 	opt.seriesall = _get(chartConfigObj, ["series"], []).map((obj)=>{
 		const index = _get(e.data, ["keys", opt.mode], []).indexOf(obj.data);
