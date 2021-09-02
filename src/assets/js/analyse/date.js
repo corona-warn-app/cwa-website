@@ -33,11 +33,13 @@ $(() => {
 	});
 
 	$(document).on("blur",".analyseRangePicker-input", function(e){
-		const name = $(this).attr("name")
-		const dateFromPicker = (name == "start")? picker.getStartDate().dateInstance: picker.getEndDate().dateInstance; 
-		$(this).val(DateTime.fromJSDate(dateFromPicker).toLocaleString(dateLocaleFormat));
+		setTimeout(() => {
+			const name = $(this).attr("name")
+			const dateFromPicker = (name == "start")? picker.getStartDate().dateInstance: picker.getEndDate().dateInstance; 
+			$(this).val(DateTime.fromJSDate(dateFromPicker).toLocaleString(dateLocaleFormat));
+		}, 400)
+		
 	});
-	
 	
 
 	$('.analyseRangePicker-input').each(function(){
@@ -66,14 +68,12 @@ $(() => {
 	});
 
 
-	function pickerDateFormater(date){
-		return (date)? DateTime.fromJSDate(date.dateInstance).toLocaleString(dateLocaleFormat): "";
-	}
 
 	const pickerCols = (window.matchMedia("(max-width: 992px)").matches)? 1: 2;
-
 	const picker = new Litepicker({ 
-		element: document.querySelector('.analyseRangePicker-picker'),
+		parentEl: document.querySelector('.analyseRangePicker-picker'),
+		element: document.querySelector('.analyseRangePicker-input-start'),
+ 	 	elementEnd: document.querySelector('.analyseRangePicker-input-end'),
 		inlineMode: true,
 		singleMode: false,
 		lang: documentLang,
@@ -83,7 +83,8 @@ $(() => {
 		maxDate: now, 
 		scrollToDate: false,
 		autoApply: true,
-		format: "YYYY-MM-DD",
+		format: (documentLang == "de")? "DD.MM.YYYY": "MM/DD/YYYY",
+		allowRepick: true,
 		buttonText: {
 			"previousMonth":'<svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.8912 21L5.75 12.75L13.8912 4.5L15.8125 6.447L9.56007 12.75L15.8125 19.053L13.8912 21Z" fill="#006082"/></svg>',
 			"nextMonth":'<svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.10882 3L17.25 11.25L9.10882 19.5L7.1875 17.553L13.4399 11.25L7.1875 4.947L9.10882 3Z" fill="#006082"/></svg>'
@@ -91,13 +92,10 @@ $(() => {
 		setup: (picker) => {
 
 			picker.on('clear:selection', () => {
-			   $(".analyseRangePicker-input").val("")
-			});
-
-
-		  	picker.on('selected', (date1, date2) => {
-			   $(".analyseRangePicker-input-start").val(pickerDateFormater(date1))
-			   $(".analyseRangePicker-input-end").val(pickerDateFormater(date2))
+				let dateStr = $(".analyseRangePicker-btn span").html();
+				dateStr = dateStr.split(" - ");
+				picker.setDateRange(...dateStr);
+			   $(".analyseRangePicker").removeClass("active")
 			});
 		}
 	});
@@ -111,7 +109,6 @@ $(() => {
 
 	$(document).on("click",".analyseRangePicker-cancel", function(e){
 		picker.clearSelection()
-		$(".analyseRangePicker").removeClass("active")
 	});
 
 	$(document).on("click",".analyseRangePicker-apply", function(){

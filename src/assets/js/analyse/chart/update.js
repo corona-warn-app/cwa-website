@@ -7,20 +7,21 @@ import chartConfig from './config.js';
 import chartOptions from './options.js';
 
 
-function getBarThreshold(opt){
-	const mode = _get(opt, ["mode"], "daily");	
-	const mobile = (window.matchMedia("(max-width: 992px)").matches);
-	const value = (mobile)? [30, 100]: [90, 400];
-	const barThreshold = (mode == "daily")? value[0]: value[1];
-	return (opt.range <= barThreshold);
-}
+const mobile = (window.matchMedia("(max-width: 992px)").matches);
+const value = (mobile)? [30, 100]: [90, 400];
+const barThreshold = {
+	"daily": value[0],
+	"weekly": value[0]
+};
+
+
 
 export default function(e, i){
 	let opt = Object.assign({}, chartOptions);
 	opt.chart.id = `chart${i}`;
 	opt.mode = (e.switchId == 3)? "weekly": "daily";
 	opt.range = e.data.range;
-	opt.barThreshold = getBarThreshold(opt);
+	opt.barThreshold = (opt.range <= barThreshold[opt.mode]);
 
 	let chartConfigObj = _get(chartConfig, [opt.chart.id, e.switchId], []);
 	if(Array.isArray(chartConfigObj)){
