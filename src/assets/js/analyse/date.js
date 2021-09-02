@@ -16,9 +16,9 @@ const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
 const now = DateTime.now().minus({days: 1});
 
 
-const date$S = new Subject;
+const date$ = new Subject;
 
-const date$ = date$S.pipe(takeWhile(val => lock.state));
+// const date$ = date$S.pipe(takeWhile(val => lock.state));
 
 $(() => {
 
@@ -95,13 +95,12 @@ $(() => {
 			"nextMonth":'<svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.10882 3L17.25 11.25L9.10882 19.5L7.1875 17.553L13.4399 11.25L7.1875 4.947L9.10882 3Z" fill="#006082"/></svg>'
 		},
 		setup: (picker) => {
-
 			picker.on('clear:selection', () => {
 				let dateStr = $(".analyseRangePicker-btn span").html();
 				dateStr = dateStr.split(" - ");
 				picker.setDateRange(...dateStr);
 			   $(".analyseRangePicker").removeClass("active")
-			});
+			}); 
 		}
 	});
 
