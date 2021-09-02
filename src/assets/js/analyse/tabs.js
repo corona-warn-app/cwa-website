@@ -1,5 +1,6 @@
 import { fromEvent } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
+import { map, startWith, takeWhile } from 'rxjs/operators';
+import lock from './lock.js';
 
 const $ = window.jQuery;
 const obsArray = [];
@@ -9,7 +10,8 @@ document.querySelectorAll(".analyseTabs").forEach((e) => {
 	.pipe(
 		startWith({
 			target: e.querySelector(".analyseTabs-item.first")
-		})
+		}),
+		takeWhile(val => lock.state)
 	); 
 
 	tabs$.subscribe(e => {

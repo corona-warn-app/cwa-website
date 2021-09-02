@@ -2,6 +2,9 @@ import Litepicker from 'litepicker';
 import Cleave from 'cleave.js';
 import { DateTime, Settings } from 'luxon';
 import { Subject } from 'rxjs';
+import { takeWhile } from 'rxjs/operators';
+
+import lock from './lock.js';
 
 const $ = window.jQuery;
 
@@ -13,7 +16,9 @@ const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
 const now = DateTime.now().minus({days: 1});
 
 
-const date$ = new Subject;
+const date$S = new Subject;
+
+const date$ = date$S.pipe(takeWhile(val => lock.state));
 
 $(() => {
 

@@ -1,6 +1,7 @@
 import ApexCharts from 'apexcharts'
 import _get from 'lodash/get';
 
+import lock from '../lock.js';
 import translate from '../translate.js';
 
 import chartConfig from './config.js';
@@ -17,6 +18,7 @@ const barThreshold = {
 
 
 export default function(e, i){
+	lock.set(`chart${i}`)
 	let opt = Object.assign({}, chartOptions);
 	opt.chart.id = `chart${i}`;
 	opt.mode = (e.switchId == 3)? "weekly": "daily";

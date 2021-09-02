@@ -1,5 +1,7 @@
 import { DateTime } from 'luxon';
 
+import lock from '../lock.js';
+
 const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';
 
@@ -22,13 +24,15 @@ export default {
 		},
 		zoom: {
         	enabled: false
-      	}
+      	},
+		events: {
+			updated: function(chartContext, config){
+				lock.unset(config.config.chart.id)
+			}
+		}
 	},
 	grid: {
-		// show: true,
 	    borderColor: '#CFD4D9',
-	 //    strokeDashArray: 0,
-	 //    position: 'back',
 	    xaxis: {
 	        lines: {
 	            show: false
@@ -38,15 +42,7 @@ export default {
 	        lines: {
 	            show: true
 	        }
-	    },  
-	 //    row: {
-	 //        colors: undefined,
-	 //        opacity: 0.5
-	 //    },  
-	 //    column: {
-	 //        colors: undefined,
-	 //        opacity: 0.5
-	 //    },
+	    }
 	},
 	yaxis: {
 		show: true,
