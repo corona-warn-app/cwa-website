@@ -3,12 +3,8 @@ import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 import Cleave from 'cleave.js';
 import Papa from 'papaparse';
-import $ from 'jquery';
 import 'regenerator-runtime/runtime'
 
-$(".nav-tabs li.nav-item a.nav-link").click(function() {
-  $(".nav-tabs li.nav-item a.nav-link").removeClass('active');
-});
 
 function isValidDate(date) {
 	return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));

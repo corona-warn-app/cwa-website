@@ -9,18 +9,16 @@
       <p>{{{page-contents.section-main.introCLI}}}</p>
       
       <!-- Nav tabs -->
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#single">{{page-contents.section-main.tabs.single}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#multi">{{page-contents.section-main.tabs.multi}}</a>
-        </li>
-      </ul>
 
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" href="#single">{{page-contents.section-main.tabs.single}}</a>
+            <a class="nav-item nav-link" href="#multi">{{page-contents.section-main.tabs.multi}}</a>
+        </div>
+      </nav>
       <!-- Tab panes -->
       <div class="tab-content">
-        <div class="tab-pane container active" id="single">
+        <div class="tab-pane container fade show active" id="single">
           <div class="row">
             <div class="col col-12 col-lg-6">
               
