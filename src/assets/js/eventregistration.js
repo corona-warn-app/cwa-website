@@ -2,6 +2,8 @@ import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 import Cleave from 'cleave.js';
+import Papa from 'papaparse';
+import 'regenerator-runtime/runtime'
 
 function isValidDate(date) {
 	return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
@@ -54,6 +56,8 @@ document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventqrcode').classList.add('d-none');
   document.getElementById('printCode').disabled = true;
   document.getElementById('downloadCode').disabled = true;
+  document.getElementById('printMultiCode').disabled = true;
+  document.getElementById('downloadMultiCode').disabled = true;
 });
 
 document.getElementById('generateQR').addEventListener('click', function (e) {
@@ -68,6 +72,28 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
     document.getElementById('eventplaceholder').classList.add('d-none');
     let canvas = document.getElementById('eventqrcode');
     canvas.classList.remove('d-none');
+  }
+});
+
+document.getElementById('generateMultiQR').addEventListener('click', function (e) {
+  e.preventDefault();
+  if (ValidateMultiQRForm()) {
+    parseCsv(document.getElementById('csvFile').files[0]).then(function(result) {
+      let json = result.data;
+      //Remove last empty line
+      if(json[json.length] === []) json.pop();
+      if(checkCSVHeaders(json)){
+        if(json.length > 1) {
+          GenerateMultiQRCode(json).then(function(qrList) {
+            if(qrList.length > 0) {
+              printQRsOnPage(qrList).then(function(pages){
+                printPages(pages)
+              });
+            }
+          });
+        } else document.getElementById('qr-error-filewithnodata').style.display = 'block';
+      } else document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
+    });
   }
 });
 
@@ -104,6 +130,58 @@ document.getElementById('printCode').addEventListener('click', function (e) {
     printWindow.close();
   };
   printWindow.document.getElementById("img").src = document.getElementById('eventqrcode').toDataURL();
+});
+
+document.getElementById('downloadMultiCode').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  let pages = document.getElementById('qrContainer').childNodes;
+  let today = new Date();//.toISOString().slice(0,10);
+  let date = today.toISOString().slice(0,10);
+  //let date =  `${today.getDate()}-${today.getMonth()+1}-${today.getFullYear()}`;
+  let time = ("0"+today.getHours()).slice(-2) + "-" + ("0"+today.getMinutes()).slice(-2)
+  pages.forEach((page, index) => {
+    let dlLink = document.createElement('a');
+    //Event_QR_Codes_Page_01_Date_2021-09-01_Time_12-49
+    dlLink.download = `Event_QR_Codes_Date_${date}_Time_${time}_Page-${("0" + (1 + index)).slice(-2)}.png`;
+    dlLink.href = page.toDataURL();
+    dlLink.click();
+  })
+});
+
+document.getElementById('printMultiCode').addEventListener('click', function (e) {
+  e.preventDefault();
+  //Get canvas list
+  let canvasList = document.getElementsByTagName("canvas");
+
+  let printWindow = window.open();
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>QR List</title>
+      </head>
+      <body style="margin:0;padding:0;width:100%">
+        <div id="qrContainer">
+
+        </div>
+      </body>
+    </html>
+  `);
+
+
+  //starts on 2 to avoid empty canvas
+  for(let i = 2; i < canvasList.length; i++) {
+    let img = printWindow.document.createElement("img");
+    img.src = canvasList[i].toDataURL();
+    img.style.width = '100%';
+    printWindow.document.getElementById("qrContainer").appendChild(img);
+  }
+
+   setTimeout(() => {
+     printWindow.print();
+     printWindow.close();
+   }, 250);
 });
 
 function ValidateQRForm() {
@@ -187,6 +265,50 @@ function ValidateQRForm() {
   return errors === 0;
 }
 
+function ValidateMultiQRForm() {
+  let errors = 0;
+
+  let errorMessages = document.querySelectorAll('.invalid-feedback');
+  for (let i = 0; i < errorMessages.length; i++) {
+    errorMessages[i].style.display = 'none';
+  }
+
+  let fileExtension = document.getElementById('csvFile').value.split('.').pop();
+  if (!fileExtension.length) {
+    document.getElementById('qr-error-filerequired').style.display = 'block';
+    errors++;
+  } else {
+    if(fileExtension !== 'csv') {
+      document.getElementById('qr-error-wrongfileextension').style.display = 'block';
+    errors++;
+    }
+  }
+  return errors === 0;
+}
+
+async function parseCsv(file) {
+  return new Promise((resolve, reject) => {
+    Papa.parse(file, {
+      header: true,
+      skipEmptyLines: true,
+      transform: (value) => {
+        return value.trim();
+      },
+      complete: (results) => {
+        return resolve(results);
+      },
+      error: (error) => {
+        return reject(error);
+      },
+    });
+  });
+}
+
+function checkCSVHeaders(json) {
+  let HEADERS = ["filepath","description","address","startdate","enddate","type","defaultcheckinlengthinminutes"];
+  return (Object.keys(json[0]).sort().join(',') === HEADERS.sort().join(','))
+}
+
 function GenerateQRCode() {
   let description = document.getElementById('description').value;
   let address = document.getElementById('address').value;
@@ -231,7 +353,7 @@ function GenerateQRCode() {
   let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
   let canvas = document.getElementById('eventqrcode');
   let ctx = canvas.getContext('2d');
-   
+
   QRCode.toDataURL('https://e.coronawarn.app?v=1#' + qrContent, {
     margin: 0,
     width: 1100
@@ -262,4 +384,177 @@ function GenerateQRCode() {
     }
     img.src = '/assets/img/pt-poster-1.0.0.png';
   });
+}
+
+async function GenerateMultiQRCode(data) {
+  return new Promise((resolve) => {
+    let qrList = [];
+    let error = false;
+    let index = 0;
+    for(const qr of data) {
+      let description = qr.description
+      let address = qr.address;
+      let defaultcheckinlengthMinutes = qr.defaultcheckinlengthinminutes;
+      let locationType = qr.type;
+
+      try {
+        let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
+        let validLocation = !Number.isNaN(parseInt(locationType));
+        let validStartDate, validEndDate;
+        if(validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
+          validStartDate = new Date(qr.startdate).getTime() > 0 && qr.startdate !== "" && qr.startdate !== null;
+          validEndDate = new Date(qr.enddate).getTime() > 0 && qr.enddate !== "" && qr.enddate !== null;
+          if(!validStartDate || !validEndDate) {
+            validLocation = false
+          }
+        }
+        let validDescription = description !== "" && description !== null;
+        let validAddress = address !== "" && address !== null;
+
+        if(validCheckinLength && validLocation && validDescription && validAddress) {
+          let locationData = new proto.CWALocationData();
+          locationData.setVersion(1);
+          locationData.setType(locationType);
+          locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthMinutes);
+
+          let crowdNotifierData = new proto.CrowdNotifierData();
+          crowdNotifierData.setVersion(1);
+          crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
+
+          let seed = new Uint8Array(16);
+          crypto.getRandomValues(seed);
+          crowdNotifierData.setCryptographicseed(seed);
+
+          let traceLocation = new proto.TraceLocation();
+          traceLocation.setVersion(1);
+          traceLocation.setDescription(description);
+          traceLocation.setAddress(address);
+
+          if (locationType >= 9 || locationType === 2) {
+            let startdate = qr.startdate.split(' ')[0].split('.');
+            let starttime = qr.startdate.split(' ')[1]
+            traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
+
+            let enddate = qr.enddate.split(' ')[0].split('.');
+            let endtime = qr.enddate.split(' ')[1]
+            traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
+          }
+
+          let payload = new proto.QRCodePayload();
+          payload.setLocationdata(traceLocation);
+          payload.setCrowdnotifierdata(crowdNotifierData);
+          payload.setVendordata(locationData.serializeBinary());
+          payload.setVersion(1);
+
+          let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+
+          QRCode.toDataURL('https://e.coronawarn.app?v=1#' + qrContent, {
+            margin: 0,
+            width: 1100
+          }, function (err, qrUrl) {
+            if (err) {
+              console.error(err);
+              return;
+            }
+
+            let qrImg = new Image();
+            qrImg.src = qrUrl;
+            qrList.push({"id": index,"address": address, "description": description, "qr": qrImg});
+            index++;
+          });
+        } else {
+          error = true;
+          break;
+        }
+      } catch {
+        error = true;
+        break;
+      }
+    }
+    if(error) {
+      document.getElementById('qr-error-wrongfileformatfields').style.display = 'block';
+      qrList = [];
+    }
+    return resolve(qrList);
+  })
+}
+
+async function printQRsOnPage(qrList) {
+  return new Promise ((resolve) => {
+    let grid = document.getElementById("pageTemplate").value.split('x')
+    let col, row;
+    row = grid[0];
+    col = grid[1];
+    let pageCapacity = row * col;
+    let pagesNeeded = Math.ceil(qrList.length/pageCapacity);
+    let pages = [];
+
+    let container = document.getElementById("qrContainer");
+    container.innerHTML = '';
+
+    let imgtemplate = new Image();
+    imgtemplate.src = '/assets/img/pt-poster-1.0.0-multiqr.png';
+    imgtemplate.className = 'img img-fluid w-100';
+    imgtemplate.onload = function() {
+      let i = 0;
+
+      const SPACE_X = 50;
+      const SPACE_Y = 150;
+      const SPACE_DESCRIPTION = SPACE_Y/3;
+      const SPACE_ADDRESS = SPACE_DESCRIPTION*2;
+      for(let pagem = 0; pagem < pagesNeeded; pagem++){
+        let canvasm = document.createElement("canvas");
+        let ctxm = canvasm.getContext('2d');
+        ctxm.width = 1654;
+        ctxm.height = 2339;
+        canvasm.width = 1654;
+        canvasm.height = 2339;
+        canvasm.style.maxWidth = "100%"
+
+        ctxm.drawImage(imgtemplate, 0, 0);
+        let realWidth = canvasm.width - (SPACE_X*col);
+
+        for(let r = 0; r < row; r++){
+          for(let c = 0; c < col; c++){
+            if(i < qrList.length) {
+              let qrcode = new Image();
+              qrcode.width = realWidth/col;
+              qrcode.height = realWidth/col;
+
+              qrcode.src = qrList[i].qr.src;
+              qrcode.onload = function() {
+                ctxm.drawImage(qrcode, (qrcode.width*c)+(SPACE_X*c) , (qrcode.height*r)+(SPACE_Y*r), qrcode.width , qrcode.height);
+              }
+
+              ctxm.font = "30px sans-serif";
+              ctxm.fillStyle = "black";
+
+              ctxm.fillText(qrList[i].description, (qrcode.width*c)+(SPACE_X*c) , qrcode.height*(r+1)+SPACE_Y*r+SPACE_DESCRIPTION); 
+              ctxm.fillText(qrList[i].address, (qrcode.width*c)+(SPACE_X*c) , qrcode.height*(r+1)+SPACE_Y*r+SPACE_ADDRESS); 
+              i++;
+            }
+          }
+        }
+        canvasm.className = `page-${pagem}`
+        pages.push(canvasm)
+      }
+
+      document.getElementById('printMultiCode').disabled = false;
+      // Active download button
+      document.getElementById('downloadMultiCode').disabled = false;
+      document.getElementById('multieventplaceholder').classList.add('d-none');
+      let canvasx = document.getElementById('multieventqrcode');
+      canvasx.classList.remove('d-none');
+
+      let data = {"pages": pages, "container": container}
+      return resolve(data);
+    }
+    
+  });
+}
+
+async function printPages(data) {
+  data.pages.forEach((printed) => {
+    data.container.appendChild(printed);
+  }) 
 }
