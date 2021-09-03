@@ -5,6 +5,7 @@ import Cleave from 'cleave.js';
 import Papa from 'papaparse';
 import 'regenerator-runtime/runtime'
 
+
 function isValidDate(date) {
 	return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
 }
