@@ -1,15 +1,8 @@
 import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
+import moment from 'moment';
 import Cleave from 'cleave.js';
-
-function isValidDate(date) {
-	return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
-}
-
-function dateTimeToUnixTimestamp(date, time) {
-	return new Date(`${date} ${time}`).getTime() / 1000;
-}
 
 if (document.getElementById('qrform')) {
   UpdateQRForm();
@@ -155,7 +148,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-starttimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(startdate) || !isValidDate(startdate.split(".").reverse().join("-"))) {
+      if (!dateReg.test(startdate) || !moment(startdate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-starttimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -172,7 +165,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-endtimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(enddate) || !isValidDate(enddate.split(".").reverse().join("-"))) {
+      if (!dateReg.test(enddate) || !moment(enddate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-endtimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -213,13 +206,13 @@ function GenerateQRCode() {
   traceLocation.setAddress(address);
 
   if (locationtype >= 9 || locationtype === 2) {
-    let startdate = document.getElementById('starttime-date').value.split('.').reverse().join('-');
+    let startdate = document.getElementById('starttime-date').value.split('.');
     let starttime = document.getElementById('starttime-time').value;
-    traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
+    traceLocation.setStarttimestamp(moment(startdate.reverse().join('-') + ' ' + starttime).format('X'));
 
-    let enddate = document.getElementById('endtime-date').value.split('.').reverse().join('-');
+    let enddate = document.getElementById('endtime-date').value.split('.');
     let endtime = document.getElementById('endtime-time').value;
-    traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
+    traceLocation.setEndtimestamp(moment(enddate.reverse().join('-') + ' ' + endtime).format('X'));
   }
 
   let payload = new proto.QRCodePayload();
