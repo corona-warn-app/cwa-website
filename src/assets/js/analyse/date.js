@@ -2,7 +2,6 @@ import Litepicker from 'litepicker';
 import Cleave from 'cleave.js';
 import { DateTime, Settings } from 'luxon';
 import { Subject } from 'rxjs';
-import { takeWhile } from 'rxjs/operators';
 
 import lock from './lock.js';
 
@@ -18,9 +17,10 @@ const now = DateTime.now().minus({days: 1});
 
 const date$ = new Subject;
 
-// const date$ = date$S.pipe(takeWhile(val => lock.state));
-
 $(() => {
+
+	$(".analyseRangeRadio input:checked").prop('checked', false);
+
 
 	$('.analyseRangeRadio input').each(function(){
 		const v = $(this).val();
@@ -47,30 +47,7 @@ $(() => {
 	});
 	
 
-	$('.analyseRangePicker-input').each(function(){
-		new Cleave(this, {
-		    date: true,
-		    delimiter: (documentLang == "de")? '.': '/',
-		    dateMin: '2020-01-01',
-    		dateMax: now.toISODate(),
-		    datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
-		    onValueChanged: function(e) {
-		    	if(e.target.rawValue.length != 8) return;
-		    	const dateInput = DateTime.fromFormat(e.target.value, "D");
-		    	const dateFromPicker = (e.target.name == "start")? picker.getEndDate().dateInstance: picker.getStartDate().dateInstance; 
-		    	const dates = [dateInput];
-
-		    	if(dateInput > dateFromPicker){
-					dates.unshift(dateFromPicker);
-		 		}else{
-		 			dates.push(dateFromPicker);
-		 		}
-
-		 		picker.setDateRange(...dates);
-		 		picker.gotoDate(dates[0]);
-			}
-		});
-	});
+	
 
 
 
@@ -104,6 +81,32 @@ $(() => {
 		}
 	});
 
+
+	$('.analyseRangePicker-input').each(function(){
+		new Cleave(this, {
+			date: true,
+			delimiter: (documentLang == "de")? '.': '/',
+			dateMin: '2020-01-01',
+			dateMax: now.toISODate(),
+			datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
+			onValueChanged: function(e) {
+				if(e.target.rawValue.length != 8) return;
+				const dateInput = DateTime.fromFormat(e.target.value, "D");
+				const dateFromPicker = (e.target.name == "start")? picker.getEndDate().dateInstance: picker.getStartDate().dateInstance; 
+				const dates = [dateInput];
+
+				if(dateInput > dateFromPicker){
+					dates.unshift(dateFromPicker);
+				}else{
+					dates.push(dateFromPicker);
+				}
+
+				picker.setDateRange(...dates);
+				picker.gotoDate(dates[0]);
+			}
+		});
+	});
+
 	$(document).on("click",".analyseRangePicker-btn", function(e){
 		if(picker.getStartDate()){
 			picker.gotoDate(DateTime.fromJSDate(picker.getStartDate().dateInstance));
@@ -132,6 +135,14 @@ $(() => {
 	});
 
 	$(".analyseRangeRadio.first input").click();
+
+
+	$(document).on("click",".analyseBoards-retry", function(e){
+		date$.next($(".analyseRangeRadio.first input").val().split(","));
+	});
+
+
+	console.log("ok")
 })
 
 

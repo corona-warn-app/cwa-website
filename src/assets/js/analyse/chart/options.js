@@ -9,13 +9,14 @@ const lang = (documentLang == "de")? 'de-DE': 'en-US';
 export default {
 	stroke: {
 		width: 2,
-	    dashArray: [0, 0, 0, 5, 5, 5]
+	    dashArray: []
 	},
 	series: [],
 	chart: {
 		id:"chart",
 		height: 215,
 		width: "100%",
+		height: '253px',
 		type: 'line',
 		toolbar: {
 			autoSelected: 'pan',
@@ -47,6 +48,7 @@ export default {
 	yaxis: {
 		show: true,
 		forceNiceScale: true,
+		tickAmount: 4,
 		labels: {
 			minWidth: 45,
 			maxWidth: 45,
@@ -77,11 +79,7 @@ export default {
           color: 'currentColor',
       	},
 		labels: {
-			style:{
-				colors: ["#898B8B"],
-				fontFamily: 'Roboto, serif',
-				fontSize: '11px',
-			},
+			offsetY: -3,
 			datetimeFormatter: {
 				year: 'yyyy',
 				month: "MMM",

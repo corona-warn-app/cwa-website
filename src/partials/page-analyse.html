@@ -71,7 +71,7 @@
 		</div>
 
 		{{#each page-contents.range.radio}}
-			<label class="analyseRangeRadio {{#if @last}}first{{/if}}">
+			<label class="analyseRangeRadio {{#if active}}first{{/if}}">
 				<input type="radio" name="analyseRange" value="{{value}}">
 				<div class="analyseRangeRadio-box"></div>
 				<span>{{label}}</span>
@@ -93,10 +93,14 @@
 	
 
    
-	<div class="analyseBoards active" {{#if page-contents.translations}} data-translations='{{toJSON page-contents.translations}}'{{/if}}>
+	<div class="analyseBoards loading" {{#if page-contents.translations}} data-translations='{{toJSON page-contents.translations}}'{{/if}}>
 		{{#if page-contents.boards.loading}}
 			<div class="analyseBoards-loading">
 				{{page-contents.boards.loading}}
+				<br>
+				<button class="btn btn-secondary  mt-1 analyseBoards-retry" >
+					{{page-contents.boards.loadingBtn}}
+				</button>
 			</div>
 		{{/if}}
 		<div class="row">
@@ -137,9 +141,7 @@
 							</div>
 						{{/if}}
 							
-						<div class="analyseChart">
-							
-						</div>
+						<div class="analyseChart"></div>
 
 						{{#if tabs}}
 							<div class="analyseTabs">

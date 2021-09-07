@@ -5,16 +5,18 @@ import _cloneDeep from 'lodash/cloneDeep';
 import { DateTime } from 'luxon';
 
 
+import chart from './analyse/chart.js';
+import fullscreen from './analyse/fullscreen.js';
+import modal from './analyse/modal.js';
+import totalValues from './analyse/totalValues.js';
+
+
 import data$ from './analyse/data.js';
 import date$ from './analyse/date.js';
 import switchId$ from './analyse/switch.js';
 import tabs$ from './analyse/tabs.js';
 
 
-import fullscreen from './analyse/fullscreen.js';
-import modal from './analyse/modal.js';
-import chart from './analyse/chart.js';
-import totalValues from './analyse/totalValues.js';
 
 var $ = window.jQuery;
 window.$ = window.jQuery;
@@ -64,7 +66,7 @@ data$
 	  		}
 
 		}else{
-			$(".analyseBoards").removeClass("active");
+			$(".analyseBoards").removeClass("loading");
 			totalValues(obj.data);
 		}
 

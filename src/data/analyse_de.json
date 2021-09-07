@@ -14,16 +14,17 @@
         },
         "radio": [
             {
-                "label": "Gesamter Zeitraum",
-                "value": "all"
+                "label": "Letzte 28 Tage",
+                "value": "1month",
+                "active": true
             },
             {
                 "label": "Letzte 6 Monate",
                 "value": "6months"
             },
             {
-                "label": "Letzte 28 Tage",
-                "value": "1month"
+                "label": "Gesamter Zeitraum",
+                "value": "all"
             }
         ]
     },
@@ -52,6 +53,7 @@
     },
     "boards": {
         "loading": "Loading...",
+        "loadingBtn": "Retry",
         "total": "Total Anzahl bis gestern"
     },
     "board": [

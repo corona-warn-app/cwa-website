@@ -12,7 +12,7 @@ const mobile = (window.matchMedia("(max-width: 992px)").matches);
 const value = (mobile)? [30, 100]: [90, 400];
 const barThreshold = {
 	"daily": value[0],
-	"weekly": value[0]
+	"weekly": value[1]
 };
 
 
@@ -33,8 +33,13 @@ export default function(e, i){
 	const chartType = _get(chartConfigObj, ["type"], "line");
 	opt.chart.type = (chartType == "bar")? (opt.barThreshold)? chartType: "line": chartType;
 	opt.chart.stacked = _get(chartConfigObj, ["stacked"], false);
+	opt.stroke.dashArray = [];
 
 	opt.seriesall = _get(chartConfigObj, ["series"], []).map((obj)=>{
+		if(e.switchId == 4 && !obj.ghost){
+			opt.stroke.dashArray.push((obj.data.indexOf("_daily") != -1)? 5: 0);
+		}
+
 		const index = _get(e.data, ["keys", opt.mode], []).indexOf(obj.data);
 		return {
 			ghost: obj.ghost,
