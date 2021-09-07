@@ -137,11 +137,11 @@ export default {
   	tooltip: {
       enabled: true,
       shared: true,
-	  custom: function({seriess, seriesIndex, dataPointIndex, w}) {
+	  custom: function({series, seriesIndex, dataPointIndex, w}) {
 	  	const mode = w.config.mode; 
 		const date = w.config.series[seriesIndex].data[dataPointIndex][0];
 
-		const series = w.config.seriesall.map(e => {
+		const seriesArray = w.config.seriesall.filter(a => (!a.ghost)? w.config.series.find(e => e.name === a.name).data.length > 0: true).map(e => {
 			const value = e.data.find(e => e[0] == date)
 			return `
 				<div class="apexcharts-tooltip-series-group">
@@ -161,7 +161,7 @@ export default {
 
 		return `
 			<div class="apexcharts-tooltip-date">${formatedDate}</div>
-			${series.join("")}
+			${seriesArray.join("")}
 		`
 	  }
 

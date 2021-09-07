@@ -135,9 +135,7 @@ $(() => {
 	});
 
 	$(".analyseRangeRadio.first input").click();
-
-	console.log("ok")
-})
+});
 
 
 export default date$;
