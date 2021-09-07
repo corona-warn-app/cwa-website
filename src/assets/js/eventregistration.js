@@ -1,6 +1,7 @@
 import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
+import moment from 'moment';
 import Cleave from 'cleave.js';
 import Papa from 'papaparse';
 import 'regenerator-runtime/runtime'
@@ -234,7 +235,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-starttimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(startdate) || !isValidDate(startdate.split(".").reverse().join("-"))) {
+      if (!dateReg.test(startdate) || !moment(startdate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-starttimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -251,7 +252,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-endtimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(enddate) || !isValidDate(enddate.split(".").reverse().join("-"))) {
+      if (!dateReg.test(enddate) || !moment(enddate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-endtimeinvaliddate').style.display = 'block';
         errors++;
       }
