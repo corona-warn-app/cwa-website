@@ -25,6 +25,16 @@ window.$ = window.jQuery;
 let cacheData;
 let checkArray;
 
+
+setTimeout(function(){
+	$(".analyseBoards-loading-btn").show();
+},2000)
+
+$(document).on("click",".analyseBoards-loading-btn", function(e){
+	window.location.reload()
+});
+
+
 data$
 	.pipe(
 	    combineLatestWith(
@@ -75,8 +85,7 @@ data$
 
 		charts.forEach((s,i) => s.next(obj));
 		
-
-		// fill chach  vars
+		// fill cache  vars
 		cacheData = obj.data;
 		checkArray = array;
 

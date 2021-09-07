@@ -1,4 +1,9 @@
 {{#if page-contents}}
+{{#if page-contents.translations}} 
+	<script>
+		const analyseTranslations = {{{toJSON page-contents.translations}}}
+	</script>
+{{/if}}
 <div class="container section_bg-light">
 
 	{{#if page-contents.topic}}
@@ -90,15 +95,15 @@
 			{{/each}}
 		</div>
 	{{/if}}
-	
+
 
    
-	<div class="analyseBoards loading" {{#if page-contents.translations}} data-translations='{{toJSON page-contents.translations}}'{{/if}}>
+	<div class="analyseBoards loading">
 		{{#if page-contents.boards.loading}}
 			<div class="analyseBoards-loading">
 				{{page-contents.boards.loading}}
 				<br>
-				<button class="btn btn-secondary  mt-1 analyseBoards-retry" >
+				<button class="btn btn-secondary  mt-1 analyseBoards-loading-btn"  style="display: none;">
 					{{page-contents.boards.loadingBtn}}
 				</button>
 			</div>

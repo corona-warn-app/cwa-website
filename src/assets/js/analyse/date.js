@@ -136,12 +136,6 @@ $(() => {
 
 	$(".analyseRangeRadio.first input").click();
 
-
-	$(document).on("click",".analyseBoards-retry", function(e){
-		date$.next($(".analyseRangeRadio.first input").val().split(","));
-	});
-
-
 	console.log("ok")
 })
 

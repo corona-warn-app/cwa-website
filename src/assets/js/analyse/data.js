@@ -1,8 +1,6 @@
 import { of } from 'rxjs';
 import { fromFetch } from 'rxjs/fetch';
-import { switchMap, catchError } from 'rxjs/operators';
-var $ = window.jQuery;
-
+import { share, switchMap, catchError } from 'rxjs/operators';
 
 let url;
 
@@ -27,11 +25,15 @@ const data$ = fromFetch(url).pipe(
 			console.error(err);
 			return of({ error: true, message: err.message })
 		}
-	)
+	),
+	share()
 );
 
 export default data$;
 
+
+
+// var $ = window.jQuery;
 // $(() => {
 // 	let translations = $(".analyseBoards").data("translations");
 
