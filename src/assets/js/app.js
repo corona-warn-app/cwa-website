@@ -229,6 +229,12 @@ $(document).ready(function(){
     });
 
 
+    // multiqr csv upload name change
+    // to prevent a csp issue due to inline js on eventregistration page
+    $('#csvFile').on('change', () => {
+        document.getElementById('csvName').innerHTML = document.getElementById('csvFile').files[0].name;
+    })
+
     // simple jquery tabs
     $('.nav-tabs a').click(function(e) {
         e.preventDefault();
