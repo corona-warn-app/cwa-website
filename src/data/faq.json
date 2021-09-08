@@ -107,7 +107,7 @@
                         "anchor": "rec_cert",
                         "active": true,
                         "textblock": [
-                            "Recovery certificates are supported since version 2.5 of the Corona-Warn-App."
+                            "Recovery certificates are supported since version 2.5 of the Corona-Warn-App. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson."
                         ]
                     }
                 ]
@@ -147,7 +147,7 @@
                             "The certificate as a document has an issue date and a technical date of expiry, just like your passport or identity card, for example. For all certificates, the date of expiry is set by the issuer of the certificate. Currently, in Germany, the digital vaccination, test and recovery certificates of the EU are usually issued with a technical validity of one year from the date of issue. ",
                             "<b>Effective validity</b>",
                             "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date. While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may deviate from this. ",
-                            "In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days.",
+                            "In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson.",
                             "<b>Check of the validity</b>",
                             "The check app, in Germany the CovPassCheck app, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. ",
                             "If, for example, you have your certificate issued only half a year after the vaccination, then the certificate will technically be valid for another year, but half a year of vaccination has already passed. This means that when checking for vaccination protection, it is recognized that after another six months the vaccination is no longer valid. After that, the check app will reject the certificate as 'invalid', although it is still technically valid, but the effective vaccination validity has expired."
@@ -283,7 +283,7 @@
                         "anchor": "vac_cert_what",
                         "active": true,
                         "textblock": [
-                            "Starting with version 2.3 of the Corona-Warn-App (CWA), you can add your digital vaccination certificate to the CWA and thus securely and digitally prove your Corona vaccination status via QR code. Beginning with version 2.5, certificates for more than one person can be stored in the app. The CWA indicates the complete vaccination protection 14 days after the last required vaccination. The digital vaccination certificate is an additional way to document vaccinations. Thereby you are able to digitally store information such as vaccination time and vaccine in a personalized manner on your smartphones. The use of a digital certificate of vaccination in the CWA is voluntary. You can also provide proof of Corona vaccination status in a different way."
+                            "Starting with version 2.3 of the Corona-Warn-App (CWA), you can add your digital vaccination certificate to the CWA and thus securely and digitally prove your Corona vaccination status via QR code. Beginning with version 2.5, certificates for more than one person can be stored in the app. The CWA indicates the complete vaccination protection 14 days after the last required vaccination. The digital vaccination certificate is an additional way to document vaccinations. Thereby you are able to digitally store information such as vaccination time and vaccine in a personalized manner on your smartphones. The use of a digital certificate of vaccination in the CWA is voluntary. You can also provide proof of Corona vaccination status in a different way. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson."
                         ]
                     },
                     {
@@ -312,7 +312,7 @@
                             "The EU digital COVID vaccination certificate can not only be used in Germany. The EU digital COVID vaccination certificate issued in Germany can also be regarded as proof of vaccinations in other EU countries if the respective EU member state allows digital proof. The same applies to recovery certificates and test certificates. From Corona-Warn-App version 2.6, the validity of your certificate can also be checked within the app before departure.",
                             "In addition, the respective EU member states generally also check the corresponding certificate with their own verifier apps. The data can be read out regardless of the language of the certificate. It is therefore irrelevant in which language your certificate is displayed on your device.",
                             "The EU digital COVID vaccination certificate can be presented as a printed QR code or as a scan in the Corona-Warn-App or CovPass-App. The known proof of vaccination in the form of the yellow vaccination booklet remains valid. The new EU digital COVID vaccination certificate is merely a user-friendly and trustworthy addition to the yellow vaccination booklet that can be easily checked.",
-                            "Please note that sufficient effectiveness of vaccination protection does not occur until 14 days after the last necessary vaccination.",
+                            "Please note that sufficient effectiveness of vaccination protection does not occur until 14 days after the last necessary vaccination. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson.",
                             "Summarized information about the corona measures and travel restrictions applicable in the European countries can be found on this page: <a href='https://reopen.europa.eu/en'  target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>. The update is the responsibility of the respective countries. There you will also find information on what personal information and documents you must present upon entry. Data processing is subject to the regulations of the respective country of entry. Details can be found on the national websites of the respective EU countries, which are linked on the above-mentioned page."
                         ]
                     },
@@ -322,6 +322,26 @@
                         "active": true,
                         "textblock": [
                             "The digital proof of vaccination is generated in the doctor's practice or in a vaccination center. After entering or transferring the data, a vaccination certificate token (QR code) will be created for you, which you can scan directly with the Corona-Warn-App (CWA) or can be handed to you on a paper printout and later scanned with the CWA.  You can then manage your digital vaccination certificates on your smartphone."
+                        ]
+                    },
+                    {
+                        "title": "How do I become aware of booster vaccinations in the context of Corona?",
+                        "anchor": "vac_cert_booster_info",
+                        "active": true,
+                        "textblock": [
+                            "The Conference of Health Ministers has now passed a regulation on COVID 19 booster vaccinations. An additional booster vaccination is designed to help raise neutralizing antibody titers again, which may decline over time after basic immunization. This becomes particularly important if a weak/muted vaccine response is assumed or recognized after basic immunization in certain groups of vulnerable people.",
+                            "The Corona-Warn-App (CWA) will notify the user to consider a booster vaccination if certain conditions are met. These conditions are based on the recommendations of the Paul Ehrlich Institute and the Permanent Vaccination Commission (STIKO) of the Robert Koch Institute (RKI).",
+                            "How long someone is effectively protected by a COVID 19 vaccination (basic immunization) depends on several factors and can therefore not be answered in general terms according to current knowledge. For this reason, the corresponding CWA rules for vaccination schedules and booster vaccinations are continuously reviewed and adapted in coordination with the RKI according to developments and new findings."
+                        ]
+                    },
+                    {
+                        "title": "How do I manage booster vaccination certificates in my CWA?",
+                        "anchor": "vac_cert_booster_cwa",
+                        "active": true,
+                        "textblock": [
+                            "In one of the upcoming releases, the Corona-Warn-App will allow importing certificates documenting a booster vaccination.",
+                            "Users will receive a notification to consider a booster vaccination if necessary. The notification is based on national rules that have been implemented in collaboration and alignment with the Robert Koch Institute (RKI). These rules are continuously reviewed and adapted according to developments and new findings.",
+                            "Please note: The booster vaccination certificate is only valid if you can also prove the required basic immunization by the corresponding last certificate of the vaccination series. Please do not delete the other vaccination certificates from the CWA! Since no uniform EU-standards have yet been defined on this topic, you should also carry the basic immunization certificates with you, especially when traveling abroad, whether in the CWA, as a PDF, or as a paper printout. We therefore recommend keeping all vaccination certificates in the app, even if they are no longer up to date."
                         ]
                     },
                     {
@@ -1329,6 +1349,19 @@
                             "Alternatively, open your device Settings, then select 'Google > COVID-19 Exposure Notifications' where you can find the Version displayed at the bottom of the page.",
                             "Google provides general and release information about the COVID-19 Exposure Notifications, see:",
                             "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play services' Exposure Notifications module</a></li></ul>"
+                        ]
+                    },
+                    {
+                        "title": "How can I warn for others?",
+                        "anchor": "warn_for_others",
+                        "active": true,
+                        "textblock": [
+                            "As an organizer of an event, starting with version 2.9, you can warn for others, such as for a person who has tested positive and was attending an event but not checked in via the Corona-Warn-App (CWA), upon request by the health department.",
+                            "If a person who has not checked in later tests positive, guests may be alerted if they were in the same room at the same time or up to 30 minutes after the person who tested positive.",
+                            "To alert other guests using the CWA as an event organizer, please follow these steps:",
+                            "<ul><li>If you subsequently become aware of the presence of a positively tested person at your event, and the health department has not yet contacted you as an event organizer, contact the health department. The health department can issue you a TAN if necessary.</li><li>Click 'Create QR Code' on the CWA home page.</li><li>On the 'My QR Codes' page, click the three-dot menu in the upper right corner and then click the 'Warn for Others' menu item.</li><li>Click 'Continue' on the info screen.</li><li>Select an event for which you would like to warn others for an infected person. Or restore a deleted event by scanning the event's QR code again. Click 'Continue'.</li><li>Indicate the length of stay of the person who tested positive for whom you want to warn. You can get this information from the health department. Click on 'Continue'.</li><li>Enter the 10-digit TAN that you were given. Click on 'Send warning'.</li></ul>",
+                            "<div class='container'><div class='row'><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others1.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others2.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others3.png' alt='image'></div></div></div>",
+                            "<div class='container'><div class='row'><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others4.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others5.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others6.png' alt='image'></div></div></div>"
                         ]
                     }
                 ]
