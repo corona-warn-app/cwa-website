@@ -50,8 +50,10 @@ gulp.task(
     cleanScienceBlogs,
     buildBlogFiles,
     buildScienceBlogFiles,
+    cwaaJs,
+    javascript,
     gulp.parallel(
-      pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects
     ),
     images_webp,
     sass,
@@ -244,13 +246,13 @@ let webpackConfig = {
     rules: [
       {
         test: /\.js$/,
-        // use: {
-        //   loader: 'babel-loader',
-        //   options: {
-        //     presets: ['@babel/preset-env'],
-        //     compact: false
-        //   }
-        // }
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            compact: false
+          }
+        }
       }
     ]
   },
@@ -259,6 +261,50 @@ let webpackConfig = {
   },
   devtool: !PRODUCTION && 'source-map'
 };
+
+let webpackConfig2 = {
+  mode: PRODUCTION ? 'production' : 'development',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            compact: false
+          }
+        }
+      }
+    ]
+  },
+  performance: {
+    hints: false
+  },
+  devtool: !PRODUCTION && 'source-map'
+};
+
+
+
+
+function cwaaJs() {
+  return gulp
+    .src(PATHS.cwaa)
+    .pipe(named())
+    .pipe($.sourcemaps.init())
+    .pipe(webpackStream(webpackConfig2, webpack2))
+    // .pipe(
+    //   $.if(
+    //     PRODUCTION,
+    //     $.uglify().on('error', e => {
+    //       console.error('Uglify error', e);
+    //     })
+    //   )
+    // )
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -378,8 +424,11 @@ function watch(done) {
     .on('all', gulp.series(resetPages, pages, reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp
-    .watch('src/assets/js/**/*.js')
+    .watch(['src/assets/js/**/*.js', '!src/assets/js/analyse/**/*'])
     .on('all', gulp.series(javascript, reload));
+  gulp
+    .watch('src/assets/js/analyse/**/*.js')
+    .on('all', gulp.series(cwaaJs, reload));
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
