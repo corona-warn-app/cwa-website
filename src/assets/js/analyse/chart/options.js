@@ -1,6 +1,8 @@
+import $ from 'jquery';
 import { DateTime } from 'luxon';
 
 import lock from '../lock.js';
+import translate from '../translate.js';
 
 const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';
@@ -13,10 +15,11 @@ export default {
 	},
 	series: [],
 	chart: {
-		id:"chart",
+		id: "chart",
+		group: "chart",
 		height: 215,
 		width: "100%",
-		height: '253px',
+		height: '230px',
 		type: 'line',
 		toolbar: {
 			autoSelected: 'pan',
@@ -27,8 +30,8 @@ export default {
         	enabled: false
       	},
 		events: {
-			updated: function(chartContext, config){
-				lock.unset(config.config.chart.id)
+			updated: function(chartContext, config) {
+				lock.unset(config.config.chart.id);
 			}
 		}
 	},
@@ -99,7 +102,7 @@ export default {
 		}
 	},
 	legend: {
-		show: true,
+		show: false,
 		showForSingleSeries: true,
 		horizontalAlign: 'right', 
 		fontSize: '11px',

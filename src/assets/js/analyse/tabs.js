@@ -1,8 +1,8 @@
+import $ from 'jquery';
 import { fromEvent } from 'rxjs';
 import { map, startWith, takeWhile } from 'rxjs/operators';
 import lock from './lock.js';
 
-const $ = window.jQuery;
 const obsArray = [];
 
 document.querySelectorAll(".analyseTabs").forEach((e) => {

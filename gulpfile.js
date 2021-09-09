@@ -77,6 +77,8 @@ gulp.task('default', gulp.series('build', server, watch));
 
 
 
+// TODO: remove before flight
+// ####################################
 // minimize folder size by removing unnessaray file for the analyse page development
 gulp.task('build-analyse', gulp.series(copyglobal, deleteglobal, addbasepath, 'build', minTestSize));
 
@@ -127,6 +129,15 @@ function minTestSize(done) {
     console.log(values);
   });
 }
+
+// ####################################
+
+
+
+
+
+
+
 
 
 
@@ -293,14 +304,6 @@ function cwaaJs() {
     .pipe(named())
     .pipe($.sourcemaps.init())
     .pipe(webpackStream(webpackConfig2, webpack2))
-    // .pipe(
-    //   $.if(
-    //     PRODUCTION,
-    //     $.uglify().on('error', e => {
-    //       console.error('Uglify error', e);
-    //     })
-    //   )
-    // )
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }

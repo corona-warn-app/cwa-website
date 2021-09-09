@@ -1,11 +1,10 @@
+import $ from 'jquery';
 import Litepicker from 'litepicker';
 import Cleave from 'cleave.js';
 import { DateTime, Settings } from 'luxon';
 import { Subject } from 'rxjs';
 
 import lock from './lock.js';
-
-const $ = window.jQuery;
 
 const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';

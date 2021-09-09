@@ -1,5 +1,7 @@
+import $ from 'jquery';
 import ApexCharts from 'apexcharts'
 import _get from 'lodash/get';
+import _set from 'lodash/set';
 
 import lock from '../lock.js';
 import translate from '../translate.js';
@@ -7,6 +9,7 @@ import translate from '../translate.js';
 import chartConfig from './config.js';
 import chartOptions from './options.js';
 
+window.ApexCharts = ApexCharts;
 
 const mobile = (window.matchMedia("(max-width: 992px)").matches);
 const value = (mobile)? [30, 100]: [90, 400];
@@ -15,7 +18,7 @@ const barThreshold = {
 	"weekly": value[1]
 };
 
-
+let resetSeriesCheck = {};
 
 export default function(e, i){
 	lock.set(`chart${i}`)
@@ -58,7 +61,39 @@ export default function(e, i){
 	});
 
 	opt.series = opt.seriesall.filter(e => !e["ghost"]);
+
+	//Only reset series if necessary
+	if(_get(resetSeriesCheck, [opt.chart.id], false)){
+		ApexCharts.exec(opt.chart.id, "resetSeries", true, false);
+		_set(resetSeriesCheck, opt.chart.id, false)
+	}
+	// update chart options
 	ApexCharts.exec(opt.chart.id, "updateOptions", opt, true);
+
+
+	// render custom legend
+	const $e  = $("#apexcharts" + opt.chart.id ).parent().next();
+	const labels = [translate("legendLabelMean"), translate("legendLabelDaily")];
+	const outArray = opt.series.map((e, i) => `
+		${(i == opt.stroke.dashArray.indexOf(5))? `</div><div class="analyseChartLegend-row">`: ""}
+		${(opt.stroke.dashArray.indexOf(5) >= 0 && (i === 0 || i == opt.stroke.dashArray.indexOf(5)))? `<div class="analyseChartLegend-label">${labels.pop()}</div>`: ""}
+		<button style="color: ${e.color};" data-id="${opt.chart.id},${e.name}" class="btn analyseChartLegend-item ${(opt.stroke.dashArray.indexOf(5) >= 0 && i >= opt.stroke.dashArray.indexOf(5))? `analyseChartLegend-item_d`: ``}"><span>${e.name}</span></button>
+	`);
+
+	$e.html(`<div class="analyseChartLegend-row">${outArray.join("")}</div>`);
+
 	console.log("chart update", opt.chart.id, e, opt);
 		
 };
+
+
+
+
+$(document).on("click",".analyseChartLegend-item", function() {
+	const id = $(this).data("id").split(",");
+	if(!Array.isArray(id)) return;  
+	$(this).toggleClass("deactive")
+	_set(resetSeriesCheck, [id[0]], ($(".analyseChartLegend-item.deactive").length > 0));
+	ApexCharts.exec(id[0], "toggleSeries", id[1]);
+
+});

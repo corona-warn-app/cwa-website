@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import { combineLatestWith } from 'rxjs';
 import _get from 'lodash/get';
 import _mapValues from 'lodash/mapValues';
@@ -17,8 +18,6 @@ import switchId$ from './switch.js';
 import tabs$ from './tabs.js';
 
 
-
-var $ = window.jQuery;
 window.$ = window.jQuery;
 
 

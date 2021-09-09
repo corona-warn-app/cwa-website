@@ -1,10 +1,9 @@
+import $ from 'jquery';
 import ApexCharts from 'apexcharts'
 import { Subject } from 'rxjs';
 
 import chartOptions from './chart/options.js';
 import chartUpdate from './chart/update.js';
-
-const $ = window.jQuery;
 let chartsAry = [];
 
 $(() => {

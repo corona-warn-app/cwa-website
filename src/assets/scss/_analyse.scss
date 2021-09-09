@@ -460,8 +460,85 @@
 
 
 	&Chart{
-		min-height: 260px !important;
 		margin-bottom: 2px;
+
+		&Legend{
+			font-size: 11px;
+			line-height: 13px;
+			color: #3A3D3E;
+
+			&-row{
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+
+				& + &{
+					margin-top: 8px;
+				}
+			}
+
+			&-label{
+				margin: 0 8px;
+				padding-top: 1px;
+
+			}
+
+			&-item{
+				margin: 0 8px;
+				padding: 0;
+				padding-left: 12px;
+				line-height: 13px;
+				position: relative;
+				// pointer-events: none;
+				border: 0;
+				height: 14px;
+	
+				&:before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%); 
+					display: block;
+					background: currentColor;
+					width: 8px;
+					height: 8px;
+				}
+
+				span{
+					color: #3A3D3E;
+					font-size: 11px;
+					line-height: 13px;
+				}
+
+				&_d{
+					padding-left: 16px;
+					&:before{
+						width: 12px;
+						height: 2px;
+					}
+
+					&:after{
+						content: '';
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 6px;
+						transform: translateX(-50%); 
+						display: block;
+						background: none;
+						width: 9px;
+						border: 3px solid #fff;
+					}
+
+				}
+
+				&.deactive{
+					opacity: 0.5;
+				}
+			}
+			
+		}
 	}
 
 

@@ -1,5 +1,6 @@
+import $ from 'jquery';
 import screenfull from 'screenfull'
-const $ = window.jQuery;
+
 
 
 $(document).on("click",".analyseBoard-fullscreen", function(e){

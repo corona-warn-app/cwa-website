@@ -1,5 +1,5 @@
+import $ from 'jquery';
 import _get from 'lodash/get';
-const $ = window.jQuery;
 
 const documentLang = document.documentElement.lang;
 const lang = (documentLang == "de")? 'de-DE': 'en-US';
