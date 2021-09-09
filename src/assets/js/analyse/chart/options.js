@@ -11,7 +11,7 @@ const lang = (documentLang == "de")? 'de-DE': 'en-US';
 export default {
 	stroke: {
 		width: 2,
-	    dashArray: []
+		dashArray: []
 	},
 	series: [],
 	chart: {
@@ -21,32 +21,35 @@ export default {
 		width: "100%",
 		height: '230px',
 		type: 'line',
+		redrawOnWindowResize: false,
 		toolbar: {
 			autoSelected: 'pan',
 			show: false,
 			zoom: false
 		},
 		zoom: {
-        	enabled: false
-      	},
+			enabled: false
+		},
 		events: {
 			updated: function(chartContext, config) {
 				lock.unset(config.config.chart.id);
 			}
 		}
 	},
+	dataLabels: {
+  enabled: false},
 	grid: {
-	    borderColor: '#CFD4D9',
-	    xaxis: {
-	        lines: {
-	            show: false
-	        }
-	    },   
-	    yaxis: {
-	        lines: {
-	            show: true
-	        }
-	    }
+		borderColor: '#CFD4D9',
+		xaxis: {
+			lines: {
+				show: false
+			}
+		},   
+		yaxis: {
+			lines: {
+				show: true
+			}
+		}
 	},
 	yaxis: {
 		show: true,
@@ -76,11 +79,11 @@ export default {
 		}
 	 },
 	xaxis: {
-	    type: "datetime",
+		type: "datetime",
 		axisBorder: {
-          show: true,
-          color: 'currentColor',
-      	},
+		  show: true,
+		  color: 'currentColor',
+		},
 		labels: {
 			offsetY: -3,
 			formatter: function(value, timestamp, opts){
@@ -113,7 +116,7 @@ export default {
 			width: 8,
 			height: 8,
 			radius: 0,
-      	},
+		},
 		itemMargin: {
 			horizontal: 12
 		},
@@ -124,25 +127,22 @@ export default {
 		text: 'No Data to display'
 	},
 	plotOptions: {
-      	bar: {
+		bar: {
 
-      	}
-  	},
-  	markers: {
-
-  	},
-  	tooltip: {
-      enabled: true,
-      shared: true,
+		}
+	},
+	tooltip: {
+	  enabled: true,
+	  shared: true,
 	  custom: function({series, seriesIndex, dataPointIndex, w}) {
-	  	const mode = w.config.mode; 
+		const mode = w.config.mode; 
 		const date = w.config.series[seriesIndex].data[dataPointIndex][0];
 
 		const seriesArray = w.config.seriesall.filter(a => (!a.ghost)? w.config.series.find(e => e.name === a.name).data.length > 0: true).map(e => {
 			const value = e.data.find(e => e[0] == date)
 			return `
 				<div class="apexcharts-tooltip-series-group">
-				   	<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>
+					<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>
 					<div class="apexcharts-tooltip-text">
 						<div class="apexcharts-tooltip-y-group">
 							<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
@@ -161,8 +161,5 @@ export default {
 			${seriesArray.join("")}
 		`
 	  }
-
-
-
 	}
 };
