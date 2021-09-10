@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import { combineLatestWith } from 'rxjs';
-import _get from 'lodash/get';
 import _mapValues from 'lodash/mapValues';
 import _cloneDeep from 'lodash/cloneDeep';
 import { DateTime } from 'luxon';
@@ -42,20 +41,15 @@ data$
 			...tabs$,
 		)
 	)
-	.subscribe(v => {
+	.subscribe(([data, switchId, date, tabs1, tabs2]) => {
+		console.group("update")
 		// return on fetch error (data$)
-		if(v[0].error) return;
+		if(data[0].error) return;
 
 		console.time('cachedata')
 
 		// create the object
-		const obj = {
-			data: v[0][0],
-			switchId: v[1],
-			date: v[2], 
-			tabs1: v[3],
-			tabs2: v[4]
-		};
+		const obj = {data: data[0], switchId, date, tabs1, tabs2};
 
 		// get array of values
 		let array = Object.values(obj);
@@ -89,6 +83,7 @@ data$
 		checkArray = array;
 
 		console.timeEnd('cachedata')
+		console.groupEnd("update")
 	});
 
 

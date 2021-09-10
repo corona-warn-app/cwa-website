@@ -10,13 +10,11 @@ const lang = (documentLang == "de")? 'de-DE': 'en-US';
 
 export default {
 	stroke: {
-		width: 2,
-		dashArray: []
+		width: 2
 	},
 	series: [],
 	chart: {
 		id: "chart",
-		group: "chart",
 		height: 215,
 		width: "100%",
 		height: '230px',
@@ -36,8 +34,6 @@ export default {
 			}
 		}
 	},
-	dataLabels: {
-  enabled: false},
 	grid: {
 		borderColor: '#CFD4D9',
 		xaxis: {
@@ -105,31 +101,16 @@ export default {
 		}
 	},
 	legend: {
-		show: false,
-		showForSingleSeries: true,
-		horizontalAlign: 'right', 
-		fontSize: '11px',
-		fontFamily: 'Roboto, sans-serif',
-		fontWeight: 400,
-		offsetX: -100,
-		markers: {
-			width: 8,
-			height: 8,
-			radius: 0,
-		},
-		itemMargin: {
-			horizontal: 12
-		},
-
-
+		show: false
 	},
 	noData: {
 		text: 'No Data to display'
 	},
-	plotOptions: {
-		bar: {
-
-		}
+	dataLabels: {
+		enabled: false
+	},
+	markers: {
+		size: 0
 	},
 	tooltip: {
 	  enabled: true,

@@ -7,63 +7,64 @@ import translate from '../translate.js';
 
 import { checkLegendReset, renderLegend } from './legend.js';
 import chartConfig from './config.js';
-import chartOptions from './options.js';
 
-window.ApexCharts = ApexCharts;
-
-const mobile = (window.matchMedia("(max-width: 992px)").matches);
-const value = (mobile)? [30, 100]: [90, 400];
 const barThreshold = {
-	"daily": value[0],
-	"weekly": value[1]
+	"daily": (window.matchMedia("(max-width: 992px)").matches)? 30: 90,
+	"weekly": (window.matchMedia("(max-width: 992px)").matches)? 100: 400
 };
 
 export default function(e, i){
-	lock.set(`chart${i}`)
-	let opt = Object.assign({}, chartOptions);
-	_set(opt, ["chart", "id"], `chart${i}`);
-	opt.mode = (e.switchId == 3)? "weekly": "daily";
-	opt.range = e.data.range;
-	opt.barThreshold = (opt.range <= barThreshold[opt.mode]);
-
-	let chartConfigObj = _get(chartConfig, [opt.chart.id, e.switchId], []);
+	const id = `chart${i}`;
+	lock.set(id);
+	
+	let chartConfigObj = _get(chartConfig, [id, e.switchId], []);
 	if(Array.isArray(chartConfigObj)){
-		chartConfigObj = _get(chartConfigObj, [(opt.chart.id == "chart1")? e.tabs1: (opt.chart.id == "chart2")? e.tabs2: []], []);
+		chartConfigObj = _get(chartConfigObj, [(id == "chart1")? e.tabs1: (id == "chart2")? e.tabs2: []], []);
 	}
 
+	const mode = (e.switchId == 3)? "weekly": "daily";
 	const chartType = _get(chartConfigObj, ["type"], "line");
-	opt.chart.type = (chartType == "bar")? (opt.barThreshold)? chartType: "line": chartType;
-	opt.chart.stacked = _get(chartConfigObj, ["stacked"], false);
-	_set(opt, ["stroke", "dashArray"], []);
+	const type = (chartType == "bar")? (barthreshold)? chartType: "line": chartType;
+	const barthreshold = (e.data.range <= barThreshold[mode]);
 
-	opt.seriesall = _get(chartConfigObj, ["series"], []).map((obj)=>{
-		if(e.switchId == 4 && !obj.ghost){
-			opt.stroke.dashArray.push((obj.data.indexOf("_daily") != -1)? 5: 0);
-		}
+	let opt = {
+		chart:{
+			id,
+			type,
+			stacked: _get(chartConfigObj, ["stacked"], false)
+		},
+		mode,
+		range: e.data.range,
+		barthreshold,
+		seriesall: _get(chartConfigObj, ["series"], []).map(obj => {
+			const index = _get(e.data, ["keys", mode], []).indexOf(obj.data);
+			return {
+				ghost: obj.ghost,
+				color: (obj.color)? obj.color: undefined,
+				type: (obj.type)? (barthreshold)? obj.type: "line": type,
+				name: (obj.name)? translate(obj.name): translate(obj.data),
+				data: e.data.data[mode].filter(f => f[index] != null).map(m => [m[0], m[index]]),
+				key: obj.data
+			}
+		})
+	};
 
-		const index = _get(e.data, ["keys", opt.mode], []).indexOf(obj.data);
-		return {
-			ghost: obj.ghost,
-			color: (obj.color)? obj.color: undefined,
-			type: (obj.type)? (opt.barThreshold)? obj.type: "line": opt.chart.type,
-			name: (obj.name)? translate(obj.name): translate(obj.data),
-			data: e.data.data[opt.mode].filter(f => f[index] != null).map(m => [m[0], m[index]])
-		}
-	});
+	// set series without the ghots
+	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
 
-	opt.series = opt.seriesall.filter(e => !e["ghost"]);
+	// set dasharray for legend and switch 4
+	_set(opt, ["stroke", "dashArray"], (e.switchId == 4)? opt.series.map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);
 
 	//Only reset series if necessary
 	checkLegendReset(opt, () => {
-		ApexCharts.exec(opt.chart.id, "resetSeries", true, false);
+		ApexCharts.exec(id, "resetSeries", true, false);
 	});
 
 	// update chart options
-	ApexCharts.exec(opt.chart.id, "updateOptions", opt, true);
+	ApexCharts.exec(id, "updateOptions", opt, true, true, false);
 
 	// render custom legend
 	renderLegend(opt);
 
-	console.log("chart update", opt.chart.id, e, opt);
-		
+	console.log("chart update", id, e, opt);
 };
