@@ -53,6 +53,90 @@ Die durch EDUS generierten Daten sprechen dafür, dass die Corona-Warn-App haupt
 
 Die Ergebnisse zeigen, dass nicht ausgeschlossen werden kann, dass einzelne Personen mehrfach an der Befragung teilnehmen konnten. Die Ermittlung der Anzahl der aktiven Nutzenden der Corona-Warn-App ist noch nicht abgeschlossen und wird in zukünftigen Beiträgen weiter thematisiert.
 
+<details>
+<summary>
+Angaben zur Anzahl aktiver mobiler Endgeräte
+</summary>
+<p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Auf vielen mobilen Endgeräten haben Sie die Corona-Warn-App installiert?
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Anzahl
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Anteil
+</th>
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
+Anteil (gültig)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+1 Gerät
+</td>
+<td style="text-align:right;">
+13.287
+</td>
+<td style="text-align:right;">
+50.9%
+</td>
+<td style="text-align:right;">
+89.7%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2 Geräte
+</td>
+<td style="text-align:right;">
+1.285
+</td>
+<td style="text-align:right;">
+4.9%
+</td>
+<td style="text-align:right;">
+8.7%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mehr als 2 Geräte
+</td>
+<td style="text-align:right;">
+239
+</td>
+<td style="text-align:right;">
+0.9%
+</td>
+<td style="text-align:right;">
+1.6%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+-keine Angabe-
+</td>
+<td style="text-align:right;">
+11.283
+</td>
+<td style="text-align:right;">
+43.2%
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+</tr>
+</tbody>
+</table>
+</p>
+</details>
+
 ## 3 Aktivität der Risikoermittlung
 
 <div class="right-float">
