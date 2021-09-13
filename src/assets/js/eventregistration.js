@@ -486,7 +486,7 @@ async function printQRsOnPage(qrList) {
     let grid = document.getElementById("pageTemplate").value.split('x')
     let col, row;
     row = grid[0];
-    col = grid[1];
+    col = grid[1][0];
     let pageCapacity = row * col;
     let pagesNeeded = Math.ceil(qrList.length/pageCapacity);
     let pages = [];
@@ -494,64 +494,177 @@ async function printQRsOnPage(qrList) {
     let container = document.getElementById("qrContainer");
     container.innerHTML = '';
 
-    let imgtemplate = new Image();
-    imgtemplate.src = '/assets/img/pt-poster-1.0.0-multiqr.png';
-    imgtemplate.className = 'img img-fluid w-100';
-    imgtemplate.onload = function() {
-      let i = 0;
+    let originalTemplate = document.getElementById("pageTemplate").value.includes("Original") ;
 
-      const SPACE_X = 50;
-      const SPACE_Y = 150;
-      const SPACE_DESCRIPTION = SPACE_Y/3;
-      const SPACE_ADDRESS = SPACE_DESCRIPTION*2;
-      for(let pagem = 0; pagem < pagesNeeded; pagem++){
+    let i = 0;
+    if(originalTemplate) {
+      let imgtemplate = new Image();
+      imgtemplate.src = '/assets/img/pt-poster-1.0.0.png';
+      imgtemplate.className = 'img img-fluid w-100';
+      imgtemplate.onload = function() {
+
+      //Print every qr with background and save it in an array
+      let qrFormatedList = [];
+      for(let i = 0; i < qrList.length; i++){
         let canvasm = document.createElement("canvas");
         let ctxm = canvasm.getContext('2d');
         ctxm.width = 1654;
         ctxm.height = 2339;
         canvasm.width = 1654;
         canvasm.height = 2339;
-        canvasm.style.maxWidth = "100%"
+        canvasm.style.maxWidth = "100%";
 
         ctxm.drawImage(imgtemplate, 0, 0);
-        let realWidth = canvasm.width - (SPACE_X*col);
+        // let qrcode = new Image();
 
-        for(let r = 0; r < row; r++){
-          for(let c = 0; c < col; c++){
-            if(i < qrList.length) {
-              let qrcode = new Image();
-              qrcode.width = realWidth/col;
-              qrcode.height = realWidth/col;
+        // qrcode.src = qrList[i].qr.src;
+        // qrcode.onload = function() {
+        //   ctxm.drawImage(qrcode, 275 , 230);
+        // }
 
-              qrcode.src = qrList[i].qr.src;
-              qrcode.onload = function() {
-                ctxm.drawImage(qrcode, (qrcode.width*c)+(SPACE_X*c) , (qrcode.height*r)+(SPACE_Y*r), qrcode.width , qrcode.height);
-              }
+        ctxm.drawImage(qrList[i].qr, 275 , 230);
 
-              ctxm.font = "30px sans-serif";
-              ctxm.fillStyle = "black";
+        ctxm.font = "30px sans-serif";
+        ctxm.fillStyle = "black";
 
-              ctxm.fillText(qrList[i].description, (qrcode.width*c)+(SPACE_X*c) , qrcode.height*(r+1)+SPACE_Y*r+SPACE_DESCRIPTION); 
-              ctxm.fillText(qrList[i].address, (qrcode.width*c)+(SPACE_X*c) , qrcode.height*(r+1)+SPACE_Y*r+SPACE_ADDRESS); 
-              i++;
-            }
-          }
-        }
-        canvasm.className = `page-${pagem}`
-        pages.push(canvasm)
+        ctxm.fillText(qrList[i].description, 225 , 1460); 
+        ctxm.fillText(qrList[i].address, 225 , 1510); 
+
+        qrFormatedList.push(canvasm);
+        console.log("for 1", i)
       }
 
-      document.getElementById('printMultiCode').disabled = false;
-      // Active download button
-      document.getElementById('downloadMultiCode').disabled = false;
-      document.getElementById('multieventplaceholder').classList.add('d-none');
-      let canvasx = document.getElementById('multieventqrcode');
-      canvasx.classList.remove('d-none');
+      let i = 0;
+      for(let pagem = 0; pagem < pagesNeeded; pagem++){
+        if(i < qrFormatedList.length) {
+          if(row == 1 && col == 1) {
+            pages.push(qrFormatedList[i])
+          }
+          if(row == 2 && col == 1) {
+            let canvas = document.createElement("canvas");
+            let ctx = canvas.getContext('2d');
+            ctx.width = 1654;
+            ctx.height = 2339;
+            canvas.width = 1654;
+            canvas.height = 2339;
+            canvas.style.maxWidth = "100%";
 
-      let data = {"pages": pages, "container": container}
-      return resolve(data);
+            ctx.translate(canvas.width / 2, canvas.height / 2);
+            ctx.rotate(Math.PI / 2);
+            if(i < qrFormatedList.length){
+               ctx.drawImage(qrFormatedList[i], -qrFormatedList[i].height/2, -qrFormatedList[i].width/2, qrFormatedList[i].width/1.41, qrFormatedList[i].height/1.41);
+               console.log("qrFormated", qrFormatedList[i])
+               let img = document.createElement("img")
+               img.src = qrFormatedList[i].toDataURL()
+               console.log(img)
+            }
+            i++;
+            if(i < qrFormatedList.length){
+               ctx.drawImage(qrFormatedList[i], -qrFormatedList[i].height/17, -qrFormatedList[i].width/2, qrFormatedList[i].width/1.41, qrFormatedList[i].height/1.41);
+               console.log("qrFormated", qrFormatedList[i])
+               let img = document.createElement("img")
+               img.src = qrFormatedList[i].toDataURL()
+               console.log(img)
+            }
+               ctx.rotate(-Math.PI/2);
+            ctx.translate(-canvas.width/2,-canvas.height/2);
+            console.log("canvas", canvas)
+            pages.push(canvas)
+          }
+          if(row == 2 && col == 2) {
+            let canvas = document.createElement("canvas");
+            let ctx = canvas.getContext('2d');
+            ctx.width = 1654;
+            ctx.height = 2339;
+            canvas.width = 1654;
+            canvas.height = 2339;
+            canvas.style.maxWidth = "100%";
+
+            if(i < qrFormatedList.length) ctx.drawImage(qrFormatedList[i], 0, 0, qrFormatedList[i].width/2, qrFormatedList[i].height/2);
+            i++;
+            if(i < qrFormatedList.length) ctx.drawImage(qrFormatedList[i], qrFormatedList[i].width/2, 0, qrFormatedList[i].width/2, qrFormatedList[i].height/2);
+            i++;
+            if(i < qrFormatedList.length) ctx.drawImage(qrFormatedList[i], 0, qrFormatedList[i].height/2, qrFormatedList[i].width/2, qrFormatedList[i].height/2);
+            i++;
+            if(i < qrFormatedList.length) ctx.drawImage(qrFormatedList[i], qrFormatedList[i].width/2, qrFormatedList[i].height/2, qrFormatedList[i].width/2, qrFormatedList[i].height/2);
+
+            pages.push(canvas)
+          }
+          console.log("for 2", i)
+          i++;
+        }
+        
+      }
+        document.getElementById('printMultiCode').disabled = false;
+        // Active download button
+        document.getElementById('downloadMultiCode').disabled = false;
+        document.getElementById('multieventplaceholder').classList.add('d-none');
+        
+
+        let data = {"pages": pages, "container": container}
+        return resolve(data);
+      }
+
+    } else {
+      let imgtemplate = new Image();
+      imgtemplate.src = '/assets/img/pt-poster-1.0.0-multiqr.png';
+      imgtemplate.className = 'img img-fluid w-100';
+      imgtemplate.onload = function() {
+        
+
+        const SPACE_X = 50;
+        const SPACE_Y = 150;
+        const SPACE_DESCRIPTION = SPACE_Y/3;
+        const SPACE_ADDRESS = SPACE_DESCRIPTION*2;
+        for(let pagem = 0; pagem < pagesNeeded; pagem++){
+          let canvasm = document.createElement("canvas");
+          let ctxm = canvasm.getContext('2d');
+          ctxm.width = 1654;
+          ctxm.height = 2339;
+          canvasm.width = 1654;
+          canvasm.height = 2339;
+          canvasm.style.maxWidth = "100%"
+
+          ctxm.drawImage(imgtemplate, 0, 0);
+          let realWidth = canvasm.width - (SPACE_X*col);
+
+          for(let r = 0; r < row; r++){
+            for(let c = 0; c < col; c++){
+              if(i < qrList.length) {
+                let qrcode = new Image();
+                qrcode.width = realWidth/col;
+                qrcode.height = realWidth/col;
+
+                qrcode.src = qrList[i].qr.src;
+                qrcode.onload = function() {
+                  ctxm.drawImage(qrcode, (qrcode.width*c)+(SPACE_X*c) , (qrcode.height*r)+(SPACE_Y*r), qrcode.width , qrcode.height);
+                }
+
+                ctxm.font = "30px sans-serif";
+                ctxm.fillStyle = "black";
+
+                ctxm.fillText(qrList[i].description, (qrcode.width*c)+(SPACE_X*c) , qrcode.height*(r+1)+SPACE_Y*r+SPACE_DESCRIPTION); 
+                ctxm.fillText(qrList[i].address, (qrcode.width*c)+(SPACE_X*c) , qrcode.height*(r+1)+SPACE_Y*r+SPACE_ADDRESS); 
+                i++;
+              }
+            }
+          }
+          pages.push(canvasm)
+        }
+
+        document.getElementById('printMultiCode').disabled = false;
+        // Active download button
+        document.getElementById('downloadMultiCode').disabled = false;
+        document.getElementById('multieventplaceholder').classList.add('d-none');
+        let canvasx = document.getElementById('multieventqrcode');
+        canvasx.classList.remove('d-none');
+
+        let data = {"pages": pages, "container": container}
+        return resolve(data);
+      }
     }
-    
+
+    console.log(pages)
   });
 }
 
