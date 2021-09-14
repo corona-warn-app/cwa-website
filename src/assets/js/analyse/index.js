@@ -92,7 +92,7 @@ data$
 function filterData(dataOrg, date){
 	console.time('filterData')
 	let data = _cloneDeep(dataOrg);
-	data.range = DateTime.fromISO(date[1]).diff(DateTime.fromISO(date[0])).as('days');
+	data.range = DateTime.fromISO(date[1]).diff(DateTime.fromISO(date[0]),'days').toObject().days;
 	data.data = _mapValues(data.data, (a) => a.filter(o => (date[0] <= o[0] && date[1] > o[0])));
 	console.timeEnd('filterData')
 	return data;
