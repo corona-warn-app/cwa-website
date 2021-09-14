@@ -62,7 +62,8 @@ data$
 			// compare values with chached version
 			if(JSON.stringify(array) === JSON.stringify(checkArray)){
 				//no change
-				console.timeEnd('cachedata')
+				console.timeEnd('cachedata');
+				console.groupEnd("update");
 		  		return;
 	  		}else{
 	  			charts = (checkArray[2] != array[2])? [chart[1]]: (checkArray[3] != array[3])? [chart[2]]: chart;
