@@ -664,6 +664,11 @@
 }
 
 .litepicker{
+	padding: 0 48px;
+	margin: 0 -48px;
+	position: relative;
+	z-index: 1;
+
 	.container__months{
 		box-shadow: none;
 		justify-content: space-between;
