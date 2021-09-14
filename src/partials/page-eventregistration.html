@@ -172,6 +172,24 @@
                   </div>
                 </div>
     
+                <div class="form-group row mb-2">
+                  <div class="col-8">
+                    <label for="pageLayout" class="col-12 col-form-label">{{page-contents.section-main.form.fields.layout}}</label>
+                    <select id="pageLayout" class="form-select form-control" required>
+                      {{#each page-contents.section-main.form.layout_options}}
+                          <option value="{{option}}">{{option}}</option>
+                      {{/each}}       
+                    </select>
+                  </div>
+                  
+                  
+                  <div class="col-4">
+                    <label for="copies" class="col-12 col-form-label">{{page-contents.section-main.form.fields.copies}}</label>
+                    <input type="number" value="1" min="1" max="1000" id="copies" class="form-control" required/>    
+                  </div>   
+                </div>
+
+
                 <div class="row mt-4">
                   <div class="col-12">{{page-contents.section-main.disclaimer}}</div>
                 </div>
@@ -240,10 +258,10 @@
                 </div>
                 
                 <div class="form-group row mb-2">
-                  <label for="pageTemplate" class="col-12 col-form-label">{{page-contents.section-main.form.fields.pageTemplate}}</label>
+                  <label for="pageTemplate" class="col-12 col-form-label">{{page-contents.section-main.form.fields.layout}}</label>
                   <div class="col-12">
                     <select id="pageTemplate" class="form-select form-control" required>
-                      {{#each page-contents.section-main.form.templates_options}}
+                      {{#each page-contents.section-main.form.layout_options}}
                           <option value="{{option}}">{{option}}</option>
                       {{/each}}       
                     </select>
