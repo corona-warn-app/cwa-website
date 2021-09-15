@@ -24,8 +24,8 @@ export default function(e, i){
 
 	const mode = (e.switchId == 3)? "weekly": "daily";
 	const chartType = _get(chartConfigObj, ["type"], "line");
-	const type = (chartType == "bar")? (barthreshold)? chartType: "line": chartType;
 	const barthreshold = (e.data.range <= barThreshold[mode]);
+	const type = (chartType == "bar")? (barthreshold)? chartType: "line": chartType;
 
 	let opt = {
 		chart:{
@@ -49,8 +49,10 @@ export default function(e, i){
 		})
 	};
 
+
 	// set series without the ghots
-	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
+	const series = (opt.chart.stacked)? opt.seriesall.filter(e => !e.ghost).reverse(): opt.seriesall.filter(e => !e.ghost);
+	_set(opt, ["series"], series);
 
 	// set dasharray for legend and switch 4
 	_set(opt, ["stroke", "dashArray"], (e.switchId == 4)? opt.series.map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);

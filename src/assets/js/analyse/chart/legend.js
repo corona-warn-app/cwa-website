@@ -9,9 +9,9 @@ function renderLegend(opt){
 	// render custom legend
 	const $e  = $("#apexcharts" + opt.chart.id ).parent().next();
 	const labels = [translate("legendLabelMean"), translate("legendLabelDaily")];
-	const outArray = opt.series.map((e, i) => `
+	const outArray = opt.seriesall.filter(a => (!a.ghost)).map((e, i) => `
 		${(i == opt.stroke.dashArray.indexOf(5))? `</div><div class="analyseChartLegend-row">`: ""}
-		${(opt.stroke.dashArray.indexOf(5) >= 0 && (i === 0 || i == opt.stroke.dashArray.indexOf(5)))? `<div class="analyseChartLegend-label">${labels.pop()}</div>`: ""}
+		${(opt.stroke.dashArray.indexOf(5) >= 0 && (i === 0 || i == opt.stroke.dashArray.indexOf(5)))? `<div class="analyseChartLegend-label">${labels.shift()}</div>`: ""}
 		<button style="color: ${e.color};" data-id="${opt.chart.id},${e.name}" class="btn analyseChartLegend-item ${(opt.stroke.dashArray.indexOf(5) >= 0 && i >= opt.stroke.dashArray.indexOf(5))? `analyseChartLegend-item_d`: ``}"><span>${e.name}</span></button>
 	`);
 
