@@ -14,6 +14,8 @@ const now = DateTime.now().minus({days: 1});
 
 	
 $(document).on("focus",".analyseRangePicker-input", function(){
+	const dateFromPicker = ($(this).attr("name") == "start")? picker.getStartDate().dateInstance: DateTime.fromJSDate(picker.getEndDate().dateInstance).minus({month:1}); 
+	picker.gotoDate(dateFromPicker);
 	$(this).val("")
 });
 
