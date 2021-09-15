@@ -58,35 +58,23 @@
     },
     "board": [
         {
-            "title": {
-                "1": "Downloads (kumuliert)",
-                "2": "Downloads",
-                "3": "Downloads (nach Kalenderwoche)",
-                "4": "Downloads (7-Tage-Mittelwert)"
-            },
+            "title": "Downloads",
             "export": {
                 "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Downloads",
                 "content": "Seit dem 16.06.2020 steht die Corona-Warn-App als Download für Android und iOS Geräte zur Verfügung. <br><br> Die Downloadzahlen zeigen an, wie oft die App heruntergeladen wurde. Durch den hohen Datenschutzstandard der Corona-Warn-App können aus diesen Zahlen keine Rückschlüsse bezüglich noch aktiver Nutzer gezogen werden."
             },
             "totalKey": "app_downloads_cumulated"
         },
         {
-            "title": {
-                "1": "Registrierte Tests (kumuliert)",
-                "2": "Registrierte Tests",
-                "3": "Registrierte Tests (nach Kalenderwoche)",
-                "4": "Registrierte Tests (7-Tage-Mittelwert)"
-            },
+            "title": "Registrierte Tests",
             "export": {
                 "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Registrierte Tests",
                 "content": ""
             },
             "totalKey": "tests_total_cumulated",
@@ -103,18 +91,12 @@
             ] 
         },
         {
-            "title": {
-                "1": "Teilungsverhalten (kumuliert)",
-                "2": "Teilungsverhalten",
-                "3": "Teilungen (nach Kalenderwoche)",
-                "4": "Teilungen (7-Tage-Mittelwert)"
-            },
+            "title": "Teilungsverhalten",
             "export": {
                 "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Teilverhalten",
                 "content": ""
             },
             "totalKey": "qr_redeemable_cumulated",
@@ -131,24 +113,25 @@
             ] 
         },
         {
-            "title": {
-                "1": "Warnungen (kumuliert)",
-                "2": "Warnungen",
-                "3": "Warnungen (nach Kalenderwoche)",
-                "4": "Warnungen (7-Tage-Mittelwert)"
-            },
+            "title": "Warnungen",
             "export": {
                 "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Warnungen",
                 "content": ""
             },
             "totalKey": "ppa_total_warnings_cumulated"
         }
     ],
     "translations":{
+
+        "analyseBoardTitle":{
+            "1": "(kumuliert)",
+            "2": "",
+            "3": "(nach Kalenderwoche)",
+            "4": "(7-Tage-Mittelwert)"
+        },
 
 
         "legendLabelMean": "7-Tage-Mittelwert:",

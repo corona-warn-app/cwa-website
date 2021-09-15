@@ -58,35 +58,23 @@
     },
     "board": [
         {
-            "title": {
-                "1": "Downloads",
-                "2": "Downloads",
-                "3": "Downloads nach KW",
-                "4": "7-Tage-Mittelwert Downloads"
-            },
+            "title": "Downloads",
             "export": {
-                "title": "Export",
+                "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Downloads",
                 "content": "Seit dem 16.06.2020 steht die Corona-Warn-App als Download für Android und iOS Geräte zur Verfügung. <br><br> Die Downloadzahlen zeigen an, wie oft die App heruntergeladen wurde. Durch den hohen Datenschutzstandard der Corona-Warn-App können aus diesen Zahlen keine Rückschlüsse bezüglich noch aktiver Nutzer gezogen werden."
             },
             "totalKey": "app_downloads_cumulated"
         },
         {
-            "title": {
-                "1": "Testergebnisse",
-                "2": "Testergebnisse",
-                "3": "Tests nach KW",
-                "4": "7-Tage-Mittelwert Testsergebnisse"
-            },
+            "title": "Registrierte Tests",
             "export": {
-                "title": "Export",
+                "title": "Exportieren",
                 "link": "#"
             },
-             "info": {
-                "title": "Testergebnisse",
+            "info": {
                 "content": ""
             },
             "totalKey": "tests_total_cumulated",
@@ -95,7 +83,7 @@
                     "label": "Gesamt"
                 },
                 {
-                    "label": "PCR Tests"
+                    "label": "PCR-Tests"
                 },
                 {
                     "label": "Antigen Schnelltests"
@@ -103,27 +91,21 @@
             ] 
         },
         {
-            "title": {
-                "1": "Teilverhalten",
-                "2": "Teilverhalten",
-                "3": "Teilungen nach KW",
-                "4": "7-Tage-Mittelwert Teilungen"
-            },
+            "title": "Teilungsverhalten",
             "export": {
-                "title": "Export",
+                "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Teilverhalten",
                 "content": ""
             },
-            "totalKey":"qr_redeemable_cumulated",
+            "totalKey": "qr_redeemable_cumulated",
             "tabs": [
                 {
                     "label": "Gesamt"
                 },
                 {
-                    "label": "QR Codes"
+                    "label": "QR-Codes"
                 },
                 {
                     "label": "TeleTans"
@@ -131,24 +113,25 @@
             ] 
         },
         {
-            "title": {
-                "1": "Warnungen",
-                "2": "Warnungen",
-                "3": "Warnungen nach KW",
-                "4": "7-Tage-Mittelwert Warnungen"
-            },
+            "title": "Warnungen",
             "export": {
-                "title": "Export",
+                "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Warnungen",
                 "content": ""
             },
-            "totalKey": "ppa_total_warnings_daily"
+            "totalKey": "ppa_total_warnings_cumulated"
         }
     ],
     "translations":{
+
+        "analyseBoardTitle":{
+            "1": "(kumuliert)",
+            "2": "",
+            "3": "(nach Kalenderwoche)",
+            "4": "(7-Tage-Mittelwert)"
+        },
 
         "legendLabelMean": "7-Tage-Mittelwert:",
         "legendLabelDaily": "Tagliche Anzahl:",

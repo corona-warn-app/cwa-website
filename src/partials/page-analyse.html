@@ -117,8 +117,8 @@
 					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}}">
 						<div class="analyseBoard-head">
 							{{#if title}}
-								<div class="analyseBoard-title" data-title='{{toJSON title}}'>
-									{{lookup title ../page-contents.switchStart}}
+								<div class="analyseBoard-title">
+									{{title}} <span></span>
 								</div>
 							{{/if}}
 							{{#if export}}
@@ -131,7 +131,7 @@
 								{{/if}}
 							{{/if}}
 							{{#if info}}
-								<button class="btn analyseBoard-info"  rel="{{info.title}}">
+								<button class="btn analyseBoard-info"  rel="{{title}}">
 									<img src="assets/img/icons/info.svg">
 								</button>
 							{{/if}}
@@ -171,12 +171,12 @@
 	
 	<div class="analyseModalBg"></div>
 	{{#each page-contents.board}}
-		<div class="analyseModal" rel="{{info.title}}">
+		<div class="analyseModal" rel="{{title}}">
 			<h2 class="headline analyseModal-title">
 				<button class="btn analyseModal-close">
 					<img src="assets/img/icons/Close.svg">
 				</button>
-				{{info.title}}
+				{{title}}
 			</h2>
 			<div class="analyseModal-content">
 				{{#unless info.content}} content missing {{/unless}}

@@ -2,7 +2,7 @@ import $ from 'jquery';
 import { fromEvent } from 'rxjs';
 import { map, startWith, takeWhile } from 'rxjs/operators';
 import lock from './lock.js';
-
+import translate from './translate.js';
 
 const switchId$ = fromEvent(document.querySelectorAll(".analyseSwitch-item"), 'click')
 	.pipe(
@@ -25,9 +25,8 @@ switchId$.subscribe(e => {
 		.css("left", $e.position().left)
 		.css("width", $e.outerWidth());
 
-	$(".analyseBoard-title").each(function(){
-		const title = $(this).data("title");
-		$(this).html(title[switchId])
+	$(".analyseBoard-title span").each(function(){
+		$(this).html(translate(`analyseBoardTitle.${switchId}`))
 	})
 });
 
