@@ -63,11 +63,6 @@ export default {
 					formatedValue = new Intl.NumberFormat(lang).format(value)
 				}
 				return formatedValue;
-			},
-			style:{
-				colors: ["#898B8B"],
-				fontFamily: 'Roboto, serif',
-				fontSize: '11px',
 			}
 		},
 		axisTicks: {
@@ -127,7 +122,7 @@ export default {
 					<div class="apexcharts-tooltip-text">
 						<div class="apexcharts-tooltip-y-group">
 							<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
-							<span class="apexcharts-tooltip-text-y-value">${(Array.isArray(value))? value[1]: "-" }</span>
+							<span class="apexcharts-tooltip-text-y-value">${(Array.isArray(value))? new Intl.NumberFormat(lang).format(value[1]): "-" }</span>
 						</div>
 					</div>
 				</div>

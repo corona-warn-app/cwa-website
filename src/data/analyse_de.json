@@ -1,6 +1,6 @@
 {
 	"topic": "Analyse",
-    "title": "Corona-Warn-App (CWA) : Kennzahlen",
+    "title": "Corona-Warn-App (CWA): Kennzahlen",
     "range":{
         "picker": {
             "timerange": "Zeitraum",
@@ -54,15 +54,15 @@
     "boards": {
         "loading": "Loading...",
         "loadingBtn": "Retry",
-        "total": "Total Anzahl bis <span></span>"
+        "total": "Gesamt Anzahl bis <span></span>"
     },
     "board": [
         {
             "title": {
-                "1": "Downloads",
+                "1": "Downloads (kumuliert)",
                 "2": "Downloads",
-                "3": "Downloads nach KW",
-                "4": "7-Tage-Mittelwert Downloads"
+                "3": "Downloads (nach Kalenderwoche)",
+                "4": "Downloads (7-Tage-Mittelwert)"
             },
             "export": {
                 "title": "Exportieren",
@@ -76,17 +76,17 @@
         },
         {
             "title": {
-                "1": "Testergebnisse",
-                "2": "Testergebnisse",
-                "3": "Tests nach KW",
-                "4": "7-Tage-Mittelwert Testsergebnisse"
+                "1": "Registrierte Tests (kumuliert)",
+                "2": "Registrierte Tests",
+                "3": "Registrierte Tests (nach Kalenderwoche)",
+                "4": "Registrierte Tests (7-Tage-Mittelwert)"
             },
             "export": {
                 "title": "Exportieren",
                 "link": "#"
             },
             "info": {
-                "title": "Testergebnisse",
+                "title": "Registrierte Tests",
                 "content": ""
             },
             "totalKey": "tests_total_cumulated",
@@ -95,7 +95,7 @@
                     "label": "Gesamt"
                 },
                 {
-                    "label": "PCR Tests"
+                    "label": "PCR-Tests"
                 },
                 {
                     "label": "Antigen Schnelltests"
@@ -104,10 +104,10 @@
         },
         {
             "title": {
-                "1": "Teilungsverhalten",
+                "1": "Teilungsverhalten (kumuliert)",
                 "2": "Teilungsverhalten",
-                "3": "Teilungen nach KW",
-                "4": "7-Tage-Mittelwert Teilungen"
+                "3": "Teilungen (nach Kalenderwoche)",
+                "4": "Teilungen (7-Tage-Mittelwert)"
             },
             "export": {
                 "title": "Exportieren",
@@ -123,7 +123,7 @@
                     "label": "Gesamt"
                 },
                 {
-                    "label": "QR Codes"
+                    "label": "QR-Codes"
                 },
                 {
                     "label": "TeleTans"
@@ -132,10 +132,10 @@
         },
         {
             "title": {
-                "1": "Warnungen",
+                "1": "Warnungen (kumuliert)",
                 "2": "Warnungen",
-                "3": "Warnungen nach KW",
-                "4": "7-Tage-Mittelwert Warnungen"
+                "3": "Warnungen (nach Kalenderwoche)",
+                "4": "Warnungen (7-Tage-Mittelwert)"
             },
             "export": {
                 "title": "Exportieren",
@@ -185,8 +185,8 @@
 
 
         "tests_total_cumulated": "Gesamt",
-        "tests_pcr_total_cumulated": "PCR Tests",
-        "tests_rat_total_cumulated": "Antigen Schnelltests",
+        "tests_pcr_total_cumulated": "PCR-Tests",
+        "tests_rat_total_cumulated": "Antigen-Schnelltests",
         "tests_pcr_positive_cumulated": "Positive",
         "tests_pcr_negative_cumulated": "Negative",
         "tests_pcr_invalide_cumulated": "Ungultig",
@@ -195,8 +195,8 @@
         "tests_rat_invalide_cumulated": "Ungultig",
 
         "tests_total_daily": "Gesamt",
-        "tests_pcr_total_daily": "PCR Tests",
-        "tests_rat_total_daily": "Antigen Schnelltests",
+        "tests_pcr_total_daily": "PCR-Tests",
+        "tests_rat_total_daily": "Antigen-Schnelltests",
         "tests_pcr_positive_daily": "Positive",
         "tests_pcr_negative_daily": "Negative",
         "tests_pcr_invalide_daily": "Ungultig",
@@ -205,8 +205,8 @@
         "tests_rat_invalide_daily": "Ungultig",
 
         "tests_total_7days_sum": "Gesamt",
-        "tests_pcr_total_7days_sum": "PCR Tests",
-        "tests_rat_total_7days_sum": "Antigen Schnelltests",
+        "tests_pcr_total_7days_sum": "PCR-Tests",
+        "tests_rat_total_7days_sum": "Antigen-Schnelltests",
         "tests_pcr_positive_7days_sum": "Positive",
         "tests_pcr_negative_7days_sum": "Negative",
         "tests_pcr_invalide_7days_sum": "Ungultig",
@@ -215,8 +215,8 @@
         "tests_rat_invalide_7days_sum": "Ungultig",
 
         "tests_total_7days_avg": "Gesamt X̅",
-        "tests_pcr_total_7days_avg": "PCR Tests X̅",
-        "tests_rat_total_7days_avg": "Antigen Schnelltests X̅",
+        "tests_pcr_total_7days_avg": "PCR-Tests X̅",
+        "tests_rat_total_7days_avg": "Antigen-Schnelltests X̅",
         "tests_pcr_positive_7days_avg": "Positive X̅",
         "tests_pcr_negative_7days_avg": "Negative X̅",
         "tests_pcr_invalide_7days_avg": "Ungultig X̅",
@@ -229,7 +229,7 @@
 
 
         "qr_teletan_redeemable_cumulated": "Gesamt",
-        "qr_redeemable_cumulated": "QR Codes",
+        "qr_redeemable_cumulated": "QR-Codes",
         "teletan_redeemable_cumulated": "Teletans",
         "qr_not_redeemed_cumulated": "Nicht geteilt",
         "qr_redeemed_cumulated": "Geteilt",
@@ -237,7 +237,7 @@
         "teletan_redeemed_cumulated": "Geteilt",
 
         "qr_teletan_redeemable_daily": "Gesamt",
-        "qr_redeemable_daily": "QR Codes",
+        "qr_redeemable_daily": "QR-Codes",
         "teletan_redeemable_daily": "Teletans",
         "qr_not_redeemed_daily": "Nicht geteilt",
         "qr_redeemed_daily": "Geteilt",
@@ -245,7 +245,7 @@
         "teletan_redeemed_daily": "Geteilt",
 
         "qr_teletan_redeemable_7days_sum": "Gesamt",
-        "qr_redeemable_7days_sum": "QR Codes",
+        "qr_redeemable_7days_sum": "QR-Codes",
         "teletan_redeemable_7days_sum": "Teletans",
         "qr_not_redeemed_7days_sum": "Nicht geteilt",
         "qr_redeemed_7days_sum": "Geteilt",
@@ -253,7 +253,7 @@
         "teletan_redeemed_7days_sum": "Geteilt",
 
         "qr_teletan_redeemable_7days_avg": "Gesamt X̅",
-        "qr_redeemable_7days_avg": "QR Codes X̅",
+        "qr_redeemable_7days_avg": "QR-Codes X̅",
         "teletan_redeemable_7days_avg": "Teletans X̅",
         "qr_not_redeemed_7days_avg": "Nicht geteilt X̅",
         "qr_redeemed_7days_avg": "Geteilt X̅",

@@ -51,8 +51,7 @@ export default function(e, i){
 
 
 	// set series without the ghots
-	const series = (opt.chart.stacked)? opt.seriesall.filter(e => !e.ghost).reverse(): opt.seriesall.filter(e => !e.ghost);
-	_set(opt, ["series"], series);
+	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
 
 	// set dasharray for legend and switch 4
 	_set(opt, ["stroke", "dashArray"], (e.switchId == 4)? opt.series.map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);
