@@ -1,6 +1,7 @@
 import ApexCharts from 'apexcharts'
 import _get from 'lodash/get';
 import _set from 'lodash/set';
+import { DateTime } from 'luxon';
 
 import lock from '../lock.js';
 import translate from '../translate.js';
@@ -38,6 +39,8 @@ export default function(e, i){
 		barthreshold,
 		seriesall: _get(chartConfigObj, ["series"], []).map(obj => {
 			const index = _get(e.data, ["keys", mode], []).indexOf(obj.data);
+
+			e.data.data["weekly"] =  e.data.data["weekly"].map(e => { e[0] = DateTime.fromISO(e[0]).startOf('week').toISODate(); return e})
 			return {
 				ghost: obj.ghost,
 				color: (obj.color)? obj.color: undefined,
@@ -50,11 +53,22 @@ export default function(e, i){
 	};
 
 
+
 	// set series without the ghots
-	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
+	const series = opt.seriesall.filter(e => !e.ghost);
+	
+	series.push({
+		color: "#000000",
+		data: e.data.nullhelper[mode],
+		type: "line",
+		name: "helper"
+	});
+
+	_set(opt, ["series"], series);
 
 	// set dasharray for legend and switch 4
-	_set(opt, ["stroke", "dashArray"], (e.switchId == 4)? opt.series.map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);
+	_set(opt, ["stroke", "dashArray"], (e.switchId == 4)? opt.seriesall.filter(e => !e.ghost).map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);
+
 
 	//Only reset series if necessary
 	checkLegendReset(opt, () => {

@@ -51,6 +51,7 @@ export default {
 		show: true,
 		forceNiceScale: true,
 		tickAmount: 4,
+		min: 0,
 		labels: {
 			minWidth: 45,
 			maxWidth: 45,
@@ -71,11 +72,14 @@ export default {
 	 },
 	xaxis: {
 		type: "datetime",
+
+		min: "2020-01-01",
 		axisBorder: {
 		  show: true,
 		  color: 'currentColor',
 		},
 		labels: {
+			showDuplicates: false,
 			offsetY: -3,
 			formatter: function(value, timestamp, opts){
 				if(opts.w.config.mode == "weekly") return  DateTime.fromMillis(value).toFormat((documentLang == "de")? "'KW' W": "'CW' W");
@@ -105,37 +109,41 @@ export default {
 		enabled: false
 	},
 	markers: {
-		size: 0
+		size: 0,
+		hover: {
+	      size: 0,
+	      sizeOffset: 3
+	    }
 	},
 	tooltip: {
-	  enabled: true,
-	  shared: true,
-	  custom: function({series, seriesIndex, dataPointIndex, w}) {
-		const mode = w.config.mode; 
-		const date = w.config.series[seriesIndex].data[dataPointIndex][0];
+		enabled: true,
+		shared: true,
+		custom: function({series, seriesIndex, dataPointIndex, w}) {
+			const mode = w.config.mode; 
+			const date = w.config.series[seriesIndex].data[dataPointIndex][0];
 
-		const seriesArray = w.config.seriesall.filter(a => (!a.ghost)? w.config.series.find(e => e.name === a.name).data.length > 0: true).map(e => {
-			const value = e.data.find(e => e[0] == date)
-			return `
-				<div class="apexcharts-tooltip-series-group">
-					<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>
-					<div class="apexcharts-tooltip-text">
-						<div class="apexcharts-tooltip-y-group">
-							<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
-							<span class="apexcharts-tooltip-text-y-value">${(Array.isArray(value))? new Intl.NumberFormat(lang).format(value[1]): "-" }</span>
+			const seriesArray = w.config.seriesall.filter(a => (!a.ghost)? w.config.series.find(e => e.name === a.name).data.length > 0: true).map(e => {
+				const value = e.data.find(e => e[0] == date)
+				return `
+					<div class="apexcharts-tooltip-series-group">
+						<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>
+						<div class="apexcharts-tooltip-text">
+							<div class="apexcharts-tooltip-y-group">
+								<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
+								<span class="apexcharts-tooltip-text-y-value">${(Array.isArray(value))? new Intl.NumberFormat(lang).format(value[1]): "-" }</span>
+							</div>
 						</div>
 					</div>
-				</div>
+				`;
+			});
+
+			const dateT = DateTime.fromISO(date);
+			const formatedDate = (mode == "weekly")? dateT.toFormat((documentLang == "de")? "'KW' W": "'CW' W") + " - " + dateT.startOf('week').toLocaleString(DateTime.DATE_HUGE): dateT.toLocaleString(DateTime.DATE_HUGE);
+
+			return `
+				<div class="apexcharts-tooltip-date">${formatedDate}</div>
+				${seriesArray.join("")}
 			`;
-		});
-
-		const dateT = DateTime.fromISO(date);
-		const formatedDate = (mode == "weekly")? dateT.toFormat((documentLang == "de")? "'KW' W": "'CW' W") + " - " + dateT.toLocaleString(DateTime.DATE_HUGE): dateT.toLocaleString(DateTime.DATE_HUGE);
-
-		return `
-			<div class="apexcharts-tooltip-date">${formatedDate}</div>
-			${seriesArray.join("")}
-		`
-	  }
+		}
 	}
 };

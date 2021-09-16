@@ -37,7 +37,7 @@ const picker = new Litepicker({
 	lang: documentLang,
 	numberOfColumns: pickerCols,
 	numberOfMonths: pickerCols,
-	minDate: '2020-01-01', 
+	minDate: '2020-05-15', 
 	maxDate: now, 
 	scrollToDate: false,
 	autoApply: true,
