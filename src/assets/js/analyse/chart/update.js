@@ -46,7 +46,7 @@ export default function(e, i){
 				color: (obj.color)? obj.color: undefined,
 				type: (obj.type)? (barthreshold)? obj.type: "line": type,
 				name: (obj.name)? translate(obj.name): translate(obj.data),
-				data: e.data.data[mode].filter(f => f[index] != null).map(m => [m[0], m[index]]),
+				data: e.data.data[mode].map(m => [m[0], m[index]]),
 				key: obj.data
 			}
 		})
@@ -55,16 +55,7 @@ export default function(e, i){
 
 
 	// set series without the ghots
-	const series = opt.seriesall.filter(e => !e.ghost);
-	
-	series.push({
-		color: "#000000",
-		data: e.data.nullhelper[mode],
-		type: "line",
-		name: "helper"
-	});
-
-	_set(opt, ["series"], series);
+	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
 
 	// set dasharray for legend and switch 4
 	_set(opt, ["stroke", "dashArray"], (e.switchId == 4)? opt.seriesall.filter(e => !e.ghost).map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);

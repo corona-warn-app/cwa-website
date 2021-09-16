@@ -95,12 +95,6 @@ function filterData(dataOrg, date){
 	let data = _cloneDeep(dataOrg);
 	data.range = DateTime.fromISO(date[1]).diff(DateTime.fromISO(date[0]),'days').toObject().days + 1;
 	data.data = _mapValues(data.data, (a) => a.filter(o => (date[0] <= o[0] && date[1] >= o[0])));
-	data.nullhelper = {
-		daily: data.data.daily.map(e => [e[0], null]),
-		weekly: data.data.weekly.map(e => [e[0], null]),
-	};
-	data.nullhelper.daily[0] = [date[0], -10000];
-	data.nullhelper.weekly[0] = [date[0], -10000];
 	console.timeEnd('filterData')
 	return data;
 }
