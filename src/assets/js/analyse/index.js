@@ -2,6 +2,7 @@ import $ from 'jquery';
 import { combineLatestWith } from 'rxjs';
 import _mapValues from 'lodash/mapValues';
 import _cloneDeep from 'lodash/cloneDeep';
+import _get from 'lodash/get';
 import { DateTime } from 'luxon';
 
 
@@ -15,6 +16,11 @@ import data$ from './data.js';
 import date$ from './date.js';
 import switchId$ from './switch.js';
 import tabs$ from './tabs.js';
+
+
+
+const documentLang = document.documentElement.lang;
+const lang = (documentLang == "de")? 'de-DE': 'en-US';
 
 
 window.$ = window.jQuery;
@@ -74,10 +80,28 @@ data$
 			totalValues(obj.data);
 		}
 
-		// filter data only on range change 
-		obj.data = (Array.isArray(checkArray) && JSON.stringify(array[1]) == JSON.stringify(checkArray[1]))? cacheData: filterData(obj.data, obj.date);
+		// detect mode
+		const mode = (switchId == 3)? "weekly": "daily";
 
-		charts.forEach((s,i) => s.next(obj));
+		// filter data only on range change 
+		obj.data = (
+			Array.isArray(checkArray) 
+			&& 
+			(
+				JSON.stringify(array[1]) == JSON.stringify(checkArray[1]) 
+				&
+				( 
+					array[0] != 3 
+					&&
+					checkArray[0] != 3 
+				)
+			)
+		)? 
+			cacheData: 
+			filterData(obj.data, obj.date, mode);
+
+		
+		charts.forEach((s,i) => s.next(Object.assign({}, obj, {mode}, obj.data)));
 		
 		// fill cache  vars
 		cacheData = obj.data;
@@ -90,13 +114,36 @@ data$
 
 
 
-function filterData(dataOrg, date){
+const barThreshold = {
+	"daily": (window.matchMedia("(max-width: 992px)").matches)? 30: 90,
+	"weekly": (window.matchMedia("(max-width: 992px)").matches)? 100: 400
+};
+
+
+function filterData(dataOrg, date, mode){
 	console.time('filterData')
-	let data = _cloneDeep(dataOrg);
-	data.range = DateTime.fromISO(date[1]).diff(DateTime.fromISO(date[0]),'days').toObject().days + 1;
-	data.data = _mapValues(data.data, (a) => a.filter(o => (date[0] <= o[0] && date[1] >= o[0])));
-	console.timeEnd('filterData')
-	return data;
+
+	dataOrg = _cloneDeep(dataOrg);
+	let out = {};
+	out.keys = _get(dataOrg,["keys", mode], []);
+	out.data = _get(dataOrg,["data", mode], []).filter(o => (date[0] <= o[0] && date[1] >= o[0]));
+
+	if(mode == "weekly"){
+		out.data = out.data.map(e => {e[0] = DateTime.fromISO(e[0]).startOf('week').toISODate(); return e});
+	};	
+
+	out.reallabels = out.data.map(o => o[0]);
+	out.range = out.reallabels.length;
+	out.barthreshold = (out.range <= barThreshold[mode]);
+	out.categories = out.reallabels.map(e => {
+		let d = DateTime.fromISO(e);
+		d = (mode == "daily")? d.toLocaleString((out.range <= 28 )? { day: "2-digit", month: 'short' }: { month: 'short', year: '2-digit' }): d.toFormat((documentLang == "de")? "'KW' W": "'CW' W"); 
+		return  `__${d}__`;
+	});
+	out.tooltipDate = out.reallabels.map(o => (mode == "weekly")? DateTime.fromISO(o).toFormat((documentLang == "de")? "'KW' W": "'CW' W") + " - " + DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE): DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE));
+
+	console.timeEnd('filterData');
+	return out;
 }
 
 
