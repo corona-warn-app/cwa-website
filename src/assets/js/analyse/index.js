@@ -100,8 +100,9 @@ data$
 			cacheData: 
 			filterData(obj.data, obj.date, mode);
 
+		const updated = (obj.data !== cacheData)
 		
-		charts.forEach((s,i) => s.next(Object.assign({}, obj, {mode}, obj.data)));
+		charts.forEach((s,i) => s.next(Object.assign({}, obj, {mode}, obj.data, {updated})));
 		
 		// fill cache  vars
 		cacheData = obj.data;

@@ -20,7 +20,8 @@ export default function({
 		switchId, 
 		tabs1, 
 		tabs2, 
-		tooltipDate
+		tooltipDate,
+		updated
 	},
 	i
  )
@@ -38,16 +39,9 @@ export default function({
 
 	
 	let opt = {
-		chart:{
-			id,
+		chart: {
 			type,
 			stacked: _get(chartConfigObj, ["stacked"], false)
-		},
-		mode,
-		reallabels,
-		tooltipDate,
-		xaxis: {
-			categories
 		},
 		seriesall: _get(chartConfigObj, ["series"], []).map(obj => {
 			return {
@@ -60,6 +54,13 @@ export default function({
 			}
 		})
 	};
+
+	// add only if needed
+	if(updated){
+		opt = Object.assign(opt, {mode, reallabels, tooltipDate, xaxis: {categories}})
+	}
+
+	
 
 
 	// set series without the ghots
