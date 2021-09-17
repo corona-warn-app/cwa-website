@@ -149,7 +149,7 @@
                             "In dem Zertifikat werden Daten transportiert, z.&nbsp;B. in dem Fall des Impfzertifikats, Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann, nach aktuellem Stand der wissenschaftlichen Erkenntnisse, z.&nbsp;B. in Deutschland ein Jahr. Danach gilt der Impfschutz als erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche Gültigkeit'. Die fachliche Gültigkeit der Impfung zählt also ab dem letzten Impfdatum.​ Während in Deutschland derzeit die fachliche Gültigkeit auf ein Jahr festgelegt ist, kann die Gültigkeit des Impfschutzes in anderen Ländern davon abweichen.​",
                             "Bei einem​ Genesenenzertifikat ist die fachliche Gültigkeit laut des EU eHealth Networks festgelegt auf 'Datum des ersten positiven PCR-Test-Ergebnisses der Person' plus 180 Tage.​ Sofortige Impfstatusanzeige für Genesene: Für Genesene wird ab der Version 2.9 direkt nach der ersten Impfung der vollständige Impfschutz in der Corona-Warn-App angezeigt. Die zweiwöchige Wartezeit entfällt bei allen Impfstoffen außer bei Johnson & Johnson.",
                             "<b>Prüfung der Gültigkeit</b>",
-                            "Die Prüf-App, in Deutschland die CovPassCheck-App, prüft sowohl die technische Gültigkeit des Zertifikats als auch die fachliche Gültigkeit.Sobald eine der beiden Gültigkeiten abläuft, wird das gesamte Zertifikat bei der Verifikation mit der Prüf-App als 'ungültig' abgelehnt.​",
+                            "Die Prüf-App, in Deutschland die CovPassCheck-App, prüft sowohl die technische Gültigkeit des Zertifikats als auch die fachliche Gültigkeit. Sobald eine der beiden Gültigkeiten abläuft, wird das gesamte Zertifikat bei der Verifikation mit der Prüf-App als 'ungültig' abgelehnt.​",
                             "Wenn Sie beispielsweise Ihr Zertifikat erst ein halbes Jahr nach Impfung ausstellen lassen, dann wird das Zertifikat technisch zwar noch ein Jahr gültig sein, aber von der Impfung ist schon ein halbes Jahr abgelaufen. D.&nbsp;h. bei der Prüfung auf den Impfschutz wird erkannt, dass nach einem weiteren halben Jahr die Impfung nicht mehr gültig ist. Danach wird die Verifikation das Zertifikat als 'ungültig' abweisen, obwohl es zwar technisch noch gültig ist, aber nicht mehr fachlich.​"
                         ]
                     },
@@ -752,7 +752,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS] Leerer Bildschirm auf iOS 13.7/14 / ENA.ExposureNotificationError-Fehler2",
+                        "title": "[Apple/iOS]: Leerer Bildschirm auf iOS 13.7/14 / ENA.ExposureNotificationError-Fehler2",
                         "anchor": "ios_black_screen",
                         "active": true,
                         "textblock": [
@@ -844,7 +844,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nur teilweise kompatibel ist. Was bedeutet das?",
+                        "title": "[Google/Android]: Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nur teilweise kompatibel ist. Was bedeutet das?",
                         "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
@@ -857,7 +857,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nicht mit Exposure Notifications kompatibel ist. Was bedeutet das?",
+                        "title": "[Google/Android]: Eine Meldung „Inkompatibilitätswarnung” auf meiner Startseite zeigt an, dass mein Gerät nicht mit Exposure Notifications kompatibel ist. Was bedeutet das?",
                         "anchor": "full_incompat",
                         "active": true,
                         "textblock": [
@@ -1171,18 +1171,18 @@
                         "active": true,
                         "textblock": [
                             "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden Sie unter <a href='#risk_info' target='_blank' rel='noopener noreferrer'>Wie werde ich über ein Infektionsrisiko informiert?</a>",
-                            "<b>Begegnungsüberprüfungen</b> (Apple) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
-                            "Dieser Wert gibt nicht die Anzahl der Begegnungen wieder. Bitte klicken Sie eine Stufe weiter: Dort sind die Überprüfungen von bis zu 15 Tagen protokolliert (heute plus die letzten 14 Tage). Das Auswählen eines Eintrages führt zur Detailansicht mit den entsprechenden Zeitstempeln und der Anzahl der abgeglichenen Schlüssel.",
-                            "<b>Bereitgestellte Schlüssel</b> (Apple) | <b>Anzahl der Schlüssel</b> (Android)",
+                            "<b>Begegnungsüberprüfungen</b> (iOS) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
+                            "Hier sind die Überprüfungen von bis zu 15 Tagen protokolliert (heute plus die letzten 14 Tage). Es können auch jeden Tag mehrere Überprüfungen durchgeführt worden sein. Das Auswählen eines Eintrages führt zur Detailansicht mit den entsprechenden Zeitstempeln und der Anzahl der abgeglichenen Schlüssel.",
+                            "<b>Bereitgestellte Schlüssel</b> (iOS) | <b>Anzahl der Schlüssel</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
-                            "<b>Übereinstimmende Schlüssel</b> (Apple) | <b>Anzahl der Treffer</b> (Android)",
+                            "<b>Übereinstimmende Schlüssel</b> (iOS) | <b>Anzahl der Treffer</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
                             "<b>Zeitstempel</b>",
                             "Datum und Uhrzeit an dem der Abgleich durchgeführt wurde. Diese ist unabhängig vom Zeitpunkt eventueller Begegnungen, da für jeden Diagnoseschlüssel in der Datei ein separates Gültigkeitsdatum abgelegt ist.",
-                            "<b>Datenquelle</b>",
-                            "App die den Abgleich veranlasst hat. Haben sie z.&nbsp;B. noch Immuni oder SwissCovid installiert, könnten auch deren App-Identifier dort an Stelle von 'Corona-Warn' stehen.",
+                            "<b>Datenquelle</b> (iOS) | <b>Region</b> (Android)",
+                            "App die den Abgleich veranlasst hat. Haben sie z.&nbsp;B. noch Immuni oder SwissCovid installiert, würden auch deren App-Identifier dort an Stelle von 'Corona-Warn' stehen.",
                             "<b>Hash</b>",
-                            "Prüfsumme für die Datei der heruntergeladenen Positivschlüssel. Sofern der Dateiinhalt (Positivkennungen) gleich bleibt, verändert sich auch diese Prüfsumme einer Datei für den relevanten Zeitraum von 2 Wochen nicht."
+                            "Prüfsumme für die Datei der heruntergeladenen Positivschlüssel."
                         ]
                     },
                     {
@@ -1209,7 +1209,7 @@
                         "anchor": "bluetooth_off_ios",
                         "active": true,
                         "textblock": [
-                            "Dann können Begegnungen mit den anderen Geräten, welche die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufalls-IDs ausgetauscht werden. Ebenso kann die App keine Überprüfung auf Risiko-Begegnungen durchgeführen. Haben Sie deswegen bitte zu jeder Zeit Bluetooth aktiviert, damit Sie bei einem hohen Risikostatus so schnell wie möglich gewarnt werden."
+                            "Dann können Begegnungen mit den anderen Geräten, welche die Corona-Warn-App laufen haben, nicht aufgezeichnet werden, weil keine Zufalls-IDs ausgetauscht werden. Ebenso kann die App keine Überprüfung auf Risiko-Begegnungen durchführen. Haben Sie deswegen bitte zu jeder Zeit Bluetooth aktiviert, damit Sie bei einem hohen Risikostatus so schnell wie möglich gewarnt werden."
                         ]
                     },
                     {
@@ -1790,7 +1790,7 @@
                 "title": "Geklärt",
                 "accordion": [
                     {
-                        "title": "[Google/Android]: Geschlossenen Sicherheitlücke im Exposure Notification Framework",
+                        "title": "[Google/Android]: Geschlossenen Sicherheitslücke im Exposure Notification Framework",
                         "anchor": "google_security_vulnerability",
                         "active": true,
                         "textblock": [
@@ -1863,7 +1863,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS] 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
+                        "title": "[Apple/iOS]: 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
                         "anchor": "ExposureDetectionIsAlreadyRunning",
                         "active": true,
                         "textblock": [
@@ -1986,7 +1986,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS] Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
+                        "title": "[Apple/iOS]: Nach dem Update auf 1.2.0 kann ich die App nicht mehr öffnen",
                         "anchor": "app_does_not_open",
                         "active": true,
                         "textblock": [
@@ -1995,7 +1995,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] Der Text für das niedrige Risiko ist widersprüchlich",
+                        "title": "[Google/Android]: Der Text für das niedrige Risiko ist widersprüchlich",
                         "anchor": "low_risk_text",
                         "active": true,
                         "textblock": [

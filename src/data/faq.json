@@ -95,7 +95,7 @@
                         "anchor": "further_details",
                         "active": true,
                         "textblock": [
-                            "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on current infections starting with the 1.11 version of the app. The figures displayed guide users to better assess the current situation and to adjust their own behaviour.",
+                            "Due to the high dynamics of the pandemic, the Corona-Warn-App displays important statistical key figures on current infections starting with the 1.11 version of the app. The figures displayed guide users to better assess the current situation and to adjust their own behavior.",
                             "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ",
                             "The statistics displayed in the Corona-Warn-App are compiled from different sources and are formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
                             "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='https://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener'>https://www.rki.de/covid-19-nowcasting</a>.",
@@ -752,7 +752,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS] Can’t enable exposure logging / Empty screen on iOS 13.7/14 / ENA.ExposureNotificationError-Error2",
+                        "title": "[Apple/iOS]: Can’t enable exposure logging / Empty screen on iOS 13.7/14 / ENA.ExposureNotificationError-Error2",
                         "anchor": "ios_black_screen",
                         "active": true,
                         "textblock": [
@@ -843,7 +843,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen indicates that my device is only partially compatible. What does this mean?",
+                        "title": "[Google/Android]: A message “Incompatibility warning” on my Start Screen indicates that my device is only partially compatible. What does this mean?",
                         "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
@@ -856,7 +856,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] A message “Incompatibility warning” on my Start Screen indicates that my device is not compatible with Exposure Notifications at all. What does this mean?",
+                        "title": "[Google/Android]: A message “Incompatibility warning” on my Start Screen indicates that my device is not compatible with Exposure Notifications at all. What does this mean?",
                         "anchor": "full_incompat",
                         "active": true,
                         "textblock": [
@@ -1163,17 +1163,17 @@
                         "textblock": [
                             "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For info about the app flow, see <a href='#risk_info' target='_blank' rel='noopener noreferrer'>How do you get information about a risk of infection?</a> for details.",
                             "<b>Exposure checks</b>",
-                            "This value does not reflect the number of encounters. Please tap one level further: This is where the checks of up to 15 days are logged (today plus the last 14 days). Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
-                            "<b>Provided Key Count</b> (Apple) | <b>Number of keys</b> (Android)",
+                            "This is where the checks of up to 15 days are logged (today plus the last 14 days). There may be multiple checks made per day. Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
+                            "<b>Provided Key Count</b> (iOS) | <b>Number of keys</b> (Android)",
                             "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
-                            "<b>Matched Key Count</b> (Apple) | <b>Number of matches</b> (Android)",
+                            "<b>Matched Key Count</b> (iOS) | <b>Number of matches</b> (Android)",
                             "This is the number of keys that your phone collected for which there is a matching diagnosis key. If the number is not 0, then you had an exposure. If your risk status stays green, that is, 'Low Risk', find more information at <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>An encounter has been reported, but the risk status stays green</a>.",
                             "<b>Timestamp</b>",
-                            "Date and time at which the check happened. This is independent of the timestamp of potential exposures since every key stored in the downloaded files, a separate validity timestamp is stored.",
-                            "<b>Data Source</b>",
-                            "Identifies the app that initiated the check. If you, for example, also installed Immuni or SwissCovid, their app identifiers could be noted there instead of 'Corona-Warn'.",
+                            "Date and time at which the check happened. This is independent of the timestamp of potential exposures since every key stored in the downloaded files has its own separate validity timestamp stored.",
+                            "<b>Data Source</b> (iOS) | <b>Region</b> (Android)",
+                            "Identifies the app that initiated the check. If you, for example, also installed Immuni or SwissCovid, their app identifiers would be noted here instead of 'Corona-Warn'.",
                             "<b>Hash</b>",
-                            "Checksum of the file containing the downloaded diagnosis keys. As long as the file content (diagnosis keys) does not change, this checksum will not change throughout the relevant time frame of 2 weeks."
+                            "Checksum of the file containing the downloaded diagnosis keys."
                         ]
                     },
                     {
@@ -1693,7 +1693,7 @@
                         "textblock": [
                             "Devices in close proximity to yours collect “rolling proximity identifiers” (RPI). These are IDs that guarantee data privacy and change constantly in short intervals, thereby preventing devices from being tracked. Apart from these IDs, other devices in close proximity cannot retrieve any other information from your device. These IDs can only be linked to pseudonymous diagnosis keys, which are needed to perform risk identification. A connection with user IDs or your device's International Mobile Equipment Identity (IMEI) is not possible.",
                             "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via TeleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed.",
-                            "<b>Why were dummy keys (fake diagnostic keys) initially created and used?</b><br/>A very small number of dummy keys could possibly result in transmitted diagnostic keys being assigned to a single user. To minimise this risk, fake diagnostic keys (dummy keys) were initially generated. This increased the number of diagnostic keys in the system in order to minimise the described re-identification risk.",
+                            "<b>Why were dummy keys (fake diagnostic keys) initially created and used?</b><br/>A very small number of dummy keys could possibly result in transmitted diagnostic keys being assigned to a single user. To minimize this risk, fake diagnostic keys (dummy keys) were initially generated. This increased the number of diagnostic keys in the system in order to minimize the described re-identification risk.",
                             "<b>Why is it now possible to do without the generation and use of dummy keys (fake diagnostic keys)?</b><br/>Due to the current increase in the number of infections, many diagnostic keys are already being managed in the CWA. Therefore the risk of re-identification is currently considered very low. With the connection of the CWA to the European Federation Gateway Service (EFGS), the number of diagnostic keys in the system will increase even further, as diagnostic keys from users in other countries will also be added. For this reason, the generation and use of fake diagnostic keys (dummy keys) can be easily avoided.",
                             "<b>Will dummy keys (fake diagnostic keys) be used again if the corona pandemic should abate?</b><br/>If no better alternatives are found in the meantime, the generation of dummy keys (fake diagnosis keys) can be activated at short notice if required."
                         ]
@@ -1854,7 +1854,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS] 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
+                        "title": "[Apple/iOS]: 'ExposureDetectionIsAlreadyRunning' in CWA version 1.6.1",
                         "anchor": "ExposureDetectionIsAlreadyRunning",
                         "active": true,
                         "textblock": [
@@ -1977,7 +1977,7 @@
                         ]
                     },
                     {
-                        "title": "[Apple/iOS] I cannot open the app",
+                        "title": "[Apple/iOS]: I cannot open the app",
                         "anchor": "app_does_not_open",
                         "active": true,
                         "textblock": [
@@ -1986,7 +1986,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android] The explanation for a risk encounter on the low risk card is contradictory",
+                        "title": "[Google/Android]: The explanation for a risk encounter on the low risk card is contradictory",
                         "anchor": "low_risk_text",
                         "active": true,
                         "textblock": [
@@ -2187,7 +2187,7 @@
                 {
                     "term": "Signature",
                     "anchor": "signature",
-                    "description": "A digital signature is a signature that is created by a crytographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> <br/><br/> As a consequence, the signature must fulfill the following requirements: <br/><ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
+                    "description": "A digital signature is a signature that is created by a cryptographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> <br/><br/> As a consequence, the signature must fulfill the following requirements: <br/><ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
                 }
             ],
             "T": [
