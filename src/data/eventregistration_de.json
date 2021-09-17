@@ -7,6 +7,7 @@
         "introCLI": "Sie können QR-Codes in der App oder hier auf dieser Seite erstellen. Alternativ können Sie auch <a href='https://github.com/corona-warn-app/cwa-event-qr-code'>unser offizielles QR-Code-Werkzeug</a> benutzen, um beispielsweise mehrere QR-Codes auf einmal zu erzeugen. <a href='../event-qr-code-guide/'>Klicken Sie hier</a> für eine ausführliche Anleitung zur Nutzung des offiziellen QR-Code-Werkzeuges. ",
         "introMultiQR": "Die CSV-Datei muss der Vorlage folgen, wie <a href='/de/event-qr-code-guide/'>hier</a> in Schritt 5 beschrieben. Nutzen Sie <a href='/assets/documents/tables.csv'> diese Beispieldatei</a>, um loszulegen.",
         "disclaimer": "Alle Informationen werden ausschließlich lokal in Ihrem Browser verarbeitet. Weder die von Ihnen generierten QR-Codes noch die darin enthaltenen Informationen werden an die Server der Corona-Warn-App gesendet. Der Quelltext des Generators ist frei einsehbar.",
+        "qrsGeneratedInfo": "# Seite(n) und $ QR-Codes sind erstellt worden.",
         "tabs": {
             "single": "Einen QR-Code erstellen",
             "multi": "Mehrere QR-Codes erstellen"
@@ -22,8 +23,8 @@
                 "show": "Erstellen",
                 "download": "Herunterladen",
                 "print": "Drucken",
-                "csvFile": "Ihre CSV Datei hochladen",
-                "pageTemplate": "Vorlage auswählen"
+                "csvFile": "Daten aus CSV-Datei laden",
+                "layout": "Layout"
             },
             "placeholders": {
                 "description": "z.B. Friseur",
@@ -69,12 +70,15 @@
                 { "id": 10, "name": "Vereinsaktivität" },
                 { "id": 2, "name": "Anderes Event" }
             ],
-            "templates_options": [
+            "layout_options": [
                 {"option": "1x1"},
-                {"option": "1x2"},
+                {"option": "2x1"},
                 {"option": "2x2"},
                 {"option": "3x3"},
-                {"option": "4x4"}
+                {"option": "4x2"},
+                {"option": "4x4"},
+                {"option": "6x3"},
+                {"option": "5x5"}
             ]
         }
     }

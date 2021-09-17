@@ -62,6 +62,22 @@ $(document).ready(function(){
             }
         }]
     });
+
+    $('.qr-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint : 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
     if ($('.js-section-sticky').index() >= 0){
         const autoHideSticky = function(){
             const top = $(document).scrollTop(),
