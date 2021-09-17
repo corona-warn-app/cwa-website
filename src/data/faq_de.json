@@ -1210,18 +1210,18 @@
                         "active": true,
                         "textblock": [
                             "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden Sie unter <a href='#risk_info' target='_blank' rel='noopener noreferrer'>Wie werde ich über ein Infektionsrisiko informiert?</a>",
-                            "<b>Begegnungsüberprüfungen</b> (Apple) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
-                            "Dieser Wert gibt nicht die Anzahl der Begegnungen wieder. Bitte klicken Sie eine Stufe weiter: Dort sind die Überprüfungen von bis zu 15 Tagen protokolliert (heute plus die letzten 14 Tage). Das Auswählen eines Eintrages führt zur Detailansicht mit den entsprechenden Zeitstempeln und der Anzahl der abgeglichenen Schlüssel.",
-                            "<b>Bereitgestellte Schlüssel</b> (Apple) | <b>Anzahl der Schlüssel</b> (Android)",
+                            "<b>Begegnungsüberprüfungen</b> (iOS) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
+                            "Hier sind die Überprüfungen von bis zu 15 Tagen protokolliert (heute plus die letzten 14 Tage). Es können auch jeden Tag mehrere Überprüfungen durchgeführt worden sein. Das Auswählen eines Eintrages führt zur Detailansicht mit den entsprechenden Zeitstempeln und der Anzahl der abgeglichenen Schlüssel.",
+                            "<b>Bereitgestellte Schlüssel</b> (iOS) | <b>Anzahl der Schlüssel</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
-                            "<b>Übereinstimmende Schlüssel</b> (Apple) | <b>Anzahl der Treffer</b> (Android)",
+                            "<b>Übereinstimmende Schlüssel</b> (iOS) | <b>Anzahl der Treffer</b> (Android)",
                             "Das ist die Anzahl der Schlüssel, die Ihr Smartphone eingesammelt hat, für die der Abgleich eine Positivkennung gefunden hat. Wenn hier nicht 0 steht, dann hatten Sie eine Risiko-Begegnung. Wenn Ihr Risikostatus dennoch grün, also Niedriges Risiko, ist, lesen Sie bitte unter <a href='#encounter_but_green' target='_blank' rel='noopener noreferrer'>Ich habe eine Risiko-Begegnung, mir wird aber nach wie vor ein niedriges Risiko angezeigt</a> weiter.",
                             "<b>Zeitstempel</b>",
                             "Datum und Uhrzeit an dem der Abgleich durchgeführt wurde. Diese ist unabhängig vom Zeitpunkt eventueller Begegnungen, da für jeden Diagnoseschlüssel in der Datei ein separates Gültigkeitsdatum abgelegt ist.",
-                            "<b>Datenquelle</b>",
-                            "App die den Abgleich veranlasst hat. Haben sie z.&nbsp;B. noch Immuni oder SwissCovid installiert, könnten auch deren App-Identifier dort an Stelle von 'Corona-Warn' stehen.",
+                            "<b>Datenquelle</b> (iOS) | <b>Region</b> (Android)",
+                            "App die den Abgleich veranlasst hat. Haben sie z.&nbsp;B. noch Immuni oder SwissCovid installiert, würden auch deren App-Identifier dort an Stelle von 'Corona-Warn' stehen.",
                             "<b>Hash</b>",
-                            "Prüfsumme für die Datei der heruntergeladenen Positivschlüssel. Sofern der Dateiinhalt (Positivkennungen) gleich bleibt, verändert sich auch diese Prüfsumme einer Datei für den relevanten Zeitraum von 2 Wochen nicht."
+                            "Prüfsumme für die Datei der heruntergeladenen Positivschlüssel."
                         ]
                     },
                     {
