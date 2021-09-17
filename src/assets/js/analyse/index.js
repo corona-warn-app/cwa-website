@@ -102,7 +102,7 @@ data$
 
 		const updated = (obj.data !== cacheData)
 		
-		charts.forEach((s,i) => s.next(Object.assign({}, obj, {mode}, obj.data, {updated})));
+		charts.forEach((s,i) => s.next(Object.assign({}, obj, {mode, updated}, obj.data)));
 		
 		// fill cache  vars
 		cacheData = obj.data;

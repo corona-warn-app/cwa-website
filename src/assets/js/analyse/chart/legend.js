@@ -1,28 +1,27 @@
 import $ from 'jquery';
 import _set from 'lodash/set';
 import _get from 'lodash/get';
+import _chunk from 'lodash/chunk';
 import translate from '../translate.js';
 
 let resetSeriesCheck = {};
 
 function renderLegend(opt){
 	// render custom legend
-	const $e  = $("#apexcharts" + opt.chart.id ).parent().next();
+	const $e  = $("#apexcharts" + opt.chart.id).parent().next();
 	const labels = [translate("legendLabelMean"), translate("legendLabelDaily")];
-	const outArray = opt.seriesall.filter(a => (!a.ghost)).map((e, i) => `
-		${(i == opt.stroke.dashArray.indexOf(5))? `</div><div class="analyseChartLegend-row">`: ""}
-		${(opt.stroke.dashArray.indexOf(5) >= 0 && (i === 0 || i == opt.stroke.dashArray.indexOf(5)))? `<div class="analyseChartLegend-label">${labels.shift()}</div>`: ""}
-		<button style="color: ${e.color};" data-id="${opt.chart.id},${e.name}" class="btn analyseChartLegend-item ${(opt.stroke.dashArray.indexOf(5) >= 0 && i >= opt.stroke.dashArray.indexOf(5))? `analyseChartLegend-item_d`: ``}"><span>${e.name}</span></button>
-	`);
-
-	$e.html(`<div class="analyseChartLegend-row">${outArray.join("")}</div>`);
+	let outArray = opt.stroke.dashArray.map((e, i) => `<button style="color: ${opt.series[i].color};" data-exec='["${opt.chart.id}", "toggleSeries","${opt.series[i].name}"]' class="btn analyseChartLegend-item ${(e == 5)? 'analyseChartLegend-item_d': ''}"><span>${opt.series[i].name}</span></button>`);
+	if(opt.stroke.dashArray.indexOf(5) > 0){
+		outArray = _chunk(outArray, opt.stroke.dashArray.length / 2).map((e, i) => `<div class="analyseChartLegend-row"><div class="analyseChartLegend-label">${labels.shift()}</div>${e.join("")}</div>`);
+	}
+	$e.html(outArray.join(""));
 }
 
 $(document).on("click",".analyseChartLegend-item", function() {
-	const id = $(this).data("id").split(",");
-	if(!Array.isArray(id)) return;  
-	$(this).toggleClass("deactive", !ApexCharts.exec(id[0], "toggleSeries", id[1]))
-	_set(resetSeriesCheck, [id[0]], ($(".analyseChartLegend-item.deactive").length > 0));
+	const exec = $(this).data("exec");
+	if(!Array.isArray(exec)) return;  
+	$(this).toggleClass("deactive", !ApexCharts.exec(...exec))
+	_set(resetSeriesCheck, [exec[0]], ($(".analyseChartLegend-item.deactive").length > 0));
 });
 
 

@@ -40,6 +40,7 @@ export default function({
 	
 	let opt = {
 		chart: {
+			id,
 			type,
 			stacked: _get(chartConfigObj, ["stacked"], false)
 		},
@@ -60,14 +61,11 @@ export default function({
 		opt = Object.assign(opt, {mode, reallabels, tooltipDate, xaxis: {categories}})
 	}
 
-	
-
-
 	// set series without the ghots
 	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
 
 	// set dasharray for legend and switch 4
-	_set(opt, ["stroke", "dashArray"], (switchId == 4)? opt.seriesall.filter(e => !e.ghost).map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): []);
+	_set(opt, ["stroke", "dashArray"], (switchId == 4)? opt.seriesall.filter(e => !e.ghost).map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): new Array(opt.series.length).fill(0));
 
 	//Only reset series if necessary
 	checkLegendReset(opt, () => {
@@ -75,7 +73,7 @@ export default function({
 	});
 
 	// update chart options
-	ApexCharts.exec(id, "updateOptions", opt, true, true, false);
+	ApexCharts.exec(id, "updateOptions", opt, true, false, false);
 
 	// render custom legend
 	renderLegend(opt);
