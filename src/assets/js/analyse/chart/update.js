@@ -45,12 +45,16 @@ export default function({
 			stacked: _get(chartConfigObj, ["stacked"], false)
 		},
 		seriesall: _get(chartConfigObj, ["series"], []).map(obj => {
+
+			if((keys.indexOf(obj.data) == -1 )){
+				console.warn(obj.data)
+			}
 			return {
 				ghost: obj.ghost,
 				color: (obj.color)? obj.color: undefined,
 				type: (obj.type)? (barthreshold)? obj.type: "line": type,
 				name: (obj.name)? translate(obj.name): translate(obj.data),
-				data: data.map(m => m[keys.indexOf(obj.data)]),
+				data: (keys.indexOf(obj.data) >= 0)? data.map(m => m[keys.indexOf(obj.data)]): [],
 				key: obj.data
 			}
 		})
