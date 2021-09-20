@@ -3,8 +3,6 @@ import Litepicker from 'litepicker';
 import Cleave from 'cleave.js';
 import { DateTime, Settings } from 'luxon';
 
-const documentLang = document.documentElement.lang;
-const lang = (documentLang == "de")? 'de-DE': 'en-US';
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
@@ -79,7 +77,7 @@ $('.analyseRangePicker-input').each(function(){
 	new Cleave(this, {
 		date: true,
 		delimiter: (documentLang == "de")? '.': '/',
-		dateMin: '2020-01-01',
+		dateMin: '2020-05-15',
 		dateMax: now.toISODate(),
 		datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
 		onValueChanged: function(e) {

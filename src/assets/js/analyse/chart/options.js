@@ -3,10 +3,6 @@ import $ from 'jquery';
 import lock from '../lock.js';
 import translate from '../translate.js';
 
-const documentLang = document.documentElement.lang;
-const lang = (documentLang == "de")? 'de-DE': 'en-US';
-
-
 export default {
 	stroke: {
 		width: 2
@@ -74,8 +70,9 @@ export default {
 	 },
 	xaxis: {
 		type: "category",
-		tickAmount: '20',
+		tickAmount: 8,
 		tickPlacement: 'on',
+		min: 0,
 		axisBorder: {
 		  show: true,
 		  color: 'currentColor',

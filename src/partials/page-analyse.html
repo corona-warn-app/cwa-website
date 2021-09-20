@@ -1,9 +1,17 @@
 {{#if page-contents}}
-{{#if page-contents.translations}} 
+
 	<script>
-		const analyseTranslations = {{{toJSON page-contents.translations}}}
+		{{#if page-contents.lang}} 
+			const lang = "{{page-contents.lang}}";
+		{{/if}}
+		{{#if page-contents.documentLang}} 
+			const documentLang = "{{page-contents.documentLang}}";
+		{{/if}}
+		{{#if page-contents.translations}} 
+			const analyseTranslations = {{{toJSON page-contents.translations}}};
+		{{/if}}
 	</script>
-{{/if}}
+
 <div class="container section_bg-light">
 
 	{{#if page-contents.topic}}

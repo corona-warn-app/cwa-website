@@ -3,8 +3,6 @@ import _get from 'lodash/get';
 import _cloneDeep from 'lodash/cloneDeep';
 import { DateTime, Settings } from 'luxon';
 
-const documentLang = document.documentElement.lang;
-const lang = (documentLang == "de")? 'de-DE': 'en-US';
 Settings.defaultLocale = documentLang;
 
 function getValue(e, key){

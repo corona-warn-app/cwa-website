@@ -17,12 +17,6 @@ import date$ from './date.js';
 import switchId$ from './switch.js';
 import tabs$ from './tabs.js';
 
-
-
-const documentLang = document.documentElement.lang;
-const lang = (documentLang == "de")? 'de-DE': 'en-US';
-
-
 window.$ = window.jQuery;
 
 

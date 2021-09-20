@@ -4,7 +4,6 @@ import { map } from 'rxjs/operators';
 
 import picker from './picker.js';
 
-const documentLang = document.documentElement.lang;
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
