@@ -10,9 +10,8 @@ export default {
 	series: [],
 	chart: {
 		id: "chart",
-		height: 215,
 		width: "100%",
-		height: '230px',
+		height: 230,
 		type: 'line',
 		redrawOnWindowResize: false,
 		toolbar: {
