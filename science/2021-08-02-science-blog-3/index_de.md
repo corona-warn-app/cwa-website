@@ -269,7 +269,7 @@ Weiß nicht
 
 ## 3 Überraschtheit
 
-Die Corona-Warn-App kann dazu beitragen, Infektionsketten, die sonst unerkannt gebleiben wären, frühzeitig zu beenden. 
+Die Corona-Warn-App kann dazu beitragen, Infektionsketten, die sonst unerkannt geblieben wären, frühzeitig zu beenden. 
 
 In der Basisbefragung wurde nach dem Überraschungseffekt (<q>Überraschtheit</q>) gefragt, ob die Teilnehmenden von der Anzeige des erhöhten Risikos überrascht waren. Mit 72,5% gaben fast drei Viertel der Teilnehmenden an, von der roten Warnung überrascht worden zu sein.
 
@@ -2462,7 +2462,7 @@ EDUS ist ein wichtiger Baustein, um erste Erkenntnisse über die Corona-Warn-App
 
 Dank der demografischen Angaben (Geschlecht, Alter, Bildungsgrad) und geografischen Angaben konnte die Studienpopulation mit der Gesamtbevölkerung verglichen und Klarheit über ihre geografische Verteilung sowie den Unterschied zwischen dem urbanen und ländlichen Raum gewonnen werden. Weiterhin konnten durch die Untersuchung des Kontaktverhaltens positiv getesteter Personen Aussagen über die Zusammenhänge innerhalb und außerhalb ihres Bekanntenkreises sowie im beruflichen Kontext getroffen werden. Darüber hinaus konnte dank EDUS der Zusammenhang zwischen Risikoeinschätzung und beabsichtigter Verhaltensänderung sowie Testbereitschaft aufgezeigt werden.
 
-Ein weiterer wichtiger Punkt war die Untersuchung der Überraschtheit der Befragten. Untersucht wurden die Gründe, die zu einer Überraschtheit führten sowie die Zusammenhänge zwischen Überraschtheit und durchgeführten Tests, Kontaktaufnahme zum Gesundheitswesen und tatsächlicher Infektion. Die Untersuchung des Testvorhabens gab Aufschluss über die Art des Tests, seine Durchführung und das Testergebnis. Eine genauere Betrachtung des Mitteilungsverhaltens bei positivem Ergebniss verdeutlichte die große Bereitschaft zur Mitteilung und die hohe Geschwindigkeit der Warnkette.
+Ein weiterer wichtiger Punkt war die Untersuchung der Überraschtheit der Befragten. Untersucht wurden die Gründe, die zu einer Überraschtheit führten sowie die Zusammenhänge zwischen Überraschtheit und durchgeführten Tests, Kontaktaufnahme zum Gesundheitswesen und tatsächlicher Infektion. Die Untersuchung des Testvorhabens gab Aufschluss über die Art des Tests, seine Durchführung und das Testergebnis. Eine genauere Betrachtung des Mitteilungsverhaltens bei positivem Ergebnis verdeutlichte die große Bereitschaft zur Mitteilung und die hohe Geschwindigkeit der Warnkette.
 
 Ein weiterer Punkt, der auch in Zukunft an Bedeutung gewinnen wird, ist die Untersuchung der Symptomatik positiv getesteter Nutzender. Besonders die Spätfolgen von SARS-CoV-2 (Long COVID) generieren in den vergangenen Wochen und Monaten verstärkt Aufmerksamkeit und laden zu weiteren Untersuchungen ein.
 
