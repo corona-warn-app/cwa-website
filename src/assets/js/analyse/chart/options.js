@@ -72,7 +72,6 @@ export default {
 		type: "category",
 		tickAmount: 8,
 		tickPlacement: 'on',
-		min: 0,
 		axisBorder: {
 		  show: true,
 		  color: 'currentColor',
