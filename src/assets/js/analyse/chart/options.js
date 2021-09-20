@@ -114,9 +114,17 @@ export default {
 		enabled: true,
 		shared: true,
 		custom: function({series, seriesIndex, dataPointIndex, w}) {
-			const seriesArray = w.config.seriesall
-				.filter(a => (!a.ghost)? w.config.series.find(e => e.name === a.name).data.length > 0: true)
-				.map((e,i) => {
+			let seriesArray = w.config.seriesall
+				.filter(a => (!a.ghost)? w.config.series.find(e => e.name === a.name).data.length > 0: true);
+
+			if(w.config.chart.stacked){
+				if(seriesArray[0].ghost){
+					seriesArray.push(seriesArray.shift());
+				}
+				seriesArray.reverse();
+			}
+
+			seriesArray = seriesArray.map((e,i) => {
 				const value = e.data[dataPointIndex]
 				return `
 					<div class="apexcharts-tooltip-series-group">
