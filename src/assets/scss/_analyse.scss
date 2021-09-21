@@ -458,6 +458,26 @@
 			@media (max-width: $screen-md){
 				display: block;
 			}
+
+			img:nth-child(1){
+				display: block;
+			}
+
+			img:nth-child(2){
+				display: none;
+			}
+		
+
+			.fullscreen &{
+				img:nth-child(1){
+					display: none;
+				}
+
+				img:nth-child(2){
+					display: block;
+				}
+			}
+
 		}
 
 		&-expand{
