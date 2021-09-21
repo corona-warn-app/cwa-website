@@ -24,9 +24,10 @@ export default {
 		},
 		events: {
 			updated: function(chartContext, config) {
-				$(".apexcharts-xaxis-label tspan:not(:empty)").each(function(){
+				$(".apexcharts-xaxis-label tspan:not(:empty), .apexcharts-xaxis-label title:not(:empty)").each(function(){
 					$(this).html($(this).html().replaceAll("_", ""))
 				});
+
 				lock.unset(config.config.chart.id);
 			}
 		}
