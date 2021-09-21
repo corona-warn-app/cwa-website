@@ -9,7 +9,7 @@ import { DateTime } from 'luxon';
 import chart from './chart.js';
 import fullscreen from './fullscreen.js';
 import modal from './modal.js';
-import totalValues from './totalValues.js';
+import { totalValuesInit } from './totalValues.js';
 
 
 import data$ from './data.js';
@@ -71,7 +71,7 @@ data$
 
 		}else{
 			$(".analyseBoards").removeClass("loading");
-			totalValues(obj.data);
+			totalValuesInit(obj.data);
 		}
 
 		// detect mode

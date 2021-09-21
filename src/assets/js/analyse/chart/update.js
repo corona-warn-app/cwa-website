@@ -4,6 +4,7 @@ import _set from 'lodash/set';
 
 import lock from '../lock.js';
 import translate from '../translate.js';
+import { totalValuesUpdate } from '..//totalValues.js';
 
 import { checkLegendReset, renderLegend } from './legend.js';
 import chartConfig from './config.js';
@@ -28,6 +29,17 @@ export default function({
 {
 	const id = `chart${i}`;
 	lock.set(id);
+
+	if(i == 1){
+		// switch title on chart1 tabs 
+		$(`.${id}`).find(".analyseBoard-title .analyseBoard-title-title").html(translate(["analyseBoardTitleTitle", i, tabs1]));
+	}
+
+	if(i == 1 || i == 2){
+		// update total values based on selected tabs
+		totalValuesUpdate($(`.${id}`).find(".analyseBoard-total-value"), i, ((i == 1)? tabs1: (i == 2)? tabs2: 0));
+	}
+
 	
 	let chartConfigObj = _get(chartConfig, [id, switchId], []);
 	if(Array.isArray(chartConfigObj)){

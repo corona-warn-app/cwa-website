@@ -5,6 +5,9 @@ import { DateTime, Settings } from 'luxon';
 
 Settings.defaultLocale = documentLang;
 
+
+let store = [];
+
 function getValue(e, key){
 	const index = _get(e, ["keys", "daily"]).indexOf(key);
 	const array = _get(e, ["data", "daily"]);
@@ -21,11 +24,28 @@ function getValue(e, key){
 }
 
 
-export default function(data){
-	$(".analyseBoard-total-value").each(function(e){
-   		const key = $(this).data("key");
-   		const d = getValue(_cloneDeep(data), key);
-   		$(this).html(d[1]);
-   		$(this).next().find("span").html(d[0]);
+function totalValuesInit(data){
+	const d = _cloneDeep(data);
+
+	$(".analyseBoard-total-value").each(function(i, e){
+   		const keys = $(this).data("key");
+   		store.push(keys.map(e => getValue(d, e)));
+   		totalValuesUpdate($(this), i, 0);
    	})
+}
+
+function totalValuesUpdate($e, id, idx){
+	const ary = _get(store, [id], []);
+	const a = _get(ary, [idx], ary[0]);
+	$e.html(a[1]);
+	$e.next().find("span").html(a[0]);
+}
+
+
+
+
+
+export {
+	totalValuesInit,
+	totalValuesUpdate
 }

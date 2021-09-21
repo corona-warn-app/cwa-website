@@ -25,9 +25,9 @@ switchId$.subscribe(e => {
 		.css("left", $e.position().left)
 		.css("width", $e.outerWidth());
 
-	$(".analyseBoard-title span").each(function(){
-		$(this).html(translate(`analyseBoardTitle.${switchId}`))
-	})
+	$(".analyseBoard-title .analyseBoard-title-append").each(function(){
+		$(this).html(translate(["analyseBoardTitleAppend", switchId]))
+	});
 });
 
 export default switchId$.pipe(map(e => $(e.target).data("id")));

@@ -125,11 +125,12 @@
 		<div class="row">
 			{{#each page-contents.board}}
 				<div class="col-12 col-md-6">
-					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}}">
+					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}} chart{{@index}}" >
 						<div class="analyseBoard-head">
 							{{#if title}}
 								<div class="analyseBoard-title">
-									{{title}} <span></span>
+									<span class="analyseBoard-title-title">{{title}}</span> 
+									<span class="analyseBoard-title-append"></span>
 								</div>
 							{{/if}}
 							{{#if export}}
@@ -153,7 +154,7 @@
 						
 						{{#if ../page-contents.boards.total}}
 							<div class="analyseBoard-total">
-								<div class="analyseBoard-total-value" data-key="{{totalKey}}"></div>
+								<div class="analyseBoard-total-value" data-key='{{toJSON totalKey}}'></div>
 								<div class="analyseBoard-total-label">
 									{{{../page-contents.boards.total}}}
 								</div>

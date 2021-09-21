@@ -69,7 +69,7 @@
             "info": {
                 "content": "Seit dem 16.06.2020 steht die Corona-Warn-App als Download für Android und iOS Geräte zur Verfügung. <br><br> Die Downloadzahlen zeigen an, wie oft die App heruntergeladen wurde. Durch den hohen Datenschutzstandard der Corona-Warn-App können aus diesen Zahlen keine Rückschlüsse bezüglich noch aktiver Nutzer gezogen werden."
             },
-            "totalKey": "app_downloads_cumulated"
+            "totalKey": ["app_downloads_cumulated"]
         },
         {
             "title": "Registrierte Tests",
@@ -80,7 +80,11 @@
             "info": {
                 "content": ""
             },
-            "totalKey": "tests_total_cumulated",
+            "totalKey": [
+                "tests_total_cumulated",
+                "tests_pcr_total_cumulated",
+                "tests_rat_total_cumulated"
+            ],
             "tabs": [
                 {
                     "label": "Gesamt"
@@ -102,7 +106,11 @@
             "info": {
                 "content": ""
             },
-            "totalKey": "qr_redeemable_cumulated",
+            "totalKey": [
+                "qr_teletan_redeemable_cumulated",
+                "qr_redeemable_cumulated",
+                "teletan_redeemable_cumulated"
+            ],
             "tabs": [
                 {
                     "label": "Gesamt"
@@ -124,12 +132,25 @@
             "info": {
                 "content": ""
             },
-            "totalKey": "ppa_total_warnings_cumulated"
+            "totalKey": ["ppa_total_warnings_cumulated"]
         }
     ],
     "translations":{
 
-        "analyseBoardTitle":{
+        "analyseBoardTitleTitle":{
+            "0": "Downloads",
+            "1": [
+                "Registrierte Tests",
+                "Testergebnisse",
+                "Testergebnisse"
+            ],
+            "2": "Teilungsverhalten",
+            "3": "Warnungen"
+        },
+
+
+
+        "analyseBoardTitleAppend":{
             "1": "(kumuliert)",
             "2": "",
             "3": "(nach Kalenderwoche)",
