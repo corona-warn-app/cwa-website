@@ -127,12 +127,14 @@
 				<div class="col-12 col-md-6">
 					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}} chart{{@index}}" >
 						<div class="analyseBoard-head">
+							
 							{{#if title}}
 								<div class="analyseBoard-title">
 									<span class="analyseBoard-title-title">{{title}}</span> 
 									<span class="analyseBoard-title-append"></span>
 								</div>
 							{{/if}}
+
 							{{#if export}}
 								{{#if export.title}}
 									{{#if export.link}}
@@ -142,11 +144,17 @@
 									{{/if}}
 								{{/if}}
 							{{/if}}
+
 							{{#if info}}
 								<button class="btn analyseBoard-info"  rel="{{title}}">
 									<img src="assets/img/icons/info.svg">
 								</button>
 							{{/if}}
+
+							<button class="btn analyseBoard-expand" data-id="chart{{@index}}">
+								<img src="assets/img/icons/fullscreen.svg">
+							</button>
+
 							<button class="btn analyseBoard-fullscreen">
 								<img src="assets/img/icons/fullscreen.svg">
 							</button>

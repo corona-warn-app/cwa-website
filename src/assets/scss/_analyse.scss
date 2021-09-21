@@ -360,6 +360,8 @@
 
 	}
 
+	
+
 	&Board{
 		background: #FFFFFF;
 		border-radius: 6px;
@@ -368,6 +370,18 @@
 		margin-bottom: 34px;
 		padding: 24px;
 		position: relative;
+
+
+
+		&.expand{
+			visibility: visible !important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 99;
+		}
 
 		&.fullscreen{
 			border-radius: 0;
@@ -418,7 +432,8 @@
 			}
 		}
 
-		&-fullscreen{
+		&-fullscreen,
+		&-expand{
 			border: 0;
 			padding: 8px;
 			margin-right: -8px;
@@ -439,8 +454,13 @@
 			@media (max-width: $screen-md){
 				display: block;
 			}
+		}
 
-
+		&-expand{
+			display: block;
+			@media (max-width: $screen-md){
+				display: none;
+			}
 		}
 
 
@@ -461,6 +481,10 @@
 				color: #898B8B;
 			}
 		}
+	}
+
+	&Boards.expand &Board{
+		visibility: hidden;
 	}
 
 
