@@ -127,7 +127,7 @@
 				<div class="col-12 col-md-6">
 					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}} chart{{@index}}" >
 						<div class="analyseBoard-head">
-							
+
 							{{#if title}}
 								<div class="analyseBoard-title">
 									<span class="analyseBoard-title-title">{{title}}</span> 
@@ -153,9 +153,10 @@
 
 							<button class="btn analyseBoard-expand" data-id="chart{{@index}}">
 								<img src="assets/img/icons/fullscreen.svg">
+								<img src="assets/img/icons/fullscreen.svg">
 							</button>
 
-							<button class="btn analyseBoard-fullscreen">
+							<button class="btn analyseBoard-fullscreen" data-id="chart{{@index}}">
 								<img src="assets/img/icons/fullscreen.svg">
 							</button>
 						</div>

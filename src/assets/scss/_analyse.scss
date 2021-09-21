@@ -451,7 +451,7 @@
 			}
 			
 
-			&.fullscreen{
+			.fullscreen &{
 				display: block;
 			}
 
@@ -465,6 +465,30 @@
 			@media (max-width: $screen-md){
 				display: none;
 			}
+
+			.fullscreen &{
+				display: none;
+			}
+
+			img:nth-child(1){
+				display: block;
+			}
+
+			img:nth-child(2){
+				display: none;
+			}
+		
+
+			.expand &{
+				img:nth-child(1){
+					display: none;
+				}
+
+				img:nth-child(2){
+					display: block;
+				}
+			}
+
 		}
 
 
