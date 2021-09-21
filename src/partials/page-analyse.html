@@ -1,6 +1,9 @@
 {{#if page-contents}}
 
 	<script>
+		{{#if page-contents.startDate}} 
+			const startDate = "{{page-contents.startDate}}";
+		{{/if}}
 		{{#if page-contents.lang}} 
 			const lang = "{{page-contents.lang}}";
 		{{/if}}

@@ -35,7 +35,7 @@ const picker = new Litepicker({
 	lang: documentLang,
 	numberOfColumns: pickerCols,
 	numberOfMonths: pickerCols,
-	minDate: '2020-05-15', 
+	minDate: startDate, 
 	maxDate: now, 
 	scrollToDate: false,
 	autoApply: true,
@@ -77,7 +77,7 @@ $('.analyseRangePicker-input').each(function(){
 	new Cleave(this, {
 		date: true,
 		delimiter: (documentLang == "de")? '.': '/',
-		dateMin: '2020-05-15',
+		dateMin: startDate,
 		dateMax: now.toISODate(),
 		datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
 		onValueChanged: function(e) {

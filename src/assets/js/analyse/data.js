@@ -62,11 +62,10 @@ function getAry(data){
 					})
 				})
 			}
-
 		})
 	})
 
-	const missDaily = [];
+	let missDaily = [];
 
 	keyAryDaily.map(w => {
 		if((data.keys.daily.indexOf(w) == -1 )){
@@ -75,7 +74,7 @@ function getAry(data){
 		return w;
 	})
 
-	const missWeekly = [];
+	let missWeekly = [];
 
 	keyAryWeekly.map(w => {
 		if((data.keys.weekly.indexOf(w) == -1 )){
@@ -83,6 +82,10 @@ function getAry(data){
 		}
 		return w;
 	})
+
+	// unique array
+	missDaily = missDaily.filter((v, i, a) => a.indexOf(v) === i);
+	missWeekly = missWeekly.filter((v, i, a) => a.indexOf(v) === i);
 
 	if( missDaily.length > 0){
 		console.error("Missing data keys daily: ", missDaily.join(", "));
