@@ -10,7 +10,8 @@ function renderLegend(opt){
 	// render custom legend
 	const $e  = $("#apexcharts" + opt.chart.id).parent().next();
 	const labels = [translate("legendLabelMean"), translate("legendLabelDaily")];
-	let outArray = opt.stroke.dashArray.map((e, i) => `<button style="color: ${opt.series[i].color};" data-exec='["${opt.chart.id}", "toggleSeries","${opt.series[i].name}"]' class="btn analyseChartLegend-item ${(e == 5)? 'analyseChartLegend-item_d': ''}"><span>${opt.series[i].name}</span></button>`);
+	const series = opt.series.filter(e => (e.name != "_hide"));
+	let outArray = opt.stroke.dashArray.map((e, i) => `<button style="color: ${series[i].color};" data-exec='["${opt.chart.id}", "toggleSeries","${series[i].name}"]' class="btn analyseChartLegend-item ${(e == 5)? 'analyseChartLegend-item_d': ''}"><span>${series[i].name}</span></button>`);
 	if(opt.stroke.dashArray.indexOf(5) > 0){
 		outArray = _chunk(outArray, opt.stroke.dashArray.length / 2).map((e, i) => `<div class="analyseChartLegend-row"><div class="analyseChartLegend-label">${labels.shift()}</div>${e.join("")}</div>`);
 	}

@@ -74,10 +74,20 @@ export default function({
 	}
 
 	// set series without the ghots
-	_set(opt, ["series"], opt.seriesall.filter(e => !e.ghost));
+	let series =  opt.seriesall.filter(e => !e.ghost);
+
+	// add fake series in order to conter width render bug
+	series.unshift({
+		color: "#000000",
+		data: new Array(range).fill(null),
+		name: "_hide",
+		type: "line"
+	});
+
+	_set(opt, ["series"], series);
 
 	// set dasharray for legend and switch 4
-	_set(opt, ["stroke", "dashArray"], (switchId == 4)? opt.seriesall.filter(e => !e.ghost).map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): new Array(opt.series.length).fill(0));
+	_set(opt, ["stroke", "dashArray"], (switchId == 4)? opt.seriesall.filter(e => !e.ghost).map(obj => (!!~obj.key.indexOf("_daily"))? 5: 0): new Array(opt.series.filter(e => (e.name != "_hide")).length).fill(0));
 
 	//Only reset series if necessary
 	checkLegendReset(opt, () => {
@@ -86,6 +96,10 @@ export default function({
 
 	// update chart options
 	ApexCharts.exec(id, "updateOptions", opt, true, false, false);
+
+	// hide added fake series
+	ApexCharts.exec(id, "hideSeries", "_hide")
+
 
 	// render custom legend
 	renderLegend(opt);
