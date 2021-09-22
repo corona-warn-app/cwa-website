@@ -96,7 +96,12 @@ export default {
 		}
 	},
 	legend: {
-		show: false
+		show: true,
+		floating: true,
+		position: "top",
+		markers: {
+			radius: 0
+		}
 	},
 	noData: {
 		text: 'No Data to display'
