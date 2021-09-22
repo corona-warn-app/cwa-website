@@ -14,7 +14,7 @@ $(() => {
 	$(".analyseChart").each(function(i){
 		// init ApexCharts with base options
 		new ApexCharts(this, Object.assign({}, {chart:{id:`chart${i}`}})).render();
-
+		
 		const chart$ = new Subject;
 		chart$.subscribe(e => chartUpdate(e, i));
 		chartsAry.push(chart$);
