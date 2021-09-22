@@ -25,6 +25,7 @@ Künftig hält eine **Textbox** unter jedem Impfzertifikat Nutzer\*innen immer a
 <center> 
 <img src="./impfstatus(1).png" title="Textbox mit Erinnerung zur Auffrischungsimpfung" style="align: center" width=250> 
 <img src="./impfstatus(2).png" title="Textbox mit Impfstatus" style="align: center" width=250>
+<figcaption aria-hidden="true"><em>Textbox zum Impfstatus - Links: Erinnerung zur Auffrischungsimpfung. Rechts: Vollständiger Impfschutz.</em></figcaption>
 </center>
 <br></br>
 
@@ -34,6 +35,7 @@ Ein **roter Punkt** zeigt Nutzer\*innen außerdem ab sofort an, wo es Neuigkeite
 <center> 
 <img src="./red_dot_1_de.png" title="Visuelle Anleitung mit rotem Punkt" style="align: center" width=250> 
 <img src="./red_dot_2_de.png" title="Visuelle Anleitung mit rotem Punkt" style="align: center" width=250>
+<figcaption aria-hidden="true"><em>Visuelle Anleitung durch einen roten Punkt - Links: Zertifikate-Reiter. Rechts: Zertifikatsübersicht.</em></figcaption>
 </center>
 <br></br>
 
@@ -46,6 +48,7 @@ Nutzer\*innen haben damit die Möglichkeit, das Zertifikat als PDF-Dokument zu s
 <img src="./ios_print_1_de.png" title="Zertifikat drucken" style="align: center" width=250>
 <img src="./PrintVaccinationFragment_de.png" title="Zertifikat drucken Android" style="align: center" width=256>
 <img src="./ios_print_2_de.png" title="EU Zertifikat" style="align: center" width=250>
+<figcaption aria-hidden="true"><em>Druckversion erstellen - Links: iOS. Mitte: Android, Rechts: Druckbereites EU Zertifikat.</em></figcaption>
 </center>
 <br></br>
 
@@ -54,6 +57,7 @@ Diese Funktion ist nur für Zertifikate möglich, die in Deutschland ausgestellt
 <br></br>
 <center>
 <img src="./drucken-nicht-möglich.png" title="Druckversion kann nicht angezeigt werden" style="align: center" width=250>
+<figcaption aria-hidden="true"><em>Benachrichtigung - Druckversion anzeigen nicht möglich.</em></figcaption>
 </center>
 <br></br>
 
