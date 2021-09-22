@@ -2,6 +2,17 @@ import $ from 'jquery';
 
 window.jQuery = $;
 
+//Sets the option selected according to the version of the application being consulted
+$(document).ready(function() {
+    const version = window.location.pathname.split(".")[0].split("/")[3].replace("-", ".");
+    if(version == '') $('select[name="archived-screenshots"]').children().last().attr('selected','selected');
+    else {
+        $('select[name="archived-screenshots"]').children().each(function( index ) {
+            if(version == $(this).text()) $(this).attr('selected','selected');
+        });
+    }
+});
+
 // Screenshots screen: redirect to selected option's value after changing version in dropdown
 $('select[name="archived-screenshots"]').on("change", function(e) {
     window.location.href = e.target.value;
