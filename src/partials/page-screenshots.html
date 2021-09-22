@@ -4,19 +4,21 @@
     <div class="container container_flex">
         <aside class="side-menu js-menu" id="side-menu">
             <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
-            <ul class="nav flex-column js-scroll-navigate" data-target="main">
+            <ul id="ios_menu" class="nav flex-column js-scroll-navigate" data-target="main">
               {{#each page-contents.ios-screenshots.sections}}
               <li class="nav-item">
-                <a class="nav-link{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
-              </li>
-              {{/each}}
-    
-              {{#each page-contents.android-screenshots.sections}}
-              <li class="nav-item">
-                <a class="nav-link{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
+                <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
               </li>
               {{/each}}
             </ul>
+
+            <ul id="android_menu" class="nav flex-column js-scroll-navigate" data-target="main">
+                {{#each page-contents.android-screenshots.sections}}
+                <li class="nav-item">
+                  <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
+                </li>
+                {{/each}}
+              </ul>
         </aside>
         <main class="main">
             {{> headline-component page-contents.section-main.headline}}
@@ -25,12 +27,10 @@
             <div class="d-flex justify-content-sm-end position-relative mb-3 mb-sm-0">
                 <select name="archived-screenshots" class="form-select form-select-sm w-auto position-sm-absolute">
                     {{#if lang_de}}
-                        <option value="">{{global.screenshots.archive-placeholder.de}}</option>
                         {{#each global.screenshots.archive-dropdown}}
                             <option value="/de{{link}}" >{{version}}</option>
                         {{/each}}
                     {{else}}
-                        <option value="">{{global.screenshots.archive-placeholder.en}}</option>
                         {{#each global.screenshots.archive-dropdown}}
                             <option value="/en{{link}}">{{version}}</option>
                         {{/each}}
