@@ -4,7 +4,7 @@ window.jQuery = $;
 
 // Screenshots screen: redirect to selected option's value after changing version in dropdown
 $('select[name="archived-screenshots"]').on("change", function(e) {
-    window.location.href = e.target.value;
+    window.location.href = e.target.value + window.location.hash;
 });
 
 //   Add feature for tag auto-navigation with hash in the URL
