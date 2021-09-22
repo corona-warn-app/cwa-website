@@ -22,13 +22,19 @@ Künftig hält eine **Textbox** unter jedem Impfzertifikat Nutzer\*innen immer a
  
 
 <br></br>
-<center> <img src="./impfstatus(1).png" title="Textbox mit Erinnerung zur Auffrischungsimpfung" style="align: center"> <img src="./impfstatus(2).png" title="Textbox mit Impfstatus" style="align: center"></center>
+<center> 
+<img src="./impfstatus(1).png" title="Textbox mit Erinnerung zur Auffrischungsimpfung" style="align: center" width=250> 
+<img src="./impfstatus(2).png" title="Textbox mit Impfstatus" style="align: center" width=250>
+</center>
 <br></br>
 
 Ein **roter Punkt** zeigt Nutzer\*innen außerdem ab sofort an, wo es Neuigkeiten bei ihren Zertifikaten gibt. Diese visuelle Anleitung erleichtert es Nutzer\*innen, wichtige Informationen schnell zu finden, beispielsweise, wenn ein Zertifikat abgelaufen oder eine Signatur ungültig ist. 
 
 <br></br>
-<center> <img src="./roter-punkt.png" title="Visuelle Anleitung mit rotem Punkt" style="align: center"> <img src="./roter-punkt(2).png" title="Visuelle Anleitung mit rotem Punkt" style="align: center"> </center>
+<center> 
+<img src="./red_dot_1_de.png" title="Visuelle Anleitung mit rotem Punkt" style="align: center" width=250> 
+<img src="./red_dot_2_de.png" title="Visuelle Anleitung mit rotem Punkt" style="align: center" width=250>
+</center>
 <br></br>
 
 Des Weiteren können Nutzer\*innen ab sofort eine **Druckversion** ihrer Zertifikate erstellen. iOS-Nutzer\*innen können unter der Detailansicht des entsprechenden Zertifikats auf „Mehr“ und dann „Druckversion anzeigen“ tippen, Android-Nutzer*innen wählen die drei Punkte in der rechten oberen Ecke aus und tippen dann auf „Druckversion anzeigen“. 
@@ -36,17 +42,19 @@ Des Weiteren können Nutzer\*innen ab sofort eine **Druckversion** ihrer Zertifi
 Nutzer\*innen haben damit die Möglichkeit, das Zertifikat als PDF-Dokument zu speichern, zu verschicken oder es erneut auszudrucken. Falls sie das Original aus der Apotheke oder der Impfstelle verloren haben, spart ihnen diese Funktion einen erneuten Gang zur Apotheke. 
 
 <br></br>
-<center> <img src="./zertifikat-drucken(1).png" title="Zertifikat drucken" style="align: center">   <img src="./zertifikat-drucken(3).png" title="Zertifikat drucken Android" style="align: center"> </center>
-<br></br>
-
-<br></br>
-<center> <img src="./eu-zertifikat.png" title="EU Zertifikat" style="align: center"> </center>
+<center> 
+<img src="./ios_print_1_de.png" title="Zertifikat drucken" style="align: center" width=250>
+<img src="./PrintVaccinationFragment_de.png" title="Zertifikat drucken Android" style="align: center" width=256>
+<img src="./ios_print_2_de.png" title="EU Zertifikat" style="align: center" width=250>
+</center>
 <br></br>
 
 Diese Funktion ist nur für Zertifikate möglich, die in Deutschland ausgestellt wurden. Falls Nutzer\*innen ein ausländisches Zertifikat drucken oder exportieren möchten, erhalten sie eine kurze Information in der App, dass die Druckversion nicht angezeigt werden kann. 
 
 <br></br>
-<center> <img src="./drucken-nicht-möglich.png" title="Druckversion kann nicht angezeigt werden" style="align: center"> </center>
+<center>
+<img src="./drucken-nicht-möglich.png" title="Druckversion kann nicht angezeigt werden" style="align: center" width=250>
+</center>
 <br></br>
 
 Version 2.10 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
