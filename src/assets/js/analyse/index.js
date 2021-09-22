@@ -7,6 +7,7 @@ import { DateTime } from 'luxon';
 
 
 import chart from './chart.js';
+import download from './download.js';
 import expand from './expand.js';
 import fullscreen from './fullscreen.js';
 import modal from './modal.js';

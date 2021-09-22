@@ -136,27 +136,40 @@
 							{{/if}}
 
 							{{#if export}}
-								{{#if export.title}}
-									{{#if export.link}}
-										<a href="{{export.link}}" class="analyseBoard-export"  rel="noopener noreferrer">
-											{{export.title}}
-										</a>
-									{{/if}}
+								{{#unless ../page-contents.boards.download}}	
+									<a href="{{export}}" class="analyseBoard-export"  rel="noopener noreferrer">
+										{{{../page-contents.boards.export.btn}}}
+									</a>
+								{{/unless}}
+								{{#if ../page-contents.boards.download}}
+									<div class="analyseBoard-export-wrapper">
+										<button href="{{export}}" class="btn btn-link analyseBoard-export">
+											{{{../page-contents.boards.export.btn}}}
+										</button>
+										<div class="analyseBoard-export-layer">
+											<a href="{{export}}" class="btn analyseBoard-export-link"  rel="noopener noreferrer">
+												{{{../page-contents.boards.export.data}}}
+											</a>
+											<button class="btn analyseBoard-export-link analyseBoard-download"  data-id="chart{{@index}}">
+												{{{../page-contents.boards.export.image}}}
+											</button>
+										</div>
+									</div>
 								{{/if}}
 							{{/if}}
 
 							{{#if info}}
-								<button class="btn analyseBoard-info"  rel="{{title}}">
+								<button class="btn analyseBoard-iconBtn analyseBoard-info"  rel="{{title}}">
 									<img src="assets/img/icons/info.svg">
 								</button>
 							{{/if}}
 
-							<button class="btn analyseBoard-expand" data-id="chart{{@index}}">
+							<button class="btn analyseBoard-iconBtn analyseBoard-expand" data-id="chart{{@index}}">
 								<img src="assets/img/icons/expand.svg">
 								<img src="assets/img/icons/collapse.svg">
 							</button>
 
-							<button class="btn analyseBoard-fullscreen" data-id="chart{{@index}}">
+							<button class="btn analyseBoard-iconBtn analyseBoard-fullscreen" data-id="chart{{@index}}">
 								<img src="assets/img/icons/expand.svg">
 								<img src="assets/img/icons/collapse.svg">
 							</button>
@@ -188,9 +201,7 @@
 			{{/each}}
 		</div>
 	</div>
-	
 
-	
 	<div class="analyseModalBg"></div>
 	{{#each page-contents.board}}
 		<div class="analyseModal" rel="{{title}}">
