@@ -1,5 +1,14 @@
 {
-    "[html]": {
-      "editor.formatOnSave": false
-    }
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
   }
+}

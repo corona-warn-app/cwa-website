@@ -14,7 +14,9 @@
       href="{{global.favicon.url}}"
     />
     {{/if}}
-
+    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <title>{{page-title}}</title>
     <script src="assets/js/static/redirect.js"></script>
   </head>

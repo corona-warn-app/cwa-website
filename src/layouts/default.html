@@ -10,7 +10,9 @@
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
     {{/if}}
-
+    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
@@ -38,7 +40,13 @@
     {{#if eventregistration_js}}
     <script src="assets/js/eventregistration.js"></script>
     {{/if}}
-    {{#ifequal page-name 'analyse'}}
+    {{#if is_screenshots}}
+    <script src="assets/js/screenshots.js"></script>
+    {{/if}}
+    {{#if screenshotsarchive}}
+    <script src="assets/js/screenshots.js"></script>
+    {{/if}}
+	{{#ifequal page-name 'analyse'}}
     <script src="assets/js/cwaa.js"></script>
     {{/ifequal}}
   </body>

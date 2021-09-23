@@ -78,13 +78,15 @@
               {{#each letter as |content|}}
                 {{#if @last}}
                   <div>
-                    <h5 class="mt-4 px-3"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
+                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
                   </div>
                 {{else}}
                   <div class="nav-tabs pb-3">
-                    <h5 class="mt-4 px-3"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
+                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
                   </div>
                 {{/if}}
                 {{else}}
@@ -99,13 +101,15 @@
               {{#each letter as |content|}}
                 {{#if @last}}
                   <div>
-                    <h5 class="mt-4 px-3"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
+                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
                   </div>
                   {{else}}
                   <div class="nav-tabs pb-3">
-                    <h5 class="mt-4 px-3"><b>{{content.term}}</b></h5>
+                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
                     <div class="px-3">{{{content.description}}}</div>
+                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
                   </div>
                 {{/if}}
                 {{else}}
