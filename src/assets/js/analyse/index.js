@@ -28,6 +28,10 @@ let checkArray;
 
 setTimeout(function(){
 	$(".analyseBoards-loading-btn").show();
+	if($(".analyseBoards").hasClass("loading")){
+		document.querySelector('.analyseRangeRadio.first input').click();
+	}
+	
 },2000)
 
 $(document).on("click",".analyseBoards-loading-btn", function(e){
