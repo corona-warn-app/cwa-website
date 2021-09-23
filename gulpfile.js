@@ -77,9 +77,6 @@ gulp.task('default', gulp.series('build', server, watch));
 
 
 
-gulp.task('test', gulp.series(copy));
-
-
 function analyseData(){
   async function fallbackdataFn() {
     const response  = await fetch(analyseConfig.fetchUrl, {method: 'GET'})

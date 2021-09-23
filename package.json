@@ -7,7 +7,7 @@
     "start-fast": "gulp --skip-compression",
     "start": "gulp",
     "build": "gulp build --production",
-    "build-analyse": "gulp build-analyse --production",
+    "build-analyse": "gulp build --production --skip-compression",
     "cypress:open": "cypress open",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:firefox": "cypress run --browser firefox",
