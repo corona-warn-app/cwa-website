@@ -4,30 +4,42 @@ import { share, switchMap, catchError, tap } from 'rxjs/operators';
 import chartConfig from './chart/config.js';
 import _get from 'lodash/get';
 
-let url;
 
-if(window.location.hostname == "localhost"){
-	url = window.location.origin + "/analyseData.json";
-}else{
-	url = fetchUrl;
+function fallBack(){
+
+	return fromFetch( "analyseData.json").pipe(
+		switchMap(response => {
+			if (response.ok){
+				// OK return data
+				return response.json()
+			}else{
+				// Server is returning a status requiring the client to try something else.
+				return of({ error: true, message: `Error ${response.status}` });
+			}
+		}),
+		catchError(err => {
+				// Network or other error, handle appropriately
+				console.error(err);
+				return of({ error: true, message: err.message })
+			}
+		)
+	);
 }
 
-
-
-const data$ = fromFetch(url).pipe(
+const data$ = fromFetch(fetchUrl).pipe(
 	switchMap(response => {
 		if (response.ok){
 			// OK return data
 			return response.json()
 		}else{
 			// Server is returning a status requiring the client to try something else.
-			return of({ error: true, message: `Error ${response.status}` });
+			return fallBack();
 		}
 	}),
 	catchError(err => {
 			// Network or other error, handle appropriately
-			console.error(err);
-			return of({ error: true, message: err.message })
+			console.warn(err);
+			return fallBack();
 		}
 	),
 	tap(e => {sanityCheck(e[0])}),
