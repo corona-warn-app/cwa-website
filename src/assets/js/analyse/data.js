@@ -30,13 +30,13 @@ const data$ = fromFetch(url).pipe(
 			return of({ error: true, message: err.message })
 		}
 	),
-	tap(e => {getAry(e[0])}),
+	tap(e => {sanityCheck(e[0])}),
 	share()
 );
 
 
 
-function getAry(data){
+function sanityCheck(data){
 
 	let keyAryDaily = [];
 	let keyAryWeekly = [];
@@ -65,27 +65,20 @@ function getAry(data){
 		})
 	})
 
-	let missDaily = [];
-
-	keyAryDaily.map(w => {
-		if((data.keys.daily.indexOf(w) == -1 )){
-			missDaily.push(w)
-		}
-		return w;
-	})
-
-	let missWeekly = [];
-
-	keyAryWeekly.map(w => {
-		if((data.keys.weekly.indexOf(w) == -1 )){
-			missWeekly.push(w)
-		}
-		return w;
-	})
-
 	// unique array
-	missDaily = missDaily.filter((v, i, a) => a.indexOf(v) === i);
-	missWeekly = missWeekly.filter((v, i, a) => a.indexOf(v) === i);
+	keyAryDaily = keyAryDaily.filter((v, i, a) => a.indexOf(v) === i);
+	keyAryDaily = keyAryDaily.filter((v, i, a) => a.indexOf(v) === i);
+
+	const missDaily = keyAryDaily.filter(w => (data.keys.daily.indexOf(w) == -1));
+	const missWeekly = keyAryWeekly.filter(w => (data.keys.weekly.indexOf(w) == -1));
+
+
+	// const notNeededDaily = data.keys.daily.filter(w => (keyAryDaily.indexOf(w) == -1)).filter(w => (w != "effective_date"));
+	// const notNeededWeekly = data.keys.weekly.filter(w => (keyAryWeekly.indexOf(w) == -1)).filter(w => (w != "effective_date"));
+	
+	// console.log("Daily unused",notNeededDaily.join(", "))
+	// console.log("Weekly unused",notNeededWeekly.join(", "))
+	
 
 	if( missDaily.length > 0){
 		console.error("Missing data keys daily: ", missDaily.join(", "));
