@@ -1,6 +1,9 @@
 {{#if page-contents}}
 
 	<script>
+		{{#if page-contents.fetchUrl}} 
+			const fetchUrl = "{{page-contents.fetchUrl}}";
+		{{/if}}
 		{{#if page-contents.startDate}} 
 			const startDate = "{{page-contents.startDate}}";
 		{{/if}}

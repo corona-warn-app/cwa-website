@@ -9,7 +9,7 @@ let url;
 if(window.location.hostname == "localhost"){
 	url = "http://localhost:8000/data.json";
 }else{
-	url = "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/json/v1/nested_cwa_public_dashboard_data.json";
+	url = fetchUrl;
 }
 
 
