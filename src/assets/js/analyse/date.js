@@ -26,7 +26,7 @@ const date$ = fromEvent(document.querySelectorAll('input[name="analyseRange"]'),
 
 document.querySelectorAll('.analyseRangeRadio input').forEach(e => {
 	e.value = [
-		(e.value == "all")? startDate: now.minus((e.value == "6months")? {months: 6}: {days: 27}).toISODate(), 
+		(e.value == "all")? analyseConfig.startDate: now.minus((e.value == "6months")? {months: 6}: {days: 27}).toISODate(), 
 		now.toISODate()
 	].join(",");
 });

@@ -1,12 +1,8 @@
 {{#if page-contents}}
 
 	<script>
-		{{#if page-contents.fetchUrl}} 
-			const fetchUrl = "{{page-contents.fetchUrl}}";
-		{{/if}}
-		{{#if page-contents.startDate}} 
-			const startDate = "{{page-contents.startDate}}";
-		{{/if}}
+		const analyseConfig = {{{toJSON config}}};
+		
 		{{#if page-contents.lang}} 
 			const lang = "{{page-contents.lang}}";
 		{{/if}}
@@ -106,7 +102,7 @@
 		<div class="analyseSwitch">
 			<div class="analyseSwitch-bg"></div>
 			{{#each page-contents.switch}}
-			<button class="btn analyseSwitch-item {{#ifequal id ../page-contents.switchStart}}first{{/ifequal}}" data-id="{{id}}">
+			<button class="btn analyseSwitch-item {{#ifequal id ../config.switchStart}}first{{/ifequal}}" data-id="{{id}}">
 				{{label}}
 			</button>
 			{{/each}}

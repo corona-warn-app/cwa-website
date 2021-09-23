@@ -26,7 +26,7 @@ function fallBack(){
 	);
 }
 
-const data$ = fromFetch(fetchUrl).pipe(
+const data$ = fromFetch(analyseConfig.fetchUrl).pipe(
 	switchMap(response => {
 		if (response.ok){
 			// OK return data
