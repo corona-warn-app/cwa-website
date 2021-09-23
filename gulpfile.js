@@ -17,7 +17,9 @@ const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 const { processBlogFiles } = require('./src/services/blog-processor');
 const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
-var rename = require("gulp-rename");
+const rename = require("gulp-rename");
+const analyseConfig = require("./src/data/analyse.json");
+const fetch = require('node-fetch');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -40,6 +42,8 @@ function isCI() {
   return !!process.env.CI;
 }
 
+
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
@@ -48,8 +52,10 @@ gulp.task(
     clean,
     cleanBlogs,
     cleanScienceBlogs,
+    addEnvData,
     buildBlogFiles,
     buildScienceBlogFiles,
+    analyseData,
     cwaaJs,
     javascript,
     gulp.parallel(
@@ -69,42 +75,40 @@ gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
 
+gulp.task('test', gulp.series(analyseData));
 
 
 
 
+function analyseData(){
+  async function fallbackdataFn() {
+    const response  = await fetch(analyseConfig.fetchUrl, {method: 'GET'})
+    const data = await response.json();
+    return JSON.stringify(data); 
+  }
 
+  return fallbackdataFn().then(e => {
+    return fs.writeFileSync('./public/analyseData.json', e);
+  });
+
+}
+
+
+
+function addEnvData(cb){
+  const env = {
+    "basepath": (yargs.argv.basepath)? yargs.argv.basepath + "/public/": "/"
+  }
+  
+  fs.writeFile('./src/data/env.json', JSON.stringify(env), cb);
+}
 
 
 
 // TODO: remove before flight
 // ####################################
 // minimize folder size by removing unnessaray file for the analyse page development
-gulp.task('build-analyse', gulp.series(copyglobal, deleteglobal, addbasepath, 'build', minTestSize));
-
-
-function copyglobal() {
-  return gulp.src("src/data/global.json")
-    .pipe(rename('globalcopy.json'))
-    .pipe(gulp.dest("src/data/"));
-}
-
-function deleteglobal(done) {
-  rimraf("src/data/global.json", done);
-}
-
-function addbasepath() {
-  return gulp
-    .src("src/data/globalcopy.json")
-    .pipe(jsonTransform(function (data, file) {
-        let global = data
-        global['basepath'] = yargs.argv.basepath + "/public/"
-        return global;
-      }))
-    .pipe(rename('global.json'))
-    .pipe(gulp.dest("src/data/"));
-}
-
+gulp.task('build-analyse', gulp.series('build', minTestSize));
 
 function minTestSize(done) {
   let rifs = []
@@ -131,12 +135,6 @@ function minTestSize(done) {
 }
 
 // ####################################
-
-
-
-
-
-
 
 
 
@@ -251,29 +249,10 @@ function sass() {
     .pipe(browser.reload({ stream: true }));
 }
 
-let webpackConfig = {
-  mode: PRODUCTION ? 'production' : 'development',
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            compact: false
-          }
-        }
-      }
-    ]
-  },
-  performance: {
-    hints: false
-  },
-  devtool: !PRODUCTION && 'source-map'
-};
 
-let webpackConfig2 = {
+
+
+let cwaaWebpackConfig = {
   mode: PRODUCTION ? 'production' : 'development',
   module: {
     rules: [
@@ -303,10 +282,36 @@ function cwaaJs() {
     .src(PATHS.cwaa)
     .pipe(named())
     .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig2, webpack2))
+    .pipe(webpackStream(cwaaWebpackConfig, webpack2))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
+
+
+
+
+
+let webpackConfig = {
+  mode: PRODUCTION ? 'production' : 'development',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            compact: false
+          }
+        }
+      }
+    ]
+  },
+  performance: {
+    hints: false
+  },
+  devtool: !PRODUCTION && 'source-map'
+};
 
 
 // Combine JavaScript into one file

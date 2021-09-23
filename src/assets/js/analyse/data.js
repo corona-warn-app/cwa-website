@@ -7,7 +7,7 @@ import _get from 'lodash/get';
 let url;
 
 if(window.location.hostname == "localhost"){
-	url = "http://localhost:8000/data.json";
+	url = window.location.origin + "/analyseData.json";
 }else{
 	url = fetchUrl;
 }
