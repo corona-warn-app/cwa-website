@@ -52,8 +52,8 @@ Um das Ergebnis möglichst schnell in der App zu erhalten, sollten Nutzer\*innen
 
 Im Video-Walkthrough können Sie sehen, wie das neue Feature funktioniert (iOS-Beispiele):
 
-- Negatives Schnelltest-Ergebnis {{/assets/video/schnelltest-negativ}}
-- Positives Schnelltest-Ergebnis {{/assets/video/schnelltest-positiv}}
+- Negatives Schnelltest-Ergebnis {{assets/video/schnelltest-negativ}}
+- Positives Schnelltest-Ergebnis {{assets/video/schnelltest-positiv}}
 
 ### Hotlines sind nun auch aus dem Ausland erreichbar
 
