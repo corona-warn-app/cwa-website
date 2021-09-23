@@ -181,7 +181,7 @@ $(document).ready(function(){
             let hashVal = hash.substring(1)
             if(hash && !Object.keys(faq).includes(hashVal)) {
                 // then let's get the list of defined redirects
-                $.get("/assets/data/faq_redirects.json", (data) => {
+                $.get("assets/data/faq_redirects.json", (data) => {
                     // and see whether there is a proper replacement (1:1 mapping)
                     let replacement = data[hashVal];
                     // if there is ...
