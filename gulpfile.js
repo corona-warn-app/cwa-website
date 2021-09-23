@@ -85,9 +85,8 @@ function analyseData(){
   }
 
   return fallbackdataFn().then(e => {
-    return fs.writeFileSync('./public/analyseData.json', e);
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
   });
-
 }
 
 
@@ -99,42 +98,6 @@ function addEnvData(cb){
   
   fs.writeFile('./src/data/env.json', JSON.stringify(env), cb);
 }
-
-
-
-// TODO: remove before flight
-// ####################################
-// minimize folder size by removing unnessaray file for the analyse page development
-gulp.task('build-analyse', gulp.series('build', minTestSize));
-
-function minTestSize(done) {
-  let rifs = []
-
-  const paths = [
-    "./public/assets/documents",
-    "./public/assets/video",
-    "./public/assets/screenshots",
-    "./public/assets/img/blog",
-    "./public/assets/img/science"
-  ];
-
-  paths.forEach((path)=>{
-    rifs.push(new Promise((resolve, reject) => {
-      rimraf(path, resolve);
-    }));
-  })
-
-
-  Promise.all(rifs).then((values) => {
-    done(values[0]);
-    console.log(values);
-  });
-}
-
-// ####################################
-
-
-
 
 
 

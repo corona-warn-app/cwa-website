@@ -1,5 +1,10 @@
 {
     "fetchUrl": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/json/v1/nested_cwa_public_dashboard_data.json",
+    "fallbackFile": "analyseData.json",
     "startDate": "2020-05-15",
-    "switchStart": "2"
+    "switchStart": "2",
+    "pickerButtonText": {
+        "previousMonth": "<svg width='23' height='24' viewBox='0 0 23 24' xmlns='http://www.w3.org/2000/svg'><path d='M13.8912 21L5.75 12.75L13.8912 4.5L15.8125 6.447L9.56007 12.75L15.8125 19.053L13.8912 21Z' fill='#006082'/></svg>",
+        "nextMonth": "<svg width='23' height='24' viewBox='0 0 23 24' xmlns='http://www.w3.org/2000/svg'><path d='M9.10882 3L17.25 11.25L9.10882 19.5L7.1875 17.553L13.4399 11.25L7.1875 4.947L9.10882 3Z' fill='#006082'/></svg>"
+    }
 }

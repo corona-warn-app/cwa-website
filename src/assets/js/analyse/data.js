@@ -5,43 +5,16 @@ import chartConfig from './chart/config.js';
 import _get from 'lodash/get';
 
 
-function fallBack(){
-
-	return fromFetch( "analyseData.json").pipe(
-		switchMap(response => {
-			if (response.ok){
-				// OK return data
-				return response.json()
-			}else{
-				// Server is returning a status requiring the client to try something else.
-				return of({ error: true, message: `Error ${response.status}` });
-			}
-		}),
-		catchError(err => {
-				// Network or other error, handle appropriately
-				console.error(err);
-				return of({ error: true, message: err.message })
-			}
-		)
+const fallBack = function(){
+	return fromFetch(analyseConfig.fallbackFile).pipe(
+		switchMap(response => ((response.ok)? response.json(): of({ error: true, message: `Error ${response.status}` }))),
+		catchError(err => of({ error: true, message: err.message }))
 	);
 }
 
 const data$ = fromFetch(analyseConfig.fetchUrl).pipe(
-	switchMap(response => {
-		if (response.ok){
-			// OK return data
-			return response.json()
-		}else{
-			// Server is returning a status requiring the client to try something else.
-			return fallBack();
-		}
-	}),
-	catchError(err => {
-			// Network or other error, handle appropriately
-			console.warn(err);
-			return fallBack();
-		}
-	),
+	switchMap(response => ((response.ok)? response.json(): fallBack())),
+	catchError(err => fallBack()),
 	tap(e => {sanityCheck(e[0])}),
 	share()
 );
