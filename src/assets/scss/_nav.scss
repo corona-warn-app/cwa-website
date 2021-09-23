@@ -11,6 +11,23 @@
   list-style: none;
 }
 
+//Nav for aside menu responsive
+
+.nav-aside {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  max-height: calc(100vh - 120px);
+  overflow-y: scroll;
+  display: block;
+}
 .nav-link {
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
