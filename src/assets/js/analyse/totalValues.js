@@ -8,7 +8,8 @@ Settings.defaultLocale = documentLang;
 
 let store = [];
 
-function getValue(e, key){
+function getValue(data, key){
+	const e = _cloneDeep(data);
 	const index = _get(e, ["keys", "daily"]).indexOf(key);
 	const array = _get(e, ["data", "daily"]);
 	
@@ -25,11 +26,9 @@ function getValue(e, key){
 
 
 function totalValuesInit(data){
-	const d = _cloneDeep(data);
-
 	$(".analyseBoard-total-value").each(function(i, e){
    		const keys = $(this).data("key");
-   		store.push(keys.map(e => getValue(d, e)));
+   		store.push(keys.map(e => getValue(data, e)));
    		totalValuesUpdate($(this), i, 0);
    	})
 }
