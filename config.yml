@@ -23,7 +23,10 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
-    - "!src/assets/{img,js}/**/*"
+    - "!src/assets/js/analyse/**/*"
+    - "!src/assets/js/lib/**/*"
+    - "!src/assets/js/*"
+    - "!src/assets/img/**/*"
     - "!src/assets/scss/**/*"
     - "!src/assets/scss"
   # Paths to Sass libraries, which can then be loaded with @import

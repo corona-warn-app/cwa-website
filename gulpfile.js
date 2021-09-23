@@ -75,9 +75,9 @@ gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
 
-gulp.task('test', gulp.series(analyseData));
 
 
+gulp.task('test', gulp.series(copy));
 
 
 function analyseData(){
@@ -485,3 +485,5 @@ function replaceVersionNumbers() {
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
+
+

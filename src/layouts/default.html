@@ -6,6 +6,7 @@
     <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:;connect-src 'self' https://obs.eu-de.otc.t-systems.com/">
     <meta name="referrer" content="no-referrer" />
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
@@ -32,7 +33,7 @@
     {{/if}}
     <script src="assets/js/app.js"></script>
     {{#if lightbox}}
-    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/static/lightbox.min.js"></script>
     {{/if}}
     {{#if store-redirect}}
     <script src="assets/js/static/store-redirect.js"></script>
