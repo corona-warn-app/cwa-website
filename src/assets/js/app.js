@@ -4,6 +4,14 @@ import 'slick-carousel';
 
 window.jQuery = $;
 
+
+// fix anchor links widh <base>
+$(document).on("click","a[href^='#']", function(e){
+    e.preventDefault();
+    window.location.hash = e.target.getAttribute('href')
+});
+
+
 $(document).ready(function(){
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
@@ -152,7 +160,7 @@ $(document).ready(function(){
         })
         // do an AJAX call to get the searchable FAQ document
         // Converter ensures that even malformed mime-types are converted directly to JSON
-        $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
+        $.get({url: $("html").attr("lang") + "/faq/faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
             faq = data;
             let faqCount = Object.keys(data).length.toString();
             document.getElementById("match-count").innerHTML = faqCount + "/" + faqCount;
