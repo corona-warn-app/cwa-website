@@ -24,7 +24,7 @@
         },
         "step2": {
             "title": "<b>Step 2: Opening and using the command prompt</b>",
-            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=/assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
+            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
             "image": {
                 "url": "assets/img/event-qr-code-guide/taskbar.png",
                 "alt": "Taskbar"
@@ -53,7 +53,7 @@
         },
         "step3": {
             "title": "<b>Step 3: Use of the example file</b>",
-            "text": "<a href='/assets/documents/tables.csv'>Click here</a> to download the sample file that's now required. The sample file 'tables.csv' must be moved to the newly created folder 'event-qr-codes'. (if you used the batch file before, it was created automatically)",
+            "text": "<a href='assets/documents/tables.csv'>Click here</a> to download the sample file that's now required. The sample file 'tables.csv' must be moved to the newly created folder 'event-qr-codes'. (if you used the batch file before, it was created automatically)",
             "image": {
                 "url": "assets/img/event-qr-code-guide/folder-event-qr-codes.png",
                 "alt": "Sample file in correct folder"
@@ -62,7 +62,7 @@
         },
         "step4": {
             "title": "<b>Step 4: Converting the .csv file to QR-codes</b>",
-            "text": "If you want to do this step faster, you can download another batch file <a href='/assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code-file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key.",
+            "text": "If you want to do this step faster, you can download another batch file <a href='assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code-file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key.",
             "image": {
                 "url": "assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
                 "alt": "Converting .csv file to QR codes"

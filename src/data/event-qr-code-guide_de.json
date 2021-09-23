@@ -24,7 +24,7 @@
         },
         "step2": {
             "title": "<b>Schritt 2: Öffnen und Nutzen der Eingabeaufforderung</b>",
-            "text": "Wenn Sie diesen Schritt schneller durchführen wollen, können Sie <a href=/assets/documents/setupEventQRCodeGenerator.bat>hier</a> eine Batch Datei herunterladen, die Ihnen die folgenden Teilschritte in Schritt 2 ersparen wird. Laden Sie die Datei herunter und führen Sie sie aus, danach können Sie direkt zu Schritt 3 übergehen. Falls Sie den manuellen Weg bevorzugen, geben Sie in der Taskleiste im unten veranschaulichten Feld 'cmd' ein.",
+            "text": "Wenn Sie diesen Schritt schneller durchführen wollen, können Sie <a href=assets/documents/setupEventQRCodeGenerator.bat>hier</a> eine Batch Datei herunterladen, die Ihnen die folgenden Teilschritte in Schritt 2 ersparen wird. Laden Sie die Datei herunter und führen Sie sie aus, danach können Sie direkt zu Schritt 3 übergehen. Falls Sie den manuellen Weg bevorzugen, geben Sie in der Taskleiste im unten veranschaulichten Feld 'cmd' ein.",
             "image": {
                 "url": "assets/img/event-qr-code-guide/taskbar.png",
                 "alt": "Taskleiste"
@@ -53,7 +53,7 @@
         },
         "step3": {
             "title": "<b>Schritt 3: Nutzung der Beispieldatei</b>",
-            "text": "<a href='/assets/documents/tables.csv'>Klicken Sie hier</a>, um die nun benötigte Beispieldatei herunterzuladen. Die Beispieldatei 'tables.csv' muss in den neu erstellen Ordner 'event-qr-codes' verschoben werden (falls Sie die Batch Datei zuvor nutzten, wurde dieser automatisch erstellt).",
+            "text": "<a href='assets/documents/tables.csv'>Klicken Sie hier</a>, um die nun benötigte Beispieldatei herunterzuladen. Die Beispieldatei 'tables.csv' muss in den neu erstellen Ordner 'event-qr-codes' verschoben werden (falls Sie die Batch Datei zuvor nutzten, wurde dieser automatisch erstellt).",
             "image": {
                 "url": "assets/img/event-qr-code-guide/folder-event-qr-codes.png",
                 "alt": "Beispieldatei im richtigen Ordner"
@@ -62,7 +62,7 @@
         },
         "step4": {
             "title": "<b>Schritt 4: Konvertierung der Daten zu den QR-Codes</b>",
-            "text": "Wenn Sie diesen Schritt schneller durchführen wollen, können Sie <a href='/assets/documents/generateEventQRCodes.bat'>hier</a> eine weitere Batch Datei herunterladen, die Ihnen die folgenden Teilschritte ersparen wird, und Ihnen zukünftig bei der Erstellung Ihrer QR-Codes für den eigenen Verwendungszweck helfen wird. Speichern Sie sie im erstellten Ordner 'event-qr-codes'. Falls Sie die Batch Datei also benutzen, sollten Sie bis zum letzten Teilschritt in Schritt 4 voranschreiten. Falls nicht, gehen Sie zurück in die im Idealfall noch geöffnete Eingabeaufforderung. Sollten Sie die Eingabeaufforderung nach Schritt 2 versehentlich geschlossen haben, können Sie die Eingabeaufforderung neu starten, und mit dem Befehl <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> zu dem nun benötigten Ausgangspunkt gelangen. Um nun also die Daten der .csv-Datei zu den QR-Codes zu konvertieren, kopieren Sie den eingeklammerten Text (<b>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results</b>), fügen Sie ihn mit der bereits oben genannten Tastenkombination ein und bestätigen Sie Ihre Eingabe mit der 'Enter' Taste.",
+            "text": "Wenn Sie diesen Schritt schneller durchführen wollen, können Sie <a href='assets/documents/generateEventQRCodes.bat'>hier</a> eine weitere Batch Datei herunterladen, die Ihnen die folgenden Teilschritte ersparen wird, und Ihnen zukünftig bei der Erstellung Ihrer QR-Codes für den eigenen Verwendungszweck helfen wird. Speichern Sie sie im erstellten Ordner 'event-qr-codes'. Falls Sie die Batch Datei also benutzen, sollten Sie bis zum letzten Teilschritt in Schritt 4 voranschreiten. Falls nicht, gehen Sie zurück in die im Idealfall noch geöffnete Eingabeaufforderung. Sollten Sie die Eingabeaufforderung nach Schritt 2 versehentlich geschlossen haben, können Sie die Eingabeaufforderung neu starten, und mit dem Befehl <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> zu dem nun benötigten Ausgangspunkt gelangen. Um nun also die Daten der .csv-Datei zu den QR-Codes zu konvertieren, kopieren Sie den eingeklammerten Text (<b>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results</b>), fügen Sie ihn mit der bereits oben genannten Tastenkombination ein und bestätigen Sie Ihre Eingabe mit der 'Enter' Taste.",
             "image": {
                 "url": "assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
                 "alt": "Konvertieren der .csv-Daten zu den QR-Codes"
