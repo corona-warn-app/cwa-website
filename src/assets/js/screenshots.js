@@ -3,24 +3,24 @@ import $ from 'jquery';
 window.jQuery = $;
 
 //Sets the option selected according to the version of the application being consulted
-$(document).ready(function() {
+$(document).ready(function () {
     const version = window.location.pathname.split(".")[0].split("/")[3].replace("-", ".");
-    if(version == '') $('select[name="archived-screenshots"]').children().last().attr('selected','selected');
+    if (version == '') $('select[name="archived-screenshots"]').children().last().prop('selected', 'selected');
     else {
-        $('select[name="archived-screenshots"]').children().each(function( index ) {
-            if(version == $(this).text().split(" ")[1]) $(this).attr('selected','selected');
+        $('select[name="archived-screenshots"]').children().each(function (index) {
+            if (version == $(this).text().split(" ")[1]) $(this).prop('selected', 'selected');
         });
     }
 });
 
 // Screenshots screen: redirect to selected option's value after changing version in dropdown
-$('select[name="archived-screenshots"]').on("change", function(e) {
+$('select[name="archived-screenshots"]').on("change", function (e) {
     window.location.href = e.target.value + window.location.hash;
 });
 
 // Show/hide menu after changing OS tabs
-$('.nav-tabs a').on("click", function(e) {
-    if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
+$('.nav-tabs a').on("click", function (e) {
+    if (window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0] += $(this).attr('href');
     else window.location.href += $(this).attr('href');
     const { hash } = window.location;
     const hashDevice = hash != "" ? hash.replace("#", "").split("_")[0] : "ios";
