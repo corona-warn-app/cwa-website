@@ -2175,7 +2175,7 @@
                 {
                     "term": "Android",
                     "anchor": "android",
-                    "description": "Android is one of the two operating systems currently supported by the Corona-Warn-App, along with <a href='#glossary_ios'>iOS</a>, and the most widely used mobile operating system in the world. It is an <a href='#glossary_open_source'>open-source</a> operating system for, for example, mobile (such as smartphones or tables) but also other devices (such as TVs or cars). It is jointly developed by Google and the Open Handset Alliance (OHA)."
+                    "description": "Android is one of the two operating systems currently supported by the Corona-Warn-App, along with <a href='#glossary_ios'>iOS</a>, and the most widely used mobile operating system in the world. It is an <a href='#glossary_open_source'>open-source</a> operating system for mobile devices (such as smartphones or tablets) and other devices (such as TVs or cars). It is jointly developed by Google and the Open Handset Alliance (OHA)."
                 },
                 {
                     "term": "API",
@@ -2314,7 +2314,12 @@
                 {
                     "term": "Exposure Notification Framework (ENF)",
                     "anchor": "enf",
-                    "description": "The Google Exposure Notification Framework is a developed OS-level system whose goal is to reduce the spread of COVID-19 through contact tracing. It enables the exchange of random keys via Bluetooth Low Energy (BLE)."
+                    "description": "The Exposure Notification Framework (Apple terminology) or Exposure Notification System (Google terminology) is a developed OS-level system whose goal is to reduce the spread of COVID-19 through contact tracing. It enables the exchange of random keys via Bluetooth Low Energy (BLE)."
+                },
+                {
+                    "term": "Exposure Notification System (ENS)",
+                    "anchor": "ens",
+                    "description": "See <a href='#glossary_enf'>Exposure Notification Framework (ENF)</a>"
                 }
             ],
             "G": [
@@ -2445,7 +2450,7 @@
                 {
                     "term": "Standardized Name",
                     "anchor": "standardized_name",
-                    "description": "Standardized names refer to names that are additionally presented with capital letters in standardized Latin script due to their country-specific spelling. This can occur, for example, with Cyrillic, Arabic, but also German script. For example, a \"Ö\" becomes a \"OE\"."
+                    "description": "Standardized names refer to names that are additionally presented with capital letters in standardized Latin script due to their country-specific spelling. This can occur, for example, with Cyrillic, Arabic, but also German script. For example \"Ö\" becomes \"OE\"."
                 }
             ],
             "T": [
@@ -2474,7 +2479,7 @@
                 {
                     "term": "Validity of an EU Digital COVID Certificate",
                     "anchor": "validity",
-                    "description": "Basically, we distinguish between <ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. <br/><br/> <b>Vaccination Certificate</b> <br/><br/>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g. in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So the effective validity of the vaccination counts from the last vaccination date (date X).  <br/><br/> A certificate is valid until either the technical validity or the effective validity expires."
+                    "description": "Basically, we distinguish between <ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. <br/><br/> <b>Vaccination Certificate</b> <br/><br/>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g., in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So, the effective validity of the vaccination counts from the last vaccination date (date X).  <br/><br/> A certificate is valid until either the technical validity or the effective validity expires."
                 },
                 {
                     "term": "Vaccination Certificate",
@@ -2494,7 +2499,7 @@
                 {
                     "term": "Verifier-App / Checking a certificate / Verifying a certificate",
                     "anchor": "verify",
-                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the <a href='#glossary_covpasscheck'>CovPassCheck app</a>), the check app. <br/><br/> Individual countries may have different implementations of the check app. However all check apps use the same keys - consolidated on a European gateway - of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
+                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the <a href='#glossary_covpasscheck'>CovPassCheck app</a>), the check app. <br/><br/> Individual countries may have different implementations of the check app. However, all check apps use the same keys - consolidated on a European gateway - of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
                 }
             ]
         },
