@@ -151,7 +151,7 @@ document.getElementById('downloadMultiCode').addEventListener('click', function 
   let width = doc.internal.pageSize.getWidth();
   let height = doc.internal.pageSize.getHeight();
   pages.forEach((page, index) => {
-    doc.addImage(page.toDataURL("image/png"), 'PNG', 0, 0, width, height);
+    doc.addImage(page.toDataURL("image/jepg"), 'JEPG', 0, 0, width, height, "", 'FAST');
     if (index < pages.length - 1) doc.addPage();
   })
   doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
@@ -483,10 +483,11 @@ async function GenerateMultiQRCode(data) {
           payload.setVersion(1);
 
           let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-
+          let col = document.getElementById("pageTemplate").value.split('x')[0];
+          let res2 = Math.ceil(col / 2);
           QRCode.toDataURL('https://e.coronawarn.app?v=1#' + qrContent, {
             margin: 0,
-            width: 1100
+            width: 1100 / res2
           }, function (err, qrUrl) {
             if (err) {
               console.error(err);
@@ -555,21 +556,22 @@ async function printQRsOnPage(qrList) {
         for (let i = 0; i < qrList.length; i++) {
           let canvasm = document.createElement("canvas");
           let ctxm = canvasm.getContext('2d');
-          ctxm.width = 1654;
-          ctxm.height = 2339;
-          canvasm.width = 1654;
-          canvasm.height = 2339;
+          let res2 = Math.ceil(col / 2);
+          ctxm.width = 1654 / res2;
+          ctxm.height = 2339 / res2;
+          canvasm.width = 1654 / res2;
+          canvasm.height = 2339 / res2;
           canvasm.style.maxWidth = "100%";
 
-          ctxm.drawImage(imgtemplate, 0, 0);
+          ctxm.drawImage(imgtemplate, 0, 0, imgtemplate.width / res2, imgtemplate.height / res2);
 
-          ctxm.drawImage(qrList[i].qr, 275, 230);
+          ctxm.drawImage(qrList[i].qr, 275 / res2, 230 / res2);
 
-          ctxm.font = "30px sans-serif";
+          ctxm.font = 30 + "px sans-serif";
           ctxm.fillStyle = "black";
 
-          ctxm.fillText(qrList[i].description, 225, 1460);
-          ctxm.fillText(qrList[i].address, 225, 1510);
+          ctxm.fillText(qrList[i].description, 225 / res2, 1460 / res2);
+          ctxm.fillText(qrList[i].address, 225 / res2, 1470 / res2 + 50 - (res2 - 1) * 8); //1510 / res2 + 25 * (res2 - 1)
 
           qrFormatedList.push(canvasm);
         }
@@ -581,18 +583,18 @@ async function printQRsOnPage(qrList) {
             let canvas = document.createElement("canvas");
             canvas.className = "eventqr-preview";
             let ctx = canvas.getContext('2d');
-
+            let resolution = Math.ceil(col / 2);
             if (col == row) {
-              ctx.width = 1654;
-              ctx.height = 2339;
-              canvas.width = 1654;
-              canvas.height = 2339;
+              ctx.width = 1654 * resolution;
+              ctx.height = 2339 * resolution;
+              canvas.width = 1654 * resolution;
+              canvas.height = 2339 * resolution;
               canvas.style.maxWidth = "100%";
             } else {
-              ctx.width = 2339;
-              ctx.height = 1654;
-              canvas.width = 2339;
-              canvas.height = 1654;
+              ctx.width = 2339 * resolution;
+              ctx.height = 1654 * resolution;
+              canvas.width = 2339 * resolution;
+              canvas.height = 1654 * resolution;
               canvas.style.maxWidth = "100%";
             }
 
@@ -609,7 +611,6 @@ async function printQRsOnPage(qrList) {
               ctx.translate(-canvas.width / 2, -canvas.height / 2);
               ctx.rotate(-Math.PI / 2);
             }
-            //if(pagem > 0) canvas.className = "d-none"
             pages.push(canvas)
           }
 
