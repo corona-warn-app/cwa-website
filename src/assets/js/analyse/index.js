@@ -139,10 +139,10 @@ function filterData(dataOrg, date, mode){
 	out.barthreshold = (out.range <= barThreshold[mode]);
 	out.categories = out.reallabels.map(e => {
 		let d = DateTime.fromISO(e);
-		d = (mode == "daily")? d.toLocaleString((out.range <= 28 )? { day: "2-digit", month: 'short' }: { month: 'short', year: '2-digit' }): d.toFormat((documentLang == "de")? "'KW' W": "'CW' W"); 
+		d = (mode == "daily")? d.toLocaleString((out.range <= 28 )? { day: "2-digit", month: 'short' }: { month: 'short', year: '2-digit' }): d.toFormat((documentLang == "de")? "'KW' WW": "'CW' WW"); 
 		return  `__${d}__`;
 	});
-	out.tooltipDate = out.reallabels.map(o => (mode == "weekly")? DateTime.fromISO(o).toFormat((documentLang == "de")? "'KW' W": "'CW' W") + " - " + DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE): DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE));
+	out.tooltipDate = out.reallabels.map(o => (mode == "weekly")? DateTime.fromISO(o).toFormat((documentLang == "de")? "'KW' WW": "'CW' WW") + " - " + DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE): DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE));
 
 	console.timeEnd('filterData');
 	return out;
