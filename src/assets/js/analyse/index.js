@@ -12,7 +12,7 @@ import expand from './expand.js';
 import fullscreen from './fullscreen.js';
 import modal from './modal.js';
 import { totalValuesInit } from './totalValues.js';
-
+import { debugTime, debugTimeEnd, debugGroup, debugGroupEnd } from './debug.js';
 
 import data$ from './data.js';
 import date$ from './date.js';
@@ -48,13 +48,13 @@ data$
 		)
 	)
 	.subscribe(([data, switchId, date, tabs1, tabs2]) => {
-		console.group("update")
+		debugGroup("update")
 		// return on fetch error (data$)
 		if(data[0].error) return;
 
 		
 
-		console.time('cachedata')
+		debugTime('cachedata')
 
 		// create the object
 		const obj = {data: data[0], switchId, date, tabs1, tabs2};
@@ -70,7 +70,7 @@ data$
 			// compare values with chached version
 			if(JSON.stringify(array) === JSON.stringify(checkArray)){
 				//no change
-				console.timeEnd('cachedata');
+				debugTimeEnd('cachedata');
 				console.groupEnd("update");
 		  		return;
 	  		}else{
@@ -109,8 +109,8 @@ data$
 		cacheData = obj.data;
 		checkArray = array;
 
-		console.timeEnd('cachedata')
-		console.groupEnd("update")
+		debugTimeEnd('cachedata')
+		debugGroupEnd("update")
 	});
 
 
@@ -123,7 +123,7 @@ const barThreshold = {
 
 
 function filterData(dataOrg, date, mode){
-	console.time('filterData')
+	debugTime('filterData')
 
 	dataOrg = _cloneDeep(dataOrg);
 	let out = {};
@@ -144,7 +144,7 @@ function filterData(dataOrg, date, mode){
 	});
 	out.tooltipDate = out.reallabels.map(o => (mode == "weekly")? DateTime.fromISO(o).toFormat((documentLang == "de")? "'KW' WW": "'CW' WW") + " - " + DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE): DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE));
 
-	console.timeEnd('filterData');
+	debugTimeEnd('filterData');
 	return out;
 }
 

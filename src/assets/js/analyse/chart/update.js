@@ -4,10 +4,12 @@ import _set from 'lodash/set';
 
 import lock from '../lock.js';
 import translate from '../translate.js';
-import { totalValuesUpdate } from '..//totalValues.js';
+import { totalValuesUpdate } from '../totalValues.js';
+import { debugLog, debugTime, debugTimeEnd } from '../debug.js';
 
 import { checkLegendReset, renderLegend } from './legend.js';
 import chartConfig from './config.js';
+
 
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -35,7 +37,7 @@ const update = async function({
 
 	$(`.analyseBoard-loading[data-id="${id}"]`).addClass("active");
 	await delay(100);
-	console.time('updateOptions'+id)
+	debugTime('updateOptions' + id)
 	
 	if(i == 1){
 		// switch title on chart1 tabs 
@@ -99,8 +101,8 @@ const update = async function({
 
 	// render custom legend
 	renderLegend(opt);
-	console.timeEnd('updateOptions'+id)
-	console.log("chart update", id, opt);
+	debugTimeEnd('updateOptions'+id)
+	debugLog("chart update", id, opt);
 };
 
 export {
