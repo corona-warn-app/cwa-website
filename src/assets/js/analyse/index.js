@@ -11,7 +11,7 @@ import download from './download.js';
 import expand from './expand.js';
 import fullscreen from './fullscreen.js';
 import modal from './modal.js';
-import { totalValuesInit } from './totalValues.js';
+import { totalValuesInit, setUpdatedTime } from './totalValues.js';
 import { debugTime, debugTimeEnd, debugGroup, debugGroupEnd } from './debug.js';
 
 import data$ from './data.js';
@@ -80,6 +80,7 @@ data$
 		}else{
 			$(".analyseBoards").removeClass("loading");
 			totalValuesInit(obj.data);
+			setUpdatedTime(obj.data);
 		}
 
 		// detect mode

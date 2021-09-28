@@ -5,10 +5,9 @@ import { DateTime, Settings } from 'luxon';
 
 Settings.defaultLocale = documentLang;
 
-
 let store = [];
 
-function getValue(data, key){
+function getLine(data, key){
 	const e = _cloneDeep(data);
 	const index = _get(e, ["keys", "daily"]).indexOf(key);
 	const array = _get(e, ["data", "daily"]);
@@ -18,12 +17,33 @@ function getValue(data, key){
 		last = array.pop();
 	}while(last[index] === null || last[index] === 0)
 
-	return [ 
-		DateTime.fromISO(last[0]).toRelativeCalendar(),
-		new Intl.NumberFormat(lang).format(last[index])
+	return [
+		last[0], 
+		last[index]
 	];
 }
 
+function getValue(data, key){
+	const line = getLine(data, key);
+
+	return [ 
+		DateTime.fromISO(line[0]).toRelativeCalendar(),
+		new Intl.NumberFormat(lang).format(line[1])
+	];
+}
+
+
+function getTimestamp(data){
+	const line = getLine(data, "update_timestamp");
+	console.log(line[1],DateTime.fromISO(line[1]))
+	return DateTime.fromISO(line[1]).toLocaleString(DateTime.DATETIME_FULL);
+}
+
+
+
+function setUpdatedTime(data){
+	$(".analyseUpdate-timestamp").html(getTimestamp(data));
+}
 
 function totalValuesInit(data){
 	$(".analyseBoard-total-value").each(function(i, e){
@@ -46,5 +66,6 @@ function totalValuesUpdate($e, id, idx){
 
 export {
 	totalValuesInit,
-	totalValuesUpdate
+	totalValuesUpdate,
+	setUpdatedTime
 }
