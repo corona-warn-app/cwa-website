@@ -22,10 +22,10 @@
                 "endtime": "End",
                 "show": "Create",
                 "download": "Download",
+                "downloadMessage": "This can take a while",
                 "print": "Print",
                 "csvFile": "Load data from CSV file",
                 "layout": "Layout"
-
             },
             "placeholders": {
                 "description": "e.g. Hairdresser",
@@ -55,31 +55,83 @@
             "locationtypes_initial": "Please choose",
             "locationtypes_header_place": "Place",
             "locationtypes_places": [
-                { "id": 5, "name": "Craft business" },
-                { "id": 7, "name": "Education facility" },
-                { "id": 4, "name": "Hospitality" },
-                { "id": 8, "name": "Public building" },
-                { "id": 3, "name": "Retail" },
-                { "id": 6, "name": "Workplace" },
-                { "id": 1, "name": "Other place" }
+                {
+                    "id": 5,
+                    "name": "Craft business"
+                },
+                {
+                    "id": 7,
+                    "name": "Education facility"
+                },
+                {
+                    "id": 4,
+                    "name": "Hospitality"
+                },
+                {
+                    "id": 8,
+                    "name": "Public building"
+                },
+                {
+                    "id": 3,
+                    "name": "Retail"
+                },
+                {
+                    "id": 6,
+                    "name": "Workplace"
+                },
+                {
+                    "id": 1,
+                    "name": "Other place"
+                }
             ],
             "locationtypes_header_event": "Event",
             "locationtypes_events": [
-                { "id": 10, "name": "Club activities" },
-                { "id": 9, "name": "Cultural event" },
-                { "id": 11, "name": "Private party" },
-                { "id": 12, "name": "Religious service" },
-                { "id": 2, "name": "Other event" }
+                {
+                    "id": 10,
+                    "name": "Club activities"
+                },
+                {
+                    "id": 9,
+                    "name": "Cultural event"
+                },
+                {
+                    "id": 11,
+                    "name": "Private party"
+                },
+                {
+                    "id": 12,
+                    "name": "Religious service"
+                },
+                {
+                    "id": 2,
+                    "name": "Other event"
+                }
             ],
             "layout_options": [
-                {"option": "1x1"},
-                {"option": "2x1"},
-                {"option": "2x2"},
-                {"option": "3x3"},
-                {"option": "4x2"},
-                {"option": "4x4"},
-                {"option": "6x3"},
-                {"option": "5x5"}
+                {
+                    "option": "1x1"
+                },
+                {
+                    "option": "2x1"
+                },
+                {
+                    "option": "2x2"
+                },
+                {
+                    "option": "3x3"
+                },
+                {
+                    "option": "4x2"
+                },
+                {
+                    "option": "4x4"
+                },
+                {
+                    "option": "6x3"
+                },
+                {
+                    "option": "5x5"
+                }
             ]
         }
     }

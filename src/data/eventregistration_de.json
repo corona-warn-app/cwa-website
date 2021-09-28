@@ -22,6 +22,7 @@
                 "endtime": "Ende",
                 "show": "Erstellen",
                 "download": "Herunterladen",
+                "downloadMessage": "Dies kann eine Weile dauern",
                 "print": "Drucken",
                 "csvFile": "Daten aus CSV-Datei laden",
                 "layout": "Layout"
@@ -43,42 +44,94 @@
                 "endtimerequired": "Ende wird benötigt",
                 "invaliddate": "Ungültiges Datumsformat",
                 "invalidtime": "Ungültiges Zeitformat",
-                "filerequired":"Sie müssen eine CSV-Datei importieren",
-                "wrongfileextension":"Die Dateierweiterung ist ungültig. Akzeptiert werden nur .csv Dateien",
-                "wrongfileheaders":"Die Header der .csv-Datei entsprechen nicht den Headern der entsprechenden Vorlage, Sie können sie <a href='. /event-qr-code-guide/'>hier überprüfen.</a>",
-                "wrongfileformatfields":"Einige Felder in Ihrer CSV-Datei sind nicht korrekt ausgefüllt. Bitte überprüfen Sie Ihre .csv und versuchen Sie es erneut",
-                "filewithnodata":"Ihre .csv Felder sind nicht ausgefüllt"
+                "filerequired": "Sie müssen eine CSV-Datei importieren",
+                "wrongfileextension": "Die Dateierweiterung ist ungültig. Akzeptiert werden nur .csv Dateien",
+                "wrongfileheaders": "Die Header der .csv-Datei entsprechen nicht den Headern der entsprechenden Vorlage, Sie können sie <a href='. /event-qr-code-guide/'>hier überprüfen.</a>",
+                "wrongfileformatfields": "Einige Felder in Ihrer CSV-Datei sind nicht korrekt ausgefüllt. Bitte überprüfen Sie Ihre .csv und versuchen Sie es erneut",
+                "filewithnodata": "Ihre .csv Felder sind nicht ausgefüllt"
             },
             "dateplaceholder": "TT.MM.JJJJ",
             "timeplaceholder": "HH:MM",
             "locationtypes_initial": "Bitte auswählen",
             "locationtypes_header_place": "Ort",
             "locationtypes_places": [
-                { "id": 6, "name": "Arbeitsstätte" },
-                { "id": 7, "name": "Bildungsstätte" },
-                { "id": 3, "name": "Einzelhandel" },
-                { "id": 4, "name": "Gastronomiebetrieb" },
-                { "id": 5, "name": "Handwerksbetrieb" },
-                { "id": 8, "name": "Öffentliches Gebäude" },
-                { "id": 1, "name": "Anderer Ort" }
+                {
+                    "id": 6,
+                    "name": "Arbeitsstätte"
+                },
+                {
+                    "id": 7,
+                    "name": "Bildungsstätte"
+                },
+                {
+                    "id": 3,
+                    "name": "Einzelhandel"
+                },
+                {
+                    "id": 4,
+                    "name": "Gastronomiebetrieb"
+                },
+                {
+                    "id": 5,
+                    "name": "Handwerksbetrieb"
+                },
+                {
+                    "id": 8,
+                    "name": "Öffentliches Gebäude"
+                },
+                {
+                    "id": 1,
+                    "name": "Anderer Ort"
+                }
             ],
             "locationtypes_header_event": "Event",
             "locationtypes_events": [
-                { "id": 12, "name": "Gottesdienst" },
-                { "id": 9, "name": "Kulturveranstaltung" },
-                { "id": 11, "name": "Private Feier" },
-                { "id": 10, "name": "Vereinsaktivität" },
-                { "id": 2, "name": "Anderes Event" }
+                {
+                    "id": 12,
+                    "name": "Gottesdienst"
+                },
+                {
+                    "id": 9,
+                    "name": "Kulturveranstaltung"
+                },
+                {
+                    "id": 11,
+                    "name": "Private Feier"
+                },
+                {
+                    "id": 10,
+                    "name": "Vereinsaktivität"
+                },
+                {
+                    "id": 2,
+                    "name": "Anderes Event"
+                }
             ],
             "layout_options": [
-                {"option": "1x1"},
-                {"option": "2x1"},
-                {"option": "2x2"},
-                {"option": "3x3"},
-                {"option": "4x2"},
-                {"option": "4x4"},
-                {"option": "6x3"},
-                {"option": "5x5"}
+                {
+                    "option": "1x1"
+                },
+                {
+                    "option": "2x1"
+                },
+                {
+                    "option": "2x2"
+                },
+                {
+                    "option": "3x3"
+                },
+                {
+                    "option": "4x2"
+                },
+                {
+                    "option": "4x4"
+                },
+                {
+                    "option": "6x3"
+                },
+                {
+                    "option": "5x5"
+                }
             ]
         }
     }

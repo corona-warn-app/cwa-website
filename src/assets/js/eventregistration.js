@@ -137,24 +137,27 @@ document.getElementById('printCode').addEventListener('click', function (e) {
 
 document.getElementById('downloadMultiCode').addEventListener('click', function (e) {
   e.preventDefault();
+  document.getElementById("progress").classList.remove('d-none');
+  setTimeout(() => {
+    let pages = document.querySelectorAll('#qrContainer canvas')
+    let today = new Date();
+    let date = today.toISOString().slice(0, 10);
+    let time = ("0" + today.getHours()).slice(-2) + "-" + ("0" + today.getMinutes()).slice(-2)
 
-  let pages = document.querySelectorAll('#qrContainer canvas')
-  let today = new Date();
-  let date = today.toISOString().slice(0, 10);
-  let time = ("0" + today.getHours()).slice(-2) + "-" + ("0" + today.getMinutes()).slice(-2)
-
-  let grid = document.getElementById("pageTemplate").value.split('x')
-  let portrait = grid[0] == grid[1];
-  const doc = new jsPDF({
-    orientation: portrait ? "portrait" : "landscape",
-  });
-  let width = doc.internal.pageSize.getWidth();
-  let height = doc.internal.pageSize.getHeight();
-  pages.forEach((page, index) => {
-    doc.addImage(page.toDataURL("image/jepg"), 'JEPG', 0, 0, width, height, "", 'FAST');
-    if (index < pages.length - 1) doc.addPage();
-  })
-  doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
+    let grid = document.getElementById("pageTemplate").value.split('x')
+    let portrait = grid[0] == grid[1];
+    const doc = new jsPDF({
+      orientation: portrait ? "portrait" : "landscape",
+    });
+    let width = doc.internal.pageSize.getWidth();
+    let height = doc.internal.pageSize.getHeight();
+    pages.forEach((page, index) => {
+      doc.addImage(page.toDataURL("image/jepg"), 'JEPG', 0, 0, width, height, "", 'FAST');
+      if (index < pages.length - 1) doc.addPage();
+    })
+    doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
+    document.getElementById("progress").classList.add('d-none');
+  }, 500)
 
 });
 
@@ -485,18 +488,16 @@ async function GenerateMultiQRCode(data) {
           let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
           let col = document.getElementById("pageTemplate").value.split('x')[0];
           let res2 = Math.ceil(col / 2);
-          QRCode.toDataURL('https://e.coronawarn.app?v=1#' + qrContent, {
+          let canvas = document.createElement("canvas");
+          QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, {
             margin: 0,
             width: 1100 / res2
-          }, function (err, qrUrl) {
+          }, function (err) {
             if (err) {
               console.error(err);
               return;
             }
-
-            let qrImg = new Image();
-            qrImg.src = qrUrl;
-            qrList.push({ "id": index, "address": address, "description": description, "qr": qrImg });
+            qrList.push({ "address": address, "description": description, "qr": canvas });
             index++;
           });
         } else {
@@ -567,11 +568,11 @@ async function printQRsOnPage(qrList) {
 
           ctxm.drawImage(qrList[i].qr, 275 / res2, 230 / res2);
 
-          ctxm.font = 30 + "px sans-serif";
+          ctxm.font = (32 - 2 * col) + "px sans-serif";
           ctxm.fillStyle = "black";
 
           ctxm.fillText(qrList[i].description, 225 / res2, 1460 / res2);
-          ctxm.fillText(qrList[i].address, 225 / res2, 1470 / res2 + 50 - (res2 - 1) * 8); //1510 / res2 + 25 * (res2 - 1)
+          ctxm.fillText(qrList[i].address, 225 / res2, 1460 / res2 + 50 - (res2 - 1) * 12); //1510 / res2 + 25 * (res2 - 1)
 
           qrFormatedList.push(canvasm);
         }
