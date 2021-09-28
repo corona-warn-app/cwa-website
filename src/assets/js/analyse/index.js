@@ -52,6 +52,8 @@ data$
 		// return on fetch error (data$)
 		if(data[0].error) return;
 
+		
+
 		console.time('cachedata')
 
 		// create the object
@@ -100,8 +102,7 @@ data$
 			cacheData: 
 			filterData(obj.data, obj.date, mode);
 
-		const updated = (obj.data !== cacheData)
-		
+		const updated = (obj.data !== cacheData);
 		charts.forEach((s,i) => s.next(Object.assign({}, obj, {mode, updated}, obj.data)));
 		
 		// fill cache  vars

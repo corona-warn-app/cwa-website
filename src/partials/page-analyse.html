@@ -125,14 +125,21 @@
 			{{#each page-contents.board}}
 				<div class="col-12 col-md-6">
 					<div class="analyseBoard {{#if tabs}} analyseBoard_tabs{{/if}} chart{{@index}}" >
+						
 						<div class="analyseBoard-head">
-
 							{{#if title}}
 								<div class="analyseBoard-title">
 									<span class="analyseBoard-title-title">{{title}}</span> 
 									<span class="analyseBoard-title-append"></span>
 								</div>
 							{{/if}}
+
+							<div class="analyseBoard-loading" data-id="chart{{@index}}">
+								<div class="analyseBoard-loading-loader"></div> 
+								<div>
+									{{ ../page-contents.boards.loading }}
+								</div>
+							</div>
 
 							{{#if export}}
 								{{#unless ../page-contents.boards.download}}	

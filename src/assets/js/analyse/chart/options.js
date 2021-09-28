@@ -29,6 +29,8 @@ export default {
 				});
 
 				lock.unset(config.config.chart.id);
+
+				$(`.analyseBoard-loading[data-id="${config.config.chart.id}"]`).removeClass("active")
 			}
 		}
 	},

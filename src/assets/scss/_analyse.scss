@@ -371,8 +371,6 @@
 		padding: 24px;
 		position: relative;
 
-
-
 		&.expand{
 			visibility: visible !important;
 			position: absolute;
@@ -402,6 +400,46 @@
 			padding: 16px;
 		}
 
+
+		&-loading{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: #fff;
+			z-index: 99;
+			border-radius: 6px;
+			display: none;
+			align-items: center;
+			justify-content: center;
+
+			font-size: 13px;
+			line-height: 15px;
+			color: #898B8B;
+			flex-direction: column;
+
+			&.active{
+				display: flex;
+			}
+
+			@keyframes spin {
+			  0% { transform: rotate(0deg); }
+			  100% { transform: rotate(360deg); }
+			}
+
+			&-loader{
+				border: 6px solid #DEE8EC; /* Light grey */
+				border-top: 6px solid #285F7F; /* Blue */
+				border-radius: 50%;
+				width: 45px;
+				height: 45px;
+				animation: spin 2s linear infinite;
+				margin-bottom: 16px;
+			}
+		}
+
+
 		&_tabs{
 			margin-bottom: 24px + 34;
 		}
@@ -416,6 +454,7 @@
 			font-weight: bold;
 			font-size: 16px;
 			line-height: 1.2;
+			z-index: 100;
 		}
 
 		&-export{

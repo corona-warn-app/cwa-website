@@ -9,7 +9,10 @@ import { totalValuesUpdate } from '..//totalValues.js';
 import { checkLegendReset, renderLegend } from './legend.js';
 import chartConfig from './config.js';
 
-export default function({
+
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
+const update = async function({
 		barthreshold, 
 		categories,
 		data, 
@@ -25,11 +28,15 @@ export default function({
 		updated
 	},
 	i
- )
+)
 {
 	const id = `chart${i}`;
 	lock.set(id);
 
+	$(`.analyseBoard-loading[data-id="${id}"]`).addClass("active");
+	await delay(100);
+	console.time('updateOptions'+id)
+	
 	if(i == 1){
 		// switch title on chart1 tabs 
 		$(`.${id}`).find(".analyseBoard-title .analyseBoard-title-title").html(translate(["analyseBoardTitleTitle", i, tabs1]));
@@ -84,11 +91,18 @@ export default function({
 		ApexCharts.exec(id, "resetSeries", true, false);
 	});
 
+	
 	// update chart options
 	ApexCharts.exec(id, "updateOptions", opt, true, false, false);
+	
+	
 
 	// render custom legend
 	renderLegend(opt);
-
+	console.timeEnd('updateOptions'+id)
 	console.log("chart update", id, opt);
 };
+
+export {
+	update
+}
