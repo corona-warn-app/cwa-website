@@ -3,7 +3,7 @@
     <div class="row justify-content-between">
       <div class="col-8 col-sm-5 col-md-4">
         <a class="logo" href="/{{#if lang_de}}de{{else}}en{{/if}}/">
-          <img src="{{root}}assets/img/logo.svg" alt="The Corona Warn App – Open Source Projekt" />
+          <img src="assets/img/logo.svg" alt="The Corona Warn App – Open Source Projekt" />
         </a>
       </div>
       <div class="col-16 col-sm-7 col-md-8">
@@ -15,7 +15,7 @@
             <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>
               {{#unless button.icon}}{{button.title}}{{/unless}}
               {{#if button.icon}}<span class="icon icon_img icon_{{button.icon}}"><img
-                  src="{{root}}{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
+                  src="{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
                   alt="{{title}}"
                   class="icon-image" /></span>{{/if}}
             </a>
@@ -25,7 +25,7 @@
             <a {{#if url}}href="{{url}}" {{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}}>
               {{#unless icon}}{{title}}{{/unless}}
               {{#if icon}}<span class="icon icon_img icon_{{icon}}"><img
-                  src="{{root}}{{#unless icon-url}}assets/img/icons/{{icon}}.svg{{/unless}}{{#if icon-url}}{{icon-url}}{{/if}}"
+                  src="{{#unless icon-url}}assets/img/icons/{{icon}}.svg{{/unless}}{{#if icon-url}}{{icon-url}}{{/if}}"
                   alt="{{title}}"
                   class="icon-image" /></span>{{/if}}
             </a>
