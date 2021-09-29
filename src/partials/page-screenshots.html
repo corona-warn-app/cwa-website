@@ -15,12 +15,12 @@
                     {{#if lang_de}}
                         <option value="">{{global.screenshots.archive-placeholder.de}}</option>
                         {{#each global.screenshots.archive-dropdown}}
-                            <option value="/de{{link}}" >{{version}}</option>
+                            <option value="de/{{link}}" >{{version}}</option>
                         {{/each}}
                     {{else}}
                         <option value="">{{global.screenshots.archive-placeholder.en}}</option>
                         {{#each global.screenshots.archive-dropdown}}
-                            <option value="/en{{link}}">{{version}}</option>
+                            <option value="en/{{link}}">{{version}}</option>
                         {{/each}}
                     {{/if}}
                 </select>
