@@ -253,6 +253,6 @@ function GenerateQRCode() {
       }
       qrImg.src = qrUrl;
     }
-    img.src = 'assets/img/pt-poster-1.0.0.png';
+    img.src = '/assets/img/pt-poster-1.0.0.png';
   });
 }
