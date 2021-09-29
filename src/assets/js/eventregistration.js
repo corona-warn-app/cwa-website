@@ -429,91 +429,112 @@ async function GenerateMultiQRCode(data) {
   return new Promise((resolve) => {
     let qrList = [];
     let error = false;
-    let index = 0;
-    for (const qr of data) {
-      let description = qr.description
-      let address = qr.address;
-      let defaultcheckinlengthMinutes = qr.defaultcheckinlengthinminutes;
-      let locationType = qr.type;
 
-      try {
-        let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
-        let validLocation = !Number.isNaN(parseInt(locationType));
-        let validStartDate, validEndDate;
-        if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
-          validStartDate = new Date(qr.startdate).getTime() > 0 && qr.startdate !== "" && qr.startdate !== null;
-          validEndDate = new Date(qr.enddate).getTime() > 0 && qr.enddate !== "" && qr.enddate !== null;
-          if (!validStartDate || !validEndDate) {
-            validLocation = false
-          }
-        }
-        let validDescription = description !== "" && description !== null;
-        let validAddress = address !== "" && address !== null;
+    let imgtemplate = new Image();
+    imgtemplate.src = '/assets/img/pt-poster-1.0.0.png';
+    imgtemplate.className = 'img img-fluid w-100';
+    imgtemplate.onload = function () {
+      for (const qr of data) {
+        let description = qr.description
+        let address = qr.address;
+        let defaultcheckinlengthMinutes = qr.defaultcheckinlengthinminutes;
+        let locationType = qr.type;
 
-        if (validCheckinLength && validLocation && validDescription && validAddress) {
-          let locationData = new proto.CWALocationData();
-          locationData.setVersion(1);
-          locationData.setType(locationType);
-          locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthMinutes);
-
-          let crowdNotifierData = new proto.CrowdNotifierData();
-          crowdNotifierData.setVersion(1);
-          crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
-
-          let seed = new Uint8Array(16);
-          crypto.getRandomValues(seed);
-          crowdNotifierData.setCryptographicseed(seed);
-
-          let traceLocation = new proto.TraceLocation();
-          traceLocation.setVersion(1);
-          traceLocation.setDescription(description);
-          traceLocation.setAddress(address);
-
-          if (locationType >= 9 || locationType === 2) {
-            let startdate = qr.startdate.split(' ')[0].split('.');
-            let starttime = qr.startdate.split(' ')[1]
-            traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
-
-            let enddate = qr.enddate.split(' ')[0].split('.');
-            let endtime = qr.enddate.split(' ')[1]
-            traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
-          }
-
-          let payload = new proto.QRCodePayload();
-          payload.setLocationdata(traceLocation);
-          payload.setCrowdnotifierdata(crowdNotifierData);
-          payload.setVendordata(locationData.serializeBinary());
-          payload.setVersion(1);
-
-          let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-          let col = document.getElementById("pageTemplate").value.split('x')[0];
-          let res2 = Math.ceil(col / 2);
-          let canvas = document.createElement("canvas");
-          QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, {
-            margin: 0,
-            width: 1100 / res2
-          }, function (err) {
-            if (err) {
-              console.error(err);
-              return;
+        try {
+          let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
+          let validLocation = !Number.isNaN(parseInt(locationType));
+          let validStartDate, validEndDate;
+          if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
+            validStartDate = new Date(qr.startdate).getTime() > 0 && qr.startdate !== "" && qr.startdate !== null;
+            validEndDate = new Date(qr.enddate).getTime() > 0 && qr.enddate !== "" && qr.enddate !== null;
+            if (!validStartDate || !validEndDate) {
+              validLocation = false
             }
-            qrList.push({ "address": address, "description": description, "qr": canvas });
-            index++;
-          });
-        } else {
+          }
+          let validDescription = description !== "" && description !== null;
+          let validAddress = address !== "" && address !== null;
+
+          if (validCheckinLength && validLocation && validDescription && validAddress) {
+            let locationData = new proto.CWALocationData();
+            locationData.setVersion(1);
+            locationData.setType(locationType);
+            locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthMinutes);
+
+            let crowdNotifierData = new proto.CrowdNotifierData();
+            crowdNotifierData.setVersion(1);
+            crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
+
+            let seed = new Uint8Array(16);
+            crypto.getRandomValues(seed);
+            crowdNotifierData.setCryptographicseed(seed);
+
+            let traceLocation = new proto.TraceLocation();
+            traceLocation.setVersion(1);
+            traceLocation.setDescription(description);
+            traceLocation.setAddress(address);
+
+            if (locationType >= 9 || locationType === 2) {
+              let startdate = qr.startdate.split(' ')[0].split('.');
+              let starttime = qr.startdate.split(' ')[1]
+              traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
+
+              let enddate = qr.enddate.split(' ')[0].split('.');
+              let endtime = qr.enddate.split(' ')[1]
+              traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
+            }
+
+            let payload = new proto.QRCodePayload();
+            payload.setLocationdata(traceLocation);
+            payload.setCrowdnotifierdata(crowdNotifierData);
+            payload.setVendordata(locationData.serializeBinary());
+            payload.setVersion(1);
+
+            let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+            let col = document.getElementById("pageTemplate").value.split('x')[0];
+            let res2 = 1//Math.ceil(col / 2);
+            let canvas = document.createElement("canvas");
+            QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, {
+              margin: 0,
+              width: 1100 / res2
+            }, function (err) {
+              if (err) {
+                console.error(err);
+                return;
+              }
+              let canvasm = document.createElement("canvas");
+              let ctxm = canvasm.getContext('2d');
+              ctxm.width = 1654 / res2;
+              ctxm.height = 2339 / res2;
+              canvasm.width = 1654 / res2;
+              canvasm.height = 2339 / res2;
+              canvasm.style.maxWidth = "100%";
+
+              ctxm.drawImage(imgtemplate, 0, 0, imgtemplate.width / res2, imgtemplate.height / res2);
+
+              ctxm.drawImage(canvas, 275 / res2, 230 / res2);
+
+              ctxm.font = /*(32 - 2 * col)*/30 + "px sans-serif";
+              ctxm.fillStyle = "black";
+
+              ctxm.fillText(description, 225 / res2, 1460 / res2);
+              ctxm.fillText(address, 225 / res2, 1460 / res2 + 50 - (res2 - 1) * 12); //1510 / res2 + 25 * (res2 - 1)
+              qrList.push(canvasm)
+            });
+          } else {
+            error = true;
+            break;
+          }
+        } catch {
           error = true;
           break;
         }
-      } catch {
-        error = true;
-        break;
       }
+      if (error) {
+        document.getElementById('qr-error-wrongfileformatfields').style.display = 'block';
+        qrList = [];
+      }
+      return resolve(qrList);
     }
-    if (error) {
-      document.getElementById('qr-error-wrongfileformatfields').style.display = 'block';
-      qrList = [];
-    }
-    return resolve(qrList);
   })
 }
 
@@ -548,84 +569,53 @@ async function printQRsOnPage(qrList) {
     let originalTemplate = true;
 
     if (originalTemplate) {
-      let imgtemplate = new Image();
-      imgtemplate.src = '/assets/img/pt-poster-1.0.0.png';
-      imgtemplate.className = 'img img-fluid w-100';
-      imgtemplate.onload = function () {
-        //Print every qr with background and save it in an array
-        let qrFormatedList = [];
-        for (let i = 0; i < qrList.length; i++) {
-          let canvasm = document.createElement("canvas");
-          let ctxm = canvasm.getContext('2d');
-          let res2 = Math.ceil(col / 2);
-          ctxm.width = 1654 / res2;
-          ctxm.height = 2339 / res2;
-          canvasm.width = 1654 / res2;
-          canvasm.height = 2339 / res2;
-          canvasm.style.maxWidth = "100%";
-
-          ctxm.drawImage(imgtemplate, 0, 0, imgtemplate.width / res2, imgtemplate.height / res2);
-
-          ctxm.drawImage(qrList[i].qr, 275 / res2, 230 / res2);
-
-          ctxm.font = (32 - 2 * col) + "px sans-serif";
-          ctxm.fillStyle = "black";
-
-          ctxm.fillText(qrList[i].description, 225 / res2, 1460 / res2);
-          ctxm.fillText(qrList[i].address, 225 / res2, 1460 / res2 + 50 - (res2 - 1) * 12); //1510 / res2 + 25 * (res2 - 1)
-
-          qrFormatedList.push(canvasm);
-        }
-
-        //Start to print depend of the layout selected
-        let i = 0;
-        for (let pagem = 0; pagem < pagesNeeded; pagem++) {
-          if (i < qrFormatedList.length) {
-            let canvas = document.createElement("canvas");
-            canvas.className = "eventqr-preview";
-            let ctx = canvas.getContext('2d');
-            let resolution = Math.ceil(col / 2);
-            if (col == row) {
-              ctx.width = 1654 * resolution;
-              ctx.height = 2339 * resolution;
-              canvas.width = 1654 * resolution;
-              canvas.height = 2339 * resolution;
-              canvas.style.maxWidth = "100%";
-            } else {
-              ctx.width = 2339 * resolution;
-              ctx.height = 1654 * resolution;
-              canvas.width = 2339 * resolution;
-              canvas.height = 1654 * resolution;
-              canvas.style.maxWidth = "100%";
-            }
-
-            for (let r = 0; r < row; r++) {
-              for (let c = 0; c < col; c++) {
-                if (i < qrFormatedList.length) {
-                  ctx.drawImage(qrFormatedList[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
-                  i++;
-                }
-              }
-            }
-
-            if (col != row) {
-              ctx.translate(-canvas.width / 2, -canvas.height / 2);
-              ctx.rotate(-Math.PI / 2);
-            }
-            pages.push(canvas)
+      //Start to print depend of the layout selected
+      let i = 0;
+      for (let pagem = 0; pagem < pagesNeeded; pagem++) {
+        if (i < qrList.length) {
+          let canvas = document.createElement("canvas");
+          canvas.className = "eventqr-preview";
+          let ctx = canvas.getContext('2d');
+          let resolution = 1//Math.ceil(col / 2);
+          if (col == row) {
+            ctx.width = 1654 * resolution;
+            ctx.height = 2339 * resolution;
+            canvas.width = 1654 * resolution;
+            canvas.height = 2339 * resolution;
+            canvas.style.maxWidth = "100%";
+          } else {
+            ctx.width = 2339 * resolution;
+            ctx.height = 1654 * resolution;
+            canvas.width = 2339 * resolution;
+            canvas.height = 1654 * resolution;
+            canvas.style.maxWidth = "100%";
           }
 
+          for (let r = 0; r < row; r++) {
+            for (let c = 0; c < col; c++) {
+              if (i < qrList.length) {
+                ctx.drawImage(qrList[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
+                i++;
+              }
+            }
+          }
+
+          if (col != row) {
+            ctx.translate(-canvas.width / 2, -canvas.height / 2);
+            ctx.rotate(-Math.PI / 2);
+          }
+          pages.push(canvas)
         }
-        document.getElementById('printMultiCode').disabled = false;
-        // Active download button
-        document.getElementById('downloadMultiCode').disabled = false;
-        document.getElementById('multieventplaceholder').classList.add('d-none');
 
-
-        let data = { "pages": pages, "container": container, "totalQR": qrList.length }
-        return resolve(data);
       }
+      document.getElementById('printMultiCode').disabled = false;
+      // Active download button
+      document.getElementById('downloadMultiCode').disabled = false;
+      document.getElementById('multieventplaceholder').classList.add('d-none');
 
+
+      let data = { "pages": pages, "container": container, "totalQR": qrList.length }
+      return resolve(data);
     } else {
       let imgtemplate = new Image();
       imgtemplate.src = '/assets/img/pt-poster-1.0.0-multiqr.png';
