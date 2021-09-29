@@ -109,7 +109,7 @@ If you want to add, e.g. a PDF to your blog, the process is slightly different c
 
 Upload your document to `/src/assets/documents`, first.
 To then create a link in your blogpost, use the following snippet:
-`[Link Text](/assets/documents/yourdocumentname.pdf)`
+`[Link Text](assets/documents/yourdocumentname.pdf)`
 
 If you need different files for different languages, just upload two versions and adapt the links in the index.md and index_de.md, accordingly.
 

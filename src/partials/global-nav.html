@@ -1,8 +1,8 @@
 <div class="row navbar">
   <div class="col-sm-6 col-md-3 hidden-xs">
-    <a class="logo" href="/{{#if lang_de}}de{{else}}en{{/if}}/"
+    <a class="logo" href="{{#if lang_de}}de{{else}}en{{/if}}/"
       title="{{language.logo.title}}">
-      <img src="{{root}}assets/img/logo.svg" alt="{{language.logo.title}}"
+      <img src="assets/img/logo.svg" alt="{{language.logo.title}}"
         class="logo-image" />
     </a>
   </div>
@@ -19,7 +19,7 @@
         {{/each}}
         <li class="nav-item lang">
           <a {{#if
-            lang_de}}href="/en/{{#if screenshotsarchive}}screenshots-archive/{{/if}}{{#ifblogdetail}}blog/{{/ifblogdetail}}{{#ifsciencedetail}}science/{{/ifsciencedetail}}{{#if
+            lang_de}}href="en/{{#if screenshotsarchive}}screenshots-archive/{{/if}}{{#ifblogdetail}}blog/{{/ifblogdetail}}{{#ifsciencedetail}}science/{{/ifsciencedetail}}{{#if
             @root.page-name_en}}{{@root.page-name_en}}{{else}}{{#if
             @root.page-name}}{{@root.page-name}}{{/if}}{{/if}}" {{/if}}
             class="nav-link{{#unless lang_de}} active{{/unless}}"
@@ -27,7 +27,7 @@
           <span class="nav-link-delimiter">|</span>
           <a class="nav-link{{#if lang_de}}
             active{{/if}}" {{#unless
-            lang_de}}href="/de/{{#if screenshotsarchive}}screenshots-archive/{{/if}}{{#ifblogdetail}}blog/{{/ifblogdetail}}{{#ifsciencedetail}}science/{{/ifsciencedetail}}{{#if
+            lang_de}}href="de/{{#if screenshotsarchive}}screenshots-archive/{{/if}}{{#ifblogdetail}}blog/{{/ifblogdetail}}{{#ifsciencedetail}}science/{{/ifsciencedetail}}{{#if
             @root.page-name_de}}{{@root.page-name_de}}{{else}}{{#if
             @root.page-name}}{{@root.page-name}}{{/if}}{{/if}}" {{/unless}}
             title="{{language.lang.de.long}}">{{language.lang.de.short}}</a>

@@ -2,6 +2,7 @@
 <html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if
   lang_de}}de{{/if}}">
   <head>
+    <base href="{{env.basepath}}">
     <meta charset="utf-8" />
     <meta name="description" content="{{#if
       page-description}}{{page-description}}{{/if}}" />
@@ -15,7 +16,7 @@
     <meta property="og:title" content="{{page-title}}" />
     <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
-    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
   <body class="blog-detail {{#unless @root.page-name}}{{#ifpage
@@ -58,7 +59,7 @@
     {{> footer language=global.lang.de}}
     {{/if}}
     
-    <script src="{{root}}assets/js/app.js"></script>
-    <script src="{{root}}assets/js/science.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/science.js"></script>
   </body>
 </html>

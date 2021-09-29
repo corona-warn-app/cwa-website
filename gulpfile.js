@@ -17,7 +17,9 @@ const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 const { processBlogFiles } = require('./src/services/blog-processor');
 const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
-var rename = require("gulp-rename");
+const rename = require("gulp-rename");
+const analyseConfig = require("./src/data/analyse.json");
+const fetch = require('node-fetch');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -40,6 +42,8 @@ function isCI() {
   return !!process.env.CI;
 }
 
+
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
@@ -48,10 +52,14 @@ gulp.task(
     clean,
     cleanBlogs,
     cleanScienceBlogs,
+    addEnvData,
     buildBlogFiles,
     buildScienceBlogFiles,
+    analyseData,
+    cwaaJs,
+    javascript,
     gulp.parallel(
-      pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects
     ),
     images_webp,
     sass,
@@ -66,6 +74,33 @@ gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
+
+
+
+function analyseData(){
+  async function fallbackdataFn() {
+    const response  = await fetch(analyseConfig.fetchUrl, {method: 'GET'})
+    const data = await response.json();
+    return JSON.stringify(data); 
+  }
+
+  return fallbackdataFn().then(e => {
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
+  });
+}
+
+
+
+function addEnvData(cb){
+  const env = {
+    "basepath": (yargs.argv.basepath)? yargs.argv.basepath + "/public/": "/"
+  }
+  
+  fs.writeFile('./src/data/env.json', JSON.stringify(env), cb);
+}
+
+
+
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -174,6 +209,48 @@ function sass() {
     .pipe(browser.reload({ stream: true }));
 }
 
+
+
+
+let cwaaWebpackConfig = {
+  mode: PRODUCTION ? 'production' : 'development',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            compact: false
+          }
+        }
+      }
+    ]
+  },
+  performance: {
+    hints: false
+  },
+  devtool: !PRODUCTION && 'source-map'
+};
+
+
+
+
+function cwaaJs() {
+  return gulp
+    .src(PATHS.cwaa)
+    .pipe(named())
+    .pipe($.sourcemaps.init())
+    .pipe(webpackStream(cwaaWebpackConfig, webpack2))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
+
+
+
+
+
 let webpackConfig = {
   mode: PRODUCTION ? 'production' : 'development',
   module: {
@@ -190,8 +267,12 @@ let webpackConfig = {
       }
     ]
   },
+  performance: {
+    hints: false
+  },
   devtool: !PRODUCTION && 'source-map'
 };
+
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -311,8 +392,11 @@ function watch(done) {
     .on('all', gulp.series(resetPages, pages, reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp
-    .watch('src/assets/js/**/*.js')
+    .watch(['src/assets/js/**/*.js', '!src/assets/js/analyse/**/*'])
     .on('all', gulp.series(javascript, reload));
+  gulp
+    .watch('src/assets/js/analyse/**/*.js')
+    .on('all', gulp.series(cwaaJs, reload));
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
@@ -361,3 +445,5 @@ function replaceVersionNumbers() {
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
+
+

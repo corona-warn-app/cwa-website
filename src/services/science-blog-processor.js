@@ -36,11 +36,11 @@ const getAuthors = (authors) => {
     return authors;
   }
 }
-
+ 
 const generateBlogEntry = (blog, content, lang, showButton = false) => {
   let button = '', headline = '';
   if (showButton) {
-    button = `<p><a href="${blog.slug}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].readMore}</a></p>`;
+    button = `<p><a href="${lang}/science/${blog.slug}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].readMore}</a></p>`;
     headline = `<h2 class="headline">${blog.title}</h2>`;
   } else {
     headline = `<h1 class="headline headline-heavy">${blog.title}</h1>`;
@@ -58,7 +58,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 }
 
 const replaceImagePaths = (content, folderName) => {
-  return content.replace(new RegExp(/src=".\//, 'g'), `src="/assets/img/science/${folderName}/`);
+  return content.replace(new RegExp(/src=".\//, 'g'), `src="assets/img/science/${folderName}/`);
 }
 
 const replaceVideo = (content, folderName) => {

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
   <head>
+    <base href="{{env.basepath}}">
     <meta charset="utf-8" />
     <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:;connect-src 'self' https://obs.eu-de.otc.t-systems.com/">
     <meta name="referrer" content="no-referrer" />
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
@@ -13,7 +14,7 @@
     <meta property="og:title" content="{{page-title}}" />
     <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
-    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
   <body class="{{#unless @root.page-name}}{{#ifpage 'index'}}page-home{{/ifpage}}{{/unless}}{{#if @root.page-name}}page-{{@root.page-name}}{{/if}}">
@@ -21,7 +22,6 @@
     flattened page is created. --}} 
     
     {{> header}} 
-
     <div class="main-content">
       {{> body}}
     </div>
@@ -31,21 +31,24 @@
     {{#if lang_de}}
     {{> footer language=global.lang.de}}
     {{/if}}
-    <script src="{{root}}assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     {{#if lightbox}}
-    <script src="{{root}}assets/js/lightbox.min.js"></script>
+    <script src="assets/js/static/lightbox.min.js"></script>
     {{/if}}
     {{#if store-redirect}}
-    <script src="{{root}}assets/js/static/store-redirect.js"></script>
+    <script src="assets/js/static/store-redirect.js"></script>
     {{/if}}
     {{#if eventregistration_js}}
-    <script src="{{root}}assets/js/eventregistration.js"></script>
+    <script src="assets/js/eventregistration.js"></script>
     {{/if}}
     {{#if is_screenshots}}
-    <script src="{{root}}assets/js/screenshots.js"></script>
+    <script src="assets/js/screenshots.js"></script>
     {{/if}}
     {{#if screenshotsarchive}}
-    <script src="{{root}}assets/js/screenshots.js"></script>
+    <script src="assets/js/screenshots.js"></script>
     {{/if}}
+	{{#ifequal page-name 'analyse'}}
+    <script src="assets/js/cwaa.js"></script>
+    {{/ifequal}}
   </body>
 </html>
