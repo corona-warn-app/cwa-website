@@ -91,13 +91,15 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
       if (json[json.length] === []) json.pop();
       if (checkCSVHeaders(json)) {
         if (json.length > 1) {
-          GenerateMultiQRCode(json).then(function (qrList) {
-            if (qrList.length > 0) {
-              printQRsOnPage(qrList).then(function (pages) {
-                printPages(pages)
-              });
-            }
-          });
+          if (json.length < 101) {
+            GenerateMultiQRCode(json).then(function (qrList) {
+              if (qrList.length > 0) {
+                printQRsOnPage(qrList).then(function (pages) {
+                  printPages(pages)
+                });
+              }
+            });
+          } else document.getElementById('qr-error-fileoverloaded').style.display = 'block';
         } else document.getElementById('qr-error-filewithnodata').style.display = 'block';
       } else document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
     });
@@ -128,7 +130,7 @@ document.getElementById('printCode').addEventListener('click', function (e) {
   const doc = new jsPDF({
     orientation: portrait ? "portrait" : "landscape",
   });
-  doc.addImage(document.getElementById('eventqrcode').toDataURL("image/png"), 'PNG', 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight());
+  doc.addImage(document.getElementById('eventqrcode').toDataURL("image/png"), 'PNG', 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight(), "", 'FAST');
   doc.autoPrint();
   let blob = doc.output("blob");
   window.open(URL.createObjectURL(blob), '_blank');
@@ -380,7 +382,7 @@ function GenerateQRCode() {
       }
       qrImg.src = qrUrl;
     }
-    img.src = '/assets/img/pt-poster-1.0.0.svg';
+    img.src = '/assets/img/pt-poster-1.0.0.png';
   });
 }
 
@@ -490,12 +492,10 @@ async function GenerateMultiQRCode(data) {
             payload.setVersion(1);
 
             let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-            let col = document.getElementById("pageTemplate").value.split('x')[0];
-            let res2 = 1//Math.ceil(col / 2);
             let canvas = document.createElement("canvas");
             QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, {
               margin: 0,
-              width: 1100 / res2
+              width: 1100
             }, function (err) {
               if (err) {
                 console.error(err);
@@ -503,21 +503,21 @@ async function GenerateMultiQRCode(data) {
               }
               let canvasm = document.createElement("canvas");
               let ctxm = canvasm.getContext('2d');
-              ctxm.width = 1654 / res2;
-              ctxm.height = 2339 / res2;
-              canvasm.width = 1654 / res2;
-              canvasm.height = 2339 / res2;
+              ctxm.width = 1654;
+              ctxm.height = 2339;
+              canvasm.width = 1654;
+              canvasm.height = 2339;
               canvasm.style.maxWidth = "100%";
 
-              ctxm.drawImage(imgtemplate, 0, 0, imgtemplate.width / res2, imgtemplate.height / res2);
+              ctxm.drawImage(imgtemplate, 0, 0, imgtemplate.width, imgtemplate.height);
 
-              ctxm.drawImage(canvas, 275 / res2, 230 / res2);
+              ctxm.drawImage(canvas, 275, 230);
 
               ctxm.font = /*(32 - 2 * col)*/30 + "px sans-serif";
               ctxm.fillStyle = "black";
 
-              ctxm.fillText(description, 225 / res2, 1460 / res2);
-              ctxm.fillText(address, 225 / res2, 1460 / res2 + 50 - (res2 - 1) * 12); //1510 / res2 + 25 * (res2 - 1)
+              ctxm.fillText(description, 225, 1460);
+              ctxm.fillText(address, 225, 1460 + 50); //1510 + 25 * (res2 - 1)
               qrList.push(canvasm)
             });
           } else {
@@ -576,18 +576,20 @@ async function printQRsOnPage(qrList) {
           let canvas = document.createElement("canvas");
           canvas.className = "eventqr-preview";
           let ctx = canvas.getContext('2d');
-          let resolution = 1//Math.ceil(col / 2);
+          let resolution = Math.sqrt(col * row) / 2;
+          let width = 1654 * resolution;
+          let height = 2339 * resolution;
           if (col == row) {
-            ctx.width = 1654 * resolution;
-            ctx.height = 2339 * resolution;
-            canvas.width = 1654 * resolution;
-            canvas.height = 2339 * resolution;
+            ctx.width = width;
+            ctx.height = height;
+            canvas.width = width;
+            canvas.height = height;
             canvas.style.maxWidth = "100%";
           } else {
-            ctx.width = 2339 * resolution;
-            ctx.height = 1654 * resolution;
-            canvas.width = 2339 * resolution;
-            canvas.height = 1654 * resolution;
+            ctx.width = height;
+            ctx.height = width;
+            canvas.width = height;
+            canvas.height = width;
             canvas.style.maxWidth = "100%";
           }
 
