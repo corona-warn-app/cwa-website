@@ -8,73 +8,73 @@
             "title": "<b>Step 1: Installing node.js on your Windows PC</b>",
             "text": "Open the website <a href='https://nodejs.org/en/'>https://nodejs.org/en/</a>, download the 'LTS version', and install it after successful download.",
             "image": {
-                "url": "assets/img/event-qr-code-guide/nodejs-website.png",
+                "url": "/assets/img/event-qr-code-guide/nodejs-website.png",
                 "alt": "node.js installation"
             },
             "text2": "We explicitly point out that you should <b>not</b> set the checkmark at the following pop-up window. The installation can also be done without this additional option.",
             "image2": {
-                "url": "assets/img/event-qr-code-guide/nodejs-setup.png",
+                "url": "/assets/img/event-qr-code-guide/nodejs-setup.png",
                 "alt": "node.js check"
             },
             "text3": "When the installation is completed successfully, you will see the following confirmation:",
             "image3": {
-                "url": "assets/img/event-qr-code-guide/nodejs-setup2.png",
+                "url": "/assets/img/event-qr-code-guide/nodejs-setup2.png",
                 "alt": "node.js confirmation of installation"
             }
         },
         "step2": {
             "title": "<b>Step 2: Opening and using the command prompt</b>",
-            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
+            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=/assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
             "image": {
-                "url": "assets/img/event-qr-code-guide/taskbar.png",
+                "url": "/assets/img/event-qr-code-guide/taskbar.png",
                 "alt": "Taskbar"
             },
             "text2": "Open the suggested 'Command Prompt' application by clicking on it.",
             "image2": {
-                "url": "assets/img/event-qr-code-guide/taskbar-search.png",
+                "url": "/assets/img/event-qr-code-guide/taskbar-search.png",
                 "alt": "Taskbar: searching for command prompt"
             },
             "text3": "The following window will open:",
             "image3": {
-                "url": "assets/img/event-qr-code-guide/cmd-first-start.png",
+                "url": "/assets/img/event-qr-code-guide/cmd-first-start.png",
                 "alt": "Command prompt"
             },
             "text4": "Copy the bracketed text (<b>npm install cwa-event-qr-code --global</b>), paste it into the command prompt window using the key combination Ctrl + V, and confirm your input afterwards with the 'Enter' key.",
             "image4": {
-                "url": "assets/img/event-qr-code-guide/cmd-install-cwa-tool.png",
+                "url": "/assets/img/event-qr-code-guide/cmd-install-cwa-tool.png",
                 "alt": "Corona-Warn-App QR code creation tool installation"
             },
             "text5": "After successful execution, a confirmation is displayed:",
             "image5": {
-                "url": "assets/img/event-qr-code-guide/cmd-cwa-tool-confirmation.png",
+                "url": "/assets/img/event-qr-code-guide/cmd-cwa-tool-confirmation.png",
                 "alt": "Corona-Warn-App QR code creation tool successfull installation"
             },
             "text6": "Then copy the following 4 comma-separated input commands, paste them one by one and confirm them in the same order: <b>cd /d %USERPROFILE%/Downloads, mkdir event-qr-codes, cd event-qr-codes, mkdir qr-codes-results</b>. This will result in a new folder called 'event-qr-codes' being created in your downloads folder, where the fourth input command will create another folder called 'qr-codes-results'. Make sure to keep the command prompt opened."
         },
         "step3": {
             "title": "<b>Step 3: Use of the example file</b>",
-            "text": "<a href='assets/documents/tables.csv'>Click here</a> to download the sample file that's now required. The sample file 'tables.csv' must be moved to the newly created folder 'event-qr-codes'. (if you used the batch file before, it was created automatically)",
+            "text": "<a href='/assets/documents/tables.csv'>Click here</a> to download the sample file that's now required. The sample file 'tables.csv' must be moved to the newly created folder 'event-qr-codes'. (if you used the batch file before, it was created automatically)",
             "image": {
-                "url": "assets/img/event-qr-code-guide/folder-event-qr-codes.png",
+                "url": "/assets/img/event-qr-code-guide/folder-event-qr-codes.png",
                 "alt": "Sample file in correct folder"
             },
             "text2": "Later you can completely adjust this sample file to your individual use."
         },
         "step4": {
             "title": "<b>Step 4: Converting the .csv file to QR-codes</b>",
-            "text": "If you want to do this step faster, you can download another batch file <a href='assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code-file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key.",
+            "text": "If you want to do this step faster, you can download another batch file <a href='/assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code-file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key.",
             "image": {
-                "url": "assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
+                "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
                 "alt": "Converting .csv file to QR codes"
             },
             "text2": "After successful input, the command prompt will confirm the creation of the desired QR codes.",
             "image2": {
-                "url": "assets/img/event-qr-code-guide/cmd-cwa-convert-confirmation.png",
+                "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-confirmation.png",
                 "alt": "Confirmation of successfull convertion"
             },
             "text3": "You can now access the created QR codes as follows: Open your Downloads folder, open the 'event-qr-codes' folder inside it, and then open the 'qr-codes-results' folder inside it. All the QR codes you have created will be there.",
             "image3": {
-                "url": "assets/img/event-qr-code-guide/folder-results.png",
+                "url": "/assets/img/event-qr-code-guide/folder-results.png",
                 "alt": "Created QR codes in destination folder"
             }
         },
@@ -82,7 +82,7 @@
             "title": "<b>Step 5: Continous use with your own data</b>",
             "text": "Now that you have successfully created the sample QR codes, with the help of the following information, you should be able to customize the required .csv file entirely to your own functional area. Open the sample file in Excel.",
             "image": {
-                "url": "assets/img/event-qr-code-guide/excel.png",
+                "url": "/assets/img/event-qr-code-guide/excel.png",
                 "alt": "Sample file in excel"
             },
             "text2": "Adjust the data below the first line according to your needs. Ideally, do not change anything in the first line, as its entire content must remain present, but the order does not matter. Further information on the individual columns and their meaning can be found in the two following tables. To perform the creation process from now on it is best to start at step 4 again, but to save yourself some time you can also use the batch file we provide, at the beginning of step 4. If you plan to rename the sample file based on your intended use, keep in mind that you will then need to use your own file name instead of 'tables.csv'. If you have already used the batch file, have adjusted your data and want to create new QR Codes, but have <b>not</b> changed the name of the .csv file, run the batch file again with a double click. If you have changed the name of the .csv file, there are the following ways to adjust the batch file to it. Either open the command prompt (see step 2) and enter these two comma-separated lines one by one: '<b>cd /d %USERPROFILE%/Downloads/event-qr-codes, generateEventQRCodes.bat FILENAME.csv</b>', or edit the batch file and replace the name where 'tables.csv' is with your file name."

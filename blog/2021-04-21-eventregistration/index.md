@@ -42,7 +42,7 @@ This takes them to their check-ins, where they can find an overview of existing 
 
 Alternatively, event organizers and operators can also set an automatic check-out after a predefined time. The app notifies users that they’ve been checked out. Users can manually adjust the time afterwards in their Check In area.
 
-Have a look at the **video walkthrough** to see how to check in or out (iOS example): {{assets/video/check-in-en}}
+Have a look at the **video walkthrough** to see how to check in or out (iOS example): {{/assets/video/check-in-en}}
 
 ### How to create a QR code
 
@@ -50,7 +50,7 @@ Event organizers and retailers can use the new section on the Corona-Warn-App’
 
 To do this, they simply choose Create QR Code. Then, they can enter information about the event: After selecting the category (e.g., retail or private party), they can specify an event description, the location, and start and end dates. The Corona-Warn-App uses this information to create a QR code that can be displayed on a smartphone or printed out and posted on site. 
 
-Have a look at the **video walkthrough** to see how to create a QR Code (iOS example): {{assets/video/create-qr-code-en}}
+Have a look at the **video walkthrough** to see how to create a QR Code (iOS example): {{/assets/video/create-qr-code-en}}
 
 ### Two different event types
 
