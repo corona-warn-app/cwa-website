@@ -23,6 +23,8 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
+    - "!src/assets/js/analyse/**/*"
+    - "!src/assets/js/cwaa.js"
     - "!src/assets/js/app.js"
     - "!src/assets/js/eventregistration.js"
     - "!src/assets/js/screenshots.js"
@@ -33,6 +35,8 @@ PATHS:
   #  - "node_modules/foundation-sites/scss"
   #  - "node_modules/motion-ui/src"
   # Paths to JavaScript entry points for webpack to bundle modules
+  cwaa:
+    - "src/assets/js/cwaa.js"
   entries:
     - "src/assets/js/app.js"
     - "src/assets/js/eventregistration.js"
