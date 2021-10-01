@@ -513,11 +513,11 @@ async function GenerateMultiQRCode(data) {
 
               ctxm.drawImage(canvas, 275, 230);
 
-              ctxm.font = /*(32 - 2 * col)*/30 + "px sans-serif";
+              ctxm.font = "30px sans-serif";
               ctxm.fillStyle = "black";
 
               ctxm.fillText(description, 225, 1460);
-              ctxm.fillText(address, 225, 1460 + 50); //1510 + 25 * (res2 - 1)
+              ctxm.fillText(address, 225, 1460 + 50);
               qrList.push(canvasm)
             });
           } else {
