@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if lang_de}}de{{/if}}">
   <head>
-    <base href="{{env.basepath}}">
     <meta charset="utf-8" />
     <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -12,14 +11,14 @@
       rel="icon"
       type="image/{{#if global.favicon.type}}{{global.favicon.type}}{{/if}}{{#unless global.favicon.type}}png{{/unless}}"
       sizes="32x32"
-      href="{{global.favicon.url}}"
+      href="{{root}}{{global.favicon.url}}"
     />
     {{/if}}
     <meta property="og:title" content="{{page-title}}" />
     <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <title>{{page-title}}</title>
-    <script src="assets/js/static/redirect.js"></script>
+    <script src="{{root}}assets/js/static/redirect.js"></script>
   </head>
   <body>
   </body>

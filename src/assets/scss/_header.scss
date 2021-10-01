@@ -212,10 +212,6 @@
                 text-transform: uppercase;
 
                 .nav-link {
-                    &:after{
-                        display: none; 
-                    }
-
                     &,
                     &:hover {
                         padding-left: 0.3rem;
@@ -276,8 +272,8 @@
                         position: absolute;
                         bottom: $spacer * 0.6;
                         border-top: 2px solid $white;
-                        left: $spacer * 0.8;
-                        right: $spacer * 0.8;
+                        left: $spacer;
+                        right: $spacer;
                     }
                 }
             }
