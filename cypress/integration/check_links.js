@@ -13,6 +13,8 @@ context("Check for broken links", () => {
                   '/en/analysis/',
                   '/de/blog/',
                   '/en/blog/',
+                  '/de/blog/archive/',
+                  '/en/blog/archive/',
                   '/de/screenshots/',
                   '/en/screenshots/',
                   '/de/faq/',
