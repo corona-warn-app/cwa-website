@@ -18,6 +18,8 @@ const jsonTransform = require('gulp-json-transform');
 const { processBlogFiles } = require('./src/services/blog-processor');
 const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
 var rename = require("gulp-rename");
+const analyseConfig = require("./src/data/analyse.json");
+const fetch = require('node-fetch');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -50,8 +52,11 @@ gulp.task(
     cleanScienceBlogs,
     buildBlogFiles,
     buildScienceBlogFiles,
+    analyseData,
+    cwaaJs,
+    javascript,
     gulp.parallel(
-      pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects
     ),
     images_webp,
     sass,
@@ -126,6 +131,19 @@ function buildScienceBlogFiles(done) {
   processScienceBlogFiles();
   done();
 }
+
+function analyseData(){
+  async function fallbackdataFn() {
+    const response  = await fetch(analyseConfig.fetchUrl, {method: 'GET'})
+    const data = await response.json();
+    return JSON.stringify(data); 
+  }
+
+  return fallbackdataFn().then(e => {
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
+  });
+}
+
 // Copy page templates into finished HTML files
 function pages() {
   return gulp
@@ -172,6 +190,33 @@ function sass() {
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
+}
+
+function cwaaJs() {
+  return gulp
+    .src(PATHS.cwaa)
+    .pipe(named())
+    .pipe($.sourcemaps.init())
+    .pipe(webpackStream({
+      mode: PRODUCTION ? 'production' : 'development',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+                compact: false
+              }
+            }
+          }
+        ]
+      },
+      devtool: !PRODUCTION && 'source-map'
+    }, webpack2))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
 let webpackConfig = {
@@ -263,7 +308,26 @@ function copyFAQRedirects() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init(
-    {
+    { // mirror server headers to dev env
+      middleware: function (req, res, next) {
+
+        let CSP = "default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        if(req.url.indexOf("/science") != -1){
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        }else if(req.url.indexOf("/analysis") != -1){
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:; connect-src 'self' https://obs.eu-de.otc.t-systems.com/";
+        }
+
+        res.setHeader("Content-Security-Policy", CSP);
+
+        res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("X-Frame-Options", "DENY");
+        res.setHeader("X-XSS-Protection", "1");
+        
+
+        next();
+      },
       server: {
         baseDir: PATHS.dist,
         serveStaticOptions: {
@@ -311,8 +375,11 @@ function watch(done) {
     .on('all', gulp.series(resetPages, pages, reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp
-    .watch('src/assets/js/**/*.js')
+    .watch(['src/assets/js/**/*.js', '!src/assets/js/analyse/**/*'])
     .on('all', gulp.series(javascript, reload));
+  gulp
+    .watch('src/assets/js/analyse/**/*.js')
+    .on('all', gulp.series(cwaaJs, reload));
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
