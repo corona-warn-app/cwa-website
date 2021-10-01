@@ -30,9 +30,7 @@ context("Check for broken links", () => {
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
-      // filter / reg-ex mailto, tel does not work
-      cy.get("a:not([href*='mailto:'],[href*='tel:'])").each(url => {
-      // ToDo: remove duplicates e.g. #top
+      cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(url => {
         if (url.prop('href') ) { 
           cy.request({
             failOnStatusCode: false, 
