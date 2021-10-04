@@ -29,11 +29,27 @@ context("Check for broken links", () => {
                   '/en/event-qr-code-guide/'
                 ]
 
+  const subpages = ['/de/blog/', '/en/blog/','/de/science/', '/en/science/']
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
       cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(url => {
         if (url.prop('href') ) { 
+          subpages.forEach(sub => {
+            if(url.prop('href').includes(sub) && url.prop('href') !== sub) {
+              cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(entry => {
+                if (entry.prop('href') ) {
+                  cy.request({
+                    failOnStatusCode: false, 
+                    log: false,
+                    url: entry.prop('href')
+                  }).then((response) => {
+                    softExpect(response.status, "Link: " + entry.prop('href')).to.eq(200)
+                  })
+                }
+              })
+            }
+          })
           cy.request({
             failOnStatusCode: false, 
             log: false,
