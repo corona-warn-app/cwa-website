@@ -18,7 +18,7 @@ Ab sofort ist eine Übersicht zu wichtigen Kennzahlen der Corona-Warn-App in For
 
 <!-- overview -->
 
-Die Kennzahlen im Dashboard werden täglich aktualisiert. Sie können unter dem Tab "Analysis" abgerufen und als csv-Datei heruntergeladen werden. In diesem Dokument befinden sich ebenfalls Zahlen zum Infektionsgeschehen.  
+Die Kennzahlen im Dashboard werden täglich aktualisiert. Sie können unter dem Tab ["Analysis"](https://www.coronawarn.app/de/analysis/) abgerufen und als csv-Datei heruntergeladen werden. In diesem Dokument befinden sich ebenfalls Zahlen zum Infektionsgeschehen.  
 
 ### Analysedaten der Corona-Warn-App 
 

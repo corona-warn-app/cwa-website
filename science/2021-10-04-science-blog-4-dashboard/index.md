@@ -7,7 +7,7 @@ author: Robin Houben
 layout: blog
 ---
 
-An overview of important key figures for the Corona-Warn-App is now available in the form of a digital dashboard. The key figures in the dashboard are updated daily. In the launch version, the following key figures are available:  Downloads, test registration, test results, sharing behavior, and low-risk and high-risk alerts. The metrics in the dashboard are updated daily. They can be accessed under the "Analysis" tab and downloaded as a csv file. 
+An overview of important key figures for the Corona-Warn-App is now available in the form of a digital dashboard. The key figures in the dashboard are updated daily. In the launch version, the following key figures are available:  Downloads, test registration, test results, sharing behavior, and low-risk and high-risk alerts. The metrics in the dashboard are updated daily. They can be accessed under the ["Analysis"](https://www.coronawarn.app/en/analysis/) tab and downloaded as a csv file. 
 
 <!-- overview -->
 
