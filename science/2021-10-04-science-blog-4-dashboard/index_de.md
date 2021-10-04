@@ -43,4 +43,4 @@ Zusätzlich können sie  auswählen, ob die Kennzahlen tageweise, auf Wochenbasi
 
 Das Dashboard soll in den nächsten Monaten um weitere Kennzahlen zur Corona-Warn-App sukzessive ergänzt werden. 
 
-Weitere Auswertungen zur Corona-Warn-App sind im Bereich Science auf der Webseite abrufbar: [https://www.coronawarn.app/de/science/](https://www.coronawarn.app/de/science/).
+Weitere Auswertungen zur Corona-Warn-App sind im Bereich Science auf der Webseite abrufbar: [https://www.coronawarn.app/de/analysis/](https://www.coronawarn.app/de/analysis/).
