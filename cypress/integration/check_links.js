@@ -31,7 +31,7 @@ context("Check for broken links", () => {
 
   const subpages = ['/de/blog/', '/en/blog/','/de/science/', '/en/science/']
   pages.forEach(page => {
-    it(`"${page}" - Check for broken links`, () => {
+    it(`"${subpages.includes(page) ? page+" and entries": page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
       cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(url => {
         if (url.prop('href') ) { 
