@@ -30,4 +30,4 @@ Using the "Export all data" function, the key figures can be downloaded as a zip
  
 The dashboard is to be consecutively expanded over the next months to include further key figures for the Corona-Warn-App. 
 
-Further analyses of the Corona-Warn-App are available in the Science section of the website: [https://www.coronawarn.app/en/science/](https://www.coronawarn.app/en/science/).
+Further analyses of the Corona-Warn-App are available in the Science section of the website: [https://www.coronawarn.app/en/analysis/](https://www.coronawarn.app/en/analysis/).
