@@ -22,10 +22,14 @@ context("Check for broken links", () => {
                   '/de/terms-of-use/',
                   '/en/terms-of-use/',
                   '/de/event-qr-code-guide/',
-                  '/en/event-qr-code-guide/'
+                  '/en/event-qr-code-guide/',
+                  '/de/blog/','/en/blog/',
+                  '/de/science/',
+                  '/en/science/'
                 ]
 
-  const subpages = ['/de/blog/', '/en/blog/','/de/science/', '/en/science/']
+  const subpages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
+  const pagesToAvoid = ['/de/blog/', '/en/blog/', '/de/science/', '/en/science/', '/de/blog/archiv', '/en/blog/archive']
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
@@ -44,10 +48,10 @@ context("Check for broken links", () => {
   })
 
   subpages.forEach(sub => {
-    it(`"${sub}" - Check for broken links`, () => {
+    it(`"${sub}" entries - Check for broken links`, () => {
       cy.visit({log: false, url: sub} )
       cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(url => {
-        if(url.prop('href').includes(sub) && url.prop('href') !== sub) {
+        if(url.prop('href').includes('localhost') && url.prop('href').includes(sub) && !pagesToAvoid.includes(url.prop('href').replace('http://localhost:8000', ''))) {
           cy.visit({log: false, url: url.prop('href')} )
           cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(entry => {
             if (entry.prop('href') ) {
