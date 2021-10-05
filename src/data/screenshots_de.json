@@ -10,8 +10,8 @@
         "content": {
             "textblock": [
                 "Verschaffen Sie sich mithilfe von Screenshots einen Überblick über die Funktionen, die die Corona-Warn-App mit Version 2.11 (verfügbar seit 06.10.2021) bietet. Bitte beachten Sie, dass die Screenshots für Android und iOS designbedingt leicht voneinander abweichen können.",
-                "Neue Funktionen in Version 2.11 sind ein universeller QR-Code-Scanner, die Möglichkeit, QR-Codes zu importieren und Anpassungen der Kontaktdauer.",
-                "Universeller QR-Code Scanner: Sie können nun unabhängig davon, von wo ein QR-Code-Scanner in der Corona-Warn-App geöffnet wird, alle von der App unterstützen Dokumente scannen: PCR-Tests, Schnelltests, Event Check-ins und Zertifikate",
+                "Neue Funktionen in Version 2.11 sind ein universeller QR-Code-Scanner, die Möglichkeit, QR-Codes zu importieren (vorerst nur unter Android möglich) und die Anpassung der Kontaktdauer im Kontakt-Tagebuch.",
+                "Universeller QR-Code Scanner: Sie können nun unabhängig davon, von wo ein QR-Code-Scanner in der Corona-Warn-App geöffnet wird, alle von der App unterstützen Dokumente scannen: PCR-Tests, Schnelltests, Event Check-ins und Zertifikate.",
                 "QR-Code importieren: Auf Android-Geräten können Sie nun auch QR-Codes von Fotos oder PDF-Dateien über den QR-Code Scanner importieren.",
                 "Anpassung Kontaktdauer: Die minimale Kontaktdauer im Kontakttagebuch wurde von 15 auf 10 Minuten reduziert. Existierende Einträge zu Kontakten mit Personen wurden automatisch angepasst. Überprüfen und passen Sie die Einträge gegebenenfalls noch einmal an.",
                 "Die auf dieser Seite zur Verfügung gestellten Bilder stehen zur freien Nutzung bereit."
@@ -107,12 +107,11 @@
                 "title": "In Vertretung warnen",
                 "anchor": "android_warn_for_others",
                 "images": [
-                    { "filename": "/assets/screenshots/2-11/de/android/TestCertificateDetailsFragment", "alt": "In Vertretung warnen Bild 1 von 6" },
-                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationWarnInfoFragment", "alt": "In Vertretung warnen Bild 2 von 6" },
-                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationSelectionFragment", "alt": "In Vertretung warnen Bild 3 von 6" },
-                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationWarnDurationFragment", "alt": "In Vertretung warnen Bild 4 von 6" },
-                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationWarnTanFragment", "alt": "In Vertretung warnen Bild 5 von 6" },
-                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationOrganizerThanksFragment", "alt": "In Vertretung warnen Bild 6 von 6" }
+                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationWarnInfoFragment", "alt": "In Vertretung warnen Bild 1 von 5" },
+                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationSelectionFragment", "alt": "In Vertretung warnen Bild 2 von 5" },
+                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationWarnDurationFragment", "alt": "In Vertretung warnen Bild 3 von 5" },
+                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationWarnTanFragment", "alt": "In Vertretung warnen Bild 4 von 5" },
+                    { "filename": "/assets/screenshots/2-11/de/android/TraceLocationOrganizerThanksFragment", "alt": "In Vertretung warnen Bild 5 von 5" }
                 ]
             },
             {
@@ -146,8 +145,8 @@
                 "title": "Zertifikate",
                 "anchor": "android_certificates",
                 "images": [
-                    { "filename": "/assets/screenshots/2-11/de/android/PersonOverviewFragment_empty", "alt": "Zertifikate Bild 1 von 6"},
-                    { "filename": "/assets/screenshots/2-11/de/android/CovidCertificateOnboardingFragment", "alt": "Zertifikate Bild 2 von 6"},
+                    { "filename": "/assets/screenshots/2-11/de/android/CovidCertificateOnboardingFragment", "alt": "Zertifikate Bild 1 von 6"},
+                    { "filename": "/assets/screenshots/2-11/de/android/PersonOverviewFragment_empty", "alt": "Zertifikate Bild 2 von 6"},
                     { "filename": "/assets/screenshots/2-11/de/android/PersonOverviewFragment_one_person", "alt": "Zertifikate Bild 3 von 6"},
                     { "filename": "/assets/screenshots/2-11/de/android/PersonOverviewFragment_many_persons", "alt": "Zertifikate Bild 4 von 6"},
                     { "filename": "/assets/screenshots/2-11/de/android/PersonDetailsFragment_cwa", "alt": "Zertifikate Bild 5 von 6"},
@@ -352,8 +351,8 @@
                 "title": "Zertifikate",
                 "anchor": "ios_certificates",
                 "images": [
-                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_health_certificate_empty_screen", "alt": "Zertifikate Bild 1 von 4" },
-                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_health_certificate_consent_screen", "alt": "Zertifikate Bild 2 von 4" },
+                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_health_certificate_consent_screen", "alt": "Zertifikate Bild 1 von 4" },
+                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_health_certificate_empty_screen", "alt": "Zertifikate Bild 2 von 4" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_certificate_family_certificate-cert-1", "alt": "Zertifikate Bild 3 von 4" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_certificate_family_certificate-cert-2", "alt": "Zertifikate Bild 4 von 4" }
                 ]
@@ -364,7 +363,7 @@
                 "images": [
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-homescreenrisk_level_low_installation_14days_0001", "alt": "Testzertifikat Bild 1 von 5" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-submissionflow_screenshot_test_certificate_entered_birthday-DE", "alt": "Testzertifikat Bild 2 von 5" },
-                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_test_certificate_overview_part1", "alt": "Testzertifikat Bild 3 von 5" },
+                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_test_certificate_valid_overview_part1", "alt": "Testzertifikat Bild 3 von 5" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_test_certificate_valid_details_part1", "alt": "Testzertifikat Bild 4 von 5" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_test_certificate_valid_details_part2", "alt": "Testzertifikat Bild 5 von 5" }
                 ]
@@ -373,7 +372,7 @@
                 "title": "Impfzertifikat",
                 "anchor": "ios_vaccination_certificate",
                 "images": [
-                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_vaccination_certificate_overview_part1", "alt": "Impfzertifikat Bild 1 von 3" },
+                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_vaccination_certificate_valid_details_part1", "alt": "Impfzertifikat Bild 1 von 3" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_second_vaccination_certificate_details_part1", "alt": "Impfzertifikat Bild 2 von 3" },
                     { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_second_vaccination_certificate_details_part2", "alt": "Impfzertifikat Bild 3 von 3" }
                 ]
@@ -393,9 +392,8 @@
                 "title": "Genesenenzertifikat",
                 "anchor": "ios_recovery_certificate",
                 "images": [
-                    { "filename": "/assets/screenshots/2-6/de/ios/iPhone 11 Pro-screenshot_recovery_certificate_overview_part1", "alt": "Genesenenzertifikat Bild 1 von 3" },
-                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_recovery_certificate_valid_details_part1", "alt": "Genesenenzertifikat Bild 2 von 3" },
-                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_recovery_certificate_valid_details_part2", "alt": "Genesenenzertifikat Bild 3 von 3" }
+                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_recovery_certificate_valid_details_part1", "alt": "Genesenenzertifikat Bild 1 von 2" },
+                    { "filename": "/assets/screenshots/2-11/de/ios/iPhone 11 Pro-screenshot_recovery_certificate_valid_details_part2", "alt": "Genesenenzertifikat Bild 2 von 2" }
                 ]
             },
             {
