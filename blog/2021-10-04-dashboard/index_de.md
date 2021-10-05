@@ -39,7 +39,7 @@ Die Darstellung der Kennzahlen können Nutzer\*innen im Dashboard unterschiedlic
 
 Zusätzlich können sie  auswählen, ob die Kennzahlen tageweise, auf Wochenbasis, im 7-Tage-Durchschnitt oder kumuliert angezeigt werden sollen. Dabei können sie auch einzelne Werte ein- bzw. ausblenden.  Dafür müssen sie lediglich den Namen der Variable in der Legende anklicken.
 
-Über die Funktion „Alle Daten exportieren“ können Nutzer\*innen die Kennzahlen als zip-Datei herunterladen. Sie können ebenfalls Daten zu spezifischen Abbildungen herunterladenn. In den jeweiligen Downloadpaketen ist ein sogenanntes Code-Book mit detaillierten Beschreibungen der Variablen enthalten, um die Interpretation der Daten zu erleichtern. 
+Über die Funktion „Alle Daten exportieren“ können Nutzer\*innen die Kennzahlen als zip-Datei herunterladen. Sie können ebenfalls Daten zu spezifischen Abbildungen herunterladen. In den jeweiligen Downloadpaketen ist ein sogenanntes Code-Book mit detaillierten Beschreibungen der Variablen enthalten, um die Interpretation der Daten zu erleichtern. 
 
 Das Dashboard soll in den nächsten Monaten um weitere Kennzahlen zur Corona-Warn-App sukzessive ergänzt werden. 
 
