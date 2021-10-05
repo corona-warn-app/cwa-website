@@ -28,8 +28,7 @@ context("Check for broken links", () => {
                   '/en/science/'
                 ]
 
-  const subpages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
-  const pagesToAvoid = ['/de/blog/', '/en/blog/', '/de/science/', '/en/science/', '/de/blog/archiv', '/en/blog/archive']
+
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
@@ -47,6 +46,12 @@ context("Check for broken links", () => {
     })
   })
 
+  
+})
+
+context("Check for broken links on entries", () => {
+  const subpages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
+  const pagesToAvoid = ['/de/blog/', '/en/blog/', '/de/science/', '/en/science/', '/de/blog/archiv', '/en/blog/archive']
   subpages.forEach(sub => {
     it(`"${sub}" entries - Check for broken links`, () => {
       cy.visit({log: false, url: sub} )
