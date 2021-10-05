@@ -466,8 +466,73 @@ Weiß nicht
 Auf Basis der Antworten lässt sich annehmen, dass die Corona-Warn-App dabei hilft, Risiken aufzudecken, die außerhalb des unmittelbaren sozialen Umfeldes aufgetreten sind. Teilnehmende, die von der roten Warnung überrascht wurden, hätten ohne die App möglicherweise keinen Hinweis auf ein erhöhtes Risiko erhalten. Je höher die Teilnehmenden ihr Risiko für eine Infektion vor der Warnmeldung einschätzten, desto geringer war der Anteil derjenigen, die von der Warnung überrascht waren.
 
 <p></p>
-<figure class="text-center">
-    <img src="./tab_05.png" class="figure-img img-fluid" alt="Tab. 5: EDUS - Zusammenhang zwischen Risiko und Überraschtheit."/>
+<figure>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="text-center"><strong>Überraschtheit</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+      <th class="text-center" rowspan="1" colspan="1">Weiß nicht</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Eingeschätztes Risiko</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Hoch</td>
+<td class="text-center">476 (1,9%)</td>
+<td class="text-center">817 (3,3%)</td>
+<td class="text-center">15 (&lt;0,1%)</td>
+<td class="text-center">1.308 (5,2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Eher hoch</td>
+<td class="text-center">788 (3,2%)</td>
+<td class="text-center">739 (3,0%)</td>
+<td class="text-center">34 (0,1%)</td>
+<td class="text-center">1.561 (6,3%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Teils-teils</td>
+<td class="text-center">2.616 (10%)</td>
+<td class="text-center">1.246 (5,0%)</td>
+<td class="text-center">89 (0,4%)</td>
+<td class="text-center">3.951 (16%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Eher gering</td>
+<td class="text-center">5.451 (22%)</td>
+<td class="text-center">1.642 (6,6%)</td>
+<td class="text-center">128 (0,5%)</td>
+<td class="text-center">7.221 (29%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Gering</td>
+<td class="text-center">8.441 (34%)</td>
+<td class="text-center">1.874 (7,5%)</td>
+<td class="text-center">144 (0,6%)</td>
+<td class="text-center">10.459 (42%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Weiß nicht</td>
+<td class="text-center">294 (1,2%)</td>
+<td class="text-center">106 (0,4%)</td>
+<td class="text-center">15 (&lt;0,1%)</td>
+<td class="text-center">415 (1,7%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">-keine Angabe-</td>
+<td class="text-center">3 (&lt;0,1%)</td>
+<td class="text-center">3 (&lt;0,1%)</td>
+<td class="text-center">0 (0%)</td>
+<td class="text-center">6 (&lt;0,1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">18.069 (73%)</td>
+<td class="text-center">6.427 (26%)</td>
+<td class="text-center">425 (1,7%)</td>
+<td class="text-center">24.921 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 5: EDUS - Zusammenhang zwischen Risiko und Überraschtheit.</figcaption>
 </figure>
 
@@ -611,7 +676,67 @@ Weiß nicht
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_07.png" class="figure-img img-fluid" alt="Tab. 7: EDUS - Zusammenhang zwischen Überraschtheit und Testung."/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="text-center"><strong>Überraschtheit</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+      <th class="text-center" rowspan="1" colspan="1">Weiß nicht</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Test</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test</td>
+<td class="text-center">2.660 (11%)</td>
+<td class="text-center">1.399 (5,6%)</td>
+<td class="text-center">55 (0,2%)</td>
+<td class="text-center">4.114 (17%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen Antigen-Schnelltest</td>
+<td class="text-center">5.537 (22%)</td>
+<td class="text-center">1.219 (4,9%)</td>
+<td class="text-center">108 (0,4%)</td>
+<td class="text-center">6.864 (28%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test und einen Antigen-Schnelltest</td>
+<td class="text-center">1.402 (5,6%)</td>
+<td class="text-center">828 (3,3%)</td>
+<td class="text-center">31 (0,1%)</td>
+<td class="text-center">2.261 (9,1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, aber ich weiß nicht, was für einen Test</td>
+<td class="text-center">225 (0,9%)</td>
+<td class="text-center">38 (0,2%)</td>
+<td class="text-center">3 (&lt;0,1%)</td>
+<td class="text-center">266 (1,1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+<td class="text-center">1.571 (6,3%)</td>
+<td class="text-center">426 (1,7%)</td>
+<td class="text-center">26 (0,1%)</td>
+<td class="text-center">2.023 (8,1%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">-keine Angabe-</td>
+<td class="text-center">6.674 (27%)</td>
+<td class="text-center">2.517 (10%)</td>
+<td class="text-center">202 (0,8%)</td>
+<td class="text-center">9.393 (38%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">18.069 (73%)</td>
+<td class="text-center">6.427 (26%)</td>
+<td class="text-center">425 (1,7%)</td>
+<td class="text-center">24.921 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 7: EDUS - Zusammenhang zwischen Überraschtheit und Testung.</figcaption>
 </figure>
 
@@ -628,7 +753,52 @@ Von denen, die Kontakt aufnehmen wollten, berichteten die meisten, dass sie sich
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_08.png" class="figure-img img-fluid" alt="Tab. 8: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen."/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="gt_column_spanner"><strong>Überraschtheit</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+      <th class="text-center" rowspan="1" colspan="1">Weiß nicht</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Kontaktaufnahme (Gesundheitswesen)</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja</td>
+<td class="text-center">6.127 (25%)</td>
+<td class="text-center">2.908 (12%)</td>
+<td class="text-center">132 (0,5%)</td>
+<td class="text-center">9.167 (37%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+<td class="text-center">9.432 (38%)</td>
+<td class="text-center">3.072 (12%)</td>
+<td class="text-center">202 (0,8%)</td>
+<td class="text-center">12.706 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Weiß nicht</td>
+<td class="text-center">2.510 (10%)</td>
+<td class="text-center">447 (1,8%)</td>
+<td class="text-center">91 (0,4%)</td>
+<td class="text-center">3.048 (12%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">18.069 (73%)</td>
+<td class="text-center">6.427 (26%)</td>
+<td class="text-center">425 (1,7%)</td>
+<td class="text-center">24.921 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 8: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen.</figcaption>
 </figure>
 
@@ -808,7 +978,57 @@ Im Familien-, Freundes- und Arbeitskreis ist es oftmals nicht möglich durchweg 
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_11.png" class="figure-img img-fluid" alt="Tab. 11: EDUS - Zusammenhang zwischen Überraschtheit und Infektion"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="gt_column_spanner"><strong>Überraschtheit</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+      <th class="text-center" rowspan="1" colspan="1">Weiß nicht</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Infektion</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Positiv auf SARS-CoV-2</td>
+<td class="text-center">191 (0,8%)</td>
+<td class="text-center">590 (2,4%)</td>
+<td class="text-center">10 (&lt;0,1%)</td>
+<td class="text-center">791 (3,2%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Negativ auf SARS-CoV-2</td>
+<td class="text-center">9.562 (38%)</td>
+<td class="text-center">2.853 (11%)</td>
+<td class="text-center">185 (0,7%)</td>
+<td class="text-center">12.600 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nicht eindeutig</td>
+<td class="text-center">54 (0,2%)</td>
+<td class="text-center">36 (0,1%)</td>
+<td class="text-center">2 (&lt;0,1%)</td>
+<td class="text-center">92 (0,4%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">-keine Angabe-</td>
+<td class="text-center">8.262 (33%)</td>
+<td class="text-center">2.948 (12%)</td>
+<td class="text-center">228 (0,9%)</td>
+<td class="text-center">11.438 (46%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">18.069 (73%)</td>
+<td class="text-center">6.427 (26%)</td>
+<td class="text-center">425 (1,7%)</td>
+<td class="text-center">24.921 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 11: EDUS - Zusammenhang zwischen Überraschtheit und Infektion</figcaption>
 </figure>
 
@@ -1064,7 +1284,78 @@ Auch über die prozentualen Anteile hinaus entsprach das Testvorhaben größtent
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_14.png" class="figure-img img-fluid" alt="Tab. 14: EDUS - Zusammenhang zwischen Test-Art und durchgeführten Tests"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="5">
+        <span class="gt_column_spanner"><strong>Test (durchgeführt)</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja, einen PCR-Test</th>
+      <th class="text-center" rowspan="1" colspan="1">Ja, einen Antigen-Schnelltest</th>
+      <th class="text-center" rowspan="1" colspan="1">Ja, einen PCR-Test und einen Antigen-Schnelltest</th>
+      <th class="text-center" rowspan="1" colspan="1">Ja, aber ich weiß nicht, was für einen Test</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Testvorhaben</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="text-left" style="text-align: left; text-indent: 10px;">PCR-Test</td>
+<td class="text-center">2.243 (73%)</td>
+<td class="text-center">209 (6,8%)</td>
+<td class="text-center">505 (16%)</td>
+<td class="text-center">36 (1,2%)</td>
+<td class="text-center">90 (2,9%)</td>
+<td class="text-center">3.083 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Antigen-Schnelltest</td>
+<td class="text-center">284 (5,8%)</td>
+<td class="text-center">3.980 (81%)</td>
+<td class="text-center">302 (6,1%)</td>
+<td class="text-center">63 (1,3%)</td>
+<td class="text-center">300 (6,1%)</td>
+<td class="text-center">4.929 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">PCR-Test und Antigen-Schnelltest</td>
+<td class="text-center">499 (26%)</td>
+<td class="text-center">379 (20%)</td>
+<td class="text-center">971 (51%)</td>
+<td class="text-center">17 (0,9%)</td>
+<td class="text-center">39 (2,0%)</td>
+<td class="text-center">1.905 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Das hängt von ärztlichem Rat bzw. dem Rat eines anderen Gesundheitsdienstes ab</td>
+<td class="text-center">236 (33%)</td>
+<td class="text-center">315 (44%)</td>
+<td class="text-center">91 (13%)</td>
+<td class="text-center">34 (4,7%)</td>
+<td class="text-center">42 (5,8%)</td>
+<td class="text-center">718 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Weiß nicht</td>
+<td class="text-center">26 (24%)</td>
+<td class="text-center">42 (39%)</td>
+<td class="text-center">6 (5,5%)</td>
+<td class="text-center">14 (13%)</td>
+<td class="text-center">21 (19%)</td>
+<td class="text-center">109 (100%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">3.288 (31%)</td>
+<td class="text-center">4.925 (46%)</td>
+<td class="text-center">1.875 (17%)</td>
+<td class="text-center">164 (1,5%)</td>
+<td class="text-center">492 (4,6%)</td>
+<td class="text-center">10.744 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 14: EDUS - Zusammenhang zwischen Test-Art und durchgeführten Tests</figcaption>
 </figure>
 
@@ -1078,7 +1369,62 @@ Die Ergebnisse der Tests fielen für 5,9% der Teilnehmenden der Folgebefragung p
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_15.png" class="figure-img img-fluid" alt="Tab. 15: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class=""><strong>Testergebnis</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Positiv auf SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Negativ auf SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Nicht eindeutig</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Test (durchgeführt)</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test</td>
+<td class="text-center">514 (65%)</td>
+<td class="text-center">3.536 (28%)</td>
+<td class="text-center">52 (57%)</td>
+<td class="text-center">4.102 (30%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen Antigen-Schnelltest</td>
+<td class="text-center">19 (2,4%)</td>
+<td class="text-center">6.832 (54%)</td>
+<td class="text-center">14 (15%)</td>
+<td class="text-center">6.865 (51%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test und einen Antigen-Schnelltest</td>
+<td class="text-center">255 (32%)</td>
+<td class="text-center">1.982 (16%)</td>
+<td class="text-center">22 (24%)</td>
+<td class="text-center">2.259 (17%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, aber ich weiß nicht, was für einen Test</td>
+<td class="text-center">4 (0,5%)</td>
+<td class="text-center">255 (2,0%)</td>
+<td class="text-center">4 (4,3%)</td>
+<td class="text-center">263 (1,9%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+<td class="text-center">0 (0%)</td>
+<td class="text-center">2 (&lt;0,1%)</td>
+<td class="text-center">0 (0%)</td>
+<td class="text-center">2 (&lt;0,1%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">792 (100%)</td>
+<td class="text-center">12.607 (100%)</td>
+<td class="text-center">92 (100%)</td>
+<td class="text-center">13.491 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 15: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis</figcaption>
 </figure>
 
@@ -1672,7 +2018,62 @@ Zum Hauptteil der Befragungszeit von März bis Mai 2021 konnten nur PCR-Tests in
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_19.png" class="figure-img img-fluid" alt="Tab. 19: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="gt_column_spanner"><strong>Ergebnis per CWA</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja</th>
+      <th class="text-center" rowspan="1" colspan="1">Ja, aber erst nachdem ich das Ergebnis schon von anderer Stelle mitgeteilt bekommen hatte</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Test (durchgeführt)</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test</td>
+<td class="text-center">1.905 (46%)</td>
+<td class="text-center">390 (9,5%)</td>
+<td class="text-center">1.822 (44%)</td>
+<td class="text-center">4.117 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen Antigen-Schnelltest</td>
+<td class="text-center">222 (3,2%)</td>
+<td class="text-center">91 (1,3%)</td>
+<td class="text-center">6.549 (95%)</td>
+<td class="text-center">6.862 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test und einen Antigen-Schnelltest</td>
+<td class="text-center">870 (38%)</td>
+<td class="text-center">218 (9,6%)</td>
+<td class="text-center">1.174 (52%)</td>
+<td class="text-center">2.262 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, aber ich weiß nicht, was für einen Test</td>
+<td class="text-center">25 (9,4%)</td>
+<td class="text-center">11 (4,1%)</td>
+<td class="text-center">230 (86%)</td>
+<td class="text-center">266 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+<td class="text-center">1 (9,1%)</td>
+<td class="text-center">0 (0%)</td>
+<td class="text-center">10 (91%)</td>
+<td class="text-center">11 (100%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">3.023 (22%)</td>
+<td class="text-center">710 (5,3%)</td>
+<td class="text-center">9.785 (72%)</td>
+<td class="text-center">13.518 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 19: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis</figcaption>
 </figure>
 
@@ -1960,7 +2361,46 @@ Befragte, die den Test in der Corona-Warn-App registriert hatten, waren öfter d
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_23.png" class="figure-img img-fluid" alt="Tab. 23: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses via CWA"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="2">
+        <span class="gt_column_spanner"><strong>Teilung des Testergebnisses</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Ja</th>
+      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Testregistrierung per CWA</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja</td>
+<td class="text-center">314 (40%)</td>
+<td class="text-center">12 (1,5%)</td>
+<td class="text-center">326 (41%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, aber erst nachdem ich das Ergebnis schon von anderer Stelle mitgeteilt bekommen hatte</td>
+<td class="text-center">148 (19%)</td>
+<td class="text-center">14 (1,8%)</td>
+<td class="text-center">162 (20%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+<td class="text-center">177 (22%)</td>
+<td class="text-center">129 (16%)</td>
+<td class="text-center">306 (39%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">639 (80%)</td>
+<td class="text-center">155 (20%)</td>
+<td class="text-center">794 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 23: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses via CWA</figcaption>
 </figure>
 
@@ -2074,7 +2514,87 @@ Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
 
 <p></p>
 <figure class="text-center">
-    <img src="./tab_24.png" class="figure-img img-fluid" alt="Tab. 24: EDUS - Symptome seit Roter Warnmeldung"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="gt_column_spanner"><strong>Testergebnis</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Positiv auf SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Negativ auf SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Nicht eindeutig</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Symptom</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Erhöhte Temperatur oder Fieber</td>
+<td class="text-center">183 (63%)</td>
+<td class="text-center">102 (35%)</td>
+<td class="text-center">7 (2,4%)</td>
+<td class="text-center">292 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kurzatmigkeit</td>
+<td class="text-center">124 (40%)</td>
+<td class="text-center">179 (58%)</td>
+<td class="text-center">5 (1,6%)</td>
+<td class="text-center">308 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Verlust des Geruchs-/Geschmacksinns</td>
+<td class="text-center">144 (80%)</td>
+<td class="text-center">35 (19%)</td>
+<td class="text-center">1 (0,6%)</td>
+<td class="text-center">180 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Husten</td>
+<td class="text-center">320 (43%)</td>
+<td class="text-center">406 (55%)</td>
+<td class="text-center">12 (1,6%)</td>
+<td class="text-center">738 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Schnupfen</td>
+<td class="text-center">293 (27%)</td>
+<td class="text-center">768 (71%)</td>
+<td class="text-center">16 (1,5%)</td>
+<td class="text-center">1.077 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Halsschmerzen</td>
+<td class="text-center">234 (25%)</td>
+<td class="text-center">695 (74%)</td>
+<td class="text-center">10 (1,1%)</td>
+<td class="text-center">939 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kopf- und Gliederschmerzen</td>
+<td class="text-center">344 (33%)</td>
+<td class="text-center">701 (66%)</td>
+<td class="text-center">11 (1,0%)</td>
+<td class="text-center">1.056 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Allgemeine Schwäche und Abgeschlagenheit</td>
+<td class="text-center">329 (31%)</td>
+<td class="text-center">737 (68%)</td>
+<td class="text-center">11 (1,0%)</td>
+<td class="text-center">1.077 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Durchfall</td>
+<td class="text-center">86 (20%)</td>
+<td class="text-center">328 (78%)</td>
+<td class="text-center">7 (1,7%)</td>
+<td class="text-center">421 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein, keins der genannten Symptome</td>
+<td class="text-center">277 (2,6%)</td>
+<td class="text-center">10.500 (97%)</td>
+<td class="text-center">62 (0,6%)</td>
+<td class="text-center">10.839 (100%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">2.334 (14%)</td>
+<td class="text-center">14.451 (85%)</td>
+<td class="text-center">142 (0,8%)</td>
+<td class="text-center">16.927 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 24: EDUS - Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis</figcaption>
 </figure>
 
@@ -2097,7 +2617,87 @@ Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
 <p></p>
 
 <figure class="text-center">
-    <img src="./tab_25.png" class="figure-img img-fluid" alt="Tab. 25: Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis"/>
+    <table class="table table-hover">
+
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
+      <th class="text-center" rowspan="1" colspan="3">
+        <span class="gt_column_spanner"><strong>Testergebnis</strong></span>
+      </th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+    </tr>
+    <tr>
+      <th class="text-center" rowspan="1" colspan="1">Positiv auf SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Negativ auf SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Nicht eindeutig</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="text-left" style="font-weight: bold;">Symptom</td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td>
+<td class="text-center"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Erhöhte Temperatur oder Fieber</td>
+<td class="text-center">249 (72%)</td>
+<td class="text-center">89 (26%)</td>
+<td class="text-center">8 (2,3%)</td>
+<td class="text-center">346 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kurzatmigkeit</td>
+<td class="text-center">199 (65%)</td>
+<td class="text-center">101 (33%)</td>
+<td class="text-center">5 (1,6%)</td>
+<td class="text-center">305 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Verlust des Geruchs-/Geschmacksinns</td>
+<td class="text-center">276 (91%)</td>
+<td class="text-center">21 (7,0%)</td>
+<td class="text-center">5 (1,7%)</td>
+<td class="text-center">302 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Husten</td>
+<td class="text-center">404 (60%)</td>
+<td class="text-center">257 (38%)</td>
+<td class="text-center">13 (1,9%)</td>
+<td class="text-center">674 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Schnupfen</td>
+<td class="text-center">384 (42%)</td>
+<td class="text-center">503 (56%)</td>
+<td class="text-center">17 (1,9%)</td>
+<td class="text-center">904 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Halsschmerzen</td>
+<td class="text-center">259 (34%)</td>
+<td class="text-center">499 (65%)</td>
+<td class="text-center">12 (1,6%)</td>
+<td class="text-center">770 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kopf- und Gliederschmerzen</td>
+<td class="text-center">421 (50%)</td>
+<td class="text-center">401 (48%)</td>
+<td class="text-center">20 (2,4%)</td>
+<td class="text-center">842 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Allgemeine Schwäche und Abgeschlagenheit</td>
+<td class="text-center">456 (52%)</td>
+<td class="text-center">406 (46%)</td>
+<td class="text-center">15 (1,7%)</td>
+<td class="text-center">877 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Durchfall</td>
+<td class="text-center">138 (42%)</td>
+<td class="text-center">184 (56%)</td>
+<td class="text-center">6 (1,8%)</td>
+<td class="text-center">328 (100%)</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein, keins der genannten Symptome</td>
+<td class="text-center">155 (1,3%)</td>
+<td class="text-center">11.297 (98%)</td>
+<td class="text-center">59 (0,5%)</td>
+<td class="text-center">11.511 (100%)</td></tr>
+    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+<td class="text-center">2.941 (17%)</td>
+<td class="text-center">13.758 (82%)</td>
+<td class="text-center">160 (0,9%)</td>
+<td class="text-center">16.859 (100%)</td></tr>
+  </tbody>
+
+
+</table>
     <figcaption aria-hidden="true">Tab. 25: Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis</figcaption>
 </figure>
 
@@ -2473,3 +3073,5 @@ Wir bedanken uns an dieser Stelle noch einmal ganz herzlich bei allen Nutzenden,
 ## 7 So geht es weiter
 
 In den kommenden Wochen werden wir uns hier im Science Blog mit dem Thema <q>Datenspende</q> der Corona-Warn-App beschäftigen. Wir wollen analysieren, inwieweit das freiwillige, datenschutzkonforme Bereitstellen von Nutzenden-Daten Erkenntnisse über das Nutzungsverhalten möglich macht. Außerdem werden wir zeigen, wie die Datenspende bei der Weiterentwicklung der Corona-Warn-App geholfen hat.
+
+
