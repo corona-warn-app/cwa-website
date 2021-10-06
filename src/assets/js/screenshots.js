@@ -2,9 +2,45 @@ import $ from 'jquery';
 
 window.jQuery = $;
 
+//Sets the option selected according to the version of the application being consulted
+$(document).ready(function () {
+    const version = window.location.pathname.split(".")[0].split("/")[3].replace("-", ".");
+    if (version == '') $('select[name="archived-screenshots"]').children().last().prop('selected', 'selected');
+    else {
+        $('select[name="archived-screenshots"]').children().each(function (index) {
+            if (version == $(this).text().split(" ")[1]) $(this).prop('selected', 'selected');
+        });
+    }
+
+    if(location.hash.includes("#dropdown")) {
+        location.hash = location.hash.replace("#dropdown", "");
+        $(window).scrollTop(0);
+    }
+});
+
 // Screenshots screen: redirect to selected option's value after changing version in dropdown
-$('select[name="archived-screenshots"]').on("change", function(e) {
-    window.location.href = e.target.value;
+$('select[name="archived-screenshots"]').on("change", function (e) {
+    window.location.href = e.target.value + window.location.hash + '#dropdown';
+});
+
+// Show/hide menu after changing OS tabs
+$('.nav-tabs a').on("click", function (e) {
+    if (window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0] += $(this).attr('href');
+    else window.location.href += $(this).attr('href');
+    const { hash } = window.location;
+    const hashDevice = hash != "" ? hash.replace("#", "").split("_")[0] : "ios";
+    const androidMenu = document.querySelector('#android_menu')
+    const iosMenu = document.querySelector('#ios_menu')
+    if (hashDevice === "android") {
+        // Show/hide menu
+        androidMenu.classList.remove("d-none")
+        iosMenu.classList.add("d-none")
+    } else {
+        // Show/hide menu
+        androidMenu.classList.add("d-none")
+        iosMenu.classList.remove("d-none")
+    }
+    preventAnchorScroll();
 });
 
 //   Add feature for tag auto-navigation with hash in the URL
@@ -16,6 +52,8 @@ const scrollTo = (hash) => {
 const checkHashAndChangeTab = () => {
     const { hash } = window.location;
     const hashDevice = hash.replace("#", "").split("_")[0]
+    const androidMenu = document.querySelector('#android_menu')
+    const iosMenu = document.querySelector('#ios_menu')
     const androidTab = document.querySelector('[href="#android_screenshots"]')
     const iosTab = document.querySelector('[href="#ios_screenshots"]')
     const androidContent = document.querySelector("#android_screenshots")
@@ -28,6 +66,9 @@ const checkHashAndChangeTab = () => {
         // Show/hide content
         iosContent.classList.remove(...contentClasses)
         androidContent.classList.add(...contentClasses)
+        // Show/hide menu
+        androidMenu.classList.remove("d-none")
+        iosMenu.classList.add("d-none")
         scrollTo(hash)
     } else {
         // Put tabs correctly
@@ -36,7 +77,30 @@ const checkHashAndChangeTab = () => {
         // Show/hide content
         androidContent.classList.remove(...contentClasses)
         iosContent.classList.add(...contentClasses)
+        // Show/hide menu
+        androidMenu.classList.add("d-none")
+        iosMenu.classList.remove("d-none")
         scrollTo(hash)
     }
 }
-checkHashAndChangeTab()
+
+function preventAnchorScroll() {
+    var scrollToTop = function () {
+        $(window).scrollTop(0);
+    };
+    if (window.location.hash) {
+        // handler is executed at most once
+        $(window).one('scroll', scrollToTop);
+    }
+    // make sure to release scroll 1 second after document readiness
+    // to avoid negative UX
+    $(function () {
+        setTimeout(
+            function () {
+                $(window).off('scroll', scrollToTop);
+            },
+            1000
+        );
+    });
+}
+checkHashAndChangeTab();
