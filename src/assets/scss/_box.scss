@@ -223,12 +223,14 @@ p:not([class]) + .btn {
     display: block;
 
     .side-menu {
+        overflow-y: auto;
         transform: translate3d(-100%, 0, 0);
         width: 50vw;
         max-width: 240px;
         position: fixed;
 
         @media (max-width: ($screen-md - 1)){
+            overflow-y: inherit;
             padding-left: $spacer * 1.25;
             padding-top: 0.5* $spacer;
             z-index: 1;
@@ -243,7 +245,7 @@ p:not([class]) + .btn {
 
             &.active {
                 transform: translate3d(0, 0, 0);
-                z-index: 1;
+                z-index: 2;
                 height: 100vh;
                 left: 0;
                 top: 0;
@@ -314,10 +316,10 @@ p:not([class]) + .btn {
                 top: auto;
                 left: auto;
                 position: absolute;
-                top: $spacer * 0.5;
-                bottom: $spacer * 0.5;
+                top: 0;
+                bottom: 0;
                 border-left: 2px solid $primary-light;
-                left: 0;
+                left: -2px;
             }
 
             &:hover,
@@ -335,6 +337,11 @@ p:not([class]) + .btn {
             }
         }
         
+        .nav-link-left-menu {
+            padding: .1rem 1rem;
+            border-left: 2px solid lightgray;
+            margin: .3rem;
+        }
     }
 
     .main {
