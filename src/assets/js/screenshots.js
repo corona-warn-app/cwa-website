@@ -11,11 +11,16 @@ $(document).ready(function () {
             if (version == $(this).text().split(" ")[1]) $(this).prop('selected', 'selected');
         });
     }
+
+    if(location.hash.includes("#dropdown")) {
+        location.hash = location.hash.replace("#dropdown", "");
+        $(window).scrollTop(0);
+    }
 });
 
 // Screenshots screen: redirect to selected option's value after changing version in dropdown
 $('select[name="archived-screenshots"]').on("change", function (e) {
-    window.location.href = e.target.value + window.location.hash;
+    window.location.href = e.target.value + window.location.hash + '#dropdown';
 });
 
 // Show/hide menu after changing OS tabs
@@ -35,6 +40,7 @@ $('.nav-tabs a').on("click", function (e) {
         androidMenu.classList.add("d-none")
         iosMenu.classList.remove("d-none")
     }
+    preventAnchorScroll();
 });
 
 //   Add feature for tag auto-navigation with hash in the URL
@@ -77,4 +83,24 @@ const checkHashAndChangeTab = () => {
         scrollTo(hash)
     }
 }
-checkHashAndChangeTab()
+
+function preventAnchorScroll() {
+    var scrollToTop = function () {
+        $(window).scrollTop(0);
+    };
+    if (window.location.hash) {
+        // handler is executed at most once
+        $(window).one('scroll', scrollToTop);
+    }
+    // make sure to release scroll 1 second after document readiness
+    // to avoid negative UX
+    $(function () {
+        setTimeout(
+            function () {
+                $(window).off('scroll', scrollToTop);
+            },
+            1000
+        );
+    });
+}
+checkHashAndChangeTab();
