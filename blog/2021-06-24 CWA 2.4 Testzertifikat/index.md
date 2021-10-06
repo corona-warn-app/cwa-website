@@ -37,10 +37,6 @@ Users can then view the certificate via the "Certificates" tab in their tab bar.
 
 Not every rapid test center supports the digital certificate. In this case, users won’t be redirected to request the certificate after scanning the QR code. They will then be informed that a test certificate cannot be requested because the testing center does not support test certificates. 
 
-<br></br>
-<center> <img src="./.png" title="Teststelle unterstützt Testzertifikate nicht" style="align: center"></center>
-<br></br>
-
 Users requesting a test certificate for a PCR test must provide their date of birth when making the request. It is important that the date of birth is the same as the date of birth used for the PCR swab test. If the dates don’t match, for example due to a typing error, the user will neither receive the test result nor the certificate via the app. Also, users cannot change the date of birth that they enter in the app later. Therefore, they should check whether the date is correct before completing the request for a certificate.
 
 <br></br>
