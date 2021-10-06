@@ -130,7 +130,7 @@ In order to investigate the first point, an analysis needs to be conducted of th
 
 <div class="m-4">
 <figure>
-<video src="./BReg_Erklaerfilm_CoronaWarnApp-EN_Version_SD540px.mp4" class="w-100" controls=""><a href="./BReg_Erklaerfilm_CoronaWarnApp-EN_Version_SD540px.mp4"></a></video><figcaption aria-hidden="true"><em>Corona-Warn-App - explanatory film</em></figcaption>
+<video src="./BReg_Erklaerfilm_CoronaWarnApp-EN_Version_SD540px.mp4" class="w-100" controls=""></video><figcaption aria-hidden="true"><em>Corona-Warn-App - explanatory film</em></figcaption>
 </figure>
 </div>
 
@@ -164,7 +164,7 @@ Finally, it is important to note that the basic functionality and reliability of
 <div class="m-4">
 
 <figure>
-<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE measurements by Fraunhofer IIS to calibrate the parameters</em></figcaption>
+<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE measurements by Fraunhofer IIS to calibrate the parameters</em></figcaption>
 </figure>
 
 </div>
@@ -233,7 +233,7 @@ These preliminary figures show that the CWA is effective and useful and that it 
 
 <div class="m-4">
 <figure>
-<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls=""><a href="./ppa_warnings_cases.mp4">Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district) </a></video><figcaption aria-hidden="true"><em>Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district) </em></figcaption>
+<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="">Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district)</video><figcaption aria-hidden="true"><em>Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district) </em></figcaption>
 </figure>
 </div>
 
