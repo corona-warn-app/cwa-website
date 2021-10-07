@@ -92,13 +92,18 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
       if (checkCSVHeaders(json)) {
         if (json.length > 1) {
           if (json.length < 101) {
-            GenerateMultiQRCode(json).then(function (qrList) {
-              if (qrList.length > 0) {
-                printQRsOnPage(qrList).then(function (pages) {
-                  printPages(pages)
-                });
-              }
-            });
+            document.getElementById("generateProgress").classList.remove('d-none'); 
+            document.getElementById("generateProgress").classList.add('d-inline-block');
+            setTimeout(() => {
+              GenerateMultiQRCode(json).then(function (qrList) {
+                if (qrList.length > 0) {
+                  printQRsOnPage(qrList).then(function (pages) {
+                    printPages(pages)
+                  });
+                }
+              });
+            },100)
+            
           } else document.getElementById('qr-error-fileoverloaded').style.display = 'block';
         } else document.getElementById('qr-error-filewithnodata').style.display = 'block';
       } else document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
@@ -139,7 +144,8 @@ document.getElementById('printCode').addEventListener('click', function (e) {
 
 document.getElementById('downloadMultiCode').addEventListener('click', function (e) {
   e.preventDefault();
-  document.getElementById("progress").classList.remove('d-none');
+  document.getElementById("PDFprogress").classList.remove('d-none'); 
+  document.getElementById("PDFprogress").classList.add('d-inline-block');
   setTimeout(() => {
     let pages = document.querySelectorAll('#qrContainer canvas')
     let today = new Date();
@@ -158,7 +164,8 @@ document.getElementById('downloadMultiCode').addEventListener('click', function 
       if (index < pages.length - 1) doc.addPage();
     })
     doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
-    document.getElementById("progress").classList.add('d-none');
+    document.getElementById("PDFprogress").classList.remove('d-inline-block');
+    document.getElementById("PDFprogress").classList.add('d-none');
   }, 500)
 
 });
@@ -698,8 +705,47 @@ async function printPages(data) {
   if (data.pages.length == 1) {
     infoContainer.classList.remove('mt-4');
     container.classList.remove('slick-dotted');
-  } else {
+  }
+  else {
     infoContainer.classList.add('mt-4');
     container.classList.add('slick-dotted');
+
+    let slider = $(".qr-slider");
+
+    function loadSliderDotClasses(stickSlider) {
+      let dot = stickSlider[0].querySelector(".slick-dots li.slick-active"),
+        dotsLength = stickSlider[0].querySelectorAll(".slick-dots li").length,
+        dotSize1 = "dot-size-1",
+        dotSize2 = "dot-size-2",
+        dotSize3 = "dot-size-3";
+        let activeIndex = Array.from(dot.parentNode.children).indexOf(dot);
+        stickSlider[0].querySelectorAll(".slick-dots li").forEach((li, index) => {
+          li.classList.remove(dotSize1, dotSize2, dotSize3, "show");
+        });
+        stickSlider[0].querySelectorAll(".slick-dots li").forEach((li, index) => {
+          let difference = activeIndex - index;
+          if (difference === -2 && dotsLength + difference > -1) {
+              li.classList.add(dotSize2, "show");
+          }
+          if (difference === -1 && dotsLength + difference > -1) {
+              li.classList.add(dotSize3, "show");
+          }
+          if (difference === 1 && dotsLength - difference < dotsLength) {
+              li.classList.add(dotSize3, "show");
+          }
+          if (difference === 2 && dotsLength - difference < dotsLength) {
+              li.classList.add(dotSize2, "show");
+          }
+        });
+      dot.classList.add("show");
+    }
+
+    loadSliderDotClasses(slider);
+
+    slider.find(".slick-arrow").on("click", function (e) {
+      loadSliderDotClasses(slider);
+    });
   }
+  document.getElementById("generateProgress").classList.remove('d-inline-block'); 
+  document.getElementById("generateProgress").classList.add('d-none');
 }

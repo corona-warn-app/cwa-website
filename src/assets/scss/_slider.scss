@@ -169,6 +169,9 @@
             background-color: $slick-dot-color-active;
             opacity: $slick-opacity-default;
         }
+        &:not(.show) {
+            display: none;
+        }
     }
 }
 

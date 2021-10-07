@@ -231,7 +231,7 @@
                       {{page-contents.section-main.form.fields.csvFile}}
                     </label>
                     <input type="file" class="form-control-file d-none" accept=".csv" id="csvFile" required>
-                    <div id="csvName"></div>
+                    <div id="csvName" class="d-inline-block"></div>
                     <div id="qr-error-filerequired" class="invalid-feedback">
                       {{page-contents.section-main.form.errors.filerequired}}
                     </div>
@@ -272,6 +272,10 @@
                 <div class="row mt-4">
                   <div class="col-12">
                     <button id="generateMultiQR" value="show" class="btn btn-primary">{{page-contents.section-main.form.fields.show}}</button>
+                    <div id="generateProgress" class="d-none">
+                      <img src="/assets/img/spinner.gif">
+                      {{page-contents.section-main.form.fields.downloadMessage}}
+                    </div>
                   </div>
                 </div>
               </form>
@@ -298,7 +302,10 @@
                 <div class="col-12 mt">
                   <button id="printMultiCode" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.print}}</button>
                   <button id="downloadMultiCode" value="download" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.download}}</button>
-                  <div id="progress" class="d-none">{{page-contents.section-main.form.fields.downloadMessage}}</div>
+                  <div id="PDFprogress" class="d-none">
+                    <img src="/assets/img/spinner.gif">
+                    {{page-contents.section-main.form.fields.downloadMessage}}
+                  </div>
                 </div>
               </div>
             </div>
