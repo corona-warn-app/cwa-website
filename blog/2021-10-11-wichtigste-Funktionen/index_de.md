@@ -41,9 +41,12 @@ Wählen Sie auf dem Startbildschirm Ihrer Corona-Warn-App **„Sie planen eine V
 
 Danach können Sie **Informationen zu Ihrer Veranstaltung** angeben: Nach der Auswahl der Kategorie (z.B. Einzelhandel oder private Feier), können Sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder den Sie ausdrucken und vor Ort aufhängen können. 
 
-In der Video-Anleitung können Sie alle Schritte sehen: 
+In der Video-Anleitung können Sie alle Schritte sehen:
+<br></br>
 
 {{/assets/video/01qrcode-erstellen}}
+
+<br></br>
 
 **So checken Sie sich zu Veranstaltungen ein und aus:**
 
@@ -51,9 +54,11 @@ Wählen Sie den **Reiter „Check-in“** unten in der Registerkarte Ihrer Coron
 
 In der Video-Anleitung können Sie alle Schritte sehen: 
 
+<br></br>
+
 {{/assets/video/02qrcode-scannen}}
 
-
+<br></br>
 
 **So können Sie Ihre Gäste in Vertretung warnen:**
 

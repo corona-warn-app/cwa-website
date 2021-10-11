@@ -8,9 +8,9 @@ layout: blog
 ---
 
 
-## A guide to its main functions
+## A guide to the app's main functions
 
-Attending an **open-air concert**, going to a **restaurant, beer garden or theatre** – vaccinated, recovered and tested people can do all these things again. It was the spring and **summer months** that made it possible. The months in which the 7-day incidence was reasonable, and events took place outside. 
+Attending an **open-air concert**, going to a **restaurant, beer garden or theatre** – vaccinated, recovered and tested people can do all these things again. It was the spring and **summer months** that made it possible. The months in which the 7-day incidence was reasonable and events took place outside. 
 
 But **what about the fall** when life shifts from outdoors to indoors again? The Corona-Warn-App can help ensure that we can continue to eat a pizza at our favorite Italian restaurant, go shopping or visit an exhibition - even indoors. 
 
@@ -33,17 +33,25 @@ To minimize gaps in the interruption of infection chains, event organizers can a
 
 **How to create a QR code for your event**
 
-On your app’s home screen select **"Planning an event?"** and then tap “Create QR Code.”  
+On your app’s home screen select **"Planning an event?"**, then tap “Create QR Code.”  
 
 You can then enter **information about your event**: After selecting the category (e.g. retail or private party), you can specify a description of the event, the location and start and end dates. The Corona-Warn-App uses this information to create a QR code that you can print out and post on site. 
 
+<br></br>
+
 {{/assets/video/create-qr-code-en}}
+
+<br></br>
 
 **How to check in to and out of events:**
 
 Select the **"Check-in" tab** at the bottom of your Corona-Warn-App. There you find an overview of existing events and can check in to or out of events. To check in, tap **"Scan QR code"**. You can then scan the QR code that the event organizer has posted and select "Check in". When you leave the event, you can check out again in this section of the app by tapping "Check out now" under the event.
 
+<br></br>
+
 {{/assets/video/check-in-en}}
+
+<br></br>
 
 **How to warn your guests in place of another person:**
 
