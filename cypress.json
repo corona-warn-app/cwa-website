@@ -11,5 +11,9 @@
   "supportFile":	"./cypress/support/index.js",
   "fixturesFolder":	"./cypress/fixtures",
   "screenshotsFolder":	"./cypress/screenshots",
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+  "requestTimeout" : 30000,
+  "numTestsKeptInMemory": 0,
+  "responseTimeout" : 50000,
+  "pageLoadTimeout": 100000
 }

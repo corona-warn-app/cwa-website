@@ -1502,7 +1502,7 @@
                             "The Corona-Warn-App has two different status indicators that indicate this risk: \"low risk\" (green) and \"increased risk\" (red).",
                             "If you see high-risk or low-risk encounters on your smartphone, it means that your smartphone and that of a person who later reported themselves as infected in the app have exchanged diagnostic keys via Bluetooth in the past 14 days. Based on the above mentioned criteria, this encounter is then classified as having an increased or low risk of infection.",
                             "If the app shows a \"low risk\" (green), the relevant threshold values have not been exceeded. Nevertheless, the app also informs you that your smartphone has recorded one or more encounters with (later positively tested) persons in the past 14 days and also shows on how many days this was the case. As of version 1.9.1 of the app, users will see the number of days on which risk encounters have taken place, rather than the number of encounters. In addition, the following note is displayed: \"A low risk exists in particular if your encounter was limited to a short period of time or a longer distance. You do not need to worry, and there is no particular need for action.\"",
-                            "If you get a \"increased risk\" (red), you should stay at home and reduce your direct contacts. Contact your general practitioner, the health department or the medical on-call service at 116117 to discuss how to proceed. You can also book an appointment directly via the 116117 on-call service's <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>website</a> or app (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>). The decision whether a so-called PCR test is performed is ultimately up to your doctor. However, the <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Federal Ministry of Health</a> has published corresponding guidelines and recommendations. As of version 1.9.1, the app also shows the last time (within the last 14 days) an encounter with increased risk took place. You can now see an exact date to better track your contacts or behaviour on that specific day."
+                            "If you get a \"increased risk\" (red), you should stay at home and reduce your direct contacts. Contact your general practitioner, the health department or the medical on-call service at 116117 to discuss how to proceed. You can also book an appointment directly via the 116117 on-call service's <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>website</a> or app (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>). The decision whether a so-called PCR test is performed is ultimately up to your doctor. However, the <a href='https://www.bundesanzeiger.de/pub/publication/EaknuyebqGE4JSI7pwk/content/EaknuyebqGE4JSI7pwk/BAnz%20AT%2021.09.2021%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Federal Ministry of Health</a> has published corresponding guidelines and recommendations. As of version 1.9.1, the app also shows the last time (within the last 14 days) an encounter with increased risk took place. You can now see an exact date to better track your contacts or behaviour on that specific day."
                         ]
                     },
                     {
@@ -2183,11 +2183,29 @@
         "permalink": "Link to this entry",
         "linkToGlossary": "Link to the Glossary",
         "glossaryWords": {
+            "A": [
+                {
+                    "term": "Android",
+                    "anchor": "android",
+                    "description": "Android is one of the two operating systems currently supported by the Corona-Warn-App, along with <a href='#glossary_ios'>iOS</a>, and the most widely used mobile operating system in the world. It is an <a href='#glossary_open_source'>open-source</a> operating system for mobile devices (such as smartphones or tablets) and other devices (such as TVs or cars). It is jointly developed by Google and the Open Handset Alliance (OHA)."
+                },
+                {
+                    "term": "API",
+                    "anchor": "api",
+                    "description": "APIs (also called application programming interface) are program parts that are made available by a software system to other programs for connection to the system."
+                }
+            ],
             "B": [
+                {
+                    "term": "Backup",
+                    "anchor": "backup",
+                    "description": "Backups refer to versions of a project at a certain point in time in the past, which can later be used to restore a project to its previous state."
+                },
                 {
                     "term": "Business Rules",
                     "anchor": "business_rules",
-                    "description": "For the introduction of <a href='#glossary_digital_certificate'>Digital COVID Certificates</a>, the eHealth network of the European Commission and the EU member states agreed that every country compiles the individual rules which have to be checked for transnational travelling. These \"Business Rules\" have two categories:<ul><li>Invalidation Rules of the Country of Administration, which decide under which circumstances a digital certificate is rejected</li><li>Acceptance Rules of the Country of Arrival, which must be fulfilled to enter the country</li></ul>"
+
+                    "description": "For the introduction of <a href='#glossary_digital_certificate'>Digital COVID Certificates</a>, the eHealth network of the European Commission and the EU member states agreed that every country compiles the individual rules which have to be checked for transnational travelling. These \"Business Rules\" have two categories:<ul><li>Invalidation Rules of the Country of Administration, which decide under which circumstances a <a href='#glossary_digital_certificate'>certificate</a> is rejected</li><li>Acceptance Rules of the Country of Arrival, which must be fulfilled to enter the country</li></ul>"
                 }
             ],
             "C": [
@@ -2195,54 +2213,274 @@
                     "term": "Certificate",
                     "anchor": "certificate",
                     "description": "See <a href='#glossary_digital_certificate'>Digital Certificate</a>"
+                },
+                {
+                    "term": "Check-in",
+                    "anchor": "check_in",
+                    "description": "Check-in is a process by which a person registers at a certain location or event. In order to offer the CWA's contact tracing check-in function, it is necessary that a QR code is published in the entrance area or when entering an event, which CWA users scan in order to digitally check-in."
+                },
+                {
+                    "term": "Check-out",
+                    "anchor": "check_out",
+                    "description": "Check-out is a procedure in which a person signs out at a certain location or event. Check-out in the CWA can be done automatically by an average length of stay defined by the host/organizer or manually by the user."
+                },
+                {
+                    "term": "Code of Conduct",
+                    "anchor": "code_of_conduct",
+                    "description": "A Code of Conduct is a set of behaviors to be generally applied in different environments depending on the situation."
+                },
+                {
+                    "term": "Community Management",
+                    "anchor": "community_management",
+                    "description": "In connection with the CWA, a so-called community management is operated via various channels. This ensures that open questions, technical challenges or difficulties in using the app are recorded and answered satisfactorily for the user."
+                },
+                {
+                    "term": "Contact Diary",
+                    "anchor": "contact_diary",
+                    "description": "In the contact diary, meetings and contacts can be easily recorded per day of the past 14 days. In addition, events or risk warnings, among other things, are also displayed here. The information can be shared manually with the health department via an export function of the contact diary."
+                },
+                {
+                    "term": "Corona Virus",
+                    "anchor": "corona_virus",
+                    "description": "Colloquial name for SARS-CoV-2, a pathogen of the coronavirus family that can cause the lung disease COVID-19."
+                },
+                {
+                    "term": "CovPass-App",
+                    "anchor": "covpass",
+                    "description": "In addition to the Corona-Warn-App, the RKI also provides the CovPass-App for managing your EU digital COVID certificates."
+                },
+                {
+                    "term": "CovPassCheck-App",
+                    "anchor": "covpasscheck",
+                    "description": "The CovPassCheck-App is a secure solution for, among others, businesses and authorities. Only the CovPassCheck app can reliably check EU digital COVID certificates."
                 }
             ],
             "D": [
                 {
+                    "term": "Data Donation",
+                    "anchor": "data_donation",
+                    "description": "A voluntary and anonymous way to provide the RKI with data on the use of the CWA. Voluntary data donation can help experts evaluate the effectiveness of the app and further improve it. More information is summarized here: <a href='https://www.coronawarn.app/en/blog/2021-03-04-corona-warn-app-version-1-13/'>Science Blog: Users can provide data voluntarily to help improve the Corona-Warn-App further</a>."
+                },
+                {
                     "term": "DCC",
                     "anchor": "dcc",
-                    "description": "Abbreviation of \"Digital COVID Certificate\"."
+                    "description": "Abbreviation for the EU Digital COVID Certificate. The certificate was developed with the aim of facilitating the free movement of persons in the EU."
+                },
+                {
+                    "term": "Diagnosis Key",
+                    "anchor": "diagnosis_key",
+                    "description": "See <a href='#glossary_temporary_exposure_keys'>Temporary Exposure Keys</a>"
                 },
                 {
                     "term": "Digital Certificate",
                     "anchor": "digital_certificate",
-                    "description": "A certified document. It contains the subject's health information signed by a trusted issuer. <br/><br/> Every digital certificate has an issue date and an expiration date. After the certificate expires it must be renewed. <br/><br/> In the CWA we differentiate between: <br/><ul><li>Vaccination Certificate</li><li>Test Certificate</li><li>Recovery Certificate</li></ul>"
+                    "description": "A digital certificate is an authenticated digital document. It contains at least the holder's name, the holder's public key, and the digital signature (<a href='#glossary_signature'>signature</a>) of the issuing entity. <br/><br/> Each digital certificate has an issue date and a time-limited <a href='#glossary_validity'>validity</a> (expiration date). After the validity expires, the certificate must be renewed. <br/><br/> In the CWA, we distinguish between: <br/><ul><li>Vaccination certificate</li><li>Test certificate</li><li>Recovery certificate</li></ul>"
                 },
                 {
                     "term": "Digital Signature",
                     "anchor": "digital_signature",
                     "description": "See <a href='#glossary_signature'>Signature</a>"
+                },
+                {
+                    "term": "Digital Vaccination Certificate",
+                    "anchor": "digital_vaccination_certificate",
+                    "description": "See <a href='#glossary_digital_certificate'>Digital Certificate</a>"
                 }
             ],
             "E": [
                 {
+                    "term": "Effective validity",
+                    "anchor": "effective_validity",
+                    "description": "We refer to the duration of vaccination protection as 'effective validity'. The effective validity of the vaccination thus counts from the last vaccination date. While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may differ from this. In the case of a <a href='#glossary_recovery_certificate'>recovery certificate</a>, the effective validity is set at 'date of the person's first positive <a href='#glossary_pcr_test'>PCR test</a> result' plus 180 days, according to the EU eHealth Network."
+                },
+                {
+                    "term": "Error report",
+                    "anchor": "error_report",
+                    "description": "A detailed report of a malfunction that has occurred, which is sent to the responsible developers so that they can fix the described error."
+                },
+                {
                     "term": "EU DCC",
                     "anchor": "eu_dcc",
                     "description": "See <a href='#glossary_dcc'>DCC</a>"
+                },
+                {
+                    "term": "European Federation Gateway Service (EFGS)",
+                    "anchor": "efgs",
+                    "description": "A central infrastructure that is used to exchange and check <a href='#glossary_diagnosis_key'>diagnosis keys</a> across national borders."
+                },
+                {
+                    "term": "Event registration",
+                    "anchor": "event_registration",
+                    "description": "Register for an event or a visit to a location."
+                },
+                {
+                    "term": "Exposure Detection",
+                    "anchor": "exposure_detection",
+                    "description": "List of short-lived random Bluetooth IDs received and temporarily stored in the operating system memory. The encounter record is read as part of the risk determination during the risk check. All short-lived random Bluetooth IDs older than 14 days are automatically deleted. The encounter record can also be deleted in its entirety at any time by individuals using the app. When the CWA is uninstalled, the encounter record is automatically deleted."
+                },
+                {
+                    "term": "Exposure Notification Express (ENE)",
+                    "anchor": "ene",
+                    "description": "See FAQ: <a href='https://www.coronawarn.app/en/faq/#ene' target='_blank' rel='noopener noreferrer'>Exposure Notification Express (ENE)</a>"
+                },
+                {
+                    "term": "Exposure Notification Framework (ENF)",
+                    "anchor": "enf",
+                    "description": "The Exposure Notification Framework (Apple terminology) or Exposure Notification System (Google terminology) is a developed OS-level system whose goal is to reduce the spread of COVID-19 through contact tracing. It enables the exchange of random keys via Bluetooth Low Energy (BLE)."
+                },
+                {
+                    "term": "Exposure Notification System (ENS)",
+                    "anchor": "ens",
+                    "description": "See <a href='#glossary_enf'>Exposure Notification Framework (ENF)</a>"
+                }
+            ],
+            "G": [
+                {
+                    "term": "GitHub",
+                    "anchor": "github",
+                    "description": "GitHub is a platform that allows many different people to work on a project at the same time. It can merge everyone's contributions and documents any changes."
+                }
+            ],
+            "I": [
+                {
+                    "term": "iOS",
+                    "anchor": "ios",
+                    "description": "iOS is a mobile operating system developed by Apple for the iPhone, iPod touch and formerly also iPad. Along with <a href='#glossary_android'>Android</a>, it is one of the two operating systems that the Corona-Warn-App supports."
+                }
+            ],
+            "M": [
+                {
+                    "term": "Molecular biological test",
+                    "anchor": "molecular_biological_test",
+                    "description": "See <a href='#glossary_pcr_test'>PCR test</a>"
+                }
+            ],
+            "O": [
+                {
+                    "term": "Open-Source",
+                    "anchor": "open_source",
+                    "description": "Code that is visible, accessible, modifiable and distributable to the public."
                 }
             ],
             "P": [
                 {
-                    "term": "Proof of vaccination",
+                    "term": "PCR Test",
+                    "anchor": "pcr_test",
+                    "description": "PCR tests are considered the most accurate among corona tests. In this type of test, medical personnel collect the sample and have it analyzed by a laboratory."
+                },
+                {
+                    "term": "Proof of Vaccination",
                     "anchor": "vaccination_proof",
-                    "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> <br/><br/> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br/><br/> The proof of vaccination can be documented in different ways, one form is the digital <a href='#glossary_vaccination_certificate'>vaccination certificate</a>."
+                    "description": "The proof of vaccination documents a vaccination procedure with a vaccine recommended by the Paul Ehrlich Institute. A vaccination proof must contain at least the following attributes: <ul><li>the personal data of the vaccinated person (at least surname, first name and date of birth)</li><li>date of vaccination, number of vaccinations,</li><li>designation of the vaccine,</li><li>name of the disease against which the vaccination was carried out, and</li><li>characteristics that indicate the person or institution responsible for carrying out the vaccination or issuing the proof of vaccination, for example, an official symbol or the name of the issuer. </li></ul> For entry, according to § 2 number 10 Coronavirus-Einreiseverordnung, the vaccination certificate must still meet additional requirements (regarding languages and vaccination schema). <br></br> The proof of vaccination can be documented in different ways, one form is the digital <a href='#glossary_vaccination_certificate'>vaccination certificate</a>."
+                },
+                {
+                    "term": "Pseudonymity",
+                    "anchor": "pseudonymity",
+                    "description": "A data protection measure that makes it either impossible or very difficult to assign data to specific persons. Like anonymization, pseudonymization serves to prevent inference to a person or to the data of a person worthy of protection. With pseudonymization, this is done by separating the characteristics from the other personal data. This distinguishes it from anonymization, in which the identifying characteristics are deleted."
+                }
+            ],
+            "Q": [
+                {
+                    "term": "Quarantine",
+                    "anchor": "quarantine",
+                    "description": "A protective measure that helps contain the spread of infectious diseases through human isolation."
                 }
             ],
             "R": [
                 {
+                    "term": "RAT",
+                    "anchor": "rat",
+                    "description": "Short for Rapid Antigen Test. See <a href='#glossary_rapid_antigen_test'>Rapid Antigen Test</a>"
+                },
+                {
+                    "term": "Rapid Antigen Test",
+                    "anchor": "rapid_antigen_test",
+                    "description": "Rapid antigen tests are similar in procedure to the self-test, but are performed by trained personnel. A comparison of the two antigen test types has been provided by the RKI: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Downloads/Flyer-Antigentests.pdf?__blob=publicationFile'>Link to the comparison from the RKI</a> <br></br>Not all rapid antigen tests are similarly reliable. For this reason, the Paul Ehrlich Institute has published so-called minimum criteria for rapid antigen tests: <a href='https://www.pei.de/SharedDocs/Downloads/DE/newsroom/dossiers/mindestkriterien-sars-cov-2-antigentests-01-12-2020.pdf?__blob=publicationFile&v=7'>Link to minimum criteria</a> <br></br>A positive result from a rapid antigen test is not a final diagnosis and should be confirmed by a <a href='#glossary_pcr_test'>PCR test</a>."
+                },
+                {
+                    "term": "Rapid Test",
+                    "anchor": "rapid_test",
+                    "description": "See <a href='#glossary_rapid_antigen_test'>Rapid Antigen Test</a>"
+                },
+                {
+                    "term": "Rapid Test Profile",
+                    "anchor": "rapid_test_profile",
+                    "description": "Since version 2.2 of the Corona-Warn-App you are able to create a rapid test profile with your data such as first and last name, date of birth, address, phone number and e-mail address. Using a rapid test profile, you ensure that registration at a testing center is faster. The profile contains a QR code, which you can show at the testing center. However, you should still have your ID card ready."
+                },
+                {
                     "term": "Recovery Certificate",
                     "anchor": "recovery_certificate",
                     "description": "The certificate of recovery is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has demonstrably recovered from COVID-19 and proved immunity by a PCR test."
+                },
+                {
+                    "term": "Release",
+                    "anchor": "release",
+                    "description": "Corona-Warn-App Version"
+                },
+                {
+                    "term": "Risk Encounter",
+                    "anchor": "risk_encounter",
+                    "description": "Encounter with a person who has potentially endangered oneself."
+                },
+                {
+                    "term": "Risk Calculation",
+                    "anchor": "risk_calculation",
+                    "description": "Four factors have an influence on the calculation of the individual risk of infection:<ul><li>Duration of the encounter</li><li>Distance at the time of the encounter</li><li>Time that has elapsed since the encounter</li><li>Infectiousness (derived from information on when and whether symptoms occur)</li></ul>If the calculated risk exceeds the threshold specified by the Robert Koch Institute, users will receive a notification regarding an increased risk."
+                },
+                {
+                    "term": "Risk Status",
+                    "anchor": "risk_status",
+                    "description": "A tile in the Corona-Warn-App whose color and content represent one's exposure to Corona infection. The status is composed of the encounters one has had with other people. If the risk of infection is low, the mentioned tile is green, if the risk is increased, the tile is red."
+                },
+                {
+                    "term": "Rolling Proximity Identifier (RPI)",
+                    "anchor": "rpi",
+                    "description": "IDs that ensure data protection and change regularly at short intervals, thus preventing the device from being tracked. These IDs can only be linked to likewise pseudonymous diagnostic keys ('positive identifiers') to perform encounter detection. Since these IDs change every 10 to 20 minutes, a person sitting next to you on the bus every day, for example, would not be able to associate you with an ID himself if the list of available RPIs were viewable."
                 }
             ],
             "S": [
                 {
+                    "term": "SARS-CoV-2",
+                    "anchor": "sars_cov_2",
+                    "description": "See <a href='#glossary_corona_virus'>Corona Virus</a>"
+                },
+                {
+                    "term": "Science-Blog",
+                    "anchor": "science_blog",
+                    "description": "The Corona-Warn-App Science Blog covers various scientific topics related to the Corona-Warn-App, such as its effectiveness, benefits, as well as results of scientific evaluations conducted by the Robert Koch Institute. See <a href='../science'>Science-Blog</a>."
+                },
+                {
+                    "term": "Short Lived Random Bluetooth ID",
+                    "anchor": "short_lived_random_bluetooth_id",
+                    "description": "Unique key generated several times an hour, derived from the random device key and exchanged via Bluetooth between smartphones that are nearby and have a tracing app such as the Corona-Warn-App on them."
+                },
+                {
                     "term": "Signature",
                     "anchor": "signature",
-                    "description": "A digital signature is a signature that is created by a cryptographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> <br/><br/> As a consequence, the signature must fulfill the following requirements: <br/><ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
+                    "description": "A digital signature is a signature that is created by a cryptographic function from a digital document. Digital signatures provide the following properties: <ul><li>Non-repudiation: The issuer cannot retrospectively deny signing the document.</li><li>Integrity: Altering the document invalidates the signature.</li><li>Authenticity: It is clear who signed the document.</li></ul> As a consequence, the signature must fulfill the following requirements: <ul><li>The signature must be computationally verifiable </li><li>Verifying the signature must be easy - forging a valid signature must be hard</li><li>The signature is only valid for the signed document and no other documents </li><li>The issuer must not be able to deny signing the document.</li></ul>"
+                },
+                {
+                    "term": "Standardized Name",
+                    "anchor": "standardized_name",
+                    "description": "Standardized names refer to names that are additionally presented with capital letters in standardized Latin script due to their country-specific spelling. This can occur, for example, with Cyrillic, Arabic, but also German script. For example \"Ö\" becomes \"OE\"."
                 }
             ],
             "T": [
+                {
+                    "term": "TAN",
+                    "anchor": "tan",
+                    "description": "10-digit letter number combination for reporting positive test results. These can be requested via the TAN hotline. <b>National:</b> 0800 7540002 and <b>international:</b> +49 30 498 75402"
+                },
+                {
+                    "term": "Technical Validity",
+                    "anchor": "technical_validity",
+                    "description": "The certificate as a document has an issue date and a technical expiration date, just like your passport or ID card, for example. For all certificates, the expiration date is set by the issuer of the certificate. Currently in Germany, the EU digital vaccination, test and recovery certificates are usually issued with a technical validity of one year from the date of issue."
+                },
+                {
+                    "term": "Temporary Exposure Keys",
+                    "anchor": "temporary_exposure_keys",
+                    "description": "Anonymous keys shared between two devices when they were in each other's vicinity. With the help of these keys, infected persons are able to inform others about the infection."
+                },
                 {
                     "term": "Test Certificate",
                     "anchor": "test_certificate",
@@ -2251,19 +2489,29 @@
             ],
             "V": [
                 {
-                    "term": "Validity of an EU digital COVID certificate",
+                    "term": "Validity of an EU Digital COVID Certificate",
                     "anchor": "validity",
-                    "description": "Basically, we distinguish between <ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. <br/><br/> <b>Vaccination Certificate</b> <br/><br/>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g. in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So the effective validity of the vaccination counts from the last vaccination date (date X).  <br/><br/> A certificate is valid until either the technical validity or the effective validity expires."
+                    "description": "Basically, we distinguish between <ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. <br/><br/> <b>Vaccination Certificate</b> <br/>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g., in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So, the effective validity of the vaccination counts from the last vaccination date (date X).  <br/><br/> <b>Recovery Certificate</b> <br/> In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days <br/><br/> <b>Test Certificate</b> <br/>Test certificates are usually issued with a technical validity of 2 days. How long such a test result is accepted depends on the federal state. Typically, in Germany, negative PCR test results are accepted for 48 hours and rapid test results for 24 hours. <br/><br/>A certificate is valid until either the technical validity or the effective validity expires."
                 },
                 {
-                    "term": "Vaccination certificate",
+                    "term": "Vaccination Certificate",
                     "anchor": "vaccination_certificate",
                     "description": "The vaccination certificate is a <a href='#glossary_digital_certificate'>digital certificate</a> issued for a person who has received a vaccination with a vaccine approved in the EU. Each vaccination certificate documents exactly one vaccination event (one dose). <br/><br/>The vaccination certificate represents a digital form of a <a href='#glossary_vaccination_proof'>proof of vaccination</a>."
                 },
                 {
+                    "term": "Vaccination Certificate Token",
+                    "anchor": "vaccination_certificate_token",
+                    "description": "A QR code generated by vaccination centers or doctors' offices that can be scanned in the Corona-Warn-App, for example, to document a vaccination."
+                },
+                {
+                    "term": "Vaccination Status",
+                    "anchor": "vaccination_status",
+                    "description": "Vaccination status includes information such as the number of vaccinations given, the vaccine used, and the validity of the vaccination."
+                },
+                {
                     "term": "Verifier-App / Checking a certificate / Verifying a certificate",
                     "anchor": "verify",
-                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the CovPassCheck app), the check app. <br/><br/> Individual countries may have different implementations of the check app. However all check apps use the same - consolidated on a European gateway - keys of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
+                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the <a href='#glossary_covpasscheck'>CovPassCheck app</a>), the check app. <br/><br/> Individual countries may have different implementations of the check app. However, all check apps use the same keys - consolidated on a European gateway - of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
                 }
             ]
         },
