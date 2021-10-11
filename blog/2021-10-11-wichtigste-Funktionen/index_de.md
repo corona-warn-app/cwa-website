@@ -54,9 +54,11 @@ Wählen Sie den **Reiter „Check-in“** unten in der Registerkarte Ihrer Coron
 
 In der Video-Anleitung können Sie alle Schritte sehen: 
 
+<br></br>
+
 {{/assets/video/02qrcode-scannen}}
 
-
+<br></br>
 
 **So können Sie Ihre Gäste in Vertretung warnen:**
 
