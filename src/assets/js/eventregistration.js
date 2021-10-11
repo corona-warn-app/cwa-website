@@ -92,8 +92,8 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
       if (checkCSVHeaders(json)) {
         if (json.length > 1) {
           if (json.length < 101) {
-            document.getElementById("generateProgress").classList.remove('d-none'); 
-            document.getElementById("generateProgress").classList.add('d-inline-block');
+            document.getElementById('generateMultiQR').disabled = true;
+            document.getElementById("modal").classList.remove('d-none'); 
             setTimeout(() => {
               GenerateMultiQRCode(json).then(function (qrList) {
                 if (qrList.length > 0) {
@@ -101,6 +101,7 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
                     printPages(pages)
                   });
                 }
+                
               });
             },100)
             
@@ -108,6 +109,7 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
         } else document.getElementById('qr-error-filewithnodata').style.display = 'block';
       } else document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
     });
+    document.getElementById('generateMultiQR').disabled = false;
   }
 });
 
@@ -144,8 +146,7 @@ document.getElementById('printCode').addEventListener('click', function (e) {
 
 document.getElementById('downloadMultiCode').addEventListener('click', function (e) {
   e.preventDefault();
-  document.getElementById("PDFprogress").classList.remove('d-none'); 
-  document.getElementById("PDFprogress").classList.add('d-inline-block');
+  document.getElementById("modal").classList.remove('d-none'); 
   setTimeout(() => {
     let pages = document.querySelectorAll('#qrContainer canvas')
     let today = new Date();
@@ -164,8 +165,7 @@ document.getElementById('downloadMultiCode').addEventListener('click', function 
       if (index < pages.length - 1) doc.addPage();
     })
     doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
-    document.getElementById("PDFprogress").classList.remove('d-inline-block');
-    document.getElementById("PDFprogress").classList.add('d-none');
+    document.getElementById("modal").classList.add('d-none');
   }, 500)
 
 });
@@ -323,6 +323,10 @@ function GenerateQRCode() {
   let locationtype = +document.getElementById('locationtype').value;
 
   let locationData = new proto.CWALocationData();
+
+  let grid = document.getElementById("pageLayout").value.split('x')
+  let col = grid[0];
+
   locationData.setVersion(1);
   locationData.setType(locationtype);
   locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthHours * 60 + defaultcheckinlengthMinutes);
@@ -381,10 +385,11 @@ function GenerateQRCode() {
       let qrImg = new Image();
       qrImg.onload = function () {
         ctx.drawImage(qrImg, 275, 230);
-        ctx.font = "30px sans-serif";
+        let fontSize = (30+parseInt(col))*2;
+        ctx.font = fontSize+"px sans-serif";
         ctx.fillStyle = "black";
         ctx.fillText(description, 225, 1460);
-        ctx.fillText(address, 225, 1510);
+        ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
         PrintLayout();
       }
       qrImg.src = qrUrl;
@@ -407,17 +412,20 @@ function PrintLayout() {
     let canvas = document.getElementById("eventqrcode");
     let ctx = canvas.getContext('2d');
 
+    let resolution = Math.sqrt(col * row) / 2;
+    let width = 1654 * resolution;
+    let height = 2339 * resolution;
     if (col == row) {
-      ctx.width = 1654;
-      ctx.height = 2339;
-      canvas.width = 1654;
-      canvas.height = 2339;
+      ctx.width = width;
+      ctx.height = height;
+      canvas.width = width;
+      canvas.height = height;
       canvas.style.maxWidth = "100%";
     } else {
-      ctx.width = 2339;
-      ctx.height = 1654;
-      canvas.width = 2339;
-      canvas.height = 1654;
+      ctx.width = height;
+      ctx.height = width;
+      canvas.width = height;
+      canvas.height = width;
       canvas.style.maxWidth = "100%";
     }
 
@@ -438,6 +446,9 @@ async function GenerateMultiQRCode(data) {
   return new Promise((resolve) => {
     let qrList = [];
     let error = false;
+    let grid = document.getElementById("pageTemplate").value.split('x')
+    let col;
+    col = grid[0];
 
     let imgtemplate = new Image();
     imgtemplate.src = '/assets/img/pt-poster-1.0.0.png';
@@ -520,11 +531,12 @@ async function GenerateMultiQRCode(data) {
 
               ctxm.drawImage(canvas, 275, 230);
 
-              ctxm.font = "30px sans-serif";
+              let fontSize = (30+parseInt(col))*2;
+              ctxm.font = fontSize+"px sans-serif";
               ctxm.fillStyle = "black";
 
               ctxm.fillText(description, 225, 1460);
-              ctxm.fillText(address, 225, 1460 + 50);
+              ctxm.fillText(address, 225, 1460 + 50 + (fontSize/2));
               qrList.push(canvasm)
             });
           } else {
@@ -746,6 +758,6 @@ async function printPages(data) {
       loadSliderDotClasses(slider);
     });
   }
-  document.getElementById("generateProgress").classList.remove('d-inline-block'); 
-  document.getElementById("generateProgress").classList.add('d-none');
+  document.getElementById("modal").classList.add('d-none');
+  document.getElementById('generateMultiQR').disabled = false;
 }
