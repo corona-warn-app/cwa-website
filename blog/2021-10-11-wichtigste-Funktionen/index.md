@@ -37,13 +37,21 @@ On your app’s home screen select **"Planning an event?"** and then tap “Crea
 
 You can then enter **information about your event**: After selecting the category (e.g. retail or private party), you can specify a description of the event, the location and start and end dates. The Corona-Warn-App uses this information to create a QR code that you can print out and post on site. 
 
+<br></br>
+
 {{/assets/video/create-qr-code-en}}
+
+<br></br>
 
 **How to check in to and out of events:**
 
 Select the **"Check-in" tab** at the bottom of your Corona-Warn-App. There you find an overview of existing events and can check in to or out of events. To check in, tap **"Scan QR code"**. You can then scan the QR code that the event organizer has posted and select "Check in". When you leave the event, you can check out again in this section of the app by tapping "Check out now" under the event.
 
+<br></br>
+
 {{/assets/video/check-in-en}}
+
+<br></br>
 
 **How to warn your guests in place of another person:**
 
