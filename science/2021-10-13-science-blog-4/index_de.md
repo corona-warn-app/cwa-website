@@ -55,7 +55,7 @@ Wir möchten uns hier bei allen Nutzenden der Corona-Warn-App bedanken, besonder
 - Im Mittel wurde eine Warnung 3,7 Tage nach einer Risikobegegnung erhalten (die Hälfte der Warnungen nach etwa 3 Tagen).
 -  Etwa jede fünfte Person, die eine Begegnung mit erhöhtem Risiko hatte und einen PCR-Test veranlasste, wurde anschließend positiv getestet. Bei denjenigen ohne Risikomitteilung war der Anteil weniger als halb so hoch. *Die CWA warnt also die Richtigen!*
 
-Wir gehen zunächst noch einmal auf den [Zweck der Datenspende] ein und beschreiben [welche Daten erhoben werden](#32-erhobene-daten).
+Wir gehen zunächst noch einmal auf den [Zweck der Datenspende](#31-zweck-der-datenspende) ein und beschreiben [welche Daten erhoben werden](#32-erhobene-daten).
 
 ## 3 Privacy Preserving Analytics
 
@@ -90,13 +90,13 @@ Darüber hinaus können die erhobenen Daten zur zeitlichen und räumlichen Verte
 
 Folgende Daten werden erhoben (siehe [github.com/corona-warn-app/cwa-ppa-server/../PPAC](https://github.com/corona-warn-app/cwa-ppa-server/blob/main/docs/PPAC.md)):
 
-- [Technische Metadaten]() (täglich)
-- [Metadaten der Nutzenden] (User) (täglich, optional) 
-- [Metadaten der Endgeräte] (Client) (täglich) 
-- [Gewarnte Personen (Expositionsrisiko)] (Exposure Risk) (täglich)
-- [Testergebnisse] (Test Result) (anlassbezogen)
-- [Schlüsselteilung] (Key Submission) (anlassbezogen)
-- [Exposure-Windows und Scan-Instances] (ENF) (täglich)
+- [Technische Metadaten](#321-technische-metadaten) (täglich)
+- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden) (User) (täglich, optional) 
+- [Metadaten der Endgeräte](#323-metadaten-der-endgeräte) (Client) (täglich) 
+- [Gewarnte Personen (Expositionsrisiko)](#324-gewarnte-personen-expositionsrisiko) (Exposure Risk) (täglich)
+- [Testergebnisse](#325-testergebnisse) (Test Result) (anlassbezogen)
+- [Schlüsselteilung](#326-schlüsselteilung) (Key Submission) (anlassbezogen)
+- [Exposure-Windows und Scan-Instances](#327-exposure-windows-und-scan-instances) (ENF) (täglich)
 
 
 
@@ -133,8 +133,8 @@ Sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-
 
 - Risiko-Level ("rote" oder "grüne" Kachel); gibt es eine Änderung zum Vortag? (`risk_level`, `risk_level_changed`), 
 - im Fall einer Risikobegegnung das jüngste Datum mit diesem Risiko-Level (Entspricht der Anzeige auf dem Homescreen; siehe Abbildung); gibt es eine Änderung zum Vortag? (`most_recent_date_at_risk_level`, `most_recent_date_changed`), 
-- [Metadaten der Nutzenden], 
-- [Technische Metadaten].
+- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden), 
+- [Technische Metadaten](#321-technische-metadaten).
 
 Es liegen 1.852.088.985 Datensätze vor (Datenstand: 7. Oktober 2021).
 
@@ -149,8 +149,8 @@ Wenn ein Test registriert wurde, werden bei Erhalt des Testergebnisses bzw. nach
   = Verzug zwischen jüngster Begegnung (most recent notified exposure) und Testregistrierung (in Tagen), 
 - `hours_since_high_risk_warning_at_test_registration` [B]
   = Verzug zwischen Warnung und Testregistrierung (in Stunden), 
-- [Metadaten der Nutzenden], 
-- [Technische Metadaten].
+- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden), 
+- [Technische Metadaten](#321-technische-metadaten).
 
 Dies erfolgt:
 
@@ -175,8 +175,8 @@ Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festge
     = Verzug zwischen jüngster Begegnung (most recent notified exposure) und Testregistrierung (in Tagen)
   - `hours_since_high_risk_warning_at_test_registration` [B]
     = Verzug zwischen Warnung und Testregistrierung (in Stunden)
-  - [Metadaten der Nutzenden]
-  - [Technische Metadaten]
+  - [Metadaten der Nutzenden](#322-metadaten-der-nutzenden),
+  - [Technische Metadaten](#321-technische-metadaten).
 - Schlüsselteilung mit Metadaten der Endgeräte
   - Schlüssel geteilt? (`submitted`)
   - Erweitertes Einverständnis erteilt(`advanced_consent_given`)
@@ -188,12 +188,12 @@ Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festge
     - Warnung anderer (3)
     - Symptome (4)
     - Symptombeginn (5)
-  - [Metadaten der Endgeräte]
-  - [Technische Metadaten]
+  - [Metadaten der Endgeräte](#322-metadaten-der-nutzenden),
+  - [Technische Metadaten](#321-technische-metadaten).
 
 Es liegen jeweils 251.161 Datensätze vor (Datenstand: 7. Oktober 2021).
 
-  #### 3.2.6 Exposure-Windows und Scan-Instances
+  #### 3.2.7 Exposure-Windows und Scan-Instances
 
 Über die vom Google bzw. Apple Exposure-Notification-Framework (ENF; siehe [Google Exposure Notifications API](https://developers.google.com/android/exposure-notifications/exposure-notifications-api), [Apple Exposure Notifications API](https://developer.apple.com/documentation/exposurenotification#overview)) lokal aufgezeichneten Daten liegen folgende Angaben vor:
 
@@ -205,8 +205,8 @@ Es liegen jeweils 251.161 Datensätze vor (Datenstand: 7. Oktober 2021).
   - typische Dämpfung (`typical_attenuation`), 
   - minimale Dämpfung (`minimum_attenuation`), 
   - Sekunden seit dem letzten Scan (`seconds_since_last_scan`), 
-- [Metadaten der Endgeräte], 
-- [Technische Metadaten].
+- [Metadaten der Endgeräte](#322-metadaten-der-nutzenden), 
+- [Technische Metadaten](#321-technische-metadaten).
 
 Es liegen 1.036.601.141 Datensätze zu Exposure-Windows bzw. 3.019.619.946 Datensätze zu den Scan-Instanzen vor (Datenstand: 7. Oktober 2021).
 
@@ -492,6 +492,6 @@ Die auf Basis der gespendeten Testergebnisse getätigte Schätzung des Anteils d
 
 ## 7 So geht es weiter
 
-In den kommenden Wochen werden wir uns auch weiterhin mit dem Thema "Datenspende der Corona-Warn-App" beschäftigen. Wir wollen untersuchen, welche Erkenntnisse es beim Prozess der [Schlüsselteilung] und bei der BLE-Messung über das ENF ([Exposure-Windows und Scan-Instances]) zu gewinnen gibt.
+In den kommenden Wochen werden wir uns auch weiterhin mit dem Thema "Datenspende der Corona-Warn-App" beschäftigen. Wir wollen untersuchen, welche Erkenntnisse es beim Prozess der [Schlüsselteilung](#326-schlüsselteilung) und bei der BLE-Messung über das ENF [(Exposure-Windows und Scan-Instances)](#327-exposure-windows-und-scan-instances) zu gewinnen gibt.
 
 Bevor wir dies tun, wollen wir jedoch einen kurzen Abstecher machen und auf die Anzahl der aktiven Apps/Geräte bzw. aktiven Nutzenden ausführlicher eingehen. Dazu werden wir auch auf die Daten aus dem Apple App-Store und dem Google Play-Store eingehen und die unterschiedlichen Kennzahlen, die in ihnen zur Verfügung gestellt werden, in Beziehung zueinander und zu weiteren Abschätzungen setzten.
