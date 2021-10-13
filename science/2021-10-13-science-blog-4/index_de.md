@@ -98,23 +98,23 @@ Folgende Daten werden erhoben (siehe [github.com/corona-warn-app/cwa-ppa-server/
 - [Schlüsselteilung] (Key Submission) (anlassbezogen)
 - [Exposure-Windows und Scan-Instances] (ENF) (täglich)
 
-xxxxxx
 
-#### Technische Metadaten
+
+#### 3.2.1 Technische Metadaten
 
 Sämtliche Datensätze enthalten:
 
 - Datum der Spende (`submitted_at`),
 - Authorisierungs-Flags (`android_ppac_basic_integrity`,   `android_ppac_cts_profile_match`,  `android_ppac_evaluation_type_basic`,  `android_ppac_evaluation_type_hardware_backed`), zur Vorbeugung gegen Missbrauch.
 
-### Metadaten der Nutzenden
+#### 3.2.2 Metadaten der Nutzenden
 
 Von den Nutzenden können folgende Daten optional angegeben werden:
 
 - Bundesland bzw. Landkreis (`federal_state`, `administrative_unit`),
 - Altersgruppe (<30, 30-59, 60+) (`age_group`).
 
-### Metadaten der Endgeräte
+#### 3.2.3 Metadaten der Endgeräte
 
 Über die Endgeräte werden folgende Daten übermittelt:
 
@@ -123,7 +123,7 @@ Von den Nutzenden können folgende Daten optional angegeben werden:
 - OS-Version (`ios_version_major`, `ios_version_minor`, `ios_version_patch` bzw. `android_api_level`).
 
 
-### Gewarnte Personen (Expositionsrisiko)
+#### 3.2.4 Gewarnte Personen (Expositionsrisiko)
 
 Sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-ins) (`pt_..`) werden folgende Daten zum Expositions-Risiko (Exposure Risk) erhoben:
 
@@ -132,7 +132,7 @@ Sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-
 - [Metadaten der Nutzenden], 
 - [Technische Metadaten].
 
-### Testergebnisse
+#### 3.2.5 Testergebnisse
 
 Wenn ein Test registriert wurde, werden bei Erhalt des Testergebnisses bzw. nach dem Verstreichen einer festgelegten Frist (gegenwärtig 7 Tage) folgende Daten zum Testprozess erhoben:
 
@@ -151,7 +151,7 @@ Dies erfolgt:
 - [A] differenziert nach PCR bzw. Antigen-Schnelltest (RAT) (Werte von `test_result`) und
 - [B] sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-ins) (`pt_..`).
 
-### Schlüsselteilung
+#### 3.2.6 Schlüsselteilung
 
 Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festgelegten Frist (gegenwärtig 36 Stunden) werden folgende Daten zur Teilung von Diagnoseschlüsseln übermittelt:
 
@@ -183,7 +183,7 @@ Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festge
   - [Metadaten der Endgeräte]
   - [Technische Metadaten]
 
-  ### Exposure-Windows und Scan-Instances
+  #### 3.2.6 Exposure-Windows und Scan-Instances
 
 Über die vom Google bzw. Apple Exposure-Notification-Framework (ENF; siehe [Google Exposure Notifications API](https://developers.google.com/android/exposure-notifications/exposure-notifications-api), [Apple Exposure Notifications API](https://developer.apple.com/documentation/exposurenotification#overview)) lokal aufgezeichneten Daten liegen folgende Angaben vor:
 
