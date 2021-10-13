@@ -16,5 +16,4 @@ The Corona-Warn-App's project team continuously improves the app's performance w
 
 For app users, this means: Previously, an encounter between two people had to last at least 13 minutes in order to be considered for an **encounter with an increased risk (red tile)**. Now, the app considers encounters of at least 9 minutes. Thus, encounters that represent an actual relevant contact with COVID-19 infected persons can be detected even more accurately and represented accordingly in the app as a warning about an encounter with increased risk. This **increases the number of warnings** by approximately 16 percent. The parameters are adjusted on the server. Users don't have to do anything.
  
-Most recently, the project team adjusted the risk calculation at the [end of March](https://www.coronawarn.app/en/blog/2021-03-19-risk-calculation-improvement/) in response to a virus mutation. It continues to work on improving the measurements and the resulting configuration parameters. 
-
+Most recently, the project team adjusted the risk calculation at the [end of March](/en/blog/2021-03-19-risk-calculation-improvement/) in response to a virus mutation. It continues to work on improving the measurements and the resulting configuration parameters.
