@@ -28,7 +28,7 @@ Die Länder, die unter der Zertifikatsprüfung in der Corona-Warn-App aufgeliste
 
 Zuvor hat die App in diesem Fall angezeigt, dass das Zertifikat im gewählten Land gültig sei. Im Text darunter wies sie aber darauf hin, dass für das Zertifikat derzeit keine Einreiseregeln für das gewählte Land vorhanden sind. Mit Version 2.8 wird für die Nutzer\*innen klar erkennbar, dass die Gültigkeit nicht überprüft werden konnte, da das entsprechende Land keine Einreiseregeln hinterlegt hat. 
 
-Nutzer\*innen können mit der Zertifikatsprüfung seit [Version 2.6](https://www.coronawarn.app/de/blog/2021-07-28-cwa-version-2-6/) vor einer Reise prüfen, ob ihre Zertifikate in dem Land, in das sie reisen, gültig sind. 
+Nutzer\*innen können mit der Zertifikatsprüfung seit [Version 2.6](/de/blog/2021-07-28-cwa-version-2-6/) vor einer Reise prüfen, ob ihre Zertifikate in dem Land, in das sie reisen, gültig sind. 
 
 <br></br>
 <center> <img src="./gültigkeit-neu-de.png" title="Zertifikat nicht prüfbar" style="align: center"></center>

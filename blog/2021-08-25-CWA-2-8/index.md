@@ -25,7 +25,7 @@ In addition, the project team has adapted the **EU certificate check**. If a cou
 
 Previously, the app indicated in this case that the certificate is valid in the selected country. In the text below, however, it was pointed out that there are currently no entry rules available for the selected country. With version 2.8, users can clearly see that the certificate's validity could not be checked because the relevant country has not defined any entry rules. 
 
-Since [version 2.6](https://www.coronawarn.app/en/blog/2021-07-28-cwa-version-2-6/) of the Corona-Warn-App, users can check whether their certificates are valid in their destination country before travelling.  
+Since [version 2.6](/en/blog/2021-07-28-cwa-version-2-6/) of the Corona-Warn-App, users can check whether their certificates are valid in their destination country before travelling.  
 
 <br></br>
 <center> <img src="./validity-new-en.png" title="certificate cannot be validated" style="align: center"></center>
@@ -41,4 +41,3 @@ Since [version 2.6](https://www.coronawarn.app/en/blog/2021-07-28-cwa-version-2-
 Generally, every European country that supports EU digital COVID certificates has the option to store rules on the corresponding EU server that the Corona-Warn-App can compare for verification.
 
 Version 2.8 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
-
