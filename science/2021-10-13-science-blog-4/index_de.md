@@ -114,6 +114,8 @@ Von den Nutzenden können folgende Daten optional angegeben werden:
 - Bundesland bzw. Landkreis (`federal_state`, `administrative_unit`),
 - Altersgruppe (<30, 30-59, 60+) (`age_group`).
 
+Es liegen 1.862.487.469 Datensätze vor (Datenstand: 7. Oktober 2021).
+
 #### 3.2.3 Metadaten der Endgeräte
 
 Über die Endgeräte werden folgende Daten übermittelt:
@@ -121,6 +123,8 @@ Von den Nutzenden können folgende Daten optional angegeben werden:
 - CWA-Version (`cwa_version_major`, `cwa_version_minor`, `cwa_version_patch`),
 - Konfigurations-Token (`app_config_etag`),
 - OS-Version (`ios_version_major`, `ios_version_minor`, `ios_version_patch` bzw. `android_api_level`).
+
+Es liegen 1.862.486.604 Datensätze vor (Datenstand: 7. Oktober 2021).
 
 
 #### 3.2.4 Gewarnte Personen (Expositionsrisiko)
@@ -131,6 +135,8 @@ Sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-
 - im Fall einer Risikobegegnung das jüngste Datum mit diesem Risiko-Level (Entspricht der Anzeige auf dem Homescreen; siehe Abbildung); gibt es eine Änderung zum Vortag? (`most_recent_date_at_risk_level`, `most_recent_date_changed`), 
 - [Metadaten der Nutzenden], 
 - [Technische Metadaten].
+
+Es liegen 1.852.088.985 Datensätze vor (Datenstand: 7. Oktober 2021).
 
 #### 3.2.5 Testergebnisse
 
@@ -150,6 +156,8 @@ Dies erfolgt:
 
 - [A] differenziert nach PCR bzw. Antigen-Schnelltest (RAT) (Werte von `test_result`) und
 - [B] sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-ins) (`pt_..`).
+
+Es liegen 4.313.299 Datensätze vor (Datenstand: 7. Oktober 2021).
 
 #### 3.2.6 Schlüsselteilung
 
@@ -183,6 +191,8 @@ Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festge
   - [Metadaten der Endgeräte]
   - [Technische Metadaten]
 
+Es liegen jeweils 251.161 Datensätze vor (Datenstand: 7. Oktober 2021).
+
   #### 3.2.6 Exposure-Windows und Scan-Instances
 
 Über die vom Google bzw. Apple Exposure-Notification-Framework (ENF; siehe [Google Exposure Notifications API](https://developers.google.com/android/exposure-notifications/exposure-notifications-api), [Apple Exposure Notifications API](https://developer.apple.com/documentation/exposurenotification#overview)) lokal aufgezeichneten Daten liegen folgende Angaben vor:
@@ -197,6 +207,8 @@ Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festge
   - Sekunden seit dem letzten Scan (`seconds_since_last_scan`), 
 - [Metadaten der Endgeräte], 
 - [Technische Metadaten].
+
+Es liegen 1.036.601.141 Datensätze zu Exposure-Windows bzw. 3.019.619.946 Datensätze zu den Scan-Instanzen vor (Datenstand: 7. Oktober 2021).
 
 ## 4 Device- und Nutzerdaten der Teilnehmenden
 
