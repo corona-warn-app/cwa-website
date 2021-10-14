@@ -26,10 +26,8 @@ Außerdem können Nutzer\*innen der Corona-Warn-App nun verschlüsselte Zufalls-
 
 Da die Schweiz kein Mitglied der Europäischen Union ist, fällt sie nicht unter das Rahmenabkommen des EU eHealth-Network. Um die Interoperabilität zwischen Deutschland und der Schweiz zu ermöglichen, mussten Regierungsvertreter auf beiden Seiten eine bilaterale Lösung mit einer Rechtsgrundlage erarbeiten. Damit der Austausch mit der Schweiz funktioniert, müssen Nutzer\*innen nichts tun, außer ihre Corona-Warn-App auf Version 1.15 zu aktualisieren.   
 
-Neben der Schweizer App ist die Corona-Warn-App derzeit mit 16 weiteren Apps von EU-Mitgliedsstaaten interoperabel, darunter Österreich, Italien und Spanien. Eine aktuelle Liste aller Länder finden Sie in den Einstellungen der Corona-Warn-App unter *Risiko-Ermittlung*, sowie [hier](https://www.coronawarn.app/de/faq/#interoperability_countries).
+Neben der Schweizer App ist die Corona-Warn-App derzeit mit 16 weiteren Apps von EU-Mitgliedsstaaten interoperabel, darunter Österreich, Italien und Spanien. Eine aktuelle Liste aller Länder finden Sie in den Einstellungen der Corona-Warn-App unter *Risiko-Ermittlung*, sowie [hier](/de/faq/#interoperability_countries).
 
 <br></br>
 <center> <img src="./Länderliste_Schweiz.png" title="Liste teilnehmender Länder" style="align: center"></center>
 <br></br>
-
-
