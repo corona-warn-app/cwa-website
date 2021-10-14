@@ -4,7 +4,7 @@ page-description: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schn
 page-name: science-blog-4
 page-name_de: science-blog-4
 author: CWA Team
-date: "2021-10-13"
+date: "2021-10-15"
 layout: science
 ---
 
@@ -61,7 +61,7 @@ Wir gehen zunächst noch einmal auf den [Zweck der Datenspende](#31-zweck-der-da
 
 PPA steht für *Privacy Preserving Analytics*. Mit diesem Verfahren ist es möglich, dass Nutzende der CWA die in ihrer App auf ihrem Smartphone anfallenden Daten einer auswertenden Instanz zur Verfügung stellen, ohne dabei ihre Identität preiszugeben.
 
-Seit dem 5. März 2021 spenden CWA-Nutzende über diesen Weg täglich operationale Daten, anonym aber authentisiert. Hierbei erfolgt eine Überprüfung des spendenden Endgerätes, sodass sichergestellt wird, dass nur eine genuine Corona-Warn-App von einem genuinen Endgerät Daten übermittelt (für eine ausführliche Dokumentation siehe [github.com/corona-warn-app/cwa-ppa-server](https://github.com/corona-warn-app/cwa-ppa-server)).
+Seit dem 5. März 2021 spenden CWA-Nutzende über diesen Weg täglich operationale Daten, anonym, aber authentisiert. Hierbei erfolgt eine Überprüfung des spendenden Endgerätes, sodass sichergestellt wird, dass nur eine genuine Corona-Warn-App von einem genuinen Endgerät Daten übermittelt (für eine ausführliche Dokumentation siehe [github.com/corona-warn-app/cwa-ppa-server](https://github.com/corona-warn-app/cwa-ppa-server)).
 
 Die CWA-Datenspende ist nicht mit der [Corona-Datenspende](https://corona-datenspende.de/) zu verwechseln. In der Corona-Datenspende spenden etwa ein halbe Million Nutzende Körpertemperatur, Ruhepuls- und andere Vitaldaten, die sie über ihre Fitness-Armbänder erhoben haben.
 
@@ -361,7 +361,7 @@ Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).
 
 Von den 2.373.969 gespendeten Angaben zu Antigen-Schnelltest-Testergebnissen und deren Verzügen wurden 1.532.490 (64.6%) bereits innerhalb der ersten Stunde nach Testregistrierung erhalten. Nach 24 Stunden waren insgesamt 2.175.533 (91.6%) Tests zugestellt. Die stundengenaue Verteilung des Verzugs zwischen Testregistrierung und Erhalt des Testergebnisses ist in der folgenden Abbildung dargestellt. Im Mittel war das Testergebnis 10,5 Stunden nach Testregistrierung übermittelt (Median: 0 Stunden).
 
-Ein Grund für die verhältnismäßig lange Übermittlungsdauer der Antigen-Schnelltest-Testergebnisse liegt darin, dass die CWA nicht kontinuierlich nach aktuellen Schnelltestergebnissen sucht. Um das Ergebnis möglichst zeitnah in der CWA zu erhalten, muss der Test in der App manuell aktualisiert werden bis ein Ergebnis vorliegt. Zwar ruft die Corona-Warn-App Testergebnisse auch automatisch im Hintergrund ab, je nach Betriebssystem und Verfügbarkeit eines WLAN erfolgt dies aber nur nach mitunter etwas längeren Zeitperioden.
+Ein Grund für die verhältnismäßig lange Übermittlungsdauer der Antigen-Schnelltest-Testergebnisse liegt darin, dass die CWA nicht kontinuierlich nach aktuellen Schnelltestergebnissen sucht. Um das Ergebnis möglichst zeitnah in der CWA zu erhalten, muss der Test in der App manuell aktualisiert werden, bis ein Ergebnis vorliegt. Zwar ruft die Corona-Warn-App Testergebnisse auch automatisch im Hintergrund ab, je nach Betriebssystem und Verfügbarkeit eines WLAN erfolgt dies aber nur nach mitunter etwas längeren Zeitperioden.
 Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest).
 
 <figure>
@@ -496,7 +496,7 @@ Die Daten geben auch Auskunft darüber, ob die Warnung durch die CWA auch eher z
     <figcaption aria-hidden="true">Fig. 19: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (PCR).</figcaption>
 </figure>
 
-Die folgende Grafik zeigt den Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf. Der Anteil der positiv getesteten Personen, die eine rote Warnung erhalten haben ist relativ konstant. Ein Vergleich mit den [RKI-Testzahlen](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) zeigt eine gute Übereinstimmung mit dem Positivenanteil der nicht gewarnten Personen. Der leicht höhere Anteil an positiv getesteten Personen ist zum einen in der unterschiedlichen zugrunde liegenden Erhebungspopulation zu suchen. So sind Kinder unter 16 Jahren eher selten Nutzer der Corona-Warn-App. Zum anderen sind in den RKI-Zahlen auch in zunehmenden Maße Routine- und Pooling-Testergebnisse enthalten, die wahrscheinlich selten bis gar nicht über die Corona-Warn-App registriert werden.
+Die folgende Grafik zeigt den Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf. Der Anteil der positiv getesteten Personen, die eine rote Warnung erhalten haben, ist relativ konstant. Ein Vergleich mit den [RKI-Testzahlen](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) zeigt eine gute Übereinstimmung mit dem Positivenanteil der nicht gewarnten Personen. Der leicht höhere Anteil an positiv getesteten Personen ist zum einen in der unterschiedlichen zugrunde liegenden Erhebungspopulation zu suchen. So sind Kinder unter 16 Jahren eher selten Nutzer der Corona-Warn-App. Zum anderen sind in den RKI-Zahlen auch in zunehmenden Maße Routine- und Pooling-Testergebnisse enthalten, die wahrscheinlich selten, bis gar nicht über die Corona-Warn-App registriert werden.
 
 <figure>
     <img src="./ppa_risk_infection_ct_timeline_pcr.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR)."/>
@@ -592,4 +592,4 @@ Die auf Basis der gespendeten Testergebnisse getätigte Schätzung des Anteils d
 
 In den kommenden Wochen werden wir uns auch weiterhin mit dem Thema "Datenspende der Corona-Warn-App" beschäftigen. Wir wollen untersuchen, welche Erkenntnisse es beim Prozess der [Schlüsselteilung](#326-schlüsselteilung) und bei der BLE-Messung über das ENF [(Exposure-Windows und Scan-Instances)](#327-exposure-windows-und-scan-instances) zu gewinnen gibt.
 
-Bevor wir dies tun, wollen wir jedoch einen kurzen Abstecher machen und auf die Anzahl der aktiven Apps/Geräte bzw. aktiven Nutzenden ausführlicher eingehen. Dazu werden wir auch auf die Daten aus dem Apple App-Store und dem Google Play-Store eingehen und die unterschiedlichen Kennzahlen, die in ihnen zur Verfügung gestellt werden, in Beziehung zueinander und zu weiteren Abschätzungen setzten.
+Bevor wir dies tun, wollen wir jedoch einen kurzen Abstecher machen und auf die Anzahl der aktiven Apps/Geräte bzw. aktiven Nutzenden ausführlicher eingehen. Dazu werden wir auch auf die Daten aus dem Apple App-Store und dem Google Play-Store eingehen und die unterschiedlichen Kennzahlen, die in ihnen zur Verfügung gestellt werden, in Beziehung zueinander und zu weiteren Abschätzungen setzen.
