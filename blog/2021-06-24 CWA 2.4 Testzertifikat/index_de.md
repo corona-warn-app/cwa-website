@@ -59,7 +59,7 @@ Das Testergebnis wird nun automatisch dem **Kontakt-Tagebuch** hinzugefügt, sob
 <center> <img src="./tests-kontakt-tagebuch.png" title="Tests im Kontakt-Tagebuch" style="align: center"></center>
 <br></br>
 
-In die **freiwillige Datenspende** fließen nun auch Warnungen ein, die Nutzer\*innen aufgrund eines positiven Schnelltests teilen, wie es seit [Version 1.13](https://www.coronawarn.app/de/blog/2021-03-04-corona-warn-app-version-1-13/) schon für PCR-Tests möglich ist. Des Weiteren erfasst die Datenspende Datenpunkte zu Warnungen, die auf die Funktion der Event-Registrierung zurückzuführen sind - analog dazu, wie bereits erfasst wird, dass Nutzer\*innen auf Basis der Abstandsmessung durch Bluetooth eine Warnung erhalten. Das Projektteam erfasst außerdem, ob Nutzer\*innen ihre Event-Check-Ins mit freigeben. Voraussetzung für die Erfassung ist, dass Nutzer\*innen die freiwillige Datenspende aktiviert haben.
+In die **freiwillige Datenspende** fließen nun auch Warnungen ein, die Nutzer\*innen aufgrund eines positiven Schnelltests teilen, wie es seit [Version 1.13](/de/blog/2021-03-04-corona-warn-app-version-1-13/) schon für PCR-Tests möglich ist. Des Weiteren erfasst die Datenspende Datenpunkte zu Warnungen, die auf die Funktion der Event-Registrierung zurückzuführen sind - analog dazu, wie bereits erfasst wird, dass Nutzer\*innen auf Basis der Abstandsmessung durch Bluetooth eine Warnung erhalten. Das Projektteam erfasst außerdem, ob Nutzer\*innen ihre Event-Check-Ins mit freigeben. Voraussetzung für die Erfassung ist, dass Nutzer\*innen die freiwillige Datenspende aktiviert haben.
 
 ### Schnelltestpartnersuche online ermöglicht Nutzer*innen Testanbieter zu finden, die die CWA unterstützen
 
