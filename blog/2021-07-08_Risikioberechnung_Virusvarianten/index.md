@@ -17,4 +17,4 @@ At this point in time, the scientific evidence is not yet sufficient to make a c
 
 Currently, an encounter with a person testing positive for SARS-CoV-2 must have been measured for at least 9 weighted minutes in a defined proximity area to be considered by the app as an encounter with increased risk ("red tile").
 
-The adjustment of the parameters is done server-sided, so users do not have to do anything here. As soon as there will be a new adjustment, the project team will inform about changes on the blog (https://www.coronawarn.app/en/blog) and on Twitter (https://twitter.com/coronawarnapp).
+The adjustment of the parameters is done server-sided, so users do not have to do anything here. As soon as there will be a new adjustment, the project team will inform about changes on the [blog](/en/blog) and on Twitter (https://twitter.com/coronawarnapp).
