@@ -26,5 +26,4 @@ Furthermore, Corona-Warn-App users can now exchange encrypted random IDs with pe
 
 Since Switzerland isn’t a member of the European Union, it is not covered by the EU eHealth Network agreement. To enable interoperability between Germany and Switzerland, government representatives on both sides had to work out a bilateral solution on a sound legal basis. 
 
-In addition to the Swiss app, the Corona-Warn-App is currently interoperable with 16 other apps from EU member states, including Austria, Italy, and Spain. A current list of all countries can be found in the Corona-Warn-App's settings under *Exposure Logging*, as well as [here](https://www.coronawarn.app/en/faq/#interoperability_countries).  
-
+In addition to the Swiss app, the Corona-Warn-App is currently interoperable with 16 other apps from EU member states, including Austria, Italy, and Spain. A current list of all countries can be found in the Corona-Warn-App's settings under *Exposure Logging*, as well as [here](/en/faq/#interoperability_countries).
