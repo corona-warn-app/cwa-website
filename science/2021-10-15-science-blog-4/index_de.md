@@ -84,7 +84,7 @@ Mit diesem Verständnis können:
 3.	die Nutzerführung optimiert werden,
 4.	gezielte Kommunikationsmaßnahmen gezielter vorbereitet werden.
 
-Darüber hinaus können die erhobenen Daten zur zeitlichen und räumlichen Verteilung bestimmter Ereignisse ausgewertet werden, um in Echtzeit den Pandemieverlauf zu verfolgen und lokale Besonderheiten zu erkennen. Mit diesen Erkenntnissen können Maßnahmen frühzeitig, zielgerichtet und angemessen Maßnahmen ergriffen werden, um einem ungünstigen Pandemieverlauf entgegenzuwirken.
+Darüber hinaus können die erhobenen Daten zur zeitlichen und räumlichen Verteilung bestimmter Ereignisse ausgewertet werden, um in Echtzeit den Pandemieverlauf zu verfolgen und lokale Besonderheiten zu erkennen. Mit diesen Erkenntnissen können Maßnahmen frühzeitig, zielgerichtet und angemessen ergriffen werden, um einem ungünstigen Pandemieverlauf entgegenzuwirken.
 
 ### 3.2 Erhobene Daten
 
