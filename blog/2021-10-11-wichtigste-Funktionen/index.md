@@ -1,6 +1,6 @@
 ---
 page-title: "Why the Corona-Warn-App is important right now"
-page-description: "WWhy the Corona-Warn-App is important right now"
+page-description: "Why the Corona-Warn-App is important right now"
 page-name: cwa-most-important-features
 page-name_de: cwa-most-important-features
 author: Hanna Heine
