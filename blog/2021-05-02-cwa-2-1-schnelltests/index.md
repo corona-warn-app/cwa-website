@@ -9,7 +9,7 @@ layout: blog
 
 ### Eight partners participate from the beginning
 
-Deutsche Telekom and SAP’s project team have integrated the [announced rapid COVID-19 tests](https://www.coronawarn.app/en/blog/2021-03-31-corona-warn-app-test-integration/) in the Corona-Warn-App’s latest version (2.1) launching today. Users can now break infection chains and warn their fellow citizens even faster. The update will be available to all users within the next 48 hours.
+Deutsche Telekom and SAP’s project team have integrated the [announced rapid COVID-19 tests](/en/blog/2021-03-31-corona-warn-app-test-integration/) in the Corona-Warn-App’s latest version (2.1) launching today. Users can now break infection chains and warn their fellow citizens even faster. The update will be available to all users within the next 48 hours.
 
 <!-- overview -->
 
@@ -49,7 +49,7 @@ In case of a positive rapid test result, users should share their test result an
 <center> <img src="./positive-test.png" title="Positive test result" style="align: center"></center>
 <br></br>
 
-Users who tested positive for COVID-19 and previously checked in to an event or at a location through the [**event registration feature**](https://www.coronawarn.app/en/blog/2021-04-21-corona-warn-app-version-2-0/) can share their check-ins along with the positive rapid test and/or PCR test result.
+Users who tested positive for COVID-19 and previously checked in to an event or at a location through the [**event registration feature**](/en/blog/2021-04-21-corona-warn-app-version-2-0/) can share their check-ins along with the positive rapid test and/or PCR test result.
 
 A **negative test result** in the app may serve users as evidence that they’ve obtained a negative rapid test result, if specified by law. However, the recognition of test evidence may vary from state to state. Users should therefore inform themselves about the respective criteria in their federal state.
 

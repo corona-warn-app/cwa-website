@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-The Corona-Warn-App community has developed a QR code generator for the app's website, which is now available at http://coronawarn.app/en/eventregistration/. Event organizers, retailers and private individuals have the opportunity to generate QR codes independently of the Corona-Warn-App. In addition, the project team has published a Node.js-based command-line interface on GitHub, allowing larger organizations to build their own customized solutions.
+The Corona-Warn-App community has developed a QR code generator for the app's website, which is now available at [https://coronawarn.app/en/eventregistration/](/en/eventregistration/). Event organizers, retailers and private individuals have the opportunity to generate QR codes independently of the Corona-Warn-App. In addition, the project team has published a Node.js-based command-line interface on GitHub, allowing larger organizations to build their own customized solutions.
 
 <!-- overview -->
 

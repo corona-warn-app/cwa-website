@@ -18,4 +18,4 @@ Wesentliche Neuerungen sind **zusätzliche Informationen zum Risikostatus**. Fal
 
 Darüber hinaus enthält Corona-Warn-App Version 1.3 im Impressum einen **Link zu einem Kontaktformular** des Robert Koch-Instituts, über das Nutzerinnen und Nutzern die Kontaktaufnahme bei Fragen und Anregungen erleichtert wird. 
 
-Auf iOS-Geräten zeigt die App zudem den Status „Unbekanntes Risiko“ an, falls der Risikostatus seit 48 Stunden nicht aktualisiert wurde. Das kann beispielsweise der Fall sein, wenn die [Hintergrundaktualisierung](https://www.coronawarn.app/de/faq/#no_risk_update_ios) nicht aktiviert wurde. Nutzerinnen und Nutzer können den Risikostatus dann in der App manuell aktualisieren.  
+Auf iOS-Geräten zeigt die App zudem den Status „Unbekanntes Risiko“ an, falls der Risikostatus seit 48 Stunden nicht aktualisiert wurde. Das kann beispielsweise der Fall sein, wenn die [Hintergrundaktualisierung](/de/faq/#no_risk_update_ios) nicht aktiviert wurde. Nutzerinnen und Nutzer können den Risikostatus dann in der App manuell aktualisieren.

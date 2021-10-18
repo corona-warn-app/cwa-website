@@ -9,4 +9,4 @@ layout: blog
 We recommend iOS users to upgrade the operating system to iOS 13.6.1 as it improves interaction with the Corona-Warn-App.
 <!-- overview -->
 
-The update contains a new function that should ensure that a background app refresh is performed once a day. With the update the Corona-Warn-App also works again on all devices that were stuck with the [error "Exposure logging not available in your region"](https://www.coronawarn.app/en/faq/#iOS_136).
+The update contains a new function that should ensure that a background app refresh is performed once a day. With the update the Corona-Warn-App also works again on all devices that were stuck with the [error "Exposure logging not available in your region"](/en/faq/#iOS_136).

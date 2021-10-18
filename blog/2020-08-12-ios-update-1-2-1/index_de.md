@@ -7,4 +7,4 @@ author: Hanna Heine
 layout: blog
 ---
 
-Im Apple App-Store ist die Corona-Warn-App Version 1.2.1 erschienen, die den [Fehler „Die App in der Version 1.2.0 stürzt teilweise direkt beim Start ab.“](https://www.coronawarn.app/de/faq/#app_does_not_open) behebt. Wir empfehlen daher allen iOS-Nutzerinnen und Nutzern, das Update zu installieren.
+Im Apple App-Store ist die Corona-Warn-App Version 1.2.1 erschienen, die den [Fehler „Die App in der Version 1.2.0 stürzt teilweise direkt beim Start ab.“](/de/faq/#app_does_not_open) behebt. Wir empfehlen daher allen iOS-Nutzerinnen und Nutzern, das Update zu installieren.
