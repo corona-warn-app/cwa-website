@@ -230,7 +230,7 @@ $(document).ready(function(){
 
 
     // simple jquery tabs
-    $('.nav-tabs a').click(function(e) {
+    $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
 
         //Toggle tab link
