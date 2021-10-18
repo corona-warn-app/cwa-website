@@ -84,7 +84,7 @@ Mit diesem Verständnis können:
 3.	die Nutzerführung optimiert werden,
 4.	gezielte Kommunikationsmaßnahmen gezielter vorbereitet werden.
 
-Darüber hinaus können die erhobenen Daten zur zeitlichen und räumlichen Verteilung bestimmter Ereignisse ausgewertet werden, um in Echtzeit den Pandemieverlauf zu verfolgen und lokale Besonderheiten zu erkennen. Mit diesen Erkenntnissen können Maßnahmen frühzeitig, zielgerichtet und angemessen Maßnahmen ergriffen werden, um einem ungünstigen Pandemieverlauf entgegenzuwirken.
+Darüber hinaus können die erhobenen Daten zur zeitlichen und räumlichen Verteilung bestimmter Ereignisse ausgewertet werden, um in Echtzeit den Pandemieverlauf zu verfolgen und lokale Besonderheiten zu erkennen. Mit diesen Erkenntnissen können Maßnahmen frühzeitig, zielgerichtet und angemessen ergriffen werden, um einem ungünstigen Pandemieverlauf entgegenzuwirken.
 
 ### 3.2 Erhobene Daten
 
@@ -290,8 +290,6 @@ Wir sehen hier die auch schon aus [EDUS](../2021-07-08-science-blog-2/#52-unters
 
 Die folgende Abbildung zeigt den Zusammenhang zwischen der Bevölkerungsdichte und der Anzahl der Spendenden pro 100.000 Einwohnenden. Die Größe eines Kreises ist dabei proportional zur Einwohnerzahl.
 
-Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen.
-
 <figure>
     <img src="./ppa_user_urban_plot.png" class="figure-img img-fluid" alt="Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen."/>
     <figcaption aria-hidden="true">Abb. 6: Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen.</figcaption>
@@ -334,8 +332,6 @@ Bemerkenswert sind hier die hohen Zahlen der Gewarnten am 19. und 23. März. Hie
 
 In Abb. 8 ist der zeitliche Verlauf von rot und grün gewarnten Personen angegeben. Hierbei wurde die [tagesgenaue Schätzung]() für den Anteil der CWA-Spendenden benutzt, die sich aus den Test-Zahlen ergibt. Auffällig ist, dass seit Ende Juni die grünen Warnungen wieder häufiger als die roten auftreten (auch im Verhältnis zu diesen). Hier spielt die erhöhte Mobilität und die daraufhin wieder steigende Anzahl sozialer Kontakte seit dem Ende der [Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_von_23._April_%E2%80%93_30._Juni_2021) sicherlich eine erhebliche Rolle. Hier kommen wir im Durchschnitt auf 8 gewarnte Personen mit erhöhtem Risiko bzw. 26 gewarnte Personen mit niedrigem Risiko (mit Risikobegegnung) pro warnender Person.
 
-Anzahl rot und grün gewarnter Personen pro warnender Person im zeitlichen Verlauf.
-
 <figure>
     <img src="./ppa_estimate_ppa_warned_persons_plot.png" class="figure-img img-fluid" alt=""/>
     <figcaption aria-hidden="true">Abb. 9: Anzahl rot und grün gewarnter Personen pro warnender Person im zeitlichen Verlauf.</figcaption>
@@ -363,7 +359,6 @@ Wir analysieren zunächst die Verzüge, die mit den Daten zu den Testergebnissen
 
 Von den 1.567.815 gespendeten Angaben zu PCR-Testergebnissen und deren Verzügen wurden 395.157 Tests (25.2%) bereits innerhalb der ersten Stunde nach Testregistrierung erhalten. Hier wurde der Test offenbar nicht sofort nach der Durchführung registriert. Nach 24 Stunden waren insgesamt 1.172.212 Tests (74.8%) Tests zugestellt. Die stundengenaue Verteilung des Verzugs zwischen Testregistrierung und Erhalt des Testergebnisses ist in der folgenden Abbildung dargestellt. Im Mittel war das Testergebnis 21 Stunden nach Testregistrierung übermittelt (Median: 12 Stunden).
 
-Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).
 <figure>
     <img src="./ppa_delay_tr_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR)."/>
     <figcaption aria-hidden="true">Abb. 11: Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).</figcaption>
@@ -372,7 +367,6 @@ Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).
 Von den 2.373.969 gespendeten Angaben zu Antigen-Schnelltest-Testergebnissen und deren Verzügen wurden 1.532.490 (64.6%) bereits innerhalb der ersten Stunde nach Testregistrierung erhalten. Nach 24 Stunden waren insgesamt 2.175.533 (91.6%) Tests zugestellt. Die stundengenaue Verteilung des Verzugs zwischen Testregistrierung und Erhalt des Testergebnisses ist in der folgenden Abbildung dargestellt. Im Mittel war das Testergebnis 10,5 Stunden nach Testregistrierung übermittelt (Median: 0 Stunden).
 
 Ein Grund für die verhältnismäßig lange Übermittlungsdauer der Antigen-Schnelltest-Testergebnisse liegt darin, dass die CWA nicht kontinuierlich nach aktuellen Schnelltestergebnissen sucht. Um das Ergebnis möglichst zeitnah in der CWA zu erhalten, muss der Test in der App manuell aktualisiert werden, bis ein Ergebnis vorliegt. Zwar ruft die Corona-Warn-App Testergebnisse auch automatisch im Hintergrund ab, je nach Betriebssystem und Verfügbarkeit eines WLAN erfolgt dies aber nur nach mitunter etwas längeren Zeitperioden.
-Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest).
 
 <figure>
     <img src="./ppa_delay_tr_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest)."/>
@@ -388,8 +382,6 @@ Die stundengenaue Verteilung des Verzugs zwischen Warnung und Registrierung eine
 
 Nach 48 Stunden nach einer Warnung waren insgesamt 52.559 PCR-Tests (54%) registriert.
 
-Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR).
-
 <figure>
     <img src="./ppa_delay_wt_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR)."/>
     <figcaption aria-hidden="true">Abb. 13: Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR).</figcaption>
@@ -401,8 +393,6 @@ Die stundengenaue Verteilung des Verzugs zwischen Warnung und Registrierung eine
 
 Nach 48 Stunden nach einer Warnung waren insgesamt 25.518 Antigen-Schnelltests (59.9%) registriert.
 
-Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest).
-
 <figure>
     <img src="./ppa_delay_wt_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest)."/>
     <figcaption aria-hidden="true">Abb. 14: Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest).</figcaption>
@@ -412,16 +402,12 @@ Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnell
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines PCR-Tests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 6 Tage nach der Risikobegegnung registriert (Median: 6 Tage).
 
-Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR).
-
 <figure>
     <img src="./ppa_delay_er_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR)."/>
     <figcaption aria-hidden="true">Abb. 15: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR).</figcaption>
 </figure>
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines Antigen-Schnelltests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 7,4 Tage nach der Risikobegegnung registriert (Median: 7 Tage).
-
-Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest).
 
 <figure>
     <img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
