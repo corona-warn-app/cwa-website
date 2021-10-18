@@ -20,7 +20,7 @@ Ab Version 2.7 können Nutzer\*innen in der Übersicht ihrer digitalen COVID-Zer
 Ein technisch abgelaufenes Zertifikat können Nutzer\*innen nicht mehr als gültigen Nachweis für Reisen innerhalb der EU benutzen. Es bedeutet aber nicht zwangsläufig, dass sie keinen ausreichenden Impfschutz mehr haben. Sie brauchen dann lediglich einen **neuen <u>digitalen</u> Nachweis** über ihre Impfung beziehungsweise Genesung.  
  
 <br></br>
-<center> <img src="./impfzertifikat-ablaufdatum.png" title="Technisches Ablaufdatum" style="align: center"> <img src="./impfzertifikat-abgelaufen.png" title="Zertifikat abgelaufen" style="align: center"> </center>
+<center> <img src="./impfzertifikat-abgelaufen.png" title="Zertifikat abgelaufen" style="align: center"> </center>
 <br></br>
 
 Die Corona-Warn-App weist Nutzer\*innen 28 Tage vor dem technischen Ablauf sowohl unter dem Zertifikat in der App als auch mit einer **Push-Nachricht** darauf hin. Sobald das Zertifikat abgelaufen ist, benachrichtigt sie den oder die Nutzer\*in noch einmal. Bei abgelaufenen Testzertifikaten gibt es keine Benachrichtigung, da Nutzer\*innen sie je nach Testart ohnehin nur ein paar Tage als Nachweis nutzen können. 
