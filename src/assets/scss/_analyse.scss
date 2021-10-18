@@ -1,19 +1,19 @@
-.page-analysis{
+.page-analysis {
 	background: #edf2f7;
 	overflow-x: hidden;
 
-	.header .section_bg-white{
+	.header .section_bg-white {
 		background: #edf2f7;
 		display: none;
 	}
 
-	.btn{
-		&:focus{
+	.btn {
+		&:focus {
 			box-shadow: none;
 		}
 	}
 
-	&.fullscreen{
+	&.fullscreen {
 		overflow: hidden !important;
 
 	}
@@ -23,21 +23,21 @@
 
 
 
-.analyse{
+.analyse {
 
-	&Topic{
+	&Topic {
 		margin-top: 72px;
 		font-size: 18px;
 		line-height: 26px;
 		color: #1294D4;
 	}
 
-	&Export{
-		float: right;	
+	&Export {
+		float: right;
 	}
 
 
-	&Update{
+	&Update {
 		font-size: 14px;
 		line-height: 30px;
 		color: #1A2025;
@@ -46,23 +46,23 @@
 	}
 
 
-	&Range{
+	&Range {
 		font-size: 0;
 		margin-bottom: 24px;
 
-		&Custom{
+		&Custom {
 			display: none;
 		}
 
-		&Picker{
+		&Picker {
 			position: relative;
 			display: inline-block;
-			vertical-align: middle;	
+			vertical-align: middle;
 			margin-right: 35px;
 			margin-bottom: 16px;
 			max-width: 100%;
 
-			&-label{
+			&-label {
 				display: inline-block;
 				font-weight: bold;
 				font-size: 15px;
@@ -72,7 +72,7 @@
 				margin-bottom: 16px;
 			}
 
-			&-btn{
+			&-btn {
 				position: relative;
 				background: #fff;
 				border: 1px solid #CFD4D9;
@@ -87,11 +87,11 @@
 				color: #3A3D3E;
 				max-width: 100%;
 
-				&:focus{
+				&:focus {
 					box-shadow: none;
 				}
 
-				img{
+				img {
 					position: absolute;
 					right: 18px;
 					top: 50%;
@@ -101,14 +101,15 @@
 				}
 			}
 
-			&.active &-btn{
+			&.active &-btn {
 				box-shadow: 0px 0px 0px 3px #C9D7DF;
-				img{
+
+				img {
 					transform: rotate(180deg);
 				}
-			} 
+			}
 
-			&-layer{
+			&-layer {
 				position: absolute;
 				top: 60px;
 				left: 0;
@@ -119,7 +120,7 @@
 				z-index: 1000;
 				display: none;
 
-				@media (max-width: $screen-sm){
+				@media (max-width: $screen-sm) {
 					position: fixed;
 					top: 0;
 					left: 0;
@@ -132,60 +133,62 @@
 				}
 			}
 
-			
 
-			&.active &-layer{
+
+			&.active &-layer {
 				display: block;
-				@media (max-width: $screen-sm){
+
+				@media (max-width: $screen-sm) {
 					display: flex;
 				}
 			}
 
-			&-actions{
+			&-actions {
 				display: flex;
 				justify-content: flex-end;
 				margin-top: 50px;
 
-				.btn-secondary{
+				.btn-secondary {
 					min-width: 200px;
 				}
 
 			}
 
-			&-cancel{
+			&-cancel {
 				color: #006082;
 			}
 
-			&-picker{
+			&-picker {
 				font-size: 16px;
 			}
 
-			&-inputs{
+			&-inputs {
 				font-size: 16px;
 				line-height: 30px;
 				margin-bottom: 24px;
 				display: flex;
 
-				&-set{
+				&-set {
 					white-space: nowrap;
 					margin-bottom: 12px;
 				}
 
-				&-label{
+				&-label {
 					display: inline-block;
-					@media (max-width: $screen-lg){
+
+					@media (max-width: $screen-lg) {
 						min-width: 40px;
 					}
 				}
 
-				@media (max-width: $screen-lg){
+				@media (max-width: $screen-lg) {
 					flex-direction: column;
 				}
 
 
 			}
 
-			&-input{
+			&-input {
 				vertical-align: middle;
 				margin: 0 8px;
 				border: 1px solid #CFD4D9;
@@ -197,11 +200,11 @@
 				min-width: 180px;
 				color: #3A3D3E;
 
-				&:placeholder{
+				&:placeholder {
 					color: #898B8B;
 				}
 
-				&:focus{
+				&:focus {
 					border-color: #CFD4D9;
 					outline: none;
 					box-shadow: 0px 0px 0px 3px #c9d7df;
@@ -211,9 +214,9 @@
 
 		}
 
-		&Radio{
+		&Radio {
 			position: relative;
-			vertical-align: middle;	
+			vertical-align: middle;
 			display: inline-block;
 			font-size: 14px;
 			line-height: 24px;
@@ -223,7 +226,7 @@
 			overflow: hidden;
 			margin-bottom: 16px;
 
-			&-box{
+			&-box {
 				width: 24px;
 				height: 24px;
 				background: #fff;
@@ -235,16 +238,16 @@
 			}
 
 
-			input{
+			input {
 				position: absolute;
 				top: -20px;
 			}
 
-			input:checked + &-box{
+			input:checked+&-box {
 				border-width: 8px;
 			}
 
-			input:checked ~ span{
+			input:checked~span {
 				font-weight: bold;
 			}
 
@@ -252,7 +255,7 @@
 		}
 	}
 
-	&Switch{
+	&Switch {
 		background: #fff;
 		border-radius: 50px;
 		display: inline-block;
@@ -263,7 +266,7 @@
 		overflow: hidden;
 		max-width: 100%;
 
-		&-bg{
+		&-bg {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -274,32 +277,32 @@
 			transition: all 300ms;
 		}
 
-		&-item{
+		&-item {
 			position: relative;
 			line-height: 25px;
 			font-size: 20px;
 			font-weight: bold;
 			padding: 10px 32px;
 
-			&:focus{
+			&:focus {
 				box-shadow: none;
 			}
 
-			&.active{
+			&.active {
 				color: #fff;
 			}
 		}
 
 
-		@media (max-width: $screen-md){
-			&-item{
+		@media (max-width: $screen-md) {
+			&-item {
 				padding: 10px 10px;
 			}
 		}
 
-		@media (max-width: $screen-sm){
-			
-			&-item{
+		@media (max-width: $screen-sm) {
+
+			&-item {
 				padding: 8px 6px;
 				font-size: 12px;
 				line-height: 14px;
@@ -309,29 +312,29 @@
 
 	}
 
-	&More{
+	&More {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 62px;
-		margin-top: 32px; 
+		margin-top: 32px;
 		flex-wrap: wrap;
 		margin-left: -16px;
-		margin-right: -16px;
+		margin-right: -10px;
 
-		a{
-			font-size: 15px;
+		a {
+			font-size: 14px;
 			line-height: 18px;
 			font-weight: 700;
-			padding: 16px;
+			padding: 5px;
 
-			img{
+			img {
 				width: 14px;
 				height: auto;
 				transform: translateX(.3em);
 			}
 		}
 
-		@media (max-width: $screen-md){
+		@media (max-width: $screen-md) {
 			flex-wrap: wrap;
 		}
 
@@ -339,11 +342,11 @@
 
 
 
-	&Boards{
+	&Boards {
 		position: relative;
 		margin-top: 30px;
 
-		&-loading{
+		&-loading {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -355,23 +358,23 @@
 			display: none;
 			padding-top: 10vh;
 
-			
+
 		}
 
-		&.loading &-loading{
+		&.loading &-loading {
 			display: block;
 		}
 
-		&.loading{
+		&.loading {
 			overflow: hidden;
 		}
 
 
 	}
 
-	
 
-	&Board{
+
+	&Board {
 		background: #FFFFFF;
 		border-radius: 6px;
 		border: 1px solid #CFD4D9;
@@ -380,7 +383,7 @@
 		padding: 24px;
 		position: relative;
 
-		&.expand{
+		&.expand {
 			visibility: visible !important;
 			position: absolute;
 			top: 0;
@@ -389,12 +392,12 @@
 			right: 0;
 			z-index: 99;
 
-			&.analyseBoard_tabs{
+			&.analyseBoard_tabs {
 				bottom: -24px;
 			}
 		}
 
-		&.fullscreen{
+		&.fullscreen {
 			border-radius: 0;
 			position: fixed;
 			top: 0;
@@ -405,12 +408,12 @@
 		}
 
 
-		@media (max-width: $screen-md){
+		@media (max-width: $screen-md) {
 			padding: 16px;
 		}
 
 
-		&-loading{
+		&-loading {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -428,18 +431,25 @@
 			color: #898B8B;
 			flex-direction: column;
 
-			&.active{
+			&.active {
 				display: flex;
 			}
 
 			@keyframes spin {
-			  0% { transform: rotate(0deg); }
-			  100% { transform: rotate(360deg); }
+				0% {
+					transform: rotate(0deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
 			}
 
-			&-loader{
-				border: 6px solid #DEE8EC; /* Light grey */
-				border-top: 6px solid #285F7F; /* Blue */
+			&-loader {
+				border: 6px solid #DEE8EC;
+				/* Light grey */
+				border-top: 6px solid #285F7F;
+				/* Blue */
 				border-radius: 50%;
 				width: 45px;
 				height: 45px;
@@ -449,36 +459,36 @@
 		}
 
 
-		&_tabs{
+		&_tabs {
 			margin-bottom: 24px + 34;
 		}
 
-		&-head{
+		&-head {
 			display: flex;
 			line-height: 40px;
 			align-items: center;
 		}
 
-		&-title{
+		&-title {
 			font-weight: bold;
 			font-size: 16px;
 			line-height: 1.2;
 			z-index: 100;
 		}
 
-		&-export{
+		&-export {
 			margin-left: auto;
 			font-weight: bold;
 			font-size: 13px;
 			padding: 0;
 			padding-left: 16px;
 
-			&-wrapper{
+			&-wrapper {
 				margin-left: auto;
 				position: relative;
 			}
 
-			&-layer{
+			&-layer {
 				display: none;
 				position: absolute;
 				top: 100%;
@@ -489,12 +499,12 @@
 				z-index: 999;
 			}
 
-			&-wrapper:hover &-layer{
+			&-wrapper:hover &-layer {
 				display: block;
 			}
 
 
-			&-link{
+			&-link {
 				display: block;
 				white-space: nowrap;
 				font-size: 13px;
@@ -505,74 +515,76 @@
 
 		}
 
-		&-iconBtn{
+		&-iconBtn {
 			border: 0;
 			padding: 8px;
 			margin-right: -8px;
 			min-height: 0;
 			line-height: 0;
 
-			img{
+			img {
 				width: 24px;
 				height: 24px;
 			}
 		}
 
-		&-fullscreen{
+		&-fullscreen {
 			display: none;
-			.fullscreen &{
+
+			.fullscreen & {
 				display: block;
 			}
 
-			@media (max-width: $screen-md){
+			@media (max-width: $screen-md) {
 				display: block;
 			}
 
-			img:nth-child(1){
+			img:nth-child(1) {
 				display: block;
 			}
 
-			img:nth-child(2){
+			img:nth-child(2) {
 				display: none;
 			}
-		
 
-			.fullscreen &{
-				img:nth-child(1){
+
+			.fullscreen & {
+				img:nth-child(1) {
 					display: none;
 				}
 
-				img:nth-child(2){
+				img:nth-child(2) {
 					display: block;
 				}
 			}
 		}
 
-		&-expand{
+		&-expand {
 			display: block;
-			@media (max-width: $screen-md){
+
+			@media (max-width: $screen-md) {
 				display: none;
 			}
 
-			.fullscreen &{
+			.fullscreen & {
 				display: none;
 			}
 
-			img:nth-child(1){
+			img:nth-child(1) {
 				display: block;
 			}
 
-			img:nth-child(2){
+			img:nth-child(2) {
 				display: none;
 			}
-		
 
-			.expand &{
-				img:nth-child(1){
+
+			.expand & {
+				img:nth-child(1) {
 					display: none;
 				}
 
-				img:nth-child(2){
+				img:nth-child(2) {
 					display: block;
 				}
 			}
@@ -580,18 +592,18 @@
 		}
 
 
-		&-total{
+		&-total {
 			margin-top: 15px;
 			margin-bottom: 10px;
 
-			&-value{
+			&-value {
 				font-weight: bold;
 				font-size: 24px;
 				line-height: 28px;
 				min-height: 28px;
 			}
 
-			&-label{
+			&-label {
 				font-size: 13px;
 				line-height: 15px;
 				color: #898B8B;
@@ -599,15 +611,15 @@
 		}
 	}
 
-	&Boards.expand &Board{
+	&Boards.expand &Board {
 		visibility: hidden;
 	}
 
 
-	&Chart{
+	&Chart {
 		margin-bottom: 2px;
 
-		&Legend{
+		&Legend {
 			font-size: 11px;
 			line-height: 13px;
 			color: #3A3D3E;
@@ -615,23 +627,23 @@
 			z-index: 1;
 			text-align: right;
 
-			&-row{
+			&-row {
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
 
-				& + &{
+				&+& {
 					margin-top: 8px;
 				}
 			}
 
-			&-label{
+			&-label {
 				margin: 0 8px;
 				padding-top: 1px;
 
 			}
 
-			&-item{
+			&-item {
 				margin: 0 8px;
 				padding: 0;
 				padding-left: 12px;
@@ -640,39 +652,40 @@
 				// pointer-events: none;
 				border: 0;
 				height: 14px;
-	
-				&:before{
+
+				&:before {
 					content: '';
 					position: absolute;
 					top: 50%;
 					left: 0;
-					transform: translateY(-50%); 
+					transform: translateY(-50%);
 					display: block;
 					background: currentColor;
 					width: 8px;
 					height: 8px;
 				}
 
-				span{
+				span {
 					color: #3A3D3E;
 					font-size: 11px;
 					line-height: 13px;
 				}
 
-				&_d{
+				&_d {
 					padding-left: 16px;
-					&:before{
+
+					&:before {
 						width: 12px;
 						height: 2px;
 					}
 
-					&:after{
+					&:after {
 						content: '';
 						position: absolute;
 						top: 0;
 						bottom: 0;
 						left: 6px;
-						transform: translateX(-50%); 
+						transform: translateX(-50%);
 						display: block;
 						background: none;
 						width: 9px;
@@ -681,24 +694,24 @@
 
 				}
 
-				&.deactive{
+				&.deactive {
 					opacity: 0.5;
 				}
 			}
-			
+
 		}
 	}
 
 
 
-	&Tabs{
+	&Tabs {
 		position: absolute;
 		top: 100%;
 		left: 0;
 		right: 0;
 		font-size: 0;
 
-		&:before{
+		&:before {
 			content: '';
 			position: absolute;
 			top: -24px;
@@ -708,7 +721,7 @@
 			height: 24px;
 		}
 
-		&-item{
+		&-item {
 			font-size: 12px;
 			line-height: 14px;
 			padding: 5px 16px;
@@ -717,7 +730,8 @@
 			box-shadow: 0px 7px 23px rgba(96, 105, 131, 0.25) !important;
 			border-radius: 0px 0px 6px 6px;
 			margin-right: 4px;
-			&.active{
+
+			&.active {
 				background: #fff;
 			}
 		}
@@ -726,7 +740,7 @@
 
 
 
-	&Modal{
+	&Modal {
 		display: none;
 		background: #fff;
 		flex-direction: column;
@@ -743,17 +757,17 @@
 		border-radius: 6px;
 
 
-		&-title{}
+		&-title {}
 
-		&-content{
+		&-content {
 			overflow: auto;
 
-			strong{
+			strong {
 				display: block;
 			}
 		}
 
-		&-close{
+		&-close {
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -761,17 +775,17 @@
 			font-size: inherit;
 			line-height: 1em;
 
-			img{
+			img {
 				width: 1em;
 				height: 1em;
 			}
 		}
-		
-		&.active{
+
+		&.active {
 			display: flex;
 		}
 
-		&Bg{
+		&Bg {
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -782,7 +796,7 @@
 			z-index: 9999;
 			display: none;
 
-			&.active{
+			&.active {
 				display: block;
 			}
 		}
@@ -804,55 +818,56 @@
 	--litepicker-is-start-color-bg: #006082;
 	--litepicker-is-in-range-color: #D4EAF7;
 	--litepicker-is-end-color-bg: var(--litepicker-is-start-color-bg);
-		
 
 
-	@media (max-width: $screen-sm){
+
+	@media (max-width: $screen-sm) {
 		--litepicker-day-width: 40px;
 	}
 }
 
-.litepicker{
+.litepicker {
 	padding: 0 48px;
 	margin: 0 -48px;
 	position: relative;
 	z-index: 1;
 
-	.container__months{
+	.container__months {
 		box-shadow: none;
 		justify-content: space-between;
 
-		.month-item{
+		.month-item {
 			padding: 0;
 		}
 
-		&.columns-2{
+		&.columns-2 {
 			width: calc((var(--litepicker-month-width) * 2) + 48px);
 		}
 
-		.month-item-weekdays-row{
+		.month-item-weekdays-row {
 			opacity: 0.64;
 			margin-bottom: 4px;
-			& > div{
+
+			&>div {
 				font-size: 13px;
 				padding: 0;
 				line-height: 30px;
 			}
 		}
 
-		.month-item-header{
+		.month-item-header {
 			font-weight: bold;
 			font-size: 15px;
 			line-height: 30px;
 			margin-bottom: 32px;
 			padding: 0;
 
-			strong{
+			strong {
 				font-weight: bold;
 			}
 
 			.button-previous-month,
-			.button-next-month{
+			.button-next-month {
 				padding: 0;
 				cursor: pointer;
 				width: 30px;
@@ -860,13 +875,13 @@
 		}
 
 
-		@media (max-width: $screen-lg){
+		@media (max-width: $screen-lg) {
 			width: var(--litepicker-month-width);
 		}
 	}
 
-	.container__days{
-		.day-item{
+	.container__days {
+		.day-item {
 			height: 40px;
 			line-height: 40px;
 			padding: 0;
@@ -874,11 +889,11 @@
 			font-size: 16px;
 
 			&.is-start-date,
-			&.is-end-date{
+			&.is-end-date {
 				border-radius: 6px;
 			}
 
-			&:hover{
+			&:hover {
 				background: #fff;
 				border-radius: 6px;
 				color: #3A3D3E;
@@ -886,49 +901,49 @@
 
 
 			}
-		}	
+		}
 	}
 
 	// .container__footer,
-	.container__tooltip{
+	.container__tooltip {
 		display: none;
 	}
 
 
-	
+
 }
 
 
 
-.apexcharts-legend{
+.apexcharts-legend {
 	display: none !important;
 }
 
 
-.apexcharts-text{
+.apexcharts-text {
 	font-family: Roboto !important;
 	font-size: 11px !important;
 	fill: #898b8b !important;
 }
 
 
-.apexcharts-tooltip{
+.apexcharts-tooltip {
 	padding: 8px;
 	background: #fff !important;
 	box-shadow: 0px 8px 25px -7px rgba(60, 69, 83, 0.538625) !important;
 	border-radius: 4px !important;
 	border: 0 !important;
 
-	&.apexcharts-active{
+	&.apexcharts-active {
 		opacity: 0 !important;
 
-		&[style]{
+		&[style] {
 			opacity: 1 !important;
 		}
 	}
 
 
-	.apexcharts-tooltip-date{
+	.apexcharts-tooltip-date {
 		background: #D4EAF7;
 		font-weight: bold;
 		font-size: 12px;
@@ -940,13 +955,13 @@
 		padding: 0 8px;
 	}
 
-	.apexcharts-tooltip-series-group{
+	.apexcharts-tooltip-series-group {
 		display: flex;
 		padding: 0 !important;
 
 	}
 
-	.apexcharts-tooltip-text{
+	.apexcharts-tooltip-text {
 		font-size: 11px;
 		line-height: 17px;
 	}
