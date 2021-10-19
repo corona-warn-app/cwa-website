@@ -13,4 +13,4 @@ Die Corona-Warn-App ist für Nutzer\*innen ein nützliches, digitales Tool, dass
 
 Wie kommuniziert die App mit dem Backend? Wie wird dabei der Datenschutz gewährleistet? Und wie funktioniert die Risikoberechnung? Für alle, die sich für die Technik hinter der Corona-Warn-App interessieren, liefert Thomas Klingbeil in [**diesem Video**](https://youtu.be/TIXsOIrp1dg) Antworten. Außerdem erklärt er, wie die genannten Aspekte die Gesamtarchitektur der App beeinflussen.  
 
-Die Präsentation aus dem Video finden Sie [hier](https://www.coronawarn.app/assets/documents/cwa-rc3.pdf).
+Die Präsentation aus dem Video finden Sie [hier](/assets/documents/cwa-rc3.pdf).
