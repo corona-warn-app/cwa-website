@@ -253,7 +253,7 @@
                         "anchor": "test_cert_get",
                         "active": true,
                         "textblock": [
-                            "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Manage Your Tests' on the Start Screen of your CWA (or on 'Register Test' for app versions until 2.5) and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can tap 'Request Test Certificate' or decline it if you do not want to receive one.",
+                            "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Manage Your Tests' on the Status tab ('Start Screen' before version 2.12) of your CWA (or on 'Register Test' for app versions until 2.5) and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can tap 'Request Test Certificate' or decline it if you do not want to receive one.",
                             "<a href='#test_cert_index' target='_self' rel='noopener noreferrer'>To the index of the test certificate</a>"
                         ]
                     },
@@ -535,7 +535,7 @@
                         "anchor": "rat_how_get_result",
                         "active": true,
                         "textblock": [
-                            "From the 'Manage Your Test' section on the Start Screen of your Corona-Warn-App (or from 'Register Test' on app versions until 2.5), you can add a test by scanning the Rapid-Test QR code. To get the result in the app as soon as possible, you can refresh the test in the app until the result is available. Although the Corona-Warn-App also retrieves test results automatically in the background, it may take a little longer depending on your operating system."
+                            "From the 'Manage Your Test' section on the Status tab ('Start Screen' before version 2.12) of your Corona-Warn-App (or from 'Register Test' on app versions until 2.5), you can add a test by scanning the Rapid-Test QR code. To get the result in the app as soon as possible, you can refresh the test in the app until the result is available. Although the Corona-Warn-App also retrieves test results automatically in the background, it may take a little longer depending on your operating system."
                         ]
                     },
                     {
@@ -646,7 +646,7 @@
                         "anchor": "rat_profile_create_edit_delete",
                         "active": true,
                         "textblock": [
-                            "<ul><li><b> Create a rapid test profile:</b> In order to create a rapid test profile, tap on 'Manage Your Tests' on the Start Screen of your CWA (or on 'Register Test' for app versions until 2.5). There you will find the area 'Create Rapid Test profile', where you can enter your personal data, such as name, address and telephone number. When everything is entered, you can save the data. The Corona-Warn-App then creates a QR code from the data that you can show at the test sites.</li><li><b>Remove rapid test profile (iOS):</b> You can remove a rapid test profile by going to your rapid test profile in the rapid test area of the Corona-Warn-App and selecting 'Remove Rapid Test Profile'.</li><b>Remove rapid test profile (Android):</b> You can remove a rapid test profile by going to your rapid test profile in the rapid test area of the Corona-Warn-App and selecting 'Remove' in the 3-dot-icon.</li><li><b>Edit rapid test profile:</b> If you intend to edit a rapid test profile in app versions until 2.5, you can first remove the profile and then create a new one. Starting with version 2.6 of the app, a rapid test profile can be edited, so it is not necessary to remove the profile in order to make changes to it.</li></ul>"
+                            "<ul><li><b> Create a rapid test profile:</b> In order to create a rapid test profile, tap on 'Manage Your Tests' on the Status tab ('Start Screen' before version 2.12) of your CWA (or on 'Register Test' for app versions until 2.5). There you will find the area 'Create Rapid Test profile', where you can enter your personal data, such as name, address and telephone number. When everything is entered, you can save the data. The Corona-Warn-App then creates a QR code from the data that you can show at the test sites.</li><li><b>Remove rapid test profile (iOS):</b> You can remove a rapid test profile by going to your rapid test profile in the rapid test area of the Corona-Warn-App and selecting 'Remove Rapid Test Profile'.</li><b>Remove rapid test profile (Android):</b> You can remove a rapid test profile by going to your rapid test profile in the rapid test area of the Corona-Warn-App and selecting 'Remove' in the 3-dot-icon.</li><li><b>Edit rapid test profile:</b> If you intend to edit a rapid test profile in app versions until 2.5, you can first remove the profile and then create a new one. Starting with version 2.6 of the app, a rapid test profile can be edited, so it is not necessary to remove the profile in order to make changes to it.</li></ul>"
                         ]
                     }
                 ]
@@ -895,7 +895,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: A message “Incompatibility warning” on my Start Screen indicates that my device is only partially compatible. What does this mean?",
+                        "title": "[Google/Android]: A message “Incompatibility warning” on my Status tab ('Start Screen' before version 2.12) indicates that my device is only partially compatible. What does this mean?",
                         "anchor": "part_incompat",
                         "active": true,
                         "textblock": [
@@ -908,7 +908,7 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: A message “Incompatibility warning” on my Start Screen indicates that my device is not compatible with Exposure Notifications at all. What does this mean?",
+                        "title": "[Google/Android]: A message “Incompatibility warning” on my Status tab ('Start Screen' before version 2.12) indicates that my device is not compatible with Exposure Notifications at all. What does this mean?",
                         "anchor": "full_incompat",
                         "active": true,
                         "textblock": [
@@ -954,7 +954,7 @@
                             "Make sure that exposure logging is active.",
                             "If the latest version still shows the issue, it is probably due to individual power saving modes or battery settings by different manufacturers. These do not fully comply with the Android specifications and often apply aggressive power saving measures. <b>Corona-Warn-App is affected by these power saving settings and therefore often cannot update the risk status in the background for a long time. However, you can change the settings in the Corona-Warn-App:</b>",
                             "In order to activate Prioritized Background Activity you need to de-activate optimization of the battery usage:",
-                            "<ol><li>In the Corona-Warn-App (CWA) on the Start Screen choose the three-dot icon in the top right corner, then Settings</li><li>Choose Prioritized Background Activity (If Prioritized Background Activity is 'On' already, you don't need to take further action here.)</li><li>Choose 'OPEN DEVICE SETTINGS'</li><li>You see now the operating system 'Optimize battery usage' / 'Battery optimization' or similar (depends on device model). Choose in the dropdown list 'All' or 'All Apps'</li><li>Scroll down to Corona-Warn</li><li>Move the slider to the left (i.e. optimize battery usage off) or tap on the entry and then choose 'Do not optimize' (This procedure depends on the device model.)</li><li>Cross-check the change in the CWA:</li><li>In the Corona-Warn-App (CWA) on the Start Screen choose the three-dot icon, then Settings</li><li>Prioritized Background Activity should be 'On' now.</li></ol>",
+                            "<ol><li>In the Corona-Warn-App (CWA) on the Status tab ('Start Screen' before version 2.12) choose the three-dot icon in the top right corner, then Settings</li><li>Choose Prioritized Background Activity (If Prioritized Background Activity is 'On' already, you don't need to take further action here.)</li><li>Choose 'OPEN DEVICE SETTINGS'</li><li>You see now the operating system 'Optimize battery usage' / 'Battery optimization' or similar (depends on device model). Choose in the dropdown list 'All' or 'All Apps'</li><li>Scroll down to Corona-Warn</li><li>Move the slider to the left (i.e. optimize battery usage off) or tap on the entry and then choose 'Do not optimize' (This procedure depends on the device model.)</li><li>Cross-check the change in the CWA:</li><li>In the Corona-Warn-App (CWA) on the Status tab ('Start Screen' before version 2.12) choose the three-dot icon, then Settings</li><li>Prioritized Background Activity should be 'On' now.</li></ol>",
                             "Samsung offers an additional \"Ultra Power Saving Mode\" for their devices. This mode often prevents a successful update of the risk status in the background, even if 'Prioritized Background Activity' has been selected. <b>To ensure a proper functionality of the Corona-Warn-App, the Ultra Power Saving Mode should be deactivated.</b> Please refer to the <a href='#max_power_save' target='_blank' rel='noopener'>Notes on the Ultra Power Saving Mode on Samsung devices</a> for further instructions.",
                             "In the power-saving settings of your phone, you can make sure that there's an exception set for the Corona-Warn-App:",
                             "Unfortunately, in some phones, you might not be able to activate the prioritized background activity in the app settings. You can still activate the prioritized background activity: You do so directly in the energy saving settings. of your phone. Set an exception for the Corona-Warn-App. If this still doesn't update the risk status automatically in the background, please create a comment in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/933' target='_blank' rel='noopener noreferrer'>GitHub issue 933</a>, giving your phone type and the installed versions of the app and of the COVID-19 exposure notifications.",
@@ -1037,6 +1037,17 @@
                             "If the above does not help, contact your device manufacturer:",
                             "<ul><li>Apple/iOS: <a href='https://support.apple.com' target='_blank' rel='noopener noreferrer'>Apple Support</a></li><li>Android phones: <a href='https://support.google.com/android/answer/3094742?hl=en&ref_topic=7313011' target='_blank' rel='noopener noreferrer'>Get help from your device’s manufacturer</a></li></ul>"
                         ]
+                    },
+                    {
+                        "title": "[Google/Android]: Why do I receive a notification regarding administrator permissions (root permissions)?",
+                        "anchor": "root_detection_android",
+                        "active": true,
+                        "textblock": [
+                            "This notification is a security alert: The Corona-Warn-App has found signs of administrator permissions on your device. Such permissions are also known as root permissions.",
+                            "You are receiving this security notice to be made aware that these permissions may increase the risk that other applications on your smartphone could access data from the Corona-Warn-App.",
+                            "You will receive this notice whenever you restart, reinstall or update the app.",
+                            "See also <a href='#rooted_devices' target='_blank' rel='noopener noreferrer'>[Google/Android]: Can I also use the app on a rooted device?</a>"
+                        ]
                     }
                 ]
             },
@@ -1091,7 +1102,8 @@
                         "active": true,
                         "textblock": [
                             "Yes, you can. However, the app is not officially supported on rooted devices.",
-                            "Currently, unlocking the bootloader or similar modifications (such as installing microG) will cause the optional data donation and survey features to fail without an indication in the app. The reason for this is that these features require an integrity check via SafetyNet."
+                            "Currently, unlocking the bootloader or similar modifications (such as installing microG) will cause the optional data donation and survey features to fail without an indication in the app. The reason for this is that these features require an integrity check via SafetyNet.",
+                            "See also <a href='#root_detection_android' target='_blank' rel='noopener noreferrer'>[Google/Android]: Why do I receive a notification regarding administrator permissions (root permissions)?</a>"
                         ]
                     },
                     {
@@ -1409,7 +1421,7 @@
                             "<div class='right-float'><img src='../../assets/img/faq/enf_en.jpg' alt='image' width='300'></div>",
                             "Google publishes mobile device support for the COVID-19 Exposure Notifications System using the Google Play Store update services, as a module of Google Play services, that is, independently of the Android operating system. <a href='https://developers.google.com/android/exposure-notifications/doc-change-log#api-version-15' target='_blank' rel='noopener noreferrer'>Version 1.5</a> of the Exposure Notifications System (ENS), which was released in July 2020, introduced the ExposureWindow mode (also referred to as v2 mode) in addition to the previous v1 mode. The Exposure Notifications System Version 1.5 or higher is required for the Corona-Warn-App Version 1.9 and all higher versions of the app.",
                             "To check which ENS version is installed on your phone:",
-                            "<ol><li>Open the Corona-Warn-App menu on the Start Screen by choosing the 3-dot icon on the top right, then tap 'App Information'.</li><li>Scroll down to the bottom of the page to the number next to 'ENF Version', which is displayed in the following format in Version 1.5 of the Exposure Notifications System and higher:<ul><li>VVYYWWxxxxx, where VV is the version of the COVID-19 Exposure Notifications System, YY is the year and WW is the week number (e.g.'18210214000' signifies Version 1.8).</li></ul></li></ol>",
+                            "<ol><li>Open the Corona-Warn-App menu on the Status tab ('Start Screen' before version 2.12) by choosing the 3-dot icon on the top right, then tap 'App Information'.</li><li>Scroll down to the bottom of the page to the number next to 'ENF Version', which is displayed in the following format in Version 1.5 of the Exposure Notifications System and higher:<ul><li>VVYYWWxxxxx, where VV is the version of the COVID-19 Exposure Notifications System, YY is the year and WW is the week number (e.g.'18210214000' signifies Version 1.8).</li></ul></li></ol>",
                             "Alternatively, open your device Settings, then select 'Google > COVID-19 Exposure Notifications' where you can find the Version displayed at the bottom of the page.",
                             "Google provides general and release information about the COVID-19 Exposure Notifications, see:",
                             "<ul><li><a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a></li><li><a href='https://developers.google.com/android/exposure-notifications/exposure-notifications-api' target='_blank' rel='noopener noreferrer'>Exposure Notifications API</a></li><li><a href='https://developers.google.com/android/exposure-notifications/release-notes' target='_blank' rel='noopener noreferrer'>Exposure Notifications release notes</a></li><li><a href='https://developers.google.com/android/exposure-notifications/doc-change-log' target='_blank' rel='noopener noreferrer'>Exposure Notifications document change log</a></li><li><a href='https://github.com/google/exposure-notifications-internals' target='_blank' rel='noopener noreferrer'>Snapshot of code from Google Play services' Exposure Notifications module</a></li></ul>"
@@ -1426,6 +1438,18 @@
                             "<ul><li>If you subsequently become aware of the presence of a positively tested person at your event, and the health department has not yet contacted you as an event organizer, contact the health department. The health department can issue you a TAN if necessary.</li><li>Click 'Create QR Code' on the CWA home page.</li><li>On the 'My QR Codes' page, click the three-dot menu in the upper right corner and then click the 'Warn for Others' menu item.</li><li>Click 'Continue' on the info screen.</li><li>Select an event for which you would like to warn others for an infected person. Or restore a deleted event by scanning the event's QR code again. Click 'Continue'.</li><li>Indicate the length of stay of the person who tested positive for whom you want to warn. You can get this information from the health department. Click on 'Continue'.</li><li>Enter the 10-digit TAN that you were given. Click on 'Send warning'.</li></ul>",
                             "<div class='container'><div class='row'><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others1.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others2.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others3.png' alt='image'></div></div></div>",
                             "<div class='container'><div class='row'><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others4.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others5.png' alt='image'></div><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/warn_for_others6.png' alt='image'></div></div></div>"
+                        ]
+                    },
+                    {
+                        "title": "How do I manage notifications from the Corona-Warn-App?",
+                        "anchor": "notification_settings",
+                        "active": true,
+                        "textblock": [
+                            "The settings for notifications are managed uniformly in the device settings of your smartphone as of version 2.12.",
+                            "You can specify here whether: <ul><li>you generally want to receive notifications from the Corona-Warn-App or not.</li><li>you want to display notification content on the lock screen or not.</li><li>notification texts should only be displayed after unlocking the smartphone.</li></ul>",
+                            "Please check your message settings for the Corona-Warn-App in the device settings:",
+                            "<b>iOS devices</b> <ul><li>Tap on the 'Status' tab in the Corona-Warn-App.</li><li>Scroll down and tap on 'Settings'.</li><li>Tap on 'Notifications'.</li><li>Scroll down further and tap 'Open Device Settings'.</li><li>In your device settings, then tap on 'Notifications'.</li><li>Here you can completely turn off notifications for the Corona-Warn-App or you can turn off the sound for notifications. In addition, here you can specify whether the notifications should be displayed as a pop-up on the locked screen of your smartphone or not.</li></ul>",
+                            "<b>Android devices</b> <ul><li>Tap on the 'Status' tab in the Corona-Warn-App.</li><li>Tap on the 3 dots on the top right.</li><li>Open 'Settings' here.</li><li>Then tap on 'Notifications'.</li><li>Scroll down further and tap on 'Open Device Settings'.</li><li>In the device settings you can completely turn off the notifications for the Corona-Warn-App or turn off the sound for the notifications. In addition, you can specify here if you want the app's notifications to reach you while your device is in 'Do Not Disturb' mode. <b>Note:</b> The setting options may vary for Android devices depending on the model and Android version. We recommend to consult the manufacturer's help and documentation because the settings for lock screen or 'Do Not Disturb' mode are not necessarily on the screen which CWA opens when 'Notifications' is selected in the CWA Settings menu. See <a href='https://support.google.com/android/answer/9079661?hl=en#zippy=%2Coption-dont-show-any-notifications' target='_blank' rel='noopener noreferrer'>Control notifications on Android</a></li></ul>"
                         ]
                     }
                 ]
@@ -1929,7 +1953,7 @@
                         "anchor": "migration_Apple",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/>This problem has been solved with version 1.5.0.<hr/> If you transfer your data to a new iPhone using iTunes, or restore a backup, the app does not work properly. On the start screens, you end up in a loop, or the exposure logging cannot be activated. The risk status is not displayed.",
+                            "<b>UPDATE</b><br/>This problem has been solved with version 1.5.0.<hr/> If you transfer your data to a new iPhone using iTunes, or restore a backup, the app does not work properly. On the Status tabs ('Start Screens' before version 2.12), you end up in a loop, or the exposure logging cannot be activated. The risk status is not displayed.",
                             "This is a known problem with backing up the random IDs, see also <a href='#backup' target='_blank' rel='noopener noreferrer'>'Will the collected random IDs be included when I backup data on my phone?'</a>.",
                             "Please reinstall the Corona-Warn-App on your new iPhone."
                         ]
