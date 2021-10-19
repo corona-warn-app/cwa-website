@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Google hat einen Fix herausgegeben, mit dem das [Problem des Schlüsselabgleichs](https://www.coronawarn.app/de/blog/2021-01-13-corona-warn-app-key-matching-issue-on-android-smartphones/) bei Android-Smartphones behoben werden kann. Die Corona-Warn-App sollte auf den entsprechenden Geräten heute Morgen wieder funktionieren. Das Unternehmen versicherte in einem Statement, dass das Problem weder zum Verlust von Daten noch zu deren Preisgabe geführt habe: 
+Google hat einen Fix herausgegeben, mit dem das [Problem des Schlüsselabgleichs](/de/blog/2021-01-13-corona-warn-app-key-matching-issue-on-android-smartphones/) bei Android-Smartphones behoben werden kann. Die Corona-Warn-App sollte auf den entsprechenden Geräten heute Morgen wieder funktionieren. Das Unternehmen versicherte in einem Statement, dass das Problem weder zum Verlust von Daten noch zu deren Preisgabe geführt habe: 
  
 <!-- overview -->
 

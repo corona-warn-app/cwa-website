@@ -84,7 +84,7 @@ Ein Zertifikat kann aber auch aus verschiedenen Gründen ungültig sein. Zum Bei
 
 Ab Version 2.6 können Nutzer\*innen über die Kachel **„Sie lassen sich testen?“** auf der Startseite ihrer App alle wichtigen Funktionen rund um ihre Tests verwalten. In der **Testverwaltung** haben sie ab dieser Version die Möglichkeit, eine **Teststelle in ihrer Nähe** zu finden, die an die Infrastruktur der Corona-Warn-App angebunden ist: Gehen die Nutzer\*innen auf „Testmöglichkeit finden“, werden sie zur Schnellteststellensuche auf der Website der Corona-Warn-App weitergeleitet. 
 
-Außerdem können sie in der Testverwaltung nun auch ein bereits angelegtes **Schnelltest-Profil bearbeiten**, um ihre angegebenen Daten zu ändern. Mehr Informationen zum Schnelltest-Profil finden Sie [hier](https://www.coronawarn.app/de/blog/2021-05-12-corona-warn-app-version-2-2/).
+Außerdem können sie in der Testverwaltung nun auch ein bereits angelegtes **Schnelltest-Profil bearbeiten**, um ihre angegebenen Daten zu ändern. Mehr Informationen zum Schnelltest-Profil finden Sie [hier](/de/blog/2021-05-12-corona-warn-app-version-2-2/).
 
 
 Version 2.6 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.

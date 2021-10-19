@@ -9,7 +9,7 @@ layout: blog
 
 ### Acht Partner sind zum Start dabei
 
-In der neuesten Version der Corona-Warn-App (2.1) hat das Projektteam aus Deutscher Telekom und SAP die [angekündigten Schnelltests](https://www.coronawarn.app/de/blog/2021-03-31-corona-warn-app-test-integration/) integriert, sodass Nutzer\*innen ihre Mitmenschen nun noch schneller warnen und Infektionsketten noch schneller unterbrechen können. Das Update steht allen Nutzer\*innen innerhalb der nächsten 48 Stunden zur Verfügung.
+In der neuesten Version der Corona-Warn-App (2.1) hat das Projektteam aus Deutscher Telekom und SAP die [angekündigten Schnelltests](/de/blog/2021-03-31-corona-warn-app-test-integration/) integriert, sodass Nutzer\*innen ihre Mitmenschen nun noch schneller warnen und Infektionsketten noch schneller unterbrechen können. Das Update steht allen Nutzer\*innen innerhalb der nächsten 48 Stunden zur Verfügung.
 
 <!-- overview -->
 
@@ -44,7 +44,7 @@ Zwar werden die persönliche Daten der Nutzer\*innen an den Teststellen gespeich
 
 In Fall eines **positiven Schnelltest-Ergebnisses** sollten Nutzer\*innen außerdem umgehend einen PCR-Test machen, um das Ergebnis zu bestätigen oder zu widerlegen. Bei einem positiven PCR-Test, sollten Nutzer*innen auch dieses Testergebnis teilen. So können sie Kontaktpersonen warnen, denen sie möglicherweise seit Teilen des Schnelltest-Ergebnisses bis zum Teilen des PCR-Test-Ergebnisses begegnet sind. Sollte der PCR-Test negativ sein, haben sie aber nicht die Möglichkeit, ihren positiven Schnelltest und die Warnung zurückzuziehen.
 
-Positiv auf COVID-19 getestete Nutzer\*innen, die zuvor über die [**Funktion der Eventregistrierung**](https://www.coronawarn.app/de/blog/2021-04-21-corona-warn-app-version-2-0/) bei einem Event oder an einem Ort eingecheckt waren, können ihre  Check-ins gemeinsam mit dem positiven Schnelltest- und/oder PCR-Testergebnis teilen.
+Positiv auf COVID-19 getestete Nutzer\*innen, die zuvor über die [**Funktion der Eventregistrierung**](/de/blog/2021-04-21-corona-warn-app-version-2-0/) bei einem Event oder an einem Ort eingecheckt waren, können ihre  Check-ins gemeinsam mit dem positiven Schnelltest- und/oder PCR-Testergebnis teilen.
 
 Ein **negatives Testergebnis** in der App kann Nutzer\*innen, falls gesetzlich festgelegt, als **Nachweis** für das Vorliegen eines negativen Schnelltest-Ergebnisses dienen. Die Anerkennung von Test-Nachweisen kann allerdings von Bundesland zu Bundesland variieren. Nutzer*innen sollten sich deshalb über die jeweiligen Kriterien in ihrem Bundesland informieren.
 

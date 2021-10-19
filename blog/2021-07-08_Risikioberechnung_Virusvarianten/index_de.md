@@ -18,4 +18,4 @@ Zum jetzigen Zeitpunkt reicht die wissenschaftliche Evidenz noch nicht aus, um e
 
 Aktuell muss eine Begegnung mit einer positiv auf SARS-CoV-2 getesteten Person mindestens 9 gewichtete Minuten in einem definierten Nähebereich gemessen worden sein, um von der App als Begegnung mit erhöhtem Risiko („rote Kachel“) berücksichtigt zu werden.
 
-Die Anpassung der Parameter erfolgt serverseitig, so dass Nutzer*innen nichts weiter tun müssen. Sobald es eine neue Anpassung geben wird, wird das Projektteam im Rahmen des Blogs (https://www.coronawarn.app/de/blog/) und auf Twitter (https://twitter.com/coronawarnapp) dazu informieren.
+Die Anpassung der Parameter erfolgt serverseitig, so dass Nutzer*innen nichts weiter tun müssen. Sobald es eine neue Anpassung geben wird, wird das Projektteam im Rahmen des [Blogs](/de/blog/) und auf Twitter (https://twitter.com/coronawarnapp) dazu informieren.
