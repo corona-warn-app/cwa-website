@@ -1086,11 +1086,13 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Can I also use the app on a rooted device?",
+                        "title": "[Google/Android]: Can I use the app on a rooted device?",
                         "anchor": "rooted_devices",
                         "active": true,
                         "textblock": [
-                            "No, the app is not supported on rooted devices."
+                            "Yes, you can. However, the app is not officially supported on rooted devices.",
+                            "Currently, unlocking the bootloader or similar modifications (such as installing microG) will cause the optional data donation and survey features to fail without an indication in the app. The reason for this is that these features require an integrity check via SafetyNet.",
+                            "See also <a href='#root_detection_android' target='_blank' rel='noopener noreferrer'>[Google/Android]: Why do I receive a notification regarding administrator permissions (root permissions)?</a>"
                         ]
                     },
                     {
