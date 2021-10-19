@@ -5,7 +5,7 @@ import 'slick-carousel';
 window.jQuery = $;
 
 $(document).ready(function(){
-    if(window.location.href.includes("analyse")) window.location = "../analysis";
+    if(window.location.href.includes("/analyse/")) window.location = "../analysis";
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
     });
