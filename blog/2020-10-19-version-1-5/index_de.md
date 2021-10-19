@@ -18,7 +18,7 @@ Sowohl im Google Play Store als auch im Apple App Store steht ab sofort ein neue
 
 Die neue Version 1.5 der deutschen Corona-Warn-App unterstützt das europäische Corona-App-Gateway.  
 
-Nach erfolgreicher Installation der neuen Version bekommen die Nutzer\*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Gateway sowie die angepassten [Datenschutzrichtlinien](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](https://www.coronawarn.app/assets/documents/cwa-eula-de.pdf).   
+Nach erfolgreicher Installation der neuen Version bekommen die Nutzer\*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Gateway sowie die angepassten [Datenschutzrichtlinien](/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](/assets/documents/cwa-eula-de.pdf).   
 
 <img src="./efgs.jpg" title="Corona-Warn-App Risikostatus"></br>
 

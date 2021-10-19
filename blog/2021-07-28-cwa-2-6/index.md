@@ -77,7 +77,7 @@ A certificate may also be invalid for various reasons. One reason may be that **
 
 From version 2.6 onwards, users can manage all important functions related to their tests via **"Manage Your Tests”** on their app’s home screen. In that section, they can now find a **test center in their vicinity** that is connected to the app’s infrastructure by tapping "Find Testing Center". They will be redirected to the rapid test center search on the CWA website. 
 
-Additionally, users can now **edit their rapid test profile** in that section to change their specified data. You can find more information about the rapid test profile [here](https://www.coronawarn.app/en/blog/2021-05-12-corona-warn-app-version-2-2/).
+Additionally, users can now **edit their rapid test profile** in that section to change their specified data. You can find more information about the rapid test profile [here](/en/blog/2021-05-12-corona-warn-app-version-2-2/).
 
 
 Version 2.6 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.

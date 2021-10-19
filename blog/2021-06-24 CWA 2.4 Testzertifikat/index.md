@@ -57,7 +57,7 @@ Once the test result is available, it is now automatically added to the **contac
 <center> <img src="./contact-journal-tests.png" title="Tests in contact journal" style="align: center"></center>
 <br></br>
 
-The **voluntary data donation** now also includes alerts that users share due to a positive rapid test. For PCR tests, this is already possible since [version 1.13](https://www.coronawarn.app/en/blog/2021-03-04-corona-warn-app-version-1-13/) of the Corona-Warn-App. Furthermore, the data donation captures data points on warnings from the event registration feature (similar to the capturing of warnings that users receive based on the distance measurement via Bluetooth). The project team also records whether users share their event check-ins. A prerequisite for the recording is that users have activated the voluntary donation of data.
+The **voluntary data donation** now also includes alerts that users share due to a positive rapid test. For PCR tests, this is already possible since [version 1.13](/en/blog/2021-03-04-corona-warn-app-version-1-13/) of the Corona-Warn-App. Furthermore, the data donation captures data points on warnings from the event registration feature (similar to the capturing of warnings that users receive based on the distance measurement via Bluetooth). The project team also records whether users share their event check-ins. A prerequisite for the recording is that users have activated the voluntary donation of data.
 
 ### Rapid test partner search allows users to quickly find test providers that support the CWA
 

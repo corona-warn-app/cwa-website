@@ -13,7 +13,7 @@ In addition, the section with statistics now contains **key figures on the vacci
 
 <!-- overview -->
 
-With version 2.5, users can add **certificates of recovery** to their Corona-Warn-App by going to the "Certificates" tab in the tab bar and selecting "Add Certificate." They can then scan the QR code they received from their family physician. For more information on adding vaccination certificates, click [here](https://www.coronawarn.app/en/blog/2021-06-10-cwa-version-2-3/). 
+With version 2.5, users can add **certificates of recovery** to their Corona-Warn-App by going to the "Certificates" tab in the tab bar and selecting "Add Certificate." They can then scan the QR code they received from their family physician. For more information on adding vaccination certificates, click [here](/en/blog/2021-06-10-cwa-version-2-3/). 
 
 Certificates of recovery are stored indefinitely in the app. However, it depends on federal regulations for how long they serve as official proof of recovery.  
 
@@ -41,7 +41,7 @@ At this point, they can also activate a slider under their own name to indicate 
 
 Users cannot define the QR code that is displayed first in the overview of the certificate wallet. If multiple certificates are available, test certificates automatically appear before vaccination certificates or certificates of recovery, as long as they are not older than 48 (PCR test) or 24 hours (rapid test).
 
-Users can add **digital test certificates for PCR and rapid tests** by registering a test in the Corona-Warn-App and requesting the test certificate during the registration process, just like it has been possible since version 2.4 of the CWA. If the test result is negative, the digital certificate will appear in the wallet under the individual's name. More detailed information on requesting digital test certificates can be found [here](https://www.coronawarn.app/en/blog/2021-06-24-cwa-version-2-4/). 
+Users can add **digital test certificates for PCR and rapid tests** by registering a test in the Corona-Warn-App and requesting the test certificate during the registration process, just like it has been possible since version 2.4 of the CWA. If the test result is negative, the digital certificate will appear in the wallet under the individual's name. More detailed information on requesting digital test certificates can be found [here](/en/blog/2021-06-24-cwa-version-2-4/). 
 
 As of version 2.5, they can also add test certificates to the app that they did not receive through the CWA by tapping "Add Certificate" under "Certificates" and scanning the QR code they received at the testing site. This may be the case, for example, for **test results from other countries** within the EU, as well as Iceland, Norway, Liechtenstein, and Switzerland.  
 
@@ -56,4 +56,3 @@ Under the key figures section in their Corona-Warn-App, users can now see how ma
 <br></br>
 
 Version 2.5 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
-

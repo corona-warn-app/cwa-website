@@ -15,7 +15,7 @@ Außerdem werden in den Statistiken nun zusätzlich **Kennzahlen über den Forts
 
 <!-- overview -->
 
-Mit Version 2.5 können Nutzer\*innen **Genesenenzertifikate** in die Corona-Warn-App integrieren, indem sie, genau wie bei Impfzertifikaten, in der Registerkarte auf den Reiter „Zertifikate“ gehen und dort „Zertifikat hinzufügen“ auswählen. Anschließend können sie den QR-Code, den sie von ihrem Hausarzt/ihrer Hausärztin erhalten haben, scannen. Weitere Informationen zum Hinzufügen von Impfzertifikaten finden Sie [hier](https://www.coronawarn.app/de/blog/2021-06-10-cwa-version-2-3/). 
+Mit Version 2.5 können Nutzer\*innen **Genesenenzertifikate** in die Corona-Warn-App integrieren, indem sie, genau wie bei Impfzertifikaten, in der Registerkarte auf den Reiter „Zertifikate“ gehen und dort „Zertifikat hinzufügen“ auswählen. Anschließend können sie den QR-Code, den sie von ihrem Hausarzt/ihrer Hausärztin erhalten haben, scannen. Weitere Informationen zum Hinzufügen von Impfzertifikaten finden Sie [hier](/de/blog/2021-06-10-cwa-version-2-3/). 
 
 <br></br>
 <center> <img src="./Genesenenzertifikat (3).png" title="Genesenenzertifikat" style="align: center"> <img src="./Genesenenzertifikat (1).png" title="Genesenenzertifikat Details" style="align: center"> </center>
@@ -45,7 +45,7 @@ An dieser Stelle können Nutzer\*innen unter ihrem eigenen Namen einen Schiebere
 
 In der Übersicht des Zertifikats-Wallets wird pro Person das **relevanteste Zertifikat zuerst** angezeigt. Beispielsweise wird das Testzertifikat eines aktuellen PCR- oder Schnelltests angezeigt, selbst, wenn der oder die Nutzer\*in ein Impfzertifikat mit vollständigem Schutz hat. Sobald der Test nicht mehr aktuell ist (nach 24 beziehungsweise 48 Stunden), wird automatisch das Impfzertifikat an erster Stelle angezeigt.
 
-Wie schon in CWA-Version 2.4 möglich, können Nutzer\*innen **digitale Testzertifikate für PCR- und Schnelltests** hinzufügen, indem sie einen Test in der Corona-Warn-App registrieren und somit das Testzertifikat anfordern. Ist das Testergebnis negativ, erscheint das digitale Zertifikat im Wallet unter dem Namen der jeweiligen Person. Genauere Informationen zur Anforderung digitaler Testzertifikate finden Sie [hier](https://www.coronawarn.app/de/blog/2021-06-24-cwa-version-2-4/), Information zum Buchen und Integrieren von Schnelltests [hier](https://www.coronawarn.app/de/blog/2021-05-11-how-to-rapid-test-integration/). 
+Wie schon in CWA-Version 2.4 möglich, können Nutzer\*innen **digitale Testzertifikate für PCR- und Schnelltests** hinzufügen, indem sie einen Test in der Corona-Warn-App registrieren und somit das Testzertifikat anfordern. Ist das Testergebnis negativ, erscheint das digitale Zertifikat im Wallet unter dem Namen der jeweiligen Person. Genauere Informationen zur Anforderung digitaler Testzertifikate finden Sie [hier](/de/blog/2021-06-24-cwa-version-2-4/), Information zum Buchen und Integrieren von Schnelltests [hier](/de/blog/2021-05-11-how-to-rapid-test-integration/). 
 
 Ab Version 2.5 können Nutzer\*innen außerdem Testzertifikate in die App integrieren, die sie nicht über die Corona-Warn-App erhalten haben, indem sie unter „Zertifikate“ auf „Zertifikat hinzufügen“ tippen und den QR-Code scannen, den sie an der Teststelle erhalten haben. Das kann zum Beispiel bei **Testergebnissen aus anderen Ländern** innerhalb der EU sowie Island, Norwegen, Liechtenstein und der Schweiz der Fall sein. 
 

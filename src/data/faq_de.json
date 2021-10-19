@@ -449,7 +449,7 @@
                         "anchor": "vac_cert_red_warning",
                         "active": true,
                         "textblock": [
-                            "Wenn eine vollständig geimpfte Person eine Begegnung mit erhöhtem Risiko (rote Kachel) angezeigt bekommt, ist zunächst keine Quarantäne nötig, solange keine Symptome auftreten. Falls im weiteren Verlauf Symptome auftreten, sollten Sie sich unmittelbar testen lassen und in sofortige Quarantäne begeben. Die Benachrichtigung durch die Corona-Warn-App über ein erhöhtes Risiko ermöglicht einen kostenlosen PCR-Test. Bei nicht abgeschlossener Grundimmunisierung sowie in den ersten 14 Tagen nach der letzten Dosis ist der Impfschutz deutlich geringer, so dass hier dieselben Empfehlungen wie bei Ungeimpften gelten."
+                            "Wenn eine vollständig geimpfte Person eine Begegnung mit erhöhtem Risiko (rote Kachel) angezeigt bekommt, ist zunächst keine Quarantäne nötig, solange keine Symptome auftreten. Falls im weiteren Verlauf Symptome auftreten, sollten Sie sich unmittelbar testen lassen und in sofortige Quarantäne begeben. Wenn Sie sich testen lassen wollen, konsultieren Sie bitte Ihren Arzt bzw. Ihre Ärztin für die weiteren Schritte. Die Benachrichtigung durch die Corona-Warn-App über ein erhöhtes Risiko ermöglicht einen kostenlosen PCR-Test. Bei nicht abgeschlossener Grundimmunisierung sowie in den ersten 14 Tagen nach der letzten Dosis ist der Impfschutz deutlich geringer, so dass hier dieselben Empfehlungen wie bei Ungeimpften gelten."
                         ]
                     },
                     {
@@ -569,7 +569,7 @@
                         "active": true,
                         "textblock": [
                             "Wenn die Corona-Warn-App Ihnen eine Begegnung mit erhöhtem Risiko (rote Kachel) anzeigt, sollten Sie einen PCR-Test machen und sich in Quarantäne begeben.",
-                            "Eine Begegnung mit erhöhtem Risiko in der Corona-Warn-App ermöglicht Ihnen einen kostenlosen PCR-Test. Bitte konsultieren Sie Ihren Arzt bzw. Ihre Ärztin für die weiteren Schritte."
+                            "Bitte konsultieren Sie Ihren Arzt bzw. Ihre Ärztin für die weiteren Schritte."
                         ]
                     },
                     {
@@ -1099,7 +1099,8 @@
                         "anchor": "rooted_devices",
                         "active": true,
                         "textblock": [
-                            "Nein, die App wird auf gerooteten Geräten nicht unterstützt."
+                            "Ja, das ist möglich. Die App wird auf gerooteten Geräten jedoch nicht offiziell unterstützt.",
+                            "Zurzeit führen das Entsperren des Bootloaders oder ähnliche Modifikationen (wie die Installation von microG) dazu, dass die Benutzung der optionalen Datenspende- und Befragungsfunktionen ohne Warnung fehlschlägt. Der Grund dafür ist, dass diese Funktionen einen Integritätscheck über SafetyNet benötigen."
                         ]
                     },
                     {
@@ -1511,7 +1512,7 @@
                             "Die Corona-Warn-App hat zwei verschiedene Statusanzeigen, die dieses Infektionsrisiko verdeutlichen:  \"niedriges Risiko\" (grün) und \"erhöhtes Risiko\" (rot).",
                             "Wenn Ihnen auf Ihrem Smartphone Begegnungen mit erhöhtem oder niedrigen Risiko angezeigt werden, dann bedeutet dies, dass Ihr Smartphone und das einer Person, die sich später in der App als infiziert gemeldet hat, in den vergangenen 14 Tagen per Bluetooth Diagnoseschlüssel ausgetauscht haben. Auf Basis der oben genannten Kriterien wird diese Begegnung dann mit einem erhöhten oder geringen Infektionsrisiko eingestuft.",
                             "Zeigt die App ein \"niedriges Risiko\" (grün) an, schätzt sie Ihr Infektionsrisiko als gering ein. Zusätzlich dazu informiert die App Sie aber, dass Ihr Smartphone sehr wohl eine oder mehrere Begegnungen in den vergangenen 14 Tagen mit (später positiv getesteten) Personen aufgezeichnet hat und zeigt auch an, an wie vielen Tagen dies der Fall war. Ab der Version 1.9.1 der App sehen die Nutzer somit die Anzahl an Tagen, an denen Risikobegegnungen stattgefunden haben, und nicht mehr die Anzahl an Begegnungen. Zusätzlich wird folgender Hinweis angezeigt: \"Ein niedriges Risiko besteht insbesondere dann, wenn sich Ihre Begegnung auf einen kurzen Zeitraum oder einen größeren Abstand beschränkt hat. Sie müssen sich keine Sorgen machen, und es besteht kein besonderer Handlungsbedarf.\"",
-                            "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem Gesundheitsamt oder dem ärztlichen Bereitschaftsdienst unter 116117 in Verbindung, um das weitere Vorgehen abzustimmen. Sie können zudem die <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>Webseite</a> oder die App (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>) des ärztlichen Bereitschaftsdienstes nutzen, um direkt einen Termin zu vereinbaren. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Das <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> hat jedoch entsprechende Empfehlungen veröffentlicht. Die App zeigt ab Version 1.9.1 zudem an, an welchen Tag (innerhalb der letzten 14 Tage) letztmalig eine Begegnung mit erhöhtem Risiko stattgefunden hat. Hier sehen Sie nun ein genaues Datum, um Ihre Kontakte bzw. Ihr Verhalten an diesem Tag besser nachvollziehen zu können."
+                            "Wird Ihnen ein \"erhöhtes Risiko\" (rot) angezeigt, sollten Sie zu Hause bleiben und Ihre direkten Kontakte reduzieren. Setzen Sie sich mit Ihrem Hausarzt, dem Gesundheitsamt oder dem ärztlichen Bereitschaftsdienst unter 116117 in Verbindung, um das weitere Vorgehen abzustimmen. Sie können zudem die <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>Webseite</a> oder die App (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>) des ärztlichen Bereitschaftsdienstes nutzen, um direkt einen Termin zu vereinbaren. Die Entscheidung, ob ein sog. PCR-Test durchgeführt wird, obliegt in letzter Instanz Ihrem Arzt. Das <a href='https://www.bundesanzeiger.de/pub/publication/EaknuyebqGE4JSI7pwk/content/EaknuyebqGE4JSI7pwk/BAnz%20AT%2021.09.2021%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Bundesministerium für Gesundheit</a> hat jedoch entsprechende Empfehlungen veröffentlicht. Die App zeigt ab Version 1.9.1 zudem an, an welchen Tag (innerhalb der letzten 14 Tage) letztmalig eine Begegnung mit erhöhtem Risiko stattgefunden hat. Hier sehen Sie nun ein genaues Datum, um Ihre Kontakte bzw. Ihr Verhalten an diesem Tag besser nachvollziehen zu können."
                         ]
                     },
                     {
@@ -2268,7 +2269,7 @@
                 {
                     "term": "Datenspende",
                     "anchor": "data_donation",
-                    "description": "Eine freiwillige und anonyme Möglichkeit dem RKI Daten über die Nutzung der CWA zukommen zu lassen. Die freiwillige Datenspende kann den Expert*innen helfen, die Wirksamkeit der App zu bewerten und sie weiter zu verbessern. Weitere Informationen sind hier zusammengefasst: <a href='https://www.coronawarn.app/de/blog/2021-03-04-corona-warn-app-version-1-13/'>Science Blog: Corona-Warn-App nun mit Datenspende und Link zu wissenschaftlicher Befragung</a>"
+                    "description": "Eine freiwillige und anonyme Möglichkeit dem RKI Daten über die Nutzung der CWA zukommen zu lassen. Die freiwillige Datenspende kann den Expert*innen helfen, die Wirksamkeit der App zu bewerten und sie weiter zu verbessern. Weitere Informationen sind hier zusammengefasst: <a href='/de/blog/2021-03-04-corona-warn-app-version-1-13/'>Science Blog: Corona-Warn-App nun mit Datenspende und Link zu wissenschaftlicher Befragung</a>"
                 },
                 {
                     "term": "DCC",
@@ -2315,7 +2316,7 @@
                 {
                     "term": "Exposure Notification Express (ENE)",
                     "anchor": "ene",
-                    "description": "Siehe FAQ: <a href='https://www.coronawarn.app/de/faq/#ene' target='_blank' rel='noopener noreferrer'>Exposure Notification Express (ENE)</a>"
+                    "description": "Siehe FAQ: <a href='/de/faq/#ene' target='_blank' rel='noopener noreferrer'>Exposure Notification Express (ENE)</a>"
                 },
                 {
                     "term": "Exposure Notification Framework (ENF)",
@@ -2415,6 +2416,11 @@
                     "term": "PCR-Test",
                     "anchor": "pcr_test",
                     "description": "PCR-Tests gelten als die aussagekräftigsten Corona-Tests. Bei dieser Art des Tests entnimmt medizinisches Personal die Probe und lässt sie durch ein Labor auswerten."
+                },
+                {
+                    "term": "Privacy-Preserving-Analytics (PPA)",
+                    "anchor": "ppa",
+                    "description": "Mithilfe des Verfahrens, welches Privacy-Preserving-Analytics oder auch verkürzt PPA genannt wird, ist es möglich, dass Nutzende der Corona-Warn-App auf ihrem Smartphone anfallende Daten einer auswertenden Instanz zur Verfügung stellen, ohne dabei ihre Identität preiszugeben. Über diesen Weg werden seit dem 5. März 2021 täglich operationale Daten anonym, aber authentisiert von Corona-Warn-App-Nutzenden gespendet. Es erfolgt eine Überprüfung des spendenden Endgerätes, um sicherzustellen, dass nur eine genuine Corona-Warn-App von einem genuinen Endgerät Daten übermittelt (für eine ausführliche Dokumentation siehe <a href='https://github.com/corona-warn-app/cwa-ppa-server' target='_blank' rel='noopener noreferrer'>GitHub repository: cwa-ppa-server</a>). Siehe außerdem <a href='#glossary_data_donation'>Datenspende</a>."
                 },
                 {
                     "term": "Prüf-App / Prüfen eines Zertifikats / Verifizieren eines Zertifikats",

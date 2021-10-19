@@ -154,12 +154,12 @@
                         ]
                     },
                     {
-                        "title": "Is my certificate valid in the country I am travelling to?",
+                        "title": "Is my certificate valid in the country I am traveling to?",
                         "anchor": "cert_eu_travel",
                         "active": true,
                         "textblock": [
                             "<b>Update</b><br/>Please note that the behavior of the certificate validity check has changed with version 2.8. For more information on this change, please see the FAQ entry: <a href='#dcc_no_rules' target='_blank' rel='noopener noreferrer'>Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?</a><hr>",
-                            "Starting with version 2.6, you can check before travelling whether your certificates (test, recovery and/or vaccination certificate) are valid in a selected country at the time of your trip. The Corona-Warn-App takes into account the applicable entry rules of the selected travel country and compares them with various parameters of the certificate, such as the date and type of test, test center or date of vaccination.",
+                            "Starting with version 2.6, you can check before traveling whether your certificates (test, recovery and/or vaccination certificate) are valid in a selected country at the time of your trip. The Corona-Warn-App takes into account the applicable entry rules of the selected travel country and compares them with various parameters of the certificate, such as the date and type of test, test center or date of vaccination.",
                             "Every European country that supports EU digital COVID certificates has the ability to upload rules that the Corona-Warn-App can match for verification. At the start of this new feature, Ireland, Lithuania, Luxembourg, the Netherlands, Slovenia and Spain, together with Germany, have uploaded rules, with more countries to follow in the coming weeks.",
                             "If the app shows after checking that there are no entry rules available, you can find out about the rules at <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>."
                         ]
@@ -222,7 +222,7 @@
                         "textblock": [
                             "In Germany, third parties can only reliably check whether it is a valid vaccination certificate, recovery certificate, or test certificate using the CovPassCheck app. Additionally, an identity check with photo ID should take place. Please note that other countries may use different apps for certificate verification.",
                             "A pure visual check of the certificates is not sufficient, as manipulated screenshots, apps or system settings (e.g. changed date) could be used, for example. The CovPassCheck-App is a secure solution for e.g. traders and public authorities to reliably check EU digital COVID certificates. More information and download links to the CovPassCheck app can be found here: <a href='https://www.digitaler-impfnachweis-app.de/en/covpasscheck-app/' target='_blank' rel='noopener noreferrer'>Check EU COVID certificates directly via app</a>. Please note that third parties in other countries may use other apps to verify certificates.",
-                            "You can check certificates for validity on your own directly in the Corona-Warn-App without the need of using the CovPassCheck-App. For more information, see the blog <a href='../blog/2021-07-28-cwa-version-2-6/' target='_blank' rel='noopener noreferrer'>Users can add local 7-day incidences and check certificates for validity before traveling</a> and the FAQ article <a href='#cert_eu_travel' target='_blank' rel='noopener noreferrer'>Is my certificate valid in the country I am travelling to?</a>"
+                            "You can check certificates for validity on your own directly in the Corona-Warn-App without the need of using the CovPassCheck-App. For more information, see the blog <a href='../blog/2021-07-28-cwa-version-2-6/' target='_blank' rel='noopener noreferrer'>Users can add local 7-day incidences and check certificates for validity before traveling</a> and the FAQ article <a href='#cert_eu_travel' target='_blank' rel='noopener noreferrer'>Is my certificate valid in the country I am traveling to?</a>"
                         ]
                     }
                 ]
@@ -449,7 +449,7 @@
                         "anchor": "vac_cert_red_warning",
                         "active": true,
                         "textblock": [
-                            "If a fully vaccinated person is shown an encounter with increased risk (red tile), quarantine is not necessary at first if there are no symptoms. If symptoms occur in the further course, you should get tested immediately and go into immediate quarantine. Notification by the Corona-Warn-App about an increased risk allows for a free PCR test. In the case of unfinished basic immunization as well as in the first 14 days after the last dose, the vaccination protection is significantly lower, so that the same recommendations apply here as for unvaccinated."
+                            "If a fully vaccinated person is shown an encounter with increased risk (red tile), quarantine is not necessary at first if there are no symptoms. If symptoms occur in the further course, you should get tested immediately and go into immediate quarantine. If you want to get tested, please confer with your doctor for the futher procedure. In the case of unfinished basic immunization as well as in the first 14 days after the last dose, the vaccination protection is significantly lower, so that the same recommendations apply here as for unvaccinated."
                         ]
                     },
                     {
@@ -503,7 +503,7 @@
                             "The app only reads the data contained in the QR code of the vaccination certificate and displays it readable in the app. If, for example, typing errors or different spellings were used in the two vaccination certificates, the app does not recognize them as belonging together. Typical examples are: additional spaces, typing errors in the name or in the specification of a title.",
                             "If the second vaccination certificate was issued correctly, it is usually sufficient to remove the first vaccination certificate in the Corona-Warn-App and then re-scan the second vaccination certificate. The app recognizes that this also achieves full vaccination protection (after 14 days).",
                             "However, if the data in the second vaccination certificate is incorrect, only the issuer of the certificate can correct it.",
-                            "<b>Important notice:</b> Since in some countries proof of vaccination is still required for both the first and second vaccination, it is advisable to carry all vaccination certificates with you, especially when travelling abroad, be it in the Corona-Warn-App, as a PDF, or as a paper printout."
+                            "<b>Important notice:</b> Since in some countries proof of vaccination is still required for both the first and second vaccination, it is advisable to carry all vaccination certificates with you, especially when traveling abroad, be it in the Corona-Warn-App, as a PDF, or as a paper printout."
                         ]
                     }
                 ]
@@ -569,7 +569,7 @@
                         "active": true,
                         "textblock": [
                             "If the Corona-Warn-App shows you an encounter with increased risk (red tile), you should take a PCR test and quarantine yourself.",
-                            "An encounter with increased risk in the Corona-Warn-App allows you to take a free PCR test. Please confer with your doctor for the further procedure."
+                            "Please confer with your doctor for the further procedure."
                         ]
                     },
                     {
@@ -1086,11 +1086,12 @@
                         ]
                     },
                     {
-                        "title": "[Google/Android]: Can I also use the app on a rooted device?",
+                        "title": "[Google/Android]: Can I use the app on a rooted device?",
                         "anchor": "rooted_devices",
                         "active": true,
                         "textblock": [
-                            "No, the app is not supported on rooted devices."
+                            "Yes, you can. However, the app is not officially supported on rooted devices.",
+                            "Currently, unlocking the bootloader or similar modifications (such as installing microG) will cause the optional data donation and survey features to fail without an indication in the app. The reason for this is that these features require an integrity check via SafetyNet."
                         ]
                     },
                     {
@@ -1502,7 +1503,7 @@
                             "The Corona-Warn-App has two different status indicators that indicate this risk: \"low risk\" (green) and \"increased risk\" (red).",
                             "If you see high-risk or low-risk encounters on your smartphone, it means that your smartphone and that of a person who later reported themselves as infected in the app have exchanged diagnostic keys via Bluetooth in the past 14 days. Based on the above mentioned criteria, this encounter is then classified as having an increased or low risk of infection.",
                             "If the app shows a \"low risk\" (green), the relevant threshold values have not been exceeded. Nevertheless, the app also informs you that your smartphone has recorded one or more encounters with (later positively tested) persons in the past 14 days and also shows on how many days this was the case. As of version 1.9.1 of the app, users will see the number of days on which risk encounters have taken place, rather than the number of encounters. In addition, the following note is displayed: \"A low risk exists in particular if your encounter was limited to a short period of time or a longer distance. You do not need to worry, and there is no particular need for action.\"",
-                            "If you get a \"increased risk\" (red), you should stay at home and reduce your direct contacts. Contact your general practitioner, the health department or the medical on-call service at 116117 to discuss how to proceed. You can also book an appointment directly via the 116117 on-call service's <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>website</a> or app (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>). The decision whether a so-called PCR test is performed is ultimately up to your doctor. However, the <a href='https://www.bundesanzeiger.de/pub/publication/oP6RjNyQGYnROEn0YzL/content/oP6RjNyQGYnROEn0YzL/BAnz%20AT%2001.12.2020%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Federal Ministry of Health</a> has published corresponding guidelines and recommendations. As of version 1.9.1, the app also shows the last time (within the last 14 days) an encounter with increased risk took place. You can now see an exact date to better track your contacts or behaviour on that specific day."
+                            "If you get a \"increased risk\" (red), you should stay at home and reduce your direct contacts. Contact your general practitioner, the health department or the medical on-call service at 116117 to discuss how to proceed. You can also book an appointment directly via the 116117 on-call service's <a href='https://www.116117.de/de/coronavirus.php#content753' target='_blank' rel='noopener noreferrer'>website</a> or app (<a href='https://play.google.com/store/apps/details?id=de.kvdigital.nfa' target='_blank' rel='noopener noreferrer'>Play Store</a>, <a href='https://apps.apple.com/de/app/116117-app/id1465237675' target='_blank' rel='noopener noreferrer'>App Store</a>). The decision whether a so-called PCR test is performed is ultimately up to your doctor. However, the <a href='https://www.bundesanzeiger.de/pub/publication/EaknuyebqGE4JSI7pwk/content/EaknuyebqGE4JSI7pwk/BAnz%20AT%2021.09.2021%20V1.pdf?inline' target='_blank' rel='noopener noreferrer'>Federal Ministry of Health</a> has published corresponding guidelines and recommendations. As of version 1.9.1, the app also shows the last time (within the last 14 days) an encounter with increased risk took place. You can now see an exact date to better track your contacts or behaviour on that specific day."
                         ]
                     },
                     {
@@ -1595,7 +1596,7 @@
                         "active": true,
                         "textblock": [
                             "Besides the decentralized storage of encounters using the interfaces provided by Google and Apple, the discussions also focused on the publication of the developed software components under an open source license.",
-                            "The app will be available in the official Google and Apple app stores.",
+                            "The app is available in the official Google and Apple app stores.",
                             "An additional requirement for the development process was the early and intensive involvement of the BfDI and the BSI, as well as close coordination with these bodies.",
                             "As this is an agile development process, requirements are constantly evolving."
                         ]
@@ -2205,7 +2206,7 @@
                     "term": "Business Rules",
                     "anchor": "business_rules",
 
-                    "description": "For the introduction of <a href='#glossary_digital_certificate'>Digital COVID Certificates</a>, the eHealth network of the European Commission and the EU member states agreed that every country compiles the individual rules which have to be checked for transnational travelling. These \"Business Rules\" have two categories:<ul><li>Invalidation Rules of the Country of Administration, which decide under which circumstances a <a href='#glossary_digital_certificate'>certificate</a> is rejected</li><li>Acceptance Rules of the Country of Arrival, which must be fulfilled to enter the country</li></ul>"
+                    "description": "For the introduction of <a href='#glossary_digital_certificate'>Digital COVID Certificates</a>, the eHealth network of the European Commission and the EU member states agreed that every country compiles the individual rules which have to be checked for transnational traveling. These \"Business Rules\" have two categories:<ul><li>Invalidation Rules of the Country of Administration, which decide under which circumstances a <a href='#glossary_digital_certificate'>certificate</a> is rejected</li><li>Acceptance Rules of the Country of Arrival, which must be fulfilled to enter the country</li></ul>"
                 }
             ],
             "C": [
@@ -2259,7 +2260,7 @@
                 {
                     "term": "Data Donation",
                     "anchor": "data_donation",
-                    "description": "A voluntary and anonymous way to provide the RKI with data on the use of the CWA. Voluntary data donation can help experts evaluate the effectiveness of the app and further improve it. More information is summarized here: <a href='https://www.coronawarn.app/en/blog/2021-03-04-corona-warn-app-version-1-13/'>Science Blog: Users can provide data voluntarily to help improve the Corona-Warn-App further</a>."
+                    "description": "A voluntary and anonymous way to provide the RKI with data on the use of the CWA. Voluntary data donation can help experts evaluate the effectiveness of the app and further improve it. More information is summarized here: <a href='/en/blog/2021-03-04-corona-warn-app-version-1-13/'>Science Blog: Users can provide data voluntarily to help improve the Corona-Warn-App further</a>."
                 },
                 {
                     "term": "DCC",
@@ -2321,7 +2322,7 @@
                 {
                     "term": "Exposure Notification Express (ENE)",
                     "anchor": "ene",
-                    "description": "See FAQ: <a href='https://www.coronawarn.app/en/faq/#ene' target='_blank' rel='noopener noreferrer'>Exposure Notification Express (ENE)</a>"
+                    "description": "See FAQ: <a href='/en/faq/#ene' target='_blank' rel='noopener noreferrer'>Exposure Notification Express (ENE)</a>"
                 },
                 {
                     "term": "Exposure Notification Framework (ENF)",
@@ -2367,6 +2368,11 @@
                     "term": "PCR Test",
                     "anchor": "pcr_test",
                     "description": "PCR tests are considered the most accurate among corona tests. In this type of test, medical personnel collect the sample and have it analyzed by a laboratory."
+                },
+                {
+                    "term": "Privacy Preserving Analytics (PPA)",
+                    "anchor": "ppa",
+                    "description": "With the help of the procedure, which is called Privacy Preserving Analytics or PPA for short, it is possible for users of the Corona-Warn-App to make data collected on their smartphone available to an evaluating authority without revealing their identity. Since March 5, 2021, operational data has been donated anonymously but authenticated by Corona-Warn-App users on a daily basis via this procedure. Verification of the donating endpoint is performed to ensure that only a genuine Corona-Warn-App is submitting data from a genuine endpoint (for detailed documentation, see <a href='https://github.com/corona-warn-app/cwa-ppa-server' target='_blank' rel='noopener noreferrer'>GitHub repository: cwa-ppa-server</a>). See also <a href='#glossary_data_donation'>Data Donation</a>."
                 },
                 {
                     "term": "Proof of Vaccination",
