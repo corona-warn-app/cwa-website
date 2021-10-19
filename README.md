@@ -49,6 +49,14 @@ npm start
 
 It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
 
+If you want to build the website without optimizations, you can do so by running
+
+```bash
+npm run start-fast
+```
+
+This will disable image compression in exchange for faster build times.
+
 ### Changing Things
 
 Manuals for the most common use cases of updating website content are available in the [docs folder](./docs/).
@@ -69,6 +77,16 @@ Alternatively, run `npm run test:open` for simpler test development. Be aware th
 
 Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, eg `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
 
+#### Cypress under Microsoft Windows
+
+If executing `$ npm run test:prepare` causes an error on Microsoft Windows
+
+`'.' is not recognized as an internal or external command,`
+
+ensure that [git](https://git-scm.com/downloads) is installed and execute the following command:
+
+`npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"`
+
 ### Updating coronawarn.app
 
 Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
@@ -83,7 +101,7 @@ The following channels are available for discussions, feedback, and support requ
 
 | Type                     | Channel                                                |
 | ------------------------ | ------------------------------------------------------ |
-| **General discussion, issues, bugs**   | <a href="https://github.com/corona-warn-app/cwa-website/issues/new/choose" title="General Discussion"><img src="https://img.shields.io/github/issues/corona-warn-app/cwa-website/question.svg?style=flat-square"></a> </a>   |
+| **General discussion, issues, bugs**   | <a href="https://github.com/corona-warn-app/cwa-website/issues/new/choose" title="General Discussion"><img src="https://img.shields.io/github/issues/corona-warn-app/cwa-website?style=flat-square"></a> </a>   |
 | **Other requests**    | <a href="mailto:corona-warn-app.opensource@sap.com" title="Email CWA Team"><img src="https://img.shields.io/badge/email-CWA%20team-green?logo=mail.ru&style=flat-square&logoColor=white"></a> |
 
 ## How to contribute
@@ -98,7 +116,7 @@ A list of all public repositories from the Corona-Warn-App can be found [here](h
 
 ## Licensing
 
-Copyright (c) 2020 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
+Copyright (c) 2020-2021 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
 
 Licensed under the **Apache License, Version 2.0** (the "License"); you may not use this file except in compliance with the License.
 

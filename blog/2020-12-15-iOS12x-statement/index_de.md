@@ -1,6 +1,6 @@
 ---
-page-title: "Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen" 
-page-description: "Telekom und SAP werden die Corona Warn App für iOS 12.5 verfügbar machen" 
+page-title: "Telekom und SAP werden die Corona-Warn-App für iOS 12.5 verfügbar machen" 
+page-description: "Telekom und SAP werden die Corona-Warn-App für iOS 12.5 verfügbar machen" 
 page-name: ios-12-5
 page-name_de: ios-12-5
 author: Hilmar Schepp

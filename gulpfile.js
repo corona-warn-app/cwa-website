@@ -16,13 +16,19 @@ const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
 const { processBlogFiles } = require('./src/services/blog-processor');
+const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
 var rename = require("gulp-rename");
+const analyseConfig = require("./src/data/analyse.json");
+const fetch = require('node-fetch');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
+
+// Check for --skip-compression flag
+const SKIP_COMPRESSION = yargs.argv.skipCompression;
 
 // Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
@@ -43,9 +49,14 @@ gulp.task(
   gulp.series(
     clean,
     cleanBlogs,
+    cleanScienceBlogs,
     buildBlogFiles,
+    buildScienceBlogFiles,
+    analyseData,
+    cwaaJs,
+    javascript,
     gulp.parallel(
-      pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects
     ),
     images_webp,
     sass,
@@ -56,6 +67,7 @@ gulp.task(
 );
 
 gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
+gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
@@ -70,6 +82,9 @@ function cleanBlogs(done) {
   rimraf(PATHS.blogOutputs, done);
 }
 
+function cleanScienceBlogs(done) {
+  rimraf(PATHS.blogScienceOutputs, done);
+}
 const folders = [
   PATHS.dist,
   PATHS.dist + '/.well-known'
@@ -96,11 +111,37 @@ function copyBlogImgs() {
   ])
   .pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
+function copyScienceBlogImgs() {
+  return gulp.src([
+    'science/**/*',
+    '!science/**/*.md'
+  ])
+  .pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+}
+
 // Prepare blog .md files to be used as HTML
 function buildBlogFiles(done) {
   copyBlogImgs();
   processBlogFiles();
   done();
+}
+// Prepare science blog .md files to be used as HTML
+function buildScienceBlogFiles(done) {
+  copyScienceBlogImgs();
+  processScienceBlogFiles();
+  done();
+}
+
+function analyseData(){
+  async function fallbackdataFn() {
+    const response  = await fetch(analyseConfig.fetchUrl, {method: 'GET'})
+    const data = await response.json();
+    return JSON.stringify(data); 
+  }
+
+  return fallbackdataFn().then(e => {
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
+  });
 }
 
 // Copy page templates into finished HTML files
@@ -149,6 +190,33 @@ function sass() {
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
+}
+
+function cwaaJs() {
+  return gulp
+    .src(PATHS.cwaa)
+    .pipe(named())
+    .pipe($.sourcemaps.init())
+    .pipe(webpackStream({
+      mode: PRODUCTION ? 'production' : 'development',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+                compact: false
+              }
+            }
+          }
+        ]
+      },
+      devtool: !PRODUCTION && 'source-map'
+    }, webpack2))
+    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
 let webpackConfig = {
@@ -204,7 +272,9 @@ function images_minify() {
 function images_webp() {
   return gulp
     .src('src/assets/img/**/*')
-    .pipe(webp())
+    .pipe(
+        $.if(!SKIP_COMPRESSION, webp())
+    )
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
@@ -238,7 +308,26 @@ function copyFAQRedirects() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init(
-    {
+    { // mirror server headers to dev env
+      middleware: function (req, res, next) {
+
+        let CSP = "default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        if(req.url.indexOf("/science") != -1){
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        }else if(req.url.indexOf("/analysis") != -1){
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:; connect-src 'self' https://obs.eu-de.otc.t-systems.com/";
+        }
+
+        res.setHeader("Content-Security-Policy", CSP);
+
+        res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("X-Frame-Options", "DENY");
+        res.setHeader("X-XSS-Protection", "1");
+        
+
+        next();
+      },
       server: {
         baseDir: PATHS.dist,
         serveStaticOptions: {
@@ -270,6 +359,9 @@ function watch(done) {
     .watch('blog/**/*')
     .on('all', gulp.series(buildBlogFiles, pages));
   gulp
+    .watch('science/**/*')
+    .on('all', gulp.series(buildScienceBlogFiles, pages));  
+  gulp
     .watch('src/pages/**/*.html')
     .on('all', gulp.series(pages, reload));
   gulp
@@ -283,8 +375,11 @@ function watch(done) {
     .on('all', gulp.series(resetPages, pages, reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp
-    .watch('src/assets/js/**/*.js')
+    .watch(['src/assets/js/**/*.js', '!src/assets/js/analyse/**/*'])
     .on('all', gulp.series(javascript, reload));
+  gulp
+    .watch('src/assets/js/analyse/**/*.js')
+    .on('all', gulp.series(cwaaJs, reload));
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
@@ -324,12 +419,12 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '14.4.2'))
+    .pipe(replace('[ios.latest-os-version]', '15.0.2'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '1.15.2'))
+    .pipe(replace('[ios.current-app-version]', '2.11.1'))
     .pipe(replace('[android.latest-os-version]', '11'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '1.15.2'))
+    .pipe(replace('[android.current-app-version]', '2.11.2'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }

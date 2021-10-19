@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{#unless lang_de}}en{{/unless}}{{#if
+  lang_de}}de{{/if}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{#if
+      page-description}}{{page-description}}{{/if}}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:" />
+    <meta name="referrer" content="no-referrer" />
+    {{#if global.favicon}}
+    {{> favicon favicon=global.favicon}}
+    {{/if}}
+    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
+    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <title>{{page-title}}</title>
+    <!-- scripts for blog 1 -->
+    <script type="text/javascript" src="/assets/js/science/font-awesome-5.3.1.js"></script>
+    <script type="text/javascript" src="/assets/js/science/pandoc-2.9.js"></script>
+    <script type="text/javascript" src="/assets/js/science/htmlwidgets.js"></script>
+    <script type="text/javascript" src="/assets/js/science/plotlywidget.js"></script>
+    <script type="text/javascript" src="/assets/js/science/axisj.js"></script>
+    <script type="text/javascript" src="/assets/js/science/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="/assets/js/science/unnamed.js"></script>
+    <script type="text/javascript" src="/assets/js/science/plotly-1.57.1.js"></script>
+    <script type="text/javascript" src="/assets/js/science/plotlylocales.js"></script>
+    <script type="text/javascript" src="/assets/js/science/mathjax.js"></script>
+    <!-- scripts for blog 2 -->
+    <script type="text/javascript" src="/assets/js/science/bootstrap-3.3.5.js"></script>
+    <script type="text/javascript" src="/assets/js/science/shiv-3.7.2.js"></script>
+    <script type="text/javascript" src="/assets/js/science/respond-1.4.2.js"></script>
+    <script type="text/javascript" src="/assets/js/science/jquery-sticky-tabs.js"></script>
+    <script type="text/javascript" src="/assets/js/science/highlight-9.12.0.js"></script>
+    <script type="text/javascript" src="/assets/js/science/popover.js"></script>
+    <script type="text/javascript" src="/assets/js/science/hljs.js"></script>
+    <!-- scripts for blog 3 -->
+    <script type="text/javascript" src="/assets/js/science/d3js.js"></script>
+  </head>
+  <body class="blog-detail {{#unless @root.page-name}}{{#ifpage
+    'index'}}page-home{{/ifpage}}{{/unless}}{{#if
+    @root.page-name}}page-{{@root.page-name}}{{/if}}">
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the
+    flattened page is created. --}}
+
+    {{> header}}
+
+    <section>
+      <div class="container">
+        <div class="container-inner contents-normal">
+          {{#if lang_de}}
+          {{> button-back-component
+          button=science.de.backToIndexButton}}
+          {{else}}
+          {{> button-back-component
+          button=science.en.backToIndexButton}}
+          {{/if}}
+          <div class="blog-markdown-container"> 
+            {{> body}} <!-- this line should be on the very left -->
+          </div>
+          <div class="bottom-back-to-blog">
+            {{#if lang_de}}
+            {{> button-back-component
+            button=science.de.backToIndexButton}}
+            {{else}}
+            {{> button-back-component
+            button=science.en.backToIndexButton}}
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#unless lang_de}}
+    {{> footer language=global.lang.en}}
+    {{/unless}}
+    {{#if lang_de}}
+    {{> footer language=global.lang.de}}
+    {{/if}}
+    
+    <script src="{{root}}assets/js/app.js"></script>
+    <script type="text/javascript" src="/assets/js/science/table.js"></script>
+    <script type="text/javascript" src="/assets/js/science/toc.js"></script>
+  </body>
+</html>

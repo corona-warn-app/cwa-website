@@ -1,3 +1,9 @@
+
+.plotly html-widget {
+  width:800px;
+  height:600px; 
+}
+
 .blog-list {
   padding-top: 33px;
 }
@@ -32,51 +38,56 @@
 }
 
 // required to use .contents-normal to reflect overrides
-.blog-detail .contents-normal {
-  .btn-link_narrow {
-    margin-top: 0;
-  }
-  h1 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  h2, h3 {
-    @extend .headline;
-    margin-top: 2rem;
-    margin-bottom: 1.2rem;
-  }
-  img {
-    max-width: 100%;
-  }
-  code {
-    font-size: $font-size-base * 0.9;
-    line-height: $line-height-base;
-    color: #000;
-    background-color: #f2f2f2;
-    border: 1px solid #e4e4e4;
-    border-radius: 4px;
-    display: inline-block;
-    page-break-inside: avoid;
-    word-wrap: break-word;
-    font-family: $font-family-monospace;
-    overflow: auto;
-    padding: 0px 5px;
-    margin-bottom: -0.6rem;
-  }
-  pre code {
-    display: block;
-    padding: 10px 14px;
-    margin-bottom: 0;
-    font-size: $font-size-base;
-  }
-  blockquote {
-    border-left: 8px solid $blue-light;
-    padding-left: 1rem;
-    p:last-child {
-      margin: 0;
+.blog-detail {
+  .contents-normal {
+    .btn-link_narrow {
+      margin-top: 0;
+    }
+    h1 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    h2, h3 {
+      @extend .headline;
+      margin-top: 2rem;
+      margin-bottom: 1.2rem;
+    }
+    img {
+      max-width: 100%;
+    }
+    code {
+      font-size: $font-size-base * 0.9;
+      line-height: $line-height-base;
+      color: #000;
+      background-color: #f2f2f2;
+      border: 1px solid #e4e4e4;
+      border-radius: 4px;
+      display: inline-block;
+      page-break-inside: avoid;
+      word-wrap: break-word;
+      font-family: $font-family-monospace;
+      overflow: auto;
+      padding: 0px 5px;
+      margin-bottom: -0.6rem;
+    }
+    pre code {
+      display: block;
+      padding: 10px 14px;
+      margin-bottom: 0;
+      font-size: $font-size-base;
+    }
+    blockquote {
+      border-left: 8px solid $blue-light;
+      padding-left: 1rem;
+      p:last-child {
+        margin: 0;
+      }
+    }
+    .bottom-back-to-blog {
+      margin: 2rem 0 4rem;
     }
   }
-  .bottom-back-to-blog {
-    margin: 2rem 0 4rem;
+  section {
+    padding-bottom: 0;
   }
 }

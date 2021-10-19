@@ -5,12 +5,18 @@
     <meta name="description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:" />
+    {{#ifequal page-name 'analysis'}}
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:; connect-src 'self' https://obs.eu-de.otc.t-systems.com/" />
+    {{else}}
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:" />
+    {{/ifequal}}
     <meta name="referrer" content="no-referrer" />
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
     {{/if}}
-
+    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
@@ -33,5 +39,20 @@
     {{#if lightbox}}
     <script src="{{root}}assets/js/lightbox.min.js"></script>
     {{/if}}
+    {{#if store-redirect}}
+    <script src="{{root}}assets/js/static/store-redirect.js"></script>
+    {{/if}}
+    {{#if eventregistration_js}}
+    <script src="{{root}}assets/js/eventregistration.js"></script>
+    {{/if}}
+    {{#if is_screenshots}}
+    <script src="{{root}}assets/js/screenshots.js"></script>
+    {{/if}}
+    {{#if screenshotsarchive}}
+    <script src="{{root}}assets/js/screenshots.js"></script>
+    {{/if}}
+	{{#ifequal page-name 'analysis'}}
+    <script src="{{root}}assets/js/cwaa.js"></script>
+    {{/ifequal}}
   </body>
 </html>

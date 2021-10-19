@@ -23,7 +23,11 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
+    - "!src/assets/js/analyse/**/*"
+    - "!src/assets/js/cwaa.js"
     - "!src/assets/js/app.js"
+    - "!src/assets/js/eventregistration.js"
+    - "!src/assets/js/screenshots.js"
     - "!src/assets/js/lib/**/*"
     - "!src/assets/{img,scss}/**/*"
   # Paths to Sass libraries, which can then be loaded with @import
@@ -31,8 +35,12 @@ PATHS:
   #  - "node_modules/foundation-sites/scss"
   #  - "node_modules/motion-ui/src"
   # Paths to JavaScript entry points for webpack to bundle modules
+  cwaa:
+    - "src/assets/js/cwaa.js"
   entries:
     - "src/assets/js/app.js"
+    - "src/assets/js/eventregistration.js"
+    - "src/assets/js/screenshots.js"
   # Paths to root assets
   rootAssets:
     - "src/root-assets/*"
@@ -40,3 +48,6 @@ PATHS:
     - "src/well-known/*"
   # Path to generated blog files residing in folders of type YYYY-MM-DD-TITLE
   blogOutputs: "src/pages/{de,en}/blog/*-*-*-*/"
+  # Path to generated blog files residing in folders of type YYYY-MM-DD-TITLE
+  blogScienceOutputs: "src/pages/{de,en}/science/*-*-*-*/"
+    

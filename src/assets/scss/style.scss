@@ -59,7 +59,9 @@ $utilities: map-get-multiple(
     "padding-left",
     "text-align",
     "visibility",
-    "align"
+    "align",
+    "position",
+    "width"
   )
 );
 
@@ -81,8 +83,12 @@ $utilities: map-get-multiple(
 @import "accordion";
 @import "vendor/slick";
 @import "vendor/lightbox";
+@import "vendor/utilities";
+@import "vendor/eventregistration";
+@import "vendor/science";
 @import "slider";
 @import "blog";
 @import "images";
 @import "faq";
 @import "tables";
+@import "analyse";

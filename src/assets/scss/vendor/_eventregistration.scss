@@ -1,0 +1,20 @@
+// styles related to event qr code generator
+
+.component.qrgenerator {
+
+    .time-sep {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .eventqr-preview {
+        border: 1px solid #ced4da;
+        border-radius: .375rem;
+    }
+
+    .col-form-label:after {
+        content: " *";
+        color: red;
+      }
+
+}

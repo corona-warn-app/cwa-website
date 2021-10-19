@@ -220,17 +220,17 @@ $(document).ready(function(){
         })
     }
 
-    // smooth scrolling to anchor tag when clicking anchor link
-    //$('a[href^="#"]').on('click', function (event) {
-    //    event.preventDefault();
-    //
-    //    $('html, body').animate({
-    //        scrollTop: $($.attr(this, 'href')).offset().top
-    //    }, 600);
-    //});
+    // mail protection using js
+    // mails are written like this:
+    // <a href="bob.smith...example...com" class="email">bob.smith...example...com</a>
+    $(".email").each(function() {
+        $(this).html( $(this).html().replace("...", "@").replace(/\.\.\./g, ".") );
+        $(this).attr( "href", "mailto:" + $(this).attr("href").replace("...", "@").replace(/\.\.\./g, ".") );
+    });
+
 
     // simple jquery tabs
-    $('.nav-tabs a').click(function(e) {
+    $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
 
         //Toggle tab link
@@ -238,6 +238,41 @@ $(document).ready(function(){
 
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
+
+        //Keep selected on refresh
+        if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
+        else window.location.href += $(this).attr('href');
       });
 
+      // glossary links onclick handler
+      $("a[href^='#glossary_']").on("click", function(e) {
+        let anchor = $(this).attr("href").replace(/^#/, '');
+        activateGlossary(anchor);
+      });
+
+      function activateGlossary(anchor) {
+        let hash = location.hash.replace(/^#/, '');
+
+        // if a link is clicked, get the hash from <a> instead from location.hash
+        if(anchor) { hash = anchor; }
+
+        if (hash && hash.indexOf("glossary_") > -1) {
+            // the glossary anchor
+            let glossaryAnchor = hash;
+
+            // determine letter with dynamic language
+            let glossaryLetter = $("#"+glossaryAnchor).closest("[role=tabpanel]").attr("id");
+
+            // switch tabs
+            $('#'+glossaryLetter.toUpperCase()+'-tab').addClass('active').siblings().removeClass('active');
+            $($('#'+glossaryLetter.toUpperCase()+'-tab').attr('href')).addClass('show active').siblings().removeClass('show active');
+
+            // go to glossary anchor
+            $(document).scrollTop( $("#"+glossaryAnchor).offset().top );
+        }
+
+      }
+
+      // onload jump to glossary
+      activateGlossary(); 
 });

@@ -1,0 +1,18 @@
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+// add responsive position utilities
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        // Common values
+        @each $position in (relative, absolute) {
+            .position#{$infix}-#{$position} { position: $position !important; }
+        }
+    }
+}

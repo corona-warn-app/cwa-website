@@ -14,6 +14,68 @@
             "link": "/de/faq/#who_can_help"
         }
     },
+    "wherecanigettested": {
+        "en": {
+            "text": "Where can I get tested?",
+            "link": "/en/faq/#where_can_i_get_tested"
+        },
+        "de": {
+            "text": "Wo kann ich mich testen lassen?",
+            "link": "/de/faq/#where_can_i_get_tested"
+        }
+    },
+    "screenshots": {
+        "anchorText": {
+            "de": "Link zu dieser Sektion",
+            "en": "Link to this section"
+        },
+        "toTopText": {
+            "de": "Zum Anfang",
+            "en": "To the top"
+        },
+        "archive-dropdown": [
+            {
+                "version": "Version 2.2",
+                "link": "/screenshots-archive/2-2.html"
+            },
+            {
+                "version": "Version 2.3",
+                "link": "/screenshots-archive/2-3.html"
+            },
+            {
+                "version": "Version 2.4",
+                "link": "/screenshots-archive/2-4.html"
+            },
+            {
+                "version": "Version 2.5",
+                "link": "/screenshots-archive/2-5.html"
+            },
+            {
+                "version": "Version 2.6",
+                "link": "/screenshots-archive/2-6.html"
+            },
+            {
+                "version": "Version 2.7",
+                "link": "/screenshots-archive/2-7.html"
+            },
+            {
+                "version": "Version 2.8",
+                "link": "/screenshots-archive/2-8.html"
+            },
+            {
+                "version": "Version 2.9",
+                "link": "/screenshots-archive/2-9.html"
+            },
+            {
+                "version": "Version 2.10",
+                "link": "/screenshots-archive/2-10.html"
+            },
+            {
+                "version": "Version 2.11",
+                "link": "/screenshots"
+            }
+        ]
+    },
     "error": {
         "title": "Sorry …",
         "titlecaption": "Something went wrong but maybe you will find something else interesting.",
@@ -60,6 +122,11 @@
             },
             "nav": [
                 {
+                    "id": "eventregistration",
+                    "title": "Event QR-Code",
+                    "url": "/en/eventregistration/"
+                },
+                {
                     "id": "community",
                     "title": "Community",
                     "url": "/en/community/"
@@ -68,6 +135,16 @@
                     "id": "blog",
                     "title": "Blog",
                     "url": "/en/blog/"
+                },
+                {
+                    "id": "science",
+                    "title": "Science",
+                    "url": "/en/science/"
+                },
+                {
+                    "id": "analysis",
+                    "title": "Analysis",
+                    "url": "/en/analysis/"
                 },
                 {
                     "id": "screenshots",
@@ -88,7 +165,7 @@
                 }
             ],
             "logo": {
-                "title": "Corona Warn App – Open Source Project"
+                "title": "Corona-Warn-App – Open Source Project"
             },
             "footer-nav": [
                 {
@@ -102,6 +179,14 @@
                         {
                             "title": "FAQ",
                             "url": "/en/faq/"
+                        },
+                        {
+                            "id": "twitter",
+                            "icon": "twitter",
+                            "icon-url": "/assets/img/icons/twitter_white.png",
+                            "title": "The Corona-Warn-App project on Twitter",
+                            "url": "https://twitter.com/coronawarnapp",
+                            "external": true
                         }
                     ]
                 },
@@ -132,7 +217,7 @@
                         {
                             "id": "github",
                             "icon": "github",
-                            "icon-url": "/assets/img/icons/github_white.svg",
+                            "icon-url": "/assets/img/icons/github_white32x32.svg",
                             "title": "The Corona-Warn-App project on GitHub",
                             "url": "https://github.com/corona-warn-app",
                             "external": true
@@ -169,7 +254,7 @@
                 }
             ],
             "copyright": {
-                "title": "© 2020 - The authors of the Corona-Warn-App open-source project",
+                "title": "© 2020-2021 - The authors of the Corona-Warn-App open-source project",
                 "url": "https://github.com/corona-warn-app/cwa-website/graphs/contributors",
                 "external": true
             }
@@ -187,6 +272,11 @@
             },
             "nav": [
                 {
+                    "id": "eventregistration",
+                    "title": "Event QR-Code",
+                    "url": "/de/eventregistration/"
+                },
+                {
                     "id": "community",
                     "title": "Community",
                     "url": "/de/community/"
@@ -195,6 +285,16 @@
                     "id": "blog",
                     "title": "Blog",
                     "url": "/de/blog/"
+                },
+                {
+                    "id": "science",
+                    "title": "Science",
+                    "url": "/de/science/"
+                },
+                {
+                    "id": "analysis",
+                    "title": "Analysis",
+                    "url": "/de/analysis/"
                 },
                 {
                     "id": "screenshots",
@@ -215,7 +315,7 @@
                 }
             ],
             "logo": {
-                "title": "Corona Warn App – Open Source Projekt"
+                "title": "Corona-Warn-App – Open Source Projekt"
             },
             "footer-nav": [
                 {
@@ -229,6 +329,14 @@
                         {
                             "title": "FAQ",
                             "url": "/de/faq/"
+                        },
+                        {
+                            "id": "twitter",
+                            "icon": "twitter",
+                            "icon-url": "/assets/img/icons/twitter_white.png",
+                            "title": "Das Corona-Warn-App-Projekt auf Twitter",
+                            "url": "https://twitter.com/coronawarnapp",
+                            "external": true
                         }
                     ]
                 },
@@ -259,7 +367,7 @@
                         {
                             "id": "github",
                             "icon": "github",
-                            "icon-url": "/assets/img/icons/github_white.svg",
+                            "icon-url": "/assets/img/icons/github_white32x32.svg",
                             "title": "Das Corona-Warn-App Projekt auf GitHub",
                             "url": "https://github.com/corona-warn-app",
                             "external": true
@@ -277,7 +385,6 @@
                             "title": "+49 30 498 75401",
                             "url": "tel:+49 30 498 75401"
                         }
-
                     ],
                     "testid": "hotline-app"
                 },
@@ -292,13 +399,12 @@
                             "title": "+49 30 498 75402",
                             "url": "tel:+49 30 498 75402"
                         }
-
                     ],
                     "testid": "hotline-tan"
                 }
             ],
             "copyright": {
-                "title": "© 2020 - Mitwirkende Personen des Open-Source-Projekts für Corona-Warn-App",
+                "title": "© 2020-2021 - Mitwirkende Personen des Open-Source-Projekts für Corona-Warn-App",
                 "url": "https://github.com/corona-warn-app/cwa-website/graphs/contributors",
                 "external": true
             }
