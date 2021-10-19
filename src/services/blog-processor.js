@@ -18,7 +18,7 @@ const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[
 const formatDate = (date, lang) => {
   const mom = moment(date);
   mom.locale(lang);
-  return mom.format('LL');
+  return (lang == "de" ? "am" : "on" )+" "+mom.format('LL');
 }
 
 const hasValidDate = (dateStr) => {
