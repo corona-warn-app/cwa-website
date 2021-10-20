@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App version 2.8 displays names in certificates in stand
 page-description: "Corona-Warn-App version 2.8 displays names in certificates in standardized characters"
 page-name: cwa-version-2-8
 page-name_de: cwa-version-2-8
-author: Hanna Heine, 10:00 am 
+author: Hanna Heine, 10 am
 layout: blog
 ---
 
