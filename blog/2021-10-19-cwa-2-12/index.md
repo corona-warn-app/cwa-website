@@ -53,8 +53,6 @@ The **7-day hospitalization incidence** refers to the number of people being hos
 
 Furthermore, the project team has **standardized the message settings**. As with other apps, users can now define settings for notifications from the Corona-Warn-App in the device settings of their smartphone. There, they can not only turn notifications on or off, but also define notification types.
 
-Another new feature is available for **iOS users**: They can now import QR codes from images or PDF documents. After opening the QR code scanner, they can select "Open file" at the bottom left and import a QR code from their image or file library. For Android users, [this function](https://www.coronawarn.app/en/blog/2021-10-06-cwa-version-2-11/) has already been available since version 2.11.
+Another new feature is available for **iOS users**: They can now import QR codes from images or PDF documents. After opening the QR code scanner, they can select "Open file" at the bottom left and import a QR code from their image or file library. For Android users, [this function](/en/blog/2021-10-06-cwa-version-2-11/) has already been available since version 2.11.
 
 Version 2.12 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
-
-
