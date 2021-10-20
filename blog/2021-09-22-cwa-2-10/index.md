@@ -3,7 +3,7 @@ page-title: "Version 2.10: Corona-Warn-App ready to inform users about booster v
 page-description: "Version 2.10: Corona-Warn-App ready to inform users about booster vaccinations"
 page-name: cwa-version-2-10
 page-name_de: cwa-version-2-10
-author: Hanna Heine, 10:00 Uhr 
+author: Hanna Heine, 10 am
 layout: blog
 ---
 

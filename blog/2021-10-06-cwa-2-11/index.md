@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App version 2.11 simplifies QR code scanning"
 page-description: "Corona-Warn-App version 2.11 simplifies QR code scanning"
 page-name: cwa-version-2-11
 page-name_de: cwa-version-2-11
-author: Hanna Heine, 10:00 Uhr 
+author: Hanna Heine, 10 am
 layout: blog
 ---
 
