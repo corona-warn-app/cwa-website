@@ -1,6 +1,5 @@
 import $ from 'jquery';
 
-import lock from '../lock.js';
 import translate from '../translate.js';
 
 export default {
@@ -27,8 +26,6 @@ export default {
 				$(".apexcharts-xaxis-label tspan:not(:empty), .apexcharts-xaxis-label title:not(:empty)").each(function(){
 					$(this).html($(this).html().replaceAll("_", ""))
 				});
-
-				lock.unset(config.config.chart.id);
 
 				$(`.analyseBoard-loading[data-id="${config.config.chart.id}"]`).removeClass("active")
 			}
