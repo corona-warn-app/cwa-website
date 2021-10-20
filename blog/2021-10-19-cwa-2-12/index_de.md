@@ -51,7 +51,6 @@ Des Weiteren hat das Projektteam die **Mitteilungseinstellungen vereinheitlicht*
 
 Zuvor konnten Nutzer\*innen die Benachrichtigungen in der Corona-Warn-App entweder zulassen oder nicht erlauben.
 
-Eine weitere Neuerung gibt es jetzt auch für **iOS-Nutzer\*innen**: Sie können nun ebenfalls **QR-Codes aus Bildern oder PDF-Dokumenten importieren**. Nachdem sie den QR-Code-Scanner geöffnet haben, können sie unten links „Datei öffnen“ auswählen und darüber einen QR-Code aus ihrer Bild- oder Dateibibliothek importieren. Für Android-Nutzer\*innen steht [diese Funktion](https://www.coronawarn.app/de/blog/2021-10-06-cwa-version-2-11/) bereits seit Version 2.11 zur Verfügung.
+Eine weitere Neuerung gibt es jetzt auch für **iOS-Nutzer\*innen**: Sie können nun ebenfalls **QR-Codes aus Bildern oder PDF-Dokumenten importieren**. Nachdem sie den QR-Code-Scanner geöffnet haben, können sie unten links „Datei öffnen“ auswählen und darüber einen QR-Code aus ihrer Bild- oder Dateibibliothek importieren. Für Android-Nutzer\*innen steht [diese Funktion](/de/blog/2021-10-06-cwa-version-2-11/) bereits seit Version 2.11 zur Verfügung.
 
 Version 2.12 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
-
