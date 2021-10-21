@@ -141,7 +141,11 @@ function analyseData(){
 
   return fallbackdataFn().then(e => {
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
-  });
+  }).catch(e => {
+    const data = fs.readFileSync('src/data/analyse_data_no_internet.json', 'utf8');
+    fs.mkdirSync("public")
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, {flag: 'w'});
+  })
 }
 
 // Copy page templates into finished HTML files
