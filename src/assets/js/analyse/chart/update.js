@@ -2,7 +2,6 @@ import ApexCharts from 'apexcharts'
 import _get from 'lodash/get';
 import _set from 'lodash/set';
 
-import lock from '../lock.js';
 import translate from '../translate.js';
 import { totalValuesUpdate } from '../totalValues.js';
 import { debugLog, debugTime, debugTimeEnd } from '../debug.js';
@@ -33,7 +32,6 @@ const update = async function({
 )
 {
 	const id = `chart${i}`;
-	lock.set(id);
 
 	$(`.analyseBoard-loading[data-id="${id}"]`).addClass("active");
 	await delay(100);
