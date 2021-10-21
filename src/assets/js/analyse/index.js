@@ -16,7 +16,7 @@ import { debugTime, debugTimeEnd, debugGroup, debugGroupEnd } from './debug.js';
 
 import data$ from './data.js';
 import date$ from './date.js';
-import switchId$ from './switch.js';
+import { switchId$, switchFN } from './switch.js';
 import tabs$ from './tabs.js';
 
 window.$ = window.jQuery;
@@ -50,11 +50,14 @@ data$
 	.subscribe(([data, switchId, date, tabs1, tabs2]) => {
 		debugGroup("update")
 		// return on fetch error (data$)
-		if(data[0].error) return;
-
-		
+		if(data[0].error || $(`.analyseBoard-loading.active`).length != 0){
+			debugGroupEnd("update")
+			return
+		};
 
 		debugTime('cachedata')
+
+		switchFN(switchId);
 
 		// create the object
 		const obj = {data: data[0], switchId, date, tabs1, tabs2};
