@@ -1,7 +1,6 @@
 import $ from 'jquery';
 import { fromEvent } from 'rxjs';
-import { map, startWith, takeWhile } from 'rxjs/operators';
-import lock from './lock.js';
+import { map, startWith } from 'rxjs/operators';
 import translate from './translate.js';
 
 const switchId$ = fromEvent(document.querySelectorAll(".analyseSwitch-item"), 'click')
@@ -9,12 +8,12 @@ const switchId$ = fromEvent(document.querySelectorAll(".analyseSwitch-item"), 'c
 	    startWith({
 			target: document.querySelector(".analyseSwitch-item.first")
 		}),
-		takeWhile(val => lock.state)
+		map(e => $(e.target).data("id"))
 	);
 
-switchId$.subscribe(e => {
-	const $e = $(e.target);
-	const switchId = $e.data("id");
+
+const switchFN = (switchId => {
+	const $e = $(`.analyseSwitch-item[data-id="${switchId}"]`);
 	
 	$e
 		.addClass("active")
@@ -30,4 +29,7 @@ switchId$.subscribe(e => {
 	});
 });
 
-export default switchId$.pipe(map(e => $(e.target).data("id")));
+export {
+	switchId$,
+	switchFN
+};

@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App version 2.9: Organizers can use the check-in functi
 page-description: "Corona-Warn-App version 2.9: Organizers can use the check-in function to warn guests on behalf of the health department"
 page-name: cwa-version-2-9
 page-name_de: cwa-version-2-9
-author: Hanna Heine, 10:00 am 
+author: Hanna Heine, 10 am
 layout: blog
 ---
 
