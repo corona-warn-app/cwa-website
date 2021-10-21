@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App Version 2.7 shows technical expiration date and aut
 page-description: "Corona-Warn-App Version 2.7 shows technical expiration date and automatically checks certificates for authenticity"
 page-name: cwa-version-2-7
 page-name_de: cwa-version-2-7
-author: Hanna Heine, 10:00 Uhr 
+author: Hanna Heine, 10 am
 layout: blog
 ---
 
@@ -33,5 +33,3 @@ In addition, the Corona-Warn-App now checks the signature of certificates for au
 <br></br>
 
 Version 2.7 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
-
-
