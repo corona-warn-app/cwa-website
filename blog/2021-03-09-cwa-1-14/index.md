@@ -32,6 +32,6 @@ Users can also add their own notes for locations as well as people. For example,
 
 
 
-In addition, the project team also expanded the voluntary data donation feature introduced in [version 1.13](https://www.coronawarn.app/en/blog/2021-03-04-corona-warn-app-version-1-13/). If users have activated the data donation, the app now also transmits, among other things, how an increased risk (red tile) is composed: Did it result from several low-risk encounters or is it based on other parameters, such as distance during or duration of an encounter?
+In addition, the project team also expanded the voluntary data donation feature introduced in [version 1.13](/en/blog/2021-03-04-corona-warn-app-version-1-13/). If users have activated the data donation, the app now also transmits, among other things, how an increased risk (red tile) is composed: Did it result from several low-risk encounters or is it based on other parameters, such as distance during or duration of an encounter?
 
 With version 1.14, users can also get to their contact journal even faster and add an entry without having to open the app: a pop-up menu opens when users press and hold the Corona-Warn-App icon on their smartphone screen for a few seconds. Via the menu, users can select **Add Journal Entry for Today**.  

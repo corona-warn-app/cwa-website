@@ -4,6 +4,7 @@ page-description: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA Team
+date: "2021-06-15"
 layout: science
 ---
 
@@ -277,7 +278,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 <div class="m-4">
 
 <figure>
-<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls=""><a href="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</a></video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
+<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
 </figure>
 
 </div>
@@ -456,7 +457,7 @@ zusätzlichen Nutzenden weiter gesteigert werden.
 <div class="m-4">
 
 <figure>
-<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls=""><a href="./ppa_warnings_cases.mp4">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</a></video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
+<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
 </figure>
 
 </div>

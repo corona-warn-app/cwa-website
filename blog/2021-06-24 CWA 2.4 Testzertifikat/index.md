@@ -37,10 +37,6 @@ Users can then view the certificate via the "Certificates" tab in their tab bar.
 
 Not every rapid test center supports the digital certificate. In this case, users won’t be redirected to request the certificate after scanning the QR code. They will then be informed that a test certificate cannot be requested because the testing center does not support test certificates. 
 
-<br></br>
-<center> <img src="./.png" title="Teststelle unterstützt Testzertifikate nicht" style="align: center"></center>
-<br></br>
-
 Users requesting a test certificate for a PCR test must provide their date of birth when making the request. It is important that the date of birth is the same as the date of birth used for the PCR swab test. If the dates don’t match, for example due to a typing error, the user will neither receive the test result nor the certificate via the app. Also, users cannot change the date of birth that they enter in the app later. Therefore, they should check whether the date is correct before completing the request for a certificate.
 
 <br></br>
@@ -61,7 +57,7 @@ Once the test result is available, it is now automatically added to the **contac
 <center> <img src="./contact-journal-tests.png" title="Tests in contact journal" style="align: center"></center>
 <br></br>
 
-The **voluntary data donation** now also includes alerts that users share due to a positive rapid test. For PCR tests, this is already possible since [version 1.13](https://www.coronawarn.app/en/blog/2021-03-04-corona-warn-app-version-1-13/) of the Corona-Warn-App. Furthermore, the data donation captures data points on warnings from the event registration feature (similar to the capturing of warnings that users receive based on the distance measurement via Bluetooth). The project team also records whether users share their event check-ins. A prerequisite for the recording is that users have activated the voluntary donation of data.
+The **voluntary data donation** now also includes alerts that users share due to a positive rapid test. For PCR tests, this is already possible since [version 1.13](/en/blog/2021-03-04-corona-warn-app-version-1-13/) of the Corona-Warn-App. Furthermore, the data donation captures data points on warnings from the event registration feature (similar to the capturing of warnings that users receive based on the distance measurement via Bluetooth). The project team also records whether users share their event check-ins. A prerequisite for the recording is that users have activated the voluntary donation of data.
 
 ### Rapid test partner search allows users to quickly find test providers that support the CWA
 

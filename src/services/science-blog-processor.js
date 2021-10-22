@@ -18,7 +18,7 @@ const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[
 const formatDate = (date, lang) => {
   const mom = moment(date);
   mom.locale(lang);
-  return mom.format('LL');
+  return (lang == "de" ? "am" : "on" )+" "+mom.format('LL');
 }
 
 const hasValidDate = (dateStr) => {
@@ -50,7 +50,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 
   <div class="blog-entry">
     ${headline}
-    <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}</span></div>
+    <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}${blog.update}</span></div>
     ${content}
     ${button}
   </div>
@@ -96,20 +96,22 @@ const getScienceBlogEntries = (lang) => {
 
 const createPageEntry =  (folderName, mdData, lang) => {
   const date = folderName.substr(0, 10); // 10 is length of the date in format YYYY-MM-DD
+  const date_display = mdData.data['date'];
   const pageName = mdData.data['page-name'];
   validatePageName(folderName, pageName);
 
   const entry = {
     date,
-    dateFormatted: formatDate(date, lang),
+    dateFormatted: formatDate(date_display, lang),
     title: mdData.data['page-title'],
     folderName,
     pageDescription: mdData.data['page-description'],
     slug: `${date}-${pageName}`,
     author: mdData.data.author,
+    update: mdData.data['update'] == undefined ? "" : ", " + mdData.data['update'],
     redirect: mdData.data.redirect,
     htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
-    htmlContent: replaceImagePaths(marked(mdData.content), folderName)
+    htmlContent: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[1]), folderName)
   };
 
   entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);

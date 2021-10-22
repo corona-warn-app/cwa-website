@@ -1,24 +1,36 @@
 {{#if page-contents}}
 <script src="/assets/js/lazyload.js"></script>
 <section class="section">
-    <div class="container">
-        <div class="container-inner container-inner_lg">
-            <div class="row">
-                <div class="col ">
-                {{> headline-component page-contents.section-main.headline}}
-                {{> text-component page-contents.section-main.content}}
-                </div>
-            </div>
+    <div class="container container_flex">
+        <aside class="side-menu js-menu" id="side-menu">
+            <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
+            <ul id="ios_menu" class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
+              {{#each page-contents.ios-screenshots.sections}}
+              <li class="nav-item">
+                <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
+              </li>
+              {{/each}}
+            </ul>
+
+            <ul id="android_menu" class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
+                {{#each page-contents.android-screenshots.sections}}
+                <li class="nav-item">
+                  <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
+                </li>
+                {{/each}}
+              </ul>
+        </aside>
+        <main class="main">
+            {{> headline-component page-contents.section-main.headline}}
+            {{> text-component page-contents.section-main.content}}
 
             <div class="d-flex justify-content-sm-end position-relative mb-3 mb-sm-0">
                 <select name="archived-screenshots" class="form-select form-select-sm w-auto position-sm-absolute">
                     {{#if lang_de}}
-                        <option value="">{{global.screenshots.archive-placeholder.de}}</option>
                         {{#each global.screenshots.archive-dropdown}}
                             <option value="/de{{link}}" >{{version}}</option>
                         {{/each}}
                     {{else}}
-                        <option value="">{{global.screenshots.archive-placeholder.en}}</option>
                         {{#each global.screenshots.archive-dropdown}}
                             <option value="/en{{link}}">{{version}}</option>
                         {{/each}}
@@ -28,13 +40,13 @@
             
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
-                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>
+                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screenshots.tab-title}}</a>
+                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screenshots.tab-title}}</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="android_screenshots">
-                    {{#each page-contents.android-screnshots.sections}}
+                    {{#each page-contents.android-screenshots.sections}}
                         <div class="row">
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
                             {{#each images}}
@@ -67,7 +79,7 @@
                     {{/each}}
                 </div>
                 <div class="tab-pane fade" id="ios_screenshots">
-                    {{#each page-contents.ios-screnshots.sections}}
+                    {{#each page-contents.ios-screenshots.sections}}
                     <div class="row">
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
                         {{#each images}}
@@ -100,7 +112,7 @@
                 {{/each}}
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 </section>
 {{/if}}
