@@ -11,6 +11,10 @@ import 'slick-carousel';
 import lang_en from '../../data/eventregistration.json';
 import lang_de from '../../data/eventregistration_de.json';
 
+const backgroundImage = new Image();
+backgroundImage.src = '/assets/img/pt-poster-1.0.0.png';
+
+const QR_LIST = [];
 
 function isValidDate(date) {
   return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
@@ -71,7 +75,18 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
   e.preventDefault();
 
   if (ValidateQRForm()) {
-    GenerateQRCode();
+    let grid = document.getElementById("pageLayout").value;
+    let description = document.getElementById('description').value;
+    let address = document.getElementById('address').value;
+    let defaultcheckinlengthHours = +document.getElementById('defaultcheckinlength-hours').value;
+    let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
+    let locationtype = +document.getElementById('locationtype').value;
+    let startdate = document.getElementById('starttime-date').value.split('.').reverse().join('-');
+    let starttime = document.getElementById('starttime-time').value;
+    let enddate = document.getElementById('endtime-date').value.split('.').reverse().join('-');
+    let endtime = document.getElementById('endtime-time').value;
+
+    GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, defaultcheckinlengthHours, false);
 
     document.getElementById('printCode').disabled = false;
     // Active download button
@@ -91,20 +106,20 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
       if (json[json.length] === []) json.pop();
       if (checkCSVHeaders(json)) {
         if (json.length > 1) {
-          if (json.length < 101) {
+          if (json.length < 101) {  
             document.getElementById('generateMultiQR').disabled = true;
-            document.getElementById("modal").classList.remove('d-none'); 
-            setTimeout(() => {
-              GenerateMultiQRCode(json).then(function (qrList) {
-                if (qrList.length > 0) {
-                  printQRsOnPage(qrList).then(function (pages) {
+            document.getElementById("modal").classList.remove('d-none');
+            setTimeout(() => {          
+              GenerateMultiQRCode(json).then(function () {
+                console.log("todos los qr almacenados")
+                if (QR_LIST.length > 0 ) {             
+                  printQRsOnPage().then(function (pages) {
                     printPages(pages)
                   });
                 }
                 
               });
             },100)
-            
           } else document.getElementById('qr-error-fileoverloaded').style.display = 'block';
         } else document.getElementById('qr-error-filewithnodata').style.display = 'block';
       } else document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
@@ -315,87 +330,90 @@ function checkCSVHeaders(json) {
   return (Object.keys(json[0]).sort().join(',') === HEADERS.sort().join(','))
 }
 
-function GenerateQRCode() {
-  let description = document.getElementById('description').value;
-  let address = document.getElementById('address').value;
-  let defaultcheckinlengthHours = +document.getElementById('defaultcheckinlength-hours').value;
-  let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
-  let locationtype = +document.getElementById('locationtype').value;
-
-  let locationData = new proto.CWALocationData();
-
-  let grid = document.getElementById("pageLayout").value.split('x')
-  let col = grid[0];
-
-  locationData.setVersion(1);
-  locationData.setType(locationtype);
-  locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthHours * 60 + defaultcheckinlengthMinutes);
-
-  let crowdNotifierData = new proto.CrowdNotifierData();
-  crowdNotifierData.setVersion(1);
-  crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
-
-  let seed = new Uint8Array(16);
-  crypto.getRandomValues(seed);
-  crowdNotifierData.setCryptographicseed(seed);
-
-  let traceLocation = new proto.TraceLocation();
-  traceLocation.setVersion(1);
-  traceLocation.setDescription(description);
-  traceLocation.setAddress(address);
-
-  if (locationtype >= 9 || locationtype === 2) {
-    let startdate = document.getElementById('starttime-date').value.split('.').reverse().join('-');
-    let starttime = document.getElementById('starttime-time').value;
-    traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
-
-    let enddate = document.getElementById('endtime-date').value.split('.').reverse().join('-');
-    let endtime = document.getElementById('endtime-time').value;
-    traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
-  }
-
-  let payload = new proto.QRCodePayload();
-  payload.setLocationdata(traceLocation);
-  payload.setCrowdnotifierdata(crowdNotifierData);
-  payload.setVendordata(locationData.serializeBinary());
-  payload.setVersion(1);
-
-  let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-  let canvas = document.getElementById('eventqrcode');
-  let ctx = canvas.getContext('2d');
-
-  QRCode.toDataURL('https://e.coronawarn.app?v=1#' + qrContent, {
-    margin: 0,
-    width: 1100
-  }, function (err, qrUrl) {
-    if (err) {
-      console.error(err);
-      return;
+//Return canvas with QR code and text
+function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
+  try {
+    let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
+    let validLocation = !Number.isNaN(parseInt(locationType));
+    let validStartDate, validEndDate;
+    if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
+      validStartDate = new Date(qr.startdate).getTime() > 0 && qr.startdate !== "" && qr.startdate !== null;
+      validEndDate = new Date(qr.enddate).getTime() > 0 && qr.enddate !== "" && qr.enddate !== null;
+      if (!validStartDate || !validEndDate) {
+        validLocation = false
+      }
     }
+    let validDescription = description !== "" && description !== null;
+    let validAddress = address !== "" && address !== null;
 
-    let img = new Image();
-    img.onload = function () {
-      ctx.width = 1654;
-      ctx.height = 2339;
-      canvas.width = 1654;
-      canvas.height = 2339;
-      canvas.style.maxWidth = "100%"
+    if (validCheckinLength && validLocation && validDescription && validAddress) {
+      let locationData = new proto.CWALocationData();
+      let col = grid.split('x')[0];
+      locationData.setVersion(1);
+      locationData.setType(locationType);
+      locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthHours != false ? defaultcheckinlengthHours * 60 + defaultcheckinlengthMinutes : defaultcheckinlengthMinutes);
+      let crowdNotifierData = new proto.CrowdNotifierData();
+      crowdNotifierData.setVersion(1);
+      crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
+      let seed = new Uint8Array(16);
+      crypto.getRandomValues(seed);
+      crowdNotifierData.setCryptographicseed(seed);
+      let traceLocation = new proto.TraceLocation();
+      traceLocation.setVersion(1);
+      traceLocation.setDescription(description);
+      traceLocation.setAddress(address);
 
-      ctx.drawImage(img, 0, 0);
-      let qrImg = new Image();
-      qrImg.onload = function () {
-        ctx.drawImage(qrImg, 275, 230);
+      if (locationType >= 9 || locationType === 2) {
+        traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
+        traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
+      }
+
+      let payload = new proto.QRCodePayload();
+      payload.setLocationdata(traceLocation);
+      payload.setCrowdnotifierdata(crowdNotifierData);
+      payload.setVendordata(locationData.serializeBinary());
+      payload.setVersion(1);
+
+      let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+      
+      let qr = document.createElement("canvas");
+
+      let canvas = document.createElement("canvas");
+      let ctx = canvas.getContext('2d');
+
+      QRCode.toCanvas(qr, 'https://e.coronawarn.app?v=1#' + qrContent, {
+        margin: 0,
+        width: 1100
+      }, function (err) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
+        ctx.width = 1654;
+        ctx.height = 2339;
+        canvas.width = 1654;
+        canvas.height = 2339;
+        canvas.style.maxWidth = "100%"
+
+        ctx.drawImage(backgroundImage, 0, 0);
+        ctx.drawImage(qr, 275, 230);
         let fontSize = (30+parseInt(col))*2;
         ctx.font = fontSize+"px sans-serif";
         ctx.fillStyle = "black";
         ctx.fillText(description, 225, 1460);
         ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
-        PrintLayout();
-      }
-      qrImg.src = qrUrl;
+        if(list) QR_LIST.push(canvas)
+        else return canvas;          
+      });
+    } else {
+      console.log("cant validate")
+      return false;
     }
-    img.src = '/assets/img/pt-poster-1.0.0.png';
-  });
+  } catch(err) {
+    console.log("catch", err)
+    return false;
+  }
 }
 
 function PrintLayout() {
@@ -444,127 +462,28 @@ function PrintLayout() {
 
 async function GenerateMultiQRCode(data) {
   return new Promise((resolve) => {
-    let qrList = [];
     let error = false;
-    let grid = document.getElementById("pageTemplate").value.split('x')
-    let col;
-    col = grid[0];
+    let grid = document.getElementById("pageTemplate").value
 
-    let imgtemplate = new Image();
-    imgtemplate.src = '/assets/img/pt-poster-1.0.0.png';
-    imgtemplate.className = 'img img-fluid w-100';
-    imgtemplate.onload = function () {
-      for (const qr of data) {
-        let description = qr.description
-        let address = qr.address;
-        let defaultcheckinlengthMinutes = qr.defaultcheckinlengthinminutes;
-        let locationType = qr.type;
-
-        try {
-          let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
-          let validLocation = !Number.isNaN(parseInt(locationType));
-          let validStartDate, validEndDate;
-          if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
-            validStartDate = new Date(qr.startdate).getTime() > 0 && qr.startdate !== "" && qr.startdate !== null;
-            validEndDate = new Date(qr.enddate).getTime() > 0 && qr.enddate !== "" && qr.enddate !== null;
-            if (!validStartDate || !validEndDate) {
-              validLocation = false
-            }
-          }
-          let validDescription = description !== "" && description !== null;
-          let validAddress = address !== "" && address !== null;
-
-          if (validCheckinLength && validLocation && validDescription && validAddress) {
-            let locationData = new proto.CWALocationData();
-            locationData.setVersion(1);
-            locationData.setType(locationType);
-            locationData.setDefaultcheckinlengthinminutes(defaultcheckinlengthMinutes);
-
-            let crowdNotifierData = new proto.CrowdNotifierData();
-            crowdNotifierData.setVersion(1);
-            crowdNotifierData.setPublickey('gwLMzE153tQwAOf2MZoUXXfzWTdlSpfS99iZffmcmxOG9njSK4RTimFOFwDh6t0Tyw8XR01ugDYjtuKwjjuK49Oh83FWct6XpefPi9Skjxvvz53i9gaMmUEc96pbtoaA');
-
-            let seed = new Uint8Array(16);
-            crypto.getRandomValues(seed);
-            crowdNotifierData.setCryptographicseed(seed);
-
-            let traceLocation = new proto.TraceLocation();
-            traceLocation.setVersion(1);
-            traceLocation.setDescription(description);
-            traceLocation.setAddress(address);
-
-            if (locationType >= 9 || locationType === 2) {
-              let startdate = qr.startdate.split(' ')[0].split('.');
-              let starttime = qr.startdate.split(' ')[1]
-              traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
-
-              let enddate = qr.enddate.split(' ')[0].split('.');
-              let endtime = qr.enddate.split(' ')[1]
-              traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
-            }
-
-            let payload = new proto.QRCodePayload();
-            payload.setLocationdata(traceLocation);
-            payload.setCrowdnotifierdata(crowdNotifierData);
-            payload.setVendordata(locationData.serializeBinary());
-            payload.setVersion(1);
-
-            let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-            let canvas = document.createElement("canvas");
-            QRCode.toCanvas(canvas, 'https://e.coronawarn.app?v=1#' + qrContent, {
-              margin: 0,
-              width: 1100
-            }, function (err) {
-              if (err) {
-                console.error(err);
-                return;
-              }
-              let canvasm = document.createElement("canvas");
-              let ctxm = canvasm.getContext('2d');
-              ctxm.width = 1654;
-              ctxm.height = 2339;
-              canvasm.width = 1654;
-              canvasm.height = 2339;
-              canvasm.style.maxWidth = "100%";
-
-              ctxm.drawImage(imgtemplate, 0, 0, imgtemplate.width, imgtemplate.height);
-
-              ctxm.drawImage(canvas, 275, 230);
-
-              let fontSize = (30+parseInt(col))*2;
-              ctxm.font = fontSize+"px sans-serif";
-              ctxm.fillStyle = "black";
-
-              ctxm.fillText(description, 225, 1460);
-              ctxm.fillText(address, 225, 1460 + 50 + (fontSize/2));
-              qrList.push(canvasm)
-            });
-          } else {
-            error = true;
-            break;
-          }
-        } catch {
-          error = true;
-          break;
-        }
-      }
-      if (error) {
-        document.getElementById('qr-error-wrongfileformatfields').style.display = 'block';
-        qrList = [];
-      }
-      return resolve(qrList);
+    for (const qr of data) {
+      console.log("creando qr")
+      GenerateQRCode(grid, qr.description, qr.address, qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
+    if (error) {
+      document.getElementById('qr-error-wrongfileformatfields').style.display = 'block';
+    }
+    return resolve(true);
   })
 }
 
-async function printQRsOnPage(qrList) {
+async function printQRsOnPage() {
   return new Promise((resolve) => {
     let grid = document.getElementById("pageTemplate").value.split('x')
     let col, row;
     col = grid[0];
     row = grid[1];
     let pageCapacity = row * col;
-    let pagesNeeded = Math.ceil(qrList.length / pageCapacity);
+    let pagesNeeded = Math.ceil(QR_LIST.length / pageCapacity);
     let pages = [];
 
     let container = document.getElementsByClassName("slick-track")[0];
@@ -591,7 +510,7 @@ async function printQRsOnPage(qrList) {
       //Start to print depend of the layout selected
       let i = 0;
       for (let pagem = 0; pagem < pagesNeeded; pagem++) {
-        if (i < qrList.length) {
+        if (i < QR_LIST.length) {
           let canvas = document.createElement("canvas");
           canvas.className = "eventqr-preview";
           let ctx = canvas.getContext('2d');
@@ -614,8 +533,8 @@ async function printQRsOnPage(qrList) {
 
           for (let r = 0; r < row; r++) {
             for (let c = 0; c < col; c++) {
-              if (i < qrList.length) {
-                ctx.drawImage(qrList[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
+              if (i < QR_LIST.length) {
+                ctx.drawImage(QR_LIST[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
                 i++;
               }
             }
@@ -635,7 +554,7 @@ async function printQRsOnPage(qrList) {
       document.getElementById('multieventplaceholder').classList.add('d-none');
 
 
-      let data = { "pages": pages, "container": container, "totalQR": qrList.length }
+      let data = { "pages": pages, "container": container, "totalQR": QR_LIST.length }
       return resolve(data);
     } else {
       let imgtemplate = new Image();
