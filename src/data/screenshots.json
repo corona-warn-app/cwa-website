@@ -9,13 +9,12 @@
         },
         "content": {
             "textblock": [
-                "Browse through the screenshots to get an overview of the features offered by the Corona-Warn-App with the release of Version 2.12 (available since 19.10.2021). Please note that the screenshots may vary slightly between Android and iOS due to technical reasons.",
+                "Browse through the screenshots to get an overview of the features offered by the Corona-Warn-App with the release of Version 2.13 (available since 03.11.2021). Please note that the screenshots may vary slightly between Android and iOS due to technical reasons.",
                 "With this update we provide new and enhanced features:",
-                "<b>Statistics expansion:</b> The following statistics are now available in the app: 7-day incidence hospitalization and COVID-19 sufferers in ICUs.",
-                "<b>Manage notifications:</b> Settings for notifications are now managed centrally in the settings of your smartphone. Recheck your notification settings for the Corona-Warn-App in the device settings.",
-                "<b>Direct access QR code scanner:</b> You now have direct access to the universal QR code scanner from the bottom navigation bar.",
-                "<b>Import QR code:</b> You can now import QR codes from photos or PDF files via the QR code scanner on iOS. This was possible on Android devices since version 2.11.",
-                "<b>Check administrator permissions:</b> On Android devices, the app checks if administrator permissions (also known as root permissions) are active on your smartphone when you restart, and displays a security alert if necessary.",
+                "<b>Statistics expansion:</b> The local tiles for the 7-day incidence of new infections now also display the 7-day incidence of hospitalization. Since this metric is only available at the state level, selecting a county will display the hospitalization for that state.",
+                "<b>Change of the link to Frequently Asked Questions:</b> When you access the Frequently Asked Questions in the app, you will now be directed to pages at coronawarn.app. There you will find more details about your questions.",
+                "<b>Assignment of certificates:</b> The assignment of certificates to persons has been made more error-tolerant. The app now ignores a different number of spaces in the name so that certificates can be assigned to the same person regardless.",
+                "<b>Restore certificates:</b> Removed certificates are moved to a recycle bin. You can restore them within 30 days.",
                 "The images provided on this page are available for free use."
             ]
         }
@@ -111,8 +110,8 @@
                 "title": "Warn for Others",
                 "anchor": "android_warn_for_others",
                 "images": [
-                    { "filename": "/assets/screenshots/2-9/en/android/warn_for_others_menu_en_v1", "alt": "Warn for others image 1 of 6" },
-                    { "filename": "/assets/screenshots/2-9/en/android/TraceLocationWarnInfoFragment", "alt": "Warn for others image 2 of 6" },
+                    { "filename": "/assets/screenshots/2-13/en/android/TraceLocationsFragment__menu", "alt": "Warn for others image 1 of 6" },
+                    { "filename": "/assets/screenshots/2-13/en/android/TraceLocationWarnInfoFragment", "alt": "Warn for others image 2 of 6" },
                     { "filename": "/assets/screenshots/2-13/en/android/TraceLocationSelectionFragment", "alt": "Warn for others image 2 of 6" },
                     { "filename": "/assets/screenshots/2-13/en/android/TraceLocationWarnDurationFragment", "alt": "Warn for others image 3 of 6" },
                     { "filename": "/assets/screenshots/2-13/en/android/TraceLocationWarnTanFragment", "alt": "Warn for others image 4 of 6" },

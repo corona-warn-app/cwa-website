@@ -9,13 +9,12 @@
         },
         "content": {
             "textblock": [
-                "Verschaffen Sie sich mithilfe von Screenshots einen Überblick über die Funktionen, die die Corona-Warn-App mit Version 2.12 (verfügbar seit 19.10.2021) bietet. Bitte beachten Sie, dass die Screenshots für Android und iOS designbedingt leicht voneinander abweichen können.",
+                "Verschaffen Sie sich mithilfe von Screenshots einen Überblick über die Funktionen, die die Corona-Warn-App mit Version 2.13 (verfügbar seit 03.11.2021) bietet. Bitte beachten Sie, dass die Screenshots für Android und iOS designbedingt leicht voneinander abweichen können.",
                 "Mit diesem Update stellen wir neue und erweiterte Funktionen zur Verfügung:",
-                "<b>Erweiterung Statistiken:</b> Es sind nun folgende Statistiken in der App verfügbar: 7-Tage-Inzidenz Hospitalisierung und COVID-19-Erkrankte auf Intensivstationen.",
-                "<b>Mitteilungen verwalten:</b> Einstellungen für Mitteilungen werden ab jetzt zentral in den Einstellungen Ihres Smartphones verwaltet. Überprüfen Sie Ihre Mitteilungseinstellungen für die Corona-Warn-App in den Geräteeinstellungen erneut.",
-                "<b>Direkter Zugriff QR-Code-Scanner:</b> Sie haben nun von der unteren Navigationsleiste aus direkten Zugriff auf den universellen QR-Code-Scanner.",
-                "<b>QR-Code importieren:</b> Auch auf iOS-Geräten können Sie nun auch QR-Codes von Fotos oder PDF-Dateien über den QR-Code-Scanner importieren. Auf Android-Geräten war dies seit Version 2.11 möglich.",
-                "<b>Prüfung der Administrator-Berechtigungen:</b> Auf Android-Geräten prüft die App bei einem Neustart, ob auf Ihrem Smartphone Administrator-Berechtigungen (auch bekannt als Root-Berechtigungen) aktiv sind, und zeigt gegebenenfalls einen Sicherheitshinweis an.",
+                "<b>Erweiterung Statistiken:</b> Lokale 7-Tage-Inzidenz Hospitalisierung: Auf den lokalen Kacheln zur 7-Tage-Inzidenz der Neuinfektionen wird nun zusätzlich die 7-Tage-Inzidenz der Hospitalisierung angezeigt. Da diese Kennzahl nur auf Bundeslandebene verfügbar ist, wird bei Auswahl eines Kreises die Hospitalisierung zum jeweiligen Bundesland angezeigt.",
+                "<b>Änderung des Links zu Häufige Fragen:</b> Wenn Sie in der App die häufigen Fragen aufrufen, werden Sie nun auf Seiten unter coronawarn.app geleitet. Dort finden Sie mehr Details zu Ihren Fragen.",
+                "<b>Zuordnung von Zertifikaten:</b> Die Zuordnung von Zertifikaten zu Personen wurde fehlertoleranter gestaltet. Die App ignoriert nun eine unterschiedliche Anzahl von Leerzeichen im Namen, sodass die Zertifikate unabhängig davon der gleichen Person zugeordnet werden können.",
+                "<b>Zertifikate wiederherstellen:</b> Entfernte Zertifikate werden in einen Papierkorb verschoben. Sie können sie innerhalb von 30 Tagen wiederherstellen.",
                 "Die auf dieser Seite zur Verfügung gestellten Bilder stehen zur freien Nutzung bereit."
             ]
         }
@@ -111,8 +110,8 @@
                 "title": "In Vertretung warnen",
                 "anchor": "android_warn_for_others",
                 "images": [
-                    { "filename": "/assets/screenshots/2-9/de/android/warn_for_others_menu_de_v1", "alt": "In Vertretung warnen Bild 1 von 6" },
-                    { "filename": "/assets/screenshots/2-10/de/android/TraceLocationWarnInfoFragment", "alt": "In Vertretung warnen Bild 2 von 6" },
+                    { "filename": "/assets/screenshots/2-13/de/android/TraceLocationsFragment__menu", "alt": "In Vertretung warnen Bild 1 von 6" },
+                    { "filename": "/assets/screenshots/2-13/de/android/TraceLocationWarnInfoFragment", "alt": "In Vertretung warnen Bild 2 von 6" },
                     { "filename": "/assets/screenshots/2-13/de/android/TraceLocationSelectionFragment", "alt": "In Vertretung warnen Bild 3 von 6" },
                     { "filename": "/assets/screenshots/2-13/de/android/TraceLocationWarnDurationFragment", "alt": "In Vertretung warnen Bild 4 von 6" },
                     { "filename": "/assets/screenshots/2-13/de/android/TraceLocationWarnTanFragment", "alt": "In Vertretung warnen Bild 5 von 6" },
