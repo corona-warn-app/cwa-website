@@ -53,6 +53,7 @@ if (document.getElementById('qrform')) {
 document.getElementById('locationtype').addEventListener('input', function (e) {
   UpdateQRForm();
 });
+
 function UpdateQRForm() {
   let locationtype = +document.getElementById('locationtype').value;
   if (locationtype && (locationtype >= 9 || locationtype === 2)) {
@@ -86,14 +87,30 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
     let enddate = document.getElementById('endtime-date').value.split('.').reverse().join('-');
     let endtime = document.getElementById('endtime-time').value;
 
-    GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, defaultcheckinlengthHours, false);
-
-    document.getElementById('printCode').disabled = false;
-    // Active download button
-    document.getElementById('downloadCode').disabled = false;
-    document.getElementById('eventplaceholder').classList.add('d-none');
     let canvas = document.getElementById('eventqrcode');
-    canvas.classList.remove('d-none');
+    let ctx = canvas.getContext('2d');
+    
+    setTimeout(() => {
+      const qr = GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+      ctx.width = 1654;
+      ctx.height = 2339;
+      canvas.width = 1654;
+      canvas.height = 2339;
+      canvas.style.maxWidth = "100%"
+
+      console.log(qr)
+      ctx.drawImage(qr, 0, 0);
+
+      document.getElementById('printCode').disabled = false;
+      // Active download button
+      document.getElementById('downloadCode').disabled = false;
+      document.getElementById('eventplaceholder').classList.add('d-none');
+      
+      canvas.classList.remove('d-none');
+    })
+    
+
+    
   }
 });
 
@@ -104,25 +121,23 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
       let json = result.data;
       //Remove last empty line
       if (json[json.length] === []) json.pop();
-      if (checkCSVHeaders(json)) {
-        if (json.length > 1) {
-          if (json.length < 101) {  
-            document.getElementById('generateMultiQR').disabled = true;
-            document.getElementById("modal").classList.remove('d-none');
-            setTimeout(() => {          
-              GenerateMultiQRCode(json).then(function () {
-                console.log("todos los qr almacenados")
-                if (QR_LIST.length > 0 ) {             
-                  printQRsOnPage().then(function (pages) {
-                    printPages(pages)
-                  });
-                }
-                
+      if(json.length == 0) document.getElementById('qr-error-filewithnodata').style.display = 'block';
+      else if (!checkCSVHeaders(json)) document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
+      else if (json.length < 1) document.getElementById('qr-error-filewithnodata').style.display = 'block';
+      else if (json.length > 101)  document.getElementById('qr-error-fileoverloaded').style.display = 'block';
+      else {
+        document.getElementById('generateMultiQR').disabled = true;
+        document.getElementById("modal").classList.remove('d-none');
+        setTimeout(() => {          
+          GenerateMultiQRCode(json).then(function (status) {
+            if (status) {             
+              printQRsOnPage().then(function (pages) {
+                printPages(pages)
               });
-            },100)
-          } else document.getElementById('qr-error-fileoverloaded').style.display = 'block';
-        } else document.getElementById('qr-error-filewithnodata').style.display = 'block';
-      } else document.getElementById('qr-error-wrongfileheaders').style.display = 'block';
+            }              
+          });
+        },100)
+      }  
     });
     document.getElementById('generateMultiQR').disabled = false;
   }
@@ -326,6 +341,7 @@ async function parseCsv(file) {
 }
 
 function checkCSVHeaders(json) {
+  if(json.length === 0) json.push([])
   let HEADERS = ["filepath", "description", "address", "startdate", "enddate", "type", "defaultcheckinlengthinminutes"];
   return (Object.keys(json[0]).sort().join(',') === HEADERS.sort().join(','))
 }
@@ -404,14 +420,16 @@ function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes,
         ctx.fillText(description, 225, 1460);
         ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
         if(list) QR_LIST.push(canvas)
-        else return canvas;          
+        else {
+          setTimeout(() => {
+            return canvas;  
+          },500)  
+        }   
       });
     } else {
-      console.log("cant validate")
       return false;
     }
   } catch(err) {
-    console.log("catch", err)
     return false;
   }
 }
@@ -462,15 +480,16 @@ function PrintLayout() {
 
 async function GenerateMultiQRCode(data) {
   return new Promise((resolve) => {
-    let error = false;
     let grid = document.getElementById("pageTemplate").value
-
+    QR_LIST.splice(0, QR_LIST.length);
     for (const qr of data) {
-      console.log("creando qr")
       GenerateQRCode(grid, qr.description, qr.address, qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
-    if (error) {
+    if (QR_LIST.length !== data.length) {
+      document.getElementById('generateMultiQR').disabled = false;
+      document.getElementById("modal").classList.add('d-none');
       document.getElementById('qr-error-wrongfileformatfields').style.display = 'block';
+      return resolve(false);
     }
     return resolve(true);
   })
@@ -503,118 +522,53 @@ async function printQRsOnPage() {
         break;
     }
 
-    //let originalTemplate = document.getElementById("pageTemplate").value.includes("Original") ;
-    let originalTemplate = true;
-
-    if (originalTemplate) {
-      //Start to print depend of the layout selected
-      let i = 0;
-      for (let pagem = 0; pagem < pagesNeeded; pagem++) {
-        if (i < QR_LIST.length) {
-          let canvas = document.createElement("canvas");
-          canvas.className = "eventqr-preview";
-          let ctx = canvas.getContext('2d');
-          let resolution = Math.sqrt(col * row) / 2;
-          let width = 1654 * resolution;
-          let height = 2339 * resolution;
-          if (col == row) {
-            ctx.width = width;
-            ctx.height = height;
-            canvas.width = width;
-            canvas.height = height;
-            canvas.style.maxWidth = "100%";
-          } else {
-            ctx.width = height;
-            ctx.height = width;
-            canvas.width = height;
-            canvas.height = width;
-            canvas.style.maxWidth = "100%";
-          }
-
-          for (let r = 0; r < row; r++) {
-            for (let c = 0; c < col; c++) {
-              if (i < QR_LIST.length) {
-                ctx.drawImage(QR_LIST[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
-                i++;
-              }
-            }
-          }
-
-          if (col != row) {
-            ctx.translate(-canvas.width / 2, -canvas.height / 2);
-            ctx.rotate(-Math.PI / 2);
-          }
-          pages.push(canvas)
+    //Start to print depend of the layout selected
+    let i = 0;
+    for (let pagem = 0; pagem < pagesNeeded; pagem++) {
+      if (i < QR_LIST.length) {
+        let canvas = document.createElement("canvas");
+        canvas.className = "eventqr-preview";
+        let ctx = canvas.getContext('2d');
+        let resolution = Math.sqrt(col * row) / 2;
+        let width = 1654 * resolution;
+        let height = 2339 * resolution;
+        if (col == row) {
+          ctx.width = width;
+          ctx.height = height;
+          canvas.width = width;
+          canvas.height = height;
+          canvas.style.maxWidth = "100%";
+        } else {
+          ctx.width = height;
+          ctx.height = width;
+          canvas.width = height;
+          canvas.height = width;
+          canvas.style.maxWidth = "100%";
         }
 
-      }
-      document.getElementById('printMultiCode').disabled = false;
-      // Active download button
-      document.getElementById('downloadMultiCode').disabled = false;
-      document.getElementById('multieventplaceholder').classList.add('d-none');
-
-
-      let data = { "pages": pages, "container": container, "totalQR": QR_LIST.length }
-      return resolve(data);
-    } else {
-      let imgtemplate = new Image();
-      imgtemplate.src = '/assets/img/pt-poster-1.0.0-multiqr.png';
-      imgtemplate.className = 'img img-fluid w-100';
-      imgtemplate.onload = function () {
-
-
-        const SPACE_X = 50;
-        const SPACE_Y = 150;
-        const SPACE_DESCRIPTION = SPACE_Y / 3;
-        const SPACE_ADDRESS = SPACE_DESCRIPTION * 2;
-        for (let pagem = 0; pagem < pagesNeeded; pagem++) {
-          let canvasm = document.createElement("canvas");
-          let ctxm = canvasm.getContext('2d');
-          ctxm.width = 1654;
-          ctxm.height = 2339;
-          canvasm.width = 1654;
-          canvasm.height = 2339;
-          canvasm.style.maxWidth = "100%"
-
-          ctxm.drawImage(imgtemplate, 0, 0);
-          let realWidth = canvasm.width - (SPACE_X * col);
-
-          for (let r = 0; r < row; r++) {
-            for (let c = 0; c < col; c++) {
-              if (i < qrList.length) {
-                let qrcode = new Image();
-                qrcode.width = realWidth / col;
-                qrcode.height = realWidth / col;
-
-                qrcode.src = qrList[i].qr.src;
-                qrcode.onload = function () {
-                  ctxm.drawImage(qrcode, (qrcode.width * c) + (SPACE_X * c), (qrcode.height * r) + (SPACE_Y * r), qrcode.width, qrcode.height);
-                }
-
-                ctxm.font = "30px sans-serif";
-                ctxm.fillStyle = "black";
-
-                ctxm.fillText(qrList[i].description, (qrcode.width * c) + (SPACE_X * c), qrcode.height * (r + 1) + SPACE_Y * r + SPACE_DESCRIPTION);
-                ctxm.fillText(qrList[i].address, (qrcode.width * c) + (SPACE_X * c), qrcode.height * (r + 1) + SPACE_Y * r + SPACE_ADDRESS);
-                i++;
-              }
+        for (let r = 0; r < row; r++) {
+          for (let c = 0; c < col; c++) {
+            if (i < QR_LIST.length) {
+              ctx.drawImage(QR_LIST[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
+              i++;
             }
           }
-          pages.push(canvasm)
         }
 
-        document.getElementById('printMultiCode').disabled = false;
-        // Active download button
-        document.getElementById('downloadMultiCode').disabled = false;
-        document.getElementById('multieventplaceholder').classList.add('d-none');
-        let canvasx = document.getElementById('multieventqrcode');
-        canvasx.classList.remove('d-none');
-
-        let data = { "pages": pages, "container": container, "totalQR": qrList.length }
-        return resolve(data);
+        if (col != row) {
+          ctx.translate(-canvas.width / 2, -canvas.height / 2);
+          ctx.rotate(-Math.PI / 2);
+        }
+        pages.push(canvas)
       }
     }
+    document.getElementById('printMultiCode').disabled = false;
+    // Active download button
+    document.getElementById('downloadMultiCode').disabled = false;
+    document.getElementById('multieventplaceholder').classList.add('d-none');
 
+    let data = { "pages": pages, "container": container, "totalQR": QR_LIST.length }
+    return resolve(data);
   });
 }
 
