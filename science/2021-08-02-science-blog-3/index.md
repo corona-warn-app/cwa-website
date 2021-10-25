@@ -14,24 +14,24 @@ This second analysis of the event-driven user survey (EDUS) focuses on the follo
 <!-- overview -->
 
 
-1. [The most important findings in a nutshell: numbers, data, facts](#1-das-wichtigste-in-kürze-zahlen-daten-fakten)
-2. [Active mobile devices and activation of exposure logging ](#2-aktive-mobile-endgeräte-und-aktivierung-der-risikoermittlung)
-    1. [Active mobile devices](#21-aktive-mobile-endgeräte)
-    2. [Activation of exposure logging](#22-aktivierung-der-risikoermittlung)
-3. [Surprise at receiving a “red warning”](#3-überraschtheit)
-    1. [The reasons why users were surprised to receive a “red warning” or not](#31-gründe-der-überraschtheit-bzw-nicht-überraschtheit) 
-    2. [Relationship between surprise and testing](#32-zusammenhang-zwischen-überraschtheit-und-durchführung-eines-tests) 
-    3. [Relationship between surprise and intended contact with health-care providers](#33-zusammenhang-zwischen-überraschtheit-und-kontaktvorhaben-zum-gesundheitswesen)
-    4. [Relationship between surprise and infection](#34-zusammenhang-zwischen-überraschtheit-und-infektion)
-    5. [Relationship between surprise, infection and intention to contact a health-care provider](#35-zusammenhang-zwischen-überraschtheit-kontaktaufnahme-zum-gesundheitswesen-und-infektion)
-4. [Testing](#4-testung)
-    1. [Testing intention](#41-testvorhaben)
-    2. [Test Results](#42-testergebnisse)
-    3. [Sharing of test results](#43-teilung-der-testergebnisse)
-    4. [Overview of the test process](#44-übersicht-zum-gesamttestprozess)
-5. [Symptoms](#5-symptome)
-6. [What can we learn from the event-driven user survey (EDUS)?](#6-was-nehmen-wir-aus-der-ereignisbezogenen-befragung-edus-mit)
-7. [What to expect in the future?](#7-so-geht-es-weiter)
+1. [The most important findings in a nutshell: numbers, data, facts](#1-the-most-important-findings-in-a-nutshell-numbers-data-facts)
+2. [Active mobile devices and activation of exposure logging](#2-active-mobile-devices-and-activation-of-exposure-logging)
+    1. [Active mobile devices](#21-active-mobile-devices)
+    2. [Activation of exposure logging](#22-activation-of-exposure-logging)
+3. [Surprise at receiving a “red warning”](#3-surprise-at-receiving-a-red-warning)
+    1. [The reasons why users were surprised to receive a “red warning” or not](#31-the-reasons-why-users-were-surprised-to-receive-a-red-warning-or-not) 
+    2. [Relationship between surprise and testing](#32-relationship-between-surprise-and-testing) 
+    3. [Relationship between surprise and intended contact with health-care providers](#33-relationship-between-surprise-and-intended-contact-with-health-care-providers)
+    4. [Relationship between surprise and infection](#34-relationship-between-surprise-and-infection)
+    5. [Relationship between surprise, infection and intention to contact a health-care provider](#35-relationship-between-surprise-infection-and-intention-to-contact-a-health-care-provider)
+4. [Testing](#4-testing)
+    1. [Testing intention](#41-testing-intention)
+    2. [Test Results](#42-test-results)
+    3. [Sharing of test results](#43-sharing-of-test-results)
+    4. [Overview of the test process](#44-overview-of-the-test-process)
+5. [Symptoms](#5-symptoms)
+6. [What can we learn from the event-driven user survey (EDUS)?](#6-what-can-we-learn-from-the-event-driven-user-survey-edus)
+7. [What to expect in the future?](#7-what-to-expect-in-the-future)
 
 ## 1. The most important findings in a nutshell: numbers, data, facts
 
@@ -2411,7 +2411,7 @@ Respondents who had registered the test in the Corona-Warn-App were more often w
 
 No statistically significant differences were identified by sex, age or education. However, the group of respondents who tested positive and, therefore, were asked whether they had shared their positive result (n = 792) is too small to use for reliable statistical calculations. 
 
-### 4.4	Overview of the test process
+### 4.4 Overview of the test process
 
 The following interactive graphic (Sankey diagram) breaks down the responses to testing using data from the basic and follow-up questionnaires. Sankey diagrams are a specific type of flowchart. Flow rates are represented by arrows that are proportional in size to the quantity they represent; the thickness of the arrows represents the true-to-scale quantity. The flows run between two nodes that act as intermediate stages and, for example, provide information about the structure of the system they describe.
 
