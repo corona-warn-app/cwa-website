@@ -2,6 +2,7 @@ import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
 import moment from 'moment';
+//import dayjs from 'dayjs';
 import Cleave from 'cleave.js';
 import Papa from 'papaparse';
 import { jsPDF } from "jspdf";
@@ -72,7 +73,7 @@ document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('downloadMultiCode').disabled = true;
 });
 
-document.getElementById('generateQR').addEventListener('click', function (e) {
+document.getElementById('generateQR').addEventListener('click', async function (e) {
   e.preventDefault();
 
   if (ValidateQRForm()) {
@@ -90,27 +91,23 @@ document.getElementById('generateQR').addEventListener('click', function (e) {
     let canvas = document.getElementById('eventqrcode');
     let ctx = canvas.getContext('2d');
     
-    setTimeout(() => {
-      const qr = GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
-      ctx.width = 1654;
-      ctx.height = 2339;
-      canvas.width = 1654;
-      canvas.height = 2339;
-      canvas.style.maxWidth = "100%"
+    const qr = await GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+    ctx.width = 1654;
+    ctx.height = 2339;
+    canvas.width = 1654;
+    canvas.height = 2339;
+    canvas.style.maxWidth = "100%"
 
-      console.log(qr)
-      ctx.drawImage(qr, 0, 0);
+    console.log(qr)
+    ctx.drawImage(qr, 0, 0);
 
-      document.getElementById('printCode').disabled = false;
-      // Active download button
-      document.getElementById('downloadCode').disabled = false;
-      document.getElementById('eventplaceholder').classList.add('d-none');
+    PrintLayout()
+    document.getElementById('printCode').disabled = false;
+    // Active download button
+    document.getElementById('downloadCode').disabled = false;
+    document.getElementById('eventplaceholder').classList.add('d-none');
       
-      canvas.classList.remove('d-none');
-    })
-    
-
-    
+    canvas.classList.remove('d-none');   
   }
 });
 
@@ -347,7 +344,8 @@ function checkCSVHeaders(json) {
 }
 
 //Return canvas with QR code and text
-function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
+async function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
+  return new Promise((resolve) => {
   try {
     let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
     let validLocation = !Number.isNaN(parseInt(locationType));
@@ -391,7 +389,6 @@ function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes,
       payload.setVersion(1);
 
       let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-      
       let qr = document.createElement("canvas");
 
       let canvas = document.createElement("canvas");
@@ -402,8 +399,9 @@ function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes,
         width: 1100
       }, function (err) {
         if (err) {
-          console.error(err);
-          return;
+          //console.error(err);
+          console.log("err", err)
+          return resolve(false);
         }
 
         ctx.width = 1654;
@@ -420,18 +418,17 @@ function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes,
         ctx.fillText(description, 225, 1460);
         ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
         if(list) QR_LIST.push(canvas)
-        else {
-          setTimeout(() => {
-            return canvas;  
-          },500)  
-        }   
+        else resolve(canvas);
       });
     } else {
-      return false;
+      console.log("not valid")
+      resolve(false);
     }
   } catch(err) {
-    return false;
+    console.log("catch", err)
+    return resolve(false);
   }
+  })
 }
 
 function PrintLayout() {
