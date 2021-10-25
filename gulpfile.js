@@ -140,7 +140,6 @@ function analyseData(){
   }
 
   return fallbackdataFn().then(e => {
-    fs.writeFileSync('src/data/analyse_data_no_internet.json', e, {flag: 'w'});
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
   }).catch(e => {
     const data = fs.readFileSync('src/data/analyse_data_no_internet.json', 'utf8');
