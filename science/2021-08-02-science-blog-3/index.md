@@ -1440,28 +1440,28 @@ Details of test results
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 16: Haben Sie nach der roten Warnmeldung durch die Corona-Warn-App einen SARS-CoV-2-Test durchführen lassen?
+Tab. 16: EDUS - Did you have a SARS-CoV-2 test carried out after receiving a red warning message from the Corona-Warn-App?
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Haben Sie nach der roten Warnmeldung durch die Corona-Warn-App einen SARS-CoV-2-Test durchführen lassen?  
+Did you have a SARS-CoV-2 test carried out after receiving a red warning message from the Corona-Warn-App?
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Ja, einen PCR-Test
+Yes, a PCR test
 </td>
 <td style="text-align:right;">
 4.118
@@ -1475,7 +1475,7 @@ Ja, einen PCR-Test
 </tr>
 <tr>
 <td style="text-align:left;">
-Ja, einen Antigen-Schnelltest
+Yes, a  rapid antigen test
 </td>
 <td style="text-align:right;">
 6.868
@@ -1489,7 +1489,7 @@ Ja, einen Antigen-Schnelltest
 </tr>
 <tr>
 <td style="text-align:left;">
-Ja, einen PCR-Test und einen Antigen-Schnelltest
+Yes, a PCR test and a rapid antigen test
 </td>
 <td style="text-align:right;">
 2.263
@@ -1503,7 +1503,7 @@ Ja, einen PCR-Test und einen Antigen-Schnelltest
 </tr>
 <tr>
 <td style="text-align:left;">
-Ja, aber ich weiß nicht, was für einen Test
+Yes, but I don’t know what kind of test	266	1.0%	1.7%
 </td>
 <td style="text-align:right;">
 266
@@ -1517,7 +1517,7 @@ Ja, aber ich weiß nicht, was für einen Test
 </tr>
 <tr>
 <td style="text-align:left;">
-Nein
+No
 </td>
 <td style="text-align:right;">
 2.025
@@ -1531,7 +1531,7 @@ Nein
 </tr>
 <tr>
 <td style="text-align:left;">
--keine Angabe-
+- not specified - 
 </td>
 <td style="text-align:right;">
 10.554
@@ -1546,28 +1546,28 @@ Nein
 </table>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 17: Wie war Ihr Testergebnis?
+Tab. 17: EDUS - How was your test result?
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Wie war Ihr Testergebnis?  
+How was your test result? 
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Positiv auf SARS-CoV-2
+Positive for SARS-CoV-2
 </td>
 <td style="text-align:right;">
 792
@@ -1581,7 +1581,7 @@ Positiv auf SARS-CoV-2
 </tr>
 <tr>
 <td style="text-align:left;">
-Negativ auf SARS-CoV-2
+Negative for SARS-CoV-2
 </td>
 <td style="text-align:right;">
 12.609
@@ -1595,7 +1595,7 @@ Negativ auf SARS-CoV-2
 </tr>
 <tr>
 <td style="text-align:left;">
-Nicht eindeutig
+Inconclusive
 </td>
 <td style="text-align:right;">
 92
@@ -1609,7 +1609,7 @@ Nicht eindeutig
 </tr>
 <tr>
 <td style="text-align:left;">
--keine Angabe-
+-not specified-
 </td>
 <td style="text-align:right;">
 12.601
@@ -1626,34 +1626,34 @@ Nicht eindeutig
 </details>
 <p></p>
 
-Der Zeitpunkt des Tests lag im Durchschnitt 2,5 Tage nach der Warnung durch die Corona-Warn-App. Angesichts einer mittleren Inkubationszeit von 5 bis 6 Tagen, einer bei SARS-CoV-2 der Erkrankung typischerweise um 1 bis 2 Tage vorausgehenden Virusausscheidung und eines unterschiedlich langen Verzugs zwischen Infektion und Warnung dürfte dies oft, aber nicht immer in den Zeitraum der Nachweisbarkeit des Erregers fallen. PCR-Tests können die Infektion in einem früheren Stadium verlässlicher feststellen als Antigen-Schnelltests.
+On average, users underwent testing 2.5 days after receiving a “red warning”. This is relatively early, considering that the median incubation period is 5 to 6 days. PCR tests can detect infections at an earlier stage and are more reliable than rapid antigen tests. This could help explain the high rate of positive PCR tests. It can also be assumed that people opted for rapid antigen tests because they are free. The large uptake of rapid antigen tests and the early average time of testing are areas that could be improved by better informing app users.
 
 <div class="figure">
 <div id="htmlwidget-1b28c7ec57ae2a9dc520" style="width:600px;height:450px;" class="plotly html-widget"></div>
 <script type="application/json" data-for="htmlwidget-1b28c7ec57ae2a9dc520">{"x":{"visdat":{"29675474a2f":["function () ","plotlyVisDat"]},"cur_data":"29675474a2f","attrs":{"29675474a2f":{"x":{},"name":"#","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Zeit zwischen Warnung und Test (Tage)","autotick":true},"yaxis":{"domain":[0,1],"automargin":true,"title":"Anzahl","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":false},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"name":"#","y":[1852,4883,1884,1245,842,1129,439,482,185,92,170,43,46,11,39,4,2,4,1,1,1,2],"type":"bar","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<p class="caption">Abb. 12: EDUS - Verzug zwischen Warnung und Test.</p>
+<p class="caption">Fig. 12: EDUS - Delay between “red warning” and test</p>
 </div>
 <details>
 <summary>
-Angaben zu Verzügen von Warnung bis Testergebnis
+Information on delays from a "red warning“ to test result
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 18: Wie viele Tage nach der roten Warnmeldung durch die Corona-Warn-App haben Sie sich testen lassen?
+Tab. 18: EDUS - How many days after the “red warning” from the Corona-Warn-App did you get tested? 
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Wie viele Tage nach der roten Warnmeldung durch die Corona-Warn-App haben Sie sich testen lassen?  
+How many days after receiving a “red warning” message from the Corona-Warn-App did you have yourself tested? 
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
@@ -2013,7 +2013,7 @@ NA
 </details>
 <p></p>
 
-Zum Hauptteil der Befragungszeit von März bis Mai 2021 konnten nur PCR-Tests in der Corona-Warn-App registriert werden. Das erklärt, warum nur 22,4% der Teilnehmenden der Folgebefragung das Ergebnis über die App mitgeteilt bekommen haben. Bei denen, die angaben, nur einen PCR-Test gemacht zu haben, wurde das Ergebnis in 46,3% der Fälle über die Corona-Warn-App vermittelt. Seit Anfang Mai war die Registrierung von Antigen-Schnelltests möglich, wobei davon auszugehen ist, dass die Umsetzung der Anbindung in den meisten Testzentren womöglich etwas länger gedauert hat. Bei 5,3% der Befragten, war die Übermittlung durch die App langsamer als von anderer Stelle.
+During the main survey period (March to May 2021), only PCR tests could be registered in the CWA. This explains why only 22.4% of participants in the follow-up survey received their result via the app. 46.3% of users who stated that they had undergone a PCR test shared their result via the app. It has been possible to register the results of rapid antigen tests with the app since the beginning of May, although it should be assumed that most test centres will have taken more time to implement this service. 2.7% of the respondents had already received their results from elsewhere by the time they had received them via the app.
 
 <p></p>
 <figure class="text-center">
@@ -2025,46 +2025,46 @@ Zum Hauptteil der Befragungszeit von März bis Mai 2021 konnten nur PCR-Tests in
       <th class="text-center" rowspan="1" colspan="3">
         <span class="gt_column_spanner"><strong>Ergebnis per CWA</strong></span>
       </th>
-      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
     <tr>
       <th class="text-center" rowspan="1" colspan="1">Ja</th>
-      <th class="text-center" rowspan="1" colspan="1">Ja, aber erst nachdem ich das Ergebnis schon von anderer Stelle mitgeteilt bekommen hatte</th>
-      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+      <th class="text-center" rowspan="1" colspan="1">Yes, but only after I had already received the result from another source</th>
+      <th class="text-center" rowspan="1" colspan="1">No</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="text-left" style="font-weight: bold;">Test (durchgeführt)</td>
+    <tr><td class="text-left" style="font-weight: bold;">Test (carried out)</td>
 <td class="text-center"></td>
 <td class="text-center"></td>
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test</td>
 <td class="text-center">1.905 (46%)</td>
 <td class="text-center">390 (9,5%)</td>
 <td class="text-center">1.822 (44%)</td>
 <td class="text-center">4.117 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen Antigen-Schnelltest</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a  rapid antigen test</td>
 <td class="text-center">222 (3,2%)</td>
 <td class="text-center">91 (1,3%)</td>
 <td class="text-center">6.549 (95%)</td>
 <td class="text-center">6.862 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, einen PCR-Test und einen Antigen-Schnelltest</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test and a rapid antigen test</td>
 <td class="text-center">870 (38%)</td>
 <td class="text-center">218 (9,6%)</td>
 <td class="text-center">1.174 (52%)</td>
 <td class="text-center">2.262 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, aber ich weiß nicht, was für einen Test</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, but I don’t know what kind of test</td>
 <td class="text-center">25 (9,4%)</td>
 <td class="text-center">11 (4,1%)</td>
 <td class="text-center">230 (86%)</td>
 <td class="text-center">266 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
 <td class="text-center">1 (9,1%)</td>
 <td class="text-center">0 (0%)</td>
 <td class="text-center">10 (91%)</td>
 <td class="text-center">11 (100%)</td></tr>
-    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+    <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">3.023 (22%)</td>
 <td class="text-center">710 (5,3%)</td>
 <td class="text-center">9.785 (72%)</td>
@@ -2073,46 +2073,46 @@ Zum Hauptteil der Befragungszeit von März bis Mai 2021 konnten nur PCR-Tests in
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 19: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis</figcaption>
+    <figcaption aria-hidden="true">Tab. 19: EDUS - Relationship between tests performed and test result</figcaption>
 </figure>
 
 <figure>
-    <img src="./fig_13.png" alt="Abb. 13: EDUS - Zusammenhang zwischen durchgeführtem Test und Erhalt per CWA."/>
-    <figcaption aria-hidden="true">Abb. 13: EDUS - Zusammenhang zwischen durchgeführtem Test und Erhalt per CWA.
+    <img src="./fig_13.png" alt="Fig. 13: EDUS - relationship between tests carried out and receiving a test result via the CWA ."/>
+    <figcaption aria-hidden="true">Fig. 13: EDUS - relationship between tests carried out and receiving a test result via the CWA .
 </figcaption>
 </figure>
 
-Bei denen, die ihr Ergebnis über die Corona-Warn-App erhielten, wurde dieses fast immer innerhalb von 24 Stunden oder zwei Tagen nach der Durchführung des Tests übermittelt. Das Ergebnis spricht für eine schnelle Meldekette, nicht nur in Bezug auf die Corona-Warn-App.
+Users who received their results via the app usually received them within 24 hours or two days after the test had been carried out. The results suggest that it is not just the app that works quickly but the entire reporting chain.
 
 <details>
 <summary>
-Angaben zur Bereitstellung der Testergebnissen via Corona-Warn-App
+Information on the provision of test results via the Coron-Warn-App
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 20: Haben Sie Ihr Testergebnis über die Corona-Warn-App erhalten (nach Scannen des QR-Codes Ihres Testdokuments)?
+Tab. 20: EDUS - Did you receive your test result via the Corona-Warn-App (after scanning the QR code of your test document)?
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Haben Sie Ihr Testergebnis über die Corona-Warn-App erhalten (nach Scannen des QR-Codes Ihres Testdokuments)? 
+Did you receive your test result via the Corona-Warn-App (after scanning the QR code of your test document)?
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Ja
+Yes
 </td>
 <td style="text-align:right;">
 3.023
@@ -2126,7 +2126,7 @@ Ja
 </tr>
 <tr>
 <td style="text-align:left;">
-Ja, aber erst nachdem ich das Ergebnis schon von anderer Stelle mitgeteilt bekommen hatte
+Yes, but only after I had already received the result from another source
 </td>
 <td style="text-align:right;">
 710
@@ -2140,7 +2140,7 @@ Ja, aber erst nachdem ich das Ergebnis schon von anderer Stelle mitgeteilt bekom
 </tr>
 <tr>
 <td style="text-align:left;">
-Nein
+No
 </td>
 <td style="text-align:right;">
 9.787
@@ -2154,7 +2154,7 @@ Nein
 </tr>
 <tr>
 <td style="text-align:left;">
--keine Angabe-
+-not specified-
 </td>
 <td style="text-align:right;">
 12.574
@@ -2169,28 +2169,28 @@ Nein
 </table>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 21: Wie schnell wurde Ihr Testergebnis nach Durchführung des Tests über die Corona-Warn-App übermittelt?
+Tab. 21:  EDUS - How quickly was your test result transmitted via the Corona-Warn-App after the test was carried out?
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Wie schnell wurde Ihr Testergebnis nach Durchführung des Tests über die Corona-Warn-App übermittelt? 
+How quickly was your test result transmitted via the Corona-Warn-App after the test was carried out?
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Innerhalb von 24 Stunden
+Within 24 hours
 </td>
 <td style="text-align:right;">
 2.344
@@ -2204,7 +2204,7 @@ Innerhalb von 24 Stunden
 </tr>
 <tr>
 <td style="text-align:left;">
-Innerhalb von 2 Tagen
+Within 2 days
 </td>
 <td style="text-align:right;">
 1.025
@@ -2218,7 +2218,7 @@ Innerhalb von 2 Tagen
 </tr>
 <tr>
 <td style="text-align:left;">
-Innerhalb von 3 Tagen
+Within 3 days
 </td>
 <td style="text-align:right;">
 147
@@ -2232,7 +2232,7 @@ Innerhalb von 3 Tagen
 </tr>
 <tr>
 <td style="text-align:left;">
-Länger als 3 Tage
+More than 3 days
 </td>
 <td style="text-align:right;">
 85
@@ -2246,7 +2246,7 @@ Länger als 3 Tage
 </tr>
 <tr>
 <td style="text-align:left;">
-Weiß nicht
+Don’t know
 </td>
 <td style="text-align:right;">
 136
@@ -2260,7 +2260,7 @@ Weiß nicht
 </tr>
 <tr>
 <td style="text-align:left;">
--keine Angabe-
+-not specified -
 </td>
 <td style="text-align:right;">
 22.357
@@ -2279,39 +2279,39 @@ Weiß nicht
 </ul>
 
 
-### 4.3 Teilung der Testergebnisse
+### 4.3 Sharing of test results
 
-Von den positiv getesteten Nutzenden teilten 80,3% das Ergebnis in der Corona-Warn-App und warnten andere Personen. Die Warnung von Nutzenden ist eine Kernfunktion der Corona-Warn-App. Diese Funktion ist abhängig von der Bereitschaft der Nutzenden, ihre positiven Testergebnisse über die App mit anderen Nutzenden zu teilen. Die Folgebefragung zeigt, dass ein Großteil der positiv getesteten Nutzenden dazu bereit ist. 19,5% der Befragten entschieden sich gegen eine Teilung ihres positiven Testergebnisses.
+Of the app users who tested positive, 80.3% shared their result via the app and, therefore, warned other people. The ability to warn other users is a core function and it relies on the willingness of app users to share their positive test results. Data from the follow-up survey demonstrate that the majority of users who tested positive were indeed willing to share their result: just 19.5% of respondents chose not to do so. Moreover, respondents who had registered a test via the app were often more willing to share a positive test result. 
 
 <details>
 <summary>
-Angaben zur Teilung des Testergebnisses
+Information on the sharing of test results
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 22: Haben Sie Ihr positives Testergebnis über die Corona-Warn-App geteilt?
+Tab. 22: EDUS - Did you share your positive test result via the Corona-Warn-App?
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Haben Sie Ihr positives Testergebnis über die Corona-Warn-App geteilt? 
+Did you share your positive test result via the Corona-Warn-App? 
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Ja
+Yes
 </td>
 <td style="text-align:right;">
 639
@@ -2325,7 +2325,7 @@ Ja
 </tr>
 <tr>
 <td style="text-align:left;">
-Nein
+No
 </td>
 <td style="text-align:right;">
 155
@@ -2339,7 +2339,7 @@ Nein
 </tr>
 <tr>
 <td style="text-align:left;">
--keine Angabe-
+-not specified-
 </td>
 <td style="text-align:right;">
 25.300
@@ -2356,7 +2356,7 @@ Nein
 </details>
 <p></p>
 
-Befragte, die den Test in der Corona-Warn-App registriert hatten, waren öfter dazu bereit, ein positives Testergebnis zu teilen.
+Respondents who had registered the test in the Corona-Warn-App were more often willing to share a positive test result.
 
 <p></p>
 <figure class="text-center">
@@ -2368,31 +2368,31 @@ Befragte, die den Test in der Corona-Warn-App registriert hatten, waren öfter d
       <th class="text-center" rowspan="1" colspan="2">
         <span class="gt_column_spanner"><strong>Teilung des Testergebnisses</strong></span>
       </th>
-      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
     <tr>
-      <th class="text-center" rowspan="1" colspan="1">Ja</th>
-      <th class="text-center" rowspan="1" colspan="1">Nein</th>
+      <th class="text-center" rowspan="1" colspan="1">Yes</th>
+      <th class="text-center" rowspan="1" colspan="1">No</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="text-left" style="font-weight: bold;">Testregistrierung per CWA</td>
+    <tr><td class="text-left" style="font-weight: bold;">Test registration via CWA</td>
 <td class="text-center"></td>
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes</td>
 <td class="text-center">314 (40%)</td>
 <td class="text-center">12 (1,5%)</td>
 <td class="text-center">326 (41%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ja, aber erst nachdem ich das Ergebnis schon von anderer Stelle mitgeteilt bekommen hatte</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, but only after I had already received the result from another source</td>
 <td class="text-center">148 (19%)</td>
 <td class="text-center">14 (1,8%)</td>
 <td class="text-center">162 (20%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
 <td class="text-center">177 (22%)</td>
 <td class="text-center">129 (16%)</td>
 <td class="text-center">306 (39%)</td></tr>
-    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+    <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">639 (80%)</td>
 <td class="text-center">155 (20%)</td>
 <td class="text-center">794 (100%)</td></tr>
@@ -2400,38 +2400,37 @@ Befragte, die den Test in der Corona-Warn-App registriert hatten, waren öfter d
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 23: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses via CWA</figcaption>
+    <figcaption aria-hidden="true">Tab. 23: EDUS - relationship between receiving the test result via CWA and sharing the test result via CWA</figcaption>
 </figure>
 
 <figure>
-    <img src="./fig_14.png" alt="Abb. 14: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses."/>
-    <figcaption aria-hidden="true">Abb. 14: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses.
+    <img src="./fig_14.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
+    <figcaption aria-hidden="true">Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result.
 </figcaption>
 </figure>
 
-Die Daten geben keine Hinweise auf statistisch signifikante Verhaltensunterschiede nach Geschlecht, Alter oder Bildung. Dabei muss beachtet werden, dass die Gruppe derjenigen, die positiv getestet wurden und dadurch die Frage zum Teilen des positiven Ergebnisses gestellt bekamen, mit n=792 sehr klein für gesicherte statistische Berechnungen ist.
+No statistically significant differences were identified by sex, age or education. However, the group of respondents who tested positive and, therefore, were asked whether they had shared their positive result (n = 792) is too small to use for reliable statistical calculations. 
 
-### 4.4 Übersicht zum Gesamttestprozess
+### 4.4	Overview of the test process
 
-Die folgende interaktive Grafik (Sankey-Diagramm) verdeutlich die Aufteilung der Antworten auf Fragen zur Testung über die Basis- und Folgebefragung. Sankey-Diagramme sind eine spezifische Art Flussdiagramm. Flussmengen werden durch mengenproportionale Pfeile dargestellt, deren Dicke die maßstabsgerechte Menge repräsentiert. Die Flüsse verlaufen zwischen zwei Knoten, die als Zwischenstufen fungieren und u.a. Auskunft über die Struktur des beschriebenen Systems geben.
+The following interactive graphic (Sankey diagram) breaks down the responses to testing using data from the basic and follow-up questionnaires. Sankey diagrams are a specific type of flowchart. Flow rates are represented by arrows that are proportional in size to the quantity they represent; the thickness of the arrows represents the true-to-scale quantity. The flows run between two nodes that act as intermediate stages and, for example, provide information about the structure of the system they describe.
 
 <div class="figure">
 <div id="htmlwidget-networkD3-27894f19b2bee56740ed" style="width:100%;height:700px;" class="sankeyNetwork html-widget"></div>
 <script type="application/json" data-for="htmlwidget-networkD3-27894f19b2bee56740ed">{"x":{"links":{"source":[0,0,0,0,0,1,2,3,4,5,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,10,11,11,11,11,12,12,12,13,13,13,14,15,16,17,17,17,18,18,18,19,19,20,20,21,21,21,22,22,22,23,23,23,24],"target":[5,6,7,8,9,10,10,10,10,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,14,15,16,11,12,13,14,15,16,17,18,19,20,17,18,19,17,18,19,18,20,20,21,22,23,21,22,23,21,23,23,24,25,26,27,25,26,27,25,26,27,27],"value":[5001,7571,3069,1144,201,2754,4127,1051,1166,2243,209,505,36,90,1921,284,3980,302,63,300,2644,499,379,971,17,39,1164,236,315,91,34,42,426,26,42,14,21,92,830,1943,388,102,1533,4307,514,3536,52,16,19,6832,14,255,1982,22,255,2023,10552,325,161,306,2683,544,9376,11,76,29,12568,314,12,2697,148,14,548,177,129,9481,12574],"group":["A1","A1","A1","A1","A1","A2","A3","A4","A5","B1","B1","B1","B1","B1","B1","B2","B2","B2","B2","B2","B2","B3","B3","B3","B3","B3","B3","B4","B4","B4","B4","B4","B4","B5","B5","B5","B5","B5","B6","B6","B6","B6","B6","B6","C1","C1","C1","C1","C2","C2","C2","C3","C3","C3","C4","C5","C6","D1","D1","D1","D2","D2","D2","D3","D3","D4","D4","E1","E1","E1","E2","E2","E2","E3","E3","E3","E4"]},"nodes":{"name":["Ja","Nein","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","Weiß nicht","Nein","-keine Angabe-","positiv","negativ","nicht eindeutig","-keine Angabe-","via CWA zuerst","via CWA später","nicht via CWA","-keine Angabe-","geteilt","nicht geteilt","-keine Angabe-"],"group":["Ja","Nein","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","Weiß nicht","Nein","-keine Angabe-","positiv","negativ","nicht eindeutig","-keine Angabe-","via CWA zuerst","via CWA später","nicht via CWA","-keine Angabe-","geteilt","nicht geteilt","-keine Angabe-"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":"source","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":16,"fontFamily":"Palatino","nodeWidth":15,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
-Abb. 15: EDUS – CWA Testprozess, von Testvorhaben über Testart, tatsächlich durchgeführtem Test, Testergebnis, Testerhalt via CWA bis Teilung.
+Fig. 15: EDUS – CWA test process, from test intention to test type, actual tests carried out, test results and receiving test results via the CWA to distribution. 
 </p>
 </div>
 
-## 5 Symptome
+## 5 Symptoms
 
-Der letzte Themenblock befasste sich mit der Symptomatik positiv getesteter Nutzender. In der Basisbefragung wurden neue Symptome der letzten Tage erfragt. In der Folgebefragung ging es um neue Symptome nach der Warnung und wann diese aufgetreten waren. In beiden Fällen bestand die Möglichkeit, mehrere Symptome auszuwählen.
-
-Die meisten Befragten berichteten keine neuen Symptome in den letzten Tagen vor der Basisbefragung. Bei denen, die neue Symptome angaben, wurde am häufigsten über unspezifische Symptome, wie Schnupfen, allgemeine Schwäche sowie Kopf- und Gliederschmerzen geklagt. Der Verlust des Geruchs-/Geschmackssinns als eindeutigstes Symptom einer COVID-19-Erkrankung wurde am seltensten berichtet. 80% derjenigen, die dieses Symptom angaben, wurden später positiv auf SARS-CoV-2 getestet. Zum Vergleich: Bei denen, die Schnupfen angaben, waren es 27,2%, die später positiv getestet wurden.
+The last block dealt with the symptoms of users who tested positive. The basic survey asked users to report new symptoms that had appeared during the last few days. The follow-up survey focused on new symptoms that developed after the warning message had been received, and when they occurred. In both cases there was an option to select multiple symptoms.
+Most respondents reported that no new symptoms had developed in the days before the basic survey. Users who reported new symptoms were most likely to have non-specific symptoms such as runny nose, general weakness, and headache and other pains. Loss of smell/taste, the most reliable symptom of COVID-19, was reported the least. However, 80% of respondents who did report this symptom went on to test positive for SARS-CoV-2. For comparison: only 27.2% of respondents who reported a runny nose later tested positive.
 
 <details>
 <summary>
-Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
+Relationship between information on symptoms in the basic survey and test result
 </summary>
 <p>
 
@@ -2445,12 +2444,12 @@ Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
       <th class="text-center" rowspan="1" colspan="3">
         <span class="gt_column_spanner"><strong>Testergebnis</strong></span>
       </th>
-      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
     <tr>
-      <th class="text-center" rowspan="1" colspan="1">Positiv auf SARS-CoV-2</th>
-      <th class="text-center" rowspan="1" colspan="1">Negativ auf SARS-CoV-2</th>
-      <th class="text-center" rowspan="1" colspan="1">Nicht eindeutig</th>
+      <th class="text-center" rowspan="1" colspan="1">Positive for SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Negative for SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Inconclusive</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2459,57 +2458,57 @@ Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
 <td class="text-center"></td>
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Erhöhte Temperatur oder Fieber</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Elevated temperature or fever</td>
 <td class="text-center">183 (63%)</td>
 <td class="text-center">102 (35%)</td>
 <td class="text-center">7 (2,4%)</td>
 <td class="text-center">292 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kurzatmigkeit</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Shortness of breath</td>
 <td class="text-center">124 (40%)</td>
 <td class="text-center">179 (58%)</td>
 <td class="text-center">5 (1,6%)</td>
 <td class="text-center">308 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Verlust des Geruchs-/Geschmacksinns</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Loss of smell / taste</td>
 <td class="text-center">144 (80%)</td>
 <td class="text-center">35 (19%)</td>
 <td class="text-center">1 (0,6%)</td>
 <td class="text-center">180 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Husten</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cough</td>
 <td class="text-center">320 (43%)</td>
 <td class="text-center">406 (55%)</td>
 <td class="text-center">12 (1,6%)</td>
 <td class="text-center">738 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Schnupfen</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cold</td>
 <td class="text-center">293 (27%)</td>
 <td class="text-center">768 (71%)</td>
 <td class="text-center">16 (1,5%)</td>
 <td class="text-center">1.077 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Halsschmerzen</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sore throat</td>
 <td class="text-center">234 (25%)</td>
 <td class="text-center">695 (74%)</td>
 <td class="text-center">10 (1,1%)</td>
 <td class="text-center">939 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kopf- und Gliederschmerzen</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Headache and limb pain</td>
 <td class="text-center">344 (33%)</td>
 <td class="text-center">701 (66%)</td>
 <td class="text-center">11 (1,0%)</td>
 <td class="text-center">1.056 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Allgemeine Schwäche und Abgeschlagenheit</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">General weakness and fatigue</td>
 <td class="text-center">329 (31%)</td>
 <td class="text-center">737 (68%)</td>
 <td class="text-center">11 (1,0%)</td>
 <td class="text-center">1.077 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Durchfall</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Diarrhea</td>
 <td class="text-center">86 (20%)</td>
 <td class="text-center">328 (78%)</td>
 <td class="text-center">7 (1,7%)</td>
 <td class="text-center">421 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein, keins der genannten Symptome</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No, none of the symptoms mentioned</td>
 <td class="text-center">277 (2,6%)</td>
 <td class="text-center">10.500 (97%)</td>
 <td class="text-center">62 (0,6%)</td>
 <td class="text-center">10.839 (100%)</td></tr>
-    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+    <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">2.334 (14%)</td>
 <td class="text-center">14.451 (85%)</td>
 <td class="text-center">142 (0,8%)</td>
@@ -2518,23 +2517,23 @@ Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 24: EDUS - Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis</figcaption>
+    <figcaption aria-hidden="true">Tab. 24: EDUS - Relationship between information on symptoms in the basic survey and test results</figcaption>
 </figure>
 
 <figure>
-    <img src="./fig_16.png" alt="Abb. 16: EDUS - Zusammenhang zwischen Symptom (Basisbefragung) und Testergebnis."/>
-    <figcaption aria-hidden="true">Abb. 16: EDUS - Zusammenhang zwischen Symptom (Basisbefragung) und Testergebnis.
+    <img src="./fig_16.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
+    <figcaption aria-hidden="true">Fig. 16: EDUS - Relationship between symptom (basic survey) and test result.
 </figcaption>
 </figure>
 </p>
 </details>
 <p></p>
 
-Die Antworten fielen in der Folgebefragung nur geringfügig anders verteilt aus als in der Basisbefragung. Bei etwas mehr Befragten kam es zu keinen neuen Symptomen. Auch hier waren die häufigsten Symptome unspezifisch. Einzig der Verlust des Geruchs-/Geschmacksinns wurde prozentual häufiger berichtet als in der Basisbefragung. 91.4% der Befragten mit diesem Symptom gaben in der Folgebefragung auch an, positiv auf SARS-CoV-2 getestet worden zu sein. Fieber bewegte sich über die Befragungen hinweg auf dem gleichen prozentualen Niveau.
+The distribution of the responses to the follow-up survey was only slightly different to the basic survey. Slightly more respondents reported no new symptoms. Once again, the most common category was unspecific symptoms. Only the loss of the sense of smell/taste was reported more frequently in percentage terms than in the basic survey. 91.4% of respondents with this symptom (follow-up study) also tested positive for SARS-CoV-2. Fever remained at the same level across the surveys.
 
 <details>
 <summary>
-Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
+Relationship between information on symptoms in the follow-up survey and test result
 </summary>
 <p>
 <p></p>
@@ -2548,12 +2547,12 @@ Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
       <th class="text-center" rowspan="1" colspan="3">
         <span class="gt_column_spanner"><strong>Testergebnis</strong></span>
       </th>
-      <th class="text-center" rowspan="2" colspan="1"><strong>Gesamt</strong></th>
+      <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
     <tr>
-      <th class="text-center" rowspan="1" colspan="1">Positiv auf SARS-CoV-2</th>
-      <th class="text-center" rowspan="1" colspan="1">Negativ auf SARS-CoV-2</th>
-      <th class="text-center" rowspan="1" colspan="1">Nicht eindeutig</th>
+      <th class="text-center" rowspan="1" colspan="1">Positive for SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Negative for SARS-CoV-2</th>
+      <th class="text-center" rowspan="1" colspan="1">Inconclusive</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2562,57 +2561,57 @@ Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
 <td class="text-center"></td>
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Erhöhte Temperatur oder Fieber</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Elevated temperature or fever</td>
 <td class="text-center">249 (72%)</td>
 <td class="text-center">89 (26%)</td>
 <td class="text-center">8 (2,3%)</td>
 <td class="text-center">346 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kurzatmigkeit</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Shortness of breath</td>
 <td class="text-center">199 (65%)</td>
 <td class="text-center">101 (33%)</td>
 <td class="text-center">5 (1,6%)</td>
 <td class="text-center">305 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Verlust des Geruchs-/Geschmacksinns</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Loss of smell / taste</td>
 <td class="text-center">276 (91%)</td>
 <td class="text-center">21 (7,0%)</td>
 <td class="text-center">5 (1,7%)</td>
 <td class="text-center">302 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Husten</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cough</td>
 <td class="text-center">404 (60%)</td>
 <td class="text-center">257 (38%)</td>
 <td class="text-center">13 (1,9%)</td>
 <td class="text-center">674 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Schnupfen</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cold</td>
 <td class="text-center">384 (42%)</td>
 <td class="text-center">503 (56%)</td>
 <td class="text-center">17 (1,9%)</td>
 <td class="text-center">904 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Halsschmerzen</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sore throat</td>
 <td class="text-center">259 (34%)</td>
 <td class="text-center">499 (65%)</td>
 <td class="text-center">12 (1,6%)</td>
 <td class="text-center">770 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Kopf- und Gliederschmerzen</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Headache and limb pain</td>
 <td class="text-center">421 (50%)</td>
 <td class="text-center">401 (48%)</td>
 <td class="text-center">20 (2,4%)</td>
 <td class="text-center">842 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Allgemeine Schwäche und Abgeschlagenheit</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">General weakness and fatigue</td>
 <td class="text-center">456 (52%)</td>
 <td class="text-center">406 (46%)</td>
 <td class="text-center">15 (1,7%)</td>
 <td class="text-center">877 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Durchfall</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Diarrhea</td>
 <td class="text-center">138 (42%)</td>
 <td class="text-center">184 (56%)</td>
 <td class="text-center">6 (1,8%)</td>
 <td class="text-center">328 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nein, keins der genannten Symptome</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No, none of the symptoms mentioned</td>
 <td class="text-center">155 (1,3%)</td>
 <td class="text-center">11.297 (98%)</td>
 <td class="text-center">59 (0,5%)</td>
 <td class="text-center">11.511 (100%)</td></tr>
-    <tr><td class="text-left" style="font-weight: bold;">Gesamt</td>
+    <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">2.941 (17%)</td>
 <td class="text-center">13.758 (82%)</td>
 <td class="text-center">160 (0,9%)</td>
@@ -2621,46 +2620,46 @@ Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 25: Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis</figcaption>
+    <figcaption aria-hidden="true">Tab. 25: EDUS - Relationship between information on symptoms in the follow-up survey and test results</figcaption>
 </figure>
 
 <figure>
-    <img src="./fig_17.png" alt="Abb. 17: EDUS - Zusammenhang zwischen Symptom (Folgebefragung) und Infektion."/>
-    <figcaption aria-hidden="true">Abb. 17: EDUS - Zusammenhang zwischen Symptom (Folgebefragung) und Infektion.
+    <img src="./fig_17.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
+    <figcaption aria-hidden="true"> Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection.
 </figcaption>
 </figure>
 </p>
 </details>
 <p></p>
 
-Teilnehmende, die in der Folgebefragung neue Symptome angegeben hatten, wurden gebeten, den Zeitpunkt anzugeben, an dem sie diese zum ersten Mal bemerkten. Bei über zwei Drittel der Befragten traten die Symptome vor mehr als drei Tagen auf.
+Respondents who reported new symptoms in the follow-up survey were asked to indicate when the symptoms first developed. Over two thirds of these users reported that the symptoms had appeared more than three days ago. 
 
 <details>
 <summary>
-Angaben zu Symptomen in Basis- und Folgebefragung
+Information on symptoms in the basic and follow-up survey
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 26: Sind eines oder mehrere der folgenden Symptome in den letzten Tagen bei Ihnen neu aufgetreten?
+Tab. 26: EDUS - Have you experienced one or more of the following new symptoms in the last few days?
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Sind eines oder mehrere der folgenden Symptome in den letzten Tagen bei Ihnen neu aufgetreten?
+Have you experienced one or more of the following new symptoms in the last few days?
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Erhöhte Temperatur oder Fieber
+Elevated temperature or fever
 </td>
 <td style="text-align:right;">
 577
@@ -2671,7 +2670,7 @@ Erhöhte Temperatur oder Fieber
 </tr>
 <tr>
 <td style="text-align:left;">
-Kurzatmigkeit
+Shortness of breath
 </td>
 <td style="text-align:right;">
 671
@@ -2682,7 +2681,7 @@ Kurzatmigkeit
 </tr>
 <tr>
 <td style="text-align:left;">
-Verlust des Geruchs-/Geschmacksinns
+Loss of smell / taste
 </td>
 <td style="text-align:right;">
 382
@@ -2693,7 +2692,7 @@ Verlust des Geruchs-/Geschmacksinns
 </tr>
 <tr>
 <td style="text-align:left;">
-Husten
+Cough
 </td>
 <td style="text-align:right;">
 1.470
@@ -2704,7 +2703,7 @@ Husten
 </tr>
 <tr>
 <td style="text-align:left;">
-Schnupfen
+Cold
 </td>
 <td style="text-align:right;">
 2.062
@@ -2715,7 +2714,7 @@ Schnupfen
 </tr>
 <tr>
 <td style="text-align:left;">
-Halsschmerzen
+Sore throat	1.665	6,7%	
 </td>
 <td style="text-align:right;">
 1.665
@@ -2726,7 +2725,7 @@ Halsschmerzen
 </tr>
 <tr>
 <td style="text-align:left;">
-Kopf- und Gliederschmerzen
+Headache and limb pain
 </td>
 <td style="text-align:right;">
 1.980
@@ -2737,7 +2736,7 @@ Kopf- und Gliederschmerzen
 </tr>
 <tr>
 <td style="text-align:left;">
-Allgemeine Schwäche und Abgeschlagenheit
+General weakness and fatigue
 </td>
 <td style="text-align:right;">
 2.019
@@ -2748,7 +2747,7 @@ Allgemeine Schwäche und Abgeschlagenheit
 </tr>
 <tr>
 <td style="text-align:left;">
-Durchfall
+Diarrhea
 </td>
 <td style="text-align:right;">
 827
@@ -2759,7 +2758,7 @@ Durchfall
 </tr>
 <tr>
 <td style="text-align:left;">
-Nein, keins der genannten Symptome
+No, none of the symptoms mentioned
 </td>
 <td style="text-align:right;">
 20.035
@@ -2772,25 +2771,25 @@ Nein, keins der genannten Symptome
 </table>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
-Tab. 27: Sind eines oder mehrere der folgenden Symptome in den letzten Tagen bei Ihnen neu aufgetreten?
+Tab. 27: EDUS - Have you experienced one or more of the following symptoms since the “red warning”?  
 </caption>
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Sind eines oder mehrere der folgenden Symptome seit der roten Warnmeldung bei Ihnen neu aufgetreten?  
+Have you experienced one or more of the following symptoms since the "red warning”?  
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Erhöhte Temperatur oder Fieber
+Elevated temperature or fever
 </td>
 <td style="text-align:right;">
 362
@@ -2801,7 +2800,7 @@ Erhöhte Temperatur oder Fieber
 </tr>
 <tr>
 <td style="text-align:left;">
-Kurzatmigkeit
+Shortness of breath
 </td>
 <td style="text-align:right;">
 321
@@ -2812,7 +2811,7 @@ Kurzatmigkeit
 </tr>
 <tr>
 <td style="text-align:left;">
-Verlust des Geruchs-/Geschmacksinns
+Loss of smell / taste
 </td>
 <td style="text-align:right;">
 306
@@ -2823,7 +2822,7 @@ Verlust des Geruchs-/Geschmacksinns
 </tr>
 <tr>
 <td style="text-align:left;">
-Husten
+Cough
 </td>
 <td style="text-align:right;">
 714
@@ -2834,7 +2833,7 @@ Husten
 </tr>
 <tr>
 <td style="text-align:left;">
-Schnupfen
+Cold
 </td>
 <td style="text-align:right;">
 975
@@ -2845,7 +2844,7 @@ Schnupfen
 </tr>
 <tr>
 <td style="text-align:left;">
-Halsschmerzen
+Sore throat
 </td>
 <td style="text-align:right;">
 819
@@ -2856,7 +2855,7 @@ Halsschmerzen
 </tr>
 <tr>
 <td style="text-align:left;">
-Kopf- und Gliederschmerzen
+Headache and limb pain
 </td>
 <td style="text-align:right;">
 891
@@ -2867,7 +2866,7 @@ Kopf- und Gliederschmerzen
 </tr>
 <tr>
 <td style="text-align:left;">
-Allgemeine Schwäche und Abgeschlagenheit
+General weakness and fatigue
 </td>
 <td style="text-align:right;">
 941
@@ -2878,7 +2877,7 @@ Allgemeine Schwäche und Abgeschlagenheit
 </tr>
 <tr>
 <td style="text-align:left;">
-Durchfall
+Diarrhea
 </td>
 <td style="text-align:right;">
 352
@@ -2889,7 +2888,7 @@ Durchfall
 </tr>
 <tr>
 <td style="text-align:left;">
-Nein, keins der genannten Symptome
+No, none of the symptoms mentioned
 </td>
 <td style="text-align:right;">
 13.404
@@ -2904,23 +2903,23 @@ Nein, keins der genannten Symptome
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Wann sind die Symptome zum ersten Mal aufgetreten?  
+When did the symptoms first appear?    
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anzahl
+Number
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil
+Percentage
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
-Anteil (gültig)
+Percentage (valid)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-In den letzten 3 Tagen
+In the past 3 days
 </td>
 <td style="text-align:right;">
 547
@@ -2934,7 +2933,7 @@ In den letzten 3 Tagen
 </tr>
 <tr>
 <td style="text-align:left;">
-Vor mehr als 3 Tagen
+More than 3 days ago
 </td>
 <td style="text-align:right;">
 1.421
@@ -2948,7 +2947,7 @@ Vor mehr als 3 Tagen
 </tr>
 <tr>
 <td style="text-align:left;">
-Weiß nicht
+Don´t know
 </td>
 <td style="text-align:right;">
 146
@@ -2962,7 +2961,7 @@ Weiß nicht
 </tr>
 <tr>
 <td style="text-align:left;">
--keine Angabe-
+-not specified-
 </td>
 <td style="text-align:right;">
 23.980
@@ -2979,22 +2978,17 @@ Weiß nicht
 </details>
 <p></p>
 
-## 6 Was nehmen wir aus der ereignisbezogenen Befragung (EDUS) mit?
+## 6 What can we learn from the event-driven user survey (EDUS)?
 
-EDUS ist ein wichtiger Baustein, um erste Erkenntnisse über die Corona-Warn-App-Nutzenden und deren Nutzungsverhalten zu erlangen.
+The EDUS is important for gaining basic information about CWA users and how they use the app.
+Thanks to the data provided by users on demographics (sex, age and level of education) and geographical indications, the study population could be compared with the total population and this provided information about geographical distribution and differences between urban and rural areas. Furthermore, by examining the contact behaviour of respondents who tested positive, conclusions could be drawn about the associations between infections in their social and working environment and among people they do not know. In addition, it was also possible to examine the relationship between self-assessed risk, intended behavioural changes and testing intention.
+Another important point was being able to analyse whether the respondents were surprised to receive a red warning. The survey examined the reasons why users were surprised to receive the warning, as well as associations between level of surprise and testing, contact with a health-care provider, and actual infection. The analysis of users’ testing intentions provided information about test type, implementation and results. A more detailed investigation of the distribution of test results illustrated the speediness of the reporting chain, and users’ willingness to share their positive test results.
+One issue that will gain importance in the future is the symptoms of users who have tested positive. The long-term effects of SARS-CoV-2 (Long COVID), in particular, have come under focus in recent months and it is important that this issue is further investigated.
+In summary, users who shared positive test results via the CWA enabled other people to be warned promptly about the fact that they had been exposed to an increased risk of infection. Many of these users would not have known about their increased risk without the app. The CWA thus fulfils its purpose as an early warning tool, contributes to ending chains of infection, and, therefore, is an important tool for combating the pandemic.
+We would like to take this opportunity to thank all users who voluntarily participated in the EDUS and thus made an important contribution to research.
 
-Dank der demografischen Angaben (Geschlecht, Alter, Bildungsgrad) und geografischen Angaben konnte die Studienpopulation mit der Gesamtbevölkerung verglichen und Klarheit über ihre geografische Verteilung sowie den Unterschied zwischen dem urbanen und ländlichen Raum gewonnen werden. Weiterhin konnten durch die Untersuchung des Kontaktverhaltens positiv getesteter Personen Aussagen über die Zusammenhänge innerhalb und außerhalb ihres Bekanntenkreises sowie im beruflichen Kontext getroffen werden. Darüber hinaus konnte dank EDUS der Zusammenhang zwischen Risikoeinschätzung und beabsichtigter Verhaltensänderung sowie Testbereitschaft aufgezeigt werden.
 
-Ein weiterer wichtiger Punkt war die Untersuchung der Überraschtheit der Befragten. Untersucht wurden die Gründe, die zu einer Überraschtheit führten sowie die Zusammenhänge zwischen Überraschtheit und durchgeführten Tests, Kontaktaufnahme zum Gesundheitswesen und tatsächlicher Infektion. Die Untersuchung des Testvorhabens gab Aufschluss über die Art des Tests, seine Durchführung und das Testergebnis. Eine genauere Betrachtung des Mitteilungsverhaltens bei positivem Ergebnis verdeutlichte die große Bereitschaft zur Mitteilung und die hohe Geschwindigkeit der Warnkette.
+## 7 What to expect in the future?
 
-Ein weiterer Punkt, der auch in Zukunft an Bedeutung gewinnen wird, ist die Untersuchung der Symptomatik positiv getesteter Nutzender. Besonders die Spätfolgen von SARS-CoV-2 (Long COVID) generieren in den vergangenen Wochen und Monaten verstärkt Aufmerksamkeit und laden zu weiteren Untersuchungen ein.
-
-Zusammenfassend kann festgehalten werden, dass durch die Teilung positiver Testergebnisse in der Corona-Warn-App Personen zeitnah vor einem erhöhten Infektionsrisiko gewarnt werden konnten, das sonst unerkannt geblieben wäre. Die Corona-Warn-App erfüllt somit ihren Zweck der frühzeitigen Warnung und unterstützt die Beendigung von Infektionsketten. Die Corona-Warn-App ist ein wichtiges Werkzeug in der Bekämpfung der Pandemie.
-
-Wir bedanken uns an dieser Stelle noch einmal ganz herzlich bei allen Nutzenden, die freiwillig an EDUS teilgenommen und somit einen wichtigen Beitrag für die Wissenschaft geleistet haben.
-
-## 7 So geht es weiter
-
-In den kommenden Wochen werden wir uns hier im Science Blog mit dem Thema <q>Datenspende</q> der Corona-Warn-App beschäftigen. Wir wollen analysieren, inwieweit das freiwillige, datenschutzkonforme Bereitstellen von Nutzenden-Daten Erkenntnisse über das Nutzungsverhalten möglich macht. Außerdem werden wir zeigen, wie die Datenspende bei der Weiterentwicklung der Corona-Warn-App geholfen hat.
-
+In the coming weeks, this science blog will focus on <q>data donation</q> for the CWA. We intend to analyse the extent to which the voluntary, data protection-compliant provision of user data enables information to be gained about user behaviour. We also plan to demonstrate how data donation has helped further develop the CWA.
 
