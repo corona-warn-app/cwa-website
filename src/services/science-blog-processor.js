@@ -149,6 +149,11 @@ page-name: "${entry.slug}"
 layout: science
 is_science_detail: true
 ---
+<div class="mobile-banner">
+  <div class="container">
+    ${lang === "de" ? data.de.mobileBanner : data.en.mobileBanner}
+  </div>
+</div>
 ${entry.blogContent}`;
 
     writeBlogFile(lang, entry.slug, fileContent);

@@ -6,13 +6,13 @@
         display: block !important;
     }
     .mobile-banner {
-        display: block;
+        display: block !important;
     }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 481px) and (max-width: 812px) and (max-height: 414px) {
     .mobile-banner {
-        display: block;
+        display: block !important;
     }
 }
 
