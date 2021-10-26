@@ -4,8 +4,7 @@ page-description: "CWA – Event-driven user survey (part 2) "
 page-name: science-blog-3
 page-name_de: science-blog-3
 author: CWA Team
-date: "2021-08-02"
-update: "Aktualisiert am 20. September 2021"
+date: "2021-10-28"
 layout: science
 ---
 
