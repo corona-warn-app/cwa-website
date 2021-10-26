@@ -154,7 +154,7 @@ It has to be taken into consideration here that the question about this issue wa
 
 <details>
 <summary>
-Angaben zur Aktivierung der Risikoermittlung
+Data provided on activation of exposure logging
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -279,7 +279,7 @@ The basic survey asked whether the respondents were surprised to receive the <q>
 </div>
 <details>
 <summary>
-Angaben zur Überraschtheit
+Data provided on level of surprise
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -370,7 +370,7 @@ Respondents were asked why they were surprised to receive the warning. The quest
 
 <details>
 <summary>
-Angaben zu Gründen der Nicht-Überraschtheit
+Data provided on reasons for non-surprise
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -472,7 +472,7 @@ The results demonstrate that the CWA helps inform users about exposure to infect
     <tr>
       <th rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="text-center"><strong>Überraschtheit</strong></span>
+        <span class="text-center"><strong>Level of surprise</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -536,13 +536,13 @@ The results demonstrate that the CWA helps inform users about exposure to infect
 </figure>
 
 <figure>
-    <img src="./fig_03.png" class="figure-img img-fluid" alt="Fig. 3: EDUS – relationship between level of surprise and assessed risk."/>
+    <img src="./fig_03_en.png" class="figure-img img-fluid" alt="Fig. 3: EDUS – relationship between level of surprise and assessed risk."/>
     <figcaption aria-hidden="true">Fig. 3: EDUS – relationship between level of surprise and assessed risk.</figcaption>
 </figure>
 
 <details>
 <summary>
-Angaben zum eingeschätzten Risiko
+Data provided on estimated risk
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -681,7 +681,7 @@ Participants who were surprised to receive a <q>red warning</q> either undertook
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="text-center"><strong>Überraschtheit</strong></span>
+        <span class="text-center"><strong>Level of surprise</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -740,7 +740,7 @@ Participants who were surprised to receive a <q>red warning</q> either undertook
 </figure>
 
 <figure>
-    <img src="./fig_04.png" alt="Fig. 4: EDUS – relationship between level of surprise and testing"/>
+    <img src="./fig_04_en.png" alt="Fig. 4: EDUS – relationship between level of surprise and testing"/>
     <figcaption aria-hidden="true">Fig. 4: EDUS – relationship between level of surprise and testing</figcaption>
 </figure>
 
@@ -758,7 +758,7 @@ Most respondents who intended to contact a health-care provider planned to conta
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="gt_column_spanner"><strong>Überraschtheit</strong></span>
+        <span class="gt_column_spanner"><strong>Level of surprise</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -802,14 +802,14 @@ Most respondents who intended to contact a health-care provider planned to conta
 </figure>
 
 <figure>
-    <img src="./fig_05.png" alt="Fig. 5: EDUS – relationship between level of surprise and intention to contact a health-care provider."/>
+    <img src="./fig_05_en.png" alt="Fig. 5: EDUS – relationship between level of surprise and intention to contact a health-care provider."/>
     <figcaption aria-hidden="true">Fig. 5: EDUS – relationship between level of surprise and intention to contact a health-care provider.
 </figcaption>
 </figure>
 
 <details>
 <summary>
-Angaben zum Kontaktvorhaben zum Gesundheitswesen
+Data provided on intention to contact a health-care provider
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -983,7 +983,7 @@ It is not always possible to maintain social distancing and fully comply with hy
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="gt_column_spanner"><strong>Überraschtheit</strong></span>
+        <span class="gt_column_spanner"><strong>Level of surprise</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -1028,11 +1028,11 @@ It is not always possible to maintain social distancing and fully comply with hy
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 11: EDUS - Zusammenhang zwischen Überraschtheit und Infektion</figcaption>
+    <figcaption aria-hidden="true">Tab. 11: EDUS - Relationship between surprise and infection</figcaption>
 </figure>
 
 <figure>
-    <img src="./fig_06.png" alt="Fig. 6: EDUS – relationship between level of surprise and infection."/>
+    <img src="./fig_06_en.png" alt="Fig. 6: EDUS – relationship between level of surprise and infection."/>
     <figcaption aria-hidden="true">Fig. 6: EDUS – relationship between level of surprise and infection.
 </figcaption>
 </figure>
@@ -1042,7 +1042,7 @@ It is not always possible to maintain social distancing and fully comply with hy
 The relationship between level of surprise, infection and intention to contact a health-care provider is summarised in the following graph.
 
 <figure>
-    <img src="./fig_07.png" alt="Fig. 7: EDUS – relationship between level of surprise, intention to contact a health-care provider and infection."/>
+    <img src="./fig_07_en.png" alt="Fig. 7: EDUS – relationship between level of surprise, intention to contact a health-care provider and infection."/>
     <figcaption aria-hidden="true">Fig. 7: EDUS – relationship between level of surprise, intention to contact a health-care provider and infection.
 </figcaption>
 </figure>
@@ -1064,7 +1064,7 @@ Respondents (from the basic survey) who stated they would be taking a test were 
 
 <div class="figure">
 <div id="htmlwidget-775f7228883fa0a7fcb0" style="width:600px;height:450px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-775f7228883fa0a7fcb0">{"x":{"visdat":{"29677b036518":["function () ","plotlyVisDat"]},"cur_data":"29677b036518","attrs":{"29677b036518":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","name":{},"color":{},"colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"],"hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"yaxis":{"domain":[0,1],"automargin":true,"showgrid":false,"showline":false,"hoverformat":"f","title":"Anzahl","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"xaxis":{"domain":[0,1],"automargin":true,"type":"date","hoverformat":"%e. %b (%a) %Y","tickformat":"%e. %b","title":"Datum","tickfont":{"size":12},"autotick":false,"tickmode":"array","tickvals":["2021-03-01","2021-03-15","2021-03-29","2021-04-12","2021-04-26","2021-05-10","2021-05-24","2021-06-07","2021-06-21","2021-07-05","2021-07-19","2021-08-02","2021-08-16","2021-08-30","2021-09-13","2021-09-27","2021-10-11","2021-10-25","2021-11-08","2021-11-22","2021-12-06"]},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":true},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[2,13,12,17,28,46,31,36,36,32,29,25,30,46,39,123,119,72,73,81,91,115,92,106,77,63,116,115,109,103,75,65,57,81,84,81,79,75,49,67,71,107,85,117,119,85,112,129,142,144,123,120,89,69,105,157,90,83,99,64,53,75,79,79,18],"type":"bar","name":"PCR test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(51,160,44,1)","line":{"color":"rgba(51,160,44,1)"}},"textfont":{"color":"rgba(51,160,44,1)"},"error_y":{"color":"rgba(51,160,44,1)"},"error_x":{"color":"rgba(51,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,6,4,8,9,13,6,10,16,15,15,20,16,27,25,162,162,104,82,101,128,141,129,169,132,107,128,162,136,209,114,121,114,116,137,122,136,133,101,93,115,141,140,265,248,212,163,184,267,228,186,191,157,106,157,233,170,112,153,144,119,153,135,137,28],"type":"bar","name":"Rapid antigen test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(57,128,155,1)","line":{"color":"rgba(57,128,155,1)"}},"textfont":{"color":"rgba(57,128,155,1)"},"error_y":{"color":"rgba(57,128,155,1)"},"error_x":{"color":"rgba(57,128,155,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[1,4,1,6,5,16,10,14,14,14,14,3,10,20,17,54,61,43,29,41,54,45,50,59,46,48,67,62,55,73,57,49,46,54,44,56,42,51,37,39,53,48,62,103,95,57,58,83,106,86,84,77,63,60,53,99,62,57,53,70,39,56,67,53,14],"type":"bar","name":"PCR test and rapid antigen test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(147,154,200,1)","line":{"color":"rgba(147,154,200,1)"}},"textfont":{"color":"rgba(147,154,200,1)"},"error_y":{"color":"rgba(147,154,200,1)"},"error_x":{"color":"rgba(147,154,200,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,4,0,5,2,8,6,4,4,6,4,3,6,5,7,44,37,33,19,27,23,26,30,30,25,21,15,24,21,24,19,8,16,13,13,25,14,24,19,14,17,23,14,38,23,36,17,25,30,38,21,25,19,9,24,23,20,19,11,11,11,23,20,16,3],"type":"bar","name":"That depends on medical advice or the advice of another health service","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(224,169,189,1)","line":{"color":"rgba(224,169,189,1)"}},"textfont":{"color":"rgba(224,169,189,1)"},"error_y":{"color":"rgba(224,169,189,1)"},"error_x":{"color":"rgba(224,169,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,1,0,0,0,2,0,2,1,1,1,3,1,2,0,10,6,4,4,1,8,5,1,7,5,3,2,9,8,4,1,2,4,1,2,4,5,3,2,0,2,3,2,7,6,3,4,2,4,7,1,4,6,4,6,3,2,2,5,1,1,4,5,1,1],"type":"bar","name":"Don't know","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(249,134,127,1)","line":{"color":"rgba(249,134,127,1)"}},"textfont":{"color":"rgba(249,134,127,1)"},"error_y":{"color":"rgba(249,134,127,1)"},"error_x":{"color":"rgba(249,134,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[2,12,2,24,21,26,43,38,33,34,27,19,34,49,62,344,311,200,172,156,194,176,181,180,150,139,180,187,180,219,126,117,123,132,155,129,157,145,115,94,139,149,175,251,317,193,161,195,288,225,181,213,168,116,162,296,149,152,155,127,110,170,140,151,32],"type":"bar","name":"-not specified-","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(227,26,28,1)","line":{"color":"rgba(227,26,28,1)"}},"textfont":{"color":"rgba(227,26,28,1)"},"error_y":{"color":"rgba(227,26,28,1)"},"error_x":{"color":"rgba(227,26,28,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-775f7228883fa0a7fcb0">{"x":{"visdat":{"29677b036518":["function () ","plotlyVisDat"]},"cur_data":"29677b036518","attrs":{"29677b036518":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","name":{},"color":{},"colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"],"hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"yaxis":{"domain":[0,1],"automargin":true,"showgrid":false,"showline":false,"hoverformat":"f","title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"xaxis":{"domain":[0,1],"automargin":true,"type":"date","hoverformat":"%e. %b (%a) %Y","tickformat":"%e. %b","title":"Data","tickfont":{"size":12},"autotick":false,"tickmode":"array","tickvals":["2021-03-01","2021-03-15","2021-03-29","2021-04-12","2021-04-26","2021-05-10","2021-05-24","2021-06-07","2021-06-21","2021-07-05","2021-07-19","2021-08-02","2021-08-16","2021-08-30","2021-09-13","2021-09-27","2021-10-11","2021-10-25","2021-11-08","2021-11-22","2021-12-06"]},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":true},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[2,13,12,17,28,46,31,36,36,32,29,25,30,46,39,123,119,72,73,81,91,115,92,106,77,63,116,115,109,103,75,65,57,81,84,81,79,75,49,67,71,107,85,117,119,85,112,129,142,144,123,120,89,69,105,157,90,83,99,64,53,75,79,79,18],"type":"bar","name":"PCR test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(51,160,44,1)","line":{"color":"rgba(51,160,44,1)"}},"textfont":{"color":"rgba(51,160,44,1)"},"error_y":{"color":"rgba(51,160,44,1)"},"error_x":{"color":"rgba(51,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,6,4,8,9,13,6,10,16,15,15,20,16,27,25,162,162,104,82,101,128,141,129,169,132,107,128,162,136,209,114,121,114,116,137,122,136,133,101,93,115,141,140,265,248,212,163,184,267,228,186,191,157,106,157,233,170,112,153,144,119,153,135,137,28],"type":"bar","name":"Rapid antigen test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(57,128,155,1)","line":{"color":"rgba(57,128,155,1)"}},"textfont":{"color":"rgba(57,128,155,1)"},"error_y":{"color":"rgba(57,128,155,1)"},"error_x":{"color":"rgba(57,128,155,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[1,4,1,6,5,16,10,14,14,14,14,3,10,20,17,54,61,43,29,41,54,45,50,59,46,48,67,62,55,73,57,49,46,54,44,56,42,51,37,39,53,48,62,103,95,57,58,83,106,86,84,77,63,60,53,99,62,57,53,70,39,56,67,53,14],"type":"bar","name":"PCR test and rapid antigen test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(147,154,200,1)","line":{"color":"rgba(147,154,200,1)"}},"textfont":{"color":"rgba(147,154,200,1)"},"error_y":{"color":"rgba(147,154,200,1)"},"error_x":{"color":"rgba(147,154,200,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,4,0,5,2,8,6,4,4,6,4,3,6,5,7,44,37,33,19,27,23,26,30,30,25,21,15,24,21,24,19,8,16,13,13,25,14,24,19,14,17,23,14,38,23,36,17,25,30,38,21,25,19,9,24,23,20,19,11,11,11,23,20,16,3],"type":"bar","name":"That depends on medical advice or the advice of another health service","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(224,169,189,1)","line":{"color":"rgba(224,169,189,1)"}},"textfont":{"color":"rgba(224,169,189,1)"},"error_y":{"color":"rgba(224,169,189,1)"},"error_x":{"color":"rgba(224,169,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,1,0,0,0,2,0,2,1,1,1,3,1,2,0,10,6,4,4,1,8,5,1,7,5,3,2,9,8,4,1,2,4,1,2,4,5,3,2,0,2,3,2,7,6,3,4,2,4,7,1,4,6,4,6,3,2,2,5,1,1,4,5,1,1],"type":"bar","name":"Don't know","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(249,134,127,1)","line":{"color":"rgba(249,134,127,1)"}},"textfont":{"color":"rgba(249,134,127,1)"},"error_y":{"color":"rgba(249,134,127,1)"},"error_x":{"color":"rgba(249,134,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[2,12,2,24,21,26,43,38,33,34,27,19,34,49,62,344,311,200,172,156,194,176,181,180,150,139,180,187,180,219,126,117,123,132,155,129,157,145,115,94,139,149,175,251,317,193,161,195,288,225,181,213,168,116,162,296,149,152,155,127,110,170,140,151,32],"type":"bar","name":"-not specified-","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(227,26,28,1)","line":{"color":"rgba(227,26,28,1)"}},"textfont":{"color":"rgba(227,26,28,1)"},"error_y":{"color":"rgba(227,26,28,1)"},"error_x":{"color":"rgba(227,26,28,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">Fig. 9: EDUS – testing intention by test type (developments over time) </p>
 </div>
 <details>
@@ -1289,7 +1289,7 @@ The data demonstrate that the respondents generally implemented their stated tes
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="5">
-        <span class="gt_column_spanner"><strong>Test (durchgeführt)</strong></span>
+        <span class="gt_column_spanner"><strong>Test (carried out)</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -1359,7 +1359,7 @@ The data demonstrate that the respondents generally implemented their stated tes
 </figure>
 
 <figure>
-    <img src="./fig_10.png" alt="Fig. 10: EDUS – relationship between testing intention and the test that was carried out."/>
+    <img src="./fig_10_en.png" alt="Fig. 10: EDUS – relationship between testing intention and the test that was carried out."/>
     <figcaption aria-hidden="true">Fig. 10: EDUS – relationship between testing intention and the test that was carried out.
 </figcaption>
 </figure>
@@ -1374,7 +1374,7 @@ The data demonstrate that the respondents generally implemented their stated tes
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class=""><strong>Testergebnis</strong></span>
+        <span class=""><strong>Test result</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -1390,7 +1390,7 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center"></td>
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">JYes, a PCR test</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test</td>
 <td class="text-center">514 (65%)</td>
 <td class="text-center">3.536 (28%)</td>
 <td class="text-center">52 (57%)</td>
@@ -1428,7 +1428,7 @@ The data demonstrate that the respondents generally implemented their stated tes
 </figure>
 
 <figure>
-    <img src="./fig_11.png" alt="Fig. 11: EDUS – relationship between tests carried out and test resultss."/>
+    <img src="./fig_11_en.png" alt="Fig. 11: EDUS – relationship between tests carried out and test resultss."/>
     <figcaption aria-hidden="true">Fig. 11: EDUS – relationship between tests carried out and test results.
 </figcaption>
 </figure>
@@ -1630,7 +1630,7 @@ On average, users underwent testing 2.5 days after receiving a <q>red warning</q
 
 <div class="figure">
 <div id="htmlwidget-1b28c7ec57ae2a9dc520" style="width:600px;height:450px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b28c7ec57ae2a9dc520">{"x":{"visdat":{"29675474a2f":["function () ","plotlyVisDat"]},"cur_data":"29675474a2f","attrs":{"29675474a2f":{"x":{},"name":"#","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Zeit zwischen Warnung und Test (Tage)","autotick":true},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":false},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"name":"#","y":[1852,4883,1884,1245,842,1129,439,482,185,92,170,43,46,11,39,4,2,4,1,1,1,2],"type":"bar","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1b28c7ec57ae2a9dc520">{"x":{"visdat":{"29675474a2f":["function () ","plotlyVisDat"]},"cur_data":"29675474a2f","attrs":{"29675474a2f":{"x":{},"name":"#","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Delay between warning and test","autotick":true},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":false},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"name":"#","y":[1852,4883,1884,1245,842,1129,439,482,185,92,170,43,46,11,39,4,2,4,1,1,1,2],"type":"bar","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">Fig. 12: EDUS - Delay between <q>red warning</q> and test</p>
 </div>
 <details>
@@ -2023,7 +2023,7 @@ During the main survey period (March to May 2021), only PCR tests could be regis
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="gt_column_spanner"><strong>Ergebnis per CWA</strong></span>
+        <span class="gt_column_spanner"><strong>Test result via CWA</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -2077,7 +2077,7 @@ During the main survey period (March to May 2021), only PCR tests could be regis
 </figure>
 
 <figure>
-    <img src="./fig_13.png" alt="Fig. 13: EDUS - relationship between tests carried out and receiving a test result via the CWA ."/>
+    <img src="./fig_13_en.png" alt="Fig. 13: EDUS - relationship between tests carried out and receiving a test result via the CWA ."/>
     <figcaption aria-hidden="true">Fig. 13: EDUS - relationship between tests carried out and receiving a test result via the CWA .
 </figcaption>
 </figure>
@@ -2366,7 +2366,7 @@ Respondents who had registered the test in the Corona-Warn-App were more often w
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="2">
-        <span class="gt_column_spanner"><strong>Teilung des Testergebnisses</strong></span>
+        <span class="gt_column_spanner"><strong>Sharing the test result</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -2404,7 +2404,7 @@ Respondents who had registered the test in the Corona-Warn-App were more often w
 </figure>
 
 <figure>
-    <img src="./fig_14.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
+    <img src="./fig_14_en.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
     <figcaption aria-hidden="true">Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result.
 </figcaption>
 </figure>
@@ -2417,7 +2417,7 @@ The following interactive graphic (Sankey diagram) breaks down the responses to 
 
 <div class="figure">
 <div id="htmlwidget-networkD3-27894f19b2bee56740ed" style="width:100%;height:700px;" class="sankeyNetwork html-widget"></div>
-<script type="application/json" data-for="htmlwidget-networkD3-27894f19b2bee56740ed">{"x":{"links":{"source":[0,0,0,0,0,1,2,3,4,5,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,10,11,11,11,11,12,12,12,13,13,13,14,15,16,17,17,17,18,18,18,19,19,20,20,21,21,21,22,22,22,23,23,23,24],"target":[5,6,7,8,9,10,10,10,10,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,14,15,16,11,12,13,14,15,16,17,18,19,20,17,18,19,17,18,19,18,20,20,21,22,23,21,22,23,21,23,23,24,25,26,27,25,26,27,25,26,27,27],"value":[5001,7571,3069,1144,201,2754,4127,1051,1166,2243,209,505,36,90,1921,284,3980,302,63,300,2644,499,379,971,17,39,1164,236,315,91,34,42,426,26,42,14,21,92,830,1943,388,102,1533,4307,514,3536,52,16,19,6832,14,255,1982,22,255,2023,10552,325,161,306,2683,544,9376,11,76,29,12568,314,12,2697,148,14,548,177,129,9481,12574],"group":["A1","A1","A1","A1","A1","A2","A3","A4","A5","B1","B1","B1","B1","B1","B1","B2","B2","B2","B2","B2","B2","B3","B3","B3","B3","B3","B3","B4","B4","B4","B4","B4","B4","B5","B5","B5","B5","B5","B6","B6","B6","B6","B6","B6","C1","C1","C1","C1","C2","C2","C2","C3","C3","C3","C4","C5","C6","D1","D1","D1","D2","D2","D2","D3","D3","D4","D4","E1","E1","E1","E2","E2","E2","E3","E3","E3","E4"]},"nodes":{"name":["Ja","Nein","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","Weiß nicht","Nein","-keine Angabe-","positiv","negativ","nicht eindeutig","-keine Angabe-","via CWA zuerst","via CWA später","nicht via CWA","-keine Angabe-","geteilt","nicht geteilt","-keine Angabe-"],"group":["Ja","Nein","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","nach ärztlichem Rat","Weiß nicht","-keine Angabe-","PCR","RAT","RAT & PCR","Weiß nicht","Nein","-keine Angabe-","positiv","negativ","nicht eindeutig","-keine Angabe-","via CWA zuerst","via CWA später","nicht via CWA","-keine Angabe-","geteilt","nicht geteilt","-keine Angabe-"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":"source","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":16,"fontFamily":"Palatino","nodeWidth":15,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-networkD3-27894f19b2bee56740ed">{"x":{"links":{"source":[0,0,0,0,0,1,2,3,4,5,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,10,11,11,11,11,12,12,12,13,13,13,14,15,16,17,17,17,18,18,18,19,19,20,20,21,21,21,22,22,22,23,23,23,24],"target":[5,6,7,8,9,10,10,10,10,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,14,15,16,11,12,13,14,15,16,17,18,19,20,17,18,19,17,18,19,18,20,20,21,22,23,21,22,23,21,23,23,24,25,26,27,25,26,27,25,26,27,27],"value":[5001,7571,3069,1144,201,2754,4127,1051,1166,2243,209,505,36,90,1921,284,3980,302,63,300,2644,499,379,971,17,39,1164,236,315,91,34,42,426,26,42,14,21,92,830,1943,388,102,1533,4307,514,3536,52,16,19,6832,14,255,1982,22,255,2023,10552,325,161,306,2683,544,9376,11,76,29,12568,314,12,2697,148,14,548,177,129,9481,12574],"group":["A1","A1","A1","A1","A1","A2","A3","A4","A5","B1","B1","B1","B1","B1","B1","B2","B2","B2","B2","B2","B2","B3","B3","B3","B3","B3","B3","B4","B4","B4","B4","B4","B4","B5","B5","B5","B5","B5","B6","B6","B6","B6","B6","B6","C1","C1","C1","C1","C2","C2","C2","C3","C3","C3","C4","C5","C6","D1","D1","D1","D2","D2","D2","D3","D3","D4","D4","E1","E1","E1","E2","E2","E2","E3","E3","E3","E4"]},"nodes":{"name":["Yes","No","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","I don't know","No","-not specified-","positive","negative","ambiguous","-not specified-","via CWA first","via CWA later","not via CWA","-not specified-","shared","not shared","-not specified-"],"group":["Yes","No","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","I don't know","No","-not specified-","positive","negative","ambiguous","-not specified-","via CWA first","via CWA later","not via CWA","-not specified-","shared","not shared","-not specified-"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":"source","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":16,"fontFamily":"Palatino","nodeWidth":15,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
 <p class="caption">
 Fig. 15: EDUS – CWA test process, from test intention to test type, actual tests carried out, test results and receiving test results via the CWA to distribution. 
 </p>
@@ -2442,7 +2442,7 @@ Relationship between information on symptoms in the basic survey and test result
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="gt_column_spanner"><strong>Testergebnis</strong></span>
+        <span class="gt_column_spanner"><strong>Test result</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -2521,7 +2521,7 @@ Relationship between information on symptoms in the basic survey and test result
 </figure>
 
 <figure>
-    <img src="./fig_16.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
+    <img src="./fig_16_en.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
     <figcaption aria-hidden="true">Fig. 16: EDUS - Relationship between symptom (basic survey) and test result.
 </figcaption>
 </figure>
@@ -2545,7 +2545,7 @@ Relationship between information on symptoms in the follow-up survey and test re
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"><strong>Variable</strong></th>
       <th class="text-center" rowspan="1" colspan="3">
-        <span class="gt_column_spanner"><strong>Testergebnis</strong></span>
+        <span class="gt_column_spanner"><strong>Test result</strong></span>
       </th>
       <th class="text-center" rowspan="2" colspan="1"><strong>Total</strong></th>
     </tr>
@@ -2624,7 +2624,7 @@ Relationship between information on symptoms in the follow-up survey and test re
 </figure>
 
 <figure>
-    <img src="./fig_17.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
+    <img src="./fig_17_en.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
     <figcaption aria-hidden="true"> Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection.
 </figcaption>
 </figure>
@@ -2714,7 +2714,7 @@ Cold
 </tr>
 <tr>
 <td style="text-align:left;">
-Sore throat	1.665	6,7%	
+Sore throat
 </td>
 <td style="text-align:right;">
 1.665
