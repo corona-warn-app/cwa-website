@@ -40,7 +40,7 @@ Data from the second part of the event-driven user survey (EDUS) show, among oth
 <li>Respondents generally received their test results via the app within 24 hours.</li>
 <li>By communicating their positive results via the app, users enabled warnings to be sent out promptly to people who would have otherwise not been informed about their exposure to infection.</li>
 <li>The majority of users who received a <q>red warning</q> adapted their behaviour to help prevent the virus from spreading</li>
-<li>•	The Corona-Warn-App fulfils its purpose of providing early warnings and contributing to breaking infection chains.</li></ul>
+<li>The Corona-Warn-App fulfils its purpose of providing early warnings and contributing to breaking infection chains.</li></ul>
 
 ## 2. Active mobile devices and activation of exposure logging 
 
