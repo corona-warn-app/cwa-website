@@ -21,7 +21,7 @@ function isValidDate(date) {
 }
 
 function dateTimeToUnixTimestamp(date, time) {
-  return new Date(`${date} ${time}`).getTime() / 1000;
+  return new Date(`${date}T${time}`).getTime() / 1000;
 }
 
 if (document.getElementById('qrform')) {
@@ -97,7 +97,6 @@ document.getElementById('generateQR').addEventListener('click', async function (
     canvas.height = 2339;
     canvas.style.maxWidth = "100%"
 
-    console.log(qr)
     ctx.drawImage(qr, 0, 0);
 
     PrintLayout()
@@ -388,14 +387,12 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
       let qr = document.createElement("canvas");
       let canvas = document.createElement("canvas");
       let ctx = canvas.getContext('2d');
-
       QRCode.toCanvas(qr, 'https://e.coronawarn.app?v=1#' + qrContent, {
         margin: 0,
         width: 1100
       }, function (err) {
         if (err) {
-          //console.error(err);
-          console.log("err", err)
+          console.error(err);
           return resolve(false);
         }
 
@@ -404,7 +401,6 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
         canvas.width = 1654;
         canvas.height = 2339;
         canvas.style.maxWidth = "100%"
-
         ctx.drawImage(backgroundImage, 0, 0);
         ctx.drawImage(qr, 275, 230);
         let fontSize = (30+parseInt(col))*2;
@@ -416,11 +412,9 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
         else resolve(canvas);
       });
     } else {
-      console.log("not valid")
       resolve(false);
     }
   } catch(err) {
-    console.log("catch", err)
     return resolve(false);
   }
   })
