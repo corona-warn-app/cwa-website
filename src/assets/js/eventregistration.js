@@ -1,8 +1,7 @@
 import QRCode from 'qrcode';
 import { proto } from './lib/trace_location_pb';
 import { encode } from 'uint8-to-base64';
-import moment from 'moment';
-//import dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import Cleave from 'cleave.js';
 import Papa from 'papaparse';
 import { jsPDF } from "jspdf";
@@ -266,7 +265,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-starttimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(startdate) || !moment(startdate.split(".").reverse().join("-")).isValid()) {
+      if (!dateReg.test(startdate) || !dayjs(startdate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-starttimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -283,7 +282,7 @@ function ValidateQRForm() {
       document.getElementById('qr-error-endtimerequired').style.display = 'block';
       errors++;
     } else {
-      if (!dateReg.test(enddate) || !moment(enddate.split(".").reverse().join("-")).isValid()) {
+      if (!dateReg.test(enddate) || !dayjs(enddate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-endtimeinvaliddate').style.display = 'block';
         errors++;
       }
@@ -351,8 +350,8 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
     let validLocation = !Number.isNaN(parseInt(locationType));
     let validStartDate, validEndDate;
     if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
-      validStartDate = new Date(qr.startdate).getTime() > 0 && qr.startdate !== "" && qr.startdate !== null;
-      validEndDate = new Date(qr.enddate).getTime() > 0 && qr.enddate !== "" && qr.enddate !== null;
+      validStartDate = new Date(startdate).getTime() > 0 && startdate !== "" && startdate !== null;
+      validEndDate = new Date(enddate).getTime() > 0 && enddate !== "" && enddate !== null;
       if (!validStartDate || !validEndDate) {
         validLocation = false
       }
@@ -376,21 +375,17 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
       traceLocation.setVersion(1);
       traceLocation.setDescription(description);
       traceLocation.setAddress(address);
-
       if (locationType >= 9 || locationType === 2) {
         traceLocation.setStarttimestamp(dateTimeToUnixTimestamp(startdate, starttime));
         traceLocation.setEndtimestamp(dateTimeToUnixTimestamp(enddate, endtime));
       }
-
       let payload = new proto.QRCodePayload();
       payload.setLocationdata(traceLocation);
       payload.setCrowdnotifierdata(crowdNotifierData);
       payload.setVendordata(locationData.serializeBinary());
       payload.setVersion(1);
-
       let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
       let qr = document.createElement("canvas");
-
       let canvas = document.createElement("canvas");
       let ctx = canvas.getContext('2d');
 
