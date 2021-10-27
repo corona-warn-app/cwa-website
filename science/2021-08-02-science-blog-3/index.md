@@ -1295,7 +1295,7 @@ The data demonstrate that the respondents generally implemented their stated tes
     <tr>
       <th class="text-center" rowspan="1" colspan="1">Yes, a PCR test</th>
       <th class="text-center" rowspan="1" colspan="1">Yes, a  rapid antigen test</th>
-      <th class="text-center" rowspan="1" colspan="1">Yes, a PCR test anda  rapid antigen test</th>
+      <th class="text-center" rowspan="1" colspan="1">Yes, a PCR test and a rapid antigen test</th>
       <th class="text-center" rowspan="1" colspan="1">Yes, but I don’t know, what kind of test</th>
       <th class="text-center" rowspan="1" colspan="1">No</th>
     </tr>
@@ -1329,7 +1329,7 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center">17 (0,9%)</td>
 <td class="text-center">39 (2,0%)</td>
 <td class="text-center">1.905 (100%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">That depends on medical advice or the advice of another health</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">That depends on medical advice or the advice of another health service</td>
 <td class="text-center">236 (33%)</td>
 <td class="text-center">315 (44%)</td>
 <td class="text-center">91 (13%)</td>
@@ -1399,7 +1399,7 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center">6.832 (54%)</td>
 <td class="text-center">14 (15%)</td>
 <td class="text-center">6.865 (51%)</td></tr>
-    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test anda  rapid antigen test</td>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test and a rapid antigen test</td>
 <td class="text-center">255 (32%)</td>
 <td class="text-center">1.982 (16%)</td>
 <td class="text-center">22 (24%)</td>
@@ -2085,7 +2085,7 @@ Users who received their results via the app usually received them within 24 hou
 
 <details>
 <summary>
-Information on the provision of test results via the Coron-Warn-App
+Information on the provision of test results via the Corona-Warn-App
 </summary>
 <p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -2990,4 +2990,3 @@ We would like to take this opportunity to thank all users who voluntarily partic
 ## 7 What to expect in the future?
 
 In the coming weeks, this science blog will focus on <q>data donation</q> for the CWA. We intend to analyse the extent to which the voluntary, data protection-compliant provision of user data enables information to be gained about user behaviour. We also plan to demonstrate how data donation has helped further develop the CWA.
-
