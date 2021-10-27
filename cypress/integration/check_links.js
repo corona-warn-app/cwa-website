@@ -39,7 +39,7 @@ context("Check for broken links", () => {
             log: false,
             url: url.prop('href')
           }).then((response) => {
-            softExpect(response.status, "Link: " + url.prop('href')).to.eq(200)
+            softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
           })
         }         
       })
@@ -65,7 +65,7 @@ context("Check for broken links on entries", () => {
                 log: false,
                 url: entry.prop('href')
               }).then((response) => {
-                softExpect(response.status, "Link: " + entry.prop('href')).to.eq(200)
+                softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
               })
             }
           })
