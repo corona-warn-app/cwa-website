@@ -1,6 +1,6 @@
 ---
-page-title: "CWA – Event-driven user survey (part 2) "
-page-description: "CWA – Event-driven user survey (part 2) "
+page-title: "How does a 'Red Warning' Influences the Behaviour of Corona-Warn-App-Users?"
+page-description: "How does a 'Red Warning' Influences the Behaviour of Corona-Warn-App-Users?"
 page-name: science-blog-3
 page-name_de: science-blog-3
 author: CWA Team

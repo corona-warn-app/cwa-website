@@ -1,6 +1,6 @@
 ---
-page-title: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
-page-description: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
+page-title: "Who is using the Corona-Warn-App, who is warned - and how fast?"
+page-description: "Who is using the Corona-Warn-App, who is warned - and how fast?"
 page-name: science-blog-4
 page-name_de: science-blog-4
 author: CWA Team
