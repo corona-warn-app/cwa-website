@@ -1,6 +1,6 @@
 ---
-page-title: "How does a 'Red Warning' Influences the Behaviour of Corona-Warn-App-Users?"
-page-description: "How does a 'Red Warning' Influences the Behaviour of Corona-Warn-App-Users?"
+page-title: "How does a 'Red Warning' Influence the Behaviour of Corona-Warn-App-Users?"
+page-description: "How does a 'Red Warning' Influence the Behaviour of Corona-Warn-App-Users?"
 page-name: science-blog-3
 page-name_de: science-blog-3
 author: CWA Team
@@ -70,7 +70,7 @@ Tab. 1: EDUS - On how many mobile devices do you have the Corona-Warn-App instal
 <thead>
 <tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-On how many mobile devices do you have installed the Corona-Warn-App?
+On how many mobile devices do you have the Corona-Warn-App installed?
 </th>
 <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
 Freq.
@@ -145,7 +145,7 @@ More than 2 devices
 
 ### 2.2 Activation of exposure logging
 
-A further important issued related to the active use of the CWA is the permanent activation of exposure logging. Although exposure logging is crucial to the app’s core functionality, users are able to switch it on or off as required. When exposure logging is deactivated, the app can no longer detect the close proximity of other users’ phones. If exposure logging has not been activated within the past 14 days, the app will not be able to display any warnings at all. This core functionality of the Corona-Warn-App is always most important when users cannot be informed about the risk of a situation in any other way.
+A further important issue related to the active use of the CWA is the permanent activation of exposure logging. Although exposure logging is crucial to the app’s core functionality, users are able to switch it on or off as required. When exposure logging is deactivated, the app can no longer detect the close proximity of other users’ phones. If exposure logging has not been activated within the past 14 days, the app will not be able to display any warnings at all. This core functionality of the Corona-Warn-App is always most important when users cannot be informed about the risk of a situation in any other way.
 
 The data demonstrate that the vast majority of respondents used the app as intended and that exposure logging was activated at all times. Only a small number of respondents reported that they never activated exposure logging or did so for less than half of the day.
 
@@ -179,7 +179,7 @@ Percentage (valid)
 <tbody>
 <tr>
 <td style="text-align:left;">
-Yes, continuous
+Yes, continuously
 </td>
 <td style="text-align:right;">
 22.925
@@ -398,7 +398,7 @@ Because people in my peer group recently tested positive
 936
 </td>
 <td style="text-align:right;">
-14,6%
+14.6%
 </td>
 </tr>
 <tr>
@@ -409,7 +409,7 @@ Because people in my family have recently tested positive
 2.583
 </td>
 <td style="text-align:right;">
-40,2%
+40.2%
 </td>
 </tr>
 <tr>
@@ -420,7 +420,7 @@ Because people at work recently tested positive
 1.741
 </td>
 <td style="text-align:right;">
-27,1%
+27.1%
 </td>
 </tr>
 <tr>
@@ -431,7 +431,7 @@ Because people in my children's care environment recently tested positive
 95
 </td>
 <td style="text-align:right;">
-1,5%
+1.5%
 </td>
 </tr>
 <tr>
@@ -442,7 +442,7 @@ For other reasons
 1.307
 </td>
 <td style="text-align:right;">
-20,3%
+20.3%
 </td>
 </tr>
 <tr>
@@ -453,7 +453,7 @@ Don’t know
 93
 </td>
 <td style="text-align:right;">
-1,4%
+1.4%
 </td>
 </tr>
 </tbody>
@@ -488,44 +488,44 @@ The results demonstrate that the CWA helps inform users about exposure to infect
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">High</td>
-<td class="text-center">476 (1,9%)</td>
-<td class="text-center">817 (3,3%)</td>
-<td class="text-center">15 (&lt;0,1%)</td>
-<td class="text-center">1.308 (5,2%)</td></tr>
+<td class="text-center">476 (1.9%)</td>
+<td class="text-center">817 (3.3%)</td>
+<td class="text-center">15 (&lt;0.1%)</td>
+<td class="text-center">1.308 (5.2%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Rather high</td>
-<td class="text-center">788 (3,2%)</td>
-<td class="text-center">739 (3,0%)</td>
-<td class="text-center">34 (0,1%)</td>
-<td class="text-center">1.561 (6,3%)</td></tr>
+<td class="text-center">788 (3.2%)</td>
+<td class="text-center">739 (3.0%)</td>
+<td class="text-center">34 (0.1%)</td>
+<td class="text-center">1.561 (6.3%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Neutral</td>
 <td class="text-center">2.616 (10%)</td>
-<td class="text-center">1.246 (5,0%)</td>
-<td class="text-center">89 (0,4%)</td>
+<td class="text-center">1.246 (5.0%)</td>
+<td class="text-center">89 (0.4%)</td>
 <td class="text-center">3.951 (16%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Rather low</td>
 <td class="text-center">5.451 (22%)</td>
-<td class="text-center">1.642 (6,6%)</td>
-<td class="text-center">128 (0,5%)</td>
+<td class="text-center">1.642 (6.6%)</td>
+<td class="text-center">128 (0.5%)</td>
 <td class="text-center">7.221 (29%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low</td>
 <td class="text-center">8.441 (34%)</td>
-<td class="text-center">1.874 (7,5%)</td>
-<td class="text-center">144 (0,6%)</td>
+<td class="text-center">1.874 (7.5%)</td>
+<td class="text-center">144 (0.6%)</td>
 <td class="text-center">10.459 (42%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Don’t know</td>
-<td class="text-center">294 (1,2%)</td>
-<td class="text-center">106 (0,4%)</td>
-<td class="text-center">15 (&lt;0,1%)</td>
-<td class="text-center">415 (1,7%)</td></tr>
+<td class="text-center">294 (1.2%)</td>
+<td class="text-center">106 (0.4%)</td>
+<td class="text-center">15 (&lt;0.1%)</td>
+<td class="text-center">415 (1.7%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">- not specified -</td>
-<td class="text-center">3 (&lt;0,1%)</td>
-<td class="text-center">3 (&lt;0,1%)</td>
+<td class="text-center">3 (&lt;0.1%)</td>
+<td class="text-center">3 (&lt;0.1%)</td>
 <td class="text-center">0 (0%)</td>
-<td class="text-center">6 (&lt;0,1%)</td></tr>
+<td class="text-center">6 (&lt;0.1%)</td></tr>
     <tr><td class="gt_row gt_left" style="font-weight: bold;">Total</td>
 <td class="text-center">18.069 (73%)</td>
 <td class="text-center">6.427 (26%)</td>
-<td class="text-center">425 (1,7%)</td>
+<td class="text-center">425 (1.7%)</td>
 <td class="text-center">24.921 (100%)</td></tr>
   </tbody>
 
@@ -698,38 +698,38 @@ Participants who were surprised to receive a <q>red warning</q> either undertook
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test</td>
 <td class="text-center">2.660 (11%)</td>
-<td class="text-center">1.399 (5,6%)</td>
-<td class="text-center">55 (0,2%)</td>
+<td class="text-center">1.399 (5.6%)</td>
+<td class="text-center">55 (0.2%)</td>
 <td class="text-center">4.114 (17%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a rapid antigen test</td>
 <td class="text-center">5.537 (22%)</td>
-<td class="text-center">1.219 (4,9%)</td>
-<td class="text-center">108 (0,4%)</td>
+<td class="text-center">1.219 (4.9%)</td>
+<td class="text-center">108 (0.4%)</td>
 <td class="text-center">6.864 (28%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test and a rapid antigen test </td>
-<td class="text-center">1.402 (5,6%)</td>
-<td class="text-center">828 (3,3%)</td>
-<td class="text-center">31 (0,1%)</td>
-<td class="text-center">2.261 (9,1%)</td></tr>
+<td class="text-center">1.402 (5.6%)</td>
+<td class="text-center">828 (3.3%)</td>
+<td class="text-center">31 (0.1%)</td>
+<td class="text-center">2.261 (9.1%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, but I don’t know what kind of test</td>
-<td class="text-center">225 (0,9%)</td>
-<td class="text-center">38 (0,2%)</td>
-<td class="text-center">3 (&lt;0,1%)</td>
-<td class="text-center">266 (1,1%)</td></tr>
+<td class="text-center">225 (0.9%)</td>
+<td class="text-center">38 (0.2%)</td>
+<td class="text-center">3 (&lt;0.1%)</td>
+<td class="text-center">266 (1.1%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
-<td class="text-center">1.571 (6,3%)</td>
-<td class="text-center">426 (1,7%)</td>
-<td class="text-center">26 (0,1%)</td>
-<td class="text-center">2.023 (8,1%)</td></tr>
+<td class="text-center">1.571 (6.3%)</td>
+<td class="text-center">426 (1.7%)</td>
+<td class="text-center">26 (0.1%)</td>
+<td class="text-center">2.023 (8.1%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">- not specified -</td>
 <td class="text-center">6.674 (27%)</td>
 <td class="text-center">2.517 (10%)</td>
-<td class="text-center">202 (0,8%)</td>
+<td class="text-center">202 (0.8%)</td>
 <td class="text-center">9.393 (38%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">18.069 (73%)</td>
 <td class="text-center">6.427 (26%)</td>
-<td class="text-center">425 (1,7%)</td>
+<td class="text-center">425 (1.7%)</td>
 <td class="text-center">24.921 (100%)</td></tr>
   </tbody>
 
@@ -776,28 +776,28 @@ Most respondents who intended to contact a health-care provider planned to conta
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes</td>
 <td class="text-center">6.127 (25%)</td>
 <td class="text-center">2.908 (12%)</td>
-<td class="text-center">132 (0,5%)</td>
+<td class="text-center">132 (0.5%)</td>
 <td class="text-center">9.167 (37%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
 <td class="text-center">9.432 (38%)</td>
 <td class="text-center">3.072 (12%)</td>
-<td class="text-center">202 (0,8%)</td>
+<td class="text-center">202 (0.8%)</td>
 <td class="text-center">12.706 (51%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Don’t know</td>
 <td class="text-center">2.510 (10%)</td>
-<td class="text-center">447 (1,8%)</td>
-<td class="text-center">91 (0,4%)</td>
+<td class="text-center">447 (1.8%)</td>
+<td class="text-center">91 (0.4%)</td>
 <td class="text-center">3.048 (12%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">18.069 (73%)</td>
 <td class="text-center">6.427 (26%)</td>
-<td class="text-center">425 (1,7%)</td>
+<td class="text-center">425 (1.7%)</td>
 <td class="text-center">24.921 (100%)</td></tr>
   </tbody>
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 8:  EDUS - Relationship between level of surprise and contact projects to the health care system</figcaption>
+    <figcaption aria-hidden="true">Tab. 8:  EDUS - Relationship between level of surprise and contact intentions to the health care system</figcaption>
 </figure>
 
 <figure>
@@ -915,7 +915,7 @@ I will contact my family doctor
 5.058
 </td>
 <td style="text-align:right;">
-55,2%
+55.2%
 </td>
 </tr>
 <tr>
@@ -926,18 +926,18 @@ I will contact the responsible health department
 3.978
 </td>
 <td style="text-align:right;">
-43,4%
+43.4%
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-I call the central number 116 117
+I will call the central number 116 117
 </td>
 <td style="text-align:right;">
 2.284
 </td>
 <td style="text-align:right;">
-24,9%
+24.9%
 </td>
 </tr>
 <tr>
@@ -948,7 +948,7 @@ I'm going to a hospital
 194
 </td>
 <td style="text-align:right;">
-2,1%
+2.1%
 </td>
 </tr>
 <tr>
@@ -959,7 +959,7 @@ Don’t know
 502
 </td>
 <td style="text-align:right;">
-5,5%
+5.5%
 </td>
 </tr>
 </tbody>
@@ -999,35 +999,35 @@ It is not always possible to maintain social distancing and fully comply with hy
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Positive for SARS-CoV-2</td>
-<td class="text-center">191 (0,8%)</td>
-<td class="text-center">590 (2,4%)</td>
-<td class="text-center">10 (&lt;0,1%)</td>
-<td class="text-center">791 (3,2%)</td></tr>
+<td class="text-center">191 (0.8%)</td>
+<td class="text-center">590 (2.4%)</td>
+<td class="text-center">10 (&lt;0.1%)</td>
+<td class="text-center">791 (3.2%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Negative for SARS-CoV-2</td>
 <td class="text-center">9.562 (38%)</td>
 <td class="text-center">2.853 (11%)</td>
-<td class="text-center">185 (0,7%)</td>
+<td class="text-center">185 (0.7%)</td>
 <td class="text-center">12.600 (51%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Inconclusive</td>
-<td class="text-center">54 (0,2%)</td>
-<td class="text-center">36 (0,1%)</td>
-<td class="text-center">2 (&lt;0,1%)</td>
-<td class="text-center">92 (0,4%)</td></tr>
+<td class="text-center">54 (0.2%)</td>
+<td class="text-center">36 (0.1%)</td>
+<td class="text-center">2 (&lt;0.1%)</td>
+<td class="text-center">92 (0.4%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">- not specified -</td>
 <td class="text-center">8.262 (33%)</td>
 <td class="text-center">2.948 (12%)</td>
-<td class="text-center">228 (0,9%)</td>
+<td class="text-center">228 (0.9%)</td>
 <td class="text-center">11.438 (46%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">18.069 (73%)</td>
 <td class="text-center">6.427 (26%)</td>
-<td class="text-center">425 (1,7%)</td>
+<td class="text-center">425 (1.7%)</td>
 <td class="text-center">24.921 (100%)</td></tr>
   </tbody>
 
 
 </table>
-    <figcaption aria-hidden="true">Tab. 11: EDUS - Relationship between level surprise and infection</figcaption>
+    <figcaption aria-hidden="true">Tab. 11: EDUS - Relationship between level of surprise and infection</figcaption>
 </figure>
 
 <figure>
@@ -1310,36 +1310,36 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center"></td></tr>
     <tr><td class="text-left" style="text-align: left; text-indent: 10px;">PCR test</td>
 <td class="text-center">2.243 (73%)</td>
-<td class="text-center">209 (6,8%)</td>
+<td class="text-center">209 (6.8%)</td>
 <td class="text-center">505 (16%)</td>
-<td class="text-center">36 (1,2%)</td>
-<td class="text-center">90 (2,9%)</td>
+<td class="text-center">36 (1.2%)</td>
+<td class="text-center">90 (2.9%)</td>
 <td class="text-center">3.083 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Rapid antigen test</td>
-<td class="text-center">284 (5,8%)</td>
+<td class="text-center">284 (5.8%)</td>
 <td class="text-center">3.980 (81%)</td>
-<td class="text-center">302 (6,1%)</td>
-<td class="text-center">63 (1,3%)</td>
-<td class="text-center">300 (6,1%)</td>
+<td class="text-center">302 (6.1%)</td>
+<td class="text-center">63 (1.3%)</td>
+<td class="text-center">300 (6.1%)</td>
 <td class="text-center">4.929 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">PCR test and rapid antigen test</td>
 <td class="text-center">499 (26%)</td>
 <td class="text-center">379 (20%)</td>
 <td class="text-center">971 (51%)</td>
-<td class="text-center">17 (0,9%)</td>
-<td class="text-center">39 (2,0%)</td>
+<td class="text-center">17 (0.9%)</td>
+<td class="text-center">39 (2.0%)</td>
 <td class="text-center">1.905 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">That depends on medical advice or the advice of another health service</td>
 <td class="text-center">236 (33%)</td>
 <td class="text-center">315 (44%)</td>
 <td class="text-center">91 (13%)</td>
-<td class="text-center">34 (4,7%)</td>
-<td class="text-center">42 (5,8%)</td>
+<td class="text-center">34 (4.7%)</td>
+<td class="text-center">42 (5.8%)</td>
 <td class="text-center">718 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Don’t know</td>
 <td class="text-center">26 (24%)</td>
 <td class="text-center">42 (39%)</td>
-<td class="text-center">6 (5,5%)</td>
+<td class="text-center">6 (5.5%)</td>
 <td class="text-center">14 (13%)</td>
 <td class="text-center">21 (19%)</td>
 <td class="text-center">109 (100%)</td></tr>
@@ -1347,8 +1347,8 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center">3.288 (31%)</td>
 <td class="text-center">4.925 (46%)</td>
 <td class="text-center">1.875 (17%)</td>
-<td class="text-center">164 (1,5%)</td>
-<td class="text-center">492 (4,6%)</td>
+<td class="text-center">164 (1.5%)</td>
+<td class="text-center">492 (4.6%)</td>
 <td class="text-center">10.744 (100%)</td></tr>
   </tbody>
 
@@ -1395,7 +1395,7 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center">52 (57%)</td>
 <td class="text-center">4.102 (30%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a  rapid antigen test</td>
-<td class="text-center">19 (2,4%)</td>
+<td class="text-center">19 (2.4%)</td>
 <td class="text-center">6.832 (54%)</td>
 <td class="text-center">14 (15%)</td>
 <td class="text-center">6.865 (51%)</td></tr>
@@ -1405,15 +1405,15 @@ The data demonstrate that the respondents generally implemented their stated tes
 <td class="text-center">22 (24%)</td>
 <td class="text-center">2.259 (17%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, but I don’t know, what kind of test</td>
-<td class="text-center">4 (0,5%)</td>
-<td class="text-center">255 (2,0%)</td>
-<td class="text-center">4 (4,3%)</td>
-<td class="text-center">263 (1,9%)</td></tr>
+<td class="text-center">4 (0.5%)</td>
+<td class="text-center">255 (2.0%)</td>
+<td class="text-center">4 (4.3%)</td>
+<td class="text-center">263 (1.9%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
 <td class="text-center">0 (0%)</td>
-<td class="text-center">2 (&lt;0,1%)</td>
+<td class="text-center">2 (&lt;0.1%)</td>
 <td class="text-center">0 (0%)</td>
-<td class="text-center">2 (&lt;0,1%)</td></tr>
+<td class="text-center">2 (&lt;0.1%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">792 (100%)</td>
 <td class="text-center">12.607 (100%)</td>
@@ -1629,7 +1629,7 @@ On average, users underwent testing 2.5 days after receiving a <q>red warning</q
 
 <div class="figure">
 <div id="htmlwidget-1b28c7ec57ae2a9dc520" style="width:600px;height:450px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b28c7ec57ae2a9dc520">{"x":{"visdat":{"29675474a2f":["function () ","plotlyVisDat"]},"cur_data":"29675474a2f","attrs":{"29675474a2f":{"x":{},"name":"#","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Delay between warning and test","autotick":true},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":false},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"name":"#","y":[1852,4883,1884,1245,842,1129,439,482,185,92,170,43,46,11,39,4,2,4,1,1,1,2],"type":"bar","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1b28c7ec57ae2a9dc520">{"x":{"visdat":{"29675474a2f":["function () ","plotlyVisDat"]},"cur_data":"29675474a2f","attrs":{"29675474a2f":{"x":{},"name":"#","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Delay between warning and test (days)","autotick":true},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":false},"source":"A","config":{"showSendToCloud":false,"locale":"de"},"data":[{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"name":"#","y":[1852,4883,1884,1245,842,1129,439,482,185,92,170,43,46,11,39,4,2,4,1,1,1,2],"type":"bar","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p class="caption">Fig. 12: EDUS - Delay between <q>red warning</q> and test</p>
 </div>
 <details>
@@ -2040,32 +2040,32 @@ During the main survey period (March to May 2021), only PCR tests could be regis
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test</td>
 <td class="text-center">1.905 (46%)</td>
-<td class="text-center">390 (9,5%)</td>
+<td class="text-center">390 (9.5%)</td>
 <td class="text-center">1.822 (44%)</td>
 <td class="text-center">4.117 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a  rapid antigen test</td>
-<td class="text-center">222 (3,2%)</td>
-<td class="text-center">91 (1,3%)</td>
+<td class="text-center">222 (3.2%)</td>
+<td class="text-center">91 (1.3%)</td>
 <td class="text-center">6.549 (95%)</td>
 <td class="text-center">6.862 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, a PCR test and a rapid antigen test</td>
 <td class="text-center">870 (38%)</td>
-<td class="text-center">218 (9,6%)</td>
+<td class="text-center">218 (9.6%)</td>
 <td class="text-center">1.174 (52%)</td>
 <td class="text-center">2.262 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, but I don’t know what kind of test</td>
-<td class="text-center">25 (9,4%)</td>
-<td class="text-center">11 (4,1%)</td>
+<td class="text-center">25 (9.4%)</td>
+<td class="text-center">11 (4.1%)</td>
 <td class="text-center">230 (86%)</td>
 <td class="text-center">266 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
-<td class="text-center">1 (9,1%)</td>
+<td class="text-center">1 (9.1%)</td>
 <td class="text-center">0 (0%)</td>
 <td class="text-center">10 (91%)</td>
 <td class="text-center">11 (100%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">3.023 (22%)</td>
-<td class="text-center">710 (5,3%)</td>
+<td class="text-center">710 (5.3%)</td>
 <td class="text-center">9.785 (72%)</td>
 <td class="text-center">13.518 (100%)</td></tr>
   </tbody>
@@ -2381,11 +2381,11 @@ Respondents who had registered the test in the Corona-Warn-App were more often w
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes</td>
 <td class="text-center">314 (40%)</td>
-<td class="text-center">12 (1,5%)</td>
+<td class="text-center">12 (1.5%)</td>
 <td class="text-center">326 (41%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Yes, but only after I had already received the result from another source</td>
 <td class="text-center">148 (19%)</td>
-<td class="text-center">14 (1,8%)</td>
+<td class="text-center">14 (1.8%)</td>
 <td class="text-center">162 (20%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No</td>
 <td class="text-center">177 (22%)</td>
@@ -2460,57 +2460,57 @@ Relationship between information on symptoms in the basic survey and test result
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Elevated temperature or fever</td>
 <td class="text-center">183 (63%)</td>
 <td class="text-center">102 (35%)</td>
-<td class="text-center">7 (2,4%)</td>
+<td class="text-center">7 (2.4%)</td>
 <td class="text-center">292 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Shortness of breath</td>
 <td class="text-center">124 (40%)</td>
 <td class="text-center">179 (58%)</td>
-<td class="text-center">5 (1,6%)</td>
+<td class="text-center">5 (1.6%)</td>
 <td class="text-center">308 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Loss of smell / taste</td>
 <td class="text-center">144 (80%)</td>
 <td class="text-center">35 (19%)</td>
-<td class="text-center">1 (0,6%)</td>
+<td class="text-center">1 (0.6%)</td>
 <td class="text-center">180 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cough</td>
 <td class="text-center">320 (43%)</td>
 <td class="text-center">406 (55%)</td>
-<td class="text-center">12 (1,6%)</td>
+<td class="text-center">12 (1.6%)</td>
 <td class="text-center">738 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cold</td>
 <td class="text-center">293 (27%)</td>
 <td class="text-center">768 (71%)</td>
-<td class="text-center">16 (1,5%)</td>
+<td class="text-center">16 (1.5%)</td>
 <td class="text-center">1.077 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sore throat</td>
 <td class="text-center">234 (25%)</td>
 <td class="text-center">695 (74%)</td>
-<td class="text-center">10 (1,1%)</td>
+<td class="text-center">10 (1.1%)</td>
 <td class="text-center">939 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Headache and limb pain</td>
 <td class="text-center">344 (33%)</td>
 <td class="text-center">701 (66%)</td>
-<td class="text-center">11 (1,0%)</td>
+<td class="text-center">11 (1.0%)</td>
 <td class="text-center">1.056 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">General weakness and fatigue</td>
 <td class="text-center">329 (31%)</td>
 <td class="text-center">737 (68%)</td>
-<td class="text-center">11 (1,0%)</td>
+<td class="text-center">11 (1.0%)</td>
 <td class="text-center">1.077 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Diarrhea</td>
 <td class="text-center">86 (20%)</td>
 <td class="text-center">328 (78%)</td>
-<td class="text-center">7 (1,7%)</td>
+<td class="text-center">7 (1.7%)</td>
 <td class="text-center">421 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No, none of the symptoms mentioned</td>
-<td class="text-center">277 (2,6%)</td>
+<td class="text-center">277 (2.6%)</td>
 <td class="text-center">10.500 (97%)</td>
-<td class="text-center">62 (0,6%)</td>
+<td class="text-center">62 (0.6%)</td>
 <td class="text-center">10.839 (100%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">2.334 (14%)</td>
 <td class="text-center">14.451 (85%)</td>
-<td class="text-center">142 (0,8%)</td>
+<td class="text-center">142 (0.8%)</td>
 <td class="text-center">16.927 (100%)</td></tr>
   </tbody>
 
@@ -2563,57 +2563,57 @@ Relationship between information on symptoms in the follow-up survey and test re
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Elevated temperature or fever</td>
 <td class="text-center">249 (72%)</td>
 <td class="text-center">89 (26%)</td>
-<td class="text-center">8 (2,3%)</td>
+<td class="text-center">8 (2.3%)</td>
 <td class="text-center">346 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Shortness of breath</td>
 <td class="text-center">199 (65%)</td>
 <td class="text-center">101 (33%)</td>
-<td class="text-center">5 (1,6%)</td>
+<td class="text-center">5 (1.6%)</td>
 <td class="text-center">305 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Loss of smell / taste</td>
 <td class="text-center">276 (91%)</td>
-<td class="text-center">21 (7,0%)</td>
-<td class="text-center">5 (1,7%)</td>
+<td class="text-center">21 (7.0%)</td>
+<td class="text-center">5 (1.7%)</td>
 <td class="text-center">302 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cough</td>
 <td class="text-center">404 (60%)</td>
 <td class="text-center">257 (38%)</td>
-<td class="text-center">13 (1,9%)</td>
+<td class="text-center">13 (1.9%)</td>
 <td class="text-center">674 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cold</td>
 <td class="text-center">384 (42%)</td>
 <td class="text-center">503 (56%)</td>
-<td class="text-center">17 (1,9%)</td>
+<td class="text-center">17 (1.9%)</td>
 <td class="text-center">904 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sore throat</td>
 <td class="text-center">259 (34%)</td>
 <td class="text-center">499 (65%)</td>
-<td class="text-center">12 (1,6%)</td>
+<td class="text-center">12 (1.6%)</td>
 <td class="text-center">770 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Headache and limb pain</td>
 <td class="text-center">421 (50%)</td>
 <td class="text-center">401 (48%)</td>
-<td class="text-center">20 (2,4%)</td>
+<td class="text-center">20 (2.4%)</td>
 <td class="text-center">842 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">General weakness and fatigue</td>
 <td class="text-center">456 (52%)</td>
 <td class="text-center">406 (46%)</td>
-<td class="text-center">15 (1,7%)</td>
+<td class="text-center">15 (1.7%)</td>
 <td class="text-center">877 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Diarrhea</td>
 <td class="text-center">138 (42%)</td>
 <td class="text-center">184 (56%)</td>
-<td class="text-center">6 (1,8%)</td>
+<td class="text-center">6 (1.8%)</td>
 <td class="text-center">328 (100%)</td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">No, none of the symptoms mentioned</td>
-<td class="text-center">155 (1,3%)</td>
+<td class="text-center">155 (1.3%)</td>
 <td class="text-center">11.297 (98%)</td>
-<td class="text-center">59 (0,5%)</td>
+<td class="text-center">59 (0.5%)</td>
 <td class="text-center">11.511 (100%)</td></tr>
     <tr><td class="text-left" style="font-weight: bold;">Total</td>
 <td class="text-center">2.941 (17%)</td>
 <td class="text-center">13.758 (82%)</td>
-<td class="text-center">160 (0,9%)</td>
+<td class="text-center">160 (0.9%)</td>
 <td class="text-center">16.859 (100%)</td></tr>
   </tbody>
 
@@ -2664,7 +2664,7 @@ Elevated temperature or fever
 577
 </td>
 <td style="text-align:right;">
-2,3%
+2.3%
 </td>
 </tr>
 <tr>
@@ -2675,7 +2675,7 @@ Shortness of breath
 671
 </td>
 <td style="text-align:right;">
-2,7%
+2.7%
 </td>
 </tr>
 <tr>
@@ -2686,7 +2686,7 @@ Loss of smell / taste
 382
 </td>
 <td style="text-align:right;">
-1,5%
+1.5%
 </td>
 </tr>
 <tr>
@@ -2697,7 +2697,7 @@ Cough
 1.470
 </td>
 <td style="text-align:right;">
-5,9%
+5.9%
 </td>
 </tr>
 <tr>
@@ -2708,7 +2708,7 @@ Cold
 2.062
 </td>
 <td style="text-align:right;">
-8,3%
+8.3%
 </td>
 </tr>
 <tr>
@@ -2719,7 +2719,7 @@ Sore throat
 1.665
 </td>
 <td style="text-align:right;">
-6,7%
+6.7%
 </td>
 </tr>
 <tr>
@@ -2730,7 +2730,7 @@ Headache and limb pain
 1.980
 </td>
 <td style="text-align:right;">
-7,9%
+7.9%
 </td>
 </tr>
 <tr>
@@ -2741,7 +2741,7 @@ General weakness and fatigue
 2.019
 </td>
 <td style="text-align:right;">
-8,1%
+8.1%
 </td>
 </tr>
 <tr>
@@ -2752,7 +2752,7 @@ Diarrhea
 827
 </td>
 <td style="text-align:right;">
-3,3%
+3.3%
 </td>
 </tr>
 <tr>
@@ -2763,7 +2763,7 @@ No, none of the symptoms mentioned
 20.035
 </td>
 <td style="text-align:right;">
-80,4%
+80.4%
 </td>
 </tr>
 </tbody>
@@ -2794,7 +2794,7 @@ Elevated temperature or fever
 362
 </td>
 <td style="text-align:right;">
-2,3%
+2.3%
 </td>
 </tr>
 <tr>
@@ -2805,7 +2805,7 @@ Shortness of breath
 321
 </td>
 <td style="text-align:right;">
-2,1%
+2.1%
 </td>
 </tr>
 <tr>
@@ -2816,7 +2816,7 @@ Loss of smell / taste
 306
 </td>
 <td style="text-align:right;">
-2,0%
+2.0%
 </td>
 </tr>
 <tr>
@@ -2827,7 +2827,7 @@ Cough
 714
 </td>
 <td style="text-align:right;">
-4,6%
+4.6%
 </td>
 </tr>
 <tr>
@@ -2838,7 +2838,7 @@ Cold
 975
 </td>
 <td style="text-align:right;">
-6,3%
+6.3%
 </td>
 </tr>
 <tr>
@@ -2849,7 +2849,7 @@ Sore throat
 819
 </td>
 <td style="text-align:right;">
-5,3%
+5.3%
 </td>
 </tr>
 <tr>
@@ -2860,7 +2860,7 @@ Headache and limb pain
 891
 </td>
 <td style="text-align:right;">
-5,7%
+5.7%
 </td>
 </tr>
 <tr>
@@ -2871,7 +2871,7 @@ General weakness and fatigue
 941
 </td>
 <td style="text-align:right;">
-6,1%
+6.1%
 </td>
 </tr>
 <tr>
@@ -2882,7 +2882,7 @@ Diarrhea
 352
 </td>
 <td style="text-align:right;">
-2,3%
+2.3%
 </td>
 </tr>
 <tr>
@@ -2893,7 +2893,7 @@ No, none of the symptoms mentioned
 13.404
 </td>
 <td style="text-align:right;">
-86,3%
+86.3%
 </td>
 </tr>
 </tbody>
