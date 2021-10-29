@@ -43,7 +43,7 @@ context("Check for broken anchor links", () => {
   it('Check if txt results exist',() => {
     cy.writeFile("cypress/integration/broken_anchor_links_result.txt", "==================== Broken anchor links ====================\n")
   })
-  /*pages.forEach(page => {
+  pages.forEach(page => {
     it(`"${page}" - Check for broken anchor links`, () => {
       cy.visit({log: false, url: page} )
       cy.get("a[href*='#']").each(url => {
@@ -63,7 +63,7 @@ context("Check for broken anchor links", () => {
         }         
       })
     })
-  }) */
+  }) 
 })
 
 context("Check for broken anchor links on entries", () => {
