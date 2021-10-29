@@ -317,7 +317,7 @@ function server(done) {
 
         let CSP = "default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
         if(req.url.indexOf("/science") != -1){
-          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data: blob: data:";
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
         }else if(req.url.indexOf("/analysis") != -1){
           CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:; connect-src 'self' https://obs.eu-de.otc.t-systems.com/";
         }
