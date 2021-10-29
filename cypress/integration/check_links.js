@@ -30,7 +30,7 @@ context("Check for broken links", () => {
                 ]
 
   it('Check if txt results exist',() => {
-    cy.writeFile("cypress/integration/broken_links_result.txt", "==================== Broken links ====================\n")
+    cy.writeFile("cypress/logs/broken_links_result.txt", "==================== Broken links ====================\n")
   })
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
@@ -44,9 +44,9 @@ context("Check for broken links", () => {
           }).then((response) => {
             softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
             if(response.status != 200 && response.status != 429) {
-              cy.readFile("cypress/integration/broken_links_result.txt")
+              cy.readFile("cypress/logs/broken_links_result.txt")
               .then((text) => {
-                cy.writeFile("cypress/integration/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
+                cy.writeFile("cypress/logs/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
               })
             }
           })
@@ -76,9 +76,9 @@ context("Check for broken links on entries", () => {
               }).then((response) => {
                 softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
                 if(response.status != 200 && response.status != 429) {
-                  cy.readFile("cypress/integration/broken_links_result.txt")
+                  cy.readFile("cypress/logs/broken_links_result.txt")
                   .then((text) => {
-                    cy.writeFile("cypress/integration/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
+                    cy.writeFile("cypress/logs/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
                   })
                 }
               })

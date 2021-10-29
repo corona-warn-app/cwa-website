@@ -41,7 +41,7 @@ context("Check for broken anchor links", () => {
                 ]
 
   it('Check if txt results exist',() => {
-    cy.writeFile("cypress/integration/broken_anchor_links_result.txt", "==================== Broken anchor links ====================\n")
+    cy.writeFile("cypress/logs/broken_anchor_links_result.txt", "==================== Broken anchor links ====================\n")
   })
   pages.forEach(page => {
     it(`"${page}" - Check for broken anchor links`, () => {
@@ -54,9 +54,9 @@ context("Check for broken anchor links", () => {
               softExpect(true, "Link: " + url.prop('href')).to.eq(true)
             } else {
               softExpect(false, "Link: " + url.prop('href')).to.eq(true)
-              cy.readFile("cypress/integration/broken_anchor_links_result.txt")
+              cy.readFile("cypress/logs/broken_anchor_links_result.txt")
               .then((text) => {
-                cy.writeFile("cypress/integration/broken_anchor_links_result.txt", `${text}\n${url.prop('href')} on '${page}' `, {flags: 'as+'})
+                cy.writeFile("cypress/logs/broken_anchor_links_result.txt", `${text}\n${url.prop('href')} on '${page}' `, {flags: 'as+'})
               })
             }
           })
@@ -82,9 +82,9 @@ context("Check for broken anchor links on entries", () => {
                   softExpect(true, "Link: " + parseUmlaut(link.prop('href'))).to.eq(true)
                 } else {
                   softExpect(false, "Link: " + parseUmlaut(link.prop('href'))).to.eq(true)
-                  cy.readFile("cypress/integration/broken_anchor_links_result.txt")
+                  cy.readFile("cypress/logs/broken_anchor_links_result.txt")
                   .then((text) => {
-                    cy.writeFile("cypress/integration/broken_anchor_links_result.txt", `${text}\n${parseUmlaut(link.prop('href'))} on '${url.prop('href')}' `, {flags: 'as+'})
+                    cy.writeFile("cypress/logs/broken_anchor_links_result.txt", `${text}\n${parseUmlaut(link.prop('href'))} on '${url.prop('href')}' `, {flags: 'as+'})
                   })
                 }
               })
