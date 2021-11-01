@@ -315,14 +315,14 @@ Mit zunehmender Bevölkerungsdichte steigt die „Inzidenz” der Spendenden (An
 
 Außerdem ergibt sich aus den Daten, dass es in den westlichen Landkreisen im Schnitt 5.154 Teilnehmende (pro 100.000 Einwohner) und in den östlichen Landkreisen 3.331 gab.
 
-Insgesamt liegt der Schnitt bei 4.388 und unter Berücksichtigung der Quote derjenigen, die ihren Landkreis angegeben haben, hochgerechnet bei 13.312. Später werden wir sehen, dass etwa die Hälfte aller CWA-Nutzenden ihre Daten spenden, sodass wir auf einen Anteil von etwa 27% der Bevölkerung kommen, die die CWA aktiv nutzt.
+Insgesamt liegt der Schnitt bei 4.388 und unter Berücksichtigung der Quote derjenigen, die ihren Landkreis angegeben haben, hochgerechnet bei 13.312. [Später](#66-schätzung-des-anteils-der-datenspendenden) werden wir sehen, dass etwa die Hälfte aller CWA-Nutzenden ihre Daten spenden, sodass wir auf einen Anteil von etwa 27% der Bevölkerung kommen, die die CWA aktiv nutzt.
 
 ## 5 Erhalt einer Warnung
 ### 5.1 Warnungen und gewarnte Personen
 
 In Abb. 7 ist der zeitliche Verlauf der über die CWA Warnenden und Gewarnten angegeben. Während die Anzahl der Warnenden aus dem CWA-Ökosystem bekannt ist, kann für die Anzahl der Gewarnten nur auf die CWA-Datenspende als Datenquelle zurückgegriffen werden. Hier wurden seit dem 5. März 2021 bereits 619.189 rote Warnungen und 1.518.663 grüne Warnungen übermittelt.
 
-In diesem Zeitraum haben 273.953 Personen über die CWA andere gewarnt, womit wir auf etwa 5 (rot) gewarnte Personen pro warnender Person schließen können. Für Warnungen ohne ein erhöhtes Risiko ergibt sich ein mittlerer Wert von 11 (grün) gewarnten Personen pro warnender Person.
+In diesem Zeitraum haben 273.953 Personen über die CWA andere gewarnt, womit wir unter Berücksichtigung des [geschätzten Anteils der Datenspendenden](#66-schätzung-des-anteils-der-datenspendenden) auf etwa 5 (rot) gewarnte Personen pro warnender Person schließen können. Für Warnungen ohne ein erhöhtes Risiko ergibt sich ein mittlerer Wert von 11 (grün) gewarnten Personen pro warnender Person.
 
 <div class="figure">
 <div id="htmlwidget-1d3e85f3dab2978c7de0" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -348,7 +348,7 @@ In Abb. 8 ist der zeitliche Verlauf von rot und grün gewarnten Personen angegeb
 
 Insgesamt wurden über die CWA-Datenspende bisher 9.075 gewarnte Personen durch ein Check-in registriert. Davon hatten 4.505 ein erhöhtes Risiko (rote Warnung) und 4.570 ein niedriges Risiko (grüne Warnung).
 
-Im selben Zeitraum gab es 398 geteilte Check-in-Ereignisse, womit wir auf etwa 46,5 (hiervon 23,1 rot und 23,4 grün) gewarnte Personen pro Event schließen können. Aufgrund der fehlenden Berücksichtigung der CWA in den Corona-Schutzverordnungen, darf die CWA in vielen Bereichen nicht offiziell zum Check-in genutzt werden. Bisher hat lediglich das Bundesland Sachsen die CWA als Check-in-Tool in den Corona-Schutzverordnungen verankert.
+Im selben Zeitraum gab es 398 geteilte Check-in-Ereignisse, womit wir unter Berücksichtigung des [geschätzten Anteils der Datenspendenden](#66-schätzung-des-anteils-der-datenspendenden) auf etwa 46,5 (hiervon 23,1 rot und 23,4 grün) gewarnte Personen pro Event schließen können. Aufgrund der fehlenden Berücksichtigung der CWA in den Corona-Schutzverordnungen, darf die CWA in vielen Bereichen nicht offiziell zum Check-in genutzt werden. Bisher hat lediglich das Bundesland Sachsen die CWA als Check-in-Tool in den Corona-Schutzverordnungen verankert.
 
 <div class="figure">
 <div id="htmlwidget-34e1a6afe05ba2596ceb" style="width:800px;height:600px;" class="plotly html-widget"></div>

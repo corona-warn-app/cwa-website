@@ -1,5 +1,6 @@
 const { softAssert, softExpect } = chai;
 
+
 context("Check for broken links", () => {
   const pages = [ '/de',
                   '/en',
@@ -28,18 +29,26 @@ context("Check for broken links", () => {
                   '/en/science/'
                 ]
 
-
+  it('Check if txt results exist',() => {
+    cy.writeFile("cypress/logs/broken_links_result.txt", "==================== Broken links ====================\n")
+  })
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
-      cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(url => {
+      cy.get("a:not([href*='mailto:'],[href*='tel:'],[href*='#'])").not('.email').each(url => {
         if (url.prop('href') ) {         
           cy.request({
             failOnStatusCode: false, 
             log: false,
             url: url.prop('href')
           }).then((response) => {
-            softExpect(response.status, "Link: " + url.prop('href')).to.eq(200)
+            softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
+            if(response.status != 200 && response.status != 429) {
+              cy.readFile("cypress/logs/broken_links_result.txt")
+              .then((text) => {
+                cy.writeFile("cypress/logs/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
+              })
+            }
           })
         }         
       })
@@ -55,7 +64,7 @@ context("Check for broken links on entries", () => {
   subpages.forEach(sub => {
     it(`"${sub}" entries - Check for broken links`, () => {
       cy.visit({log: false, url: sub} )
-      cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(url => {
+      cy.get("a:not([href*='mailto:'],[href*='tel:'],[href*='#'])").not('.email').each(url => {
         if(url.prop('href').includes('localhost') && url.prop('href').includes(sub) && !pagesToAvoid.includes(url.prop('href').replace('http://localhost:8000', ''))) {
           cy.visit({log: false, url: url.prop('href')} )
           cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(entry => {
@@ -65,7 +74,13 @@ context("Check for broken links on entries", () => {
                 log: false,
                 url: entry.prop('href')
               }).then((response) => {
-                softExpect(response.status, "Link: " + entry.prop('href')).to.eq(200)
+                softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
+                if(response.status != 200 && response.status != 429) {
+                  cy.readFile("cypress/logs/broken_links_result.txt")
+                  .then((text) => {
+                    cy.writeFile("cypress/logs/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
+                  })
+                }
               })
             }
           })
