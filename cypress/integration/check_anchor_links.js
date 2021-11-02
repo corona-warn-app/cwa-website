@@ -76,7 +76,7 @@ context("Check for broken anchor links on entries", () => {
         if (url.prop('href') && url.prop('href').includes("localhost") && url.prop('href').split("#")[1] !== "top" && url.prop('href').includes(sub) && !pagesToAvoid.includes(url.prop('href').replace('http://localhost:8000', '')))  {  
           cy.visit({log: false, url: url.prop('href')} )
           cy.get("a[href*='#']").each(link => {
-            if(link.prop('href').includes(url.prop('href'))) {
+            if(link.prop('href').includes(url.prop('href')) && link.prop('href').split('#')[1] !== 'top' && link.prop('href').split('#')[1] !== ''){
               cy.get("body").then($body => {
                 if ($body.find(parseUmlaut(`#${link.prop('href').split("#")[1]}`)).length > 0) {   
                   softExpect(true, "Link: " + parseUmlaut(link.prop('href'))).to.eq(true)
