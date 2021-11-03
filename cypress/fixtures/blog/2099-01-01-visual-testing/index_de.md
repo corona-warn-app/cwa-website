@@ -12,14 +12,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <img src="./corona-1.png" title="Rendering of a corona virus">
 
-## Text & Bullettpoints
+## Text & Bullet Points
 
 
-Lorem ipsum **bold**, or with [a github link](https://github.com/corona-warn-app). also *em* wrapped.
+Lorem ipsum **bold**, or with [a GitHub link](https://github.com/corona-warn-app), also *em* wrapped.
 It can be _italic_, or __whatever__.
 
-- diam nonumy eirmod [link to Google](#)
-- sit amet diam nonumy eirmod
+- diam nonumy eirmod [Go to top of page](#)
+- sit amet diam nonumy eirmod [Go to Headers](#headers)
 - lorem ipsum dolor sit amet diam nonumy eirmod
 
 ## Headers
