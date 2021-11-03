@@ -318,7 +318,7 @@
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_booster_info' target='_self' rel='noopener noreferrer'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self' rel='noopener noreferrer'>How do I manage booster vaccination certificates in my CWA?</a></li>",
+                            "<li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a>",
                             "</ul>"
                         ]
                     },
@@ -401,6 +401,18 @@
                             "Since version 2.10, users receive a notification to consider a booster vaccination if necessary. The notification is based on national rules that have been implemented in collaboration and alignment with the Robert Koch Institute (RKI). These rules are continuously reviewed and adapted according to developments and new findings. (see blog article: <a href='../blog/2021-09-22-cwa-version-2-10/' target='_blank' rel='noopener noreferrer'>Blog article Corona-Warn-App version 2.10</a>)",
                             "Please note: The booster vaccination certificate is only valid if you can also prove the required basic immunization by the corresponding last certificate of the vaccination series. Please do not delete the other vaccination certificates from the CWA! Since no uniform EU-standards have yet been defined on this topic, you should also carry the basic immunization certificates with you, especially when traveling abroad, whether in the CWA, as a PDF, or as a paper printout. We therefore recommend keeping all vaccination certificates in the app, even if they are no longer up to date.",
                             "<a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>To the index of the booster vaccination</a>"
+                        ]
+                    },
+                    {
+                        "title": "Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?",
+                        "anchor": "vac_booster_notification",
+                        "active": true,
+                        "textblock": [
+                            "Your app regularly checks the certificates stored in the app (including the certificates stored there for other people) in order to be able to pass on individually compiled recommendations to you (or the other people concerned). This check is performed directly in your app, so that no data leaves the smartphone in the process. The rules used and the possible recommendation texts are downloaded from the rule server beforehand together with the current updates of the app, so that no individual information about you or your certificates (or about other persons and their certificates) is revealed.",
+                            "If the rules established in accordance with the respective current recommendations of the Standing Committee on Vaccination at the Robert Koch Institute (STIKO) apply to your certificates stored in the app, the app will notify you of the corresponding vaccination recommendation. Please then discuss with your doctor(s) whether you should receive another vaccine dose of a COVID-19 vaccine.",
+                            "If the assumptions derived from your saved certificates do not apply because you have already received further COVID-19 vaccinations or have undergone a proven SARS-CoV-2 infection, you can ignore this notification. In this case, we recommend scanning the relevant vaccination or recovery certificates into the app.",
+                            "Please also bear in mind that there are other STIKO vaccination recommendations, e.g. for people with certain pre-existing conditions or occupations, which cannot be determined from the certificates, which is why such recommendations cannot be referred to in the app.",
+                            "For more information on the STIKO vaccination recommendations and all about COVID-19 and vaccination, see <a href='https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html' target='_blank' rel='noopener noreferrer'>RKI - Impfungen A - Z - COVID-19 und Impfen (German)</a>."
                         ]
                     },
                     {
