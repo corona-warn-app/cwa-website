@@ -224,6 +224,17 @@
                             "Eine reine Sichtprüfung der Zertifikate reicht nicht aus, da beispielsweise manipulierte Screenshots, Apps oder Systemeinstellungen (z.&nbsp;B. geändertes Datum) verwendet werden könnten. Die CovPassCheck-App ist eine sichere Lösung für z.&nbsp;B. Gewerbetreibende und Behörden, mit der digitale COVID-Zertifikate der EU zuverlässig geprüft werden können. Weitere Informationen und Download-Links zur CovPassCheck-App finden Sie hier: <a href='https://www.digitaler-impfnachweis-app.de/covpasscheck-app/' target='_blank' rel='noopener noreferrer'>COVID-Zertifikate der EU direkt per App prüfen</a>.",
                             "Sie selbst können Zertifikate direkt in der Corona-Warn-App auf ihre Gültigkeit prüfen und benötigen dazu nicht die CovPassCheck-App. Weitere Informationen dazu finden Sie in dem Blog <a href='../blog/2021-07-28-cwa-version-2-6/' target='_blank' rel='noopener noreferrer'>Nutzer*innen können lokale 7-Tage-Inzidenzen hinzufügen und Zertifikate vor einer Reise auf Gültigkeit prüfen</a> und in dem FAQ Artikel <a href='#cert_eu_travel' target='_blank' rel='noopener noreferrer'>Ist mein Zertifikat in dem Land gültig, in das ich reise?</a>"
                         ]
+                    },
+                    {
+                        "title": "Wie funktioniert der Papierkorb in der Corona-Warn-App?",
+                        "anchor": "cert_recycle_bin",
+                        "active": true,
+                        "textblock": [
+                            "Ab Version 2.13 werden Impf-, Genesenen- oder Testzertifikate, die Sie gelöscht haben, vorläufig in einen Papierkorb verschoben. Dies ermöglicht Ihnen im Fall eines versehentlichen Entfernens das Zertifikat mit Leichtigkeit wiederherzustellen und es an seinen ursprünglichen Ort zurück zu verschieben. Sollte ein Zertifikat 30 Tage im Papierkorb verweilen wird es automatisch endgültig gelöscht, sofern man es vorher nicht manuell im Papierkorb endgültig gelöscht hat. Ein Zertifikat, welches in der App gelöscht worden ist, lässt sich trotzdem neu einscannen. Sollte es sich noch im Papierkorb befinden und daher nicht endgültig entfernt worden sein erhält man einen Hinweis, dass es wiederhergestellt wurde.",
+                            "<b>iOS:</b><ul><li>Wischen Sie unter Status (vor Version 2.12 'Startseite') nach unten und wählen Sie unter 'Mehr' den 'Papierkorb' aus.</li><li>Sollten sich Zertifikate in Ihrem Papierkorb befinden, können Sie ein Zertifikat antippen, um es wiederherzustellen.</li><li>Um ein Zertifikat endgültig aus dem Papierkorb zu entfernen tippen Sie zunächst oben rechts auf 'Bearbeiten'. Anschließend haben Sie die Möglichkeit entweder auf das rote Minuszeichen neben dem jeweiligen Zertifikat zu tippen, oder während des Gedrückthaltens des jeweiligen Zertifikats nach links zu wischen.</ul>",
+                            "<b>Android:</b><ul><li>Tippen Sie unter Status (vor Version 2.12 'Startseite') auf das Drei-Punkte-Menü oben rechts in der Ecke.</li><li>Tippen Sie daraufhin auf 'Papierkorb'.</li><li>Tippen Sie innerhalb eines der dort aufgelisteten Zertifikate auf das Drei-Punkte-Menü oben rechts.</li><li>Wählen Sie aus, ob Sie das ausgewählte Zertifikat wiederherstellen oder endgültig aus dem Papierkorb entfernen wollen.</li></ul>",
+                            "Zur Veranschaulichung können Sie unter den folgenden Links Screenshots zum Papierkorb für sowohl iOS als auch Android Geräte finden:<ul><li><a href='../screenshots/#ios_recycle_bin' target='_blank'>iOS Screenshots: Papierkorb</a></li><li><a href='../screenshots/#android_recycle_bin' target='_blank'>Android Screenshots: Papierkorb</a></li></ul>"
+                        ]
                     }
                 ]
             },
@@ -318,7 +329,7 @@
                         "active": "true",
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_booster_info' target='_self' rel='noopener noreferrer'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self' rel='noopener noreferrer'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li>",
+                            "<li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?</a></li>",
                             "</ul>"
                         ]
                     },
@@ -401,6 +412,18 @@
                             "Seit Version 2.10 erhalten Anwender einen Hinweis, ggf. eine Auffrischimpfung in Betracht zu ziehen. Der Hinweis basiert auf nationalen Regeln, die in Absprache mit dem Robert Koch-Institut (RKI) implementiert wurden. Diese Regeln werden fortlaufend geprüft und entsprechend den Entwicklungen und neuen Erkenntnissen angepasst. (siehe Blog Artikel: <a href='../blog/2021-09-22-cwa-version-2-10/' target='_blank' rel='noopener noreferrer'>Mit Version 2.10 ist die Corona-Warn-App bereit, schnell über Auffrischungsimpfungen zu informieren.</a>)",
                             "Bitte beachten Sie: Das Zertifikat zur Auffrischungsimpfung ist nur gültig, wenn Sie auch die nötige Grundimmunisierung durch das entsprechende letzte Zertifikat der Impfreihe nachweisen können. Löschen Sie bitte die anderen Impfzertifikate nicht aus der CWA! Da bisher noch keine einheitlichen EU-Standards zu diesem Thema festgelegt wurden, sollte man insbesondere bei Reisen ins Ausland auch die Zertifikate der Grundimmunisierung mit sich führen, sei es in der CWA, als PDF, oder als Papierausdruck. Wir empfehlen daher alle Impfzertifikate in der App zu behalten, auch wenn diese nicht mehr aktuell sind.",
                             "<a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Auffrischungsimpfung</a>"
+                        ]
+                    },
+                    {
+                        "title": "Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?",
+                        "anchor": "vac_booster_notification",
+                        "active": true,
+                        "textblock": [
+                            "Ihre App prüft regelmäßig die in der App gespeicherten Zertifikate (auch die dort für andere Personen gespeicherten Zertifikate), um Ihnen (bzw. den anderen betroffenen Personen) individuell zusammengestellte Empfehlungen weitergeben zu können. Diese Prüfung erfolgt direkt in Ihrer App, so dass dabei keine Daten das Smartphone verlassen. Die dabei verwendeten Regeln und die möglichen Empfehlungstexte werden zuvor gemeinsam mit den aktuellen Updates der App vom Regelserver heruntergeladen, so dass auch dadurch keine individuellen Informationen über Ihre Person oder Ihre Zertifikate (bzw. über andere Personen und deren Zertifikate) preisgegeben werden.",
+                            "Wenn die gemäß den jeweils aktuellen Empfehlungen der Ständigen Impfkommission am Robert Koch-Institut (STIKO) erstellten Regeln nach Maßgabe Ihrer in der App gespeicherten Zertifikate zutreffen, benachrichtigt die App Sie über die entsprechende Impfempfehlung. Bitte besprechen Sie dann mit Ihrem Arzt / Ihrer Ärztin, ob Sie eine weitere Impfstoffdosis eines COVID-19-Impfstoffs erhalten sollten.",
+                            "Falls die aus Ihren gespeicherten Zertifikaten abgeleiteten Annahmen nicht zutreffen, weil Sie bereits weitere COVID-19-Impfungen erhalten haben oder eine nachgewiesene SARS-CoV-2-Infektion durchgemacht haben, können Sie diese Benachrichtigung ignorieren. In diesem Fall empfehlen wir, die entsprechenden Impf- oder Genesenenzertifikate in die App einzuscannen.",
+                            "Bitte bedenken Sie auch, dass es weitere STIKO-Impfempfehlungen gibt, z.&nbsp;B. für Personen mit bestimmten Vorerkrankungen oder Berufen, die aus den Zertifikaten nicht ermittelt werden können, weshalb in der App auf solche Empfehlungen nicht hingewiesen werden kann.",
+                            "Weitere Informationen zu den STIKO-Impfempfehlungen sowie rund um das Thema COVID-19 und Impfen finden Sie unter <a href='https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html' target='_blank' rel='noopener noreferrer'>RKI - Impfungen A - Z - COVID-19 und Impfen</a>."
                         ]
                     },
                     {
