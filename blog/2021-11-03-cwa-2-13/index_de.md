@@ -3,7 +3,7 @@ page-title: "Ups, Zertifikat gelöscht? - Corona-Warn-App Version 2.13 holt es z
 page-description: "Corona-Warn-App Version 2.13 ermöglicht Wiederherstellung gelöschter Zertifikate"
 page-name: cwa-version-2-13
 page-name_de: cwa-version-2-13
-author: Hanna Heine, 15 Uhr
+author: Hanna Heine, 14:45 Uhr
 layout: blog
 ---
 

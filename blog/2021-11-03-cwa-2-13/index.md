@@ -3,7 +3,7 @@ page-title: "Oops, certificate deleted? - Corona-Warn-App version 2.13 gets it b
 page-description: "Corona-Warn-App version 2.13 introduces recycle bin functionality "
 page-name: cwa-version-2-13
 page-name_de: cwa-version-2-13
-author: Hanna Heine, 3 pm
+author: Hanna Heine, 2:45 pm
 layout: blog
 ---
 
