@@ -224,6 +224,18 @@
                             "A pure visual check of the certificates is not sufficient, as manipulated screenshots, apps or system settings (e.g. changed date) could be used, for example. The CovPassCheck-App is a secure solution for e.g. traders and public authorities to reliably check EU digital COVID certificates. More information and download links to the CovPassCheck app can be found here: <a href='https://www.digitaler-impfnachweis-app.de/en/covpasscheck-app/' target='_blank' rel='noopener noreferrer'>Check EU COVID certificates directly via app</a>. Please note that third parties in other countries may use other apps to verify certificates.",
                             "You can check certificates for validity on your own directly in the Corona-Warn-App without the need of using the CovPassCheck-App. For more information, see the blog <a href='../blog/2021-07-28-cwa-version-2-6/' target='_blank' rel='noopener noreferrer'>Users can add local 7-day incidences and check certificates for validity before traveling</a> and the FAQ article <a href='#cert_eu_travel' target='_blank' rel='noopener noreferrer'>Is my certificate valid in the country I am traveling to?</a>"
                         ]
+                    },
+                    {
+                        "title": "How does the recycle bin work in the Corona-Warn-App?",
+                        "anchor": "cert_recycle_bin",
+                        "active": true,
+                        "textblock": [
+                            "Starting with version 2.13, vaccination, recovery, or test certificates that you have deleted are temporarily moved to a recycle bin.  This allows you to easily recover the certificate in case of accidental removal and move it back to its original location. If a certificate remains in the recycle bin for 30 days, it will automatically be permanently deleted, unless you have manually permanently deleted it from the recycle bin beforehand. A certificate that has been deleted in the app can still be rescanned. If it is still in the recycle bin and has therefore not been permanently removed, you will receive a message that it has been restored.",
+                            "<b>iOS:</b><ul><li>Swipe down while on the Status tab ('Start Screen before version 2.12) and select 'Recycle Bin' under 'More'.</li><li>If there are certificates in your trash, you can tap a certificate to restore it.</li><li>To permanently remove a certificate from the trash first tap 'Edit' in the top right corner. Afterwards you have the option to either tap on the red minus sign next to the respective certificate, or swipe to the left while holding down the respective certificate.</ul>",
+                            "<b>Android:</b><ul><li>While on the Status tab ('Start Screen' before version 2.12), tap the three-dot menu in the top-right corner.</li><li>Tap 'Recycle Bin'.</li><li>Within one of the certificates listed there, tap the three-dot menu in the top-right corner.</li><li>Select whether you want to restore the selected certificate or permanently remove it from the recycle bin.</li></ul>",
+                            "You can find screenshots on the recycle bin for both iOS and Android devices at the following links:<ul><li><a href='../screenshots/#ios_recycle_bin' target='_blank'>iOS Screenshots: Recycle Bin</a></li><li><a href='../screenshots/#android_recycle_bin' target='_blank'>Android Screenshots: Recycle Bin</a></li></ul>"
+
+                        ]
                     }
                 ]
             },
