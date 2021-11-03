@@ -5,25 +5,17 @@
     .fig-mobile {
         display: block !important;
     }
-    .mobile-banner {
-        display: block !important;
-    }
 }
 
-@media (min-width: 481px) and (max-width: 812px) and (max-height: 414px) {
-    .mobile-banner {
+@media (max-width: 812px) and (max-height: 414px) {
+    .html-widget {
+        display: none;
+    }
+    .fig-mobile {
         display: block !important;
     }
 }
 
 .fig-mobile {
-    display: none;
-}
-
-.mobile-banner {
-    background: #D4EAF7;
-    padding: 16px;
-    font-size: 14px;
-    line-height: 30px;
     display: none;
 }
