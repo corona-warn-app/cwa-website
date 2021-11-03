@@ -140,7 +140,6 @@ function analyseData(){
   }
 
   return fallbackdataFn().then(e => {
-    fs.writeFileSync('src/data/analyse_data_no_internet.json', e, {flag: 'w'});
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
   }).catch(e => {
     const data = fs.readFileSync('src/data/analyse_data_no_internet.json', 'utf8');
@@ -424,12 +423,12 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '15.0.2'))
+    .pipe(replace('[ios.latest-os-version]', '15.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.13.0'))
+    .pipe(replace('[ios.current-app-version]', '2.13.1'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.13.0'))
+    .pipe(replace('[android.current-app-version]', '2.13.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }

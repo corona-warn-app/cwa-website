@@ -1,5 +1,6 @@
 const { softAssert, softExpect } = chai;
 
+
 context("Check for broken links", () => {
   const pages = [ '/de',
                   '/en',
@@ -28,7 +29,9 @@ context("Check for broken links", () => {
                   '/en/science/'
                 ]
 
-
+  it('Check if txt results exist',() => {
+    cy.writeFile("cypress/logs/broken_links_result.txt", "==================== Broken links ====================\n")
+  })
   pages.forEach(page => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
@@ -40,6 +43,12 @@ context("Check for broken links", () => {
             url: url.prop('href')
           }).then((response) => {
             softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
+            if(response.status != 200 && response.status != 429) {
+              cy.readFile("cypress/logs/broken_links_result.txt")
+              .then((text) => {
+                cy.writeFile("cypress/logs/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
+              })
+            }
           })
         }         
       })
@@ -66,6 +75,12 @@ context("Check for broken links on entries", () => {
                 url: entry.prop('href')
               }).then((response) => {
                 softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url.prop('href')).to.eq(true)
+                if(response.status != 200 && response.status != 429) {
+                  cy.readFile("cypress/logs/broken_links_result.txt")
+                  .then((text) => {
+                    cy.writeFile("cypress/logs/broken_links_result.txt", `${text}\n[RESPONSE ${response.status}] ${url.prop('href')} on '${page}' `, {flags: 'as+'})
+                  })
+                }
               })
             }
           })
