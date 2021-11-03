@@ -231,7 +231,7 @@ p:not([class]) + .btn {
 
         @media (max-width: ($screen-md - 1)){
             overflow-y: inherit;
-            padding-left: $spacer * 1.25;
+            padding-right: 250px;
             padding-top: 0.5* $spacer;
             z-index: 1;
             transition: transform 0.3s ease-in-out;
@@ -244,6 +244,7 @@ p:not([class]) + .btn {
             }
 
             &.active {
+                padding-right: 0px;
                 transform: translate3d(0, 0, 0);
                 z-index: 2;
                 height: 100vh;
