@@ -36,7 +36,7 @@ If the current recommendations apply to the user, the app notifies them. Users w
 <center> 
 <img src="./notification-70.png" title="Notification for users who are at least 70 years old" style="align: center" width=250> 
 <img src="./notification-johnson.png" title="Notification for users vaccinated with the vaccine from Jonson&Johnson" style="align: center" width=250>
-<figcaption aria-hidden="true"><em>Links: notification for users who are at least 70 years old. Right: notification for users who where vaccinated with Johnson & Johnson's vaccine. </em></figcaption>
+<figcaption aria-hidden="true"><em>Links: notification for users who are at least 70 years old. Right: notification for users who were vaccinated with Johnson & Johnson's vaccine. </em></figcaption>
 </center>
 <br></br>
 
@@ -45,14 +45,14 @@ If the app notifies users to whom the conditions do not apply, for example becau
 The STIKO also recommends booster vaccinations for people with certain jobs or pre-existing conditions. However, the Corona-Warn-App cannot determine this information from the certificates. Therefore, it cannot notify the respective users. **More information on the STIKO recommendations** can be found on the [RKI's website](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/Impfempfehlung-Zusfassung.html;jsessionid=75D575152D0A98168E5703E0D653EEE4.internet112) (German only). 
 
 
-### Here’s how users can add their booster vaccination to the app´
+### Here’s how users can add their booster vaccination to the app
 
 Users who have received a booster vaccination can transfer the certificate into the Corona-Warn-App just like they did with previous certificates. To do this, they can **select the universal QR code scanner** in the app’s tab bar and scan the QR code they received from their doctor. The app automatically saves the certificate under "Certificates" and the corresponding person.  
 
 <br></br>
 <center> 
 <img src="./qr-code-scanner-en.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>In the middle of the bar bar, circled here: universal QR code scanner.</em></figcaption>
+<figcaption aria-hidden="true"><em>In the middle of the tab bar, circled here: universal QR code scanner.</em></figcaption>
 </center>
 <br></br>
 
