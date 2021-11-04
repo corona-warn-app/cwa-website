@@ -16,9 +16,9 @@ The update is available to users over the next 48 hours.
 <!-- overview -->
 
 
-With version 2.13, the project team has introduced a recycle bin function  for vaccination, test and recovery certificates. Certificates that have been deleted will be moved to the trash first. This feature **enables users to restore certificates** in case they’ve accidentally deleted them. To restore a certificate, they can select it in the trash and tap "Restore". The certificate is then moved to its original location. 
+With version 2.13, the project team has introduced a recycle bin function  for vaccination, test and recovery certificates. Certificates that have been deleted will be moved to the recycle bin first. This feature **enables users to restore certificates** in case they’ve accidentally deleted them. To restore a certificate, they can select it in the recycle bin and tap "Restore". The certificate is then moved to its original location. 
 
-After **30 days**, the certificates are automatically and permanently deleted from the trash. However, users can also delete them permanently there manually. 
+After **30 days**, the certificates are automatically and permanently deleted from the recycle bin. However, users can also delete them permanently there manually. 
 
 
 
@@ -30,9 +30,9 @@ After **30 days**, the certificates are automatically and permanently deleted fr
 </center>
 <br></br>
 
-**Android users** can access their recycle bin by selecting the **three dots** in the top right corner of their app and then tap "Trash."  
+**Android users** can access their recycle bin by selecting the **three dots** in the top right corner of their app and then tap "Recycle Bin."  
 
-**iOS users** can swipe down on the home screen of their Corona-Warn-App and select **"Trash" under "More"**. The project team has redesigned this area. iOS users can now find the app settings, frequently asked questions (FAQ), further information and the option to recommend the app under "More".
+**iOS users** can swipe down on the home screen of their Corona-Warn-App and select **"Recycle Bin" under "More"**. The project team has redesigned this area. iOS users can now find the app settings, frequently asked questions (FAQ), further information and the option to recommend the app under "More".
 
 <br></br>
 <center> 
@@ -42,7 +42,7 @@ After **30 days**, the certificates are automatically and permanently deleted fr
 </center>
 <br></br>
 
-Users can also re-scan a certificate that they have deleted. In this case, the app recognizes that the certificate is still saved in the trash and notifies users that it will restore it.  
+Users can also re-scan a certificate that they have deleted. In this case, the app recognizes that the certificate is still saved in the recycle bin and notifies users that it will restore it.  
 
 <br></br>
 <center> 
