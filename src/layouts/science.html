@@ -56,6 +56,14 @@
           {{> button-back-component
           button=science.en.backToIndexButton}}
           {{/if}}
+
+          <div class="mobile-message">
+            {{#if lang_de}}
+              {{science.de.mobileMessage}}
+            {{else}}
+              {{science.en.mobileMessage}}
+            {{/if}}
+          </div>
           <div class="blog-markdown-container"> 
             {{> body}} <!-- this line should be on the very left -->
           </div>
