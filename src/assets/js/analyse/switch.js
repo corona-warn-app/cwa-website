@@ -23,6 +23,11 @@ const switchFN = (switchId => {
 	$(".analyseSwitch-bg")
 		.css("left", $e.position().left)
 		.css("width", $e.outerWidth());
+	$(window).on('resize', function(){
+		$(".analyseSwitch-bg")
+		.css("left", $e.position().left)
+		.css("width", $e.outerWidth());
+	});
 
 	$(".analyseBoard-title .analyseBoard-title-append").each(function(){
 		$(this).html(translate(["analyseBoardTitleAppend", switchId]))
