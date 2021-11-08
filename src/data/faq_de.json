@@ -802,7 +802,40 @@
                             "Nach einer roten Kachel-Warnung (hohes Risiko) sollte ich mich in Quarantäne begeben und umgehend einen PCR-Test machen lassen. Ist dieser positiv, muss vom Arzt/Testzentrum ohnehin eine Meldung ans Gesundheitsamt gehen. Es wird empfohlen das positive Testergebnis via der CWA zu teilen. Darüber hinaus können die Informationen über die bereits existierende Export-Funktion des Kontakttagebuchs manuell mit dem Gesundheitsamt geteilt werden.",
                             "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Event-Registrierung</a>"
                         ]
-                    }
+                    },
+                    {
+                        "title": "Die wichtigsten Fragen zur Interoperabilität der CWA mit luca",
+                        "anchor": "check_in_luca",
+                        "active": true,
+                        "textblock": [
+                            "<b>1. Wie funktioniert die Zusammenarbeit von Corona-Warn-App und luca?</b>",
+                            "Die Corona-Warn-App kann ab sofort QR-Codes, die für die Eventregistrierung mit der luca App erstellt wurden, scannen und einen eigenen Check-in-Prozess durchführen. Luca kann die QR-Codes der Corona-Warn-App nicht einlesen.",
+                            "<b>2. Wie funktioniert der Prozess genau?</b>",
+                            "Der QR-Code zur Eventregistrierung bzw. zum Check-in kann mit der Corona-Warn-App (CWA) oder mit luca eingelesen werden.",
+                            "Scannen Nutzende der Corona-Warn-App den QR-Code, werden sie automatisch in den Check-in-Bereich der CWA geführt. Weitere Informationen zu dem Prozess finden Sie hier: <a href='../blog/2021-10-11-cwa-most-important-features/' target='_blank'>Warum die Corona-Warn-App gerade jetzt wichtig ist (Blog)</a>",
+                            "<b>3. Wie unterscheiden sich Corona-Warn-App und luca App beim Check-in/der Eventregistrierung noch?</b>",
+                            "Mit Hilfe der Corona-Warn-App können Nutzende sich z.B. bei einer Veranstaltung einchecken. Werden sie später positiv auf SARS-CoV-2 getestet, können sie mit Hilfe der Corona-Warn-App andere Teilnehmende der gleichen Veranstaltung unverzüglich warnen. Dabei ist es egal, ob der QR-Code ursprünglich von der Corona-Warn-App oder der luca App erzeugt wurde.",
+                            "<b>4. Kann die Corona-Warn-App die QR-Codes von luca lesen und verarbeiten?</b>",
+                            "Ja. Die Corona-Warn-App kann QR-Codes, die für die Eventregistrierung mit der Luca App ausgestellt wurden, scannen und einen eigenen Check-In-Prozess der CWA durchführen.",
+                            "<b>5. Kann auch luca die QR-Codes der Corona-Warn-App lesen und verarbeiten?</b>",
+                            "Nein, das ist nicht möglich.",
+                            "<b>6. Warum wurde die Interoperabilität umgesetzt?</b>",
+                            "Um den Prozess der Eventregistrierung (Check-In) zu vereinfachen, sind die Corona-Warn-App und die luca App jetzt 'interoperabel'. Das heißt: Die Corona-Warn-App kann den QR-Code, den luca ausgestellt hat, lesen und verarbeiten.",
+                            "<b>7. Warum wurde die Interoperabilität erst jetzt umgesetzt?</b>",
+                            "XXXXXXXX",
+                            "<b>8. Sind alle QR-Codes zum Check-in sofort interoperabel?</b>",
+                            "QR-Codes, die ab dem XX.XX.XXXX ausgestellt worden sind, können sowohl von der Corona-Warn-App als auch von luca gelesen und verarbeitet werden.",
+                            "<b>9. Sind die Daten der Nutzenden der Corona-Warn-App weiterhin sicher?</b>","Ja. Die Interoperabilität bezieht sich nur auf die QR-Codes, die für Eventregistrierung und Check-in genutzt werden. Corona-Warn-App und luca App sind weiterhin unterschiedliche Angebote mit unterschiedlichen Zielsetzungen. Für die CWA gilt nach wie vor, dass sie keine persönlichen Daten erfasst.",
+                            "Die Interoperabilität der QR-Codes wurde sorgfältig vorbereitet. Alle sicherheitsrelevanten Aspekte der Interoperabilität wurden in enger Zusammenarbeit mit sowohl mit dem BfDI als auch dem BSI ausgearbeitet und geprüft.",
+                            "Zudem arbeitet die Corona-Warn-App weiterhin sehr datensparsam.",
+                            "<b>10. Braucht man nur noch eine App für die Eventregistrierung?</b>",
+                            "Die Corona-Warn-App und luca basieren auf unterschiedlichen Ansätzen und verfolgen unterschiedliche Ziele.",
+                            "Die Corona-Warn-App ermöglicht eine schnelle Warnung von Personen nach dem Peer-to-Peer-Prinzip. Diese Warnung erfolgt pseudonym über die Corona-Warn-App selbst.",
+                            "Die luca App hingegen dient hauptsächlich der digitalen Erfassung von Kontaktdaten der Teilnehmenden einer Veranstaltung. Im Infektionsfall übergibt die positiv auf SARS-CoV-2 getestete Person ihre Kontaktdaten an das zuständige Gesundheitsamt. Dieses kontaktiert dann alle Personen, die denselben QR-Code gescannt haben.<br/>In den jeweiligen Länderverordnungen zum Infektionsschutz ist festgeschrieben, ob und wie eine Kontaktnachverfolgung bei Veranstaltungen stattfinden muss.",
+                            "<b>11. Müssen Nutzende beide Apps installieren, damit es funktioniert?</b>",
+                            "Nein."
+                        ]
+                     }
                 ]
             },
             {
