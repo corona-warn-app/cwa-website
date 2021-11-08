@@ -14,7 +14,7 @@ An overview of important key figures for the Corona-Warn-App is now available in
 ### Analysis data from the Corona-Warn-App
 
 For more than a year, the project team (Robert Koch Institute, SAP, Deutsche Telekom) has regularly published key figures for the Corona-Warn-App - an important contribution to transparency, which is central to all open-source projects. 
-From now on, important key figures are also available in a public dashboard as an interactive overview. The dashboard can be accessed via the Corona-Warn-App blog under the menu item "Analysis". The launch version displays metrics on downloads, test registration, test results, sharing behavior, and alerts. 
+From now on, important key figures are available in a public dashboard as an interactive overview. The dashboard can be accessed via the Corona-Warn-App blog under the menu item "Analysis". The launch version displays metrics on downloads, test registration, test results, sharing behavior, and alerts. 
 
 These key figures come from various sources: 
  

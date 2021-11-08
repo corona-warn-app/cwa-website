@@ -7,7 +7,9 @@ author: Janina Hoerdt
 layout: blog
 ---
 
-In diesem Beitrag finden Sie in regelmäßigen Abständen [aktualisierte Zahlen und Fakten](/assets/documents/2021-09-30-cwa-daten-fakten.pdf) zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse. 
+In diesem Beitrag finden Sie vorherige Zahlen und Fakten zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse.
+
+An die Stelle des bis zum 30. September 2021 wöchentlich erschiehenen Übersichtsdokuments trat ein öffentliches, interaktives Dashboard mit den wichtigsten Kennzahlen, welche täglich aktualisiert werden. Weitere Informationen zum Dashboard sind in folgendem Blog zu finden: [Kennzahlen-Dashboard zur Corona-Warn-App](../2021-10-04-key-figures-dashboard/)
 
 
 ### **Übersicht früherer Zahlen und Fakten**

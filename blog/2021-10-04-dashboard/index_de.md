@@ -23,7 +23,7 @@ Die Kennzahlen im Dashboard werden täglich aktualisiert. Sie können unter dem 
 ### Analysedaten der Corona-Warn-App 
 
 Seit mehr als einem Jahr veröffentlicht das Projektteam (Robert Koch-Institut, SAP, Deutsche Telekom) regelmäßig Kennzahlen zur Corona-Warn-App. Das gilt als ein wichtiger Beitrag zur Transparenz, die zentraler Bestandteil für alle Open-Source-Projekte ist. 
-Ab sofort stehen wichtige Kennzahlen auch in einem öffentlichen Dashboard als interaktive Übersicht zur Verfügung. Das Dashboard ist über den Blog der Corona-Warn-App unter dem Menüpunkt ["Analysis"](/de/analysis/) abrufbar.  
+Ab sofort stehen wichtige Kennzahlen in einem öffentlichen Dashboard als interaktive Übersicht zur Verfügung. Das Dashboard ist über den Blog der Corona-Warn-App unter dem Menüpunkt ["Analysis"](/de/analysis/) abrufbar.  
 
 Diese Kennzahlen stammen aus verschiedenen Quellen:
 
