@@ -9,7 +9,7 @@ layout: blog
 
 In this post, you can find previous facts and figures about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
 
-The overview document, which was published weekly until September 30, 2021, has been replaced by a public, interactive dashboard with key figures that are updated daily. More information about the dashboard can be found in the following blog: [Key figures dashboard for the Corona-Warn-App](../2021-10-04-key-figures-dashboard/)
+The overview document, which was published weekly until September 30, 2021, has been replaced by a public, interactive dashboard with key figures that are updated daily. More information about the dashboard can be found in the following blog: [Key figures dashboard for the Corona-Warn-App](/en/blog/2021-10-04-key-figures-dashboard/)
 
 
 ### **Overview of previous facts and figures** 

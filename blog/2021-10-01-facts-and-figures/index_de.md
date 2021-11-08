@@ -9,7 +9,7 @@ layout: blog
 
 In diesem Beitrag finden Sie vorherige Zahlen und Fakten zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse.
 
-An die Stelle des bis zum 30. September 2021 wöchentlich erschiehenen Übersichtsdokuments trat ein öffentliches, interaktives Dashboard mit den wichtigsten Kennzahlen, welche täglich aktualisiert werden. Weitere Informationen zum Dashboard sind in folgendem Blog zu finden: [Kennzahlen-Dashboard zur Corona-Warn-App](../2021-10-04-key-figures-dashboard/)
+An die Stelle des bis zum 30. September 2021 wöchentlich erschienenen Übersichtsdokuments trat ein öffentliches, interaktives Dashboard mit den wichtigsten Kennzahlen, welche täglich aktualisiert werden. Weitere Informationen zum Dashboard sind in folgendem Blog zu finden: [Kennzahlen-Dashboard zur Corona-Warn-App](/de/blog/2021-10-04-key-figures-dashboard/)
 
 
 ### **Übersicht früherer Zahlen und Fakten**
