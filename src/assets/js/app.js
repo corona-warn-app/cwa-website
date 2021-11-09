@@ -5,6 +5,13 @@ import 'slick-carousel';
 window.jQuery = $;
 
 $(document).ready(function(){
+    $(window).on('resize', function(){
+        const { hash } = window.location;
+		if(hash) {
+            const contPos = $(hash).offset().top;;
+            $(window).scrollTop(contPos);
+        }
+	});
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
     });
