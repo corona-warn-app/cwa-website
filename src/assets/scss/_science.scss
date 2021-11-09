@@ -1,0 +1,33 @@
+@media (max-width:480px) {  
+    .html-widget {
+        display: none;
+    }
+    .fig-mobile {
+        display: block !important;
+    }
+    .mobile-message {
+        display: block !important;
+    }
+}
+
+@media (max-width: 812px) and (max-height: 414px) {
+    .html-widget {
+        display: none;
+    }
+    .fig-mobile {
+        display: block !important;
+    }
+    .mobile-message {
+        display: block !important;
+    }
+}
+
+.fig-mobile {
+    display: none;
+}
+
+.mobile-message {
+    display: none;
+    background-color: #D4EAF7;
+    padding: 15px;
+}
