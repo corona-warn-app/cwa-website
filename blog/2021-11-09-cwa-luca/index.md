@@ -9,7 +9,7 @@ layout: blog
 
 Corona-Warn-App users can now check-in to events and at venues whose organizers or owners use the luca system and provide luca's QR codes. This means that organizors or owners no longer have to present two different QR codes. 
 
-Which app can scan which QR codes? What happens to my data? What are the differences between the Corona-Warn-App and the luca app? Users can find the most important questions and answers [in the FAQ section](/en/faq/#check_in_luca)
+Which app can scan which QR codes? What happens to my data? What are the differences between the Corona-Warn-App and the luca app? Users can find the most important questions and answers [in the FAQ section](../faq/#check_in_luca)
 
 
 <!-- overview -->
