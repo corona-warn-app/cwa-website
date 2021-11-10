@@ -29,7 +29,7 @@ Diese Kennzahlen stammen aus verschiedenen Quellen:
 
 -	Downloads: Daten aus dem Google PlayStore und Apple App Store 
 -	Registrierung von Tests, Testergebnisse und Teilungsverhalten: Informationen aus der Backend-Datenbank, in der die Tests registriert werden, um eine Übermittlung der Ergebnisse und ggf. Warnung Anderer zu ermöglichen
--	Warnungen mit grünem und rotem Risiko: Daten aus der Privacy Preserving Analytics, PPA).
+-	Warnungen mit grünem und rotem Risiko: Daten aus der Privacy Preserving Analytics (PPA).
 
 **Wichtiger Hinweis:** Keine der Kennzahlen ermöglicht Rückschlüsse auf einzelne Nutzerinnen und Nutzer.
 
