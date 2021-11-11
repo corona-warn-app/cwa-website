@@ -329,7 +329,7 @@
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></li>",
                             "</ul>"
                         ]
                     },
@@ -434,6 +434,18 @@
                             "If the assumptions derived from your saved certificates do not apply because you have already received further COVID-19 vaccinations or have undergone a proven SARS-CoV-2 infection, you can ignore this notification. In this case, we recommend scanning the relevant vaccination or recovery certificates into the app.",
                             "Please also bear in mind that there are other STIKO vaccination recommendations, e.g. for people with certain pre-existing conditions or occupations, which cannot be determined from the certificates, which is why such recommendations cannot be referred to in the app.",
                             "For more information on the STIKO vaccination recommendations and all about COVID-19 and vaccination, see <a href='https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html' target='_blank' rel='noopener noreferrer'>RKI - Impfungen A - Z - COVID-19 und Impfen (German)</a>."
+                        ]
+                    },
+                    {
+                        "title": "Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?",
+                        "anchor": "vac_booster_jj",
+                        "active": true,
+                        "textblock": [
+                            "This may occur if a basic immunization was given with the Johnson & Johnson (J&J) vaccine. Since only one vaccination is required for a basic immunization with the J&J vaccine, the entry '2 of 2' must be made in the vaccination certificate for the booster vaccination under 'Number in a series of vaccinations'.",
+                            "For basic immunization with vaccines other than J&J, such as BioNTech, Moderna, or AstraZeneca, the second dose is also entered '2 of 2' under 'Number in a series of vaccinations'. Such vaccinations usually require a waiting period of 14 days until full vaccination protection after the 2nd dose of the basic immunization.",
+                            "As a result, checking apps, such as the CovPassCheck app, cannot distinguish in this particular case whether it is a booster vaccination for a J&J basic immunization or the second dose of the basic immunization. Therefore, if a vaccination with the J&J vaccine was previously performed and '2 of 2' was noted in the certificate of the booster vaccination, the vaccination certificate for the booster vaccination will be shown as invalid for 14 days.",
+                            "On the other hand, in case of previous basic immunization by two doses, the booster vaccination is declared as the 3rd of 3 vaccinations. By noting '3 of 3', the app correctly recognizes the booster vaccination as such and the 14-day waiting period for full vaccination protection is not displayed. Once a second booster vaccination has been administered by J&J after the basic immunization, the display of the fourteen day waiting period will be omitted as '3 of 3' will be entered as the number of the vaccination for this certificate.",
+                            "You can continue to show your basic immunization certificate as proof for these 14 days. This will retain its validity, provided that the technical or professional validity has not expired."
                         ]
                     },
                     {
