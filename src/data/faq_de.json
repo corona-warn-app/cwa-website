@@ -329,7 +329,7 @@
                         "active": "true",
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?</a></li><li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?</a></li>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?</a></li><li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischungsimpfung?</a></li>",
                             "</ul>"
                         ]
                     },
@@ -434,6 +434,18 @@
                             "Falls die aus Ihren gespeicherten Zertifikaten abgeleiteten Annahmen nicht zutreffen, weil Sie bereits weitere COVID-19-Impfungen erhalten haben oder eine nachgewiesene SARS-CoV-2-Infektion durchgemacht haben, können Sie diese Benachrichtigung ignorieren. In diesem Fall empfehlen wir, die entsprechenden Impf- oder Genesenenzertifikate in die App einzuscannen.",
                             "Bitte bedenken Sie auch, dass es weitere STIKO-Impfempfehlungen gibt, z.&nbsp;B. für Personen mit bestimmten Vorerkrankungen oder Berufen, die aus den Zertifikaten nicht ermittelt werden können, weshalb in der App auf solche Empfehlungen nicht hingewiesen werden kann.",
                             "Weitere Informationen zu den STIKO-Impfempfehlungen sowie rund um das Thema COVID-19 und Impfen finden Sie unter <a href='https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html' target='_blank' rel='noopener noreferrer'>RKI - Impfungen A - Z - COVID-19 und Impfen</a>."
+                        ]
+                    },
+                    {
+                        "title": "Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischungsimpfung?",
+                        "anchor": "vac_booster_jj",
+                        "active": true,
+                        "textblock": [
+                            "Dieser Fall kann eintreten, wenn eine Grundimmunisierung mit dem Impfstoff von Johnson & Johnson (J&J) erfolgte. Da für eine Grundimmunisierung mit dem J&J-Impfstoff nur eine Impfung nötig ist, muss im Impfzertifikat für die Auffrischungsimpfung unter „Nummer der Impfung' der Eintrag „2 von 2“ vorgenommen werden.",
+                            "Bei der Grundimmunisierung mit anderen Impfstoffen als J&J, wie z.&nbsp;B. BioNTech, Moderna, oder AstraZeneca, wird die zweite Dosis ebenfalls unter „Nummer der Impfung“ der Eintrag „2 von 2“ vorgenommen. Solchen Impfungen setzen für gewöhnlich eine Wartezeit von 14 Tagen bis zum vollständigen Impfschutz nach der 2. Dosis der Grundimmunisierung voraus.",
+                            "Dies hat zur Folge, dass Prüf-Apps, wie die CovPassCheck-App, in diesem speziellen Fall nicht unterscheiden können, ob es sich um eine Auffrischimpfung für eine J&J-Grundimmunisierung oder um die zweite Dosis der Grundimmunisierung handelt. Daher wird das Impfzertifikat für die Auffrischungsimpfung für 14 Tage als ungültig angezeigt, wenn vorher eine Impfung mit dem J&J-Impfstoff durchgeführt wurde und in dem Zertifikat der Auffrischimpfung „2 von 2“ notiert wurde.",
+                            "Andererseits wird bei einer vorangegangenen Grundimmunisierung durch zwei Dosen die Auffrischungsimpfung als die 3. von 3 Impfungen deklariert. Durch den Eintrag „3 von 3“ erkennt die App die Auffrischungsimpfung korrekt als solche an und es entfällt die Anzeige der 14 Tage Wartezeit bis zum vollen Impfschutz. Sobald eine zweite Auffrischungsimpfung nach der Grundimmunisierung durch J&J durchgeführt wurde, wird die Anzeige der vierzehntägigen Wartezeit entfallen, da für dieses Zertifikat „3 von 3“ als Nummer der Impfung eingetragen wird.",
+                            "Als Nachweis können Sie für diese 14 Tage weiterhin Ihr Impfzertifikat für die Grundimmunisierung vorzeigen. Dieses behält seine Gültigkeit, sofern die technische oder fachliche Gültigkeit nicht abgelaufen ist."
                         ]
                     },
                     {
