@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-Um Nutzer*innen über Missbrauch und Fälschungen von Impfzertifikaten informieren zu können, hat das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP eine Erweiterung zu CWA Version 2.13 veröffentlicht. Der Hotfix ermöglicht es, **digitale Impfzertifikate von bestimmten Apotheken zurückzurufen** und in der Corona-Warn-App als ungültig zu kennzeichnen
+Um Nutzer*innen über Missbrauch und Fälschungen von Impfzertifikaten informieren zu können, hat das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP eine Erweiterung zu CWA Version 2.13 veröffentlicht. Der Hotfix ermöglicht es, **digitale Impfzertifikate von bestimmten Apotheken zurückzurufen** und in der Corona-Warn-App als ungültig zu kennzeichnen.
 
 <!-- overview -->
 
