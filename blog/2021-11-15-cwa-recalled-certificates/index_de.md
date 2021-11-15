@@ -7,13 +7,13 @@ author: Hanna Heine
 layout: blog
 ---
 
-Um Nutzer*innen über Missbrauch und Fälschungen von Impfzertifikaten informieren zu können, hat das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP eine Erweiterung zu CWA Version 2.13 veröffentlicht. Der Hotfix ermöglicht es, **digitale Impfzertifikate von bestimmten Apotheken zurückzurufen** und in der Corona-Warn-App als ungültig zu kennzeichnen.
+Um Nutzer\*innen über Missbrauch und Fälschungen von Impfzertifikaten informieren zu können, hat das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP eine Erweiterung zu CWA Version 2.13 veröffentlicht. Der Hotfix ermöglicht es, **digitale Impfzertifikate von bestimmten Apotheken zurückzurufen** und in der Corona-Warn-App als ungültig zu kennzeichnen.
 
 <!-- overview -->
 
 In der Vergangenheit gab es einige wenige Apotheken, die gefälschte Impfzertifikate herausgegeben haben. Zertifikate der betroffenen Apotheken wurden daraufhin zurückgerufen. Mit dem Hotfix 2.13.3 (Android) beziehungsweise 2.13.2 (iOS) kann die Corona-Warn-App die Zertifikatskennung aller Zertifikate kontrollieren und prüfen, ob das Zertifikat von einer entsprechenden Apotheke ausgestellt wurde. Ist das der Fall, wird es als **ungültig dargestellt**.
 
-**Wichtig:** Die Überprüfung der Zertifikate erfolgt nur auf den jeweils eigenen Smartphones der Nutzer*innen. Bei der Kontrolle mit der CovPassCheck-App wird ein zurückgerufenen Zertifikat entsprechend als ungültig angezeigt. 
+**Wichtig:** Die Überprüfung der Zertifikate erfolgt nur auf den jeweils eigenen Smartphones der Nutzer\*innen. Bei der Kontrolle mit der CovPassCheck-App wird ein zurückgerufenes Zertifikat entsprechend als ungültig angezeigt.
 
 
 <br></br>
@@ -38,4 +38,4 @@ Die Corona-Warn-App informiert die betroffenen Nutzer\*innen wie gewohnt mit ein
 </center>
 <br></br>
 
-Das Projektteam empfiehlt allen Nutzer\*innen das **Update auf Version 2.13.3 beziehungsweise 2.13.2** durchzuführen. 
+Das Projektteam empfiehlt allen Nutzer\*innen das **Update auf Version 2.13.3 (Android) beziehungsweise 2.13.2 (iOS)** durchzuführen. 
