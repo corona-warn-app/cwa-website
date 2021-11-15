@@ -179,7 +179,7 @@
                         "active": true,
                         "textblock": [
                             "Using this step-by-step guide, you can remove certificates from the Corona-Warn-App. Please note that the first three steps apply to both iOS and Android, but only one of the last two steps needs to be followed, depending on which operating system matches yours. Vaccination certificates, test certificates and recovery certificates are mentioned as 'Certificates', since the process of removing them is identical.",
-                            "<ul><li>Tap on the 'Certificates' tab</li><li>Tap on the certificate you would like to remove</li><li>Scroll down to and tap on the tile that matches the certificate you want to delete.</li><li>iOS: Tap on 'Delete Certificate' at the bottom of the screen</li><li>Android: Tap on the three-dot symbol on the top right of the screen, and then tap on 'Remove'</li></ul>"
+                            "<ul><li>Tap on the 'Certificates' tab</li><li>Tap on the certificate you would like to remove</li><li>Scroll down to and tap on the tile that matches the certificate you want to delete.</li><li>iOS: Tap on 'More' at the bottom of the screen and then on 'Delete Vaccination Certificate', 'Remove Certificate of Recovery' or 'Delete Test Certificate'</li><li>Android: Tap on the three-dot symbol on the top right of the screen, and then tap on 'Remove Certificate' (or 'Remove' for version 2.9 and earlier)</li></ul>"
                         ]
                     },
                     {
@@ -324,13 +324,23 @@
                         ]
                     },
                     {
-                        "title": "Questions and answers about the booster vaccination",
+                        "title": "Questions and answers about the booster vaccination and notifications regarding my vaccination certificate",
                         "anchor": "vac_cert_booster",
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></li>",
                             "</ul>"
+                        ]
+                    },
+                    {
+                        "title": "Why do I get the message that my certificate needs to be reissued?",
+                        "anchor": "vac_cert_invalid_21_1",
+                        "active": true,
+                        "textblock": [
+                            "This message informs you that your vaccination certificate is no longer valid from 15 November 2021 and that you should try to obtain a new digital certificate in time.",
+                            "You can have a new vaccination certificate issued by your pharmacy free of charge by presenting your yellow vaccination booklet and a photographic ID.",
+                            "This is done for security reasons and affects all certificates of the pharmacy you visited. These certificates will be revoked on 15 November 2021 and must therefore be reissued."
                         ]
                     },
                     {
@@ -424,6 +434,18 @@
                             "If the assumptions derived from your saved certificates do not apply because you have already received further COVID-19 vaccinations or have undergone a proven SARS-CoV-2 infection, you can ignore this notification. In this case, we recommend scanning the relevant vaccination or recovery certificates into the app.",
                             "Please also bear in mind that there are other STIKO vaccination recommendations, e.g. for people with certain pre-existing conditions or occupations, which cannot be determined from the certificates, which is why such recommendations cannot be referred to in the app.",
                             "For more information on the STIKO vaccination recommendations and all about COVID-19 and vaccination, see <a href='https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html' target='_blank' rel='noopener noreferrer'>RKI - Impfungen A - Z - COVID-19 und Impfen (German)</a>."
+                        ]
+                    },
+                    {
+                        "title": "Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?",
+                        "anchor": "vac_booster_jj",
+                        "active": true,
+                        "textblock": [
+                            "This may occur if a basic immunization was given with the Johnson & Johnson (J&J) vaccine. Since only one vaccination is required for a basic immunization with the J&J vaccine, the entry '2 of 2' must be made in the vaccination certificate for the booster vaccination under 'Number in a series of vaccinations'.",
+                            "For basic immunization with vaccines other than J&J, such as BioNTech, Moderna, or AstraZeneca, the second dose is also entered '2 of 2' under 'Number in a series of vaccinations'. Such vaccinations usually require a waiting period of 14 days until full vaccination protection after the 2nd dose of the basic immunization.",
+                            "As a result, checking apps, such as the CovPassCheck app, cannot distinguish in this particular case whether it is a booster vaccination for a J&J basic immunization or the second dose of the basic immunization. Therefore, if a vaccination with the J&J vaccine was previously performed and '2 of 2' was noted in the certificate of the booster vaccination, the vaccination certificate for the booster vaccination will be shown as invalid for 14 days.",
+                            "On the other hand, in case of previous basic immunization by two doses, the booster vaccination is declared as the 3rd of 3 vaccinations. By noting '3 of 3', the app correctly recognizes the booster vaccination as such and the 14-day waiting period for full vaccination protection is not displayed. Once a second booster vaccination has been administered with J&J after the basic immunization, the display of the fourteen day waiting period will be omitted as '3 of 3' will be entered as the number of the vaccination for this certificate.",
+                            "You can continue to show your basic immunization certificate as proof for these 14 days. This will retain its validity, provided that the technical or effective validity has not expired."
                         ]
                     },
                     {
@@ -684,11 +706,13 @@
                         "active": true,
                         "textblock": [
                             "<b> Questions and answers about functionality, misuse, and privacy:</b>",
-                            "<ul><li><a href='#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'>How does event registration work in the Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self' rel='noopener noreferrer'> How is the event registration technically implemented?</a></li><li><a href='#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>For which locations and events is event registration suitable?</a></li><li><a href='#check_in_misuse' target='_self' rel='noopener noreferrer'>How do I as an event organizer prevent misuse?</a></li><li><a href='#check_in_prevent_false_warnings' target='_self' rel='noopener noreferrer'>How do I prevent false warnings as an event participant?</a></li><li><a href='#check_in_privacy' target='_self' rel='noopener noreferrer'>Do I have to worry that the use of the event registration will make my whereabouts or personal data public?</a></li></ul>",
+                            "<ul><li><a href='#check_in_how_does_it_work' target='_self'>How does event registration work in the Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self'> How is the event registration technically implemented?</a></li><li><a href='#check_in_which_places_and_events' target='_self'>For which locations and events is event registration suitable?</a></li><li><a href='#check_in_misuse' target='_self'>How do I as an event organizer prevent misuse?</a></li><li><a href='#check_in_prevent_false_warnings' target='_self'>How do I prevent false warnings as an event participant?</a></li><li><a href='#check_in_privacy' target='_self'>Do I have to worry that the use of the event registration will make my whereabouts or personal data public?</a></li></ul>",
                             "<b> Questions and answers about the Event QR code:</b>",
-                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Who generates the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can the Event QR code also be set up and used for e.g. a private birthday party, providing this is legally possible?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Where can the Event QR code be generated?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Can Event QR codes from other apps be scanned with the CWA?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Is there a way to check in without a smartphone (dongle or similar)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>How should I scan the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> What happens if I scan an Event QR code but do not have the CWA installed on my smartphone?</a></li></ul>",
+                            "<ul><li><a href='#check_in_qr_code' target='_self'>Who generates the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self'> Can the Event QR code also be set up and used for e.g. a private birthday party, providing this is legally possible?</a></li><li><a href='#check_in_qr_code' target='_self'>Where can the Event QR code be generated?</a></li><li><a href='#check_in_qr_code' target='_self'>Is it possible to check in using the CWA to scan Event QR codes from other apps?</a></li><a href='#check_in_qr_code' target='_self'>Is it possible to check in using other contact tracing apps to scan an Event QR code generated by the CWA?</a></li><li><a href='#check_in_qr_code' target='_self'> Is there a way to check in without a smartphone (dongle or similar)?</a></li><li><a href='#check_in_qr_code' target='_self'>How should I scan the Event QR code?</a></li><li><a href='#check_in_qr_code' target='_self'> What happens if I scan an Event QR code but do not have the CWA installed on my smartphone?</a></li></ul>",
+                            "<b> Questions and answers about the joint use of luca-QR-Codes:</b>",
+                            "<ul><li><a href='#check_in_luca' target='_self'>How does the collaboration between the Corona-Warn-App and luca work?</a></li><li><a href='#check_in_luca' target='_self'>Do app users need to change settings on their smartphones?</a></li><li><a href='#check_in_luca' target='_self'>What happens when QR codes are scanned by the Corona-Warn-App?</a></li><li><a href='#check_in_luca' target='_self'>How else do the Corona-Warn-App and luca app differ when it comes to check-in/event registration?</a></li><li><a href='#check_in_luca' target='_self'>Can I warn for others regardless of which QR code I have scanned?</a></li><li><a href='#check_in_luca' target='_self'>Can the Corona-Warn-App read and process the QR codes from luca?</a></li><li><a href='#check_in_luca' target='_self'>Can luca also read and process QR codes from the Corona-Warn-App?</a></li><li><a href='#check_in_luca' target='_self'>Can users of the luca app be alerted if CWA users test positive?</a></li><li><a href='#check_in_luca' target='_self'>Why was joint use implemented?</a></li><li><a href='#check_in_luca' target='_self'>Why is luca QR code joint use coming now?</a></li><li><a href='#check_in_luca' target='_self'>Can all QR codes for check-in be read immediately by the Corona-Warn-App and the luca app?</a></li><li><a href='#check_in_luca' target='_self'>Is the data of the users of the Corona-Warn-App still secure?</a></li><li><a href='#check_in_luca' target='_self'>What data is transferred from the CWA to luca?</a></li><li><a href='#check_in_luca' target='_self'>Do we now only need one app for event registration?</a></li><li><a href='#check_in_luca' target='_self'>Do users need to install both apps for it to work?</a></li></ul>",
                             "<b> Questions and answers about the warning:</b>",
-                            "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What is the procedure in case of a positive result?<li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Does everyone who scanned the same Event QR code get a warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'> How is the risk determined?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can the user see what the alert is based on, i.e. which scanned Event QR code caused the warning?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a></li></ul>"
+                            "<ul><li><a href='#check_in_qr_warning' target='_self'>What is the procedure in case of a positive result?<li><a href='#check_in_qr_warning' target='_self'>Does everyone who scanned the same Event QR code get a warning?</a></li><li><a href='#check_in_qr_warning' target='_self'>What exactly needs to happen in this new feature for users who have checked into a specific location to be warned through the app?</a></li><li><a href='#check_in_qr_warning' target='_self'> How is the risk determined?</a></li><li><a href='#check_in_qr_warning' target='_self'>When do I receive a low-risk warning (green tile), when do I receive a high-risk warning (red tile)?</a></li><li><a href='#check_in_qr_warning' target='_self'>Can the user see what the alert is based on, i.e. which scanned Event QR code caused the warning?</a></li><li><a href='#check_in_qr_warning' target='_self'>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</a></li></ul>"
                         ]
                     },
                     {
@@ -766,8 +790,10 @@
                             "Yes of course, that is possible.",
                             "<b>Where can the Event QR code be generated?</b>",
                             "The QR code can be generated directly in the app or <a href='../eventregistration' target='_self' rel='noopener noreferrer'>here on the website</a>  and then printed as a PDF or scanned directly from the app.",
-                            "<b>Can Event QR codes from other apps be scanned with the CWA?</b>",
-                            "No, currently it is not possible to scan the event QR codes from other apps with the Corona-Warn-App.",
+                            "<b>Is it possible to check in using the CWA to scan Event QR codes from other apps?</b>",
+                            "Yes, you can scan the Event QR codes from the luca app with the Corona-Warn-App. It is not possible to scan the event QR codes from other apps. More details in <a href='#check_in_luca' target='_self' rel='noopener noreferrer'>the section about joint use of luca-QR-codes</a>.",
+                            "<b>Is it possible to check in using other contact tracing apps to scan an Event QR code generated by the CWA?</b>",
+                            "No, currently it is not possible to use other contact tracing apps to check in using event QR codes generated by the Corona-Warn-App.",
                             "<b>Is there a way to check in without a smartphone (dongle or similar)?</b>",
                             "No, that is not possible.",
                             "<b>How should I scan the Event QR code?</b>",
@@ -792,6 +818,51 @@
                             "After a red tile warning (high risk) you should quarantine and have a PCR test taken immediately. If the test result is positive, a report is sent to the health authority by the doctor/test center. It is recommended that you share the positive test result via the CWA. In addition, the information can be also be shared manually with the health department using the existing export function of the contact diary.",
                             "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>To the index of the event registration</a>"
                         ]
+                    },
+                    {
+                        "title": "The most important questions about joint use of luca-QR-Codes",
+                        "anchor": "check_in_luca",
+                        "active": true,
+                        "textblock": [
+                            "<b>1. How does the collaboration between the Corona-Warn-App and luca work?</b>",
+                            "The Corona-Warn-App can now scan QR codes created for event registration with the luca app and perform its own check-in process. Luca cannot scan QR codes created by the Corona-Warn-App.",
+                            "<b>2. Do app users need to change settings on their smartphones?</b>",
+                            "No. The now-created joint use of the luca QR codes by the Corona-Warn-App, which can be used for event registrations and check-ins, does not result in any further changes for users.",
+                            "CWA users will still be able to participate in the CWA system without entering contact information, while luca users' contact information can be decoded as usual in the case of contact tracing exclusively by the responsible health department.",
+                            "<b>3. What happens when QR codes are scanned by the Corona-Warn-App?</b>",
+                            "The QR codes generated by the luca app for the check-in process can be read by both the Corona-Warn-App (CWA) and luca.",
+                            "If users of the Corona-Warn-App scan the QR code, they will automatically be taken to the check-in area of the CWA. More information on the process can be found here: <a href='../blog/2021-10-11-cwa-most-important-features/' target='_blank'>Why the Corona-Warn-App is important right now (Blog)</a>",
+                            "<b>4. How else do the Corona-Warn-App and luca app differ when it comes to check-in/event registration?</b>",
+                            "Using the Corona-Warn-App, users can check in to an event, for example. If they later test positive for SARS-CoV-2, they can use the Corona-Warn-App to immediately warn other participants at the same event. It does not matter whether the QR code was originally generated by the Corona-Warn-App or the luca app.",
+                            "<b>5. Can I warn for others regardless of which QR code I have scanned?</b>",
+                            "Organizers can warn for others regardless of which QR code they have scanned with the CWA. For more information on warning for others, see the following links:<ul><li><a href='#warn_for_others' target='_blank'>FAQ: How can I warn for others?</a></li><li><a href='../blog/2021-09-08-cwa-version-2-9/' target='_blank'>Blog: Corona-Warn-App version 2.9: Organizers can use the check-in function to warn guests on behalf of the health department</a></li></ul>",
+                            "<b>6. Can the Corona-Warn-App read and process the QR codes from luca?</b>",
+                            "Yes. The Corona-Warn-App can scan QR codes issued for event registration using the luca app and perform its own check-in process from the CWA.",
+                            "<b>7. Can luca also read and process QR codes from the Corona-Warn-App?</b>",
+                            "No, this is not possible. The luca system transmits the contact data required for this purpose from visitors to the event or establishment in question to the health authorities as part of contact tracking, which must be health authority-compliant. However, the CWA does not provide for the transmission of contact data. Thus, QR codes are needed for this process, which are different from those required by the CWA.",
+                            "<b>8. Can users of the luca app be alerted if CWA users test positive?</b>",
+                            "No, not automatically. Even if users of both apps scan the same QR code, no data flows from one system to the other. Only when the responsible health office learns of the infection from a test laboratory, for example, can it personally inform the affected luca users about the possible risk contact. However, the principle of the CWA is based on the fact that users are warned pseudonymously via a 'red tile' (increased risk) in the event of a risk encounter. No interaction with a health department is necessary in this process.",
+                            "<b>9. Why was joint use implemented?</b>",
+                            "In order to simplify the event registration (check-in) process, the Corona-Warn-App can 'joint use' QR codes issued by luca. That is, the Corona-Warn-App can read and process the QR code that luca has issued.",
+                            "<b>10. Why is luca QR code joint use coming now?</b>",
+                            "In light of rising incidences, and with an eye on the next few weeks and months when life will increasingly take place indoors, it is important to simplify and speed up the check-in process and add a QR code that can be read by both apps.",
+                            "The process of integration took some time to meet the high data protection requirements of the CWA.",
+                            "<b>11. Can all QR codes for check-in be read immediately by the Corona-Warn-App and the luca app?</b>",
+                            "The luca-QR codes generated as of 25 May 2021 can be read (scanned) by both the Corona-Warn-App and luca app and processed for the check-in process - unless the operators have explicitly contradicted this. In the case of an incompatible luca QR code, you can contact the organizer, who will issue a new compatible luca QR code if necessary. The support of private QR codes is still not possible.",
+                            "<b>12. Is the data of the users of the Corona-Warn-App still secure?</b>",
+                            "Yes. Joint use only applies to the QR codes used for event registration and check-in. Corona-Warn-App and luca app continue to be different offerings with different objectives. For the CWA, it still applies that it does not collect any personal data.",
+                            "The joint use of QR codes was carefully prepared. All security-related aspects were worked out and checked in close cooperation with both the BfDI and the BSI.",
+                            "In addition, the Corona-Warn-App continues to operate in a very data-saving manner.",
+                            "<b>13. What data is transferred from the CWA to luca?</b>",
+                            "No data is transferred from the Corona-Warn-App to the luca app.",
+                            "<b>14. Do we now only need one app for event registration?</b>",
+                            "The Corona-Warn-App and luca are based on different approaches and have different goals.",
+                            "The Corona-Warn-App enables a quick warning of people based on the peer-to-peer principle. This warning is done pseudonymously via the Corona-Warn-App itself.",
+                            "The luca app, on the other hand, is mainly used to digitally collect contact data of the participants of an event. In the event of infection, the person who tests positive for SARS-CoV-2 transfers his or her contact data to the responsible health department. This department then contacts all persons who have scanned the same QR code.",
+                            "In the respective state ordinances on infection protection, it is stipulated whether and how contact tracking must take place at events.",
+                            "<b>15. Do users need to install both apps for it to work?</b>",
+                            "No, in order to scan QR codes from the luca app with the Corona-Warn-App, the luca app does not need to be installed."
+                       ]
                     }
                 ]
             },
@@ -853,7 +924,7 @@
                         "anchor": "android_location",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/> If you are using Android 11 and the Corona-Warn-App version 1.5 or above, you don't have to allow location access in order to use the Corona-Warn-App. This notification is not applicable for Android 11 phones and will be removed in one of the following updates of the Corona-Warn-App.<hr/>",
+                            "<b>UPDATE</b><br/> If you are using Android 11 and the Corona-Warn-App version 1.5 or above, you don't have to allow location access in order to use the Corona-Warn-App.<hr/>",
                             "Corona-Warn-App does not track your location and does not have permission to do this. The reason for this message is an Android requirement: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> and <a href='https://support.google.com/android/answer/9930236?hl=en' target='_blank' rel='noopener noreferrer'>About the Exposure Notifications System and Android location settings</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in the Android developer documentation). However, this doesn't mean that apps that use Bluetooth can automatically track your location.",
                             "Since Corona-Warn-App must be able to detect devices in close proximity, you must activate the general system setting 'Use location'. However: The app will never record your location and will never use GPS. You can verify this yourself:",
                             "<ol><li>Open 'Settings' on your phone (not the settings of the app).</li><li>Choose 'Security & Location' > 'Location' > 'App level permissions'.</li><li>You see a list of apps that can use your location if you give them permission. Corona-Warn-App is not listed here.</li></ol>",

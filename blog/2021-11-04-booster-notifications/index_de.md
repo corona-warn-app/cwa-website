@@ -29,7 +29,7 @@ Wenn die aktuellen Empfehlungen auf den oder die Nutzer\*in zutreffen, weist die
 <img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
 <img src="./neuigkeiten-zertifikate.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
 <img src="./benachrichtung-unter-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
-<figcaption aria-hidden="true"><em>Links: Push-Nachricht der Corona-Warn-App. Mitte: Neuigkeiten im Zertifikatsbereich in der App. Rechts: Unter dem Impfzertifikat informiert die App die Nutzer*innen </em></figcaption>
+<figcaption aria-hidden="true"><em> Die App weist Nutzer*innen mit einer Push-Nachricht und dem roten Punkt auf die Neuigkeiten hin. Unter dem Zertifikat finden Nutzer*innen detaillierte Informationen. </em></figcaption>
 </center>
 <br></br>
 
