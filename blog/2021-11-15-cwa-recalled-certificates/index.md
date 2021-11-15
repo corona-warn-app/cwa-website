@@ -23,9 +23,9 @@ In the past, there were a few pharmacies that issued fake vaccination certificat
 <br></br>
 
 
-**Important:** The certificates are only checked on the users own smartphones. A recalled certificate will show as invalid when checked with the CovPassCheck app though.
+**Important:** The certificates are only checked on the users' own smartphones. A recalled certificate will show as invalid when checked with the CovPassCheck app though.
 
-This affects all users who have received a certificate from a pharmacy in question, even if their certificate is valid and genuine. These users can get a new digital certificate at pharmacy for free. In order to get one, they should bring their yellow vaccination booklet an ID.
+This affects all users who have received a certificate from a pharmacy in question, even if their certificate is valid and genuine. These users can get a new digital certificate at a pharmacy for free. In order to get one, they should bring their yellow vaccination booklet and ID.
 
 The Corona-Warn-App informs users as usual with a push notification. The red dot directs users to the certificate under which they find further information. 
 
@@ -39,13 +39,4 @@ The Corona-Warn-App informs users as usual with a push notification. The red dot
 <br></br>
 
 
-The project team recommends all users to update the app to version 2.13.3 (Android) or 2.13.2 (iOS). 
-
-
-
-
-
-
-
-
-
+The project team recommends all users to **update the app to version 2.13.3 (Android) or 2.13.2 (iOS)**. 
