@@ -3,11 +3,14 @@ page-title: "Current facts and figures about the Corona-Warn-App"
 page-description: "Current facts and figures"
 page-name: facts-and-figures
 page-name_de: facts-and-figures
-author: Janina Hoerdt
+author: Hanna Heine
 layout: blog
 ---
 
-In this post, you can find [regularly updated facts and figures](/assets/documents/2021-09-30-cwa-daten-fakten.pdf) about the Corona-Warn-App, as well as the number of transmitted and shared test results. 
+In this post, you will find facts and figures on the development of the Corona-Warn-App, as well as on the number of transmitted and shared test results up to September 30, 2021.
+
+You can now find the most important key figures under "Analysis" in an [interactive dashboard](/en/analysis/) that is updated daily. For more information on the dashboard, visit the blog: [Key Figures Dashboard for the Corona-Warn-App](/en/blog/2021-10-04-key-figures-dashboard/).
+
 
 
 
