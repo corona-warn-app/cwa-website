@@ -179,7 +179,7 @@
                         "active": true,
                         "textblock": [
                             "Using this step-by-step guide, you can remove certificates from the Corona-Warn-App. Please note that the first three steps apply to both iOS and Android, but only one of the last two steps needs to be followed, depending on which operating system matches yours. Vaccination certificates, test certificates and recovery certificates are mentioned as 'Certificates', since the process of removing them is identical.",
-                            "<ul><li>Tap on the 'Certificates' tab</li><li>Tap on the certificate you would like to remove</li><li>Scroll down to and tap on the tile that matches the certificate you want to delete.</li><li>iOS: Tap on 'Delete Certificate' at the bottom of the screen</li><li>Android: Tap on the three-dot symbol on the top right of the screen, and then tap on 'Remove'</li></ul>"
+                            "<ul><li>Tap on the 'Certificates' tab</li><li>Tap on the certificate you would like to remove</li><li>Scroll down to and tap on the tile that matches the certificate you want to delete.</li><li>iOS: Tap on 'More' at the bottom of the screen and then on 'Delete Vaccination Certificate', 'Remove Certificate of Recovery' or 'Delete Test Certificate'</li><li>Android: Tap on the three-dot symbol on the top right of the screen, and then tap on 'Remove Certificate' (or 'Remove' for version 2.9 and earlier)</li></ul>"
                         ]
                     },
                     {
@@ -329,7 +329,7 @@
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></li>",
                             "</ul>"
                         ]
                     },
@@ -434,6 +434,18 @@
                             "If the assumptions derived from your saved certificates do not apply because you have already received further COVID-19 vaccinations or have undergone a proven SARS-CoV-2 infection, you can ignore this notification. In this case, we recommend scanning the relevant vaccination or recovery certificates into the app.",
                             "Please also bear in mind that there are other STIKO vaccination recommendations, e.g. for people with certain pre-existing conditions or occupations, which cannot be determined from the certificates, which is why such recommendations cannot be referred to in the app.",
                             "For more information on the STIKO vaccination recommendations and all about COVID-19 and vaccination, see <a href='https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html' target='_blank' rel='noopener noreferrer'>RKI - Impfungen A - Z - COVID-19 und Impfen (German)</a>."
+                        ]
+                    },
+                    {
+                        "title": "Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?",
+                        "anchor": "vac_booster_jj",
+                        "active": true,
+                        "textblock": [
+                            "This may occur if a basic immunization was given with the Johnson & Johnson (J&J) vaccine. Since only one vaccination is required for a basic immunization with the J&J vaccine, the entry '2 of 2' must be made in the vaccination certificate for the booster vaccination under 'Number in a series of vaccinations'.",
+                            "For basic immunization with vaccines other than J&J, such as BioNTech, Moderna, or AstraZeneca, the second dose is also entered '2 of 2' under 'Number in a series of vaccinations'. Such vaccinations usually require a waiting period of 14 days until full vaccination protection after the 2nd dose of the basic immunization.",
+                            "As a result, checking apps, such as the CovPassCheck app, cannot distinguish in this particular case whether it is a booster vaccination for a J&J basic immunization or the second dose of the basic immunization. Therefore, if a vaccination with the J&J vaccine was previously performed and '2 of 2' was noted in the certificate of the booster vaccination, the vaccination certificate for the booster vaccination will be shown as invalid for 14 days.",
+                            "On the other hand, in case of previous basic immunization by two doses, the booster vaccination is declared as the 3rd of 3 vaccinations. By noting '3 of 3', the app correctly recognizes the booster vaccination as such and the 14-day waiting period for full vaccination protection is not displayed. Once a second booster vaccination has been administered with J&J after the basic immunization, the display of the fourteen day waiting period will be omitted as '3 of 3' will be entered as the number of the vaccination for this certificate.",
+                            "You can continue to show your basic immunization certificate as proof for these 14 days. This will retain its validity, provided that the technical or effective validity has not expired."
                         ]
                     },
                     {
@@ -818,7 +830,7 @@
                             "No. The now-created joint use of the luca QR codes by the Corona-Warn-App, which can be used for event registrations and check-ins, does not result in any further changes for users.",
                             "CWA users will still be able to participate in the CWA system without entering contact information, while luca users' contact information can be decoded as usual in the case of contact tracing exclusively by the responsible health department.",
                             "<b>3. What happens when QR codes are scanned by the Corona-Warn-App?</b>",
-                            "The QR code for event registration or check-in can be scanned using the Corona-Warn-App (CWA) or luca.",
+                            "The QR codes generated by the luca app for the check-in process can be read by both the Corona-Warn-App (CWA) and luca.",
                             "If users of the Corona-Warn-App scan the QR code, they will automatically be taken to the check-in area of the CWA. More information on the process can be found here: <a href='../blog/2021-10-11-cwa-most-important-features/' target='_blank'>Why the Corona-Warn-App is important right now (Blog)</a>",
                             "<b>4. How else do the Corona-Warn-App and luca app differ when it comes to check-in/event registration?</b>",
                             "Using the Corona-Warn-App, users can check in to an event, for example. If they later test positive for SARS-CoV-2, they can use the Corona-Warn-App to immediately warn other participants at the same event. It does not matter whether the QR code was originally generated by the Corona-Warn-App or the luca app.",
@@ -912,7 +924,7 @@
                         "anchor": "android_location",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE</b><br/> If you are using Android 11 and the Corona-Warn-App version 1.5 or above, you don't have to allow location access in order to use the Corona-Warn-App. This notification is not applicable for Android 11 phones and will be removed in one of the following updates of the Corona-Warn-App.<hr/>",
+                            "<b>UPDATE</b><br/> If you are using Android 11 and the Corona-Warn-App version 1.5 or above, you don't have to allow location access in order to use the Corona-Warn-App.<hr/>",
                             "Corona-Warn-App does not track your location and does not have permission to do this. The reason for this message is an Android requirement: Bluetooth devices in close proximity to your device can only be detected if 'Use location' is activated on your phone (see <a href='https://support.google.com/android/answer/9888358?hl=en' target='_blank' rel='noopener noreferrer'>Use the COVID-19 Exposure Notifications System on your Android phone</a> and <a href='https://support.google.com/android/answer/9930236?hl=en' target='_blank' rel='noopener noreferrer'>About the Exposure Notifications System and Android location settings</a> in the Android help and <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in the Android developer documentation). However, this doesn't mean that apps that use Bluetooth can automatically track your location.",
                             "Since Corona-Warn-App must be able to detect devices in close proximity, you must activate the general system setting 'Use location'. However: The app will never record your location and will never use GPS. You can verify this yourself:",
                             "<ol><li>Open 'Settings' on your phone (not the settings of the app).</li><li>Choose 'Security & Location' > 'Location' > 'App level permissions'.</li><li>You see a list of apps that can use your location if you give them permission. Corona-Warn-App is not listed here.</li></ol>",
