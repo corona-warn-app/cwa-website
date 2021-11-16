@@ -1,5 +1,5 @@
 {
-    "lang": "en-UK",
+    "lang": "en-GB",
     "documentLang": "en",
 	"topic": "Analysis",
     "title": "Corona-Warn-App (CWA): Key performance indicators",
@@ -7,7 +7,7 @@
     "updateNotice": "The data of the CWA dashboard is updated on a daily basis at 10:30 AM.",
     "range":{
         "picker": {
-            "timerange": "Timerange",
+            "timerange": "Time range",
             "inputs": {
                 "from": "From",
                 "to": "To",
@@ -101,7 +101,7 @@
             "title": "Sharing behaviour",
             "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_sharing_data.zip",
             "info": {
-                "content": "<strong>Sharing behaviour</strong><p>Count of positive test results, for which a QR code was registered or a teleTAN requested for validation, as well as the sum of positive test results validated with either option.</p><strong>Sharing behaviour: QR codes</strong><p>Count of positive test results, validated through QR code registration, shared and not shared in the Corona-Warn-App.</p><strong>Sharing behaviour: teleTANs</strong><p>Count of positive test results, for which a teleTAN was requested for validation, shared and not shared in the Corona-Warn-App.</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong>Data sources</strong><p>Corona-Warn-App backend</p><strong>Additional information</strong><p>Only positive test results are relevant for ending chains of infection. To prevent abuse, positive test results must be verified. There are two options for verifying test results: a QR code or a teleTAN, which must be entered in the Corona warning app. The user receives the QR code when the sample for the test is collected. By scanning the QR code, the test can be registered in the Corona-Warn-App. As soon as the result is available, it is automatically retrieved and displayed on the smartphone. The user can then decide to release her/his own random codes from the last 14 days to warn possible risk contacts. If no QR code is available or if it is lost, the user can call the verification hotline. A teleTAN is generated there to verify the positive test result. This teleTAN must be entered into the app by the user.</p>"
+                "content": "<strong>Sharing behaviour</strong><p>Count of positive test results, for which a QR code was registered or a teleTAN requested for validation, as well as the sum of positive test results validated with either option.</p><strong>Sharing behaviour: QR codes</strong><p>Count of positive test results, validated through QR code registration, shared and not shared in the Corona-Warn-App.</p><strong>Sharing behaviour: teleTANs</strong><p>Count of positive test results, for which a teleTAN was requested for validation, shared and not shared in the Corona-Warn-App.</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong>Data sources</strong><p>Corona-Warn-App backend</p><strong>Additional information</strong><p>Only positive test results are relevant for ending chains of infection. To prevent abuse, positive test results must be verified. There are two options for verifying test results: a QR code or a teleTAN, which must be entered in the Corona-Warn-App. The user receives the QR code when the sample for the test is collected. By scanning the QR code, the test can be registered in the Corona-Warn-App. As soon as the result is available, it is automatically retrieved and displayed on the smartphone. The user can then decide to release her/his own random codes from the last 14 days to warn possible risk contacts. If no QR code is available or if it is lost, the user can call the verification hotline. A teleTAN is generated there to verify the positive test result. This teleTAN must be entered into the app by the user.</p>"
             },
             "totalKey": [
                 "qr_teletan_redeemable_cumulated",
@@ -292,11 +292,11 @@
     	},
     	{
     		"title": "BMG: Impfdashboard (EN)",
-            "desc": "Workdaily updated information on vaccination status and progress in Germany, from the website 'together against corona' from the German federal ministry of health (BMG).",
+            "desc": "Daily updated information on vaccination status and progress in Germany, from the website 'together against corona' from the German federal ministry of health (BMG).",
     		"link": "https://impfdashboard.de/en/"
     	},
     	{
-    		"title": "WHO: COVID 19 Dashboard (EN)",
+    		"title": "WHO: COVID-19 Dashboard (EN)",
             "desc": "Daily updated information on the worldwide pandemic situation, from the World Health Organisation (WHO).",
     		"link": "https://covid19.who.int/"
     	},
