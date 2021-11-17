@@ -192,7 +192,7 @@
                         "active": true,
                         "textblock": [
                             "Mithilfe dieser Schritt-für-Schritt Anleitung können Sie Zertifikate aus der Corona-Warn-App entfernen. Bitte beachten Sie, dass die ersten drei Schritte für sowohl iOS als auch Android gelten, aber nur jeweils einer der letzten beiden Schritte befolgt werden muss, je nachdem welches Betriebssystem mit Ihrem übereinstimmt. Impfzertifikate, Testzertifikate und Genesenenzertifikate werden als 'Zertifikate' zusammengefasst, da der Ablauf bei allen identisch ist.",
-                            "<ul><li>Tippen Sie auf den Reiter 'Zertifikate'</li><li>Tippen Sie auf das Zertifikat, das Sie entfernen wollen</li><li>Scrollen Sie runter und tippen Sie auf die Kachel, die dem Zertifikat entspricht, das Sie löschen wollen</li><li>iOS: Tippen Sie unten auf dem Bildschirm auf 'Zertifikat entfernen'</li><li>Android: Tippen Sie auf das drei-Punkte-Icon oben rechts auf dem Bildschirm, und danach auf 'Entfernen'</li></ul>"
+                            "<ul><li>Tippen Sie auf den Reiter 'Zertifikate'</li><li>Tippen Sie auf das Zertifikat, das Sie entfernen wollen</li><li>Scrollen Sie runter und tippen Sie auf die Kachel, die dem Zertifikat entspricht, das Sie löschen wollen</li><li>iOS: Tippen Sie unten auf dem Bildschirm auf 'Mehr' und dann auf 'Impfzertifikat löschen' bzw. 'Genesenen- oder Testzertifikat entfernen'</li><li>Android: Tippen Sie auf das drei-Punkte-Icon oben rechts auf dem Bildschirm, und danach auf 'Zertifikat entfernen' (bzw. auf 'Entfernen' für Version 2.9 und früher)</li></ul>"
                         ]
                     },
                     {
@@ -337,23 +337,23 @@
                         ]
                     },
                     {
-                        "title": "Fragen und Antworten zur Auffrischungsimpfung und Benachrichtigungen zum Impfzertifikat.",
+                        "title": "Fragen und Antworten zur Auffrischungsimpfung und Benachrichtigungen zum Impfzertifikat",
                         "anchor": "vac_cert_booster",
                         "active": "true",
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_invalid_211111' target='_self'>Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?</a></li><li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?</a></li>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?</a></li><li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischungsimpfung?</a></li>",
                             "</ul>"
                         ]
                     },
                     {
                         "title": "Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?",
-                        "anchor": "vac_cert_invalid_211111",
+                        "anchor": "vac_cert_invalid_21_1",
                         "active": true,
                         "textblock": [
-                            "Diese Meldung informiert Sie darüber, dass ihr Impfzertifikat ab dem 11.11.2021 nicht mehr gültig ist und Sie sich rechtzeitig um ein neues digitales Zertifikat bemühen sollten.",
+                            "Diese Meldung informiert Sie darüber, dass Ihr Impfzertifikat ab dem 15.11.2021 nicht mehr gültig ist und Sie sich rechtzeitig um ein neues digitales Zertifikat bemühen sollten.",
                             "Sie können sich unter Vorlage Ihres gelben Impfpasses und eines Lichtbildausweises in Ihrer Apotheke kostenfrei ein neues Impfzertifikat ausstellen lassen.",
-                            "Dies geschieht aus Sicherheitsgründen und betrifft alle Zertifikate der von Ihnen besuchten Apotheke. Diese Zertifikate werden am 11.11.2021 gesperrt und müssen daher neu ausgestellt werden."
+                            "Dies geschieht aus Sicherheitsgründen und betrifft alle Zertifikate der von Ihnen besuchten Apotheke. Diese Zertifikate werden am 15.11.2021 gesperrt und müssen daher neu ausgestellt werden."
                         ]
                     },
                     {
@@ -450,6 +450,18 @@
                         ]
                     },
                     {
+                        "title": "Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischungsimpfung?",
+                        "anchor": "vac_booster_jj",
+                        "active": true,
+                        "textblock": [
+                            "Dieser Fall kann eintreten, wenn eine Grundimmunisierung mit dem Impfstoff von Johnson & Johnson (J&J) erfolgte. Da für eine Grundimmunisierung mit dem J&J-Impfstoff nur eine Impfung nötig ist, muss im Impfzertifikat für die Auffrischungsimpfung unter „Nummer der Impfung' der Eintrag „2 von 2“ vorgenommen werden.",
+                            "Bei der Grundimmunisierung mit anderen Impfstoffen als J&J, wie z.&nbsp;B. BioNTech, Moderna, oder AstraZeneca, wird die zweite Dosis ebenfalls unter „Nummer der Impfung“ der Eintrag „2 von 2“ vorgenommen. Solchen Impfungen setzen für gewöhnlich eine Wartezeit von 14 Tagen bis zum vollständigen Impfschutz nach der 2. Dosis der Grundimmunisierung voraus.",
+                            "Dies hat zur Folge, dass Prüf-Apps, wie die CovPassCheck-App, in diesem speziellen Fall nicht unterscheiden können, ob es sich um eine Auffrischimpfung für eine J&J-Grundimmunisierung oder um die zweite Dosis der Grundimmunisierung handelt. Daher wird das Impfzertifikat für die Auffrischungsimpfung für 14 Tage als ungültig angezeigt, wenn vorher eine Impfung mit dem J&J-Impfstoff durchgeführt wurde und in dem Zertifikat der Auffrischimpfung „2 von 2“ notiert wurde.",
+                            "Andererseits wird bei einer vorangegangenen Grundimmunisierung durch zwei Dosen die Auffrischungsimpfung als die 3. von 3 Impfungen deklariert. Durch den Eintrag „3 von 3“ erkennt die App die Auffrischungsimpfung korrekt als solche an und es entfällt die Anzeige der 14 Tage Wartezeit bis zum vollen Impfschutz. Sobald eine zweite Auffrischungsimpfung nach der Grundimmunisierung durch J&J durchgeführt wurde, wird die Anzeige der vierzehntägigen Wartezeit entfallen, da für dieses Zertifikat „3 von 3“ als Nummer der Impfung eingetragen wird.",
+                            "Als Nachweis können Sie für diese 14 Tage weiterhin Ihr Impfzertifikat für die Grundimmunisierung vorzeigen. Dieses behält seine Gültigkeit, sofern die technische oder fachliche Gültigkeit nicht abgelaufen ist."
+                        ]
+                    },
+                    {
                         "title": "Kann ich den QR-Code auch ohne Internetverbindung vorzeigen?",
                         "anchor": "vac_cert_internet",
                         "active": true,
@@ -464,14 +476,6 @@
                         "textblock": [
                             "Im Allgemeinen ist der digitale Impfnachweis  (beziehungsweise digitale Test- oder Genesenennachweis) per Corona-Warn-App lediglich ein vollkommen freiwilliges und ergänzendes Angebot. Wenn Sie keinen digitalen Impfnachweis besitzen oder diesen verloren haben, ist der Impfnachweis über das bekannte „gelbe Heft“ (gelber Impfausweis) in der Regel weiterhin möglich und gültig. Außerdem können Sie Corona-Impfungen auch mit dem ausgedruckten Corona-Impfzertifikat für die vollständige Impfung nachweisen. Digitale Zertifikate können nachträglich durch Apotheken ausgestellt werden.",
                             "<b>Wichtig:</b> Prüfen Sie bitte die lokalen Verordnungen der Bundesländer. Berlin beispielsweise verlangt, dass der Nachweis der Impfung gegen oder Genesung von SARS-CoV2 digital verifizierbar sein muss (Siehe <a href='https://www.berlin.de/corona/massnahmen/verordnung/' target='_blank' rel='noopener noreferrer'>https://www.berlin.de/corona/massnahmen/verordnung/</a> §&nbsp;8a Absatz&nbsp;2 Ziffer&nbsp;4). Das heißt, dass Sie gegebenenfalls ein entsprechendes digitales Zertifikat der EU entweder in der Corona-Warn-App, der CovPass-App oder als Papierausdruck zur Überprüfung vorzulegen haben."
-                        ]
-                    },
-                    {
-                        "title": "Wie soll der Nachweis einer Impfung geprüft werden können?",
-                        "anchor": "vac_cert_verification",
-                        "active": true,
-                        "textblock": [
-                            "Das Impfzertifikat (QR-Code) wird z.&nbsp;B. über die CovPass-App oder die Corona-Warn-App (CWA) digital oder alternativ als maschinenlesbarer Ausdruck genutzt. Das Impfzertifikat enthält nur Informationen zum Impfstatus, den Namen des Geimpften und das Geburtsdatum. Für Dienstleister, die den Impfstatus überprüfen möchten, wird es eine Prüf-App zur Prüfung des Impfzertifikats geben. Damit kann der Impfstatus ähnlich wie ein Barcode eines Flug- oder Bahntickets gescannt werden. Alternativ ist ein Nachweis mit dem analogen Impfausweis möglich."
                         ]
                     },
                     {
@@ -707,11 +711,13 @@
                         "active": true,
                         "textblock": [
                             "<b>Fragen und Antworten zur Funktionsweise, Missbrauch und Privatsphäre:</b>",
-                            "<ul><li><a href='#check_in_how_does_it_work' target='_self' rel='noopener noreferrer'>Wie funktioniert die Event-Registrierung in der Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self' rel='noopener noreferrer'>Wie ist die Event-Registrierung technisch umgesetzt?</a></li><li><a href='#check_in_which_places_and_events' target='_self' rel='noopener noreferrer'>Für welche Orte und Events eignet sich die Eventregistrierung?</a></li><li><a href='#check_in_misuse' target='_self' rel='noopener noreferrer'>Wie verhindere ich Missbrauch als Organisator eines Events?</a></li><li><a href='#check_in_prevent_false_warnings' target='_self' rel='noopener noreferrer'>Wie verhindere ich falsche Warnungen als Teilnehmer eines Events?</a></li><li><a href='#check_in_privacy' target='_self' rel='noopener noreferrer'>Muss ich befürchten, dass durch das Nutzen der Event-Registrierung meine Aufenthaltsorte oder personenbezogenen Daten bekannt werden?</a></li></ul>",
+                            "<ul><li><a href='#check_in_how_does_it_work' target='_self'>Wie funktioniert die Event-Registrierung in der Corona-Warn-App?</a></li><li><a href='#check_in_implementation' target='_self'>Wie ist die Event-Registrierung technisch umgesetzt?</a></li><li><a href='#check_in_which_places_and_events' target='_self'>Für welche Orte und Events eignet sich die Eventregistrierung?</a></li><li><a href='#check_in_misuse' target='_self'>Wie verhindere ich Missbrauch als Organisator eines Events?</a></li><li><a href='#check_in_prevent_false_warnings' target='_self'>Wie verhindere ich falsche Warnungen als Teilnehmer eines Events?</a></li><li><a href='#check_in_privacy' target='_self'>Muss ich befürchten, dass durch das Nutzen der Event-Registrierung meine Aufenthaltsorte oder personenbezogenen Daten bekannt werden?</a></li></ul>",
                             "<b>Fragen und Antworten zum Event-QR-Code:</b>",
-                            "<ul><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wer generiert den Event-QR-Code?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Kann der Event-QR-Code auch für z.&nbsp;B. die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Wo kann der Event-QR-Code generiert werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'> Können Event-QR-Codes von anderen Apps mit der CWA gescannt werden?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Ist es möglich, auch ohne Smartphone einen Check-in durchzuführen (Dongle o.&nbsp;ä.)?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Womit sollte ich den Event-QR-Code scannen?</a></li><li><a href='#check_in_qr_code' target='_self' rel='noopener noreferrer'>Was passiert, wenn ich einen Event-QR-Code scanne, die CWA aber nicht installiert habe?</a></li></ul>",
+                            "<ul><li><a href='#check_in_qr_code' target='_self'>Wer generiert den Event-QR-Code?</a></li><li><a href='#check_in_qr_code' target='_self'>Kann der Event-QR-Code auch für z.&nbsp;B. die – sollte das rechtlich möglich sein – private Geburtstagsfeier eingerichtet und genutzt werden?</a></li><li><a href='#check_in_qr_code' target='_self'>Wo kann der Event-QR-Code generiert werden?</a></li><li><a href='#check_in_qr_code' target='_self'>Kann man mit der CWA einchecken, indem man Event-QR-Codes anderer Apps scannt?</a></li><li><a href='#check_in_qr_code' target='_self'>Kann man mit anderen Kontaktverfolgungs-Apps einchecken, indem man die Event-QR-Codes der CWA scannt?</a></li><li><a href='#check_in_qr_code' target='_self'>Ist es möglich, auch ohne Smartphone einen Check-in durchzuführen (Dongle o.&nbsp;ä.)?</a></li><li><a href='#check_in_qr_code' target='_self'>Womit sollte ich den Event-QR-Code scannen?</a></li><li><a href='#check_in_qr_code' target='_self'>Was passiert, wenn ich einen Event-QR-Code scanne, die CWA aber nicht installiert habe?</a></li></ul>",
+                            "<b>Fragen und Antworten zur Mitnutzung der luca-QR-Codes:</b>",
+                            "<ul><li><a href='#check_in_luca' target='_self'>Wie funktioniert die Zusammenarbeit von der Corona-Warn-App und luca?</a></li><li><a href='#check_in_luca' target='_self'>Müssen Nutzende der Apps Einstellungen auf ihren Smartphones verändern?</a></li><li><a href='#check_in_luca' target='_self'>Was passiert beim Scan der QR-Codes durch die Corona-Warn-App?</a></li><li><a href='#check_in_luca' target='_self'>Wie unterscheiden sich die Corona-Warn-App und luca-App beim Check-in/der Eventregistrierung noch?</a></li><li><a href='#check_in_luca' target='_self'>Kann ich die Stellvertreter-Funktion nutzen, egal welchen QR-Code ich eingescannt habe?</a></li><li><a href='#check_in_luca' target='_self'>Kann die Corona-Warn-App die QR-Codes von luca lesen und verarbeiten?</a></li><li><a href='#check_in_luca' target='_self'>Kann auch luca die QR-Codes der Corona-Warn-App lesen und verarbeiten?</a></li><li><a href='#check_in_luca' target='_self'>Können Nutzende der luca-App gewarnt werden, wenn CWA-Nutzende positiv getestet wurden?</a></li><li><a href='#check_in_luca' target='_self'>Warum wurde die Mitnutzung umgesetzt?</a></li><li><a href='#check_in_luca' target='_self'>Warum kommt die Mitnutzung der luca-QR-Codes jetzt?</a></li><li><a href='#check_in_luca' target='_self'>Können alle QR-Codes zum Check-in sofort von der Corona-Warn-App und der luca-App gelesen werden?</a></li><li><a href='#check_in_luca' target='_self'>Sind die Daten der Nutzenden der Corona-Warn-App weiterhin sicher?</a></li><li><a href='#check_in_luca' target='_self'>Welche Daten werden von der CWA an luca übertragen?</a></li><li><a href='#check_in_luca' target='_self'>Braucht man nur noch eine App für die Eventregistrierung?</a></li><li><a href='#check_in_luca' target='_self'>Müssen Nutzende beide Apps installieren, damit es funktioniert?</a></li></ul>",
                             "<b>Fragen und Antworten zur Warnung:</b>",
-                            "<ul><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Wie ist der Ablauf bei einem positiven Befund?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Bekommen alle, die den gleichen Event-QR-Code gescannt haben, eine Warnung?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Was genau muss passieren, damit Nutzer, die an einem bestimmten Ort eingecheckt waren, durch die neue Funktion eine Warnung der App bekommen?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Wie wird das Risiko ermittelt?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Wann erhalte ich eine Warnung über ein geringes Risiko (grüne Kachel), wann über ein hohes (rote Kachel)?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Kann der Nutzer erkennen worauf die Warnung basiert, d.&nbsp;h. wegen welchem gescannten Event-QR-Code die Warnung erfolgt?</a></li><li><a href='#check_in_qr_warning' target='_self' rel='noopener noreferrer'>Können diese Informationen freiwillig dem Gesundheitsamt mitgeteilt werden? Wenn ja, welche Informationen fließen?</a></li></ul>"
+                            "<ul><li><a href='#check_in_qr_warning' target='_self'>Wie ist der Ablauf bei einem positiven Befund?</a></li><li><a href='#check_in_qr_warning' target='_self'>Bekommen alle, die den gleichen Event-QR-Code gescannt haben, eine Warnung?</a></li><li><a href='#check_in_qr_warning' target='_self'>Was genau muss passieren, damit Nutzer, die an einem bestimmten Ort eingecheckt waren, durch die neue Funktion eine Warnung der App bekommen?</a></li><li><a href='#check_in_qr_warning' target='_self'>Wie wird das Risiko ermittelt?</a></li><li><a href='#check_in_qr_warning' target='_self'>Wann erhalte ich eine Warnung über ein geringes Risiko (grüne Kachel), wann über ein hohes (rote Kachel)?</a></li><li><a href='#check_in_qr_warning' target='_self'>Kann der Nutzer erkennen worauf die Warnung basiert, d.&nbsp;h. wegen welchem gescannten Event-QR-Code die Warnung erfolgt?</a></li><li><a href='#check_in_qr_warning' target='_self'>Können diese Informationen freiwillig dem Gesundheitsamt mitgeteilt werden? Wenn ja, welche Informationen fließen?</a></li></ul>"
                         ]
                     },
                     {
@@ -789,8 +795,10 @@
                             "Selbstverständlich, das ist möglich.",
                             "<b>Wo kann der Event-QR-Code generiert werden?</b>",
                             "Der QR-Code kann direkt in der App oder <a href='../eventregistration' target='_self' rel='noopener noreferrer'>hier auf der Webseite</a> generiert werden. Ein entsprechend generierter QR-Code kann dann als PDF ausgedruckt werden oder direkt aus der App abgescannt werden.",
-                            "<b>Können Event-QR-Codes von anderen Apps mit der CWA gescannt werden?</b>",
-                            "Nein, aktuell ist es nicht möglich die Event-QR-Codes von anderen Apps mit der Corona-Warn-App zu scannen.",
+                            "<b>Kann man mit der CWA einchecken, indem man Event-QR-Codes anderer Apps scannt?</b>",
+                            "Ja, Sie können die Event-QR-Codes der luca-App mit der Corona-Warn-App scannen. Es ist derzeit nicht möglich die Event-QR-Codes von anderen Kontaktverfolgungs-Apps zu scannen. Genauere Informationen dazu im <a href='#check_in_luca' target='_self' rel='noopener noreferrer'>Abschnitt zur Mitnutzung der luca-QR-Codes</a>",
+                            "<b>Kann man mit anderen Kontaktverfolgungs-Apps einchecken, indem man die Event-QR-Codes der CWA scannt?</b>",
+                            "Nein, die Event-QR-Codes der Corona-Warn-App können nicht von anderen Apps zum Einchecken gescannt werden.",
                             "<b>Ist es möglich, auch ohne Smartphone einen Check-in durchzuführen (Dongle o.&nbsp;ä.)?</b>",
                             "Nein, das ist nicht möglich.",
                             "<b>Womit sollte ich den Event-QR-Code scannen?</b>",
@@ -815,7 +823,52 @@
                             "Nach einer roten Kachel-Warnung (hohes Risiko) sollte ich mich in Quarantäne begeben und umgehend einen PCR-Test machen lassen. Ist dieser positiv, muss vom Arzt/Testzentrum ohnehin eine Meldung ans Gesundheitsamt gehen. Es wird empfohlen das positive Testergebnis via der CWA zu teilen. Darüber hinaus können die Informationen über die bereits existierende Export-Funktion des Kontakttagebuchs manuell mit dem Gesundheitsamt geteilt werden.",
                             "<a href='#check_in_index' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Event-Registrierung</a>"
                         ]
-                    }
+                    },
+                    {
+                        "title": "Die wichtigsten Fragen zur Mitnutzung der luca-QR-Codes",
+                        "anchor": "check_in_luca",
+                        "active": true,
+                        "textblock": [
+                            "<b>1. Wie funktioniert die Zusammenarbeit von der Corona-Warn-App und luca?</b>",
+                            "Die Corona-Warn-App kann ab sofort QR-Codes, die für die Eventregistrierung mit der luca-App erstellt wurden, scannen und einen eigenen Check-in-Prozess durchführen. Luca kann die QR-Codes der Corona-Warn-App nicht einlesen.",
+                            "<b>2. Müssen Nutzende der Apps Einstellungen auf ihren Smartphones verändern?</b>",
+                            "Nein. Die nun geschaffene Mitnutzung der luca-QR-Codes durch die Corona-Warn-App, die für Eventregistrierungen und Check-ins eingesetzt werden kann, bringt keine weiteren Änderungen für die Nutzenden mit sich.",
+                            "CWA-Nutzende können weiterhin ohne Eingabe von Kontaktdaten am CWA-System teilnehmen, während die Kontaktdaten von luca-Nutzenden wie gewohnt im Fall einer Kontaktnachverfolgung ausschließlich vom zuständigen Gesundheitsamt entschlüsselt werden können.",
+                            "<b>3. Was passiert beim Scan der QR-Codes durch die Corona-Warn-App?</b>",
+                            "Die von der luca-App generierten QR-Codes für den Check-in-Prozess können sowohl von der Corona-Warn-App (CWA) als auch von luca eingelesen werden.",
+                            "Scannen Nutzende der Corona-Warn-App den QR-Code, werden sie automatisch in den Check-in-Bereich der CWA geführt. Weitere Informationen zu dem Prozess finden Sie hier: <a href='../blog/2021-10-11-cwa-most-important-features/' target='_blank'>Warum die Corona-Warn-App gerade jetzt wichtig ist (Blog)</a>",
+                            "<b>4. Wie unterscheiden sich die Corona-Warn-App und luca-App beim Check-in/der Eventregistrierung noch?</b>",
+                            "Mit Hilfe der Corona-Warn-App können Nutzende sich z.&nbsp;B. bei einer Veranstaltung einchecken. Werden sie später positiv auf SARS-CoV-2 getestet, können sie mit Hilfe der Corona-Warn-App andere Teilnehmende der gleichen Veranstaltung unverzüglich warnen. Dabei ist es egal, ob der QR-Code ursprünglich von der Corona-Warn-App oder der luca-App erzeugt wurde.",
+                            "<b>5. Kann ich die Stellvertreter-Funktion nutzen, egal welchen QR-Code ich eingescannt habe?</b>",
+                            "Veranstalter:innen können unabhängig davon, welchen QR-Code sie mit der CWA eingescannt haben, die sogenannte Stellvertreter-Warnung verwenden. Weitere Informationen zur Stellvertreter-Warnung finden Sie unter den folgenden Links: <ul><li><a href='#warn_for_others' target='_blank'>FAQ: Wie kann ich in Vertretung warnen?</a></li><li><a href='../blog/2021-09-08-cwa-version-2-9/' target='_blank'>Blog: Corona-Warn-App Version 2.9: Veranstalter*innen können Gäste im Auftrag des Gesundheitsamtes über die Check-in-Funktion warnen</a></li></ul>",
+                            "<b>6. Kann die Corona-Warn-App die QR-Codes von luca lesen und verarbeiten?</b>",
+                            "Ja. Die Corona-Warn-App kann QR-Codes, die für die Eventregistrierung mit der luca-App ausgestellt wurden, scannen und einen eigenen Check-in-Prozess der CWA durchführen.",
+                            "<b>7. Kann auch luca die QR-Codes der Corona-Warn-App lesen und verarbeiten?</b>",
+                            "Nein, das ist nicht möglich. Das luca-System übermittelt den Gesundheitsämtern im Rahmen einer Kontaktnachverfolgung die hierzu benötigten Kontaktdaten von Besuchenden der betreffenden Veranstaltung oder des Betriebs, die Gesundheitsamt-konform sein müssen. Bei der CWA ist eine Übermittlung von Kontaktdaten aber nicht vorgesehen. Für diesen Vorgang sind also QR-Codes nötig, die sich von denen der CWA unterscheiden.",
+                            "<b>8. Können Nutzende der luca-App gewarnt werden, wenn CWA-Nutzende positiv getestet wurden?</b>",
+                            "Nein, nicht automatisch. Selbst wenn Nutzende der beiden Apps den gleichen QR-Code scannen, fließen keine Daten von einem System in das andere. Erst wenn das zuständige Gesundheitsamt beispielsweise von einem Testlabor von der Infektion erfährt, kann es die betroffenen luca-Nutzenden persönlich über den möglichen Risikokontakt informieren. Aber: Das Prinzip der CWA basiert darauf, dass Nutzende via „roter Kachel“ (erhöhtes Risiko) im Falle einer Risikobegegnung pseudonym gewarnt werden. Hierbei ist keine Interaktion mit einem Gesundheitsamt nötig.",
+                            "<b>9. Warum wurde die Mitnutzung umgesetzt?</b>",
+                            "Um den Prozess der Eventregistrierung (Check-in) zu vereinfachen, kann die Corona-Warn-App QR-Codes, die luca ausgestellt hat, 'mitnutzen'. Das heißt: Die Corona-Warn-App kann den QR-Code, den luca ausgestellt hat, lesen und verarbeiten.",
+                            "<b>10. Warum kommt die Mitnutzung der luca-QR-Codes jetzt?</b>",
+                            "Angesichts steigender Inzidenzen und mit Blick auf die nächsten Wochen und Monate, in denen sich das Leben vermehrt in Innenräumen abspielt, ist es wichtig, den Check-in-Prozess zu vereinfachen, zu beschleunigen und mit einem QR-Code zu versehen, der von beiden Apps eingelesen werden kann.",
+                            "Der Prozess der Integration hat einige Zeit in Anspruch genommen, um den hohen Datenschutzansprüchen der CWA gerecht zu werden.",
+                            "<b>11. Können alle QR-Codes zum Check-in sofort von der Corona-Warn-App und der luca-App gelesen werden?</b>",
+                            "Die ab dem 25 Mai 2021 erzeugten luca-QR-Codes können sowohl von der Corona-Warn-App als auch von luca-App gelesen (eingescannt) und für den Check-in-Prozess verarbeitet werden – sofern die Betreibenden dem nicht explizit widersprochen haben. Im Fall eines inkompatiblen luca-QR-Codes kann man sich an den Veranstalter wenden, der gegebenenfalls einen neuen kompatiblen luca-QR-Code ausstellt. Die Unterstützung privater QR-Codes ist weiterhin nicht möglich.",
+                            "<b>12. Sind die Daten der Nutzenden der Corona-Warn-App weiterhin sicher?</b>",
+                            "Ja. Die Mitnutzung bezieht sich nur auf die QR-Codes, die für Eventregistrierung und Check-in genutzt werden. Corona-Warn-App und luca-App sind weiterhin unterschiedliche Angebote mit unterschiedlichen Zielsetzungen. Für die CWA gilt nach wie vor, dass sie keine persönlichen Daten erfasst.",
+                            "Die Mitnutzung der QR-Codes wurde sorgfältig vorbereitet. Alle sicherheitsrelevanten Aspekte wurden in enger Zusammenarbeit sowohl mit dem BfDI als auch mit dem BSI ausgearbeitet und geprüft.",
+                            "Zudem arbeitet die Corona-Warn-App weiterhin sehr datensparsam.",
+                            "<b>13. Welche Daten werden von der CWA an luca übertragen?</b>",
+                            "Es werden keine Daten von der Corona-Warn-App an die luca-App übertragen.",
+                            "<b>14. Braucht man nur noch eine App für die Eventregistrierung?</b>",
+                            "Die Corona-Warn-App und luca basieren auf unterschiedlichen Ansätzen und verfolgen unterschiedliche Ziele.",
+                            "Die Corona-Warn-App ermöglicht eine schnelle Warnung von Personen nach dem Peer-to-Peer-Prinzip. Diese Warnung erfolgt pseudonym über die Corona-Warn-App selbst.",
+                            "Die luca-App hingegen dient hauptsächlich der digitalen Erfassung von Kontaktdaten der Teilnehmenden einer Veranstaltung. Im Infektionsfall übergibt die positiv auf SARS-CoV-2 getestete Person ihre Kontaktdaten an das zuständige Gesundheitsamt. Dieses kontaktiert dann alle Personen, die denselben QR-Code gescannt haben.",
+                            "In den jeweiligen Länderverordnungen zum Infektionsschutz ist festgeschrieben, ob und wie eine Kontaktnachverfolgung bei Veranstaltungen stattfinden muss.",
+                            "<b>15. Müssen Nutzende beide Apps installieren, damit es funktioniert?</b>",
+                            "Nein, um mit der Corona-Warn-App QR-Codes der luca-App zu scannen, muss die luca-App nicht installiert sein."
+                        ]
+                     }
                 ]
             },
             {
@@ -876,7 +929,7 @@
                         "anchor": "android_location",
                         "active": true,
                         "textblock": [
-                            "<b>AKTUELL</b><br/> Wenn Sie Android 11 und die Corona-Warn-App ab Version 1.5 benutzen, müssen Sie die Standortverwendung nicht mehr aktivieren, um die Corona-Warn-App zu nutzen. Diese für Android Version 11 nicht zutreffende Benachrichtigung wird in einem der nächsten Updates der Corona-Warn-App entfernt.<hr/>",
+                            "<b>AKTUELL</b><br/> Wenn Sie Android 11 und die Corona-Warn-App ab Version 1.5 benutzen, müssen Sie die Standortverwendung nicht mehr aktivieren, um die Corona-Warn-App zu nutzen.<hr/>",
                             "Die Corona-Warn-App fragt Ihren Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Ihrem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> und <a href='https://support.google.com/android/answer/9930236?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungssystem und Android-Standorteinstellungen</a> in der Android-Hilfe sowie <a href='https://developer.android.com/guide/topics/connectivity/bluetooth' target='_blank' rel='noopener noreferrer'>Bluetooth Overview</a> in der Android-Entwicklerdokumentation). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch Ihren Standort erfassen.",
                             "Da die Corona-Warn-App Geräte in Ihrer Nähe über Bluetooth erkennt, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Ihren Standort erfassen oder GPS verwenden. Sie können das gerne selbst folgendermaßen nachprüfen:",
                             "<ol><li>Öffnen Sie die Einstellungen Ihres Smartphones (nicht die Einstellungen in der App!).</li><li>Wählen Sie 'Sicherheit & Standort' > 'Standort' > 'Berechtigungen auf App-Ebene'.</li><li>Sehen Sie sich die Liste der Apps an, die auf Ihren Standort zugreifen können, wenn Sie es zulassen. Sie sehen: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
@@ -1594,7 +1647,7 @@
                         ]
                     },
                     {
-                        "title": "Ich habe in der App die Meldung bekommen, dass ich zwei Begegnungen mit niedrigem Risiko hatte. Die Statusanzeige ist aber grün geblieben. Muss ich mir Sorgen machen?",
+                        "title": "Ich habe in der App die Meldung bekommen, dass ich eine oder mehrere Begegnungen mit niedrigem Risiko hatte. Die Statusanzeige ist aber grün geblieben. Muss ich mir Sorgen machen?",
                         "anchor": "low_risk_green",
                         "active": true,
                         "textblock": [

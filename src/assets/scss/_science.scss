@@ -5,6 +5,9 @@
     .fig-mobile {
         display: block !important;
     }
+    .mobile-message {
+        display: block !important;
+    }
 }
 
 @media (max-width: 812px) and (max-height: 414px) {
@@ -14,8 +17,17 @@
     .fig-mobile {
         display: block !important;
     }
+    .mobile-message {
+        display: block !important;
+    }
 }
 
 .fig-mobile {
     display: none;
+}
+
+.mobile-message {
+    display: none;
+    background-color: #D4EAF7;
+    padding: 15px;
 }
