@@ -46,6 +46,14 @@
           {{global.wherecanigettested.en.text}}
         {{/if}}
       </a>
+      &nbsp;&nbsp;
+      <a href="{{#if lang_de}}{{global.testissues.de.link}}{{else}}{{global.testissues.en.link}}{{/if}}" {{#if homepage}}class="whohelps"{{/if}}>
+        {{#if lang_de}}
+          {{global.testissues.de.text}}
+        {{else}}
+          {{global.testissues.en.text}}
+        {{/if}}
+      </a>
     </u>
   </div>
   {{/unless}}
