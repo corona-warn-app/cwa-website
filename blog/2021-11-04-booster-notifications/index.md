@@ -42,7 +42,7 @@ If the current recommendations apply to the user, the app notifies them. Users w
 
 If the app notifies users to whom the conditions do not apply, for example because they have already received a booster vaccination or have already had a proven COVID-19 infection, they can ignore the notification. In this case, however, the project team recommends importing the relevant vaccination or recovery certificates into the app.
 
-The STIKO also recommends booster vaccinations for people with certain jobs or pre-existing conditions. However, the Corona-Warn-App cannot determine this information from the certificates. Therefore, it cannot notify the respective users. **More information on the STIKO recommendations** can be found on the [RKI's website](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/Impfempfehlung-Zusfassung.html;jsessionid=75D575152D0A98168E5703E0D653EEE4.internet112) (German only). 
+The STIKO also recommends booster vaccinations for people with certain jobs or pre-existing conditions. However, the Corona-Warn-App cannot determine this information from the certificates. Therefore, it cannot notify the respective users. **More information on the STIKO recommendations** can be found on the [RKI's website](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/Impfempfehlung-Zusfassung.html) (German only). 
 
 
 ### Here’s how users can add their booster vaccination to the app
