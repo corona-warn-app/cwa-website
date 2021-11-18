@@ -199,33 +199,33 @@ The following data are transmitted about the submission of diagnosis keys either
 
 251,161 records contain this information (as of 7 October 2021).
 
-  #### 3.2.7 Exposure-Windows und Scan-Instances
+  #### 3.2.7 Exposure Windows and Scan Instances
 
-Über die vom Google bzw. Apple Exposure-Notification-Framework (ENF; siehe [Google Exposure Notifications API](https://developers.google.com/android/exposure-notifications/exposure-notifications-api), [Apple Exposure Notifications API](https://developer.apple.com/documentation/exposurenotification#overview)) lokal aufgezeichneten Daten liegen folgende Angaben vor:
+The following information is available from data recorded locally using the Google or Apple Exposure Notification Framework (ENF; see [Google Exposure Notifications API](https://developers.google.com/android/exposure-notifications/exposure-notifications-api), [Apple Exposure Notifications API](https://developer.apple.com/documentation/exposurenotification#overview)):
 
-- Datum des [Exposure-Windows](https://developer.apple.com/documentation/exposurenotification/enexposurewindow) (`datew`), 
-- Transmission-Risk-Level (`transmission_risk_level`, `report_type`, `infectiousness`),
-- Kalibrierungs-Treue (`callibration_confidence`), 
-- [normalisierte Expositionszeit](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in Minuten), 
-- [Array](https://en.wikipedia.org/wiki/Array_data_structure) der [Scan-Instanzen](https://developer.apple.com/documentation/exposurenotification/enscaninstance) (`exposure_window_id`): 
-  - typische Dämpfung (`typical_attenuation`), 
-  - minimale Dämpfung (`minimum_attenuation`), 
-  - Sekunden seit dem letzten Scan (`seconds_since_last_scan`), 
-- [Metadaten der Endgeräte](#322-metadaten-der-nutzenden), 
-- [Technische Metadaten](#321-technische-metadaten).
+- Date of the [Exposure-Window](https://developer.apple.com/documentation/exposurenotification/enexposurewindow) (`datew`) 
+- Transmission risk level (`transmission_risk_level`, `report_type`, `infectiousness`)
+- Calibration confidence (`callibration_confidence`),
+- [Normalised exposure time](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in minutes)
+- [Array of scan instances](https://en.wikipedia.org/wiki/Array_data_structure) (`exposure_window_id`): 
+  - typical attenuation (`typical_attenuation`), 
+  - minimum attenuation (`minimum_attenuation`), 
+  - Seconds since the last scan (`seconds_since_last_scan`), 
+- [Device metadata](#322-metadata-from-users), 
+- [Technical metadata](#321-technical-metadata).
 
-Es liegen 1.036.601.141 Datensätze zu Exposure-Windows bzw. 3.019.619.946 Datensätze zu den Scan-Instanzen vor (Datenstand: 7. Oktober 2021).
+1,036,601,141 records contain information about exposure windows and 3,019,619,946 contain information about scan instances (as of 7 October 2021).
 
-## 4 Device- und Nutzerdaten der Teilnehmenden
+## 4 Data about the participants and their devices
 
-Wir wollen zunächst die Daten zu den Spendenden (genauer: zu deren Endgeräten) näher betrachten. Bisher gab es etwa 1,86 Mrd. gespendete Datensätze (Datenstand: 7. Oktober 2021). In den vergangenen Wochen täglich mehr als 11 Millionen.
+In the next section, we take a closer look at the data donors themselves (or, more specifically, at the devices they use). Since 7 October 2021, data has been donated around 1.86 billion times. During the past few weeks, more than 11 million records have been donated every day.
 
 
-### 4.1 Anzahl der Spenden im zeitlichen Verlauf (nach OS)
+### 4.1 Number of donations over time (by OS)
 
-Die folgende Abbildung zeigt den zeitlichen Verlauf und die Verteilung nach dem Betriebssystem. Am 7. Oktober 2021 allein gab es insgesamt 12.159.958 Datenspenden, 6.101.821 von Apple [iPhones](https://de.wikipedia.org/wiki/IPhone) und 6.058.137 von Android [Smartphones](https://de.wikipedia.org/wiki/Smartphone).
+The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s iOS and 6,058,137 from Android-based devices. 
 
-Die Schwankungen bei der Anzahl der täglichen Datenspenden kommt vorwiegend durch Maßnahmen und Einschränkungen zur Sicherung des Netzwerkes gegen [DDoS-Angriffe](https://de.wikipedia.org/wiki/Denial_of_Service) zustande und betrifft vor allem Android-Geräte, da hier aus Gründen des Datenschutzes eine eigene Prüfung der Authentizität des Gerätes vorgenommen wird (detaillierte Informationen sind unter folgendem Link abrufbar: [PPA-Dokumentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
+Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://de.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the[PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
 
 <div class="figure">
 <div id="htmlwidget-19ae046b5fe62085f4f1" style="width:800px;height:600px;" class="plotly html-widget"></div>
