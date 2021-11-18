@@ -1,4 +1,314 @@
 {
-    "lang": "en-US",
-    "documentLang": "en"
+    "lang": "en-GB",
+    "documentLang": "en",
+	"topic": "Analysis",
+    "title": "Corona-Warn-App (CWA): Key performance indicators",
+    "update": "Last data update:",
+    "updateNotice": "The data of the CWA dashboard is updated on a daily basis at 10:30 AM.",
+    "range":{
+        "picker": {
+            "timerange": "Time range",
+            "inputs": {
+                "from": "From",
+                "to": "To",
+                "placeholder": "dd/mm/yyyy"
+            },
+            "cancel": "Cancel",
+            "apply": "Apply"
+        },
+        "radio": [
+            {
+                "label": "Last 28 days",
+                "value": "1month",
+                "active": true
+            },
+            {
+                "label": "Last 6 months",
+                "value": "6months"
+            },
+            {
+                "label": "Total period",
+                "value": "all"
+            }
+        ]
+    },
+    "switch": [
+        {
+            "id": "2",
+            "label": "Daily"
+        },
+        {
+            "id": "3",
+            "label": "Weekly"
+        },
+        {
+            "id": "4",
+            "label": "7-day moving average"
+        },
+        {
+            "id": "1",
+            "label": "Cumulative"
+        }
+    ],
+    "allExport": {
+        "title": "Export all data",
+        "link": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_all_data.zip"
+    },
+    "boards": {
+        "download": true,
+        "export": {
+            "btn": "Export",
+            "data": "Export data",
+            "image": "Export image"
+        },
+        "loading": "Loading...",
+        "loadingBtn": "Try again",
+        "total": "Total (Count until <span></span>)"
+    },
+    "board": [
+        {
+            "title": "Downloads",
+            "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_downloads_data.zip",
+            "info": {
+                "content": "<strong>Downloads</strong><p>Count of Corona-Warn-App downloads from the Google Play Store (Android) and Apple App Store (iOS) as well as the total count of Corona-Warn-App downloads from both app stores (total).</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong>Data sources</strong><p>Apple App Store<br />Google Play Store</p><strong>Additional information</strong><p>The download count only contains the Corona-Warn-App downloads from the official Google and Apple app stores.</p><p>It is not possible to draw any conclusions regarding the count of active users from the download count.</p>"
+            },
+            "totalKey": ["app_downloads_cumulated"]
+        },
+        {
+            "title": "Registered tests",
+            "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/test_results_data.zip",
+            "info": {
+                "content": "<strong>Registered tests</strong><p>Count of registered PCR tests and rapid antigen tests as well as the sum of both test types in the Corona-Warn-App.</p><strong>Test results PCR tests</strong><p>Count of positive, negative and invalid as well as the sum of all PCR test results registered in the Corona-Warn-App.</p><strong>Test results rapid antigen tests</strong><p>Count of positive, negative and invalid as well as the sum of all rapid antigen test results registered in the Corona-Warn-App.</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong> Data sources </strong><p>Corona-Warn-App backend</p>"
+            },
+            "totalKey": [
+                "tests_total_cumulated",
+                "tests_pcr_total_cumulated",
+                "tests_rat_total_cumulated"
+            ],
+            "tabs": [
+                {
+                    "label": "Total"
+                },
+                {
+                    "label": "PCR tests"
+                },
+                {
+                    "label": "Rapid antigen tests"
+                }
+            ]
+        },
+        {
+            "title": "Sharing behaviour",
+            "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_sharing_data.zip",
+            "info": {
+                "content": "<strong>Sharing behaviour</strong><p>Count of positive test results, for which a QR code was registered or a teleTAN requested for validation, as well as the sum of positive test results validated with either option.</p><strong>Sharing behaviour: QR codes</strong><p>Count of positive test results, validated through QR code registration, shared and not shared in the Corona-Warn-App.</p><strong>Sharing behaviour: teleTANs</strong><p>Count of positive test results, for which a teleTAN was requested for validation, shared and not shared in the Corona-Warn-App.</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong>Data sources</strong><p>Corona-Warn-App backend</p><strong>Additional information</strong><p>Only positive test results are relevant for ending chains of infection. To prevent abuse, positive test results must be verified. There are two options for verifying test results: a QR code or a teleTAN, which must be entered in the Corona-Warn-App. The user receives the QR code when the sample for the test is collected. By scanning the QR code, the test can be registered in the Corona-Warn-App. As soon as the result is available, it is automatically retrieved and displayed on the smartphone. The user can then decide to release her/his own random codes from the last 14 days to warn possible risk contacts. If no QR code is available or if it is lost, the user can call the verification hotline. A teleTAN is generated there to verify the positive test result. This teleTAN must be entered into the app by the user.</p>"
+            },
+            "totalKey": [
+                "qr_teletan_redeemable_cumulated",
+                "qr_redeemable_cumulated",
+                "teletan_redeemable_cumulated"
+            ],
+            "tabs": [
+                {
+                    "label": "Total"
+                },
+                {
+                    "label": "QR codes"
+                },
+                {
+                    "label": "teleTANs"
+                }
+            ]
+        },
+        {
+            "title": "Received warnings",
+            "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_ppa_warnings_data.zip",
+            "info": {
+                "content": "<strong>Received warnings</strong><p>Count of red and green risk warnings as well as the sum of risk warnings in the Corona-Warn-App.</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong>Data sources</strong><p>Privacy preserving analytics (PPA)</p><strong>Additional information</strong><p>Users who have had a brief and/or distant encounter with a person who was tested positive for corona in the past 14 days, receive a green risk warning. This means that the encounter was assumed not to be above the defined threshold value. There is no need for specific action from the users concerned.</p><p>Users who have had long and/or close encounters with at least one person who tested positive for corona in the past 14 days, receive a red risk warning. This means that the encounter was assumed to be above the defined threshold. Affected users are asked to reduce personal contacts. In case of symptoms, they should consult a general practitioner, the medical on-call service, or the local health department. The general practitioner or the local health department will decide whether a test will be provided.</p>"
+            },
+            "totalKey": ["ppa_total_warnings_cumulated"]
+        }
+    ],
+    "translations":{
+
+        "analyseBoardTitleTitle":{
+            "0": "Downloads",
+            "1": [
+                "Registered tests",
+                "Test results",
+                "Test results"
+            ],
+            "2": "Sharing behaviour",
+            "3": "Received warnings"
+        },
+
+
+
+        "analyseBoardTitleAppend":{
+            "1": "(cumulative)",
+            "2": "",
+            "3": "(Sorted by calendar week)",
+            "4": "(7-day moving average)"
+        },
+
+
+        "legendLabelMean": "7-day moving average:",
+        "legendLabelDaily": "Daily count:",
+
+        "total": "Total",
+
+
+
+
+        "app_downloads_cumulated": "Total",
+        "app_downloads_android_cumulated": "Android",
+        "app_downloads_ios_cumulated": "iOS",
+
+        "app_downloads_daily": "Total",
+        "app_downloads_android_daily": "Android",
+        "app_downloads_ios_daily": "iOS",
+
+        "app_downloads_7days_sum": "Total",
+        "app_downloads_android_7days_sum": "Android",
+        "app_downloads_ios_7days_sum": "iOS",
+
+        "app_downloads_7days_avg": "Total",
+        "app_downloads_android_7days_avg": "Android",
+        "app_downloads_ios_7days_avg": "iOS",
+
+
+
+
+        "tests_total_cumulated": "Total",
+        "tests_pcr_total_cumulated": "PCR tests",
+        "tests_rat_total_cumulated": "Rapid Antigen tests",
+        "tests_pcr_positive_cumulated": "Positive",
+        "tests_pcr_negative_cumulated": "Negative",
+        "tests_pcr_invalide_cumulated": "Invalid",
+        "tests_rat_positive_cumulated": "Positive",
+        "tests_rat_negative_cumulated": "Negative",
+        "tests_rat_invalide_cumulated": "Invalid",
+
+        "tests_total_daily": "Total",
+        "tests_pcr_total_daily": "PCR tests",
+        "tests_rat_total_daily": "Rapid Antigen tests",
+        "tests_pcr_positive_daily": "Positive",
+        "tests_pcr_negative_daily": "Negative",
+        "tests_pcr_invalide_daily": "Invalid",
+        "tests_rat_positive_daily": "Positive",
+        "tests_rat_negative_daily": "Negative",
+        "tests_rat_invalide_daily": "Invalid",
+
+        "tests_total_7days_sum": "Total",
+        "tests_pcr_total_7days_sum": "PCR tests",
+        "tests_rat_total_7days_sum": "Rapid Antigen tests",
+        "tests_pcr_positive_7days_sum": "Positive",
+        "tests_pcr_negative_7days_sum": "Negative",
+        "tests_pcr_invalide_7days_sum": "Invalid",
+        "tests_rat_positive_7days_sum": "Positive",
+        "tests_rat_negative_7days_sum": "Negative",
+        "tests_rat_invalide_7days_sum": "Invalid",
+
+        "tests_total_7days_avg": "Total",
+        "tests_pcr_total_7days_avg": "PCR tests",
+        "tests_rat_total_7days_avg": "Rapid Antigen tests",
+        "tests_pcr_positive_7days_avg": "Positive",
+        "tests_pcr_negative_7days_avg": "Negative",
+        "tests_pcr_invalide_7days_avg": "Invalid",
+        "tests_rat_positive_7days_avg": "Positive",
+        "tests_rat_negative_7days_avg": "Negative",
+        "tests_rat_invalide_7days_avg": "Invalid",
+
+
+
+
+
+        "qr_teletan_redeemable_cumulated": "Total",
+        "qr_redeemable_cumulated": "QR codes",
+        "teletan_redeemable_cumulated": "teleTANs",
+        "qr_not_redeemed_cumulated": "Not shared",
+        "qr_redeemed_cumulated": "Shared",
+        "teletan_not_redeemed_cumulated": "Not shared",
+        "teletan_redeemed_cumulated": "Shared",
+
+        "qr_teletan_redeemable_daily": "Total",
+        "qr_redeemable_daily": "QR codes",
+        "teletan_redeemable_daily": "teleTANs",
+        "qr_not_redeemed_daily": "Not shared",
+        "qr_redeemed_daily": "Shared",
+        "teletan_not_redeemed_daily": "Not shared",
+        "teletan_redeemed_daily": "Shared",
+
+        "qr_teletan_redeemable_7days_sum": "Total",
+        "qr_redeemable_7days_sum": "QR codes",
+        "teletan_redeemable_7days_sum": "teleTANs",
+        "qr_not_redeemed_7days_sum": "Not shared",
+        "qr_redeemed_7days_sum": "Shared",
+        "teletan_not_redeemed_7days_sum": "Not shared",
+        "teletan_redeemed_7days_sum": "Shared",
+
+        "qr_teletan_redeemable_7days_avg": "Total",
+        "qr_redeemable_7days_avg": "QR codes",
+        "teletan_redeemable_7days_avg": "teleTANs",
+        "qr_not_redeemed_7days_avg": "Not shared",
+        "qr_redeemed_7days_avg": "Shared",
+        "teletan_not_redeemed_7days_avg": "Not shared",
+        "teletan_redeemed_7days_avg": "Shared",
+
+
+
+
+        "ppa_total_warnings_cumulated": "Total",
+        "ppa_risk_red_cumulated": "Red risk",
+        "ppa_risk_green_cumulated": "Green risk",
+
+        "ppa_total_warnings_daily": "Total",
+        "ppa_risk_red_daily": "Red risk",
+        "ppa_risk_green_daily": "Green risk",
+
+        "ppa_total_warnings_7days_sum": "Total",
+        "ppa_risk_red_7days_sum": "Red risk",
+        "ppa_risk_green_7days_sum": "Green risk",
+
+        "ppa_total_warnings_7days_avg": "Total",
+        "ppa_risk_red_7days_avg": "Red risk",
+        "ppa_risk_green_7days_avg": "Green risk"
+
+
+
+
+    },
+    "moreHeadline": "Further dashboards",
+    "moreLinks": [
+    	{
+    		"title": "RKI: COVID-19 Dashboard (GER)",
+            "desc": "Daily updated information on the incidence of infections in Germany by county and federal state.",
+    		"link": "https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4"
+    	},
+    	{
+    		"title": "RKI: Covid-19 Trends (GER)",
+            "desc": "Overview of the trends of the epidemic situation in Germany.",
+    		"link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home"
+    	},
+    	{
+    		"title": "BMG: Impfdashboard (EN)",
+            "desc": "Daily updated information on vaccination status and progress in Germany, from the website 'together against corona' from the German Federal Ministry of Health (BMG).",
+    		"link": "https://impfdashboard.de/en/"
+    	},
+    	{
+    		"title": "WHO: COVID-19 Dashboard (EN)",
+            "desc": "Daily updated information on the worldwide pandemic situation, from the World Health Organisation (WHO).",
+    		"link": "https://covid19.who.int/"
+    	},
+    	{
+    		"title": "CSSE (JHU): COVID-19 Dashboard (EN)",
+            "desc": "Daily updated information on the worldwide pandemic situation, from the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU) Baltimore (Maryland, USA).",
+    		"link": "https://gisanddata.maps.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6"
+    	},
+        {
+    		"title": "OWID: COVID-19 (EN)",
+            "desc": "Daily updated information on the worldwide incidence of infections from the online publication Our World in Data (OWID).",
+    		"link": "https://ourworldindata.org/coronavirus"
+    	}
+    ]
 }
