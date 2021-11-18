@@ -65,11 +65,24 @@
                         "anchor": "where_can_i_get_tested",
                         "active": true,
                         "textblock": [
+                            "Siehe auch <a href=#test_result_issues>Was kann ich tun, wenn ich mein Testergebnis oder Testzertifikat nicht erhalten habe?</a>",
                             "<div class='container'><div class='row'><div class='col-sm'><a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='image'></a></div><div class='col-sm'>Mittlerweile wurden mehr als 100 Schnelltest-Partner an die CWA-Infrastruktur angeschlossen und können die Ergebnisse in die App übermitteln.<br>Eine lokale Suche, die Ihnen in der Umgebung die kompatiblen Partner mit den Teststellen anzeigt, finden Sie hier: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a><br>Die Liste der aufgeführten Teststellen enthält nur die Einträge, die von den betreffenden Partnern gemeldet wurden.</div></div></div>",
                             "<hr/>",
                             "<div class='container'><div class='row'><div class='col-sm'><a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/BMG_testzentren.png' alt='image'></a></div><div class='col-sm'>Eine Übersicht der <b>PCR- und Schnell-Teststellen</b> finden Sie auf dieser <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG Seite</a> (nicht ersichtlich, ob die Teststelle an die CWA angebunden ist oder nicht).</div></div>",
                             "<hr/>",
                             "Weitere Liste mit Teststellen aus der GitHub-Community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a>"
+                        ]
+                    },
+                    {
+                        "title": "Was kann ich tun, wenn ich mein Testergebnis oder Testzertifikat nicht erhalten habe?",
+                        "anchor": "test_result_issues",
+                        "active": true,
+                        "textblock": [
+                            "Ergebnisse von <b>Schnelltests</b> sollten innerhalb von einer <b>halben Stunde</b>, Ergebnisse von <b>PCR-Tests</b> innerhalb von <b>48 Stunden</b>, über die CWA übermittelt werden.",
+                            "Sollten Sie Ihr <b>Testergebnis</b> nicht erhalten haben, oder zwar das Testergebnis aber kein entsprechendes <b>Digitales COVID-Testzertifikat der EU</b> übermittelt worden sein, können Sie folgendermaßen dieses oder auch andere Probleme melden:",
+                            "<ul><li>Suchen Sie bitte die Teststelle über <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'>https://map.schnelltestportal.de</a>.</li><li>Tippen Sie unten rechts auf 'Fehler melden' (siehe Abb. 1).</li><li>Wählen Sie in dem Dropdown-Feld (siehe Abb. 2) die Kategorie „Testergebnis kommt nicht an“ beziehungsweise „Testzertifikat kommt nicht an“ aus (siehe Abb. 3).</li><li>Optional haben Sie die Möglichkeit, Ihr Problem in dem Kommentar-Feld zu schildern (siehe Abb. 2).</li><li>Tippen Sie unten links auf 'Abschicken' (siehe Abb. 2).</li> </ul>",
+                            "Wenn Sie  bei einem Arzt oder an einer Teststelle getestet wurden, die auf dem Schnelltestportal nicht zu finden ist, dann melden Sie sich bitte per E-Mail an die CWA-Community-Mailbox <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a> oder rufen Sie die technische Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier, um zu den Telefonnummern zu gelangen</a>) an.",
+                            "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_issue_fig1.png' alt='image'><figcaption aria-hidden='true'><em>Abb. 1.</em></figcaption></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_issue_fig2.png' alt='image'><figcaption aria-hidden='true'><em>Abb. 2. </em></figcaption></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_issue_fig3.png' alt='image'><figcaption aria-hidden='true'><em>Abb. 3. </em></figcaption></figure></div></div></div>"
                         ]
                     }
                 ]
@@ -945,6 +958,7 @@
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
+                            "Siehe auch <a href=#test_result_issues>Was kann ich tun, wenn ich mein Testergebnis oder Testzertifikat nicht erhalten habe?</a>",
                             "Die komplette Bearbeitungsdauer eines PCR-Tests (von der Entnahme der Probe bei Ihrem Arzt oder Testzentrum bis zur Benachrichtigung in der App) kann bis zu 48 Stunden betragen. Sofern Sie nach einem Corona-Test Ihren PCR-Test-QR-Code in die App eingescannt haben und spätestens 3 Tage nach Ihrem Test kein Testergebnis über die App mitgeteilt wurde, könnte es sein, dass",
                             "<ul><li>das entsprechende Labor noch nicht vollständig mit dem Backend der Corona-Warn-App zusammenarbeitet.</li><li>die Übermittlungsfreigabe des Testergebnisses an die Corona-Warn-App über das entsprechende Feld im Laborauftragsformular <a href='../../assets/documents/MU 10C (01_2021) web.pdf' target='_blank' rel='noopener noreferrer'>10C</a>/<a href='../../assets/documents/MU OEGD (08_2021) web.pdf' target='_blank' rel='noopener noreferrer'>OEDG</a> zum Testen nicht erteilt wurde.</li></ul>",
                             "Erkundigen Sie sich daher bitte, ob das Labor, mit dem der Arzt oder das Testcenter zusammenarbeiten, an die Corona-Warn-App angebunden ist und das Feld zur Übermittlungsfreigabe auf dem Formular angekreuzt ist. Nur dann ist sichergestellt, dass das genutzte Verfahren mit der Corona-Warn-App funktioniert.",
@@ -1633,7 +1647,7 @@
                         ]
                     },
                     {
-                        "title": "Ich habe in der App die Meldung bekommen, dass ich zwei Begegnungen mit niedrigem Risiko hatte. Die Statusanzeige ist aber grün geblieben. Muss ich mir Sorgen machen?",
+                        "title": "Ich habe in der App die Meldung bekommen, dass ich eine oder mehrere Begegnungen mit niedrigem Risiko hatte. Die Statusanzeige ist aber grün geblieben. Muss ich mir Sorgen machen?",
                         "anchor": "low_risk_green",
                         "active": true,
                         "textblock": [

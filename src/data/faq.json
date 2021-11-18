@@ -65,11 +65,24 @@
                         "anchor": "where_can_i_get_tested",
                         "active": true,
                         "textblock": [
+                            "See also <a href=#test_result_issues>What can I do if I have not received my test result or test certificate?</a>",
                             "<div class='container'><div class='row'><div class='col-sm'><a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='image'></a></div><div class='col-sm'>Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.<br>A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a><br>The list of test sites contains only those entries that have been reported by the partners concerned.</div></div></div>",
                             "<hr/>",
                             "<div class='container'><div class='row'><div class='col-sm'><a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/BMG_testzentren.png' alt='image'></a></div><div class='col-sm'>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).</div></div>",
                             "<hr/>",
                             "Another list of test sites from the GitHub community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
+                        ]
+                    },
+                    {
+                        "title": "What can I do if I have not received my test result or test certificate?",
+                        "anchor": "test_result_issues",
+                        "active": true,
+                        "textblock": [
+                            "Results of <b>rapid antigen tests</b> should be transmitted via the CWA within <b>half an hour</b>, results of </b>PCR tests</b> within <b>48 hours</b>.",
+                            "If you have not received your <b>test result</b>, or if the test result has been transmitted but not the <b>EU Digital COVID Test Certificate</b>, you can report this or other problems as follows:",
+                            "<ul><li>Please search for the test site on  <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'>https://map.schnelltestportal.de</a> (German only).</li><li>Tap 'Fehler melden' at the bottom right (see Fig. 1).</li><li>In the drop-down field (see Fig. 2), select the category 'Testergebnis kommt nicht an '('Test result does not arrive') or 'Testzertifikat kommt nicht an' ('Test certificate does not arrive') (see Fig. 3).</li><li>Optionally, you have the possibility of describing your problem in the comment field (see Fig. 2).</li><li>Tap 'Abschicken' at the bottom left in order to submit your report (see Fig. 2).</li> </ul>",
+                            "If you have been tested by a doctor or at a test site that cannot be found on the rapid test portal, please report by e-mail to the CWA community mailbox <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a> or call the technical hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>click here to get to the telephonenumbers</a>).",
+                            "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_issue_fig1.png' alt='image'><figcaption aria-hidden='true'><em>Fig. 1.</em></figcaption></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_issue_fig2.png' alt='image'><figcaption aria-hidden='true'><em>Fig. 2. </em></figcaption></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_issue_fig3.png' alt='image'><figcaption aria-hidden='true'><em>Fig. 3. </em></figcaption></figure></div></div></div>"
                         ]
                     }
                 ]
@@ -945,6 +958,7 @@
                         "anchor": "qr_test",
                         "active": true,
                         "textblock": [
+                            "See also <a href=#test_result_issues>What can I do if I have not received my test result or test certificate?</a>",
                             "The processing time of a PCR test (from taking the sample at your doctor's office or test center to the notification in the app) can be up to 48 hours. If you scanned your PCR-Test QR code into the App after a Corona test and did not receive a test result via the App within 3 days of making the test, it is possible that",
                             "<ul><li>the respective laboratory is not fully linked with the Corona-Warn-App backend.</li><li>the consent field allowing the transmission of the test result to the Corona-Warn-App was not ticked on the submission form (<a href='../../assets/documents/MU 10C (01_2021) web.pdf' target='_blank' rel='noopener noreferrer'>10C</a>/<a href='../../assets/documents/MU OEGD (08_2021) web.pdf' target='_blank' rel='noopener noreferrer'>OEDG</a>) sent by your doctor to the laboratory.</li></ul>",
                             "Please check whether the laboratory working with your doctor or test center is connected to the Corona-Warn-App and whether the consent field is checked on the form. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
@@ -1624,7 +1638,7 @@
                         ]
                     },
                     {
-                        "title": "I got the message in the app that I had two low risk encounters. But the status indicator remained green. Should I be worried?",
+                        "title": "I got the message in the app that I had one or more low risk encounters. But the status indicator remained green. Should I be worried?",
                         "anchor": "low_risk_green",
                         "active": true,
                         "textblock": [
