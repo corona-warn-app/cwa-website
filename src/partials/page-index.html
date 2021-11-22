@@ -1,5 +1,5 @@
 {{#if page-contents}}
-<section class="section-main">
+<section class="section-main comment">
     <div class="container">
         <div class="row align-items-lg-end justify-content-lg-between">
             <div class="col col-12 col-sm-10 col-md-8 col-lg-6">
@@ -58,7 +58,7 @@
 section-class='section-sticky section_bg-white hidden js-section-sticky'
 section-cancelable=true}}
 
-<section class="section_bg-white" {{#if page-contents.section-works-best.id}}
+<section class="section_bg-white comment" {{#if page-contents.section-works-best.id}}
     id="{{page-contents.section-works-best.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-works-best}}
@@ -88,7 +88,7 @@ section-cancelable=true}}
     </div>
 </section>
 
-<section class="" {{#if page-contents.section-image-ticker.id}}
+<section class="comment" {{#if page-contents.section-image-ticker.id}}
     id="{{page-contents.section-image-ticker.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-image-ticker.headline}}
@@ -106,7 +106,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section data-e2e="blog-slider" class="section_bg-gradient section_bg-skew" {{#if
+<section data-e2e="blog-slider" class="section_bg-gradient section_bg-skew comment" {{#if
     page-contents.section-boxes.id}} id="{{page-contents.section-boxes.id}}"
     {{/if}}>
     <div class="container">
@@ -157,7 +157,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="section_bg-white" {{#if page-contents.section-image-text.id}}
+<section class="section_bg-white comment" {{#if page-contents.section-image-text.id}}
     id="{{page-contents.section-image-text.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-image-text}}
@@ -186,7 +186,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="section-feature-listing section_bg-light" {{#if
+<section class="section-feature-listing section_bg-light comment" {{#if
     page-contents.section-feature-listing.id}}
     id="{{page-contents.section-feature-listing.id}}" {{/if}}>
     <div class="container">
@@ -226,7 +226,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="" {{#if page-contents.section-icon-listing.id}}
+<section class="comment" {{#if page-contents.section-icon-listing.id}}
     id="{{page-contents.section-icon-listing.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-icon-listing}}
@@ -237,7 +237,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="section-intersect section_bg-light section_bg-skew" {{#if
+<section class="section-intersect section_bg-light section_bg-skew comment" {{#if
     page-contents.section-join-project.id}}
     id="{{page-contents.section-join-project.id}}" {{/if}}>
     <div class="container contents-normal">
@@ -273,7 +273,7 @@ section-cancelable=true}}
 section-class='section-intersect section_bg-white'}}
 {{#unless @root.get-app-enabled}}
 {{#if page-contents.section-soon-available}}
-<section class="section-intersect section_bg-white">
+<section class="section-intersect section_bg-white comment">
     <div class="container contents-normal text-center">
         {{> headline-component page-contents.section-soon-available.headline}}
     </div>

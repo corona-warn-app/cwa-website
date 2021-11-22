@@ -1,7 +1,7 @@
 {{#if page-contents}}
-<section>
+<section class="comment">
   <div class="container">
-    <div class="container-inner contents-normal">
+    <div class="container-inner contents-normal comment">
       
       {{#if lang_de}}
       <h1 class="headline headline-heavy">
@@ -15,7 +15,7 @@
       <p>{{{page-contents.en.headline.text}}}</p>
       {{/if}}
 
-      <div class="blog-list">
+      <div class="blog-list comment">
         {{#if lang_de}}
         {{{scienceblogentries 'de'}}}
         {{else}}

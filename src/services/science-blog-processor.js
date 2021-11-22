@@ -18,7 +18,7 @@ const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[
 const formatDate = (date, lang) => {
   const mom = moment(date);
   mom.locale(lang);
-  return mom.format('LL');
+  return (lang == "de" ? "am" : "on" )+" "+mom.format('LL');
 }
 
 const hasValidDate = (dateStr) => {
@@ -50,7 +50,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 
   <div class="blog-entry">
     ${headline}
-    <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}</span></div>
+    <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}${blog.update}</span></div>
     ${content}
     ${button}
   </div>
@@ -108,6 +108,7 @@ const createPageEntry =  (folderName, mdData, lang) => {
     pageDescription: mdData.data['page-description'],
     slug: `${date}-${pageName}`,
     author: mdData.data.author,
+    update: mdData.data['update'] == undefined ? "" : ", " + mdData.data['update'],
     redirect: mdData.data.redirect,
     htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
     htmlContent: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[1]), folderName)
