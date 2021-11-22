@@ -22,7 +22,7 @@ Nutzer*innen der Corona-Warn-App können schon seit Version 2.13 Zertifikate, di
 </center>
 <br></br>
 
-Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in den Papierkorb verschoben. Dort bleibt er 30 Tage bevor er endgültig gelöscht wird. iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen, Android-Nutzer\*innen können die drei Punkte in der rechten oberen Ecke des Tests auswählen und auf „Wiederherstellen“ tippen. 
+Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in den Papierkorb verschoben. Dort bleibt er 30 Tage, bevor er endgültig gelöscht wird. iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen, Android-Nutzer\*innen können die drei Punkte in der rechten oberen Ecke des Tests auswählen und auf „Wiederherstellen“ tippen. 
 
 <br></br>
 <div class="well text-center">
