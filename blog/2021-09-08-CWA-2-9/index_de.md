@@ -56,13 +56,13 @@ Bei Genesenen, die geimpft werden, entfällt die zweiwöchige Wartezeit allerdin
 
 Eine **Ausnahme** bilden die Nutzer\*innen, die nach Genesung mit dem Impfstoff von Johnson & Johnson geimpft werden. Da bei diesem Impfstoff grundsätzlich nur eine Impfung nötig ist, kann die Corona-Warn-App nicht zwischen denjenigen unterscheiden, die genesen sind und geimpft wurden und denjenigen, die regulär geimpft wurden. In diesen Fällen zeigt sie den vollständigen Impfschutz immer nach 14 Tagen an. 
 
-Des Weiteren können Nutzer\*innen, die eine Auffrischungsimpfung erhalten haben, diese ab Version 2.9 in die Corona-Warn-App übertragen. Auffrischimpfungen werden so wie die anderen Impfzertifikate mit "Impfung n von m" angezeigt. 
+Des Weiteren können Nutzer\*innen, die eine **Auffrischungsimpfung** erhalten haben, diese ab Version 2.9 in die Corona-Warn-App übertragen. Auffrischimpfungen werden so wie die anderen Impfzertifikate mit "Impfung n von m" angezeigt. 
 
 <br></br>
 <center> <img src="./booster-impfung_v2.png" title="Auffrischungsimpfung" style="align: center" width=250> </center>
 <br></br>
 
-Außerdem können nun sowohl Android- als auch iOS-Nutzer\*innen, die einen PCR- oder Schnelltest durchgeführt haben, direkt aus ihrem Testergebnis heraus das **digitale COVID-Testzertifikat der EU aufrufen**. Dazu wählen sie das Testergebnis auf der Startseite ihrer App. Anschließend können sie darunter „Testzertifikat“ auswählen. Voraussetzung ist, dass sie das Zertifikat vorab bei der Registrierung des Tests beantragt haben (mehr Informationen dazu finden Sie [hier](https://www.coronawarn.app/de/blog/2021-06-24-cwa-version-2-4/)).
+Außerdem können nun sowohl Android- als auch iOS-Nutzer\*innen, die einen PCR- oder Schnelltest durchgeführt haben, direkt aus ihrem Testergebnis heraus das **digitale COVID-Testzertifikat der EU aufrufen**. Dazu wählen sie das Testergebnis auf der Startseite ihrer App. Anschließend können sie darunter „Testzertifikat“ auswählen. Voraussetzung ist, dass sie das Zertifikat vorab bei der Registrierung des Tests beantragt haben (mehr Informationen dazu finden Sie [hier](/de/blog/2021-06-24-cwa-version-2-4/)).
 
 Das Testzertifikat dient Nutzer\*innen als offizieller Nachweis für das Vorliegen eines negativen Testergebnisses. 
 

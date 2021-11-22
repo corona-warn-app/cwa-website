@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App version 2.9: Organizers can use the check-in functi
 page-description: "Corona-Warn-App version 2.9: Organizers can use the check-in function to warn guests on behalf of the health department"
 page-name: cwa-version-2-9
 page-name_de: cwa-version-2-9
-author: Hanna Heine, 10:00 am 
+author: Hanna Heine, 10 am
 layout: blog
 ---
 
@@ -63,7 +63,7 @@ Furthermore, users who have received a **booster vaccination** can transfer thei
 
 With the update, users who have had a PCR or rapid test can access the EU's digital COVID test certificate directly from their test result. The certificate serves as official proof of a negative test result.
 
-Users can select the test result on their app’s home screen and then tap on "Test Certificate" under the test result to directly navigate to the certificate – provided they’ve requested it in advance when registering the test (for more information see [here](https://www.coronawarn.app/en/blog/2021-06-24-cwa-version-2-4/)). 
+Users can select the test result on their app’s home screen and then tap on "Test Certificate" under the test result to directly navigate to the certificate – provided they’ve requested it in advance when registering the test (for more information see [here](/en/blog/2021-06-24-cwa-version-2-4/)). 
 
 
 <br></br>

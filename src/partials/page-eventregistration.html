@@ -1,5 +1,5 @@
 {{#if page-contents}}
-<section class="section component qrgenerator">
+<section class="section component qrgenerator comment">
   <div class="container">
     <div class="container-inner container-inner_lg">
       <h2 class="headline">{{page-contents.section-main.headline.title}}</h2>
@@ -9,6 +9,7 @@
       <p>{{{page-contents.section-main.introCLI}}}</p>
       
       <!-- Nav tabs -->
+      <p class=""><span class="col-form-label"></span> {{page-contents.section-main.requiredFields}}</p>
 
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">

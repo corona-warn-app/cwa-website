@@ -5,6 +5,13 @@ import 'slick-carousel';
 window.jQuery = $;
 
 $(document).ready(function(){
+    $(window).on('resize', function(){
+        const { hash } = window.location;
+		if(hash) {
+            const contPos = $(hash).offset().top;;
+            $(window).scrollTop(contPos);
+        }
+	});
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
     });
@@ -252,7 +259,7 @@ $(document).ready(function(){
     })
 
     // simple jquery tabs
-    $('.nav-tabs a').click(function(e) {
+    $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
 
         //Toggle tab link
@@ -260,6 +267,10 @@ $(document).ready(function(){
 
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
+
+        //Keep selected on refresh
+        if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
+        else window.location.href += $(this).attr('href');
       });
 
       // glossary links onclick handler

@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Für die neue Funktion der Eventregistrierung hat die Community der Corona-Warn-App in Eigeninitiative einen **QR-Code-Generator** für die Website der Corona-Warn-App entwickelt, der ab sofort unter http://coronawarn.app/de/eventregistration/ zur Verfügung steht. Veranstalter\*innen, Einzelhändler\*innen und Privatpersonen haben damit die Möglichkeit, unabhängig von der Corona-Warn-App QR-Codes zu erzeugen. Zudem hat das Projektteam auf GitHub ein **Kommandozeilen-Werkzeug auf Node.js Basis** veröffentlicht, wodurch größere Organisationen die Möglichkeit haben, eigene, zugeschnittene Lösungen zu bauen.
+Für die neue Funktion der Eventregistrierung hat die Community der Corona-Warn-App in Eigeninitiative einen **QR-Code-Generator** für die Website der Corona-Warn-App entwickelt, der ab sofort unter [https://coronawarn.app/de/eventregistration/](/de/eventregistration/) zur Verfügung steht. Veranstalter\*innen, Einzelhändler\*innen und Privatpersonen haben damit die Möglichkeit, unabhängig von der Corona-Warn-App QR-Codes zu erzeugen. Zudem hat das Projektteam auf GitHub ein **Kommandozeilen-Werkzeug auf Node.js Basis** veröffentlicht, wodurch größere Organisationen die Möglichkeit haben, eigene, zugeschnittene Lösungen zu bauen.
 
 <!-- overview -->
 
