@@ -6,7 +6,7 @@ import picker from './picker.js';
 
 Settings.defaultLocale = documentLang;
 
-const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
+const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
 const now = DateTime.now().minus({days: 1});
 
 function domReady(fn){
@@ -34,7 +34,7 @@ document.querySelectorAll('.analyseRangeRadio input').forEach(e => {
 
 date$.subscribe(ary => {
 	picker.setDateRange(...ary);
-	const a = ary.map(i => DateTime.fromISO(i).toLocaleString(dateLocaleFormat));
+	const a = ary.map(i => DateTime.fromISO(i).toFormat(dateLocaleFormat));
 	document.querySelector('.analyseRangePicker-btn span').innerHTML = a.join(" - ");
 	document.querySelector('.analyseRangePicker').classList.remove("active")
 });

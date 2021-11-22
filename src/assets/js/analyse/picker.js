@@ -5,7 +5,7 @@ import { DateTime, Settings } from 'luxon';
 
 Settings.defaultLocale = documentLang;
 
-const dateLocaleFormat = { month: '2-digit', day: '2-digit', year: 'numeric' };
+const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
 const now = DateTime.now().minus({days: 1});
 
 
@@ -20,7 +20,7 @@ $(document).on("focus",".analyseRangePicker-input", function(){
 $(document).on("blur",".analyseRangePicker-input", function(e){
 	setTimeout(() => {
 		const dateFromPicker = ($(this).attr("name") == "start")? picker.getStartDate().dateInstance: picker.getEndDate().dateInstance; 
-		$(this).val(DateTime.fromJSDate(dateFromPicker).toLocaleString(dateLocaleFormat));
+		$(this).val(DateTime.fromJSDate(dateFromPicker).toFormat(dateLocaleFormat));
 	}, 400);
 });
 
@@ -39,7 +39,7 @@ const picker = new Litepicker({
 	maxDate: now, 
 	scrollToDate: false,
 	autoApply: true,
-	format: (documentLang == "de")? "DD.MM.YYYY": "MM/DD/YYYY",
+	format: (documentLang == "de")? "DD.MM.YYYY": "DD/MM/YYYY",
 	allowRepick: true,
 	buttonText: analyseConfig.pickerButtonText,
 	setup: (picker) => {
@@ -76,10 +76,11 @@ $('.analyseRangePicker-input').each(function(){
 		delimiter: (documentLang == "de")? '.': '/',
 		dateMin: analyseConfig.startDate,
 		dateMax: now.toISODate(),
-		datePattern: (documentLang == "de")? ['d','m','Y']: ['m','d','Y'],
+		datePattern: ['d','m','Y'],
 		onValueChanged: function(e) {
 			if(e.target.rawValue.length != 8) return;
-			const dateInput = DateTime.fromFormat(e.target.value, "D");
+			console.log(e.target.value)
+			const dateInput = DateTime.fromFormat(e.target.value, dateLocaleFormat);
 			const dateFromPicker = (e.target.name == "start")? picker.getEndDate().dateInstance: picker.getStartDate().dateInstance; 
 			const dates = [dateInput];
 
