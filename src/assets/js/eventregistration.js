@@ -150,7 +150,7 @@ document.getElementById('downloadCode').addEventListener('click', function (e) {
   const doc = new jsPDF({
     orientation: portrait ? "portrait" : "landscape",
   });
-  doc.addImage(document.getElementById('eventqrcode').toDataURL("image/png"), 'PNG', 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight());
+  doc.addImage(document.getElementById('eventqrcode').toDataURL("image/png"), 'PNG', 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight(), "", 'FAST');
   doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
 });
 
