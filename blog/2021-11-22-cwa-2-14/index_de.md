@@ -3,7 +3,7 @@ page-title: "Nutzer*innen können jetzt auch gelöschte PCR- und Schnelltests zu
 page-description: "Nutzer*innen können jetzt auch gelöschte PCR- und Schnelltests zurückholen"
 page-name: cwa-2-14
 page-name_de: cwa-2-14
-author: Hanna Heine, 18 Uhr
+author: Hanna Heine, 10:00 Uhr
 layout: blog
 ---
 
@@ -17,19 +17,34 @@ Nutzer*innen der Corona-Warn-App können schon seit Version 2.13 Zertifikate, di
 
 <br></br>
 <center> 
-<img src="./SCREENSHOT.png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Caption Zertifikat</em></figcaption>
+<img src="./bin_test_ios_de.png" title="Papierkorb" style="align: center" height=600px> 
+<figcaption aria-hidden="true"><em>Abb. 1: Papierkorb mit gelöschten Zertifikaten und Tests</em></figcaption>
 </center>
 <br></br>
 
-Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in den Papierkorb verschoben. Dort bleibt er 30 Tage bevor er endgültig gelöscht wird. iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen, Android-Nutzer*innen können die drei Punkte in der rechten oberen Ecke des Tests auswählen und auf „Wiederherstellen“ tippen. 
-
+Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in den Papierkorb verschoben. Dort bleibt er 30 Tage bevor er endgültig gelöscht wird. iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen, Android-Nutzer\*innen können die drei Punkte in der rechten oberen Ecke des Tests auswählen und auf „Wiederherstellen“ tippen. 
 
 <br></br>
-<center> 
-<img src="./SCREENSHOT.png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Caption Zertifikat</em></figcaption>
-</center>
+<div class="well text-center">
+    <div class="row">
+        <div class="col-md-6">
+            <figure>
+                <img src="./bin_android_de.png" title="Android Papierkorb, Drei-Punkte-Menu" style="align: center" height=600px>
+                <figcaption aria-hidden="true">
+                    <em>Abb. 2: Android-Nutzer*innen können die drei Punkte in der rechten oberen Ecke des Tests auswählen und auf „Wiederherstellen“ tippen.</em>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <figure>
+                <img src="./bin_recover_test_notification_ios_de.png" title="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" style="align: center" height=600px>
+                <figcaption aria-hidden="true">
+                    <em>Abb. 3: iOS-Nutzer*innen können den einen Test wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen.</em>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
 <br></br>
 
 Der Test wird dann an den ursprünglichen Ort in der Corona-Warn-App verschoben. Verschieben Nutzer*innen einen Test in den Papierkorb und scannen ihn dann noch einmal ein, erkennt die Corona-Warn-App ab Version 2.14, dass es sich um denselben Test handelt und stellt ihn wieder her.  
@@ -38,8 +53,8 @@ Nutzer*innen können außerdem weiterhin nur einen  aktiven Test in ihrer App re
 
 <br></br>
 <center> 
-<img src="./SCREENSHOT.png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Caption Zertifikat</em></figcaption>
+<img src="./bin_another_test_ios_de.png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" height=600px> 
+<figcaption aria-hidden="true"><em>Abb. 4: Die App kann maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten. Wenn Nutzer z. B. einen weiteren PCR-Test registrieren, wird der erste PCR-Test in den Papierkorb verschoben.</em></figcaption>
 </center>
 <br></br>
 
