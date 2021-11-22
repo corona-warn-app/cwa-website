@@ -20,7 +20,7 @@ Since version 2.13, Corona-Warn app users have been able to restore accidentally
 </center>
 <br></br>
 
-If users remove a registered test, it is now moved to the recycle bin where it stays for 30 days before it will be permanently deleted. In the recycle bin, iOS users can restore it by selecting the corresponding test and tapping "Restore". Android users can select the three dots in the upper right corner of the test and tap "Restore". 
+If users remove a registered test, it is now moved to the recycle bin where it stays for 30 days before it will be permanently deleted. In the recycle bin, Android users can select the three dots in the upper right corner of the test and tap "Restore". iOS users can restore it by selecting the corresponding test and tapping "Restore". 
 
 <br></br>
 <div class="well text-center">
