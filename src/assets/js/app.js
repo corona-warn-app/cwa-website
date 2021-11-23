@@ -19,7 +19,7 @@ $(document).ready(function(){
         $(window).on('resize', function(){
             const { hash } = window.location;
             if(hash) {
-                const contPos = $(hash).offset().top;;
+                const contPos = $(hash).offset().top;
                 $(window).scrollTop(contPos);
             }
         });
