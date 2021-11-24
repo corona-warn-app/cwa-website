@@ -3,15 +3,27 @@ import throttle from 'lodash.throttle';
 import 'slick-carousel';
 
 window.jQuery = $;
+const deviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    }
+    else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+};
 
 $(document).ready(function(){
-    $(window).on('resize', function(){
-        const { hash } = window.location;
-		if(hash) {
-            const contPos = $(hash).offset().top;;
-            $(window).scrollTop(contPos);
-        }
-	});
+    if(deviceType() === "desktop"){
+        $(window).on('resize', function(){
+            const { hash } = window.location;
+            if(hash) {
+                const contPos = $(hash).offset().top;
+                $(window).scrollTop(contPos);
+            }
+        });
+    }   
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
     });
