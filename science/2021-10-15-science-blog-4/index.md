@@ -207,7 +207,7 @@ The following information is available from data recorded locally using the Goog
 - Transmission risk level (`transmission_risk_level`, `report_type`, `infectiousness`)
 - Calibration confidence (`callibration_confidence`)
 - [Normalised exposure time](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in minutes)
-- [Array of scan instances](https://en.wikipedia.org/wiki/Array_data_structure) (`exposure_window_id`): 
+- [Array](https://en.wikipedia.org/wiki/Array_data_structure) of [scan instances](https://developer.apple.com/documentation/exposurenotification/enscaninstance)(`exposure_window_id`): 
   - typical attenuation (`typical_attenuation`)
   - minimum attenuation (`minimum_attenuation`)
   - Seconds since the last scan (`seconds_since_last_scan`)
@@ -223,9 +223,9 @@ In the next section, we take a closer look at the data donors themselves (or, mo
 
 ### 4.1 Number of donations over time (by OS)
 
-The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s iOS and 6,058,137 from Android-based devices. 
+The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IPhone) and 6,058,137 from [Android](https://de.wikipedia.org/wiki/Smartphone)-based devices. 
 
-Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://de.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the[PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
+Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the[PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
 
 <div class="figure">
 <div id="htmlwidget-19ae046b5fe62085f4f1" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -238,7 +238,7 @@ Figure 1: Number of donations (total and by operating system).
 
 ### 4.2 Number of donations over time (by OS version)
 
-A breakdown of the data by operating system demonstrates the typical homogeneity associated with iOS and the heterogeneity associated with Android-based devices.
+A breakdown of the data by operating system demonstrates the typical homogeneity associated with [iOS](https://en.wikipedia.org/wiki/IOS_(Betriebssystem)) and the heterogeneity associated with [Android](https://en.wikipedia.org/wiki/Android_(Betriebssystem))-based devices.
 
 <div class="figure">
 <div id="htmlwidget-df4d42fa52db4862e86d" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -264,7 +264,7 @@ Figure 3: Number of donations (by CWA version)
 
 ### 4.4 Participant distribution by age group
 
-The following graph depicts the distribution of the participants by age group. 34% of participants provided an indication of their age. Of these, 18.3% stated that they were under 30, 62% that they were aged between 30 and 59 and 19.7% that they were 60 or older. These figures are within expected ranges (see  [EDUS participants by age and sex](../2021-07-08-science-blog-2/#43-alter-und-geschlecht)).
+The following graph depicts the distribution of the participants by age group. 34% of participants provided an indication of their age. Of these, 18.3% stated that they were under 30, 62% that they were aged between 30 and 59 and 19.7% that they were 60 or older. These figures are within expected ranges (see  [EDUS participants by age and sex](../2021-07-08-science-blog-2/#43-age-and-sex)).
 
 <div class="figure">
 <div id="htmlwidget-246533c3d9558659936b" style="width:800px;height:600px;" class="plotly html-widget"></div>
