@@ -43,7 +43,9 @@
 	<div class="analyseUpdate">
 		{{page-contents.update}}
 		<span class="analyseUpdate-timestamp"></span>.
-		{{page-contents.updateNotice}}
+		<button class="btn analyseBoard-iconBtn analyseBoard-info info-textblock"  rel="{{page-contents.updateNoticeIcon.title}}">
+			<img src="{{root}}assets/img/icons/info.svg">
+		</button>
 	</div>
 	
 
@@ -229,6 +231,18 @@
 			</div>
 		</div>
 	{{/each}}
+
+	<div class="analyseModalInfo" rel="{{page-contents.updateNoticeIcon.title}}">
+		<h2 class="headline analyseModal-title">
+			<button class="btn analyseModalInfo-close">
+				<img src="{{root}}assets/img/icons/Close.svg">
+			</button>
+			{{page-contents.updateNoticeIcon.title}}
+		</h2>
+		<div class="analyseModal-content">
+			{{page-contents.updateNoticeIcon.content}}
+		</div>
+	</div>
 
 
 
