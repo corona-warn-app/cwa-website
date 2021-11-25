@@ -289,7 +289,7 @@ Figure 5: Donations by district.
 </p>
 </div>
 
-The clear differences in this chart between urban and rural areas and between eastern and western districts were also identified by the [EDUS](../2021-07-08-science-blog-2/#52-unterschiede-zwischen-urbanen-und-ländlichen-landkreisen).
+The clear differences in this chart between urban and rural areas and between eastern and western districts were also identified by the [EDUS](../2021-07-08-science-blog-2/#52-differences-between-urban-and-rural-districts).
 
 ### 4.6 Differences between urban and rural districts
 
@@ -313,14 +313,14 @@ In order to make the graph a bit easier to understand, these data are also displ
 
 The “incidence” of people providing their data (the number of participants per 100,000 inhabitants) rises with increasing population density. On average, 4,191 participants (per 100,000 inhabitants) live in rural areas (median: 4,246), with 4,875 living in urban areas (median: 4,780).
 5,154 participants (per 100,000 inhabitants) live in western districts and 3,331 live in eastern districts.
-This gives an average of 4,388 users. Once the percentage of those who stated their district is taken into account, the figure rises to 13,312. Later on, we will see that around half of all CWA users donate their data, which means that about 27% of the population actively uses the CWA.
+This gives an average of 4,388 users. Once the percentage of those who stated their district is taken into account, the figure rises to 13,312. [Later](#66-the-percentage-of-users-who-donate-data) on, we will see that around half of all CWA users donate their data, which means that about 27% of the population actively uses the CWA.
 
 ## 5 Receipt of a warning
 ### 5.1 Warnings and the people who received them
 
 Figure 7 shows trends in people who provided or received a warning. Whereas the number of people who provided a warning is known from the CWA ecosystem, the number of people who subsequently received a warning can only be calculated using data donation. Since 5 March 2021, the CWA has sent out 619,189 red warnings (increased risk) and 1,518,663 green warnings (low risk).
 
-During this period 273,953 people warned others through the CWA, which allows us to infer about 5 (red) warned people per warning person, considering the estimated proportion of data donors. For warnings without an increased risk, the mean value is 11 (green) warned persons per warning person.
+During this period 273,953 people warned others through the CWA, which allows us to infer about 5 (red) warned people per warning person, considering the [estimated proportion of data donors](#66-the-percentage-of-users-who-donate-data). For warnings without an increased risk, the mean value is 11 (green) warned persons per warning person.
 
 <div class="figure">
 <div id="htmlwidget-1d3e85f3dab2978c7de0" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -346,7 +346,7 @@ Figure 8 shows trends in the number of people who received a red or green warnin
 
 A total of 9,075 people received a warning from a check-in. 4,505 were notified about an increased risk (red warning) and 4,570 were notified about a low risk (green warning).
 
-During the same period data were donated on 398 check-in events, which allows us to infer approximately 46.5 (of which 23.1 were red and 23.4 were green) warnings per event, considering the estimated proportion of data donors. Due to the fact that the CWA is not covered by the Corona-Schutzverordnungen (the Corona Protection Ordinance), the app cannot always be used for official check-ins. Saxony is the only federal state to have anchored the CWA as a check-in tool into its corona protection regulations.
+During the same period data were donated on 398 check-in events, which allows us to infer approximately 46.5 (of which 23.1 were red and 23.4 were green) warnings per event, considering the [estimated proportion of data donors](#66-the-percentage-of-users-who-donate-data). Due to the fact that the CWA is not covered by the Corona-Schutzverordnungen (the Corona Protection Ordinance), the app cannot always be used for official check-ins. Saxony is the only federal state to have anchored the CWA as a check-in tool into its corona protection regulations.
 
 <div class="figure">
 <div id="htmlwidget-34e1a6afe05ba2596ceb" style="width:800px;height:600px;" class="plotly html-widget"></div>
