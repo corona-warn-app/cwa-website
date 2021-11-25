@@ -20,9 +20,9 @@ How quickly is a PCR test result submitted to the CWA? How many warnings are sen
     1. [The purpose of data donation](#31-the-purpose-of-data-donation)
     2. [Data collected](#32-data-collected)
 4. [Data about the participants and their devices](#4-data-about-the-participants-and-their-devices)
-    1. [Number of donations over time (by OS)](#41-number-of-donations-over-time-by-OS)
-    2. [Number of donations over time (by OS)](#42-number-of-donations-over-time-by-OS)
-    3. [Number of donations over time (by CWA version)](#43-number-of-donations-over-time-by-CWA-version))
+    1. [Number of donations over time (by OS)](#41-number-of-donations-over-time-by-os)
+    2. [Number of donations over time (by OS version)](#42-number-of-donations-over-time-by-os-version)
+    3. [Number of donations over time (by CWA version)](#43-number-of-donations-over-time-by-cwa-version)
     4. [Participant distribution by age group](#44-participant-distribution-by-age-group)
     5. [Geographical distribution](#45-geographical-distribution)
     6. [Differences between urban and rural districts](#46-differences-between-urban-and-rural-districts)
@@ -92,11 +92,11 @@ The following data are collected (see [github.com/corona-warn-app/cwa-ppa-server
 
 - [Technical metadata](#321-technical-metadata) (daily)
 - [Metadata from users](#322-metadata-from-users) (User) (daily, optional) 
-- [Metadata from end devices](#323-metadata-from-end-devices) (Client) (daily) 
-- [Data from people who have received a warning](#324-data-from-people-who-have-received-a-warning) (Exposure Risk) (daily)
-- [Data on test result](#325-data-on-test-result) (Test Result) (event-related)
-- [Data on key submission](#326-data-on-key-submission) (Key Submission) (event-related)
-- [Data on exposure windows and scan instances](#327-data-on-exposure-windows-and-scan-instances) (ENF) (daily)
+- [Metadata from end devices](#323-metadata-from-devices) (Client) (daily) 
+- [Data from people who have received a warning](#324-people-who-received-a-warning-exposure-risk) (Exposure Risk) (daily)
+- [Data on test result](#325-test-results) (Test Result) (event-related)
+- [Data on key submission](#326-key-submission) (Key Submission) (event-related)
+- [Data on exposure windows and scan instances](#327-exposure-windows-and-scan-instances) (ENF) (daily)
 
 
 
