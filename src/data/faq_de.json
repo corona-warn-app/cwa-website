@@ -1176,6 +1176,14 @@
                 "id": "availability",
                 "accordion": [
                     {
+                        "title": "Wo bekomme ich die App?",
+                        "anchor": "where_to_get",
+                        "active": true,
+                        "textblock": [
+                            "Sie können die Corona-Warn-App im <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> bzw. im <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a> herunterladen."
+                        ]
+                    },
+                    {
                         "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
                         "anchor": "minimum_requirements",
                         "active": true,
@@ -1317,14 +1325,6 @@
                             "Updates für die Corona-Warn-App werden in einem sogenannten \"gestaffelten Rollout\" über eine Zeitspanne von 48 Stunden ausgeliefert. Dies bedeutet, dass das Update in der genannten Zeitspanne schrittweise einem immer größer werdenden Anteil an Nutzern zur Verfügung gestellt wird, anstatt es an alle Nutzer direkt auszuliefern. Durch den gestaffelten Rollouts können kritische Fehler und Abstürze früh erkannt und vom Entwicklungsteam adressiert werden, bevor sie eine große Zahl an Nutzern betreffen.",
                             "Die Reihenfolge in welcher die Nutzer das Update erhalten wird von den Anbietern der App-Stores für jedes Release zufällig festgelegt. Deswegen kann es sein, dass Sie das Update erst bis zu zwei Tage nach dem offiziellen Release-Datum erhalten. Das Entwicklungsteam der Corona-Warn-App hat keinen Einfluss auf die Reihenfolge, in der Nutzer das Update erhalten.",
                             "<b>Hinweis:</b> Unter iOS ist es möglich, das Update manuell auszulösen, indem Sie die App Store Seite der Corona-Warn-App besuchen. Diese Option gibt es unter Android nicht."
-                        ]
-                    },
-                    {
-                        "title": "Wo bekomme ich die App?",
-                        "anchor": "where_to_get",
-                        "active": true,
-                        "textblock": [
-                            "Sie können die Corona-Warn-App im <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> bzw. im <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a> herunterladen."
                         ]
                     }
                 ]
@@ -1558,6 +1558,7 @@
                             "Wird eine nicht eingecheckte Person später positiv getestet, können die Gäste gewarnt werden, wenn sie sich zur gleichen Zeit oder bis zu 30 Minuten nach der positiv getesteten Person im gleichen Raum aufgehalten haben.",
                             "Um als Organisator einer Veranstaltung andere Gäste über die CWA zu warnen, gehen Sie bitte folgendermaßen vor:",
                             "<ul><li>Erhalten Sie im Nachhinein Kenntnis von der Gegenwart einer positiv getesteten Person auf Ihrer Veranstaltung, und hat das Gesundheitsamt Sie als Organisator einer Veranstaltung noch nicht kontaktiert, setzen Sie sich mit dem Gesundheitsamt in Verbindung. Das Gesundheitsamt kann Ihnen gegebenenfalls eine TAN ausstellen.</li><li>Klicken Sie unter Status (vor Version 2.12 'Startseite') in Ihrer CWA auf „QR-Code erstellen“.</li><li>Klicken Sie auf der „Meine QR-Codes“-Seite oben rechts auf das Drei-Punkte-Menü und dann auf den Menüpunkt „In Vertretung warnen“.</li><li>Klicken Sie auf dem Infoscreen auf „Weiter“.</li><li>Wählen Sie eine Veranstaltung, für welches Sie in Vertretung einer infizierten Person andere warnen möchten. Oder stellen Sie eine gelöschte Veranstaltung wieder her, indem Sie den QR-Code der Veranstaltung erneut einscannen. Klicken Sie auf „Weiter“.</li><li>Geben Sie die Aufenthaltsdauer der positiv getesteten Person an, für die gewarnt werden soll. Diese Information erhalten Sie vom Gesundheitsamt. Klicken Sie auf „Weiter“.</li><li>Geben Sie die 10-stellige TAN ein, die Ihnen mitgeteilt wurde. Klicken Sie auf „Warnung abschicken“.</li></ul>",
+                            "Schauen Sie sich außerdem auch dieses Poster an, welches den Vorgang des Warnens in Vertretung Schritt für Schritt darstellt: <ul><li><a href='../../assets/documents/DE_CWA_RKI-Plakat_Stellvertreter-Warnung.pdf' target='_blank'>Poster: So warnen Sie stellvertretend alle Personen einer Veranstaltung</a></li></ul>",
                             "Zur Veranschaulichung können Sie unter den folgenden Links Screenshots für das Warnen in Vertretung für sowohl iOS als auch Android Geräte finden:<ul><li><a href='../screenshots/#ios_warn_for_others' target='_blank'>iOS Screenshots: In Vertretung warnen</a></li><li><a href='../screenshots/#android_warn_for_others' target='_blank'>Android Screenshots: In Vertretung warnen</a></li></ul>"
                         ]
                     },

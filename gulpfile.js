@@ -146,7 +146,7 @@ function analyseData(){
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
   }).catch(e => {
     const data = fs.readFileSync('src/data/analyse_data_no_internet.json', 'utf8');
-    fs.mkdirSync("public")
+    if(!fs.existsSync("public")) fs.mkdirSync("public")
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, {flag: 'w'});
   })
 }
