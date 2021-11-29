@@ -28,7 +28,7 @@ context("Check for broken links", () => {
                   '/de/science/',
                   '/en/science/'
                 ]
-    const whitelist = [
+    const allowlist = [
       'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999'
     ]
 
@@ -39,7 +39,7 @@ context("Check for broken links", () => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
       cy.get("a:not([href*='mailto:'],[href*='tel:'],[href*='#'])").not('.email').each(url => {
-        if (url.prop('href') && !whitelist.includes(url.prop('href'))) {         
+        if (url.prop('href') && !allowlist.includes(url.prop('href'))) {         
           cy.request({
             failOnStatusCode: false, 
             log: false,
@@ -64,7 +64,7 @@ context("Check for broken links", () => {
 context("Check for broken links on entries", () => {
   const subpages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
   const pagesToAvoid = ['/de/blog/', '/en/blog/', '/de/science/', '/en/science/', '/de/blog/archiv', '/en/blog/archive']
-  const whitelist = [
+  const allowlist = [
     'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999'
   ]
   subpages.forEach(sub => {
@@ -74,7 +74,7 @@ context("Check for broken links on entries", () => {
         if(url.prop('href').includes('localhost') && url.prop('href').includes(sub) && !pagesToAvoid.includes(url.prop('href').replace('http://localhost:8000', ''))) {
           cy.visit({log: false, url: url.prop('href')} )
           cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(entry => {
-            if (entry.prop('href') && !whitelist.includes(entry.prop('href'))) {
+            if (entry.prop('href') && !allowlist.includes(entry.prop('href'))) {
               cy.request({
                 failOnStatusCode: false, 
                 log: false,
