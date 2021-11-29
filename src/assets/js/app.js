@@ -81,6 +81,22 @@ $(document).ready(function(){
             }
         }]
     });
+
+    $('.qr-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint : 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
     if ($('.js-section-sticky').index() >= 0){
         const autoHideSticky = function(){
             const top = $(document).scrollTop(),
@@ -247,6 +263,12 @@ $(document).ready(function(){
         $(this).attr( "href", "mailto:" + $(this).attr("href").replace("...", "@").replace(/\.\.\./g, ".") );
     });
 
+
+    // multiqr csv upload name change
+    // to prevent a csp issue due to inline js on eventregistration page
+    $('#csvFile').on('change', () => {
+        document.getElementById('csvName').innerHTML = document.getElementById('csvFile').files[0].name;
+    })
 
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {
