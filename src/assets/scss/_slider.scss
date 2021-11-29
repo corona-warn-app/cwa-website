@@ -85,7 +85,7 @@
         left:  $slider-arrow-size * -1.25;
     }
     @media (min-width: $screen-xl) {
-        left:  $slider-arrow-size * -1.75;
+        left:  $slider-arrow-size * -1.15;
     }
 }
 
@@ -99,7 +99,7 @@
         right:  $slider-arrow-size * -1.25;
     }
     @media (min-width: $screen-xl) {
-        right:  $slider-arrow-size * -1.75;
+        right:  $slider-arrow-size * -1.15;
     }
 }
 
@@ -168,6 +168,9 @@
         &.slick-active button:before {
             background-color: $slick-dot-color-active;
             opacity: $slick-opacity-default;
+        }
+        &:not(.show) {
+            display: none;
         }
     }
 }

@@ -69,8 +69,11 @@ gulp.task(
 gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
 gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 
+// Run the server, and watch for file changes
+gulp.task('start-server', gulp.series(server, watch));
+
 // Build the site, run the server, and watch for file changes
-gulp.task('default', gulp.series('build', server, watch));
+gulp.task('default', gulp.series('build', 'start-server'));
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -140,9 +143,10 @@ function analyseData(){
   }
 
   return fallbackdataFn().then(e => {
+    fs.writeFileSync('src/data/analyse-backup.json', e, {flag: 'w'});
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
   }).catch(e => {
-    const data = fs.readFileSync('src/data/analyse_data_no_internet.json', 'utf8');
+    const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
     if(!fs.existsSync("public")) fs.mkdirSync("public")
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, {flag: 'w'});
   })
