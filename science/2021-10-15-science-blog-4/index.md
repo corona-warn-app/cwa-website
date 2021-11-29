@@ -46,7 +46,7 @@ We would like to begin by thanking the Corona-Warn-App’s users, especially tho
 ## 2 The most important findings in a nutshell: numbers, data and facts
 
 - Around 12 million app users donate their data every day (this has resulted in 9,638,099,766 records).
-- The share of data donors is around 49%.
+- The percentage of data donors is about 49%.
 - There are differences between the number of app users in [urban and rural districts](#46-differences-between-urban-and-rural-districts), and between eastern and western Germany.
 - On average, 5 people who have been exposed to an increased risk and 11 people who have been exposed to a low-level risk are warned for each positive test result registered in the app.
 - Each check-in results in warnings about increased risk being sent out to around 23 people.
