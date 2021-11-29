@@ -3,15 +3,27 @@ import throttle from 'lodash.throttle';
 import 'slick-carousel';
 
 window.jQuery = $;
+const deviceType = () => {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    }
+    else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+};
 
 $(document).ready(function(){
-    $(window).on('resize', function(){
-        const { hash } = window.location;
-		if(hash) {
-            const contPos = $(hash).offset().top;;
-            $(window).scrollTop(contPos);
-        }
-	});
+    if(deviceType() === "desktop"){
+        $(window).on('resize', function(){
+            const { hash } = window.location;
+            if(hash) {
+                const contPos = $(hash).offset().top;
+                $(window).scrollTop(contPos);
+            }
+        });
+    }   
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
     });
@@ -69,6 +81,22 @@ $(document).ready(function(){
             }
         }]
     });
+
+    $('.qr-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint : 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
     if ($('.js-section-sticky').index() >= 0){
         const autoHideSticky = function(){
             const top = $(document).scrollTop(),
@@ -235,6 +263,12 @@ $(document).ready(function(){
         $(this).attr( "href", "mailto:" + $(this).attr("href").replace("...", "@").replace(/\.\.\./g, ".") );
     });
 
+
+    // multiqr csv upload name change
+    // to prevent a csp issue due to inline js on eventregistration page
+    $('#csvFile').on('change', () => {
+        document.getElementById('csvName').innerHTML = document.getElementById('csvFile').files[0].name;
+    })
 
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {

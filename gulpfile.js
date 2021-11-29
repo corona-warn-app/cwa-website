@@ -69,8 +69,11 @@ gulp.task(
 gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
 gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 
+// Run the server, and watch for file changes
+gulp.task('start-server', gulp.series(server, watch));
+
 // Build the site, run the server, and watch for file changes
-gulp.task('default', gulp.series('build', server, watch));
+gulp.task('default', gulp.series('build', 'start-server'));
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -140,10 +143,11 @@ function analyseData(){
   }
 
   return fallbackdataFn().then(e => {
+    fs.writeFileSync('src/data/analyse-backup.json', e, {flag: 'w'});
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
   }).catch(e => {
-    const data = fs.readFileSync('src/data/analyse_data_no_internet.json', 'utf8');
-    fs.mkdirSync("public")
+    const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
+    if(!fs.existsSync("public")) fs.mkdirSync("public")
     return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, {flag: 'w'});
   })
 }
@@ -423,12 +427,12 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '15.1'))
+    .pipe(replace('[ios.latest-os-version]', '15.1.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.13.2'))
+    .pipe(replace('[ios.current-app-version]', '2.14.1'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.13.3'))
+    .pipe(replace('[android.current-app-version]', '2.14.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }

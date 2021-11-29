@@ -150,7 +150,7 @@
                         ]
                     },
                     {
-                        "title": "How long is my certificate valid​",
+                        "title": "How long is my certificate valid?​",
                         "anchor": "eu_dcc_validity",
                         "active": true,
                         "textblock": [
@@ -243,9 +243,11 @@
                         "anchor": "cert_recycle_bin",
                         "active": true,
                         "textblock": [
-                            "Starting with version 2.13, vaccination, recovery, or test certificates that you have deleted are temporarily moved to a recycle bin.  This allows you to easily recover the certificate in case of accidental removal and move it back to its original location. If a certificate remains in the recycle bin for 30 days, it will automatically be permanently deleted, unless you have manually permanently deleted it from the recycle bin beforehand. A certificate that has been deleted in the app can still be rescanned. If it is still in the recycle bin and has therefore not been permanently removed, you will receive a message that it has been restored.",
-                            "<b>iOS:</b><ul><li>Swipe down while on the Status tab and select 'Recycle Bin' under 'More'.</li><li>If there are certificates in your recycle bin, you can tap a certificate to restore it.</li><li>To permanently remove a certificate from the recycle bin, first tap on 'Edit' at the top right. Then tap on the red minus sign next to the respective certificate. Alternatively, you can swipe to the left directly in the listing without first tapping 'Edit' while holding down on a certificate. Then tap on the red 'Delete' field.</ul>",
-                            "<b>Android:</b><ul><li>While on the Status tab, tap the three-dot menu in the top-right corner.</li><li>Tap 'Recycle Bin'.</li><li>Within one of the certificates listed there, tap the three-dot menu in the top-right corner.</li><li>Select whether you want to restore the selected certificate or permanently remove it from the recycle bin.</li></ul>",
+                            "Starting with version 2.13, <b>vaccination, recovery, or test certificates</b> that you have deleted are temporarily moved to a recycle bin.  This allows you to easily recover the certificate in case of accidental removal and move it back to its original location. If a certificate remains in the recycle bin for 30 days, it will automatically be permanently deleted, unless you have manually permanently deleted it from the recycle bin beforehand. A certificate that has been deleted in the app can still be rescanned. If it is still in the recycle bin and has therefore not been permanently removed, you will receive a message that it has been restored.",
+                            "Starting with version 2.14, <b>tests</b> that you have deleted will also be moved to the recycle bin for 30 days.",
+                            "<b>iOS:</b><ul><li>Swipe down while on the Status tab and select 'Recycle Bin' under 'More'.</li><li>If there are certificates or tests in your recycle bin, you can tap on them to restore them.</li><li>To permanently remove a certificate or test from the recycle bin, first tap on 'Edit' at the top right. Then tap on the red minus sign next to the respective certificate or test. Alternatively, you can swipe to the left directly in the listing without first tapping 'Edit' while holding down on a certificate or test. Then tap on the red 'Delete' field.</ul>",
+                            "<b>Android:</b><ul><li>While on the Status tab, tap the three-dot menu in the top-right corner.</li><li>Tap 'Recycle Bin'.</li><li>Within one of the certificates or tests listed there, tap the three-dot menu in the top-right corner.</li><li>Select whether you want to restore the selected certificate/test or permanently remove it from the recycle bin.</li></ul>",
+                            "Note that the app can manage a maximum of one rapid test and one PCR test at a time. For example, if you restore a PCR test and had previously registered another PCR test, the active PCR test will be moved to the recycle bin.",
                             "You can find screenshots on the recycle bin for both iOS and Android devices at the following links:<ul><li><a href='../screenshots/#ios_recycle_bin' target='_blank'>iOS Screenshots: Recycle Bin</a></li><li><a href='../screenshots/#android_recycle_bin' target='_blank'>Android Screenshots: Recycle Bin</a></li></ul>"
                         ]
                     }
@@ -884,6 +886,17 @@
                         ]
                     },
                     {
+                        "title": "Why does the CWA not scan a QR code? Why does the QR code scanner not respond?",
+                        "anchor": "scan_tips",
+                        "active": true,
+                        "textblock":[
+                            "On some devices, the camera does not recognize the QR code immediately and nothing happens at first, i.e. neither the QR code is scanned nor an error message is displayed. This behavior primarily affects some Android devices, but can also occur on iOS devices.",
+                            "The following tips often help to scan the QR code:",
+                            "<ul> <li> On the QR code, you will see 3 larger squares in the corner: these must be fully captured by the camera.</li> <li>Hold the camera a little further away from the QR code until it is about the size of a postage stamp.</li> <li>Make sure there is sufficient contrast and lighting conditions.</li> <li>Rotate the QR code 90 degrees and try again.</li></ul>",
+                            "Alternatively, you can try the following: Create a photo/screenshot of your QR code and import this file by selecting 'Open File' in the QR code scanner."
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901",
                         "anchor": "access-list",
                         "active": true,
@@ -1156,6 +1169,14 @@
                 "id": "availability",
                 "accordion": [
                     {
+                        "title": "Where can I get the app?",
+                        "anchor": "where_to_get",
+                        "active": true,
+                        "textblock": [
+                            "You can download the Corona-Warn-App from the <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> or <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a>."
+                        ]
+                    },
+                    {
                         "title": "What are the minimum operating system requirements for my phone?",
                         "anchor": "minimum_requirements",
                         "active": true,
@@ -1296,14 +1317,6 @@
                             "The order in which users receive the update is randomly determined for every release by the app store vendors. Therefore, you might receive the update up to two days after the official release date. The Corona-Warn-App development team has no influence on the order in which users receive the update.",
                             "<b>Please note:</b> On iOS, it is possible to manually trigger the update by visiting the App Store page of the Corona-Warn-App. This option does not exist on Android."
                         ]
-                    },
-                    {
-                        "title": "Where can I get the app?",
-                        "anchor": "where_to_get",
-                        "active": true,
-                        "textblock": [
-                            "You can download the Corona-Warn-App from the <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> or <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a>."
-                        ]
                     }
                 ]
             },
@@ -1426,7 +1439,7 @@
                         "active": true,
                         "textblock": [
                             "This is how the app works:",
-                            "<ol><li>All devices that have the Corona-Warn-App installed send and receive random IDs, which are saved locally on your device. A Bluetooth connection between two devices is only necessary for sending and receiving random IDs.</li><li>If you are diagnosed with COVID-19, you can upload the random IDs your device sent via Bluetooth to the Corona-Warn-App backend. At regular intervals, all devices with the app download these random IDs from the backend and check locally if they have received a matching key via Bluetooth. For uploading and downloading the random IDs, your phone must be able to access the Internet, for example, using WiFi or mobile data.</li><li>If there is a match between a key downloaded from the server and a key saved locally on your device, this means you were exposed to a person who has been diagnosed with COVID-19.</li><li>Based on the matched encounters, the app calculates your personal risk score that determines whether you get displayed a \"low risk\" (green) or \"high risk\" (red) card in the app. You can find out more about the risk calculation in the FAQ entry <a href='#encounter_criteria' target='_blank' rel='noopener noreferrer'>By which criteria are encounters evaluated and how do the recommendations for action differ?</a></li></ol>",
+                            "<ol><li>All devices that have the Corona-Warn-App installed send and receive random IDs, which are saved locally on your device. A Bluetooth connection between two devices is only necessary for sending and receiving random IDs.</li><li>If you are diagnosed with COVID-19, you can upload the random IDs your device sent via Bluetooth to the Corona-Warn-App backend. At regular intervals, all devices with the app download these random IDs from the backend and check locally if they have received a matching key via Bluetooth. For uploading and downloading the random IDs, your phone must be able to access the Internet, for example, using WiFi or mobile data.</li><li>If there is a match between a key downloaded from the server and a key saved locally on your device, this means you were exposed to a person who has been diagnosed with COVID-19.</li><li>Based on the matched encounters, the app calculates your personal risk score that determines whether you get displayed a \"low risk\" (green) or \"high risk\" (red) card in the app. The notification of a risk encounter disappears after 14 days at the latest. In the event of an encounter with increased risk, the corresponding red tile is also displayed in green again. See also: <a href='#encounter_deletion' target='_blank' rel='noopener noreferrer'>I received the message that I had a low risk encounter. The next day it was gone again. Shouldn't this be deleted after 14 days?</a> You can find out more about the risk calculation in the FAQ entry <a href='#encounter_criteria' target='_blank' rel='noopener noreferrer'>By which criteria are encounters evaluated and how do the recommendations for action differ?</a></li></ol>",
                             "The <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a> describes the technical process in detail."
                         ]
                     },
@@ -1536,6 +1549,7 @@
                             "If a person who has not checked in later tests positive, guests may be alerted if they were in the same room at the same time or up to 30 minutes after the person who tested positive.",
                             "To alert other guests using the CWA as an event organizer, please follow these steps:",
                             "<ul><li>If you subsequently become aware of the presence of a positively tested person at your event, and the health department has not yet contacted you as an event organizer, contact the health department. The health department can issue you a TAN if necessary.</li><li>Click 'Create QR Code' on the Status tab ('Start Screen' before version 2.12) of your CWA.</li><li>On the 'My QR Codes' page, click the three-dot menu in the upper right corner and then click the 'Warn for Others' menu item.</li><li>Click 'Continue' on the info screen.</li><li>Select an event for which you would like to warn others for an infected person. Or restore a deleted event by scanning the event's QR code again. Click 'Continue'.</li><li>Indicate the length of stay of the person who tested positive for whom you want to warn. You can get this information from the health department. Click on 'Continue'.</li><li>Enter the 10-digit TAN that you were given. Click on 'Send warning'.</li></ul>",
+                            "Also, take a look at this poster, which shows the process of warning for others step by step: <ul><li><a href='../../assets/documents/DE_CWA_RKI-Plakat_Stellvertreter-Warnung.pdf' target='_blank'>Poster: So warnen Sie stellvertretend alle Personen einer Veranstaltung (German version only)</a></li></ul>",
                             "You can find screenshots for warning for others for both iOS and Android devices at the following links:<ul><li><a href='../screenshots/#ios_warn_for_others' target='_blank'>iOS Screenshots: Warn For Others</a></li><li><a href='../screenshots/#android_warn_for_others' target='_blank'>Android Screenshots: Warn For Others</a></li></ul>"
                         ]
                     },
@@ -1658,7 +1672,7 @@
                         "anchor": "count_per_day",
                         "active": true,
                         "textblock": [
-                            "Yes, that's right. Version 2 of the Exposure Notification Framework (ENF), the interface for Corona apps from Apple and Google, counts the days on which risk encounters have occurred. In other words, a person encountered yesterday and today is counted as \"risk encounters on two days.\" A day is defined here as midnight \"UTC\" to midnight \"UTC\" of the following day."
+                            "Yes. Version 2 of the Exposure Notification Framework (ENF), the interface for Corona apps from Apple and Google, counts the days on which risk encounters have occurred. In other words, a person encountered yesterday and today is counted as \"risk encounters on two days.\" A day is defined here as midnight \"UTC\" to midnight \"UTC\" of the following day."
                         ]
                     }
                 ]

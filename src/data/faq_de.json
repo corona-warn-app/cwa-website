@@ -243,9 +243,11 @@
                         "anchor": "cert_recycle_bin",
                         "active": true,
                         "textblock": [
-                            "Ab Version 2.13 werden Impf-, Genesenen- oder Testzertifikate, die Sie gelöscht haben, vorläufig in einen Papierkorb verschoben. Dies ermöglicht Ihnen im Fall eines versehentlichen Entfernens das Zertifikat mit Leichtigkeit wiederherzustellen und es an seinen ursprünglichen Ort zurück zu verschieben. Sollte ein Zertifikat 30 Tage im Papierkorb verweilen wird es automatisch endgültig gelöscht, sofern man es vorher nicht manuell im Papierkorb endgültig gelöscht hat. Ein Zertifikat, welches in der App gelöscht worden ist, lässt sich trotzdem neu einscannen. Sollte es sich noch im Papierkorb befinden und daher nicht endgültig entfernt worden sein erhält man einen Hinweis, dass es wiederhergestellt wurde.",
-                            "<b>iOS:</b><ul><li>Wischen Sie unter Status nach unten und wählen Sie unter 'Mehr' den 'Papierkorb' aus.</li><li>Sollten sich Zertifikate in Ihrem Papierkorb befinden, können Sie ein Zertifikat antippen, um es wiederherzustellen.</li><li>Um ein Zertifikat endgültig aus dem Papierkorb zu entfernen tippen Sie zunächst oben rechts auf 'Bearbeiten'. Anschließend tippen Sie auf das rote Minuszeichen neben dem jeweiligen Zertifikat zu tippen. Alternativ können Sie direkt in der Auflistung, ohne vorher auf 'Bearbeiten' zu tippen, während des Gedrückthaltens auf einem Zertifikat nach links wischen. Tippen Sie anschließend auf das rote Feld 'Löschen'.</ul>",
-                            "<b>Android:</b><ul><li>Tippen Sie unter Status auf das Drei-Punkte-Menü oben rechts in der Ecke.</li><li>Tippen Sie daraufhin auf 'Papierkorb'.</li><li>Tippen Sie innerhalb eines der dort aufgelisteten Zertifikate auf das Drei-Punkte-Menü oben rechts.</li><li>Wählen Sie aus, ob Sie das ausgewählte Zertifikat wiederherstellen oder endgültig aus dem Papierkorb entfernen wollen.</li></ul>",
+                            "Ab Version 2.13 werden <b>Impf-, Genesenen- oder Testzertifikate</b>, die Sie gelöscht haben, vorläufig in einen Papierkorb verschoben. Dies ermöglicht Ihnen im Fall eines versehentlichen Entfernens das Zertifikat mit Leichtigkeit wiederherzustellen und es an seinen ursprünglichen Ort zurück zu verschieben. Sollte ein Zertifikat 30 Tage im Papierkorb verweilen wird es automatisch endgültig gelöscht, sofern man es vorher nicht manuell im Papierkorb endgültig gelöscht hat. Ein Zertifikat, welches in der App gelöscht worden ist, lässt sich trotzdem neu einscannen. Sollte es sich noch im Papierkorb befinden und daher nicht endgültig entfernt worden sein, wird darauf hingewiesen, dass es wiederhergestellt wurde.",
+                            "Ab Version 2.14 werden auch <b>Tests</b>, die Sie gelöscht haben, für 30 Tage in den Papierkorb verschoben.",
+                            "<b>iOS:</b><ul><li>Wischen Sie unter Status nach unten und wählen Sie unter 'Mehr' den 'Papierkorb' aus.</li><li>Sollten sich Zertifikate oder Tests in Ihrem Papierkorb befinden, können Sie diese antippen, um sie wiederherzustellen.</li><li>Um ein Zertifikat oder Test endgültig aus dem Papierkorb zu entfernen, tippen Sie zunächst oben rechts auf 'Bearbeiten'. Anschließend tippen Sie auf das rote Minuszeichen neben dem jeweiligen Zertifikat, beziehungsweise Test. Alternativ können Sie direkt in der Auflistung, ohne vorher auf 'Bearbeiten' zu tippen, während des Gedrückthaltens auf einem Zertifikat/Test nach links wischen. Tippen Sie anschließend auf das rote Feld 'Löschen'.</ul>",
+                            "<b>Android:</b><ul><li>Tippen Sie unter Status auf das Drei-Punkte-Menü oben rechts in der Ecke.</li><li>Tippen Sie daraufhin auf 'Papierkorb'.</li><li>Tippen Sie innerhalb eines der dort aufgelisteten Zertifikate oder Tests auf das Drei-Punkte-Menü oben rechts.</li><li>Wählen Sie aus, ob Sie das ausgewählte Zertifikat, beziehungsweise den Test, wiederherstellen oder endgültig aus dem Papierkorb entfernen wollen.</li></ul>",
+                            "Beachten Sie, dass die App  maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten kann. Wenn Sie beispielsweise einen PCR-Test wiederherstellen, und zuvor einen weiteren PCR-Test registriert hatten, wird der aktive PCR-Test in den Papierkorb verschoben.",
                             "Zur Veranschaulichung können Sie unter den folgenden Links Screenshots zum Papierkorb für sowohl iOS als auch Android Geräte finden:<ul><li><a href='../screenshots/#ios_recycle_bin' target='_blank'>iOS Screenshots: Papierkorb</a></li><li><a href='../screenshots/#android_recycle_bin' target='_blank'>Android Screenshots: Papierkorb</a></li></ul>"
                         ]
                     }
@@ -503,7 +505,7 @@
                         ]
                     },
                     {
-                        "title": "Kann ich Impfzertifikate auf mehreren Smartphones speichern, z. B. auf meinem Privat- und dem Geschäftshandy? Wie kann ich Impfbescheinigungen beim Gerätewechsel übertragen? Was mache ich, wenn ich mein Smartphone verloren habe? Kann ich Zertifikate in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden? Sind Impfzertifikate in meinem Backup enthalten? ",
+                        "title": "Kann ich Impfzertifikate auf mehreren Smartphones speichern, z.&nbsp;B. auf meinem Privat- und dem Geschäftshandy? Wie kann ich Impfbescheinigungen beim Gerätewechsel übertragen? Was mache ich, wenn ich mein Smartphone verloren habe? Kann ich Zertifikate in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden? Sind Impfzertifikate in meinem Backup enthalten? ",
                         "anchor": "vac_cert_multiple_scan_possible",
                         "active": true,
                         "textblock": [
@@ -884,6 +886,17 @@
                         ]
                     },
                     {
+                        "title": "Warum wird der QR-Code von der CWA nicht gescannt? Warum reagiert der QR-Code-Scanner nicht?",
+                        "anchor": "scan_tips",
+                        "active": true,
+                        "textblock":[
+                            "Auf einigen Geräten erkennt die Kamera den QR-Code nicht sofort und es passiert zunächst gar nichts, d.&nbsp;h. es wird weder der QR-Code eingelesen, noch eine Fehlermeldung angezeigt. Dieses Verhalten betrifft vorrangig einige Android-Geräte, kann jedoch auch auf iOS-Geräten auftreten.",
+                            "Folgende Tipps helfen oft dabei, den QR-Code zu scannen:",
+                            "<ul> <li> Auf dem QR-Code erkennen Sie 3 größere Quadrate in der Ecke: Diese müssen vollständig von der Kamera erfasst werden.</li> <li>Halten Sie die Kamera etwas weiter vom QR-Code weg, bis er in etwa die Größe einer Briefmarke hat.</li> <li>Sorgen Sie für ausreichende Kontraste und Lichtverhältnisse.</li> <li>Drehen Sie den QR-Code um 90 Grad und versuchen Sie es erneut.</li></ul>",
+                            "Alternativ können Sie auch folgendes versuchen: Erstellen Sie ein Foto oder einen Screenshot von Ihrem QR-Code und importieren Sie diese Datei, in dem Sie im QR-Code-Scanner „Datei öffnen“ wählen."
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Firewall/Router Konfiguration: URSACHE: 4000, error during web request, HTTP status 901",
                         "anchor": "access-list",
                         "active": true,
@@ -1163,6 +1176,14 @@
                 "id": "availability",
                 "accordion": [
                     {
+                        "title": "Wo bekomme ich die App?",
+                        "anchor": "where_to_get",
+                        "active": true,
+                        "textblock": [
+                            "Sie können die Corona-Warn-App im <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> bzw. im <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a> herunterladen."
+                        ]
+                    },
+                    {
                         "title": "Welche Systemvoraussetzungen muss mein Smartphone erfüllen?",
                         "anchor": "minimum_requirements",
                         "active": true,
@@ -1305,14 +1326,6 @@
                             "Die Reihenfolge in welcher die Nutzer das Update erhalten wird von den Anbietern der App-Stores für jedes Release zufällig festgelegt. Deswegen kann es sein, dass Sie das Update erst bis zu zwei Tage nach dem offiziellen Release-Datum erhalten. Das Entwicklungsteam der Corona-Warn-App hat keinen Einfluss auf die Reihenfolge, in der Nutzer das Update erhalten.",
                             "<b>Hinweis:</b> Unter iOS ist es möglich, das Update manuell auszulösen, indem Sie die App Store Seite der Corona-Warn-App besuchen. Diese Option gibt es unter Android nicht."
                         ]
-                    },
-                    {
-                        "title": "Wo bekomme ich die App?",
-                        "anchor": "where_to_get",
-                        "active": true,
-                        "textblock": [
-                            "Sie können die Corona-Warn-App im <a href='https://apps.apple.com/de/app/corona-warn-app/id1512595757' target='_blank' rel='noopener noreferrer'>Apple App Store</a> bzw. im <a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp' target='_blank' rel='noopener noreferrer'>Google Play Store</a> herunterladen."
-                        ]
                     }
                 ]
             },
@@ -1435,7 +1448,7 @@
                         "active": true,
                         "textblock": [
                             "So funktioniert die App:",
-                            "<ol><li>Alle Geräte, die die App installiert haben, senden und empfangen Zufalls-IDs, die dann lokal auf dem Gerät gespeichert werden. Die Bluetooth-Verbindung zwischen zwei Geräten ist nur für das Senden und Empfangen der Zufalls-IDs notwendig.</li><li>Falls Sie positiv getestet wurden, können Sie Ihre über Bluetooth gesendeten Zufalls-IDs in das Corona-Warn-App Backend hochladen. Alle Geräte mit der Corona-Warn-App laden in regelmäßigen Abständen die Zufalls-IDs von diesem Backend herunter und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth empfangen haben. Für das Hochladen und Herunterladen der Zufalls-IDs muss Ihr Gerät Zugang zum Internet haben, zum Beispiel über WLAN oder mobile Daten.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass Sie eine Begegnung mit einer Person hatten, die positiv auf Corona getestet wurde.</li><li>Auf Basis der gefundenen Risikobegegnungen errechnet die App Ihren persönlichen Risikostatus, welcher bestimmt, ob Sie ein \"niedriges Risiko\" (grüne Karte) oder \"hohes Risiko\" (rote Karte) angezeigt bekommen. Weitere Informationen zur Risikoberechnung finden sie im FAQ-Eintrag <a href='#encounter_criteria' target='_blank' rel='noopener noreferrer'>Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?</a></li></ol>",
+                            "<ol><li>Alle Geräte, die die App installiert haben, senden und empfangen Zufalls-IDs, die dann lokal auf dem Gerät gespeichert werden. Die Bluetooth-Verbindung zwischen zwei Geräten ist nur für das Senden und Empfangen der Zufalls-IDs notwendig.</li><li>Falls Sie positiv getestet wurden, können Sie Ihre über Bluetooth gesendeten Zufalls-IDs in das Corona-Warn-App Backend hochladen. Alle Geräte mit der Corona-Warn-App laden in regelmäßigen Abständen die Zufalls-IDs von diesem Backend herunter und prüfen lokal, ob sie einen übereinstimmenden Schlüssel via Bluetooth empfangen haben. Für das Hochladen und Herunterladen der Zufalls-IDs muss Ihr Gerät Zugang zum Internet haben, zum Beispiel über WLAN oder mobile Daten.</li><li>Gibt es eine Übereinstimmung zwischen einem vom Server heruntergeladenen und einem lokal gespeicherten Schlüssel, dann bedeutet das, dass Sie eine Begegnung mit einer Person hatten, die positiv auf Corona getestet wurde.</li><li>Auf Basis der gefundenen Risikobegegnungen errechnet die App Ihren persönlichen Risikostatus, welcher bestimmt, ob Sie ein \"niedriges Risiko\" (grüne Karte) oder \"hohes Risiko\" (rote Karte) angezeigt bekommen. Die Anzeige einer Risikobegegnung verschwindet spätestens nach 14 Tagen. Im Fall einer Begegnung mit erhöhtem Risiko wird auch die entsprechende rote Kachel wieder grün angezeigt. Siehe auch: <a href='#encounter_deletion' target='_blank' rel='noopener noreferrer'>Ich habe die Meldung bekommen, dass ich eine niedrige Risikobegegnung hatte. Am nächsten Tag war sie wieder weg. Sollte das nicht erst nach 14 Tagen gelöscht werden?</a> Weitere Informationen zur Risikoberechnung finden sie im FAQ-Eintrag <a href='#encounter_criteria' target='_blank' rel='noopener noreferrer'>Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?</a></li></ol>",
                             "Das <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution-Architecture-Dokument</a> (in englischer Sprache) beschreibt den technischen Ablauf im Detail."
                         ]
                     },
@@ -1545,6 +1558,7 @@
                             "Wird eine nicht eingecheckte Person später positiv getestet, können die Gäste gewarnt werden, wenn sie sich zur gleichen Zeit oder bis zu 30 Minuten nach der positiv getesteten Person im gleichen Raum aufgehalten haben.",
                             "Um als Organisator einer Veranstaltung andere Gäste über die CWA zu warnen, gehen Sie bitte folgendermaßen vor:",
                             "<ul><li>Erhalten Sie im Nachhinein Kenntnis von der Gegenwart einer positiv getesteten Person auf Ihrer Veranstaltung, und hat das Gesundheitsamt Sie als Organisator einer Veranstaltung noch nicht kontaktiert, setzen Sie sich mit dem Gesundheitsamt in Verbindung. Das Gesundheitsamt kann Ihnen gegebenenfalls eine TAN ausstellen.</li><li>Klicken Sie unter Status (vor Version 2.12 'Startseite') in Ihrer CWA auf „QR-Code erstellen“.</li><li>Klicken Sie auf der „Meine QR-Codes“-Seite oben rechts auf das Drei-Punkte-Menü und dann auf den Menüpunkt „In Vertretung warnen“.</li><li>Klicken Sie auf dem Infoscreen auf „Weiter“.</li><li>Wählen Sie eine Veranstaltung, für welches Sie in Vertretung einer infizierten Person andere warnen möchten. Oder stellen Sie eine gelöschte Veranstaltung wieder her, indem Sie den QR-Code der Veranstaltung erneut einscannen. Klicken Sie auf „Weiter“.</li><li>Geben Sie die Aufenthaltsdauer der positiv getesteten Person an, für die gewarnt werden soll. Diese Information erhalten Sie vom Gesundheitsamt. Klicken Sie auf „Weiter“.</li><li>Geben Sie die 10-stellige TAN ein, die Ihnen mitgeteilt wurde. Klicken Sie auf „Warnung abschicken“.</li></ul>",
+                            "Schauen Sie sich außerdem auch dieses Poster an, welches den Vorgang des Warnens in Vertretung Schritt für Schritt darstellt: <ul><li><a href='../../assets/documents/DE_CWA_RKI-Plakat_Stellvertreter-Warnung.pdf' target='_blank'>Poster: So warnen Sie stellvertretend alle Personen einer Veranstaltung</a></li></ul>",
                             "Zur Veranschaulichung können Sie unter den folgenden Links Screenshots für das Warnen in Vertretung für sowohl iOS als auch Android Geräte finden:<ul><li><a href='../screenshots/#ios_warn_for_others' target='_blank'>iOS Screenshots: In Vertretung warnen</a></li><li><a href='../screenshots/#android_warn_for_others' target='_blank'>Android Screenshots: In Vertretung warnen</a></li></ul>"
                         ]
                     },
@@ -1667,7 +1681,7 @@
                         "anchor": "count_per_day",
                         "active": true,
                         "textblock": [
-                            "Ja, das ist richtig. Mit Version 2 des Exposure Notification Frameworks (ENF), der Schnittstelle für Corona-Apps von Apple und Google, werden die Tage gezählt, an denen Risikobegegnungen stattgefunden haben. Das heißt: eine Person, der man gestern und heute begegnet ist, wird als „Risikobegegnungen an zwei Tagen“ gezählt. Ein Tag ist hierbei als Mitternacht „UTC“ bis Mitternacht „UTC“ des Folgetages definiert."
+                            "Ja. Mit Version 2 des Exposure Notification Frameworks (ENF), der Schnittstelle für Corona-Apps von Apple und Google, werden die Tage gezählt, an denen Risikobegegnungen stattgefunden haben. Das heißt: eine Person, der man gestern und heute begegnet ist, wird als „Risikobegegnungen an zwei Tagen“ gezählt. Ein Tag ist hierbei als Mitternacht „UTC“ bis Mitternacht „UTC“ des Folgetages definiert."
                         ]
                     }
                 ]
