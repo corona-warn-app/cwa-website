@@ -1,5 +1,3 @@
-import 'cypress-plugin-snapshots/commands';
-
 const removeTrailingSlash = (str) => {
   if (str.endsWith('/')) {
     str = str.slice(0, -1);
