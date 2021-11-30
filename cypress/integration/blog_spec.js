@@ -48,18 +48,4 @@ describe('Blog', () => {
     cy.expectPathToBe('/en/blog/' + pageName)
   })
 
-  /*describe('Visual Comparison', () => {
-    it('detail page', () => {
-      cy.visit('/en/blog/' + pageName)
-      // To update a snapshot image just delete it from __image_snapshots__, run e2e test and store it in fixtures/snapshots
-      cy.get('.container-inner')
-        .toMatchImageSnapshot({
-          // "createDiffImage": true,                // Should a "diff image" be created, can be disabled for performance
-          "threshold": 0.02,                      // Amount in pixels or percentage before snapshot image is invalid
-          "name": pageName,            // Naming resulting image file with a custom name rather than concatenating test titles
-          "separator": "-",  // Naming resulting image file with a custom separator rather than using the default ` #`
-          "thresholdType": "percent",             // Can be either "pixel" or "percent"
-        })
-    })
-  })*/
 })
