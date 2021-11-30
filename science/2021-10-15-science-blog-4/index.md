@@ -91,8 +91,8 @@ In addition, the data collected can be used to evaluate the temporal and spatial
 The following data are collected (see [github.com/corona-warn-app/cwa-ppa-server/../PPAC](https://github.com/corona-warn-app/cwa-ppa-server/blob/main/docs/PPAC.md)):
 
 - [Technical metadata](#321-technical-metadata) (daily)
-- [Metadata from users](#322-metadata-from-users) (User) (daily, optional) 
-- [Metadata from end devices](#323-metadata-from-devices) (Client) (daily) 
+- [Metadata from users](#322-metadata-from-users) (User) (daily, optional)
+- [Metadata from end devices](#323-metadata-from-devices) (Client) (daily)
 - [Data from people who have received a warning](#324-people-who-received-a-warning-exposure-risk) (Exposure Risk) (daily)
 - [Data on test result](#325-test-results) (Test Result) (event-related)
 - [Data on key submission](#326-key-submission) (Key Submission) (event-related)
@@ -207,7 +207,7 @@ The following information is available from data recorded locally using the Goog
 - Transmission risk level (`transmission_risk_level`, `report_type`, `infectiousness`),
 - Calibration confidence (`callibration_confidence`),
 - [Normalised exposure time](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in minutes),
-- [Array](https://en.wikipedia.org/wiki/Array_data_structure) of [scan instances](https://developer.apple.com/documentation/exposurenotification/enscaninstance)(`exposure_window_id`): 
+- [Array](https://en.wikipedia.org/wiki/Array_data_structure) of [scan instances](https://developer.apple.com/documentation/exposurenotification/enscaninstance)(`exposure_window_id`):
   - typical attenuation (`typical_attenuation`),
   - minimum attenuation (`minimum_attenuation`),
   - Seconds since the last scan (`seconds_since_last_scan`),
@@ -223,7 +223,7 @@ In the next section, we take a closer look at the data donors themselves (or, mo
 
 ### 4.1 Number of donations over time (by OS)
 
-The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IOS) and 6,058,137 from [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices. 
+The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IOS) and 6,058,137 from [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices.
 
 Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the [PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
 
@@ -554,7 +554,7 @@ This same association is also clear for rapid antigen tests, even if the data on
   </tbody>
 
 
-</table> 
+</table>
 <figcaption aria-hidden="true">Table 2: Association between risk notification and test result (RAT).</figcaption>
 </figure>
 
