@@ -53,7 +53,7 @@ We would like to begin by thanking the Corona-Warn-App’s users, especially tho
 - On average, PCR test results are delivered 21 hours after test registration (half of the test results are received within 12 hours).
 - On average, tests are registered in the app 3.6 days after a user has received a warning (half of tests are registered within 1.8 days).
 - On average, users receive warnings 3.7 days after having been exposed to a risk (half of warnings were received after about 3 days).
-- About one in five people who underwent a PCR test and who were warned about an increased risk tested positive. In contrast, less than half as many app users who did not receive a warning and but still underwent a PCR test tested positive. *Therefore, the CWA is warning the right people*.
+- About one in five people who underwent a PCR test and who were warned about an increased risk tested positive. In contrast, less than half as many app users who did not receive a warning and still underwent a PCR test tested positive. *Therefore, the CWA is warning the right people*.
 
 In the following, we focus on [the purpose of data donation](#31-the-purpose-of-data-donation) and describe the [data that are being collected](#32-data-collected).
 
@@ -122,7 +122,7 @@ The following data about end devices is available:
 
 - CWA Version (`cwa_version_major`, `cwa_version_minor`, `cwa_version_patch`),
 - Configuration token (`app_config_etag`),
-- OS Version (`ios_version_major`, `ios_version_minor`, `ios_version_patch` bzw. `android_api_level`).
+- OS Version (`ios_version_major`, `ios_version_minor`, `ios_version_patch` or `android_api_level`).
 
 1,862,486,604 records contain this information (as of 7 October 2021).
 
@@ -131,7 +131,7 @@ The following data about end devices is available:
 
 The following data can be collected for proximity tracing (BLE, ENF) and presence tracing (event check-ins) (`pt_..`):
 
-- Risk level (red or green warnings); are there any differences between the current data and those that were available yesterday?(`risk_level`, `risk_level_changed`),
+- Risk level (red or green warnings); are there any differences between the current data and those that were available yesterday? (`risk_level`, `risk_level_changed`),
 - If a person has been exposed to a risk, the date when the warning was displayed on the user’s screen (see illustration). Difference between today and yesterday (`most_recent_date_at_risk_level`, `most_recent_date_changed`),
 - [User metadata](#322-metadata-from-users),
 - [Technical metadata](#321-technical-metadata).
@@ -225,7 +225,7 @@ In the next section, we take a closer look at the data donors themselves (or, mo
 
 The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IPhone) and 6,058,137 from [Android](https://de.wikipedia.org/wiki/Smartphone)-based devices. 
 
-Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the[PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
+Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the [PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
 
 <div class="figure">
 <div id="htmlwidget-19ae046b5fe62085f4f1" style="width:800px;height:600px;" class="plotly html-widget"></div>
