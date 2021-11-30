@@ -223,7 +223,7 @@ In the next section, we take a closer look at the data donors themselves (or, mo
 
 ### 4.1 Number of donations over time (by OS)
 
-The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IPhone) and 6,058,137 from [Android](https://de.wikipedia.org/wiki/Smartphone)-based devices. 
+The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IOS) and 6,058,137 from [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices. 
 
 Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the [PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
 
@@ -238,7 +238,7 @@ Figure 1: Number of donations (total and by operating system).
 
 ### 4.2 Number of donations over time (by OS version)
 
-A breakdown of the data by operating system demonstrates the typical homogeneity associated with [iOS](https://en.wikipedia.org/wiki/IOS_(Betriebssystem)) and the heterogeneity associated with [Android](https://en.wikipedia.org/wiki/Android_(Betriebssystem))-based devices.
+A breakdown of the data by operating system demonstrates the typical homogeneity associated with [iOS](https://en.wikipedia.org/wiki/IOS) and the heterogeneity associated with [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices.
 
 <div class="figure">
 <div id="htmlwidget-df4d42fa52db4862e86d" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -335,7 +335,7 @@ The large number of people who received a warning on 19 and 23 March is particul
 
 ### 5.2 Warned individuals over time
 
-Figure 8 shows trends in the number of people who received a red or green warning. The graph is based on the [daily estimate]() of the percentage of users donating data, which was calculated using the number of tests registered in the app. Since the end of June, it is noticeable that green warnings have been sent out once again more frequently than red warnings (this still holds true when they are put in relation to one another). Increased mobility and the associated increase in contact with other people since the end of the “Bundesnotbremse” (the “[federal emergency brake](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_von_23._April_%E2%80%93_30._Juni_2021)”) certainly plays a significant role here. Finally, the graph also demonstrates that, on average, each exposure registered in the app resulted in 8 people receiving a warning of an increased risk and 26 people receiving a warning of a low risk (with risk exposure).
+Figure 8 shows trends in the number of people who received a red or green warning. The graph is based on the [daily estimate]() of the percentage of users donating data, which was calculated using the number of tests registered in the app. Since the end of June, it is noticeable that green warnings have been sent out once again more frequently than red warnings (this still holds true when they are put in relation to one another). Increased mobility and the associated increase in contact with other people since the end of the “[Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_23._April_%E2%80%93_30._Juni_2021)” (the “federal emergency brake”) certainly plays a significant role here. Finally, the graph also demonstrates that, on average, each exposure registered in the app resulted in 8 people receiving a warning of an increased risk and 26 people receiving a warning of a low risk (with risk exposure).
 
 <figure>
     <img src="./ppa_estimate_ppa_warned_persons_plot_en.png" class="figure-img img-fluid" alt=""/>
