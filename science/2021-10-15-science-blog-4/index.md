@@ -466,25 +466,25 @@ The data also provide information about whether people who received a warning fr
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Increased risk</td>
-<td class="text-center">20.655 (21%)</td>
-<td class="text-center">77.090 (79%)</td>
-<td class="text-center">97.745 (100%)</td>
+<td class="text-center">20,655 (21%)</td>
+<td class="text-center">77,090 (79%)</td>
+<td class="text-center">97,745 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (with risk exposure)</td>
-<td class="text-center">1.930 (14%)</td>
-<td class="text-center">11.919 (86%)</td>
-<td class="text-center">13.849 (100%)</td>
+<td class="text-center">1,930 (14%)</td>
+<td class="text-center">11,919 (86%)</td>
+<td class="text-center">13,849 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (no risk exposure)</td>
-<td class="text-center">140.128 (9,7%)</td>
-<td class="text-center">1.306.963 (90%)</td>
-<td class="text-center">1.447.091 (100%)</td>
+<td class="text-center">140,128 (9.7%)</td>
+<td class="text-center">1,306,963 (90%)</td>
+<td class="text-center">1,447,091 (100%)</td>
 </tr>
 
  <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"><strong>Total</strong></td>
-<td class="text-center">162.713 (10%)</td>
-<td class="text-center">1.395.972 (90%)</td>
-<td class="text-center">1.558.685 (100%)</td>
+<td class="text-center">162,713 (10%)</td>
+<td class="text-center">1,395,972 (90%)</td>
+<td class="text-center">1,558,685 (100%)</td>
 </tr>
   </tbody>
 
@@ -531,25 +531,25 @@ This same association is also clear for rapid antigen tests, even if the data on
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Increased risk</td>
-<td class="text-center">245 (0,6%)</td>
-<td class="text-center">42.325 (99%)</td>
-<td class="text-center">45.570 (100%)</td>
+<td class="text-center">245 (0.6%)</td>
+<td class="text-center">42,325 (99%)</td>
+<td class="text-center">45,570 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (with risk exposure)</td>
-<td class="text-center">31 (0,3%)</td>
-<td class="text-center">11.731 (100%)</td>
-<td class="text-center">11.762 (100%)</td>
+<td class="text-center">31 (0.3%)</td>
+<td class="text-center">11,731 (100%)</td>
+<td class="text-center">11,762 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (no risk exposure)</td>
-<td class="text-center">1.922 (&lt;0,1%)</td>
-<td class="text-center">2.304.896 (100%)</td>
-<td class="text-center">2.306.818 (100%)</td>
+<td class="text-center">1,922 (&lt;0.1%)</td>
+<td class="text-center">2,304,896 (100%)</td>
+<td class="text-center">2,306,818 (100%)</td>
 </tr>
 
  <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"><strong>Total</strong></td>
-<td class="text-center">2.198 (&lt;0,1%)</td>
-<td class="text-center">2.358.952 (100%)</td>
-<td class="text-center">2.361.150 (100%)</td>
+<td class="text-center">2,198 (&lt;0.1%)</td>
+<td class="text-center">2,358,952 (100%)</td>
+<td class="text-center">2,361,150 (100%)</td>
 </tr>
   </tbody>
 
