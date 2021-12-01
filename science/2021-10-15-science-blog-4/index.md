@@ -53,7 +53,7 @@ We would like to begin by thanking the Corona-Warn-App’s users, especially tho
 - On average, PCR test results are delivered 21 hours after test registration (half of the test results are received within 12 hours).
 - On average, tests are registered in the app 3.6 days after a user has received a warning (half of tests are registered within 1.8 days).
 - On average, users receive warnings 3.7 days after having been exposed to a risk (half of warnings were received after about 3 days).
-- About one in five people who underwent a PCR test and who were warned about an increased risk tested positive. In contrast, less than half as many app users who did not receive a warning and but still underwent a PCR test tested positive. *Therefore, the CWA is warning the right people*.
+- About one in five people who underwent a PCR test and who were warned about an increased risk tested positive. In contrast, less than half as many app users who did not receive a warning and still underwent a PCR test tested positive. *Therefore, the CWA is warning the right people*.
 
 In the following, we focus on [the purpose of data donation](#31-the-purpose-of-data-donation) and describe the [data that are being collected](#32-data-collected).
 
@@ -91,8 +91,8 @@ In addition, the data collected can be used to evaluate the temporal and spatial
 The following data are collected (see [github.com/corona-warn-app/cwa-ppa-server/../PPAC](https://github.com/corona-warn-app/cwa-ppa-server/blob/main/docs/PPAC.md)):
 
 - [Technical metadata](#321-technical-metadata) (daily)
-- [Metadata from users](#322-metadata-from-users) (User) (daily, optional) 
-- [Metadata from end devices](#323-metadata-from-devices) (Client) (daily) 
+- [Metadata from users](#322-metadata-from-users) (User) (daily, optional)
+- [Metadata from end devices](#323-metadata-from-devices) (Client) (daily)
 - [Data from people who have received a warning](#324-people-who-received-a-warning-exposure-risk) (Exposure Risk) (daily)
 - [Data on test result](#325-test-results) (Test Result) (event-related)
 - [Data on key submission](#326-key-submission) (Key Submission) (event-related)
@@ -122,7 +122,7 @@ The following data about end devices is available:
 
 - CWA Version (`cwa_version_major`, `cwa_version_minor`, `cwa_version_patch`),
 - Configuration token (`app_config_etag`),
-- OS Version (`ios_version_major`, `ios_version_minor`, `ios_version_patch` bzw. `android_api_level`).
+- OS Version (`ios_version_major`, `ios_version_minor`, `ios_version_patch` or `android_api_level`).
 
 1,862,486,604 records contain this information (as of 7 October 2021).
 
@@ -131,7 +131,7 @@ The following data about end devices is available:
 
 The following data can be collected for proximity tracing (BLE, ENF) and presence tracing (event check-ins) (`pt_..`):
 
-- Risk level (red or green warnings); are there any differences between the current data and those that were available yesterday?(`risk_level`, `risk_level_changed`),
+- Risk level (red or green warnings); are there any differences between the current data and those that were available yesterday? (`risk_level`, `risk_level_changed`),
 - If a person has been exposed to a risk, the date when the warning was displayed on the user’s screen (see illustration). Difference between today and yesterday (`most_recent_date_at_risk_level`, `most_recent_date_changed`),
 - [User metadata](#322-metadata-from-users),
 - [Technical metadata](#321-technical-metadata).
@@ -207,7 +207,7 @@ The following information is available from data recorded locally using the Goog
 - Transmission risk level (`transmission_risk_level`, `report_type`, `infectiousness`),
 - Calibration confidence (`callibration_confidence`),
 - [Normalised exposure time](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in minutes),
-- [Array](https://en.wikipedia.org/wiki/Array_data_structure) of [scan instances](https://developer.apple.com/documentation/exposurenotification/enscaninstance)(`exposure_window_id`): 
+- [Array](https://en.wikipedia.org/wiki/Array_data_structure) of [scan instances](https://developer.apple.com/documentation/exposurenotification/enscaninstance)(`exposure_window_id`):
   - typical attenuation (`typical_attenuation`),
   - minimum attenuation (`minimum_attenuation`),
   - Seconds since the last scan (`seconds_since_last_scan`),
@@ -223,9 +223,9 @@ In the next section, we take a closer look at the data donors themselves (or, mo
 
 ### 4.1 Number of donations over time (by OS)
 
-The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IPhone) and 6,058,137 from [Android](https://de.wikipedia.org/wiki/Smartphone)-based devices. 
+The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IOS) and 6,058,137 from [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices.
 
-Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the[PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
+Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the [PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
 
 <div class="figure">
 <div id="htmlwidget-19ae046b5fe62085f4f1" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -238,7 +238,7 @@ Figure 1: Number of donations (total and by operating system).
 
 ### 4.2 Number of donations over time (by OS version)
 
-A breakdown of the data by operating system demonstrates the typical homogeneity associated with [iOS](https://en.wikipedia.org/wiki/IOS_(Betriebssystem)) and the heterogeneity associated with [Android](https://en.wikipedia.org/wiki/Android_(Betriebssystem))-based devices.
+A breakdown of the data by operating system demonstrates the typical homogeneity associated with [iOS](https://en.wikipedia.org/wiki/IOS) and the heterogeneity associated with [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices.
 
 <div class="figure">
 <div id="htmlwidget-df4d42fa52db4862e86d" style="width:800px;height:600px;" class="plotly html-widget"></div>
@@ -335,7 +335,7 @@ The large number of people who received a warning on 19 and 23 March is particul
 
 ### 5.2 Warned individuals over time
 
-Figure 8 shows trends in the number of people who received a red or green warning. The graph is based on the [daily estimate]() of the percentage of users donating data, which was calculated using the number of tests registered in the app. Since the end of June, it is noticeable that green warnings have been sent out once again more frequently than red warnings (this still holds true when they are put in relation to one another). Increased mobility and the associated increase in contact with other people since the end of the “Bundesnotbremse” (the “[federal emergency brake](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_von_23._April_%E2%80%93_30._Juni_2021)”) certainly plays a significant role here. Finally, the graph also demonstrates that, on average, each exposure registered in the app resulted in 8 people receiving a warning of an increased risk and 26 people receiving a warning of a low risk (with risk exposure).
+Figure 8 shows trends in the number of people who received a red or green warning. The graph is based on the [daily estimate]() of the percentage of users donating data, which was calculated using the number of tests registered in the app. Since the end of June, it is noticeable that green warnings have been sent out once again more frequently than red warnings (this still holds true when they are put in relation to one another). Increased mobility and the associated increase in contact with other people since the end of the “[Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_23._April_%E2%80%93_30._Juni_2021)” (the “federal emergency brake”) certainly plays a significant role here. Finally, the graph also demonstrates that, on average, each exposure registered in the app resulted in 8 people receiving a warning of an increased risk and 26 people receiving a warning of a low risk (with risk exposure).
 
 <figure>
     <img src="./ppa_estimate_ppa_warned_persons_plot_en.png" class="figure-img img-fluid" alt=""/>
@@ -466,25 +466,25 @@ The data also provide information about whether people who received a warning fr
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Increased risk</td>
-<td class="text-center">20.655 (21%)</td>
-<td class="text-center">77.090 (79%)</td>
-<td class="text-center">97.745 (100%)</td>
+<td class="text-center">20,655 (21%)</td>
+<td class="text-center">77,090 (79%)</td>
+<td class="text-center">97,745 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (with risk exposure)</td>
-<td class="text-center">1.930 (14%)</td>
-<td class="text-center">11.919 (86%)</td>
-<td class="text-center">13.849 (100%)</td>
+<td class="text-center">1,930 (14%)</td>
+<td class="text-center">11,919 (86%)</td>
+<td class="text-center">13,849 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (no risk exposure)</td>
-<td class="text-center">140.128 (9,7%)</td>
-<td class="text-center">1.306.963 (90%)</td>
-<td class="text-center">1.447.091 (100%)</td>
+<td class="text-center">140,128 (9.7%)</td>
+<td class="text-center">1,306,963 (90%)</td>
+<td class="text-center">1,447,091 (100%)</td>
 </tr>
 
  <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"><strong>Total</strong></td>
-<td class="text-center">162.713 (10%)</td>
-<td class="text-center">1.395.972 (90%)</td>
-<td class="text-center">1.558.685 (100%)</td>
+<td class="text-center">162,713 (10%)</td>
+<td class="text-center">1,395,972 (90%)</td>
+<td class="text-center">1,558,685 (100%)</td>
 </tr>
   </tbody>
 
@@ -531,30 +531,30 @@ This same association is also clear for rapid antigen tests, even if the data on
 <td class="text-center"></td>
 <td class="text-center"></td></tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Increased risk</td>
-<td class="text-center">245 (0,6%)</td>
-<td class="text-center">42.325 (99%)</td>
-<td class="text-center">45.570 (100%)</td>
+<td class="text-center">245 (0.6%)</td>
+<td class="text-center">42,325 (99%)</td>
+<td class="text-center">45,570 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (with risk exposure)</td>
-<td class="text-center">31 (0,3%)</td>
-<td class="text-center">11.731 (100%)</td>
-<td class="text-center">11.762 (100%)</td>
+<td class="text-center">31 (0.3%)</td>
+<td class="text-center">11,731 (100%)</td>
+<td class="text-center">11,762 (100%)</td>
 </tr>
     <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Low risk (no risk exposure)</td>
-<td class="text-center">1.922 (&lt;0,1%)</td>
-<td class="text-center">2.304.896 (100%)</td>
-<td class="text-center">2.306.818 (100%)</td>
+<td class="text-center">1,922 (&lt;0.1%)</td>
+<td class="text-center">2,304,896 (100%)</td>
+<td class="text-center">2,306,818 (100%)</td>
 </tr>
 
  <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;"><strong>Total</strong></td>
-<td class="text-center">2.198 (&lt;0,1%)</td>
-<td class="text-center">2.358.952 (100%)</td>
-<td class="text-center">2.361.150 (100%)</td>
+<td class="text-center">2,198 (&lt;0.1%)</td>
+<td class="text-center">2,358,952 (100%)</td>
+<td class="text-center">2,361,150 (100%)</td>
 </tr>
   </tbody>
 
 
-</table> 
+</table>
 <figcaption aria-hidden="true">Table 2: Association between risk notification and test result (RAT).</figcaption>
 </figure>
 
