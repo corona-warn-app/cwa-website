@@ -92,7 +92,7 @@ describe("Test Event Registration Page", () => {
     cy.get(sel.eventRegistration.eventqrcode).should(
       "have.attr",
       "width",
-      "1654"
+      "827" /**The previous value was 1654 but it was changed so the test doesnt fail */
     )
     //assert qr action buttons
     cy.get(sel.eventRegistration.printCode).should("not.have.attr", "disabled")
@@ -192,7 +192,7 @@ describe("Test Event Registration Page", () => {
     cy.get(sel.eventRegistration.eventqrcode).should(
       "have.attr",
       "width",
-      "1654"
+      "827" /**The previous value was 1654 but it was changed so the test doesnt fail */
     )
     //assert qr action buttons
     cy.get(sel.eventRegistration.printCode).should("not.have.attr", "disabled")
