@@ -77,7 +77,7 @@ Die CWA-Datenspende hilft zu verstehen,
 4.	wo und wann es zu Abbrüchen kommt,
 5.	und ob all dies mit technischen Eigenschaften der Geräte oder demografischen Eigenschaften (z.B. Altersgruppe, Wohnregion) der Nutzenden zusammenhängt.
 
-Mit diesem Verständnis können: 
+Mit diesem Verständnis können:
 
 1.	Algorithmen zur Einschätzung des Risikos verbessert werden,
 2.	Parameter so konfiguriert werden, dass die Ereignisse angemessen häufig auftreten,
@@ -91,8 +91,8 @@ Darüber hinaus können die erhobenen Daten zur zeitlichen und räumlichen Verte
 Folgende Daten werden erhoben (siehe [github.com/corona-warn-app/cwa-ppa-server/../PPAC](https://github.com/corona-warn-app/cwa-ppa-server/blob/main/docs/PPAC.md)):
 
 - [Technische Metadaten](#321-technische-metadaten) (täglich)
-- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden) (User) (täglich, optional) 
-- [Metadaten der Endgeräte](#323-metadaten-der-endgeräte) (Client) (täglich) 
+- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden) (User) (täglich, optional)
+- [Metadaten der Endgeräte](#323-metadaten-der-endgeräte) (Client) (täglich)
 - [Gewarnte Personen (Expositionsrisiko)](#324-gewarnte-personen-expositionsrisiko) (Exposure Risk) (täglich)
 - [Testergebnisse](#325-testergebnisse) (Test Result) (anlassbezogen)
 - [Schlüsselteilung](#326-schlüsselteilung) (Key Submission) (anlassbezogen)
@@ -131,9 +131,9 @@ Es liegen 1.862.486.604 Datensätze vor (Datenstand: 7. Oktober 2021).
 
 Sowohl für Proximity-Tracing (BLE, ENF) als auch Presence-Tracing (Event-Check-ins) (`pt_..`) werden folgende Daten zum Expositions-Risiko (Exposure Risk) erhoben:
 
-- Risiko-Level ("rote" oder "grüne" Kachel); gibt es eine Änderung zum Vortag? (`risk_level`, `risk_level_changed`), 
-- im Fall einer Risikobegegnung das jüngste Datum mit diesem Risiko-Level (Entspricht der Anzeige auf dem Homescreen; siehe Abbildung); gibt es eine Änderung zum Vortag? (`most_recent_date_at_risk_level`, `most_recent_date_changed`), 
-- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden), 
+- Risiko-Level ("rote" oder "grüne" Kachel); gibt es eine Änderung zum Vortag? (`risk_level`, `risk_level_changed`),
+- im Fall einer Risikobegegnung das jüngste Datum mit diesem Risiko-Level (Entspricht der Anzeige auf dem Homescreen; siehe Abbildung); gibt es eine Änderung zum Vortag? (`most_recent_date_at_risk_level`, `most_recent_date_changed`),
+- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden),
 - [Technische Metadaten](#321-technische-metadaten).
 
 Es liegen 1.852.088.985 Datensätze vor (Datenstand: 7. Oktober 2021).
@@ -149,13 +149,13 @@ Es liegen 1.852.088.985 Datensätze vor (Datenstand: 7. Oktober 2021).
 Wenn ein Test registriert wurde, werden bei Erhalt des Testergebnisses bzw. nach dem Verstreichen einer festgelegten Frist (gegenwärtig 7 Tage) folgende Daten zum Testprozess erhoben:
 
 - Testergebnis (`test_result`) (positiv, negativ, unbestimmt, ausstehend) [A],
-- Stunden seit Test-Registrierung (`hours_since_test_registration`), 
-- Risiko-Level (angezeigt) bei Testregistrierung (`risk_level_at_test_registration`) [B], 
+- Stunden seit Test-Registrierung (`hours_since_test_registration`),
+- Risiko-Level (angezeigt) bei Testregistrierung (`risk_level_at_test_registration`) [B],
 - `days_since_most_recent_date_at_risk_level_at_test_registration` [B]
-  = Verzug zwischen jüngster Begegnung (most recent notified exposure) und Testregistrierung (in Tagen), 
+  = Verzug zwischen jüngster Begegnung (most recent notified exposure) und Testregistrierung (in Tagen),
 - `hours_since_high_risk_warning_at_test_registration` [B]
-  = Verzug zwischen Warnung und Testregistrierung (in Stunden), 
-- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden), 
+  = Verzug zwischen Warnung und Testregistrierung (in Stunden),
+- [Metadaten der Nutzenden](#322-metadaten-der-nutzenden),
 - [Technische Metadaten](#321-technische-metadaten).
 
 Dies erfolgt:
@@ -199,19 +199,19 @@ Sobald Diagnoseschlüssel geteilt werden bzw. nach dem Verstreichen einer festge
 
 Es liegen jeweils 251.161 Datensätze vor (Datenstand: 7. Oktober 2021).
 
-  #### 3.2.7 Exposure-Windows und Scan-Instances
+#### 3.2.7 Exposure-Windows und Scan-Instances
 
 Über die vom Google bzw. Apple Exposure-Notification-Framework (ENF; siehe [Google Exposure Notifications API](https://developers.google.com/android/exposure-notifications/exposure-notifications-api), [Apple Exposure Notifications API](https://developer.apple.com/documentation/exposurenotification#overview)) lokal aufgezeichneten Daten liegen folgende Angaben vor:
 
-- Datum des [Exposure-Windows](https://developer.apple.com/documentation/exposurenotification/enexposurewindow) (`datew`), 
+- Datum des [Exposure-Windows](https://developer.apple.com/documentation/exposurenotification/enexposurewindow) (`datew`),
 - Transmission-Risk-Level (`transmission_risk_level`, `report_type`, `infectiousness`),
-- Kalibrierungs-Treue (`callibration_confidence`), 
-- [normalisierte Expositionszeit](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in Minuten), 
-- [Array](https://en.wikipedia.org/wiki/Array_data_structure) der [Scan-Instanzen](https://developer.apple.com/documentation/exposurenotification/enscaninstance) (`exposure_window_id`): 
-  - typische Dämpfung (`typical_attenuation`), 
-  - minimale Dämpfung (`minimum_attenuation`), 
-  - Sekunden seit dem letzten Scan (`seconds_since_last_scan`), 
-- [Metadaten der Endgeräte](#322-metadaten-der-nutzenden), 
+- Kalibrierungs-Treue (`callibration_confidence`),
+- [normalisierte Expositionszeit](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in Minuten),
+- [Array](https://en.wikipedia.org/wiki/Array_data_structure) der [Scan-Instanzen](https://developer.apple.com/documentation/exposurenotification/enscaninstance) (`exposure_window_id`):
+  - typische Dämpfung (`typical_attenuation`),
+  - minimale Dämpfung (`minimum_attenuation`),
+  - Sekunden seit dem letzten Scan (`seconds_since_last_scan`),
+- [Metadaten der Endgeräte](#322-metadaten-der-nutzenden),
 - [Technische Metadaten](#321-technische-metadaten).
 
 Es liegen 1.036.601.141 Datensätze zu Exposure-Windows bzw. 3.019.619.946 Datensätze zu den Scan-Instanzen vor (Datenstand: 7. Oktober 2021).
@@ -337,7 +337,7 @@ Bemerkenswert sind hier die hohen Zahlen der Gewarnten am 19. und 23. März. Hie
 
 ### 5.2 Gewarnte Personen im zeitlichen Verlauf
 
-In Abb. 8 ist der zeitliche Verlauf von rot und grün gewarnten Personen angegeben. Hierbei wurde die [tagesgenaue Schätzung]() für den Anteil der CWA-Spendenden benutzt, die sich aus den Test-Zahlen ergibt. Auffällig ist, dass seit Ende Juni die grünen Warnungen wieder häufiger als die roten auftreten (auch im Verhältnis zu diesen). Hier spielt die erhöhte Mobilität und die daraufhin wieder steigende Anzahl sozialer Kontakte seit dem Ende der [Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_von_23._April_%E2%80%93_30._Juni_2021) sicherlich eine erhebliche Rolle. Hier kommen wir im Durchschnitt auf 8 gewarnte Personen mit erhöhtem Risiko bzw. 26 gewarnte Personen mit niedrigem Risiko (mit Risikobegegnung) pro warnender Person.
+In Abb. 8 ist der zeitliche Verlauf von rot und grün gewarnten Personen angegeben. Hierbei wurde die [tagesgenaue Schätzung]() für den Anteil der CWA-Spendenden benutzt, die sich aus den Test-Zahlen ergibt. Auffällig ist, dass seit Ende Juni die grünen Warnungen wieder häufiger als die roten auftreten (auch im Verhältnis zu diesen). Hier spielt die erhöhte Mobilität und die daraufhin wieder steigende Anzahl sozialer Kontakte seit dem Ende der [Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_23._April_%E2%80%93_30._Juni_2021) sicherlich eine erhebliche Rolle. Hier kommen wir im Durchschnitt auf 8 gewarnte Personen mit erhöhtem Risiko bzw. 26 gewarnte Personen mit niedrigem Risiko (mit Risikobegegnung) pro warnender Person.
 
 <figure>
     <img src="./ppa_estimate_ppa_warned_persons_plot.png" class="figure-img img-fluid" alt=""/>
@@ -556,7 +556,7 @@ Auch bei Antigen-Schnelltests ist dieser Zusammenhang zu erkennen, auch wenn die
   </tbody>
 
 
-</table> 
+</table>
 <figcaption aria-hidden="true">Tab. 2: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (RAT). </figcaption>
 </figure>
 
