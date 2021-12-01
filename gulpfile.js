@@ -20,6 +20,7 @@ const { processScienceBlogFiles } = require('./src/services/science-blog-process
 var rename = require("gulp-rename");
 const analyseConfig = require("./src/data/analyse.json");
 const fetch = require('node-fetch');
+var pluginSass = require('gulp-sass')(require('node-sass'));
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -189,9 +190,9 @@ function sass() {
     .src('src/assets/scss/style.scss')
     .pipe($.sourcemaps.init())
     .pipe(
-      $.sass({
+      pluginSass({
         includePaths: PATHS.sass
-      }).on('error', $.sass.logError)
+      }).on('error', pluginSass.logError)
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
