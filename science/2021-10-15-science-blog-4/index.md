@@ -4,7 +4,7 @@ page-description: "Who is using the Corona-Warn-App, who is warned - and how fas
 page-name: science-blog-4
 page-name_de: science-blog-4
 author: CWA Team
-date: "2021-10-15"
+date: "2021-12-02"
 layout: science
 ---
 This article is the first in our focus on data donation and the Corona-Warn-App. We analyse the extent to which the voluntary, data protection-compliant provision of user data can provide information about user behaviour and the processes involved in the CWA ecosystem.
