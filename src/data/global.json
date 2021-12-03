@@ -179,13 +179,6 @@
                     "url": "/en/faq/"
                 },
                 {
-                    "id": "github",
-                    "icon": "github_white32x32",
-                    "title": "The Corona-Warn-App project on GitHub",
-                    "url": "https://github.com/corona-warn-app",
-                    "external": true
-                },
-                {
                     "id": "twitter",
                     "icon": "twitter_white32x32",
                     "title": "The Corona-Warn-App project on Twitter",
@@ -197,6 +190,13 @@
                     "icon": "instagram_white32x32",
                     "title": "The Corona-Warn-App project on Instagram",
                     "url": "https://www.instagram.com/rki_fuer_euch/",
+                    "external": true
+                },
+                {
+                    "id": "github",
+                    "icon": "github_white32x32",
+                    "title": "The Corona-Warn-App project on GitHub",
+                    "url": "https://github.com/corona-warn-app",
                     "external": true
                 }
             ],
@@ -243,30 +243,34 @@
                             "url": "/en/community/"
                         },
                         {
-                            "id": "github",
-                            "icon": "github",
-                            "icon-url": "/assets/img/icons/github_white32x32.svg",
-                            "title": "The Corona-Warn-App project on GitHub",
-                            "url": "https://github.com/corona-warn-app",
-                            "external": true,
-                            "startFlex": true,
-                            "marginRight": true
+                            "title": "Social media",
+                            "url": "/en/community/#social-media"
                         },
                         {
                             "id": "twitter",
-                            "icon": "twitter",
-                            "icon-url": "/assets/img/icons/twitter_32x32.svg",
+                            "icon": "twitter_white32x32",
+                            "icon-url": "/assets/img/icons/twitter_white32x32.svg",
                             "title": "The Corona-Warn-App project on Twitter",
                             "url": "https://twitter.com/coronawarnapp",
                             "external": true,
-                            "marginRight": true
+                            "marginRight": true,
+                            "startFlex": true
                         },
                         {
                             "id": "instagram",
-                            "icon": "instagram",
-                            "icon-url": "/assets/img/icons/instagram_32x32.svg",
+                            "icon": "instagram_white32x32",
+                            "icon-url": "/assets/img/icons/instagram_white32x32.svg",
                             "title": "The Corona-Warn-App project on Instagram",
                             "url": "https://www.instagram.com/rki_fuer_euch/",
+                            "marginRight": true,
+                            "external": true
+                        },
+                        {
+                            "id": "github",
+                            "icon": "github_white",
+                            "icon-url": "/assets/img/icons/github_white32x32.svg",
+                            "title": "The Corona-Warn-App project on GitHub",
+                            "url": "https://github.com/corona-warn-app",
                             "external": true,
                             "endFlex": true
                         }
@@ -355,13 +359,6 @@
                     "url": "/de/faq/"
                 },
                 {
-                    "id": "github",
-                    "icon": "github_white32x32",
-                    "title": "Unser Projekt in GitHub",
-                    "url": "https://github.com/corona-warn-app",
-                    "external": true
-                },
-                {
                     "id": "twitter",
                     "icon": "twitter_white32x32",
                     "title": "Unser Projekt in Twitter",
@@ -373,6 +370,13 @@
                     "icon": "instagram_white32x32",
                     "title": "Unser Projekt in Instagram",
                     "url": "https://www.instagram.com/rki_fuer_euch/",
+                    "external": true
+                },
+                {
+                    "id": "github",
+                    "icon": "github_white32x32",
+                    "title": "Unser Projekt in GitHub",
+                    "url": "https://github.com/corona-warn-app",
                     "external": true
                 }
             ],
@@ -419,30 +423,35 @@
                             "url": "/de/community/"
                         },
                         {
+                            "title": "Social media",
+                            "url": "/de/community/#social-media"
+                        },
+                        {
+                            "id": "twitter",
+                            "icon": "twitter",
+                            "icon-url": "/assets/img/icons/twitter_white32x32.svg",
+                            "title": "Das Corona-Warn-App Projekt auf Twitter",
+                            "url": "https://twitter.com/coronawarnapp",
+                            "external": true,
+                            "marginRight": true,
+                            "startFlex": true
+                        },
+                        {
+                            "id": "instagram",
+                            "icon": "instagram",
+                            "icon-url": "/assets/img/icons/instagram_white32x32.svg",
+                            "title": "Das Corona-Warn-App Projekt auf Instagram",
+                            "url": "https://www.instagram.com/rki_fuer_euch/",
+                            "marginRight": true,
+                            "external": true
+
+                        },
+                        {
                             "id": "github",
                             "icon": "github",
                             "icon-url": "/assets/img/icons/github_white32x32.svg",
                             "title": "Das Corona-Warn-App Projekt auf GitHub",
                             "url": "https://github.com/corona-warn-app",
-                            "external": true,
-                            "startFlex": true,
-                            "marginRight": true
-                        },
-                        {
-                            "id": "twitter",
-                            "icon": "twitter",
-                            "icon-url": "/assets/img/icons/twitter_32x32.svg",
-                            "title": "Das Corona-Warn-App Projekt auf Twitter",
-                            "url": "https://twitter.com/coronawarnapp",
-                            "external": true,
-                            "marginRight": true
-                        },
-                        {
-                            "id": "instagram",
-                            "icon": "instagram",
-                            "icon-url": "/assets/img/icons/instagram_32x32.svg",
-                            "title": "Das Corona-Warn-App Projekt auf Instagram",
-                            "url": "https://www.instagram.com/rki_fuer_euch/",
                             "external": true,
                             "endFlex": true
                         }
