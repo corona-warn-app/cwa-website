@@ -282,22 +282,17 @@
                 }
             }
             .nav-link-icon {
-                &.icon_github {
+                &.icon_github_white32x32 {
                     position: relative;
-                    margin-right: 10px;
-                    &:before {
-                        content: "";
-                        background-image: url("../img/icons/github_white.svg");
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0.01rem;
-                    }
-                    img {
-                        visibility: hidden;
-                    }
+                    bottom: 0.04rem;
+                }
+                &.icon_instagram_white32x32 {
+                    position: relative;
+                    bottom: 0.04rem;
+                }
+                &.icon_twitter_white32x32 {
+                    position: relative;
+                    bottom: 0.04rem;
                 }
             }
         }
