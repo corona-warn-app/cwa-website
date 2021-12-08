@@ -1,6 +1,6 @@
 ---
-page-title: "Version 2.10: Corona-Warn-App ist bereit, schnell über Auffrischungsimpfungen zu informieren"
-page-description: "Version 2.10: Corona-Warn-App ist bereit, schnell über Auffrischungsimpfungen zu informieren"
+page-title: "Version 2.10: Corona-Warn-App ist bereit, schnell über Auffrischimpfungen zu informieren"
+page-description: "Version 2.10: Corona-Warn-App ist bereit, schnell über Auffrischimpfungen zu informieren"
 page-name: cwa-version-2-10
 page-name_de: cwa-version-2-10
 author: Hanna Heine, 10:00 Uhr 
@@ -9,23 +9,23 @@ layout: blog
 
 ## Projektteam passt die Corona-Warn-App weiterhin an aktuelles Pandemie-Geschehen an
 
-Das Projektteam aus Deutscher Telekom und SAP hat Version 2.10 der Corona-Warn-App veröffentlicht. Mit dem Update ist die App bereit, Nutzer\*innen schnell über eventuell anstehende **Auffrischungsimpfungen** zu informieren. Außerdem zeigt sie Nutzer\*innen künftig eine Druckversion ihrer Impfzertifikate. Damit können sie die **Zertifikate als PDF-Dokument speichern oder ausdrucken**.
+Das Projektteam aus Deutscher Telekom und SAP hat Version 2.10 der Corona-Warn-App veröffentlicht. Mit dem Update ist die App bereit, Nutzer\*innen schnell über eventuell anstehende **Auffrischimpfungen** zu informieren. Außerdem zeigt sie Nutzer\*innen künftig eine Druckversion ihrer Impfzertifikate. Damit können sie die **Zertifikate als PDF-Dokument speichern oder ausdrucken**.
 
 Das Update steht Nutzer*innen über die nächsten 48 Stunden zur Verfügung.
 
 
 <!-- overview -->
 
-Noch gibt es keine offiziellen Regelungen darüber, ob und für wen eine Auffrischungsimpfung notwendig wird. Mit dem Update auf Version 2.10 ist die Corona-Warn-App aber schon jetzt dafür vorbereitet, mögliche Regeln sofort umzusetzen und Nutzer\*innen, die eine Auffrischung benötigen, zu informieren. Damit passt das Projektteam die Corona-Warn-App auch weiterhin an das aktuelle **Pandemie-Geschehen** an. 
+Noch gibt es keine offiziellen Regelungen darüber, ob und für wen eine Auffrischimpfung notwendig wird. Mit dem Update auf Version 2.10 ist die Corona-Warn-App aber schon jetzt dafür vorbereitet, mögliche Regeln sofort umzusetzen und Nutzer\*innen, die eine Auffrischung benötigen, zu informieren. Damit passt das Projektteam die Corona-Warn-App auch weiterhin an das aktuelle **Pandemie-Geschehen** an. 
 
-Künftig hält eine **Textbox** unter jedem Impfzertifikat Nutzer\*innen immer auf dem aktuellen Stand zu ihrem **Impfstatus**. Sollten Auffrischungsimpfungen notwendig werden, informiert die Corona-Warn-App die betroffenen Nutzer\*innen in dieser Box und weist zusätzlich mit einer Pushnachricht darauf hin, dass es Neuigkeiten in der App gibt.
+Künftig hält eine **Textbox** unter jedem Impfzertifikat Nutzer\*innen immer auf dem aktuellen Stand zu ihrem **Impfstatus**. Sollten Auffrischimpfungen notwendig werden, informiert die Corona-Warn-App die betroffenen Nutzer\*innen in dieser Box und weist zusätzlich mit einer Pushnachricht darauf hin, dass es Neuigkeiten in der App gibt.
  
 
 <br></br>
 <center> 
-<img src="./impfstatus(1).png" title="Textbox mit Erinnerung zur Auffrischungsimpfung" style="align: center" width=250> 
+<img src="./impfstatus(1).png" title="Textbox mit Erinnerung zur Auffrischimpfung" style="align: center" width=250> 
 <img src="./impfstatus(2).png" title="Textbox mit Impfstatus" style="align: center" width=250>
-<figcaption aria-hidden="true"><em>Textbox zum Impfstatus - Links: Erinnerung zur Auffrischungsimpfung. Rechts: Vollständiger Impfschutz.</em></figcaption>
+<figcaption aria-hidden="true"><em>Textbox zum Impfstatus - Links: Erinnerung zur Auffrischimpfung. Rechts: Vollständiger Impfschutz.</em></figcaption>
 </center>
 <br></br>
 

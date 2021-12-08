@@ -91,11 +91,11 @@ Unter dem **Reiter „Zertifikate“** in der Registerkarte Ihrer Corona-Warn-Ap
 <center> <img src="./zertifikate(1).png" title="Zertifikat hinzufügen" style="align: center"> <img src="./zertifikate(2).png" title="Zertifikat hinzufügen" style="align: center"> </center>
 <br></br>
 
-**So fügen Sie eine Auffrischungsimpfung hinzu:**
+**So fügen Sie eine Auffrischimpfung hinzu:**
 
-Wenn Sie eine Auffrischungsimpfung erhalten haben, können Sie das Zertifikat ebenso in die Corona-Warn-App übertragen, wie es bei Impf- und Genesenenzertifikaten funktioniert. 
+Wenn Sie eine Auffrischimpfung erhalten haben, können Sie das Zertifikat ebenso in die Corona-Warn-App übertragen, wie es bei Impf- und Genesenenzertifikaten funktioniert. 
 
-Noch gibt es keine offiziellen Regelungen darüber, ob und für wen eine Auffrischungsimpfung notwendig wird. Die Corona-Warn-App ist aber seit Version 2.10 darauf vorbereitet, mögliche Regeln sofort umzusetzen und Nutzer\*innen, denen eine Auffrischungsimpfung empfohlen wird, zu informieren. So wissen Betroffene sofort Bescheid und können sich schnell um einen Termin kümmern.
+Noch gibt es keine offiziellen Regelungen darüber, ob und für wen eine Auffrischimpfung notwendig wird. Die Corona-Warn-App ist aber seit Version 2.10 darauf vorbereitet, mögliche Regeln sofort umzusetzen und Nutzer\*innen, denen eine Auffrischimpfung empfohlen wird, zu informieren. So wissen Betroffene sofort Bescheid und können sich schnell um einen Termin kümmern.
 
 
 ### Testergebnis teilen und Infektionsketten unterbrechen
