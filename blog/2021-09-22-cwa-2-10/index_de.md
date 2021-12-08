@@ -16,7 +16,7 @@ Das Update steht Nutzer*innen über die nächsten 48 Stunden zur Verfügung.
 
 <!-- overview -->
 
-Noch gibt es keine offiziellen Regelungen darüber, ob und für wen eine Auffrischimpfung notwendig wird. Mit dem Update auf Version 2.10 ist die Corona-Warn-App aber schon jetzt dafür vorbereitet, mögliche Regeln sofort umzusetzen und Nutzer\*innen, die eine Auffrischung benötigen, zu informieren. Damit passt das Projektteam die Corona-Warn-App auch weiterhin an das aktuelle **Pandemie-Geschehen** an. 
+Noch gibt es keine offiziellen Regelungen darüber, ob und für wen eine Auffrischimpfung notwendig wird. Mit dem Update auf Version 2.10 ist die Corona-Warn-App aber schon jetzt dafür vorbereitet, mögliche Regeln sofort umzusetzen und Nutzer\*innen, die eine Auffrischimpfung benötigen, zu informieren. Damit passt das Projektteam die Corona-Warn-App auch weiterhin an das aktuelle **Pandemie-Geschehen** an. 
 
 Künftig hält eine **Textbox** unter jedem Impfzertifikat Nutzer\*innen immer auf dem aktuellen Stand zu ihrem **Impfstatus**. Sollten Auffrischimpfungen notwendig werden, informiert die Corona-Warn-App die betroffenen Nutzer\*innen in dieser Box und weist zusätzlich mit einer Pushnachricht darauf hin, dass es Neuigkeiten in der App gibt.
  

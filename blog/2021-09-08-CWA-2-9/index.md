@@ -58,7 +58,7 @@ Users who get vaccinated with **Johnson & Johnson’s vaccine** after recovery a
 Furthermore, users who have received a **booster vaccination** can transfer their digital certificate into the Corona-Warn-App. Booster vaccinations are displayed like the other vaccination certificates with "Vaccination n of m".
 
 <br></br>
-<center> <img src="./booster-impfung_v2_en.png" title="Auffrischungsimpfung" style="align: center" width=250> </center>
+<center> <img src="./booster-impfung_v2_en.png" title="Auffrischimpfung" style="align: center" width=250> </center>
 <br></br>
 
 With the update, users who have had a PCR or rapid test can access the EU's digital COVID test certificate directly from their test result. The certificate serves as official proof of a negative test result.
