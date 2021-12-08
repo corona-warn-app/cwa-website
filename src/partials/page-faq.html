@@ -34,7 +34,7 @@
       {{#each accordion}}
         <div id="{{anchor}}-div">
           <dt class="accordion-header{{#if active}} active{{/if}}">
-            <h3 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h3>
+            <h3 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{{title}}}</h3>
             <span class="accordion-item-icon"></span>
           </dt>
           <dd class="accordion-body">
@@ -62,7 +62,7 @@
         <nav class=glossary-nav>
           <div class="nav nav-tabs pb-3" id="nav-tab" role="tablist">
           {{#each page-contents.glossary.glossaryWords as |letter|}}
-            {{#if @first}} 
+            {{#if @first}}
               <a class="nav-item nav-link active" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
             {{else}}
               <a class="nav-item nav-link" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
@@ -72,9 +72,9 @@
         </nav>
         <div class="tab-content" id="nav-tab-content">
         {{#each page-contents.glossary.glossaryWords as |letter|}}
-          {{#if @first}} 
+          {{#if @first}}
             <div class="tab-pane fade show active mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab">
-              <h4 class="headline headline-heavy px-3" >{{@key}}</h4>  
+              <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
               {{#each letter as |content|}}
                 {{#if @last}}
                   <div>
@@ -97,7 +97,7 @@
             </div>
           {{else}}
             <div class="tab-pane fade show mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab">
-              <h4 class="headline headline-heavy px-3" >{{@key}}</h4>  
+              <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
               {{#each letter as |content|}}
                 {{#if @last}}
                   <div>
