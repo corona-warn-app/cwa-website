@@ -221,7 +221,7 @@
                             "Wir raten dringend davon ab, das PDF-Dokument zu veröffentlichen über potentiell unsichere Kanäle (z.&nbsp;B. per E-Mail oder über andere Apps) zu teilen.",
                             "<b>Limitierung</b>",
                             "Mit der neuen Funktion können nur PDF-Dokumente von Zertifikaten erzeugt werden, die auch in Deutschland ausgestellt wurden. Ansonsten erscheint eine ausführliche Meldung: 'Druckversion anzeigen nicht möglich - Die Druckversion des Zertifikats kann nicht angezeigt werden, da das Zertifikat nicht in Deutschland ausgestellt wurde.'",
-                            "Siehe auch diesen Blog Artikel: <a href='../blog/2021-09-22-cwa-version-2-10/' target='_blank' rel='noopener noreferrer'>Mit Version 2.10 ist die Corona-Warn-App bereit, schnell über Auffrischungsimpfungen zu informieren.</a>",
+                            "Siehe auch diesen Blog Artikel: <a href='../blog/2021-09-22-cwa-version-2-10/' target='_blank' rel='noopener noreferrer'>Mit Version 2.10 ist die Corona-Warn-App bereit, schnell über Auffrischimpfungen zu informieren.</a>",
                             "<b>Anwendung</b>",
                             "Nach dem erfolgreichen Export des Zertifikates in das PDF-Dokument können Sie entscheiden, ob Sie es auf Ihrem Smartphone speichern, in andere Apps importieren oder drucken möchten. Dazu nutzen Sie bitte die Standard-Funktionen des Betriebssystems.",
                             "<b>Schritt-für-Schritt-Anleitung:</b>",
@@ -339,12 +339,12 @@
                         ]
                     },
                     {
-                        "title": "Fragen und Antworten zur Auffrischungsimpfung und Benachrichtigungen zum Impfzertifikat",
+                        "title": "Fragen und Antworten zur Auffrischimpfung und Benachrichtigungen zum Impfzertifikat",
                         "anchor": "vac_cert_booster",
                         "active": "true",
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?</a></li><li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischungsimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischungsimpfung?</a></li>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Warum erhalte ich die Meldung, dass mein Zertifikat neu ausgestellt werden muss?</a></li><li><a href='#vac_booster_basics' target='_self'>Was ist eine Auffrischimpfung und wie stellt sie sich in der CWA dar?</a></li><li><a href='#vac_cert_booster_info' target='_self'>Wie erfahre ich von Auffrischimpfungen im Kontext von Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>Wie verwalte ich Auffrischimpfungen in der CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkommission (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischimpfung?</a></li>",
                             "</ul>"
                         ]
                     },
@@ -418,29 +418,38 @@
                         ]
                     },
                     {
-                        "title": "Wie erfahre ich von Auffrischungsimpfungen im Kontext von Corona?",
+                        "title": "Was ist eine Auffrischimpfung und wie wird sie in der CWA dargestellt?",
+                        "anchor": "vac_booster_basics",
+                        "active": true,
+                        "textblock": [
+                            "<div class='container'><div class='row'><div class='col-sm'><a href='/assets/img/faq/vac_booster_basics_de.png' target='_blank'><img src='/assets/img/faq/vac_booster_basics_de.png' alt='Zertifikatenliste' width='300'></a></div><div class='col-sm'><p>Die Auffrischimpfung (Boosterimpfung) ist ein Impfvorgang, der nach der Grundimmunisierung den nachlassenden Impfschutz auffrischen soll. In den meisten Fällen, aber nicht immer, findet Sie gemäß den Empfehlungen der Behörden nach einer Zeit von etwa 5-6 Monaten nach dem letzten Impfvorgang statt. Typisches Beispiel: Erfolgte der Abschluss der Impfreihe zur Grundimmunisierung am 08.07.2021, dann könnte eine Auffrischimpfung am 08.01.2022 erfolgen.</p><p>Jede Auffrischimpfung kann durch ein digitales COVID-Zertifikat dokumentiert werden, das Sie in die Corona-Warn-App einlesen können. <b>*Wichtig*</b>: Bitte achten Sie schon direkt beim Ausstellen des Zertifikats darauf, dass die persönlichen Daten (Titel, Name, Vornamen, und Geburtsdatum) passend zu den bereits existierenden Impfzertifikaten ausgewiesen werden. Nur so kann die Corona-Warn-App das neue Zertifikat der Auffrischimpfung der Grundimmunisierung zuordnen (Beispiel: gleicher akademischer Titel oder Angabe des vollständigen Doppelnamens). Alle Zertifikate einer Person sollten in der Corona-Warn-App gruppiert angezeigt werden, siehe Abbildung.</p><p>Auffrischimpfungen bieten einen sofortigen Impfschutz.</p><p>Basierend auf den bisherigen Impfvorgängen, wird das erste Zertifikat einer Auffrischimpfung mit '3 von 3' (bei vorheriger Grundimmunisierung mit 2 Dosen) oder mit '2 von 2' (als Impfoptimierung nach dem Impfstoff Janssen von Johnson & Johnson) ausgestellt. Im letzteren Fall können die CovPassCheck-App, Corona-Warn-App und CovPass-App dies aber aus technischen Gründen nicht in allen Fällen korrekt anzeigen.</p><p>Die Kennzeichnung '1 von 1' im Zertifikat einer Auffrischimpfung zeigt an, dass es sich um den ersten und einzigen Impfvorgang nach einer Genesung handelt. Eine Ausnahme bilden Impfungen mit Johnson & Johnson.</p><p>Siehe FAQ-Artikel: <a href='#vac_booster_jj' target='blank'>Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischimpfung?</a></p></div></div></div>",
+                            "<p><a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Auffrischimpfung</a></p>"
+                        ]
+                    },
+                    {
+                        "title": "Wie erfahre ich von Auffrischimpfungen im Kontext von Corona?",
                         "anchor": "vac_cert_booster_info",
                         "active": true,
                         "textblock": [
                             "Durch die Gesundheitsminister-Konferenz wurde inzwischen die Regelung zu COVID-19-Auffrischimpfungen beschlossen. Eine zusätzliche Auffrischimpfung soll helfen, die neutralisierenden Antikörpertiter wieder zu erhöhen, die nach der Grundimmunisierung mit der Zeit absinken können. Das gilt insbesondere bei den Personengruppen, bei denen nach einer Grundimmunisierung eine gedämpfte Impfantwort vermutet oder erkannt wird.",
                             "Die Corona-Warn-App wird darauf hinweisen, eine Auffrischimpfung in Betracht zu ziehen, falls bestimmte Bedingungen erfüllt sind. Diese Bedingungen basieren auf den Empfehlungen der Paul-Ehrlich-Instituts sowie der Ständigen Impfkommission (STIKO) des Robert Koch-Instituts (RKI).",
                             "Wie lange jemand durch eine COVID-19-Impfung (Grundimmunisierung) tatsächlich geschützt ist, hängt von verschiedenen Faktoren ab und lässt sich daher nach heutigem Kenntnisstand nicht pauschal beantworten. Deswegen werden die entsprechenden Regeln für Impfschemata und Auffrischimpfungen in der Corona-Warn-App in Abstimmung mit dem RKI entsprechend den Entwicklungen und neuen Erkenntnissen fortlaufend überprüft und angepasst.",
-                            "<a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Auffrischungsimpfung</a>"
+                            "<a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Auffrischimpfung</a>"
                         ]
                     },
                     {
-                        "title": "Wie verwalte ich Auffrischungsimpfungen in der CWA?",
+                        "title": "Wie verwalte ich Auffrischimpfungen in der CWA?",
                         "anchor": "vac_cert_booster_cwa",
                         "active": true,
                         "textblock": [
                             "Seit Version 2.9 unterstützt die Corona-Warn-App auch den Import von Zertifikaten, die eine Auffrischimpfung dokumentieren. (siehe Blog Artikel: <a href='../blog/2021-09-08-cwa-version-2-9/' target='_blank' rel='noopener noreferrer'>Corona-Warn-App Version 2.9: Veranstalter*innen können Gäste im Auftrag des Gesundheitsamtes über die Check-in-Funktion warnen</a>)",
-                            "Seit Version 2.10 erhalten Anwender einen Hinweis, ggf. eine Auffrischimpfung in Betracht zu ziehen. Der Hinweis basiert auf nationalen Regeln, die in Absprache mit dem Robert Koch-Institut (RKI) implementiert wurden. Diese Regeln werden fortlaufend geprüft und entsprechend den Entwicklungen und neuen Erkenntnissen angepasst. (siehe Blog Artikel: <a href='../blog/2021-09-22-cwa-version-2-10/' target='_blank' rel='noopener noreferrer'>Mit Version 2.10 ist die Corona-Warn-App bereit, schnell über Auffrischungsimpfungen zu informieren.</a>)",
-                            "Bitte beachten Sie: Das Zertifikat zur Auffrischungsimpfung ist nur gültig, wenn Sie auch die nötige Grundimmunisierung durch das entsprechende letzte Zertifikat der Impfreihe nachweisen können. Löschen Sie bitte die anderen Impfzertifikate nicht aus der CWA! Da bisher noch keine einheitlichen EU-Standards zu diesem Thema festgelegt wurden, sollte man insbesondere bei Reisen ins Ausland auch die Zertifikate der Grundimmunisierung mit sich führen, sei es in der CWA, als PDF, oder als Papierausdruck. Wir empfehlen daher alle Impfzertifikate in der App zu behalten, auch wenn diese nicht mehr aktuell sind.",
-                            "<a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Auffrischungsimpfung</a>"
+                            "Seit Version 2.10 erhalten Anwender einen Hinweis, ggf. eine Auffrischimpfung in Betracht zu ziehen. Der Hinweis basiert auf nationalen Regeln, die in Absprache mit dem Robert Koch-Institut (RKI) implementiert wurden. Diese Regeln werden fortlaufend geprüft und entsprechend den Entwicklungen und neuen Erkenntnissen angepasst. (siehe Blog Artikel: <a href='../blog/2021-09-22-cwa-version-2-10/' target='_blank' rel='noopener noreferrer'>Mit Version 2.10 ist die Corona-Warn-App bereit, schnell über Auffrischimpfungen zu informieren.</a>)",
+                            "Bitte beachten Sie: Das Zertifikat zur Auffrischimpfung ist nur gültig, wenn Sie auch die nötige Grundimmunisierung durch das entsprechende letzte Zertifikat der Impfreihe nachweisen können. Löschen Sie bitte die anderen Impfzertifikate nicht aus der CWA! Da bisher noch keine einheitlichen EU-Standards zu diesem Thema festgelegt wurden, sollte man insbesondere bei Reisen ins Ausland auch die Zertifikate der Grundimmunisierung mit sich führen, sei es in der CWA, als PDF, oder als Papierausdruck. Wir empfehlen daher alle Impfzertifikate in der App zu behalten, auch wenn diese nicht mehr aktuell sind.",
+                            "<a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>Zum Inhaltsverzeichnis der Auffrischimpfung</a>"
                         ]
                     },
                     {
-                        "title": "Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkomission (STIKO)?",
+                        "title": "Warum erhalte ich eine Benachrichtigung über eine Impfempfehlung der Ständigen Impfkommission (STIKO)?",
                         "anchor": "vac_booster_notification",
                         "active": true,
                         "textblock": [
@@ -452,14 +461,14 @@
                         ]
                     },
                     {
-                        "title": "Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischungsimpfung?",
+                        "title": "Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischimpfung?",
                         "anchor": "vac_booster_jj",
                         "active": true,
                         "textblock": [
-                            "Dieser Fall kann eintreten, wenn eine Grundimmunisierung mit dem Impfstoff von Johnson & Johnson (J&J) erfolgte. Da für eine Grundimmunisierung mit dem J&J-Impfstoff nur eine Impfung nötig ist, muss im Impfzertifikat für die Auffrischungsimpfung unter „Nummer der Impfung' der Eintrag „2 von 2“ vorgenommen werden.",
+                            "Dieser Fall kann eintreten, wenn eine Grundimmunisierung mit dem Impfstoff von Johnson & Johnson (J&J) erfolgte. Da für eine Grundimmunisierung mit dem J&J-Impfstoff nur eine Impfung nötig ist, muss im Impfzertifikat für die Auffrischimpfung unter „Nummer der Impfung' der Eintrag „2 von 2“ vorgenommen werden.",
                             "Bei der Grundimmunisierung mit anderen Impfstoffen als J&J, wie z.&nbsp;B. BioNTech, Moderna, oder AstraZeneca, wird die zweite Dosis ebenfalls unter „Nummer der Impfung“ der Eintrag „2 von 2“ vorgenommen. Solchen Impfungen setzen für gewöhnlich eine Wartezeit von 14 Tagen bis zum vollständigen Impfschutz nach der 2. Dosis der Grundimmunisierung voraus.",
-                            "Dies hat zur Folge, dass Prüf-Apps, wie die CovPassCheck-App, in diesem speziellen Fall nicht unterscheiden können, ob es sich um eine Auffrischimpfung für eine J&J-Grundimmunisierung oder um die zweite Dosis der Grundimmunisierung handelt. Daher wird das Impfzertifikat für die Auffrischungsimpfung für 14 Tage als ungültig angezeigt, wenn vorher eine Impfung mit dem J&J-Impfstoff durchgeführt wurde und in dem Zertifikat der Auffrischimpfung „2 von 2“ notiert wurde.",
-                            "Andererseits wird bei einer vorangegangenen Grundimmunisierung durch zwei Dosen die Auffrischungsimpfung als die 3. von 3 Impfungen deklariert. Durch den Eintrag „3 von 3“ erkennt die App die Auffrischungsimpfung korrekt als solche an und es entfällt die Anzeige der 14 Tage Wartezeit bis zum vollen Impfschutz. Sobald eine zweite Auffrischungsimpfung nach der Grundimmunisierung durch J&J durchgeführt wurde, wird die Anzeige der vierzehntägigen Wartezeit entfallen, da für dieses Zertifikat „3 von 3“ als Nummer der Impfung eingetragen wird.",
+                            "Dies hat zur Folge, dass Prüf-Apps, wie die CovPassCheck-App, in diesem speziellen Fall nicht unterscheiden können, ob es sich um eine Auffrischimpfung für eine J&J-Grundimmunisierung oder um die zweite Dosis der Grundimmunisierung handelt. Daher wird das Impfzertifikat für die Auffrischimpfung für 14 Tage als ungültig angezeigt, wenn vorher eine Impfung mit dem J&J-Impfstoff durchgeführt wurde und in dem Zertifikat der Auffrischimpfung „2 von 2“ notiert wurde.",
+                            "Andererseits wird bei einer vorangegangenen Grundimmunisierung durch zwei Dosen die Auffrischimpfung als die 3. von 3 Impfungen deklariert. Durch den Eintrag „3 von 3“ erkennt die App die Auffrischimpfung korrekt als solche an und es entfällt die Anzeige der 14 Tage Wartezeit bis zum vollen Impfschutz. Sobald eine zweite Auffrischimpfung nach der Grundimmunisierung durch J&J durchgeführt wurde, wird die Anzeige der vierzehntägigen Wartezeit entfallen, da für dieses Zertifikat „3 von 3“ als Nummer der Impfung eingetragen wird.",
                             "Als Nachweis können Sie für diese 14 Tage weiterhin Ihr Impfzertifikat für die Grundimmunisierung vorzeigen. Dieses behält seine Gültigkeit, sofern die technische oder fachliche Gültigkeit nicht abgelaufen ist."
                         ]
                     },
@@ -505,7 +514,7 @@
                         ]
                     },
                     {
-                        "title": "Kann ich Impfzertifikate auf mehreren Smartphones speichern, z. B. auf meinem Privat- und dem Geschäftshandy? Wie kann ich Impfbescheinigungen beim Gerätewechsel übertragen? Was mache ich, wenn ich mein Smartphone verloren habe? Kann ich Zertifikate in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden? Sind Impfzertifikate in meinem Backup enthalten? ",
+                        "title": "Kann ich Impfzertifikate auf mehreren Smartphones speichern, z.&nbsp;B. auf meinem Privat- und dem Geschäftshandy? Wie kann ich Impfbescheinigungen beim Gerätewechsel übertragen? Was mache ich, wenn ich mein Smartphone verloren habe? Kann ich Zertifikate in der Corona-Warn-App und der CovPass-App gleichzeitig verwalten, oder muss ich mich für eine der beiden Apps entscheiden? Sind Impfzertifikate in meinem Backup enthalten? ",
                         "anchor": "vac_cert_multiple_scan_possible",
                         "active": true,
                         "textblock": [
@@ -616,7 +625,7 @@
                         ]
                     },
                     {
-                        "title": "Wenn ich eine hohe Risikobegegnung in der App angezeigt bekomme, d. h. eine rote Karte/Kachel, sollte ich dann einen Schnelltest oder PCR-Test machen?",
+                        "title": "Wenn ich eine hohe Risikobegegnung in der App angezeigt bekomme, d.&nbsp;h. eine rote Karte/Kachel, sollte ich dann einen Schnelltest oder PCR-Test machen?",
                         "anchor": "rat_red_card_which_test",
                         "active": true,
                         "textblock": [
