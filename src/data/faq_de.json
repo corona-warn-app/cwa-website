@@ -570,6 +570,41 @@
                 ]
             },
             {
+                "title": "Zertifikatprüfung bei Buchungen",
+                "id": "val_service",
+                "accordion": [
+                    {
+                        "title": "Warum erhalte ich die Meldung, dass kein geeignetes Zertifikat vorhanden ist?",
+                        "anchor": "val_service_no_valid_dcc",
+                        "active": true,
+                        "textblock": [
+                            "Die App überprüft, ob Ihre Zertifikate den Anforderungen des Buchungssystems entsprechen. Dabei werden verschiedene Parameter geprüft. Zunächst muss der Typ Ihres Zertifikats den Anforderungen des Buchungssystems entsprechen. Informieren Sie sich hierzu über die akzeptierten Zertifikate bei Ihrem Ticketanbieter, fügen Sie die entsprechenden Zertifikate in der App hinzu, sofern noch nicht geschehen und stellen Sie sicher, dass Ihre Zertifikate gültig sind.",
+                            "<b>Was sollten Sie beachten?</b>",
+                            "Sie sollten unbedingt darauf achten, dass der Name, der im Zertifikat, das sie zur Überprüfung benutzen wollen, hinterlegt ist, exakt dem Namen entspricht, den sie im Buchungssystem angegeben haben. Ist das nicht der Fall, können sie das entsprechende Zertifikat in der Corona-Warn-App nicht auswählen. Haben Sie ihrem Zertifikat beispielsweise ihren ersten und zweiten Vornamen hinterlegt, sollten sie beide Namen auch bei der Ticketbuchung angeben. Geben sie nur einen Namen an, kann die Corona-Warn-App nicht erkennen, dass es sich um ein und dieselbe Person handelt.",
+                            "Wenn Ihr Zertifikat nicht mehr gültig ist oder Rechtschreibfehler/Zahlendreher enthält, wenden Sie sich an den Aussteller des Zertifikats, um ein neues Zertifikat zu erhalten. Bei anderweitigen Rückfragen wenden Sie sich an den Ticketanbieter."
+                        ]
+                    },
+                    {
+                        "title": "Warum ist mein Zertifikat nicht prüfbar oder wird nicht anerkannt?",
+                        "anchor": "val_service_result",
+                        "active": true,
+                        "textblock": [
+                            "<b>Nicht anerkannt</b>",
+                            "Wenn Sie als Ergebnis der Gültigkeitsprüfung die Meldung „Zertifikat nicht anerkannt“ erhalten, dann ist das Zertifikat technisch gültig aber entspricht nicht den Anforderungen des Anbieters.",
+                            "<ul>",
+                            "<li>Ein Antigentest ist älter als 48 Stunden und hat somit seine Gültigkeit verloren</li>",
+                            "<li>Das Zertifikat wurde nicht von einem zertifizierten Testzentrum ausgestellt</li>",
+                            "</ul>",
+                            "<b>Zertifikat nicht prüfbar</b>",
+                            "Wenn Sie als Ergebnis der Gültigkeitsprüfung die Meldung „Zertifikat nicht prüfbar“ erhalten, kann dies technische Gründe haben. Ihr Zertifikat ist in diesem Fall möglicherweise technisch veraltet oder es fehlen Daten innerhalb des Zertifikats, die zur Überprüfung benötigt werden.",
+                            "Hier können Sie sich an den Aussteller Ihres Zertifikats wenden, um ein neues Zertifikat zu erhalten und den Ticketanbieter kontaktieren, wenn das Problem weiterhin bestehen sollte.",
+                            "<b>Erfolgreiche Prüfung</b>",
+                            "Das Zertifikat wurde erfolgreich überprüft und entspricht den Anforderungen des Anbieters."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Schnelltest",
                 "id": "rapid_antigen_test",
                 "accordion": [
