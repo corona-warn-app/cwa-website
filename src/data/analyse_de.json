@@ -78,10 +78,10 @@
             "totalKey": ["app_downloads_cumulated"]
         },
         {
-            "title": "Registrierte Tests",
+            "title": "Übermittelte und registrierte Testergebnisse",
             "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/test_results_data.zip",
             "info": {
-                "content": "<strong>Registrierte Tests</strong><p>Anzahl der registrierten PCR-Tests und Antigen-Schnelltests sowie die Summe beider registrierter Testarten in der Corona-Warn-App.</p><strong>Testergebnisse PCR-Tests</strong><p>Anzahl der positiven, negativen und ungültigen sowie die Summe aller in der Corona-Warn-App registrierten PCR-Testergebnisse.</p><strong>Testergebnisse Antigen-Schnelltests</strong><p>Anzahl der positiven, negativen und ungültigen sowie die Summe aller in der Corona-Warn-App registrierten Antigen-Schnelltestergebnisse.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist der Tag der Ergebnisübermittlung an den Testserver.</p><strong> Datenquellen </strong><p>Corona-Warn-App-Backend</p>"
+                "content": "<strong>Übermittelte und registrierte Testergebnisse</strong><p>Anzahl der durch Labore übermittelten und in der Corona-Warn-App registrierten PCR-Testergebnisse und Antigen-Schnelltest-Ergebnisse sowie deren Summe.</p><strong>Übermittelte und registrierte Testergebnisse: PCR-Tests</strong><p>Anzahl der positiven, negativen und ungültigen sowie die Summe aller durch Labore übermittelten und in der Corona-Warn-App registrierten PCR-Testergebnisse.</p><strong>Übermittelte und registrierte Testergebnisse: Antigen-Schnelltests</strong><p>Anzahl der positiven, negativen und ungültigen sowie die Summe aller durch Labore übermittelten und in der Corona-Warn-App registrierten Antigen-Schnelltest-Ergebnisse.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist der Tag der Ergebnisübermittlung an den Testserver.</p><strong> Datenquellen </strong><p>Corona-Warn-App-Backend</p>"
             },
             "totalKey": [
                 "tests_total_cumulated",
@@ -124,10 +124,10 @@
             ]
         },
         {
-            "title": "Empfangene Warnungen",
+            "title": "Von Datenspendenden empfangene Warnungen",
             "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_ppa_warnings_data.zip",
             "info": {
-                "content": "<strong>Empfangene Warnungen</strong><p>Anzahl roter und grüner Risikowarnungen sowie deren Summe in der Corona-Warn-App.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist das „submitted_at“-Datum des PPA-Datensatzes.</p><strong>Datenquellen</strong><p>Privacy-Preserving-Analytics (PPA)</p><strong>Weitere Informationen</strong><p>Eine grüne Risikowarnung erhalten Nutzende, die in den letzten 14 Tagen eine kurze und/oder räumlich entfernte Begegnung mit einer Corona-positiv getesteten Person hatten. Die Begegnung lag somit nicht über dem definierten Schwellenwert. Für die betroffenen Nutzenden besteht kein aktiver Handlungsbedarf.</p><p>Eine rote Risikowarnung erhalten Nutzende, die in den letzten 14 Tagen eine lang andauernde und/oder räumlich nahe Begegnungen mit mindestens einer Corona-positiv getesteten Person hatten. Die Begegnung lag über dem definierten Schwellenwert. Betroffene Nutzende werden aufgefordert, persönliche Kontakte zu reduzieren. Bei Symptomen soll die Hausarztpraxis, der kassenärztliche Bereitschaftsdienst oder das Gesundheitsamt kontaktiert werden. Die Hausarztpraxis oder das Gesundheitsamt entscheiden über ein Testangebot.</p>"
+                "content": "<strong>Von Datenspendenden empfangene Warnungen</strong><p>Anzahl der von Datenspendenden in der Corona-Warn-App empfangenen roten und grünen Risiko-Warnungen sowie deren Summe.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist das „submitted_at“-Datum des PPA-Datensatzes.</p><strong>Datenquellen</strong><p>Privacy-Preserving-Analytics (PPA)</p><strong>Weitere Informationen</strong><p>Nutzende der Corona-Warn-App haben die Möglichkeit an der Datenspende teilzunehmen und so einen wichtigen Beitrag zur Verbesserung der App zu leisten. Durch das freiwillige Teilen ausgewählter Daten haben Nutzende die Möglichkeit dem Robert Koch-Institut bei der Bewertung der Wirksamkeit der Corona-Warn-App zu helfen und darüber hinaus die Funktionen und Nutzendenfreundlichkeit der App zu verbessern. Für eine Teilnahme muss in den Einstellungen unter dem Punkt „Datenspende“ der Schalter auf „An“ stehen.</p><p>Eine grüne Risikowarnung erhalten Nutzende, die in den letzten 14 Tagen eine kurze und/oder räumlich entfernte Begegnung mit einer Corona-positiv getesteten Person hatten. Die Begegnung lag somit nicht über dem definierten Schwellenwert. Für die betroffenen Nutzenden besteht kein aktiver Handlungsbedarf.</p><p>Eine rote Risikowarnung erhalten Nutzende, die in den letzten 14 Tagen eine lang andauernde und/oder räumlich nahe Begegnungen mit mindestens einer Corona-positiv getesteten Person hatten. Die Begegnung lag über dem definierten Schwellenwert. Betroffene Nutzende werden aufgefordert, persönliche Kontakte zu reduzieren. Bei Symptomen soll die Hausarztpraxis, der kassenärztliche Bereitschaftsdienst oder das Gesundheitsamt kontaktiert werden. Die Hausarztpraxis oder das Gesundheitsamt entscheiden über ein Testangebot.</p>"
             },
             "totalKey": ["ppa_total_warnings_cumulated"]
         }
@@ -137,7 +137,7 @@
         "analyseBoardTitleTitle":{
             "0": "Downloads",
             "1": [
-                "Registrierte Tests",
+                "Übermittelte und registrierte Testergebnisse",
                 "Testergebnisse",
                 "Testergebnisse"
             ],
