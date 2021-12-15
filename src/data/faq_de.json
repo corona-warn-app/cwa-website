@@ -16,21 +16,6 @@
                 "active": true,
                 "accordion": [
                     {
-                        "title": "Wer hilft bei Fragen zur Corona-Warn-App?",
-                        "anchor": "who_can_help",
-                        "active": true,
-                        "textblock": [
-                            "Die technische Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei technischen Fragen rund um die Corona-Warn-App, zum Beispiel bei Problemen mit der Risiko-Ermittlung. Sie erreichen sie von Montag bis Samstag von 7 bis 22 Uhr (außer an bundesweiten Feiertagen), und sie ist für Sie innerhalb Deutschlands kostenfrei.",
-                            "Die TAN-Hotline (<a href='#international_phone_numbers' target='_blank' rel='noopener noreferrer'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) hilft Ihnen bei der Eingabe der TAN, wenn Sie ein positives PCR-Testergebnis haben, und wenn Sie keine TAN oder kein Dokument mit PCR-Test-QR-Code erhalten haben. Die TAN-Hotline ist 24 Stunden täglich an sieben Tagen in der Woche erreichbar. Der Anruf ist innerhalb Deutschlands kostenfrei.",
-                            "Falls das Testergebnis nicht in der Corona-Warn-App abrufbar ist, sollte das zuständige Fachpersonal, Testcenter oder Gesundheitsamt kontaktiert werden, um das Testergebnis zu erhalten. <br/>Um Ihnen die Suche nach dem zuständigen Gesundheitsamt zu erleichtern, hat das RKI ein entsprechendes Tool zur Verfügung gestellt. Durch die Angabe der Postleitzahl oder des Wohnortes, wird sofort das zuständige Gesundheitsamt inklusive der Kontaktdaten angezeigt: <a href='https://tools.rki.de/PLZTool'>Robert Koch-Institut Tool: Gesundheitsamt nach Postleitzahl oder Ort</a>",
-                            "Weitere Hinweise zum PCR-Test-QR-Code Verfahren finden Sie in diesem FAQ Eintrag: <a href='#qr_test'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a>",
-                            "Die Webseiten der Bundesregierung bieten allgemeine Informationen und Videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
-                            "Das Robert Koch-Institut stellt auch Informationen zu epidemiologischen Aspekten zur Verfügung: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html</a>.",
-                            "Als Medienvertreter richten Sie bitte Ihre Anfragen an <a href='press...sap...com' class='email'>press...sap...com</a>.",
-                            "Die verschiedenen Feedback-Kanäle der <a href='/de/community/'>Corona-Warn-App-Community<a/> helfen Ihnen bei Fragen zum Open Source Projekt der Corona-Warn-App."
-                        ]
-                    },
-                    {
                         "title": "So erreichen Sie uns",
                         "anchor": "international_phone_numbers",
                         "active": true,
@@ -91,6 +76,17 @@
                 "title": "News",
                 "id": "news",
                 "accordion": [
+                    {
+                        "title": "Erklärung zur Sicherheitslücke in Log4J",
+                        "anchor": "log4j",
+                        "active": true,
+                        "textblock": [
+                            "Log4j ist ein weit verbreitetes Java-basiertes Werkzeug zur Protokollierung von Fehlermeldungen in Anwendungen.",
+                            "Die Log4j-Bibliothek wird in einem breiten Spektrum von Unternehmenssoftware und in Diensten vieler großer Anbieter eingesetzt. Kürzlich wurde eine Sicherheitslücke im Zusammenhang mit der Log4j-Bibliothek entdeckt, die die Ausführung von Remote-Code ermöglicht.",
+                            "Als Reaktion auf diese jüngste Entdeckung und um mögliche Auswirkungen zu minimieren, haben sich die Projektteams von SAP und TSI den weltweiten Bemühungen angeschlossen und Maßnahmen ergriffen. Dazu gehört unter anderem ein Versionsupdate auf 2.16.0 ",
+                            "Es gibt eine Reihe von Pull-Requests, die sich auf dieses Problem beziehen. Sie können im Repository unseres Open-Source-Projekts gefunden werden: <a href='https://github.com/corona-warn-app/cwa-server/pull' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pull</a> "
+                        ]
+                    },
                     {
                         "title": "Datenspende und ereignisbasierte wissenschaftliche Befragung",
                         "anchor": "data_donation_and_EDUS",
