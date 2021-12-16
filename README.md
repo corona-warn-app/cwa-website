@@ -65,17 +65,17 @@ Manuals for the most common use cases of updating website content are available 
 
 ### Testing
 
-[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the ```cypress/integration``` folder and can be run with:
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/integration` folder and can be run with:
 
 ```bash
   npm run test:prepare
   npm run test
 ```
-Alternatively, run `npm run test:open` for simpler test development. Be aware that you should only run one file after another and not click on _Run all specs_ since the screenshot test library has a bug which causes falsy tests for _Visual Comparison_.
+Alternatively, execute `npm run test:open` to select individual tests or all tests to run from the Cypress console.
+
+#### Notes for test developers
 
 `npm run test:prepare` copies fixtures from `./cypress/fixtures` that are required for e2e tests. Store your test assets there, if required.
-
-> IMPORTANT: In case _Visual Comparison_ tests are failing after changes to css, header or footer, delete the `.png` files from `./cypress/integration/__image_screenshots__` and run the blog e2e tests with `npm run test` (without :open!) to recreate the screenshots. Additionally, apply the screenshots to the codebase.
 
 Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, eg `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
 
