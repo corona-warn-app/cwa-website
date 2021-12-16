@@ -98,8 +98,8 @@
                         "textblock": [
                             "Log4j ist ein weit verbreitetes Java-basiertes Werkzeug zur Protokollierung von Fehlermeldungen in Anwendungen.",
                             "Die Log4j-Bibliothek wird in einem breiten Spektrum von Unternehmenssoftware und in Diensten vieler großer Anbieter eingesetzt. Kürzlich wurde eine Sicherheitslücke im Zusammenhang mit der Log4j-Bibliothek entdeckt, die die Ausführung von Remote-Code ermöglicht.",
-                            "Als Reaktion auf diese jüngste Entdeckung und um mögliche Auswirkungen zu minimieren, haben sich die Projektteams von SAP und TSI den weltweiten Bemühungen angeschlossen und Maßnahmen ergriffen. Dazu gehört unter anderem ein Server-Versionsupdate auf 2.16.0 ",
-                            "Es gibt eine Reihe von Pull-Requests, die sich auf dieses Problem beziehen. Sie können im Repository unseres Open-Source-Projekts gefunden werden: <a href='https://github.com/corona-warn-app/cwa-server/pull' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pull</a> "
+                            "Als Reaktion auf diese jüngste Entdeckung und um mögliche Auswirkungen zu minimieren, haben sich die Projektteams von SAP und Deutsche Telekom den weltweiten Bemühungen angeschlossen und Maßnahmen ergriffen. Dazu gehört unter anderem ein Server-Update auf 2.16.0 der log4j-Bibliothek.",
+                            "Es gibt eine Reihe von Pull-Requests, die sich auf dieses Problem beziehen. Sie können im Repository unseres Open-Source-Projekts gefunden werden: <a href='https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j</a>"
                         ]
                     },
                     {
@@ -889,7 +889,7 @@
                             "<b>11. Können alle QR-Codes zum Check-in sofort von der Corona-Warn-App und der luca-App gelesen werden?</b>",
                             "Die ab dem 25 Mai 2021 erzeugten luca-QR-Codes können sowohl von der Corona-Warn-App als auch von luca-App gelesen (eingescannt) und für den Check-in-Prozess verarbeitet werden – sofern die Betreibenden dem nicht explizit widersprochen haben. Im Fall eines inkompatiblen luca-QR-Codes kann man sich an den Veranstalter wenden, der gegebenenfalls einen neuen kompatiblen luca-QR-Code ausstellt. Die Unterstützung privater QR-Codes ist weiterhin nicht möglich.",
                             "<b>12. Sind die Daten der Nutzenden der Corona-Warn-App weiterhin sicher?</b>",
-                            "Ja. Die Mitnutzung bezieht sich nur auf die QR-Codes, die für Eventregistrierung und Check-in genutzt werden. Corona-Warn-App und luca-App sind weiterhin unterschiedliche Angebote mit unterschiedlichen Zielsetzungen. Für die CWA gilt nach wie vor, dass sie keine persönlichen Daten erfasst.",
+                            "Ja. Die Mitnutzung bezieht sich nur auf die QR-Codes, die für Eventregistrierung und Check-in genutzt werden. Corona-Warn-App und luca-App sind weiterhin unterschiedliche Angebote mit unterschiedlichen Zielsetzungen. Beim Scannen eines luca-QR-Codes werden keine zusätzlichen Daten erfasst.",
                             "Die Mitnutzung der QR-Codes wurde sorgfältig vorbereitet. Alle sicherheitsrelevanten Aspekte wurden in enger Zusammenarbeit sowohl mit dem BfDI als auch mit dem BSI ausgearbeitet und geprüft.",
                             "Zudem arbeitet die Corona-Warn-App weiterhin sehr datensparsam.",
                             "<b>13. Welche Daten werden von der CWA an luca übertragen?</b>",
@@ -2582,6 +2582,11 @@
                     "term": "iOS",
                     "anchor": "ios",
                     "description": "iOS ist ein von Apple entwickeltes mobiles Betriebssystem für das iPhone, iPod touch und ehemalig auch iPad. Neben <a href='#glossary_android'>Android</a> ist es eines der beiden Betriebssysteme, auf denen die Corona-Warn-App angeboten wird."
+                },{
+                    "term": "Isolation",
+                    "anchor": "isolation",
+                    "description": "Eine Isolierung ist eine behördlich angeordnete Maßnahme für Personen, bei denen eine SARS-CoV-2-Infektion durch einen PCR-Test bestätigt wurde. Die Isolierung kann zu Hause erfolgen oder bei schwerem Krankheitsverlauf im Krankenhaus. Die Entlassung aus der Isolierung erfolgt nach festgelegten <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Entlassmanagement.html?nn=13490888'> Kriterien.</a> Zum Zeitpunkt der Entlassung ist davon auszugehen, dass die Person nicht mehr ansteckend ist. Siehe auch <a href='#glossary_quarantine'>Quarantäne</a>."
+
                 }
             ],
             "K": [
@@ -2636,7 +2641,7 @@
                 {
                     "term": "Quarantäne",
                     "anchor": "quarantine",
-                    "description": "Eine Schutzmaßnahme, die dazu beiträgt, die Verbreitung ansteckender Krankheiten mithilfe von menschlicher Isolation einzudämmen."
+                    "description": "Eine Schutzmaßnahme, die dazu beiträgt, die Verbreitung ansteckender Krankheiten mithilfe von menschlicher Isolation einzudämmen.  Siehe auch <a href='#glossary_isolation'>Isolation</a>."
                 }
             ],
             "R": [
