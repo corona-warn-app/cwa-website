@@ -92,6 +92,17 @@
                 "id": "news",
                 "accordion": [
                     {
+                        "title": "Erklärung zur Sicherheitslücke in Log4J",
+                        "anchor": "log4j",
+                        "active": true,
+                        "textblock": [
+                            "Log4j ist ein weit verbreitetes Java-basiertes Werkzeug zur Protokollierung von Fehlermeldungen in Anwendungen.",
+                            "Die Log4j-Bibliothek wird in einem breiten Spektrum von Unternehmenssoftware und in Diensten vieler großer Anbieter eingesetzt. Kürzlich wurde eine Sicherheitslücke im Zusammenhang mit der Log4j-Bibliothek entdeckt, die die Ausführung von Remote-Code ermöglicht.",
+                            "Als Reaktion auf diese jüngste Entdeckung und um mögliche Auswirkungen zu minimieren, haben sich die Projektteams von SAP und TSI den weltweiten Bemühungen angeschlossen und Maßnahmen ergriffen. Dazu gehört unter anderem ein Server-Versionsupdate auf 2.16.0 ",
+                            "Es gibt eine Reihe von Pull-Requests, die sich auf dieses Problem beziehen. Sie können im Repository unseres Open-Source-Projekts gefunden werden: <a href='https://github.com/corona-warn-app/cwa-server/pull' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pull</a> "
+                        ]
+                    },
+                    {
                         "title": "Datenspende und ereignisbasierte wissenschaftliche Befragung",
                         "anchor": "data_donation_and_EDUS",
                         "active": true,
@@ -516,11 +527,13 @@
                         ]
                     },
                     {
-                        "title": "Wie sollte man sich verhalten, wenn man teil- oder vollständig geimpft ist, aber eine rote Warnung in der Corona-Warn-App erhält?",
+                        "title": "Wie sollte man sich verhalten, wenn man genesen, teil- oder vollständig geimpft ist, aber eine rote Warnung in der Corona-Warn-App erhält?",
                         "anchor": "vac_cert_red_warning",
                         "active": true,
                         "textblock": [
-                            "Wenn eine vollständig geimpfte Person eine Begegnung mit erhöhtem Risiko (rote Kachel) angezeigt bekommt, ist zunächst keine Quarantäne nötig, solange keine Symptome auftreten. Falls im weiteren Verlauf Symptome auftreten, sollten Sie sich unmittelbar testen lassen und in sofortige Quarantäne begeben. Wenn Sie sich testen lassen wollen, konsultieren Sie bitte Ihren Arzt bzw. Ihre Ärztin für die weiteren Schritte. Bei nicht abgeschlossener Grundimmunisierung sowie in den ersten 14 Tagen nach der letzten Dosis ist der Impfschutz deutlich geringer, so dass hier dieselben Empfehlungen wie bei Ungeimpften gelten."
+                            "Sollte die Corona-Warn-App Ihnen eine Begegnung mit erhöhtem Risiko in einer roten Kachel anzeigen, begeben Sie sich, wenn möglich, in eine freiwillige Selbstquarantäne, bis Sie ein negatives Testergebnis vorweisen können. Dies gilt auch, wenn Sie geimpft oder genesen sind und keine Symptome zeigen. Bei einer Warnung über ein erhöhtes Risiko (Rote Kachel) haben Sie Anspruch auf einen kostenlosen Test. Dies muss nicht notwendigerweise ein PCR-Test sein.",
+                            "Falls im weiteren Verlauf Symptome auftreten, sollten Sie sich unmittelbar testen lassen sofern dies nicht geschehen ist und in sofortige Quarantäne begeben. Konsultieren Sie bitte Ihren Arzt bzw. Ihre Ärztin für die weiteren Schritte.",
+                            "Bei nicht abgeschlossener Grundimmunisierung sowie in den ersten 14 Tagen nach der letzten Dosis ist der Impfschutz deutlich geringer, so dass hier dieselben Empfehlungen wie bei Ungeimpften gelten."
                         ]
                     },
                     {
@@ -1011,7 +1024,7 @@
                             "Wenn die Corona-Warn-App Ihnen mit der roten Karte ein hohes Infektionsrisiko anzeigt, isolieren Sie sich bitte zügig und konsultieren Sie einen Arzt, um ggf. einen PCR-Test durchführen zu lassen.",
                             "Für einen reibungslosen Ablauf beim Testen, zum Empfang des Testbefundes und zu Warnung Anderer bei einem positiven Ergebnis folgen Sie bitte den Schritten in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank' rel='noopener'>dieser Übersicht vom Robert Koch-Institut</a>.",
                             "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.jpg' alt='PDF'></a>",
-                            "Siehe auch: <ul><li><a href='#rat_red_card_which_test' target='_blank' rel='noopener'>Wenn ich eine hohe Risikobegegnung in der App angezeigt bekomme, d.&nbsp;h. eine rote Karte/Kachel, sollte ich dann einen Schnelltest oder PCR-Test machen?</a></li><li><a href='#vac_cert_red_warning' target='_blank' rel='noopener'>Wie sollte man sich verhalten, wenn man teil- oder vollständig geimpft ist, aber eine rote Warnung in der Corona-Warn-App erhält?</a></li><li><a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a></li></ul>"
+                            "Siehe auch: <ul><li><a href='#voluntary_self_quarantine' target='_blank'>Warum wird die freiwillige Selbstquarantäne empfohlen?</a></li><li><a href='#quarantine_measures' target='_blank'>Fragen zu Quarantäne-Maßnahmen</a></li><li><a href='#rat_red_card_which_test' target='_blank' rel='noopener'>Wenn ich eine hohe Risikobegegnung in der App angezeigt bekomme, d.&nbsp;h. eine rote Karte/Kachel, sollte ich dann einen Schnelltest oder PCR-Test machen?</a></li><li><a href='#vac_cert_red_warning' target='_blank' rel='noopener'>Wie sollte man sich verhalten, wenn man teil- oder vollständig geimpft ist, aber eine rote Warnung in der Corona-Warn-App erhält?</a></li><li><a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a></li></ul>"
                         ]
                     },
                     {
@@ -1352,6 +1365,35 @@
                 "title": "Anwendung",
                 "id": "application",
                 "accordion": [
+                    {
+                        "title": "Fragen zu Quarantäne-Maßnahmen",
+                        "anchor": "quarantine_measures",
+                        "active": true,
+                        "textblock": [
+                            "Sollten Sie positiv getestet werden, muss Ihr zuständiges Gesundheitsamt informiert werden. Dies geschieht über Ihren Hausarzt bzw. das Testzentrum, bei dem Sie Ihren Test durchgeführt haben. Wurde Ihr Test nicht in Deutschland durchgeführt, sind Sie verpflichtet, Ihr zuständiges Gesundheitsamt oder Ihren Hausarzt selbst zu informieren, wenn das Testergebnis positiv sein sollte. Die zuständige Behörde, in der Regel Ihr Gesundheitsamt, wird dann eine Isolation anordnen.",
+                            "Die Quarantäne, bzw. Isolation im Falle eines positiven Testergebnisses, ist ein wichtiges Element in der Bekämpfung der Pandemie und soll die Verbreitung des Virus verhindern. Sie dient Ihrem Schutz und dem Schutz Aller vor Ansteckung mit dem neuartigen Coronavirus.",
+                            "Es wird dann von der zuständigen Behörde genau festgelegt, wie lange Sie in Isolation/Quarantäne kommen. Die Maßnahme endet aber nicht automatisch, sondern erst, wenn sie durch die zuständige Behörde wieder aufgehoben wurde. Sie zählen zu denjenigen, die ansteckungsverdächtig sind, ohne notwendigerweise selbst krank oder krankheitsverdächtig zu sein.",
+                            "Es ist sehr wichtig, dass sie die Quarantäne/Isolation und die Hygieneregeln genau einhalten - auch wenn Sie keine Beschwerden haben sollten. Beachten Sie die Schutzmaßnahmen, d. h. befolgen Sie Husten- und Nies-Regeln, eine gute Händehygiene und halten Sie Abstand zu anderen Personen.",
+                            "Derzeit werden folgende Quarantäneoptionen empfohlen:",
+                            "<ul><li>10 Tage Quarantäne ab der letzten Risikobegegnung ohne abschließenden Test</li><li>5 Tage mit PCR-Test bei Probenahme frühestens am 5. Tag. Die Entlassung aus der Quarantäne erfolgt erst nach Erhalt des negativen Testergebnisses. Bei Personen, die regelmäßig im Rahmen einer seriellen Teststrategie getestet werden (z.&nbsp;B. Schülerinnen und Schüler), kann der negative Nachweis auch mittels Antigen-Schnelltests erwogen werden. Die Testung mittels Antigen-Schnelltest sollte als Fremdtestung durch oder unter Aufsicht vor Ort von geschulten Personen (überwachter Antigen-Test zur Eigenanwendung) erfolgen.</li><li>7 Tage mit Antigen-Schnelltest bei Probenahme frühestens am 7. Tag. Die Entlassung aus der Quarantäne erfolgt erst nach Erhalt des negativen Testergebnisses. Die Testung sollte als Fremdtestung durch oder unter Aufsicht vor Ort von geschulten Personen (überwachter Antigen-Test zur Eigenanwendung) erfolgen.</li></ul>",
+                            "Weitere detaillierte Informationen finden Sie unter den RKI-Empfehlungen zum Kontaktpersonenmanagement: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Kontaktperson/Management.html' target='_blank' rel='nofollow'>Kontaktpersonen-Nachverfolgung (KP-N) bei SARS-CoV-2-Infektionen</a>",
+                            "Weitere hilfreiche Informationen zur häuslichen Quarantäne finden Sie hier: <a href='#voluntary_self_quarantine'>Warum wird die freiwillige Selbstquarantäne empfohlen?</a>",
+                            "Testmöglichkeiten finden: <a href='#where_can_i_get_tested'>Wo kann ich mich testen lassen?</a>",
+                            "Weitere Informationen zum Testablauf: <a href='#red_card_how_to_test'>Rote Karte? So geht es zum Corona Test</a>"
+                        ]
+                    },
+                    {
+                        "title": "Warum wird die freiwillige Selbstquarantäne empfohlen?",
+                        "anchor": "voluntary_self_quarantine",
+                        "active": true,
+                        "textblock": [
+                            "<b>Eigenverantwortung:</b><br/>Sollte die Corona-Warn-App Ihnen eine Begegnung mit erhöhtem Risiko in einer roten Kachel anzeigen, begeben Sie sich, wenn möglich, in eine freiwillige Selbstquarantäne, bis Sie ein negatives Testergebnis vorweisen können. Auch wenn diese Maßnahme nicht von einer zuständigen Behörde, in der Regel von Ihrem Gesundheitsamt, angeordnet wurde, wird Ihnen empfohlen, zu Hause zu bleiben und Begegnungen mit anderen Personen Ihres Haushalts zu minimieren und außerhalb Ihres Haushalts zu vermeiden. Dies gilt auch, wenn Sie geimpft oder genesen sind und keine Symptome zeigen. Die Quarantäne ist ein wichtiges Element in der Bekämpfung der Pandemie und soll die Verbreitung des Virus (falls Sie sich angesteckt haben) verhindern. Sie dient Ihrem Schutz und dem Schutz Aller vor Ansteckung mit dem neuartigen Coronavirus.",
+                            "<b>Die Gesundheitsämter sind ausgelastet:</b><br/>Derzeit bewegen sich die COVID-19-Infektionzahlen auf sehr hohem Niveau und eine hohe Zahl von positiven Testergebnissen wird über die CWA übermittelt. Bitte haben Sie daher Verständnis, dass das Gesundheitsamt nicht alle Kontaktpersonen betreuen kann. Halten Sie dem Gesundheitsamt den Rücken frei für Aufgaben, die es nicht abgeben kann. Kontaktieren Sie Ihr Gesundheitsamt nur, wenn Sie unbedingt Unterstützung brauchen, z.&nbsp;B. weil Ihr Arbeitgeber oder Ihre Ausbildungsstätte eine Bescheinigung verlangt.",
+                            "<b>Handlungsempfehlungen:</b>",
+                            "<ul><li>Lassen Sie sich testen. Bei einer Warnung über ein erhöhtes Risiko („rote Kachel“) haben Sie Anspruch auf einen kostenlosen Test. Das muss nicht notwendigerweise ein PCR-Test sein.</li><li>Empfohlen sind mindestens 7 Tage, besser 10 Tage, für die Zeitdauer der Selbstquarantäne ab dem Tag der letzten Risikobegegnung. Das Datum der letzten Begegnung mit erhöhtem Risiko finden Sie in der roten Kachel.</li><li>Verzichten Sie nach Möglichkeit auf Besuche und Aktivitäten, bei denen Sie mit anderen Menschen zusammenkommen. Lassen Sie sich Lebensmittel liefern oder bitten Sie jemanden, die Einkäufe zu erledigen; meiden Sie öffentliche Verkehrsmittel und verzichten Sie auf Flug- und Zugreisen.</li><li>Vermeiden Sie insbesondere Kontakte zu vulnerablen Personen und Gruppen, beispielsweise zu Älteren und Vorerkrankten.</li><li>Minimieren Sie auch Kontakte im eigenen Haushalt.</li><li>Wenn Ihr Arbeitgeber Ihnen die Möglichkeit gibt, arbeiten Sie von zu Hause aus.</li><li>Achten Sie mindestens für 14 Tage (ab Risikobegegnung) auf Krankheitssymptome und wenden Sie sich an Ihre Hausarztpraxis, falls Sie sich krank fühlen oder Symptome auftreten sollten.</li><li>Halten Sie die Hygieneregeln ein.</li></ul>",
+                            "Weitere hilfreiche Informationen zur häuslichen Quarantäne finden Sie hier: <a href='https://www.rki.de/covid-19-quarantaene' target='_blank'>Häusliche Quarantäne (vom Gesundheitsamt angeordnet): Flyer für Kontaktpersonen</a><br/>Lesen Sie den Artikel <a href='#quarantine_measures'>Fragen zu Quarantäne-Maßnahmen</a>, um weitere Details zu erfahren.<br/>Testmöglichkeiten finden: <a href='#where_can_i_get_tested'>Wo kann ich mich testen lassen?</a><br/>Weitere Informationen zum Testablauf: <a href='#red_card_how_to_test'>Rote Karte? So geht es zum Corona Test</a>"
+                        ]
+                    },
                     {
                         "title": "Was mache ich, wenn ich mehrere PCR-Test-QR-Codes habe?",
                         "anchor": "QRcodes",
