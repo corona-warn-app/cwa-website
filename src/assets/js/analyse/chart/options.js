@@ -137,7 +137,7 @@ export default {
 						<div class="apexcharts-tooltip-text">
 							<div class="apexcharts-tooltip-y-group">
 								<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
-								<span class="apexcharts-tooltip-text-y-value">${(value)? new Intl.NumberFormat(lang).format(value): "-" }</span>
+								<span class="apexcharts-tooltip-text-y-value">${(value)? new Intl.NumberFormat(lang).format(value.toFixed(0)): "-" }</span>
 							</div>
 						</div>
 					</div>
