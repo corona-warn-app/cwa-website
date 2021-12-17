@@ -97,7 +97,7 @@
                         "active": true,
                         "textblock": [
                             "Log4j is a widely used Java-based utility for logging error messages in applications. The Log4j library is widely used in a very broad range of enterprise software and services from many major vendors. A vulnerability related to the Log4j library was discovered recently and allows remote code execution.",
-                            "In response to this recent discovery and in order to minimize potential impacts the project teams of SAP and Deutsche Telekom have joined the worldwide effort and taken action. This includes amongst others a server update to 2.16.0 of the log4j library.",
+                            "In response to this recent discovery and in order to minimize potential impacts the project teams of SAP and Deutsche Telekom have joined the worldwide effort and taken action. This also includes the update to 2.16.0 of the affected log4j library leveraged by the server component. There is no need to take action by the user, both the Corona-Warn-App and the backend systems are safe.",
                             "There is a series of pull requests related to this issue. They can be found in the repository of our open source project: <a href='https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j</a>"
                         ]
                     },
