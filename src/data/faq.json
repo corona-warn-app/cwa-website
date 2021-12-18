@@ -592,6 +592,41 @@
                 ]
             },
             {
+                "title": "Certificate check for bookings",
+                "id": "val_service",
+                "accordion": [
+                    {
+                        "title": "Why do I get the message that there is no suitable certificate?",
+                        "anchor": "val_service_no_valid_dcc",
+                        "active": true,
+                        "textblock": [
+                            "The app checks whether your certificates meet the requirements of the booking system. Various parameters are checked. First, the type of your certificate must meet the requirements of the booking system. To do this, find out about the accepted certificates from your ticket provider, add the appropriate certificates in the app if you have not already done so, and make sure that your certificates are valid.",
+                            "<b>What should you be aware of?</b>",
+                            "You should make sure that the name shown in the certificate you want to use for verification corresponds exactly to the name you have specified in the booking system. If this is not the case, it is not possible to select the corresponding certificate in the Corona-Warn-App. For example, if both your first and middle names are shown in your certificate, you should also specify both names when booking the ticket. If you only enter one name, the Corona-Warn-App cannot recognize that it is the same person. If your certificate is no longer valid or contains spelling errors or a wrong date of birth, contact the issuer of the certificate to obtain a new certificate. If you have any other questions, please contact the ticket provider."
+                        ]
+                    },
+                    {
+                        "title": "Why is my certificate not verifiable or not recognized?",
+                        "anchor": "val_service_result",
+                        "active": true,
+                        "textblock": [
+                            "<b>Not recognized</b>",
+                            "If you receive the message 'Certificate not recognized' as the result of the validation check, then the certificate is technically valid but does not meet the requirements of the provider.",
+                            "This can be due to several reasons. Possible reasons are, for example:",
+                            "<ul>",
+                            "<li>An antigen test is older than 48 hours and has therefore lost its validity</li>",
+                            "<li>The certificate was not issued by a certified test center</li>",
+                            "</ul>",
+                            "<b>Certificate not verifiable</b>",
+                            "If you receive the message 'Certificate not verifiable' as the result of the validation check, this may be for technical reasons. In this case, your certificate may be technically outdated or there may be a lack of data within the certificate that is needed for verification.",
+                            "In this case you can contact the issuer of your certificate to obtain a new certificate.",
+                            "<b>Successful exam</b>",
+                            "The certificate has been successfully verified and meets the requirements of the provider."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Rapid Antigen Test",
                 "id": "rapid_antigen_test",
                 "accordion": [
