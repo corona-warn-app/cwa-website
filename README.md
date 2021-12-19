@@ -28,36 +28,46 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need the Node.js 14 Maintenance LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. ([cwa-website](https://github.com/corona-warn-app/cwa-website) is not ready for the Node.js 16 Active LTS version.) Downloads for Node.js 14.18.1 are available from the [Node.js - Previous Releases](https://nodejs.org/en/download/releases/) page.
-
-Optionally, you need an HTTP Server such as [http-server](https://github.com/http-party/http-server) to run and test the deployment of the website locally.
+You need the Node.js 14 Maintenance LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. ([cwa-website](https://github.com/corona-warn-app/cwa-website) is not ready for the Node.js 16 Active LTS version.) Downloads for Node.js 14.18.2 are available from the [Node.js - Previous Releases](https://nodejs.org/en/download/releases/) page.
 
 ### Getting started
 
-Clone the repository and ensure to have all requirements installed. To build the website, switch to the `cwa-website` base directory and execute the commands
+Clone the repository and ensure you have the requirements (from above) installed. To build and display the website in a web browser, switch to the `cwa-website` base directory and execute the commands:
 
 ```bash
 npm install
-npm run build
-```
-
-After a successful build, you'll have a new folder `public` in the repository's base directory. It contains the generated files for the complete website.
-
-To test the generated content, simply execute the command
-
-```bash
 npm start
 ```
 
-It will automatically use `public` as base directory and watch for file changes. Go to `localhost:8000` to view the website.
+- `npm install` installs the necessary packages to build, display and test the website on your local system. You only need to run this once or if the packages defined in [package.json](https://github.com/corona-warn-app/cwa-website/blob/master/package.json) are changed.
 
-If you want to build the website without optimizations, you can do so by running
+- The command `npm start` triggers the commands `npm run build` followed by `npm run start-server` described below and which can be used individually if desired.
+
+#### Build
+
+The command:
+```bash
+npm run build
+```
+builds the website and creates a new folder `public` in the repository's base directory. It contains the generated files for the complete website.
+
+#### Start-Server
+
+To view the generated content after using `npm run build`, execute the command:
 
 ```bash
-npm run start-fast
+npm run start-server
 ```
 
-This will disable image compression in exchange for faster build times.
+This command starts a local web server and a browser window is also automatically opened at `http://localhost:8000` so that the website can be viewed. The web server uses `public` as its base directory. It also watches for file changes and refreshes the browser contents if necessary.
+
+Depending on your network setup, you may also be able to view the website on a connected mobile device using `http://<ip_address_of_localhost>:8000`, for example `http://192.168.0.100:8000`.
+
+#### Start-Fast
+
+The command `npm run start-fast` is similar to the command `npm run start`: it builds the web then starts a web server, displaying the web site in a browser. The difference is that `start-fast` disables image compression which can shorten the build time.
+
+Check and compare the build log line `Finished 'build' after xx` showing the time taken to build if you are experiencing long build times to see if it is helpful in your own environment.
 
 ### Changing Things
 
