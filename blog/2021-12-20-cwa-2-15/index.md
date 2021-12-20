@@ -20,13 +20,13 @@ Let's assume a CWA user books concert tickets online. As part of the booking pro
 
 After giving their consent, they can scan the QR code that is displayed in the booking process using the Corona-Warn-App. To do so, they simply open the app and select the universal QR code scanner in the middle of the tab bar. After that, they can select the certificate they want to provide as proof. 
 
-If they book the tickets with their smartphone, they can take a screenshot of the QR code and then upload it to the CWA by opening the universal QR code scanner and select "Open file".  
+If they book the tickets with their smartphone, they can take a screenshot of the QR code and then upload it to the CWA by opening the universal QR code scanner and selecting "Open file".  
 
 
 <br></br>
 <center> 
 <img src="./homescreen.png" title="Universal QR Code scanner" style="align: center" width=250> <img src="./import-qr-code.png" title="Scan or import of the QR Code" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Left: universal QR code scanner, Right: Possibility to import a QR code from a photo (e.g. screenshot)</em></figcaption>
+<figcaption aria-hidden="true"><em>Left: Universal QR code scanner, Right: Possibility to import a QR code from a photo (e.g. screenshot)</em></figcaption>
 </center>
 <br></br>
 
@@ -70,7 +70,7 @@ The user can then see in the app whether the certificate was successfully verifi
 </center>
 <br></br>
 
-A certificate can be "not recognized" if it does not meet the provider's requirements. This may be the case, for example,  ifthe user has selected an antigen test as proof that is older than 48 hours. 
+A certificate can be "not recognized" if it does not meet the provider's requirements. This may be the case, for example,  if the user has selected an antigen test as proof that is older than 48 hours. 
 
 ### What should users be aware of?
 
@@ -78,13 +78,13 @@ Users should make sure that the name in the certificate they want to use for ver
 
 For example, if users have entered their first and middle names in their certificate, they should also enter both names when booking tickets. If they only enter one name, the CWA will not be able to recognize that it is the same person. 
 
-In addition, with version 2.15, the project team has adapted the guidelines under a "red warning" (warning about an encounter with increased risk). Detailed information on how users should act in case of a red tile can be found [in this blog](/de/blog/2021-12-15-cwa-red-tile-guidance/)
+In addition, with version 2.15, the project team has adapted the guidelines under a "red warning" (warning about an encounter with increased risk). Detailed information on how users should act in case of a red tile can be found [in this blog](/de/blog/2021-12-15-cwa-red-tile-guidance/).
 
 <br></br>
 <center> 
 <img src="./red-tile.png" title="guidelines red tile" style="align: center" width=250> 
 <img src="./guidelines(1).png" title="guidelines red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="guidelines red tile" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Handlungsempfehlungen bei roter Kachel in der Corona-Warn-App</em></figcaption>
+<figcaption aria-hidden="true"><em>Guidelines on red "Increased Risk" notification</em></figcaption>
 </center>
 <br></br>
 
