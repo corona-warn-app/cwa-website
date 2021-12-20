@@ -1,13 +1,13 @@
 ---
-page-title: "Was tun bei einer roten Kachel?"
-page-description: "Was tun bei einer roten Kachel?"
+page-title: "What should you do if you see a red tile?"
+page-description: "What should you do if you see a red tile?"
 page-name: cwa-red-tile-guidance
 page-name_de: cwa-red-tile-guidance
 author: CWA Team
 layout: blog
 ---
 
-In Germany, the number of Covid-19 infections is still very high. From December 1 to December 7 alone, an **estimated 1.1 million users received a “red tile”** in the Corona-Warn-App (CWA; [as of December 14, 2021]((https://www.coronawarn.app/en/science/))*. However, many of these users have already been vaccinated or have recovered from a Covid-19 infection. So, what should you do if you see a red tile? And how and when does it disappear again?
+In Germany, the number of Covid-19 infections is still very high. From December 1 to December 7 alone, an **estimated 1.1 million users received a “red tile”** in the Corona-Warn-App (CWA; [as of December 14, 2021](https://www.coronawarn.app/en/science/))*. However, many of these users have already been vaccinated or have recovered from a Covid-19 infection. So, what should you do if you see a red tile? And how and when does it disappear again?
 
 
 <!-- overview -->
