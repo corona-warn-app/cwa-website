@@ -78,7 +78,7 @@ Nutzer*innen sollten unbedingt darauf achten, dass der Name, der im Zertifikat, 
 Haben Nutzer*innen in ihrem Zertifikat beispielsweise ihren ersten und zweiten Vornamen hinterlegt, sollten sie beide Namen auch bei der Ticketbuchung angeben. Geben sie nur einen Namen an, kann die CWA nicht erkennen, dass es sich um ein und dieselbe Person handelt.
 
 
-Des Weiteren hat das Projektteam mit Version 2.15 die Handlungsempfehlungen unter einer „roten Warnung“ (Warnung über eine Begegnung mit erhöhtem Risiko) angepasst. Detaillierte Informationen dazu, wie Nutzer*innen sich im Falle einer roten Kachel verhalten sollten, finden Sie in diesem Blog: [link] 
+Des Weiteren hat das Projektteam mit Version 2.15 die Handlungsempfehlungen unter einer „roten Warnung“ (Warnung über eine Begegnung mit erhöhtem Risiko) angepasst. Detaillierte Informationen dazu, wie Nutzer*innen sich im Falle einer roten Kachel verhalten sollten, finden Sie [in diesem Blog](/de/blog/2021-12-15-cwa-red-tile-guidance/)
 
 <br></br>
 <center> 
