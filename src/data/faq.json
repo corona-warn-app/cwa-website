@@ -96,10 +96,9 @@
                         "anchor": "log4j",
                         "active": true,
                         "textblock": [
-                            "Statement regarding the Log4J vulnerability.",
                             "Log4j is a widely used Java-based utility for logging error messages in applications. The Log4j library is widely used in a very broad range of enterprise software and services from many major vendors. A vulnerability related to the Log4j library was discovered recently and allows remote code execution.",
-                            "In response to this recent discovery and in order to minimize potential impacts the project teams of SAP and TSI have joined the worldwide effort and taken action. This includes amongst others a server version update to 2.16.0",
-                            "There is a series of pull requests related to this issue. They can be found in the repository of our open source project: <a href='https://github.com/corona-warn-app/cwa-server/pull' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pull</a>"
+                            "In response to this recent discovery and in order to minimize potential impacts the project teams of SAP and Deutsche Telekom have joined the worldwide effort and taken action. This also includes the update to 2.16.0 of the affected log4j library leveraged by the server component. There is no need to take action by the user, both the Corona-Warn-App and the backend systems are safe.",
+                            "There is a series of pull requests related to this issue. They can be found in the repository of our open source project: <a href='https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j' target='_blank' rel='noopener'>https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j</a>"
                         ]
                     },
                     {
@@ -593,6 +592,41 @@
                 ]
             },
             {
+                "title": "Certificate check for bookings",
+                "id": "val_service",
+                "accordion": [
+                    {
+                        "title": "Why do I get the message that there is no suitable certificate?",
+                        "anchor": "val_service_no_valid_dcc",
+                        "active": true,
+                        "textblock": [
+                            "The app checks whether your certificates meet the requirements of the booking system. Various parameters are checked. First, the type of your certificate must meet the requirements of the booking system. To do this, find out about the accepted certificates from your ticket provider, add the appropriate certificates in the app if you have not already done so, and make sure that your certificates are valid.",
+                            "<b>What should you be aware of?</b>",
+                            "You should make sure that the name shown in the certificate you want to use for verification corresponds exactly to the name you have specified in the booking system. If this is not the case, it is not possible to select the corresponding certificate in the Corona-Warn-App. For example, if both your first and middle names are shown in your certificate, you should also specify both names when booking the ticket. If you only enter one name, the Corona-Warn-App cannot recognize that it is the same person. If your certificate is no longer valid or contains spelling errors or a wrong date of birth, contact the issuer of the certificate to obtain a new certificate. If you have any other questions, please contact the ticket provider."
+                        ]
+                    },
+                    {
+                        "title": "Why is my certificate not verifiable or not recognized?",
+                        "anchor": "val_service_result",
+                        "active": true,
+                        "textblock": [
+                            "<b>Not recognized</b>",
+                            "If you receive the message 'Certificate not recognized' as the result of the validation check, then the certificate is technically valid but does not meet the requirements of the provider.",
+                            "This can be due to several reasons. Possible reasons are, for example:",
+                            "<ul>",
+                            "<li>An antigen test is older than 48 hours and has therefore lost its validity</li>",
+                            "<li>The certificate was not issued by a certified test center</li>",
+                            "</ul>",
+                            "<b>Certificate not verifiable</b>",
+                            "If you receive the message 'Certificate not verifiable' as the result of the validation check, this may be for technical reasons. In this case, your certificate may be technically outdated or there may be a lack of data within the certificate that is needed for verification.",
+                            "In this case you can contact the issuer of your certificate to obtain a new certificate.",
+                            "<b>Successful exam</b>",
+                            "The certificate has been successfully verified and meets the requirements of the provider."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Rapid Antigen Test",
                 "id": "rapid_antigen_test",
                 "accordion": [
@@ -889,7 +923,7 @@
                             "<b>11. Can all QR codes for check-in be read immediately by the Corona-Warn-App and the luca app?</b>",
                             "The luca-QR codes generated as of 25 May 2021 can be read (scanned) by both the Corona-Warn-App and luca app and processed for the check-in process - unless the operators have explicitly contradicted this. In the case of an incompatible luca QR code, you can contact the organizer, who will issue a new compatible luca QR code if necessary. The support of private QR codes is still not possible.",
                             "<b>12. Is the data of the users of the Corona-Warn-App still secure?</b>",
-                            "Yes. Joint use only applies to the QR codes used for event registration and check-in. Corona-Warn-App and luca app continue to be different offerings with different objectives. For the CWA, it still applies that it does not collect any personal data.",
+                            "Yes. Joint use only applies to the QR codes used for event registration and check-in. Corona-Warn-App and luca app continue to be different offerings with different objectives. Scanning a luca-QR-Code does not cause any additional data to be collected.",
                             "The joint use of QR codes was carefully prepared. All security-related aspects were worked out and checked in close cooperation with both the BfDI and the BSI.",
                             "In addition, the Corona-Warn-App continues to operate in a very data-saving manner.",
                             "<b>13. What data is transferred from the CWA to luca?</b>",
@@ -2546,6 +2580,11 @@
                     "term": "iOS",
                     "anchor": "ios",
                     "description": "iOS is a mobile operating system developed by Apple for the iPhone, iPod touch and formerly also iPad. Along with <a href='#glossary_android'>Android</a>, it is one of the two operating systems that the Corona-Warn-App supports."
+                },{
+                    "term": "Isolation",
+                    "anchor": "isolation",
+                    "description": "Isolation is a government-ordered measure for persons who have been confirmed to have SARS-CoV-2 infection by a PCR-Test. Isolation can be gone through at home or, if the disease is severe, in a hospital. Release from isolation is based on specified <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Entlassmanagement.html?nn=13490888'> criteria (German only)</a>. At the time of release, the person is considered to no longer be infectious. See also <a href='#glossary_quarantine'>Quarantine</a>. "
+
                 }
             ],
             "M": [
@@ -2588,7 +2627,7 @@
                 {
                     "term": "Quarantine",
                     "anchor": "quarantine",
-                    "description": "A protective measure that helps contain the spread of infectious diseases through human isolation."
+                    "description": "A protective measure that helps contain the spread of infectious diseases through human isolation. See also <a href='#glossary_isolation'>Isolation</a>."
                 }
             ],
             "R": [
