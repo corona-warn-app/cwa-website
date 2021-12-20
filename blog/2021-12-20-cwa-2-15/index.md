@@ -78,8 +78,7 @@ Users should make sure that the name in the certificate they want to use for ver
 
 For example, if users have entered their first and middle names in their certificate, they should also enter both names when booking tickets. If they only enter one name, the CWA will not be able to recognize that it is the same person. 
 
-In addition, with version 2.15, the project team has adapted the guidelines under a "red warning" (warning about an encounter with increased risk). Detailed information on how users should act in case of a red tile can be found in this blog: [link]
-
+In addition, with version 2.15, the project team has adapted the guidelines under a "red warning" (warning about an encounter with increased risk). Detailed information on how users should act in case of a red tile can be found [in this blog](/de/blog/2021-12-15-cwa-red-tile-guidance/)
 
 <br></br>
 <center> 
