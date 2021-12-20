@@ -60,7 +60,7 @@ Nachdem sie ein Zertifikat ausgewählt hat und noch einmal ihr Einverständnis z
  
 Wichtig: die Zertifikate verbleiben auf dem jeweils eigenen Smartphone der Nutzer*innen und werden zu keinem Zeitpunkt im Validierungssystem gespeichert. 
 
-Anschließend kann die Nutzerin in der App sehen, ob das Zertifikat erfolgreich überprüft, oder nicht anerkannt wurde 
+Anschließend kann die Nutzerin in der App sehen, ob das Zertifikat erfolgreich überprüft, oder nicht anerkannt wurde. 
 
 
 <br></br>
@@ -78,7 +78,7 @@ Nutzer*innen sollten unbedingt darauf achten, dass der Name, der im Zertifikat, 
 Haben Nutzer*innen in ihrem Zertifikat beispielsweise ihren ersten und zweiten Vornamen hinterlegt, sollten sie beide Namen auch bei der Ticketbuchung angeben. Geben sie nur einen Namen an, kann die CWA nicht erkennen, dass es sich um ein und dieselbe Person handelt.
 
 
-Des Weiteren hat das Projektteam mit Version 2.15 die Handlungsempfehlungen unter einer „roten Warnung“ (Warnung über eine Begegnung mit erhöhtem Risiko) angepasst. Detaillierte Informationen dazu, wie Nutzer*innen sich im Falle einer roten Kachel verhalten sollten, finden Sie [in diesem Blog](/de/blog/2021-12-15-cwa-red-tile-guidance/)
+Des Weiteren hat das Projektteam mit Version 2.15 die Handlungsempfehlungen unter einer „roten Warnung“ (Warnung über eine Begegnung mit erhöhtem Risiko) angepasst. Detaillierte Informationen dazu, wie Nutzer*innen sich im Falle einer roten Kachel verhalten sollten, finden Sie [in diesem Blog](/de/blog/2021-12-15-cwa-red-tile-guidance/).
 
 <br></br>
 <center> 
@@ -88,4 +88,4 @@ Des Weiteren hat das Projektteam mit Version 2.15 die Handlungsempfehlungen unte
 </center>
 <br></br>
 
-Version 2.15 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer*innen ausgerollt. iOS-Nutzer*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
+Version 2.15 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
