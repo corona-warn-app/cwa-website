@@ -14,8 +14,6 @@ In Germany, the number of Covid-19 infections is still very high. From December 
 
 A “red warning” does not necessarily mean that you have been infected with Covid-19. The Corona-Warn-App simply warns you of an increased risk of infection and **does not differentiate between vaccinated, unvaccinated, and recovered users**. 
 
-The reason: If the increased risk-status indicator appears on your smartphone, you’ve had at least one encounter with a person who later tested positive for Covid-19 in the past 14 days. Therefore, regardless of whether you are vaccinated, unvaccinated, or have recovered from an infection, we recommend that you behave as follows in case of a “red warning”:
-
 
 <br></br>
 <center> 
@@ -23,7 +21,7 @@ The reason: If the increased risk-status indicator appears on your smartphone, y
 </center>
 <br></br>
 
-Denn: Erscheint die Statusanzeige „Erhöhtes Risiko“ auf Ihrem Smartphone, hatten Sie in den vergangenen 14 Tagen mindestens eine Begegnung mit einer später positiv getesteten Person. Wir empfehlen Ihnen deshalb – egal ob Sie geimpft, ungeimpft oder genesen sind – sich im Falle einer „roten Warnung“ folgendermaßen zu verhalten:
+The reason: If the increased risk-status indicator appears on your smartphone, you’ve had at least one encounter with a person who later tested positive for Covid-19 in the past 14 days. Therefore, regardless of whether you are vaccinated, unvaccinated, or have recovered from an infection, we recommend that you behave as follows in case of a “red warning”:
 
 **<u>1) Go home</u>**
 
