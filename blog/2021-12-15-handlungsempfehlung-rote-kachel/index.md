@@ -1,20 +1,18 @@
 ---
-page-title: "Was tun bei einer roten Kachel?"
-page-description: "Was tun bei einer roten Kachel?"
+page-title: "What should you do if you see a red tile?"
+page-description: "What should you do if you see a red tile?"
 page-name: cwa-red-tile-guidance
 page-name_de: cwa-red-tile-guidance
 author: CWA Team
 layout: blog
 ---
 
-In Germany, the number of Covid-19 infections is still very high. From December 1 to December 7 alone, an **estimated 1.1 million users received a “red tile”** in the Corona-Warn-App (CWA; [as of December 14, 2021]((https://www.coronawarn.app/en/science/))*. However, many of these users have already been vaccinated or have recovered from a Covid-19 infection. So, what should you do if you see a red tile? And how and when does it disappear again?
+In Germany, the number of Covid-19 infections is still very high. From December 1 to December 7 alone, an **estimated 1.1 million users received a “red tile”** in the Corona-Warn-App (CWA; [as of December 14, 2021](https://www.coronawarn.app/en/science/))*. However, many of these users have already been vaccinated or have recovered from a Covid-19 infection. So, what should you do if you see a red tile? And how and when does it disappear again?
 
 
 <!-- overview -->
 
 A “red warning” does not necessarily mean that you have been infected with Covid-19. The Corona-Warn-App simply warns you of an increased risk of infection and **does not differentiate between vaccinated, unvaccinated, and recovered users**. 
-
-The reason: If the increased risk-status indicator appears on your smartphone, you’ve had at least one encounter with a person who later tested positive for Covid-19 in the past 14 days. Therefore, regardless of whether you are vaccinated, unvaccinated, or have recovered from an infection, we recommend that you behave as follows in case of a “red warning”:
 
 
 <br></br>
@@ -23,7 +21,7 @@ The reason: If the increased risk-status indicator appears on your smartphone, y
 </center>
 <br></br>
 
-Denn: Erscheint die Statusanzeige „Erhöhtes Risiko“ auf Ihrem Smartphone, hatten Sie in den vergangenen 14 Tagen mindestens eine Begegnung mit einer später positiv getesteten Person. Wir empfehlen Ihnen deshalb – egal ob Sie geimpft, ungeimpft oder genesen sind – sich im Falle einer „roten Warnung“ folgendermaßen zu verhalten:
+The reason: If the increased risk-status indicator appears on your smartphone, you’ve had at least one encounter with a person who later tested positive for Covid-19 in the past 14 days. Therefore, regardless of whether you are vaccinated, unvaccinated, or have recovered from an infection, we recommend that you behave as follows in case of a “red warning”:
 
 **<u>1) Go home</u>**
 
