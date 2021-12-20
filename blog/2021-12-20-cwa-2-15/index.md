@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App simplifies certificate checks when booking tickets"
 page-description: "Corona-Warn-App simplifies certificate checks when booking tickets"
 page-name: cwa-2-15
 page-name_de: cwa-2-15
-author: Hanna Heine
+author: Hanna Heine, 8 am
 layout: blog
 ---
 
