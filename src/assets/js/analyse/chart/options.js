@@ -131,13 +131,15 @@ export default {
 
 			seriesArray = seriesArray.map((e,i) => {
 				const value = e.data[dataPointIndex]
-				return `
+				const header = i === 0 && seriesArray.length === 6 ? `<b>${translate("legendLabelMean")}</b>` : "";
+				const separator = i === 3 ? `<hr/><b>${translate("legendLabelDaily")}</b>` : "";
+				return header+separator+`
 					<div class="apexcharts-tooltip-series-group">
 						<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>
 						<div class="apexcharts-tooltip-text">
 							<div class="apexcharts-tooltip-y-group">
 								<span class="apexcharts-tooltip-text-y-label">${e.name}:</span>
-								<span class="apexcharts-tooltip-text-y-value">${(value)? new Intl.NumberFormat(lang).format(value): "-" }</span>
+								<span class="apexcharts-tooltip-text-y-value">${(value)? new Intl.NumberFormat(lang).format(value.toFixed(0)): "-" }</span>
 							</div>
 						</div>
 					</div>
