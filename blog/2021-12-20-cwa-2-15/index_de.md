@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App vereinfacht die Zertifikatsprüfungen bei der Ticke
 page-description: "Corona-Warn-App vereinfacht die Zertifikatsprüfungen bei der Ticketbuchung"
 page-name: cwa-2-15
 page-name_de: cwa-2-15
-author: Hanna Heine
+author: Hanna Heine, 08:00 Uhr
 layout: blog
 ---
 
