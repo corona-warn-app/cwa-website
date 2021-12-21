@@ -50,7 +50,11 @@ For example, if a provider requests either a vaccination certificate, a recovery
 </center>
 <br></br>
 
-After the user has selected a certificate and once again given their consent, the certificate is checked. For this purpose, it is temporarily transmitted in encrypted form to the validation service. The validation service then compares the organizer's rules with the certificate and then informs the booking system whether the certificate complies with the rules or not. 
+After the user has selected a certificate and once again given their consent, the certificate is checked. For this purpose, it is temporarily transmitted in encrypted form to the validation service. The validation service then compares the organizer's rules with the certificate. After that it only informs the booking system **whether the certificate complies with the rules or not.** 
+
+If an event organizer set the access requirement "3G" (vaccinated, recovered or tested negative) for example, he or she does not know if the guest's certificate is a vaccination, recovery or test certificate, but **only that this guest has a valid certificate at the requisted time.** 
+
+**The certificates are not transmitted to the booking system and are not stored in the validation service.**
 
 <br></br>
 <center> 
@@ -59,7 +63,7 @@ After the user has selected a certificate and once again given their consent, th
 <br></br>
 
  
-Please notice: the certificates remain on the user's own smartphone and are not stored in the validation system at any time. 
+Please notice: the certificates remain on the user's own smartphone and are not stored in the validation service at any time. 
 
 The user can then see in the app whether the certificate was successfully verified or whether it was not recognized.
 
