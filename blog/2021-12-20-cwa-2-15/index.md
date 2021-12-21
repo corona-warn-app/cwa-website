@@ -9,7 +9,7 @@ layout: blog
 
 *Updated on December 21, 2021 at 10 am*
 
-The project team of Robert Koch-Institut, Deutsche Telekom, and SAP have released version 2.15 of the Corona-Warn-App. The update enables users to provide their proof of vaccination or recovery or a negative test result while booking tickets. With that feature, the new version also makes it easier for event organizers, companies, and vendors to check Covid certificates and thus contributes to reliable access management in accordance with legal requirements.
+The project team of Robert Koch Institute, Deutsche Telekom, and SAP have released version 2.15 of the Corona-Warn-App. The update enables users to provide their proof of vaccination or recovery or a negative test result while booking tickets. With that feature, the new version also makes it easier for event organizers, companies, and vendors to check Covid certificates and thus contributes to reliable access management in accordance with legal requirements.
 
 <!-- overview -->
 

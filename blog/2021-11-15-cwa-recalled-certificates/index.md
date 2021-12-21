@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-To help inform users about **misuse and counterfeiting of vaccination certificates**, the project team of the Robert Koch-Institut, Deutsche Telekom, and SAP have released an enhancement to the Corona-Warn-App version 2.13. The hotfix allows digital vaccination certificates from certain pharmacies to be recalled and marked as invalid in the app.
+To help inform users about **misuse and counterfeiting of vaccination certificates**, the project team of the Robert Koch Institute, Deutsche Telekom, and SAP have released an enhancement to the Corona-Warn-App version 2.13. The hotfix allows digital vaccination certificates from certain pharmacies to be recalled and marked as invalid in the app.
 
 
 <!-- overview -->
