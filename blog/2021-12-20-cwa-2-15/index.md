@@ -59,7 +59,7 @@ After the user has selected a certificate and once again given their consent, th
 <br></br>
 
  
-Please notice: the certificates remain on the user's own smartphone and are not stored in the validation system at any time. 
+Please notice: the certificates remain on the user's own smartphone and are not stored in the validation service at any time. 
 
 The user can then see in the app whether the certificate was successfully verified or whether it was not recognized.
 
