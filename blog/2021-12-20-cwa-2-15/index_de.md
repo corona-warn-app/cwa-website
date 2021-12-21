@@ -53,7 +53,7 @@ Verlangt ein Anbieter beispielsweise entweder ein Impfzertifikat, ein Genesenenz
 
 Nachdem sie ein Zertifikat ausgewählt hat und noch einmal ihr Einverständnis zur Übermittlung gegeben hat, wird das Zertifikat überprüft. Dafür wird es **vorübergehend, verschlüsselt an den Validierungsservice übermittelt**. Dieser gleicht dann die Regeln der/des Veranstalter\*in mit dem Zertifikat ab und übermittelt daraufhin dem Buchungssystem nur, ob das Zertifikat den Regeln entspricht oder nicht. 
 
-**Zum Beispiel** erfährt ein/eine Veranstalter\*in bei der Zugangsvoraussetzung "3G" (geimpft, genesen oder negativ getestet) nicht, ob es sich bei dem Nachweis des Gastes um ein Impf-, Genesenen-, oder Testzertifikat handelt, sondern nur, dass dieser Gast zum angefragten Zeitpunkt ein gültiges Zertifikat hat. 
+**Zum Beispiel erfährt ein/eine Veranstalter\*in** bei der Zugangsvoraussetzung "3G" (geimpft, genesen oder negativ getestet) **nicht, ob es sich bei dem Nachweis des Gastes um ein Impf-, Genesenen-, oder Testzertifikat handelt,** sondern nur, dass dieser Gast zum angefragten Zeitpunkt ein gültiges Zertifikat hat. 
 
 **Die Zertifikate werden nicht an das Buchungssystem übertragen und nicht im Validierungsservice gespeichert.**
 
