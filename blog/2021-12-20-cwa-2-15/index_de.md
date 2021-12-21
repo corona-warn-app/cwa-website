@@ -7,6 +7,8 @@ author: Hanna Heine, 08:00 Uhr
 layout: blog
 ---
 
+*Aktualisiert am 21.12.2021 um 10:00 Uhr*
+
 Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App veröffentlicht**. Mit dem Update können Nutzer\*innen schon während der Buchung von Tickets den Nachweis erbringen, dass sie geimpft, genesen oder negativ getestet sind. Die neue Version erleichtert damit auch Veranstalter\*innen, Unternehmen und Anbieter\*innen die Überprüfung von Covid-Zertifikaten und trägt so zu einem verlässlichen Zutrittsmanagement gemäß den gesetzlichen Vorgaben bei.
 
 
