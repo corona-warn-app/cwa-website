@@ -35,7 +35,7 @@ Once created, the profile remains and can be shown again whenever it’s needed.
 
 ### Users can create error reports in the Corona-Warn-App
 
-Furthermore, users can now create an **error analysis** in the Corona-Warn-App if they notice an error and technical support requests a detailed report. This way, the individual technical steps and events during your usage of the app can be recorded in detail and sent to the technical support of the Robert Koch-Institut (RKI). With this function, the analysis of possible errors can be facilitated, and users can quickly assist in troubleshooting. 
+Furthermore, users can now create an **error analysis** in the Corona-Warn-App if they notice an error and technical support requests a detailed report. This way, the individual technical steps and events during your usage of the app can be recorded in detail and sent to the technical support of the Robert Koch Institute (RKI). With this function, the analysis of possible errors can be facilitated, and users can quickly assist in troubleshooting. 
 
 **Reporting an error**
 

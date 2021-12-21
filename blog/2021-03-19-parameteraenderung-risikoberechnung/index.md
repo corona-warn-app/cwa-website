@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-The project team continuously tests the Corona-Warn-App's performance to configure it optimally - especially in respect to the Corona situation in Germany with increasing case numbers and higher infectivity due to the mutated virus variants. In recent weeks, the Fraunhofer Institute for Integrated Circuits (IIS) and the Robert Koch-Institut **tested and evaluated the app's measurement accuracy** (using version 2 of the Google-Apple exposure notification framework).
+The project team continuously tests the Corona-Warn-App's performance to configure it optimally - especially in respect to the Corona situation in Germany with increasing case numbers and higher infectivity due to the mutated virus variants. In recent weeks, the Fraunhofer Institute for Integrated Circuits (IIS) and the Robert Koch Institute **tested and evaluated the app's measurement accuracy** (using version 2 of the Google-Apple exposure notification framework).
 
 <!-- overview -->
  
@@ -28,4 +28,4 @@ Thus, **short contact times** with individuals who later test positive will no l
 
 In addition, the experts adjusted the configuration of the optimization procedure: the correct detection of actually exposed persons (true positives) is given a higher priority than the correct exclusion of actually non-exposed persons (true negatives). This will moderately increase both red warnings (high-risk encounters) and green warnings (low-risk encounters).
 
-The project participants (Robert Koch-Institut, Deutsche Telekom, SAP, Fraunhofer Institute for Integrated Circuits (IIS)) are continuously working on improving the measurements and the resulting configuration parameters.
+The project participants (Robert Koch Institute, Deutsche Telekom, SAP, Fraunhofer Institute for Integrated Circuits (IIS)) are continuously working on improving the measurements and the resulting configuration parameters.

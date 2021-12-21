@@ -35,5 +35,5 @@ Users can scan the QR code after the first vaccination to integrate the vaccinat
 
 **Please note**: In the Corona-Warn-App, users can only **scan and add vaccination certificates from one person**. It is not possible to add their own and, for example, their partner's vaccination certificate. 
 
-All information and data remain on the user's smartphone. Transfer to third parties only takes place when users show the vaccination certificate in the form of the QR code for verification. Information from vaccination certificates also doesn’t appear in the error report that users have been able to create and send to the Robert Koch-Institut since version 2.2 of the app. 
+All information and data remain on the user's smartphone. Transfer to third parties only takes place when users show the vaccination certificate in the form of the QR code for verification. Information from vaccination certificates also doesn’t appear in the error report that users have been able to create and send to the Robert Koch Institute since version 2.2 of the app. 
 

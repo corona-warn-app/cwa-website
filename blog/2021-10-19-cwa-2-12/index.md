@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-The project team of the Robert Koch-Institut, Deutsche Telekom and SAP have released version 2.12 of the Corona-Warn-App. Users now have **direct access to the universal QR code scanner**. In addition, the **7-day hospitalization incidence** and the **number of COVID-19 patients in intensive care units** are now available in the statistics. 
+The project team of the Robert Koch Institute, Deutsche Telekom and SAP have released version 2.12 of the Corona-Warn-App. Users now have **direct access to the universal QR code scanner**. In addition, the **7-day hospitalization incidence** and the **number of COVID-19 patients in intensive care units** are now available in the statistics. 
 
 The update will be available to users over the next 48 hours.
 
