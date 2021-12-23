@@ -93,3 +93,10 @@ Des Weiteren hat das Projektteam mit Version 2.15 die **Handlungsempfehlungen un
 <br></br>
 
 Version 2.15 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
+
+<hr/>
+Siehe auch folgende FAQ-Artikel:
+
+- [Fragen und Antworten zur Zertifikatsprüfung bei Ticketbuchungen](/de/faq/#val_service_basics)
+- [Warum erhalte ich die Meldung, dass kein geeignetes Zertifikat vorhanden ist?](/de/faq/#val_service_no_valid_dcc)
+- [Warum ist mein Zertifikat nicht prüfbar oder wird nicht anerkannt?](/de/faq/#val_service_result)
