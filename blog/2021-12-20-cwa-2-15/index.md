@@ -95,3 +95,10 @@ In addition, with version 2.15, the project team has adapted the guidelines unde
 <br></br>
 
 Version 2.15 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
+
+<hr/>
+See also the following FAQ-articles:
+
+- [Questions and answers about certificate verification during ticketing.](/en/faq/#val_service_basics)
+- [Why do I get the message that there is no suitable certificate?](/en/faq/#val_service_no_valid_dcc)
+- [Why is my certificate not verifiable or not recognized?](/en/faq/#val_service_result)
