@@ -320,7 +320,7 @@ function server(done) {
     { // mirror server headers to dev env
       middleware: function (req, res, next) {
 
-        let CSP = "default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        let CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
         if(req.url.indexOf("/science") != -1){
           CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
         }else if(req.url.indexOf("/analysis") != -1){
