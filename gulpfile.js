@@ -370,8 +370,12 @@ function watch(done) {
   gulp
     .watch('science/**/*')
     .on('all', gulp.series(buildScienceBlogFiles, pages));  
+    //
+    // exclude output of buildBlogFiles and buildScienceBlogFiles from watching of pages
   gulp
-    .watch('src/pages/**/*.html')
+    .watch(['src/pages/**/*.html',
+      '!' + PATHS.blogOutputs, '!' + PATHS.blogOutputs + '*',
+      '!' + PATHS.blogScienceOutputs, '!' + PATHS.blogScienceOutputs + '*'])
     .on('all', gulp.series(pages, reload));
   gulp
     .watch('src/{layouts,partials}/**/*.html')
