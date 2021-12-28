@@ -7,7 +7,7 @@ author: Wolfgang Scheida
 layout: blog
 ---
 
-Anyone who wants to find out more about the Corona-Warn-App and get quick details can now do so on Twitter. The project partners Robert Koch-Institut, SAP and Deutsche Telekom have set up a channel for the CWA.
+Anyone who wants to find out more about the Corona-Warn-App and get quick details can now do so on Twitter. The project partners Robert Koch Institute, SAP and Deutsche Telekom have set up a channel for the CWA.
 
 
 <!-- overview -->

@@ -92,6 +92,16 @@
                 "id": "news",
                 "accordion": [
                     {
+                        "title": "Statement regarding the Log4j vulnerability",
+                        "anchor": "log4j",
+                        "active": true,
+                        "textblock": [
+                            "In response to this recent discovery and in order to minimize potential impacts the project teams of SAP and Deutsche Telekom have joined the worldwide effort and taken action. This includes updating to the latest recommended version of the affected library. There is no need to take action by the user, both the Corona-Warn-App and the backend systems are safe.",
+                            "Log4j is a widely used Java-based utility for logging error messages in applications. The Log4j library is widely used in a very broad range of enterprise software and services from many major vendors. A vulnerability related to the Log4j library was discovered recently and allows remote code execution.",
+                            "There is a series of pull requests related to this issue. They can be found in the repository of our open source project: <a href='https://github.com/corona-warn-app/cwa-server/pulls?q=is%3Apr+log4j+in%3Atitle+merged%3A%3E2021-12-01' target='_blank' rel='noopener'>GitHub</a>."
+                        ]
+                    },
+                    {
                         "title": "Data donation and event-based scientific survey",
                         "anchor": "data_donation_and_EDUS",
                         "active": true,
@@ -162,7 +172,7 @@
                             "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date. While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may deviate from this. ",
                             "In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson.",
                             "<b>Check of the validity</b>",
-                            "The check app, in Germany the CovPassCheck app, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. ",
+                            "The check app, in Germany the CovPassCheck-App, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. ",
                             "If, for example, you have your certificate issued only half a year after the vaccination, then the certificate will technically be valid for another year, but half a year of vaccination has already passed. This means that when checking for vaccination protection, it is recognized that after another six months the vaccination is no longer valid. After that, the check app will reject the certificate as 'invalid', although it is still technically valid, but the effective vaccination validity has expired."
                         ]
                     },
@@ -233,8 +243,8 @@
                         "anchor": "eu_dcc_check",
                         "active": true,
                         "textblock": [
-                            "In Germany, third parties can only reliably check whether it is a valid vaccination certificate, recovery certificate, or test certificate using the CovPassCheck app. Additionally, an identity check with photo ID should take place. Please note that other countries may use different apps for certificate verification.",
-                            "A pure visual check of the certificates is not sufficient, as manipulated screenshots, apps or system settings (e.g. changed date) could be used, for example. The CovPassCheck-App is a secure solution for e.g. traders and public authorities to reliably check EU digital COVID certificates. More information and download links to the CovPassCheck app can be found here: <a href='https://www.digitaler-impfnachweis-app.de/en/covpasscheck-app/' target='_blank' rel='noopener noreferrer'>Check EU COVID certificates directly via app</a>. Please note that third parties in other countries may use other apps to verify certificates.",
+                            "In Germany, third parties can only reliably check whether it is a valid vaccination certificate, recovery certificate, or test certificate using the CovPassCheck-App. Additionally, an identity check with photo ID should take place. Please note that other countries may use different apps for certificate verification.",
+                            "A pure visual check of the certificates is not sufficient, as manipulated screenshots, apps or system settings (e.g. changed date) could be used, for example. The CovPassCheck-App is a secure solution for e.g. traders and public authorities to reliably check EU digital COVID certificates. More information and download links to the CovPassCheck-App can be found here: <a href='https://www.digitaler-impfnachweis-app.de/en/covpasscheck-app/' target='_blank' rel='noopener noreferrer'>Check EU COVID certificates directly via app</a>. Please note that third parties in other countries may use other apps to verify certificates.",
                             "You can check certificates for validity on your own directly in the Corona-Warn-App without the need of using the CovPassCheck-App. For more information, see the blog <a href='../blog/2021-07-28-cwa-version-2-6/' target='_blank' rel='noopener noreferrer'>Users can add local 7-day incidences and check certificates for validity before traveling</a> and the FAQ article <a href='#cert_eu_travel' target='_blank' rel='noopener noreferrer'>Is my certificate valid in the country I am traveling to?</a>"
                         ]
                     },
@@ -344,7 +354,7 @@
                         "active": true,
                         "textblock": [
                             "<ul>",
-                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></li>",
+                            "<li><a href='#vac_cert_invalid_21_1' target='_self'>Why do I get the message that my certificate needs to be reissued?</a></li><li><a href='#vac_booster_basics' target='_self'>What is a booster vaccination and how does it appear in the CWA?</a></li><li><a href='#vac_cert_booster_info' target='_self'>How do I become aware of booster vaccinations in the context of Corona?</a></li><li><a href='#vac_cert_booster_cwa' target='_self'>How do I manage booster vaccination certificates in my CWA?</a></li><li><a href='#vac_booster_notification' target='_self'>Why do I receive notification of a vaccination recommendation from the Standing Committee on Vaccination (STIKO)?</a></li><li><a href='#vac_booster_jj' target='_self'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></li>",
                             "</ul>"
                         ]
                     },
@@ -418,6 +428,15 @@
                         ]
                     },
                     {
+                        "title": "What is a booster vaccination and how does it appear in the CWA?",
+                        "anchor": "vac_booster_basics",
+                        "active": true,
+                        "textblock": [
+                            "<div class='container'><div class='row'><div class='col-sm'><a href='/assets/img/faq/vac_booster_basics_en.png' target='_blank'><img src='/assets/img/faq/vac_booster_basics_en.png' alt='Certificate List' width='300'></a></div><div class='col-sm'><p>A booster vaccination (revaccination) is a vaccination process designed to refresh waning vaccination protection after basic immunization. In most cases, but not always, it takes place according to the recommendations of the authorities after a period of about 5-6 months after the last vaccination procedure. (Example: completion of the vaccination series for basic immunization on 08 Jul 2021, possible booster vaccination on: 08 Jan 2022)</p><p>Each booster vaccination can be attested by a digital COVID certificate, which you can scan into the Corona-Warn-App. Important: please ensure that the personal data (surname, first name and date of birth) are shown to match the existing vaccination certificates. Only then will it be possible to assign the new certificate to the booster vaccination of the basic immunization. (Example: same academic title or indication of the full double name).</p><p>Booster shots provide immediate vaccine protection.</p><p>Based on the previous vaccination series, the booster certificate will be documented '3 of 3' (in case of previous basic immunization with 2 doses) or with '2 of 2' (as vaccination optimization according to the Janssen agent from Johnson & Johnson). In the latter case, however, the CovPassCheck-App, Corona-Warn-App and CovPass-App cannot display this correctly in all cases for technical reasons.</p><p>The '1 of 1' label for a booster vaccination indicates that it is the first and only vaccination after a COVID-19 disease recovery. Vaccinations with Johnson & Johnson are an exception.</p><p> See also: <a href='#vac_booster_jj' target='blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></p></div></div></div>",
+                            "<p><a href='#vac_cert_booster' target='_self' rel='noopener noreferrer'>To the index of the booster vaccination</a></p>"
+                        ]
+                    },
+                    {
                         "title": "How do I become aware of booster vaccinations in the context of Corona?",
                         "anchor": "vac_cert_booster_info",
                         "active": true,
@@ -456,11 +475,21 @@
                         "anchor": "vac_booster_jj",
                         "active": true,
                         "textblock": [
-                            "This may occur if a basic immunization was given with the Johnson & Johnson (J&J) vaccine. Since only one vaccination is required for a basic immunization with the J&J vaccine, the entry '2 of 2' must be made in the vaccination certificate for the booster vaccination under 'Number in a series of vaccinations'.",
-                            "For basic immunization with vaccines other than J&J, such as BioNTech, Moderna, or AstraZeneca, the second dose is also entered '2 of 2' under 'Number in a series of vaccinations'. Such vaccinations usually require a waiting period of 14 days until full vaccination protection after the 2nd dose of the basic immunization.",
-                            "As a result, checking apps, such as the CovPassCheck app, cannot distinguish in this particular case whether it is a booster vaccination for a J&J basic immunization or the second dose of the basic immunization. Therefore, if a vaccination with the J&J vaccine was previously performed and '2 of 2' was noted in the certificate of the booster vaccination, the vaccination certificate for the booster vaccination will be shown as invalid for 14 days.",
-                            "On the other hand, in case of previous basic immunization by two doses, the booster vaccination is declared as the 3rd of 3 vaccinations. By noting '3 of 3', the app correctly recognizes the booster vaccination as such and the 14-day waiting period for full vaccination protection is not displayed. Once a second booster vaccination has been administered with J&J after the basic immunization, the display of the fourteen day waiting period will be omitted as '3 of 3' will be entered as the number of the vaccination for this certificate.",
-                            "You can continue to show your basic immunization certificate as proof for these 14 days. This will retain its validity, provided that the technical or effective validity has not expired."
+                            "There are three cases where there may be a report of a fourteen-day waiting period after a booster vaccination:",
+                            "Case 1: Basic immunization with Johnson & Johnson (J&J) vaccine.",
+                            "Case 2: After recovery from COVID-19, a second booster vaccination is given.",
+                            "Case 3: After recovery from COVID-19, an initial vaccination with J&J is given.",
+                            "The reason is the limitation of the current EU guidelines for the creation of the different vaccination certificates/sequences, which is mapped accordingly by the apps. See: <a href='https://ec.europa.eu/health/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf'>https://ec.europa.eu/health/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf</a> (in English)",
+                            "Reason:",
+                            "Regarding case 1 and case 2:",
+                            "In the case of a basic immunization with vaccines other than J&J, such as BioNTech, Moderna, or AstraZeneca, the entry \"2 of 2\" for the second dose is made in the certificate under \"Number of vaccination\". However, regardless of the vaccine used, a waiting period of 14 days is always required after the last vaccination of the basic immunization, since full vaccine protection is only given after the formation of a sufficient amount of antibodies.",
+                            "As a result, checking apps, such as the CovPassCheck-App, cannot distinguish whether the second vaccination procedure is a booster vaccination for the J&J basic immunization, or the second dose of the basic immunization. Therefore, the vaccination certificate for the booster vaccination will be displayed as invalid for 14 days.",
+                            "On the other hand, in case of a previous basic immunization by two doses, the booster vaccination is declared as the third of three vaccinations. By entering \"3 of 3\", the app correctly recognizes the booster vaccination as such and the display of the 14-day waiting period until full vaccination protection is omitted. As soon as a second booster vaccination is given after the basic immunization by the J&J vaccine, the display of the fourteen-day waiting period is omitted, since \"3 of 3\" is entered as the number of the vaccination for this certificate.",
+                            "Regarding case 3:",
+                            "The first vaccination after recovery from COVID-19 is recorded as \"1 of 1\" in the certificate. If this vaccination for recovered people is done with the J&J vaccine, it cannot be distinguished from the basic vaccination with J&J, because in both cases \"1 of 1\" is noted in the certificate.",
+                            "A vaccination for recovered people with the BioNTech, Moderna or AstraZeneca vaccines, which actually require two vaccinations in the basic immunization, is marked \"1 of 1\" and can therefore be clearly distinguished from the basic immunization by the deviation of the numbering from the vaccination schedule.",
+                            "Due to EU directives, the documentation of the vaccination series under \"Number of vaccination\" in the certificates must be complete and correct. For example, it is not permissible to enter the number \"3 of 3\" for a booster vaccination without two vaccination doses having been administered beforehand.",
+                            "You can continue to show your previous vaccination certificate as proof for the 14 days during which the certificate for the booster vaccination is shown as invalid. This will retain its validity, provided that the technical or effective validity has not expired."
                         ]
                     },
                     {
@@ -497,11 +526,13 @@
                         ]
                     },
                     {
-                        "title": "How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?",
+                        "title": "How to behave if I am recovered, partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?",
                         "anchor": "vac_cert_red_warning",
                         "active": true,
                         "textblock": [
-                            "If a fully vaccinated person is shown an encounter with increased risk (red tile), quarantine is not necessary at first if there are no symptoms. If symptoms occur in the further course, you should get tested immediately and go into immediate quarantine. If you want to get tested, please confer with your doctor for the futher procedure. In the case of unfinished basic immunization as well as in the first 14 days after the last dose, the vaccination protection is significantly lower, so that the same recommendations apply here as for unvaccinated."
+                            "If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. This applies even if you have been vaccinated or are recovered and have no symptoms. In case of an increased risk warning (red tile), you are entitled to a free test. This does not necessarily have to be a PCR test.",
+                            "If symptoms occur in the further course, you should get tested immediately if this has not happened and go into immediate quarantine. Please confer with your doctor for the further procedure.",
+                            "In the case of an unfinished basic immunization as well as in the first 14 days after the last dose, the vaccination protection is significantly lower, so that the same recommendations apply here as for unvaccinated persons."
                         ]
                     },
                     {
@@ -561,6 +592,83 @@
                 ]
             },
             {
+                "title": "Certificate check for bookings",
+                "id": "val_service",
+                "accordion": [
+                    {
+                        "title": "Questions and answers about certificate verification during ticketing",
+                        "anchor": "val_service_basics",
+                        "active": true,
+                        "textblock": [
+                            "<b>What is a DCC validation service? </b>",
+                            "Companies must comply with legal requirements to protect the health of employees and customers. In the pandemic, they therefore need reliable access management for business premises, factory halls, aircraft, trams, hotels and restaurants or events for instance. They need to be able to verify the authenticity of Digital COVID Certificates (DCCs) quickly and easily. This is served by a Validation Service.  The Federal Ministry of Health (Bundesministerium für Gesundheit, BMG) has decided to enable several validation services after appropriate verification.",
+                            "<b>When does a DCC validation service bring advantages over the certificate check with the CovPassCheck-App, for example?</b>",
+                            "The advantage can be seen, for example, in the purchase of an event ticket. If the buyer requires a valid certificate for the event visit, they can carry out the certificate check immediately upon purchase. The certificate check at the event location is omitted. This saves waiting times, avoids long queues at the entrance control and ultimately contributes to reducing the risk of infection. If the service is accessed directly from the Corona-Warn-App or, in the future, from the CovPass-App, it makes it possible to validate the DCC without having to upload it to the ticket provider. Thus, the service contributes to the most data-saving use of the DCCs.",
+                            "<b>How does a DCC validation service work?</b>",
+                            "Via an interface and a secure connection, the Corona-Warn-App and in the future also the CovPass-App use encrypted communication with a validation service. This checks the certificate for validity and only transmits the result of the check (not the certificate itself) back to the buyer and the event organizer. The latter authorizes the purchase of the ticket after successful verification. This allows the customer to successfully complete the purchase.",
+                            "The check is technically similar to the procedure of the CovPassCheck-App. Only that the check does not run on the check app, but on a validation server. The DCC validation service deletes the personal data for a validation process effectively and immediately after each verification process completes.",
+                            "If the check fails, the validation service informs the buyer of the reason. The event organizer does not receive this information. However, they are informed that the examination was not successful.",
+                            "<b>Where does the validation process take place?</b>",
+                            "On a validation server operated by a strictly ISO 27001 certified organization.",
+                            "<b>Does the DCC validation server store personal data?</b>",
+                            "No. The check itself takes place on-the-fly in the memory of the validation service server. The memory areas involved are automatically cleaned up. Also the log files involved do not store any personal data or information about the certificates. For billing purposes, the technology only documents that a check has been carried out for the ticket provider. Again, no personal data is processed. The only remaining storage location of a certificate is the user's smartphone.",
+                            "<b>Is the documentation of the validation service publicly available? </b>",
+                            "For validation services to be interoperable throughout Europe, the EU has published the document <a href='https://ec.europa.eu/health/sites/health/files/ehealth/docs/covid-certificate_traveller-onlinebooking_en.pdf' target='_blank' rel='noopener noreferrer'>Guidelines on the use of Digital Covid Certificates in traveller and online booking scenarios</a> which specifies the software architecture and the requirements.",
+                            "<b>Is the validation service open source?</b>",
+                            "The EU has commissioned a reference implementation. This can be used by institutions and companies that want to operate a validation service themselves. The source code is publicly available on <a href='https://github.com/eu-digital-green-certificates/dgca-validation-service' target='_blank' rel='noopener noreferrer'>GitHub: EU Digital COVID Certificate Validation Service</a>.",
+                            "<b>What does data protection look like for the DCC validation service?</b>",
+                            "The providers of validation services must comply with the provisions of the General Data Protection Regulation (GDPR).",
+                            "<b>Is the DCC validation service a new feature of the Corona-Warn-App?</b>",
+                            "The DCC validation service is not a new app feature. With CWA version 2.15, only the technical possibility was created to access a validation service for checking DCCs as part of booking processes.",
+                            "<b>Is the use of a DCC validation service voluntary?</b>",
+                            "Yes. In the Corona-Warn-App and in future also in the CovPass-App, a user explicitly declares their consent before calling up the validation service. Just as with the access check, for example when entering a restaurant, the user decides for themself whether they want to prove a certificate for verification purposes or not.",
+                            "<b>Is there an approval process for DCC validation service providers?</b>",
+                            "Interested companies can go through a test procedure at the BMG. The procedure is open to all providers.",
+                            "<b>Which companies already offer a DCC validation service?</b>",
+                            "The first provider is T-Systems. The model is deliberately designed to be open to the market and allows several providers. The verification of certificates makes an important contribution to the fight against the pandemic. With competition, we want to support the fastest possible dissemination of validation services.",
+                            "<b>Which customers are already using a DCC validation service?</b>",
+                            "Customers or providers will publish this information themselves, independently.",
+                            "<hr/>",
+                            "See also the following FAQ-articles:",
+                            "<ul>",
+                            "<li><a href='#val_service_no_valid_dcc' target='_blank'>Why do I get the message that there is no suitable certificate?</a></li>",
+                            "<li><a href='#val_service_result' target='_blank'>Why is my certificate not verifiable or not recognized?</a></li>",
+                            "</ul>"
+
+                        ]
+                    },
+                    {
+                        "title": "Why do I get the message that there is no suitable certificate?",
+                        "anchor": "val_service_no_valid_dcc",
+                        "active": true,
+                        "textblock": [
+                            "The app checks whether your certificates meet the requirements of the booking system. Various parameters are checked. First, the type of your certificate must meet the requirements of the booking system. To do this, find out about the accepted certificates from your ticket provider, add the appropriate certificates in the app if you have not already done so, and make sure that your certificates are valid.",
+                            "<b>What should you be aware of?</b>",
+                            "You should make sure that the name shown in the certificate you want to use for verification corresponds exactly to the name you have specified in the booking system. If this is not the case, it is not possible to select the corresponding certificate in the Corona-Warn-App. For example, if both your first and middle names are shown in your certificate, you should also specify both names when booking the ticket. If you only enter one name, the Corona-Warn-App cannot recognize that it is the same person. If your certificate is no longer valid or contains spelling errors or a wrong date of birth, contact the issuer of the certificate to obtain a new certificate. If you have any other questions, please contact the ticket provider."
+                        ]
+                    },
+                    {
+                        "title": "Why is my certificate not verifiable or not recognized?",
+                        "anchor": "val_service_result",
+                        "active": true,
+                        "textblock": [
+                            "<b>Not recognized</b>",
+                            "If you receive the message 'Certificate not recognized' as the result of the validation check, then the certificate is technically valid but does not meet the requirements of the provider.",
+                            "This can be due to several reasons. Possible reasons are, for example:",
+                            "<ul>",
+                            "<li>An antigen test is older than 48 hours and has therefore lost its validity</li>",
+                            "<li>The certificate was not issued by a certified test center</li>",
+                            "</ul>",
+                            "<b>Certificate not verifiable</b>",
+                            "If you receive the message 'Certificate not verifiable' as the result of the validation check, this may be for technical reasons. In this case, your certificate may be technically outdated or there may be a lack of data within the certificate that is needed for verification.",
+                            "In this case you can contact the issuer of your certificate to obtain a new certificate.",
+                            "<b>Successful exam</b>",
+                            "The certificate has been successfully verified and meets the requirements of the provider."
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Rapid Antigen Test",
                 "id": "rapid_antigen_test",
                 "accordion": [
@@ -569,7 +677,8 @@
                         "anchor": "rat_partner",
                         "active": true,
                         "textblock": [
-                            "See <a href='#where_can_i_get_tested' target='_self' rel='noopener noreferrer'>Where can I get tested?</a>"
+                            "See <a href='#where_can_i_get_tested' target='_self' rel='noopener noreferrer'>Where can I get tested?</a>",
+                            "See also poster: <a href='../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl.pdf' target='_blank'>Rapid antigen test? Here's how to share your result (German only).</a>"
                         ]
                     },
                     {
@@ -612,7 +721,9 @@
                         "anchor": "rat_what_if_positive_result",
                         "active": true,
                         "textblock": [
-                            "In case of a positive test result, you should share your test result and immediately take a PCR test to confirm or revise the result. In case of a positive PCR test, you should share the test result again to alert contacts you may have met between the two tests. This is provided that the contacts also use the Corona-Warn-App and the risk calculation determines a high risk, based on duration and distance of contact. If the PCR test is negative, you will not have the option to withdraw your positive rapid test and warning."
+                            "In case of a positive test result, you should share your test result and immediately take a PCR test to confirm or revise the result. In case of a positive PCR test, you should share the test result again to alert contacts you may have met between the two tests. This is provided that the contacts also use the Corona-Warn-App and the risk calculation determines a high risk, based on duration and distance of contact. If the PCR test is negative, you will not have the option to withdraw your positive rapid test and warning.",
+                            "<a href='../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl.pdf' target='_blank'><img width= 300px src='../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl-1.png' alt='PDF'></a>",
+                            "See also poster: <a href='../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl.pdf' target='_blank'>Rapid antigen test? Here's how to share your result (German only).</a>"
                         ]
                     },
                     {
@@ -857,7 +968,7 @@
                             "<b>11. Can all QR codes for check-in be read immediately by the Corona-Warn-App and the luca app?</b>",
                             "The luca-QR codes generated as of 25 May 2021 can be read (scanned) by both the Corona-Warn-App and luca app and processed for the check-in process - unless the operators have explicitly contradicted this. In the case of an incompatible luca QR code, you can contact the organizer, who will issue a new compatible luca QR code if necessary. The support of private QR codes is still not possible.",
                             "<b>12. Is the data of the users of the Corona-Warn-App still secure?</b>",
-                            "Yes. Joint use only applies to the QR codes used for event registration and check-in. Corona-Warn-App and luca app continue to be different offerings with different objectives. For the CWA, it still applies that it does not collect any personal data.",
+                            "Yes. Joint use only applies to the QR codes used for event registration and check-in. Corona-Warn-App and luca app continue to be different offerings with different objectives. Scanning a luca-QR-Code does not cause any additional data to be collected.",
                             "The joint use of QR codes was carefully prepared. All security-related aspects were worked out and checked in close cooperation with both the BfDI and the BSI.",
                             "In addition, the Corona-Warn-App continues to operate in a very data-saving manner.",
                             "<b>13. What data is transferred from the CWA to luca?</b>",
@@ -892,7 +1003,7 @@
                         "textblock":[
                             "On some devices, the camera does not recognize the QR code immediately and nothing happens at first, i.e. neither the QR code is scanned nor an error message is displayed. This behavior primarily affects some Android devices, but can also occur on iOS devices.",
                             "The following tips often help to scan the QR code:",
-                            "<ul> <li> On the QR code, you will see 3 larger squares in the corner: these must be fully captured by the camera.</li> <li>Hold the camera a little further away from the QR code until it is about the size of a postage stamp.</li> <li>Make sure there is sufficient contrast and lighting conditions.</li> <li>Rotate the QR code 90 degrees and try again.</li></ul>",
+                            "<ul> <li> On the QR code, you will see 3 larger squares in the corner: these must be fully captured by the camera.</li> <li>Hold the camera a little further away from the QR code until it is about the size of a postage stamp.</li> <li>Make sure there is sufficient contrast and lighting conditions.</li> <li>Rotate the QR code 90 degrees and try again.</li><li>If there is another smartphone in your household, scan the certificate with this device and then try to read the QR code from the screen of the other device with your smartphone.</li></ul>",
                             "Alternatively, you can try the following: Create a photo/screenshot of your QR code and import this file by selecting 'Open File' in the QR code scanner."
                         ]
                     },
@@ -991,7 +1102,7 @@
                             "If the Corona-Warn-App indicates a high infection risk with the red card, please isolate yourself quickly and consult a doctor to get a PCR test if necessary.",
                             "For a smooth testing process, to receive the test result and to warn others in case of a positive result, please follow the steps in <a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'>this overview from the Robert Koch Institute</a>.",
                             "<a href='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank' rel='noopener'><img src='../../assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='PDF'></a>",
-                            "See also: <ul><li><a href='#rat_red_card_which_test' target='_blank' rel='noopener'>If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?</a></li><li><a href='#vac_cert_red_warning' target='_blank' rel='noopener'>How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?</a></li><li><a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Where to get tested?</a></li></ul>"
+                            "See also: <ul><li><a href='#voluntary_self_quarantine ' target='_blank'>Why is voluntary self-quarantine recommended?</a></li><li><a href='#quarantine_measures' target='_blank'>More information on quarantine measures</a></li><li><a href='#rat_red_card_which_test' target='_blank' rel='noopener'>If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?</a></li><li><a href='#vac_cert_red_warning' target='_blank' rel='noopener'>How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?</a></li><li><a href='#where_can_i_get_tested' target='_blank' rel='noopener noreferrer'>Where to get tested?</a></li></ul>"
                         ]
                     },
                     {
@@ -1324,6 +1435,35 @@
                 "title": "Use",
                 "id": "application",
                 "accordion": [
+                    {
+                        "title": "Questions about quarantine measures",
+                        "anchor": "quarantine_measures",
+                        "active": true,
+                        "textblock": [
+                            "If you test positive, your local health department must be notified. This is done through your family doctor or the test center where you took your test. If your test was not performed in Germany, you are obliged to inform your responsible health authority or your family doctor yourself if the test result is positive. The responsible authority, usually your health office, will then order isolation.",
+                            "Quarantine, or isolation in the case of a positive test result, is an important element in the fight against the pandemic and is intended to prevent the spread of the virus. It is for your protection and the protection of everyone from infection with the novel coronavirus.",
+                            "It is then determined by the responsible authority exactly how long you will be in isolation/quarantine. The measure does not end automatically, but only when it has been lifted again by the responsible authority. You are among those who are suspected of being infected, without necessarily being sick or suspected of being sick yourself.",
+                            "It is very important that you follow the quarantine/isolation and hygiene rules exactly - even if you should not have any symptoms. Follow the protective measures, i.e., follow coughing and sneezing rules, good hand hygiene, and keep your distance from others.",
+                            "Currently, the following quarantine options are recommended:",
+                            "<ul><li>10 days quarantine from last high-risk encounter without final testing.</li><li>5 days with PCR testing if sample is collected no earlier than day 5. Release from quarantine will not occur until negative test result is received. For individuals who are tested regularly as part of a serial testing strategy (e.g., schoolchildren), negative detection may also be considered using rapid antigen testing. Testing by rapid antigen test should be performed as a third-party test by or under the supervision on-site of trained individuals (supervised antigen test for self-testing).</li><li>7 days with rapid antigen test when sample is collected on day 7 at the earliest. Release from quarantine will not occur until negative test result is received. Testing should be performed as a third-party test by or under the supervision of trained individuals on site (supervised antigen test for self-testing).</li></ul>",
+                            "For more detailed information, see the RKI recommendations on contact person management: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Kontaktperson/Management.html' target='_blank' rel='nofollow'>Contact person tracing (KP-N) for SARS-CoV-2 infections. (German only)</a>",
+                            "For more helpful information on home quarantine, click here: <a href='#voluntary_self_quarantine'>Why is voluntary self-quarantine recommended?</a>",
+                            "Find testing options <a href='#where_can_i_get_tested'>Where can I get tested?</a>",
+                            "More information on the testing process: <a href='#red_card_how_to_test'>Red Card? How to get the Corona Test</a>"
+                        ]
+                    },
+                    {
+                        "title": "Why is voluntary self-quarantine recommended?",
+                        "anchor": "voluntary_self_quarantine",
+                        "active": true,
+                        "textblock": [
+                            "<b>Self-quarantine:</b><br/>If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. Even if this measure has not been ordered by a responsible authority, usually your health department, you are advised to stay at home and minimize encounters with others in your household and to avoid encounters outside your household. This applies even if you have been vaccinated or are recovered and have no symptoms. Quarantine is an important element in the pandemic response and is designed to prevent the spread of the virus (if you are infected). It is for your protection and the protection of everyone from infection with the novel coronavirus.",
+                            "<b>Health departments are used to capacity:</b><br/>Currently, COVID-19 infection numbers are at very high levels and a high number of positive test results are being submitted through the Corona-Warn-App. Therefore, please understand that the health department cannot serve all contacts. Let the health department handle its important tasks, so contact your health department only if you absolutely need assistance, for example, because your employer or educational institution requires a certificate.",
+                            "<b>Recommendations for action:</b>",
+                            "<ul><li>Get tested. If you receive a warning of increased risk (\"red tile\"), you are entitled to a free test. This does not necessarily have to be a PCR test.</li><li>A minimum of 7 days, preferably 10 days, is recommended for the period of self-quarantine from the date of the last increased risk encounter. Refer to the red tile for the date of the last increased risk encounter.</li><li>If possible, refrain from visits and activities where you will be with other people. Have groceries delivered or ask someone to do the shopping; avoid public transportation and refrain from air and train travel.</li><li>In particular, avoid contact with vulnerable persons and groups, such as the elderly and those with pre-existing conditions.</li><li>Also minimize contacts in your own household.</li><li>If your employer gives you the option, work from home.</li><li>Watch for symptoms of illness for at least 14 days (from the date of the increased risk encounter) and contact your primary care physician's office if you feel ill or experience symptoms.</li><li>Follow the rules of hygiene.</li></ul>",
+                            "For more helpful information on home quarantine, click here: <a href='https://www.rki.de/covid-19-quarantaene' target='_blank'>Home quarantine (ordered by the health department): flyer for contacts. (German only)</a><br/>Read the FAQ article <a href='#quarantine_measures'>Questions about quarantine measures</a> for more information.<br/>Find testing options: <a href='#where_can_i_get_tested'>Where can I get tested?</a><br/>More information on the testing process: <a href='#red_card_how_to_test'>Red Card? How to get the Corona Test</a>"
+                        ]
+                    },
                     {
                         "title": "What to do with several PCR-Test QR codes?",
                         "anchor": "QRcodes",
@@ -2391,7 +2531,7 @@
                 {
                     "term": "CovPassCheck-App",
                     "anchor": "covpasscheck",
-                    "description": "The CovPassCheck-App is a secure solution for, among others, businesses and authorities. Only the CovPassCheck app can reliably check EU digital COVID certificates."
+                    "description": "The CovPassCheck-App is a secure solution for, among others, businesses and authorities. Only the CovPassCheck-App can reliably check EU digital COVID certificates."
                 }
             ],
             "D": [
@@ -2485,6 +2625,11 @@
                     "term": "iOS",
                     "anchor": "ios",
                     "description": "iOS is a mobile operating system developed by Apple for the iPhone, iPod touch and formerly also iPad. Along with <a href='#glossary_android'>Android</a>, it is one of the two operating systems that the Corona-Warn-App supports."
+                },{
+                    "term": "Isolation",
+                    "anchor": "isolation",
+                    "description": "Isolation is a government-ordered measure for persons who have been confirmed to have SARS-CoV-2 infection by a PCR-Test. Isolation can be gone through at home or, if the disease is severe, in a hospital. Release from isolation is based on specified <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Entlassmanagement.html?nn=13490888'> criteria (German only)</a>. At the time of release, the person is considered to no longer be infectious. See also <a href='#glossary_quarantine'>Quarantine</a>. "
+
                 }
             ],
             "M": [
@@ -2527,7 +2672,7 @@
                 {
                     "term": "Quarantine",
                     "anchor": "quarantine",
-                    "description": "A protective measure that helps contain the spread of infectious diseases through human isolation."
+                    "description": "A protective measure that helps contain the spread of infectious diseases through human isolation. See also <a href='#glossary_isolation'>Isolation</a>."
                 }
             ],
             "R": [
@@ -2655,7 +2800,7 @@
                 {
                     "term": "Verifier-App / Checking a certificate / Verifying a certificate",
                     "anchor": "verify",
-                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the <a href='#glossary_covpasscheck'>CovPassCheck app</a>), the check app. <br/><br/> Individual countries may have different implementations of the check app. However, all check apps use the same keys - consolidated on a European gateway - of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
+                    "description": "The mere existence of a (digital) document has no verification/evidence power. Rather, <b>each document/certificate must</b> also be checked for validity and validation. <br/><br/> This check is done by a special app (in Germany the <a href='#glossary_covpasscheck'>CovPassCheck-App</a>), the check app. <br/><br/> Individual countries may have different implementations of the check app. However, all check apps use the same keys - consolidated on a European gateway - of the participating countries as well as the stored <a href='#glossary_business_rules'>Business Rules</a>. Therefore, all check apps will be able to validate all EU certificates in the future, as long as they follow the specification of the European eHealth Network."
                 }
             ]
         },

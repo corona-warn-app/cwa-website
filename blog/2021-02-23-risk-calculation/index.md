@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Deutsche Telekom and SAP’s project team continue to adapt the Corona-Warn-App’s risk calculation in collaboration with the Robert Koch-Institut (RKI) following extensive tests by the Fraunhofer Institute for Integrated Circuits (IIS). As a result, the app can now identify encounters with increased risk even better. and will show even more precisely when users have had encounters with people who later tested positive for COVID-19. 
+Deutsche Telekom and SAP’s project team continue to adapt the Corona-Warn-App’s risk calculation in collaboration with the Robert Koch Institute (RKI) following extensive tests by the Fraunhofer Institute for Integrated Circuits (IIS). As a result, the app can now identify encounters with increased risk even better. and will show even more precisely when users have had encounters with people who later tested positive for COVID-19. 
 
 Now, the app considers short contacts between two people that lasted at least 5 minutes, not 10 minutes as it was the case before. The relevant data for this adjustment is only available because Apple and Google developed their interface further. Measurements based on version 2 of the interface confirmed that warnings can be better and more accurate through the adjustment. 
 
