@@ -348,12 +348,31 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
     let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
     let validLocation = !Number.isNaN(parseInt(locationType));
     let validStartDate, validEndDate;
+    let today = new Date();
+    let date = today.toISOString().slice(0, 10);
+    let time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2)
     if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
       validStartDate = new Date(startdate).getTime() > 0 && startdate !== "" && startdate !== null;
       validEndDate = new Date(enddate).getTime() > 0 && enddate !== "" && enddate !== null;
       if (!validStartDate || !validEndDate) {
         validLocation = false
       }
+      if (startdate === date && (time > starttime || starttime > endtime)){
+        validLocation = false;
+        document.getElementById('qr-error-endtimebeforestarttime').style.display = 'block';
+        errors++;
+      }
+      if (Date.parse(startdate+'T'+starttime) > Date.parse(enddate+'T'+endtime)){
+        validLocation = false;
+        document.getElementById('qr-error-olddate').style.display = 'block';
+        errors++;
+      }
+      if (startdate < date){
+        validLocation = false;
+        document.getElementById('qr-error-olddate').style.display = 'block';
+        errors++;
+      }
+
     }
     let validDescription = description !== "" && description !== null;
     let validAddress = address !== "" && address !== null;
