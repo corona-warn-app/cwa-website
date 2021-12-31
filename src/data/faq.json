@@ -181,7 +181,7 @@
                         "anchor": "cert_eu_travel",
                         "active": true,
                         "textblock": [
-                            "<b>Update</b><br/>Please note that the behavior of the certificate validity check has changed with version 2.8. For more information on this change, please see the FAQ entry: <a href='#dcc_no_rules' target='_blank' rel='noopener noreferrer'>Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?</a><hr>",
+                            "<b>UPDATE</b><br/> Please note that the behavior of the certificate validity check has changed with version 2.8. For more information on this change, please see the FAQ entry: <a href='#dcc_no_rules' target='_blank' rel='noopener noreferrer'>Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?</a><hr>",
                             "Starting with version 2.6, you can check before traveling whether your certificates (test, recovery and/or vaccination certificate) are valid in a selected country at the time of your trip. The Corona-Warn-App takes into account the applicable entry rules of the selected travel country and compares them with various parameters of the certificate, such as the date and type of test, test center or date of vaccination.",
                             "Every European country that supports EU digital COVID certificates has the ability to upload rules that the Corona-Warn-App can match for verification. At the start of this new feature, Ireland, Lithuania, Luxembourg, the Netherlands, Slovenia and Spain, together with Germany, have uploaded rules, with more countries to follow in the coming weeks.",
                             "If the app shows after checking that there are no entry rules available, you can find out about the rules at <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>."
@@ -1728,7 +1728,7 @@
                         "anchor": "mutation",
                         "active": true,
                         "textblock": [
-                            "<b>Update</b><br/>To date, the risk assessment was improved and adapted on the 23.02.2021, on the 19.03.2021 and on the 16.04.2021. More information can be found in our blog:",
+                            "<b>UPDATE</b><br/> To date, the risk assessment was improved and adapted on the 23.02.2021, on the 19.03.2021 and on the 16.04.2021. More information can be found in our blog:",
                             "<ul><li><a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' rel='noopener noreferrer'>23.02.2021 - Corona-Warn-App’s risk calculation further adjusted after detailed tests</a></li><li><a href='../blog/2021-03-19-risk-calculation-improvement/' target='_blank' rel='noopener noreferrer'>19.03.2021 - Corona-Warn-App's risk calculation further improved</a></li><li><a href='../blog/2021-04-16-corona-warn-app-risk-calculation-further-improved/' target='_blank' rel='noopener noreferrer'>16.04.2021 - Project Team further improves Corona-Warn-App's risk calculation in response to current coronavirus situation</a></li></ul>",
                             "We will continue to monitor the risk assessment regarding the virus and improve it if necessary.<hr/>",
                             "Since the very beginning of the pandemic, new virus variants have been discovered worldwide and examined and evaluated by experts with regard to infectiousness and health consequences. The Corona-Warn-App developers are in close contact with the authorities. If the risk of infection changes based on new findings, we certainly will adjust the risk calculation of the app."
@@ -2125,7 +2125,7 @@
                         "anchor": "rapid_test",
                         "active": true,
                         "textblock": [
-                            "<b>Update</b><br/>Since version 2.1 it is possible to enter the test result of a rapid antigen test into the app. More information can be found in <a href='../blog/2021-05-02-corona-warn-app-version-2-1/' target='_blank' rel='noopener noreferrer'>this</a> blog post and in the <a href='#rapid_antigen_test' target='_blank' rel='noopener noreferrer'>FAQs to rapid antigen tests</a>.<hr/>",
+                            "<b>UPDATE</b><br/> Since version 2.1 it is possible to enter the test result of a rapid antigen test into the app. More information can be found in <a href='../blog/2021-05-02-corona-warn-app-version-2-1/' target='_blank' rel='noopener noreferrer'>this</a> blog post and in the <a href='#rapid_antigen_test' target='_blank' rel='noopener noreferrer'>FAQs to rapid antigen tests</a>.<hr/>",
                             "No, entering results from rapid tests is currently not supported by the Corona-Warn-App."
                         ]
                     },
@@ -2228,7 +2228,7 @@
                         "anchor": "API39508",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE 16.01.2021</b><br/>The error notification now reads \"Limit already reached\". Please see <a href='#limit_reached' target='_blank' rel='noopener'>the corresponding FAQ entry</a> for further information on this issue.",
+                            "<b>UPDATE January 16, 2021</b><br/>The error notification now reads \"Limit already reached\". Please see <a href='#limit_reached' target='_blank' rel='noopener'>the corresponding FAQ entry</a> for further information on this issue.",
                             "<b>UPDATE</b><br/>This bug has been fixed in version 1.5 of the Corona-Warn-App. We therefore ask you to update the app accordingly.<br/><b>IMPORTANT:</b><br/><b>After updating to version 1.5 it will take up to 24 hours until the error is gone.</b>",
                             "If you are still receiving the error after updating to 1.5 and waiting 24 hours, please report it in the <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>associated GitHub issue</a>.<hr/>",
                             "The notification indicates that the Corona-Warn-App has called the Exposure Notification System too often to downloaded the keys from the server and match them with the locally stored random IDs. This is how it can be determined if there were exposures to persons who reported positive.",
@@ -2277,7 +2277,7 @@
                         "anchor": "status_14",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This Issue was resolved in version 1.2 of the Corona-Warn-App. Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App.",
+                            "<b>UPDATE</b><br/> This Issue was resolved in version 1.2 of the Corona-Warn-App. Exposures are displayed for up to 14 days after you encountered the user who then uploaded a diagnosis key using the Corona-Warn-App. <hr/>",
                             "For some phones running Android, the exposures currently are displayed for more than 14 days. We're working on fixing this display error. You'll find up-to-date information in <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub issue 911</a>."
                         ]
                     },
@@ -2286,7 +2286,7 @@
                         "anchor": "keys0",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This display error was resolved by a Google Play Services update, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>this GitHub comment</a>.",
+                            "<b>UPDATE</b><br/> This display error was resolved by a Google Play Services update, see <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>this GitHub comment</a>. <hr/>",
                             "This is a known display error. The app still works as intended. We're currently working to solve this problem together with Google."
                         ]
                     },
@@ -2303,7 +2303,7 @@
                         "anchor": "iOS_136",
                         "active": true,
                         "textblock": [
-                            "UPDATE: Apple has now released iOS version 13.6.1, which fixes this error. Please update your phone to iOS 13.6.1.",
+                            "<b>UPDATE</b><br/> Apple has now released iOS version 13.6.1, which fixes this error. Please update your phone to iOS 13.6.1. <hr/>",
                             "After updating to the iOS version 13.6, exposure logging couldn't be activated on some iPhones because exposure logging was seemingly not available in their region. For details, see GitHub issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."
                         ]
                     },
@@ -2312,7 +2312,7 @@
                         "anchor": "app_does_not_open",
                         "active": true,
                         "textblock": [
-                            "UPDATE: App version 1.2.1 is now available and resolves this issue. Please update your app.",
+                            "<b>UPDATE</b><br/> App version 1.2.1 is now available and resolves this issue. Please update your app. <hr/>",
                             "Unfortunately, an error was introduced with the latest update (1.2.0): Many users were not able to open the app."
                         ]
                     },
@@ -2321,7 +2321,7 @@
                         "anchor": "low_risk_text",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This error has already been corrected. The correction is available with app version 1.2.1. Please update the app.",
+                            "<b>UPDATE</b><br/> This error has already been corrected. The correction is available with app version 1.2.1. Please update the app. <hr/>",
                             "With the latest update (1.2.0), a misleading explanatory text was introduced for a low risk of infection. If there was an exposure and the app still shows a low risk for you, the risk of infection is still ranked as 'low' and not as 'increased' (as described in the current text)."
                         ]
                     },
@@ -2330,7 +2330,7 @@
                         "anchor": "days_active_Apple",
                         "active": true,
                         "textblock": [
-                            "Update: This display error is resolved by now. Please update the Corona-Warn-App to the latest version. The app will now count up the number of active days, until the 14 active days are reached, as intended.",
+                            "<b>UPDATE</b><br/> This display error is resolved by now. Please update the Corona-Warn-App to the latest version. The app will now count up the number of active days, until the 14 active days are reached, as intended. <hr/>",
                             "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
                             "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
                             "Exposure logging can be deactivated, for example, by the following:",
@@ -2343,7 +2343,7 @@
                         "anchor": "days_active_Android",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This display is updated in the meantime. If nonetheless another day count displays, see <a href='#exposure_check' target='_blank' rel='noopener'>My exposure log shows checks for less than 14 days</a>.",
+                            "<b>UPDATE</b><br/> This display is updated in the meantime. If nonetheless another day count displays, see <a href='#exposure_check' target='_blank' rel='noopener'>My exposure log shows checks for less than 14 days</a>. <hr/>",
                             "When counting the active days, an error is displayed currently: When '14 of 14 active days' is reached, the number of active days doesn't display 14 out of 14, but keeps displaying 13 out of 14 active days or fewer.",
                             "This is only a display error. The Corona-Warn-App continues to work as intended, that means, the IDs are still exchanged and the exposure logging still works. No data is lost. Technically, it is a rounding error that displays when the number of active days of the exposure logging does not increase any more, but stays 14 days. When the exposure logging was inactive in any way, even for a short amount of time, the counter stays at a lower number of days, for example, 13 active days.",
                             "Exposure logging can be deactivated, for example, by the following:",
@@ -2357,7 +2357,7 @@
                         "anchor": "days_active_explanation",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This display is updated in the meantime. If nonetheless another day count displays, see <a href='#exposure_check' target='_blank' rel='noopener'>My exposure log shows checks for less than 14 days</a>.",
+                            "<b>UPDATE</b><br/> This display is updated in the meantime. If nonetheless another day count displays, see <a href='#exposure_check' target='_blank' rel='noopener'>My exposure log shows checks for less than 14 days</a>. <hr/>",
                             "The Corona-Warn-App logs exposures for the past 14 days. Older exposures are not relevant for the risk assessment and will therefore be discarded. Hence, the app will always show \"14 of 14 days saved\" if it was active for the entire time frame. The count does not start over after 14 days. If exposure logging is active and a risk status is being displayed, the app is working as expected.",
                             "If you temporarily deactivate the app after 14 days, the displayed number can jump back to 13 (or fewer) active days. This can be triggered by the following activities:<ul><li>Disabling bluetooth</li><li>Disabling the background app refresh so that risk assessment could not be performed</li><li>Enabling flight mode</li><li>Turning off your smartphone</li><li>Restarting your smartphone</li></ul>"
                         ]
@@ -2367,8 +2367,8 @@
                         "anchor": "API10",
                         "active": true,
                         "textblock": [
-                            "<b>UPDATE 14.01.2021</b><br/>Should you experience this issue, please write a report here: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1962' target='_blank' rel='noopener'>cwa-app-android/issues/1962</a>.<hr/>",
-                            "UPDATE: This error is resolved by version 1.5 of the Exposure Notification System. For details about your ENS version, see <a href='#ENF_version' target='_blank' rel='noopener'>Which version of the COVID-19 Exposure Notification System is currently installed?</a>",
+                            "<b>UPDATE January 14, 2021</b><br/>Should you experience this issue, please write a report here: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1962' target='_blank' rel='noopener'>cwa-app-android/issues/1962</a>.<hr/>",
+                            "<b>UPDATE</b><br/> This error is resolved by version 1.5 of the Exposure Notification System. For details about your ENS version, see <a href='#ENF_version' target='_blank' rel='noopener'>Which version of the COVID-19 Exposure Notification System is currently installed?</a>",
                             "This error, in connection with missing risk identification, is currently fixed together with Google. Exposure logging works as intended. Please do not uninstall the app, because this can remove the logged exposures, see also <a href='#delete_random_ids' target='_blank' rel='noopener'>'Are the exposure logs/random IDs removed from my phone when I uninstall the app?'</a>."
                         ]
                     },
@@ -2377,7 +2377,7 @@
                         "anchor": "ENError11",
                         "active": true,
                         "textblock": [
-                            "UPDATE: Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exposure Notifications' and turn it back on again.",
+                            "<b>UPDATE</b><br/> Although Apple stated that this Issue has been fixed with iOS 13.6, it's currently appearing again on devices which run iOS 14 or higher. To fix it please open the iOS settings and go to 'Exposure Notification', scroll down to the bottom and click 'Turn Off Exposure Notifications' and turn it back on again. <hr/>",
                             "The ENErrorDomain 11 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App."
                         ]
                     },
@@ -2386,7 +2386,7 @@
                         "anchor": "ENError5",
                         "active": true,
                         "textblock": [
-                            "UPDATE: The ENErrorDomain 5 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
+                            "<b>UPDATE</b><br/> The ENErrorDomain 5 error is thrown by Apple's Exposure Notification System, which is used by the Corona-Warn-App. According to Apple, the cause is already fixed, and therefore, it shouldn't occur any more. If the error still occurs, please be patient until the change reaches your device."
                         ]
                     },
                     {
@@ -2394,7 +2394,7 @@
                         "anchor": "iphone_region_change",
                         "active": true,
                         "textblock": [
-                            "UPDATE: After you updated to iOS version 13.6., this message is gone.",
+                            "<b>UPDATE</b><br/> After you updated to iOS version 13.6., this message is gone. <hr/>",
                             "This message is issued directly by the Exposure Notification System of the operating system. You can choose 'OK' to confirm the message, exposure logging works as intended. To check this, you can also navigate to 'Settings' > 'Privacy' > 'Health' > 'COVID-19 Exposure Logging' (iOS 13.7 or higher: 'Settings' > 'Exposure Notifications' > 'Exposure Logging Status') on your device to check the status. This is an iOS bug and Apple is already working on a solution, which is expected to be delivered with the next iOS update. Please open the Corona-Warn-App once again to make sure that the background app refresh continues to work."
                         ]
                     },
@@ -2403,7 +2403,7 @@
                         "anchor": "memory",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This error is raised by the operating system. After you updated to Apple iOS version 13.6., this error should be gone.",
+                            "<b>UPDATE</b><br/> This error is raised by the operating system. After you updated to Apple iOS version 13.6., this error should be gone. <hr/>",
                             "The Corona-Warn-App uses just about 20 MB of smartphone storage. The size can vary slightly due to updates. In addition, the app caches some data."
                         ]
                     },
@@ -2412,7 +2412,7 @@
                         "anchor": "cause_3",
                         "active": true,
                         "textblock": [
-                            "UPDATE: This error is fixed in the meantime.",
+                            "<b>UPDATE</b><br/> This error is fixed in the meantime. <hr/>",
                             "This error can occur when you activate exposure logging for the first time or later in the settings or on the main screen of the app. It means that your device cannot log exposure for one or more of the following reasons:",
                             "<ul><li>Google Play Services are outdated.</li><li>The app is not available with Google Play for your country. See <a href='#international' target='_blank' rel='noopener noreferrer'>In which international app stores is the app available?</a> for the supported country versions.</li><li>You haven’t installed Corona-Warn-App via the official Google Play Store.</li><li>Your device has been modified (e.g. by rooting).</li><li>You have multiple user accounts on your device and the user that you use Corona-Warn-App with doesn’t have administrator rights.</li><li>The manufacturer of your device hasn’t made Google Play Services and Google Play Store available for your device. This affects some models by Huawei und Xiaomi, for example.</li><li>Google Mobile Services are outdated.</li></ul>",
                             "<b>Troubleshooting</b>",
