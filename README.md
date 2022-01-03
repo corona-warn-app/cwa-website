@@ -128,7 +128,7 @@ A list of all public repositories from the Corona-Warn-App can be found [here](h
 
 ## Licensing
 
-Copyright (c) 2020-2021 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
+Copyright (c) 2020-2022 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
 
 Licensed under the **Apache License, Version 2.0** (the "License"); you may not use this file except in compliance with the License.
 
