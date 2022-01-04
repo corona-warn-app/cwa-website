@@ -17,7 +17,7 @@ First, all persons who are **at least 70 years old** and who have not been diagn
 
 ### Here's how the app finds the right users to notify
 
-Based on the recommendations of the STIKO, the Robert Koch-Institut (RKI) has created **rules that the Corona-Warn-App can match with the certificates** stored in the app. To be able to inform the affected users about the recommendations, the Corona-Warn app regularly checks all certificates.
+Based on the recommendations of the STIKO, the Robert Koch Institute (RKI) has created **rules that the Corona-Warn-App can match with the certificates** stored in the app. To be able to inform the affected users about the recommendations, the Corona-Warn app regularly checks all certificates.
 
 **Please note:** This check is performed directly in the app, so that **no data leaves the smartphone**. The rules used and the possible recommendation texts are downloaded from the rule server beforehand, so that no individual information about the users or their certificates (or about other people and their certificates) is revealed. 
 

@@ -19,7 +19,7 @@ But **what about the fall** when life shifts from outdoors to indoors again? The
 
 <!-- overview -->
 
-For that purpose, the project team of Deutsche Telekom, SAP and Robert Koch-Institut are constantly adapting the Corona-Warn-App to the current pandemic situation. We give you **quick instructions on the app’s most important (new) functions** and how they work: 
+For that purpose, the project team of Deutsche Telekom, SAP and Robert Koch Institute are constantly adapting the Corona-Warn-App to the current pandemic situation. We give you **quick instructions on the app’s most important (new) functions** and how they work: 
 
 ### Event registration (check-in function)
 

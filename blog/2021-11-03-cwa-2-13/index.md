@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-The project team of the Robert Koch-Institut, Deutsche Telekom, and SAP have **released version 2.13 of the Corona-Warn-App**. With the update, they have added a **recycle bin functionality for certificates**. In addition, the 7-day hospitalization incidence is available at the local level and the project team improved the assignment of certificates to people.
+The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have **released version 2.13 of the Corona-Warn-App**. With the update, they have added a **recycle bin functionality for certificates**. In addition, the 7-day hospitalization incidence is available at the local level and the project team improved the assignment of certificates to people.
 
 The update is available to users over the next 48 hours.
 

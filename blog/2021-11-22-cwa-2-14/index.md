@@ -7,7 +7,7 @@ author: Hanna Heine, 10 am
 layout: blog
 ---
 
-The project team of the Robert Koch-Institut, Deutsche Telekom, and SAP have released version 2.14 of the Corona-Warn-App. With the update, users can now **restore deleted PCR and rapid tests**.
+The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have released version 2.14 of the Corona-Warn-App. With the update, users can now **restore deleted PCR and rapid tests**.
 
 <!-- overview -->
 

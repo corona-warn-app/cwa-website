@@ -13,7 +13,7 @@ Within the next 48 hours, users will be able to download the Corona-Warn-App’s
 
 The new feature gives the more than 25 million users the opportunity to find out about the current Corona situation in Germany directly in the app and encourages them to warn others in case they’ve been tested positive. 
 
-While the figures on the infection numbers come from the Robert Koch-Institut, the number of transmitted warnings comes from the Corona-Warn-App’s IT system. The numbers are updated hourly and edited for the app. The statistics show changes as soon as new information is available. 
+While the figures on the infection numbers come from the Robert Koch Institute, the number of transmitted warnings comes from the Corona-Warn-App’s IT system. The numbers are updated hourly and edited for the app. The statistics show changes as soon as new information is available. 
 
 With a **swipe to the left**, users can scroll through the figures. The app first shows them the number of people who have tested positive for COVID-19 recently and the number of total infections. Users can also see the average number of people who have tested positive for COVID-19 over the past seven days.
 

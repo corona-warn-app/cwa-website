@@ -54,7 +54,7 @@ Nutzer*innen können außerdem weiterhin nur einen  aktiven Test in ihrer App re
 <br></br>
 <center> 
 <img src="./bin_another_test_ios_de.png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" height=600px> 
-<figcaption aria-hidden="true"><em>Abb. 4: Die App kann maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten. Wenn Nutzer z. B. einen weiteren PCR-Test registrieren, wird der erste PCR-Test in den Papierkorb verschoben.</em></figcaption>
+<figcaption aria-hidden="true"><em>Abb. 4: Die App kann maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten. Wenn Nutzer z.&nbsp;B. einen weiteren PCR-Test registrieren, wird der erste PCR-Test in den Papierkorb verschoben.</em></figcaption>
 </center>
 <br></br>
 
