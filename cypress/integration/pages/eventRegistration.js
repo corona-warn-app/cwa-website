@@ -81,9 +81,9 @@ describe("Test Event Registration Page", () => {
     )
     cy.get(sel.eventRegistration.form.defaultCheckinLengthHours).select("03")
     cy.get(sel.eventRegistration.form.defaultCheckinLengthMinutes).select("30")
-    cy.get(sel.eventRegistration.form.startTimeDate).type("02021991")
+    cy.get(sel.eventRegistration.form.startTimeDate).type("02022040")
     cy.get(sel.eventRegistration.form.startTimeTime).type("0909")
-    cy.get(sel.eventRegistration.form.endTimeDate).type("02021991")
+    cy.get(sel.eventRegistration.form.endTimeDate).type("02022040")
     cy.get(sel.eventRegistration.form.endTimeTime).type("0909")
 
     cy.get(sel.eventRegistration.form.generateQR).click()
@@ -181,9 +181,9 @@ describe("Test Event Registration Page", () => {
     )
     cy.get(sel.eventRegistration.form.defaultCheckinLengthHours).select("03")
     cy.get(sel.eventRegistration.form.defaultCheckinLengthMinutes).select("30")
-    cy.get(sel.eventRegistration.form.startTimeDate).type("02021991")
+    cy.get(sel.eventRegistration.form.startTimeDate).type("02022040")
     cy.get(sel.eventRegistration.form.startTimeTime).type("0909")
-    cy.get(sel.eventRegistration.form.endTimeDate).type("02021991")
+    cy.get(sel.eventRegistration.form.endTimeDate).type("02022040")
     cy.get(sel.eventRegistration.form.endTimeTime).type("0909")
 
     cy.get(sel.eventRegistration.form.generateQR).click()
