@@ -68,8 +68,23 @@
       {{/if}}
     </div>
   </div>
-  {{#if page-contents.section-contribute-listing.box}}
+  {{/if}}
+</section>
+<section class="section-intersect section_bg-white comment">
   <div class="container">
+    <div class="container-inner">
+      <h1 class="headline headline-heavy" id="{{page-contents.section-social-media.anchor}}">{{page-contents.section-social-media.title}}</h1>
+      <p>{{page-contents.section-social-media.textblock}}</p>
+      {{#each page-contents.section-social-media.socialmedia}}
+        <h2 class="headline headline-heavy">{{title}}</h2>
+        {{#each textblock}}
+          <p>{{{.}}}</p> 
+        {{/each}} 
+      {{/each}}
+    </div>
+  </div>
+  {{#if page-contents.section-contribute-listing.box}}
+  <div class="container pt-5">
     <div
       class="box {{#if page-contents.section-contribute-listing.box.class}}box_{{page-contents.section-contribute-listing.box.class}}{{/if}}">
       <div class="row">
@@ -82,7 +97,6 @@
       </div>
     </div>
   </div>
-  {{/if}}
   {{/if}}
 </section>
 <section class="section-intersect section_bg-white comment">
