@@ -7,7 +7,7 @@ author: Hanna Heine, 10 am
 layout: blog
 ---
 
-The project team of the Robert Koch-Institut, Deutsche Telekom, and SAP have **released Corona-Warn-App version 2.11**, which contains a **universal QR code scanner**. Android users also have the option of importing QR codes from photos or PDF files using the QR code scanner. iOS users will be able to use this feature as of version 2.12.
+The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have **released Corona-Warn-App version 2.11**, which contains a **universal QR code scanner**. Android users also have the option of importing QR codes from photos or PDF files using the QR code scanner. iOS users will be able to use this feature as of version 2.12.
 
 The update will be available to users within the next 48 hours.
 

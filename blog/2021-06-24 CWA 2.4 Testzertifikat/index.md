@@ -43,7 +43,7 @@ Users requesting a test certificate for a PCR test must provide their date of bi
 <center> <img src="./request-certificate-birthday.png" title="Date of birth" style="align: center"></center>
 <br></br>
 
-**Please note**: To create the test certificate, the data is encrypted end-to-end and transmitted from the lab or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch-Institut (RKI) in order to digitally sign it and thus confirm the certificate’s validity. The RKI cannot decrypt the data, which will be deleted after the certificate has been delivered.
+**Please note**: To create the test certificate, the data is encrypted end-to-end and transmitted from the lab or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the certificate’s validity. The RKI cannot decrypt the data, which will be deleted after the certificate has been delivered.
 
 Test certificates are stored in the app for an unlimited period. However, users can delete them by going to the "Certificates" tab, selecting the respective test certificate, and then selecting "Remove test certificate" at the bottom. How long the certificate can serve as proof of a negative test result depends on the regulations of the respective state or municipality.  
   

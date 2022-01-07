@@ -8,7 +8,7 @@ layout: blog
 ---
  
 
-The Corona-Warn-App's project team continuously improves the app's performance with regard to the coronavirus situation in Germany. In response to virus mutations, the team members from the Robert Koch-Institut, Deutsche Telekom, SAP and the Fraunhofer Institute for Integrated Circuits (IIS) have therefore further improved the risk calculation and reduced the **duration of a critical encounter** from 13 minutes to 9 minutes. 
+The Corona-Warn-App's project team continuously improves the app's performance with regard to the coronavirus situation in Germany. In response to virus mutations, the team members from the Robert Koch Institute, Deutsche Telekom, SAP and the Fraunhofer Institute for Integrated Circuits (IIS) have therefore further improved the risk calculation and reduced the **duration of a critical encounter** from 13 minutes to 9 minutes. 
 
 
 <!-- overview -->

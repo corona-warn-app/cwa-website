@@ -22,13 +22,20 @@
             {{/if}}
             {{#if links}}
             {{#each links}}
-            <a {{#if url}}href="{{url}}" {{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}}>
+            {{#if startFlex}}
+            <div class="d-flex flex-row pt-1">
+            {{/if}}
+            <a {{#if url}}href="{{url}}" {{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}} class="{{#if marginRight}}mr-2{{/if}}">
               {{#unless icon}}{{title}}{{/unless}}
-              {{#if icon}}<span class="icon icon_img icon_{{icon}}"><img
-                  src="{{root}}{{#unless icon-url}}assets/img/icons/{{icon}}.svg{{/unless}}{{#if icon-url}}{{icon-url}}{{/if}}"
-                  alt="{{title}}"
-                  class="icon-image" /></span>{{/if}}
+              {{#if icon}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="{{width}}" height="{{height}}" fill="{{filled}}" class="bi bi-{{icon}} icon-image" viewBox="0 0 16 16">
+                  <path d="{{svg}}"/>
+                </svg>
+              {{/if}}
             </a>
+            {{#if endFlex}}
+            </div>
+            {{/if}}
             {{/each}}
             {{/if}}
           </div>

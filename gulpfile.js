@@ -20,6 +20,7 @@ const { processScienceBlogFiles } = require('./src/services/science-blog-process
 var rename = require("gulp-rename");
 const analyseConfig = require("./src/data/analyse.json");
 const fetch = require('node-fetch');
+var pluginSass = require('gulp-sass')(require('node-sass'));
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -189,9 +190,9 @@ function sass() {
     .src('src/assets/scss/style.scss')
     .pipe($.sourcemaps.init())
     .pipe(
-      $.sass({
+      pluginSass({
         includePaths: PATHS.sass
-      }).on('error', $.sass.logError)
+      }).on('error', pluginSass.logError)
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
@@ -319,7 +320,7 @@ function server(done) {
     { // mirror server headers to dev env
       middleware: function (req, res, next) {
 
-        let CSP = "default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        let CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
         if(req.url.indexOf("/science") != -1){
           CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
         }else if(req.url.indexOf("/analysis") != -1){
@@ -369,8 +370,12 @@ function watch(done) {
   gulp
     .watch('science/**/*')
     .on('all', gulp.series(buildScienceBlogFiles, pages));  
+    //
+    // exclude output of buildBlogFiles and buildScienceBlogFiles from watching of pages
   gulp
-    .watch('src/pages/**/*.html')
+    .watch(['src/pages/**/*.html',
+      '!' + PATHS.blogOutputs, '!' + PATHS.blogOutputs + '*',
+      '!' + PATHS.blogScienceOutputs, '!' + PATHS.blogScienceOutputs + '*'])
     .on('all', gulp.series(pages, reload));
   gulp
     .watch('src/{layouts,partials}/**/*.html')
@@ -427,12 +432,12 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '15.1.1'))
+    .pipe(replace('[ios.latest-os-version]', '15.2'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.14.1'))
+    .pipe(replace('[ios.current-app-version]', '2.15.1'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.14.1'))
+    .pipe(replace('[android.current-app-version]', '2.15.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
