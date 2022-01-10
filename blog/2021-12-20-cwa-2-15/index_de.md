@@ -7,9 +7,14 @@ author: Hanna Heine, 08:00 Uhr
 layout: blog
 ---
 
-*Aktualisiert am 21.12.2021 um 10:00 Uhr*
+*Aktualisiert am 10.01.2022 um 13:30 Uhr*
 
-Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App veröffentlicht**. Mit dem Update können Nutzer\*innen schon während der Buchung von Tickets den Nachweis erbringen, dass sie geimpft, genesen oder negativ getestet sind. Die neue Version erleichtert damit auch Veranstalter\*innen, Unternehmen und Anbieter\*innen die Überprüfung von Covid-Zertifikaten und trägt so zu einem verlässlichen Zutrittsmanagement gemäß den gesetzlichen Vorgaben bei.
+Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App (CWA) veröffentlicht.** Mit dem Update kann die CWA zukünftig sogenannte **Onlineverifikationsdienste** unterstützen. Onlineverifikationsdienste sollen Nutzer\*innen einen datensparsamen Weg bieten, schon während der Buchung von Dienstleistungen (z.B. Tickets) den Nachweis zu erbringen, dass sie geimpft, genesen oder negativ getestet sind.  
+
+**Wichtiges Update vom 10.01.22:** Bereits seit Oktober 2021 liegen die europaweit gültigen Anforderungen an Onlineverifikationsdienste vor. In Deutschland ist momentan **noch kein Anbieter eines Onlineverifikationsdienstes zugelassen** worden. Derzeit erfolgen Tests, deren Ergebnisse zunächst abgewartet werden. Erst nach einer Auswertung dieser Tests und nach erfolgter Beratung durch den Bundesbeauftragten für den Datenschutz und die Informationsfreiheit (BfDI), werden  Onlineverifikationsdienste in der Praxis verfügbar sein.  Mit Version 2.15 ist die CWA aber bereit, entsprechende Verifikationsdienste zu unterstützen, sobald Anbieter eines solchen Dienstes zugelassen sind. 
+
+Der eigentliche Onlineverifikationsdienst liegt außerhalb der CWA und **tangiert die Funktionsweise der CWA nicht.** Die Nutzung der Onlineverifikationsdienste aus der CWA heraus ist freiwillig und **beeinträchtigt die Datensicherheit der Nutzer\*innen nicht.** Zugleich wird aber die derzeitige Situation bei Buchungen und der Nutzung von automatischen Zugangssystemen deutlich datensparsamer ausgestaltet. 
+
 
 
 <!-- overview -->
