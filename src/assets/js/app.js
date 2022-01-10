@@ -255,6 +255,15 @@ $(document).ready(function(){
         })
     }
 
+
+    // collapses/expands all accordions on button click in the FAQ
+    $( document ).ready(function() {
+        $("#collapseAll").click( function() {
+            $('.accordion-header').toggleClass('active')
+        });
+
+    });
+
     // mail protection using js
     // mails are written like this:
     // <a href="bob.smith...example...com" class="email">bob.smith...example...com</a>
