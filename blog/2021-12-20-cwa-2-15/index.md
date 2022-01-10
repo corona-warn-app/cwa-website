@@ -7,9 +7,14 @@ author: Hanna Heine, 8 am
 layout: blog
 ---
 
-*Updated on December 21, 2021 at 10 am*
+*Updated on January 10, 2022 at 1:30 pm*
 
-The project team of Robert Koch Institute, Deutsche Telekom, and SAP have released version 2.15 of the Corona-Warn-App. The update enables users to provide their proof of vaccination or recovery or a negative test result while booking tickets. With that feature, the new version also makes it easier for event organizers, companies, and vendors to check Covid certificates and thus contributes to reliable access management in accordance with legal requirements.
+The project team of Robert Koch Institute, Deutsche Telekom and SAP have released **version 2.15 of the Corona-Warn-App (CWA).** The update enables the CWA to support online verification services in the future. Online verification services are intended to provide users with a data-saving way to prove that they have been vaccinated, recovered or tested negative while booking services such as tickets.  
+
+**Important update from January 10, 2022:** The Europe-wide requirements for online verification services have already been in place since October 2021. In Germany, **no provider of an online verification service has been approved yet**. Tests are currently being carried out, the results of which are being awaited for the time being. Online verification services will not be available in practice until these tests have been evaluated and the Federal Commissioner for Data Protection and Freedom of Information (BfDI) has provided advice.  With version 2.15, however, the CWA is ready to support corresponding verification services as soon as providers of such a service are approved.
+
+The actual online verification service is **external to the CWA and does not affect its operation**. The use of online verification services from within the CWA is voluntary and does not affect the users' data security. At the same time, however, the current situation regarding bookings and the use of automatic access systems will be made much more data-efficient. 
+
 
 <!-- overview -->
 
