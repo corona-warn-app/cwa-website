@@ -11,17 +11,17 @@
         },
         "button-collapse": {
             "fields": {
-                "collapse": "Alle öffnen/schließen"
+                "collapse": "Alle aus-/einklappen"
             }},
         "sections": [
             {
-                "title": "Die häufigsten Fragen",
-                "id": "most_asked",
+                "title": "Kurzgefasst",
+                "id": "in_short",
                 "active": false,
                 "accordion": [
                     {
-                        "title": "Die häufigsten Fragen",
-                        "anchor": "most_asked_questions",
+                        "title": "Kurzgefasst",
+                        "anchor": "in_a_nutshell",
                         "active": false,
                         "textblock": [
                             "<h3>Kontaktverfolgung („Tracing“)</h3>",
@@ -35,7 +35,7 @@
                             "<b>Warum bleibt die Risikowarnung trotz eines negativen Testergebnis bestehen?</b>",
                             "Eine Risikowarnung wird Ihnen bis zu 14 Tage lang angezeigt und verschwindet im Anschluss. Die Risikokachel zeigt Ihnen Ihr Infektionsrisiko an, während die Testkachel Ihren Infektionsstatus darstellt. Daher bleibt die Warnung selbst von einem negativen Testergebnis unberührt. Sie haben keine Möglichkeit die Warnung manuell oder mit einem negativen Testergebnis zu entfernen.",
                             "<b>Begegnung mit niedrigem Risiko</b>",
-                            "Bei einer Begegnung mit niedrigem Risiko bleibt die Risikokarte weiterhin grün, da kein akuter Handlungsbedarf ihrerseits besteht. Das Risiko einer solchen Begegnung wird aufgrund der Dauer der Begegnung und der Entfernung zwischen den Geräten als niedrig eingestuft. Es wird Ihnen weiterhin empfohlen sich an die allgemeinen Abstands- und Hygieneregeln zu halten. Sie finden diese, wenn Sie auf die Risikokarte tippen.",
+                            "Bei einer Begegnung mit niedrigem Risiko bleibt die Risikokarte weiterhin grün, da kein akuter Handlungsbedarf Ihrerseits besteht. Das Risiko einer solchen Begegnung wird aufgrund der Dauer der Begegnung und der Entfernung zwischen den Geräten als niedrig eingestuft. Es wird Ihnen weiterhin empfohlen sich an die allgemeinen Abstands- und Hygieneregeln zu halten. Sie finden diese, wenn Sie auf die Risikokarte tippen.",
                             "<b>Begegnung mit erhöhtem Risiko</b>",
                             "Bei einer Begegnung mit erhöhtem Risiko wird die Risikokarte rot. Die entsprechenden Handlungshinweise finden Sie, wenn Sie auf die Risikokarte tippen.",
                             "<div class='container'><div class='row'><div class='col-sm'><a href='../../assets/img/faq/low_risk_de.png' target='_blank'><figure><img class='img-fluid' src='../../assets/img/faq/low_risk_preview_de.png' alt='image'></a><figcaption aria-hidden='true'><em>Klicken Sie auf die Abbildung, um eine komplette Ansicht zu erhalten</em></figcaption></figure></div><div class='col-sm'><a href='../../assets/img/faq/high_risk_de.png' target='_blank'><figure><img class='img-fluid' src='../../assets/img/faq/high_risk_preview_de.png' alt='image'></a><figcaption aria-hidden='true'><em>Klicken Sie auf die Abbildung, um eine komplette Ansicht zu erhalten</em></figcaption></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/hr_de.png' alt='image'><figcaption aria-hidden='true'><em>Die Hygieneregeln werden in der Corona-Warn-App angezeigt</em></figcaption></figure></div></div></div>",
@@ -43,7 +43,7 @@
                             "<b>Funktionsweise der Warnung</b>",
                             "Vereinfacht gesagt kommt eine Begegnung mit erhöhtem Risiko zustande, wenn eine Person sich länger als 10 Minuten in einem Abstand von unter 2 Metern in der Nähe einer im Nachhinein positiv getesteten Person aufgehalten hat. Zusätzlich werden Sie gewarnt, wenn ein positives Testergebnis von einer Person, die mit Ihnen an einem Event teilgenommen hat, geteilt wurde. Eine detaillierte Darstellung der Berechnung des Infektionsrisikos finden Sie im FAQ: <a href ='#encounter_19_calc' target='_blank'>Wie erfolgt die Berechnung des Risikos mit der App (Version >=1.9)?</a> und <a href ='#encounter_criteria' target='_blank'>Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?</a>",
                             "<b>Warum wird mir erst Tage später angezeigt, dass ich eine Risikobegegnung hatte?</b>",
-                            "Der Zeitpunkt, an dem Ihnen mitgeteilt wird, wann es zu der Risikobegegnung kam, ist abhängig davon, wann eine auf Covid-19 positiv getestete Person ihr Testergebnis in der Corona-Warn-App zum Teilen freigibt. Deshalb profitieren die Nutzer davon, dass positiv Getestete frühzeitig ihr Ergebnis teilen. Erst dann werden alle Personen rückwirkend gewarnt, die in den letzten 14 Tagen Kontakt mit der positiv getesteten Person hatten. Die App bietet keine Echtzeitwarnung. ",
+                            "Der Zeitpunkt, an dem Ihnen mitgeteilt wird, wann es zu der Risikobegegnung kam, ist abhängig davon, wann eine auf COVID-19 positiv getestete Person ihr Testergebnis in der Corona-Warn-App zum Teilen freigibt. Deshalb profitieren die Nutzer davon, dass positiv Getestete frühzeitig ihr Ergebnis teilen. Erst dann werden alle Personen rückwirkend gewarnt, die in den letzten 14 Tagen Kontakt mit der positiv getesteten Person hatten. Die App bietet keine Echtzeitwarnung. ",
                             "<b>Warum wird mir bei der Risikoermittlung nicht die genaue Uhrzeit und der Ort des Risikokontakts angezeigt?</b>",
                             "Die Corona-Warn-App nutzt Funktionen der Betriebssysteme von Google und Apple, um die Risikoberechnung durchzuführen. Diese Funktionen bieten aus Datenschutzgründen keine Möglichkeit Orts- und Uhrzeitangaben aufzuzeichnen.<br>Sie erhalten die Information, an welchem Tag letztmalig eine Risikobegegnung stattgefunden hat. Orte und Personen können Sie im Kontakttagebuch eintragen. Weitere Informationen erhalten Sie hier: <a href ='#personal_data' target='_blank'>Welche personenbezogenen Daten werden in der App gespeichert?</a>",
                             "<b>Wie häufig wird der Risikostatus aktualisiert?</b>",
@@ -56,18 +56,15 @@
                             "<b>Habe ich Anspruch auf einen PCR-Test?</b>",
                             "Nach Rücksprache mit Ihrer Hausarztpraxis, dem kassenärztlichen Bereitschaftsdienst (Telefonnummer 116 117), oder Ihrem Gesundheitsamt kann gegebenenfalls ein Test veranlasst werden. Es handelt sich dabei nicht notwendigerweise um einen PCR-Test.  ",
                             "<b>Wo kann ich mich testen lassen?</b>",
-                            "An die Corona-Warn-App angebundene Teststellen können Sie hier finden: <a href='map.schnelltestportal.de' target='_blank'>map.schnelltestportal.de</a><br>Eine weitere Übersicht von Teststellen finden <a href='https://www.zusammengegencorona.de/testen/?' target='_blank'>Sie auf dieser Seite des Bundesministeriums für Gesundheit</a>. Bei den dort aufgeführten Teststellen ist eine Anbindung an die Corona-Warn-App jedoch nicht garantiert.",
+                            "An die Corona-Warn-App angebundene Teststellen können Sie sowohl im Schnelltestportal als auch auf der Seite des Bundesministerium für Gesundheit finden, wobei bei den dort aufgeführten Teststellen eine Anbindung an die Corona-Warn-App nicht garantiert ist. Siehe <a href='#where_can_i_get_tested' target='_blank'>FAQ: Wo kann ich mich testen lassen?</a>",
                             "<b>Wie kann ich Warnen?</b>",
-                            "Der Grundgedanke der App ist es, andere Nutzer der App zu warnen, in dem Sie Ihr positives Testergebnis in der App freiwillig zum Teilen freigeben. Dadurch werden alle Nutzer der App gewarnt, denen Sie in den vergangenen 14 Tagen begegnet sind und lange genug Kontakt mit Ihnen hatten. Wenn Sie Ihr positives Testergebnis nicht über die App erhalten haben, können Sie Ihre Kontakte trotzdem mit Hilfe der Corona-Warn-App warnen, siehe: <a href='#qr_test' target='_blank'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a>",
+                            "Der Grundgedanke der App ist es, andere Nutzer der App zu warnen, in dem Sie Ihr positives Testergebnis in der App freiwillig zum Teilen freigeben. Dadurch werden alle Nutzer der App gewarnt, denen Sie in den vergangenen 14 Tagen begegnet sind und lange genug Kontakt mit Ihnen hatten. Wenn Sie Ihr positives Testergebnis nicht über die App erhalten haben, können Sie Ihre Kontakte trotzdem mit Hilfe der Corona-Warn-App warnen, siehe: <a href ='#encounter_criteria' target='_blank'>Nach welchen Kriterien werden Begegnungen bewertet und wie unterscheiden sich die Handlungsempfehlungen?</a>",
                             "<b>Was tun, wenn der Test nicht geliefert wird?</b>",
                             "<ul>",
                             "<li><b>Das Problem melden</b></li>",
                             "Sollten Sie Ihr Testergebnis nicht erhalten haben oder sollte im Anschluss an das Testergebnis kein entsprechendes Digitales COVID-Testzertifikat der EU übermittelt worden sein, können Sie dieses oder auch andere Probleme unter anderem auf der Schnelltestportal-Seite melden. Weitere Details finden Sie hier im FAQ: <a href='#test_result_issues' target='_blank'>Was kann ich tun, wenn ich mein Testergebnis oder Testzertifikat nicht erhalten habe?</a>",
                             "<li><b>Das Testergebnis auf anderem Weg erhalten</b></li>",
-                            "Wenn Sie das Testergebnis nicht über die Corona-Warn-App erhalten haben, kontaktieren Sie bitte Ihr zuständiges ärztliches Fachpersonal, Testzentrum, bzw. Gesundheitsamt.",
-                            "<li><b>Bei einem positiven Testergebnis andere warnen</b></li>",
-                            "Auch wenn Ihr positives Testergebnis nicht in der Corona-Warn-App vorliegen sollte, Ihnen aber ein positives Testergebnis außerhalb der Corona-Warn-App mitgeteilt wurde, können Sie andere Personen über die App warnen, siehe: <a href='#qr_test' target='_blank'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a>",
-                            "</ul>",
+                            "Wenn Sie das Testergebnis nicht über die Corona-Warn-App erhalten haben, kontaktieren Sie bitte Ihr zuständiges ärztliches Fachpersonal, Testzentrum, bzw. Gesundheitsamt. Auch wenn Ihr positives Testergebnis nicht in der Corona-Warn-App vorliegen sollte, Ihnen aber ein positives Testergebnis außerhalb der Corona-Warn-App mitgeteilt wurde, können Sie andere Personen über die App warnen, siehe: <a href='#qr_test' target='_blank'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a></ul>",
                             "<b>Können mehrere Tests registriert werden?</b>",
                             "Sie können je einen persönlichen PCR- und einen Schnelltest einscannen. Jeder QR-Code für einen Test kann nur auf einem Gerät eingescannt werden. Wenn das Testergebnis anschließend gelöscht wurde, kann es zwar für 30 Tage aus dem Papierkorb wiederhergestellt werden, jedoch nicht auf einem anderen Gerät gescannt werden. Dies dient dazu, Missbrauch und Falschmeldungen zu vermeiden. Weiter Informationen finden Sie hier: <a href='#QRcodes' target='_blank'>Was mache ich, wenn ich mehrere PCR-Test-QR-Codes habe?</a>",
                             "<br>",
