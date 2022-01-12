@@ -55,7 +55,7 @@ There, they can start the error analysis. Once it started, they have to **reprod
 <center> <img src="./error-report-start.png" title="Start Error Report" style="align: center">  <img src="./error-report-running.png" title="Running Error Report" style="align: center"></center>
 <br></br>
 
-During the analysis, information that is **particularly worthy of protection**, such as entries from the contact diary or check-ins from the event registration, is recorded anonymously. This means that names of people in the contact diary, for example, are not recorded in plain text. The error report also does not contain any information about the identity of the user. 
+During the analysis, information that is **particularly worthy of protection**, such as entries from the contact journal or check-ins from the event registration, is recorded anonymously. This means that names of people in the contact journal, for example, are not recorded in plain text. The error report also does not contain any information about the identity of the user. 
 
 After users have sent the error analysis, they receive a **report ID** that they can use if they need to provide the technical support with further information. This allows the error report to be associated with the previous request via the hotline, e-mail or GitHub.  
 

@@ -26,7 +26,7 @@ This allows potential clusters to be identified and infection chains to be broke
 
 Whether users receive a green or red warning depends on whether their stay overlaps with that of an infected person. If they were on site for **less than 10 minutes**, they will receive a warning about an exposure with low risk on one day (green tile). If their stay overlapped with the person who later tested positive for COVID-19 by **10 minutes or more**, users will receive a warning about an exposure with an increased risk (red tile). 
 
-In the contact diary, users can see whether a low-risk or high-risk exposure refers to an event-based warning.
+In the contact journal, users can see whether a low-risk or high-risk exposure refers to an event-based warning.
 
 <br></br>
 <center> <img src="./increased-risk-contact-journal.png" title="Increased risk in contact journal" style="align: center"></center>
@@ -38,7 +38,7 @@ In the contact diary, users can see whether a low-risk or high-risk exposure ref
 In version 2.0 of the Corona-Warn-App, users will find a new tab named Check-In at the bottom of the app’s home screen. 
 
 
-This takes them to their check-ins, where they can find an overview of existing entries. There, they can also check in to or out from an event or location. To check in, users can **scan the corresponding QR code**. On iOS, this works via the camera; on Android devices, it depends on the respective manufacturer whether the smartphone camera can read QR codes. All check-ins can be automatically transferred to the contact diary. Users can also check themselves out in this area by clicking on Check out now under the event.  
+This takes them to their check-ins, where they can find an overview of existing entries. There, they can also check in to or out from an event or location. To check in, users can **scan the corresponding QR code**. On iOS, this works via the camera; on Android devices, it depends on the respective manufacturer whether the smartphone camera can read QR codes. All check-ins can be automatically transferred to the contact journal. Users can also check themselves out in this area by clicking on Check out now under the event.  
 
 Alternatively, event organizers and operators can also set an automatic check-out after a predefined time. The app notifies users that they’ve been checked out. Users can manually adjust the time afterwards in their Check In area.
 
