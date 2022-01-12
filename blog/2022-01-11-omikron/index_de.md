@@ -21,6 +21,5 @@ Bei der **Anpassung der Parameter für Risikobegegnungen** erreicht die Corona-W
 
 Somit hätte die Anpassung der Risikobegegnung einen Einfluss auf die Anzahl der **falsch-positiven roten Warnungen**. Das Projektteam evaluiert aber zurzeit, wie eine zukünftige Anpassung aussehen könnte.
 
-Wir beobachten in den vergangenen Wochen einen **Anstieg der empfangenen Warnungen über die Corona-Warn-App**, die wir mit der Omikron-Variante in Verbindung setzen. Dafür informieren wir mit der jüngsten App-Version 2.15 die Nutzerinnen und Nutzer umfassend, wie sie sich verhalten sollten, wenn die App eine rote Kachel zeigt. 
+Wir beobachten in den vergangenen Wochen einen **Anstieg der empfangenen Warnungen über die Corona-Warn-App**, die wir mit der Omikron-Variante in Verbindung setzen. Dafür informieren wir mit der jüngsten App-Version 2.15 die Nutzerinnen und Nutzer umfassend, wie sie sich verhalten sollten, wenn die App eine rote Kachel zeigt. Lesen Sie dazu den Blog-Artikel "[Was tun bei einer roten Kachel?](/de/blog/2021-12-15-cwa-red-tile-guidance)" für mehr Informationen.
 
-Lesen Sie dazu den Blog-Artikel "[Was tun bei einer roten Kachel?](/de/blog/2021-12-15-cwa-red-tile-guidance)" für mehr Informationen.
