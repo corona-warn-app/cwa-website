@@ -17,7 +17,7 @@ Für die Definition/Anpassung des epidemiologischen Modells und einer möglichen
 
 <!-- overview -->
 
-Das Projektteam orientiert sich bei der Risikoberechnung in der Corona-Warn-App an den **Handlungsempfehlungen für die analoge Kontaktpersonenermittlung der Gesundheitsämter**. Sobald es hier Änderungen gibt, wird die Risikoberechnung in der Corona-Warn-App ebenfalls angepasst.
+Das Projektteam orientiert sich bei der Risikoberechnung in der Corona-Warn-App an den [Handlungsempfehlungen für die analoge Kontaktpersonenermittlung](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Kontaktperson/Management.html) der Gesundheitsämter. Sobald es hier Änderungen gibt, wird die Risikoberechnung in der Corona-Warn-App ebenfalls angepasst.
 
 Bei der **Anpassung der Parameter für Risikobegegnungen** erreicht die Corona-Warn-App auch technische Grenzen. Durch die eingesetzte Bluetooth-Low-Energy-Technologie wird alle 2-5 Minuten nach Corona-Warn-Apps in der Nähe gesucht. Sollte die Risikoberechnung auf <5 Minuten runtergesetzt werden, besteht die Möglichkeit, dass Zufallstreffer (bspw. Spaziergänger, die nur kurz an einem vorbei laufen und in dem Moment ein Bluetooth-Signal versenden) zu einer Warnung mit erhöhtem Risiko führen.
 
