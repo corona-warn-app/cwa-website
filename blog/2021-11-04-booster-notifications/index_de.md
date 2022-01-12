@@ -43,7 +43,7 @@ Wenn die aktuellen Empfehlungen auf den oder die Nutzer\*in zutreffen, weist die
 
 Falls die App Nutzer\*innen benachrichtigt, auf die die Bedingungen nicht zutreffen, weil sie beispielsweise schon eine Auffrischimpfung erhalten haben oder doch eine nachgewiesene COVID-19-Infektion durchgemacht haben, können sie die Benachrichtigung ignorieren. Das Projektteam empfiehlt in diesem Fall allerdings, die entsprechenden Impf- oder Genesenenzertifikate in die App einzuscannen. 
 
-Die STIKO empfiehlt Auffrischimpfungen auch Personen mit bestimmten Vorerkrankungen oder Berufen. Diese Informationen kann die Corona-Warn-App allerdings nicht aus den Zertifikaten ableiten, weshalb sie nicht auf solche Empfehlungen hinweisen kann. **Mehr Informationen zu den STIKO-Empfehlungen** finden Sie auf der [Seite des RKI](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html). 
+Die STIKO empfiehlt Auffrischimpfungen auch Personen mit bestimmten Vorerkrankungen oder Berufen. Diese Informationen kann die Corona-Warn-App allerdings nicht aus den Zertifikaten ableiten, weshalb sie nicht auf solche Empfehlungen hinweisen kann. **Mehr Informationen zu den STIKO-Empfehlungen** finden Sie auf der [Seite des RKI](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/Impfempfehlung-Zusfassung.html). 
 
 ### So können Nutzer\*innen die Auffrischimpfung in der App hinzufügen
 
