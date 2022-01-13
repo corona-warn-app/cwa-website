@@ -10,7 +10,7 @@ layout: blog
 
 ### Strong partners support the new feature
 
-The federal government's Corona-Warn-App is getting another important feature. In the future, the app will integrate rapid COVID-19 tests. Users can **save the confirmation of their test** in the app and add them to the contact diary. In addition, anyone who tests positive for COVID-19 through a rapid test will also be able to **warn contacts** via the Corona-Warn-App in the future.
+The federal government's Corona-Warn-App is getting another important feature. In the future, the app will integrate rapid COVID-19 tests. Users can **save the confirmation of their test** in the app and add them to the contact journal. In addition, anyone who tests positive for COVID-19 through a rapid test will also be able to **warn contacts** via the Corona-Warn-App in the future.
 
 <!-- overview -->
 
