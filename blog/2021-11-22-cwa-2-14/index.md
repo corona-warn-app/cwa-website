@@ -56,7 +56,7 @@ Please note: As usual, users can only register one active test in their app at a
 </center>
 <br></br>
 
-The entries in the contact diary, which show when users have registered a rapid test or performed a PCR test, are not affected when a test is moved to the recycle bin. 
+The entries in the contact journal, which show when users have registered a rapid test or performed a PCR test, are not affected when a test is moved to the recycle bin. 
 
 Android users can access their recycle bin by selecting the three dots in the top right corner of their app and then tap "Recycle Bin." iOS users can swipe down on the home screen of their Corona-Warn-App and select "Recycle Bin" under "More". 
 

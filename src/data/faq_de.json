@@ -1012,9 +1012,9 @@
                             "<b>Wie wird das Risiko ermittelt?<br>Wann erhalte ich eine Warnung über ein geringes Risiko (grüne Kachel), wann über ein hohes (rote Kachel)?</b>",
                             "Die Berechnung des Risikos hängt davon ab, ob und wie lange sich der Aufenthalt eines Nutzers oder einer Nutzerin mit einer später positiv auf COVID-19 getesteten Person überschneidet. Überschneidet sich der Aufenthalt um weniger als 10 Minuten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit geringem Risiko (grüne Kachel). Hat sich der Aufenthalt mit der später positiv auf COVID-19 getesteten Person um 10 Minuten oder länger überschnitten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit erhöhtem Risiko (rote Kachel).",
                             "<b>Kann der Nutzer erkennen worauf die Warnung basiert, d.&nbsp;h. wegen welchem gescannten Event-QR-Code die Warnung erfolgt?</b>",
-                            "Ja, dies wird im Kontakttagebuch angezeigt. So kann bspw. auch abgeschätzt werden, ob Familienangehörige wie Kinder betroffen sind, die ebenfalls anwesend waren, aber die App nicht nutzen.",
+                            "Ja, dies wird im Kontakt-Tagebuch angezeigt. So kann bspw. auch abgeschätzt werden, ob Familienangehörige wie Kinder betroffen sind, die ebenfalls anwesend waren, aber die App nicht nutzen.",
                             "<b>Können diese Informationen freiwillig dem Gesundheitsamt mitgeteilt werden? Wenn ja, welche Informationen fließen?</b>",
-                            "Nach einer roten Kachel-Warnung (hohes Risiko) sollte ich mich in Quarantäne begeben und umgehend einen PCR-Test machen lassen. Ist dieser positiv, muss vom Arzt/Testzentrum ohnehin eine Meldung ans Gesundheitsamt gehen. Es wird empfohlen das positive Testergebnis via der CWA zu teilen. Darüber hinaus können die Informationen über die bereits existierende Export-Funktion des Kontakttagebuchs manuell mit dem Gesundheitsamt geteilt werden.",
+                            "Nach einer roten Kachel-Warnung (hohes Risiko) sollte ich mich in Quarantäne begeben und umgehend einen PCR-Test machen lassen. Ist dieser positiv, muss vom Arzt/Testzentrum ohnehin eine Meldung ans Gesundheitsamt gehen. Es wird empfohlen das positive Testergebnis via der CWA zu teilen. Darüber hinaus können die Informationen über die bereits existierende Export-Funktion des Kontakt-Tagebuchs manuell mit dem Gesundheitsamt geteilt werden.",
                             "<a href='#check_in_index' target='_self' >Zum Inhaltsverzeichnis der Event-Registrierung</a>"
                         ]
                     },
@@ -1206,7 +1206,7 @@
                         "active": false,
                         "textblock": [
                             "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Meldung sehen, kann das Betriebssystem Ihres Geräts keine Zufalls-IDs per Bluetooth <i>versenden</i>, allerdings jedoch <i>empfangen</i>. <b>Ihre eigene Risiko-Ermittlung ist daher nicht betroffen</b>.",
-                            "Die einzige dadurch verursachte Einschränkung ist, dass Sie Ihre Bluetooth-Kontakte beim Teilen Ihres positiven Testergebnisses nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, werden jedoch weiterhin gewarnt. <b>Die Check-in-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden</b>.",
+                            "Die einzige dadurch verursachte Einschränkung ist, dass Sie Ihre Bluetooth-Kontakte beim Teilen Ihres positiven Testergebnisses nicht warnen können. Personen, die gleichzeitig mit Ihnen an einem Ort oder einem Event eingecheckt waren, werden jedoch weiterhin gewarnt. <b>Die Check-in-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakt-Tagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden</b>.",
                             "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Gerät. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
                             "<hr/>",
                             "<b>Technische Erklärung</b>",
@@ -1219,7 +1219,7 @@
                         "active": false,
                         "textblock": [
                             "Seit Version 2.2 prüft die Corona-Warn-App für Android, ob Ihr Gerät alle benötigten Bluetooth-Funktionen unterstützt. Wenn Sie diese Meldung sehen, unterstützt Ihr Gerät nicht die notwendige Bluetooth-Funktionalität für das Versenden und Empfangen von Zufalls-IDs. Ihre Risiko-Ermittlung basiert daher lediglich auf Orten und Events, bei denen Sie sich eingecheckt haben.",
-                            "Die Check-in-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakttagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden.",
+                            "Die Check-in-Funktion, das Abrufen von PCR- und Schnelltestergebnissen sowie die Nutzung des Kontakt-Tagebuchs sind nicht von der Inkompatibilität betroffen und können normal genutzt werden.",
                             "Mögliche Ursachen für diese Nachricht sind:<ul><li>Ihrem Gerät fehlt die Hardware, die für Bluetooth Low Energy notwendig ist.</li><li>Ihrem Gerät fehlt die Software, die benötigt wird, um die Bluetooth Low Energy-Funktionen Ihrer Hardware zu benutzen.</li><li>Sie führen die App im Android-Emulator aus.</li></ul>",
                             "Um das Problem zu beheben, aktualisieren Sie bitte auf die neuste Version des Betriebssystems für Ihr Gerät. Wenn das nicht weiterhilft, <a href='https://support.google.com/android/answer/3094742?hl=de'>wenden Sie sich bitte an Ihren Gerätehersteller</a>.",
                             "<hr/>",
@@ -2012,6 +2012,14 @@
                             "Die Menge der Hinweise zum Kontakt-Tagebuch bestätigt die aktive Unterstützung der Community und zeigt, dass diese neue Funktion positiv von den Benutzer*innen der App angenommen wird.",
                             "<hr> Weitere Informationen zur Bedienung des Kontakt-Tagebuchs finden Sie in <a href='../blog/2020-12-28-corona-warn-app-version-1-10/' target='_blank' >diesem</a> Blog Post."
                         ]
+                    },
+                    {
+                        "title": "Wie kann ich Einträge im Kontakt-Tagebuch bearbeiten oder löschen?",
+                        "anchor": "contact_diary_edit",
+                        "active": false,
+                        "textblock": [
+                            "<ul><li>Wählen Sie 'Tagebuch' in der unteren Navigationsleiste</li><li>Tippen Sie auf das Drei-Punkte-Symbol oben rechts</li><li>Wählen Sie entweder 'Personen bearbeiten' oder 'Orte bearbeiten'.</li><li>Einzelne Einträge können bearbeitet oder gelöscht werden</li><li>Die komplette Liste kann auch gelöscht werden</li></ul>"
+                        ]
                     }
                 ]
             },
@@ -2751,9 +2759,9 @@
             ],
             "K": [
                 {
-                    "term": "Kontakttagebuch",
+                    "term": "Kontakt-Tagebuch",
                     "anchor": "contact_diary",
-                    "description": "Im Kontakttagebuch lassen sich Treffen und Kontakte einfach pro Tag der vergangenen 14 Tage festhalten. Darüber hinaus werden hier auch u.&nbsp;a. Events oder Risikowarnungen angezeigt. Die Informationen können über eine Export-Funktion des Kontakttagebuchs manuell mit dem Gesundheitsamt geteilt werden."
+                    "description": "Im Kontakt-Tagebuch lassen sich Treffen und Kontakte einfach pro Tag der vergangenen 14 Tage festhalten. Darüber hinaus werden hier auch u.&nbsp;a. Events oder Risikowarnungen angezeigt. Die Informationen können über eine Export-Funktion des Kontakt-Tagebuchs manuell mit dem Gesundheitsamt geteilt werden."
                 },
                 {
                     "term": "kurzlebige zufällige Bluetooth-ID",
