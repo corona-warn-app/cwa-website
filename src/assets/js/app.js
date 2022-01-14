@@ -149,8 +149,18 @@ $(document).ready(function(){
         });
 
         // show all matches
+        if (show.length === 0) {
+            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
+                $(title).hide();
+            });
+        }
         if (show.length > 0) {
+            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
+                $(title).hide();
+            });
             document.querySelectorAll(show).forEach((div) => {
+                const accordion = $(div).parent().get(0)
+                $(accordion).prev("h2").show();
                 $(div).show({duration: 300});
             });
         }
