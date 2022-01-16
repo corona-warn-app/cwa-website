@@ -149,8 +149,22 @@ $(document).ready(function(){
         });
 
         // show all matches
+        if (show.length === 0) {
+            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
+                $(title).hide();
+                $('#no_results').removeClass("d-none");
+                $('#collapseAll').addClass("d-none");
+            });
+        }
         if (show.length > 0) {
+            if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
+            if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
+            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
+                $(title).hide();
+            });
             document.querySelectorAll(show).forEach((div) => {
+                const accordion = $(div).parent().get(0)
+                $(accordion).prev("h2").show();
                 $(div).show({duration: 300});
             });
         }
