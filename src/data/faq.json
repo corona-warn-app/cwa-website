@@ -15,6 +15,78 @@
             }},
         "sections": [
             {
+                "title": "In a nutshell",
+                "id": "in_short",
+                "active": false,
+                "accordion": [
+                    {
+                        "title": "In a nutshell",
+                        "anchor": "in_a_nutshell",
+                        "active": false,
+                        "textblock": [
+                            "<h3>Contact tracking („Tracing“)</h3>",
+                            "<hr>",
+                            "<b>How do I ensure error-free use?</b>",
+                            "To ensure error-free use of the Corona-Warn-App as part of contact tracking, always use the latest version of the app and keep your device's operating system up to date. In the settings of your device, activate the background update, Bluetooth and for Android devices up to and including Android 10 also the location detection. Then, within the Corona-Warn-App, enable risk detection and carry your device with you when you leave the house! Open the app once a day to check for regular risk status updates.",
+                            "<b>How does contact tracking work with the CWA?</b>",
+                            "The Corona-Warn-App contact tracking is based on three different functions. Firstly, the app offers Bluetooth-based contact tracking to record the distance and duration of encounters. Additionally, there is a check-in functionality that takes into account the increased risk of infection indoors. Furthermore, you have the possibility to keep a contact diary in the Corona-Warn-App, which serves as a memory aid and is automatically filled with entries from the check-in function if desired. You can find more information about the check-in function here: <a href='#check_in' target='_blank'>FAQ: Event Check-In</a>",
+                            "<b>How will I be warned?</b>",
+                            "If a person you have previously encountered shares their positive test result in the Corona-Warn-App, you will receive an alert. You'll see the alert in the risk card on the status page of the app, and you'll also receive a push notification for higher-risk encounters if you allow it in the settings.",
+                            "<b>Why does the risk warning remain despite a negative test result?</b>",
+                            "A risk warning is shown to you for up to 14 days and disappears afterwards. The risk tile shows you your risk of infection, while the test tile shows your infection status. Therefore, the warning itself is unaffected by a negative test result. You have no way to remove the warning manually or with a negative test result.",
+                            "<b>Exposure with low-risk </b>",
+                            "In the case of a low-risk encounter, the risk card remains green because there is no acute need for action on their part. The risk of such an encounter is classified as low due to the duration of the encounter and the distance between the devices. You are still advised to adhere to the general distance and hygiene rules. You can find these by tapping on the risk card.",
+                            "<b>Exposure with increased risk</b>",
+                            "In an encounter with increased risk, the risk card turns red. You can find the corresponding action instructions by tapping on the risk card.",
+                            "<div class='container'><div class='row'><div class='col-sm'><a href='../../assets/img/faq/low_risk_en.png' target='_blank'><figure><img class='img-fluid' src='../../assets/img/faq/low_risk_preview_en.png' alt='image'></a><figcaption aria-hidden='true'><em>Click on the image to get a complete view</em></figcaption></figure></div><div class='col-sm'><a href='../../assets/img/faq/high_risk_en.png' target='_blank'><figure><img class='img-fluid' src='../../assets/img/faq/high_risk_preview_en.png' alt='image'></a><figcaption aria-hidden='true'><em>Click on the image to get a complete view</em></figcaption></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/img/faq/hr_en.png' alt='image'><figcaption aria-hidden='true'><em>The hygiene rules are displayed in the Corona-Warn-App</em></figcaption></figure></div></div></div>",
+                            "You can find more information in the FAQ: <a href ='#red_card_how_to_test' target='_blank'>Red Card? How to go through Corona testing</a>",
+                            "<b>How the warning works</b>",
+                            "In simple terms, an encounter with increased risk occurs when a person has been in the vicinity of a subsequently tested positive person for more than 10 minutes at a distance of less than 2 meters. Additionally, you will be warned if a positive test result was shared by a person who attended an event with you. A detailed description of the calculation of the risk of infection can be found in the FAQ: <a href='#encounter_19_calc' target='_blank'>How does the app calculate the risk (version >=1.9)?</a> and <a href ='#encounter_criteria' target='_blank'>By which criteria are encounters evaluated and how do the recommendations for action differ?</a>",
+                            "<b>Why is it only days later that I am shown that I have had a risk encounter?</b>",
+                            "The timing of when you are told when the risk encounter occurred is dependent on when a person who tests positive for COVID-19 releases their test result for sharing in the Corona-Warn-App. Therefore, users benefit from those who test positive sharing their result early. Only then will all people who have had contact with the person who tested positive in the last 14 days be warned retroactively. The app does not provide a real-time warning.",
+                            "<b>Why am I not shown the exact time and location of the risk contact during risk determination?</b>",
+                            "The Corona-Warn-App uses functions of the Google and Apple operating systems to perform the risk calculation. For data protection reasons, these functions do not offer the possibility to record location and time information.<br>You will receive information about the last day on which a risk encounter took place. You can enter places and persons in the contact diary. You can find more information here: <a href='#personal_data' target='_blank'>What personal data is stored in the app?</a>",
+                            "<b>How often is the risk status updated?</b>",
+                            "The risk status is automatically updated up to 6 times a day if a WLAN connection is available. In the case of a mobile Internet connection, the risk status is only queried once a day. You can find more information here: <a href='#risk_update_24' targer='_blank'>How often is the risk status updated?</a>",
+                            "<b>How do different risk assessments arise among users who have been in the same place?</b>",
+                            "Deviating infection risk scores can have multiple causes, but do not affect the effectiveness of the Corona-Warn-App.",
+                            "The assessment of a possible risk of infection depends on the detected contact duration and the determined distance between the smartphones. The determination of the distance is also influenced by the orientation of the two smartphone antennas to each other. Therefore, this aspect of the risk assessment is highly dependent on the exact spatial location of the smartphones involved. You can find more information here: <a href='#dissimilar_indication_of_risk_status' target='_blank'>Dissimilar indication of risk status</a>",
+                            "<br>",
+                            "<h3>Testing</h3>",
+                            "<hr>",
+                            "<b>Am I entitled to a PCR test?</b>",
+                            "After consultation with your family doctor's practice, the on-call health insurance service (telephone number 116 117), or your public health department, a test can be arranged if necessary. This is not necessarily a PCR test.  ",
+                            "<b>Where can I get tested?</b>",
+                            "Test sites connected to the Corona-Warn-App can be found on both the Quick Test Portal and the Federal Ministry of Health site, although the test sites listed there are not guaranteed to be connected to the Corona Warning App. See <a href='#where_can_i_get_tested' target='_blank'>FAQ: Where can I get tested?</a>",
+                            "<b>How can I warn?</b>",
+                            "The idea behind the app is to warn other users of the app by voluntarily sharing your positive test result in the app. This will alert all users of the app that you have encountered in the past 14 days and have been in contact with long enough. For detailed information on the criteria for risk encounters, please refer to our FAQ: <a href='#encounter_criteria' target='_blank'>By which criteria are encounters evaluated and how do the recommendations for action differ?</a>",
+                            "<b>What to do if the test is not delivered?</b>",
+                            "<ul>",
+                            "<li><b>Report the problem</b></li>",
+                            "If you have not received your test result or if no corresponding EU COVID Digital Test Certificate has been sent following the test result, you can report this or other problems on the Quick Test Portal page, among others. You can find more details here in the FAQ: <a href='#test_result_issues' target='_blank'>What can I do if I have not received my test result or test certificate?</a>",
+                            "<li><b>Obtain the test result by other means</b></li>",
+                            "If you did not receive the test result through the Corona-Warn-App, please contact your local health care professional, testing center, or health department. Even if your positive test result is not available in the Corona-Warn-App, but you have been notified of a positive test result outside of the Corona-Warn-App, you can still warn others via the app. For more details, please see the FAQ: <a href='#warn_for_others' target='_blank'>How can I warn for others?</a>",
+                            "</ul>",
+                            "<b>Can multiple tests be registered?</b>",
+                            "You can scan one personal PCR and one rapid test. Each QR code for a test can only be scanned on one device. If the test result is subsequently deleted, it can be recovered from the recycle bin for 30 days, but cannot be scanned on another device. This is to prevent misuse and false positives. You can find more information here: <a href ='#QRcodes' target='_blank'>What to do with several PCR-Test QR codes?</a>",
+                            "<br>",
+                            "<h3>Certificates</h3>",
+                            "<hr>",
+                            "<b>Which certificates are supported?</b>",
+                            "The Corona-Warn-App supports all three types of EU COVID digital certificates, i.e. vaccination, recovery and test certificates. You can find more information here: <a href='#eu_dcc_which' target='_blank'>Which EU certificates are supported?</a>",
+                            "<b>How long is my certificate valid?</b>",
+                            "We basically distinguish between the technical expiry date of the certificate and the validity in terms of the duration of protection. The technical expiry date can be found in the certificate details. The duration of protection is currently still the subject of scientific research and depends on factors such as the vaccine administered and age. Your certificate will show as valid during validation if the technical validity has not expired and your certificate complies with the current duration of protection rules, among others. You can find more information here: <a href='#eu_dcc_validity' target='_blank'>How long is my certificate valid?</a>",
+                            "<b>What do I do if incorrect data has been entered in my certificate?</b>",
+                            "When issuing your certificate, please ensure that data such as name, title and date of birth are entered correctly. Typing errors in this data mean that the app cannot assign the certificates to a single person. Have typos in the certificates corrected directly by the issuer. For vaccination certificates, please also ensure that the number of the vaccination is entered correctly. For example, a 3rd vaccination should be entered as '3 of 3' regardless of the vaccine.",
+                            "<b>How can I check if my certificate is valid?</b>",
+                            "Before a trip, you can check whether your certificates are valid in a selected country at the time of your trip. The parameters of the certificate are compared with the stored rules. When checking your vaccination certificate, make sure that it is the vaccination certificate that confirms full vaccination protection and make sure that you check your certificate for the correct date of travel. You can find more information here: <a href='#cert_eu_travel' target='_blank'>Is my certificate valid in the country I am traveling to?</a> and <a href='#dcc_no_rules' target='_blank'>Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?</a>",
+                            "<b>Why can't I scan my QR code?</b>",
+                            "If your QR code doesn't scan right away, make sure you have good lighting conditions and hold the QR code about 30 cm away from the camera. You can find more tips here: <a href='#scan_tips' target='_blank'>Why does the CWA not scan a QR code? Why does the QR code scanner not respond?</a>"
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Support",
                 "id": "support",
                 "active": false,
@@ -943,7 +1015,7 @@
                             "<b>Can the user see what the warning is based on, i.e. which scanned Event QR code caused the warning?</b>",
                             "Yes, this is displayed in the contact journal. This allows users to determine, for example, whether other family members that were also present but do not have the app (such as children) were also put at risk. ",
                             "<b>Can this information be voluntarily communicated to the health authority? If so, what information is flowing?</b>",
-                            "After a red tile warning (high risk) you should quarantine and have a PCR test taken immediately. If the test result is positive, a report is sent to the health authority by the doctor/test center. It is recommended that you share the positive test result via the CWA. In addition, the information can be also be shared manually with the health department using the existing export function of the contact diary.",
+                            "After a red tile warning (high risk) you should quarantine and have a PCR test taken immediately. If the test result is positive, a report is sent to the health authority by the doctor/test center. It is recommended that you share the positive test result via the CWA. In addition, the information can be also be shared manually with the health department using the existing export function of the contact journal.",
                             "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
                         ]
                     },
@@ -1932,6 +2004,14 @@
                             "The number of comments regarding the contact journal confirms the active support of our community. We are pleased this new function is positively received by the app's users.",
                             "<hr> More information on how to use the contact journal can be found in <a href='../blog/2020-12-28-corona-warn-app-version-1-10/' target='_blank' >this</a> blog post."
                         ]
+                    },
+                    {
+                        "title": "How can I edit or delete entries from the Contact Journal?",
+                        "anchor": "contact_diary_edit",
+                        "active": false,
+                        "textblock": [
+                            "<ul><li>Select 'Journal' in the bottom navigation bar</li><li>Tap the three-dot symbol on the top right</li><li>Select either 'Edit People' or 'Edit Places'</li><li>Individual entries can be edited or deleted</li><li>The complete list can also be deleted</li></ul>"
+                        ]
                     }
                 ]
             },
@@ -2524,9 +2604,9 @@
                     "description": "In connection with the CWA, a so-called community management is operated via various channels. This ensures that open questions, technical challenges or difficulties in using the app are recorded and answered satisfactorily for the user."
                 },
                 {
-                    "term": "Contact Diary",
+                    "term": "Contact Journal",
                     "anchor": "contact_diary",
-                    "description": "In the contact diary, meetings and contacts can be easily recorded per day of the past 14 days. In addition, events or risk warnings, among other things, are also displayed here. The information can be shared manually with the health department via an export function of the contact diary."
+                    "description": "In the contact journal, meetings and contacts can be easily recorded per day of the past 14 days. In addition, events or risk warnings, among other things, are also displayed here. The information can be shared manually with the health department via an export function of the contact journal."
                 },
                 {
                     "term": "Corona Virus",

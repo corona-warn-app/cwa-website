@@ -63,7 +63,7 @@ The app exports the contact list in RTF (Rich Text Format) which is widely used.
 ### Important data protection notices
 
 Sharing contact lists is sensitive. Users are therefore well advised to read the information on data processing. This information  can be found in the Contact Journal by tapping the button at the top right corner under *Info*. 
-Note the following **important message** users will see on the app: *Please think carefully about with whom you share the information recorded in your contact diary, and how you share it. The information is meant to help you remember – it is not intended for anyone else. If the public health office (Gesundheitsamt) asks for your help with contact tracing, then sharing your entries is appropriate.*
+Note the following **important message** users will see on the app: *Please think carefully about with whom you share the information recorded in your contact journal, and how you share it. The information is meant to help you remember – it is not intended for anyone else. If the public health office (Gesundheitsamt) asks for your help with contact tracing, then sharing your entries is appropriate.*
 
 *Private individuals as well as companies are not allowed to make you disclose the information you have recorded. Please respect the wishes of anyone who does not want to be recorded in your contact journal.* 
 
