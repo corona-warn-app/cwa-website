@@ -3,6 +3,8 @@ import throttle from 'lodash.throttle';
 import 'slick-carousel';
 
 window.jQuery = $;
+let expandStatus = true;
+
 const deviceType = () => {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -273,7 +275,15 @@ $(document).ready(function(){
     // collapses/expands all accordions on button click in the FAQ
     $( document ).ready(function() {
         $("#collapseAll").click( function() {
-            $('.accordion-header').toggleClass('active')
+            const accordions = document.querySelectorAll(".accordion-header");
+            accordions.forEach(accordion => {
+                if(expandStatus) {
+                    if(!$(accordion).hasClass('active')) $(accordion).addClass('active');
+                } else {
+                    if($(accordion).hasClass('active')) $(accordion).removeClass('active');
+                }
+            })
+            expandStatus = !expandStatus;    
         });
 
     });
