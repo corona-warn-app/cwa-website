@@ -103,7 +103,7 @@ export default {
 		}
 	},
 	noData: {
-		text: 'No Data to display'
+		text: (documentLang == "de") ? `Keine Daten`: 'No data to display'
 	},
 	dataLabels: {
 		enabled: false
