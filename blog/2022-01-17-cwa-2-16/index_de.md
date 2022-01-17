@@ -7,6 +7,8 @@ author: Hanna Heine, 10 Uhr
 layout: blog
 ---
 
+*Aktualisiert am 17. Januar 2022 um 12 Uhr*
+
 Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat Version 2.16 der Corona-Warn-App (CWA) veröffentlicht. Mit dem Update zeigt die CWA Nutzer\*innen im Zertifikatsbereich nun ihren **aktuellen Status-Nachweis** an. Wenn Nutzer\*innen ein gültiges Impf- oder Genesenenzertifikat und ein Testzertifikat in der App hinterlegt haben, werden diese in der Zertifikatsübersicht in einer kombinierten Anzeige dargestellt. 
 
 <!-- overview -->
@@ -61,9 +63,11 @@ Nach dem Scannen des QR-Codes öffnet sich automatisch ein Fenster, in dem sie d
 
 ## Deutlicher Hinweis in der App bei Veränderung des Risikostatus
 
-Des Weiteren bekommen Nutzer\*innen im Falle einer roten Kachel ab Version 2.16 auch einen **Hinweis über die Änderung des Risikostatus, wenn sie die App geöffnet haben**, während die Risikoermittlung läuft. Damit soll vermieden werden, dass Nutzer*innen die Warnung übersehen, weil sie beispielsweise gerade unter dem Reiter „Zertifikate“ sind und von dort die CWA wieder verlassen, ohne noch einmal auf ihre Statusanzeige zu schauen. 
+Des Weiteren bekommen iOS-Nutzer\*innen im Falle einer roten Kachel ab Version 2.16 auch einen **Hinweis über die Änderung des Risikostatus, wenn sie die App geöffnet haben**, während die Risikoermittlung läuft. Damit soll vermieden werden, dass Nutzer*innen die Warnung übersehen, weil sie beispielsweise gerade unter dem Reiter „Zertifikate“ sind und von dort die CWA wieder verlassen, ohne noch einmal auf ihre Statusanzeige zu schauen. 
 
 In der Vergangenheit hat die CWA Nutzer\*innen entsprechend benachrichtigt, wenn die App geschlossen war, nicht aber, wenn sie die CWA geöffnet hatten. Nun weist sie die Nutzer\*innen mit einem roten Punkt daraufhin, dass es Neuigkeiten im Statusbereich gibt.  
+
+Android-Nutzer\*innen steht dieses Feature ab Version 2.17 der CWA zur Verfügung.
 
 <br></br>
 <center> 
