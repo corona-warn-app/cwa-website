@@ -45,7 +45,7 @@ When users tap on their certificate, they also see **further information** that 
 <br></br>
 
 
-If users have a **valid vaccination or recovery certificate and a valid test certificate** stored in the app, these will be shown in a **combined display** from version 2.16 onwards. Users can then switch between the QR code of the “2G certificate (vaccination or recovery certificate) and that of the test certificate in order to quickly and easily provide 2G+ proof. Both QR codes must be verified on site by the CovPassCheck app along with presentation of the ID card if 2G+ proof is required. 
+If users have a **valid vaccination or recovery certificate and a valid test certificate** stored in the app, these will be shown in a **combined display** from version 2.16 onwards. Users can then switch between the QR code of the "2G certificate" (vaccination or recovery certificate) and that of the test certificate in order to quickly and easily provide 2G+ proof. Both QR codes must be verified on site by the CovPassCheck app along with presentation of the ID card if 2G+ proof is required. 
 
 **Please note:** For data protection reasons, it is not apparent whether the person has a vaccination or recovery certificate when the certificates are checked by the CovPassCheck-App. Those scanning the QR codes can only see whether the certificate is valid or not.
 
@@ -58,7 +58,7 @@ If users have a **valid vaccination or recovery certificate and a valid test cer
 
 **A negative test result is not a test certificate.** A test certificate officially confirms a negative test result in the form of a QR code in the Corona-Warn-App. Users can **request the official test certificate for PCR and rapid tests when registering a test in the Corona-Warn-App**. To do so, they can open the universal QR code scanner in the middle of the CWA’s tab bar and scan the QR code to register the test. They receive this QR code either during the booking of the test or during testing, given that the provider is connected to the Corona-Warn-App. 
 
-After scanning the QR code, a window opens automatically where users can request the test certificate. For more information, see this blog: [Project team releases rapid test partner search and Corona-Warn-App version 2.4 with digital test certificate](https://www.coronawarn.app/en/blog/2021-06-24-cwa-version-2-4/).
+After scanning the QR code, a window opens automatically where users can request the test certificate. For more information, see this blog: [Project team releases rapid test partner search and Corona-Warn-App version 2.4 with digital test certificate](/en/blog/2021-06-24-cwa-version-2-4/).
 
 ## Clear indication in the app when the risk status has changed 
 

@@ -59,7 +59,7 @@ Nutzer\*innen können dann über den Schalter zwischen dem QR-Code des „2G-Zer
 
 **Ein negatives Testergebnis ist kein Testzertifikat.** Ein Testzertifikat bestätigt ein negatives Testergebnis offiziell in Form eines QR-Codes in der Corona-Warn-App. Nutzer*innen können das offizielle Testzertifikat für PCR- und Schnelltests anfordern, wenn sie einen **Test in der Corona-Warn-App registrieren.** Dafür können sie den universellen QR-Code-Scanner in der Mitte der Registerkarte der CWA öffnen und den QR-Code zur Test-Registrierung scannen. Den erhalten sie entweder schon während der Buchung des Tests oder vor Ort beim Testen, sofern der Anbieter an die Corona-Warn-App angeschlossen ist. 
 
-Nach dem Scannen des QR-Codes öffnet sich automatisch ein Fenster, in dem sie das **Testzertifikat anfordern** können. Mehr Informationen finden Sie in diesem Blog: [Projektteam veröffentlicht Online-Schnelltestpartnersuche und Corona-Warn-App Version 2.4 mit digitalem Testzertifikat](https://www.coronawarn.app/de/blog/2021-06-24-cwa-version-2-4/).
+Nach dem Scannen des QR-Codes öffnet sich automatisch ein Fenster, in dem sie das **Testzertifikat anfordern** können. Mehr Informationen finden Sie in diesem Blog: [Projektteam veröffentlicht Online-Schnelltestpartnersuche und Corona-Warn-App Version 2.4 mit digitalem Testzertifikat](/de/blog/2021-06-24-cwa-version-2-4/).
 
 ## Deutlicher Hinweis in der App bei Veränderung des Risikostatus
 
