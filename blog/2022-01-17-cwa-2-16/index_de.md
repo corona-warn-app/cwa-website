@@ -7,6 +7,8 @@ author: Hanna Heine, 10 Uhr
 layout: blog
 ---
 
+*Aktualisiert am 17. Januar 2022 um 12 Uhr*
+
 Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat Version 2.16 der Corona-Warn-App (CWA) veröffentlicht. Mit dem Update zeigt die CWA Nutzer\*innen im Zertifikatsbereich nun ihren **aktuellen Status-Nachweis** an. Wenn Nutzer\*innen ein gültiges Impf- oder Genesenenzertifikat und ein Testzertifikat in der App hinterlegt haben, werden diese in der Zertifikatsübersicht in einer kombinierten Anzeige dargestellt. 
 
 <!-- overview -->
