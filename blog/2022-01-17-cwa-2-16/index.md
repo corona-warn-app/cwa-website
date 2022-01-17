@@ -7,6 +7,8 @@ author: Hanna Heine, 10 Uhr
 layout: blog
 ---
 
+*Updated on January 17, 2022 at 12 pm*
+
 The project team of Robert Koch Institute, Deutsche Telekom, and SAP have released **version 2.16 of the Corona-Warn-App (CWA)**. With the update, the CWA now shows users their **current status verification** in the certificate area. If users have a valid vaccination or recovery certificate and a test certificate stored in the app, these are shown in a **combined display** in the certificate overview.
 
 <!-- overview -->
@@ -60,9 +62,11 @@ After scanning the QR code, a window opens automatically where users can request
 
 ## Clear indication in the app when the risk status has changed 
 
-In addition, users will now receive a notification if they have an increased risk of infection **even if the app is open while the risk assessment is running**. This is to prevent users from overlooking the warning because, for example, they are currently on the "Certificates" tab and leave the CWA from there without looking at their status display again.
+In addition, iOS users will now receive a notification if they have an increased risk of infection **even if the app is open while the risk assessment is running**. This is to prevent users from overlooking the warning because, for example, they are currently on the "Certificates" tab and leave the CWA from there without looking at their status display again.
 
-In the past, the CWA notified users accordingly if the app was closed, but not if they had opened the CWA. Now, a red dot indicates users that there is news in the status area.  
+In the past, the CWA notified users accordingly if the app was closed, but not if they had opened the CWA. Now, a red dot indicates users that there is news in the status area.
+
+Android users will have this feature with version 2.17 of the Corona-Warn-App.
 
 
 <br></br>
