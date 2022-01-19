@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App version 2.16 shows users’ current status evidence
 page-description: "Corona-Warn-App version 2.16 shows users’ current status evidence"
 page-name: cwa-2-16
 page-name_de: cwa-2-16
-author: Hanna Heine, 10 Uhr
+author: Hanna Heine, 10 am
 layout: blog
 ---
 
