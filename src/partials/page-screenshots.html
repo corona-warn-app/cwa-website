@@ -51,7 +51,11 @@
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
                             {{#each images}}
                                 <div class="col-6 col-sm-4 col-md-3 mb-4">
+                                    {{#if scrollImage}}
+                                    <a href="{{{scrollImage}}}.png" data-lightbox="{{{../anchor}}}">
+                                    {{else}}
                                     <a href="{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                    {{/if}}
                                         <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
                                     </a>
                                 </div>
@@ -84,7 +88,11 @@
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
                         {{#each images}}
                             <div class="col-6 col-sm-4 col-md-3 mb-4">
+                                {{#if scrollImage}}
+                                <a href="{{{scrollImage}}}.png" data-lightbox="{{{../anchor}}}">
+                                {{else}}
                                 <a href="{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                {{/if}}
                                     <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
                                 </a>
                             </div>
