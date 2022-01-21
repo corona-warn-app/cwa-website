@@ -98,6 +98,21 @@
     </div>
   </div>
   {{/if}}
+  {{#if page-contents.section-contribute-listing.box2}}
+  <div class="container pt-5">
+    <div
+      class="box {{#if page-contents.section-contribute-listing.box2.class}}box_{{page-contents.section-contribute-listing.box2.class}}{{/if}}">
+      <div class="row">
+        <div class="col col-12 col-sm-6 col-md-4">
+          {{> image-component image=page-contents.section-contribute-listing.box2.image}}
+        </div>
+        <div class="col col-12 col-sm-6 col-md-5">
+          {{> text-component page-contents.section-contribute-listing.box2.content}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
 </section>
 <section class="section-intersect section_bg-white comment">
   <div class="container text-center">
