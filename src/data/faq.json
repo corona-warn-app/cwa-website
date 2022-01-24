@@ -214,6 +214,17 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
+                        "title": "Why do I get the error message 'VC_ALREADY_REGISTERED', 'TC_ALREADY_REGISTERED' or 'RC_ALREADY_REGISTERED' when scanning a certificate?",
+                        "anchor": "",
+                        "active": true,
+                        "textblock": [
+                            "There have been an increasing number of messages reporting receiving this error message and not being able to find the scanned certificate. The reason for this error is that the certificate is already in the Corona-Warn-App, but it was saved under a 'different person'.",
+                            "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/android/PersonOverviewFragment_one_person.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/android/PersonDetailsFragment_cwa_2.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/ios/iPhone 13-screenshot_recovery_certificate_valid_details_part2.png' alt='image'></div></div></div>",
+                            "<b>How can this be checked?</b>",
+                            "In the Corona-Warn-App, the certificates are displayed and grouped at different levels: <ul><li><b>'Certificates' tab</b>: Under the 'Certificates' tab, users can see all existing certificates grouped by person. Check whether multiple persons are visible. Errors often occur when issuing certificates, for example, if a second name is used irregularly or the date of birth is given differently. Any discrepancies will result in certificates being assigned to a 'new person'.</li><li><b>All certificates of one person</b>: By selecting the person, you can see all the certificates that exist for that person in the app. Check under which person the certificate you scanned can be found.</li><li><b>Certificate details</b>: By selecting a certificate, you can view all details about the respective certificate. Check the standardized name and date of birth of the certificate. These data must be the same for all certificates so that they are displayed correctly under all certificates of a person.</li></ul>"
+                        ]
+                    },
+                    {
                         "title": "Which EU certificates are supported?",
                         "anchor": "eu_dcc_which",
                         "active": false,
