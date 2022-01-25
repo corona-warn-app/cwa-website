@@ -28,7 +28,7 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need the Node.js 14 Maintenance LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. ([cwa-website](https://github.com/corona-warn-app/cwa-website) is not ready for the Node.js 16 Active LTS version.) Downloads for Node.js 14.18.2 are available from the [Node.js - Previous Releases](https://nodejs.org/en/download/releases/) page.
+You need the Node.js 14 Maintenance LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. ([cwa-website](https://github.com/corona-warn-app/cwa-website) is not ready for the Node.js 16 Active LTS version.) Downloads for Node.js 14.18.3 are available from the [Node.js - Previous Releases](https://nodejs.org/en/download/releases/) page.
 
 ### Getting started
 
