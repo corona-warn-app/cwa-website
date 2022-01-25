@@ -2,8 +2,11 @@ import $ from 'jquery';
 
 window.jQuery = $;
 
+let lbImage;
+
 //Sets the option selected according to the version of the application being consulted
 $(document).ready(function () {
+    lbImage = $('.lb.image').attr('src');
     const version = window.location.pathname.split(".")[0].split("/")[3].replace("-", ".");
     if (version == '') $('select[name="archived-screenshots"]').children().last().prop('selected', 'selected');
     else {
@@ -16,7 +19,18 @@ $(document).ready(function () {
         location.hash = location.hash.replace("#dropdown", "");
         $(window).scrollTop(0);
     }
+
+    //Insert zoom icon on lightbox container
+    $('<a class="lb-zoom" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="lightgrey" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></a>').insertBefore($('.lb-close'))
 });
+
+//Update lb-zoom href
+setInterval(() => {
+    if(lbImage != $('.lb-image').attr('src')) {
+        lbImage = $('.lb-image').attr('src');
+        $("a.lb-zoom").attr("href", lbImage)
+    }
+}, 1000);
 
 // Screenshots screen: redirect to selected option's value after changing version in dropdown
 $('select[name="archived-screenshots"]').on("change", function (e) {

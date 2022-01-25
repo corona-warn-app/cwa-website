@@ -204,3 +204,14 @@ body.lb-disable-scrolling {
     opacity: 1;
   }
   
+  .lb-data .lb-zoom {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding-top: 30px;
+  }
+  
+  .lb-data .lb-zoom svg:hover {
+    cursor: pointer;
+    fill: white;
+  }
