@@ -11,3 +11,41 @@
 #no_results p {
     padding: 15px;
 }
+
+.searchbar-icon {
+    background-color: white;
+    border-style: solid none solid solid;
+    height: 56px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    svg {
+        margin: 0 auto;
+    }
+}
+
+.searchbar-input {
+    background-color: white;
+    border-style: solid solid solid none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#faq-search, #faq-topic, #faq-submit {
+    border-radius: 6px;
+}
+
+a.glossary-link {
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent url(../img/icons/arrow-right-light.svg) center right no-repeat;
+    padding-right: 18px;
+}
+
+a.section-link {
+    text-decoration: none;
+    color: black;
+}
+
+a.topics-link {
+    text-decoration: none;
+}
