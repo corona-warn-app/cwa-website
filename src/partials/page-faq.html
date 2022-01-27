@@ -7,7 +7,7 @@
         <form method="get" id="faq-search-form" class="w-50">
           <div class="input-group mb-5">
           <input type="text" class="form-control mr-3 w-50" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
-          <select class="form-select mr-3 w-25" id="faq-topic">
+          <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
             <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
             {{#each page-contents.section-main.topics}}
               <option value="{{anchor}}">{{title}}</option>
@@ -31,7 +31,7 @@
               <p><a href="results/#{{anchor}}" class="section-link">{{title}}</a></p>
             {{/if}}
           {{/each}}
-          <p><a href="results/#{{anchor}}" class="topics-link">{{../page-contents.section-main.texts.goto-topics}}</a></p>
+          <p><a href="results" class="no-decoration">{{../page-contents.section-main.texts.goto-topics}}</a></p>
         </div>
         {{/each}}
       </div>

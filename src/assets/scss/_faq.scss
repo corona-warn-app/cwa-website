@@ -46,6 +46,35 @@ a.section-link {
     color: black;
 }
 
-a.topics-link {
+a.no-decoration {
     text-decoration: none;
+}
+
+.topic-list {
+    padding-left: 1em;
+    &.active {
+        border-left: #C4C4C4 4px solid;
+    }
+}
+
+.section-item {
+    padding-left: 1em;
+    &.active {
+        border-left: #0074A3 4px solid;
+    }
+}
+
+.topic-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.breadcrumbs {
+    color: #0074A3;
+}
+
+.text-black {
+    color: black!important;
 }

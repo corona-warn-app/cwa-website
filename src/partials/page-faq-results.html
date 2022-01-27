@@ -1,6 +1,66 @@
 {{#if page-contents}}
+<div class="container container_flex">
+  <aside class="side-menu js-menu" id="side-menu">
+    <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
+    <ul class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
+      {{#each page-contents.section-main.topics}}
+        <div id="{{anchor}}" class="topic-list">
+          <b>{{title}}</b>
+        </div>
+        {{#each sections}}
+          <div class="section-item"><a href="#{{anchor}}" class="no-decoration">{{title}}</a></div>
+        {{/each}}
+        </br>
+      {{/each}}
+    </ul>
+    <p><a href="../../glossary/" class="glossary-link">{{page-contents.section-main.texts.glossary}}</a></p>
+  </aside>
   <main class="main">
-
+    <form method="get" id="faq-search-form" class="w-100">
+      <div class="input-group mb-5">
+        <input type="text" class="form-control mr-3 w-50" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+        <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
+          <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
+          {{#each page-contents.section-main.topics}}
+            <option value="{{anchor}}">{{title}}</option>
+          {{/each}}
+        </select>
+        <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
+      </div>
+    </form>
+    <div id="no_results" class="d-none">
+      <p>{{page-contents.section-main.texts.no-results}}</p>
+    </div>
+    <Button id="collapseAll" class="btn btn-secondary right-float mt-auto">{{page-contents.section-main.button-collapse.fields.collapse}}</Button>
+    {{#each page-contents.section-main.topics}}
+      <div id="{{anchor}}">
+      {{#each sections}} 
+        <p class="breadcrumbs"><a href="../" class="no-decoration"><b>{{../../page-contents.section-main.texts.faq}}</b></a> / <a href="#{{../anchor}}" class="no-decoration"><b>{{../title}}</b></a> / <b class="text-black">{{title}}</b></p>
+        <h3 class="topic-title" id="{{anchor}}">{{title}}</h3>
+        <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+          {{#each accordion}}
+            <div id="{{anchor}}-div">
+              <dt class="accordion-faq-header{{#if active}} active{{/if}}">
+                <h3 class="accordion-faq-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{{title}}}</h3>
+                <span class="accordion-faq-item-icon"></span>
+              </dt>
+              <dd class="accordion-faq-body">
+                <div class="accordion-faq-item-content">
+                  {{#if textblock}}
+                  {{#each textblock}}
+                  <p>{{{.}}}</p>
+                  {{/each}}
+                  {{/if}}
+                  <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
+                  <p><a href="#top">{{../../page-contents.section-main.texts.to_top}}</a></p>
+                </div>
+              </dd>
+            </div>
+          {{/each}}
+        </dl>
+      {{/each}}
+      </div>
+    {{/each}}
   </main>
 </div>
 {{/if}}
