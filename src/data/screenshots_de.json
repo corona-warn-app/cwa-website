@@ -11,8 +11,11 @@
             "textblock": [
                 "Verschaffen Sie sich mithilfe von Screenshots einen Überblick über die Funktionen, die die Corona-Warn-App mit Version 2.17 (verfügbar seit 2. Februar 2022) bietet. Bitte beachten Sie, dass die Screenshots für Android und iOS designbedingt leicht voneinander abweichen können.",
                 "Mit diesem Update stellen wir neue und erweiterte Funktionen zur Verfügung:",
-                "TODO <b>Status-Nachweis 2G+:</b> Wenn Sie ein gültiges Impf- oder Genesenenzertifikat haben und ein Testzertifikat in der App hinzufügen, so werden diese in der Zertifikatsübersicht in einer kombinierten Anzeige dargestellt. Sie können zwischen dem QR-Code des Impf-/Genesenenzertifikats und dem des Testzertifikats mit Hilfe eines Schalters wechseln. Beide QR-Codes müssen von der CovPassCheck-App geprüft werden, wenn ein 2G+-Nachweis erforderlich ist.",
-                "TODO <b>Sicherheitshinweis unterdrücken:</b> Mit Version 2.12 wurde die Anzeige eines Sicherheitshinweis eingeführt, falls auf Ihrem Smartphone Administratorrechte aktiv sind. Diesen Hinweis können Sie nun bis zum nächsten Update unterdrücken. Diese Funktion betrifft nur Android Geräte. Siehe <a href='#android_security_note' target='_blank'>Screenshot des Sicherheitshinweises</a>.",
+                "<b>Hinweise bei positivem Test:</b> Die Hinweise und Vorgehensweise bei einem positiven Testergebnis wurden überarbeitet.",
+                "<b>Statistik zu Auffrischimpfungen:</b> Neben den Statistiken für mindestens einmal geimpfte und vollständig geimpfte Personen, finden Sie jetzt auch die Anzahl der Personen, die eine Auffrischimpfung erhalten haben.",
+                "<b>Link zu Social Media:</b> Wenn Sie über die Corona-Warn-App auf dem Laufenden bleiben und sich mit anderen austauschen wollen, können Sie unseren Social-Media-Kanälen folgen. Sie finden jetzt auf der Startseite unter 'Mehr' einen Social-Media-Link.",
+                "<b>Löschdatum für Papierkorbinhalte</b>: Jedes Element, dass in den Papierkorb verschoben wird, wird nach 30 Tagen endgültig gelöscht. Dieses Löschdatum wird jetzt für jedes Element angezeigt.",
+                "<b>Nachricht bei erhöhtem Risiko</b>: Sie erhalten trotz geöffneter App eine Benachrichtigung, wenn ein erhöhtes Infektionsrisikio für Sie ermittelt wird. Damit soll vermieden werden, dass Sie die Risiko-Warnung auf der Status-Registerkarte übersehen, falls Sie sich gerade auf einer anderen Registerkarte befinden. Zusätzlich wird auf der Status-Registerkarte ein roter Punkt erscheinen, solange Sie diese noch nicht angeschaut haben. Diese Funktion wurde bereits in der letzten Version für iOS hinzugefügt und ist mit dieser Version nun auch für Android verfügbar.",
                 "Die auf dieser Seite zur Verfügung gestellten Bilder stehen zur freien Nutzung bereit."
             ]
         }
@@ -85,17 +88,18 @@
                 "title": "Aktuelle Zahlen",
                 "anchor": "android_stats",
                 "images": [
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_0", "alt": "Aktuelle Zahlen Bild 1 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_1", "alt": "Aktuelle Zahlen Bild 2 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_2", "alt": "Aktuelle Zahlen Bild 3 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_3", "alt": "Aktuelle Zahlen Bild 4 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_4", "alt": "Aktuelle Zahlen Bild 5 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_5", "alt": "Aktuelle Zahlen Bild 6 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_6", "alt": "Aktuelle Zahlen Bild 7 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_7", "alt": "Aktuelle Zahlen Bild 8 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_8", "alt": "Aktuelle Zahlen Bild 9 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_9", "alt": "Aktuelle Zahlen Bild 10 von 11" },
-                    { "filename": "/assets/screenshots/2-17/de/android/StatisticsExplanationFragment", "alt": "Aktuelle Zahlen Bild 11 von 11" }
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_0", "alt": "Aktuelle Zahlen Bild 1 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_1", "alt": "Aktuelle Zahlen Bild 2 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_2", "alt": "Aktuelle Zahlen Bild 3 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_3", "alt": "Aktuelle Zahlen Bild 4 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_4", "alt": "Aktuelle Zahlen Bild 5 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_5", "alt": "Aktuelle Zahlen Bild 6 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_6", "alt": "Aktuelle Zahlen Bild 7 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_7", "alt": "Aktuelle Zahlen Bild 8 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_8", "alt": "Aktuelle Zahlen Bild 9 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_booster", "alt": "Aktuelle Zahlen Bild 10 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/HomeFragment_statistics_card_9", "alt": "Aktuelle Zahlen Bild 11 von 12" },
+                    { "filename": "/assets/screenshots/2-17/de/android/StatisticsExplanationFragment", "alt": "Aktuelle Zahlen Bild 12 von 12" }
                 ]
             },
             {
@@ -337,18 +341,19 @@
                 "title": "Aktuelle Zahlen",
                 "anchor": "ios_stats",
                 "images": [
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_add_local_statistics", "alt": "Aktuelle Zahlen Bild 1 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_local_7day_values", "alt": "Aktuelle Zahlen Bild 2 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_7day_combined_incidences", "alt": "Aktuelle Zahlen Bild 3 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_intensive_care", "alt": "Aktuelle Zahlen Bild 4 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_confirmed_new_infections", "alt": "Aktuelle Zahlen Bild 5 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_key_submissions", "alt": "Aktuelle Zahlen Bild 6 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_7Day_rvalue", "alt": "Aktuelle Zahlen Bild 7 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_at_least_one_vaccination", "alt": "Aktuelle Zahlen Bild 8 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_fully_vaccinated", "alt": "Aktuelle Zahlen Bild 9 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_doses", "alt": "Aktuelle Zahlen Bild 10 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_info_screen_0001", "alt": "Aktuelle Zahlen Bild 11 von 12" },
-                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_info_screen_0002", "alt": "Aktuelle Zahlen Bild 12 von 12" }
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_add_local_statistics", "alt": "Aktuelle Zahlen Bild 1 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_local_7day_values", "alt": "Aktuelle Zahlen Bild 2 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_7day_combined_incidences", "alt": "Aktuelle Zahlen Bild 3 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_intensive_care", "alt": "Aktuelle Zahlen Bild 4 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_confirmed_new_infections", "alt": "Aktuelle Zahlen Bild 5 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_key_submissions", "alt": "Aktuelle Zahlen Bild 6 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_7Day_rvalue", "alt": "Aktuelle Zahlen Bild 7 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_at_least_one_vaccination", "alt": "Aktuelle Zahlen Bild 8 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_fully_vaccinated", "alt": "Aktuelle Zahlen Bild 9 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_booster_vaccination", "alt": "Aktuelle Zahlen Bild 10 von 13"},
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_doses", "alt": "Aktuelle Zahlen Bild 11 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_info_screen_0001", "alt": "Aktuelle Zahlen Bild 12 von 13" },
+                    { "filename": "/assets/screenshots/2-17/de/ios/iPhone 13-statistics_info_screen_0002", "alt": "Aktuelle Zahlen Bild 13 von 13" }
                 ]
             },
             {
