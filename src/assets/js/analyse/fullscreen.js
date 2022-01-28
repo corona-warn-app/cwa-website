@@ -13,6 +13,18 @@ $(document).on("click",".analyseBoard-fullscreen", function(e){
 	if (screenfull.isEnabled) screenfull.toggle($e.first());
 });
 
-
+$(window).on("resize", function () {
+	const $e = document.querySelector(".analyseBoard.fullscreen");
+	if($e) {
+		const padding = $($e).css('padding-top').replace("px","").split(" ");
+		let tPadding = 0;
+		padding.forEach(element => {
+			tPadding += parseInt(element);
+		});
+		const spacing = $(".analyseBoard-head").height() + $(".analyseBoard-total").height() + $(".analyseChartLegend").height() + tPadding + 48;
+		const height = window.innerHeight - spacing;
+		ApexCharts.exec($(".analyseBoard-fullscreen").data("id"), "updateOptions", { chart: { height } }, true, false, false);
+	}
+});
 
 export default null;
