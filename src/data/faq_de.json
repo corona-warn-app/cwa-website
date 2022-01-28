@@ -213,9 +213,18 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
+                        "title": "Warum erhalte ich beim Scannen eines Zertifikats die Fehlermeldung 'HC_PREFIX_INVALID'?",
+                        "anchor": "hc_prefix_invalid",
+                        "active": false,
+                        "textblock": [
+                            "Unter dem Reiter Zertifikate kann die App nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
+                            "Siehe auch folgenden Eintrag zu <a href='#vac_cert_invalid' target='_self' rel='noopener'>ungültigen Impfzertifikaten</a>."
+                        ]
+                    },
+                    {
                         "title": "Warum erhalte ich beim Scannen eines Zertifikats die Fehlermeldung 'VC_ALREADY_REGISTERED', 'TC_ALREADY_REGISTERED' oder 'RC_ALREADY_REGISTERED'?",
-                        "anchor": "",
-                        "active": true,
+                        "anchor": "hc_already_registered",
+                        "active": false,
                         "textblock": [
                             "Es kamen vermehrt Meldungen auf, die von dem Erhalt dieser Fehlermeldung berichten und das gescannte Zertifikat nicht finden konnten. Die Ursache für diesen Fehler ist, dass sich das Zertifikat zwar schon in der Corona-Warn-App befindet, allerdings unter einer 'anderen Person' gespeichert wurde.",
                             "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/de/android/PersonOverviewFragment_one_person.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/de/android/PersonDetailsFragment_cwa_2.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/de/ios/iPhone 13-screenshot_recovery_certificate_valid_details_part2.png' alt='image'></div></div></div>",
@@ -233,15 +242,6 @@
                             "<ul><li>digitales Impfzertifikat</li><li>digitales Genesenenzertifikat</li><li>digitales Testzertifikat</li></ul>",
                             "Bisher wurden digitale Impfzertifikate erstmalig mit <a href='../../de/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>Version 2.3</a> unterstützt, gefolgt von der zusätzlichen Unterstützung von digitalen Testzertifikaten in <a href='../../de/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>Version 2.4.</a> Mit der Veröffentlichung der <a href='../../de/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>Version 2.5</a> wurden digitale Genesenenzertifikate zusätzlich unterstützt.",
                             "Die Verordnung über das <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_de' target='_blank' rel='noopener noreferrer'>digitale COVID-Zertifikat der EU</a> ist am 1. Juli 2021 in Kraft getreten. Das digitale COVID-Zertifikat der EU wird in allen EU-Mitgliedstaaten anerkannt."
-                        ]
-                    },
-                    {
-                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Zertifikat (HC_PREFIX_INVALID)', wenn ich versuche einen QR-Code zu scannen?",
-                        "anchor": "hc_prefix_invalid",
-                        "active": false,
-                        "textblock": [
-                            "Unter dem Reiter Zertifikate kann die App nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
-                            "Siehe auch folgenden Eintrag zu <a href='#vac_cert_invalid' target='_self' rel='noopener'>ungültigen Impfzertifikaten</a>."
                         ]
                     },
                     {

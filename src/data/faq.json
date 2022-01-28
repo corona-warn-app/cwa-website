@@ -214,9 +214,18 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
+                        "title": "Why do I get the error message 'HC_PREFIX_INVALID' when scanning a certificate?",
+                        "anchor": "hc_prefix_invalid",
+                        "active": false,
+                        "textblock": [
+                            "Under the tab 'Certificates' the app can only scan '<b>EU Digital</b> COVID  Certificates'.",
+                            "See also the following entry on <a href='#vac_cert_invalid' target='_self' rel='noopener'>invalid vaccination certificates</a>."
+                        ]
+                    },
+                    {
                         "title": "Why do I get the error message 'VC_ALREADY_REGISTERED', 'TC_ALREADY_REGISTERED' or 'RC_ALREADY_REGISTERED' when scanning a certificate?",
-                        "anchor": "",
-                        "active": true,
+                        "anchor": "hc_already_registered",
+                        "active": false,
                         "textblock": [
                             "There have been an increasing number of messages reporting receiving this error message and not being able to find the scanned certificate. The reason for this error is that the certificate is already in the Corona-Warn-App, but it was saved under a 'different person'.",
                             "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/android/PersonOverviewFragment_one_person.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/android/PersonDetailsFragment_cwa_2.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/ios/iPhone 13-screenshot_recovery_certificate_valid_details_part2.png' alt='image'></div></div></div>",
@@ -234,15 +243,6 @@
                             "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
                             "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
                             "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
-                        ]
-                    },
-                    {
-                        "title": "Why do I get the error message 'This QR code is not a valid  certificate. (HC_PREFIX_INVALID)' when I try to scan a QR code?",
-                        "anchor": "hc_prefix_invalid",
-                        "active": false,
-                        "textblock": [
-                            "Under the tab 'Certificates' the app can only scan '<b>EU Digital</b> COVID  Certificates'.",
-                            "See also the following entry on <a href='#vac_cert_invalid' target='_self' rel='noopener'>invalid vaccination certificates</a>."
                         ]
                     },
                     {
