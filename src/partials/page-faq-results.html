@@ -19,7 +19,12 @@
   <main class="main">
     <form method="get" id="faq-search-form" class="w-100">
       <div class="input-group mb-5">
-        <input type="text" class="form-control mr-3 w-50" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+        <div class="input-group w-50">
+          <div class="input-group-prepend d-none" id="clean_search">
+            <button class="btn clean-search" type="button">✖</button>
+          </div>
+          <input type="text" class="form-control mr-3" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+        </div>
         <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
           <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
           {{#each page-contents.section-main.topics}}
@@ -39,29 +44,29 @@
         <div id="{{id}}">
           <h1 id="{{id}}" class="topic-title">{{title}}</h1>
           {{#each sections}}
-          <div id="{{id}}" class="section-container">     
-            <h3 class="section-title" id="{{id}}">{{title}}</h3>
-            <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
-            {{#each accordion}}
-              <div id="{{anchor}}-div" class="faq">
-                <dt class="accordion-faq-header{{#if active}} active{{/if}}">
-                  <h3 class="accordion-faq-item-title"{{#if id}} id="{{id}}"{{/if}}>{{{title}}}</h3>
-                  <span class="accordion-faq-item-icon"></span>
-                </dt>
-                <dd class="accordion-faq-body">
-                  <div class="accordion-faq-item-content">
-                    {{#if textblock}}
-                    {{#each textblock}}
-                    <p>{{{.}}}</p>
-                    {{/each}}
-                    {{/if}}
+            <div id="{{id}}" class="section-container">     
+              <h3 class="section-title" id="{{id}}">{{title}}</h3>
+              <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+                {{#each accordion}}
+                  <div id="{{anchor}}-div" class="faq">
+                    <dt class="accordion-faq-header{{#if active}} active{{/if}}">
+                      <h3 class="accordion-faq-item-title"{{#if id}} id="{{id}}"{{/if}}>{{{title}}}</h3>
+                      <span class="accordion-faq-item-icon"></span>
+                    </dt>
+                    <dd class="accordion-faq-body">
+                      <div class="accordion-faq-item-content">
+                        {{#if textblock}}
+                        {{#each textblock}}
+                        <p>{{{.}}}</p>
+                        {{/each}}
+                        {{/if}}
+                      </div>
+                    </dd>
                   </div>
-                </dd>
-              </div>
+                {{/each}}
+              </dl>
             </div>
-            {{/each}}
-          </dl>
-        {{/each}}
+          {{/each}}
         </div>
       {{/each}}
   </div>

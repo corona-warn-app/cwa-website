@@ -162,9 +162,9 @@ $(document).ready(function(){
         if (show.length > 0) {
             if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
             if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
-            document.querySelectorAll("h3.topic-title:not(#glossary)").forEach((title) => {
-                $(title).hide();
-            });
+            // document.querySelectorAll("h3.topic-title:not(#glossary)").forEach((title) => {
+            //     $(title).hide();
+            // });
             //Hide all topics containers
             $("#faq-container").children().each((index, child) => {
                 $(child).hide();
@@ -183,7 +183,11 @@ $(document).ready(function(){
                     })
                     //Show section container
                     $(".section-container").each((index, child) => {
-                        if($(child).attr("id") === section) $(child).show();
+                        if($(child).attr("id") === section) {
+                            $(child).show();
+                            //Active FAQ title
+                            $(child).find("h3").show();
+                        }
                     })
                     //Active nav
                     document.querySelectorAll(".section-item").forEach((item) => {
@@ -192,6 +196,7 @@ $(document).ready(function(){
                             $($(item).parent().get(0)).addClass("active")
                         }
                     });
+                    
                 }
             });
         }
@@ -203,22 +208,25 @@ $(document).ready(function(){
             });
         };
 
-        //check again showed items cause of topic filter
-        let counter = 0;
-        $(".faq").each((index, faq) => {
-            if($(faq).is(":visible")) counter++
-        })
-        if(counter !== show.length) {
-            document.querySelectorAll("h3:not(#glossary)").forEach((title) => {
-                $(title).hide();
-                $('#no_results').removeClass("d-none");
-                $('#collapseAll').addClass("d-none");
-            });
-        }
+        
+        setTimeout(() => {
+            //check again showed items cause of topic filter
+            let counter = 0;
+            $(".faq").each((index, faq) => {
+                if($(faq).is(":visible")) counter++;
+            })
 
-        //Set search results breadcrumbs
-        $(".bread-topic").text(`Search result: ${counter} results found`);
-        $(".bread-topic").attr("href", "#");
+            if(counter === 0) {
+                document.querySelectorAll("h3:not(#glossary)").forEach((title) => {
+                    $(title).hide();
+                    $('#no_results').removeClass("d-none");
+                    $('#collapseAll').addClass("d-none");
+                });
+            }
+            //Set search results breadcrumbs
+            $(".bread-topic").text(`Search result: ${counter} results found`);
+            $(".bread-topic").attr("href", "#");
+        },250)
     }
 
     // remove any hashes when submitting the search form
@@ -248,6 +256,7 @@ $(document).ready(function(){
             $("#faq-topic").val(topic);
         }
         if(search) {
+            $("#clean_search").removeClass("d-none");
             const sideMenuItems = [];
             $(".side-menu .nav-link").each(function() {
                 let item = $(this).get(0)
@@ -290,7 +299,9 @@ $(document).ready(function(){
             });
         } else {
             if(topic !== "all" && topic){
+                console.log("topic", $("#faq-container").children())
                 $("#faq-container").children().each((index, element) => {
+                    console.log("elem", $(element).attr("id"))
                     if($(element).attr("id") !== topic) $(element).hide();
                     else {
                         $(".bread-topic").text($($(element).children()[0]).text());
@@ -304,6 +315,12 @@ $(document).ready(function(){
             
         }
 
+        //Clear search 
+        $(".clean-search").on("click", function(e) {
+            $("#faq-search").val("");
+            $("#faq-topic").val("all").prop('selected', true);
+            $("#faq-search-form").submit()
+        });
         //Hide other topics on click in title
         $(".topic-title").on("click", function(e) {
             $("#faq-topic").val($(this).attr("id")).prop('selected', true);
