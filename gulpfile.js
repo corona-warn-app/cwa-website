@@ -298,16 +298,18 @@ function copyFAQ(lang) {
     .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
     .pipe(jsonTransform(function (data, file) {
       let faq = {}
-      data['section-main'].sections.forEach((section) => {
-        section.accordion.forEach((faqEntry) => {
-          let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-          faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+            faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+          })
         })
       });
       return faq;
     }))
     .pipe(rename('faq.json'))
-    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/`));
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
 }
 
 function copyFAQRedirects() {

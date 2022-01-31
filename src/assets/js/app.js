@@ -4,6 +4,7 @@ import 'slick-carousel';
 
 window.jQuery = $;
 let expandStatus = true;
+let faq = {};
 
 const deviceType = () => {
     const ua = navigator.userAgent;
@@ -124,11 +125,10 @@ $(document).ready(function(){
     };
 
     // function to update the faq list for a given searchString
-    const updateResults = function(searchString, faq) {
+    const updateResults = function(searchString, topicString, faq) {
         // result are two arrays, the elements to hide and the ones to show
         const hide = [];
         const show = [];
-
         // Yeah, slow. But in the end, this is only 50-100 entries
         Object.keys(faq).forEach((anchor) => {
             let text = faq[anchor];
@@ -152,22 +152,47 @@ $(document).ready(function(){
 
         // show all matches
         if (show.length === 0) {
-            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
+            document.querySelectorAll("h3:not(#glossary)").forEach((title) => {
                 $(title).hide();
                 $('#no_results').removeClass("d-none");
                 $('#collapseAll').addClass("d-none");
             });
+            $("#faq-container").hide();
         }
         if (show.length > 0) {
             if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
             if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
-            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
+            document.querySelectorAll("h3.topic-title:not(#glossary)").forEach((title) => {
                 $(title).hide();
             });
+            //Hide all topics containers
+            $("#faq-container").children().each((index, child) => {
+                $(child).hide();
+            })
+            //Hide all sections containers
+            $(".section-container").hide();
+
             document.querySelectorAll(show).forEach((div) => {
                 const accordion = $(div).parent().get(0)
-                $(accordion).prev("h2").show();
-                $(div).show({duration: 300});
+                const section = $($(accordion).parent().get(0)).attr("id");
+
+                if($($(accordion).parent()).parent().attr("id") === topicString || topicString === "all" ) {
+                    //Show topic container
+                    $("#faq-container").children().each((index, child) => {
+                        if($(child).attr("id") === $($(accordion).parent()).parent().attr("id")) $(child).show();
+                    })
+                    //Show section container
+                    $(".section-container").each((index, child) => {
+                        if($(child).attr("id") === section) $(child).show();
+                    })
+                    //Active nav
+                    document.querySelectorAll(".section-item").forEach((item) => {
+                        if($(item).attr('id') === $(accordion).prev("h3").attr("id")) {
+                            $(item).addClass("active");
+                            $($(item).parent().get(0)).addClass("active")
+                        }
+                    });
+                }
             });
         }
 
@@ -178,104 +203,189 @@ $(document).ready(function(){
             });
         };
 
-        // update the total count of results
-        let totalCount = (show.length + hide.length).toString();
-        let sCount = show.length.toString().padStart(totalCount.length, "0");
-        document.getElementById("match-count").innerHTML = sCount + "/" + totalCount;
-    }
-
-    // This removes all search parameters from the URL. While the page ignores search parameters, if the hash is set,
-    // this just gives users cleaner URLs when clicking on the links and copying the url from the address bar.
-    const clearSearchParam = function(hash = "") {
-        var clean_uri = location.protocol + "//" + location.host + location.pathname;
-        clean_uri += hash;
-        window.history.replaceState({}, document.title, clean_uri);
-    }
-
-    // check if the faq-search text field is present
-    let searchField = document.getElementById("faq-search");
-    if(searchField !== null) {
-        let faq = {};
-        const sideMenuItems = [];
-        $(".side-menu .nav-link").each(function() {
-            let item = $(this).get(0)
-            sideMenuItems.push(item.getAttribute('href').substring(1))
+        //check again showed items cause of topic filter
+        let counter = 0;
+        $(".faq").each((index, faq) => {
+            if($(faq).is(":visible")) counter++
         })
-        // do an AJAX call to get the searchable FAQ document
-        // Converter ensures that even malformed mime-types are converted directly to JSON
-        $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
-            faq = data;
-            let faqCount = Object.keys(data).length.toString();
-            document.getElementById("match-count").innerHTML = faqCount + "/" + faqCount;
+        if(counter !== show.length) {
+            document.querySelectorAll("h3:not(#glossary)").forEach((title) => {
+                $(title).hide();
+                $('#no_results').removeClass("d-none");
+                $('#collapseAll').addClass("d-none");
+            });
+        }
 
-            // find out whether there are search strings added
-            var urlParams = new URLSearchParams(window.location.search);
-            const { hash } = window.location;
-            if(urlParams.has("search")){
-                // only perform search if no hash is set
-                if(!hash || hash === "") {
-                    // set the search string in the input
-                    searchField.value = urlParams.get("search");
-                    // and update the result list
-                    updateResults(urlParams.get("search"), faq);
+        //Set search results breadcrumbs
+        $(".bread-topic").text(`Search result: ${counter} results found`);
+        $(".bread-topic").attr("href", "#");
+    }
+
+    // remove any hashes when submitting the search form
+    if (document.querySelector(".page-faq")) {
+        const searchForm = document.getElementById("faq-search-form");
+        if(searchForm !== null){
+            searchForm.addEventListener("submit", (event) => {
+                history.pushState("", document.title, 'results/' + window.location.search);
+            })
+        }
+    }
+
+    if (document.querySelector(".page-faq-results")) {
+        const searchForm = document.getElementById("faq-search-form");
+        if(searchForm !== null){
+            searchForm.addEventListener("submit", (event) => {
+                history.pushState("", document.title, window.location.pathname + window.location.search);
+            })
+        }
+        const searchParams = new URLSearchParams(window.location.search);
+        const search = searchParams.get('search');
+        const topic = searchParams.get('topic');
+        if(search) {
+            $('#faq-search').val(search)
+        }
+        if(topic) {
+            $("#faq-topic").val(topic);
+        }
+        if(search) {
+            const sideMenuItems = [];
+            $(".side-menu .nav-link").each(function() {
+                let item = $(this).get(0)
+                sideMenuItems.push(item.getAttribute('href').substring(1))
+            })
+            // do an AJAX call to get the searchable FAQ document
+            // Converter ensures that even malformed mime-types are converted directly to JSON
+            $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
+                faq = data;
+                // find out whether there are search strings added
+                var urlParams = new URLSearchParams(window.location.search);
+                const { hash } = window.location;
+                if(urlParams.has("search")){
+                    // only perform search if no hash is set
+                    if(!hash || hash === "") {
+                        // and update the result list
+                        updateResults(search, topic, faq);
+                    }
                 }
-            }
-            // if we have a hash and that hash is not part of the faq list
-            let hashVal = hash.substring(1)
-            if(hash && !Object.keys(faq).includes(hashVal)) {
-                // then let's get the list of defined redirects
-                $.get("/assets/data/faq_redirects.json", (data) => {
-                    // and see whether there is a proper replacement (1:1 mapping)
-                    let replacement = data[hashVal];
-                    // if there is ...
-                    if(replacement){
-                        // ... just go there
-                        location.hash = "#" + replacement;
-                    } else {
-                        // Check if the hashVal isn't at the side-menu items. For prevent a bug when search the URL directly into another tab. 
-                        if (!sideMenuItems.includes(hashVal)){
-                            // if not, otherwise, just search for the hash value
-                            searchField.value = hashVal;
-                            updateResults(hashVal, faq);
+                // if we have a hash and that hash is not part of the faq list
+                let hashVal = hash.substring(1)
+                if(hash && !Object.keys(faq).includes(hashVal)) {
+                    // then let's get the list of defined redirects
+                    $.get("/assets/data/faq_redirects.json", (data) => {
+                        // and see whether there is a proper replacement (1:1 mapping)
+                        let replacement = data[hashVal];
+                        // if there is ...
+                        if(replacement){
+                            // ... just go there
+                            location.hash = "#" + replacement;
+                        } else {
+                            // Check if the hashVal isn't at the side-menu items. For prevent a bug when search the URL directly into another tab. 
+                            if (!sideMenuItems.includes(hashVal)){
+                                // if not, otherwise, just search for the hash value
+                                updateResults(search, topic, faq);
+                            }
                         }
+                    })
+                }
+            });
+        } else {
+            if(topic !== "all" && topic){
+                $("#faq-container").children().each((index, element) => {
+                    if($(element).attr("id") !== topic) $(element).hide();
+                    else {
+                        $(".bread-topic").text($($(element).children()[0]).text());
+                        $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
+                        $(".nav-aside").children().each((index, nav) => {
+                            if($(nav).hasClass(topic)) $(nav).addClass("active");
+                        })
                     }
                 })
             }
+            
+        }
+
+        //Hide other topics on click in title
+        $(".topic-title").on("click", function(e) {
+            $("#faq-topic").val($(this).attr("id")).prop('selected', true);
+            $("#faq-search-form").submit()
         });
 
-        // listen to the keyup event, i.e., when a character was entered into the form
-        // and the value of the field was properly updated
-        searchField.addEventListener("keyup", (event) => {
-            const curSearch = event.target.value;
-            // only search for longer terms and react to empty search (aka delete input)
-            if(curSearch.length < 2 && curSearch.length > 0) {
-                return;
-            }
-            updateResults(curSearch, faq);
+        //Hide other topics on click in head nav topic
+        $(".section-head").on("click", function(e) {
+            e.preventDefault();
+            $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
+            $("#faq-search-form").submit()
         });
-    };
 
-    // add an event listener to each faqAnchor that provides a clean URL w/o search parameter
-    var faqAnchors = document.getElementsByClassName("faq-anchor");
-    Array.from(faqAnchors).forEach((element) => {
-        element.addEventListener('click', (event) => {
-            clearSearchParam(event.target.hash);
+        //Hide other sections on click in item nav section
+        $(".section-item").on("click", function(e) {
+            e.preventDefault();
+
+            //Active/deactive topic nav list
+            const topicList = $(this).parent();
+            $(".topic-list").each((index, list) => {
+                $(list).removeClass("active");
+            })
+            topicList.addClass("active")
+
+            //Active/deactive section nav item
+            $(".section-item").each((index, item) => {
+                $(item).removeClass("active");
+            })
+            $(this).addClass("active");
+
+            //Modify breadcrumb
+            $("#bread_separator").removeClass("d-none");
+            $(".bread-topic").text($(this).parent().find(".section-head").text())
+            $(".bread-section").text($(this).find("a").text())
+
+            //Show-hide containers
+            let container;
+            $("#faq-container").children().each((index, element) => {
+                if($(element).attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
+                    $(element).hide();
+                }
+                else {
+                    $(element).show();
+                    container = element;
+                }
+            });
+
+            //Show/hide sections
+            $(container).children().each((index, section) => {
+                if($(section).attr("id") === $(this).attr("id")) $(section).show();
+                else $(section).hide();
+            })
+            
+
+
         });
-    });
 
-    // remove any hashes when submitting the search form
-    var searchForm = document.getElementById("faq-search-form");
-    if(searchForm !== null){
-        searchForm.addEventListener("submit", (event) => {
-            history.pushState("", document.title, window.location.pathname + window.location.search);
-        })
+        //Hide other sections on click section title
+        $(".section-title").on("click", function(e) {
+            e.preventDefault();
+            $(".section-item").each((index, section) => {
+                if($(section).attr('id') === $(this).attr("id")) $(section).click();
+            })
+        });
+
+        //Simulate nav click on click in breadcrumb
+        $(".bread-topic").on("click", function(e) {
+            e.preventDefault();
+            $(".topic-list.active").find(".section-head").click();
+        });
+        //Show all topics on click on FAQ
+        $(".bread-faq").on("click", function(e) {
+            $("#faq-topic").val("all").prop('selected', true);
+            $("#faq-search-form").submit()
+        });
+
     }
-
 
     // collapses/expands all accordions on button click in the FAQ
     $( document ).ready(function() {
         $("#collapseAll").click( function() {
-            const accordions = document.querySelectorAll(".accordion-header");
+            const accordions = document.querySelectorAll(".accordion-faq-header");
             accordions.forEach(accordion => {
                 if(expandStatus) {
                     if(!$(accordion).hasClass('active')) $(accordion).addClass('active');
@@ -287,7 +397,6 @@ $(document).ready(function(){
         });
 
     });
-
     // mail protection using js
     // mails are written like this:
     // <a href="bob.smith...example...com" class="email">bob.smith...example...com</a>

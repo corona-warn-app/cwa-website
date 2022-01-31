@@ -10,7 +10,7 @@
           <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
             <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
             {{#each page-contents.section-main.topics}}
-              <option value="{{anchor}}">{{title}}</option>
+              <option value="{{id}}">{{title}}</option>
             {{/each}}
           </select>
           <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
@@ -25,10 +25,10 @@
         {{#each page-contents.section-main.topics}}
         <div class="col-sm-3">
           <img src="{{icon}}" alt="{{title}}" height="29">
-          <p><b>{{title}}</b></p>
+          <p><a href="results/#{{id}}" class="no-decoration text-black"><b>{{title}}</b></a></p>
           {{#each sections}}
             {{#if indexed}}
-              <p><a href="results/#{{anchor}}" class="section-link">{{title}}</a></p>
+              <p><a href="results/#{{id}}" class="section-link">{{title}}</a></p>
             {{/if}}
           {{/each}}
           <p><a href="results" class="no-decoration">{{../page-contents.section-main.texts.goto-topics}}</a></p>

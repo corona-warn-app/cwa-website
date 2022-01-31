@@ -51,26 +51,38 @@ a.no-decoration {
 }
 
 .topic-list {
-    padding-left: 1em;
+    padding-left: 12px;
     &.active {
         border-left: #C4C4C4 4px solid;
     }
 }
 
 .section-item {
-    padding-left: 1em;
+    position: relative;
+    left: -15px;
+    padding-left: 1em;  
     &.active {
-        border-left: #0074A3 4px solid;
+        border-left: #0074A3 3px solid;
+        padding-left: 12px;
     }
 }
 
-.topic-title {
+.section-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    cursor: pointer;
 }
 
+.section-head {
+    cursor: pointer;
+}
+.topic-title {
+    color: #0074A3;
+    font-weight: bold;
+    cursor: pointer;
+}
 .breadcrumbs {
     color: #0074A3;
 }
