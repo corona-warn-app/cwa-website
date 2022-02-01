@@ -51,7 +51,7 @@
                 {{#each accordion}}
                   <div id="{{anchor}}-div" class="faq">
                     <dt class="accordion-faq-header{{#if active}} active{{/if}}">
-                      <h3 class="accordion-faq-item-title"{{#if id}} id="{{id}}"{{/if}}>{{{title}}}</h3>
+                      <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
                       <span class="accordion-faq-item-icon"></span>
                     </dt>
                     <dd class="accordion-faq-body">
@@ -72,7 +72,7 @@
       {{/each}}
   
     </div>
-    <div class="d-flex flex-column w-100">
+    <!-- <div class="d-flex flex-column w-100">
       <h1 class="glossary-title" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h1>
       {{#if page-contents.glossary.optionalText}}
         <p class="mb-3">{{page-contents.glossary.optionalText}}</p>
@@ -140,7 +140,7 @@
       {{/each}}
       </div>
       <hr/>
-    </div>
+    </div> -->
   </main>
 </div>
 {{/if}}
