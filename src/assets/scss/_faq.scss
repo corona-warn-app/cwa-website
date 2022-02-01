@@ -52,18 +52,17 @@ a.no-decoration {
 
 .topic-list {
     padding-left: 12px;
-    &.active {
-        border-left: #C4C4C4 4px solid;
-    }
+    border-left: transparent 4px solid;
 }
 
 .section-item {
+    display: block;
     position: relative;
     left: -15px;
     padding-left: 1em;  
+    border-left: #c4c4c4 3px solid;
     &.active {
         border-left: #0074A3 3px solid;
-        padding-left: 12px;
     }
 }
 

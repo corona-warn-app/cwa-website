@@ -224,9 +224,10 @@ $(document).ready(function(){
                 });
             }
             //Set search results breadcrumbs
-            $(".bread-topic").text(`Search result: ${counter} results found`);
-            $(".bread-topic").attr("href", "#");
-        },250)
+            $("#counter").text(counter);
+            $(".bread-search").removeClass("d-none");
+            $("#search_separator").removeClass("d-none");
+        },500)
     }
 
     // remove any hashes when submitting the search form
@@ -299,11 +300,10 @@ $(document).ready(function(){
             });
         } else {
             if(topic !== "all" && topic){
-                console.log("topic", $("#faq-container").children())
                 $("#faq-container").children().each((index, element) => {
-                    console.log("elem", $(element).attr("id"))
                     if($(element).attr("id") !== topic) $(element).hide();
                     else {
+                        $("#topic_separator").removeClass("d-none");
                         $(".bread-topic").text($($(element).children()[0]).text());
                         $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
                         $(".nav-aside").children().each((index, nav) => {
@@ -323,38 +323,101 @@ $(document).ready(function(){
         });
         //Hide other topics on click in title
         $(".topic-title").on("click", function(e) {
-            $("#faq-topic").val($(this).attr("id")).prop('selected', true);
-            $("#faq-search-form").submit()
+            if(!search) {
+                $("#faq-topic").val($(this).attr("id")).prop('selected', true);
+                $("#faq-search-form").submit()
+            } else {
+                $("#faq-container").children().each((index, element) => {
+                    if($(element).attr("id") !== $(this).attr("id")) {
+                        $(element).hide();
+                    }
+                    else {
+                        $(element).show();
+                    }
+                });
+                setTimeout(() => {
+                    let counter = 0;
+                    $(".faq").each((index, faq) => {
+                        if($(faq).is(":visible")) counter++;
+                    })
+                    $("#counter").text(counter);
+                }, 500)
+                $("#topic_separator").removeClass("d-none");
+                $(".bread-topic").text($(this).text());
+                $(".bread-search").removeClass("d-none");
+                $("#search_separator").removeClass("d-none");
+            }
         });
 
         //Hide other topics on click in head nav topic
         $(".section-head").on("click", function(e) {
-            e.preventDefault();
-            $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
-            $("#faq-search-form").submit()
+            if(!search) {
+                e.preventDefault();
+                $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
+                $("#faq-search-form").submit()
+            } else {
+                updateResults(search, topic, faq);
+                $(".bread-section").hide();
+                $("#bread_separator").hide();
+                $("#faq-container").children().each((index, element) => {
+                    if($(element).attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
+                    else {
+                        $(element).show();
+                        $(element).find("h1").show();
+                    }
+                });
+                setTimeout(() => {
+                    let counter = 0;
+                    $(".faq").each((index, faq) => {
+                        if($(faq).is(":visible")) counter++;
+                    })
+                    $("#counter").text(counter);
+                }, 500)
+                $("#topic_separator").removeClass("d-none");
+                $(".bread-topic").text($(this).text());
+                $(".bread-search").removeClass("d-none");
+                $("#search_separator").removeClass("d-none");
+            }
         });
 
         //Hide other sections on click in item nav section
         $(".section-item").on("click", function(e) {
             e.preventDefault();
 
-            //Active/deactive topic nav list
-            const topicList = $(this).parent();
-            $(".topic-list").each((index, list) => {
-                $(list).removeClass("active");
-            })
-            topicList.addClass("active")
+            if(!search) {
+                //Active/deactive topic nav list
+                const topicList = $(this).parent();
+                $(".topic-list").each((index, list) => {
+                    $(list).removeClass("active");
+                })
+                topicList.addClass("active")
 
-            //Active/deactive section nav item
-            $(".section-item").each((index, item) => {
-                $(item).removeClass("active");
-            })
-            $(this).addClass("active");
+                //Active/deactive section nav item
+                $(".section-item").each((index, item) => {
+                    $(item).removeClass("active");
+                })
+                $(this).addClass("active");
+            }
 
             //Modify breadcrumb
             $("#bread_separator").removeClass("d-none");
+            $("#topic_separator").removeClass("d-none");
             $(".bread-topic").text($(this).parent().find(".section-head").text())
             $(".bread-section").text($(this).find("a").text())
+            $("#bread_separator").show();
+            $(".bread-section").show();
+            if(search) {
+                setTimeout(() => {
+                    let counter = 0;
+                    $(".faq").each((index, faq) => {
+                        if($(faq).is(":visible")) counter++;
+                    })
+                    $("#counter").text(counter);
+                }, 500)
+                
+                $(".bread-search").removeClass("d-none");
+                $("#search_separator").removeClass("d-none");
+            }
 
             //Show-hide containers
             let container;
@@ -389,7 +452,14 @@ $(document).ready(function(){
         //Simulate nav click on click in breadcrumb
         $(".bread-topic").on("click", function(e) {
             e.preventDefault();
-            $(".topic-list.active").find(".section-head").click();
+            if(!search) $(".topic-list.active").find(".section-head").click();
+            else {
+                $(".section-head").each((index, element) => {
+                    if($(element).text() === $(this).text()) {
+                        $(element).click();
+                    }
+                })
+            }
         });
         //Show all topics on click on FAQ
         $(".bread-faq").on("click", function(e) {

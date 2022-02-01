@@ -6,8 +6,9 @@
       {{#each page-contents.section-main.topics}}
         <div class="topic-list {{id}}">
           <b class="section-head {{id}}">{{title}}</b>
+          <!-- <a class="section-item mb-2 no-decoration" id="{{id}}" href="#{{id}}">{{title}}</a> -->
           {{#each sections}}
-            <div class="section-item" id="{{id}}"><a href="#{{id}}" class="no-decoration">{{title}}</a></div>
+            <div class="section-item mb-2" id="{{id}}"><a href="#{{id}}" class="no-decoration">{{title}}</a></div>
           {{/each}}
         </div>
         </br>
@@ -38,7 +39,7 @@
       <p>{{page-contents.section-main.texts.no-results}}</p>
     </div>
     <Button id="collapseAll" class="btn btn-secondary right-float mt-auto">{{page-contents.section-main.button-collapse.fields.collapse}}</Button>
-    <p class="breadcrumbs"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> / <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a></p>
+    <p class="breadcrumbs"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> {{page-contents.section-main.texts.results-found}}</span></b></p>
     <div id="faq-container">
       {{#each page-contents.section-main.topics}}
         <div id="{{id}}">
