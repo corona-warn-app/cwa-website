@@ -232,6 +232,12 @@ $(document).ready(function(){
 
     // remove any hashes when submitting the search form
     if (document.querySelector(".page-faq")) {
+        if(window.matchMedia("(max-width: 767px)").matches) {
+            $("#faq-search-form").removeClass("w-50").addClass("w-100");
+            $("#faq-search").removeClass("w-50").addClass("w-100").removeClass("mr-3");
+            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
+            $("#faq-submit").addClass("w-100");
+        }
         const searchForm = document.getElementById("faq-search-form");
         if(searchForm !== null){
             searchForm.addEventListener("submit", (event) => {
@@ -241,6 +247,13 @@ $(document).ready(function(){
     }
 
     if (document.querySelector(".page-faq-results")) {
+        if(window.matchMedia("(max-width: 767px)").matches) {
+            $("#faq-search-form").removeClass("w-50").addClass("w-100");
+            $("#faq-search").parent().removeClass("w-50").addClass("w-100");
+            $("#faq-search").removeClass("mr-3");
+            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
+            $("#faq-submit").addClass("w-100");
+        }
         const searchForm = document.getElementById("faq-search-form");
         if(searchForm !== null){
             searchForm.addEventListener("submit", (event) => {
