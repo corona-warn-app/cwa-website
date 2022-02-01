@@ -20,8 +20,9 @@
     </div>
 
     <div class="container">
-      <h1 class="headline headline-heavy mt-5 mb-5">{{page-contents.section-main.headline.subtitle}}</h1>
-      <div class="row pb-5">
+      <h1 class="headline headline-heavy mt-5 mb-3">{{page-contents.section-main.headline.subtitle}}</h1>
+      <a href="results" class="no-decoration">{{page-contents.section-main.texts.view-all}}</a>
+      <div class="row pb-5 pt-5">
         {{#each page-contents.section-main.topics}}
         <div class="col-sm-3">
           <img src="{{icon}}" alt="{{title}}" height="29">
