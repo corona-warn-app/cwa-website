@@ -38,8 +38,29 @@
     <div id="no_results" class="d-none">
       <p>{{page-contents.section-main.texts.no-results}}</p>
     </div>
-    <Button id="collapseAll" class="btn btn-secondary right-float mt-auto">{{page-contents.section-main.button-collapse.fields.collapse}}</Button>
+    <div class="d-flex flex-row-reverse pb-2">
+      <Button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.collapse}}</Button>
+    </div>
     <p class="breadcrumbs"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> {{page-contents.section-main.texts.results-found}}</span></b></p>
+    <div id="faq-container-mobile" class="d-none">
+      {{#each page-contents.section-main.topics}}
+          <div id="{{id}}" class="section-container">
+            <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+                <div id="{{id}}-div">
+                  <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header">
+                    <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
+                    <span class="accordion-faq-item-icon"></span>
+                  </dt>
+                  <dd class="accordion-faq-body">
+                    <div class="accordion-faq-item-content">
+                      
+                    </div>
+                  </dd>
+                </div>
+            </dl>
+          </div>
+      {{/each}}
+    </div>
     <div id="faq-container">
       {{#each page-contents.section-main.topics}}
         <div id="{{id}}">
