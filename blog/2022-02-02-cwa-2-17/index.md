@@ -23,7 +23,7 @@ As of version 2.17, users can see the number of people in Germany who have recei
 
 ### Recycle bin shows exact date of deletion
 
-In addition, users can now see the deletion date for each item in their recycle bin. As of [CWA version 2.13](en/blog/2021-11-03-cwa-version-2-13/), all certificates and tests that have been deleted are initially moved to the recycle bin for 30 days. Users can now see when the 30 days will expire, i.e., **when the respective certificate will be permanently deleted**. 
+In addition, users can now see the deletion date for each item in their recycle bin. As of [CWA version 2.13](/en/blog/2021-11-03-cwa-version-2-13/), all certificates and tests that have been deleted are initially moved to the recycle bin for 30 days. Users can now see when the 30 days will expire, i.e., **when the respective certificate will be permanently deleted**. 
 
 <br></br>
 <center> 
