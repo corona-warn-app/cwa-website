@@ -61,8 +61,12 @@ a.no-decoration {
     left: -15px;
     padding-left: 1em;  
     border-left: #c4c4c4 3px solid;
+    cursor: pointer;
     &.active {
         border-left: #0074A3 3px solid;
+    }
+    &:hover {
+        border-left: hsla(211, 100%, 75%, 1) 3px solid;
     }
 }
 
