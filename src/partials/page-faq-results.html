@@ -8,7 +8,7 @@
           <b class="section-head {{id}}">{{title}}</b>
           <!-- <a class="section-item mb-2 no-decoration" id="{{id}}" href="#{{id}}">{{title}}</a> -->
           {{#each sections}}
-            <div class="section-item mb-2" id="{{id}}"><a href="#{{id}}" class="no-decoration">{{title}}</a></div>
+            <div class="section-item mb-2"><a href="#{{id}}" class="no-decoration">{{title}}</a></div>
           {{/each}}
         </div>
         </br>
@@ -63,7 +63,7 @@
     </div>
     <div id="faq-container">
       {{#each page-contents.section-main.topics}}
-        <div id="{{id}}">
+        <div>
           <h1 id="{{id}}" class="topic-title">{{title}}</h1>
           {{#each sections}}
             <div id="{{id}}" class="section-container">     

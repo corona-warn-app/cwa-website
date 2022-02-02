@@ -184,7 +184,7 @@ $(document).ready(function(){
                 if($($(accordion).parent()).parent().attr("id") === topicString || topicString === "all" ) {
                     //Show topic container
                     $("#faq-container").children().each((index, child) => {
-                        if($(child).attr("id") === $($(accordion).parent()).parent().attr("id")) $(child).show();
+                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) $(child).show();
                     })
                     //Show section container
                     $(".section-container").each((index, child) => {
@@ -196,7 +196,7 @@ $(document).ready(function(){
                     })
                     //Active nav
                     document.querySelectorAll(".section-item").forEach((item) => {
-                        if($(item).attr('id') === $(accordion).prev("h3").attr("id")) {
+                        if($(item).find("a").attr('href') === "#"+$(accordion).prev("h3").attr("id")) {
                             $(item).addClass("active");
                             $($(item).parent().get(0)).addClass("active")
                         }
@@ -327,7 +327,7 @@ $(document).ready(function(){
         } else {
             if(topic !== "all" && topic){
                 $("#faq-container").children().each((index, element) => {
-                    if($(element).attr("id") !== topic) $(element).hide();
+                    if($(element).find(".topic-title").attr("id") !== topic) $(element).hide();
                     else {
                         $("#topic_separator").removeClass("d-none");
                         $(".bread-topic").text($($(element).children()[0]).text());
@@ -356,7 +356,7 @@ $(document).ready(function(){
                     $("#faq-search-form").submit()
                 } else {
                     $("#faq-container").children().each((index, element) => {
-                        if($(element).attr("id") !== $(this).attr("id")) {
+                        if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
                             $(element).hide();
                         }
                         else {
@@ -388,7 +388,7 @@ $(document).ready(function(){
                     $(".bread-section").hide();
                     $("#bread_separator").hide();
                     $("#faq-container").children().each((index, element) => {
-                        if($(element).attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
+                        if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
                         else {
                             $(element).show();
                             $(element).find("h1").show();
@@ -450,7 +450,7 @@ $(document).ready(function(){
                 //Show-hide containers
                 let container;
                 $("#faq-container").children().each((index, element) => {
-                    if($(element).attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
+                    if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
                         $(element).hide();
                     }
                     else {
@@ -461,7 +461,7 @@ $(document).ready(function(){
 
                 //Show/hide sections
                 $(container).children().each((index, section) => {
-                    if($(section).attr("id") === $(this).attr("id")) $(section).show();
+                    if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).show();
                     else $(section).hide();
                 })
                 
@@ -473,7 +473,7 @@ $(document).ready(function(){
             $(".section-title").on("click", function(e) {
                 e.preventDefault();
                 $(".section-item").each((index, section) => {
-                    if($(section).attr('id') === $(this).attr("id")) $(section).click();
+                    if($(section).find("a").attr('href') === "#"+$(this).attr("id")) $(section).click();
                 })
             });
 
