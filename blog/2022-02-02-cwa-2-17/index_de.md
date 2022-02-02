@@ -47,7 +47,7 @@ Des Weiteren hat das Projektteam einen **Link zu den Social-Media-Kanälen der C
 
 Über den Link in der App gelangen Nutzer\*innen zunächst auf die Website der CWA, wo sie dem Link auf den Twitter-Kanal der CWA oder dem Link auf den Instagram-Kanal des RKI folgen können. 
 
-Über den **Twitter-Account der CWA** ([@coronawarnapp](https://twitter.com/coronawarnapp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)) informiert das Projektteam regelmäßig über wichtige Kennzahlen, Updates und neue Features der App. Außerdem können Nutzer\*innen Fragen stellen, bei Umfragen mitmachen und mit anderen Follower*innen diskutieren. 
+Über den **Twitter-Account der CWA** ([@coronawarnapp](https://twitter.com/coronawarnapp)) informiert das Projektteam regelmäßig über wichtige Kennzahlen, Updates und neue Features der App. Außerdem können Nutzer\*innen Fragen stellen, bei Umfragen mitmachen und mit anderen Follower*innen diskutieren. 
 
 Bei [**RKI_für_Euch auf Instagram**](https://www.instagram.com/rki_fuer_euch/?hl=de) finden Nutzer\*innen Wissenswertes über das Robert Koch-Institut, die Entwicklung der Pandemie und die CWA im Allgemeinen. 
 
