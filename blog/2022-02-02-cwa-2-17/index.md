@@ -48,7 +48,7 @@ For version 2.17, the project team has added a **link to the CWA’s social medi
 
 The link in the app takes users to the CWA’s website, where they can follow the link to the CWA’s Twitter channel and the link to the RKI’s Instagram channel. 
 
-Via the **CWA’s Twitter account ([@coronawarnapp](https://twitter.com/coronawarnapp?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor))**, the project team regularly informs users about key metrics, updates, and new features. Users can also ask questions, participate in surveys, and discuss with other followers. 
+Via the **CWA’s Twitter account ([@coronawarnapp](https://twitter.com/coronawarnapp))**, the project team regularly informs users about key metrics, updates, and new features. Users can also ask questions, participate in surveys, and discuss with other followers. 
 
 At [**RKI_für_Euch on Instagram**](https://www.instagram.com/rki_fuer_euch/?hl=de), users can learn about the Robert Koch Institute, the evolution of the pandemic, and the CWA in general. 
  
