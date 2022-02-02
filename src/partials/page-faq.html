@@ -12,6 +12,7 @@
             {{#each page-contents.section-main.topics}}
               <option value="{{id}}">{{title}}</option>
             {{/each}}
+            <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
           </select>
           <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
         </div>

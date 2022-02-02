@@ -28,12 +28,7 @@ $(document).ready(function(){
         });
     }   
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
-        console.log("entra")
         $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
-    });
-
-    $('.js-accordion').on('click tap', function(){
-        console.log("detecta accordion")
     });
 
     if (document.querySelector(".page-faq")) {
@@ -129,9 +124,6 @@ $(document).ready(function(){
         $('.js-section-sticky').removeClass('hidden');
     };
 
-    $("body").on("click", function(e) {
-        console.log(e.target);
-    });
     // function to update the faq list for a given searchString
     const updateResults = function(searchString, topicString, faq) {
         // result are two arrays, the elements to hide and the ones to show
@@ -157,10 +149,14 @@ $(document).ready(function(){
                 }
             }
         });
-
+        //hide glossary container
+        $("#glossary_container").hide();
+        if(topicString === "glossary" || topicString === "all") {
+            $("#glossary_container").show();
+        }
         // show all matches
         if (show.length === 0) {
-            document.querySelectorAll("h3:not(#glossary)").forEach((title) => {
+            document.querySelectorAll("h3").forEach((title) => {
                 $(title).hide();
                 $('#no_results').removeClass("d-none");
                 $('#collapseAll').addClass("d-none");
@@ -181,7 +177,7 @@ $(document).ready(function(){
                 const accordion = $(div).parent().get(0)
                 const section = $($(accordion).parent().get(0)).attr("id");
 
-                if($($(accordion).parent()).parent().attr("id") === topicString || topicString === "all" ) {
+                if($($(accordion).parent()).parent().find("h1").attr("id") === topicString || topicString === "all" ) {
                     //Show topic container
                     $("#faq-container").children().each((index, child) => {
                         if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) $(child).show();
@@ -202,6 +198,7 @@ $(document).ready(function(){
                         }
                     });
                 }
+                
             });
         }
 
@@ -212,15 +209,38 @@ $(document).ready(function(){
             });
         };
 
+        let glossaryList = 0;
+        $(".word").each((index, word) => {
+            if($(word).text().toLowerCase().includes(searchString.toLowerCase())) {
+                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                glossaryList++;
+                //Active letter in nav menu
+                document.querySelectorAll(".section-item").forEach((item) => {
+                    if($(item).find("a").attr('href') === "#"+$(word).text()[0]) {
+                        $(item).addClass("active");
+                        $($(item).parent().get(0)).addClass("active")
+                    }
+                });
+            }
+        })
+
+        if(glossaryList === 0) {
+            $("#glossary_container").hide(); 
+        } else {
+            $("#glossary_container").children().each((index, child) => {
+                if(index > 1) $(child).hide(); 
+            })
+        }
+
         setTimeout(() => {
             //check again showed items cause of topic filter
-            let counter = 0;
+            let counter = topicString === "all" || topicString === "glossary" ? glossaryList : 0;
             $(".faq").each((index, faq) => {
                 if($(faq).is(":visible")) counter++;
             })
 
             if(counter === 0) {
-                document.querySelectorAll("h3:not(#glossary)").forEach((title) => {
+                document.querySelectorAll("h3").forEach((title) => {
                     $(title).hide();
                     $('#no_results').removeClass("d-none");
                     $('#collapseAll').addClass("d-none");
@@ -344,31 +364,61 @@ $(document).ready(function(){
         });
 
         if(!window.matchMedia("(max-width: 767px)").matches) {
+            //Hide FAQ on click in glossary-title
+            // $(".glossary-title").on("click", function(e) {
+            //     $("#faq-container").hide()
+            //     let glossaryList = 0;
+            //     $(".word").each((index, word) => {
+            //         if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+            //             $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+            //             glossaryList++;
+            //         }
+            //     })
+            //     $("#counter").text(glossaryList);
+            // });
+            // $(".section-head.glossary").on("click", function(e) {
+            //     $(".glossary-title").click();
+            // });
             //Hide other topics on click in title
             $(".topic-title").on("click", function(e) {
                 if(!search) {
                     $("#faq-topic").val($(this).attr("id")).prop('selected', true);
                     $("#faq-search-form").submit()
                 } else {
-                    $("#faq-container").children().each((index, element) => {
-                        if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
-                            $(element).hide();
-                        }
-                        else {
-                            $(element).show();
-                        }
-                    });
-                    setTimeout(() => {
-                        let counter = 0;
-                        $(".faq").each((index, faq) => {
-                            if($(faq).is(":visible")) counter++;
+                    if($(this).attr("id") === "glossary") {
+                        $("#faq-container").hide()
+                        let glossaryList = 0;
+                        $(".word").each((index, word) => {
+                            if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                glossaryList++;
+                            }
                         })
-                        $("#counter").text(counter);
-                    }, 500)
-                    $("#topic_separator").removeClass("d-none");
-                    $(".bread-topic").text($(this).text());
-                    $(".bread-search").removeClass("d-none");
-                    $("#search_separator").removeClass("d-none");
+                        $("#counter").text(glossaryList);
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).text());
+                    }
+                    else {
+                        $("#faq-container").children().each((index, element) => {
+                            if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
+                                $(element).hide();
+                            }
+                            else {
+                                $(element).show();
+                            }
+                        });
+                        setTimeout(() => {
+                            let counter = 0;
+                            $(".faq").each((index, faq) => {
+                                if($(faq).is(":visible")) counter++;
+                            })
+                            $("#counter").text(counter);
+                        }, 500)
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).text());
+                        $(".bread-search").removeClass("d-none");
+                        $("#search_separator").removeClass("d-none");
+                    }
                 }
             });
 
@@ -532,9 +582,11 @@ $(document).ready(function(){
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
 
-        //Keep selected on refresh
-        if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
-        else window.location.href += $(this).attr('href');
+        //Keep selected on refresh except in FAQ results
+        if (!document.querySelector(".page-faq-results")) {
+            if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
+            else window.location.href += $(this).attr('href');
+        }
       });
 
       // glossary links onclick handler
