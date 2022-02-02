@@ -7,7 +7,7 @@ author: Hanna Heine, 10 am
 layout: blog
 ---
 
-# Project team publishes CWA version 2.17
+## Project team publishes CWA version 2.17
 
 The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have released version 2.17 of the Corona-Warn-App (CWA). With the update, users can now see the **number of people in Germany who have received a booster vaccination** in the statistics. In addition, the project team has revised the **notes and procedure for a positive test result** and added a **link to the CWA’s social media channels**. Furthermore, the recycle bin now displays the deletion date for each item.
 
