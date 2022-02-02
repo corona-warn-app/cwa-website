@@ -341,6 +341,7 @@
                         "textblock": [
                             "Starting with version 2.13, <b>vaccination, recovery, or test certificates</b> that you have deleted are temporarily moved to a recycle bin.  This allows you to easily recover the certificate in case of accidental removal and move it back to its original location. If a certificate remains in the recycle bin for 30 days, it will automatically be permanently deleted, unless you have manually permanently deleted it from the recycle bin beforehand. A certificate that has been deleted in the app can still be rescanned. If it is still in the recycle bin and has therefore not been permanently removed, you will receive a message that it has been restored.",
                             "Starting with version 2.14, <b>tests</b> that you have deleted will also be moved to the recycle bin for 30 days.",
+                            "Starting with version 2.17, the time at which an item in the recycle bin will be finally deleted is displayed below the respective item.",
                             "<b>iOS:</b><ul><li>Swipe down while on the Status tab and select 'Recycle Bin' under 'More'.</li><li>If there are certificates or tests in your recycle bin, you can tap on them to restore them.</li><li>To permanently remove a certificate or test from the recycle bin, first tap on 'Edit' at the top right. Then tap on the red minus sign next to the respective certificate or test. Alternatively, you can swipe to the left directly in the listing without first tapping 'Edit' while holding down on a certificate or test. Then tap on the red 'Delete' field.</ul>",
                             "<b>Android:</b><ul><li>While on the Status tab, tap the three-dot menu in the top-right corner.</li><li>Tap 'Recycle Bin'.</li><li>Within one of the certificates or tests listed there, tap the three-dot menu in the top-right corner.</li><li>Select whether you want to restore the selected certificate/test or permanently remove it from the recycle bin.</li></ul>",
                             "Note that the app can manage a maximum of one rapid test and one PCR test at a time. For example, if you restore a PCR test and had previously registered another PCR test, the active PCR test will be moved to the recycle bin.",
@@ -573,10 +574,21 @@
                         ]
                     },
                     {
+                        "title": "2/1 Vaccination certificates",
+                        "anchor": "vc_2of1",
+                        "active": false,
+                        "textblock": [
+                            "The Android app and iOS app versions 2.17.1 differ with regard to the display of the 2/1 vaccination certificate after a first vaccination with Johnson and Johnson: In the iOS app, the complete vaccination status is currently displayed immediately. For the Android app, this is currently not the case until day 15. We are urgently in the process of adjusting this with the Android app so that full immunization is also immediately displayed here with a 2/1 vaccination certificate.",
+                            "Despite this correction, due to the different evaluation in terms of the effective validity of these 2/1 vaccinations in the individual federal states and in the EU, the information on the complete vaccination protection and the status of the booster vaccination cannot yet be clearly derived in all cases. Together with the RKI and the BMG, the technical project partners are working on a solution that can distinguish these different cases in future versions. This also applies to the CovPassCheck-App.",
+                            "See also the FAQ article <a href='#vac_booster_jj' target='_blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a>"
+                        ]
+                    },
+                    {
                         "title": "Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?",
                         "anchor": "vac_booster_jj",
                         "active": false,
                         "textblock": [
+                            "<b>UPDATE February 2, 2022</b><br/>See this  FAQ article regarding <a href='#vc_2of1' target='_blank'>2/1 Vaccination certificates</a>.",
                             "<b>UPDATE December 30, 2021</b> <br/> Recently, the European Commission adapted the rules for the encoding of vaccination certificates. In the future, this will allow vaccination certificates proving the completion of the first vaccination series to always be distinguished from vaccination certificates issued after a booster vaccination. In the future, booster vaccinations will be marked as follows:",
                             "• 3/3 for a booster vaccination after a first vaccination series with two single doses.",
                             "• 2/1 for a booster vaccination after vaccination with a single dose or administration of one dose of a vaccine consisting of two single doses to a recovered person.",
@@ -694,8 +706,8 @@
                             "If the second vaccination certificate was issued correctly, it is usually sufficient to remove the first vaccination certificate in the Corona-Warn-App and then re-scan the second vaccination certificate. The app recognizes that this also achieves full vaccination protection (after 14 days).",
                             "However, if the data in the second vaccination certificate is incorrect, only the issuer of the certificate can correct it.",
                             "<b>Important notice:</b> Since in some countries proof of vaccination is still required for both the first and second vaccination, it is advisable to carry all vaccination certificates with you, especially when traveling abroad, be it in the Corona-Warn-App, as a PDF, or as a paper printout."
-                        ]
-                    }
+                        ]}
+
                 ]
             },
             {

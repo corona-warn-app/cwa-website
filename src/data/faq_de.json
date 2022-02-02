@@ -340,6 +340,7 @@
                         "textblock": [
                             "Ab Version 2.13 werden <b>Impf-, Genesenen- oder Testzertifikate</b>, die Sie gelöscht haben, vorläufig in einen Papierkorb verschoben. Dies ermöglicht Ihnen im Fall eines versehentlichen Entfernens das Zertifikat mit Leichtigkeit wiederherzustellen und es an seinen ursprünglichen Ort zurück zu verschieben. Sollte ein Zertifikat 30 Tage im Papierkorb verweilen wird es automatisch endgültig gelöscht, sofern man es vorher nicht manuell im Papierkorb endgültig gelöscht hat. Ein Zertifikat, welches in der App gelöscht worden ist, lässt sich trotzdem neu einscannen. Sollte es sich noch im Papierkorb befinden und daher nicht endgültig entfernt worden sein, wird darauf hingewiesen, dass es wiederhergestellt wurde.",
                             "Ab Version 2.14 werden auch <b>Tests</b>, die Sie gelöscht haben, für 30 Tage in den Papierkorb verschoben.",
+                            "Ab Version 2.17 wird der Zeitpunkt, an dem ein Element im Papierkorb endgültig gelöscht wird, unterhalb des jeweiligen Elements angezeigt.",
                             "<b>iOS:</b><ul><li>Wischen Sie unter Status nach unten und wählen Sie unter 'Mehr' den 'Papierkorb' aus.</li><li>Sollten sich Zertifikate oder Tests in Ihrem Papierkorb befinden, können Sie diese antippen, um sie wiederherzustellen.</li><li>Um ein Zertifikat oder Test endgültig aus dem Papierkorb zu entfernen, tippen Sie zunächst oben rechts auf 'Bearbeiten'. Anschließend tippen Sie auf das rote Minuszeichen neben dem jeweiligen Zertifikat, beziehungsweise Test. Alternativ können Sie direkt in der Auflistung, ohne vorher auf 'Bearbeiten' zu tippen, während des Gedrückthaltens auf einem Zertifikat/Test nach links wischen. Tippen Sie anschließend auf das rote Feld 'Löschen'.</ul>",
                             "<b>Android:</b><ul><li>Tippen Sie unter Status auf das Drei-Punkte-Menü oben rechts in der Ecke.</li><li>Tippen Sie daraufhin auf 'Papierkorb'.</li><li>Tippen Sie innerhalb eines der dort aufgelisteten Zertifikate oder Tests auf das Drei-Punkte-Menü oben rechts.</li><li>Wählen Sie aus, ob Sie das ausgewählte Zertifikat, beziehungsweise den Test, wiederherstellen oder endgültig aus dem Papierkorb entfernen wollen.</li></ul>",
                             "Beachten Sie, dass die App  maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten kann. Wenn Sie beispielsweise einen PCR-Test wiederherstellen, und zuvor einen weiteren PCR-Test registriert hatten, wird der aktive PCR-Test in den Papierkorb verschoben.",
@@ -572,10 +573,21 @@
                         ]
                     },
                     {
+                        "title": "2/1-Impfzertifikate",
+                        "anchor": "vc_2of1",
+                        "active": false,
+                        "textblock": [
+                            "Die Android-App und iOS-App Versionen 2.17.1 unterscheiden sich bezüglich der Anzeige des 2/1-Impfzertifikats nach einer Erstimpfung mit Johnson und Johnson: In der iOS-App wird aktuell sofort der vollständige Impfstatus angezeigt. Für die Android-App ist das aktuell erst mit dem 15. Tag der Fall. Wir werden das umgehend mit der Android-App anpassen, sodass auch hier mit einem 2/1-Impfzertifikat sofortige vollständige Immunisierung angezeigt wird.",
+                            "Trotz dieser Korrektur sind derzeit aufgrund der unterschiedlichen fachlichen Bewertung dieser 2/1-Impfungen in den einzelnen Bundesländern und in der EU die Angaben zum vollständigen Impfschutz und zum Status der Auffrischimpfung noch nicht in allen Fällen eindeutig ableitbar. Zusammen mit dem RKI und dem BMG arbeiten die technischen Projektpartner an einer Lösung, die diese verschiedenen Fälle in künftigen Versionen unterschieden kann. Das gilt im übrigen auch für die CovPassCheck-App.",
+                            "Siehe auch den FAQ Artikel <a href='#vac_booster_jj' target='_blank'>Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischimpfung?</a>"
+                        ]
+                    },
+                    {
                         "title": "Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischimpfung?",
                         "anchor": "vac_booster_jj",
                         "active": false,
                         "textblock": [
+                            "<b>AKTUELL 2. February 2022</b><br/>Siehe auch diesen FAQ Artikel bezüglich <a href='#vc_2of1' target='_blank'>2/1-Impfzertifikaten</a>.",
                             "<b>AKTUELL 30. Dezember 2021</b> <br/> Kürzlich hat die Europäische Kommission die Vorschriften für die Kodierung von Impfzertifikaten angepasst. Dies wird in Zukunft ermöglichen, dass Impfzertifikate, die den Abschluss der ersten Impfserie belegen, immer von Impfzertifikaten unterschieden werden können, die nach einer Auffrischimpfung ausgestellt wurden. Auffrischimpfungen werden in Zukunft wie folgt gekennzeichnet:",
                             "• 3/3 für eine Auffrischimpfung nach einer ersten Impfserie mit zwei Einzeldosen.",
                             "• 2/1 für eine Auffrischimpfung nach der Impfung mit einer Einzeldosis oder der Verabreichung einer Dosis eines aus zwei Einzeldosen bestehenden Impfstoffs an eine genesene Person.",
