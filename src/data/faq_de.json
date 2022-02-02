@@ -573,6 +573,19 @@
                         ]
                     },
                     {
+                        "title": "2/1-Impfzertifikate",
+                        "anchor": "vc_2of1",
+                        "active": false,
+                        "textblock": [
+                            "Die Android-App und iOS-App Versionen 2.18.1 verhalten sich derzeit leicht unterschiedlich bezüglich eines 2/1-Impfzertifikats: Bei einer 2/1-Impfung mit einem mRNA-Impfstoff nach einer Erstimpfung mit Johnson und Johnson wird aktuell in der iOS-App sofort der vollständige Impfstatus angezeigt. Für die Android-App ist das aktuell erst mit dem 15. Tag der Fall. Dies wird voraussichtlich am Freitag mit der Android-App Version 2.18.2 insofern angepasst, dass auch hier mit einem 2/1-Impfzertifikat sofortige vollständige Immunisierung angezeigt wird.",
+                            "Beachten Sie jedoch, dass es daher im Zusammenhang mit den 2/1-Impfzertifikaten unterschiedliche Fälle gibt, die derzeit in der CWA und auch in der CovPassCheck-App nicht immer korrekt unterschieden und angezeigt werden:",
+                            "1. Für Deutschland ist die Anzeige eines sofortigen Impfschutzes fachlich nicht korrekt, weil eine 2/1-Auffrischimpfung nach einer Erstimpfung mit Johnson und Johnson erst die vollständige Grundimmunisierung herstellt und dies auch erst 14 Tage nach der 2/1-Impfung. Dies gilt lt. Paul-Ehrlich-Institut seit dem 20. Januar 2022. Solch eine zweite Impfung mit einem mRNA Impfstoff gilt als „Optimierung der Grundimmunisierung“. Erst eine weitere Dosis mit einem mRNA-Impfstoff gilt als Auffrischimpfung. (Anzeige also inkorrekt)",
+                            "2. Bei einer 2/1-Impfung nach Genesungen gilt dagegen sofortiger voller Impfschutz (Anzeige also korrekt)",
+                            "3. Anders als in Deutschland, gilt innerhalb der EU für eine 2/1-Impfung auch immer sofortiger voller Impfschutz. (Anzeige also korrekt)",
+                            "Die Projektpartner arbeiten zusammen mit dem RKI und BMG an einer technischen Lösung, die diese verschiedenen Fälle in zukünftigen Versionen der CovPassCheck-App und CWA unterscheiden kann."
+                        ]
+                    },
+                    {
                         "title": "Warum erscheint in der Corona-Warn-App eine 14-tägige Wartezeit bis zum vollen Impfschutz nach einer Auffrischimpfung?",
                         "anchor": "vac_booster_jj",
                         "active": false,

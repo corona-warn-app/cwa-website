@@ -574,6 +574,19 @@
                         ]
                     },
                     {
+                        "title": "2/1 vaccination certificates",
+                        "anchor": "vc_2of1",
+                        "active": false,
+                        "textblock": [
+                            "The Android app and iOS app versions 2.18.1 currently behave slightly differently regarding a 2/1 vaccination certificate: For a 2/1 vaccination with an mRNA vaccine after an initial vaccination with Johnson and Johnson, the iOS app currently displays the complete vaccination status immediately. For the Android app, this is currently not \nthe case until day 15. This is expected to be adjusted on Friday with Android app version \n2.18.2 in that immediate full immunization will also be displayed here with a 2/1 vaccination certificate.",
+                            "Note, however, that there are therefore different cases in connection with the 2/1 vaccination certificates, which are currently not always correctly distinguished and displayed in the CWA and also in the CovPassCheck-App:",
+                            "1. For Germany, the indication of immediate vaccination protection is not technically correct, because a 2/1 booster vaccination after a first vaccination with Johnson and Johnson only establishes the complete basic immunization and this also only 14 days after the 2/1 vaccination. According to the Paul-Ehrlich-Institute, this has been in effect since January 20, 2022. Such a second vaccination with an mRNA vaccine is considered \"optimization of basic immunization.\" Only a further dose with a mRNA vaccine is considered a booster vaccination. (Display therefore incorrect)",
+                            "2. With a 2/1 vaccination after recovery, on the other hand, immediate full vaccination protection applies (display therefore correct).",
+                            "3. Unlike in Germany, within the EU for a 2/1 vaccination is also always immediate full vaccination protection. (Display therefore correct)",
+                            "The project partners are working with the RKI and BMG on a technical solution that can distinguish these different cases in future versions of the CovPassCheck-App and CWA."
+                        ]
+                    },
+                    {
                         "title": "Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?",
                         "anchor": "vac_booster_jj",
                         "active": false,
@@ -695,8 +708,8 @@
                             "If the second vaccination certificate was issued correctly, it is usually sufficient to remove the first vaccination certificate in the Corona-Warn-App and then re-scan the second vaccination certificate. The app recognizes that this also achieves full vaccination protection (after 14 days).",
                             "However, if the data in the second vaccination certificate is incorrect, only the issuer of the certificate can correct it.",
                             "<b>Important notice:</b> Since in some countries proof of vaccination is still required for both the first and second vaccination, it is advisable to carry all vaccination certificates with you, especially when traveling abroad, be it in the Corona-Warn-App, as a PDF, or as a paper printout."
-                        ]
-                    }
+                        ]}
+
                 ]
             },
             {
