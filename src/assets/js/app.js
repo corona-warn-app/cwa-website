@@ -276,6 +276,7 @@ $(document).ready(function(){
         const searchParams = new URLSearchParams(window.location.search);
         const search = searchParams.get('search');
         const topic = searchParams.get('topic');
+        const { hash } = window.location;
         if(search) {
             $('#faq-search').val(search)
         }
@@ -295,33 +296,12 @@ $(document).ready(function(){
                 faq = data;
                 // find out whether there are search strings added
                 var urlParams = new URLSearchParams(window.location.search);
-                const { hash } = window.location;
                 if(urlParams.has("search")){
                     // only perform search if no hash is set
                     if(!hash || hash === "") {
                         // and update the result list
                         updateResults(search, topic, faq);
                     }
-                }
-                // if we have a hash and that hash is not part of the faq list
-                let hashVal = hash.substring(1)
-                if(hash && !Object.keys(faq).includes(hashVal)) {
-                    // then let's get the list of defined redirects
-                    $.get("/assets/data/faq_redirects.json", (data) => {
-                        // and see whether there is a proper replacement (1:1 mapping)
-                        let replacement = data[hashVal];
-                        // if there is ...
-                        if(replacement){
-                            // ... just go there
-                            location.hash = "#" + replacement;
-                        } else {
-                            // Check if the hashVal isn't at the side-menu items. For prevent a bug when search the URL directly into another tab. 
-                            if (!sideMenuItems.includes(hashVal)){
-                                // if not, otherwise, just search for the hash value
-                                updateResults(search, topic, faq);
-                            }
-                        }
-                    })
                 }
             });
         } else {
@@ -339,6 +319,21 @@ $(document).ready(function(){
                 })
             }
             
+        }
+
+        // if we have a hash and that hash is not part of the faq list
+        let hashVal = hash.substring(1)
+        if(hash && !Object.keys(faq).includes(hashVal)) {
+            // then let's get the list of defined redirects
+            $.get("/assets/data/faq_redirects.json", (data) => {
+                // and see whether there is a proper replacement (1:1 mapping)
+                let replacement = data[hashVal];
+                // if there is ...
+                if(replacement){
+                    // ... just go there
+                    location.hash = "#" + replacement;
+                }
+            })
         }
 
         //Clear search 
