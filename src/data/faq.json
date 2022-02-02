@@ -214,6 +214,27 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
+                        "title": "Error 'HC_PREFIX_INVALID'",
+                        "anchor": "hc_invalid_prefix",
+                        "active": false,
+                        "textblock": [
+                            "Under the tab 'Certificates' the app can only scan '<b>EU Digital</b> COVID  Certificates'.",
+                            "See also the following entry on <a href='#vac_cert_invalid' target='_self' rel='noopener'>invalid vaccination certificates</a>."
+                        ]
+                    },
+                    {
+                        "title": "Error 'VC_ALREADY_REGISTERED', 'TC_ALREADY_REGISTERED' or 'RC_ALREADY_REGISTERED'",
+                        "anchor": "hc_already_registered",
+                        "active": false,
+                        "textblock": [
+                            "There have been an increasing number of messages reporting receiving this error message and not being able to find the scanned certificate. The reason for this error is that the certificate is already in the Corona-Warn-App, but it was saved under a 'different person'.",
+                            "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/android/PersonOverviewFragment_one_person.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/android/PersonDetailsFragment_cwa_2.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/en/ios/iPhone 13-screenshot_recovery_certificate_valid_details_part2.png' alt='image'></div></div></div>",
+                            "<b>How can this be checked?</b>",
+                            "In the Corona-Warn-App, the certificates are displayed and grouped at different levels: <ul><li><b>'Certificates' tab</b>: Under the 'Certificates' tab, users can see all existing certificates grouped by person. Check if multiple people are visible by scrolling down in this view. Errors often occur when issuing certificates, for example, if a second name or a title is used irregularly or the date of birth is given differently. Any discrepancies will result in certificates being assigned to a 'new person'.</li><li><b>All certificates of one person</b>: By tapping on a person's card, you can see all the certificates that are available for that person in the app. Check under which person the certificate you scanned can be found.</li><li><b>Certificate details</b>: By selecting a certificate, you can view details about the respective certificate. Check the standardized name and date of birth of the certificate. These data must be the same for all certificates so that they are displayed correctly under all certificates of a person.</li></ul>",
+                            "If you continue to receive the error message and have been able to verify that the certificate is indeed not already in your app, please reach out to us by mail at <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. If your certificate has been issued incorrectly, please contact the issuer of the certificate."
+                        ]
+                    },
+                    {
                         "title": "Which EU certificates are supported?",
                         "anchor": "eu_dcc_which",
                         "active": false,
@@ -222,15 +243,6 @@
                             "<ul>  <li>digital vaccination certificate</li>  <li>digital recovery certificate</li>  <li>digital test certificate</li> </ul>",
                             "Previously, support for digital vaccination certificates was introduced in <a href='../../en/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>version 2.3</a>, followed by the addition of support for digital test certificates in <a href='../../en/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>version 2.4.</a> The release of <a href='../../en/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>version 2.5</a> added support for digital recovery certificates.",
                             "The <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_en' target='_blank' rel='noopener noreferrer'>EU Digital COVID Certificate</a> Regulation entered into application on July 1, 2021 and the certificates will be accepted in all EU Member States."
-                        ]
-                    },
-                    {
-                        "title": "Why do I get the error message 'This QR code is not a valid  certificate. (HC_PREFIX_INVALID)' when I try to scan a QR code?",
-                        "anchor": "hc_prefix_invalid",
-                        "active": false,
-                        "textblock": [
-                            "Under the tab 'Certificates' the app can only scan '<b>EU Digital</b> COVID  Certificates'.",
-                            "See also the following entry on <a href='#vac_cert_invalid' target='_self' rel='noopener'>invalid vaccination certificates</a>."
                         ]
                     },
                     {
@@ -625,7 +637,7 @@
                         "anchor": "vac_cert_red_warning",
                         "active": false,
                         "textblock": [
-                            "If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. This applies even if you have been vaccinated or are recovered and have no symptoms. In case of an increased risk warning (red tile), you are entitled to a free test. Your entitlement may be limited to a free rapid antigen test, depending on the local regulations. We recommend taking a PCR test, especially when it is free of charge.",
+                            "If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. This applies even if you have been vaccinated or are recovered and have no symptoms. In case of an increased risk warning (red tile), you are entitled to a free test. This does not necessarily have to be a PCR test.",
                             "If symptoms occur in the further course, you should get tested immediately if this has not happened and go into immediate quarantine. Please confer with your doctor for the further procedure.",
                             "In the case of an unfinished basic immunization as well as in the first 14 days after the last dose, the vaccination protection is significantly lower, so that the same recommendations apply here as for unvaccinated persons."
                         ]
@@ -1138,10 +1150,10 @@
                         "anchor": "encounter_but_green",
                         "active": false,
                         "textblock": [
-                            "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user’s smartphone encountered the smartphone of a person who has subsequently uploaded their diagnosis keys.",
+                            "All active Corona-Warn-Apps regularly download the diagnosis keys released on the Corona-Warn-App server and pass them on to the operating system in batches through an interface. The app checks whether any of these received, recorded rolling proximity identifiers match any of the diagnosis keys. If there is a match, this means the following: The user's smartphone encountered the smartphone of a person who has subsequently uploaded their diagnosis keys.",
                             "In the next step, the app analyzes all the matching rolling proximity identifiers for each diagnosis key, to estimate how long the exposure lasted in total on the day in question and how close the smartphones were to each other on average during the exposure. The distance is calculated from the measured reduction in strength of the Bluetooth signal, which is specified in dB (decibel). All exposures for a diagnosis key that lasted less than 10 minutes (reduced to 5 minutes on Feb 23, 2021, see <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' >blog post</a>) in total (regardless of how close the smartphones came during that time) or during which the smartphones were more than 8 meters (73 dB attenuation) apart on average (regardless of how long the exposure lasted) are rated as harmless and are not included in the app's risk calculation.",
                             "The remaining encounters are rated collectively according to their distance and duration as well as the presumed infectiousness of the other person(s). This rating doesn't always yield an increased risk. In this case those encounters will be shown in the Corona-Warn-App but the risk status will stay the same.",
-                            "For more details about risk assessment, including a sample calculation, see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/cwa-risk-assessment.md</a>."
+                            "For more details about risk assessment see the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#mobile-applications' target='_blank' rel='noopener noreferrer'>Mobile Applications section in the Solution Architecture document</a>."
                         ]
                     },
                     {

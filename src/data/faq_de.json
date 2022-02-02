@@ -213,6 +213,27 @@
                 "id": "eu_dcc",
                 "accordion": [
                     {
+                        "title": "Fehlermeldung 'HC_PREFIX_INVALID'",
+                        "anchor": "hc_invalid_prefix",
+                        "active": false,
+                        "textblock": [
+                            "Unter dem Reiter Zertifikate kann die App nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
+                            "Siehe auch folgenden Eintrag zu <a href='#vac_cert_invalid' target='_self' rel='noopener'>ungültigen Impfzertifikaten</a>."
+                        ]
+                    },
+                    {
+                        "title": "Fehlermeldung 'VC_ALREADY_REGISTERED', 'TC_ALREADY_REGISTERED' oder 'RC_ALREADY_REGISTERED'",
+                        "anchor": "hc_already_registered",
+                        "active": false,
+                        "textblock": [
+                            "Es kamen vermehrt Meldungen auf, die von dem Erhalt dieser Fehlermeldung berichten und das gescannte Zertifikat nicht finden konnten. Die Ursache für diesen Fehler ist, dass sich das Zertifikat zwar schon in der Corona-Warn-App befindet, allerdings unter einer 'anderen Person' gespeichert wurde.",
+                            "<div class='container'><div class='row'><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/de/android/PersonOverviewFragment_one_person.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/de/android/PersonDetailsFragment_cwa_2.png' alt='image'></figure></div><div class='col-sm'><figure><img class='img-fluid' src='../../assets/screenshots/2-16/de/ios/iPhone 13-screenshot_recovery_certificate_valid_details_part2.png' alt='image'></div></div></div>",
+                            "<b>Wie kann dies überprüft werden?</b>",
+                            "In der Corona-Warn-App werden die Zertifikate auf verschiedenen Ebenen dargestellt und gruppiert: <ul><li><b>Reiter 'Zertifikate'</b>: Unter dem Reiter 'Zertifikate' können Nutzer*innen alle vorhandenen Zertifikate nach Personen gruppiert sehen. Überprüfen Sie, ob mehrere Personen sichtbar sind, indem Sie in dieser Ansicht nach unten scrollen. Häufig unterlaufen bei der Ausstellung der Zertifikate Fehler, beispielsweise durch das unregelmäßige Verwenden eines Zweitnamens, Titels oder einer unterschiedlichen Angabe des Geburtsdatums. Jegliche Abweichungen haben zur Folge, dass Zertifikate einer 'neuen Person' zugeordnet werden.</li><li><b>Alle Zertifikate einer Person</b>: Durch das Tippen auf die Karte einer Person können Sie alle Zertifikate sehen, die für diese Person in der App vorhanden sind. Überprüfen Sie, unter welcher Person das von Ihnen eingescannte Zertifikat zu finden ist.</li><li><b>Zertifikat-Details</b>: Durch die Auswahl eines Zertifikats können Sie Details zum jeweiligen Zertifikat einsehen. Überprüfen Sie den standardisierten Namen und das Geburtsdatum des Zertifikats. Diese Daten müssen für alle Zertifikate gleich sein, damit sie unter allen Zertifikaten einer Person korrekt angezeigt werden.</li></ul>",
+                            "Wenn Sie weiterhin die Fehlermeldung erhalten und sicherstellen konnten, dass sich das Zertifikat wirklich nicht bereits in Ihrer App befindet, melden Sie sich bitte per Mail an <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Sollte Ihr Zertifikat falsch ausgestellt worden sein, wenden Sie sich bitte an den Aussteller des Zertifikats."
+                        ]
+                    },
+                    {
                         "title": "Welche EU-Zertifikate werden unterstützt?",
                         "anchor": "eu_dcc_which",
                         "active": false,
@@ -221,15 +242,6 @@
                             "<ul><li>digitales Impfzertifikat</li><li>digitales Genesenenzertifikat</li><li>digitales Testzertifikat</li></ul>",
                             "Bisher wurden digitale Impfzertifikate erstmalig mit <a href='../../de/blog/2021-06-10-cwa-version-2-3' target='_blank' rel='noopener'>Version 2.3</a> unterstützt, gefolgt von der zusätzlichen Unterstützung von digitalen Testzertifikaten in <a href='../../de/blog/2021-06-24-cwa-version-2-4' target='_blank' rel='noopener'>Version 2.4.</a> Mit der Veröffentlichung der <a href='../../de/blog/2021-07-12-cwa-version-2-5' target='_blank' rel='noopener'>Version 2.5</a> wurden digitale Genesenenzertifikate zusätzlich unterstützt.",
                             "Die Verordnung über das <a href='https://ec.europa.eu/info/live-work-travel-eu/coronavirus-response/safe-covid-19-vaccines-europeans/eu-digital-covid-certificate_de' target='_blank' rel='noopener noreferrer'>digitale COVID-Zertifikat der EU</a> ist am 1. Juli 2021 in Kraft getreten. Das digitale COVID-Zertifikat der EU wird in allen EU-Mitgliedstaaten anerkannt."
-                        ]
-                    },
-                    {
-                        "title": "Warum bekomme ich die Fehlermeldung 'Dieser QR-Code ist kein gültiges Zertifikat (HC_PREFIX_INVALID)', wenn ich versuche einen QR-Code zu scannen?",
-                        "anchor": "hc_prefix_invalid",
-                        "active": false,
-                        "textblock": [
-                            "Unter dem Reiter Zertifikate kann die App nur '<b>EU Digitale</b> COVID-Zertifikate' scannen.",
-                            "Siehe auch folgenden Eintrag zu <a href='#vac_cert_invalid' target='_self' rel='noopener'>ungültigen Impfzertifikaten</a>."
                         ]
                     },
                     {
@@ -624,7 +636,7 @@
                         "anchor": "vac_cert_red_warning",
                         "active": false,
                         "textblock": [
-                            "Sollte die Corona-Warn-App Ihnen eine Begegnung mit erhöhtem Risiko in einer roten Kachel anzeigen, begeben Sie sich, wenn möglich, in eine freiwillige Selbstquarantäne, bis Sie ein negatives Testergebnis vorweisen können. Dies gilt auch, wenn Sie geimpft oder genesen sind und keine Symptome zeigen. Bei einer Warnung über ein erhöhtes Risiko (Rote Kachel) haben Sie Anspruch auf einen kostenlosen Test. Abhängig von den örtlichen Regelungen kann Ihr Anspruch auf einen kostenlosen Antigen-Schnelltest beschränkt sein. Wir regen an, einen PCR-Test durchführen zu lassen, vor allem, wenn der Test kostenlos ist.",
+                            "Sollte die Corona-Warn-App Ihnen eine Begegnung mit erhöhtem Risiko in einer roten Kachel anzeigen, begeben Sie sich, wenn möglich, in eine freiwillige Selbstquarantäne, bis Sie ein negatives Testergebnis vorweisen können. Dies gilt auch, wenn Sie geimpft oder genesen sind und keine Symptome zeigen. Bei einer Warnung über ein erhöhtes Risiko (Rote Kachel) haben Sie Anspruch auf einen kostenlosen Test. Dies muss nicht notwendigerweise ein PCR-Test sein.",
                             "Falls im weiteren Verlauf Symptome auftreten, sollten Sie sich unmittelbar testen lassen sofern dies nicht geschehen ist und in sofortige Quarantäne begeben. Konsultieren Sie bitte Ihren Arzt bzw. Ihre Ärztin für die weiteren Schritte.",
                             "Bei nicht abgeschlossener Grundimmunisierung sowie in den ersten 14 Tagen nach der letzten Dosis ist der Impfschutz deutlich geringer, so dass hier dieselben Empfehlungen wie bei Ungeimpften gelten."
                         ]
@@ -1140,7 +1152,7 @@
                             "Alle aktiven Corona-Warn-Apps laden regelmäßig die veröffentlichten Positivkennungen vom Corona-Warn-App-Server herunter und übergeben sie gesammelt über eine Schnittstelle an das Betriebssystem. Dort wird geprüft, ob empfangene und aufgezeichnete Zufalls-IDs vorliegen, die zu einer der Positivkennungen passen. Passen sie zusammen, heißt das Folgendes: Ihr Smartphone, das die Zufalls-IDs aufgezeichnet hat, und das Smartphone der Person die anschließend Corona-positiv getestet wurde, sind sich begegnet.",
                             "Als Nächstes wird für jede Positivkennung anhand aller dazu passenden Zufalls-IDs geschätzt, wie lange die Begegnungen jenes Tags insgesamt gedauert haben und wie nahe die Smartphones sich dabei im Durchschnitt waren. Die Entfernung wird aus der gemessenen Abschwächung des Bluetooth-Signals errechnet, die in dB (Dezibel) angegeben wird. Jedem dB-Wert lässt sich eine Entfernung im Freiraum (d.&nbsp;h. ohne Hindernisse im Signalweg) zuordnen. Alle Begegnungen zu einer Positivkennung, die insgesamt weniger als 10 Minuten (reduziert auf 5 Minuten am 23 Feb. 2021, siehe <a href='../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' >Blogartikel</a>) gedauert haben (egal, wie nahe sich die Smartphones dabei gekommen sind) oder bei denen die Smartphones im Durchschnitt mehr als ca. 8 Meter Freiraum (73 dB Dämpfung) voneinander entfernt waren (egal, wie lange sie insgesamt gedauert haben), werden als unbedenklich bewertet.",
                             "Die verbleibenden Begegnungen werden in ihrer Gesamtheit unter Berücksichtigung ihres Abstands und ihrer Dauer sowie der vermutlichen Infektiosität der anderen Person(en) bewertet. Nicht immer ergibt diese Bewertung ein erhöhtes Risiko, in diesem Fall werden diese Begegnungen - zusammen mit den oben genannten harmlosen Begegnungen - in der Corona-Warn-App angezeigt aber die Risikobewertung ändert sich nicht.",
-                            "Weitere Details zur Risiko-Ermittlung mit einer Beispielrechnung finden Sie unter <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/translations/cwa-risk-assessment.de.md</a>."
+                            "Weitere Details zur Risiko-Ermittlung (auf Englisch) finden Sie im <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#mobile-applications' target='_blank' rel='noopener noreferrer'>Abschnitt 'Mobile Applications' des Dokuments 'Solution Architecture'</a>."
                         ]
                     },
                     {
