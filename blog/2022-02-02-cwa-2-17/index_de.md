@@ -7,7 +7,7 @@ author: Hanna Heine, 10 Uhr
 layout: blog
 ---
 
-# Projektteam veröffentlicht CWA Version 2.17
+## Projektteam veröffentlicht CWA Version 2.17
 
 Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat Version 2.17 der Corona-Warn-App (CWA) veröffentlicht. Mit dem Update können Nutzer*innen im Statistikbereich nun die **Anzahl an Personen in Deutschland sehen, die eine Auffrischimpfung** (Boosterimpfung) erhalten haben. Außerdem hat das Projektteam die Hinweise sowie Vorgehensweise bei einem positiven Testergebnis überarbeitet und einen **Link zu den Social-Media-Kanälen der CWA** eingefügt. Zudem wird im **Papierkorb nun das Löschdatum** für jedes Element angezeigt.
 
