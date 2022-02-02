@@ -23,7 +23,7 @@ Ab Version 2.17 können Nutzer\*innen neben den Statistiken für geimpfte Person
 
 ### Papierkorb zeigt Löschdatum an
 
-Außerdem können Nutzer\*innen nun für jedes Element in ihrem Papierkorb das **Löschdatum** sehen. Seit [Version 2.13 der CWA](de/blog/2021-11-03-cwa-version-2-13/) werden alle Zertifikate und Tests, die gelöscht wurden, zunächst für 30 Tage in den Papierkorb verschoben. Dort sehen Nutzer\*innen nun, wann die 30 Tage abgelaufen sind und das jeweilige Zertifikat endgültig gelöscht wird. 
+Außerdem können Nutzer\*innen nun für jedes Element in ihrem Papierkorb das **Löschdatum** sehen. Seit [Version 2.13 der CWA](/de/blog/2021-11-03-cwa-version-2-13/) werden alle Zertifikate und Tests, die gelöscht wurden, zunächst für 30 Tage in den Papierkorb verschoben. Dort sehen Nutzer\*innen nun, wann die 30 Tage abgelaufen sind und das jeweilige Zertifikat endgültig gelöscht wird. 
 
 <br></br>
 <center> 
