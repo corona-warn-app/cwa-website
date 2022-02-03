@@ -300,6 +300,9 @@ $(document).ready(function(){
             $("#glossary_container").remove();
             $("#glossary-container-mobile").attr("id", "glossary_container");
             
+        } else {
+            $("#faq-container-mobile").remove();
+            $("#glossary-container-mobile").remove();
         }
         const searchForm = document.getElementById("faq-search-form");
         if(searchForm !== null){
@@ -311,6 +314,13 @@ $(document).ready(function(){
         const search = searchParams.get('search');
         const topic = searchParams.get('topic');
         const { hash } = window.location;
+
+        if (hash) {
+            // go to anchor
+            setTimeout(() => {
+                $(document).scrollTop( $(`${hash}`).offset().top );
+            },250)
+        }
         if(search) {
             $('#faq-search').val(search)
         }
