@@ -241,7 +241,10 @@ $(document).ready(function(){
             //check again showed items cause of topic filter
             let counter = topicString === "all" || topicString === "glossary" ? glossaryList : 0;
             $(".faq").each((index, faq) => {
-                if($(faq).is(":visible")) counter++;
+                if($(faq).is(":visible")) {
+                    counter++;
+                    $(faq).parent().find("h3").show();
+                }
             })
 
             if(counter === 0) {
@@ -250,7 +253,7 @@ $(document).ready(function(){
                     $('#no_results').removeClass("d-none");
                     $('#collapseAll').addClass("d-none");
                 });
-            }
+            } else $('#no_results').addClass("d-none");
             //Set search results breadcrumbs
             $("#counter").text(counter);
             $(".bread-search").removeClass("d-none");
@@ -443,8 +446,12 @@ $(document).ready(function(){
                             setTimeout(() => {
                                 let counter = 0;
                                 $(".faq").each((index, faq) => {
-                                    if($(faq).is(":visible")) counter++;
+                                    if($(faq).is(":visible")) {
+                                        $(faq).parent().find("h3").show();
+                                        counter++;
+                                    }
                                 })
+                                counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
                                 $("#counter").text(counter);
                             }, 500)
                             $("#topic_separator").removeClass("d-none");
@@ -463,47 +470,49 @@ $(document).ready(function(){
                     $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
                     $("#faq-search-form").submit()
                 } else {
-                    if(topic === "all" || topic === $(this).attr("class").split(/\s+/)[1]) {
-                        if($(this).attr("class").split(/\s+/)[1] === "glossary") {
-                            $("#faq-container").hide()
-                            $("#glossary_container").show();
-                            let glossaryList = 0;
-                            $(".word").each((index, word) => {
-                                if($(word).text().toLowerCase().includes(search.toLowerCase())) {
-                                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                                    glossaryList++;
+                    if($(this).attr("class").split(/\s+/)[1] === "glossary") {
+                        $("#faq-container").hide()
+                        $("#glossary_container").show();
+                        let glossaryList = 0;
+                        $(".word").each((index, word) => {
+                            if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                glossaryList++;
+                            }
+                        })
+                        $("#counter").text(glossaryList);
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).text());
+                        $("#bread_separator").addClass("d-none");
+                        $(".bread-section").hide();
+                    } else {
+                        $("#faq-container").show();
+                        updateResults(search, topic, faq);
+                        $("#glossary_container").hide();
+                        $(".bread-section").hide();
+                        $("#bread_separator").hide();
+                        $("#faq-container").children().each((index, element) => {
+                            if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
+                            else {
+                                $(element).show();
+                                $(element).find("h1").show();
+                            }
+                        });
+                        setTimeout(() => {
+                            let counter = 0;
+                            $(".faq").each((index, faq) => {
+                                if($(faq).is(":visible")) {
+                                    $(faq).parent().find("h3").show();
+                                    counter++;
                                 }
                             })
-                            $("#counter").text(glossaryList);
-                            $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($(this).text());
-                            $("#bread_separator").addClass("d-none");
-                            $(".bread-section").hide();
-                        } else {
-                            $("#faq-container").show();
-                            updateResults(search, topic, faq);
-                            $("#glossary_container").hide();
-                            $(".bread-section").hide();
-                            $("#bread_separator").hide();
-                            $("#faq-container").children().each((index, element) => {
-                                if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
-                                else {
-                                    $(element).show();
-                                    $(element).find("h1").show();
-                                }
-                            });
-                            setTimeout(() => {
-                                let counter = 0;
-                                $(".faq").each((index, faq) => {
-                                    if($(faq).is(":visible")) counter++;
-                                })
-                                $("#counter").text(counter);
-                            }, 500)
-                            $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($(this).text());
-                            $(".bread-search").removeClass("d-none");
-                            $("#search_separator").removeClass("d-none");
-                        }
+                            counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
+                            $("#counter").text(counter);
+                        }, 500)
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).text());
+                        $(".bread-search").removeClass("d-none");
+                        $("#search_separator").removeClass("d-none");
                     }
                 }
             });
@@ -559,8 +568,12 @@ $(document).ready(function(){
                         setTimeout(() => {
                             let counter = 0;
                             $(".faq").each((index, faq) => {
-                                if($(faq).is(":visible")) counter++;
+                                if($(faq).is(":visible")) {
+                                    $(faq).parent().find("h3").show();
+                                    counter++;
+                                }
                             })
+                            counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
                             $("#counter").text(counter);
                         }, 500)
                         
