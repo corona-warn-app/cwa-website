@@ -161,7 +161,6 @@ $(document).ready(function(){
             $("#faq-container").hide();
         }
         if (show.length > 0) {
-            console.log("entra pq hay contenido")
             if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
             if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
             //Hide all topics containers
@@ -170,17 +169,13 @@ $(document).ready(function(){
             })
             //Hide all sections containers
             $(".section-container").hide();
-            console.log("antes del query", show)
             document.querySelectorAll(show).forEach((div) => {
-                console.log("entra en el query")
                 const accordion = $(div).parent().get(0)
                 const section = $($(accordion).parent().get(0)).attr("id");
-                console.log("accordion h1 id",$($(accordion).parent()).parent().find("h1").attr("id"),"topicString", topicString)
                 if($($(accordion).parent()).parent().find("h1").attr("id") === topicString || topicString === "all" ) {
                     //Show topic container
-                    console.log("accordion", $($(accordion).parent()).parent().find(".topic-title").attr("id"))
                     $("#faq-container").children().each((index, child) => {
-                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) {$(child).show(); console.log("show", child)}
+                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) $(child).show();
                     })
                     //Show section container
                     $(".section-container").each((index, child) => {
@@ -231,9 +226,15 @@ $(document).ready(function(){
         if(glossaryList === 0) {
             $("#glossary_container").hide(); 
         } else {
-            $("#glossary_container").children().each((index, child) => {
-                if(index > 1) $(child).hide(); 
-            })
+            if(window.matchMedia("(max-width: 767px)").matches) {
+                $(".glossary-mobile-content").children().each((index, child) => {
+                    if(index > 1) $(child).hide(); 
+                })
+            } else {
+                $("#glossary_container").children().each((index, child) => {
+                    if(index > 1) $(child).hide(); 
+                })
+            }
         }
 
         setTimeout(() => {
@@ -276,6 +277,7 @@ $(document).ready(function(){
     if (document.querySelector(".page-faq-results")) {
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-container-mobile").removeClass("d-none")
+            $("#glossary-container-mobile").removeClass("d-none")
             //Adjust form
             $("#faq-search-form").removeClass("w-50").addClass("w-100");
             $("#faq-search").parent().removeClass("w-50").addClass("w-100");
@@ -284,11 +286,19 @@ $(document).ready(function(){
             $("#faq-submit").addClass("w-100");
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
-                $(element).find("h1").remove()
-                $(element).appendTo($(`#${$(element).attr("id")}-div`).find(".accordion-faq-item-content"));
+                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
+                // $(element).find("h1").remove()
             })
             $("#faq-container").remove();
             $("#faq-container-mobile").attr("id", "faq-container");
+
+            //Adjust glossary container
+            $("#glossary_container").children().each((index, element) => {
+                $(element).appendTo($(".glossary-mobile-content"));
+                // $(element).find("h1").remove()
+            })
+            $("#glossary_container").remove();
+            $("#glossary-container-mobile").attr("id", "glossary_container");
             
         }
         const searchForm = document.getElementById("faq-search-form");
