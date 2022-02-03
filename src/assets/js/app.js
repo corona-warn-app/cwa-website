@@ -480,6 +480,13 @@ $(document).ready(function(){
                                 glossaryList++;
                             }
                         })
+                        if(glossaryList === 0) {
+                            $("#glossary_container").hide()
+                            $('#no_results').removeClass("d-none")
+                        } else {
+                            $("#glossary_container").show();
+                            $('#no_results').addClass("d-none");
+                        } 
                         $("#counter").text(glossaryList);
                         $("#topic_separator").removeClass("d-none");
                         $(".bread-topic").text($(this).text());
