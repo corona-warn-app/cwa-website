@@ -319,7 +319,18 @@ $(document).ready(function(){
             // go to anchor
             setTimeout(() => {
                 if(window.matchMedia("(max-width: 767px)").matches) {
-                    $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                    //Open accordion
+                    if($(`${hash}`).hasClass("topic-container")) {
+                        $($($($(`${hash}`).children()[0]).children()[0]).children()[0]).addClass("active");
+                    }
+                    //Open accordion and aim section title
+                    if($(`${hash}`).hasClass("section-container")) {
+                        $($(`${hash}`).parent().parent().parent().parent().children()[0]).addClass("active");
+                    }
+                    //Open accordion and aim question
+                    if($(`${hash}`).hasClass("accordion-faq-item-title")){
+                        $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                    } 
                 }
                 $(document).scrollTop( $(`${hash}`).offset().top );
             },250)
