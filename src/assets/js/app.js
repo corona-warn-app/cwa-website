@@ -602,6 +602,27 @@ $(document).ready(function(){
                 if(!search) $("#faq-topic").val("all").prop('selected', true);
                 $("#faq-search-form").submit()
             });
+        } else {
+            $(".section-head").on("click", function(e) {
+                //Open accordion on mobile
+                const topicName = $(this).attr("class").split(/\s+/)[1];
+                if(topicName === "glossary") {
+                    $(".glossary-accordion-header").addClass("active")
+                    $(document).scrollTop( $(`#glossary_container`).offset().top );
+                    $(".btn-close").click();
+                } else {
+                    $($(`#${topicName}-div`).children()[0]).addClass("active")
+                    $(document).scrollTop( $(`#${topicName}-div`).offset().top );
+                    $(".btn-close").click();
+                }
+            });
+
+            $(".section-item").on("click", function(e) {
+                //Open accordion on mobile
+                $(this).parent().find("b").click()
+                $(this).parent().find("b").attr("class").split(/\s+/)[1] === "glossary" ? $(document).scrollTop( $("#glossary_container").offset().top ) : $(document).scrollTop( $(this).offset().top );
+                $(".btn-close").click();
+            });
         }
     }
 

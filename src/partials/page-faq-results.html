@@ -99,19 +99,17 @@
   
     </div>
     <div id="glossary-container-mobile" class="d-none">
-      <div>
-        <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
-          <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header">
-            <h3 class="accordion-faq-item-title text-black">{{page-contents.section-main.texts.glossary}}</h3>
-            <span class="accordion-faq-item-icon"></span>
-          </dt>
-          <dd class="accordion-faq-body">
-            <div class="accordion-faq-item-content glossary-mobile-content">
-                      
-            </div>
-          </dd>
-        </dl>
-      </div>
+      <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+        <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header glossary-accordion-header">
+          <h3 class="accordion-faq-item-title text-black">{{page-contents.section-main.texts.glossary}}</h3>
+          <span class="accordion-faq-item-icon"></span>
+        </dt>
+        <dd class="accordion-faq-body">
+          <div class="accordion-faq-item-content glossary-mobile-content">
+                    
+          </div>
+        </dd>
+      </dl>
     </div>
     <div id="glossary_container">
       <h1 class="topic-title" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h1>
