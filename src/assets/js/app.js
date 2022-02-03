@@ -586,6 +586,7 @@ $(document).ready(function(){
             });
             //Show all topics on click on FAQ
             $(".bread-faq").on("click", function(e) {
+                if(!search) $("#faq-topic").val("all").prop('selected', true);
                 $("#faq-search-form").submit()
             });
         }
