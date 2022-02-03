@@ -151,9 +151,6 @@ $(document).ready(function(){
         });
         //hide glossary container
         $("#glossary_container").hide();
-        if(topicString === "glossary" || topicString === "all") {
-            $("#glossary_container").show();
-        }
         // show all matches
         if (show.length === 0) {
             document.querySelectorAll("h3").forEach((title) => {
@@ -164,6 +161,7 @@ $(document).ready(function(){
             $("#faq-container").hide();
         }
         if (show.length > 0) {
+            console.log("entra pq hay contenido")
             if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
             if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
             //Hide all topics containers
@@ -172,15 +170,17 @@ $(document).ready(function(){
             })
             //Hide all sections containers
             $(".section-container").hide();
-
+            console.log("antes del query", show)
             document.querySelectorAll(show).forEach((div) => {
+                console.log("entra en el query")
                 const accordion = $(div).parent().get(0)
                 const section = $($(accordion).parent().get(0)).attr("id");
-
+                console.log("accordion h1 id",$($(accordion).parent()).parent().find("h1").attr("id"),"topicString", topicString)
                 if($($(accordion).parent()).parent().find("h1").attr("id") === topicString || topicString === "all" ) {
                     //Show topic container
+                    console.log("accordion", $($(accordion).parent()).parent().find(".topic-title").attr("id"))
                     $("#faq-container").children().each((index, child) => {
-                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) $(child).show();
+                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) {$(child).show(); console.log("show", child)}
                     })
                     //Show section container
                     $(".section-container").each((index, child) => {
@@ -210,19 +210,23 @@ $(document).ready(function(){
         };
 
         let glossaryList = 0;
-        $(".word").each((index, word) => {
-            if($(word).text().toLowerCase().includes(searchString.toLowerCase())) {
-                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                glossaryList++;
-                //Active letter in nav menu
-                document.querySelectorAll(".section-item").forEach((item) => {
-                    if($(item).find("a").attr('href') === "#"+$(word).text()[0]) {
-                        $(item).addClass("active");
-                        $($(item).parent().get(0)).addClass("active")
-                    }
-                });
-            }
-        })
+        
+        if(topicString === "glossary" || topicString === "all") {
+            $(".word").each((index, word) => {
+                if($(word).text().toLowerCase().includes(searchString.toLowerCase())) {
+                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                    glossaryList++;
+                    //Active letter in nav menu
+                    document.querySelectorAll(".section-item").forEach((item) => {
+                        if($(item).find("a").attr('href') === "#"+$(word).text()[0]) {
+                            $(item).addClass("active");
+                            $($(item).parent().get(0)).addClass("active")
+                        }
+                    });
+                }
+            })
+            $("#glossary_container").show();
+        }
 
         if(glossaryList === 0) {
             $("#glossary_container").hide(); 
@@ -301,7 +305,7 @@ $(document).ready(function(){
             $('#faq-search').val(search)
         }
         if(topic) {
-            $("#faq-topic").val(topic);
+            $("#faq-topic").val(topic).prop('selected', true);
         }
         if(search) {
             $("#clean_search").removeClass("d-none");
@@ -326,19 +330,23 @@ $(document).ready(function(){
             });
         } else {
             if(topic !== "all" && topic){
-                $("#faq-container").children().each((index, element) => {
-                    if($(element).find(".topic-title").attr("id") !== topic) $(element).hide();
-                    else {
-                        $("#topic_separator").removeClass("d-none");
-                        $(".bread-topic").text($($(element).children()[0]).text());
-                        $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
-                        $(".nav-aside").children().each((index, nav) => {
-                            if($(nav).hasClass(topic)) $(nav).addClass("active");
-                        })
-                    }
-                })
+                if(topic === "glossary") {
+                    $("#faq-container").hide();
+                } else {
+                    $("#glossary_container").hide();
+                    $("#faq-container").children().each((index, element) => {
+                        if($(element).find(".topic-title").attr("id") !== topic) $(element).hide();
+                        else {
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($($(element).children()[0]).text());
+                            $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
+                            $(".nav-aside").children().each((index, nav) => {
+                                if($(nav).hasClass(topic)) $(nav).addClass("active");
+                            })
+                        }
+                    })
+                }
             }
-            
         }
 
         // if we have a hash and that hash is not part of the faq list
@@ -364,60 +372,52 @@ $(document).ready(function(){
         });
 
         if(!window.matchMedia("(max-width: 767px)").matches) {
-            //Hide FAQ on click in glossary-title
-            // $(".glossary-title").on("click", function(e) {
-            //     $("#faq-container").hide()
-            //     let glossaryList = 0;
-            //     $(".word").each((index, word) => {
-            //         if($(word).text().toLowerCase().includes(search.toLowerCase())) {
-            //             $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-            //             glossaryList++;
-            //         }
-            //     })
-            //     $("#counter").text(glossaryList);
-            // });
-            // $(".section-head.glossary").on("click", function(e) {
-            //     $(".glossary-title").click();
-            // });
             //Hide other topics on click in title
             $(".topic-title").on("click", function(e) {
                 if(!search) {
                     $("#faq-topic").val($(this).attr("id")).prop('selected', true);
                     $("#faq-search-form").submit()
                 } else {
-                    if($(this).attr("id") === "glossary") {
-                        $("#faq-container").hide()
-                        let glossaryList = 0;
-                        $(".word").each((index, word) => {
-                            if($(word).text().toLowerCase().includes(search.toLowerCase())) {
-                                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                                glossaryList++;
-                            }
-                        })
-                        $("#counter").text(glossaryList);
-                        $("#topic_separator").removeClass("d-none");
-                        $(".bread-topic").text($(this).text());
-                    }
-                    else {
-                        $("#faq-container").children().each((index, element) => {
-                            if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
-                                $(element).hide();
-                            }
-                            else {
-                                $(element).show();
-                            }
-                        });
-                        setTimeout(() => {
-                            let counter = 0;
-                            $(".faq").each((index, faq) => {
-                                if($(faq).is(":visible")) counter++;
+                    if(topic === "all" || topic === $(this).attr("id")) {
+                        if($(this).attr("id") === "glossary") {
+                            $("#faq-container").hide()
+                            $("#glossary_container").show();
+                            let glossaryList = 0;
+                            $(".word").each((index, word) => {
+                                if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                    glossaryList++;
+                                }
                             })
-                            $("#counter").text(counter);
-                        }, 500)
-                        $("#topic_separator").removeClass("d-none");
-                        $(".bread-topic").text($(this).text());
-                        $(".bread-search").removeClass("d-none");
-                        $("#search_separator").removeClass("d-none");
+                            $("#counter").text(glossaryList);
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).text());
+                            $("#bread_separator").addClass("d-none");
+                            $(".bread-section").hide();
+                        }
+                        else {
+                            $("#glossary_container").hide();
+                            $("#faq-container").show();
+                            $("#faq-container").children().each((index, element) => {
+                                if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
+                                    $(element).hide();
+                                }
+                                else {
+                                    $(element).show();
+                                }
+                            });
+                            setTimeout(() => {
+                                let counter = 0;
+                                $(".faq").each((index, faq) => {
+                                    if($(faq).is(":visible")) counter++;
+                                })
+                                $("#counter").text(counter);
+                            }, 500)
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).text());
+                            $(".bread-search").removeClass("d-none");
+                            $("#search_separator").removeClass("d-none");
+                        }
                     }
                 }
             });
@@ -429,89 +429,129 @@ $(document).ready(function(){
                     $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
                     $("#faq-search-form").submit()
                 } else {
-                    updateResults(search, topic, faq);
-                    $(".bread-section").hide();
-                    $("#bread_separator").hide();
-                    $("#faq-container").children().each((index, element) => {
-                        if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
-                        else {
-                            $(element).show();
-                            $(element).find("h1").show();
+                    if(topic === "all" || topic === $(this).attr("class").split(/\s+/)[1]) {
+                        if($(this).attr("class").split(/\s+/)[1] === "glossary") {
+                            $("#faq-container").hide()
+                            $("#glossary_container").show();
+                            let glossaryList = 0;
+                            $(".word").each((index, word) => {
+                                if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                    glossaryList++;
+                                }
+                            })
+                            $("#counter").text(glossaryList);
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).text());
+                            $("#bread_separator").addClass("d-none");
+                            $(".bread-section").hide();
+                        } else {
+                            $("#faq-container").show();
+                            updateResults(search, topic, faq);
+                            $("#glossary_container").hide();
+                            $(".bread-section").hide();
+                            $("#bread_separator").hide();
+                            $("#faq-container").children().each((index, element) => {
+                                if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
+                                else {
+                                    $(element).show();
+                                    $(element).find("h1").show();
+                                }
+                            });
+                            setTimeout(() => {
+                                let counter = 0;
+                                $(".faq").each((index, faq) => {
+                                    if($(faq).is(":visible")) counter++;
+                                })
+                                $("#counter").text(counter);
+                            }, 500)
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).text());
+                            $(".bread-search").removeClass("d-none");
+                            $("#search_separator").removeClass("d-none");
                         }
-                    });
-                    setTimeout(() => {
-                        let counter = 0;
-                        $(".faq").each((index, faq) => {
-                            if($(faq).is(":visible")) counter++;
-                        })
-                        $("#counter").text(counter);
-                    }, 500)
-                    $("#topic_separator").removeClass("d-none");
-                    $(".bread-topic").text($(this).text());
-                    $(".bread-search").removeClass("d-none");
-                    $("#search_separator").removeClass("d-none");
+                    }
                 }
             });
 
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
                 e.preventDefault();
+                if(topic === "all" || topic === $($(this).parent().get(0)).attr("class").split(/\s+/)[1]) {
 
-                if(!search) {
-                    //Active/deactive topic nav list
-                    const topicList = $(this).parent();
-                    $(".topic-list").each((index, list) => {
-                        $(list).removeClass("active");
-                    })
-                    topicList.addClass("active")
-
-                    //Active/deactive section nav item
-                    $(".section-item").each((index, item) => {
-                        $(item).removeClass("active");
-                    })
-                    $(this).addClass("active");
-                }
-
-                //Modify breadcrumb
-                $("#bread_separator").removeClass("d-none");
-                $("#topic_separator").removeClass("d-none");
-                $(".bread-topic").text($(this).parent().find(".section-head").text())
-                $(".bread-section").text($(this).find("a").text())
-                $("#bread_separator").show();
-                $(".bread-section").show();
-                if(search) {
-                    setTimeout(() => {
-                        let counter = 0;
-                        $(".faq").each((index, faq) => {
-                            if($(faq).is(":visible")) counter++;
+                    if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
+                        //Deactive faq container
+                        $("#faq-container").hide();
+                        $("#glossary_container").show();
+                        if(search) {
+                            let glossaryList = 0;
+                            $(".word").each((index, word) => {
+                                if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                    glossaryList++;
+                                }
+                            })
+                            $("#counter").text(glossaryList);
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).parent().find("b").text());
+                            $("#bread_separator").addClass("d-none");
+                            $(".bread-section").hide();
+                        }
+                        return;
+                    } else $("#glossary_container").hide();
+                    if(!search) {
+                        //Active/deactive topic nav list
+                        const topicList = $(this).parent();
+                        $(".topic-list").each((index, list) => {
+                            $(list).removeClass("active");
                         })
-                        $("#counter").text(counter);
-                    }, 500)
-                    
-                    $(".bread-search").removeClass("d-none");
-                    $("#search_separator").removeClass("d-none");
-                }
+                        topicList.addClass("active")
 
-                //Show-hide containers
-                let container;
-                $("#faq-container").children().each((index, element) => {
-                    if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
-                        $(element).hide();
+                        //Active/deactive section nav item
+                        $(".section-item").each((index, item) => {
+                            $(item).removeClass("active");
+                        })
+                        $(this).addClass("active");
                     }
-                    else {
-                        $(element).show();
-                        container = element;
+                    $("#faq-container").show();
+                    //Modify breadcrumb
+                    $("#bread_separator").removeClass("d-none");
+                    $("#topic_separator").removeClass("d-none");
+                    $(".bread-topic").text($(this).parent().find(".section-head").text())
+                    $(".bread-section").text($(this).find("a").text())
+                    $("#bread_separator").show();
+                    $(".bread-section").show();
+                    if(search) {
+                        setTimeout(() => {
+                            let counter = 0;
+                            $(".faq").each((index, faq) => {
+                                if($(faq).is(":visible")) counter++;
+                            })
+                            $("#counter").text(counter);
+                        }, 500)
+                        
+                        $(".bread-search").removeClass("d-none");
+                        $("#search_separator").removeClass("d-none");
                     }
-                });
 
-                //Show/hide sections
-                $(container).children().each((index, section) => {
-                    if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).show();
-                    else $(section).hide();
-                })
-                
+                    //Show-hide containers
+                    let container;
+                    $("#faq-container").children().each((index, element) => {
+                        if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
+                            $(element).hide();
+                        }
+                        else {
+                            $(element).show();
+                            container = element;
+                        }
+                    });
 
-
+                    //Show/hide sections
+                    $(container).children().each((index, section) => {
+                        if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).show();
+                        else $(section).hide();
+                    })
+                } 
             });
 
             //Hide other sections on click section title
@@ -536,7 +576,6 @@ $(document).ready(function(){
             });
             //Show all topics on click on FAQ
             $(".bread-faq").on("click", function(e) {
-                $("#faq-topic").val("all").prop('selected', true);
                 $("#faq-search-form").submit()
             });
         }
