@@ -318,6 +318,9 @@ $(document).ready(function(){
         if (hash) {
             // go to anchor
             setTimeout(() => {
+                if(window.matchMedia("(max-width: 767px)").matches) {
+                    $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                }
                 $(document).scrollTop( $(`${hash}`).offset().top );
             },250)
         }
