@@ -526,30 +526,31 @@ $(document).ready(function(){
 
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
+                
                 e.preventDefault();
-                if(topic === "all" || topic === $($(this).parent().get(0)).attr("class").split(/\s+/)[1]) {
 
-                    if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
-                        //Deactive faq container
-                        $("#faq-container").hide();
-                        $("#glossary_container").show();
-                        if(search) {
-                            let glossaryList = 0;
-                            $(".word").each((index, word) => {
-                                if($(word).text().toLowerCase().includes(search.toLowerCase())) {
-                                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                                    glossaryList++;
-                                }
-                            })
-                            $("#counter").text(glossaryList);
-                            $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($(this).parent().find("b").text());
-                            $("#bread_separator").addClass("d-none");
-                            $(".bread-section").hide();
-                        }
-                        return;
-                    } else $("#glossary_container").hide();
-                    if(!search) {
+                if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
+                    //Deactive faq container
+                    $("#faq-container").hide();
+                    $("#glossary_container").show();
+                    if(search) {
+                        let glossaryList = 0;
+                        $(".word").each((index, word) => {
+                            if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                glossaryList++;
+                            }
+                        })
+                        $("#counter").text(glossaryList);
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).parent().find("b").text());
+                        $("#bread_separator").addClass("d-none");
+                        $(".bread-section").hide();
+                    }
+                    return;
+                } else $("#glossary_container").hide();
+                    
+                if(!search) {
                         //Active/deactive topic nav list
                         const topicList = $(this).parent();
                         $(".topic-list").each((index, list) => {
@@ -562,50 +563,48 @@ $(document).ready(function(){
                             $(item).removeClass("active");
                         })
                         $(this).addClass("active");
+                }
+                $("#faq-container").show();
+                //Modify breadcrumb
+                $("#bread_separator").removeClass("d-none");
+                $("#topic_separator").removeClass("d-none");
+                $(".bread-topic").text($(this).parent().find(".section-head").text())
+                $(".bread-section").text($(this).find("a").text())
+                $("#bread_separator").show();
+                $(".bread-section").show();
+                if(search) {
+                    setTimeout(() => {
+                        let counter = 0;
+                        $(".faq").each((index, faq) => {
+                            if($(faq).is(":visible")) {
+                                $(faq).parent().find("h3").show();
+                                counter++;
+                            }
+                        })
+                        counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
+                        $("#counter").text(counter);
+                    }, 500)
+                    
+                    $(".bread-search").removeClass("d-none");
+                    $("#search_separator").removeClass("d-none");
+                }
+                //Show-hide containers
+                let container;
+                $("#faq-container").children().each((index, element) => {
+                    if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
+                        $(element).hide();
                     }
-                    $("#faq-container").show();
-                    //Modify breadcrumb
-                    $("#bread_separator").removeClass("d-none");
-                    $("#topic_separator").removeClass("d-none");
-                    $(".bread-topic").text($(this).parent().find(".section-head").text())
-                    $(".bread-section").text($(this).find("a").text())
-                    $("#bread_separator").show();
-                    $(".bread-section").show();
-                    if(search) {
-                        setTimeout(() => {
-                            let counter = 0;
-                            $(".faq").each((index, faq) => {
-                                if($(faq).is(":visible")) {
-                                    $(faq).parent().find("h3").show();
-                                    counter++;
-                                }
-                            })
-                            counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
-                            $("#counter").text(counter);
-                        }, 500)
-                        
-                        $(".bread-search").removeClass("d-none");
-                        $("#search_separator").removeClass("d-none");
+                    else {
+                        $(element).show();
+                        container = element;
                     }
+                });
 
-                    //Show-hide containers
-                    let container;
-                    $("#faq-container").children().each((index, element) => {
-                        if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
-                            $(element).hide();
-                        }
-                        else {
-                            $(element).show();
-                            container = element;
-                        }
-                    });
-
-                    //Show/hide sections
-                    $(container).children().each((index, section) => {
-                        if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).show();
-                        else $(section).hide();
-                    })
-                } 
+                //Show/hide sections
+                $(container).children().each((index, section) => {
+                    if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).show();
+                    else $(section).hide();
+                })            
             });
 
             //Hide other sections on click section title
