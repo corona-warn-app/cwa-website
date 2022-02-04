@@ -250,16 +250,16 @@
                         "anchor": "eu_dcc_validity",
                         "active": false,
                         "textblock": [
+                            "<b>UPDATE February 1, 2022</b><br/> The EU Commission has adopted the EU COVID digital certificate rules, which establish a mandatory 270-day (approximately 9-month) recognition period for vaccination certificates for travel within the EU. As this new rule should apply to Member States from February 1, 2022, therefore, when traveling within the EU, note that your destination country may already apply this rule. ",
                             "The following text refers to EU digital COVID certificates issued in Germany, i.e. vaccination, test and recovery certificates. The figures given are the status as of July 2021.",
                             "Basically, we distinguish between<ul><li>the validity of the digital certificate (the <b>technical validity</b>) and</li><li>the validity of the vaccination protection (the <b>effective vaccination validity</b>), i.e. the 'duration of protection'</li></ul>",
                             "<b>Technical validity</b>",
-                            "The certificate as a document has an issue date and a technical date of expiry, just like your passport or identity card, for example. For all certificates, the date of expiry is set by the issuer of the certificate. Currently, in Germany, the digital vaccination, test and recovery certificates of the EU are usually issued with a technical validity of one year from the date of issue. ",
+                            "The certificate as a document has an issue date and a technical date of expiry, just like your passport or identity card, for example. For all certificates, the date of expiry is set by the issuer of the certificate.",
                             "<b>Effective validity</b>",
-                            "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date. While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may deviate from this. ",
+                            "The certificate carries data, e.g. in the case of the vaccination certificate, information about the vaccination. This vaccination took place on a date X and is valid from then on e.g. in Germany for one year, according to the current state of scientific knowledge. After that, the vaccination protection is considered expired. We refer to the duration of vaccination protection as 'effective vaccination validity'. The effective validity of the vaccination therefore counts from the last vaccination date. The effective validity of the vaccination protection may vary from country to country",
                             "In the case of a recovery certificate, according to the EU eHealth Network, the effective validity is set at 'date of the holder's first positive PCR test result' plus 180 days. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson.",
                             "<b>Check of the validity</b>",
-                            "The check app, in Germany the CovPassCheck-App, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. ",
-                            "If, for example, you have your certificate issued only half a year after the vaccination, then the certificate will technically be valid for another year, but half a year of vaccination has already passed. This means that when checking for vaccination protection, it is recognized that after another six months the vaccination is no longer valid. After that, the check app will reject the certificate as 'invalid', although it is still technically valid, but the effective vaccination validity has expired."
+                            "The check app, in Germany the CovPassCheck-App, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. "
                         ]
                     },
                     {
@@ -270,7 +270,8 @@
                             "<b>UPDATE</b><br/>Please note that the behavior of the certificate validity check has changed with version 2.8. For more information on this change, please see the FAQ entry: <a href='#dcc_no_rules' target='_blank' >Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?</a><hr>",
                             "Starting with version 2.6, you can check before traveling whether your certificates (test, recovery and/or vaccination certificate) are valid in a selected country at the time of your trip. The Corona-Warn-App takes into account the applicable entry rules of the selected travel country and compares them with various parameters of the certificate, such as the date and type of test, test center or date of vaccination.",
                             "Every European country that supports EU digital COVID certificates has the ability to upload rules that the Corona-Warn-App can match for verification. At the start of this new feature, Ireland, Lithuania, Luxembourg, the Netherlands, Slovenia and Spain, together with Germany, have uploaded rules, with more countries to follow in the coming weeks.",
-                            "If the app shows after checking that there are no entry rules available, you can find out about the rules at <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>."
+                            "If the app shows after checking that there are no entry rules available, you can find out about the rules at <a href='https://reopen.europa.eu/en' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/en</a>.",
+                            "See also <a href='#eu_dcc_validity' target='_blank' >\"How long is my certificate valid?\". </a>"
                         ]
                     },
                     {
@@ -300,7 +301,8 @@
                             "This invalidates the entire certificate as a digital document. Therefore, it cannot be used as proof of health status and also cannot be imported into the app. If this error message occurs with a certificate that has already been imported, it is now marked as invalid.",
                             "Please check if the validity of your certificate has expired:",
                             "<ul><li>A vaccination certificate issued in Germany is usually valid for one year from the date of issue</li><li>A recovery certificate on the other hand may not be valid for longer than 180 days from the date of the last positive PCR test, as defined by the EU.</li></ul>",
-                            "If your certificate is technically still valid, it appears it was issued by an unauthorized body or incorrectly. In this case, we ask you to contact the <a href='#international_phone_numbers' target='_blank' >technical hotline</a> and tell us when and by which body this certificate was issued. Then please have a new certificate with a valid signature issued by an authorized body."
+                            "If your certificate is technically still valid, it appears it was issued by an unauthorized body or incorrectly. In this case, we ask you to contact the <a href='#international_phone_numbers' target='_blank' >technical hotline</a> and tell us when and by which body this certificate was issued. Then please have a new certificate with a valid signature issued by an authorized body.",
+                            "See also <a href='#eu_dcc_validity' target='_blank' >\"How long is my certificate valid?\". </a>"
                         ]
                     },
                     {
@@ -341,6 +343,7 @@
                         "textblock": [
                             "Starting with version 2.13, <b>vaccination, recovery, or test certificates</b> that you have deleted are temporarily moved to a recycle bin.  This allows you to easily recover the certificate in case of accidental removal and move it back to its original location. If a certificate remains in the recycle bin for 30 days, it will automatically be permanently deleted, unless you have manually permanently deleted it from the recycle bin beforehand. A certificate that has been deleted in the app can still be rescanned. If it is still in the recycle bin and has therefore not been permanently removed, you will receive a message that it has been restored.",
                             "Starting with version 2.14, <b>tests</b> that you have deleted will also be moved to the recycle bin for 30 days.",
+                            "Starting with version 2.17, the time at which an item in the recycle bin will be finally deleted is displayed below the respective item.",
                             "<b>iOS:</b><ul><li>Swipe down while on the Status tab and select 'Recycle Bin' under 'More'.</li><li>If there are certificates or tests in your recycle bin, you can tap on them to restore them.</li><li>To permanently remove a certificate or test from the recycle bin, first tap on 'Edit' at the top right. Then tap on the red minus sign next to the respective certificate or test. Alternatively, you can swipe to the left directly in the listing without first tapping 'Edit' while holding down on a certificate or test. Then tap on the red 'Delete' field.</ul>",
                             "<b>Android:</b><ul><li>While on the Status tab, tap the three-dot menu in the top-right corner.</li><li>Tap 'Recycle Bin'.</li><li>Within one of the certificates or tests listed there, tap the three-dot menu in the top-right corner.</li><li>Select whether you want to restore the selected certificate/test or permanently remove it from the recycle bin.</li></ul>",
                             "Note that the app can manage a maximum of one rapid test and one PCR test at a time. For example, if you restore a PCR test and had previously registered another PCR test, the active PCR test will be moved to the recycle bin.",
@@ -573,10 +576,21 @@
                         ]
                     },
                     {
+                        "title": "2/1 Vaccination certificates",
+                        "anchor": "vc_2of1",
+                        "active": false,
+                        "textblock": [
+                            "The Android app and iOS app versions 2.17.1 differ with regard to the display of the 2/1 vaccination certificate after a first vaccination with Johnson and Johnson: In the iOS app, the complete vaccination status is currently displayed immediately. For the Android app, this is currently not the case until day 15. We are urgently in the process of adjusting this with the Android app so that full immunization is also immediately displayed here with a 2/1 vaccination certificate.",
+                            "Despite this correction, due to the different evaluation in terms of the effective validity of these 2/1 vaccinations in the individual federal states and in the EU, the information on the complete vaccination protection and the status of the booster vaccination cannot yet be clearly derived in all cases. Together with the RKI and the BMG, the technical project partners are working on a solution that can distinguish these different cases in future versions. This also applies to the CovPassCheck-App.",
+                            "See also the FAQ article <a href='#vac_booster_jj' target='_blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a>"
+                        ]
+                    },
+                    {
                         "title": "Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?",
                         "anchor": "vac_booster_jj",
                         "active": false,
                         "textblock": [
+                            "<b>UPDATE February 2, 2022</b><br/>See this  FAQ article regarding <a href='#vc_2of1' target='_blank'>2/1 Vaccination certificates</a>.",
                             "<b>UPDATE December 30, 2021</b> <br/> Recently, the European Commission adapted the rules for the encoding of vaccination certificates. In the future, this will allow vaccination certificates proving the completion of the first vaccination series to always be distinguished from vaccination certificates issued after a booster vaccination. In the future, booster vaccinations will be marked as follows:",
                             "• 3/3 for a booster vaccination after a first vaccination series with two single doses.",
                             "• 2/1 for a booster vaccination after vaccination with a single dose or administration of one dose of a vaccine consisting of two single doses to a recovered person.",
@@ -694,8 +708,8 @@
                             "If the second vaccination certificate was issued correctly, it is usually sufficient to remove the first vaccination certificate in the Corona-Warn-App and then re-scan the second vaccination certificate. The app recognizes that this also achieves full vaccination protection (after 14 days).",
                             "However, if the data in the second vaccination certificate is incorrect, only the issuer of the certificate can correct it.",
                             "<b>Important notice:</b> Since in some countries proof of vaccination is still required for both the first and second vaccination, it is advisable to carry all vaccination certificates with you, especially when traveling abroad, be it in the Corona-Warn-App, as a PDF, or as a paper printout."
-                        ]
-                    }
+                        ]}
+
                 ]
             },
             {
@@ -2688,7 +2702,7 @@
                 {
                     "term": "Effective validity",
                     "anchor": "effective_validity",
-                    "description": "We refer to the duration of vaccination protection as 'effective validity'. The effective validity of the vaccination thus counts from the last vaccination date. While in Germany the effective validity is currently set at one year, the validity of the vaccination protection in other countries may differ from this. In the case of a <a href='#glossary_recovery_certificate'>recovery certificate</a>, the effective validity is set at 'date of the person's first positive <a href='#glossary_pcr_test'>PCR test</a> result' plus 180 days, according to the EU eHealth Network."
+                    "description": "We refer to the duration of vaccination protection as 'effective validity'. The effective validity of the vaccination thus counts from the last vaccination date. The effective validity of the vaccination protection may vary from country to country. In the case of a <a href='#glossary_recovery_certificate'>recovery certificate</a>, the effective validity is set at 'date of the person's first positive <a href='#glossary_pcr_test'>PCR test</a> result' plus 180 days, according to the EU eHealth Network. See also <a href='#eu_dcc_validity' target='_blank' >\"How long is my certificate valid?\". </a>"
                 },
                 {
                     "term": "Error report",
