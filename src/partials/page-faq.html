@@ -27,10 +27,10 @@
         {{#each page-contents.section-main.topics}}
         <div class="col-sm-3">
           <img src="{{icon}}" alt="{{title}}" height="29">
-          <p><a href="results/#{{id}}" class="no-decoration text-black"><b>{{title}}</b></a></p>
+          <p><a href="results/?search=&topic={{id}}" class="no-decoration text-black"><b>{{title}}</b></a></p>
           {{#each sections}}
             {{#if indexed}}
-              <p><a href="results/#{{id}}" class="section-link">{{title}}</a></p>
+              <p><a href="results/?search=&topic={{../id}}#{{id}}" class="section-link">{{title}}</a></p>
             {{/if}}
           {{/each}}
           <p><a href="results" class="no-decoration">{{../page-contents.section-main.texts.goto-topics}}</a></p>

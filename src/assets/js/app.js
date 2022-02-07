@@ -237,6 +237,10 @@ $(document).ready(function(){
             }
         }
 
+        if(topicString !== "all") {
+            $("#topic_separator").removeClass("d-none");
+            $(".bread-topic").text($(`#${topicString}`).text()).show();
+        }
         setTimeout(() => {
             //check again showed items cause of topic filter
             let counter = topicString === "all" || topicString === "glossary" ? glossaryList : 0;
@@ -278,6 +282,7 @@ $(document).ready(function(){
     }
 
     if (document.querySelector(".page-faq-results")) {
+        $(window).scrollTop(0);
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-container-mobile").removeClass("d-none")
             $("#glossary-container-mobile").removeClass("d-none")
@@ -334,8 +339,14 @@ $(document).ready(function(){
                     if($(`${hash}`).hasClass("accordion-faq-item-title")){
                         $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
+                    $(document).scrollTop( $(`${hash}`).offset().top );
+                } else {
+                    //Filter by topic and section
+                    if($(`${hash}`).hasClass("section-container")) {
+                        $(`.section-item a[href="${hash}"]`).click();
+                    }
+                    $(window).scrollTop(0);
                 }
-                $(document).scrollTop( $(`${hash}`).offset().top );
             },250)
         }
         if(search) {
