@@ -974,8 +974,8 @@
                             "CWA proposes a fully-automated decentral solution for Presence Tracing which works independent of local health authorities and the collaboration of the host of a venue. It integrates into the existing verification processes of CWA to issue warnings. The solution prioritizes the speed of issuing warnings over their accuracy. A higher degree of accuracy would require manual assessment by local health authorities and the respective resources to do so and is currently not in scope. The solution also protects the privacy of both venues and users, as details about a venue such as description or address are not shared with the CWA infrastructure. ",
                             "In summary, the proposed solution allows a host to create a venue through CWA. All necessary data about the venue is encoded in an (Event) QR code which can be presented on a mobile device or printed out, for example to be posted at the entrance of the venue. An attendee can check in to the venue by scanning the QR code. Check-Ins are stored locally on the mobile device and deleted automatically after two weeks.",
                             "When an attendee tests positive for SARS-CoV-2, they can upload their Check-Ins along with their Diagnosis Keys to the CWA Server. The CWA Server publishes the relevant Check-Ins on CDN as warnings. Clients regularly download these warnings and match them against the local Check-Ins on the mobile device. If there is a match and the time an attendee spent at a venue overlaps with a warning for a sufficiently long time, the attendee receives a warning in CWA similar to how warnings are issued for BLE-based exposures.",
-                            "For more information on the implementation of the Check-In feature, see here: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md</a>.",
-                            "<a href='https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/evreg-tam-block.png' target='_blank' rel='noopener'><img src='../../assets/img/faq/evreg-tam-block.png' alt='image' width='300'></a>",
+                            "For more information on the implementation of the Check-In feature, see here: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md</a>.",
+                            "<a href='https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/evreg-tam-block.png' target='_blank' rel='noopener'><img src='../../assets/img/faq/evreg-tam-block.png' alt='image' width='300'></a>",
                             "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
                         ]
                     },
@@ -1703,7 +1703,7 @@
                         "textblock": [
                             "This is how the app works:",
                             "<ol><li>All devices that have the Corona-Warn-App installed send and receive random IDs, which are saved locally on your device. A Bluetooth connection between two devices is only necessary for sending and receiving random IDs.</li><li>If you are diagnosed with COVID-19, you can upload the random IDs your device sent via Bluetooth to the Corona-Warn-App backend. At regular intervals, all devices with the app download these random IDs from the backend and check locally if they have received a matching key via Bluetooth. For uploading and downloading the random IDs, your phone must be able to access the Internet, for example, using WiFi or mobile data.</li><li>If there is a match between a key downloaded from the server and a key saved locally on your device, this means you were exposed to a person who has been diagnosed with COVID-19.</li><li>Based on the matched encounters, the app calculates your personal risk score that determines whether you get displayed a \"low risk\" (green) or \"high risk\" (red) card in the app. The notification of a risk encounter disappears after 14 days at the latest. In the event of an encounter with increased risk, the corresponding red tile is also displayed in green again. See also: <a href='#encounter_deletion' target='_blank' >I received the message that I had a low risk encounter. The next day it was gone again. Shouldn't this be deleted after 14 days?</a> You can find out more about the risk calculation in the FAQ entry <a href='#encounter_criteria' target='_blank' >By which criteria are encounters evaluated and how do the recommendations for action differ?</a></li></ol>",
-                            "The <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a> describes the technical process in detail."
+                            "The <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a> describes the technical process in detail."
                         ]
                     },
                     {
@@ -1765,7 +1765,7 @@
                         "anchor": "hearing_impaired",
                         "active": false,
                         "textblock": [
-                            "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
+                            "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
                             "In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a PCR-Test QR code, which you can scan into the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have received neither a QR code nor a TAN, would you have to call the TAN hotline, which you might not be able to do without outside help.",
                             "If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing."
                         ]
@@ -2033,7 +2033,7 @@
                         "anchor": "client_server",
                         "active": false,
                         "textblock": [
-                            "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
+                            "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
                         ]
                     },
                     {
@@ -2110,7 +2110,7 @@
                         "anchor": "coc",
                         "active": false,
                         "textblock": [
-                            "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
+                            "Successful development in a productive, collaborative community is only possible through mutual respect. All members of the project must follow a <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>.",
                             "Any member can report violations of the code of conduct to the project managers or to <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Violators may face consequences such as warnings or even exclusion from participating in the project."
                         ]
                     }

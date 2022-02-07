@@ -206,7 +206,7 @@ Es liegen jeweils 251.161 Datensätze vor (Datenstand: 7. Oktober 2021).
 - Datum des [Exposure-Windows](https://developer.apple.com/documentation/exposurenotification/enexposurewindow) (`datew`),
 - Transmission-Risk-Level (`transmission_risk_level`, `report_type`, `infectiousness`),
 - Kalibrierungs-Treue (`callibration_confidence`),
-- [normalisierte Expositionszeit](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in Minuten),
+- [normalisierte Expositionszeit](https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#mobile-applications) (`normalized_time`, in Minuten),
 - [Array](https://en.wikipedia.org/wiki/Array_data_structure) der [Scan-Instanzen](https://developer.apple.com/documentation/exposurenotification/enscaninstance) (`exposure_window_id`):
   - typische Dämpfung (`typical_attenuation`),
   - minimale Dämpfung (`minimum_attenuation`),
@@ -225,7 +225,7 @@ Wir wollen zunächst die Daten zu den Spendenden (genauer: zu deren Endgeräten)
 
 Die folgende Abbildung zeigt den zeitlichen Verlauf und die Verteilung nach dem Betriebssystem. Am 7. Oktober 2021 allein gab es insgesamt 12.159.958 Datenspenden, 6.101.821 von Apple [iPhones](https://de.wikipedia.org/wiki/IPhone) und 6.058.137 von Android [Smartphones](https://de.wikipedia.org/wiki/Smartphone).
 
-Die Schwankungen bei der Anzahl der täglichen Datenspenden kommt vorwiegend durch Maßnahmen und Einschränkungen zur Sicherung des Netzwerkes gegen [DDoS-Angriffe](https://de.wikipedia.org/wiki/Denial_of_Service) zustande und betrifft vor allem Android-Geräte, da hier aus Gründen des Datenschutzes eine eigene Prüfung der Authentizität des Gerätes vorgenommen wird (detaillierte Informationen sind unter folgendem Link abrufbar: [PPA-Dokumentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
+Die Schwankungen bei der Anzahl der täglichen Datenspenden kommt vorwiegend durch Maßnahmen und Einschränkungen zur Sicherung des Netzwerkes gegen [DDoS-Angriffe](https://de.wikipedia.org/wiki/Denial_of_Service) zustande und betrifft vor allem Android-Geräte, da hier aus Gründen des Datenschutzes eine eigene Prüfung der Authentizität des Gerätes vorgenommen wird (detaillierte Informationen sind unter folgendem Link abrufbar: [PPA-Dokumentation](https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#privacy-preserving-data-donation)).
 
 <div class="figure">
 <div id="htmlwidget-19ae046b5fe62085f4f1" style="width:800px;height:600px;" class="plotly html-widget"></div>

@@ -65,7 +65,7 @@ An event can be created at short notice and has a defined start and end time. Th
 In contrast to events, places do not have a fixed start and end time. In this case, a QR code is typically made available in a room for a longer period of time. Guests re-scan this QR code each time they visit. Examples of a permanent location are hairdressers or restaurants.
 
 
-If you are interested in the **event registration's technical specification**, you can find more information here: [https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md)
+If you are interested in the **event registration's technical specification**, you can find more information here: [https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md)
 
 <br></br>
 
