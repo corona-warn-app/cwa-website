@@ -1,5 +1,5 @@
 <p align="center">
- <a href="https://www.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png" width="400"></a>
+ <a href="https://www.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/CWA_title.png" width="400"></a>
 </p>
 
 <hr />
@@ -124,7 +124,7 @@ For more information about how to contribute, the project structure, as well as 
 
 ## Repositories
 
-A list of all public repositories from the Corona-Warn-App can be found [here](https://github.com/corona-warn-app/cwa-documentation/blob/master/README.md#repositories).
+A list of all public repositories from the Corona-Warn-App can be found [here](https://github.com/corona-warn-app/cwa-documentation/blob/main/README.md#repositories).
 
 ## Licensing
 
