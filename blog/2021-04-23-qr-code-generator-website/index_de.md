@@ -20,4 +20,4 @@ Die Community der Corona-Warn-App stellte den QR-Code-Generator dem Projektteam 
 
 Außerdem hat das Projektteam auf [GitHub](https://github.com/corona-warn-app/cwa-event-qr-code) ein Kommandozeilen-Werkzeug auf Node.js Basis veröffentlicht. Größere Firmen etwa haben damit die Möglichkeit, Lösungen zu bauen, die auf ihre eigenen Bedürfnisse zugeschnitten sind. So können sie beispielsweise automatisch eine **große Anzahl an QR-Codes** für verschiedenen Filialen erstellen. Eine Anleitung für die Nutzung des Tools finden Sie unter: https://github.com/corona-warn-app/cwa-event-qr-code/blob/main/README.md 
 
-Weitere Informationen zur Eventregistrierung und zum Erstellen von QR-Codes finden Sie hier: https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md 
+Weitere Informationen zur Eventregistrierung und zum Erstellen von QR-Codes finden Sie hier: https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md 
