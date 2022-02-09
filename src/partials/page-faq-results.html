@@ -14,9 +14,7 @@
       {{/each}}
       <div class="topic-list glossary">
         <b class="section-head glossary">{{page-contents.section-main.texts.glossary}}</b>
-        {{#each page-contents.glossary.glossaryWords as |letter|}}
-          <div class="section-item mb-2"><a href="#{{@key}}" class="no-decoration">{{@key}}</a></div>
-        {{/each}}
+        <div class="section-item mb-2"><a href="#glossary" class="no-decoration">A-Z</a></div>
       </div>
     </ul>
   </aside>
@@ -24,11 +22,11 @@
   <main class="main">
     <form method="get" id="faq-search-form" class="w-100">
       <div class="input-group mb-5">
-        <div class="input-group w-50">
-          <div class="input-group-prepend d-none" id="clean_search">
-            <button class="btn clean-search" type="button">✖</button>
+        <div id="clean_search" class="input-group w-50">
+          <div class="input-group">
+            <input type="text" class="form-control mr-3" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+            <span class="d-none clean-search">×</span>
           </div>
-          <input type="text" class="form-control mr-3" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
         </div>
         <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
           <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>

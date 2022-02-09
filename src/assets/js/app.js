@@ -211,15 +211,9 @@ $(document).ready(function(){
                 if($(word).text().toLowerCase().includes(searchString.toLowerCase())) {
                     $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
                     glossaryList++;
-                    //Active letter in nav menu
-                    document.querySelectorAll(".section-item").forEach((item) => {
-                        if($(item).find("a").attr('href') === "#"+$(word).text()[0]) {
-                            $(item).addClass("active");
-                            $($(item).parent().get(0)).addClass("active")
-                        }
-                    });
                 }
             })
+            if(glossaryList > 0) $(".section-item a[href='#glossary']").addClass("active").parent().addClass("active");
             $("#glossary_container").show();
         }
 
@@ -288,14 +282,13 @@ $(document).ready(function(){
             $("#glossary-container-mobile").removeClass("d-none")
             //Adjust form
             $("#faq-search-form").removeClass("w-50").addClass("w-100");
-            $("#faq-search").parent().removeClass("w-50").addClass("w-100");
+            $("#clean_search").removeClass("w-50").addClass("w-100");
             $("#faq-search").removeClass("mr-3");
             $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
             $("#faq-submit").addClass("w-100");
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
                 $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
-                // $(element).find("h1").remove()
             })
             $("#faq-container").remove();
             $("#faq-container-mobile").attr("id", "faq-container");
@@ -303,7 +296,6 @@ $(document).ready(function(){
             //Adjust glossary container
             $("#glossary_container").children().each((index, element) => {
                 $(element).appendTo($(".glossary-mobile-content"));
-                // $(element).find("h1").remove()
             })
             $("#glossary_container").remove();
             $("#glossary-container-mobile").attr("id", "glossary_container");
@@ -351,6 +343,8 @@ $(document).ready(function(){
         }
         if(search) {
             $('#faq-search').val(search)
+            //show cross to clean
+            $(".clean-search").removeClass("d-none")
         }
         if(topic) {
             $("#faq-topic").val(topic).prop('selected', true);
@@ -484,6 +478,7 @@ $(document).ready(function(){
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
                         $("#faq-container").hide()
                         $("#glossary_container").show();
+                        $(this).addClass("active");
                         let glossaryList = 0;
                         $(".word").each((index, word) => {
                             if($(word).text().toLowerCase().includes(search.toLowerCase())) {

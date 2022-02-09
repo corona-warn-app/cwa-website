@@ -106,3 +106,14 @@ a.no-decoration {
     background-color: #d4eaf7;
     color: black;
 }
+
+.clean-search {
+    position: absolute;
+    bottom: 12px;
+    left: 90%;
+    z-index: 99;
+    cursor: pointer;
+    &:hover {
+        color: red;
+    }
+}
