@@ -2245,6 +2245,18 @@
                 "id": "resolved",
                 "accordion": [
                     {
+                        "title": "Problems with the QR code/link for event/test registration",
+                        "anchor": "browser_not_compatible",
+                        "active": false,
+                        "textblock": [
+                            "If you are unable to register the event or test with your link or QR code, please follow these steps:",
+                            "<b>iOS:</b>",
+                            "<li>Make sure you have the app installed</li> Try using one of the following workarounds to register the test or event: <li>Long press on the link and choose \"Open in Corona-Warn\" </li> <li>Alternatively: Open the link in Safari </li><br/> ",
+                            "<b>Android:</b>",
+                            "<li>Make sure you have the app installed</li> Try using one of the following workarounds to register the test or event: <li>Long press on the link and choose \"Open link in external App\"</li> <li>Open the link in Chrome</li> <li>Enable the setting 'Open links in other apps'. Example for a Samsung A21 device (the exact process depends on the device): <br/> Settings -> Apps -> Default Apps -> Opening Links -> Corona-Warn -> open supported links in this app \"Always allow\" "
+                        ]
+                    },
+                    {
                         "title": "[Google/Android]: Fixed security vulnerability in the Exposure Notification Framework",
                         "anchor": "google_security_vulnerability",
                         "active": false,
