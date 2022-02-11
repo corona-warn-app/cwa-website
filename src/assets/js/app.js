@@ -256,6 +256,27 @@ $(document).ready(function(){
             $("#counter").text(counter);
             $(".bread-search").removeClass("d-none");
             $("#search_separator").removeClass("d-none");
+
+            //highlight words
+            var custfilter = new RegExp(searchString, "ig");
+            var repstr = "<span class='highlight'>" + searchString + "</span>";
+
+            if (searchString != "") {
+                $('.accordion-faq-item-title').each(function() {
+                    $(this).html($(this).html().replace(custfilter, repstr));
+                })
+                $('.accordion-faq-item-content').children().each((index,p) => {
+                    if(!$(p).is("a") && !$(p).is("img")) {
+                        if($(p).children().length === 0) $(p).html($(p).html().replace(custfilter, repstr));
+                        else {
+                            $(p).children().each((index, child) => {
+                                if(!$(child).is("a") && !$(child).is("img")) $(child).html($(child).html().replace(custfilter, repstr));
+                            })
+                        }
+                        
+                    }
+                })
+            }
         },500)
     }
 
