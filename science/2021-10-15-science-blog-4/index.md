@@ -206,7 +206,7 @@ The following information is available from data recorded locally using the Goog
 - Date of the [Exposure-Window](https://developer.apple.com/documentation/exposurenotification/enexposurewindow) (`datew`),
 - Transmission risk level (`transmission_risk_level`, `report_type`, `infectiousness`),
 - Calibration confidence (`callibration_confidence`),
-- [Normalised exposure time](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#mobile-applications) (`normalized_time`, in minutes),
+- [Normalised exposure time](https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#mobile-applications) (`normalized_time`, in minutes),
 - [Array](https://en.wikipedia.org/wiki/Array_data_structure) of [scan instances](https://developer.apple.com/documentation/exposurenotification/enscaninstance)(`exposure_window_id`):
   - typical attenuation (`typical_attenuation`),
   - minimum attenuation (`minimum_attenuation`),
@@ -225,7 +225,7 @@ In the next section, we take a closer look at the data donors themselves (or, mo
 
 The following chart demonstrates trends over time and the types of operating system used. Out of the 12,159,958 records donated on 7 October 2021, 6,101,821 were received from devices using Apple’s [iOS](https://en.wikipedia.org/wiki/IOS) and 6,058,137 from [Android](https://en.wikipedia.org/wiki/Android_(operating_system))-based devices.
 
-Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the [PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md#privacy-preserving-data-donation)).
+Fluctuations in the number of daily donations particularly result from measures and restrictions put in place to secure the network against [DDoS attacks](https://en.wikipedia.org/wiki/Denial_of_Service) . This mainly affects devices running Android, because the authenticity of these devices is reviewed to ensure data protection laws are upheld (for more detailed information, see the [PPA documentation](https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#privacy-preserving-data-donation)).
 
 <div class="figure">
 <div id="htmlwidget-19ae046b5fe62085f4f1" style="width:800px;height:600px;" class="plotly html-widget"></div>

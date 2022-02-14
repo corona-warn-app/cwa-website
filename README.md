@@ -1,5 +1,5 @@
 <p align="center">
- <a href="https://www.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png" width="400"></a>
+ <a href="https://www.coronawarn.app/en/"><img src="https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/CWA_title.png" width="400"></a>
 </p>
 
 <hr />
@@ -28,7 +28,7 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need the Node.js 14 Maintenance LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. ([cwa-website](https://github.com/corona-warn-app/cwa-website) is not ready for the Node.js 16 Active LTS version.) Downloads for Node.js 14.18.3 are available from the [Node.js - Previous Releases](https://nodejs.org/en/download/releases/) page.
+You need the Node.js 16 Active LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
 
 ### Getting started
 
@@ -39,7 +39,7 @@ npm install
 npm start
 ```
 
-- `npm install` installs the necessary packages to build, display and test the website on your local system. You only need to run this once or if the packages defined in [package.json](https://github.com/corona-warn-app/cwa-website/blob/master/package.json) are changed.
+- `npm install` installs the necessary packages to build, display and test the website on your local system. You only need to run this once or if the packages defined in [package.json](package.json) are changed.
 
 - The command `npm start` triggers the commands `npm run build` followed by `npm run start-server` described below and which can be used individually if desired.
 
@@ -124,7 +124,7 @@ For more information about how to contribute, the project structure, as well as 
 
 ## Repositories
 
-A list of all public repositories from the Corona-Warn-App can be found [here](https://github.com/corona-warn-app/cwa-documentation/blob/master/README.md#repositories).
+A list of all public repositories from the Corona-Warn-App can be found [here](https://github.com/corona-warn-app/cwa-documentation/blob/main/README.md#repositories).
 
 ## Licensing
 

@@ -74,10 +74,10 @@ You can use a link instead of a relative path to the image.
 Example:
 
 ``` Markdown
-![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png "Hover over me!")
+![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/CWA_title.png "Hover over me!")
 ```
 
-![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png "Hover over me!")
+![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/CWA_title.png "Hover over me!")
 
 However, it is advised to download the image, put it into the folder where the `index.md` file is located, and refer to its relative path instead of an absolute link from the Internet.
 
