@@ -258,22 +258,22 @@ $(document).ready(function(){
             $("#search_separator").removeClass("d-none");
 
             //highlight words
-            var custfilter = new RegExp(searchString, "ig");
-            var repstr = "<span class='highlight'>" + searchString + "</span>";
-
             if (searchString != "") {
                 $('.accordion-faq-item-title').each(function() {
-                    $(this).html($(this).html().replace(custfilter, repstr));
+                    highlightWord(searchString, $(this))       
                 })
                 $('.accordion-faq-item-content').children().each((index,p) => {
                     if(!$(p).is("a") && !$(p).is("img")) {
-                        if($(p).children().length === 0) $(p).html($(p).html().replace(custfilter, repstr));
+                        if($(p).children().length === 0) {
+                            highlightWord(searchString, $(p))       
+                        }
                         else {
                             $(p).children().each((index, child) => {
-                                if(!$(child).is("a") && !$(child).is("img")) $(child).html($(child).html().replace(custfilter, repstr));
+                                if(!$(child).is("a") && !$(child).is("img")) {
+                                    highlightWord(searchString, $(child))
+                                }
                             })
                         }
-                        
                     }
                 })
             }
@@ -761,4 +761,27 @@ $(document).ready(function(){
 
       // onload jump to glossary
       activateGlossary(); 
+
+    function highlightWord(search, element) {
+        const searchLower = search.toLowerCase();
+        const htmlArray = $(element).html().split(" ");
+        const result = htmlArray.map((word) => {
+            const wordLower = word.toLowerCase();
+            if(wordLower === searchLower) {
+                word = "<span class='highlight'>"+word+"</span>";
+            }
+            else if(wordLower.includes(searchLower)) {
+                if(wordLower.indexOf(searchLower) === 0) {
+                    word = "<span class='highlight'>"+word.slice(0, searchLower.length)+"</span>"+word.slice(searchLower.length);
+                }
+                else if(wordLower.indexOf(searchLower)+searchLower.length === word.length) {
+                    word = word.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+word.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>";
+                } else {
+                    word = word.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+word.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>"+word.slice(wordLower.indexOf(searchLower)+searchLower.length);
+                }
+            }
+            return word;
+        }).join(" ");
+        $(element).html(result)
+    }
 });
