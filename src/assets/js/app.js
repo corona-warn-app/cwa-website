@@ -276,6 +276,25 @@ $(document).ready(function(){
                         }
                     }
                 })
+                $('.word').each(function() {
+                    highlightWord(searchString, $(this))       
+                })
+                $('.description').each((index,desc) => {
+                    console.log(desc)
+                    if(!$(desc).is("a") && !$(desc).is("img")) {
+                        if($(desc).children().length === 0) {
+                            highlightWord(searchString, $(desc))       
+                        }
+                        else {
+                            $(desc).children().each((index, child) => {
+                                console.log("children", index, child)
+                                if(!$(child).is("a") && !$(child).is("img")) {
+                                    highlightWord(searchString, $(child))
+                                }
+                            })
+                        }
+                    }
+                })
             }
         },500)
     }
