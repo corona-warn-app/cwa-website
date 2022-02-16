@@ -9,7 +9,7 @@ layout: blog
 
 In diesem Beitrag finden Sie Zahlen und Fakten zur Entwicklung der Corona-Warn-App, wie auch zur Anzahl übermittelter und geteilter Testergebnisse bis [Stand 30. September 2021](/assets/documents/2021-09-30-cwa-daten-fakten.pdf). 
 
-Die wichtigsten Kennzahlen finden Sie nun unter "Analysis" in einem [interaktiven Dashboard](/de/analysis/), das täglich aktualisiert wird. Weitere Informationen zum Dashboard finden Sie im Blog: [Kennzahlen-Dashboard zur Corona-Warn-App](/de/blog/2021-10-04-key-figures-dashboard/).
+Die wichtigsten Kennzahlen finden Sie nun unter "Dashboard" in einem [interaktiven Dashboard](/de/analysis/), das täglich aktualisiert wird. Weitere Informationen zum Dashboard finden Sie im Blog: [Kennzahlen-Dashboard zur Corona-Warn-App](/de/blog/2021-10-04-key-figures-dashboard/).
 
 
 ### **Übersicht früherer Zahlen und Fakten**
