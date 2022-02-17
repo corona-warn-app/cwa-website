@@ -25,7 +25,11 @@
               
               <form id="qrform">
                 <div class="form-group row mb-2">
-                  <label for="locationtype" class="col-12 col-form-label">{{page-contents.section-main.form.fields.locationtype}}</label>
+                  <label for="locationtype" class="col-12 col-form-label">
+                    <div id="qr-error-locationtyperequired" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.locationtyperequired}}
+                    </div>
+                    {{page-contents.section-main.form.fields.locationtype}}</label>
                   <div class="col-12">
                     <select id="locationtype" class="form-select form-control" required>
                       <option value="">{{page-contents.section-main.form.locationtypes_initial}}</option>
@@ -40,40 +44,49 @@
                         {{/each}}
                       </optgroup>
                     </select>
-                    <div id="qr-error-locationtyperequired" class="invalid-feedback">
-                      {{page-contents.section-main.form.errors.locationtyperequired}}
-                    </div>
                   </div>
                 </div>
         
                 <div class="form-group row mb-2">
-                  <label for="description" class="col-12 col-form-label">{{page-contents.section-main.form.fields.description}}</label>
-                  <div class="col-12">
-                    <input id="description" class="form-control" type="text" max="100" placeholder="{{page-contents.section-main.form.placeholders.description}}" required>
+                  <label for="description" class="col-12 col-form-label">
                     <div id="qr-error-descriptionrequired" class="invalid-feedback">
                       {{page-contents.section-main.form.errors.descriptionrequired}}
                     </div>
                     <div id="qr-error-descriptionmax" class="invalid-feedback">
                       {{page-contents.section-main.form.errors.descriptionmax}}
                     </div>
+                    {{page-contents.section-main.form.fields.description}}
+                  </label>
+                  <div class="col-12">
+                    <input id="description" class="form-control" type="text" max="100" placeholder="{{page-contents.section-main.form.placeholders.description}}" required>
                   </div>
                 </div>
         
                 <div class="form-group row mb-2">
-                  <label for="address" class="col-12 col-form-label">{{page-contents.section-main.form.fields.address}}</label>
-                  <div class="col-12">
-                    <input id="address" class="form-control" type="text" max="100" placeholder="{{page-contents.section-main.form.placeholders.address}}" required>
+                  <label for="address" class="col-12 col-form-label">
                     <div id="qr-error-addressrequired" class="invalid-feedback">
                       {{page-contents.section-main.form.errors.addressrequired}}
                     </div>
                     <div id="qr-error-addressmax" class="invalid-feedback">
                       {{page-contents.section-main.form.errors.addressmax}}
                     </div>
+                    {{page-contents.section-main.form.fields.address}}
+                  </label>
+                  <div class="col-12">
+                    <input id="address" class="form-control" type="text" max="100" placeholder="{{page-contents.section-main.form.placeholders.address}}" required>
                   </div>
                 </div>
         
                 <div class="form-group row mb-2">
-                  <label for="defaultcheckinlength" class="col-12 col-form-label">{{page-contents.section-main.form.fields.defaultcheckinlength}}</label>
+                  <label for="defaultcheckinlength" class="col-12 col-form-label">
+                    <div id="qr-error-defaultcheckinlengthrequired" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.defaultcheckinlengthrequired}}
+                    </div>
+                    <div id="qr-error-defaultcheckinlengthnumber" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.defaultcheckinlengthnumber}}
+                    </div>
+                    {{page-contents.section-main.form.fields.defaultcheckinlength}}
+                  </label>
                   <div class="col-12">
                     <div class="row">
                       <div class="col-5">
@@ -116,27 +129,12 @@
                         </select>
                       </div>
                     </div>
-                    <div id="qr-error-defaultcheckinlengthrequired" class="invalid-feedback">
-                      {{page-contents.section-main.form.errors.defaultcheckinlengthrequired}}
-                    </div>
-                    <div id="qr-error-defaultcheckinlengthnumber" class="invalid-feedback">
-                      {{page-contents.section-main.form.errors.defaultcheckinlengthnumber}}
-                    </div>
                   </div>
                 </div>
         
                 <div id="event-duration" class="d-none">
                   <div class="form-group row mb-2">
-                    <label for="starttime-date" class="col-12 col-form-label">{{page-contents.section-main.form.fields.starttime}}</label>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-7 col-sm-8">
-                          <input id="starttime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
-                        </div>
-                        <div class="col-5 col-sm-4">
-                          <input id="starttime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
-                        </div>
-                      </div>
+                    <label for="starttime-date" class="col-12 col-form-label">
                       <div id="qr-error-starttimerequired" class="invalid-feedback">
                         {{page-contents.section-main.form.errors.starttimerequired}}
                       </div>
@@ -149,20 +147,22 @@
                       <div id="qr-error-starttimeinvalidtime" class="invalid-feedback">
                         {{page-contents.section-main.form.errors.invalidtime}}
                       </div>
+                      {{page-contents.section-main.form.fields.starttime}}
+                    </label>
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-7 col-sm-8">
+                          <input id="starttime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
+                        </div>
+                        <div class="col-5 col-sm-4">
+                          <input id="starttime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
+                        </div>
+                      </div>
                     </div>
                   </div>
         
                   <div class="form-group row mb-2">
-                    <label for="endtime-date" class="col-12 col-form-label">{{page-contents.section-main.form.fields.endtime}}</label>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-7 col-sm-8">
-                          <input id="endtime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
-                        </div>
-                        <div class="col-5 col-sm-4">
-                          <input id="endtime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
-                        </div>
-                      </div>
+                    <label for="endtime-date" class="col-12 col-form-label">
                       <div id="qr-error-endtimerequired" class="invalid-feedback">
                         {{page-contents.section-main.form.errors.endtimerequired}}
                       </div>
@@ -174,6 +174,17 @@
                       </div>
                       <div id="qr-error-endtimeinvalidtime" class="invalid-feedback">
                         {{page-contents.section-main.form.errors.invalidtime}}
+                      </div>
+                      {{page-contents.section-main.form.fields.endtime}}
+                    </label>
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-7 col-sm-8">
+                          <input id="endtime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
+                        </div>
+                        <div class="col-5 col-sm-4">
+                          <input id="endtime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
+                        </div>
                       </div>
                     </div>
                   </div>
