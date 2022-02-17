@@ -37,8 +37,8 @@ $(document).ready(function(){
 
     $('.js-menu .js-scroll-navigate a').on('click tap', function(){
         $(this).parents('.js-menu').first().removeClass('active');
-        $(this).parents('.js-menu').first().find('a').removeClass('active');
-        $(this).addClass('active');
+        $(this).parents('.js-menu').first().find('a').removeClass('active').removeAttr('aria-current');
+        $(this).addClass('active').attr('aria-current', $(this).text());
     });
 
     const anchors = Array.from(document.querySelectorAll('.js-anchor'));
