@@ -75,6 +75,18 @@
 							</div>
 							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.placeholder}}" autocomplete="off">
 						</div>
+						<div class="analyseRangePicker-actions-top">
+							{{#if page-contents.range.picker.apply}}
+								<button class="btn btn-secondary analyseRangePicker-apply">
+									{{page-contents.range.picker.apply}}
+								</button>
+							{{/if}}
+							{{#if page-contents.range.picker.cancel}}
+								<button class="btn analyseRangePicker-cancel">
+									{{page-contents.range.picker.cancel}}
+								</button>
+							{{/if}}
+						</div>
 					</div>
 				{{/if}}
 				<div class="analyseRangePicker-picker"></div>
