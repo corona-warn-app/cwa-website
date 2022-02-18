@@ -213,6 +213,12 @@ $(document).ready(function(){
                     glossaryList++;
                 }
             })
+            $(".description").each((index, desc) => {
+                if($(desc).text().toLowerCase().includes(searchString.toLowerCase())) {
+                    $($(desc).parent().get(0)).appendTo(".glossary-result")
+                    glossaryList++;
+                }
+            })
             if(glossaryList > 0) $(".section-item a[href='#glossary']").addClass("active").parent().addClass("active");
             $("#glossary_container").show();
         }
@@ -276,18 +282,16 @@ $(document).ready(function(){
                         }
                     }
                 })
-                $('.word').each(function() {
+                $('#glossary_container .word').each(function() {
                     highlightWord(searchString, $(this))       
                 })
-                $('.description').each((index,desc) => {
-                    console.log(desc)
+                $('#glossary_container .description').each((index,desc) => {
                     if(!$(desc).is("a") && !$(desc).is("img")) {
                         if($(desc).children().length === 0) {
                             highlightWord(searchString, $(desc))       
                         }
                         else {
                             $(desc).children().each((index, child) => {
-                                console.log("children", index, child)
                                 if(!$(child).is("a") && !$(child).is("img")) {
                                     highlightWord(searchString, $(child))
                                 }
