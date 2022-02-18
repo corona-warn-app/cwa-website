@@ -66,7 +66,7 @@
                 "index": "01.",
                 "image": {
                     "url": "/assets/img/how-it-works-1.svg",
-                    "alt": "The Corona-Warn-App collects nearby identifiers"
+                    "alt": ""
                 },
                 "title": "Collect nearby identifiers",
                 "text": "The Exposure Notification System (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h.",
@@ -81,7 +81,7 @@
                 "image": {
                     "url": "/assets/img/how-it-works-2.svg",
                     "right": true,
-                    "alt": "The Corona-Warn-App matches test results to IDs"
+                    "alt": ""
                 },
                 "title": "Communicate test result of user with symptoms (optional)",
                 "text": "If the lab in question supports the electronic process, tested users can use the QR code they received during the test to retrieve their results."
@@ -90,7 +90,7 @@
                 "index": "03.",
                 "image": {
                     "url": "/assets/img/how-it-works-3.svg",
-                    "alt": "The Corona-Warn-App shares IDs of people with symptoms"
+                    "alt": ""
                 },
                 "title": "Distribute list of keys of SARS-CoV-2 confirmed users",
                 "text": "In case of a positive test result, users are asked to voluntarily upload their temporary keys of up to the last 14 days to the server. To prevent misuse, the Corona-Warn-App backend first verifies the positive test result. If confirmed, the server adds the user’s keys to the SARS-CoV-2 confirmed list, which is regularly broadcasted to all apps."
@@ -100,7 +100,7 @@
                 "image": {
                     "url": "/assets/img/how-it-works-4.svg",
                     "right": true,
-                    "alt": "The Corona-Warn-App checks for positive contacts"
+                    "alt": ""
                 },
                 "title": "Check for exposure to SARS-CoV-2 confirmed users",
                 "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification System derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
@@ -334,7 +334,7 @@
         "box": {
             "image": {
                 "url": "/assets/img/faq.svg",
-                "title": "Frequently Asked Questions about the Corona-Warn-App"
+                "title": ""
             },
             "content": {
                 "title": "More Questions?",
