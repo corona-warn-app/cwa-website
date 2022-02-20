@@ -36,9 +36,9 @@ $(document).ready(function(){
     }
 
     $('.js-menu .js-scroll-navigate a').on('click tap', function(){
-        $(this).parents('.js-menu').first().removeClass('active');
-        $(this).parents('.js-menu').first().find('a').removeClass('active');
-        $(this).addClass('active');
+        $(this).parents('.js-menu').first().removeClass('active').attr('aria-current', "false");
+        $(this).parents('.js-menu').first().find('a').removeClass('active').attr('aria-current', "false");
+        $(this).addClass('active').attr('aria-current', "true");
     });
 
     const anchors = Array.from(document.querySelectorAll('.js-anchor'));

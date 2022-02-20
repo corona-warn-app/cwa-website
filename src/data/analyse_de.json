@@ -1,9 +1,10 @@
 {
     "lang": "de-DE",
     "documentLang": "de",
-	"topic": "Analyse",
+	"topic": "Dashboard",
     "title": "Corona-Warn-App (CWA): Kennzahlen",
     "update": "Letzte Aktualisierung der Daten:",
+    "info": "Wie regelmäßig werden die CWA Dashboarddaten aktualisiert?",
     "updateNoticeIcon": {
         "title": "Aktualisierung der Daten",
         "content": "Die Daten des CWA-Dashboards werden in der Regel täglich um 10:30 (MEZ) für den Vortag aktualisiert. Die Daten zu den Downloads werden nur arbeitstäglich aktualisiert. Montags werden die Daten für Freitag, Samstag und Sonntag aktualisiert."
@@ -60,6 +61,7 @@
     "boards": {
         "download": true,
         "export": {
+            "alt": "Exportieren",
             "btn": "Exportieren",
             "data": "Daten exportieren",
             "image": "Bild exportieren"
@@ -75,7 +77,11 @@
             "info": {
                 "content": "<strong>Downloads</strong><p>Anzahl der Corona-Warn-App-Downloads aus dem Google-Play-Store (Android) und Apple-App-Store (iOS) sowie die Summe der Corona-Warn-App-Downloads aus beiden App-Stores (Gesamt).</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist hier der Tag des Downloads nach deutscher Zeit.</p><strong>Datenquellen</strong><p>Apple-App-Store<br />Google-Play-Store</p><strong>Weitere Informationen</strong><p>In die Erhebung der Downloadzahlen gehen nur die in der Corona-Warn-App-Downloads aus den offiziellen App-Stores von Google und Apple ein.</p><p>Aus diesen Zahlen können keine Rückschlüsse bezüglich der aktiven Nutzerbasis gezogen werden.</p>"
             },
-            "totalKey": ["app_downloads_cumulated"]
+            "totalKey": ["app_downloads_cumulated"],
+            "close": "Fenster schließen",
+            "moreInfo" : "Informationen bezüglich der Downloads",
+            "expand": "Grafik vergrößern",
+            "collapse": "Grafik verkleinern"
         },
         {
             "title": "Bereitgestellte Testergebnisse",
@@ -83,6 +89,10 @@
             "info": {
                 "content": "<strong>Bereitgestellte Testergebnisse</strong><p>Anzahl der durch Labore und Schnellteststellen auf dem Corona-Warn-App-Server bereitgestellten PCR-Testergebnisse und Antigen-Schnelltest-Ergebnisse sowie deren Summe.</p><strong>Bereitgestellte Testergebnisse: PCR-Tests</strong><p>Anzahl der positiven, negativen und ungültigen sowie die Summe aller durch Labore und Schnellteststellen auf dem Corona-Warn-App-Server bereitgestellten PCR-Testergebnisse.</p><strong>Bereitgestellte Testergebnisse: Antigen-Schnelltests</strong><p>Anzahl der positiven, negativen und ungültigen sowie die Summe aller durch Labore und Schnellteststellen auf dem Corona-Warn-App-Server bereitgestellten Antigen-Schnelltest-Ergebnisse.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist der Tag der Ergebnisübermittlung an den Testserver.</p><strong> Datenquellen </strong><p>Corona-Warn-App-Backend</p>"
             },
+            "close": "Fenster schließen",
+            "expand": "Grafik vergrößern",
+            "collapse": "Grafik verkleinern",
+            "moreInfo" : "Informationen bezüglich der Bereitgestellten Testergebnisse",
             "totalKey": [
                 "tests_total_cumulated",
                 "tests_pcr_total_cumulated",
@@ -104,13 +114,17 @@
             "title": "Teilungsverhalten",
             "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_sharing_data.zip",
             "info": {
-                "content": "<strong>Teilungsverhalten</strong><p>Anzahl der positiven Testergebnisse, validiert durch QR-Code-Registrierung oder durch teleTAN-Eingabe, die in der Corona-Warn-App geteilt wurden sowie die Summe der positiven Testergebnisse, die validiert wurden.</p><strong>Teilungsverhalten: QR-Codes</strong><p>Anzahl der positiven Testergebnisse, die durch die QR-Code-Registrierung validiert und in der Corona-Warn-App geteilt bzw. nicht geteilt wurden.</p><strong>Teilungsverhalten: teleTANs</strong><p>Anzahl der positiven Testergebnisse, die durch teleTAN-Eingabe validiert und in der Corona-Warn-App geteilt bzw. nicht geteilt wurden.<br />In den Anfangstagen der Erfassung (25. bis 31. August 2020) wurden Gesamtzahlen erfasst, die nicht nach „Geteilt“ und „Nicht geteilt“ stratifiziert sind. Dies führt bei den kumulativen Zahlen zu einer fortbestehenden Diskrepanz zwischen der Summe der Straten und der Gesamtzahl.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist der Tag der Testregistrierung (QR-Codes) bzw. des Anrufs bei der Verifizierungshotline (teleTANs).</p><strong>Datenquellen</strong><p>Corona-Warn-App-Backend</p><strong>Weitere Informationen</strong><p>Für das Beenden der Infektionsketten sind nur die positiven Testergebnisse relevant. Um Missbrauch zu verhindern, müssen positive Testergebnisse verifiziert werden. Dafür gibt es zwei Möglichkeiten: einen QR-Code oder eine teleTAN, die in der Corona-Warn-App eingegeben werden müssen. Den QR-Code erhält die/der Nutzende bei der Probenentnahme für den Test. Mit Hilfe des QR-Codes kann der Test in der Corona-Warn-App registriert werden. Sobald das Ergebnis vorliegt, wird es automatisch abgerufen und auf dem Smartphone angezeigt. Die/der Nutzende kann dann entscheiden, die eigenen Zufallscodes der letzten 14 Tage freizugeben und mögliche Risikokontakte zu warnen. Steht kein QR-Code zur Verfügung oder geht dieser verloren, kann die/der Nutzende die Verifizierungshotline anrufen. Dort wird eine teleTAN zur Verifizierung des positiven Testergebnisses erzeugt. Diese muss durch die/den Nutzenden in die App eingegeben werden.</p>"
+                "content": "<strong>Teilungsverhalten</strong><p>Anzahl der positiven Testergebnisse, validiert durch QR-Code-Registrierung oder durch teleTAN-Eingabe, die in der Corona-Warn-App geteilt wurden sowie die Summe der positiven Testergebnisse, die validiert wurden.</p><strong>Teilungsverhalten: QR-Codes</strong><p>Anzahl der positiven Testergebnisse, die durch die QR-Code-Registrierung validiert und in der Corona-Warn-App geteilt bzw. nicht geteilt wurden.</p><strong>Teilungsverhalten: teleTANs</strong><p>Anzahl der positiven Testergebnisse, die durch teleTAN-Eingabe validiert und in der Corona-Warn-App geteilt bzw. nicht geteilt wurden.<br />In den Anfangstagen der Erfassung (25. bis 31. August 2020) wurden Gesamtzahlen erfasst, die nicht nach „Geteilt“ und „Nicht geteilt“ stratifiziert sind. Dies führt bei den kumulativen Zahlen zu einer fortbestehenden Diskrepanz zwischen der Summe der Straten und der Gesamtzahl.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist der Tag der Testregistrierung (QR-Codes) bzw. des Anrufs bei der Verifizierungshotline (teleTANs).</p><strong>Datenquellen</strong><p>Corona-Warn-App-Backend</p><strong>Nachträgliche Anpassung der Daten zum Teilungsverhalten</strong><p>Die Daten zum Teilungsverhalten (Gesamt, QR-Codes und teleTANs) werden rückwirkend für die letzten 14 Tage angepasst, weil das Referenzdatum sich auf das Scandatum (QR-Code) bzw. Anrufdatum (teleTAN) bezieht. Die Verzögerung kann wie folgt entstehen:<br />Der bzw. die Nutzende nimmt mehr Zeit in Anspruch, um sein bzw. ihr Testergebnis zu teilen. Sobald das Ergebnis geteilt wird, ändert sich entsprechend beim Scan- oder Anrufdatum die Anzahl der geteilten Ergebnisse.<br />Der bzw. die Nutzende erhält bei der Terminvereinbarung bereits einen QR Code und scannt diesen sofort ein, obwohl er bzw. sie eventuell den Test erst später durchführen lässt.</p><strong>Weitere Informationen</strong><p>Für das Beenden der Infektionsketten sind nur die positiven Testergebnisse relevant. Um Missbrauch zu verhindern, müssen positive Testergebnisse verifiziert werden. Dafür gibt es zwei Möglichkeiten: einen QR-Code oder eine teleTAN, die in der Corona-Warn-App eingegeben werden müssen. Den QR-Code erhält die/der Nutzende bei der Probenentnahme für den Test. Mit Hilfe des QR-Codes kann der Test in der Corona-Warn-App registriert werden. Sobald das Ergebnis vorliegt, wird es automatisch abgerufen und auf dem Smartphone angezeigt. Die/der Nutzende kann dann entscheiden, die eigenen Zufallscodes der letzten 14 Tage freizugeben und mögliche Risikokontakte zu warnen. Steht kein QR-Code zur Verfügung oder geht dieser verloren, kann die/der Nutzende die Verifizierungshotline anrufen. Dort wird eine teleTAN zur Verifizierung des positiven Testergebnisses erzeugt. Diese muss durch die/den Nutzenden in die App eingegeben werden.</p>"
             },
+            "expand": "Grafik vergrößern",
+            "collapse": "Grafik verkleinern",
             "totalKey": [
                 "qr_teletan_redeemable_cumulated",
                 "qr_redeemable_cumulated",
                 "teletan_redeemable_cumulated"
             ],
+            "moreInfo" : "Informationen bezüglich des Teilungsverhalten",
+            "close": "Fenster schließen",
             "tabs": [
                 {
                     "label": "Gesamt"
@@ -125,7 +139,11 @@
         },
         {
             "title": "Von Datenspendenden empfangene Warnungen",
+            "close": "Fenster schließen",
+            "expand": "Grafik vergrößern",
+            "collapse": "Grafik verkleinern",
             "export": "https://obs.eu-de.otc.t-systems.com/obs-public-dashboard/csv/cwa_ppa_warnings_data.zip",
+            "moreInfo" : "Informationen bezüglich der von Datenspendenden empfangenen Daten",
             "info": {
                 "content": "<strong>Von Datenspendenden empfangene Warnungen</strong><p>Anzahl der von Datenspendenden in der Corona-Warn-App empfangenen roten und grünen Risiko-Warnungen sowie deren Summe.</p><strong>Zeitintervalle</strong><p>Täglich: Tagesgenaue Anzahl<br />Wöchentlich: Wöchentliche Anzahl nach Kalenderwoche (KW)<br />7-Tage-Mittelwert: Tagesgenauer Mittelwert der letzten sieben Tage<br />Kumuliert: Tagesgenaue kumulative Summe seit Beginn der Messung</p><strong>Referenzdatum der Daten</strong><p>Das Referenzdatum ist das „submitted_at“-Datum des PPA-Datensatzes.</p><strong>Datenquellen</strong><p>Privacy-Preserving-Analytics (PPA)</p><strong>Weitere Informationen</strong><p>Nutzende der Corona-Warn-App haben die Möglichkeit an der Datenspende teilzunehmen und so einen wichtigen Beitrag zur Verbesserung der App zu leisten. Durch das freiwillige Teilen ausgewählter Daten haben Nutzende die Möglichkeit dem Robert Koch-Institut bei der Bewertung der Wirksamkeit der Corona-Warn-App zu helfen und darüber hinaus die Funktionen und Nutzendenfreundlichkeit der App zu verbessern. Für eine Teilnahme muss in den Einstellungen unter dem Punkt „Datenspende“ der Schalter auf „An“ stehen.</p><p>Eine grüne Risikowarnung erhalten Nutzende, die in den letzten 14 Tagen eine kurze und/oder räumlich entfernte Begegnung mit einer Corona-positiv getesteten Person hatten. Die Begegnung lag somit nicht über dem definierten Schwellenwert. Für die betroffenen Nutzenden besteht kein aktiver Handlungsbedarf.</p><p>Eine rote Risikowarnung erhalten Nutzende, die in den letzten 14 Tagen eine lang andauernde und/oder räumlich nahe Begegnungen mit mindestens einer Corona-positiv getesteten Person hatten. Die Begegnung lag über dem definierten Schwellenwert. Betroffene Nutzende werden aufgefordert, persönliche Kontakte zu reduzieren. Bei Symptomen soll die Hausarztpraxis, der kassenärztliche Bereitschaftsdienst oder das Gesundheitsamt kontaktiert werden. Die Hausarztpraxis oder das Gesundheitsamt entscheiden über ein Testangebot.</p>"
             },
@@ -286,32 +304,38 @@
     	{
     		"title": "RKI: COVID-19-Dashboard (DE)",
             "desc": "Tagesaktuelle Informationen zum Infektionsgeschehen in Deutschland nach Landkreisen und Bundesländern.",
-    		"link": "https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4"
+    		"link": "https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4",
+            "alt": "externer Link"
     	},
     	{
     		"title": "RKI: Covid-19-Trends (DE)",
             "desc": "Trend-Übersicht zur Entwicklung des Infektionsgeschehens in Deutschland.",
-    		"link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home"
+    		"link": "https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home",
+            "alt": "externer Link"
     	},
     	{
     		"title": "BMG: Impfdashboard (DE)",
             "desc": "Arbeitstägliche Informationen über den Impfstatus und Impffortschritt in Deutschland von der Website ‘Zusammen gegen Corona‘ des Bundesministeriums für Gesundheit (BMG).",
-    		"link": "https://impfdashboard.de/"
+    		"link": "https://impfdashboard.de/",
+            "alt": "externer Link"
     	},
     	{
     		"title": "WHO: COVID-19-Dashboard (EN)",
             "desc": "Tagesaktuelle Informationen zum weltweiten Infektionsgeschehen von der World Health Organisation (WHO).",
-    		"link": "https://covid19.who.int/"
+    		"link": "https://covid19.who.int/",
+            "alt": "externer Link"
     	},
     	{
     		"title": "CSSE (JHU): COVID-19-Dashboard (EN)",
             "desc": "Tagesaktuelle Informationen zum weltweiten Infektionsgeschehen vom Center for Systems Science and Engineering (CSSE) der Johns Hopkins University (JHU) Baltimore (Maryland, USA).",
-    		"link": "https://gisanddata.maps.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6"
+    		"link": "https://gisanddata.maps.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6",
+            "alt": "externer Link"
     	},
         {
     		"title": "OWID: COVID-19 (EN)",
             "desc": "Tagesaktuelle Informationen zum weltweiten Infektionsgeschehen in der Online-Publikation Our World in Data (OWID).",
-    		"link": "https://ourworldindata.org/coronavirus"
+    		"link": "https://ourworldindata.org/coronavirus",
+            "alt": "externer Link"
     	}
     ]
 }

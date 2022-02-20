@@ -68,7 +68,7 @@ Ein Event kann kurzfristig von Organisator\*innen angelegt werden und hat einen 
 Orte haben im Gegensatz zu Events keinen festen Anfangs- und Endzeitpunkt. In diesem Fall wird ein QR-Code typischerweise für einen längeren Zeitraum in einem Raum zur Verfügung gestellt. Besucher\*innen scannen diesen QR-Code bei jedem Besuch neu. Beispiele für eine ständige Lokation sind Friseure oder Restaurants.
 
 
-Wer an der **technischen Spezifikation der Event-Registrierung** interessiert ist, findet hier weitere Infos: [https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md)
+Wer an der **technischen Spezifikation der Event-Registrierung** interessiert ist, findet hier weitere Infos: [https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md)
 
 <br></br>
 
