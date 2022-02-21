@@ -12,6 +12,7 @@
                 "Verschaffen Sie sich mithilfe von Screenshots einen Überblick über die Funktionen, die die Corona-Warn-App mit Version 2.18 (verfügbar seit 23. Februar 2022) bietet. Bitte beachten Sie, dass die Screenshots für Android und iOS designbedingt leicht voneinander abweichen können.",
                 "Mit diesem Update stellen wir neue und erweiterte Funktionen zur Verfügung:",
                 "<b>Zentrale Verwaltung von Regeln:</b> Die Regeln für Zertifikate (z.&nbsp;B. hinsichtlich ihrer Gültigkeit, oder Priorisierung, wenn mehrere Zertifikate vorhanden sind) und für die Ermittlung des G-Status wurden aus der Corona-Warn-App herausgelöst. Diese Regeln sind jetzt zentral abgelegt und können daher unabhängig von den App-Releases angepasst werden. Damit kann schneller auf Regeländerungen reagiert werden. Nach einer Änderung werden die aktualisierten Regeln an die App übertragen. Für Sie ändert sich an der Benutzung der Corona-Warn-App nichts durch diese zentrale Verwaltung der Regeln.",
+                "<b>Anpassung der Darstellung für Auffrischungsimpfung:</b> Im Rahmen der Erinnerung für Auffrischungsimpfungen gibt es nun eine übersichtliche Darstellung. Weitere Informationen zu einer empfohlenen Auffrischungsimpfung sind nun durch das Tippen auf das Feld “Hinweis zur Auffrischimpfung” einsehbar. Siehe Screenshots 'Hinweis zur Auffrischimpfung' für sowohl <a href='#android_booster_note' target='_blank'>Android</a> als auch <a href='#ios_booster_note' target='_blank'>iOS</a> ",
                 "Die auf dieser Seite zur Verfügung gestellten Bilder stehen zur freien Nutzung bereit."
             ]
         }
@@ -255,6 +256,15 @@
                 "images": [
                     { "filename": "/assets/screenshots/2-18/de/android/LauncherActivity_launcher_root", "alt": "Sicherheitshinweis Bild 1 von 1"}
                 ]
+            },
+            {
+                "title": "Hinweis zur Auffrischimpfung",
+                "anchor": "android_booster_note",
+                "images": [
+                    { "filename": "/assets/screenshots/2-18/de/android/booster_note_de", "alt": "Hinweis zur Auffrischimpfung Bild 1 von 3"},
+                    { "filename": "/assets/screenshots/2-18/de/android/booster_note_detail_de", "alt": "Hinweis zur Auffrischimpfung Bild 2 von 3"},
+                    { "filename": "/assets/screenshots/2-18/de/android/booster_note_detail2_de", "alt": "Hinweis zur Auffrischimpfung Bild 3 von 3"}
+                ]
             }
         ]
     },
@@ -494,6 +504,15 @@
                     { "filename": "/assets/screenshots/2-18/de/ios/iPhone 13-screenshot_ticket_validation_result_failed", "alt": "Zertifikatsprüfung Bild 5 von 6" },
                     { "filename": "/assets/screenshots/2-18/de/ios/iPhone 13-screenshot_ticket_validation_result_unknown", "alt": "Zertifikatsprüfung Bild 6 von 6" }
 
+                ]
+            },
+            {
+                "title": "Hinweis zur Auffrischimpfung",
+                "anchor": "ios_booster_note",
+                "images": [
+                    { "filename": "/assets/screenshots/2-18/de/ios/booster_note_de", "alt": "Hinweis zur Auffrischimpfung Bild 1 von 3"},
+                    { "filename": "/assets/screenshots/2-18/de/ios/booster_note_detail_de", "alt": "Hinweis zur Auffrischimpfung Bild 2 von 3"},
+                    { "filename": "/assets/screenshots/2-18/de/ios/booster_note_detail2_de", "alt": "Hinweis zur Auffrischimpfung Bild 3 von 3"}
                 ]
             }
         ]
