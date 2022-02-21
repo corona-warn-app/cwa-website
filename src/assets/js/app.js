@@ -26,8 +26,26 @@ $(document).ready(function(){
             }
         });
     }   
+
+    //initially set tabindex=-1 on all links in inactive accordions
+    $('.accordion-body').find('a').each(function() {
+        if (!$(this).closest('.accordion-body').prev('.accordion-header').hasClass('active')) {
+            $(this).attr("tabindex", "-1");
+        }
+    })
+
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
-        $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
+        const element = $($(this).data('target') ? $(this).data('target') : $(this));
+        element.toggleClass('active');
+
+        //add tabindex=-1 or remove tabindex on all links inside accordion depending on the state
+        if ($(this).parents('.js-accordion').length > 0) {
+            const isActive = element.hasClass('active');
+            element.next('.accordion-body').find('a').each(function() {
+                isActive ? $(this).removeAttr("tabindex") : $(this).attr("tabindex", "-1")
+            })
+        }
+        
     });
 
     if (document.querySelector(".page-faq")) {
