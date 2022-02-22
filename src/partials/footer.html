@@ -12,13 +12,15 @@
           <div class="link-item col-6 col-md-4"{{#if testid}} data-e2e="{{testid}}"{{/if}}>
             <strong class="headline">{{title}}</strong>
             {{#if button}}
-            <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>
-              {{#unless button.icon}}{{button.title}}{{/unless}}
-              {{#if button.icon}}<span class="icon icon_img icon_{{button.icon}}"><img
-                  src="{{root}}{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
-                  alt="{{title}}"
-                  class="icon-image" /></span>{{/if}}
-            </a>
+            <li class="list-item">
+              <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>
+                {{#unless button.icon}}{{button.title}}{{/unless}}
+                {{#if button.icon}}<span class="icon icon_img icon_{{button.icon}}"><img
+                    src="{{root}}{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
+                    alt="{{title}}"
+                    class="icon-image" /></span>{{/if}}
+              </a>
+            </li>
             {{/if}}
             {{#if links}}
             <ul class="list">
@@ -42,7 +44,7 @@
             {{/each}}
             </ul>
             {{/if}}
-          </div>
+          </ul>
           {{/each}}
         </div>
       </div>
