@@ -67,7 +67,7 @@
                 "index": "01.",
                 "image": {
                     "url": "/assets/img/how-it-works-1.svg",
-                    "alt": "Die Corona-Warn-App sammelt IDs in der Nähe"
+                    "alt": ""
                 },
                 "title": "IDs in der Nähe sammeln",
                 "text": "Das Exposure Notification System (von Apple und Google) auf einem mobilen Gerät sendet einen regelmäßig wechselnden Code (sogenannte Rolling Proximity IDs) und sucht gleichzeitig mithilfe von Bluetooth Low Energy nach IDs anderer Smartphones und speichert die IDs lokal. Die IDs sind nur für 10 bis 20 Minuten gültig und werden kryptografisch von temporären Schlüsseln abgeleitet, die sich alle 24 Stunden ändern.",
@@ -82,7 +82,7 @@
                 "image": {
                     "url": "/assets/img/how-it-works-2.svg",
                     "right": true,
-                    "alt": "Die Corona-Warn-App teilt das Testergebnis von Personen mit Symptomen mit"
+                    "alt": ""
                 },
                 "title": "Testergebnis von Personen mit Symptomen mitteilen (optional)",
                 "text": "Wenn das jeweilige Labor den elektronischen Prozess unterstützt, können getestete Personen mit dem QR-Code, den sie während des Tests erhalten haben, ihre Ergebnisse abrufen."
@@ -91,7 +91,7 @@
                 "index": "03.",
                 "image": {
                     "url": "/assets/img/how-it-works-3.svg",
-                    "alt": "Die Corona-Warn-App verteilt die Liste von Schlüsseln der als infiziert gemeldeten Personen"
+                    "alt": ""
                 },
                 "title": "Liste von Schlüsseln der als infiziert gemeldeten Personen verteilen",
                 "text": "Im Falle eines positiven Testergebnisses werden Personen gebeten, ihre temporären Schlüssel der letzten 14 Tage auf den Server hochzuladen. Um Missbrauch zu verhindern, verifiziert das Backend der Corona-Warn-App zuerst das positive Testergebnis. Bei einer Bestätigung fügt der Server die temporären Schlüssel in eine Liste ein, die regelmäßig an alle Apps gesendet wird."
@@ -101,7 +101,7 @@
                 "image": {
                     "url": "/assets/img/how-it-works-4.svg",
                     "right": true,
-                    "alt": "Die Corona-Warn-App prüft auf Risiko-Kontakte"
+                    "alt": ""
                 },
                 "title": "Prüfung auf Kontakt mit Personen, die sich als infiziert gemeldet haben",
                 "text": "Nachdem ein mobiles Gerät die Liste aller vorhandenen Schlüssel der Personen heruntergeladen hat, die positiv getestet wurden, leitet das Exposure Notification System die jeweiligen IDs ab und prüft lokal, ob diese den lokal gesammelten Rolling Proximity Identifiern entsprechen. Im Kontaktfall wird das Risiko eingeschätzt und die Person erhält entsprechende Handlungsanweisungen.",
@@ -176,7 +176,7 @@
             {
                 "image": {
                     "url": "/assets/img/icons/open-source.svg",
-                    "title": "Open Source"
+                    "title": ""
                 },
                 "headline": {
                     "title": "Open-Source-Ansatz"
@@ -195,7 +195,7 @@
             {
                 "image": {
                     "url": "/assets/img/icons/decentralized.svg",
-                    "title": "Datenschutz"
+                    "title": ""
                 },
                 "headline": {
                     "title": "Datenschutz"
@@ -222,7 +222,7 @@
             {
                 "image": {
                     "url": "/assets/img/icons/lock.svg",
-                    "title": "Sicherheit"
+                    "title": ""
                 },
                 "headline": {
                     "title": "Sicherheit"
@@ -333,7 +333,7 @@
         "box": {
             "image": {
                 "url": "/assets/img/faq.svg",
-                "title": "Häufig gestellte Fragen zur Corona-Warn-App"
+                "title": ""
             },
             "content": {
                 "title": "Mehr Fragen?",
