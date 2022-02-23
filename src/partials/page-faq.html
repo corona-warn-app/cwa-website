@@ -68,7 +68,7 @@
             {{#if @first}}
               <a class="nav-item nav-link active" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
             {{else}}
-              <a class="nav-item nav-link" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
+              <a class="nav-item nav-link" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" tabindex="-1">{{@key}}</a>
             {{/if}}
           {{/each}}
           </div>
@@ -76,7 +76,7 @@
         <div class="tab-content" id="nav-tab-content">
         {{#each page-contents.glossary.glossaryWords as |letter|}}
           {{#if @first}}
-            <div class="tab-pane fade show active mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab">
+            <div class="tab-pane fade show active mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab" tabindex="0">
               <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
               {{#each letter as |content|}}
                 {{#if @last}}
@@ -99,7 +99,7 @@
               {{/each }}
             </div>
           {{else}}
-            <div class="tab-pane fade show mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab">
+            <div class="tab-pane fade show mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab" tabindex="0">
               <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
               {{#each letter as |content|}}
                 {{#if @last}}
