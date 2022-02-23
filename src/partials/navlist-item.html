@@ -9,7 +9,13 @@
         {{#if
         item.external}} nav-link_external{{/if}}{{#if item.disabled}}
         disabled{{/if}}" {{#if item.external}} target="_blank"
-        aria-label="{{title}}" rel="noopener noreferrer" {{/if}}>
+        aria-label="{{title}}" rel="noopener noreferrer" {{/if}}
+        {{#unless item.external}}
+        {{#ifequal @root.page-name item.id}} aria-current="page"{{/ifequal}}
+        {{#ifequal item.id 'science'}}{{#ifsciencedetail}} aria-current="page" {{/ifsciencedetail}}{{/ifequal}}
+        {{#ifequal item.id 'blog'}}{{#ifblogdetail}} aria-current="page" {{/ifblogdetail}}{{/ifequal}}
+        {{/unless}}
+        >
         {{#unless item.icon}}
         {{item.title}}
         {{/unless}}

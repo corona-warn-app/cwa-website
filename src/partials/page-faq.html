@@ -18,7 +18,7 @@
       <div class="input-group input-group-sm">
         <div class="input-group-text">
           <span class="input-group-addon">
-            <span id="match-count">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}
+            <span id="match-count" aria-live="polite">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}
           </span>
         </div>
         <input type="text" class="form-control" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
@@ -40,7 +40,7 @@
             <h3 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{{title}}}</h3>
             <span class="accordion-item-icon"></span>
           </dt>
-          <dd class="accordion-body">
+          <dd class="accordion-body" aria-hidden="true">
             <div class="accordion-item-content">
               {{#if textblock}}
               {{#each textblock}}
