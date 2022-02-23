@@ -245,10 +245,10 @@
               <form id="qrform"> 
                 <div class="form-group row mb-2"> 
                   <div class="col-12">
-                    <label for="csvFile" class="btn btn-primary">
-                      {{page-contents.section-main.form.fields.csvFile}}
-                    </label>
-                    <input type="file" class="form-control-file d-none" accept=".csv" id="csvFile" required>
+                    <input type="file" class="btn btn-primary" accept=".csv" id="csvFile" required>
+                      <label for="csvFile">
+                        {{page-contents.section-main.form.fields.csvFile}}
+                      </label>
                     <div id="csvName" class="d-inline-block"></div>
                     <div id="qr-error-filerequired" class="invalid-feedback">
                       {{page-contents.section-main.form.errors.filerequired}}
