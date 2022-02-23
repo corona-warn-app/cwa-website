@@ -44,6 +44,7 @@ $(document).ready(function(){
             element.next('.accordion-body').find('a').each(function() {
                 isActive ? $(this).removeAttr("tabindex") : $(this).attr("tabindex", "-1")
             })
+            element.next('.accordion-body').attr('aria-hidden', !isActive);
         }
         
     });
