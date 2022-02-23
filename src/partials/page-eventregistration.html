@@ -78,115 +78,145 @@
                 </div>
         
                 <div class="form-group row mb-2">
-                  <label for="defaultcheckinlength" class="col-12 col-form-label">
-                    <div id="qr-error-defaultcheckinlengthrequired" class="invalid-feedback">
-                      {{page-contents.section-main.form.errors.defaultcheckinlengthrequired}}
-                    </div>
-                    <div id="qr-error-defaultcheckinlengthnumber" class="invalid-feedback">
-                      {{page-contents.section-main.form.errors.defaultcheckinlengthnumber}}
-                    </div>
-                    {{page-contents.section-main.form.fields.defaultcheckinlength}}
-                  </label>
-                  <div class="col-12">
-                    <div class="row">
-                      <div class="col-5">
-                        <select id="defaultcheckinlength-hours" class="form-select form-control">
-                          <option value="0">00</option>
-                          <option value="1">01</option>
-                          <option value="2" selected>02</option>
-                          <option value="3">03</option>
-                          <option value="4">04</option>
-                          <option value="5">05</option>
-                          <option value="6">06</option>
-                          <option value="7">07</option>
-                          <option value="8">08</option>
-                          <option value="9">09</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                          <option>16</option>
-                          <option>17</option>
-                          <option>18</option>
-                          <option>19</option>
-                          <option>20</option>
-                          <option>21</option>
-                          <option>22</option>
-                          <option>23</option>
-                        </select>
+                  <fieldset class="col-form-label-fieldset-container">
+                    <div class="col-12">
+                      <div id="qr-error-defaultcheckinlengthrequired" class="invalid-feedback">
+                        {{page-contents.section-main.form.errors.defaultcheckinlengthrequired}}
                       </div>
-                      <div class="col-2 align-self-center text-center">
-                        <span class="time-sep">:</span>
-                      </div>
-                      <div class="col-5">
-                        <select id="defaultcheckinlength-minutes" class="form-select form-control">
-                          <option>00</option>
-                          <option>15</option>
-                          <option>30</option>
-                          <option>45</option>
-                        </select>
+                      <div id="qr-error-defaultcheckinlengthnumber" class="invalid-feedback">
+                        {{page-contents.section-main.form.errors.defaultcheckinlengthnumber}}
                       </div>
                     </div>
-                  </div>
+                    <legend class="col-12 col-form-label col-form-label-fieldset">
+                      {{page-contents.section-main.form.fields.defaultcheckinlength}}
+                    </legend>
+                    <div class="col-12">
+                      <div class="row">
+                        <label for="defaultcheckinlength-hours" class="col-7 col-form-label-sm">
+                          {{page-contents.section-main.form.fields.defaultcheckinlength-hours}}
+                        </label>
+                        <label for="defaultcheckinlength-minutes" class="col-5 col-form-label-sm">
+                          {{page-contents.section-main.form.fields.defaultcheckinlength-minutes}}
+                        </label>
+                        <div class="col-5">
+                          <select id="defaultcheckinlength-hours" class="form-select form-control">
+                            <option value="0">00</option>
+                            <option value="1">01</option>
+                            <option value="2" selected>02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                          </select>
+                        </div>
+                        <div class="col-2 align-self-center text-center">
+                          <span class="time-sep">:</span>
+                        </div>
+                        <div class="col-5">
+                          <select id="defaultcheckinlength-minutes" class="form-select form-control">
+                            <option>00</option>
+                            <option>15</option>
+                            <option>30</option>
+                            <option>45</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
                 </div>
         
                 <div id="event-duration" class="d-none">
                   <div class="form-group row mb-2">
-                    <label for="starttime-date" class="col-12 col-form-label">
-                      <div id="qr-error-starttimerequired" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.starttimerequired}}
-                      </div>
-                      <div id="qr-error-starttimeinvaliddate" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.invaliddate}}
-                      </div>
-                      <div id="qr-error-olddate" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.olddate}}
-                      </div>
-                      <div id="qr-error-starttimeinvalidtime" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.invalidtime}}
-                      </div>
-                      {{page-contents.section-main.form.fields.starttime}}
-                    </label>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-7 col-sm-8">
-                          <input id="starttime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
+                    <fieldset class="col-form-label-fieldset-container">
+                      <div class="col-12">
+                        <div id="qr-error-starttimerequired" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.starttimerequired}}
                         </div>
-                        <div class="col-5 col-sm-4">
-                          <input id="starttime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
+                        <div id="qr-error-starttimeinvaliddate" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invaliddate}}
+                        </div>
+                        <div id="qr-error-olddate" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.olddate}}
+                        </div>
+                        <div id="qr-error-starttimeinvalidtime" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invalidtime}}
                         </div>
                       </div>
-                    </div>
+                      <legend class="col-12 col-form-label col-form-label-fieldset">
+                        {{page-contents.section-main.form.fields.starttime}}
+                      </legend>
+                      <div class="col-12">
+                        <div class="row">
+                          <label for="starttime-date" class="col-7 col-sm-8 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.starttime-date}}
+                          </label>
+                          <label for="starttime-time" class="col-5 col-sm-4 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.starttime-time}}
+                          </label>
+                          <div class="col-7 col-sm-8">
+                            <input id="starttime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
+                          </div>
+                          <div class="col-5 col-sm-4">
+                            <input id="starttime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
                   </div>
         
                   <div class="form-group row mb-2">
-                    <label for="endtime-date" class="col-12 col-form-label">
-                      <div id="qr-error-endtimerequired" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.endtimerequired}}
-                      </div>
-                      <div id="qr-error-endtimeinvaliddate" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.invaliddate}}
-                      </div>
-                      <div id="qr-error-endtimebeforestarttime" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.endtimebeforestarttime}}
-                      </div>
-                      <div id="qr-error-endtimeinvalidtime" class="invalid-feedback">
-                        {{page-contents.section-main.form.errors.invalidtime}}
-                      </div>
-                      {{page-contents.section-main.form.fields.endtime}}
-                    </label>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-7 col-sm-8">
-                          <input id="endtime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
+                    <fieldset class="col-form-label-fieldset-container">
+                      <div class="col-12">
+                        <div id="qr-error-endtimerequired" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.endtimerequired}}
                         </div>
-                        <div class="col-5 col-sm-4">
-                          <input id="endtime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
+                        <div id="qr-error-endtimeinvaliddate" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invaliddate}}
+                        </div>
+                        <div id="qr-error-endtimebeforestarttime" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.endtimebeforestarttime}}
+                        </div>
+                        <div id="qr-error-endtimeinvalidtime" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invalidtime}}
                         </div>
                       </div>
-                    </div>
+                      <legend class="col-12 col-form-label col-form-label-fieldset">
+                        {{page-contents.section-main.form.fields.endtime}}
+                      </legend>
+                      <div class="col-12">
+                        <div class="row">
+                          <label for="starttime-date" class="col-7 col-sm-8 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.endtime-date}}
+                          </label>
+                          <label for="starttime-time" class="col-5 col-sm-4 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.endtime-time}}
+                          </label>
+                          <div class="col-7 col-sm-8">
+                            <input id="endtime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10">
+                          </div>
+                          <div class="col-5 col-sm-4">
+                            <input id="endtime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
                   </div>
                 </div>
     
