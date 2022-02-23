@@ -148,6 +148,11 @@
     .text-right > & {
       margin-left: 1rem;
     }
+    &:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 2px blue;
+    }
   }
   // No need for an active state here
 }
@@ -179,4 +184,16 @@
   + .btn-block {
     margin-top: $btn-block-spacing-y;
   }
+}
+
+.btn-secondary:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 2px blue;
+}
+
+button:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 2px blue!important;
 }

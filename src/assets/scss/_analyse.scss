@@ -34,6 +34,11 @@
 
 	&Export {
 		float: right;
+		&:focus {
+			text-decoration: none;
+			outline: 0;
+			box-shadow: 0 0 0 2px blue!important;
+		}
 	}
 
 
@@ -244,6 +249,11 @@
 				margin-right: 8px;
 				border-radius: 100%;
 				border: 1px solid #006082;
+				&:focus {
+					text-decoration: none;
+					outline: 0;
+					box-shadow: 0 0 0 2px blue!important;
+				}
 			}
 
 
@@ -260,12 +270,17 @@
 				font-weight: bold;
 			}
 
-
+			&:focus {
+				text-decoration: none;
+				outline: 0;
+				box-shadow: 0 0 0 2px blue!important;
+			}
 		}
 	}
 
 	&Switch {
 		background: #fff;
+		padding: 2px;
 		border-radius: 50px;
 		display: inline-block;
 		border: 1px solid #D4EAF7;
