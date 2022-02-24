@@ -45,29 +45,10 @@
     flattened page is created. --}}
 
     {{> header}}
-
-    <section>
-      <div class="container">
-        <div class="container-inner contents-normal">
-          {{#if lang_de}}
-          {{> button-back-component
-          button=science.de.backToIndexButton}}
-          {{else}}
-          {{> button-back-component
-          button=science.en.backToIndexButton}}
-          {{/if}}
-
-          <div class="mobile-message">
-            {{#if lang_de}}
-              {{{science.de.mobileMessage}}}
-            {{else}}
-              {{science.en.mobileMessage}}
-            {{/if}}
-          </div>
-          <div class="blog-markdown-container"> 
-            {{> body}} <!-- this line should be on the very left -->
-          </div>
-          <div class="bottom-back-to-blog">
+    <main class="main-content" role="main">
+      <section>
+        <div class="container">
+          <div class="container-inner contents-normal">
             {{#if lang_de}}
             {{> button-back-component
             button=science.de.backToIndexButton}}
@@ -75,10 +56,30 @@
             {{> button-back-component
             button=science.en.backToIndexButton}}
             {{/if}}
+
+            <div class="mobile-message">
+              {{#if lang_de}}
+                {{{science.de.mobileMessage}}}
+              {{else}}
+                {{science.en.mobileMessage}}
+              {{/if}}
+            </div>
+            <div class="blog-markdown-container"> 
+              {{> body}} <!-- this line should be on the very left -->
+            </div>
+            <div class="bottom-back-to-blog">
+              {{#if lang_de}}
+              {{> button-back-component
+              button=science.de.backToIndexButton}}
+              {{else}}
+              {{> button-back-component
+              button=science.en.backToIndexButton}}
+              {{/if}}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     {{#unless lang_de}}
     {{> footer language=global.lang.en}}
     {{/unless}}
