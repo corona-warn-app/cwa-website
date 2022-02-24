@@ -12,11 +12,11 @@
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
     {{/if}}
-    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:title" content="{{#if lang_de}}Open-Source-Projekt Corona-Warn-App – {{else}}Open-Source Project Corona-Warn-App – {{/if}}{{page-title}}" />
     <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
-    <title>{{page-title}}</title>
+    <title>{{#if lang_de}}Open-Source-Projekt Corona-Warn-App – {{else}}Open-Source Project Corona-Warn-App – {{/if}}{{page-title}}</title>
   </head>
   <body class="blog-detail {{#unless @root.page-name}}{{#ifpage
     'index'}}page-home{{/ifpage}}{{/unless}}{{#if

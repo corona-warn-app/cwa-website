@@ -69,7 +69,9 @@
 				line-height: 18px;
 				vertical-align: middle;
 				margin-right: 16px;
+				margin-top: 16px;
 				margin-bottom: 16px;
+				width: auto;
 			}
 
 			&-btn {
@@ -150,6 +152,15 @@
 
 				.btn-secondary {
 					min-width: 200px;
+				}
+
+				&-top {
+					margin-top: 0px;
+					margin-left: 20px;
+
+					@media (max-width: $screen-lg) {
+						margin-left: 0px;
+					}
 				}
 
 			}

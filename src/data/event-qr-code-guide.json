@@ -11,19 +11,19 @@
                 "url": "/assets/img/event-qr-code-guide/nodejs-website.png",
                 "alt": "node.js installation"
             },
-            "text2": "We explicitly point out that you should <b>not</b> set the checkmark at the following pop-up window. The installation can also be done without this additional option.",
+            "text2": "<hr/> We explicitly point out that you should <b>not</b> set the checkmark at the following pop-up window. The installation can also be done without this additional option. <br/> <br/> <center> <b>Window text : </b> <br/> <em>Some npm modules need to be compiled from C/C++ when installing. If you want to be able to install such modules, some tools (Python and Visual Studio Build Tools) need to be installed. <br> <br> [ ] Automatically install the necessary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes. <br> <br> Alternatively, follow the instructions at https://github.com/nodejs/node-gyp#on-windows to install the dependencies yourself. </em> </center>  ",
             "image2": {
                 "url": "/assets/img/event-qr-code-guide/nodejs-setup.png",
                 "alt": "node.js check"
             },
-            "text3": "When the installation is completed successfully, you will see the following confirmation:",
+            "text3": "<hr/> When the installation is completed successfully, you will see the following confirmation: <br/> <br/> <center> <b> Window text : </b> <em> <br/> <h4> Completed the Node.js setup wizard</h4> <br/> Click the 'Finish' button to exit the setup wizard. <br/> <br/> Node.js has been successfully installed</em> </center>.   ",
             "image3": {
                 "url": "/assets/img/event-qr-code-guide/nodejs-setup2.png",
                 "alt": "node.js confirmation of installation"
             }
         },
         "step2": {
-            "title": "<b>Step 2: Opening and using the command prompt</b>",
+            "title": "<hr/><b>Step 2: Opening and using the command prompt</b>",
             "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=/assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
             "image": {
                 "url": "/assets/img/event-qr-code-guide/taskbar.png",
@@ -34,17 +34,17 @@
                 "url": "/assets/img/event-qr-code-guide/taskbar-search.png",
                 "alt": "Taskbar: searching for command prompt"
             },
-            "text3": "The following window will open:",
+            "text3": "<hr/> The following window will open: <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;...> </em> </center> ",
             "image3": {
                 "url": "/assets/img/event-qr-code-guide/cmd-first-start.png",
                 "alt": "Command prompt"
             },
-            "text4": "Copy the bracketed text (<b>npm install cwa-event-qr-code --global</b>), paste it into the command prompt window using the key combination Ctrl + V, and confirm your input afterwards with the 'Enter' key.",
+            "text4": "<hr/> Copy the bracketed text (<b>npm install cwa-event-qr-code --global</b>), paste it into the command prompt window using the key combination Ctrl + V, and confirm your input afterwards with the 'Enter' key. <br> <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;...> npm install cwa-event-qr-code --global </center> </em>",
             "image4": {
                 "url": "/assets/img/event-qr-code-guide/cmd-install-cwa-tool.png",
                 "alt": "Corona-Warn-App QR code creation tool installation"
             },
-            "text5": "After successful execution, a confirmation is displayed:",
+            "text5": "<hr/> After successful execution, a confirmation is displayed: <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;...> npm install cwa-event-qr-code --global <br/> C:&bsol;Users&bsol;...&bsol;AppData&bsol;Roaming&bsol;npm&bsol;cwa-event-qr-code -> C:&bsol;Users&bsol;...&bsol;AppData&bsol;Roaming&bsol;npm&bsol;node_modules&bsol;cwa-event-qr-code&bsol;bin&bsol;cli <br/> > protobufjs@6.10.2 postinstall C:&bsol;Users&bsol;...&bsol;AppData&bsol;Roaming&bsol;npm&bsol;node_modules&bsol;cwa-event-qr-code&bsol;node_modules&bsol;protobufjs <br/> > node scripts&bsol;postinstall <br/> <br/> + cwa-event-qr-code@1.3.0 <br/> added 79 packages from 121 contributors in 3.59s <br/> <br/> C:&bsol;Users&bsol;... >  </em> </center>",
             "image5": {
                 "url": "/assets/img/event-qr-code-guide/cmd-cwa-tool-confirmation.png",
                 "alt": "Corona-Warn-App QR code creation tool successfull installation"
@@ -62,12 +62,12 @@
         },
         "step4": {
             "title": "<b>Step 4: Converting the .csv file to QR-codes</b>",
-            "text": "If you want to do this step faster, you can download another batch file <a href='/assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code-file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key.",
+            "text": "If you want to do this step faster, you can download another batch file <a href='/assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code-file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key. <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;... > cd /d %USERPROFILE/Downloads  <br/> C:&bsol;Users&bsol;...&bsol;Downloads>mkdir event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads>cd event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes>mkdir qr-codes-results <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes><u>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results</u>  </center> </em> ",
             "image": {
                 "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
                 "alt": "Converting .csv file to QR codes"
             },
-            "text2": "After successful input, the command prompt will confirm the creation of the desired QR codes.",
+            "text2": "<hr/> After successful input, the command prompt will confirm the creation of the desired QR codes. <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;... > cd /d %USERPROFILE/Downloads  <br/> C:&bsol;Users&bsol;...&bsol;Downloads>mkdir event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads>cd event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes>mkdir qr-codes-results <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results <br/> Created qr-codes-results&bsol;qr_table3.png <br/> Created qr-codes-results&bsol;qr_table1.png <br/> Created qr-codes-results&bsol;qr_table2.png <br/> Created qr-codes-results&bsol;qr_table4.png <br/> Created qr-codes-results&bsol;qr_table5.png <br/> Created qr-codes-results&bsol;qr_bar.png <br/> Done creating 6 QR code(s). <br/> <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes> </center> </em>",
             "image2": {
                 "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-confirmation.png",
                 "alt": "Confirmation of successfull convertion"
