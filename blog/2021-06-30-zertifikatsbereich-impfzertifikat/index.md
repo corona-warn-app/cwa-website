@@ -15,7 +15,7 @@ With the update to version 2.4 of the Corona-Warn-App, the project team introduc
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <img src="./home_vaccination_immunity.png" title="Digital vaccination certificate before" style="align: center" height=600px>
+                <img src="./home_vaccination_immunity.png" title="Digital vaccination certificate before" alt="Digital vaccination certificate before" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Before (version 2.3)</em>
                 </figcaption>
@@ -23,7 +23,7 @@ With the update to version 2.4 of the Corona-Warn-App, the project team introduc
         </div>
         <div class="col-md-6">
             <figure>
-                <img src="./certificate-green.png" title="Current digital vaccination certificate" style="align: center" height=600px>
+                <img src="./certificate-green.png" title="Current digital vaccination certificate" alt="Current digital vaccination certificate" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Currently (as of version 2.4)</em>
                 </figcaption>

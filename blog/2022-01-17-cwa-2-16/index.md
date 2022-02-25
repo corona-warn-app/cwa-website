@@ -31,7 +31,7 @@ With 2G+ status, users automatically comply with the rules of 2G, 3G+, and 3G ev
 
 <br></br>
 <center> 
-<img src="./g-status.png" title="proof of status under certificates" style="align: center" width=250> 
+<img src="./g-status.png" title="Proof of status under certificates" alt="Proof of status under certificates" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -39,7 +39,7 @@ When users tap on their certificate, they also see **further information** that 
 
 <br></br>
 <center> 
-<img src="./2g-info.png" title="Further information on proof of status" style="align: center" width=250>
+<img src="./2g-info.png" title="Further information on proof of status" alt="Further information on proof of status" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Further information on the proof of status.</em></figcaption>
 </center>
 <br></br>
@@ -51,7 +51,7 @@ If users have a **valid vaccination or recovery certificate and a valid test cer
 
 <br></br>
 <center> 
-<img src="./combined-certificates.png" title="combined display of 2G certificate and test certificate" style="align: center" width=250>
+<img src="./combined-certificates.png" title="Combined display of 2G certificate and test certificate" alt="Combined display of 2G certificate and test certificate" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Combined display of 2G certificate and test certificate if both are stored in the Corona-Warn-App.</em></figcaption>
 </center>
 <br></br>
@@ -71,7 +71,7 @@ Android users will have this feature with version 2.17 of the Corona-Warn-App.
 
 <br></br>
 <center> 
-<img src="./status-benachrichtigung.png" title="News under status" style="align: center" width=250>
+<img src="./status-benachrichtigung.png" title="News under status" alt="News under status" style="align: center" width=250>
 </center>
 <br></br>
 

@@ -18,7 +18,7 @@ The update will be available to users over the next 48 hours.
 Certificates now display names in standardized Latin characters in addition to the country-specific spelling so that everybody can read them. 
 
 <br></br>
-<center> <img src="./standard-name.png" title="name in standardized Latin characters" style="align: center"> </center>
+<center> <img src="./standard-name.png" title="Name in standardized Latin characters" alt="Name in standardized Latin characters" style="align: center"> </center>
 <br></br>
 
 In addition, the project team has adapted the **EU certificate check**. If a country has not provided any entry rules that the Corona-Warn-App can use for checking, the certificate check will state that the **certificate cannot be validated**. The countries that are listed under the certificate check in the Corona-Warn-App generally recognize the certificates. However, depending on the country and the applicable rules, the relevant certificate (on its own) may not authorize entry.
@@ -28,12 +28,12 @@ Previously, the app indicated in this case that the certificate is valid in the 
 Since [version 2.6](/en/blog/2021-07-28-cwa-version-2-6/) of the Corona-Warn-App, users can check whether their certificates are valid in their destination country before travelling.  
 
 <br></br>
-<center> <img src="./validity-new-en.png" title="certificate cannot be validated" style="align: center"></center>
+<center> <img src="./validity-new-en.png" title="Certificate cannot be validated" alt="Certificate cannot be validated" style="align: center"></center>
 <br></br>
 <center> Currently </center>
 
 <br></br>
-<center> <img src="./validity-alt-en.png" title="valid certificate" style="align: center"></center>
+<center> <img src="./validity-alt-en.png" title="Valid certificate" alt="Valid certificate" style="align: center"></center>
 <br></br>
 <center> Before </center>
 <br></br>

@@ -14,7 +14,7 @@ Das Projektteam der Deutschen Telekom und SAP hat ein Update der Corona-Warn-App
 Der Link zur Befragung wird allen Nutzer\*innen angezeigt, die eine rote Kachel, also ein erhöhtes Risiko, haben. Sie dient dazu, die Wirksamkeit der App zu analysieren und besser zu verstehen, indem die Expert\*innen mehr über das Verhalten der Nutzer\*innen vor der Risikoberechnung und über ihr geplantes Verhalten danach erfahren. Damit können die Projektbeteiligten die App basierend auf dem Feedback der Nutzer\*innen weiter verbessern. 
 
 <br></br>
-<center> <img src="./rki-survey.png" title="Link zur RKI-Befragung" style="align: center" height="1024"></center>
+<center> <img src="./rki-survey.png" title="Link zur RKI-Befragung" alt="Link zur RKI-Befragung" style="align: center" height="1024"></center>
 <br></br>
 
 
@@ -30,7 +30,7 @@ Beim ersten Öffnen der App nach dem Update auf Version 1.13 öffnet sich ein Po
 
 <br></br>
 
-<center> <img src="./DatenOnboarding_DE.png" title="Datenspende Pop-Up Fenster" style="align: center"> <img src="./DatenSettings_DE_1.png" title="Datenspende Einstellungen" style="align: center"> <img src="./DataSettings_DE_2.png" title="Einverständniserklärung" style="align: center"> </center>
+<center> <img src="./DatenOnboarding_DE.png" title="Datenspende Pop-Up Fenster" alt="Datenspende Pop-Up Fenster" style="align: center"> <img src="./DatenSettings_DE_1.png" title="Datenspende Einstellungen" alt="Datenspende Einstellungen" style="align: center"> <img src="./DataSettings_DE_2.png" title="Einverständniserklärung" alt="Einverständniserklärung" style="align: center"> </center>
 <br></br>
 
 
