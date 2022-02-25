@@ -17,7 +17,7 @@ Ab Version 2.17 können Nutzer\*innen neben den Statistiken für geimpfte Person
 
 <br></br>
 <center> 
-<img src="./booster_vaccination_de.png" title="Statistik-Kachel zu Auffrischimpfungen" style="align: center" width=250>
+<img src="./booster_vaccination_de.png" title="Statistik-Kachel zu Auffrischimpfungen" alt="Statistik-Kachel zu Auffrischimpfungen" style="align: center" width=250>
 </center>
 <br></br>
 
@@ -27,7 +27,7 @@ Außerdem können Nutzer\*innen nun für jedes Element in ihrem Papierkorb das *
 
 <br></br>
 <center> 
-<img src="./löschdatum-papierkorb.png" title="Löschdatum im Papierkorb" style="align: center" width=250>
+<img src="./löschdatum-papierkorb.png" title="Löschdatum im Papierkorb" alt="Löschdatum im Papierkorb" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Löschdatum im Papierkorb (Android)</em></figcaption>
 </center>
 <br></br>
@@ -40,7 +40,7 @@ Des Weiteren hat das Projektteam einen **Link zu den Social-Media-Kanälen der C
 
 <br></br>
 <center> 
-<img src="./android-social-media-de.png" title="Link zu Social-Media-Kanälen der CWA" style="align: center" width=250> <img src="./ios-social-media-de.png" title="Infokasten zum Statusnachweis" style="align: center" width=250>
+<img src="./android-social-media-de.png" title="Link zu Social-Media-Kanälen der CWA" alt="Link zu Social-Media-Kanälen der CWA" style="align: center" width=250> <img src="./ios-social-media-de.png" title="Infokasten zum Statusnachweis" alt="Infokasten zum Statusnachweis" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Link zu Social-Media-Kanälen der CWA (links Android, rechts iOS).</em></figcaption>
 </center>
 <br></br>
@@ -57,7 +57,7 @@ Außerdem hat das Projektteam die Hinweise und Vorgehensweise bei einem positive
 
 <br></br>
 <center> 
-<img src="./test-empfehlung(1).png" title="Hinweise bei positivem Testergebnis" style="align: center" width=250> 
+<img src="./test-empfehlung(1).png" title="Hinweise bei positivem Testergebnis" alt="Hinweise bei positivem Testergebnis" style="align: center" width=250> 
 </center>
 <br></br>
 

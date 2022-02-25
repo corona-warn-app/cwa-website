@@ -18,7 +18,7 @@ If a user had multiple encounters with a high risk (red), he or she will see the
 
 <br></br>
 
-<center> <img src="./cwa-high-and-low-risk.jpg" title="Corona-Warn-App High and Low Risk" style="align: center"> </center>
+<center> <img src="./cwa-high-and-low-risk.jpg" title="Corona-Warn-App High and Low Risk" alt="Corona-Warn-App High and Low Risk" style="align: center"> </center>
 
 <br></br>
 

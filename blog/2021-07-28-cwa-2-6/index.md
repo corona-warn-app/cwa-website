@@ -18,13 +18,13 @@ Starting with version 2.6, users can add local 7-day incidences for up to **five
 
 
 <br></br>
-<center> <img src="./local-7-day-incidence (2).png" title="Add local 7-day incidence" style="align: center"> <img src="./7-day-incidence-county.png" title="Select county" style="align: center"> <img src="./7-day-incidence-district.png" title="Select district" style="align: center"> </center>
+<center> <img src="./local-7-day-incidence (2).png" title="Add local 7-day incidence" alt="Add local 7-day incidence" style="align: center"> <img src="./7-day-incidence-county.png" title="Select county" alt="Select county" style="align: center"> <img src="./7-day-incidence-district.png" title="Select district" alt="Select district" style="align: center"> </center>
 <br></br>
 
 To **remove a local incidence** from the overview, users can swipe to the right again, select "Edit" and delete the corresponding tile by tapping the red circle in the upper left corner.
 
 <br></br>
-<center> <img src="./delete-local-incidence(1).png" title="Delete local 7-day incidence" style="align: center"> <img src="./delete-local-incidence(2).png" title="Delete local 7-day incidence" style="align: center"> </center>
+<center> <img src="./delete-local-incidence(1).png" title="Delete local 7-day incidence" alt="Delete local 7-day incidence" style="align: center"> <img src="./delete-local-incidence(2).png" title="Delete local 7-day incidence" alt="Delete local 7-day incidence" style="align: center"> </center>
 <br></br>
 
 **Important note**: The Corona-Warn-App displays local 7-day incidences based on the county/district selection only. It does not work with GPS location. The data is also only stored on the user's own smartphone.
@@ -44,7 +44,7 @@ To start the check, they can go to the **"Certificates" tab** and select the cer
 
 
 <br></br>
-<center> <img src="./check-validity.png" title="Check validity" style="align: center"> <img src="./check-validity-country.png" title="Select country" style="align: center"> <img src="./check-validity-date.png" title="Select date and time" style="align: center"> </center>
+<center> <img src="./check-validity.png" title="Check validity" alt="Check validity" style="align: center"> <img src="./check-validity-country.png" title="Select country" alt="Select country" style="align: center"> <img src="./check-validity-date.png" title="Select date and time" alt="Select date and time" style="align: center"> </center>
 <br></br>
 
 When **entering the country by train or car**, users must specify the date on which they cross the border and the local time, taking into account any time difference (for example, if they cross the border from Germany into Portugal at 4 p.m. German time, they must specify 3 p.m., the local time in Portugal). When **entering the country by plane**, users must indicate the date and time of departure. 
@@ -57,7 +57,7 @@ To have a certificate checked for validity, users must be connected to the Inter
 **Result 1: Certificate is valid and rules are available for the selected country**
 
 <br></br>
-<center> <img src="./valid-certificate.png" title="Valid Certificate" style="align: center"> </center>
+<center> <img src="./valid-certificate.png" title="Valid Certificate" alt="Valid Certificate" style="align: center"> </center>
 <br></br>
 
 **Result 2: Certificate is valid, but no rules are available for the selected country**

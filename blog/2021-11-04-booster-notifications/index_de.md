@@ -26,17 +26,17 @@ Wenn die aktuellen Empfehlungen auf den oder die Nutzer\*in zutreffen, weist die
 
 <br></br>
 <center> 
-<img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
-<img src="./neuigkeiten-zertifikate.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
-<img src="./benachrichtung-unter-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
+<img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" alt="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
+<img src="./neuigkeiten-zertifikate.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
+<img src="./benachrichtung-unter-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
 <figcaption aria-hidden="true"><em> Die App weist Nutzer*innen mit einer Push-Nachricht und dem roten Punkt auf die Neuigkeiten hin. Unter dem Zertifikat finden Nutzer*innen detaillierte Informationen. </em></figcaption>
 </center>
 <br></br>
 
 <br></br>
 <center> 
-<img src="./benachrichtigung-70.png" title="Hinweis für Nutzer*innen über 70" style="align: center" width=250> 
-<img src="./benachrichtigung-johnson.png" title="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" style="align: center" width=250>
+<img src="./benachrichtigung-70.png" title="Hinweis für Nutzer*innen über 70" alt="Hinweis für Nutzer*innen über 70" style="align: center" width=250> 
+<img src="./benachrichtigung-johnson.png" title="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" alt="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: Hinweis für Nutzer*innen, die mindestens 70 Jahre alt sind. Rechts: Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson & Johnson geimpft wurden. </em></figcaption>
 </center>
 <br></br>
@@ -51,7 +51,7 @@ Nutzer\*innen können das Zertifikat der Auffrischimpfung ebenso in die Corona-W
 
 <br></br>
 <center> 
-<img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" style="align: center" width=250> 
+<img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>In der Mitte der Registerkarte, hier eingekreist: Universeller QR-Code-Scanner.</em></figcaption>
 </center>
 <br></br>

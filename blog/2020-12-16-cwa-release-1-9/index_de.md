@@ -17,7 +17,7 @@ Bei mehreren Begegnungen mit erhöhtem Risiko (rot) wird Nutzer\*innen nun das D
   
 <br></br>
 
-<center> <img src="./cwa-low-risk-sreenshot.jpg" title="Corona-Warn-App Low Risk" style="align: center"> <img src="./cwa-high-risk-screenshot.jpg" title="Corona-Warn-App Low Risk" style="align: center"> </center>
+<center> <img src="./cwa-low-risk-sreenshot.jpg" title="Corona-Warn-App niedriges Risiko" alt="Corona-Warn-App niedriges Risiko" style="align: center"> <img src="./cwa-high-risk-screenshot.jpg" title="Corona-Warn-App hohes Risiko" alt="Corona-Warn-App hohes Risiko" style="align: center"> </center>
 
 <br></br>
 
