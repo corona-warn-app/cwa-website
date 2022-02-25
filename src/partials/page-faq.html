@@ -1,6 +1,6 @@
 {{#if page-contents}}
 <div class="container container_flex">
-  <aside class="side-menu js-menu" id="side-menu">
+  <aside class="side-menu js-menu" id="side-menu" role="region" aria-label="{{page-contents.section-main.side-menu.description}}">
     <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
     <ul class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
       {{#each page-contents.section-main.sections}}
@@ -10,7 +10,7 @@
       {{/each}}
     </ul>
   </aside>
-  <main class="main">
+  <div class="main">
     <h1 class="headline headline-heavy" id="top">{{page-contents.section-main.headline.title}}</h1>
 
     <form method="get" id="faq-search-form">
@@ -128,6 +128,6 @@
       </div>
     </div>
   {{/if}}
-  </main>
+  </div>
 </div>
 {{/if}}
