@@ -26,16 +26,16 @@ If the current recommendations apply to the user, the app notifies them. Users w
 
 <br></br>
 <center> 
-<img src="./news-about-certificates.png" title="News in the certificates section" style="align: center" width=250>
-<img src="./vaccination-status-notification.png" title="Notification in the certificate" style="align: center" width=250> 
+<img src="./news-about-certificates.png" title="News in the certificates section" alt="News in the certificates section" style="align: center" width=250>
+<img src="./vaccination-status-notification.png" title="Notification in the certificate" alt="Notification in the certificate" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: The app alerts users with the red dot that there is news. Right: information about booster recommendation under the certificate </em></figcaption>
 </center>
 <br></br>
 
 <br></br>
 <center> 
-<img src="./notification-70.png" title="Notification for users who are at least 70 years old" style="align: center" width=250> 
-<img src="./notification-johnson.png" title="Notification for users vaccinated with the vaccine from Jonson&Johnson" style="align: center" width=250>
+<img src="./notification-70.png" title="Notification for users who are at least 70 years old" alt="Notification for users who are at least 70 years old" style="align: center" width=250> 
+<img src="./notification-johnson.png" title="Notification for users vaccinated with the vaccine from Jonson&Johnson" alt="Notification for users vaccinated with the vaccine from Jonson&Johnson" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: notification for users who are at least 70 years old. Right: notification for users who were vaccinated with Johnson & Johnson's vaccine. </em></figcaption>
 </center>
 <br></br>
@@ -51,7 +51,7 @@ Users who have received a booster vaccination can transfer the certificate into 
 
 <br></br>
 <center> 
-<img src="./qr-code-scanner-en.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
+<img src="./qr-code-scanner-en.png" title="Universal QR code scanner" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>In the middle of the tab bar, circled here: universal QR code scanner.</em></figcaption>
 </center>
 <br></br>

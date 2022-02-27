@@ -17,5 +17,5 @@ With whom have I met in the past 14 days? What places did I visit? This is impor
 
 <br></br>
 
-<center> <img src="./contact-journal.jpg" title="Contact Journal" style="align: center"> </center>
+<center> <img src="./contact-journal.jpg" title="Contact Journal" alt="Contact Journal" style="align: center"> </center>
 

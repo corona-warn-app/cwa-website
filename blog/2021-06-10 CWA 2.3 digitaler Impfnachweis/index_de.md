@@ -19,7 +19,7 @@ Die **Gültigkeit** des digitalen Impfnachweises muss durch die **CovPass-Check-
 
 
 <br></br>
-<center> <img src="./vollständiger-impfschutz-homescreen.jpg" title="Vollständiger Impfschutz" style="align: center"></center>
+<center> <img src="./vollständiger-impfschutz-homescreen.jpg" title="Vollständiger Impfschutz" alt="Vollständiger Impfschutz" style="align: center"></center>
 <br></br>
 
 ### Impfzertifikate hinzufügen – So geht’s:
@@ -27,23 +27,23 @@ Die **Gültigkeit** des digitalen Impfnachweises muss durch die **CovPass-Check-
 Ab Version 2.3 der Corona-Warn-App finden Nutzer\*innen den Bereich **„Impfzertifikat hinzufügen“** auf dem Home-Bildschirm ihrer App. Mit dem Tippen auf *Hinzufügen*, können sie den QR-Code scannen, den sie bei der Impfung vor Ort erhalten, um den Impfstatus in die Corona-Warn-App zu integrieren. Die App liest die Informationen aus dem QR-Code aus und zeigt den entsprechenden Impfstatus an. 
 
 <br></br>
-<center> <img src="./impfnachweis-homescreen.jpg" title="Homescreen mit Impfzertifikats-Bereich" style="align: center"> <img src="./impfzertifikat-1-2.jpg" title="Impfzertifikat 1 von 2" style="align: center"></center>
+<center> <img src="./impfnachweis-homescreen.jpg" title="Homescreen mit Impfzertifikats-Bereich" alt="Homescreen mit Impfzertifikats-Bereich" style="align: center"> <img src="./impfzertifikat-1-2.jpg" title="Impfzertifikat 1 von 2" alt="Impfzertifikat 1 von 2" style="align: center"></center>
 <br></br>
 
 Bei vielen Impfstoffen benötigen die Nutzer\*innen zwei Impfungen, um einen vollständigen Impfschutz zu erlangen. In diesem Fall zeigt die App nach der ersten Impfung auf dem Startbildschirm unter der Risikoanzeige zunächst einen unvollständigen Impfschutz an. 
 
 <br></br>
-<center> <img src="./unvollständiger-impfschutz-homescreen.jpg" title="Unvollständiger Impfschutz" style="align: center"></center>
+<center> <img src="./unvollständiger-impfschutz-homescreen.jpg" title="Unvollständiger Impfschutz" alt="Unvollständiger Impfschutz" style="align: center"></center>
 <br></br>
 
 Nutzer\*innen können  im Impfzertifikats-Bereich der App eine **„Weitere Impfung registrieren“**, sobald sie eine zweite Impfung für den vollständigen Impfschutz erhalten haben. Damit der Impfschutz vollständig vorhanden ist, müssen 14 Tage nach der letzten benötigten Impfung vergehen. Erst dann zeigt die Corona-Warn-App den Status „Vollständiger Impfschutz“. Um weitere Informationen zur jeweiligen Impfung anzuzeigen, beispielsweise das Datum oder den Impfstoff, können Nutzer*innen auf die jeweilige Impfung ( „Impfung 1 von 2“ oder „Impfung 2 von 2“) tippen.
 
 <br></br>
-<center> <img src="./impfzertifikat-2-2.jpg" title="Impfzertifikat zwei" style="align: center"> <img src="./impfzertifikat-details.jpg" title="Details zur Impfung" style="align: center"></center>
+<center> <img src="./impfzertifikat-2-2.jpg" title="Impfzertifikat zwei" alt="Impfzertifikat zwei" style="align: center"> <img src="./impfzertifikat-details.jpg" title="Details zur Impfung" alt="Details zur Impfung" style="align: center"></center>
 <br></br>
 
 <br></br>
-<center> <img src="./impfschutz-6-tage.jpg" title="Voller Schutz in 6 Tagen" style="align: center"></center>
+<center> <img src="./impfschutz-6-tage.jpg" title="Voller Schutz in 6 Tagen" alt="Voller Schutz in 6 Tagen" style="align: center"></center>
 <br></br>
 
 

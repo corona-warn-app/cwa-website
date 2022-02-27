@@ -26,8 +26,27 @@ $(document).ready(function(){
             }
         });
     }   
+
+    //initially set tabindex=-1 on all links in inactive accordions
+    $('.accordion-body').find('a').each(function() {
+        if (!$(this).closest('.accordion-body').prev('.accordion-header').hasClass('active')) {
+            $(this).attr("tabindex", "-1");
+        }
+    })
+
     $('.js-accordion dt, .js-toggle').on('click tap', function(){
-        $($(this).data('target') ? $(this).data('target') : $(this)).toggleClass('active');
+        const element = $($(this).data('target') ? $(this).data('target') : $(this));
+        element.toggleClass('active');
+
+        //add tabindex=-1 or remove tabindex on all links inside accordion depending on the state
+        if ($(this).parents('.js-accordion').length > 0) {
+            const isActive = element.hasClass('active');
+            element.next('.accordion-body').find('a').each(function() {
+                isActive ? $(this).removeAttr("tabindex") : $(this).attr("tabindex", "-1")
+            })
+            element.next('.accordion-body').attr('aria-hidden', !isActive);
+        }
+        
     });
 
     if (document.querySelector(".page-faq")) {
@@ -114,7 +133,6 @@ $(document).ready(function(){
             }
         }
         const throttledAutoHideSticky = throttle(autoHideSticky, 500)
-        document.addEventListener('scroll', throttledAutoHideSticky)
 
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
@@ -303,12 +321,32 @@ $(document).ready(function(){
         document.getElementById('csvName').innerHTML = document.getElementById('csvFile').files[0].name;
     })
 
+    //glossary tab-navigation with left/right arrow keys
+    $('.nav-tabs .nav-item').keyup(function(e) {
+        let tab = null;
+        if (e.which === 39) {
+            //right
+            tab = $(this).next().length !== 0 ? $(this).next() : $(this).siblings().first()
+        } else if (e.which === 37) {
+            //left
+            tab = $(this).prev().length !== 0 ? $(this).prev() : $(this).siblings().last() 
+        }
+
+        if (tab) {
+            tab.addClass('active').siblings().removeClass('active');
+            tab.removeAttr('tabindex').siblings().attr('tabindex', '-1');
+            $(tab.attr('href')).addClass('show active').siblings().removeClass('show active');
+            tab.focus();
+        }
+    })
+
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
 
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
+        $(this).removeAttr('tabindex').siblings().attr('tabindex', '-1');
 
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
