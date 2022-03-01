@@ -35,9 +35,12 @@
 	&Export {
 		float: right;
 		&:focus {
-			text-decoration: none;
-			outline: 0;
-			box-shadow: 0 0 0 2px blue!important;
+			//outline: none;
+		}
+		&:focus-visible {
+			outline: none;
+			border: 2px solid white!important;
+			box-shadow: 0 0 0 2px black!important;
 		}
 	}
 
@@ -250,9 +253,12 @@
 				border-radius: 100%;
 				border: 1px solid #006082;
 				&:focus {
-					text-decoration: none;
-					outline: 0;
-					box-shadow: 0 0 0 2px blue!important;
+					//outline: none;
+				}
+				&:focus-visible {
+					outline: none;
+					border: 2px solid white!important;
+					box-shadow: 0 0 0 2px black!important;
 				}
 			}
 
@@ -271,9 +277,12 @@
 			}
 
 			&:focus {
-				text-decoration: none;
-				outline: 0;
-				box-shadow: 0 0 0 2px blue!important;
+				//outline: none;
+			}
+			&:focus-visible {
+				outline: none;
+				border: 2px solid white!important;
+				box-shadow: 0 0 0 2px black!important;
 			}
 		}
 	}
