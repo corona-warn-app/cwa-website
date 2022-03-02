@@ -158,7 +158,7 @@ HTMLWidgets.widget({
 
     // if no plot exists yet, create one with a particular configuration
     if (!instance.plotly) {
-
+      Plotly.setPlotConfig({displayModeBar: true})
       var plot = Plotly.plot(graphDiv, x);
       instance.plotly = true;
 
@@ -173,6 +173,7 @@ HTMLWidgets.widget({
       // TODO: why is this necessary to get crosstalk working?
       graphDiv.data = undefined;
       graphDiv.layout = undefined;
+      Plotly.setPlotConfig({displayModeBar: true})
       var plot = Plotly.plot(graphDiv, x);
     }
 
