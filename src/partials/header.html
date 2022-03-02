@@ -27,8 +27,7 @@
   {{/ifpage}}
 
   {{#unless homepage}}
-  <div class="col-sm-12 text-center subheader pt-2 pb-2">
-    <ul class="list-inline">
+    <ul class="col-sm-12 text-center subheader pt-2 pb-2 list-inline">
       <li>
       <a href="{{#if lang_de}}{{global.whohelps.de.link}}{{else}}{{global.whohelps.en.link}}{{/if}}" {{#if homepage}}class="whohelps"{{/if}}>
         {{#if lang_de}}
@@ -38,7 +37,7 @@
         {{/if}}
       </a>
       </li>
-      <li>
+      <li class="list-inline-item">
       <a href="{{#if lang_de}}{{global.wherecanigettested.de.link}}{{else}}{{global.wherecanigettested.en.link}}{{/if}}" {{#if homepage}}class="whohelps"{{/if}}>
         {{#if lang_de}}
           {{global.wherecanigettested.de.text}}
@@ -47,7 +46,7 @@
         {{/if}}
       </a>
       </li>
-      <li>
+      <li class="list-inline-item">
       <a href="{{#if lang_de}}{{global.testissues.de.link}}{{else}}{{global.testissues.en.link}}{{/if}}" {{#if homepage}}class="whohelps"{{/if}}>
         {{#if lang_de}}
           {{global.testissues.de.text}}
@@ -57,6 +56,5 @@
       </a>
       </li>
     </ul>
-  </div>
   {{/unless}}
 </header>

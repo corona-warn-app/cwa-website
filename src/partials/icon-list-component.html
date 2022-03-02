@@ -1,17 +1,17 @@
 {{#if icon-list}}
-<div class="{{#if class}}{{class}}{{/if}} icon-list">
+<ul class="{{#if class}}{{class}}{{/if}} icon-list list-unstyled">
     {{#each icon-list}}
     {{#if url}}
-    <ul>
+    <li>
     <a class="icon-list-item" href="{{url}}" target="_blank" rel="noopener noreferrer">
         <img src="{{icon-url}}" alt="{{title}} Icon"{{#if icon-set}} srcset="{{icon-set}}"{{/if}}/>
     </a>
-    </ul>
+    </li>
     {{else}}
-    <ul>
+    <li>
     <img class="icon-list-item" src="{{icon-url}}" alt="{{title}}"{{#if icon-set}} srcset="{{icon-set}}"{{/if}}/>
-    </ul>
+    </li>
     {{/if}}
     {{/each}}
-</div>
+</ul>
 {{/if}}
