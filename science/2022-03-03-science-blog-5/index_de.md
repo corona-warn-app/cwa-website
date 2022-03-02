@@ -57,7 +57,7 @@ Wir wollen an dieser Stelle die Gelegenheit nutzen und die im Blog [Über die Wi
 
 Insgesamt wurden 150.788.351 Testergebnisse an das CWA-Backend-System übermittelt (Stand: 1. März 2022), von denen 15.191.927 positiv, 133.991.100 negativ und 1.292.683 ungültig waren. Von den positiven Testergebnissen wurden 4.069.825 über die CWA abgerufen und 2.603.206 geteilt. Zusätzlich wurde für 262.546 positive Tests eine teleTAN ausgegeben und wurden 254.374 davon geteilt.
 
-Die Differenz zwischen den im CWA-Backend bereitgestellten und den über die CWA abgerufenen positiven Testergebnissen ergibt sich daraus, dass bei der Beauftragung der SARS-CoV-2-Testung die Einwilligung zur Übermittlung des Testergebnisses an die CWA angekreuzt wird, die getestete Person aber die CWA entweder nicht installiert hat bzw. nicht nutzt oder keinen QR-Code zur Verfügung gestellt bekommt, um den Test in der CWA zu registrieren und das Ergebnis dann über sie abzurufen. Infolgedessen verbleibt das Testergebnis im Backend. Die 27% abgerufenen und 19% geteilten (positiven) Testergebnisse, lassen eine [Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden](#41-aus-der-anzahl-der-warnenden) unter Berücksichtigung der bekannten Teilungsrate zu und liegen im Rahmen des Erwarteten. Gleichzeitig erkennt man auch, dass das große Potential der Corona-Warn-App noch nicht vollständig genutzt ist. Hierfür könnten noch mehr Personen, die die CWA herunterladen und nutzen, z.B. von den Ärzten und Teststellen auf die Möglichkeit der Testregistrierung und des Abrufs des Ergebnisses in der CWA aufgeklärt werden.
+Die Differenz zwischen den im CWA-Backend bereitgestellten und den über die CWA abgerufenen positiven Testergebnissen ergibt sich daraus, dass bei der Beauftragung der SARS-CoV-2-Testung die Einwilligung zur Übermittlung des Testergebnisses an die CWA angekreuzt wird, die getestete Person aber die CWA entweder nicht installiert hat bzw. nicht nutzt oder keinen QR-Code zur Verfügung gestellt bekommt, um den Test in der CWA zu registrieren und das Ergebnis dann über sie abzurufen. Infolgedessen verbleibt das Testergebnis im Backend. Die 27% abgerufenen und 19% geteilten (positiven) Testergebnisse, lassen eine [Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden](#41-aus-der-anzahl-der-warnenden) unter Berücksichtigung der bekannten Teilungsrate zu und liegen im Rahmen des Erwarteten. Gleichzeitig erkennt man auch, dass das große Potential der Corona-Warn-App noch nicht vollständig genutzt ist. Hierfür könnten noch mehr Personen, die die CWA herunterladen und nutzen, z.&nbsp;B. von den Ärzten und Teststellen auf die Möglichkeit der Testregistrierung und des Abrufs des Ergebnisses in der CWA aufgeklärt werden.
 
 Der zeitliche Verlauf (täglich und 7-Tage-Mittelwert) der oben genannten Kennzahlen (und zum Vergleich auch der [SARS-CoV-2-Neuinfektionen](https://github.com/robert-koch-institut/SARS-CoV-2_Infektionen_in_Deutschland)) ist in der folgenden Abbildung dargestellt (in [logarithmischer Darstellung](https://de.wikipedia.org/wiki/Logarithmische_Darstellung)).
 
@@ -118,9 +118,9 @@ Bei Antigen-Schnelltests ist dieses Verhältnis sogar noch überzeugender.
 
 *Die Warnungen durch die CWA sind damit, trotz der bekannten Unzulänglichkeiten der BLE-Technologie, präzise und zuverlässig. Die CWA warnt die Richtigen.*
 
-Die Bedeutung der CWA lässt sich auch im aktuellen Pandemiegeschehen illustrieren. Die Anzahl der bundesweiten Neuinfektionen der letzten 7 Tage lag bei 1.007.987 (Stand: 28. Februar 2022). Im selben Zeitraum wurden 1.388.486 positive Corona-Testergebnisse in das Backend der CWA übermittelt und 330.228 von dort von CWA-Nutzenden abgerufen (23,8%). Von diesen wurden wiederum rund zwei Drittel (70,7%) geteilt. Insgesamt wurden damit knapp 16,8% der positiven Tests in Deutschland innerhalb der CWA genutzt und geteilt, um andere zu warnen (in den letzten 7 Tagen waren dies 233.377 Personen). Unter der Annahme, dass pro warnender Person 23 CWA-Nutzende eine rote Warnung erhalten (dieser Wert lag in den letzten 30 Tagen höher als über den gesamten Zeitraum betrachtet), ergeben sich aktuell ca. 5.367.700 rot Gewarnte, von denen sich etwa 15% testen lassen und ihr Resultat über die CWA registrieren. Zudem kann man davon ausgehen, dass sich weitere 72% testen lassen (dies zum großen Teil auch offiziell, s.o.), ihr Testergebnis aber nicht in der CWA registrieren können. Von diesen insgesamt ca. 3.887.000 werden etwa 14,1% und damit bis zu 548.500 weitere CWA-Nutzende positiv getestet. Infolge der schnellen Warnung und der unmittelbaren Verhaltensanpassungen potenziell infizierter CWA-Nutzender werden Infektionsketten durch die CWA frühzeitig beendet.
+Die Bedeutung der CWA lässt sich auch im aktuellen Pandemiegeschehen illustrieren. Die Anzahl der bundesweiten Neuinfektionen der letzten 7 Tage lag bei 1.007.987 (Stand: 28. Februar 2022). Im selben Zeitraum wurden 1.388.486 positive Corona-Testergebnisse in das Backend der CWA übermittelt und 330.228 von dort von CWA-Nutzenden abgerufen (23,8%). Von diesen wurden wiederum rund zwei Drittel (70,7%) geteilt. Insgesamt wurden damit knapp 16,8% der positiven Tests in Deutschland innerhalb der CWA genutzt und geteilt, um andere zu warnen (in den letzten 7 Tagen waren dies 233.377 Personen). Unter der Annahme, dass pro warnender Person 23 CWA-Nutzende eine rote Warnung erhalten (dieser Wert lag in den letzten 30 Tagen höher als über den gesamten Zeitraum betrachtet), ergeben sich aktuell ca. 5.367.700 rot Gewarnte, von denen sich etwa 15% testen lassen und ihr Resultat über die CWA registrieren. Zudem kann man davon ausgehen, dass sich weitere 72% testen lassen (dies zum großen Teil auch offiziell, s.&nbsp;o.), ihr Testergebnis aber nicht in der CWA registrieren können. Von diesen insgesamt ca. 3.887.000 werden etwa 14,1% und damit bis zu 548.500 weitere CWA-Nutzende positiv getestet. Infolge der schnellen Warnung und der unmittelbaren Verhaltensanpassungen potenziell infizierter CWA-Nutzender werden Infektionsketten durch die CWA frühzeitig beendet.
 
-Eine genaue Bezifferung der beendeten Infektionsketten bzw. der vermiedenen Fälle ist nur im Rahmen einer Simulation oder Modellierung möglich. Dabei muss man die tatsächliche Situation mit einer virtuellen (hypothetischen) vergleichen, in der es z.B. keine CWA gibt. Dies ist für einen zukünftigen Blog-Beitrag geplant.
+Eine genaue Bezifferung der beendeten Infektionsketten bzw. der vermiedenen Fälle ist nur im Rahmen einer Simulation oder Modellierung möglich. Dabei muss man die tatsächliche Situation mit einer virtuellen (hypothetischen) vergleichen, in der es z.&nbsp;B. keine CWA gibt. Dies ist für einen zukünftigen Blog-Beitrag geplant.
 
 Zusammenfassend zeigt die aktuelle Auswertung, dass die CWA eine bedeutende Rolle bei der Eindämmung der Pandemie spielt. Durch die direkte Rückmeldung von Testergebnissen in die CWA und das kurze Zeitfenster zwischen Risikobegegnung und Warnung können umgehend und ohne Einbeziehung Dritter Infektionen aufgedeckt und somit schnellst möglich beendet werden. Am Rande sei erwähnt, dass die frühzeitige Erkennung einer Infektion auch für die betroffene Person selbst vorteilhaft ist, insbesondere wenn diese ein erhöhtes Risiko für einen schweren Verlauf der Erkrankung hat und von einer frühzeitigen gezielten Therapie profitiert.
 
@@ -134,11 +134,11 @@ Ein zentraler Indikator für die Verbreitung einer App ist die Anzahl ihrer Down
 
 Für die Bewertung des Nutzens der Corona-Warn-App ist es wichtig zu wissen, wie viele Nutzende die [Kernfunktionalität](../2021-06-15-science-blog-1/#welche-zwecke-muss-die-corona-warn-app-erf%C3%BCllen) aktiv im Einsatz haben. Wir nennen dies die aktive Nutzung im engeren Sinne. Diese Kennzahl kann durch entsprechendes Monitoring von Backend-Aktivitäten ermittelt werden. Während sich einige Länder für ein solches Monitoring entschieden, unterblieb es in Deutschland mit Verweis auf den dezentralen Ansatz der CWA. Wir geben später hierzu zwei Schätzungen an (aus der [Anzahl der Warnenden](#41-aus-der-anzahl-der-warnenden) sowie aus den [Daten der Datenspende](#42-aus-der-cwa-datenspende)).
 
-Die Zahl der erstmaligen Downloads war in den ersten Monaten nach der Einführung der CWA eine gute Annäherung, muss jedoch mit der Zeit als zunehmend schlechte Approximation gesehen werden, da die CWA vom Smartphone gelöscht werden kann oder das alte Smartphone einem neuen weicht, auf dem die CWA unter einem neuen Account erneut installiert wird. Wir geben weiter unten eine [Schätzung der aktiven Nutenden aus einer Heuristik](#43-aus-einer-heuristik) an, die diese sunehmende Abweichung zwischen Downloads und aktiven Nutzenden bzw. aktiven Apps/Endgeräten präzisiert.
+Die Zahl der erstmaligen Downloads war in den ersten Monaten nach der Einführung der CWA eine gute Annäherung, muss jedoch mit der Zeit als zunehmend schlechte Approximation gesehen werden, da die CWA vom Smartphone gelöscht werden kann oder das alte Smartphone einem neuen weicht, auf dem die CWA unter einem neuen Account erneut installiert wird. Wir geben weiter unten eine [Schätzung der aktiven Nutenden aus einer Heuristik](#43-aus-einer-heuristik) an, die diese zunehmende Abweichung zwischen Downloads und aktiven Nutzenden bzw. aktiven Apps/Endgeräten präzisiert.
 
-Hinzu kommt, dass die Corona-Warn-App im Lauf der Zeit um viele weitere Features erweitert wurde (siehe Tabelle 1). Ob Nutzende in der CWA vielleicht nur das Kontakttagebuch (ab Release 1.10), das Informationsangebot (ab Release 1.11), die Check-in-Funktion für Veranstaltungen (ab Release 2.0) oder die Zertifikatsverwaltung (ab Release 2.3) nutzen, wird ebenfalls nicht ermittelt.
+Hinzu kommt, dass die Corona-Warn-App im Lauf der Zeit um viele weitere Features erweitert wurde (siehe Tabelle 1). Ob Nutzende in der CWA vielleicht nur das Kontakt-Tagebuch (ab Release 1.10), das Informationsangebot (ab Release 1.11), die Check-in-Funktion für Veranstaltungen (ab Release 2.0) oder die Zertifikatsverwaltung (ab Release 2.3) nutzen, wird ebenfalls nicht ermittelt.
 
-Bei der aktiven Nutzung im erweiterten Sinne wird nicht unterschieden, welche Features genutzt werden. Jemand wird demnach als aktiver Nutzender gezählt, so lange ein beliebiges Feature genutzt wird (z. B. ausschließliche Nutzung des Zertifikatsnachweises), unabhängig davon, ob die Kernfunktionen genutzt werden.
+Bei der aktiven Nutzung im erweiterten Sinne wird nicht unterschieden, welche Features genutzt werden. Jemand wird demnach als aktiver Nutzender gezählt, so lange ein beliebiges Feature genutzt wird (z.&nbsp;B. ausschließliche Nutzung des Zertifikatsnachweises), unabhängig davon, ob die Kernfunktionen genutzt werden.
 
 Die vom [Apple-App-Store](#62-apple-app-store) und [Google-Play-Store](#61-google-play-store) ausgewiesenen Kennzahlen sind unterschiedlich definiert und werden unterschiedlich gemessen, betreffen oft nur näherungsweise denselben Sachverhalt und lassen sich daher nicht unmittelbar summieren oder vergleichen. Zudem ist besondere Vorsicht geboten: der Begriff aktive Nutzende wird dort gänzlich anders ([homonym](https://de.wikipedia.org/wiki/Homonym)) als in diesem Blog definiert und steht für etwas, das wir potentielle Nutzende nennen könnten. Weiterhin kommt neben der Differenzierung zwischen Nutzenden und Endgeräten noch das Konzept eines Nutzenden im Sinne eines Accounts vor, was die Dinge zusätzlich verkompliziert. Dort wo sie die Nutzung betreffen, können auch diese Kennzahlen jedenfalls nur die aktive Nutzung im erweiterten Sinne beschreiben. Wir werden die Zahlen der Stores daher auch separat beschreiben.
 
@@ -223,7 +223,7 @@ Umstellung auf G/A-ENF Version 2, Verbesserung der Risikobewertung, Verbesserung
 1.10
 </td>
 <td style="text-align:left;width: 11cm; ">
-Kontakttagebuch
+Kontakt-Tagebuch
 </td>
 </tr>
 <tr>
@@ -239,7 +239,7 @@ Kennzahlen zum Infektionsgeschehen
 1.12
 </td>
 <td style="text-align:left;width: 11cm; ">
-Erweiterung des Kontakttagebuchs (Begegnungshistorie), Unterstützung von den iPhones 5s, 6 und 6 Plus
+Erweiterung des Kontakt-Tagebuchs (Begegnungshistorie), Unterstützung von den iPhones 5s, 6 und 6 Plus
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ Freiwillige Datenspende (Privacy-Preserving-Analytics (PPA))
 1.14
 </td>
 <td style="text-align:left;width: 11cm; ">
-Erweiterung des Kontakttagebuchs (u.a. Pop-Up-Menü), Erweiterung der freiwilligen Datenspende (neue Datenpunkte)
+Erweiterung des Kontakt-Tagebuchs (u.a. Pop-Up-Menü), Erweiterung der freiwilligen Datenspende (neue Datenpunkte)
 </td>
 </tr>
 <tr>
@@ -303,7 +303,7 @@ Integration des digitalen Impfnachweises
 2.4
 </td>
 <td style="text-align:left;width: 11cm; ">
-Testzertifikate für Antigen-Schnelltests und PCR-Tests, digitales EU-Testzertifikat, Erweiterung Kontakttagebuchs (automatisierter Eintrag von Testergebnissen), Erweiterung der freiwilligen Datenspende (neue Datenpunkte)
+Testzertifikate für Antigen-Schnelltests und PCR-Tests, digitales EU-Testzertifikat, Erweiterung Kontakt-Tagebuchs (automatisierter Eintrag von Testergebnissen), Erweiterung der freiwilligen Datenspende (neue Datenpunkte)
 </td>
 </tr>
 <tr>
@@ -343,7 +343,7 @@ Standardisierte Schreibweise der Personennamen in Zertifikaten, Anpassung der EU
 2.9
 </td>
 <td style="text-align:left;width: 11cm; ">
-Stellvertreterwarnung und Auffrischungsimpfnachweis
+Stellvertreterwarnung und Auffrischimpfnachweis
 </td>
 </tr>
 <tr>
@@ -351,7 +351,7 @@ Stellvertreterwarnung und Auffrischungsimpfnachweis
 2.10
 </td>
 <td style="text-align:left;width: 11cm; ">
-Regeln und Informationen zur Auffrischungsimpfung, Zertifikat als PDF-Dokument
+Regeln und Informationen zur Auffrischimpfung, Zertifikat als PDF-Dokument
 </td>
 </tr>
 <tr>
@@ -448,18 +448,18 @@ Eine erste Möglichkeit der Schätzung der aktiven Nutzenden (im engeren Sinne) 
     <figcaption aria-hidden="true">Abb. 7: Warnende angepasst an Neuinfektionen.</figcaption>
 </figure>
 
-Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neuinfizierten angenommen. Tatsächlich hat sich dieses Verhältnis jedoch über die Zeit entwickelt. Der Unterschied am Ende ist durch den fehlenden Meldeverzug bei den Warnenden (und der Datenbereitstellung über das CWA-Ökosystem) gegenüber dem etablierten Meldesystem zu erklären. Des Weiteren sollten wir bei den Neuinfektionen die jüngeren Altersgruppen nicht berücksichtigen, da diese wegen der Altersbeschränkung (Nutzungszulassung ab 16 Jahren) nicht als Nutzende der CWA angenommen werden. Ebenso hängt der genannte Anteil — und damit die Schätzung — von der Teilungsrate ab, d.h. welcher Anteil derjenigen, die einen Test über die Corona-Warn-App registrieren, ihr Testergebnis erhalten und dieses dann auch mit anderen teilen. Diese Raten sind in der folgenden Abbildung dargestellt.
+Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neuinfizierten angenommen. Tatsächlich hat sich dieses Verhältnis jedoch über die Zeit entwickelt. Der Unterschied am Ende ist durch den fehlenden Meldeverzug bei den Warnenden (und der Datenbereitstellung über das CWA-Ökosystem) gegenüber dem etablierten Meldesystem zu erklären. Des Weiteren sollten wir bei den Neuinfektionen die jüngeren Altersgruppen nicht berücksichtigen, da diese wegen der Altersbeschränkung (Nutzungszulassung ab 16 Jahren) nicht als Nutzende der CWA angenommen werden. Ebenso hängt der genannte Anteil — und damit die Schätzung — von der Teilungsrate ab, d.&nbsp;h. welcher Anteil derjenigen, die einen Test über die Corona-Warn-App registrieren, ihr Testergebnis erhalten und dieses dann auch mit anderen teilen. Diese Raten sind in der folgenden Abbildung dargestellt.
 
 <figure>
     <img src="./plot_au_estimate_1_rates_de.png" class="figure-img img-fluid" alt="Teilungsrate und Verhältnis von Warnenden zu Neuinfektionen (unter Berücksichtigung der Altersgrenze)."/>
     <figcaption aria-hidden="true">Abb. 8: Teilungsrate und Verhältnis von Warnenden zu Neuinfektionen (unter Berücksichtigung der Altersgrenze).</figcaption>
 </figure>
 
-Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
+Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.&nbsp;h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
 
 <figure>
-    <img src="./fig9_de.png" class="figure-img img-fluid" width=100% alt="Annahme des gleichen Verhaltens von Verhältnis von Warnenden zu Neuinfektionen und Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten)Bevölkerung unter Berücksichtigung der Teilungsrate"/>
-    <figcaption aria-hidden="true">Abb. 9: Annahme des gleichen Verhaltens von Verhältnis von Warnenden zu Neuinfektionen und Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten)Bevölkerung unter Berücksichtigung der Teilungsrate</figcaption>
+    <img src="./fig9_de.png" class="figure-img img-fluid" width=100% alt="Annahme des gleichen Verhaltens von Verhältnis von Warnenden zu Neuinfektionen und Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate"/>
+    <figcaption aria-hidden="true">Abb. 9: Annahme des gleichen Verhaltens von Verhältnis von Warnenden zu Neuinfektionen und Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate</figcaption>
 </figure>
 
 können wir die Anzahl der aktiven Nutzenden bestimmen. Die folgende Abbildung zeigt den zeitlichen Verlauf dieser Schätzung.
