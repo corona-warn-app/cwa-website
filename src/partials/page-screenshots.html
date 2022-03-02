@@ -82,13 +82,18 @@
                     {{#each page-contents.ios-screenshots.sections}}
                     <div class="row">
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
+                        <ul class="list-inline">
                         {{#each images}}
-                            <div class="col-6 col-sm-4 col-md-3 mb-4">
+                            <li class="col-3 col-sm-3 col-md-3 mb-4 list-inline-item">
+                            <div>
                                 <a href="{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
-                                    <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
+                                    <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy " alt="{{{alt}}}" title="{{{alt}}}">
                                 </a>
                             </div>
+                            </li>
                         {{/each}}
+                        </ul>
+
                         <p>
                             <a href="#{{{anchor}}}">
                                 {{#if ../lang_de}}
