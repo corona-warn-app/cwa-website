@@ -877,7 +877,7 @@ Die [Heuristik](#43-aus-einer-heuristik) (mit der Wahl der oberen Schranke) ist 
 
 Die [Schätzung aus der Anzahl der Warnenden](#41-aus-der-anzahl-der-warnenden) gibt eine sehr zuverlässige Annäherung an die Anzahl der aktiven Nutzenden (im engeren Sinne). Sie ist relativ stabil und lässt Aussagen zum Konfidenzintervall zu. Aktuell erhalten wir 27 Mio. (Stand: 27. Februar 2022, KI: 21 Mio. – 33,3 Mio.).
 
-Die [Angaben aus dem CWA-Backend (TSI)](#5-kennzahlen-aus-dem-cwa-backend) sind zuverlässig, stehen aber nur für einen kurzen Zeitraum zur Verfügung. Sie stimmen sowohl mit den Kennzahlen (MAU) aus den Stores als auch mit der Schätzung aus der Anzahl der Warnenden überein. Die Daten ergeben 24,9 Mio. aktive Nutzende (zum 19. Januar 2022; bei 112 Endgeräten pro 100 Nutzende).
+Die [Angaben aus dem CWA-Backend (TSI)](#5-kennzahlen-aus-dem-cwa-backend) sind zuverlässig, stehen aber nur für einen kurzen Zeitraum zur Verfügung. Sie stimmen sowohl mit den Kennzahlen (MAU) aus den Stores als auch mit der Schätzung aus der Anzahl der Warnenden überein. Die Daten ergeben 24,9 Mio. aktive Nutzende (zum 19. Januar 2022; bei 112 Endgeräten pro 100 Nutzenden).
 
 Die Anzahl der [monatlich aktiven Nutzenden (MAU) der App-Stores](#6-kennzahlen-zur-nutzung-aus-den-stores) ist eine gute Annäherung an die Anzahl der aktiven Nutzenden (im erweiterten Sinne). Insgesamt ergeben sich 25,1 Mio. (monatlich) aktive Nutzende bzw. 28,1 Mio. (monatlich) aktive Apps/Endgeräte (Stand: 26. Februar 2022) aus den App-Stores. Aussagen zur Güte der Schätzung werden jedoch weder von Google noch von Apple gemacht.
 
