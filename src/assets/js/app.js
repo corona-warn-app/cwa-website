@@ -133,7 +133,6 @@ $(document).ready(function(){
             }
         }
         const throttledAutoHideSticky = throttle(autoHideSticky, 500)
-        document.addEventListener('scroll', throttledAutoHideSticky)
 
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
