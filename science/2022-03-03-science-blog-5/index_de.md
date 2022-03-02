@@ -46,7 +46,7 @@ Die Corona-Warn-App (CWA) ist ein wichtiger Baustein zur Pandemiebekämpfung, in
 - Nach den Daten des [Google-Play-Stores](#61-google-play-store) beläuft sich die Anzahl der aktiven Apps/Endgeräte auf 16,5 Mio., die der aktiven Nutzenden (nach Definition von Google) auf 15,2 Mio. und der (monatlich) aktiven Nutzenden auf 13,5 Mio. (Stand: 26. Februar 2022).
 - Die Anzahl der monatlich aktiven Nutzenden aus dem [Apple-App-Store](#62-apple-app-store) kann auf 11,6 Mio. hochgerechnet werden (Stand: 27. Februar 2022).
 - Damit ergeben sich insgesamt 25,1 Mio. (monatlich) aktive Nutzende bzw. 28,1 Mio. (monatlich) aktive Endgeräte (Stand: 26. Februar 2022) aus den App-Stores.
-- Eine [Auswertung von CWA-Backend-Daten](#5-kennzahlen-aus-dem-cwa-backend) über 46 Tage (vom 4. Dezember 2021 bis 19. Januar 2022) ergab 24,9 Mio. aktive Nutzende bzw. 27,9 Mio. aktive Endgeräte (zum 19. Januar 2022; bei 112 Endgeräte pro 100 Nutzende).
+- Eine [Auswertung von CWA-Backend-Daten](#5-kennzahlen-aus-dem-cwa-backend) über 46 Tage (vom 4. Dezember 2021 bis 19. Januar 2022) ergab 24,9 Mio. aktive Nutzende bzw. 27,9 Mio. aktive Endgeräte (zum 19. Januar 2022; bei 112 Endgeräten pro 100 Nutzenden).
 - Im europäischen Vergleich des Verhältnisses zwischen Downloads und aktiven Nutzenden nimmt die Corona-Warn-App damit eine Spitzenposition ein.
 
 ## 2 Die CWA erfüllt ihren Zweck und ist wirksam
