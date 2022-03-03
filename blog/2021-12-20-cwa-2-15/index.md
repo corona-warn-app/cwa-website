@@ -32,7 +32,7 @@ If they book the tickets with their smartphone, they can take a screenshot of th
 
 <br></br>
 <center> 
-<img src="./homescreen.png" title="Universal QR Code scanner" style="align: center" width=250> <img src="./import-qr-code.png" title="Scan or import of the QR Code" style="align: center" width=250> 
+<img src="./homescreen.png" title="Universal QR Code scanner" alt="Universal QR Code scanner" style="align: center" width=250> <img src="./import-qr-code.png" title="Scan or import of the QR Code" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: Universal QR code scanner, Right: Possibility to import a QR code from a photo (e.g. screenshot)</em></figcaption>
 </center>
 <br></br>
@@ -42,7 +42,7 @@ After that, they can give their consent and then select the certificate they wan
  
 <br></br>
 <center> 
-<img src="./ticket-validation(2).png" title="consent" style="align: center" width=250> <img src="./ticket-validation(3).png" title="consent" style="align: center" width=250> <img src="./ticket-validation(4).png" title="consent" style="align: center" width=250> 
+<img src="./ticket-validation(2).png" title="Consent" alt="Consent" style="align: center" width=250> <img src="./ticket-validation(3).png" title="Consent" alt="Consent" style="align: center" width=250> <img src="./ticket-validation(4).png" title="Consent" alt="Consent" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -53,7 +53,7 @@ For example, if a provider requests either a vaccination certificate, a recovery
 
 <br></br>
 <center> 
-<img src="./ticket-validation(1).png" title="Selection of certificate in the app" style="align: center" width=250> 
+<img src="./ticket-validation(1).png" title="Selection of certificate in the app" alt="Selection of certificate in the app" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -65,7 +65,7 @@ If an event organizer set the access requirement "3G" (vaccinated, recovered or 
 
 <br></br>
 <center> 
-<img src="./ticket-validation(7).png" title="Consent for temporary transmission of certificate" style="align: center" width=250> 
+<img src="./ticket-validation(7).png" title="Consent for temporary transmission of certificate" alt="Consent for temporary transmission of certificate" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -77,7 +77,7 @@ The user can then see in the app whether the certificate was successfully verifi
 
 <br></br>
 <center> 
-<img src="./ticket-validation(6).png" title="verification successful" style="align: center" width=250> <img src="./ticket-validation(5).png" title="certificate not recognized" style="align: center" width=250>
+<img src="./ticket-validation(6).png" title="Verification successful" alt="Verification successful" style="align: center" width=250> <img src="./ticket-validation(5).png" title="Certificate not recognized" alt="Certificate not recognized" style="align: center" width=250>
 </center>
 <br></br>
 
@@ -93,8 +93,8 @@ In addition, with version 2.15, the project team has adapted the guidelines unde
 
 <br></br>
 <center> 
-<img src="./red-tile.png" title="guidelines red tile" style="align: center" width=250> 
-<img src="./guidelines(1).png" title="guidelines red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="guidelines red tile" style="align: center" width=250> 
+<img src="./red-tile.png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> 
+<img src="./guidelines(1).png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Guidelines on red "Increased Risk" notification</em></figcaption>
 </center>
 <br></br>

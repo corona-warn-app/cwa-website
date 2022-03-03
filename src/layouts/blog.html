@@ -12,11 +12,11 @@
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
     {{/if}}
-    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:title" content="{{#if lang_de}}Open-Source-Projekt Corona-Warn-App – {{else}}Open-Source Project Corona-Warn-App – {{/if}}{{page-title}}" />
     <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
     <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
-    <title>{{page-title}}</title>
+    <title>{{#if lang_de}}Open-Source-Projekt Corona-Warn-App – {{else}}Open-Source Project Corona-Warn-App – {{/if}}{{page-title}}</title>
   </head>
   <body class="blog-detail {{#unless @root.page-name}}{{#ifpage
     'index'}}page-home{{/ifpage}}{{/unless}}{{#if
@@ -25,21 +25,10 @@
     flattened page is created. --}}
 
     {{> header}}
-
-    <section>
-      <div class="container">
-        <div class="container-inner contents-normal">
-          {{#if lang_de}}
-          {{> button-back-component
-          button=blog.de.backToIndexButton}}
-          {{else}}
-          {{> button-back-component
-          button=blog.en.backToIndexButton}}
-          {{/if}}
-          <div class="blog-markdown-container">
-            {{> body}} <!-- this line should be on the very left -->
-          </div>
-          <div class="bottom-back-to-blog">
+    <main class="main-content" role="main">
+      <section>
+        <div class="container">
+          <div class="container-inner contents-normal">
             {{#if lang_de}}
             {{> button-back-component
             button=blog.de.backToIndexButton}}
@@ -47,10 +36,22 @@
             {{> button-back-component
             button=blog.en.backToIndexButton}}
             {{/if}}
+            <div class="blog-markdown-container">
+              {{> body}} <!-- this line should be on the very left -->
+            </div>
+            <div class="bottom-back-to-blog">
+              {{#if lang_de}}
+              {{> button-back-component
+              button=blog.de.backToIndexButton}}
+              {{else}}
+              {{> button-back-component
+              button=blog.en.backToIndexButton}}
+              {{/if}}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     {{#unless lang_de}}
     {{> footer language=global.lang.en}}
     {{/unless}}

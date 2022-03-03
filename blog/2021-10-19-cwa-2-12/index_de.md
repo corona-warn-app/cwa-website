@@ -29,12 +29,12 @@ In diesem Zuge hat das Projektteam auch die **Symbole auf der Registerkarte** an
 
 
 <br></br>
-<center> <img src="./tab-bar.png" style="align: center"></center>
+<center> <img src="./tab-bar.png" title="Aktuelle Registerkarte" alt="Aktuelle Registerkarte" style="align: center"></center>
 <br></br>
 <center> Aktuelle Registerkarte </center>
 
 <br></br>
-<center> <img src="./tab-bar-alt.png" title="Zertifikat gültig" style="align: center"></center>
+<center> <img src="./tab-bar-alt.png" title="Alte Registerkarte" alt="Alte Registerkarte" style="align: center"></center>
 <br></br>
 <center> Alte Registerkarte </center>
 <br></br>
@@ -42,7 +42,7 @@ In diesem Zuge hat das Projektteam auch die **Symbole auf der Registerkarte** an
 Damit Nutzer\*innen sich in der App auch weiterhin über **alle wichtigen Kennzahlen des Pandemiegeschehens** informieren können, hat das Projektteam den Statistikbereich erweitert. Nutzer\*innen finden dort nun zusätzlich die 7-Tage-Inzidenz der Hospitalisierung und die Zahl der COVID-19-Erkrankten auf Intensivstationen.
 
 <br></br>
-<center> <img src="./statistiken(1).png" title="Statistik 7-Tage-Inzidenz Hospitalisierung" style="align: center">  <img src="./statistiken(2).png" title="Statistik COVID-Erkrankte auf Intensivstationen" style="align: center"></center>
+<center> <img src="./statistiken(1).png" title="Statistik 7-Tage-Inzidenz Hospitalisierung" alt="Statistik 7-Tage-Inzidenz Hospitalisierung" style="align: center">  <img src="./statistiken(2).png" title="Statistik COVID-Erkrankte auf Intensivstationen" alt="Statistik COVID-Erkrankte auf Intensivstationen" style="align: center"></center>
 <br></br>
 
 Die **7-Tage-Inzidenz der Hospitalisierung** bezieht sich auf die Zahl der Menschen, die wegen einer COVID-19-Diagnose in eine Klinik kommen. Sie bildet die übermittelten Fälle über eine Woche pro 100.000 Einwohner\*innen ab. Die Zahl der **COVID-19-Erkrankten auf Intensivstationen** zeigt an, welchen Anteil COVID-Patient\*innen bei der Belegung der Intensivbetten in Deutschland ausmachen.
