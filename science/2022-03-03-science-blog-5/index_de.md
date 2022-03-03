@@ -142,6 +142,8 @@ Bei der aktiven Nutzung im erweiterten Sinne wird nicht unterschieden, welche Fe
 
 Die vom [Apple-App-Store](#62-apple-app-store) und [Google-Play-Store](#61-google-play-store) ausgewiesenen Kennzahlen sind unterschiedlich definiert und werden unterschiedlich gemessen, betreffen oft nur näherungsweise denselben Sachverhalt und lassen sich daher nicht unmittelbar summieren oder vergleichen. Zudem ist besondere Vorsicht geboten: der Begriff aktive Nutzende wird dort gänzlich anders ([homonym](https://de.wikipedia.org/wiki/Homonym)) als in diesem Blog definiert und steht für etwas, das wir potentielle Nutzende nennen könnten. Weiterhin kommt neben der Differenzierung zwischen Nutzenden und Endgeräten noch das Konzept eines Nutzenden im Sinne eines Accounts vor, was die Dinge zusätzlich verkompliziert. Dort wo sie die Nutzung betreffen, können auch diese Kennzahlen jedenfalls nur die aktive Nutzung im erweiterten Sinne beschreiben. Wir werden die Zahlen der Stores daher auch separat beschreiben.
 
+<details>
+<summary>Tab. 1: Features der CWA</summary>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -419,10 +421,9 @@ Aktualisierung und Differenzierung der Statusnachweise, Überarbeitung der Darst
 </td>
 </tr>
 </tbody>
-<caption>
-Tab. 1: Features der CWA
-</caption>
 </table>
+</details>
+<br/>
 
 ### 3.2 Nutzung der Kernfunktionalität
 
@@ -458,7 +459,7 @@ Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neu
 Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.&nbsp;h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
 
 <figure>
-    <img src="./math1_de.png" class="figure-img img-fluid" width=100% alt="Mathematische Formel"/>
+    <center><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></center>
 </figure>
 
 können wir die Anzahl der aktiven Nutzenden bestimmen. Die folgende Abbildung zeigt den zeitlichen Verlauf dieser Schätzung.
@@ -475,7 +476,7 @@ Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrun
 Gegenwärtig spenden täglich mehr als 16 Mio. Nutzende ihre Daten (Stand: 28. Februar 2022). Aus dem im [vergangenen Blog-Beitrag](../2021-10-15-science-blog-4/#66-sch%C3%A4tzung-des-anteils-der-datenspendenden) geschätzten (und aktualisierten) Anteil der Datenspendenden können wir zusammen mit der Anzahl der CWA-Datenspenden die tägliche Anzahl der aktiven Nutzenden (im engeren Sinne) schätzen: 
 
 <figure>
-    <img src="./math2_de.png" class="figure-img img-fluid" width=100% alt="Mathematische Formel"/>
+    <center><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></center>
 </figure>
 
 Hierbei ist zu beachten, dass die Datenspenden von Geräten kommen, die Testergebnisse aber von Nutzenden. Für die letzten 30 Tage erhalten wir im Mittel 31 Mio. aktive Nutzende der Corona-Warn-App ([KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6).
@@ -528,6 +529,8 @@ Einige Kennzahlen werden auf der Grundlage der Daten von Nutzern berechnet, die 
 
 Im Google-Play-Store können verschiedenen Kennzahlen zur Installation abgerufen werden. Insbesondere die Anzahl der aktiven Geräte, der aktiven Nutzenden und der monatlich aktiven Nutzenden (Monthly Active Users (MAU)) sind für uns interessant.
 
+<details>
+<summary>Tab. 2: Kennzahlen zu Installationen (Google).</summary>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -725,10 +728,9 @@ Die Anzahl der Nutzenden, die den Store-Eintrag besucht haben und bei denen die 
 </td>
 </tr>
 </tbody>
-<caption>
-Tab. 2: Kennzahlen zu Installationen (Google).
-</caption>
 </table>
+</details>
+<br/>
 
 Die folgende Abbildung enthält die wesentlichen Kennzahlen zum Download und Nutzungsverhalten.
 
@@ -749,6 +751,8 @@ Wir geben nun eine Übersicht zu den [Kennzahlen im Apple-App-Store](https://hel
 
 Im Apple-App-Store können ebenfalls verschiedene Kennzahlen zur Installation abgerufen werden. Insbesondere die Anzahl der aktiven Geräte und der monatlich aktiven Nutzenden (MAU); aktiv in den letzten 30 Tagen) sind für uns interessant.
 
+<details>
+<summary>Tab. 3: Kennzahlen zu Downloads und Nutzung (Apple)</summary>
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -827,14 +831,6 @@ Die Gesamtzahl der Abstürze auf Geräten mit iOS 8 oder tvOS 9 oder höher.
 </tr>
 <tr>
 <td style="text-align:left;width: 3cm; ">
--keine Angabe-
-</td>
-<td style="text-align:left;width: 11cm; ">
-Holen Sie sich detaillierte Absturzprotokolle und Absturzberichte in Xcode, z. B. eindeutige Gesamtzahlen für jede Art von Absturz und die Anzahl der Benutzenden, die davon betroffen waren. Weitere Informationen findet man unter „Absturzberichte in der Xcode-Hilfe anzeigen“.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 3cm; ">
 Löschungen
 </td>
 <td style="text-align:left;width: 11cm; ">
@@ -842,11 +838,9 @@ Die Anzahl, wie oft die App auf Geräten mit iOS 12.3 oder tvOS 9 oder höher vo
 </td>
 </tr>
 </tbody>
-<caption>
-Tab. 3: Kennzahlen zu Downloads und Nutzung (Apple)
-</caption>
 </table>
-
+</details>
+<br/>
 Die folgende Abbildung enthält die wesentlichen Kennzahlen zum Download und Nutzungsverhalten.
 
 <figure>
