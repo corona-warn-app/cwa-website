@@ -81,7 +81,7 @@ In der folgenden Abbildung ist der zeitliche Verlauf der über die CWA Warnenden
 
 Der kurze Einbruch der Anzahl von rot gewarnten Personen Mitte August wurde durch einen vergleichbaren Einbruch der CWA-Datenspende-Daten aufgrund technischer Probleme verursacht (siehe auch [Blog 4, 4.3](../2021-10-15-science-blog-4/#43-anzahl-der-spenden-im-zeitlichen-verlauf-nach-version-der-cwa)).
 
-Seit dem 5. März 2021 (für Vergleiche mit Daten der CWA-Datenspende müssen wir den Zeitpunkt berücksichtigen, seit dem diese Daten zur Verfügung stehen) haben 2.572.787 Personen über die CWA andere gewarnt, woraus wir auf etwa 19 (rot) gewarnte Personen pro warnender Person schließen können (Stand: 28. Februar 2022). Für Warnungen ohne ein erhöhtes Risiko ergibt sich ein mittlerer Wert von 12 (grün) gewarnten Personen pro warnender Person. In den letzten 30 Tagen lagen diese Verhältnisse bei 23 bzw. 13. In der folgenden Abbildung ist der zeitliche Verlauf von rot und grün gewarnten Personen pro warnende Person angegeben.
+Seit dem 5. März 2021 (für Vergleiche mit Daten der CWA-Datenspende müssen wir den Zeitpunkt berücksichtigen, seitdem diese Daten zur Verfügung stehen) haben 2.572.787 Personen über die CWA andere gewarnt, woraus wir auf etwa 19 (rot) gewarnte Personen pro warnender Person schließen können (Stand: 28. Februar 2022). Für Warnungen ohne ein erhöhtes Risiko ergibt sich ein mittlerer Wert von 12 (grün) gewarnten Personen pro warnender Person. In den letzten 30 Tagen lagen diese Verhältnisse bei 23 bzw. 13. In der folgenden Abbildung ist der zeitliche Verlauf von rot und grün gewarnten Personen pro warnende Person angegeben.
 
 <figure>
     <img src="./ppa_estimate_ppa_warned_persons_plot_de.png" class="figure-img img-fluid" alt="Anzahl rot und grün gewarnter Personen pro warnende Person im zeitlichen Verlauf."/>
@@ -122,7 +122,7 @@ Die Bedeutung der CWA lässt sich auch im aktuellen Pandemiegeschehen illustrier
 
 Eine genaue Bezifferung der beendeten Infektionsketten bzw. der vermiedenen Fälle ist nur im Rahmen einer Simulation oder Modellierung möglich. Dabei muss man die tatsächliche Situation mit einer virtuellen (hypothetischen) vergleichen, in der es z.&nbsp;B. keine CWA gibt. Dies ist für einen zukünftigen Blog-Beitrag geplant.
 
-Zusammenfassend zeigt die aktuelle Auswertung, dass die CWA eine bedeutende Rolle bei der Eindämmung der Pandemie spielt. Durch die direkte Rückmeldung von Testergebnissen in die CWA und das kurze Zeitfenster zwischen Risikobegegnung und Warnung können umgehend und ohne Einbeziehung Dritter Infektionen aufgedeckt und somit schnellst möglich beendet werden. Am Rande sei erwähnt, dass die frühzeitige Erkennung einer Infektion auch für die betroffene Person selbst vorteilhaft ist, insbesondere wenn diese ein erhöhtes Risiko für einen schweren Verlauf der Erkrankung hat und von einer frühzeitigen gezielten Therapie profitiert.
+Zusammenfassend zeigt die aktuelle Auswertung, dass die CWA eine bedeutende Rolle bei der Eindämmung der Pandemie spielt. Durch die direkte Rückmeldung von Testergebnissen in die CWA und das kurze Zeitfenster zwischen Risikobegegnung und Warnung können umgehend und ohne Einbeziehung Dritter Infektionen aufgedeckt und somit schnellstmöglich beendet werden. Am Rande sei erwähnt, dass die frühzeitige Erkennung einer Infektion auch für die betroffene Person selbst vorteilhaft ist, insbesondere wenn diese ein erhöhtes Risiko für einen schweren Verlauf der Erkrankung hat und von einer frühzeitigen gezielten Therapie profitiert.
 
 ## 3 Downloads und Nutzung der Corona-Warn-App
 
@@ -458,15 +458,14 @@ Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neu
 Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.&nbsp;h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
 
 <figure>
-    <img src="./fig9_de.png" class="figure-img img-fluid" width=100% alt="Annahme des gleichen Verhaltens von Verhältnis von Warnenden zu Neuinfektionen und Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate"/>
-    <figcaption aria-hidden="true">Abb. 9: Annahme des gleichen Verhaltens von Verhältnis von Warnenden zu Neuinfektionen und Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate</figcaption>
+    <img src="./math1_de.png" class="figure-img img-fluid" width=100% alt="Mathematische Formel"/>
 </figure>
 
 können wir die Anzahl der aktiven Nutzenden bestimmen. Die folgende Abbildung zeigt den zeitlichen Verlauf dieser Schätzung.
 
 <figure>
     <img src="./plot_au_estimate_1_estimate_de.png" class="figure-img img-fluid" alt="Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden."/>
-    <figcaption aria-hidden="true">Abb. 10: Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden.</figcaption>
+    <figcaption aria-hidden="true">Abb. 9: Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden.</figcaption>
 </figure>
 
 Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrund des Meldeverzugs bei den Neuinfektionen: 25. Januar 2022 – 23. Februar 2022) erhalten wir damit 27 Mio. (KI: 21 Mio. – 33,3 Mio.).
@@ -476,8 +475,7 @@ Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrun
 Gegenwärtig spenden täglich mehr als 16 Mio. Nutzende ihre Daten (Stand: 28. Februar 2022). Aus dem im [vergangenen Blog-Beitrag](../2021-10-15-science-blog-4/#66-sch%C3%A4tzung-des-anteils-der-datenspendenden) geschätzten (und aktualisierten) Anteil der Datenspendenden können wir zusammen mit der Anzahl der CWA-Datenspenden die tägliche Anzahl der aktiven Nutzenden (im engeren Sinne) schätzen: 
 
 <figure>
-    <img src="./fig11_de.png" class="figure-img img-fluid" width=100% alt="Schätzung der täglichen Anzahl an aktiven Nutzenden (im engeren Sinne)"/>
-    <figcaption aria-hidden="true">Abb. 11: Schätzung der täglichen Anzahl an aktiven Nutzenden (im engeren Sinne)</figcaption>
+    <img src="./math2_de.png" class="figure-img img-fluid" width=100% alt="Mathematische Formel"/>
 </figure>
 
 Hierbei ist zu beachten, dass die Datenspenden von Geräten kommen, die Testergebnisse aber von Nutzenden. Für die letzten 30 Tage erhalten wir im Mittel 31 Mio. aktive Nutzende der Corona-Warn-App ([KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6).
@@ -486,7 +484,7 @@ Die folgende Abbildung zeigt die entsprechenden täglichen Werte.
 
 <figure>
     <img src="./ppa_estimate_ppa_active_user_estimate_plot_de.png" class="figure-img img-fluid" alt="Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden."/>
-    <figcaption aria-hidden="true">Abb. 12: Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden.</figcaption>
+    <figcaption aria-hidden="true">Abb. 10: Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden.</figcaption>
 </figure>
 
 ### 4.3 Aus einer Heuristik
@@ -499,7 +497,7 @@ In der folgenden Abbildung vergleichen wir die Downloadzahlen und die Schätzung
 
 <figure>
     <img src="./tsi_active_users_plot_de.png" class="figure-img img-fluid" alt="Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp."/>
-    <figcaption aria-hidden="true">Abb. 13: Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp.</figcaption>
+    <figcaption aria-hidden="true">Abb. 11: Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp.</figcaption>
 </figure>
 
 ## 5 Kennzahlen aus dem CWA-Backend
@@ -508,14 +506,14 @@ Eine weitere Möglichkeit zur Abschätzung der aktiven Apps/Endgeräte (im enger
 
 <figure>
     <img src="./tsi_ad_plot_de.png" class="figure-img img-fluid" alt="Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI)."/>
-    <figcaption aria-hidden="true">Abb. 14: Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI).</figcaption>
+    <figcaption aria-hidden="true">Abb. 12: Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI).</figcaption>
 </figure>
 
 Die Daten gestatten auch einen Blick auf den zeitlichen Verzug beim Abruf der Tagesschlüssel-Dateien. Wir sehen auch hier (vgl. [Nutzung der Kernfunktionalität](#32-nutzung-der-kernfunktionalit%C3%A4t)), dass nur ein geringer Anteil der aktiven Endgeräte die Risiko-Ermittlung später als gleich am Tag der Bereitstellung durchführt.
 
 <figure>
     <img src="./tsi_ad_plot2_de.png" class="figure-img img-fluid" alt="Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI)."/>
-    <figcaption aria-hidden="true">Abb. 15: Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI).</figcaption>
+    <figcaption aria-hidden="true">Abb. 13: Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI).</figcaption>
 </figure>
 
 ## 6 Kennzahlen zur Nutzung aus den Stores
@@ -736,7 +734,7 @@ Die folgende Abbildung enthält die wesentlichen Kennzahlen zum Download und Nut
 
 <figure>
     <img src="./google_installs_overview_plotly_de.png" class="figure-img img-fluid" width=100% alt="Kennzahlen zur Installation (Google)."/>
-    <figcaption aria-hidden="true">Abb. 16: Kennzahlen zur Installation (Google).</figcaption>
+    <figcaption aria-hidden="true">Abb. 14: Kennzahlen zur Installation (Google).</figcaption>
 </figure>
 
 Zu beachten ist hierbei, dass die Anzahl der monatlich aktiven Nutzenden erst seit dem 6. Oktober 2020 zur Verfügung steht und nicht tagesaktuell, sondern mit einer Verzögerung von einigen Tagen, bereitgestellt wird.
@@ -853,7 +851,7 @@ Die folgende Abbildung enthält die wesentlichen Kennzahlen zum Download und Nut
 
 <figure>
     <img src="./apple_installs_overview_plotly_de.png" class="figure-img img-fluid" width=100% alt="Angaben zur Installation (Apple)."/>
-    <figcaption aria-hidden="true">Abb. 17: Angaben zur Installation (Apple).</figcaption>
+    <figcaption aria-hidden="true">Abb. 15: Angaben zur Installation (Apple).</figcaption>
 </figure>
 
 Die Anzahl der monatlich aktiven Nutzenden kann auf 11,6 Mio. hochgerechnet werden (Stand: 27. Februar 2022). Hierbei wurde die Opt-In-Rate (die Rate der Nutzenden, die zugestimmt haben, App-Entwicklern ihre Diagnose- und Nutzungsinformationen zur Verfügung zu stellen) von 23% benutzt, deren Schwankung um diesen Mittelwert im vergangenen Jahr sehr gering war.
@@ -868,7 +866,7 @@ Für die Frage nach den aktiven Nutzenden (im erweiterten Sinne) scheint die Anz
 
 <figure>
     <img src="./google_estimates_plotly_de.png" class="figure-img img-fluid" width=100% alt="Verschiedene Schätzungen von aktiven Nutzenden (im erweiterten Sinne)."/>
-    <figcaption aria-hidden="true">Abb. 18: Verschiedene Schätzungen von aktiven Nutzenden (im erweiterten Sinne).</figcaption>
+    <figcaption aria-hidden="true">Abb. 16: Verschiedene Schätzungen von aktiven Nutzenden (im erweiterten Sinne).</figcaption>
 </figure>
 
 Die [Schätzung aus der CWA-Datenspende (PPA)](#42-aus-der-cwa-datenspende) (aktuell 1; Stand: 28. Februar 2022) schwankt deutlich und ist damit nur mit großer Vorsicht zu genießen. Hier wurde aus dem Anteil der Datenspendenden auf die aktiven Nutzenden geschlossen. Aktuell ergeben sich 31 Mio. aktive Nutzende (Stand: 27. Februar 2022, [KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6 Mio.).
