@@ -305,17 +305,24 @@ $(document).ready(function(){
 
     // remove any hashes when submitting the search form
     if (document.querySelector(".page-faq")) {
+        const searchForm = document.getElementById("faq-search-form");
+        const { hash } = window.location;
+
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-search-form").removeClass("w-50").addClass("w-100");
             $("#faq-search").removeClass("w-50").addClass("w-100").removeClass("mr-3");
             $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
             $("#faq-submit").addClass("w-100");
         }
-        const searchForm = document.getElementById("faq-search-form");
+        
         if(searchForm !== null){
             searchForm.addEventListener("submit", (event) => {
                 history.pushState("", document.title, 'results/' + window.location.search);
             })
+        }
+
+        if (hash) {
+            window.location.href = window.location.href.replace("#", "results/#");
         }
     }
 
@@ -377,11 +384,12 @@ $(document).ready(function(){
                     } 
                     $(document).scrollTop( $(`${hash}`).offset().top );
                 } else {
-                    //Filter by topic and section
-                    if($(`${hash}`).hasClass("section-container")) {
-                        $(`.section-item a[href="${hash}"]`).click();
+                    const elem = $(`h3${hash}`);
+                    if($(elem).length) {
+                        elem.click();
+                        $(document).scrollTop( $(elem).offset().top );
                     }
-                    $(window).scrollTop(0);
+                    history.replaceState({}, document.title, ".");
                 }
             },250)
         }
