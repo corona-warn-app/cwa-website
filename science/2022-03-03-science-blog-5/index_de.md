@@ -16,7 +16,7 @@ Die Corona-Warn-App (CWA) ist ein wichtiger Baustein zur Pandemiebekämpfung, in
 2. [Die CWA erfüllt Ihren Zweck und ist wirksam](#2-die-cwa-erfüllt-ihren-zweck-und-ist-wirksam)
     1. [Zweck 1 – Abruf des Testergebnisses](#21-zweck-1--abruf-des-testergebnisses)
     2. [Zweck 2 – Warnung Anderer](#22-zweck-2--warnung-anderer)
-    3. [Zweck 3 – Risikoermittlung](#23-zweck-3--warnung-anderer)
+    3. [Zweck 3 – Risikoermittlung](#23-zweck-3--risikoermittlung)
 3. [Downloads und Nutzung der Corona-Warn-App](#3-downloads-und-nutzung-der-corona-warn-app)
     1. [Was sind aktive Nutzende?](#31-was-sind-aktive-nutzende)
     2. [Nutzung der Kernfunktionalität](#32-nutzung-der-kernfunktionalität)
@@ -885,7 +885,7 @@ Insgesamt liegen alle Schätzungen in einem ähnlichen Bereich und ergeben das p
 
 ## 8 Fazit 
 
-Die Corona-Warn-App wird von einem guten Drittel (33,8%) der Bevölkerung bzw. knapp der Hälfte (46,8%) der angedachten Bevölkerung aktiv genutzt. Die Bereitstellung von Testergebnissen (PCR-Tests und Antigen-Schnelltests) erfolgt umfangreich und zügig ([Zweck 1](#21-zweck-1--abruf-des-testergebnisses)). Die Warnungen durch die CWA erfolgt ebenfalls umfangreich, angemessen und zeitnah ([Zweck 2](#21-zweck-1--abruf-des-testergebnisses)). Zudem warnt die CWA auch mit hoher Präzision ([Zweck 3](#23-zweck-3--warnung-anderer)).
+Die Corona-Warn-App wird von einem guten Drittel (33,8%) der Bevölkerung bzw. knapp der Hälfte (46,8%) der angedachten Bevölkerung aktiv genutzt. Die Bereitstellung von Testergebnissen (PCR-Tests und Antigen-Schnelltests) erfolgt umfangreich und zügig ([Zweck 1](#21-zweck-1--abruf-des-testergebnisses)). Die Warnungen durch die CWA erfolgt ebenfalls umfangreich, angemessen und zeitnah ([Zweck 2](#21-zweck-1--abruf-des-testergebnisses)). Zudem warnt die CWA auch mit hoher Präzision ([Zweck 3](#23-zweck-3--risikoermittlung)).
 
 Die zahlreichen Feature-Erweiterungen, insbesondere die Unterstützung des europäischen Corona-App-Gateways, die freiwillige Symptomerfassung, die verbesserte Risikobewertung (auch mit der Umstellung auf des ENF-Framework 2.0), die Eventregistrierung (Check-In) und besonders die Möglichkeit der Erfassung des digitalen Impfnachweises, haben die Nutzung der Corona-Warn-App positiv beeinflusst.
 
