@@ -3,7 +3,7 @@ page-title: "Was tun bei einer roten Kachel?"
 page-description: "Was tun bei einer roten Kachel?"
 page-name: cwa-red-tile-guidance
 page-name_de: cwa-red-tile-guidance
-author: CWA Team
+author: CWA-Team
 layout: blog
 ---
 
@@ -45,7 +45,7 @@ Beachten Sie: Symptome können **auch bei geimpften und bei genesenen Personen**
 
 <br></br>
 <center> 
-<img src="./rote-kachel(3).png" title="handlungsempfehlungen bei roter Kachel" style="align: center" width=250> <img src="./rote-kachel(4).png" title="handlungsempfehlungen bei roter Kachel" style="align: center" width=250> 
+<img src="./rote-kachel(3).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250> <img src="./rote-kachel(4).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Handlungsempfehlungen bei roter Kachel in der Corona-Warn-App</em></figcaption>
 </center>
 <br></br>
@@ -66,7 +66,7 @@ Ein **positiver Schnelltest** muss immer von einem PCR-Test bestätigt werden. S
 
 <br></br>
 <center> 
-<img src="./schnelltest-positiv.png" title="positiver Schnelltest" style="align: center" width=250> 
+<img src="./schnelltest-positiv.png" title="positiver Schnelltest" alt="positiver Schnelltest" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -74,7 +74,7 @@ Im Falle eines **positiven PCR-Tests** kontaktieren Sie Ihr zuständiges Gesundh
 
 <br></br>
 <center> 
-<img src="./positiver-test.png" title="positiver PCR-Test" style="align: center" width=250> 
+<img src="./positiver-test.png" title="positiver PCR-Test" alt="positiver PCR-Test" style="align: center" width=250> 
 </center>
 <br></br>
 

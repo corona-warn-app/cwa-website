@@ -19,7 +19,7 @@ Das Update steht Nutzer\*innen über die nächsten 48 Stunden zur Verfügung.
 Mit Version 2.8 der Corona-Warn-App werden Namen in Zertifikaten (Impf-, Genesenen- und Testzertifikaten) zusätzlich zur länderspezifischen Schreibweise auch in standardisierter, lateinischer Schreibweise angezeigt. So können sie überall gelesen werden. 
 
 <br></br>
-<center> <img src="./standard-name.png" title="Name in standardisierter Schreibweise" style="align: center"> </center>
+<center> <img src="./standard-name.png" title="Name in standardisierter Schreibweise" alt="Name in standardisierter Schreibweise" style="align: center"> </center>
 <br></br>
 
 Des Weiteren hat das Projektteam die **EU-Zertifikatsprüfung** angepasst. Hat ein Land **keine Einreiseregeln** zur Verfügung gestellt, die die Corona-Warn-App zur Überprüfung heranziehen kann, heißt es in der Zertifikatsprüfung nun **„Zertifikat nicht prüfbar“**. 
@@ -31,12 +31,12 @@ Zuvor hat die App in diesem Fall angezeigt, dass das Zertifikat im gewählten La
 Nutzer\*innen können mit der Zertifikatsprüfung seit [Version 2.6](/de/blog/2021-07-28-cwa-version-2-6/) vor einer Reise prüfen, ob ihre Zertifikate in dem Land, in das sie reisen, gültig sind. 
 
 <br></br>
-<center> <img src="./gültigkeit-neu-de.png" title="Zertifikat nicht prüfbar" style="align: center"></center>
+<center> <img src="./gültigkeit-neu-de.png" title="Zertifikat nicht prüfbar" alt="Zertifikat nicht prüfbar" style="align: center"></center>
 <br></br>
 <center> Aktuell </center>
 
 <br></br>
-<center> <img src="./gültigkeit-alt-de.png" title="Zertifikat gültig" style="align: center"></center>
+<center> <img src="./gültigkeit-alt-de.png" title="Zertifikat gültig" alt="Zertifikat gültig" style="align: center"></center>
 <br></br>
 <center> Vorher </center>
 <br></br>

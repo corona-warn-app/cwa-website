@@ -3,7 +3,7 @@ page-title: "CWA 2.18: Verbesserung der Anzeige des G-Status in der Corona-Warn-
 page-description: "CWA 2.18: Verbesserung der Anzeige des G-Status in der Corona-Warn-App"
 page-name: cwa-2-18
 page-name_de: cwa-2-18
-author: CWA Team, 14:20 Uhr
+author: CWA-Team, 14:20 Uhr
 layout: blog
 ---
 

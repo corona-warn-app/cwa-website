@@ -17,7 +17,7 @@ A “red warning” does not necessarily mean that you have been infected with C
 
 <br></br>
 <center> 
-<img src="./red-tile.png" title="Red tile" style="align: center" width=250> 
+<img src="./red-tile.png" title="Red tile" alt="Red tile" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -47,7 +47,7 @@ Pay attention to symptoms for these 14 days. They often occur 4 to 6 days after 
 
 <br></br>
 <center> 
-<img src="./guidelines(1).png" title="guidelines in case of a red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="guidelines in case of a red tile" style="align: center" width=250> 
+<img src="./guidelines(1).png" title="Guidelines in case of a red tile" alt="Guidelines in case of a red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="Guidelines in case of a red tile" alt="Guidelines in case of a red tile" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Guidelines if you see a red tile in the Corona-Warn-App.</em></figcaption>
 </center>
 <br></br>
@@ -69,7 +69,7 @@ A **positive rapid test** must always be confirmed by a PCR test. So, if your ra
 
 <br></br>
 <center> 
-<img src="./positive-rapid-test.png" title="positive rapid test" style="align: center" width=250> 
+<img src="./positive-rapid-test.png" title="positive rapid test" alt="positive rapid test" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -77,7 +77,7 @@ If your **PCR test is positive**, contact your responsible public health authori
 
 <br></br>
 <center> 
-<img src="./positive-pcr-test.png" title="positive PCR test" style="align: center" width=250> 
+<img src="./positive-pcr-test.png" title="positive PCR test" alt="positive PCR test" style="align: center" width=250> 
 </center>
 <br></br>
 

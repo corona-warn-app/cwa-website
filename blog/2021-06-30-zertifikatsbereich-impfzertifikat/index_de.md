@@ -14,7 +14,7 @@ Seit dem Update auf Version 2.4 der Corona-Warn-App gibt es den neuen **Bereich 
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <img src="./vollständiger-impfschutz-homescreen.jpg" title="Digitales Impfzertifikat vorher" style="align: center" height=600px>
+                <img src="./vollständiger-impfschutz-homescreen.jpg" title="Digitales Impfzertifikat vorher" alt="Digitales Impfzertifikat vorher" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Vorher (Version 2.3)</em>
                 </figcaption>
@@ -22,7 +22,7 @@ Seit dem Update auf Version 2.4 der Corona-Warn-App gibt es den neuen **Bereich 
         </div>
         <div class="col-md-6">
             <figure>
-                <img src="./zertifikate-impfzertifikat.png" title="Digitales Impfzertifikat aktuell" style="align: center" height=600px>
+                <img src="./zertifikate-impfzertifikat.png" title="Digitales Impfzertifikat aktuell" alt="Digitales Impfzertifikat aktuell" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Aktuell (ab Version 2.4)</em>
                 </figcaption>
