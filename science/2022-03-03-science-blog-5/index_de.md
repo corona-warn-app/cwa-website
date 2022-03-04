@@ -3,7 +3,7 @@ page-title: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
 page-description: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
 page-name: science-blog-5
 page-name_de: science-blog-5
-author: CWA Team
+author: CWA-Team
 date: "2022-03-03"
 layout: science
 ---
@@ -141,6 +141,8 @@ Hinzu kommt, dass die Corona-Warn-App im Lauf der Zeit um viele weitere Features
 Bei der aktiven Nutzung im erweiterten Sinne wird nicht unterschieden, welche Features genutzt werden. Jemand wird demnach als aktiver Nutzender gezählt, so lange ein beliebiges Feature genutzt wird (z.&nbsp;B. ausschließliche Nutzung des Zertifikatsnachweises), unabhängig davon, ob die Kernfunktionen genutzt werden.
 
 Die vom [Apple-App-Store](#62-apple-app-store) und [Google-Play-Store](#61-google-play-store) ausgewiesenen Kennzahlen sind unterschiedlich definiert und werden unterschiedlich gemessen, betreffen oft nur näherungsweise denselben Sachverhalt und lassen sich daher nicht unmittelbar summieren oder vergleichen. Zudem ist besondere Vorsicht geboten: der Begriff aktive Nutzende wird dort gänzlich anders ([homonym](https://de.wikipedia.org/wiki/Homonym)) als in diesem Blog definiert und steht für etwas, das wir potentielle Nutzende nennen könnten. Weiterhin kommt neben der Differenzierung zwischen Nutzenden und Endgeräten noch das Konzept eines Nutzenden im Sinne eines Accounts vor, was die Dinge zusätzlich verkompliziert. Dort wo sie die Nutzung betreffen, können auch diese Kennzahlen jedenfalls nur die aktive Nutzung im erweiterten Sinne beschreiben. Wir werden die Zahlen der Stores daher auch separat beschreiben.
+
+Die nachfolgende Tabelle gibt eine Übersicht über die Versionsgeschichte der CWA. Sie beinhaltet eine Aufzählung der Versionsnummer mit den jeweilig implementierten Features.
 
 <details>
 <summary>Tab. 1: Features der CWA</summary>
