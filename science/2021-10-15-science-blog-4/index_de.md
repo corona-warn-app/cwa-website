@@ -3,7 +3,7 @@ page-title: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
 page-description: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
 page-name: science-blog-4
 page-name_de: science-blog-4
-author: CWA Team
+author: CWA-Team
 date: "2021-10-15"
 layout: science
 ---
