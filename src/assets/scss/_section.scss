@@ -70,10 +70,10 @@ section {
                 }
             }
             .slick-arrow {
-                &,
+                background-color: $body-bg;
                 &:hover,
                 &:focus {
-                    background-color: $body-bg;
+                    background-color: $gray-300;
                     box-shadow: $box-shadow;
                 }
             }
