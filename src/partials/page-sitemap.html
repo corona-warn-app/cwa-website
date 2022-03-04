@@ -1,0 +1,21 @@
+{{#if page-contents}}
+<script type="module" src="/assets/js/sitemap.js"></script>
+<section class="section">
+    <div class="container">
+        <div class="container-inner container-inner_lg">
+            <div class="row">
+                <div class="col ">
+                {{> headline-component page-contents.section-main.headline}}
+                <ul>
+                    {{#each sitemap-list}}
+                    <li>
+                        <a href="{{page}}">{{title}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}
