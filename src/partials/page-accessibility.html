@@ -19,7 +19,34 @@
         </div>
       </div>
     </div>
+
+    <div class="container mb-5">
+      <div class="container-inner">
+        <h2 class="headline mb-0" id="glossary">Optional Headline</h2>
+        <p class="mb-3">Optional text</p>
+        <nav class="glossary-nav">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="android-tab" data-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true">Android App</a>
+            <a class="nav-item nav-link" id="ios-tab" data-toggle="tab" href="#ios" role="tab" aria-controls="ios" tabindex="-1">iOS App</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tab-content">
+            <div class="tab-pane fade show active mt-4" id="android" role="tabpanel" aria-labelledby="android-tab" tabindex="0">
+              <h4 class="headline headline-heavy px-3">Android</h4>
+              <div class="px-3">Android content</div>
+            </div>
+            <div class="tab-pane fade show mt-4" id="ios" role="tabpanel" aria-labelledby="ios-tab" tabindex="0">
+              <h4 class="headline headline-heavy px-3">iOS</h4>
+              <div class="px-3">iOS content</div>
+            </div>
+        </div>
+      </div>
+    </div>
+
  </div>
+
+
+
 <section class="section-intersect section_bg-light comment">
     {{#if page-contents.section-report-barriers}}
     <div class="container">
