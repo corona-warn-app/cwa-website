@@ -21,6 +21,9 @@ var rename = require("gulp-rename");
 const analyseConfig = require("./src/data/analyse.json");
 const fetch = require('node-fetch');
 var pluginSass = require('gulp-sass')(require('node-sass'));
+var debug = require('gulp-debug');
+var filelist = require('gulp-filelist');
+var modifyFile = require('gulp-modify-file')
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -63,7 +66,9 @@ gulp.task(
     sass,
     build_sitemap,
     createFaqRedirects,
-    replaceVersionNumbers
+    replaceVersionNumbers,
+    sitemaplist,
+    sitemaplist_de
   )
 );
 
@@ -73,8 +78,51 @@ gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
 // Run the server, and watch for file changes
 gulp.task('start-server', gulp.series(server, watch));
 
+gulp.task('sitemap', gulp.series(sitemaplist, sitemaplist_de));
+
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', 'start-server'));
+
+async function sitemaplist() {
+  gulp.src(['src/pages/**/en/**/*.*'])
+    .pipe(filelist('sitemaplist.json', { relative: true }))
+    .pipe(modifyFile((content) => {
+      const entries = getSitemapEntries(content)
+      const start = '[\n'
+      const end = ']'
+      return `${start}${entries}${end}`
+    }))
+    .pipe(gulp.dest('src/data'))
+}
+
+async function sitemaplist_de() {
+  gulp.src(['src/pages/**/de/**/*.*'])
+    .pipe(filelist('sitemaplist_de.json', { relative: true }))
+    .pipe(modifyFile((content) => {
+      const entries = getSitemapEntries(content)
+      const start = '[\n'
+      const end = ']'
+      return `${start}${entries}${end}`
+    }))
+    .pipe(gulp.dest('src/data'))
+}
+
+function getSitemapEntries(content) {
+  var entries = []
+  const pageTitle = "page-title: "
+  var pages = JSON.parse(content);
+  pages.forEach(page => {
+    var pageContent = fs.readFileSync('src/pages/' + page, "utf8");
+    let pageLines = pageContent.split(/\r?\n/);
+    pageLines.forEach((line)=> {
+        if(line.includes(pageTitle)){
+          const entry = `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '')}${'" }'}${'\n'}`;
+          entries.push(entry);
+        }
+    });
+  })
+  return entries;
+}
 
 // Delete the "dist" folder
 // This happens every time a build starts
