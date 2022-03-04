@@ -25,8 +25,8 @@ Veranstalter*innen können dafür unter **„Sie planen eine Veranstaltung“** 
 
 <br></br>
 <center> 
-<img src="./warnen(1).png" title="Übersicht Veranstaltungen" style="align: center" width=250> 
-<img src="./warnen(2).png" title="In Vertretung warnen" style="align: center" width=250>
+<img src="./warnen(1).png" title="Übersicht Veranstaltungen" alt="Übersicht Veranstaltungen" style="align: center" width=250> 
+<img src="./warnen(2).png" title="In Vertretung warnen" alt="In Vertretung warnen" style="align: center" width=250>
 </center>
 <br></br>
 
@@ -34,9 +34,9 @@ Anschließend können sie die entsprechende Veranstaltung auswählen und  Datum 
 
 <br></br>
 <center> 
-<img src="./warnen(3)_v2.png" title="Veranstaltung auswählen" style="align: center" width=250> 
-<img src="./warnen(4)_v2.png" title="Infos zur Veranstaltung" style="align: center" width=250> 
-<img src="./warnen(5)_v2.png" title="In Vertretung warnen" style="align: center" width=250> 
+<img src="./warnen(3)_v2.png" title="Veranstaltung auswählen" alt="Veranstaltung auswählen" style="align: center" width=250> 
+<img src="./warnen(4)_v2.png" title="Infos zur Veranstaltung" alt="Infos zur Veranstaltung" style="align: center" width=250> 
+<img src="./warnen(5)_v2.png" title="In Vertretung warnen" alt="In Vertretung warnen" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -44,7 +44,7 @@ Sollte das entsprechende Event nicht mehr in der Übersicht stehen, können sie 
 
 <br></br>
 <center> 
-<img src="./warnen-qr-code.png" title="QR-Code erneut scannen" style="align: center" width=250> 
+<img src="./warnen-qr-code.png" title="QR-Code erneut scannen" alt="QR-Code erneut scannen" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -59,7 +59,7 @@ Eine **Ausnahme** bilden die Nutzer\*innen, die nach Genesung mit dem Impfstoff 
 Des Weiteren können Nutzer\*innen, die eine **Auffrischimpfung** erhalten haben, diese ab Version 2.9 in die Corona-Warn-App übertragen. Auffrischimpfungen werden so wie die anderen Impfzertifikate mit "Impfung n von m" angezeigt. 
 
 <br></br>
-<center> <img src="./booster-impfung_v2.png" title="Auffrischimpfung" style="align: center" width=250> </center>
+<center> <img src="./booster-impfung_v2.png" title="Auffrischimpfung" alt="Auffrischimpfung" style="align: center" width=250> </center>
 <br></br>
 
 Außerdem können nun sowohl Android- als auch iOS-Nutzer\*innen, die einen PCR- oder Schnelltest durchgeführt haben, direkt aus ihrem Testergebnis heraus das **digitale COVID-Testzertifikat der EU aufrufen**. Dazu wählen sie das Testergebnis auf der Startseite ihrer App. Anschließend können sie darunter „Testzertifikat“ auswählen. Voraussetzung ist, dass sie das Zertifikat vorab bei der Registrierung des Tests beantragt haben (mehr Informationen dazu finden Sie [hier](/de/blog/2021-06-24-cwa-version-2-4/)).
@@ -67,7 +67,7 @@ Außerdem können nun sowohl Android- als auch iOS-Nutzer\*innen, die einen PCR-
 Das Testzertifikat dient Nutzer\*innen als offizieller Nachweis für das Vorliegen eines negativen Testergebnisses. 
 
 <br></br>
-<center> <img src="./testzertifikat-de.png" title="Absprung zum Testzertifikat" style="align: center" width=250> </center>
+<center> <img src="./testzertifikat-de.png" title="Absprung zum Testzertifikat" alt="Absprung zum Testzertifikat" style="align: center" width=250> </center>
 <br></br>
 
 Version 2.9 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.

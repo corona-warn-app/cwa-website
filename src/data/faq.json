@@ -13,7 +13,11 @@
         "button-collapse": {
             "fields": {
                 "collapse": "Expand/Collapse all"
-            }},
+            }
+        },
+        "side-menu": {
+            "description": "Side menu for navigation"
+        },
         "sections": [
             {
                 "title": "In a nutshell",
@@ -140,9 +144,9 @@
                         "active": false,
                         "textblock": [
                             "See also <a href=#test_result_issues>What can I do if I have not received my test result or test certificate?</a>",
-                            "<div class='container'><div class='row'><div class='col-sm'><a href='https://map.schnelltestportal.de' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='test portal'></a></div><div class='col-sm'>Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.<br>A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a><br>The list of test sites contains only those entries that have been reported by the partners concerned.</div></div></div>",
+                            "<div class='container'><div class='row'><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/schnelltestportal_1.jpeg' alt='test portal'></div><div class='col-sm'>Meanwhile, more than 100 rapid test partners are connected to the CWA infrastructure and can provide their test results to the app.<br>A local search that shows the compatible partners with nearby testing sites in your area can be found here: <a href='https://map.schnelltestportal.de' target='_blank' rel='noopener noreferrer'>map.schnelltestportal.de</a><br>The list of test sites contains only those entries that have been reported by the partners concerned.</div></div></div>",
                             "<hr/>",
-                            "<div class='container'><div class='row'><div class='col-sm'><a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener'><img class='img-fluid' src='../../assets/img/faq/BMG_testzentren.png' alt='PCR- and rapid antigen test information BMG'></a></div><div class='col-sm'>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).</div></div>",
+                            "<div class='container'><div class='row'><div class='col-sm'><img class='img-fluid' src='../../assets/img/faq/BMG_testzentren.png' alt='PCR- and rapid antigen test information BMG'></div><div class='col-sm'>An overview of the <b>PCR and rapid antigen test sites</b> can be found on this <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG webpage</a> (not clear whether the test site is connected to the CWA or not).</div></div>",
                             "<hr/>",
                             "Another list of test sites from the GitHub community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Where to get tested?</a>"
                         ]
@@ -1523,7 +1527,7 @@
                         "active": false,
                         "textblock": [
                             "After a detailed examination of the situation it was determined that for legal reasons any publication of the Corona-Warn-App in App Stores outside of Germany is currently only possible after a case-by-case assessment. Legal consultations have shown that in the case of publication in international App Stores, the law of the respective country must be considered and applied to the Corona-Warn-App. This applies in particular to data protection, any necessary claims for information by local authorities and other contractual and consumer protection regulations.",
-                            "The Robert Koch Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Germany</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Sweden</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>United Kingdom</li></ul>",
+                            "The Robert Koch Institute as publisher of the app will trigger this check for the respective countries and release the app after successful legal examination. The RKI currently released the app for the following European countries: <ul><li>Austria</li><li>Belgium</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Finland</li><li>France</li><li>Germany</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Malta</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Sweden</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Switzerland</li><li>Ukraine</li><li>United Kingdom</li></ul>",
                             "More countries are currently being checked and will be released in the App Stores step by step. The Robert Koch Institute asks for your understanding that it cannot provide any information on specific countries and the status of their release during the ongoing review process.",
                             "Please note that many countries release their own Corona tracking apps. Because the German Corona-Warn-App is also available in the app stores and play stores of these countries, the Corona tracking apps could be mixed up. Therefore, make sure that you download the app for your country."
                         ]
@@ -1793,7 +1797,8 @@
                         "anchor": "recovered",
                         "active": false,
                         "textblock": [
-                            "Since version 1.13, you have the option to reactivate the app after recovering from a SARS-CoV-2 infection and to restart the risk assessment after sharing your own random IDs. This means that you can now decide if and when to turn risk assessment back on once having shared your encrypted random IDs after a positive test result, thus warning others. Previously, this was only possible via a reset of the app."
+                            "Since version 1.13, you have the option to reactivate the app after recovering from a SARS-CoV-2 infection and to restart the risk assessment after sharing your own random IDs. This means that you can now decide if and when to turn risk assessment back on once having shared your encrypted random IDs after a positive test result, thus warning others. Previously, this was only possible via a reset of the app.",
+                            "In order for the app to show you the risk card again, you need to <b>delete the positive test result from the app</b>. To do this, please tap on the tile that shows the positive test result and tap 'Delete Test' there. After these steps, the test result will be moved to the recycle bin for 30 days and the risk card will be displayed again."
                         ]
                     },
                     {

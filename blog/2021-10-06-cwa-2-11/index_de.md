@@ -20,7 +20,7 @@ Bisher konnten Nutzer\*innen den jeweiligen QR-Code-Scanner nur für seinen best
 
  
 <br></br>
-<center> <img src="./qr-code-scanner.png" title="Universeller QR-Code-Scanner" style="align: center"> </center>
+<center> <img src="./qr-code-scanner.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center"> </center>
 <br></br>
 
 <u>**Ein Beispiel:**</u>
@@ -36,7 +36,7 @@ Für Android-Nutzer\*innen gibt es eine weitere neue Funktion. Ab Version 2.11 k
 Dafür können Nutzer\*innen einen QR-Code-Scanner in der Corona-Warn-App öffnen (beispielsweise unter dem Reiter „Check-in“). Nachdem sie auf „QR-Code scannen“ getippt haben, können sie ab Version 2.11 unten links **„Datei öffnen“** auswählen und darüber einen QR-Code aus ihrer Bild- oder Dateibibliothek importieren. Die Corona-Warn-App liest den QR-Code auf dem Bild oder der Datei aus und speichert das Zertifikat, den Test oder die Veranstaltung abhängig von der Art des QR-Codes im entsprechenden Bereich der Corona-Warn-App ab. 
 
 <br></br>
-<center> <img src="./qr-code-scanner(2).png" title="Meine Check-ins" style="align: center">  <img src="./datei-oeffnen.png" title="Universeller QR-Code-Scanner" style="align: center"> </center>
+<center> <img src="./qr-code-scanner(2).png" title="Meine Check-ins" alt="Meine Check-ins" style="align: center">  <img src="./datei-oeffnen.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center"> </center>
 <br></br>
 
 Sind **mehrere QR-Codes auf einem Bild**, speichert die Corona-Warn-App nur den ersten, den sie verarbeiten kann. Gegebenenfalls sollten Nutzer\*innen in diesem Fall den QR-Code, den sie importieren wollen, vorher aus dem Bild oder dem Dokument ausschneiden. QR-Codes aus einem **passwortgeschützten Dokument** können über diese Funktion nicht in die Corona-Warn-App importiert werden. 

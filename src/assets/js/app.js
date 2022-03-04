@@ -133,7 +133,6 @@ $(document).ready(function(){
             }
         }
         const throttledAutoHideSticky = throttle(autoHideSticky, 500)
-        document.addEventListener('scroll', throttledAutoHideSticky)
 
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
@@ -388,4 +387,20 @@ $(document).ready(function(){
 
       // onload jump to glossary
       activateGlossary(); 
+
+    //Plotly ModeBar
+    $(".modebar-btn").attr("tabindex", 0);
+    $(".modebar-btn").on('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.target.click()
+        }
+    });
+
+    //Plotly Filters
+    $(".plot-container").find(".legendtoggle").attr("tabindex", 0);
+    $(".plot-container").find(".legendtoggle").on('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.target.dispatchEvent(new Event('mouseup'))
+        }
+    })
 });
