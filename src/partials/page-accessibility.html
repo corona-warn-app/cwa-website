@@ -1,0 +1,45 @@
+{{#if page-contents}}
+<section class="comment">
+  <div class="container">
+    <div class="container-inner">
+      <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+      <div>
+        {{#each page-contents.section-main.headline.textblock}}
+        <p>{{{.}}}</p>
+        {{/each}}
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-inner">
+        <h2 class="headline headline-heavy" id="{{page-contents.section-compatibility-level.anchor}}">{{page-contents.section-compatibility-level.title}}</h2>
+        <div>
+            {{#each page-contents.section-compatibility-level.textblock}}
+            <p>{{{.}}}</p>
+            {{/each}}
+        </div>
+      </div>
+    </div>
+ </div>
+<section class="section-intersect section_bg-light comment">
+    {{#if page-contents.section-report-barriers}}
+    <div class="container">
+      <div class="container-inner">
+        {{#if page-contents.section-report-barriers.headline}}
+        <div>{{> headline-component page-contents.section-report-barriers.headline}}</div>
+        {{/if}}
+    </div>
+    {{/if}}
+</section>
+<section class="comment">
+    <div class="container">
+        <div class="container-inner">
+          <h2 class="headline headline-heavy" id="{{page-contents.section-arbitrary-service.anchor}}">{{page-contents.section-arbitrary-service.title}}</h2>
+          <div>
+              {{#each page-contents.section-arbitrary-service.textblock}}
+              <p>{{{.}}}</p>
+              {{/each}}
+          </div>
+        </div>
+      </div>
+</section>
+{{/if}}
