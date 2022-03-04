@@ -110,16 +110,32 @@ async function sitemaplist_de() {
 function getSitemapEntries(content) {
   var entries = []
   const pageTitle = "page-title: "
+  const pageLayout = "layout: "
+  const pageCategory = "page-category: "
+  const screenshotsArchive = "screenshotsarchive: "
   var pages = JSON.parse(content);
   pages.forEach(page => {
     var pageContent = fs.readFileSync('src/pages/' + page, "utf8");
     let pageLines = pageContent.split(/\r?\n/);
+    var entry = ''
     pageLines.forEach((line)=> {
-        if(line.includes(pageTitle)){
-          const entry = `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '')}${'" }'}${'\n'}`;
-          entries.push(entry);
-        }
+      if(line.includes(pageTitle)) {
+        entry += `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '')}${'"'}`
+      }
+      if(line.includes(pageLayout)) {
+        entry += `${', "layout": "'}${line.replace(pageLayout,'')}${'"'}`
+      }
+      if(line.includes(pageCategory)) {
+        entry += `${', "category": "'}${line.replace(pageCategory,'').replace(/['"]+/g, '')}${'"'}`
+      }
+      if(line.includes(screenshotsArchive)) {
+        entry += `${', "screenshotsarchive": "'}${line.replace(screenshotsArchive,'')}${'"'}`
+      }
     });
+    if(entry) {
+      entry += `${'}\n'}`;
+      entries.push(entry);
+    }
   })
   return entries;
 }
