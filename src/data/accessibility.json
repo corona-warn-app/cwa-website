@@ -1,42 +1,55 @@
 {
     "meta": {
-        "title": "Barrierefreiheitserklärung des Robert Koch-Instituts und Bundesministerium für Gesundheit",
+        "title": "Accessibility statement by the Robert Koch Institute and the Federal Ministry of Health",
         "description": ""
     },
-    "section-main": {
-        "headline": {
-            "title": "Barrierefreiheitserklärung des Robert Koch-Instituts und Bundesministerium für Gesundheit",
-            "textblock": [
-                "Diese Erklärung zur Barrierefreiheit gilt für Version 2.17 der Corona-Warn-App des Robert Koch-Instituts und Bundesministerium für Gesundheit.",
-                "Als öffentliche Stelle im Sinne der Richtlinie (EU) 2016/2102 sind wir bemüht, unsere Websites und mobilen Anwendungen im Einklang mit den Bestimmungen des Behindertengleichstellungsgesetzes des Bundes (BGG) sowie der Barrierefreien-Informationstechnik-Verordnung (BITV 2.0) zur Umsetzung der Richtlinie (EU) 2016/2102 barrierefrei zugänglich zu machen."
-            ]
-        }
-    },
-    "section-compatibility-level": {
-        "title": "Stand der Vereinbarkeit mit den Anforderungen",
-        "anchor": "compatibility-level",
+    "title": "Accessibility statement by the Robert Koch Institute and the Federal Ministry of Health",
+    "section-android-main": {
         "textblock": [
-            "Die Anforderungen der Barrierefreiheit für mobile Anwendungen ergeben sich aus der BITV 2.0 in ihrer jeweils gültigen Fassung, die auf der Grundlage von § 12d BGG erlassen wurde.",
-            "Die Überprüfung der Einhaltung der Anforderungen der Corona-Warn-App beruht auf einer am 18.01.2022 durchgeführten Selbstbewertung.",
-            "<b>Die nachstehend aufgeführten Inhalte der Corona-Warn-App sind aus folgenden Gründen nicht barrierefrei:</b><ul><li>Der Inhalt der App ist entgegen der Anforderung 1.3.4 WCAG 2.1 bzw. 11.1.3.4 EN 301 549 V3.2.1 auf die Anzeige im Hochformat beschränkt.</li><li><b>iOS:</b> Das dargestellte Kontrastverhältnis bei der visuellen Darstellung von Text und Bildern von Text im Falle der Beschriftungstexte der Navigationsleiste von der Anforderung 1.4.3 WCAG 2.1 bzw. 11.1.4.3 EN 301 549 V3.2.1 ab.</li><li><b>iOS:</b> Bei Vergrößerung von Text (ohne assistierende Technik um bis zu 200 %) kann es entgegen der Anforderung 1.4.4 WCAG 2.1 bzw. 11.1.4.4.1 EN 301 549 V3.2.1 zur fehlenden Vergrößerung oder zum Abschneiden von Textfeldern kommen.</li><li><b>iOS:</b> Das Nachstehende zur Funktionalität gilt für an das Endgerät angeschlossene, physische Tastaturen. Entgegen der Anforderung 2.1.1 WCAG 2.1 bzw. 11.2.1.1.1 EN 301 549 V3.2.1 ist keine Tastaturnutzung auf der Seite „Nutzungsbedingungen“ sowie „Datenschutz“ möglich. Auf den Seiten „Personen bearbeiten“ und „Orte bearbeiten“ können Inhalte zudem nicht mittels Tastaturnutzung gelöscht werden.</li><li><b>iOS:</b> Auf den Seiten „Personen bearbeiten“ und „Orte bearbeiten“ kann die Löschtaste entgegen Anforderung 2.5.1 WCAG 2.1 bzw. 11.2.5.1 EN 301 549 V3.2.1 nicht mit einer einzelnen Zeigeraktion freigelegt werden.</li><li><b>Android:</b> Das dargestellte Kontrastverhältnis bei der visuellen Darstellung von Text und Bildern von Text weicht im Falle von „Label Text“ leicht von der Anforderung 1.4.3 WCAG 2.1 bzw. 11.1.4.3 EN 301 549 V3.2.1 ab. Der minimale Kontrast liegt hier bei 4.48:1 statt bei 4.5:1.</li><li><b>Android:</b> Bei Vergrößerung von Text (ohne assistierende Technik um bis zu 200 %) über die Betriebssystemeinstellungen kann es entgegen der Anforderung 1.4.4 WCAG 2.1 bzw. 11.1.4.4.1 EN 301 549 V3.2.1 zum Überlappen von Textabschnitten kommen.</li><li><b>Android:</b> Entgegen Anforderung 4.1.2 WCAG 2.1 nach 11.4.1.2.1 EN 301 549 V3.2.1 werden nicht alle Elemente korrekt durch die Sprachausgabe dargestellt. Der User Flow wird dadurch allerdings nicht blockiert.</li></ul>",
-            "Wir arbeiten an der baldmöglichsten Beseitigung der aufgelisteten Barrieren.",
-            "<b>Datum der Erstellung bzw. der letzten Aktualisierung der Erklärung</b>",
-            "Diese Erklärung wurde am 21.02.2022 erstellt."
+            "This accessibility statement applies to version 2.17 of the <b>Corona-Warn-App (Android)</b> of the Robert Koch Institute and Federal Ministry of Health.",
+            "As a public entity within the meaning of Guideline (EU) 2016/2102, we strive to make our websites and mobile applications accessible in accordance with the provisions of the German Act on Equal Opportunities for Persons with Disabilities (BGG) and the Accessible Information Technology Regulation (BITV 2.0) implementing Guideline (EU) 2016/2102."
+        ]
+    },
+    "section-ios-main": {
+        "textblock": [
+            "This accessibility statement applies to version 2.17 of the <b>Corona-Warn-App (iOS)</b> of the Robert Koch Institute and Federal Ministry of Health.",
+            "As a public entity within the meaning of Guideline (EU) 2016/2102, we strive to make our websites and mobile applications accessible in accordance with the provisions of the German Act on Equal Opportunities for Persons with Disabilities (BGG) and the Accessible Information Technology Regulation (BITV 2.0) implementing Guideline (EU) 2016/2102."
+        ]
+    },
+    "section-android-compatibility-level": {
+        "title": "Level of compliance with requirements",
+        "textblock": [
+            "The accessibility requirements for mobile applications are derived from BITV 2.0 in its currently valid version, which was issued based on § 12d BGG.",
+            "The verification of compliance with the requirements of the Corona-Warn-App (Android) is based on a self-evaluation carried out on 18.01.2022.",
+            "<b>The Corona-Warn-App (Android) content listed below is not accessible for the following reasons:</b><ul><li>The content of the app is limited to portrait display, in contradiction to requirement 1.3.4 WCAG 2.1 or 11.1.3.4 EN 301 549 V3.2.1.</li><li>The displayed contrast ratio for the visual display of text and images of text deviates slightly from the requirement 1.4.3 WCAG 2.1 or 11.1.4.3 EN 301 549 V3.2.1 in the case of \"Label Text\". The minimum contrast here is 4.48:1 instead of 4.5:1.</li><li>When text is enlarged (without assistive technology by up to 200%) via operating system settings, text sections may overlap, in contradiction to requirement 1.4.4 WCAG 2.1 or 11.1.4.1 EN 301 549 V3.2.1.</li><li>In contradiction to requirement 4.1.2 WCAG 2.1 according to 11.4.1.2.1 EN 301 549 V3.2.1, not all elements are correctly displayed by the speech output. However, this does not block the user flow.</li></ul>",
+            "We are working to remove the listed barriers as soon as possible.",
+            "<b>Date of creation or last update of the declaration</b>",
+            "This statement was created on 21.02.2022."
+        ]
+    },
+    "section-ios-compatibility-level": {
+        "title": "Level of compliance with requirements",
+        "textblock": [
+            "The accessibility requirements for mobile applications are derived from BITV 2.0 in its currently valid version, which was issued based on § 12d BGG.",
+            "The verification of compliance with the requirements of the Corona-Warn-App (iOS) is based on a self-evaluation carried out on 18.01.2022.",
+            "<b>The Corona-Warn-App (iOS) content listed below is not accessible for the following reasons:</b><ul><li>The content of the app is limited to portrait display, in contradiction to requirement 1.3.4 WCAG 2.1 or 11.1.3.4 EN 301 549 V3.2.1.</li><li>The presented contrast ratio for the visual presentation of text and images of text differs from the requirement 1.4.3 WCAG 2.1 or 11.1.4.3 EN 301 549 V3.2.1 in the case of the navigation bar caption texts.</li><li>Enlargement of text (without assistive technology by up to 200%) may result in lack of enlargement or truncation of text fields, in contradiction to requirement 1.4.4 WCAG 2.1 or 11.1.4.4.1 EN 301 549 V3.2.1.</li><li>The following functionality applies to physical keyboards connected to the end device. In contradiction to requirement 2.1.1 WCAG 2.1 and 11.2.1.1.1 EN 301 549 V3.2.1, keyboard usage is not possible on the \"Terms of use\" and \"Privacy\" pages. On the \"Edit people\" and \"Edit places\" pages, content cannot be deleted using the keyboard.</li><li>On the \"Edit People\" and \"Edit Places\" pages, the delete key cannot be exposed with a single pointer action, in contradiction to requirement 2.5.1 WCAG 2.1 or 11.2.5.1 EN 301 549 V3.2.1.</li></ul>",
+            "We are working to remove the listed barriers as soon as possible.",
+            "<b>Date of creation or last update of the declaration</b>",
+            "This statement was created on 21.02.2022."
         ]
     },
     "section-report-barriers": {
         "headline": {
-        "title": "Barrieren melden: Kontakt zu den Feedback Ansprechpartnern",
-        "text": "Sie möchten uns bestehende Barrieren mitteilen oder Informationen zur Umsetzung der Barrierefreiheit erfragen? Gerne können Sie sich per <a href='coronawarnapp...rki...de' class='email'>E-Mail</a> oder über unser <a href='https://www.rki.de/SharedDocs/Kontaktformulare/weitere/Corona-Warn-App/Corona-Warn-App_Integrator.html' target='_blank' rel='noopener noreferrer'>Kontaktformular</a> bei uns melden."
+        "title": "Report barriers: Feedback contacts",
+        "text": "You would like to inform us about existing barriers or request information on the implementation of accessibility? You are welcome to contact us by <a href='coronawarnapp...rki...de' class='email'>e-mail</a> or via our <a href='https://www.rki.de/SharedDocs/Kontaktformulare/weitere/Corona-Warn-App/Corona-Warn-App_Integrator.html' target='_blank' rel='noopener noreferrer'>contact form</a>."
         }
     },
     "section-arbitrary-service": {
-        "title": "Schlichtungsverfahren",
-        "anchor": "arbitrary-service",
+        "title": "Arbitration",
         "textblock": [
-            "Wenn auch nach Ihrem Feedback an den oben genannten Kontakt keine zufriedenstellende Lösung gefunden wurde, können Sie sich an die Schlichtungsstelle nach § 16 BGG wenden. Die Schlichtungsstelle BGG hat die Aufgabe, bei Konflikten zum Thema Barrierefreiheit zwischen Menschen mit Behinderungen und öffentlichen Stellen des Bundes eine außergerichtliche Streitbeilegung zu unterstützen. Das Schlichtungsverfahren ist kostenlos. Es muss kein Rechtsbeistand eingeschaltet werden. Weitere Informationen zum Schlichtungsverfahren und den Möglichkeiten der Antragstellung finden sie auf der <a href='https://www.schlichtungsstelle-bgg.de' target='_blank' rel='noopener noreferrer'>Webseite der Schlichtungsstelle</a>.",
-            "Sie erreichen die Schlichtungsstelle unter folgender Adresse:",
-            "Schlichtungsstelle nach dem Behindertengleichstellungsgesetz bei dem Beauftragten der Bundesregierung für die Belange von Menschen mit Behinderungen<br/><br/>Mauerstraße 53<br/>10117 Berlin</br><br/>Telefon: +49 (0)30 18 527-2805<br/>Fax: +49 (0)30 18 527-2901<br/>E-Mail: <a href='info...schlichtungsstelle-bgg...de' class='email'>info@schlichtungsstelle-bgg.de<a/>"
+            "In case no satisfactory solution has been found even after your feedback to the above-mentioned contact, you can approach the arbitration service in accordance with § 16 BGG. The BGG arbitration service is responsible for supporting out-of-court dispute resolution in the event of conflicts on the topic of accessibility between people with disabilities and federal public entities. The arbitration service is free of charge. No legal counsel needs to be involved. For more information on the arbitration service and how to submit an application, please visit the <a href='https://www.schlichtungsstelle-bgg.de' target='_blank' rel='noopener noreferrer'>website of the arbitration service</a>.",
+            "You can reach the arbitration service at the following address:",
+            "BGG Arbitration Service<br/>Beauftragter der Bundesregierung für die Belange von Menschen mit Behinderungen<br/>Mauerstrasse 53<br/>10117 Berlin<br/>Telephone: +49 (0)30 18 527-2805<br/>Fax: +49 (0)30 18 527-2901<br/>E-Mail: <a href='info...schlichtungsstelle-bgg...de' class='email'>info@schlichtungsstelle-bgg.de<a/>"
         ]
     }
 }
