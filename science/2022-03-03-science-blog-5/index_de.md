@@ -865,7 +865,7 @@ Für die Frage nach den aktiven Nutzenden (im erweiterten Sinne) scheint die Anz
     <figcaption aria-hidden="true">Abb. 16: Verschiedene Schätzungen von aktiven Nutzenden (im erweiterten Sinne).</figcaption>
 </figure>
 
-Die [Schätzung aus der CWA-Datenspende (PPA)](#42-aus-der-cwa-datenspende) (aktuell 1; Stand: 28. Februar 2022) schwankt deutlich und ist damit nur mit großer Vorsicht zu genießen. Hier wurde aus dem Anteil der Datenspendenden auf die aktiven Nutzenden geschlossen. Aktuell ergeben sich 31 Mio. aktive Nutzende (Stand: 27. Februar 2022, [KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6 Mio.).
+Die [Schätzung aus der CWA-Datenspende (PPA)](#42-aus-der-cwa-datenspende) (aktuell 16.4 Mio. spendende Endgeräte; Stand: 28. Februar 2022) schwankt deutlich und ist damit nur mit großer Vorsicht zu genießen. Hier wurde aus dem Anteil der Datenspendenden auf die aktiven Nutzenden geschlossen. Aktuell ergeben sich 31 Mio. aktive Nutzende (Stand: 27. Februar 2022, [KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6 Mio.).
 
 Die [Heuristik](#43-aus-einer-heuristik) (mit der Wahl der oberen Schranke) ist eher optimistisch und berücksichtigt die Schwankungen aufgrund tatsächlicher Gegebenheiten und effektiven Änderungen nur wenig. Sie ist jedoch einleuchtend, einfach anwendbar und liegt in der richtigen Größenordnung. Sie erklärt zudem den mit der Zeit zunehmenden Unterschied zwischen der Anzahl der Downloads und der aktiven Nutzenden bzw. Endgeräte. Aktuell ergeben sich hieraus 28,5 Mio. aktiven Nutzenden (Stand: 27. Februar 2022).
 
