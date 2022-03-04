@@ -15,7 +15,7 @@ With version 1.12, users who have an **iPhone 5s, 6 or 6 Plus** can now use the 
 
 
 <br></br>
-<center> <img src="./cwa-ios-12-5.jpg" title="Corona-Warn-App auf iPhone 5s" style="align: center"></center>
+<center> <img src="./cwa-ios-12-5.jpg" title="Corona-Warn-App on iPhone 5s" alt="Corona-Warn-App on iPhone 5s" style="align: center"></center>
 <br></br>
 
 Users can use the Corona-Warn-App on iOS 12.5 without restrictions. The only difference: Under iOS 12.5, the Corona-Warn-App updates the risk calculation **in the background** up to two times a day, while it does so up to six times a day under iOS 13.7 and above, given the smartphone is connected to Wifi. If users open the Corona-Warn-App under iOS 12.5 when connected to Wifi, they can trigger risk calculation manually, so that it can also be updated up to six times a day. 
@@ -29,7 +29,7 @@ To use the Corona-Warn-App, owners of an iPhone 5s, 6 or 6 Plus should first ins
 Another new feature in version 1.12 is the **exposure history**, which users can find in the contact journal’s overview. It allows users to better assess the risk they’ve been exposed to: While the app’s home screen only shows the date of the latest encounter in case of several risk encounters, users now can use the contact journal to see when other encounters with a high or low risk took place. If they've had encounters with a high or low risk in the past 15 days, users can find the exposure history in the overview of their contact journal after they've selected "Open Journal".
 
 <br></br>
-<center> <img src="./exposure-history-en.jpg" title="Exposure History" style="align: center"></center>
+<center> <img src="./exposure-history-en.jpg" title="Exposure History" alt="Exposure History" style="align: center"></center>
 <br></br>
 
 
