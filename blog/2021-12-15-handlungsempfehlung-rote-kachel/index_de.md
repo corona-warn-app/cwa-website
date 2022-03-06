@@ -3,7 +3,7 @@ page-title: "Was tun bei einer roten Kachel?"
 page-description: "Was tun bei einer roten Kachel?"
 page-name: cwa-red-tile-guidance
 page-name_de: cwa-red-tile-guidance
-author: CWA Team
+author: CWA-Team
 layout: blog
 ---
 
