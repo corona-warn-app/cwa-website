@@ -3,7 +3,7 @@ page-title: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
 page-description: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
 page-name: science-blog-5
 page-name_de: science-blog-5
-author: CWA Team
+author: CWA-Team
 date: "2022-03-03"
 layout: science
 ---
@@ -141,6 +141,8 @@ Hinzu kommt, dass die Corona-Warn-App im Lauf der Zeit um viele weitere Features
 Bei der aktiven Nutzung im erweiterten Sinne wird nicht unterschieden, welche Features genutzt werden. Jemand wird demnach als aktiver Nutzender gezählt, so lange ein beliebiges Feature genutzt wird (z.&nbsp;B. ausschließliche Nutzung des Zertifikatsnachweises), unabhängig davon, ob die Kernfunktionen genutzt werden.
 
 Die vom [Apple-App-Store](#62-apple-app-store) und [Google-Play-Store](#61-google-play-store) ausgewiesenen Kennzahlen sind unterschiedlich definiert und werden unterschiedlich gemessen, betreffen oft nur näherungsweise denselben Sachverhalt und lassen sich daher nicht unmittelbar summieren oder vergleichen. Zudem ist besondere Vorsicht geboten: der Begriff aktive Nutzende wird dort gänzlich anders ([homonym](https://de.wikipedia.org/wiki/Homonym)) als in diesem Blog definiert und steht für etwas, das wir potentielle Nutzende nennen könnten. Weiterhin kommt neben der Differenzierung zwischen Nutzenden und Endgeräten noch das Konzept eines Nutzenden im Sinne eines Accounts vor, was die Dinge zusätzlich verkompliziert. Dort wo sie die Nutzung betreffen, können auch diese Kennzahlen jedenfalls nur die aktive Nutzung im erweiterten Sinne beschreiben. Wir werden die Zahlen der Stores daher auch separat beschreiben.
+
+Die nachfolgende Tabelle gibt eine Übersicht über die Versionsgeschichte der CWA. Sie beinhaltet eine Aufzählung der Versionsnummer mit den jeweilig implementierten Features.
 
 <details>
 <summary>Tab. 1: Features der CWA</summary>
@@ -863,7 +865,7 @@ Für die Frage nach den aktiven Nutzenden (im erweiterten Sinne) scheint die Anz
     <figcaption aria-hidden="true">Abb. 16: Verschiedene Schätzungen von aktiven Nutzenden (im erweiterten Sinne).</figcaption>
 </figure>
 
-Die [Schätzung aus der CWA-Datenspende (PPA)](#42-aus-der-cwa-datenspende) (aktuell 1; Stand: 28. Februar 2022) schwankt deutlich und ist damit nur mit großer Vorsicht zu genießen. Hier wurde aus dem Anteil der Datenspendenden auf die aktiven Nutzenden geschlossen. Aktuell ergeben sich 31 Mio. aktive Nutzende (Stand: 27. Februar 2022, [KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6 Mio.).
+Die [Schätzung aus der CWA-Datenspende (PPA)](#42-aus-der-cwa-datenspende) (aktuell 16.4 Mio. spendende Endgeräte; Stand: 28. Februar 2022) schwankt deutlich und ist damit nur mit großer Vorsicht zu genießen. Hier wurde aus dem Anteil der Datenspendenden auf die aktiven Nutzenden geschlossen. Aktuell ergeben sich 31 Mio. aktive Nutzende (Stand: 27. Februar 2022, [KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6 Mio.).
 
 Die [Heuristik](#43-aus-einer-heuristik) (mit der Wahl der oberen Schranke) ist eher optimistisch und berücksichtigt die Schwankungen aufgrund tatsächlicher Gegebenheiten und effektiven Änderungen nur wenig. Sie ist jedoch einleuchtend, einfach anwendbar und liegt in der richtigen Größenordnung. Sie erklärt zudem den mit der Zeit zunehmenden Unterschied zwischen der Anzahl der Downloads und der aktiven Nutzenden bzw. Endgeräte. Aktuell ergeben sich hieraus 28,5 Mio. aktiven Nutzenden (Stand: 27. Februar 2022).
 
