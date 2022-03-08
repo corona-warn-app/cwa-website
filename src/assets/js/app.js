@@ -268,17 +268,25 @@ $(document).ready(function(){
                 $('.accordion-faq-item-title').each(function() {
                     highlightWord(searchString, $(this))       
                 })
+
                 $('.accordion-faq-item-content').children().each((index,p) => {
                     if(!$(p).is("a") && !$(p).is("img")) {
                         if($(p).children().length === 0) {
                             highlightWord(searchString, $(p))       
                         }
                         else {
+                            let canContinue = true;
+                            const itemsToAvoid = [];
                             $(p).children().each((index, child) => {
-                                if(!$(child).is("a") && !$(child).is("img")) {
-                                    highlightWord(searchString, $(child))
+                                if($(child).is("a") || $(child).is("img")) {
+                                    itemsToAvoid.push($(child))
+                                    canContinue = false;
                                 }
                             })
+                            if(canContinue) highlightWord(searchString, $(p))
+                            else {
+                                highlightWord(searchString, $(p), itemsToAvoid)
+                            } 
                         }
                     }
                 })
@@ -793,10 +801,16 @@ $(document).ready(function(){
       // onload jump to glossary
       activateGlossary(); 
 
-    function highlightWord(search, element) {
+    function highlightWord(search, element, itemsToAvoid=[]) {
         const searchLower = search.toLowerCase();
-        const htmlArray = $(element).html().split(" ");
-        const result = htmlArray.map((word) => {
+        let htmlArray = $(element).html().split(" ");
+        if(itemsToAvoid.length > 0) {
+            itemsToAvoid.map((item, index) => {
+                htmlArray = htmlArray.join(' ').replace(item.prop('outerHTML'), `··${index}`);
+                htmlArray = htmlArray.split(' ')
+            })
+        }
+        let result = htmlArray.map((word) => {
             const wordLower = word.toLowerCase();
             if(wordLower === searchLower) {
                 word = "<span class='highlight'>"+word+"</span>";
@@ -813,6 +827,47 @@ $(document).ready(function(){
             }
             return word;
         }).join(" ");
+
+        if(itemsToAvoid.length > 0) {
+            result = result.split(' ');
+            const fResult = result.map(word => {
+                if(word.includes('··')) {
+                    itemsToAvoid.map((item, index) => {
+                        if(word.includes(`··${index}`)) {
+                            if($(item).is('a')) {
+                                const text = $(item).text().split(" ").map((txt) => {
+                                    const wordLower = txt.toLowerCase();
+                                    if(wordLower === searchLower) {
+                                        txt = "<span class='highlight'>"+txt+"</span>";
+                                    }
+                                    else if(wordLower.includes(searchLower)) {
+                                        if(wordLower.indexOf(searchLower) === 0) {
+                                            txt = "<span class='highlight'>"+txt.slice(0, searchLower.length)+"</span>"+txt.slice(searchLower.length);
+                                        }
+                                        else if(wordLower.indexOf(searchLower)+searchLower.length === txt.length) {
+                                            txt = txt.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+txt.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>";
+                                        } else {
+                                            txt = txt.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+txt.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>"+txt.slice(wordLower.indexOf(searchLower)+searchLower.length);
+                                        }
+                                    }
+                                    return txt;
+                                }).join(" ");
+                                console.log(text);
+                                console.log("...", item.prop('outerHTML'))
+                                console.log("word", word)
+                                console.log("replace", item.prop('outerHTML').replace(word, text))
+                                word = item.prop('outerHTML').replace(word, text);
+                            } else {
+                                word = item.prop('outerHTML');
+                            }
+                        }
+                    })
+                }
+                return word;
+            }).join(" ");
+
+            result = fResult;
+        }
         $(element).html(result)
     }
 });
