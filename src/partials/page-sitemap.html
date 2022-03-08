@@ -18,29 +18,7 @@
                                 {{/each}}
                             </ul>
                         </li>
-                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/faq">{{page-contents.section-main.content.category.faq}}</a>
-                            <ul>
-                                {{#each sitemap-list}}
-                                    {{#ifequal category 'FAQ'}}
-                                    <li>
-                                        <a href="{{page}}">{{title}}</a>
-                                    </li>
-                                    {{/ifequal}}
-                                {{/each}}
-                            </ul>
-                        </li>
-                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/blog">{{page-contents.section-main.content.category.blog}}</a>
-                            <ul>
-                                {{#each sitemap-list}}
-                                    {{#ifequal layout 'blog'}}
-                                    <li>
-                                        <a href="{{page}}">{{title}}</a>
-                                    </li>
-                                    {{/ifequal}}
-                                {{/each}}
-                            </ul>
-                        </li>
-                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/news">{{page-contents.section-main.content.category.news}}</a>
+                        <li>{{page-contents.section-main.content.category.news}}
                             <ul>
                                 {{#each sitemap-list}}
                                     {{#ifequal category 'News'}}
@@ -70,6 +48,28 @@
                                         <a href="{{page}}">{{title}}</a>
                                     </li>
                                     {{/if}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/blog">{{page-contents.section-main.content.category.blog}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal layout 'blog'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/science">{{page-contents.section-main.content.category.science}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal layout 'science'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
                                 {{/each}}
                             </ul>
                         </li>

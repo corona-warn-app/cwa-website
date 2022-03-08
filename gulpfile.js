@@ -113,6 +113,7 @@ function getSitemapEntries(content) {
   const pageLayout = "layout: "
   const pageCategory = "page-category: "
   const screenshotsArchive = "screenshotsarchive: "
+  const pageName = "page-name: "
   var pages = JSON.parse(content);
   pages.forEach(page => {
     var pageContent = fs.readFileSync('src/pages/' + page, "utf8");
@@ -120,7 +121,7 @@ function getSitemapEntries(content) {
     var entry = ''
     pageLines.forEach((line)=> {
       if(line.includes(pageTitle)) {
-        entry += `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '')}${'"'}`
+        entry += `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '').replace('–','-')}${'"'}`
       }
       if(line.includes(pageLayout)) {
         entry += `${', "layout": "'}${line.replace(pageLayout,'')}${'"'}`
@@ -131,8 +132,11 @@ function getSitemapEntries(content) {
       if(line.includes(screenshotsArchive)) {
         entry += `${', "screenshotsarchive": "'}${line.replace(screenshotsArchive,'')}${'"'}`
       }
+      if(line.includes(pageName)) {
+        entry += `${', "name": "'}${line.replace(pageName,'').replace(/['"]+/g, '')}${'"'}`
+      }
     });
-    if(entry) {
+    if(entry && entry.includes("page")) {
       entry += `${'}\n'}`;
       entries.push(entry);
     }
