@@ -356,6 +356,13 @@ $(document).ready(function(){
         else window.location.href += $(this).attr('href');
       });
 
+      // pre select tabs on page load
+      if(window.location.href.includes("#")) {
+        let activeLink = $(".nav-tabs a[href$='#"+window.location.href.split("#")[1]+"']");
+        $(activeLink).addClass('active').siblings().removeClass('active');
+        $($(activeLink).attr('href')).addClass('show active').siblings().removeClass('show active');
+      }
+
       // glossary links onclick handler
       $("a[href^='#glossary_']").on("click", function(e) {
         let anchor = $(this).attr("href").replace(/^#/, '');
