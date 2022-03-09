@@ -402,7 +402,7 @@ $(document).ready(function(){
                     const elem = $(`h3${hash}`);
                     if($(elem).length) {
                         elem.click();
-                        $(document).scrollTop( $(elem).offset().top );
+                        if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
                     }
                     history.replaceState({}, document.title, ".");
                 }
