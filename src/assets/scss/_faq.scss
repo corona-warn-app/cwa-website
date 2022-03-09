@@ -42,12 +42,16 @@ a.glossary-link {
 }
 
 a.section-link {
+    display: inline-block;
+    line-height: 18px;
     text-decoration: none;
     color: black;
 }
 
 a.no-decoration {
+    display: inline-block;
     text-decoration: none;
+    line-height: 18px;
 }
 
 .topic-list {
