@@ -126,3 +126,14 @@ a.no-decoration {
     background: #d4eaf7; 
     padding:5px; 
 }
+
+.filterUse {
+    // background-color: #d4eaf7;
+    padding: 15px;
+    border-radius: 5px;
+    & > img {
+        padding-right: 10px;
+        position:relative;
+        bottom: 2px;
+    }
+}
