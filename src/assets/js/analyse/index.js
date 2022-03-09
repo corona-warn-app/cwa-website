@@ -11,6 +11,7 @@ import download from './download.js';
 import expand from './expand.js';
 import fullscreen from './fullscreen.js';
 import modal from './modal.js';
+import exportMenu from './exportMenu.js';
 import { totalValuesInit, setUpdatedTime } from './totalValues.js';
 import { debugTime, debugTimeEnd, debugGroup, debugGroupEnd } from './debug.js';
 

@@ -30,7 +30,7 @@ Mit dem 2G-Status erfüllen Nutzer\*innen automatisch auch die 3G+- und 3G-Regel
 
 <br></br>
 <center> 
-<img src="./g-status1.png" title="Statusnachweis im Zertifikatsbereich" style="align: center" width=250> 
+<img src="./g-status1.png" title="Statusnachweis im Zertifikatsbereich" alt="Statusnachweis im Zertifikatsbereich" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -38,7 +38,7 @@ Tippen Nutzer\*innen auf ihr Zertifikat, sehen sie außerdem einen **Infokasten 
 
 <br></br>
 <center> 
-<img src="./infokasten-statusnachweis.png" title="Infokasten zum Statusnachweis" style="align: center" width=250>
+<img src="./infokasten-statusnachweis.png" title="Infokasten zum Statusnachweis" alt="Infokasten zum Statusnachweis" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Infokasten zum Status-Nachweis unter dem jeweiligen Zertifikat.</em></figcaption>
 </center>
 <br></br>
@@ -52,7 +52,7 @@ Nutzer\*innen können dann über den Schalter zwischen dem QR-Code des „2G-Zer
 
 <br></br>
 <center> 
-<img src="./kombinierte-zertifikatsanzeige.png" title="Kombinierte Zertifikatsanzeige" style="align: center" width=250>
+<img src="./kombinierte-zertifikatsanzeige.png" title="Kombinierte Zertifikatsanzeige" alt="Kombinierte Zertifikatsanzeige" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Kombinierte Zertifikatsanzeige von 2G-Zertifikat und Testzertifikat.</em></figcaption>
 </center>
 <br></br>
@@ -71,7 +71,7 @@ Android-Nutzer\*innen steht dieses Feature ab Version 2.17 der CWA zur Verfügun
 
 <br></br>
 <center> 
-<img src="./status-benachrichtigung.png" title="Neuigkeiten im Status-Bereich" style="align: center" width=250>
+<img src="./status-benachrichtigung.png" title="Neuigkeiten im Status-Bereich" alt="Neuigkeiten im Status-Bereich" style="align: center" width=250>
 </center>
 <br></br>
 

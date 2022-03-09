@@ -62,11 +62,11 @@ To warn your visitors or guests you can go to the overview of your events under 
 
 
 <br></br>
-<center> <img src="./warn-for-others.png" title="Warn for others" style="align: center"> <img src="./warn-for-others(2).png" title="Warn for others" style="align: center"> </center>
+<center> <img src="./warn-for-others.png" title="Warn for others" alt="Warn for others" style="align: center"> <img src="./warn-for-others(2).png" title="Warn for others" alt="Warn for others" style="align: center"> </center>
 <br></br>
 
 <br></br>
-<center> <img src="./warn-for-others(3).png" title="Warn for others" style="align: center"> <img src="./warn-for-others(4).png" title="Warn for others" style="align: center"> </center>
+<center> <img src="./warn-for-others(3).png" title="Warn for others" alt="Warn for others" style="align: center"> <img src="./warn-for-others(4).png" title="Warn for others" alt="Warn for others" style="align: center"> </center>
 <br></br>
 
 If your **event is no longer in the overview**, you can scan your own QR code again. After you have selected "Warn for Others" via the three dots in the upper right corner, don’t select the event, but "Scan QR code".
@@ -80,7 +80,7 @@ Do I have the yellow vaccination booklet with me? What if I forget it at home? W
 You can manage your certificates under the **"Certificates" tab** in your Corona-Warn-App. To add a vaccination or recovery certificate, go to "Add Certificate". After that, you don't have to do anything but scan the QR code you received from your doctor, vaccination center or pharmacy. You will then always find your certificate under the "Certificates" tab.
 
 <br></br>
-<center> <img src="./certificates.png" title="Certificates tab" style="align: center"> <img src="./certificates(2).png" title="Add certificate" style="align: center"> </center>
+<center> <img src="./certificates.png" title="Certificates tab" alt="Certificates tab" style="align: center"> <img src="./certificates(2).png" title="Add certificate" alt="Add certificate" style="align: center"> </center>
 <br></br>
 
 **How to add a booster vaccination:**
@@ -99,7 +99,7 @@ Of course, the **app’s core function** remains central in the fight against th
 If you have received a positive test result, you can select **"Manage Your Tests"** on your app’s home screen to get to your test management center. Now there are **two ways to share your result**, depending on whether the test center is connected to the Corona-Warn-App. If you are not sure, just ask the staff on site.
 
 <br></br>
-<center> <img src="./homescreen-test-management.png" title="Homescreen" style="align: center"> </center>
+<center> <img src="./homescreen-test-management.png" title="Homescreen" alt="Homescreen" style="align: center"> </center>
 <br></br>
 
 **Option 1: Test site is connected to the Corona-Warn-App**
@@ -107,7 +107,7 @@ If you have received a positive test result, you can select **"Manage Your Tests
 In order for the test site to transfer your test result to the Corona-Warn-App and for you to share it, you should **agree on the test form to transfer your result to the app**. Then you can scan the QR code on the test form by going to your **test management center** on the app's home screen ("Manage Your Tests") and select "Scan QR code". After that you can share your test result by selecting **"Warn others"**.
  
 <br></br>
-<center> <img src="./manage-your-tests.png" title="Test Management Center" style="align: center"> </center>
+<center> <img src="./manage-your-tests.png" title="Test Management Center" alt="Test Management Center" style="align: center"> </center>
 <br></br>
 
 
@@ -118,7 +118,7 @@ If your test site is not connected to the Corona-Warn-App, you can call still sh
 To share your result, tap **"Enter TAN for PCR test" in your test management center**, enter the TAN you’ve received from the hotline and select "Warn others".
 
 <br></br>
-<center> <img src="./pcrtest-tan-en.png" title="Share PCR test result" style="align: center">  <img src="./enter-tan.png" title="Enter TAN" style="align: center"></center>
+<center> <img src="./pcrtest-tan-en.png" title="Share PCR test result" alt="Share PCR test result" style="align: center">  <img src="./enter-tan.png" title="Enter TAN" alt="Enter TAN" style="align: center"></center>
 <br></br>
 
 
@@ -127,7 +127,7 @@ After you’ve warned your fellow users you can give more information about your
  
 
 <br></br>
-<center> <img src="./symptoms.png" title="Enter symptoms" style="align: center"> </center>
+<center> <img src="./symptoms.png" title="Enter symptoms" alt="Enter symptoms" style="align: center"> </center>
 <br></br>
 
 **How to share your positive rapid test result:**
@@ -138,9 +138,9 @@ Once the test result is there, you can see it on your app’s home screen. If th
 
 
 <br></br>
-<center> <img src="./manage-your-tests.png" title="Test management center" style="align: center"> </center>
+<center> <img src="./manage-your-tests.png" title="Test management center" alt="Test Management Center" style="align: center"> </center>
 <br></br>
 
 <br></br>
-<center> <img src="./rapid-test-homescreen.png" title="Rapid test on home screen" style="align: center">  <img src="./share-positive-rapid-test.png" title="Share rapid test result" style="align: center"></center>
+<center> <img src="./rapid-test-homescreen.png" title="Rapid test on home screen" alt="Rapid test on home screen" style="align: center">  <img src="./share-positive-rapid-test.png" title="Share rapid test result" alt="Share rapid test result" style="align: center"></center>
 <br></br>

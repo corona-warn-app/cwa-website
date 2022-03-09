@@ -17,7 +17,7 @@ As of version 2.17, users can see the number of people in Germany who have recei
 
 <br></br>
 <center> 
-<img src="./booster_vaccination-en.png" title="Booster vaccination statistics" style="align: center" width=250>
+<img src="./booster_vaccination-en.png" title="Booster vaccination statistics" alt="Booster vaccination statistics" style="align: center" width=250>
 </center>
 <br></br>
 
@@ -27,7 +27,7 @@ In addition, users can now see the deletion date for each item in their recycle 
 
 <br></br>
 <center> 
-<img src="./date-of-deletion.png" title="Date of deletion in recycle bin" style="align: center" width=250>
+<img src="./date-of-deletion.png" title="Date of deletion in recycle bin" alt="Date of deletion in recycle bin" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Date of deletion in the recycle bin (Android)</em></figcaption>
 </center>
 <br></br>
@@ -40,7 +40,7 @@ For version 2.17, the project team has added a **link to the CWA’s social medi
 
 <br></br>
 <center> 
-<img src="./ios-social-media-en.png" title="Link CWA social media channels" style="align: center" width=250>
+<img src="./ios-social-media-en.png" title="Link CWA social media channels" alt="Link CWA social media channels" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Link to the CWA's social media channels (iOS).</em></figcaption>
 </center>
 <br></br>
@@ -60,7 +60,7 @@ In addition, the project team has revised the notes and procedure for positive P
 
 <br></br>
 <center> 
-<img src="./test-guidance(1).png" title="Guidance in case of positive test results" style="align: center" width=250> 
+<img src="./test-guidance(1).png" title="Guidance in case of positive test results" alt="Guidance in case of positive test results" style="align: center" width=250> 
 </center>
 <br></br>
 

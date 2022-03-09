@@ -50,59 +50,73 @@
 	
 
 	<div class="analyseRange">
-		{{#if page-contents.range.picker.timerange}}
-			<div class="analyseRangePicker-label">
-				{{page-contents.range.picker.timerange}}:
-			</div>
-		{{/if}}
-		<div class="analyseRangePicker">
-			<button class="btn analyseRangePicker-btn ">
-				<span>&nbsp;</span>
-				<img src="{{root}}assets/img/icons/down.svg">
-			</button>
-			<div class="analyseRangePicker-layer">
-				{{#if page-contents.range.picker.inputs}}
-					<div class="analyseRangePicker-inputs">
-						<div class="analyseRangePicker-inputs-set">
-							<div class="analyseRangePicker-inputs-label">
-								{{page-contents.range.picker.inputs.from}}
+		<fieldset>
+			{{#if page-contents.range.picker.timerange}}
+				<legend class="analyseRangePicker-label">
+					{{page-contents.range.picker.timerange}}:
+				</legend>
+			{{/if}}
+			<div class="analyseRangePicker">
+				<button class="btn analyseRangePicker-btn ">
+					<span>&nbsp;</span>
+					<img src="{{root}}assets/img/icons/down.svg">
+				</button>
+				<div class="analyseRangePicker-layer">
+					{{#if page-contents.range.picker.inputs}}
+						<div class="analyseRangePicker-inputs">
+							<div class="analyseRangePicker-inputs-set">
+								<div class="analyseRangePicker-inputs-label">
+									{{page-contents.range.picker.inputs.from}} ({{page-contents.range.picker.inputs.format}})
+								</div>
+								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off">
 							</div>
-							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.placeholder}}" autocomplete="off">
-						</div>
-						<div class="analyseRangePicker-inputs-set">
-							<div class="analyseRangePicker-inputs-label">
-								{{page-contents.range.picker.inputs.to}}
+							<div class="analyseRangePicker-inputs-set">
+								<div class="analyseRangePicker-inputs-label">
+									{{page-contents.range.picker.inputs.to}} ({{page-contents.range.picker.inputs.format}})
+								</div>
+								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off">
 							</div>
-							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.placeholder}}" autocomplete="off">
+							<div class="analyseRangePicker-actions-top">
+								{{#if page-contents.range.picker.apply}}
+									<button class="btn btn-secondary analyseRangePicker-apply">
+										{{page-contents.range.picker.apply}}
+									</button>
+								{{/if}}
+								{{#if page-contents.range.picker.cancel}}
+									<button class="btn analyseRangePicker-cancel">
+										{{page-contents.range.picker.cancel}}
+									</button>
+								{{/if}}
+							</div>
 						</div>
+					{{/if}}
+					<div class="analyseRangePicker-picker"></div>
+					<div class="analyseRangePicker-actions">
+						{{#if page-contents.range.picker.cancel}}
+							<button class="btn analyseRangePicker-cancel">
+								{{page-contents.range.picker.cancel}}
+							</button>
+						{{/if}}
+						{{#if page-contents.range.picker.apply}}
+							<button class="btn btn-secondary analyseRangePicker-apply">
+								{{page-contents.range.picker.apply}}
+							</button>
+						{{/if}}
 					</div>
-				{{/if}}
-				<div class="analyseRangePicker-picker"></div>
-				<div class="analyseRangePicker-actions">
-					{{#if page-contents.range.picker.cancel}}
-						<button class="btn analyseRangePicker-cancel">
-							{{page-contents.range.picker.cancel}}
-						</button>
-					{{/if}}
-					{{#if page-contents.range.picker.apply}}
-						<button class="btn btn-secondary analyseRangePicker-apply">
-							{{page-contents.range.picker.apply}}
-						</button>
-					{{/if}}
 				</div>
 			</div>
-		</div>
 
 
-		<input type="radio" name="analyseRange" class="analyseRangeCustom" value="">
+			<input type="radio" name="analyseRange" class="analyseRangeCustom" value="">
 
-		{{#each page-contents.range.radio}}
-			<label class="analyseRangeRadio {{#if active}}first{{/if}}">
-				<input type="radio" name="analyseRange" value="{{value}}">
-				<div class="analyseRangeRadio-box"></div>
-				<span>{{label}}</span>
-			</label>
-		{{/each}}
+			{{#each page-contents.range.radio}}
+				<label class="analyseRangeRadio {{#if active}}first{{/if}}" for="radio_{{value}}">
+					<input type="radio" name="analyseRange" value="{{value}}" id=radio_{{value}}>
+					<div class="analyseRangeRadio-box"></div>
+					<span>{{label}}</span>
+				</label>
+			{{/each}}
+		</fieldset>
 	</div>
 
 
@@ -137,7 +151,7 @@
 						<div class="analyseBoard-head">
 							{{#if title}}
 								<div class="analyseBoard-title">
-									<span class="analyseBoard-title-title">{{title}}</span> 
+									<h3 class="analyseBoard-title">{{title}}</h3>
 									<span class="analyseBoard-title-append"></span>
 								</div>
 							{{/if}}
@@ -235,7 +249,7 @@
 	<div class="analyseModalInfo" rel="{{page-contents.updateNoticeIcon.title}}">
 		<h2 class="headline analyseModal-title">
 			<button class="btn analyseModalInfo-close">
-				<img src="{{root}}assets/img/icons/Close.svg" aria-label="{{close}}>
+				<img src="{{root}}assets/img/icons/Close.svg" aria-label="{{close}}">
 			</button>
 			{{page-contents.updateNoticeIcon.title}}
 		</h2>
