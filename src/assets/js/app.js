@@ -293,17 +293,24 @@ $(document).ready(function(){
                 $('#glossary_container .word').each(function() {
                     highlightWord(searchString, $(this))       
                 })
-                $('#glossary_container .description').each((index,desc) => {
-                    if(!$(desc).is("a") && !$(desc).is("img")) {
-                        if($(desc).children().length === 0) {
-                            highlightWord(searchString, $(desc))       
+                $('#glossary_container .description').each((index,p) => {
+                    if(!$(p).is("a") && !$(p).is("img")) {
+                        if($(p).children().length === 0) {
+                            highlightWord(searchString, $(p))       
                         }
                         else {
-                            $(desc).children().each((index, child) => {
-                                if(!$(child).is("a") && !$(child).is("img")) {
-                                    highlightWord(searchString, $(child))
+                            let canContinue = true;
+                            const itemsToAvoid = [];
+                            $(p).children().each((index, child) => {
+                                if($(child).is("a") || $(child).is("img")) {
+                                    itemsToAvoid.push($(child))
+                                    canContinue = false;
                                 }
                             })
+                            if(canContinue) highlightWord(searchString, $(p))
+                            else {
+                                highlightWord(searchString, $(p), itemsToAvoid)
+                            } 
                         }
                     }
                 })
@@ -852,11 +859,7 @@ $(document).ready(function(){
                                     }
                                     return txt;
                                 }).join(" ");
-                                console.log(text);
-                                console.log("...", item.prop('outerHTML'))
-                                console.log("word", word)
-                                console.log("replace", item.prop('outerHTML').replace(word, text))
-                                word = item.prop('outerHTML').replace(word, text);
+                                word = item.prop('outerHTML').replace($(item).text(), text);
                             } else {
                                 word = item.prop('outerHTML');
                             }
