@@ -74,7 +74,9 @@
               <h3 class="section-title" id="{{id}}">{{title}}</h3>
               <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
                 {{#each accordion}}
-                  <div id="{{anchor}}-div" class="faq">
+                  {{#if duplicate}} <div id="{{duplicate}}_dup_{{../id}}" class="faq">
+                  {{else}} <div id="{{anchor}}-div" class="faq">
+                  {{/if}}
                     <dt class="accordion-faq-header{{#if active}} active{{/if}}">
                       <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
                       <span class="accordion-faq-item-icon"></span>
@@ -86,7 +88,7 @@
                         <p>{{{.}}}</p>
                         {{/each}}
                         {{/if}}
-                        <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
+                        <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{else}}<a href="#" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
                         <p><a href="#top">{{../../../page-contents.section-main.texts.to_top}}</a></p>
                       </div>
                     </dd>

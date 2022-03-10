@@ -342,6 +342,27 @@ $(document).ready(function(){
     }
 
     if (document.querySelector(".page-faq-results")) {
+        $.get({url: "faq_duplicate.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
+            data.map(question => {
+                if($(`#${question.anchor}`).length > 0) {
+                    const element = $(`#${question.anchor}`);
+                    $(element).children().each((index, child) => {
+                        $(child).children().each((i,elem) => {
+                            if($(elem).hasClass("accordion-faq-item-title"))
+                                $(child).attr("id", question.anchor).text(question.title)
+                            if($(elem).hasClass("accordion-faq-item-content")) {
+                                question.textblock.map(p => {
+                                    $(elem).prepend( `<p>${p}</p>` );
+                                })
+                                $(elem).find('.faq-anchor').attr('href', `#${question.anchor}`)
+                            }
+                        })
+                    })
+                }
+            })
+        })
+
+        
         $(window).scrollTop(0);
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-container-mobile").removeClass("d-none")
