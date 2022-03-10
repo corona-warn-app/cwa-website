@@ -409,6 +409,18 @@
                             "According to the decision of the federal and state health ministers, vaccinated or recovered persons who have received a booster vaccination currently do not have to provide a recent test in case of a 2G+ regulation. As of version 2.18 of the Corona-Warn-App, the proof status '2G+' is displayed if a certificate of a booster vaccination is stored in the app.",
                             "See also: <ul><li><a href='#admission_policy' target='_blank'>General information about the status proof display</a></li><li><a href='#admission_policy_2gplus' target='_blank'>What does the 2G+ status proof mean in concrete terms?</a></li><li><a href='#admission_policy_2gplus_not_shown' target='_blank'>Why is the 2G+ status proof not displayed even though I have a vaccination certificate or certificate of recovery and a negative test?</a></li><li><a href='#admission_policy_2gplus_howto' target='_blank'>How do I use the combined 2G+ display?</a></li></ul>"
                         ]
+                    },
+                    {
+                        "title": "What happens if the names of my certificates do not exactly match?",
+                        "anchor": "cert_fault_tolerant_name_handling",
+                        "active": false,
+                        "textblock": [
+                            "As of version 2.19 of the Corona-Warn-App, the assignment of certificates to persons is more fault-tolerant. Small differences in the spelling of first and last names are ignored so that the certificates are still automatically assigned to the same person.",
+                            "When comparing two certificates, the Corona-Warn-App can now break down the first and last names into their components in each case and thus recognize that two certificates belong to one person if: <ul><li>the first and last names either match exactly or at least one first name and at least one last name match and</li><li>the dates of birth match exactly.</li></ul>",
+                            "The precondition that the dates of birth in the certificates must match exactly is retained.",
+                            "If the Corona-Warn-App changes anything in the grouping of your certificates as a result of this adjustment, you will be informed about it with a notification.",
+                            "For more information, visit the blog: <a href='../blog/2022-03-16-cwa-version-2-19/' target='_blank'>CWA 2.19 improves the assignment of certificates to persons</a>"
+                        ]
                     }
                 ]
             },
