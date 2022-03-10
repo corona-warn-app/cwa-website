@@ -121,7 +121,7 @@ function getSitemapEntries(content) {
     var entry = ''
     pageLines.forEach((line)=> {
       if(line.includes(pageTitle)) {
-        entry += `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '').replace('–','-')}${'"'}`
+        entry += `${'{ "page": "'}${'/'+page}${'", "title": "'}${line.replace(pageTitle,'').replace(/['"]+/g, '')}${'"'}`
       }
       if(line.includes(pageLayout)) {
         entry += `${', "layout": "'}${line.replace(pageLayout,'')}${'"'}`
