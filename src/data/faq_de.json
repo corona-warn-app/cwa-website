@@ -408,6 +408,18 @@
                             "Laut Beschluss der Gesundheitsminister*innen von Bund und Ländern müssen Geimpfte oder Genesene, die eine Auffrischimpfung (Boosterimpfung) erhalten haben, bei einer 2G+-Regelung momentan keinen aktuellen Test vorlegen. Ab Version 2.18 der Corona-Warn-App wird der Nachweis-Status „2G+“ angezeigt, wenn ein Zertifikat einer Auffrischimpfung in der App abgelegt ist.",
                             "Siehe auch: <ul><li><a href='#admission_policy' target='_blank'>Grundlegendes zur Anzeige des Status-Nachweises</a></li><li><a href='#admission_policy_2gplus' target='_blank'>Was bedeutet konkret der 2G+-Status-Nachweis?</a></li><li><a href='#admission_policy_2gplus_not_shown' target='_blank'>Warum wird der 2G+ -Status-Nachweis nicht angezeigt, obwohl ich ein Impf- oder Genesenenzertifikat und einen negativen Test habe?</a></li><li><a href='#admission_policy_2gplus_howto' target='_blank'>Wie verwende ich die kombinierte 2G+-Anzeige?</a></li></ul>"
                         ]
+                    },
+                    {
+                        "title": "Was passiert, wenn die Namen meiner Zertifikate nicht exakt übereinstimmen?",
+                        "anchor": "cert_fault_tolerant_name_handling",
+                        "active": false,
+                        "textblock": [
+                            "Ab Version 2.19 der Corona-Warn-App ist die Zuordnung von Zertifikaten zu Personen fehlertoleranter gestaltet. Kleine Unterschiede in der Schreibweise von Vor- und Nachnamen werden ignoriert, sodass die Zertifikate trotzdem derselben Person automatisch zugeordnet werden.",
+                            "Die Corona-Warn-App kann nun beim Vergleich von zwei Zertifikaten jeweils den Vor- und Nachnamen in seine Bestandteile zerlegen und dadurch erkennen, dass zwei Zertifikate zu einer Person gehören, wenn: <ul><li>Vor- und Nachnamen entweder exakt übereinstimmen oder mindestens ein Vorname und mindestens ein Nachname übereinstimmen und</li><li>die Geburtsdaten exakt übereinstimmen.</li></ul>",
+                            "Die Vorbedingung, dass die Geburtsdaten in den Zertifikaten exakt übereinstimmen müssen, bleibt erhalten.",
+                            "Sollte die Corona-Warn-App durch diese Anpassung etwas an der Gruppierung Ihrer Zertifikate verändern, werden Sie darüber mit einer Benachrichtigung informiert.",
+                            "Weitere Informationen finden Sie im Blog: <a href='../blog/2022-03-16-cwa-version-2-19/' target='_blank'>CWA 2.19 verbessert die Zuordnung von Zertifikaten zu Personen</a>"
+                        ]
                     }
                 ]
             },
