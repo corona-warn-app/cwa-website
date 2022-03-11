@@ -416,8 +416,8 @@
                         "active": false,
                         "textblock": [
                             "As of version 2.19 of the Corona-Warn-App, the assignment of certificates to persons is more fault-tolerant. Small differences in the spelling of first and last names are ignored so that the certificates are still automatically assigned to the same person.",
-                            "When comparing two certificates, the Corona-Warn-App can now break down the first and last names into their components in each case and thus recognize that two certificates belong to one person if: <ul><li>the first and last names either match exactly or at least one first name and at least one last name match and</li><li>the dates of birth match exactly.</li></ul>",
-                            "The precondition that the dates of birth in the certificates must match exactly is retained.",
+                            "The Corona-Warn-App can recognize that certificates belong to one person if the dates of birth match exactly and: <ul><li>the first and last names match exactly,</li><li>at least one first name and at least one last name match or</li><li>the first and last names are swapped.</li></ul>",
+                            "In case your name contains umlauts, they will be converted automatically. If you have a doctorate, it will be ignored.",
                             "If the Corona-Warn-App changes anything in the grouping of your certificates as a result of this adjustment, you will be informed about it with a notification.",
                             "For more information, visit the blog: <a href='../blog/2022-03-16-cwa-version-2-19/' target='_blank'>CWA 2.19 improves the assignment of certificates to persons</a>"
                         ]
