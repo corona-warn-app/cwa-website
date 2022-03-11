@@ -311,16 +311,21 @@ function copyFAQ(lang) {
               data['section-main'].topics.forEach((dtopic) => {
                 dtopic.sections.forEach((dsection) => {
                   dsection.accordion.forEach((dfaqEntry) => {
-                    if(dfaqEntry.anchor !== undefined && dfaqEntry.anchor === faqEntry.duplicate) {
-                      faqEntry = dfaqEntry;
-                      faqEntry.anchor = `${dfaqEntry.anchor}_dup_${topic.id}`;
+                    if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                      if(!faq[`${dfaqEntry.anchor}_dup_${section.id}`]) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        let searchEntry = result.title + " " + result.textblock.join(" ");
+                        faq[result.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+                      }
                     }
                   })
                 })
               })
+            } else {
+              let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+              faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
             }
-            let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-            faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
           })
         })
       });
@@ -329,7 +334,6 @@ function copyFAQ(lang) {
     .pipe(rename('faq.json'))
     .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
 }
-
 function copyFAQDuplicate(lang) {
   return gulp
     .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
