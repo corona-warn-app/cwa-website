@@ -263,6 +263,11 @@ $(document).ready(function(){
             $(".bread-search").removeClass("d-none");
             $("#search_separator").removeClass("d-none");
 
+            //remove search params from faq permalinks
+            $('.faq-anchor').each((function() {
+                $(this).attr('href', window.location.origin + window.location.pathname + $(this).attr('href').replace(window.location.search, ''))
+            }))
+
             //highlight words
             if (searchString != "") {
                 $('.accordion-faq-item-title').each(function() {
