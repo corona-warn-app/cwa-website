@@ -78,13 +78,14 @@
         &:first-child {
             margin-top: 0;
         }
-        &:after {
+        &-item-button {
             content: "";
-            width: 8px;
-            height: 12px;
+            border: none;    
+            width: 20px;
+            height: 20px;
             position: absolute;
             right: nth($accordion-header-padding,2)/2;
-            background: transparent url("../img/icons/arrow-right-light.svg");
+            background: transparent url("../img/icons/arrow-right-light.svg") no-repeat center;
             top: 50%;
             transform: translate3d(0, -50%, 0);
         }
@@ -92,7 +93,7 @@
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
 
-            &:after {
+            button {
                 background-image: url("../img/icons/arrow-right-light.svg");
                 transform: rotate(90deg);
             }
