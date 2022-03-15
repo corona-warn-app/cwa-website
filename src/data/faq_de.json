@@ -2677,6 +2677,11 @@
                     "description": "Liste der empfangenen und vorübergehend im Betriebssystemspeicher abgelegten kurzlebigen zufälligen Bluetooth-IDs. Die Begegnungs-Aufzeichnung wird im Rahmen der Risiko-Ermittlung bei der Risiko-Überprüfung gelesen. Alle kurzlebigen zufälligen Bluetooth-IDs, die älter als 14 Tage sind, werden automatisch gelöscht. Die Begegnungs-Aufzeichnung kann von Personen, die die App nutzen, jederzeit auch als Ganzes gelöscht werden. Bei der Deinstallation der CWA wird die Begegnungs-Aufzeichnung automatisch gelöscht."
                 },
                 {
+                    "term": "Bluetooth-Low-Energy-Technologie (BLE)",
+                    "anchor": "ble",
+                    "description": "Die Bluetooth-Low-Energy-Technologie (BLE-Technologie) ist eine Funktechnik, mit der sich Geräte in einer Umgebung von etwa 10 Metern vernetzen lassen. Die Corona-Warn-App nutzt für die Risiko-Ermittlung diesen Standard. Im Vergleich zum klassischen Bluetooth hat BLE einen besonders geringen Einfluss auf die Akkuleistung."
+                },
+                {
                     "term": "Business Rules",
                     "anchor": "business_rules",
                     "description": "Im Kontext der Einführung <a href='#glossary_digital_certificate'>digitaler Zertifikate</a> für COVID-19 wurde durch das eHealth Network der Europäischen Kommission und durch die EU-Länder abgestimmt, dass jedes Land die individuellen Regeln zusammenstellt, die im grenzüberschreitenden Reiseverkehr zu prüfen sind. Diese „Business Rules“ bestehen in der Regel aus zwei Kategorien: <ul><li>Ungültigkeitsregeln (invalidation rules) des Herausgeber-Landes (country of administration), die bestimmen, unter welchen Umständen ein <a href='#glossary_digital_certificate'>digitales Zertifikat</a> nicht anerkannt wird</li><li>Akzeptanz-Regeln (acceptance rules) des Ziel-Landes (country of arrival), die erfüllt sein müssen, um in das Land einreisen zu können</li></ul>"
