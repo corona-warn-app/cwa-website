@@ -668,7 +668,7 @@ $(document).ready(function(){
                 $("#bread_separator").removeClass("d-none");
                 $("#topic_separator").removeClass("d-none");
                 $(".bread-topic").text($(this).parent().find(".section-head").text())
-                $(".bread-section").text($(this).find("a").text())
+                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text())
                 $("#bread_separator").show();
                 $(".bread-section").show();
                 if(search) {
@@ -753,6 +753,22 @@ $(document).ready(function(){
                 $(".btn-close").click();
             });
         }
+        
+        $(".section-item").each((index, section) => {
+            if(search) {
+                setTimeout(() => {
+                    const item = $(section).find("a").attr('href')
+                    let counter = 0;
+                    $(`${item} .faq`).each((index, faq) => {
+                        if($(faq).is(":visible")) {
+                            $(faq).parent().find("h3").show();
+                            counter++;
+                        }
+                    })
+                    $(section).find(".count").text(' ('+counter.toString()+')')
+                }, 500);
+            }
+        })
     }
 
     // collapses/expands all accordions on button click in the FAQ

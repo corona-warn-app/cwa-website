@@ -7,7 +7,7 @@
         <div class="topic-list {{id}}">
           <b class="section-head {{id}}">{{title}}</b>
           {{#each sections}}
-            <div class="section-item mb-2"><a href="#{{id}}" class="no-decoration">{{title}}</a></div>
+            <div class="section-item mb-2"><a href="#{{id}}" class="no-decoration">{{title}}<b class="count"></b></a></div>
           {{/each}}
         </div>
         </br>
@@ -21,7 +21,7 @@
 
   <main class="main">
     <form method="get" id="faq-search-form" class="w-100">
-      <div class="input-group mb-5">
+      <div class="input-group mb-2">
         <div id="clean_search" class="input-group w-50">
           <div class="input-group">
             <input type="text" class="form-control mr-3" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
@@ -36,16 +36,16 @@
           <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
         </select>
         <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
+        <div class="filterUse"><img src="../../../assets/img/icons/info.svg"><span>{{page-contents.section-main.texts.info-filteruse}}</span></div>
       </div>
     </form>
     <div id="no_results" class="d-none">
       <p>{{page-contents.section-main.texts.no-results}}</p>
     </div>
-    <div class="d-flex justify-content-between pb-2">
-      <div class="filterUse"><img src="../../../assets/img/icons/info.svg"><span>{{page-contents.section-main.texts.info-filteruse}}</span></div>
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> {{page-contents.section-main.texts.results-found}}</span></b></p>
       <Button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.collapse}}</Button>
     </div>
-    <p class="breadcrumbs"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> {{page-contents.section-main.texts.results-found}}</span></b></p>
     <div id="faq-container-mobile" class="d-none">
       {{#each page-contents.section-main.topics}}
           <div id="{{id}}" class="topic-container">
@@ -68,7 +68,7 @@
     <div id="faq-container">
       {{#each page-contents.section-main.topics}}
         <div>
-          <h1 id="{{id}}" class="topic-title">{{title}}</h1>
+          <h1 id="{{id}}" class="topic-title mb-4">{{title}}</h1>
           {{#each sections}}
             <div id="{{id}}" class="section-container">     
               <h3 class="section-title" id="{{id}}">{{title}}</h3>
@@ -115,7 +115,7 @@
       </dl>
     </div>
     <div id="glossary_container">
-      <h1 class="topic-title" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h1>
+      <h1 class="topic-title mb-4" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h1>
       <div class="glossary-result"></div>
       {{#if page-contents.glossary.optionalText}}
         <p class="mb-3">{{page-contents.glossary.optionalText}}</p>
