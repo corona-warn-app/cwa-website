@@ -773,9 +773,10 @@ $(document).ready(function(){
                 $(".btn-close").click();
             });
         }
-        
+        //Show search results count on the side menu
         $(".section-item").each((index, section) => {
             if(search) {
+                $(section).find(".count").text(' ...')
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
                     let counter = 0;
@@ -786,7 +787,7 @@ $(document).ready(function(){
                         }
                     })
                     $(section).find(".count").text(' ('+counter.toString()+')')
-                }, 500);
+                }, 750);
             }
         })
     }
