@@ -44,7 +44,7 @@
     </div>
     <div class="d-flex justify-content-between align-items-center mb-2">
       <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> {{page-contents.section-main.texts.results-found}}</span></b></p>
-      <Button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.collapse}}</Button>
+      <button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.all-collapse}}</button>
     </div>
     <div id="faq-container-mobile" class="d-none">
       {{#each page-contents.section-main.topics}}
@@ -53,7 +53,7 @@
                 <div id="{{id}}-div">
                   <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header">
                     <h3 class="accordion-faq-item-title" id="{{anchor}}">{{title}}</h3>
-                    <span class="accordion-faq-item-icon"></span>
+                    <button class="accordion-faq-header-item-button" aria-label="{{../../../page-contents.section-main.button-collapse.fields.collapse}}"></button>
                   </dt>
                   <dd class="accordion-faq-body">
                     <div class="accordion-faq-item-content">
@@ -79,7 +79,7 @@
                   {{/if}}
                     <dt class="accordion-faq-header{{#if active}} active{{/if}}">
                       <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
-                      <span class="accordion-faq-item-icon"></span>
+                      <button class="accordion-faq-header-item-button" aria-label="{{../../../page-contents.section-main.button-collapse.fields.collapse}}"></button>
                     </dt>
                     <dd class="accordion-faq-body">
                       <div class="accordion-faq-item-content">
