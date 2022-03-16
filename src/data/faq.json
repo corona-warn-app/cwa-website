@@ -409,6 +409,18 @@
                             "According to the decision of the federal and state health ministers, vaccinated or recovered persons who have received a booster vaccination currently do not have to provide a recent test in case of a 2G+ regulation. As of version 2.18 of the Corona-Warn-App, the proof status '2G+' is displayed if a certificate of a booster vaccination is stored in the app.",
                             "See also: <ul><li><a href='#admission_policy' target='_blank'>General information about the status proof display</a></li><li><a href='#admission_policy_2gplus' target='_blank'>What does the 2G+ status proof mean in concrete terms?</a></li><li><a href='#admission_policy_2gplus_not_shown' target='_blank'>Why is the 2G+ status proof not displayed even though I have a vaccination certificate or certificate of recovery and a negative test?</a></li><li><a href='#admission_policy_2gplus_howto' target='_blank'>How do I use the combined 2G+ display?</a></li></ul>"
                         ]
+                    },
+                    {
+                        "title": "What happens if the names of my certificates do not exactly match?",
+                        "anchor": "cert_fault_tolerant_name_handling",
+                        "active": false,
+                        "textblock": [
+                            "As of version 2.19 of the Corona-Warn-App, the assignment of certificates to persons is more fault-tolerant. Small differences in the spelling of first and last names are ignored so that the certificates are still automatically assigned to the same person.",
+                            "The Corona-Warn-App can recognize that certificates belong to one person if the dates of birth match exactly and: <ul><li>the first and last names match exactly,</li><li>at least one first name and at least one last name match or</li><li>the first and last names are swapped.</li></ul>",
+                            "If a name contains umlauts, they will be converted automatically. A doctorate in a name will now be ignored for the purpose of comparing names.",
+                            "If the Corona-Warn-App changes anything in the grouping of your certificates as a result of this adjustment, you will be informed about it with a notification.",
+                            "For more information, visit the blog: <a href='../blog/2022-03-16-cwa-version-2-19/' target='_blank'>CWA 2.19 improves the assignment of certificates to persons</a>"
+                        ]
                     }
                 ]
             },
@@ -938,11 +950,11 @@
                         ]
                     },
                     {
-                        "title": "Can I share my positive rapid antigen test result via the TAN hotline?",
+                        "title": "Can I share my positive rapid antigen test or PCR rapid test result via the TAN hotline?",
                         "anchor": "rat_tan_hotline",
                         "active": false,
                         "textblock": [
-                            "It is not possible to share a positive rapid test result via the TAN hotline. Only rapid test results communicated via the app have been performed according to the dual control principle and by trained personnel, and can therefore be shared."
+                            "It is not possible to share a positive rapid test or rapid PCR test result via the TAN hotline."
                         ]
                     },
                     {
