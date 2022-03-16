@@ -7,6 +7,8 @@ author: CWA-Team, 10 am
 layout: blog
 ---
 
+*Updated March 16, 2022 at 3 pm* 
+
 The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have released **version 2.19 of the Corona-Warn-App (CWA)**. The update enables a **more error-tolerant assignment of certificates to persons**. This means, for example, that minor differences in first and last names are ignored and name additions such as academic titles are filtered out so that certificates are still assigned to the same person.
 
 <!-- overview -->
@@ -24,6 +26,8 @@ With the update, this is no longer necessary, as the CWA can now break down the 
 **Important to note:** The precondition that the date of birth in both certificates must match has not changed. 
 
 The CWA will inform the users for whom the adjustment changes something in the grouping of their certificates. 
+
+*Update as of March 16, 2022:* In addition, the project team has prepared the CWA to exchange certificates as well as register PCR rapid tests and submit test results. These two features will be available to CWA users once the rules for the exchange of certificates are implemented and PCR rapid test QR codes are issued. More information on these features will be available here soon.
 
 Version 2.19, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona warning app will be available to users here within the next 48 hours. 
 
