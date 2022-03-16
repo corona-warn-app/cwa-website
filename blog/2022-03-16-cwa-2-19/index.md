@@ -27,7 +27,7 @@ With the update, this is no longer necessary, as the CWA can now break down the 
 
 The CWA will inform the users for whom the adjustment changes something in the grouping of their certificates. 
 
-*Update as of March 16, 2022:* In addition, the project team has prepared the CWA to exchange certificates as well as register PCR rapid tests and submit test results. These two features will be available to CWA users once the rules for the exchange of certificates are implemented and PCR rapid test QR codes are issued. More information on these features will be available here soon.
+*Update as of March 16, 2022:* In addition, the project team has prepared the CWA to exchange certificates automatically as well as register PCR rapid tests and submit test results. These two features will be available to CWA users once the rules for the exchange of certificates are implemented and PCR rapid test QR codes are issued. More information on these features will be available here soon.
 
 Version 2.19, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona warning app will be available to users here within the next 48 hours. 
 
