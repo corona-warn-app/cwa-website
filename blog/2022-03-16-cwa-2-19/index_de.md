@@ -7,8 +7,6 @@ author: CWA-Team, 10 Uhr
 layout: blog
 ---
 
-*Aktualisiert am 16.03.22 um 15:00 Uhr*
-
 Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.19 der Corona-Warn-App (CWA)** veröffentlicht. Das Update ermöglicht eine **fehlertolerantere Zuordnung** von Zertifikaten zu Personen. Damit werden beispielsweise kleinere Unterschiede bei Vor- und Nachnamen ignoriert und Namenszusätze wie Doktor-Titel herausgefiltert, sodass die Zertifikate trotzdem derselben Person zugeordnet werden.
 
 <!-- overview -->
@@ -26,8 +24,6 @@ Mit dem Update ist das nicht mehr nötig, da die CWA nun beim Vergleich von zwei
 **Weiterhin wichtig zu beachten:** Die Vorbedingung, dass die Geburtsdaten in den Zertifikaten exakt übereinstimmen müssen, bleibt bestehen. 
 
 Die CWA informiert die Nutzer\*innen, bei denen sich durch die Anpassung etwas an der Gruppierung ihrer Zertifikate ändert. 
-
-*Update vom 16.03.22:* Außerdem hat das Projektteam die CWA mit Version 2.19 darauf vorbereitet, Zertifikate auszutauschen bzw. PCR-Schnelltests zu registrieren und Testergebnisse zu übermitteln. Sobald die Regeln für den Austausch von Zertifikaten implementiert wurden und PCR-Schnelltest-QR-Codes ausgestellt werden, stehen diese beiden Funktionen den CWA-Nutzer\*innen zur Verfügung. Weitere Informationen zu diesen Funktionen finden Sie zeitnah hier. 
 
 Version 2.19 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung. 
 
