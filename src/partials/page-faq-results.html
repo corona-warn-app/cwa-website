@@ -43,7 +43,7 @@
       <p>{{page-contents.section-main.texts.no-results}}</p>
     </div>
     <div class="d-flex justify-content-between align-items-center mb-2">
-      <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> {{page-contents.section-main.texts.results-found}}</span></b></p>
+      <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> <span class="result-found d-none">{{page-contents.section-main.texts.result-found}}</span><span class="results-found">{{page-contents.section-main.texts.results-found}}</span></span></b></p>
       <button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.all-collapse}}</button>
     </div>
     <div id="faq-container-mobile" class="d-none">
@@ -74,7 +74,7 @@
               <h3 class="section-title" id="{{id}}">{{title}}</h3>
               <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
                 {{#each accordion}}
-                  {{#if duplicate}} <div id="{{duplicate}}_dup_{{../id}}" class="faq">
+                  {{#if duplicate}} <div id="{{duplicate}}_dup_{{../id}}-div" class="faq">
                   {{else}} <div id="{{anchor}}-div" class="faq">
                   {{/if}}
                     <dt class="accordion-faq-header{{#if active}} active{{/if}}">

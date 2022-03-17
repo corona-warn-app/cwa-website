@@ -90,6 +90,14 @@ $(document).ready(function(){
     const throttledHandleScrollFAQMenu = throttle(handleScrollFAQMenu, 500)
     document.addEventListener('scroll', throttledHandleScrollFAQMenu)
 
+    //scrolling menu items to display in window
+    setTimeout(() => {
+        const item = $(".section-item.active")
+        if(item) {
+            $(menu).scrollTop(item.offset().top - item.outerHeight() - 180)
+        }
+    }, 500);
+
     $('.js-slider').slick({
         dots: true,
         infinite: true,
@@ -282,6 +290,7 @@ $(document).ready(function(){
             $("#counter").text(counter);
             $(".bread-search").removeClass("d-none");
             $("#search_separator").removeClass("d-none");
+            handleResultFoundTextVisibility(counter)
 
             //remove search params from faq permalinks
             $('.faq-anchor').each((function() {
@@ -369,12 +378,12 @@ $(document).ready(function(){
     if (document.querySelector(".page-faq-results")) {
         $.get({url: "faq_duplicate.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
             data.map(question => {
-                if($(`#${question.anchor}`).length > 0) {
-                    const element = $(`#${question.anchor}`);
+                if($(`#${question.anchor}-div`).length > 0) {
+                    const element = $(`#${question.anchor}-div`);
                     $(element).children().each((index, child) => {
                         $(child).children().each((i,elem) => {
                             if($(elem).hasClass("accordion-faq-item-title"))
-                                $(child).attr("id", question.anchor).text(question.title)
+                                $(elem).attr("id", question.anchor).text(question.title)
                             if($(elem).hasClass("accordion-faq-item-content")) {
                                 question.textblock.map(p => {
                                     $(elem).prepend( `<p>${p}</p>` );
@@ -549,6 +558,7 @@ $(document).ready(function(){
                             $(".bread-topic").text($(this).text());
                             $("#bread_separator").addClass("d-none");
                             $(".bread-section").hide();
+                            handleResultFoundTextVisibility(glossaryList)
                         }
                         else {
                             $("#glossary_container").hide();
@@ -571,6 +581,7 @@ $(document).ready(function(){
                                 })
                                 counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
                                 $("#counter").text(counter);
+                                handleResultFoundTextVisibility(counter)
                             }, 500)
                             $("#topic_separator").removeClass("d-none");
                             $(".bread-topic").text($(this).text());
@@ -611,6 +622,7 @@ $(document).ready(function(){
                         $(".bread-topic").text($(this).text());
                         $("#bread_separator").addClass("d-none");
                         $(".bread-section").hide();
+                        handleResultFoundTextVisibility(glossaryList)
                     } else {
                         $("#faq-container").show();
                         updateResults(search, topic, faq);
@@ -634,6 +646,7 @@ $(document).ready(function(){
                             })
                             counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
                             $("#counter").text(counter);
+                            handleResultFoundTextVisibility(counter)
                         }, 500)
                         $("#topic_separator").removeClass("d-none");
                         $(".bread-topic").text($(this).text());
@@ -665,6 +678,7 @@ $(document).ready(function(){
                         $(".bread-topic").text($(this).parent().find("b").text());
                         $("#bread_separator").addClass("d-none");
                         $(".bread-section").hide();
+                        handleResultFoundTextVisibility(glossaryList)
                     }
                     return;
                 } else $("#glossary_container").hide();
@@ -702,6 +716,7 @@ $(document).ready(function(){
                         })
                         counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
                         $("#counter").text(counter);
+                        handleResultFoundTextVisibility(counter)
                     }, 500)
                     
                     $(".bread-search").removeClass("d-none");
@@ -776,7 +791,7 @@ $(document).ready(function(){
         //Show search results count on the side menu
         $(".section-item").each((index, section) => {
             if(search) {
-                $(section).find(".count").text(' ...')
+                $(section).find(".count").append().text(' ...')
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
                     let counter = 0;
@@ -788,6 +803,9 @@ $(document).ready(function(){
                     })
                     $(section).find(".count").text(' ('+counter.toString()+')')
                 }, 750);
+            }
+            else {
+                $(section).find(".count").remove()
             }
         })
     }
@@ -935,5 +953,16 @@ $(document).ready(function(){
             result = fResult;
         }
         $(element).html(result)
+    }
+
+    function handleResultFoundTextVisibility(counter) {
+        if(counter === 1) {
+            $(".result-found").removeClass("d-none");
+            $(".results-found").addClass("d-none");
+        }
+        else {
+            $(".result-found").addClass("d-none");
+            $(".results-found").removeClass("d-none");
+        }
     }
 });
