@@ -5,9 +5,9 @@
     <ul class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
       {{#each page-contents.section-main.topics}}
         <div class="topic-list {{id}}">
-          <b class="section-head {{id}}">{{title}}</b>
+          <b class="section-head {{id}}">{{{title}}}</b>
           {{#each sections}}
-            <div class="section-item mb-2"><a href="#{{id}}" class="no-decoration">{{title}}<b class="count"></b></a></div>
+            <div class="section-item mb-2"><a href="#{{id}}" class="no-decoration">{{{title}}}<b class="count"></b></a></div>
           {{/each}}
         </div>
         </br>
@@ -31,7 +31,7 @@
         <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
           <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
           {{#each page-contents.section-main.topics}}
-            <option value="{{id}}">{{title}}</option>
+            <option value="{{id}}">{{{title}}}</option>
           {{/each}}
           <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
         </select>
@@ -43,7 +43,7 @@
       <p>{{page-contents.section-main.texts.no-results}}</p>
     </div>
     <div class="d-flex justify-content-between align-items-center mb-2">
-      <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{title}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{title}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> <span class="result-found d-none">{{page-contents.section-main.texts.result-found}}</span><span class="results-found">{{page-contents.section-main.texts.results-found}}</span></span></b></p>
+      <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{{title}}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{{title}}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> <span class="result-found d-none">{{page-contents.section-main.texts.result-found}}</span><span class="results-found">{{page-contents.section-main.texts.results-found}}</span></span></b></p>
       <button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.all-collapse}}</button>
     </div>
     <div id="faq-container-mobile" class="d-none">
@@ -52,7 +52,7 @@
             <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
                 <div id="{{id}}-div">
                   <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header">
-                    <h3 class="accordion-faq-item-title" id="{{anchor}}">{{title}}</h3>
+                    <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
                     <button class="accordion-faq-header-item-button" aria-label="{{../../../page-contents.section-main.button-collapse.fields.collapse}}"></button>
                   </dt>
                   <dd class="accordion-faq-body">
@@ -68,10 +68,10 @@
     <div id="faq-container">
       {{#each page-contents.section-main.topics}}
         <div>
-          <h1 id="{{id}}" class="topic-title mb-4">{{title}}</h1>
+          <h1 id="{{id}}" class="topic-title mb-4">{{{title}}}</h1>
           {{#each sections}}
             <div id="{{id}}" class="section-container">     
-              <h3 class="section-title" id="{{id}}">{{title}}</h3>
+              <h3 class="section-title" id="{{id}}">{{{title}}}</h3>
               <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
                 {{#each accordion}}
                   {{#if duplicate}} <div id="{{duplicate}}_dup_{{../id}}-div" class="faq">

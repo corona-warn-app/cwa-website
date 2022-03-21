@@ -93,8 +93,11 @@ $(document).ready(function(){
     //scrolling menu items to display in window
     setTimeout(() => {
         const item = $(".section-item.active")
-        if(item) {
+        const head = $(".topic-list.active")
+        if(item && item.offset()) {
             $(menu).scrollTop(item.offset().top - item.outerHeight() - 180)
+        } else if(head && head.offset()) {
+            $(menu).scrollTop(head.offset().top - 30 - 180)
         }
     }, 500);
 
@@ -383,7 +386,7 @@ $(document).ready(function(){
                     $(element).children().each((index, child) => {
                         $(child).children().each((i,elem) => {
                             if($(elem).hasClass("accordion-faq-item-title"))
-                                $(elem).attr("id", question.anchor).text(question.title)
+                                $(elem).attr("id", question.anchor).html(question.title)
                             if($(elem).hasClass("accordion-faq-item-content")) {
                                 question.textblock.map(p => {
                                     $(elem).prepend( `<p>${p}</p>` );
