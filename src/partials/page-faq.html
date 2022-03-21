@@ -18,7 +18,7 @@
         </div>
       </form>
       </div>
-      <center><a href="results" class="no-decoration">{{page-contents.section-main.texts.view-all}}</a></center>
+      <center><a href="results" class="no-decoration">{{page-contents.section-main.texts.view-all-topics-questions}}</a></center>
     </div>
 
     <div class="container">
@@ -28,12 +28,14 @@
         <div class="col-sm-2">
           <img src="{{icon}}" alt="{{title}}" height="29">
           <p><a href="results/?search=&topic={{id}}" class="no-decoration text-black"><b>{{title}}</b></a></p>
-          {{#each sections}}
+          <div class="{{#if sections.[6]}}section-column{{/if}}">
+            {{#each sections}}
             {{#if indexed}}
               <p><a href="results/?search=&topic={{../id}}#{{id}}" class="section-link">{{title}}</a></p>
             {{/if}}
           {{/each}}
-          <p><a href="results/?search=&topic={{id}}" class="no-decoration">{{../page-contents.section-main.texts.goto-topics}}</a></p>
+          </div>
+          <p><a href="results/?search=&topic={{id}}" class="no-decoration">{{#if sections.[6]}}{{../page-contents.section-main.texts.view-all-topics-questions}}{{else}}{{../page-contents.section-main.texts.goto-topics}}{{/if}}</a></p>
         </div>
         {{/each}}
       </div>

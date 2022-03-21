@@ -88,6 +88,21 @@ a.no-decoration {
     line-height: 18px !important;
 }
 
+.section-column {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+        width: 100%;
+        height: 4em;
+    }
+}
+
 .topic-title {
     color: #0074A3;
     font-weight: bold;
