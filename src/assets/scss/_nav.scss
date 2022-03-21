@@ -133,8 +133,10 @@
 .tab-content {
   > .tab-pane {
     display: none;
+    outline: none;
   }
   > .active {
     display: block;
+    outline: none;
   }
 }

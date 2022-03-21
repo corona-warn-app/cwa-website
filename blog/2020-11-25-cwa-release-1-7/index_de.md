@@ -18,7 +18,7 @@ Mit Corona-Warn-App Version 1.7 kann die **Risikoüberprüfung mehrmals täglich
 
 Des Weiteren erhalten Nutzer\*innen zwei Stunden nachdem sie das positive Testergebnis in der App geöffnet haben, eine **Erinnerung das Ergebnis zu teilen**, sofern das noch nicht geschehen ist. Nach weiteren vier Stunden erfolgt eine zweite Erinnerung sollte der oder die Nutzer\*in das Testergebnis dann noch nicht geteilt haben. Mit einem Klick auf die Erinnerung gelangen Nutzer\*innen direkt zur Funktion zum Teilen ihres Ergebnisses.  
  
-<img src="./reminder-test-result-1-7.jpg" title="Corona-Warn-App Reminder to Share Test Result" style="valign: center">
+<img src="./reminder-test-result-1-7.jpg" title="Corona-Warn-App Erinnerung zum Teilen des Tests" alt="Corona-Warn-App Erinnerung zum Teilen des Tests" style="valign: center">
  
 Zudem wurden **weitere Verbesserungen** eingearbeitet, wie beispielsweise ein harmonischeres Zusammenspiel von App und QR-Code. Zusätzlich wurden kleinere Bugs behoben. Unter anderem erscheint die [Fehlermeldung 'ExposureDetectionIsAlreadyRunning'](/de/faq/#ExposureDetectionIsAlreadyRunning), die Nutzer\*innen fälschlicherweise angezeigt wurde, in CWA Version 1.7 nicht mehr.  
 

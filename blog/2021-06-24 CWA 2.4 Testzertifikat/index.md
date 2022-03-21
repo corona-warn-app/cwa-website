@@ -24,7 +24,7 @@ At the appropriate location (e.g. in a restaurant or at the airport), those resp
 Users can request a certificate for both PCR and rapid tests by registering a test in the Corona-Warn-App: To do so, they can tap "Register a Test" on the home screen of their app and then tap "Scan QR Code." After they have scanned the QR code for test registration, the COVID test certificate window will open automatically. There they can "Request Test Certificate" (or decline if they don't want to get one.) 
 
 <br></br>
-<center> <img src="./register-test.png" title="Register test" style="align: center">  <img src="./request-certificate-rapid-test.png" title="Requesting a certificate for a rapid test" style="align: center">  <img src="./request-certificate-pcr.png" title="Requesting a certificate for a PCR test" style="align: center"></center>
+<center> <img src="./register-test.png" title="Register test" alt="Register test" style="align: center">  <img src="./request-certificate-rapid-test.png" title="Requesting a certificate for a rapid test" alt="Requesting a certificate for a rapid test" style="align: center">  <img src="./request-certificate-pcr.png" title="Requesting a certificate for a PCR test" alt="Requesting a certificate for a PCR test" style="align: center"></center>
 <br></br>
 
 In case of a negative test result users receive their test certificate in the app shortly after the test result is available in the app - if they have requested it beforehand and if the respective rapid test center supports the creation of a certificate. 
@@ -32,7 +32,7 @@ In case of a negative test result users receive their test certificate in the ap
 Users can then view the certificate via the "Certificates" tab in their tab bar. If they tap on the COVID test certificate, they can see the QR code that is used for verification, as well as other information such as the type of test, the date and time it was performed, and the test result. 
 
 <br></br>
-<center> <img src="./certificate-green.png" title="Test certificate" style="align: center">  <img src="./certificate-qr-code.png" title="certificate details" style="align: center"></center>
+<center> <img src="./certificate-green.png" title="Test certificate" alt="Test certificate" style="align: center">  <img src="./certificate-qr-code.png" title="Certificate details" alt="Certificate details" style="align: center"></center>
 <br></br>
 
 Not every rapid test center supports the digital certificate. In this case, users won’t be redirected to request the certificate after scanning the QR code. They will then be informed that a test certificate cannot be requested because the testing center does not support test certificates. 
@@ -40,7 +40,7 @@ Not every rapid test center supports the digital certificate. In this case, user
 Users requesting a test certificate for a PCR test must provide their date of birth when making the request. It is important that the date of birth is the same as the date of birth used for the PCR swab test. If the dates don’t match, for example due to a typing error, the user will neither receive the test result nor the certificate via the app. Also, users cannot change the date of birth that they enter in the app later. Therefore, they should check whether the date is correct before completing the request for a certificate.
 
 <br></br>
-<center> <img src="./request-certificate-birthday.png" title="Date of birth" style="align: center"></center>
+<center> <img src="./request-certificate-birthday.png" title="Date of birth" alt="Date of birth" style="align: center"></center>
 <br></br>
 
 **Please note**: To create the test certificate, the data is encrypted end-to-end and transmitted from the lab or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the certificate’s validity. The RKI cannot decrypt the data, which will be deleted after the certificate has been delivered.
@@ -54,7 +54,7 @@ In addition to the new test certificate feature, the project team has enhanced t
 Once the test result is available, it is now automatically added to the **contact journal**. Rapid tests are entered under the date they were performed, PCR tests on the date they were registered in the Corona-Warn-App.
 
 <br></br>
-<center> <img src="./contact-journal-tests.png" title="Tests in contact journal" style="align: center"></center>
+<center> <img src="./contact-journal-tests.png" title="Tests in contact journal" alt="Tests in contact journal" style="align: center"></center>
 <br></br>
 
 The **voluntary data donation** now also includes alerts that users share due to a positive rapid test. For PCR tests, this is already possible since [version 1.13](/en/blog/2021-03-04-corona-warn-app-version-1-13/) of the Corona-Warn-App. Furthermore, the data donation captures data points on warnings from the event registration feature (similar to the capturing of warnings that users receive based on the distance measurement via Bluetooth). The project team also records whether users share their event check-ins. A prerequisite for the recording is that users have activated the voluntary donation of data.

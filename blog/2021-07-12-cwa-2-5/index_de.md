@@ -18,7 +18,7 @@ Außerdem werden in den Statistiken nun zusätzlich **Kennzahlen über den Forts
 Mit Version 2.5 können Nutzer\*innen **Genesenenzertifikate** in die Corona-Warn-App integrieren, indem sie, genau wie bei Impfzertifikaten, in der Registerkarte auf den Reiter „Zertifikate“ gehen und dort „Zertifikat hinzufügen“ auswählen. Anschließend können sie den QR-Code, den sie von ihrem Hausarzt/ihrer Hausärztin erhalten haben, scannen. Weitere Informationen zum Hinzufügen von Impfzertifikaten finden Sie [hier](/de/blog/2021-06-10-cwa-version-2-3/). 
 
 <br></br>
-<center> <img src="./Genesenenzertifikat (3).png" title="Genesenenzertifikat" style="align: center"> <img src="./Genesenenzertifikat (1).png" title="Genesenenzertifikat Details" style="align: center"> </center>
+<center> <img src="./Genesenenzertifikat (3).png" title="Genesenenzertifikat" alt="Genesenenzertifikat" style="align: center"> <img src="./Genesenenzertifikat (1).png" title="Genesenenzertifikat Details" alt="Genesenenzertifikat Details" style="align: center"> </center>
 <br></br>
 
 Genesenenzertifikate werden unbefristet in der Corona-Warn-App gespeichert. Wie lange sie als offizieller Nachweis dienen, hängt von den Bestimmungen des Bundes ab. 
@@ -34,13 +34,13 @@ Unter dem **Reiter „Zertifikate“** werden alle vorhandenen Zertifikate nach 
 
 
 <br></br>
-<center> <img src="./familienzertifikate(2).png" title="Zertifikate Übersicht" style="align: center">  <img src="./details-zertifikate.png" title="Zertifikate Details" style="align: center"> </center>
+<center> <img src="./familienzertifikate(2).png" title="Zertifikate Übersicht" alt="Zertifikate Übersicht" style="align: center">  <img src="./details-zertifikate.png" title="Zertifikate Details" alt="Zertifikate Details" style="align: center"> </center>
 <br></br>
 
 An dieser Stelle können Nutzer\*innen unter ihrem eigenen Namen einen Schieberegler aktivieren, mit dem sie der App signalisieren, dass sie der/die Inhaber\*in sind, sodass sie oben in der Liste der Personen erscheinen. 
 
 <br></br>
-<center> <img src="./person-details-button.png" title="Button: Mein Smartphone, meine App" style="align: center"> </center>
+<center> <img src="./person-details-button.png" title="Button: Mein Smartphone, meine App" alt="Button: Mein Smartphone, meine App" style="align: center"> </center>
 <br></br>
 
 In der Übersicht des Zertifikats-Wallets wird pro Person das **relevanteste Zertifikat zuerst** angezeigt. Beispielsweise wird das Testzertifikat eines aktuellen PCR- oder Schnelltests angezeigt, selbst, wenn der oder die Nutzer\*in ein Impfzertifikat mit vollständigem Schutz hat. Sobald der Test nicht mehr aktuell ist (nach 24 beziehungsweise 48 Stunden), wird automatisch das Impfzertifikat an erster Stelle angezeigt.
@@ -56,7 +56,7 @@ Nach der gleichen Vorgehensweise können Nutzer\*innen alle drei Zertifikatstype
 Unter den Kennzahlen in ihrer Corona-Warn-App können Nutzer\*innen ab Version 2.5 sehen, wie viele Personen bundesweit mindestens einmal beziehungsweise vollständig geimpft sind, welchen Anteil der Gesamtbevölkerung das jeweils ausmacht und wie viele Impfdosen in Deutschland verabreicht wurden.
 
 <br></br>
-<center> <img src="./Impfstatistik (2).png" title="verabreichte Impfdosen" style="align: center"> </center>
+<center> <img src="./Impfstatistik (2).png" title="verabreichte Impfdosen" alt="verabreichte Impfdosen" style="align: center"> </center>
 <br></br>
 
 Version 2.5 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App über die nächsten 48 Stunden zur Verfügung.
