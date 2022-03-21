@@ -34,6 +34,14 @@
 
 	&Export {
 		float: right;
+		&:focus {
+			//outline: none;
+		}
+		&:focus-visible {
+			outline: none;
+			border: 2px solid white!important;
+			box-shadow: 0 0 0 2px black!important;
+		}
 	}
 
 
@@ -247,6 +255,14 @@
 				margin-right: 8px;
 				border-radius: 100%;
 				border: 1px solid #006082;
+				&:focus {
+					//outline: none;
+				}
+				&:focus-visible {
+					outline: none;
+					border: 2px solid white!important;
+					box-shadow: 0 0 0 2px black!important;
+				}
 			}
 
 
@@ -263,12 +279,20 @@
 				font-weight: bold;
 			}
 
-
+			&:focus {
+				//outline: none;
+			}
+			&:focus-visible {
+				outline: none;
+				border: 2px solid white!important;
+				box-shadow: 0 0 0 2px black!important;
+			}
 		}
 	}
 
 	&Switch {
 		background: #fff;
+		padding: 2px;
 		border-radius: 50px;
 		display: inline-block;
 		border: 1px solid #006082;
