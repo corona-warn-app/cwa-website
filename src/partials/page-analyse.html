@@ -34,7 +34,7 @@
 			<div class="col-auto">
 				<a class="btn btn-secondary analyseExport" href="{{page-contents.allExport.link}}" rel="noopener noreferrer">
 					{{page-contents.allExport.title}}
-					<img src="{{root}}assets/img/icons/download.svg" class="ml-1">
+					<img src="{{root}}assets/img/icons/download.svg" class="ml-1" alt="Download">
 				</a>
 			</div>
 		{{/if}}
@@ -44,65 +44,79 @@
 		{{page-contents.update}}
 		<span class="analyseUpdate-timestamp"></span>.
 		<button class="btn analyseBoard-iconBtn analyseBoard-info info-textblock"  rel="{{page-contents.updateNoticeIcon.title}}">
-			<img src="{{root}}assets/img/icons/info.svg">
+			<img src="{{root}}assets/img/icons/info.svg" aria-label="{{page-contents.info}}">
 		</button>
 	</div>
 	
 
 	<div class="analyseRange">
-		{{#if page-contents.range.picker.timerange}}
-			<div class="analyseRangePicker-label">
-				{{page-contents.range.picker.timerange}}:
-			</div>
-		{{/if}}
-		<div class="analyseRangePicker">
-			<button class="btn analyseRangePicker-btn ">
-				<span>&nbsp;</span>
-				<img src="{{root}}assets/img/icons/down.svg">
-			</button>
-			<div class="analyseRangePicker-layer">
-				{{#if page-contents.range.picker.inputs}}
-					<div class="analyseRangePicker-inputs">
-						<div class="analyseRangePicker-inputs-set">
-							<div class="analyseRangePicker-inputs-label">
-								{{page-contents.range.picker.inputs.from}}
+		<fieldset>
+			{{#if page-contents.range.picker.timerange}}
+				<legend class="analyseRangePicker-label">
+					{{page-contents.range.picker.timerange}}:
+				</legend>
+			{{/if}}
+			<div class="analyseRangePicker">
+				<button class="btn analyseRangePicker-btn ">
+					<span>&nbsp;</span>
+					<img src="{{root}}assets/img/icons/down.svg">
+				</button>
+				<div class="analyseRangePicker-layer">
+					{{#if page-contents.range.picker.inputs}}
+						<div class="analyseRangePicker-inputs">
+							<div class="analyseRangePicker-inputs-set">
+								<div class="analyseRangePicker-inputs-label">
+									{{page-contents.range.picker.inputs.from}} ({{page-contents.range.picker.inputs.format}})
+								</div>
+								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off">
 							</div>
-							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.placeholder}}" autocomplete="off">
-						</div>
-						<div class="analyseRangePicker-inputs-set">
-							<div class="analyseRangePicker-inputs-label">
-								{{page-contents.range.picker.inputs.to}}
+							<div class="analyseRangePicker-inputs-set">
+								<div class="analyseRangePicker-inputs-label">
+									{{page-contents.range.picker.inputs.to}} ({{page-contents.range.picker.inputs.format}})
+								</div>
+								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off">
 							</div>
-							<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.placeholder}}" autocomplete="off">
+							<div class="analyseRangePicker-actions-top">
+								{{#if page-contents.range.picker.apply}}
+									<button class="btn btn-secondary analyseRangePicker-apply">
+										{{page-contents.range.picker.apply}}
+									</button>
+								{{/if}}
+								{{#if page-contents.range.picker.cancel}}
+									<button class="btn analyseRangePicker-cancel">
+										{{page-contents.range.picker.cancel}}
+									</button>
+								{{/if}}
+							</div>
 						</div>
+					{{/if}}
+					<div class="analyseRangePicker-picker"></div>
+					<div class="analyseRangePicker-actions">
+						{{#if page-contents.range.picker.cancel}}
+							<button class="btn analyseRangePicker-cancel">
+								{{page-contents.range.picker.cancel}}
+							</button>
+						{{/if}}
+						{{#if page-contents.range.picker.apply}}
+							<button class="btn btn-secondary analyseRangePicker-apply">
+								{{page-contents.range.picker.apply}}
+							</button>
+						{{/if}}
 					</div>
-				{{/if}}
-				<div class="analyseRangePicker-picker"></div>
-				<div class="analyseRangePicker-actions">
-					{{#if page-contents.range.picker.cancel}}
-						<button class="btn analyseRangePicker-cancel">
-							{{page-contents.range.picker.cancel}}
-						</button>
-					{{/if}}
-					{{#if page-contents.range.picker.apply}}
-						<button class="btn btn-secondary analyseRangePicker-apply">
-							{{page-contents.range.picker.apply}}
-						</button>
-					{{/if}}
 				</div>
 			</div>
-		</div>
 
 
-		<input type="radio" name="analyseRange" class="analyseRangeCustom" value="">
+			<input type="radio" name="analyseRange" class="analyseRangeCustom" value="">
 
-		{{#each page-contents.range.radio}}
-			<label class="analyseRangeRadio {{#if active}}first{{/if}}">
-				<input type="radio" name="analyseRange" value="{{value}}">
-				<div class="analyseRangeRadio-box"></div>
-				<span>{{label}}</span>
-			</label>
-		{{/each}}
+			{{#each page-contents.range.radio}}
+				<label class="analyseRangeRadio {{#if active}}first{{/if}}" for="radio_{{value}}">
+					<input type="radio" name="analyseRange" value="{{value}}" id=radio_{{value}}>
+					<div class="analyseRangeRadio-box"></div>
+					<span>{{label}}</span>
+				</label>
+			{{/each}}
+		</fieldset>
 	</div>
 
 
@@ -137,7 +151,7 @@
 						<div class="analyseBoard-head">
 							{{#if title}}
 								<div class="analyseBoard-title">
-									<span class="analyseBoard-title-title">{{title}}</span> 
+									<h3 class="analyseBoard-title">{{title}}</h3>
 									<span class="analyseBoard-title-append"></span>
 								</div>
 							{{/if}}
@@ -157,7 +171,7 @@
 								{{/unless}}
 								{{#if ../page-contents.boards.download}}
 									<div class="analyseBoard-export-wrapper">
-										<button href="{{export}}" class="btn btn-link analyseBoard-export">
+										<button href="{{export}}" alt="{{../page-contents.boards.export.alt}}" class="btn btn-link analyseBoard-export">
 											{{{../page-contents.boards.export.btn}}}
 										</button>
 										<div class="analyseBoard-export-layer">
@@ -174,18 +188,18 @@
 
 							{{#if info}}
 								<button class="btn analyseBoard-iconBtn analyseBoard-info"  rel="{{title}}">
-									<img src="{{../root}}assets/img/icons/info.svg">
+									<img src="{{../root}}assets/img/icons/info.svg" aria-label="{{moreInfo}}"  >
 								</button>
 							{{/if}}
 
 							<button class="btn analyseBoard-iconBtn analyseBoard-expand" data-id="chart{{@index}}">
-								<img src="{{../root}}assets/img/icons/expand.svg">
-								<img src="{{../root}}assets/img/icons/collapse.svg">
+								<img src="{{../root}}assets/img/icons/expand.svg" aria-label="{{expand}}">
+								<img src="{{../root}}assets/img/icons/collapse.svg" aria-label="{{collapse}}">
 							</button>
 
 							<button class="btn analyseBoard-iconBtn analyseBoard-fullscreen" data-id="chart{{@index}}">
-								<img src="{{../root}}assets/img/icons/expand.svg">
-								<img src="{{../root}}assets/img/icons/collapse.svg">
+								<img src="{{../root}}assets/img/icons/expand.svg" aria-label="{{expand}}">
+								<img src="{{../root}}assets/img/icons/collapse.svg" aria-label="{{collapse}}">
 							</button>
 						</div>
 						
@@ -221,7 +235,7 @@
 		<div class="analyseModal" rel="{{title}}">
 			<h2 class="headline analyseModal-title">
 				<button class="btn analyseModal-close">
-					<img src="{{../root}}assets/img/icons/Close.svg">
+					<img src="{{../root}}assets/img/icons/Close.svg" aria-label="{{close}}">
 				</button>
 				{{title}}
 			</h2>
@@ -235,7 +249,7 @@
 	<div class="analyseModalInfo" rel="{{page-contents.updateNoticeIcon.title}}">
 		<h2 class="headline analyseModal-title">
 			<button class="btn analyseModalInfo-close">
-				<img src="{{root}}assets/img/icons/Close.svg">
+				<img src="{{root}}assets/img/icons/Close.svg" aria-label="{{close}}">
 			</button>
 			{{page-contents.updateNoticeIcon.title}}
 		</h2>
@@ -260,7 +274,7 @@
 		
 		<div class="analyseMore">
 			{{#each page-contents.moreLinks}}
-				<a href="{{link}}" title="{{desc}}" target="_blank">{{title}}<img src="{{../root}}assets/img/icons/external.svg"></a>
+				<a href="{{link}}" title="{{desc}}" target="_blank">{{title}}<img src="{{../root}}assets/img/icons/external.svg" alt="{{alt}}"></a>
 			{{/each}}
 		</div>
 	{{/if}}

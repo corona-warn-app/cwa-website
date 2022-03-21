@@ -24,8 +24,8 @@ After **30 days**, the certificates are automatically and permanently deleted fr
 
 <br></br>
 <center> 
-<img src="./ios-recycle-bin.png" title="Recycle bin iOS" style="align: center" width=250> 
-<img src="./recycle-bin-android.png" title="Recycle bin Android" style="align: center" width=250> 
+<img src="./ios-recycle-bin.png" title="Recycle bin iOS" alt="Recycle bin iOS" style="align: center" width=250> 
+<img src="./recycle-bin-android.png" title="Recycle bin Android" alt="Recycle bin Android" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: iOS recycle bin. Right: Android recycle bin</em></figcaption>
 </center>
 <br></br>
@@ -36,8 +36,8 @@ After **30 days**, the certificates are automatically and permanently deleted fr
 
 <br></br>
 <center> 
-<img src="./ios-new-area.jpg" title="new area" style="align: center" width=250> 
-<img src="./ios-old-design.png" title="iOS old design" style="align: center" width=250>
+<img src="./ios-new-area.jpg" title="new area" alt="new area" style="align: center" width=250> 
+<img src="./ios-old-design.png" title="iOS old design" alt="iOS old design" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Left: Newly arranged area as of version 2.13. Right: old arrangement</em></figcaption>
 </center>
 <br></br>
@@ -46,7 +46,7 @@ Users can also re-scan a certificate that they have deleted. In this case, the a
 
 <br></br>
 <center> 
-<img src="./certificate-scan-trash.png" title="Restore scanned certficiate from recycle bin" style="align: center" width=250> 
+<img src="./certificate-scan-trash.png" title="Restore scanned certficiate from recycle bin" alt="Restore scanned certficiate from recycle bin" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -56,7 +56,7 @@ As of version 2.13, there is also a combined tile for the 7-day incidence values
 
 <br></br>
 <center> 
-<img src="./incidence-tile.jpg" title="Combined incidence tile" style="align: center" width=250> 
+<img src="./incidence-tile.jpg" title="Combined incidence tile" alt="Combined incidence tile" style="align: center" width=250> 
 </center>
 <br></br>
 

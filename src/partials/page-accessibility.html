@@ -1,0 +1,65 @@
+{{#if page-contents}}
+<section class="comment">
+<div class="container mb-5">
+    <div class="container-inner">
+      <h2 class="headline mb-0" id="glossary">{{page-contents.title}}</h2>
+      <nav class="glossary-nav">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="android-tab" data-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true">Android</a>
+          <a class="nav-item nav-link" id="ios-tab" data-toggle="tab" href="#ios" role="tab" aria-controls="ios" tabindex="-1">iOS</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tab-content">
+          <div class="tab-pane fade show active mt-4" id="android" role="tabpanel" aria-labelledby="android-tab" tabindex="0">
+            <div>
+              {{#each page-contents.section-android-main.textblock}}
+              <p>{{{.}}}</p>
+              {{/each}}
+            </div>
+            <h2 class="headline headline-heavy" id="{{page-contents.section-compatibility-level.anchor}}">{{page-contents.section-android-compatibility-level.title}}</h2>
+            <div>
+                {{#each page-contents.section-android-compatibility-level.textblock}}
+                <p>{{{.}}}</p>
+                {{/each}}
+            </div>
+          </div>
+          <div class="tab-pane fade show mt-4" id="ios" role="tabpanel" aria-labelledby="ios-tab" tabindex="0">
+            <div>
+              {{#each page-contents.section-ios-main.textblock}}
+              <p>{{{.}}}</p>
+              {{/each}}
+            </div>
+            <h2 class="headline headline-heavy" id="{{page-contents.section-compatibility-level.anchor}}">{{page-contents.section-ios-compatibility-level.title}}</h2>
+            <div>
+                {{#each page-contents.section-ios-compatibility-level.textblock}}
+                <p>{{{.}}}</p>
+                {{/each}}
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-intersect section_bg-light comment">
+    {{#if page-contents.section-report-barriers}}
+    <div class="container">
+      <div class="container-inner">
+        {{#if page-contents.section-report-barriers.headline}}
+        <div>{{> headline-component page-contents.section-report-barriers.headline}}</div>
+        {{/if}}
+    </div>
+    {{/if}}
+</section>
+<section class="comment">
+    <div class="container">
+        <div class="container-inner">
+          <h2 class="headline headline-heavy" id="{{page-contents.section-arbitrary-service.anchor}}">{{page-contents.section-arbitrary-service.title}}</h2>
+          <div>
+              {{#each page-contents.section-arbitrary-service.textblock}}
+              <p>{{{.}}}</p>
+              {{/each}}
+          </div>
+        </div>
+      </div>
+</section>
+{{/if}}
