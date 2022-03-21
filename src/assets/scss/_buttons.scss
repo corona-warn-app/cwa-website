@@ -24,7 +24,14 @@
     text-decoration: none;
   }
 
-  &:focus,
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
+  }
   &.focus {
     outline: 0;
     box-shadow: $btn-focus-box-shadow;
@@ -119,7 +126,14 @@
     text-decoration: $link-hover-decoration;
   }
 
-  &:focus,
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
+  }
   &.focus {
     text-decoration: $link-hover-decoration;
     box-shadow: none;
@@ -148,6 +162,14 @@
     .text-right > & {
       margin-left: 1rem;
     }
+    &:focus {
+			//outline: none;
+		}
+		&:focus-visible {
+			outline: none;
+			border: 2px solid white!important;
+			box-shadow: 0 0 0 2px black!important;
+		}
   }
   // No need for an active state here
 }
@@ -178,5 +200,27 @@
   p + &,
   + .btn-block {
     margin-top: $btn-block-spacing-y;
+  }
+}
+
+.btn-secondary {
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
+  }
+}
+
+button {
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 }
