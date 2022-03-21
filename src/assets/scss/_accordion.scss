@@ -15,8 +15,9 @@
         &:first-child {
             margin-top: 0;
         }
-        &:after {
+        &-item-button {
             content: "";
+            border: none;
             width: 1rem;
             height: 1rem;
             position: absolute;
@@ -30,7 +31,7 @@
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
 
-            &:after {
+            button {
                 background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' viewBox='0 0 16 15'%3e%3cpath fill='%233C4553' fill-rule='evenodd' d='M15 8.425h-14v-1.85h14z'/%3e%3c/svg%3e");
             }
         }

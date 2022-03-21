@@ -45,6 +45,7 @@ $(document).ready(function(){
                 isActive ? $(this).removeAttr("tabindex") : $(this).attr("tabindex", "-1")
             })
             element.next('.accordion-body').attr('aria-hidden', !isActive);
+            element.next('.accordion-body').attr('aria-expanded', isActive);
         }
         
     });
@@ -355,6 +356,13 @@ $(document).ready(function(){
         if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
         else window.location.href += $(this).attr('href');
       });
+
+      // pre select tabs on page load
+      if(window.location.href.includes("#")) {
+        let activeLink = $(".nav-tabs a[href$='#"+window.location.href.split("#")[1]+"']");
+        $(activeLink).addClass('active').siblings().removeClass('active');
+        $($(activeLink).attr('href')).addClass('show active').siblings().removeClass('show active');
+      }
 
       // glossary links onclick handler
       $("a[href^='#glossary_']").on("click", function(e) {
