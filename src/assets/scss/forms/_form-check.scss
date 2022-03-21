@@ -42,9 +42,12 @@
   }
 
   &:focus {
-    border-color: $form-check-input-focus-border;
-    outline: 0;
-    box-shadow: $form-check-input-focus-box-shadow;
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 
   &:checked {
