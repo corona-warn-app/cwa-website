@@ -29,11 +29,19 @@
 		margin-top: 72px;
 		font-size: 18px;
 		line-height: 26px;
-		color: #1294D4;
+		color: #006082;
 	}
 
 	&Export {
 		float: right;
+		&:focus {
+			//outline: none;
+		}
+		&:focus-visible {
+			outline: none;
+			border: 2px solid white!important;
+			box-shadow: 0 0 0 2px black!important;
+		}
 	}
 
 
@@ -77,7 +85,7 @@
 			&-btn {
 				position: relative;
 				background: #fff;
-				border: 1px solid #CFD4D9;
+				border: 1px solid #6c757d;
 				border-radius: 6px;
 				text-align: left;
 				width: 305px;
@@ -203,7 +211,7 @@
 			&-input {
 				vertical-align: middle;
 				margin: 0 8px;
-				border: 1px solid #CFD4D9;
+				border: 1px solid #6c757d;
 				border-radius: 6px;
 
 				font-size: 15px;
@@ -213,11 +221,11 @@
 				color: #3A3D3E;
 
 				&:placeholder {
-					color: #898B8B;
+					color: #575858;
 				}
 
 				&:focus {
-					border-color: #CFD4D9;
+					border-color: #6c757d;
 					outline: none;
 					box-shadow: 0px 0px 0px 3px #c9d7df;
 				}
@@ -247,6 +255,14 @@
 				margin-right: 8px;
 				border-radius: 100%;
 				border: 1px solid #006082;
+				&:focus {
+					//outline: none;
+				}
+				&:focus-visible {
+					outline: none;
+					border: 2px solid white!important;
+					box-shadow: 0 0 0 2px black!important;
+				}
 			}
 
 
@@ -263,15 +279,23 @@
 				font-weight: bold;
 			}
 
-
+			&:focus {
+				//outline: none;
+			}
+			&:focus-visible {
+				outline: none;
+				border: 2px solid white!important;
+				box-shadow: 0 0 0 2px black!important;
+			}
 		}
 	}
 
 	&Switch {
 		background: #fff;
+		padding: 2px;
 		border-radius: 50px;
 		display: inline-block;
-		border: 1px solid #D4EAF7;
+		border: 1px solid #006082;
 		font-size: 0;
 		position: relative;
 		white-space: nowrap;
@@ -316,6 +340,15 @@
 
 			&-item {
 				padding: 8px 6px;
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+
+		@media (max-width: 325px) {
+
+			&-item {
+				padding: 8px 2px;
 				font-size: 12px;
 				line-height: 14px;
 			}
@@ -440,7 +473,7 @@
 
 			font-size: 13px;
 			line-height: 15px;
-			color: #898B8B;
+			color: #575858;
 			flex-direction: column;
 
 			&.active {
@@ -618,7 +651,7 @@
 			&-label {
 				font-size: 13px;
 				line-height: 15px;
-				color: #898B8B;
+				color: #575858;
 			}
 		}
 	}
@@ -998,7 +1031,7 @@
 .apexcharts-text {
 	font-family: Roboto !important;
 	font-size: 11px !important;
-	fill: #898b8b !important;
+	fill: #575858 !important;
 }
 
 

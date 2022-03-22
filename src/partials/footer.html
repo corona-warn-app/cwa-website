@@ -13,7 +13,7 @@
             <strong class="headline">{{title}}</strong>
             {{#if button}}
             <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>
-              {{#unless button.icon}}{{button.title}}{{/unless}}
+              {{#unless button.icon}}{{{button.title}}}{{/unless}}
               {{#if button.icon}}<span class="icon icon_img icon_{{button.icon}}"><img
                   src="{{root}}{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
                   alt="{{title}}"
@@ -29,7 +29,7 @@
             {{/if}}
             <li class="list-item">
               <a {{#if url}}href="{{url}}" {{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}} class="{{#if marginRight}}mr-2{{/if}}" aria-label="{{aria-label}}">
-                {{#unless icon}}{{title}}{{/unless}}
+                {{#unless icon}}{{{title}}}{{/unless}}
                 {{#if icon}}
                   <svg xmlns="http://www.w3.org/2000/svg" width="{{width}}" height="{{height}}" fill="{{filled}}" class="bi bi-{{icon}} icon-image" viewBox="0 0 16 16">
                     <path d="{{svg}}"/>

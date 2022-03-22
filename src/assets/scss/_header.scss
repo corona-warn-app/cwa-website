@@ -10,6 +10,15 @@
         flex: 0 0 auto;
         overflow: hidden;
     }
+
+    &:focus {
+        //outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 2px solid white!important;
+        box-shadow: 0 0 0 2px black!important;
+    }
 }
 
 .header {
@@ -307,4 +316,15 @@
 
 .subheader {
     background: #D4EAF7;
+}
+
+a:not([class]) > :not(img){
+    &:focus {
+        //outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 2px solid white!important;
+        box-shadow: 0 0 0 2px black!important;
+    }
 }
