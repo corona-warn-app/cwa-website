@@ -97,12 +97,16 @@ section-cancelable=true}}
         </div>
         {{/if}}
         {{#if page-contents.section-image-ticker.image-ticker}}
+        <ol class="list">
         {{#each page-contents.section-image-ticker.image-ticker}}
-        <div class="row align-items-center">
-            {{#if image}}{{> image-ticker this=.
-            text-cls='text-block_indented'}}{{/if}}
-        </div>
+            <li class="list-item">
+                <div class="row align-items-center">
+                    {{#if image}}{{> image-ticker this=.
+                    text-cls='text-block_indented'}}{{/if}}
+                </div>
+            </li>
         {{/each }}
+        </ol>
         {{/if}}
     </div>
 </section>
@@ -233,7 +237,7 @@ section-cancelable=true}}
         <div class="text-center container-inner container-inner_sm">
             {{> headline-component page-contents.section-icon-listing.headline}}
         </div>
-        {{> icon-list-component page-contents.section-icon-listing}}
+            {{> icon-list-component page-contents.section-icon-listing}}
         {{/if}}
     </div>
 </section>

@@ -2,7 +2,7 @@
 <script src="/assets/js/lazyload.js"></script>
 <section class="section comment">
     <div class="container container_flex">
-        <aside class="side-menu js-menu" id="side-menu">
+        <aside class="side-menu js-menu" id="side-menu" role="region" aria-label="{{page-contents.section-main.side-menu.description}}">
             <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
             <ul id="ios_menu" class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
               {{#each page-contents.ios-screenshots.sections}}
@@ -20,7 +20,7 @@
                 {{/each}}
               </ul>
         </aside>
-        <main class="main" id="top">
+        <div class="main" id="top">
             {{> headline-component page-contents.section-main.headline}}
             {{> text-component page-contents.section-main.content}}
 
@@ -38,7 +38,7 @@
                 </select>
             </div>
             
-            <nav>
+            <nav aria-label="{{page-contents.section-main.navigation.description}}">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screenshots.tab-title}}</a>
                     <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screenshots.tab-title}}</a>
@@ -47,15 +47,16 @@
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="android_screenshots">
                     {{#each page-contents.android-screenshots.sections}}
-                        <div class="row">
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
+                            <ul class="row list-inline">
                             {{#each images}}
-                                <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                    <a href="{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
+                                <li class="col-6 col-sm-4 col-md-3 mb-4">
+                                    <a href="{{{filename}}}.png" class="screenshot" data-lightbox="{{{../anchor}}}">
                                         <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
                                     </a>
-                                </div>
+                                </li>
                             {{/each}}
+                            </ul>
                             <p>
                                 <a href="#{{{anchor}}}">
                                     {{#if ../lang_de}}
@@ -75,20 +76,20 @@
                                 </a>
                             </p>
                             <hr/>
-                        </div>
                     {{/each}}
                 </div>
                 <div class="tab-pane fade" id="ios_screenshots">
                     {{#each page-contents.ios-screenshots.sections}}
-                    <div class="row">
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
+                        <ul class="row list-inline">
                         {{#each images}}
-                            <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                <a href="{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
-                                    <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
+                            <li class="col-6 col-sm-4 col-md-3 mb-4">
+                                <a href="{{{filename}}}.png" class="screenshot" data-lightbox="{{{../anchor}}}">
+                                    <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy " alt="{{{alt}}}" title="{{{alt}}}">
                                 </a>
-                            </div>
+                            </li>
                         {{/each}}
+                        </ul>
                         <p>
                             <a href="#{{{anchor}}}">
                                 {{#if ../lang_de}}
@@ -108,11 +109,10 @@
                             </a>
                         </p>
                         <hr/>
-                    </div>
-                {{/each}}
+                    {{/each}}
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 </section>
 {{/if}}
