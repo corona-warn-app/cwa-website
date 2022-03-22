@@ -70,11 +70,18 @@ section {
                 }
             }
             .slick-arrow {
-                background-color: $body-bg;
-                &:hover,
-                &:focus {
-                    background-color: $gray-300;
+                &,
+                &:hover {
+                    background-color: $body-bg;
                     box-shadow: $box-shadow;
+                }
+                &:focus {
+                    //outline: none;
+                }
+                &:focus-visible {
+                    outline: none;
+                    border: 2px solid white!important;
+                    box-shadow: 0 0 0 2px black!important;
                 }
             }
         }
@@ -150,10 +157,17 @@ section {
             }
             &,
             &:hover,
-            &:active,
-            &:focus {
+            &:active {
                 outline: none;
                 box-shadow: none;
+            }
+            &:focus {
+                //outline: none;
+            }
+            &:focus-visible {
+                outline: none;
+                border: 2px solid white!important;
+                box-shadow: 0 0 0 2px black!important;
             }
         }
     }
