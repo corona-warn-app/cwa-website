@@ -28,12 +28,21 @@
             white-space: nowrap;
             fill: white;
         }
+        &:focus {
+            //outline: none;
+        }
+        &:focus-visible {
+            outline: none;
+            border: 2px solid white!important;
+            box-shadow: 0 0 0 2px black!important;
+        }
     }
     .logo img {
         height: 48px;
     }
     .logo {
         margin-bottom: 1.6rem;
+        
     }
 }
 

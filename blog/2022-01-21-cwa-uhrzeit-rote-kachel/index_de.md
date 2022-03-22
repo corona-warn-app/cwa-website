@@ -3,7 +3,7 @@ page-title: "Warum zeigt die Corona-Warn-App bei einer roten Kachel die genaue U
 page-description: "Warum zeigt die Corona-Warn-App bei einer roten Kachel die genaue Uhrzeit und den Ort der Begegnung nicht an?"
 page-name: cwa-uhrzeit-rote-kachel
 page-name_de: cwa-uhrzeit-rote-kachel
-author: CWA Team
+author: CWA-Team
 layout: blog
 ---
 

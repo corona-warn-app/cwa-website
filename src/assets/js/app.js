@@ -57,9 +57,9 @@ $(document).ready(function(){
     }
 
     $('.js-menu .js-scroll-navigate a').on('click tap', function(){
-        $(this).parents('.js-menu').first().removeClass('active');
-        $(this).parents('.js-menu').first().find('a').removeClass('active');
-        $(this).addClass('active');
+        $(this).parents('.js-menu').first().removeClass('active').attr('aria-current', "false");
+        $(this).parents('.js-menu').first().find('a').removeClass('active').attr('aria-current', "false");
+        $(this).addClass('active').attr('aria-current', "true");
     });
 
     const anchors = Array.from(document.querySelectorAll('.js-anchor'));
@@ -146,7 +146,6 @@ $(document).ready(function(){
             }
         }
         const throttledAutoHideSticky = throttle(autoHideSticky, 500)
-        document.addEventListener('scroll', throttledAutoHideSticky)
 
         $('.js-section-close').on('click tap', function(){
             $(this).parents('section').first().addClass('hidden');
@@ -843,12 +842,32 @@ $(document).ready(function(){
         document.getElementById('csvName').innerHTML = document.getElementById('csvFile').files[0].name;
     })
 
+    //glossary tab-navigation with left/right arrow keys
+    $('.nav-tabs .nav-item').keyup(function(e) {
+        let tab = null;
+        if (e.which === 39) {
+            //right
+            tab = $(this).next().length !== 0 ? $(this).next() : $(this).siblings().first()
+        } else if (e.which === 37) {
+            //left
+            tab = $(this).prev().length !== 0 ? $(this).prev() : $(this).siblings().last() 
+        }
+
+        if (tab) {
+            tab.addClass('active').siblings().removeClass('active');
+            tab.removeAttr('tabindex').siblings().attr('tabindex', '-1');
+            $(tab.attr('href')).addClass('show active').siblings().removeClass('show active');
+            tab.focus();
+        }
+    })
+
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
 
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
+        $(this).removeAttr('tabindex').siblings().attr('tabindex', '-1');
 
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
@@ -859,6 +878,13 @@ $(document).ready(function(){
             else window.location.href += $(this).attr('href');
         }
       });
+
+      // pre select tabs on page load
+      if(window.location.href.includes("#")) {
+        let activeLink = $(".nav-tabs a[href$='#"+window.location.href.split("#")[1]+"']");
+        $(activeLink).addClass('active').siblings().removeClass('active');
+        $($(activeLink).attr('href')).addClass('show active').siblings().removeClass('show active');
+      }
 
       // glossary links onclick handler
       $("a[href^='#glossary_']").on("click", function(e) {
@@ -968,4 +994,19 @@ $(document).ready(function(){
             $(".results-found").removeClass("d-none");
         }
     }
+    //Plotly ModeBar
+    $(".modebar-btn").attr("tabindex", 0);
+    $(".modebar-btn").on('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.target.click()
+        }
+    });
+
+    //Plotly Filters
+    $(".plot-container").find(".legendtoggle").attr("tabindex", 0);
+    $(".plot-container").find(".legendtoggle").on('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.target.dispatchEvent(new Event('mouseup'))
+        }
+    })
 });
