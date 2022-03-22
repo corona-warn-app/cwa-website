@@ -387,7 +387,7 @@ $(document).ready(function(){
                             if($(elem).hasClass("accordion-faq-item-title"))
                                 $(elem).attr("id", question.anchor).html(question.title)
                             if($(elem).hasClass("accordion-faq-item-content")) {
-                                question.textblock.map(p => {
+                                question.textblock.reverse().map(p => {
                                     $(elem).prepend( `<p>${p}</p>` );
                                 })
                                 $(elem).find('.faq-anchor').attr('href', `#${question.anchor}`)
