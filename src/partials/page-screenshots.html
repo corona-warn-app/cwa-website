@@ -48,6 +48,9 @@
                 <div class="tab-pane fade show active" id="android_screenshots">
                     {{#each page-contents.android-screenshots.sections}}
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
+                            {{#if description}}
+                            <p>{{{description}}}</p>
+                            {{/if}}
                             <ul class="row list-inline">
                             {{#each images}}
                                 <li class="col-6 col-sm-4 col-md-3 mb-4">
@@ -81,6 +84,9 @@
                 <div class="tab-pane fade" id="ios_screenshots">
                     {{#each page-contents.ios-screenshots.sections}}
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
+                        {{#if description}}
+                        <p>{{{description}}}</p>
+                        {{/if}}
                         <ul class="row list-inline">
                         {{#each images}}
                             <li class="col-6 col-sm-4 col-md-3 mb-4">
