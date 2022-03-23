@@ -2,6 +2,7 @@
 <script src="/assets/js/lazyload.js"></script>
 <section class="section comment">
     <div class="container container_flex">
+        <a class="skip-main" href="#top">Skip to main content</a>
         <aside class="side-menu js-menu" id="side-menu" role="region" aria-label="{{page-contents.section-main.side-menu.description}}">
             <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
             <ul id="ios_menu" class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
@@ -20,7 +21,7 @@
                 {{/each}}
               </ul>
         </aside>
-        <div class="main" id="top">
+        <div class="main" id="top" tabindex="-1">
             {{> headline-component page-contents.section-main.headline}}
             {{> text-component page-contents.section-main.content}}
 
@@ -48,6 +49,9 @@
                 <div class="tab-pane fade show active" id="android_screenshots">
                     {{#each page-contents.android-screenshots.sections}}
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
+                            {{#if description}}
+                            <p>{{{description}}}</p>
+                            {{/if}}
                             <ul class="row list-inline">
                             {{#each images}}
                                 <li class="col-6 col-sm-4 col-md-3 mb-4">
@@ -81,6 +85,9 @@
                 <div class="tab-pane fade" id="ios_screenshots">
                     {{#each page-contents.ios-screenshots.sections}}
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
+                        {{#if description}}
+                        <p>{{{description}}}</p>
+                        {{/if}}
                         <ul class="row list-inline">
                         {{#each images}}
                             <li class="col-6 col-sm-4 col-md-3 mb-4">
