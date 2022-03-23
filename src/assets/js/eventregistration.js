@@ -70,6 +70,7 @@ document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('downloadCode').disabled = true;
   document.getElementById('printMultiCode').disabled = true;
   document.getElementById('downloadMultiCode').disabled = true;
+  document.getElementById('generateQR').disabled = false;
 });
 
 document.getElementById('generateQR').addEventListener('click', async function (e) {
@@ -106,6 +107,8 @@ document.getElementById('generateQR').addEventListener('click', async function (
     document.getElementById('eventplaceholder').classList.add('d-none');
       
     canvas.classList.remove('d-none');   
+    // Disable ceate button
+    document.getElementById('generateQR').disabled = true;
   }
 });
 
