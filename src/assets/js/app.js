@@ -810,6 +810,12 @@ $(document).ready(function(){
                 $(section).find(".count").remove()
             }
         })
+
+        //Update header links in FAQ page
+        $(".subheader").children().each((index, element) => {
+            const newlink = $(element).find('a').attr('href').replace('/results', '')
+            $(element).find('a').attr('href', newlink)
+        });
     }
 
     // collapses/expands all accordions on button click in the FAQ
