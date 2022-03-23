@@ -59,9 +59,16 @@
   @include font-size($navbar-brand-font-size);
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
+  }
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 }
 

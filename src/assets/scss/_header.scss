@@ -10,6 +10,15 @@
         flex: 0 0 auto;
         overflow: hidden;
     }
+
+    &:focus {
+        //outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 2px solid white!important;
+        box-shadow: 0 0 0 2px black!important;
+    }
 }
 
 .header {
@@ -333,5 +342,16 @@
         text-align:center;
         font-size:1.2em;
         z-index:999;
+    }
+}
+
+a:not([class]) > :not(img){
+    &:focus {
+        //outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 2px solid white!important;
+        box-shadow: 0 0 0 2px black!important;
     }
 }
