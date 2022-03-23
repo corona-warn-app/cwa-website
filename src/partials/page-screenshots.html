@@ -49,6 +49,9 @@
                     {{#each page-contents.android-screenshots.sections}}
                         <div class="row">
                             <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
+                            {{#if description}}
+                            <p>{{{description}}}</p>
+                            {{/if}}
                             {{#each images}}
                                 <div class="col-6 col-sm-4 col-md-3 mb-4">
                                     <a href="{{{filename}}}.png" class="screenshot" data-lightbox="{{{../anchor}}}">
@@ -82,6 +85,9 @@
                     {{#each page-contents.ios-screenshots.sections}}
                     <div class="row">
                         <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
+                        {{#if description}}
+                        <p>{{{description}}}</p>
+                        {{/if}}
                         {{#each images}}
                             <div class="col-6 col-sm-4 col-md-3 mb-4">
                                 <a href="{{{filename}}}.png" class="screenshot" data-lightbox="{{{../anchor}}}">
