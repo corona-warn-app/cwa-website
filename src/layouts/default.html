@@ -23,10 +23,11 @@
   <body class="{{#unless @root.page-name}}{{#ifpage 'index'}}page-home{{/ifpage}}{{/unless}}{{#if @root.page-name}}page-{{@root.page-name}}{{/if}}">
     {{!-- Pages you create in the src/pages/ folder are inserted here when the
     flattened page is created. --}} 
-    
+
+    <a class="skip-main" href="#main">Skip to main content</a>
     {{> header}} 
 
-    <main class="main-content" role="main">
+    <main id="main" class="main-content" role="main" tabindex="-1">
       {{> body}}
     </main>
     {{#unless lang_de}}
