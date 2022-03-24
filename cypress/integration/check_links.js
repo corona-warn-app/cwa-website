@@ -29,8 +29,7 @@ context("Check for broken links", () => {
                   '/en/science/'
                 ]
     const allowlist = [
-      'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999',
-      'https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1'
+      'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999'
     ]
 
   it('Check if txt results exist',() => {
@@ -66,8 +65,7 @@ context("Check for broken links on entries", () => {
   const subpages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
   const pagesToAvoid = ['/de/blog/', '/en/blog/', '/de/science/', '/en/science/', '/de/blog/archiv', '/en/blog/archive']
   const allowlist = [
-    'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999',
-    'https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1'
+    'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999'
   ]
   subpages.forEach(sub => {
     it(`"${sub}" entries - Check for broken links`, () => {
