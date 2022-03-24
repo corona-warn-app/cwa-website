@@ -504,7 +504,7 @@ $(document).ready(function(){
                         if($(element).find(".topic-title").attr("id") !== topic) $(element).hide();
                         else {
                             $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($($(element).children()[0]).text());
+                            $(".bread-topic").text($($(element).children()[0]).find(".topic-title").text());
                             $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
                             $(".nav-aside").children().each((index, nav) => {
                                 if($(nav).hasClass(topic)) $(nav).addClass("active");
