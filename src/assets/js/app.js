@@ -269,7 +269,7 @@ $(document).ready(function(){
 
         if(topicString !== "all") {
             $("#topic_separator").removeClass("d-none");
-            $(".bread-topic").text($(`#${topicString}`).text()).show();
+            $(".bread-topic").text($(`#${topicString}`).find(".topic-title").text()).show();
         }
         setTimeout(() => {
             //check again showed items cause of topic filter
