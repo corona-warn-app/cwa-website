@@ -32,9 +32,17 @@
   display: block;
   padding: $nav-link-padding-y ($nav-link-padding-x - 0.2);
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
+  }
+
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 
   // Disabled state lightens text
@@ -138,5 +146,16 @@
   > .active {
     display: block;
     outline: none;
+  }
+}
+
+a:not([class]) {
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 }
