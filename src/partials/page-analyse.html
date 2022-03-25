@@ -272,10 +272,14 @@
 			</div>
 		{{/if}}
 		
-		<div class="analyseMore">
+		<div class="analyseMore justify-content-center">
+			<ul class="list-inline">
 			{{#each page-contents.moreLinks}}
+				<li class="list-inline-item">
 				<a href="{{link}}" title="{{desc}}" target="_blank">{{title}}<img src="{{../root}}assets/img/icons/external.svg" alt="{{alt}}"></a>
+				</li>
 			{{/each}}
+			</ul>
 		</div>
 	{{/if}}
 

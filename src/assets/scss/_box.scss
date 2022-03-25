@@ -298,9 +298,12 @@ p:not([class]) + .btn {
                     &:hover,
                     &:active,
                     &:focus {
+                        //outline: none;
+                    }
+                    &:focus-visible {
                         outline: none;
-                        box-shadow: none;
-                        border: none;
+                        border: 2px solid white!important;
+                        box-shadow: 0 0 0 2px black!important;
                     }
                 }   
             }
@@ -323,15 +326,22 @@ p:not([class]) + .btn {
                 left: -2px;
             }
 
+            &:focus {
+                //outline: none;
+            }
+            &:focus-visible {
+                outline: none;
+                border: 2px solid white!important;
+                box-shadow: 0 0 0 2px black!important;
+            }
             &:hover,
-            &:focus,
             &:active,
             &.active {
                 color: inherit;
 
                 &:before { content: ""}
             }
-            &:focus,
+            
             &:active,
             &.active {
                 font-weight: $font-weight-bold;
@@ -342,6 +352,7 @@ p:not([class]) + .btn {
             padding: .1rem 1rem;
             border-left: 2px solid lightgray;
             margin: .3rem;
+            hyphens: manual;
         }
     }
 

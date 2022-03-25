@@ -57,7 +57,7 @@ gulp.task(
     cwaaJs,
     javascript,
     gulp.parallel(
-      pages, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects, copyFAQsDuplicate
     ),
     images_webp,
     sass,
@@ -293,21 +293,78 @@ function copyFAQs(done){
   done();
 }
 
+function copyFAQsDuplicate(done){
+  copyFAQDuplicate("de");
+  copyFAQDuplicate("en");
+  done();
+}
+
 function copyFAQ(lang) {
   return gulp
     .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
     .pipe(jsonTransform(function (data, file) {
       let faq = {}
-      data['section-main'].sections.forEach((section) => {
-        section.accordion.forEach((faqEntry) => {
-          let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-          faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            if(faqEntry.duplicate !== undefined) {
+              data['section-main'].topics.forEach((dtopic) => {
+                dtopic.sections.forEach((dsection) => {
+                  dsection.accordion.forEach((dfaqEntry) => {
+                    if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                      if(!faq[`${dfaqEntry.anchor}_dup_${section.id}`]) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        let searchEntry = result.title + " " + result.textblock.join(" ");
+                        faq[result.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+                      }
+                    }
+                  })
+                })
+              })
+            } else {
+              let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+              faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+            }
+          })
         })
       });
       return faq;
     }))
     .pipe(rename('faq.json'))
-    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/`));
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
+}
+function copyFAQDuplicate(lang) {
+  return gulp
+    .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
+    .pipe(jsonTransform(function (data, file) {
+      const faq = [];
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            if(faqEntry.duplicate !== undefined) {
+              const exist = faq.some(question => question.anchor === `${faqEntry.duplicate}_dup_${section.id}`)
+              if(!exist) {
+                data['section-main'].topics.forEach((dtopic) => {
+                  dtopic.sections.forEach((dsection) => {
+                    dsection.accordion.forEach((dfaqEntry) => {
+                      if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        faq.push(result)
+                      }
+                    })
+                  })
+                })
+              }
+            }
+          })
+        })
+      });
+      return faq;
+    }))
+    .pipe(rename('faq_duplicate.json'))
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
 }
 
 function copyFAQRedirects() {
