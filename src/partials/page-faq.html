@@ -1,133 +1,45 @@
 {{#if page-contents}}
-<div class="container container_flex">
-  <aside class="side-menu js-menu" id="side-menu" role="region" aria-label="{{page-contents.section-main.side-menu.description}}">
-    <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
-    <ul class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
-      {{#each page-contents.section-main.sections}}
-      <li class="nav-item">
-        <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if id}} href="#{{id}}"{{/if}}>{{{title}}}</a>
-      </li>
-      {{/each}}
-    </ul>
-  </aside>
-  <div class="main">
-    <h1 class="headline headline-heavy" id="top">{{page-contents.section-main.headline.title}}</h1>
-
-    <form method="get" id="faq-search-form">
-      <!-- Actual search box -->
-      <div class="input-group input-group-sm">
-        <div class="input-group-text">
-          <span class="input-group-addon">
-            <span id="match-count" aria-live="polite">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}
-          </span>
+  <main class="main">
+    <div class="container-fluid pt-5 pb-5">
+      <h1 class="headline headline-heavy text-center pb-3" id="top">{{page-contents.section-main.headline.title}}</h1>
+      <div class="d-flex justify-content-center">
+        <form method="get" id="faq-search-form" class="w-50">
+          <div class="input-group mb-5">
+          <input type="text" class="form-control mr-3 w-50" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+          <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
+            <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
+            {{#each page-contents.section-main.topics}}
+              <option value="{{id}}">{{title}}</option>
+            {{/each}}
+            <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
+          </select>
+          <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
         </div>
-        <input type="text" class="form-control" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
+      </form>
       </div>
-    </form>
-    <p><a href="#glossary">{{page-contents.glossary.linkToGlossary}}</a></p>
-    <hr />
-    <div id="no_results" class="d-none">
-      <p>{{page-contents.section-main.texts.no-results}}</p>
+      <center><a href="results" class="no-decoration">{{page-contents.section-main.texts.view-all-topics-questions}}</a></center>
     </div>
-    <button id="collapseAll" class="btn btn-secondary right-float mt-auto">{{page-contents.section-main.button-collapse.fields.all-collapse}}</button>
-    {{#each page-contents.section-main.sections}}
 
-      {{> text-component this=. large-title=true}}
-      <dl class="accordion js-accordion" data-toggle="accordion-header">
-      {{#each accordion}}
-        <div id="{{anchor}}-div">
-          <dt class="accordion-header{{#if active}} active{{/if}}">
-            <h3 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{{title}}}</h3>
-            <button class="accordion-header-item-button" aria-label="{{../../page-contents.section-main.button-collapse.fields.collapse}}"></button>
-          </dt>
-          <dd class="accordion-body" aria-hidden="true">
-            <div class="accordion-item-content">
-              {{#if textblock}}
-              {{#each textblock}}
-              <p>{{{.}}}</p>
-              {{/each}}
-              {{/if}}
-              <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
-              <p><a href="#top">{{../../page-contents.section-main.texts.to_top}}</a></p>
-            </div>
-          </dd>
-        </div>
-      {{/each}}
-      </dl>
-    {{/each}}
-    {{#if page-contents.glossary.glossaryWords}}
-    <div class="container container_flex  my-5">
-      <div class="d-flex flex-column w-100">
-        <h2 class="headline mb-0" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h2>
-        {{#if page-contents.glossary.optionalText}}
-          <p class="mb-3">{{page-contents.glossary.optionalText}}</p>
-        {{/if}}
-        <nav class=glossary-nav>
-          <div class="nav nav-tabs pb-3" id="nav-tab" role="tablist">
-          {{#each page-contents.glossary.glossaryWords as |letter|}}
-            {{#if @first}}
-              <a class="nav-item nav-link active" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
-            {{else}}
-              <a class="nav-item nav-link" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" tabindex="-1">{{@key}}</a>
+    <div class="container">
+      <h1 class="headline headline-heavy mt-5 mb-3">{{page-contents.section-main.headline.subtitle}}</h1>
+      <div class="row pb-5 pt-5">
+        {{#each page-contents.section-main.topics}}
+        <div class="col-sm-2">
+          <img src="{{icon}}" alt="{{title}}" height="29">
+          <p><a href="results/?search=&topic={{id}}" class="no-decoration text-black"><b>{{{title}}}</b></a></p>
+          <div class="{{#if sections.[6]}}section-column{{/if}}">
+            {{#each sections}}
+            {{#if indexed}}
+              <p><a href="results/?search=&topic={{../id}}#{{id}}" class="section-link">{{{title}}}</a></p>
             {{/if}}
           {{/each}}
           </div>
-        </nav>
-        <div class="tab-content" id="nav-tab-content">
-        {{#each page-contents.glossary.glossaryWords as |letter|}}
-          {{#if @first}}
-            <div class="tab-pane fade show active mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab" tabindex="0">
-              <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
-              {{#each letter as |content|}}
-                {{#if @last}}
-                  <div>
-                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
-                    <div class="px-3">{{{content.description}}}</div>
-                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
-                  </div>
-                {{else}}
-                  <div class="nav-tabs pb-3">
-                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
-                    <div class="px-3">{{{content.description}}}</div>
-                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
-                  </div>
-                {{/if}}
-                {{else}}
-                <div>
-                  <div class="px-3">{{../page-contents.glossary.noContentText}}</div>
-                </div>
-              {{/each }}
-            </div>
-          {{else}}
-            <div class="tab-pane fade show mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab" tabindex="0">
-              <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
-              {{#each letter as |content|}}
-                {{#if @last}}
-                  <div>
-                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
-                    <div class="px-3">{{{content.description}}}</div>
-                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
-                  </div>
-                  {{else}}
-                  <div class="nav-tabs pb-3">
-                    <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b>{{content.term}}</b></h5>
-                    <div class="px-3">{{{content.description}}}</div>
-                    <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
-                  </div>
-                {{/if}}
-                {{else}}
-                <div>
-                  <div class="px-3">{{../page-contents.glossary.noContentText}}</div>
-                </div>
-              {{/each }}
-            </div>
-          {{/if}}
-        {{/each}}
+          <p><a href="results/?search=&topic={{id}}" class="no-decoration">{{#if sections.[6]}}{{../page-contents.section-main.texts.view-all-topics-questions}}{{else}}{{../page-contents.section-main.texts.goto-topics}}{{/if}}</a></p>
         </div>
-        <hr/>
+        {{/each}}
       </div>
+      <p class="pb-5 text-center"><a href="results/?search=&topic=glossary" class="glossary-link">{{page-contents.section-main.texts.glossary}}</a></p>
     </div>
-  {{/if}}
-  </div>
+  </main>
 </div>
 {{/if}}
