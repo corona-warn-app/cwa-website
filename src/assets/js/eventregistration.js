@@ -90,7 +90,7 @@ document.getElementById('generateQR').addEventListener('click', async function (
     let canvas = document.getElementById('eventqrcode');
     let ctx = canvas.getContext('2d');
     
-    const qr = await GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+    const qr = await GenerateQRCode(grid, description.replace(/\s+/g, ' '), address.replace(/\s+/g, ' '), defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
     ctx.width = 1654;
     ctx.height = 2339;
     canvas.width = 1654;
@@ -543,7 +543,7 @@ async function GenerateMultiQRCode(data) {
     let grid = document.getElementById("pageTemplate").value
     QR_LIST.splice(0, QR_LIST.length);
     for (const qr of data) {
-      GenerateQRCode(grid, qr.description, qr.address, qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
+      GenerateQRCode(grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
     if (QR_LIST.length !== data.length) {
       document.getElementById('generateMultiQR').disabled = false;

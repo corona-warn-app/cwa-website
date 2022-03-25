@@ -37,7 +37,11 @@ context("Check for broken anchor links", () => {
                   '/en/event-qr-code-guide/',
                   '/de/blog/','/en/blog/',
                   '/de/science/',
-                  '/en/science/'
+                  '/en/science/',
+                  '/de/simple-language/',
+                  '/en/simple-language/',
+                  '/de/sign-language/',
+                  '/en/sign-language/'
                 ]
 
   it('Check if txt results exist',() => {
