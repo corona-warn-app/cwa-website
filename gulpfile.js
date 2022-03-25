@@ -488,7 +488,7 @@ function createFaqRedirects() {
 // replaces some values inside json that cant be replaced with handlebars expression since they are inside json
 function replaceVersionNumbers() {
   return gulp
-    .src([PATHS.dist + "/**/*.html"])
+    .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
     .pipe(replace('[ios.latest-os-version]', '15.4'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
     .pipe(replace('[ios.current-app-version]', '2.19.1'))
