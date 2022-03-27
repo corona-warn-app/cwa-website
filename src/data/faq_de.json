@@ -180,7 +180,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Siehe <a href='#where_can_i_get_tested' target='_self' >Wo kann ich mich testen lassen?</a>",
-                                    "Siehe auch Poster: <a href='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl.pdf' target='_blank'>Antigen-Schnelltest? So teilen Sie Ihr Ergebnis.</a>"
+                                    "Siehe auch Poster: <a href='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v3-kl.pdf' target='_blank'>Antigen-Schnelltest? So teilen Sie Ihr Ergebnis.</a>"
                                 ]
                             },
                             {
@@ -224,8 +224,8 @@
                                 "active": false,
                                 "textblock": [
                                     "In Fall eines positiven Testergebnisses sollten Sie Ihr Testergebnis teilen und umgehend einen PCR-Test machen, um das Ergebnis zu bestätigen oder zu widerlegen. Bei einem positiven PCR-Test sollten Sie das Testergebnis erneut teilen, um Kontakte zu warnen, die Sie möglicherweise zwischen den beiden Tests getroffen haben. Voraussetzung dabei ist, dass die Kontaktpersonen ebenfalls die Corona-Warn-App nutzen und die Risikoberechnung ein hohes Risiko bestimmt, basierend auf Dauer und Abstand des Kontakts. Sollte der PCR-Test negativ sein, haben Sie nicht die Möglichkeit, Ihren positiven Schnelltest und die Warnung zurückzuziehen.",
-                                    "<a href='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl.pdf' target='_blank'><img width= 300px src='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl-1.PNG' alt='Positives Schnelltestergebnis teilen Anleitung PDF'></a>",
-                                    "Siehe auch Poster: <a href='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v2-kl.pdf' target='_blank'>Antigen-Schnelltest? So teilen Sie Ihr Ergebnis.</a>"
+                                    "<a href='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v3-kl.pdf' target='_blank'><img width= 300px src='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v3-kl-1.PNG' alt='Positives Schnelltestergebnis teilen Anleitung PDF'></a>",
+                                    "Siehe auch Poster: <a href='../../../assets/documents/DE_CWA_RKI-Plakat_Schnelltests_v3-kl.pdf' target='_blank'>Antigen-Schnelltest? So teilen Sie Ihr Ergebnis.</a>"
                                 ]
                             },
                             {
@@ -1159,7 +1159,7 @@
                             "<h3>Erklärvideo</h3>",
                             "<hr>",
                             "Im folgenden Erklärvideo erfahren Sie wie die Kontaktverfolgung der Corona-Warn-App funktioniert und was sie kann.",
-                            "<video src='../../assets/video/erklaerfilm_de.mp4' class='w-100' controls='' alt='Corona-Warn-App - Erklärvideo'></video>"
+                            "<video src='/assets/video/erklaerfilm_de.mp4' class='w-100' controls='' alt='Corona-Warn-App - Erklärvideo'></video>"
                                 ]
                             },
                             {
@@ -2616,6 +2616,14 @@
                         "id": "technical_correlations_risk_assessment",
                         "indexed": true,
                         "accordion": [
+                            {
+                                "title": "Warum werden seit Version 2.19 weniger Schlüssel in den Begegnungsaufzeichnungen abgeglichen?",
+                                "anchor": "delta_submission",
+                                "active": false,
+                                "textblock": [
+                                    "Mit der Version 2.19 der Corona-Warn-App wurde unter Android der Abgleich der positiven Schlüssel optimiert. Zuvor wurden in der Risikoberechnung immer alle vom Server heruntergeladenen Schlüssel mit den vom Betriebssystem gesammelten Schüsseln verglichen. Mit dem Update wird das mehrfache Abgleichen von Daten vermieden, und nur neue und zuvor nicht berücksichtigte Schlüssel werden kontrolliert. Während zuvor beispielsweise 4 Millionen Schlüssel in einem Abgleich kontrolliert wurden, sind es mit dieser Optimierung nur noch typischerweise zwischen etwa 4000 und 40000 Schlüsselabgleiche (mit dem Infektionsgeschehen Stand März 2022). Auch die Anzahl der im Betriebssystem (Begegnungsaufzeichnungen) angezeigten Übereinstimmungen von Schlüsseln wird geringer ausfallen. Das hat jedoch keinen Einfluss auf die von der Corona-Warn-App angezeigten Risikobegegnungen in der roten oder grünen Kachel."
+                                ]
+                            },
                             {
                                 "title": "Unterschiedliche Anzeige von Risiken",
                                 "anchor": "dissimilar_indication_of_risk_status",
