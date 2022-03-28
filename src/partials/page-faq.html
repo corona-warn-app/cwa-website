@@ -9,7 +9,7 @@
           <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
             <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
             {{#each page-contents.section-main.topics}}
-              <option value="{{id}}">{{title}}</option>
+              <option value="{{id}}">{{{title}}}</option>
             {{/each}}
             <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
           </select>
