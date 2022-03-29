@@ -3,10 +3,10 @@
     <div class="container-fluid pt-5 pb-5">
       <h1 class="headline headline-heavy text-center pb-3" id="top">{{page-contents.section-main.headline.title}}</h1>
       <div class="d-flex justify-content-center">
-        <form method="get" id="faq-search-form" class="w-50">
+        <form method="get" id="faq-search-form">
           <div class="input-group mb-5">
-          <input type="text" class="form-control mr-3 w-50" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
-          <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
+          <input type="text" class="form-control" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+          <select class="form-select" id="faq-topic" name="topic">
             <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
             {{#each page-contents.section-main.topics}}
               <option value="{{id}}">{{{title}}}</option>

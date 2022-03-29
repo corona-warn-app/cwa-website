@@ -360,13 +360,6 @@ $(document).ready(function(){
     if (document.querySelector(".page-faq")) {
         const searchForm = document.getElementById("faq-search-form");
         const { hash } = window.location;
-
-        if(window.matchMedia("(max-width: 767px)").matches) {
-            $("#faq-search-form").removeClass("w-50").addClass("w-100");
-            $("#faq-search").removeClass("w-50").addClass("w-100").removeClass("mr-3");
-            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
-            $("#faq-submit").addClass("w-100");
-        }
         
         if(searchForm !== null){
             searchForm.addEventListener("submit", (event) => {

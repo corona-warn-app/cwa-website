@@ -171,3 +171,27 @@ a.no-decoration {
     padding-right: 16%;
   }
 }
+
+#faq-search-form {
+  width: 60%;
+}
+
+#faq-search {
+  width: 50%;
+  margin-right: 1rem;
+}
+ 
+#faq-topic {
+  width: 25%;
+  margin-right: 1rem;
+}
+
+@media (max-width: $screen-md) {
+  #faq-search-form,
+  #faq-search,
+  #faq-submit,
+  #faq-topic {
+    width: 100%;
+    margin-right: 0;
+  }
+}
