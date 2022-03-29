@@ -46,7 +46,7 @@
     }
     > dt.active + dd,
     &-header.active + &-body {
-        max-height: 9000px;
+        max-height: max-content;
         border-width: 1px;
         p:last-child {
             margin-bottom: 0.2rem;
@@ -110,7 +110,7 @@
     }
     > dt.active + dd,
     &-header.active + &-body {
-        max-height: 9000px;
+        max-height: max-content;
         border-width: 1px;
         p:last-child {
             margin-bottom: 0.2rem;
