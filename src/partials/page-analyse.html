@@ -44,7 +44,7 @@
 		{{page-contents.update}}
 		<span class="analyseUpdate-timestamp"></span>.
 		<button class="btn analyseBoard-iconBtn analyseBoard-info info-textblock"  rel="{{page-contents.updateNoticeIcon.title}}">
-			<img src="{{root}}assets/img/icons/info.svg" aria-label="{{page-contents.info}}" alt="">
+			<img src="{{root}}assets/img/icons/info.svg" alt="" aria-hidden="true">
 		</button>
 	</div>
 	
@@ -59,7 +59,7 @@
 			<div class="analyseRangePicker">
 				<button class="btn analyseRangePicker-btn ">
 					<span>&nbsp;</span>
-					<img src="{{root}}assets/img/icons/down.svg" alt="">
+					<img src="{{root}}assets/img/icons/down.svg" alt="" aria-hidden="true">
 				</button>
 				<div class="analyseRangePicker-layer">
 					{{#if page-contents.range.picker.inputs}}
@@ -193,13 +193,13 @@
 							{{/if}}
 
 							<button class="btn analyseBoard-iconBtn analyseBoard-expand" data-id="chart{{@index}}">
-								<img src="{{../root}}assets/img/icons/expand.svg" aria-label="{{expand}}">
-								<img src="{{../root}}assets/img/icons/collapse.svg" aria-label="{{collapse}}">
+								<img src="{{../root}}assets/img/icons/expand.svg" alt="" aria-hidden="true">
+								<img src="{{../root}}assets/img/icons/collapse.svg" alt="" aria-hidden="true">
 							</button>
 
 							<button class="btn analyseBoard-iconBtn analyseBoard-fullscreen" data-id="chart{{@index}}">
-								<img src="{{../root}}assets/img/icons/expand.svg" aria-label="{{expand}}">
-								<img src="{{../root}}assets/img/icons/collapse.svg" aria-label="{{collapse}}">
+								<img src="{{../root}}assets/img/icons/expand.svg" alt="" aria-hidden="true">
+								<img src="{{../root}}assets/img/icons/collapse.svg" alt="" aria-hidden="true">
 							</button>
 						</div>
 						
@@ -249,7 +249,7 @@
 	<div class="analyseModalInfo" rel="{{page-contents.updateNoticeIcon.title}}">
 		<h2 class="headline analyseModal-title">
 			<button class="btn analyseModalInfo-close">
-				<img src="{{root}}assets/img/icons/Close.svg" aria-label="{{close}}">
+				<img src="{{root}}assets/img/icons/Close.svg" alt="" aria-hidden="true">
 			</button>
 			{{page-contents.updateNoticeIcon.title}}
 		</h2>
