@@ -3,7 +3,7 @@
         "headline": {
             "title": "Create QR code for event check-in"
         },
-        "intro": "The app now allows a check-in for events and locations. People who host events or have a business can now create a QR code. By scanning the QR code, guests can check in upon arrival to register their presence. If desired, the app will also create a corresponding diary entry. If a checked-in person later tests positive for the coronavirus, other people who were checked in at the same time can be warned.",
+        "intro": "The app now allows a check-in for events and locations. People who host events or have a business can now create a QR code. By scanning the QR code, guests can check in upon arrival to register their presence. If desired, the app will also create a corresponding journal entry. If a checked-in person later tests positive for the coronavirus, other people who were checked in at the same time can be warned.",
         "introCLI": " You can create QR codes in the app or here on this page. Alternatively, you can also use <a href='https://github.com/corona-warn-app/cwa-event-qr-code'>our official QR code utility</a> to generate several QR codes at once, for example. <a href='../event-qr-code-guide/'>Click here</a> for a detailed guide on how to use the official QR code utility.",
         "introMultiQR": "The CSV file must follow the template as shown <a href='/en/event-qr-code-guide/'>here</a> in step 5. To get started <a href='/assets/documents/tables.csv'>use this sample file</a>.",
         "disclaimer": "All information is processed only locally in your browser. Neither the QR codes you generate nor the information they contain are sent to the Corona-Warn-App servers. The source code of the generator is freely available for viewing.",
@@ -18,9 +18,15 @@
                 "locationtype": "Place/Event",
                 "description": "Description",
                 "address": "Place",
-                "defaultcheckinlength": "Typical length of stay (hours)",
+                "defaultcheckinlength": "Typical length of stay",
+                "defaultcheckinlength-hours": "Hours",
+                "defaultcheckinlength-minutes": "Minutes",
                 "starttime": "Start",
+                "starttime-date": "Date (TT.MM.YYYY)",
+                "starttime-time": "Time (HH:MM)",
                 "endtime": "End",
+                "endtime-date": "Date(TT.MM.YYYY)",
+                "endtime-time": "Timet (HH:MM)",
                 "show": "Create",
                 "download": "Save",
                 "downloadMessage": "This can take a while",
@@ -50,7 +56,9 @@
                 "wrongfileheaders": "The headers of the .csv file do not correspond to the headers of the corresponding template, you can check it <a href='../event-qr-code-guide/'>here</a>",
                 "wrongfileformatfields": "Some field on your CSV is not filled correctly. Please check your .csv and try it again",
                 "filewithnodata": "Your .csv fields are not filled",
-                "fileoverloaded": "The creation of QR codes is limited to 100."
+                "fileoverloaded": "The creation of QR codes is limited to 100.",
+                "olddate": "Date/Time must be in the future",
+                "endtimebeforestarttime": "End date/time must be later than start date/time"
             },
             "dateplaceholder": "DD.MM.YYYY",
             "timeplaceholder": "HH:MM",

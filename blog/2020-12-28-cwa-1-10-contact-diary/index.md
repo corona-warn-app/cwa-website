@@ -18,7 +18,7 @@ The Corona-Warn-App screen now shows the new contact journal section (Figure 1).
 
 <br></br>
 
-<center> <img src="./contact-journal.jpg" title="Contact Journal Figure 1" style="align: center">  <img src="./contact-journal-explanation.jpg" title="Explanation Figure 2" style="align: center"> <img src="./contact-journal-overview.jpg" title="Overview Figure 3" style="align: center"></center>
+<center> <img src="./contact-journal.jpg" title="Contact Journal Figure 1" alt="Contact Journal Figure 1" style="align: center">  <img src="./contact-journal-explanation.jpg" title="Explanation Figure 2" alt="Explanation Figure 2" style="align: center"> <img src="./contact-journal-overview.jpg" title="Overview Figure 3" alt="Overview Figure 3" style="align: center"></center>
 
 <br></br>
 
@@ -30,9 +30,9 @@ In order to add people and locations to the journal, users can click on the corr
 
 <br></br>
 
-<center> <img src="./add-a-person.JPG" title="Adding a person" style="align: center"> </center> <br></br>
+<center> <img src="./add-a-person.JPG" title="Adding a person" alt="Adding a person" style="align: center"> </center> <br></br>
 
-<center> <img src="./add-a-location.JPG" title="Adding a location" style="align: center"> </center>
+<center> <img src="./add-a-location.JPG" title="Adding a location" alt="Adding a location" style="align: center"> </center>
 
 <br></br>
 
@@ -56,14 +56,14 @@ The app exports the contact list in RTF (Rich Text Format) which is widely used.
 
 <br></br>
 
-<center> <img src="./contact-list-export.JPG" title="Data export" style="align: center"> </center>
+<center> <img src="./contact-list-export.JPG" title="Data export" alt="Data export" style="align: center"> </center>
 
 <br></br>
 
 ### Important data protection notices
 
 Sharing contact lists is sensitive. Users are therefore well advised to read the information on data processing. This information  can be found in the Contact Journal by tapping the button at the top right corner under *Info*. 
-Note the following **important message** users will see on the app: *Please think carefully about with whom you share the information recorded in your contact diary, and how you share it. The information is meant to help you remember – it is not intended for anyone else. If the public health office (Gesundheitsamt) asks for your help with contact tracing, then sharing your entries is appropriate.*
+Note the following **important message** users will see on the app: *Please think carefully about with whom you share the information recorded in your contact journal, and how you share it. The information is meant to help you remember – it is not intended for anyone else. If the public health office (Gesundheitsamt) asks for your help with contact tracing, then sharing your entries is appropriate.*
 
 *Private individuals as well as companies are not allowed to make you disclose the information you have recorded. Please respect the wishes of anyone who does not want to be recorded in your contact journal.* 
 
@@ -74,7 +74,7 @@ Further instructions can be found in the **privacy notice**, which can also be a
 
 <br></br>
 
-<center> <img src="./data-privacy.JPG" title="Explanation about data privacy" style="align: center"> </center>
+<center> <img src="./data-privacy.JPG" title="Explanation about data privacy" alt="Explanation about data privacy" style="align: center"> </center>
 
 <br></br>
 

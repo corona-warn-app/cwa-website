@@ -17,7 +17,7 @@ Nutzer*innen der Corona-Warn-App können schon seit Version 2.13 Zertifikate, di
 
 <br></br>
 <center> 
-<img src="./bin_test_ios_de.png" title="Papierkorb" style="align: center" height=600px> 
+<img src="./bin_test_ios_de.png" title="Papierkorb" alt="Papierkorb" style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Abb. 1: Papierkorb mit gelöschten Zertifikaten und Tests</em></figcaption>
 </center>
 <br></br>
@@ -29,7 +29,7 @@ Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in d
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <img src="./bin_android_de.png" title="Android Papierkorb, Drei-Punkte-Menu" style="align: center" height=600px>
+                <img src="./bin_android_de.png" title="Android Papierkorb, Drei-Punkte-Menu" alt="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Abb. 2: Android-Nutzer*innen können die drei Punkte in der rechten oberen Ecke des Tests auswählen und auf „Wiederherstellen“ tippen.</em>
                 </figcaption>
@@ -37,7 +37,7 @@ Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in d
         </div>
         <div class="col-md-6">
             <figure>
-                <img src="./bin_recover_test_notification_ios_de.png" title="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" style="align: center" height=600px>
+                <img src="./bin_recover_test_notification_ios_de.png" title="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" alt="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Abb. 3: iOS-Nutzer*innen können den einen Test wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen.</em>
                 </figcaption>
@@ -53,8 +53,8 @@ Nutzer*innen können außerdem weiterhin nur einen  aktiven Test in ihrer App re
 
 <br></br>
 <center> 
-<img src="./bin_another_test_ios_de.png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" height=600px> 
-<figcaption aria-hidden="true"><em>Abb. 4: Die App kann maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten. Wenn Nutzer z. B. einen weiteren PCR-Test registrieren, wird der erste PCR-Test in den Papierkorb verschoben.</em></figcaption>
+<img src="./bin_another_test_ios_de.png" title="Zurückgerufenes, ungültiges Zertifikat" alt="Zurückgerufenes, ungültiges Zertifikat" style="align: center" height=600px> 
+<figcaption aria-hidden="true"><em>Abb. 4: Die App kann maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten. Wenn Nutzer z.&nbsp;B. einen weiteren PCR-Test registrieren, wird der erste PCR-Test in den Papierkorb verschoben.</em></figcaption>
 </center>
 <br></br>
 

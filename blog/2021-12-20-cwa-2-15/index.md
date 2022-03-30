@@ -7,9 +7,14 @@ author: Hanna Heine, 8 am
 layout: blog
 ---
 
-*Updated on December 21, 2021 at 10 am*
+*Updated on January 10, 2022 at 1:30 pm*
 
-The project team of Robert Koch Institute, Deutsche Telekom, and SAP have released version 2.15 of the Corona-Warn-App. The update enables users to provide their proof of vaccination or recovery or a negative test result while booking tickets. With that feature, the new version also makes it easier for event organizers, companies, and vendors to check Covid certificates and thus contributes to reliable access management in accordance with legal requirements.
+The project team of Robert Koch Institute, Deutsche Telekom and SAP have released **version 2.15 of the Corona-Warn-App (CWA).** The update enables the CWA to support online verification services in the future. Online verification services are intended to provide users with a data-saving way to prove that they have been vaccinated, recovered or tested negative while booking services such as tickets.  
+
+**Important update from January 10, 2022:** The Europe-wide requirements for online verification services have already been in place since October 2021. In Germany, **no provider of an online verification service has been approved yet**. Tests are currently being carried out, the results of which are being awaited for the time being. Online verification services will not be available in practice until these tests have been evaluated and the Federal Commissioner for Data Protection and Freedom of Information (BfDI) has provided advice.  With version 2.15, however, the CWA is ready to support corresponding verification services as soon as providers of such a service are approved.
+
+The actual online verification service is **external to the CWA and does not affect its operation**. The use of online verification services from within the CWA is voluntary and does not affect the users' data security. At the same time, however, the current situation regarding bookings and the use of automatic access systems will be made much more data-efficient. 
+
 
 <!-- overview -->
 
@@ -27,7 +32,7 @@ If they book the tickets with their smartphone, they can take a screenshot of th
 
 <br></br>
 <center> 
-<img src="./homescreen.png" title="Universal QR Code scanner" style="align: center" width=250> <img src="./import-qr-code.png" title="Scan or import of the QR Code" style="align: center" width=250> 
+<img src="./homescreen.png" title="Universal QR Code scanner" alt="Universal QR Code scanner" style="align: center" width=250> <img src="./import-qr-code.png" title="Scan or import of the QR Code" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: Universal QR code scanner, Right: Possibility to import a QR code from a photo (e.g. screenshot)</em></figcaption>
 </center>
 <br></br>
@@ -37,7 +42,7 @@ After that, they can give their consent and then select the certificate they wan
  
 <br></br>
 <center> 
-<img src="./ticket-validation(2).png" title="consent" style="align: center" width=250> <img src="./ticket-validation(3).png" title="consent" style="align: center" width=250> <img src="./ticket-validation(4).png" title="consent" style="align: center" width=250> 
+<img src="./ticket-validation(2).png" title="Consent" alt="Consent" style="align: center" width=250> <img src="./ticket-validation(3).png" title="Consent" alt="Consent" style="align: center" width=250> <img src="./ticket-validation(4).png" title="Consent" alt="Consent" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -48,7 +53,7 @@ For example, if a provider requests either a vaccination certificate, a recovery
 
 <br></br>
 <center> 
-<img src="./ticket-validation(1).png" title="Selection of certificate in the app" style="align: center" width=250> 
+<img src="./ticket-validation(1).png" title="Selection of certificate in the app" alt="Selection of certificate in the app" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -60,7 +65,7 @@ If an event organizer set the access requirement "3G" (vaccinated, recovered or 
 
 <br></br>
 <center> 
-<img src="./ticket-validation(7).png" title="Consent for temporary transmission of certificate" style="align: center" width=250> 
+<img src="./ticket-validation(7).png" title="Consent for temporary transmission of certificate" alt="Consent for temporary transmission of certificate" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -72,7 +77,7 @@ The user can then see in the app whether the certificate was successfully verifi
 
 <br></br>
 <center> 
-<img src="./ticket-validation(6).png" title="verification successful" style="align: center" width=250> <img src="./ticket-validation(5).png" title="certificate not recognized" style="align: center" width=250>
+<img src="./ticket-validation(6).png" title="Verification successful" alt="Verification successful" style="align: center" width=250> <img src="./ticket-validation(5).png" title="Certificate not recognized" alt="Certificate not recognized" style="align: center" width=250>
 </center>
 <br></br>
 
@@ -88,10 +93,17 @@ In addition, with version 2.15, the project team has adapted the guidelines unde
 
 <br></br>
 <center> 
-<img src="./red-tile.png" title="guidelines red tile" style="align: center" width=250> 
-<img src="./guidelines(1).png" title="guidelines red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="guidelines red tile" style="align: center" width=250> 
+<img src="./red-tile.png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> 
+<img src="./guidelines(1).png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Guidelines on red "Increased Risk" notification</em></figcaption>
 </center>
 <br></br>
 
 Version 2.15 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
+
+<hr/>
+See also the following FAQ-articles:
+
+- [Questions and answers about certificate verification during ticketing.](/en/faq/#val_service_basics)
+- [Why do I get the message that there is no suitable certificate?](/en/faq/#val_service_no_valid_dcc)
+- [Why is my certificate not verifiable or not recognized?](/en/faq/#val_service_result)

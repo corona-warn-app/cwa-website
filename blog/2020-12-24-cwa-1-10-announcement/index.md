@@ -12,10 +12,10 @@ With the Corona-Warn-App's next update (version 1.10), Deutsche Telekom and SAP'
  
 <!-- overview -->
 
-With whom have I met in the past 14 days? What places did I visit? This is important information for the health department and for tracing infection chains. However, it is difficult to recall that information over a time period of two weeks so the contact journal serves as a **useful memory aid**. The new version with the journal is currently in beta testing and will be available for download soon. Detailed information on how the contact diary works can be found in this blog as soon as the new version is available.
+With whom have I met in the past 14 days? What places did I visit? This is important information for the health department and for tracing infection chains. However, it is difficult to recall that information over a time period of two weeks so the contact journal serves as a **useful memory aid**. The new version with the journal is currently in beta testing and will be available for download soon. Detailed information on how the contact journal works can be found in this blog as soon as the new version is available.
  
 
 <br></br>
 
-<center> <img src="./contact-journal.jpg" title="Contact Journal" style="align: center"> </center>
+<center> <img src="./contact-journal.jpg" title="Contact Journal" alt="Contact Journal" style="align: center"> </center>
 

@@ -15,7 +15,7 @@ Since version 2.13, Corona-Warn app users have been able to restore accidentally
 
 <br></br>
 <center> 
-<img src="./bin_test_ios_en.png" title="Recylce Bin" style="align: center" height=600px> 
+<img src="./bin_test_ios_en.png" title="Recylce Bin" alt="Recylce Bin" style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Fig. 1: Recycle bin with deleted certificates and tests.</em></figcaption>
 </center>
 <br></br>
@@ -27,7 +27,7 @@ If users remove a registered test, it is now moved to the recycle bin where it s
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <img src="./bin_android_en.png" title="Android Papierkorb, Drei-Punkte-Menu" style="align: center" height=600px>
+                <img src="./bin_android_en.png" title="Android Papierkorb, Drei-Punkte-Menu" alt="Android Papierkorb, Drei-Punkte-Menu" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Fig. 2: Android users can select the three dots in the upper right corner of the test and tap "Restore".</em>
                 </figcaption>
@@ -35,7 +35,7 @@ If users remove a registered test, it is now moved to the recycle bin where it s
         </div>
         <div class="col-md-6">
             <figure>
-                <img src="./bin_recover_test_notification_ios_en.png" title="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" style="align: center" height=600px>
+                <img src="./bin_recover_test_notification_ios_en.png" title="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" alt="iOS-Nutzer\*innen können ihn dann wiederherstellen, indem sie den entsprechenden Test im Papierkorb auswählen und auf „Wiederherstellen“ tippen" style="align: center" height=600px>
                 <figcaption aria-hidden="true">
                     <em>Fig. 3:  iOS users can restore a test by selecting the corresponding test and tapping "Restore".</em>
                 </figcaption>
@@ -51,12 +51,12 @@ Please note: As usual, users can only register one active test in their app at a
 
 <br></br>
 <center> 
-<img src="./bin_another_test_ios_en.png" title="The app can manage a maximum of one rapid test and one PCR test at the same time. If you register another PCR test, the first PCR test will be deleted from the app." style="align: center" height=600px> 
+<img src="./bin_another_test_ios_en.png" title="The app can manage a maximum of one rapid test and one PCR test at the same time. If you register another PCR test, the first PCR test will be deleted from the app." alt="The app can manage a maximum of one rapid test and one PCR test at the same time. If you register another PCR test, the first PCR test will be deleted from the app." style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Fig. 4: The app can manage a maximum of one rapid test and one PCR test at the same time. If a user registers another PCR test, for example, the currently active test is moved to the recycle bin.</em></figcaption>
 </center>
 <br></br>
 
-The entries in the contact diary, which show when users have registered a rapid test or performed a PCR test, are not affected when a test is moved to the recycle bin. 
+The entries in the contact journal, which show when users have registered a rapid test or performed a PCR test, are not affected when a test is moved to the recycle bin. 
 
 Android users can access their recycle bin by selecting the three dots in the top right corner of their app and then tap "Recycle Bin." iOS users can swipe down on the home screen of their Corona-Warn-App and select "Recycle Bin" under "More". 
 

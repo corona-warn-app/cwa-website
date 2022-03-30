@@ -4,7 +4,9 @@
             "title": "Get Started",
             "textblock": [
                 "Welcome to the Corona-Warn-App community!",
-                "If you are looking for information on how to join us, you have come to the right place. Read on to find out how you can get involved and contribute to Corona-Warn-App code and documentation. Let's get started!"
+                "If you are looking for information on how to join us, you have come to the right place. Read on to find out how you can get involved and contribute to Corona-Warn-App code and documentation.",
+                "You can also <a href='#social-media'>follow us on Twitter and Instagram</a>, catch up on the latest developments and chat with other followers.",
+                "Let's get started!"
             ]
         },
         "content": {
@@ -16,10 +18,10 @@
                 "image": {
                     "url": "/assets/img/community.svg",
                     "right": true,
-                    "alt": "Community icon image"
+                    "alt": ""
                 },
                 "title": "Contribution rules",
-                "text": "All members of the project community must abide by the Contributor Covenant, version 2.0. Only by respecting each other can we develop a productive, collaborative community. For our specific guidelines, read the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>."
+                "text": "All members of the project community must abide by the Contributor Covenant, version 2.0. Only by respecting each other can we develop a productive, collaborative community. For our specific guidelines, read the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a>."
             }
         }
     },
@@ -33,41 +35,41 @@
             "subtitle": "If you are contributing for the first time, follow these guidelines:",
             "feature-list": [{
                 "image": {
-                    "title": "Issue",
+                    "title": "",
                     "url": "/assets/img/icons/issue.svg",
-                    "alt": "Issue icon"
+                    "alt": ""
                 },
                 "title": "To work on an issue",
                 "text": "Claim it first by commenting on the GitHub issue that you want to work on."
             },{
                 "image": {
-                    "title": "Questions",
+                    "title": "",
                     "url": "/assets/img/icons/questions.svg",
-                    "alt": "Questions icon"
+                    "alt": ""
                 },
                 "title": "To ask a question",
                 "text": "To clarify an issue, simply comment on it, and one of the maintainers will respond."
             },{
                 "image": {
-                    "title": "Documentation",
+                    "title": "",
                     "url": "/assets/img/icons/documentation.svg",
-                    "alt": "Documentation icon"
+                    "alt": ""
                 },
                 "title": "To contribute code or documentation",
-                "text": "In order to fix a bug or to implement a new feature, contributions must be licensed under the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/LICENSE' target='_blank' rel='noopener noreferrer'>Apache 2.0 License</a>."
+                "text": "In order to fix a bug or to implement a new feature, contributions must be licensed under the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/LICENSE' target='_blank' rel='noopener noreferrer'>Apache 2.0 License</a>."
             },{
                 "image": {
-                    "title": "Improvement",
+                    "title": "",
                     "url": "/assets/img/icons/improvement.svg",
-                    "alt": "Improvement icon"
+                    "alt": ""
                 },
                 "title": "To report a trivial fix or improvement",
-                "text": "Create a pull request, addressing a suitable code owner of the particular repository (see for example the documentation repo's <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODEOWNERS' target='_blank' rel='noopener noreferrer' title=''>Code Owners</a>)."
+                "text": "Create a pull request, addressing a suitable code owner of the particular repository (see for example the documentation repo's <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/CODEOWNERS' target='_blank' rel='noopener noreferrer' title=''>Code Owners</a>)."
             },{
                 "image": {
-                    "title": "Security",
+                    "title": "",
                     "url": "/assets/img/icons/security.svg",
-                    "alt": "Security icon"
+                    "alt": ""
                 },
                 "title": "To report a significant security risk",
                 "text": "Make sure to follow the process outlined in the Security Policy that is accessible through the Security tab in each dev repository."
@@ -77,9 +79,21 @@
         "box": {
             "class": "wide",
             "image": {
+                "url": "/assets/img/icons/improvement.svg",
+                "title": "",
+                "alt": ""
+            },
+            "content": {
+                "title": "Want to give technically detailed feedback?",
+                "text": "In the <a href='../faq' target='_blank'>FAQ</a> you will find answers to frequently asked questions as well as information on how to contact us with your particular request."
+            }
+        },
+        "box2": {
+            "class": "wide",
+            "image": {
                 "url": "/assets/img/ideas.svg",
-                "title": "Ideas",
-                "alt": "Ideas icon image"
+                "title": "",
+                "alt": ""
             },
             "content": {
                 "title": "Want to do more?",
@@ -97,5 +111,19 @@
                 "external": true
             }
         }
+    },
+    "section-social-media": {
+        "title": "Social Media",
+        "anchor": "social-media",
+        "textblock": ["You can also find the most important information about the Corona-Warn-App, its features and its development on social media. Note that these accounts only publish German content."],
+        "socialmedia": [{
+            "title": "Twitter",
+            "textblock": ["The Corona-Warn-App has its own <a href='https://twitter.com/coronawarnapp' target='_blank' rel='noopener noreferrer'>Twitter-Account</a>. On Twitter, we regularly inform you about key figures, updates and new features. You can also participate in polls and discuss with other followers about the Corona-Warn-App.",
+            "Follow the account, become a part of the Twitter community and help us to improve the app and make it better known."]
+        },
+        {
+            "title": "Instagram",
+            "textblock": ["At <a href='https://www.instagram.com/rki_fuer_euch/' target='_blank' rel='noopener noreferrer'>RKI für Euch</a> on Instagram we share interesting facts about the Robert Koch Institute, about the development of the pandemic and about the Corona-Warn-App."]
+        }]
     }
 }

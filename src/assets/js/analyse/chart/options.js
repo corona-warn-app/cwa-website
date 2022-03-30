@@ -103,7 +103,7 @@ export default {
 		}
 	},
 	noData: {
-		text: 'No Data to display'
+		text: (documentLang == "de") ? `Keine Daten`: 'No data to display'
 	},
 	dataLabels: {
 		enabled: false
@@ -131,8 +131,8 @@ export default {
 
 			seriesArray = seriesArray.map((e,i) => {
 				const value = e.data[dataPointIndex]
-				const header = i === 0 && seriesArray.length === 6 ? `<b>${translate("legendLabelMean")}</b>` : "";
-				const separator = i === 3 ? `<hr/><b>${translate("legendLabelDaily")}</b>` : "";
+				const header = i === 0 && seriesArray.length === 6 || i === 0 && seriesArray.length === 8 ? `<b>${translate("legendLabelMean")}</b>` : "";
+				const separator = i === 3 && seriesArray.length === 6 || i === 4 && seriesArray.length === 8 ? `<hr/><b>${translate("legendLabelDaily")}</b>` : "";
 				return header+separator+`
 					<div class="apexcharts-tooltip-series-group">
 						<span class="apexcharts-tooltip-marker" style="background-color: ${e.color};"></span>

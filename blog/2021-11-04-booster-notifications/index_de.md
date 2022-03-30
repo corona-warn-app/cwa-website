@@ -26,24 +26,24 @@ Wenn die aktuellen Empfehlungen auf den oder die Nutzer\*in zutreffen, weist die
 
 <br></br>
 <center> 
-<img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
-<img src="./neuigkeiten-zertifikate.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
-<img src="./benachrichtung-unter-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
+<img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" alt="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
+<img src="./neuigkeiten-zertifikate.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
+<img src="./benachrichtung-unter-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
 <figcaption aria-hidden="true"><em> Die App weist Nutzer*innen mit einer Push-Nachricht und dem roten Punkt auf die Neuigkeiten hin. Unter dem Zertifikat finden Nutzer*innen detaillierte Informationen. </em></figcaption>
 </center>
 <br></br>
 
 <br></br>
 <center> 
-<img src="./benachrichtigung-70.png" title="Hinweis für Nutzer*innen über 70" style="align: center" width=250> 
-<img src="./benachrichtigung-johnson.png" title="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" style="align: center" width=250>
+<img src="./benachrichtigung-70.png" title="Hinweis für Nutzer*innen über 70" alt="Hinweis für Nutzer*innen über 70" style="align: center" width=250> 
+<img src="./benachrichtigung-johnson.png" title="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" alt="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: Hinweis für Nutzer*innen, die mindestens 70 Jahre alt sind. Rechts: Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson & Johnson geimpft wurden. </em></figcaption>
 </center>
 <br></br>
 
 Falls die App Nutzer\*innen benachrichtigt, auf die die Bedingungen nicht zutreffen, weil sie beispielsweise schon eine Auffrischimpfung erhalten haben oder doch eine nachgewiesene COVID-19-Infektion durchgemacht haben, können sie die Benachrichtigung ignorieren. Das Projektteam empfiehlt in diesem Fall allerdings, die entsprechenden Impf- oder Genesenenzertifikate in die App einzuscannen. 
 
-Die STIKO empfiehlt Auffrischimpfungen auch Personen mit bestimmten Vorerkrankungen oder Berufen. Diese Informationen kann die Corona-Warn-App allerdings nicht aus den Zertifikaten ableiten, weshalb sie nicht auf solche Empfehlungen hinweisen kann. **Mehr Informationen zu den STIKO-Empfehlungen** finden Sie auf der [Seite des RKI](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/COVID-19.html). 
+Die STIKO empfiehlt Auffrischimpfungen auch Personen mit bestimmten Vorerkrankungen oder Berufen. Diese Informationen kann die Corona-Warn-App allerdings nicht aus den Zertifikaten ableiten, weshalb sie nicht auf solche Empfehlungen hinweisen kann. **Mehr Informationen zu den STIKO-Empfehlungen** finden Sie auf der [Seite des RKI](https://www.rki.de/DE/Content/Infekt/Impfen/ImpfungenAZ/COVID-19/Impfempfehlung-Zusfassung.html). 
 
 ### So können Nutzer\*innen die Auffrischimpfung in der App hinzufügen
 
@@ -51,7 +51,7 @@ Nutzer\*innen können das Zertifikat der Auffrischimpfung ebenso in die Corona-W
 
 <br></br>
 <center> 
-<img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" style="align: center" width=250> 
+<img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>In der Mitte der Registerkarte, hier eingekreist: Universeller QR-Code-Scanner.</em></figcaption>
 </center>
 <br></br>

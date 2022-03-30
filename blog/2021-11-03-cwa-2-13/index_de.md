@@ -25,9 +25,9 @@ Nach **30 Tagen werden die Zertifikate automatisch und endgültig aus dem Papier
 
 <br></br>
 <center> 
-<img src="./papierkorb-ios.png" title="Papierkorb iOS" style="align: center" width=250> 
-<img src="./papierkorb-android(1).png" title="Papierkorb Android" style="align: center" width=250>
-<img src="./papierkorb-wiederherstellen.png" title="Papierkorb iOS" style="align: center" width=250> 
+<img src="./papierkorb-ios.png" title="Papierkorb iOS" alt="Papierkorb iOS" style="align: center" width=250> 
+<img src="./papierkorb-android(1).png" title="Papierkorb Android" alt="Papierkorb Android" style="align: center" width=250>
+<img src="./papierkorb-wiederherstellen.png" title="Zertifikat wiederherstellen" alt="Zertifikat wiederherstellen" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Links: Papierkorb bei iOS-Geräten. Mitte: Papierkorb bei Android-Geräten. Rechts: Zertifikat aus dem Papierkorb wiederherstellen</em></figcaption>
 </center>
 <br></br>
@@ -36,7 +36,7 @@ Nach **30 Tagen werden die Zertifikate automatisch und endgültig aus dem Papier
 
 <br></br>
 <center> 
-<img src="./papierkorb-android(2).png" title="Papierkorb Android" style="align: center" width=250> 
+<img src="./papierkorb-android(2).png" title="Papierkorb Android" alt="Papierkorb Android" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -44,8 +44,8 @@ Nach **30 Tagen werden die Zertifikate automatisch und endgültig aus dem Papier
 
 <br></br>
 <center> 
-<img src="./papierkorb-ios(1).jpg" title="Papierkorb iOS" style="align: center" width=250> 
-<img src="./ios-altes-design.png" title="Papierkorb Android" style="align: center" width=250>
+<img src="./papierkorb-ios(1).jpg" title="Papierkorb iOS" alt="Papierkorb iOS" style="align: center" width=250> 
+<img src="./ios-altes-design.png" title="Papierkorb Android" alt="Papierkorb Android" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: Bereich mit Papierkorb ab Version 2.13. Rechts: Bereich vorher</em></figcaption>
 </center>
 <br></br>
@@ -54,7 +54,7 @@ Nutzer\*innen können ein Zertifikat, das sie gelöscht haben, auch **noch einma
 
 <br></br>
 <center> 
-<img src="./zertificat-scan-wiederherstellen.png" title="Gescanntes Zertifikat wiederherstellen" style="align: center" width=250> 
+<img src="./zertificat-scan-wiederherstellen.png" title="Gescanntes Zertifikat wiederherstellen" alt="Gescanntes Zertifikat wiederherstellen" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -64,7 +64,7 @@ Ab Version 2.13 gibt es außerdem eine **kombinierte Kachel für die 7-Tage-Inzi
 
 <br></br>
 <center> 
-<img src="./inzidenz-android.png" title="Kombinierte Kachel für Inzidenz-Werte" style="align: center" width=250> 
+<img src="./inzidenz-android.png" title="Kombinierte Kachel für Inzidenz-Werte" alt="Kombinierte Kachel für Inzidenz-Werte" style="align: center" width=250> 
 </center>
 <br></br>
 

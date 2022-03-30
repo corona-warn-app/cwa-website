@@ -35,7 +35,7 @@ In den ersten Tagen nach Start der Integration kann es bei wenigen Partnern noch
 Nach dem Test kann ein negatives Testergebnis für **48 Stunden** in der App angezeigt werden. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen. 
 
 <br></br>
-<center><img src="./schnelltest-registrieren.png" title="Schnelltest Registrieren" style="align: center"> <img src="./schnelltest-anzeigen.png" title="Schnelltest Anzeigen" style="align: center"></center>
+<center><img src="./schnelltest-registrieren.png" title="Schnelltest Registrieren" alt="Schnelltest Registrieren" style="align: center"> <img src="./schnelltest-anzeigen.png" title="Schnelltest Anzeigen" alt="Schnelltest Anzeigen" style="align: center"></center>
 <br></br>
 
 Der Schnelltest wird von der Corona-Warn-App **gleichberechtigt zum PCR-Test** behandelt. Nutzer*innen können ihre Kontakte im Falle eines positiven Schnelltest-Ergebnisses direkt warnen, indem sie ihr Testergebnis teilen. Kontaktpersonen erhalten in ihrer Corona-Warn-App entsprechend eine Warnung über eine Begegnung an einem Tag mit niedrigem (grüne Karte) oder erhöhtem Risiko (rote Karte). Ob die Warnung aufgrund eines Schnelltests oder aufgrund eines PCR-Tests erfolgte, ist in der App nicht ersichtlich.

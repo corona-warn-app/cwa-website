@@ -51,7 +51,7 @@
             "title": "This is how the app works best",
             "textblock": [
                 "The RKI as the publisher of the app and the Federal Ministry of Health, in co-operation with Deutsche Telekom and SAP, are constantly reviewing possible further developments as well as incoming development proposals. This also includes whether further information can be integrated into the app, for example on the latest pandemic situation. For that purpose we will continue to intensively incorporate the information that we receive via the various channels into our development process. Here we have briefly summarized the most important tips for using the app:",
-                "<ol><li>Download the current version of the app (iOS: [ios.current-app-version] or Android: [android.current-app-version])</li><li>Keep operating systems up-to-date (iOS [ios.latest-os-version] or iOS 12.5.5 depending on your iPhone model or at least Android [android.minimum-required-os-version] with current Google Play services)</li><li><a href='faq/#background_updates'>Keep background updates switched on and check them regularly</a></li><li>To be on the safe side, open the app once a day</li></ol>",
+                "<ol><li>Download the current version of the app (iOS: [ios.current-app-version] or Android: [android.current-app-version])</li><li>Keep operating systems up-to-date (iOS [ios.latest-os-version] or iOS 12.5.5 depending on your iPhone model or at least Android [android.minimum-required-os-version] with current Google Play services)</li><li><a href='faq/results/#background_updates'>Keep background updates switched on and check them regularly</a></li><li>To be on the safe side, open the app once a day</li></ol>",
                 "We recommend that you always ensure an adequate power supply.",
                 "You can find further information under <a href='faq/'>Frequently Asked Questions about the Corona-Warn-App</a>."
             ]
@@ -66,7 +66,7 @@
                 "index": "01.",
                 "image": {
                     "url": "/assets/img/how-it-works-1.svg",
-                    "alt": "The Corona-Warn-App collects nearby identifiers"
+                    "alt": ""
                 },
                 "title": "Collect nearby identifiers",
                 "text": "The Exposure Notification System (by Apple and Google) on a mobile device broadcasts a Rolling Proximity Identifier (something to be remembered by), while also regularly scanning for identifiers of other phones using Bluetooth Low Energy technology and storing the identifiers locally. The identifiers are only valid for 10-20 minutes and are derived cryptographically from temporary keys which change every 24h.",
@@ -81,7 +81,7 @@
                 "image": {
                     "url": "/assets/img/how-it-works-2.svg",
                     "right": true,
-                    "alt": "The Corona-Warn-App matches test results to IDs"
+                    "alt": ""
                 },
                 "title": "Communicate test result of user with symptoms (optional)",
                 "text": "If the lab in question supports the electronic process, tested users can use the QR code they received during the test to retrieve their results."
@@ -90,7 +90,7 @@
                 "index": "03.",
                 "image": {
                     "url": "/assets/img/how-it-works-3.svg",
-                    "alt": "The Corona-Warn-App shares IDs of people with symptoms"
+                    "alt": ""
                 },
                 "title": "Distribute list of keys of SARS-CoV-2 confirmed users",
                 "text": "In case of a positive test result, users are asked to voluntarily upload their temporary keys of up to the last 14 days to the server. To prevent misuse, the Corona-Warn-App backend first verifies the positive test result. If confirmed, the server adds the user’s keys to the SARS-CoV-2 confirmed list, which is regularly broadcasted to all apps."
@@ -100,13 +100,13 @@
                 "image": {
                     "url": "/assets/img/how-it-works-4.svg",
                     "right": true,
-                    "alt": "The Corona-Warn-App checks for positive contacts"
+                    "alt": ""
                 },
                 "title": "Check for exposure to SARS-CoV-2 confirmed users",
                 "text": "After a mobile device has downloaded the list of all available keys of users that have tested positive, the Exposure Notification System derives the corresponding identifiers and checks locally if any of these match the locally collected Rolling Proximity Identifiers. In case of exposure, the risk is assessed and the user receives corresponding instructions.",
                 "button": {
                     "title": "Learn more in scoping document",
-                    "url": "https://github.com/corona-warn-app/cwa-documentation/blob/master/scoping_document.md",
+                    "url": "https://github.com/corona-warn-app/cwa-documentation/blob/main/scoping_document.md",
                     "external": true
                 }
             }
@@ -157,7 +157,7 @@
             "title": "Join the open-source project!",
             "textblock": [
                 "If you want to contribute, head over to GitHub to get started.",
-                "You can also read the <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank' rel='noopener noreferrer'>documentation</a>, learn about our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a> and find out how to contribute on the <a href='/en/community/'>Community page</a>."
+                "You can also read the <a href='https://github.com/corona-warn-app/cwa-documentation' target='_blank' rel='noopener noreferrer'>documentation</a>, learn about our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/CODE_OF_CONDUCT.md' target='_blank' rel='noopener noreferrer' title=''>Code of Conduct</a> and find out how to contribute on the <a href='/en/community/'>Community page</a>."
             ],
             "button": {
                 "title": "Contribute on GitHub",
@@ -176,7 +176,8 @@
             {
                 "image": {
                     "url": "/assets/img/icons/open-source.svg",
-                    "title": "Open Source"
+                    "title": ""
+
                 },
                 "headline": {
                     "title": "Open source approach"
@@ -184,7 +185,7 @@
                 "list": [
                     {
                         "title": "Transparency",
-                        "text": "Only through transparency can we earn the trust of the end-users and increase app adoption. Our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>architecture document</a> and the <a href='/assets/documents/cwa-eula-en.pdf' target='_blank' rel='noopener noreferrer'>terms of use</a> are openly accessible.<br/>Past versions of the respective terms of use can be viewed <a href='/en/terms-of-use/' rel='noopener noreferrer'>here</a>."
+                        "text": "Only through transparency can we earn the trust of the end-users and increase app adoption. Our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md' target='_blank' rel='noopener noreferrer'>architecture document</a> and the <a href='/assets/documents/cwa-eula-en.pdf' target='_blank' rel='noopener noreferrer'>terms of use</a> are openly accessible.<br/>Past versions of the respective terms of use can be viewed <a href='/en/terms-of-use/' rel='noopener noreferrer'>here</a>."
                     },
                     {
                         "title": "Power of the community",
@@ -195,7 +196,7 @@
             {
                 "image": {
                     "url": "/assets/img/icons/decentralized.svg",
-                    "title": "Data Privacy"
+                    "title": ""
                 },
                 "headline": {
                     "title": "Data Privacy and Safety"
@@ -211,7 +212,7 @@
                     },
                     {
                         "title": "Data Privacy document",
-                        "text": "Details are outlined in the <a href='/assets/documents/cwa-privacy-notice-en.pdf' target='_blank'>privacy notice</a> of the Robert Koch Institute. Additional insights are available in the <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf' target='_blank'>Data Protection Impact Assessment (German only)</a>, the Legal Notice for <a href='/assets/documents/DE_30-06-20_LegalNotice_iOS.pdf' target='_blank'>iOS</a> and <a href='/assets/documents/DE_30-06-20_LegalNotice_Android.pdf' target='_blank'>Android</a> (German only, find English version in app) and the corresponding annexes <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1a.pdf' target='_blank'>1a</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1b.pdf' target='_blank'>1b</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1c.pdf' target='_blank'>1c</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage2.pdf' target='_blank'>2</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage3.pdf' target='_blank'>3</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage4.pdf' target='_blank'>4</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage5.pdf' target='_blank'>5</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank'>6</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage7.pdf' target='_blank'>7</a> uand <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage8.pdf' target='_blank'>8</a>. Past versions of the respective <a href='/en/privacy/' rel='noopener noreferrer'>privacy notice</a> and the initial <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.1.0.1.pdf' rel='noopener noreferrer'>Data Protection Impact assessment</a> are still available."
+                        "text": "Details are outlined in the <a href='/assets/documents/cwa-privacy-notice-en.pdf' target='_blank'>privacy notice</a> of the Robert Koch Institute. Additional insights are available in the <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.pdf' target='_blank'>Data Protection Impact Assessment (German only)</a>, the Legal Notice for <a href='/assets/documents/DE_30-06-20_LegalNotice_iOS.pdf' target='_blank'>iOS</a> and <a href='/assets/documents/DE_30-06-20_LegalNotice_Android.pdf' target='_blank'>Android</a> (German only, find English version in app) and the corresponding annexes <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1a.pdf' target='_blank'>1a</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1b.pdf' target='_blank'>1b</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage1c.pdf' target='_blank'>1c</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage2.pdf' target='_blank'>2</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage3.pdf' target='_blank'>3</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage4.pdf' target='_blank'>4</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage5.pdf' target='_blank'>5</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage6.pdf' target='_blank'>6</a>, <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage7.pdf' target='_blank'>7</a> and <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung-anlage8.pdf' target='_blank'>8</a>. Past versions of the respective <a href='/en/privacy/' rel='noopener noreferrer'>privacy notice</a> and the initial <a href='/assets/documents/cwa-datenschutz-folgenabschaetzung.1.0.1.pdf' rel='noopener noreferrer'>Data Protection Impact assessment</a> are still available."
                     },
                     {
                         "title": "Part of design",
@@ -222,7 +223,7 @@
             {
                 "image": {
                     "url": "/assets/img/icons/lock.svg",
-                    "title": "Security"
+                    "title": ""
                 },
                 "headline": {
                     "title": "Security"
@@ -333,7 +334,7 @@
         "box": {
             "image": {
                 "url": "/assets/img/faq.svg",
-                "title": "Frequently Asked Questions about the Corona-Warn-App"
+                "title": ""
             },
             "content": {
                 "title": "More Questions?",

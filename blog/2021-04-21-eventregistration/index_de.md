@@ -14,7 +14,7 @@ Das Projektteam der Deutschen Telekom und SAP hat **Corona-Warn-App Version 2.0*
 Mit der Eventregistrierung können Veranstalter\*innen und Einzelhändler\*innen mit Hilfe der Corona-Warn-App einen **QR-Code erstellen**, in dem alle notwendigen Daten über die Veranstaltung kodiert werden. Dazu zählen beispielsweise Ort der Veranstaltung, Datum, Art der Veranstaltung und gegebenenfalls Beginn und Ende der Veranstaltung. Besucher\*innen und Gäste können sich für die Veranstaltung **einchecken**, indem sie den QR-Code scannen. Der Check-In wird lokal auf ihrem Smartphone gespeichert und nach zwei Wochen automatisch gelöscht. 
 
 <br></br>
-<center> <img src="./startbildschirm.png" title="QR Code" style="align: center">  <img src="./qr-code.png" title="QR Code" style="align: center"> <img src="./check-in(4).png" title="Persönliche Check-Ins" style="align: center"></center>
+<center> <img src="./startbildschirm.png" title="QR Code" alt="QR Code" style="align: center">  <img src="./qr-code.png" title="QR Code" alt="QR Code" style="align: center"> <img src="./check-in(4).png" title="Persönliche Check-Ins" alt="Persönliche Check-Ins" style="align: center"></center>
 <br></br>
 
 Besucher\*innen, die später positiv auf COVID-19 getestet werden, können ihre **Check-Ins** gemeinsam mit den **Diagnoseschlüsseln** über die App teilen und so auf den Server der Corona-Warn-App hochladen. Der Server veröffentlicht die entsprechenden Check-Ins dann als Warnungen. Diese Warnungen werden regelmäßig heruntergeladen und automatisch mit den lokalen Check-Ins auf den Smartphones der Nutzer*innen abgeglichen. Andere Gäste des selben Events erhalten dann eine rote oder grüne Warnung. 
@@ -31,7 +31,7 @@ Ob Nutzer\*innen eine grüne oder rote Warnung erhalten, hängt davon ab, ob sic
 Im **Kontakt-Tagebuch** können Nutzer\*innen sehen, ob es sich bei einer Begegnung mit niedrigem oder erhöhtem Risiko um eine eventbasierte Warnung handelt.
 
 <br></br>
-<center> <img src="./erhöhtes-risiko-tagebuch.png" title="warnung im Kontakt-Tagebuch" style="align: center"> </center>
+<center> <img src="./erhöhtes-risiko-tagebuch.png" title="Warnung im Kontakt-Tagebuch" alt="Warnung im Kontakt-Tagebuch" style="align: center"> </center>
 <br></br>
 
 
@@ -68,7 +68,7 @@ Ein Event kann kurzfristig von Organisator\*innen angelegt werden und hat einen 
 Orte haben im Gegensatz zu Events keinen festen Anfangs- und Endzeitpunkt. In diesem Fall wird ein QR-Code typischerweise für einen längeren Zeitraum in einem Raum zur Verfügung gestellt. Besucher\*innen scannen diesen QR-Code bei jedem Besuch neu. Beispiele für eine ständige Lokation sind Friseure oder Restaurants.
 
 
-Wer an der **technischen Spezifikation der Event-Registrierung** interessiert ist, findet hier weitere Infos: [https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/master/event_registration.md)
+Wer an der **technischen Spezifikation der Event-Registrierung** interessiert ist, findet hier weitere Infos: [https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md](https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md)
 
 <br></br>
 

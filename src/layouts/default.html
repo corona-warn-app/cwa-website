@@ -8,7 +8,7 @@
     {{#ifequal page-name 'analysis'}}
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:; connect-src 'self' https://obs.eu-de.otc.t-systems.com/" />
     {{else}}
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.coronawarn.app; img-src 'self' *.coronawarn.app data:" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:" />
     {{/ifequal}}
     <meta name="referrer" content="no-referrer" />
     {{#if global.favicon}}
@@ -26,9 +26,9 @@
     
     {{> header}} 
 
-    <div class="main-content">
+    <main class="main-content" role="main">
       {{> body}}
-    </div>
+    </main>
     {{#unless lang_de}}
     {{> footer language=global.lang.en}}
     {{/unless}}

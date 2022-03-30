@@ -90,7 +90,7 @@ document.getElementById('generateQR').addEventListener('click', async function (
     let canvas = document.getElementById('eventqrcode');
     let ctx = canvas.getContext('2d');
     
-    const qr = await GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+    const qr = await GenerateQRCode(grid, description.replace(/\s+/g, ' '), address.replace(/\s+/g, ' '), defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
     ctx.width = 1654;
     ctx.height = 2339;
     canvas.width = 1654;
@@ -217,6 +217,7 @@ document.getElementById('printMultiCode').addEventListener('click', function (e)
 
 function ValidateQRForm() {
   let errors = 0;
+  let errorFocus = false;
 
   let errorMessages = document.querySelectorAll('.invalid-feedback');
   for (let i = 0; i < errorMessages.length; i++) {
@@ -226,24 +227,42 @@ function ValidateQRForm() {
   let locationtype = document.getElementById('locationtype').value;
   if (!locationtype.length) {
     document.getElementById('qr-error-locationtyperequired').style.display = 'block';
+    document.getElementById('locationtype').focus();
+    errorFocus = true;
     errors++;
   }
 
   let description = document.getElementById('description').value;
   if (!description.length) {
     document.getElementById('qr-error-descriptionrequired').style.display = 'block';
+    if (!errorFocus) {
+      document.getElementById('description').focus();
+      errorFocus = true;
+    }
     errors++;
   } else if (description.length > 100) {
     document.getElementById('qr-error-descriptionmax').style.display = 'block';
+    if (!errorFocus) {
+      document.getElementById('description').focus();
+      errorFocus = true;
+    }
     errors++;
   }
 
   let address = document.getElementById('address').value;
   if (!address.length) {
     document.getElementById('qr-error-addressrequired').style.display = 'block';
+    if (!errorFocus) {
+      document.getElementById('address').focus();
+      errorFocus = true;
+    }
     errors++;
   } else if (address.length > 100) {
     document.getElementById('qr-error-addressmax').style.display = 'block';
+    if (!errorFocus) {
+      document.getElementById('address').focus();
+      errorFocus = true;
+    }
     errors++;
   }
 
@@ -251,6 +270,10 @@ function ValidateQRForm() {
   let defaultcheckinlengthMinutes = +document.getElementById('defaultcheckinlength-minutes').value;
   if (!defaultcheckinlengthMinutes && !defaultcheckinlengthHours) {
     document.getElementById('qr-error-defaultcheckinlengthrequired').style.display = 'block';
+    if (!errorFocus) {
+      document.getElementById('defaultcheckinlength-hours').focus();
+      errorFocus = true;
+    }
     errors++;
   }
 
@@ -262,15 +285,31 @@ function ValidateQRForm() {
     let starttime = document.getElementById('starttime-time').value;
     if (!starttime || !startdate) {
       document.getElementById('qr-error-starttimerequired').style.display = 'block';
+      if (!errorFocus) {
+        if (!startdate) {
+          document.getElementById('starttime-date').focus();
+        } else {
+          document.getElementById('starttime-time').focus();
+        }
+        errorFocus = true;
+      }
       errors++;
     } else {
       if (!dateReg.test(startdate) || !dayjs(startdate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-starttimeinvaliddate').style.display = 'block';
+        if (!errorFocus) {
+          document.getElementById('starttime-date').focus();
+          errorFocus = true;
+        }
         errors++;
       }
 
       if (!timeReg.test(starttime)) {
         document.getElementById('qr-error-starttimeinvalidtime').style.display = 'block';
+        if (!errorFocus) {
+          document.getElementById('starttime-time').focus();
+          errorFocus = true;
+        }
         errors++;
       }
     }
@@ -279,15 +318,31 @@ function ValidateQRForm() {
     let endtime = document.getElementById('endtime-time').value;
     if (!endtime || !enddate) {
       document.getElementById('qr-error-endtimerequired').style.display = 'block';
+      if (!errorFocus) {
+        if (!enddate) {
+          document.getElementById('endtime-date').focus();
+        } else {
+          document.getElementById('endtime-time').focus();
+        }
+        errorFocus = true;
+      }
       errors++;
     } else {
       if (!dateReg.test(enddate) || !dayjs(enddate.split(".").reverse().join("-")).isValid()) {
         document.getElementById('qr-error-endtimeinvaliddate').style.display = 'block';
+        if (!errorFocus) {
+          document.getElementById('endtime-date').focus();
+          errorFocus = true;
+        }
         errors++;
       }
 
       if (!timeReg.test(endtime)) {
         document.getElementById('qr-error-endtimeinvalidtime').style.display = 'block';
+        if (!errorFocus) {
+          document.getElementById('endtome-time').focus();
+          errorFocus = true;
+        }
         errors++;
       }
     }
@@ -348,13 +403,32 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
     let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
     let validLocation = !Number.isNaN(parseInt(locationType));
     let validStartDate, validEndDate;
+    let today = new Date();
+    let date = today.toISOString().slice(0, 10);
+    let time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2)
     if (validLocation && (locationType >= 9 && locationType <= 12 || locationType === 2)) {
       validStartDate = new Date(startdate).getTime() > 0 && startdate !== "" && startdate !== null;
       validEndDate = new Date(enddate).getTime() > 0 && enddate !== "" && enddate !== null;
       if (!validStartDate || !validEndDate) {
         validLocation = false
       }
+
+      let errorFocus = false;
+      if (Date.parse(startdate+'T'+starttime) > Date.parse(enddate+'T'+endtime)) {
+        validLocation = false;
+        document.getElementById('qr-error-endtimebeforestarttime').style.display = 'block';
+        document.getElementById('endtime-date').focus();
+        errorFocus = true;
+      }
+      if (startdate < date || (startdate === date && (starttime <= time))) {
+        validLocation = false;
+        document.getElementById('qr-error-olddate').style.display = 'block';
+        if (!errorFocus) {
+          document.getElementById('starttime-date').focus();
+        }
+      }
     }
+    
     let validDescription = description !== "" && description !== null;
     let validAddress = address !== "" && address !== null;
 
@@ -469,7 +543,7 @@ async function GenerateMultiQRCode(data) {
     let grid = document.getElementById("pageTemplate").value
     QR_LIST.splice(0, QR_LIST.length);
     for (const qr of data) {
-      GenerateQRCode(grid, qr.description, qr.address, qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
+      GenerateQRCode(grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
     if (QR_LIST.length !== data.length) {
       document.getElementById('generateMultiQR').disabled = false;
