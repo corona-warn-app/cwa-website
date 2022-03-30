@@ -44,14 +44,13 @@ Furthermore, the CWA now **notifies users when the date of the last encounter wi
 CWA users will also be **notified when their G-status has changed** – for example from 2G to 2G+. This can be the case if they have added a certificate, or the rules have changed.
 
 ### Recovery certificates now without validity dates
-As of version 2.20, validity dates are no longer displayed on recovery certificates. Since the validity of the certificates depends on local rules, the **date of the first positive test** on which the certificate is based is now displayed instead.  
+As of version 2.20, validity dates are no longer displayed on recovery certificates. Since the validity of the certificates depends on local rules, the **date of the first positive test** on which the certificate is based is now displayed instead. 
 
-
-<div class="right-float">
-<figure>
+<br></br>
+<center> 
 <img src="./recovery-certificate.png" alt="Certificate of recovery" style="align: center" width=250px><figcaption aria-hidden="true"><em>Certificate of recovery with the date of the first positive test.</em></figcaption>
-</figure>
-</div>
+</center>
+<br></br>
 
 ### User interface improvements
 With version 2.20, the project team has also improved the user interface. First, users can **no longer tap on the warnings in the contact diary**, but only on the date. As before, when tapping on the date, users will see the people and places they’ve entered for that day. However, the people and places are not necessarily connected to the warning. 
