@@ -352,6 +352,32 @@ $(document).ready(function(){
                         }
                     }
                 })
+                if(window.matchMedia("(max-width: 767px)").matches) {
+                    $("#faq-container-mobile").removeClass("d-none")
+                    $("#glossary-container-mobile").removeClass("d-none")
+                    //Adjust form
+                    $("#faq-search-form").removeClass("w-50").addClass("w-100");
+                    $("#clean_search").removeClass("w-50").addClass("w-100");
+                    $("#faq-search").removeClass("mr-3");
+                    $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
+                    $("#faq-submit").addClass("w-100");
+                    //Adjust topics containers
+                    $("#faq-container").children().each((index, element) => {
+                        $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
+                    })
+                    $("#faq-container").remove();
+                    $("#faq-container-mobile").attr("id", "faq-container");
+        
+                    //Adjust glossary container
+                    $("#glossary_container").children().each((index, element) => {
+                        $(element).appendTo($(".glossary-mobile-content"));
+                    })
+                    $("#glossary_container").remove();
+                    $("#glossary-container-mobile").attr("id", "glossary_container");    
+                } else {
+                    $("#faq-container-mobile").remove();
+                    $("#glossary-container-mobile").remove();
+                }
             }
         },500)
     }
@@ -402,32 +428,6 @@ $(document).ready(function(){
 
         
         $(window).scrollTop(0);
-        if(window.matchMedia("(max-width: 767px)").matches) {
-            $("#faq-container-mobile").removeClass("d-none")
-            $("#glossary-container-mobile").removeClass("d-none")
-            //Adjust form
-            $("#faq-search-form").removeClass("w-50").addClass("w-100");
-            $("#clean_search").removeClass("w-50").addClass("w-100");
-            $("#faq-search").removeClass("mr-3");
-            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
-            $("#faq-submit").addClass("w-100");
-            //Adjust topics containers
-            $("#faq-container").children().each((index, element) => {
-                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
-            })
-            $("#faq-container").remove();
-            $("#faq-container-mobile").attr("id", "faq-container");
-
-            //Adjust glossary container
-            $("#glossary_container").children().each((index, element) => {
-                $(element).appendTo($(".glossary-mobile-content"));
-            })
-            $("#glossary_container").remove();
-            $("#glossary-container-mobile").attr("id", "glossary_container");    
-        } else {
-            $("#faq-container-mobile").remove();
-            $("#glossary-container-mobile").remove();
-        }
         const searchForm = document.getElementById("faq-search-form");
         if(searchForm !== null){
             searchForm.addEventListener("submit", (event) => {
