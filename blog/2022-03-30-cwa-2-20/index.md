@@ -23,13 +23,23 @@ The CWA automatically detects whether there are certificates that need to be exc
 
 The old certificate is automatically moved to the recycle bin, where it is permanently deleted after 30 days. 
 
-
-<br></br>
-<center> 
-<img src="./new-certificate(1).png" title="notification to update certificate" alt="notification to update certificate" style="align: center" width=250> <img src="./new-certificate(2).png" title="consent" alt="consent" style="align: center" width=250> <img src="./new-certificate(3).png" title="consent" alt="consent" style="align: center" width=250>
-<figcaption aria-hidden="true"><em></em></figcaption>
-</center>
-<br></br>
+<div class="row">
+    <div class="col-6 col-lg-4">
+        <div class="mb-4 text-center">
+            <img src="./new-certificate(1).png" title="notification to update certificate" alt="notification to update certificate" />
+        </div>
+    </div>
+    <div class="col-6 col-lg-4">
+        <div class="mb-4 text-center">
+            <img src="./new-certificate(2).png" title="consent" alt="consent" />
+        </div>
+    </div>
+    <div class="col-6 col-lg-4">
+        <div class="mb-4 text-center">
+            <img src="./new-certificate(3).png" title="consent" alt="consent" />
+        </div>
+    </div>
+</div>
 
 ### Display of increased risk shortened from 14 to 10 days 
 Furthermore, as of version 2.20, the CWA only looks at the **last 10 days for calculating the risk of infection** and not the last 14 days as before. This is in line with current quarantine specifications. A red tile therefore automatically turns green again on the 11th day after the last risk encounter. As before, users cannot reset the red tile to green manually or by registering a negative test result, as they can still develop symptoms because of the risk encounter within these 10 days (more information [in this blog](/en/blog/2021-12-15-cwa-red-tile-guidance/)). 
@@ -44,32 +54,49 @@ Furthermore, the CWA now **notifies users when the date of the last encounter wi
 CWA users will also be **notified when their G-status has changed** – for example from 2G to 2G+. This can be the case if they have added a certificate, or the rules have changed.
 
 ### Recovery certificates now without validity dates
-As of version 2.20, validity dates are no longer displayed on recovery certificates. Since the validity of the certificates depends on local rules, the **date of the first positive test** on which the certificate is based is now displayed instead. 
 
-<br></br>
-<center> 
-<img src="./recovery-certificate.png" alt="Certificate of recovery" style="align: center" width=250px><figcaption aria-hidden="true"><em>Certificate of recovery with the date of the first positive test.</em></figcaption>
-</center>
-<br></br>
+<div class="row">
+    <div class="col-lg-6 col-12 order-1 order-lg-12">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./recovery-certificate.png" alt="Certificate of recovery" />
+            <figcaption aria-hidden="true"><em>Certificate of recovery with the date of the first positive test.</em></figcaption>
+        </div>
+    </div>
+    <div class="col-lg-6 col-12 oder-12 order-lg-1">
+        As of version 2.20, validity dates are no longer displayed on recovery certificates. Since the validity of the certificates depends on local rules, the <strong>date of the first positive test</strong> on which the certificate is based is now displayed instead.  
+    </div>
+</div>
 
 ### User interface improvements
-With version 2.20, the project team has also improved the user interface. First, users can **no longer tap on the warnings in the contact diary**, but only on the date. As before, when tapping on the date, users will see the people and places they’ve entered for that day. However, the people and places are not necessarily connected to the warning. 
 
-<div class="right-float">
-<figure>
-<img src="./contact-journal.png" alt="Contact journal" style="align: center" width=250px><figcaption aria-hidden="true"><em>Warning of an increased risk in the contact journal</em></figcaption>
-</figure>
+<div class="row">
+    <div class="col-lg-6 col-12 order-1 order-lg-1">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./contact-journal.png" alt="Contact journal" />
+            <figcaption aria-hidden="true"><em>Warning of an increased risk in the contact journal</em></figcaption>
+        </div>
+    </div>
+    <div class="col-lg-6 col-12 oder-12 order-lg-12">
+        With version 2.20, the project team has also improved the user interface. First, users can <strong>no longer tap on the warnings in the contact diary</strong>, but only on the date. As before, when tapping on the date, users will see the people and places they’ve entered for that day. However, the people and places are not necessarily connected to the warning.  
+    </div>
 </div>
 
 Second, the project team has **removed the QR code for the currently used certificate from the details screen** in the certificate area. The same QR code is also shown in the certificate overview and is therefore not needed again on the detail screen of the respective person. 
 
-<br></br>
-<center> 
-<img src="./qr-code-before.png" title="details screen with QR code" alt="details screen with QR code" style="align: center" width=250> <img src="./qr-code-after.png" title="details screen without QR code" alt="details screen without QR code" style="align: center" width=250>
-<figcaption aria-hidden="true"><em>Left: details screen before, right: details screen as of version 2.20</em></figcaption>
-</center>
-<br></br>
-
+<div class="row">
+    <div class="col-6">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./qr-code-before.png" title="details screen with QR code" alt="details screen with QR code" />
+            <figcaption aria-hidden="true"><em>details screen before</em></figcaption>
+        </div>
+    </div>
+    <div class="col-6 ">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./qr-code-after.png" title="details screen without QR code" alt="details screen without QR code" />
+            <figcaption aria-hidden="true"><em>details screen as of version 2.20</em></figcaption>
+        </div>
+    </div>
+</div>
 
 In addition, the CWA is now capable of **running on Android 13**, which Google says will be released in the fall of 2022. 
 
