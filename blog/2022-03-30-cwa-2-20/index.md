@@ -7,7 +7,7 @@ author: CWA-Team, 10 am
 layout: blog
 ---
 
-The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have **released version 2.20 of the Corona-Warn-App (CWA)**. With the update, the project team translated the CWA into Ukrainian, shortened the increased risk display (red tile), and improved notifications for risk encounters and G-status changes. Besides, they adjusted the risk display after a positive test result. Also, recovery certificates won’t display validity dates anymore since the validity of the certificates depends on local rules. In addition, since March 29, 2022, users will be able to issue new vaccination certificates directly via the 
+The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have **released version 2.20 of the Corona-Warn-App (CWA)**. With the update, the project team translated the CWA into Ukrainian, shortened the increased risk display (red tile), and improved notifications for risk encounters and G-status changes. Besides, they adjusted the risk display after a positive test result. Also, recovery certificates won’t display validity dates anymore since the validity of the certificates depends on local rules. In addition, since March 29, 2022, users will be able to reissue vaccination certificates directly via the app.
 
 <!-- overview -->
 
