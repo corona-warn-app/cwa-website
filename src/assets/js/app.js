@@ -353,7 +353,7 @@ $(document).ready(function(){
                     }
                 })
             }
-        },500)
+        },700)
     }
 
     // remove any hashes when submitting the search form
@@ -413,7 +413,7 @@ $(document).ready(function(){
             $("#faq-submit").addClass("w-100");
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
-                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
+                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-mobile-item-content"));
             })
             $("#faq-container").remove();
             $("#faq-container-mobile").attr("id", "faq-container");
