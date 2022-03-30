@@ -792,12 +792,20 @@ $(document).ready(function(){
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
                     let counter = 0;
-                    $(`${item} .faq`).each((index, faq) => {
-                        if($(faq).is(":visible")) {
-                            $(faq).parent().find("h3").removeClass('d-none');
-                            counter++;
-                        }
-                    })
+                    if(item === "#glossary") {
+                        $(".glossary-result").children("div").each((index, glossary_entry) => {
+                            if($(glossary_entry).is(":visible")) {
+                                counter++;
+                            }
+                       });
+                    } else {
+                        $(`${item} .faq`).each((index, faq) => {
+                            if($(faq).is(":visible")) {
+                                $(faq).parent().find("h3").removeClass('d-none');
+                                counter++;
+                            }
+                        })
+                    }
                     $(section).find(".count").text(' ('+counter.toString()+')')
                 }, 750);
             }
