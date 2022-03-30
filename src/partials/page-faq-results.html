@@ -14,7 +14,7 @@
       {{/each}}
       <div class="topic-list glossary">
         <b class="section-head glossary">{{page-contents.section-main.texts.glossary}}</b>
-        <div class="section-item mb-2"><a href="#glossary" class="no-decoration">A-Z</a></div>
+        <div class="section-item mb-2"><a href="#glossary" class="no-decoration">A-Z<b class="count"></b></a></div>
       </div>
     </ul>
   </aside>
@@ -24,7 +24,7 @@
       <div class="input-group mb-2">
         <div id="clean_search" class="input-group w-50">
           <div class="input-group">
-            <input type="text" class="form-control mr-3" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+            <input type="text" class="form-control mr-3 searchbar-clean-padding" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
             <span class="d-none clean-search">×</span>
           </div>
         </div>
