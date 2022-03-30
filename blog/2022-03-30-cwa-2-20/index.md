@@ -55,11 +55,11 @@ As of version 2.20, validity dates are no longer displayed on recovery certifica
 ### User interface improvements
 With version 2.20, the project team has also improved the user interface. First, users can **no longer tap on the warnings in the contact diary**, but only on the date. As before, when tapping on the date, users will see the people and places they’ve entered for that day. However, the people and places are not necessarily connected to the warning. 
 
-<div class="right-float">
-<figure>
+<br></br>
+<center> 
 <img src="./contact-journal.png" alt="Contact journal" style="align: center" width=250px><figcaption aria-hidden="true"><em>Warning of an increased risk in the contact journal</em></figcaption>
-</figure>
-</div>
+</center>
+<br></br>
 
 Second, the project team has **removed the QR code for the currently used certificate from the details screen** in the certificate area. The same QR code is also shown in the certificate overview and is therefore not needed again on the detail screen of the respective person. 
 
