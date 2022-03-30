@@ -45,20 +45,22 @@ Neu ist auch, dass die CWA-Nutzer\*innen immer dann informiert, wenn sich ihr **
 ### Genesenenzertifikate ab sofort ohne Gültigkeitsdaten
 Ab Version 2.20 werden **auf Genesenenzertifikaten keine Gültigkeitsdaten** mehr angezeigt. Da die Gültigkeit der Zertifikate von lokalen Regeln abhängig ist, wird stattdessen nun das **Datum des ersten positiven Tests** angezeigt, das dem Zertifikat zu Grunde liegt.  
 
-<div class="right-float">
-<figure>
+<br></br>
+<center> 
 <img src="./Genesenenzertifikat.png" alt="Genesenenzertifikat in der CWA" style="align: center" width=250px><figcaption aria-hidden="true"><em>Genesenenzertifikat mit Datum des ersten positiven Tests</em></figcaption>
-</figure>
-</div>
+</center>
+<br></br>
+
 
 ### Verbesserung der Benutzeroberfläche
 Mit Version 2.20 hat das Projektteam zudem die Benutzeroberfläche verbessert. Zum einen können Nutzer\*innen nun nicht mehr auf die **Warnungen im Kontakt-Tagebuch** tippen, sondern nur noch auf das Datum. Darunter werden dann wie bisher die Personen und Orte angezeigt, die von den Nutzer*innen dort eingetragen wurden, die aber nicht notwendigerweise im Zusammenhang mit der Warnung stehen. 
 
-<div class="right-float">
-<figure>
+<br></br>
+<center> 
 <img src="./kontakt-tagebuch.png" alt="Kontakt-Tagebuch in der CWA" style="align: center" width=250px><figcaption aria-hidden="true"><em>Warnung über eine Risikobegegnung im Kontakt-Tagebuch</em></figcaption>
-</figure>
-</div>
+</center>
+<br></br>
+
 
 Zum anderen hat das Projektteam im **Zertifikatsbereich** den **QR-Code** für das aktuell verwendete Zertifikat vom Detail-Bildschirm entfernt. Der QR-Code befindet sich ebenfalls auf der Zertifikate-Übersicht und wird deshalb auf dem Detail-Bildschirm der jeweiligen Person nicht noch einmal benötigt. 
 
