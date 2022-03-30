@@ -20,22 +20,22 @@
   </aside>
 
   <main class="main">
-    <form method="get" id="faq-search-form" class="w-100">
+    <form method="get" id="faq-search-form">
       <div class="input-group mb-2">
-        <div id="clean_search" class="input-group w-50">
+        <div id="clean_search" class="search-input-group">
           <div class="input-group">
-            <input type="text" class="form-control searchbar-clean-padding" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+            <input type="text" class="form-control searchbar-clean-padding w-100" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
             <span class="d-none clean-search">×</span>
           </div>
-        </div>
-        <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
+        </div>      
+        <select class="form-select search-select" id="faq-topic" name="topic">
           <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
           {{#each page-contents.section-main.topics}}
             <option value="{{id}}">{{{title}}}</option>
           {{/each}}
           <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
         </select>
-        <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
+        <button id="faq-submit" value="search" class="btn btn-primary search-button">{{page-contents.section-main.texts.search-button}}</button>
         <div class="filterUse"><img src="../../../assets/img/icons/info.svg"><span>{{page-contents.section-main.texts.info-filteruse}}</span></div>
       </div>
     </form>

@@ -136,7 +136,7 @@ a.no-decoration {
 }
 
 .clean-search {
-  position: relative;
+  position: absolute;
   top: 14px;
   right: 5%;
   z-index: 99;
@@ -169,5 +169,25 @@ a.no-decoration {
 @media (max-width: $screen-md) {
   .searchbar-clean-padding {
     padding-right: 16%;
+  }
+}
+
+.search-input-group{
+  width: 50%!important;
+  margin-right: 1rem;
+}
+
+.search-select{
+  height: 56px;
+  width: 25%!important;
+  margin-right: 1rem;
+}
+
+@media (max-width: $screen-md){
+  .search-input-group,
+  .search-select,
+  .search-button{
+    width: 100%!important;
+    margin-right: 0;
   }
 }
