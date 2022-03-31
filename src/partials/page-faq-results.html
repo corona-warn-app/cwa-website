@@ -21,13 +21,13 @@
   <main class="main">
     <form method="get" id="faq-search-form">
       <div class="mb-2 row">
-        <div id="clean_search" class="col-12 col-md-5 mb-2">
+        <div id="clean_search" class="col-12 col-md-6 mb-2">
           <div>
             <input type="text" class="form-control searchbar-clean-padding" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
             <span class="d-none clean-search">×</span>
           </div>
         </div>
-        <div class="col-12 col-md-5 mb-2">
+        <div class="col-12 col-md-4 mb-2">
           <select class="form-select" id="faq-topic" name="topic">
             <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
             {{#each page-contents.section-main.topics}}
