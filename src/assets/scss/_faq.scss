@@ -161,3 +161,17 @@ a.no-decoration {
     bottom: 2px;
   }
 }
+
+.searchbar-clean-padding {
+  padding-right: 10%;
+}
+
+@media (max-width: $screen-md) {
+  .searchbar-clean-padding {
+    padding-right: 16%;
+  }
+}
+
+.accordion-faq-mobile-item-content {
+  padding: 1.25rem 44px 1.25rem 1.25rem;
+}
