@@ -6,4 +6,4 @@ author: Hanna Heine
 layout: blog
 ---
 
-Version 1.2.1 of the Corona-Warn-App has been released in the Google Play Store. The update corrects the [misleading sentence](/en/faq/#low_risk_text) that the probability of infection is ranked as 'increased' even though the risk of infection is, in fact, low. Therefore, we recommend all Android users to install version 1.2.1 of the Corona-Warn-App.
+Version 1.2.1 of the Corona-Warn-App has been released in the Google Play Store. The update corrects the [misleading sentence](/en/faq/results/#low_risk_text) that the probability of infection is ranked as 'increased' even though the risk of infection is, in fact, low. Therefore, we recommend all Android users to install version 1.2.1 of the Corona-Warn-App.

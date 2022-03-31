@@ -46,7 +46,7 @@
     }
     > dt.active + dd,
     &-header.active + &-body {
-        max-height: 9000px;
+        max-height: max-content;
         border-width: 1px;
         p:last-child {
             margin-bottom: 0.2rem;
@@ -61,5 +61,70 @@
         margin-bottom: 0;
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
+    }
+    &-faq {
+        margin-bottom: $spacer * 2.125;
+    margin-top: $spacer;
+    > dt,
+    &-header {
+        border-bottom: 1px solid $accordion-border-color;
+        border-radius: $border-radius;
+        padding: $accordion-header-padding;
+        margin-bottom: -1px;
+        margin-top: 1rem;
+        position: relative;
+        color: #0074A3;;
+        cursor: pointer;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &-item-button {
+            content: "";
+            border: none;    
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: nth($accordion-header-padding,2)/2;
+            background: transparent url("../img/icons/arrow-right-light.svg") no-repeat center;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+        }
+        &.active {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            button {
+                background-image: url("../img/icons/arrow-right-light.svg");
+                transform: rotate(90deg);
+            }
+        }
+    }
+    > dd,
+    &-body {
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 0 0 $border-radius $border-radius;
+        box-sizing: border-box;
+        border: 0 solid $accordion-border-color;
+    }
+    > dt.active + dd,
+    &-header.active + &-body {
+        max-height: max-content;
+        border-width: 1px;
+        p:last-child {
+            margin-bottom: 0.2rem;
+        }
+    }
+    > dd > div,
+    &-item-content {
+        padding: $accordion-header-padding;
+    }
+    > dt > h4,
+    &-item-title {
+        margin-bottom: 0;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+    }
     }
 }

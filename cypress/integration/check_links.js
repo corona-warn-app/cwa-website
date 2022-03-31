@@ -14,8 +14,8 @@ context("Check for broken links", () => {
                   '/en/blog/archive/',
                   '/de/screenshots/',
                   '/en/screenshots/',
-                  '/de/faq/',
-                  '/en/faq/',
+                  '/de/faq/', '/de/faq/results/',
+                  '/en/faq/', '/en/faq/results/',
                   '/de/rat-partner/',
                   '/en/rat-partner/',
                   '/de/privacy/',
@@ -26,7 +26,11 @@ context("Check for broken links", () => {
                   '/en/event-qr-code-guide/',
                   '/de/blog/','/en/blog/',
                   '/de/science/',
-                  '/en/science/'
+                  '/en/science/',
+                  '/de/simple-language/',
+                  '/en/simple-language/',
+                  '/de/sign-language/',
+                  '/en/sign-language/'
                 ]
     const allowlist = [
       'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999',
