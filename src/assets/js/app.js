@@ -271,7 +271,8 @@ $(document).ready(function(){
 
         if(topicString !== "all") {
             $("#topic_separator").removeClass("d-none");
-            $(".bread-topic").text($(`#${topicString}`).find(".topic-title").text()).removeClass('d-none');
+            $(".bread-section").addClass('d-none');
+            $(".bread-topic").text($(`#${topicString}.topic-title`).text().trim()).removeClass('d-none');
         }
         setTimeout(() => {
             //check again showed items cause of topic filter
