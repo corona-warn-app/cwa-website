@@ -2663,12 +2663,12 @@
                                 "anchor": "encounter_19_calc",
                                 "active": false,
                                 "textblock": [
-                                    "With the introduction of Corona-Warn-App version 1.9, a new version of the Exposure Notification Framework (ENF) from Apple/Google is used, version 2.0 (also known as ExposureWindow mode by Google). The data from this interface is used as the basis for calculating the individual risk.",
-                                    "While the interface's first version 1.0 used average attenuation values for all encounters with another device during the course of the day, the new version 2.0 now considers 30-minute time windows.",
+                                    "With the introduction of Corona-Warn-App version 1.9, a new version of the Exposure Notification Framework (ENF) from Apple/Google is used. For more information, take a look at: <a href='../../blog/2020-12-16-corona-warn-app-version-1-9/' target='_blank'>Corona-Warn-App Version 1.9 to use version 2 of the Exposure Notification Framework</a>",
+                                    "The version 2.0 considers 30-minute time windows.",
                                     "Each of these windows must meet certain criteria to be considered:",
                                     "<ul><li>The signal attenuation must have been below 79dB for at least 5 minutes within the 30-minute window</li>",
-                                    "<li>The transmission risk level must be at least III (3). It is determined when sharing the diagnosis codes per day according to defined criteria such as symptom status and/or symptom onset</li></ul>",
-                                    "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'. These encounters will still show up in the operating system's contact log, but do not count towards the overall risk score in the app.",
+                                    "<li>The transmission risk level must be at least III (3). It is determined when sharing the diagnosis keys per day according to defined criteria such as symptom status and/or symptom onset</li></ul>",
+                                    "If these criteria are <b>not</b> met, an encounter is <b>not counted</b> within the app. It is a 'non-risk encounter'. These encounters will still show up in the operating system's contact log, but do not count towards the overall risk score in the app, see <a href='#keys_matches' target='_blank'>What do the exposure check logs show?</a>",
                                     "If the conditions are met, the contact times are weighted depending on the signal attenuation:",
                                     "<ul><li>Times with an attenuation <63dB are weighted at 80%.</li>",
                                     "<li>Times with an attenuation >= 63dB and <73dB are weighted at 100%.</li>",
@@ -2676,7 +2676,8 @@
                                     "Based on the transmission risk level (III to VIII), a factor between 0.6 and 1.6 is determined. The <i>weighted</i> exposure time from the previous step is multiplied by this factor, which then results in the <i>normalized</i> exposure time. Finally, all normalized times of a day are added up. Ultimately, this means that several short low risk encounters can result in a red status in total. The sum of all normalized exposure times is now used to decide the final risk score:",
                                     "<ul><li>Sum of contact time <5 minutes: No risk exposure(s) (green).</li>",
                                     "<li>Sum of contact time >=5 minutes and <9 minutes: Low risk exposure(s) (green).</li>",
-                                    "<li>Sum of contact time >=9 minutes: High risk exposure(s) (red).</li></ul>"
+                                    "<li>Sum of contact time >=9 minutes: High risk exposure(s) (red).</li></ul>",
+                                    "For more details about risk assessment see the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Mobile Applications section in the Solution Architecture document.</a>"
                                 ]
                             },
                             {
