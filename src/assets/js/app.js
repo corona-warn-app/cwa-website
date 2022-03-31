@@ -353,7 +353,7 @@ $(document).ready(function(){
                     }
                 })
             }
-        },500)
+        },700)
     }
 
     // remove any hashes when submitting the search form
@@ -413,7 +413,7 @@ $(document).ready(function(){
             $("#faq-submit").addClass("w-100");
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
-                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
+                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-mobile-item-content"));
             })
             $("#faq-container").remove();
             $("#faq-container-mobile").attr("id", "faq-container");
@@ -798,12 +798,20 @@ $(document).ready(function(){
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
                     let counter = 0;
-                    $(`${item} .faq`).each((index, faq) => {
-                        if($(faq).is(":visible")) {
-                            $(faq).parent().find("h3").removeClass('d-none');
-                            counter++;
-                        }
-                    })
+                    if(item === "#glossary") {
+                        $(".glossary-result").children("div").each((index, glossary_entry) => {
+                            if($(glossary_entry).is(":visible")) {
+                                counter++;
+                            }
+                       });
+                    } else {
+                        $(`${item} .faq`).each((index, faq) => {
+                            if($(faq).is(":visible")) {
+                                $(faq).parent().find("h3").removeClass('d-none');
+                                counter++;
+                            }
+                        })
+                    }
                     $(section).find(".count").text(' ('+counter.toString()+')')
                 }, 750);
             }
