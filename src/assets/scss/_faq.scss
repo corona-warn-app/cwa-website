@@ -137,13 +137,20 @@ a.no-decoration {
 
 .clean-search {
   position: absolute;
-  top: 14px;
-  right: 5%;
+  top: 5.4%;
+  right: 62.8%;
   z-index: 99;
   cursor: pointer;
   &:hover {
     color: red;
   }
+}
+
+@media (max-width:$screen-md) {
+  .clean-search {
+  top: 11.2%;
+  right: 4.55%;
+}
 }
 
 .highlight {
@@ -171,23 +178,3 @@ a.no-decoration {
     padding-right: 16%;
   }
 }
-
-/*.search-input-group{
-  width: 50%!important;
-  margin-right: 1rem;
-}
-
-.search-select{
-  height: 56px;
-  width: 25%!important;
-  margin-right: 1rem;
-}
-
-@media (max-width: $screen-md){
-  .search-input-group,
-  .search-select,
-  .search-button{
-    width: 100%!important;
-    margin-right: 0;
-  }
-}*/
