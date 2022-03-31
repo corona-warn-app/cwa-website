@@ -455,15 +455,13 @@ $(document).ready(function(){
                     if($(`${hash}`).hasClass("accordion-faq-item-title")){
                         $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
-                    $(document).scrollTop( $(`${hash}`).offset().top );
-                } else {
-                    const elem = $(`h3${hash}`);
-                    if($(elem).length) {
-                        elem.click();
-                        if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
-                    }
-                    history.replaceState({}, document.title, ".");
+                } 
+                const elem = $(`h3${hash}`);
+                if($(elem).length) {
+                    elem.click();
+                    if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
                 }
+                history.replaceState({}, document.title, ".");
             },250)
         }
         if(search) {
