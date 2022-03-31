@@ -405,12 +405,6 @@ $(document).ready(function(){
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-container-mobile").removeClass("d-none")
             $("#glossary-container-mobile").removeClass("d-none")
-            //Adjust form
-            $("#faq-search-form").removeClass("w-50").addClass("w-100");
-            $("#clean_search").removeClass("w-50").addClass("w-100");
-            $("#faq-search").removeClass("mr-3");
-            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
-            $("#faq-submit").addClass("w-100");
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
                 $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-mobile-item-content"));
