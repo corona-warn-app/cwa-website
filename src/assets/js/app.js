@@ -353,7 +353,7 @@ $(document).ready(function(){
                     }
                 })
             }
-        },500)
+        },700)
     }
 
     // remove any hashes when submitting the search form
@@ -407,7 +407,7 @@ $(document).ready(function(){
             $("#glossary-container-mobile").removeClass("d-none")
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
-                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
+                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-mobile-item-content"));
             })
             $("#faq-container").remove();
             $("#faq-container-mobile").attr("id", "faq-container");
@@ -449,15 +449,13 @@ $(document).ready(function(){
                     if($(`${hash}`).hasClass("accordion-faq-item-title")){
                         $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
-                    $(document).scrollTop( $(`${hash}`).offset().top );
-                } else {
-                    const elem = $(`h3${hash}`);
-                    if($(elem).length) {
-                        elem.click();
-                        if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
-                    }
-                    history.replaceState({}, document.title, ".");
+                } 
+                const elem = $(`h3${hash}`);
+                if($(elem).length) {
+                    elem.click();
+                    if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
                 }
+                history.replaceState({}, document.title, ".");
             },250)
         }
         if(search) {
