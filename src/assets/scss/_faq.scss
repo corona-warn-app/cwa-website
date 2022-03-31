@@ -137,8 +137,8 @@ a.no-decoration {
 
 .clean-search {
   position: absolute;
-  top: 5.4%;
-  right: 54%;
+  top: 21%;
+  right: 6.4%;
   z-index: 99;
   cursor: pointer;
   &:hover {
@@ -146,10 +146,9 @@ a.no-decoration {
   }
 }
 
-@media (max-width:$screen-md) {
+@media (max-width: $screen-md) {
   .clean-search {
-  top: 11.2%;
-  right: 4.55%;
+    right: 6.7%;
 }
 }
 
@@ -177,4 +176,8 @@ a.no-decoration {
   .searchbar-clean-padding {
     padding-right: 16%;
   }
+}
+
+.searchbar-clean-relative{
+  position: relative
 }
