@@ -59,7 +59,7 @@
 			<div class="analyseRangePicker">
 				<button class="btn analyseRangePicker-btn ">
 					<span>&nbsp;</span>
-					<img src="{{root}}assets/img/icons/down.svg" alt="" aria-hidden="true">
+					<img src="{{root}}assets/img/icons/down.svg" aria-label="{{page-contents.down}}" alt="">
 				</button>
 				<div class="analyseRangePicker-layer">
 					{{#if page-contents.range.picker.inputs}}
@@ -235,7 +235,7 @@
 		<div class="analyseModal" rel="{{title}}">
 			<h2 class="headline analyseModal-title">
 				<button class="btn analyseModal-close">
-					<img src="{{../root}}assets/img/icons/Close.svg" aria-label="{{close}}">
+					<img src="{{../root}}assets/img/icons/Close.svg" alt="" aria-label="{{close}}">
 				</button>
 				{{title}}
 			</h2>
@@ -249,7 +249,7 @@
 	<div class="analyseModalInfo" rel="{{page-contents.updateNoticeIcon.title}}">
 		<h2 class="headline analyseModal-title">
 			<button class="btn analyseModalInfo-close">
-				<img src="{{root}}assets/img/icons/Close.svg" alt="" aria-hidden="true">
+				<img src="{{root}}assets/img/icons/Close.svg" alt="" aria-label="{{close}}>
 			</button>
 			{{page-contents.updateNoticeIcon.title}}
 		</h2>
