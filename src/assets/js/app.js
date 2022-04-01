@@ -450,12 +450,21 @@ $(document).ready(function(){
                         $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
                 } 
-                const elem = $(`h3${hash}`);
-                if($(elem).length) {
-                    elem.click();
-                    if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
-                }
+                const h3 = $(`h3${hash}`);
+                const topic = $(`${hash}.topic-title`);
+                const section = $(`${hash}.section-container`);
+
                 history.replaceState({}, document.title, ".");
+                if($(h3).length) {
+                    h3.click();
+                    if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
+                } else if($(section).length) {
+                    section.find('.section-title').click();
+                } else if($(topic).length) {
+                    topic.click();
+                } else if(hash === '#glossary') {
+                    $('#glossary').click();
+                }
             },250)
         }
         if(search) {
@@ -737,7 +746,9 @@ $(document).ready(function(){
             $(".section-title").on("click", function(e) {
                 e.preventDefault();
                 $(".section-item").each((index, section) => {
-                    if($(section).find("a").attr('href') === "#"+$(this).attr("id")) $(section).click();
+                    if($(section).find("a").text() === $(this).text()) {
+                        $(section).click();
+                    }
                 })
             });
 
