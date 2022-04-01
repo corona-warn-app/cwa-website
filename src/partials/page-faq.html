@@ -3,19 +3,25 @@
     <div class="container-fluid pt-5 pb-5">
       <h1 class="headline headline-heavy text-center pb-3" id="top">{{page-contents.section-main.headline.title}}</h1>
       <div class="d-flex justify-content-center">
-        <form method="get" id="faq-search-form" class="w-50">
-          <div class="input-group mb-5">
-          <input type="text" class="form-control mr-3 w-50" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
-          <select class="form-select mr-3 w-25" id="faq-topic" name="topic">
-            <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
-            {{#each page-contents.section-main.topics}}
-              <option value="{{id}}">{{{title}}}</option>
-            {{/each}}
-            <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
-          </select>
-          <button id="faq-submit" value="search" class="btn btn-primary">{{page-contents.section-main.texts.search-button}}</button>
-        </div>
-      </form>
+        <form method="get" id="faq-search-form" class="container">
+          <div class="mb-2 row justify-content-center">
+            <div id="clean_search" class="col-12 col-lg-4 mb-2 px-2">
+              <input type="text" class="form-control searchbar-clean-padding" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+            </div>
+            <div class="col-12 col-lg-3 mb-2 px-2">
+              <select class="form-select" id="faq-topic" name="topic">
+                <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
+                {{#each page-contents.section-main.topics}}
+                  <option value="{{id}}">{{{title}}}</option>
+                {{/each}}
+                <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
+              </select>
+            </div>  
+            <div class="mb-2 col-12 col-lg-2 px-2">
+              <button id="faq-submit" value="search" class="btn btn-primary col-12">{{page-contents.section-main.texts.search-button}}</button>
+            </div>
+          </div>
+        </form>
       </div>
       <center><a href="results" class="no-decoration">{{page-contents.section-main.texts.view-all-topics-questions}}</a></center>
     </div>
