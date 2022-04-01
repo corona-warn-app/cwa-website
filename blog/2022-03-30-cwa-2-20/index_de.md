@@ -24,12 +24,23 @@ Die CWA erkennt automatisch, ob Zertifikate vorliegen, die ausgetauscht werden s
 
 Das alte Zertifikat wird automatisch in den Papierkorb verschoben und dort nach 30 Tagen endgültig gelöscht. 
 
-<br></br>
-<center> 
-<img src="./neuaustellung(1).png" title="Hinweis, das Zertifikat zu aktualiseren" alt="Hinweis, das Zertifikat zu aktualiseren" style="align: center" width=250> <img src="./neuaustellung(2).png" title="Einverständniserklärung" alt="Einverständniserklärung" style="align: center" width=250> <img src="./neuaustellung(3).png" title="Einverständniserklärung" alt="Einverständniserklärung" style="align: center" width=250>
-<figcaption aria-hidden="true"><em></em></figcaption>
-</center>
-<br></br>
+<div class="row">
+    <div class="col-6 col-lg-4">
+        <div class="mb-4 text-center">
+            <img src="./neuaustellung(1).png" title="Hinweis, das Zertifikat zu aktualiseren" alt="Hinweis, das Zertifikat zu aktualiseren" />
+        </div>
+    </div>
+    <div class="col-6 col-lg-4">
+        <div class="mb-4 text-center">
+            <img src="./neuaustellung(2).png" title="Einverständniserklärung" alt="Einverständniserklärung" />
+        </div>
+    </div>
+    <div class="col-6 col-lg-4">
+        <div class="mb-4 text-center">
+            <img src="./neuaustellung(3).png" title="Einverständniserklärung" alt="Einverständniserklärung" />
+        </div>
+    </div>
+</div>
 
 ### Anzeige des erhöhten Risikos von 14 auf 10 Tage verkürzt 
 Des Weiteren betrachtet die CWA für die Berechnung des Infektionsrisikos ab Version 2.20 nur noch **die letzten 10 Tage** und nicht mehr wie zuvor die letzten 14 Tage. Damit orientiert sie sich an den [aktuellen Quarantäne-Vorgaben](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Quarantaene/Absonderung.html#:~:text=Kontaktpersonen%20sollen%20sich%20selbst%20monitoren,Isolierungszeit%20ab%20dem%20Datum%20eines). Eine rote Kachel wird folglich am 11. Tag nach der letzten Risikobegegnung automatisch wieder grün. Nach wie vor können Nutzer\*innen die rote Kachel nicht manuell oder durch “Freitesten” auf grün zurückzustellen, da sie innerhalb dieser 10 Tage Symptome in Folge der Risikobegegnung entwickeln können (mehr dazu [in diesem Blog](/de/blog/2021-12-15-cwa-red-tile-guidance/)). 
@@ -43,33 +54,49 @@ Neu ist auch, dass die CWA-Nutzer\*innen immer dann informiert, wenn sich ihr **
 
 
 ### Genesenenzertifikate ab sofort ohne Gültigkeitsdaten
-Ab Version 2.20 werden **auf Genesenenzertifikaten keine Gültigkeitsdaten** mehr angezeigt. Da die Gültigkeit der Zertifikate von lokalen Regeln abhängig ist, wird stattdessen nun das **Datum des ersten positiven Tests** angezeigt, das dem Zertifikat zu Grunde liegt.  
 
-<br></br>
-<center> 
-<img src="./Genesenenzertifikat.png" alt="Genesenenzertifikat in der CWA" style="align: center" width=250px><figcaption aria-hidden="true"><em>Genesenenzertifikat mit Datum des ersten positiven Tests</em></figcaption>
-</center>
-<br></br>
-
+<div class="row">
+    <div class="col-lg-6 col-12 order-1 order-lg-12">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./Genesenenzertifikat.png" alt="Genesenenzertifikat in der CWA" />
+            <figcaption aria-hidden="true"><em>Genesenenzertifikat mit Datum des ersten positiven Tests</em></figcaption>
+        </div>
+    </div>
+    <div class="col-lg-6 col-12 oder-12 order-lg-1">
+        Ab Version 2.20 werden <strong>auf Genesenenzertifikaten keine Gültigkeitsdaten</strong> mehr angezeigt. Da die Gültigkeit der Zertifikate von lokalen Regeln abhängig ist, wird stattdessen nun das <strong>Datum des ersten positiven Tests</strong> angezeigt, das dem Zertifikat zu Grunde liegt.  
+    </div>
+</div>
 
 ### Verbesserung der Benutzeroberfläche
-Mit Version 2.20 hat das Projektteam zudem die Benutzeroberfläche verbessert. Zum einen können Nutzer\*innen nun nicht mehr auf die **Warnungen im Kontakt-Tagebuch** tippen, sondern nur noch auf das Datum. Darunter werden dann wie bisher die Personen und Orte angezeigt, die von den Nutzer*innen dort eingetragen wurden, die aber nicht notwendigerweise im Zusammenhang mit der Warnung stehen. 
 
-<br></br>
-<center> 
-<img src="./kontakt-tagebuch.png" alt="Kontakt-Tagebuch in der CWA" style="align: center" width=250px><figcaption aria-hidden="true"><em>Warnung über eine Risikobegegnung im Kontakt-Tagebuch</em></figcaption>
-</center>
-<br></br>
-
+<div class="row">
+    <div class="col-lg-6 col-12 order-1 order-lg-1">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./kontakt-tagebuch.png" alt="Kontakt-Tagebuch in der CWA"/>
+            <figcaption aria-hidden="true"><em>Warnung über eine Risikobegegnung im Kontakt-Tagebuch</em></figcaption>
+        </div>
+    </div>
+    <div class="col-lg-6 col-12 oder-12 order-lg-12">
+        Mit Version 2.20 hat das Projektteam zudem die Benutzeroberfläche verbessert. Zum einen können Nutzer\*innen nun nicht mehr auf die <strong>Warnungen im Kontakt-Tagebuch</strong> tippen, sondern nur noch auf das Datum. Darunter werden dann wie bisher die Personen und Orte angezeigt, die von den Nutzer*innen dort eingetragen wurden, die aber nicht notwendigerweise im Zusammenhang mit der Warnung stehen. 
+    </div>
+</div>
 
 Zum anderen hat das Projektteam im **Zertifikatsbereich** den **QR-Code** für das aktuell verwendete Zertifikat vom Detail-Bildschirm entfernt. Der QR-Code befindet sich ebenfalls auf der Zertifikate-Übersicht und wird deshalb auf dem Detail-Bildschirm der jeweiligen Person nicht noch einmal benötigt. 
 
-<br></br>
-<center> 
-<img src="./qr-code-vorher.png" title="Detailansicht mit QR-Code" alt="Detailansicht mit QR-Code" style="align: center" width=250> <img src="./qr-code-nachher.png" title="Detailansicht ohne QR-Code" alt="Detailansicht ohne QR-Code" style="align: center" width=250>
-<figcaption aria-hidden="true"><em>Links: Detailansicht zuvor, rechts: Detailansicht ab Version 2.20</em></figcaption>
-</center>
-<br></br>
+<div class="row">
+    <div class="col-6">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./qr-code-vorher.png" title="Detailansicht mit QR-Code" alt="Detailansicht mit QR-Code" />
+            <figcaption aria-hidden="true"><em>Detailansicht zuvor</em></figcaption>
+        </div>
+    </div>
+    <div class="col-6 ">
+        <div class="mb-4 text-center">
+            <img class="mb-2" src="./qr-code-nachher.png" title="Detailansicht ohne QR-Code" alt="Detailansicht ohne QR-Code" />
+            <figcaption aria-hidden="true"><em>Detailansicht ab Version 2.20</em></figcaption>
+        </div>
+    </div>
+</div>
 
 Außerdem ist die CWA unter **Android 13** lauffähig, das laut Google im Herbst 2022 erscheinen soll. 
 
