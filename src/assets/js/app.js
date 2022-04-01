@@ -737,7 +737,9 @@ $(document).ready(function(){
             $(".section-title").on("click", function(e) {
                 e.preventDefault();
                 $(".section-item").each((index, section) => {
-                    if($(section).find("a").attr('href') === "#"+$(this).attr("id")) $(section).click();
+                    if($(section).find("a").text() === $(this).text()) {
+                        $(section).click();
+                    }
                 })
             });
 
