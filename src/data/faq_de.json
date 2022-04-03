@@ -1124,7 +1124,7 @@
                                     "<b>Wie häufig wird der Risikostatus aktualisiert?</b>",
                                     "Der Risikostatus wird bis zu 6 mal täglich automatisch aktualisiert, wenn eine WLAN-Verbindung vorhanden ist. Bei einer mobilen Internetverbindung wird der Risikostatus lediglich einmal täglich abgefragt. Weitere Informationen erhalten Sie hier: <a href='#risk_update_24' target='_blank'>Wie oft wird der Risiko-Status aktualisiert?</a>",
                                     "<b>Wie entstehen unterschiedliche Risikobewertungen bei Nutzern, die sich am gleichen Ort aufgehalten haben?</b>",
-                                    "Abweichende Infektionsrisikobewertungen können mehrere Ursachen haben, beeinträchtigen aber nicht die Wirksamkeit der Corona-Warn-App.<br>Die Einschätzung eines möglichen Infektionsrisikos hängt von der erkannten Kontaktdauer und dem ermittelten Abstand zwischen den Smartphones ab. Die Ermittlung des Abstandes wird dabei auch von der Ausrichtung der beiden Smartphone-Antennen zueinander beeinflusst. Daher ist dieser Aspekt der Risikobewertung sehr stark von der exakten räumlichen Lage der beteiligten Smartphones abhängig. Weitere Informationen erhalten Sie hier: <a href='#dissimilar_indication_of_risk_status' target='_blank'>Unterschiedliche Anzeige von Risiken</a>",
+                                    "Abweichende Infektionsrisikobewertungen können mehrere Ursachen haben, beeinträchtigen aber nicht die Wirksamkeit der Corona-Warn-App.<br>Die Einschätzung eines möglichen Infektionsrisikos hängt von der erkannten Kontaktdauer und dem ermittelten Abstand zwischen den Smartphones ab. Die Ermittlung des Abstandes wird dabei auch von der Ausrichtung der beiden Smartphone-Antennen zueinander beeinflusst. Daher ist dieser Aspekt der Risikobewertung sehr stark von der exakten räumlichen Lage der beteiligten Smartphones abhängig. Weitere Informationen erhalten Sie hier: <a href='#risk_encounter_different_devices' target='_blank'>Unterschiedliche Anzeige von Risiken</a>",
                                     "<br>",
                                     "<h3>Testen</h3>",
                                     "<hr>",
@@ -2621,18 +2621,6 @@
                                 "active": false,
                                 "textblock": [
                                     "Mit der Version 2.19 der Corona-Warn-App wurde unter Android der Abgleich der positiven Schlüssel optimiert. Zuvor wurden in der Risikoberechnung immer alle vom Server heruntergeladenen Schlüssel mit den vom Betriebssystem gesammelten Schüsseln verglichen. Mit dem Update wird das mehrfache Abgleichen von Daten vermieden, und nur neue und zuvor nicht berücksichtigte Schlüssel werden kontrolliert. Während zuvor beispielsweise 4 Millionen Schlüssel in einem Abgleich kontrolliert wurden, sind es mit dieser Optimierung nur noch typischerweise zwischen etwa 4000 und 40000 Schlüsselabgleiche (mit dem Infektionsgeschehen Stand März 2022). Auch die Anzahl der im Betriebssystem (Begegnungsaufzeichnungen) angezeigten Übereinstimmungen von Schlüsseln wird geringer ausfallen. Das hat jedoch keinen Einfluss auf die von der Corona-Warn-App angezeigten Risikobegegnungen in der roten oder grünen Kachel."
-                                ]
-                            },
-                            {
-                                "title": "Unterschiedliche Anzeige von Risiken",
-                                "anchor": "dissimilar_indication_of_risk_status",
-                                "active": false,
-                                "textblock": [
-                                    "Wie kommt es zu Unterschieden in der Infektionsrisikobewertung durch verschiedene CWA Apps, auch wenn die jeweiligen Smartphones sich nicht weit voneinander entfernt befanden?",
-                                    "Abweichende Infektionsrisikobewertungen können mehrere Ursachen haben, beeinträchtigen aber nicht die Wirksamkeit der Corona-Warn-App (CWA).",
-                                    "Die Einschätzung eines möglichen Infektionsrisikos hängt von der erkannten Kontaktdauer und dem ermittelten Abstand zum dem Smartphone eines CWA Nutzers ab, der sich dazu entschlossen hat, seinen positiven Testbescheid zu teilen. Die Ermittlung des Abstandes wird dabei auch von der Ausrichtung der beiden Smartphone-Antennen zueinander beeinflusst. Daher ist dieser Aspekt der Risikobewertung sehr stark von der exakten räumlichen Lage der beteiligten Smartphones abhängig.",
-                                    "Zudem laufen viele Prozesse auf den Smartphones im Hintergrund ab und können daher zu unterschiedlichen Zeitpunkten starten. Beispiele für solche Prozesse sind die Risikoberechnung, das bei bestehendem WiFi-Zugang mehrfach am Tag stattfindende Laden von Positivschlüsseln. Aber auch die Suche nach anderen Smartphones mit aktiver CWA ist ein solcher Hintergrundprozess. ",
-                                    "Des Weiteren unterstützt die CWA (abhängig von der Versionsnummer der App und dem genutzten Betriebssystem) unterschiedliche Versionen des Exposure Notification Framework (ENF). Dieses wird von Google und Apple entwickelt und zur Verfügung gestellt. Da nicht jedes Smartphone die neueste Version des ENF unterstützt, können unterschiedliche ENF Versionen zu abweichenden Risiko-Berechnungen führen."
                                 ]
                             },
                             {

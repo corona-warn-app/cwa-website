@@ -1125,7 +1125,7 @@
                                     "The risk status is automatically updated up to 6 times a day if a WLAN connection is available. In the case of a mobile Internet connection, the risk status is only queried once a day. You can find more information here: <a href='#risk_update_24' target='_blank'>How often is the risk status updated?</a>",
                                     "<b>How do different risk assessments arise among users who have been in the same place?</b>",
                                     "Deviating infection risk scores can have multiple causes, but do not affect the effectiveness of the Corona-Warn-App.",
-                                    "The assessment of a possible risk of infection depends on the detected contact duration and the determined distance between the smartphones. The determination of the distance is also influenced by the orientation of the two smartphone antennas to each other. Therefore, this aspect of the risk assessment is highly dependent on the exact spatial location of the smartphones involved. You can find more information here: <a href='#dissimilar_indication_of_risk_status' target='_blank'>Dissimilar indication of risk status</a>",
+                                    "The assessment of a possible risk of infection depends on the detected contact duration and the determined distance between the smartphones. The determination of the distance is also influenced by the orientation of the two smartphone antennas to each other. Therefore, this aspect of the risk assessment is highly dependent on the exact spatial location of the smartphones involved. You can find more information here: <a href='#risk_encounter_different_devices' target='_blank'>Dissimilar indication of risk status</a>",
                                     "<br>",
                                     "<h3>Testing</h3>",
                                     "<hr>",
@@ -2611,18 +2611,6 @@
                                 "active": false,
                                 "textblock": [
                                     "With version 2.19 of the Corona-Warn-App, the matching of positive keys has been optimized under Android. Previously, the risk calculation always compared all keys downloaded from the server with the keys collected by the operating system. With the update, multiple matching of data is avoided, and only new and previously unaccounted keys are checked. For example, whereas previously 4 million keys were checked, with this optimization it is now typically only between about 4000 and 40000 key matches (with occurrence of infection as of March 2022). The number of keys matched displayed in the operating system (COVID-19 exposure notifications) will also be lower. However, this will not affect the risk encounters displayed by the Corona-Warn-App in the red or green tile."
-                                ]
-                            },
-                            {
-                                "title": "Dissimilar indication of risk status",
-                                "anchor": "dissimilar_indication_of_risk_status",
-                                "active": false,
-                                "textblock": [
-                                    "Why do differences in infection risk status appear in different CWA apps, even for close-by smartphones?",
-                                    "Varying infection risk ratings are caused by several reasons. However, they do not affect the effectiveness of the Corona-Warn-App (CWA).",
-                                    "The assessment of a possible infection risk depends on the recorded contact duration and the determined distance to the smartphone of a CWA user who reported the positive test result.  The distance determination is thereby also affected by the orientation of the two smartphone antennas with respect to each other. Therefore, this aspect of the risk assessment depends largely on physical location of the involved smartphones and on spatial conditions.",
-                                    "Moreover, many processes on the smartphones are background processes; they will start at different times depending on the scheduling of the operating system.  Examples of those processes are the risk calculation process, downloading of positive keys that takes place several times a day when WiFi access is available, and as well the scanning for other smartphones with an active CWA running.",
-                                    "Furthermore, the CWA supports different Exposure Notification Framework (ENF) versions, depending on the version number of the app and the used operating system. This framework is implemented and provided by Google and Apple. Since not every smartphone supports the latest ENF release, also different ENF versions may lead to different risk calculations."
                                 ]
                             },
                             {
