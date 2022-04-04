@@ -791,6 +791,23 @@ $(document).ready(function(){
                 $(".btn-close").click();
             });
         }
+        
+        $(".accordion-faq-item-content a").on("click", function(e){
+            e.preventDefault();
+            console.log(this);
+            if(!$("#topic_separator").hasClass("d-none") || $("#faq-search").val().length > 0){
+                console.log("hola");
+                window.open($(this).attr("href"), '_blank');
+              } else {
+                 location.href = $(this).attr("href") !== "#top" ? $(this).attr("href") : $(this).attr("#top")
+                 if ($(".faq-anchor")) {
+                     console.log("hola2");
+                     location.href = $(this).attr("href")
+                     $($(this).attr("href")).click();
+                }
+             }
+        });
+
         //Show search results count on the side menu
         $(".section-item").each((index, section) => {
             if(search) {
