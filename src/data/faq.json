@@ -20,7 +20,8 @@
             "results-found": "results found",
             "view-all": "View all questions",
             "view-all-topics-questions": "View all topics and all questions",
-            "info-filteruse": "You can filter the content using the menu on the left side"
+            "info-filteruse-md": "You can filter the content using the menu on the left side.",
+            "info-filteruse-sm": "You can filter the content using the menu on the left side. To open the menu, click the arrow at the bottom left of the screen."
         },
         "topics": [
             {
@@ -551,7 +552,7 @@
                                 "anchor": "dcc_replacement",
                                 "active": false,
                                 "textblock": [
-                                    "The EU specifications for booster vaccination certificates have changed. If your certificate no longer meets the current specifications, it is still valid, but it may not be recognized as a booster vaccination during an inspection. In such a case, you can be informed about it via the Corona-Warn-App version 2.19 and later with an appropriate message. You can then voluntarily request a new vaccination certificate free of charge via the app. After you have given your consent, the app transmits the vaccination certificate to the RKI for verification, which issues an updated certificate and transmits it to your app. You will then find the updated certificate in the certificate tab. The old certificate is automatically moved to the recycle bin and deleted after 30 days. The old certificate can be restored at any time within the 30 days.",
+                                    "The EU specifications for booster vaccination certificates have changed. If your certificate no longer meets the current specifications, it is still valid, but it may not be recognized as a booster vaccination during an inspection. In such a case, you can be informed about it via the Corona-Warn-App version 2.20.3 and later with an appropriate message. You can then voluntarily request a new vaccination certificate free of charge via the app. After you have given your consent, the app transmits the vaccination certificate to the RKI for verification, which issues an updated certificate and transmits it to your app. You will then find the updated certificate in the certificate tab. The old certificate is automatically moved to the recycle bin and deleted after 30 days. The old certificate can be restored at any time within the 30 days.",
                                     "For more information, visit the blog: <a href='../../blog/2022-03-30-cwa-2-20/' target='_blank'>Corona-Warn-App Version 2.20</a>"
                                 ]
                             }
@@ -1296,7 +1297,7 @@
                                 "textblock": [
                                     "You can reach us by phone from within Germany and from abroad. The national numbers are free of charge, but are only available from within Germany. The international numbers are <b>not free of charge</b> - the cost of the international call is based on the contract with your provider.",
                                     "<b>Technical Hotline</b>",
-                                    "The technical hotline will help you with technical questions about the Corona-Warn-App, for instance if you have problems with the exposure logging. It is available Monday to Saturday from 7 a.m. to 10 p.m. German local time (except on German national holidays):",
+                                    "The technical hotline will help you with technical questions about the Corona-Warn-App, for instance if you have problems with the exposure logging (only available in German). It is available Monday to Friday from 9 a.m. to 5 p.m. German local time (except on German national holidays):",
                                     "<b>National:</b> 0800 7540001",
                                     "<b>International:</b> +49 30 498 75401",
                                     "<b>TAN Hotline</b>",
@@ -1458,7 +1459,7 @@
                                 "textblock": [
                                     "<b>Updated 30 March, 2022</b>",
                                     "The app is currently available in the following languages:<ul><li>German</li><li>English</li><li>Turkish (as of version 1.1.1)</li><li>Bulgarian (as of version 1.2.0)</li><li>Polish (as of version 1.2.0)</li><li>Romanian (as of version 1.2.0)</li><li>Ukrainian (as of version 2.20.0)</li></ul>",
-                                    "The technical hotline (<a href='tel:08007540001'>0800 7540001</a>) answers in Turkish, English and German. More languages are to come. We'll keep you up to date.",
+                                    "The technical hotline (<a href='tel:08007540001'>0800 7540001</a>) answers in German.",
                                     "The language of the app is derived from the language that is configured in the smartphone's language settings. To display the app in German, for example, change the language settings to German.",
                                     "Please note that many countries release their own Corona tracking apps. Because the German Corona-Warn-App is also available in the app stores and play stores of these countries, the Corona tracking apps could be mixed up. Therefore, make sure that you download the app for your country.",
                                     "See also <a href='#international_phone_numbers' target='_blank' >How to reach us from abroad</a>."
@@ -2401,7 +2402,7 @@
                                 "anchor": "client_server",
                                 "active": false,
                                 "textblock": [
-                                    "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
+                                    "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
                                 ]
                             },
                             {
@@ -2677,7 +2678,7 @@
                                     "<ul><li>Sum of contact time <5 minutes: No risk exposure(s) (green).</li>",
                                     "<li>Sum of contact time >=5 minutes and <9 minutes: Low risk exposure(s) (green).</li>",
                                     "<li>Sum of contact time >=9 minutes: High risk exposure(s) (red).</li></ul>",
-                                    "For more details about risk assessment see the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Mobile Applications section in the Solution Architecture document.</a>"
+                                    "For more details about risk assessment see the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#mobile-applications' target='_blank' rel='noopener noreferrer'>Mobile Applications section in the Solution Architecture document.</a>"
                                 ]
                             },
                             {
