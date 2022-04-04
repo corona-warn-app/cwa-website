@@ -180,39 +180,41 @@ $(document).ready(function(){
             }
         });
         //hide glossary container
-        $("#glossary_container").hide();
+        $("#glossary_container").addClass('d-none');
         // show all matches
         if (show.length === 0) {
             document.querySelectorAll("h3").forEach((title) => {
-                $(title).hide();
+                $(title).addClass('d-none');
                 $('#no_results').removeClass("d-none");
                 $('#collapseAll').addClass("d-none");
             });
-            $("#faq-container").hide();
+            $("#faq-container").addClass('d-none');
         }
         if (show.length > 0) {
             if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
             if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
             //Hide all topics containers
             $("#faq-container").children().each((index, child) => {
-                $(child).hide();
+                $(child).addClass('d-none');
             })
             //Hide all sections containers
-            $(".section-container").hide();
+            $(".section-container").addClass('d-none');
             document.querySelectorAll(show).forEach((div) => {
                 const accordion = $(div).parent().get(0)
                 const section = $($(accordion).parent().get(0)).attr("id");
                 if($($(accordion).parent()).parent().find("h1").attr("id") === topicString || topicString === "all" ) {
                     //Show topic container
                     $("#faq-container").children().each((index, child) => {
-                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")) $(child).show();
+                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")){
+                            $(child).removeClass('d-none'); 
+                        } 
                     })
                     //Show section container
                     $(".section-container").each((index, child) => {
                         if($(child).attr("id") === section) {
-                            $(child).show();
+                            $(child).removeClass('d-none');
                             //Active FAQ title
-                            $(child).find("h3").show();
+                            $(child).find("h3").removeClass('d-none');
                         }
                     })
                     //Active nav
@@ -230,7 +232,7 @@ $(document).ready(function(){
         // hide everything that does not match
         if (hide.length > 0) {
             document.querySelectorAll(hide).forEach((div) => {
-                $(div).hide({duration: 300});
+                $(div).addClass('d-none');
             });
         };
 
@@ -250,26 +252,26 @@ $(document).ready(function(){
                 }
             })
             if(glossaryList > 0) $(".section-item a[href='#glossary']").addClass("active").parent().addClass("active");
-            $("#glossary_container").show();
+            $("#glossary_container").removeClass('d-none');
         }
 
         if(glossaryList === 0) {
-            $("#glossary_container").hide(); 
+            $("#glossary_container").addClass('d-none'); 
         } else {
             if(window.matchMedia("(max-width: 767px)").matches) {
                 $(".glossary-mobile-content").children().each((index, child) => {
-                    if(index > 1) $(child).hide(); 
+                    if(index > 1) $(child).addClass('d-none'); 
                 })
             } else {
                 $("#glossary_container").children().each((index, child) => {
-                    if(index > 1) $(child).hide(); 
+                    if(index > 1) $(child).addClass('d-none'); 
                 })
             }
         }
 
         if(topicString !== "all") {
             $("#topic_separator").removeClass("d-none");
-            $(".bread-topic").text($(`#${topicString}`).find(".topic-title").text()).show();
+            $(".bread-topic").text($(`#${topicString}`).find(".topic-title").text()).removeClass('d-none');
         }
         setTimeout(() => {
             //check again showed items cause of topic filter
@@ -277,13 +279,13 @@ $(document).ready(function(){
             $(".faq").each((index, faq) => {
                 if($(faq).is(":visible")) {
                     counter++;
-                    $(faq).parent().find("h3").show();
+                    $(faq).parent().find("h3").removeClass('d-none');
                 }
             })
 
             if(counter === 0) {
                 document.querySelectorAll("h3").forEach((title) => {
-                    $(title).hide();
+                    $(title).addClass('d-none');
                     $('#no_results').removeClass("d-none");
                     $('#collapseAll').addClass("d-none");
                 });
@@ -351,7 +353,7 @@ $(document).ready(function(){
                     }
                 })
             }
-        },500)
+        },700)
     }
 
     // remove any hashes when submitting the search form
@@ -403,15 +405,9 @@ $(document).ready(function(){
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-container-mobile").removeClass("d-none")
             $("#glossary-container-mobile").removeClass("d-none")
-            //Adjust form
-            $("#faq-search-form").removeClass("w-50").addClass("w-100");
-            $("#clean_search").removeClass("w-50").addClass("w-100");
-            $("#faq-search").removeClass("mr-3");
-            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
-            $("#faq-submit").addClass("w-100");
             //Adjust topics containers
             $("#faq-container").children().each((index, element) => {
-                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-item-content"));
+                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-mobile-item-content"));
             })
             $("#faq-container").remove();
             $("#faq-container-mobile").attr("id", "faq-container");
@@ -421,8 +417,7 @@ $(document).ready(function(){
                 $(element).appendTo($(".glossary-mobile-content"));
             })
             $("#glossary_container").remove();
-            $("#glossary-container-mobile").attr("id", "glossary_container");
-            
+            $("#glossary-container-mobile").attr("id", "glossary_container");    
         } else {
             $("#faq-container-mobile").remove();
             $("#glossary-container-mobile").remove();
@@ -454,14 +449,21 @@ $(document).ready(function(){
                     if($(`${hash}`).hasClass("accordion-faq-item-title")){
                         $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
-                    $(document).scrollTop( $(`${hash}`).offset().top );
-                } else {
-                    const elem = $(`h3${hash}`);
-                    if($(elem).length) {
-                        elem.click();
-                        if($(elem).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(elem).offset().top );
-                    }
-                    history.replaceState({}, document.title, ".");
+                } 
+                const h3 = $(`h3${hash}`);
+                const topic = $(`${hash}.topic-title`);
+                const section = $(`${hash}.section-container`);
+
+                history.replaceState({}, document.title, ".");
+                if($(h3).length) {
+                    h3.click();
+                    if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
+                } else if($(section).length) {
+                    section.find('.section-title').click();
+                } else if($(topic).length) {
+                    topic.click();
+                } else if(hash === '#glossary') {
+                    $('#glossary').click();
                 }
             },250)
         }
@@ -497,11 +499,11 @@ $(document).ready(function(){
         } else {
             if(topic !== "all" && topic){
                 if(topic === "glossary") {
-                    $("#faq-container").hide();
+                    $("#faq-container").addClass('d-none');
                 } else {
-                    $("#glossary_container").hide();
+                    $("#glossary_container").addClass('d-none');
                     $("#faq-container").children().each((index, element) => {
-                        if($(element).find(".topic-title").attr("id") !== topic) $(element).hide();
+                        if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
                         else {
                             $("#topic_separator").removeClass("d-none");
                             $(".bread-topic").text($($(element).children()[0]).find(".topic-title").text());
@@ -546,38 +548,37 @@ $(document).ready(function(){
                 } else {
                     if(topic === "all" || topic === $(this).attr("id")) {
                         if($(this).attr("id") === "glossary") {
-                            $("#faq-container").hide()
-                            $("#glossary_container").show();
-                            let glossaryList = 0;
+                            $("#faq-container").addClass('d-none')
+                            $("#glossary_container").removeClass('d-none');
+                            let glossaryList = countGlossaryResults(search);
                             $(".word").each((index, word) => {
                                 if($(word).text().toLowerCase().includes(search.toLowerCase())) {
                                     $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                                    glossaryList++;
                                 }
                             })
                             $("#counter").text(glossaryList);
                             $("#topic_separator").removeClass("d-none");
                             $(".bread-topic").text($(this).text());
                             $("#bread_separator").addClass("d-none");
-                            $(".bread-section").hide();
+                            $(".bread-section").addClass('d-none');
                             handleResultFoundTextVisibility(glossaryList)
                         }
                         else {
-                            $("#glossary_container").hide();
-                            $("#faq-container").show();
+                            $("#glossary_container").addClass('d-none');
+                            $("#faq-container").removeClass('d-none');
                             $("#faq-container").children().each((index, element) => {
                                 if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
-                                    $(element).hide();
+                                    $(element).addClass('d-none');
                                 }
                                 else {
-                                    $(element).show();
+                                    $(element).removeClass('d-none');
                                 }
                             });
                             setTimeout(() => {
                                 let counter = 0;
                                 $(".faq").each((index, faq) => {
                                     if($(faq).is(":visible")) {
-                                        $(faq).parent().find("h3").show();
+                                        $(faq).parent().find("h3").removeClass('d-none');
                                         counter++;
                                     }
                                 })
@@ -602,47 +603,46 @@ $(document).ready(function(){
                     $("#faq-search-form").submit()
                 } else {
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
-                        $("#faq-container").hide()
-                        $("#glossary_container").show();
+                        $("#faq-container").addClass('d-none')
+                        $("#glossary_container").removeClass('d-none');
                         $(this).addClass("active");
-                        let glossaryList = 0;
+                        let glossaryList = countGlossaryResults(search);
                         $(".word").each((index, word) => {
                             if($(word).text().toLowerCase().includes(search.toLowerCase())) {
                                 $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                                glossaryList++;
                             }
                         })
                         if(glossaryList === 0) {
-                            $("#glossary_container").hide()
+                            $("#glossary_container").addClass('d-none')
                             $('#no_results').removeClass("d-none")
                         } else {
-                            $("#glossary_container").show();
+                            $("#glossary_container").removeClass('d-none');
                             $('#no_results').addClass("d-none");
                         } 
                         $("#counter").text(glossaryList);
                         $("#topic_separator").removeClass("d-none");
                         $(".bread-topic").text($(this).text());
                         $("#bread_separator").addClass("d-none");
-                        $(".bread-section").hide();
+                        $(".bread-section").addClass('d-none');
                         handleResultFoundTextVisibility(glossaryList)
                     } else {
-                        $("#faq-container").show();
+                        $("#faq-container").removeClass('d-none');
                         updateResults(search, topic, faq);
-                        $("#glossary_container").hide();
-                        $(".bread-section").hide();
-                        $("#bread_separator").hide();
+                        $("#glossary_container").addClass('d-none');
+                        $(".bread-section").addClass('d-none');
+                        $("#bread_separator").addClass('d-none');
                         $("#faq-container").children().each((index, element) => {
-                            if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).hide();
+                            if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).addClass('d-none');
                             else {
-                                $(element).show();
-                                $(element).find("h1").show();
+                                $(element).removeClass('d-none');
+                                $(element).find("h1").removeClass('d-none');
                             }
                         });
                         setTimeout(() => {
                             let counter = 0;
                             $(".faq").each((index, faq) => {
                                 if($(faq).is(":visible")) {
-                                    $(faq).parent().find("h3").show();
+                                    $(faq).parent().find("h3").removeClass('d-none');
                                     counter++;
                                 }
                             })
@@ -665,25 +665,24 @@ $(document).ready(function(){
 
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
                     //Deactive faq container
-                    $("#faq-container").hide();
-                    $("#glossary_container").show();
+                    $("#faq-container").addClass('d-none');
+                    $("#glossary_container").removeClass('d-none');
                     if(search) {
-                        let glossaryList = 0;
+                        let glossaryList = countGlossaryResults(search);
                         $(".word").each((index, word) => {
                             if($(word).text().toLowerCase().includes(search.toLowerCase())) {
                                 $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                                glossaryList++;
                             }
                         })
                         $("#counter").text(glossaryList);
                         $("#topic_separator").removeClass("d-none");
-                        $(".bread-topic").text($(this).parent().find("b").text());
+                        $(".bread-topic").text($(this).parent().find(".section-head").text());
                         $("#bread_separator").addClass("d-none");
-                        $(".bread-section").hide();
+                        $(".bread-section").addClass('d-none');
                         handleResultFoundTextVisibility(glossaryList)
                     }
                     return;
-                } else $("#glossary_container").hide();
+                } else $("#glossary_container").addClass('d-none');
                     
                 if(!search) {
                         //Active/deactive topic nav list
@@ -699,20 +698,20 @@ $(document).ready(function(){
                         })
                         $(this).addClass("active");
                 }
-                $("#faq-container").show();
+                $("#faq-container").removeClass('d-none');
                 //Modify breadcrumb
                 $("#bread_separator").removeClass("d-none");
                 $("#topic_separator").removeClass("d-none");
                 $(".bread-topic").text($(this).parent().find(".section-head").text())
                 $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text())
-                $("#bread_separator").show();
-                $(".bread-section").show();
+                $("#bread_separator").removeClass('d-none');
+                $(".bread-section").removeClass('d-none');
                 if(search) {
                     setTimeout(() => {
                         let counter = 0;
                         $(".faq").each((index, faq) => {
                             if($(faq).is(":visible")) {
-                                $(faq).parent().find("h3").show();
+                                $(faq).parent().find("h3").removeClass('d-none');
                                 counter++;
                             }
                         })
@@ -728,18 +727,18 @@ $(document).ready(function(){
                 let container;
                 $("#faq-container").children().each((index, element) => {
                     if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
-                        $(element).hide();
+                        $(element).addClass('d-none');
                     }
                     else {
-                        $(element).show();
+                        $(element).removeClass('d-none');
                         container = element;
                     }
                 });
 
                 //Show/hide sections
                 $(container).children().each((index, section) => {
-                    if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).show();
-                    else $(section).hide();
+                    if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).removeClass('d-none');
+                    else $(section).addClass('d-none');
                 })            
             });
 
@@ -747,7 +746,9 @@ $(document).ready(function(){
             $(".section-title").on("click", function(e) {
                 e.preventDefault();
                 $(".section-item").each((index, section) => {
-                    if($(section).find("a").attr('href') === "#"+$(this).attr("id")) $(section).click();
+                    if($(section).find("a").text() === $(this).text()) {
+                        $(section).click();
+                    }
                 })
             });
 
@@ -797,12 +798,20 @@ $(document).ready(function(){
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
                     let counter = 0;
-                    $(`${item} .faq`).each((index, faq) => {
-                        if($(faq).is(":visible")) {
-                            $(faq).parent().find("h3").show();
-                            counter++;
-                        }
-                    })
+                    if(item === "#glossary") {
+                        $(".glossary-result").children("div").each((index, glossary_entry) => {
+                            if($(glossary_entry).is(":visible")) {
+                                counter++;
+                            }
+                       });
+                    } else {
+                        $(`${item} .faq`).each((index, faq) => {
+                            if($(faq).is(":visible")) {
+                                $(faq).parent().find("h3").removeClass('d-none');
+                                counter++;
+                            }
+                        })
+                    }
                     $(section).find(".count").text(' ('+counter.toString()+')')
                 }, 750);
             }
@@ -816,6 +825,20 @@ $(document).ready(function(){
         const newlink = $(element).find('a').attr('href').replace('/results', '')
         $(element).find('a').attr('href', newlink)
         });
+    }
+
+    const countGlossaryResults = function(search) {
+        let count = 0;
+        $(".word").each((index, word) => {
+            let description = $(word).parent().parent().children(".description").text().toLowerCase();
+            let title = $(word).text().toLowerCase()
+            if(title.includes(search.toLowerCase())) {
+                count++;
+            } else if(description.includes(search.toLowerCase())) {
+                count++;
+            }
+        })
+        return count;
     }
 
     // collapses/expands all accordions on button click in the FAQ
