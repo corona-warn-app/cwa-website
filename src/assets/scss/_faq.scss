@@ -168,6 +168,18 @@ a.no-decoration {
   }
 }
 
+.filterUse-md {
+  @media (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+}
+
+.filterUse-sm {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
 .searchbar-clean-padding {
   padding-right: 10%;
 }
