@@ -355,17 +355,11 @@ $(document).ready(function(){
             }
             $(".accordion-faq-item-content a").on("click", function(e){
                 e.preventDefault();
-                console.log(this);
                 if(!$("#topic_separator").hasClass("d-none") || $("#faq-search").val().length > 0){
-                    console.log("hola");
-                    window.open(window.location.origin + window.location.pathname + $(this).attr('href').replace(window.location.search, ''), '_blank');
-                } else {
-                    location.href = $(this).attr("href") !== "#top" ? $(this).attr("href") : $(this).attr("#top")
-                    if ($(".faq-anchor")) {
-                        console.log("hola2");
-                        location.href = $(this).attr("href")
-                        $($(this).attr("href")).click();
-                    }
+                    if ($(this).attr("href").charAt(0) == "#")
+                        window.open(window.location.origin + window.location.pathname + $(this).attr('href').replace(window.location.search, ''), '_blank');
+                    else
+                        window.open($(this).attr('href').replace(window.location.search, ''), '_blank');
                 }
             });
         },700)
@@ -779,6 +773,17 @@ $(document).ready(function(){
                     })
                 }
             });
+
+            $(".accordion-faq-item-content a").on("click", function(e){
+                e.preventDefault();
+                location.href = $(this).attr("href") !== "#top" ? $(this).attr("href") : $(this).attr("#top")
+                if ($(".faq-anchor")) {
+                    location.href = $(this).attr("href")                    
+                    if ($(this).attr("href").charAt(0) == "#")
+                        $($($(this).attr("href")).parent()).addClass("active");
+                }
+            });
+
             //Show all topics on click on FAQ
             $(".bread-faq").on("click", function(e) {
                 if(!search) $("#faq-topic").val("all").prop('selected', true);
