@@ -68,8 +68,11 @@ document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventqrcode').classList.add('d-none');
   document.getElementById('printCode').disabled = true;
   document.getElementById('downloadCode').disabled = true;
-  document.getElementById('printMultiCode').disabled = true;
-  document.getElementById('downloadMultiCode').disabled = true;
+  document.getElementById('generateQR').disabled = false;
+});
+
+document.getElementById('qrform-multi').addEventListener('change', function(e) {
+  document.getElementById('generateMultiQR').disabled = false;
 });
 
 document.getElementById('generateQR').addEventListener('click', async function (e) {
@@ -106,6 +109,8 @@ document.getElementById('generateQR').addEventListener('click', async function (
     document.getElementById('eventplaceholder').classList.add('d-none');
       
     canvas.classList.remove('d-none');   
+    // Disable ceate button until qrform changes
+    document.getElementById('generateQR').disabled = true;
   }
 });
 
@@ -692,5 +697,5 @@ async function printPages(data) {
     });
   }
   document.getElementById("modal").classList.add('d-none');
-  document.getElementById('generateMultiQR').disabled = false;
+  document.getElementById('generateMultiQR').disabled = true;
 }
