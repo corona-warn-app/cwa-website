@@ -515,12 +515,12 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
-    .pipe(replace('[ios.latest-os-version]', '15.4'))
+    .pipe(replace('[ios.latest-os-version]', '15.4.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.20.2'))
+    .pipe(replace('[ios.current-app-version]', '2.20.3'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.20.1'))
+    .pipe(replace('[android.current-app-version]', '2.20.3'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }

@@ -353,7 +353,8 @@ $(document).ready(function(){
 
         if(topicString !== "all") {
             $("#topic_separator").removeClass("d-none");
-            $(".bread-topic").text($(`#${topicString}`).find(".topic-title").text()).removeClass('d-none');
+            $(".bread-section").addClass('d-none');
+            $(".bread-topic").text($(`#${topicString}.topic-title`).text().trim()).removeClass('d-none');
         }
         setTimeout(() => {
             //check again showed items cause of topic filter
@@ -709,7 +710,8 @@ $(document).ready(function(){
                         handleResultFoundTextVisibility(glossaryList)
                     } else {
                         $("#faq-container").removeClass('d-none');
-                        updateResults(search, topic, faq);
+                        let currentTopic = $(this).attr("class").split(/\s+/)[1];
+                        updateResults(search, currentTopic, faq);
                         $("#glossary_container").addClass('d-none');
                         $(".bread-section").addClass('d-none');
                         $("#bread_separator").addClass('d-none');
