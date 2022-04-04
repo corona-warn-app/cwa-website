@@ -628,7 +628,8 @@ $(document).ready(function(){
                         handleResultFoundTextVisibility(glossaryList)
                     } else {
                         $("#faq-container").removeClass('d-none');
-                        updateResults(search, topic, faq);
+                        let currentTopic = $(this).attr("class").split(/\s+/)[1];
+                        updateResults(search, currentTopic, faq);
                         $("#glossary_container").addClass('d-none');
                         $(".bread-section").addClass('d-none');
                         $("#bread_separator").addClass('d-none');
