@@ -20,7 +20,8 @@
             "results-found": "results found",
             "view-all": "View all questions",
             "view-all-topics-questions": "View all topics and all questions",
-            "info-filteruse": "You can filter the content using the menu on the left side"
+            "info-filteruse-md": "You can filter the content using the menu on the left side.",
+            "info-filteruse-sm": "You can filter the content using the menu on the left side. To open the menu, click the arrow at the bottom left of the screen."
         },
         "topics": [
             {
@@ -113,7 +114,7 @@
                                 "textblock": [
                                     "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For info about the app flow, see <a href='#risk_info' target='_blank' >How do you get information about a risk of infection?</a> for details.",
                                     "<b>Exposure checks</b>",
-                                    "This is where the checks of up to 15 days are logged (today plus the last 14  (10 days since version 2.20)). There may be multiple checks made per day. Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
+                                    "This is where the checks of up to 15 days are logged (today plus the last 14 days). There may be multiple checks made per day. Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
                                     "<b>Provided Key Count</b> (iOS) | <b>Number of keys</b> (Android)",
                                     "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
                                     "<b>Matched Key Count</b> (iOS) | <b>Number of matches</b> (Android)",
@@ -497,8 +498,7 @@
                                 "anchor": "vac_cert_multiple_scan_possible",
                                 "active": false,
                                 "textblock": [
-                                    "There is no limit to how often you can scan the QR code of vaccination certificates. By scanning the QR code of a certificate you can add and manage the vaccination certificates: <ul><li>on multiple devices, e.g. on your private and business phone </li><li>on a new device, when changing device</li><li> in several apps, e.g. the Corona-Warn-App and the CovPass-App</li><li> on a device you have reset. Certificates are not included in the backup. </li></ul>",
-                                    "<a href='#vac_cert_index' target='_self' >To the index of the vaccination certificate</a>"
+                                    "There is no limit to how often you can scan the QR code of vaccination certificates. By scanning the QR code of a certificate you can add and manage the vaccination certificates: <ul><li>on multiple devices, e.g. on your private and business phone </li><li>on a new device, when changing device</li><li> in several apps, e.g. the Corona-Warn-App and the CovPass-App</li><li> on a device you have reset. Certificates are not included in the backup. </li></ul>"
                                 ]
                             },
                             {
@@ -567,8 +567,7 @@
                                 "anchor": "test_cert_get",
                                 "active": false,
                                 "textblock": [
-                                    "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Manage Your Tests' on the Status tab ('Start Screen' before version 2.12) of your CWA (or on 'Register Test' for app versions until 2.5) and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can tap 'Request Test Certificate' or decline it if you do not want to receive one.",
-                                    "<a href='#test_cert_index' target='_self' >To the index of the test certificate</a>"
+                                    "You can request the certificate by registering a test in the Corona-Warn-App (CWA): To do this, tap on 'Manage Your Tests' on the Status tab ('Start Screen' before version 2.12) of your CWA (or on 'Register Test' for app versions until 2.5) and then on 'Scan QR Code'. After scanning the QR code for test registration, the window for the COVID test certificate automatically opens. There you can tap 'Request Test Certificate' or decline it if you do not want to receive one."
                                 ]
                             },
                             {
@@ -578,8 +577,7 @@
                                 "textblock": [
                                     "You can request a certificate for both PCR and rapid tests, which are then issued in the event of a negative test.",
                                     "<b>Rapid tests</b><br>In the case of rapid tests, it may be that the respective test site does not support the digital certificate. In this case, after scanning the QR code, you will not be redirected to apply for the certificate. You will then receive the information that a test certificate cannot be requested because the test site does not support the issuance of test certificates.",
-                                    "<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct.",
-                                    "<a href='#test_cert_index' target='_self' >To the index of the test certificate</a>"
+                                    "<b>PCR tests</b><br>When requesting a test certificate for a PCR test, you must provide your date of birth. It is important that the date of birth corresponds to the one that was also indicated for the sample of the PCR test. If the dates of birth do not match, for example due to a typo, you will not receive the test result or the certificate via the app. You cannot change the date of birth that you enter in the app afterwards. Before you request the test certificate after entering the date, you should therefore briefly check whether the date is correct."
                                 ]
                             },
                             {
@@ -587,8 +585,7 @@
                                 "anchor": "test_cert_when_and_where",
                                 "active": false,
                                 "textblock": [
-                                    "Shortly after the test result is available in the app, you will also receive your test certificate in the app - provided that you have requested it beforehand, and the respective rapid test site supports the creation of a certificate. You can then view it via the 'Certificates' tab. If you tap on the COVID test certificate, you will be shown the QR code that can be scanned for verification, and more information, such as type of test, date and time of execution and test result.",
-                                    "<a href='#test_cert_index' target='_self' >To the index of the test certificate</a>"
+                                    "Shortly after the test result is available in the app, you will also receive your test certificate in the app - provided that you have requested it beforehand, and the respective rapid test site supports the creation of a certificate. You can then view it via the 'Certificates' tab. If you tap on the COVID test certificate, you will be shown the QR code that can be scanned for verification, and more information, such as type of test, date and time of execution and test result."
                                 ]
                             },
                             {
@@ -596,8 +593,7 @@
                                 "anchor": "test_cert_validity",
                                 "active": false,
                                 "textblock": [
-                                    "How long the certificate is valid depends on the regulations of the respective federal state or municipality.",
-                                    "<a href='#test_cert_index' target='_self' >To the index of the test certificate</a>"
+                                    "How long the certificate is valid depends on the regulations of the respective federal state or municipality."
                                 ]
                             },
                             {
@@ -606,8 +602,7 @@
                                 "active": false,
                                 "textblock": [
                                     "To create the test certificate, the data is encrypted end-to-end and transmitted from the laboratory or the rapid test site to the Corona-Warn-App. For this purpose, the encrypted data is transmitted to the Robert Koch Institute (RKI) in order to digitally sign it and thus confirm the validity of the certificate. The data cannot be decrypted by the RKI and will be deleted after delivery of the certificate.",
-                                    "Test certificates are stored in the app for an unlimited period of time. You can delete certificates manually by going to the 'Certificates' tab, selecting the respective test certificate and then selecting 'Remove test certificate'.",
-                                    "<a href='#test_cert_index' target='_self' >To the index of the test certificate</a>"
+                                    "Test certificates are stored in the app for an unlimited period of time. You can delete certificates manually by going to the 'Certificates' tab, selecting the respective test certificate and then selecting 'Remove test certificate'."
                                 ]
                             }
                         ]
@@ -673,8 +668,7 @@
                                 "anchor": "vac_booster_basics",
                                 "active": false,
                                 "textblock": [
-                                    "<div class='container'><div class='row'><div class='col-sm'><a href='/assets/img/faq/vac_booster_basics_en.png' target='_blank'><img src='/assets/img/faq/vac_booster_basics_en.png' alt='Certificate List' width='300'></a></div><div class='col-sm'><p>A booster vaccination (revaccination) is a vaccination process designed to refresh waning vaccination protection after basic immunization. In most cases, but not always, it takes place according to the recommendations of the authorities after a period of about 5-6 months after the last vaccination procedure. (Example: completion of the vaccination series for basic immunization on 08 Jul 2021, possible booster vaccination on: 08 Jan 2022)</p><p>Each booster vaccination can be attested by a digital COVID certificate, which you can scan into the Corona-Warn-App. Important: please ensure that the personal data (surname, first name and date of birth) are shown to match the existing vaccination certificates. Only then will it be possible to assign the new certificate to the booster vaccination of the basic immunization. (Example: same academic title or indication of the full double name).</p><p>Booster shots provide immediate vaccine protection.</p><p>Based on the previous vaccination series, the booster certificate will be documented '3 of 3' (in case of previous basic immunization with 2 doses) or with '2 of 2' (as vaccination optimization according to the Janssen agent from Johnson & Johnson). In the latter case, however, the CovPassCheck-App, Corona-Warn-App and CovPass-App cannot display this correctly in all cases for technical reasons.</p><p>The '1 of 1' label for a booster vaccination indicates that it is the first and only vaccination after a COVID-19 disease recovery. Vaccinations with Johnson & Johnson are an exception.</p><p> See also: <a href='#vac_booster_jj' target='blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></p></div></div></div>",
-                                    "<p><a href='#vac_cert_booster' target='_self' >To the index of the booster vaccination</a></p>"
+                                    "<div class='container'><div class='row'><div class='col-sm'><a href='/assets/img/faq/vac_booster_basics_en.png' target='_blank'><img src='/assets/img/faq/vac_booster_basics_en.png' alt='Certificate List' width='300'></a></div><div class='col-sm'><p>A booster vaccination (revaccination) is a vaccination process designed to refresh waning vaccination protection after basic immunization. In most cases, but not always, it takes place according to the recommendations of the authorities after a period of about 5-6 months after the last vaccination procedure. (Example: completion of the vaccination series for basic immunization on 08 Jul 2021, possible booster vaccination on: 08 Jan 2022)</p><p>Each booster vaccination can be attested by a digital COVID certificate, which you can scan into the Corona-Warn-App. Important: please ensure that the personal data (surname, first name and date of birth) are shown to match the existing vaccination certificates. Only then will it be possible to assign the new certificate to the booster vaccination of the basic immunization. (Example: same academic title or indication of the full double name).</p><p>Booster shots provide immediate vaccine protection.</p><p>Based on the previous vaccination series, the booster certificate will be documented '3 of 3' (in case of previous basic immunization with 2 doses) or with '2 of 2' (as vaccination optimization according to the Janssen agent from Johnson & Johnson). In the latter case, however, the CovPassCheck-App, Corona-Warn-App and CovPass-App cannot display this correctly in all cases for technical reasons.</p><p>The '1 of 1' label for a booster vaccination indicates that it is the first and only vaccination after a COVID-19 disease recovery. Vaccinations with Johnson & Johnson are an exception.</p><p> See also: <a href='#vac_booster_jj' target='blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></p></div></div></div>"
                                 ]
                             },
                             {
@@ -684,8 +678,7 @@
                                 "textblock": [
                                     "The Conference of Health Ministers has now passed a regulation on COVID-19 booster vaccinations. An additional booster vaccination is designed to help raise neutralizing antibody titers again, which may decline over time after basic immunization. This becomes particularly important if a weak/muted vaccine response is assumed or recognized after basic immunization in certain groups of vulnerable people.",
                                     "The Corona-Warn-App (CWA) will notify the user to consider a booster vaccination if certain conditions are met. These conditions are based on the recommendations of the Paul Ehrlich Institute and the Permanent Vaccination Commission (STIKO) of the Robert Koch Institute (RKI).",
-                                    "How long someone is effectively protected by a COVID-19 vaccination (basic immunization) depends on several factors and can therefore not be answered in general terms according to current knowledge.",
-                                    "<a href='#vac_cert_booster' target='_self' >To the index of the booster vaccination</a>"
+                                    "How long someone is effectively protected by a COVID-19 vaccination (basic immunization) depends on several factors and can therefore not be answered in general terms according to current knowledge."
                                 ]
                             },
                             {
@@ -695,8 +688,7 @@
                                 "textblock": [
                                     "Since version 2.9, the Corona-Warn-App will allow importing certificates documenting a booster vaccination. (see blog article: <a href='../../blog/2021-09-08-cwa-version-2-9/' target='_blank' >Corona-Warn-App version 2.9: Organizers can use the check-in function to warn guests on behalf of the health department</a>)",
                                     "Since version 2.10, users receive a notification to consider a booster vaccination if necessary. The notification is based on national rules that have been implemented in collaboration and alignment with the Robert Koch Institute (RKI). These rules are continuously reviewed and adapted according to developments and new findings. (see blog article: <a href='../../blog/2021-09-22-cwa-version-2-10/' target='_blank' >Blog article Corona-Warn-App version 2.10</a>)",
-                                    "Please note: The booster vaccination certificate is only valid if you can also prove the required basic immunization by the corresponding last certificate of the vaccination series. Please do not delete the other vaccination certificates from the CWA! Since no uniform EU-standards have yet been defined on this topic, you should also carry the basic immunization certificates with you, especially when traveling abroad, whether in the CWA, as a PDF, or as a paper printout. We therefore recommend keeping all vaccination certificates in the app, even if they are no longer up to date.",
-                                    "<a href='#vac_cert_booster' target='_self' >To the index of the booster vaccination</a>"
+                                    "Please note: The booster vaccination certificate is only valid if you can also prove the required basic immunization by the corresponding last certificate of the vaccination series. Please do not delete the other vaccination certificates from the CWA! Since no uniform EU-standards have yet been defined on this topic, you should also carry the basic immunization certificates with you, especially when traveling abroad, whether in the CWA, as a PDF, or as a paper printout. We therefore recommend keeping all vaccination certificates in the app, even if they are no longer up to date."
                                 ]
                             },
                             {
@@ -1052,6 +1044,15 @@
                         "indexed": false,
                         "accordion": [
                             {
+                                "title": "Where can I find news on the Corona-Warn-App?",
+                                "anchor": "news",
+                                "active": false,
+                                "textblock": [
+                                    "The availability and details of new Corona-Warn-App versions are published in the <a href='../../blog/' target='_blank'>Blog</a> as soon as an update is released into the stores. (See also <a href='#where_to_get' target='_blank'>Where can I get the app?</a>.) Occasionally, information on various other topics is published in the Blog as well, such as recommendations on how to behave in the event of a red tile.",
+                                    "Additionally, news about the Corona-Warn-App is published on <a href='https://twitter.com/coronawarnapp' target='_blank' rel='noopener noreferrer'>Twitter</a> where users can also ask questions and get replies from the helpful community there. The announcements and conversations in the Twitter channel are in German generally."
+                                ]
+                            },
+                            {
                                 "title": "In-App statistics starting with release 1.11",
                                 "anchor": "further_details",
                                 "active": false,
@@ -1279,7 +1280,7 @@
                                 "anchor": "who_can_help",
                                 "active": false,
                                 "textblock": [
-                                    "The technical hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with exposure logging. You can reach the technical hotline from Monday to Saturday from 7 a.m. to 10 p.m. (except on German national holidays), and it is free of charge for you within Germany.",
+                                    "The technical hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with exposure logging. You can reach the technical hotline from Monday to Friday from 7 a.m. to 5 p.m. (except on German national holidays), and it is free of charge for you within Germany.",
                                     "The TAN hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) will help you to enter the TAN if you have a positive PCR test result and if you have not received a TAN or document with a PCR-Test QR code. The TAN hotline is available Monday to Sunday from 7 a.m. to 8 p.m. German local time. The call is free of charge from within Germany.",
                                     "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB'>Robert Koch Institute Tool: Health authority by postal code or place</a>",
                                     "Further information on the PCR-Test QR Code procedure can be found in this FAQ entry: <a href='#qr_test'>I have scanned a PCR-Test QR code, but the test result could not be retrieved for days.</a>",
@@ -2188,7 +2189,7 @@
                                     "<ul><li>Google Play Services are outdated.</li><li>The app is not available with Google Play for your country. See <a href='#international' target='_blank' >In which international app stores is the app available?</a> for the supported country versions.</li><li>You haven’t installed Corona-Warn-App via the official Google Play Store.</li><li>Your device has been modified (e.g. by rooting).</li><li>You have multiple user accounts on your device and the user that you use Corona-Warn-App with doesn’t have administrator rights.</li><li>The manufacturer of your device hasn’t made Google Play Services and Google Play Store available for your device. This affects some models by Huawei und Xiaomi, for example.</li><li>Google Mobile Services are outdated.</li></ul>",
                                     "<b>Troubleshooting</b>",
                                     "Many affected users were able to get rid of this error through the following steps:",
-                                    "<ol><li>Update your Google Play Services to the latest version. See: <a href='https://play.google.com/store/apps/details?id=com.google.android.gms&hl=en' target='_blank' rel='noopener noreferrer'>Google Play Services</a>. In the device settings under 'Apps & notifications' > 'Google Play Services' > 'Advanced', you can check your version at the bottom. Please also see the note on Google Mobile Services at the bottom of this answer.</li><li>Clear the cache of the Google Play Services in the device settings under 'Apps & notifications' > 'Google Play Services' > 'Storage' > 'Clear cache'.</li><li>Change your Google Play country to Germany as described here: <a href='https://support.google.com/googleplay/answer/7431675?hl=de' target='_blank' rel='noopener noreferrer'>Change your Google Play country</a>.</li><li>Check if your device generally supports exposure logging in Germany. In the device settings under 'Google' > 'COVID-19 Exposure Notifications', Corona-Warn-App should be listed.</li><li>Make sure that the user account that you’re using on your device has administrator rights. In the device settings, go to 'System' > 'Advanced' > 'Multiple users'.</li><li>Before you install Corona-Warn-App make sure that you’re connected to the internet and that you have activated Bluetooth and Location (see also <a href='/en/faq/#android_location' target='_blank' >[Google/Android]: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>).</li><li>Restart your device.</li><li>If nothing else worked, because doing so could remove the already collected random IDs (see <a href='#delete_random_ids' target='_blank' rel='noopener'>Are the exposure logs/random IDs removed from my phone when I uninstall the app?</a>): Uninstall the Corona-Warn-App and reinstall it from the Google Play Store (<a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp&hl=en&showAllReviews=true' target='_blank' rel='noopener noreferrer'>Corona-Warn-App</a>).</li></ol>",
+                                    "<ol><li>Update your Google Play Services to the latest version. See: <a href='https://play.google.com/store/apps/details?id=com.google.android.gms&hl=en' target='_blank' rel='noopener noreferrer'>Google Play Services</a>. In the device settings under 'Apps & notifications' > 'Google Play Services' > 'Advanced', you can check your version at the bottom. Please also see the note on Google Mobile Services at the bottom of this answer.</li><li>Clear the cache of the Google Play Services in the device settings under 'Apps & notifications' > 'Google Play Services' > 'Storage' > 'Clear cache'.</li><li>Change your Google Play country to Germany as described here: <a href='https://support.google.com/googleplay/answer/7431675?hl=de' target='_blank' rel='noopener noreferrer'>Change your Google Play country</a>.</li><li>Check if your device generally supports exposure logging in Germany. In the device settings under 'Google' > 'COVID-19 Exposure Notifications', Corona-Warn-App should be listed.</li><li>Make sure that the user account that you’re using on your device has administrator rights. In the device settings, go to 'System' > 'Advanced' > 'Multiple users'.</li><li>Before you install Corona-Warn-App make sure that you’re connected to the internet and that you have activated Bluetooth and Location (see also <a href='#android_location' target='_blank' >[Google/Android]: When activating exposure logging or Bluetooth I'm asked to activate my location. Do I have to do this?</a>).</li><li>Restart your device.</li><li>If nothing else worked, because doing so could remove the already collected random IDs (see <a href='#delete_random_ids' target='_blank' rel='noopener'>Are the exposure logs/random IDs removed from my phone when I uninstall the app?</a>): Uninstall the Corona-Warn-App and reinstall it from the Google Play Store (<a href='https://play.google.com/store/apps/details?id=de.rki.coronawarnapp&hl=en&showAllReviews=true' target='_blank' rel='noopener noreferrer'>Corona-Warn-App</a>).</li></ol>",
                                     "If the error persists even though you went through all steps listed above, Possibly a short wait is necessary for your device to activate Exposure Logging. Please close Corona-Warn-App and wait for two hours before trying again.",
                                     "Note on Google Mobile Services: For Corona-Warn-App to work, Google Mobile Services has to be automatically updated on the device by Google. You cannot manually trigger this update. If you have already updated the Google Play Services as described above, you have to wait for the automatic update of Google Mobile Services. Try using the app again the next day.",
                                     "We’re constantly improving the app and will try to remove possible app-related causes of this error."
@@ -2401,7 +2402,7 @@
                                 "anchor": "client_server",
                                 "active": false,
                                 "textblock": [
-                                    "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
+                                    "You can find more information in our <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Solution Architecture Document</a>."
                                 ]
                             },
                             {
@@ -2410,7 +2411,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Yes. As long as you have activated exposure logging in the app and Bluetooth (and Location Services on Android) is on, encounters are logged in the background by the Exposure Notification system integrated in iOS/Android. The app itself doesn't have to be open for this. You can minimize it or use 'swipe-to-quit' to close it.",
-                                    "To be on the safe side, open the app once a day. You'll find more info at <a href='../#howto' target='_blank' >This is how the app works best</a>.",
+                                    "To be on the safe side, open the app once a day. You'll find more info at <a href='../../#howto' target='_blank' >This is how the app works best</a>.",
                                     "For the risk status to be updated automatically, make sure that background updates are active. For all the info, see these FAQ:",
                                     "<ul><li><a href='#no_risk_update_ios' target='_blank' rel='noopener'>[Apple/iOS]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li><li><a href='#no_risk_update' target='_blank' rel='noopener'>[Google/Android]: My risk status hasn't been updated for over a day. An internet connection was available, what's wrong?</a></li></ul>"
                                 ]
@@ -2677,7 +2678,7 @@
                                     "<ul><li>Sum of contact time <5 minutes: No risk exposure(s) (green).</li>",
                                     "<li>Sum of contact time >=5 minutes and <9 minutes: Low risk exposure(s) (green).</li>",
                                     "<li>Sum of contact time >=9 minutes: High risk exposure(s) (red).</li></ul>",
-                                    "For more details about risk assessment see the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/master/solution_architecture.md' target='_blank' rel='noopener noreferrer'>Mobile Applications section in the Solution Architecture document.</a>"
+                                    "For more details about risk assessment see the <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/solution_architecture.md#mobile-applications' target='_blank' rel='noopener noreferrer'>Mobile Applications section in the Solution Architecture document.</a>"
                                 ]
                             },
                             {
@@ -2824,8 +2825,7 @@
                                 "active": false,
                                 "textblock": [
                                     "The Corona-Warn-App (CWA) can use Bluetooth Low Energy (BLE) technology to determine a risk of infection if people have had contact up to approximately 1.5 meters apart for at least 10 minutes. However, according to current knowledge, aerosols spread far beyond this distance in poorly ventilated interiors <a href='https://www.ndr.de/nachrichten/info/Synapsen-Lueften-lueften-lueften,podcastsynapsen156.html' target='_blank' rel='noopener noreferrer'>(SARS-CoV-2 transmission by aerosols)</a>. Therefore, the risk of infection in these cases is not limited to a distance of 1.5 meters. The risk of getting infected indoors is many times higher than in outdoor areas.",
-                                    "In order to be able to recognize such constellations indoors, the CWA has been extended by event registration. The app also warns people who have been in a room with a SARS-CoV-2 infected person at the same time. Persons register for an event or place by means of the CWA without providing personal data. If a participant of the event or visitor to the place later registers as positively tested via the CWA, all other persons who participated in the same event or visited the same place at the same time can be warned pseudonymously.",
-                                    "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
+                                    "In order to be able to recognize such constellations indoors, the CWA has been extended by event registration. The app also warns people who have been in a room with a SARS-CoV-2 infected person at the same time. Persons register for an event or place by means of the CWA without providing personal data. If a participant of the event or visitor to the place later registers as positively tested via the CWA, all other persons who participated in the same event or visited the same place at the same time can be warned pseudonymously."
                                 ]
                             },
                             {
@@ -2838,8 +2838,7 @@
                                     "In summary, the proposed solution allows a host to create a venue through CWA. All necessary data about the venue is encoded in an (Event) QR code which can be presented on a mobile device or printed out, for example to be posted at the entrance of the venue. An attendee can check in to the venue by scanning the QR code. Check-Ins are stored locally on the mobile device and deleted automatically after two weeks.",
                                     "When an attendee tests positive for SARS-CoV-2, they can upload their Check-Ins along with their Diagnosis Keys to the CWA Server. The CWA Server publishes the relevant Check-Ins on CDN as warnings. Clients regularly download these warnings and match them against the local Check-Ins on the mobile device. If there is a match and the time an attendee spent at a venue overlaps with a warning for a sufficiently long time, the attendee receives a warning in CWA similar to how warnings are issued for BLE-based exposures.",
                                     "For more information on the implementation of the Check-In feature, see here: <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-documentation/blob/main/event_registration.md</a>.",
-                                    "<a href='https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/evreg-tam-block.png' target='_blank' rel='noopener'><img src='/assets/img/faq/evreg-tam-block.png' alt='Check-In-functionality diagram' width='300'></a>",
-                                    "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
+                                    "<a href='https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/evreg-tam-block.png' target='_blank' rel='noopener'><img src='/assets/img/faq/evreg-tam-block.png' alt='Check-In-functionality diagram' width='300'></a>"
                                 ]
                             },
                             {
@@ -2849,8 +2848,7 @@
                                 "textblock": [
                                     "The purpose of event registration is to identify risk contacts that are currently not detected with Bluetooth-Low-Energy Technology (BLE). The scope of application is therefore primarily geared to indoor use, where there is an increased risk of infection due to the distribution of aerosols in the room, even beyond the usual contact limit of 1.5 meters. Ideally, a separate Event QR code should be created for each room where visitors are staying. Each visitor then scans the QR code for the rooms in which she/he has stayed. This ensures that only those who have been exposed to an increased risk of infection are warned.",
                                     "The QR code for an event is tied to the venue. The QR code should only be accessible to visitors of the event and should therefore not be distributed via digital media.",
-                                    "For outdoor events, the risk of infection is usually limited to a distance of 1.5 meters, which can already be detected with BLE technology, i.e. the usual use of the CWA. Basically, the event registration can be used here as well. However, it is not suitable for events in large outdoor areas, such as zoos.",
-                                    "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
+                                    "For outdoor events, the risk of infection is usually limited to a distance of 1.5 meters, which can already be detected with BLE technology, i.e. the usual use of the CWA. Basically, the event registration can be used here as well. However, it is not suitable for events in large outdoor areas, such as zoos."
                                 ]
                             },
                             {
@@ -2859,8 +2857,7 @@
                                 "active": false,
                                 "textblock": [
                                     "A common form of misuse of the event registration can be carried out when people check in to an event or place even though they were not present. These individuals would then be warned by CWA if a person who duly checked in at the event would later be tested positive for SARS-CoV 2 and share their positive result via an app. In short, people are being warned even though there is no increased risk to them because they were not there at all. Therefore, some rules should be followed when dealing with your own Event QR codes:",
-                                    "<ul><li>Only share the QR code with your visitors</li><li>Don't share the QR code via social media or websites</li><li>If you print and display the QR code, then preferably in an area that is only accessible to your visitors</li><li>Renew the QR code regularly, ideally once a day (in the CWA, a QR code can be easily transferred)</li><li>When creating the QR code, provide a meaningful title and exact location. This is the only way to ensure that your visitors check in for the correct event.</li><li>Regularly ensure that the QR code is easy to read and not obscured (e.g., by covering or painting over it)</li></ul>",
-                                    "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
+                                    "<ul><li>Only share the QR code with your visitors</li><li>Don't share the QR code via social media or websites</li><li>If you print and display the QR code, then preferably in an area that is only accessible to your visitors</li><li>Renew the QR code regularly, ideally once a day (in the CWA, a QR code can be easily transferred)</li><li>When creating the QR code, provide a meaningful title and exact location. This is the only way to ensure that your visitors check in for the correct event.</li><li>Regularly ensure that the QR code is easy to read and not obscured (e.g., by covering or painting over it)</li></ul>"
                                 ]
                             },
                             {
@@ -2868,8 +2865,7 @@
                                 "anchor": "check_in_prevent_false_warnings",
                                 "active": false,
                                 "textblock": [
-                                    "<ul><li>Check in only for events or places you visit. Do not scan Event QR codes distributed through digital media or websites</li><li>Check in to see if the title and location of the event (shown in the app after scanning) match the event you attended</li><li>The more accurately you specify the time of your attendance, the more accurately you can be warned or warn other participants</li><li>Already when checking in, specify as accurately as possible when you want to be checked out automatically. If your stay is shortened or extended, you can also manually correct the time after the automatic check-out has already taken place</li><li>Don't share photographed Event QR codes via social media or other channels</li></ul>",
-                                    "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
+                                    "<ul><li>Check in only for events or places you visit. Do not scan Event QR codes distributed through digital media or websites</li><li>Check in to see if the title and location of the event (shown in the app after scanning) match the event you attended</li><li>The more accurately you specify the time of your attendance, the more accurately you can be warned or warn other participants</li><li>Already when checking in, specify as accurately as possible when you want to be checked out automatically. If your stay is shortened or extended, you can also manually correct the time after the automatic check-out has already taken place</li><li>Don't share photographed Event QR codes via social media or other channels</li></ul>"
                                 ]
                             },
                             {
@@ -2878,8 +2874,7 @@
                                 "active": false,
                                 "textblock": [
                                     "No, because the essential characteristics of the CWA - decentralization and pseudonymity - are preserved with the event registration. No personal contact details are registered, or location data is transmitted. The data is processed decentrally and pseudonymously on the smartphones.",
-                                    "The Event QR code describes an event with attributes, a detailed address is not required. The QR code is also a random ID that is not processed in the CWA.",
-                                    "<a href='#check_in_index' target='_self' >To the index of the event registration</a>"
+                                    "The Event QR code describes an event with attributes, a detailed address is not required. The QR code is also a random ID that is not processed in the CWA."
                                 ]
                             }
                         ]
@@ -3143,7 +3138,7 @@
                 {
                     "term": "Exposure Notification Express (ENE)",
                     "anchor": "ene",
-                    "description": "See FAQ: <a href='/en/faq/#ene' target='_blank' >Exposure Notification Express (ENE)</a>"
+                    "description": "See FAQ: <a href='#ene' target='_blank' >Exposure Notification Express (ENE)</a>"
                 },
                 {
                     "term": "Exposure Notification Framework (ENF)",
