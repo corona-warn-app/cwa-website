@@ -68,7 +68,7 @@ gulp.task(
     createFaqRedirects,
     replaceVersionNumbers,
     sitemaplist,
-    sitemaplist_de
+    sitemaplist_de,
     AddEnglishSpecifier
   )
 );
