@@ -1,0 +1,193 @@
+{{#if page-contents}}
+<div class="container container_flex">
+  <aside class="side-menu js-menu" id="side-menu">
+    <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
+    <ul class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
+      {{#each page-contents.section-main.topics}}
+        <div class="topic-list {{id}}">
+          <b class="section-head {{id}}">{{{title}}}</b>
+          {{#each sections}}
+            <div class="section-item mb-2"><a href="#{{id}}" class="no-decoration">{{{title}}}<b class="count"></b></a></div>
+          {{/each}}
+        </div>
+        </br>
+      {{/each}}
+      <div class="topic-list glossary">
+        <b class="section-head glossary">{{page-contents.section-main.texts.glossary}}</b>
+        <div class="section-item mb-2"><a href="#glossary" class="no-decoration">A-Z<b class="count"></b></a></div>
+      </div>
+    </ul>
+  </aside>
+  <main class="main">
+    <form method="get" id="faq-search-form">
+      <div class="mb-2 row">
+        <div id="clean_search" class="col-12 col-md-6 mb-2">
+          <div class="searchbar-clean-relative">
+            <input type="text" class="form-control searchbar-clean-padding" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
+            <span class="d-none clean-search">×</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-2">
+          <select class="form-select" id="faq-topic" name="topic">
+            <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
+            {{#each page-contents.section-main.topics}}
+              <option value="{{id}}">{{{title}}}</option>
+            {{/each}}
+            <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
+          </select>
+        </div>  
+        <div class="mb-2 col-12 col-md-2">
+        <button id="faq-submit" value="search" class="btn btn-primary col-12">{{page-contents.section-main.texts.search-button}}</button>
+      </div>
+        <div class="filterUse filterUse-md"><img src="/assets/img/icons/info.svg"><span>{{page-contents.section-main.texts.info-filteruse-md}}</span></div>
+        <div class="filterUse filterUse-sm"><img src="/assets/img/icons/info.svg"><span>{{page-contents.section-main.texts.info-filteruse-sm}}</span></div>
+      </div>
+    </form>
+    <div id="no_results" class="d-none">
+      <p>{{page-contents.section-main.texts.no-results}}</p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <p class="breadcrumbs mb-0"><a href="#" class="no-decoration bread-faq"><b>{{page-contents.section-main.texts.faq}}</b></a> <span id="topic_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-topic"><b>{{{title}}}</b></a> <span id="bread_separator" class="d-none">/</span> <a href="#{{id}}" class="no-decoration bread-section"><b>{{{title}}}</b></a> <span id="search_separator" class="d-none">/</span> <b class="bread-search d-none">{{page-contents.section-main.texts.search-result}}: <span id="counter">...</span> <span class="result-found d-none">{{page-contents.section-main.texts.result-found}}</span><span class="results-found">{{page-contents.section-main.texts.results-found}}</span></span></b></p>
+      <button id="collapseAll" class="btn btn-secondary">{{page-contents.section-main.button-collapse.fields.all-collapse}}</button>
+    </div>
+    <div id="faq-container-mobile" class="d-none">
+      {{#each page-contents.section-main.topics}}
+          <div id="{{id}}" class="topic-container">
+            <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+                <div id="{{id}}-div">
+                  <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header">
+                    <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
+                    <button class="accordion-faq-header-item-button" aria-label="{{../../../page-contents.section-main.button-collapse.fields.collapse}}"></button>
+                  </dt>
+                  <dd class="accordion-faq-body">
+                    <div class="accordion-faq-mobile-item-content">
+                      
+                    </div>
+                  </dd>
+                </div>
+            </dl>
+          </div>
+      {{/each}}
+    </div>
+    <div id="faq-container">
+      {{#each page-contents.section-main.topics}}
+        <div>
+          <h1 id="{{id}}" class="topic-title mb-4">{{{title}}}</h1>
+          {{#each sections}}
+            <div id="{{id}}" class="section-container">     
+              <h3 class="section-title">{{{title}}}</h3>
+              <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+                {{#each accordion}}
+                  {{#if duplicate}} <div id="{{duplicate}}_dup_{{../id}}-div" class="faq">
+                  {{else}} <div id="{{anchor}}-div" class="faq">
+                  {{/if}}
+                    <dt class="accordion-faq-header{{#if active}} active{{/if}}">
+                      <h3 class="accordion-faq-item-title" id="{{anchor}}">{{{title}}}</h3>
+                      <button class="accordion-faq-header-item-button" aria-label="{{../../../page-contents.section-main.button-collapse.fields.collapse}}"></button>
+                    </dt>
+                    <dd class="accordion-faq-body">
+                      <div class="accordion-faq-item-content">
+                        {{#if textblock}}
+                        {{#each textblock}}
+                        <p>{{{.}}}</p>
+                        {{/each}}
+                        {{/if}}
+                        <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{else}}<a href="#" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
+                        <p><a href="#top">{{../../../page-contents.section-main.texts.to_top}}</a></p>
+                      </div>
+                    </dd>
+                  </div>
+                {{/each}}
+              </dl>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+  
+    </div>
+    <div id="glossary-container-mobile" class="d-none">
+      <dl class="accordion-faq js-accordion" data-toggle="accordion-faq-header">
+        <dt class="accordion-faq-header{{#if active}} active{{/if}} topic-accordion-header glossary-accordion-header">
+          <h3 class="accordion-faq-item-title text-black">{{page-contents.section-main.texts.glossary}}</h3>
+          <span class="accordion-faq-item-icon"></span>
+        </dt>
+        <dd class="accordion-faq-body">
+          <div class="accordion-faq-item-content glossary-mobile-content">
+                    
+          </div>
+        </dd>
+      </dl>
+    </div>
+    <div id="glossary_container">
+      <h1 class="topic-title mb-4" id="glossary">{{page-contents.glossary.glossaryHeadline}}</h1>
+      <div class="glossary-result"></div>
+      {{#if page-contents.glossary.optionalText}}
+        <p class="mb-3">{{page-contents.glossary.optionalText}}</p>
+      {{/if}}
+      <nav class=glossary-nav>
+        <div class="nav nav-tabs pb-3" id="nav-tab" role="tablist">
+        {{#each page-contents.glossary.glossaryWords as |letter|}}
+          {{#if @first}}
+            <a class="nav-item nav-link active" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
+          {{else}}
+            <a class="nav-item nav-link" id="{{@key}}-tab" data-toggle="tab" href="#{{@key}}" role="tab" aria-controls="{{@key}}" aria-selected="true">{{@key}}</a>
+          {{/if}}
+        {{/each}}
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tab-content">
+      {{#each page-contents.glossary.glossaryWords as |letter|}}
+        {{#if @first}}
+          <div class="tab-pane fade show active mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab">
+            <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
+            {{#each letter as |content|}}
+              {{#if @last}}
+                <div>
+                  <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b class="word">{{content.term}}</b></h5>
+                  <div class="px-3 description">{{{content.description}}}</div>
+                  <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
+                </div>
+              {{else}}
+                <div class="nav-tabs pb-3">
+                  <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b class="word">{{content.term}}</b></h5>
+                  <div class="px-3 description">{{{content.description}}}</div>
+                  <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
+                </div>
+              {{/if}}
+              {{else}}
+              <div>
+                <div class="px-3">{{../page-contents.glossary.noContentText}}</div>
+              </div>
+            {{/each }}
+          </div>
+        {{else}}
+          <div class="tab-pane fade show mt-4" id="{{@key}}" role="tabpanel" aria-labelledby="{{@key}}-tab">
+            <h4 class="headline headline-heavy px-3" >{{@key}}</h4>
+            {{#each letter as |content|}}
+              {{#if @last}}
+                <div>
+                  <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b class="word">{{content.term}}</b></h5>
+                  <div class="px-3 description">{{{content.description}}}</div>
+                  <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
+                </div>
+                {{else}}
+                <div class="nav-tabs pb-3">
+                  <h5 class="mt-4 px-3" id="glossary_{{content.anchor}}"><b class="word">{{content.term}}</b></h5>
+                  <div class="px-3 description">{{{content.description}}}</div>
+                  <p class="px-3">{{#if anchor}}<a href="#glossary_{{anchor}}" class="faq-anchor">{{../../page-contents.glossary.permalink}}</a>{{/if}}</p>
+                </div>
+              {{/if}}
+              {{else}}
+              <div>
+                <div class="px-3">{{../page-contents.glossary.noContentText}}</div>
+              </div>
+            {{/each }}
+          </div>
+        {{/if}}
+      {{/each}}
+      </div>
+      <hr/>
+    </div>
+  </main>
+</div>
+{{/if}}

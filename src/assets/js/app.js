@@ -4,6 +4,7 @@ import 'slick-carousel';
 
 window.jQuery = $;
 let expandStatus = true;
+let faq = {};
 
 const deviceType = () => {
     const ua = navigator.userAgent;
@@ -25,11 +26,11 @@ $(document).ready(function(){
                 $(window).scrollTop(contPos);
             }
         });
-    }   
+    }
 
     //initially set tabindex=-1 on all links in inactive accordions
-    $('.accordion-body').find('a').each(function() {
-        if (!$(this).closest('.accordion-body').prev('.accordion-header').hasClass('active')) {
+    $('.accordion-faq-body').find('a').each(function() {
+        if (!$(this).closest('.accordion-faq-body').prev('.accordion-faq-header').hasClass('active')) {
             $(this).attr("tabindex", "-1");
         }
     })
@@ -41,11 +42,11 @@ $(document).ready(function(){
         //add tabindex=-1 or remove tabindex on all links inside accordion depending on the state
         if ($(this).parents('.js-accordion').length > 0) {
             const isActive = element.hasClass('active');
-            element.next('.accordion-body').find('a').each(function() {
+            element.next('.accordion-faq-body').find('a').each(function() {
                 isActive ? $(this).removeAttr("tabindex") : $(this).attr("tabindex", "-1")
             })
-            element.next('.accordion-body').attr('aria-hidden', !isActive);
-            element.next('.accordion-body').attr('aria-expanded', isActive);
+            element.next('.accordion-faq-body').attr('aria-hidden', !isActive);
+            element.next('.accordion-faq-body').attr('aria-expanded', isActive);
         }
         
     });
@@ -88,6 +89,17 @@ $(document).ready(function(){
     };
     const throttledHandleScrollFAQMenu = throttle(handleScrollFAQMenu, 500)
     document.addEventListener('scroll', throttledHandleScrollFAQMenu)
+
+    //scrolling menu items to display in window
+    setTimeout(() => {
+        const item = $(".section-item.active")
+        const head = $(".topic-list.active")
+        if(item && item.offset()) {
+            $(menu).scrollTop(item.offset().top - item.outerHeight() - 180)
+        } else if(head && head.offset()) {
+            $(menu).scrollTop(head.offset().top - 30 - 180)
+        }
+    }, 500);
 
     $('.js-slider').slick({
         dots: true,
@@ -143,11 +155,10 @@ $(document).ready(function(){
     };
 
     // function to update the faq list for a given searchString
-    const updateResults = function(searchString, faq) {
+    const updateResults = function(searchString, topicString, faq) {
         // result are two arrays, the elements to hide and the ones to show
         const hide = [];
         const show = [];
-
         // Yeah, slow. But in the end, this is only 50-100 entries
         Object.keys(faq).forEach((anchor) => {
             let text = faq[anchor];
@@ -168,133 +179,674 @@ $(document).ready(function(){
                 }
             }
         });
-
+        //hide glossary container
+        $("#glossary_container").addClass('d-none');
         // show all matches
         if (show.length === 0) {
-            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
-                $(title).hide();
+            document.querySelectorAll("h3").forEach((title) => {
+                $(title).addClass('d-none');
                 $('#no_results').removeClass("d-none");
                 $('#collapseAll').addClass("d-none");
             });
+            $("#faq-container").addClass('d-none');
         }
         if (show.length > 0) {
             if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
             if($('#collapseAll').hasClass("d-none")) $('#collapseAll').removeClass("d-none");
-            document.querySelectorAll("h2:not(#glossary)").forEach((title) => {
-                $(title).hide();
-            });
+            //Hide all topics containers
+            $("#faq-container").children().each((index, child) => {
+                $(child).addClass('d-none');
+            })
+            //Hide all sections containers
+            $(".section-container").addClass('d-none');
             document.querySelectorAll(show).forEach((div) => {
                 const accordion = $(div).parent().get(0)
-                $(accordion).prev("h2").show();
-                $(div).show({duration: 300});
+                const section = $($(accordion).parent().get(0)).attr("id");
+                if($($(accordion).parent()).parent().find("h1").attr("id") === topicString || topicString === "all" ) {
+                    //Show topic container
+                    $("#faq-container").children().each((index, child) => {
+                        if($(child).find(".topic-title").attr("id") === $($(accordion).parent()).parent().find(".topic-title").attr("id")){
+                            $(child).removeClass('d-none'); 
+                        } 
+                    })
+                    //Show section container
+                    $(".section-container").each((index, child) => {
+                        if($(child).attr("id") === section) {
+                            $(child).removeClass('d-none');
+                            //Active FAQ title
+                            $(child).find("h3").removeClass('d-none');
+                        }
+                    })
+                    //Active nav
+                    document.querySelectorAll(".section-item").forEach((item) => {
+                        if($(item).find("a").attr('href') === "#"+$(accordion).prev("h3").attr("id")) {
+                            $(item).addClass("active");
+                            $($(item).parent().get(0)).addClass("active")
+                        }
+                    });
+                }
+                
             });
         }
 
         // hide everything that does not match
         if (hide.length > 0) {
             document.querySelectorAll(hide).forEach((div) => {
-                $(div).hide({duration: 300});
+                $(div).addClass('d-none');
             });
         };
 
-        // update the total count of results
-        let totalCount = (show.length + hide.length).toString();
-        let sCount = show.length.toString().padStart(totalCount.length, "0");
-        document.getElementById("match-count").innerHTML = sCount + "/" + totalCount;
-    }
-
-    // This removes all search parameters from the URL. While the page ignores search parameters, if the hash is set,
-    // this just gives users cleaner URLs when clicking on the links and copying the url from the address bar.
-    const clearSearchParam = function(hash = "") {
-        var clean_uri = location.protocol + "//" + location.host + location.pathname;
-        clean_uri += hash;
-        window.history.replaceState({}, document.title, clean_uri);
-    }
-
-    // check if the faq-search text field is present
-    let searchField = document.getElementById("faq-search");
-    if(searchField !== null) {
-        let faq = {};
-        const sideMenuItems = [];
-        $(".side-menu .nav-link").each(function() {
-            let item = $(this).get(0)
-            sideMenuItems.push(item.getAttribute('href').substring(1))
-        })
-        // do an AJAX call to get the searchable FAQ document
-        // Converter ensures that even malformed mime-types are converted directly to JSON
-        $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
-            faq = data;
-            let faqCount = Object.keys(data).length.toString();
-            document.getElementById("match-count").innerHTML = faqCount + "/" + faqCount;
-
-            // find out whether there are search strings added
-            var urlParams = new URLSearchParams(window.location.search);
-            const { hash } = window.location;
-            if(urlParams.has("search")){
-                // only perform search if no hash is set
-                if(!hash || hash === "") {
-                    // set the search string in the input
-                    searchField.value = urlParams.get("search");
-                    // and update the result list
-                    updateResults(urlParams.get("search"), faq);
+        let glossaryList = 0;
+        
+        if(topicString === "glossary" || topicString === "all") {
+            $(".word").each((index, word) => {
+                if($(word).text().toLowerCase().includes(searchString.toLowerCase())) {
+                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                    glossaryList++;
                 }
+            })
+            $(".description").each((index, desc) => {
+                if($(desc).text().toLowerCase().includes(searchString.toLowerCase())) {
+                    $($(desc).parent().get(0)).appendTo(".glossary-result")
+                    glossaryList++;
+                }
+            })
+            if(glossaryList > 0) $(".section-item a[href='#glossary']").addClass("active").parent().addClass("active");
+            $("#glossary_container").removeClass('d-none');
+        }
+
+        if(glossaryList === 0) {
+            $("#glossary_container").addClass('d-none'); 
+        } else {
+            if(window.matchMedia("(max-width: 767px)").matches) {
+                $(".glossary-mobile-content").children().each((index, child) => {
+                    if(index > 1) $(child).addClass('d-none'); 
+                })
+            } else {
+                $("#glossary_container").children().each((index, child) => {
+                    if(index > 1) $(child).addClass('d-none'); 
+                })
             }
-            // if we have a hash and that hash is not part of the faq list
-            let hashVal = hash.substring(1)
-            if(hash && !Object.keys(faq).includes(hashVal)) {
-                // then let's get the list of defined redirects
-                $.get("/assets/data/faq_redirects.json", (data) => {
-                    // and see whether there is a proper replacement (1:1 mapping)
-                    let replacement = data[hashVal];
-                    // if there is ...
-                    if(replacement){
-                        // ... just go there
-                        location.hash = "#" + replacement;
-                    } else {
-                        // Check if the hashVal isn't at the side-menu items. For prevent a bug when search the URL directly into another tab. 
-                        if (!sideMenuItems.includes(hashVal)){
-                            // if not, otherwise, just search for the hash value
-                            searchField.value = hashVal;
-                            updateResults(hashVal, faq);
+        }
+
+        if(topicString !== "all") {
+            $("#topic_separator").removeClass("d-none");
+            $(".bread-section").addClass('d-none');
+            $(".bread-topic").text($(`#${topicString}.topic-title`).text().trim()).removeClass('d-none');
+        }
+        setTimeout(() => {
+            //check again showed items cause of topic filter
+            let counter = topicString === "all" || topicString === "glossary" ? glossaryList : 0;
+            $(".faq").each((index, faq) => {
+                if($(faq).is(":visible")) {
+                    counter++;
+                    $(faq).parent().find("h3").removeClass('d-none');
+                }
+            })
+
+            if(counter === 0) {
+                document.querySelectorAll("h3").forEach((title) => {
+                    $(title).addClass('d-none');
+                    $('#no_results').removeClass("d-none");
+                    $('#collapseAll').addClass("d-none");
+                });
+            } else $('#no_results').addClass("d-none");
+            //Set search results breadcrumbs
+            $("#counter").text(counter);
+            $(".bread-search").removeClass("d-none");
+            $("#search_separator").removeClass("d-none");
+            handleResultFoundTextVisibility(counter)
+
+            //remove search params from faq permalinks
+            $('.faq-anchor').each((function() {
+                $(this).attr('href', window.location.origin + window.location.pathname + $(this).attr('href').replace(window.location.search, ''))
+            }))
+
+            //highlight words
+            if (searchString != "") {
+                $('.accordion-faq-item-title').each(function() {
+                    highlightWord(searchString, $(this))       
+                })
+
+                $('.accordion-faq-item-content').children().each((index,p) => {
+                    if(!$(p).is("a") && !$(p).is("img")) {
+                        if($(p).children().length === 0) {
+                            highlightWord(searchString, $(p))       
+                        }
+                        else {
+                            let canContinue = true;
+                            const itemsToAvoid = [];
+                            $(p).children().each((index, child) => {
+                                if($(child).is("a") || $(child).is("img")) {
+                                    itemsToAvoid.push($(child))
+                                    canContinue = false;
+                                }
+                            })
+                            if(canContinue) highlightWord(searchString, $(p))
+                            else {
+                                highlightWord(searchString, $(p), itemsToAvoid)
+                            } 
+                        }
+                    }
+                })
+                $('#glossary_container .word').each(function() {
+                    highlightWord(searchString, $(this))       
+                })
+                $('#glossary_container .description').each((index,p) => {
+                    if(!$(p).is("a") && !$(p).is("img")) {
+                        if($(p).children().length === 0) {
+                            highlightWord(searchString, $(p))       
+                        }
+                        else {
+                            let canContinue = true;
+                            const itemsToAvoid = [];
+                            $(p).children().each((index, child) => {
+                                if($(child).is("a") || $(child).is("img")) {
+                                    itemsToAvoid.push($(child))
+                                    canContinue = false;
+                                }
+                            })
+                            if(canContinue) highlightWord(searchString, $(p))
+                            else {
+                                highlightWord(searchString, $(p), itemsToAvoid)
+                            } 
                         }
                     }
                 })
             }
-        });
-
-        // listen to the keyup event, i.e., when a character was entered into the form
-        // and the value of the field was properly updated
-        searchField.addEventListener("keyup", (event) => {
-            const curSearch = event.target.value;
-            // only search for longer terms and react to empty search (aka delete input)
-            if(curSearch.length < 2 && curSearch.length > 0) {
-                return;
-            }
-            updateResults(curSearch, faq);
-        });
-    };
-
-    // add an event listener to each faqAnchor that provides a clean URL w/o search parameter
-    var faqAnchors = document.getElementsByClassName("faq-anchor");
-    Array.from(faqAnchors).forEach((element) => {
-        element.addEventListener('click', (event) => {
-            clearSearchParam(event.target.hash);
-        });
-    });
-
-    // remove any hashes when submitting the search form
-    var searchForm = document.getElementById("faq-search-form");
-    if(searchForm !== null){
-        searchForm.addEventListener("submit", (event) => {
-            history.pushState("", document.title, window.location.pathname + window.location.search);
-        })
+        },700)
     }
 
+    // remove any hashes when submitting the search form
+    if (document.querySelector(".page-faq")) {
+        const searchForm = document.getElementById("faq-search-form");
+        const { hash } = window.location;
+
+        if(window.matchMedia("(max-width: 767px)").matches) {
+            $("#faq-search-form").removeClass("w-50").addClass("w-100");
+            $("#faq-search").removeClass("w-50").addClass("w-100").removeClass("mr-3");
+            $("#faq-topic").removeClass("w-25").addClass("w-100").removeClass("mr-3");
+            $("#faq-submit").addClass("w-100");
+        }
+        
+        if(searchForm !== null){
+            searchForm.addEventListener("submit", (event) => {
+                history.pushState("", document.title, 'results/' + window.location.search);
+            })
+        }
+
+        if (hash) {
+            window.location.href = window.location.href.replace("#", "results/#");
+        }
+    }
+
+    if (document.querySelector(".page-faq-results")) {
+        $.get({url: "faq_duplicate.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
+            data.map(question => {
+                if($(`#${question.anchor}-div`).length > 0) {
+                    const element = $(`#${question.anchor}-div`);
+                    $(element).children().each((index, child) => {
+                        $(child).children().each((i,elem) => {
+                            if($(elem).hasClass("accordion-faq-item-title"))
+                                $(elem).attr("id", question.anchor).html(question.title)
+                            if($(elem).hasClass("accordion-faq-item-content")) {
+                                question.textblock.reverse().map(p => {
+                                    $(elem).prepend( `<p>${p}</p>` );
+                                })
+                                $(elem).find('.faq-anchor').attr('href', `#${question.anchor}`)
+                            }
+                        })
+                    })
+                }
+            })
+        })
+
+        
+        $(window).scrollTop(0);
+        if(window.matchMedia("(max-width: 767px)").matches) {
+            $("#faq-container-mobile").removeClass("d-none")
+            $("#glossary-container-mobile").removeClass("d-none")
+            //Adjust topics containers
+            $("#faq-container").children().each((index, element) => {
+                $(element).appendTo($(`#${$(element).find("h1").attr("id")}-div`).find(".accordion-faq-mobile-item-content"));
+            })
+            $("#faq-container").remove();
+            $("#faq-container-mobile").attr("id", "faq-container");
+
+            //Adjust glossary container
+            $("#glossary_container").children().each((index, element) => {
+                $(element).appendTo($(".glossary-mobile-content"));
+            })
+            $("#glossary_container").remove();
+            $("#glossary-container-mobile").attr("id", "glossary_container");    
+        } else {
+            $("#faq-container-mobile").remove();
+            $("#glossary-container-mobile").remove();
+        }
+        const searchForm = document.getElementById("faq-search-form");
+        if(searchForm !== null){
+            searchForm.addEventListener("submit", (event) => {
+                history.pushState("", document.title, window.location.pathname + window.location.search);
+            })
+        }
+        const searchParams = new URLSearchParams(window.location.search);
+        const search = searchParams.get('search');
+        const topic = searchParams.get('topic');
+        const { hash } = window.location;
+
+        if (hash) {
+            // go to anchor
+            setTimeout(() => {
+                if(window.matchMedia("(max-width: 767px)").matches) {
+                    //Open accordion
+                    if($(`${hash}`).hasClass("topic-container")) {
+                        $($($($(`${hash}`).children()[0]).children()[0]).children()[0]).addClass("active");
+                    }
+                    //Open accordion and aim section title
+                    if($(`${hash}`).hasClass("section-container")) {
+                        $($(`${hash}`).parent().parent().parent().parent().children()[0]).addClass("active");
+                    }
+                    //Open accordion and aim question
+                    if($(`${hash}`).hasClass("accordion-faq-item-title")){
+                        $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                    } 
+                } 
+                const h3 = $(`h3${hash}`);
+                const topic = $(`${hash}.topic-title`);
+                const section = $(`${hash}.section-container`);
+
+                history.replaceState({}, document.title, ".");
+                if($(h3).length) {
+                    h3.click();
+                    if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
+                } else if($(section).length) {
+                    section.find('.section-title').click();
+                } else if($(topic).length) {
+                    topic.click();
+                } else if(hash === '#glossary') {
+                    $('#glossary').click();
+                }
+            },250)
+        }
+        if(search) {
+            $('#faq-search').val(search)
+            //show cross to clean
+            $(".clean-search").removeClass("d-none")
+        }
+        if(topic) {
+            $("#faq-topic").val(topic).prop('selected', true);
+        }
+        if(search) {
+            $("#clean_search").removeClass("d-none");
+            const sideMenuItems = [];
+            $(".side-menu .nav-link").each(function() {
+                let item = $(this).get(0)
+                sideMenuItems.push(item.getAttribute('href').substring(1))
+            })
+            // do an AJAX call to get the searchable FAQ document
+            // Converter ensures that even malformed mime-types are converted directly to JSON
+            $.get({url: "faq.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
+                faq = data;
+                // find out whether there are search strings added
+                var urlParams = new URLSearchParams(window.location.search);
+                if(urlParams.has("search")){
+                    // only perform search if no hash is set
+                    if(!hash || hash === "") {
+                        // and update the result list
+                        updateResults(search, topic, faq);
+                    }
+                }
+            });
+        } else {
+            if(topic !== "all" && topic){
+                if(topic === "glossary") {
+                    $("#faq-container").addClass('d-none');
+                } else {
+                    $("#glossary_container").addClass('d-none');
+                    $("#faq-container").children().each((index, element) => {
+                        if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
+                        else {
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($($(element).children()[0]).find(".topic-title").text());
+                            $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
+                            $(".nav-aside").children().each((index, nav) => {
+                                if($(nav).hasClass(topic)) $(nav).addClass("active");
+                            })
+                        }
+                    })
+                }
+            }
+        }
+
+        // if we have a hash and that hash is not part of the faq list
+        let hashVal = hash.substring(1)
+        if(hash && !Object.keys(faq).includes(hashVal)) {
+            // then let's get the list of defined redirects
+            $.get("/assets/data/faq_redirects.json", (data) => {
+                // and see whether there is a proper replacement (1:1 mapping)
+                let replacement = data[hashVal];
+                // if there is ...
+                if(replacement){
+                    // ... just go there
+                    location.hash = "#" + replacement;
+                }
+            })
+        }
+
+        //Clear search 
+        $(".clean-search").on("click", function(e) {
+            $("#faq-search").val("");
+            $("#faq-topic").val("all").prop('selected', true);
+            $("#faq-search-form").submit()
+        });
+
+        if(!window.matchMedia("(max-width: 767px)").matches) {
+            //Hide other topics on click in title
+            $(".topic-title").on("click", function(e) {
+                if(!search) {
+                    $("#faq-topic").val($(this).attr("id")).prop('selected', true);
+                    $("#faq-search-form").submit()
+                } else {
+                    if(topic === "all" || topic === $(this).attr("id")) {
+                        if($(this).attr("id") === "glossary") {
+                            $("#faq-container").addClass('d-none')
+                            $("#glossary_container").removeClass('d-none');
+                            let glossaryList = countGlossaryResults(search);
+                            $(".word").each((index, word) => {
+                                if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                    $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                                }
+                            })
+                            $("#counter").text(glossaryList);
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).text());
+                            $("#bread_separator").addClass("d-none");
+                            $(".bread-section").addClass('d-none');
+                            handleResultFoundTextVisibility(glossaryList)
+                        }
+                        else {
+                            $("#glossary_container").addClass('d-none');
+                            $("#faq-container").removeClass('d-none');
+                            $("#faq-container").children().each((index, element) => {
+                                if($(element).find(".topic-title").attr("id") !== $(this).attr("id")) {
+                                    $(element).addClass('d-none');
+                                }
+                                else {
+                                    $(element).removeClass('d-none');
+                                }
+                            });
+                            setTimeout(() => {
+                                let counter = 0;
+                                $(".faq").each((index, faq) => {
+                                    if($(faq).is(":visible")) {
+                                        $(faq).parent().find("h3").removeClass('d-none');
+                                        counter++;
+                                    }
+                                })
+                                counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
+                                $("#counter").text(counter);
+                                handleResultFoundTextVisibility(counter)
+                            }, 500)
+                            $("#topic_separator").removeClass("d-none");
+                            $(".bread-topic").text($(this).text());
+                            $(".bread-search").removeClass("d-none");
+                            $("#search_separator").removeClass("d-none");
+                        }
+                    }
+                }
+            });
+
+            //Hide other topics on click in head nav topic
+            $(".section-head").on("click", function(e) {
+                if(!search) {
+                    e.preventDefault();
+                    $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
+                    $("#faq-search-form").submit()
+                } else {
+                    if($(this).attr("class").split(/\s+/)[1] === "glossary") {
+                        $("#faq-container").addClass('d-none')
+                        $("#glossary_container").removeClass('d-none');
+                        $(this).addClass("active");
+                        let glossaryList = countGlossaryResults(search);
+                        $(".word").each((index, word) => {
+                            if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                            }
+                        })
+                        if(glossaryList === 0) {
+                            $("#glossary_container").addClass('d-none')
+                            $('#no_results').removeClass("d-none")
+                        } else {
+                            $("#glossary_container").removeClass('d-none');
+                            $('#no_results').addClass("d-none");
+                        } 
+                        $("#counter").text(glossaryList);
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).text());
+                        $("#bread_separator").addClass("d-none");
+                        $(".bread-section").addClass('d-none');
+                        handleResultFoundTextVisibility(glossaryList)
+                    } else {
+                        $("#faq-container").removeClass('d-none');
+                        let currentTopic = $(this).attr("class").split(/\s+/)[1];
+                        updateResults(search, currentTopic, faq);
+                        $("#glossary_container").addClass('d-none');
+                        $(".bread-section").addClass('d-none');
+                        $("#bread_separator").addClass('d-none');
+                        $("#faq-container").children().each((index, element) => {
+                            if($(element).find(".topic-title").attr("id") !== $(this).attr("class").split(/\s+/)[1]) $(element).addClass('d-none');
+                            else {
+                                $(element).removeClass('d-none');
+                                $(element).find("h1").removeClass('d-none');
+                            }
+                        });
+                        setTimeout(() => {
+                            let counter = 0;
+                            $(".faq").each((index, faq) => {
+                                if($(faq).is(":visible")) {
+                                    $(faq).parent().find("h3").removeClass('d-none');
+                                    counter++;
+                                }
+                            })
+                            counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
+                            $("#counter").text(counter);
+                            handleResultFoundTextVisibility(counter)
+                        }, 500)
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).text());
+                        $(".bread-search").removeClass("d-none");
+                        $("#search_separator").removeClass("d-none");
+                    }
+                }
+            });
+
+            //Hide other sections on click in item nav section
+            $(".section-item").on("click", function(e) {
+                
+                e.preventDefault();
+
+                if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
+                    //Deactive faq container
+                    $("#faq-container").addClass('d-none');
+                    $("#glossary_container").removeClass('d-none');
+                    if(search) {
+                        let glossaryList = countGlossaryResults(search);
+                        $(".word").each((index, word) => {
+                            if($(word).text().toLowerCase().includes(search.toLowerCase())) {
+                                $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
+                            }
+                        })
+                        $("#counter").text(glossaryList);
+                        $("#topic_separator").removeClass("d-none");
+                        $(".bread-topic").text($(this).parent().find(".section-head").text());
+                        $("#bread_separator").addClass("d-none");
+                        $(".bread-section").addClass('d-none');
+                        handleResultFoundTextVisibility(glossaryList)
+                    }
+                    return;
+                } else $("#glossary_container").addClass('d-none');
+                    
+                if(!search) {
+                        //Active/deactive topic nav list
+                        const topicList = $(this).parent();
+                        $(".topic-list").each((index, list) => {
+                            $(list).removeClass("active");
+                        })
+                        topicList.addClass("active")
+
+                        //Active/deactive section nav item
+                        $(".section-item").each((index, item) => {
+                            $(item).removeClass("active");
+                        })
+                        $(this).addClass("active");
+                }
+                $("#faq-container").removeClass('d-none');
+                //Modify breadcrumb
+                $("#bread_separator").removeClass("d-none");
+                $("#topic_separator").removeClass("d-none");
+                $(".bread-topic").text($(this).parent().find(".section-head").text())
+                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text())
+                $("#bread_separator").removeClass('d-none');
+                $(".bread-section").removeClass('d-none');
+                if(search) {
+                    setTimeout(() => {
+                        let counter = 0;
+                        $(".faq").each((index, faq) => {
+                            if($(faq).is(":visible")) {
+                                $(faq).parent().find("h3").removeClass('d-none');
+                                counter++;
+                            }
+                        })
+                        counter === 0 ? $('#no_results').removeClass("d-none"): $('#no_results').addClass("d-none");
+                        $("#counter").text(counter);
+                        handleResultFoundTextVisibility(counter)
+                    }, 500)
+                    
+                    $(".bread-search").removeClass("d-none");
+                    $("#search_separator").removeClass("d-none");
+                }
+                //Show-hide containers
+                let container;
+                $("#faq-container").children().each((index, element) => {
+                    if($(element).find(".topic-title").attr("id") !== $(this).parent().attr("class").split(/\s+/)[1]) {
+                        $(element).addClass('d-none');
+                    }
+                    else {
+                        $(element).removeClass('d-none');
+                        container = element;
+                    }
+                });
+
+                //Show/hide sections
+                $(container).children().each((index, section) => {
+                    if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).removeClass('d-none');
+                    else $(section).addClass('d-none');
+                })            
+            });
+
+            //Hide other sections on click section title
+            $(".section-title").on("click", function(e) {
+                e.preventDefault();
+                $(".section-item").each((index, section) => {
+                    if($(section).find("a").text() === $(this).text()) {
+                        $(section).click();
+                    }
+                })
+            });
+
+            //Simulate nav click on click in breadcrumb
+            $(".bread-topic").on("click", function(e) {
+                e.preventDefault();
+                if(!search) $(".topic-list.active").find(".section-head").click();
+                else {
+                    $(".section-head").each((index, element) => {
+                        if($(element).text() === $(this).text()) {
+                            $(element).click();
+                        }
+                    })
+                }
+            });
+            //Show all topics on click on FAQ
+            $(".bread-faq").on("click", function(e) {
+                if(!search) $("#faq-topic").val("all").prop('selected', true);
+                $("#faq-search-form").submit()
+            });
+        } else {
+            $(".section-head").on("click", function(e) {
+                //Open accordion on mobile
+                const topicName = $(this).attr("class").split(/\s+/)[1];
+                if(topicName === "glossary") {
+                    $(".glossary-accordion-header").addClass("active")
+                    $(document).scrollTop( $(`#glossary_container`).offset().top );
+                    $(".btn-close").click();
+                } else {
+                    $($(`#${topicName}-div`).children()[0]).addClass("active")
+                    $(document).scrollTop( $(`#${topicName}-div`).offset().top );
+                    $(".btn-close").click();
+                }
+            });
+
+            $(".section-item").on("click", function(e) {
+                //Open accordion on mobile
+                $(this).parent().find("b").click()
+                $(this).parent().find("b").attr("class").split(/\s+/)[1] === "glossary" ? $(document).scrollTop( $("#glossary_container").offset().top ) : $(document).scrollTop( $(this).offset().top );
+                $(".btn-close").click();
+            });
+        }
+        //Show search results count on the side menu
+        $(".section-item").each((index, section) => {
+            if(search) {
+                $(section).find(".count").append().text(' ...')
+                setTimeout(() => {
+                    const item = $(section).find("a").attr('href')
+                    let counter = 0;
+                    if(item === "#glossary") {
+                        $(".glossary-result").children("div").each((index, glossary_entry) => {
+                            if($(glossary_entry).is(":visible")) {
+                                counter++;
+                            }
+                       });
+                    } else {
+                        $(`${item} .faq`).each((index, faq) => {
+                            if($(faq).is(":visible")) {
+                                $(faq).parent().find("h3").removeClass('d-none');
+                                counter++;
+                            }
+                        })
+                    }
+                    $(section).find(".count").text(' ('+counter.toString()+')')
+                }, 750);
+            }
+            else {
+                $(section).find(".count").remove()
+            }
+        })
+        
+        //Update header links in FAQ page
+        $(".subheader").children().each((index, element) => {
+        const newlink = $(element).find('a').attr('href').replace('/results', '')
+        $(element).find('a').attr('href', newlink)
+        });
+    }
+
+    const countGlossaryResults = function(search) {
+        let count = 0;
+        $(".word").each((index, word) => {
+            let description = $(word).parent().parent().children(".description").text().toLowerCase();
+            let title = $(word).text().toLowerCase()
+            if(title.includes(search.toLowerCase())) {
+                count++;
+            } else if(description.includes(search.toLowerCase())) {
+                count++;
+            }
+        })
+        return count;
+    }
 
     // collapses/expands all accordions on button click in the FAQ
     $( document ).ready(function() {
         $("#collapseAll").click( function() {
-            const accordions = document.querySelectorAll(".accordion-header");
+            const accordions = document.querySelectorAll(".accordion-faq-header");
             accordions.forEach(accordion => {
                 if(expandStatus) {
                     if(!$(accordion).hasClass('active')) $(accordion).addClass('active');
@@ -306,7 +858,6 @@ $(document).ready(function(){
         });
 
     });
-
     // mail protection using js
     // mails are written like this:
     // <a href="bob.smith...example...com" class="email">bob.smith...example...com</a>
@@ -352,9 +903,11 @@ $(document).ready(function(){
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
 
-        //Keep selected on refresh
-        if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
-        else window.location.href += $(this).attr('href');
+        //Keep selected on refresh except in FAQ results
+        if (!document.querySelector(".page-faq-results")) {
+            if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
+            else window.location.href += $(this).attr('href');
+        }
       });
 
       // pre select tabs on page load
@@ -396,6 +949,82 @@ $(document).ready(function(){
       // onload jump to glossary
       activateGlossary(); 
 
+    function highlightWord(search, element, itemsToAvoid=[]) {
+        const searchLower = search.toLowerCase();
+        let htmlArray = $(element).html().split(" ");
+        if(itemsToAvoid.length > 0) {
+            itemsToAvoid.map((item, index) => {
+                htmlArray = htmlArray.join(' ').replace(item.prop('outerHTML'), `··${index}`);
+                htmlArray = htmlArray.split(' ')
+            })
+        }
+        let result = htmlArray.map((word) => {
+            const wordLower = word.toLowerCase();
+            if(wordLower === searchLower) {
+                word = "<span class='highlight'>"+word+"</span>";
+            }
+            else if(wordLower.includes(searchLower)) {
+                if(wordLower.indexOf(searchLower) === 0) {
+                    word = "<span class='highlight'>"+word.slice(0, searchLower.length)+"</span>"+word.slice(searchLower.length);
+                }
+                else if(wordLower.indexOf(searchLower)+searchLower.length === word.length) {
+                    word = word.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+word.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>";
+                } else {
+                    word = word.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+word.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>"+word.slice(wordLower.indexOf(searchLower)+searchLower.length);
+                }
+            }
+            return word;
+        }).join(" ");
+
+        if(itemsToAvoid.length > 0) {
+            result = result.split(' ');
+            const fResult = result.map(word => {
+                if(word.includes('··')) {
+                    itemsToAvoid.map((item, index) => {
+                        if(word.includes(`··${index}`)) {
+                            if($(item).is('a')) {
+                                const text = $(item).text().split(" ").map((txt) => {
+                                    const wordLower = txt.toLowerCase();
+                                    if(wordLower === searchLower) {
+                                        txt = "<span class='highlight'>"+txt+"</span>";
+                                    }
+                                    else if(wordLower.includes(searchLower)) {
+                                        if(wordLower.indexOf(searchLower) === 0) {
+                                            txt = "<span class='highlight'>"+txt.slice(0, searchLower.length)+"</span>"+txt.slice(searchLower.length);
+                                        }
+                                        else if(wordLower.indexOf(searchLower)+searchLower.length === txt.length) {
+                                            txt = txt.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+txt.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>";
+                                        } else {
+                                            txt = txt.slice(0, wordLower.indexOf(searchLower))+"<span class='highlight'>"+txt.slice(wordLower.indexOf(searchLower), wordLower.indexOf(searchLower)+searchLower.length)+"</span>"+txt.slice(wordLower.indexOf(searchLower)+searchLower.length);
+                                        }
+                                    }
+                                    return txt;
+                                }).join(" ");
+                                word = item.prop('outerHTML').replace($(item).text(), text);
+                            } else {
+                                word = item.prop('outerHTML');
+                            }
+                        }
+                    })
+                }
+                return word;
+            }).join(" ");
+
+            result = fResult;
+        }
+        $(element).html(result)
+    }
+
+    function handleResultFoundTextVisibility(counter) {
+        if(counter === 1) {
+            $(".result-found").removeClass("d-none");
+            $(".results-found").addClass("d-none");
+        }
+        else {
+            $(".result-found").addClass("d-none");
+            $(".results-found").removeClass("d-none");
+        }
+    }
     //Plotly ModeBar
     $(".modebar-btn").attr("tabindex", 0);
     $(".modebar-btn").on('keydown', (e) => {
