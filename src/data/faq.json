@@ -114,7 +114,7 @@
                                 "textblock": [
                                     "The exposure check logs show how many keys that report a positive test result are downloaded from the server, and how many of them are matching the keys that your phone has collected. For info about the app flow, see <a href='#risk_info' target='_blank' >How do you get information about a risk of infection?</a> for details.",
                                     "<b>Exposure checks</b>",
-                                    "This is where the checks of up to 15 days are logged (today plus the last 14  (10 days since version 2.20)). There may be multiple checks made per day. Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
+                                    "This is where the checks of up to 15 days are logged (today plus the last 14 days). There may be multiple checks made per day. Selecting an entry leads to a detailed view with the corresponding time stamps and the number of matched keys.",
                                     "<b>Provided Key Count</b> (iOS) | <b>Number of keys</b> (Android)",
                                     "This is the number of keys related to a positive test result, so called diagnosis keys, that your phone downloaded from the server.",
                                     "<b>Matched Key Count</b> (iOS) | <b>Number of matches</b> (Android)",
@@ -1043,6 +1043,15 @@
                         "id": "other_features",
                         "indexed": false,
                         "accordion": [
+                            {
+                                "title": "Where can I find news on the Corona-Warn-App?",
+                                "anchor": "news",
+                                "active": false,
+                                "textblock": [
+                                    "The availability and details of new Corona-Warn-App versions are published in the <a href='../../blog/' target='_blank'>Blog</a> as soon as an update is released into the stores. (See also <a href='#where_to_get' target='_blank'>Where can I get the app?</a>.) Occasionally, information on various other topics is published in the Blog as well, such as recommendations on how to behave in the event of a red tile.",
+                                    "Additionally, news about the Corona-Warn-App is published on <a href='https://twitter.com/coronawarnapp' target='_blank' rel='noopener noreferrer'>Twitter</a> where users can also ask questions and get replies from the helpful community there. The announcements and conversations in the Twitter channel are in German generally."
+                                ]
+                            },
                             {
                                 "title": "In-App statistics starting with release 1.11",
                                 "anchor": "further_details",

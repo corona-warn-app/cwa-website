@@ -114,7 +114,7 @@
                                 "textblock": [
                                     "Die COVID-19-Begegnungsüberprüfung zeigt an, wie viele Schlüssel, die einem gemeldeten positiven Testergebnis zuzuordnen sind, vom Server heruntergeladen wurden, und wie viele davon mit Schlüsseln, die Ihr Smartphone eingesammelt hat, übereinstimmen. Mehr zum Ablauf finden Sie unter <a href='#risk_info' target='_blank' >Wie werde ich über ein Infektionsrisiko informiert?</a>",
                                     "<b>Begegnungsüberprüfungen</b> (iOS) | <b>Überprüfungen auf mögliche Begegnungen</b> (Android)",
-                                    "Hier sind die Überprüfungen von bis zu 15 Tagen protokolliert (heute plus die letzten 14 Tage (10 Tage ab Version 2.20)). Es können auch jeden Tag mehrere Überprüfungen durchgeführt worden sein. Das Auswählen eines Eintrages führt zur Detailansicht mit den entsprechenden Zeitstempeln und der Anzahl der abgeglichenen Schlüssel.",
+                                    "Hier sind die Überprüfungen von bis zu 15 Tagen protokolliert (heute plus die letzten 14 Tage). Es können auch jeden Tag mehrere Überprüfungen durchgeführt worden sein. Das Auswählen eines Eintrages führt zur Detailansicht mit den entsprechenden Zeitstempeln und der Anzahl der abgeglichenen Schlüssel.",
                                     "<b>Bereitgestellte Schlüssel</b> (iOS) | <b>Anzahl der Schlüssel</b> (Android)",
                                     "Das ist die Anzahl der Schlüssel, welche zu einem gemeldeten, positiven Testergebnis gehören, sogenannte Positivkennungen, die Ihr Smartphone vom Server heruntergeladen hat.",
                                     "<b>Übereinstimmende Schlüssel</b> (iOS) | <b>Anzahl der Treffer</b> (Android)",
@@ -1043,6 +1043,15 @@
                         "id": "other_features",
                         "indexed": false,
                         "accordion": [
+                            {
+                                "title": "Wo kann ich Neuigkeiten über die Corona-Warn-App finden?",
+                                "anchor": "news",
+                                "active": false,
+                                "textblock": [
+                                    "Die Verfügbarkeit und Details zu neuen Versionen der Corona-Warn-App werden im <a href='../../blog/' target='_blank'>Blog</a> veröffentlicht, sobald die Updates in den Stores veröffentlicht wurden. (Siehe auch <a href='#where_to_get' target='_blank'>Wo bekomme ich die App?</a>.) Zusätzlich erscheinen bei Bedarf Informationen zu verschiedenen Themen, wie beispielsweise zu Verhaltensempfehlungen bei einer roten Kachel.",
+                                    "Des Weiteren werden Neuigkeiten über die Corona-Warn-App auf <a href='https://twitter.com/coronawarnapp' target='_blank' rel='noopener noreferrer'>Twitter</a> veröffentlicht. Insbesondere dort hat man als Nutzer die Möglichkeit, themenbezogene Fragen zu stellen und wird mit Hilfe der Community auf eine Antwort stoßen."
+                                ]
+                            },
                             {
                                 "title": "In-App Statistiken ab Release 1.11",
                                 "anchor": "further_details",
