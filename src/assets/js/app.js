@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { isBuffer } from 'lodash';
 import throttle from 'lodash.throttle';
 import 'slick-carousel';
 
@@ -353,14 +354,10 @@ $(document).ready(function(){
                     }
                 })
             }
-            $(".accordion-faq-item-content a").on("click", function(e){
+            //Redirect of FAQ question's links and glossary with search
+            $(".accordion-faq-item-content a, .glossary-result a").on("click", function(e){
                 e.preventDefault();
-                if(!$("#topic_separator").hasClass("d-none") || $("#faq-search").val().length > 0){
-                    if ($(this).attr("href").charAt(0) == "#")
-                        window.open(window.location.origin + window.location.pathname + $(this).attr('href').replace(window.location.search, ''), '_blank');
-                    else
-                        window.open($(this).attr('href').replace(window.location.search, ''), '_blank');
-                }
+                URLRedirect($(this), true);
             });
         },700)
     }
@@ -774,14 +771,10 @@ $(document).ready(function(){
                 }
             });
 
-            $(".accordion-faq-item-content a").on("click", function(e){
+            //Redirect of FAQ question's links and glossary without search
+            $(".accordion-faq-item-content a, .tab-content a").on("click", function(e){
                 e.preventDefault();
-                location.href = $(this).attr("href") !== "#top" ? $(this).attr("href") : $(this).attr("#top")
-                if ($(".faq-anchor")) {
-                    location.href = $(this).attr("href")                    
-                    if ($(this).attr("href").charAt(0) == "#")
-                        $($($(this).attr("href")).parent()).addClass("active");
-                }
+                URLRedirect($(this), !$("#topic_separator").hasClass("d-none") ?true:false);
             });
 
             //Show all topics on click on FAQ
@@ -1045,6 +1038,25 @@ $(document).ready(function(){
             $(".results-found").removeClass("d-none");
         }
     }
+
+    function URLRedirect(element, newTab=false){
+        if($(element).hasClass("faq-anchor") || $(element).attr("href") === "#top")
+            newTab = false;
+        if(newTab){
+            if ($(element).attr("href").charAt(0) == "#")
+            window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
+            else
+            window.open($(element).attr('href').replace(window.location.search, ''), '_blank');
+        } else {
+            if ($(element).attr("href").charAt(0) == "#"){   
+                $($($(element).attr("href")).parent()).addClass("active");
+                $(document).scrollTop( $(element).attr("href") === "#top" ?0 :$($(element).attr("href")).offset().top);
+            }
+            else
+                location.href = $(element).attr("href")
+        }
+    }
+
     //Plotly ModeBar
     $(".modebar-btn").attr("tabindex", 0);
     $(".modebar-btn").on('keydown', (e) => {
