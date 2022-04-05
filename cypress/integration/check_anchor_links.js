@@ -26,7 +26,9 @@ context("Check for broken anchor links", () => {
                   '/de/screenshots/',
                   '/en/screenshots/',
                   '/de/faq/',
+                  '/de/faq/results/',
                   '/en/faq/',
+                  '/en/faq/results/',
                   '/de/rat-partner/',
                   '/en/rat-partner/',
                   '/de/privacy/',
@@ -51,7 +53,7 @@ context("Check for broken anchor links", () => {
     it(`"${page}" - Check for broken anchor links`, () => {
       cy.visit({log: false, url: page} )
       cy.get("a[href*='#']").each(url => {
-        if (url.prop('href') && url.prop('href').includes("localhost") && url.prop('href').split("#")[1] !== "top") {    
+        if (url.prop('href') && url.prop('href').includes("localhost") && url.prop('href').split("#")[1] !== "top" && url.prop('href').split("#")[1] !== "") {    
           if(url.prop('href').split(":8000") !== page) cy.visit({log: false, url: url.prop('href')} )
           cy.get("body").then($body => {
             if ($body.find(`#${url.prop('href').split("#")[1]}`).length > 0) {   
