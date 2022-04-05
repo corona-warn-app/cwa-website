@@ -137,13 +137,19 @@ a.no-decoration {
 
 .clean-search {
   position: absolute;
-  bottom: 12px;
-  left: 90%;
+  top: 21%;
+  right: 6.4%;
   z-index: 99;
   cursor: pointer;
   &:hover {
     color: red;
   }
+}
+
+@media (max-width: $screen-md) {
+  .clean-search {
+    right: 6.7%;
+}
 }
 
 .highlight {
@@ -160,4 +166,34 @@ a.no-decoration {
     position: relative;
     bottom: 2px;
   }
+}
+
+.filterUse-md {
+  @media (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+}
+
+.filterUse-sm {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.searchbar-clean-padding {
+  padding-right: 10%;
+}
+
+@media (max-width: $screen-md) {
+  .searchbar-clean-padding {
+    padding-right: 16%;
+  }
+}
+
+.searchbar-clean-relative{
+  position: relative
+}
+
+.accordion-faq-mobile-item-content {
+  padding: 1.25rem 44px 1.25rem 1.25rem;
 }
