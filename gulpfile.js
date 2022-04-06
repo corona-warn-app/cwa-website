@@ -68,7 +68,8 @@ gulp.task(
     createFaqRedirects,
     replaceVersionNumbers,
     sitemaplist,
-    sitemaplist_de
+    sitemaplist_de,
+    AddEnglishSpecifier
   )
 );
 
@@ -565,4 +566,13 @@ function replaceVersionNumbers() {
     .pipe(replace('[android.current-app-version]', '2.20.3'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
+}
+
+function AddEnglishSpecifier() {
+  const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'))
+  let task = gulp.src([PATHS.dist + "/**/*.html"]);
+  data.texts.forEach((value) => {
+      task = task.pipe(replace(' ' + value + ' ', `<span lang="en"> ${value} </span>`));
+  });
+  return task.pipe(gulp.dest(PATHS.dist))
 }
