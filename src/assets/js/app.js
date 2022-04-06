@@ -97,7 +97,7 @@ $(document).ready(function(){
         if(item && item.offset()) {
             $(menu).scrollTop(item.offset().top - item.outerHeight() - 180)
         } else if(head && head.offset()) {
-            $(menu).scrollTop(head.offset().top - 30 - 180)
+            $(menu).scrollTop($(head).offset().top - $(menu).offset().top)
         }
     }, 500);
 
