@@ -12,7 +12,7 @@ export default {
 		width: "100%",
 		height: 230,
 		type: 'line',
-		redrawOnWindowResize: false,
+		redrawOnWindowResize: true,
 		toolbar: {
 			autoSelected: 'pan',
 			show: false,
