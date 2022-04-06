@@ -44,7 +44,7 @@
 		{{page-contents.update}}
 		<span class="analyseUpdate-timestamp"></span>.
 		<button class="btn analyseBoard-iconBtn analyseBoard-info info-textblock"  rel="{{page-contents.updateNoticeIcon.title}}">
-			<img src="{{root}}assets/img/icons/info.svg" aria-label="{{page-contents.info}}">
+			<img src="{{root}}assets/img/icons/info.svg" aria-label="{{page-contents.info}}" alt="">
 		</button>
 	</div>
 	
@@ -59,7 +59,7 @@
 			<div class="analyseRangePicker">
 				<button class="btn analyseRangePicker-btn ">
 					<span>&nbsp;</span>
-					<img src="{{root}}assets/img/icons/down.svg">
+					<img src="{{root}}assets/img/icons/down.svg" aria-label="{{page-contents.down}}" alt="">
 				</button>
 				<div class="analyseRangePicker-layer">
 					{{#if page-contents.range.picker.inputs}}
@@ -68,13 +68,13 @@
 								<div class="analyseRangePicker-inputs-label">
 									{{page-contents.range.picker.inputs.from}} ({{page-contents.range.picker.inputs.format}})
 								</div>
-								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off">
+								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-start" name="start" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off"/>
 							</div>
 							<div class="analyseRangePicker-inputs-set">
 								<div class="analyseRangePicker-inputs-label">
 									{{page-contents.range.picker.inputs.to}} ({{page-contents.range.picker.inputs.format}})
 								</div>
-								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off">
+								<input type="text" class="analyseRangePicker-input analyseRangePicker-input-end" placeholder="{{page-contents.range.picker.inputs.format}}" autocomplete="off"/>
 							</div>
 							<div class="analyseRangePicker-actions-top">
 								{{#if page-contents.range.picker.apply}}
@@ -107,11 +107,11 @@
 			</div>
 
 
-			<input type="radio" name="analyseRange" class="analyseRangeCustom" value="">
+			<input type="radio" name="analyseRange" class="analyseRangeCustom" value=""/>
 
 			{{#each page-contents.range.radio}}
 				<label class="analyseRangeRadio {{#if active}}first{{/if}}" for="radio_{{value}}">
-					<input type="radio" name="analyseRange" value="{{value}}" id=radio_{{value}}>
+					<input type="radio" name="analyseRange" value="{{value}}" id="radio_{{value}}"/>
 					<div class="analyseRangeRadio-box"></div>
 					<span>{{label}}</span>
 				</label>
@@ -193,13 +193,13 @@
 							{{/if}}
 
 							<button class="btn analyseBoard-iconBtn analyseBoard-expand" data-id="chart{{@index}}">
-								<img src="{{../root}}assets/img/icons/expand.svg" aria-label="{{expand}}">
-								<img src="{{../root}}assets/img/icons/collapse.svg" aria-label="{{collapse}}">
+								<img src="{{../root}}assets/img/icons/expand.svg" alt="" aria-label="{{expand}}">
+								<img src="{{../root}}assets/img/icons/collapse.svg" alt="" aria-label="{{collapse}}">
 							</button>
 
 							<button class="btn analyseBoard-iconBtn analyseBoard-fullscreen" data-id="chart{{@index}}">
-								<img src="{{../root}}assets/img/icons/expand.svg" aria-label="{{expand}}">
-								<img src="{{../root}}assets/img/icons/collapse.svg" aria-label="{{collapse}}">
+								<img src="{{../root}}assets/img/icons/expand.svg" alt="" aria-label="{{expand}}">
+								<img src="{{../root}}assets/img/icons/collapse.svg" alt="" aria-label="{{collapse}}">
 							</button>
 						</div>
 						
@@ -235,7 +235,7 @@
 		<div class="analyseModal" rel="{{title}}">
 			<h2 class="headline analyseModal-title">
 				<button class="btn analyseModal-close">
-					<img src="{{../root}}assets/img/icons/Close.svg" aria-label="{{close}}">
+					<img src="{{../root}}assets/img/icons/Close.svg" alt="" aria-label="{{close}}">
 				</button>
 				{{title}}
 			</h2>
@@ -249,7 +249,7 @@
 	<div class="analyseModalInfo" rel="{{page-contents.updateNoticeIcon.title}}">
 		<h2 class="headline analyseModal-title">
 			<button class="btn analyseModalInfo-close">
-				<img src="{{root}}assets/img/icons/Close.svg" aria-label="{{close}}">
+				<img src="{{root}}assets/img/icons/Close.svg" alt="" aria-label="{{close}}">
 			</button>
 			{{page-contents.updateNoticeIcon.title}}
 		</h2>
