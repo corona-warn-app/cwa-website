@@ -572,7 +572,7 @@ function AddEnglishSpecifier() {
   const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'))
   let task = gulp.src([PATHS.dist + "/**/*.html"]);
   data.texts.forEach((value) => {
-      task = task.pipe(replace(' ' + value + ' ', `<span lang="en">${value}</span>`));
+      task = task.pipe(replace(' ' + value + ' ', `<span lang="en"> ${value} </span>`));
   });
   return task.pipe(gulp.dest(PATHS.dist))
 }
