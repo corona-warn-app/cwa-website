@@ -886,6 +886,7 @@ $(document).ready(function(){
 
         if (tab) {
             tab.addClass('active').siblings().removeClass('active');
+            tab.attr("aria-selected", "true").siblings().attr("aria-selected", "false");
             tab.removeAttr('tabindex').siblings().attr('tabindex', '-1');
             $(tab.attr('href')).addClass('show active').siblings().removeClass('show active');
             tab.focus();
@@ -898,6 +899,7 @@ $(document).ready(function(){
 
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
+        $(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
         $(this).removeAttr('tabindex').siblings().attr('tabindex', '-1');
 
         //Toggle target tab
