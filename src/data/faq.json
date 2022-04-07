@@ -2217,11 +2217,15 @@
                                 ]
                             },
                             {
-                                "title": "Title",
+                                "title": "The Corona-Warn-App's public dashboard has recently been counting significantly fewer PCR tests retroactively for the period since August 2021 than before. Why?",
                                 "anchor": "dashboard_pcr_tests",
                                 "active": false,
                                 "textblock": [
-                                    "Text"
+                                    "There was an error in the counting of PCR test results in the 'Test results provided' dashboard statistics. Transmission and validity of test results were not affected. PCR test results were correctly submitted to the CWA backend at all times and could be retrieved by CWA users. As a result, there were no incorrect or missing warnings in the Corona-Warn-App.",
+                                    "We have corrected the error on April 7th, 2022 and highlighted the correction of the numbers in the dashboard accordingly.",
+                                    "The reason for the previously overstated figures was double counting in the test result server. Test results from laboratories that additionally configure their results for the issuance of digital COVID test certificates of the EU are available there twice and were thus mistakenly counted twice. This equally affected positive and negative results.",
+                                    "For the younger part of the affected period, the dashboard now shows the correct PCR test statistics after duplicate matching. For the more recent part of this period, the original data has already been deleted for data protection reasons. Therefore, the PCR test statistics could only be corrected approximately. Other statistics in the dashboard are not affected by the incorrect count. We apologize for the error."
+
                                 ]
                             },
                             {
