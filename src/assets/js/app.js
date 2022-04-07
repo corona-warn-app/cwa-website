@@ -904,19 +904,28 @@ $(document).ready(function(){
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
 
-        //Change of behavior when clicked in accesibility nav-tabs 
-        if($(this).attr('id') === "android-tab"){
-            $(document).find("div#android").addClass('show active').siblings().removeClass('show active');
-        } else if(($(this).attr('id') ===  "ios-tab")){
-            $(document).find("div#ios").addClass('show active').siblings().removeClass('show active')
-        }
-
         //Keep selected on refresh except in FAQ results
         if (!document.querySelector(".page-faq-results")) {
             if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
             else window.location.href += $(this).attr('href');
         }
       });
+
+    $('.mobile-type').ready(function(e){
+        if(location.hash === "#ios" || location.hash === "#android"){
+            $(window).scrollTop($("#glossary").offset().top);
+        }
+    });
+    $(window).bind( 'hashchange', function(e) { 
+        console.log("he sido cambiado")
+        if(location.hash === "#ios" || location.hash === "#android"){
+            $("a[href='" + location.hash + "']").addClass('active').siblings().removeClass('active');
+            $("a[href='" + location.hash + "']").attr("aria-selected", "true").siblings().attr("aria-selected", "false");
+            $("a[href='" + location.hash + "']").removeAttr('tabindex').siblings().attr('tabindex', '-1');
+            $("div" + location.hash).addClass('show active').siblings().removeClass('show active')
+            $(window).scrollTop($("#glossary").offset().top);
+        }
+    });
 
       // pre select tabs on page load
       if(window.location.href.includes("#")) {
