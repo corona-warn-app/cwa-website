@@ -2226,6 +2226,17 @@
                                 ]
                             },
                             {
+                                "title": "Das öffentliche Dashboard der Corona-Warn-App zählt neuerdings rückwirkend für den Zeitraum seit August 2021 deutlich weniger PCR-Tests als zuvor. Warum?",
+                                "anchor": "dashboard_pcr_tests",
+                                "active": false,
+                                "textblock": [
+                                    "Es handelte sich hierbei um einen Fehler in der Zählweise der PCR-Testergebnisse in der Dashboard-Statistik „Bereitgestellte Testergebnisse“. Übermittlung und Gültigkeit von Testergebnissen waren hiervon nicht betroffen. Die PCR-Testergebnisse wurden zu jeder Zeit korrekt in das Backend der CWA übermittelt und konnten von den CWA-Nutzenden abgerufen werden. Es kam in der Folge also zu keinen falschen oder ausbleibenden Warnungen in der Corona-Warn-App.",
+                                    "Wir haben den Fehler am 07.04.2022 beseitigt und die Korrektur der Zahlen im Dashboard entsprechend kenntlich gemacht.",
+                                    "Ursache für die zuvor zu hoch angegebenen Zahlen war eine Doppelzählung im Testresultatserver. Testergebnisse von Laboren, die ihre Ergebnisse zusätzlich für die Ausstellung von digitalen COVID-Testzertifikaten der EU konfigurieren, liegen dort doppelt vor und wurden dadurch versehentlich doppelt gezählt. Dies betraf gleichermaßen positive und negative Ergebnisse.",
+                                    "Für den jüngeren Teil des betroffenen Zeitraums zeigt das Dashboard nach Doubletten-Abgleich jetzt die korrekte PCR-Test-Statistik an. Für den länger zurückliegenden Teil dieses Zeitraums wurden die Originaldaten aus Datenschutzgründen bereits gelöscht. Die PCR-Test-Statistik konnte daher nur näherungsweise korrigiert werden. Andere Statistiken des Dashboards sind von der fehlerhaften Zählweise nicht betroffen. Wir bitten, den Fehler zu entschuldigen."
+                                ]
+                            },
+                            {
                                 "title": "Wann wurden diese FAQ zuletzt aktualisiert?",
                                 "anchor": "update_faq",
                                 "active": false,
