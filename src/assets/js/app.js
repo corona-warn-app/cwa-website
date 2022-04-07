@@ -455,7 +455,7 @@ $(document).ready(function(){
                 const topic = $(`${hash}.topic-title`);
                 const section = $(`${hash}.section-container`);
 
-                history.replaceState({}, document.title, ".");
+                history.replaceState({}, document.title, `${hash}` );
                 if($(h3).length) {
                     h3.click();
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
