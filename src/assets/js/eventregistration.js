@@ -10,6 +10,8 @@ import $ from 'jquery';
 import 'slick-carousel';
 import lang_en from '../../data/eventregistration.json';
 import lang_de from '../../data/eventregistration_de.json';
+import './pdf-font-medium'
+import './pdf-font-extrabold'
 
 const backgroundImage = new Image();
 backgroundImage.src = '/assets/img/pt-poster-1.0.0.png';
@@ -579,12 +581,12 @@ function PrintLayout(QR) {
       doc.setLineHeightFactor(lineHeight);
 
       doc.setFontSize(titleFontSize);
-      doc.setFont('Arial','bold');
+      doc.setFont("futura-condensed-extrabold_bigfontsite.com");
       doc.setTextColor('#007099');
       doc.text(title, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.70);
 
       doc.setFontSize(bodyFontSize);
-      doc.setFont('Arial','normal');
+      doc.setFont("futura-condensedmedium_bigfontsite.com");
       doc.setTextColor('#404040');
       doc.text(body, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.785);
     }
