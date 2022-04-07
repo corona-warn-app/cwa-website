@@ -662,7 +662,6 @@ $(document).ready(function(){
 
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
-                
                 e.preventDefault();
 
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
@@ -896,7 +895,7 @@ $(document).ready(function(){
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
-
+        
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
         $(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
@@ -904,6 +903,13 @@ $(document).ready(function(){
 
         //Toggle target tab
         $($(this).attr('href')).addClass('show active').siblings().removeClass('show active');
+
+        //Change of behavior when clicked in accesibility nav-tabs 
+        if($(this).attr('id') === "android-tab"){
+            $(document).find("div#android").addClass('show active').siblings().removeClass('show active');
+        } else if(($(this).attr('id') ===  "ios-tab")){
+            $(document).find("div#ios").addClass('show active').siblings().removeClass('show active')
+        }
 
         //Keep selected on refresh except in FAQ results
         if (!document.querySelector(".page-faq-results")) {
