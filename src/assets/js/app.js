@@ -909,15 +909,16 @@ $(document).ready(function(){
             if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
             else window.location.href += $(this).attr('href');
         }
-      });
+    });
 
+    //events for navtabs mobiles in accessibility
     $('.mobile-type').ready(function(e){
         if(location.hash === "#ios" || location.hash === "#android"){
             $(window).scrollTop($("#glossary").offset().top);
         }
     });
+
     $(window).bind( 'hashchange', function(e) { 
-        console.log("he sido cambiado")
         if(location.hash === "#ios" || location.hash === "#android"){
             $("a[href='" + location.hash + "']").addClass('active').siblings().removeClass('active');
             $("a[href='" + location.hash + "']").attr("aria-selected", "true").siblings().attr("aria-selected", "false");
