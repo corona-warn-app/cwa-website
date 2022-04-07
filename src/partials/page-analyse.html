@@ -205,12 +205,14 @@
 						
 						{{#if ../page-contents.boards.total}}
 							<div class="analyseBoard-total">
-								<div class="analyseBoard-total-value" data-key='{{toJSON totalKey}}'></div>
+								<div class="analyseBoard-total-value d-inline" data-key='{{toJSON totalKey}}'></div>
+								<div class="d-inline">
+									{{#if additionalInfo}}
+										<sup>({{{additionalInfo}}})</sup>
+									{{/if}}
+								</div>
 								<div class="analyseBoard-total-label">
 									{{{../page-contents.boards.total}}}
-									{{#if additionalInfo}}
-										{{{additionalInfo}}}
-									{{/if}}
 								</div>
 							</div>
 						{{/if}}
