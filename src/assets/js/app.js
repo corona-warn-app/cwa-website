@@ -98,7 +98,7 @@ $(document).ready(function(){
         if(item && item.offset()) {
             $(menu).scrollTop(item.offset().top - item.outerHeight() - 180)
         } else if(head && head.offset()) {
-            $(menu).scrollTop(head.offset().top - 30 - 180)
+            $(menu).scrollTop($(head).offset().top - $(menu).offset().top)
         }
     }, 500);
 
@@ -272,7 +272,8 @@ $(document).ready(function(){
 
         if(topicString !== "all") {
             $("#topic_separator").removeClass("d-none");
-            $(".bread-topic").text($(`#${topicString}`).find(".topic-title").text()).removeClass('d-none');
+            $(".bread-section").addClass('d-none');
+            $(".bread-topic").text($(`#${topicString}.topic-title`).text().trim()).removeClass('d-none');
         }
         setTimeout(() => {
             //check again showed items cause of topic filter
@@ -460,7 +461,7 @@ $(document).ready(function(){
                 const topic = $(`${hash}.topic-title`);
                 const section = $(`${hash}.section-container`);
 
-                history.replaceState({}, document.title, ".");
+                history.replaceState({}, document.title, `${hash}` );
                 if($(h3).length) {
                     h3.click();
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
@@ -633,7 +634,8 @@ $(document).ready(function(){
                         handleResultFoundTextVisibility(glossaryList)
                     } else {
                         $("#faq-container").removeClass('d-none');
-                        updateResults(search, topic, faq);
+                        let currentTopic = $(this).attr("class").split(/\s+/)[1];
+                        updateResults(search, currentTopic, faq);
                         $("#glossary_container").addClass('d-none');
                         $(".bread-section").addClass('d-none');
                         $("#bread_separator").addClass('d-none');
@@ -899,6 +901,7 @@ $(document).ready(function(){
 
         if (tab) {
             tab.addClass('active').siblings().removeClass('active');
+            tab.attr("aria-selected", "true").siblings().attr("aria-selected", "false");
             tab.removeAttr('tabindex').siblings().attr('tabindex', '-1');
             $(tab.attr('href')).addClass('show active').siblings().removeClass('show active');
             tab.focus();
@@ -911,6 +914,7 @@ $(document).ready(function(){
 
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
+        $(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
         $(this).removeAttr('tabindex').siblings().attr('tabindex', '-1');
 
         //Toggle target tab
