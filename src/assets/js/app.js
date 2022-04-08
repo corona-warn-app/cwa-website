@@ -667,7 +667,6 @@ $(document).ready(function(){
 
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
-                
                 e.preventDefault();
 
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
@@ -901,7 +900,7 @@ $(document).ready(function(){
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
-
+        
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
         $(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
@@ -915,7 +914,24 @@ $(document).ready(function(){
             if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
             else window.location.href += $(this).attr('href');
         }
-      });
+    });
+
+    //events for navtabs mobiles in accessibility
+    $('.mobile-type').ready(function(e){
+        if(location.hash === "#ios" || location.hash === "#android"){
+            $(window).scrollTop($("#glossary").offset().top);
+        }
+    });
+
+    $(window).bind( 'hashchange', function(e) { 
+        if(location.hash === "#ios" || location.hash === "#android"){
+            $("a[href='" + location.hash + "']").addClass('active').siblings().removeClass('active');
+            $("a[href='" + location.hash + "']").attr("aria-selected", "true").siblings().attr("aria-selected", "false");
+            $("a[href='" + location.hash + "']").removeAttr('tabindex').siblings().attr('tabindex', '-1');
+            $("div" + location.hash).addClass('show active').siblings().removeClass('show active')
+            $(window).scrollTop($("#glossary").offset().top);
+        }
+    });
 
       // pre select tabs on page load
       if(window.location.href.includes("#")) {
