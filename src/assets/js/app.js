@@ -435,25 +435,45 @@ $(document).ready(function(){
         const { hash } = window.location;
 
         if (hash) {
+
+        // if we have a hash and that hash is not part of the faq list
+        let hashVal = hash.substring(1)
+        let locationHash = location.hash
+        if(hash && !Object.keys(faq).includes(hashVal)) {
+            // then let's get the list of defined redirects
+            $.get("/assets/data/faq_redirects.json", (data) => {
+                // and see whether there is a proper replacement (1:1 mapping)
+                
+                let replacement = data[hashVal];
+                // if there is ...
+                if(replacement){
+                    // ... just go there
+                    locationHash = "#" + replacement;
+                }
+            })
+        }
+       
             // go to anchor
             setTimeout(() => {
                 if(window.matchMedia("(max-width: 767px)").matches) {
                     //Open accordion
-                    if($(`${hash}`).hasClass("topic-container")) {
-                        $($($($(`${hash}`).children()[0]).children()[0]).children()[0]).addClass("active");
+                    if($(`${locationHash}`).hasClass("topic-container")) {
+                        $($($($(`${locationHash}`).children()[0]).children()[0]).children()[0]).addClass("active");
                     }
                     //Open accordion and aim section title
-                    if($(`${hash}`).hasClass("section-container")) {
-                        $($(`${hash}`).parent().parent().parent().parent().children()[0]).addClass("active");
+                    
+                    if($(`${locationHash}`).hasClass("section-container")) {
+                        $($(`${locationHash}`).parent().parent().parent().parent().children()[0]).addClass("active");
                     }
                     //Open accordion and aim question
-                    if($(`${hash}`).hasClass("accordion-faq-item-title")){
-                        $($(`${hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                    
+                    if($(`${locationHash}`).hasClass("accordion-faq-item-title")){
+                        $($(`${locationHash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
                 } 
-                const h3 = $(`h3${hash}`);
-                const topic = $(`${hash}.topic-title`);
-                const section = $(`${hash}.section-container`);
+                const h3 =  $(`h3${locationHash}`);
+                const topic = $(`${locationHash}.topic-title`);
+                const section = $(`${locationHash}.section-container`);
 
                 history.replaceState({}, document.title, `${hash}` );
                 if($(h3).length) {
@@ -466,7 +486,7 @@ $(document).ready(function(){
                 } else if(hash === '#glossary') {
                     $('#glossary').click();
                 }
-            },250)
+            },500)
         }
         if(search) {
             $('#faq-search').val(search)
@@ -516,21 +536,6 @@ $(document).ready(function(){
                     })
                 }
             }
-        }
-
-        // if we have a hash and that hash is not part of the faq list
-        let hashVal = hash.substring(1)
-        if(hash && !Object.keys(faq).includes(hashVal)) {
-            // then let's get the list of defined redirects
-            $.get("/assets/data/faq_redirects.json", (data) => {
-                // and see whether there is a proper replacement (1:1 mapping)
-                let replacement = data[hashVal];
-                // if there is ...
-                if(replacement){
-                    // ... just go there
-                    location.hash = "#" + replacement;
-                }
-            })
         }
 
         //Clear search 
@@ -662,7 +667,6 @@ $(document).ready(function(){
 
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
-                
                 e.preventDefault();
 
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
@@ -896,7 +900,7 @@ $(document).ready(function(){
     // simple jquery tabs
     $('.nav-tabs .nav-item').click(function(e) {
         e.preventDefault();
-
+        
         //Toggle tab link
         $(this).addClass('active').siblings().removeClass('active');
         $(this).attr("aria-selected", "true").siblings().attr("aria-selected", "false");
@@ -910,7 +914,24 @@ $(document).ready(function(){
             if(window.location.href.includes("#")) window.location.href = window.location.href.split("#")[0]+=$(this).attr('href');           
             else window.location.href += $(this).attr('href');
         }
-      });
+    });
+
+    //events for navtabs mobiles in accessibility
+    $('.mobile-type').ready(function(e){
+        if(location.hash === "#ios" || location.hash === "#android"){
+            $(window).scrollTop($("#glossary").offset().top);
+        }
+    });
+
+    $(window).bind( 'hashchange', function(e) { 
+        if(location.hash === "#ios" || location.hash === "#android"){
+            $("a[href='" + location.hash + "']").addClass('active').siblings().removeClass('active');
+            $("a[href='" + location.hash + "']").attr("aria-selected", "true").siblings().attr("aria-selected", "false");
+            $("a[href='" + location.hash + "']").removeAttr('tabindex').siblings().attr('tabindex', '-1');
+            $("div" + location.hash).addClass('show active').siblings().removeClass('show active')
+            $(window).scrollTop($("#glossary").offset().top);
+        }
+    });
 
       // pre select tabs on page load
       if(window.location.href.includes("#")) {
