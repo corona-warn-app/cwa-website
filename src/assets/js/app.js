@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { isBuffer } from 'lodash';
 import throttle from 'lodash.throttle';
 import 'slick-carousel';
 
@@ -354,6 +355,11 @@ $(document).ready(function(){
                     }
                 })
             }
+            //Redirect of FAQ question's links and glossary with search
+            $(".accordion-faq-item-content a, .glossary-result a").on("click", function(e){
+                e.preventDefault();
+                URLRedirect($(this), true);
+            });
         },700)
     }
 
@@ -770,6 +776,13 @@ $(document).ready(function(){
                     })
                 }
             });
+
+            //Redirect of FAQ question's links and glossary without search
+            $(".accordion-faq-item-content a, .tab-content a").on("click", function(e){
+                e.preventDefault();
+                URLRedirect($(this), !$("#topic_separator").hasClass("d-none") ?true:false);
+            });
+
             //Show all topics on click on FAQ
             $(".bread-faq").on("click", function(e) {
                 if(!search) $("#faq-topic").val("all").prop('selected', true);
@@ -797,6 +810,8 @@ $(document).ready(function(){
                 $(".btn-close").click();
             });
         }
+        
+
         //Show search results count on the side menu
         $(".section-item").each((index, section) => {
             if(search) {
@@ -1048,6 +1063,25 @@ $(document).ready(function(){
             $(".results-found").removeClass("d-none");
         }
     }
+
+    function URLRedirect(element, newTab=false){
+        if($(element).hasClass("faq-anchor") || $(element).attr("href") === "#top")
+            newTab = false;
+        if(newTab){
+            if ($(element).attr("href").charAt(0) == "#")
+            window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
+            else
+            window.open($(element).attr('href').replace(window.location.search, ''), '_blank');
+        } else {
+            if ($(element).attr("href").charAt(0) == "#"){   
+                $($($(element).attr("href")).parent()).addClass("active");
+                $(document).scrollTop( $(element).attr("href") === "#top" ?0 :$($(element).attr("href")).offset().top);
+            }
+            else
+                location.href = $(element).attr("href")
+        }
+    }
+
     //Plotly ModeBar
     $(".modebar-btn").attr("tabindex", 0);
     $(".modebar-btn").on('keydown', (e) => {
