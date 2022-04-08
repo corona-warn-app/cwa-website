@@ -1625,6 +1625,16 @@
                                 ]
                             },
                             {
+                                "title": "Error 'DCC_RI_429'",
+                                "anchor": "dcc_ri_429",
+                                "active": false,
+                                "textblock": [
+                                    "The error message with the code \"DCC_RI_429\" occurs if you try to reissue a certificate more than three times. This could happen, for example, if you want to have the certificate reissued on multiple devices. In this case, you can scan the QR code of the certificate from another device if you have already received the new, replaced certificate there.",
+                                    "Because of this limitation, we recommend that you export the newly issued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if needed (see <a href='#eu_dcc_export' target='_blank' >\"How do I create a printout of my EU Digital COVID Certificate?\"</a>).",
+                                    "See also: <a href='#dcc_replacement' target='_blank' >\"Can certificates be updated via the app?\"</a>"
+                                ]
+                            },
+                            {
                                 "title": "Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?",
                                 "anchor": "dcc_no_rules",
                                 "active": false,
