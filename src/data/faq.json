@@ -1458,7 +1458,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Updated 30 March, 2022</b>",
-                                    "The app is currently available in the following languages:<ul><li>German</li><li>English</li><li>Turkish (as of version 1.1.1)</li><li>Bulgarian (as of version 1.2.0)</li><li>Polish (as of version 1.2.0)</li><li>Romanian (as of version 1.2.0)</li><li>Ukrainian (as of version 2.20.0)</li></ul>",
+                                    "The app is currently available in the following languages:<ul><li>German</li><li>English</li><li>Turkish (as of version 1.1.1)</li><li>Bulgarian (as of version 1.2.0)</li><li>Polish (as of version 1.2.0)</li><li>Romanian (as of version 1.2.0)</li><li>Ukrainian (as of version 2.20.0 for iOS and version 2.20.4 for Android)</li></ul>",
                                     "The technical hotline (<a href='tel:08007540001'>0800 7540001</a>) answers in German.",
                                     "The language of the app is derived from the language that is configured in the smartphone's language settings. To display the app in German, for example, change the language settings to German.",
                                     "Please note that many countries release their own Corona tracking apps. Because the German Corona-Warn-App is also available in the app stores and play stores of these countries, the Corona tracking apps could be mixed up. Therefore, make sure that you download the app for your country.",
@@ -1582,10 +1582,10 @@
                                 "anchor": "new_device",
                                 "active": false,
                                 "textblock": [
-                                    "A backup of the old random IDs is unfortunately not possible, because the Exposure Notification Framework of Apple/Google does not allow the export of this data. To still be informed about possible risk encounters, we recommend that you keep a close view of the risk status on the old device for at least 14 days after you install the Corona-Warn-App on the new device. Please note the following instructions:",
+                                    "A backup of the old random IDs is unfortunately not possible, because the Exposure Notification Framework of Apple/Google does not allow the export of this data. To still be informed about possible risk encounters, we recommend that you keep a close view of the risk status on the old device for at least 14 days (10 days since Version 2.20) after you install the Corona-Warn-App on the new device. Please note the following instructions:",
                                     "<ul><li>Your old device must be able to perform regular checks for possible encounters. Therefore, leave the device permanently turned on and permanently connected to the Internet.</li><li>Keep the old device in a stationary location, e.g., in a specific place in your apartment. If possible, place the device where you can hear or see it so that you are alerted early by a notification of the app.</li><li>Actively access the Corona-Warn-App on the old device at least once a day and check your risk status there.</li></ul>",
-                                    "If you are tested for COVID-19 during these 14 days, enter the PCR-Test QR code on your new device. If the test result is positive, you should share the test result on both devices. For sharing a test result on multiple devices, please note the FAQ entry <a href='#test_multiple_devices' target='_blank' >How do I share a positive test result on multiple devices?</a>.",
-                                    "After 14 days, your old device will no longer contain any relevant entries for risk assessment. You don't need to pay any further attention to the risk status on this device and can remove the Corona-Warn-App there."
+                                    "If you are tested for COVID-19 during these 14 days (10 days since Version 2.20), enter the PCR-Test QR code on your new device. If the test result is positive, you should share the test result on both devices. For sharing a test result on multiple devices, please note the FAQ entry <a href='#test_multiple_devices' target='_blank' >How do I share a positive test result on multiple devices?</a>.",
+                                    "After 14 days (10 days since Version 2.20), your old device will no longer contain any relevant entries for risk assessment. You don't need to pay any further attention to the risk status on this device and can remove the Corona-Warn-App there."
                                 ]
                             },
                             {
@@ -2217,6 +2217,18 @@
                                 ]
                             },
                             {
+                                "title": "The Corona-Warn-App's public dashboard has recently been counting significantly fewer PCR tests retroactively for the period since August 2021 than before. Why?",
+                                "anchor": "dashboard_pcr_tests",
+                                "active": false,
+                                "textblock": [
+                                    "There was an error in the counting of PCR test results in the 'Test results provided' dashboard statistics. Transmission and validity of test results were not affected. PCR test results were correctly submitted to the CWA backend at all times and could be retrieved by CWA users. As a result, there were no incorrect or missing warnings in the Corona-Warn-App.",
+                                    "We have corrected the error on April 7th, 2022 and highlighted the correction of the numbers in the dashboard accordingly.",
+                                    "The reason for the previously overstated figures was double counting in the test result server. Test results from laboratories that additionally configure their results for the issuance of digital COVID test certificates of the EU are available there twice and were thus mistakenly counted twice. This equally affected positive and negative results.",
+                                    "For the younger part of the affected period, the dashboard now shows the correct PCR test statistics after duplicate matching. For the more recent part of this period, the original data has already been deleted for data protection reasons. Therefore, the PCR test statistics could only be corrected approximately. Other statistics in the dashboard are not affected by the incorrect count. We apologize for the error."
+
+                                ]
+                            },
+                            {
                                 "title": "When were the FAQ last updated?",
                                 "anchor": "update_faq",
                                 "active": false,
@@ -2263,7 +2275,7 @@
                                     "<b>Self-quarantine:</b><br/>If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. Even if this measure has not been ordered by a responsible authority, usually your health department, you are advised to stay at home and minimize encounters with others in your household and to avoid encounters outside your household. This applies even if you have been vaccinated or are recovered and have no symptoms. Quarantine is an important element in the pandemic response and is designed to prevent the spread of the virus (if you are infected). It is for your protection and the protection of everyone from infection with the novel coronavirus.",
                                     "<b>Health departments are used to capacity:</b><br/>Currently, COVID-19 infection numbers are at very high levels and a high number of positive test results are being submitted through the Corona-Warn-App. Therefore, please understand that the health department cannot serve all contacts. Let the health department handle its important tasks, so contact your health department only if you absolutely need assistance, for example, because your employer or educational institution requires a certificate.",
                                     "<b>Recommendations for action:</b>",
-                                    "<ul><li>Get tested. If you receive a warning of increased risk (\"red tile\"), you are entitled to a free test. This does not necessarily have to be a PCR test.</li><li>A minimum of 7 days, preferably 10 days, is recommended for the period of self-quarantine from the date of the last increased risk encounter. Refer to the red tile for the date of the last increased risk encounter.</li><li>If possible, refrain from visits and activities where you will be with other people. Have groceries delivered or ask someone to do the shopping; avoid public transportation and refrain from air and train travel.</li><li>In particular, avoid contact with vulnerable persons and groups, such as the elderly and those with pre-existing conditions.</li><li>Also minimize contacts in your own household.</li><li>If your employer gives you the option, work from home.</li><li>Watch for symptoms of illness for at least 14 days (from the date of the increased risk encounter) and contact your primary care physician's office if you feel ill or experience symptoms.</li><li>Follow the rules of hygiene.</li></ul>",
+                                    "<ul><li>Get tested. If you receive a warning of increased risk (\"red tile\"), you are entitled to a free test. This does not necessarily have to be a PCR test.</li><li>A minimum of 7 days, preferably 10 days, is recommended for the period of self-quarantine from the date of the last increased risk encounter. Refer to the red tile for the date of the last increased risk encounter.</li><li>If possible, refrain from visits and activities where you will be with other people. Have groceries delivered or ask someone to do the shopping; avoid public transportation and refrain from air and train travel.</li><li>In particular, avoid contact with vulnerable persons and groups, such as the elderly and those with pre-existing conditions.</li><li>Also minimize contacts in your own household.</li><li>If your employer gives you the option, work from home.</li><li>Watch for symptoms of illness for at least 10 days (from the date of the increased risk encounter) and contact your primary care physician's office if you feel ill or experience symptoms.</li><li>Follow the rules of hygiene.</li></ul>",
                                     "For more helpful information on home quarantine, click here: <a href='https://www.rki.de/covid-19-quarantaene' target='_blank'>Home quarantine (ordered by the health department): flyer for contacts. (German only)</a><br/>Read the FAQ article <a href='#quarantine_measures'>Questions about quarantine measures</a> for more information.<br/>Find testing options: <a href='#where_can_i_get_tested'>Where can I get tested?</a><br/>More information on the testing process: <a href='#red_card_how_to_test'>Red Card? How to get the Corona Test</a>"
                                 ]
                             },
@@ -2684,7 +2696,7 @@
                                 ]
                             },
                             {
-                                "title": "I received the message that I had a risk encounter. The next day it was gone again. Shouldn't this be deleted after 14 days?",
+                                "title": "I received the message that I had a risk encounter. The next day it was gone again. Shouldn't this be deleted after 14 or 10 days?",
                                 "anchor": "encounter_deletion",
                                 "active": false,
                                 "textblock": [
