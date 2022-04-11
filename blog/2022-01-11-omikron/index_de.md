@@ -16,7 +16,7 @@ Bisher gab es noch keine speziellen Simulationskampagnen für Omikron. Dies lieg
 
 <!-- overview -->
 
-Ein neues epidemiologisches Modell (z. B. für Omikron) macht nicht zwangsläufig neue Simulationen notwendig, zumindest solange die Annahmen über Zeit und Dauer eines kritischen Kontakts nicht grob von den ursprünglichen Simulationen abweichen.  
+Ein neues epidemiologisches Modell (z.&nbsp;B. für Omikron) macht nicht zwangsläufig neue Simulationen notwendig, zumindest solange die Annahmen über Zeit und Dauer eines kritischen Kontakts nicht grob von den ursprünglichen Simulationen abweichen.  
 
 Für die Definition/Anpassung des epidemiologischen Modells und einer möglichen Anpassung der Corona-Warn-App ist das Robert Koch-Institut (RKI) zusammen mit SAP zuständig. Das RKI beobachtet das Infektionsgeschehen kontinuierlich und prüft vor diesem Hintergrund regelmäßig mögliche Änderungen der Corona-Warn-App.
 
@@ -43,4 +43,3 @@ Das Projektteam wertet die Wirksamkeit und die Entwicklungsmöglichkeiten der Co
 Wir beobachten in den vergangenen Wochen einen Anstieg der empfangenen Warnungen über die Corona-Warn-App, die wir mit der Omikron-Variante in Verbindung setzen. Dafür informieren wir seit der App-Version 2.15 die Nutzerinnen und Nutzer umfassend, wie sie sich verhalten sollten, wenn die App eine rote Kachel zeigt. 
 
 Lesen Sie dazu den Blog-Artikel "[Was tun bei einer roten Kachel?](/de/blog/2021-12-15-cwa-red-tile-guidance)" für mehr Informationen. 
-
