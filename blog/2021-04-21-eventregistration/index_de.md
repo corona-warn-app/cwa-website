@@ -50,7 +50,7 @@ Alternativ können Veranstalter\*innen und Betreiber\*innen auch einen automatis
 
 Nutzer\*innen können über den neuen Bereich auf dem Startbildschirm der Corona-Warn-App einen QR-Code erstellen, den Gäste scannen können. 
 
-Dazu klicken sie einfach auf *QR-Code erstellen*. Anschließend können sie **Informationen zu der Veranstaltung** angeben: Nach der Auswahl der Kategorie  (z.B. Einzelhandel oder private Feier), können sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder ausgedruckt und vor Ort aufgehängt werden kann. 
+Dazu klicken sie einfach auf *QR-Code erstellen*. Anschließend können sie **Informationen zu der Veranstaltung** angeben: Nach der Auswahl der Kategorie  (z.&nbsp;B. Einzelhandel oder private Feier), können sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder ausgedruckt und vor Ort aufgehängt werden kann. 
 
 **Video-Walkthrough**: So können Sie einen QR-Code erstellen (iOS-Beispiel):
 {{/assets/video/01qrcode-erstellen}}

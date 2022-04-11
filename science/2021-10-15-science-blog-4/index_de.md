@@ -75,7 +75,7 @@ Die CWA-Datenspende hilft zu verstehen,
 2.	wann diese Ereignisse auftreten und wie bzw. mit welchem zeitlichen Abstand (Verzug) sie aufeinander folgen,
 3.	welche Auswahlen die Nutzenden in der App daraufhin treffen,
 4.	wo und wann es zu Abbrüchen kommt,
-5.	und ob all dies mit technischen Eigenschaften der Geräte oder demografischen Eigenschaften (z.B. Altersgruppe, Wohnregion) der Nutzenden zusammenhängt.
+5.	und ob all dies mit technischen Eigenschaften der Geräte oder demografischen Eigenschaften (z.&nbsp;B. Altersgruppe, Wohnregion) der Nutzenden zusammenhängt.
 
 Mit diesem Verständnis können:
 
