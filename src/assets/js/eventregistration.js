@@ -516,8 +516,6 @@ async function GenerateQRCode(isPreview, grid, description, address, defaultchec
 }
 
 function PrintLayout(QR) {
-  console.log('PrintLayout', QR);
-
   let title = ["CHECKEN SIE EIN.", "STOPPEN SIE DAS VIRUS."]
   let body = ["Nutzen Sie die Corona-Warn-App! Scannen Sie den QR-Code und tragen", "Sie aktiv dazu bei, mögliche Infektionsketten schnell und effektiv", "zu durchbrechen."]
 
