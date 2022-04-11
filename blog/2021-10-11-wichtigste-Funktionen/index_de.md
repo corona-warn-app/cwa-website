@@ -39,7 +39,7 @@ Stellt das **Gesundheitsamt** bei der Nachverfolgung von Infektionsketten fest, 
 
 Wählen Sie auf dem Startbildschirm Ihrer Corona-Warn-App **„Sie planen eine Veranstaltung?“** aus und tippen Sie anschließend auf "QR-Code erstellen".  
 
-Danach können Sie **Informationen zu Ihrer Veranstaltung** angeben: Nach der Auswahl der Kategorie (z.B. Einzelhandel oder private Feier), können Sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder den Sie ausdrucken und vor Ort aufhängen können. 
+Danach können Sie **Informationen zu Ihrer Veranstaltung** angeben: Nach der Auswahl der Kategorie (z.&nbsp;B. Einzelhandel oder private Feier), können Sie eine Beschreibung der Veranstaltung, den Ort und Start- und Enddatum festlegen. Die Corona-Warn-App erstellt anhand dieser Informationen einen QR-Code, der sich auf dem Smartphone darstellen lässt oder den Sie ausdrucken und vor Ort aufhängen können. 
 
 In der Video-Anleitung können Sie alle Schritte sehen:
 <br></br>

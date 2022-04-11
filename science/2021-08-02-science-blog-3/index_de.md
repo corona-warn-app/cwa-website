@@ -35,7 +35,7 @@ In zweiten Teil der Analyse der ereignisbezogenen Online-Befragung (Event-Driven
 
 ## 1 Das Wichtigste in Kürze: Zahlen, Daten, Fakten
 
-Der zweite Teil der ereignisbezogenen Befragung (EDUS) hat u.a. ergeben, dass
+Der zweite Teil der ereignisbezogenen Befragung (EDUS) hat u.&nbsp;a. ergeben, dass
 
 <ul><li>ein signifikanter Anteil der Befragten (72,5%) von der <q>roten Warnung</q> überrascht war,</li>
 <li>die Befragten ihre Testergebnisse meistens innerhalb von 24 Stunden über die App erhielten,</li>
@@ -2419,7 +2419,7 @@ Die Daten geben keine Hinweise auf statistisch signifikante Verhaltensunterschie
 
 ### 4.4 Übersicht zum Gesamttestprozess
 
-Die folgende interaktive Grafik (Sankey-Diagramm) verdeutlich die Aufteilung der Antworten auf Fragen zur Testung über die Basis- und Folgebefragung. Sankey-Diagramme sind eine spezifische Art Flussdiagramm. Flussmengen werden durch mengenproportionale Pfeile dargestellt, deren Dicke die maßstabsgerechte Menge repräsentiert. Die Flüsse verlaufen zwischen zwei Knoten, die als Zwischenstufen fungieren und u.a. Auskunft über die Struktur des beschriebenen Systems geben.
+Die folgende interaktive Grafik (Sankey-Diagramm) verdeutlich die Aufteilung der Antworten auf Fragen zur Testung über die Basis- und Folgebefragung. Sankey-Diagramme sind eine spezifische Art Flussdiagramm. Flussmengen werden durch mengenproportionale Pfeile dargestellt, deren Dicke die maßstabsgerechte Menge repräsentiert. Die Flüsse verlaufen zwischen zwei Knoten, die als Zwischenstufen fungieren und u.&nbsp;a. Auskunft über die Struktur des beschriebenen Systems geben.
 
 <div class="figure" alt="EDUS – CWA Testprozess, von Testvorhaben über Testart, tatsächlich durchgeführtem Test, Testergebnis, Testerhalt via CWA bis Teilung.">
 <div id="htmlwidget-networkD3-27894f19b2bee56740ed" style="width:100%;height:700px;" class="sankeyNetwork html-widget"></div>
@@ -3003,5 +3003,3 @@ Wir bedanken uns an dieser Stelle noch einmal ganz herzlich bei allen Nutzenden,
 ## 7 So geht es weiter
 
 In den kommenden Wochen werden wir uns hier im Science Blog mit dem Thema <q>Datenspende</q> der Corona-Warn-App beschäftigen. Wir wollen analysieren, inwieweit das freiwillige, datenschutzkonforme Bereitstellen von Nutzenden-Daten Erkenntnisse über das Nutzungsverhalten möglich macht. Außerdem werden wir zeigen, wie die Datenspende bei der Weiterentwicklung der Corona-Warn-App geholfen hat.
-
-
