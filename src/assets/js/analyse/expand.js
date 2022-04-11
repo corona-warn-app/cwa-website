@@ -15,6 +15,7 @@ $(document).on("click",".analyseBoard-expand", function(){
 	const height = ($e.hasClass("expand"))? 230: (window.innerHeight - spacing);
 	$(".analyseBoards").add($e).toggleClass("expand");
 	ApexCharts.exec($(this).data("id"), "updateOptions", { chart: { height } }, true, false, false);
+	$(window).scrollTop($p.offset().top)
 });
 
 $(window).on("resize", function () {

@@ -1,8 +1,8 @@
 {{#if page-contents}}
 <section class="section-main comment">
     <div class="container">
-        <div class="row align-items-lg-end justify-content-lg-between">
-            <div class="col col-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="row pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5 justify-content-lg-between">
+            <div class="col col-12 col-sm-10 col-md-8 col-lg-6 pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5">
                 <h5 class="caption-headline caption-headline_blue">{{page-contents.section-main.headline.titlecaption}}</h5>
                 <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
                 <p>{{page-contents.section-main.content.text}}</p>
@@ -30,10 +30,7 @@
                 </p>                <p class="btn-block text-left">
                     {{> button-component
                     button=page-contents.section-main.content.button
-                    icon='github'}}
-                    {{> button-component
-                    button=page-contents.section-main.content.button2
-                    icon='schnelltest-partner'}}<br>
+                    icon='github'}}<br>
                     {{#each page-contents.section-main.content.links}}
                     {{> button-link-component button=. direction='down'}}
                     {{/each}}
@@ -237,7 +234,7 @@ section-cancelable=true}}
         <div class="text-center container-inner container-inner_sm">
             {{> headline-component page-contents.section-icon-listing.headline}}
         </div>
-        {{> icon-list-component page-contents.section-icon-listing}}
+            {{> icon-list-component page-contents.section-icon-listing}}
         {{/if}}
     </div>
 </section>
@@ -263,7 +260,7 @@ section-cancelable=true}}
                         {{#each
                         page-contents.section-join-project.box.content.links}}
                         <a class="btn btn-link btn-link_narrow btn-link_icon"
-                            title="{{title}}" alt="{{title}}" href="{{url}}">{{title}}<span
+                            title="{{title}}" href="{{url}}">{{title}}<span
                                 class="icon icon_arrow-right"></span></a>
                         {{/each}}
                     </div>

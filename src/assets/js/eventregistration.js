@@ -72,8 +72,11 @@ document.getElementById('qrform').addEventListener('change', function (e) {
   document.getElementById('eventqrcode').classList.add('d-none');
   document.getElementById('printCode').disabled = true;
   document.getElementById('downloadCode').disabled = true;
-  document.getElementById('printMultiCode').disabled = true;
-  document.getElementById('downloadMultiCode').disabled = true;
+  document.getElementById('generateQR').disabled = false;
+});
+
+document.getElementById('qrform-multi').addEventListener('change', function(e) {
+  document.getElementById('generateMultiQR').disabled = false;
 });
 
 document.getElementById('generateQR').addEventListener('click', async function (e) {
@@ -567,7 +570,7 @@ async function GenerateMultiQRCode(data) {
     let grid = document.getElementById("pageTemplate").value
     QR_LIST.splice(0, QR_LIST.length);
     for (const qr of data) {
-      GenerateQRCode(grid, qr.description, qr.address, qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
+      GenerateQRCode(grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
     if (QR_LIST.length !== data.length) {
       document.getElementById('generateMultiQR').disabled = false;

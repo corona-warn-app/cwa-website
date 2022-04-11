@@ -1,0 +1,93 @@
+{{#if page-contents}}
+<script type="module" src="/assets/js/sitemap.js"></script>
+<section class="section">
+    <div class="container">
+        <div class="container-inner container-inner_lg">
+            <div class="row">
+                <div class="col ">
+                {{> headline-component page-contents.section-main.headline}}
+                    <ul>
+                        <li><a href="/">{{page-contents.section-main.content.category.homepage}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal category 'Homepage'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li>{{page-contents.section-main.content.category.news}}
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal category 'News'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/analysis">{{page-contents.section-main.content.category.dashboard}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal category 'Dashboard'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/screenshots">{{page-contents.section-main.content.category.screenshots}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#if screenshotsarchive }}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/if}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/blog">{{page-contents.section-main.content.category.blog}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal layout 'blog'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li><a href="/{{#if lang_de}}de{{else}}en{{/if}}/science">{{page-contents.section-main.content.category.science}}</a>
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal layout 'science'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                        <li>{{page-contents.section-main.content.category.about}}
+                            <ul>
+                                {{#each sitemap-list}}
+                                    {{#ifequal category 'About'}}
+                                    <li>
+                                        <a href="{{page}}">{{title}}</a>
+                                    </li>
+                                    {{/ifequal}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}

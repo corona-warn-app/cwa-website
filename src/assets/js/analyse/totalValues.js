@@ -53,7 +53,7 @@ function totalValuesUpdate($e, id, idx){
 	const ary = _get(store, [id], []);
 	const a = _get(ary, [idx], ary[0]);
 	$e.html(a[1]);
-	$e.next().find("span").html(a[0]);
+	$e.next().next().find("span").html(a[0]);
 }
 
 
