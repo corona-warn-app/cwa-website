@@ -810,7 +810,7 @@ Für den Vergleich mit SARS-CoV-2-Neuinfektionen müssen die dreistelligen Postl
 
 ### 5.2 Unterschiede zwischen urbanen und ländlichen Landkreisen
 
-Die folgende Abbildung zeigt den Zusammenhang zwischen der Bevölkerungsdichte und der „Inzidenz” der Teilnehmenden, d.h. der Anzahl der Teilnehmenden pro 100.000 Einwohner. Die Größe eines Landkreises ist dabei proportional zur Einwohnerzahl.
+Die folgende Abbildung zeigt den Zusammenhang zwischen der Bevölkerungsdichte und der „Inzidenz” der Teilnehmenden, d.&nbsp;h. der Anzahl der Teilnehmenden pro 100.000 Einwohner. Die Größe eines Landkreises ist dabei proportional zur Einwohnerzahl.
 
 <div class="figure" alt="EDUS Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen des Landkreisen.">
 <div id="htmlwidget-plotly-ab98e7e8f5de4f99ed67" style="width:80%;height:80%;" class="plotly html-widget"></div>
@@ -912,7 +912,7 @@ Mosaik-Plots sind ein graphisches Verfahren zur Visualisierung von Datensätzen 
 -   Die Größe der einzelnen Rechtecke ist proportional zur Häufigkeit der jeweiligen Merkmalskombination.
 -   Die Färbung der einzelnen Rechtecke gibt Informationen über die standardisierte Abweichung der beobachteten und erwarteten Häufigkeiten, die sogenannten Pearson-Residuen.
 
-Jedes Rechteck innerhalb des Mosaik-Plots steht für eine Merkmalskombination. Die Farbe der Rechtecke hängt von den Pearson-Residuen ab. Sind diese signifikant, wird das jeweilige Rechteck eingefärbt. Ist die Abweichung sehr groß, ist der Farbton des betroffenen Rechtecks intensiver. Die Farbe Violett steht für eine signifikante Abweichung nach oben, die Farbe Grün steht für eine signifikante Abweichung nach unten. Sind die Rechtecke weiß, liegt keine signifikante Abweichung vor, d.h., die beobachteten und erwarteten Häufigkeiten liegen nah beieinander.
+Jedes Rechteck innerhalb des Mosaik-Plots steht für eine Merkmalskombination. Die Farbe der Rechtecke hängt von den Pearson-Residuen ab. Sind diese signifikant, wird das jeweilige Rechteck eingefärbt. Ist die Abweichung sehr groß, ist der Farbton des betroffenen Rechtecks intensiver. Die Farbe Violett steht für eine signifikante Abweichung nach oben, die Farbe Grün steht für eine signifikante Abweichung nach unten. Sind die Rechtecke weiß, liegt keine signifikante Abweichung vor, d.&nbsp;h., die beobachteten und erwarteten Häufigkeiten liegen nah beieinander.
 
 Auf der rechten Seite des Mosaik-Plots befindet sich eine Legende, die zwei Informationen beinhaltet:
 

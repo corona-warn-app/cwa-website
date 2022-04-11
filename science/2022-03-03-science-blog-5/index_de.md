@@ -259,7 +259,7 @@ Freiwillige Datenspende (Privacy-Preserving-Analytics (PPA))
 1.14
 </td>
 <td style="text-align:left;width: 11cm; ">
-Erweiterung des Kontakt-Tagebuchs (u.a. Pop-Up-Menü), Erweiterung der freiwilligen Datenspende (neue Datenpunkte)
+Erweiterung des Kontakt-Tagebuchs (u.&nbsp;a. Pop-Up-Menü), Erweiterung der freiwilligen Datenspende (neue Datenpunkte)
 </td>
 </tr>
 <tr>
