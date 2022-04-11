@@ -16,9 +16,13 @@ import './pdf-font-extrabold'
 const backgroundImage = new Image();
 backgroundImage.src = '/assets/img/pt-poster-1.0.0.png';
 
+const backgroundImageWithText = new Image();
+backgroundImageWithText.src = '/assets/img/pt-poster-withtext-1.0.0.png';
+
 const PDF = {single: null, multi: null};
 
 const QR_LIST = [];
+const QR_LIST_PREVIEW = [];
 
 function isValidDate(date) {
   return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
@@ -94,7 +98,20 @@ document.getElementById('generateQR').addEventListener('click', async function (
     let enddate = document.getElementById('endtime-date').value.split('.').reverse().join('-');
     let endtime = document.getElementById('endtime-time').value;
     
-    const qr = await GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+    let canvas = document.getElementById('eventqrcode');
+    let ctx = canvas.getContext('2d');
+
+    const qrPreview = await GenerateQRCode(true, grid, description.replace(/\s+/g, ' '), address.replace(/\s+/g, ' '), defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+
+    const qr = await GenerateQRCode(false, grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+
+    ctx.width = 1654;
+    ctx.height = 2339;
+    canvas.width = 1654;
+    canvas.height = 2339;
+    canvas.style.maxWidth = "100%";
+
+    ctx.drawImage(qrPreview, 0, 0);
 
     PrintLayout(qr)
 
@@ -102,7 +119,13 @@ document.getElementById('generateQR').addEventListener('click', async function (
     // Active download button
     document.getElementById('downloadCode').disabled = false;
     document.getElementById('eventplaceholder').classList.add('d-none');
-    $("#eventqrcode").attr("src", PDF.single.output('datauristring')).removeClass("d-none");
+     
+    //$("#eventqrcode").attr("src", PDF.single.output('datauristring')).removeClass("d-none");
+
+    canvas.classList.remove('d-none');   
+    // Disable ceate button until qrform changes
+    document.getElementById('generateQR').disabled = true;
+
   }
 });
 
@@ -124,16 +147,18 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
           GenerateMultiQRCode(json).then(function (status) {
             if (status) {             
               printQRsOnPage().then(function (data) {
-                let info = document.getElementById("qrsGeneratedInfo");
-                let text = info.textContent;
-                text = text.replace('#', data.pages);
-                text = text.replace('$', data.totalQR);
-                info.textContent = text;
-                info.classList.remove('d-none');
+                //let info = document.getElementById("qrsGeneratedInfo");
+                //let text = info.textContent;
+                //text = text.replace('#', data.pages);
+                //text = text.replace('$', data.totalQR);
+                //info.textContent = text;
+                //info.classList.remove('d-none');
 
                 document.getElementById("modal").classList.add('d-none');
                 document.getElementById('generateMultiQR').disabled = false;
-                $("#multieventqrcode").attr("src", PDF.multi.output('datauristring')).removeClass("d-none");
+                printPages(data)
+
+                //$("#multieventqrcode").attr("src", PDF.multi.output('datauristring')).removeClass("d-none");
               });
             }              
           });
@@ -366,7 +391,7 @@ function checkCSVHeaders(json) {
 }
 
 //Return canvas with QR code and text
-async function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
+async function GenerateQRCode(isPreview, grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
   return new Promise((resolve) => {
   try {
     let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
@@ -429,7 +454,9 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
       let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
       let qr = document.createElement("canvas");
       let canvas = document.createElement("canvas");
+      let canvasPreview = document.createElement("canvas");
       let ctx = canvas.getContext('2d');
+      let ctxPreview = canvasPreview.getContext('2d');
       QRCode.toCanvas(qr, 'https://e.coronawarn.app?v=1#' + qrContent, {
         margin: 0,
         width: 1100
@@ -444,10 +471,40 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
         canvas.width = 1654;
         canvas.height = 2339;
         canvas.style.maxWidth = "100%"
-        ctx.drawImage(backgroundImage, 0, 0);
+        if(isPreview) {
+          ctx.drawImage(backgroundImageWithText, 0, 0);
+        } else {
+          ctx.drawImage(backgroundImage, 0, 0);
+        }
         ctx.drawImage(qr, 275, 230);
-        if(list) QR_LIST.push({QR: canvas, description: description, address: address})
-        else resolve(canvas);
+
+        ctxPreview.width = 1654;
+        ctxPreview.height = 2339;
+        canvasPreview.width = 1654;
+        canvasPreview.height = 2339;
+        canvasPreview.style.maxWidth = "100%"
+        ctxPreview.drawImage(backgroundImageWithText, 0, 0);
+        ctxPreview.drawImage(qr, 275, 230);
+
+        let fontSize = (30+parseInt(col))*2;
+        ctxPreview.font = fontSize+"px sans-serif";
+        ctxPreview.fillStyle = "black";
+        ctxPreview.fillText(description, 225, 1460);
+        ctxPreview.fillText(address, 225, 1460 + 50 + (fontSize/2));
+
+        if(isPreview) {
+          ctx.font = fontSize+"px sans-serif";
+          ctx.fillStyle = "black";
+          ctx.fillText(description, 225, 1460);
+          ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
+        }
+
+        if(list) {
+          QR_LIST.push({QR: canvas, description: description, address: address});
+          QR_LIST_PREVIEW.push(canvasPreview);
+        } else {
+          resolve(canvas);
+        } 
       });
     } else {
       resolve(false);
@@ -459,6 +516,8 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
 }
 
 function PrintLayout(QR) {
+  console.log('PrintLayout', QR);
+
   let title = ["CHECKEN SIE EIN.", "STOPPEN SIE DAS VIRUS."]
   let body = ["Nutzen Sie die Corona-Warn-App! Scannen Sie den QR-Code und tragen", "Sie aktiv dazu bei, mögliche Infektionsketten schnell und effektiv", "zu durchbrechen."]
 
@@ -570,7 +629,7 @@ async function GenerateMultiQRCode(data) {
     let grid = document.getElementById("pageTemplate").value
     QR_LIST.splice(0, QR_LIST.length);
     for (const qr of data) {
-      GenerateQRCode(grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
+      GenerateQRCode(false, grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
     if (QR_LIST.length !== data.length) {
       document.getElementById('generateMultiQR').disabled = false;
@@ -593,6 +652,10 @@ async function printQRsOnPage() {
     row = grid[1];
     let pageCapacity = row * col;
     let pagesNeeded = Math.ceil(QR_LIST.length / pageCapacity);
+    let pages = [];
+
+    let container = document.getElementsByClassName("slick-track")[0];
+    container.innerHTML = '';
 
     let portrait = col == row;
     const doc = new jsPDF({
@@ -675,12 +738,56 @@ async function printQRsOnPage() {
         lineHeightBody = 1.2;
         break;
     }
-    // //Start to print depend of the layout selected
+
+    // website preview
     let i = 0;
+    for (let pagem = 0; pagem < pagesNeeded; pagem++) {
+      if (i < QR_LIST.length) {
+        let canvas = document.createElement("canvas");
+        canvas.className = "eventqr-preview";
+        let ctx = canvas.getContext('2d');
+        let resolution = Math.sqrt(col * row) / 2;
+        let width = 1654 * resolution;
+        let height = 2339 * resolution;
+        if (col == row) {
+          ctx.width = width;
+          ctx.height = height;
+          canvas.width = width;
+          canvas.height = height;
+          canvas.style.maxWidth = "100%";
+        } else {
+          ctx.width = height;
+          ctx.height = width;
+          canvas.width = height;
+          canvas.height = width;
+          canvas.style.maxWidth = "100%";
+        }
+
+        for (let r = 0; r < row; r++) {
+          for (let c = 0; c < col; c++) {
+            if (i < QR_LIST.length) {
+              ctx.drawImage(QR_LIST_PREVIEW[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
+              i++;
+            }
+          }
+        }
+
+        if (col != row) {
+          ctx.translate(-canvas.width / 2, -canvas.height / 2);
+          ctx.rotate(-Math.PI / 2);
+        }
+        pages.push(canvas)
+      }
+    }
+
+
+    // //Start to print depend of the layout selected
+    i = 0;
     for (let pagem = 0; pagem < pagesNeeded; pagem++) {
       if (i < QR_LIST.length) {
         for (let r = 0; r < row; r++) {
           for (let c = 0; c < col; c++) {
+              // new accessibility pdf code
               doc.addImage(QR_LIST[i].QR, 'PNG', (width / col) * c, (height / row) * r, width / col, height / row, "", 'FAST');
 
               doc.setFontSize(headFontSize)
@@ -712,7 +819,71 @@ async function printQRsOnPage() {
     document.getElementById('downloadMultiCode').disabled = false;
     document.getElementById('multieventplaceholder').classList.add('d-none');
 
-    let data = { "pages": pagesNeeded, "totalQR": QR_LIST.length }
+    let data = { "pages": pages, "container": container, "totalQR": QR_LIST.length }
+    
     return resolve(data);
   });
+}
+
+async function printPages(data) {
+  data.pages.forEach((printed) => {
+    $('.qr-slider').slick('slickAdd', printed);
+  })
+
+  let info = document.getElementById("qrsGeneratedInfo");
+  let text = info.textContent;
+  text = text.replace('#', data.pages.length);
+  text = text.replace('$', data.totalQR);
+  info.textContent = text;
+  let container = document.getElementById("qrContainer")
+  container.classList.remove('d-none');
+  info.classList.remove('d-none');
+
+  let infoContainer = document.getElementById("qrsGeneratedInfoContainer");
+  if (data.pages.length == 1) {
+    infoContainer.classList.remove('mt-4');
+    container.classList.remove('slick-dotted');
+  }
+  else {
+    infoContainer.classList.add('mt-4');
+    container.classList.add('slick-dotted');
+
+    let slider = $(".qr-slider");
+
+    function loadSliderDotClasses(stickSlider) {
+      let dot = stickSlider[0].querySelector(".slick-dots li.slick-active"),
+        dotsLength = stickSlider[0].querySelectorAll(".slick-dots li").length,
+        dotSize1 = "dot-size-1",
+        dotSize2 = "dot-size-2",
+        dotSize3 = "dot-size-3";
+        let activeIndex = Array.from(dot.parentNode.children).indexOf(dot);
+        stickSlider[0].querySelectorAll(".slick-dots li").forEach((li, index) => {
+          li.classList.remove(dotSize1, dotSize2, dotSize3, "show");
+        });
+        stickSlider[0].querySelectorAll(".slick-dots li").forEach((li, index) => {
+          let difference = activeIndex - index;
+          if (difference === -2 && dotsLength + difference > -1) {
+              li.classList.add(dotSize2, "show");
+          }
+          if (difference === -1 && dotsLength + difference > -1) {
+              li.classList.add(dotSize3, "show");
+          }
+          if (difference === 1 && dotsLength - difference < dotsLength) {
+              li.classList.add(dotSize3, "show");
+          }
+          if (difference === 2 && dotsLength - difference < dotsLength) {
+              li.classList.add(dotSize2, "show");
+          }
+        });
+      dot.classList.add("show");
+    }
+
+    loadSliderDotClasses(slider);
+
+    slider.find(".slick-arrow").on("click", function (e) {
+      loadSliderDotClasses(slider);
+    });
+  }
+  document.getElementById("modal").classList.add('d-none');
+  document.getElementById('generateMultiQR').disabled = true;
 }

@@ -251,7 +251,7 @@
               {{#if lang_de}}
               <img src="/assets/img/pt-poster-1.0.0-placeholder.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" alt="Vorschau des QR Codes"/>
               {{/if}}
-              <embed id="eventqrcode" src="" type="application/pdf" class="d-none eventqr-preview" />
+              <canvas id="eventqrcode" class="d-none eventqr-preview"></canvas>
               <div class="row mt-4">
                 <div class="col-12">
                   <button id="printCode" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.print}}</button>
@@ -332,7 +332,10 @@
               {{#if lang_de}}
               <img src="/assets/img/pt-poster-1.0.0-placeholder.png" id="multieventplaceholder" class="img img-fluid w-100 eventqr-preview" alt="Vorschau des QR Codes"/>
               {{/if}}
-              <embed id="multieventqrcode" src="" type="application/pdf" class="d-none multieventqr-preview" />            
+              <canvas id="multieventqrcode" class="d-none multieventqr-preview"></canvas>
+
+              <div id="qrContainer" class="qr-slider"></div>
+            
               <div id="qrsGeneratedInfoContainer" class="row mt-4">
                 <div class="col-12">
                   <p id="qrsGeneratedInfo" class="d-none text-center">{{page-contents.section-main.qrsGeneratedInfo}}</p>
