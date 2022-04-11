@@ -783,31 +783,31 @@ async function printQRsOnPage() {
 
     // //Start to print depend of the layout selected
     i = 0;
-    for (let pagem = 0; pagem < pagesNeeded; pagem++) {
-      if (i < QR_LIST.length) {
-        for (let r = 0; r < row; r++) {
-          for (let c = 0; c < col; c++) {
-              // new accessibility pdf code
-              doc.addImage(QR_LIST[i].QR, 'PNG', (width / col) * c, (height / row) * r, width / col, height / row, "", 'FAST');
+    for (let pagem = 0; pagem < pagesNeeded; pagem++) { 
+      for (let r = 0; r < row; r++) {
+        for (let c = 0; c < col; c++) {
+          if (i < QR_LIST.length) {
+            // new accessibility pdf code
+            doc.addImage(QR_LIST[i].QR, 'PNG', (width / col) * c, (height / row) * r, width / col, height / row, "", 'FAST');
 
-              doc.setFontSize(headFontSize)
-              doc.setFont("helvetica");
-              doc.setTextColor('#000000');
-              doc.setLineHeightFactor(1);
-              doc.text([QR_LIST[i].description, QR_LIST[i].address], ((width/col) * c) + (width / col) * 0.1395, ((height/row) * r) + (height / row) * 0.6242)
+            doc.setFontSize(headFontSize)
+            doc.setFont("helvetica");
+            doc.setTextColor('#000000');
+            doc.setLineHeightFactor(1);
+            doc.text([QR_LIST[i].description, QR_LIST[i].address], ((width/col) * c) + (width / col) * 0.1395, ((height/row) * r) + (height / row) * 0.6242)
 
-              doc.setFontSize(titleFontSize);
-              doc.setFont("futura-condensed-extrabold_bigfontsite.com");
-              doc.setTextColor('#007099');
-              doc.setLineHeightFactor(lineHeightTitle);
-              doc.text(title, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.70);
+            doc.setFontSize(titleFontSize);
+            doc.setFont("futura-condensed-extrabold_bigfontsite.com");
+            doc.setTextColor('#007099');
+            doc.setLineHeightFactor(lineHeightTitle);
+            doc.text(title, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.70);
 
-              doc.setFontSize(bodyFontSize);
-              doc.setFont("futura-condensedmedium_bigfontsite.com");
-              doc.setTextColor('#404040');
-              doc.setLineHeightFactor(lineHeightBody);
-              doc.text(body, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.785);
-              i++;
+            doc.setFontSize(bodyFontSize);
+            doc.setFont("futura-condensedmedium_bigfontsite.com");
+            doc.setTextColor('#404040');
+            doc.setLineHeightFactor(lineHeightBody);
+            doc.text(body, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.785);
+            i++;
           }
         }
       }
