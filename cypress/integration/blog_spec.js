@@ -1,7 +1,7 @@
 describe('Blog', () => {
   const firstBlogEntry = () => cy.get('.blog-entry').first();
   const clickLanguage = (lng) => cy.get('.nav-item.lang a').contains(lng).click()
-  const pageName = "2099-01-01-visual-test-page";
+  //const pageName = "2099-01-01-visual-test-page";
 
   /*it('slider overview and go to blog detail page', () => {
     cy.visit('/en/')
@@ -12,7 +12,8 @@ describe('Blog', () => {
 
     cy.expectPathToBe('/en/blog/' + pageName)
   })
-*/
+
+  
   it('blog language switching', () => {
     cy.visit('/en/blog/' + pageName)
     clickLanguage('DE')
@@ -28,6 +29,7 @@ describe('Blog', () => {
     clickLanguage('EN');
     cy.expectPathToBe('/en/blog/' + pageName)
   })
+*/
 
   it('news archive', () => {
     cy.visit('/en/blog/archive')
@@ -40,12 +42,12 @@ describe('Blog', () => {
     cy.get('a').contains('Zurück zum Blog').click()
     cy.expectPathToBe('/de/blog/')
 
-    firstBlogEntry().find('.headline').contains('Visual Test')
-    firstBlogEntry().find('a').contains('Weiterlesen').click()
-    cy.expectPathToBe('/de/blog/'+ pageName)
+    // firstBlogEntry().find('.headline').contains('Visual Test')
+    // firstBlogEntry().find('a').contains('Weiterlesen').click()
+    // cy.expectPathToBe('/de/blog/'+ pageName)
 
-    clickLanguage('EN')
-    cy.expectPathToBe('/en/blog/' + pageName)
+    // clickLanguage('EN')
+    // cy.expectPathToBe('/en/blog/' + pageName)
   })
 
 })
