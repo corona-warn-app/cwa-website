@@ -9,7 +9,7 @@ layout: blog
 
 *Aktualisiert am 10.01.2022 um 13:30 Uhr*
 
-Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App (CWA) veröffentlicht.** Mit dem Update kann die CWA zukünftig sogenannte **Onlineverifikationsdienste** unterstützen. Onlineverifikationsdienste sollen Nutzer\*innen einen datensparsamen Weg bieten, schon während der Buchung von Dienstleistungen (z.B. Tickets) den Nachweis zu erbringen, dass sie geimpft, genesen oder negativ getestet sind.  
+Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App (CWA) veröffentlicht.** Mit dem Update kann die CWA zukünftig sogenannte **Onlineverifikationsdienste** unterstützen. Onlineverifikationsdienste sollen Nutzer\*innen einen datensparsamen Weg bieten, schon während der Buchung von Dienstleistungen (z.&nbsp;B. Tickets) den Nachweis zu erbringen, dass sie geimpft, genesen oder negativ getestet sind.  
 
 **Wichtiges Update vom 10.01.22:** Bereits seit Oktober 2021 liegen die europaweit gültigen Anforderungen an Onlineverifikationsdienste vor. In Deutschland ist momentan **noch kein Anbieter eines Onlineverifikationsdienstes zugelassen** worden. Derzeit erfolgen Tests, deren Ergebnisse zunächst abgewartet werden. Erst nach einer Auswertung dieser Tests und nach erfolgter Beratung durch den Bundesbeauftragten für den Datenschutz und die Informationsfreiheit (BfDI), werden  Onlineverifikationsdienste in der Praxis verfügbar sein.  Mit Version 2.15 ist die CWA aber bereit, entsprechende Verifikationsdienste zu unterstützen, sobald Anbieter eines solchen Dienstes zugelassen sind. 
 
@@ -33,7 +33,7 @@ Sollte sie die Tickets mit dem Smartphone buchen, kann sie einen Screenshot des 
 <br></br>
 <center> 
 <img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center" width=250> <img src="./ticket-validierung(13).png" title="Scannen des QR-Codes" alt="Scannen des QR-Codes" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Links: universeller QR-Code-Scanner, Rechts: Möglichkeit, QR-Code von einem Foto (z.B. Screenshot) über den QR-Code-Scanner zu importieren</em></figcaption>
+<figcaption aria-hidden="true"><em>Links: universeller QR-Code-Scanner, Rechts: Möglichkeit, QR-Code von einem Foto (z.&nbsp;B. Screenshot) über den QR-Code-Scanner zu importieren</em></figcaption>
 </center>
 <br></br>
 
