@@ -800,71 +800,9 @@
                                 "anchor": "val_service_basics",
                                 "active": false,
                                 "textblock": [
+                                    "<b>UPDATE April 12, 2022</b><br/> The Europe-wide requirements for online verification services have already been in place since October 2021. In Germany, <b>no provider of an online verification service has been approved</b>. With version 2.15, however, the CWA is ready to support corresponding verification services.<hr/>",
                                     "<b>What is a DCC validation service? </b>",
-                                    "Companies must comply with legal requirements to protect the health of employees and customers. In the pandemic, they therefore need reliable access management for business premises, factory halls, aircraft, trams, hotels and restaurants or events for instance. They need to be able to verify the authenticity of Digital COVID Certificates (DCCs) quickly and easily. This is served by a Validation Service.  The Federal Ministry of Health (Bundesministerium für Gesundheit, BMG) has decided to enable several validation services after appropriate verification.",
-                                    "<b>When does a DCC validation service bring advantages over the certificate check with the CovPassCheck-App, for example?</b>",
-                                    "The advantage can be seen, for example, in the purchase of an event ticket. If the buyer requires a valid certificate for the event visit, they can carry out the certificate check immediately upon purchase. The certificate check at the event location is omitted. This saves waiting times, avoids long queues at the entrance control and ultimately contributes to reducing the risk of infection. If the service is accessed directly from the Corona-Warn-App or, in the future, from the CovPass-App, it makes it possible to validate the DCC without having to upload it to the ticket provider. Thus, the service contributes to the most data-saving use of the DCCs.",
-                                    "<b>How does a DCC validation service work?</b>",
-                                    "Via an interface and a secure connection, the Corona-Warn-App and in the future also the CovPass-App use encrypted communication with a validation service. This checks the certificate for validity and only transmits the result of the check (not the certificate itself) back to the buyer and the event organizer. The latter authorizes the purchase of the ticket after successful verification. This allows the customer to successfully complete the purchase.",
-                                    "The check is technically similar to the procedure of the CovPassCheck-App. Only that the check does not run on the check app, but on a validation server. The DCC validation service deletes the personal data for a validation process effectively and immediately after each verification process completes.",
-                                    "If the check fails, the validation service informs the buyer of the reason. The event organizer does not receive this information. However, they are informed that the examination was not successful.",
-                                    "<b>Where does the validation process take place?</b>",
-                                    "On a validation server operated by a strictly ISO 27001 certified organization.",
-                                    "<b>Does the DCC validation server store personal data?</b>",
-                                    "No. The check itself takes place on-the-fly in the memory of the validation service server. The memory areas involved are automatically cleaned up. Also the log files involved do not store any personal data or information about the certificates. For billing purposes, the technology only documents that a check has been carried out for the ticket provider. Again, no personal data is processed. The only remaining storage location of a certificate is the user's smartphone.",
-                                    "<b>Is the documentation of the validation service publicly available? </b>",
-                                    "For validation services to be interoperable throughout Europe, the EU has published the document <a href='https://ec.europa.eu/health/sites/health/files/ehealth/docs/covid-certificate_traveller-onlinebooking_en.pdf' target='_blank' rel='noopener noreferrer'>Guidelines on the use of Digital Covid Certificates in traveller and online booking scenarios</a> which specifies the software architecture and the requirements.",
-                                    "<b>Is the validation service open source?</b>",
-                                    "The EU has commissioned a reference implementation. This can be used by institutions and companies that want to operate a validation service themselves. The source code is publicly available on <a href='https://github.com/eu-digital-green-certificates/dgca-validation-service' target='_blank' rel='noopener noreferrer'>GitHub: EU Digital COVID Certificate Validation Service</a>.",
-                                    "<b>What does data protection look like for the DCC validation service?</b>",
-                                    "The providers of validation services must comply with the provisions of the General Data Protection Regulation (GDPR).",
-                                    "<b>Is the DCC validation service a new feature of the Corona-Warn-App?</b>",
-                                    "The DCC validation service is not a new app feature. With CWA version 2.15, only the technical possibility was created to access a validation service for checking DCCs as part of booking processes.",
-                                    "<b>Is the use of a DCC validation service voluntary?</b>",
-                                    "Yes. In the Corona-Warn-App and in future also in the CovPass-App, a user explicitly declares their consent before calling up the validation service. Just as with the access check, for example when entering a restaurant, the user decides for themself whether they want to prove a certificate for verification purposes or not.",
-                                    "<b>Is there an approval process for DCC validation service providers?</b>",
-                                    "Interested companies can go through a test procedure at the BMG. The procedure is open to all providers.",
-                                    "<b>Which companies already offer a DCC validation service?</b>",
-                                    "The first provider is T-Systems. The model is deliberately designed to be open to the market and allows several providers. The verification of certificates makes an important contribution to the fight against the pandemic. With competition, we want to support the fastest possible dissemination of validation services.",
-                                    "Currently, access to the T-Systems validation service from the Corona-Warn-App is being actively tested in preparation for productive use for customers of the validation service (e.g., event organizers, companies).",
-                                    "<b>Which customers are already using a DCC validation service?</b>",
-                                    "Customers or providers will publish this information themselves, independently.",
-                                    "<hr/>",
-                                    "See also the following FAQ-articles:",
-                                    "<ul>",
-                                    "<li><a href='#val_service_no_valid_dcc' target='_blank'>Why do I get the message that there is no suitable certificate?</a></li>",
-                                    "<li><a href='#val_service_result' target='_blank'>Why is my certificate not verifiable or not recognized?</a></li>",
-                                    "</ul>"
-
-                                ]
-                            },
-                            {
-                                "title": "Why do I get the message that there is no suitable certificate?",
-                                "anchor": "val_service_no_valid_dcc",
-                                "active": false,
-                                "textblock": [
-                                    "The app checks whether your certificates meet the requirements of the booking system. Various parameters are checked. First, the type of your certificate must meet the requirements of the booking system. To do this, find out about the accepted certificates from your ticket provider, add the appropriate certificates in the app if you have not already done so, and make sure that your certificates are valid.",
-                                    "<b>What should you be aware of?</b>",
-                                    "You should make sure that the name shown in the certificate you want to use for verification corresponds exactly to the name you have specified in the booking system. If this is not the case, it is not possible to select the corresponding certificate in the Corona-Warn-App. For example, if both your first and middle names are shown in your certificate, you should also specify both names when booking the ticket. If you only enter one name, the Corona-Warn-App cannot recognize that it is the same person. If your certificate is no longer valid or contains spelling errors or a wrong date of birth, contact the issuer of the certificate to obtain a new certificate. If you have any other questions, please contact the ticket provider."
-                                ]
-                            },
-                            {
-                                "title": "Why is my certificate not verifiable or not recognized?",
-                                "anchor": "val_service_result",
-                                "active": false,
-                                "textblock": [
-                                    "<b>Not recognized</b>",
-                                    "If you receive the message 'Certificate not recognized' as the result of the validation check, then the certificate is technically valid but does not meet the requirements of the provider.",
-                                    "This can be due to several reasons. Possible reasons are, for example:",
-                                    "<ul>",
-                                    "<li>An antigen test is older than 48 hours and has therefore lost its validity</li>",
-                                    "<li>The certificate was not issued by a certified test center</li>",
-                                    "</ul>",
-                                    "<b>Certificate not verifiable</b>",
-                                    "If you receive the message 'Certificate not verifiable' as the result of the validation check, this may be for technical reasons. In this case, your certificate may be technically outdated or there may be a lack of data within the certificate that is needed for verification.",
-                                    "In this case you can contact the issuer of your certificate to obtain a new certificate.",
-                                    "<b>Successful exam</b>",
-                                    "The certificate has been successfully verified and meets the requirements of the provider."
+                                    "Companies must comply with legal requirements to protect the health of employees and customers. In the pandemic, they therefore need reliable access management for business premises, factory halls, aircraft, trams, hotels and restaurants or events for instance. They need to be able to verify the authenticity of Digital COVID Certificates (DCCs) quickly and easily. This is served by a Validation Service."
                                 ]
                             }
                         ]
