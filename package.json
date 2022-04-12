@@ -6,6 +6,7 @@
   "scripts": {
     "start-fast": "gulp --skip-compression",
     "start": "gulp",
+    "dev": "gulp --dev",
     "build": "gulp build --production",
     "cypress:open": "cypress open",
     "cypress:run:chrome": "cypress run --browser chrome --headed",
