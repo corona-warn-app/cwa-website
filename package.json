@@ -11,7 +11,6 @@
     "cypress:run:chrome": "cypress run --browser chrome --headed",
     "cypress:run:firefox": "cypress run --browser firefox --headed",
     "start-server": "gulp start-server",
-    "test:prepare": "./cypress/prepare.sh",
     "test:open:phase2": "start-server-and-test start-server http://localhost:8000 cypress:open",
     "test:open": "run-s build test:open:phase2",
     "test": "npm run test:chrome",
