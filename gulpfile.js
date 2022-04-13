@@ -46,6 +46,8 @@ function isCI() {
   return !!process.env.CI;
 }
 
+console.log('PRODUCTION: ', PRODUCTION);
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
