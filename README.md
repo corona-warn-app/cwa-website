@@ -41,7 +41,7 @@ npm start
 
 - `npm install` installs the necessary packages to build, display and test the website on your local system. You only need to run this once or if the packages defined in [package.json](package.json) are changed.
 
-- The command `npm start` triggers the commands `npm run build` followed by `npm run start-server` described below and which can be used individually if desired. However, assets like Javascript and CSS will be compressed and minified using that method. If you want to debug you can start the local server using the command `npm run dev`.
+- The command `npm start` triggers the commands `npm run build` followed by `npm run start-server` described below and which can be used individually if desired. If you want to debug you can build the web and start the local server using the command `npm run dev` as an alternative to `npm start`.
 
 #### Build
 
