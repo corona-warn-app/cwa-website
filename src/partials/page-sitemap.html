@@ -6,7 +6,11 @@
                 <div class="col ">
                     {{> headline-component page-contents.section-main.headline}}
                     {{#each page-contents.categories}}
+                    {{#if url}}
+                    <a href="{{url}}">{{title}}</a>:
+                    {{else}}
                     <p>{{title}}:</p>
+                    {{/if}}
                     <ul>
                         {{#each children}}
                         <li>
@@ -14,7 +18,7 @@
                         </li>
                         {{/each}}
                     </ul>
-                    <br/>
+                    <br />
                     {{/each}}
                 </div>
             </div>
