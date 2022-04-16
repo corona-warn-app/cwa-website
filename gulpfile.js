@@ -387,7 +387,7 @@ function copyBlog(lang, tmpFilePath) {
     let searchable_blogentries = {}
     data.forEach((blogentry) => {
         let searchEntry = blogentry.title + " " + blogentry.pageDescription + " " + blogentry.htmlContent;
-        searchable_blogentries[blogentry.title] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ').replace(/\s+/g, " ");
+        searchable_blogentries[blogentry.slug] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ').replace(/\s+/g, " ");
     });
     return searchable_blogentries;
   }))

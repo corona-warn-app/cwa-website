@@ -48,7 +48,7 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 
   return `
 
-  <div class="blog-entry" id="${blog.title}">
+  <div class="blog-entry" id="${blog.slug}">
     ${headline}
     <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}</span></div>
     ${content}
