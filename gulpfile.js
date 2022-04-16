@@ -43,6 +43,8 @@ function isCI() {
   return !!process.env.CI;
 }
 
+console.log('PRODUCTION: ', PRODUCTION);
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
@@ -64,7 +66,11 @@ gulp.task(
     build_sitemap,
     createFaqRedirects,
     replaceVersionNumbers,
+<<<<<<< HEAD
     deleteTmpFiles
+=======
+    AddEnglishSpecifier
+>>>>>>> master
   )
 );
 
@@ -520,12 +526,23 @@ function replaceVersionNumbers() {
     .pipe(replace('[ios.current-app-version]', '2.20.3'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.20.3'))
+    .pipe(replace('[android.current-app-version]', '2.20.4'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
 
+<<<<<<< HEAD
 function deleteTmpFiles(done) {
   rimraf("src/data/searchable_blogentries_de.json", done);
   rimraf("src/data/searchable_blogentries.json", done);
 }
+=======
+function AddEnglishSpecifier() {
+  const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'))
+  let task = gulp.src([PATHS.dist + "/**/*.html"]);
+  data.texts.forEach((value) => {
+      task = task.pipe(replace(' ' + value + ' ', `<span lang="en"> ${value} </span>`));
+  });
+  return task.pipe(gulp.dest(PATHS.dist))
+}
+>>>>>>> master

@@ -10,11 +10,19 @@ import $ from 'jquery';
 import 'slick-carousel';
 import lang_en from '../../data/eventregistration.json';
 import lang_de from '../../data/eventregistration_de.json';
+import './pdf-font-medium'
+import './pdf-font-extrabold'
 
 const backgroundImage = new Image();
 backgroundImage.src = '/assets/img/pt-poster-1.0.0.png';
 
+const backgroundImageWithText = new Image();
+backgroundImageWithText.src = '/assets/img/pt-poster-withtext-1.0.0.png';
+
+const PDF = {single: null, multi: null};
+
 const QR_LIST = [];
+const QR_LIST_PREVIEW = [];
 
 function isValidDate(date) {
   return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
@@ -89,28 +97,35 @@ document.getElementById('generateQR').addEventListener('click', async function (
     let starttime = document.getElementById('starttime-time').value;
     let enddate = document.getElementById('endtime-date').value.split('.').reverse().join('-');
     let endtime = document.getElementById('endtime-time').value;
-
+    
     let canvas = document.getElementById('eventqrcode');
     let ctx = canvas.getContext('2d');
-    
-    const qr = await GenerateQRCode(grid, description.replace(/\s+/g, ' '), address.replace(/\s+/g, ' '), defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+
+    const qrPreview = await GenerateQRCode(true, grid, description.replace(/\s+/g, ' '), address.replace(/\s+/g, ' '), defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+
+    const qr = await GenerateQRCode(false, grid, description, address, defaultcheckinlengthMinutes, locationtype, startdate, enddate, starttime, endtime, false, defaultcheckinlengthHours);
+
     ctx.width = 1654;
     ctx.height = 2339;
     canvas.width = 1654;
     canvas.height = 2339;
-    canvas.style.maxWidth = "100%"
+    canvas.style.maxWidth = "100%";
 
-    ctx.drawImage(qr, 0, 0);
+    ctx.drawImage(qrPreview, 0, 0);
 
-    PrintLayout()
+    PrintLayout(qr)
+
     document.getElementById('printCode').disabled = false;
     // Active download button
     document.getElementById('downloadCode').disabled = false;
     document.getElementById('eventplaceholder').classList.add('d-none');
-      
+     
+    //$("#eventqrcode").attr("src", PDF.single.output('datauristring')).removeClass("d-none");
+
     canvas.classList.remove('d-none');   
     // Disable ceate button until qrform changes
     document.getElementById('generateQR').disabled = true;
+
   }
 });
 
@@ -131,15 +146,25 @@ document.getElementById('generateMultiQR').addEventListener('click', function (e
         setTimeout(() => {          
           GenerateMultiQRCode(json).then(function (status) {
             if (status) {             
-              printQRsOnPage().then(function (pages) {
-                printPages(pages)
+              printQRsOnPage().then(function (data) {
+                //let info = document.getElementById("qrsGeneratedInfo");
+                //let text = info.textContent;
+                //text = text.replace('#', data.pages);
+                //text = text.replace('$', data.totalQR);
+                //info.textContent = text;
+                //info.classList.remove('d-none');
+
+                document.getElementById("modal").classList.add('d-none');
+                document.getElementById('generateMultiQR').disabled = false;
+                printPages(data)
+
+                //$("#multieventqrcode").attr("src", PDF.multi.output('datauristring')).removeClass("d-none");
               });
             }              
           });
         },100)
       }  
     });
-    document.getElementById('generateMultiQR').disabled = false;
   }
 });
 
@@ -150,26 +175,14 @@ document.getElementById('downloadCode').addEventListener('click', function (e) {
   let date = today.toISOString().slice(0, 10);
   let time = ("0" + today.getHours()).slice(-2) + "-" + ("0" + today.getMinutes()).slice(-2)
 
-  let grid = document.getElementById("pageLayout").value.split('x')
-  let portrait = grid[0] == grid[1];
-  const doc = new jsPDF({
-    orientation: portrait ? "portrait" : "landscape",
-  });
-  doc.addImage(document.getElementById('eventqrcode').toDataURL("image/png"), 'PNG', 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight(), "", 'FAST');
-  doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
+  PDF.single.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
 });
 
 document.getElementById('printCode').addEventListener('click', function (e) {
   e.preventDefault();
 
-  let grid = document.getElementById("pageLayout").value.split('x')
-  let portrait = grid[0] == grid[1];
-  const doc = new jsPDF({
-    orientation: portrait ? "portrait" : "landscape",
-  });
-  doc.addImage(document.getElementById('eventqrcode').toDataURL("image/png"), 'PNG', 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight(), "", 'FAST');
-  doc.autoPrint();
-  let blob = doc.output("blob");
+  PDF.single.autoPrint();
+  let blob = PDF.single.output("blob");
   window.open(URL.createObjectURL(blob), '_blank');
 
 });
@@ -178,23 +191,11 @@ document.getElementById('downloadMultiCode').addEventListener('click', function 
   e.preventDefault();
   document.getElementById("modal").classList.remove('d-none'); 
   setTimeout(() => {
-    let pages = document.querySelectorAll('#qrContainer canvas')
     let today = new Date();
     let date = today.toISOString().slice(0, 10);
     let time = ("0" + today.getHours()).slice(-2) + "-" + ("0" + today.getMinutes()).slice(-2)
 
-    let grid = document.getElementById("pageTemplate").value.split('x')
-    let portrait = grid[0] == grid[1];
-    const doc = new jsPDF({
-      orientation: portrait ? "portrait" : "landscape",
-    });
-    let width = doc.internal.pageSize.getWidth();
-    let height = doc.internal.pageSize.getHeight();
-    pages.forEach((page, index) => {
-      doc.addImage(page.toDataURL("image/jepg"), 'JEPG', 0, 0, width, height, "", 'FAST');
-      if (index < pages.length - 1) doc.addPage();
-    })
-    doc.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
+    PDF.multi.save(`Event_QR_Codes_Date_${date}_Time_${time}`);
     document.getElementById("modal").classList.add('d-none');
   }, 500)
 
@@ -203,20 +204,8 @@ document.getElementById('downloadMultiCode').addEventListener('click', function 
 document.getElementById('printMultiCode').addEventListener('click', function (e) {
   e.preventDefault();
 
-  let pages = document.querySelectorAll('#qrContainer canvas')
-  let grid = document.getElementById("pageTemplate").value.split('x')
-  let portrait = grid[0] == grid[1];
-  const doc = new jsPDF({
-    orientation: portrait ? "portrait" : "landscape",
-  });
-  let width = doc.internal.pageSize.getWidth();
-  let height = doc.internal.pageSize.getHeight();
-  pages.forEach((page, index) => {
-    doc.addImage(page.toDataURL("image/png"), 'PNG', 0, 0, width, height);
-    if (index < pages.length - 1) doc.addPage();
-  })
-  doc.autoPrint();
-  let blob = doc.output("blob");
+  PDF.multi.autoPrint();
+  let blob = PDF.multi.output("blob");
   window.open(URL.createObjectURL(blob), '_blank');
 });
 
@@ -402,7 +391,7 @@ function checkCSVHeaders(json) {
 }
 
 //Return canvas with QR code and text
-async function GenerateQRCode(grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
+async function GenerateQRCode(isPreview, grid, description, address, defaultcheckinlengthMinutes, locationType, startdate, enddate, starttime, endtime, list, defaultcheckinlengthHours=false) {
   return new Promise((resolve) => {
   try {
     let validCheckinLength = !Number.isNaN(parseInt(defaultcheckinlengthMinutes)) && defaultcheckinlengthMinutes !== "" && defaultcheckinlengthMinutes !== null;
@@ -465,7 +454,9 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
       let qrContent = encode(payload.serializeBinary()).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
       let qr = document.createElement("canvas");
       let canvas = document.createElement("canvas");
+      let canvasPreview = document.createElement("canvas");
       let ctx = canvas.getContext('2d');
+      let ctxPreview = canvasPreview.getContext('2d');
       QRCode.toCanvas(qr, 'https://e.coronawarn.app?v=1#' + qrContent, {
         margin: 0,
         width: 1100
@@ -480,15 +471,40 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
         canvas.width = 1654;
         canvas.height = 2339;
         canvas.style.maxWidth = "100%"
-        ctx.drawImage(backgroundImage, 0, 0);
+        if(isPreview) {
+          ctx.drawImage(backgroundImageWithText, 0, 0);
+        } else {
+          ctx.drawImage(backgroundImage, 0, 0);
+        }
         ctx.drawImage(qr, 275, 230);
+
+        ctxPreview.width = 1654;
+        ctxPreview.height = 2339;
+        canvasPreview.width = 1654;
+        canvasPreview.height = 2339;
+        canvasPreview.style.maxWidth = "100%"
+        ctxPreview.drawImage(backgroundImageWithText, 0, 0);
+        ctxPreview.drawImage(qr, 275, 230);
+
         let fontSize = (30+parseInt(col))*2;
-        ctx.font = fontSize+"px sans-serif";
-        ctx.fillStyle = "black";
-        ctx.fillText(description, 225, 1460);
-        ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
-        if(list) QR_LIST.push(canvas)
-        else resolve(canvas);
+        ctxPreview.font = fontSize+"px sans-serif";
+        ctxPreview.fillStyle = "black";
+        ctxPreview.fillText(description, 225, 1460);
+        ctxPreview.fillText(address, 225, 1460 + 50 + (fontSize/2));
+
+        if(isPreview) {
+          ctx.font = fontSize+"px sans-serif";
+          ctx.fillStyle = "black";
+          ctx.fillText(description, 225, 1460);
+          ctx.fillText(address, 225, 1460 + 50 + (fontSize/2));
+        }
+
+        if(list) {
+          QR_LIST.push({QR: canvas, description: description, address: address});
+          QR_LIST_PREVIEW.push(canvasPreview);
+        } else {
+          resolve(canvas);
+        } 
       });
     } else {
       resolve(false);
@@ -499,48 +515,111 @@ async function GenerateQRCode(grid, description, address, defaultcheckinlengthMi
   })
 }
 
-function PrintLayout() {
-  let img = new Image();
-  let qrCanvas = document.getElementById("eventqrcode");
-  img.src = qrCanvas.toDataURL();
+function PrintLayout(QR) {
+  let title = ["CHECKEN SIE EIN.", "STOPPEN SIE DAS VIRUS."]
+  let body = ["Nutzen Sie die Corona-Warn-App! Scannen Sie den QR-Code und tragen", "Sie aktiv dazu bei, mögliche Infektionsketten schnell und effektiv", "zu durchbrechen."]
 
-  img.onload = function () {
-    let grid = document.getElementById("pageLayout").value.split('x')
-    let col, row;
-    col = grid[0];
-    row = grid[1];
+  let description = document.getElementById('description').value;
+  let address = document.getElementById('address').value;
 
-    let canvas = document.getElementById("eventqrcode");
-    let ctx = canvas.getContext('2d');
 
-    let resolution = Math.sqrt(col * row) / 2;
-    let width = 1654 * resolution;
-    let height = 2339 * resolution;
-    if (col == row) {
-      ctx.width = width;
-      ctx.height = height;
-      canvas.width = width;
-      canvas.height = height;
-      canvas.style.maxWidth = "100%";
-    } else {
-      ctx.width = height;
-      ctx.height = width;
-      canvas.width = height;
-      canvas.height = width;
-      canvas.style.maxWidth = "100%";
-    }
+  let grid = document.getElementById("pageLayout").value.split('x')
+  let col, row;
+  col = parseInt(grid[0]);
+  row = parseInt(grid[1]);
 
-    for (let r = 0; r < row; r++) {
-      for (let c = 0; c < col; c++) {
-        ctx.drawImage(img, (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
-      }
-    }
+  let portrait = col == row;
+  const doc = new jsPDF({
+    orientation: portrait ? "portrait" : "landscape",
+  });
 
-    if (col != row) {
-      ctx.translate(-canvas.width / 2, -canvas.height / 2);
-      ctx.rotate(-Math.PI / 2);
+  let width = doc.internal.pageSize.getWidth();
+  let height = doc.internal.pageSize.getHeight();
+  let headFontSize, titleFontSize,bodyFontSize, lineHeightTitle, lineHeightBody;
+
+  switch(document.getElementById("pageLayout").value) {
+    case "1x1":
+      headFontSize = 14;
+      titleFontSize = 30;
+      bodyFontSize = 18.5;
+      lineHeightTitle = 1.3;
+      lineHeightBody = 1.2;
+      break;
+    case "2x1":
+      headFontSize = 13;
+      titleFontSize = 21.5;
+      bodyFontSize = 13.1;
+      lineHeightTitle = 1.3;
+      lineHeightBody = 1.2;
+      break;
+    case "2x2":
+      headFontSize = 10;
+      titleFontSize = 15.3;
+      bodyFontSize = 9.3;
+      lineHeightTitle = 1.2;
+      lineHeightBody = 1.1;
+      break;
+    case "3x3":
+      headFontSize = 6;
+      titleFontSize = 10;
+      bodyFontSize = 6.2;
+      lineHeightTitle = 1.3;
+      lineHeightBody = 1.2;
+      break;
+    case "4x2":
+      headFontSize = 6;
+      titleFontSize = 10.7;
+      bodyFontSize = 6.5;
+      lineHeightTitle = 1.3;
+      lineHeightBody = 1.2;
+      break;
+    case "4x4":
+      headFontSize = 5;
+      titleFontSize = 7.7;
+      bodyFontSize = 4.7;
+      lineHeightTitle = 1.2;
+      lineHeightBody = 1.2;
+      break;
+    case "5x5":
+      headFontSize = 4;
+      titleFontSize = 6;
+      bodyFontSize = 3.7;
+      lineHeightTitle = 1.3;
+      lineHeightBody = 1.1;
+      break;
+    case "6x3":
+      headFontSize = 5;
+      titleFontSize = 7.3;
+      bodyFontSize = 4.4;
+      lineHeightTitle = 1.2;
+      lineHeightBody = 1.2;
+      break;
+  }
+
+  for (let r = 0; r < row; r++) {
+    for (let c = 0; c < col; c++) {
+      doc.addImage(QR, 'PNG', (width / col) * c, (height / row) * r, width / col, height / row, "", 'FAST');
+
+      doc.setFontSize(headFontSize)
+      doc.setFont("helvetica");
+      doc.setTextColor('#000000');
+      doc.setLineHeightFactor(1);
+      doc.text([description, address], ((width/col) * c) + (width / col) * 0.1395, ((height/row) * r) + (height / row) * 0.6242)
+
+      doc.setFontSize(titleFontSize);
+      doc.setFont("futura-condensed-extrabold_bigfontsite.com");
+      doc.setTextColor('#007099');
+      doc.setLineHeightFactor(lineHeightTitle);
+      doc.text(title, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.70);
+
+      doc.setFontSize(bodyFontSize);
+      doc.setFont("futura-condensedmedium_bigfontsite.com");
+      doc.setTextColor('#404040');
+      doc.setLineHeightFactor(lineHeightBody);
+      doc.text(body, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.785);
     }
   }
+  PDF.single = doc;
 }
 
 async function GenerateMultiQRCode(data) {
@@ -548,7 +627,7 @@ async function GenerateMultiQRCode(data) {
     let grid = document.getElementById("pageTemplate").value
     QR_LIST.splice(0, QR_LIST.length);
     for (const qr of data) {
-      GenerateQRCode(grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
+      GenerateQRCode(false, grid, qr.description.replace(/\s+/g, ' '), qr.address.replace(/\s+/g, ' '), qr.defaultcheckinlengthinminutes, qr.type, qr.startdate, qr.enddate, qr.starttime, qr.endtime, true);
     }
     if (QR_LIST.length !== data.length) {
       document.getElementById('generateMultiQR').disabled = false;
@@ -562,6 +641,9 @@ async function GenerateMultiQRCode(data) {
 
 async function printQRsOnPage() {
   return new Promise((resolve) => {
+    let title = ["CHECKEN SIE EIN.", "STOPPEN SIE DAS VIRUS."]
+    let body = ["Nutzen Sie die Corona-Warn-App! Scannen Sie den QR-Code und tragen", "Sie aktiv dazu bei, mögliche Infektionsketten schnell und effektiv", "zu durchbrechen."]
+
     let grid = document.getElementById("pageTemplate").value.split('x')
     let col, row;
     col = grid[0];
@@ -572,6 +654,15 @@ async function printQRsOnPage() {
 
     let container = document.getElementsByClassName("slick-track")[0];
     container.innerHTML = '';
+
+    let portrait = col == row;
+    const doc = new jsPDF({
+      orientation: portrait ? "portrait" : "landscape",
+    });
+
+    let width = doc.internal.pageSize.getWidth();
+    let height = doc.internal.pageSize.getHeight();
+    let headFontSize, titleFontSize,bodyFontSize, lineHeightTitle, lineHeightBody;
 
     //Reset generated info under carousel
     let info = document.getElementById("qrsGeneratedInfo");
@@ -587,7 +678,66 @@ async function printQRsOnPage() {
         break;
     }
 
-    //Start to print depend of the layout selected
+    switch(document.getElementById("pageTemplate").value) {
+      case "1x1":
+        headFontSize = 14;
+        titleFontSize = 30;
+        bodyFontSize = 18.5;
+        lineHeightTitle = 1.3;
+        lineHeightBody = 1.2;
+        break;
+      case "2x1":
+        headFontSize = 13;
+        titleFontSize = 21.5;
+        bodyFontSize = 13.1;
+        lineHeightTitle = 1.3;
+        lineHeightBody = 1.2;
+        break;
+      case "2x2":
+        headFontSize = 10;
+        titleFontSize = 15.3;
+        bodyFontSize = 9.3;
+        lineHeightTitle = 1.2;
+        lineHeightBody = 1.1;
+        break;
+      case "3x3":
+        headFontSize = 6;
+        titleFontSize = 10;
+        bodyFontSize = 6.2;
+        lineHeightTitle = 1.3;
+        lineHeightBody = 1.2;
+        break;
+      case "4x2":
+        headFontSize = 6;
+        titleFontSize = 10.7;
+        bodyFontSize = 6.5;
+        lineHeightTitle = 1.3;
+        lineHeightBody = 1.2;
+        break;
+      case "4x4":
+        headFontSize = 5;
+        titleFontSize = 7.7;
+        bodyFontSize = 4.7;
+        lineHeightTitle = 1.2;
+        lineHeightBody = 1.2;
+        break;
+      case "5x5":
+        headFontSize = 4;
+        titleFontSize = 6;
+        bodyFontSize = 3.7;
+        lineHeightTitle = 1.3;
+        lineHeightBody = 1.1;
+        break;
+      case "6x3":
+        headFontSize = 5;
+        titleFontSize = 7.3;
+        bodyFontSize = 4.4;
+        lineHeightTitle = 1.2;
+        lineHeightBody = 1.2;
+        break;
+    }
+
+    // website preview
     let i = 0;
     for (let pagem = 0; pagem < pagesNeeded; pagem++) {
       if (i < QR_LIST.length) {
@@ -614,7 +764,7 @@ async function printQRsOnPage() {
         for (let r = 0; r < row; r++) {
           for (let c = 0; c < col; c++) {
             if (i < QR_LIST.length) {
-              ctx.drawImage(QR_LIST[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
+              ctx.drawImage(QR_LIST_PREVIEW[i], (canvas.width / col) * c, (canvas.height / row) * r, canvas.width / col, canvas.height / row);
               i++;
             }
           }
@@ -627,12 +777,48 @@ async function printQRsOnPage() {
         pages.push(canvas)
       }
     }
+
+
+    // //Start to print depend of the layout selected
+    i = 0;
+    for (let pagem = 0; pagem < pagesNeeded; pagem++) { 
+      for (let r = 0; r < row; r++) {
+        for (let c = 0; c < col; c++) {
+          if (i < QR_LIST.length) {
+            // new accessibility pdf code
+            doc.addImage(QR_LIST[i].QR, 'PNG', (width / col) * c, (height / row) * r, width / col, height / row, "", 'FAST');
+
+            doc.setFontSize(headFontSize)
+            doc.setFont("helvetica");
+            doc.setTextColor('#000000');
+            doc.setLineHeightFactor(1);
+            doc.text([QR_LIST[i].description, QR_LIST[i].address], ((width/col) * c) + (width / col) * 0.1395, ((height/row) * r) + (height / row) * 0.6242)
+
+            doc.setFontSize(titleFontSize);
+            doc.setFont("futura-condensed-extrabold_bigfontsite.com");
+            doc.setTextColor('#007099');
+            doc.setLineHeightFactor(lineHeightTitle);
+            doc.text(title, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.70);
+
+            doc.setFontSize(bodyFontSize);
+            doc.setFont("futura-condensedmedium_bigfontsite.com");
+            doc.setTextColor('#404040');
+            doc.setLineHeightFactor(lineHeightBody);
+            doc.text(body, ((width/col) * c) + (width / col) * 0.1295, ((height/row) * r) + (height / row) * 0.785);
+            i++;
+          }
+        }
+      }
+      if(pagem < pagesNeeded-1) doc.addPage();
+    }
+    PDF.multi = doc;
     document.getElementById('printMultiCode').disabled = false;
     // Active download button
     document.getElementById('downloadMultiCode').disabled = false;
     document.getElementById('multieventplaceholder').classList.add('d-none');
 
     let data = { "pages": pages, "container": container, "totalQR": QR_LIST.length }
+    
     return resolve(data);
   });
 }
