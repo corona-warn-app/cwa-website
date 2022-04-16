@@ -66,11 +66,8 @@ gulp.task(
     build_sitemap,
     createFaqRedirects,
     replaceVersionNumbers,
-<<<<<<< HEAD
-    deleteTmpFiles
-=======
+    deleteTmpFiles,
     AddEnglishSpecifier
->>>>>>> master
   )
 );
 
@@ -531,12 +528,11 @@ function replaceVersionNumbers() {
     .pipe(gulp.dest(PATHS.dist))
 }
 
-<<<<<<< HEAD
 function deleteTmpFiles(done) {
   rimraf("src/data/searchable_blogentries_de.json", done);
   rimraf("src/data/searchable_blogentries.json", done);
 }
-=======
+
 function AddEnglishSpecifier() {
   const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'))
   let task = gulp.src([PATHS.dist + "/**/*.html"]);
@@ -545,4 +541,3 @@ function AddEnglishSpecifier() {
   });
   return task.pipe(gulp.dest(PATHS.dist))
 }
->>>>>>> master
