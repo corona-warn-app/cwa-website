@@ -240,16 +240,15 @@ $(document).ready(function(){
         let glossaryList = 0;
         
         if(topicString === "glossary" || topicString === "all") {
+            glossaryList = countGlossaryResults(searchString);
             $(".word").each((index, word) => {
                 if($(word).text().toLowerCase().includes(searchString.toLowerCase())) {
                     $($($(word).parent().get(0)).parent().get(0)).appendTo(".glossary-result")
-                    glossaryList++;
                 }
             })
             $(".description").each((index, desc) => {
                 if($(desc).text().toLowerCase().includes(searchString.toLowerCase())) {
                     $($(desc).parent().get(0)).appendTo(".glossary-result")
-                    glossaryList++;
                 }
             })
             if(glossaryList > 0) $(".section-item a[href='#glossary']").addClass("active").parent().addClass("active");
