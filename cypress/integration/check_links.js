@@ -30,7 +30,9 @@ context("Check for broken links", () => {
                   '/de/simple-language/',
                   '/en/simple-language/',
                   '/de/sign-language/',
-                  '/en/sign-language/'
+                  '/en/sign-language/',
+                  '/de/sitemap/',
+                  '/en/sitemap/'
                 ]
     const allowlist = [
       'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999',
