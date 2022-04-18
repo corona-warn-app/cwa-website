@@ -544,9 +544,7 @@ $(document).ready(function(){
 
         //Clear search 
         $(".clean-search").on("click", function(e) {
-            $("#faq-search").val("");
-            $("#faq-topic").val("all").prop('selected', true);
-            $("#faq-search-form").submit()
+            location.href = location.origin + location.pathname
         });
 
         if(!window.matchMedia("(max-width: 767px)").matches) {
@@ -788,8 +786,13 @@ $(document).ready(function(){
 
             //Show all topics on click on FAQ
             $(".bread-faq").on("click", function(e) {
-                if(!search) $("#faq-topic").val("all").prop('selected', true);
-                $("#faq-search-form").submit()
+                
+                if(!search) {
+                    location.href = location.origin + location.pathname
+                }
+                else{
+                    $("#faq-search-form").submit()
+                }
             });
         } else {
             $(".section-head").on("click", function(e) {
