@@ -750,6 +750,8 @@ $(document).ready(function(){
                     if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).removeClass('d-none');
                     else $(section).addClass('d-none');
                 })            
+                location.href = $(this).find("a").attr("href");
+                $(window).scrollTop(0);
             });
 
             //Hide other sections on click section title
