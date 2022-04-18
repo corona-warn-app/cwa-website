@@ -1071,20 +1071,25 @@ $(document).ready(function(){
     }
 
     function URLRedirect(element, newTab=false){
-        if($(element).hasClass("faq-anchor") || $(element).attr("href") === "#top")
-            newTab = false;
+        if($(element).hasClass("faq-anchor") || $(element).attr("href") === "#top"){
+            newTab = false
+        }
+
         if(newTab){
-            if ($(element).attr("href").charAt(0) == "#")
-            window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
-            else
-            window.open($(element).attr('href').replace(window.location.search, ''), '_blank');
+            if ($(element).attr("href").charAt(0) == "#"){
+                window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
+            } else{
+                window.open($(element).attr('href').replace(window.location.search, ''), '_blank');
+            }
+
         } else {
-            if ($(element).attr("href").charAt(0) == "#"){   
+            if ($(element).attr("href").charAt(0) == "#" && !$(element).hasClass("faq-anchor")){  
                 $($($(element).attr("href")).parent()).addClass("active");
                 $(document).scrollTop( $(element).attr("href") === "#top" ?0 :$($(element).attr("href")).offset().top);
             }
-            else
+            else{
                 location.href = $(element).attr("href")
+            }
         }
     }
 
