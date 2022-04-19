@@ -7,8 +7,12 @@
             </div>
             <div class="row">
                 <div class="col">
-                {{> headline-small-component page-contents.section-main.website-headline}}
-                {{> text-component page-contents.section-main.website-content}}
+                    <h2 class="h3"><b>{{page-contents.section-main.website-headline.title}}</b></h2>
+                    <div>
+                        {{#each page-contents.section-main.website-content.textblock}}
+                        <p>{{{.}}}</p>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
             <div class="row">

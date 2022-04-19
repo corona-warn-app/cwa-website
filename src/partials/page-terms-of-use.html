@@ -11,8 +11,12 @@
             <div class="row">
                 <div class="col ">
                     <br/>
-                {{> headline-small-component page-contents.section-main.previous-headline}}
-                {{> text-component page-contents.section-main.previous-content}}
+                    <h2 class="h3"><b>{{page-contents.section-main.previous-headline.title}}</b></h2>
+                    <div>
+                        {{#each page-contents.section-main.previous-content.textblock}}
+                        <p>{{{.}}}</p>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
