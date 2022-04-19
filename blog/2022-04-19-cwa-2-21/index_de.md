@@ -17,7 +17,7 @@ Im Falle eines positiven Testergebnisses können sie andere CWA-Nutzer\*innen al
  
 Dieses Prinzip setzt voraus, dass das Smartphone bestenfalls immer dort ist, wo die Nutzer\*innen selbst auch sind. Würde man das positive Testergebnis einer Person teilen, die nicht dort war, wo das Smartphone war, kann es vorkommen, dass Nutzer*innen, die Kontakt zu der positiv getesteten Person hatten, möglicherweise nicht gewarnt werden.
  
-Um einen Test für ein Familienmitglieder zu registrieren, können Nutzer\*innen **unter „Sie lassen sich testen?“** auf **„QR-Code scannen“** tippen und scannen dann den QR-Code, den sie beim Testen oder bei der Terminbuchung erhalten haben. 
+Um einen Test für ein Familienmitglied zu registrieren, können Nutzer\*innen **unter „Sie lassen sich testen?“** auf **„QR-Code scannen“** tippen und scannen dann den QR-Code, den sie beim Testen oder bei der Terminbuchung erhalten haben. 
 
 Ab Version 2.21 wird ihnen nun im nächsten Schritt ein Fenster angezeigt, in dem sie auswählen können, ob sie den **Test für sich oder für andere registrieren** wollen. Zur besseren Unterscheidung, wem der Test zuzuordnen ist, weisen Nutzer\*innen diesem Test nun den Namen der Person zu, die getestet wurde. Dann können sie auch noch ein digitales Testzertifikat anfordern, das im Falle eines negativen Testergebnisses ausgestellt wird, sofern die Teststelle die Ausstellung der Testzertifikate unterstützt (mehr dazu [in diesem Blog](/de/blog/2021-06-24-cwa-version-2-4/)).
 
