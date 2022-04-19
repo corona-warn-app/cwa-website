@@ -6,7 +6,6 @@ import 'slick-carousel';
 window.jQuery = $;
 let expandStatus = true;
 let faq = {};
-
 const deviceType = () => {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -154,6 +153,7 @@ $(document).ready(function(){
         });
         $('.js-section-sticky').removeClass('hidden');
     };
+
 
     // function to update the faq list for a given searchString
     const updateResults = function(searchString, topicString, faq) {
@@ -359,6 +359,13 @@ $(document).ready(function(){
                 e.preventDefault();
                 URLRedirect($(this), true);
             });
+
+            //Redirect of FAQ question's links and glossary without search
+            $(".accordion-faq-item-content a, .tab-content a").on("click", function(e){
+                e.preventDefault();
+                URLRedirect($(this), !$("#topic_separator").hasClass("d-none") ?true:false);
+            });
+
         },700)
     }
 
@@ -440,7 +447,6 @@ $(document).ready(function(){
         const { hash } = window.location;
 
         if (hash) {
-
         // if we have a hash and that hash is not part of the faq list
         let hashVal = hash.substring(1)
         let locationHash = location.hash
@@ -545,9 +551,18 @@ $(document).ready(function(){
 
         //Clear search 
         $(".clean-search").on("click", function(e) {
-            $("#faq-search").val("");
-            $("#faq-topic").val("all").prop('selected', true);
-            $("#faq-search-form").submit()
+            location.href = location.origin + location.pathname
+        });
+
+         //Show all topics on click on FAQ
+         $(".bread-faq").on("click", function(e) {
+                
+            if(!search) {
+                location.href = location.origin + location.pathname
+            }
+            else{
+                $("#faq-search-form").submit()
+            }
         });
 
         if(!window.matchMedia("(max-width: 767px)").matches) {
@@ -751,15 +766,20 @@ $(document).ready(function(){
                     if("#"+$(section).attr("id") === $(this).find("a").attr("href")) $(section).removeClass('d-none');
                     else $(section).addClass('d-none');
                 })            
+                location.href = $(this).find("a").attr("href");
+                $(window).scrollTop(0);
             });
 
             //Hide other sections on click section title
             $(".section-title").on("click", function(e) {
                 e.preventDefault();
                 $(".section-item").each((index, section) => {
-                    if($(section).find("a").text() === $(this).text()) {
-                        $(section).click();
+                    if($(section).parent().hasClass($(this).parents(".section-container").prev("h1").attr("id"))) {
+                        if($(section).find("a").text() === $(this).text()) {
+                            $(section).click();
+                        }
                     }
+                    
                 })
             });
 
@@ -776,17 +796,6 @@ $(document).ready(function(){
                 }
             });
 
-            //Redirect of FAQ question's links and glossary without search
-            $(".accordion-faq-item-content a, .tab-content a").on("click", function(e){
-                e.preventDefault();
-                URLRedirect($(this), !$("#topic_separator").hasClass("d-none") ?true:false);
-            });
-
-            //Show all topics on click on FAQ
-            $(".bread-faq").on("click", function(e) {
-                if(!search) $("#faq-topic").val("all").prop('selected', true);
-                $("#faq-search-form").submit()
-            });
         } else {
             $(".section-head").on("click", function(e) {
                 //Open accordion on mobile
@@ -1064,20 +1073,26 @@ $(document).ready(function(){
     }
 
     function URLRedirect(element, newTab=false){
-        if($(element).hasClass("faq-anchor") || $(element).attr("href") === "#top")
-            newTab = false;
+        if($(element).hasClass("faq-anchor") || $(element).attr("href") === "#top"){
+            newTab = false
+        }
+
         if(newTab){
-            if ($(element).attr("href").charAt(0) == "#")
-            window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
-            else
-            window.open($(element).attr('href').replace(window.location.search, ''), '_blank');
+            
+            if ($(element).attr("href").charAt(0) == "#"){
+                window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
+            } else{
+                window.open($(element).attr('href').replace(window.location.search, ''), '_blank');
+            }
+
         } else {
-            if ($(element).attr("href").charAt(0) == "#"){   
+            if ($(element).attr("href").charAt(0) == "#" && !$(element).hasClass("faq-anchor")){  
                 $($($(element).attr("href")).parent()).addClass("active");
                 $(document).scrollTop( $(element).attr("href") === "#top" ?0 :$($(element).attr("href")).offset().top);
             }
-            else
+            else{
                 location.href = $(element).attr("href")
+            }
         }
     }
 
