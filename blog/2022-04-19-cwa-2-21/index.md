@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App Version 2.21 enables test administration for family
 page-description: "Corona-Warn-App Version 2.21 enables test administration for family members"
 page-name: cwa-2-21
 page-name_de: cwa-2-21
-author: Hanna Heine, 10 am
+author: CWA-Team, 10 am
 layout: blog
 ---
 

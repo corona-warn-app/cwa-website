@@ -3,7 +3,7 @@ page-title: "Corona-Warn-App Version 2.21 ermöglicht jetzt Testverwaltung für 
 page-description: "Corona-Warn-App Version 2.21 ermöglicht jetzt Testverwaltung für Familienmitglieder"
 page-name: cwa-2-21
 page-name_de: cwa-2-21
-author: Hanna Heine, 10 Uhr
+author: CWA-Team, 10 Uhr
 layout: blog
 ---
 
