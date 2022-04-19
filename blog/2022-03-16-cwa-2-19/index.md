@@ -25,6 +25,6 @@ With the update, this is no longer necessary, as the CWA can now break down the 
 
 The CWA will inform the users for whom the adjustment changes something in the grouping of their certificates. 
 
-Version 2.19, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona warning app will be available to users here within the next 48 hours. 
+Version 2.19, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona-Warn-App will be available to users here within the next 48 hours. 
 
 Up-to-date information on the status of the roll-out can be found on the **Twitter channel of [#coronawarnapp](https://twitter.com/coronawarnapp) (German only)**.
