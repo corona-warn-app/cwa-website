@@ -6,7 +6,6 @@ import 'slick-carousel';
 window.jQuery = $;
 let expandStatus = true;
 let faq = {};
-
 const deviceType = () => {
     const ua = navigator.userAgent;
     if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -154,6 +153,7 @@ $(document).ready(function(){
         });
         $('.js-section-sticky').removeClass('hidden');
     };
+
 
     // function to update the faq list for a given searchString
     const updateResults = function(searchString, topicString, faq) {
@@ -359,6 +359,13 @@ $(document).ready(function(){
                 e.preventDefault();
                 URLRedirect($(this), true);
             });
+
+            //Redirect of FAQ question's links and glossary without search
+            $(".accordion-faq-item-content a, .tab-content a").on("click", function(e){
+                e.preventDefault();
+                URLRedirect($(this), !$("#topic_separator").hasClass("d-none") ?true:false);
+            });
+
         },700)
     }
 
@@ -545,6 +552,17 @@ $(document).ready(function(){
         //Clear search 
         $(".clean-search").on("click", function(e) {
             location.href = location.origin + location.pathname
+        });
+
+         //Show all topics on click on FAQ
+         $(".bread-faq").on("click", function(e) {
+                
+            if(!search) {
+                location.href = location.origin + location.pathname
+            }
+            else{
+                $("#faq-search-form").submit()
+            }
         });
 
         if(!window.matchMedia("(max-width: 767px)").matches) {
@@ -778,22 +796,6 @@ $(document).ready(function(){
                 }
             });
 
-            //Redirect of FAQ question's links and glossary without search
-            $(".accordion-faq-item-content a, .tab-content a").on("click", function(e){
-                e.preventDefault();
-                URLRedirect($(this), !$("#topic_separator").hasClass("d-none") ?true:false);
-            });
-
-            //Show all topics on click on FAQ
-            $(".bread-faq").on("click", function(e) {
-                
-                if(!search) {
-                    location.href = location.origin + location.pathname
-                }
-                else{
-                    $("#faq-search-form").submit()
-                }
-            });
         } else {
             $(".section-head").on("click", function(e) {
                 //Open accordion on mobile
@@ -821,6 +823,7 @@ $(document).ready(function(){
         //Show search results count on the side menu
         $(".section-item").each((index, section) => {
             if(search) {
+                console.log("hola 1")
                 $(section).find(".count").append().text(' ...')
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
@@ -843,6 +846,7 @@ $(document).ready(function(){
                 }, 750);
             }
             else {
+                console.log("hola 2")
                 $(section).find(".count").remove()
             }
         })
@@ -1076,6 +1080,7 @@ $(document).ready(function(){
         }
 
         if(newTab){
+            
             if ($(element).attr("href").charAt(0) == "#"){
                 window.open(window.location.origin + window.location.pathname + $(element).attr('href').replace(window.location.search, ''), '_blank');
             } else{
