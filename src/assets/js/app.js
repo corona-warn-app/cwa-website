@@ -823,7 +823,6 @@ $(document).ready(function(){
         //Show search results count on the side menu
         $(".section-item").each((index, section) => {
             if(search) {
-                console.log("hola 1")
                 $(section).find(".count").append().text(' ...')
                 setTimeout(() => {
                     const item = $(section).find("a").attr('href')
@@ -846,7 +845,6 @@ $(document).ready(function(){
                 }, 750);
             }
             else {
-                console.log("hola 2")
                 $(section).find(".count").remove()
             }
         })
