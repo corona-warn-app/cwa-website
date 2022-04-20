@@ -538,8 +538,8 @@ $(document).ready(function(){
                         if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
                         else {
                             $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($($(element).children()[0]).find(".topic-title").text());
-                            $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
+                            $(".bread-topic").text($($(element).children()[0]).text());
+                            $(".bread-topic").attr("href", `#${$($(element).children()[0]).attr("id")}`);
                             $(".nav-aside").children().each((index, nav) => {
                                 if($(nav).hasClass(topic)) $(nav).addClass("active");
                             })
@@ -626,7 +626,7 @@ $(document).ready(function(){
                 if(!search) {
                     e.preventDefault();
                     $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
-                    $("#faq-search-form").submit()
+                    location.href = location.origin + location.pathname + "#" + ($(this).attr("class").split(/\s+/)[1])
                 } else {
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
                         $("#faq-container").addClass('d-none')
