@@ -492,6 +492,7 @@ $(document).ready(function(){
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
                 } else if($(section).length) {
                     section.find('.section-title').click();
+                    $(document).scrollTop( $(section).offset().top );
                 } else if($(topic).length) {
                     topic.click();
                 } else if(hash === '#glossary') {
