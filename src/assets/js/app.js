@@ -538,8 +538,10 @@ $(document).ready(function(){
                         if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
                         else {
                             $("#topic_separator").removeClass("d-none");
+                            console.log($(element).children().find("topic-title"))
                             $(".bread-topic").text($($(element).children()[0]).text());
                             $(".bread-topic").attr("href", `#${$($(element).children()[0]).attr("id")}`);
+
                             $(".nav-aside").children().each((index, nav) => {
                                 if($(nav).hasClass(topic)) $(nav).addClass("active");
                             })
