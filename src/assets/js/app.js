@@ -492,6 +492,7 @@ $(document).ready(function(){
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
                 } else if($(section).length) {  
                     section.find('.section-title').click();
+                    $(document).scrollTop( $(section).offset().top );
                 } else if($(topic).length) { 
                     topic.click();
                 } else if(hash === '#glossary') {
@@ -810,8 +811,8 @@ $(document).ready(function(){
 
             $(".section-item").on("click", function(e) {
                 //Open accordion on mobile
-                $(this).parent().find("b").click()
-                $(this).parent().find("b").attr("class").split(/\s+/)[1] === "glossary" ? $(document).scrollTop( $("#glossary_container").offset().top ) : $(document).scrollTop( $(this).offset().top );
+                $(this).parent().find("b.section-head").click()
+                $(this).parent().find("b.section-head").attr("class").split(/\s+/)[1] === "glossary" ? $(document).scrollTop( $("#glossary_container").offset().top ) : $(document).scrollTop( $(this).offset().top );
                 $(".btn-close").click();
             });
         }
