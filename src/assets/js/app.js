@@ -688,7 +688,6 @@ $(document).ready(function(){
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
                 e.preventDefault();
-
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
                     //Deactive faq container
                     $("#faq-container").addClass('d-none');
@@ -708,7 +707,10 @@ $(document).ready(function(){
                         handleResultFoundTextVisibility(glossaryList)
                     }
                     return;
-                } else $("#glossary_container").addClass('d-none');
+                } else {
+                    $("#faq-topic").val($(this).parent().attr("class").split(/\s+/)[1]).prop('selected', true);
+                    $("#glossary_container").addClass('d-none');
+                }
                     
                 if(!search) {
                         //Active/deactive topic nav list
