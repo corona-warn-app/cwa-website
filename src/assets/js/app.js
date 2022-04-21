@@ -625,7 +625,8 @@ $(document).ready(function(){
             $(".section-head").on("click", function(e) {
                 if(!search) {
                     e.preventDefault();
-                    location.href = location.origin + location.pathname + "?search=&topic=" + ($(this).attr("class").split(/\s+/)[1] + "#" + ($(this).attr("class").split(/\s+/)[1]))
+                    location.href = "#" + ($(this).attr("class").split(/\s+/)[1])
+                    location.reload()
                     $(document).scrollTop(0)
                 } else {
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
