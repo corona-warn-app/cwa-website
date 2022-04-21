@@ -490,10 +490,11 @@ $(document).ready(function(){
                 if($(h3).length) {
                     h3.click();
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
-                } else if($(section).length) {  
+                } else if($(section).length) { 
                     section.find('.section-title').click();
                 } else if($(topic).length) { 
                     topic.click();
+                    $(document).scrollTop(0)
                 } else if(hash === '#glossary') {
                     $('#glossary').click();
                 }
@@ -538,10 +539,7 @@ $(document).ready(function(){
                         if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
                         else {
                             $("#topic_separator").removeClass("d-none");
-                            console.log($(element).children().find("topic-title"))
-                            $(".bread-topic").text($($(element).children()[0]).text());
-                            $(".bread-topic").attr("href", `#${$($(element).children()[0]).attr("id")}`);
-
+                            $(".bread-topic").text($(element).find(".topic-title").text());
                             $(".nav-aside").children().each((index, nav) => {
                                 if($(nav).hasClass(topic)) $(nav).addClass("active");
                             })
@@ -627,8 +625,8 @@ $(document).ready(function(){
             $(".section-head").on("click", function(e) {
                 if(!search) {
                     e.preventDefault();
-                    $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
-                    location.href = location.origin + location.pathname + "#" + ($(this).attr("class").split(/\s+/)[1])
+                    location.href = location.origin + location.pathname + "?search=&topic=" + ($(this).attr("class").split(/\s+/)[1] + "#" + ($(this).attr("class").split(/\s+/)[1]))
+                    $(document).scrollTop(0)
                 } else {
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
                         $("#faq-container").addClass('d-none')
@@ -733,7 +731,8 @@ $(document).ready(function(){
                 $("#bread_separator").removeClass("d-none");
                 $("#topic_separator").removeClass("d-none");
                 $(".bread-topic").text($(this).parent().find(".section-head").text())
-                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text())
+                $(".bread-topic").attr("href", `#${$(this).parent().find(".section-head").attr("class").split(/\s+/)[1]}`)
+                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text());
                 $("#bread_separator").removeClass('d-none');
                 $(".bread-section").removeClass('d-none');
                 if(search) {
@@ -788,7 +787,7 @@ $(document).ready(function(){
             $(".bread-topic").on("click", function(e) {
                 e.preventDefault();
                 if(!search) $(".topic-list.active").find(".section-head").click();
-                else {
+                 else {
                     $(".section-head").each((index, element) => {
                         if($(element).text() === $(this).text()) {
                             $(element).click();
