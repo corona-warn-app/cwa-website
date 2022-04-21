@@ -490,11 +490,12 @@ $(document).ready(function(){
                 if($(h3).length) {
                     h3.click();
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
-                } else if($(section).length) {  
+                } else if($(section).length) { 
                     section.find('.section-title').click();
                     $(document).scrollTop( $(section).offset().top );
                 } else if($(topic).length) { 
                     topic.click();
+                    $(document).scrollTop(0)
                 } else if(hash === '#glossary') {
                     $('#glossary').click();
                 }
@@ -539,8 +540,7 @@ $(document).ready(function(){
                         if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
                         else {
                             $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($($(element).children()[0]).find(".topic-title").text());
-                            $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
+                            $(".bread-topic").text($(element).find(".topic-title").text());
                             $(".nav-aside").children().each((index, nav) => {
                                 if($(nav).hasClass(topic)) $(nav).addClass("active");
                             })
@@ -626,8 +626,9 @@ $(document).ready(function(){
             $(".section-head").on("click", function(e) {
                 if(!search) {
                     e.preventDefault();
-                    $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
-                    $("#faq-search-form").submit()
+                    location.href = "#" + ($(this).attr("class").split(/\s+/)[1])
+                    location.reload()
+                    $(document).scrollTop(0)
                 } else {
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
                         $("#faq-container").addClass('d-none')
@@ -689,7 +690,6 @@ $(document).ready(function(){
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
                 e.preventDefault();
-
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
                     //Deactive faq container
                     $("#faq-container").addClass('d-none');
@@ -709,7 +709,10 @@ $(document).ready(function(){
                         handleResultFoundTextVisibility(glossaryList)
                     }
                     return;
-                } else $("#glossary_container").addClass('d-none');
+                } else {
+                    $("#faq-topic").val($(this).parent().attr("class").split(/\s+/)[1]).prop('selected', true);
+                    $("#glossary_container").addClass('d-none');
+                }
                     
                 if(!search) {
                         //Active/deactive topic nav list
@@ -730,7 +733,8 @@ $(document).ready(function(){
                 $("#bread_separator").removeClass("d-none");
                 $("#topic_separator").removeClass("d-none");
                 $(".bread-topic").text($(this).parent().find(".section-head").text())
-                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text())
+                $(".bread-topic").attr("href", `#${$(this).parent().find(".section-head").attr("class").split(/\s+/)[1]}`)
+                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text());
                 $("#bread_separator").removeClass('d-none');
                 $(".bread-section").removeClass('d-none');
                 if(search) {
@@ -785,7 +789,7 @@ $(document).ready(function(){
             $(".bread-topic").on("click", function(e) {
                 e.preventDefault();
                 if(!search) $(".topic-list.active").find(".section-head").click();
-                else {
+                 else {
                     $(".section-head").each((index, element) => {
                         if($(element).text() === $(this).text()) {
                             $(element).click();
