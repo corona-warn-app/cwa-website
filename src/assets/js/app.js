@@ -557,12 +557,12 @@ $(document).ready(function(){
 
          //Show all topics on click on FAQ
          $(".bread-faq").on("click", function(e) {
-                
+            e.preventDefault();
             if(!search) {
                 location.href = location.origin + location.pathname
             }
             else{
-                $("#faq-search-form").submit()
+                location.href = location.href.split("#")[0];
             }
         });
 
