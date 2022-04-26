@@ -16,7 +16,7 @@ With version 2.3 of the Corona-Warn-App, users will be able to add their digital
 The digital vaccination certificate is an **electronic certificate** that can digitally document Corona vaccinations, for example on a smartphone. It can be generated in the doctor's office or at a vaccination center: After entering or accepting the data, a QR code is generated. Users can scan the code either with the CovPass-App or the Corona-Warn-App (version 2.3) to integrate the proof of vaccination in the app. However, users can also use the familiar yellow vaccination certificate to prove their immunization status.
 
 <br></br>
-<center> <img src="./home_vaccination_immunity.png" title="Vaccination Immunity" style="align: center"></center>
+<center> <img src="./home_vaccination_immunity.png" title="Vaccination Immunity" alt="Vaccination Immunity" style="align: center"></center>
 <br></br>
 
 

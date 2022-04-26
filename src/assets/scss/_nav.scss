@@ -24,7 +24,7 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 50px);
   overflow-y: auto;
   display: block;
 }
@@ -32,9 +32,17 @@
   display: block;
   padding: $nav-link-padding-y ($nav-link-padding-x - 0.2);
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
+  }
+
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 
   // Disabled state lightens text
@@ -133,8 +141,21 @@
 .tab-content {
   > .tab-pane {
     display: none;
+    outline: none;
   }
   > .active {
     display: block;
+    outline: none;
+  }
+}
+
+a:not([class]) {
+  &:focus {
+    //outline: none;
+  }
+  &:focus-visible {
+    outline: none;
+    border: 2px solid white!important;
+    box-shadow: 0 0 0 2px black!important;
   }
 }

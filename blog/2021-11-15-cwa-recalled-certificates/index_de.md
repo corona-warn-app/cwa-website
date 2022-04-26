@@ -18,7 +18,7 @@ In der Vergangenheit gab es einige wenige Apotheken, die gefälschte Impfzertifi
 
 <br></br>
 <center> 
-<img src="./zertifikat-ungültig(1).png" title="Zurückgerufenens, ungültiges Zertifikat" style="align: center" width=250> 
+<img src="./zertifikat-ungültig(1).png" title="Zurückgerufenes, ungültiges Zertifikat" alt="Zurückgerufenes, ungültiges Zertifikat" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Ungültiges digitales Zertifikat</em></figcaption>
 </center>
 <br></br>
@@ -31,9 +31,9 @@ Die Corona-Warn-App informiert die betroffenen Nutzer\*innen wie gewohnt mit ein
 
 <br></br>
 <center> 
-<img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
-<img src="./roter-punkt-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
-<img src="./zertifikat-ungültig(2).png" title="Informationen unter dem Zertifikat" style="align: center" width=250>
+<img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" alt="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
+<img src="./roter-punkt-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
+<img src="./zertifikat-ungültig(2).png" title="Informationen unter dem Zertifikat" alt="Informationen unter dem Zertifikat" style="align: center" width=250>
 <figcaption aria-hidden="true"><em></em></figcaption>
 </center>
 <br></br>

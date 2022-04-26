@@ -13,7 +13,7 @@ Die Corona-Warn-App hat ein Update erhalten, das für alle Nutzerinnen und Nutze
 Wesentliche Neuerungen sind **zusätzliche Informationen zum Risikostatus**. Falls eine Begegnung mit niedrigem Risiko vorliegt, erhalten Nutzerinnen und Nutzer in der Detailansicht zum Risikostatus nun eine kurze Erläuterung, warum trotz einer oder mehrerer Begegnungen mit einer positiv auf COVID-19 getesteten Person weiterhin das Infektionsrisiko als niedrig eingestuft wird. Die Empfehlung, die Corona-Warn-App zur Sicherheit einmal täglich zu öffnen, wird nun auch in der App angezeigt.
 
 
-<img src="./cwa-1-3-risk-status.JPG" title="Corona-Warn-App Risikostatus" style="valign: center">
+<img src="./cwa-1-3-risk-status.JPG" title="Corona-Warn-App Risikostatus" alt="Corona-Warn-App Risikostatus" style="valign: center">
 
 
 Darüber hinaus enthält Corona-Warn-App Version 1.3 im Impressum einen **Link zu einem Kontaktformular** des Robert Koch-Instituts, über das Nutzerinnen und Nutzern die Kontaktaufnahme bei Fragen und Anregungen erleichtert wird. 

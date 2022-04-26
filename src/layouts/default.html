@@ -24,11 +24,12 @@
     {{!-- Pages you create in the src/pages/ folder are inserted here when the
     flattened page is created. --}} 
     
+    <a class="skip-main" href="#main">Skip to main content</a>
     {{> header}} 
 
-    <div class="main-content">
+    <main id="main" class="main-content" role="main" tabindex="-1">
       {{> body}}
-    </div>
+    </main>
     {{#unless lang_de}}
     {{> footer language=global.lang.en}}
     {{/unless}}

@@ -43,6 +43,8 @@ function isCI() {
   return !!process.env.CI;
 }
 
+console.log('PRODUCTION: ', PRODUCTION);
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
@@ -57,13 +59,14 @@ gulp.task(
     cwaaJs,
     javascript,
     gulp.parallel(
-      pages, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects, copyFAQsDuplicate
     ),
     images_webp,
     sass,
     build_sitemap,
     createFaqRedirects,
-    replaceVersionNumbers
+    replaceVersionNumbers,
+    AddEnglishSpecifier
   )
 );
 
@@ -293,21 +296,78 @@ function copyFAQs(done){
   done();
 }
 
+function copyFAQsDuplicate(done){
+  copyFAQDuplicate("de");
+  copyFAQDuplicate("en");
+  done();
+}
+
 function copyFAQ(lang) {
   return gulp
     .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
     .pipe(jsonTransform(function (data, file) {
       let faq = {}
-      data['section-main'].sections.forEach((section) => {
-        section.accordion.forEach((faqEntry) => {
-          let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-          faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            if(faqEntry.duplicate !== undefined) {
+              data['section-main'].topics.forEach((dtopic) => {
+                dtopic.sections.forEach((dsection) => {
+                  dsection.accordion.forEach((dfaqEntry) => {
+                    if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                      if(!faq[`${dfaqEntry.anchor}_dup_${section.id}`]) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        let searchEntry = result.title + " " + result.textblock.join(" ");
+                        faq[result.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+                      }
+                    }
+                  })
+                })
+              })
+            } else {
+              let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+              faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+            }
+          })
         })
       });
       return faq;
     }))
     .pipe(rename('faq.json'))
-    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/`));
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
+}
+function copyFAQDuplicate(lang) {
+  return gulp
+    .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
+    .pipe(jsonTransform(function (data, file) {
+      const faq = [];
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            if(faqEntry.duplicate !== undefined) {
+              const exist = faq.some(question => question.anchor === `${faqEntry.duplicate}_dup_${section.id}`)
+              if(!exist) {
+                data['section-main'].topics.forEach((dtopic) => {
+                  dtopic.sections.forEach((dsection) => {
+                    dsection.accordion.forEach((dfaqEntry) => {
+                      if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        faq.push(result)
+                      }
+                    })
+                  })
+                })
+              }
+            }
+          })
+        })
+      });
+      return faq;
+    }))
+    .pipe(rename('faq_duplicate.json'))
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
 }
 
 function copyFAQRedirects() {
@@ -431,13 +491,22 @@ function createFaqRedirects() {
 // replaces some values inside json that cant be replaced with handlebars expression since they are inside json
 function replaceVersionNumbers() {
   return gulp
-    .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '15.3.1'))
+    .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
+    .pipe(replace('[ios.latest-os-version]', '15.4.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.17.1'))
+    .pipe(replace('[ios.current-app-version]', '2.21.2'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.17.2'))
+    .pipe(replace('[android.current-app-version]', '2.21.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
+}
+
+function AddEnglishSpecifier() {
+  const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'))
+  let task = gulp.src([PATHS.dist + "/**/*.html"]);
+  data.texts.forEach((value) => {
+      task = task.pipe(replace(' ' + value + ' ', `<span lang="en"> ${value} </span>`));
+  });
+  return task.pipe(gulp.dest(PATHS.dist))
 }

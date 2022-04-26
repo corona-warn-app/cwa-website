@@ -17,7 +17,7 @@ In the past, there were a few pharmacies that issued fake vaccination certificat
 
 <br></br>
 <center> 
-<img src="./zertifikat-ungültig(1)_en_v3.png" title="Invalid digital certificate" style="align: center" width=250> 
+<img src="./zertifikat-ungültig(1)_en_v3.png" title="Invalid digital certificate" alt="Invalid digital certificate" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Invalid digital certificate</em></figcaption>
 </center>
 <br></br>
@@ -31,9 +31,9 @@ The Corona-Warn-App informs users as usual with a push notification. The red dot
 
 <br></br>
 <center> 
-<img src="./push-nachricht_en.png" title="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
-<img src="./roter-punkt-impfzertifikat_en.png" title="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
-<img src="./zertifikat-ungültig(2)_en.png" title="Informationen unter dem Zertifikat" style="align: center" width=250>
+<img src="./push-nachricht_en.png" title="Corona-Warn-App push notification" alt="Corona-Warn-App push notification" style="align: center" width=250> 
+<img src="./roter-punkt-impfzertifikat_en.png" title="Certificate tab in the Corona-Warn-App" alt="Certificate tab in the Corona-Warn-App" style="align: center" width=250>
+<img src="./zertifikat-ungültig(2)_en.png" title="Information below the certificate" alt="Information below the certificate" style="align: center" width=250>
 <figcaption aria-hidden="true"><em></em></figcaption>
 </center>
 <br></br>
