@@ -943,13 +943,13 @@ $(document).ready(function(){
 
     //events for navtabs mobiles in accessibility
     $('.mobile-type').ready(function(e){
-        if(location.hash === "#ios" || location.hash === "#android"){
+        if(location.hash === "#website" || location.hash === "#ios" || location.hash === "#android"){
             $(window).scrollTop($("#glossary").offset().top);
         }
     });
 
     $(window).bind( 'hashchange', function(e) { 
-        if(location.hash === "#ios" || location.hash === "#android"){
+        if(location.hash === "#website" || location.hash === "#ios" || location.hash === "#android"){
             $("a[href='" + location.hash + "']").addClass('active').siblings().removeClass('active');
             $("a[href='" + location.hash + "']").attr("aria-selected", "true").siblings().attr("aria-selected", "false");
             $("a[href='" + location.hash + "']").removeAttr('tabindex').siblings().attr('tabindex', '-1');
