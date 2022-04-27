@@ -21,8 +21,7 @@ jobs:
     steps:
       - name: Install requirements
         run: |
-          curl https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-          curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+          curl https://cli-assets.heroku.com/install.sh | sh
           sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
