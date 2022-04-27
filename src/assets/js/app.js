@@ -449,7 +449,6 @@ $(document).ready(function(){
         if (hash) {
         // if we have a hash and that hash is not part of the faq list
         let hashVal = hash.substring(1)
-        let locationHash = location.hash
         if(hash && !Object.keys(faq).includes(hashVal)) {
             // then let's get the list of defined redirects
             $.get("/assets/data/faq_redirects.json", (data) => {
@@ -459,7 +458,8 @@ $(document).ready(function(){
                 // if there is ...
                 if(replacement){
                     // ... just go there
-                    locationHash = "#" + replacement;
+                    location.hash = "#" + replacement;
+
                 }
             })
         }
@@ -468,32 +468,34 @@ $(document).ready(function(){
             setTimeout(() => {
                 if(window.matchMedia("(max-width: 767px)").matches) {
                     //Open accordion
-                    if($(`${locationHash}`).hasClass("topic-container")) {
-                        $($($($(`${locationHash}`).children()[0]).children()[0]).children()[0]).addClass("active");
+                    if($(`${location.hash}`).hasClass("topic-container")) {
+                        $($($($(`${location.hash}`).children()[0]).children()[0]).children()[0]).addClass("active");
                     }
                     //Open accordion and aim section title
                     
-                    if($(`${locationHash}`).hasClass("section-container")) {
-                        $($(`${locationHash}`).parent().parent().parent().parent().children()[0]).addClass("active");
+                    if($(`${location.hash}`).hasClass("section-container")) {
+                        $($(`${location.hash}`).parent().parent().parent().parent().children()[0]).addClass("active");
                     }
                     //Open accordion and aim question
                     
-                    if($(`${locationHash}`).hasClass("accordion-faq-item-title")){
-                        $($(`${locationHash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                    if($(`${location.hash}`).hasClass("accordion-faq-item-title")){
+                        $($(`${location.hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
                 } 
-                const h3 =  $(`h3${locationHash}`);
-                const topic = $(`${locationHash}.topic-title`);
-                const section = $(`${locationHash}.section-container`);
+                const h3 =  $(`h3${location.hash}`);
+                const topic = $(`${location.hash}.topic-title`);
+                const section = $(`${location.hash}.section-container`);
 
-                history.replaceState({}, document.title, `${hash}` );
+                history.replaceState({}, document.title, `${location.hash}` );
                 if($(h3).length) {
                     h3.click();
                     if($(h3).hasClass("accordion-faq-item-title")) $(document).scrollTop( $(h3).offset().top );
-                } else if($(section).length) {
+                } else if($(section).length) { 
                     section.find('.section-title').click();
-                } else if($(topic).length) {
+                    $(document).scrollTop( $(section).offset().top );
+                } else if($(topic).length) { 
                     topic.click();
+                    $(document).scrollTop(0)
                 } else if(hash === '#glossary') {
                     $('#glossary').click();
                 }
@@ -538,8 +540,7 @@ $(document).ready(function(){
                         if($(element).find(".topic-title").attr("id") !== topic) $(element).addClass('d-none');
                         else {
                             $("#topic_separator").removeClass("d-none");
-                            $(".bread-topic").text($($(element).children()[0]).find(".topic-title").text());
-                            $(".bread-topic").attr("href", `#${$(element).attr("id")}`);
+                            $(".bread-topic").text($(element).find(".topic-title").text());
                             $(".nav-aside").children().each((index, nav) => {
                                 if($(nav).hasClass(topic)) $(nav).addClass("active");
                             })
@@ -556,12 +557,12 @@ $(document).ready(function(){
 
          //Show all topics on click on FAQ
          $(".bread-faq").on("click", function(e) {
-                
+            e.preventDefault();
             if(!search) {
                 location.href = location.origin + location.pathname
             }
             else{
-                $("#faq-search-form").submit()
+                location.href = location.href.split("#")[0];
             }
         });
 
@@ -625,8 +626,9 @@ $(document).ready(function(){
             $(".section-head").on("click", function(e) {
                 if(!search) {
                     e.preventDefault();
-                    $("#faq-topic").val($(this).attr("class").split(/\s+/)[1]).prop('selected', true);
-                    $("#faq-search-form").submit()
+                    location.href = "#" + ($(this).attr("class").split(/\s+/)[1])
+                    location.reload()
+                    $(document).scrollTop(0)
                 } else {
                     if($(this).attr("class").split(/\s+/)[1] === "glossary") {
                         $("#faq-container").addClass('d-none')
@@ -688,7 +690,6 @@ $(document).ready(function(){
             //Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
                 e.preventDefault();
-
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
                     //Deactive faq container
                     $("#faq-container").addClass('d-none');
@@ -708,7 +709,10 @@ $(document).ready(function(){
                         handleResultFoundTextVisibility(glossaryList)
                     }
                     return;
-                } else $("#glossary_container").addClass('d-none');
+                } else {
+                    $("#faq-topic").val($(this).parent().attr("class").split(/\s+/)[1]).prop('selected', true);
+                    $("#glossary_container").addClass('d-none');
+                }
                     
                 if(!search) {
                         //Active/deactive topic nav list
@@ -729,7 +733,8 @@ $(document).ready(function(){
                 $("#bread_separator").removeClass("d-none");
                 $("#topic_separator").removeClass("d-none");
                 $(".bread-topic").text($(this).parent().find(".section-head").text())
-                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text())
+                $(".bread-topic").attr("href", `#${$(this).parent().find(".section-head").attr("class").split(/\s+/)[1]}`)
+                $(".bread-section").text($(this).find("a").clone().find("b").remove().end().text());
                 $("#bread_separator").removeClass('d-none');
                 $(".bread-section").removeClass('d-none');
                 if(search) {
@@ -774,20 +779,17 @@ $(document).ready(function(){
             $(".section-title").on("click", function(e) {
                 e.preventDefault();
                 $(".section-item").each((index, section) => {
-                    if($(section).parent().hasClass($(this).parents(".section-container").prev("h1").attr("id"))) {
-                        if($(section).find("a").text() === $(this).text()) {
-                            $(section).click();
-                        }
+                    if($(section).find("a").attr("href") === "#"+ $(this).parents(".section-container").attr("id")) {
+                        $(section).click();
                     }
-                    
-                })
+                })               
             });
 
             //Simulate nav click on click in breadcrumb
             $(".bread-topic").on("click", function(e) {
                 e.preventDefault();
                 if(!search) $(".topic-list.active").find(".section-head").click();
-                else {
+                 else {
                     $(".section-head").each((index, element) => {
                         if($(element).text() === $(this).text()) {
                             $(element).click();
@@ -813,8 +815,8 @@ $(document).ready(function(){
 
             $(".section-item").on("click", function(e) {
                 //Open accordion on mobile
-                $(this).parent().find("b").click()
-                $(this).parent().find("b").attr("class").split(/\s+/)[1] === "glossary" ? $(document).scrollTop( $("#glossary_container").offset().top ) : $(document).scrollTop( $(this).offset().top );
+                $(this).parent().find("b.section-head").click()
+                $(this).parent().find("b.section-head").attr("class").split(/\s+/)[1] === "glossary" ? $(document).scrollTop( $("#glossary_container").offset().top ) : $(document).scrollTop( $(this).offset().top );
                 $(".btn-close").click();
             });
         }
