@@ -199,7 +199,7 @@ function sass() {
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
@@ -215,6 +215,7 @@ function cwaaJs() {
         rules: [
           {
             test: /\.js$/,
+            exclude: [/node_modules/],
             use: {
               loader: 'babel-loader',
               options: {
@@ -225,30 +226,11 @@ function cwaaJs() {
           }
         ]
       },
-      devtool: !PRODUCTION && 'source-map'
+      devtool: 'source-map'
     }, webpack2))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
-
-let webpackConfig = {
-  mode: PRODUCTION ? 'production' : 'development',
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            compact: false
-          }
-        }
-      }
-    ]
-  },
-  devtool: !PRODUCTION && 'source-map'
-};
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -257,16 +239,26 @@ function javascript() {
     .src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe(
-      $.if(
-        PRODUCTION,
-        $.uglify().on('error', e => {
-          console.error('Uglify error', e);
-        })
-      )
-    )
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(webpackStream({
+      mode: PRODUCTION ? 'production' : 'development',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: [/node_modules/],
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+                compact: false
+              }
+            }
+          }
+        ]
+      },
+      devtool: 'source-map'
+    }, webpack2))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
