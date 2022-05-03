@@ -851,11 +851,6 @@ $(document).ready(function(){
             }
         })
         
-        //Update header links in FAQ page
-        $(".subheader").children().each((index, element) => {
-        const newlink = $(element).find('a').attr('href').replace('/results', '')
-        $(element).find('a').attr('href', newlink)
-        });
     }
 
     const countGlossaryResults = function(search) {
