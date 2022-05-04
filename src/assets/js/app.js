@@ -850,7 +850,11 @@ $(document).ready(function(){
                 $(section).find(".count").remove()
             }
         })
-        
+        $('.subheader').find('a').click(function () {
+            var url = $(this).attr("href");
+            location.href = url;
+            location.reload();
+            })
     }
 
     const countGlossaryResults = function(search) {
