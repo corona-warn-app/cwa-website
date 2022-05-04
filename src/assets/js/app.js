@@ -850,12 +850,11 @@ $(document).ready(function(){
                 $(section).find(".count").remove()
             }
         })
-        
-        //Update header links in FAQ page
-        $(".subheader").children().each((index, element) => {
-        const newlink = $(element).find('a').attr('href').replace('/results', '')
-        $(element).find('a').attr('href', newlink)
-        });
+        $('.subheader').find('a').click(function () {
+            var url = $(this).attr("href");
+            location.href = url;
+            location.reload();
+            })
     }
 
     const countGlossaryResults = function(search) {
