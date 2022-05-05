@@ -199,7 +199,7 @@ function sass() {
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
@@ -215,6 +215,7 @@ function cwaaJs() {
         rules: [
           {
             test: /\.js$/,
+            exclude: [/node_modules/],
             use: {
               loader: 'babel-loader',
               options: {
@@ -225,30 +226,11 @@ function cwaaJs() {
           }
         ]
       },
-      devtool: !PRODUCTION && 'source-map'
+      devtool: 'source-map'
     }, webpack2))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
-
-let webpackConfig = {
-  mode: PRODUCTION ? 'production' : 'development',
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            compact: false
-          }
-        }
-      }
-    ]
-  },
-  devtool: !PRODUCTION && 'source-map'
-};
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -257,16 +239,26 @@ function javascript() {
     .src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe(
-      $.if(
-        PRODUCTION,
-        $.uglify().on('error', e => {
-          console.error('Uglify error', e);
-        })
-      )
-    )
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(webpackStream({
+      mode: PRODUCTION ? 'production' : 'development',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: [/node_modules/],
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+                compact: false
+              }
+            }
+          }
+        ]
+      },
+      devtool: 'source-map'
+    }, webpack2))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
@@ -494,10 +486,10 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
     .pipe(replace('[ios.latest-os-version]', '15.4.1'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.21.1'))
+    .pipe(replace('[ios.current-app-version]', '2.22.1'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.21.1'))
+    .pipe(replace('[android.current-app-version]', '2.22.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }
