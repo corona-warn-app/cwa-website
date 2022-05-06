@@ -45,7 +45,7 @@ jobs:
       - name: Deploy master
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl public-read --follow-symlinks --cache-control max-age=60 --delete --size-only
+          args: --acl public-read --follow-symlinks --cache-control max-age=60 --size-only
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
