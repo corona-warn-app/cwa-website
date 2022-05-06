@@ -17,6 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]') && github.repository == 'corona-warn-app/cwa-website'"
 
+    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
+    permissions:
+      id-token: write
+      contents: read
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Install requirements
@@ -44,6 +49,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
+          aws-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
+          aws-s3-endpoint: ${{ secrets.AWS_S3_ENDPOINT }}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
