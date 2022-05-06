@@ -38,6 +38,6 @@ Wenn Nutzer\*innen aus dem Schnelltest-Profil heraus auf „Weiter“ tippen, um
 </center>
 <br></br>
 
-Version 2.21 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
+Version 2.22 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
 
 Aktuelle Informationen zum Stand des Roll-Outs erhalten Sie auf dem Twitter-Kanal der [#coronawarnapp](https://twitter.com/coronawarnapp).
