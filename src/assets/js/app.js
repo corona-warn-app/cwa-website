@@ -389,11 +389,13 @@ $(document).ready(function(){
             })
         }
 
-        if(search) {
-            window.location.href = window.location.href.replace("?", "results/?");
+        if (search) {
+            const url = new URL(window.location);
+            url.searchParams.delete('search');
+            history.pushState("", document.title, url);
         }
-        else if (hash) {
-            window.location.href = window.location.href.replace("#", "results/#");    
+        if (hash) {
+            window.location.href = window.location.href.replace("#", "results/#");
         }
     }
 
