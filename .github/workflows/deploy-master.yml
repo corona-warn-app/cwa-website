@@ -17,11 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]') && github.repository == 'corona-warn-app/cwa-website'"
 
-    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
-    permissions:
-      id-token: write
-      contents: read
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Install requirements
@@ -45,18 +40,19 @@ jobs:
 
       - name: keepalive.html
         run: echo "OK" > public/keepalive.html
-      
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+
+      # Runs a single command using the runners shell
+      - name: Deploy master
+        uses: jakejarvis/s3-sync-action@master
         with:
-          aws-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
-          aws-s3-endpoint: ${{ secrets.AWS_S3_ENDPOINT }}
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
-      
-      - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./public/ s3://${{secrets.AWS_S3_BUCKET }} --delete
+          args: --acl public-read --follow-symlinks --cache-control max-age=60 --delete --size-only
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_S3_ENDPOINT: ${{ secrets.AWS_S3_ENDPOINT }}
+          SOURCE_DIR: "public"
 
       - name: Set mime type for FAQ redirects
         run: |
