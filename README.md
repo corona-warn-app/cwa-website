@@ -82,6 +82,10 @@ Manuals for the most common use cases of updating website content are available 
 ```
 Alternatively, execute `npm run test:open` to select individual tests or all tests to run from the Cypress console.
 
+The production web https://www.coronawarn.app runs under the Ubuntu operating system with a case-sensitive file-system. To ensure gaps in testing are minimized, perform local tests preferably under Ubuntu.
+
+Other operating systems, such as Microsoft Windows, which access files in a case-insensitive mode, may hide problems in testing if there is a mismatch between the upper/lower-case file naming and the reference to the file. This applies to Cypress tests and testing by hand.
+
 #### Notes for test developers
 
 Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, eg `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
