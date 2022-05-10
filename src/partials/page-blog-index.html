@@ -25,11 +25,35 @@
       </h1>
       <p>{{{page-contents.en.headline.text}}}</p>
       {{/if}}
+      <form method="get" id="blog-search-form">
+        <div class="input-group input-group-sm">
+          <div class="input-group-text">
+            <span class="input-group-addon">
+              {{#if lang_de}}
+              <span id="match-count" aria-live="polite">X / X</span>&nbsp;{{page-contents.de.search.blog-posts}}
+              {{else}}
+              <span id="match-count" aria-live="polite">X / X</span>&nbsp;{{page-contents.en.search.blog-posts}}
+              {{/if}}
+            </span>
+          </div>
+          {{#if lang_de}}
+          <input type="text" class="form-control" placeholder="{{page-contents.de.search.placeholder}}" id="blog-search" name="search">
+          {{else}}
+          <input type="text" class="form-control" placeholder="{{page-contents.en.search.placeholder}}" id="blog-search" name="search">
+          {{/if}}
+        </div>
+      </form>
 
       <div class="blog-list">
         {{#if lang_de}}
+        <div id="no_results" class="d-none">
+          <p>{{page-contents.de.search.no-results}}</p>
+        </div>
         {{{blogentries 'de'}}}
         {{else}}
+        <div id="no_results" class="d-none">
+          <p>{{page-contents.en.search.no-results}}</p>
+        </div>
         {{{blogentries 'en'}}}
         {{/if}}
       </div>

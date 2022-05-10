@@ -13,7 +13,7 @@ Das Projektteam aus Robert Koch-Institut (RKI), Deutscher Telekom und SAP hat Ve
 
 Die neue Funktion vervollständigt die Testverwaltung für Familienmitglieder, die das Projektteam mit Version 2.21 eingeführt hat. Das Schnelltest-Profil enthält die **persönlichen Daten wie Name und Kontaktdaten in Form eines QR-Codes**. An teilnehmenden Teststellen wird dann lediglich der QR-Code in der App zur Anmeldung gescannt. So kann die Registrierung vor Ort beschleunigt werden.
 
-Mit Version 2.22 können Nutzer\*innen Schnelltest-Profile auch für Familienmitglieder, die beispielsweise kein Smartphone besitzen, anlegen. Dazu können sie **unter „Sie lassen sich testen?“ zum „Schnelltest-Profil“** gehen und dort auf **„Schnelltest-Profil erstellen“** (iOS) beziehungsweise auf **„+ Schnelltest-Profil“** (Android) tippen und die Daten der entsprechenden Person eintragen. Unter dem Punkt "Schnelltest-Profil" wird ihnen dann eine Liste aller Schnelltest-Profile angezeigt, die sie unter dem jeweiligen Namen der Person hinterlegt haben. 
+Mit Version 2.22 können Nutzer\*innen Schnelltest-Profile auch für Familienmitglieder, die beispielsweise kein Smartphone besitzen, anlegen. Dazu können sie **unter „Sie lassen sich testen?“ zum „Schnelltest-Profil“** gehen und dort auf **„Schnelltest-Profil erstellen“** (iOS) beziehungsweise auf **„+ SCHNELLTEST-PROFIL“** (Android) tippen und die Daten der entsprechenden Person eintragen. Unter dem Punkt "Schnelltest-Profil" wird ihnen dann eine Liste aller Schnelltest-Profile angezeigt, die sie unter dem jeweiligen Namen der Person hinterlegt haben. 
 
 
 <br></br>
