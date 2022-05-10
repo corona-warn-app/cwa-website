@@ -48,8 +48,8 @@ jobs:
       - name: Upload files to S3
         run: |
           s3cmd sync --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --no-mime-magic --guess-mime-type ./public/* s3://${{secrets.AWS_S3_BUCKET }}
-          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --no-guess-mime-type --default-mime-type "text/javascript" ./public/assets/js/* s3://${{secrets.AWS_S3_BUCKET }}/assets/js/
-          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --no-guess-mime-type --default-mime-type "text/css" ./public/assets/css/* s3://${{secrets.AWS_S3_BUCKET }}/assets/css/
+          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public ./public/assets/js/* -m 'text/javascript' s3://${{secrets.AWS_S3_BUCKET }}/assets/js/
+          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public ./public/assets/css/* -m 'text/css' s3://${{secrets.AWS_S3_BUCKET }}/assets/css/
 
       - name: Set mime type for FAQ redirects
         run: |
