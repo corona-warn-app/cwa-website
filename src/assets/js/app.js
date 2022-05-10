@@ -454,6 +454,8 @@ $(document).ready(function(){
     if (document.querySelector(".page-faq")) {
         const searchForm = document.getElementById("faq-search-form");
         const { hash } = window.location;
+        const searchParams = new URLSearchParams(window.location.search);
+        const search = searchParams.get('search');
 
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-search-form").removeClass("w-50").addClass("w-100");
@@ -468,6 +470,11 @@ $(document).ready(function(){
             })
         }
 
+        if (search) {
+            const url = new URL(window.location);
+            url.searchParams.delete('search');
+            history.pushState("", document.title, url);
+        }
         if (hash) {
             window.location.href = window.location.href.replace("#", "results/#");
         }
