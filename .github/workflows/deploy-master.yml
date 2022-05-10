@@ -22,7 +22,11 @@ jobs:
       - name: Install requirements
         run: |
           curl https://cli-assets.heroku.com/install.sh | sh
-          sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
+          sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev
+          wget https://sourceforge.net/projects/s3tools/files/s3cmd/2.2.0/s3cmd-2.2.0.tar.gz
+          tar xzf s3cmd-2.2.0.tar.gz
+          cd s3cmd-2.2.0
+          sudo python setup.py install
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
