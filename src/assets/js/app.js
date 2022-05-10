@@ -154,6 +154,87 @@ $(document).ready(function(){
         $('.js-section-sticky').removeClass('hidden');
     };
 
+    // function to update the blog list for a given searchString
+    const updateBlogResults = function(searchString, blogentries) {
+        // result are two arrays, the elements to hide and the ones to show
+        const hide = [];
+        const show = [];
+
+        // Yeah, slow. But in the end, this is only 50-100 entries
+        Object.keys(blogentries).forEach((anchor) => {
+            let text = blogentries[anchor];
+            // text and header does not match or the search string is empty
+            if(searchString.length === 0) {
+                show.push(anchor);
+            } else {
+                // remove double spaces, split by space, and filter out empty strings
+                let searchTerms = searchString.replace(/ +(?= )/g,'').split(" ").filter(x => x.length > 0);
+                // perform the search for each term
+                let allHits = searchTerms.every(term => text.includes(term.toLowerCase()));
+                // put to hide, if no hit was found
+                if(!allHits) {
+                    hide.push(anchor);
+                } else {
+                    show.push(anchor);
+                }
+            }
+        });
+
+        // show all matches
+        if (show.length === 0) {
+            let no_results = document.getElementById("no_results")
+            $(no_results).removeClass("d-none");
+        }
+
+        if (show.length > 0) {
+            if(!$('#no_results').hasClass("d-none")) $('#no_results').addClass("d-none");
+            show.forEach(function(blog_id) {
+                let blog_entry = document.getElementById(blog_id);
+                $(blog_entry).show({duration: 300});
+            });
+        }
+
+        // hide everything that does not match
+        if (hide.length > 0) {
+            hide.forEach(function(blog_id) {
+                let blog_entry = document.getElementById(blog_id);
+                $(blog_entry).hide({duration: 300});
+            });
+        };
+
+        // update the total count of results
+        let totalCount = (show.length + hide.length).toString();
+        let sCount = show.length.toString().padStart(totalCount.length, "0");
+        document.getElementById("match-count").innerHTML = sCount + "/" + totalCount;
+    }
+
+    // check if the blog-search text field is present
+    let blogSearch = document.getElementById("blog-search");
+    if(blogSearch !== null) {
+        let blogentries = {};
+        $.get({url: "searchable_blogentries.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
+            blogentries = data;
+            let blogCount = Object.keys(data).length.toString();
+            document.getElementById("match-count").innerHTML = blogCount + "/" + blogCount;
+            var urlParams = new URLSearchParams(window.location.search);
+            if(urlParams.has("search")){
+                blogSearch.value = urlParams.get("search");
+                // and update the result list
+                updateBlogResults(urlParams.get("search"), blogentries);
+            }
+        });
+
+        // listen to the keyup event, i.e., when a character was entered into the form
+        // and the value of the field was properly updated
+        blogSearch.addEventListener("keyup", (event) => {
+            const curSearch = event.target.value;
+            // only search for longer terms and react to empty search (aka delete input)
+            if(curSearch.length < 2 && curSearch.length > 0) {
+                return;
+            }
+            updateBlogResults(curSearch, blogentries);
+        });
+    }
 
     // function to update the faq list for a given searchString
     const updateResults = function(searchString, topicString, faq) {
@@ -373,6 +454,8 @@ $(document).ready(function(){
     if (document.querySelector(".page-faq")) {
         const searchForm = document.getElementById("faq-search-form");
         const { hash } = window.location;
+        const searchParams = new URLSearchParams(window.location.search);
+        const search = searchParams.get('search');
 
         if(window.matchMedia("(max-width: 767px)").matches) {
             $("#faq-search-form").removeClass("w-50").addClass("w-100");
@@ -387,6 +470,11 @@ $(document).ready(function(){
             })
         }
 
+        if (search) {
+            const url = new URL(window.location);
+            url.searchParams.delete('search');
+            history.pushState("", document.title, url);
+        }
         if (hash) {
             window.location.href = window.location.href.replace("#", "results/#");
         }
