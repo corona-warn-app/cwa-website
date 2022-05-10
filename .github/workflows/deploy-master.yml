@@ -22,7 +22,9 @@ jobs:
       - name: Install requirements
         run: |
           curl https://cli-assets.heroku.com/install.sh | sh
-          sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
+          sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev
+          sudo apt-get update -y
+          sudo apt-get install -y s3cmd
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -58,3 +60,4 @@ jobs:
           s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/en/faq/
           s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/css' --exclude '*' --include '*.css' s3://${{secrets.AWS_S3_BUCKET }}
           s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/javascript' --exclude '*' --include '*.js' s3://${{secrets.AWS_S3_BUCKET }}
+          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} info s3://${{secrets.AWS_S3_BUCKET }}/assets/js/app.js
