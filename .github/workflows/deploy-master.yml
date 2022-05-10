@@ -40,6 +40,10 @@ jobs:
 
       - name: keepalive.html
         run: echo "OK" > public/keepalive.html
+      
+      # https://github.com/s3tools/s3cmd/issues/643
+      - name: Remove python3-magic due to s3cmd incompatibility
+        run: sudo dpkg --remove --force-depends python3-magic
 
       - name: Upload files to S3
         run: s3cmd sync --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --no-mime-magic --guess-mime-type ./public/* s3://${{secrets.AWS_S3_BUCKET }}
