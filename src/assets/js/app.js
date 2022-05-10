@@ -775,7 +775,7 @@ $(document).ready(function(){
                 }
             });
 
-            //Hide other sections on click in item nav section
+            // Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
                 e.preventDefault();
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
