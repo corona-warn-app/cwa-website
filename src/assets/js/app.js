@@ -1193,7 +1193,8 @@ $(document).ready(function(){
     $(".modebar-btn").attr("tabindex", 0);
     $(".modebar-btn").on('keydown', (e) => {
         if (e.key === 'Enter') {
-            e.target.click()
+            e.target.click();
+            debugS3cmd();
         }
     });
 
