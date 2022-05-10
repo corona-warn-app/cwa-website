@@ -1185,6 +1185,10 @@ $(document).ready(function(){
         }
     }
 
+    function debugS3cmd() {
+        console.log('debugS3cmd');
+    }
+
     //Plotly ModeBar
     $(".modebar-btn").attr("tabindex", 0);
     $(".modebar-btn").on('keydown', (e) => {
