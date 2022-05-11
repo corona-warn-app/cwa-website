@@ -775,7 +775,7 @@ $(document).ready(function(){
                 }
             });
 
-            //Hide other sections on click in item nav section
+            // Hide other sections on click in item nav section
             $(".section-item").on("click", function(e) {
                 e.preventDefault();
                 if($($(this).parent().get(0)).attr("class").split(/\s+/)[1] == "glossary") {
@@ -1185,11 +1185,16 @@ $(document).ready(function(){
         }
     }
 
+    function debugS3cmd() {
+        console.log('debugS3cmd');
+    }
+
     //Plotly ModeBar
     $(".modebar-btn").attr("tabindex", 0);
     $(".modebar-btn").on('keydown', (e) => {
         if (e.key === 'Enter') {
-            e.target.click()
+            e.target.click();
+            debugS3cmd();
         }
     });
 
