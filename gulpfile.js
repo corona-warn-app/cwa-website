@@ -15,7 +15,7 @@ const sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
-const { processBlogFiles } = require('./src/services/blog-processor');
+const { processBlogFiles, getBlogEntries } = require('./src/services/blog-processor');
 const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
 var rename = require("gulp-rename");
 const analyseConfig = require("./src/data/analyse.json");
@@ -59,13 +59,14 @@ gulp.task(
     cwaaJs,
     javascript,
     gulp.parallel(
-      pages, images_minify, copy, copyFAQs, copyFAQRedirects, copyFAQsDuplicate
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects, copyFAQsDuplicate, copyBlogEntries
     ),
     images_webp,
     sass,
     build_sitemap,
     createFaqRedirects,
     replaceVersionNumbers,
+    deleteTmpFiles,
     AddEnglishSpecifier
   )
 );
@@ -362,6 +363,31 @@ function copyFAQDuplicate(lang) {
     .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
 }
 
+function copyBlogEntries(done) {
+  copyBlog("de", "src/data/searchable_blogentries_de.json");
+  copyBlog("en", "src/data/searchable_blogentries.json");
+  done();
+}
+
+function copyBlog(lang, tmpFilePath) {
+  let blogEntries = getBlogEntries(lang);
+  fs.writeFileSync(tmpFilePath, JSON.stringify(blogEntries));
+
+  return gulp
+  .src(tmpFilePath)
+  .pipe(jsonTransform(function (data, file) {
+    let searchable_blogentries = {}
+    data.forEach((blogentry) => {
+        let searchEntry = blogentry.title + " " + blogentry.pageDescription + " " + blogentry.htmlContent;
+        searchable_blogentries[blogentry.slug] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ').replace(/\s+/g, " ");
+    });
+    return searchable_blogentries;
+  }))
+  .pipe(rename('searchable_blogentries.json'))
+  .pipe(gulp.dest(PATHS.dist + `/${lang}/blog/`));
+
+}
+
 function copyFAQRedirects() {
   return gulp.src("src/data/faq_redirects.json").pipe(gulp.dest(PATHS.dist + "/assets/data"));
 }
@@ -492,6 +518,11 @@ function replaceVersionNumbers() {
     .pipe(replace('[android.current-app-version]', '2.23.0'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
+}
+
+function deleteTmpFiles(done) {
+  rimraf("src/data/searchable_blogentries_de.json", done);
+  rimraf("src/data/searchable_blogentries.json", done);
 }
 
 function AddEnglishSpecifier() {
