@@ -11,6 +11,17 @@ Cypress.Commands.add('expectPathToBe', (pathToCheck, timeout = undefined) =>
   })
 );
 
+Cypress.Commands.add('testFaqRedirect', (lang, from, to) => {
+  cy.log("Test FAQ redirect from " + from + " to " + to);
+  cy.visit("/" + lang) // workaround to visit homepage between redirect tests
+    .then(() => {
+      cy.visit("/" + lang + "/faq/results/" + from)
+        .then(() => {
+          cy.url().should('contain', to);
+        });
+    });
+});
+
 //overide application error
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
