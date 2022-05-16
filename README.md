@@ -82,6 +82,8 @@ Manuals for the most common use cases of updating website content are available 
 ```
 Alternatively, execute `npm run test:open` to select individual tests or all tests to run from the Cypress console.
 
+To minimize the occurrence of errors we would ask you to perform all tests when contributing to our repository.
+
 The production web https://www.coronawarn.app runs under the Ubuntu operating system with a case-sensitive file-system. To ensure gaps in testing are minimized, perform local tests preferably under Ubuntu.
 
 Other operating systems, such as Microsoft Windows, which access files in a case-insensitive mode, may hide problems in testing if there is a mismatch between the upper/lower-case file naming and the reference to the file. This applies to Cypress tests and testing by hand.
