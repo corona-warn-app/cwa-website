@@ -7,7 +7,7 @@ author: CWA Team
 layout: blog
 ---
 
-*Aktualisiert am 21. Januar 2022 um 08:30 Uhr; English version coming soon*
+*Updated on 21 January 2022 at 08:30 am; German version only*
 
 Omikron breitet sich auch in Deutschland extrem schnell aus, ist jetzt die dominierende Variante sein. Muss die Corona-Warn-App jetzt an Omikron angepasst werden? 
 
