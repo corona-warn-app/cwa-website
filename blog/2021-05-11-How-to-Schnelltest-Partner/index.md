@@ -7,10 +7,10 @@ author: Hanna Heine
 layout: blog
 ---
 
-*Currently, German version only.*
+*German version only*
 
 
-Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer\*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
+Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer\*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogerie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
 
 <!-- overview -->
 

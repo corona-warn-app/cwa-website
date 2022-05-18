@@ -7,7 +7,7 @@ author: CWA Team
 layout: blog
 ---
 
-*English version coming soon*
+*German version only*
 
 In den vergangenen Tagen haben das Projektteam der CWA (Robert Koch-Institut, Deutsche Telekom und SAP) immer wieder Anfragen zu **Darstellung der genauen Uhrzeit und des Ortes bei Risikokontakten** erreicht. Viele Nutzerinnen und Nutzer wollen wissen, warum diese Details nicht angezeigt werden – und ob wir das ändern könnten.  
 
