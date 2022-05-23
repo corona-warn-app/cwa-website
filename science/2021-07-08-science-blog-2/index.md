@@ -798,7 +798,7 @@ In order to be able to compare the data with information about newly-reported SA
 
 <div class="figure" alt="EDUS participants by 3-digit postcode and district.">
 <div id="htmlwidget-plotly-efb29224e0670876fb682" style="width:850px;height:500px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-plotly-efb29224e0670876fb682"></script>
+<script type="application/json" src="./htmlwidget-plotly-efb29224e0670876fb682.json" data-for="htmlwidget-plotly-efb29224e0670876fb682"></script>
 <img class="fig-mobile" src="./fig6_en.PNG" alt="EDUS participants by 3-digit postcode and district."></img>
 <p class="caption">
 <em>Fig. 6: EDUS participants by 3-digit postcode and district.</em>
