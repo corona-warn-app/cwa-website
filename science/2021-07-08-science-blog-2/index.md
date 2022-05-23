@@ -54,7 +54,7 @@ Among other things, the event-driven user survey (EDUS) demonstrated:
 - Most of the respondents (61.6%) finished school with qualifications that provide entry to university or to a technical college
 - The majority of respondents live in urban areas and in western Germany
 - The majority of respondents followed typical social distancing and hygiene rules to protect themselves from infection
-- The vast majority of respondents who received a red warning (83.1%) subsequently took a COVID-19 test
+- The vast majority of respondents who received a red warning (83.1%) subsequently want to take a COVID-19 test
 
 ## 2 The balancing act between minimising data collection and the need for data for research
 
