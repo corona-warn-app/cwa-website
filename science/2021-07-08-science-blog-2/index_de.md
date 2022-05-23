@@ -54,7 +54,7 @@ Die ereignisbezogene Befragung (EDUS) hat u.&nbsp;a. ergeben, dass
  - die meisten Befragten (61,6%) Abitur, eine fachgebundene Hochschulreife oder die Fachhochschulreife erreicht haben,
  - die Befragten mehrheitlich im städtischen Raum und im Westen Deutschlands leben,
  - sich die Mehrheit der Befragten mit den klassischen AHA-Regeln vor einer Infektion geschützt haben,
- - sich die große Mehrheit (83,1%) nach einer „roten Warnung“ testen lassen möchte.
+ - sich die große Mehrheit (83,1%) nach einer „roten Warnung“ testen lassen wollte.
 
 ## 2 Der Spagat zwischen Datensparsamkeit und wissenschaftlichen Erkenntnissen
 
