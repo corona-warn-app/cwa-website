@@ -92,6 +92,18 @@
                         <p>{{{.}}}</p>
                         {{/each}}
                         {{/if}}
+                        {{#if linkList}}
+                          {{#each ./linkList}}
+                            {{#if title}}
+                              <p>{{{title}}}</p>
+                            {{/if}}
+                            <ul>
+                              {{#each links}}
+                              <li><a href="{{./url}}" target='_blank'>{{./text}}</a></li>
+                              {{/each}}
+                            </ul>
+                          {{/each}}
+                        {{/if}}
                         <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{else}}<a href="#" class="faq-anchor">{{../../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
                         <p><a href="#top">{{../../../page-contents.section-main.texts.to_top}}</a></p>
                       </div>
