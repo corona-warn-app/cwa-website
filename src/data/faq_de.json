@@ -549,6 +549,14 @@
                                     "Die Spezifikationen der EU für Impfzertifikate für Auffrischimpfungen wurden geändert. Sollte Ihr Zertifikat nicht mehr den aktuellen Spezifikationen entsprechen, ist es zwar weiterhin gültig, es kann jedoch sein, dass bei einer Prüfung die Auffrischimpfung nicht als solche erkannt wird. In solch einem Fall können Sie über die Corona-Warn-App ab Version 2.20.3 mit einer entsprechenden Nachricht darüber informiert werden. Sie können dann freiwillig ein neues Impfzertifikat kostenlos über die App anfordern. Nachdem Sie Ihr Einverständnis gegeben haben, übermittelt die App das Impfzertifikat zur Überprüfung an das RKI, welches ein aktualisiertes Zertifikat ausstellt und an Ihre App übermittelt. Sie finden das aktualisierte Zertifikat dann in der Zertifikate-Registerkarte. Das alte Zertifikat wird automatisch in den Papierkorb verschoben und nach 30 Tagen gelöscht. Das alte Zertifikat kann innerhalb der 30 Tage jederzeit wiederhergestellt werden.",
                                     "Weitere Informationen finden Sie im Blog: <a href='../../blog/2022-03-30-cwa-2-20/' target='_blank'>Corona-Warn-App Version 2.20</a>"
                                 ]
+                            },
+                            {
+                                "title": "Ich erhalte die Meldung, dass die Gültigkeit eines Zertifikats bald abläuft. Was muss ich tun?",
+                                "anchor": "dcc_replacement_howto",
+                                "active": false,
+                                "textblock": [
+                                    "Die technische Gültigkeit der digitalen COVID-Zertifikate läuft nach 365 Tagen automatisch ab. Für alle relevanten Zertifikate erhalten Sie dazu 28 Tage vor Ablauf eine Mitteilung in der Corona-Warn-App. Um Ihren Impfstatus weiterhin mit der App nachweisen zu können, müssen die entsprechenden Zertifikate aktualisiert werden. Die dazu notwendige Neuausstellung können Sie demnächst in der App mit wenigen Klicks selbst durchführen. Siehe auch <a href='#glossary_validity'>\"Gültigkeit eines EU digitalen COVID-Zertifikats\"</a>."
+                                ]
                             }
                         ]
                     },
@@ -2577,7 +2585,7 @@
                                 "textblock": [
                                     "Durch die Deinstallation der Corona-Warn-App (CWA) werden alle Daten der CWA gelöscht. Ein Nutzer sollte dabei aber beachten, dass zum Beispiel die Daten des Exposure Notification Frameworks (ENF) vom Betriebssystem seines Smartphones verwaltet werden. Daher werden diese ENF-Daten auf Android durch eine CWA-Deinstallation nur dann gelöscht, wenn keine weitere Anwendung (App) auf dem Smartphone des Nutzers installiert wurde, die das ENF nutzt. Auf Apple iOS müssen die ENF-Daten manuell gelöscht werden, da sie durch die CWA-Deinstallation nicht gelöscht werden.",
                                     "Alternativ kann der Nutzer auch die vom jeweiligen Betriebssystem bereitgestellten Funktionalitäten zum Löschen gespeicherter Daten einer Anwendung (App nutzen):",
-                                    "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/speicherplatz-freigeben' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/7431795/speicherplatz-freigeben</a></li><li>(Apple) iOS: <a href='https://support.apple.com/de-de/HT201656' target='_self' rel='noopener noreferrer'>https://support.apple.com/de-de/HT201656</a></li></ul>"
+                                    "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/7431795/?hl=de' target='_blank' rel='noopener noreferrer'>Speicherplatz freigeben</a></li><li>(Apple) iOS: <a href='https://support.apple.com/de-de/HT201656' target='_blank' rel='noopener noreferrer'>Speicherplatz auf dem iPhone, iPad und iPod touch überprüfen</a></li></ul>"
                                 ]
                             },
                             {
@@ -2586,7 +2594,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Die Betriebssystemhersteller bieten dazu in der Regel die Möglichkeit eines Zurücksetzens auf Werkseinstellungen an. Durch das Zurücksetzen des Smartphones gehen die Einstellungen und Daten des Nutzers verloren. Die genaue Vorgehensweise zum Zurücksetzen des Smartphones werden von den Betriebssystemherstellern beschrieben.",
-                                    "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=de' target='_self' rel='noopener noreferrer'>https://support.google.com/android/answer/6088915/android-ger%C3%A4t-auf-werkseinstellungen-zur%C3%BCcksetzen?hl=de</a> </li><li>(Apple) iOS: <a href='https://support.apple.com/de-de/HT201252' target='_self' rel='noopener noreferrer'>https://support.apple.com/de-de/HT201252</a> </li></ul>",
+                                    "<ul><li>(Google) Android: <a href='https://support.google.com/android/answer/6088915?hl=de' target='_blank' rel='noopener noreferrer'>Android-Gerät auf Werkseinstellungen zurücksetzen</a> </li><li>(Apple) iOS: <a href='https://support.apple.com/de-de/HT201252' target='_blank' rel='noopener noreferrer'>iPhone, iPad oder iPod auf die Werkseinstellungen zurücksetzen</a> </li></ul>",
                                     "Wenn Sie nur die Daten und Einstellungen im Zusammenhang mit der Corona-Warn-App (CWA) von Ihrem Smartphone löschen wollen, ist kein vollständiges Zurücksetzen Ihres Smartphones erforderlich. Es genügt, wenn Sie",
                                     "<ul><li>die CWA deinstallieren (siehe  <a href='#delete_all_data_cwa' target='_self' >Wie kann ich alle in der CWA gespeicherten Daten löschen?</a>),</li><li>die vom Betriebssystem verwalteten Daten des Exposure Notification Frameworks (ENF) löschen (siehe  <a href='#delete_all_data_cwa' target='_self' >Wie kann ich alle in der CWA gespeicherten Daten löschen?</a>) und </li><li>ggf. das ENF in den Systemeinstellungen Ihres Betriebssystems deaktivieren.</li></ul>"
                                 ]

@@ -54,7 +54,7 @@ Die ereignisbezogene Befragung (EDUS) hat u.&nbsp;a. ergeben, dass
  - die meisten Befragten (61,6%) Abitur, eine fachgebundene Hochschulreife oder die Fachhochschulreife erreicht haben,
  - die Befragten mehrheitlich im städtischen Raum und im Westen Deutschlands leben,
  - sich die Mehrheit der Befragten mit den klassischen AHA-Regeln vor einer Infektion geschützt haben,
- - sich die große Mehrheit (83,1%) nach einer „roten Warnung“ testen ließ.
+ - sich die große Mehrheit (83,1%) nach einer „roten Warnung“ testen lassen wollte.
 
 ## 2 Der Spagat zwischen Datensparsamkeit und wissenschaftlichen Erkenntnissen
 
@@ -801,7 +801,7 @@ Für den Vergleich mit SARS-CoV-2-Neuinfektionen müssen die dreistelligen Postl
 
 <div class="figure" alt="EDUS Teilnehmende nach 3-stelliger Postleitzahl und Landkreis.">
 <div id="htmlwidget-plotly-efb29224e0670876fb682-de" style="width:1200px;height:800px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-plotly-efb29224e0670876fb682-de"></script>
+<script type="application/json" src="./htmlwidget-plotly-efb29224e0670876fb682-de.json" data-for="htmlwidget-plotly-efb29224e0670876fb682-de"></script>
 <img class="fig-mobile" src="./fig6.PNG" alt="EDUS Teilnehmende nach 3-stelliger Postleitzahl und Landkreis."></img>
 <p class="caption">
 <em>Abb. 6: EDUS Teilnehmende nach 3-stelliger Postleitzahl und Landkreis.</em>
