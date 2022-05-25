@@ -556,7 +556,7 @@
                                         "title" : "Related FAQ articles:",
                                         "links" : [
                                             { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are newly issued?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
                                             { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
                                             { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
                                             { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
@@ -569,15 +569,15 @@
                                 "anchor": "dcc_replacement_howto",
                                 "active": false,
                                 "textblock": [
-                                    "If you receive a corresponding message in the Corona-Warn-App, you can voluntarily request a new vaccination certificate or recovery certificate free of charge via the app. After you have given your consent, the app transmits the certificate or several certificates for verification to the RKI, which issues an updated certificate and transmits it to your app. You can then find the updated certificate in the Certificates tab.",
-                                    "<ul> <li>The old certificate is automatically moved to the trash and deleted after 30 days. The old certificate can be restored at any time within the 30 days.</li> <li>The possibility of reissue begins 28 days before the expiration of the certificate and ends 90 days after the expiration of the certificate</li> <li><strong>IMPORTANT</strong>: The reissue can be done a maximum of three times within this period. Because of this limitation, we recommend that you export the reissued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if necessary. (see &quot;<a href='#eu_dcc_export' target='_blank'>How do I create a printout of my EU Digital COVID Certificate?</a>&quot;</li> </ul>"
+                                    "If you receive a corresponding message in the Corona-Warn-App, you can voluntarily request a new vaccination certificate or a certificate of recovery free of charge via the app. After you have given your consent, the app transmits the certificate or several certificates for verification to the RKI, which issues an updated certificate and transmits it to your app. You can then find the updated certificate in the Certificates tab.",
+                                    "<ul> <li>The old certificate is automatically moved to the recycle bin and deleted after 30 days. The old certificate can be restored at any time within the 30 days.</li> <li>The possibility of reissue begins 28 days before the expiration of the certificate and ends 90 days after the expiration of the certificate.</li> <li><strong>IMPORTANT</strong>: The reissue can be done a maximum of three times within this period. Because of this limitation, we recommend that you export the reissued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if necessary. (See &quot;<a href='#eu_dcc_export' target='_blank'>How do I create a printout of my EU Digital COVID Certificate?</a>&quot;</li> </ul>"
                                 ],
                                 "linkList": [
                                     {
                                         "title" : "Related FAQ articles:",
                                         "links" : [
                                             { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are newly issued?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
                                             { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
                                             { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
                                             { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
@@ -586,11 +586,11 @@
                                 ]
                             },
                             {
-                                "title": "Which EU digital COVID certificates are newly issued?",
+                                "title": "Which EU digital COVID certificates are being reissued?",
                                 "anchor": "dcc_replacement_which",
                                 "active": false,
                                 "textblock": [
-                                    "The following EU digital COVID certificates are newly issued: <ul> <li>Vaccination certificate with the latest date of issue</li> <li>Recovery Certificates</li> </ul>",
+                                    "The following EU digital COVID certificates are reissued: <ul> <li>Vaccination certificate with the latest date of issue</li> <li>Certificates of recovery</li> </ul>",
                                     "The following EU digital COVID certificates can <strong>not</strong> be exchanged: <ul> <li>Test certificates</li> <li>Blocked certificates</li> </ul>"
                                 ],
                                 "linkList": [
@@ -611,7 +611,7 @@
                                 "anchor": "dcc_replacement_vac_status",
                                 "active": false,
                                 "textblock": [
-                                    "Your vaccination status does not change when a certificate expires. You only need to reissue the corresponding certificate in the app to be able to prove your vaccination status via the Corona-Warn-App in the future. To do this, follow the instructions in the overview of your certificates."
+                                    "Your vaccination status does not change when a certificate expires. You only need to request the reissue of the corresponding certificate in the app to be able to prove your vaccination status via the Corona-Warn-App in the future. To do this, follow the instructions in the overview of your certificates."
                                 ],
                                 "linkList": [
                                     {
@@ -619,7 +619,7 @@
                                         "links" : [
                                             { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
                                             { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are newly issued?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
                                             { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
                                             { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
                                         ]
@@ -631,7 +631,7 @@
                                 "anchor": "dcc_replacement_issues",
                                 "active": false,
                                 "textblock": [
-                                    "<ul> <li>Only certificates relevant to vaccination status can be renewed, such as booster vaccinations or convalescent certificates.</li> <li>The certificate is valid even longer than 28 days.</li> <li>The certificate has already expired more than 90 days ago. In this case, reissuing within the app is no longer possible.</li> <li>Only certificates issued in Germany can be renewed via the app.</li> <li>The number of new exhibitions is limited to three new exhibitions per user.</li> <li>Your Corona-Warn-App has not been updated to version 2.23. Please perform an update.</li> </ul>"
+                                    "<ul> <li>Only certificates relevant to vaccination status can be renewed, such as booster vaccinations or certificates of recovery.</li> <li>The certificate is valid for longer than 28 days.</li> <li>The certificate already expired more than 90 days ago. In this case, reissuing within the app is no longer possible.</li> <li>Only certificates issued in Germany can be renewed via the app.</li> <li>A certificate can only be reissued a maximum of three times per user.</li> <li>Your Corona-Warn-App has not been updated to version 2.23. Please perform an update.</li> </ul>"
                                 ],
                                 "linkList": [
                                     {
@@ -639,7 +639,7 @@
                                         "links" : [
                                             { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
                                             { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are newly issued?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
                                             { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
                                             { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
                                         ]
@@ -1661,7 +1661,7 @@
                                 "active": false,
                                 "textblock": [
                                     "The error message with the code \"DCC_RI_429\" occurs if you try to reissue a certificate more than three times. This could happen, for example, if you want to have the certificate reissued on multiple devices. In this case, you can scan the QR code of the certificate from another device if you have already received the new, replaced certificate there.",
-                                    "Because of this limitation, we recommend that you export the newly issued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if needed (see <a href='#eu_dcc_export' target='_blank' >\"How do I create a printout of my EU Digital COVID Certificate?\"</a>).",
+                                    "Because of this limitation, we recommend that you export the reissued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if needed (see <a href='#eu_dcc_export' target='_blank' >\"How do I create a printout of my EU Digital COVID Certificate?\"</a>).",
                                     "See also: <a href='#dcc_replacement' target='_blank' >\"Can certificates be updated via the app?\"</a>"
                                 ]
                             },
