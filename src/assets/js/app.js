@@ -559,18 +559,24 @@ $(document).ready(function(){
                     if($(`${location.hash}`).hasClass("topic-container")) {
                         $($($($(`${location.hash}`).children()[0]).children()[0]).children()[0]).addClass("active");
                     }
+
                     //Open accordion and aim section title
-                    
                     if($(`${location.hash}`).hasClass("section-container")) {
                         $($(`${location.hash}`).parent().parent().parent().parent().children()[0]).addClass("active");
                     }
+
                     //Open accordion and aim question
-                    
                     if($(`${location.hash}`).hasClass("accordion-faq-item-title")){
                         $($(`${location.hash}`).parent().parent().parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
                     } 
+
+                    //Open glossary accordion
+                    if($(`${location.hash}`).hasClass("glossary-item-mobile-title")) {
+                        $($(`${location.hash}`).parent().parent().parent().parent().parent().parent().children()[0]).addClass("active");
+                    }
                 } 
                 const h3 =  $(`h3${location.hash}`);
+                const h5 = $(`h5${location.hash}`);
                 const topic = $(`${location.hash}.topic-title`);
                 const section = $(`${location.hash}.section-container`);
 
@@ -584,7 +590,11 @@ $(document).ready(function(){
                 } else if($(topic).length) { 
                     topic.click();
                     $(document).scrollTop(0)
-                } else if(hash === '#glossary') {
+                } else if ($(h5).length) {
+                    h5.click();
+                    if($(h5).hasClass("glossary-item-mobile-title")) $(document).scrollTop($(h5).offset().top);
+                }
+                 else if(hash === '#glossary') {
                     $('#glossary').click();
                 }
             },500)
