@@ -115,10 +115,8 @@ If authentication is successful, the data is forwarded to the survey and saved. 
 
 Email addresses are saved in a separate database as part of a special process called 2Secure together with the identification number (ID) automatically created by the [VOXCO](https://www.voxco.com) survey tool. This is done immediately after the basic survey has been completed. The link to the follow-up survey is sent automatically by email five days after the basic survey has been completed to participants who provided an email address. Once an invitation to the follow-up survey is sent, the email address is deleted from the database.
 
-<figure>
-    <img src="./fig_00_en.png" class="figure-img img-fluid" alt="Fig. 1: EDUS - technical process"/>
-    <figcaption aria-hidden="true"><em>Fig. 1: EDUS - technical process</em></figcaption>
-</figure>
+<img src="./fig_00_en.png" class="figure-img img-fluid" alt="Fig. 1: EDUS - technical process"/>
+<figcaption aria-hidden="true"><em>Fig. 1: EDUS - technical process</em></figcaption>
 
 ### 2.7 Survey period
 
@@ -916,10 +914,8 @@ The legend on the right-hand side of the mosaic plot contains two pieces of info
 
 Further explanations can be found in the [documentation](https://cran.r-project.org/web/packages/vcd/vignettes/strucplot.pdf) provided with the [R package vcd](https://CRAN.R-project.org/package=vcd).
 
-<figure>
-    <img src="./fig_07_en.png" class="figure-img img-fluid" alt="Fig. 8: EDUS - known and unknown contacts"/>
-    <figcaption aria-hidden="true"><em>Fig. 8: EDUS - known and unknown contacts</em></figcaption>
-</figure>
+<img src="./fig_07_en.png" class="figure-img img-fluid" alt="Fig. 8: EDUS - known and unknown contacts"/>
+ <figcaption aria-hidden="true"><em>Fig. 8: EDUS - known and unknown contacts</em></figcaption>
 
 <details>
 <summary>
@@ -1209,10 +1205,8 @@ In order to minimise the amount of data it collected, the EDUS did not ask any q
 
 The following uses a mosaic plot to visualise the relationships identified in the contingency table. Abbreviations are used on the axes: ‘On 5 - 6 days a week’ is abbreviated to ‘6’, etc. ‘Don’t know’ is abbreviated to ‘?’.
 
-<figure>
-    <img src="./fig_08_en.png" class="figure-img img-fluid" alt="Fig. 9: EDUS - contact in the professional context and with people the users knew."/>
-    <figcaption aria-hidden="true"><em>Fig. 9: EDUS - contact in the professional context and with people the users knew.</em></figcaption>
-</figure>
+<img src="./fig_08_en.png" class="figure-img img-fluid" alt="Fig. 9: EDUS - contact in the professional context and with people the users knew."/>
+<figcaption aria-hidden="true"><em>Fig. 9: EDUS - contact in the professional context and with people the users knew.</em></figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -1306,17 +1300,13 @@ The following uses a mosaic plot to visualise the relationships identified in th
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_09_en.png" class="figure-img img-fluid" alt="Fig. 10: EDUS - contact in the professional context and with unknown contacts."/>
-    <figcaption aria-hidden="true"><em>Fig. 10: EDUS - contact in the professional context and with unknown contacts.</em></figcaption>
-</figure>
+<img src="./fig_09_en.png" class="figure-img img-fluid" alt="Fig. 10: EDUS - contact in the professional context and with unknown contacts."/>
+<figcaption aria-hidden="true"><em>Fig. 10: EDUS - contact in the professional context and with unknown contacts.</em></figcaption>
 
 The relationships between the three types of contacts are summarised in the follow.
 
-<figure>
-    <img src="./fig_10_en.png" class="figure-img img-fluid" alt="Fig. 11: EDUS – contact in the professional context, and known and unknown contacts."/>
-    <figcaption aria-hidden="true"><em>Fig. 11: EDUS – contact in the professional context, and known and unknown contacts.</em></figcaption>
-</figure>
+<img src="./fig_10_en.png" class="figure-img img-fluid" alt="Fig. 11: EDUS – contact in the professional context, and known and unknown contacts."/>
+<figcaption aria-hidden="true"><em>Fig. 11: EDUS – contact in the professional context, and known and unknown contacts.</em></figcaption>
 
 <details>
     <summary>Responses provided about contact in the professional context </summary>
@@ -1547,12 +1537,10 @@ The following sets out the contingency table as well as a mosaic plot for the th
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_11_en.png"  alt="Fig. 12: EDUS - relationship between educational level and known contacts."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 12: EDUS - relationship between educational level and known contacts.</em>
-    </figcaption>
-</figure>
+<img src="./fig_11_en.png"  alt="Fig. 12: EDUS - relationship between educational level and known contacts."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 12: EDUS - relationship between educational level and known contacts.</em>
+</figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -1654,12 +1642,10 @@ The following sets out the contingency table as well as a mosaic plot for the th
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_12_en.png"  alt="Fig. 13: EDUS - relationship between educational level and unknown contacts."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 13: EDUS - relationship between educational level and unknown contacts.</em>
-    </figcaption>
-</figure>
+<img src="./fig_12_en.png"  alt="Fig. 13: EDUS - relationship between educational level and unknown contacts."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 13: EDUS - relationship between educational level and unknown contacts.</em>
+</figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -1794,12 +1780,10 @@ The following sets out the contingency table as well as a mosaic plot for the th
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_13_en.png"  alt="Fig. 14: EDUS - relationship between educational level and contact in the professional context."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 14: EDUS - relationship between educational level and contact in the professional context.</em>
-    </figcaption>
-</figure>
+<img src="./fig_13_en.png"  alt="Fig. 14: EDUS - relationship between educational level and contact in the professional context."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 14: EDUS - relationship between educational level and contact in the professional context.</em>
+</figcaption>
 
 
 <details>
@@ -2003,12 +1987,10 @@ The following sets out a contingency table and a mosaic plot for the three types
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_14_en.png"  alt="Fig. 15: EDUS - relationship between known contacts and infections."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 15: EDUS - relationship between known contacts and infections.</em>
-    </figcaption>
-</figure>
+<img src="./fig_14_en.png"  alt="Fig. 15: EDUS - relationship between known contacts and infections."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 15: EDUS - relationship between known contacts and infections.</em>
+</figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -2070,12 +2052,10 @@ The following sets out a contingency table and a mosaic plot for the three types
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_15_en.png"  alt="Fig. 16: EDUS - relationship between unknown contacts and infections."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 16: EDUS - relationship between unknown contacts and infections.</em>
-    </figcaption>
-</figure>
+<img src="./fig_15_en.png"  alt="Fig. 16: EDUS - relationship between unknown contacts and infections."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 16: EDUS - relationship between unknown contacts and infections.</em>
+</figcaption>
 
 <table class="gt_table">
   
@@ -2149,12 +2129,10 @@ The following sets out a contingency table and a mosaic plot for the three types
 </table>
 
 
-<figure>
-    <img src="./fig_16_en.png"  alt="Fig. 17: EDUS - relationship between contact in a professional context and infections."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 17: EDUS - relationship between contact in a professional context and infections.</em>
-    </figcaption>
-</figure>
+<img src="./fig_16_en.png"  alt="Fig. 17: EDUS - relationship between contact in a professional context and infections."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 17: EDUS - relationship between contact in a professional context and infections.</em>
+</figcaption>
 
 <details>
     <summary>Responses provided about test results</summary>
@@ -2512,12 +2490,10 @@ The data on which these results are based are listed in the following crosstab a
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_17_en.png"  alt="Fig. 18: EDUS - relationship between current measures and intended behavioural change."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 18: EDUS - relationship between current measures and intended behavioural change.</em>
-    </figcaption>
-</figure>
+<img src="./fig_17_en.png"  alt="Fig. 18: EDUS - relationship between current measures and intended behavioural change."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 18: EDUS - relationship between current measures and intended behavioural change.</em>
+</figcaption>
 
 <details>
     <summary>Responses about intended behavioural change after receiving a warning</summary>
@@ -2791,12 +2767,10 @@ Respondents who had believed that their risk of infection was ‘high’, ‘rat
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_18_en.png"  alt="Fig. 19: EDUS - relationship between perceived risk and intended behavioural change."/>
-    <figcaption aria-hidden="true">
-        <em>Fig. 19: EDUS - relationship between perceived risk and intended behavioural change.</em>
-    </figcaption>
-</figure>
+<img src="./fig_18_en.png"  alt="Fig. 19: EDUS - relationship between perceived risk and intended behavioural change."/>
+<figcaption aria-hidden="true">
+    <em>Fig. 19: EDUS - relationship between perceived risk and intended behavioural change.</em>
+</figcaption>
 
 <details>
     <summary>Responses about perceived risk</summary>

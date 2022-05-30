@@ -61,17 +61,13 @@ Die Differenz zwischen den im CWA-Backend bereitgestellten und den über die CWA
 
 Der zeitliche Verlauf (täglich und 7-Tage-Mittelwert) der oben genannten Kennzahlen (und zum Vergleich auch der [SARS-CoV-2-Neuinfektionen](https://github.com/robert-koch-institut/SARS-CoV-2_Infektionen_in_Deutschland)) ist in der folgenden Abbildung dargestellt (in [logarithmischer Darstellung](https://de.wikipedia.org/wiki/Logarithmische_Darstellung)).
 
-<figure>
-    <img src="./test_plot_de.png" class="figure-img img-fluid" alt="Über die CWA bereitgestellte und abgerufene Tests und deren Ergebnisse."/>
-    <figcaption aria-hidden="true">Abb. 1: Über die CWA bereitgestellte und abgerufene Tests und deren Ergebnisse.</figcaption>
-</figure>
+<img src="./test_plot_de.png" class="figure-img img-fluid" alt="Über die CWA bereitgestellte und abgerufene Tests und deren Ergebnisse."/>
+<figcaption aria-hidden="true">Abb. 1: Über die CWA bereitgestellte und abgerufene Tests und deren Ergebnisse.</figcaption>
 
 Aus den Daten der CWA-Datenspende ergibt sich, dass ein PCR-Testergebnis im Mittel 20 Stunden nach Testregistrierung übermittelt ist (die Hälfte innerhalb von 13 Stunden).
 
-<figure>
-    <img src="./ppa_delay_tr_pcr_plot_de.png" class="figure-img img-fluid" alt="Zeitverzug zwischen Testregistrierung und Erhalt des Testergebnisses (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 2: Zeitverzug zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_tr_pcr_plot_de.png" class="figure-img img-fluid" alt="Zeitverzug zwischen Testregistrierung und Erhalt des Testergebnisses (PCR)."/>
+<figcaption aria-hidden="true">Abb. 2: Zeitverzug zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).</figcaption>
 
 *Die Bereitstellung von Testergebnissen (PCR-Tests und Antigen-Schnelltests (RAT)) erfolgt also umfangreich und zügig.*
 
@@ -83,10 +79,8 @@ Der kurze Einbruch der Anzahl von rot gewarnten Personen Mitte August wurde durc
 
 Seit dem 5. März 2021 (für Vergleiche mit Daten der CWA-Datenspende müssen wir den Zeitpunkt berücksichtigen, seitdem diese Daten zur Verfügung stehen) haben 2.572.787 Personen über die CWA andere gewarnt, woraus wir auf etwa 19 (rot) gewarnte Personen pro warnender Person schließen können (Stand: 28. Februar 2022). Für Warnungen ohne ein erhöhtes Risiko ergibt sich ein mittlerer Wert von 12 (grün) gewarnten Personen pro warnender Person. In den letzten 30 Tagen lagen diese Verhältnisse bei 23 bzw. 13. In der folgenden Abbildung ist der zeitliche Verlauf von rot und grün gewarnten Personen pro warnende Person angegeben.
 
-<figure>
-    <img src="./ppa_estimate_ppa_warned_persons_plot_de.png" class="figure-img img-fluid" alt="Anzahl rot und grün gewarnter Personen pro warnende Person im zeitlichen Verlauf."/>
-    <figcaption aria-hidden="true">Abb. 3: Anzahl rot und grün gewarnter Personen pro warnende Person im zeitlichen Verlauf.</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_warned_persons_plot_de.png" class="figure-img img-fluid" alt="Anzahl rot und grün gewarnter Personen pro warnende Person im zeitlichen Verlauf."/>
+<figcaption aria-hidden="true">Abb. 3: Anzahl rot und grün gewarnter Personen pro warnende Person im zeitlichen Verlauf.</figcaption>
 
 Die vereinzelten hohen Ausschläge (im Juni, Mitte August und Mitte Oktober) entstanden durch kurze Einbrüche der CWA-Datenspende (mit anschließender Nachlieferung; siehe auch [Blog 4, 4.3](../2021-10-15-science-blog-4/#43-anzahl-der-spenden-im-zeitlichen-verlauf-nach-version-der-cwa)).
 
@@ -102,19 +96,15 @@ Die angegebenen Zahlen stimmen gut mit den Erkenntnissen aus der [ereignisbezoge
 
 Etwa jede fünfte Person, die eine rote Warnung zum Zeitpunkt der Testregistrierung (PCR) erhalten hatte, wurde positiv auf SARS-CoV-2 getestet. Bei denjenigen ohne Risikomitteilung war der Anteil zum Teil wesentlich geringer (siehe Abbildung und [Blog 4, 6.5](../2021-10-15-science-blog-4/#65-zusammenhang-zwischen-risikobewertung-und-infektion)).
 
-<figure>
-    <img src="./ppa_risk_infection_ct_timeline_pcr_de.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 4: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_timeline_pcr_de.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (PCR)."/>
+<figcaption aria-hidden="true">Abb. 4: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (PCR).</figcaption>
 
 Der hohe Positivenanteil aus der Testzahlenerfassung des RKI und für Personen ohne erhöhtes Risiko seit November 2021 ist durch die hohen Infektionszahlen in dieser Phase der Pandemie zu erklären und deutet auch auf eine hohe Auslastung der Labore hin. Ein PCR-Test wird erst auf begründeten Verdacht hin durchgeführt. Da viele Personen infiziert sind, wird dieser Verdacht auch oft bestätigt.
 
 Bei Antigen-Schnelltests ist dieses Verhältnis sogar noch überzeugender.
 
-<figure>
-    <img src="./ppa_risk_infection_ct_timeline_rat_de.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT)."/>
-    <figcaption aria-hidden="true">Abb. 5: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_timeline_rat_de.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT)."/>
+<figcaption aria-hidden="true">Abb. 5: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT).</figcaption>
 
 *Die Warnungen durch die CWA sind damit, trotz der bekannten Unzulänglichkeiten der BLE-Technologie, präzise und zuverlässig. Die CWA warnt die Richtigen.*
 
@@ -431,10 +421,8 @@ Aktualisierung und Differenzierung der Statusnachweise, Überarbeitung der Darst
 
 Um den Unterschied zwischen aktiven Nutzenden im engeren und erweiterten Sinne zu bestimmen, können wir ein Blick auf die Daten der CWA-Datenspende werfen. Neben den Angaben zu roten und grünen Warnungen, gibt es auch solche zu weißen Kacheln. Dies sind diejenigen, bei denen eine Bewertung des Risikos nicht möglich ist. Dafür kann es verschiedene Gründe geben: fehlende Netzwerkverbindungen, zu wenige Tage der Aufzeichnung von Begegnungen oder auch eine bewusste Deaktivierung der Risiko-Ermittlung. In jedem dieser Fälle kann die Kernfunktionalität nicht benutzt werden.
 
-<figure>
-    <img src="./ppa_white_plot_de.png" class="figure-img img-fluid" alt="Anteil der Nutzenden, bei denen die Risikoermittlung nicht möglich ist (CWA-Datenspende)."/>
-    <figcaption aria-hidden="true">Abb. 6: Anteil der Nutzenden, bei denen die Risikoermittlung nicht möglich ist (CWA-Datenspende).</figcaption>
-</figure>
+<img src="./ppa_white_plot_de.png" class="figure-img img-fluid" alt="Anteil der Nutzenden, bei denen die Risikoermittlung nicht möglich ist (CWA-Datenspende)."/>
+<figcaption aria-hidden="true">Abb. 6: Anteil der Nutzenden, bei denen die Risikoermittlung nicht möglich ist (CWA-Datenspende).</figcaption>
 
 Wir erkennen, dass es etwa 3,4% Nutzende gibt, die die Kernfunktionalität der CWA nicht nutzen. Der Unterschied zwischen Nutzenden im engeren und erweiterten Sinne ist damit sehr gering. Er könnte bei denjenigen, die nicht an der CWA-Datenspende teilnehmen, höher liegen. Hierzu liegen jedoch keine Daten vor.
 
@@ -446,30 +434,22 @@ Aufgrund der genannten Einschränkungen, kann die Anzahl der aktiven Nutzenden n
 
 Eine erste Möglichkeit der Schätzung der aktiven Nutzenden (im engeren Sinne) ergibt sich aus einem Vergleich der Anzahl der Warnenden (positiv getestete Personen, die ihre Schlüssel über die CWA teilen) mit der Anzahl der dem RKI übermittelten Neuinfektionen in Deutschland. Die folgende Abbildung zeigt den nahezu parallelen Verlauf dieser Kennzahlen.
 
-<figure>
-    <img src="./plot_au_estimate_1_warnings_infections_de.png" class="figure-img img-fluid" alt="Warnende angepasst an Neuinfektionen."/>
-    <figcaption aria-hidden="true">Abb. 7: Warnende angepasst an Neuinfektionen.</figcaption>
-</figure>
+<img src="./plot_au_estimate_1_warnings_infections_de.png" class="figure-img img-fluid" alt="Warnende angepasst an Neuinfektionen."/>
+<figcaption aria-hidden="true">Abb. 7: Warnende angepasst an Neuinfektionen.</figcaption>
 
 Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neuinfizierten angenommen. Tatsächlich hat sich dieses Verhältnis jedoch über die Zeit entwickelt. Der Unterschied am Ende ist durch den fehlenden Meldeverzug bei den Warnenden (und der Datenbereitstellung über das CWA-Ökosystem) gegenüber dem etablierten Meldesystem zu erklären. Des Weiteren sollten wir bei den Neuinfektionen die jüngeren Altersgruppen nicht berücksichtigen, da diese wegen der Altersbeschränkung (Nutzungszulassung ab 16 Jahren) nicht als Nutzende der CWA angenommen werden. Ebenso hängt der genannte Anteil — und damit die Schätzung — von der Teilungsrate ab, d.&nbsp;h. welcher Anteil derjenigen, die einen Test über die Corona-Warn-App registrieren, ihr Testergebnis erhalten und dieses dann auch mit anderen teilen. Diese Raten sind in der folgenden Abbildung dargestellt.
 
-<figure>
-    <img src="./plot_au_estimate_1_rates_de.png" class="figure-img img-fluid" alt="Teilungsrate und Verhältnis von Warnenden zu Neuinfektionen (unter Berücksichtigung der Altersgrenze)."/>
-    <figcaption aria-hidden="true">Abb. 8: Teilungsrate und Verhältnis von Warnenden zu Neuinfektionen (unter Berücksichtigung der Altersgrenze).</figcaption>
-</figure>
+<img src="./plot_au_estimate_1_rates_de.png" class="figure-img img-fluid" alt="Teilungsrate und Verhältnis von Warnenden zu Neuinfektionen (unter Berücksichtigung der Altersgrenze)."/>
+<figcaption aria-hidden="true">Abb. 8: Teilungsrate und Verhältnis von Warnenden zu Neuinfektionen (unter Berücksichtigung der Altersgrenze).</figcaption>
 
 Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.&nbsp;h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
 
-<figure>
-    <center><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></center>
-</figure>
+<center><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></center>
 
 können wir die Anzahl der aktiven Nutzenden bestimmen. Die folgende Abbildung zeigt den zeitlichen Verlauf dieser Schätzung.
 
-<figure>
-    <img src="./plot_au_estimate_1_estimate_de.png" class="figure-img img-fluid" alt="Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden."/>
-    <figcaption aria-hidden="true">Abb. 9: Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden.</figcaption>
-</figure>
+<img src="./plot_au_estimate_1_estimate_de.png" class="figure-img img-fluid" alt="Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden."/>
+<figcaption aria-hidden="true">Abb. 9: Schätzung der aktiven Nutzenden aus der Anzahl der Warnenden.</figcaption>
 
 Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrund des Meldeverzugs bei den Neuinfektionen: 25. Januar 2022 – 23. Februar 2022) erhalten wir damit 27 Mio. (KI: 21 Mio. – 33,3 Mio.).
 
@@ -477,18 +457,14 @@ Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrun
 
 Gegenwärtig spenden täglich mehr als 16 Mio. Nutzende ihre Daten (Stand: 28. Februar 2022). Aus dem im [vergangenen Blog-Beitrag](../2021-10-15-science-blog-4/#66-sch%C3%A4tzung-des-anteils-der-datenspendenden) geschätzten (und aktualisierten) Anteil der Datenspendenden können wir zusammen mit der Anzahl der CWA-Datenspenden die tägliche Anzahl der aktiven Nutzenden (im engeren Sinne) schätzen: 
 
-<figure>
-    <center><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></center>
-</figure>
+<center><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></center>
 
 Hierbei ist zu beachten, dass die Datenspenden von Geräten kommen, die Testergebnisse aber von Nutzenden. Für die letzten 30 Tage erhalten wir im Mittel 31 Mio. aktive Nutzende der Corona-Warn-App ([KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6).
 
 Die folgende Abbildung zeigt die entsprechenden täglichen Werte.
 
-<figure>
-    <img src="./ppa_estimate_ppa_active_user_estimate_plot_de.png" class="figure-img img-fluid" alt="Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden."/>
-    <figcaption aria-hidden="true">Abb. 10: Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden.</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_active_user_estimate_plot_de.png" class="figure-img img-fluid" alt="Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden."/>
+<figcaption aria-hidden="true">Abb. 10: Aus dem Anteil der Datenspendenden resultierende Schätzung der Anzahl der aktiven Nutzenden.</figcaption>
 
 ### 4.3 Aus einer Heuristik
 
@@ -498,26 +474,20 @@ Im [europäischen Vergleich](https://ec.europa.eu/info/live-work-travel-eu/coron
 
 In der folgenden Abbildung vergleichen wir die Downloadzahlen und die Schätzungen der Heuristik mit den [Daten der SwissCovidApp](https://www.experimental.bfs.admin.ch/expstat/de/home/innovative-methoden/swisscovid-app-monitoring.assetdetail.13407769.html). Gut zu erkennen ist hier der stetig wachsende Unterschied zwischen der Anzahl der Downloads und der Anzahl der aktiven Apps/Endgeräte bzw. Nutzenden.
 
-<figure>
-    <img src="./tsi_active_users_plot_de.png" class="figure-img img-fluid" alt="Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp."/>
-    <figcaption aria-hidden="true">Abb. 11: Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp.</figcaption>
-</figure>
+<img src="./tsi_active_users_plot_de.png" class="figure-img img-fluid" alt="Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp."/>
+<figcaption aria-hidden="true">Abb. 11: Vergleich von Downloadzahlen und aktiven Nutzenden bzw. aktiven Apps für Corona-Warn-App und SwissCovidApp.</figcaption>
 
 ## 5 Kennzahlen aus dem CWA-Backend
 
 Eine weitere Möglichkeit zur Abschätzung der aktiven Apps/Endgeräte (im engeren Sinne) sind die von den Nutzenden der CWA heruntergeladenen [Dateien der Tagesschlüssel](http://svc90.main.px.t-online.de/version/v1/diagnosis-keys/country/DE/date), die über das CWA-Backend zur Verfügung gestellt werden. Obwohl die CWA mehrmals am Tag die bis dahin anfallenden geteilten Tagesschlüssel abruft, erfolgt das Herunterladen der Tagespakete höchstens einmal am Tag. Wir analysieren im Folgenden die von [T-Systems International (TSI)](https://www.t-systems.com/) am 26. Januar 2022 bereitgestellten Daten, die 46 Tage abdecken (vom 4. Dezember 2021 bis zum 19. Januar 2022) und nach Betriebssystem aufgeschlüsselt sind. Wir erhalten hieraus 27,9 Mio. aktive Endgeräte bzw. 24,9 Mio. aktive Nutzende (am 19. Januar 2022).
 
-<figure>
-    <img src="./tsi_ad_plot_de.png" class="figure-img img-fluid" alt="Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI)."/>
-    <figcaption aria-hidden="true">Abb. 12: Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI).</figcaption>
-</figure>
+<img src="./tsi_ad_plot_de.png" class="figure-img img-fluid" alt="Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI)."/>
+<figcaption aria-hidden="true">Abb. 12: Aktive Endgeräte (im engeren Sinne) via Downloads von Tagesschlüssel-Dateien (TSI).</figcaption>
 
 Die Daten gestatten auch einen Blick auf den zeitlichen Verzug beim Abruf der Tagesschlüssel-Dateien. Wir sehen auch hier (vgl. [Nutzung der Kernfunktionalität](#32-nutzung-der-kernfunktionalit%C3%A4t)), dass nur ein geringer Anteil der aktiven Endgeräte die Risiko-Ermittlung später als gleich am Tag der Bereitstellung durchführt.
 
-<figure>
-    <img src="./tsi_ad_plot2_de.png" class="figure-img img-fluid" alt="Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI)."/>
-    <figcaption aria-hidden="true">Abb. 13: Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI).</figcaption>
-</figure>
+<img src="./tsi_ad_plot2_de.png" class="figure-img img-fluid" alt="Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI)."/>
+<figcaption aria-hidden="true">Abb. 13: Aktive Endgeräte (im engeren Sinne) nach Tagen seit letztem Abruf der Tagesschlüssel-Dateien (TSI).</figcaption>
 
 ## 6 Kennzahlen zur Nutzung aus den Stores
 
