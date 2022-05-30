@@ -137,9 +137,7 @@ Evidence of the app’s effectiveness – that its users infect fewer people tha
 In order to investigate the first point, an analysis needs to be conducted of the steps that are taken from testing through to a user receiving a warning, in addition to data that would show the length of delay between these steps and throughput rates.
 
 <div class="m-4">
-<figure>
 <video src="./BReg_Erklaerfilm_CoronaWarnApp-EN_Version_SD540px.mp4" class="w-100" controls="" alt="Corona-Warn-App - explanatory film"></video><figcaption aria-hidden="true"><em>Corona-Warn-App - explanatory film</em></figcaption>
-</figure>
 </div>
 
 
@@ -171,9 +169,7 @@ Finally, it is important to note that the basic functionality and reliability of
 
 <div class="m-4">
 
-<figure>
 <video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" alt="BLE measurements by Fraunhofer IIS to calibrate the parameters">BLE measurements by Fraunhofer IIS to calibrate the parameters</video><figcaption aria-hidden="true"><em>BLE measurements by Fraunhofer IIS to calibrate the parameters</em></figcaption>
-</figure>
 
 </div>
 
@@ -240,9 +236,7 @@ The [data sources](#which-figures-are-taken-into-account-in-the-evaluation-and-w
 These preliminary figures show that the CWA is effective and useful and that it continues to make an important contribution to breaking chains of infection. Moreover, the benefits associated with the CWA increase with each additional user that installs the app.
 
 <div class="m-4">
-<figure>
 <video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="" alt="Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district)">Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district)</video><figcaption aria-hidden="true"><em>Comparison of people warned by the CWA and newly infected people (data on warnings from data donation; only users with information about their local district) </em></figcaption>
-</figure>
 </div>
 
 ## More topics in the next few weeks
