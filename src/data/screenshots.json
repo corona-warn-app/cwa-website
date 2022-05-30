@@ -11,7 +11,7 @@
             "textblock": [
                 "Browse through the screenshots to get an overview of the features offered by the Corona-Warn-App with the release of Version 2.23 (available since June 1st, 2022). Please note that the screenshots may vary slightly between Android and iOS due to technical reasons.",
                 "With this update we provide new and enhanced features:",
-                "<b>Reissuance of certificates:</b> The validity of vaccination certificates is technically limited to 365 days. However, you can request a new certificate in the app. The reissuance can be made 28 days before the expiration of the validity and up to 90 days after the expiration. In the app, you will find a notice informing you when your certificate expires.",
+                "<b>Reissuance of certificates:</b> The validity of your currently used certificate is technically limited to 365 days. If your currently used certificate expires, the app offers you a renewal. The renewal can be done 28 days before expiration and up to 90 days after expiration. If you are not offered a reissuance, the certificate does not need to be reissued and no further steps are required from you.",
                 "The images provided on this page are available for free use."
             ]
         },
@@ -43,22 +43,24 @@
                 "anchor": "android_cards",
                 "description": "In this section you will find screenshots of the different risk cards. In each case, we show the risk tile on the status page and the corresponding detail view, which you can get to by tapping the tile in the app. First we show the low risk green tile with no encounters, then the low risk green tile with encounters, and finally the high risk red tile. You can reach the hygiene rules and minimize risk of infection by tapping on the 'i' in each case in the detailed view of the red tile in the app. Clicking on the respective text will take you to a screenshot that shows everything in one image.",
                 "images": [
-                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_low_risk_no_encounters", "alt": "Risk Cards image 1 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/no_risk_1", "alt": "Risk Cards image 2 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/no_risk_2", "alt": "Risk Cards image 3 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/no_risk_3", "alt": "Risk Cards image 4 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/iPhone 13-homescreenrisk_level_low_risk_one_day_0001", "alt": "Risk Cards image 5 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_1", "alt": "Risk Cards image 6 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_2", "alt": "Risk Cards image 7 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_3", "alt": "Risk Cards image 8 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_increased_risk", "alt": "Risk Cards image 9 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_1", "alt": "Risk Cards image 10 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_2", "alt": "Risk Cards image 11 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_3", "alt": "Risk Cards image 12 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_4", "alt": "Risk Cards image 13 of 16" },
-                    { "filename": "/assets/img/faq/hr_en", "alt": "Risk Cards image 14 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_1", "alt": "Risk Cards image 15 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_2", "alt": "Risk Cards image 16 of 16" }
+                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_low_risk_no_encounters", "alt": "Risk Cards image 1 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk", "alt": "Risk Cards image 2 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_3", "alt": "Risk Cards image 3 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_4", "alt": "Risk Cards image 4 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_test_negative", "alt": "Risk Cards image 5 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_1", "alt": "Risk Cards image 6 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_2", "alt": "Risk Cards image 7 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_3", "alt": "Risk Cards image 8 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_4", "alt": "Risk Cards image 9 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_increased_risk", "alt": "Risk Cards image 10 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_1", "alt": "Risk Cards image 11 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_2", "alt": "Risk Cards image 12 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_3", "alt": "Risk Cards image 13 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_5", "alt": "Risk Cards image 14 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_4", "alt": "Risk Cards image 15 of 18" },
+                    { "filename": "/assets/img/faq/hr_en", "alt": "Risk Cards image 16 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_1", "alt": "Risk Cards image 17 of 18" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_2", "alt": "Risk Cards image 18 of 18" }
                 ]
             },
             {
@@ -196,6 +198,17 @@
                 ]
             },
             {
+                "title": "Certificate Reissuance",
+                "anchor": "android_certificate_reissuance",
+                "description": "In this section you will find screenshots for renewing your certificates. You will be informed about the certificates to be renewed and asked to agree to renew them. At the end, you will be notified that your certificates have been successfully renewed and can be found in the Certificates tab.",
+                "images": [
+                    { "filename": "/assets/screenshots/2-23/en/android/DccReissuanceConsentFragment_1", "alt": "Certificate Reissuance image 1 of 1"},
+                    { "filename": "/assets/screenshots/2-23/en/android/DccReissuanceConsentFragment_2", "alt": "Certificate Reissuance image 2 of 2"},
+                    { "filename": "/assets/screenshots/2-23/en/android/DccReissuanceConsentFragment_3", "alt": "Certificate Reissuance image 3 of 3"},
+                    { "filename": "/assets/screenshots/2-23/en/android/DccReissuanceSuccessFragment", "alt": " Certificate Reissuance image 4 of 4"}
+                ]
+            },
+            {
                 "title": "Test Certificate",
                 "anchor": "android_test_certificate",
                 "description": "In this section you will find screenshots of \"Test Certificate\". If you press \"Continue\" at \"Manage Your Tests\" on the start page and then \"Request Test Certificate”, after that you have the option to scan a QR code and thus request a COVID test certificate. You still need to set your date of birth for your own safety, if the date is wrong, the test result will not be delivered. Lastly, on the \"Certificates\" page, you can view your test result and by pressing \"Check Validity for Travel\", you can check the travel validity and also get detailed information about your test result. ",
@@ -312,22 +325,23 @@
                 "anchor": "ios_cards",
                 "description": "In this section you will find screenshots of the different risk cards. In each case, we show the risk tile on the status page and the corresponding detail view, which you can get to by tapping the tile in the app. First we show the low risk green tile with no encounters, then the low risk green tile with encounters, and finally the high risk red tile. You can reach the hygiene rules and minimize risk of infection by tapping on the 'i' in each case in the detailed view of the red tile in the app. Clicking on the respective text will take you to a screenshot that shows everything in one image.",
                 "images": [
-                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_low_risk_no_encounters", "alt": "Risk Cards image 1 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/no_risk_1", "alt": "Risk Cards image 2 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/no_risk_2", "alt": "Risk Cards image 3 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/no_risk_3", "alt": "Risk Cards image 4 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/iPhone 13-homescreenrisk_level_low_risk_one_day_0001", "alt": "Risk Cards image 5 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_1", "alt": "Risk Cards image 6 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_2", "alt": "Risk Cards image 7 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_3", "alt": "Risk Cards image 8 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_increased_risk", "alt": "Risk Cards image 9 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_1", "alt": "Risk Cards image 10 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_2", "alt": "Risk Cards image 11 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_3", "alt": "Risk Cards image 12 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_4", "alt": "Risk Cards image 13 of 16" },
-                    { "filename": "/assets/img/faq/hr_en", "alt": "Risk Cards image 14 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_1", "alt": "Risk Cards image 15 of 16" },
-                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_2", "alt": "Risk Cards image 16 of 16" }
+                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_low_risk_no_encounters", "alt": "Risk Cards image 1 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk", "alt": "Risk Cards image 2 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_3", "alt": "Risk Cards image 3 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_low_risk_with_one_encounters_4", "alt": "Risk Cards image 4 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/iPhone 13-homescreenrisk_level_low_risk_one_day_0001", "alt": "Risk Cards image 5 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_1", "alt": "Risk Cards image 6 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_2", "alt": "Risk Cards image 7 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/low_risk_3", "alt": "Risk Cards image 8 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/HomeFragment_increased_risk", "alt": "Risk Cards image 9 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_1", "alt": "Risk Cards image 10 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_2", "alt": "Risk Cards image 11 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_3", "alt": "Risk Cards image 12 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/TracingDetailsFragment_tracing_increased_5", "alt": "Risk Cards image 13 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/android/high_risk_4", "alt": "Risk Cards image 14 of 17" },
+                    { "filename": "/assets/img/faq/hr_en", "alt": "Risk Cards image 15 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_1", "alt": "Risk Cards image 16 of 17" },
+                    { "filename": "/assets/screenshots/2-23/en/ios/minimize_risk_red_android_en_2", "alt": "Risk Cards image 17 of 17" }
                 ]
             },
             {
