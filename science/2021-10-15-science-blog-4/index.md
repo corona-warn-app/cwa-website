@@ -295,10 +295,8 @@ The clear differences in this chart between urban and rural areas and between ea
 
 The following graph depicts the relationship between population density and the number of donations per 100,000 inhabitants. The representation of each district on the graph is proportional to its number of inhabitants.
 
-<figure>
-    <img src="./ppa_user_urban_plot_en.png" class="figure-img img-fluid" alt="Participants by population density in urban and rural districts."/>
-    <figcaption aria-hidden="true">Figure 6: Participants by population density in urban and rural districts.</figcaption>
-</figure>
+<img src="./ppa_user_urban_plot_en.png" class="figure-img img-fluid" alt="Participants by population density in urban and rural districts."/>
+<figcaption aria-hidden="true">Figure 6: Participants by population density in urban and rural districts.</figcaption>
 
 The differences between urban and rural districts were strongest in eastern districts.
 In order to make the graph a bit easier to understand, these data are also displayed in an interactive graphic.
@@ -337,10 +335,8 @@ The large number of people who received a warning on 19 and 23 March is particul
 
 Figure 8 shows trends in the number of people who received a red or green warning. The graph is based on the [daily estimate]() of the percentage of users donating data, which was calculated using the number of tests registered in the app. Since the end of June, it is noticeable that green warnings have been sent out once again more frequently than red warnings (this still holds true when they are put in relation to one another). Increased mobility and the associated increase in contact with other people since the end of the “[Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_23._April_%E2%80%93_30._Juni_2021)” (the “federal emergency brake”) certainly plays a significant role here. Finally, the graph also demonstrates that, on average, each exposure registered in the app resulted in 8 people receiving a warning of an increased risk and 26 people receiving a warning of a low risk (with risk exposure).
 
-<figure>
-    <img src="./ppa_estimate_ppa_warned_persons_plot_en.png" class="figure-img img-fluid" alt="Number of people who received a red or green warning for each person who provided a warning, over time"/>
-    <figcaption aria-hidden="true">Figure 9: Number of people who received a red or green warning for each person who provided a warning, over time.</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_warned_persons_plot_en.png" class="figure-img img-fluid" alt="Number of people who received a red or green warning for each person who provided a warning, over time"/>
+<figcaption aria-hidden="true">Figure 9: Number of people who received a red or green warning for each person who provided a warning, over time.</figcaption>
 
 ### 5.3 Individuals warned during check-ins
 
@@ -365,19 +361,15 @@ We begin by analysing delays that can be estimated using data on test results re
 
 Information taken from the 1,567,815 donated records on PCR test results demonstrates that 395,157 tests (25.2%) were received within one hour of test registration. As such, these tests were not registered at the time they were carried out. Results from 1,172,212 tests (74.8%) were received within 24 hours. The following graph shows the hourly distribution of the delay between test registration and receipt of a test result. On average, test results were received 21 hours after test registration (median: 12 hours).
 
-<figure>
-    <img src="./ppa_delay_tr_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between test registration and receipt of a test result (PCR)."/>
-    <figcaption aria-hidden="true">Figure 11: Delay between test registration and receipt of a test result (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_tr_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between test registration and receipt of a test result (PCR)."/>
+<figcaption aria-hidden="true">Figure 11: Delay between test registration and receipt of a test result (PCR).</figcaption>
 
 The 2,373,969 donated records that provide a rapid antigen test result and information about the delay between test registration and receipt of a result demonstrate that 1,532,490 (64.6%) test results were received within one hour of test registration. In total, 2,175,533 (91.6%) tests were received within 24 hours. The following graph depicts the hourly distribution of the delay between test registration and receipt of a test result. On average, results were received 10.5 hours after registration (median: 0 hours).
 
 One reason for the relatively long delay between registration of a rapid antigen test and receipt of a test result is that the CWA does not continuously download test results. In order to receive a result as soon as possible, users need to call up their result manually. Although the CWA does attempt to do so automatically, the time needed to gain a result depends on the operating system in question and Internet availability. As such, these aspects can sometimes lead to long delays.
 
-<figure>
-    <img src="./ppa_delay_tr_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between test registration and receipt of a test result (rapid antigen test)."/>
-    <figcaption aria-hidden="true">Figure 12: Delay between test registration and receipt of a test result (rapid antigen test).</figcaption>
-</figure>
+<img src="./ppa_delay_tr_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between test registration and receipt of a test result (rapid antigen test)."/>
+<figcaption aria-hidden="true">Figure 12: Delay between test registration and receipt of a test result (rapid antigen test).</figcaption>
 
 
 ### 6.2 Delay between test registration and receipt of a warning
@@ -388,10 +380,8 @@ The following graph depicts the hourly distribution of the delay between receipt
 
 52,559 PCR tests (54%) were registered within 48 hours of a user having received a warning.
 
-<figure>
-    <img src="./ppa_delay_wt_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between receipt of a warning and test registration (by test result) (PCR)."/>
-    <figcaption aria-hidden="true">Figure 13: Delay between receipt of a warning and test registration (by test result) (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_wt_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between receipt of a warning and test registration (by test result) (PCR)."/>
+<figcaption aria-hidden="true">Figure 13: Delay between receipt of a warning and test registration (by test result) (PCR).</figcaption>
 
 Data on the delay between receipt of a warning and test registration are available for 42,611 rapid antigen tests.
 
@@ -399,26 +389,20 @@ The following graph demonstrates the hourly distribution of the delay between re
 
 25,518 rapid antigen tests (59.9%) were registered within 48 hours of a user having received a warning.
 
-<figure>
-    <img src="./ppa_delay_wt_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between receipt of a warning and test registration (by test result) (rapid antigen test)."/>
-    <figcaption aria-hidden="true">Figure 14: Delay between receipt of a warning and test registration (by test result) (rapid antigen test).</figcaption>
-</figure>
+<img src="./ppa_delay_wt_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between receipt of a warning and test registration (by test result) (rapid antigen test)."/>
+<figcaption aria-hidden="true">Figure 14: Delay between receipt of a warning and test registration (by test result) (rapid antigen test).</figcaption>
 
 ### 6.3 Delay between risk exposure and test registration
 
 The following graph depicts the daily distribution of the delay between risk exposure and registration of a PCR test. On average, PCR tests were registered 6 days after risk exposure (median: 6 days).
 
-<figure>
-    <img src="./ppa_delay_er_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and test registration (by number of days before test registration) (PCR)."/>
-    <figcaption aria-hidden="true">Figure 15: Delay between risk exposure and test registration (by number of days before test registration) (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_er_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and test registration (by number of days before test registration) (PCR)."/>
+<figcaption aria-hidden="true">Figure 15: Delay between risk exposure and test registration (by number of days before test registration) (PCR).</figcaption>
 
 The following graph depicts the daily distribution of the delay between risk exposure and the registration of a rapid antigen test. On average, tests were registered 7.4 days after risk exposure (median: 7 days).
 
-<figure>
-    <img src="./ppa_delay_er_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and test registration (by number of days before test registration) (rapid antigen test)."/>
-    <figcaption aria-hidden="true">Figure 16: Delay between risk exposure and test registration (by number of days before test registration) (rapid antigen test).</figcaption>
-</figure>
+<img src="./ppa_delay_er_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and test registration (by number of days before test registration) (rapid antigen test)."/>
+<figcaption aria-hidden="true">Figure 16: Delay between risk exposure and test registration (by number of days before test registration) (rapid antigen test).</figcaption>
 
 ### 6.4 Delay between risk exposure and receipt of a warning
 
@@ -426,23 +410,19 @@ The daily distribution of the delay between risk exposure and receipt of a warni
 
 As the following example demonstrates, the average delay between risk exposure and receipt of a warning (3.8 days) is quite short. Let us assume that person A meets person B on day 0 for approximately 2 hours, and that person A displays typical SARS-CoV-2 symptoms on day 1. If person A were to be tested on day 2, receive a positive PCR test result on day 3, and register the result immediately in the app, person B’s smartphone would receive a push notification on day 3 informing them that they had been exposed to an increased risk on day 0. This leads to a 3-day delay between risk exposure and receipt of a warning.
 
-<figure>
-    <img src="./ppa_delay_ew_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (days)."/>
-    <figcaption aria-hidden="true">Figure 17: Delay between risk exposure and receipt of a warning (days).</figcaption>
-</figure>
+<img src="./ppa_delay_ew_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (days)."/>
+<figcaption aria-hidden="true">Figure 17: Delay between risk exposure and receipt of a warning (days).</figcaption>
 
 The daily distribution of the delay between risk exposure and receipt of a warning results from the difference between the distribution of the delay between risk exposure and registration, on the one hand, and receipt of a warning and registration of a rapid antigen test, on the other. The following graph depicts the daily distribution of the delay between risk exposure and receipt of a warning. On average, warnings were received 5.4 days after risk exposure (median: 5 days).
 
-<figure>
-    <img src="./ppa_delay_ew_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (by days before the warning) (Rapid antigen test)."/>
-    <figcaption aria-hidden="true">Figure 18: Delay between risk exposure and receipt of a warning (by days before the warning) (Rapid antigen test). </figcaption>
-</figure>
+<img src="./ppa_delay_ew_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (by days before the warning) (Rapid antigen test)."/>
+<figcaption aria-hidden="true">Figure 18: Delay between risk exposure and receipt of a warning (by days before the warning) (Rapid antigen test). </figcaption>
 
 ### 6.5 Association between risk assessment and infection
 
 The data also provide information about whether people who received a warning from the CWA are more likely to test positive: in short, they are. More than one in five people who received a red warning before having registered a test went on to test positive for SARS-CoV-2. In contrast, the number of people who tested positive but did not receive a warning was less than half as high (see Fig. 18).
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -491,23 +471,19 @@ The data also provide information about whether people who received a warning fr
 
 </table>
 <figcaption aria-hidden="true">Table 1: Association between risk notification and test result (PCR). </figcaption>
-</figure>
+</div>
 
-<figure>
-    <img src="./ppa_risk_infection_ct_mosaic_pcr_en.png" class="figure-img img-fluid" alt="Association between risk notification and test result (PCR)."/>
-    <figcaption aria-hidden="true">Figure 19: Association between risk notification and test result (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_mosaic_pcr_en.png" class="figure-img img-fluid" alt="Association between risk notification and test result (PCR)."/>
+<figcaption aria-hidden="true">Figure 19: Association between risk notification and test result (PCR).</figcaption>
 
 The following graph demonstrates the percentage of positive test results by risk notification over time. The percentage of people who tested positive after having received a red warning remains relatively constant. A comparison with the [RKI test numbers ](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) shows similar figures in terms of the percentage of people who did not receive a warning but who still tested positive. The slightly higher proportion of people who tested positive is, on the one hand, due to differences in the underlying survey population. For example, children under the age of 16 rarely use the CWA. On the other hand, the RKI figures increasingly include routine and pooled test results that are probably rarely if ever submitted to the CWA.
 
-<figure>
-    <img src="./ppa_risk_infection_ct_timeline_pcr_en.png" class="figure-img img-fluid" alt="Proportion of positive tests by risk notification over time (PCR)."/>
-    <figcaption aria-hidden="true">Figure 20: Proportion of positive tests by risk notification over time (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_timeline_pcr_en.png" class="figure-img img-fluid" alt="Proportion of positive tests by risk notification over time (PCR)."/>
+<figcaption aria-hidden="true">Figure 20: Proportion of positive tests by risk notification over time (PCR).</figcaption>
 
 This same association is also clear for rapid antigen tests, even if the data on this are sparser (see Fig. 19).
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -556,19 +532,15 @@ This same association is also clear for rapid antigen tests, even if the data on
 
 </table>
 <figcaption aria-hidden="true">Table 2: Association between risk notification and test result (RAT).</figcaption>
-</figure>
+</div>
 
-<figure>
-    <img src="./ppa_risk_infection_ct_mosaic_rat_en.png" class="figure-img img-fluid" alt="Association between risk notification and test result (RAT)"./>
-    <figcaption aria-hidden="true">Figure 21: Association between risk notification and test result (RAT).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_mosaic_rat_en.png" class="figure-img img-fluid" alt="Association between risk notification and test result (RAT)"./>
+<figcaption aria-hidden="true">Figure 21: Association between risk notification and test result (RAT).</figcaption>
 
 The following graph demonstrates the proportion of positive tests by warning over time.
 
-<figure>
-    <img src="./ppa_risk_infection_ct_timeline_rat_en.png" class="figure-img img-fluid" alt="Proportion of positive tests by warning over time (PCR)."/>
-    <figcaption aria-hidden="true">Figure 22: Proportion of positive tests by warning over time (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_timeline_rat_en.png" class="figure-img img-fluid" alt="Proportion of positive tests by warning over time (PCR)."/>
+<figcaption aria-hidden="true">Figure 22: Proportion of positive tests by warning over time (PCR).</figcaption>
 
 ### 6.6 The percentage of users who donate data
 
@@ -576,19 +548,15 @@ The data on the number of test results registered via the CWA backend and those 
 
 The following graph depicts the percentage of donated test results (positive or negative) by test type (PCR or RAT (rapid antigen test)). The graph demonstrates the relationship between the test results donated on one particular day and the test results made available on the CWA Lab result server, either on the day before (in the case of PCR tests) or on the same day (in the case of RAT).
 
-<figure>
-    <img src="./ppa_estimate_ppa_response_rate_1_plot_en.png" class="figure-img img-fluid" alt="Relationship between the number of test results provided via CWA data donation and the number of test results registered via the backend (PCR/RAT and pos/neg)."/>
-    <figcaption aria-hidden="true">Figure 23: Relationship between the number of test results provided via CWA data donation and the number of test results registered via the backend (PCR/RAT and pos/neg).</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_response_rate_1_plot_en.png" class="figure-img img-fluid" alt="Relationship between the number of test results provided via CWA data donation and the number of test results registered via the backend (PCR/RAT and pos/neg)."/>
+<figcaption aria-hidden="true">Figure 23: Relationship between the number of test results provided via CWA data donation and the number of test results registered via the backend (PCR/RAT and pos/neg).</figcaption>
 
 The percentage of PCR test results that have been retrieved and transmitted via CWA data donation can also be related to the number of tests that were registered the day before. Doing so provides us with an estimate of the percentage of participants who donate their data: it averages 49% over the last 30 days.
 
 Because the percentage of people who donate their data is estimated using information about donated test results, it is impossible to use this figure to draw robust conclusions about the number of active users and/or devices on which the CWA is installed. However, we intend to devote a separate article to this issue.
 
-<figure>
-    <img src="./ppa_estimate_ppa_response_rate_plot_en.png" class="figure-img img-fluid" alt="Daily estimate of the proportion of data donors – based on the number of test results (CWA data donation) per test registration (backend)."/>
-    <figcaption aria-hidden="true">Figure 24: Daily estimate of the proportion of data donors – based on the number of test results (CWA data donation) per test registration (backend).</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_response_rate_plot_en.png" class="figure-img img-fluid" alt="Daily estimate of the proportion of data donors – based on the number of test results (CWA data donation) per test registration (backend)."/>
+<figcaption aria-hidden="true">Figure 24: Daily estimate of the proportion of data donors – based on the number of test results (CWA data donation) per test registration (backend).</figcaption>
 
 ## 7 What to expect in the future
 
