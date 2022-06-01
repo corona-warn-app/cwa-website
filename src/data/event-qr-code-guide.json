@@ -1,0 +1,162 @@
+{
+    "section-main": {
+        "headline": {
+            "title": "How do I use the official Corona-Warn-App QR code tool?"
+        },
+        "intro": "This step-by-step guide will help you to create QR codes one by one or several QR codes at once.",
+        "step1": {
+            "title": "<b>Step 1: Installing node.js on your Windows PC</b>",
+            "text": "Open the website <a href='https://nodejs.org/en/'>https://nodejs.org/en/</a>, download the 'LTS version', and install it after successful download.",
+            "image": {
+                "url": "/assets/img/event-qr-code-guide/nodejs-website.png",
+                "alt": "node.js installation"
+            },
+            "text2": "<hr/> We explicitly point out that you should <b>not</b> set the checkmark at the following pop-up window. The installation can also be done without this additional option. <br/> <br/> <center> <b>Window text : </b> <br/> <em>Some npm modules need to be compiled from C/C++ when installing. If you want to be able to install such modules, some tools (Python and Visual Studio Build Tools) need to be installed. <br> <br> [ ] Automatically install the necessary tools. Note that this will also install Chocolatey. The script will pop-up in a new window after the installation completes. <br> <br> Alternatively, follow the instructions at https://github.com/nodejs/node-gyp#on-windows to install the dependencies yourself. </em> </center>  ",
+            "image2": {
+                "url": "/assets/img/event-qr-code-guide/nodejs-setup.png",
+                "alt": "node.js check"
+            },
+            "text3": "<hr/> When the installation is completed successfully, you will see the following confirmation: <br/> <br/> <center> <b> Window text : </b> <em> <br/> <h4> Completed the Node.js setup wizard</h4> <br/> Click the 'Finish' button to exit the setup wizard. <br/> <br/> Node.js has been successfully installed</em> </center>.   ",
+            "image3": {
+                "url": "/assets/img/event-qr-code-guide/nodejs-setup2.png",
+                "alt": "node.js confirmation of installation"
+            }
+        },
+        "step2": {
+            "title": "<hr/><b>Step 2: Opening and using the command prompt</b>",
+            "text": "If you want to do this step faster, you can download a batch file that will make you skip the following sub-steps <a href=/assets/documents/setupEventQRCodeGenerator.bat>here</a>. Download the file and run it, then you can go directly to step 3. If you prefer the manual way, type 'cmd' in the taskbar in the field illustrated below.",
+            "image": {
+                "url": "/assets/img/event-qr-code-guide/taskbar.png",
+                "alt": "Taskbar"
+            },
+            "text2": "Open the suggested 'Command Prompt' application by clicking on it.",
+            "image2": {
+                "url": "/assets/img/event-qr-code-guide/taskbar-search.png",
+                "alt": "Taskbar: searching for command prompt"
+            },
+            "text3": "<hr/> The following window will open: <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;...> </em> </center> ",
+            "image3": {
+                "url": "/assets/img/event-qr-code-guide/cmd-first-start.png",
+                "alt": "Command prompt"
+            },
+            "text4": "<hr/> Copy the bracketed text (<b>npm install cwa-event-qr-code --global</b>), paste it into the command prompt window using the key combination Ctrl + V, and confirm your input afterwards with the 'Enter' key. <br> <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;...> npm install cwa-event-qr-code --global </center> </em>",
+            "image4": {
+                "url": "/assets/img/event-qr-code-guide/cmd-install-cwa-tool.png",
+                "alt": "Corona-Warn-App QR code creation tool installation"
+            },
+            "text5": "<hr/> After successful execution, a confirmation is displayed: <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;...> npm install cwa-event-qr-code --global <br/> C:&bsol;Users&bsol;...&bsol;AppData&bsol;Roaming&bsol;npm&bsol;cwa-event-qr-code -> C:&bsol;Users&bsol;...&bsol;AppData&bsol;Roaming&bsol;npm&bsol;node_modules&bsol;cwa-event-qr-code&bsol;bin&bsol;cli <br/> > protobufjs@6.10.2 postinstall C:&bsol;Users&bsol;...&bsol;AppData&bsol;Roaming&bsol;npm&bsol;node_modules&bsol;cwa-event-qr-code&bsol;node_modules&bsol;protobufjs <br/> > node scripts&bsol;postinstall <br/> <br/> + cwa-event-qr-code@1.3.0 <br/> added 79 packages from 121 contributors in 3.59s <br/> <br/> C:&bsol;Users&bsol;... >  </em> </center>",
+            "image5": {
+                "url": "/assets/img/event-qr-code-guide/cmd-cwa-tool-confirmation.png",
+                "alt": "Corona-Warn-App QR code creation tool successfull installation"
+            },
+            "text6": "Then copy the following 4 comma-separated input commands, paste them one by one and confirm them in the same order: <b>cd /d %USERPROFILE%/Downloads, mkdir event-qr-codes, cd event-qr-codes, mkdir qr-codes-results</b>. This will result in a new folder called 'event-qr-codes' being created in your downloads folder, where the fourth input command will create another folder called 'qr-codes-results'. Make sure to keep the command prompt opened."
+        },
+        "step3": {
+            "title": "<b>Step 3: Use of the example file</b>",
+            "text": "<a href='/assets/documents/tables.csv'>Click here</a> to download the sample file that's now required. The sample file 'tables.csv' must be moved to the newly created folder 'event-qr-codes'. (if you used the batch file before, it was created automatically)",
+            "image": {
+                "url": "/assets/img/event-qr-code-guide/folder-event-qr-codes.png",
+                "alt": "Sample file in correct folder"
+            },
+            "text2": "Later you can completely adjust this sample file to your individual use."
+        },
+        "step4": {
+            "title": "<b>Step 4: Converting the .csv file to QR-codes</b>",
+            "text": "If you want to do this step faster, you can download another batch file <a href='/assets/documents/generateEventQRCodes.bat'>here</a> that will make you skip the following sub-steps, and will help you in the future when creating your QR codes for your own use. Save it in the 'event-qr-codes' folder you created. So if you are using the batch file, you should proceed to the last sub-step in step 4. If not, go back to the command prompt that is ideally still open. If you accidentally closed the command prompt after step 2, you can restart the command prompt, and use the command <b>cd /d %USERPROFILE%/Downloads/event-qr-codes</b> to get to the starting point you now need. So now to convert the .csv file data to the quality of QR codes, copy the bracketed text (<b>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results</b>), paste it with the key combination already mentioned above and confirm your input with the 'Enter' key. <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;... > cd /d %USERPROFILE/Downloads  <br/> C:&bsol;Users&bsol;...&bsol;Downloads>mkdir event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads>cd event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes>mkdir qr-codes-results <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes><u>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results</u>  </center> </em> ",
+            "image": {
+                "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-csv.png",
+                "alt": "Converting .csv file to QR codes"
+            },
+            "text2": "<hr/> After successful input, the command prompt will confirm the creation of the desired QR codes. <br> <center> <b> Window text : </b> <br/> <em> Microsoft Windows [Version 10.0.19041.388] <br/> (c) 2020 Microsoft Corporation. Alle Rechte vorbehalten <br/> C:&bsol;Users&bsol;... > cd /d %USERPROFILE/Downloads  <br/> C:&bsol;Users&bsol;...&bsol;Downloads>mkdir event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads>cd event-qr-codes <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes>mkdir qr-codes-results <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes>cwa-event-qr-code file --csv tables.csv --dest qr-codes-results <br/> Created qr-codes-results&bsol;qr_table3.png <br/> Created qr-codes-results&bsol;qr_table1.png <br/> Created qr-codes-results&bsol;qr_table2.png <br/> Created qr-codes-results&bsol;qr_table4.png <br/> Created qr-codes-results&bsol;qr_table5.png <br/> Created qr-codes-results&bsol;qr_bar.png <br/> Done creating 6 QR code(s). <br/> <br/> C:&bsol;Users&bsol;...&bsol;Downloads&bsol;event-qr-codes> </center> </em>",
+            "image2": {
+                "url": "/assets/img/event-qr-code-guide/cmd-cwa-convert-confirmation.png",
+                "alt": "Confirmation of successfull convertion"
+            },
+            "text3": "You can now access the created QR codes as follows: Open your Downloads folder, open the 'event-qr-codes' folder inside it, and then open the 'qr-codes-results' folder inside it. All the QR codes you have created will be there.",
+            "image3": {
+                "url": "/assets/img/event-qr-code-guide/folder-results.png",
+                "alt": "Created QR codes in destination folder"
+            }
+        },
+        "step5": {
+            "title": "<b>Step 5: Continous use with your own data</b>",
+            "text": "Now that you have successfully created the sample QR codes, with the help of the following information, you should be able to customize the required .csv file entirely to your own functional area. Open the sample file in Excel.",
+            "image": {
+                "url": "/assets/img/event-qr-code-guide/excel.png",
+                "alt": "Sample file in excel"
+            },
+            "text2": "Adjust the data below the first line according to your needs. Ideally, do not change anything in the first line, as its entire content must remain present, but the order does not matter. Further information on the individual columns and their meaning can be found in the two following tables. To perform the creation process from now on it is best to start at step 4 again, but to save yourself some time you can also use the batch file we provide, at the beginning of step 4. If you plan to rename the sample file based on your intended use, keep in mind that you will then need to use your own file name instead of 'tables.csv'. If you have already used the batch file, have adjusted your data and want to create new QR Codes, but have <b>not</b> changed the name of the .csv file, run the batch file again with a double click. If you have changed the name of the .csv file, there are the following ways to adjust the batch file to it. Either open the command prompt (see step 2) and enter these two comma-separated lines one by one: '<b>cd /d %USERPROFILE%/Downloads/event-qr-codes, generateEventQRCodes.bat FILENAME.csv</b>', or edit the batch file and replace the name where 'tables.csv' is with your file name."
+        },
+        "table1": {
+            "title": "<b>Table 1: Explanation of each column</b>",
+            "column1": {
+                "head": "Column",
+                "row1": "filepath",
+                "row2": "description",
+                "row3": "address",
+                "row4": "startdate",
+                "row5": "enddate",
+                "row6": "type",
+                "row7": "defaultcheckinlengthinminutes"
+            },
+            "column2": {
+                "head": "Additional information",
+                "row1": "The name of the file that's about to be created, including its file extension (if you're using 'file', only use .png or .svg, if you're using 'poster' only use .pdf). Make sure not to use the same name twice!",
+                "row2": "Details of the place of use (will be displayed in the first line on posters)",
+                "row3": "Address of the place of use (will be displayed in the second line on posters)",
+                "row4": "The first time the QR-code will be used. Your input must fit this format: <i>year-month-dayThour:minute</i>. Example: <i>2021-09-16T12:00</i> (not required for 'places', see table 2)",
+                "row5": "The last time the QR-code will be used. Your input must fit the format mentioned above. (not required for 'places', see table 2)",
+                "row6": "The type of use. Take a look at the second table, where we listed all possible types.",
+                "row7": "The time people will usually spend at your place of use. This is only a recommendation, people will still be able to change their time."
+            }
+        },
+        "table2": {
+            "title": "<b>Table 2: Explanation of each type</b>",
+            "column1": {
+                "head": "Type value",
+                "row1": "1",
+                "row2": "2",
+                "row3": "3",
+                "row4": "4",
+                "row5": "5",
+                "row6": "6",
+                "row7": "7",
+                "row8": "8",
+                "row9": "9",
+                "row10": "10",
+                "row11": "11",
+                "row12": "12"
+            },
+            "column2": {
+                "head": "Art",
+                "row1": "Other place",
+                "row2": "Other event",
+                "row3": "Retail",
+                "row4": "Hospitality",
+                "row5": "Craft business",
+                "row6": "Workspace",
+                "row7": "Education facility",
+                "row8": "Public building",
+                "row9": "Cultural event",
+                "row10": "Club activities",
+                "row11": "Private party",
+                "row12": "Religious service"
+            },
+            "column3": {
+                "head": "Place or event?",
+                "row1": "Place",
+                "row2": "Event",
+                "row3": "Place",
+                "row4": "Place",
+                "row5": "Place",
+                "row6": "Place",
+                "row7": "Place",
+                "row8": "Place",
+                "row9": "Event",
+                "row10": "Event",
+                "row11": "Event",
+                "row12": "Event"
+            }
+        }
+    }
+}

@@ -15,14 +15,21 @@ const sitemap = require('gulp-sitemap');
 const rimraf = require('rimraf');
 const webp = require('gulp-webp');
 const jsonTransform = require('gulp-json-transform');
-const { processBlogFiles } = require('./src/services/blog-processor');
+const { processBlogFiles, getBlogEntries } = require('./src/services/blog-processor');
+const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
 var rename = require("gulp-rename");
+const analyseConfig = require("./src/data/analyse.json");
+const fetch = require('node-fetch');
+var pluginSass = require('gulp-sass')(require('node-sass'));
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
+
+// Check for --skip-compression flag
+const SKIP_COMPRESSION = yargs.argv.skipCompression;
 
 // Load config from config.yml
 const { COMPATIBILITY, PORT, UNCSS_OPTIONS, PATHS } = loadConfig();
@@ -36,6 +43,8 @@ function isCI() {
   return !!process.env.CI;
 }
 
+console.log('PRODUCTION: ', PRODUCTION);
+
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task(
@@ -43,22 +52,33 @@ gulp.task(
   gulp.series(
     clean,
     cleanBlogs,
+    cleanScienceBlogs,
     buildBlogFiles,
+    buildScienceBlogFiles,
+    analyseData,
+    cwaaJs,
+    javascript,
     gulp.parallel(
-      pages, javascript, images_minify, copy, copyFAQs, copyFAQRedirects
+      pages, images_minify, copy, copyFAQs, copyFAQRedirects, copyFAQsDuplicate, copyBlogEntries
     ),
     images_webp,
     sass,
     build_sitemap,
     createFaqRedirects,
-    replaceVersionNumbers
+    replaceVersionNumbers,
+    deleteTmpFiles,
+    AddEnglishSpecifier
   )
 );
 
 gulp.task('blog', gulp.series(cleanBlogs, buildBlogFiles));
+gulp.task('science', gulp.series(cleanScienceBlogs, buildScienceBlogFiles));
+
+// Run the server, and watch for file changes
+gulp.task('start-server', gulp.series(server, watch));
 
 // Build the site, run the server, and watch for file changes
-gulp.task('default', gulp.series('build', server, watch));
+gulp.task('default', gulp.series('build', 'start-server'));
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -70,6 +90,9 @@ function cleanBlogs(done) {
   rimraf(PATHS.blogOutputs, done);
 }
 
+function cleanScienceBlogs(done) {
+  rimraf(PATHS.blogScienceOutputs, done);
+}
 const folders = [
   PATHS.dist,
   PATHS.dist + '/.well-known'
@@ -96,11 +119,42 @@ function copyBlogImgs() {
   ])
   .pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
+function copyScienceBlogImgs() {
+  return gulp.src([
+    'science/**/*',
+    '!science/**/*.md'
+  ])
+  .pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+}
+
 // Prepare blog .md files to be used as HTML
 function buildBlogFiles(done) {
   copyBlogImgs();
   processBlogFiles();
   done();
+}
+// Prepare science blog .md files to be used as HTML
+function buildScienceBlogFiles(done) {
+  copyScienceBlogImgs();
+  processScienceBlogFiles();
+  done();
+}
+
+function analyseData(){
+  async function fallbackdataFn() {
+    const response  = await fetch(analyseConfig.fetchUrl, {method: 'GET'})
+    const data = await response.json();
+    return JSON.stringify(data); 
+  }
+
+  return fallbackdataFn().then(e => {
+    fs.writeFileSync('src/data/analyse-backup.json', e, {flag: 'w'});
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
+  }).catch(e => {
+    const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
+    if(!fs.existsSync("public")) fs.mkdirSync("public")
+    return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, {flag: 'w'});
+  })
 }
 
 // Copy page templates into finished HTML files
@@ -140,35 +194,44 @@ function sass() {
     .src('src/assets/scss/style.scss')
     .pipe($.sourcemaps.init())
     .pipe(
-      $.sass({
+      pluginSass({
         includePaths: PATHS.sass
-      }).on('error', $.sass.logError)
+      }).on('error', pluginSass.logError)
     )
     .pipe($.postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
 
-let webpackConfig = {
-  mode: PRODUCTION ? 'production' : 'development',
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            compact: false
+function cwaaJs() {
+  return gulp
+    .src(PATHS.cwaa)
+    .pipe(named())
+    .pipe($.sourcemaps.init())
+    .pipe(webpackStream({
+      mode: PRODUCTION ? 'production' : 'development',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: [/node_modules/],
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+                compact: false
+              }
+            }
           }
-        }
-      }
-    ]
-  },
-  devtool: !PRODUCTION && 'source-map'
-};
+        ]
+      },
+      devtool: 'source-map'
+    }, webpack2))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+}
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -177,16 +240,26 @@ function javascript() {
     .src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe(
-      $.if(
-        PRODUCTION,
-        $.uglify().on('error', e => {
-          console.error('Uglify error', e);
-        })
-      )
-    )
-    .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
+    .pipe(webpackStream({
+      mode: PRODUCTION ? 'production' : 'development',
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: [/node_modules/],
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env'],
+                compact: false
+              }
+            }
+          }
+        ]
+      },
+      devtool: 'source-map'
+    }, webpack2))
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
@@ -204,7 +277,9 @@ function images_minify() {
 function images_webp() {
   return gulp
     .src('src/assets/img/**/*')
-    .pipe(webp())
+    .pipe(
+        $.if(!SKIP_COMPRESSION, webp())
+    )
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
@@ -214,21 +289,103 @@ function copyFAQs(done){
   done();
 }
 
+function copyFAQsDuplicate(done){
+  copyFAQDuplicate("de");
+  copyFAQDuplicate("en");
+  done();
+}
+
 function copyFAQ(lang) {
   return gulp
     .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
     .pipe(jsonTransform(function (data, file) {
       let faq = {}
-      data['section-main'].sections.forEach((section) => {
-        section.accordion.forEach((faqEntry) => {
-          let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
-          faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            if(faqEntry.duplicate !== undefined) {
+              data['section-main'].topics.forEach((dtopic) => {
+                dtopic.sections.forEach((dsection) => {
+                  dsection.accordion.forEach((dfaqEntry) => {
+                    if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                      if(!faq[`${dfaqEntry.anchor}_dup_${section.id}`]) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        let searchEntry = result.title + " " + result.textblock.join(" ");
+                        faq[result.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+                      }
+                    }
+                  })
+                })
+              })
+            } else {
+              let searchEntry = faqEntry.title + " " + faqEntry.textblock.join(" ");
+              faq[faqEntry.anchor] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ');
+            }
+          })
         })
       });
       return faq;
     }))
     .pipe(rename('faq.json'))
-    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/`));
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
+}
+function copyFAQDuplicate(lang) {
+  return gulp
+    .src(`src/data/faq${(lang === "en" ? "" : ("_" + lang))}.json`)
+    .pipe(jsonTransform(function (data, file) {
+      const faq = [];
+      data['section-main'].topics.forEach((topic) => {
+        topic.sections.forEach((section) => {
+          section.accordion.forEach((faqEntry) => {
+            if(faqEntry.duplicate !== undefined) {
+              const exist = faq.some(question => question.anchor === `${faqEntry.duplicate}_dup_${section.id}`)
+              if(!exist) {
+                data['section-main'].topics.forEach((dtopic) => {
+                  dtopic.sections.forEach((dsection) => {
+                    dsection.accordion.forEach((dfaqEntry) => {
+                      if(dfaqEntry.duplicate === undefined && dfaqEntry.anchor === faqEntry.duplicate) {
+                        const result = {...dfaqEntry};
+                        result.anchor = `${dfaqEntry.anchor}_dup_${section.id}`;
+                        faq.push(result)
+                      }
+                    })
+                  })
+                })
+              }
+            }
+          })
+        })
+      });
+      return faq;
+    }))
+    .pipe(rename('faq_duplicate.json'))
+    .pipe(gulp.dest(PATHS.dist + `/${lang}/faq/results/`));
+}
+
+function copyBlogEntries(done) {
+  copyBlog("de", "src/data/searchable_blogentries_de.json");
+  copyBlog("en", "src/data/searchable_blogentries.json");
+  done();
+}
+
+function copyBlog(lang, tmpFilePath) {
+  let blogEntries = getBlogEntries(lang);
+  fs.writeFileSync(tmpFilePath, JSON.stringify(blogEntries));
+
+  return gulp
+  .src(tmpFilePath)
+  .pipe(jsonTransform(function (data, file) {
+    let searchable_blogentries = {}
+    data.forEach((blogentry) => {
+        let searchEntry = blogentry.title + " " + blogentry.pageDescription + " " + blogentry.htmlContent;
+        searchable_blogentries[blogentry.slug] = searchEntry.toLowerCase().replace( /(<([^>]+)>)/ig, ' ').replace(/\s+/g, " ");
+    });
+    return searchable_blogentries;
+  }))
+  .pipe(rename('searchable_blogentries.json'))
+  .pipe(gulp.dest(PATHS.dist + `/${lang}/blog/`));
+
 }
 
 function copyFAQRedirects() {
@@ -238,7 +395,26 @@ function copyFAQRedirects() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init(
-    {
+    { // mirror server headers to dev env
+      middleware: function (req, res, next) {
+
+        let CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        if(req.url.indexOf("/science") != -1){
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:";
+        }else if(req.url.indexOf("/analysis") != -1){
+          CSP = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.coronawarn.app; img-src 'self' *.coronawarn.app data:; connect-src 'self' https://obs.eu-de.otc.t-systems.com/";
+        }
+
+        res.setHeader("Content-Security-Policy", CSP);
+
+        res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains; preload");
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("X-Frame-Options", "DENY");
+        res.setHeader("X-XSS-Protection", "1");
+        
+
+        next();
+      },
       server: {
         baseDir: PATHS.dist,
         serveStaticOptions: {
@@ -270,7 +446,14 @@ function watch(done) {
     .watch('blog/**/*')
     .on('all', gulp.series(buildBlogFiles, pages));
   gulp
-    .watch('src/pages/**/*.html')
+    .watch('science/**/*')
+    .on('all', gulp.series(buildScienceBlogFiles, pages));  
+    //
+    // exclude output of buildBlogFiles and buildScienceBlogFiles from watching of pages
+  gulp
+    .watch(['src/pages/**/*.html',
+      '!' + PATHS.blogOutputs, '!' + PATHS.blogOutputs + '*',
+      '!' + PATHS.blogScienceOutputs, '!' + PATHS.blogScienceOutputs + '*'])
     .on('all', gulp.series(pages, reload));
   gulp
     .watch('src/{layouts,partials}/**/*.html')
@@ -283,8 +466,11 @@ function watch(done) {
     .on('all', gulp.series(resetPages, pages, reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp
-    .watch('src/assets/js/**/*.js')
+    .watch(['src/assets/js/**/*.js', '!src/assets/js/analyse/**/*'])
     .on('all', gulp.series(javascript, reload));
+  gulp
+    .watch('src/assets/js/analyse/**/*.js')
+    .on('all', gulp.series(cwaaJs, reload));
   gulp
     .watch('src/assets/img/**/*')
     .on('all', gulp.series(images_minify, images_webp, reload));
@@ -323,13 +509,27 @@ function createFaqRedirects() {
 // replaces some values inside json that cant be replaced with handlebars expression since they are inside json
 function replaceVersionNumbers() {
   return gulp
-    .src([PATHS.dist + "/**/*.html"])
-    .pipe(replace('[ios.latest-os-version]', '14.4.2'))
+    .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
+    .pipe(replace('[ios.latest-os-version]', '15.5'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '1.15.2'))
-    .pipe(replace('[android.latest-os-version]', '11'))
+    .pipe(replace('[ios.current-app-version]', '2.22.1'))
+    .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '1.15.2'))
+    .pipe(replace('[android.current-app-version]', '2.22.1'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
+}
+
+function deleteTmpFiles(done) {
+  rimraf("src/data/searchable_blogentries_de.json", done);
+  rimraf("src/data/searchable_blogentries.json", done);
+}
+
+function AddEnglishSpecifier() {
+  const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'))
+  let task = gulp.src([PATHS.dist + "/**/*.html"]);
+  data.texts.forEach((value) => {
+      task = task.pipe(replace(' ' + value + ' ', `<span lang="en"> ${value} </span>`));
+  });
+  return task.pipe(gulp.dest(PATHS.dist))
 }

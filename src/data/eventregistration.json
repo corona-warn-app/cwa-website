@@ -1,0 +1,148 @@
+{
+    "section-main": {
+        "headline": {
+            "title": "Create QR code for event check-in"
+        },
+        "intro": "The app now allows a check-in for events and locations. People who host events or have a business can now create a QR code. By scanning the QR code, guests can check in upon arrival to register their presence. If desired, the app will also create a corresponding journal entry. If a checked-in person later tests positive for the coronavirus, other people who were checked in at the same time can be warned.",
+        "introCLI": " You can create QR codes in the app or here on this page. Alternatively, you can also use <a href='https://github.com/corona-warn-app/cwa-event-qr-code'>our official QR code utility</a> to generate several QR codes at once, for example. <a href='../event-qr-code-guide/'>Click here</a> for a detailed guide on how to use the official QR code utility.",
+        "introMultiQR": "The CSV file must follow the template as shown <a href='/en/event-qr-code-guide/'>here</a> in step 5. To get started <a href='/assets/documents/tables.csv'>use this sample file</a>.",
+        "disclaimer": "All information is processed only locally in your browser. Neither the QR codes you generate nor the information they contain are sent to the Corona-Warn-App servers. The source code of the generator is freely available for viewing.",
+        "qrsGeneratedInfo": "# page(s) and $ QR codes have been generated.",
+        "tabs": {
+            "single": "Generate single QR code",
+            "multi": "Generate multiple QR codes"
+        },
+        "requiredFields": "Required field",
+        "form": {
+            "fields": {
+                "locationtype": "Place/Event",
+                "description": "Description",
+                "address": "Place",
+                "defaultcheckinlength": "Typical length of stay",
+                "defaultcheckinlength-hours": "Hours",
+                "defaultcheckinlength-minutes": "Minutes",
+                "starttime": "Start",
+                "starttime-date": "Date (TT.MM.YYYY)",
+                "starttime-time": "Time (HH:MM)",
+                "endtime": "End",
+                "endtime-date": "Date (TT.MM.YYYY)",
+                "endtime-time": "Time (HH:MM)",
+                "show": "Create",
+                "download": "Save",
+                "downloadMessage": "This can take a while",
+                "print": "Print",
+                "csvFile": "Load data from CSV file",
+                "layout": "Layout"
+            },
+            "placeholders": {
+                "description": "e.g. Hairdresser",
+                "address": "e.g. Sample Street 12, 12345 Sample City",
+                "defaultcheckinlength": "e.g. 45"
+            },
+            "errors": {
+                "locationtyperequired": "The location type is required",
+                "descriptionrequired": "The description is required",
+                "descriptionmax": "The description can only have a maximum of 100 characters",
+                "addressrequired": "The address is required",
+                "addressmax": "The address can only have a maximum of 100 characters",
+                "defaultcheckinlengthrequired": "The typical length of stay is required",
+                "defaultcheckinlengthnumber": "The checkout time needs to be a number",
+                "starttimerequired": "Start is required",
+                "endtimerequired": "End is required",
+                "invaliddate": "Invalid date format",
+                "invalidtime": "Invalid time format",
+                "filerequired": "You must import a CSV file",
+                "wrongfileextension": "The file extension is not valid. Only accepts .csv files",
+                "wrongfileheaders": "The headers of the .csv file do not correspond to the headers of the corresponding template, you can check it <a href='../event-qr-code-guide/'>here</a>",
+                "wrongfileformatfields": "Some field on your CSV is not filled correctly. Please check your .csv and try it again",
+                "filewithnodata": "Your .csv fields are not filled",
+                "fileoverloaded": "The creation of QR codes is limited to 100.",
+                "olddate": "Date/Time must be in the future",
+                "endtimebeforestarttime": "End date/time must be later than start date/time"
+            },
+            "dateplaceholder": "DD.MM.YYYY",
+            "timeplaceholder": "HH:MM",
+            "locationtypes_initial": "Please choose",
+            "locationtypes_header_place": "Place",
+            "locationtypes_places": [
+                {
+                    "id": 5,
+                    "name": "Craft business"
+                },
+                {
+                    "id": 7,
+                    "name": "Education facility"
+                },
+                {
+                    "id": 4,
+                    "name": "Hospitality"
+                },
+                {
+                    "id": 8,
+                    "name": "Public building"
+                },
+                {
+                    "id": 3,
+                    "name": "Retail"
+                },
+                {
+                    "id": 6,
+                    "name": "Workplace"
+                },
+                {
+                    "id": 1,
+                    "name": "Other place"
+                }
+            ],
+            "locationtypes_header_event": "Event",
+            "locationtypes_events": [
+                {
+                    "id": 10,
+                    "name": "Club activities"
+                },
+                {
+                    "id": 9,
+                    "name": "Cultural event"
+                },
+                {
+                    "id": 11,
+                    "name": "Private party"
+                },
+                {
+                    "id": 12,
+                    "name": "Religious service"
+                },
+                {
+                    "id": 2,
+                    "name": "Other event"
+                }
+            ],
+            "layout_options": [
+                {
+                    "option": "1x1"
+                },
+                {
+                    "option": "2x1"
+                },
+                {
+                    "option": "2x2"
+                },
+                {
+                    "option": "3x3"
+                },
+                {
+                    "option": "4x2"
+                },
+                {
+                    "option": "4x4"
+                },
+                {
+                    "option": "5x5"
+                },
+                {
+                    "option": "6x3"
+                }
+            ]
+        }
+    }
+}

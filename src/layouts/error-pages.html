@@ -9,7 +9,9 @@
     {{#if global.favicon}}
     {{> favicon favicon=global.favicon}}
     {{/if}}
-
+    <meta property="og:title" content="{{page-title}}" />
+    <meta property="og:description" content="{{#if page-description}}{{page-description}}{{/if}}" />
+    <meta property="og:image" content="https://www.coronawarn.app/assets/img/icons/preview-icon.png" />
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <title>{{page-title}}</title>
   </head>
@@ -18,9 +20,9 @@
     flattened page is created. --}} 
     
     {{> header-for-error-pages}} 
-    <div class="main-content">
+    <main class="main-content" role="main">
     {{> body}}
-    </div>
+    </main>
     {{> footer language=global.lang.en}}
   </body>
 </html>

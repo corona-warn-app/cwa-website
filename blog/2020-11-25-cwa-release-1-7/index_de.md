@@ -18,10 +18,9 @@ Mit Corona-Warn-App Version 1.7 kann die **Risikoüberprüfung mehrmals täglich
 
 Des Weiteren erhalten Nutzer\*innen zwei Stunden nachdem sie das positive Testergebnis in der App geöffnet haben, eine **Erinnerung das Ergebnis zu teilen**, sofern das noch nicht geschehen ist. Nach weiteren vier Stunden erfolgt eine zweite Erinnerung sollte der oder die Nutzer\*in das Testergebnis dann noch nicht geteilt haben. Mit einem Klick auf die Erinnerung gelangen Nutzer\*innen direkt zur Funktion zum Teilen ihres Ergebnisses.  
  
-<img src="./reminder-test-result-1-7.jpg" title="Corona-Warn-App Reminder to Share Test Result" style="valign: center">
+<img src="./reminder-test-result-1-7.jpg" title="Corona-Warn-App Erinnerung zum Teilen des Tests" alt="Corona-Warn-App Erinnerung zum Teilen des Tests" style="valign: center">
  
-Zudem wurden **weitere Verbesserungen** eingearbeitet, wie beispielsweise ein harmonischeres Zusammenspiel von App und QR-Code. Zusätzlich wurden kleinere Bugs behoben. Unter anderem erscheint die [Fehlermeldung 'ExposureDetectionIsAlreadyRunning'](https://www.coronawarn.app/de/faq/#ExposureDetectionIsAlreadyRunning), die Nutzer\*innen fälschlicherweise angezeigt wurde, in CWA Version 1.7 nicht mehr.  
+Zudem wurden **weitere Verbesserungen** eingearbeitet, wie beispielsweise ein harmonischeres Zusammenspiel von App und QR-Code. Zusätzlich wurden kleinere Bugs behoben. Unter anderem erscheint die [Fehlermeldung 'ExposureDetectionIsAlreadyRunning'](/de/faq/#ExposureDetectionIsAlreadyRunning), die Nutzer\*innen fälschlicherweise angezeigt wurde, in CWA Version 1.7 nicht mehr.  
 
 Mit Einführung von Version 1.7 der Corona-Warn-App wurde auf einen **kontrollierten Rollout** in den App Stores umgestellt, da mittlerweile ein sehr hohes Downloadaufkommen der Corona-Warn-App vorherrscht. Das bedeutet: Die App wird den Nutzer\*innen in Wellen zur Verfügung gestellt. Dieses Verfahren ist üblich bei Apps mit solch einer großen Reichweite.
 Während die Nutzer\*innen im Apple Appstore manuell ein Update anstoßen können, besteht diese Möglichkeit im Google Play Store nicht. Hier kann es vorkommen, dass die neue Version der Corona-Warn-App bis zu 48 Stunden später zur Verfügung steht.
-

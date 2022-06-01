@@ -1,8 +1,8 @@
 {{#if page-contents}}
-<section class="section-main">
+<section class="section-main comment">
     <div class="container">
-        <div class="row align-items-lg-end justify-content-lg-between">
-            <div class="col col-12 col-sm-10 col-md-8 col-lg-6">
+        <div class="row pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5 justify-content-lg-between">
+            <div class="col col-12 col-sm-10 col-md-8 col-lg-6 pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5">
                 <h5 class="caption-headline caption-headline_blue">{{page-contents.section-main.headline.titlecaption}}</h5>
                 <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
                 <p>{{page-contents.section-main.content.text}}</p>
@@ -17,7 +17,17 @@
                         </a>
                     </u>
                 </p>
-                <p class="btn-block text-left">
+                <p>
+                    <u>
+                        <a href="{{#if lang_de}}{{global.wherecanigettested.de.link}}{{else}}{{global.wherecanigettested.en.link}}{{/if}}">
+                            {{#if lang_de}}
+                                {{global.wherecanigettested.de.text}}
+                            {{else}}
+                                {{global.wherecanigettested.en.text}}
+                            {{/if}}
+                        </a>
+                    </u>
+                </p>                <p class="btn-block text-left">
                     {{> button-component
                     button=page-contents.section-main.content.button
                     icon='github'}}<br>
@@ -45,7 +55,7 @@
 section-class='section-sticky section_bg-white hidden js-section-sticky'
 section-cancelable=true}}
 
-<section class="section_bg-white" {{#if page-contents.section-works-best.id}}
+<section class="section_bg-white comment" {{#if page-contents.section-works-best.id}}
     id="{{page-contents.section-works-best.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-works-best}}
@@ -58,7 +68,7 @@ section-cancelable=true}}
                     <img class="image-overflow image-overflow_left"
                         src="{{page-contents.section-works-best.image.url}}"
                         title="{{page-contents.section-works-best.image.title}}"
-                        alt="{{page-contents.section-works-best.image.alt}}"
+                        alt=""
                         />
                 </picture>
 
@@ -75,7 +85,7 @@ section-cancelable=true}}
     </div>
 </section>
 
-<section class="" {{#if page-contents.section-image-ticker.id}}
+<section class="comment" {{#if page-contents.section-image-ticker.id}}
     id="{{page-contents.section-image-ticker.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-image-ticker.headline}}
@@ -84,16 +94,20 @@ section-cancelable=true}}
         </div>
         {{/if}}
         {{#if page-contents.section-image-ticker.image-ticker}}
+        <ol class="list">
         {{#each page-contents.section-image-ticker.image-ticker}}
-        <div class="row align-items-center">
-            {{#if image}}{{> image-ticker this=.
-            text-cls='text-block_indented'}}{{/if}}
-        </div>
+            <li class="list-item">
+                <div class="row align-items-center">
+                    {{#if image}}{{> image-ticker this=.
+                    text-cls='text-block_indented'}}{{/if}}
+                </div>
+            </li>
         {{/each }}
+        </ol>
         {{/if}}
     </div>
 </section>
-<section data-e2e="blog-slider" class="section_bg-gradient section_bg-skew" {{#if
+<section data-e2e="blog-slider" class="section_bg-gradient section_bg-skew comment" {{#if
     page-contents.section-boxes.id}} id="{{page-contents.section-boxes.id}}"
     {{/if}}>
     <div class="container">
@@ -144,7 +158,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="section_bg-white" {{#if page-contents.section-image-text.id}}
+<section class="section_bg-white comment" {{#if page-contents.section-image-text.id}}
     id="{{page-contents.section-image-text.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-image-text}}
@@ -157,7 +171,7 @@ section-cancelable=true}}
                     <img class="image-overflow image-overflow_left"
                         src="{{page-contents.section-image-text.image.url}}"
                         title="{{page-contents.section-image-text.image.title}}"
-                        alt="{{page-contents.section-works-best.image.alt}}"
+                        alt=""
                         />
                 </picture>
 
@@ -173,7 +187,7 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="section-feature-listing section_bg-light" {{#if
+<section class="section-feature-listing section_bg-light comment" {{#if
     page-contents.section-feature-listing.id}}
     id="{{page-contents.section-feature-listing.id}}" {{/if}}>
     <div class="container">
@@ -194,7 +208,7 @@ section-cancelable=true}}
                 <li class="list-item col col-12 col-md-6">
                     <div class="text-block_indented">
                         <span class="numeration">
-                            <img class="icon" src="/assets/img/icons/virus.svg" alt="Coronavirus - COVID-19" />
+                            <img class="icon" src="/assets/img/icons/virus.svg" alt="" />
                         </span>
                         {{>text-component this=.}}
                     </div>
@@ -213,18 +227,18 @@ section-cancelable=true}}
         {{/if}}
     </div>
 </section>
-<section class="" {{#if page-contents.section-icon-listing.id}}
+<section class="comment" {{#if page-contents.section-icon-listing.id}}
     id="{{page-contents.section-icon-listing.id}}" {{/if}}>
     <div class="container">
         {{#if page-contents.section-icon-listing}}
         <div class="text-center container-inner container-inner_sm">
             {{> headline-component page-contents.section-icon-listing.headline}}
         </div>
-        {{> icon-list-component page-contents.section-icon-listing}}
+            {{> icon-list-component page-contents.section-icon-listing}}
         {{/if}}
     </div>
 </section>
-<section class="section-intersect section_bg-light section_bg-skew" {{#if
+<section class="section-intersect section_bg-light section_bg-skew comment" {{#if
     page-contents.section-join-project.id}}
     id="{{page-contents.section-join-project.id}}" {{/if}}>
     <div class="container contents-normal">
@@ -246,7 +260,7 @@ section-cancelable=true}}
                         {{#each
                         page-contents.section-join-project.box.content.links}}
                         <a class="btn btn-link btn-link_narrow btn-link_icon"
-                            title="{{title}}" alt="{{title}}" href="{{url}}">{{title}}<span
+                            title="{{title}}" href="{{url}}">{{title}}<span
                                 class="icon icon_arrow-right"></span></a>
                         {{/each}}
                     </div>
@@ -260,7 +274,7 @@ section-cancelable=true}}
 section-class='section-intersect section_bg-white'}}
 {{#unless @root.get-app-enabled}}
 {{#if page-contents.section-soon-available}}
-<section class="section-intersect section_bg-white">
+<section class="section-intersect section_bg-white comment">
     <div class="container contents-normal text-center">
         {{> headline-component page-contents.section-soon-available.headline}}
     </div>

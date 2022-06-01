@@ -16,9 +16,9 @@ A new update for the Corona-Warn-App is now available in both the Google Play St
 
 ## Support of the EU Interoperability Gateway   
 
-The new version 1.5 of the German Corona-Warn-App supports the new European interoperability gateway service, which allows national contact tracing and warning apps to interact with each other.  After successful installation of the new version, users will receive detailed information about the connection to the European interoperability gateway as well as the adapted [data protection guidelines](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-en.pdf) and [terms of use](https://www.coronawarn.app/assets/documents/cwa-eula-en.pdf) when they start the app for the first time. 
+The new version 1.5 of the German Corona-Warn-App supports the new European interoperability gateway service, which allows national contact tracing and warning apps to interact with each other.  After successful installation of the new version, users will receive detailed information about the connection to the European interoperability gateway as well as the adapted [data protection guidelines](/assets/documents/cwa-privacy-notice-en.pdf) and [terms of use](/assets/documents/cwa-eula-en.pdf) when they start the app for the first time. 
 
-<img src="./efgs_en.jpg" title="European interoperability gateway service">
+<img src="./efgs_en.jpg" title="European interoperability gateway service" alt="European interoperability gateway service">
 
 Both Android and iOS users can get access to this list via “Exposure Logging” on the top of the home of the app, where they have to go to “Transnational Exposure Logging” afterwards to see all the participating countries at a glance.
 
@@ -34,7 +34,7 @@ After receiving a positive test result, users can now voluntarily record their s
 
 Users who wish to record their symptoms are asked to enter the start of their symptoms in a calendar.   
 
-<img src="./symptoms_en.jpg" title="Symptom Recording">
+<img src="./symptoms_en.jpg" title="Symptom Recording" alt="Symptom Recording">
 
 </br>
 

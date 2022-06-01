@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
  
-Deutsche Telekom and SAP’s project team have released the Corona-Warn-App’s next update that will be available to users within the next 48 hours. With version 1.13, users now have the option to **voluntarily donate data** to help improve the app. In addition, the app now includes a link to a **scientific survey** conducted by the Robert Koch-Institut (RKI).
+Deutsche Telekom and SAP’s project team have released the Corona-Warn-App’s next update that will be available to users within the next 48 hours. With version 1.13, users now have the option to **voluntarily donate data** to help improve the app. In addition, the app now includes a link to a **scientific survey** conducted by the Robert Koch Institute (RKI).
 
 <!-- overview -->
 
@@ -27,7 +27,7 @@ When users open the Corona-Warn-App for the first time after the update to versi
 
 <br></br>
 
-<center> <img src="./DataOnboarding_EN.png" title="Pop-Up Window Data Donation" style="align: center"> <img src="./DataSettings_EN_1.png" title="Data donation settings" style="align: center"> <img src="./DataSettings_EN_2.png" title="consent form" style="align: center"> </center>
+<center> <img src="./DataOnboarding_EN.png" title="Pop-Up Window Data Donation" alt="Pop-Up Window Data Donation" style="align: center"> <img src="./DataSettings_EN_1.png" title="Data donation settings" alt="Data donation settings" style="align: center"> <img src="./DataSettings_EN_2.png" title="consent form" alt="consent form" style="align: center"> </center>
 <br></br>
 
 

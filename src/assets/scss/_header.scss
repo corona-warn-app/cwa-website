@@ -10,6 +10,15 @@
         flex: 0 0 auto;
         overflow: hidden;
     }
+
+    &:focus {
+        //outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 2px solid white!important;
+        box-shadow: 0 0 0 2px black!important;
+    }
 }
 
 .header {
@@ -120,6 +129,7 @@
     .nav-link {
         @media(min-width: $screen-md){
              color: inherit;
+             fill: white;
         }
     }
     .navbar{
@@ -212,6 +222,10 @@
                 text-transform: uppercase;
 
                 .nav-link {
+                    &:after{
+                        display: none; 
+                    }
+
                     &,
                     &:hover {
                         padding-left: 0.3rem;
@@ -272,8 +286,8 @@
                         position: absolute;
                         bottom: $spacer * 0.6;
                         border-top: 2px solid $white;
-                        left: $spacer;
-                        right: $spacer;
+                        left: $spacer * 0.8;
+                        right: $spacer * 0.8;
                     }
                 }
             }
@@ -297,5 +311,47 @@
                 }
             }
         }
+    }
+}
+
+.subheader {
+    background: #D4EAF7;
+}
+
+.skip-main { 
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+
+    &:focus, &:active {
+        color: #fff;
+        background-color:#000;
+        left: auto;
+        top: auto;
+        width: 30%;
+        height: auto;
+        overflow:auto;
+        margin: 10px 35%;
+        padding:5px;
+        border-radius: 15px;
+        border:4px solid yellow;
+        text-align:center;
+        font-size:1.2em;
+        z-index:999;
+    }
+}
+
+a:not([class]) > :not(img){
+    &:focus {
+        //outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: 2px solid white!important;
+        box-shadow: 0 0 0 2px black!important;
     }
 }

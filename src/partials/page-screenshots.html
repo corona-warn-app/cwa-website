@@ -1,59 +1,122 @@
 {{#if page-contents}}
 <script src="/assets/js/lazyload.js"></script>
-<section class="section">
-    <div class="container">
-        <div class="container-inner container-inner_lg">
-            <div class="row">
-                <div class="col ">
-                {{> headline-component page-contents.section-main.headline}}
-                {{> text-component page-contents.section-main.content}}
-                </div>
+<section class="section comment">
+    <div class="container container_flex">
+        <a class="skip-main" href="#top">Skip to main content</a>
+        <aside class="side-menu js-menu" id="side-menu" role="region" aria-label="{{page-contents.section-main.side-menu.description}}">
+            <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
+            <ul id="ios_menu" class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
+              {{#each page-contents.ios-screenshots.sections}}
+              <li class="nav-item">
+                <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
+              </li>
+              {{/each}}
+            </ul>
+
+            <ul id="android_menu" class="nav nav-aside flex-column js-scroll-navigate" data-target="main">
+                {{#each page-contents.android-screenshots.sections}}
+                <li class="nav-item">
+                  <a class="nav-link nav-link-left-menu{{#if active}} active{{/if}}"{{#if anchor}} href="#{{anchor}}"{{/if}}>{{{title}}}</a>
+                </li>
+                {{/each}}
+              </ul>
+        </aside>
+        <div class="main" id="top" tabindex="-1">
+            {{> headline-component page-contents.section-main.headline}}
+            {{> text-component page-contents.section-main.content}}
+
+            <div class="d-flex justify-content-sm-end position-relative mb-3 mb-sm-0">
+                <select name="archived-screenshots" class="form-select form-select-sm w-auto position-sm-absolute">
+                    {{#if lang_de}}
+                        {{#each global.screenshots.archive-dropdown}}
+                            <option value="/de{{link}}" >{{version}}</option>
+                        {{/each}}
+                    {{else}}
+                        {{#each global.screenshots.archive-dropdown}}
+                            <option value="/en{{link}}">{{version}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
             </div>
             
-            <nav>
+            <nav aria-label="{{page-contents.section-main.navigation.description}}">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screnshots.tab-title}}</a>
-                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screnshots.tab-title}}</a>
+                    <a class="nav-item nav-link active" href="#android_screenshots">{{page-contents.android-screenshots.tab-title}}</a>
+                    <a class="nav-item nav-link" href="#ios_screenshots">{{page-contents.ios-screenshots.tab-title}}</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="android_screenshots">
-                    {{#each page-contents.android-screnshots.sections}}
-                        <div class="row">
-                            <h3 class="headline my-4">{{{title}}}</h3>
+                    {{#each page-contents.android-screenshots.sections}}
+                            <h3 id="{{{anchor}}}" class="headline my-4">{{{title}}}</h3>
+                            {{#if description}}
+                            <p>{{{description}}}</p>
+                            {{/if}}
+                            <ul class="row list-inline">
                             {{#each images}}
-                                <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                    <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
-                                        <!-- webp for faster load times, if supported by browser -->
-                                        <picture>
-                                            <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
-                                            <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
-                                            <img loading="lazy" data-src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
-                                        </picture>
+                                <li class="col-6 col-sm-4 col-md-3 mb-4">
+                                    <a href="{{{filename}}}.png" class="screenshot" data-lightbox="{{{../anchor}}}">
+                                        <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
                                     </a>
-                                </div>
+                                </li>
                             {{/each}}
-                        </div>
+                            </ul>
+                            <p>
+                                <a href="#{{{anchor}}}">
+                                    {{#if ../lang_de}}
+                                        {{../global.screenshots.anchorText.de}}
+                                    {{else}}
+                                        {{../global.screenshots.anchorText.en}}
+                                    {{/if}}
+                                </a>
+                            </p>
+                            <p>
+                                <a href="#top">
+                                    {{#if ../lang_de}}
+                                        {{../global.screenshots.toTopText.de}}
+                                    {{else}}
+                                        {{../global.screenshots.toTopText.en}}
+                                    {{/if}}
+                                </a>
+                            </p>
+                            <hr/>
                     {{/each}}
                 </div>
                 <div class="tab-pane fade" id="ios_screenshots">
-                    {{#each page-contents.ios-screnshots.sections}}
-                    <div class="row">
-                        <h3 class="headline my-4">{{{title}}}</h3>
+                    {{#each page-contents.ios-screenshots.sections}}
+                        <h3 id="{{anchor}}" class="headline my-4">{{{title}}}</h3>
+                        {{#if description}}
+                        <p>{{{description}}}</p>
+                        {{/if}}
+                        <ul class="row list-inline">
                         {{#each images}}
-                            <div class="col-6 col-sm-4 col-md-3 mb-4">
-                                <a href="/assets/img/screenshots/{{{filename}}}.png" data-lightbox="{{{../anchor}}}">
-                                    <!-- webp for faster load times, if supported by browser -->
-                                    <picture>
-                                        <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.webp" type="image/webp">
-                                        <source class="lazy" data-srcset="/assets/img/screenshots/{{{filename}}}.png" type="image/png">
-                                        <img loading="lazy" data-src="/assets/img/screenshots/{{{filename}}}.png" class="img-fluid img-shadow lazy" alt="{{{alt}}}" title="{{{alt}}}">
-                                    </picture>
+                            <li class="col-6 col-sm-4 col-md-3 mb-4">
+                                <a href="{{{filename}}}.png" class="screenshot" data-lightbox="{{{../anchor}}}">
+                                    <img loading="lazy" data-src="{{{filename}}}.png" class="img-fluid img-shadow lazy " alt="{{{alt}}}" title="{{{alt}}}">
                                 </a>
-                            </div>
+                            </li>
                         {{/each}}
-                    </div>
-                {{/each}}
+                        </ul>
+                        <p>
+                            <a href="#{{{anchor}}}">
+                                {{#if ../lang_de}}
+                                    {{../global.screenshots.anchorText.de}}
+                                {{else}}
+                                    {{../global.screenshots.anchorText.en}}
+                                {{/if}}
+                            </a>
+                        </p>
+                        <p>
+                            <a href="#top">
+                                {{#if ../lang_de}}
+                                    {{../global.screenshots.toTopText.de}}
+                                {{else}}
+                                    {{../global.screenshots.toTopText.en}}
+                                {{/if}}
+                            </a>
+                        </p>
+                        <hr/>
+                    {{/each}}
                 </div>
             </div>
         </div>

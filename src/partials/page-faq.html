@@ -1,56 +1,51 @@
 {{#if page-contents}}
-<div class="container container_flex">
-  <aside class="side-menu js-menu" id="side-menu">
-    <div class="menu-close"><button class="btn btn-close js-toggle" data-target="#side-menu"></button></div>
-    <ul class="nav flex-column js-scroll-navigate" data-target="main">
-      {{#each page-contents.section-main.sections}}
-      <li class="nav-item">
-        <a class="nav-link{{#if active}} active{{/if}}"{{#if id}} href="#{{id}}"{{/if}}>{{{title}}}</a>
-      </li>
-      {{/each}}
-    </ul>
-  </aside>
   <main class="main">
-    <h1 class="headline headline-heavy" id="top">{{page-contents.section-main.headline.title}}</h1>
-
-    <form method="get" id="faq-search-form">
-      <!-- Actual search box -->
-      <div class="input-group input-group-sm">
-        <div class="input-group-text">
-          <span class="input-group-addon">
-            <span id="match-count">X / X</span>&nbsp;{{page-contents.section-main.texts.questions}}
-          </span>
-        </div>
-        <input type="text" class="form-control" placeholder="{{page-contents.section-main.texts.search}}" id="faq-search" name="search">
-      </div>
-    </form>
-    <hr />
-
-    {{#each page-contents.section-main.sections}}
-
-      {{> text-component this=. large-title=true}}
-      <dl class="accordion js-accordion" data-toggle="accordion-header">
-      {{#each accordion}}
-        <div id="{{anchor}}-div">
-          <dt class="accordion-header{{#if active}} active{{/if}}">
-            <h3 class="accordion-item-title"{{#if anchor}} id="{{anchor}}"{{/if}}>{{title}}</h3>
-            <span class="accordion-item-icon"></span>
-          </dt>
-          <dd class="accordion-body">
-            <div class="accordion-item-content">
-              {{#if textblock}}
-              {{#each textblock}}
-              <p>{{{.}}}</p>
-              {{/each}}
-              {{/if}}
-              <p>{{#if anchor}}<a href="#{{anchor}}" class="faq-anchor">{{../../page-contents.section-main.texts.permalink}}</a>{{/if}}</p>
-              <p><a href="#top">{{../../page-contents.section-main.texts.to_top}}</a></p>
+    <div class="container-fluid pt-5 pb-5">
+      <h1 class="headline headline-heavy text-center pb-3" id="top">{{page-contents.section-main.headline.title}}</h1>
+      <div class="d-flex justify-content-center">
+        <form method="get" id="faq-search-form" class="container">
+          <div class="mb-2 row justify-content-center">
+            <div id="clean_search" class="col-12 col-lg-4 mb-2 px-2">
+              <input type="text" class="form-control searchbar-clean-padding" placeholder="{{page-contents.section-main.texts.search-placeholder}}" id="faq-search" name="search">
             </div>
-          </dd>
+            <div class="col-12 col-lg-3 mb-2 px-2">
+              <select class="form-select" id="faq-topic" name="topic">
+                <option value="all" selected>{{page-contents.section-main.texts.all-topics}}</option>
+                {{#each page-contents.section-main.topics}}
+                  <option value="{{id}}">{{{title}}}</option>
+                {{/each}}
+                <option value="glossary">{{page-contents.section-main.texts.glossary}}</option>
+              </select>
+            </div>  
+            <div class="mb-2 col-12 col-lg-2 px-2">
+              <button id="faq-submit" value="search" class="btn btn-primary col-12">{{page-contents.section-main.texts.search-button}}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <center><a href="results" class="no-decoration">{{page-contents.section-main.texts.view-all-topics-questions}}</a></center>
+    </div>
+
+    <div class="container">
+      <h1 class="headline headline-heavy mt-5 mb-3">{{page-contents.section-main.headline.subtitle}}</h1>
+      <div class="row pb-5 pt-5">
+        {{#each page-contents.section-main.topics}}
+        <div class="col-lg-2 col-sm-6 col-md-3 col-xs-6">
+          <img src="{{icon}}" alt="{{title}}" height="29">
+          <p><a href="results/?search=&topic={{id}}" class="no-decoration text-black"><b>{{{title}}}</b></a></p>
+          <div class="{{#if sections.[6]}}section-column{{/if}}">
+            {{#each sections}}
+            {{#if indexed}}
+              <p><a href="results/#{{id}}" class="section-link">{{{title}}}</a></p>
+            {{/if}}
+          {{/each}}
+          </div>
+          <p><a href="results/?search=&topic={{id}}" class="no-decoration">{{#if sections.[6]}}{{../page-contents.section-main.texts.view-all-topics-questions}}{{else}}{{../page-contents.section-main.texts.goto-topics}}{{/if}}</a></p>
         </div>
-      {{/each}}
-      </dl>
-    {{/each}}
+        {{/each}}
+      </div>
+      <p class="pb-5 text-center"><a href="results/?search=&topic=glossary" class="glossary-link">{{page-contents.section-main.texts.glossary}}</a></p>
+    </div>
   </main>
 </div>
 {{/if}}

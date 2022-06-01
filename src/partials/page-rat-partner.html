@@ -1,0 +1,120 @@
+{{#if page-contents}}
+<section class="">
+  <div class="container">
+    <div class="container-inner">
+      <div>
+        {{#each page-contents.section-notice.textblock}}
+        <p>{{{.}}}</p>
+        {{/each}}
+      </div>
+      <h1 class="headline headline-heavy">{{page-contents.section-main.headline.title}}</h1>
+      <div>
+        {{#each page-contents.section-main.headline.textblock}}
+        <p>{{{.}}}</p>
+        {{/each}}
+      </div>
+      <div>{{> headline-component page-contents.section-main.content.headline}}</div>
+      <div class="row">
+        {{#if page-contents.section-main.content.simple-list.image}}
+        {{#unless page-contents.section-main.content.simple-list.image.right}}
+        <div class="col col-12 col-md-6">
+          {{> image-component image=page-contents.section-main.content.simple-list.image}}
+        </div>
+        {{/unless}}
+        {{/if}}
+        <div class="col col-12 col-md-6">
+          {{#if page-contents.section-main.content.simple-list.title}}
+          {{> headline-small-component page-contents.section-main.content.simple-list}}
+          {{/if}}
+          {{#if page-contents.section-main.content.simple-list.list}}
+          <ul class="list list_bullets">
+            {{#each page-contents.section-main.content.simple-list.list}}
+            <li class="list-item">{{{.}}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
+        {{#if page-contents.section-main.content.simple-list.image.right}}
+        <div class="col col-12 col-md-6">
+          {{> image-component image=page-contents.section-main.content.simple-list.image}}
+        </div>
+        {{/if}}
+      </div>
+      <div class="row">
+        {{#if page-contents.section-main.content.simple-list2.image}}
+        {{#unless page-contents.section-main.content.simple-list2.image.right}}
+        <div class="col col-12 col-md-6">
+          {{> image-component image=page-contents.section-main.content.simple-list2.image}}
+        </div>
+        {{/unless}}
+        {{/if}}
+        <div class="col col-12 col-md-6">
+          {{#if page-contents.section-main.content.simple-list2.title}}
+          {{> headline-small-component page-contents.section-main.content.simple-list2}}
+          {{/if}}
+          {{#if page-contents.section-main.content.simple-list2.list}}
+          <ul class="list list_bullets">
+            {{#each page-contents.section-main.content.simple-list2.list}}
+            <li class="list-item">{{{.}}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
+        {{#if page-contents.section-main.content.simple-list2.image.right}}
+        <div class="col col-12 col-md-6">
+          {{> image-component image=page-contents.section-main.content.simple-list2.image}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-intersect section_bg-light">
+  {{#if page-contents.section-contribute-listing}}
+  <div class="container">
+    <div class="container-inner">
+      {{#if page-contents.section-contribute-listing.headline}}
+      <div class="container text-center">
+        {{> headline-plain-component page-contents.section-contribute-listing.headline}}
+        {{> button-component button=page-contents.section-contribute-listing.headline.button}}
+      </div>
+      {{/if}}
+      <div>
+        {{#if page-contents.section-contribute-listing.content}}
+        <div class="text-block text-block_spaced">
+          {{> headline-component page-contents.section-contribute-listing.content}}
+        </div>
+        <ul class="list row">
+          {{#each page-contents.section-contribute-listing.content.feature-list}}
+          <li class="list-item col col-12 col-sm-6 col-md-4">
+            <span class="list-icon">{{> image-component image=image}}</span>
+            {{> text-component this=.}}
+          </li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </div>
+      {{#if page-contents.section-contribute-listing.text}}
+      <div class="text-block text-block_spaced-bottom text-center">
+        {{> text-component page-contents.section-contribute-listing}}</div>
+      {{/if}}
+    </div>
+  </div>
+  {{#if page-contents.section-contribute-listing.box}}
+  <div class="container">
+    <div
+      class="box {{#if page-contents.section-contribute-listing.box.class}}box_{{page-contents.section-contribute-listing.box.class}}{{/if}}">
+      <div class="row">
+        <div class="col col-12 col-sm-6 col-md-4">
+          {{> image-component image=page-contents.section-contribute-listing.box.image}}
+        </div>
+        <div class="col col-12 col-sm-6 col-md-5">
+          {{> text-component page-contents.section-contribute-listing.box.content}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+  {{/if}}
+</section>
+{{/if}}

@@ -13,7 +13,7 @@ Within the next 48 hours, users will be able to download the Corona-Warn-App’s
 
 The new feature gives the more than 25 million users the opportunity to find out about the current Corona situation in Germany directly in the app and encourages them to warn others in case they’ve been tested positive. 
 
-While the figures on the infection numbers come from the Robert Koch-Institut, the number of transmitted warnings comes from the Corona-Warn-App’s IT system. The numbers are updated hourly and edited for the app. The statistics show changes as soon as new information is available. 
+While the figures on the infection numbers come from the Robert Koch Institute, the number of transmitted warnings comes from the Corona-Warn-App’s IT system. The numbers are updated hourly and edited for the app. The statistics show changes as soon as new information is available. 
 
 With a **swipe to the left**, users can scroll through the figures. The app first shows them the number of people who have tested positive for COVID-19 recently and the number of total infections. Users can also see the average number of people who have tested positive for COVID-19 over the past seven days.
 
@@ -22,7 +22,7 @@ The **arrow directions and colors** behind the numbers indicate the trend. It co
  
 <br></br>
 
-<center> <img src="./cwa-new-infections.png" title="New Infections" style="align: center"></center>
+<center> <img src="./cwa-new-infections.png" title="New Infections" alt="New Infections" style="align: center"></center>
 
 <br></br>
 
@@ -30,20 +30,20 @@ The app then displays the number of users tested positive who have **warned thei
 
 <br></br>
 
-<center> <img src="./cwa-warning-users.png" title="Warning App Users" style="align: center"> </center> <br></br>
+<center> <img src="./cwa-warning-users.png" title="Warning App Users" alt="Warning App Users" style="align: center"> </center> <br></br>
 
 
 Users also see the **7-day incidence rate**, which is the confirmed new infections per 100,000 inhabitants, and the **7-day R value**. This R value indicates to how many other people an infected person passes the virus on average.
 
 <br></br>
 
-<center> <img src="./cwa-7-day-incidence.png" title="7-Day Incidence" style="align: center"> <img src="./cwa-7-day-r-value.png" title="7-Day R Value" style="align: center"></center> <br></br>
+<center> <img src="./cwa-7-day-incidence.png" title="7-Day Incidence" alt="7-Day Incidence" style="align: center"> <img src="./cwa-7-day-r-value.png" title="7-Day R Value" alt="7-Day R Value" style="align: center"></center> <br></br>
 
 By tapping the circled "i" <img src="./information.png" title="Information" style="align: center">  in the upper right corner of the statistics, users can get more detailed explanations on the figures.
 
 <br></br>
 
-<center> <img src="./cwa-figures-explanation.png" title="Explanation 1" style="align: center"> <img src="./cwa-figures-explanation-2.png" title="Explanation 2" style="align: center"><img src="./cwa-figures-explanation-3.png" title="Explanation 3" style="align: center"></center> <br></br>
+<center> <img src="./cwa-figures-explanation.png" title="Explanation 1" alt="Explanation 1" style="align: center"> <img src="./cwa-figures-explanation-2.png" title="Explanation 2" alt="Explanation 2" style="align: center"><img src="./cwa-figures-explanation-3.png" title="Explanation 3" alt="Explanation 3" style="align: center"></center> <br></br>
 
 
 In addition to the new function, the developers have further adjusted and improved the app and will continue to do so in the future. As part of this, the Corona-Warn-App will soon be available for **older iPhones**. More information will be available here as soon as the update is published. 

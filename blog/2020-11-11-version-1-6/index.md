@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-Deutsche Telekom and SAP's development team has updated the Corona-Warn-App to version 1.6, which is now available in Apple's App Store and the Google Play Store. Version 1.6 provides more detailed explanations about the change in risk status. A [short-term problem with regard to the exposure check](https://www.coronawarn.app/en/faq/#expcheck_160) has already been resolved with version 1.6.1.
+Deutsche Telekom and SAP's development team has updated the Corona-Warn-App to version 1.6, which is now available in Apple's App Store and the Google Play Store. Version 1.6 provides more detailed explanations about the change in risk status. A [short-term problem with regard to the exposure check](/en/faq/results/#expcheck_160) has already been resolved with version 1.6.1.
 
 
 <!-- overview -->

@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-Das Entwicklerteam der Deutschen Telekom und SAP hat ein Update der Corona-Warn-App veröffentlicht, das ab sofort im App Store von Apple und dem Google Play Store zur Verfügung steht. Version 1.6 liefert detailliertere Erklärungen beim Wechsel des Risikostatus.  Ein [kurzfristiges Problem bezüglich der Risiko-Überprüfung](https://www.coronawarn.app/de/faq/#expcheck_160) konnte mit Version 1.6.1 bereits behoben werden. 
+Das Entwicklerteam der Deutschen Telekom und SAP hat ein Update der Corona-Warn-App veröffentlicht, das ab sofort im App Store von Apple und dem Google Play Store zur Verfügung steht. Version 1.6 liefert detailliertere Erklärungen beim Wechsel des Risikostatus.  Ein [kurzfristiges Problem bezüglich der Risiko-Überprüfung](/de/faq/results/#expcheck_160) konnte mit Version 1.6.1 bereits behoben werden. 
 
 
 <!-- overview -->
@@ -18,5 +18,3 @@ Das Entwicklerteam der Deutschen Telekom und SAP hat ein Update der Corona-Warn-
 Des Weiteren wurde das Zusammenspiel von App und QR-Codes verbessert. Nutzer*innen erhalten außerdem aussagekräftige Fehlermeldungen, falls es zu Problemen beim Einlesen von QR-Codes kommen sollte. Das kann der Fall sein, wenn ein ungültiger QR-Code vorliegt oder er bereits älter als 21 Tage ist und somit nicht mehr in der App registriert werden kann. 
 
 Bei Geräten, auf denen die Hintergrundaktualisierung durch den Hersteller in den Standardeinstellungen deaktiviert ist, erhalten Nutzer*innen zudem eine Erinnerung die priorisierte Hintergrundaktivität zu erlauben, damit die App den Risikostatus jederzeit im Hintergrund ermitteln kann. 
-
-

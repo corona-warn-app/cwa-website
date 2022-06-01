@@ -1,0 +1,365 @@
+{{#if page-contents}}
+<section class="section component qrgenerator comment">
+  <div class="container">
+    <div class="container-inner container-inner_lg">
+      <h1 class="h2 headline">{{page-contents.section-main.headline.title}}</h1>
+
+      <p>{{page-contents.section-main.intro}}</p>
+
+      <p>{{{page-contents.section-main.introCLI}}}</p>
+      
+      <!-- Nav tabs -->
+      <p class=""><span class="col-form-label"></span> {{page-contents.section-main.requiredFields}}</p>
+
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" href="#single">{{page-contents.section-main.tabs.single}}</a>
+            <a class="nav-item nav-link" href="#multi">{{page-contents.section-main.tabs.multi}}</a>
+        </div>
+      </nav>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container fade show active" id="single">
+          <div class="row">
+            <div class="col col-12 col-lg-6">
+              
+              <form id="qrform">
+                <div class="form-group row mb-2">
+                  <label for="locationtype" class="col-12 col-form-label">
+                    <div id="qr-error-locationtyperequired" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.locationtyperequired}}
+                    </div>
+                    {{page-contents.section-main.form.fields.locationtype}}</label>
+                  <div class="col-12">
+                    <select id="locationtype" class="form-select form-control" required>
+                      <option value="">{{page-contents.section-main.form.locationtypes_initial}}</option>
+                      <optgroup label="{{page-contents.section-main.form.locationtypes_header_place}}">
+                        {{#each page-contents.section-main.form.locationtypes_places}}
+                          <option value="{{id}}">{{name}}</option>
+                        {{/each}}
+                      </optgroup>
+                      <optgroup label="{{page-contents.section-main.form.locationtypes_header_event}}">
+                        {{#each page-contents.section-main.form.locationtypes_events}}
+                          <option value="{{id}}">{{name}}</option>
+                        {{/each}}
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+        
+                <div class="form-group row mb-2">
+                  <label for="description" class="col-12 col-form-label">
+                    <div id="qr-error-descriptionrequired" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.descriptionrequired}}
+                    </div>
+                    <div id="qr-error-descriptionmax" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.descriptionmax}}
+                    </div>
+                    {{page-contents.section-main.form.fields.description}}
+                  </label>
+                  <div class="col-12">
+                    <input id="description" class="form-control" type="text" max="100" placeholder="{{page-contents.section-main.form.placeholders.description}}" required/>
+                  </div>
+                </div>
+        
+                <div class="form-group row mb-2">
+                  <label for="address" class="col-12 col-form-label">
+                    <div id="qr-error-addressrequired" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.addressrequired}}
+                    </div>
+                    <div id="qr-error-addressmax" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.addressmax}}
+                    </div>
+                    {{page-contents.section-main.form.fields.address}}
+                  </label>
+                  <div class="col-12">
+                    <input id="address" class="form-control" type="text" max="100" placeholder="{{page-contents.section-main.form.placeholders.address}}" required/>
+                  </div>
+                </div>
+        
+                <div class="form-group row mb-2">
+                  <fieldset class="col-form-label-fieldset-container">
+                    <div class="col-12">
+                      <div id="qr-error-defaultcheckinlengthrequired" class="invalid-feedback">
+                        {{page-contents.section-main.form.errors.defaultcheckinlengthrequired}}
+                      </div>
+                      <div id="qr-error-defaultcheckinlengthnumber" class="invalid-feedback">
+                        {{page-contents.section-main.form.errors.defaultcheckinlengthnumber}}
+                      </div>
+                    </div>
+                    <legend class="col-12 col-form-label col-form-label-fieldset">
+                      {{page-contents.section-main.form.fields.defaultcheckinlength}}
+                    </legend>
+                    <div class="col-12">
+                      <div class="row">
+                        <label for="defaultcheckinlength-hours" class="col-7 col-form-label-sm">
+                          {{page-contents.section-main.form.fields.defaultcheckinlength-hours}}
+                        </label>
+                        <label for="defaultcheckinlength-minutes" class="col-5 col-form-label-sm">
+                          {{page-contents.section-main.form.fields.defaultcheckinlength-minutes}}
+                        </label>
+                        <div class="col-5">
+                          <select id="defaultcheckinlength-hours" class="form-select form-control">
+                            <option value="0">00</option>
+                            <option value="1">01</option>
+                            <option value="2" selected>02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                          </select>
+                        </div>
+                        <div class="col-2 align-self-center text-center">
+                          <span class="time-sep">:</span>
+                        </div>
+                        <div class="col-5">
+                          <select id="defaultcheckinlength-minutes" class="form-select form-control">
+                            <option>00</option>
+                            <option>15</option>
+                            <option>30</option>
+                            <option>45</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+        
+                <div id="event-duration" class="d-none">
+                  <div class="form-group row mb-2">
+                    <fieldset class="col-form-label-fieldset-container">
+                      <div class="col-12">
+                        <div id="qr-error-starttimerequired" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.starttimerequired}}
+                        </div>
+                        <div id="qr-error-starttimeinvaliddate" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invaliddate}}
+                        </div>
+                        <div id="qr-error-olddate" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.olddate}}
+                        </div>
+                        <div id="qr-error-starttimeinvalidtime" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invalidtime}}
+                        </div>
+                      </div>
+                      <legend class="col-12 col-form-label col-form-label-fieldset">
+                        {{page-contents.section-main.form.fields.starttime}}
+                      </legend>
+                      <div class="col-12">
+                        <div class="row">
+                          <label for="starttime-date" class="col-7 col-sm-8 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.starttime-date}}
+                          </label>
+                          <label for="starttime-time" class="col-5 col-sm-4 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.starttime-time}}
+                          </label>
+                          <div class="col-7 col-sm-8">
+                            <input id="starttime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10"/>
+                          </div>
+                          <div class="col-5 col-sm-4">
+                            <input id="starttime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5"/>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+        
+                  <div class="form-group row mb-2">
+                    <fieldset class="col-form-label-fieldset-container">
+                      <div class="col-12">
+                        <div id="qr-error-endtimerequired" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.endtimerequired}}
+                        </div>
+                        <div id="qr-error-endtimeinvaliddate" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invaliddate}}
+                        </div>
+                        <div id="qr-error-endtimebeforestarttime" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.endtimebeforestarttime}}
+                        </div>
+                        <div id="qr-error-endtimeinvalidtime" class="invalid-feedback">
+                          {{page-contents.section-main.form.errors.invalidtime}}
+                        </div>
+                      </div>
+                      <legend class="col-12 col-form-label col-form-label-fieldset">
+                        {{page-contents.section-main.form.fields.endtime}}
+                      </legend>
+                      <div class="col-12">
+                        <div class="row">
+                          <label for="starttime-date" class="col-7 col-sm-8 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.endtime-date}}
+                          </label>
+                          <label for="starttime-time" class="col-5 col-sm-4 col-form-label-sm">
+                            {{page-contents.section-main.form.fields.endtime-time}}
+                          </label>
+                          <div class="col-7 col-sm-8">
+                            <input id="endtime-date" class="form-control" type="text" placeholder="{{page-contents.section-main.form.dateplaceholder}}" max="10"/>
+                          </div>
+                          <div class="col-5 col-sm-4">
+                            <input id="endtime-time" class="form-control" type="text" placeholder="{{page-contents.section-main.form.timeplaceholder}}" max="5"/>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+    
+                <div class="form-group row mb-2">
+                  <div class="col-12">
+                    <label for="pageLayout" class="col-12 col-form-label">{{page-contents.section-main.form.fields.layout}}</label>
+                    <select id="pageLayout" class="form-select form-control" required>
+                      {{#each page-contents.section-main.form.layout_options}}
+                          <option value="{{option}}">{{option}}</option>
+                      {{/each}}       
+                    </select>
+                  </div> 
+                </div>
+
+
+                <div class="row mt-4">
+                  <div class="col-12">{{page-contents.section-main.disclaimer}}</div>
+                </div>
+        
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <button id="generateQR" value="show" class="btn btn-primary">{{page-contents.section-main.form.fields.show}}</button>
+                  </div>
+                </div>
+              </form>
+    
+            </div>
+            <div class="col col-12 col-lg-6 mt-4 mt-lg-0">
+              {{#unless lang_de}}
+              <img src="/assets/img/pt-poster-1.0.0-placeholder_en.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" alt="Preview of the QR Code"/>
+              {{/unless}}
+              {{#if lang_de}}
+              <img src="/assets/img/pt-poster-1.0.0-placeholder.png" id="eventplaceholder" class="img img-fluid w-100 eventqr-preview" alt="Vorschau des QR Codes"/>
+              {{/if}}
+              <canvas id="eventqrcode" class="d-none eventqr-preview"></canvas>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <button id="printCode" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.print}}</button>
+                  <button id="downloadCode" value="download" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.download}}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="multi">
+          <div class="row">
+            <div class="col col-12 col-lg-6">
+              
+              <div class="row mt-4">
+                <div class="col-12">
+                  <p>{{{page-contents.section-main.introMultiQR}}}</p>
+                </div>
+              </div>
+              
+              
+              <form id="qrform-multi">
+                <div class="form-group row mb-2"> 
+                  <div class="col-12">
+                    <input type="file" class="btn btn-primary" accept=".csv" id="csvFile" required/>
+                    <label for="csvFile">
+                      {{page-contents.section-main.form.fields.csvFile}}
+                    </label>
+                    <div id="csvName" class="d-inline-block"></div>
+                    <div id="qr-error-filerequired" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.filerequired}}
+                    </div>
+                    <div id="qr-error-wrongfileextension" class="invalid-feedback">
+                      {{page-contents.section-main.form.errors.wrongfileextension}}
+                    </div>
+                    <div id="qr-error-wrongfileheaders" class="invalid-feedback">
+                      {{{page-contents.section-main.form.errors.wrongfileheaders}}}
+                    </div>
+                    <div id="qr-error-wrongfileformatfields" class="invalid-feedback">
+                      {{{page-contents.section-main.form.errors.wrongfileformatfields}}}
+                    </div>
+                    <div id="qr-error-filewithnodata" class="invalid-feedback">
+                      {{{page-contents.section-main.form.errors.filewithnodata}}}
+                    </div>
+                    <div id="qr-error-fileoverloaded" class="invalid-feedback">
+                      {{{page-contents.section-main.form.errors.fileoverloaded}}}
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="form-group row mb-2">
+                  <label for="pageTemplate" class="col-12 col-form-label">{{page-contents.section-main.form.fields.layout}}</label>
+                  <div class="col-12">
+                    <select id="pageTemplate" class="form-select form-control" required>
+                      {{#each page-contents.section-main.form.layout_options}}
+                          <option value="{{option}}">{{option}}</option>
+                      {{/each}}       
+                    </select>
+                  </div>            
+                </div>
+    
+                <div class="row mt-4">
+                  <div class="col-12">{{page-contents.section-main.disclaimer}}</div>
+                </div>
+        
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <button id="generateMultiQR" value="show" class="btn btn-primary">{{page-contents.section-main.form.fields.show}}</button>
+                  </div>
+                </div>
+              </form>
+    
+            </div>
+            <div class="col col-12 col-lg-6 mt-4 mt-lg-0">
+              {{#unless lang_de}}
+              <img src="/assets/img/pt-poster-1.0.0-placeholder_en.png" id="multieventplaceholder" class="img img-fluid w-100 eventqr-preview" alt="Preview of the QR Code"/>
+              {{/unless}}
+              {{#if lang_de}}
+              <img src="/assets/img/pt-poster-1.0.0-placeholder.png" id="multieventplaceholder" class="img img-fluid w-100 eventqr-preview" alt="Vorschau des QR Codes"/>
+              {{/if}}
+              <canvas id="multieventqrcode" class="d-none multieventqr-preview"></canvas>
+
+              <div id="qrContainer" class="qr-slider"></div>
+            
+              <div id="qrsGeneratedInfoContainer" class="row mt-4">
+                <div class="col-12">
+                  <p id="qrsGeneratedInfo" class="d-none text-center">{{page-contents.section-main.qrsGeneratedInfo}}</p>
+                </div>
+              </div>
+
+              <div class="row mt-2">
+                <div class="col-12 mt">
+                  <button id="printMultiCode" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.print}}</button>
+                  <button id="downloadMultiCode" value="download" class="btn btn-secondary" disabled>{{page-contents.section-main.form.fields.download}}</button>
+                </div>
+              </div>
+
+              <div id="modal" class="modal d-none">
+                <div class="modal-content">
+                  <img src="/assets/img/spinner.gif">
+                  {{page-contents.section-main.form.fields.downloadMessage}}
+                </div>            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/if}}

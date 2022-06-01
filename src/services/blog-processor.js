@@ -18,7 +18,7 @@ const blogHtmlPath = (lang) => path.join(rootFolder, 'src', 'pages', lang, data[
 const formatDate = (date, lang) => {
   const mom = moment(date);
   mom.locale(lang);
-  return mom.format('LL');
+  return (lang == "de" ? "am" : "on" )+" "+mom.format('LL');
 }
 
 const hasValidDate = (dateStr) => {
@@ -48,9 +48,9 @@ const generateBlogEntry = (blog, content, lang, showButton = false) => {
 
   return `
 
-  <div class="blog-entry">
+  <div class="blog-entry" id="${blog.slug}">
     ${headline}
-    <div class="sub-title"><span class="text">${getAuthors(blog.author)} on ${blog.dateFormatted}</span></div>
+    <div class="sub-title"><span class="text">${getAuthors(blog.author)}, ${blog.dateFormatted}</span></div>
     ${content}
     ${button}
   </div>
@@ -63,7 +63,7 @@ const replaceImagePaths = (content, folderName) => {
 
 const replaceVideo = (content, folderName) => {
   videoHtml = '<div class="row justify-content-md-center justify-content-center"><div class="col-6 col-md-6" id="player-overlay"><video controls preload="metadata" poster="$2.jpg"><source src="$2.mp4" type="video/mp4"></source><source src="$2.webm" type="video/webm"></source></video></div></div>'
-  const c = content.replace(/({{)([^>]*)(}})/gi, videoHtml);
+  const c = content.replace(/({{)([^>]*?)(}})/gi, videoHtml);
   return c
 }
 

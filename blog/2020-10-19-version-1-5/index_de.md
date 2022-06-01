@@ -18,9 +18,9 @@ Sowohl im Google Play Store als auch im Apple App Store steht ab sofort ein neue
 
 Die neue Version 1.5 der deutschen Corona-Warn-App unterstützt das europäische Corona-App-Gateway.  
 
-Nach erfolgreicher Installation der neuen Version bekommen die Nutzer\*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Gateway sowie die angepassten [Datenschutzrichtlinien](https://www.coronawarn.app/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](https://www.coronawarn.app/assets/documents/cwa-eula-de.pdf).   
+Nach erfolgreicher Installation der neuen Version bekommen die Nutzer\*innen beim ersten Start der App ausführliche Informationen über die Anbindung an das europäische Corona-App-Gateway sowie die angepassten [Datenschutzrichtlinien](/assets/documents/cwa-privacy-notice-de.pdf) sowie [Nutzungsbedingungen](/assets/documents/cwa-eula-de.pdf).   
 
-<img src="./efgs.jpg" title="Corona-Warn-App Risikostatus"></br>
+<img src="./efgs.jpg" title="europäischen Corona-App-Gateways" alt="europäischen Corona-App-Gateways"></br>
 
 Sowohl Android als auch iOS Nutzer\*innen können Zugang zu dieser Liste über „Risiko-Ermittlung“ oben auf dem Startbildschirm der App erhalten. Dort müssen sie anschließend „Länderübergreifende Risiko-Ermittlung“ auswählen, um die Liste der teilnehmenden Länder einzusehen.
 
@@ -36,7 +36,7 @@ Nach dem Erhalt eines positiven Testergebnisses haben Nutzer\*innen nun die Mög
 
 Nutzer\*innen, die ihre Symptome erfassen möchten, werden gebeten den Symptomstart in einem Kalender anzugeben.
 
-<img src="./symptoms.jpg" title="Corona-Warn-App Risikostatus"></br>
+<img src="./symptoms.jpg" title="Corona-Warn-App Risikostatus" alt="Corona-Warn-App Risikostatus"></br>
 
 
 ## Verbesserung der Textverständlichkeit 

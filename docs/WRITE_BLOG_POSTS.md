@@ -74,10 +74,10 @@ You can use a link instead of a relative path to the image.
 Example:
 
 ``` Markdown
-![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png "Hover over me!")
+![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/CWA_title.png "Hover over me!")
 ```
 
-![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/master/images/CWA_title.png "Hover over me!")
+![CWA logo](https://raw.githubusercontent.com/corona-warn-app/cwa-documentation/main/images/CWA_title.png "Hover over me!")
 
 However, it is advised to download the image, put it into the folder where the `index.md` file is located, and refer to its relative path instead of an absolute link from the Internet.
 
@@ -134,4 +134,22 @@ Example:
 
 ``` Markdown
 [Introduction](2018-08-01-introduction-to-cwa)
+```
+
+### Link to other locations
+
+To link to other locations on the website use a relative path starting with `/en` or `/de` to refer to the location. Avoid including the absolute web path `https://www.coronawarn.app` in the link. Relative paths support testing weblinks correctly prior to publication.
+
+Note: Relative paths using `../` (go up one level) are not recommended in blog posts, since they are error prone in this situation. Blog sources are processed and published at two different levels: the blog overview and blog individual detail level.
+
+Example of links to the Screenshot section:
+
+In `index.md` of the blog post:
+``` Markdown
+[Take a Look](/en/screenshots)
+```
+
+In `index_de.md` of the blog post:
+``` Markdown
+[Machen Sie sich selbst ein Bild](/de/screenshots)
 ```
