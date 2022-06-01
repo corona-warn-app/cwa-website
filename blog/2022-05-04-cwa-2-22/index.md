@@ -13,7 +13,7 @@ The project team of the Robert Koch-Institute (RKI), Deutsche Telekom, and SAP h
 
 The new feature completes the test management for family members that the project team introduced with version 2.21. The rapid test profile contains the **personal data, such as name and contact details, in the form of a QR code**. At participating test sites, the QR code can be scanned to speed up on-site test registration.
 
-With version 2.22, users can create rapid test profiles for family members who do not have a smartphone, for example. To do this, they can tap on **“Manage Your Tests” on the app’s home screen and after that select "Rapid Test Profiles”** where they can tap **"Create rapid test profile" (iOS) or "+ rapid test profile" (Android)**. In the next step, users can enter the data for the relevant person. Under "Manage Your Tests" they will then be shown a list of all the rapid test profiles they have stored under the persons’ respective names. 
+With version 2.22, users can create rapid test profiles for family members who do not have a smartphone, for example. To do this, they can tap on **“Manage Your Tests” on the app’s home screen and after that select "Rapid Test Profiles”** where they can tap **"Create rapid test profile" (iOS) or "+ RAPID TEST PROFILE" (Android)**. In the next step, users can enter the data for the relevant person. Under "Manage Your Tests" they will then be shown a list of all the rapid test profiles they have stored under the persons’ respective names. 
 
 
 <br></br>
@@ -41,4 +41,3 @@ When users tap "Continue" from the rapid test profile, they can **scan the QR co
 Version 2.22, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona-Warn-App will be available to users here within the next 48 hours.
 
 Up-to-date information on the status of the roll-out can be found on the Twitter channel of [#coronawarnapp](https://twitter.com/coronawarnapp) (German only).
-
