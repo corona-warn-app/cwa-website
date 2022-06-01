@@ -87,7 +87,7 @@ Testergebnis ohne Verzögerung erhalten,
 
 Personen, die ein positives Testergebnis erhalten haben, sollen andere
 Personen, die sich in ihrer unmittelbaren Nähe aufgehalten haben,
-darüber informieren bzw. warnen, dass für sie (d.h. für die anderen
+darüber informieren bzw. warnen, dass für sie (d.&nbsp;h. für die anderen
 Personen) ein erhöhtes Infektionsrisiko bestanden hat,
 
 **Zweck 3 – Risikoermittlung**
@@ -281,9 +281,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 
 <div class="m-4">
 
-<figure>
 <video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" alt="BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
-</figure>
 
 </div>
 
@@ -303,7 +301,7 @@ Daten aus zentralen und dezentralen Komponenten der
 Corona-Warn-App-Infrastruktur sowie auf externe Quellen bezogen.
 
 Für die Evaluation im Hinblick auf Zweckmäßigkeit, Wirksamkeit,
-Akzeptanz und Nutzen ist u.a. die Erhebung und Auswertung folgender
+Akzeptanz und Nutzen ist u.&nbsp;a. die Erhebung und Auswertung folgender
 Kennzahlen (kumulativ und im Zeitverlauf) vorgesehen:
 
 -   Kennzahlen aus Nutzenden-Erhebung (EDUS und PPA)  
@@ -317,9 +315,7 @@ Kennzahlen (kumulativ und im Zeitverlauf) vorgesehen:
 
 <div class="right-float">
 
-<figure>
 <img src="./edus_screen.png" class="w2in" alt="CWA - ereignisbezogene Befragung" /><figcaption aria-hidden="true"><em>CWA - ereignisbezogene Befragung</em></figcaption>
-</figure>
 
 </div>
 
@@ -360,16 +356,14 @@ werden seit Anfang März 2021 erhoben.
 
 <div class="left-float">
 
-<figure>
 <img src="./ppa_screen.png" class="w2in" alt="CWA - Datenspende" /><figcaption aria-hidden="true"><em>CWA - Datenspende</em></figcaption>
-</figure>
 
 </div>
 
 Konkret können mit Hilfe der Datenspende folgende Aspekte untersucht
 werden:
 
--   welche Ereignisse (z.B. Anzeige eines erhöhten Risikos,
+-   welche Ereignisse (z.&nbsp;B. Anzeige eines erhöhten Risikos,
     Registrierung eines Tests, Anzeige eines Testergebnisses,
     Schlüsseleinreichung zum Warnen Anderer) in der App mit welcher
     Häufigkeit auftreten,
@@ -381,7 +375,7 @@ werden:
 
 -   wo und wann Nutzende Prozesse innerhalb der App abbrechen,
 
--   mit welchen demografischen Daten (z.B. Altersgruppe, Landkreis) dies
+-   mit welchen demografischen Daten (z.&nbsp;B. Altersgruppe, Landkreis) dies
     assoziiert ist.
 
 
@@ -397,7 +391,7 @@ CWA-Infrastruktur.
 
 Dem RKI stehen weitere Kennzahlen aus ergänzenden Quellen zur Verfügung,
 die indirekte Belege für den Nutzen der Corona-Warn-App liefern können.
-Hierzu zählen u.a. Daten aus dem Apple App Store sowie Google Play
+Hierzu zählen u.&nbsp;a. Daten aus dem Apple App Store sowie Google Play
 Store. Zudem lassen sich externe (Befragungs-)Studien mit
 unterschiedlichen Studienzeiträumen und thematischen Schwerpunkten
 heranziehen. Externe Studien weisen zwar verschiedene methodische und
@@ -460,9 +454,7 @@ zusätzlichen Nutzenden weiter gesteigert werden.
 
 <div class="m-4">
 
-<figure>
 <video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="" alt="Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
-</figure>
 
 </div>
 

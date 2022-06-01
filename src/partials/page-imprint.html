@@ -4,8 +4,13 @@
         <div class="container-inner container-inner_lg">
             <div class="row">
                 <div class="col col-12 col-md-8 col-lg-7">
-                {{> headline-component page-contents.section-main.headline}}
-                {{> text-component page-contents.section-main.content}}
+                    <h1 class="h2 headline">{{page-contents.section-main.headline.title}}</h1>
+                    <h2 class="h3"><b>{{page-contents.section-main.content.title}}</b></h2>
+                    <div>
+                        {{#each page-contents.section-main.content.textblock}}
+                        <p>{{{.}}}</p>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>

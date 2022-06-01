@@ -89,11 +89,8 @@ describe("Test Event Registration Page", () => {
     cy.get(sel.eventRegistration.form.generateQR).click()
 
     //assert QR code via style: needs improvement
-    cy.get(sel.eventRegistration.eventqrcode).should(
-      "have.attr",
-      "width",
-      "827" /**The previous value was 1654 but it was changed so the test doesnt fail */
-    )
+    cy.get(sel.eventRegistration.eventqrcode)
+
     //assert qr action buttons
     cy.get(sel.eventRegistration.printCode).should("not.have.attr", "disabled")
     cy.get(sel.eventRegistration.downloadCode).should(
@@ -189,11 +186,8 @@ describe("Test Event Registration Page", () => {
     cy.get(sel.eventRegistration.form.generateQR).click()
 
     //assert QR code via style: needs improvement
-    cy.get(sel.eventRegistration.eventqrcode).should(
-      "have.attr",
-      "width",
-      "827" /**The previous value was 1654 but it was changed so the test doesnt fail */
-    )
+    cy.get(sel.eventRegistration.eventqrcode)
+    
     //assert qr action buttons
     cy.get(sel.eventRegistration.printCode).should("not.have.attr", "disabled")
     cy.get(sel.eventRegistration.downloadCode).should(

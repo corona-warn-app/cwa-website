@@ -35,7 +35,7 @@ In zweiten Teil der Analyse der ereignisbezogenen Online-Befragung (Event-Driven
 
 ## 1 Das Wichtigste in Kürze: Zahlen, Daten, Fakten
 
-Der zweite Teil der ereignisbezogenen Befragung (EDUS) hat u.a. ergeben, dass
+Der zweite Teil der ereignisbezogenen Befragung (EDUS) hat u.&nbsp;a. ergeben, dass
 
 <ul><li>ein signifikanter Anteil der Befragten (72,5%) von der <q>roten Warnung</q> überrascht war,</li>
 <li>die Befragten ihre Testergebnisse meistens innerhalb von 24 Stunden über die App erhielten,</li>
@@ -468,7 +468,6 @@ Weiß nicht
 Auf Basis der Antworten lässt sich annehmen, dass die Corona-Warn-App dabei hilft, Risiken aufzudecken, die außerhalb des unmittelbaren sozialen Umfeldes aufgetreten sind. Teilnehmende, die von der roten Warnung überrascht wurden, hätten ohne die App möglicherweise keinen Hinweis auf ein erhöhtes Risiko erhalten. Je höher die Teilnehmenden ihr Risiko für eine Infektion vor der Warnmeldung einschätzten, desto geringer war der Anteil derjenigen, die von der Warnung überrascht waren.
 
 <p></p>
-<figure>
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -536,12 +535,10 @@ Auf Basis der Antworten lässt sich annehmen, dass die Corona-Warn-App dabei hil
 
 </table>
     <figcaption aria-hidden="true">Tab. 5: EDUS - Zusammenhang zwischen Risiko und Überraschtheit.</figcaption>
-</figure>
 
-<figure>
-    <img src="./fig_03.png" class="figure-img img-fluid" alt="Abb. 3: EDUS - Zusammenhang zwischen Überraschtheit und eingeschätztem Risiko."/>
-    <figcaption aria-hidden="true">Abb. 3: EDUS - Zusammenhang zwischen Überraschtheit und eingeschätztem Risiko.</figcaption>
-</figure>
+
+<img src="./fig_03.png" class="figure-img img-fluid" alt="Abb. 3: EDUS - Zusammenhang zwischen Überraschtheit und eingeschätztem Risiko."/>
+<figcaption aria-hidden="true">Abb. 3: EDUS - Zusammenhang zwischen Überraschtheit und eingeschätztem Risiko.</figcaption>
 
 <details>
 <summary>
@@ -677,7 +674,7 @@ Weiß nicht
 Überraschte Teilnehmende entschieden sich häufiger für einen Antigen-Schnelltest und machten geringfügig häufiger gar keinen Test als nicht-überraschte Befragte. Es sind viele weitere Erklärungen für das Verhalten der Befragten denkbar.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -740,12 +737,9 @@ Weiß nicht
 
 </table>
     <figcaption aria-hidden="true">Tab. 7: EDUS - Zusammenhang zwischen Überraschtheit und Testung.</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_04.png" alt="Abb. 4: EDUS - Zusammenhang zwischen Überraschtheit und durchgeführtem Test."/>
-    <figcaption aria-hidden="true">Abb. 4: EDUS - Zusammenhang zwischen Überraschtheit und durchgeführtem Test.</figcaption>
-</figure>
+</div>
+<img src="./fig_04.png" alt="Abb. 4: EDUS - Zusammenhang zwischen Überraschtheit und durchgeführtem Test."/>
+<figcaption aria-hidden="true">Abb. 4: EDUS - Zusammenhang zwischen Überraschtheit und durchgeführtem Test.</figcaption>
 
 ### 3.3 Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen
 
@@ -754,7 +748,7 @@ Befragte, die von der Warnung überrascht wurden, gaben seltener an, den Kontakt
 Von denen, die Kontakt aufnehmen wollten, berichteten die meisten, dass sie sich an die oder den Hausärztin/-arzt (55,2%) wenden wollten. Auch hier konnten die Befragten mehrere Antworten auswählen. Der Kontakt zum Gesundheitsamt (43,4%) wurde seltener angegeben. Die Nummer des ärztlichen Bereitschaftsdienstes und die Krankenhäuser spielten in der Befragung eine untergeordnete Rolle. Die Daten zeigen, dass die rote Warnung der Corona-Warn-App einen begründeten Anfangsverdacht für die Nutzenden darstellen kann, auf Basis dessen diese sich hauptsächlich über Ärztinnen und Ärzte an das Gesundheitswesen wenden. Der Kontakt zu Hausärztinnen und Hausärzten spricht sehr für die intendierte Entlastung des öffentlichen Gesundheitsdienstes durch die Corona-Warn-App. Eine Infektion würde in diesem Fall erst durch einen angeordneten Test bekannt werden. Vermehrte begründete Tests bei Verdachtsfällen tragen dazu bei, Infektionsketten zu verhindern. Die Corona-Warn-App fungiert vor allem bei Kontakt mit einer unbekannten infizierten Person als Frühwarnsystem. Somit kann auf eine notwendige Testung hingewiesen und zur Effizienz von Teststrategien beigetragen werden.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -802,13 +796,9 @@ Von denen, die Kontakt aufnehmen wollten, berichteten die meisten, dass sie sich
 
 </table>
     <figcaption aria-hidden="true">Tab. 8: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen.</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_05.png" alt="Abb. 5: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen."/>
-    <figcaption aria-hidden="true">Abb. 5: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_05.png" alt="Abb. 5: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen."/>
+<figcaption aria-hidden="true">Abb. 5: EDUS - Zusammenhang zwischen Überraschtheit und Kontaktvorhaben zum Gesundheitswesen.</figcaption>
 
 <details>
 <summary>
@@ -979,7 +969,7 @@ Weiß nicht
 Im Familien-, Freundes- und Arbeitskreis ist es oftmals nicht möglich durchweg ausreichend Abstand zu halten und die Hygieneregeln vollends einzuhalten. Die Umsetzung der Schutzmaßnahmen fällt bei flüchtigen Bekanntschaften oder bei Fremden leichter, wenn man bspw. an Begegnungen im öffentlichen Nahverkehr oder beim Einkaufen denkt. Diese Umstände könnten den Unterschied der Testergebnisse in den Gruppen erklären, wenn angenommen wird, dass die Zusammenkünfte mit Personen aus dem eigenen Umfeld eine höhere Wahrscheinlichkeit für die Übertragung der Krankheit bieten.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1032,23 +1022,16 @@ Im Familien-, Freundes- und Arbeitskreis ist es oftmals nicht möglich durchweg 
 
 </table>
     <figcaption aria-hidden="true">Tab. 11: EDUS - Zusammenhang zwischen Überraschtheit und Infektion</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_06.png" alt="Abb. 6: EDUS - Zusammenhang zwischen Überraschtheit und Infektion."/>
-    <figcaption aria-hidden="true">Abb. 6: EDUS - Zusammenhang zwischen Überraschtheit und Infektion.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_06.png" alt="Abb. 6: EDUS - Zusammenhang zwischen Überraschtheit und Infektion."/>
+<figcaption aria-hidden="true">Abb. 6: EDUS - Zusammenhang zwischen Überraschtheit und Infektion.</figcaption>
 
 ### 3.5 Zusammenhang zwischen Überraschtheit, Kontaktaufnahme zum Gesundheitswesen und Infektion
 
 Die Zusammenhänge zwischen der Überraschtheit, Infektion und Kontaktaufnahme zum Gesundheitswesen lassen sich in einer einzigen Grafik zusammenfassen.
 
-<figure>
-    <img src="./fig_07.png" alt="Abb. 7: EDUS - Zusammenhang zwischen Überraschtheit, Kontaktvorhaben zum Gesundheitswesen und Infektion."/>
-    <figcaption aria-hidden="true">Abb. 7: EDUS - Zusammenhang zwischen Überraschtheit, Kontaktvorhaben zum Gesundheitswesen und Infektion.
-</figcaption>
-</figure>
+<img src="./fig_07.png" alt="Abb. 7: EDUS - Zusammenhang zwischen Überraschtheit, Kontaktvorhaben zum Gesundheitswesen und Infektion."/>
+<figcaption aria-hidden="true">Abb. 7: EDUS - Zusammenhang zwischen Überraschtheit, Kontaktvorhaben zum Gesundheitswesen und Infektion.</figcaption>
 
 ## 4 Testung
 
@@ -1287,7 +1270,7 @@ Anhand der Daten der Folgebefragung lässt sich das Verhältnis von Test-Intenti
 Auch über die prozentualen Anteile hinaus entsprach das Testvorhaben größtenteils den durchgeführten Tests. So nahmen beispielsweise 73% der Befragten, die zuvor angaben, einen PCR-Test machen zu wollen, auch diese Art von Test in Anspruch. Bei Antigen-Schnelltests waren es 80,8%. Größere Varianz findet sich hingegen bei Mehrfachtestung und Abhängigkeit vom ärztlichen Rat.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1361,18 +1344,14 @@ Auch über die prozentualen Anteile hinaus entsprach das Testvorhaben größtent
 
 </table>
     <figcaption aria-hidden="true">Tab. 14: EDUS - Zusammenhang zwischen Test-Art und durchgeführten Tests</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_10.png" alt="Abb. 10: EDUS - Zusammenhang zwischen Testvorhaben und durchgeführtem Test."/>
-    <figcaption aria-hidden="true">Abb. 10: EDUS - Zusammenhang zwischen Testvorhaben und durchgeführtem Test.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_10.png" alt="Abb. 10: EDUS - Zusammenhang zwischen Testvorhaben und durchgeführtem Test."/>
+<figcaption aria-hidden="true">Abb. 10: EDUS - Zusammenhang zwischen Testvorhaben und durchgeführtem Test.</figcaption>
 
 Die Ergebnisse der Tests fielen für 5,9% der Teilnehmenden der Folgebefragung positiv aus. Bei 93,4% lieferten die Tests ein negatives und bei 0,4% ein nicht eindeutiges Ergebnis. Die durchgeführten PCR-Tests lieferten mit Abstand am häufigsten ein positives Ergebnis.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1430,13 +1409,9 @@ Die Ergebnisse der Tests fielen für 5,9% der Teilnehmenden der Folgebefragung p
 
 </table>
     <figcaption aria-hidden="true">Tab. 15: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_11.png" alt="Abb. 11: EDUS - Zusammenhang zwischen durchgeführtem Test und Testergebnis."/>
-    <figcaption aria-hidden="true">Abb. 11: EDUS - Zusammenhang zwischen durchgeführtem Test und Testergebnis.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_11.png" alt="Abb. 11: EDUS - Zusammenhang zwischen durchgeführtem Test und Testergebnis."/>
+<figcaption aria-hidden="true">Abb. 11: EDUS - Zusammenhang zwischen durchgeführtem Test und Testergebnis.</figcaption>
 
 <details>
 <summary>
@@ -2022,7 +1997,7 @@ NA
 Zum Hauptteil der Befragungszeit von März bis Mai 2021 konnten nur PCR-Tests in der Corona-Warn-App registriert werden. Das erklärt, warum nur 22,4% der Teilnehmenden der Folgebefragung das Ergebnis über die App mitgeteilt bekommen haben. Bei denen, die angaben, nur einen PCR-Test gemacht zu haben, wurde das Ergebnis in 46,3% der Fälle über die Corona-Warn-App vermittelt. Seit Anfang Mai war die Registrierung von Antigen-Schnelltests möglich, wobei davon auszugehen ist, dass die Umsetzung der Anbindung in den meisten Testzentren womöglich etwas länger gedauert hat. Bei 5,3% der Befragten, war die Übermittlung durch die App langsamer als von anderer Stelle.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2080,13 +2055,9 @@ Zum Hauptteil der Befragungszeit von März bis Mai 2021 konnten nur PCR-Tests in
 
 </table>
     <figcaption aria-hidden="true">Tab. 19: EDUS - Zusammenhang zwischen durchgeführten Tests und Testergebnis</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_13.png" alt="Abb. 13: EDUS - Zusammenhang zwischen durchgeführtem Test und Erhalt per CWA."/>
-    <figcaption aria-hidden="true">Abb. 13: EDUS - Zusammenhang zwischen durchgeführtem Test und Erhalt per CWA.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_13.png" alt="Abb. 13: EDUS - Zusammenhang zwischen durchgeführtem Test und Erhalt per CWA."/>
+<figcaption aria-hidden="true">Abb. 13: EDUS - Zusammenhang zwischen durchgeführtem Test und Erhalt per CWA.</figcaption>
 
 Bei denen, die ihr Ergebnis über die Corona-Warn-App erhielten, wurde dieses fast immer innerhalb von 24 Stunden oder zwei Tagen nach der Durchführung des Tests übermittelt. Das Ergebnis spricht für eine schnelle Meldekette, nicht nur in Bezug auf die Corona-Warn-App.
 
@@ -2365,7 +2336,7 @@ Nein
 Befragte, die den Test in der Corona-Warn-App registriert hatten, waren öfter dazu bereit, ein positives Testergebnis zu teilen.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2407,19 +2378,15 @@ Befragte, die den Test in der Corona-Warn-App registriert hatten, waren öfter d
 
 </table>
     <figcaption aria-hidden="true">Tab. 23: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses via CWA</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_14.png" alt="Abb. 14: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses."/>
-    <figcaption aria-hidden="true">Abb. 14: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_14.png" alt="Abb. 14: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses."/>
+<figcaption aria-hidden="true">Abb. 14: EDUS - Zusammenhang zwischen dem Erhalt des Testergebnisses via CWA und Teilung des Testergebnisses.</figcaption>
 
 Die Daten geben keine Hinweise auf statistisch signifikante Verhaltensunterschiede nach Geschlecht, Alter oder Bildung. Dabei muss beachtet werden, dass die Gruppe derjenigen, die positiv getestet wurden und dadurch die Frage zum Teilen des positiven Ergebnisses gestellt bekamen, mit n=792 sehr klein für gesicherte statistische Berechnungen ist.
 
 ### 4.4 Übersicht zum Gesamttestprozess
 
-Die folgende interaktive Grafik (Sankey-Diagramm) verdeutlich die Aufteilung der Antworten auf Fragen zur Testung über die Basis- und Folgebefragung. Sankey-Diagramme sind eine spezifische Art Flussdiagramm. Flussmengen werden durch mengenproportionale Pfeile dargestellt, deren Dicke die maßstabsgerechte Menge repräsentiert. Die Flüsse verlaufen zwischen zwei Knoten, die als Zwischenstufen fungieren und u.a. Auskunft über die Struktur des beschriebenen Systems geben.
+Die folgende interaktive Grafik (Sankey-Diagramm) verdeutlich die Aufteilung der Antworten auf Fragen zur Testung über die Basis- und Folgebefragung. Sankey-Diagramme sind eine spezifische Art Flussdiagramm. Flussmengen werden durch mengenproportionale Pfeile dargestellt, deren Dicke die maßstabsgerechte Menge repräsentiert. Die Flüsse verlaufen zwischen zwei Knoten, die als Zwischenstufen fungieren und u.&nbsp;a. Auskunft über die Struktur des beschriebenen Systems geben.
 
 <div class="figure" alt="EDUS – CWA Testprozess, von Testvorhaben über Testart, tatsächlich durchgeführtem Test, Testergebnis, Testerhalt via CWA bis Teilung.">
 <div id="htmlwidget-networkD3-27894f19b2bee56740ed" style="width:100%;height:700px;" class="sankeyNetwork html-widget"></div>
@@ -2443,7 +2410,7 @@ Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
 <p>
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2526,13 +2493,9 @@ Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis
 
 </table>
     <figcaption aria-hidden="true">Tab. 24: EDUS - Zusammenhang zwischen Angaben zu Symptomen in Basisbefragung und Testergebnis</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_16.png" alt="Abb. 16: EDUS - Zusammenhang zwischen Symptom (Basisbefragung) und Testergebnis."/>
-    <figcaption aria-hidden="true">Abb. 16: EDUS - Zusammenhang zwischen Symptom (Basisbefragung) und Testergebnis.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_16.png" alt="Abb. 16: EDUS - Zusammenhang zwischen Symptom (Basisbefragung) und Testergebnis."/>
+<figcaption aria-hidden="true">Abb. 16: EDUS - Zusammenhang zwischen Symptom (Basisbefragung) und Testergebnis.</figcaption>
 </p>
 </details>
 <p></p>
@@ -2546,7 +2509,7 @@ Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
 <p>
 <p></p>
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2629,13 +2592,9 @@ Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis
 
 </table>
     <figcaption aria-hidden="true">Tab. 25: Zusammenhang zwischen Angaben zu Symptomen in Folgebefragung und Testergebnis</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_17.png" alt="Abb. 17: EDUS - Zusammenhang zwischen Symptom (Folgebefragung) und Infektion."/>
-    <figcaption aria-hidden="true">Abb. 17: EDUS - Zusammenhang zwischen Symptom (Folgebefragung) und Infektion.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_17.png" alt="Abb. 17: EDUS - Zusammenhang zwischen Symptom (Folgebefragung) und Infektion."/>
+<figcaption aria-hidden="true">Abb. 17: EDUS - Zusammenhang zwischen Symptom (Folgebefragung) und Infektion.</figcaption>
 </p>
 </details>
 <p></p>
@@ -3003,5 +2962,3 @@ Wir bedanken uns an dieser Stelle noch einmal ganz herzlich bei allen Nutzenden,
 ## 7 So geht es weiter
 
 In den kommenden Wochen werden wir uns hier im Science Blog mit dem Thema <q>Datenspende</q> der Corona-Warn-App beschäftigen. Wir wollen analysieren, inwieweit das freiwillige, datenschutzkonforme Bereitstellen von Nutzenden-Daten Erkenntnisse über das Nutzungsverhalten möglich macht. Außerdem werden wir zeigen, wie die Datenspende bei der Weiterentwicklung der Corona-Warn-App geholfen hat.
-
-
