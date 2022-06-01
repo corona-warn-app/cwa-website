@@ -466,7 +466,6 @@ Don’t know
 The results demonstrate that the CWA helps inform users about exposure to infections that have occurred outside of their immediate social environment. Respondents who were surprised to receive the warning, therefore, might not have otherwise been informed about their exposure to infection if they had not been using the app. The higher the participants rated their risk of infection before receiving a warning, the less likely they were to be surprised at receiving one.
 
 <p></p>
-<figure>
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -534,12 +533,9 @@ The results demonstrate that the CWA helps inform users about exposure to infect
 
 </table>
     <figcaption aria-hidden="true">Tab. 5: EDUS - Relationship between estimated risk and level of surprise.</figcaption>
-</figure>
 
-<figure>
-    <img src="./fig_03_en.png" class="figure-img img-fluid" alt="Fig. 3: EDUS – Relationship between level of surprise and estimated risk."/>
-    <figcaption aria-hidden="true">Fig. 3: EDUS – Relationship between level of surprise and estimated risk.</figcaption>
-</figure>
+<img src="./fig_03_en.png" class="figure-img img-fluid" alt="Fig. 3: EDUS – Relationship between level of surprise and estimated risk."/>
+<figcaption aria-hidden="true">Fig. 3: EDUS – Relationship between level of surprise and estimated risk.</figcaption>
 
 <details>
 <summary>
@@ -675,7 +671,7 @@ Don’t know
 Participants who were surprised to receive a <q>red warning</q> either undertook rapid antigen tests more often or did not take any test at all slightly more often than respondents who were not surprised to have received the warning. There are many possible explanations for this.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -738,12 +734,9 @@ Participants who were surprised to receive a <q>red warning</q> either undertook
 
 </table>
     <figcaption aria-hidden="true">Tab. 7: EDUS - Relationship between level of surprise and testing.</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_04_en.png" alt="Fig. 4: EDUS – Relationship between level of surprise and testing"/>
-    <figcaption aria-hidden="true">Fig. 4: EDUS – Relationship between level of surprise and testing</figcaption>
-</figure>
+</div>
+<img src="./fig_04_en.png" alt="Fig. 4: EDUS – Relationship between level of surprise and testing"/>
+<figcaption aria-hidden="true">Fig. 4: EDUS – Relationship between level of surprise and testing</figcaption>
 
 ### 3.3 Relationship between surprise and intended contact with health-care providers
 
@@ -752,7 +745,7 @@ Respondents who were surprised to receive a <q>red warning</q> were less likely 
 Most respondents who intended to contact a health-care provider planned to contact their GP (55.2%). Once again, respondents were provided with a number of possible response categories when answering this question. Contact to their local health authority (43.4%) was selected less frequently. The telephone number of the on-call medical service and hospitals played a subordinate role in the survey. The data show that users treated the warning seriously and assumed that they were at risk from infection. Moreover, this generally led them to contact a health-care provider – particularly their GP. The contact with GPs argues strongly for the intended relief of the public health service by the Corona-Warn-App. Any associated cases of COVID-19 would only be confirmed once the user goes on to take a test. Testing suspected cases of COVID-19 helps to end chains of infection. The CWA, therefore, acts as an early warning system, and its value is particularly evident in cases where users have come into contact with infected people that they do not know. The app helps inform users about the need for testing and, therefore, contributes to improving the efficiency of testing strategies.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -800,13 +793,10 @@ Most respondents who intended to contact a health-care provider planned to conta
 
 </table>
     <figcaption aria-hidden="true">Tab. 8:  EDUS - Relationship between level of surprise and contact intentions to the health care system</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_05_en.png" alt="Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider."/>
-    <figcaption aria-hidden="true">Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider.
+</div>
+<img src="./fig_05_en.png" alt="Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider."/>
+<figcaption aria-hidden="true">Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider.
 </figcaption>
-</figure>
 
 <details>
 <summary>
@@ -977,7 +967,7 @@ Respondents who were surprised to receive a <q>red warning</q> tested positive f
 It is not always possible to maintain social distancing and fully comply with hygiene rules when among family, friends or at work. However, it is easier to do so when among casual acquaintances and strangers, such as on public transport and while shopping. If contact with people from a user’s immediate environment is more likely to lead to an infection, this could explain the divergences between test results among different groups of people. 
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1030,23 +1020,16 @@ It is not always possible to maintain social distancing and fully comply with hy
 
 </table>
     <figcaption aria-hidden="true">Tab. 11: EDUS - Relationship between level of surprise and infection</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_06_en.png" alt="Fig. 6: EDUS – Relationship between level of surprise and infection."/>
-    <figcaption aria-hidden="true">Fig. 6: EDUS – Relationship between level of surprise and infection.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_06_en.png" alt="Fig. 6: EDUS – Relationship between level of surprise and infection."/>
+<figcaption aria-hidden="true">Fig. 6: EDUS – Relationship between level of surprise and infection.</figcaption>
 
 ### 3.5 Relationship between surprise, infection and intention to contact a health-care provider
 
 The relationship between level of surprise, infection and intention to contact a health-care provider is summarised in the following graph.
 
-<figure>
-    <img src="./fig_07_en.png" alt="Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection."/>
-    <figcaption aria-hidden="true">Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection.
-</figcaption>
-</figure>
+<img src="./fig_07_en.png" alt="Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection."/>
+<figcaption aria-hidden="true">Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection.</figcaption>
 
 ## 4 Testing
 
@@ -1285,7 +1268,7 @@ Data from the follow-up survey can be used to examine the relationship between t
 The data demonstrate that the respondents generally implemented their stated testing strategy. 73% of respondents who had intended to have a PCR test, and 80.8% of respondents who planned to take a rapid antigen test, actually did so. However, there is greater variance with regard to multiple tests and intention to seek medical advice.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1359,18 +1342,14 @@ The data demonstrate that the respondents generally implemented their stated tes
 
 </table>
     <figcaption aria-hidden="true">Tab. 14: EDUS - Relationship between testing intention and the test that was carried out</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_10_en.png" alt="Fig. 10: EDUS – Relationship between testing intention and the test that was carried out."/>
-    <figcaption aria-hidden="true">Fig. 10: EDUS – Relationship between testing intention and the test that was carried out.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_10_en.png" alt="Fig. 10: EDUS – Relationship between testing intention and the test that was carried out."/>
+<figcaption aria-hidden="true">Fig. 10: EDUS – Relationship between testing intention and the test that was carried out.</figcaption>
 
 5.9% of respondents who went for testing (follow-up survey) tested positive. 93.4% tested negative, and 0.4% received inconclusive results. PCR tests led to the highest proportion of positive results.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1428,13 +1407,9 @@ The data demonstrate that the respondents generally implemented their stated tes
 
 </table>
     <figcaption aria-hidden="true">Tab. 15: EDUS - Relationship between tests carried out and test result</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_11_en.png" alt="Fig. 11: EDUS – Relationship between tests carried out and test resultss."/>
-    <figcaption aria-hidden="true">Fig. 11: EDUS – Relationship between tests carried out and test results.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_11_en.png" alt="Fig. 11: EDUS – Relationship between tests carried out and test resultss."/>
+<figcaption aria-hidden="true">Fig. 11: EDUS – Relationship between tests carried out and test results.</figcaption>
 
 <details>
 <summary>
@@ -2020,7 +1995,7 @@ NA
 During the main survey period (March to May 2021), only PCR tests could be registered in the CWA. This explains why only 22.4% of participants in the follow-up survey received their result via the app. 46.3% of users who stated that they had undergone a PCR test shared their result via the app. It has been possible to register the results of rapid antigen tests with the app since the beginning of May, although it should be assumed that most test centres will have taken more time to implement this service. 2.7% of the respondents had already received their results from elsewhere by the time they had received them via the app.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2078,13 +2053,9 @@ During the main survey period (March to May 2021), only PCR tests could be regis
 
 </table>
     <figcaption aria-hidden="true">Tab. 19: EDUS - Relationship between tests performed and test result</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_13_en.png" alt="Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA ."/>
-    <figcaption aria-hidden="true">Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA .
-</figcaption>
-</figure>
+</div>
+<img src="./fig_13_en.png" alt="Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA ."/>
+<figcaption aria-hidden="true">Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA .</figcaption>
 
 Users who received their results via the app usually received them within 24 hours or two days after the test had been carried out. The results suggest that it is not just the app that works quickly but the entire reporting chain.
 
@@ -2363,7 +2334,7 @@ No
 Respondents who had registered the test in the Corona-Warn-App were more often willing to share a positive test result.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2405,13 +2376,9 @@ Respondents who had registered the test in the Corona-Warn-App were more often w
 
 </table>
     <figcaption aria-hidden="true">Tab. 23: EDUS - Relationship between receiving the test result via CWA and sharing the test result via CWA</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_14_en.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
-    <figcaption aria-hidden="true">Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_14_en.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
+<figcaption aria-hidden="true">Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result.</figcaption>
 
 No statistically significant differences were identified by sex, age or education. However, the group of respondents who tested positive and, therefore, were asked whether they had shared their positive result (n = 792) is too small to use for reliable statistical calculations. 
 
@@ -2440,7 +2407,7 @@ Relationship between information on symptoms in the basic survey and test result
 <p>
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2523,13 +2490,9 @@ Relationship between information on symptoms in the basic survey and test result
 
 </table>
     <figcaption aria-hidden="true">Tab. 24: EDUS - Relationship between information on symptoms in the basic survey and test results</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_16_en.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
-    <figcaption aria-hidden="true">Fig. 16: EDUS - Relationship between symptom (basic survey) and test result.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_16_en.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
+<figcaption aria-hidden="true">Fig. 16: EDUS - Relationship between symptom (basic survey) and test result.</figcaption>
 </p>
 </details>
 <p></p>
@@ -2543,7 +2506,7 @@ Relationship between information on symptoms in the follow-up survey and test re
 <p>
 <p></p>
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2626,13 +2589,9 @@ Relationship between information on symptoms in the follow-up survey and test re
 
 </table>
     <figcaption aria-hidden="true">Tab. 25: EDUS - Relationship between information on symptoms in the follow-up survey and test results</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_17_en.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
-    <figcaption aria-hidden="true"> Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_17_en.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
+<figcaption aria-hidden="true"> Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection.</figcaption>
 </p>
 </details>
 <p></p>
