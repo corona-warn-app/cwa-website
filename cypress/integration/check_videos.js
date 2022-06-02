@@ -41,9 +41,7 @@ context("Check for broken videos", () => {
     })
 
     pages.map(page => {
-        console.log(page);
         it(`"${page}" - Check for broken videos`, () => {
-            console.log("enter in test")
             cy.visit({log: false, url: page});
             cy.get('main').then($main => {
                 if ($main.find('video').length > 0) {
