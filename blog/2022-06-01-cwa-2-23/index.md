@@ -1,6 +1,6 @@
 ---
-page-title: "CWA 2.23: Extension of technologically expired certificates in the CWA"
-page-description: "CWA 2.23: Extension of technologically expired certificates in the CWA"
+page-title: "CWA 2.23: Extension of technically expired certificates in the CWA"
+page-description: "CWA 2.23: Extension of technically expired certificates in the CWA"
 page-name: cwa-2-23
 page-name_de: cwa-2-23
 author: CWA-Team, 6 pm
