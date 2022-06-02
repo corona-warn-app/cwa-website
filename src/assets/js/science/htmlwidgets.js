@@ -618,7 +618,12 @@
         if (scriptData) {
           var data;
           if(scriptData.textContent == "" && scriptData.text == "") {
-            let path = `/assets/img/${window.location.href.substring(window.location.origin.length+4)}/${el.id}.json`;
+            let blogPath = window.location.href.substring(window.location.origin.length+4);
+            //check if blog path has anchor link
+            if(blogPath.includes('#')) {
+              blogPath = blogPath.split('#')[0];
+            }
+            let path = `/assets/img/${blogPath}/${el.id}.json`;
             fetch(path)
             .then(response => {
               return response.json();
