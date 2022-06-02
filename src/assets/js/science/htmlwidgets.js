@@ -623,7 +623,7 @@
             if(blogPath.includes('#')) {
               blogPath = blogPath.split('#')[0];
             }
-            let path = `/assets/img/${blogPath}/${el.id}.json`;
+            let path = `/assets/img/${blogPath.slice(0, -1)}/${el.id}.json`;
             fetch(path)
             .then(response => {
               return response.json();
