@@ -1,0 +1,25 @@
+name: Cypress Test Production
+# This workflow runs the Cypress test suite on the production server
+# https://coronawarn.app
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run daily at 9:00 UTC
+    - cron: "0 9 * * *"
+
+jobs:
+  Cypress-Test-Production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v3
+        with:
+          browser: chrome
+          headless: true
+          config: baseUrl=https://coronawarn.app
+          # Only run tests in top level of integration directory
+          spec: cypress/integration/*.js
