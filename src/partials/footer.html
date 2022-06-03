@@ -10,10 +10,10 @@
         <div class="row">
           {{#each language.footer-nav}}
           <div class="link-item col-6 col-md-4"{{#if testid}} data-e2e="{{testid}}"{{/if}}>
-            <strong>{{title}}</strong>
+            <strong class="headline">{{title}}</strong>
             {{#if button}}
             <a {{#if button.url}}href="{{button.url}}"{{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless button.url}} class="disabled"{{/unless}}>
-              {{#unless button.icon}}{{button.title}}{{/unless}}
+              {{#unless button.icon}}{{{button.title}}}{{/unless}}
               {{#if button.icon}}<span class="icon icon_img icon_{{button.icon}}"><img
                   src="{{root}}{{#unless button.icon-url}}assets/img/icons/{{button.icon}}.svg{{/unless}}{{#if button.icon-url}}{{button.icon-url}}{{/if}}"
                   alt="{{title}}"
@@ -21,22 +21,28 @@
             </a>
             {{/if}}
             {{#if links}}
+            <ul class="list">
             {{#each links}}
             {{#if startFlex}}
-            <div class="d-flex flex-row pt-1">
+            <li class="list-item">
+              <ul class="list d-flex flex-row pt-1">            
             {{/if}}
-            <a {{#if url}}href="{{url}}" {{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}} class="{{#if marginRight}}mr-2{{/if}}">
-              {{#unless icon}}{{title}}{{/unless}}
-              {{#if icon}}
-                <svg xmlns="http://www.w3.org/2000/svg" width="{{width}}" height="{{height}}" fill="{{filled}}" class="bi bi-{{icon}} icon-image" viewBox="0 0 16 16">
-                  <path d="{{svg}}"/>
-                </svg>
-              {{/if}}
-            </a>
+            <li class="list-item">
+              <a {{#if url}}href="{{url}}" {{#if external}} target="_blank" rel="noopener noreferrer"{{/if}}{{/if}}{{#unless url}}class="disabled" {{/unless}} class="{{#if marginRight}}mr-2{{/if}}" aria-label="{{aria-label}}">
+                {{#unless icon}}{{{title}}}{{/unless}}
+                {{#if icon}}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="{{width}}" height="{{height}}" fill="{{filled}}" class="bi bi-{{icon}} icon-image" viewBox="0 0 16 16">
+                    <path d="{{svg}}"/>
+                  </svg>
+                {{/if}}
+              </a>
+            </li>
             {{#if endFlex}}
-            </div>
+              </ul>
+            </li>
             {{/if}}
             {{/each}}
+            </ul>
             {{/if}}
           </div>
           {{/each}}
@@ -48,6 +54,7 @@
         {{#if language.copyright}}
         <a href="{{language.copyright.url}}"{{#if language.copyright.external}} target="_blank" rel="noopener noreferrer"{{/if}}>{{language.copyright.title}}</a>
         {{/if}}
+        <div/>
       <div class="privacy text-center text-sm-right">
         {{#if language.privacy}}
         <a href="{{language.privacy.url}}"{{#if language.privacy.external}} target="_blank" rel="noopener noreferrer"{{/if}}>{{language.privacy.title}}</a>

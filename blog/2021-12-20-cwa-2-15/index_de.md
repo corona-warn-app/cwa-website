@@ -9,7 +9,7 @@ layout: blog
 
 *Aktualisiert am 10.01.2022 um 13:30 Uhr*
 
-Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App (CWA) veröffentlicht.** Mit dem Update kann die CWA zukünftig sogenannte **Onlineverifikationsdienste** unterstützen. Onlineverifikationsdienste sollen Nutzer\*innen einen datensparsamen Weg bieten, schon während der Buchung von Dienstleistungen (z.B. Tickets) den Nachweis zu erbringen, dass sie geimpft, genesen oder negativ getestet sind.  
+Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat **Version 2.15 der Corona-Warn-App (CWA) veröffentlicht.** Mit dem Update kann die CWA zukünftig sogenannte **Onlineverifikationsdienste** unterstützen. Onlineverifikationsdienste sollen Nutzer\*innen einen datensparsamen Weg bieten, schon während der Buchung von Dienstleistungen (z.&nbsp;B. Tickets) den Nachweis zu erbringen, dass sie geimpft, genesen oder negativ getestet sind.  
 
 **Wichtiges Update vom 10.01.22:** Bereits seit Oktober 2021 liegen die europaweit gültigen Anforderungen an Onlineverifikationsdienste vor. In Deutschland ist momentan **noch kein Anbieter eines Onlineverifikationsdienstes zugelassen** worden. Derzeit erfolgen Tests, deren Ergebnisse zunächst abgewartet werden. Erst nach einer Auswertung dieser Tests und nach erfolgter Beratung durch den Bundesbeauftragten für den Datenschutz und die Informationsfreiheit (BfDI), werden  Onlineverifikationsdienste in der Praxis verfügbar sein.  Mit Version 2.15 ist die CWA aber bereit, entsprechende Verifikationsdienste zu unterstützen, sobald Anbieter eines solchen Dienstes zugelassen sind. 
 
@@ -32,8 +32,8 @@ Sollte sie die Tickets mit dem Smartphone buchen, kann sie einen Screenshot des 
 
 <br></br>
 <center> 
-<img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" style="align: center" width=250> <img src="./ticket-validierung(13).png" title="Scannen des QR-Codes" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Links: universeller QR-Code-Scanner, Rechts: Möglichkeit, QR-Code von einem Foto (z.B. Screenshot) über den QR-Code-Scanner zu importieren</em></figcaption>
+<img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center" width=250> <img src="./ticket-validierung(13).png" title="Scannen des QR-Codes" alt="Scannen des QR-Codes" style="align: center" width=250> 
+<figcaption aria-hidden="true"><em>Links: universeller QR-Code-Scanner, Rechts: Möglichkeit, QR-Code von einem Foto (z.&nbsp;B. Screenshot) über den QR-Code-Scanner zu importieren</em></figcaption>
 </center>
 <br></br>
 
@@ -42,7 +42,7 @@ Nachdem die Nutzerin in der CWA ihr Einverständnis gegeben hat, kann sie das Ze
 
 <br></br>
 <center> 
-<img src="./ticket-validierung(3).png" title="Einverständniserklärung" style="align: center" width=250> <img src="./ticket-validierung(4).png" title="Einverständniserklärung" style="align: center" width=250> <img src="./ticket-validierung(5).png" title="Einverständniserklärung" style="align: center" width=250> 
+<img src="./ticket-validierung(3).png" title="Einverständniserklärung" alt="Einverständniserklärung" style="align: center" width=250> <img src="./ticket-validierung(4).png" title="Einverständniserklärung" alt="Einverständniserklärung" style="align: center" width=250> <img src="./ticket-validierung(5).png" title="Einverständniserklärung" alt="Einverständniserklärung" style="align: center" width=250> 
 </center>
 <br></br>
 
@@ -52,7 +52,7 @@ Verlangt ein Anbieter beispielsweise entweder ein Impfzertifikat, ein Genesenenz
 
 <br></br>
 <center> 
-<img src="./ticket-validierung(2).png" title="Auswahl des Zertifikats" style="align: center" width=250>  
+<img src="./ticket-validierung(2).png" title="Auswahl des Zertifikats" alt="Auswahl des Zertifikats" style="align: center" width=250>  
 </center>
 <br></br>
 
@@ -64,7 +64,7 @@ Nachdem sie ein Zertifikat ausgewählt hat und noch einmal ihr Einverständnis z
 
 <br></br>
 <center> 
-<img src="./ticket-validierung(8).png" title="Einverständnis zur vorübergehenden Übermittlung des Zertifikats" style="align: center" width=250>  
+<img src="./ticket-validierung(8).png" title="Einverständnis zur vorübergehenden Übermittlung des Zertifikats" alt="Einverständnis zur vorübergehenden Übermittlung des Zertifikats" style="align: center" width=250>  
 </center>
 <br></br>
 
@@ -74,7 +74,7 @@ Anschließend kann die Nutzerin in der App sehen, ob das Zertifikat erfolgreich 
 
 <br></br>
 <center> 
-<img src="./ticket-validierung(7).png" title="Erfolgreiche Prüfung des Zertifikats" style="align: center" width=250> <img src="./ticket-validierung(6).png" title="Zertifikat wurde nicht anerkannt" style="align: center" width=250> 
+<img src="./ticket-validierung(7).png" title="Erfolgreiche Prüfung des Zertifikats" alt="Erfolgreiche Prüfung des Zertifikats" style="align: center" width=250> <img src="./ticket-validierung(6).png" title="Zertifikat wurde nicht anerkannt" alt="Zertifikat wurde nicht anerkannt" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Ergebnisse der Zertifikatsprüfung in der Corona-Warn-App</em></figcaption>
 </center>
 <br></br>
@@ -91,8 +91,8 @@ Des Weiteren hat das Projektteam mit Version 2.15 die **Handlungsempfehlungen un
 
 <br></br>
 <center> 
-<img src="./rote-kachel(1).png" title="handlungsempfehlungen bei roter Kachel" style="align: center" width=250>
-<img src="./rote-kachel(3).png" title="handlungsempfehlungen bei roter Kachel" style="align: center" width=250> <img src="./rote-kachel(4).png" title="handlungsempfehlungen bei roter Kachel" style="align: center" width=250> 
+<img src="./rote-kachel(1).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250>
+<img src="./rote-kachel(3).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250> <img src="./rote-kachel(4).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Handlungsempfehlungen bei roter Kachel in der Corona-Warn-App</em></figcaption>
 </center>
 <br></br>
@@ -100,8 +100,6 @@ Des Weiteren hat das Projektteam mit Version 2.15 die **Handlungsempfehlungen un
 Version 2.15 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
 
 <hr/>
-Siehe auch folgende FAQ-Artikel:
+Siehe auch folgenden FAQ-Artikel:
 
 - [Fragen und Antworten zur Zertifikatsprüfung bei Ticketbuchungen](/de/faq/#val_service_basics)
-- [Warum erhalte ich die Meldung, dass kein geeignetes Zertifikat vorhanden ist?](/de/faq/#val_service_no_valid_dcc)
-- [Warum ist mein Zertifikat nicht prüfbar oder wird nicht anerkannt?](/de/faq/#val_service_result)

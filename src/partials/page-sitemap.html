@@ -1,0 +1,28 @@
+{{#if page-contents}}
+<section class="section">
+    <div class="container">
+        <div class="container-inner container-inner_lg">
+            <div class="row">
+                <div class="col ">
+                    {{> headline-component page-contents.section-main.headline}}
+                    {{#each page-contents.categories}}
+                    {{#if url}}
+                    <a href="{{url}}">{{title}}</a>:
+                    {{else}}
+                    <p>{{title}}:</p>
+                    {{/if}}
+                    <ul>
+                        {{#each children}}
+                        <li>
+                            <a href="{{url}}">{{name}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <br />
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}

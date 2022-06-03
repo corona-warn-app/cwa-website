@@ -7,14 +7,14 @@ author: Robin Houben
 layout: blog
 ---
 
-An overview of important key figures for the Corona-Warn-App is now available in the form of a digital dashboard. The key figures in the dashboard are updated daily. In the launch version, the following key figures are available:  Downloads, test registration, test results, sharing behavior, and low-risk and high-risk alerts. The metrics in the dashboard are updated daily. They can be accessed under the "Analysis" tab and downloaded as a csv file. 
+An overview of important key figures for the Corona-Warn-App is now available in the form of a digital dashboard. The key figures in the dashboard are updated daily. In the launch version, the following key figures are available:  Downloads, test registration, test results, sharing behavior, and low-risk and high-risk alerts. The metrics in the dashboard are updated daily. They can be accessed under the "Dashboard" tab and downloaded as a csv file. 
 
 <!-- overview -->
 
-### Analysis data from the Corona-Warn-App
+### Dashboard data from the Corona-Warn-App
 
 For more than a year, the project team (Robert Koch Institute, SAP, Deutsche Telekom) has regularly published key figures for the Corona-Warn-App - an important contribution to transparency, which is central to all open-source projects. 
-From now on, important key figures are available in a public dashboard as an interactive overview. The dashboard can be accessed via the Corona-Warn-App blog under the menu item "Analysis". The launch version displays metrics on downloads, test registration, test results, sharing behavior, and alerts. 
+From now on, important key figures are available in a public dashboard as an interactive overview. The dashboard can be accessed via the Corona-Warn-App blog under the menu item "Dashboard". The launch version displays metrics on downloads, test registration, test results, sharing behavior, and alerts. 
 
 These key figures come from various sources: 
  

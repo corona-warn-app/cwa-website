@@ -21,16 +21,16 @@ jobs:
     steps:
       - name: Install requirements
         run: |
-          curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+          curl https://cli-assets.heroku.com/install.sh | sh
           sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment (v14)
+      - name: Setup Node.js environment (v16)
         uses: actions/setup-node@v2
         with:
-          node-version: 'lts/fermium'
+          node-version: 'lts/gallium'
 
       - name: npm install
         run: npm install
@@ -40,23 +40,19 @@ jobs:
 
       - name: keepalive.html
         run: echo "OK" > public/keepalive.html
+      
+      # https://github.com/s3tools/s3cmd/issues/643
+      - name: Remove python3-magic due to s3cmd incompatibility
+        run: sudo dpkg --remove --force-depends python3-magic
 
-      # Runs a single command using the runners shell
-      - name: Deploy master
-        uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete --cache-control max-age=60
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_S3_ENDPOINT: ${{ secrets.AWS_S3_ENDPOINT }}
-          SOURCE_DIR: "public"
+      - name: Upload files to S3
+        run: |
+          s3cmd --version
+          s3cmd sync --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --follow-symlinks --no-mime-magic --guess-mime-type --exclude "*.js" --exclude "*.css" ./public/* s3://${{secrets.AWS_S3_BUCKET }}
+          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --follow-symlinks -m 'text/css' --exclude "*" --include "*.css" ./public/* s3://${{secrets.AWS_S3_BUCKET }}
+          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --follow-symlinks -m 'text/javascript' --exclude "*" --include "*.js" ./public/* s3://${{secrets.AWS_S3_BUCKET }}
 
       - name: Set mime type for FAQ redirects
         run: |
           s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/
           s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/en/faq/
-          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --remove-header=Content-Security-Policy s3://${{secrets.AWS_S3_BUCKET }}/de/science/
-          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --remove-header=Content-Security-Policy s3://${{secrets.AWS_S3_BUCKET }}/en/science/

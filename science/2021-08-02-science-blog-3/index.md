@@ -50,10 +50,10 @@ Fieldwork for the EDUS took place between March and May 2021. During this time, 
 
 The data collected by the EDUS suggest that the CWA is normally installed on one device (at a specific point in time). A small percentage of respondents (just under 9%) reported that they used the app on two devices, whereas an even smaller proportion (less than 2%) stated that they had installed the app on more than two devices. Consequently, the survey results do not substantiate the (albeit anecdotal) evidence of extensive multiple usage. The number of active devices, therefore, is likely to correspond closely to the number of actual users (approx. 12% difference). This does not consider usage on different devices over time. 
 
-<div class="figure">
+<div class="figure" alt="EDUS - Number of mobile devices on which the Corona-Warn-App is installed.">
 <div id="htmlwidget-77e2f4644bdbf7c91f66" style="width:600px;height:400px;" class="plotly html-widget"></div>
 <script type="application/json" data-for="htmlwidget-77e2f4644bdbf7c91f66">{"x":{"visdat":{"296771a414aa":["function () ","plotlyVisDat"]},"cur_data":"296771a414aa","attrs":{"296771a414aa":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"values":{},"labels":{},"type":"pie","text":["13.287"," 1.285","   239","11.283"],"sort":false,"marker":{"colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"]},"hoverinfo":"label+text+percent","inherit":true}},"layout":{"width":600,"height":400,"margin":{"b":40,"l":60,"t":25,"r":10},"legend":{"orientation":"h","xanchor":"center","x":0.5},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false,"locale":"en"},"data":[{"values":[13287,1285,239,11283],"labels":["1 Device","2 Devices","More than 2 devices","-not specified-"],"type":"pie","text":["13.287"," 1.285","   239","11.283"],"sort":false,"marker":{"color":"rgba(31,119,180,1)","colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"],"line":{"color":"rgba(255,255,255,1)"}},"hoverinfo":["label+text+percent","label+text+percent","label+text+percent","label+text+percent"],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<img class="fig-mobile" src="./fig_01_en.png"></img>
+<img class="fig-mobile" src="./fig_01_en.png" alt="EDUS - Number of mobile devices on which the Corona-Warn-App is installed."></img>
 <p class="caption">Fig. 1: EDUS - Number of mobile devices on which the Corona-Warn-App is installed.</p>
 </div>
 
@@ -272,10 +272,10 @@ The CWA helps to end chains of infection that would otherwise have gone undetect
 
 The basic survey asked whether the respondents were surprised to receive the <q>red warning</q>. Almost three quarters of the participants (72.5%) stated that they were.
 
-<div class="figure">
+<div class="figure" alt="EDUS – Level of surprise at receiving a red warning">
 <div id="htmlwidget-53470fa5fd8748763aec" style="width:600px;height:400px;" class="plotly html-widget"></div>
 <script type="application/json" data-for="htmlwidget-53470fa5fd8748763aec">{"x":{"visdat":{"29672ea6e343":["function () ","plotlyVisDat"]},"cur_data":"29672ea6e343","attrs":{"29672ea6e343":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"values":{},"labels":{},"type":"pie","text":["18.099"," 6.433","   426"," 1.136"],"sort":false,"marker":{"colors":["#33A02C","#1F78B4","#FB9A99","#E31A1C"]},"hoverinfo":"label+text+percent","inherit":true}},"layout":{"width":600,"height":400,"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false,"locale":"en"},"data":[{"values":[18099,6433,426,1136],"labels":["Yes","No","Don't know","-not specified-"],"type":"pie","text":["18.099"," 6.433","   426"," 1.136"],"sort":false,"marker":{"color":"rgba(31,119,180,1)","colors":["#33A02C","#1F78B4","#FB9A99","#E31A1C"],"line":{"color":"rgba(255,255,255,1)"}},"hoverinfo":["label+text+percent","label+text+percent","label+text+percent","label+text+percent"],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<img class="fig-mobile" src="./fig_02_en.png"></img>
+<img class="fig-mobile" src="./fig_02_en.png" alt="EDUS – Level of surprise at receiving a red warning"></img>
 <p class="caption">Fig. 2: EDUS – Level of surprise at receiving a <q>red warning</q></p>
 </div>
 <details>
@@ -466,7 +466,6 @@ Don’t know
 The results demonstrate that the CWA helps inform users about exposure to infections that have occurred outside of their immediate social environment. Respondents who were surprised to receive the warning, therefore, might not have otherwise been informed about their exposure to infection if they had not been using the app. The higher the participants rated their risk of infection before receiving a warning, the less likely they were to be surprised at receiving one.
 
 <p></p>
-<figure>
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -534,12 +533,9 @@ The results demonstrate that the CWA helps inform users about exposure to infect
 
 </table>
     <figcaption aria-hidden="true">Tab. 5: EDUS - Relationship between estimated risk and level of surprise.</figcaption>
-</figure>
 
-<figure>
-    <img src="./fig_03_en.png" class="figure-img img-fluid" alt="Fig. 3: EDUS – Relationship between level of surprise and estimated risk."/>
-    <figcaption aria-hidden="true">Fig. 3: EDUS – Relationship between level of surprise and estimated risk.</figcaption>
-</figure>
+<img src="./fig_03_en.png" class="figure-img img-fluid" alt="Fig. 3: EDUS – Relationship between level of surprise and estimated risk."/>
+<figcaption aria-hidden="true">Fig. 3: EDUS – Relationship between level of surprise and estimated risk.</figcaption>
 
 <details>
 <summary>
@@ -675,7 +671,7 @@ Don’t know
 Participants who were surprised to receive a <q>red warning</q> either undertook rapid antigen tests more often or did not take any test at all slightly more often than respondents who were not surprised to have received the warning. There are many possible explanations for this.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -738,12 +734,9 @@ Participants who were surprised to receive a <q>red warning</q> either undertook
 
 </table>
     <figcaption aria-hidden="true">Tab. 7: EDUS - Relationship between level of surprise and testing.</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_04_en.png" alt="Fig. 4: EDUS – Relationship between level of surprise and testing"/>
-    <figcaption aria-hidden="true">Fig. 4: EDUS – Relationship between level of surprise and testing</figcaption>
-</figure>
+</div>
+<img src="./fig_04_en.png" alt="Fig. 4: EDUS – Relationship between level of surprise and testing"/>
+<figcaption aria-hidden="true">Fig. 4: EDUS – Relationship between level of surprise and testing</figcaption>
 
 ### 3.3 Relationship between surprise and intended contact with health-care providers
 
@@ -752,7 +745,7 @@ Respondents who were surprised to receive a <q>red warning</q> were less likely 
 Most respondents who intended to contact a health-care provider planned to contact their GP (55.2%). Once again, respondents were provided with a number of possible response categories when answering this question. Contact to their local health authority (43.4%) was selected less frequently. The telephone number of the on-call medical service and hospitals played a subordinate role in the survey. The data show that users treated the warning seriously and assumed that they were at risk from infection. Moreover, this generally led them to contact a health-care provider – particularly their GP. The contact with GPs argues strongly for the intended relief of the public health service by the Corona-Warn-App. Any associated cases of COVID-19 would only be confirmed once the user goes on to take a test. Testing suspected cases of COVID-19 helps to end chains of infection. The CWA, therefore, acts as an early warning system, and its value is particularly evident in cases where users have come into contact with infected people that they do not know. The app helps inform users about the need for testing and, therefore, contributes to improving the efficiency of testing strategies.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -800,13 +793,10 @@ Most respondents who intended to contact a health-care provider planned to conta
 
 </table>
     <figcaption aria-hidden="true">Tab. 8:  EDUS - Relationship between level of surprise and contact intentions to the health care system</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_05_en.png" alt="Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider."/>
-    <figcaption aria-hidden="true">Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider.
+</div>
+<img src="./fig_05_en.png" alt="Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider."/>
+<figcaption aria-hidden="true">Fig. 5: EDUS – Relationship between level of surprise and intention to contact a health-care provider.
 </figcaption>
-</figure>
 
 <details>
 <summary>
@@ -977,7 +967,7 @@ Respondents who were surprised to receive a <q>red warning</q> tested positive f
 It is not always possible to maintain social distancing and fully comply with hygiene rules when among family, friends or at work. However, it is easier to do so when among casual acquaintances and strangers, such as on public transport and while shopping. If contact with people from a user’s immediate environment is more likely to lead to an infection, this could explain the divergences between test results among different groups of people. 
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1030,23 +1020,16 @@ It is not always possible to maintain social distancing and fully comply with hy
 
 </table>
     <figcaption aria-hidden="true">Tab. 11: EDUS - Relationship between level of surprise and infection</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_06_en.png" alt="Fig. 6: EDUS – Relationship between level of surprise and infection."/>
-    <figcaption aria-hidden="true">Fig. 6: EDUS – Relationship between level of surprise and infection.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_06_en.png" alt="Fig. 6: EDUS – Relationship between level of surprise and infection."/>
+<figcaption aria-hidden="true">Fig. 6: EDUS – Relationship between level of surprise and infection.</figcaption>
 
 ### 3.5 Relationship between surprise, infection and intention to contact a health-care provider
 
 The relationship between level of surprise, infection and intention to contact a health-care provider is summarised in the following graph.
 
-<figure>
-    <img src="./fig_07_en.png" alt="Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection."/>
-    <figcaption aria-hidden="true">Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection.
-</figcaption>
-</figure>
+<img src="./fig_07_en.png" alt="Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection."/>
+<figcaption aria-hidden="true">Fig. 7: EDUS – Relationship between level of surprise, intention to contact a health-care provider and infection.</figcaption>
 
 ## 4 Testing
 
@@ -1056,18 +1039,18 @@ Both the basic and the follow-up survey treated testing for SARS-CoV-2 as a key 
 
 Over two thirds of respondents (in the basic survey) stated that they intended to take a test immediately after having received a <q>red warning</q> (68.2%). Another 16.6% intended to delay the decision until they had sought medical advice/consulted a health-care provider. A small fraction of respondents (4.2%) were undecided and 11.1% stated that they did not intend to take a test.
 
-<div class="figure">
+<div class="figure" alt="EDUS – Testing intention">
 <div id="htmlwidget-9413df1d8b020eccdc1a" style="width:600px;height:450px;" class="plotly html-widget"></div>
 <script type="application/json" data-for="htmlwidget-9413df1d8b020eccdc1a">{"x":{"visdat":{"2967fd8f70e":["function () ","plotlyVisDat"]},"cur_data":"2967fd8f70e","attrs":{"2967fd8f70e":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"values":{},"labels":{},"type":"pie","text":["16.991"," 2.755"," 4.129"," 1.053"," 1.166"],"sort":false,"marker":{"colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"]},"hoverinfo":"label+text+percent","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"legend":{"orientation":"h","xanchor":"center","x":0.5},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false,"locale":"en"},"data":[{"values":[16991,2755,4129,1053,1166],"labels":["Yes","No","That depends on medical advice or the advice of another health service","Don't know","-not specified-"],"type":"pie","text":["16.991"," 2.755"," 4.129"," 1.053"," 1.166"],"sort":false,"marker":{"color":"rgba(31,119,180,1)","colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"],"line":{"color":"rgba(255,255,255,1)"}},"hoverinfo":["label+text+percent","label+text+percent","label+text+percent","label+text+percent","label+text+percent"],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<img class="fig-mobile" src="./fig_08_en.png"></img>
+<img class="fig-mobile" src="./fig_08_en.png" alt="EDUS – Testing intention"></img>
 <p class="caption">Fig. 8: EDUS – Testing intention </p>
 
 Respondents (from the basic survey) who stated they would be taking a test were then asked which test they intended to take. The largest group of respondents planned to take a rapid antigen test (44.6%), 29.5% wanted to take the more precise PCR test and 18.1% intended to take both an antigen and a PCR test. A further 6.7% wanted to seek medical advice first; 1.2% did not know. 
 
-<div class="figure">
+<div class="figure" alt="EDUS – Testing intention by test type (developments over time)">
 <div id="htmlwidget-775f7228883fa0a7fcb0" style="width:600px;height:450px;" class="plotly html-widget"></div>
 <script type="application/json" data-for="htmlwidget-775f7228883fa0a7fcb0">{"x":{"visdat":{"29677b036518":["function () ","plotlyVisDat"]},"cur_data":"29677b036518","attrs":{"29677b036518":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","name":{},"color":{},"colors":["#33A02C","#1F78B4","#CAB2D6","#FB9A99","#E31A1C"],"hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"yaxis":{"domain":[0,1],"automargin":true,"showgrid":false,"showline":false,"hoverformat":"f","title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"xaxis":{"domain":[0,1],"automargin":true,"type":"date","hoverformat":"%e %b (%a) %Y","tickformat":"%e %b","title":"Data","tickfont":{"size":12},"autotick":false,"tickmode":"array","tickvals":["2021-03-01","2021-03-15","2021-03-29","2021-04-12","2021-04-26","2021-05-10","2021-05-24","2021-06-07","2021-06-21","2021-07-05","2021-07-19","2021-08-02","2021-08-16","2021-08-30","2021-09-13","2021-09-27","2021-10-11","2021-10-25","2021-11-08","2021-11-22","2021-12-06"]},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":true},"source":"A","config":{"showSendToCloud":false,"locale":"en"},"data":[{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[2,13,12,17,28,46,31,36,36,32,29,25,30,46,39,123,119,72,73,81,91,115,92,106,77,63,116,115,109,103,75,65,57,81,84,81,79,75,49,67,71,107,85,117,119,85,112,129,142,144,123,120,89,69,105,157,90,83,99,64,53,75,79,79,18],"type":"bar","name":"PCR test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(51,160,44,1)","line":{"color":"rgba(51,160,44,1)"}},"textfont":{"color":"rgba(51,160,44,1)"},"error_y":{"color":"rgba(51,160,44,1)"},"error_x":{"color":"rgba(51,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,6,4,8,9,13,6,10,16,15,15,20,16,27,25,162,162,104,82,101,128,141,129,169,132,107,128,162,136,209,114,121,114,116,137,122,136,133,101,93,115,141,140,265,248,212,163,184,267,228,186,191,157,106,157,233,170,112,153,144,119,153,135,137,28],"type":"bar","name":"Rapid antigen test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(57,128,155,1)","line":{"color":"rgba(57,128,155,1)"}},"textfont":{"color":"rgba(57,128,155,1)"},"error_y":{"color":"rgba(57,128,155,1)"},"error_x":{"color":"rgba(57,128,155,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[1,4,1,6,5,16,10,14,14,14,14,3,10,20,17,54,61,43,29,41,54,45,50,59,46,48,67,62,55,73,57,49,46,54,44,56,42,51,37,39,53,48,62,103,95,57,58,83,106,86,84,77,63,60,53,99,62,57,53,70,39,56,67,53,14],"type":"bar","name":"PCR test and rapid antigen test","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(147,154,200,1)","line":{"color":"rgba(147,154,200,1)"}},"textfont":{"color":"rgba(147,154,200,1)"},"error_y":{"color":"rgba(147,154,200,1)"},"error_x":{"color":"rgba(147,154,200,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,4,0,5,2,8,6,4,4,6,4,3,6,5,7,44,37,33,19,27,23,26,30,30,25,21,15,24,21,24,19,8,16,13,13,25,14,24,19,14,17,23,14,38,23,36,17,25,30,38,21,25,19,9,24,23,20,19,11,11,11,23,20,16,3],"type":"bar","name":"That depends on medical advice or the advice of another health service","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(224,169,189,1)","line":{"color":"rgba(224,169,189,1)"}},"textfont":{"color":"rgba(224,169,189,1)"},"error_y":{"color":"rgba(224,169,189,1)"},"error_x":{"color":"rgba(224,169,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[0,1,0,0,0,2,0,2,1,1,1,3,1,2,0,10,6,4,4,1,8,5,1,7,5,3,2,9,8,4,1,2,4,1,2,4,5,3,2,0,2,3,2,7,6,3,4,2,4,7,1,4,6,4,6,3,2,2,5,1,1,4,5,1,1],"type":"bar","name":"Don't know","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(249,134,127,1)","line":{"color":"rgba(249,134,127,1)"}},"textfont":{"color":"rgba(249,134,127,1)"},"error_y":{"color":"rgba(249,134,127,1)"},"error_x":{"color":"rgba(249,134,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2021-03-04","2021-03-05","2021-03-06","2021-03-07","2021-03-08","2021-03-09","2021-03-10","2021-03-11","2021-03-12","2021-03-13","2021-03-14","2021-03-15","2021-03-16","2021-03-17","2021-03-18","2021-03-19","2021-03-20","2021-03-21","2021-03-22","2021-03-23","2021-03-24","2021-03-25","2021-03-26","2021-03-27","2021-03-28","2021-03-29","2021-03-30","2021-03-31","2021-04-01","2021-04-02","2021-04-03","2021-04-04","2021-04-05","2021-04-06","2021-04-07","2021-04-08","2021-04-09","2021-04-10","2021-04-11","2021-04-12","2021-04-13","2021-04-14","2021-04-15","2021-04-16","2021-04-17","2021-04-18","2021-04-19","2021-04-20","2021-04-21","2021-04-22","2021-04-23","2021-04-24","2021-04-25","2021-04-26","2021-04-27","2021-04-28","2021-04-29","2021-04-30","2021-05-01","2021-05-02","2021-05-03","2021-05-04","2021-05-05","2021-05-06","2021-05-07"],"y":[2,12,2,24,21,26,43,38,33,34,27,19,34,49,62,344,311,200,172,156,194,176,181,180,150,139,180,187,180,219,126,117,123,132,155,129,157,145,115,94,139,149,175,251,317,193,161,195,288,225,181,213,168,116,162,296,149,152,155,127,110,170,140,151,32],"type":"bar","name":"-not specified-","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(227,26,28,1)","line":{"color":"rgba(227,26,28,1)"}},"textfont":{"color":"rgba(227,26,28,1)"},"error_y":{"color":"rgba(227,26,28,1)"},"error_x":{"color":"rgba(227,26,28,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<img class="fig-mobile" src="./fig_09_en.png"></img>
+<img class="fig-mobile" src="./fig_09_en.png" alt="EDUS – Testing intention by test type (developments over time)"></img>
 <p class="caption">Fig. 9: EDUS – Testing intention by test type (developments over time) </p>
 </div>
 <details>
@@ -1285,7 +1268,7 @@ Data from the follow-up survey can be used to examine the relationship between t
 The data demonstrate that the respondents generally implemented their stated testing strategy. 73% of respondents who had intended to have a PCR test, and 80.8% of respondents who planned to take a rapid antigen test, actually did so. However, there is greater variance with regard to multiple tests and intention to seek medical advice.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1359,18 +1342,14 @@ The data demonstrate that the respondents generally implemented their stated tes
 
 </table>
     <figcaption aria-hidden="true">Tab. 14: EDUS - Relationship between testing intention and the test that was carried out</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_10_en.png" alt="Fig. 10: EDUS – Relationship between testing intention and the test that was carried out."/>
-    <figcaption aria-hidden="true">Fig. 10: EDUS – Relationship between testing intention and the test that was carried out.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_10_en.png" alt="Fig. 10: EDUS – Relationship between testing intention and the test that was carried out."/>
+<figcaption aria-hidden="true">Fig. 10: EDUS – Relationship between testing intention and the test that was carried out.</figcaption>
 
 5.9% of respondents who went for testing (follow-up survey) tested positive. 93.4% tested negative, and 0.4% received inconclusive results. PCR tests led to the highest proportion of positive results.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -1428,13 +1407,9 @@ The data demonstrate that the respondents generally implemented their stated tes
 
 </table>
     <figcaption aria-hidden="true">Tab. 15: EDUS - Relationship between tests carried out and test result</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_11_en.png" alt="Fig. 11: EDUS – Relationship between tests carried out and test resultss."/>
-    <figcaption aria-hidden="true">Fig. 11: EDUS – Relationship between tests carried out and test results.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_11_en.png" alt="Fig. 11: EDUS – Relationship between tests carried out and test resultss."/>
+<figcaption aria-hidden="true">Fig. 11: EDUS – Relationship between tests carried out and test results.</figcaption>
 
 <details>
 <summary>
@@ -1631,10 +1606,10 @@ Inconclusive
 
 On average, users underwent testing 2.5 days after receiving a <q>red warning</q>. This is relatively early, considering that the median incubation period is 5 to 6 days. PCR tests can detect infections at an earlier stage and are more reliable than rapid antigen tests. This could help explain the high rate of positive PCR tests. It can also be assumed that people opted for rapid antigen tests because they are free. The large uptake of rapid antigen tests and the early average time of testing are areas that could be improved by better informing app users.
 
-<div class="figure">
+<div class="figure" alt="EDUS - Delay between red warning and test">
 <div id="htmlwidget-1b28c7ec57ae2a9dc520" style="width:600px;height:450px;" class="plotly html-widget"></div>
 <script type="application/json" data-for="htmlwidget-1b28c7ec57ae2a9dc520">{"x":{"visdat":{"29675474a2f":["function () ","plotlyVisDat"]},"cur_data":"29675474a2f","attrs":{"29675474a2f":{"x":{},"name":"#","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","hoverinfo":"x+name+y","inherit":true}},"layout":{"width":600,"height":450,"margin":{"b":40,"l":60,"t":25,"r":10},"barmode":"stack","hovermode":"x unified","hoverlabel":{"font":{"size":12},"align":"right"},"xaxis":{"domain":[0,1],"automargin":true,"title":"Delay between warning and test (days)","autotick":true},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number","tickformat":",.0f","titlefont":{"size":12},"tickfont":{"size":12}},"legend":{"orientation":"h","xanchor":"center","x":0.5},"showlegend":false},"source":"A","config":{"showSendToCloud":false,"locale":"en"},"data":[{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],"name":"#","y":[1852,4883,1884,1245,842,1129,439,482,185,92,170,43,46,11,39,4,2,4,1,1,1,2],"type":"bar","hoverinfo":["x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y","x+name+y"],"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<img class="fig-mobile" src="./fig_12_en.png"></img>
+<img class="fig-mobile" src="./fig_12_en.png" alt="EDUS - Delay between red warning and test"></img>
 <p class="caption">Fig. 12: EDUS - Delay between <q>red warning</q> and test</p>
 </div>
 <details>
@@ -2020,7 +1995,7 @@ NA
 During the main survey period (March to May 2021), only PCR tests could be registered in the CWA. This explains why only 22.4% of participants in the follow-up survey received their result via the app. 46.3% of users who stated that they had undergone a PCR test shared their result via the app. It has been possible to register the results of rapid antigen tests with the app since the beginning of May, although it should be assumed that most test centres will have taken more time to implement this service. 2.7% of the respondents had already received their results from elsewhere by the time they had received them via the app.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2078,13 +2053,9 @@ During the main survey period (March to May 2021), only PCR tests could be regis
 
 </table>
     <figcaption aria-hidden="true">Tab. 19: EDUS - Relationship between tests performed and test result</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_13_en.png" alt="Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA ."/>
-    <figcaption aria-hidden="true">Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA .
-</figcaption>
-</figure>
+</div>
+<img src="./fig_13_en.png" alt="Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA ."/>
+<figcaption aria-hidden="true">Fig. 13: EDUS - Relationship between tests carried out and receiving a test result via the CWA .</figcaption>
 
 Users who received their results via the app usually received them within 24 hours or two days after the test had been carried out. The results suggest that it is not just the app that works quickly but the entire reporting chain.
 
@@ -2363,7 +2334,7 @@ No
 Respondents who had registered the test in the Corona-Warn-App were more often willing to share a positive test result.
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2405,13 +2376,9 @@ Respondents who had registered the test in the Corona-Warn-App were more often w
 
 </table>
     <figcaption aria-hidden="true">Tab. 23: EDUS - Relationship between receiving the test result via CWA and sharing the test result via CWA</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_14_en.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
-    <figcaption aria-hidden="true">Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_14_en.png" alt="Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result."/>
+<figcaption aria-hidden="true">Fig. 14: EDUS - Relationship between receiving the test result via Corona-Warn-App and sharing the test result.</figcaption>
 
 No statistically significant differences were identified by sex, age or education. However, the group of respondents who tested positive and, therefore, were asked whether they had shared their positive result (n = 792) is too small to use for reliable statistical calculations. 
 
@@ -2419,10 +2386,10 @@ No statistically significant differences were identified by sex, age or educatio
 
 The following interactive graphic (Sankey diagram) breaks down the responses to testing using data from the basic and follow-up questionnaires. Sankey diagrams are a specific type of flowchart. Flow rates are represented by arrows that are proportional in size to the quantity they represent; the thickness of the arrows represents the true-to-scale quantity. The flows run between two nodes that act as intermediate stages and, for example, provide information about the structure of the system they describe.
 
-<div class="figure">
+<div class="figure" alt="EDUS – CWA test process, from test intention to test type, actual tests carried out, test results and receiving test results via the CWA to distribution.">
 <div id="htmlwidget-networkD3-27894f19b2bee56740ed" style="width:100%;height:700px;" class="sankeyNetwork html-widget"></div>
 <script type="application/json" data-for="htmlwidget-networkD3-27894f19b2bee56740ed">{"x":{"links":{"source":[0,0,0,0,0,1,2,3,4,5,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,8,8,8,8,8,8,9,9,9,9,9,10,10,10,10,10,10,11,11,11,11,12,12,12,13,13,13,14,15,16,17,17,17,18,18,18,19,19,20,20,21,21,21,22,22,22,23,23,23,24],"target":[5,6,7,8,9,10,10,10,10,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,13,14,15,16,11,12,14,15,16,11,12,13,14,15,16,17,18,19,20,17,18,19,17,18,19,18,20,20,21,22,23,21,22,23,21,23,23,24,25,26,27,25,26,27,25,26,27,27],"value":[5001,7571,3069,1144,201,2754,4127,1051,1166,2243,209,505,36,90,1921,284,3980,302,63,300,2644,499,379,971,17,39,1164,236,315,91,34,42,426,26,42,14,21,92,830,1943,388,102,1533,4307,514,3536,52,16,19,6832,14,255,1982,22,255,2023,10552,325,161,306,2683,544,9376,11,76,29,12568,314,12,2697,148,14,548,177,129,9481,12574],"group":["A1","A1","A1","A1","A1","A2","A3","A4","A5","B1","B1","B1","B1","B1","B1","B2","B2","B2","B2","B2","B2","B3","B3","B3","B3","B3","B3","B4","B4","B4","B4","B4","B4","B5","B5","B5","B5","B5","B6","B6","B6","B6","B6","B6","C1","C1","C1","C1","C2","C2","C2","C3","C3","C3","C4","C5","C6","D1","D1","D1","D2","D2","D2","D3","D3","D4","D4","E1","E1","E1","E2","E2","E2","E3","E3","E3","E4"]},"nodes":{"name":["Yes","No","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","I don't know","No","-not specified-","positive","negative","ambiguous","-not specified-","via CWA first","via CWA later","not via CWA","-not specified-","shared","not shared","-not specified-"],"group":["Yes","No","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","after medical advice","I don't know","-not specified-","PCR","RAT","RAT & PCR","I don't know","No","-not specified-","positive","negative","ambiguous","-not specified-","via CWA first","via CWA later","not via CWA","-not specified-","shared","not shared","-not specified-"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":"source","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":16,"fontFamily":"Palatino","nodeWidth":15,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
-<img class="fig-mobile" src="./fig_15_en.png"></img>
+<img class="fig-mobile" src="./fig_15_en.png" alt="EDUS – CWA test process, from test intention to test type, actual tests carried out, test results and receiving test results via the CWA to distribution."></img>
 <p class="caption">
 Fig. 15: EDUS – CWA test process, from test intention to test type, actual tests carried out, test results and receiving test results via the CWA to distribution. 
 </p>
@@ -2440,7 +2407,7 @@ Relationship between information on symptoms in the basic survey and test result
 <p>
 
 <p></p>
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2523,13 +2490,9 @@ Relationship between information on symptoms in the basic survey and test result
 
 </table>
     <figcaption aria-hidden="true">Tab. 24: EDUS - Relationship between information on symptoms in the basic survey and test results</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_16_en.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
-    <figcaption aria-hidden="true">Fig. 16: EDUS - Relationship between symptom (basic survey) and test result.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_16_en.png" alt="Fig. 16: EDUS - Relationship between symptom (basic survey) and test result."/>
+<figcaption aria-hidden="true">Fig. 16: EDUS - Relationship between symptom (basic survey) and test result.</figcaption>
 </p>
 </details>
 <p></p>
@@ -2543,7 +2506,7 @@ Relationship between information on symptoms in the follow-up survey and test re
 <p>
 <p></p>
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -2626,13 +2589,9 @@ Relationship between information on symptoms in the follow-up survey and test re
 
 </table>
     <figcaption aria-hidden="true">Tab. 25: EDUS - Relationship between information on symptoms in the follow-up survey and test results</figcaption>
-</figure>
-
-<figure>
-    <img src="./fig_17_en.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
-    <figcaption aria-hidden="true"> Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection.
-</figcaption>
-</figure>
+</div>
+<img src="./fig_17_en.png" alt=" Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection."/>
+<figcaption aria-hidden="true"> Fig. 17: EDUS - Relationship between symptom (follow-up survey) and infection.</figcaption>
 </p>
 </details>
 <p></p>

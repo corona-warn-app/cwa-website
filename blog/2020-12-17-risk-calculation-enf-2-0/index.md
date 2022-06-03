@@ -44,7 +44,7 @@ Finally, all time windows of a day are considered (the weighted contact times) a
 Ultimately, this means that several "green" encounters (time windows) can result in a red status in total.
 
 For those who would like to dive even deeper into the subject:
-- The updated diagrams are available on GitHub: https://github.com/corona-warn-app/cwa-documentation/tree/master/images/risk_calculation
-- An overview diagram shows how filtering is done now: https://github.com/corona-warn-app/cwa-documentation/blob/master/images/risk_calculation/risk_calculation_enf_v2_overview.pdf
+- The updated diagrams are available on GitHub: https://github.com/corona-warn-app/cwa-documentation/tree/main/images/risk_calculation
+- An overview diagram shows how filtering is done now: https://github.com/corona-warn-app/cwa-documentation/blob/main/images/risk_calculation/risk_calculation_enf_v2_overview.pdf
  
 

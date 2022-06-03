@@ -7,7 +7,7 @@ author: Hanna Heine
 layout: blog
 ---
 
-Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer\*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
+Seit der Anfang Mai veröffentlichten Version 2.1 der Corona-Warn-App haben Nutzer\*innen die Möglichkeit, Schnelltests, die sie bei teilnehmenden Partnern durchführen, in die Corona-Warn-App zu integrieren. Für die Partner **dm drogerie-märkte, testbuchen.de/No-Q (Apotheken)** und **EcoCare (Lidl)**, erklären wir an dieser Stelle, wie die Registrierung genau abläuft.
 
 Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse in die Corona-Warn-App zu integrieren, können sich bei der Telekom und SAP per [E-Mail](mailto:registrierung.labore.pandemietest@t-systems.com) melden.
 
@@ -22,20 +22,20 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 - Wählen Sie einen dm-Markt aus und tippen Sie auf Termin vereinbaren
 
 <br></br>
-<center> <img src="./dm-1.jpg" title="Dm Testzentrum auswählen" style="align: center"></center>
+<center> <img src="./dm-1.jpg" title="Dm Testzentrum auswählen" alt="Dm Testzentrum auswählen" style="align: center"></center>
 <br></br>
 
 - Wählen Sie zunächst ein Datum aus, danach eine Uhrzeit und geben Sie im Anschluss Ihre persönlichen Daten an. Die Mitarbeiter*innen brauchen diese Daten, um sie im Falle eines positiven Tests an das Gesundheitsamt weiterzuleiten. 
 
 
 <br></br>
-<center> <img src="./dm-2.jpg" title="Dm Datum auswählen" style="align: center">  <img src="./dm-3.jpg" title="Dm Uhrzeit auswählen" style="align: center"></center>
+<center> <img src="./dm-2.jpg" title="Dm Datum auswählen" alt="Dm Datum auswählen" style="align: center">  <img src="./dm-3.jpg" title="Dm Uhrzeit auswählen" alt="Dm Uhrzeit auswählen" style="align: center"></center>
 <br></br>
 
 - In diesem Schritt können Sie außerdem auswählen, ob Sie Ihr **Ergebnis an die Corona-Warn-App** übertragen wollen, in dem sie unter „Möchten Sie Ihr Ergebnis an die Corona-Warn-App übertragen?“ *Ja* auswählen.
 
 <br></br>
-<center> <img src="./dm-4.jpg" title="Dm Übertragung CWA" style="align: center"></center>
+<center> <img src="./dm-4.jpg" title="Dm Übertragung CWA" alt="Dm Übertragung CWA" style="align: center"></center>
 <br></br>
 
 - Sie können dann auswählen, ob sie einen namentlichen Testnachweis oder eine nicht-namentliche Anzeige in ihrer Corona-Warn-App erhalten möchten (Falls Ihnen der Test als Nachweis dienen kann, sollten Sie die namentliche Anzeige auswählen)
@@ -45,19 +45,19 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 - Sobald Sie das Formular abgeschickt haben, werden Sie auf eine neue Seite geleitet. Dort können Sie den Test in ihrer Corona-Warn-App registrieren, indem Sie auf den **Link Zur Corona-Warn-App** tippen. Sie werden automatisch in die App weitergeleitet, wo Sie die Einverständniserklärung akzeptieren müssen. Danach ist der Test in der App registriert.
 
 <br></br>
-<center> <img src="./dm-5.jpg" title="Dm Übertragung CWA" style="align: center"></center>
+<center> <img src="./dm-5.jpg" title="Dm Übertragung CWA" alt="Dm Übertragung CWA" style="align: center"></center>
 <br></br>
 
 - Wenn Sie die Registrierung an einem anderen Gerät als ihrem Smartphone durchführen, können Sie den Test auch über den **QR-Code** registrieren, indem Sie in Ihrer Corona-Warn-App unter „Test registrieren“ auf dem Startbildschirm Nächste Schritte auswählen und dann das Feld QR-Code scannen.
 
 <br></br>
-<center> <img src="./cwa-test-registrieren.jpg" title="Test registrieren" style="align: center">  <img src="./cwa-code-scannen.jpg" title="QR-Code scannen" style="align: center"></center>
+<center> <img src="./cwa-test-registrieren.jpg" title="Test registrieren" alt="Test registrieren" style="align: center">  <img src="./cwa-code-scannen.jpg" title="QR-Code scannen" alt="QR-Code scannen" style="align: center"></center>
 <br></br>
 
 - Nachdem Sie den Test über den Link oder den QR-Code registriert haben, wird Ihnen auf der Startseite der App der **Bereich „Schnelltest“** angezeigt. Unter Test anzeigen gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird. 
 
 <br></br>
-<center> <img src="./cwa-testergebnis.jpg" title="Testergebnis" style="align: center"></center>
+<center> <img src="./cwa-testergebnis.jpg" title="Testergebnis" alt="Testergebnis" style="align: center"></center>
 <br></br>
 
 ## Ablauf testbuchen.de / No-Q (teilnehmende Apotheken)
@@ -68,7 +68,7 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 - Nachdem Sie einen Testort ausgewählt haben, können Sie Ihr Wunschdatum eingeben und einen freien Termin auswählen. Tippen Sie anschließend auf *Buchen*
 
 <br></br>
-<center> <img src="./no-q-1.jpg" title="Termin buchen" style="align: center">  <img src="./no-q-2.jpg" title="Buchen" style="align: center"></center>
+<center> <img src="./no-q-1.jpg" title="Termin buchen" alt="Termin buchen" style="align: center">  <img src="./no-q-2.jpg" title="Buchen" alt="Buchen" style="align: center"></center>
 <br></br>
 
 - Füllen Sie das Anmeldeformular mit Ihren persönlichen Daten aus und tippen Sie auf *Weiter*
@@ -78,7 +78,7 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 - Nun wird Ihnen ein **Link** angezeigt, über den Sie den Test in Ihrer Corona-Warn-App registrieren können. Gehen Sie dafür auf den Link und wählen Sie anschließend aus, ob Sie das Testergebnis personalisiert (namentliche Anzeige) oder pseudonymisiert (nicht-namentlich) übermitteln möchten. Danach gehen Sie auf *Speichern*
 
 <br></br>
-<center> <img src="./no-q-4.jpg" title="Test registrieren" style="align: center">  <img src="./no-q-5.jpg" title="Personalisierung" style="align: center"></center>
+<center> <img src="./no-q-4.jpg" title="Test registrieren" alt="Test registrieren" style="align: center">  <img src="./no-q-5.jpg" title="Personalisierung" alt="Personalisierung" style="align: center"></center>
 <br></br>
 
 - Stimmen Sie den Datenschutzbestimmungen und der Einverständniserklärung zu und gehen Sie auf *Buchen* 
@@ -104,20 +104,20 @@ Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durc
 - Wählen Sie *Test bestellen* im Menü in der linken oberen Ecke aus und geben Sie anschließend den Ort ein, an dem Sie den Schnelltest durchführen möchten
 
 <br></br>
-<center> <img src="./ecocare-7.jpg" title="Test bestellen" style="align: center"></center>
+<center> <img src="./ecocare-7.jpg" title="Test bestellen" alt="Test bestellen" style="align: center"></center>
 <br></br>
 
 - Wählen Sie den Ort aus und gehen Sie anschließend auf *Termin vereinbaren*
 - Danach können Sie ein Datum und eine Uhrzeit auswählen und auf *Wähle dein Testkit* gehen 
 
 <br></br>
-<center> <img src="./ecocare-3.jpg" title="Test bestellen" style="align: center"></center>
+<center> <img src="./ecocare-3.jpg" title="Test bestellen" alt="Test bestellen" style="align: center"></center>
 <br></br>
 
 - Dort wählen Sie *Antigen-Schnelltest 15 Min* aus und gehen anschließend auf *Bestelle jetzt*. Setzen Sie den Haken bei „Nein, die Ausweisnummer wird nicht benötigt“, wenn Sie nicht als Reisender in Deutschland sind und gehen Sie anschließend auf *Bestätigen*.
 
 <br></br>
-<center> <img src="./ecocare-4.jpg" title="Test auswählen" style="align: center">  <img src="./ecocare-5.jpg" title="Auswahl bestätigen" style="align: center"></center>
+<center> <img src="./ecocare-4.jpg" title="Test auswählen" alt="Test auswählen" style="align: center">  <img src="./ecocare-5.jpg" title="Auswahl bestätigen" alt="Auswahl bestätigen" style="align: center"></center>
 <br></br>
 
 #### Schritt 3: Test in Corona-Warn-App registrieren
@@ -125,13 +125,13 @@ Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durc
 - Nach kurzer Zeit erscheint ein **Pop-Up-Fenster**, in dem Sie einwilligen können, das Testergebnis in die Corona-Warn-App zu übertragen. Setzen Sie dazu beide Haken und gehen Sie auf *Bestätigen*
 
 <br></br>
-<center> <img src="./ecocare-6.jpg" title="Test in CWA übertragen" style="align: center"></center>
+<center> <img src="./ecocare-6.jpg" title="Test in CWA übertragen" alt="Test in CWA übertragen" style="align: center"></center>
 <br></br>
 
 - Sie werden daraufhin automatisch in die **Corona-Warn-App** weitergeleitet. Dort können Sie Ihr Einverständnis geben, dass der Test übertragen werden soll. Im Anschluss ist der Test in der App registriert. 
 
 <br></br>
-<center> <img src="./cwa-einverständnis.jpg" title="Testergebnis" style="align: center">  <img src="./cwa-testergebnis-schwarz.jpg" title="Testergebnis" style="align: center">  </center>
+<center> <img src="./cwa-einverständnis.jpg" title="Testergebnis" alt="Testergebnis" style="align: center">  <img src="./cwa-testergebnis-schwarz.jpg" title="Testergebnis" alt="Testergebnis" style="align: center">  </center>
 <br></br>
 
 - Auf der **Startseite der App** wird Ihnen nun der Bereich „Schnelltest“ angezeigt. Über *Test anzeigen* gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird. 
@@ -157,6 +157,3 @@ Unter iOS:
 - Firefox mit der vom Hersteller voreingestellten Konfiguration (default)
 - Opera mit der vom Hersteller voreingestellten Konfiguration (default)
 - Edge mit der vom Hersteller voreingestellten Konfiguration (default)
-
-
-

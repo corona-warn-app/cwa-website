@@ -9,7 +9,7 @@ layout: blog
 
 In this post, you will find facts and figures on the development of the Corona-Warn-App, as well as on the number of transmitted and shared test results up to September 30, 2021.
 
-You can now find the most important key figures under "Analysis" in an [interactive dashboard](/en/analysis/) that is updated daily. For more information on the dashboard, visit the blog: [Key Figures Dashboard for the Corona-Warn-App](/en/blog/2021-10-04-key-figures-dashboard/).
+You can now find the most important key figures under "Dashboard" in an [interactive dashboard](/en/analysis/) that is updated daily. For more information on the dashboard, visit the blog: [Key Figures Dashboard for the Corona-Warn-App](/en/blog/2021-10-04-key-figures-dashboard/).
 
 
 
