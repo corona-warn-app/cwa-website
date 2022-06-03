@@ -116,10 +116,8 @@ Bei erfolgreicher Prüfung des Echtheitsnachweises erfolgt die Weiterleitung zur
 
 Die E-Mail-Adresse wird durch ein spezielles Verfahren namens „2Secure“ zusammen mit der automatisch vom Umfrage-Tool [VOXCO](https://www.voxco.com) angelegten Identifikationsnummer (ID) direkt nach Abschluss der Basisbefragung in einer separaten Datenbank gespeichert. Der Link zur Folgebefragung wird den Teilnehmenden, die eine E-Mail-Adresse angegeben haben, fünf Tage nach der Basisbefragung automatisiert per E-Mail zugesendet. Die in der Datenbank hinterlegten E-Mail-Adressen werden nach Versand der Einladung zur Teilnahme an der Folgebefragung sofort aus der Datenbank gelöscht.
 
-<figure>
-    <img src="./fig_00.png" alt="EDUS - technischer Ablauf"/>
-    <figcaption aria-hidden="true"><em>Abb.1: EDUS - technischer Ablauf</em></figcaption>
-</figure>
+<img src="./fig_00.png" alt="EDUS - technischer Ablauf"/>
+<figcaption aria-hidden="true"><em>Abb.1: EDUS - technischer Ablauf</em></figcaption>
 
 ### 2.7 Zeitlicher Ablauf der Befragung
 
@@ -801,7 +799,7 @@ Für den Vergleich mit SARS-CoV-2-Neuinfektionen müssen die dreistelligen Postl
 
 <div class="figure" alt="EDUS Teilnehmende nach 3-stelliger Postleitzahl und Landkreis.">
 <div id="htmlwidget-plotly-efb29224e0670876fb682-de" style="width:1200px;height:800px;" class="plotly html-widget"></div>
-<script type="application/json" src="./htmlwidget-plotly-efb29224e0670876fb682-de.json" data-for="htmlwidget-plotly-efb29224e0670876fb682-de"></script>
+<script type="application/json" data-for="htmlwidget-plotly-efb29224e0670876fb682-de"></script>
 <img class="fig-mobile" src="./fig6.PNG" alt="EDUS Teilnehmende nach 3-stelliger Postleitzahl und Landkreis."></img>
 <p class="caption">
 <em>Abb. 6: EDUS Teilnehmende nach 3-stelliger Postleitzahl und Landkreis.</em>
@@ -921,10 +919,8 @@ Auf der rechten Seite des Mosaik-Plots befindet sich eine Legende, die zwei Info
 
 Weitere Erläuterungen sind in der [Dokumentation](https://cran.r-project.org/web/packages/vcd/vignettes/strucplot.pdf) des [R-Paketes vcd](https://CRAN.R-project.org/package=vcd) zu finden.
 
-<figure>
-    <img src="./fig_07.png" alt="Abb. 8: EDUS - Zusammenkünfte mit Bekannten und Unbekannten." />
-    <figcaption aria-hidden="true"><em>Abb. 8: EDUS - Zusammenkünfte mit Bekannten und Unbekannten.</em></figcaption>
-</figure>
+<img src="./fig_07.png" alt="Abb. 8: EDUS - Zusammenkünfte mit Bekannten und Unbekannten." />
+<figcaption aria-hidden="true"><em>Abb. 8: EDUS - Zusammenkünfte mit Bekannten und Unbekannten.</em></figcaption>
 
 <details>
 <summary>
@@ -1215,10 +1211,8 @@ Aus Gründen der Datensparsamkeit wurde in EDUS nicht nach den Berufen der Teiln
 
 Auch hier visualisiert ein Mosaik-Plot die Zusammenhänge in der Kontingenztafel. Für die Beschriftung wurde eine naheliegende Kurzschreibweise eingeführt: „An 5 - <strong>6</strong> Tagen pro Woche” wird mit „6” abgekürzt, etc.. „Weiß nicht” mit „?”.
 
-<figure>
-    <img src="./fig_08.png"  alt="Abb. 9: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten."/>
-    <figcaption aria-hidden="true"><em>Abb. 9: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten.</em></figcaption>
-</figure>
+<img src="./fig_08.png"  alt="Abb. 9: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten."/>
+<figcaption aria-hidden="true"><em>Abb. 9: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten.</em></figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -1312,21 +1306,17 @@ Auch hier visualisiert ein Mosaik-Plot die Zusammenhänge in der Kontingenztafel
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_09.png"  alt="Abb. 10: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Unbekannten."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 10: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Unbekannten.</em>
-    </figcaption>
-</figure>
+<img src="./fig_09.png"  alt="Abb. 10: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Unbekannten."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 10: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Unbekannten.</em>
+</figcaption>
 
 Die Zusammenhänge zwischen den drei Arten von Zusammenkünften und Kontakten lassen sich in einer einzigen Grafik zusammenfassen.
 
-<figure>
-    <img src="./fig_10.png"  alt="Abb. 11: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten und Unbekannten."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 11: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten und Unbekannten.</em>
-    </figcaption>
-</figure>
+<img src="./fig_10.png"  alt="Abb. 11: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten und Unbekannten."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 11: EDUS - Zusammenkünfte im beruflichen Umfeld und mit Bekannten und Unbekannten.</em>
+</figcaption>
 
 <details>
     <summary>Angaben zu Zusammenkünften im beruflichen Umfeld</summary>
@@ -1557,12 +1547,10 @@ Wir geben im Folgenden jeweils die Kontingenztafel und ein Mosaik-Plot zu den 3 
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_11.png"  alt="Abb. 12: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Bekannten."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 12: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Bekannten.</em>
-    </figcaption>
-</figure>
+<img src="./fig_11.png"  alt="Abb. 12: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Bekannten."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 12: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Bekannten.</em>
+</figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -1664,12 +1652,10 @@ Wir geben im Folgenden jeweils die Kontingenztafel und ein Mosaik-Plot zu den 3 
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_12.png"  alt="Abb. 13: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Unbekannten."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 13: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Unbekannten.</em>
-    </figcaption>
-</figure>
+<img src="./fig_12.png"  alt="Abb. 13: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Unbekannten."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 13: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünften mit Unbekannten.</em>
+</figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -1804,12 +1790,10 @@ Wir geben im Folgenden jeweils die Kontingenztafel und ein Mosaik-Plot zu den 3 
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_13.png"  alt="Abb. 14: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünfte im beruflichen Umfeld."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 14: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünfte im beruflichen Umfeld.</em>
-    </figcaption>
-</figure>
+<img src="./fig_13.png"  alt="Abb. 14: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünfte im beruflichen Umfeld."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 14: EDUS - Zusammenhang zwischen Bildungsgrad und Zusammenkünfte im beruflichen Umfeld.</em>
+</figcaption>
 
 
 <details>
@@ -2014,12 +1998,10 @@ Auch hier geben wir jeweils die Kontingenztafel und ein Mosaik-Plot zu den 3 Kon
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_14.png"  alt="Abb. 15: EDUS - Zusammenhang zwischen Kontakten zu Bekannten und einer Infektion."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 15: EDUS - Zusammenhang zwischen Kontakten zu Bekannten und einer Infektion.</em>
-    </figcaption>
-</figure>
+<img src="./fig_14.png"  alt="Abb. 15: EDUS - Zusammenhang zwischen Kontakten zu Bekannten und einer Infektion."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 15: EDUS - Zusammenhang zwischen Kontakten zu Bekannten und einer Infektion.</em>
+</figcaption>
 
 <table class="gt_table">
     <thead class="gt_col_headings">
@@ -2081,12 +2063,10 @@ Auch hier geben wir jeweils die Kontingenztafel und ein Mosaik-Plot zu den 3 Kon
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_15.png"  alt="Abb. 16: EDUS - Zusammenhang zwischen Kontakten zu Unbekannten und einer Infektion"/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 16: EDUS - Zusammenhang zwischen Kontakten zu Unbekannten und einer Infektion</em>
-    </figcaption>
-</figure>
+<img src="./fig_15.png"  alt="Abb. 16: EDUS - Zusammenhang zwischen Kontakten zu Unbekannten und einer Infektion"/>
+<figcaption aria-hidden="true">
+    <em>Abb. 16: EDUS - Zusammenhang zwischen Kontakten zu Unbekannten und einer Infektion</em>
+</figcaption>
 
 <table class="gt_table">
   
@@ -2160,12 +2140,10 @@ Auch hier geben wir jeweils die Kontingenztafel und ein Mosaik-Plot zu den 3 Kon
 </table>
 
 
-<figure>
-    <img src="./fig_16.png"  alt="Abb. 17: EDUS - Zusammenhang zwischen Kontakten im beruflichen Umfeld und einer Infektion."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 17: EDUS - Zusammenhang zwischen Kontakten im beruflichen Umfeld und einer Infektion.</em>
-    </figcaption>
-</figure>
+<img src="./fig_16.png"  alt="Abb. 17: EDUS - Zusammenhang zwischen Kontakten im beruflichen Umfeld und einer Infektion."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 17: EDUS - Zusammenhang zwischen Kontakten im beruflichen Umfeld und einer Infektion.</em>
+</figcaption>
 
 <details>
     <summary>Angaben zum Testergebnis</summary>
@@ -2523,12 +2501,10 @@ Diese Daten sind in der folgenden Kreuztabelle aufgeführt und in dem zugehörig
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_17.png"  alt="Abb. 18: EDUS - Zusammenhang zwischen bisher getroffenen Schutzmaßnahmen und der Absicht das Verhalten zu ändern."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 18: EDUS - Zusammenhang zwischen bisher getroffenen Schutzmaßnahmen und der Absicht das Verhalten zu ändern.</em>
-    </figcaption>
-</figure>
+<img src="./fig_17.png"  alt="Abb. 18: EDUS - Zusammenhang zwischen bisher getroffenen Schutzmaßnahmen und der Absicht das Verhalten zu ändern."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 18: EDUS - Zusammenhang zwischen bisher getroffenen Schutzmaßnahmen und der Absicht das Verhalten zu ändern.</em>
+</figcaption>
 
 <details>
     <summary>Angaben zur Absicht der Verhaltensänderung nach einer „roten Warnung”</summary>
@@ -2802,12 +2778,10 @@ Befragte, die ihr Risiko für eine Infektion vor der Warnmeldung für hoch, eher
     </tbody>
 </table>
 
-<figure>
-    <img src="./fig_18.png"  alt="Abb. 19."/>
-    <figcaption aria-hidden="true">
-        <em>Abb. 19: EDUS - Zusammenhang zwischen Risikoeinschätzung und der Absicht das Verhalten zu ändern.</em>
-    </figcaption>
-</figure>
+<img src="./fig_18.png"  alt="Abb. 19."/>
+<figcaption aria-hidden="true">
+    <em>Abb. 19: EDUS - Zusammenhang zwischen Risikoeinschätzung und der Absicht das Verhalten zu ändern.</em>
+</figcaption>
 
 <details>
     <summary>Angaben zur Risikoeinschätzung</summary>

@@ -393,6 +393,19 @@
                                     "According to the <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>German Infection Protection Act (IfSG)</a>, the maximum effective validity of a certificate of recovery is 90 days. Immediate vaccination status display for recovered people: For recovered people, starting with version 2.9, the complete vaccination protection is displayed in the Corona-Warn-App directly after the first vaccination. The two-week waiting period is eliminated for all vaccines except Johnson & Johnson.",
                                     "<b>Check of the validity</b>",
                                     "The check app, in Germany the CovPassCheck-App, checks both the technical validity of the certificate and the effective validity. As soon as one of the two validities expires, the entire certificate will be rejected as 'invalid' during verification with the check app. "
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Related FAQ articles:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
+                                            { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
+                                        ]
+                                    }
                                 ]
                             },
                             {
@@ -542,20 +555,108 @@
                                 ]
                             },
                             {
-                                "title": "Can certificates be updated via the app?",
+                                "title": "Why are certificates reissued?",
                                 "anchor": "dcc_replacement",
                                 "active": false,
                                 "textblock": [
-                                    "The EU specifications for booster vaccination certificates have changed. If your certificate no longer meets the current specifications, it is still valid, but it may not be recognized as a booster vaccination during an inspection. In such a case, you can be informed about it via the Corona-Warn-App version 2.20.3 and later with an appropriate message. You can then voluntarily request a new vaccination certificate free of charge via the app. After you have given your consent, the app transmits the vaccination certificate to the RKI for verification, which issues an updated certificate and transmits it to your app. You will then find the updated certificate in the certificate tab. The old certificate is automatically moved to the recycle bin and deleted after 30 days. The old certificate can be restored at any time within the 30 days.",
+                                    "Two cases can be distinguished:",
+                                    "(a) As of version 2.23, EU digital COVID certificates whose validity expires can be updated. Currently, EU digital COVID certificates issued in Germany have a technical expiration date of 365 days after issuance. Even if the corresponding certificate would still be technically valid, it will no longer be recognized as valid after reaching the technical expiration date. In June 2022, the first certificates will technically expire and can no longer be checked.",
+                                    "(b) The EU specifications for booster vaccination certificates have changed. If your certificate no longer meets the current specifications, it is still valid, but it may not be recognized as a booster vaccination during an inspection. In such a case, you can be informed about this via the Corona-Warn-App since version 2.20.3 with a corresponding message.",
                                     "For more information, visit the blog: <a href='../../blog/2022-03-30-cwa-2-20/' target='_blank'>Corona-Warn-App Version 2.20</a>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Related FAQ articles:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
+                                            { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
+                                        ]
+                                    }
                                 ]
                             },
                             {
-                                "title": "I receive a notification that the validity of a certificate is about to expire. What do I have to do?",
+                                "title": "How and when can certificates be reissued in the app?",
                                 "anchor": "dcc_replacement_howto",
                                 "active": false,
                                 "textblock": [
-                                    "The technical validity of COVID digital certificates expires automatically after 365 days. For all relevant certificates, you will receive a notification about this in the Corona-Warn-App 28 days before expiration. In order to continue to be able to prove your vaccination status with the app, the relevant certificates must be updated. You will soon be able to carry out the necessary reissue yourself in the app with just a few clicks. See also <a href='#glossary_validity'>\"Validity of an EU Digital COVID Certificate\"</a>."
+                                    "If you receive a corresponding message in the Corona-Warn-App, you can voluntarily request a new vaccination certificate or a certificate of recovery free of charge via the app. After you have given your consent, the app transmits the certificate or several certificates for verification to the RKI, which issues an updated certificate and transmits it to your app. You can then find the updated certificate in the Certificates tab.",
+                                    "<ul> <li>The old certificate is automatically moved to the recycle bin and deleted after 30 days. The old certificate can be restored at any time within the 30 days.</li> <li>The possibility of reissue begins 28 days before the expiration of the certificate and ends 90 days after the expiration of the certificate.</li> <li><strong>IMPORTANT</strong>: The reissue can be done a maximum of three times within this period. Because of this limitation, we recommend that you export the reissued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if necessary. (See &quot;<a href='#eu_dcc_export' target='_blank'>How do I create a printout of my EU Digital COVID Certificate?</a>&quot;</li> </ul>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Related FAQ articles:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
+                                            { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Which EU digital COVID certificates are being reissued?",
+                                "anchor": "dcc_replacement_which",
+                                "active": false,
+                                "textblock": [
+                                    "The following EU digital COVID certificates are reissued: <ul> <li>Vaccination certificate with the latest date of issue</li> <li>Certificates of recovery</li> </ul>",
+                                    "The following EU digital COVID certificates can <strong>not</strong> be exchanged: <ul> <li>Test certificates</li> <li>Blocked certificates</li> </ul>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Related FAQ articles:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
+                                            { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Will I lose my vaccination status if one of my certificates expires?",
+                                "anchor": "dcc_replacement_vac_status",
+                                "active": false,
+                                "textblock": [
+                                    "Your vaccination status does not change when a certificate expires. You only need to request the reissue of the currently used certificate in the app to be able to prove your vaccination status via the Corona-Warn-App in the future. To do this, follow the instructions in the overview of your certificates."
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Related FAQ articles:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "I cannot renew a certificate in the app. What could be the reason?"},
+                                            { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "I cannot renew a certificate in the app. What could be the reason?",
+                                "anchor": "dcc_replacement_issues",
+                                "active": false,
+                                "textblock": [
+                                    "<ul> <li>Only certificates relevant to vaccination status can be renewed, such as booster vaccinations or certificates of recovery.</li> <li>The certificate is valid for longer than 28 days.</li> <li>The certificate already expired more than 90 days ago. In this case, reissuing within the app is no longer possible.</li> <li>Only certificates issued in Germany can be renewed via the app.</li> <li>A certificate can only be reissued a maximum of three times per user.</li> <li>Your Corona-Warn-App has not been updated to version 2.23. Please perform an update.</li> </ul>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Related FAQ articles:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Why are certificates reissued?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "How and when can certificates be reissued in the app?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Which EU digital COVID certificates are being reissued?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Will I lose my vaccination status if one of my certificates expires?"},
+                                            { "url" : "#glossary_validity", "text": "Validity of an EU digital COVID certificate."}
+                                        ]
+                                    }
                                 ]
                             }
                         ]
@@ -1092,7 +1193,7 @@
                                     "<b>Am I entitled to a PCR test?</b>",
                                     "After consultation with your family doctor's practice, the on-call health insurance service (telephone number 116 117), or your public health department, a test can be arranged if necessary. This is not necessarily a PCR test.  ",
                                     "<b>Where can I get tested?</b>",
-                                    "Test sites connected to the Corona-Warn-App can be found on both the Quick Test Portal and the Federal Ministry of Health site, although the test sites listed there are not guaranteed to be connected to the Corona Warning App. See <a href='#where_can_i_get_tested' target='_blank'>FAQ: Where can I get tested?</a>",
+                                    "Test sites connected to the Corona-Warn-App can be found on both the Quick Test Portal and the Federal Ministry of Health site, although the test sites listed there are not guaranteed to be connected to the Corona-Warn-App. See <a href='#where_can_i_get_tested' target='_blank'>FAQ: Where can I get tested?</a>",
                                     "<b>How can I warn?</b>",
                                     "The idea behind the app is to warn other users of the app by voluntarily sharing your positive test result in the app. This will alert all users of the app that you have encountered in the past 14 days (10 days since version 2.20) and have been in contact with long enough. For detailed information on the criteria for risk encounters, please refer to our FAQ: <a href='#encounter_criteria' target='_blank'>By which criteria are encounters evaluated and how do the recommendations for action differ?</a>",
                                     "<b>What to do if the test is not delivered?</b>",
@@ -1140,7 +1241,7 @@
                                 "anchor": "vac_cert_red_warning",
                                 "active": false,
                                 "textblock": [
-                                    "If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. This applies even if you have been vaccinated or are recovered and have no symptoms. In case of an increased risk warning (red tile), you are entitled to a free test. This does not necessarily have to be a PCR test.",
+                                    "If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. This applies even if you have been vaccinated or are recovered and have no symptoms. In accordance with <a href='https://www.gesetze-im-internet.de/coronatestv_2021-10/__4a.html' target='_blank' rel='noopener'>§4a Testverordnung</a> you are entitled to a free rapid antigen test ('Bürgertest'). More information can be found here: <a href='https://www.bundesgesundheitsministerium.de/coronavirus/nationale-teststrategie/faq-covid-19-tests.html#c23926' target='_blank' rel='noopener'>Fragen und Antworten zu COVID-19 Tests (BMG, German only)</a>.",
                                     "If symptoms occur in the further course, you should get tested immediately if this has not happened and go into immediate quarantine. Please confer with your doctor for the further procedure.",
                                     "In the case of an unfinished basic immunization as well as in the first 14 days after the last dose, the vaccination protection is significantly lower, so that the same recommendations apply here as for unvaccinated persons."
                                 ]
@@ -1573,7 +1674,7 @@
                                 "active": false,
                                 "textblock": [
                                     "The error message with the code \"DCC_RI_429\" occurs if you try to reissue a certificate more than three times. This could happen, for example, if you want to have the certificate reissued on multiple devices. In this case, you can scan the QR code of the certificate from another device if you have already received the new, replaced certificate there.",
-                                    "Because of this limitation, we recommend that you export the newly issued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if needed (see <a href='#eu_dcc_export' target='_blank' >\"How do I create a printout of my EU Digital COVID Certificate?\"</a>).",
+                                    "Because of this limitation, we recommend that you export the reissued certificate as a PDF file and print it out so that you can scan the QR code of the certificate again if needed (see <a href='#eu_dcc_export' target='_blank' >\"How do I create a printout of my EU Digital COVID Certificate?\"</a>).",
                                     "See also: <a href='#dcc_replacement' target='_blank' >\"Can certificates be updated via the app?\"</a>"
                                 ]
                             },
@@ -2238,7 +2339,7 @@
                                     "<b>Self-quarantine:</b><br/>If the Corona-Warn-App indicates an encounter of increased risk to you in a red tile, enter voluntary self-quarantine if possible until you have a negative test result. Even if this measure has not been ordered by a responsible authority, usually your health department, you are advised to stay at home and minimize encounters with others in your household and to avoid encounters outside your household. This applies even if you have been vaccinated or are recovered and have no symptoms. Quarantine is an important element in the pandemic response and is designed to prevent the spread of the virus (if you are infected). It is for your protection and the protection of everyone from infection with the novel coronavirus.",
                                     "<b>Health departments are used to capacity:</b><br/>Currently, COVID-19 infection numbers are at very high levels and a high number of positive test results are being submitted through the Corona-Warn-App. Therefore, please understand that the health department cannot serve all contacts. Let the health department handle its important tasks, so contact your health department only if you absolutely need assistance, for example, because your employer or educational institution requires a certificate.",
                                     "<b>Recommendations for action:</b>",
-                                    "<ul><li>Get tested. If you receive a warning of increased risk (\"red tile\"), you are entitled to a free test. This does not necessarily have to be a PCR test.</li><li>A minimum of 7 days, preferably 10 days, is recommended for the period of self-quarantine from the date of the last increased risk encounter. Refer to the red tile for the date of the last increased risk encounter.</li><li>If possible, refrain from visits and activities where you will be with other people. Have groceries delivered or ask someone to do the shopping; avoid public transportation and refrain from air and train travel.</li><li>In particular, avoid contact with vulnerable persons and groups, such as the elderly and those with pre-existing conditions.</li><li>Also minimize contacts in your own household.</li><li>If your employer gives you the option, work from home.</li><li>Watch for symptoms of illness for at least 10 days (from the date of the increased risk encounter) and contact your primary care physician's office if you feel ill or experience symptoms.</li><li>Follow the rules of hygiene.</li></ul>",
+                                    "<ul><li>Get tested. In accordance with <a href='https://www.gesetze-im-internet.de/coronatestv_2021-10/__4a.html' target='_blank' rel='noopener'>§4a Testverordnung</a> you are entitled to a free rapid antigen test ('Bürgertest'). More information can be found here: <a href='https://www.bundesgesundheitsministerium.de/coronavirus/nationale-teststrategie/faq-covid-19-tests.html#c23926' target='_blank' rel='noopener'>Fragen und Antworten zu COVID-19 Tests (BMG, German only)</a>.</li><li>A minimum of 7 days, preferably 10 days, is recommended for the period of self-quarantine from the date of the last increased risk encounter. Refer to the red tile for the date of the last increased risk encounter.</li><li>If possible, refrain from visits and activities where you will be with other people. Have groceries delivered or ask someone to do the shopping; avoid public transportation and refrain from air and train travel.</li><li>In particular, avoid contact with vulnerable persons and groups, such as the elderly and those with pre-existing conditions.</li><li>Also minimize contacts in your own household.</li><li>If your employer gives you the option, work from home.</li><li>Watch for symptoms of illness for at least 10 days (from the date of the increased risk encounter) and contact your primary care physician's office if you feel ill or experience symptoms.</li><li>Follow the rules of hygiene.</li></ul>",
                                     "For more helpful information on home quarantine, click here: <a href='https://www.rki.de/covid-19-quarantaene' target='_blank'>Home quarantine (ordered by the health department): flyer for contacts. (German only)</a><br/>Read the FAQ article <a href='#quarantine_measures'>Questions about quarantine measures</a> for more information.<br/>Find testing options: <a href='#where_can_i_get_tested'>Where can I get tested?</a><br/>More information on the testing process: <a href='#red_card_how_to_test'>Red Card? How to get the Corona Test</a>"
                                 ]
                             },
@@ -3063,7 +3164,7 @@
                 {
                     "term": "Digital Certificate",
                     "anchor": "digital_certificate",
-                    "description": "<p>A digital certificate is an authenticated digital document. It contains at least the holder's name, the holder's public key, and the digital signature (<a href='#glossary_signature'>signature</a>) of the issuing entity.</p> <p>Each digital certificate has an issue date and a time-limited <a href='#glossary_validity'>validity</a> (expiration date). After the validity expires, the certificate must be renewed.</p> <p>In the CWA, we distinguish between:</p> <ul><li>Vaccination certificate</li><li>Test certificate</li><li>Certificates of recovery</li></ul>"
+                    "description": "<p>A digital certificate is an authenticated digital document. It contains at least the holder's name, the holder's public key, and the digital signature (<a href='#glossary_signature'>signature</a>) of the issuing entity.</p> <p>Each digital certificate has an issue date and a time-limited <a href='#glossary_validity'>validity</a> (expiration date). After the validity expires, the certificate must be renewed. As of version 2.23, this can be done directly in the app.</p> <p>In the CWA, we distinguish between:</p> <ul><li>Vaccination certificate</li><li>Test certificate</li><li>Certificates of recovery</li></ul>"
                 },
                 {
                     "term": "Digital Signature",
@@ -3278,7 +3379,7 @@
                 {
                     "term": "Technical Validity",
                     "anchor": "technical_validity",
-                    "description": "The certificate as a document has an issue date and a technical expiration date, just like your passport or ID card, for example. For all certificates, the expiration date is set by the issuer of the certificate. Currently in Germany, the EU digital vaccination, test and certificates of recovery are usually issued with a technical validity of one year from the date of issue."
+                    "description": "The certificate as a document has an issue date and a technical expiration date, just like your passport or ID card, for example. For all certificates, the expiration date is set by the issuer of the certificate. Currently in Germany, the EU digital vaccination, test and certificates of recovery are usually issued with a technical validity of one year from the date of issue. As of version 2.23, you can reissue the currently used <a href='#glossary_dcc'>DCC</a> in the app."
                 },
                 {
                     "term": "Temporary Exposure Keys",
@@ -3295,7 +3396,7 @@
                 {
                     "term": "Validity of an EU Digital COVID Certificate",
                     "anchor": "validity",
-                    "description": "<p>Basically, we distinguish between</p><ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul><p>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance.</p><p><b>Vaccination Certificate</b></p><p>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g., in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So, the effective validity of the vaccination counts from the last vaccination date (date X).</p><p><b>Certificate of recovery</b></p><p>For a recovery certificate, the maximum effective validity is set at 90 days according to the <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>German Infection Protection Act (IfSG)</a></p><p><b>Test Certificate</b></p><p>Test certificates are usually issued with a technical validity of 2 days. How long such a test result is accepted depends on the federal state. Typically, in Germany, negative PCR test results are accepted for 48 hours and rapid test results for 24 hours.</p><p>A certificate is valid until either the technical validity or the effective validity expires.</p>"
+                    "description": "<p>Basically, we distinguish between</p><ul><li>the validity of the digital certificate (the technical validity) and</li><li>the validity of the vaccination protection (the effective validity).</li></ul><p>The digital certificate has an issue date and a technical expiration date (so does your passport and PA). The validity of the certificate ends 1 year after issuance. As of version 2.23, you can reissue the currently used <a href='#glossary_dcc'>DCC</a> in the app.</p><p><b>Vaccination Certificate</b></p><p>In the certificate data is transported, in this case information about vaccination. This vaccination took place on a date X and is valid from then (according to the current state of scientific knowledge) e.g., in Germany 1 year. After that the vaccination protection has expired. We call the duration of the vaccination protection 'effective (vaccination) validity'. So, the effective validity of the vaccination counts from the last vaccination date (date X).</p><p><b>Certificate of recovery</b></p><p>For a recovery certificate, the maximum effective validity is set at 90 days according to the <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>German Infection Protection Act (IfSG)</a></p><p><b>Test Certificate</b></p><p>Test certificates are usually issued with a technical validity of 2 days. How long such a test result is accepted depends on the federal state. Typically, in Germany, negative PCR test results are accepted for 48 hours and rapid test results for 24 hours.</p><p>A certificate is valid until either the technical validity or the effective validity expires.</p>"
                 },
                 {
                     "term": "Vaccination Certificate",

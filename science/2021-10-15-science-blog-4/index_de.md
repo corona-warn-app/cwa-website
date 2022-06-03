@@ -295,10 +295,8 @@ Wir sehen hier die auch schon aus [EDUS](../2021-07-08-science-blog-2/#52-unters
 
 Die folgende Abbildung zeigt den Zusammenhang zwischen der Bevölkerungsdichte und der Anzahl der Spendenden pro 100.000 Einwohnenden. Die Größe eines Kreises ist dabei proportional zur Einwohnerzahl.
 
-<figure>
-    <img src="./ppa_user_urban_plot.png" class="figure-img img-fluid" alt="Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen."/>
-    <figcaption aria-hidden="true">Abb. 6: Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen.</figcaption>
-</figure>
+<img src="./ppa_user_urban_plot.png" class="figure-img img-fluid" alt="Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen."/>
+<figcaption aria-hidden="true">Abb. 6: Teilnehmende nach Bevölkerungsdichte in städtischen und ländlichen Kreisen.</figcaption>
 
 Der Unterschied zwischen den Teilnehmenden in urbanen (Stadtkreise) und ländlichen (Landkreise) Gebieten ist im Osten stärker ausgeprägt als im Westen.
 
@@ -339,10 +337,8 @@ Bemerkenswert sind hier die hohen Zahlen der Gewarnten am 19. und 23. März. Hie
 
 In Abb. 8 ist der zeitliche Verlauf von rot und grün gewarnten Personen angegeben. Hierbei wurde die [tagesgenaue Schätzung]() für den Anteil der CWA-Spendenden benutzt, die sich aus den Test-Zahlen ergibt. Auffällig ist, dass seit Ende Juni die grünen Warnungen wieder häufiger als die roten auftreten (auch im Verhältnis zu diesen). Hier spielt die erhöhte Mobilität und die daraufhin wieder steigende Anzahl sozialer Kontakte seit dem Ende der [Bundesnotbremse](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland#%E2%80%9EBundesnotbremse%E2%80%9C_23._April_%E2%80%93_30._Juni_2021) sicherlich eine erhebliche Rolle. Hier kommen wir im Durchschnitt auf 8 gewarnte Personen mit erhöhtem Risiko bzw. 26 gewarnte Personen mit niedrigem Risiko (mit Risikobegegnung) pro warnender Person.
 
-<figure>
-    <img src="./ppa_estimate_ppa_warned_persons_plot.png" class="figure-img img-fluid" alt="Anzahl rot und grün gewarnter Personen pro warnender Person im zeitlichen Verlauf"/>
-    <figcaption aria-hidden="true">Abb. 9: Anzahl rot und grün gewarnter Personen pro warnender Person im zeitlichen Verlauf.</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_warned_persons_plot.png" class="figure-img img-fluid" alt="Anzahl rot und grün gewarnter Personen pro warnender Person im zeitlichen Verlauf"/>
+<figcaption aria-hidden="true">Abb. 9: Anzahl rot und grün gewarnter Personen pro warnender Person im zeitlichen Verlauf.</figcaption>
 
 ### 5.3 Gewarnte Personen durch Check-Ins
 
@@ -367,19 +363,15 @@ Wir analysieren zunächst die Verzüge, die mit den Daten zu den Testergebnissen
 
 Von den 1.567.815 gespendeten Angaben zu PCR-Testergebnissen und deren Verzügen wurden 395.157 Tests (25.2%) bereits innerhalb der ersten Stunde nach Testregistrierung erhalten. Hier wurde der Test offenbar nicht sofort nach der Durchführung registriert. Nach 24 Stunden waren insgesamt 1.172.212 Tests (74.8%) Tests zugestellt. Die stundengenaue Verteilung des Verzugs zwischen Testregistrierung und Erhalt des Testergebnisses ist in der folgenden Abbildung dargestellt. Im Mittel war das Testergebnis 21 Stunden nach Testregistrierung übermittelt (Median: 12 Stunden).
 
-<figure>
-    <img src="./ppa_delay_tr_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 11: Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_tr_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR)."/>
+<figcaption aria-hidden="true">Abb. 11: Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (PCR).</figcaption>
 
 Von den 2.373.969 gespendeten Angaben zu Antigen-Schnelltest-Testergebnissen und deren Verzügen wurden 1.532.490 (64.6%) bereits innerhalb der ersten Stunde nach Testregistrierung erhalten. Nach 24 Stunden waren insgesamt 2.175.533 (91.6%) Tests zugestellt. Die stundengenaue Verteilung des Verzugs zwischen Testregistrierung und Erhalt des Testergebnisses ist in der folgenden Abbildung dargestellt. Im Mittel war das Testergebnis 10,5 Stunden nach Testregistrierung übermittelt (Median: 0 Stunden).
 
 Ein Grund für die verhältnismäßig lange Übermittlungsdauer der Antigen-Schnelltest-Testergebnisse liegt darin, dass die CWA nicht kontinuierlich nach aktuellen Schnelltestergebnissen sucht. Um das Ergebnis möglichst zeitnah in der CWA zu erhalten, muss der Test in der App manuell aktualisiert werden, bis ein Ergebnis vorliegt. Zwar ruft die Corona-Warn-App Testergebnisse auch automatisch im Hintergrund ab, je nach Betriebssystem und Verfügbarkeit eines WLAN erfolgt dies aber nur nach mitunter etwas längeren Zeitperioden.
 
-<figure>
-    <img src="./ppa_delay_tr_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest)."/>
-    <figcaption aria-hidden="true">Abb. 12: Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest).</figcaption>
-</figure>
+<img src="./ppa_delay_tr_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 12: Zeit zwischen Testregistrierung und Erhalt des Testergebnisses (Antigen-Schnelltest).</figcaption>
 
 
 ### 6.2 Verzug zwischen Warnung und Testregistrierung
@@ -390,10 +382,8 @@ Die stundengenaue Verteilung des Verzugs zwischen Warnung und Registrierung eine
 
 Nach 48 Stunden nach einer Warnung waren insgesamt 52.559 PCR-Tests (54%) registriert.
 
-<figure>
-    <img src="./ppa_delay_wt_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 13: Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_wt_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR)."/>
+<figcaption aria-hidden="true">Abb. 13: Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (PCR).</figcaption>
 
 Zu 42.611 Antigen-Schnelltests liegen Daten zum Verzug zwischen Warnung und Testregistrierung vor.
 
@@ -401,26 +391,20 @@ Die stundengenaue Verteilung des Verzugs zwischen Warnung und Registrierung eine
 
 Nach 48 Stunden nach einer Warnung waren insgesamt 25.518 Antigen-Schnelltests (59.9%) registriert.
 
-<figure>
-    <img src="./ppa_delay_wt_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest)."/>
-    <figcaption aria-hidden="true">Abb. 14: Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest).</figcaption>
-</figure>
+<img src="./ppa_delay_wt_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 14: Zeit zwischen Warnung und Testregistrierung (nach Testergebnis) (Antigen-Schnelltest).</figcaption>
 
 ### 6.3 Verzug zwischen Risikobegegnung und Testregistrierung
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines PCR-Tests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 6 Tage nach der Risikobegegnung registriert (Median: 6 Tage).
 
-<figure>
-    <img src="./ppa_delay_er_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 15: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_er_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR)."/>
+<figcaption aria-hidden="true">Abb. 15: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR).</figcaption>
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines Antigen-Schnelltests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 7,4 Tage nach der Risikobegegnung registriert (Median: 7 Tage).
 
-<figure>
-    <img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
-    <figcaption aria-hidden="true">Abb. 16: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest).</figcaption>
-</figure>
+<img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 16: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest).</figcaption>
 
 ### 6.4 Verzug zwischen Risikobegegnung und Warnung
 
@@ -428,23 +412,19 @@ Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Warnung ergi
 
 Die im Mittel 3,8 Tage dauernde Zeit zwischen Risikobegegnung und Warnung wird als relativ kurz betrachtet. Dazu folgendes Beispiel: Person A trifft Person B am Tag 0 für ca. 2 Stunden. Person A weist am Tag 1 SARS-CoV-2-typische Symptome auf und lässt sich am Tag 2 testen und erhält das positive PCR-Testergebnis am Tag 3 und warnt unmittelbar. Das Smartphone von Person B wird mittels Push-Notification am Tag 3 über eine Risikobegegnung mit erhöhtem Risiko am Tag 0 informiert. Hierdurch käme ein Verzug zwischen Risikobegegnung und Warnung von 3 Tagen zustande.
 
-<figure>
-    <img src="./ppa_delay_ew_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 17: Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (PCR).</figcaption>
-</figure>
+<img src="./ppa_delay_ew_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (PCR)."/>
+<figcaption aria-hidden="true">Abb. 17: Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (PCR).</figcaption>
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Warnung ergibt sich damit als Differenz der Verteilungen der Verzüge zwischen Risikobegegnung und Registrierung bzw. Warnung und Registrierung eines Antigen-Schnelltests. Diese ist in der folgenden Abbildung dargestellt. Im Mittel wurde die Warnung 5,4 Tage nach der Risikobegegnung erhalten (Median: 5 Tage).
 
-<figure>
-    <img src="./ppa_delay_ew_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (Antigen-Schnelltest)."/>
-    <figcaption aria-hidden="true">Abb. 18: Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (Antigen-Schnelltest).</figcaption>
-</figure>
+<img src="./ppa_delay_ew_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 18: Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (Antigen-Schnelltest).</figcaption>
 
 ### 6.5 Zusammenhang zwischen Risikobewertung und Infektion
 
 Die Daten geben auch Auskunft darüber, ob die Warnung durch die CWA auch eher zu einem positiven Testresultat führt. Und in der Tat tut sie dies: Mehr als jede fünfte Person, die eine rote Warnung zum Zeitpunkt der Testregistrierung erhalten hatte, wurde positiv auf SARS-CoV-2 getestet. Bei denjenigen ohne Risikomitteilung war der Anteil weniger als halb so hoch (siehe Abb. 18).
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -493,23 +473,19 @@ Die Daten geben auch Auskunft darüber, ob die Warnung durch die CWA auch eher z
 
 </table>
 <figcaption aria-hidden="true">Tab. 1: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (PCR). </figcaption>
-</figure>
+</div>
 
-<figure>
-    <img src="./ppa_risk_infection_ct_mosaic_pcr.png" class="figure-img img-fluid" alt="Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 19: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_mosaic_pcr.png" class="figure-img img-fluid" alt="Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (PCR)."/>
+<figcaption aria-hidden="true">Abb. 19: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (PCR).</figcaption>
 
 Die folgende Grafik zeigt den Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf. Der Anteil der positiv getesteten Personen, die eine rote Warnung erhalten haben, ist relativ konstant. Ein Vergleich mit den [RKI-Testzahlen](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) zeigt eine gute Übereinstimmung mit dem Positivenanteil der nicht gewarnten Personen. Der leicht höhere Anteil an positiv getesteten Personen ist zum einen in der unterschiedlichen zugrunde liegenden Erhebungspopulation zu suchen. So sind Kinder unter 16 Jahren eher selten Nutzer der Corona-Warn-App. Zum anderen sind in den RKI-Zahlen auch in zunehmenden Maße Routine- und Pooling-Testergebnisse enthalten, die wahrscheinlich selten, bis gar nicht über die Corona-Warn-App registriert werden.
 
-<figure>
-    <img src="./ppa_risk_infection_ct_timeline_pcr.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 20: Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_timeline_pcr.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR)."/>
+<figcaption aria-hidden="true">Abb. 20: Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR).</figcaption>
 
 Auch bei Antigen-Schnelltests ist dieser Zusammenhang zu erkennen, auch wenn die Datenlage hier etwas dünner ist (s. Abb. 19).
 
-<figure class="text-center">
+<div class="text-center">
     <table class="table table-hover">
 
   <thead class="gt_col_headings">
@@ -557,20 +533,16 @@ Auch bei Antigen-Schnelltests ist dieser Zusammenhang zu erkennen, auch wenn die
 
 
 </table>
+</div>
 <figcaption aria-hidden="true">Tab. 2: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (RAT). </figcaption>
-</figure>
 
-<figure>
-    <img src="./ppa_risk_infection_ct_mosaic_rat.png" class="figure-img img-fluid" alt="Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (RAT)."/>
-    <figcaption aria-hidden="true">Abb. 21: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (RAT).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_mosaic_rat.png" class="figure-img img-fluid" alt="Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (RAT)."/>
+<figcaption aria-hidden="true">Abb. 21: Zusammenhang zwischen Risikobenachrichtigung und Testergebnis (RAT).</figcaption>
 
 Die folgende Grafik zeigt den Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf.
 
-<figure>
-    <img src="./ppa_risk_infection_ct_timeline_rat.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR)."/>
-    <figcaption aria-hidden="true">Abb. 22: Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR).</figcaption>
-</figure>
+<img src="./ppa_risk_infection_ct_timeline_rat.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR)."/>
+<figcaption aria-hidden="true">Abb. 22: Positivenanteil nach Risikobenachrichtigung im Zeitlichen Verlauf (PCR).</figcaption>
 
 ### 6.6 Schätzung des Anteils der Datenspendenden
 
@@ -578,19 +550,15 @@ Auf Basis des Anteils der im CWA-Backend registrierten und in der Datenspende si
 
 In der folgenden Abbildung sind die Anteile der gespendeten Testergebnisse (positiv bzw. negativ) nach Art des Tests (PCR bzw. RAT (Antigen-Schnelltest)) angegeben. Hierbei wurde das Verhältnis zwischen den an einem Tag über die CWA-Datenspende übermittelten Testergebnissen zu den einen Tag zuvor (bei PCR) bzw. am selben Tag (bei RAT) auf dem CWA-Lab-Result-Server bereitgestellten Testergebnissen gebildet.
 
-<figure>
-    <img src="./ppa_estimate_ppa_response_rate_1_plot.png" class="figure-img img-fluid" alt="Verhältnis zwischen der Anzahl der Testergebnisse (CWA-Datenspende) und Anzahl von Testergebnis-Bereitstellungen (Backend) (PCR/RAT und pos./neg.)"/>
-    <figcaption aria-hidden="true">Abb. 23: Verhältnis zwischen der Anzahl der Testergebnisse (CWA-Datenspende) und Anzahl von Testergebnis-Bereitstellungen (Backend) (PCR/RAT und pos./neg.)</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_response_rate_1_plot.png" class="figure-img img-fluid" alt="Verhältnis zwischen der Anzahl der Testergebnisse (CWA-Datenspende) und Anzahl von Testergebnis-Bereitstellungen (Backend) (PCR/RAT und pos./neg.)"/>
+<figcaption aria-hidden="true">Abb. 23: Verhältnis zwischen der Anzahl der Testergebnisse (CWA-Datenspende) und Anzahl von Testergebnis-Bereitstellungen (Backend) (PCR/RAT und pos./neg.)</figcaption>
 
 Ebenso können wir den Anteil der PCR-Testergebnisse, die abgerufen worden sind und über die CWA-Datenspende übermittelt wurden, zu den einen Tag zuvor registrierten Tests angegeben. Dies gibt eine erste Näherung an die Teilnehmendenrate der CWA-Datenspende. Dieser Anteil beträgt über die letzten 30 Tage gemittelt 49%.
 
 Die auf Basis der gespendeten Testergebnisse getätigte Schätzung des Anteils der Datenspendenden lässt keine konkreten Rückschlüsse auf die Anzahl der aktiven Nutzenden und/oder Geräte zu. Diesem Thema widmen wir uns in einem separaten Beitrag.
 
-<figure>
-    <img src="./ppa_estimate_ppa_response_rate_plot.png" class="figure-img img-fluid" alt="Tagesgenaue Schätzung des Anteils der Spendenden – aus der Anzahl von Testergebnissen (CWA-Datenspende) pro Test-Registrierungen (Backend)."/>
-    <figcaption aria-hidden="true">Abb. 24: Tagesgenaue Schätzung des Anteils der Spendenden – aus der Anzahl von Testergebnissen (CWA-Datenspende) pro Test-Registrierungen (Backend).</figcaption>
-</figure>
+<img src="./ppa_estimate_ppa_response_rate_plot.png" class="figure-img img-fluid" alt="Tagesgenaue Schätzung des Anteils der Spendenden – aus der Anzahl von Testergebnissen (CWA-Datenspende) pro Test-Registrierungen (Backend)."/>
+<figcaption aria-hidden="true">Abb. 24: Tagesgenaue Schätzung des Anteils der Spendenden – aus der Anzahl von Testergebnissen (CWA-Datenspende) pro Test-Registrierungen (Backend).</figcaption>
 
 ## 7 So geht es weiter
 

@@ -281,9 +281,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 
 <div class="m-4">
 
-<figure>
 <video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" alt="BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
-</figure>
 
 </div>
 
@@ -317,9 +315,7 @@ Kennzahlen (kumulativ und im Zeitverlauf) vorgesehen:
 
 <div class="right-float">
 
-<figure>
 <img src="./edus_screen.png" class="w2in" alt="CWA - ereignisbezogene Befragung" /><figcaption aria-hidden="true"><em>CWA - ereignisbezogene Befragung</em></figcaption>
-</figure>
 
 </div>
 
@@ -360,9 +356,7 @@ werden seit Anfang März 2021 erhoben.
 
 <div class="left-float">
 
-<figure>
 <img src="./ppa_screen.png" class="w2in" alt="CWA - Datenspende" /><figcaption aria-hidden="true"><em>CWA - Datenspende</em></figcaption>
-</figure>
 
 </div>
 
@@ -460,9 +454,7 @@ zusätzlichen Nutzenden weiter gesteigert werden.
 
 <div class="m-4">
 
-<figure>
 <video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="" alt="Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
-</figure>
 
 </div>
 
