@@ -11,6 +11,8 @@ on:
 jobs:
   Cypress-Test-Production:
     runs-on: ubuntu-latest
+    env:
+      NO_COLOR: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
