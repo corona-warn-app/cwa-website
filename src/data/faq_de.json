@@ -393,6 +393,19 @@
                                     "Bei einem Genesenenzertifikat ist die maximale fachliche Gültigkeit laut dem <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>Infektionsschutzgesetz (IfSG)</a> festgelegt auf 90 Tage.​ Sofortige Impfstatusanzeige für Genesene: Für Genesene wird ab der Version 2.9 direkt nach der ersten Impfung der vollständige Impfschutz in der Corona-Warn-App angezeigt. Die zweiwöchige Wartezeit entfällt bei allen Impfstoffen außer bei Johnson & Johnson.",
                                     "<b>Prüfung der Gültigkeit</b>",
                                     "Die Prüf-App, in Deutschland die CovPassCheck-App, prüft sowohl die technische Gültigkeit des Zertifikats als auch die fachliche Gültigkeit. Sobald eine der beiden Gültigkeiten abläuft, wird das gesamte Zertifikat bei der Verifikation mit der Prüf-App als 'ungültig' abgelehnt.​"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Siehe auch FAQ-Artikel:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
+                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        ]
+                                    }
                                 ]
                             },
                             {
@@ -542,20 +555,108 @@
                                 ]
                             },
                             {
-                                "title": "Können Zertifikate über die App aktualisiert werden?",
+                                "title": "Warum werden Zertifikate neu ausgestellt?",
                                 "anchor": "dcc_replacement",
                                 "active": false,
                                 "textblock": [
-                                    "Die Spezifikationen der EU für Impfzertifikate für Auffrischimpfungen wurden geändert. Sollte Ihr Zertifikat nicht mehr den aktuellen Spezifikationen entsprechen, ist es zwar weiterhin gültig, es kann jedoch sein, dass bei einer Prüfung die Auffrischimpfung nicht als solche erkannt wird. In solch einem Fall können Sie über die Corona-Warn-App ab Version 2.20.3 mit einer entsprechenden Nachricht darüber informiert werden. Sie können dann freiwillig ein neues Impfzertifikat kostenlos über die App anfordern. Nachdem Sie Ihr Einverständnis gegeben haben, übermittelt die App das Impfzertifikat zur Überprüfung an das RKI, welches ein aktualisiertes Zertifikat ausstellt und an Ihre App übermittelt. Sie finden das aktualisierte Zertifikat dann in der Zertifikate-Registerkarte. Das alte Zertifikat wird automatisch in den Papierkorb verschoben und nach 30 Tagen gelöscht. Das alte Zertifikat kann innerhalb der 30 Tage jederzeit wiederhergestellt werden.",
+                                    "Zwei Fälle können unterschieden werden:",
+                                    "(a) Ab der Version 2.23 können digitale COVID Zertifikate der EU, deren Gültigkeit abläuft, aktualisiert werden. Derzeit haben die in Deutschland ausgestellten digitalen COVID Zertifikate der EU ein technisches Ablaufdatum von 365 Tagen nach der Ausstellung. Auch wenn das entsprechende Zertifikat fachlich noch gültig wäre, wird es nach Erreichen des technischen Ablaufdatums nicht mehr als gültig erkannt. Im Juni 2022 laufen die ersten Zertifikate technisch ab und können nicht mehr geprüft werden.",
+                                    "(b) Die Spezifikationen der EU für Impfzertifikate für Auffrischimpfungen wurden geändert. Sollte Ihr Zertifikat nicht mehr den aktuellen Spezifikationen entsprechen, ist es zwar weiterhin gültig, es kann jedoch sein, dass bei einer Prüfung die Auffrischimpfung nicht als solche erkannt wird. In solch einem Fall können Sie über die Corona-Warn-App seit Version 2.20.3 mit einer entsprechenden Nachricht darüber informiert werden.",
                                     "Weitere Informationen finden Sie im Blog: <a href='../../blog/2022-03-30-cwa-2-20/' target='_blank'>Corona-Warn-App Version 2.20</a>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Siehe auch FAQ-Artikel:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
+                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        ]
+                                    }
                                 ]
                             },
                             {
-                                "title": "Ich erhalte die Meldung, dass die Gültigkeit eines Zertifikats bald abläuft. Was muss ich tun?",
+                                "title": "Wie und wann können Zertifikate in der App neu ausgestellt werden?",
                                 "anchor": "dcc_replacement_howto",
                                 "active": false,
                                 "textblock": [
-                                    "Die technische Gültigkeit der digitalen COVID-Zertifikate läuft nach 365 Tagen automatisch ab. Für alle relevanten Zertifikate erhalten Sie dazu 28 Tage vor Ablauf eine Mitteilung in der Corona-Warn-App. Um Ihren Impfstatus weiterhin mit der App nachweisen zu können, müssen die entsprechenden Zertifikate aktualisiert werden. Die dazu notwendige Neuausstellung können Sie demnächst in der App mit wenigen Klicks selbst durchführen. Siehe auch <a href='#glossary_validity'>\"Gültigkeit eines EU digitalen COVID-Zertifikats\"</a>."
+                                    "Erhalten Sie eine entsprechende Nachricht in der Corona-Warn-App, können Sie freiwillig ein neues Impfzertifikat bzw. Genesenenzertifikat kostenlos über die App anfordern. Nachdem Sie Ihr Einverständnis gegeben haben, übermittelt die App das Zertifikat oder mehrere Zertifikate zur Überprüfung an das RKI, welches ein aktualisiertes Zertifikat ausstellt und an Ihre App übermittelt. Sie finden das aktualisierte Zertifikat dann in der Zertifikate-Registerkarte.",
+                                    "<ul> <li>Das alte Zertifikat wird automatisch in den Papierkorb verschoben und nach 30 Tagen gelöscht. Das alte Zertifikat kann innerhalb der 30 Tage jederzeit wiederhergestellt werden.</li> <li>Die Möglichkeit zur Neuausstellung beginnt 28 Tage vor dem Ablauf des Zertifikats und endet 90 Tage nach dem Ablauf des Zertifikats.</li> <li><strong>WICHTIG</strong>: Die Neuausstellung kann innerhalb dieses Zeitraums maximal drei Mal getätigt werden. Wir empfehlen Ihnen wegen dieser Beschränkung das neu ausgestellte Zertifikat als PDF-Datei zu exportieren und auszudrucken damit Sie bei Bedarf den QR-Code des Zertifikats erneut einscannen können (siehe &quot;<a href='#eu_dcc_export' target='_blank'>Wie erstelle ich einen Ausdruck meines Digitalen COVID Zertifikates der EU?</a>&quot;</li> </ul>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Siehe auch FAQ-Artikel:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
+                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?",
+                                "anchor": "dcc_replacement_which",
+                                "active": false,
+                                "textblock": [
+                                    "Folgende Digitale COVID Zertifikate der EU werden neu ausgestellt: <ul> <li>Impfzertifikat mit dem neusten Ausstellungsdatum</li> <li>Genesenenzertifikate</li> </ul>",
+                                    "Folgende Digitale COVID Zertifikate der EU können <strong>nicht</strong> ausgetauscht werden: <ul> <li>Testzertifikate</li> <li>Gesperrte Zertifikate</li> </ul>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Siehe auch FAQ-Artikel:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
+                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Verliere ich meinen Impfstatus, wenn eines meiner Zertifikate abläuft?",
+                                "anchor": "dcc_replacement_vac_status",
+                                "active": false,
+                                "textblock": [
+                                    "Ihr Impfstatus ändert sich durch den Ablauf eines Zertifikats nicht. Sie müssen das aktuell verwendete Zertifikat lediglich in der App neu ausstellen lassen, um Ihren Impfstatus auch in Zukunft über die Corona-Warn-App nachweisen zu können. Folgen Sie hierfür den Anweisungen in der Übersicht Ihrer Zertifikate."
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Siehe auch FAQ-Artikel:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
+                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?",
+                                "anchor": "dcc_replacement_issues",
+                                "active": false,
+                                "textblock": [
+                                    "<ul> <li>Lediglich für den Impfstatus relevante Zertifikate können erneuert werden, beispielsweise Auffrischimpfungen oder Genesenenzertifikate.</li> <li>Das Zertifikat ist noch länger als 28 Tage gültig.</li> <li>Das Zertifikat ist bereits vor mehr als 90 Tagen abgelaufen. In diesem Fall ist die Neuausstellung innerhalb der App nicht mehr möglich.</li> <li>Nur in Deutschland ausgestellte Zertifikate können über die App erneuert werden.</li> <li>Die Anzahl der Neuausstellungen ist auf drei Neuausstellungen pro Nutzer begrenzt.</li> <li>Ihre Corona-Warn-App wurde nicht auf die Version 2.23 aktualisiert. Bitte nehmen Sie ein Update vor.</li> </ul>"
+                                ],
+                                "linkList": [
+                                    {
+                                        "title" : "Siehe auch FAQ-Artikel:",
+                                        "links" : [
+                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
+                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
+                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
+                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        ]
+                                    }
                                 ]
                             }
                         ]
@@ -910,7 +1011,7 @@
                                 "anchor": "check_in_qr_warning_procedure",
                                 "active": false,
                                 "textblock": [
-                                    "Der Ablauf basiert auf dem bestehenden Warn-Prozess der CWA: falls eine Teilnehmerin/ein Teilnehmer eines Events oder eine Besucherin/ein Besucher eines Ortes positiv getestet ist, sollte sie/er dieses Ergebnis über die CWA teilen. Dann erhalten alle anderen, die dort zur gleichen Zeit, oder bis zu 30 Minuten nachdem sich die positv getesetete Person ausgecheckt hat, eingecheckt waren, unverzüglich eine Warnung, ohne dass die Gesundheitsämter belastet werden müssen. Die kann, je nach epidemiologischer Situation, in zwei Versionen ausfallen: 'geringes Risiko' (grüne Kachel) oder eben 'hohes Risiko' (rote Kachel)."
+                                    "Der Ablauf basiert auf dem bestehenden Warn-Prozess der CWA: falls eine Teilnehmerin/ein Teilnehmer eines Events oder eine Besucherin/ein Besucher eines Ortes positiv getestet ist, sollte sie/er dieses Ergebnis über die CWA teilen. Dann erhalten alle anderen, die dort zur gleichen Zeit, oder bis zu 30 Minuten nachdem sich die positiv getestete Person ausgecheckt hat, eingecheckt waren, unverzüglich eine Warnung, ohne dass die Gesundheitsämter belastet werden müssen. Die kann, je nach epidemiologischer Situation, in zwei Versionen ausfallen: 'geringes Risiko' (grüne Kachel) oder eben 'hohes Risiko' (rote Kachel)."
                                 ]
                             },
                             {
@@ -918,7 +1019,7 @@
                                 "anchor": "check_in_qr_warning_how",
                                 "active": false,
                                 "textblock": [
-                                    "Die Berechnung des Risikos hängt davon ab, ob und wie lange sich der Aufenthalt eines Nutzers oder einer Nutzerin mit einer später positiv auf COVID-19 getesteten Person überschneidet. Überschneidet sich der Aufenthalt um weniger als 10 Minuten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit geringem Risiko (grüne Kachel). Hat sich der Aufenthalt mit der später positiv auf COVID-19 getesteten Person um 10 Minuten oder länger überschnitten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit erhöhtem Risiko (rote Kachel). Es kann auch dann eine Warnung erfolgen, wenn man sich bis zu 30 Minuten nach der positv getesteten Person eingecheckt hat."
+                                    "Die Berechnung des Risikos hängt davon ab, ob und wie lange sich der Aufenthalt eines Nutzers oder einer Nutzerin mit einer später positiv auf COVID-19 getesteten Person überschneidet. Überschneidet sich der Aufenthalt um weniger als 10 Minuten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit geringem Risiko (grüne Kachel). Hat sich der Aufenthalt mit der später positiv auf COVID-19 getesteten Person um 10 Minuten oder länger überschnitten, erhalten Nutzer*innen eine Warnung über eine Begegnung mit erhöhtem Risiko (rote Kachel). Es kann auch dann eine Warnung erfolgen, wenn man sich bis zu 30 Minuten nach der positiv getesteten Person eingecheckt hat."
                                 ]
                             },
                             {
@@ -1101,7 +1202,7 @@
                                     "<li><b>Das Testergebnis auf anderem Weg erhalten</b></li>",
                                     "Wenn Sie das Testergebnis nicht über die Corona-Warn-App erhalten haben, kontaktieren Sie bitte Ihr zuständiges ärztliches Fachpersonal, Testzentrum, bzw. Gesundheitsamt. Auch wenn Ihr positives Testergebnis nicht in der Corona-Warn-App vorliegen sollte, Ihnen aber ein positives Testergebnis außerhalb der Corona-Warn-App mitgeteilt wurde, können Sie andere Personen über die App warnen, siehe: <a href='#qr_test' target='_blank'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a></ul>",
                                     "<b>Können mehrere Tests registriert werden?</b>",
-                                    "Sie können pro Familienmitglied je einen PCR- und einen Schnelltest einscannen. Wählen Sie hierfür nach dem Scan des Tests aus, ob dieser für Sie selbst, oder für ein Familienmitglied bestimmt ist. Der Status eines Tests, unabhängig davon ob er zugehörig zu Ihnen selbst oder einem Familienmitgliedi ist, lässt sich im Anschluss auf der Status-Registerkarte abrufen. Jeder QR-Code für einen Test kann nur auf einem Gerät eingescannt werden. Wenn das Testergebnis anschließend gelöscht wurde, kann es zwar für 30 Tage aus dem Papierkorb wiederhergestellt werden, jedoch nicht auf einem anderen Gerät gescannt werden. Dies dient dazu, Missbrauch und Falschmeldungen zu vermeiden. Weiter Informationen finden Sie hier: <a href='#QRcodes' target='_blank'>Was mache ich, wenn ich mehrere PCR-Test-QR-Codes habe?</a>. Siehe auch Blog: <a href='../../blog/2022-04-19-cwa-2-21/' target='_blank'>Corona-Warn-App Version 2.21 ermöglicht jetzt Testverwaltung für Familienmitglieder</a>",
+                                    "Sie können pro Familienmitglied je einen PCR- und einen Schnelltest einscannen. Wählen Sie hierfür nach dem Scan des Tests aus, ob dieser für Sie selbst, oder für ein Familienmitglied bestimmt ist. Der Status eines Tests, unabhängig davon ob er zugehörig zu Ihnen selbst oder einem Familienmitglied ist, lässt sich im Anschluss auf der Status-Registerkarte abrufen. Jeder QR-Code für einen Test kann nur auf einem Gerät eingescannt werden. Wenn das Testergebnis anschließend gelöscht wurde, kann es zwar für 30 Tage aus dem Papierkorb wiederhergestellt werden, jedoch nicht auf einem anderen Gerät gescannt werden. Dies dient dazu, Missbrauch und Falschmeldungen zu vermeiden. Weiter Informationen finden Sie hier: <a href='#QRcodes' target='_blank'>Was mache ich, wenn ich mehrere PCR-Test-QR-Codes habe?</a>. Siehe auch Blog: <a href='../../blog/2022-04-19-cwa-2-21/' target='_blank'>Corona-Warn-App Version 2.21 ermöglicht jetzt Testverwaltung für Familienmitglieder</a>",
                                     "<br>",
                                     "<h3>Zertifikate</h3>",
                                     "<hr>",
@@ -3061,7 +3162,7 @@
                 {
                     "term": "Digitales Zertifikat",
                     "anchor": "digital_certificate",
-                    "description": "<p>Ein digitales Zertifikat ist ein beglaubigtes digitales Dokument. Es enthält mindestens den Namen des Inhabers, den öffentlichen Schlüssel des Inhabers und die digitale Unterschrift (<a href='#glossary_signature'>Signatur</a>) der ausstellenden Instanz.</p><p>Jedes digitale Zertifikat hat ein Ausstellungsdatum und eine zeitlich begrenzte <a href='#glossary_validity'>Gültigkeit</a> (Ablaufdatum). Nach Ablauf der Gültigkeit muss das Zertifikat erneuert werden.</p><p>In der CWA unterscheiden wir zwischen:</p><ul><li>Impfzertifikat</li><li>Testzertifikat</li><li>Genesenenzertifikat</li></ul>"
+                    "description": "<p>Ein digitales Zertifikat ist ein beglaubigtes digitales Dokument. Es enthält mindestens den Namen des Inhabers, den öffentlichen Schlüssel des Inhabers und die digitale Unterschrift (<a href='#glossary_signature'>Signatur</a>) der ausstellenden Instanz.</p><p>Jedes digitale Zertifikat hat ein Ausstellungsdatum und eine zeitlich begrenzte <a href='#glossary_validity'>Gültigkeit</a> (Ablaufdatum). Nach Ablauf der Gültigkeit muss das Zertifikat erneuert werden. Dies ist ab Version 2.23 direkt in der App möglich.</p><p>In der CWA unterscheiden wir zwischen:</p><ul><li>Impfzertifikat</li><li>Testzertifikat</li><li>Genesenenzertifikat</li></ul>"
                 },
                 {
                     "term": "Digitale Signatur",
@@ -3127,7 +3228,7 @@
                 {
                     "term": "Gültigkeit eines EU digitalen COVID-Zertifikats",
                     "anchor": "validity",
-                    "description": "<p>Wir unterscheiden grundsätzlich</p><ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul><p>Das digitale Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats endet 1 Jahr nach Ausstellung.</p><p><b> Impfzertifikat </b></p><p>In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.&nbsp;B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit der Impfung zählt also ab dem letzten Impfdatum (Datum X).</p><p><b>Genesenenzertifikat</b></p><p>Bei einem Genesenenzertifikat ist die maximale fachliche Gültigkeit laut dem <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>Infektionsschutzgesetz (IfSG)</a> festgelegt auf 90 Tage.</p><p><b>Testzertifikat</b></p><p>Testzertifikate werden üblicherweise mit einer technischen Gültigkeit von 2 Tagen ausgestellt. Wie lange so ein Testergebnis akzeptiert wird hängt vom Bundesland ab. Typischerweise werden in Deutschland negative PCR-Testergebnisse 48 Stunden und Schnelltestergebnisse 24 Stunden lang akzeptiert</p><p>Ein Zertifikat ist solange valide, bis entweder die <a href='#glossary_technical_validity'>technische Gültigkeit</a> oder die <a href='#glossary_effective_validity'>fachliche Gültigkeit</a> abläuft.</p>"
+                    "description": "<p>Wir unterscheiden grundsätzlich</p><ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul><p>Das digitale Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats endet 1 Jahr nach Ausstellung. Seit Version 2.23 kann man das aktuell verwendete <a href='#glossary_dcc'>DCC</a> in der App neu ausstellen lassen.</p><p><b> Impfzertifikat </b></p><p>In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.&nbsp;B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit der Impfung zählt also ab dem letzten Impfdatum (Datum X).</p><p><b>Genesenenzertifikat</b></p><p>Bei einem Genesenenzertifikat ist die maximale fachliche Gültigkeit laut dem <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>Infektionsschutzgesetz (IfSG)</a> festgelegt auf 90 Tage.</p><p><b>Testzertifikat</b></p><p>Testzertifikate werden üblicherweise mit einer technischen Gültigkeit von 2 Tagen ausgestellt. Wie lange so ein Testergebnis akzeptiert wird hängt vom Bundesland ab. Typischerweise werden in Deutschland negative PCR-Testergebnisse 48 Stunden und Schnelltestergebnisse 24 Stunden lang akzeptiert</p><p>Ein Zertifikat ist solange valide, bis entweder die <a href='#glossary_technical_validity'>technische Gültigkeit</a> oder die <a href='#glossary_effective_validity'>fachliche Gültigkeit</a> abläuft.</p>"
                 }
             ],
             "I": [
@@ -3295,7 +3396,7 @@
                 {
                     "term": "Technische Gültigkeit",
                     "anchor": "technical_validity",
-                    "description": "Das <a href='#glossary_certificate'>Zertifikat</a> als Dokument hat ein Ausstellungsdatum und ein technisches Ablaufdatum, so wie auch Ihr Reisepass oder Personalausweis beispielsweise. Für alle <a href='#glossary_certificate'>Zertifikate</a> gilt, dass das Ablaufdatum vom Herausgeber des <a href='#glossary_certificate'>Zertifikats</a> gesetzt wird. Derzeit werden in Deutschland die digitalen <a href='#glossary_vaccination_certificate'>Impf-</a>, <a href='#glossary_test_certificate'>Test-</a> und <a href='#glossary_recovery_certificate'>Genesenenzertifikate</a> der EU in der Regel mit einer technischen Gültigkeit von einem Jahr ab Ausstellungsdatum ausgestellt.​"
+                    "description": "Das <a href='#glossary_certificate'>Zertifikat</a> als Dokument hat ein Ausstellungsdatum und ein technisches Ablaufdatum, so wie auch Ihr Reisepass oder Personalausweis beispielsweise. Für alle <a href='#glossary_certificate'>Zertifikate</a> gilt, dass das Ablaufdatum vom Herausgeber des <a href='#glossary_certificate'>Zertifikats</a> gesetzt wird. Derzeit werden in Deutschland die digitalen <a href='#glossary_vaccination_certificate'>Impf-</a>, <a href='#glossary_test_certificate'>Test-</a> und <a href='#glossary_recovery_certificate'>Genesenenzertifikate</a> der EU in der Regel mit einer technischen Gültigkeit von einem Jahr ab Ausstellungsdatum ausgestellt. Seit Version 2.23 kann man das aktuell verwendete <a href='#glossary_dcc'>DCC</a> in der App neu ausstellen lassen."
                 },
                 {
                     "term": "Temporary Exposure Keys",
