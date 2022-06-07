@@ -21,13 +21,8 @@ jobs:
       with:
         node-version: 'lts/gallium'
 
-    - name: Install cached root dependencies
+    - name: Install root dependencies
       uses: bahmutov/npm-install@v1
-      if: ${{ !env.ACT }}
-
-    - name: Install non-cached root dependencies using ACT locally
-      run: npm install
-      if: ${{ env.ACT }}
 
     - name: Check if the page builds
       run: npm run-script build
