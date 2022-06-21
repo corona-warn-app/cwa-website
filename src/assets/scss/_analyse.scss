@@ -803,7 +803,9 @@
 		border: 1px solid transparent;
 
 
-		&-title {}
+		&-title {
+			width: calc(100% - 55px);
+		}
 
 		&-content {
 			overflow: auto;
