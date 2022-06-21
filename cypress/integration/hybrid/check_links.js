@@ -36,7 +36,11 @@ context("Check for broken links", () => {
                 ]
     const allowlist = [
       'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999',
-      'https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1'
+      'https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1',
+      'https://apps.apple.com/de/app/116117-app/id1465237675',
+      'https://apps.apple.com/de/app/corona-warn-app/id1512595757',
+      'https://support.apple.com/en-gb/HT201252',
+      'https://www.instagram.com/rki_fuer_euch/'
     ]
 
   it('Check if txt results exist',() => {
