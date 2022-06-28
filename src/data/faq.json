@@ -463,24 +463,30 @@
                                 ]
                             },
                             {
-                                "title": "How do I create a printout of my EU Digital COVID Certificate?",
+                                "title": "How do I create a printout of EU Digital COVID Certificates?",
                                 "anchor": "eu_dcc_export",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated ??? ?? ????</b><hr>",
                                     "<b>Purpose</b>",
                                     "As of version 2.10 of the Corona-Warn-App, you can export scanned EU Digital COVID Certificates into PDF documents. This function is primarily used to create backup copies of the certificates for your personal purposes.",
-                                    "Of course, the original EU templates are used for the layout of the certificates.",
+                                    "As of version 2.24 of the Corona-Warn-App, you can save all vaccination and recovery certificates available in your app, as well as all tests that are not older than 72 hours, in a single PDF document.",
+                                    "The original EU templates are used for the layout of the certificates.",
                                     "<b>Confidentiality</b>",
                                     "Exporting and saving the certificates is voluntary. The creation of the PDF file takes place exclusively locally on your smartphone. Only you have access to this document.",
                                     "However, please note that the generated document contains sensitive personal information. Therefore, please handle the PDF file with care. Show the document only to people you trust and who are authorized to review it.",
                                     "We strongly advise against sharing the PDF document via potentially insecure channels (e.g. by email or via other apps).",
                                     "<b>Limitation</b>",
-                                    "With the new function, only PDF documents of certificates that were also issued in Germany can be generated. Otherwise, a detailed message appears: 'Display print version not possible - The print version of the certificate cannot be displayed because the certificate was not issued in Germany.'",
-                                    "See also the blog article: <a href='../../blog/2021-09-22-cwa-version-2-10/' target='_blank' >Blog article Corona-Warn-App version 2.10</a>",
+                                    "When exporting a single certificate, only PDF documents of certificates that were also issued in Germany can be generated. Otherwise, a detailed message appears: 'Display print version not possible - The print version of the certificate cannot be displayed because the certificate was not issued in Germany.'",
+                                    "Unlike the export of individual certificates, the export of all certificates is not limited to those issued in Germany, taking into account all EU digital COVID certificates.",
                                     "<b>Application</b>",
-                                    "After successfully exporting the certificate to the PDF document, you can decide whether you want to save it on your smartphone, import it to other apps or print it. To do this, please use the standard functions of the operating system.",
-                                    "<b>Step-by-step instructions:</b>",
-                                    "To create a printout of your EU COVID Digital Certificate, please follow these steps: <ul><li>Tap on the 'Certificates' tab in the Corona-Warn-App</li><li>Select a person, by tapping on a corresponding certificate in the certificate overview</li><li>Scroll down and select a certificate of this person</li><li>In this detail view, tap on the three-dot menu in the upper right corner (Android) or on 'More' at the bottom (iOS)</li><li>Tap on 'Display print version'</li><li>Tap on 'Continue'</li><li>Tap on the icon for 'Print' or for 'Share' in the upper right corner</li><li>In the following view, you can print the created PDF document using the standard functions of the operating system, import it into other apps or even share it</li></ul>"
+                                    "After successfully exporting one or more certificates to the PDF document, you can decide whether you want to save the document on your smartphone, import it to other apps or print it. To do this, please use the standard functions of the operating system.",
+                                    "<b>Step-by-step instructions: Exporting a single certificate</b>",
+                                    "To create a printout of your individual EU COVID Digital Certificate, please follow these steps: <ul><li>Tap on the 'Certificates' tab in the Corona-Warn-App</li><li>Select a person, by tapping on a corresponding certificate in the certificate overview</li><li>Scroll down and select a certificate of this person</li><li>In this detail view, tap on the three-dot menu in the upper right corner (Android) or on 'More' at the bottom (iOS)</li><li>Tap on 'Display print version'</li><li>Tap on 'Continue' (iOS) or 'Next' (Android)</li><li>Tap on the icon for 'Print' or for 'Share' in the upper right corner</li><li>In the following view, you can print the created PDF document using the standard functions of the operating system, import it into other apps or even share it</li></ul>",
+                                    "<b>Step-by-step instructions: Exporting all certificates</b>",
+                                    "To create a printout of all your saved EU COVID Digital Certificate at once, please follow these steps: <ul><li>Tap on the 'Certificates' tab in the Corona-Warn-App</li><li>Tap the icon with the upward pointing arrow in the upper right corner</li><li>Tap on 'Continue' (iOS) or 'Next' (Android)</li><li>Tap on the icon for 'Print' or for 'Share' in the upper right corner</li><li>In the following view, you can print the created PDF document using the standard functions of the operating system, import it into other apps or even share it</li></ul>",
+                                    "You can find screenshots on exporting certificates for both iOS and Android devices at the following links:<ul><li><a href='../../screenshots/#ios_print_certificate' target='_blank'>iOS Screenshots: Print Certificate</a></li><li><a href='../../screenshots/#android_print_certificate' target='_blank'>Android Screenshots: Print Certificate</a></li></ul>",
+                                    "See also:<ul><li><a href='../../blog/2021-09-22-cwa-version-2-10/' target='_blank' >Blog article Corona-Warn-App version 2.10</a></li><li><a href='../../blog/????-???-??-cwa-version-2-24/' target='_blank' >CWA 2.24: ???</a></li><li>FAQ: <a href='#eu_dcc_export_error' target='_blank'>Error 'Cannot display print version'</a></li></ul>"
                                 ]
                             },
                             {
@@ -560,9 +566,8 @@
                                 "active": false,
                                 "textblock": [
                                     "Two cases can be distinguished:",
-                                    "(a) As of version 2.23, EU digital COVID certificates whose validity expires can be updated. Currently, EU digital COVID certificates issued in Germany have a technical expiration date of 365 days after issuance. Even if the corresponding certificate would still be technically valid, it will no longer be recognized as valid after reaching the technical expiration date. In June 2022, the first certificates will technically expire and can no longer be checked.",
-                                    "(b) The EU specifications for booster vaccination certificates have changed. If your certificate no longer meets the current specifications, it is still valid, but it may not be recognized as a booster vaccination during an inspection. In such a case, you can be informed about this via the Corona-Warn-App since version 2.20.3 with a corresponding message.",
-                                    "For more information, visit the blog: <a href='../../blog/2022-03-30-cwa-2-20/' target='_blank'>Corona-Warn-App Version 2.20</a>"
+                                    "(a) As of version 2.23, EU digital COVID certificates whose validity expires can be updated. Currently, EU digital COVID certificates issued in Germany have a technical expiration date of 365 days after issuance. Even if the corresponding certificate would still be technically valid, it will no longer be recognized as valid after reaching the technical expiration date. In June 2022, the first certificates will technically expire and can no longer be checked. For more information, visit the blog: <a href='../../blog/2022-06-01-cwa-2-23/' target='_blank'>Corona-Warn-App Version&nbsp;2.23</a>.",
+                                    "(b) The EU specifications for booster vaccination certificates have changed. If your certificate no longer meets the current specifications, it is still valid, but it may not be recognized as a booster vaccination during an inspection. In such a case, you can be informed about this via the Corona-Warn-App since version 2.20.3 with a corresponding message. For more information, visit the blog: <a href='../../blog/2022-03-30-cwa-2-20/' target='_blank'>Corona-Warn-App Version&nbsp;2.20</a>."
                                 ],
                                 "linkList": [
                                     {
@@ -644,7 +649,7 @@
                                 "anchor": "dcc_replacement_issues",
                                 "active": false,
                                 "textblock": [
-                                    "<ul> <li>Only certificates relevant to vaccination status can be renewed, such as booster vaccinations or certificates of recovery.</li> <li>The certificate is valid for longer than 28 days.</li> <li>The certificate already expired more than 90 days ago. In this case, reissuing within the app is no longer possible.</li> <li>Only certificates issued in Germany can be renewed via the app.</li> <li>A certificate can only be reissued a maximum of three times per user.</li> <li>Your Corona-Warn-App has not been updated to version 2.23. Please perform an update.</li> </ul>"
+                                    "<ul> <li>Only certificates relevant to vaccination status can be renewed, such as booster vaccinations or certificates of recovery.</li> <li>The certificate is valid for longer than 28 days.</li> <li>The certificate already expired more than 90 days ago. In this case, reissuing within the app is no longer possible. Please contact a pharmacy to obtain a new certificate.</li> <li>Only the vaccination certificate with the latest date of issue can be reissued.</li> <li>Only certificates issued in Germany can be renewed via the app.</li> <li>The number of reissues is limited to three per certificate.</li> <li>Your Corona-Warn-App has not been updated to version 2.23. Please perform an update.</li> </ul>"
                                 ],
                                 "linkList": [
                                     {
@@ -1679,6 +1684,17 @@
                                 ]
                             },
                             {
+                                "title": "Error 'Cannot display print version'",
+                                "anchor": "eu_dcc_export_error",
+                                "active": false,
+                                "textblock": [
+                                    "You will receive the error message 'Cannot display print version' when trying to export all certificates if only the following EU Digital COVID Certificate are stored in the Corona-Warn-App:",
+                                    "<ul><li>test certificates that are older than 72 h</li><li>revoked certificates.</li></ul>",
+                                    "Test certificates older than 72 h have no practical use anymore. If your case involves one or more blocked certificates, please contact the issuer of the certificate(s).",
+                                    "See also: <a href='#eu_dcc_export' target='_blank' >\"How do I create a printout of my EU Digital COVID Certificate?\"</a>"
+                                ]
+                            },
+                            {
                                 "title": "Why does the Corona-Warn-App with version 2.8 or newer show that my certificate couldn't be validated although versions 2.6 & 2.7 showed my certificate as valid?",
                                 "anchor": "dcc_no_rules",
                                 "active": false,
@@ -1873,14 +1889,6 @@
                                     "<ul><li>*.coronawarn.app</li><li>*.t-online.de</li></ul>",
                                     "If you want to allow the usage of the (optional) survey system, you should additionally add these domains to your access-list:",
                                     "<ul><li>befragungen.rki.de</li><li>www.howsmyssl.com</li></ul>"
-                                ]
-                            },
-                            {
-                                "title": "[Google/Android]: Battery optimization is not automatically disabled after activating the prioritized background activity",
-                                "anchor": "battery_optimization_background",
-                                "active": false,
-                                "textblock": [
-                                    "When you switch on the prioritized background activity on some Android devices, the battery optimization for the Corona-Warn-App is not turned off on OS level. This is a known limitation for a limited number of Android devices. To turn off the battery optimization accordingly, restart your device."
                                 ]
                             }
                         ]
