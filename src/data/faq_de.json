@@ -274,7 +274,7 @@
                                 "anchor": "rat_tan_hotline",
                                 "active": false,
                                 "textblock": [
-                                    "Es ist nicht möglich, ein positives Ergebnis aus einem <a href='#glossary_rapid_antigen_test'>Antigen-Schnelltest</a> oder <a href='#glossary_rapid_pcr_test'>PCR-Schnelltest</a> über die TAN-Hotline zu teilen."
+                                    "Es ist nicht möglich, ein positives Ergebnis aus einem <a href='#glossary_rapid_antigen_test'>Antigen-Schnelltest</a>, <a href='#glossary_selftest'>Selbsttest</a> oder <a href='#glossary_rapid_pcr_test'>PCR-Schnelltest</a> über die TAN-Hotline zu teilen."
                                 ]
                             },
                             {
@@ -3087,7 +3087,7 @@
                 {
                     "term": "Antigen-Schnelltest",
                     "anchor": "rapid_antigen_test",
-                    "description": "<p>Antigen-Schnelltests ähneln von der Vorgehensweise dem Selbsttest, werden allerdings von geschultem Personal durchgeführt. Eine Gegenüberstellung der beiden Antigentest-Typen wurde vom RKI bereit gestellt: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Downloads/Flyer-Antigentests.pdf?__blob=publicationFile'>Link zur Gegenüberstellung vom RKI</a></p><p>Nicht alle Antigen-Schnelltests sind ähnlich zuverlässig. Aus diesem Grund hat das Paul-Ehrlich-Institut sog. Mindestkriterien an Antigen-Schnelltests veröffentlicht: <a href='https://www.pei.de/SharedDocs/Downloads/DE/newsroom/dossiers/mindestkriterien-sars-cov-2-antigentests.pdf?__blob=publicationFile&v=9'>Link zu den Mindestkriterien</a></p><p>Ein positives Ergebnis eines Antigen-Schnelltests ist noch keine finale Diagnose und sollte durch einen <a href='#glossary_pcr_test'>PCR-Test</a> bestätigt werden.</p>"
+                    "description": "<p>Antigen-Schnelltests ähneln von der Vorgehensweise dem <a href='#glossary_selftest'>Selbsttest</a>, werden allerdings von geschultem Personal durchgeführt. Eine Gegenüberstellung der beiden Antigentest-Typen wurde vom RKI bereit gestellt: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Downloads/Flyer-Antigentests.pdf?__blob=publicationFile'>Link zur Gegenüberstellung vom RKI</a></p><p>Nicht alle Antigen-Schnelltests sind ähnlich zuverlässig. Aus diesem Grund hat das Paul-Ehrlich-Institut sog. Mindestkriterien an Antigen-Schnelltests veröffentlicht: <a href='https://www.pei.de/SharedDocs/Downloads/DE/newsroom/dossiers/mindestkriterien-sars-cov-2-antigentests.pdf?__blob=publicationFile&v=9'>Link zu den Mindestkriterien</a></p><p>Ein positives Ergebnis eines Antigen-Schnelltests ist noch keine finale Diagnose und sollte durch einen <a href='#glossary_pcr_test'>PCR-Test</a> bestätigt werden.</p>"
                 },
                 {
                     "term": "API",
@@ -3391,6 +3391,11 @@
                     "term": "Schnelltest-Profil",
                     "anchor": "rapid_test_profile",
                     "description": "In der Corona-Warn-App haben Sie seit Version 2.2 die Möglichkeit ein Schnelltestprofil mit Ihren Daten wie Vor- und Nachname, Geburtsdatum, Adresse, Telefonnummer und E-Mail-Adresse zu erstellen. Seit Version 2.22 können Sie außerdem Schnelltestprofile für Familienmitglieder anlegen. Mithilfe eines Schnelltest-Profils sorgen Sie dafür, dass die Registrierung an einer Teststelle schneller erfolgt. Das Profil enthält einen QR-Code, welchen man bei der Teststelle vorzeigen kann. Trotzdem sollten Sie zusätzlich Ihren Personalausweis bereithalten."
+                },
+                {
+                    "term": "Selbsttest",
+                    "anchor": "selftest",
+                    "description": "Selbsttests sind freiverkäuflich und können auch von ungeschulten Personen sicher angewendet werden. Für die Auswertung eines Selbsttests, welche innerhalb von 15 bis 30 Minuten erfolgt, braucht es auch kein Labor. Sie müssen sich also nicht eigens zu einer Ärztin beziehungsweise einem Arzt, dem Gesundheitsamt oder einer Teststation begeben, sondern können sich bequem zuhause selbst testen. Ein Selbsttest ist jedoch erst dann zuverlässig, wenn er korrekt durchgeführt wurde. Da dies schwer nachweisbar ist, reichen Selbsttestergebnisse weder für das \"freitesten\" aus einer verordneten Quarantäne noch für die Bestätigung einer Infektion aus. In beiden Fällen ist ein zertifizierter <a href='#glossary_rapid_antigen_test'>Antigen-Schnelltest</a> notwendig."
                 },
                 {
                     "term": "Signatur (Signierung eines Zertifikats)",
