@@ -481,6 +481,11 @@ $(document).ready(function(){
     }
 
     if (document.querySelector(".page-faq-results")) {
+        //event for refreshing on back or forward browser history
+        window.addEventListener('hashchange', function() {
+            location.reload();
+        });
+
         $.get({url: "faq_duplicate.json", converters: {"text html": jQuery.parseJSON}}, (data) => {
             data.map(question => {
                 if($(`#${question.anchor}-div`).length > 0) {
