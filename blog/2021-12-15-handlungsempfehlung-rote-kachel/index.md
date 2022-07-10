@@ -106,7 +106,7 @@ The red tile remains until the underlying risk exposure is more than 14 days in 
 
 Even with a green tile, there can be indications of encounters with people tested positively later. However, the Corona-Warn-App does not rate these encounters as an increased risk due to the circumstances (for example, short exposure period or long distance to that person). Therefore, it is not necessary for you to behave as stated above.
 
-Nevertheless, you should **adhere to the usual hygiene rules**: When you encounter other people, wear a medical mask, keep your distance from other people, sneeze or cough into your elbow or a handkerchief, wash your hands regularly with soap, and let fresh air in several times a day (see also [Coronavirus infection - this is how the coronavirus spreads](https://www.zusammengegencorona.de/en/ansteckung-mit-corona-so-wird-das-coronavirus-uebertragen/) for background information about reducing your risk of infection).
+Nevertheless, you should **adhere to the usual hygiene rules**: When you encounter other people, wear a medical mask, keep your distance from other people, sneeze or cough into your elbow or a handkerchief, wash your hands regularly with soap, and let fresh air in several times a day.
 
 
 

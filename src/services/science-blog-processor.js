@@ -159,7 +159,7 @@ ${entry.blogContent}`;
 const writeBlogFile = (lang, slug, fileContent) => {
   const blogFolder = path.join(blogHtmlPath(lang), slug);
   if (!existsSync(blogFolder)) {
-    mkdirSync(blogFolder);
+    mkdirSync(blogFolder, { recursive : true });
   }
   writeFileSync(path.join(blogFolder, 'index.html'), fileContent);
 }
