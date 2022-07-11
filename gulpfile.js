@@ -512,10 +512,10 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
     .pipe(replace('[ios.latest-os-version]', '15.5'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.23.2'))
+    .pipe(replace('[ios.current-app-version]', '2.24.1'))
     .pipe(replace('[android.latest-os-version]', '12'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.23.2'))
+    .pipe(replace('[android.current-app-version]', '2.24.2'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist))
 }

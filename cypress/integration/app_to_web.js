@@ -81,6 +81,21 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
         });
     });
 
+    it("Test Blog links", () => {
+        var blogUrl = "";
+        if (links.blogEntry.length > 0) {
+            languages.forEach(lang => {
+                links.blogEntry.forEach(blogItem => {
+                    blogUrl = "/" + lang + "/blog/" + blogItem;
+                    cy.visit(blogUrl);
+                    cy.url().should("include", blogUrl);
+                });
+            });
+        } else {
+            cy.log("No blog links to test");
+        }
+    });
+
     it("Test Accessibility links", () => {
         languages.forEach(lang => {
             cy.visit("/" + lang + "/accessibility/").then(() => {
