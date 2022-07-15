@@ -976,17 +976,9 @@
                                 "anchor": "check_in_qr_code_other_codes",
                                 "active": false,
                                 "textblock": [
-                                    "<b>UPDATE April 14, 2022</b><br/> The event registration (check-in functionality) of the luca app is no longer possible for the time being since spring 2022. Therefore, luca QR codes can no longer be scanned with the Corona-Warn-App.<hr/>",
-                                    "Yes, you can scan the Event QR codes from the luca app with the Corona-Warn-App. It is not possible to scan the event QR codes from other apps."
-                                ]
-                            },
-                            {
-                                "title": "Can the Corona-Warn-App read and process the QR codes from luca?",
-                                "anchor": "check_in_luca_codes",
-                                "active": false,
-                                "textblock": [
-                                    "<b>UPDATE April 14, 2022</b><br/> The event registration (check-in functionality) of the luca app is no longer possible for the time being since spring 2022. Therefore, luca QR codes can no longer be scanned with the Corona-Warn-App.<hr/>",
-                                    "Yes. The Corona-Warn-App can scan QR codes issued for event registration using the luca app and perform its own check-in process from the CWA."
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. However, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "You can scan the Event QR codes from the luca app with the Corona-Warn-App. It is not possible to scan the event QR codes from other apps. More details in <a href='#check_in_luca' target='_blank' >the section about joint use of luca-QR-codes</a>."
                                 ]
                             },
                             {
@@ -1059,6 +1051,45 @@
                                 "active": false,
                                 "textblock": [
                                     "Organizers can warn for others regardless of which QR code they have scanned with the CWA. For more information on warning for others, see the following links:<ul><li><a href='#warn_for_others' target='_blank'>FAQ: How can I warn for others?</a></li><li><a href='../../blog/2021-09-08-cwa-version-2-9/' target='_blank'>Blog: Corona-Warn-App version 2.9: Organizers can use the check-in function to warn guests on behalf of the health department</a></li></ul>"
+                                ]
+                            },
+                            {
+                                "title": "The luca app does not currently offer event registration. Can the Corona-Warn-App still read and process the QR codes from luca?",
+                                "anchor": "check_in_luca_codes",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. However, the Corona-Warn-App can scan QR codes issued for event registration using the luca app and perform its own check-in process from the CWA."
+                                ]
+                            },
+                            {
+                                "title": "Can luca also read and process QR codes from the Corona-Warn-App?",
+                                "anchor": "check_in_luca_cwa_codes",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Even when this functionality was still available in the luca app, it was not possible for the luca app to read and process QR codes from the CWA.<hr>",
+                                    "The luca system transmits the contact data required for this purpose from visitors to the event or establishment in question to the health authorities as part of contact tracking, which must be health authority-compliant. However, the CWA does not provide for the transmission of contact data. Thus, QR codes were needed for this process, which were different from those required by the CWA."
+                                ]
+                            },
+                            {
+                                "title": "Can users of the luca app be alerted if CWA users test positive?",
+                                "anchor": "check_in_luca_warn",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Even when this functionality was still available in the luca app, luca app users were not automatically warned when CWA users tested positive.<hr>",
+                                    "Even if users of both apps scan the same QR code, no data flows from one system to the other. Only when the responsible health office was informed about the infection from a test laboratory, for example, it could have personally informed the affected luca users about the possible risk contact. However, the principle of the CWA is based on the fact that users are warned pseudonymously via a 'red tile' (increased risk) in the event of a risk encounter. No interaction with a health department is necessary in this process."
+                                ]
+                            },
+                            {
+                                "title": "Can all luca QR codes for check-in be read immediately by the Corona-Warn-App and the luca app?",
+                                "anchor": "check_in_luca_all",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. However, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "The luca-QR codes generated as of 25 May 2021 can be read (scanned) by both the Corona-Warn-App and luca app (no longer supported since spring 2022) and processed for the check-in process - unless the operators have explicitly contradicted this. In the case of an incompatible luca QR code, you can contact the organizer, who will issue a new Corona-Warn-App QR code if necessary. The support of private luca QR codes is still not possible."
                                 ]
                             }
                         ]
@@ -2934,6 +2965,117 @@
                                 "textblock": [
                                     "No, because the essential characteristics of the CWA - decentralization and pseudonymity - are preserved with the event registration. No personal contact details are registered, or location data is transmitted. The data is processed decentrally and pseudonymously on the smartphones.",
                                     "The Event QR code describes an event with attributes, a detailed address is not required. The QR code is also a random ID that is not processed in the CWA."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "luca-QR-Codes",
+                        "id": "check_in_luca",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "How does the collaboration between the Corona-Warn-App and luca work?",
+                                "anchor": "check_in_luca_how",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. However, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "The Corona-Warn-App can scan QR codes created for event registration with the luca app and perform its own check-in process. The luca app could have not scanned QR codes created by the Corona-Warn-App."
+                                ]
+                            },
+                            {
+                                "title": "Do app users need to change settings on their smartphones?",
+                                "anchor": "check_in_luca_settings",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being.<hr>",
+                                    "The joint use of the luca QR codes by the Corona-Warn-App, which can be used for event registrations and check-ins, does not result in any further changes for users.",
+                                    "CWA users will still be able to participate in the CWA system without entering contact information, while luca users' contact information could have been decoded in the case of contact tracing exclusively by the responsible health department."
+                                ]
+                            },
+                            {
+                                "title": "What happens when QR codes are scanned by the Corona-Warn-App?",
+                                "anchor": "check_in_luca_scan",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being.<hr>",
+                                    "The QR codes generated by the luca app for the check-in process can still be read by the Corona-Warn-App (CWA).",
+                                    "If users of the Corona-Warn-App scan the QR code, they will automatically be taken to the check-in area of the CWA. More information on the process can be found here: <a href='../../blog/2021-10-11-cwa-most-important-features/' target='_blank'>Why the Corona-Warn-App is important right now (Blog)</a>"
+                                ]
+                            },
+                            {
+                                "title": "How else do the Corona-Warn-App and luca app differ when it comes to check-in/event registration?",
+                                "anchor": "check_in_luca_differences",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Nevertheless, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "Using the Corona-Warn-App, users can check in to an event, for example. If they later test positive for SARS-CoV-2, they can use the Corona-Warn-App to immediately warn other participants at the same event. It does not matter whether the QR code was originally generated by the Corona-Warn-App or the luca app."
+                                ]
+                            },
+                            {
+                                "title": "Why was joint use implemented?",
+                                "anchor": "check_in_luca_why",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Nevertheless, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "In order to simplify the event registration (check-in) process, the Corona-Warn-App can 'joint use' QR codes issued by luca. That is, the Corona-Warn-App can read and process the QR code that luca has issued."
+                                ]
+                            },
+                            {
+                                "title": "Why was there a joint use of the luca QR codes?",
+                                "anchor": "check_in_luca_why_now",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Nevertheless, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "As of fall 2021: In light of rising incidences, and with an eye on the next few weeks and months when life will increasingly take place indoors, it is important to simplify and speed up the check-in process and add a QR code that can be read by both apps.",
+                                    "The process of integration took some time to meet the high data protection requirements of the CWA."
+                                ]
+                            },
+                            {
+                                "title": "Is the data of the users of the Corona-Warn-App still secure?",
+                                "anchor": "check_in_luca_safe",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Nevertheless, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "The data of CWA users has been and remains secure. Joint use only applies to the QR codes used for event registration and check-in. Corona-Warn-App and luca app continue to be different offerings with different objectives. Scanning a luca-QR-Code using the Corona-Warn-App does not cause any additional data to be collected.",
+                                    "The joint use of QR codes was carefully prepared. All security-related aspects were worked out and checked in close cooperation with both the BfDI and the BSI.",
+                                    "In addition, the Corona-Warn-App continues to operate in a very data-saving manner."
+                                ]
+                            },
+                            {
+                                "title": "What data is transferred from the CWA to luca?",
+                                "anchor": "check_in_luca_what",
+                                "active": false,
+                                "textblock": [
+                                    "No data is transferred from the Corona-Warn-App to the luca app."
+                                ]
+                            },
+                            {
+                                "title": "Do we now only need one app for event registration?",
+                                "anchor": "check_in_luca_one",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Updated 15 July, 2022</b>",
+                                    "Note: Since spring 2022, the event registration (check-in functionality) of the luca app is no longer possible for the time being. Nevertheless, luca QR codes can still be scanned with the Corona-Warn-App.<hr>",
+                                    "The Corona-Warn-App and luca are based on different approaches and have different goals.",
+                                    "The Corona-Warn-App enables a quick warning of people based on the peer-to-peer principle. This warning is done pseudonymously via the Corona-Warn-App itself.",
+                                    "The luca app, on the other hand, was mainly used to digitally collect contact data of the participants of an event. In the event of infection, the contact data of the person who tested positive for SARS-CoV-2 was transferred to the responsible health department. This department then contacts all persons who have scanned the same QR code.",
+                                    "In the respective state ordinances on infection protection, it is stipulated whether and how contact tracking must take place at events."
+                                ]
+                            },
+                            {
+                                "title": "Do users need to install both apps for it to work?",
+                                "anchor": "check_in_luca_both",
+                                "active": false,
+                                "textblock": [
+                                    "No, in order to scan QR codes from the luca app with the Corona-Warn-App, the luca app does not need to be installed."
                                 ]
                             }
                         ]
