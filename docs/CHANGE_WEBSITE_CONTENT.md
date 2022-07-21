@@ -35,4 +35,17 @@ This is a rather random list of things to keep in mind when altering content:
 * For every change, you probably have to change two data files (one for each language)
 * English is the "main" language, i.e., `{stuff}.json` should contain the English text, `{stuff}_de.json` the German text
 * JSON files use 4 space-character soft-tab indentation
-* Use a proper JSON formatter after making your changes (e.g. the format document option of VSCode) from time to time    
+* Use a proper JSON formatter after making your changes (e.g. the format document option of VSCode) from time to time
+
+## Links on FAQ pages
+
+The following conventions should be followed for links in the FAQ sources [/src/data/faq.json](https://github.com/corona-warn-app/cwa-website/blob/master/src/data/faq.json) and [/src/data/faq_de.json](https://github.com/corona-warn-app/cwa-website/blob/master/src/data/faq_de.json):
+
+- All internal and external links on the FAQ pages should use the HTML hyperlink attribute `target='_blank'` to open in a new frame. This provides a consistent user experience and works around an issue with the browser back arrow button in the FAQ Glossary.
+- External links should use the HTML hyperlink attribute `rel='noopener noreferrer'` to avoid a cross-domain security issue in older browsers when the link also contains `target='_blank'`.
+- Internal links should **not** contain the attribute `rel='noopener noreferrer'`. There is no security issue for internal links.
+
+Examples:
+
+- External link: `<a href='https://www.digitaler-impfnachweis-app.de/en/covpasscheck-app/' target='_blank' rel='noopener noreferrer'>Check EU COVID certificates directly via app</a>`
+- Internal link: `<a href='#test_cert' target='_blank'>Test Certificate</a>`
