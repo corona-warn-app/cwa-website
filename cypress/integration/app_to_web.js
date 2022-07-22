@@ -1,6 +1,5 @@
 /// <reference types="Cypress" />
 const { softAssert, softExpect } = chai;
-
 describe("Test cwa-webserver links used by Corona-Warn-App", () => {
 
     let languages = ["en", "de"];
@@ -11,25 +10,21 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
         {
             title: "[EN] Android external links",
             url: "https://raw.githubusercontent.com/corona-warn-app/cwa-app-android/main/Corona-Warn-App/src/main/res/values/links.xml",
-            removeMatches: 2,
             result: []
         },
         {
             title: "[DE] Android external links",
             url: "https://raw.githubusercontent.com/corona-warn-app/cwa-app-android/main/Corona-Warn-App/src/main/res/values-de/links.xml",
-            removeMatches: 2,
             result: []
         },
         {
             title: "[EN] iOS external links",
             url: "https://raw.githubusercontent.com/corona-warn-app/cwa-app-ios/main/src/xcode/ENA/ENA/Resources/Localization/en.lproj/Localizable.links.strings",
-            removeMatches: 0,
             result: []
         },
         {
             title: "[DE] iOS external links",
             url: "https://raw.githubusercontent.com/corona-warn-app/cwa-app-ios/main/src/xcode/ENA/ENA/Resources/Localization/de.lproj/Localizable.links.strings",
-            removeMatches: 0,
             result: []
         }
     ]
@@ -43,10 +38,8 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
             .then(response => response.text())
             .then(data => {
                 const regex = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
-                query.result = data.match(regex);
-                if(query.removeMatches > 0) {
-                    query.result = query.result.splice(query.removeMatches);
-                }
+                query.result = data.match(regex).filter(url => url.includes('www.coronawarn.app') && (url.includes('/faq/#') || url.includes('/faq/results/#')));
+                query.result = query.result.map(url => url.replace('www.coronawarn.app', '').replace('/faq/#', '/faq/results/#'))
             });
         })
     });
@@ -81,21 +74,6 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
         });
     });
 
-    it("Test Blog links", () => {
-        var blogUrl = "";
-        if (links.blogEntry.length > 0) {
-            languages.forEach(lang => {
-                links.blogEntry.forEach(blogItem => {
-                    blogUrl = "/" + lang + "/blog/" + blogItem;
-                    cy.visit(blogUrl);
-                    cy.url().should("include", blogUrl);
-                });
-            });
-        } else {
-            cy.log("No blog links to test");
-        }
-    });
-
     it("Test Accessibility links", () => {
         languages.forEach(lang => {
             cy.visit("/" + lang + "/accessibility/").then(() => {
@@ -118,35 +96,22 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
         fetchs.forEach(query => {
             it(query.title, () => {
                 if(query.result) {
-                    query.result.forEach(url => {
+                    query.result.map(url => {
                         const hash = url.match(hashRegex);
-                        // Check if the URL has a hash, if it has one, we need to check if an element with the hash as ID exists
-                        if(hash) {
-                            // Check if is a CWA URL, if not, we can't check if the element exists
-                            if(url.includes('coronawarn.app')) {
-                                url = url.replace('www.coronawarn.app', '')
-                                // Check if is a redirect, if it is, we avoid checking it cause has been checked before
-                                if(!links.faqRedirect.includes(hash.toString())) {
-                                    // Check if is an URL heading to the old FAQ page, if yes, redirect to the new one cause CWA site do it on visit
-                                    if(url.includes('/faq/')) {
-                                        url = url.replace('/faq/', '/faq/results/')
-                                    }
-                                    cy.visit({log: false, url: url} );
-                                    cy.get('body').then($body => {
-                                        const elementInBody = $body.find(`${hash}`).length > 0 ? true : false;
-                                        softExpect(elementInBody, "Link: " + url + " looking at: "+hash).to.eq(true)
-                                    })
-                                }
-                            }
-                        } else {
-                            cy.request({
-                                failOnStatusCode: false, 
-                                log: false,
-                                url: url
-                            }).then((response) => {
-                                softExpect(response.status == 200 || response.status == 429 ? true : false, "Link: " + url).to.eq(true)
-                            })
-                        }
+                        // Check if is a redirect, if it is, we avoid checking it cause has been checked before
+                        if(!links.faqRedirect.includes(hash.toString())) {
+                            cy.log(url)
+                            cy.visit(url). then(() => {
+                                cy.get('body')
+                                .then($body => {
+                                    const elementInBody = $body.find(`${hash}`).length > 0 ? true : false;
+                                    softExpect(elementInBody, "Link: " + url + " looking at: "+hash).to.eq(true)
+                                    cy.log("stuck inside then")
+                                })
+                            });
+                            
+                        } 
+                        cy.log("stuck after links")
                     });
                 }
             })
