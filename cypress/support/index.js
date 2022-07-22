@@ -62,7 +62,7 @@ chai.Assertion.prototype.assert = function (...args) {
 const origLog = Cypress.log;
 Cypress.log = function ( data ) {
     if ( data && data.error && /soft assertions/i.test(data.error.message) ) {
-        data.error.message = 'nnt' + data.error.message + 'nn';
+        data.error.message = '\n\n\t' + data.error.message + '\n\n';
         throw data.error;
     }
     return origLog.call(Cypress, ...arguments);

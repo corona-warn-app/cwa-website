@@ -44,6 +44,15 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
         })
     });
 
+    it("Test FAQ landing page", () => {
+        languages.forEach(lang => {
+            cy.visit("/" + lang + "/faq/").then(() => {
+                cy.get('a[href=results]').click();
+                cy.url().should('include', 'results');
+            });
+        });
+    });
+
     it("Test FAQ direct links", () => {
         languages.forEach(lang => {
             cy.visit("/" + lang + "/faq/results/").then(() => {
