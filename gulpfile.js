@@ -485,7 +485,7 @@ function build_sitemap() {
       siteUrl: "https://coronawarn.app",
       priority: function (siteUrl, loc, entry) {
         // Reduce priority by 0.2 per level
-        return 1.0 - (entry.file.split('/').length - 1) * 0.2
+        return (10 - (entry.file.split('/').length - 1) * 2) / 10
       }
     }))
     .pipe(gulp.dest(PATHS.dist))
