@@ -13,7 +13,7 @@ Die Corona-Warn-App (CWA) ist ein wichtiger Baustein zur Pandemiebekämpfung, in
 <!-- overview -->
 
 1. [Das Wichtigste in Kürze: Zahlen, Daten, Fakten](#1-das-wichtigste-in-kürze-zahlen-daten-fakten)
-2. [Die CWA erfüllt Ihren Zweck und ist wirksam](#2-die-cwa-erfüllt-ihren-zweck-und-ist-wirksam)
+2. [Die CWA erfüllt ihren Zweck und ist wirksam](#2-die-cwa-erfüllt-ihren-zweck-und-ist-wirksam)
     1. [Zweck 1 – Abruf des Testergebnisses](#21-zweck-1--abruf-des-testergebnisses)
     2. [Zweck 2 – Warnung Anderer](#22-zweck-2--warnung-anderer)
     3. [Zweck 3 – Risikoermittlung](#23-zweck-3--risikoermittlung)
