@@ -8,6 +8,15 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
         cy.fixture('appToWebLinks').then(webLinks => links = webLinks);
     });
 
+    it("Test FAQ landing page", () => {
+        languages.forEach(lang => {
+            cy.visit("/" + lang + "/faq/").then(() => {
+                cy.get('a[href=results]').click();
+                cy.url().should('include', 'results');
+            });
+        });
+    });
+
     it("Test FAQ direct links", () => {
         languages.forEach(lang => {
             cy.visit("/" + lang + "/faq/results/").then(() => {
@@ -36,6 +45,21 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
                 cy.testFaqRedirect(lang, redirectFAQs[i], redirectFAQs[i + 1]);
             }
         });
+    });
+
+    it("Test Blog links", () => {
+        var blogUrl = "";
+        if (links.blogEntry.length > 0) {
+            languages.forEach(lang => {
+                links.blogEntry.forEach(blogItem => {
+                    blogUrl = "/" + lang + "/blog/" + blogItem;
+                    cy.visit(blogUrl);
+                    cy.url().should("include", blogUrl);
+                });
+            });
+        } else {
+            cy.log("No blog links to test");
+        }
     });
 
     it("Test Accessibility links", () => {
