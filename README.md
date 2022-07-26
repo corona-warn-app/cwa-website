@@ -103,7 +103,7 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 | eventRegistration.js  |✓                                         | Checks that all fields in event-registration exist and fill them to create a QR code |
 | faq.js                |✓                                         | Simulate a FAQ search and the result for mobile and desktop view                     |
 | hotline_spec.js       |✓                                         | Verify that Hotline APP and TAN data is correcly displayed at home page              |
-| mime.js               |✓                                         | Check that CSS and JS files have the correct myme                                    |
+| mime.js               |✓                                         | Check that CSS and JS files have the correct mime                                    |
 
 To run all test included in Cypress Test Production execute:
 `npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headed` => test results are printed in console, also you can see browser's movements
