@@ -95,7 +95,7 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 |                       | Included in Cypress Test Production?     |  What is it used for?                                                                |
 |-----------------------|-|-------------------------------------------------------------------------------------------------------------------------------|
 | check_links.js        |✘ (takes a long time to finish running)   | Detect broken links throughout the website. Result is saved in `logs` folder         |
-| app_to_web.js         |✓                                         | Detect broken links throughout the website comming from cwa-webserver                |
+| app_to_web.js         |✓                                         | Detect broken links throughout the website coming from cwa-webserver                |
 | applink_spec.js       |✓                                         | Detect broken links or missing OS badges to download mobile app in home page         |
 | blog_spec.js          |✓                                         | Check if blog archive is accesible                                                   |
 | check_anchor_links.js |✓                                         | Detect broken anchor links throughout the website. Result is saved in `logs` folder  |
