@@ -94,16 +94,16 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 
 |                       | Included in Cypress Test Production?     |  What is it used for?                                                                |
 |-----------------------|-|-------------------------------------------------------------------------------------------------------------------------------|
-| check_links.js        |✘ (takes a long time to finish running)   | Detect broken links throughout the website. Result is saved in `logs` folder         |
-| app_to_web.js         |✓                                         | Detect broken links throughout the website coming from cwa-webserver                |
-| applink_spec.js       |✓                                         | Detect broken links or missing OS badges to download mobile app in home page         |
-| blog_spec.js          |✓                                         | Check if blog archive is accessible                                                   |
-| check_anchor_links.js |✓                                         | Detect broken anchor links throughout the website. Result is saved in `logs` folder  |
-| check_videos.js       |✓                                         | Detect broken videos throughout the website                                          |
-| eventRegistration.js  |✓                                         | Checks that all fields in event-registration exist and fill them to create a QR code |
-| faq.js                |✓                                         | Simulate a FAQ search and the result for mobile and desktop view                     |
-| hotline_spec.js       |✓                                         | Verify that Hotline APP and TAN data is correcly displayed at home page              |
-| mime.js               |✓                                         | Check that CSS and JS files have the correct mime                                    |
+| check_links.js        |✘                                         | Detect broken links throughout the website. Result is saved in `logs` folder.        |
+| app_to_web.js         |✓                                         | Check that all links to the website used by the Android and iOS apps are working and that content is correctly displayed.                |
+| applink_spec.js       |✓                                         | Detect broken links or missing OS badges to download mobile app in home page.         |
+| blog_spec.js          |✓                                         | Check if blog archive is accessible.                                                  |
+| check_anchor_links.js |✓                                         | Detect broken anchor links throughout the website. Result is saved in `logs` folder.  |
+| check_videos.js       |✓                                         | Detect broken videos throughout the website.                                          |
+| eventRegistration.js  |✓                                         | Checks that all fields in event-registration exist and fill them to create a QR code. |
+| faq.js                |✓                                         | Simulate a FAQ search and the result for mobile and desktop view.                     |
+| hotline_spec.js       |✓                                         | Verify that Hotline APP and TAN data is correcly displayed at home page.              |
+| mime.js               |✓                                         | Check that CSS and JS files have the correct MIME type. See https://developer.mozilla.org/en-US/docs/Glossary/MIME_type                      |
 
 To run all tests included in Cypress Test Production execute:
 
