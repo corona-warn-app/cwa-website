@@ -97,7 +97,7 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 | check_links.js        |✘ (takes a long time to finish running)   | Detect broken links throughout the website. Result is saved in `logs` folder         |
 | app_to_web.js         |✓                                         | Detect broken links throughout the website coming from cwa-webserver                |
 | applink_spec.js       |✓                                         | Detect broken links or missing OS badges to download mobile app in home page         |
-| blog_spec.js          |✓                                         | Check if blog archive is accesible                                                   |
+| blog_spec.js          |✓                                         | Check if blog archive is accessible                                                   |
 | check_anchor_links.js |✓                                         | Detect broken anchor links throughout the website. Result is saved in `logs` folder  |
 | check_videos.js       |✓                                         | Detect broken videos throughout the website                                          |
 | eventRegistration.js  |✓                                         | Checks that all fields in event-registration exist and fill them to create a QR code |
