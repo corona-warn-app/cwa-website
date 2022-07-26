@@ -107,7 +107,7 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 
 To run all test included in Cypress Test Production execute:
 `npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headed` => test results are printed in console, also you can see browser's movements
-`npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headless --browser chrome` => test results are printed in console, you can`t see browser's movements
+`npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headless --browser chrome` => test results are printed in console, you can't see browser's movements
 ### Updating coronawarn.app
 
 Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
