@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-Das Projektteam aus Robert Koch-Institut (RKI), Deutscher Telekom und SAP hat **Version 2.25 der Corona-Warn-App (CWA) veröffentlicht**. In der neuen Version hat das Team die **Verhaltensempfehlungen bei Risiko-Begegnungen** (rote sowie grüne Kachel) entsprechend den [Empfehlungen des RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Quarantaene/Absonderung.html;jsessionid=EE3180A1446820CBF8BFC7BC793F763A.internet062?nn=13490888) aktualisiert. Das betrifft unter anderem Empfehlungen zur Kontaktbeschränkung und zum Tragen von Masken. Außerdem hat das Projektteam kleine Verbesserungen und Anpassungen vorgenommen.
+Das Projektteam aus Robert Koch-Institut (RKI), Deutscher Telekom und SAP hat **Version 2.25 der Corona-Warn-App (CWA) veröffentlicht**. In der neuen Version hat das Team die **Verhaltensempfehlungen bei Risiko-Begegnungen** (rote sowie grüne Kachel) entsprechend den [Empfehlungen des RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Quarantaene/Absonderung.html) aktualisiert. Das betrifft unter anderem Empfehlungen zur Kontaktbeschränkung und zum Tragen von Masken. Außerdem hat das Projektteam kleine Verbesserungen und Anpassungen vorgenommen.
 
 In der aktuellen pandemischen Lage ist es nach wie vor sinnvoll und wichtig, die CWA und ihre Funktionen zu nutzen, insbesondere, um andere Nutzer\*innen zu warnen. 
 
