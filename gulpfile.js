@@ -485,7 +485,7 @@ function build_sitemap() {
       siteUrl: "https://coronawarn.app",
       priority: function (siteUrl, loc, entry) {
         // Reduce priority by 0.2 per level
-        return 1.0 - (entry.file.split('/').length - 1) * 0.2
+        return (10 - (entry.file.split('/').length - 1) * 2) / 10
       }
     }))
     .pipe(gulp.dest(PATHS.dist))
@@ -510,7 +510,7 @@ function createFaqRedirects() {
 function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + "/**/*.html", PATHS.dist + "/**/*.json"])
-    .pipe(replace('[ios.latest-os-version]', '15.5'))
+    .pipe(replace('[ios.latest-os-version]', '15.6'))
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
     .pipe(replace('[ios.current-app-version]', '2.25.0'))
     .pipe(replace('[android.latest-os-version]', '12'))
