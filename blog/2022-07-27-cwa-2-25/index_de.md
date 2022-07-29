@@ -14,19 +14,12 @@ In der aktuellen pandemischen Lage ist es nach wie vor sinnvoll und wichtig, die
 
 <!-- overview -->
 
-
 <br></br>
-<center> 
-<img src="./gruene-kachel-vorher.png" title="Handlungsempfehlungen bei grüner Kachel zuvor" style="align: center" width=250> <img src="./gruene-kachel-nachher.png" title="Handlungsempfehlungen bei grüner Kachel ab Version 2.25" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Links: Handlungsempfehlungen bei grüner Kachel zuvor, rechts: Handlungsempfehlungen bei grüner Kachel ab Version 2.25</em></figcaption>
-</center>
+<div class='container'><div class='row'><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/gruene-kachel-vorher.png' alt='Handlungsempfehlungen bei grüner Kachel zuvor' width=250><p><em>Handlungsempfehlungen bei grüner Kachel zuvor</em></p></center></div><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/gruene-kachel-nachher.png' alt='Handlungsempfehlungen bei grüner Kachel ab Version 2.25' width=250><p><em>Handlungsempfehlungen bei grüner Kachel ab Version 2.25</em></p></center></div></div></div>
 <br></br>
 
 <br></br>
-<center> 
-<img src="./rote-kachel-vorher.png" title="Handlungsempfehlungen bei roter Kachel zuvor" style="align: center" width=250> <img src="./rote-kachel-nachher.png" title="Handlungsempfehlungen bei roter Kachel ab Version 2.25" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Links: Handlungsempfehlungen bei roter Kachel zuvor, rechts: Handlungsempfehlungen bei roter Kachel ab Version 2.25</em></figcaption>
-</center>
+<div class='container'><div class='row'><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/rote-kachel-vorher.png' alt='Handlungsempfehlungen bei roter Kachel zuvor' width=250><p><em>Handlungsempfehlungen bei roter Kachel zuvor</em></p></center></div><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/rote-kachel-nachher.png' alt='Handlungsempfehlungen bei roter Kachel ab Version 2.25' width=250><p><em>Handlungsempfehlungen bei roter Kachel ab Version 2.25</em></p></center></div></div></div>
 <br></br>
 
 Version 2.25 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.
