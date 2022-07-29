@@ -74,7 +74,7 @@ Diese Zahl gibt an, wie viele bestätigte Infektionen dem RKI insgesamt, d.&nbsp
 
 **Warnende Personen**
 
-Dieser Wert beschreibt die Anzahl der Personen in ganz Deutschland (oder auch außerhalb), die über die Corona-Warn-App ihr positives Testergebnis eines PCR-Tests geteilt haben, um damit andere Anwender bzgl. einer potentiellen Infektion zu warnen, entweder direkt nach Anzeige des positiven Testergebnisses in der App oder mit einer sogenannten teleTAN, die von der dafür eingerichteten Verification-Hotline ausgegeben wurde. [1]
+Dieser Wert beschreibt die Anzahl der Personen in ganz Deutschland (oder auch außerhalb), die über die Corona-Warn-App ihr positives Testergebnis eines PCR-Tests geteilt haben, um damit andere Anwender bzgl. einer potentiellen Infektion zu warnen, entweder direkt nach Anzeige des positiven Testergebnisses in der App oder mit einer sogenannten teleTAN, die von der dafür eingerichteten Verification-Hotline ausgegeben wurde.
 
 Auf dieser Kachel finden Sie 3 Kennzahlen:
 
@@ -97,10 +97,6 @@ Diese Zahl gibt an, wie viele positive PCR-Testergebnisse bisher insgesamt, d.&n
 **Kommentare:**
 
 - Die Anzahl der warnenden Personen als Summe über ganz Deutschland ist ein absoluter Wert, der am Ende eines Tages in der CWA-Infrastruktur ermittelt wird.
-
-**Referenzen:**
-
-[[1] RKI - WarnApp key numbers](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Archiv_Kennzahlen/WarnApp_KennzahlenTab.html)
 
 ## Kachel "7-Tage-Inzidenz"
 
