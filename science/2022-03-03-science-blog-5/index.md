@@ -28,7 +28,7 @@ The Corona-Warn-App (CWA) is a key component for fighting the pandemic in that i
 6. [Key figures relating to the use from the stores](#6-key-figures-relating-to-the-use-from-the-stores)
     1. [Google Play Store](#61-google-play-store)
     2. [Apple App Store](#62-apple-app-store)
-7. [Comparison of the information relating to active users](#7-comparasion-of.the-information-relating-to-active-users)
+7. [Comparison of the information relating to active users](#7-comparison-of-the-information-relating-to-active-users)
 8. [Conclusion](#8-conclusion)
 9. [What comes next](#9-what-comes-next)
 
