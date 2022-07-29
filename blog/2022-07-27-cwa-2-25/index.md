@@ -14,19 +14,12 @@ Given the current pandemic situation, it is still useful and important to use th
 <!-- overview -->
 
 <br></br>
-<center> 
-<img src="./green-tile-before.png" title="Guidelines in case of low risk (green tile) before" style="align: center" width=250> <img src="./green-tile-after.png" title="Guidelines in case of low risk (green tile) as of version 2.25" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Left: Guidelines in case of a low risk (green tile) before, right: Guidelines in case of a low risk (green tile) as of version 2.25</em></figcaption>
-</center>
+<div class='container'><div class='row'><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/green-tile-before.png' alt='Guidelines in case of low risk (green tile) before' width=250><p><em>Guidelines in case of low risk (green tile) before</em></p></center></div><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/green-tile-after.png' alt='Guidelines in case of low risk (green tile) as of version 2.25' width=250><p><em>Guidelines in case of low risk (green tile) as of version 2.25</em></p></center></div></div></div>
 <br></br>
 
 <br></br>
-<center> 
-<img src="./red-tile-before.png" title="Guidelines in case of an increased risk (red tile) before" style="align: center" width=250> <img src="./red-tile-after.png" title="Guidelines in case of an increased risk (red tile) as of version 2.25" style="align: center" width=250> 
-<figcaption aria-hidden="true"><em>Left: Guidelines in case of an increased risk (red tile) before, right: Guidelines in case of an increased risk (red tile) as of version 2.25</em></figcaption>
-</center>
+<div class='container'><div class='row'><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/red-tile-before.png' alt='Guidelines in case of an increased risk (red tile) before' width=250><p><em>Guidelines in case of an increased risk (red tile) before</em></p></center></div><div class='col-sm'><center><img class='img-fluid' src='/assets/img/blog/2022-07-27-cwa-2-25/red-tile-after.png' alt='Guidelines in case of an increased risk (red tile) as of version 2.25' width=250><p><em>Guidelines in case of an increased risk (red tile) as of version 2.25</em></p></center></div></div></div>
 <br></br>
-
 
 Version 2.25, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona-Warn-App will be available to users here within the next 48 hours.
 
