@@ -74,7 +74,7 @@ This number indicates the total number of confirmed infections registered with t
 
 **Warnings by App Users**
 
-This metric describes the number of App users across Germany (or anywhere else) who have shared their positive test score through the Corona-Warn-App to warn other users about a potential infection, either directly in the app after they received the positive test result or with a teleTAN issued by the verification hotline. [1]
+This metric describes the number of App users across Germany (or anywhere else) who have shared their positive test score through the Corona-Warn-App to warn other users about a potential infection, either directly in the app after they received the positive test result or with a teleTAN issued by the verification hotline.
 
 This tile presents three metrics:
 
@@ -97,10 +97,6 @@ This number indicates how many positive test scores have been shared by users so
 **Comments:**
 
 - The number of new infections as a nationwide sum across Germany is an absolute value, determined at the end of a day in the Corona-Warn-App backend infrastructure.
-
-**References:**
-
-[[1] RKI - WarnApp Kennzahlen](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/WarnApp/Archiv_Kennzahlen/WarnApp_KennzahlenTab.html)
 
 ## Tile "7-Day Incidence"
 
