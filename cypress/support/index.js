@@ -17,7 +17,7 @@ Cypress.Commands.add('testFaqRedirect', (lang, from, to) => {
     .then(() => {
       cy.visit("/" + lang + "/faq/results/" + from)
         .then(() => {
-          cy.url().should('contain', to);
+          cy.hash().should('eq', to);
         });
     });
 });

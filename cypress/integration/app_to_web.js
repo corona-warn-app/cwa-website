@@ -79,4 +79,10 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
             });
         });
     });
+
+    it("Test document assets", () => {
+        links.documentAssets.forEach(document => {
+            cy.request("/assets/documents/" + document);
+        });
+    });
 });
