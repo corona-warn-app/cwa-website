@@ -825,7 +825,7 @@
                                     "Fall 1: Die Grundimmunisierung erfolgt mit dem Impfstoff von Johnson & Johnson (J&J).",
                                     "Fall 2: Nach einer Genesung von COVID-19 erfolgt eine zweite Auffrischimpfung",
                                     "Fall 3: Nach einer Genesung von COVID-19 erfolgt eine erste Impfung mit J&J.",
-                                    "Die Ursache liegt in der Limitierung der aktuellen EU Richtlinien zur Erstellung der verschiedenen Impfzertifikate/-reihenfolge, die durch die Apps entsprechend abgebildet wird. Siehe: <a href='https://ec.europa.eu/health/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf' target='_blank' rel='noopener noreferrer'>https://ec.europa.eu/health/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf</a> (auf Englisch)",
+                                    "Die Ursache liegt in der Limitierung der aktuellen EU Richtlinien zur Erstellung der verschiedenen Impfzertifikate/-reihenfolge, die durch die Apps entsprechend abgebildet wird. Siehe: <a href='https://health.ec.europa.eu/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf' target='_blank' rel='noopener noreferrer'>https://health.ec.europa.eu/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf</a> (auf Englisch)",
                                     "Begründung:",
                                     "Zu Fall 1 und Fall 2:",
                                     "Bei der Grundimmunisierung mit anderen Impfstoffen als J&J, also BioNTech, Moderna, oder AstraZeneca, wird im Zertifikat unter „Nummer der Impfung“ der Eintrag „2 von 2“ für die zweite Dosis vorgenommen. Da, unabhängig vom verwendeten Impfstoff, der volle Impfschutz aber erst nach der Ausbildung einer ausreichenden Menge von Antikörpern gegeben ist, wird nach dem letzten Impfvorgang der Grundimmunisierung immer eine Wartezeit von 14 Tagen gefordert.",
@@ -1286,6 +1286,22 @@
                         "indexed": true,
                         "accordion": [
                             {
+                                "title": "TAN-Verfahren",
+                                "anchor": "tan_procedure",
+                                "active": false,
+                                "textblock": [
+                                    "<div class='container'><div class='row'><div class='col-sm'><p><b>Zweck</b></p><p>Wenn Sie auf das SARS-CoV-2-Virus getestet werden und das Ergebnis digital in der Corona-Warn-App (CWA) empfangen haben, können Sie bei einem positiven Befund in der CWA andere Nutzer*innen warnen und so helfen, ggf. Kontaktketten frühzeitig zu unterbrechen.</p><p>Wird nach dem Einscannen des QR-Codes vom Formular 10C/OEGD (oder ein äquivalentes Formular) das Ergebnis nicht in die CWA übertragen, oder Sie haben keinen für die Corona-Warn-App kompatiblen QR-Code erhalten, können Sie den positiven Befund trotzdem in der App registrieren und damit andere warnen, sofern Sie eine TAN von der Verifikations-Hotline empfangen.</p></div><div class='col-sm'><a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank'><img src='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.jpg' alt='Positives Testergebnis teilen Anleitung PDF'></a></div></div></div>",
+                                    "<b>Ablauf</b>",
+                                    "<ul><li>Sie erreichen die Hotline ausschließlich telefonisch.\nRufnummer: 0800 7540002 (in Deutschland) bzw. +49 30 498 75402 (international).\nWann Sie die Hotline erreichen, prüfen Sie bitte hier:\n<a href='#international_phone_numbers' target='_blank'>FAQ: So erreichen Sie uns</a>.</li><li>Schritt 1: Beantworten Sie die Fragen des Hotline-Mitarbeiters.</li><li>Schritt 2: Sie erhalten einen Rückruf von diesem Mitarbeiter, um Ihnen die TAN mitzuteilen. Diese TAN ist eine Stunde lang gültig.</li><li>Schritt 3: Entfernen Sie, falls registriert, den Test ohne Ergebnis aus der Corona-Warn-App.</li><li>Schritt 4: Unter Status der CWA wählen Sie die Schaltfläche „Weiter“ in der Funktion „Sie lassen sich testen?“.\nUnter der Frage „Ihr PCR-Test war positiv?“ finden Sie die Funktion „TAN für PCR-Test eingeben“, wählen Sie diese Funktion und geben Sie die 10-stellige TAN ein, die Ihnen mitgeteilt wurde.</li><li>Ihr positives Testergebnis ist nun in der App registriert. Nun können Sie über die App andere warnen.</li></ul>",
+                                    "<b>Voraussetzungen und Bedingungen</b>",
+                                    "<ul><li>Um sinnvoll Begegnungen durch Contact Tracing aufzuzeichnen und diese Kontakte warnen zu können, muss die Corona-Warn-App mindestens eine Zeitlang auf dem Smartphone installiert sein; die TAN-Hotline wird diesen Zeitraum verifizieren.</li><li>Es handelt sich um einen PCR-Test, bei dem die Analyse in einem akkreditierten Labor stattfand (siehe auch Limitierungen).</li><li>Sie haben einen Laborbefund vorliegen, der die nötigen Details zur Verifikation des Labors enthält.</li></ul>",
+                                    "<b>Limitierungen</b>",
+                                    "<ul><li>Eine TAN wird ausschließlich für positive Testbefunde vergeben. Mit negativen Ergebnissen kann nicht gewarnt werden, daher gibt es keine TAN.</li><li>Jeder Anrufer erhält maximal genau eine TAN. Der Prozess in der TAN-Hotline sieht nicht vor, in einem Anruf mehrere TANs (z.&nbsp;B. für Familienmitglieder, die im selben Labor getestet wurden) auszugeben. Jede getestete Person muss selbst anrufen und den Verifikations-Prozess durchlaufen.</li><li>Eine TAN wird ausschließlich für PCR-Tests vergeben, die in einem Labor untersucht wurden. Für positive Ergebnisse aus Schnelltests ohne Ergebnis in der CWA, Selbsttests, oder PCR-Tests ohne Befund aus einem Labor wird von der Hotline keine TAN ausgegeben. Dabei ist es unerheblich, ob das lokal genutzte PCR-Testverfahren durch die Gesundheitsbehörde anerkannt wird oder nicht.</li><li>Eine TAN kann nicht „stellvertretend“ für eine andere Person beantragt werden. Jede getestete Person muss selbst anrufen und den Verifikations-Prozess durchlaufen.</li></ul>",
+                                    "<b>Weitere Informationen</b>",
+                                    "<ul><li><a href='#glossary_tan' target='_blank'>Glossar: TAN</a></li><li><a href='#test_multiple_devices' target='_blank'>FAQ: Wie teile ich ein positives Testergebnis auf mehreren Geräten?</a></li><li><a href='#test_in_other_country' target='_blank'>FAQ: Kann ich positive Testergebnisse aus anderen Ländern eingeben?</a></li><li><a href='#pos_test_no_risk_encounter' target='_blank'>FAQ: Ich wurde positiv getestet. Warum erhält eine Person im gleichen Haushalt keine Risikowarnung?</a></li><li><a href='#QRcodes' target='_blank'>FAQ: Was mache ich, wenn ich mehrere PCR-Test-QR-Codes habe?</a></li><a href='#qr_test' target='_blank'>FAQ: Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a></li></ul>"
+                                ]
+                            },
+                            {
                                 "duplicate": "rat_what_if_positive_result"
                             },
                             {
@@ -1367,10 +1383,10 @@
                                 "active": false,
                                 "textblock": [
                                     "Mit Version 2.2 bietet die Corona-Warn-App (CWA) eine Funktion zur technischen Problem-Analyse. Fehlerberichte sollen den Entwicklern helfen, schneller eine Ursachen-Analyse zu erstellen und Fehler effizienter zu beseitigen.<br><b>Wichtig:</b> Melden Sie sich mit einem Problem bitte <b>zuerst</b> bei dem technischen Support, entweder per Telefon (<a href='#international_phone_numbers' target='_blank'>klicken Sie hier um zu den Telefonnummern zu gelangen</a>) oder per E-Mail (<a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>), um zu prüfen, ob es ggf. schon eine Lösung für das Problem gibt. Ein Fehlerbericht wird nur benötigt, wenn der technische Support danach fragt.",
-                                    "Am besten teilen Sie die ID dort mit wo sie erfragt wurde. Sie können die ID dem technischen Support auch über folgende Wege mitteilen:",
+                                    "Am besten teilen Sie die ID dort mit, wo sie erfragt wurde. Sie können die ID dem technischen Support auch über folgende Wege mitteilen:",
                                     "<ul><li>Öffnen Sie einen Issue auf GitHub (<a href='https://github.com/corona-warn-app/cwa-app-android/issues/new/choose' target='_blank' rel='noopener noreferrer'>Android</a> oder <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/new/choose' target='_blank' rel='noopener noreferrer'>iOS</a>) und nennen die ID Ihres Fehlerberichts </li><li> Teilen Sie die ID dem technischen Support mit </li><li> Schreiben Sie eine Bewertung zur Corona-Warn-App im Apple App Store bzw. Google Play Store und nennen die ID Ihres Fehlerberichts</ul></li>",
                                     "Unabhängig davon, welche Kontaktmöglichkeit Sie wählen, helfen Ihnen die folgenden Tipps, Ihr Problem so schnell wie möglich zu lösen:",
-                                    "<ol><li>Beschreiben Sie das Problem so genau wie möglich</li><li>Starten Sie die Fehleranalyse in der CWA (<a href='../../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank'>siehe Blog-Post</a>)<ul><li>Versuchen Sie das fehlerhafte Verhalten zu reproduzieren bzw. die Fehlermeldung zu erzeugen</li><li>Ist das gelungen, senden Sie den Fehlerbericht an den CWA-Server. Die Daten werden dabei anonymisiert und verschlüsselt</li><li>Sie finden die ID ihres Fehlerberichts dann auf dem 'Fehlerberichte' Bildschirm, scrollen Sie hinunter und klicken Sie auf 'ID-Historie'</li></ul></li><li>Stoppen Sie die Fehleranalyse</li><li>Teilen Sie die ID dem technischen Support mit</li></ol>",
+                                    "<ol><li>Beschreiben Sie das Problem so genau wie möglich</li><li>Starten Sie die Fehleranalyse in der CWA (<a href='../../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank'>siehe Blog-Post</a>)<ul><li>Versuchen Sie das fehlerhafte Verhalten zu reproduzieren bzw. die Fehlermeldung zu erzeugen</li><li>Ist das gelungen, senden Sie den Fehlerbericht an den CWA-Server. Die Daten werden dabei anonymisiert und verschlüsselt</li><li>Sie finden die ID Ihres Fehlerberichts dann auf dem 'Fehlerberichte' Bildschirm, scrollen Sie hinunter und klicken Sie auf 'ID-Historie'</li></ul></li><li>Stoppen Sie die Fehleranalyse</li><li>Teilen Sie die ID dem technischen Support mit</li></ol>",
                                     "Hinweise:<ul><li>Die Fehlerberichte werden nach 14 Tagen automatisch gelöscht</li><li>Berichte, die unaufgefordert an den Server übertragen werden, können durch die Entwickler nicht analysiert werden</li><li>Für die Fehlerberichte gibt es keinen direkten Rückkanal in der Corona-Warn-App. Der technische Support kann nur über einen der oben genannten Wege mit Ihnen kommunizieren</li></ul>",
                                     "Weitere Infos sowie Screenshots finden Sie im Blog-Artikel <a href='../../blog/2021-05-12-corona-warn-app-version-2-2/' target='_blank'>Corona-Warn-App Version 2.2 ermöglicht die Erstellung von Schnelltest-Profil und Fehlerbericht</a>."
                                 ]
@@ -3130,9 +3146,44 @@
                     "description": "Liste der empfangenen und vorübergehend im Betriebssystemspeicher abgelegten kurzlebigen zufälligen Bluetooth-IDs. Die Begegnungs-Aufzeichnung wird im Rahmen der Risiko-Ermittlung bei der Risiko-Überprüfung gelesen. Alle kurzlebigen zufälligen Bluetooth-IDs, die älter als 14 Tage sind, werden automatisch gelöscht. Die Begegnungs-Aufzeichnung kann von Personen, die die App nutzen, jederzeit auch als Ganzes gelöscht werden. Bei der Deinstallation der CWA wird die Begegnungs-Aufzeichnung automatisch gelöscht."
                 },
                 {
+                    "term": "Behindertengleichstellungsgesetz (BGG)",
+                    "anchor": "bgg",
+                    "description": "Das Behindertengleichstellungsgesetz (BGG) soll eine Benachteiligung von Menschen mit Behinderungen beseitigen bzw. verhindern sowie die gleichberechtigte Teilhabe von Menschen mit Behinderungen am Leben in der Gesellschaft gewährleisten und ihnen eine selbstbestimmte Lebensführung ermöglichen."
+                },
+                {
                     "term": "Bluetooth-Low-Energy-Technologie (BLE)",
                     "anchor": "ble",
                     "description": "Die Bluetooth-Low-Energy-Technologie (BLE-Technologie) ist eine Funktechnik, mit der sich Geräte in einer Umgebung von etwa 10 Metern vernetzen lassen. Die Corona-Warn-App nutzt für die Risiko-Ermittlung diesen Standard. Im Vergleich zum klassischen Bluetooth hat BLE einen besonders geringen Einfluss auf die Akkuleistung."
+                },
+                {
+                    "term": "Bundesamt für Sicherheit und Informationstechnik (BSI)",
+                    "anchor": "bsi",
+                    "description": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI) ist eine deutsche Bundesoberbehörde im Geschäftsbereich des Bundesministeriums des Innern, für Bau und Heimat mit Sitz in Bonn, die für Fragen der IT-Sicherheit zuständig ist."
+                },
+                {
+                    "term": "Bundesbeauftragte für Datenschutz und Informationsfreiheit (BfDI)",
+                    "anchor": "bfdi",
+                    "description": "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) ist eine unabhängige eigenständige oberste Bundesbehörde für den Datenschutz und die Informationsfreiheit. Ihr Sitz ist Bonn im Ortsteil Castell."
+                },
+                {
+                    "term": "Bundesministerium für Gesundheit (BMG)",
+                    "anchor": "bmg",
+                    "description": "Das Bundesministerium für Gesundheit ist eine oberste Bundesbehörde der Bundesrepublik Deutschland. Es hat seinen Hauptsitz bzw. ersten Dienstsitz in der Bundesstadt Bonn und seinen zweiten Dienstsitz in Berlin."
+                },
+                {
+                    "term": "Bundespresseamt (BPA)",
+                    "anchor": "bpa",
+                    "description": "Das Presse- und Informationsamt der Bundesregierung, kurz Bundespresseamt (BPA), informiert Bürger und Medien im Inland über die Arbeit der deutschen Bundesregierung und unterrichtet letztere über die Nachrichtenlage in Deutschland und weltweit."
+                },
+                {
+                    "term": "Bundespressekonferenz (BPK)",
+                    "anchor": "bpk",
+                    "description": "Die Bundespressekonferenz e.V. (BPK) ist ein als Verein organisierter Zusammenschluss hauptberuflicher Journalisten, die ausschließlich für deutsche Medien und ständig oder überwiegend aus Berlin und Bonn berichten. Nach dem Vorbild von Journalisten der Weimarer Republik ist ihr Ziel, Vertreter der Bundesregierung, der Parteien und Verbände oder einzelne Personen von bundesweiter politischer Bedeutung zu Pressekonferenzen einzuladen und zu befragen."
+                },
+                {
+                    "term": "Bundeszentrale für gesundheitliche Aufklärung (BZgA)",
+                    "anchor": "bzga",
+                    "description": "Die Bundeszentrale für gesundheitliche Aufklärung (BZgA) ist eine deutsche Bundesoberbehörde im Geschäftsbereich des Bundesministeriums für Gesundheit. Die BZgA hat die Aufgabe, die Bereitschaft der Bürger zu fördern, sich verantwortungsbewusst und gesundheitsgerecht zu verhalten und das Gesundheitssystem sachgerecht zu nutzen. Die Schwerpunkte der BZgA sind Aidsprävention, Sexualaufklärung, Suchtprävention bei legalen und illegalen Drogen, Kinder- und Jugendgesundheit, gesunde Ernährung und Organspende."
                 },
                 {
                     "term": "Business Rules",
@@ -3179,6 +3230,11 @@
             ],
             "D": [
                 {
+                    "term": "Datenschutz-Grundverordnung (DSGVO)",
+                    "anchor": "gdpr",
+                    "description": "Die Datenschutz-Grundverordnung (DSGVO), im Englischen \"General Data Protection Regulation (GDPR)\", ist eine Verordnung der Europäischen Union, mit der die Regeln zur Verarbeitung personenbezogener Daten durch die meisten Verantwortlichen, sowohl private wie öffentliche, EU-weit vereinheitlicht werden."
+                },
+                {
                     "term": "Datenspende",
                     "anchor": "data_donation",
                     "description": "Eine freiwillige und anonyme Möglichkeit dem RKI Daten über die Nutzung der CWA zukommen zu lassen. Die freiwillige Datenspende kann den Expert*innen helfen, die Wirksamkeit der App zu bewerten und sie weiter zu verbessern. Weitere Informationen sind hier zusammengefasst: <a href='../../blog/2021-03-04-corona-warn-app-version-1-13/' target='_blank'>Science Blog: Corona-Warn-App nun mit Datenspende und Link zu wissenschaftlicher Befragung</a>"
@@ -3210,6 +3266,11 @@
                 }
             ],
             "E": [
+                {
+                    "term": "Ereignisgesteuerte Nutzerbefragung (EDUS)",
+                    "anchor": "edus",
+                    "description": "Ereignisgesteuerte Umfragen werden auch als ereignisgesteuerte Umfragen bezeichnet, da sie in der Regel nach einem bestimmten Transaktionsereignis an die Kunden gerichtet werden. Dies macht ereignisgesteuerte Umfragen besonders nützlich, um die Auswirkungen bestimmter betrieblicher Prozesse oder Interaktionen auf die Kundenzufriedenheit zu messen."
+                },
                 {
                     "term": "EU DCC",
                     "anchor": "eu_dcc",
@@ -3270,6 +3331,13 @@
                     "description": "<p>Wir unterscheiden grundsätzlich</p><ul><li>die Gültigkeit des digitalen Zertifikats (die technische Gültigkeit) und</li><li>die Gültigkeit des Impfschutzes (die fachliche Gültigkeit).</li></ul><p>Das digitale Zertifikat hat ein Ausstellungsdatum und ein technisches Ablaufdatum (so wie auch Ihr Reisepass und PA). Die Gültigkeit des Zertifikats endet 1 Jahr nach Ausstellung. Seit Version 2.23 kann man das aktuell verwendete <a href='#glossary_dcc' target='_blank'>DCC</a> in der App neu ausstellen lassen.</p><p><b> Impfzertifikat </b></p><p>In dem Zertifikat werden Daten transportiert, in diesem Falle Informationen zur Impfung. Diese Impfung fand an einem Datum X statt und gilt ab dann (nach aktuellem Stand der wissenschaftlichen Erkenntnisse) z.&nbsp;B. in Deutschland 1 Jahr. Danach ist der Impfschutz erloschen. Die Dauer des Impfschutzes bezeichnen wir als 'fachliche' Gültigkeit. Die fachliche Gültigkeit der Impfung zählt also ab dem letzten Impfdatum (Datum X).</p><p><b>Genesenenzertifikat</b></p><p>Bei einem Genesenenzertifikat ist die maximale fachliche Gültigkeit laut dem <a href='https://www.gesetze-im-internet.de/ifsg/__22a.html' target='_blank' rel='noopener noreferrer'>Infektionsschutzgesetz (IfSG)</a> festgelegt auf 90 Tage.</p><p><b>Testzertifikat</b></p><p>Testzertifikate werden üblicherweise mit einer technischen Gültigkeit von 2 Tagen ausgestellt. Wie lange so ein Testergebnis akzeptiert wird hängt vom Bundesland ab. Typischerweise werden in Deutschland negative PCR-Testergebnisse 48 Stunden und Schnelltestergebnisse 24 Stunden lang akzeptiert</p><p>Ein Zertifikat ist solange valide, bis entweder die <a href='#glossary_technical_validity' target='_blank'>technische Gültigkeit</a> oder die <a href='#glossary_effective_validity' target='_blank'>fachliche Gültigkeit</a> abläuft.</p>"
                 }
             ],
+            "H": [
+                {
+                    "term": "Häufig gestellte Fragen (FAQ)",
+                    "anchor": "faq",
+                    "description": "Frequently Asked Questions, kurz FAQ oder FAQs, englisch für häufig gestellte Fragen oder auch meistgestellte Fragen, sind eine Zusammenstellung von oft gestellten Fragen und den dazugehörigen Antworten zu einem Thema."
+                }
+            ],
             "I": [
                 {
                     "term": "Impfbescheinigung",
@@ -3292,14 +3360,19 @@
                     "description": "Zum Impfstatus gehören Informationen wie die Anzahl an erfolgten Impfungen, der verwendete Impfstoff und die Gültigkeit der Impfung."
                 },
                 {
+                    "term": "Infektionsschutzgesetz (IfSG)",
+                    "anchor": "ifsg",
+                    "description": "Das deutsche Infektionsschutzgesetz (IfSG) ist ein Bundesgesetz gegen gemeingefährliche oder übertragbare Krankheiten bei Menschen und regelt die hierfür notwendige Mitwirkung und Zusammenarbeit von Behörden des Bundes, der Länder und der Kommunen, Ärzten, Tierärzten, Krankenhäusern, wissenschaftlichen Einrichtungen sowie sonstigen Beteiligten. Es soll übertragbaren Krankheiten vorbeugen, Infektionen frühzeitig erkennen und ihre Weiterverbreitung verhindern."
+                },
+                {
                     "term": "iOS",
                     "anchor": "ios",
                     "description": "iOS ist ein von Apple entwickeltes mobiles Betriebssystem für das iPhone, iPod touch und ehemalig auch iPad. Neben <a href='#glossary_android' target='_blank'>Android</a> ist es eines der beiden Betriebssysteme, auf denen die Corona-Warn-App angeboten wird."
-                },{
+                },
+                {
                     "term": "Isolation",
                     "anchor": "isolation",
                     "description": "Eine Isolierung ist eine behördlich angeordnete Maßnahme für Personen, bei denen eine SARS-CoV-2-Infektion durch einen PCR-Test bestätigt wurde. Die Isolierung kann zu Hause erfolgen oder bei schwerem Krankheitsverlauf im Krankenhaus. Die Entlassung aus der Isolierung erfolgt nach festgelegten <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Entlassmanagement.html?nn=13490888' target='_blank' rel='noopener noreferrer'> Kriterien.</a> Zum Zeitpunkt der Entlassung ist davon auszugehen, dass die Person nicht mehr ansteckend ist. Siehe auch <a href='#glossary_quarantine' target='_blank'>Quarantäne</a>."
-
                 }
             ],
             "K": [
@@ -3387,6 +3460,11 @@
                     "term": "Risikostatus",
                     "anchor": "risk_status",
                     "description": "Eine Kachel in der Corona-Warn-App, die mit ihrer Farbe und dem Inhalt die eigene Gefährdung vor einer Corona-Infektion darstellt. Der Status setzt sich aus den Begegnungen, die man mit anderen Personen gemacht hat, zusammen. Bei einem niedrigen Infektionsrisiko ist die genannte Kachel grün, bei einem erhöhten Risiko ist die Kachel rot."
+                },
+                {
+                    "term": "Robert Koch-Institut (RKI)",
+                    "anchor": "rki",
+                    "description": "Das RKI ist die zentrale Einrichtung der Bundesregierung auf dem Gebiet der Krankheitsüberwachung und -prävention und damit auch die zentrale Einrichtung des Bundes auf dem Gebiet der anwendungs- und maßnahmenorientierten biomedizinischen Forschung. Die Kernaufgaben des RKI sind die Erkennung, Verhütung und Bekämpfung von Krankheiten, insbesondere der Infektionskrankheiten."
                 },
                 {
                     "term": "Rolling Proximity Identifier (RPI)",

@@ -40,7 +40,8 @@ context("Check for broken links", () => {
       'https://apps.apple.com/de/app/116117-app/id1465237675',
       'https://apps.apple.com/de/app/corona-warn-app/id1512595757',
       'https://support.apple.com/en-gb/HT201252',
-      'https://www.instagram.com/rki_fuer_euch/'
+      'https://www.instagram.com/rki_fuer_euch/',
+      'https://health.ec.europa.eu/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf'
     ]
 
   it('Check if txt results exist',() => {
