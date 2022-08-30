@@ -7,7 +7,7 @@ author: CWA-Team, 6 pm
 layout: blog
 ---
 
-The project team of the Robert Koch-Institute (RKI), Deutsche Telekom, and SAP have released version 2.23 of the Corona-Warn-App (CWA). With the update, users can **renew technically expired certificates via the CWA**. 
+The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have released version 2.23 of the Corona-Warn-App (CWA). With the update, users can **renew technically expired certificates via the CWA**. 
 
 <!-- overview -->
 

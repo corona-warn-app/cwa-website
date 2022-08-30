@@ -7,7 +7,7 @@ author: CWA-Team, 6 pm
 layout: blog
 ---
 
-The project team of the Robert Koch-Institute (RKI), Deutsche Telekom, and SAP have released version 2.22 of the Corona-Warn-App (CWA). With the update, users can **create rapid test profiles for family members**.
+The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have released version 2.22 of the Corona-Warn-App (CWA). With the update, users can **create rapid test profiles for family members**.
 
 <!-- overview -->
 
