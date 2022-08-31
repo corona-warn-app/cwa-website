@@ -8,7 +8,7 @@ layout: blog
 ---
 
 
-The project team of the Robert Koch-Institute (RKI), Deutsche Telekom, and SAP have released **version 2.26 of the Corona-Warn-App (CWA)**. In the new version, the team has made improvements and adjustments, as well as fixed minor bugs. 
+The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have released **version 2.26 of the Corona-Warn-App (CWA)**. In the new version, the team has made improvements and adjustments, as well as fixed minor bugs. 
 
 Version 2.26, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona-Warn-App will be available to users here within the next 48 hours.
 
