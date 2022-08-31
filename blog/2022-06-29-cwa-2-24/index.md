@@ -7,7 +7,7 @@ author: CWA-Team, 6 pm
 layout: blog
 ---
 
-The project team of the Robert Koch-Institute (RKI), Deutsche Telekom, and SAP have released **version 2.24 of the Corona-Warn-App (CWA)**. With the update, users can save all certificates available in their app in one PDF document in only one step.
+The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have released **version 2.24 of the Corona-Warn-App (CWA)**. With the update, users can save all certificates available in their app in one PDF document in only one step.
 
 <!-- overview -->
 

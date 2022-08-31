@@ -7,7 +7,7 @@ author: CWA-Team, 10 am
 layout: blog
 ---
 
-The project team of the Robert Koch-Institute (RKI), Deutsche Telekom, and SAP have released version 2.21 of the Corona-Warn-App (CWA). The update allows users to **register tests for family members**. In addition, the project team has adjusted the texts about the user’s vaccination status in the certificate area. 
+The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP have released version 2.21 of the Corona-Warn-App (CWA). The update allows users to **register tests for family members**. In addition, the project team has adjusted the texts about the user’s vaccination status in the certificate area. 
 
 <!-- overview -->
 
