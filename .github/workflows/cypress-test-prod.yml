@@ -24,4 +24,4 @@ jobs:
           headless: true
           config: baseUrl=https://coronawarn.app
           # Only run tests in top level of integration directory
-          spec: cypress/integration/*.js
+          spec: cypress/e2e/*.js
