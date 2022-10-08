@@ -8,7 +8,7 @@
     "start": "gulp",
     "dev": "gulp --dev",
     "build": "gulp build --production",
-    "cypress:open": "cypress open",
+    "cypress:open": "cypress open --e2e --browser chrome",
     "cypress:run:chrome": "cypress run --browser chrome --headed",
     "cypress:run:firefox": "cypress run --browser firefox --headed",
     "start-server": "gulp start-server",
