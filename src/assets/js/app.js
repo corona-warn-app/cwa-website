@@ -396,7 +396,8 @@ $(document).ready(function(){
                         }
                         else {
                             let canContinue = true;
-                            const itemsToAvoid = [];
+                            // Avoid href
+                            const itemsToAvoid = $(p).find("a");
                             $(p).children().each((index, child) => {
                                 if($(child).is("a") || $(child).is("img")) {
                                     itemsToAvoid.push($(child))
