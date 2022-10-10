@@ -90,7 +90,7 @@ Other operating systems, such as Microsoft Windows, which access files in a case
 
 #### Notes for test developers
 
-Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, eg `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
+Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, e.g. `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
 
 |                       | Included in Cypress Test Production?     |  What is it used for?                                                                |
 |-----------------------|-|-------------------------------------------------------------------------------------------------------------------------------|
@@ -102,7 +102,7 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 | check_videos.js       |✓                                         | Detect broken videos throughout the website.                                          |
 | eventRegistration.js  |✓                                         | Checks that all fields in event-registration exist and fill them to create a QR code. |
 | faq.js                |✓                                         | Simulate a FAQ search and the result for mobile and desktop view.                     |
-| hotline_spec.js       |✓                                         | Verify that Hotline APP and TAN data is correcly displayed at home page.              |
+| hotline_spec.js       |✓                                         | Verify that Hotline APP and TAN data is correctly displayed on the home page.              |
 | mime.js               |✓                                         | Check that CSS and JS files have the correct MIME type. See https://developer.mozilla.org/en-US/docs/Glossary/MIME_type                      |
 
 To run all tests included in Cypress Test Production execute:
