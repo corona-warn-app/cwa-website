@@ -419,8 +419,8 @@ Updating and differentiating the proofs of status, revising the representation a
 
 In order to determine the difference between active users in the narrower and broader sense, we can take a look at the data from the CWA data donation. In addition to the information relating to red and green warnings, there is also information relating to ‘white tiles’. This is the information, with which an evaluation of the risk is not possible. There can be various reasons for this: missing network connections, not enough days of recording encounters or also an intentional deactivation of the exposure logging. The core functionality cannot be used in each of these cases.
 
-<img src="./ppa_white_plot_en.png" class="figure-img img-fluid" alt="Percentage of users, for whom the risk determination is not possible (CWA data donation)."/>
-<figcaption aria-hidden="true">Figure 6: Percentage of users, for whom the risk determination is not possible (CWA data donation).</figcaption>
+<img src="./ppa_white_plot_en.png" class="figure-img img-fluid" alt="Fraction of users, for whom the risk determination is not possible (CWA data donation)."/>
+<figcaption aria-hidden="true">Figure 6: Fraction of users, for whom the risk determination is not possible (CWA data donation).</figcaption>
 
 We can see that there are approximately 3.4% of users, who do not use the core functionality of the CWA. The difference between users in the narrower and broader sense is thus very small. It could be higher among those who do not participate in the CWA data donation. However, no data is available for this.
 
