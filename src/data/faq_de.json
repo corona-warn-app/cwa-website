@@ -396,14 +396,32 @@
                                 ],
                                 "linkList": [
                                     {
-                                        "title" : "Siehe auch FAQ-Artikel:",
-                                        "links" : [
-                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
-                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
-                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        "title": "Siehe auch FAQ-Artikel:",
+                                        "links": [
+                                            {
+                                                "url": "#dcc_replacement",
+                                                "text": "Warum werden Zertifikate neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_howto",
+                                                "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_which",
+                                                "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_vac_status",
+                                                "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_issues",
+                                                "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"
+                                            },
+                                            {
+                                                "url": "#glossary_validity",
+                                                "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."
+                                            }
                                         ]
                                     }
                                 ]
@@ -477,7 +495,7 @@
                                 "anchor": "eu_dcc_export",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktualisiert am 29. Juni 2022</b><hr>",
+                                    "<b>Aktualisiert am 10. Oktober 2022</b><hr>",
                                     "<b>Zweck</b>",
                                     "Ab der Version 2.10 der Corona-Warn-App können Sie eingescannte Digitale COVID Zertifikate der EU in PDF-Dokumente exportieren. Diese Funktion dient vorrangig der Erstellung von Sicherheitskopien der Zertifikate für Ihre persönlichen Zwecke.",
                                     "Ab der Version 2.24 der Corona-Warn-App können Sie in einem Schritt alle in Ihrer App vorhandenen Impf- und Genesenenzertifikate, sowie alle Tests, die nicht älter als 72 Stunden sind, in einem gemeinsamen PDF-Dokument speichern.",
@@ -487,8 +505,9 @@
                                     "Beachten Sie aber, dass das erzeugte Dokument sensible persönliche Informationen enthält. Gehen Sie daher bitte sorgsam mit der PDF-Datei um. Zeigen Sie das Dokument nur solchen Personen vor, denen Sie vertrauen und die zur Prüfung auch berechtigt sind.",
                                     "Wir raten dringend davon ab, das PDF-Dokument zu veröffentlichen über potentiell unsichere Kanäle (z.&nbsp;B. per E-Mail oder über andere Apps) zu teilen.",
                                     "<b>Limitierung</b>",
-                                    "Beim Export einzelner Zertifikate können nur PDF-Dokumente von Zertifikaten erzeugt werden, die auch in Deutschland ausgestellt wurden. Ansonsten erscheint eine ausführliche Meldung: 'Druckversion anzeigen nicht möglich - Die Druckversion des Zertifikats kann nicht angezeigt werden, da das Zertifikat nicht in Deutschland ausgestellt wurde.'",
-                                    "Anders als beim Export einzelner Zertifikate beschränkt sich der Export aller Zertifikate nicht nur auf die, die in Deutschland ausgestellt worden sind, sondern berücksichtigt alle digitalen COVID-Zertifikate der EU.",
+                                    "Beim Export einzelner Zertifikate konnten bis Version 2.27 nur PDF-Dokumente von Zertifikaten erzeugt werden, die auch in Deutschland ausgestellt wurden. Ansonsten erschien eine ausführliche Meldung: 'Druckversion anzeigen nicht möglich - Die Druckversion des Zertifikats kann nicht angezeigt werden, da das Zertifikat nicht in Deutschland ausgestellt wurde.'",
+                                    "Anders als beim Export einzelner Zertifikate beschränkte sich der Export aller Zertifikate nicht nur auf die, die in Deutschland ausgestellt worden sind, sondern berücksichtigte alle digitalen COVID-Zertifikate der EU.",
+                                    "Ab Version 2.27 ist das Exportieren einzelner Zertifikate auch für alle digitalen COVID-Zertifikate der EU möglich.",
                                     "<b>Anwendung</b>",
                                     "Nach dem erfolgreichen Export eines oder mehrerer Zertifikate in das PDF-Dokument können Sie entscheiden, ob Sie es auf Ihrem Smartphone speichern, in andere Apps importieren oder drucken möchten. Dazu nutzen Sie bitte die Standard-Funktionen des Betriebssystems.",
                                     "<b>Schritt-für-Schritt-Anleitung: Export einzelner Zertifikate</b>",
@@ -496,7 +515,7 @@
                                     "<b>Schritt-für-Schritt-Anleitung: Export aller Zertifikate</b>",
                                     "Um einen Ausdruck aller gespeicherten Digitalen COVID Zertifikate der EU in einem Schritt zu erstellen, gehen Sie bitte folgendermaßen vor: <ul><li>Tippen Sie auf den „Zertifikate“-Reiter in der Corona-Warn-App</li><li>Tippen Sie oben rechts auf das Symbol mit dem nach oben gerichteten Pfeil</li><li>Tippen Sie auf „Weiter“</li><li>Tippen Sie oben rechts auf das Symbol für „Drucken” oder für „Teilen”</li><li>In der folgenden Ansicht können Sie das erstellte PDF-Dokument mit den Standardfunktionen des Betriebssystems drucken, in andere Apps importieren oder auch teilen</li></ul>",
                                     "Zur Veranschaulichung können Sie unter den folgenden Links Screenshots zum Exportieren von Zertifikaten für sowohl iOS als auch Android Geräte finden:<ul><li><a href='../../screenshots/#ios_print_certificate' target='_blank'>iOS Screenshots: Zertifikat drucken</a></li><li><a href='../../screenshots/#android_print_certificate' target='_blank'>Android Screenshots: Zertifikat drucken</a></li></ul>",
-                                    "Siehe auch:<ul><li><a href='../../blog/2021-09-22-cwa-version-2-10/' target='_blank' >Mit Version 2.10 ist die Corona-Warn-App bereit, schnell über Auffrischimpfungen zu informieren.</a></li><li><a href='../../blog/2022-06-29-cwa-2-24/' target='_blank' >CWA 2.24: Alle Zertifikate in einem PDF-Dokument</a></li><li>FAQ: <a href='#eu_dcc_export_error' target='_blank'>Fehlermeldung 'Druckversion anzeigen nicht möglich'</a></li></ul>"
+                                    "Siehe auch:<ul><li><a href='../../blog/2021-09-22-cwa-version-2-10/' target='_blank'>CWA 2.10: Corona-Warn-App ist bereit, schnell über Auffrischimpfungen zu informieren</a></li><li><a href='../../blog/2022-06-29-cwa-2-24/' target='_blank' >CWA 2.24: Alle Zertifikate in einem PDF-Dokument</a></li><li><a href='../../blog/2022-09-28-cwa-2-27/' target='_blank'>CWA 2.27: Projektteam passt CWA an neues Infektionsschutzgesetz an</a></li><li>FAQ: <a href='#eu_dcc_export_error' target='_blank'>Fehlermeldung 'Druckversion anzeigen nicht möglich'</a></li></ul>"
                                 ]
                             },
                             {
@@ -581,13 +600,28 @@
                                 ],
                                 "linkList": [
                                     {
-                                        "title" : "Siehe auch FAQ-Artikel:",
-                                        "links" : [
-                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
-                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
-                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        "title": "Siehe auch FAQ-Artikel:",
+                                        "links": [
+                                            {
+                                                "url": "#dcc_replacement_howto",
+                                                "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_which",
+                                                "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_vac_status",
+                                                "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_issues",
+                                                "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"
+                                            },
+                                            {
+                                                "url": "#glossary_validity",
+                                                "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."
+                                            }
                                         ]
                                     }
                                 ]
@@ -602,13 +636,28 @@
                                 ],
                                 "linkList": [
                                     {
-                                        "title" : "Siehe auch FAQ-Artikel:",
-                                        "links" : [
-                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
-                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
-                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        "title": "Siehe auch FAQ-Artikel:",
+                                        "links": [
+                                            {
+                                                "url": "#dcc_replacement",
+                                                "text": "Warum werden Zertifikate neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_which",
+                                                "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_vac_status",
+                                                "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_issues",
+                                                "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"
+                                            },
+                                            {
+                                                "url": "#glossary_validity",
+                                                "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."
+                                            }
                                         ]
                                     }
                                 ]
@@ -623,13 +672,28 @@
                                 ],
                                 "linkList": [
                                     {
-                                        "title" : "Siehe auch FAQ-Artikel:",
-                                        "links" : [
-                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
-                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
-                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
-                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        "title": "Siehe auch FAQ-Artikel:",
+                                        "links": [
+                                            {
+                                                "url": "#dcc_replacement",
+                                                "text": "Warum werden Zertifikate neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_howto",
+                                                "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_vac_status",
+                                                "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_issues",
+                                                "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"
+                                            },
+                                            {
+                                                "url": "#glossary_validity",
+                                                "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."
+                                            }
                                         ]
                                     }
                                 ]
@@ -643,13 +707,28 @@
                                 ],
                                 "linkList": [
                                     {
-                                        "title" : "Siehe auch FAQ-Artikel:",
-                                        "links" : [
-                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_issues", "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"},
-                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        "title": "Siehe auch FAQ-Artikel:",
+                                        "links": [
+                                            {
+                                                "url": "#dcc_replacement",
+                                                "text": "Warum werden Zertifikate neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_howto",
+                                                "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_which",
+                                                "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_issues",
+                                                "text": "Ich kann ein Zertifikat in der App nicht erneuern. Woran kann das liegen?"
+                                            },
+                                            {
+                                                "url": "#glossary_validity",
+                                                "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."
+                                            }
                                         ]
                                     }
                                 ]
@@ -663,13 +742,28 @@
                                 ],
                                 "linkList": [
                                     {
-                                        "title" : "Siehe auch FAQ-Artikel:",
-                                        "links" : [
-                                            { "url" : "#dcc_replacement", "text": "Warum werden Zertifikate neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_howto", "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"},
-                                            { "url" : "#dcc_replacement_which", "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"},
-                                            { "url" : "#dcc_replacement_vac_status", "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"},
-                                            { "url" : "#glossary_validity", "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."}
+                                        "title": "Siehe auch FAQ-Artikel:",
+                                        "links": [
+                                            {
+                                                "url": "#dcc_replacement",
+                                                "text": "Warum werden Zertifikate neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_howto",
+                                                "text": "Wie und wann können Zertifikate in der App neu ausgestellt werden?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_which",
+                                                "text": "Welche digitalen COVID Zertifikate der EU werden neu ausgestellt?"
+                                            },
+                                            {
+                                                "url": "#dcc_replacement_vac_status",
+                                                "text": "Verliere ich meinen Impfstatus wenn eines meiner Zertifikate abläuft?"
+                                            },
+                                            {
+                                                "url": "#glossary_validity",
+                                                "text": "Gültigkeit eines EU digitalen COVID-Zertifikats."
+                                            }
                                         ]
                                     }
                                 ]
@@ -860,7 +954,7 @@
                                 "anchor": "admission_policy",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktualisiert am 30. März 2022: </b> Seit Version 2.18 zeigt Ihnen die Corona-Warn-App den Status-Nachweis 2G+ auch für „frisch“-geimpfte, “frisch”-genesene und „geboosterte“ Benutzer an, wenn die entsprechenden digitalen COVID-Zertifikate in der App abgelegt werden und auch auf den gleichen Namen sowie Geburtsdatum ausgestellt worden sind.",
+                                    "<b>Aktualisiert am 28. September 2022:</b><br><b>Der Status-Nachweis (3G, 3G+, 2G, 2G+) ist zurzeit nicht relevant und wird daher nicht von der App ausgewiesen</b><hr>Seit Version 2.18 zeigt Ihnen die Corona-Warn-App den Status-Nachweis 2G+ auch für „frisch“-geimpfte, “frisch”-genesene und „geboosterte“ Benutzer an, wenn die entsprechenden digitalen COVID-Zertifikate in der App abgelegt werden und auch auf den gleichen Namen sowie Geburtsdatum ausgestellt worden sind.",
                                     "Die Corona-Warn-App zeigt Ihnen in der Übersicht der Zertifikate für jede Person, für die Sie Zertifikate hinterlegt haben, einen Eintrag an. Seit Version 2.16 wird neben dem Namen der Person in einem blauen Punkt der Status-Nachweis angezeigt, welcher durch die abgelegten Zertifikate der jeweiligen Person erreicht wird. Derzeit unterscheiden wir vier G-Status: 3G, 3G+, 2G und 2G+. Die Corona-Warn-App zeigt Ihnen immer den Status an, der durch die hinterlegten Zertifikate höchstens erfüllt wird.",
                                     "Ab Version 2.20 werden Sie immer dann durch eine Nachricht informiert, wenn sich Ihr G-Status geändert hat. Das kann zum Beispiel der Fall sein, wenn Sie ein Zertifikat hinzugefügt haben oder die Regeln sich geändert haben.",
                                     "Da nicht alle Kombinationen von Impfungen und Genesungen durch das Nummerierungsschema eindeutig abgebildet werden können, weist die App im Zweifelsfall den nächst-höherwertigen Status aus: <ul><li>Status-Nachweis 2G+: Anforderungen erfüllt zu 2G+, 2G, 3G+, 3G.</li><li>Status-Nachweis 2G: Anforderungen erfüllt zu 2G, 3G+, 3G.</li><li>Status-Nachweis 3G+: Anforderungen erfüllt zu 3G+, 3G.</li><li>Status-Nachweis 3G: Anforderungen erfüllt zu 3G.</li></ul>",
@@ -910,6 +1004,28 @@
                         ]
                     },
                     {
+                        "title": "Maskenpflicht",
+                        "id": "mask_feature",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Maskenpflicht / Maskenpflichtbefreiung",
+                                "anchor": "mask_rules",
+                                "active": false,
+                                "textblock": [
+                                    "<b>Aktualisiert am 28. September 2022</b><br/>Ab Version 2.27 zeigt Ihnen die Corona-Warn-App (CWA) im Bereich \"Zertifikate\" den aktuellen Maskenstatus als entsprechendes Symbol, falls Bundesländer von der Möglichkeit Gebrauch machen, eigene weitergehende Maskenpflichten festzulegen.<br>Dabei wird in die \"bundesweiten Regelungen\" und \"weitergehenden Maßnahmen der Länder\" laut dem Herbst-/Winterplan der Bundesregierung unterteilt (vgl. Quellen).<br><b>Aktuell existieren keine weitergehenden Maßnahmen der Bundesländer.</b><hr/>",
+                                    "Außerdem hat das Projektteam die Anzeige des Status-Nachweises (3G, 3G+, 2G, 2G+) auf den digitalen COVID-Zertifikaten entfernt, da es derzeit keine Maßnahmen und Vorgaben gibt, die an den G-Status gekoppelt sind. Die Textbox in der CWA informiert Nutzer*innen entsprechend: „Der Status-Nachweis ist zurzeit nicht relevant und wird daher nicht von der App ausgewiesen.“",
+                                    "Des Weiteren zeigt die Infobox zum Impfstatus in der Detailansicht des Zertifikats-Bereich Nutzer*innen ab Version 2.27 ihren Impfstatus auf Grundlage des neuen Infektionsschutzgesetzes an.",
+                                    "<b>Überblick der gesetzlichen Regelungen (COVID-19-Schutzgesetz)</b>",
+                                    "<b>Bundesweite Regelungen</b><br/>Das Tragen einer Maske ist bundesweit nur in bestimmten Szenarien verpflichtend (vgl. Quellen):<br/><ul><li>Medizinische und therapeutische Praxen</li><li>Krankenhäuser/Kliniken und Pflegeeinrichtungen</li><li>Verkehrsmittel im öffentlichen Personenfernverkehr (außer in Flugzeugen)</li></ul>Eine Maskenpflichtbefreiung für diese Szenarien ist aktuell nicht vorgesehen. Die CWA zeigt diese gesetzliche Maskenpflicht nicht extra an.<br />",
+                                    "<b>Mögliche weitergehende Maßnahmen der Länder</b><br>Die Bundesländer können auf Veränderungen im Pandemie-Geschehen mit lokalen erweiterten Regeln reagieren:<br><ul><li>Die Länder können eine Maskenpflicht für weitere Anwendungsfälle festlegen (z.B. Innenräume in gastronomischen, kulturellen oder Freizeit-Einrichtungen)</li><li>Sie können aber auch Ausnahmen für das Tragen von Masken definieren (z.B. für einen bestimmten Zeitraum nach einer „frischen“ Impfung/Genesung oder auch nach einem negativen Test).</li></ul>",
+                                    "<b>Hinweise</b><br><ul><li>Die Befreiung von der Maskenpflicht kann nur mit digitaler Prüfung durch die CovPassCheck-App verlässlich überprüft werden. Eine Sichtprüfung reicht als Überprüfung nicht aus.</li><li>Ein unbeaufsichtigter Selbsttest ist für eine Maskenpflichtbefreiung nicht ausreichend.</li><li> Ist das aktuell verwendete Zertifikat ungültig oder technisch abgelaufen, muss die CWA von der Maskenpflicht ausgehen und zeigt das Maskensymbol immer an, wenn es im ausgewählten Bundesland lokale Regeln gibt.</li><li>Erst, wenn ein Bundesland mit lokalen Regeln ausgewählt wurde, zeigt die CWA das Symbol für Maskenpflicht oder -befreiung an. Wenn kein Bundesland ausgewählt wurde oder für das ausgewählte Bundesland keine erweiterten Regeln vorliegen, wird kein Maskensymbol angezeigt.</li></ul>",
+                                    "<b>Quellen</b><br><a href=\"https://www.bundesregierung.de/breg-de/themen/coronavirus/infektionsschutzgesetz-2068856\"  target='_blank'>https://www.bundesregierung.de/breg-de/themen/coronavirus/infektionsschutzgesetz-2068856 </a><br><a href=\"https://www.bundesgesundheitsministerium.de/coronavirus.html#c23063\"  target='_blank'>https://www.bundesgesundheitsministerium.de/coronavirus.html#c23063</a><br><a href=\"https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl122s1454.pdf#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl122s1454.pdf%27%5D__1663765059187\"  target='_blank'>COVID-19-Schutzgesetz</a>"
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "title": "Zertifikatprüfung bei Buchungen",
                         "id": "val_service",
                         "indexed": false,
@@ -922,7 +1038,7 @@
                                     "<b>AKTUELL 12. April 2022</b><br/>Bereits seit Oktober 2021 liegen die europaweit gültigen Anforderungen an Onlineverifikationsdienste vor. In Deutschland ist <b>kein Anbieter eines Onlineverifikationsdienstes zugelassen</b> worden. Mit Version 2.15 ist die CWA aber bereit, entsprechende Verifikationsdienste zu unterstützen.<hr/>",
                                     "<b>Was ist ein DCC-Validierungsservice?</b>",
                                     "Unternehmen müssen gesetzliche Vorgaben zum Schutz der Gesundheit von Belegschaft und Kund*innen einhalten. Sie benötigen daher in der Pandemie ein verlässliches Zutrittsmanagement für beispielsweise Geschäftsräume, Werkshallen, Flugzeuge, Straßenbahnen, Hotels und Restaurants oder Veranstaltungen. Sie müssen schnell und unkompliziert die Echtheit von Digitalen COVID-Zertifikaten (DCCs) überprüfen können. Dem dient ein Corona Validation Service."
-                                    ]
+                                ]
                             }
                         ]
                     },
@@ -1241,11 +1357,11 @@
                                     "Sie können vor einer Reise prüfen, ob Ihre Zertifikate in einem ausgewählten Land zum Zeitpunkt Ihrer Reise gültig sind. Dabei werden die Parameter des Zertifikats mit den hinterlegten Regeln verglichen. Beachten Sie bei der Prüfung Ihres Impfzertifikats, dass es sich um das Impfzertifikat handelt, dass den vollständigen Impfschutz bestätigt und stellen Sie sicher, dass Sie Ihr Zertifikat für das korrekte Datum der Reise prüfen. Weitere Informationen finden Sie hier: <a href='#cert_eu_travel' target='_blank'>Ist mein Zertifikat in dem Land gültig, in das ich reise?</a> und <a href='#dcc_no_rules' target=_blank>Warum zeigt die Corona-Warn-App ab Version 2.8 an, dass mein Zertifikat nicht prüfbar ist, obwohl mein Zertifikat in Versionen 2.6 & 2.7 als gültig anzeigt wurde?</a>",
                                     "<b>Warum lässt sich mein QR-Code nicht scannen?</b>",
                                     "Wenn sich Ihr QR-Code nicht sofort scannen lässt, sorgen Sie für gute Lichtverhältnisse und halten Sie den QR-Code etwa 30 cm von der Kamera entfernt. Weitere Tipps finden Sie hier: <a href='#scan_tips' target='_blank'>Warum wird der QR-Code von der CWA nicht gescannt? Warum reagiert der QR-Code-Scanner nicht?</a>",
-                            "<br>",
-                            "<h3>Erklärvideo</h3>",
-                            "<hr>",
-                            "Im folgenden Erklärvideo erfahren Sie wie die Kontaktverfolgung der Corona-Warn-App funktioniert und was sie kann.",
-                            "<video src='/assets/video/erklaerfilm_de.mp4' class='w-100' controls='' alt='Corona-Warn-App - Erklärvideo'></video>"
+                                    "<br>",
+                                    "<h3>Erklärvideo</h3>",
+                                    "<hr>",
+                                    "Im folgenden Erklärvideo erfahren Sie wie die Kontaktverfolgung der Corona-Warn-App funktioniert und was sie kann.",
+                                    "<video src='/assets/video/erklaerfilm_de.mp4' class='w-100' controls='' alt='Corona-Warn-App - Erklärvideo'></video>"
                                 ]
                             },
                             {
@@ -1569,8 +1685,8 @@
                                     "Um weitere Informationen in der App zu sehen, klicken Sie",
                                     "<ol><li>'RISIKO-ERMITTLUNG AKTIV (bzw. GESTOPPT) an'</li><li>Dann auf 'Länderübergreifende Risiko Ermittlung' klicken.</li><li>Scrollen Sie nach unten zu der Liste der Länder.</li></ol>",
                                     "Nachstehend finden Sie eine Liste der derzeit teilnehmenden Länder und Angaben zu den zuständigen Gesundheitsbehörden:",
-                                    "(Stand: 02.05.2022)",
-                                    "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Belgien<br>(ab 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgien<br>E-Mail: coronalert@sciensano.be <i><b>oder</b></i> dpo@sciensano.be<br>Telefon: +32 479 317 455</td></tr><tr><td>Dänemark<br>(ab 06.11.2020 bis 01.04.2022)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Telefon: +45 72286600</td></tr><tr><td>Deutschland<br>(ab 17.10.2020)</td><td>Robert Koch-Institut</td><td>Robert Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Telefon: +49 30187540</td></tr><tr><td>Estland<br>(ab Juli 2021 bis 02.05.2022)</td><td>Health Board</td><td>Health Board<br>Paldiski mnt 81<br>10614 Tallinn<br>Estland<br>E-Mail: andmekaitse@terviseamet.ee</td></tr><tr><td>Finnland<br>(ab 07.01.2021)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finnland<br>E-Mail: tietosuoja@thl.fi<br>Telefon +358 29 524 6000</td></tr><tr><td>Irland<br>(ab 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Telefon: +353 87 688 3565</td></tr><tr><td>Italien<br>(ab 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Telefon: +39 65994694546</td></tr><tr><td>Kroatien<br/>(ab 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Telefon: + 385 14609000</td></tr><tr><td>Lettland<br>(ab 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Lettland<br>E-Mail: pasts@spkc.gov.lv<br>Telefon:  +371 675015 90 oder -91</td></tr><tr><td>Litauen<br>(ab 12.05.2021)</td><td>Ministry of Health of the Republic of Lithuania</td><td>Ministry of Health of the Republic of Lithuania<br>Vilniaus St. 33<br>T-01506 Vilnius<br>Litauen<br>E-Mail (DPO): duomenu.apsauga@sam.lt<br>E-Mail (Betroffenenrechte): duomenu.apsauga@nvsc.lt</td></tr><tr><td>Malta<br>(ab 15.04.2021 bis 07.07.2022)</td><td>Department for Health Regulation</td><td>Department for Health Regulation<br>Office of the Superintendent of Public Health<br>St. Luke’s Hospital, Outpatients Block Level 1<br>St. Luke’s Square<br>Pietà PTA 1010<br>Malta<br>E-Mail: sph.health@gov.mt<br>E-Mail (DPO): dpo-osph@gov.mt<br>Telefon: +356 2595 3302 / +356 2595 3303</td></tr><tr><td>Niederlande<br>(ab 30.11.2020)</td><td> Minister of Health, Welfare and Sports </td><td> Minister of Health, Welfare and Sports <br>Postbus 16114<br/>2500 BC<br/> Den Haag<br/> Niederlande <br>E-Mail: CIBG-eHealth-EU@minvws.nl oder FG-VWS@minvws.nl<br> Telefon: +31 703405487</td></tr><tr><td>Österreich<br>(ab 04.02.2021 bis 25.02.2022)</td><td>Österreichisches Rotes Kreuz</td><td>Generalsekretariat und Blutspendezentrale für Wien<br>Niederösterreich und das Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Wien<br>Österreich<br>E-Mail: service@roteskreuz.at<br>Telefon: +43 1 58900 955</td></tr><tr><tr><td>Norwegen<br>(ab 15.02.2021)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norwegen<br>E-Mail: folkehelseinstituttet@fhi.no<br>Telefon: +47 21 07 70 00</td></tr><td>Polen<br>(ab 23.11.2020 bis 31.03.2022)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warschau<br> Polen <br>E-Mail: protego@mc.gov.pl<br> Telefon: +48 223453300</td></tr><tr><tr><td>Slowenien<br>(ab 15.02.2021)</td><td>Ministry of Public Administration (MJU) und Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slowenien<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>und<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slowenien<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><td>Spanien<br>(ab 06.11.2020)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br>Spanien<br>E-Mail: soporte.radarcovid@economia.gob.es<br>Telefon: + 34 91 258 28 52</td></tr><tr><td>Schweiz<br>(ab 24.03.2021 bis 31.03.2022)</td><td>Bundesamt für Gesundheit BAG</td><td>Bundesamt für Gesundheit BAG<br>3003 Bern<br>Schweiz<br>E-Mail: rech@bag.admin.ch<br>Telefon: +41 58 462 69 98</td></tr><tr><td>Tschechien<br/>(ab 22.03.2021 bis 31.10.2021)</td><td>Ministry of Health</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Telefon: +420 224 972 457</td></tr><tr><td>Zypern<br/>(ab 15.12.2020 bis 16.03.2022)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nikosia<br> Zypern <br>E-Mail: cyjointcontroller@mphs.moh.gov.cy<br>E-Mail (DPO): MPHS_DPO@mphs.moh.gov.cy<br>Telefon (DPO): +357 22605603</td></tr></tbody></table>"
+                                    "(Stand: 12.10.2022)",
+                                    "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Belgien<br>(ab 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgien<br>E-Mail: coronalert@sciensano.be <i><b>oder</b></i> dpo@sciensano.be<br>Telefon: +32 479 317 455</td></tr><tr><td>Dänemark<br>(ab 06.11.2020 bis 01.04.2022)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Telefon: +45 72286600</td></tr><tr><td>Deutschland<br>(ab 17.10.2020)</td><td>Robert Koch-Institut</td><td>Robert Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Telefon: +49 30187540</td></tr><tr><td>Estland<br>(ab Juli 2021 bis 02.05.2022)</td><td>Health Board</td><td>Health Board<br>Paldiski mnt 81<br>10614 Tallinn<br>Estland<br>E-Mail: andmekaitse@terviseamet.ee</td></tr><tr><td>Finnland<br>(ab 07.01.2021 bis 01.06.2022)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finnland<br>E-Mail: tietosuoja@thl.fi<br>Telefon +358 29 524 6000</td></tr><tr><td>Irland<br>(ab 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Telefon: +353 87 688 3565</td></tr><tr><td>Italien<br>(ab 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Telefon: +39 65994694546</td></tr><tr><td>Kroatien<br/>(ab 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Telefon: + 385 14609000</td></tr><tr><td>Lettland<br>(ab 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Lettland<br>E-Mail: pasts@spkc.gov.lv<br>Telefon:  +371 675015 90 oder -91</td></tr><tr><td>Litauen<br>(ab 12.05.2021)</td><td>Ministry of Health of the Republic of Lithuania</td><td>Ministry of Health of the Republic of Lithuania<br>Vilniaus St. 33<br>T-01506 Vilnius<br>Litauen<br>E-Mail (DPO): duomenu.apsauga@sam.lt<br>E-Mail (Betroffenenrechte): duomenu.apsauga@nvsc.lt</td></tr><tr><td>Malta<br>(ab 15.04.2021 bis 07.07.2022)</td><td>Department for Health Regulation</td><td>Department for Health Regulation<br>Office of the Superintendent of Public Health<br>St. Luke’s Hospital, Outpatients Block Level 1<br>St. Luke’s Square<br>Pietà PTA 1010<br>Malta<br>E-Mail: sph.health@gov.mt<br>E-Mail (DPO): dpo-osph@gov.mt<br>Telefon: +356 2595 3302 / +356 2595 3303</td></tr><tr><td>Niederlande<br>(ab 30.11.2020)</td><td> Minister of Health, Welfare and Sports </td><td> Minister of Health, Welfare and Sports <br>Postbus 16114<br/>2500 BC<br/> Den Haag<br/> Niederlande <br>E-Mail: CIBG-eHealth-EU@minvws.nl oder FG-VWS@minvws.nl<br> Telefon: +31 703405487</td></tr><tr><td>Österreich<br>(ab 04.02.2021 bis 25.02.2022)</td><td>Österreichisches Rotes Kreuz</td><td>Generalsekretariat und Blutspendezentrale für Wien<br>Niederösterreich und das Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Wien<br>Österreich<br>E-Mail: service@roteskreuz.at<br>Telefon: +43 1 58900 955</td></tr><tr><tr><td>Norwegen<br>(ab 15.02.2021 bis 11.08.2022)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norwegen<br>E-Mail: folkehelseinstituttet@fhi.no<br>Telefon: +47 21 07 70 00</td></tr><td>Polen<br>(ab 23.11.2020 bis 31.03.2022)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warschau<br> Polen <br>E-Mail: protego@mc.gov.pl<br> Telefon: +48 223453300</td></tr><tr><tr><td>Slowenien<br>(ab 15.02.2021)</td><td>Ministry of Public Administration (MJU) und Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slowenien<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>und<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slowenien<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><td>Spanien<br>(ab 06.11.2020 bis 9.10.2022)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br>Spanien<br>E-Mail: soporte.radarcovid@economia.gob.es<br>Telefon: + 34 91 258 28 52</td></tr><tr><td>Schweiz<br>(ab 24.03.2021 bis 31.03.2022)</td><td>Bundesamt für Gesundheit BAG</td><td>Bundesamt für Gesundheit BAG<br>3003 Bern<br>Schweiz<br>E-Mail: rech@bag.admin.ch<br>Telefon: +41 58 462 69 98</td></tr><tr><td>Tschechien<br/>(ab 22.03.2021 bis 31.10.2021)</td><td>Ministry of Health</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Telefon: +420 224 972 457</td></tr><tr><td>Zypern<br/>(ab 15.12.2020 bis 16.03.2022)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nikosia<br> Zypern <br>E-Mail: cyjointcontroller@mphs.moh.gov.cy<br>E-Mail (DPO): MPHS_DPO@mphs.moh.gov.cy<br>Telefon (DPO): +357 22605603</td></tr></tbody></table>"
                                 ]
                             },
                             {
@@ -1630,7 +1746,7 @@
                                 "title": "Warum wird der QR-Code von der CWA nicht gescannt? Warum reagiert der QR-Code-Scanner nicht?",
                                 "anchor": "scan_tips",
                                 "active": false,
-                                "textblock":[
+                                "textblock": [
                                     "Auf einigen Geräten erkennt die Kamera den QR-Code nicht sofort und es passiert zunächst gar nichts, d.&nbsp;h. es wird weder der QR-Code eingelesen, noch eine Fehlermeldung angezeigt. Dieses Verhalten betrifft vorrangig einige Android-Geräte, kann jedoch auch auf iOS-Geräten auftreten.",
                                     "Folgende Tipps helfen oft dabei, den QR-Code zu scannen:",
                                     "<ul><li>Auf dem QR-Code erkennen Sie 3 größere Quadrate in der Ecke: Diese müssen vollständig von der Kamera erfasst werden.</li><li>Halten Sie die Kamera etwas weiter vom QR-Code weg, bis er in etwa die Größe einer Briefmarke hat.</li><li>Sorgen Sie für ausreichende Kontraste und Lichtverhältnisse.</li><li>Drehen Sie den QR-Code um 90 Grad und versuchen Sie es erneut.</li><li>Sollte in Ihrem Haushalt ein weiteres Smartphone vorhanden sein, scannen Sie das Zertifikat mit diesem Gerät und versuchen Sie anschließend mit Ihrem Smartphone den QR-Code vom Bildschirm des anderen Gerätes einzulesen.</li></ul>",
