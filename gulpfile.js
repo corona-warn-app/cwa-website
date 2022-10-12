@@ -509,7 +509,7 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + '/**/*.html', PATHS.dist + '/**/*.json'])
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
     .pipe(replace('[ios.current-app-version]', '2.28.0'))
-    .pipe(replace('[android.latest-os-version]', '12'))
+    .pipe(replace('[android.latest-os-version]', '13'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
     .pipe(replace('[android.current-app-version]', '2.28.0'))
     .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
