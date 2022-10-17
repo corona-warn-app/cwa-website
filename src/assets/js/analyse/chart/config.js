@@ -416,12 +416,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "qr_not_redeemed_cumulated"
-					},
-					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_cumulated"
+					},
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_cumulated"
 					}
 					
 				],
@@ -436,12 +436,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "teletan_not_redeemed_cumulated"
-					},
-					{
 						color: "#3BA8CE",
 						data: "teletan_redeemed_cumulated"
+					},
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_cumulated"
 					}
 					
 				],
@@ -536,12 +536,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "qr_not_redeemed_7days_sum"
-					},
-					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_7days_sum"
+					},
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_7days_sum"
 					}
 					
 				],
@@ -556,12 +556,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "teletan_not_redeemed_7days_sum"
-					},
-					{
 						color: "#3BA8CE",
 						data: "teletan_redeemed_7days_sum"
+					},
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_7days_sum"
 					}
 					
 				],
@@ -606,12 +606,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "qr_not_redeemed_7days_avg"
-					},
-					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_7days_avg"
+					},
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_7days_avg"
 					},
 					{
 						ghost: true,
@@ -619,12 +619,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "qr_not_redeemed_daily"
-					},
-					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_daily"
 					}
 				]
 			},
@@ -636,12 +636,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "teletan_not_redeemed_7days_avg"
-					},
-					{
 						color: "#3BA8CE",
 						data: "teletan_redeemed_7days_avg"
+					},
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_7days_avg"
 					},
 					{
 						ghost: true,
@@ -649,12 +649,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#57DAFF",
-						data: "teletan_not_redeemed_daily"
-					},
-					{
 						color: "#3BA8CE",
 						data: "teletan_redeemed_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "teletan_not_redeemed_daily"
 					}
 				]
 			}
