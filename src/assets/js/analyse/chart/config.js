@@ -477,13 +477,13 @@ export default {
 						name: "total"
 					},
 					{
+						color: "#57DAFF",
+						data: "qr_not_redeemed_daily"
+					},
+					{
 						color: "#3BA8CE",
 						data: "qr_redeemed_daily"
 					},
-					{
-						color: "#57DAFF",
-						data: "qr_not_redeemed_daily"
-					}
 				],
 				"stacked": true,
 				"type":"bar"
@@ -496,12 +496,12 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#3BA8CE",
-						data: "teletan_redeemed_daily"
-					},
-					{
 						color: "#57DAFF",
 						data: "teletan_not_redeemed_daily"
+					},
+					{
+						color: "#3BA8CE",
+						data: "teletan_redeemed_daily"
 					}
 				],
 				"stacked": true,
