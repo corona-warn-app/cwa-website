@@ -40,10 +40,11 @@ describe("Test cwa-webserver links used by Corona-Warn-App", () => {
     it("Test FAQ redirected links", () => {
         var redirectFAQs = links.faqRedirect;
         languages.forEach(lang => {
-            var i;
-            for (i = 0; i < redirectFAQs.length; i = i + 2) {
-                cy.testFaqRedirect(lang, redirectFAQs[i], redirectFAQs[i + 1]);
-            }
+            redirectFAQs.forEach(redirect => {
+                var redirectSource = redirect[0];
+                var redirectDestination = redirect[1];
+                cy.testFaqRedirect(lang, redirectSource, redirectDestination);
+            });
         });
     });
 

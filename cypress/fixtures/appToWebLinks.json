@@ -36,16 +36,26 @@
         "#test_cert"
     ],
     "faqRedirect": [
-        "#hc_prefix_invalid",
-        "#eu_dcc",
-        "#vac_booster",
-        "#vac_cert",
-        "#vac_cert_booster",
-        "#vac_booster_basics",
-        "#val_service_no_valid_dcc",
-        "#val_service_basics",
-        "#val_service_result",
-        "#val_service_basics"
+        [
+            "#hc_prefix_invalid",
+            "#eu_dcc"
+        ],
+        [
+            "#vac_booster",
+            "#vac_cert"
+        ],
+        [
+            "#vac_cert_booster",
+            "#vac_booster_basics"
+        ],
+        [
+            "#val_service_no_valid_dcc",
+            "#val_service_basics"
+        ],
+        [
+            "#val_service_result",
+            "#val_service_basics"
+        ]
     ],
     "blogEntry": [
         "2021-08-05-statistictiles",
