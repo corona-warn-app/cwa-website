@@ -5,6 +5,7 @@ page-name: science-blog-4
 page-name_de: science-blog-4
 author: CWA Team
 date: "2021-12-02"
+update: "last updated October 15, 2021 (German version)"
 layout: science
 ---
 This article is the first in our focus on data donation and the Corona-Warn-App. We analyse the extent to which the voluntary, data protection-compliant provision of user data can provide information about user behaviour and the processes involved in the CWA ecosystem.
