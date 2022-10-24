@@ -12,6 +12,11 @@
         border-radius: .375rem;
     }
 
+  #eventqrcode {
+    visibility: hidden;
+    cursor: pointer;
+  }
+
     .col-form-label:after {
         content: " *";
         color: red;
