@@ -20,7 +20,7 @@ const { processScienceBlogFiles } = require('./src/services/science-blog-process
 var rename = require('gulp-rename');
 const analyseConfig = require('./src/data/analyse.json');
 const fetch = require('node-fetch');
-var pluginSass = require('gulp-sass')(require('node-sass'));
+var pluginSass = require('gulp-sass')(require('sass'));
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
