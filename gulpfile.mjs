@@ -3,7 +3,7 @@
 import gulp from 'gulp';
 import cleanCss from 'gulp-clean-css';
 import gulpIf from 'gulp-if';
-import imagemin, {mozjpeg} from 'gulp-imagemin';
+import imagemin, { mozjpeg } from 'gulp-imagemin';
 import jsonTransform from 'gulp-json-transform';
 import postcss from 'gulp-postcss';
 import rename from 'gulp-rename';
