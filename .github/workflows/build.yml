@@ -16,10 +16,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v3
     
-    - name: Setup Node.js environment (v16)
+    - name: Setup Node.js 18 environment
       uses: actions/setup-node@v3
       with:
-        node-version: 'lts/gallium'
+        node-version: 'lts/hydrogen'
 
     - name: Install root dependencies
       uses: bahmutov/npm-install@v1
