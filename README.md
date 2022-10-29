@@ -28,7 +28,7 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need the Node.js 16 (Maintenance) LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website. Download from [latest node v16 version](https://nodejs.org/download/release/latest-v16.x/).  
+You need the Node.js 18 (Active LTS) version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
 
 ### Getting started
 
