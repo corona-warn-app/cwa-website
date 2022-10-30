@@ -22,7 +22,9 @@ import named from 'vinyl-named';
 import panini from 'panini';
 import webpack2 from 'webpack';
 import webpackStream from 'webpack-stream';
-import yargs from 'yargs';
+import npmYargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+const yargs = npmYargs(hideBin(process.argv));
 
 import npmSass from 'sass';
 import gulpSass from 'gulp-sass';
