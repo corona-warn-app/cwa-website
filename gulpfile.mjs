@@ -1,29 +1,36 @@
 'use strict';
-const plugins = require('gulp-load-plugins');
-const yargs = require('yargs');
-const browser = require('browser-sync');
-const gulp = require('gulp');
-const replace = require('gulp-replace');
-const panini = require('panini');
-const yaml = require('js-yaml');
-const fs = require('fs');
-const webpackStream = require('webpack-stream');
-const webpack2 = require('webpack');
-const named = require('vinyl-named');
-const autoprefixer = require('autoprefixer');
-const sitemap = require('gulp-sitemap');
-const rimraf = require('rimraf');
-const webp = require('gulp-webp');
-const jsonTransform = require('gulp-json-transform');
-const { processBlogFiles, getBlogEntries } = require('./src/services/blog-processor');
-const { processScienceBlogFiles } = require('./src/services/science-blog-processor');
-var rename = require('gulp-rename');
-const analyseConfig = require('./src/data/analyse.json');
-const fetch = require('node-fetch');
-var pluginSass = require('gulp-sass')(require('sass'));
 
-// Load all Gulp plugins into one variable
-const $ = plugins();
+import gulp from 'gulp';
+import cleanCss from 'gulp-clean-css';
+import gulpIf from 'gulp-if';
+import imagemin, { mozjpeg } from 'gulp-imagemin';
+import jsonTransform from 'gulp-json-transform';
+import postcss from 'gulp-postcss';
+import rename from 'gulp-rename';
+import replace from 'gulp-replace';
+import sitemap from 'gulp-sitemap';
+import sourcemaps from 'gulp-sourcemaps';
+import webp from 'gulp-webp';
+
+import autoprefixer from 'autoprefixer';
+import browser from 'browser-sync';
+import fetch from 'node-fetch';
+import fs from 'fs';
+import rimraf from 'rimraf';
+import yaml from 'js-yaml';
+import named from 'vinyl-named';
+import panini from 'panini';
+import webpack2 from 'webpack';
+import webpackStream from 'webpack-stream';
+import yargs from 'yargs';
+
+import npmSass from 'sass';
+import gulpSass from 'gulp-sass';
+const pluginSass = gulpSass(npmSass);
+
+import { processBlogFiles, getBlogEntries } from './src/services/blog-processor.js';
+import { processScienceBlogFiles } from './src/services/science-blog-processor.js';
+import analyseConfig from './src/data/analyse.json' assert {type: 'json'};
 
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
@@ -181,15 +188,15 @@ function sass() {
 
   return gulp
     .src('src/assets/scss/style.scss')
-    .pipe($.sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(
       pluginSass({
         includePaths: PATHS.sass,
       }).on('error', pluginSass.logError)
     )
-    .pipe($.postcss(postCssPlugins))
-    .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
-    .pipe($.sourcemaps.write())
+    .pipe(postcss(postCssPlugins))
+    .pipe(gulpIf(PRODUCTION, cleanCss({ compatibility: 'ie9' })))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/css'))
     .pipe(browser.reload({ stream: true }));
 }
@@ -198,7 +205,7 @@ function cwaaJs() {
   return gulp
     .src(PATHS.cwaa)
     .pipe(named())
-    .pipe($.sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(
       webpackStream(
         {
@@ -223,7 +230,7 @@ function cwaaJs() {
         webpack2
       )
     )
-    .pipe($.sourcemaps.write())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
@@ -233,7 +240,7 @@ function javascript() {
   return gulp
     .src(PATHS.entries)
     .pipe(named())
-    .pipe($.sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(
       webpackStream(
         {
@@ -258,7 +265,7 @@ function javascript() {
         webpack2
       )
     )
-    .pipe($.sourcemaps.write())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
 
@@ -267,14 +274,14 @@ function javascript() {
 function images_minify() {
   return gulp
     .src('src/assets/img/**/*')
-    .pipe($.if(PRODUCTION, $.imagemin([$.imagemin.mozjpeg({ progressive: true })])))
+    .pipe(gulpIf(PRODUCTION, imagemin([mozjpeg({ progressive: true })])))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
 function images_webp() {
   return gulp
     .src('src/assets/img/**/*')
-    .pipe($.if(!SKIP_COMPRESSION, webp()))
+    .pipe(gulpIf(!SKIP_COMPRESSION, webp()))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
