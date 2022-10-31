@@ -32,7 +32,13 @@ const pluginSass = gulpSass(npmSass);
 
 import { processBlogFiles, getBlogEntries } from './src/services/blog-processor.js';
 import { processScienceBlogFiles } from './src/services/science-blog-processor.js';
-import analyseConfig from './src/data/analyse.json' assert {type: 'json'};
+
+// import assertions are still experimental, so do not use the following:
+// import analyseConfig from './src/data/analyse.json' assert {type: 'json'};
+// instead:
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const analyseConfig = require('./src/data/analyse.json');
 
 // Check for --develop or --dev flag
 const PRODUCTION = !(yargs.argv.develop || yargs.argv.dev);
