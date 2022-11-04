@@ -81,9 +81,9 @@ function itCallback ( func ) {
                 msg = 'Failed soft assertions... check log above ↑';
             } else {
                 _.each( errors, error => {
-                    msg += 'n' + error;
+                    msg += '\n' + error;
                 });
-                msg = msg.replace(/^/gm, 't');
+                msg = msg.replace(/^/gm, '\t');
             }
             throw new Error(msg);
         }
