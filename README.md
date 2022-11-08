@@ -28,7 +28,7 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need the Node.js 16 Active LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
+You need the Node.js 18 (Active LTS) version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
 
 ### Getting started
 
@@ -75,12 +75,12 @@ Manuals for the most common use cases of updating website content are available 
 
 ### Testing
 
-[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/integration` folder and can be run with:
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/e2e` folder and can be run with:
 
 ```bash
   npm run test
 ```
-Alternatively, execute `npm run test:open` to select individual tests or all tests to run from the Cypress console.
+Alternatively, execute `npm run test:open` to select individual tests to run from the Cypress console.
 
 To minimize the occurrence of errors we would ask you to perform all tests when contributing to our repository.
 
@@ -107,9 +107,9 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 
 To run all tests included in Cypress Test Production execute:
 
-`npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
+`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
 
-`npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
+`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
 
 ### Updating coronawarn.app
 
