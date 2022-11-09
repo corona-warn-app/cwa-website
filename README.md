@@ -30,6 +30,8 @@ This repository contains the source files of the official website for the Corona
 
 You need the Node.js 18 (Active LTS) version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
 
+In case you use a Mac computer with Apple Silicon, make sure that [Rosetta](https://support.apple.com/en-us/HT211861) is installed. 
+
 ### Getting started
 
 Clone the repository and ensure you have the requirements (from above) installed. To build and display the website in a web browser, switch to the `cwa-website` base directory and execute the commands:
