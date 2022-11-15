@@ -90,6 +90,22 @@ The production web https://www.coronawarn.app runs under the Ubuntu operating sy
 
 Other operating systems, such as Microsoft Windows, which access files in a case-insensitive mode, may hide problems in testing if there is a mismatch between the upper/lower-case file naming and the reference to the file. This applies to Cypress tests and testing by hand.
 
+#### Cypress cache
+
+Executing `npm install`, as described in the [Getting started](#getting-started) section, caches a separate copy of Cypress on the system. If the `cwa-website` later specifies a different Cypress version and `npm install` is executed again, then any previously cached Cypress versions remain on the system. Each cached version uses about 0.5 GB of storage. To free up storage space by manually cleaning up unneeded cached Cypress versions, carry out the following steps:
+
+To check which version of Cypress you have installed, execute the following command in a terminal window in the `cwa-website` base directory:
+
+[`npx cypress version`](https://docs.cypress.io/guides/guides/command-line#cypress-version)
+
+To show which versions are cached and how much storage space they take up, execute:
+
+[`npx cypress cache list --size`](https://docs.cypress.io/guides/guides/command-line#cypress-cache-list)
+
+Then to remove other versions, apart from the currently used version, execute:
+
+[`npx cypress cache prune`](https://docs.cypress.io/guides/guides/command-line#cypress-cache-prune)
+
 #### Notes for test developers
 
 Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, e.g. `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
