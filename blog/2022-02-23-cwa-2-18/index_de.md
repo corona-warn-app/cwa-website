@@ -15,7 +15,7 @@ Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat Version 
 
 <div class="right-float">
 <figure>
-<img src="./iPhone 13-screenshot_2g_plus_certificate_overview_de.png" alt="2G+-Status-Anzeige in der CWA" style="align: center" width=250px><figcaption aria-hidden="true"><em>Abb. 1: 2G+-Status-Anzeige in der CWA</em></figcaption>
+<img src="./iPhone 13-screenshot_2g_plus_certificate_overview_de.png" alt="2G+-Status-Anzeige in der CWA" style="align: center" width=250><figcaption aria-hidden="true"><em>Abb. 1: 2G+-Status-Anzeige in der CWA</em></figcaption>
 </figure>
 </div>
 
@@ -50,7 +50,7 @@ Fragen zum aktuellen Status beantworten wir in unseren [FAQ](../../faq/#admissio
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <img src="./booster_note_de.png" title="Hinweis zur Auffrischimpfung" alt="Hinweis zur Auffrischimpfung" style="align: center" width=250px>
+                <img src="./booster_note_de.png" title="Hinweis zur Auffrischimpfung" alt="Hinweis zur Auffrischimpfung" style="align: center" width=250>
                 <figcaption aria-hidden="true">
                     <em>Abb. 2: Hinweis zur Auffrischimpfung</em>
                 </figcaption>
@@ -58,7 +58,7 @@ Fragen zum aktuellen Status beantworten wir in unseren [FAQ](../../faq/#admissio
         </div>
         <div class="col-md-6">
             <figure>
-                <img src="./booster_note_detail_de.png" title="Detailansicht des Hinweises zur Auffrischimpfung" alt="Detailansicht des Hinweises zur Auffrischimpfung"style="align: center" width=250px>
+                <img src="./booster_note_detail_de.png" title="Detailansicht des Hinweises zur Auffrischimpfung" alt="Detailansicht des Hinweises zur Auffrischimpfung"style="align: center" width=250>
                 <figcaption aria-hidden="true">
                     <em>Abb. 3: Detailansicht des Hinweises zur Auffrischimpfung</em>
                 </figcaption>
