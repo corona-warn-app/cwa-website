@@ -16,10 +16,10 @@ Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat Version 
 Nutzer*innen der Corona-Warn-App können schon seit Version 2.13 Zertifikate, die sie aus Versehen gelöscht haben, aus dem Papierkorb wiederherstellen. Mit Version 2.14 ist das nun auch für registrierte PCR- und Schnelltests möglich. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./bin_test_ios_de.png" title="Papierkorb" alt="Papierkorb" style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Abb. 1: Papierkorb mit gelöschten Zertifikaten und Tests</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Entfernen Nutzer\*innen einen registrierten Test, wird dieser nun zunächst in den Papierkorb verschoben. Dort bleibt er 30 Tage, bevor er endgültig gelöscht wird. Android-Nutzer\*innen können ihn dann wiederherstellen, indem sie die drei Punkte in der rechten oberen Ecke des entsprechenden Tests auswählen und auf „Wiederherstellen“ tippen, iOS-Nutzer\*innen können den Test im Papierkorb auswählen und dann auf „Wiederherstellen“ tippen.
@@ -52,10 +52,10 @@ Der Test wird dann an den ursprünglichen Ort in der Corona-Warn-App verschoben.
 Nutzer*innen können außerdem weiterhin nur einen  aktiven Test in ihrer App registrieren. Stellen sie einen Test aus dem Papierkorb wieder her, während ein anderer Tests bereits vorliegt, wird der Test aus dem Papierkorb wiederhergestellt und der derzeit aktive Test in den Papierkorb verschoben.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./bin_another_test_ios_de.png" title="Zurückgerufenes, ungültiges Zertifikat" alt="Zurückgerufenes, ungültiges Zertifikat" style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Abb. 4: Die App kann maximal einen Schnelltest und einen PCR-Test gleichzeitig verwalten. Wenn Nutzer z.&nbsp;B. einen weiteren PCR-Test registrieren, wird der erste PCR-Test in den Papierkorb verschoben.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Die Einträge im Kontakt-Tagebuch, in denen vermerkt wird, wann Nutzer\*innen einen Schnelltest registriert beziehungsweise einen PCR-Test durchgeführt haben, werden nicht beeinflusst, wenn ein Test in den Papierkorb verschoben wird. 

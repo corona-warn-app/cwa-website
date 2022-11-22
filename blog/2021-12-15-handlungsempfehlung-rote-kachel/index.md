@@ -16,9 +16,9 @@ A “red warning” does not necessarily mean that you have been infected with C
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./red-tile.png" title="Red tile" alt="Red tile" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 The reason: If the increased risk-status indicator appears on your smartphone, you’ve had at least one encounter with a person who later tested positive for COVID-19 in the past 14 days. Therefore, regardless of whether you are vaccinated, unvaccinated, or have recovered from an infection, we recommend that you behave as follows in case of a “red warning”:
@@ -46,10 +46,10 @@ Pay attention to symptoms for these 14 days. They often occur 4 to 6 days after 
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./guidelines(1).png" title="Guidelines in case of a red tile" alt="Guidelines in case of a red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="Guidelines in case of a red tile" alt="Guidelines in case of a red tile" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Guidelines if you see a red tile in the Corona-Warn-App.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **<u>3) Have yourself tested </u>**
@@ -68,17 +68,17 @@ You can **find test options** under [Where can I get tested?](/en/faq/#where_can
 A **positive rapid test** must always be confirmed by a PCR test. So, if your rapid test is positive, try to get a PCR test. You can often do this directly at the test center. If your test center does not offer PCR tests, contact your general practitioner or your responsible health department and point out your positive rapid test result. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./positive-rapid-test.png" title="positive rapid test" alt="positive rapid test" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 If your **PCR test is positive**, contact your responsible public health authority and self-isolate. You should also inform your employer as soon as possible. Discuss a possible sick note with your general practitioner. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./positive-pcr-test.png" title="positive PCR test" alt="positive PCR test" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 As soon as your rapid test or PCR test result is available, share it with the Corona-Warn-App. This allows you to warn your contacts and help to end the infection chain quickly. 

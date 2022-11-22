@@ -16,9 +16,9 @@ Das Projektteam aus Robert Koch-Institut, Deutscher Telekom und SAP hat Version 
 Ab Version 2.17 können Nutzer\*innen neben den Statistiken für geimpfte Personen jetzt auch die Anzahl der Personen in Deutschland sehen, die eine Auffrischimpfung erhalten haben. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./booster_vaccination_de.png" title="Statistik-Kachel zu Auffrischimpfungen" alt="Statistik-Kachel zu Auffrischimpfungen" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 ### Papierkorb zeigt Löschdatum an
@@ -26,10 +26,10 @@ Ab Version 2.17 können Nutzer\*innen neben den Statistiken für geimpfte Person
 Außerdem können Nutzer\*innen nun für jedes Element in ihrem Papierkorb das **Löschdatum** sehen. Seit [Version 2.13 der CWA](/de/blog/2021-11-03-cwa-version-2-13/) werden alle Zertifikate und Tests, die gelöscht wurden, zunächst für 30 Tage in den Papierkorb verschoben. Dort sehen Nutzer\*innen nun, wann die 30 Tage abgelaufen sind und das jeweilige Zertifikat endgültig gelöscht wird. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./löschdatum-papierkorb.png" title="Löschdatum im Papierkorb" alt="Löschdatum im Papierkorb" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Löschdatum im Papierkorb (Android)</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **Android-Nutzer\*innen** gelangen zu ihrem Papierkorb, indem sie in der rechten oberen Ecke ihrer App die drei Punkte auswählen und dann auf „Papierkorb“ tippen. **iOS-Nutzer*innen** können auf dem Startbildschirm ihrer Corona-Warn-App nach unten wischen und dort unter „Mehr“ den „Papierkorb“ auswählen.
@@ -39,10 +39,10 @@ Außerdem können Nutzer\*innen nun für jedes Element in ihrem Papierkorb das *
 Des Weiteren hat das Projektteam einen **Link zu den Social-Media-Kanälen der CWA** eingefügt. Dort können Nutzer\*innen sich über die App informieren und sich mit anderen austauschen. Android-Nutzer\*innen finden den Link zu den Social-Media-Kanälen, indem sie auf die drei Punkte in der oberen Rechten Ecke der App tippen und dann „Social Media“ auswählen. iOS-Nutzer*innen können in der CWA nach unten wischen und dort unter dem Punkt „Mehr“ „Social Media“ auswählen.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./android-social-media-de.png" title="Link zu Social-Media-Kanälen der CWA" alt="Link zu Social-Media-Kanälen der CWA" style="align: center" width=250> <img src="./ios-social-media-de.png" title="Infokasten zum Statusnachweis" alt="Infokasten zum Statusnachweis" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Link zu Social-Media-Kanälen der CWA (links Android, rechts iOS).</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Über den Link in der App gelangen Nutzer\*innen zunächst auf die Website der CWA, wo sie dem Link auf den Twitter-Kanal der CWA oder dem Link auf den Instagram-Kanal des RKI folgen können. 
@@ -56,9 +56,9 @@ Bei [**RKI_für_Euch auf Instagram**](https://www.instagram.com/rki_fuer_euch/?h
 Außerdem hat das Projektteam die Hinweise und Vorgehensweise bei einem positiven PCR- und Schnelltestergebnis überarbeitet. Die CWA berücksichtigt damit die aktuellen Hinweise und **Empfehlungen des Robert Koch-Instituts [zur Testung](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Teststrategie/Nat-Teststrat.html) und dem [Kontaktpersonenmanagement](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Kontaktperson/Management.html;jsessionid=F75CD2A1645116D1558155F4644CD64E.internet091?nn=13490888)**. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./test-empfehlung(1).png" title="Hinweise bei positivem Testergebnis" alt="Hinweise bei positivem Testergebnis" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Beispielsweise weist die App bei positiven PCR-Tests nun auf Risikofaktoren hin. In den Details zum Testergebnis informiert sie außerdem darüber, dass die Isolationszeit in der Regel 10 Tage beträgt und Personen, zu denen positiv getestete Nutzer*innen über insgesamt mindestens 10 Minuten engen Kontakt hatten, als Kontaktpersonen gelten. 

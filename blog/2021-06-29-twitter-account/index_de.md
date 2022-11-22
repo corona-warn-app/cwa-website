@@ -19,5 +19,5 @@ Anmelden, folgen, mitdiskutieren: Twitter [@coronawarnapp](https://twitter.com/c
 
 
 <br></br>
-<center> <img src="./cwa-twitter-account.png" title="Twitter Account der CWA" alt="Twitter Account der CWA" style="align: center"> </center>
+<div class="text-center"> <img src="./cwa-twitter-account.png" title="Twitter Account der CWA" alt="Twitter Account der CWA"  ></div>
 <br></br>

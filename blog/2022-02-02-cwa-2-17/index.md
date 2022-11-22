@@ -16,9 +16,9 @@ The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have re
 As of version 2.17, users can see the number of people in Germany who have received a booster vaccination in addition to the statistics for fully vaccinated people and those who have received at least one vaccine dose. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./booster_vaccination-en.png" title="Booster vaccination statistics" alt="Booster vaccination statistics" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 ### Recycle bin shows exact date of deletion
@@ -26,10 +26,10 @@ As of version 2.17, users can see the number of people in Germany who have recei
 In addition, users can now see the deletion date for each item in their recycle bin. As of [CWA version 2.13](/en/blog/2021-11-03-cwa-version-2-13/), all certificates and tests that have been deleted are initially moved to the recycle bin for 30 days. Users can now see when the 30 days will expire, i.e., **when the respective certificate will be permanently deleted**. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./date-of-deletion.png" title="Date of deletion in recycle bin" alt="Date of deletion in recycle bin" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Date of deletion in the recycle bin (Android)</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Android users can access their recycle bin by selecting the three dots in the upper-right corner of their app and then tapping “recycle bin”. iOS users can swipe down on the home screen of their Corona-Warn-App and select “recycle bin” under “More”.
@@ -39,10 +39,10 @@ Android users can access their recycle bin by selecting the three dots in the up
 For version 2.17, the project team has added a **link to the CWA’s social media channels (in German language)** so that users can catch up on the latest developments and engage with others. Android users can find the link to the social media channels by tapping the three dots in the top-right corner of the app and then selecting “Social Media”. iOS users can swipe down on the CWA’s home screen and select “Social Media” under “More”.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ios-social-media-en.png" title="Link CWA social media channels" alt="Link CWA social media channels" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Link to the CWA's social media channels (iOS).</em></figcaption>
-</center>
+</div>
 <br></br>
 
 
@@ -59,9 +59,9 @@ In addition, the project team has revised the notes and procedure for positive P
 . 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./test-guidance(1).png" title="Guidance in case of positive test results" alt="Guidance in case of positive test results" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 For example, the app now indicates risk factors under positive PCR test results. In the test result details, it informs users that the isolation time  is usually 10 days and people to whom positively tested users have been in close contact for at least 10 minutes in total are considered contact persons.

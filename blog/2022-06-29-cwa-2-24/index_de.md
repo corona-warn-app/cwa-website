@@ -19,9 +19,9 @@ Da das PDF-Dokument **sensible Daten** enthält, sollten die CWA-Nutzer\*innen a
  
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./zertifikats-export.png" title="Zertifikate exportieren" style="align: center" width=250> <img src="./export-details.png" title="Zertifikate exportieren" style="align: center" width=250>  
-</center>
+</div>
 <br></br>
 
 
