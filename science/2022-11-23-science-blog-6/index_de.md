@@ -112,7 +112,7 @@ Um einen Eindruck der lokalen Unterschiede zu geben, sind in der folgenden Abbil
 <figcaption aria-hidden="true">Abb. 5: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, für vier zufällig gewählte Kreise.</figcaption>
 <br/>
 
-Auch hier sehen wir deutliche die größere Abhängigkeit des Positivenanteils bei niedrigem Risiko ohne Risikobegegnung von der Inzidenz deutlich: die grüne Kurve schwankt stärker als die rote oder gelbe.
+Auch hier sehen wir deutlich die größere Abhängigkeit des Positivenanteils bei niedrigem Risiko ohne Risikobegegnung von der Inzidenz: die grüne Kurve schwankt stärker als die rote oder gelbe.
 
 ### 4.1 RAT
 
