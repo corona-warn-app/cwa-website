@@ -29,6 +29,20 @@ In den vergangenen Monaten wurde kritisiert, dass in Zeiten einer hohen Inzidenz
 7. [Fazit](#7-fazit)
 8. [So geht es weiter](#8-so-geht-es-weiter)
 
+- [1 Das Wichtigste in Kürze: Zahlen, Daten, Fakten](#1-das-wichtigste-in-kürze-zahlen-daten-fakten)
+- [2 Positivenanteile (bundesweit)](#2-positivenanteile-bundesweit)
+  - [2.1 RAT](#21-rat)
+  - [2.2 PCR](#22-pcr)
+- [3 Lokale Unterschiede der Inzidenz](#3-lokale-unterschiede-der-inzidenz)
+- [4 Positivenanteile (lokal)](#4-positivenanteile-lokal)
+  - [4.1 RAT](#41-rat)
+  - [4.2 PCR](#42-pcr)
+- [5 Positivenanteil und Inzidenz](#5-positivenanteil-und-inzidenz)
+  - [5.1 RAT](#51-rat)
+  - [5.2 PCR](#52-pcr)
+- [6 Unterschiede zwischen urbanen und ländlichen Kreisen](#6-unterschiede-zwischen-urbanen-und-ländlichen-kreisen)
+- [7 Fazit](#7-fazit)
+- [8 So geht es weiter](#8-so-geht-es-weiter)
 
 ## 1 Das Wichtigste in Kürze: Zahlen, Daten, Fakten
 
@@ -52,9 +66,11 @@ Täglich spenden etwa 15,4 Mio. Nutzende der CWA ihre Daten. So wurden bisher ca
 
 Insgesamt gab es ca. 27,4 Mio. übermittelte Ergebnisse von Antigen-Schnelltests (RAT), bei denen ca. 7,9 Mio. mindestens eine Risikobegegnung vorausging. In der folgenden Abbildung ist der zeitliche Verlauf der Positivenanteile für jede Art der Risikobenachrichtigung angegeben. Über die Datenspende werden erst seit dem 24. Juni 2021 Antigen-Schnelltest-Ergebnisse registriert.
 
+<figure class="figure-img">
 <img src="./ppa_risk_infection_ct_timeline_rat-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT)."/>
 <figcaption aria-hidden="true">Abb. 1: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT).</figcaption>
 <br>
+</figure>
 
 Hier liegt der Positivenanteil bei erhöhtem Risiko nahezu immer über dem bei niedrigem Risiko mit oder ohne Risikobegegnung.
 
