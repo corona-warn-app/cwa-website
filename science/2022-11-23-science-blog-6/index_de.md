@@ -8,7 +8,7 @@ date: "2022-11-23"
 layout: science
 ---
 
-In diesem Beitrag wollen wir untersuchen, welche Aussagekraft eine rote Warnung gegenüber einem niedrigen Risiko mit bzw. ohne Risikobegegnung hat. Hierzu betrachten wir den Positivenanteil der Testergebnisse, d.&nbsp;h. den Anteil der positiven Testergebnisse, in Abhängigkeit vom angezeigten Risiko. Die Daten hierfür stammen aus der [Datenspende der Corona-Warn-App](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics).
+In diesem Beitrag wollen wir untersuchen, welche Aussagekraft eine rote Warnung gegenüber einem niedrigen Risiko mit bzw. ohne Risikobegegnung hat. Hierzu betrachten wir den Positivenanteil der Testergebnisse, d.&nbsp;h. den Anteil der positiven Testergebnisse, in Abhängigkeit vom angezeigten Risiko. Die Daten hierfür stammen aus der [Datenspende der Corona-Warn-App](2021-10-15-science-blog-4/#3-privacy-preserving-analytics).
 
 In den vergangenen Monaten wurde kritisiert, dass in Zeiten einer hohen Inzidenz eine rote Warnung keine Aussagekraft mehr habe. Das Infektionsrisiko bestünde ganz unabhängig davon, ob eine rote Warnung in der CWA vorläge oder nicht. Außerdem sei die Häufigkeit der roten Warnungen so hoch, dass die einzelnen Warnungen keine Aussagekraft mehr haben. Wir wollen zeigen, dass dem nicht so ist. Insbesondere für Schnelltestergebnisse, die ja oft erst der Anlass für einen PCR-Test sind, war der Positivenanteil bei einer roten Warnung deutlich größer als bei einer grünen Warnung (niedriges Risiko mit Risikobegegnung). Darüber hinaus untersuchen wir, ob sich diese größeren Positivenanteile bei einer roten Warnung allein aus lokalen Schwankungen der Inzidenz erklären lassen.
 
