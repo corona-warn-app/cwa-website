@@ -29,21 +29,6 @@ In den vergangenen Monaten wurde kritisiert, dass in Zeiten einer hohen Inzidenz
 7. [Fazit](#7-fazit)
 8. [So geht es weiter](#8-so-geht-es-weiter)
 
-- [1 Das Wichtigste in Kürze: Zahlen, Daten, Fakten](#1-das-wichtigste-in-kürze-zahlen-daten-fakten)
-- [2 Positivenanteile (bundesweit)](#2-positivenanteile-bundesweit)
-  - [2.1 RAT](#21-rat)
-  - [2.2 PCR](#22-pcr)
-- [3 Lokale Unterschiede der Inzidenz](#3-lokale-unterschiede-der-inzidenz)
-- [4 Positivenanteile (lokal)](#4-positivenanteile-lokal)
-  - [4.1 RAT](#41-rat)
-  - [4.2 PCR](#42-pcr)
-- [5 Positivenanteil und Inzidenz](#5-positivenanteil-und-inzidenz)
-  - [5.1 RAT](#51-rat)
-  - [5.2 PCR](#52-pcr)
-- [6 Unterschiede zwischen urbanen und ländlichen Kreisen](#6-unterschiede-zwischen-urbanen-und-ländlichen-kreisen)
-- [7 Fazit](#7-fazit)
-- [8 So geht es weiter](#8-so-geht-es-weiter)
-
 ## 1 Das Wichtigste in Kürze: Zahlen, Daten, Fakten
 
 - Ob Antigen-Schnelltest oder PCR-Test: der Positivenanteil von roten Warnungen ist stets größer als derjenige von grünen Warnungen (niedriges Risiko mit Risikobegegnung). Mit anderen Worten: dort wo Risikobegegnungen erkannt werden, kann die CWA das Risiko zuverlässig einschätzen.
