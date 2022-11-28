@@ -54,7 +54,6 @@ Insgesamt gab es ca. 27,4 Mio. übermittelte Ergebnisse von Antigen-Schnelltests
 <figure class="figure-img">
 <img src="./ppa_risk_infection_ct_timeline_rat-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT)."/>
 <figcaption aria-hidden="true">Abb. 1: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (RAT).</figcaption>
-<br>
 </figure>
 
 Hier liegt der Positivenanteil bei erhöhtem Risiko nahezu immer über dem bei niedrigem Risiko mit oder ohne Risikobegegnung.
@@ -68,7 +67,6 @@ Insgesamt gab es ca. 10 Mio. übermittelte Ergebnisse von PCR-Tests (PCR), bei d
 <figure class="figure-img">
 <img src="./ppa_risk_infection_ct_timeline_pcr-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (PCR)."/>
 <figcaption aria-hidden="true">Abb. 2: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf (PCR).</figcaption>
-<br>
 </figure>
 
 Auffällig ist hier der deutlich größere Positivenanteil bei erhöhtem Risiko gegenüber dem bei niedrigem Risiko ohne Risikobegegnung in Zeiten relativ niedriger Inzidenz. In Hochinzidenz-Zeiten laufen die Kurven nahezu gleich. Weiter unten wollen wir diesen Zusammenhang näher beleuchten.
@@ -95,8 +93,8 @@ Dieses Beispiel dient lediglich der Verdeutlichung des Effekts und wurde bewusst
 
 <figure class="figure-img">
 <img src="./rki_covid_lk_inz_paired_plot-1.png" class="figure-img img-fluid" alt="Quotient der 7-Tage-Inzidenzen im zeitlichen Verlauf (50 Paare von Kreisen)."/>
-<figcaption aria-hidden="true">Abb. 3: Quotient der 7-Tage-Inzidenzen im zeitlichen Verlauf (50 Paare von Kreisen).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 3: Quotient der 7-Tage-Inzidenzen im zeitlichen Verlauf (50 Paare von Kreisen).
+</figcaption>
 </figure>
 
 Wir sehen, dass sich die Inzidenzen in den Kreisen nur gering unterschieden, nur in wenigen Ausnahmen wird ein Faktor 10 erreicht. Eine so starke Beeinflussung der unterschiedlichen Positivenanteile aufgrund lokaler Unterschiede in der Inzidenz, wie in obigem Beispiel beschriebenen, kann damit ausgeschlossen werden.
@@ -107,8 +105,8 @@ Wir werden im Folgenden die lokalen Positivenanteile untersuchen. Dabei betracht
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_smooth_all-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn)."/>
-<figcaption aria-hidden="true">Abb. 4: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 4: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn).
+</figcaption>
 </figure>
 
 Der Positivenanteil nach einer roten Warnung ist stets größer als nach einer grünen Warnung (niedriges Risiko mit Risikobegegnung). Bei hohen Inzidenzen ist der Positivenanteil nach niedrigem Risiko ohne Risikobegegnung gelegentlich größer und gleichzeitig stärker von der Inzidenz abhängig (steigt und fällt schneller) als nach einer roten Warnung. Eine getrennte Betrachtung von Antigen-Schnelltests und PCR-Tests kann hier erhellen.
@@ -117,8 +115,8 @@ Um einen Eindruck der lokalen Unterschiede zu geben, sind in der folgenden Abbil
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_smooth_sample-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, für vier zufällig gewählte Kreise."/>
-<figcaption aria-hidden="true">Abb. 5: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, für vier zufällig gewählte Kreise.</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 5: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, für vier zufällig gewählte Kreise.
+</figcaption>
 </figure>
 
 Auch hier sehen wir deutlich die größere Abhängigkeit des Positivenanteils bei niedrigem Risiko ohne Risikobegegnung von der Inzidenz: die grüne Kurve schwankt stärker als die rote oder gelbe.
@@ -129,8 +127,8 @@ Der zeitliche Verlauf der Mittelung der Positivenanteile für Antigen-Schnelltes
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_smooth_rat-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn) (RAT)."/>
-<figcaption aria-hidden="true">Abb. 6: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn) (RAT).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 6: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn) (RAT).
+</figcaption>
 </figure>
 
 Dies ergibt ein ähnliches Bild wie im bundesweiten Verlauf. Auf eine rote Warnung in der CWA folgt deutlich häufiger ein im zeitlichen Zusammenhang stehendes positives Testergebnis als für grüne Warnungen (niedriges Risiko mit Risikobegegnung). In Hochinzidenz-Zeiten verlaufen die Positivenanteile ebenfalls nahezu gleich und werden von dem Positivenanteil bei niedrigem Risiko ohne Risikobegegnung nicht übertroffen. Mit dem Wegfall der allgemeinen Testpflicht werden Tests in den letzten Monaten offenbar nur noch bei begründetem Verdacht durchgeführt, wodurch sich größere Positivenanteile auch bei relativ geringeren (als in den Zeiträumen zuvor) Inzidenzen ergeben.
@@ -139,8 +137,8 @@ Wir geben auch die monatlichen Verhältnisse an, um einen Eindruck der zugrundel
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_boxplot_rat-1.png" class="figure-img img-fluid" alt="Monatliche Positivenanteile nach Risikobenachrichtigung (RAT)."/>
-<figcaption aria-hidden="true">Abb. 7: Monatliche Positivenanteile nach Risikobenachrichtigung (RAT).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 7: Monatliche Positivenanteile nach Risikobenachrichtigung (RAT).
+</figcaption>
 </figure>
 
 ### 4.2 PCR
@@ -149,8 +147,8 @@ Der zeitliche Verlauf der Mittelung der Positivenanteile von PCR-Testergebnissen
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_smooth_pcr-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn) (PCR)."/>
-<figcaption aria-hidden="true">Abb. 8: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn) (PCR).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 8: Positivenanteil nach Risikobenachrichtigung im zeitlichen Verlauf, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise (dick) bzw. bundesweit (dünn) (PCR).
+</figcaption>
 </figure>
 
 Dies ergibt ein ähnliches Bild wie im bundesweiten Verlauf (in der Abbildung die dünnen Kurven). Eine rote Warnung führt zum Teil deutlich eher zu einem positiven Testergebnis als eine grüne Warnung (niedriges Risiko mit Risikobegegnung). In Hochinzidenz-Zeiten verlaufen die Positivenanteile nahezu gleich und werden vom Positivenanteil bei niedrigem Risiko ohne Risikobegegnung zum Teil übertroffen. In diesen Zeiten ist die Wahrscheinlichkeit eben sehr hoch, sich auch bei einer Person, die die CWA nicht nutzt, anzustecken. Das Ansteckungsrisiko sollte eigentlich unabhängig von der CWA-Nutzung sein, die Unsicherheit des Risikos ist es jedoch nicht: bei korrekter Einschätzung des Risikos durch die CWA sinkt die Unsicherheit dieser Einschätzung bei zunehmender Nutzung der CWA. Eine weitere Erklärung könnte in einer Vorselektion durch Antigen-Schnelltests (offiziell oder häuslich) liegen. Nur wenn ein solcher positiv ist, wird ein PCR-Test veranlasst.
@@ -159,8 +157,8 @@ Um auch einen Eindruck der zugrundeliegenden Testvolumina zu erhalten sind die m
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_boxplot_pcr-1.png" class="figure-img img-fluid" alt="Monatliche Positivenanteile nach Risikobenachrichtigung (PCR)."/>
-<figcaption aria-hidden="true">Abb. 9: Monatliche Positivenanteile nach Risikobenachrichtigung (PCR).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 9: Monatliche Positivenanteile nach Risikobenachrichtigung (PCR).
+</figcaption>
 </figure>
 
 ## 5 Positivenanteil und Inzidenz
@@ -169,8 +167,8 @@ Neben dem zeitlichen Verlauf wollen wir nun die Abhängigkeit des Positivenantei
 
 <figure class="figure-img">
 <img src="./ppa_test_result_pos_inz_all-1.png" class="figure-img img-fluid" alt="Positivenanteil nach Risikobenachrichtigung in Abhängigkeit von der lokalen 7-Tage-Inzidenz, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise."/>
-<figcaption aria-hidden="true">Abb. 10: Positivenanteil nach Risikobenachrichtigung in Abhängigkeit von der lokalen 7-Tage-Inzidenz, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise.</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 10: Positivenanteil nach Risikobenachrichtigung in Abhängigkeit von der lokalen 7-Tage-Inzidenz, geglättet und mit Konfidenzintervall, gemittelt über alle Kreise.
+</figcaption>
 </figure>
 
 In der Abbildung wurde für die Inzidenz eine Potenz-Skala verwendet. Hierdurch sind die zeitlich längeren bzw. häufigeren Phasen niedriger und mittlere Inzidenz besser repräsentiert. In dieser Darstellung verläuft der Positivenanteil bei niedrigem Risiko ohne Risikobegegnung nahezu linear. Auch hier gibt eine getrennte Betrachtung von Antigen-Schnelltests und PCR-Tests ein präziseres Bild.
@@ -181,24 +179,24 @@ Wir geben zunächst den Zusammenhang zwischen der Inzidenz und dem Positivenante
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_rat-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung für 5.000 Testergebnisse (RAT)."/>
-<figcaption aria-hidden="true">Abb. 11: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung für 5.000 Testergebnisse (RAT).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 11: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung für 5.000 Testergebnisse (RAT).
+</figcaption>
 </figure>
 
 Der Unterschied zwischen den Positivenanteilen je nach Art der Risikobenachrichtigung ist hier noch eindrucksvoller. Zu beachten ist jedoch, dass die Positivenanteile für Antigen-Schnelltests durchweg kleiner ausfallen als für PCR-Tests. Dies liegt zum großen Teil an der [Teststrategie](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Testung).
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_rat_2-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung und Inzidenzbereichen (RAT)."/>
-<figcaption aria-hidden="true">Abb. 12: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung und Inzidenzbereichen (RAT).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 12: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung und Inzidenzbereichen (RAT).
+</figcaption>
 </figure>
 
 Der Positivenanteil ist hier nach roten Warnungen durchweg größer als bei niedrigem Risiko mit oder ohne Risikobegegnung. Der Anstieg des Positivenanteils mit zunehmender Inzidenz (und damit seine Abhängigkeit von der Inzidenz) ist im Falle eines niedrigen Risikos ohne Risikobegegnung deutlich stärker als derjenige nach einer roten Warnung. Auch in Zeiten von hohen Inzidenzen geht eine rote Warnung mit einem höheren Infektionsrisiko einher als eine Warnung über ein niedriges Risiko.
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_rat_3-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (RAT)."/>
-<figcaption aria-hidden="true">Abb. 13: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (RAT).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 13: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (RAT).
+</figcaption>
 </figure>
 
 Für Schnelltestergebnisse ist auch in der nichtlinearen Annäherung (links) die nahezu lineare Abhängigkeit des Positivenanteils von der Inzidenz gut zu erkennen. Hier ist die Abhängigkeit für rote Warnungen nur etwa halb so hoch. Der Positivenanteil (und damit das geschätzte Risiko, sich infiziert zu haben) ist nach einer roten Warnung etwa doppelt so hoch wie nach einer grünen Warnung (niedriges Risiko mit Risikobegegnung), unabhängig von der Inzidenz.
@@ -209,8 +207,8 @@ Wir wiederholen die oben ausgeführten Analysen nun für 5.000 PCR‑Testergebni
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_pcr-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung für 5.000 Testergebnisse (PCR)."/>
-<figcaption aria-hidden="true">Abb. 14: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung für 5.000 Testergebnisse (PCR).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 14: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung für 5.000 Testergebnisse (PCR).
+</figcaption>
 </figure>
 
 Wir können erkennen, dass die Abhängigkeit des Positivenanteils von der Inzidenz nach einer Warnung über ein niedriges Risiko ohne Risikobegegnung stärker ist, als nach roten Warnungen. Der Positivenanteil nach roten Warnungen ist stets größer als nach grünen Warnungen (niedriges Risiko mit Risikobegegnung).
@@ -219,16 +217,16 @@ Diesen Zusammenhang können wir auch in der folgenden Abbildung erkennen. Hier s
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_pcr_2-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung und Inzidenzbereichen (PCR)."/>
-<figcaption aria-hidden="true">Abb. 15: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung und Inzidenzbereichen (PCR).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 15: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung und Inzidenzbereichen (PCR).
+</figcaption>
 </figure>
 
 Wir können diesen Zusammenhang auch in einer stetigen Abbildung zusammenfassen (Abb. 16A) und ebenso eine lineare Annäherung dieses Zusammenhangs geben (Abb. 16B).
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_pcr_3-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (PCR)."/>
-<figcaption aria-hidden="true">Abb. 16: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (PCR).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 16: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (PCR).
+</figcaption>
 </figure>
 
 Die nichtlinearen Kurven (links) flachen mit zunehmender Inzidenz ab. Vermutlich deswegen, weil in Zeiten hoher Inzidenz auch zunehmend kontaktbeschränkende Maßnahmen bzw. ein Lockdown eingeführt wurden und daher zum einen die Kontaktraten geringer waren und zum anderen seltener Tests durchgeführt wurden, die für Treffen benötigt wurden und bei denen ein negatives Ergebnis schon erwartet wurde.
@@ -243,16 +241,15 @@ Zum Abschluss zeigen wir in den folgenden zwei Abbildungen noch die inzidenzabh�
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_rat_3_prefix-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (RAT)."/>
-<figcaption aria-hidden="true">Abb. 17: Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (RAT).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 17: Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (RAT).
+</figcaption>
 </figure>
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_pcr_3_prefix-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (PCR)."/>
-<figcaption aria-hidden="true">Abb. 18: Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (PCR).</figcaption>
-<br>
+<figcaption aria-hidden="true">Abb. 18: Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (PCR).
+</figcaption>
 </figure>
-
 
 Für beide Testarten ist der Unterschied zwischen roten und grünen Warnungen (niedriges Risiko mit Risikobegegnung) und damit die Aussagekraft des eingeschätzten Risikos für ländliche Kreise größer als für urbane.
 
