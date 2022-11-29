@@ -4,7 +4,7 @@ page-description: "Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
 page-name: science-blog-6
 page-name_de: science-blog-6
 author: CWA-Team
-date: "2022-11-23"
+date: "2022-11-30"
 layout: science
 ---
 
@@ -16,15 +16,15 @@ In den vergangenen Monaten wurde kritisiert, dass in Zeiten einer hohen Inzidenz
 
 1. [Das Wichtigste in Kürze: Zahlen, Daten, Fakten](#1-das-wichtigste-in-kürze-zahlen-daten-fakten)
 2. [Positivenanteile (bundesweit)](#2-positivenanteile-bundesweit)
-    1. [RAT](#21-rat)
-    2. [PCR](#22-pcr)
+    1. [Antigen-Schnelltest (RAT)](#21-antigen-schnelltest-rat)
+    2. [PCR-Test](#22-pcr-test)
 3. [Lokale Unterschiede der Inzidenz](#3-lokale-unterschiede-der-inzidenz)
 4. [Positivenanteile (lokal)](#4-positivenanteile-lokal)
-    1. [RAT](#41-rat)
-    2. [PCR](#42-pcr)
+    1. [Antigen-Schnelltest (RAT)](#41-antigen-schnelltest-rat)
+    2. [PCR-Test](#42-pcr-test)
 5. [Positivenanteil und Inzidenz](#5-positivenanteil-und-inzidenz)
-    1. [RAT](#41-rat)
-    2. [PCR](#42-pcr)
+    1. [Antigen-Schnelltest (RAT)](#51-antigen-schnelltest-rat)
+    2. [PCR-Test](#52-pcr-test)
 6. [Unterschiede zwischen urbanen und ländlichen Kreisen](#6-unterschiede-zwischen-urbanen-und-ländlichen-kreisen)
 7. [Fazit](#7-fazit)
 8. [So geht es weiter](#8-so-geht-es-weiter)
@@ -47,7 +47,7 @@ In den vergangenen Monaten wurde kritisiert, dass in Zeiten einer hohen Inzidenz
 
 Täglich spenden etwa 15,4 Mio. Nutzende der CWA ihre Daten. So wurden bisher ca. 37,4 Mio. Testergebnisse übermittelt (Stand: 14. November 2022). Hierbei wurden nur solche Testergebnisse berücksichtigt, die positiv oder negativ ausfielen (keine ausstehenden und ungültigen). Durch die CWA identifizierte Risikobegegnungen wurden nur berücksichtigt, wenn sie bis zu 10 Tage vor der Testregistrierung lag (dies war bei ca. 10,7 Mio. Testergebnissen der Fall). Eine Angabe zum Kreis (Landkreis bzw. kreisfreie Stadt des Wohnorts des CWA-Nutzenden) lag bei ca. 14,3 Mio. Testergebnissen vor.
 
-### 2.1 RAT
+### 2.1 Antigen-Schnelltest (RAT)
 
 Insgesamt gab es ca. 27,4 Mio. übermittelte Ergebnisse von Antigen-Schnelltests (RAT), bei denen ca. 7,9 Mio. mindestens eine Risikobegegnung vorausging. In der folgenden Abbildung ist der zeitliche Verlauf der Positivenanteile für jede Art der Risikobenachrichtigung angegeben. Über die Datenspende werden erst seit dem 24. Juni 2021 Antigen-Schnelltest-Ergebnisse registriert.
 
@@ -60,7 +60,7 @@ Hier liegt der Positivenanteil bei erhöhtem Risiko nahezu immer über dem bei n
 
 Der Positivenanteil schwankt hierbei je nach Infektionsgeschehen und Warnung. Nach einer roten Warnung liegt der Positivenanteil zwischen 0 und 0,25, für ein niedriges Risiko mit Risikobegegnung zwischen 0 und 0,16 und für ein niedriges Risiko ohne Risikobegegnung zwischen 0 und 0,15.
 
-### 2.2 PCR
+### 2.2 PCR-Test
 
 Insgesamt gab es ca. 10 Mio. übermittelte Ergebnisse von PCR-Tests (PCR), bei denen ca. 2,7 Mio. mindestens eine Risikobegegnung vorausging. In der folgenden Abbildung ist der zeitliche Verlauf der Positivenanteile für jede Art der Risikobenachrichtigung angegeben. Über die Datenspende werden seit dem 10. März 2021 PCR-Testergebnisse registriert.
 
@@ -121,7 +121,7 @@ Um einen Eindruck der lokalen Unterschiede zu geben, sind in der folgenden Abbil
 
 Auch hier sehen wir deutlich die größere Abhängigkeit des Positivenanteils bei niedrigem Risiko ohne Risikobegegnung von der Inzidenz: die grüne Kurve schwankt stärker als die rote oder gelbe.
 
-### 4.1 RAT
+### 4.1 Antigen-Schnelltest (RAT)
 
 Der zeitliche Verlauf der Mittelung der Positivenanteile für Antigen-Schnelltests (RAT) über alle Kreise, aufgeschlüsselt nach Risikobenachrichtigung, ist in folgender Abbildung enthalten.
 
@@ -141,7 +141,7 @@ Wir geben auch die monatlichen Verhältnisse an, um einen Eindruck der zugrundel
 </figcaption>
 </figure>
 
-### 4.2 PCR
+### 4.2 PCR-Test
 
 Der zeitliche Verlauf der Mittelung der Positivenanteile von PCR-Testergebnissen über alle Kreise, aufgeschlüsselt nach Risikobenachrichtigung, ist in folgender Abbildung enthalten.
 
@@ -173,7 +173,7 @@ Neben dem zeitlichen Verlauf wollen wir nun die Abhängigkeit des Positivenantei
 
 In der Abbildung wurde für die Inzidenz eine Potenz-Skala verwendet. Hierdurch sind die zeitlich längeren bzw. häufigeren Phasen niedriger und mittlere Inzidenz besser repräsentiert. In dieser Darstellung verläuft der Positivenanteil bei niedrigem Risiko ohne Risikobegegnung nahezu linear. Auch hier gibt eine getrennte Betrachtung von Antigen-Schnelltests und PCR-Tests ein präziseres Bild.
 
-### 5.1 RAT
+### 5.1 Antigen-Schnelltest (RAT)
 
 Wir geben zunächst den Zusammenhang zwischen der Inzidenz und dem Positivenanteil nach Risikobenachrichtigung für 5.000 Antigen-Schnelltests (RAT) an.
 
@@ -201,7 +201,7 @@ Der Positivenanteil ist hier nach roten Warnungen durchweg größer als bei nied
 
 Für Schnelltestergebnisse ist auch in der nichtlinearen Annäherung (links) die nahezu lineare Abhängigkeit des Positivenanteils von der Inzidenz gut zu erkennen. Hier ist die Abhängigkeit für rote Warnungen nur etwa halb so hoch. Der Positivenanteil (und damit das geschätzte Risiko, sich infiziert zu haben) ist nach einer roten Warnung etwa doppelt so hoch wie nach einer grünen Warnung (niedriges Risiko mit Risikobegegnung), unabhängig von der Inzidenz.
 
-### 5.2 PCR
+### 5.2 PCR-Test
 
 Wir wiederholen die oben ausgeführten Analysen nun für 5.000 PCR‑Testergebnisse. Dazu geben wir zunächst wieder den Zusammenhang zwischen der 7-Tage-Inzidenz und dem Positivenanteil nach Risikobenachrichtigung an.
 
