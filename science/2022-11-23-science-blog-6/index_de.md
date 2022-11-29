@@ -45,7 +45,7 @@ In den vergangenen Monaten wurde kritisiert, dass in Zeiten einer hohen Inzidenz
 
 ## 2 Positivenanteile (bundesweit)
 
-Täglich spenden etwa 15,4 Mio. Nutzende der CWA ihre Daten. So wurden bisher ca. 37,4 Mio. Testergebnisse übermittelt (Stand: 14. November 2022). Hierbei wurden nur solche Testergebnisse berücksichtigt, die positiv oder negativ ausfielen (keine ausstehenden und ungültigen). Durch die CWA identifizierte Risikobegegnungen wurden nur berücksichtigt, wenn sie bis zu 10 Tage vor der Testregistrierung lag (dies war bei ca. 10,7 Mio. Testergebnissen der Fall). Eine Angabe zum Kreis (Landkreis bzw. kreisfreie Stadt des Wohnorts des CWA-Nutzenden) lag bei ca. 14,3 Mio. Testergebnissen vor.
+Täglich spenden etwa 15,4 Mio. Nutzende der CWA ihre Daten, die die Grundlage dieses Science-Blogs bilden. So wurden bisher ca. 37,4 Mio. Testergebnisse übermittelt (Stand: 14. November 2022). Hierbei wurden nur solche Testergebnisse berücksichtigt, die positiv oder negativ ausfielen (keine ausstehenden und ungültigen). Durch die CWA identifizierte Risikobegegnungen wurden nur berücksichtigt, wenn sie bis zu 10 Tage vor der Testregistrierung lag (dies war bei ca. 10,7 Mio. Testergebnissen der Fall). Eine Angabe zum Kreis (Landkreis bzw. kreisfreie Stadt des Wohnorts des CWA-Nutzenden) lag bei ca. 14,3 Mio. Testergebnissen vor.
 
 ### 2.1 Antigen-Schnelltest (RAT)
 
