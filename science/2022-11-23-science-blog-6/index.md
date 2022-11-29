@@ -4,7 +4,7 @@ page-description: "What does a red warning mean when the incidence is high?"
 page-name: science-blog-6
 page-name_de: science-blog-6
 author: CWA Team
-date: "2022-11-23"
+date: "2022-11-30"
 layout: science
 ---
 
