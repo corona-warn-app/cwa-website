@@ -1373,7 +1373,7 @@
                                     "<h3>Erklärvideo</h3>",
                                     "<hr>",
                                     "Im folgenden Erklärvideo erfahren Sie wie die Kontaktverfolgung der Corona-Warn-App funktioniert und was sie kann.",
-                                    "<video src='/assets/video/erklaerfilm_de.mp4' class='w-100' controls='' alt='Corona-Warn-App - Erklärvideo'></video>"
+                                    "<video src='/assets/video/erklaerfilm_de.mp4' class='w-100' controls='' aria-label='Corona-Warn-App - Erklärvideo'></video>"
                                 ]
                             },
                             {
@@ -3038,14 +3038,6 @@
                                     "<a href='#android_location' target='_blank'>[Google/Android]: Beim Einschalten der Risiko-Ermittlung bzw. von Bluetooth bekomme ich Meldungen zur Aktivierung der Standortverwendung. Muss ich das aktivieren?</a>",
                                     "Ab Android-Version 11 können die Standort-Dienste ausgeschaltet werden, ohne dass die Funktionalität der App beeinträchtigt wird.",
                                     "Aktivieren Sie deswegen bitte immer Bluetooth (und bei Android bis zur Version 10 auch die Standort-Dienste), wenn Sie in Kontakt mit anderen Leuten sind, zum Beispiel, wenn Sie Gäste haben oder nach draußen gehen."
-                                ]
-                            },
-                            {
-                                "title": "Meine Begegnungsüberprüfung zeigt mehrere zeitgleiche Einträge. Ist das ein Fehler?",
-                                "anchor": "multiple_exposure_checks",
-                                "active": false,
-                                "textblock": [
-                                    "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung der Begegnungsaufzeichnungen durchgeführt. Dabei wird für jeden der letzte 14 Tage (10 Tage ab Version 2.20), für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung der Begegnungsaufzeichnungen durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Überprüfungs-Historie vorhanden sind. Sie können zudem auf die Überprüfungseinträge klicken und sehen, dass immer unterschiedlich viele Schlüssel geprüft werden."
                                 ]
                             },
                             {
