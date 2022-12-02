@@ -1935,6 +1935,25 @@
                         ]
                     },
                     {
+                        "title": "Backup",
+                        "id": "support_backup",
+                        "indexed": true,
+                        "accordion":[
+                            {
+                                "duplicate":"eu_dcc_export"
+                            },
+                            {
+                                "duplicate":"vac_cert_multiple_scan_possible"
+                            },
+                            {
+                                "duplicate":"new_device"
+                            },
+                            {
+                                "duplicate":"backup"
+                            }
+                        ]
+                    },
+                    {
                         "title": "Android",
                         "id": "android",
                         "indexed": true,
@@ -2776,7 +2795,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Etablierte Verschlüsselungsmechanismen wie HTTPS stellen sicher, dass Meldungen nicht von fremden Betrachtern gelesen werden können. Vor der Verarbeitung der Nutzdaten bei der Übermittlung von Diagnoseschlüsseln ('Positivkennungen') werden Metadaten entfernt. Dies verhindert, dass Daten auf der Datenbankebene miteinander verknüpft werden können.",
-                                    "Darüber hinaus wird es in Kürze weitere technische Maßnahmen geben, z.&nbsp;B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet und dann im Backend wieder verworfen werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
+                                    "Darüber hinaus gibt es weitere technische Maßnahmen, z.&nbsp;B. indem nach dem Zufallsprinzip unechte Meldungen erstellt und gesendet und dann im Backend wieder verworfen werden. Diese unechten Meldungen sind von den gültigen Meldungen nicht zu unterscheiden und erzeugen eine Art Hintergrundgeräusch, durch das der Sendeaufruf der TANs und das Hochladen der Infektionsdaten nicht von diesem Hintergrundgeräusch unterscheidbar sind. So kann selbst bei überwachtem Netzwerkverkehr eine plausible Abstreitbarkeit geschaffen werden."
                                 ]
                             },
                             {
