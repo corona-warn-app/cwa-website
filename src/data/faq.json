@@ -890,7 +890,8 @@
                                 "anchor": "vac_booster_basics",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Updated on October 13, 2022:</b><div class='container'><div class='row'><div class='col-sm'><a href='/assets/img/faq/vac_booster_basics_en.png' target='_blank'><img class='img-fluid' src='/assets/img/faq/vac_booster_basics_en.png' alt='Certificate List' width='300'></a></div><div class='col-sm'><p>A <a href='#glossary_booster_vaccination' target='_blank'>booster vaccination</a> (revaccination) is a vaccination process designed to refresh waning vaccination protection after <a href='#glossary_basic_immunization' target='_blank'>basic immunization</a>. In most cases, but not always, it takes place according to the recommendations of the authorities after a period of 6 months (previously 3 months) after the last vaccination procedure. (Example: completion of the vaccination series for <a href='#glossary_basic_immunization' target='_blank'>basic immunization</a> on October 08, 2022, possible <a href='#glossary_booster_vaccination' target='_blank'>booster vaccination</a> on: April 08, 2023)</p><p>An interactive German-language vaccination guide from the Federal Ministry of Health (BMG) is available under <a href='https://www.zusammengegencorona.de/impfen/#id-862101356' target='_blank' rel='noopener noreferrer'>Impf-Guide</a> which provides a personal vaccination recommendation according to the rules of the Standing Committee on Vaccination (STIKO).</p><p>Each vaccination can be attested by a digital COVID certificate, which you can scan into the Corona-Warn-App. <b>Important</b>: please ensure that the personal data (surname, first name and date of birth) are shown to match the existing vaccination certificates (and also recovery certificates, if applicable). Only then will it be possible to assign the new certificate to the other certificates (vaccinations or recovery). (Example: same academic title or indication of the full double name). All certificates of a person should be displayed grouped in the Corona-Warn-App, see figure. </p><p>Booster shots provide immediate vaccine protection.</p><p>Based on the previous vaccination series, the booster certificate will be documented '4 of 4' (in case of previous <a href='#glossary_basic_immunization' target='_blank'>basic immunization</a> with 3 doses).</p><p>The '2 of 1' label for a vaccination indicates that it is the first vaccination after a COVID-19 disease recovery.</p><p> See also: <a href='#vac_booster_jj' target='_blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></p></div></div></div>"                                ]
+                                    "<b>Updated on October 13, 2022:</b><div class='container'><div class='row'><div class='col-sm'><a href='/assets/img/faq/vac_booster_basics_en.png' target='_blank'><img class='img-fluid' src='/assets/img/faq/vac_booster_basics_en.png' alt='Certificate List' width='300'></a></div><div class='col-sm'><p>A <a href='#glossary_booster_vaccination' target='_blank'>booster vaccination</a> (revaccination) is a vaccination process designed to refresh waning vaccination protection after <a href='#glossary_basic_immunization' target='_blank'>basic immunization</a>. In most cases, but not always, it takes place according to the recommendations of the authorities after a period of 6 months (previously 3 months) after the last vaccination procedure. (Example: completion of the vaccination series for <a href='#glossary_basic_immunization' target='_blank'>basic immunization</a> on October 08, 2022, possible <a href='#glossary_booster_vaccination' target='_blank'>booster vaccination</a> on: April 08, 2023)</p><p>An interactive German-language vaccination guide from the Federal Ministry of Health (BMG) is available under <a href='https://www.zusammengegencorona.de/impfen/#id-862101356' target='_blank' rel='noopener noreferrer'>Impf-Guide</a> which provides a personal vaccination recommendation according to the rules of the Standing Committee on Vaccination (STIKO).</p><p>Each vaccination can be attested by a digital COVID certificate, which you can scan into the Corona-Warn-App. <b>Important</b>: please ensure that the personal data (surname, first name and date of birth) are shown to match the existing vaccination certificates (and also recovery certificates, if applicable). Only then will it be possible to assign the new certificate to the other certificates (vaccinations or recovery). (Example: same academic title or indication of the full double name). All certificates of a person should be displayed grouped in the Corona-Warn-App, see figure. </p><p>Booster shots provide immediate vaccine protection.</p><p>Based on the previous vaccination series, the booster certificate will be documented '4 of 4' (in case of previous <a href='#glossary_basic_immunization' target='_blank'>basic immunization</a> with 3 doses).</p><p>The '2 of 1' label for a vaccination indicates that it is the first vaccination after a COVID-19 disease recovery.</p><p> See also: <a href='#vac_booster_jj' target='_blank'>Why does a 14-day wait for full vaccine protection after a booster vaccination appear in the Corona-Warn-App?</a></p></div></div></div>"
+                                ]
                             },
                             {
                                 "title": "How do I become aware of booster vaccinations in the context of Corona?",
@@ -1086,13 +1087,17 @@
                                 "title": "Who generates the Event QR code?",
                                 "anchor": "check_in_qr_code_who",
                                 "active": false,
-                                "textblock": ["The host of a location or event generates the QR code."]
+                                "textblock": [
+                                    "The host of a location or event generates the QR code."
+                                ]
                             },
                             {
                                 "title": "Can the Event QR code also be set up and used for e.g. a private birthday party, providing this is legally possible?",
                                 "anchor": "check_in_qr_code_private",
                                 "active": false,
-                                "textblock": ["Yes of course, that is possible."]
+                                "textblock": [
+                                    "Yes of course, that is possible."
+                                ]
                             },
                             {
                                 "title": "Where can the Event QR code be generated?",
@@ -1124,7 +1129,9 @@
                                 "title": "Is there a way to check in without a smartphone (dongle or similar)?",
                                 "anchor": "check_in_qr_code_no_phone",
                                 "active": false,
-                                "textblock": ["No, that is not possible."]
+                                "textblock": [
+                                    "No, that is not possible."
+                                ]
                             },
                             {
                                 "title": "How should I scan the Event QR code?",
@@ -1931,18 +1938,18 @@
                         "title": "Backup",
                         "id": "support_backup",
                         "indexed": true,
-                        "accordion":[
+                        "accordion": [
                             {
-                                "duplicate":"eu_dcc_export"
+                                "duplicate": "eu_dcc_export"
                             },
                             {
-                                "duplicate":"vac_cert_multiple_scan_possible"
+                                "duplicate": "vac_cert_multiple_scan_possible"
                             },
                             {
-                                "duplicate":"new_device"
+                                "duplicate": "new_device"
                             },
                             {
-                                "duplicate":"backup"
+                                "duplicate": "backup"
                             }
                         ]
                     },
@@ -2477,7 +2484,9 @@
                                 "title": "When were the FAQ last updated?",
                                 "anchor": "update_faq",
                                 "active": false,
-                                "textblock": ["Updated [last-update]"]
+                                "textblock": [
+                                    "Updated [last-update]"
+                                ]
                             }
                         ]
                     }
@@ -3212,7 +3221,9 @@
                                 "title": "What data is transferred from the CWA to luca?",
                                 "anchor": "check_in_luca_what",
                                 "active": false,
-                                "textblock": ["No data is transferred from the Corona-Warn-App to the luca app."]
+                                "textblock": [
+                                    "No data is transferred from the Corona-Warn-App to the luca app."
+                                ]
                             },
                             {
                                 "title": "Do we now only need one app for event registration?",
