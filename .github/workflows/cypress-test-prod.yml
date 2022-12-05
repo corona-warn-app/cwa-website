@@ -13,15 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NO_COLOR: true
+      TERM: xterm
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v4
+      - name: Setup Node.js 18 environment
+        uses: actions/setup-node@v3
         with:
-          browser: chrome
-          headed: false
-          config: baseUrl=https://coronawarn.app
-          # Only run tests in top level of integration directory
-          spec: cypress/e2e/*.js
+          node-version: 'lts/hydrogen'
+      
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Cypress run
+        run: npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://coronawarn.app --e2e --headless --browser chrome 
