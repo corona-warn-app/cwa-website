@@ -1,8 +1,8 @@
 /// <reference types="Cypress" />
 
-// To run this test on https://coronawarn.app execute the following
+// To run this test on https://www.coronawarn.app execute the following
 // from the root directory of a local copy of cwa-website
-// npx cypress run -s cypress/integration/mime.js -c baseUrl=https://coronawarn.app
+// npx cypress run -s cypress/integration/mime.js -c baseUrl=https://www.coronawarn.app
 
 describe("Test MIME types", () => {
 

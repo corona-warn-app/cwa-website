@@ -125,9 +125,9 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 
 To run all tests included in Cypress Test Production execute:
 
-`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
+`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
 
-`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
+`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
 
 ### Updating coronawarn.app
 

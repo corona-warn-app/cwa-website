@@ -21,7 +21,7 @@ Eines der wichtigsten Themen, das von Anfang an in der Öffentlichkeit diskutier
     Aspekte spielen dabei eine Rolle?](#welches-ziel-hat-die-evaluation-der-corona-warn-app-und-welche-aspekte-spielen-dabei-eine-rolle)
 -   [Welche Kennzahlen werden bei der Evaluation berücksichtigt und wo
     kommen die Daten dafür her?](#welche-kennzahlen-werden-bei-der-evaluation-berücksichtigt-und-wo-kommen-die-daten-dafür-her)
--   [Was bringt die Corona-Warn App?](#was-bringt-die-corona-warn-app)
+-   [Was bringt die Corona-Warn-App?](#was-bringt-die-corona-warn-app)
 -   [Weitere Themen in den nächsten
     Wochen](#weitere-themen-in-den-nächsten-wochen)
 
@@ -405,7 +405,7 @@ solche, die sich auf hypothetische Szenarien beziehen („Was wäre, wenn
 …?") lassen sich schließlich nur durch Heuristiken, Modellrechnungen
 oder Simulationen beantworten.
 
-## Was bringt die Corona-Warn App?
+## Was bringt die Corona-Warn-App?
 
 Aus den uns im Moment zu Verfügung stehenden [Datenquellen](#welche-kennzahlen-werden-bei-der-evaluation-berücksichtigt-und-wo-kommen-die-daten-dafür-her)
 lassen sich erste Aussagen zur Wirksamkeit und den Nutzen der CWA
