@@ -1,6 +1,6 @@
 ---
 name: "\U00002753 Questions?"
-about: This issue template should not be used anymore!
+about: This issue template should not be used anymore! Please go to Discussions and create a new discussion choosing the Category "Q&A".
 labels: question
 
 ---
