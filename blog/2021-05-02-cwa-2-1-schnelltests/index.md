@@ -35,7 +35,7 @@ After the test, a negative result will be displayed in the Corona-Warn-App for *
 
 
 <br></br>
-<center><img src="./register-test.png" title="Register rapid test" alt="Register rapid test" style="align: center">  <img src="./register-test(2).png" title="Register rapid test" alt="Register rapid test" style="align: center"></center>
+<div class="text-center"><img src="./register-test.png" title="Register rapid test" alt="Register rapid test" style="align: center">  <img src="./register-test(2).png" title="Register rapid test" alt="Register rapid test" style="align: center"></div>
 <br></br>
 
 
@@ -46,7 +46,7 @@ Although users' personal data is stored at the test sites so that staff can pass
 In case of a positive rapid test result, users should share their test result and take a PCR test to confirm or refute the result. In case of a positive PCR test, users should share this test result too. This will allow them to warn users they may have met after having shared the rapid test result but before they’ve gotten their PCR test result. However, if the **PCR test is negative**, they do not have the option to withdraw their positive rapid test and warning.
 
 <br></br>
-<center> <img src="./positive-test.png" title="Positive test result" alt="Positive test result" style="align: center"></center>
+<div class="text-center"> <img src="./positive-test.png" title="Positive test result" alt="Positive test result" style="align: center"></div>
 <br></br>
 
 Users who tested positive for COVID-19 and previously checked in to an event or at a location through the [**event registration feature**](/en/blog/2021-04-21-corona-warn-app-version-2-0/) can share their check-ins along with the positive rapid test and/or PCR test result.

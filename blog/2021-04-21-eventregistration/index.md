@@ -14,7 +14,7 @@ Deutsche Telekom and SAP’s project team have released **version 2.0 of the Cor
 With the event registration, organizers and retailers can use the Corona-Warn-App to **create a QR code** in which all necessary data about the event is encoded. This includes, for example, the event location and type, the date, and, if applicable, the beginning and ending. Visitors and guests can then **check in for the event by scanning the QR code**. The check-in is stored locally on their smartphones and will be deleted automatically after two weeks. 
 
 <br></br>
-<center> <img src="./homescreen.png" title="Homescreen CWA" alt="Homescreen CWA" style="align: center">   <img src="./qr-coden-en.png" title="QR Code" alt="QR Code" style="align: center">  <img src="./check-in(4)-en.png" title="Persönliche Check-Ins" alt="Persönliche Check-Ins" style="align: center"></center>
+<div class="text-center"> <img src="./homescreen.png" title="Homescreen CWA" alt="Homescreen CWA" style="align: center">   <img src="./qr-coden-en.png" title="QR Code" alt="QR Code" style="align: center">  <img src="./check-in(4)-en.png" title="Persönliche Check-Ins" alt="Persönliche Check-Ins" style="align: center"></div>
 <br></br>
 
 Visitors who later test positive for COVID-19 can **share their check-ins** along with the **diagnostic keys** via the app and thus upload them to the Corona-Warn-App’s server. The server then publishes the corresponding check-ins as alerts. These alerts are downloaded regularly to the users smartphones where they are automatically matched with the local check-ins. Other guests who were at the same event or location then receive a red or green warning. 
@@ -29,7 +29,7 @@ Whether users receive a green or red warning depends on whether their stay overl
 In the contact journal, users can see whether a low-risk or high-risk exposure refers to an event-based warning.
 
 <br></br>
-<center> <img src="./increased-risk-contact-journal.png" title="Increased risk in contact journal" alt="Increased risk in contact journal" style="align: center"></center>
+<div class="text-center"> <img src="./increased-risk-contact-journal.png" title="Increased risk in contact journal" alt="Increased risk in contact journal" style="align: center"></div>
 <br></br>
 
 

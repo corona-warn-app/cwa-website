@@ -20,7 +20,7 @@ Ab Version 2.7 können Nutzer\*innen in der Übersicht ihrer digitalen COVID-Zer
 Ein technisch abgelaufenes Zertifikat können Nutzer\*innen nicht mehr als gültigen Nachweis für Reisen innerhalb der EU benutzen. Es bedeutet aber nicht zwangsläufig, dass sie keinen ausreichenden Impfschutz mehr haben. Sie brauchen dann lediglich einen **neuen <u>digitalen</u> Nachweis** über ihre Impfung beziehungsweise Genesung.  
  
 <br></br>
-<center> <img src="./impfzertifikat-abgelaufen.png" title="Zertifikat abgelaufen" alt="Zertifikat abgelaufen" style="align: center"> </center>
+<div class="text-center"> <img src="./impfzertifikat-abgelaufen.png" title="Zertifikat abgelaufen" alt="Zertifikat abgelaufen"  ></div>
 <br></br>
 
 Die Corona-Warn-App weist Nutzer\*innen 28 Tage vor dem technischen Ablauf sowohl unter dem Zertifikat in der App als auch mit einer **Push-Nachricht** darauf hin. Sobald das Zertifikat abgelaufen ist, benachrichtigt sie den oder die Nutzer\*in noch einmal. Bei abgelaufenen Testzertifikaten gibt es keine Benachrichtigung, da Nutzer\*innen sie je nach Testart ohnehin nur ein paar Tage als Nachweis nutzen können. 
@@ -28,7 +28,7 @@ Die Corona-Warn-App weist Nutzer\*innen 28 Tage vor dem technischen Ablauf sowoh
 Des Weiteren prüft die Corona-Warn-App nun die **Signatur von Zertifikaten auf Echtheit**. Damit können nur Zertifikate in die Corona-Warn-App importiert werden, die von einer autorisierten Stelle ausgestellt wurden. Nutzer\*innen müssen dafür nichts weiter tun. Die **Überprüfung erfolgt automatisch** sowohl für Zertifikate, die ab Version 2.7 zum ersten Mal in die Corona-Warn-App importiert werden als auch für Zertifikate, die schon in der App vorhanden sind.  
 
 <br></br>
-<center> <img src="./signatur-ungültig(2).png" title="Ungültiges Zertifikat" alt="Ungültiges Zertifikat" style="align: center"> </center>
+<div class="text-center"> <img src="./signatur-ungültig(2).png" title="Ungültiges Zertifikat" alt="Ungültiges Zertifikat"  ></div>
 <br></br>
 
 Version 2.7 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.

@@ -18,9 +18,9 @@ Die technische Gültigkeit von Impf- und Genesenenzertifikaten ist – unabhäng
 Die **CWA informiert die Nutzer\*innen vor Ablauf von Genesenen- und Impfzertifikaten automatisch**. Sie haben dann bis zu 90 Tage nach Ablauf der technischen Gültigkeit Zeit, das Zertifikat zu erneuern, indem sie im Zertifikatsbereich der App auf den Hinweis „Zertifikat erneuern“  tippen. Nachdem sie ihr Einverständnis gegeben haben, wird das Zertifikat automatisch ersetzt. Das technisch abgelaufene Zertifikat wird in den Papierkorb verschoben. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./technische-gültigkeit(1).png" title="Zertifikat erneuern" style="align: center" width=250> <img src="./technische-gültigkeit(2).png" title="Zertifikat erneuern" style="align: center" width=250>  <img src="./technische-gültigkeit(3).png" title="Zertifikat erneuern" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Nutzer\*innen können sowohl Genesenen- als auch Impfzertifikate erneuern. Die CWA informiert sie automatisch darüber, welche Zertifikate dafür in Frage kommen. 

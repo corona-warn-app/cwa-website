@@ -22,14 +22,14 @@ Die Mitarbeiter\*innen an den Teststellen  benötigen die persönlichen Daten, u
 Um ein Schnelltest-Profil anzulegen, können Nutzer\*innen auf der Startseite ihrer Corona-Warn-App unter „Test registrieren“ auf *Nächste Schritte* gehen. Dort finden Sie den **Bereich „Schnelltest-Profil anlegen“**. 
 
 <br></br>
-<center> <img src="./startbildschirm.jpg" title="CWA Startbildschirm" alt="CWA Startbildschirm" style="align: center">  <img src="./profil-anlegen.jpg" title="Schnelltest-Profil anlegen" alt="Schnelltest-Profil anlegen" style="align: center"></center>
+<div class="text-center"> <img src="./startbildschirm.jpg" title="CWA Startbildschirm" alt="CWA Startbildschirm" style="align: center">  <img src="./profil-anlegen.jpg" title="Schnelltest-Profil anlegen" alt="Schnelltest-Profil anlegen" style="align: center"></div>
 <br></br>
 
 Dort können sie ihre persönlichen Daten, wie Name, Adresse und Telefonnummer, eintragen. Wenn alles eingetragen ist, können sie die Daten speichern. Die Corona-Warn-App erstellt daraufhin einen **QR-Code** aus den Daten, den Nutzer\*innen an den Teststellen vorzeigen können. 
 
 
 <br></br>
-<center> <img src="./profil-anlegen(2).jpg" title="Schnelltest-Profil Daten" alt="Schnelltest-Profil Daten" style="align: center">  <img src="./profil-anlegen(3).jpg" title="Schnelltest-Profil" alt="Schnelltest-Profil" style="align: center">  <img src="./schnelltest-profil.jpg" title="Schnelltest-Profil" alt="Schnelltest-Profil" style="align: center"></center>
+<div class="text-center"> <img src="./profil-anlegen(2).jpg" title="Schnelltest-Profil Daten" alt="Schnelltest-Profil Daten" style="align: center">  <img src="./profil-anlegen(3).jpg" title="Schnelltest-Profil" alt="Schnelltest-Profil" style="align: center">  <img src="./schnelltest-profil.jpg" title="Schnelltest-Profil" alt="Schnelltest-Profil" style="align: center"></div>
 <br></br>
 
 Einmal angelegt, bleibt das Profil bestehen und kann bei jedem Test wieder vorgezeigt werden. Das Profil ist nur auf dem jeweils eigenen Smartphone in der Corona-Warn-App abgespeichert! Nutzer\*innen können es wieder entfernen, indem sie unter iOS im Schnelltest-Bereich der Corona-Warn-App auf ihr Schnelltest-Profil gehen und dort **„Schnelltest-Profil entfernen“** auswählen. Android-Nutzer\*innen können das Profil entfernen, indem sie im Schnelltest-Bereich der Corona-Warn-App auf ihr Schnelltest-Profil gehen und dort im 3-Punkte-Menü **"Entfernen"** auswählen.
@@ -45,13 +45,13 @@ Der technische Support prüft, ob es bereits eine Lösung für das Problem gibt.
 Um einen Fehlerbericht zu erstellen, können Nutzer\*innen in ihrer Corona-Warn-App nach unten scrollen und auf **„App-Informationen“** gehen. Ab Version 2.2 finden sie dort den Punkt **„Fehlerberichte“**. 
 
 <br></br>
-<center> <img src="./app-info-fehlerberichte.jpg" title="Fehlerbericht" alt="Fehlerbericht" style="align: center"></center>
+<div class="text-center"> <img src="./app-info-fehlerberichte.jpg" title="Fehlerbericht" alt="Fehlerbericht" style="align: center"></div>
 <br></br>
 
 Dort können Sie die **Fehleranalyse starten**. Anschließend müssen sie den **Fehler reproduzieren**. Erst, wenn der Fehler während der laufenden Fehleranalyse auftritt, können Sie die Analyse an das RKI senden.
 
 <br></br>
-<center> <img src="./fehlerbericht(1).jpg" title="Fehlerbericht" alt="Fehlerbericht" style="align: center">  <img src="./fehlerbericht(2).jpg" title="Fehlerbericht" alt="Fehlerbericht" style="align: center"></center>
+<div class="text-center"> <img src="./fehlerbericht(1).jpg" title="Fehlerbericht" alt="Fehlerbericht" style="align: center">  <img src="./fehlerbericht(2).jpg" title="Fehlerbericht" alt="Fehlerbericht" style="align: center"></div>
 <br></br>
 
 Während der Analyse werden besonders **schützenswerte Informationen**, wie Einträge aus dem Kontakt-Tagebuch oder Check-ins aus der Event-Registrierung anonymisiert erfasst. Das heißt Namen von Personen, die im Kontakt-Tagebuch stehen, werden beispielsweise nicht im Klartext erfasst. Der Fehlerbericht enthält außerdem keine Hinweise auf die Identität des Nutzers oder der Nutzerin. 
@@ -59,7 +59,7 @@ Während der Analyse werden besonders **schützenswerte Informationen**, wie Ein
 Nachdem Nutzer\*innen die Fehleranalyse versendet haben, erhalten sie eine **Fehlerbericht-ID**, die sie angeben können, wenn sie dem technischen Support gegebenenfalls weitere Informationen zukommen lassen müssen. So kann der Fehlerbericht der ursprünglichen Anfrage zugeordnet werden.  
 
 <br></br>
-<center> <img src="./fehlerbericht-id-historie.jpg" title="Fehlerbericht-ID" alt="Fehlerbericht-ID" style="align: center"></center>
+<div class="text-center"> <img src="./fehlerbericht-id-historie.jpg" title="Fehlerbericht-ID" alt="Fehlerbericht-ID" style="align: center"></div>
 <br></br>
 
 Version 2.2 wird, wie vorherige Versionen auch, schrittweise über zwei Tage an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer*innen die neue Version der Corona-Warn-App über die nächsten 48 Stunden zur Verfügung.

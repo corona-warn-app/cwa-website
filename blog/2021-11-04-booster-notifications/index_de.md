@@ -25,20 +25,20 @@ Wenn die aktuellen Empfehlungen auf den oder die Nutzer\*in zutreffen, weist die
  
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./push-nachricht.png" title="Pushnachricht der Corona-Warn-App" alt="Pushnachricht der Corona-Warn-App" style="align: center" width=250> 
 <img src="./neuigkeiten-zertifikate.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
 <img src="./benachrichtung-unter-impfzertifikat.png" title="Zertifikatsbereich in der Corona-Warn-App" alt="Zertifikatsbereich in der Corona-Warn-App" style="align: center" width=250>
 <figcaption aria-hidden="true"><em> Die App weist Nutzer*innen mit einer Push-Nachricht und dem roten Punkt auf die Neuigkeiten hin. Unter dem Zertifikat finden Nutzer*innen detaillierte Informationen. </em></figcaption>
-</center>
+</div>
 <br></br>
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./benachrichtigung-70.png" title="Hinweis für Nutzer*innen über 70" alt="Hinweis für Nutzer*innen über 70" style="align: center" width=250> 
 <img src="./benachrichtigung-johnson.png" title="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" alt="Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson&Johnson geimpft wurden" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: Hinweis für Nutzer*innen, die mindestens 70 Jahre alt sind. Rechts: Hinweis für Nutzer*innen, die mit dem Impfstoff von Johnson & Johnson geimpft wurden. </em></figcaption>
-</center>
+</div>
 <br></br>
 
 Falls die App Nutzer\*innen benachrichtigt, auf die die Bedingungen nicht zutreffen, weil sie beispielsweise schon eine Auffrischimpfung erhalten haben oder doch eine nachgewiesene COVID-19-Infektion durchgemacht haben, können sie die Benachrichtigung ignorieren. Das Projektteam empfiehlt in diesem Fall allerdings, die entsprechenden Impf- oder Genesenenzertifikate in die App einzuscannen. 
@@ -50,10 +50,10 @@ Die STIKO empfiehlt Auffrischimpfungen auch Personen mit bestimmten Vorerkrankun
 Nutzer\*innen können das Zertifikat der Auffrischimpfung ebenso in die Corona-Warn-App übertragen, wie vorherige Impfzertifikate auch. Sie können dafür in der Registerkarte der App den **universellen QR-Code-Scanner** auswählen und den QR-Code einscannen, den sie bei ihrem Arzt oder ihrer Ärztin erhalten haben. Die App speichert das Zertifikat dann automatisch unter „Zertifikate“ und der entsprechenden Person. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./qr-code-scanner-tab.png" title="Universeller QR-Code-Scanner" alt="Universeller QR-Code-Scanner" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>In der Mitte der Registerkarte, hier eingekreist: Universeller QR-Code-Scanner.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Zum **Überprüfen des Impfzertifikats** – beispielsweise im Restaurant oder auf Reisen – können Nutzer\*innen entsprechend der lokalen Regelungen sowohl ihr reguläres Impfzertifikat als auch das Zertifikat der Auffrischimpfung vorzeigen. Ebenfalls wichtig anzumerken: Es gibt bei der **Überprüfung mit der CovPassCheck-App** weder einen Hinweis darauf, dass der Person eine Auffrischimpfung empfohlen wird, noch ist es im eingescannten Zertifikat vermerkt. Im Sinne des hohen Datenschutzes der Corona-Warn-App wissen nur die Nutzer\*innen selbst, dass es sich bei dem Zertifikat um eine Auffrischimpfung handelt. 

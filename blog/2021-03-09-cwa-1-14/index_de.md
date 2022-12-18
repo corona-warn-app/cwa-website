@@ -15,13 +15,13 @@ In Version 1.14 haben die Entwickler\*innen erneut Feedback der App-Nutzer\*inne
   
 
 <br></br>
-<center> <img src="./erhoehtesRisiko.jpg" title="Zusammensetzung des Risikos" alt="Zusammensetzung des Risikos" style="align: center"></center>
+<div class="text-center"> <img src="./erhoehtesRisiko.jpg" title="Zusammensetzung des Risikos" alt="Zusammensetzung des Risikos" style="align: center"></div>
 <br></br>
 
 Desweiteren haben die Entwickler\*innen das Kontakt-Tagebuch um gewünschte Funktionen erweitert. Dort können Nutzer\*innen nun bei jedem Ort die Dauer des Aufenthalts hinzufügen. 
 
 <br></br>
-<center> <img src="./cwa-1-14-orte.png" title="Dauer des Aufenthalts" alt="Dauer des Aufenthalts" style="align: center"></center>
+<div class="text-center"> <img src="./cwa-1-14-orte.png" title="Dauer des Aufenthalts" alt="Dauer des Aufenthalts" style="align: center"></div>
 <br></br>
 
 Bei den im Kontakt-Tagebuch eingetragenen Personen können Nutzer*innen angeben, ob das Treffen länger oder kürzer als 15 Minuten gedauert hat, ob sie während des Treffens eine Maske getragen haben und ob sie sich im Freien oder drinnen aufgehalten haben. 
@@ -29,7 +29,7 @@ Bei den im Kontakt-Tagebuch eingetragenen Personen können Nutzer*innen angeben,
 
 
 <br></br>
-<center> <img src="./cwa-1-14-personen.png" title="Informationen zum Treffen" alt="Informationen zum Treffen" style="align: center"></center>
+<div class="text-center"> <img src="./cwa-1-14-personen.png" title="Informationen zum Treffen" alt="Informationen zum Treffen" style="align: center"></div>
 <br></br>
 
 Sowohl bei Orten als auch bei Personen, können Nutzer\*innen außerdem eigene Notizen hinzufügen. So können sie beispielsweise **Umstände der Begegnung oder des Aufenthalts** festhalten, die sich auf das Infektionsrisiko auswirken können: „saßen nah beieinander“, „haben gesungen“, „wenig Platz“. Diese Zusatz-Informationen können Nutzer\*innen später helfen, sich besser zu erinnern. Aus Plausibilitätsgründen sollten Nutzer\*innen darauf achten, dass die Zeitangabe in Verbindung mit Personen mit der Zeitangabe in Verbindung mit dem Ort übereinstimmt. Beispielsweise hilft es später wenig, wenn Nutzer\*innen bei einer Person, die sie getroffen haben *unter 15 Min.* angeben, bei dem Ort, an dem sie die Person getroffen haben aber beispielsweise *20 Minuten* eintragen.

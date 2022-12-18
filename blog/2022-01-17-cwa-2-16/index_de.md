@@ -29,18 +29,18 @@ Mit dem 2G-Status erfüllen Nutzer\*innen automatisch auch die 3G+- und 3G-Regel
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./g-status1.png" title="Statusnachweis im Zertifikatsbereich" alt="Statusnachweis im Zertifikatsbereich" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Tippen Nutzer\*innen auf ihr Zertifikat, sehen sie außerdem einen **Infokasten zum Status-Nachweis**, der erläutert, welche Regel ihr(e) Zertifikat(e) erfüllen.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./infokasten-statusnachweis.png" title="Infokasten zum Statusnachweis" alt="Infokasten zum Statusnachweis" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Infokasten zum Status-Nachweis unter dem jeweiligen Zertifikat.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 
@@ -51,10 +51,10 @@ Nutzer\*innen können dann über den Schalter zwischen dem QR-Code des „2G-Zer
 **Wichtig:** Aus Datenschutzgründen ist bei der Kontrolle der Zertifikate durch die CovPassCheck-App nicht ersichtlich, ob die Person ein Impf- oder Genesenenzertifikat hat. Beim Scan der QR-Codes sehen die Kontrollierenden nur, ob das Zertifikat gültig ist oder nicht. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./kombinierte-zertifikatsanzeige.png" title="Kombinierte Zertifikatsanzeige" alt="Kombinierte Zertifikatsanzeige" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Kombinierte Zertifikatsanzeige von 2G-Zertifikat und Testzertifikat.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **Ein negatives Testergebnis ist kein Testzertifikat.** Ein Testzertifikat bestätigt ein negatives Testergebnis offiziell in Form eines QR-Codes in der Corona-Warn-App. Nutzer*innen können das offizielle Testzertifikat für PCR- und Schnelltests anfordern, wenn sie einen **Test in der Corona-Warn-App registrieren.** Dafür können sie den universellen QR-Code-Scanner in der Mitte der Registerkarte der CWA öffnen und den QR-Code zur Test-Registrierung scannen. Den erhalten sie entweder schon während der Buchung des Tests oder vor Ort beim Testen, sofern der Anbieter an die Corona-Warn-App angeschlossen ist. 
@@ -70,9 +70,9 @@ In der Vergangenheit hat die CWA Nutzer\*innen entsprechend benachrichtigt, wenn
 Android-Nutzer\*innen steht dieses Feature ab Version 2.17 der CWA zur Verfügung.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./status-benachrichtigung.png" title="Neuigkeiten im Status-Bereich" alt="Neuigkeiten im Status-Bereich" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 ## Verbesserter QR-Code-Scan unter Android
