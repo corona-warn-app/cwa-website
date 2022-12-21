@@ -198,6 +198,15 @@ document.getElementById('eventqrcode').addEventListener('click', function (e) {
   } else if (elem.msRequestFullscreen) {
     elem.msRequestFullscreen();
   }
+  var requestMethod = 
+  elem.requestFullScreen ||
+  elem.webkitRequestFullscreen ||
+  elem.mozRequestFullScreen ||
+  elem.msRequestFullscreen;
+
+  if( requestMethod ) {
+    requestMethod.apply(elem);
+  }
 });
 
 document.getElementById('downloadMultiCode').addEventListener('click', function (e) {
