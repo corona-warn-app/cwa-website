@@ -18,8 +18,8 @@
         }
     }
     .link-item {
-        padding-left: ($grid-gutter-width /2);
-        padding-right: ($grid-gutter-width /2);
+        padding-left: ($grid-gutter-width *0.5);
+        padding-right: ($grid-gutter-width *0.5);
         margin-bottom: 1.2rem;
 
         strong,
@@ -51,13 +51,13 @@
     @extend .d-flex;
     margin-top: 1.5rem;
     flex-wrap: wrap;
-    margin-left: ($grid-gutter-width /2) * -1;
-    margin-right: ($grid-gutter-width /2) * -1;
+    margin-left: ($grid-gutter-width *0.5) * -1;
+    margin-right: ($grid-gutter-width *0.5) * -1;
 
     div {
         flex: 1 0 auto;
-        padding-left: ($grid-gutter-width /2);
-        padding-right: ($grid-gutter-width /2);
+        padding-left: ($grid-gutter-width *0.5);
+        padding-right: ($grid-gutter-width *0.5);
         max-width: 100%;
     }
     

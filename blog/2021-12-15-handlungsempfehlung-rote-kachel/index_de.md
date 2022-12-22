@@ -15,9 +15,9 @@ In Deutschland bewegen sich die COVID-19-Infektionszahlen auf sehr hohem Niveau.
 Eine rote Warnung bedeutet nicht automatisch, dass Sie sich mit COVID-19 infiziert haben. Die Corona-Warn-App warnt Sie damit lediglich vor einem erhöhten Ansteckungsrisiko und **unterscheidet dabei nicht zwischen geimpften, ungeimpften und genesenen Nutzer*innen**. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./rote-kachel(1).png" title="Rote Kachel" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Denn: Erscheint die Statusanzeige „Erhöhtes Risiko“ auf Ihrem Smartphone, hatten Sie in den vergangenen 14 Tagen mindestens eine Begegnung mit einer später positiv getesteten Person. Wir empfehlen Ihnen deshalb – egal ob Sie geimpft, ungeimpft oder genesen sind – sich im Falle einer „roten Warnung“ folgendermaßen zu verhalten:
@@ -44,10 +44,10 @@ Achten Sie für diese 14 Tage auf Symptome. Sie treten **häufig 4 bis 6 Tage na
 Beachten Sie: Symptome können **auch bei geimpften und bei genesenen Personen** auftreten. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./rote-kachel(3).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250> <img src="./rote-kachel(4).png" title="Handlungsempfehlungen bei roter Kachel" alt="Handlungsempfehlungen bei roter Kachel" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Handlungsempfehlungen bei roter Kachel in der Corona-Warn-App</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **<u>3) Lassen Sie sich testen</u>**
@@ -65,17 +65,17 @@ Wenn bei Ihnen **Symptome auftreten, Sie sich krank fühlen, oder Sie Risikofakt
 Ein **positiver Schnelltest** muss immer von einem PCR-Test bestätigt werden. Sollte Ihr Schnelltest also positiv sein, bemühen Sie sich um einen PCR-Test. Den können Sie häufig direkt im Testcenter durchführen. Sollte Ihr Testcenter keine PCR-Tests anbieten, kontaktieren Sie Ihre Hausarztpraxis oder Ihr zuständiges Gesundheitsamt und weisen Sie auf Ihr positives Antigen-Schnelltestergebnis hin. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./schnelltest-positiv.png" title="positiver Schnelltest" alt="positiver Schnelltest" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Im Falle eines **positiven PCR-Tests** kontaktieren Sie Ihr zuständiges Gesundheitsamt und begeben Sie sich in Isolation. Informieren Sie auch zeitnah Ihren Arbeitgeber. Besprechen Sie eine mögliche Krankschreibung mit Ihrer Hausarztpraxis. Sobald Ihr Schnelltest- oder PCR-Testergebnis vorliegt, teilen Sie es möglichst schnell mit der Corona-Warn-App. So können Sie Ihre Kontakte warnen und dazu beitragen, die Infektionskette schnell zu beenden. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./positiver-test.png" title="positiver PCR-Test" alt="positiver PCR-Test" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Antworten auf häufig gestellte Fragen rund um das Verhalten bei einer roten Kachel finden Sie auch in den [FAQs auf der Website der CWA](/de/faq/#red_card_how_to_test).

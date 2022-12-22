@@ -15,4 +15,4 @@ Wen habe ich in den letzten vierzehn Tagen getroffen? Welche Orte habe ich in de
 
 <br></br>
 
-<center> <img src="./kontakttagebuch.jpg" title="Kontakt-Tagebuch" alt="Kontakt-Tagebuch" style="align: center"> </center>
+<div class="text-center"> <img src="./kontakttagebuch.jpg" title="Kontakt-Tagebuch" alt="Kontakt-Tagebuch"  ></div>

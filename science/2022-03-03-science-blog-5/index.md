@@ -443,7 +443,7 @@ A constant ratio of the percentage of the individuals providing a warning among 
 
 If we now assume that the ratio of individuals providing a warning to new infections behaves exactly the same way as the ratio of the active users (in the narrower sense) to the (relevant) general public in consideration of the share rate (whereby we estimate 83 million for the general public or 60 million for the potential individuals who download, respectively (that is, [individuals from the age of 15, who have a smartphone](https://de.statista.com/statistik/daten/studie/198959/umfrage/Number-der-smartphonenutzer-in-deutschland-seit-2010/))):
 
-<center><img src="./math1_en.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></center>
+<div class="text-center"><img src="./math1_en.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></div>
 
 We can determine the number of active users. The following figures show the chronological sequence of this estimation.
 
@@ -456,7 +456,7 @@ For the last 30 days (when not considering the last 5 days, due to the delay in 
 
 At present, more than 16 million users donate their data daily (as of: February 28, 2022). From the percentage of individuals donating data estimated (and updated) in the [previous blog post](../2021-10-15-science-blog-4/#66-schätzung-des-anteils-der-datenspendenden), together with the number of the CWA data donations, we can estimate the daily number of active users (in the narrower sense):
 
-<center><img src="./math2_en.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></center>
+<div class="text-center"><img src="./math2_en.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></div>
 
 It is important to take into account thereby that the data donations come from devices, whereas the test results come from users. For the last 30 days, we obtain on average 31 million active users of the Corona-Warn-App ([CI](https://en.wikipedia.org/wiki/Confidence_interval): 25.8 million – 33.6).
 

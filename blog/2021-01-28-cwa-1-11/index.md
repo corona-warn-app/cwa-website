@@ -22,7 +22,7 @@ The **arrow directions and colors** behind the numbers indicate the trend. It co
  
 <br></br>
 
-<center> <img src="./cwa-new-infections.png" title="New Infections" alt="New Infections" style="align: center"></center>
+<div class="text-center"> <img src="./cwa-new-infections.png" title="New Infections" alt="New Infections" style="align: center"></div>
 
 <br></br>
 
@@ -30,20 +30,20 @@ The app then displays the number of users tested positive who have **warned thei
 
 <br></br>
 
-<center> <img src="./cwa-warning-users.png" title="Warning App Users" alt="Warning App Users" style="align: center"> </center> <br></br>
+<div class="text-center"> <img src="./cwa-warning-users.png" title="Warning App Users" alt="Warning App Users"  ></div> <br></br>
 
 
 Users also see the **7-day incidence rate**, which is the confirmed new infections per 100,000 inhabitants, and the **7-day R value**. This R value indicates to how many other people an infected person passes the virus on average.
 
 <br></br>
 
-<center> <img src="./cwa-7-day-incidence.png" title="7-Day Incidence" alt="7-Day Incidence" style="align: center"> <img src="./cwa-7-day-r-value.png" title="7-Day R Value" alt="7-Day R Value" style="align: center"></center> <br></br>
+<div class="text-center"> <img src="./cwa-7-day-incidence.png" title="7-Day Incidence" alt="7-Day Incidence" style="align: center"> <img src="./cwa-7-day-r-value.png" title="7-Day R Value" alt="7-Day R Value" style="align: center"></div> <br></br>
 
 By tapping the circled "i" <img src="./information.png" title="Information" style="align: center">  in the upper right corner of the statistics, users can get more detailed explanations on the figures.
 
 <br></br>
 
-<center> <img src="./cwa-figures-explanation.png" title="Explanation 1" alt="Explanation 1" style="align: center"> <img src="./cwa-figures-explanation-2.png" title="Explanation 2" alt="Explanation 2" style="align: center"><img src="./cwa-figures-explanation-3.png" title="Explanation 3" alt="Explanation 3" style="align: center"></center> <br></br>
+<div class="text-center"> <img src="./cwa-figures-explanation.png" title="Explanation 1" alt="Explanation 1" style="align: center"> <img src="./cwa-figures-explanation-2.png" title="Explanation 2" alt="Explanation 2" style="align: center"><img src="./cwa-figures-explanation-3.png" title="Explanation 3" alt="Explanation 3" style="align: center"></div> <br></br>
 
 
 In addition to the new function, the developers have further adjusted and improved the app and will continue to do so in the future. As part of this, the Corona-Warn-App will soon be available for **older iPhones**. More information will be available here as soon as the update is published. 

@@ -17,25 +17,25 @@ Mit Version 2.22 können Nutzer\*innen Schnelltest-Profile auch für Familienmit
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./schnelltestprofil-familie(1).png" title="Startbildschirm" style="align: center" width=250> <img src="./schnelltestprofil-familie(2).png" title="Schnelltest-Profil" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./schnelltestprofil-familie(3).png" title="Schnelltest-Profil" style="align: center" width=250> <img src="./schnelltestprofil-familie-android(3).png" title="StartbilSchnelltest-Profildschirm" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Links: Schnelltest-Profile unter iOS, rechts: Schnelltest-Profile unter Android</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Wenn Nutzer\*innen aus dem Schnelltest-Profil heraus auf „Weiter“ tippen, um den **QR-Code der Teststelle zu scannen**, können sie anschließend auswählen, ob sie den Test für sich oder für andere registrieren wollen (mehr dazu [hier](/de/blog/2022-04-19-cwa-2-21/)). Wenn sie „für andere“ auswählen, trägt die CWA **automatisch den Namen aus dem Schnelltest-Profil** der entsprechenden Person ein. Im Anschluss können Nutzer*innen den Namen anpassen, falls nötig. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./schnelltestprofil-familie(4).png" title="QR Code scannen" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Version 2.22 wird, wie vorherige Versionen auch, schrittweise über 48 Stunden an alle Nutzer\*innen ausgerollt. iOS-Nutzer\*innen können sich die aktuelle App-Version ab sofort aus dem Store von Apple manuell herunterladen. Der Google Play Store bietet keine Möglichkeit, ein manuelles Update anzustoßen. Hier steht Nutzer\*innen die neue Version der Corona-Warn-App innerhalb der nächsten 48 Stunden zur Verfügung.

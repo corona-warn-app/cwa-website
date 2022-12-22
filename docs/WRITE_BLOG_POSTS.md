@@ -81,25 +81,21 @@ Example:
 
 However, it is advised to download the image, put it into the folder where the `index.md` file is located, and refer to its relative path instead of an absolute link from the Internet.
 
-You can also use HTML tags to show and position images:
+You can also use HTML tags to show an image:
 
 ``` HTML
-<img src="{RELATIVE_PATH_OR_LINK}" />
+<img src="{RELATIVE_PATH_OR_LINK}">
 ```
 
-See the example usage with mixed elements:
+To center an image you can use the class `text-center` and you can specify a width, such as in the following example:
 
 ``` HTML
-<p align="center">
-  <img src="./logo.png" width="235">
+<p class="text-center">
+  <img src="{RELATIVE_PATH_OR_LINK}" width="235">
 </p>
 ```
 
-<!-- markdownlint-disable MD033 -->
-<p align="center">
-<!-- markdownlint-disable MD033 -->
-  <img src="./logo.png" width="235">
-</p>
+The Bootstrap documentation has more information about [Aligning images](https://getbootstrap.com/docs/4.0/content/images/#aligning-images).
 
 ---
 

@@ -20,9 +20,9 @@ However, users should note that the document contains **sensitive information** 
  
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./certificate-export.png" title="Certificate export" style="align: center" width=250>  <img src="./export-details-en.png" title="Certificate export" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 

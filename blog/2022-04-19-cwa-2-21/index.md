@@ -20,17 +20,17 @@ This principle requires the smartphone to be where its user is. If users share t
 As of version 2.21, the CWA displays a window in which users can **select whether they want to register the test for themselves or for others**. To better distinguish whose test it is, users can now enter the name of the person who has been tested. After that, they can request a digital test certificate that is issued if the test is negative, given that the testing center supports the issuing of test certificates (more information [in this blog](/en/blog/2021-06-24-cwa-version-2-4/)).
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./family-test-certificates(2).png" title="Test registration for users themselves or others" style="align: center" width=250> <img src="./family-test-certificates(3).png" title="Test registration for others" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 On the CWA’s home screen, users can then see the **“Tests of family members” area**, where they can view the test result as soon as it is available. If they no longer need the test result, they can delete it – under Android by tapping on the three dots in the upper right corner and under iOS with a right-swipe gesture. It is then first moved to the recycle bin from where it is permanently deleted after 30 days. Within these 30 days, a deleted test result can also be restored if it was deleted accidentally. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./family-test-certificates(1).png" title="Tests of family members" style="align: center" width=250> <img src="./family-test-certificates(4).png" title="Tests of family members" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 ### Texts for vaccination status adjusted

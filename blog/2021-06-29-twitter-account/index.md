@@ -21,5 +21,5 @@ Sign up, follow, join the discussion: Twitter [@coronawarnapp](https://twitter.c
 
 
 <br></br>
-<center> <img src="./cwa-twitter-account.png" title="CWA Twitter channel" alt="CWA Twitter channel" style="align: center"> </center>
+<div class="text-center"> <img src="./cwa-twitter-account.png" title="CWA Twitter channel" alt="CWA Twitter channel"  ></div>
 <br></br>

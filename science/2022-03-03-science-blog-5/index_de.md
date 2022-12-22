@@ -444,7 +444,7 @@ Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neu
 
 Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.&nbsp;h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
 
-<center><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></center>
+<div class="text-center"><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></div>
 
 können wir die Anzahl der aktiven Nutzenden bestimmen. Die folgende Abbildung zeigt den zeitlichen Verlauf dieser Schätzung.
 
@@ -457,7 +457,7 @@ Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrun
 
 Gegenwärtig spenden täglich mehr als 16 Mio. Nutzende ihre Daten (Stand: 28. Februar 2022). Aus dem im [vergangenen Blog-Beitrag](../2021-10-15-science-blog-4/#66-sch%C3%A4tzung-des-anteils-der-datenspendenden) geschätzten (und aktualisierten) Anteil der Datenspendenden können wir zusammen mit der Anzahl der CWA-Datenspenden die tägliche Anzahl der aktiven Nutzenden (im engeren Sinne) schätzen: 
 
-<center><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></center>
+<div class="text-center"><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></div>
 
 Hierbei ist zu beachten, dass die Datenspenden von Geräten kommen, die Testergebnisse aber von Nutzenden. Für die letzten 30 Tage erhalten wir im Mittel 31 Mio. aktive Nutzende der Corona-Warn-App ([KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6).
 

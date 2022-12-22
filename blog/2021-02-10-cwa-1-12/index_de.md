@@ -14,7 +14,7 @@ Das Projektteam der Deutschen Telekom und SAP hat ein Update der Corona-Warn-App
 Mit Version 1.12 können nun auch Nutzer*innen, die ein **iPhone 5s, 6 oder 6 Plus** haben, die Corona-Warn-App nutzen. Schätzungen haben ergeben, dass wir dabei von maximal 1,7 Millionen Geräten ausgehen können. Bislang setzte die von Apple und Google entwickelte Contact-Tracing-Schnittstelle, auf die auch die Corona-Warn-App zugreift, auf Apple-Seite mindestens iOS 13.5 voraus. Mit einem im Dezember veröffentlichten Update auf das Betriebssystem iOS 12.5, beziehungsweise 12.5.1, erweiterte Apple die Unterstützung für die Schnittstelle und machte sie für ältere iPhones verfügbar. 
 
 <br></br>
-<center> <img src="./cwa-ios-12-5.jpg" title="Corona-Warn-App auf iPhone 5s" alt="Corona-Warn-App auf iPhone 5s" style="align: center"></center>
+<div class="text-center"> <img src="./cwa-ios-12-5.jpg" title="Corona-Warn-App auf iPhone 5s" alt="Corona-Warn-App auf iPhone 5s" style="align: center"></div>
 <br></br>
 
 Nutzer\*innen können die Corona-Warn-App unter iOS 12.5, beziehungsweise 12.5.1, uneingeschränkt verwenden. Der einzige Unterschied: Unter iOS 12.5 aktualisiert die Corona-Warn-App die Risikoberechnung im Hintergrund bis zu zwei Mal am Tag, während das unter iOS 13.7 oder höher bis zu sechs Mal am Tag möglich ist, sofern das Smartphone mit dem WLAN verbunden ist. Öffnen Nutzer\*innen die Corona-Warn-App unter iOS 12.5 im WLAN, können sie die Risikoberechnung manuell auslösen, sodass sie dann ebenfalls bis zu sechs Mal am Tag aktualisiert werden kann.
@@ -28,7 +28,7 @@ Eine weitere Neuerung in Version 1.12 ist die **Begegnungshistorie**, die das Pr
 
 <br></br>
 
-<center> <img src="./cwa-1-12-begegnungshistorie-home-screen.png" title="Home Screen erhöhtes Risiko" alt="Home Screen erhöhtes Risiko" style="align: center"> <img src="./cwa-1-12-begegnungshistorie.png" title="Begegnungshistorie" alt="Begegnungshistorie" style="align: center"> <img src="./cwa-1-12-begegnungshistorie-2.png" title="Begegnungshistorie" alt="Begegnungshistorie" style="align: center"> <img src="./cwa-1-12-begegnungshistorie-3.png" title="Begegnungshistorie" alt="Begegnungshistorie" style="align: center"> </center>
+<div class="text-center"> <img src="./cwa-1-12-begegnungshistorie-home-screen.png" title="Home Screen erhöhtes Risiko" alt="Home Screen erhöhtes Risiko" style="align: center"> <img src="./cwa-1-12-begegnungshistorie.png" title="Begegnungshistorie" alt="Begegnungshistorie" style="align: center"> <img src="./cwa-1-12-begegnungshistorie-2.png" title="Begegnungshistorie" alt="Begegnungshistorie" style="align: center"> <img src="./cwa-1-12-begegnungshistorie-3.png" title="Begegnungshistorie" alt="Begegnungshistorie"  ></div>
 <br></br>
 
 
