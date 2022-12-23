@@ -18,7 +18,7 @@ With version 2.5, users can add **certificates of recovery** to their Corona-War
 Certificates of recovery are stored indefinitely in the app. However, it depends on federal regulations for how long they serve as official proof of recovery.  
 
 <br></br>
-<center> <img src="./certificate-of-recovery (1).png" title="Certificate of recovery" alt="Certificate of recovery" style="align: center"> <img src="./certificate-of-recovery (2).png" title="Certificate of recovery details" alt="Certificate of recovery details" style="align: center"> </center>
+<div class="text-center"> <img src="./certificate-of-recovery (1).png" title="Certificate of recovery" alt="Certificate of recovery" style="align: center"> <img src="./certificate-of-recovery (2).png" title="Certificate of recovery details" alt="Certificate of recovery details"  ></div>
 <br></br>
 
 ### Certificate area turns into a useful wallet
@@ -30,13 +30,13 @@ In addition, the project team turns the app’s certificate section into a walle
 Under the **"Certificates" tab**, all existing certificates are grouped by person. By selecting a person, users can see all certificates available for them in the app. 
 
 <br></br>
-<center> <img src="./family certificates.png" title="Overview certificates" alt="Overview certificates" style="align: center">  <img src="./certificates.png" title="Details certificates" alt="Details certificates" style="align: center"> </center>
+<div class="text-center"> <img src="./family certificates.png" title="Overview certificates" alt="Overview certificates" style="align: center">  <img src="./certificates.png" title="Details certificates" alt="Details certificates"  ></div>
 <br></br>
 
 At this point, they can also activate a slider under their own name to indicate that they are the owner, so that they always appear at the top of the list of people.  
 
 <br></br>
-<center> <img src="./button.png" title="Button: my smartphone, my app" alt="Button: my smartphone, my app" style="align: center"> </center>
+<div class="text-center"> <img src="./button.png" title="Button: my smartphone, my app" alt="Button: my smartphone, my app"  ></div>
 <br></br>
 
 Users cannot define the QR code that is displayed first in the overview of the certificate wallet. If multiple certificates are available, test certificates automatically appear before vaccination certificates or certificates of recovery, as long as they are not older than 48 (PCR test) or 24 hours (rapid test).
@@ -52,7 +52,7 @@ Following the same procedure, users can add all three certificate types for othe
 Under the key figures section in their Corona-Warn-App, users can now see how many people have been vaccinated at least once or completely nationwide, what proportion of the total population this represents in each case and how many vaccination doses have been administered in Germany.
 
 <br></br>
-<center> <img src="./vaccination-figures.png" title="Vaccination figures" alt="Vaccination figures" style="align: center">  </center>
+<div class="text-center"> <img src="./vaccination-figures.png" title="Vaccination figures" alt="Vaccination figures" style="align: center">  </div>
 <br></br>
 
 Version 2.5 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.

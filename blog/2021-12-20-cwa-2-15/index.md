@@ -31,19 +31,19 @@ If they book the tickets with their smartphone, they can take a screenshot of th
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./homescreen.png" title="Universal QR Code scanner" alt="Universal QR Code scanner" style="align: center" width=250> <img src="./import-qr-code.png" title="Scan or import of the QR Code" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: Universal QR code scanner, Right: Possibility to import a QR code from a photo (e.g. screenshot)</em></figcaption>
-</center>
+</div>
 <br></br>
 
 After that, they can give their consent and then select the certificate they want to provide as proof.
 
  
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ticket-validation(2).png" title="Consent" alt="Consent" style="align: center" width=250> <img src="./ticket-validation(3).png" title="Consent" alt="Consent" style="align: center" width=250> <img src="./ticket-validation(4).png" title="Consent" alt="Consent" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 The Corona-Warn-App checks the provider's requirements and shows the user only those certificates for selection that meet the requirements. 
@@ -52,9 +52,9 @@ For example, if a provider requests either a vaccination certificate, a recovery
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ticket-validation(1).png" title="Selection of certificate in the app" alt="Selection of certificate in the app" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 After the user has selected a certificate and once again given their consent, the certificate is checked. For this purpose, it is temporarily transmitted in encrypted form to the validation service. The validation service then compares the organizer's rules with the certificate. After that it only informs the booking system **whether the certificate complies with the rules or not.** 
@@ -64,9 +64,9 @@ If an event organizer set the access requirement "3G" (vaccinated, recovered or 
 **The certificates are not transmitted to the booking system and are not stored in the validation service.**
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ticket-validation(7).png" title="Consent for temporary transmission of certificate" alt="Consent for temporary transmission of certificate" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
  
@@ -76,9 +76,9 @@ The user can then see in the app whether the certificate was successfully verifi
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ticket-validation(6).png" title="Verification successful" alt="Verification successful" style="align: center" width=250> <img src="./ticket-validation(5).png" title="Certificate not recognized" alt="Certificate not recognized" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 A certificate can be "not recognized" if it does not meet the provider's requirements. This may be the case, for example,  if the user has selected an antigen test as proof that is older than 48 hours. 
@@ -92,11 +92,11 @@ For example, if users have entered their first and middle names in their certifi
 In addition, with version 2.15, the project team has adapted the guidelines under a "red warning" (warning about an encounter with increased risk). Detailed information on how users should act in case of a red tile can be found [in this blog](/de/blog/2021-12-15-cwa-red-tile-guidance/).
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./red-tile.png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> 
 <img src="./guidelines(1).png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> <img src="./guidelines(2).png" title="Guidelines red tile" alt="Guidelines red tile" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Guidelines on red "Increased Risk" notification</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Version 2.15 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.

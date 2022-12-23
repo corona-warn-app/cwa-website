@@ -18,7 +18,7 @@ Der Bildschirm der Corona-Warn-App zeigt nun den neuen Bereich Kontakt-Tagebuch 
 
 <br></br>
 
-<center> <img src="./kontakt-tagebuch.jpg" title="Kontakt-Tagebuch Bild 1" alt="Kontakt-Tagebuch Bild 1" style="align: center"> <img src="./kontakt-tagebuch-erklaerung.jpg" title="Kontakt-Tagebuch Bild 2" alt="Kontakt-Tagebuch Bild 2" style="align: center"> <img src="./kontakt-tagebuch-uebersicht.jpg" title="Kontakt-Tagebuch Bild 3" alt="Kontakt-Tagebuch Bild 3" style="align: center"></center>
+<div class="text-center"> <img src="./kontakt-tagebuch.jpg" title="Kontakt-Tagebuch Bild 1" alt="Kontakt-Tagebuch Bild 1" style="align: center"> <img src="./kontakt-tagebuch-erklaerung.jpg" title="Kontakt-Tagebuch Bild 2" alt="Kontakt-Tagebuch Bild 2" style="align: center"> <img src="./kontakt-tagebuch-uebersicht.jpg" title="Kontakt-Tagebuch Bild 3" alt="Kontakt-Tagebuch Bild 3" style="align: center"></div>
 
 <br></br>
 
@@ -27,9 +27,9 @@ Dazu klicken Nutzer\*innen auf den entsprechenden Tag in der Liste. Mit den Scha
 
 <br></br>
 
-<center> <img src="./person-hinzufuegen.JPG" title="Kontakt hinzufügen" alt="Kontakt hinzufügen" style="align: center"> </center> <br></br>
+<div class="text-center"> <img src="./person-hinzufuegen.JPG" title="Kontakt hinzufügen" alt="Kontakt hinzufügen"  ></div> <br></br>
 
-<center> <img src="./ort-hinzufuegen.JPG" title="Ort hinzufügen" alt="Ort hinzufügen" style="align: center"> </center>
+<div class="text-center"> <img src="./ort-hinzufuegen.JPG" title="Ort hinzufügen" alt="Ort hinzufügen"  ></div>
 
 <br></br>
 
@@ -43,7 +43,7 @@ Die Corona-Warn-App löscht die auf dem Smartphone gespeicherten Angaben automat
 In diesem Menu können Nutzer\*innen zudem bestehende Personen- sowie Ortseinträge nachträglich ändern, um beispielsweise den Vornamen mit einem Nachnamen zu ergänzen. Nachdem Nutzer\*innen auf die drei eingekreisten Punkte und *Personen bearbeiten* oder *Orte bearbeiten* geklickt haben, können sie durch Tippen auf den Ort oder die Person den entsprechenden Eintrag bearbeiten. 
 <br></br>
 
-<center> <img src="./daten-loeschen.JPG" title="Daten löschen" alt="Daten löschen" style="align: center"> </center>
+<div class="text-center"> <img src="./daten-loeschen.JPG" title="Daten löschen" alt="Daten löschen"  ></div>
 
 <br></br>
 
@@ -55,7 +55,7 @@ Die App exportiert die Kontaktliste im Format RTF (Rich Text Format). RTF ist we
 
 <br></br>
 
-<center> <img src="./kontakt-tagebuch-export.JPG" title="Liste exportieren" alt="Liste exportieren" style="align: center"> </center>
+<div class="text-center"> <img src="./kontakt-tagebuch-export.JPG" title="Liste exportieren" alt="Liste exportieren"  ></div>
 
 <br></br>
 
@@ -71,7 +71,7 @@ Weitere Hinweise finden sich auch in der **Datenschutzerklärung**, die ebenfall
 
 <br></br>
 
-<center> <img src="./datenschutz-erklaerung.JPG" title="Erklärungen zum Datenschutz" alt="Erklärungen zum Datenschutz" style="align: center"> </center>
+<div class="text-center"> <img src="./datenschutz-erklaerung.JPG" title="Erklärungen zum Datenschutz" alt="Erklärungen zum Datenschutz"  ></div>
 
 <br></br>
 

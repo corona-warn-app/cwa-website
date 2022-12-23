@@ -15,13 +15,13 @@ The project team continuously tests the Corona-Warn-App's performance to configu
 For this purpose, the team tested the app in realistic scenarios in different settings and evaluated the results using complex optimization methods. More than 1,000 test hours in test landscapes with dummy bodies and a programmable crane in the Fraunhofer test hall as well as measurements with test persons in real environments (for example, in buses and trains) provide measurement data that are taken into account in the app's risk calculation. Based on these findings, the project team made adjustments to the previous risk model, in particular to take into account a higher infectivity due to the **mutated virus variants**.
 
 <br></br>
-<center> <img src="./feldtest-1.jpg" title="Test Setting" alt="Test Setting" style="align: center"></center>
-<center>Image: Fraunhofer Institut</center>
+<div class="text-center"> <img src="./feldtest-1.jpg" title="Test Setting" alt="Test Setting" style="align: center"></div>
+<div class="text-center">Image: Fraunhofer Institut</div>
 <br></br>
 
 <br></br>
-<center> <img src="./feldtest-2.jpg" title="Tests" alt="Tests" style="align: center"></center>
-<center>Image: Fraunhofer Institut</center>
+<div class="text-center"> <img src="./feldtest-2.jpg" title="Tests" alt="Tests" style="align: center"></div>
+<div class="text-center">Image: Fraunhofer Institut</div>
 <br></br>
 
 Thus, **short contact times** with individuals who later test positive will no longer be filtered out, but will be assessed individually and summed over the day. Beyond the close range of up to 1.5 meters, contact times at a distance **up to 2.5 meters** are also included in the calculation of the corresponding Bluetooth signal attenuation limits, but only at 50%, since the risk of infection via droplets (unlike aerosols) decreases rapidly with increasing distance. 

@@ -14,7 +14,7 @@ Für die neue Funktion der Eventregistrierung hat die Community der Corona-Warn-
 Die Community der Corona-Warn-App stellte den QR-Code-Generator dem Projektteam auf GitHub zur Verfügung. Das Entwicklerteam hat den Beitrag daraufhin geprüft und den QR-Code-Generator in einer angepassten Form veröffentlicht. Wir danken an dieser Stelle insbesondere @bastianjoel und allen beteiligten Community-Mitgliedern für die Mitarbeit an diesem neuen Feature. Dieses Beispiel zeigt erneut sehr gut, wie nützlich der Open-Source-Ansatz und die Veröffentlichung des Quellcodes der Corona-Warn-App ist.
 
 <br></br>
-<center> <img src="./qr-code-generator (1).png" title="QR Code" alt="QR Code" style="align: center">  <img src="./qr-code-generator (2).png" title="QR Code" alt="QR Code" style="align: center"></center>
+<div class="text-center"> <img src="./qr-code-generator (1).png" title="QR Code" alt="QR Code" style="align: center">  <img src="./qr-code-generator (2).png" title="QR Code" alt="QR Code" style="align: center"></div>
 <br></br>
 
 

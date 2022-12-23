@@ -20,7 +20,7 @@ Das Update steht Nutzer\*innen über die nächsten 48 Stunden zur Verfügung.
 Mit Version 2.12 hat das Projektteam den **universellen QR-Code Scanner in die Registerkarte** der Corona-Warn-App integriert. Damit gibt es nun eine zentrale Stelle zum Scannen von QR-Codes in der App. An den bekannten Orten in der Corona-Warn-App bleibt der QR-Code-Scanner ebenfalls erhalten. 
 
 <br></br>
-<center> <img src="./qr-code-scanner-tab.png" title="QR-Code-Scanner in der Registerkarte" style="align: center"> </center>
+<div class="text-center"> <img src="./qr-code-scanner-tab.png" title="QR-Code-Scanner in der Registerkarte"  ></div>
 <br></br>
 
 Mit dem universellen QR-Code-Scanner können Nutzer\*innen seit Version 2.11 alle von der Corona-Warn-App unterstützten QR-Codes scannen, unabhängig davon, ob es sich um Tests, Zertifikate oder Check-ins handelt. 
@@ -29,20 +29,20 @@ In diesem Zuge hat das Projektteam auch die **Symbole auf der Registerkarte** an
 
 
 <br></br>
-<center> <img src="./tab-bar.png" title="Aktuelle Registerkarte" alt="Aktuelle Registerkarte" style="align: center"></center>
+<div class="text-center"> <img src="./tab-bar.png" title="Aktuelle Registerkarte" alt="Aktuelle Registerkarte" style="align: center"></div>
 <br></br>
-<center> Aktuelle Registerkarte </center>
+<div class="text-center"> Aktuelle Registerkarte </div>
 
 <br></br>
-<center> <img src="./tab-bar-alt.png" title="Alte Registerkarte" alt="Alte Registerkarte" style="align: center"></center>
+<div class="text-center"> <img src="./tab-bar-alt.png" title="Alte Registerkarte" alt="Alte Registerkarte" style="align: center"></div>
 <br></br>
-<center> Alte Registerkarte </center>
+<div class="text-center"> Alte Registerkarte </div>
 <br></br>
 
 Damit Nutzer\*innen sich in der App auch weiterhin über **alle wichtigen Kennzahlen des Pandemiegeschehens** informieren können, hat das Projektteam den Statistikbereich erweitert. Nutzer\*innen finden dort nun zusätzlich die 7-Tage-Inzidenz der Hospitalisierung und die Zahl der COVID-19-Erkrankten auf Intensivstationen.
 
 <br></br>
-<center> <img src="./statistiken(1).png" title="Statistik 7-Tage-Inzidenz Hospitalisierung" alt="Statistik 7-Tage-Inzidenz Hospitalisierung" style="align: center">  <img src="./statistiken(2).png" title="Statistik COVID-Erkrankte auf Intensivstationen" alt="Statistik COVID-Erkrankte auf Intensivstationen" style="align: center"></center>
+<div class="text-center"> <img src="./statistiken(1).png" title="Statistik 7-Tage-Inzidenz Hospitalisierung" alt="Statistik 7-Tage-Inzidenz Hospitalisierung" style="align: center">  <img src="./statistiken(2).png" title="Statistik COVID-Erkrankte auf Intensivstationen" alt="Statistik COVID-Erkrankte auf Intensivstationen" style="align: center"></div>
 <br></br>
 
 Die **7-Tage-Inzidenz der Hospitalisierung** bezieht sich auf die Zahl der Menschen, die wegen einer COVID-19-Diagnose in eine Klinik kommen. Sie bildet die übermittelten Fälle über eine Woche pro 100.000 Einwohner\*innen ab. Die Zahl der **COVID-19-Erkrankten auf Intensivstationen** zeigt an, welchen Anteil COVID-Patient\*innen bei der Belegung der Intensivbetten in Deutschland ausmachen.

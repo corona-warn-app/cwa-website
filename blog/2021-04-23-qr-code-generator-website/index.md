@@ -15,7 +15,7 @@ The Corona-Warn-App community provided the QR code generator to the project team
 
 
 <br></br>
-<center> <img src="./qr-code-generator-en.png" title="QR Code Generator" alt="QR Code Generator" style="align: center"></center>
+<div class="text-center"> <img src="./qr-code-generator-en.png" title="QR Code Generator" alt="QR Code Generator" style="align: center"></div>
 <br></br>
 
 

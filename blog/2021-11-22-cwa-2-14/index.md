@@ -14,10 +14,10 @@ The project team of the Robert Koch Institute, Deutsche Telekom, and SAP have re
 Since version 2.13, Corona-Warn app users have been able to restore accidentally deleted certificates from the recycle bin. With version 2.14, this is also possible for registered PCR and rapid tests. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./bin_test_ios_en.png" title="Recylce Bin" alt="Recylce Bin" style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Fig. 1: Recycle bin with deleted certificates and tests.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 If users remove a registered test, it is now moved to the recycle bin where it stays for 30 days before it will be permanently deleted. In the recycle bin, Android users can select the three dots in the upper right corner of the test and tap "Restore". iOS users can restore it by selecting the corresponding test and tapping "Restore". 
@@ -50,10 +50,10 @@ The test will then be moved to its original location in the Corona-Warn-App. If 
 Please note: As usual, users can only register one active test in their app at a time. If they restore a test from the recycle bin while another test is already registered, the test from the recycle bin is restored and the currently active test is moved to the recycle bin.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./bin_another_test_ios_en.png" title="The app can manage a maximum of one rapid test and one PCR test at the same time. If you register another PCR test, the first PCR test will be deleted from the app." alt="The app can manage a maximum of one rapid test and one PCR test at the same time. If you register another PCR test, the first PCR test will be deleted from the app." style="align: center" height=600px> 
 <figcaption aria-hidden="true"><em>Fig. 4: The app can manage a maximum of one rapid test and one PCR test at the same time. If a user registers another PCR test, for example, the currently active test is moved to the recycle bin.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 The entries in the contact journal, which show when users have registered a rapid test or performed a PCR test, are not affected when a test is moved to the recycle bin. 
