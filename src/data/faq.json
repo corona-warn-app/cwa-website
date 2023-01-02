@@ -2186,6 +2186,8 @@
                                     "Follow these steps in order to activate the security certificate. The exact path depends on the device.",
                                     "<ol><li>'Settings' &gt; 'Biometrics and security' &gt; 'Other security settings' &gt; 'View security certificates' &gt; 'SYSTEM'</li><li>Scroll down to <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Enable the certificate using the slider</li></ol>",
                                     "If your network or device is using a firewall, check also that your device can access the domains listed in <a href='#access-list' target='_blank'>[Google/Android]: Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901</a>.",
+                                    "In some cases, it is necessary to restart the device.",
+                                    "If this error occurs when you try to share a positive test result via WLAN, you should try again with mobile data.",
                                     "Should these procedures not solve this issue, please write a comment here:  <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener noreferrer'>cwa-app-android/issues/968</a>."
                                 ]
                             },
