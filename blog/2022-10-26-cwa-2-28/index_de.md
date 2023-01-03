@@ -15,9 +15,9 @@ Das Projektteam aus Robert Koch-Institut (RKI), Deutscher Telekom und SAP hat **
 Über die neue Kachel „Pandemieradar“ können Nutzer\*innen auf die [entsprechende Webseite des RKI](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home) abspringen. Dort finden sie viele weitere Statistiken zu relevanten Kennzahlen der Corona-Pandemie, beispielsweise zur Viruslast im Abwasser. Das Pandemieradar wird täglich (montags bis freitags) aktualisiert. 
 
 <br>
-<center> 
+<div class="text-center"> 
 <img src="./pandemieradar.jpg" title="Kachel Pandemieradar" style="align: center" width=250>
-</center>
+</div>
 <br>
 
 Da es viele detaillierte Informationen zur Beurteilung der aktuellen Lage zusammenführt, hat das Projektteam die neue Kachel an erster Stelle zu den Statistiken in der CWA hinzugefügt. 

@@ -27,7 +27,7 @@ Mit der Eventregistrierung können **Veranstalter\*innen, Einzelhändler\*innen 
 
 
 <br></br>
-<center> <img src="./check-in-supermarkt.png" title="Beispiel Check-in" alt="Beispiel Check-in" style="align: center"> </center>
+<div class="text-center"> <img src="./check-in-supermarkt.png" title="Beispiel Check-in" alt="Beispiel Check-in"  ></div>
 <br></br>
 
 Damit keine Lücke im Unterbrechen der Infektionsketten entsteht, ermöglicht die sogenannte **“Stellvertreter-Funktion”** Organisator\*innen und Gesundheitsämtern, Gäste in Vertretung für eine später positiv getestete Person zu warnen, die sich NICHT über die Corona-Warn-App eingecheckt hatte. 
@@ -68,11 +68,11 @@ Damit Sie damit alle Besucher\*innen warnen können, gehen Sie unter **„Sie pl
 
 
 <br></br>
-<center> <img src="./vertreter-warnung(1).png" title="Warnung in Vertretung" alt="Warnung in Vertretung" style="align: center"> <img src="./vertreter-warnung(2).png" title="Warnung in Vertretung" alt="Warnung in Vertretung" style="align: center"> </center>
+<div class="text-center"> <img src="./vertreter-warnung(1).png" title="Warnung in Vertretung" alt="Warnung in Vertretung" style="align: center"> <img src="./vertreter-warnung(2).png" title="Warnung in Vertretung" alt="Warnung in Vertretung"  ></div>
 <br></br>
 
 <br></br>
-<center> <img src="./vertreter-warnung(3).png" title="Warnung in Vertretung" alt="Warnung in Vertretung" style="align: center"> <img src="./vertreter-warnung(4).png" title="Warnung in Vertretung" alt="Warnung in Vertretung" style="align: center"> </center>
+<div class="text-center"> <img src="./vertreter-warnung(3).png" title="Warnung in Vertretung" alt="Warnung in Vertretung" style="align: center"> <img src="./vertreter-warnung(4).png" title="Warnung in Vertretung" alt="Warnung in Vertretung"  ></div>
 <br></br>
 
 Sollte das entsprechende **Event nicht mehr in der Übersicht** stehen, können Sie Ihren eigenen QR-Code noch einmal scannen. Nachdem Sie über die drei Punkte in der oberen rechten Ecke „In Vertretung warnen“ ausgewählt haben, wählen Sie dann nicht das Event aus, sondern „QR-Code scannen“.
@@ -88,7 +88,7 @@ So können sie schnell abgerufen und von Behörden, Veranstalter\*innen oder Res
 Unter dem **Reiter „Zertifikate“** in der Registerkarte Ihrer Corona-Warn-App können Sie Ihre Zertifikate verwalten. Um ein Impf- oder Genesenenzertifikat hinzuzufügen, gehen Sie auf **„Zertifikat hinzufügen“**. Anschließend müssen Sie nichts weiter tun, als den QR-Code zu scannen, den Sie bei Ihrem Arzt/Ihrer Ärztin, bei der Impfstelle oder der Apotheke erhalten haben. Sie finden Ihr Zertifikat dann immer unter dem Reiter „Zertifikate“. 
 
 <br></br>
-<center> <img src="./zertifikate(1).png" title="Zertifikat hinzufügen" alt="Zertifikat hinzufügen" style="align: center"> <img src="./zertifikate(2).png" title="Zertifikat hinzufügen" style="align: center"> </center>
+<div class="text-center"> <img src="./zertifikate(1).png" title="Zertifikat hinzufügen" alt="Zertifikat hinzufügen" style="align: center"> <img src="./zertifikate(2).png" title="Zertifikat hinzufügen"  ></div>
 <br></br>
 
 **So fügen Sie eine Auffrischimpfung hinzu:**
@@ -107,7 +107,7 @@ Nach wie vor bleibt aber natürlich die **Kernfunktion der Corona-Warn-App** zen
 Wenn Sie ein positives PCR-Testergebnis erhalten haben, können Sie auf der Startseite Ihrer Corona-Warn-App **„Sie lassen sich testen?“** auswählen. Darüber gelangen Sie in Ihre Testverwaltung. Nun gibt es zwei Möglichkeiten, Ihr Ergebnis zu teilen, je nachdem, ob die Teststelle an die Corona-Warn-App angeschlossen ist. Sollten Sie sich nicht sicher sein, fragen Sie einfach vor Ort nach.
 
 <br></br>
-<center> <img src="./startseite-testverwaltung.png" title="Startseite" alt="Startseite" style="align: center"> </center>
+<div class="text-center"> <img src="./startseite-testverwaltung.png" title="Startseite" alt="Startseite"  ></div>
 <br></br>
 
 **Möglichkeit 1: Teststelle ist an die Corona-Warn-App angeschlossen**
@@ -115,7 +115,7 @@ Wenn Sie ein positives PCR-Testergebnis erhalten haben, können Sie auf der Star
 Damit die Teststelle Ihr Testergebnis an die Corona-Warn-App übertragen kann und Sie es teilen können, sollten Sie auf dem Testformular der Teststelle zustimmen, dass ihr Ergebnis in der App übermittelt wird. Anschließend können Sie den QR-Code auf dem Testformular scannen. Dafür rufen Sie in der App **Ihre Testverwaltung  („Sie lassen sich testen?“)** auf und wählen „QR-Code scannen“ aus. 
 
 <br></br>
-<center> <img src="./testverwaltung.png" title="Testverwaltung" alt="Testverwaltung" style="align: center"> </center>
+<div class="text-center"> <img src="./testverwaltung.png" title="Testverwaltung" alt="Testverwaltung"  ></div>
 <br></br>
 
 Danach können Sie Ihr Testergebnis teilen, indem Sie **„Andere warnen“** antippen. 
@@ -126,7 +126,7 @@ Danach können Sie Ihr Testergebnis teilen, indem Sie **„Andere warnen“** an
 Sollte Ihre Teststelle nicht an die Corona-Warn-App angeschlossen sein, können Sie Ihr positives Testergebnis trotzdem über die Corona-Warn-App teilen. Rufen Sie die Hotline der App an (innerhalb Deutschlands: 0800 754 000 2, aus dem Ausland: +49 30 498 75402), um eine TAN zu erhalten. 
 
 <br></br>
-<center> <img src="./pcrtest-tan-de.png" title="PCR-Test teilen" alt="PCR-Test teilen" style="align: center">  <img src="./testverwaltung-tan.png" title="Testverwaltung" alt="Testverwaltung" style="align: center"></center>
+<div class="text-center"> <img src="./pcrtest-tan-de.png" title="PCR-Test teilen" alt="PCR-Test teilen" style="align: center">  <img src="./testverwaltung-tan.png" title="Testverwaltung" alt="Testverwaltung" style="align: center"></div>
 <br></br>
 
 Tippen Sie anschließend in Ihrer **Testverwaltung auf „TAN für PCR-Test eingeben“**. Nach Eingabe der TAN können Sie Ihr Testergebnis teilen, indem Sie „Andere warnen“ auswählen.  
@@ -135,7 +135,7 @@ Tippen Sie anschließend in Ihrer **Testverwaltung auf „TAN für PCR-Test eing
 Nach der Warnung haben Sie die Möglichkeit nähere Informationen zu Ihren Symptomen zu geben, indem Sie **„Weiter mit Symptom-Erfassung“** auswählen. Dieser Schritt ist wichtig, um die Genauigkeit der Warnung zu verbessern.
 
 <br></br>
-<center> <img src="./symptomerfassung.png" title="Symptomerfassung" alt="Symptomerfassung" style="align: center"> </center>
+<div class="text-center"> <img src="./symptomerfassung.png" title="Symptomerfassung" alt="Symptomerfassung"  ></div>
 <br></br>
 
 **So teilen Sie Ihr positives Schnelltest-Ergebnis:**
@@ -143,11 +143,11 @@ Nach der Warnung haben Sie die Möglichkeit nähere Informationen zu Ihren Sympt
 Um ein positives Schnelltest-Ergebnis teilen zu können, müssen Sie den Test zunächst in der App registrieren. Tippen Sie dafür auf **„Sie lassen sich testen?“** und anschließend auf **„QR-Code scannen“**. Den QR-Code erhalten Sie entweder während der Terminbuchung oder nachdem Sie den Test durchgeführt haben (je nach Testanbieter). 
 
 <br></br>
-<center> <img src="./testverwaltung.png" title="Testverwaltung" alt="Testverwaltung" style="align: center"> </center>
+<div class="text-center"> <img src="./testverwaltung.png" title="Testverwaltung" alt="Testverwaltung"  ></div>
 <br></br>
 
 Sobald Ihr Testergebnis da ist, können Sie es auf der Startseite Ihrer Corona-Warn-App sehen. Im Falle eines positiven Testergebnisses können Sie das Ergebnis teilen, indem Sie es auswählen und anschließend auf **„Andere warnen“** tippen. 
 
 <br></br>
-<center> <img src="./schnelltestergebnis-startseite.png" title="Schnelltestergebnis" alt="Schnelltestergebnis" style="align: center">  <img src="./schnelltest-positiv(2).png" title="Positiven Schnelltest teilen" alt="Positiven Schnelltest teilen" style="align: center"></center>
+<div class="text-center"> <img src="./schnelltestergebnis-startseite.png" title="Schnelltestergebnis" alt="Schnelltestergebnis" style="align: center">  <img src="./schnelltest-positiv(2).png" title="Positiven Schnelltest teilen" alt="Positiven Schnelltest teilen" style="align: center"></div>
 <br></br>

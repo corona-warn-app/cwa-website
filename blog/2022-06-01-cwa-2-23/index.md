@@ -20,9 +20,9 @@ The **CWA automatically informs users** before their recovery or vaccination cer
 Users can renew both recovery and vaccination certificates. The CWA automatically informs them which certificates are eligible for renewal. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./renew-certificate(1).png" title="Renew certificate" style="align: center" width=250> <img src="./renew-certificate(2).png" title="Renew certificate" style="align: center" width=250>  <img src="./renew-certificate(3).png" title="Renew certificate" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 **Recovery certificates** can always be renewed when they are about to expire technically. For **vaccination certificates**, users only need to renew the certificate currently in use, as it contains sufficient information about vaccination protection. For users who have stored three vaccination certificates in the CWA, this means that the vaccination certificate of the first and second vaccination will not be exchanged, but only the vaccination certificate of the booster vaccination as soon as it is about to expire.

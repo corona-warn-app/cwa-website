@@ -22,25 +22,25 @@ Durch die neue Funktion in Version 2.4 der CWA haben Nutzer\*innen die Möglichk
 Nutzer\*innen können sowohl für PCR- als auch für Schnelltests ein Zertifikat anfordern, indem sie einen **Test in der Corona-Warn-App registrieren**: Dazu können sie auf dem Startbildschirm ihrer Corona-Warn-App auf „Test registrieren“ tippen und dann auf „QR-Code scannen“. Nachdem sie den QR-Code zur Test-Registrierung gescannt haben, öffnet sich automatisch das Fenster, in dem sie das Testzertifikat anfordern oder ablehnen können. 
 
 <br></br>
-<center> <img src="./test-registrieren.png" title="Test registrieren" alt="Test registrieren" style="align: center">  <img src="./zertifikat-anfordern-schnelltest.png" title="Testzertifikat für Schnelltest anfordern" alt="Testzertifikat für Schnelltest anfordern" style="align: center">  <img src="./testergebnis-anfordern-pcr.png" title="Testzertifikat für PCR-Test anfordern" alt="Testzertifikat für PCR-Test anfordern" style="align: center"></center>
+<div class="text-center"> <img src="./test-registrieren.png" title="Test registrieren" alt="Test registrieren" style="align: center">  <img src="./zertifikat-anfordern-schnelltest.png" title="Testzertifikat für Schnelltest anfordern" alt="Testzertifikat für Schnelltest anfordern" style="align: center">  <img src="./testergebnis-anfordern-pcr.png" title="Testzertifikat für PCR-Test anfordern" alt="Testzertifikat für PCR-Test anfordern" style="align: center"></div>
 <br></br>
 
 Ist das Testergebnis negativ, erhalten Nutzer\*innen das Zertifikat in der App sobald auch das Testergebnis in der App vorliegt - vorausgesetzt,  sie haben das Zertifikat vorher angefordert und die jeweilige Schnellteststelle unterstützt die Erstellung eines Zertifikats. Sie können es dann über den Reiter „Zertifikate“ in ihrer Registerkarte einsehen. Tippen sie auf das COVID-Testzertifikat, wird ihnen der QR-Code angezeigt, sowie weitere Informationen, wie Art des Tests, Datum und Uhrzeit der Durchführung und Testergebnis. 
 
 <br></br>
-<center> <img src="./zertifikat_green.png" title="Testzertifikat" alt="Testzertifikat" style="align: center">  <img src="./zertifikat-qr-code.png" title="Testzertifikat Details" alt="Testzertifikat Details" style="align: center"></center>
+<div class="text-center"> <img src="./zertifikat_green.png" title="Testzertifikat" alt="Testzertifikat" style="align: center">  <img src="./zertifikat-qr-code.png" title="Testzertifikat Details" alt="Testzertifikat Details" style="align: center"></div>
 <br></br>
 
 Nicht alle **Schnelltestzentren** unterstützen das digitale Testzertifikat. In diesem Fall werden Nutzer\*innen während der Registrierung eines Tests nicht zum Beantragen des Zertifikats weitergeleitet. Sie erhalten im Anschluss die Information, dass ein Testzertifikat nicht angefordert werden kann, da die Teststelle die Ausstellung von Testzertifikaten nicht unterstützt. 
 
 <br></br>
-<center> <img src="./teststelle-nicht-unterstützt.png" title="Teststelle unterstützt Testzertifikate nicht" alt="Teststelle unterstützt Testzertifikate nicht" style="align: center"></center>
+<div class="text-center"> <img src="./teststelle-nicht-unterstützt.png" title="Teststelle unterstützt Testzertifikate nicht" alt="Teststelle unterstützt Testzertifikate nicht" style="align: center"></div>
 <br></br>
 
 Nutzer\*innen, die ein **Testzertifikat für einen PCR-Test** anfordern, müssen bei der Anforderung ihr Geburtsdatum angeben. Dabei ist wichtig, dass das Geburtsdatum mit dem übereinstimmt, das auch beim Abstrich für den PCR-Test angegeben wurde. Sollten die Geburtsdaten nicht übereinstimmen, beispielsweise aufgrund eines Tippfehlers, bekommt der Nutzer oder die Nutzerin weder das Testergebnis noch das Zertifikat über die App. Nachträglich lässt sich das Geburtsdatum nicht mehr ändern. Nach der Eingabe des Datums sollten Nutzer*innen es also noch einmal überprüfen.
 
 <br></br>
-<center> <img src="./testzertifikat_geburtstag.png" title="Geburtsdatum" alt="Geburtsdatum" style="align: center"></center>
+<div class="text-center"> <img src="./testzertifikat_geburtstag.png" title="Geburtsdatum" alt="Geburtsdatum" style="align: center"></div>
 <br></br>
 
 **Wichtig**: Zur Erstellung des Testzertifikats werden die Daten Ende-zu-Ende verschlüsselt und vom Labor, beziehungsweise der Schnellteststelle an die Corona-Warn-App übermittelt. Dafür werden die verschlüsselten Daten an das Robert Koch-Institut (RKI) übermittelt, um sie digital zu signieren und so die Gültigkeit des Zertifikats zu bestätigen. Die Daten können vom RKI nicht entschlüsselt werden und werden nach Zustellung des Zertifikats gelöscht.
@@ -56,7 +56,7 @@ Das Testergebnis wird nun automatisch dem **Kontakt-Tagebuch** hinzugefügt, sob
 
 
 <br></br>
-<center> <img src="./tests-kontakt-tagebuch.png" title="Tests im Kontakt-Tagebuch" alt="Tests im Kontakt-Tagebuch" style="align: center"></center>
+<div class="text-center"> <img src="./tests-kontakt-tagebuch.png" title="Tests im Kontakt-Tagebuch" alt="Tests im Kontakt-Tagebuch" style="align: center"></div>
 <br></br>
 
 In die **freiwillige Datenspende** fließen nun auch Warnungen ein, die Nutzer\*innen aufgrund eines positiven Schnelltests teilen, wie es seit [Version 1.13](/de/blog/2021-03-04-corona-warn-app-version-1-13/) schon für PCR-Tests möglich ist. Des Weiteren erfasst die Datenspende Datenpunkte zu Warnungen, die auf die Funktion der Event-Registrierung zurückzuführen sind - analog dazu, wie bereits erfasst wird, dass Nutzer\*innen auf Basis der Abstandsmessung durch Bluetooth eine Warnung erhalten. Das Projektteam erfasst außerdem, ob Nutzer\*innen ihre Event-Check-Ins mit freigeben. Voraussetzung für die Erfassung ist, dass Nutzer\*innen die freiwillige Datenspende aktiviert haben.

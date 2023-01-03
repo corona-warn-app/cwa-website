@@ -24,7 +24,7 @@ Users can also still use the QR code scanner at the known locations in the Coron
 
 
 <br></br>
-<center> <img src="./qr-code-scanner-en.png" title="QR code scanner in tab bar" alt="QR code scanner in tab bar" style="align: center"> </center>
+<div class="text-center"> <img src="./qr-code-scanner-en.png" title="QR code scanner in tab bar" alt="QR code scanner in tab bar"  ></div>
 <br></br>
 
 With the universal QR code scanner, users have been able to scan all QR codes supported by the Corona-Warn-App since version 2.11, regardless of whether they are tests, certificates, or check-ins. 
@@ -33,20 +33,20 @@ In this context, the project team has also adapted the **icons on the tab bar**.
 
 
 <br></br>
-<center> <img src="./tab-bar-en.png" title="Current tab bar" alt="Current tab bar" style="align: center"></center>
+<div class="text-center"> <img src="./tab-bar-en.png" title="Current tab bar" alt="Current tab bar" style="align: center"></div>
 <br></br>
-<center> Current tab bar </center>
+<div class="text-center"> Current tab bar </div>
 
 <br></br>
-<center> <img src="./tab-bar-old-en.png" title="Old tab bar" alt="Old tab bar" style="align: center"></center>
+<div class="text-center"> <img src="./tab-bar-old-en.png" title="Old tab bar" alt="Old tab bar" style="align: center"></div>
 <br></br>
-<center> Old tab bar </center>
+<div class="text-center"> Old tab bar </div>
 <br></br>
 
 In addition, the project team has expanded the **statistics area** so that users can continue to catch up on all key figures related to the pandemic in the app. The statistics area now includes the 7-day hospitalization incidence and the number of COVID-19 patients in intensive care units.
 
 <br></br>
-<center> <img src="./statistics(1).png" title="Statistics 7-day hospitalization incidence" alt="Statistics 7-day hospitalization incidence"style="align: center">  <img src="./statistics(2).png" title="COVID patients in intensive care units" alt="COVID patients in intensive care units" style="align: center"></center>
+<div class="text-center"> <img src="./statistics(1).png" title="Statistics 7-day hospitalization incidence" alt="Statistics 7-day hospitalization incidence"style="align: center">  <img src="./statistics(2).png" title="COVID patients in intensive care units" alt="COVID patients in intensive care units" style="align: center"></div>
 <br></br>
 
 The **7-day hospitalization incidence** refers to the number of people being hospitalized because of a COVID-19 diagnosis. It maps reported cases over one week per 100,000 residents. The **number of COVID-19 patients in intensive care units** indicates the share of COVID-19 patients accommodated in ICU beds in Germany.

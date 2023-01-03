@@ -22,17 +22,17 @@ Um einen Test für ein Familienmitglied zu registrieren, können Nutzer\*innen *
 Ab Version 2.21 wird ihnen nun im nächsten Schritt ein Fenster angezeigt, in dem sie auswählen können, ob sie den **Test für sich oder für andere registrieren** wollen. Zur besseren Unterscheidung, wem der Test zuzuordnen ist, weisen Nutzer\*innen diesem Test nun den Namen der Person zu, die getestet wurde. Dann können sie auch noch ein digitales Testzertifikat anfordern, das im Falle eines negativen Testergebnisses ausgestellt wird, sofern die Teststelle die Ausstellung der Testzertifikate unterstützt (mehr dazu [in diesem Blog](/de/blog/2021-06-24-cwa-version-2-4/)).
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./familienfunktion-testzertifikate(4).png" title="Testregistrierung für sich selbst oder für andere" style="align: center" width=250> <img src="./familienfunktion-testzertifikate(5).png" title="Testregistrierung für andere" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 Auf der Startseite ihrer Corona-Warn-App sehen die Nutzer\*innen dann den Bereich **„Tests von Familienmitgliedern“**, wo sie das Testergebnis einsehen können, sobald es vorliegt. Wenn sie das Testergebnis nicht mehr brauchen, können sie es löschen – unter Android, indem sie auf die drei Punkte in der rechten oberen Ecke tippen und unter iOS, indem sie das entsprechende Testergebnis zur Seite schieben (right-shift gesture). Es wird dann zunächst in den Papierkorb verschoben, wo es nach 30 Tagen endgültig gelöscht wird oder von wo aus das Ergebnis wieder hergestellt werden kann, falls es versehentlich gelöscht wurde.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./familienfunktion-testzertifikate(3).png" title="Tests von Familienmitgliedern" style="align: center" width=250> <img src="./familienfunktion-testzertifikate(2).png" title="Tests von Familienmitgliedern" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 ### Texte zum Impfstatus angepasst

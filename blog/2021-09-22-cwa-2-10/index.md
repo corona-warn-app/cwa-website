@@ -22,21 +22,21 @@ As of version 2.10, a **text box** will be displayed under each vaccination cert
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./vaccination-status(2).png" title="Textbox with reminder for a booster vaccination" alt="Textbox with reminder for a booster vaccination" style="align: center" width=250> 
 <img src="./vaccination-status(1).png" title="Textbox with vaccination status" alt="Textbox with vaccination status" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Text box on vaccination status - Left: Booster vaccination reminder. Right: Complete vaccination protection.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 If something has changed regarding a certificate, a **red dot** now shows the users which part of the certificate is affected.  This visual guide makes it easier for users to find important information quickly, for example when a certificate has expired, or a signature is invalid. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./red_dot_1_en.png" title="Visual guide with red dot" alt="Visual guide with red dot" style="align: center" width=250> 
 <img src="./red_dot_2_en.png" title="Visual guide with red dot" alt="Visual guide with red dot" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Visual guidance through a red dot - Left: Certificates tab. Right: Certificate Overview.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 In addition, users can now create a **print version of their certificates**. iOS users can do this by tapping "More" and then "View Print Version" under the relevant certificate, while Android users select the three dots in the top right corner and then tap "View Print Version". 
@@ -45,21 +45,21 @@ This gives users the option of saving the certificate as a PDF document, sending
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ios_print_1_en.png" title="Print certificate iOS" alt="Print certificate iOS" style="align: center" width=250>
 <img src="./PrintVaccinationFragment_en.png" title="Print certificate Android" alt="Print certificate Android" style="align: center" width=256>
 <img src="./ios_print_2_en.png" title="EU Certificate" alt="EU Certificate" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Display Print Version - Left: iOS. Center: Android. Right: EU certificate ready for printing</em></figcaption>
-</center>
+</div>
 <br></br>
 
 This function is only available for certificates issued in Germany. If users want to print or export a foreign certificate, they will receive a short message in the app that the print version cannot be displayed. 
 
 <br></br>
-<center>
+<div class="text-center">
 <img src="./printing-not-possible.png" title="Cannot display print version notification" alt="Cannot display print version notification" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Notification - Cannot display print version.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Version 2.10 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.

@@ -17,25 +17,25 @@ With version 2.22, users can create rapid test profiles for family members who d
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./rapid-test-profile-family(1).png" title="home screen" style="align: center" width=250> <img src="./rapid-test-profile-family(2).png" title="Rapid test profile" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./rapid-test-profile-family(3).png" title="overview rapid test profiles" style="align: center" width=250> <img src="./rapid-test-profile-android(3).png" title="overview rapid test profiles" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: rapid test profiles on iOS, right: rapid test profiles on Android</em></figcaption>
-</center>
+</div>
 <br></br>
 
 When users tap "Continue" from the rapid test profile, they can **scan the QR code** at the test site and afterwards select whether they want to register the test for themselves or for others (read more [here](/en/blog/2022-04-19-cwa-2-21/)). If they select "for others," the CWA will **automatically enter the name from that person's rapid test profile**. Afterwards, users can customize the name if necessary. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./rapid-test-profile-family(4).png" title="Scan QR code" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 Version 2.22, like previous versions, will be rolled out to all users in stages over 48 hours. iOS users can now download the latest app version manually from the Apple Store. The Google Play Store does not offer the option of triggering a manual update. The new version of the Corona-Warn-App will be available to users here within the next 48 hours.
