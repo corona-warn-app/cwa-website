@@ -529,7 +529,6 @@ function replaceVersionNumbers() {
     .pipe(replace('[android.minimum-required-os-version]', '6'))
     .pipe(replace('[android.minimum-app-version]', '1.0.4'))
     .pipe(replace('[android.current-app-version]', '2.28.3'))
-    .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
     .pipe(gulp.dest(PATHS.dist));
 }
 
