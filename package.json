@@ -1,8 +1,8 @@
 {
   "name": "corona-warn-app-landingpage",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Corona-Warn-App website coronawarn.app",
-  "main": "gulpfile.js",
+  "main": "gulpfile.mjs",
   "scripts": {
     "start-fast": "gulp --skip-compression",
     "start": "gulp",
@@ -11,6 +11,7 @@
     "cypress:open": "cypress open --e2e --browser chrome",
     "cypress:run:chrome": "cypress run --browser chrome --headed",
     "cypress:run:firefox": "cypress run --browser firefox --headed",
+    "cypress:run:short": "cypress run -s 'cypress/e2e/*.js' --e2e --headless",
     "start-server": "gulp start-server",
     "test:open:phase2": "start-server-and-test start-server http://localhost:8000 cypress:open",
     "test:open": "run-s build test:open:phase2",
@@ -18,7 +19,9 @@
     "test:chrome:phase2": "start-server-and-test start-server http://localhost:8000 cypress:run:chrome",
     "test:chrome": "run-s build test:chrome:phase2",
     "test:firefox:phase2": "start-server-and-test start-server http://localhost:8000 cypress:run:firefox",
-    "test:firefox": "run-s build test:firefox:phase2"
+    "test:firefox": "run-s build test:firefox:phase2",
+    "test:short": "run-s build test:short:phase2",
+    "test:short:phase2": "start-server-and-test start-server http://localhost:8000 cypress:run:short"
   },
   "author": "SAP Corona-Warn-App Open Source Team <corona-warn-app.opensource@sap.com>",
   "license": "Apache-2.0",
