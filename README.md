@@ -30,7 +30,7 @@ This repository contains the source files of the official website for the Corona
 
 You need the Node.js 18 (Active LTS) version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
 
-In case you use a Mac computer with Apple Silicon, make sure that [Rosetta](https://support.apple.com/en-us/HT211861) is installed. 
+In case you use a Mac computer with Apple Silicon, make sure that [Rosetta](https://support.apple.com/en-us/HT211861) is installed.
 
 ### Getting started
 
@@ -80,9 +80,16 @@ Manuals for the most common use cases of updating website content are available 
 [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/e2e` folder and can be run with:
 
 ```bash
-  npm run test
+npm test
 ```
-Alternatively, execute `npm run test:open` to select individual tests to run from the Cypress console.
+Since the full test includes testing of external links which can take 10 to 15 minutes to execute, a shorter version of the test is available, which excludes testing external links. It can be run with:
+```bash
+npm run test:short
+```
+To interactively run individual tests through the Cypress console use:
+```bash
+npm run test:open
+```
 
 To minimize the occurrence of errors we would ask you to perform all tests when contributing to our repository.
 
