@@ -136,6 +136,24 @@ To run all tests included in Cypress Test Production execute:
 
 `npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
 
+#### Checking Markdown documents
+
+Markdown documents which are used for publication to the website, such as in the [blog](./blog) directory, are checked through Cypress in the HTML code which the build process generates.
+
+Links in other Markdown documents, such as this README file and files in the [docs](./docs) directory, can be checked through:
+
+```bash
+npm run checklinks
+```
+
+The `checklinks` script uses Unix commands. On a Microsoft Windows operating system, the Unix commands can be provided by [git for Windows](https://gitforwindows.org/) with its embedded Git BASH emulation. If you are using Command Prompt or Windows PowerShell on Windows instead of the Git BASH shell, then you need to execute the following command:
+
+```bash
+npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe" --location user
+```
+
+otherwise you may see an error message similar to "'xargs' is not recognized as an internal or external command, operable program or batch file."
+
 ### Updating coronawarn.app
 
 Any direct commits and merged pull requests will automatically trigger follow-up actions to build and deploy the changes to [coronawarn.app](https://coronawarn.app). The respective [GitHub Actions](https://github.com/features/actions) are available in the [.github/workflows](.github/workflows) directory of this repository.
