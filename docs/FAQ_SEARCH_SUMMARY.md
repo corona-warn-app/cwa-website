@@ -5,7 +5,7 @@ It comprises two main parts that you need to alter, if you want to optimize or c
 
 ## Gulp Function
 
-The `gulp build` tasks in the [gulpfile](../gulpfile.js) performs a step called `copyFAQs`. This takes the faq files ([en](../src/data/faq.json), [de](../src/data/faq_de.json)) and transforms them into a searchable structure.
+The `gulp build` tasks in the [gulpfile](../gulpfile.mjs) performs a step called `copyFAQs`. This takes the faq files ([en](../src/data/faq.json), [de](../src/data/faq_de.json)) and transforms them into a searchable structure.
 
 Text blocks are merged into a single string and HTML tags are removed. Additionally, the question text is added. Indexes of the structure are the FAQ anchors. The resulting very straightforward JavaScript objects (one per language) are copied to the `{lang}/faq/faq.json` folders of the distribution.
 
