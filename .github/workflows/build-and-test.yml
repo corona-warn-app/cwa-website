@@ -1,0 +1,26 @@
+name: Build and Test
+
+on:
+#  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js 18 environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts/hydrogen'
+
+    - name: Install npm dependencies
+      run: npm ci
+
+    - name: Build the website
+      run: npm run-script build
+
+    - name: Test the website
+      run: npx start-server-and-test start-server http://localhost:8000 "cypress run -s 'cypress/e2e/*.js' --e2e --headless --browser chrome"
