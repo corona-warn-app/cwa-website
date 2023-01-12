@@ -350,6 +350,9 @@
                                 ]
                             },
                             {
+                                "duplicate": "warn_without_tan_family"
+                            },
+                            {
                                 "title": "Wie kann ich in Vertretung warnen?",
                                 "anchor": "warn_for_others",
                                 "active": false,
@@ -397,9 +400,8 @@
                                 "anchor": "warn_without_tan_how_to",
                                 "active": false,
                                 "textblock": [
-                                    "Beachten Sie, dass Sie nur aufgrund Ihres eigenen positiven Testergebnisses andere warnen sollten.",
                                     "Wenn Sie die App erst vor kurzer Zeit installiert haben, kann es vorkommen, dass Sie noch nicht ohne TAN warnen können. Dies dient der Missbrauchsprävention. Versuchen Sie es gegebenenfalls zu einem späteren Zeitpunkt erneut.",
-                                    "Folgen Sie dieser Schritt-für-Schritt Anleitung, um eine Warnung an andere Nutzer der Corona-Warn-App zu schicken: <ul><li>Tippen Sie auf den \"Status\"-Reiter.</li><li>Tippen Sie in der \"Tests erfassen und andere warnen\"-Kachel auf \"Weiter\".</li><li>Tippen Sie auf \"Selbsttest positiv?\", wenn Ihnen ein positives Selbsttestergebnis vorliegt.</li><li>Tippen Sie auf \"Test positiv und kein Ergebnis in der App?\", wenn Ihnen ein positives Ergebnis einer anderen Testart vorliegt.</li><li>Tippen Sie unter der Einverständniserklärung auf \"Einverstanden\" um fortzufahren.</li><li>Sofern Sie nicht mit einem positiven Selbsttestergebnis warnen möchten, haben Sie nun die Möglichkeit, die Art des durchgeführten Tests anzugeben. Tippen Sie auf den passenden Test oder alternativ auf \"Keine Angabe\".</li><li>Sofern Sie vergangene Check-ins haben, können diese im Anschluss ausgewählt werden, um gezielt auch die Teilnehmer dieser Veranstaltung zu warnen.</li><li>Sie können nun angeben, ob Sie Symptome hatten. Sollten Sie \"Ja\" antippen, können Sie daraufhin Angaben zu dem Symptom-Beginn machen.</li><li>Bestätigen Sie, dass Sie warnen möchten, indem Sie auf \"Andere warnen\" tippen.</li><li>Abschließend finden Sie auf der \"Vielen Dank\"-Ansicht weitere Hinweise. Durch das Tippen auf \"Fertig\" gelangen Sie zurück zum \"Status\"-Reiter der Corona-Warn-App.</li></ul>"
+                                    "Folgen Sie dieser Schritt-für-Schritt Anleitung, um eine Warnung aufgrund Ihres eigenen positiven Testergebnisses an andere Nutzer der Corona-Warn-App zu senden: <ol><li>Tippen Sie auf den \"Status\"-Reiter.</li><li>Tippen Sie in der \"Tests erfassen und andere warnen\"-Kachel auf \"Weiter\".</li><li>Tippen Sie auf \"Selbsttest positiv?\", wenn Ihnen ein positives Selbsttestergebnis vorliegt.</li><li>Tippen Sie auf \"Test positiv und kein Ergebnis in der App?\", wenn Ihnen ein positives Ergebnis einer anderen Testart vorliegt.</li><li>Tippen Sie unter der Einverständniserklärung auf \"Einverstanden\" um fortzufahren.</li><li>Sofern Sie nicht mit einem positiven Selbsttestergebnis warnen möchten, haben Sie nun die Möglichkeit, die Art des durchgeführten Tests anzugeben. Tippen Sie auf den passenden Test oder alternativ auf \"Keine Angabe\".</li><li>Sofern Sie vergangene Check-ins haben, können diese im Anschluss ausgewählt werden, um gezielt auch die Teilnehmer dieser Veranstaltung zu warnen.</li><li>Sie können nun angeben, ob Sie Symptome hatten. Sollten Sie \"Ja\" antippen, können Sie daraufhin Angaben zu dem Symptom-Beginn machen.</li><li>Bestätigen Sie, dass Sie warnen möchten, indem Sie auf \"Andere warnen\" tippen.</li><li>Abschließend finden Sie auf der \"Vielen Dank\"-Ansicht weitere Hinweise. Durch das Tippen auf \"Fertig\" gelangen Sie zurück zum \"Status\"-Reiter der Corona-Warn-App.</li></ol>"
                                 ]
                             },
                             {
@@ -426,7 +428,7 @@
                                 "textblock": [
                                     "Ja, nutzen Sie ab Version 3.0 die neue Funktion \"Tests erfassen und andere warnen\", dazu ist ggf. ein Update der App nötig.",
                                     "Warnen Sie damit Andere auf Basis des empfangenen positiven Ergebnisses manuell in der CWA.",
-                                    "Siehe: <a href='placeholder' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
+                                    "Siehe: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
                                 ]
                             },
                             {
@@ -445,7 +447,7 @@
                                     "Wenn Sie die Corona-Warn-App nicht auf Version 3.0 aktualisieren, wird für eine Übergangsfrist (bis zum ??????h) noch die Verifikations-Hotline zur Verfügung stehen, bei der Sie sich eine TAN ausstellen lassen können.",
                                     "Nach diesem Zeitpunkt werden entweder die Testergebnisse nur noch direkt digital von den Teststellen in die CWA übertragen, wie bisher haben Sie dann die Möglichkeit, andere zu warnen. Oder Sie erhalten das Testergebnis auf anderem Wege. Dann können Sie – nach einem Update auf Version 3.0 – manuell mit der Funktion \"Tests erfassen und andere warnen\" andere direkt warnen.",
                                     "Für alle anderen Funktionen unterscheidet sich Version 3.0 von der vorherigen Version der CWA nicht.",
-                                    "Siehe auch: <a href='placeholder' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
+                                    "Siehe auch: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
                                 ]
                             },
                             {
@@ -501,7 +503,7 @@
                                 ]
                             },
                             {
-                                "title": "Ich war in einem Restaurant (auf einem Event) per QR-Code eingecheckt. Kann ich die Gäste des Events mit der neuen Funktion warnen? Bleibe ich dabei anonym?",
+                                "title": "Ich war bei einer Veranstaltung per QR-Code eingecheckt. Kann ich die Gäste des Events mit der Funktion warnen? Bleibe ich dabei anonym?",
                                 "anchor": "warn_without_tan_event",
                                 "active": false,
                                 "textblock": [
@@ -532,7 +534,7 @@
                                 "textblock": [
                                     "Ja, wenn Sie einen positiven Testbefund (auch ohne TAN) in der Corona-Warn-App registrieren, wird dieser Test wie bisher auch im Kontakt-Tagebuch eingetragen. Das geschieht unabhängig von der Art des Tests.",
                                     "Wenn Sie manuell über die neue Funktion \"Tests erfassen und andere warnen\" andere CWA-Anwender*innen direkt warnen, wird zwar kein Test in der App registriert, aber im Tagebuch dokumentiert, dass Sie Andere gewarnt haben.",
-                                    "Siehe auch: <a href='placeholder' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
+                                    "Siehe auch: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
                                 ]
                             },
                             {
