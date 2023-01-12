@@ -398,7 +398,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Beachten Sie, dass Sie nur aufgrund Ihres eigenen positiven Testergebnisses andere warnen sollten.",
-                                    "Wenn Sie die App erst vor unmittelbarer Zeit installiert haben, kann es vorkommen, dass Sie noch nicht ohne TAN warnen können. Dies dient der Missbrauchsprävention. Versuchen Sie es gegebenenfalls zu einem späteren Zeitpunkt erneut.",
+                                    "Wenn Sie die App erst vor kurzer Zeit installiert haben, kann es vorkommen, dass Sie noch nicht ohne TAN warnen können. Dies dient der Missbrauchsprävention. Versuchen Sie es gegebenenfalls zu einem späteren Zeitpunkt erneut.",
                                     "Folgen Sie dieser Schritt-für-Schritt Anleitung, um eine Warnung an andere Nutzer der Corona-Warn-App zu schicken: <ul><li>Tippen Sie auf den \"Status\"-Reiter.</li><li>Tippen Sie in der \"Tests erfassen und andere warnen\"-Kachel auf \"Weiter\".</li><li>Tippen Sie auf \"Selbsttest positiv?\", wenn Ihnen ein positives Selbsttestergebnis vorliegt.</li><li>Tippen Sie auf \"Test positiv und kein Ergebnis in der App?\", wenn Ihnen ein positives Ergebnis einer anderen Testart vorliegt.</li><li>Tippen Sie unter der Einverständniserklärung auf \"Einverstanden\" um fortzufahren.</li><li>Sofern Sie nicht mit einem positiven Selbsttestergebnis warnen möchten, haben Sie nun die Möglichkeit, die Art des durchgeführten Tests anzugeben. Tippen Sie auf den passenden Test oder alternativ auf \"Keine Angabe\".</li><li>Sofern Sie vergangene Check-ins haben, können diese im Anschluss ausgewählt werden, um gezielt auch die Teilnehmer dieser Veranstaltung zu warnen.</li><li>Sie können nun angeben, ob Sie Symptome hatten. Sollten Sie \"Ja\" antippen, können Sie daraufhin Angaben zu dem Symptom-Beginn machen.</li><li>Bestätigen Sie, dass Sie warnen möchten, indem Sie auf \"Andere warnen\" tippen.</li><li>Abschließend finden Sie auf der \"Vielen Dank\"-Ansicht weitere Hinweise. Durch das Tippen auf \"Fertig\" gelangen Sie zurück zum \"Status\"-Reiter der Corona-Warn-App.</li></ul>"
                                 ]
                             },
@@ -407,8 +407,8 @@
                                 "anchor": "warn_without_tan_error",
                                 "active": false,
                                 "textblock": [
-                                    "Unter folgenden Umständen können Sie andere nicht warnen: <ul><li>Sie haben die App erst vor unmittelbarer Zeit installiert.</li><li>Seit Ihrer letzten Warnung ist nicht genügend Zeit verstrichen.</li></ul>",
-                                    "Es handelt sich hierbei um Vorkehrungen, die getroffen worden sind, um Missbrauch dieser Funktion zu vermeiden. Beachten Sie, dass Sie mit positiven Testergebnissen, die Sie in Ihrer App erhalten, trotzdem warnen können."
+                                    "Unter folgenden Umständen können Sie andere nicht warnen: <ul><li>Sie haben die App erst vor kurzer Zeit installiert.</li><li>Seit Ihrer letzten Warnung ist nicht genügend Zeit verstrichen.</li></ul>",
+                                    "Es handelt sich hierbei um Vorkehrungen, die getroffen wurden, um Missbrauch dieser Funktion zu vermeiden. Beachten Sie, dass Sie mit positiven Testergebnissen, die Sie durch das Einscannen eines QR-Codes in Ihrer App erhalten, trotzdem warnen können."
                                 ]
                             },
                             {
@@ -420,11 +420,11 @@
                                 ]
                             },
                             {
-                                "title": "Ich habe mein positives Ergebnis aus anderem Wege erfahren (E-Mail, Telefonat…), aber kein Ergebnis in der App – kann ich trotzdem meine Kontakte warnen?",
+                                "title": "Ich habe mein positives Ergebnis nicht über die App erhalten – kann ich meine Kontakte trotzdem warnen?",
                                 "anchor": "warn_without_tan_external_result",
                                 "active": false,
                                 "textblock": [
-                                    "Ja, nutzen Sie ab Release 3.0 die neue Funktion \"Tests erfassen und andere warnen\", dazu ist ggf. ein Update der App nötig.",
+                                    "Ja, nutzen Sie ab Version 3.0 die neue Funktion \"Tests erfassen und andere warnen\", dazu ist ggf. ein Update der App nötig.",
                                     "Warnen Sie damit Andere auf Basis des empfangenen positiven Ergebnisses manuell in der CWA.",
                                     "Siehe: <a href='placeholder' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
                                 ]
@@ -434,22 +434,22 @@
                                 "anchor": "warn_without_tan_hotline",
                                 "active": false,
                                 "textblock": [
-                                    "Nein, ab Release 3.0 der Corona-Warn-App ist es nicht mehr notwendig, die Verifikations-Hotline anzurufen."
+                                    "Nein, ab Version 3.0 der Corona-Warn-App ist es nicht mehr notwendig, die Verifikations-Hotline anzurufen."
                                 ]
                             },
                             {
-                                "title": "Muss ich auf das neue Release umsteigen, oder läuft meine aktuelle Version der CWA weiter?",
+                                "title": "Muss ich auf Version 3.0 umsteigen, oder läuft meine aktuelle Version der CWA weiter?",
                                 "anchor": "warn_without_tan_version",
                                 "active": false,
                                 "textblock": [
-                                    "Wenn Sie die Corona-Warn-App nicht auf das neue Release aktualisieren, wird für eine Übergangsfrist (bis zum ??????h) noch die Verifikations-Hotline zur Verfügung stehen, bei der Sie sich eine TAN ausstellen lassen können.",
-                                    "Nach diesem Zeitpunkt werden entweder die Testergebnisse nur noch direkt digital von den Teststellen in die CWA übertragen, wie bisher haben Sie dann die Möglichkeit, andere zu warnen. Oder Sie erhalten das Testergebnis auf anderem Wege. Dann können Sie – nach einem Update auf Release 3.0 – manuell mit der neuen Funktion \"Tests erfassen und andere warnen\" andere direkt warnen.",
-                                    "Für alle anderen Funktionen unterscheidet sich das neue Release von der vorherigen Version der CWA nicht.",
+                                    "Wenn Sie die Corona-Warn-App nicht auf Version 3.0 aktualisieren, wird für eine Übergangsfrist (bis zum ??????h) noch die Verifikations-Hotline zur Verfügung stehen, bei der Sie sich eine TAN ausstellen lassen können.",
+                                    "Nach diesem Zeitpunkt werden entweder die Testergebnisse nur noch direkt digital von den Teststellen in die CWA übertragen, wie bisher haben Sie dann die Möglichkeit, andere zu warnen. Oder Sie erhalten das Testergebnis auf anderem Wege. Dann können Sie – nach einem Update auf Version 3.0 – manuell mit der Funktion \"Tests erfassen und andere warnen\" andere direkt warnen.",
+                                    "Für alle anderen Funktionen unterscheidet sich Version 3.0 von der vorherigen Version der CWA nicht.",
                                     "Siehe auch: <a href='placeholder' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
                                 ]
                             },
                             {
-                                "title": "Muss ich einen PCR-Test machen, nachdem ich mit einem Selbsttest (positives Ergebnis) gewarnt habe?",
+                                "title": "Muss ich einen PCR-Test machen, nachdem ich mit einem positiven Selbsttest gewarnt habe?",
                                 "anchor": "warn_without_tan_pcr_after_self_test",
                                 "active": false,
                                 "textblock": [
@@ -462,7 +462,7 @@
                                 "anchor": "warn_without_tan_warn_twice",
                                 "active": false,
                                 "textblock": [
-                                    "Die neue Funktion lässt nach einem erfassten Selbsttest nur noch einen weiteren registrierten PCR-/Schnelltest-Test zu. Falls mit dem positiven Selbsttest schon gewarnt wurde, würden durch einen solchen weiteren „offiziellen“ Test mit positivem Ergebnis dann ggf. einige der Kontakte eine weitere Risikowarnung erhalten.",
+                                    "Die neue Funktion lässt nach einem erfassten Selbsttest nur noch einen weiteren registrierten PCR-Test oder Schnelltest zu. Falls mit dem positiven Selbsttest schon gewarnt wurde, würden durch einen solchen weiteren „offiziellen“ Test mit positivem Ergebnis dann ggf. einige der Kontakte eine weitere Risikowarnung erhalten.",
                                     "Wir empfehlen aber weiterhin, sich nach einem positiven Selbsttest eigenverantwortlich so vernünftig zu verhalten, dass keine anderen Personen angesteckt werden. Dann sind weitere Warnungen auch nicht mehr nötig."
                                 ]
                             },
@@ -471,8 +471,8 @@
                                 "anchor": "warn_without_tan_still_positive",
                                 "active": false,
                                 "textblock": [
-                                    "Um einen Missbrauch zu vermeiden oder zu minimieren, dass sinnlose Warnungen getriggert werden, die gar nicht auf realen Risikokontakten beruhen, wurde entscheiden, dass ein Anwender mit der neuen Funktion nur einmal innerhalb einer bestimmten Zeitspanne Andere warnen kann.",
-                                    "Nach Ablauf dieser Zeitspanne ist es dann wieder möglich, auf Basis eines positiven Tests in der App zu warnen.",
+                                    "Um eine missbräuchliche Nutzung der Funktion zum sinnlosen Auslösen von Warnungen, die gar nicht auf realen Risikokontakten beruhen, zu vermeiden, wurde entscheiden, dass ein Anwender mit der neuen Funktion nur einmal innerhalb einer bestimmten Zeitspanne Andere warnen kann.",
+                                    "Nach Ablauf dieser Zeitspanne ist es dann wieder möglich, auf Basis eines Tests, der ohne TAN in der App registriert wurde, zu warnen.",
                                     "Wir empfehlen aber weiterhin, sich nach einem positiven Selbsttest eigenverantwortlich so vernünftig zu verhalten, dass keine anderen Personen angesteckt werden."
                                 ]
                             },
@@ -485,11 +485,11 @@
                                 ]
                             },
                             {
-                                "title": "Wie oft kann ich warnen?",
+                                "title": "Wie oft kann ich ohne TAN warnen?",
                                 "anchor": "warn_without_tan_how_often",
                                 "active": false,
                                 "textblock": [
-                                    "Innerhalb einer bestimmten Periode können Sie einmal ohne TAN warnen. Nach Ablauf dieser Sperrfrist können Sie erneut warnen. Grundsätzlich gibt es nach oben keine Grenzen, wie oft Sie warnen können, solange diese Abstände nicht unterschritten werden. Wir hoffen aber natürlich, dass es keine Notwendigkeit für Sie gibt, in noch kürzeren Abständen immer wieder neu zu warnen."
+                                    "Innerhalb eines bestimmten Zeitraums können Sie einmal ohne TAN warnen. Nach Ablauf der Sperrfrist können Sie erneut ohne TAN warnen. Grundsätzlich gibt es nach oben keine Grenzen, wie oft Sie ohne TAN warnen können, solange die Abstände nicht unterschritten werden."
                                 ]
                             },
                             {
@@ -505,24 +505,24 @@
                                 "anchor": "warn_without_tan_event",
                                 "active": false,
                                 "textblock": [
-                                    "Ja, wenn Sie sich per Event-QR-Code eingecheckt haben, können Sie den Zeitraum Ihres Check-ins die anderen Gäste weiterhin warnen. Dabei bleibt, wie bisher, Ihre Identität anonym."
+                                    "Ja, wenn Sie sich per Event-QR-Code eingecheckt haben, können Sie in dem Zeitraum Ihres Check-ins die anderen Gäste weiterhin warnen. Dabei bleibt, wie bisher, Ihre Identität anonym."
                                 ]
                             },
                             {
-                                "title": "Muss ich nach einem positiven (Selbst-)Test in Quarantäne/Isolation?",
-                                "anchor": "warn_without_tan_quarantine",
+                                "title": "Muss ich nach einem positiven (Selbst-)Test in Isolation?",
+                                "anchor": "warn_without_tan_isolation",
                                 "active": false,
                                 "textblock": [
                                     "Nach jedem positiven Test empfehlen wir im Sinne der Eigenverantwortung, zunächst Kontakte weitgehend zu minimieren und mit dem Arzt Ihres Vertrauens oder dem Gesundheitsamt Kontakt aufzunehmen und die weiteren Schritte abzustimmen.",
-                                    "Die aktuellen Quarantäne-Regeln richten sich nach dem IfSG und nach den lokalen geltenden Bestimmungen."
+                                    "Die aktuellen Isolations-Regeln richten sich nach dem IfSG und nach den lokalen geltenden Bestimmungen."
                                 ]
                             },
                             {
-                                "title": "Wenn ich wieder einen negativen Schnelltest habe, kann ich die Quarantäne dann beenden?",
+                                "title": "Wenn ich wieder einen negativen Schnelltest habe, kann ich die Isolation dann beenden?",
                                 "anchor": "warn_without_tan_negative",
                                 "active": false,
                                 "textblock": [
-                                    "Die Corona-Warn-App kann keine medizinische Diagnose stellen, ob Sie infiziert sind oder nicht. Daher klären Sie bitte die Frage der Beendigung der Quarantäne mit dem zuständigen Gesundheitsamt bzw. Ihrem Arzt."
+                                    "Die Corona-Warn-App kann keine medizinische Diagnose stellen, ob Sie infiziert sind oder nicht. Daher klären Sie bitte die Frage der Beendigung der Isolation mit dem zuständigen Gesundheitsamt bzw. Ihrem Arzt."
                                 ]
                             },
                             {
