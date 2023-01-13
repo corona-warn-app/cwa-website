@@ -5,8 +5,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js 18 environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts/hydrogen'
+
+    - name: Install root dependencies
+      uses: bahmutov/npm-install@v1
+
+    - name: Check if the page builds
+      run: npm run-script build
+  
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
