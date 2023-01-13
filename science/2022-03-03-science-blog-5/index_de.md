@@ -1,6 +1,6 @@
 ---
-page-title: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
-page-description: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
+page-title: "SB05: Wie viele aktive Nutzende hat die Corona-Warn-App?"
+page-description: "SB05: Wie viele aktive Nutzende hat die Corona-Warn-App?"
 page-name: science-blog-5
 page-name_de: science-blog-5
 author: CWA-Team

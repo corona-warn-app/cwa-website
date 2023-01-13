@@ -1,6 +1,6 @@
 ---
-page-title: "Who are the people using the Corona-Warn-App?"
-page-description: "Who are the people using the Corona-Warn-App?"
+page-title: "SB02: Who are the people using the Corona-Warn-App?"
+page-description: "SB02: Who are the people using the Corona-Warn-App?"
 page-name: science-blog-2
 page-name_de: science-blog-2
 author: CWA Team
