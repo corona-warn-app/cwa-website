@@ -398,12 +398,12 @@ The following graph demonstrates the hourly distribution of the delay between re
 The following graph depicts the daily distribution of the delay between risk exposure and registration of a PCR test. On average, PCR tests were registered 6 days after risk exposure (median: 6 days).
 
 <img src="./ppa_delay_er_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and test registration (in days before test registration) (PCR)."/>
-<figcaption aria-hidden="true">Figure 15:Delay between risk exposure and test registration (in days before test registration) (PCR).</figcaption>
+<figcaption aria-hidden="true">Figure 15: Delay between risk exposure and test registration (in days before test registration) (PCR).</figcaption>
 
 The following graph depicts the daily distribution of the delay between risk exposure and the registration of a rapid antigen test. On average, tests were registered 7.4 days after risk exposure (median: 7 days).
 
 <img src="./ppa_delay_er_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and test registration (in days before test registration) (rapid antigen test)."/>
-<figcaption aria-hidden="true">Figure 16:Delay between risk exposure and test registration (in days before test registration) (rapid antigen test).</figcaption>
+<figcaption aria-hidden="true">Figure 16: Delay between risk exposure and test registration (in days before test registration) (rapid antigen test).</figcaption>
 
 ### 6.4 Delay between risk exposure and receipt of a warning
 
@@ -411,7 +411,7 @@ The daily distribution of the delay between risk exposure and receipt of a warni
 
 As the following example demonstrates, the average delay between risk exposure and receipt of a warning (3.8 days) is quite short. Let us assume that person A meets person B on day 0 for approximately 2 hours, and that person A displays typical SARS-CoV-2 symptoms on day 1. If person A were to be tested on day 2, receive a positive PCR test result on day 3, and register the result immediately in the app, person B’s smartphone would receive a push notification on day 3 informing them that they had been exposed to an increased risk on day 0. This leads to a 3-day delay between risk exposure and receipt of a warning.
 
-<img src="./ppa_delay_ew_pcr_plot_en.png" class="figure-img img-fluid" alt=" Delay between risk exposure and receipt of a warning (in days before the warning) (PCR)."/>
+<img src="./ppa_delay_ew_pcr_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (in days before the warning) (PCR)."/>
 <figcaption aria-hidden="true">Figure 17: Delay between risk exposure and receipt of a warning (in days before the warning) (PCR).</figcaption>
 
 The daily distribution of the delay between risk exposure and receipt of a warning results from the difference between the distribution of the delay between risk exposure and registration, on the one hand, and receipt of a warning and registration of a rapid antigen test, on the other. The following graph depicts the daily distribution of the delay between risk exposure and receipt of a warning. On average, warnings were received 5.4 days after risk exposure (median: 5 days).

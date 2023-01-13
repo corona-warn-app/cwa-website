@@ -403,8 +403,8 @@ Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierun
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines Antigen-Schnelltests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 7,4 Tage nach der Risikobegegnung registriert (Median: 7 Tage).
 
-<img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt=" Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
-<figcaption aria-hidden="true">Abb. 16:  Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (Antigen-Schnelltest).</figcaption>
+<img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 16: Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (Antigen-Schnelltest).</figcaption>
 
 ### 6.4 Verzug zwischen Risikobegegnung und Warnung
 
