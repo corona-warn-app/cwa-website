@@ -1,6 +1,6 @@
 ---
-page-title: "How many active users does the Corona-Warn-App have?"
-page-description: "How many active users does the Corona-Warn-App have?"
+page-title: "SB05: How many active users does the Corona-Warn-App have?"
+page-description: "SB05: How many active users does the Corona-Warn-App have?"
 page-name: science-blog-5
 page-name_de: science-blog-5
 author: CWA Team
