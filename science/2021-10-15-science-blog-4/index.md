@@ -416,7 +416,7 @@ As the following example demonstrates, the average delay between risk exposure a
 
 The daily distribution of the delay between risk exposure and receipt of a warning results from the difference between the distribution of the delay between risk exposure and registration, on the one hand, and receipt of a warning and registration of a rapid antigen test, on the other. The following graph depicts the daily distribution of the delay between risk exposure and receipt of a warning. On average, warnings were received 5.4 days after risk exposure (median: 5 days).
 
-<img src="./ppa_delay_ew_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (by days before the warning) (Rapid antigen test)."/>
+<img src="./ppa_delay_ew_rat_plot_en.png" class="figure-img img-fluid" alt="Delay between risk exposure and receipt of a warning (in days before the warning) (Rapid antigen test)."/>
 <figcaption aria-hidden="true">Figure 18: Delay between risk exposure and receipt of a warning (in days before the warning) (Rapid antigen test).</figcaption>
 
 ### 6.5 Association between risk assessment and infection
