@@ -385,7 +385,7 @@
                         "indexed": true,
                         "accordion": [
                             {
-                                "title": "Information about warning without TAN",
+                                "title": "Information about warning without a TAN",
                                 "anchor": "warn_without_tan",
                                 "active": false,
                                 "textblock": [
@@ -457,7 +457,7 @@
                                 "active": false,
                                 "textblock": [
                                     "From an epidemiological point of view, a PCR test is of course significantly more accurate and informative than a self-test performed by non-professionals. Therefore, a PCR test is recommended for confirmation (or verification of any false positives) of the self-test.",
-                                    "Therefore, in order to comply with local regulations, we recommend that after a positive self-test, they contact their local health department or trusted doctor to discuss further action."
+                                    "Therefore, in order to comply with local regulations, we recommend that after a positive self-test, you contact their local health department or trusted doctor to discuss further action."
                                 ]
                             },
                             {
@@ -500,7 +500,7 @@
                                 "anchor": "warn_without_tan_family",
                                 "active": false,
                                 "textblock": [
-                                    "No, this is not technically possible because the risk contacts of the person tested positive were not necessarily also recorded on their smartphone by contact tracing. Warning for others from your smartphone would therefore not reach these contacts at all, but only your (i.e. the wrong) contacts."
+                                    "No, this is not technically possible because the risk contacts of the person tested positive were not necessarily also recorded on your smartphone by contact tracing. Warning for others from your smartphone would therefore not reach these contacts at all, but only your (i.e. the wrong) contacts."
                                 ]
                             },
                             {
@@ -551,7 +551,7 @@
                                 "anchor": "warn_without_tan_sickness_certificate",
                                 "active": false,
                                 "textblock": [
-                                    "No, alerting others with the new \"Manage Your Tests and Warn Others\" feature does not result in the display of a positive test result in the Corona-Warn-App at all. Aside from that, displaying it in the CWA is not permitted by labor law for sick leave or work/school release. Please contact the doctor you trust or the responsible health office."
+                                    "No, alerting others with the \"Manage Your Tests and Warn Others\" feature does not result in the display of a positive test result in the Corona-Warn-App at all, it is only used to warn your contacts. Aside from that, displaying it in the CWA is not permitted by labor law for sick leave or work/school release. Please contact the doctor you trust or the responsible health office."
                                 ]
                             },
                             {
@@ -559,25 +559,25 @@
                                 "anchor": "warn_without_tan_in_app_display",
                                 "active": false,
                                 "textblock": [
-                                    "Warning others with the new \"Manage Your Tests and Warn Others\" feature does not display a positive test result in the Corona-Warn-App at all.",
-                                    "For tests that are registered in the app as before, the same still applies: Tests always represent only a snapshot in the diagnosis of infectious diseases, they are therefore not valid indefinitely. After 72 hours, a registered test will therefore be grayed out as \"out of date\" in the Corona-Warn-App."
+                                    "Warning others with the new \"Manage Your Tests and Warn Others\" feature does not display a positive test result in the Corona-Warn-App at all, it is only used to warn your contacts.",
+                                    "For tests that are registered in the app as before, the same still applies: Tests always represent only a snapshot in the diagnosis of infectious diseases, they are therefore not valid indefinitely. After 72 hours, a registered test will therefore be displayed as \"out of date\" in the Corona-Warn-App."
                                 ]
                             },
                             {
-                                "title": "After sharing the positive result, does my risk assessment stop? How long?",
+                                "title": "After sharing the positive result, does my risk assessment stop?",
                                 "anchor": "warn_without_tan_risk_assessment",
                                 "active": false,
                                 "textblock": [
-                                    "No, risk assessment and the contact tracing protocol are not stopped. Warning others with the new \"Manage Your Tests and Warn Others\" feature does not affect risk assessment.",
-                                    "If you are out in public despite testing positive, please be mindful of spacing and hygiene rules and, if possible, wear a mask to reduce a risk of infection to others."
+                                    "No, the risk assessment is not stopped. Thus, the Corona-Warn-App continues to record its contacts and send out random IDs. Therefore, warning others with the \"Manage Your Tests and Warn Others\" function has no effect on the risk assessment.",
+                                    "If you are out in public despite testing positive, please be mindful of spacing and hygiene rules and, if possible, wear a mask to reduce the risk of infection of others."
                                 ]
                             },
                             {
-                                "title": "Does the risk calculation for an alert on my smartphone differ by test type from the person who tested positive?",
+                                "title": "Does the risk calculation for a warning on my smartphone differ depending on the test type used to warn?",
                                 "anchor": "warn_without_tan_risk_assessment_different",
                                 "active": false,
                                 "textblock": [
-                                    "No, the procedure for calculating the risk of infection has not been changed. Regardless of the type of test used to detect infection, the same parameters apply when calculating the risk for others."
+                                    "No, the procedure for calculating the risk of infection has not been changed. Regardless of the type of test used to initiate the warning, the same parameters apply in the risk calculation."
                                 ]
                             },
                             {
