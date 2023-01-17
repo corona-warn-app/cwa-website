@@ -1,6 +1,6 @@
 ---
-page-title: "About the Effectiveness and Benefits of the Corona-Warn-App"
-page-description: "About the Effectiveness and Benefits of the Corona-Warn-App"
+page-title: "SB01: About the Effectiveness and Benefits of the Corona-Warn-App"
+page-description: "SB01: About the Effectiveness and Benefits of the Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA Team
