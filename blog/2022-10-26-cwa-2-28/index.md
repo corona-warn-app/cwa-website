@@ -14,11 +14,11 @@ The project team of the Robert Koch Institute (RKI), Deutsche Telekom, and SAP h
 
 Users can use the new tile “Pandemic Radar” to go to the [corresponding RKI website](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home) (German only). There, they can find more statistics on relevant key figures for the pandemic, for example, the viral load in wastewater. The pandemic radar is updated daily (Mondays-Fridays). 
 
-<br></br>
-<center> 
+<br>
+<div class="text-center"> 
 <img src="./pandemic-radar.jpg" title="Kachel Pandemieradar" style="align: center" width=250>
-</center>
-<br></br>
+</div>
+<br>
 
 As the pandemic radar brings together a lot of important, detailed information to assess the current situation, the project team has added the new tile in the first place of the statistics section in the CWA. 
 

@@ -24,38 +24,38 @@ Nach **30 Tagen werden die Zertifikate automatisch und endgültig aus dem Papier
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./papierkorb-ios.png" title="Papierkorb iOS" alt="Papierkorb iOS" style="align: center" width=250> 
 <img src="./papierkorb-android(1).png" title="Papierkorb Android" alt="Papierkorb Android" style="align: center" width=250>
 <img src="./papierkorb-wiederherstellen.png" title="Zertifikat wiederherstellen" alt="Zertifikat wiederherstellen" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Links: Papierkorb bei iOS-Geräten. Mitte: Papierkorb bei Android-Geräten. Rechts: Zertifikat aus dem Papierkorb wiederherstellen</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **Android-Nutzer\*innen** gelangen zu ihrem Papierkorb, indem sie in der rechten oberen Ecke ihrer App die **drei Punkte** auswählen und dann auf „Papierkorb“ tippen. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./papierkorb-android(2).png" title="Papierkorb Android" alt="Papierkorb Android" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 **iOS-Nutzer\*innen** können auf dem Startbildschirm ihrer Corona-Warn-App nach unten wischen und dort unter **„Mehr“** den „Papierkorb“ auswählen. In diesem Zuge hat das Projektteam diesen Bereich neu gestaltet. iOS-Nutzer\*innen finden unter „Mehr“ ab sofort die App-Einstellungen, häufige Fragen (FAQ), weitere Informationen und die Option, die App weiter zu empfehlen.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./papierkorb-ios(1).jpg" title="Papierkorb iOS" alt="Papierkorb iOS" style="align: center" width=250> 
 <img src="./ios-altes-design.png" title="Papierkorb Android" alt="Papierkorb Android" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: Bereich mit Papierkorb ab Version 2.13. Rechts: Bereich vorher</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Nutzer\*innen können ein Zertifikat, das sie gelöscht haben, auch **noch einmal scannen**. Befindet sich das Zertifikat noch im Papierkorb, erkennt die App es und weist die Nutzer\*innen darauf hin, dass sie es wiederherstellt.  
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./zertificat-scan-wiederherstellen.png" title="Gescanntes Zertifikat wiederherstellen" alt="Gescanntes Zertifikat wiederherstellen" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Des Weiteren können Nutzer\*innen die **7-Tage-Inzidenz der Hospitalisierung** ab sofort auch auf **lokaler Ebene** sehen. Da diese Kennzahl nur auf Bundeslandebene verfügbar ist, zeigt die Corona-Warn-App automatisch die Hospitalisierung des jeweiligen Bundeslandes an, wenn Nutzer\*innen einen Kreis oder eine Stadt ausgewählt haben.
@@ -63,9 +63,9 @@ Des Weiteren können Nutzer\*innen die **7-Tage-Inzidenz der Hospitalisierung** 
 Ab Version 2.13 gibt es außerdem eine **kombinierte Kachel für die 7-Tage-Inzidenzwerte**: Sowohl auf lokaler als auch auf Bundesebene werden die Neuinfektionen und Hospitalisierungen pro 100.000 Einwohner\*innen nun auf einer Kachel angezeigt. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./inzidenz-android.png" title="Kombinierte Kachel für Inzidenz-Werte" alt="Kombinierte Kachel für Inzidenz-Werte" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Zudem hat das Projektteam den **Algorithmus bei der Zuordnung von Zertifikaten verbessert**. Die Corona-Warn-App ordnet Zertifikate, die eine unterschiedliche Anzahl an Leerzeichen zwischen dem Vor- und Nachnamen der Person haben, nun der gleichen Person zu. Zuvor führte dieser Schreibfehler dazu, dass die Corona-Warn-App diese Zertifikate zwei verschiedenen Personen zuordnete.

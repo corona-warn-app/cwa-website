@@ -14,13 +14,13 @@ Die Projektbeteiligten verfolgen kontinuierlich das Ziel, die Leistung der Coron
 Dafür haben die Expert\*innen die App in realitätsnahen Szenarien in verschiedenen Settings getestet und die Ergebnisse mit komplexen Optimierungsverfahren ausgewertet. Mehr als 1.000 Teststunden in Testlandschaften mit Körperattrappen und einem programmierbaren Kran in der Fraunhofer Testhalle sowie Messungen mit Probanden in realen Umgebungen (zum Beispiel in Bussen und Bahnen) liefern Messdaten, die in der Risikoberechnung der CWA berücksichtigt werden. Auf Basis dieser Erkenntnisse werden Anpassungen des bisherigen Risikomodells vorgenommen, insbesondere auch um eine höhere Infektiosität durch die **mutierten Virusvarianten** zu berücksichtigen.
 
 <br></br>
-<center> <img src="./feldtest-1.jpg" title="Testumgebung" alt="Testumgebung" style="align: center"></center>
-<center>Foto: Fraunhofer Institut</center>
+<div class="text-center"> <img src="./feldtest-1.jpg" title="Testumgebung" alt="Testumgebung" style="align: center"></div>
+<div class="text-center">Foto: Fraunhofer Institut</div>
 <br></br>
 
 <br></br>
-<center> <img src="./feldtest-2.jpg" title="Tests" alt="Testumgebung" style="align: center"></center>
-<center>Foto: Fraunhofer Institut</center>
+<div class="text-center"> <img src="./feldtest-2.jpg" title="Tests" alt="Testumgebung" style="align: center"></div>
+<div class="text-center">Foto: Fraunhofer Institut</div>
 <br></br>
 
 

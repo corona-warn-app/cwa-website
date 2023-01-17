@@ -1,5 +1,7 @@
 // Credit: Nicolas Gallagher and SUIT CSS.
 
+@use "sass:math";
+
 .embed-responsive {
   position: relative;
   width: 100%;
@@ -25,7 +27,7 @@
 @each $key, $ratio in $embed-responsive-aspect-ratios {
   .embed-responsive-#{$key} {
     &::before {
-      padding-top: percentage(map-get($ratio, y) / map-get($ratio, x));
+      padding-top: percentage(math.div(map-get($ratio, y), map-get($ratio, x)));
     }
   }
 }

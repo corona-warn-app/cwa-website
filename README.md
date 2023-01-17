@@ -28,7 +28,9 @@ This repository contains the source files of the official website for the Corona
 
 ### Requirements
 
-You need the Node.js 16 Active LTS version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
+You need the Node.js 18 (Active LTS) version of [Node.js](https://nodejs.org/en/) (which includes npm) to build the website.
+
+In case you use a Mac computer with Apple Silicon, make sure that [Rosetta](https://support.apple.com/en-us/HT211861) is installed.
 
 ### Getting started
 
@@ -75,18 +77,41 @@ Manuals for the most common use cases of updating website content are available 
 
 ### Testing
 
-[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/integration` folder and can be run with:
+[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/e2e` folder and can be run with:
 
 ```bash
-  npm run test
+npm test
 ```
-Alternatively, execute `npm run test:open` to select individual tests or all tests to run from the Cypress console.
+Since the full test includes testing of external links which can take 10 to 15 minutes to execute, a shorter version of the test is available, which excludes testing external links. It can be run with:
+```bash
+npm run test:short
+```
+To interactively run individual tests through the Cypress console use:
+```bash
+npm run test:open
+```
 
 To minimize the occurrence of errors we would ask you to perform all tests when contributing to our repository.
 
 The production web https://www.coronawarn.app runs under the Ubuntu operating system with a case-sensitive file-system. To ensure gaps in testing are minimized, perform local tests preferably under Ubuntu.
 
 Other operating systems, such as Microsoft Windows, which access files in a case-insensitive mode, may hide problems in testing if there is a mismatch between the upper/lower-case file naming and the reference to the file. This applies to Cypress tests and testing by hand.
+
+#### Cypress cache
+
+Executing `npm install`, as described in the [Getting started](#getting-started) section, caches a separate copy of Cypress on the system. If the `cwa-website` later specifies a different Cypress version and `npm install` is executed again, then any previously cached Cypress versions remain on the system. Each cached version uses about 0.5 GB of storage. To free up storage space by manually cleaning up unneeded cached Cypress versions, carry out the following steps:
+
+To check which version of Cypress you have installed, execute the following command in a terminal window in the `cwa-website` base directory:
+
+[`npx cypress version`](https://docs.cypress.io/guides/guides/command-line#cypress-version)
+
+To show which versions are cached and how much storage space they take up, execute:
+
+[`npx cypress cache list --size`](https://docs.cypress.io/guides/guides/command-line#cypress-cache-list)
+
+Then to remove other versions, apart from the currently used version, execute:
+
+[`npx cypress cache prune`](https://docs.cypress.io/guides/guides/command-line#cypress-cache-prune)
 
 #### Notes for test developers
 
@@ -107,9 +132,27 @@ Best practice is to use `data-e2e="your_test_id"` element attributes to select s
 
 To run all tests included in Cypress Test Production execute:
 
-`npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
+`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
 
-`npx cypress run -s 'cypress/integration/*.js' -c baseUrl=https://coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
+`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
+
+#### Checking Markdown documents
+
+Markdown documents which are used for publication to the website, such as in the [blog](./blog) directory, are checked through Cypress in the HTML code which the build process generates.
+
+Links in other Markdown documents, such as this README file and files in the [docs](./docs) directory, can be checked through:
+
+```bash
+npm run checklinks
+```
+
+The `checklinks` script uses Unix commands. On a Microsoft Windows operating system, the Unix commands can be provided by [git for Windows](https://gitforwindows.org/) with its embedded Git BASH emulation. If you are using Command Prompt or Windows PowerShell on Windows instead of the Git BASH shell, then you need to execute the following command:
+
+```bash
+npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe" --location user
+```
+
+otherwise you may see an error message similar to "'xargs' is not recognized as an internal or external command, operable program or batch file."
 
 ### Updating coronawarn.app
 
@@ -140,7 +183,7 @@ A list of all public repositories from the Corona-Warn-App can be found [here](h
 
 ## Licensing
 
-Copyright (c) 2020-2022 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
+Copyright (c) 2020-2023 Deutsche Telekom AG and SAP SE or an SAP affiliate company.
 
 Licensed under the **Apache License, Version 2.0** (the "License"); you may not use this file except in compliance with the License.
 
@@ -148,4 +191,6 @@ You may obtain a copy of the License at https://www.apache.org/licenses/LICENSE-
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the [LICENSE](./LICENSE) for the specific language governing permissions and limitations under the License.
 
+<!-- The website of the Bundesregierung has implemented additional security which causes a 503 error (service unavailable) when any link on their site is tested automatically. -->
+<!-- markdown-link-check-disable-next-line -->
 The "Corona-Warn-App" logo is a registered trademark of The Press and Information Office of the Federal Government. For more information please see [bundesregierung.de](https://www.bundesregierung.de/breg-en/federal-government/federal-press-office).

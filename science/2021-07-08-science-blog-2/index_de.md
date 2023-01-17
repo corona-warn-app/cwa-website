@@ -1,6 +1,6 @@
 ---
-page-title: "Wer sind die Menschen, die die Corona-Warn-App nutzen?"
-page-description: "Wer sind die Menschen, die die Corona-Warn-App nutzen?"
+page-title: "SB02: Wer sind die Menschen, die die Corona-Warn-App nutzen?"
+page-description: "SB02: Wer sind die Menschen, die die Corona-Warn-App nutzen?"
 page-name: science-blog-2
 page-name_de: science-blog-2
 author: CWA-Team

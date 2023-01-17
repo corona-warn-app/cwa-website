@@ -18,7 +18,7 @@ The Corona-Warn-App screen now shows the new contact journal section (Figure 1).
 
 <br></br>
 
-<center> <img src="./contact-journal.jpg" title="Contact Journal Figure 1" alt="Contact Journal Figure 1" style="align: center">  <img src="./contact-journal-explanation.jpg" title="Explanation Figure 2" alt="Explanation Figure 2" style="align: center"> <img src="./contact-journal-overview.jpg" title="Overview Figure 3" alt="Overview Figure 3" style="align: center"></center>
+<div class="text-center"> <img src="./contact-journal.jpg" title="Contact Journal Figure 1" alt="Contact Journal Figure 1" style="align: center">  <img src="./contact-journal-explanation.jpg" title="Explanation Figure 2" alt="Explanation Figure 2" style="align: center"> <img src="./contact-journal-overview.jpg" title="Overview Figure 3" alt="Overview Figure 3" style="align: center"></div>
 
 <br></br>
 
@@ -30,9 +30,9 @@ In order to add people and locations to the journal, users can click on the corr
 
 <br></br>
 
-<center> <img src="./add-a-person.JPG" title="Adding a person" alt="Adding a person" style="align: center"> </center> <br></br>
+<div class="text-center"> <img src="./add-a-person.JPG" title="Adding a person" alt="Adding a person"  ></div> <br></br>
 
-<center> <img src="./add-a-location.JPG" title="Adding a location" alt="Adding a location" style="align: center"> </center>
+<div class="text-center"> <img src="./add-a-location.JPG" title="Adding a location" alt="Adding a location"  ></div>
 
 <br></br>
 
@@ -56,7 +56,7 @@ The app exports the contact list in RTF (Rich Text Format) which is widely used.
 
 <br></br>
 
-<center> <img src="./contact-list-export.JPG" title="Data export" alt="Data export" style="align: center"> </center>
+<div class="text-center"> <img src="./contact-list-export.JPG" title="Data export" alt="Data export"  ></div>
 
 <br></br>
 
@@ -74,7 +74,7 @@ Further instructions can be found in the **privacy notice**, which can also be a
 
 <br></br>
 
-<center> <img src="./data-privacy.JPG" title="Explanation about data privacy" alt="Explanation about data privacy" style="align: center"> </center>
+<div class="text-center"> <img src="./data-privacy.JPG" title="Explanation about data privacy" alt="Explanation about data privacy"  ></div>
 
 <br></br>
 

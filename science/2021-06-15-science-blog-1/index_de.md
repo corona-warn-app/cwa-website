@@ -1,6 +1,6 @@
 ---
-page-title: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
-page-description: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
+page-title: "SB01: Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
+page-description: "SB01: Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA-Team
@@ -21,7 +21,7 @@ Eines der wichtigsten Themen, das von Anfang an in der Öffentlichkeit diskutier
     Aspekte spielen dabei eine Rolle?](#welches-ziel-hat-die-evaluation-der-corona-warn-app-und-welche-aspekte-spielen-dabei-eine-rolle)
 -   [Welche Kennzahlen werden bei der Evaluation berücksichtigt und wo
     kommen die Daten dafür her?](#welche-kennzahlen-werden-bei-der-evaluation-berücksichtigt-und-wo-kommen-die-daten-dafür-her)
--   [Was bringt die Corona-Warn App?](#was-bringt-die-corona-warn-app)
+-   [Was bringt die Corona-Warn-App?](#was-bringt-die-corona-warn-app)
 -   [Weitere Themen in den nächsten
     Wochen](#weitere-themen-in-den-nächsten-wochen)
 
@@ -281,7 +281,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 
 <div class="m-4">
 
-<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" alt="BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
+<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" aria-label="BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
 
 </div>
 
@@ -405,7 +405,7 @@ solche, die sich auf hypothetische Szenarien beziehen („Was wäre, wenn
 …?") lassen sich schließlich nur durch Heuristiken, Modellrechnungen
 oder Simulationen beantworten.
 
-## Was bringt die Corona-Warn App?
+## Was bringt die Corona-Warn-App?
 
 Aus den uns im Moment zu Verfügung stehenden [Datenquellen](#welche-kennzahlen-werden-bei-der-evaluation-berücksichtigt-und-wo-kommen-die-daten-dafür-her)
 lassen sich erste Aussagen zur Wirksamkeit und den Nutzen der CWA
@@ -454,7 +454,7 @@ zusätzlichen Nutzenden weiter gesteigert werden.
 
 <div class="m-4">
 
-<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="" alt="Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
+<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="" aria-label="Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
 
 </div>
 

@@ -21,7 +21,7 @@ Previously, users had to use a certain QR code scanner for a specific purpose, f
 
  
 <br></br>
-<center> <img src="./qr-code-scanner-en.png" title="Universal QR Code Scanner" alt="Universal QR Code Scanner" style="align: center"> </center>
+<div class="text-center"> <img src="./qr-code-scanner-en.png" title="Universal QR Code Scanner" alt="Universal QR Code Scanner"  ></div>
 <br></br>
 
 <u>**For example:**</u>

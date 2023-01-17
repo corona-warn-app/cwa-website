@@ -30,18 +30,18 @@ With 2G+ status, users automatically comply with the rules of 2G, 3G+, and 3G ev
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./g-status.png" title="Proof of status under certificates" alt="Proof of status under certificates" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 When users tap on their certificate, they also see **further information** that explains which rule their certificate(s) fulfill under “Proof of Status”.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./2g-info.png" title="Further information on proof of status" alt="Further information on proof of status" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Further information on the proof of status.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 
@@ -50,10 +50,10 @@ If users have a **valid vaccination or recovery certificate and a valid test cer
 **Please note:** For data protection reasons, it is not apparent whether the person has a vaccination or recovery certificate when the certificates are checked by the CovPassCheck-App. Those scanning the QR codes can only see whether the certificate is valid or not.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./combined-certificates.png" title="Combined display of 2G certificate and test certificate" alt="Combined display of 2G certificate and test certificate" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Combined display of 2G certificate and test certificate if both are stored in the Corona-Warn-App.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **A negative test result is not a test certificate.** A test certificate officially confirms a negative test result in the form of a QR code in the Corona-Warn-App. Users can **request the official test certificate for PCR and rapid tests when registering a test in the Corona-Warn-App**. To do so, they can open the universal QR code scanner in the middle of the CWA’s tab bar and scan the QR code to register the test. They receive this QR code either during the booking of the test or during testing, given that the provider is connected to the Corona-Warn-App. 
@@ -70,9 +70,9 @@ Android users will have this feature with version 2.17 of the Corona-Warn-App.
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./status-benachrichtigung.png" title="News under status" alt="News under status" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 ## Improved QR code scan under Android

@@ -15,7 +15,7 @@ The project team consisting of the Robert Koch Institute, Deutsche Telekom and S
 
 <div class="right-float">
 <figure>
-<img src="./iPhone 13-screenshot_2g_plus_certificate_overview.png" alt="2G+ status display in the CWA" style="align: center" width=250px><figcaption aria-hidden="true"><em>Fig. 1: 2G+ status display in the CWA</em></figcaption>
+<img src="./iPhone 13-screenshot_2g_plus_certificate_overview.png" alt="2G+ status display in the CWA" style="align: center" width=250><figcaption aria-hidden="true"><em>Fig. 1: 2G+ status display in the CWA</em></figcaption>
 </figure>
 </div>
 
@@ -50,7 +50,7 @@ Questions about the current status are answered in our [FAQ](../../faq/#admissio
     <div class="row">
         <div class="col-md-6">
             <figure>
-                <img src="./booster_note.png" title="Note on Booster Vaccination" alt="Note on Booster Vaccination" style="align: center" width=250px>
+                <img src="./booster_note.png" title="Note on Booster Vaccination" alt="Note on Booster Vaccination" style="align: center" width=250>
                 <figcaption aria-hidden="true">
                     <em>Fig. 2: Note on Booster Vaccination</em>
                 </figcaption>
@@ -58,7 +58,7 @@ Questions about the current status are answered in our [FAQ](../../faq/#admissio
         </div>
         <div class="col-md-6">
             <figure>
-                <img src="./booster_note_detail.png" title="Note on Booster Vaccination detail view" alt="Note on Booster Vaccination detail view"style="align: center" width=250px>
+                <img src="./booster_note_detail.png" title="Note on Booster Vaccination detail view" alt="Note on Booster Vaccination detail view"style="align: center" width=250>
                 <figcaption aria-hidden="true">
                     <em>Fig. 3: Note on Booster Vaccination detail view</em>
                 </figcaption>
