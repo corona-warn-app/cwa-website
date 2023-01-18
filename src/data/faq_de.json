@@ -350,6 +350,9 @@
                                 ]
                             },
                             {
+                                "duplicate": "warn_without_tan_family"
+                            },
+                            {
                                 "title": "Wie kann ich in Vertretung warnen?",
                                 "anchor": "warn_for_others",
                                 "active": false,
@@ -372,6 +375,217 @@
                                 "textblock": [
                                     "Wenn Sie einen PCR-Test bzw. einen Schnelltest von einem Testpartner durchführen lassen, der mit der Corona-Warn-App integriert ist und zugleich digitale Zertifikate unterstützt, können Sie ein digitales Testzertifikat für den Fall eines negativen Ergebnisses anfordern. Falls Sie ein digitales Testzertifikat außerhalb der App erhalten, z.&nbsp;B. in Papierform, können Sie den QR-Code unter dem Reiter 'Zertifikate' einscannen. Im FAQ-Abschnitt <a href='#test_cert' target='_blank' >Testzertifikat</a> finden Sie weitere Details.",
                                     "Negative Testergebnisse werden nicht mit Ihren Kontakten geteilt. Die Corona-Warn-App teilt nur ein positives COVID-19-Testergebnis mit Ihren Kontakten."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Warnen ohne TAN",
+                        "id": "warning_without_tan",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Informationen zum Warnen ohne eine TAN",
+                                "anchor": "warn_without_tan",
+                                "active": false,
+                                "textblock": [
+                                    "Hier finden Sie eine kurze Zusammenfassung an relevanten FAQ-Artikeln, welche das Thema \"Warnen ohne TAN\" behandeln:",
+                                    "Haben Sie eine Fehlermeldung in der App erhalten? <ul><li><a href='#warn_without_tan_error' target='_blank'>Fehlermeldung \"Andere warnen nicht möglich\": Warum kann ich momentan andere nicht warnen?</a></li></ul>",
+                                    "Wie funktioniert das Warnen ohne TAN? <ul><li>Schritt-für-Schritt Anleitung: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a></li><li><a href='#warn_without_tan_how_often' target='_blank'>Wie oft kann ich warnen?</a></li><li><a href='#warn_without_tan_hotline' target='_blank'>Muss ich trotzdem die Hotline anrufen?</a></li><li><a href='#warn_without_tan_version' target='_blank'>Muss ich auf das neue Release umsteigen, oder läuft meine aktuelle Version der CWA weiter?</a></li><li><a href='#warn_without_tan_photo' target='_blank'>Muss ich ein Foto meines Tests machen, um den Test nachzuweisen?</a></li><li><a href='#warn_without_tan_risk_assessment_different' target='_blank'>Unterscheidet die Risikokalkulation bei einer Warnung auf meinem Smartphone je nach Test-Art von der positiv getesteten Person?</a></ul>",
+                                    "Für eine Übersicht über alle FAQ-Artikel zum Thema \"Warnen ohne TAN\" können Sie nach diesen links im Sektionsmenü filtern, oder diesem Link folgen: <a href='#warning_without_tan' target='_blank'>Warnen ohne TAN</a>"
+                                ]
+                            },
+                            {
+                                "title": "Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?",
+                                "anchor": "warn_without_tan_how_to",
+                                "active": false,
+                                "textblock": [
+                                    "Wenn Sie die App erst vor kurzer Zeit installiert haben, kann es vorkommen, dass Sie noch nicht ohne TAN warnen können. Dies dient der Missbrauchsprävention. Versuchen Sie es gegebenenfalls zu einem späteren Zeitpunkt erneut.",
+                                    "Folgen Sie dieser Schritt-für-Schritt Anleitung, um eine Warnung aufgrund Ihres eigenen positiven Testergebnisses an andere Nutzer der Corona-Warn-App zu senden: <ol><li>Tippen Sie auf den \"Status\"-Reiter.</li><li>Tippen Sie in der \"Tests erfassen und andere warnen\"-Kachel auf \"Weiter\".</li><li>Tippen Sie auf \"Selbsttest positiv?\", wenn Ihnen ein positives Selbsttestergebnis vorliegt.</li><li>Tippen Sie auf \"Test positiv und kein Ergebnis in der App?\", wenn Ihnen ein positives Ergebnis einer anderen Testart vorliegt.</li><li>Tippen Sie unter der Einverständniserklärung auf \"Einverstanden\" um fortzufahren.</li><li>Sofern Sie nicht mit einem positiven Selbsttestergebnis warnen möchten, haben Sie nun die Möglichkeit, die Art des durchgeführten Tests anzugeben. Tippen Sie auf den passenden Test oder alternativ auf \"Keine Angabe\".</li><li>Sofern Sie vergangene Check-ins haben, können diese im Anschluss ausgewählt werden, um gezielt auch die Teilnehmer dieser Veranstaltung zu warnen.</li><li>Sie können nun angeben, ob Sie Symptome hatten. Sollten Sie \"Ja\" antippen, können Sie daraufhin Angaben zu dem Symptom-Beginn machen.</li><li>Bestätigen Sie, dass Sie warnen möchten, indem Sie auf \"Andere warnen\" tippen.</li><li>Abschließend finden Sie auf der \"Vielen Dank\"-Ansicht weitere Hinweise. Durch das Tippen auf \"Fertig\" gelangen Sie zurück zum \"Status\"-Reiter der Corona-Warn-App.</li></ol>"
+                                ]
+                            },
+                            {
+                                "title": "Fehlermeldung \"Andere warnen nicht möglich\": Warum kann ich momentan andere nicht warnen?",
+                                "anchor": "warn_without_tan_error",
+                                "active": false,
+                                "textblock": [
+                                    "Unter folgenden Umständen können Sie andere nicht warnen: <ul><li>Sie haben die App erst vor kurzer Zeit installiert.</li><li>Seit Ihrer letzten Warnung ist nicht genügend Zeit verstrichen.</li></ul>",
+                                    "Es handelt sich hierbei um Vorkehrungen, die getroffen wurden, um Missbrauch dieser Funktion zu vermeiden. Beachten Sie, dass Sie mit positiven Testergebnissen, die Sie durch das Einscannen eines QR-Codes in Ihrer App erhalten, trotzdem warnen können."
+                                ]
+                            },
+                            {
+                                "title": "Werden trotz der neuen Funktion die Ergebnisse auch weiterhin digital in die App übertragen?",
+                                "anchor": "warn_without_tan_digital_result",
+                                "active": false,
+                                "textblock": [
+                                    "Selbstverständlich; sofern die Teststelle bzw. das beauftragte Labor technisch an die Infrastruktur angebunden sind, können auch weiterhin die Ergebnisse der Nachweistests digital für die Corona-Warn-App bereitgestellt werden. Für die Anwender*innen der CWA ändert sich diese Funktion nicht. Das bisherige Verfahren wird durch die neue Funktion lediglich ergänzt, um mit allen Testarten warnen und damit noch mehr Kontaktketten zeitnah unterbrechen zu können."
+                                ]
+                            },
+                            {
+                                "title": "Ich habe mein positives Ergebnis nicht über die App erhalten – kann ich meine Kontakte trotzdem warnen?",
+                                "anchor": "warn_without_tan_external_result",
+                                "active": false,
+                                "textblock": [
+                                    "Ja, nutzen Sie ab Version 3.0 die neue Funktion \"Tests erfassen und andere warnen\", dazu ist ggf. ein Update der App nötig.",
+                                    "Warnen Sie damit Andere auf Basis des empfangenen positiven Ergebnisses manuell in der CWA.",
+                                    "Siehe: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Muss ich trotzdem die Hotline anrufen?",
+                                "anchor": "warn_without_tan_hotline",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, ab Version 3.0 der Corona-Warn-App ist es nicht mehr notwendig, die Verifikations-Hotline anzurufen."
+                                ]
+                            },
+                            {
+                                "title": "Muss ich auf Version 3.0 umsteigen, oder läuft meine aktuelle Version der CWA weiter?",
+                                "anchor": "warn_without_tan_version",
+                                "active": false,
+                                "textblock": [
+                                    "Wenn Sie die Corona-Warn-App nicht auf Version 3.0 aktualisieren, wird für eine Übergangsfrist (bis zum ??????h) noch die Verifikations-Hotline zur Verfügung stehen, bei der Sie sich eine TAN ausstellen lassen können.",
+                                    "Nach diesem Zeitpunkt werden entweder die Testergebnisse nur noch direkt digital von den Teststellen in die CWA übertragen, wie bisher haben Sie dann die Möglichkeit, andere zu warnen. Oder Sie erhalten das Testergebnis auf anderem Wege. Dann können Sie – nach einem Update auf Version 3.0 – manuell mit der Funktion \"Tests erfassen und andere warnen\" andere direkt warnen.",
+                                    "Für alle anderen Funktionen unterscheidet sich Version 3.0 von der vorherigen Version der CWA nicht.",
+                                    "Siehe auch: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Muss ich einen PCR-Test machen, nachdem ich mit einem positiven Selbsttest gewarnt habe?",
+                                "anchor": "warn_without_tan_pcr_after_self_test",
+                                "active": false,
+                                "textblock": [
+                                    "Aus epidemiologischer Sicht ist ein PCR-Test natürlich deutlich genauer und aussagekräftiger als ein von Laien durchgeführter Selbsttest. Daher wird zur Bestätigung (bzw. zur Überprüfung von ggf. False-Positives) des Selbsttests ein PCR-Test empfohlen.",
+                                    "Um die lokalen Bestimmungen zu befolgen, empfehlen wir daher, dass Sie nach einem positiven Selbsttest Kontakt mit dem zuständigen Gesundheitsamt oder dem Arzt Ihres Vertrauens aufnehmen und das weitere Vorgehen besprechen."
+                                ]
+                            },
+                            {
+                                "title": "Was passiert, wenn ich nach einem positiven Selbsttest noch einmal mit einem positiven PCR-Test warne? Geht das überhaupt?",
+                                "anchor": "warn_without_tan_warn_twice",
+                                "active": false,
+                                "textblock": [
+                                    "Die neue Funktion lässt nach einem erfassten Selbsttest nur noch einen weiteren registrierten PCR-Test oder Schnelltest zu. Falls mit dem positiven Selbsttest schon gewarnt wurde, würden durch einen solchen weiteren „offiziellen“ Test mit positivem Ergebnis dann ggf. einige der Kontakte eine weitere Risikowarnung erhalten.",
+                                    "Wir empfehlen aber weiterhin, sich nach einem positiven Selbsttest eigenverantwortlich so vernünftig zu verhalten, dass keine anderen Personen angesteckt werden. Dann sind weitere Warnungen auch nicht mehr nötig."
+                                ]
+                            },
+                            {
+                                "title": "Einige Tage nach dem letzten positiven Test bin ich beim Selbsttest noch immer positiv. Soll ich nochmal warnen?",
+                                "anchor": "warn_without_tan_still_positive",
+                                "active": false,
+                                "textblock": [
+                                    "Wir empfehlen weiterhin, dass Sie sich nach einem positiven Selbsttest eigenverantwortlich so vernünftig verhalten, dass Sie andere nicht anstecken. Wenn Sie sich so verhalten, ist eine weitere Warnung nicht notwendig.",
+                                    "Um zu verhindern, dass die Funktion missbraucht wird und sinnlose Warnungen ausgelöst werden, die nicht auf realen Risikokontakten beruhen, wurde beschlossen, dass ein Nutzer mit der neuen Funktion andere nur einmal innerhalb eines bestimmten Zeitraums warnen kann.",
+                                    "Nach Ablauf dieser Zeitspanne ist es dann wieder möglich, aufgrund eines eigenen positive Testergebnisses ohne TAN zu warnen. Diese Einschränkung gilt nicht für positive Testergebnisse, die per App übermittelt werden."
+                                ]
+                            },
+                            {
+                                "title": "Muss ich ein Foto meines Tests machen, um den Test nachzuweisen?",
+                                "anchor": "warn_without_tan_photo",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, in der Corona-Warn-App ist nicht vorgesehen, Fotos oder andere Dokumente zum Nachweis, dass ein Test wirklich stattgefunden hat, hochzuladen oder anderweitig zu prozessieren. Wir setzen hier bewusst auf die Umsicht und Eigenverantwortung unserer Anwender*innen."
+                                ]
+                            },
+                            {
+                                "title": "Wie oft kann ich ohne TAN warnen?",
+                                "anchor": "warn_without_tan_how_often",
+                                "active": false,
+                                "textblock": [
+                                    "Innerhalb eines bestimmten Zeitraums können Sie einmal ohne TAN warnen. Nach Ablauf der Sperrfrist können Sie erneut ohne TAN warnen. Grundsätzlich gibt es nach oben keine Grenzen, wie oft Sie ohne TAN warnen können, solange die Abstände nicht unterschritten werden."
+                                ]
+                            },
+                            {
+                                "title": "Kann ich in Vertretung von Familienmitgliedern warnen, z.&nbsp;B. für mein infiziertes Kind?",
+                                "anchor": "warn_without_tan_family",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, das ist technisch nicht möglich, weil die Risikokontakte der positiv getesteten Person nicht zwingend durch das Contact Tracing auch auf Ihrem Smartphone aufgezeichnet wurden. Eine stellvertretende Warnung von Ihrem Smartphone aus würde daher diese Kontakte gar nicht erreichen, sondern nur Ihre (also die falschen) Kontakte."
+                                ]
+                            },
+                            {
+                                "title": "Ich war bei einer Veranstaltung per QR-Code eingecheckt. Kann ich die Gäste des Events mit der Funktion warnen? Bleibe ich dabei anonym?",
+                                "anchor": "warn_without_tan_event",
+                                "active": false,
+                                "textblock": [
+                                    "Ja, wenn Sie sich per Event-QR-Code eingecheckt haben, können Sie in dem Zeitraum Ihres Check-ins die anderen Gäste weiterhin warnen. Dabei bleibt, wie bisher, Ihre Identität anonym."
+                                ]
+                            },
+                            {
+                                "title": "Muss ich nach einem positiven (Selbst-)Test in Isolation?",
+                                "anchor": "warn_without_tan_isolation",
+                                "active": false,
+                                "textblock": [
+                                    "Nach jedem positiven Test empfehlen wir im Sinne der Eigenverantwortung, zunächst Kontakte weitgehend zu minimieren und mit dem Arzt Ihres Vertrauens oder dem Gesundheitsamt Kontakt aufzunehmen und die weiteren Schritte abzustimmen.",
+                                    "Die aktuellen Isolations-Regeln richten sich nach dem IfSG und nach den lokalen geltenden Bestimmungen."
+                                ]
+                            },
+                            {
+                                "title": "Wenn ich wieder einen negativen Schnelltest habe, kann ich die Isolation dann beenden?",
+                                "anchor": "warn_without_tan_negative",
+                                "active": false,
+                                "textblock": [
+                                    "Die Corona-Warn-App kann keine medizinische Diagnose stellen, ob Sie infiziert sind oder nicht. Daher klären Sie bitte die Frage der Beendigung der Isolation mit dem zuständigen Gesundheitsamt bzw. Ihrem Arzt."
+                                ]
+                            },
+                            {
+                                "title": "Wird das positive Testergebnis bzw. das Warnen in meinem Kontakt-Tagebuch vermerkt?",
+                                "anchor": "warn_without_tan_contact_journal",
+                                "active": false,
+                                "textblock": [
+                                    "Haben Sie das Ergebnis eines PCR-Tests oder Schnelltests mit Hilfe eines QR-Codes oder einer TAN in die Corona-Warn-App eingepflegt, erscheint im Kontakt-Tagebuch ein entsprechender Eintrag.",
+                                    "Wenn Sie manuell über die Funktion \"Tests erfassen und andere warnen\" andere CWA-Anwender*innen direkt warnen, wird kein Test in der App registriert, es wird also auch kein entsprechender Eintrag im Kontakt-Tagebuch erstellt.",
+                                    "Unabhängig von der Art des Tests und wie er registriert wurde, sehen Sie im Kontakt-Tagebuch das Datum der Warnung.",
+                                    "Siehe auch: <a href='#warn_without_tan_how_to' target='_blank'>Wie kann ich andere Nutzer warnen, wenn ich positiv getestet worden bin?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Kann ich für einen Selbsttest ein offizielles digitales Zertifikat erhalten?",
+                                "anchor": "warn_without_tan_self_test_certificate",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, europaweit sind für Selbsttests keine digitalen Zertifikate vorgesehen. Testzertifikaten können nur für beaufsichtigte PCR-Tests (ausgenommen PoC-NAT PCR-Tests) und beaufsichtigte Schnelltests ausgestellt werden."
+                                ]
+                            },
+                            {
+                                "title": "Kann ich einen registrierten positiven Testbefund als Krankschreibung nutzen?",
+                                "anchor": "warn_without_tan_sickness_certificate",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, die Warnung anderer mit der Funktion \"Tests erfassen und andere warnen\" führt gar nicht zur Anzeige eines positiven Testergebnisses in der Corona-Warn-App, sondern dient lediglich dazu, Ihre Kontakte zu warnen. Abgesehen davon ist die Anzeige in der CWA arbeitsrechtlich nicht zur Krankschreibung bzw. Arbeits-/Schulbefreiung zugelassen. Wenden Sie sich bitte an den Arzt Ihres Vertrauens oder an das zuständige Gesundheitsamt."
+                                ]
+                            },
+                            {
+                                "title": "Wie lange bleibt der Test in der App zu sehen?",
+                                "anchor": "warn_without_tan_in_app_display",
+                                "active": false,
+                                "textblock": [
+                                    "Die Warnung anderer mit der neuen Funktion \"Tests erfassen und andere warnen\" führt gar nicht zur Anzeige eines positiven Testergebnisses in der Corona-Warn-App, sondern dient lediglich dazu, Ihre Kontakte zu warnen."
+                                ]
+                            },
+                            {
+                                "title": "Stoppt nach dem Teilen des positiven Ergebnisses meine Risiko-Ermittlung?",
+                                "anchor": "warn_without_tan_risk_assessment",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, die Risiko-Ermittlung wird nicht gestoppt. Die Corona-Warn-App zeichnet also weiterhin Ihre Kontakte auf und sendet Zufalls-IDs aus. Die Warnung anderer mit der Funktion \"Tests erfassen und andere warnen\" hat also keine Auswirkungen auf die Risiko-Ermittlung.",
+                                    "Wenn Sie sich trotz positiven Tests in der Öffentlichkeit bewegen, achten Sie bitte auf die Abstands- und Hygieneregeln und tragen Sie, wenn möglich, eine Maske zur Verringerung der Infektionsgefahr für andere."
+                                ]
+                            },
+                            {
+                                "title": "Unterscheidet die Risikoberechnung bei einer Warnung auf meinem Smartphone je nach Test-Art, mit der gewarnt wurde?",
+                                "anchor": "warn_without_tan_risk_assessment_different",
+                                "active": false,
+                                "textblock": [
+                                    "Nein, das Verfahren zur Berechnung des Infektionsrisikos wurde nicht geändert. Unabhängig von der Art des Tests, die zum Auslösen der Warnung verwendet wurde, gelten dieselben Parameter bei der Risikoberechnung."
+                                ]
+                            },
+                            {
+                                "title": "Können Warnungen verschiedener Testarten unterschieden werden?",
+                                "anchor": "warn_without_tan_differentiate_warning",
+                                "active": false,
+                                "textblock": [
+                                    "Kontaktpersonen erhalten in ihrer Corona-Warn-App eine Warnung über eine Begegnung an einem Tag mit niedrigem (grüne Kachel) oder erhöhtem Risiko (rote Kachel).",
+                                    "Ob die Warnung aufgrund eines Schnelltests bzw. aufgrund eines PCR-Tests erfolgte, dessen Ergebnis per App empfangen wurde, oder aufgrund eines Selbsttests bzw. eines anderweitigen Tests, dessen Ergebnis nicht in der App übermittelt wurde, ist für die gewarnte Person nicht ersichtlich."
                                 ]
                             }
                         ]
