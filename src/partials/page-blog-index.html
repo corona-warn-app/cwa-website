@@ -43,6 +43,29 @@
           {{/if}}
         </div>
       </form>
+      
+      
+      {{#if lang_de}}
+      <div class="index">
+        <p>{{{page-contents.de.index.highlight}}}</p>
+        <details>
+          <summary>{{{page-contents.de.index.dropdown.title}}}</summary>
+          {{#each page-contents.de.index.dropdown.textblock}}
+            <p>{{{.}}}</p>
+          {{/each}}
+        </details>
+      </div>
+      {{else}}
+      <div class="index">
+        <p>{{{page-contents.en.index.highlight}}}</p>
+        <details>
+          <summary>{{{page-contents.en.index.dropdown.title}}}</summary>
+          {{#each page-contents.en.index.dropdown.textblock}}
+            <p>{{{.}}}</p>
+          {{/each}}
+        </details>
+      </div>
+      {{/if}}
 
       <div class="blog-list">
         {{#if lang_de}}
