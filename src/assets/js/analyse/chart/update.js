@@ -55,13 +55,14 @@ const update = async function({
 
 	const chartType = _get(chartConfigObj, ["type"], "line");
 	const type = (chartType == "bar")? (barthreshold)? chartType: "line": chartType;
+	const stacked = (chartType == "bar") && !barthreshold ? false : _get(chartConfigObj, ["stacked"], false) 
 
 	
 	let opt = {
 		chart: {
 			id,
 			type,
-			stacked: _get(chartConfigObj, ["stacked"], false)
+			stacked
 		},
 		seriesall: _get(chartConfigObj, ["series"], []).map(obj => {
 			return {
