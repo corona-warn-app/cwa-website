@@ -543,8 +543,8 @@ function AddEnglishSpecifier() {
   let task = gulp.src([PATHS.dist + '/**/*.html']);
   data.texts.forEach((value) => {
     // Use a regular expression to match the word surrounded by spaces, but not if it is within an HTML attribute
-    const regex = new RegExp(`(?<![^<]*<title[^>]*>)(?<!\w)(${value})(?![^<]*>)`, 'g');
-    task = task.pipe(replace(regex, `<span lang="en"> ${value} </span>`));
+    const regex = new RegExp(`(?<!<title>.* |\w)${value}(?![^<]*>)`, 'g');
+    task = task.pipe(replace(regex, `<span lang="en">${value}</span>`));
   });
   return task.pipe(gulp.dest(PATHS.dist));
 }
