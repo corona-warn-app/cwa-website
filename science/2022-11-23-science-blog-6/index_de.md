@@ -1,6 +1,6 @@
 ---
-page-title: "Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
-page-description: "Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
+page-title: "SB06: Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
+page-description: "SB06: Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
 page-name: science-blog-6
 page-name_de: science-blog-6
 author: CWA-Team

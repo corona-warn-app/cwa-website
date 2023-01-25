@@ -16,10 +16,10 @@ To help inform users about **misuse and counterfeiting of vaccination certificat
 In the past, there were a few pharmacies that issued fake vaccination certificates. As a result, certificates from the affected pharmacies were recalled. With hotfix 2.13.3 (Android) or 2.13.2 (iOS), the Corona-Warn-App can check the certificates and verify if the certificate was issued by the corresponding pharmacy. If this is the case, the **certificate is displayed as invalid**.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./zertifikat-ungültig(1)_en_v3.png" title="Invalid digital certificate" alt="Invalid digital certificate" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Invalid digital certificate</em></figcaption>
-</center>
+</div>
 <br></br>
 
 
@@ -30,12 +30,12 @@ This affects all users who have received a certificate from a pharmacy in questi
 The Corona-Warn-App informs users as usual with a push notification. The red dot directs users to the certificate under which they find further information. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./push-nachricht_en.png" title="Corona-Warn-App push notification" alt="Corona-Warn-App push notification" style="align: center" width=250> 
 <img src="./roter-punkt-impfzertifikat_en.png" title="Certificate tab in the Corona-Warn-App" alt="Certificate tab in the Corona-Warn-App" style="align: center" width=250>
 <img src="./zertifikat-ungültig(2)_en.png" title="Information below the certificate" alt="Information below the certificate" style="align: center" width=250>
 <figcaption aria-hidden="true"><em></em></figcaption>
-</center>
+</div>
 <br></br>
 
 

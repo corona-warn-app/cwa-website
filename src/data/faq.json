@@ -71,8 +71,9 @@
                                 "anchor": "pos_test_no_risk_encounter",
                                 "active": false,
                                 "textblock": [
-                                    "In order to receive warnings, there are certain requirements that must be met:<ul><li>After receiving the positive test result, it must be voluntarily shared by the user via the Corona-Warn-App. If the test result could not be determined via the app, the positive PCR test result can be entered and shared via a TAN.</li><li>The app must have been installed and active on both devices <b>before</b> sharing the positive test result via the Corona-Warn-App, otherwise no encounters can have been recorded.</li><li>The two devices must have been close enough and long enough <b>before</b> sharing the test result. Encounters <b>after</b> sharing a positive result are of course <b>not</b> warned.</li><li>The time period for the onset of the first symptoms given when sharing the test result, as well as the type or intensity of the symptoms, may also play a role in the risk calculation. So it also depends on which days before sharing the test result the person's devices recorded the encounters. In some cases, this may result in no warning being sent.</li></ul>",
-                                    "See FAQ: <ul><li><a href='#risk_encounter_not_realtime' target='_blank'>Why do I receive a risk warning several days after the risk encounter?</a></li><li><a href='#risk_encounter_no_warning' target='_blank'>Why don't I get a risk encounter warning even though I've had contact with someone who has a risk encounter displayed in their app?</a></li><li><a href='#risk_encounter_different_devices' target='_blank'>How do differences in risk assessment occur on multiple devices, even if the respective smartphones were not far apart?</a></li><li><a href='#risk_encounter_doubted' target='_blank'>Why do I receive a risk warning for a date when I had no contacts / did not leave the house?</a></li><li><a href='#risk_encounter_place' target='_blank'>Are people and/or places assigned to a risk encounter?</a></li></ul>"
+                                    "<b>Updated January 18th, 2023</b>",
+                                    "In order to receive warnings, there are certain requirements that must be met:<ul><li>After receiving the positive test result, it must be voluntarily shared by the user via the Corona-Warn-App. If the test result could not be determined via the app, the positive PCR test result can be entered and shared via a TAN. Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App.</li><li>The app must have been installed and active on both devices <b>before</b> sharing the positive test result via the Corona-Warn-App, otherwise no encounters can have been recorded.</li><li>The two devices must have been close enough and for long enough <b>before</b> sharing the test result. Encounters <b>after</b> sharing a positive result are of course <b>not</b> warned.</li><li>The time period for the onset of the first symptoms given when sharing the test result, as well as the type or intensity of the symptoms, may also play a role in the risk calculation. So it also depends on which days before sharing the test result the person's devices recorded the encounters. In some cases, this may result in no warning being sent.</li></ul>",
+                                    "See FAQ: <ul><li><a href='#risk_encounter_not_realtime' target='_blank'>Why do I receive a risk warning several days after the risk encounter?</a></li><li><a href='#risk_encounter_no_warning' target='_blank'>Why don't I get a risk encounter warning even though I've had contact with someone who has a risk encounter displayed in their app?</a></li><li><a href='#risk_encounter_different_devices' target='_blank'>How do differences in risk assessment occur on multiple devices, even if the respective smartphones were not far apart?</a></li><li><a href='#risk_encounter_doubted' target='_blank'>Why do I receive a risk warning for a date when I had no contacts / did not leave the house?</a></li><li><a href='#risk_encounter_place' target='_blank'>Are people and/or places assigned to a risk encounter?</a></li><li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li></ul>"
                                 ]
                             },
                             {
@@ -158,9 +159,11 @@
                                 "anchor": "QRcodes",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "Families who are tested at an airport before returning from vacation, for example, are often given a leaflet for each test that includes a PCR test QR code.",
-                                    "<ol><li>Read through the leaflet carefully, to make sure if the QR code really is to be scanned with the Corona-Warn-App, or if it is meant for another test infrastructure.</li><li>Only if you made sure that the QR code is to be scanned with the Corona-Warn-App and not for another system, proceed in the Corona-Warn-App.</li><li>You can scan each PCR-Test QR code only once with the Corona-Warn-App. After scanning, the QR code expires. This prevents misusing the QR code.</li><li>If you received a PCR-Test QR code for your own test, scan it with the Corona-Warn-App and wait until the result is retrieved. This can take from a couple of hours up to a few days. Open the Corona-Warn-App regularly to check if the test result is already available.</li><li>If you received additional QR codes for tests of your family members, for example, for your children who do not have their own phones, you can use them on your own device as well since version 2.21. There is no need to wait between scanning your own test results and those of family members. They are processed independently and their status can be viewed on the Status Tab.</li><li>If your QR code doesn't work and you received a positive test result: Call the TAN hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) to receive a teleTAN. You can then enter the teleTAN in your Corona-Warn-App so that the persons you encountered in the past days can be informed over the Corona-Warn-App. A warning can only be issued for a test result that is assigned to the owner of the device. You cannot warn on behalf of family members whose tests you have added to your device. Please pay attention to the recommendations the Corona-Warn-App displays.</li></ol>",
-                                    "See also the blog article: <a href='../../blog/2022-04-19-cwa-2-21/' target='_blank' >Corona-Warn-App version 2.21 now allows test management for family members</a>"
+                                    "<ol><li>Read through the leaflet carefully, to make sure if the QR code really is to be scanned with the Corona-Warn-App, or if it is meant for another test infrastructure.</li><li>Only if you made sure that the QR code is to be scanned with the Corona-Warn-App and not for another system, proceed in the Corona-Warn-App.</li><li>You can scan each PCR-Test QR code only once with the Corona-Warn-App. After scanning, the QR code expires. This prevents misusing the QR code.</li><li>If you received a PCR-Test QR code for your own test, scan it with the Corona-Warn-App and wait until the result is retrieved. This can take from a couple of hours up to a few days. Open the Corona-Warn-App regularly to check if the test result is already available.</li><li>If you received additional QR codes for tests of your family members, for example, for your children who do not have their own phones, you can use them on your own device as well since version 2.21. There is no need to wait between scanning your own test results and those of family members. They are processed independently and their status can be viewed on the Status Tab.</li><li>If your QR code doesn't work and you received a positive test result: Call the TAN hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) to receive a teleTAN. You can then enter the teleTAN in your Corona-Warn-App so that the persons you encountered in the past days can be informed over the Corona-Warn-App. Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023. A warning can only be issued for a test result that is assigned to the owner of the device. You cannot warn on behalf of family members whose tests you have added to your device. Please pay attention to the recommendations the Corona-Warn-App displays.</li></ol>",
+                                    "See also the blog article: <a href='../../blog/2022-04-19-cwa-2-21/' target='_blank' >Corona-Warn-App version 2.21 now allows test management for family members</a>",
+                                    "See also the FAQ article: <a href='#warn_without_tan' target='_blank' >“How do I warn without a teleTAN?”</a>"
                                 ]
                             },
                             {
@@ -274,7 +277,10 @@
                                 "anchor": "rat_tan_hotline",
                                 "active": false,
                                 "textblock": [
-                                    "It is not possible to share a positive <a href='#glossary_rapid_antigen_test' target='_blank'>rapid antigen test</a>, <a href='#glossary_selftest' target='_blank'>self-test</a> or <a href='#glossary_rapid_pcr_test' target='_blank'>rapid PCR test</a> result via the TAN hotline."
+                                    "<b>Updated January 18th, 2023</b>",
+                                    "Starting with version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been submitted to the Corona-Warn-App. That is, you can share your rapid antigen test result or rapid PCR test result (point-of-care PCR tests) without a TAN through the app.",
+                                    "With the versions 2.28 and before it is not possible to get a positive result from a <a href='#glossary_rapid_antigen_test' target='_blank'>rapid antigen test</a>, <a href='#glossary_selftest' target='_blank'>self-test</a> or <a href='#glossary_rapid_pcr_test' target='_blank'>rapid PCR test</a> result via the TAN hotline.",
+                                    "See also FAQ: <a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a>"
                                 ]
                             },
                             {
@@ -335,9 +341,13 @@
                                 "anchor": "test_multiple_devices",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "You can share a positive test result from a PCR test on multiple devices. If you receive a positive test result from a rapid antigen test you can only share this result on one device. <a href='#rat_what_if_positive_result' target='_blank' >How do I act if my rapid test result is positive?</a> recommends that if you receive a positive rapid antigen test you should take a PCR test in addition. If the PCR test is then positive, you can share this result on multiple devices.",
                                     "If you have more than one smartphone (e.g. work and private), we recommend that you install the CWA on your private device first. Also, when scanning PCR-Test QR codes and sharing a positive PCR test result, we recommend that you first use your private device. If you additionally want to share a positive PCR test result via your company device or any other additional smartphone, this can be done via a so-called teleTAN. By contacting the TAN hotline 0800 7540002 with a positive PCR test result, you will receive a 10-digit TAN with which the PCR test result can also be registered in the app. <b>Please note:</b> The TAN number is only valid for one hour.",
-                                    "See also <a href='#international_phone_numbers' target='_blank' >How to reach us from abroad</a>."
+                                    "Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.",
+                                    "See also FAQ: ",
+                                    "<li><a href='#international_phone_numbers' target='_blank' >How to reach us from abroad</a></li>",
+                                    "<li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li>"
                                 ]
                             },
                             {
@@ -345,21 +355,30 @@
                                 "anchor": "test_in_other_country",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "If you are in another EU country or in one of <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Tests.html' target='_blank' rel='noopener noreferrer'>these countries</a> and have made a molecular biological test (PCR test) which is positive, you can upload it to the Corona-Warn-App. To do so, it is necessary to verify your identity by calling the TAN hotline 0800 7540002. You will receive a 10-digit TAN with which the test result can be registered in the app. Attention: The TAN is only valid for one hour!",
-                                    "See also <a href='#international_phone_numbers' target='_blank' >How to reach us from abroad</a>."
+                                    "Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.",
+                                    "See also FAQ: ",
+                                    "<li><a href='#international_phone_numbers' target='_blank' >How to reach us from abroad</a></li>",
+                                    "<li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li>"
                                 ]
+                            },
+                            {
+                                "duplicate": "warn_without_tan_family"
                             },
                             {
                                 "title": "How can I warn for others?",
                                 "anchor": "warn_for_others",
                                 "active": false,
                                 "textblock": [
-                                    "As an organizer of an event, starting with version 2.9, you can warn for others, such as for a person who has tested positive and was attending an event but not checked in via the Corona-Warn-App (CWA), upon request by the health department.",
+                                    "<b>Updated January 18th, 2023</b>",
+                                    "This feature of the Corona-Warn-App is no longer available from version 3.0 onwards and cannot be used with the previous versions 2.9 to 2.28 after January 31st, 2023, as the verification hotline (TAN hotline) will be discontinued on this date.",
+                                    "<hr>",
+                                    "As an organizer of an event, starting with version 2.9 and up to version 2.28 of the Corona-Warn-App (until January 31st, 2023), you can warn for others, such as for a person who has tested positive and was attending an event but not checked in via the Corona-Warn-App (CWA), upon request by the health department.",
                                     "If a person who has not checked in later tests positive, guests may be alerted if they were in the same room at the same time or up to 30 minutes after the person who tested positive.",
                                     "To alert other guests using the CWA as an event organizer, please follow these steps:",
                                     "<ul><li>If you subsequently become aware of the presence of a positively tested person at your event, and the health department has not yet contacted you as an event organizer, contact the health department. The health department can issue you a TAN if necessary.</li><li>Click 'Create QR Code' on the Status tab ('Start Screen' before version 2.12) of your CWA.</li><li>On the 'My QR Codes' page, click the three-dot menu in the upper right corner and then click the 'Warn for Others' menu item.</li><li>Click 'Continue' on the info screen.</li><li>Select an event for which you would like to warn others for an infected person. Or restore a deleted event by scanning the event's QR code again. Click 'Continue'.</li><li>Indicate the length of stay of the person who tested positive for whom you want to warn. You can get this information from the health department. Click on 'Continue'.</li><li>Enter the 10-digit TAN that you were given. Click on 'Send warning'.</li></ul>",
-                                    "Also, take a look at this poster, which shows the process of warning for others step by step: <ul><li><a href='/assets/documents/DE_CWA_RKI-Plakat_Stellvertreter-Warnung.pdf' target='_blank'>Poster: So warnen Sie stellvertretend alle Personen einer Veranstaltung (German version only)</a></li></ul>",
-                                    "You can find screenshots for warning for others for both iOS and Android devices at the following links:<ul><li><a href='../../screenshots/#ios_warn_for_others' target='_blank'>iOS Screenshots: Warn For Others</a></li><li><a href='../../screenshots/#android_warn_for_others' target='_blank'>Android Screenshots: Warn For Others</a></li></ul>"
+                                    "Also, take a look at this poster, which shows the process of warning for others step by step: <ul><li><a href='/assets/documents/DE_CWA_RKI-Plakat_Stellvertreter-Warnung.pdf' target='_blank'>Poster: So warnen Sie stellvertretend alle Personen einer Veranstaltung (German version only)</a></li></ul>"
                                 ]
                             },
                             {
@@ -369,6 +388,219 @@
                                 "textblock": [
                                     "If you take a PCR test or rapid antigen test from test partners who are integrated with the Corona-Warn-App and who support digital certificates, you can request a digital test certificate which is issued in the event of a negative test. You can also scan in a digital test certificate QR code using the 'Certificates' tab of the app if you receive a digital test certificate outside of the app, for instance in paper form. The FAQ section <a href='#test_cert' target='_blank' >Test Certificate</a> provides more details.",
                                     "Negative test results are not communicated to your contacts. The Corona-Warn-App informs your contacts only if you have tested positive for COVID-19."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Warning without TAN",
+                        "id": "warning_without_tan",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Information about warning without a TAN",
+                                "anchor": "warn_without_tan",
+                                "active": false,
+                                "textblock": [
+                                    "Here you can find a short summary of relevant FAQ articles covering the topic \"Warning without TAN\":",
+                                    "Did you receive an error notification in the app? <ul><li><a href='#warn_without_tan_error' target='_blank'>Error message \"You Cannot Warn Others\": Why can't I warn others at the moment?</a></li></ul>",
+                                    "How does warning without TAN work? <ul><li>Step-by-step guide: <a href='#warn_without_tan_how_to' target='_blank'>How can I warn other users if I have tested positive?</a></li><li><a href='#warn_without_tan_how_often' target='_blank'>How often can I warn?</a></li><li><a href='#warn_without_tan_hotline' target='_blank'>Do I still have to call the hotline?</a></li><li><a href='#warn_without_tan_version' target='_blank'>Do I need to upgrade to the new release, or will my current version of CWA continue to run?</a></li><li><a href='#warn_without_tan_photo' target='_blank'>Do I need to take a picture of my test to prove the test?</a></li><li><a href='#warn_without_tan_risk_assessment_different' target='_blank'>Does the risk calculation for an alert on my smartphone differ by test type from the person who tested positive?</a></ul>",
+                                    "For an overview of all FAQ articles on the topic \"Warning without TAN\" you can filter for them in the section menu on the left, or follow this link: <a href='#warning_without_tan' target='_blank'>Warning without TAN</a>"
+                                ]
+                            },
+                            {
+                                "title": "How can I warn other users if I have tested positive?",
+                                "anchor": "warn_without_tan_how_to",
+                                "active": false,
+                                "textblock": [
+                                    "Note that you should only warn others based on your own positive test result.",
+                                    "If you installed the app just recently, you may not yet be able to warn without a TAN. This is to prevent misuse. If necessary, try again at a later time.",
+                                    "Follow these step-by-step instructions to send a warning to other users of the Corona-Warn-App using your own positive test result: <ol><li>Tap on the \"Status\" tab.</li><li>In the \"Manage Your Tests and Warn Others\" tile, tap \"Continue\".</li><li>Tap \"Positive self-test?\" if you have a positive self-test result.</li><li>Tap \"Positive test and no result in the app?\" if you have a positive result from another test type.</li><li>Under the consent form, tap \"Accept\" to continue.</li><li>Unless you want to warn with a positive self-test result, you now have the option to specify the type of test performed. Tap on the appropriate test or alternatively on \"No answer\".</li><li>Provided that you have past check-ins, these can be selected afterwards to warn specifically also the participants of this event.</li><li>You can now specify whether you had symptoms. Should you tap \"Yes\", you can then provide information about the symptom start.</li><li>Confirm that you want to warn by tapping \"Warn others\".</li><li>Finally, the \"Thank you\" screen provides you with further instructions. Tapping \"Done\" will take you back to the \"Status\" tab of the Corona-Warn-App.</li></ol>"
+                                ]
+                            },
+                            {
+                                "title": "Error message \"You Cannot Warn Others\": Why can't I warn others at the moment?",
+                                "anchor": "warn_without_tan_error",
+                                "active": false,
+                                "textblock": [
+                                    "You cannot warn others under the following circumstances: <ul><li>You have installed the app just a short time ago.</li><li>Not enough time has passed since your last warning.</li></ul>",
+                                    "These are precautions taken to avoid misuse of this feature. Note that you can still warn with positive test results obtained by scanning a QR code in your app."
+                                ]
+                            },
+                            {
+                                "title": "Will the results still be transferred digitally to the app despite the new function?",
+                                "anchor": "warn_without_tan_digital_result",
+                                "active": false,
+                                "textblock": [
+                                    "Of course; as long as the test site or the commissioned laboratory are technically connected to the infrastructure, the results of the detection tests can continue to be provided digitally for the Corona-Warn-App. For the users of the CWA, this function does not change. The previous procedure is merely extended by the new function in order to be able to warn with all types of tests and thus to interrupt even more contact chains in a timely manner."
+                                ]
+                            },
+                            {
+                                "title": "I did not receive my positive result via the app - can I still warn my contacts?",
+                                "anchor": "warn_without_tan_external_result",
+                                "active": false,
+                                "textblock": [
+                                    "Yes, use the new function \"Manage Your Tests and Warn Others\" as of version 3.0; this may require an update of the app.",
+                                    "Use it to warn others based on the received positive result manually in the CWA.",
+                                    "See: <a href='#warn_without_tan_how_to' target='_blank'>How can I warn other users if I have tested positive?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Do I still have to call the hotline?",
+                                "anchor": "warn_without_tan_hotline",
+                                "active": false,
+                                "textblock": [
+                                    "No, as of version 3.0 of the Corona-Warn-App, it is no longer necessary to call the verification hotline."
+                                ]
+                            },
+                            {
+                                "title": "Do I need to upgrade to version 3.0, or will my current version of CWA continue to run?",
+                                "anchor": "warn_without_tan_version",
+                                "active": false,
+                                "textblock": [
+                                    "If you do not update the Corona-Warn-App to version 3.0, the verification hotline will still be available for a transitional period (until January 31st, 2023), where you can have a TAN issued.",
+                                    "After this date, either the test results will only be transmitted directly digitally from the test sites to the CWA, as before, you will then have the opportunity to warn others. Or you will receive the test result by other means. Then you can - after an update to version 3.0 - manually warn others directly using the new function \"Manage Your Tests and Warn Others\".",
+                                    "For all other functions, the version 3.0 does not differ from the previous version of the CWA.",
+                                    "See also: <a href='#warn_without_tan_how_to' target='_blank'>How can I warn other users if I have tested positive?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Do I have to do a PCR test after I have warned with a positive self-test?",
+                                "anchor": "warn_without_tan_pcr_after_self_test",
+                                "active": false,
+                                "textblock": [
+                                    "From an epidemiological point of view, a PCR test is of course significantly more accurate and informative than a self-test performed by non-professionals. Therefore, a PCR test is recommended for confirmation (or verification of any false positives) of the self-test.",
+                                    "Therefore, in order to comply with local regulations, we recommend that after a positive self-test, you contact your local health department or doctor to discuss further action."
+                                ]
+                            },
+                            {
+                                "title": "What happens if I warn again with a positive PCR test after a positive self-test? Is that even possible?",
+                                "anchor": "warn_without_tan_warn_twice",
+                                "active": false,
+                                "textblock": [
+                                    "The new function allows only one further registered PCR test or rapid test after a recorded self-test. If a warning has already been given with the positive self-test, such a further \"official\" test with a positive result would then possibly give some of the contacts a further risk warning.",
+                                    "However, we still recommend that after a positive self-test, people behave sensibly on their own responsibility so that no other people are infected. Then further warnings are no longer necessary."
+                                ]
+                            },
+                            {
+                                "title": "A few days after the last positive test, I am still positive on the self-test. Should I warn again?",
+                                "anchor": "warn_without_tan_still_positive",
+                                "active": false,
+                                "textblock": [
+                                    "We further recommend that after a positive self-test, you behave reasonably on your own responsibility in a way that does not infect others. If you behave in this way, no further warning is necessary.",
+                                    "To prevent the feature from being abused and creating unnecessary warnings that are not based on real risk contacts, it was decided that a user with the new feature can warn others only once within a certain period of time.",
+                                    "After this period has elapsed, it is then possible again to issue a warning without a TAN based on your own positive test result. This restriction does not apply to positive test results transmitted via app."
+                                ]
+                            },
+                            {
+                                "title": "Do I need to take a picture of my test to prove the test?",
+                                "anchor": "warn_without_tan_photo",
+                                "active": false,
+                                "textblock": [
+                                    "No, the Corona-Warn-App does not provide for uploading photos or other documents to prove that a test really took place, or to process them in any other way. We deliberately rely on the prudence and personal responsibility of our users."
+                                ]
+                            },
+                            {
+                                "title": "How often can I warn without TAN?",
+                                "anchor": "warn_without_tan_how_often",
+                                "active": false,
+                                "textblock": [
+                                    "Within a certain period you can warn once without TAN. After the blocking period has expired, you can warn again without a TAN. In principle, there are no upper limits to how often you can warn without a TAN, as long as the intervals are not undercut. The Corona-Warn-App will show a corresponding hint if the attempt to warn fails due to the time gap.",
+                                    "<img src='/assets/img/faq/warn_without_tan_how_often_EN.png' width='300' alt='Hint'>"
+                                ]
+                            },
+                            {
+                                "title": "Can I warn on behalf of family members, such as my infected child?",
+                                "anchor": "warn_without_tan_family",
+                                "active": false,
+                                "textblock": [
+                                    "No, this is not technically possible because the risk contacts of the person tested positive were not necessarily also recorded on your smartphone by contact tracing. Warning for others from your smartphone would therefore not reach these contacts at all, but only your (i.e. the wrong) contacts."
+                                ]
+                            },
+                            {
+                                "title": "I was checked in to an event via QR code. Can I warn the guests of the event with the function? Will I remain anonymous in the process?",
+                                "anchor": "warn_without_tan_event",
+                                "active": false,
+                                "textblock": [
+                                    "Yes, if you have checked in via event QR code, you can continue to warn the other guests during the period of your check-in. As before, your identity remains anonymous."
+                                ]
+                            },
+                            {
+                                "title": "Do I have to go into isolation after a positive (self-)test?",
+                                "anchor": "warn_without_tan_isolation",
+                                "active": false,
+                                "textblock": [
+                                    "After each positive test, we recommend, for the sake of personal responsibility, to first minimize contacts as far as possible and to contact your doctor or the public health department to coordinate further steps.",
+                                    "Current isolation rules are based on the IfSG and local applicable regulations."
+                                ]
+                            },
+                            {
+                                "title": "If I have another negative rapid test, can I end the isolation?",
+                                "anchor": "warn_without_tan_negative",
+                                "active": false,
+                                "textblock": [
+                                    "The Corona-Warn-App cannot make a medical diagnosis of whether you are infected or not. Therefore, please clarify the question of ending the isolation with the responsible health department or your doctor."
+                                ]
+                            },
+                            {
+                                "title": "Will the positive test result or warning be noted in my contact journal?",
+                                "anchor": "warn_without_tan_contact_journal",
+                                "active": false,
+                                "textblock": [
+                                    "If you have entered the result of a PCR test or rapid test into the Corona-Warn-App using a QR code or TAN, a corresponding entry appears in the contact journal.",
+                                    "If you manually warn other CWA users directly using the \"Manage Your Tests and Warn Others\" feature, no test will be registered in the app, so no corresponding entry will be created in the contact journal.",
+                                    "Regardless of the type of test and how it was registered, you will see the date of the warning in the contact journal.",
+                                    "See also: <a href='#warn_without_tan_how_to' target='_blank'>How can I warn other users if I have tested positive?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Can I get an official digital certificate for a self-test?",
+                                "anchor": "warn_without_tan_self_test_certificate",
+                                "active": false,
+                                "textblock": [
+                                    "No, Europe-wide digital certificates are not provided for self-tests. Test certificates can only be issued for supervised PCR tests (except PoC-NAT PCR tests) and supervised rapid tests."
+                                ]
+                            },
+                            {
+                                "title": "Can I use a registered positive test result as a sickness certificate?",
+                                "anchor": "warn_without_tan_sickness_certificate",
+                                "active": false,
+                                "textblock": [
+                                    "No, alerting others with the \"Manage Your Tests and Warn Others\" feature does not result in the display of a positive test result in the Corona-Warn-App at all, it is only used to warn your contacts. Aside from that, displaying it in the CWA is not permitted by labor law for sick leave or work/school release. Please contact the doctor you trust or the responsible health office."
+                                ]
+                            },
+                            {
+                                "title": "How long will the test remain visible in the app?",
+                                "anchor": "warn_without_tan_in_app_display",
+                                "active": false,
+                                "textblock": [
+                                    "Warning others with the new \"Manage Your Tests and Warn Others\" feature does not display a positive test result in the Corona-Warn-App at all, it is only used to warn your contacts."
+                                ]
+                            },
+                            {
+                                "title": "After sharing the positive result, does my risk assessment stop?",
+                                "anchor": "warn_without_tan_risk_assessment",
+                                "active": false,
+                                "textblock": [
+                                    "No, the risk assessment is not stopped. Thus, the Corona-Warn-App continues to record its contacts and send out random IDs. Therefore, warning others with the \"Manage Your Tests and Warn Others\" function has no effect on the risk assessment.",
+                                    "If you are out in public despite testing positive, please be mindful of spacing and hygiene rules and, if possible, wear a mask to reduce the risk of infection of others."
+                                ]
+                            },
+                            {
+                                "title": "Does the risk calculation for a warning on my smartphone differ depending on the test type used to warn?",
+                                "anchor": "warn_without_tan_risk_assessment_different",
+                                "active": false,
+                                "textblock": [
+                                    "No, the procedure for calculating the risk of infection has not been changed. Regardless of the type of test used to initiate the warning, the same parameters apply in the risk calculation."
+                                ]
+                            },
+                            {
+                                "title": "Can warnings of different test types be differentiated?",
+                                "anchor": "warn_without_tan_differentiate_warning",
+                                "active": false,
+                                "textblock": [
+                                    "Contacts will receive a warning in their Corona-Warn-App about an encounter on a low risk (green tile) or increased risk (red tile) day.",
+                                    "Whether the warning was based on a rapid test or PCR test, whose result was received via the app, or on a self-test or other test, whose result was not transmitted in the app, is not disclosed to the warned person."
                                 ]
                             }
                         ]
@@ -1186,6 +1418,9 @@
                                 "anchor": "check_in_luca_warn_for_others",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
+                                    "This feature of the Corona-Warn-App is no longer available from version 3.0 onwards and cannot be used with the previous versions 2.9 to 2.28 after January 31st, 2023, as the verification hotline (TAN hotline) will be discontinued on this date.",
+                                    "<hr>",
                                     "Organizers can warn for others regardless of which QR code they have scanned with the CWA. For more information on warning for others, see the following links:<ul><li><a href='#warn_for_others' target='_blank'>FAQ: How can I warn for others?</a></li><li><a href='../../blog/2021-09-08-cwa-version-2-9/' target='_blank'>Blog: Corona-Warn-App version 2.9: Organizers can use the check-in function to warn guests on behalf of the health department</a></li></ul>"
                                 ]
                             },
@@ -1249,12 +1484,12 @@
                                 "anchor": "further_details",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Updated October 26, 2022</b>",
+                                    "<b>Updated January 18th, 2023</b>",
                                     "Since version 1.11 the Corona-Warn-App displays important statistical key figures on current infections. The figures displayed guide users to better assess the current situation and to adjust their own behavior.",
                                     "The number of new infections is published once a day by the Robert Koch Institute (RKI). 'Yesterday' means that the value considers all reported new infections from the previous day until 23:59. ",
                                     "The statistics displayed in the Corona-Warn-App are compiled from different sources and are formatted for the app about every 15 minutes. Besides the aggregated numbers from the previous day (e.g. reported new infections), the statistics also show the R-value, which is an estimate for the current day based on the  \"nowcasting\" approach.",
                                     "The concept of the R-value and the data basis of its calculation is described in detail in the Epidemiological Bulletin of the RKI <a href='https://www.rki.de/DE/Content/Infekt/EpidBull/Archiv/2020/17/Art_02.html' target='_blank' rel='noopener noreferrer'>(#17/2020 of 04/23/2020)</a>. Sample calculations and the daily updated R-values (4-day and 7-day R-value) are available as an Excel table at <a href='https://www.rki.de/covid-19-nowcasting' target='_blank' rel='noopener noreferrer'>https://www.rki.de/covid-19-nowcasting</a>.",
-                                    "In the meantime, further key figures have been added to the in-app statistics. The app currently includes the following tiles:<ul>    <li>    Link to the <b><a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home' target='_blank' rel='noopener noreferrer'>Pandemic Radar (German Only)</a></b>, with various key figures (since version 2.28, <a href='../../blog/2022-10-26-cwa-2-28/' target='_blank'>Blog</a>).    </li>    <li>    <b>Confirmed new infections</b> on the previous day, 7-day average and total (since version 1.11, <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li>    <li>    <b>Nationwide 7-day incidence</b> of new infections and hospitalizations (since version 2.12 and 1.11, <a href='../../blog/2021-10-19-cwa-version-2-12/' target='_blank'>Blog</a> & <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li>    <li>    <b>Local 7-day incidence</b> of new infections and hospitalisations (since version 2.12 and 2.6, <a href='../../blog/2021-10-19-cwa-version-2-12/' target='_blank'>Blog</a> & <a href='../../blog/2021-07-28-cwa-version-2-6/' target='_blank'>Blog</a>)    </li>    <li>    <b>7-day R-value</b>, d&nbsp;h. Average number of infections per infected person (since version 1.11, <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li>    <li>    <b>COVID-19 patients</b> in intensive care units (since version 2.12, <a href='../../blog/2021-10-19-cwa-version-2-12/' target='_blank'>Blog</a>)    </li>    <li>    <b>Warnings by app users</b>, 7-day average and total (since version 1.11, <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li></ul>",
+                                    "In the meantime, further key figures have been added to the in-app statistics. The app currently includes the following tiles:<ul>    <li>    Link to the <b><a href='https://corona-pandemieradar.de/en' target='_blank' rel='noopener noreferrer'>Pandemic Radar</a></b>, with various key figures (since version 3.0, link of version 2.28: <b><a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Situationsberichte/COVID-19-Trends/COVID-19-Trends.html?__blob=publicationFile#/home' target='_blank' rel='noopener noreferrer'>Pandemic Radar (German Only)</a></b>, <a href='../../blog/2022-10-26-cwa-2-28/' target='_blank'>Blog</a>).    </li>    <li>    <b>Confirmed new infections</b> on the previous day, 7-day average and total (since version 1.11, <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li>    <li>    <b>Nationwide 7-day incidence</b> of new infections and hospitalizations (since version 2.12 and 1.11, <a href='../../blog/2021-10-19-cwa-version-2-12/' target='_blank'>Blog</a> & <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li>    <li>    <b>Local 7-day incidence</b> of new infections and hospitalisations (since version 2.12 and 2.6, <a href='../../blog/2021-10-19-cwa-version-2-12/' target='_blank'>Blog</a> & <a href='../../blog/2021-07-28-cwa-version-2-6/' target='_blank'>Blog</a>)    </li>    <li>    <b>7-day R-value</b>, d&nbsp;h. Average number of infections per infected person (since version 1.11, <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li>    <li>    <b>COVID-19 patients</b> in intensive care units (since version 2.12, <a href='../../blog/2021-10-19-cwa-version-2-12/' target='_blank'>Blog</a>)    </li>    <li>    <b>Warnings by app users</b>, 7-day average and total (since version 1.11, <a href='../../blog/2021-08-05-statistictiles/' target='_blank'>Blog</a>)    </li></ul>",
                                     "Similarly, statistics on vaccinations have been added:<ul>    <li>    People vaccinated at least <b>once</b> (since version 2.5, <a href='../../blog/2021-07-12-cwa-version-2-5/' target='_blank'>Blog</a>)    </li>    <li>    People who have <b><a href='#glossary_basic_immunization' target='_blank'>basic immunization</a></b> (since version 2.5, <a href='../../blog/2021-07-12-cwa-version-2-5/' target='_blank'>Blog</a>)    </li>    <li>    People who have received <b><a href='#glossary_booster_vaccination' target='_blank'>booster vaccinations</a></b> (since version 2.17, <a href='../../blog/2022-02-02-cwa-2-17/' target='_blank'>Blog</a>)    </li>    <li>    Administered <b>vaccine doses</b> (since version 2.5, <a href='../../blog/2021-07-12-cwa-version-2-5/' target='_blank'>Blog</a>)    </li></ul>",
                                     "To ensure the validity of the data in the CWA's statistics, all data sources are carefully verified for completeness and consistency.  Thus, the presentation of the data in the app may be slightly delayed in comparison to other websites/sources. However, in terms of content, the values correspond to the official case numbers of the RKI."
                                 ]
@@ -1384,10 +1619,11 @@
                                 "anchor": "red_card_how_to_test",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "If the Corona-Warn-App indicates a high infection risk with the red card, please get tested with a rapid antigen test or test yourself, preferably several times at intervals of two days. In case a test result is positive, you should confirm it with a PCR test.",
                                     "For a smooth testing process, to receive the test result and to warn others in case of a positive result, please follow the steps in these overviews from the Robert Koch Institute:<ul><li><a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank'>Have you been tested positive? How to share your result</a></li><li><a href='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl.pdf' target='_blank'>Rapid antigen test? How to share your result (German only)</a></li></ul>",
                                     "<a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank'><img src='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='Share a positive test result guide PDF'></a><a href='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl.pdf' target='_blank'><img src='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl-1.png' alt='Share a positive rapid antigen test result guide PDF'></a>",
-                                    "See also: <ul><li><a href='#voluntary_self_quarantine' target='_blank'>Why is voluntary self-quarantine recommended?</a></li><li><a href='#quarantine_measures' target='_blank'>More information on quarantine measures</a></li><li><a href='#rat_red_card_which_test' target='_blank'>If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?</a></li><li><a href='#vac_cert_red_warning' target='_blank'>How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?</a></li><li><a href='#where_can_i_get_tested' target='_blank' >Where to get tested?</a></li></ul>"
+                                    "See also: <ul><li><a href='#voluntary_self_quarantine' target='_blank'>Why is voluntary self-quarantine recommended?</a></li><li><a href='#quarantine_measures' target='_blank'>More information on quarantine measures</a></li><li><a href='#rat_red_card_which_test' target='_blank'>If I see a high-risk encounter in the App, i.e. a red card, should I do a rapid antigen test or PCR-Test?</a></li><li><a href='#vac_cert_red_warning' target='_blank'>How to behave if I am partially or completely vaccinated, but receive a red warning in the Corona-Warn-App?</a></li><li><a href='#where_can_i_get_tested' target='_blank' >Where to get tested?</a></li><li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li></ul>"
                                 ]
                             },
                             {
@@ -1431,6 +1667,8 @@
                                 "anchor": "tan_procedure",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
+                                    "Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.",
                                     "<div class='container'><div class='row'><div class='col-sm'><p><b>Purpose</b></p><p>If you have been tested for the SARS-CoV-2 virus and have received a positive result in the Corona-Warn-App (CWA), you can alert other users utilizing the CWA, helping to break contact chains at an early stage.</p><p>If the result is not transferred to the CWA after scanning the QR code from the Form 10C/OEGD (or equivalent), or you have not received a QR code that is compatible with the Corona-Warn-App, you can still register a positive result in the app to alert others, as long as you receive a TAN from the verification hotline.</p></div><div class='col-sm'><a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.pdf' target='_blank'><img src='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ02_x3b-EN.jpg' alt='Share a positive test result guide PDF'></a></div></div></div>",
                                     "<b>Procedure</b>",
                                     "<ul><li>You can reach the hotline exclusively by telephone.<br>Call the number: 0800 7540002 (in Germany) or +49 30 498 75402 (international).<br>You can check the operating hours of the hotline under:<br><a href='#international_phone_numbers' target='_blank'>FAQ: How to reach us</a>.</li><li>Step 1: Answer the questions of the hotline employee.</li><li>Step 2: You will receive a call back from this employee to give you the TAN. This TAN is valid for one hour.</li><li>Step 3: If the test was already registered, remove the test with no result from the Corona-Warn-App.</li><li>Step 4: Under the Status tab of the CWA, select the 'Continue' button in the section 'Manage Your Tests'.<br>Below the question 'Your PCR test was positive?' you will find the function 'Enter TAN for PCR Test'. Select this function and enter the 10-digit TAN that was provided to you.</li><li>Your positive test result is now registered in the app. Now you can warn others via the app.</li></ul>",
@@ -1439,7 +1677,7 @@
                                     "<b>Limitations</b>",
                                     "<ul><li>A TAN is only issued for positive test results. No warning can be triggered with negative results, so there is no TAN in case of a negative result.</li><li>Each caller receives no more than one TAN. The process in the TAN hotline does not include issuing multiple TANs in one call (for instance in the case of family members who were tested in the same laboratory). Each person being tested must call and go through the verification process themselves.</li><li>A TAN will only be issued for PCR tests that have been analyzed in a laboratory. No TAN will be issued by the hotline for positive results from rapid tests without a result in the CWA, self-tests, or PCR tests without a result from a laboratory. It is irrelevant whether the locally used PCR test approach is recognized and accepted by the health authority or not.</li><li>A TAN cannot be requested on behalf of another person. Each person being tested must call and go through the verification process themselves.</li></ul>",
                                     "<b>Further information</b>",
-                                    "<ul><li><a href='#glossary_tan' target='_blank'>Glossary: TAN</a></li><li><a href='#test_multiple_devices' target='_blank'>FAQ: How do I share a positive test result on multiple devices?</a></li><li><a href='#test_in_other_country' target='_blank'>FAQ: Can I enter positive test results from other countries?</a></li><li><a href='#pos_test_no_risk_encounter' target='_blank'>FAQ: I tested positive. Why does a person in the same household not receive a risk warning?</a></li><li><a href='#QRcodes' target='_blank'>FAQ: What to do with several PCR-Test QR codes?</a></li><li><a href='#qr_test' target='_blank'>FAQ: I have scanned a PCR-Test QR code, but the test result could not be retrieved for days.</a></li></ul>"
+                                    "<ul><li><a href='#glossary_tan' target='_blank'>Glossary: TAN</a></li><li><a href='#test_multiple_devices' target='_blank'>FAQ: How do I share a positive test result on multiple devices?</a></li><li><a href='#test_in_other_country' target='_blank'>FAQ: Can I enter positive test results from other countries?</a></li><li><a href='#pos_test_no_risk_encounter' target='_blank'>FAQ: I tested positive. Why does a person in the same household not receive a risk warning?</a></li><li><a href='#QRcodes' target='_blank'>FAQ: What to do with several PCR-Test QR codes?</a></li><li><a href='#qr_test' target='_blank'>FAQ: I have scanned a PCR-Test QR code, but the test result could not be retrieved for days.</a></li><li><a href='#warn_without_tan' target='_blank' >FAQ: How do I warn without a teleTAN?</a></li></ul>"
                                 ]
                             },
                             {
@@ -1492,14 +1730,17 @@
                                 "anchor": "who_can_help",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "The technical hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) will help you with technical questions about the Corona-Warn-App, for instance if you have problems with exposure logging. You can reach the technical hotline from Monday to Friday from 7 a.m. to 5 p.m. (except on German national holidays), and it is free of charge for you within Germany.",
-                                    "The TAN hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) will help you to enter the TAN if you have a positive PCR test result and if you have not received a TAN or document with a PCR-Test QR code. The TAN hotline is available Monday to Sunday from 7 a.m. to 8 p.m. German local time. The call is free of charge from within Germany.",
+                                    "The TAN hotline (<a href='#international_phone_numbers' target='_blank' >click here to see the phone numbers</a>) will help you to enter the TAN if you have a positive PCR test result and if you have not received a TAN or document with a PCR-Test QR code. The TAN hotline is available Monday to Sunday from 7 a.m. to 8 p.m. German local time. The call is free of charge from within Germany. Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.",
                                     "If the test result is not available in the Corona-Warn-App, the relevant service personnel, test centre or health authority should be contacted to obtain the test result.  <br/>In order to make it easier for you to find the responsible health authority, the RKI has provided a corresponding tool. By entering the postal code or the city of residence, the responsible health authority (including contact details) is immediately displayed: <a href='https://tools.rki.de/PLZTool/en-GB' target='_blank' rel='noopener noreferrer'>Robert Koch Institute Tool: Health authority by postal code or place</a>",
                                     "Further information on the PCR-Test QR Code procedure can be found in this FAQ entry: <a href='#qr_test' target='_blank'>I have scanned a PCR-Test QR code, but the test result could not be retrieved for days.</a>",
                                     "The websites of the Federal Government are offering general information and videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch' target='_blank' rel='noopener noreferrer'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app/corona-warn-app-englisch</a>.",
                                     "The Robert Koch Institute also provides information on epidemiological aspects: <a href='https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html' target='_blank' rel='noopener noreferrer'>https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/nCoV_node.html (German only)</a>.",
                                     "As a media representative, please direct your enquiries to <a href='press...sap...com' class='email'>press...sap...com</a>.",
-                                    "The various feedback channels of the <a href='/en/community/' target='_blank'>Corona-Warn-App-Community</a> will help you with your questions about the open source project of the Corona-Warn-App."
+                                    "The various feedback channels of the <a href='/en/community/' target='_blank'>Corona-Warn-App-Community</a> will help you with your questions about the open source project of the Corona-Warn-App.",
+                                    "See also : ",
+                                    "<li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li>"
                                 ]
                             },
                             {
@@ -1507,6 +1748,7 @@
                                 "anchor": "international_phone_numbers",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "You can reach us by phone from within Germany and from abroad. The national numbers are free of charge, but are only available from within Germany. The international numbers are <b>not free of charge</b> - the cost of the international call is based on the contract with your provider.",
                                     "<b>Technical Hotline</b>",
                                     "The technical hotline will help you with technical questions about the Corona-Warn-App, for instance if you have problems with the exposure logging (only available in German). It is available Monday to Friday from 9 a.m. to 5 p.m. German local time (except on German national holidays):",
@@ -1515,7 +1757,10 @@
                                     "<b>TAN Hotline</b>",
                                     "The TAN hotline will help you to enter the TAN if you have a positive PCR test result and if you have not received a TAN or document with a PCR-Test QR code. The TAN hotline is available Monday to Sunday from 7 a.m. to 8 p.m. German local time:",
                                     "<b>National:</b> 0800 7540002",
-                                    "<b>International:</b> +49 30 498 75402"
+                                    "<b>International:</b> +49 30 498 75402",
+                                    "Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.",
+                                    "See also : ",
+                                    "<li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li>"
                                 ]
                             },
                             {
@@ -1578,16 +1823,19 @@
                                 "anchor": "qr_test",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "See also <a href=#test_result_issues target='_blank'>What can I do if I have not received my test result or test certificate?</a>",
                                     "The processing time of a PCR test (from taking the sample at your doctor's office or test center to the notification in the app) can be up to 48 hours. If you scanned your PCR-Test QR code into the App after a Corona test and did not receive a test result via the App within 3 days of making the test, it is possible that",
                                     "<ul><li>the respective laboratory is not fully linked with the Corona-Warn-App backend.</li><li>the consent field allowing the transmission of the test result to the Corona-Warn-App was not ticked on the submission form (<a href='/assets/documents/MU_10C_(01_2021)_web.pdf' target='_blank' >10C</a>/<a href='/assets/documents/MU_OEGD_(08_2021)_web.pdf' target='_blank' >OEGD</a>) sent by your doctor to the laboratory.</li></ul>",
                                     "Please check whether the laboratory working with your doctor or test center is connected to the Corona-Warn-App and whether the consent field is checked on the form. Only then is it ensured that the procedure used works with the Corona-Warn-App.",
                                     "Currently, 90% of the existing test capacities in Germany are covered by the complete digital process. We are continuing to work with the laboratories to close the gaps and to connect and upgrade all laboratories for the process. Therefore it can happen that a laboratory gets the order for the test with the correct form, but has to transmit the test result to the tested person in another way.",
-                                    "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a teleTAN from the TAN Hotline (<a href='#international_phone_numbers' target='_blank' >click here to see our phone numbers</a>) to warn your contacts via the Corona-Warn-App. Before you are able to enter the teleTAN into the app, you have to delete the pending test result from the app. To do this, please tap on",
+                                    "In this case, please call the responsible medical staff or test center/health authority to get your test result. If you are informed of a positive test result, you can request a teleTAN from the TAN Hotline (<a href='#international_phone_numbers' target='_blank' >click here to see our phone numbers</a>) to warn your contacts via the Corona-Warn-App. Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023. Before you are able to enter the teleTAN into the app (version 2.28 or lower), you have to delete the pending test result from the app. To do this, please tap on",
                                     "<ul><li>'Display Test' &gt; 'Delete test'</li></ul>",
                                     "Confirm again that you really want to remove the test result. Now you can enter the requested teleTAN into the Corona-Warn-App by following these steps:",
                                     "<ul><li>'Next Steps' &gt; 'Enter TAN'</li></ul>",
-                                    "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties."
+                                    "You can report cases where you waited longer than 3 days for the test result or laboratories that are not connected to the Corona-Warn-App by mail to <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>. Please provide a scan of the information sheet with the QR code, the date on which you were tested, the number of days you waited for the test result as well as contact information of the doctor or test center. All non-essential personal data should be blacked out. We will then try to resolve connectivity issues and long waiting periods together with the involved parties.",
+                                    "See also : ",
+                                    "<li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li>"
                                 ]
                             }
                         ]
@@ -1651,7 +1899,9 @@
                                 "anchor": "rooted_devices",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated 24 January, 2023</b>",
                                     "Yes, you can. However, the app is not officially supported on rooted devices.",
+                                    "As of version 3.0 users of the Corona-Warn-App can warn others without a TAN. This will not work if you have rooted your device, as the SafetyNet check the app performs when attempting to warn others without a TAN fails.",
                                     "Currently, unlocking the bootloader or similar modifications (such as installing microG) will cause the optional data donation and survey features to fail without an indication in the app. The reason for this is that these features require an integrity check via SafetyNet.",
                                     "See also <a href='#root_detection_android' target='_blank' >[Google/Android]: Why do I receive a notification regarding administrator permissions (root permissions)?</a>"
                                 ]
@@ -1783,9 +2033,14 @@
                                 "anchor": "hearing_impaired",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
+                                    "Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.",
+
                                     "First of all: The app fulfills accessibility requirements (see <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/scoping_document.md#accessibility' target='_blank' rel='noopener noreferrer'>scoping document</a>) and supports all accessibility features of your phone's operating system.",
                                     "In general, you're not required to make phone calls in connection with the Corona-Warn-App. In case of a positive test result, you will get the result via a PCR-Test QR code, which you can scan into the app. If the testing facility doesn't support QR codes or if you don't want to use them, you receive a TAN. Only if you have received neither a QR code nor a TAN, would you have to call the TAN hotline, which you might not be able to do without outside help.",
-                                    "If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing."
+                                    "If you can't make phone calls because you're hard of hearing, you should mention this during the test, because this will affect the whole communication process. You will then receive the TAN, if necessary, in writing.",
+                                    "See also : ",
+                                    "<li><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a></li>"
                                 ]
                             },
                             {
@@ -2097,7 +2352,7 @@
                                 "anchor": "no_risk_update_ios",
                                 "active": false,
                                 "textblock": [
-                                    "First, please ensure that you are running the current version of iOS and the app. The latest version of the Corona-Warn-App is currently <b>[ios.current-app-version]</b>. If you are running a lower version, open the App Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem. Open Corona-Warn-App once after the restart. You can find additional information <a href='https://www.linkedin.com/pulse/corona-warn-app-software-update-f%25C3%25BCr-ios-harald-lindlar/' target='_blank' rel='noopener noreferrer'>in a blog post on LinkedIn (German only)</a>.",
+                                    "First, please ensure that you are running the current version of iOS and the app. The latest version of the Corona-Warn-App is currently <b>[ios.current-app-version]</b>. If you are running a lower version, open the App Store to check if an update for Corona-Warn-App is available. Please install it and also restart your device to mitigate the problem. Open Corona-Warn-App once after the restart.",
                                     "Make sure that exposure logging is active.",
                                     "If the latest version still shows the issue, please open the app regularly, at least once a day. We are working on additional updates to solve respective issues.",
                                     "In addition, please check the following device settings on your phone:",
@@ -2186,6 +2441,8 @@
                                     "Follow these steps in order to activate the security certificate. The exact path depends on the device.",
                                     "<ol><li>'Settings' &gt; 'Biometrics and security' &gt; 'Other security settings' &gt; 'View security certificates' &gt; 'SYSTEM'</li><li>Scroll down to <b>T-Systems Enterprise Services GmbH, T-TeleSec GlobalRoot Class 2</b></li><li>Enable the certificate using the slider</li></ol>",
                                     "If your network or device is using a firewall, check also that your device can access the domains listed in <a href='#access-list' target='_blank'>[Google/Android]: Firewall/Router configuration: CAUSE: 4000, error during web request, HTTP status 901</a>.",
+                                    "In some cases, it is necessary to restart the device.",
+                                    "If this error occurs when you try to share a positive test result via WLAN, you should try again with mobile data.",
                                     "Should these procedures not solve this issue, please write a comment here:  <a href='https://github.com/corona-warn-app/cwa-app-android/issues/968' target='_blank' rel='noopener noreferrer'>cwa-app-android/issues/968</a>."
                                 ]
                             },
@@ -2482,7 +2739,10 @@
                                 "anchor": "update_faq",
                                 "active": false,
                                 "textblock": [
-                                    "Updated [last-update]"
+                                    "The last content changes to FAQ articles were made on January 24th, 2023.",
+                                    "<hr>",
+                                    "The Corona-Warn-App open source team updates this FAQ regularly and keeps it up to date. You can see when the last updates were made and what changes were made in the change history on <a href='#glossary_github' target='_blank'>GitHub</a>.",
+                                    "See: <a href='https://github.com/corona-warn-app/cwa-website/commits/master/src/data/faq.json' target='_blank' rel='noopener noreferrer'>GitHub: English Corona-Warn-App FAQ Change History</a>"
                                 ]
                             }
                         ]
@@ -2784,8 +3044,10 @@
                                 "anchor": "traffic_monitoring",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "State of the art and well-established encryption mechanisms, for example using HTTP over TLS (HTTPS), ensure that messages are not readable for outside viewers. Metadata is removed before processing user data for the transmission of diagnosis keys. This prevents data from being linked together at database level.",
-                                    "Furthermore, various additional technical measures have been taken. For example, false notifications that will be discarded on the server side are randomly created and sent. These false notifications cannot be distinguished from valid notifications and create a type of background noise. The transmission of TANs and upload of real infection data cannot be distinguished from this background noise. So, even with monitored network traffic, plausible deniability is still possible."
+                                    "Furthermore, various additional technical measures have been taken. For example, false notifications that will be discarded on the server side are randomly created and sent. These false notifications cannot be distinguished from valid notifications and create a type of background noise. The transmission of TANs and upload of real infection data cannot be distinguished from this background noise. So, even with monitored network traffic, plausible deniability is still possible.",
+                                    "As of version 3.0 of the Corona-Warn-App, a teleTAN is no longer used to share a positive test result that has not been submitted to the Corona-Warn-App."
                                 ]
                             },
                             {
@@ -2793,8 +3055,9 @@
                                 "anchor": "anonymous",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Updated January 18th, 2023</b>",
                                     "Devices in close proximity to yours collect “rolling proximity identifiers” (RPI). These are IDs that guarantee data privacy and change constantly in short intervals, thereby preventing devices from being tracked. Apart from these IDs, other devices in close proximity cannot retrieve any other information from your device. These IDs can only be linked to pseudonymous diagnosis keys, which are needed to perform risk identification. A connection with user IDs or your device's International Mobile Equipment Identity (IMEI) is not possible.",
-                                    "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via teleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed.",
+                                    "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via a teleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed. As of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been submitted to the Corona-Warn-App.",
                                     "<b>Why were dummy keys (fake diagnosis keys) initially created and used?</b><br/>A very small number of dummy keys could possibly result in transmitted diagnosis keys being assigned to a single user. To minimize this risk, fake diagnosis keys (dummy keys) were initially generated. This increased the number of diagnosis keys in the system in order to minimize the described re-identification risk.",
                                     "<b>Why is it now possible to do without the generation and use of dummy keys (fake diagnosis keys)?</b><br/>Due to the current increase in the number of infections, many diagnosis keys are already being managed in the CWA. Therefore the risk of re-identification is currently considered very low. With the connection of the CWA to the European Federation Gateway Service (EFGS), the number of diagnosis keys in the system will increase even further, as diagnosis keys from users in other countries will also be added. For this reason, the generation and use of fake diagnosis keys (dummy keys) can be easily avoided.",
                                     "<b>Will dummy keys (fake diagnosis keys) be used again if the corona pandemic should abate?</b><br/>If no better alternatives are found in the meantime, the generation of dummy keys (fake diagnosis keys) can be activated at short notice if required."
@@ -3648,7 +3911,7 @@
                 {
                     "term": "TAN",
                     "anchor": "tan",
-                    "description": "10-digit letter number combination for reporting positive test results. These can be requested via the TAN hotline. <b>National:</b> 0800 7540002 and <b>international:</b> +49 30 498 75402"
+                    "description": "<p><b>Updated January 18th, 2023</b></p>10-digit letter number combination for reporting positive test results. These can be requested via the TAN hotline. <b>National:</b> 0800 7540002 and <b>international:</b> +49 30 498 75402. <p>Please note that as of version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been transmitted to the Corona-Warn-App. Therefore, the operation of the TAN hotline will be discontinued as of January 31st, 2023.</p><a href='#warn_without_tan' target='_blank' >How do I warn without a teleTAN?</a>"
                 },
                 {
                     "term": "Technical Validity",

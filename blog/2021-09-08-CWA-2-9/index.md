@@ -24,26 +24,26 @@ If the health department, while tracing infection chains, discovers that a perso
 
 Under **“Planning an event?”** on the app’s home screen, organizers can go to their event overview. There, they select the three dots in the upper right corner and tap “Warn for Others”  
 
-<br></br><center>
+<br></br><div class="text-center">
 
 <img src="./my_qr_codes.png" title="Warn for others" alt="Warn for others" style="align: center" width=250>
 <img src="./iPhone 11 Pro-onbehalfwarning_info_0002.png" title="Warn for others" alt="Warn for others" style="align: center" width=250>
-</center>
+</div>
 <br></br>
 
 They can then select the relevant event and specify the date and duration according to the specifications of the public health department. Afterwards, they can then enter the TAN and issue a warning.
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./iPhone 11 Pro-onbehalfwarning_location_selection_en.png" title="Select event" alt="Select event" style="align: center" width=250> 
 <img src="./iPhone 11 Pro-onbehalfwarning_date_time_selection_en.png" title="Information about event" alt="Information about event" style="align: center" width=250> 
-<img src="./iPhone 11 Pro-onbehalfwarning_tan_en_v2.png" title="Warn for others" alt="Warn for others" style="align: center" width=250> </center>
+<img src="./iPhone 11 Pro-onbehalfwarning_tan_en_v2.png" title="Warn for others" alt="Warn for others" style="align: center" width=250> </div>
 <br></br>
 
 If the event no longer exists in the overview, organizers can scan the event’s QR code again. After selecting “Warning on behalf of” via the three dots in the upper right corner, they do not select the event but “Scan QR Code”.
 
 <br></br>
-<center> <img src="./warn_for_others_scan.png" title="Scan QR code again" alt="Scan QR code again" style="align: center" width=250> </center>
+<div class="text-center"> <img src="./warn_for_others_scan.png" title="Scan QR code again" alt="Scan QR code again" style="align: center" width=250> </div>
 <br></br>
 
 ### Full vaccination protection after first shot for people who have recovered from COVID
@@ -58,7 +58,7 @@ Users who get vaccinated with **Johnson & Johnson’s vaccine** after recovery a
 Furthermore, users who have received a **booster vaccination** can transfer their digital certificate into the Corona-Warn-App. Booster vaccinations are displayed like the other vaccination certificates with "Vaccination n of m".
 
 <br></br>
-<center> <img src="./booster-impfung_v2_en.png" title="Booster Vaccination" alt="Booster Vaccination" style="align: center" width=250> </center>
+<div class="text-center"> <img src="./booster-impfung_v2_en.png" title="Booster Vaccination" alt="Booster Vaccination" style="align: center" width=250> </div>
 <br></br>
 
 With the update, users who have had a PCR or rapid test can access the EU's digital COVID test certificate directly from their test result. The certificate serves as official proof of a negative test result.
@@ -67,7 +67,7 @@ Users can select the test result on their app’s home screen and then tap on "T
 
 
 <br></br>
-<center> <img src="./test-certificate-en.png" title="Jump to test certificate" alt="Jump to test certificate" style="align: center" width=250> </center>
+<div class="text-center"> <img src="./test-certificate-en.png" title="Jump to test certificate" alt="Jump to test certificate" style="align: center" width=250> </div>
 <br></br>
 
 Version 2.9 - like previous versions - will be delivered in a staged rollout and is made available for users in waves. While users can manually trigger an update in Apple’s App Store, this option is not available in the Google Play Store. There, the delivery of the Corona-Warn-App’s new version can take up to 48 hours.
