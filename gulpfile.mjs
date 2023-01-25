@@ -546,7 +546,7 @@ function AddEnglishSpecifier() {
       change(function () {
         // split HTML to exclude the <head>-section from replacement
         const splittedHtml = this.originalContent.split('</head>');
-        const regex = new RegExp(`(?<!\w)${data.texts.join('|')}(?![^<]*>)`, 'g');
+        const regex = new RegExp(`(?<!\w)(${data.texts.join('|')})(?![^<]*>)`, 'g');
         splittedHtml[1] = splittedHtml[1].replace(regex, (match) => {
           return `<span lang="en">${match}</span>`;
         });
