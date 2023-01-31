@@ -1,6 +1,6 @@
 ---
-page-title: "What does a red warning mean when the incidence is high?"
-page-description: "What does a red warning mean when the incidence is high?"
+page-title: "SB06: What does a red warning mean when the incidence is high?"
+page-description: "SB06: What does a red warning mean when the incidence is high?"
 page-name: science-blog-6
 page-name_de: science-blog-6
 author: CWA Team

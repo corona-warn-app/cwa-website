@@ -1,6 +1,6 @@
 ---
-page-title: "Wie hat die „rote Warnung“ das Verhalten der Corona-Warn-App-Nutzenden beeinflusst?"
-page-description: "Wie hat die „rote Warnung“ das Verhalten der Corona-Warn-App-Nutzenden beeinflusst?"
+page-title: "SB03: Wie hat die „rote Warnung“ das Verhalten der Corona-Warn-App-Nutzenden beeinflusst?"
+page-description: "SB03: Wie hat die „rote Warnung“ das Verhalten der Corona-Warn-App-Nutzenden beeinflusst?"
 page-name: science-blog-3
 page-name_de: science-blog-3
 author: CWA-Team
