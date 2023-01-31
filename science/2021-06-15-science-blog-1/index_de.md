@@ -1,6 +1,6 @@
 ---
-page-title: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
-page-description: "Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
+page-title: "SB01: Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
+page-description: "SB01: Über die Wirksamkeit und den Nutzen der Corona-Warn-App"
 page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA-Team
