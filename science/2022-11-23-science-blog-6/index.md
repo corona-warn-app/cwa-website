@@ -54,7 +54,7 @@ So far, approx. 36.8 million test results have been transmitted via the CWA data
 In total, there were approximately 27 million reported rapid antigen test results (RAT), of which approximately 7.8 million were preceded by at least one risk exposure. The following figure shows the progression of positivity rates over time for each type of risk notification. Rapid antigen test results have only been registered via data donation since 24 June 2021.
 
 <figure class="figure-img">
-<img src="./ppa_risk_infection_ct_timeline_rat-1.png" class="figure-img img-fluid" alt="Figure 1: Positivity rate after risk notification over time (RAT)."/>
+<img src="./ppa_risk_infection_ct_timeline_rat-1_en.png" class="figure-img img-fluid" alt="Figure 1: Positivity rate after risk notification over time (RAT)."/>
 <figcaption aria-hidden="true">Figure 1: Positivity rate after risk notification over time (RAT).</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ The positivity rate also varies here depending on the infection event and warnin
 In total, there were approximately 9.8 million reported PCR test results (PCR), of which approximately 2.7 million were preceded by at least one risk exposure. The following figure shows the progression of positivity rates over time for each type of risk notification. PCR test results have been registered via data donation since 10 March 2021.
 
 <figure class="figure-img">
-<img src="./ppa_risk_infection_ct_timeline_pcr-1.png" class="figure-img img-fluid" alt="Figure 2: Positivity rate after risk notification over time (PCR)."/>
+<img src="./ppa_risk_infection_ct_timeline_pcr-1_en.png" class="figure-img img-fluid" alt="Figure 2: Positivity rate after risk notification over time (PCR)."/>
 <figcaption aria-hidden="true">Figure 2: Positivity rate after risk notification over time (PCR).</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ However, if we now evaluate the CWA users from both regions together (e.g. becau
 This example only serves to illustrate the effect and was deliberately chosen with partly unrealistic assumptions. The following figure shows the actual relative difference between the 7-day incidences of 50 randomly selected pairs of districts.
 
 <figure class="figure-img">
-<img src="./rki_covid_lk_inz_paired_plot-1.png" class="figure-img img-fluid" alt="Figure 3: Quotient of 7-day incidences over time (50 pairs of districts)."/>
+<img src="./rki_covid_lk_inz_paired_plot-1_en.png" class="figure-img img-fluid" alt="Figure 3: Quotient of 7-day incidences over time (50 pairs of districts)."/>
 <figcaption aria-hidden="true">Figure 3: Quotient of 7-day incidences over time (50 pairs of districts).</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ We see that the incidences in the districts differed only slightly, only in a fe
 We will examine the local positivity rates in the following. Here, we will first consider rapid antigen tests (RAT) and PCR tests together. Since these two groups, as described and explained at the beginning, have very different positivity rates, the total positivity rates also depend on the relative frequency of both types of test. The following figure shows the positivity rate over time, averaged over all districts and nationwide.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_lk_smooth_all-1.png" class="figure-img img-fluid" alt="Figure 4: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin)."/>
+<img src="./ppa_test_result_lk_smooth_all-1_en.png" class="figure-img img-fluid" alt="Figure 4: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin)."/>
 <figcaption aria-hidden="true">Figure 4: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin).</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ To give an impression of the local differences, the following figure shows the c
 
 
 <figure class="figure-img">
-<img src="./ppa_test_result_lk_smooth_sample-1.png" class="figure-img img-fluid" alt="Figure 5: Positivity rate after risk notification over time, smoothed and with confidence interval, for four randomly selected districts."/>
+<img src="./ppa_test_result_lk_smooth_sample-1_en.png" class="figure-img img-fluid" alt="Figure 5: Positivity rate after risk notification over time, smoothed and with confidence interval, for four randomly selected districts."/>
 <figcaption aria-hidden="true">Figure 5: Positivity rate after risk notification over time, smoothed and with confidence interval, for four randomly selected districts.</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Here, too, we clearly see the greater dependence of the positivity rate at lower
 The time course of the averaging of the positivity rates for rapid antigen tests (RAT) across all districts, broken down by risk notification, is included in the following figure.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_lk_smooth_rat-1.png" class="figure-img img-fluid" alt="Figure 6: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (RAT)."/>
+<img src="./ppa_test_result_lk_smooth_rat-1_en.png" class="figure-img img-fluid" alt="Figure 6: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (RAT)."/>
 <figcaption aria-hidden="true">Figure 6: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (RAT).</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ We also give the monthly ratios to give an idea of the underlying test volumes.
 
 
 <figure class="figure-img">
-<img src="./ppa_test_result_lk_boxplot_rat-1.png" class="figure-img img-fluid" alt="Figure 7: Monthly positivity rates after risk notification (RAT)."/>
+<img src="./ppa_test_result_lk_boxplot_rat-1_en.png" class="figure-img img-fluid" alt="Figure 7: Monthly positivity rates after risk notification (RAT)."/>
 <figcaption aria-hidden="true">Figure 7: Monthly positivity rates after risk notification (RAT).</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ We also give the monthly ratios to give an idea of the underlying test volumes.
 The time course of the averaging the positivity rates of PCR test results across all districts, broken down by risk notification, is included in the following figure.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_lk_smooth_pcr-1.png" class="figure-img img-fluid" alt="Figure 8: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (PCR)."/>
+<img src="./ppa_test_result_lk_smooth_pcr-1_en.png" class="figure-img img-fluid" alt="Figure 8: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (PCR)."/>
 <figcaption aria-hidden="true">Figure 8: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (PCR).</figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ To get an impression of the underlying test volumes, the monthly ratios are give
 
 
 <figure class="figure-img">
-<img src="./ppa_test_result_lk_boxplot_pcr-1.png" class="figure-img img-fluid" alt="Figure 9: Monthly positivity rate after risk notification (PCR)."/>
+<img src="./ppa_test_result_lk_boxplot_pcr-1_en.png" class="figure-img img-fluid" alt="Figure 9: Monthly positivity rate after risk notification (PCR)."/>
 <figcaption aria-hidden="true">Figure 9: Monthly positivity rate after risk notification (PCR).</figcaption>
 </figure>
 
@@ -165,7 +165,7 @@ To get an impression of the underlying test volumes, the monthly ratios are give
 In addition to the trend over time, we now want to take a closer look at the dependence of the positivity rates on the local 7-day incidence.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_pos_inz_all-1.png" class="figure-img img-fluid" alt="Figure 10: Positivity rate after risk notification as a function of local 7-day incidence smoothed and with confidence interval averaged over all districts."/>
+<img src="./ppa_test_result_pos_inz_all-1_en.png" class="figure-img img-fluid" alt="Figure 10: Positivity rate after risk notification as a function of local 7-day incidence smoothed and with confidence interval averaged over all districts."/>
 <figcaption aria-hidden="true">Figure 10: Positivity rate after risk notification as a function of local 7-day incidence smoothed and with confidence interval averaged over all districts.</figcaption>
 </figure>
 
@@ -176,21 +176,21 @@ In the figure, a potency scale was used for incidence. As a result, the longer o
 We first report the relationship between incidence and positivity rate after risk notification for 5,000 rapid antigen tests (RAT).
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_rat-1.png" class="figure-img img-fluid" alt="Figure 11: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (RAT)."/>
+<img src="./ppa_test_result_inzidenz_rat-1_en.png" class="figure-img img-fluid" alt="Figure 11: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (RAT)."/>
 <figcaption aria-hidden="true">Figure 11: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (RAT).</figcaption>
 </figure>
 
 The difference between the positivity rates depending on the type of risk notification is even more impressive here. It should be noted, however, that the positivity rates for rapid antigen tests are consistently smaller than for PCR tests. This is largely due to the [test strategy](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Testung).
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_rat_2-1.png" class="figure-img img-fluid" alt="Figure 12: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (RAT)."/>
+<img src="./ppa_test_result_inzidenz_rat_2-1_en.png" class="figure-img img-fluid" alt="Figure 12: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (RAT)."/>
 <figcaption aria-hidden="true">Figure 12: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (RAT).</figcaption>
 </figure>
 
 The positivity rate here is consistently greater after red warnings than in the case of lower risk with or without a risk exposure. The increase of the positivity rate with increasing incidence (and thus its dependence on incidence) is significantly greater in the case of low risk without a risk exposure than that following a red warning. Even in times of high incidence, a red warning is associated with a higher risk of infection than a low-risk warning.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_rat_3-1.png" class="figure-img img-fluid" alt="Figure 13: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (RAT)."/>
+<img src="./ppa_test_result_inzidenz_rat_3-1_en.png" class="figure-img img-fluid" alt="Figure 13: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (RAT)."/>
 <figcaption aria-hidden="true">Figure 13: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (RAT).</figcaption>
 </figure>
 
@@ -202,7 +202,7 @@ We now repeat the above analyses for 5,000 PCR test results. To do this, we firs
 
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_pcr-1.png" class="figure-img img-fluid" alt="Figure 14: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (PCR)."/>
+<img src="./ppa_test_result_inzidenz_pcr-1_en.png" class="figure-img img-fluid" alt="Figure 14: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (PCR)."/>
 <figcaption aria-hidden="true">Figure 14: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (PCR).</figcaption>
 </figure>
 
@@ -211,14 +211,14 @@ We can see that the dependence of the positivity rate on incidence after a low r
 We can also see this relationship in the following figure. Here the incidences are divided in increments of 500 (where we only indicate the low value of a range). In addition to the quartiles, the average value is also given.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_pcr_2-1.png" class="figure-img img-fluid" alt="Figure 15: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (PCR)."/>
+<img src="./ppa_test_result_inzidenz_pcr_2-1_en.png" class="figure-img img-fluid" alt="Figure 15: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (PCR)."/>
 <figcaption aria-hidden="true">Figure 15: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (PCR).</figcaption>
 </figure>
 
 We can also summarise this relationship in a continuous figure (Fig. 16A) and also give a linear approximation of this relationship (Fig.16B).
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_pcr_3-1.png" class="figure-img img-fluid" alt="Figure 16: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (PCR)."/>
+<img src="./ppa_test_result_inzidenz_pcr_3-1_en.png" class="figure-img img-fluid" alt="Figure 16: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (PCR)."/>
 <figcaption aria-hidden="true">Figure 16: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (PCR).</figcaption>
 </figure>
 
@@ -233,12 +233,12 @@ The positivity rate at lower risk without a risk exposure is greater with increa
 Finally, we show in the following two figures the incidence-dependent course of the positivity rates for rapid antigen tests and PCR tests depending on the urban or rural character of the districts.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_rat_3_prefix-1.png" class="figure-img img-fluid" alt="Figure 17: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (RAT)."/>
+<img src="./ppa_test_result_inzidenz_rat_3_prefix-1_en.png" class="figure-img img-fluid" alt="Figure 17: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (RAT)."/>
 <figcaption aria-hidden="true">Figure 17: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (RAT).</figcaption>
 </figure>
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_pcr_3_prefix-1.png" class="figure-img img-fluid" alt="Figure 18: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (PCR)."/>
+<img src="./ppa_test_result_inzidenz_pcr_3_prefix-1_en.png" class="figure-img img-fluid" alt="Figure 18: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (PCR)."/>
 <figcaption aria-hidden="true">Figure 18: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (PCR).</figcaption>
 </figure>
 
