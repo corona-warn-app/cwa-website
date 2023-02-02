@@ -190,9 +190,8 @@ The difference between the positivity rates depending on the type of risk notifi
 The positivity rate here is consistently greater after red warnings than in the case of lower risk with or without a risk exposure. The increase of the positivity rate with increasing incidence (and thus its dependence on incidence) is significantly greater in the case of low risk without a risk exposure than that following a red warning. Even in times of high incidence, a red warning is associated with a higher risk of infection than a low-risk warning.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_rat_3-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (RAT)."/>
-<figcaption aria-hidden="true">Abb. 13: Zusammenhang zwischen lokaler 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in (A) nichtlinearer und (B) linearer Näherung (RAT).
-</figcaption>
+<img src="./ppa_test_result_inzidenz_rat_3-1.png" class="figure-img img-fluid" alt="Figure 13: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (RAT)."/>
+<figcaption aria-hidden="true">Figure 13: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in (A) nonlinear and (B) linear approximation (RAT).</figcaption>
 </figure>
 
 For rapid test results, the almost linear dependence of the positivity rate on the incidence can also be seen well in the non-linear approximation (left). Here, the dependence for red warnings is only about half as high. The positivity rate (and thus the estimated risk of being infected) is about twice as high after a red warning as after a green warning (low risk with risk exposure), regardless of incidence.
@@ -208,6 +207,7 @@ We now repeat the above analyses for 5,000 PCR test results. To do this, we firs
 </figure>
 
 We can see that the dependence of the positivity rate on incidence after a low risk warning without risk exposure is stronger than after red warnings. The positivity rate after red warnings is always greater than after green warnings (low risk with risk exposure).
+
 We can also see this relationship in the following figure. Here the incidences are divided in increments of 500 (where we only indicate the low value of a range). In addition to the quartiles, the average value is also given.
 
 <figure class="figure-img">
@@ -258,4 +258,4 @@ These are also further proof that the CWA works reliably and fulfils its purpose
 
 ## 8 Continued further
 
-In the next posts, we will analyse more data from the  [data donation of the Corona‑Warn‑App](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics). In particular, we will highlight the process of [key sharing](../2021-10-15-science-blog-4/#327-exposure-windows-und-scan-instances) BLE measurement via the ENF (Exposure Windows and Scan Instances). In addition, contributions on event check-ins and ENF calibration are in preparation.
+In the next posts, we will analyse more data from the  [data donation of the Corona‑Warn‑App](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics). In particular, we will highlight the process of [key sharing](../2021-10-15-science-blog-4/#326-key-submission) BLE measurement via the ENF ([Exposure Windows and Scan Instances](../2021-10-15-science-blog-4/#327-exposure-windows-and-scan-instances)). In addition, contributions on event check-ins and ENF calibration are in preparation.
