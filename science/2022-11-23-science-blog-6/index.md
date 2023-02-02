@@ -1,10 +1,11 @@
 ---
-page-title: "SB06: Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
-page-description: "SB06: Was sagt eine rote Warnung bei hohen Inzidenzen noch aus?"
+page-title: "SB06: What does a red warning mean when incidence is high?"
+page-description: "SB06: What does a red warning mean when incidence is high?"
 page-name: science-blog-6
 page-name_de: science-blog-6
 author: CWA-Team
-date: "2022-11-30"
+date: "2023-02-06"
+update: "last updated November 30, 2022 (German version)"
 layout: science
 ---
 
@@ -14,20 +15,20 @@ In recent months, there has been criticism that in times of high incidence, a re
 
 <!-- overview -->
 
-1. [The most important findings in a nutshell: numbers, data and facts](#1-The most important findings in a nutshell: numbers, data and facts)
-2. [Positivity rates (nationwide)](#2-Positivity rates (nationwide))
-    1. [RAT](#21-RAT)
+1. [The most important findings in a nutshell: numbers, data and facts](#1-the-most-important-findings-in-a-nutshell-numbers-data-and-facts)
+2. [Positivity rates (nationwide)](#2-positivity-rates-nationwide)
+    1. [RAT](#21-rat)
     2. [PCR](#22-pcr)
-3. [Local differences in incidence](#3-Local differences in incidence)
-4. [Positivenanteile (lokal)](#4-positivenanteile-lokal)
+3. [Local differences in incidence](#3-local-differences-in-incidence)
+4. [Positivity rates (local))](#4-positivity-rates-local)
     1. [RAT](#41-rat)
     2. [PCR](#42-pcr)
-5. [Positivity rate and incidence](#5-Positivity rate and incidence)
-    1. [Antigen-Schnelltest (RAT)](#51-antigen-schnelltest-rat)
-    2. [PCR-Test](#52-pcr-test)
-6. [Unterschiede zwischen urbanen und ländlichen Kreisen](#6-unterschiede-zwischen-urbanen-und-ländlichen-kreisen)
-7. [Fazit](#7-fazit)
-8. [So geht es weiter](#8-so-geht-es-weiter)
+5. [Positivity rate and incidence](#5-positivity-rate-and-incidence)
+    1. [RAT](#51-rat)
+    2. [PCR](#52-pcr)
+6. [Differences between urban and rural districts](#6-differences-between-urban-and-rural-districts)
+7. [Conclusion](#7-conclusion)
+8. [Continued further](#8-continued-further)
 
 ## 1 The most important findings in a nutshell: numbers, data and facts
 
@@ -227,36 +228,34 @@ For a red warning, the dependency is only about half as strong as in the case of
 
 The positivity rate at lower risk without a risk exposure is greater with increasing incidence than the positivity rate at increased risk. This is due on the one hand to the fact that the dependence on incidence is twice as high here, and on the other hand to the fact that there is presumably a strong pre-selection here through rapid antigen tests (performed officially or at home). Only if this was positive was it carried out. Further studies are needed to understand these relationships more thoroughly. For example, an event-related user survey could be used to ascertain the extent of preselection. An agent-based simulation that models different individual behaviours could also provide possible explanations.
 
-## 6 Unterschiede zwischen urbanen und ländlichen Kreisen
+## 6 Differences between urban and rural districts
 
-Zum Abschluss zeigen wir in den folgenden zwei Abbildungen noch die inzidenzabhängigen Verläufe der Positivenanteile für Antigen-Schnelltests und PCR-Tests in Abhängigkeit vom urbanen oder ländlichen Charakter des Kreises.
+Finally, we show in the following two figures the incidence-dependent course of the positivity rates for rapid antigen tests and PCR tests depending on the urban or rural character of the districts.
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_rat_3_prefix-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (RAT)."/>
-<figcaption aria-hidden="true">Abb. 17: Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (RAT).
-</figcaption>
+<img src="./ppa_test_result_inzidenz_rat_3_prefix-1.png" class="figure-img img-fluid" alt="Figure 17: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (RAT)."/>
+<figcaption aria-hidden="true">Figure 17: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (RAT).</figcaption>
 </figure>
 
 <figure class="figure-img">
-<img src="./ppa_test_result_inzidenz_pcr_3_prefix-1.png" class="figure-img img-fluid" alt="Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (PCR)."/>
-<figcaption aria-hidden="true">Abb. 18: Zusammenhang zwischen 7-Tage-Inzidenz und Positivenanteil nach Risikobenachrichtigung, geglättet und mit Konfidenzintervall, in ländlichen und urbanen Kreisen (PCR).
-</figcaption>
+<img src="./ppa_test_result_inzidenz_pcr_3_prefix-1.png" class="figure-img img-fluid" alt="Figure 18: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (PCR)."/>
+<figcaption aria-hidden="true">Figure 18: Relationship between local 7-day incidence and positivity rate after risk notification, smoothed and with confidence interval, in rural and urban districts (PCR).</figcaption>
 </figure>
 
-Für beide Testarten ist der Unterschied zwischen roten und grünen Warnungen (niedriges Risiko mit Risikobegegnung) und damit die Aussagekraft des eingeschätzten Risikos für ländliche Kreise größer als für urbane.
+For both types of tests, the difference between red and green warnings (lower risk with risk exposure) and thus the significance of the assessed risk is greater for rural districts than for urban ones.
 
-## 7 Fazit
+## 7 Conclusion
 
-Der Positivenanteil von Tests nach einer roten Warnung ist für PCR-Tests in Zeiten niedriger Inzidenz und für Antigen-Schnelltests immer größer als die Positivenanteile nach einer grünen Warnung bzw. bei niedrigem Risiko ohne Risikobegegnung. Dieser größere Positivenanteil hängt nicht nur von lokalen Unterschieden in der Inzidenz ab. Die Unterschiede zwischen den Positivanteilen sind in ländlichen Gebieten deutlicher als in urbanen.
+The positivity rate of tests after a red warning is always greater for PCR tests in times of low incidence and for rapid antigen tests than the positivity rates after a green warning or at lower risk without a risk exposure. This greater positivity rate does not only depend on local differences in incidence. The differences between the positivity rates are more clearer in rural areas than in urban ones.
 
-Eine rote Warnung in der Corona-Warn-App drückt damit ein nicht nur vom allgemeinen Infektionsgeschehen abhängiges erhöhtes Infektionsrisiko aus, auch in Zeiten hoher Inzidenz.
+A red warning in the Corona‑Warn‑App therefore expresses an increased risk of infection that is not only dependent on the general incidence of infection, even in times of high incidence.
 
-Eine stärkere Nutzung der CWA würde die Aussagekraft noch unabhängiger von der Inzidenz und damit noch zuverlässiger machen, da dann mehr Risikobegegnungen bewertet und rechtzeitig erkannt werden würden.
+Greater utilisation of the CWA would make the informative value even more independent of incidence and thus even more reliable, as more risk exposures would then be assessed and detected in time.
 
-Die Daten der [CWA-Datenspende](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics) sind ein wertvolles und unersetzliches Hilfsmittel in der Beantwortung von epidemiologischen Fragen. Ähnliche Analysen für die traditionelle Kontaktpersonennachverfolgung wären wünschenswert.
+The data from the [CWA data donation](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics) is a valuable and irreplaceable tool in answering epidemiological questions. Similar analyses for traditional contact person tracing would be desirable.
 
-Dies sind zudem weitere Belege dafür, dass die CWA zuverlässig funktioniert und ihren Zweck erfüllt. Die CWA liefert auch im jetzigen Stadium der Pandemie – bei hohem Anteil an Geimpften, Kreuzimmunität und unterschiedlichen Verhaltensmustern – jedem Nutzenden hilfreiche Informationen und ist ein wichtiges Instrument bei der Einschätzung des persönlichen Risikos.
+These are also further proof that the CWA works reliably and fulfils its purpose. Even at this stage of the pandemic – with a high proportion of vaccinated people, cross-immunity and different behavioural patterns – the CWA provides helpful information and is an important tool in assessing personal risk.
 
-## 8 So geht es weiter
+## 8 Continued further
 
-In den nächsten Beiträgen werden wir weitere Daten der [Datenspende der Corona-Warn-App](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics) analysieren. Wir werden insbesondere den Prozess der [Schlüsselteilung](../2021-10-15-science-blog-4/#326-schl%C3%BCsselteilung) und die BLE-Messung über das ENF ([Exposure-Windows und Scan-Instances](../2021-10-15-science-blog-4/#327-exposure-windows-und-scan-instances)) beleuchten. Zudem sind Beiträge zu den Event-Checkins und zur ENF-Kalibrierung in Vorbereitung.
+In the next posts, we will analyse more data from the  [data donation of the Corona‑Warn‑App](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics). In particular, we will highlight the process of [key sharing](../2021-10-15-science-blog-4/#327-exposure-windows-und-scan-instances) BLE measurement via the ENF (Exposure Windows and Scan Instances). In addition, contributions on event check-ins and ENF calibration are in preparation.
