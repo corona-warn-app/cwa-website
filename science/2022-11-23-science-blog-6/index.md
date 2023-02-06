@@ -20,7 +20,7 @@ In recent months, there has been criticism that in times of high incidence, a re
     1. [RAT](#21-rat)
     2. [PCR](#22-pcr)
 3. [Local differences in incidence](#3-local-differences-in-incidence)
-4. [Positivity rates (local))](#4-positivity-rates-local)
+4. [Positivity rates (local)](#4-positivity-rates-local)
     1. [RAT](#41-rat)
     2. [PCR](#42-pcr)
 5. [Positivity rate and incidence](#5-positivity-rate-and-incidence)
@@ -47,7 +47,7 @@ In recent months, there has been criticism that in times of high incidence, a re
 
 ## 2 Positivity rates (nationwide)
 
-So far, approx. 36.8 million test results have been transmitted via the CWA data donation (as of: 24. October 2022). Only test results that were positive or negative were taken into account (no pending and invalid ones). Risk exposures identified by the CWA were only taken into account if they were up to 10 days prior to test registration (this was the case for approximately 10.5 million test results). An indication of the districts (administrative district or urban district of the CWA user's place of residence) was available for approx. 14.1 million test results.
+So far, approx. 36.8 million test results have been transmitted via the CWA data donation (as of: October 24, 2022). Only test results that were positive or negative were taken into account (no pending and invalid ones). Risk exposures identified by the CWA were only taken into account if they were up to 10 days prior to test registration (this was the case for approximately 10.5 million test results). An indication of the districts (administrative district or urban district of the CWA user's place of residence) was available for approx. 14.1 million test results.
 
 ### 2.1 RAT
 
@@ -75,9 +75,9 @@ What is striking here is the significantly greater positivity rate for increased
 
 The positivity rate also varies here depending on the infection event and warning. After a red warning, the positivity rate is between 0 and 0.88, for a lower risk with risk exposure between 0 and 0.8 and for a low risk without risk exposure between 0 and 0.78.
 
-The [RKI‑test figures](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) are given for comparison. The somewhat greater proportion of persons tested positive in the CWA data donation is due to the different underlying survey population. For example, people under the age of 16 are not formally allowed to use the Corona‑Warn‑App and are therefore under-represented in its user base. On the other hand, the RKI figures also increasingly include routine and pooling test results, which are probably rarely, if ever registered via the Corona‑Warn‑App and, in accordance with their purpose, are more often negative.
+The [RKI‑test figures (German)](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) are given for comparison. The somewhat greater proportion of persons tested positive in the CWA data donation is due to the different underlying survey population. For example, people under the age of 16 are not formally allowed to use the Corona‑Warn‑App and are therefore under-represented in its user base. On the other hand, the RKI figures also increasingly include routine and pooling test results, which are probably rarely, if ever registered via the Corona‑Warn‑App and, in accordance with their purpose, are more often negative.
 
-A comparison with the positivity rate from the [event-related user survey (EDUS)](../2021-08-02-science-blog-3) from the early year 2021 also shows a parallel trend (at a lower level) to the positive share of red warned persons. The difference can be explained as follows: Healthy people and those with milder courses of illness took part in the survey. Those who were very ill probably had other concerns than participating in this survey. For example, on 22/04/2021, about 19% (287/(287+1218)) of CWA data donors had a positive PCR test result at increased risk. For EDUS, it was only about 15% (20/(20+110)). With 6 additional positives, it would also have been 19% here. This suggests that about a quarter of those red warned and positive tested persons had a non-mild course. One could also hypothesise that EDUS participants are more conscientious – after all, they participated in the voluntary survey – and therefore implement more measures to avoid infection.
+A comparison with the positivity rate from the [event-related user survey (EDUS)](../2021-08-02-science-blog-3) from the early year 2021 also shows a parallel trend (at a lower level) to the positive share of red warned persons. The difference can be explained as follows: Healthy people and those with milder courses of illness took part in the survey. Those who were very ill probably had other concerns than participating in this survey. For example, on April 22, 2021, about 19% (287/(287+1218)) of CWA data donors had a positive PCR test result at increased risk. For EDUS, it was only about 15% (20/(20+110)). With 6 additional positives, it would also have been 19% here. This suggests that about a quarter of those red warned and positive tested persons had a non-mild course. One could also hypothesise that EDUS participants are more conscientious – after all, they participated in the voluntary survey – and therefore implement more measures to avoid infection.
 
 ## 3 Local differences in incidence
 
@@ -180,7 +180,7 @@ We first report the relationship between incidence and positivity rate after ris
 <figcaption aria-hidden="true">Figure 11: Relationship between local 7-day incidence and positivity rate after risk notification for 5,000 test results (RAT).</figcaption>
 </figure>
 
-The difference between the positivity rates depending on the type of risk notification is even more impressive here. It should be noted, however, that the positivity rates for rapid antigen tests are consistently smaller than for PCR tests. This is largely due to the [test strategy](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Testung).
+The difference between the positivity rates depending on the type of risk notification is even more impressive here. It should be noted, however, that the positivity rates for rapid antigen tests are consistently smaller than for PCR tests. This is largely due to the [test strategy (German)](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland/Testung).
 
 <figure class="figure-img">
 <img src="./ppa_test_result_inzidenz_rat_2-1_en.png" class="figure-img img-fluid" alt="Figure 12: Relationship between local 7-day incidence and positivity rate after risk notification and incidence areas (RAT)."/>
