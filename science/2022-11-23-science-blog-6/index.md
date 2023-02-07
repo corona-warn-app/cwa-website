@@ -28,7 +28,7 @@ In recent months, there has been criticism that in times of high incidence, a re
     2. [PCR](#52-pcr)
 6. [Differences between urban and rural districts](#6-differences-between-urban-and-rural-districts)
 7. [Conclusion](#7-conclusion)
-8. [Continued further](#8-continued-further)
+8. [What to expect in the future?](#8-what-to-expect-in-the-future)
 
 ## 1 The most important findings in a nutshell: numbers, data and facts
 
@@ -47,7 +47,7 @@ In recent months, there has been criticism that in times of high incidence, a re
 
 ## 2 Positivity rates (nationwide)
 
-So far, approx. 36.8 million test results have been transmitted via the CWA data donation (as of: October 24, 2022). Only test results that were positive or negative were taken into account (no pending and invalid ones). Risk exposures identified by the CWA were only taken into account if they were up to 10 days prior to test registration (this was the case for approximately 10.5 million test results). An indication of the districts (administrative district or urban district of the CWA user's place of residence) was available for approx. 14.1 million test results.
+So far, approx. 36.8 million test results have been transmitted via the CWA data donation (as of: October 24, 2022). Only test results that were positive or negative were taken into account (no pending or invalid ones). Risk exposures identified by the CWA were only taken into account if they were up to 10 days prior to test registration (this was the case for approximately 10.5 million test results). An indication of the districts (administrative district or urban district of the CWA user's place of residence) was available for approx. 14.1 million test results.
 
 ### 2.1 RAT
 
@@ -75,7 +75,7 @@ What is striking here is the significantly greater positivity rate for increased
 
 The positivity rate also varies here depending on the infection event and warning. After a red warning, the positivity rate is between 0 and 0.88, for a lower risk with risk exposure between 0 and 0.8 and for a low risk without risk exposure between 0 and 0.78.
 
-The [RKI‑test figures (German)](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) are given for comparison. The somewhat greater proportion of persons tested positive in the CWA data donation is due to the different underlying survey population. For example, people under the age of 16 are not formally allowed to use the Corona‑Warn‑App and are therefore under-represented in its user base. On the other hand, the RKI figures also increasingly include routine and pooling test results, which are probably rarely, if ever registered via the Corona‑Warn‑App and, in accordance with their purpose, are more often negative.
+The [RKI‑test figures (German)](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Testzahlen-gesamt.html) are given for comparison. The somewhat greater proportion of persons tested positive in the CWA data donation is due to the different underlying survey population. For example, people under the age of 16 are not formally allowed to use the Corona‑Warn‑App and are therefore under-represented in its user base. On the other hand, the RKI figures also increasingly include routine and pooling test results, which are probably rarely, if ever, registered via the Corona‑Warn‑App and, in accordance with their purpose, are more often negative.
 
 A comparison with the positivity rate from the [event-related user survey (EDUS)](../2021-08-02-science-blog-3) from the early year 2021 also shows a parallel trend (at a lower level) to the positive share of red warned persons. The difference can be explained as follows: Healthy people and those with milder courses of illness took part in the survey. Those who were very ill probably had other concerns than participating in this survey. For example, on April 22, 2021, about 19% (287/(287+1218)) of CWA data donors had a positive PCR test result at increased risk. For EDUS, it was only about 15% (20/(20+110)). With 6 additional positives, it would also have been 19% here. This suggests that about a quarter of those red warned and positive tested persons had a non-mild course. One could also hypothesise that EDUS participants are more conscientious – after all, they participated in the voluntary survey – and therefore implement more measures to avoid infection.
 
@@ -88,7 +88,7 @@ The following consideration should illustrate this effect:
 Suppose we have two regions with very different incidence (and accordingly different prevalence). 
 Both regions have 1,000 inhabitants, but in region A 200 inhabitants are positive at a given time, in region B only 20. In both regions, all inhabitants use the CWA. Due to the high prevalence in region A, 500 CWA users were shown a red tile (and the other 500 a green tile), while in region B only 50 CWA users were shown a red tile (and the other 950 a green tile).
 
-It is further assumed that all CWA users, regardless of their tile colour (risk notification, i.e. risk displayed in the CWA), get tested and that the tile colour is completely insignificant for the risk of infection. (We could assume, for example, that the tile colours are not assigned at all on the basis of [BLE](https://de.wikipedia.org/wiki/Bluetooth_Low_Energy) measured exposures to those who later tested positive, but rather simply randomly assigned depending on the known incidence of a region. (For this, of course, one would have to know in which region the CWA users live.)) Of the 500 CWA users in region A with a red tile, 100 (20%) test positive, and of the 500 with a green tile, 100 also test positive. In region B, 2% of the 50 with a red tile (namely 1 person) and of the 950 with a green tile (namely 19 people) test positive. We said, the same positive rate of 20% and 2% is always assumed for red and green respectively.
+It is further assumed that all CWA users, regardless of their tile colour (risk notification, i.e. risk displayed in the CWA), get tested and that the tile colour is completely insignificant for the risk of infection. (We could assume, for example, that the tile colours are not assigned at all on the basis of [BLE](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) measured exposures to those who later tested positive, but rather simply randomly assigned depending on the known incidence of a region. (For this, of course, one would have to know in which region the CWA users live.)) Of the 500 CWA users in region A with a red tile, 100 (20%) test positive, and of the 500 with a green tile, 100 also test positive. In region B, 2% of the 50 with a red tile (namely 1 person) and of the 950 with a green tile (namely 19 people) test positive. As we already stated, the same positive rate of 20% and 2% is always assumed for red and green respectively.
 
 However, if we now evaluate the CWA users from both regions together (e.g. because in reality we do not know in which region they live), we have 101 positives among the 550 with a red tile and 119 among the 1,450 with a green tile. The resulting positivity rates are 18.4% (101/550) and 8.2% (119/1,450). This means that the red curve is clearly above the green one. 
 
@@ -124,14 +124,14 @@ Here, too, we clearly see the greater dependence of the positivity rate at lower
 
 ### 4.1 RAT
 
-The time course of the averaging of the positivity rates for rapid antigen tests (RAT) across all districts, broken down by risk notification, is included in the following figure.
+The time course of averages of the positivity rates for rapid antigen tests (RAT) across all districts, broken down by risk notification, is included in the following figure.
 
 <figure class="figure-img">
 <img src="./ppa_test_result_lk_smooth_rat-1_en.png" class="figure-img img-fluid" alt="Figure 6: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (RAT)."/>
 <figcaption aria-hidden="true">Figure 6: Positivity rate after risk notification over time, smoothed and with confidence interval, averaged over all districts (thick) or nationwide (thin) (RAT).</figcaption>
 </figure>
 
-This gives a similar picture as in the nationwide trend. A red warning in the CWA is clearly more likely to be followed by a time-related positive test result than for green warnings (low risk with risk exposure). In periods of high incidence, the positivity rates are also almost same and are not exceeded by the positivity rate at lower risk without a risk exposure. With the removal of the obligation to test, testing in recent months appears to be performed only in cases of reasonable suspicion, resulting in greater positivity rates even with relatively low (than in previous periods) incidences.
+This gives a similar picture as in the nationwide trend. A red warning in the CWA is clearly more likely to be followed by a time-related positive test result than for green warnings (low risk with risk exposure). In periods of high incidence, the positivity rates are also almost same and are not exceeded by the positivity rate at lower risk without a risk exposure. With the removal of the obligation to test, testing in recent months appears to be performed only in cases of reasonable suspicion, resulting in greater positivity rates even with relatively lower (than in previous periods) incidences.
 
 We also give the monthly ratios to give an idea of the underlying test volumes.
 
@@ -226,7 +226,7 @@ The non-linear curves (left) flatten with increasing incidence. Presumably becau
 
 For a red warning, the dependency is only about half as strong as in the case of a lower risk without risk exposure. The reason for this is probably that about half of the population actively uses the CWA, and the risk of contracting the disease (undetected by the CWA) from a person who does not use the CWA increases with increasing incidence. It can be assumed that with more numerous use of the CWA, this dependence of the positivity rate on incidence would be further reduced. As mentioned above, if the rate of utilisation were even higher, the uncertainty in the assessment of risk exposures would be reduced even more.
 
-The positivity rate at lower risk without a risk exposure is greater with increasing incidence than the positivity rate at increased risk. This is due on the one hand to the fact that the dependence on incidence is twice as high here, and on the other hand to the fact that there is presumably a strong pre-selection here through rapid antigen tests (performed officially or at home). Only if this was positive was it carried out. Further studies are needed to understand these relationships more thoroughly. For example, an event-related user survey could be used to ascertain the extent of preselection. An agent-based simulation that models different individual behaviours could also provide possible explanations.
+The positivity rate at lower risk without a risk exposure is greater with increasing incidence than the positivity rate at increased risk. This is due on the one hand to the fact that the dependence on incidence is twice as high here, and on the other hand to the fact that there is presumably a strong pre-selection here through rapid antigen tests (performed officially or at home). Only if this was positive was a PCR test carried out. Further studies are needed to understand these relationships more thoroughly. For example, an event-related user survey could be used to ascertain the extent of preselection. An agent-based simulation that models different individual behaviours could also provide possible explanations.
 
 ## 6 Differences between urban and rural districts
 
@@ -256,6 +256,6 @@ The data from the [CWA data donation](../2021-10-15-science-blog-4/#3-privacy-pr
 
 These are also further proof that the CWA works reliably and fulfils its purpose. Even at this stage of the pandemic – with a high proportion of vaccinated people, cross-immunity and different behavioural patterns – the CWA provides helpful information and is an important tool in assessing personal risk.
 
-## 8 Continued further
+## 8 What to expect in the future?
 
 In the next posts, we will analyse more data from the  [data donation of the Corona‑Warn‑App](../2021-10-15-science-blog-4/#3-privacy-preserving-analytics). In particular, we will highlight the process of [key sharing](../2021-10-15-science-blog-4/#326-key-submission) BLE measurement via the ENF ([Exposure Windows and Scan Instances](../2021-10-15-science-blog-4/#327-exposure-windows-and-scan-instances)). In addition, contributions on event check-ins and ENF calibration are in preparation.
