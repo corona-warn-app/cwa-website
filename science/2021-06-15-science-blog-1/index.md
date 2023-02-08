@@ -5,7 +5,7 @@ page-name: science-blog-1
 page-name_de: science-blog-1
 author: CWA Team
 date: "2021-06-26"
-update: "last updated June 15, 2021 (German version)"
+update: "from German version (last updated June 15, 2021)"
 layout: science
 ---
 
