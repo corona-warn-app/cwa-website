@@ -5,12 +5,15 @@
     },
     "section-main": {
         "headline": {
-            "title": "Take a Look (Version 3.1)"
+            "title": "Take a Look (Version 3.0)"
         },
         "content": {
             "textblock": [
-                "Browse through the screenshots to get an overview of the features offered by the Corona-Warn-App with the release of Version 3.1 (available since ???? ??, 2023). Please note that the screenshots may vary slightly between Android and iOS due to technical reasons.",
-                "With this update we are fixing bugs in the app. It does not contain any new features.",
+                "Browse through the screenshots to get an overview of the features offered by the Corona-Warn-App with the release of Version 3.0 (available since January 18, 2023). Please note that the screenshots may vary slightly between Android and iOS due to technical reasons.",
+                "With this update we provide new and enhanced features:",
+                "<b>Warning with Self-Tests:</b> You can now send a warning to other users of the Corona-Warn-App if a self-test indicates that you have a coronavirus infection.",
+                "<b>Warning with unregistered tests:</b> If a rapid test or PCR test from a testing point indicates you have a coronavirus infection, but this test is not registered in the Corona-Warn-App, you can now still warn other app users.",
+                "<b>TAN Hotline Discontinuation:</b> The possibility of obtaining a TAN via the TAN hotline is no longer available after January 31, 2023. Therefore, you no longer need a TAN to warn other users of the Corona-Warn-App.",
                 "The images provided on this page are available for free use."
             ]
         },
@@ -125,19 +128,17 @@
                 "anchor": "android_registertest",
                 "description": "In this section you will find screenshots of test registration and key sharing. If you press \"Continue\" on the \"Status\" page at \"Manage Your Tests and Warn Others\" you will get to the test administration. Here you have the possibility to register your PCR test or a PCR test of a family member. Once you have done this, you still need to give your consent. Then your test result can have three different statuses. These are \"Your result is not yet available\" \"SARS-CoV-2 negative,\" and \"SARS-CoV-2 positive.\" With the latter, you still have the option to record the onset and type of symptoms.",
                 "images": [
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionDispatcherFragment", "alt": "Test registration & Key sharing image 1 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/register-test", "alt": "Test registration & Key sharing image 2 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionConsentFragment", "alt": "Test registration & Key sharing image 3 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/FamilyTestConsentFragment_with_data", "alt": "Test registration & Key sharing image 4 of 13"},
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultAvailableFragment__consent", "alt": "Test registration & Key sharing image 5 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultPendingFragment", "alt": "Test registration & Key sharing image 6 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultNegativeFragment", "alt": "Test registration & Key sharing image 7 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultConsentGivenFragment", "alt": "Test registration & Key sharing image 8 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionSymptomIntroductionFragment", "alt": "Test registration & Key sharing image 9 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionSymptomCalendarFragment", "alt": "Test registration & Key sharing image 10 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionDoneFragment", "alt": "Test registration & Key sharing image 11 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/android/HomeFragment_submission_done", "alt": "Test registration & Key sharing image 12 of 13"},
-                    { "filename": "/assets/screenshots/3-0/en/android/FamilyTestListFragment_1", "alt": "Test registration & Key sharing image 13 of 13"}
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionDispatcherFragment", "alt": "Test registration & Key sharing image 1 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionConsentFragment", "alt": "Test registration & Key sharing image 2 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/FamilyTestConsentFragment_with_data", "alt": "Test registration & Key sharing image 3 of 11"},
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultAvailableFragment__consent", "alt": "Test registration & Key sharing image 4 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultPendingFragment", "alt": "Test registration & Key sharing image 5 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultNegativeFragment", "alt": "Test registration & Key sharing image 6 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionTestResultConsentGivenFragment", "alt": "Test registration & Key sharing image 7 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionSymptomIntroductionFragment", "alt": "Test registration & Key sharing image 8 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/SubmissionSymptomCalendarFragment", "alt": "Test registration & Key sharing image 9 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/HomeFragment_submission_done", "alt": "Test registration & Key sharing image 10 of 11" },
+                    { "filename": "/assets/screenshots/3-0/en/android/FamilyTestListFragment_1", "alt": "Test registration & Key sharing image 11 of 11"}
                 ]
             },
             {
@@ -418,19 +419,19 @@
                 "description": "In this section you will find screenshots of the statistics. If you scroll down on the \"Status\" page, you will see \"Add local 7-day incidence\". Now swipe to the right to read the current numbers. Available numbers and statistics: the Pandemic Radar published by the RKI with additional data, the 7-day incidence, COVID-19 Patients in Intensive Care Units, confirmed new infections, warnings by app users, 7-day R-value, people who have received at least one vaccine dose, people who have basic immunization, people who have received a booster vaccination and the vaccine doses administered.",
                 "images": [
                     { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_add_local_statistics", "alt": "Statistics image 1 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_pandemic_radar", "alt": "Statistics image 2 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_local_7day_values", "alt": "Statistics image 3 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_7day_combined_incidences", "alt": "Statistics image 4 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_intensive_care", "alt": "Statistics image 5 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_confirmed_new_infections", "alt": "Statistics image 6 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_key_submissions", "alt": "Statistics image 7 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_7Day_rvalue", "alt": "Statistics image 8 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_at_least_one_vaccination", "alt": "Statistics image 9 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_fully_vaccinated", "alt": "Statistics image 10 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_booster_vaccination", "alt": "Statistics image 11 of 14"},
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_doses", "alt": "Statistics image 12 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_info_screen_0001", "alt": "Statistics image 13 of 14" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_info_screen_0002", "alt": "Statistics image 14 of 14" }
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_pandemic_radar", "alt": "Statistics image 14 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_local_7day_values", "alt": "Statistics image 2 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_7day_combined_incidences", "alt": "Statistics image 3 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_intensive_care", "alt": "Statistics image 4 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_confirmed_new_infections", "alt": "Statistics image 5 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_key_submissions", "alt": "Statistics image 6 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_7Day_rvalue", "alt": "Statistics image 7 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_at_least_one_vaccination", "alt": "Statistics image 8 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_fully_vaccinated", "alt": "Statistics image 9 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_booster_vaccination", "alt": "Statistics image 10 of 14"},
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_doses", "alt": "Statistics image 11 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_info_screen_0001", "alt": "Statistics image 12 of 14" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-statistics_info_screen_0002", "alt": "Statistics image 13 of 14" }
                 ]
             },
             {
@@ -438,19 +439,16 @@
                 "anchor": "ios_registertest",
                 "description": "In this section you will find screenshots of test registration and key sharing. If you press \"Continue\" on the \"Status\" page at \"Manage Your Tests and Warn Others\" you will get to the test administration. Here you have the possibility to register your PCR test or the PCR test of a family member. Once you have done this, you still need to give your consent. Then your test result can have three different statuses. These are \"Your result is not yet available\" \"SARS-CoV-2 negative,\" and \"SARS-CoV-2 positive.\" With the latter, you still have the option to record the onset and type of symptoms.",
                 "images": [
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-tan_submissionflow_qr_0001", "alt": "Test registration & Key sharing image 1 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_family_member_tests_selection", "alt": "Test registration & Key sharing image 2 of 13"},
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-tan_submissionflow_qr_0002", "alt": "Test registration & Key sharing image 3 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_family_member_tests_consent_1", "alt": "Test registration & Key sharing image 4 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_test_result_available", "alt": "Test registration & Key sharing image 5 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_test_result_pending", "alt": "Test registration & Key sharing image 6 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_test_certificate_button_test_result_negative", "alt": "Test registration & Key sharing image 7 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_test_result_positive_constent_given", "alt": "Test registration & Key sharing image 8 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-tan_submissionflow_symptoms_selection0001", "alt": "Test registration & Key sharing image 9 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_symptoms_onset_date_option", "alt": "Test registration & Key sharing image 10 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/pcr-warn-thank-you", "alt": "Test registration & Key sharing image 11 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-homescreenrisk_show_positive_test_result_0001", "alt": "Test registration & Key sharing image 12 of 13" },
-                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_family_member_tests_family_list_1", "alt": "Test registration & Key sharing image 13 of 13" }
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-tan_submissionflow_qr_0001", "alt": "Test registration & Key sharing image 1 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_family_member_tests_selection", "alt": "Test registration & Key sharing image 2 of 10"},
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-tan_submissionflow_qr_0002", "alt": "Test registration & Key sharing image 3 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_family_member_tests_consent_1", "alt": "Test registration & Key sharing image 4 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_test_result_available", "alt": "Test registration & Key sharing image 5 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_test_result_pending", "alt": "Test registration & Key sharing image 6 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-screenshot_test_certificate_button_test_result_negative", "alt": "Test registration & Key sharing image 7 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_test_result_positive_constent_given", "alt": "Test registration & Key sharing image 8 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-tan_submissionflow_symptoms_selection0001", "alt": "Test registration & Key sharing image 9 of 10" },
+                    { "filename": "/assets/screenshots/3-0/en/ios/iPhone 13-submissionflow_screenshot_symptoms_onset_date_option", "alt": "Test registration & Key sharing image 10 of 10" }
                 ]
             },
             {
