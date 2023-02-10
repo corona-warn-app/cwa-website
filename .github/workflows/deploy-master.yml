@@ -48,6 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
+          name: github-pages
           path: public
 
   deploy:
