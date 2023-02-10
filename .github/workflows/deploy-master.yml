@@ -15,7 +15,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    if: "github.repository == 'testtesttest213/cwa-website'"
+    if: "github.repository == 'testtesttest213/testtesttest213.github.io'"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -48,7 +48,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          name: github-pages
           path: public
 
   deploy:
