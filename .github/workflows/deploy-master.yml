@@ -6,9 +6,9 @@ name: Deploy Website
 on:
   push:
     branches: ["master"]
-  schedule:
-    - cron: '0 11 * * *'
-    - cron: '0 17 * * *'
+  
+  workflow_dispatch:
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "prod"
@@ -47,6 +47,7 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        path: public
 
   deploy:
     environment: 
