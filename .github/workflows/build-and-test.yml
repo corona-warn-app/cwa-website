@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    
+
     - name: Setup Node.js 18 environment
       uses: actions/setup-node@v3
       with:
@@ -21,11 +21,11 @@ jobs:
 
     - name: Check if the page builds
       run: npm run-script build
-  
+
   test:
     needs: build
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
@@ -43,3 +43,6 @@ jobs:
 
     - name: Test the website
       run: npx start-server-and-test start-server http://localhost:8000 "cypress run -s 'cypress/e2e/*.js' --e2e --headless --browser chrome"
+      env:
+        # See issue https://github.com/cypress-io/cypress/issues/25357
+        ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
