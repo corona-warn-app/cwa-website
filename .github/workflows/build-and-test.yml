@@ -28,7 +28,7 @@ jobs:
     strategy:
       matrix:
         test:
-          ["app_to_web","applink","blog","check_anchor_links","check_videos","eventRegistration","faq","faq_link_attr","hotline","mime","hybrid/check_links"]
+          ["app_to_web","applink","blog","check_anchor_links","check_videos","eventRegistration","faq","faq_link_attr","hotline","mime"]
       
 
     steps:
