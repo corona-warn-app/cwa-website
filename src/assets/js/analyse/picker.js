@@ -6,9 +6,7 @@ import { DateTime, Settings } from 'luxon';
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
-const now = DateTime.now().minus({days: 1});
-
-
+const lastDay = (DateTime.local() < DateTime.fromISO("2023-02-12")) ? DateTime.local() : DateTime.fromISO("2023-02-12");
 
 	
 $(document).on("focus",".analyseRangePicker-input", function(){
@@ -36,7 +34,7 @@ const picker = new Litepicker({
 	numberOfColumns: pickerCols,
 	numberOfMonths: pickerCols,
 	minDate: analyseConfig.startDate, 
-	maxDate: now, 
+	maxDate: lastDay, 
 	scrollToDate: false,
 	autoApply: true,
 	format: (documentLang == "de")? "DD.MM.YYYY": "DD/MM/YYYY",
@@ -75,7 +73,7 @@ $('.analyseRangePicker-input').each(function(){
 		date: true,
 		delimiter: (documentLang == "de")? '.': '/',
 		dateMin: analyseConfig.startDate,
-		dateMax: now.toISODate(),
+		dateMax: lastDay.toISODate(),
 		datePattern: ['d','m','Y'],
 		onValueChanged: function(e) {
 			if(e.target.rawValue.length != 8) return;

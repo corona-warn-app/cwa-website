@@ -7,7 +7,7 @@ import picker from './picker.js';
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
-const lastDay = DateTime.fromISO('2023-02-12T00:00:00.000');
+const lastDay = (DateTime.local() < DateTime.fromISO("2023-02-12")) ? DateTime.local() : DateTime.fromISO("2023-02-12");
 
 function domReady(fn){
 	document.addEventListener("DOMContentLoaded", fn);
