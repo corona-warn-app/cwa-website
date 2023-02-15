@@ -7,7 +7,7 @@ import picker from './picker.js';
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
-const now = DateTime.now().minus({days: 1});
+const lastDay = DateTime.fromISO('2023-02-12T00:00:00.000');
 
 function domReady(fn){
 	document.addEventListener("DOMContentLoaded", fn);
@@ -26,8 +26,8 @@ const date$ = fromEvent(document.querySelectorAll('input[name="analyseRange"]'),
 
 document.querySelectorAll('.analyseRangeRadio input').forEach(e => {
 	e.value = [
-		(e.value == "all")? analyseConfig.startDate: now.minus((e.value == "6months")? {months: 6}: {days: 27}).toISODate(), 
-		now.toISODate()
+		(e.value == "all")? analyseConfig.startDate: lastDay.minus((e.value == "6months")? {months: 6}: {days: 27}).toISODate(), 
+		lastDay.toISODate()
 	].join(",");
 });
 
