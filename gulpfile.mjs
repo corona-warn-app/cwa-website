@@ -157,7 +157,7 @@ function analyseData() {
     })
     .catch((e) => {
       const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
-      if (!fs.existsSync('public/dashboard')) {fs.mkdirSync('public'); fs.mkdirSync('public/dashboard')};
+      if (!fs.existsSync('public/dashboard')) {fs.mkdirSync('public'); fs.mkdirSync('public/assets'); fs.mkdirSync('public/assets/dashboard');};
       return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, { flag: 'w' });
     });
 }
