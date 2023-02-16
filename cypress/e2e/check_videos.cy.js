@@ -36,7 +36,7 @@ context("Check for broken videos", () => {
     })
 })
 
-context("Check for broken links on blog/science entries", () => {
+context("Check for broken videos on blog/science entries", () => {
     const pages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
 
     pages.map(page => {
