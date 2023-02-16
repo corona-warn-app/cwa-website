@@ -6,7 +6,7 @@ import { DateTime, Settings } from 'luxon';
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
-const lastDay = (DateTime.local() < DateTime.fromISO("2023-02-12")) ? DateTime.local() : DateTime.fromISO("2023-02-12");
+const lastDay = (DateTime.local() < DateTime.fromISO("2023-02-16")) ? DateTime.local() : DateTime.fromISO("2023-02-16");
 
 	
 $(document).on("focus",".analyseRangePicker-input", function(){

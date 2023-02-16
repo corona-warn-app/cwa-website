@@ -405,7 +405,11 @@ export default {
 					{
 						color: "#B2578D",
 						data: "teletan_redeemable_cumulated"
-					}
+					},
+					{
+						color: "#D68101",
+						data: "ppa_srs_total_tests_cumulated"
+					},
 				],
 			},
 			{
@@ -447,6 +451,33 @@ export default {
 				],
 				"stacked": true,
 				"type":"area"
+			},
+			{
+				"series": [
+					{
+						ghost: true,
+						data: "ppa_srs_total_tests_cumulated",
+						name: "total"
+					},
+					{
+						color: "#3BA8CE",
+						data: "ppa_srs_self_test_cumulated"
+					},
+					{
+						color: "#57DAFF",
+						data: "ppa_srs_registered_tests_cumulated"
+					},
+					{
+						color: "#FF774C",
+						data: "ppa_srs_unregistered_tests_cumulated"
+					},
+					{
+						color: "#02B290",
+						data: "ppa_srs_other_cumulated"
+					}
+				],
+				"stacked": true,
+				"type":"area"
 			}
 		],
 		"2": [
@@ -465,6 +496,11 @@ export default {
 					{
 						color: "#2885AC",
 						data: "teletan_redeemable_daily",
+						type: "bar"
+					},
+					{
+						color: "#D68101",
+						data: "ppa_srs_total_tests_daily",
 						type: "bar"
 					}
 				],
@@ -506,6 +542,33 @@ export default {
 				],
 				"stacked": true,
 				"type":"bar"
+			},
+			{
+				"series": [
+					{
+						ghost: true,
+						data: "ppa_srs_total_tests_daily",
+						name: "total"
+					},
+					{
+						color: "#3BA8CE",
+						data: "ppa_srs_self_test_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "ppa_srs_registered_tests_daily"
+					},
+					{
+						color: "#FF774C",
+						data: "ppa_srs_unregistered_tests_daily"
+					},
+					{
+						color: "#02B290",
+						data: "ppa_srs_other_daily"
+					}
+				],
+				"stacked": true,
+				"type":"bar"
 			}
 		],
 		"3": [
@@ -524,6 +587,11 @@ export default {
 					{
 						color: "#B2578D",
 						data: "teletan_redeemable_7days_sum",
+						type: "bar"
+					},
+					{
+						color: "#D68101",
+						data: "ppa_srs_total_tests_7days_sum",
 						type: "bar"
 					}
 				],
@@ -567,6 +635,33 @@ export default {
 				],
 				"stacked": true,
 				"type":"bar"
+			},
+			{
+				"series": [
+					{
+						ghost: true,
+						data: "ppa_srs_total_tests_7days_sum",
+						name: "total"
+					},
+					{
+						color: "#3BA8CE",
+						data: "ppa_srs_self_test_7days_sum"
+					},
+					{
+						color: "#57DAFF",
+						data: "ppa_srs_registered_tests_7days_sum"
+					},
+					{
+						color: "#FF774C",
+						data: "ppa_srs_unregistered_tests_7days_sum"
+					},
+					{
+						color: "#02B290",
+						data: "ppa_srs_other_7days_sum"
+					}
+				],
+				"stacked": true,
+				"type":"bar"
 			}
 		],
 		"4": [
@@ -586,6 +681,10 @@ export default {
 					},
 					{
 						color: "#D68101",
+						data: "ppa_srs_total_tests_7days_avg"
+					},
+					{
+						color: "#D68101",
 						data: "qr_teletan_redeemable_daily"
 					},
 					{
@@ -595,6 +694,27 @@ export default {
 					{
 						color: "#B2578D",
 						data: "teletan_redeemable_daily"
+					},
+					{
+						ghost: true,
+						data: "ppa_srs_total_tests_daily",
+						name: "total"
+					},
+					{
+						color: "#3BA8CE",
+						data: "ppa_srs_self_test_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "ppa_srs_registered_tests_daily"
+					},
+					{
+						color: "#FF774C",
+						data: "ppa_srs_unregistered_tests_daily"
+					},
+					{
+						color: "#02B290",
+						data: "ppa_srs_other_daily"
 					}
 				]
 			},
@@ -657,6 +777,54 @@ export default {
 						data: "teletan_not_redeemed_daily"
 					}
 				]
+			},
+			{
+				"series": [
+					{
+						ghost: true,
+						data: "ppa_srs_total_tests_7days_sum",
+						name: "total"
+					},
+					{
+						color: "#3BA8CE",
+						data: "ppa_srs_self_test_7days_sum"
+					},
+					{
+						color: "#57DAFF",
+						data: "ppa_srs_registered_tests_7days_sum"
+					},
+					{
+						color: "#FF774C",
+						data: "ppa_srs_unregistered_tests_7days_sum"
+					},
+					{
+						color: "#02B290",
+						data: "ppa_srs_other_7days_sum"
+					},
+					{
+						ghost: true,
+						data: "ppa_srs_total_tests_daily",
+						name: "total"
+					},
+					{
+						color: "#3BA8CE",
+						data: "ppa_srs_self_test_daily"
+					},
+					{
+						color: "#57DAFF",
+						data: "ppa_srs_registered_tests_daily"
+					},
+					{
+						color: "#FF774C",
+						data: "ppa_srs_unregistered_tests_daily"
+					},
+					{
+						color: "#02B290",
+						data: "ppa_srs_other_daily"
+					}
+				],
+				"stacked": true,
+				"type":"bar"
 			}
 		]
 	},
