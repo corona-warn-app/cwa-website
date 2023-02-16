@@ -51,9 +51,9 @@ context("Check for broken links", () => {
     it(`"${page}" - Check for broken links`, () => {
       cy.visit({log: false, url: page} )
       cy.get("a:not([href*='mailto:'],[href*='tel:'],[href*='#'])").not('.email').each(url => {
-        if (url.prop('href') && !allowlist.includes(url.prop('href'))) {         
+        if (url.prop('href') && !allowlist.includes(url.prop('href'))) {
           cy.request({
-            failOnStatusCode: false, 
+            failOnStatusCode: false,
             log: false,
             url: url.prop('href')
           }).then((response) => {
@@ -65,12 +65,12 @@ context("Check for broken links", () => {
               })
             }
           })
-        }         
+        }
       })
     })
   })
 
-  
+
 })
 
 context("Check for broken links on entries", () => {
@@ -87,10 +87,10 @@ context("Check for broken links on entries", () => {
       cy.get("a:not([href*='mailto:'],[href*='tel:'],[href*='#'])").not('.email').each(url => {
         if(url.prop('href').includes('localhost') && url.prop('href').includes(sub) && !pagesToAvoid.includes(url.prop('href').replace('http://localhost:8000', ''))) {
           cy.visit({log: false, url: url.prop('href')} )
-          cy.get("a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(entry => {
+          cy.get("main a:not([href*='mailto:'],[href*='tel:'])").not('.email').each(entry => {
             if (entry.prop('href') && !allowlist.includes(entry.prop('href'))) {
               cy.request({
-                failOnStatusCode: false, 
+                failOnStatusCode: false,
                 log: false,
                 url: entry.prop('href')
               }).then((response) => {
@@ -105,7 +105,7 @@ context("Check for broken links on entries", () => {
             }
           })
         }
-      })  
-    })  
+      })
+    })
   })
 })
