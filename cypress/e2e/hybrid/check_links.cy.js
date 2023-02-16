@@ -79,7 +79,9 @@ context("Check for broken links on entries", () => {
   const allowlist = [
     'https://emergentalliance.org/calculation-of-the-effective-reproduction-number-germany/',
     'https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999',
-    'https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1'
+    'https://onlinelibrary.wiley.com/doi/abs/10.2307/3315826.n1',
+    'https://www.t-systems.com/',
+    'https://developer.apple.com/help/app-store-connect/reference/app-metrics'
   ]
   subpages.forEach(sub => {
     it(`"${sub}" entries - Check for broken links`, () => {
