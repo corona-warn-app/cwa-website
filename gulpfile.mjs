@@ -127,7 +127,10 @@ function copyBlogImgs() {
   return gulp.src(['blog/**/*', '!blog/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
 function copyScienceBlogImgs() {
-  return gulp.src(['science/**/*', '!science/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+  return gulp.src(['science/**/*', '!science/**/*.md'])
+  .pipe(gulp.dest(function(file) {
+    return file.extname === '.mp4' ? PATHS.dist + '/assets/video' : PATHS.dist + '/assets/img/science/';
+  }));
 }
 
 // Prepare blog .md files to be used as HTML
