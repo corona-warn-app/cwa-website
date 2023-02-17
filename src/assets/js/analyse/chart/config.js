@@ -460,19 +460,19 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#488f31",
+						color: "#0488B5",
 						data: "ppa_srs_self_test_cumulated"
 					},
 					{
-						color: "#e88772",
+						color: "#3BA8CE",
 						data: "ppa_srs_registered_tests_cumulated"
 					},
 					{
-						color: "#7ea883",
+						color: "#57DAFF",
 						data: "ppa_srs_unregistered_tests_cumulated"
 					},
 					{
-						color: "#c2caaf",
+						color: "#B4C6CB",
 						data: "ppa_srs_other_cumulated"
 					}
 				],
@@ -551,19 +551,19 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#488f31",
+						color: "#0488B5",
 						data: "ppa_srs_self_test_daily"
 					},
 					{
-						color: "#e88772",
+						color: "#3BA8CE",
 						data: "ppa_srs_registered_tests_daily"
 					},
 					{
-						color: "#7ea883",
+						color: "#57DAFF",
 						data: "ppa_srs_unregistered_tests_daily"
 					},
 					{
-						color: "#c2caaf",
+						color: "#B4C6CB",
 						data: "ppa_srs_other_daily"
 					}
 				],
@@ -644,19 +644,19 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#488f31",
+						color: "#0488B5",
 						data: "ppa_srs_self_test_7days_sum"
 					},
 					{
-						color: "#e88772",
+						color: "#3BA8CE",
 						data: "ppa_srs_registered_tests_7days_sum"
 					},
 					{
-						color: "#7ea883",
+						color: "#57DAFF",
 						data: "ppa_srs_unregistered_tests_7days_sum"
 					},
 					{
-						color: "#c2caaf",
+						color: "#B4C6CB",
 						data: "ppa_srs_other_7days_sum"
 					}
 				],
@@ -769,19 +769,19 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#488f31",
+						color: "#0488B5",
 						data: "ppa_srs_self_test_7days_avg"
 					},
 					{
-						color: "#e88772",
+						color: "#3BA8CE",
 						data: "ppa_srs_registered_tests_7days_avg"
 					},
 					{
-						color: "#7ea883",
+						color: "#57DAFF",
 						data: "ppa_srs_unregistered_tests_7days_avg"
 					},
 					{
-						color: "#c2caaf",
+						color: "#B4C6CB",
 						data: "ppa_srs_other_7days_avg"
 					},
 					{
@@ -790,19 +790,19 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#488f31",
+						color: "#0488B5",
 						data: "ppa_srs_self_test_daily"
 					},
 					{
-						color: "#e88772",
+						color: "#3BA8CE",
 						data: "ppa_srs_registered_tests_daily"
 					},
 					{
-						color: "#7ea883",
+						color: "#57DAFF",
 						data: "ppa_srs_unregistered_tests_daily"
 					},
 					{
-						color: "#c2caaf",
+						color: "#B4C6CB",
 						data: "ppa_srs_other_daily"
 					}
 				]
