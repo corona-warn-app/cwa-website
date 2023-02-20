@@ -35,9 +35,6 @@ jobs:
   test:
     needs: build
     runs-on: ubuntu-latest
-    env:
-      NO_COLOR: true
-      TERM: xterm
     strategy:
       fail-fast: false
       matrix:
@@ -70,3 +67,5 @@ jobs:
       env:
         # See issue https://github.com/cypress-io/cypress/issues/25357
         ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
+        NO_COLOR: true
+        TERM: xterm
