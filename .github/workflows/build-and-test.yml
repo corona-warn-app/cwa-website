@@ -35,6 +35,9 @@ jobs:
   test:
     needs: build
     runs-on: ubuntu-latest
+    env:
+      NO_COLOR: true
+      TERM: xterm
     strategy:
       fail-fast: false
       matrix:
