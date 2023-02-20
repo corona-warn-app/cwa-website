@@ -281,7 +281,7 @@ beobachteten Verhältnisse wollen wir auch Auskunft geben.
 
 <div class="m-4">
 
-<video src="./fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" aria-label="BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
+<video src="../../../assets/video/2021-06-15-science-blog-1/fraunhofer_iis_teaser_cwa_testkampagne_210621.mp4" class="w-100" controls="" aria-label="BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter">BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</video><figcaption aria-hidden="true"><em>BLE-Messungen durch Fraunhofer IIS zur Kalibrierung der Parameter</em></figcaption>
 
 </div>
 
@@ -454,7 +454,7 @@ zusätzlichen Nutzenden weiter gesteigert werden.
 
 <div class="m-4">
 
-<video src="./ppa_warnings_cases_fast.mp4" class="w-100" controls="" aria-label="Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
+<video src="../../../assets/video/2021-06-15-science-blog-1/ppa_warnings_cases_fast.mp4" class="w-100" controls="" aria-label="Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten">Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</video><figcaption aria-hidden="true"><em>Vergleich von durch die CWA Gewarnten (aus Datenspende, nur solche mit Angabe zum Landkreis) mit Neuinfizierten</em></figcaption>
 
 </div>
 
