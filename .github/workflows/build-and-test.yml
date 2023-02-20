@@ -21,10 +21,26 @@ jobs:
 
     - name: Check if the page builds
       run: npm run-script build
+      
+    - name: Zip build
+      run: zip -r public.zip public -x "public/assets/screenshots/*" "public/assets/img/blog/*" "public/assets/img/science/*"
+      
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: public
+        retention-days: 1
+        path: public.zip
 
   test:
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        test:
+          ["app_to_web","applink","blog","check_anchor_links","check_videos","eventRegistration","faq","faq_link_attr","hotline","mime"]
+      
 
     steps:
     - name: Check out repository
@@ -38,11 +54,18 @@ jobs:
     - name: Install npm dependencies
       run: npm ci
 
-    - name: Build the website
-      run: npm run-script build
-
+    - name: Download artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: public
+    
+    - name: Unzip build
+      run: unzip public.zip
+      
     - name: Test the website
-      run: npx start-server-and-test start-server http://localhost:8000 "cypress run -s 'cypress/e2e/*.js' --e2e --headless --browser chrome"
+      run: npx start-server-and-test start-server http://localhost:8000 "cypress run -s 'cypress/e2e/${{ matrix.test }}.cy.js' --e2e --headless --browser chrome"
       env:
         # See issue https://github.com/cypress-io/cypress/issues/25357
         ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
+        NO_COLOR: true
+        TERM: xterm
