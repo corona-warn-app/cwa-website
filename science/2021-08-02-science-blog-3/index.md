@@ -1,11 +1,11 @@
 ---
-page-title: "How does a 'Red Warning' Influence the Behaviour of Corona-Warn-App-Users?"
-page-description: "How does a 'Red Warning' Influence the Behaviour of Corona-Warn-App-Users?"
+page-title: "SB03: How does a 'Red Warning' Influence the Behaviour of Corona-Warn-App-Users?"
+page-description: "SB03: How does a 'Red Warning' Influence the Behaviour of Corona-Warn-App-Users?"
 page-name: science-blog-3
 page-name_de: science-blog-3
 author: CWA Team
 date: "2021-10-28"
-update: "last updated September 20, 2021 (German version)"
+update: "from German version (last updated September 20, 2021)"
 layout: science
 ---
 

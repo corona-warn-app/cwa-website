@@ -1,6 +1,6 @@
 ---
-page-title: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
-page-description: "Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
+page-title: "SB04: Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
+page-description: "SB04: Wer nutzt die Corona-Warn-App, wen warnt sie – und wie schnell?"
 page-name: science-blog-4
 page-name_de: science-blog-4
 author: CWA-Team
@@ -398,13 +398,13 @@ Nach 48 Stunden nach einer Warnung waren insgesamt 25.518 Antigen-Schnelltests (
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines PCR-Tests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 6 Tage nach der Risikobegegnung registriert (Median: 6 Tage).
 
-<img src="./ppa_delay_er_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR)."/>
-<figcaption aria-hidden="true">Abb. 15: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (PCR).</figcaption>
+<img src="./ppa_delay_er_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (PCR)."/>
+<figcaption aria-hidden="true">Abb. 15: Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (PCR).</figcaption>
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Registrierung eines Antigen-Schnelltests ist in der folgenden Abbildung dargestellt. Im Mittel wurde der Test 7,4 Tage nach der Risikobegegnung registriert (Median: 7 Tage).
 
-<img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
-<figcaption aria-hidden="true">Abb. 16: Zeit zwischen Risikobegegnung und Testregistrierung (nach Tagen vor Testregistrierung) (Antigen-Schnelltest).</figcaption>
+<img src="./ppa_delay_er_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 16: Zeit zwischen Risikobegegnung und Testregistrierung (in Tagen vor Testregistrierung) (Antigen-Schnelltest).</figcaption>
 
 ### 6.4 Verzug zwischen Risikobegegnung und Warnung
 
@@ -412,13 +412,13 @@ Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Warnung ergi
 
 Die im Mittel 3,8 Tage dauernde Zeit zwischen Risikobegegnung und Warnung wird als relativ kurz betrachtet. Dazu folgendes Beispiel: Person A trifft Person B am Tag 0 für ca. 2 Stunden. Person A weist am Tag 1 SARS-CoV-2-typische Symptome auf und lässt sich am Tag 2 testen und erhält das positive PCR-Testergebnis am Tag 3 und warnt unmittelbar. Das Smartphone von Person B wird mittels Push-Notification am Tag 3 über eine Risikobegegnung mit erhöhtem Risiko am Tag 0 informiert. Hierdurch käme ein Verzug zwischen Risikobegegnung und Warnung von 3 Tagen zustande.
 
-<img src="./ppa_delay_ew_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (PCR)."/>
-<figcaption aria-hidden="true">Abb. 17: Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (PCR).</figcaption>
+<img src="./ppa_delay_ew_pcr_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (in Tagen vor der Warnung) (PCR)."/>
+<figcaption aria-hidden="true">Abb. 17: Zeit zwischen Risikobegegnung und Warnung (in Tagen vor der Warnung) (PCR).</figcaption>
 
 Die tagesgenaue Verteilung des Verzugs zwischen Risikobegegnung und Warnung ergibt sich damit als Differenz der Verteilungen der Verzüge zwischen Risikobegegnung und Registrierung bzw. Warnung und Registrierung eines Antigen-Schnelltests. Diese ist in der folgenden Abbildung dargestellt. Im Mittel wurde die Warnung 5,4 Tage nach der Risikobegegnung erhalten (Median: 5 Tage).
 
-<img src="./ppa_delay_ew_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (Antigen-Schnelltest)."/>
-<figcaption aria-hidden="true">Abb. 18: Zeit zwischen Risikobegegnung und Warnung (nach Tagen vor der Warnung) (Antigen-Schnelltest).</figcaption>
+<img src="./ppa_delay_ew_rat_plot.png" class="figure-img img-fluid" alt="Zeit zwischen Risikobegegnung und Warnung (in Tagen vor der Warnung) (Antigen-Schnelltest)."/>
+<figcaption aria-hidden="true">Abb. 18: Zeit zwischen Risikobegegnung und Warnung (in Tagen vor der Warnung) (Antigen-Schnelltest).</figcaption>
 
 ### 6.5 Zusammenhang zwischen Risikobewertung und Infektion
 

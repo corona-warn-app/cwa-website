@@ -27,7 +27,7 @@ When users open the Corona-Warn-App for the first time after the update to versi
 
 <br></br>
 
-<center> <img src="./DataOnboarding_EN.png" title="Pop-Up Window Data Donation" alt="Pop-Up Window Data Donation" style="align: center"> <img src="./DataSettings_EN_1.png" title="Data donation settings" alt="Data donation settings" style="align: center"> <img src="./DataSettings_EN_2.png" title="consent form" alt="consent form" style="align: center"> </center>
+<div class="text-center"> <img src="./DataOnboarding_EN.png" title="Pop-Up Window Data Donation" alt="Pop-Up Window Data Donation" style="align: center"> <img src="./DataSettings_EN_1.png" title="Data donation settings" alt="Data donation settings" style="align: center"> <img src="./DataSettings_EN_2.png" title="consent form" alt="consent form"  ></div>
 <br></br>
 
 

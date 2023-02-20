@@ -23,11 +23,11 @@ After **30 days**, the certificates are automatically and permanently deleted fr
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ios-recycle-bin.png" title="Recycle bin iOS" alt="Recycle bin iOS" style="align: center" width=250> 
 <img src="./recycle-bin-android.png" title="Recycle bin Android" alt="Recycle bin Android" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: iOS recycle bin. Right: Android recycle bin</em></figcaption>
-</center>
+</div>
 <br></br>
 
 **Android users** can access their recycle bin by selecting the **three dots** in the top right corner of their app and then tap "Recycle Bin."  
@@ -35,19 +35,19 @@ After **30 days**, the certificates are automatically and permanently deleted fr
 **iOS users** can swipe down on the home screen of their Corona-Warn-App and select **"Recycle Bin" under "More"**. The project team has redesigned this area. iOS users can now find the app settings, frequently asked questions (FAQ), further information and the option to recommend the app under "More".
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./ios-new-area.jpg" title="new area" alt="new area" style="align: center" width=250> 
 <img src="./ios-old-design.png" title="iOS old design" alt="iOS old design" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Left: Newly arranged area as of version 2.13. Right: old arrangement</em></figcaption>
-</center>
+</div>
 <br></br>
 
 Users can also re-scan a certificate that they have deleted. In this case, the app recognizes that the certificate is still saved in the recycle bin and notifies users that it will restore it.  
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./certificate-scan-trash.png" title="Restore scanned certficiate from recycle bin" alt="Restore scanned certficiate from recycle bin" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 Furthermore, users can now see the **7-day hospitalization incidence on a state level**. If users have selected a county or district on the local level, the app automatically shows the hospitalization of the respective state. 
@@ -55,9 +55,9 @@ Furthermore, users can now see the **7-day hospitalization incidence on a state 
 As of version 2.13, there is also a combined tile for the 7-day incidence values: At both the local and state level, new infections and hospitalizations per 100,000 residents are now displayed on one tile. 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./incidence-tile.jpg" title="Combined incidence tile" alt="Combined incidence tile" style="align: center" width=250> 
-</center>
+</div>
 <br></br>
 
 In addition, the project team has **improved the algorithm when assigning certificates to people**. The Corona-Warn-App now assigns certificates with spelling errors in the name to the same person. 

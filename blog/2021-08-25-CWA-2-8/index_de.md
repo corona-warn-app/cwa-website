@@ -19,7 +19,7 @@ Das Update steht Nutzer\*innen über die nächsten 48 Stunden zur Verfügung.
 Mit Version 2.8 der Corona-Warn-App werden Namen in Zertifikaten (Impf-, Genesenen- und Testzertifikaten) zusätzlich zur länderspezifischen Schreibweise auch in standardisierter, lateinischer Schreibweise angezeigt. So können sie überall gelesen werden. 
 
 <br></br>
-<center> <img src="./standard-name.png" title="Name in standardisierter Schreibweise" alt="Name in standardisierter Schreibweise" style="align: center"> </center>
+<div class="text-center"> <img src="./standard-name.png" title="Name in standardisierter Schreibweise" alt="Name in standardisierter Schreibweise"  ></div>
 <br></br>
 
 Des Weiteren hat das Projektteam die **EU-Zertifikatsprüfung** angepasst. Hat ein Land **keine Einreiseregeln** zur Verfügung gestellt, die die Corona-Warn-App zur Überprüfung heranziehen kann, heißt es in der Zertifikatsprüfung nun **„Zertifikat nicht prüfbar“**. 
@@ -31,14 +31,14 @@ Zuvor hat die App in diesem Fall angezeigt, dass das Zertifikat im gewählten La
 Nutzer\*innen können mit der Zertifikatsprüfung seit [Version 2.6](/de/blog/2021-07-28-cwa-version-2-6/) vor einer Reise prüfen, ob ihre Zertifikate in dem Land, in das sie reisen, gültig sind. 
 
 <br></br>
-<center> <img src="./gültigkeit-neu-de.png" title="Zertifikat nicht prüfbar" alt="Zertifikat nicht prüfbar" style="align: center"></center>
+<div class="text-center"> <img src="./gültigkeit-neu-de.png" title="Zertifikat nicht prüfbar" alt="Zertifikat nicht prüfbar" style="align: center"></div>
 <br></br>
-<center> Aktuell </center>
+<div class="text-center"> Aktuell </div>
 
 <br></br>
-<center> <img src="./gültigkeit-alt-de.png" title="Zertifikat gültig" alt="Zertifikat gültig" style="align: center"></center>
+<div class="text-center"> <img src="./gültigkeit-alt-de.png" title="Zertifikat gültig" alt="Zertifikat gültig" style="align: center"></div>
 <br></br>
-<center> Vorher </center>
+<div class="text-center"> Vorher </div>
 <br></br>
 
 Jedes europäische Land, das digitale COVID-Zertifikate der EU unterstützt, hat die Möglichkeit, Regeln auf dem entsprechenden EU-Server zu hinterlegen, die die Corona-Warn-App zur Überprüfung abgleichen kann.

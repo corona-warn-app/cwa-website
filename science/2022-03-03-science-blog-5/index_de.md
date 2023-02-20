@@ -1,6 +1,6 @@
 ---
-page-title: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
-page-description: "Wie viele aktive Nutzende hat die Corona-Warn-App?"
+page-title: "SB05: Wie viele aktive Nutzende hat die Corona-Warn-App?"
+page-description: "SB05: Wie viele aktive Nutzende hat die Corona-Warn-App?"
 page-name: science-blog-5
 page-name_de: science-blog-5
 author: CWA-Team
@@ -444,7 +444,7 @@ Hierbei wurde ein konstantes Verhältnis des Anteils der Warnenden unter den Neu
 
 Wenn wir nun annehmen, dass sich das Verhältnis von Warnenden zu Neuinfektionen genauso verhält, wie das Verhältnis der aktiven Nutzenden (im engeren Sinne) zur (relevanten) Bevölkerung unter Berücksichtigung der Teilungsrate (wobei wir für die Bevölkerung 83 Mio. bzw. für die potenziellen Downloadenden 60 Mio. (d.&nbsp;h. [Personen im Alter von über 15 Jahren, die ein Smartphone besitzen](https://de.statista.com/statistik/daten/studie/198959/umfrage/anzahl-der-smartphonenutzer-in-deutschland-seit-2010/)) ansetzen):
 
-<center><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></center>
+<div class="text-center"><img src="./math1_de.png" class="figure-img img-fluid" width=60% alt="Mathematische Formel"/></div>
 
 können wir die Anzahl der aktiven Nutzenden bestimmen. Die folgende Abbildung zeigt den zeitlichen Verlauf dieser Schätzung.
 
@@ -455,9 +455,9 @@ Für die letzten 30 Tage (bei Nichtberücksichtigung der letzten 5 Tage, aufgrun
 
 ### 4.2 Aus der CWA-Datenspende
 
-Gegenwärtig spenden täglich mehr als 16 Mio. Nutzende ihre Daten (Stand: 28. Februar 2022). Aus dem im [vergangenen Blog-Beitrag](../2021-10-15-science-blog-4/#66-sch%C3%A4tzung-des-anteils-der-datenspendenden) geschätzten (und aktualisierten) Anteil der Datenspendenden können wir zusammen mit der Anzahl der CWA-Datenspenden die tägliche Anzahl der aktiven Nutzenden (im engeren Sinne) schätzen: 
+Gegenwärtig spenden täglich mehr als 16 Mio. Nutzende ihre Daten (Stand: 28. Februar 2022). Aus dem im [vergangenen Blog-Beitrag](../2021-10-15-science-blog-4/#66-sch%C3%A4tzung-des-anteils-der-datenspendenden) geschätzten (und aktualisierten) Anteil der Datenspendenden können wir zusammen mit der Anzahl der CWA-Datenspenden die tägliche Anzahl der aktiven Nutzenden (im engeren Sinne) schätzen:
 
-<center><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></center>
+<div class="text-center"><img src="./math2_de.png" class="figure-img img-fluid" width=80% alt="Mathematische Formel"/></div>
 
 Hierbei ist zu beachten, dass die Datenspenden von Geräten kommen, die Testergebnisse aber von Nutzenden. Für die letzten 30 Tage erhalten wir im Mittel 31 Mio. aktive Nutzende der Corona-Warn-App ([KI](https://de.wikipedia.org/wiki/Konfidenzintervall): 25,8 Mio. – 33,6).
 
@@ -722,7 +722,7 @@ Die Quote von Zweitgeräten liegt bei 8,7%, wobei hier aber auch nur Zweitgerät
 
 ### 6.2 Apple-App-Store
 
-Wir geben nun eine Übersicht zu den [Kennzahlen im Apple-App-Store](https://help.apple.com/app-store-connect/#/itc21781223f).
+Wir geben nun eine Übersicht zu den [Kennzahlen im Apple-App-Store](https://developer.apple.com/help/app-store-connect/reference/app-metrics).
 
 Im Apple-App-Store können ebenfalls verschiedene Kennzahlen zur Installation abgerufen werden. Insbesondere die Anzahl der aktiven Geräte und der monatlich aktiven Nutzenden (MAU); aktiv in den letzten 30 Tagen) sind für uns interessant.
 
@@ -858,7 +858,7 @@ Umgekehrt kann man auch von den monatlich aktiven Nutzenden (MAU) eine bessere S
 
 Insgesamt liegen alle Schätzungen in einem ähnlichen Bereich und ergeben das positive Ergebnis, dass die Corona-Warn-App von knapp der Hälfte (28,1 von 60 Mio. bzw. 46,8%) der angedachten Bevölkerung genutzt wird.
 
-## 8 Fazit 
+## 8 Fazit
 
 Die Corona-Warn-App wird von einem guten Drittel (33,8%) der Bevölkerung bzw. knapp der Hälfte (46,8%) der angedachten Bevölkerung aktiv genutzt. Die Bereitstellung von Testergebnissen (PCR-Tests und Antigen-Schnelltests) erfolgt umfangreich und zügig ([Zweck 1](#21-zweck-1--abruf-des-testergebnisses)). Die Warnungen durch die CWA erfolgt ebenfalls umfangreich, angemessen und zeitnah ([Zweck 2](#21-zweck-1--abruf-des-testergebnisses)). Zudem warnt die CWA auch mit hoher Präzision ([Zweck 3](#23-zweck-3--risikoermittlung)).
 

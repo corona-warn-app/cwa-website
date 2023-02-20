@@ -25,19 +25,19 @@ If the current recommendations apply to the user, the app notifies them. Users w
 
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./news-about-certificates.png" title="News in the certificates section" alt="News in the certificates section" style="align: center" width=250>
 <img src="./vaccination-status-notification.png" title="Notification in the certificate" alt="Notification in the certificate" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>Left: The app alerts users with the red dot that there is news. Right: information about booster recommendation under the certificate </em></figcaption>
-</center>
+</div>
 <br></br>
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./notification-70.png" title="Notification for users who are at least 70 years old" alt="Notification for users who are at least 70 years old" style="align: center" width=250> 
 <img src="./notification-johnson.png" title="Notification for users vaccinated with the vaccine from Jonson&Johnson" alt="Notification for users vaccinated with the vaccine from Jonson&Johnson" style="align: center" width=250>
 <figcaption aria-hidden="true"><em>Links: notification for users who are at least 70 years old. Right: notification for users who were vaccinated with Johnson & Johnson's vaccine. </em></figcaption>
-</center>
+</div>
 <br></br>
 
 If the app notifies users to whom the conditions do not apply, for example because they have already received a booster vaccination or have already had a proven COVID-19 infection, they can ignore the notification. In this case, however, the project team recommends importing the relevant vaccination or recovery certificates into the app.
@@ -50,10 +50,10 @@ The STIKO also recommends booster vaccinations for people with certain jobs or p
 Users who have received a booster vaccination can transfer the certificate into the Corona-Warn-App just like they did with previous certificates. To do this, they can **select the universal QR code scanner** in the app’s tab bar and scan the QR code they received from their doctor. The app automatically saves the certificate under "Certificates" and the corresponding person.  
 
 <br></br>
-<center> 
+<div class="text-center"> 
 <img src="./qr-code-scanner-en.png" title="Universal QR code scanner" style="align: center" width=250> 
 <figcaption aria-hidden="true"><em>In the middle of the tab bar, circled here: universal QR code scanner.</em></figcaption>
-</center>
+</div>
 <br></br>
 
 To **check the vaccination certificate** according to local regulations - for example, in a restaurant or while traveling - users can either show their regular vaccination certificate or the booster vaccination certificate. There is **no indication** when checking the certificates with the CovPassCheck app that the person is recommended to have a booster vaccination, nor is it noted in the certificate. Due to the high level of data security only users themselves know that the certificate is a booster vaccination. 

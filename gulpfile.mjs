@@ -11,6 +11,7 @@ import replace from 'gulp-replace';
 import sitemap from 'gulp-sitemap';
 import sourcemaps from 'gulp-sourcemaps';
 import webp from 'gulp-webp';
+import change from 'gulp-change';
 
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
@@ -126,7 +127,10 @@ function copyBlogImgs() {
   return gulp.src(['blog/**/*', '!blog/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
 function copyScienceBlogImgs() {
-  return gulp.src(['science/**/*', '!science/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+  return gulp.src(['science/**/*', '!science/**/*.md'])
+  .pipe(gulp.dest(function(file) {
+    return file.extname === '.mp4' ? PATHS.dist + '/assets/video' : PATHS.dist + '/assets/img/science/';
+  }));
 }
 
 // Prepare blog .md files to be used as HTML
@@ -156,7 +160,9 @@ function analyseData() {
     })
     .catch((e) => {
       const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
-      if (!fs.existsSync('public')) fs.mkdirSync('public');
+      if (!fs.existsSync('public/assets/dashboard')) {
+        fs.mkdirSync('public/assets/dashboard');
+      }
       return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, { flag: 'w' });
     });
 }
@@ -523,11 +529,12 @@ function replaceVersionNumbers() {
   return gulp
     .src([PATHS.dist + '/**/*.html', PATHS.dist + '/**/*.json'])
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
-    .pipe(replace('[ios.current-app-version]', '2.28.0'))
+    .pipe(replace('[ios.minimum-app-version]', '1.5.3'))
+    .pipe(replace('[ios.current-app-version]', '3.0.1'))
     .pipe(replace('[android.latest-os-version]', '13'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
-    .pipe(replace('[android.current-app-version]', '2.28.3'))
-    .pipe(replace('[last-update]', new Date().toISOString().split('T')[0]))
+    .pipe(replace('[android.minimum-app-version]', '1.0.4'))
+    .pipe(replace('[android.current-app-version]', '3.0.2'))
     .pipe(gulp.dest(PATHS.dist));
 }
 
@@ -538,9 +545,18 @@ function deleteTmpFiles(done) {
 
 function AddEnglishSpecifier() {
   const data = JSON.parse(fs.readFileSync('src/data/english-texts.json', 'utf8'));
-  let task = gulp.src([PATHS.dist + '/**/*.html']);
-  data.texts.forEach((value) => {
-    task = task.pipe(replace(' ' + value + ' ', `<span lang="en"> ${value} </span>`));
-  });
-  return task.pipe(gulp.dest(PATHS.dist));
+  return gulp
+    .src([PATHS.dist + '/**/*.html'])
+    .pipe(
+      change(function () {
+        // split HTML to exclude the <head>-section from replacement
+        const splittedHtml = this.originalContent.split('</head>');
+        const regex = new RegExp(`(?<!\w)(${data.texts.join('|')})(?![^<]*>)`, 'g');
+        splittedHtml[1] = splittedHtml[1].replace(regex, (match) => {
+          return `<span lang="en">${match}</span>`;
+        });
+        return splittedHtml.join('</head>');
+      })
+    )
+    .pipe(gulp.dest(PATHS.dist));
 }
