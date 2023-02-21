@@ -5,6 +5,7 @@ const noCheckHosts = [
   'ec.europa.eu',              // HTTP 502 bad gateway
   'health.ec.europa.eu',       // HTTP 502 bad gateway
   'onlinelibrary.wiley.com',   // HTTP 503 service unavailable
+  'reopen.europa.eu',          // Timeout - no response
   'support.apple.com',         // Timeout - no response
   'testbuchen.de',             // HTTP 403 permission denied
   'www.instagram.com',         // SSLV3_ALERT_CLOSE_NOTIFY
