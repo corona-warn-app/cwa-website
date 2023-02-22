@@ -1,0 +1,49 @@
+name: Test Links
+# This workflow runs the Cypress test
+# cypress/e2e/hybrid/check_links.cy.js
+# to check local and external hyperlinks.
+# It is separated from other tests because it may fails due to external conditions
+# on third-party webservers which are not under control of the CWA organization.
+
+on:
+  workflow_dispatch:
+  schedule:
+      # Run every Monday at 03:15 UTC
+    - cron: '15 3 * * 1'
+
+jobs:
+
+  test-check-links:
+    name: test (check_links)
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js 18 environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: 'lts/hydrogen'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build
+      run: npm run build
+
+    - name: Test
+      run: npx start-server-and-test start-server http://localhost:8000 "cypress run -s 'cypress/e2e/hybrid/check_links.cy.js' --e2e --headless --browser chrome"
+      env:
+        NO_COLOR: true
+        TERM: xterm
+        # See issue https://github.com/cypress-io/cypress/issues/25357
+        ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
+
+    - name: Save Cypress logs
+      uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: cypress_logs
+        path: cypress/logs
+        retention-days: 7
