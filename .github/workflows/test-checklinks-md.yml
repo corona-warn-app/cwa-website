@@ -1,0 +1,26 @@
+name: Test Links (Markdown)
+# This workflow executes npm run checklinks
+# to call in turn markdown-link-check
+# This checks markdown files (*.md) in the top level of the
+# repository and in the docs/ directory.
+# These are documents used by contributors and maintainers.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+
+  test-checklinks-markdown:
+    name: test (checklinks - markdown)
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Test
+      run: npm run checklinks
