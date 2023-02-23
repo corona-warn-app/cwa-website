@@ -750,37 +750,49 @@
 
 
 	&Tabs {
+		@media screen and (max-width: 600px) {
+			overflow-x: scroll;
+			white-space: nowrap;
+		
+			/* Hide the scrollbar */
+			&::-webkit-scrollbar {
+			  display: none;
+			}
+		}
 		position: absolute;
 		top: 100%;
 		left: 0;
 		right: 0;
 		font-size: 0;
-
+	  
 		&:before {
-			content: '';
-			position: absolute;
-			top: -24px;
-			left: 0;
-			right: 10px;
-			background: #fff;
-			height: 24px;
+		  content: '';
+		  position: absolute;
+		  top: -24px;
+		  left: 0;
+		  right: 10px;
+		  background: #fff;
+		  height: 24px;
 		}
-
+	  
 		&-item {
-			font-size: 12px;
-			line-height: 14px;
-			padding: 5px 16px;
-			background: #EDF2F7;
-			border: 0;
-			box-shadow: 0px 7px 23px rgba(96, 105, 131, 0.25) !important;
-			border-radius: 0px 0px 6px 6px;
-			margin-right: 4px;
-
-			&.active {
-				background: #fff;
-			}
+		  @media screen and (max-width: 600px) {
+			display: inline-block;
+		  }
+		  font-size: 12px;
+		  line-height: 14px;
+		  padding: 5px 16px;
+		  background: #EDF2F7;
+		  border: 0;
+		  box-shadow: 0px 7px 23px rgba(96, 105, 131, 0.25) !important;
+		  border-radius: 0px 0px 6px 6px;
+		  margin-right: 4px;
+	  
+		  &.active {
+			background: #fff;
+		  }
 		}
-	}
+	  }
 
 
 
