@@ -5,7 +5,7 @@ page-name: science-blog-5
 page-name_de: science-blog-5
 author: CWA Team
 date: "2022-07-29"
-update: "last updated March 3, 2022 (German version)"
+update: "from German version (last updated March 3, 2022)"
 layout: science
 ---
 
@@ -109,7 +109,7 @@ In the case of rapid antigen tests, this ratio is even more convincing.
 
 *The warnings from the CWA are thus precise and reliable, in spite of the known shortcomings of the BLE technology. The CWA warns the right individuals.*
 
-The significance of the CWA can also be illustrated in the current pandemic occurrence. The number of nationwide new infections in the last 7 days was 1,007,987 (as of: February 28, 2022). During the same time period, 1,388,486 positive Corona test results were submitted into the backend of the CWA, and 330,228 were accessed there by CWA users (23.8%). Of those, around two-thirds (70.7%) were shared, in turn. A total of almost 16.8% of the positive tests in Germany within the CWA were thus used and shared in order to warn others (in the last 7 days, 233,377 individuals). Assuming that for each person providing a warning, 23 CWA users receive a red warning (this value was higher during the last 30 days than observed over the entire time period), this results currently in approximately 5,367,700 individuals who received a red warning, of which approximately 15% get tested, and register their result via the CWA. In addition, it can be assumed that another 72% get tested (largely also officially, see above), but cannot register their test result in the CWA. Of this total of approximately 3,887,000, approximately 14.1% and thus up to 548,500 additional CWA users test positive. Due to the quick warning and the prompt behaviour adaptations of potentially infected CWA users, chains of infection are ended early by means of the CWA. 
+The significance of the CWA can also be illustrated in the current pandemic occurrence. The number of nationwide new infections in the last 7 days was 1,007,987 (as of: February 28, 2022). During the same time period, 1,388,486 positive Corona test results were submitted into the backend of the CWA, and 330,228 were accessed there by CWA users (23.8%). Of those, around two-thirds (70.7%) were shared, in turn. A total of almost 16.8% of the positive tests in Germany within the CWA were thus used and shared in order to warn others (in the last 7 days, 233,377 individuals). Assuming that for each person providing a warning, 23 CWA users receive a red warning (this value was higher during the last 30 days than observed over the entire time period), this results currently in approximately 5,367,700 individuals who received a red warning, of which approximately 15% get tested, and register their result via the CWA. In addition, it can be assumed that another 72% get tested (largely also officially, see above), but cannot register their test result in the CWA. Of this total of approximately 3,887,000, approximately 14.1% and thus up to 548,500 additional CWA users test positive. Due to the quick warning and the prompt behaviour adaptations of potentially infected CWA users, chains of infection are ended early by means of the CWA.
 
 An exact estimate of the ended chains of infection or of the prevented cases, respectively, is only possible as part of a simulation or modelling. The actual situation has to be compared to a virtual (hypothetical) one thereby, in which there is for example no CWA test. This is planned for a future blog post.
 
@@ -142,7 +142,7 @@ The key features identified by the [Apple App Store](#62-apple-app-store) and [G
 Release
 </th>
 <th style="text-align:left;">
-Functions implemented in the CWA 
+Functions implemented in the CWA
 </th>
 </tr>
 </thead>
@@ -429,7 +429,7 @@ We can see that there are approximately 3.4% of users, who do not use the core f
 
 Based on the mentioned limitations, the number of active users cannot be determined precisely, but can only be estimated with the help of different methods and sources. We specify three different estimations, based on the data relating to the [number of individuals providing a warning](#41-from-the-number-of-individuals-providing-a-warning), the [CWA data donation](#42-from-the-cwa-data-donation) and a [heuristic approximation](#43-from-a-heuristic).
 
-### 4.1 From the number of individuals providing a warning 
+### 4.1 From the number of individuals providing a warning
 
 A first option for estimating the active users (in the narrower sense) follows from a comparison of the number of individuals providing a warning (individuals who tested positive, who share their keys via the CWA) with the number of new infections in Germany submitted to the RKI. The following figure shows the virtually parallel course of these key figures.
 
@@ -496,7 +496,7 @@ An analysis of the data from [Google Play Store](#61-google-play-store) and [App
 
 We initially provide an overview of the [key figures of the Google Play Store](https://support.google.com/googleplay/android-developer/answer/139628?hl=de&ref_topic=7071935).
 
-Some key figures are calculated on the basis of the data of users, who have agreed to share a summary with the developers. The key figures, which are offered in the play console, are adapted so that they reflect the data from all users. 
+Some key figures are calculated on the basis of the data of users, who have agreed to share a summary with the developers. The key figures, which are offered in the play console, are adapted so that they reflect the data from all users.
 
 Various key figures can be accessed in the Google Play Store for installation. In particular the number of the active devices, of the active users, and of the monthly active users (MAU)) are of interest for us.
 
@@ -582,7 +582,7 @@ An Android device, which is assigned to a user. When a device is reset or is giv
 Active devices
 </td>
 <td style="text-align:left;width: 11cm; ">
-The number of active devices, on which the app is installed. Devices are considered to be active, if they were turned on at least once in the past 30 days. 
+The number of active devices, on which the app is installed. Devices are considered to be active, if they were turned on at least once in the past 30 days.
 </td>
 </tr>
 <tr>
@@ -714,13 +714,13 @@ Figure 14: Key figures relating to the installation (Google).
 
 It is important to note hereby that the number of the monthly active users has only been available since October 6, 2020, and is not provided on a daily basis, but with a delay of several days.
 
-The number of the active apps/devices is specified with 16.5 million, the number of the active users with 15.2 million, and the number of the monthly active users with 13.5 million (as of: February 26, 2022). It may initially seem surprising that the number of the active users is higher than the number of the monthly active users. A close look at the definition, however, reveals the reason: The first number indicates those users, who have actively used their smartphone, on which the CWA is installed, during the last 30 days, the second number, however, indicates those, who have actually used the CWA during the last 28 days. The difference is approximately 11%. 
+The number of the active apps/devices is specified with 16.5 million, the number of the active users with 15.2 million, and the number of the monthly active users with 13.5 million (as of: February 26, 2022). It may initially seem surprising that the number of the active users is higher than the number of the monthly active users. A close look at the definition, however, reveals the reason: The first number indicates those users, who have actively used their smartphone, on which the CWA is installed, during the last 30 days, the second number, however, indicates those, who have actually used the CWA during the last 28 days. The difference is approximately 11%.
 
 The share of secondary devices is 8.7%, whereby this also only includes secondary devices of the same operating system. In addition, an average ‘exchange time’ of the device of 2.9 years follows from this data (when comparing downloads and active users). This corresponds well with the value selected in the heuristic.
 
 ### 6.2 Apple App Store
 
-We now provide an overview of the [key figures in the Apple App Store](https://help.apple.com/app-store-connect/#/itc21781223f).
+We now provide an overview of the [key figures in the Apple App Store](https://developer.apple.com/help/app-store-connect/reference/app-metrics).
 
 Various key figures relating to the installation can likewise be accessed in the Apple App Store. In particular the number of the active devices and of the monthly active users (MAU); active in the last 30 days) are of interest for us.
 
@@ -856,7 +856,7 @@ Vice versa, a better estimation for the percentage of the individuals donating d
 
 As a whole, all estimations lie in a similar range and have the positive result that the Corona-Warn-App is used by almost half (28.1 of 60 million or 46.8%, respectively) of the planned general public.
 
-## 8 Conclusion 
+## 8 Conclusion
 
 The Corona-Warn-App is actively used by almost one-third (33.8%) of the general public or by just under half (46.8%) of the planned general public, respectively. The provision of test results (PCR tests and rapid antigen tests) takes place extensively and quickly ([Purpose 1](#21-purpose-1--accessing-the-test-result)). The warnings by means of the CWA likewise take place extensively, adequately, and in a timely manner ([Purpose 2](#22-purpose-2--warning-others)). In addition, the CWA also warns with high precision ([Purpose 3](#23-purpose-3--risk-assessment)).
 

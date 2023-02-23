@@ -127,7 +127,10 @@ function copyBlogImgs() {
   return gulp.src(['blog/**/*', '!blog/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
 function copyScienceBlogImgs() {
-  return gulp.src(['science/**/*', '!science/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+  return gulp.src(['science/**/*', '!science/**/*.md'])
+  .pipe(gulp.dest(function(file) {
+    return file.extname === '.mp4' ? PATHS.dist + '/assets/video' : PATHS.dist + '/assets/img/science/';
+  }));
 }
 
 // Prepare blog .md files to be used as HTML
@@ -157,7 +160,9 @@ function analyseData() {
     })
     .catch((e) => {
       const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
-      if (!fs.existsSync('public')) fs.mkdirSync('public');
+      if (!fs.existsSync('public/assets/dashboard')) {
+        fs.mkdirSync('public/assets/dashboard');
+      }
       return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, { flag: 'w' });
     });
 }

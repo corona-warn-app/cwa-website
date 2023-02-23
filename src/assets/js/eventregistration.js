@@ -187,6 +187,28 @@ document.getElementById('printCode').addEventListener('click', function (e) {
 
 });
 
+document.getElementById('eventqrcode').addEventListener('click', function (e) {
+  let elem = document.getElementById('eventqrcode');
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  }
+  var requestMethod = 
+  elem.requestFullScreen ||
+  elem.webkitRequestFullscreen ||
+  elem.mozRequestFullScreen ||
+  elem.msRequestFullscreen;
+
+  if( requestMethod ) {
+    requestMethod.apply(elem);
+  }
+});
+
 document.getElementById('downloadMultiCode').addEventListener('click', function (e) {
   e.preventDefault();
   document.getElementById("modal").classList.remove('d-none'); 
@@ -506,6 +528,7 @@ async function GenerateQRCode(isPreview, grid, description, address, defaultchec
           resolve(canvas);
         } 
       });
+      document.getElementById('eventqrcode').style.visibility='visible';
     } else {
       resolve(false);
     }
