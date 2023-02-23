@@ -120,7 +120,7 @@
             "expand": "Expand graphic",
             "collapse": "Collapse graphic",
             "info": {
-                "content": "<strong>Sharing behaviour: Total</strong><p>Count of positive test results, for which a QR code was registered or a teleTAN requested for validation, as well as their distribution by QR code registration and teleTAN input.</p><strong>Sharing behaviour: QR codes</strong><p>Count of positive test results, validated through QR code registration, shared and not shared in the Corona-Warn-App.</p><strong>Sharing behaviour: teleTANs</strong><p>Count of positive test results, for which a teleTAN was requested for validation, shared and not shared in the Corona-Warn-App.<br />In the initial days of collection (August 25-31, 2020), totals were collected that are not stratified by \"Shared\" and \"Not Shared\". This results in a persistent discrepancy in the cumulative numbers between the total strats and the total number.</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong> Reference date</strong><p>The reference date is the day of test registration (QR code) or of the call to the verification hotline (teleTAN).</p><strong>Data sources</strong><p>Corona-Warn-App backend</p><strong>Retrospective adjustment of the data on sharing behaviour</strong><p>The data on sharing behaviour (total, QR codes and teleTANs) is adjusted retrospectively for the last 14 days because the reference date refers to the scan date (QR code) or call date (teleTAN). The delay may occur as follows:<br />The user takes more time to share his or her test result. As soon as the result is shared, the number of shared results changes accordingly regarding the scan or call date.<br />The user already receives a QR code when making their appointment and scans it immediately, although he or she may not have the test performed until later.</p><strong>Additional information</strong><p>Only positive test results are relevant for ending chains of infection. To prevent abuse, positive test results must be verified. There are two options for verifying test results: a QR code or a teleTAN, which must be entered in the Corona-Warn-App. The user receives the QR code when the sample for the test is collected. By scanning the QR code, the test can be registered in the Corona-Warn-App. As soon as the result is available, it is automatically retrieved and displayed on the smartphone. The user can then decide to release her/his own random codes from the last 14 days to warn possible risk contacts. If no QR code is available or if it is lost, the user can call the verification hotline. A teleTAN is generated there to verify the positive test result. This teleTAN must be entered into the app by the user.</p>"
+                "content": "<strong>Sharing behaviour: Total</strong><p>Count of positive test results, for which a QR code was registered or a teleTAN requested for validation or shared without TAN validation, as well as their distribution by QR code registration, teleTAN recieving and warnings without TAN.</p><strong>Sharing behaviour: QR codes</strong><p>Count of positive test results, validated through QR code registration, shared and not shared in the Corona-Warn-App.</p><strong>Sharing behaviour: teleTANs</strong><p>Count of positive test results, for which a teleTAN was requested for validation, shared and not shared in the Corona-Warn-App.<br />In the initial days of collection (August 25-31, 2020), totals were collected that are not stratified by \"Shared\" and \"Not Shared\". This results in a persistent discrepancy in the cumulative numbers between the total strats and the total number.<br />On January 31, 2023, the service of the TAN hotline was discontinued and a validation of positive test results via teleTAN is no longer possible since then. As a result, no more data points exist as of this date.</p><strong>Sharing behaviour: Warning without TAN</strong><p>Number of positive test results that were shared without TAN validation, stratified by self-test and third-party test registered or not registered in the CWA (e.g., performed or taken at a testing site).</p><strong>Time intervals</strong><p>Daily: Count accurate to the day<br />Weekly: Weekly count by calendar week (CW)<br />7-day moving average: 7-day moving average accurate to the day<br />Cumulative: Cumulative sum accurate to the day, since the beginning of the measurement</p><strong> Reference date</strong><p>The reference date is the day of test registration (QR code) or of the call to the verification hotline (teleTAN) or sharing a positive test result without TAN validation (warn without TAN).</p><strong>Data sources</strong><p>Corona-Warn-App backend; Stratification of the warning without TAN according to the information of the person providing the warning.</p><strong>Retrospective adjustment of the data on sharing behaviour</strong><p>The data on sharing behaviour (total, QR codes and teleTANs) is adjusted retrospectively for the last 14 days because the reference date refers to the scan date (QR code) or call date (teleTAN). The delay may occur as follows:<br />The user takes more time to share his or her test result. As soon as the result is shared, the number of shared results changes accordingly regarding the scan or call date.<br />The user already receives a QR code when making their appointment and scans it immediately, although he or she may not have the test performed until later.</p><strong>Additional information</strong><p>Only positive test results are relevant for ending chains of infection. To prevent abuse, positive test results must be verified. There are two options for verifying test results: a QR code or a teleTAN, which must be entered in the Corona-Warn-App. The user receives the QR code when the sample for the test is collected. By scanning the QR code, the test can be registered in the Corona-Warn-App. As soon as the result is available, it is automatically retrieved and displayed on the smartphone. The user can then decide to release her/his own random codes from the last 14 days to warn possible risk contacts. If no QR code is available or if it is lost, the user can call the verification hotline. A teleTAN is generated there to verify the positive test result. This teleTAN must be entered into the app by the user.<br />Since version 3.0 of the Corona-Warn-App from February 18, 2023, it is possible to warn others due to an unvalidated positive PCR or rapid antigen test (incl. self-testing). Calling the verification hotline to assign teleTANs after a positive test result that was not submitted to the CWA is no longer necessary since that date. The verification hotline was still available until January 31, 2023 to ensure a transition period for those who had not yet updated the CWA to version 3.0.</p>"
             },
             "totalKey": [
                 "qr_teletan_redeemable_cumulated",
@@ -139,7 +139,7 @@
                     "label": "teleTANs"
                 },
                 {
-                    "label": "SRS"
+                    "label": "Warning without TAN"
                 }
             ]
         },
@@ -253,7 +253,7 @@
         "qr_teletan_redeemable_cumulated": "Total",
         "qr_redeemable_cumulated": "QR codes",
         "teletan_redeemable_cumulated": "teleTANs",
-        "ppa_srs_total_tests_cumulated": "SRS",
+        "ppa_srs_total_tests_cumulated": "Warning without TAN",
         "qr_not_redeemed_cumulated": "Not shared",
         "qr_redeemed_cumulated": "Shared",
         "teletan_not_redeemed_cumulated": "Not shared",
@@ -266,7 +266,7 @@
         "qr_teletan_redeemable_daily": "Total ",
         "qr_redeemable_daily": "QR codes ",
         "teletan_redeemable_daily": "teleTANs ",
-        "ppa_srs_total_tests_daily": "SRS",
+        "ppa_srs_total_tests_daily": "Warning without TAN",
         "qr_not_redeemed_daily": "Not shared ",
         "qr_redeemed_daily": "Shared ",
         "teletan_not_redeemed_daily": "Not shared ",
@@ -280,7 +280,7 @@
         "qr_teletan_redeemable_7days_sum": "Total",
         "qr_redeemable_7days_sum": "QR codes",
         "teletan_redeemable_7days_sum": "teleTANs",
-        "ppa_srs_total_tests_7days_sum": "SRS",
+        "ppa_srs_total_tests_7days_sum": "Warning without TAN",
         "qr_not_redeemed_7days_sum": "Not shared",
         "qr_redeemed_7days_sum": "Shared",
         "teletan_not_redeemed_7days_sum": "Not shared",
@@ -293,7 +293,7 @@
         "qr_teletan_redeemable_7days_avg": "Total",
         "qr_redeemable_7days_avg": "QR codes",
         "teletan_redeemable_7days_avg": "teleTANs",
-        "ppa_srs_total_tests_7days_avg": "SRS",
+        "ppa_srs_total_tests_7days_avg": "Warning without TAN",
         "qr_not_redeemed_7days_avg": "Not shared",
         "qr_redeemed_7days_avg": "Shared",
         "teletan_not_redeemed_7days_avg": "Not shared",
