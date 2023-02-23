@@ -460,7 +460,7 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#0488B5",
+						color: "#03698C",
 						data: "ppa_srs_self_test_cumulated"
 					},
 					{
@@ -551,7 +551,7 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#0488B5",
+						color: "#03698C",
 						data: "ppa_srs_self_test_daily"
 					},
 					{
@@ -644,7 +644,7 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#0488B5",
+						color: "#03698C",
 						data: "ppa_srs_self_test_7days_sum"
 					},
 					{
@@ -769,7 +769,7 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#0488B5",
+						color: "#03698C",
 						data: "ppa_srs_self_test_7days_avg"
 					},
 					{
@@ -790,7 +790,7 @@ export default {
 						name: "total"
 					},
 					{
-						color: "#0488B5",
+						color: "#03698C",
 						data: "ppa_srs_self_test_daily"
 					},
 					{
