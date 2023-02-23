@@ -77,82 +77,13 @@ Manuals for the most common use cases of updating website content are available 
 
 ### Testing
 
-[Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests. Tests are located in the `cypress/e2e` folder and can be run with:
+Most tests run automatically when a pull request is submitted. If you are making changing which affect hyperlinks in the web it is recommended to run the links test locally before submitting a pull request or making changes to it.
 
 ```bash
-npm test
-```
-Since the full test includes testing of external links which can take 10 to 15 minutes to execute, a shorter version of the test is available, which excludes testing external links. It can be run with:
-```bash
-npm run test:short
-```
-To interactively run individual tests through the Cypress console use:
-```bash
-npm run test:open
+npm run test:links
 ```
 
-To minimize the occurrence of errors we would ask you to perform all tests when contributing to our repository.
-
-The production web https://www.coronawarn.app runs under the Ubuntu operating system with a case-sensitive file-system. To ensure gaps in testing are minimized, perform local tests preferably under Ubuntu.
-
-Other operating systems, such as Microsoft Windows, which access files in a case-insensitive mode, may hide problems in testing if there is a mismatch between the upper/lower-case file naming and the reference to the file. This applies to Cypress tests and testing by hand.
-
-#### Cypress cache
-
-Executing `npm install`, as described in the [Getting started](#getting-started) section, caches a separate copy of Cypress on the system. If the `cwa-website` later specifies a different Cypress version and `npm install` is executed again, then any previously cached Cypress versions remain on the system. Each cached version uses about 0.5 GB of storage. To free up storage space by manually cleaning up unneeded cached Cypress versions, carry out the following steps:
-
-To check which version of Cypress you have installed, execute the following command in a terminal window in the `cwa-website` base directory:
-
-[`npx cypress version`](https://docs.cypress.io/guides/guides/command-line#cypress-version)
-
-To show which versions are cached and how much storage space they take up, execute:
-
-[`npx cypress cache list --size`](https://docs.cypress.io/guides/guides/command-line#cypress-cache-list)
-
-Then to remove other versions, apart from the currently used version, execute:
-
-[`npx cypress cache prune`](https://docs.cypress.io/guides/guides/command-line#cypress-cache-prune)
-
-#### Notes for test developers
-
-Best practice is to use `data-e2e="your_test_id"` element attributes to select specific elements, e.g. `cy.get('[data-e2e="cta-button-1"]').click()` instead of `cy.get('.container .infobox a.button').contains('DOWNLOAD').click()`.
-
-|                       | Included in Cypress Test Production?     |  What is it used for?                                                                |
-|-----------------------|-|-------------------------------------------------------------------------------------------------------------------------------|
-| check_links.js        |✘                                         | Detect broken links throughout the website. Result is saved in `logs` folder.        |
-| app_to_web.js         |✓                                         | Check that all links to the website used by the Android and iOS apps are working and that content is correctly displayed.                |
-| applink_spec.js       |✓                                         | Detect broken links or missing OS badges to download mobile app in home page.         |
-| blog_spec.js          |✓                                         | Check if blog archive is accessible.                                                  |
-| check_anchor_links.js |✓                                         | Detect broken anchor links throughout the website. Result is saved in `logs` folder.  |
-| check_videos.js       |✓                                         | Detect broken videos throughout the website.                                          |
-| eventRegistration.js  |✓                                         | Checks that all fields in event-registration exist and fill them to create a QR code. |
-| faq.js                |✓                                         | Simulate a FAQ search and the result for mobile and desktop view.                     |
-| hotline_spec.js       |✓                                         | Verify that Hotline APP and TAN data is correctly displayed on the home page.              |
-| mime.js               |✓                                         | Check that CSS and JS files have the correct MIME type. See https://developer.mozilla.org/en-US/docs/Glossary/MIME_type                      |
-
-To run all tests included in Cypress Test Production execute:
-
-`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headed` => test results are printed in the console, also you can see browser's movements
-
-`npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --headless --browser chrome` => test results are printed in the console, the browser is not displayed
-
-#### Checking Markdown documents
-
-Markdown documents which are used for publication to the website, such as in the [blog](./blog) directory, are checked through Cypress in the HTML code which the build process generates.
-
-Links in other Markdown documents, such as this README file and files in the [docs](./docs) directory, can be checked through:
-
-```bash
-npm run checklinks
-```
-
-The `checklinks` script uses Unix commands. On a Microsoft Windows operating system, the Unix commands can be provided by [git for Windows](https://gitforwindows.org/) with its embedded Git BASH emulation. If you are using Command Prompt or Windows PowerShell on Windows instead of the Git BASH shell, then you need to execute the following command:
-
-```bash
-npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe" --location user
-```
-
-otherwise you may see an error message similar to "'xargs' is not recognized as an internal or external command, operable program or batch file."
+More details on testing are available in the [TESTING](docs/TESTING.md) document.
 
 ### Updating coronawarn.app
 
