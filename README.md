@@ -77,7 +77,7 @@ Manuals for the most common use cases of updating website content are available 
 
 ### Testing
 
-Most tests run automatically when a pull request is submitted. If you are making changing which affect hyperlinks in the web it is recommended to run the links test locally before submitting a pull request or making changes to it.
+Most tests run automatically when a pull request is submitted. If you are making changes which affect hyperlinks in the web it is recommended to run the links test locally before submitting a pull request or making changes to it.
 
 ```bash
 npm run test:links
