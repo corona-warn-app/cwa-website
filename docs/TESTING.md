@@ -1,6 +1,6 @@
 # Testing
 
-This document provides testing information for contributors to this repository [corona-warn-app/cwa-website](../).  The repository hosts the source for the https://www.coronawarn.app/ production webserver.
+This document provides testing information for contributors to this repository which hosts the source for the https://www.coronawarn.app/ production webserver.
 
 - [Cypress](https://on.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) is used to run End-To-End tests of the website contents in the `/public` directory after it is built from source.
 - [markdown-link-check](https://github.com/tcort/markdown-link-check) is used to check Markdown documents, such as this one, which are used only on the GitHub repository.
@@ -10,7 +10,7 @@ This document provides testing information for contributors to this repository [
 Tests are conducted in three locations:
 
 1. Locally on a contributor's system using a cloned copy of the website (optional)
-2. On [GitHub](../) where the source code of the web resides (automatic)
+2. On GitHub where the source code of the web resides (automatic)
 3. On the webserver https://www.coronawarn.app/. After the web is built on GitHub it is then deployed to this webserver (automatic)
 
 Tests can be run locally and manually before submission. Automated tests, running in [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions) workflows, are used to ensure quality of the website submissions from pull requests. As a final check, some tests are also applied to the production webserver https://www.coronawarn.app from a GitHub Actions workflow.
