@@ -3,7 +3,7 @@ page-title: "Project team releases CWA version 3.1 with improvements and adjustm
 page-description: "Project team releases CWA version 3.1 with improvements and adjustments"
 page-name: cwa-3-1
 page-name_de: cwa-3-1
-author: CWA-Team, 10 am
+author: CWA-Team, 1:00 pm
 layout: blog
 ---
 
