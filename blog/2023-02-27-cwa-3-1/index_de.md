@@ -1,6 +1,6 @@
 ---
-page-title: "Version 3.1: Projektteam veröffentlicht CWA Version 3.1 mit Verbesserungen und Anpassungen"
-page-description: "Version 3.1: Projektteam veröffentlicht CWA Version 3.1 mit Verbesserungen und Anpassungen"
+page-title: "Projektteam veröffentlicht CWA Version 3.1 mit Verbesserungen und Anpassungen"
+page-description: "Projektteam veröffentlicht CWA Version 3.1 mit Verbesserungen und Anpassungen"
 page-name: cwa-3-1
 page-name_de: cwa-3-1
 author: CWA-Team, 13:00 Uhr
