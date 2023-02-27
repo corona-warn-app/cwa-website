@@ -19,7 +19,7 @@ Tests can be run locally and manually before submission. Automated tests, runnin
 
 ### Local tests
 
-You can run tests locally using `npm` commands in the [Test modules](#test-modules) table below. You must have [Node.js](https://nodejs.org/en/download/) installed and have run `npm install` before running any tests. See the [Development](../#development) section in the [README](../README.md) document for more details. You can run the full test suite using:
+You can run tests locally using `npm` commands in the [Test modules](#test-modules) table below. You must have [Node.js](https://nodejs.org/en/download/) installed and have run `npm install` before running any tests. See the [Development](../README.md#development) section in the [README](../README.md) document for more details. You can run the full test suite using:
 
 ```bash
 npm test
@@ -87,7 +87,7 @@ The command `npm run test:links` runs the Cypress test [cypress/e2e/hybrid/check
 
 ### Cypress cache
 
-Executing `npm install`, as described in the [Getting started](../#getting-started) section, caches a separate copy of Cypress on your local system. If the `cwa-website` later specifies a different Cypress version and `npm install` is executed again, then any previously cached Cypress versions remain on your system. Each cached version uses about 0.5 GB of storage. To  remove other versions, apart from the currently used version, execute:
+Executing `npm install`, as described in the [Getting started](../README.md#getting-started) section, caches a separate copy of Cypress on your local system. If the `cwa-website` later specifies a different Cypress version and `npm install` is executed again, then any previously cached Cypress versions remain on your system. Each cached version uses about 0.5 GB of storage. To  remove other versions, apart from the currently used version, execute:
 
 ```bash
 npx cypress cache prune
