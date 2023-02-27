@@ -1,6 +1,6 @@
 {
   "name": "corona-warn-app-landingpage",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Corona-Warn-App website coronawarn.app",
   "main": "gulpfile.mjs",
   "scripts": {
@@ -22,7 +22,10 @@
     "test:firefox": "run-s build test:firefox:phase2",
     "test:short": "run-s build test:short:phase2",
     "test:short:phase2": "start-server-and-test start-server http://localhost:8000 cypress:run:short",
-    "checklinks": "find . docs -maxdepth 1 -name '*.md' -print0 | xargs -0 -n1 markdown-link-check"
+    "checklinks": "find . docs -maxdepth 1 -name '*.md' -print0 | xargs -0 -n1 markdown-link-check",
+    "test:links": "run-s build test:checklinks:phase2",
+    "cypress:run:checklinks": "cypress run -s 'cypress/e2e/hybrid/check_links.cy.js' --e2e --browser chrome --headless",
+    "test:checklinks:phase2": "start-server-and-test start-server http://localhost:8000 cypress:run:checklinks"
   },
   "author": "SAP Corona-Warn-App Open Source Team <corona-warn-app.opensource@sap.com>",
   "license": "Apache-2.0",

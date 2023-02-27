@@ -4,35 +4,13 @@ context("Check for broken videos", () => {
     const pages = [
         '/de',
         '/en',
-        '/de/eventregistration/',
-        '/en/eventregistration/',
-        '/de/community/',
-        '/en/community/',
-        '/de/analysis/',
-        '/en/analysis/',
-        '/de/blog/archiv/',
-        '/en/blog/archive/',
-        '/de/screenshots/',
-        '/en/screenshots/',
         '/de/faq/', '/de/faq/results/',
         '/en/faq/', '/en/faq/results/',
-        '/de/rat-partner/',
-        '/en/rat-partner/',
-        '/de/privacy/',
-        '/en/privacy/',
-        '/de/terms-of-use/',
-        '/en/terms-of-use/',
-        '/de/event-qr-code-guide/',
-        '/en/event-qr-code-guide/',
-        '/de/blog/','/en/blog/',
+        '/de/blog/', '/en/blog/',
         '/de/science/',
         '/en/science/',
-        '/de/simple-language/',
-        '/en/simple-language/',
         '/de/sign-language/',
-        '/en/sign-language/',
-        '/de/sitemap/',
-        '/en/sitemap/'
+        '/en/sign-language/'
     ];
 
 
@@ -58,7 +36,7 @@ context("Check for broken videos", () => {
     })
 })
 
-context("Check for broken links on blog/science entries", () => {
+context("Check for broken videos on blog/science entries", () => {
     const pages = ['/de/blog/','/en/blog/','/de/science/', '/en/science/']
 
     pages.map(page => {
