@@ -23,7 +23,7 @@ Nutzer\*innen haben damit die Möglichkeit, sich bei vielen der beteiligten Part
 
 - dm drogerie-märkte: [Schnelltest INOPAI (dm.de)](https://corona-schnelltest-zentren.dm.de/o/dm/login)
 
-- EcoCare (Lidl und Kaufland): [EcoCare - Bürgertest: EcoCare - Bürgertest](https://buergertest.ecocare.center/#c734)
+- EcoCare (Lidl und Kaufland): ~~EcoCare - Bürgertest: EcoCare - Bürgertest~~ *Aktualisierung 6. März 2023: die Webseite `https://buergertest.ecocare.center` zu "EcoCare - Bürgertest" ist nicht mehr im Betrieb.*
 
 - testbuchen.de/No-Q (teilnehmende Apotheken, Hausärzte und weitere Testzentren): [Finde deinen Testtermin (testbuchen.de)](https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999)
 
@@ -32,7 +32,7 @@ Nutzer\*innen haben damit die Möglichkeit, sich bei vielen der beteiligten Part
 
 In den ersten Tagen nach Start der Integration kann es bei wenigen Partnern noch zu kleineren technischen Schluckaufs kommen. Insgesamt läuft die Integration aber zufriedenstellend und die Nutzer\*innen scheinen die Option bereits sehr gut anzunehmen.
 
-Nach dem Test kann ein negatives Testergebnis für **48 Stunden** in der App angezeigt werden. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen. 
+Nach dem Test kann ein negatives Testergebnis für **48 Stunden** in der App angezeigt werden. Ein positives Testergebnis wird in der App angezeigt, bis der oder die Nutzer\*in es teilen. So soll sichergestellt werden, dass Nutzer\*innen andere so schnell wie möglich warnen, um eine mögliche Infektionskette schnell zu unterbrechen.
 
 <br></br>
 <div class="text-center"><img src="./schnelltest-registrieren.png" title="Schnelltest Registrieren" alt="Schnelltest Registrieren" style="align: center"> <img src="./schnelltest-anzeigen.png" title="Schnelltest Anzeigen" alt="Schnelltest Anzeigen" style="align: center"></div>

@@ -13,7 +13,7 @@ Deutsche Telekom and SAP’s project team have integrated the [announced rapid C
 
 <!-- overview -->
 
-Eight partners are participating in the launch of the rapid test integration, including **the Bavarian Red Cross, dm-drogerie markt, Doctorbox, EcoCare the healthcare brand of Ecolog Deutschland GmbH (with Lidl among others), Huber Health Care, and testbuchen.de/No-Q**. In addition, the **German Federal Chancellery**, which tests its employees, and the **Ministry of Education and Culture Saarland**, which provides rapid tests to teachers, are taking part. 
+Eight partners are participating in the launch of the rapid test integration, including **the Bavarian Red Cross, dm-drogerie markt, Doctorbox, EcoCare the healthcare brand of Ecolog Deutschland GmbH (with Lidl among others), Huber Health Care, and testbuchen.de/No-Q**. In addition, the **German Federal Chancellery**, which tests its employees, and the **Ministry of Education and Culture Saarland**, which provides rapid tests to teachers, are taking part.
 
 Since the announcement of the rapid test integration at the end of March, the project team has received **125 requests** from test centers and the retail sector, among others, that are interested in participating in the integration. Companies that are interested in participating can contact SAP and Telekom via [registrierung.labore.pandemietest@t-systems.com](mailto:registrierung.labore.pandemietest@t-systems.com).
 
@@ -23,7 +23,7 @@ Users will have the opportunity to be tested for COVID-19 by trained and authori
 
 - dm drogerie-märkte: [Schnelltest INOPAI (dm.de)](https://corona-schnelltest-zentren.dm.de/o/dm/login)
 
-- EcoCare (Lidl and Kaufland): [EcoCare - Bürgertest: EcoCare - Bürgertest](https://buergertest.ecocare.center/#c734)
+- EcoCare (Lidl and Kaufland): ~~EcoCare - Bürgertest: EcoCare - Bürgertest~~ *Update March 6, 2023: The website `https://buergertest.ecocare.center` belonging to "EcoCare - Bürgertest" is no longer in operation.*
 
 - testbuchen.de/No-Q (participating pharmacies, general practitioners and other test centers): [Finde deinen Testtermin (testbuchen.de)](https://testbuchen.de/#/?zoom=0&lat=47.71401323721353&lng=8.66960999999999)
 
@@ -31,7 +31,7 @@ Users will have the opportunity to be tested for COVID-19 by trained and authori
 
 In the first days after the start of the integration, a few partners may still experience minor complications. Overall, however, the integration is running satisfactorily and users already seem to be using the option.
 
-After the test, a negative result will be displayed in the Corona-Warn-App for **48 hours**. A positive test results will be displayed in the app until the user has shared his or her result. 
+After the test, a negative result will be displayed in the Corona-Warn-App for **48 hours**. A positive test results will be displayed in the app until the user has shared his or her result.
 
 
 <br></br>

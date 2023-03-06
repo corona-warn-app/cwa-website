@@ -25,7 +25,7 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 <div class="text-center"> <img src="./dm-1.jpg" title="Dm Testzentrum auswählen" alt="Dm Testzentrum auswählen" style="align: center"></div>
 <br></br>
 
-- Wählen Sie zunächst ein Datum aus, danach eine Uhrzeit und geben Sie im Anschluss Ihre persönlichen Daten an. Die Mitarbeiter*innen brauchen diese Daten, um sie im Falle eines positiven Tests an das Gesundheitsamt weiterzuleiten. 
+- Wählen Sie zunächst ein Datum aus, danach eine Uhrzeit und geben Sie im Anschluss Ihre persönlichen Daten an. Die Mitarbeiter*innen brauchen diese Daten, um sie im Falle eines positiven Tests an das Gesundheitsamt weiterzuleiten.
 
 
 <br></br>
@@ -54,7 +54,7 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 <div class="text-center"> <img src="./cwa-test-registrieren.jpg" title="Test registrieren" alt="Test registrieren" style="align: center">  <img src="./cwa-code-scannen.jpg" title="QR-Code scannen" alt="QR-Code scannen" style="align: center"></div>
 <br></br>
 
-- Nachdem Sie den Test über den Link oder den QR-Code registriert haben, wird Ihnen auf der Startseite der App der **Bereich „Schnelltest“** angezeigt. Unter Test anzeigen gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird. 
+- Nachdem Sie den Test über den Link oder den QR-Code registriert haben, wird Ihnen auf der Startseite der App der **Bereich „Schnelltest“** angezeigt. Unter Test anzeigen gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird.
 
 <br></br>
 <div class="text-center"> <img src="./cwa-testergebnis.jpg" title="Testergebnis" alt="Testergebnis" style="align: center"></div>
@@ -81,19 +81,21 @@ Unternehmen, die interessiert sind, ebenfalls als Partner Schnelltest-Ergebnisse
 <div class="text-center"> <img src="./no-q-4.jpg" title="Test registrieren" alt="Test registrieren" style="align: center">  <img src="./no-q-5.jpg" title="Personalisierung" alt="Personalisierung" style="align: center"></div>
 <br></br>
 
-- Stimmen Sie den Datenschutzbestimmungen und der Einverständniserklärung zu und gehen Sie auf *Buchen* 
+- Stimmen Sie den Datenschutzbestimmungen und der Einverständniserklärung zu und gehen Sie auf *Buchen*
 - Nach der Durchführung des Tests erhalten Sie eine E-Mail mit einem Link zur Seite mit Ihrem Testergebnis.
 - Auf dieser Seite befindet sich der QR-Code, den Sie nun mit der Corona-Warn-App einscannen können, indem Sie auf der Startseite in Ihrer Corona-Warn-App unter "Test registrieren" auf *Nächste Schritte* gehen und anschließend auf *QR-Code scannen*.
 - Ihr Test ist dann registriert und das Testergebnis wird in der Corona-Warn-App bereitgestellt
 
 
-Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durchführen müssen, um den hohen Sicherheitsstandards zu genügen, die für die Einbindung in das Corona-Warn-App-System einzuhalten sind. Der Plattform Anbieter No-Q hat dazu die entsprechende technische Unterstützung seitens des Projektteams, um das in den nächsten Tagen abzuschließen. Sollte Ihnen der oben beschriebene Link also nicht angezeigt werden, gehört Ihre ausgewählte Teststelle zu denen, die noch nicht umgestellt haben. 
+Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durchführen müssen, um den hohen Sicherheitsstandards zu genügen, die für die Einbindung in das Corona-Warn-App-System einzuhalten sind. Der Plattform Anbieter No-Q hat dazu die entsprechende technische Unterstützung seitens des Projektteams, um das in den nächsten Tagen abzuschließen. Sollte Ihnen der oben beschriebene Link also nicht angezeigt werden, gehört Ihre ausgewählte Teststelle zu denen, die noch nicht umgestellt haben.
 
 ## Ablauf über EcoCare (Lidl)
 
 #### Schritt 1: Einloggen, beziehungsweise Registrieren
 
-- Finden Sie ein Testzentrum in Ihrer Nähe unter: [EcoCare - Bürgertest: EcoCare - Bürgertest](https://buergertest.ecocare.center/#c734)
+*Aktualisierung 6. März 2023: die Webseite `https://buergertest.ecocare.center` zu "EcoCare - Bürgertest" ist nicht mehr im Betrieb.*
+
+- Finden Sie ein Testzentrum in Ihrer Nähe unter: ~~EcoCare - Bürgertest: EcoCare - Bürgertest~~
 - Wählen Sie ein Testzentrum aus
 - Wenn Sie zum ersten Mal einen Termin über EcoCare buchen, können Sie zunächst ein Profil erstellen. Wählen Sie *Registrieren* und geben Sie Ihre persönlichen Daten ein. Danach wählen Sie *Weiter* und, nachdem Sie Ihre Daten noch einmal überprüft haben, *Registrieren*
 - Sie erhalten eine E-Mail mit einem Bestätigungslink. Klicken Sie auf den Link und legen Sie Ihr Passwort fest.
@@ -108,7 +110,7 @@ Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durc
 <br></br>
 
 - Wählen Sie den Ort aus und gehen Sie anschließend auf *Termin vereinbaren*
-- Danach können Sie ein Datum und eine Uhrzeit auswählen und auf *Wähle dein Testkit* gehen 
+- Danach können Sie ein Datum und eine Uhrzeit auswählen und auf *Wähle dein Testkit* gehen
 
 <br></br>
 <div class="text-center"> <img src="./ecocare-3.jpg" title="Test bestellen" alt="Test bestellen" style="align: center"></div>
@@ -128,13 +130,13 @@ Vereinzelt gibt es Apotheken, die noch **technische Umstellungsmaßnahmen** durc
 <div class="text-center"> <img src="./ecocare-6.jpg" title="Test in CWA übertragen" alt="Test in CWA übertragen" style="align: center"></div>
 <br></br>
 
-- Sie werden daraufhin automatisch in die **Corona-Warn-App** weitergeleitet. Dort können Sie Ihr Einverständnis geben, dass der Test übertragen werden soll. Im Anschluss ist der Test in der App registriert. 
+- Sie werden daraufhin automatisch in die **Corona-Warn-App** weitergeleitet. Dort können Sie Ihr Einverständnis geben, dass der Test übertragen werden soll. Im Anschluss ist der Test in der App registriert.
 
 <br></br>
 <div class="text-center"> <img src="./cwa-einverständnis.jpg" title="Testergebnis" alt="Testergebnis" style="align: center">  <img src="./cwa-testergebnis-schwarz.jpg" title="Testergebnis" alt="Testergebnis" style="align: center">  </div>
 <br></br>
 
-- Auf der **Startseite der App** wird Ihnen nun der Bereich „Schnelltest“ angezeigt. Über *Test anzeigen* gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird. 
+- Auf der **Startseite der App** wird Ihnen nun der Bereich „Schnelltest“ angezeigt. Über *Test anzeigen* gelangen Sie zu Ihrem registrierten Test. Solange Sie den Test noch nicht gemacht haben, steht dort, dass das Ergebnis noch nicht vorliegt. Nach der Durchführung des Schnelltests können Sie Ihren Test an dieser Stelle aktualisieren, sodass Ihnen das Ergebnis angezeigt wird.
 
 ## Stornierung eines Termins und Löschen des Tests
 
@@ -145,10 +147,10 @@ Können Sie einen Termin nicht wahrnehmen, sollten Sie ihn stornieren. Für die 
 Damit die Übertragung des Testergebnisses in die Corona-Warn-App über die jeweiligen Links der Partner einwandfrei ablaufen kann, empfehlen wir die folgenden Browser und Einstellungen, wenn Sie Ihr Smartphone nutzen, um einen Termin zu buchen:
 
 Unter Android:
-- Chrome mit der vom Hersteller voreingestellten Konfiguration (default) 
+- Chrome mit der vom Hersteller voreingestellten Konfiguration (default)
 - Samsung Internet mit Anpassung: Nutzer\*innen sollten *Links in anderen Apps öffnen* in den Einstellungen auswählen
 - Firefox mit Anpassung: Nutzer\*innen sollten *Links in Apps öffnen* in den Einstellungen auswählen
-- Edge mit der vom Hersteller voreingestellten Konfiguration (default) 
+- Edge mit der vom Hersteller voreingestellten Konfiguration (default)
 - Opera sollte nicht verwendet werden
 
 Unter iOS:
