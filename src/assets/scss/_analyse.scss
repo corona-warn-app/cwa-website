@@ -751,8 +751,10 @@
 
 	&Tabs {
 		@media screen and (max-width: 600px) {
+			margin-top: 0.5rem;
 			overflow-x: scroll;
 			white-space: nowrap;
+			box-shadow: none;
 		
 			/* Hide the scrollbar */
 			&::-webkit-scrollbar {
@@ -778,13 +780,16 @@
 		&-item {
 		  @media screen and (max-width: 600px) {
 			display: inline-block;
+			border-radius: 6px 6px 6px 6px; 
+			box-shadow: none;
+			border:rgba(60, 69, 83, 0.538625) 1px solid;			
 		  }
 		  font-size: 12px;
 		  line-height: 14px;
 		  padding: 5px 16px;
 		  background: #EDF2F7;
 		  border: 0;
-		  box-shadow: 0px 7px 23px rgba(96, 105, 131, 0.25) !important;
+		  box-shadow: 0px 7px 23px rgba(96, 105, 131, 0.25);
 		  border-radius: 0px 0px 6px 6px;
 		  margin-right: 4px;
 	  
