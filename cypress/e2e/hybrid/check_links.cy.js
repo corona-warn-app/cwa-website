@@ -2,6 +2,7 @@ const { softAssert, softExpect } = chai;
 
 const noCheckHosts = [
   'developer.apple.com',       // HTTP 403 forbidden issue on GitHub
+  'buergertest.ecocare.center', // HTTP 404 not found - testing site removed
   'ec.europa.eu',              // HTTP 502 bad gateway
   'health.ec.europa.eu',       // HTTP 502 bad gateway
   'onlinelibrary.wiley.com',   // HTTP 503 service unavailable
