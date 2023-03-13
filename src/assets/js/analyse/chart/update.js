@@ -54,7 +54,7 @@ const update = async function({
 	}
 
 	const chartType = _get(chartConfigObj, ["type"], "line");
-	const type = (chartType == "bar")? (barthreshold)? chartType: "line": chartType;
+	const type = (chartType == "bar")? (barthreshold)? chartType: "area": chartType;
 
 	
 	let opt = {
