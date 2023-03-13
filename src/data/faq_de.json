@@ -25,10 +25,10 @@
         },
         "topics": [
             {
-                "title": "App-Funktionen",
-                "id": "application",
-                "icon": "/assets/img/icons/smartphone.svg",
-                "sections": [
+                "title": "Betriebsende",
+                "id": "end_of_operation",
+                "icon": "/assets/img/icons/stopwatch.svg",
+                "sections":[
                     {
                         "title": "Hintergrund",
                         "id": "ramp_down",
@@ -64,7 +64,14 @@
                                 "active": false
                             }
                         ]
-                    },
+                    }
+                ]
+            },
+            {
+                "title": "App-Funktionen",
+                "id": "application",
+                "icon": "/assets/img/icons/smartphone.svg",
+                "sections": [
                     {
                         "title": "Risiko-Ermittlung",
                         "id": "app_features_risk_assessment",
