@@ -25,6 +25,49 @@
         },
         "topics": [
             {
+                "title": "Ende der CWA-Entwicklung",
+                "id": "end_of_operation",
+                "icon": "/assets/img/icons/stopwatch.svg",
+                "sections":[
+                    {
+                        "title": "Generelle Fragen",
+                        "id": "ramp_down",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Hier werden wir darüber informieren, welche funktionalen Auswirkungen das Ende der Entwicklungsarbeiten an der CWA hat.",
+                                "anchor": "ramp_down",
+                                "active": false
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Auswirkungen",
+                        "id": "ramp_down_effects",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Hier werden bald generelle Themen zum Ende der Entwicklung der Corona-Warn-App publiziert.",
+                                "anchor": "ramp_down_effects",
+                                "active": false
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Alternativen",
+                        "id": "ramp_down_alternatives",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Hier bereiten wir Antworten zu Fragen vor, welche Möglichkeiten es nach Ende der Entwicklungsarbeiten an der CWA künftig noch gibt.",
+                                "anchor": "ramp_down_alternatives",
+                                "active": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "App-Funktionen",
                 "id": "application",
                 "icon": "/assets/img/icons/smartphone.svg",
