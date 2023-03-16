@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import ApexCharts from 'apexcharts';
 import { Subject } from 'rxjs';
+import { DateTime } from 'luxon';
 
 import chartOptions from './chart/options.js';
 import { update } from './chart/update.js';
@@ -12,8 +13,12 @@ const annotations = {
       key: 'self-test-submission',
       label_de: 'Selbstwarnungen',
       label_en: 'Self-test warnings',
-      dataPoints: ['__18. Jan. 23__', '__KW 03__', '__Jan. 23__'], // Target the daily and weekly datapoints
-      // TODO: Only mark CW 03 of 2023!
+      dataPoints: [
+        `__${DateTime.fromISO('2023-01-18').toLocaleString({ day: '2-digit', month: 'short', year: '2-digit' })}__`,
+        documentLang == 'de' ? '__KW 03 2023__' : '__CW 03 2023__',
+        // TODO: Target correct day, when using more than 1000 datapoints
+        // `__${DateTime.fromISO('2023-01-18').toLocaleString({ month: 'short', year: '2-digit' })}__`,
+      ],
     },
   ],
 };
