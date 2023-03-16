@@ -19,8 +19,6 @@ const selfWarningAnnotation = {
   dataPoints: {
     daily: `__${DateTime.fromISO('2023-01-18').toLocaleString({ day: '2-digit', month: 'short', year: '2-digit' })}__`,
     weekly: documentLang == 'de' ? '__KW 03 2023__' : '__CW 03 2023__',
-    // If there are more than 1000 datapoints present the annotation is placed on 01.01.23
-    daily1000: `__${DateTime.fromISO('2023-01-18').toLocaleString({ month: 'short', year: '2-digit' })}__`,
   },
 };
 
@@ -104,7 +102,7 @@ const update = async function (
   // update and set annotations
   const calculateAnnotationPosition = () => {
     const dataPointIndex = categories.findIndex((category) =>
-      ['__Jan. 23__', '__CW 03 2023__', '__KW 03 2023__', '__18. Jan. 23__'].includes(category)
+      Object.values(selfWarningAnnotation.dataPoints).includes(category)
     );
     const magicNum = (dataPointIndex / categories.length) * 100;
     return {
@@ -118,12 +116,7 @@ const update = async function (
   ApexCharts.exec(id, 'clearAnnotations');
 
   ApexCharts.exec(id, 'addXaxisAnnotation', {
-    x:
-      mode === 'weekly'
-        ? selfWarningAnnotation.dataPoints.weekly
-        : mode === 'daily' && categories.length > 1000
-        ? selfWarningAnnotation.dataPoints.daily1000
-        : selfWarningAnnotation.dataPoints.daily,
+    x: mode === 'weekly' ? selfWarningAnnotation.dataPoints.weekly : selfWarningAnnotation.dataPoints.daily,
     strokeDashArray: 0,
     borderColor: '#775DD0',
     label: {
