@@ -25,6 +25,49 @@
         },
         "topics": [
             {
+                "title": "Neu: Ende der CWA-Entwicklung",
+                "id": "end_of_development",
+                "icon": "/assets/img/icons/info_faq.svg",
+                "sections":[
+                    {
+                        "title": "Generelle Fragen",
+                        "id": "ramp_down_general",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Hier werden bald generelle Themen zum Ende der Entwicklung der Corona-Warn-App publiziert.",
+                                "anchor": "ramp_down",
+                                "active": false
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Auswirkungen",
+                        "id": "ramp_down_effects",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Hier werden wir darüber informieren, welche funktionalen Auswirkungen das Ende der Entwicklungsarbeiten an der CWA hat.",
+                                "anchor": "ramp_down_effects",
+                                "active": false
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Alternativen",
+                        "id": "ramp_down_alternatives",
+                        "indexed": true,
+                        "accordion": [
+                            {
+                                "title": "Hier bereiten wir Antworten zu Fragen vor, welche Möglichkeiten es nach Ende der Entwicklungsarbeiten an der CWA künftig noch gibt.",
+                                "anchor": "ramp_down_alternatives",
+                                "active": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "App-Funktionen",
                 "id": "application",
                 "icon": "/assets/img/icons/smartphone.svg",
@@ -280,7 +323,7 @@
                                     "<b>Aktualisiert am 31. Januar 2023</b>",
                                     "Seit der Version 3.0 der Corona-Warn-App wird keine teleTAN mehr benötigt, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde. Das heißt Sie können Ihr Antigen-Schnelltest- oder PCR-Schnelltest-Ergebnis (Point-of-Care-PCR-Tests) ohne eine TAN über die App teilen.",
                                     "Mit den Versionen 2.28 und davor ist es nicht möglich, ein positives Ergebnis aus einem  <a href='#glossary_rapid_antigen_test' target='_blank'>Antigen-Schnelltest</a>, <a href='#glossary_selftest' target='_blank'>Selbsttest</a> oder <a href='#glossary_rapid_pcr_test' target='_blank'>PCR-Schnelltest</a> über die TAN-Hotline zu teilen.",
-                                    "Siehe auch FAQ: <a href='#warn_without_tan' target='_blank' >Wie warne ich ohne teleTAN?</a></li>"
+                                    "Siehe auch FAQ: <a href='#warn_without_tan' target='_blank' >Wie warne ich ohne teleTAN?</a>"
                                 ]
                             },
                             {
@@ -370,8 +413,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 31. Januar 2023</b>",
-                                    "Diese Funktion der Corona-Warn-App steht seit der Version 3.0 nicht mehr zur Verfügung und kann auch mit den vorherigen Versionen 2.9 bis 2.28 nicht mehr nach dem 31. Januar 2023 genutzt werden, da die Verifikations-Hotline (TAN-Hotline) zu diesem Datum eingestellt wurde.",
-                                    "<hr>",
+                                    "<div class='update'>Diese Funktion der Corona-Warn-App steht seit der Version 3.0 nicht mehr zur Verfügung und kann auch mit den vorherigen Versionen 2.9 bis 2.28 nicht mehr nach dem 31. Januar 2023 genutzt werden, da die Verifikations-Hotline (TAN-Hotline) zu diesem Datum eingestellt wurde.</div>",
                                     "Als Organisator einer Veranstaltung können Sie ab der Version 2.9 bis zu der Version 2.28 der Corona-Warn-App (bis zum 31. Januar 2023) nach Aufforderung durch das Gesundheitsamt Ihre Gäste in Vertretung für eine positiv getestete Person warnen, die an einer Veranstaltung teilgenommen hat, aber nicht über die Corona-Warn-App (CWA) eingecheckt war.",
                                     "Wird eine nicht eingecheckte Person später positiv getestet, können die Gäste gewarnt werden, wenn sie sich zur gleichen Zeit oder bis zu 30 Minuten nach der positiv getesteten Person im gleichen Raum aufgehalten haben.",
                                     "Um als Organisator einer Veranstaltung andere Gäste über die CWA zu warnen, gehen Sie bitte folgendermaßen vor:",
@@ -704,7 +746,8 @@
                                 "anchor": "cert_eu_travel",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktuell</b><br/>Bitte beachten Sie das sich das Verhalten der Zertifikatsgültigkeitsprüfung mit Version 2.8 geändert hat. Weitere Informationen zu dieser Änderung finden Sie in dem FAQ-Eintrag: <a href='#dcc_no_rules' target='_blank' >Warum zeigt die Corona-Warn-App ab Version 2.8 an, dass mein Zertifikat nicht prüfbar ist, obwohl mein Zertifikat in Versionen 2.6 & 2.7 als gültig anzeigt wurde?</a><hr>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Bitte beachten Sie das sich das Verhalten der Zertifikatsgültigkeitsprüfung mit Version 2.8 geändert hat. Weitere Informationen zu dieser Änderung finden Sie in dem FAQ-Eintrag: <a href='#dcc_no_rules' target='_blank' >Warum zeigt die Corona-Warn-App ab Version 2.8 an, dass mein Zertifikat nicht prüfbar ist, obwohl mein Zertifikat in Versionen 2.6 & 2.7 als gültig anzeigt wurde?</a></div>",
                                     "Sie können ab der Version 2.6 vor einer Reise prüfen, ob Ihre Zertifikate (Test-, Genesenen-, und/oder Impfzertifikat) in einem ausgewählten Land zum Zeitpunkt Ihrer Reise gültig sind. Die Corona-Warn-App berücksichtigt dafür die geltenden Akzeptanzregeln (in der App 'Einreiseregeln' genannt) des ausgewählten Reiselandes und gleicht sie mit verschiedenen Parametern des Zertifikats, wie Datum und Art des Tests, Testzentrum oder Datum einer Impfung, ab.",
                                     "Jedes europäische Land, das digitale COVID-Zertifikate der EU unterstützt, hat die Möglichkeit Regeln hochzuladen, die die Corona-Warn-App zur Überprüfung abgleichen kann. Zum Start der neuen Funktion haben Irland, Litauen, Luxemburg, die Niederlande, Slowenien und Spanien, zusammen mit Deutschland, Regeln hinterlegt, weitere Länder folgen in den kommenden Wochen.",
                                     "Zeigt die App nach Prüfung an, dass keine Einreiseregeln vorhanden sind, können Sie sich unter <a href='https://reopen.europa.eu/de' target='_blank' rel='noopener noreferrer'>https://reopen.europa.eu/de</a> über die geltenden nationalen Bestimmungen informieren.",
@@ -1158,12 +1201,14 @@
                                 "anchor": "vac_booster_jj",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL 2. Februar 2022</b><br/>Siehe auch diesen FAQ Artikel bezüglich <a href='#vc_2of1' target='_blank'>2/1-Impfzertifikaten</a>.",
-                                    "<b>AKTUELL 30. Dezember 2021</b> <br/> Kürzlich hat die Europäische Kommission die Vorschriften für die Kodierung von Impfzertifikaten angepasst. Dies wird in Zukunft ermöglichen, dass Impfzertifikate, die den Abschluss der ersten Impfserie belegen, immer von Impfzertifikaten unterschieden werden können, die nach einer <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfung</a> ausgestellt wurden. <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfungen</a> werden in Zukunft wie folgt gekennzeichnet:",
+                                    "<b>Aktualisiert am 2. Februar 2022</b>",
+                                    "<div class='update'>Siehe auch diesen FAQ Artikel bezüglich <a href='#vc_2of1' target='_blank'>2/1-Impfzertifikaten</a>.</div>",
+                                    "<b>Aktualisiert am 30. Dezember 2021</b>",
+                                    "<div class='update'>Kürzlich hat die Europäische Kommission die Vorschriften für die Kodierung von Impfzertifikaten angepasst. Dies wird in Zukunft ermöglichen, dass Impfzertifikate, die den Abschluss der ersten Impfserie belegen, immer von Impfzertifikaten unterschieden werden können, die nach einer <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfung</a> ausgestellt wurden. <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfungen</a> werden in Zukunft wie folgt gekennzeichnet:",
                                     "• 3/3 für eine <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfung</a> nach einer ersten Impfserie mit zwei Einzeldosen.",
                                     "• 2/1 für eine <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfung</a> nach der Impfung mit einer Einzeldosis oder der Verabreichung einer Dosis eines aus zwei Einzeldosen bestehenden Impfstoffs an eine genesene Person.",
                                     "Die Anpassung der App steht noch aus.",
-                                    "Siehe auch die <a href='https://ec.europa.eu/commission/presscorner/detail/de/ip_21_6837' target='_blank' rel='noopener noreferrer'>Pressemitteilung</a> von der Europäischen Kommission vom 21. Dezember 2021.<hr/>",
+                                    "Siehe auch die <a href='https://ec.europa.eu/commission/presscorner/detail/de/ip_21_6837' target='_blank' rel='noopener noreferrer'>Pressemitteilung</a> von der Europäischen Kommission vom 21. Dezember 2021.</div>",
                                     "Es gibt drei Fälle, in denen es zu einer Anzeige von einer vierzehntägigen Wartezeit nach einer <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfung</a> kommen kann:",
                                     "Fall 1: Die <a href='#glossary_basic_immunization' target='_blank'>Grundimmunisierung</a> erfolgt mit dem Impfstoff von Johnson & Johnson (J&J).",
                                     "Fall 2: Nach einer Genesung von COVID-19 erfolgt eine zweite <a href='#glossary_auffrischimpfung' target='_blank'>Auffrischimpfung</a>",
@@ -1193,7 +1238,10 @@
                                 "anchor": "admission_policy",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktualisiert am 28. September 2022:</b><br><b>Der Status-Nachweis (3G, 3G+, 2G, 2G+) ist zurzeit nicht relevant und wird daher nicht von der App ausgewiesen</b><hr>Seit Version 2.18 zeigt Ihnen die Corona-Warn-App den Status-Nachweis 2G+ auch für „frisch“-geimpfte, “frisch”-genesene und „geboosterte“ Benutzer an, wenn die entsprechenden digitalen COVID-Zertifikate in der App abgelegt werden und auch auf den gleichen Namen sowie Geburtsdatum ausgestellt worden sind.",
+                                    "<b>Aktualisiert am 28. September 2022</b>",
+                                    "<div class='update'>Der Status-Nachweis (3G, 3G+, 2G, 2G+) ist zurzeit nicht relevant und wird daher nicht von der App ausgewiesen</div>",
+                                    "<b>Aktualisiert am 30. März 2022</b>",
+                                    "<div class='update'>Seit Version 2.18 zeigt Ihnen die Corona-Warn-App den Status-Nachweis 2G+ auch für „frisch“-geimpfte, “frisch”-genesene und „geboosterte“ Benutzer an, wenn die entsprechenden digitalen COVID-Zertifikate in der App abgelegt werden und auch auf den gleichen Namen sowie Geburtsdatum ausgestellt worden sind.</div>",
                                     "Die Corona-Warn-App zeigt Ihnen in der Übersicht der Zertifikate für jede Person, für die Sie Zertifikate hinterlegt haben, einen Eintrag an. Seit Version 2.16 wird neben dem Namen der Person in einem blauen Punkt der Status-Nachweis angezeigt, welcher durch die abgelegten Zertifikate der jeweiligen Person erreicht wird. Derzeit unterscheiden wir vier G-Status: 3G, 3G+, 2G und 2G+. Die Corona-Warn-App zeigt Ihnen immer den Status an, der durch die hinterlegten Zertifikate höchstens erfüllt wird.",
                                     "Ab Version 2.20 werden Sie immer dann durch eine Nachricht informiert, wenn sich Ihr G-Status geändert hat. Das kann zum Beispiel der Fall sein, wenn Sie ein Zertifikat hinzugefügt haben oder die Regeln sich geändert haben.",
                                     "Da nicht alle Kombinationen von Impfungen und Genesungen durch das Nummerierungsschema eindeutig abgebildet werden können, weist die App im Zweifelsfall den nächst-höherwertigen Status aus: <ul><li>Status-Nachweis 2G+: Anforderungen erfüllt zu 2G+, 2G, 3G+, 3G.</li><li>Status-Nachweis 2G: Anforderungen erfüllt zu 2G, 3G+, 3G.</li><li>Status-Nachweis 3G+: Anforderungen erfüllt zu 3G+, 3G.</li><li>Status-Nachweis 3G: Anforderungen erfüllt zu 3G.</li></ul>",
@@ -1252,9 +1300,10 @@
                                 "anchor": "mask_rules",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktualisiert am 21. Oktober 2022</b><br/>Ab Version 2.27 zeigt Ihnen die Corona-Warn-App (CWA) im Bereich \"Zertifikate\" den aktuellen Maskenstatus als entsprechendes Symbol, falls Bundesländer von der Möglichkeit Gebrauch machen, eigene weitergehende Maskenpflichten festzulegen.<br>Dabei wird in die \"bundesweiten Regelungen\" und \"weitergehenden Maßnahmen der Länder\" laut dem Herbst-/Winterplan der Bundesregierung unterteilt (vgl. Quellen).<br><b>Aktuell existieren keine weitergehenden Maßnahmen der Bundesländer.</b><hr/>",
+                                    "<b>Aktualisiert am 21. Oktober 2022</b>",
+                                    "<div class='update'>Ab Version 2.27 zeigt Ihnen die Corona-Warn-App (CWA) im Bereich \"Zertifikate\" den aktuellen Maskenstatus als entsprechendes Symbol, falls Bundesländer von der Möglichkeit Gebrauch machen, eigene weitergehende Maskenpflichten festzulegen.<br>Dabei wird in die \"bundesweiten Regelungen\" und \"weitergehenden Maßnahmen der Länder\" laut dem Herbst-/Winterplan der Bundesregierung unterteilt (vgl. Quellen).<br><b>Aktuell existieren keine weitergehenden Maßnahmen der Bundesländer.</b>",
                                     "Außerdem hat das Projektteam die Anzeige des Status-Nachweises (3G, 3G+, 2G, 2G+) auf den digitalen COVID-Zertifikaten entfernt, da es derzeit keine Maßnahmen und Vorgaben gibt, die an den G-Status gekoppelt sind. Die Textbox in der CWA informiert Nutzer*innen entsprechend: „Der Status-Nachweis ist zurzeit nicht relevant und wird daher nicht von der App ausgewiesen.“",
-                                    "Des Weiteren zeigt die Infobox zum Impfstatus in der Detailansicht des Zertifikats-Bereich Nutzer*innen ab Version 2.27 ihren Impfstatus auf Grundlage des neuen Infektionsschutzgesetzes an.",
+                                    "Des Weiteren zeigt die Infobox zum Impfstatus in der Detailansicht des Zertifikats-Bereich Nutzer*innen ab Version 2.27 ihren Impfstatus auf Grundlage des neuen Infektionsschutzgesetzes an.</div>",
                                     "<b>Überblick der gesetzlichen Regelungen (COVID-19-Schutzgesetz)</b>",
                                     "<b>Bundesweite Regelungen</b><br/>Das Tragen einer Maske ist bundesweit nur in bestimmten Szenarien verpflichtend (vgl. Quellen):<br/><ul><li>Medizinische und therapeutische Praxen</li><li>Krankenhäuser/Kliniken und Pflegeeinrichtungen</li><li>Verkehrsmittel im öffentlichen Personenfernverkehr (außer in Flugzeugen)</li></ul>Eine Maskenpflichtbefreiung für diese Szenarien ist aktuell nicht vorgesehen. Die CWA zeigt diese gesetzliche Maskenpflicht nicht extra an.<br />",
                                     "<b>Mögliche weitergehende Maßnahmen der Länder</b><br>Die Bundesländer können auf Veränderungen im Pandemie-Geschehen mit lokalen erweiterten Regeln reagieren:<br><ul><li>Die Länder können eine Maskenpflicht für weitere Anwendungsfälle festlegen (z.&nbsp;B. Innenräume in gastronomischen, kulturellen oder Freizeit-Einrichtungen).</li><li>Sie können aber auch Ausnahmen für das Tragen von Masken definieren (z.&nbsp;B. für einen bestimmten Zeitraum nach einer „frischen“ Impfung/Genesung oder auch nach einem negativen Test).</li></ul>",
@@ -1274,7 +1323,8 @@
                                 "anchor": "val_service_basics",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL 12. April 2022</b><br/>Bereits seit Oktober 2021 liegen die europaweit gültigen Anforderungen an Onlineverifikationsdienste vor. In Deutschland ist <b>kein Anbieter eines Onlineverifikationsdienstes zugelassen</b> worden. Mit Version 2.15 ist die CWA aber bereit, entsprechende Verifikationsdienste zu unterstützen.<hr/>",
+                                    "<b>Aktualisiert am 12. April 2022</b>",
+                                    "<div class='update'>Bereits seit Oktober 2021 liegen die europaweit gültigen Anforderungen an Onlineverifikationsdienste vor. In Deutschland ist <b>kein Anbieter eines Onlineverifikationsdienstes zugelassen</b> worden. Mit Version 2.15 ist die CWA aber bereit, entsprechende Verifikationsdienste zu unterstützen.</div>",
                                     "<b>Was ist ein DCC-Validierungsservice?</b>",
                                     "Unternehmen müssen gesetzliche Vorgaben zum Schutz der Gesundheit von Belegschaft und Kund*innen einhalten. Sie benötigen daher in der Pandemie ein verlässliches Zutrittsmanagement für beispielsweise Geschäftsräume, Werkshallen, Flugzeuge, Straßenbahnen, Hotels und Restaurants oder Veranstaltungen. Sie müssen schnell und unkompliziert die Echtheit von Digitalen COVID-Zertifikaten (DCCs) überprüfen können. Dem dient ein Corona Validation Service."
                                 ]
@@ -1342,7 +1392,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch kann mit der Corona-Warn-App durch Scannen von luca-QR-Codes weiterhin eingecheckt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch kann mit der Corona-Warn-App durch Scannen von luca-QR-Codes weiterhin eingecheckt werden.</div>",
                                     "Sie können die Event-QR-Codes der luca-App mit der Corona-Warn-App scannen. Es ist derzeit nicht möglich die Event-QR-Codes von anderen Kontaktverfolgungs-Apps zu scannen. Genauere Informationen dazu im <a href='#check_in_luca' target='_blank' >Abschnitt zur Mitnutzung der luca-QR-Codes</a>"
                                 ]
                             },
@@ -1416,8 +1466,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 31. Januar 2023</b>",
-                                    "Diese Funktion der Corona-Warn-App steht seit der Version 3.0 nicht mehr zur Verfügung und kann auch mit den vorherigen Versionen 2.9 bis 2.28 nicht mehr nach dem 31. Januar 2023 genutzt werden, da die Verifikations-Hotline (TAN-Hotline) zu diesem Datum eingestellt wird.",
-                                    "<hr>",
+                                    "<div class='update'>Diese Funktion der Corona-Warn-App steht seit der Version 3.0 nicht mehr zur Verfügung und kann auch mit den vorherigen Versionen 2.9 bis 2.28 nicht mehr nach dem 31. Januar 2023 genutzt werden, da die Verifikations-Hotline (TAN-Hotline) zu diesem Datum eingestellt wird.</div>",
                                     "Veranstalter*innen können unabhängig davon, welchen QR-Code sie mit der CWA eingescannt haben, die sogenannte Stellvertreter-Warnung verwenden. Weitere Informationen zur Stellvertreter-Warnung finden Sie unter den folgenden Links: <ul><li><a href='#warn_for_others' target='_blank'>FAQ: Wie kann ich in Vertretung warnen?</a></li><li><a href='../../blog/2021-09-08-cwa-version-2-9/' target='_blank'>Blog: Corona-Warn-App Version 2.9: Veranstalter*innen können Gäste im Auftrag des Gesundheitsamtes über die Check-in-Funktion warnen</a></li></ul>"
                                 ]
                             },
@@ -1436,7 +1485,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Auch als diese Funktionalität in der luca-App noch gegeben war, war es der luca-App nicht möglich QR-Codes der CWA zu lesen und zu verarbeiten.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Auch als diese Funktionalität in der luca-App noch gegeben war, war es der luca-App nicht möglich QR-Codes der CWA zu lesen und zu verarbeiten.</div>",
                                     "Das luca-System übermittelte den Gesundheitsämtern im Rahmen einer Kontaktnachverfolgung die hierzu benötigten Kontaktdaten von Besuchenden der betreffenden Veranstaltung oder des Betriebs, die Gesundheitsamt-konform sein mussten. Bei der CWA ist eine Übermittlung von Kontaktdaten aber nicht vorgesehen. Für diesen Vorgang waren also QR-Codes nötig, die sich von denen der CWA unterschieden."
                                 ]
                             },
@@ -1446,7 +1495,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Auch als diese Funktionalität in der luca-App noch gegeben war, wurden Nutzer der luca-App nicht automatisch gewarnt, wenn CWA-Nutzer positiv getestet wurden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Auch als diese Funktionalität in der luca-App noch gegeben war, wurden Nutzer der luca-App nicht automatisch gewarnt, wenn CWA-Nutzer positiv getestet wurden.</div>",
                                     "Selbst wenn Nutzende der beiden Apps den gleichen QR-Code scannten, flossen keine Daten von einem System in das andere. Erst wenn das zuständige Gesundheitsamt beispielsweise von einem Testlabor von der Infektion erfuhr, konnte es die betroffenen luca-Nutzenden persönlich über den möglichen Risikokontakt informieren. Aber: Das Prinzip der CWA basierte darauf, dass Nutzende via „roter Kachel“ (erhöhtes Risiko) im Falle einer Risiko-Begegnung pseudonym gewarnt werden. Hierbei war keine Interaktion mit einem Gesundheitsamt nötig."
                                 ]
                             },
@@ -1456,7 +1505,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App noch luca-Qr-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App noch luca-Qr-Codes gescannt werden.</div>",
                                     "Die ab dem 25. Mai 2021 erzeugten luca-QR-Codes können sowohl von der Corona-Warn-App als auch von luca-App (seit Frühjahr 2022 nicht mehr) gelesen (eingescannt) und für den Check-in-Prozess verarbeitet werden – sofern die Betreibenden dem bei der Erstellung explizit zugestimmt haben. Die Unterstützung privater luca-QR-Codes ist weiterhin nicht möglich."
                                 ]
                             }
@@ -1510,7 +1559,8 @@
                                 "anchor": "data_donation_and_EDUS",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>In unserem <a href='../../science/' target='_blank'>Science-Blog</a> veröffentlichen wir die Ergebnisse der wissenschaftlichen Evaluation durch das Robert Koch-Institut. Diese Evaluation findet auf Grundlage der Daten der Datenspende und der ereignisbasierten wissenschaftlichen Befragung statt.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>In unserem <a href='../../science/' target='_blank'>Science-Blog</a> veröffentlichen wir die Ergebnisse der wissenschaftlichen Evaluation durch das Robert Koch-Institut. Diese Evaluation findet auf Grundlage der Daten der Datenspende und der ereignisbasierten wissenschaftlichen Befragung statt.</div>",
                                     "Mehr Informationen zu den Themen Datenspende durch den Nutzer und ereignisbasierte wissenschaftliche Befragung finden Sie in diesem Blog-Eintrag:",
                                     "<a href='../../blog/2021-03-04-corona-warn-app-version-1-13/' target='_blank' >Corona-Warn-App nun mit Datenspende und Link zu wissenschaftlicher Befragung</a>.",
                                     "Weitere Details bezüglich des Datenschutzes finden Sie auf diesem Poster:",
@@ -1616,7 +1666,7 @@
                                 "textblock": [
                                     "<b>Aktualisiert am 18. Januar 2023</b>",
                                     "Wenn die Corona-Warn-App Ihnen mit der roten Karte ein hohes Infektionsrisiko anzeigt, lassen Sie sich bitte mit einem Antigen-Schnelltest testen oder testen Sie sich selbst, am besten mehrfach im Abstand von zwei Tagen. Für den Fall, dass ein Testergebnis positiv ausfällt, sollten Sie sich durch einen PCR-Test absichern.",
-                                    "Für einen reibungslosen Ablauf beim Testen, zum Empfang des Testbefundes und zu Warnung Anderer bei einem positiven Ergebnis folgen Sie bitte den Schritten in diesen Übersichten vom Robert Koch-Institut:<ul><li><a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank'>Positiv gestestet? So teilen Sie Ihr Ergebnis</a></li><li><a href='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl.pdf' target='_blank'>Antigen Schnelltest? So teilen Sie Ihr Ergebnis</a></li></ul>",
+                                    "Für einen reibungslosen Ablauf beim Testen, zum Empfang des Testbefundes und zu Warnung Anderer bei einem positiven Ergebnis folgen Sie bitte den Schritten in diesen Übersichten vom Robert Koch-Institut:<ul><li><a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank'>Positiv getestet? So teilen Sie Ihr Ergebnis</a></li><li><a href='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl.pdf' target='_blank'>Antigen Schnelltest? So teilen Sie Ihr Ergebnis</a></li></ul>",
                                     "<a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank'><img src='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.jpg' alt='Positives Testergebnis teilen Anleitung PDF'></a><a href='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl.pdf' target='_blank'><img src='/assets/documents/DE_CWA_RKI-Plakat_Schnelltests_kl-1.png' alt='Positives Antigen-Schnelltestergebnis teilen Anleitung PDF'></a>",
                                     "Siehe auch: <ul><li><a href='#voluntary_self_quarantine' target='_blank'>Warum wird die freiwillige Selbstquarantäne empfohlen?</a></li><li><a href='#quarantine_measures' target='_blank'>Fragen zu Quarantäne-Maßnahmen</a></li><li><a href='#rat_red_card_which_test' target='_blank'>Wenn ich eine hohe Risiko-Begegnung in der App angezeigt bekomme, d.&nbsp;h. eine rote Karte/Kachel, sollte ich dann einen Schnelltest oder PCR-Test machen?</a></li><li><a href='#vac_cert_red_warning' target='_blank'>Wie sollte man sich verhalten, wenn man teil- oder vollständig geimpft ist, aber eine rote Warnung in der Corona-Warn-App erhält?</a></li><li><a href='#where_can_i_get_tested' target='_blank' >Wo kann man sich testen lassen?</a></li><li><a href='#warn_without_tan' target='_blank' >“Wie warne ich ohne teleTAN?”</a></li></ul>"
                                 ]
@@ -1663,7 +1713,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 31. Januar 2023</b>",
-                                    "Beachten Sie bitte, dass seit der Version 3.0 der Corona-Warn-App keine teleTAN mehr benötigt wird, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde. Daher wurde der Betrieb der TAN-Hotline zum 31. Januar 2023 eingestellt. Das im folgenden Text beschriebene TAN-Verfahren kann nicht mehr genutzt werden. Siehe stattdessen <a href='#warn_without_tan' target='_blank' >FAQ: Wie warne ich ohne teleTAN?</a>",
+                                    "<div class='update'>Beachten Sie bitte, dass seit der Version 3.0 der Corona-Warn-App keine teleTAN mehr benötigt wird, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde. Daher wurde der Betrieb der TAN-Hotline zum 31. Januar 2023 eingestellt. Das im folgenden Text beschriebene TAN-Verfahren kann nicht mehr genutzt werden. Siehe stattdessen <a href='#warn_without_tan' target='_blank' >FAQ: Wie warne ich ohne teleTAN?</a></div>",
                                     "<div class='container'><div class='row'><div class='col-sm'><p><b>Zweck</b></p><p>Wenn Sie auf das SARS-CoV-2-Virus getestet werden und das Ergebnis digital in der Corona-Warn-App (CWA) empfangen haben, können Sie bei einem positiven Befund in der CWA andere Nutzer*innen warnen und so helfen, ggf. Kontaktketten frühzeitig zu unterbrechen.</p><p>Wird nach dem Einscannen des QR-Codes vom Formular 10C/OEGD (oder ein äquivalentes Formular) das Ergebnis nicht in die CWA übertragen, oder Sie haben keinen für die Corona-Warn-App kompatiblen QR-Code erhalten, können Sie den positiven Befund trotzdem in der App registrieren und damit andere warnen, sofern Sie eine TAN von der Verifikations-Hotline empfangen.</p></div><div class='col-sm'><a href='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.pdf' target='_blank'><img src='/assets/documents/BPA_Corona-Warn-App_RKI-Plakat_Testcenter_A1_ICv2_RZ04_x3b.jpg' alt='Positives Testergebnis teilen Anleitung PDF'></a></div></div></div>",
                                     "<b>Ablauf</b>",
                                     "<ul><li>Sie erreichen die Hotline ausschließlich telefonisch.<br>Rufnummer: nicht mehr verfügbar (in Deutschland) bzw. nicht mehr verfügbar (international).<br>Wann Sie die Hotline erreichen, prüfen Sie bitte hier:<br><a href='#international_phone_numbers' target='_blank'>FAQ: So erreichen Sie uns</a>.</li><li>Schritt 1: Beantworten Sie die Fragen des Hotline-Mitarbeiters.</li><li>Schritt 2: Sie erhalten einen Rückruf von diesem Mitarbeiter, um Ihnen die TAN mitzuteilen. Diese TAN ist eine Stunde lang gültig.</li><li>Schritt 3: Entfernen Sie, falls registriert, den Test ohne Ergebnis aus der Corona-Warn-App.</li><li>Schritt 4: Unter Status der CWA wählen Sie die Schaltfläche „Weiter“ in der Funktion „Sie lassen sich testen?“.<br>Unter der Frage „Ihr PCR-Test war positiv?“ finden Sie die Funktion „TAN für PCR-Test eingeben“, wählen Sie diese Funktion und geben Sie die 10-stellige TAN ein, die Ihnen mitgeteilt wurde.</li><li>Ihr positives Testergebnis ist nun in der App registriert. Nun können Sie über die App andere warnen.</li></ul>",
@@ -1726,7 +1776,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 31. Januar 2023</b>",
-                                    "Der Betrieb der TAN-Hotline wurde zum 31. Januar 2023 eingestellt. Beachten Sie bitte, dass seit der Version 3.0 der Corona-Warn-App keine teleTAN mehr benötigt wird, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde.",
+                                    "<div class='update'>Der Betrieb der TAN-Hotline wurde zum 31. Januar 2023 eingestellt. Beachten Sie bitte, dass seit der Version 3.0 der Corona-Warn-App keine teleTAN mehr benötigt wird, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde.</div>",
                                     "Falls das Testergebnis nicht in der Corona-Warn-App abrufbar ist, sollte das zuständige Fachpersonal, Testcenter oder Gesundheitsamt kontaktiert werden, um das Testergebnis zu erhalten. <br/>Um Ihnen die Suche nach dem zuständigen Gesundheitsamt zu erleichtern, hat das RKI ein entsprechendes Tool zur Verfügung gestellt. Durch die Angabe der Postleitzahl oder des Wohnortes, wird sofort das zuständige Gesundheitsamt inklusive der Kontaktdaten angezeigt: <a href='https://tools.rki.de/PLZTool' target='_blank' rel='noopener noreferrer'>Robert Koch-Institut Tool: Gesundheitsamt nach Postleitzahl oder Ort</a>",
                                     "Weitere Hinweise zum PCR-Test-QR-Code Verfahren finden Sie in diesem FAQ Eintrag: <a href='#qr_test' target='_blank'>Ich habe einen PCR-Test-QR-Code eingescannt, aber das Testergebnis konnte über Tage nicht abgerufen werden.</a>",
                                     "Die Webseiten der Bundesregierung bieten allgemeine Informationen und Videos: <a href='https://www.bundesregierung.de/breg-de/themen/corona-warn-app' target='_blank' rel='noopener noreferrer'>https://www.bundesregierung.de/breg-de/themen/corona-warn-app</a>.",
@@ -1776,7 +1826,6 @@
                                     "<hr/>",
                                     "<div class='container'><div class='row'><div class='col-sm'>Eine Übersicht der <b>PCR- und Schnell-Teststellen</b> finden Sie auf dieser <a href='https://www.zusammengegencorona.de/testen/?articlefilter=alleartikel' target='_blank' rel='noopener noreferrer'>BMG Seite</a> (nicht ersichtlich, ob die Teststelle an die CWA angebunden ist oder nicht).</div><div class='col-sm'><img class='img-fluid' src='/assets/img/faq/BMG_testzentren.png' alt='PCR- und Schnelltestinformationen BMG'></div></div></div>",
                                     "<hr/>",
-                                    "Weitere Liste mit Teststellen aus der GitHub-Community: <a href='https://github.com/corona-warn-app/cwa-documentation/issues/569' target='_blank' rel='noopener noreferrer'>Wo kann man sich testen lassen?</a>",
                                     "Siehe auch <a href=#test_result_issues target='_blank'>Was kann ich tun, wenn ich mein Testergebnis oder Testzertifikat nicht erhalten habe?</a>"
                                 ]
                             },
@@ -1848,7 +1897,7 @@
                                 "anchor": "minimum_requirements",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL 10. Februar 2021</b>",
+                                    "<b>Aktualisiert am 10. Februar 2021</b>",
                                     "<b>iOS - Mindestvoraussetzungen für das Betriebssystem</b>",
                                     "Für die Geräte iPhone 5s, iPhone 6 bzw. iPhone 6 Plus wird mindestens iOS Version 12.5 benötigt. Das iPhone SE (1. Generation), iPhone 6s, iPhone 6s Plus und neuere iOS-Geräte benötigen mindestens iOS Version 13.7. Diese Versionen des iOS-Betriebssystems beinhalten auch die benötigte Version v2 des Apple Exposure Notification Framework.",
                                     "Siehe auch <a href='#ios135' target='_blank' >[Apple/iOS]: Warum ist iOS 13.7 Mindestvoraussetzung?</a> und die Blog Artikel <a href='../../blog/2020-12-15-ios-12-5' target='_blank' >Telekom und SAP werden die Corona-Warn-App für iOS 12.5 verfügbar machen</a> und <a href='../../blog/2021-02-10-corona-warn-app-version-1-12/' target='_blank' >Corona-Warn-App Version 1.12 mit zwei Neuerungen</a>.",
@@ -1865,7 +1914,8 @@
                                 "anchor": "ios135",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL 10. Februar 2021</b><br/>Mit der Corona-Warn-App Version 1.12 werden zusätzlich auch die älteren iPhone Modelle iPhone 5s, iPhone 6, und iPhone 6 Plus unterstützt. Voraussetzung ist auf diesen Geräten das iOS Betriebssystem mindestens auf die Version iOS 12.5 zu aktualisieren.",
+                                    "<b>Aktualisiert am 10. Februar 2021</b>",
+                                    "<div class='update'>Mit der Corona-Warn-App Version 1.12 werden zusätzlich auch die älteren iPhone Modelle iPhone 5s, iPhone 6, und iPhone 6 Plus unterstützt. Voraussetzung ist auf diesen Geräten das iOS Betriebssystem mindestens auf die Version iOS 12.5 zu aktualisieren.</div>",
                                     "Apple stellt für die Modelle iPhone SE (1. Generation), iPhone 6s, und neuere Modelle die Betriebssystem-Version iOS 13.7 und höher bereit.",
                                     "Seit dem 5. Februar 2021 werden nur die Corona-Warn-App (CWA) Versionen 1.5.3 und höher unterstützt. Aus diesem Grund erhalten Nutzer mit älteren Versionen einen Hinweis, ihre App entsprechend zu aktualisieren. iOS Nutzer, die bisher beispielsweise iOS 13.5 und CWA Version 1.3 genutzt haben, müssen ihr iOS Betriebssystem nun zwingend auf mindestens iOS 13.7 aktualisieren, um die CWA weiterhin zu nutzen. Nur in diesem Fall kann eine technisch korrekte Funktion der App sichergestellt werden.",
                                     "<ul><li>Bitte führen Sie zunächst ein Update Ihrer iOS-Version durch. Auch ältere Smartphones, wie bspw. das iPhone SE, 6S oder 6S Plus unterstützen das neueste iOS Betriebssystem. Sie können Ihr iPhone somit mindestens auf iOS 13.7 aktualisieren. Aus Sicherheitsgründen sollten Sie Ihr iPhone immer aktuell halten, da Apple auch regelmäßig kleinere Sicherheitslücken mit den Updates behebt. Sie können dies auf Ihrem iPhone unter Einstellungen – Allgemein – Softwareupdate durchführen.</li><li>Im Anschluss aktualisieren Sie bitte die Corona-Warn-App. Die Corona-Warn-App muss zudem mindestens in der Version 1.5 installiert sein. Inzwischen ist bereits Version 1.12 verfügbar. Wir bitten Sie daher, Ihre Corona-Warn-App zu aktualisieren.</li> </ul>",
@@ -1934,13 +1984,15 @@
                                 "anchor": "interoperability_countries",
                                 "active": false,
                                 "textblock": [
+                                    "<b>Aktualisiert am 22. Februar 2023</b>",
+                                    "<div class='update'>Das \"Interoperability Gateway\" (<a href='#glossary_efgs' target='_blank'>European Federation Gateway Service</a>; <a href='#glossary_efgs' target='_blank'>EFGS</a>) wurde im Februar 2023 EU-weit abgeschaltet. Es findet kein Austausch der Warnmeldungen über das Gateway mehr statt und die Corona-Warn-App meldet Ihnen somit auch keine Warnungen mehr, die in Apps anderer Länder ausgelöst wurden.</div>",
                                     "<img src='/assets/img/faq/eu-flag.png' width=100 alt='EU flag'> Dieses Vorhaben wurde mit Mitteln der Europäischen Kommission gefördert.",
                                     "Gemeinsam mit der EU-Kommission wurde eine Infrastruktur für einen sicheren Informationsaustausch entwickelt, die als sog. \"Interoperability Gateway\" bezeichnet wird. Dieses Gateway ermöglicht, dass die Corona-Warn-App über Landesgrenzen hinaus funktioniert und auch im Ausland potentielle Warnmeldungen empfangen werden können. Detaillierte Informationen zum Gateway bietet die EU-Kommission unter <a href='https://ec.europa.eu/commission/presscorner/detail/de/qanda_20_1905#gateway' target='_blank' rel='noopener noreferrer'>Coronavirus: EU-Datenabgleichsdienst für Kontaktnachverfolgungs- und Warn-Apps – Fragen und Antworten</a>. Damit auch Warnungen zwischen Nutzern der Schweizer Corona-App und der Corona-Warn-App möglich sind, betreibt das RKI zudem gemeinsam mit der Schweiz (Bundesamt für Gesundheit der Schweizerischen Eidgenossenschaft) einen weiteren Austausch-Server (deaktiviert am 1.04.2022).",
                                     "Um weitere Informationen in der App zu sehen, klicken Sie",
                                     "<ol><li>'RISIKO-ERMITTLUNG AKTIV (bzw. GESTOPPT) an'</li><li>Dann auf 'Länderübergreifende Risiko Ermittlung' klicken.</li><li>Scrollen Sie nach unten zu der Liste der Länder.</li></ol>",
-                                    "Nachstehend finden Sie eine Liste der derzeit teilnehmenden Länder und Angaben zu den zuständigen Gesundheitsbehörden:",
-                                    "(Stand: 17.10.2022)",
-                                    "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Belgien<br>(ab 06.01.2021)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgien<br>E-Mail: coronalert@sciensano.be <i><b>oder</b></i> dpo@sciensano.be<br>Telefon: +32 479 317 455</td></tr><tr><td>Dänemark<br>(ab 06.11.2020 bis 01.04.2022)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Telefon: +45 72286600</td></tr><tr><td>Deutschland<br>(ab 17.10.2020)</td><td>Robert Koch-Institut</td><td>Robert Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Telefon: +49 30187540</td></tr><tr><td>Estland<br>(ab Juli 2021 bis 02.05.2022)</td><td>Health Board</td><td>Health Board<br>Paldiski mnt 81<br>10614 Tallinn<br>Estland<br>E-Mail: andmekaitse@terviseamet.ee</td></tr><tr><td>Finnland<br>(ab 07.01.2021 bis 01.06.2022)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finnland<br>E-Mail: tietosuoja@thl.fi<br>Telefon +358 29 524 6000</td></tr><tr><td>Irland<br>(ab 19.10.2020)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Telefon: +353 87 688 3565</td></tr><tr><td>Italien<br>(ab 19.10.2020)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Telefon: +39 65994694546</td></tr><tr><td>Kroatien<br/>(ab 16.11.2020)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Telefon: + 385 14609000</td></tr><tr><td>Lettland<br>(ab 06.11.2020)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Lettland<br>E-Mail: pasts@spkc.gov.lv<br>Telefon:  +371 675015 90 oder -91</td></tr><tr><td>Litauen<br>(ab 12.05.2021 bis 14.10.2022)</td><td>Ministry of Health of the Republic of Lithuania</td><td>Ministry of Health of the Republic of Lithuania<br>Vilniaus St. 33<br>T-01506 Vilnius<br>Litauen<br>E-Mail (DPO): duomenu.apsauga@sam.lt<br>E-Mail (Betroffenenrechte): duomenu.apsauga@nvsc.lt</td></tr><tr><td>Malta<br>(ab 15.04.2021 bis 07.07.2022)</td><td>Department for Health Regulation</td><td>Department for Health Regulation<br>Office of the Superintendent of Public Health<br>St. Luke’s Hospital, Outpatients Block Level 1<br>St. Luke’s Square<br>Pietà PTA 1010<br>Malta<br>E-Mail: sph.health@gov.mt<br>E-Mail (DPO): dpo-osph@gov.mt<br>Telefon: +356 2595 3302 / +356 2595 3303</td></tr><tr><td>Niederlande<br>(ab 30.11.2020)</td><td> Minister of Health, Welfare and Sports </td><td> Minister of Health, Welfare and Sports <br>Postbus 16114<br/>2500 BC<br/> Den Haag<br/> Niederlande <br>E-Mail: CIBG-eHealth-EU@minvws.nl oder FG-VWS@minvws.nl<br> Telefon: +31 703405487</td></tr><tr><td>Österreich<br>(ab 04.02.2021 bis 25.02.2022)</td><td>Österreichisches Rotes Kreuz</td><td>Generalsekretariat und Blutspendezentrale für Wien<br>Niederösterreich und das Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Wien<br>Österreich<br>E-Mail: service@roteskreuz.at<br>Telefon: +43 1 58900 955</td></tr><tr><td>Norwegen<br>(ab 15.02.2021 bis 11.08.2022)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norwegen<br>E-Mail: folkehelseinstituttet@fhi.no<br>Telefon: +47 21 07 70 00</td></tr><tr><td>Polen<br>(ab 23.11.2020 bis 31.03.2022)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warschau<br> Polen <br>E-Mail: protego@mc.gov.pl<br> Telefon: +48 223453300</td></tr><tr><td>Slowenien<br>(ab 15.02.2021)</td><td>Ministry of Public Administration (MJU) und Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slowenien<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>und<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slowenien<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><tr><td>Spanien<br>(ab 06.11.2020 bis 9.10.2022)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br>Spanien<br>E-Mail: soporte.radarcovid@economia.gob.es<br>Telefon: + 34 91 258 28 52</td></tr><tr><td>Schweiz<br>(ab 24.03.2021 bis 31.03.2022)</td><td>Bundesamt für Gesundheit BAG</td><td>Bundesamt für Gesundheit BAG<br>3003 Bern<br>Schweiz<br>E-Mail: rech@bag.admin.ch<br>Telefon: +41 58 462 69 98</td></tr><tr><td>Tschechien<br/>(ab 22.03.2021 bis 31.10.2021)</td><td>Ministry of Health</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Telefon: +420 224 972 457</td></tr><tr><td>Zypern<br/>(ab 15.12.2020 bis 16.03.2022)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nikosia<br> Zypern <br>E-Mail: cyjointcontroller@mphs.moh.gov.cy<br>E-Mail (DPO): MPHS_DPO@mphs.moh.gov.cy<br>Telefon (DPO): +357 22605603</td></tr></tbody></table>"
+                                    "Nachstehend finden Sie eine Liste der ehemals teilnehmenden Länder und Angaben zu den zuständigen Gesundheitsbehörden:",
+                                    "(Stand: 21.02.2023)",
+                                    "<table class='table'><thead><tr><th>Land</th><th>Verantwortlicher</th><th>Kontaktdaten</th></tr></thead><tbody><tr><td>Belgien<br>(ab 06.01.2021 bis 15.11.2022)</td><td>Sciensano</td><td>Sciensano<br>Juliette Wytsmanstraat 14<br>BE-1050 Ixelles/Elsene<br>Belgien<br>E-Mail: coronalert@sciensano.be <i><b>oder</b></i> dpo@sciensano.be<br>Telefon: +32 479 317 455</td></tr><tr><td>Dänemark<br>(ab 06.11.2020 bis 01.04.2022)</td><td>Styrelsen for Patientsikkerhed (Danish Patient Safety Authority)</td><td>Styrelsen for Patientsikkerhed<br>Islands Brygge 67<br>2300 København S<br>Denmark<br>E-Mail: stps@stps.dk<br>Telefon: +45 72286600</td></tr><tr><td>Deutschland<br>(ab 17.10.2020 bis 21.02.2023)</td><td>Robert Koch-Institut</td><td>Robert Koch-Institut<br>Nordufer 20<br>13353 Berlin<br>Germany<br>E-Mail: CoronaWarnApp@rki.de<br>Telefon: +49 30187540</td></tr><tr><td>Estland<br>(ab Juli 2021 bis 02.05.2022)</td><td>Health Board</td><td>Health Board<br>Paldiski mnt 81<br>10614 Tallinn<br>Estland<br>E-Mail: andmekaitse@terviseamet.ee</td></tr><tr><td>Finnland<br>(ab 07.01.2021 bis 01.06.2022)</td><td>National Institute for Health and Welfare (THL)</td><td>National Institute for Health and Welfare (THL)<br>PO Box 30<br>FI-00271 Helsinki<br>Finnland<br>E-Mail: tietosuoja@thl.fi<br>Telefon +358 29 524 6000</td></tr><tr><td>Irland<br>(ab 19.10.2020 bis 15.02.2023)</td><td>Health Service Executive</td><td>Dr Steevens’ Hospital<br>Steevens Lane<br>Dublin 8<br>Irland<br>E-Mail: cio@hse.ie<br>Telefon: +353 87 688 3565</td></tr><tr><td>Italien<br>(ab 19.10.2020 bis 15.12.2022)</td><td>Ministry of Health</td><td>Ministry of Health<br>Viale Giorgio Ribotta 5<br>00144 Rome<br>Italy<br>E-Mail: segretariato.generale@sanita.it<br>Telefon: +39 65994694546</td></tr><tr><td>Kroatien<br/>(ab 16.11.2020 bis 15.02.2023)</td><td>AZOP Croatian Personal Data Protection Agency</td><td>AZOP Croatian Personal Data Protection Agency<br>Selska cesta 136<br>10000 Zagreb<br>Croatia<br>E-Mail: azop@azop.hr<br>Telefon: + 385 14609000</td></tr><tr><td>Lettland<br>(ab 06.11.2020 bis 10.02.2023)</td><td>Slimību profilakses un kontroles centrs</td><td>Slimību profilakses un kontroles centrs (SPKC)<br>Duntes iela 22, k-5<br>Rīga, LV 1005<br>Lettland<br>E-Mail: pasts@spkc.gov.lv<br>Telefon:  +371 675015 90 oder -91</td></tr><tr><td>Litauen<br>(ab 12.05.2021 bis 14.10.2022)</td><td>Ministry of Health of the Republic of Lithuania</td><td>Ministry of Health of the Republic of Lithuania<br>Vilniaus St. 33<br>T-01506 Vilnius<br>Litauen<br>E-Mail (DPO): duomenu.apsauga@sam.lt<br>E-Mail (Betroffenenrechte): duomenu.apsauga@nvsc.lt</td></tr><tr><td>Malta<br>(ab 15.04.2021 bis 07.07.2022)</td><td>Department for Health Regulation</td><td>Department for Health Regulation<br>Office of the Superintendent of Public Health<br>St. Luke’s Hospital, Outpatients Block Level 1<br>St. Luke’s Square<br>Pietà PTA 1010<br>Malta<br>E-Mail: sph.health@gov.mt<br>E-Mail (DPO): dpo-osph@gov.mt<br>Telefon: +356 2595 3302 / +356 2595 3303</td></tr><tr><td>Niederlande<br>(ab 30.11.2020 bis 31.10.2022)</td><td> Minister of Health, Welfare and Sports </td><td> Minister of Health, Welfare and Sports <br>Postbus 16114<br/>2500 BC<br/> Den Haag<br/> Niederlande <br>E-Mail: CIBG-eHealth-EU@minvws.nl oder FG-VWS@minvws.nl<br> Telefon: +31 703405487</td></tr><tr><td>Österreich<br>(ab 04.02.2021 bis 25.02.2022)</td><td>Österreichisches Rotes Kreuz</td><td>Generalsekretariat und Blutspendezentrale für Wien<br>Niederösterreich und das Burgenland<br>Wiedner Hauptstrasse 32<br>1040 Wien<br>Österreich<br>E-Mail: service@roteskreuz.at<br>Telefon: +43 1 58900 955</td></tr><tr><td>Norwegen<br>(ab 15.02.2021 bis 11.08.2022)</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health</td><td>Folkehelseinstituttet/Norwegian Institute of Public Health<br>Postboks 222 Skøyen<br>0213 Oslo<br>Norwegen<br>E-Mail: folkehelseinstituttet@fhi.no<br>Telefon: +47 21 07 70 00</td></tr><tr><td>Polen<br>(ab 23.11.2020 bis 31.03.2022)</td><td>Główny Inspektor Sanitarny (Chief Sanitary Inspector)</td><td>Chief Sanitary Inspector<br>ul. Targowa 65<br>203–729 Warschau<br> Polen <br>E-Mail: protego@mc.gov.pl<br> Telefon: +48 223453300</td></tr><tr><td>Slowenien<br>(ab 15.02.2021 bis 10.02.2023)</td><td>Ministry of Public Administration (MJU) und Ministry of Public Administration (MJU)</td><td>Ministry of Public Administration (MJU)<br>Tržaška cesta 21<br>1000 Ljubljana<br>Slowenien<br>E-Mail: gp.mju@gov.si<br>E-Mail (DPO): dpo.mju@gov.si<br>Phone: tbn<br>und<br>National Institute of Public Health (HIJZ)<br>Trubarjeva 2, 1000 Ljubljana<br>Slowenien<br>E-Mail: info@nijz.si<br>E-Mail (DPO): vop@nijz.si<br>Phone: tbn<br></td></tr><tr><td>Spanien<br>(ab 06.11.2020 bis 9.10.2022)</td><td>Ministerio de Asuntos Economicos y Transformacion Digital</td><td>Ministerio de Asuntos Economicos y Transformacion Digital<br>P. de la Castellana, 162<br>28071 Madrid<br>Spanien<br>E-Mail: soporte.radarcovid@economia.gob.es<br>Telefon: + 34 91 258 28 52</td></tr><tr><td>Schweiz<br>(ab 24.03.2021 bis 31.03.2022)</td><td>Bundesamt für Gesundheit BAG</td><td>Bundesamt für Gesundheit BAG<br>3003 Bern<br>Schweiz<br>E-Mail: rech@bag.admin.ch<br>Telefon: +41 58 462 69 98</td></tr><tr><td>Tschechien<br/>(ab 22.03.2021 bis 31.10.2021)</td><td>Ministry of Health</td><td>Ministry of Health of the Czech Republic<br>Palackého náměstí 4<br>128 01 Praha 2<br>Czech Republic<br>E-Mail: oia@mzcr.cz<br>Telefon: +420 224 972 457</td></tr><tr><td>Zypern<br/>(ab 15.12.2020 bis 16.03.2022)</td><td>Ministry of Health (MoH)</td><td>Ministry of Health (MoH)<br>1 Prodromou & 17 Chilonos Street<br>CY-1449 Nikosia<br> Zypern <br>E-Mail: cyjointcontroller@mphs.moh.gov.cy<br>E-Mail (DPO): MPHS_DPO@mphs.moh.gov.cy<br>Telefon (DPO): +357 22605603</td></tr></tbody></table>"
                                 ]
                             },
                             {
@@ -2026,7 +2078,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 31. Januar 2023</b>",
-                                    "Beachten Sie bitte, dass seit der Version 3.0 der Corona-Warn-App keine teleTAN mehr benötigt wird, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde. Daher wurde der Betrieb der TAN-Hotline zum 31. Januar 2023 eingestellt.",
+                                    "<div class='update'>Beachten Sie bitte, dass seit der Version 3.0 der Corona-Warn-App keine teleTAN mehr benötigt wird, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde. Daher wurde der Betrieb der TAN-Hotline zum 31. Januar 2023 eingestellt.</div>",
                                     "Grundsätzlich: Die App ist barrierefrei entwickelt worden (siehe <a href='https://github.com/corona-warn-app/cwa-documentation/blob/main/translations/scoping_document.de.md#barrierefreiheit' target='_blank' rel='noopener noreferrer'>Scoping-Dokument</a>) und unterstützt die gängigen Bedienungshilfen des Smartphone-Betriebssystems.",
                                     "In der Regel ist eine Kommunikation per Telefon nicht notwendig. Im Falle eines positiven Befunds erhalten Sie das Testergebnis standardmäßig über einen PCR-Test-QR-Code, den Sie mit der App einscannen. Wenn das Testzentrum bzw. das Labor diesen Weg nicht unterstützt oder Sie den QR-Code nicht scannen möchten, erhalten Sie eine TAN. Nur wenn Sie mit einem positiven Befund weder einen QR-Code noch eine TAN erhalten, müssten Sie die TAN-Hotline anrufen, was nicht direkt aus der App möglich ist.",
                                     "Sollten Sie wegen einer Hörschwäche nicht telefonieren können, empfiehlt es sich, darauf gleich beim Test hinzuweisen, da auch hier für die weitere Kommunikation besondere Maßnahmen einzuhalten sind. So kann sichergestellt werden, dass Sie die TAN - wenn benötigt - gleich schriftlich erhalten.",
@@ -2276,7 +2328,8 @@
                                 "anchor": "android_location",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Wenn Sie Android 11 und die Corona-Warn-App ab Version 1.5 benutzen, müssen Sie die Standortverwendung nicht mehr aktivieren, um die Corona-Warn-App zu nutzen.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Wenn Sie Android 11 und die Corona-Warn-App ab Version 1.5 benutzen, müssen Sie die Standortverwendung nicht mehr aktivieren, um die Corona-Warn-App zu nutzen.</div>",
                                     "Die Corona-Warn-App fragt Ihren Standort nicht ab und hat auch keine Berechtigung zur Standortabfrage. Die Meldung geht auf eine Besonderheit von Android zurück: Bluetooth-Geräte in Ihrer Nähe können grundsätzlich nur gefunden werden, wenn die Standortverwendung allgemein auf Ihrem Gerät aktiviert ist (siehe <a href='https://support.google.com/android/answer/9888358?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungen auf Ihrem Android-Smartphone aktivieren</a> und <a href='https://support.google.com/android/answer/9930236?hl=de' target='_blank' rel='noopener noreferrer'>COVID-19-Benachrichtigungssystem und Android-Standorteinstellungen</a> in der Android-Hilfe). Das bedeutet aber nicht, dass Apps, die Bluetooth nutzen, auch automatisch Ihren Standort erfassen.",
                                     "Da die Corona-Warn-App Geräte in Ihrer Nähe über Bluetooth erkennt, muss die allgemeine Systemeinstellung 'Standort verwenden' als Voraussetzung aktiviert sein. Allerdings wird die App zu keiner Zeit Ihren Standort erfassen oder GPS verwenden. Sie können das gerne selbst folgendermaßen nachprüfen:",
                                     "<ol><li>Öffnen Sie die Einstellungen Ihres Smartphones (nicht die Einstellungen in der App!).</li><li>Wählen Sie 'Sicherheit & Standort' &gt; 'Standort' &gt; 'Berechtigungen auf App-Ebene'.</li><li>Sehen Sie sich die Liste der Apps an, die auf Ihren Standort zugreifen können, wenn Sie es zulassen. Sie sehen: Die Corona-Warn-App ist nicht aufgeführt.</li></ol>",
@@ -2403,7 +2456,8 @@
                                 "anchor": "rapid_test",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktuell</b><br/>Seit Version 2.1 ist es möglich das Testergebnis eines Corona-Schnelltests in die App einzutragen. Weitere Informationen finden Sie in <a href='../../blog/2021-05-02-corona-warn-app-version-2-1/' target='_blank' >diesem</a> Blog Post und in den <a href='#rapid_antigen_test' target='_blank' >FAQs zum Schnelltest</a>.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Seit Version 2.1 ist es möglich das Testergebnis eines Corona-Schnelltests in die App einzutragen. Weitere Informationen finden Sie in <a href='../../blog/2021-05-02-corona-warn-app-version-2-1/' target='_blank' >diesem</a> Blog Post und in den <a href='#rapid_antigen_test' target='_blank' >FAQs zum Schnelltest</a>.</div>",
                                     "Nein, die Eingabe von Schnelltests wird von der Corona-Warn-App zurzeit nicht unterstützt."
                                 ]
                             },
@@ -2440,7 +2494,8 @@
                                 "anchor": "huawei_honor",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Das Problem wurde von den Geräteherstellern durch einen Patch behoben. Bitte installieren Sie die neusten Updates für Ihr Gerät.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Das Problem wurde von den Geräteherstellern durch einen Patch behoben. Bitte installieren Sie die neusten Updates für Ihr Gerät.</div>",
                                     "Für Geräte von Huawei oder Honor können neben dem <a href='#no_risk_update' target='_blank'>Einschalten der priorisierten Hintergrundaktivität</a> zusätzliche Einstellungen notwendig sein, um die Zuverlässigkeit der Hintergrundaktualisierung zu verbessern und unerwarteten <a href='#app_crash' target='_blank'>Abstürzen der Corona-Warn-App beim Öffnen</a> der App möglicherweise vorzubeugen. Dies gilt insbesondere für ältere Geräte mit EMUI 4, aber auch für neuere Geräte.",
                                     "Nach aktuellen Informationen scheint für neuere Huawei-Geräte ein System-Update verfügbar zu sein, das explizit die Probleme mit der Corona-Warn-App beheben soll.",
                                     "Die GitHub-Community hat Vorschläge zum Vornehmen zusätzlicher Einstellungen zusammengetragen, und auch Informationen über das System-Update verlinkt. Sie finden alle Details in diesem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1053#issuecomment-690615368' target='_blank' rel='noopener noreferrer'>GitHub-Issue</a>."
@@ -2451,7 +2506,8 @@
                                 "anchor": "ios_power_save",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>Seit dem 5. Februar 2021 ist die Mindestversion der Corona-Warn-App die Version 1.5.3. Diese Version benötigt mindestens iOS 13.7 oder höher. Mit dieser iOS-Version wird die Funktion der Corona-Warn-App durch Aktivierung der Stromsparfunktion nicht beeinträchtigt.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Seit dem 5. Februar 2021 ist die Mindestversion der Corona-Warn-App die Version 1.5.3. Diese Version benötigt mindestens iOS 13.7 oder höher. Mit dieser iOS-Version wird die Funktion der Corona-Warn-App durch Aktivierung der Stromsparfunktion nicht beeinträchtigt.</div>",
                                     "Wenn Sie auf Ihrem Gerät iOS Version 13.6.1 oder höher verwenden, ist die Funktion der Corona-Warn-App im Stromsparmodus nicht beeinträchtigt. Auf Geräten mit einer früheren iOS Version kann es zu Problemen mit der Hintergrundaktualisierung kommen. <b>Wir bitten Sie daher, die iOS Version Ihres Geräts auf 13.6.1 oder höher zu aktualisieren, falls Sie den Stromsparmodus verwenden wollen.</b>"
                                 ]
                             },
@@ -2460,7 +2516,8 @@
                                 "anchor": "multiple_exposure_checks",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>Seit Version 1.6.0 der Corona-Warn-App gibt es keine separaten Überprüfungen für die einzelnen Tage mehr. Stattdessen wird nach dem Download der aktuellen Diagnoseschlüssel vom Server eine einzelne Überprüfung von allen vorhandenen Diagnoseschlüsseln durchgeführt.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Seit Version 1.6.0 der Corona-Warn-App gibt es keine separaten Überprüfungen für die einzelnen Tage mehr. Stattdessen wird nach dem Download der aktuellen Diagnoseschlüssel vom Server eine einzelne Überprüfung von allen vorhandenen Diagnoseschlüsseln durchgeführt.</div>",
                                     "Sobald die App die aktuellen Diagnoseschlüssel vom Server lädt, wird eine Überprüfung der Begegnungsaufzeichnungen durchgeführt. Dabei wird für jeden der letzte 14 Tage (10 Tage ab Version 2.20), für den Diagnoseschlüssel vorhanden sind, eine separate Überprüfung der Begegnungsaufzeichnungen durchgeführt. Es ist also daher kein Fehler, dass pro Tag mehrere Einträge in der Überprüfungs-Historie vorhanden sind. Sie können zudem auf die Überprüfungseinträge klicken und sehen, dass immer unterschiedlich viele Schlüssel geprüft werden."
                                 ]
                             },
@@ -2469,7 +2526,8 @@
                                 "anchor": "ExposureDetectionIsAlreadyRunning",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Das Problem ist in Version 1.7.1 behoben worden.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Das Problem ist in Version 1.7.1 behoben worden.</div>",
                                     "Die Meldung <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1497' target='_blank' rel='noopener noreferrer'>'ExposureDetectionIsAlreadyRunning'</a> <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/1512#issuecomment-727206633' target='_blank' rel='noopener noreferrer'>kann ignoriert werden</a>. Die CWA funktioniert korrekt und dieses Problem wird in einem <a href='https://github.com/corona-warn-app/cwa-app-ios/pull/1510' target='_blank' rel='noopener noreferrer'> bevorstehenden Update korrigiert</a>."
                                 ]
                             },
@@ -2478,7 +2536,8 @@
                                 "anchor": "expcheck_160",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Das Problem ist in Version 1.6.1 behoben worden.<hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Das Problem ist in Version 1.6.1 behoben worden.</div>",
                                     "Nach einem Update auf Version 1.6.0 kann es vorkommen, dass Sie die Nachricht 'Risiko-Überprüfung fehlgeschlagen' erhalten, obwohl die letzte Überprüfung noch keine 24 Stunden her ist. Wir arbeiten gerade an einer Behebung dieses Problems. Bis das Update zur Verfügung steht, können Sie das Problem in den meisten Fällen mit einem Neustart Ihrer App beheben."
                                 ]
                             },
@@ -2495,9 +2554,10 @@
                                 "anchor": "notif_weekly_update",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Das Verhalten der iOS Benachrichtigung zur Begegnungsmitteilung wurde mit iOS Version 13.7 geändert. Eine Benachrichtigung wird jetzt nur noch monatlich angezeigt. Die Funktion kann in den iOS Einstellungen zudem vollständig deaktiviert werden:<br/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Das Verhalten der iOS Benachrichtigung zur Begegnungsmitteilung wurde mit iOS Version 13.7 geändert. Eine Benachrichtigung wird jetzt nur noch monatlich angezeigt. Die Funktion kann in den iOS Einstellungen zudem vollständig deaktiviert werden:<br/>",
                                     "<ol><li>'Einstellungen' &gt; 'Begegnungsmitteilungen'</li><li>'Monatliches Update' ausschalten.</li></ol>",
-                                    "Wir bitten Sie daher, ein Update auf die aktuelle iOS Version durchzuführen.<hr/>",
+                                    "Wir bitten Sie daher, ein Update auf die aktuelle iOS Version durchzuführen.</div>",
                                     "Das ist eine allgemeine Benachrichtigung, die nicht bedeutet, dass Risiko-Begegnungen erkannt worden sind. Es handelt sich dabei <b>nicht</b> um eine Meldung oder Funktion der Corona-Warn-App. Das Exposure Notification System (ENS) von Apple sendet diese Benachrichtigung und zeigt das Icon an. Die ENS-Schnittstelle von Apple informiert an dieser Stelle über jegliche Begegnungen mit App-Nutzern, die positiv getestet wurden - ohne eine Aussage darüber zu treffen, ob es sich um eine nach dem Schema des Robert Koch-Instituts kritische Begegnung handelte oder nicht. Es werden beispielsweise auch Begegnungen angezeigt, bei denen der Abstand mehr als 8 Meter betrug oder die nur wenige Minuten dauerten. Das heißt: Das 'Wöchentliche Update' informiert lediglich über technische Vorgänge des ENS, die für eine tatsächliche Risiko-Ermittlung unzureichend sind. Eine zuverlässige Risiko-Ermittlung findet ausschließlich in der Corona-Warn-App unter den wissenschaftlichen Rahmenbedingungen des Robert Koch-Instituts statt. Sie können Ihren aktuellen Risikostatus direkt in der Corona-Warn-App einsehen."
                                 ]
                             },
@@ -2506,9 +2566,10 @@
                                 "anchor": "API39508",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL 16. Januar 2021</b><br/>Die Fehlermeldung lautet nun \"Limit bereits erreicht\". Bitte lesen Sie <a href='#limit_reached' target='_blank'>den dazugehörigen FAQ-Eintrag</a> für weitere Informationen.",
-                                    "<b>AKTUELL</b><br/> Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><b>WICHTIG:</b><br/><b>Nach dem Aktualisieren auf die Version 1.5 kann es bis zu 24 Stunden dauern bis das Problem behoben ist.</b>",
-                                    "Falls der Fehler nach dem Update auf 1.5 und 24 Stunden Wartezeit immer noch auftritt, schreiben Sie bitte einen Kommentar in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>dazugehörige GitHub Issue</a>.<hr/>",
+                                    "<b>Aktualisiert am 16. Januar 2021</b>",
+                                    "<div class='update'>Die Fehlermeldung lautet nun \"Limit bereits erreicht\". Bitte lesen Sie <a href='#limit_reached' target='_blank'>den dazugehörigen FAQ-Eintrag</a> für weitere Informationen.<hr/>",
+                                    "Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><b>WICHTIG: Nach dem Aktualisieren auf die Version 1.5 kann es bis zu 24 Stunden dauern bis das Problem behoben ist.</b>",
+                                    "Falls der Fehler nach dem Update auf 1.5 und 24 Stunden Wartezeit immer noch auftritt, schreiben Sie bitte einen Kommentar in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>dazugehörige GitHub Issue</a>.</div>",
                                     "Die Meldung besagt, dass die Corona-Warn-App das Exposure Notification System zu oft aufgerufen hat, um die vom Server geladenen Schlüssel mit den lokal eingesammelten Zufalls-IDs abzugleichen und damit festzustellen, ob es Risiko-Begegnungen mit positiv Gemeldeten gab.",
                                     "Dieses Verhalten kann durch verschiedene andere Fehler ausgelöst werden, ist jedoch immer nur eine Folgeerscheinung. Die Meldung sollte nach 24 Stunden nicht mehr angezeigt werden. Bitte halten sie die App für diesen Zeitraum geschlossen.",
                                     "Wenn der Fehler danach immer noch auftritt schreiben Sie bitte einen Kommentar in das <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1459' target='_blank' rel='noopener noreferrer'>dazugehörige GitHub Issue</a> und geben Sie die folgenden Informationen zu Ihrem Telefon an: <ul><li>Device name</li><li>Android version</li><li>CWA App version</li></ul>",
@@ -2520,7 +2581,8 @@
                                 "anchor": "cause9002_timeout",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.</div>",
                                     "Wenn beim Öffnen der Corona-Warn-App aktuelle Schlüssel positiv getesteter Nutzer vom Server heruntergeladen werden sollen (weil an diesem Tag noch kein automatischer Datenabgleich erfolgt war) und dabei keine Internetverbindung hergestellt werden kann, wird Ihnen möglicherweise eine Fehlermeldung 'Ursache: 9002, Etwas ist schiefgelaufen. timeout' angezeigt. Unter 'Details' wird als Ursache eine 'java.net.SocketTimeoutException' angegeben. Es sind zwei unterschiedliche Ursachen bekannt, die zu diesem Fehler führen können:",
                                     "<ol><li><b>Die Internetverbindung befindet sich noch im Aufbau.</b> Wenn Sie deaktivierte Datenverbindungen (WLAN oder mobil) gerade eingeschaltet oder Ihr Smartphone neu gestartet haben und sogleich die Corona-Warn-App öffnen, wurde die Internetverbindung möglicherweise noch nicht vollständig hergestellt. Zudem gibt es spezielle Apps, die Datenverbindungen erst dann freigeben, wenn der Bildschirm angeschaltet wird. In diesen Fällen ist das Auftreten des Fehlers möglich. <b>Lösung:</b> War die Internetverbindung deaktiviert oder unterbrochen, warten Sie nach dem Einschalten der Internetverbindung einige Sekunden, bevor Sie die Corona-Warn-App öffnen. Falls Sie eine App zur Kontrolle von Datenverbindungen nutzen, stellen Sie sie so ein, dass Datenverbindungen im Hintergrund für die Corona-Warn-App freigegeben sind.</li><li><b>Die Internetverbindung wird blockiert.</b> Dies kann der Fall sein, wenn Sie entweder Datenverbindungen in den Einstellungen Ihres Smartphones manuell eingeschränkt haben oder wenn Datenverbindungen für die Corona-Warn-App von einer Antivirus-App und/oder einer Firewall automatisch deaktiviert wurden. <b>Lösung:</b> Geben Sie in den Einstellungen Ihres Smartphones (Netzwerk und Internet, Mobile Daten und WLAN) für die Corona-Warn-App die Datennutzung im Allgemeinen, sowie Hintergrunddaten und uneingeschränkte Datennutzung frei. Falls Sie eine Antivirus-App und/oder eine Firewall auf Ihrem Smartphone nutzen, stellen Sie sie so ein, dass für die Corona-Warn-App keine Einschränkungen in der Datennutzung bestehen.</li></ol>",
                                     "In dem <a href='https://github.com/corona-warn-app/cwa-app-android/issues/998' target='_blank' rel='noopener noreferrer'>GitHub-Issue 998</a> finden Sie weitere Informationen (englisch)."
@@ -2531,7 +2593,8 @@
                                 "anchor": "cause9002",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.</div>",
                                     "Es kommt auf einzelnen Geräten (z.&nbsp;B. dem Huawei P20 Pro) zu Problemen beim Zugriff auf den verschlüsselten Bereich der App-Datenbank, in der Informationen zum Risiko-Status und der letzten Aktualisierung abgelegt sind. In der Regel zeigt sich dieser Fehler durch die Ursache 9002 und Hinweise auf die verwendete Datenbank (database), SQLite, sqlite_master, eine Security-Exception oder einen Fehler bei der Entschlüsselung (decryption). Das kann manchmal dazu führen, dass Sie die App nicht mehr öffnen können.",
                                     "Wir arbeiten daran, die Ursache zu finden und zu beheben. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-android/issues/642' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-android/issues/642</a>. Dort werden wir auch Fehlerbehebungen und weitere Hinweise veröffentlichen.",
                                     "Wenn Ihr Smartphone-Typ in diesem GitHub-Issue noch nicht genannt ist, schreiben Sie uns bitte den Typ in einem Kommentar. Das hilft uns, die Ursache zu bestimmen. Wenn das GitHub-Issue nicht auf Ihren Fehler mit der Ursache 9002 zutrifft, legen Sie gerne einen <a href='https://github.com/corona-warn-app/cwa-app-android/issues/new?labels=bug&template=01_bugs.md' target='_blank' rel='noopener noreferrer'>neuen Issue</a> an.",
@@ -2543,7 +2606,8 @@
                                 "anchor": "app_crash",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.<br/><hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Fehler wurde in Version 1.5 der Corona-Warn-App behoben. Wir bitten Sie daher, die App entsprechend zu aktualisieren.</div>",
                                     "Wenn die Corona-Warn-App durch einen Fehler im Betriebssystem oder durch aggressive Energiesparmaßnahmen des Telefons unerwartet beendet wird, kann es vorkommen, dass bei einem erneuten Start die Corona-Warn-App nicht mehr auf ihre verschlüsselten Datenbanken zugreifen kann. In diesem Fall schließt sie sich sofort wieder. Manchmal wurde vorher der <a href='#cause9002' target='_blank'>Fehler Ursache: 9002 Etwas ist schiefgelaufen (sqlite)</a> angezeigt.",
                                     "Wir arbeiten mit Hochdruck an einer Lösung des Problems.",
                                     "Die GitHub-Community hat eine Notfall-Lösung erarbeitet, die die Corona-Warn-App ohne Deinstallation wieder zum Laufen bringt. Da hierbei jedoch Daten verloren gehen können (z.&nbsp;B. registrierte COVID-19-Tests zur Online-Abfrage der Testergebnisse), sollten Sie diese Notfall-Lösung nur dann anwenden, wenn keine anderen Maßnahmen (insbesondere Vorschläge von der technischen Hotline oder von Betreuern der Corona-Warn-App im Google Play Store) geholfen haben, und Sie die Hinweise zur Notfall-Lösung im GitHub-Issue vollständig zur Kenntnis genommen haben.",
@@ -2555,7 +2619,8 @@
                                 "anchor": "status_14",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Dieser Fehler wurde in Version 1.2 der Corona-Warn-App behoben. Risiko-Begegnungen werden Ihnen bis zu 14 Tage (10 Tage ab Version 2.20) nach dem Zeitpunkt der Begegnung mit dem Nutzer, der dann ein positives COVID-19-Testergebnis in der Corona-Warn-App gemeldet hat, angezeigt. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Fehler wurde in Version 1.2 der Corona-Warn-App behoben. Risiko-Begegnungen werden Ihnen bis zu 14 Tage (10 Tage ab Version 2.20) nach dem Zeitpunkt der Begegnung mit dem Nutzer, der dann ein positives COVID-19-Testergebnis in der Corona-Warn-App gemeldet hat, angezeigt.</div>",
                                     "Bei einigen Android-Smartphones kommt es aktuell vor, dass die Risiko-Begegnungen länger als 14 Tage angezeigt werden. Wir arbeiten an der Behebung dieses Anzeigefehlers. Aktuelle Informationen finden Sie auf Englisch im <a href='https://github.com/corona-warn-app/cwa-app-android/issues/911' target='_blank' rel='noopener noreferrer'>GitHub-Issue 911</a>."
                                 ]
                             },
@@ -2564,7 +2629,8 @@
                                 "anchor": "keys0",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Dieser Anzeigefehler wurde über ein Update der Google Play Services behoben, siehe <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>diesen GitHub-Kommentar</a> in englischer Sprache. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Anzeigefehler wurde über ein Update der Google Play Services behoben, siehe <a href='https://github.com/corona-warn-app/cwa-app-android/issues/744#issuecomment-659255917' target='_blank' rel='noopener noreferrer'>diesen GitHub-Kommentar</a> in englischer Sprache.</div>",
                                     "Das ist ein bekannter Anzeigefehler. Die App funktioniert nach wie vor. Wir arbeiten gerade gemeinsam mit Google an der Lösung."
                                 ]
                             },
@@ -2581,7 +2647,8 @@
                                 "anchor": "iOS_136",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Mittlerweile hat Apple die iOS-Version 13.6.1 veröffentlicht, die dieses Problem behebt. Bitte aktualisieren Sie Ihr Smartphone auf iOS 13.6.1.</div>",
                                     "In der iOS-Version 13.6 konnte auf einigen Geräten die Risiko-Ermittlung nicht mehr aktiviert werden, da Begegnungsaufzeichnungen in ihrer Region nicht verfügbar seien. Details dazu finden Sie im GitHub-Issue <a href='https://github.com/corona-warn-app/cwa-app-ios/issues/911' target='_blank' rel='noopener noreferrer'>https://github.com/corona-warn-app/cwa-app-ios/issues/911</a>."
                                 ]
                             },
@@ -2598,7 +2665,8 @@
                                 "anchor": "low_risk_text",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab App-Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Fehler ist bereits korrigiert. Die Korrektur ist ab App-Version 1.2.1 verfügbar. Bitte aktualisieren Sie die App.</div>",
                                     "In dem erklärenden Text für ein niedriges Infektionsrisiko wurde mit dem letzten Update eine sich widersprechende Beschreibung eingefügt. Wenn Sie eine Risiko-Begegnung hatten, die App aber weiter ein niedriges Risiko für Sie anzeigt, dann wird die Infektionswahrscheinlichkeit für Sie als niedrig eingestuft und nicht wie im Text derzeit geschrieben als erhöht."
                                 ]
                             },
@@ -2607,7 +2675,8 @@
                                 "anchor": "days_active_Apple",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Dieser Anzeigefehler ist inzwischen behoben. Bitte aktualisieren Sie die Corona-Warn-App auf die neueste Version. Die App zählt jetzt die aktiven Tage weiter, bis sie, wie vorgesehen, 14 erreicht hat. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Anzeigefehler ist inzwischen behoben. Bitte aktualisieren Sie die Corona-Warn-App auf die neueste Version. Die App zählt jetzt die aktiven Tage weiter, bis sie, wie vorgesehen, 14 erreicht hat.</div>",
                                     "Bei der Zählung der aktiven Tage gibt es derzeit einen Fehler, der dazu führt, dass bei Erreichen von '14 von 14 Tagen aktiv' die Anzeige der Anzahl aktiver Tage nicht bei 14 von 14 Tagen bleibt, sondern statisch auf „13 von 14 Tagen aktiv“ oder weniger stehen bleibt.",
                                     "Dieser Fehler betrifft nur die Anzeige der aktiven Tage in der Corona-Warn-App. Die Funktion selbst ist nicht eingeschränkt, das heißt, die Schlüssel werden weiterhin ausgetauscht und die Risiko-Ermittlung wird weiterhin durchgeführt. Es gehen keine Daten verloren. Technisch gesehen handelt es sich hier um einen Rundungsfehler, der auftritt, wenn die Anzahl aktiver Tage der Risiko-Ermittlung nicht mehr zunimmt, sondern statisch bei 14 Tagen bleibt. Wenn die Risiko-Ermittlung auch nur kurzfristig in irgendeiner Form nicht aktiv war, bleibt der Zähler bei einem niedrigeren Wert, also etwa bei 13 Tagen stehen.",
                                     "Mögliche Ursachen für eine Deaktivierung der Risiko-Ermittlung:",
@@ -2620,7 +2689,8 @@
                                 "anchor": "days_active_Android",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.</div>",
                                     "Bei der Zählung der aktiven Tage gibt es derzeit einen Fehler, der dazu führt, dass bei Erreichen von '14 von 14 Tagen aktiv' die Anzeige der Anzahl aktiver Tage nicht bei 14 von 14 Tagen bleibt, sondern statisch auf „13 von 14 Tagen aktiv“ oder weniger stehen bleibt.",
                                     "Dieser Fehler betrifft nur die Anzeige der aktiven Tage in der Corona-Warn-App. Die Funktion selbst ist nicht eingeschränkt, das heißt, die Schlüssel werden weiterhin ausgetauscht und die Risiko-Ermittlung wird weiterhin durchgeführt. Es gehen keine Daten verloren. Technisch gesehen handelt es sich hier um einen Rundungsfehler, der auftritt, wenn die Anzahl aktiver Tage der Risiko-Ermittlung nicht mehr zunimmt, sondern statisch bei 14 Tagen bleibt. Wenn die Risiko-Ermittlung auch nur kurzfristig in irgendeiner Form nicht aktiv war, bleibt der Zähler bei einem niedrigeren Wert, also etwa bei 13 Tagen stehen.",
                                     "Mögliche Ursachen für eine Deaktivierung der Risiko-Ermittlung:",
@@ -2634,7 +2704,8 @@
                                 "anchor": "days_active_explanation",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Diese Anzeige ist inzwischen aktualisiert. Sollte dennoch eine andere Zahl der Tagen angezeigt werden, siehe <a href='#exposure_check' target='_blank'> Aufzeichnungen von weniger als 14 Tagen gespeichert</a>.</div>",
                                     "Die Corona-Warn-App sammelt immer die Kontakte der letzten 14 Tage. Alle älteren Kontakte sind für die Risiko-Ermittlung nicht relevant und werden daher auch gelöscht. Somit wird Ihnen immer \"14 von 14 Tagen aktiv\" angezeigt werden, wenn die App im gesamten Zeitraum aktiv war. Die Zählung beginnt nach 14 Tagen nicht von vorn. Sofern also Ihre Risiko-Ermittlung aktiv ist und auch ein Risiko-Status angezeigt wird, funktioniert die Corona-Warn-App so, wie sie soll.",
                                     "Sollten sie die App nach Erreichen der 14 Tage deaktivieren, kann die Anzeige auch zurückspringen auf 13 (oder weniger) aktive Tage. Dies kann z.&nbsp;B. durch eine der folgenden Aktionen ausgelöst werden:<ul><li>Bluetooth deaktivieren</li><li>Hintergrundaktualisierung für die App abschalten, sodass nicht immer eine Risiko-Ermittlung durchgeführt wurde</li><li>Einschalten des Flugmodus</li><li>Ausschalten des Smartphones</li><li>Neustart des Smartphones</li></ul>"
                                 ]
@@ -2644,7 +2715,7 @@
                                 "anchor": "API10",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL 14. Januar 2021</b><br/>Sollten Sie dieses Problem haben, schreiben Sie bitte Ihren Bericht hier: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1962' target='_blank' rel='noopener noreferrer'>cwa-app-android/issues/1962</a>.<hr/>",
+                                    "<b>Aktualisiert am 14. März, 2023</b><br/>Sollte bei Ihnen das Problem weiterhin auftreten, führen Sie bitte die Schritte so wie in der Anleitung beschrieben durch: <a href='https://support.google.com/googleplay/answer/9037938?hl=de' target='_blank' rel='noopener noreferrer'>Geräte und Apps mit Google Play-Diensten auf dem neuesten Stand halten</a>. Tritt der Fehler weiterhin auf, melden Sie sich bitte bei uns unter: <a href='https://github.com/corona-warn-app/cwa-app-android/issues/1962' target='_blank' rel='noopener noreferrer'>cwa-app-android/issues/1962</a><hr/>",
                                     "<b>AKTUELL</b><br/> Dieser Fehler ist mit der Version 1.5 des Exposure Notification Systems behoben. So sehen Sie nach, welche Version Sie installiert haben: <a href='#ENF_version' target='_blank'>Welche Version des COVID-19-Benachrichtigungen habe ich?</a>",
                                     "Der Fehler (10) in Zusammenhang mit der fehlenden Risiko-Überprüfung wird aktuell gemeinsam mit Google behoben. Wir können Ihnen aber bestätigen, dass Ihre Kontakte weiterhin aufgezeichnet werden. Daher würden wir Sie bitten, die App nicht zu löschen, da hierbei Ihre aufgezeichneten Kontaktereignisse verloren gehen können, siehe auch <a href='#delete_random_ids' target='_blank'>'Werden die gesammelten Zufalls-IDs beim Deinstallieren der App entfernt?'</a>."
                                 ]
@@ -2662,7 +2733,8 @@
                                 "anchor": "ENError11",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Obwohl nach Apples Angaben dieser Fehler mit iOS 13.6 behoben wurde, taucht er nun wieder auf Geräten, welche iOS 14 oder neuer installiert haben, auf. Um den Fehler zu beheben, gehen Sie bitte in die iOS Einstellungen und klicken dort auf den Punkt: 'Begegnungsmitteilungen', scrollen ganz nach unten und klicken auf 'Begegnungsmitteilungen deaktivieren'. Warten Sie einen Moment und schalten Sie Begegnungsmitteilungen wieder an.</div>",
                                     "Der Fehler ENErrorDomain 11 kommt aus dem Exposure Notification System, das von Apple bereitgestellt und von der App genutzt wird."
                                 ]
                             },
@@ -2671,7 +2743,8 @@
                                 "anchor": "iphone_region_change",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist diese Meldung behoben. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Wenn Sie auf iOS-Version 13.6. aktualisiert haben, ist diese Meldung behoben.</div>",
                                     "Diese Nachricht wird direkt vom Betriebssystem bzw. dem Exposure Notification System ausgelöst. Sie können die Meldung mit 'OK' bestätigen, die Kontaktermittlung funktioniert ganz normal. Um dies zu prüfen, können Sie in den Geräte-Einstellungen unter 'Datenschutz' &gt; 'Health' &gt; 'COVID-19-Kontaktprotokoll' (iOS 13.7 und höher: 'Einstellungen' &gt; 'Begegnungsmitteilungen' &gt; 'Status von Begegnungsaufzeichnungen') den Status der Kontaktermittlung überprüfen. Es handelt sich um einen iOS-Fehler. Apple arbeitet bereits an einer Lösung, die voraussichtlich mit dem nächsten iOS-Update ausgeliefert wird.",
                                     "Bitte öffnen Sie die Corona-Warn-App noch ein Mal kurz, um sicherzustellen, dass die Hintergrundaktualisierung weiter arbeitet."
                                 ]
@@ -2681,7 +2754,8 @@
                                 "anchor": "memory",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Diese Fehlermeldung kommt aus dem Betriebssystem. Wenn Sie auf Apple iOS-Version 13.6. aktualisiert haben, sollte der Fehler weniger häufig auftreten. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Diese Fehlermeldung kommt aus dem Betriebssystem. Wenn Sie auf Apple iOS-Version 13.6. aktualisiert haben, sollte der Fehler weniger häufig auftreten.</div>",
                                     "Die Corona-Warn-App benötigt nur ca. 20 MB Speicherplatz auf dem Handy. Die Größe kann sich durch eventuelle Updates laufend verändern (wenn auch nur minimal). Zusätzlich fallen weitere Speicherkapazitäten durch die von der App zwischengespeicherten Daten an."
                                 ]
                             },
@@ -2690,7 +2764,8 @@
                                 "anchor": "cause_3",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Dieser Fehler ist inzwischen behoben. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Dieser Fehler ist inzwischen behoben.</div>",
                                     "Dieser Fehler kann bei der ersten Aktivierung der Risiko-Ermittlung oder auch später in den App-Einstellungen oder auf dem Hauptbildschirm auftreten. Der Fehler bedeutet, dass Ihr Gerät aus einem oder mehreren der folgenden Gründe die Risiko-Ermittlung nicht durchführen kann:",
                                     "<ul><li>Ihre Google Play-Dienste sind veraltet.</li><li>Die App ist nicht in der Landesversion Ihres Google Play verfügbar. <a href='#international' target='_blank' >Diese FAQ</a> nennt die unterstützten Landesversionen.</li><li>Sie haben die Corona-Warn-App nicht über den offiziellen Google Play Store installiert.</li><li>Ihr Gerät wurde modifiziert (z.&nbsp;B. gerootet).</li><li>Sie haben mehrere Benutzerkonten auf Ihrem Gerät, und die App wird für einen nicht-primären Nutzer (ohne Administrationsrechte) ausgeführt.</li><li>Der Hersteller Ihres Geräts hat die Google Play-Dienste und den Google Play Store für Ihr Gerät nicht zur Verfügung gestellt (betrifft z.&nbsp;B. einige Modelle von Huawei und Xiaomi).</li><li>Die Google Mobile Services sind veraltet.</li></ul>",
                                     "<b>Fehlerbehebung</b>",
@@ -2706,7 +2781,8 @@
                                 "anchor": "no_log_check",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/> Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind. <hr/>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Diese Meldung wird nicht mehr angezeigt, seitdem Positivkennungen auf dem Server verfügbar sind.</div>",
                                     "Doch, die Risiko-Ermittlung funktioniert. Dieser Hinweis steht unter 'Einstellungen' &gt; 'Datenschutz' &gt; 'Health' &gt; 'COVID-19-Begegnungsaufzeichnungen' (iOS 13.7 und höher: 'Einstellungen' &gt; 'Begegnungsmitteilungen' &gt; 'Status von Begegnungsaufzeichnungen'). Er kommt von iOS und bedeutet, dass der Backend-Server noch keine Diagnoseschlüssel (Positivkennungen) an Ihr Gerät versendet hat. Die Corona-Warn-App hat deswegen noch keinen Abgleich mit den gesammelten Zufalls-IDs durchgeführt. Sobald Corona-positiv getestete Personen ihren Diagnoseschlüssel (Positivkennung) hochgeladen haben, wird dieser Abgleich ausgelöst."
                                 ]
                             },
@@ -2738,7 +2814,7 @@
                                 "anchor": "update_faq",
                                 "active": false,
                                 "textblock": [
-                                    "Die letzten inhaltlichen Änderungen an FAQ-Artikeln wurden am 31. Januar 2023 getätigt.",
+                                    "Die letzten inhaltlichen Änderungen an FAQ-Artikeln wurden am 21. Februar 2023 getätigt.",
                                     "<hr>",
                                     "Das Open-Source-Team der Corona-Warn-App aktualisiert diese FAQ regelmäßig und hält sie auf dem aktuellsten Stand. Wann die letzten Aktualisierungen erfolgten und welche Änderungen vorgenommen wurden, können Sie dem Änderungsverlauf auf <a href='#glossary_github' target='_blank'>GitHub</a> entnehmen.",
                                     "Siehe: <a href='https://github.com/corona-warn-app/cwa-website/commits/master/src/data/faq_de.json' target='_blank' rel='noopener noreferrer'>GitHub: Änderungsverlauf des Deutschen Corona-Warn-App FAQs</a>"
@@ -2789,7 +2865,8 @@
                                 "anchor": "mutation",
                                 "active": false,
                                 "textblock": [
-                                    "<b>AKTUELL</b><br/>Informationen zur Corona-Warn-App und Omikron finden Sie in diesem Blog-Post: <a href='../../blog/2022-01-11-cwa-omikron' target='_blank'>Wird die CWA an die Omikron-Variante angepasst?</a>",
+                                    "<b>AKTUELL</b>",
+                                    "<div class='update'>Informationen zur Corona-Warn-App und Omikron finden Sie in diesem Blog-Post: <a href='../../blog/2022-01-11-cwa-omikron' target='_blank'>Wird die CWA an die Omikron-Variante angepasst?</a></div>",
                                     "Bisher wurde die Risiko-Ermittlung am 23.02.2021, am 19.03.2021 und am 16.04.2021 verbessert und angepasst. Weitere Informationen finden Sie in unserem Blog:",
                                     "<ul><li><a href='../../blog/2021-02-23-corona-warn-app-risk-calculation-optimization/' target='_blank' >23.02.2021 - Risikoberechnung der Corona-Warn-App nach detaillierten Tests weiter angepasst</a></li><li><a href='../../blog/2021-03-19-risk-calculation-improvement/' target='_blank' >19.03.2021 - Die Risikoberechnung der Corona-Warn-App wird weiter verbessert</a></li><li><a href='../../blog/2021-04-16-corona-warn-app-risk-calculation-further-improved/' target='_blank' >16.04.2021 - Das Projektteam verbessert die Risikoberechnung der Corona-Warn-App in Reaktion auf die Infektionslage</a></li></ul>",
                                     "Wir werden auch weiterhin die Risiko-Ermittlung in Bezug auf das Virus überwachen und sie, falls nötig, verbessern.<hr/>",
@@ -3399,7 +3476,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App noch luca-Qr-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App noch luca-Qr-Codes gescannt werden.</div>",
                                     "Die Corona-Warn-App kann QR-Codes, die für die Eventregistrierung mit der luca-App erstellt wurden, scannen und einen eigenen Check-in-Prozess durchführen. Die luca-App konnte die QR-Codes der Corona-Warn-App nicht einlesen."
                                 ]
                             },
@@ -3409,7 +3486,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an.</div>",
                                     "Die Mitnutzung der luca-QR-Codes durch die Corona-Warn-App, die für Eventregistrierungen und Check-ins eingesetzt werden kann, bringt keine weiteren Änderungen für die Nutzenden mit sich.",
                                     "CWA-Nutzende können weiterhin ohne Eingabe von Kontaktdaten am CWA-System teilnehmen, während die Kontaktdaten von luca-Nutzenden im Fall einer Kontaktnachverfolgung ausschließlich vom zuständigen Gesundheitsamt entschlüsselt werden konnten."
                                 ]
@@ -3420,7 +3497,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an.</div>",
                                     "Die von der luca-App generierten QR-Codes für den Check-in-Prozess können weiterhin von der Corona-Warn-App (CWA) eingelesen werden.",
                                     "Scannen Nutzende der Corona-Warn-App den QR-Code, werden sie automatisch in den Check-in-Bereich der CWA geführt. Weitere Informationen zu dem Prozess finden Sie hier: <a href='../../blog/2021-10-11-cwa-most-important-features/' target='_blank'>Warum die Corona-Warn-App gerade jetzt wichtig ist (Blog)</a>"
                                 ]
@@ -3431,7 +3508,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.</div>",
                                     "Mit Hilfe der Corona-Warn-App können Nutzende sich z.&nbsp;B. bei einer Veranstaltung einchecken. Werden sie später positiv auf SARS-CoV-2 getestet, können sie mit Hilfe der Corona-Warn-App andere Teilnehmende der gleichen Veranstaltung unverzüglich warnen. Dabei ist es egal, ob der QR-Code ursprünglich von der Corona-Warn-App oder der luca-App erzeugt wurde."
                                 ]
                             },
@@ -3441,7 +3518,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.</div>",
                                     "Um den Prozess der Eventregistrierung (Check-in) zu vereinfachen, kann die Corona-Warn-App QR-Codes, die luca ausgestellt hat, 'mitnutzen'. Das heißt: Die Corona-Warn-App kann den QR-Code, den luca ausgestellt hat, lesen und verarbeiten."
                                 ]
                             },
@@ -3451,7 +3528,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.</div>",
                                     "Stand Herbst 2021: Angesichts steigender Inzidenzen und mit Blick auf die nächsten Wochen und Monate, in denen sich das Leben vermehrt in Innenräumen abspielt, ist es wichtig, den Check-in-Prozess zu vereinfachen, zu beschleunigen und mit einem QR-Code zu versehen, der von beiden Apps eingelesen werden kann.",
                                     "Der Prozess der Integration hatte einige Zeit in Anspruch genommen, um den hohen Datenschutzansprüchen der CWA gerecht zu werden."
                                 ]
@@ -3462,7 +3539,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.</div>",
                                     "Die Daten der Corona-Warn-App waren und sind sicher. Die Mitnutzung bezieht sich nur auf die QR-Codes, die für Eventregistrierung und Check-in genutzt werden. Corona-Warn-App und luca-App sind weiterhin unterschiedliche Angebote mit unterschiedlichen Zielsetzungen. Beim Scannen eines luca-QR-Codes mit der Corona-Warn-App werden keine zusätzlichen Daten erfasst.",
                                     "Die Mitnutzung der QR-Codes wurde sorgfältig vorbereitet. Alle sicherheitsrelevanten Aspekte wurden in enger Zusammenarbeit sowohl mit dem BfDI als auch mit dem BSI ausgearbeitet und geprüft.",
                                     "Zudem arbeitet die Corona-Warn-App weiterhin sehr datensparsam."
@@ -3482,7 +3559,7 @@
                                 "active": false,
                                 "textblock": [
                                     "<b>Aktualisiert am 15.07.2022</b>",
-                                    "Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.<hr>",
+                                    "<div class='update'>Anmerkung: Die luca-App bietet seit dem Frühjahr 2022 keine Eventregistrierung (Check-In-Funktionalität) mehr an. Dennoch können mit der Corona-Warn-App weiterhin luca-QR-Codes gescannt werden.</div>",
                                     "Die Corona-Warn-App und luca basieren auf unterschiedlichen Ansätzen und verfolgen unterschiedliche Ziele.",
                                     "Die Corona-Warn-App ermöglicht eine schnelle Warnung von Personen nach dem Peer-to-Peer-Prinzip. Diese Warnung erfolgt pseudonym über die Corona-Warn-App selbst.",
                                     "Die luca-App hingegen dient zum damaligen Zeitpunkt hauptsächlich der digitalen Erfassung von Kontaktdaten der Teilnehmenden einer Veranstaltung. Im Infektionsfall hat sie die Kontaktdaten der positiv auf SARS-CoV-2 getesteten Person an das zuständige Gesundheitsamt übergeben. Dieses kontaktiert dann alle Personen, die denselben QR-Code gescannt haben.",

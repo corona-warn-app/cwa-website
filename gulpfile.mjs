@@ -127,7 +127,10 @@ function copyBlogImgs() {
   return gulp.src(['blog/**/*', '!blog/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/blog/'));
 }
 function copyScienceBlogImgs() {
-  return gulp.src(['science/**/*', '!science/**/*.md']).pipe(gulp.dest(PATHS.dist + '/assets/img/science/'));
+  return gulp.src(['science/**/*', '!science/**/*.md'])
+  .pipe(gulp.dest(function(file) {
+    return file.extname === '.mp4' ? PATHS.dist + '/assets/video' : PATHS.dist + '/assets/img/science/';
+  }));
 }
 
 // Prepare blog .md files to be used as HTML
@@ -157,7 +160,9 @@ function analyseData() {
     })
     .catch((e) => {
       const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
-      if (!fs.existsSync('public/dashboard')) {fs.mkdirSync('public'); fs.mkdirSync('public/assets'); fs.mkdirSync('public/assets/dashboard');};
+      if (!fs.existsSync('public/assets/dashboard')) {
+        fs.mkdirSync('public/assets/dashboard');
+      }
       return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, { flag: 'w' });
     });
 }
@@ -525,11 +530,11 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + '/**/*.html', PATHS.dist + '/**/*.json'])
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
     .pipe(replace('[ios.minimum-app-version]', '1.5.3'))
-    .pipe(replace('[ios.current-app-version]', '3.0.1'))
+    .pipe(replace('[ios.current-app-version]', '3.1.0'))
     .pipe(replace('[android.latest-os-version]', '13'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
     .pipe(replace('[android.minimum-app-version]', '1.0.4'))
-    .pipe(replace('[android.current-app-version]', '3.0.2'))
+    .pipe(replace('[android.current-app-version]', '3.1.1'))
     .pipe(gulp.dest(PATHS.dist));
 }
 
