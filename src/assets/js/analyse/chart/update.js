@@ -16,6 +16,7 @@ const selfWarningAnnotation = {
   key: 'self-test-submission',
   label_de: 'Warnen ohne TAN',
   label_en: 'Warning without TAN',
+  targetCharts: ['chart2', 'chart3'],
   dataPoints: {
     daily: `__${DateTime.fromISO('2023-01-18').toLocaleString({ day: '2-digit', month: 'short', year: '2-digit' })}__`,
     weekly: documentLang == 'de' ? '__KW 03 2023__' : '__CW 03 2023__',
@@ -111,25 +112,27 @@ const update = async function (
     };
   };
 
-  const annotationPosition = calculateAnnotationPosition();
+  if (selfWarningAnnotation.targetCharts.includes(id)) {
+    const annotationPosition = calculateAnnotationPosition();
 
-  ApexCharts.exec(id, 'clearAnnotations');
+    ApexCharts.exec(id, 'clearAnnotations');
 
-  ApexCharts.exec(id, 'addXaxisAnnotation', {
-    x: mode === 'weekly' ? selfWarningAnnotation.dataPoints.weekly : selfWarningAnnotation.dataPoints.daily,
-    strokeDashArray: 0,
-    borderColor: '#775DD0',
-    label: {
-      orientation: 'horizontal',
-      textAnchor: annotationPosition.textAnchor,
-      offsetX: annotationPosition.offsetX,
-      offsetY: 5,
-      text: documentLang == 'de' ? selfWarningAnnotation.label_de : selfWarningAnnotation.label_en,
-      style: {
-        background: '#775DD0',
+    ApexCharts.exec(id, 'addXaxisAnnotation', {
+      x: mode === 'weekly' ? selfWarningAnnotation.dataPoints.weekly : selfWarningAnnotation.dataPoints.daily,
+      strokeDashArray: 0,
+      borderColor: '#775DD0',
+      label: {
+        orientation: 'horizontal',
+        textAnchor: annotationPosition.textAnchor,
+        offsetX: annotationPosition.offsetX,
+        offsetY: 5,
+        text: documentLang == 'de' ? selfWarningAnnotation.label_de : selfWarningAnnotation.label_en,
+        style: {
+          background: '#775DD0',
+        },
       },
-    },
-  });
+    });
+  }
 
   // render custom legend
   renderLegend(opt);
