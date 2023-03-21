@@ -37,7 +37,10 @@
                             {
                                 "title": "Hier werden bald generelle Themen zum Ende der Entwicklung der Corona-Warn-App publiziert.",
                                 "anchor": "ramp_down",
-                                "active": false
+                                "active": false,
+                                "textblock": [
+                                    ""
+                                ]
                             }
                         ]
                     },
@@ -49,7 +52,10 @@
                             {
                                 "title": "Hier werden wir darüber informieren, welche funktionalen Auswirkungen das Ende der Entwicklungsarbeiten an der CWA hat.",
                                 "anchor": "ramp_down_effects",
-                                "active": false
+                                "active": false,
+                                "textblock": [
+                                    ""
+                                ]
                             }
                         ]
                     },
@@ -61,7 +67,10 @@
                             {
                                 "title": "Hier bereiten wir Antworten zu Fragen vor, welche Möglichkeiten es nach Ende der Entwicklungsarbeiten an der CWA künftig noch gibt.",
                                 "anchor": "ramp_down_alternatives",
-                                "active": false
+                                "active": false,
+                                "textblock": [
+                                    ""
+                                ]
                             }
                         ]
                     }
@@ -2814,7 +2823,7 @@
                                 "anchor": "update_faq",
                                 "active": false,
                                 "textblock": [
-                                    "Die letzten inhaltlichen Änderungen an FAQ-Artikeln wurden am 21. Februar 2023 getätigt.",
+                                    "Die letzten inhaltlichen Änderungen an FAQ-Artikeln wurden am 20. März 2023 getätigt.",
                                     "<hr>",
                                     "Das Open-Source-Team der Corona-Warn-App aktualisiert diese FAQ regelmäßig und hält sie auf dem aktuellsten Stand. Wann die letzten Aktualisierungen erfolgten und welche Änderungen vorgenommen wurden, können Sie dem Änderungsverlauf auf <a href='#glossary_github' target='_blank'>GitHub</a> entnehmen.",
                                     "Siehe: <a href='https://github.com/corona-warn-app/cwa-website/commits/master/src/data/faq_de.json' target='_blank' rel='noopener noreferrer'>GitHub: Änderungsverlauf des Deutschen Corona-Warn-App FAQs</a>"
@@ -3131,7 +3140,8 @@
                                 "anchor": "anonymous",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Aktualisiert am 31. Januar 2023</b>",
+                                    "<b>Aktualisiert am 20. März 2023</b>",
+                                    "<div class='update'>Das \"Interoperability Gateway\" (<a href='#glossary_efgs' target='_blank'>European Federation Gateway Service</a>; <a href='#glossary_efgs' target='_blank'>EFGS</a>) wurde im Februar 2023 EU-weit abgeschaltet. Es findet kein Austausch der Warnmeldungen über das Gateway mehr statt und die Corona-Warn-App meldet Ihnen somit auch keine Warnungen mehr, die in Apps anderer Länder ausgelöst wurden.</div>",
                                     "Die Geräte in Ihrer Nähe sammeln pseudonyme Rolling Proximity Identifiers (RPI, rollierende Näherungs-IDs). Das sind IDs, die den Datenschutz sicherstellen und sich regelmäßig in kurzen Abständen ändern und so eine Nachverfolgung des Geräts verhindern. Neben diesen speziellen IDs sammeln die Geräte in Ihrer Nähe keine weiteren Informationen von Ihrem Gerät. Diese IDs können lediglich mit ebenfalls pseudonymen Diagnoseschlüsseln ('Positivkennungen') verknüpft werden, um die Begegnungserkennung durchzuführen. Eine Verknüpfung mit Benutzerkennungen oder der Seriennummer (IMEI) Ihres Geräts ist nicht möglich.",
                                     "Da sich diese IDs alle 10 bis 20 Minuten ändern, könnte z.&nbsp;B. eine Person, die jeden Tag im Bus neben Ihnen sitzt, Sie selbst nicht mit einer ID in Verbindung bringen, wenn die Liste der verfügbaren RPIs einsehbar wäre. Nur wenn Sie die Erlaubnis erteilen, dass Ihre Positivkennung per teleTAN hochgeladen wird, identifizieren Sie sich auch. Diese Identifizierung dient nur der Verifizierung und legt außer den ohnehin schon vorhandenen Informationen zur Identifizierung keine weiteren Angaben offen. Sollten Sie trotzdem noch Bedenken haben, könnten Sie dafür ein anderes Gerät als das verwenden, auf dem Sie die Corona-Warn-App installiert haben. Seit der Version 3.0 der Corona-Warn-App wird keine teleTAN mehr benötigt, um ein positives Testergebnis zu teilen, welches nicht in die Corona-Warn-App übermittelt wurde.",
                                     "<b>Warum wurden anfänglich Dummyschlüssel (fingierte Diagnoseschlüssel) erzeugt und genutzt?</b><br/>Eine sehr geringe Anzahl an Diagnoseschlüssel könnte möglicherweise dazu führen, dass übermittelte Diagnoseschlüssel einem einzelnen Nutzer zugeordnet werden können. Um dieses Risiko zu minimieren wurden anfangs fingierte Diagnoseschlüssel (Dummyschlüssel) erzeugt. Dadurch wurde die Anzahl der im System vorhandenen Diagnoseschlüssel erhöht, um so das beschriebene Re-Identifizierungsrisiko zu minimieren",
@@ -3759,7 +3769,7 @@
                 {
                     "term": "European Federation Gateway Service (EFGS)",
                     "anchor": "efgs",
-                    "description": "Eine zentrale Infrastruktur, welche dazu dient, <a href='#glossary_diagnosis_key' target='_blank'>Diagnoseschlüssel</a> über Ländergrenzen hinweg auszutauschen und zu prüfen."
+                    "description": "<p><b>Aktualisiert am 20. März 2023</b></p>Eine zentrale Infrastruktur, welche dazu diente, <a href='#glossary_diagnosis_key' target='_blank'>Diagnoseschlüssel</a> über Ländergrenzen hinweg auszutauschen und zu prüfen. Sie wurde im Februar 2023 EU-weit abgeschaltet. Es findet kein Austausch der Warnmeldungen über das Gateway mehr statt und die Corona-Warn-App meldet Ihnen somit auch keine Warnungen mehr, die in Apps anderer Länder ausgelöst wurden."
                 },
                 {
                     "term": "Event Registrierung",

@@ -37,7 +37,10 @@
                             {
                                 "title": "General topics about the end of development of the Corona-Warn-App will soon be published here.",
                                 "anchor": "ramp_down",
-                                "active": false
+                                "active": false,
+                                "textblock": [
+                                    ""
+                                ]
                             }
                         ]
                     },
@@ -49,7 +52,10 @@
                             {
                                 "title": "Here we will inform you about the functional impacts of the end of development work on the CWA.",
                                 "anchor": "ramp_down_effects",
-                                "active": false
+                                "active": false,
+                                "textblock": [
+                                    ""
+                                ]
                             }
                         ]
                     },
@@ -61,7 +67,10 @@
                             {
                                 "title": "Here we are preparing answers to questions about what options there will be after the end of development work on the CWA.",
                                 "anchor": "ramp_down_alternatives",
-                                "active": false
+                                "active": false,
+                                "textblock": [
+                                    ""
+                                ]
                             }
                         ]
                     }
@@ -2809,7 +2818,7 @@
                                 "anchor": "update_faq",
                                 "active": false,
                                 "textblock": [
-                                    "The last content changes to FAQ articles were made on February 21, 2023.",
+                                    "The last content changes to FAQ articles were made on March 20, 2023.",
                                     "<hr>",
                                     "The Corona-Warn-App open source team updates this FAQ regularly and keeps it up to date. You can see when the last updates were made and what changes were made in the change history on <a href='#glossary_github' target='_blank'>GitHub</a>.",
                                     "See: <a href='https://github.com/corona-warn-app/cwa-website/commits/master/src/data/faq.json' target='_blank' rel='noopener noreferrer'>GitHub: English Corona-Warn-App FAQ Change History</a>"
@@ -3126,7 +3135,8 @@
                                 "anchor": "anonymous",
                                 "active": false,
                                 "textblock": [
-                                    "<b>Updated January 31, 2023</b>",
+                                    "<b>Updated March 20, 2023</b>",
+                                    "<div class='update'>The \"Interoperability Gateway\" (<a href='#glossary_efgs' target='_blank'>European Federation Gateway Service</a>; <a href='#glossary_efgs' target='_blank'>EFGS</a>) was deactivated EU-wide in February 2023. There is no more exchange of warnings via the gateway and the Corona-Warn-App will therefore no longer report warning messages triggered in apps from other countries.</div>",
                                     "Devices in close proximity to yours collect “rolling proximity identifiers” (RPI). These are IDs that guarantee data privacy and change constantly in short intervals, thereby preventing devices from being tracked. Apart from these IDs, other devices in close proximity cannot retrieve any other information from your device. These IDs can only be linked to pseudonymous diagnosis keys, which are needed to perform risk identification. A connection with user IDs or your device's International Mobile Equipment Identity (IMEI) is not possible.",
                                     "Since these IDs change every 10 - 20 minutes, a person sitting next to you every day in a bus could not link you to an ID even if the list of available RPIs was visible. The only time you must identify yourself is if you give your consent to upload your diagnosis keys via a teleTAN. This identification is just for verification reasons and does not disclose any other personal information. You could even use a different device to upload your diagnosis keys instead of the device on which the Corona-Warn-App is installed. Since version 3.0 of the Corona-Warn-App, a teleTAN is no longer required to share a positive test result that has not been submitted to the Corona-Warn-App.",
                                     "<b>Why were dummy keys (fake diagnosis keys) initially created and used?</b><br/>A very small number of dummy keys could possibly result in transmitted diagnosis keys being assigned to a single user. To minimize this risk, fake diagnosis keys (dummy keys) were initially generated. This increased the number of diagnosis keys in the system in order to minimize the described re-identification risk.",
@@ -3738,7 +3748,7 @@
                 {
                     "term": "European Federation Gateway Service (EFGS)",
                     "anchor": "efgs",
-                    "description": "A central infrastructure that is used to exchange and check <a href='#glossary_diagnosis_key' target='_blank'>diagnosis keys</a> across national borders."
+                    "description": "<p><b>Updated March 20, 2023</b></p>A central infrastructure that was used to exchange and check <a href='#glossary_diagnosis_key' target='_blank'>diagnosis keys</a> across national borders. It was deactivated in February 2023. There is no more exchange of warnings via the gateway and the Corona-Warn-App will therefore no longer report warning messages triggered in apps from other countries."
                 },
                 {
                     "term": "Event-driven User Surveys (EDUS)",
