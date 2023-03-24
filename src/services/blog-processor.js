@@ -102,10 +102,11 @@ const createPageEntry =  (folderName, mdData, lang) => {
   const pageName = mdData.data['page-name'];
   validatePageName(folderName, pageName);
 
+  let entryType = 'short';
   if (mdData.content.includes('<!-- overview -->')) {
     const contentBelowOverview = mdData.content.split('<!-- overview -->')[1];
-    if (contentBelowOverview.trim().length === 0) {
-      entryType = 'short';
+    if (contentBelowOverview.trim().length > 0) {
+    entryType = 'long';
     }
   }
   
@@ -125,7 +126,7 @@ const createPageEntry =  (folderName, mdData, lang) => {
 
   if (entry.type === 'short') {
     entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, 'to-blog');
-  } else {
+  } else if (entry.type === 'long') {
     entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, 'read-more');
   }
   entry.blogContent = generateBlogEntry(entry, entry.htmlContent, lang);
