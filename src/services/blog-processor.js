@@ -37,10 +37,13 @@ const getAuthors = (authors) => {
   }
 }
 
-const generateBlogEntry = (blog, content, lang, showButton = false) => {
+const generateBlogEntry = (blog, content, lang, showButton) => {
   let button = '', headline = '';
-  if (showButton) {
+  if (showButton === 'read-more') {
     button = `<p><a href="${blog.slug}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].readMore}</a></p>`;
+    headline = `<h2 class="headline">${blog.title}</h2>`;
+  } else if (showButton === 'to-blog') {
+    button = `<p><a href="${blog.slug}" class="btn btn-lg btn-secondary blog-read-more">${data[lang].toBlog}</a></p>`;
     headline = `<h2 class="headline">${blog.title}</h2>`;
   } else {
     headline = `<h1 class="headline headline-heavy">${blog.title}</h1>`;
@@ -99,6 +102,13 @@ const createPageEntry =  (folderName, mdData, lang) => {
   const pageName = mdData.data['page-name'];
   validatePageName(folderName, pageName);
 
+  if (mdData.content.includes('<!-- overview -->')) {
+    const contentBelowOverview = mdData.content.split('<!-- overview -->')[1];
+    if (contentBelowOverview.trim().length === 0) {
+      entryType = 'short';
+    }
+  }
+  
   const entry = {
     date,
     dateFormatted: formatDate(date, lang),
@@ -106,13 +116,18 @@ const createPageEntry =  (folderName, mdData, lang) => {
     folderName,
     pageDescription: mdData.data['page-description'],
     slug: `${date}-${pageName}`,
+    type: mdData.data.type || entryType,
     author: mdData.data.author,
     redirect: mdData.data.redirect,
     htmlOverview: replaceImagePaths(marked(mdData.content.split('<!-- overview -->')[0]), folderName),
     htmlContent: replaceImagePaths(marked(mdData.content), folderName)
   };
 
-  entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, true);
+  if (entry.type === 'short') {
+    entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, 'to-blog');
+  } else {
+    entry.blogOverview = generateBlogEntry(entry, entry.htmlOverview, lang, 'read-more');
+  }
   entry.blogContent = generateBlogEntry(entry, entry.htmlContent, lang);
   return entry;
 }
