@@ -23,6 +23,17 @@ const selfWarningAnnotation = {
   },
 };
 
+const testVAnnotation = {
+  key: 'test-v-changes',
+  label_de: 'TestV Anpassungen',
+  label_en: 'TestV adjustments',
+  targetCharts: ['chart1', 'chart2', 'chart3'],
+  dataPoints: {
+    daily: `__${DateTime.fromISO('2023-03-01').toLocaleString({ day: '2-digit', month: 'short', year: '2-digit' })}__`,
+    weekly: documentLang == 'de' ? '__KW 09 2023__' : '__CW 09 2023__',
+  },
+};
+
 const update = async function (
   { barthreshold, categories, data, date, keys, mode, range, reallabels, switchId, tabs1, tabs2, tooltipDate, updated },
   i
@@ -101,9 +112,9 @@ const update = async function (
   ApexCharts.exec(id, 'updateOptions', opt, true, false, false);
 
   // update and set annotations
-  const calculateAnnotationPosition = () => {
+  const calculateAnnotationPosition = (annotation) => {
     const dataPointIndex = categories.findIndex((category) =>
-      Object.values(selfWarningAnnotation.dataPoints).includes(category)
+      Object.values(annotation.dataPoints).includes(category)
     );
     const magicNum = (dataPointIndex / categories.length) * 100;
     return {
@@ -112,10 +123,10 @@ const update = async function (
     };
   };
 
-  if (selfWarningAnnotation.targetCharts.includes(id)) {
-    const annotationPosition = calculateAnnotationPosition();
+  ApexCharts.exec(id, 'clearAnnotations');
 
-    ApexCharts.exec(id, 'clearAnnotations');
+  if (selfWarningAnnotation.targetCharts.includes(id)) {
+    const annotationPosition = calculateAnnotationPosition(selfWarningAnnotation);
 
     ApexCharts.exec(id, 'addXaxisAnnotation', {
       x: mode === 'weekly' ? selfWarningAnnotation.dataPoints.weekly : selfWarningAnnotation.dataPoints.daily,
@@ -129,6 +140,26 @@ const update = async function (
         text: documentLang == 'de' ? selfWarningAnnotation.label_de : selfWarningAnnotation.label_en,
         style: {
           background: '#775DD0',
+        },
+      },
+    });
+  }
+
+  if (testVAnnotation.targetCharts.includes(id)) {
+    const annotationPosition = calculateAnnotationPosition(testVAnnotation);
+    
+    ApexCharts.exec(id, 'addXaxisAnnotation', {
+      x: mode === 'weekly' ? testVAnnotation.dataPoints.weekly : testVAnnotation.dataPoints.daily,
+      strokeDashArray: 0,
+      borderColor: '#b2578d',
+      label: {
+        orientation: 'horizontal',
+        textAnchor: annotationPosition.textAnchor,
+        offsetX: annotationPosition.offsetX,
+        offsetY: 25,
+        text: documentLang == 'de' ? testVAnnotation.label_de : testVAnnotation.label_en,
+        style: {
+          background: '#b2578d',
         },
       },
     });
