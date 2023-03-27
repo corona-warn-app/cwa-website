@@ -144,9 +144,7 @@ function filterData(dataOrg, date, mode){
 	out.barthreshold = (out.range <= barThreshold[mode]);
 	out.categories = out.reallabels.map(e => {
 		let d = DateTime.fromISO(e);
-		//our.range is changed from 28 to 1000 
-		//Due to this issue https://github.com/corona-warn-app/cwa-website/issues/2414
-		d = (mode == "daily")? d.toLocaleString((out.range <= 1000 )? { day: "2-digit", month: 'short' , year: '2-digit'}: { month: 'short', year: '2-digit' }): d.toFormat((documentLang == "de")? "'KW' WW": "'CW' WW"); 
+		d = (mode == "daily")? d.toLocaleString({ day: "2-digit", month: 'short' , year: '2-digit'}): d.toFormat((documentLang == "de")? "'KW' WW yyyy": "'CW' WW yyyy"); 
 		return  `__${d}__`;
 	});
 	out.tooltipDate = out.reallabels.map(o => (mode == "weekly")? DateTime.fromISO(o).toFormat((documentLang == "de")? "'KW' WW": "'CW' WW") + " - " + DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE): DateTime.fromISO(o).toLocaleString(DateTime.DATE_HUGE));
