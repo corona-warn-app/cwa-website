@@ -4,19 +4,9 @@ import { share, switchMap, catchError, tap } from 'rxjs/operators';
 import chartConfig from './chart/config.js';
 import _get from 'lodash/get';
 
-
-const fallBack = function(){
-	return fromFetch(analyseConfig.fallbackFile).pipe(
-		switchMap(response => ((response.ok)? response.json(): of({ error: true, message: `Error ${response.status}` }))),
-		catchError(err => of({ error: true, message: err.message }))
-	);
-}
-
-const data$ = fromFetch(analyseConfig.fetchUrl).pipe(
-	switchMap(response => ((response.ok)? response.json(): fallBack())),
-	catchError(err => fallBack()),
-	tap(e => {sanityCheck(e[0])}),
-	share()
+const data$ = fromFetch(analyseConfig.dataFile).pipe(
+	switchMap(response => ((response.ok)? response.json(): of({ error: true, message: `Error ${response.status}` }))),
+	catchError(err => of({ error: true, message: err.message }))
 );
 
 
