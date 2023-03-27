@@ -30,31 +30,160 @@
                 "icon": "/assets/img/icons/info_faq.svg",
                 "sections": [
                     {
-                        "title": "General Questions",
+                        "title": "General questions",
                         "id": "ramp_down_general",
                         "indexed": true,
                         "accordion": [
                             {
-                                "title": "General topics about the end of development of the Corona-Warn-App will soon be published here.",
+                                "title": "What is the background for the end of the development of the CWA?",
                                 "anchor": "ramp_down",
                                 "active": false,
                                 "textblock": [
-                                    ""
+                                    "Considering increased population immunity, easily transmissible viral variants, and a return to public life (mostly) without Corona measures, a contact tracing app is currently no longer needed. Beginning June 1, 2023, the CWA will be placed in a hibernation mode. Until April 30, 2023, it will be possible to warn other users through the CWA regarding an increased risk of infection.",
+                                    "However, the CWA will remain on users' devices; vaccination certificates can thus continue to be used if needed.",
+                                    "FAQ articles on general questions can be found <a href='#ramp_down_general' target='_blank'>here</a>, FAQ articles on implications regarding the app functions <a href='#ramp_down_effects' target='_blank'>here</a> and FAQ articles on alternatives <a href='#ramp_down_alternatives' target='_blank'>here</a>."
+                                ]
+                            },
+                            {
+                                "title": "Is the CWA going to stay available for download in the Apple and Google app stores?",
+                                "anchor": "ramp_down_stores",
+                                "active": false,
+                                "textblock": [
+                                    "The CWA will be available in the app stores of Apple and Google until May 31, 2023.",
+                                    "Whether the CWA will still be available and/or downloadable on other platforms is not known by us and is the responsibility of the respective operators of these platforms or software distribution channels."
+                                ]
+                            },
+                            {
+                                "title": "Will the CWA Twitter account continue to serve after May 31, 2023?",
+                                "anchor": "ramp_down_twitter",
+                                "active": false,
+                                "textblock": [
+                                    "The CWA Twitter account will keep you informed with updates on the CWA until further notice and will announce on time when this account will be closed (and other social media channels)."
+                                ]
+                            },
+                            {
+                                "title": "Will reproducible builds/APKs still be provided? Is a community-operated backend supported?",
+                                "anchor": "ramp_down_apk",
+                                "active": false,
+                                "textblock": [
+                                    "No, no reproducible builds or APKs are provided by the CWA development (APK...Android Package Kit = package format to build the app locally by yourself).",
+                                    "However, it is possible (albeit with considerable effort) to set up the required infrastructure in the community itself and run it productively based on the provided documentation. Please note, support for this setup will not be provided by BMG and RKI."
+                                ]
+                            },
+                            {
+                                "title": "What happens to the source code? Will it remain accessible on GitHub? Will it still be maintained?",
+                                "anchor": "ramp_down_github",
+                                "active": false,
+                                "textblock": [
+                                    "Yes, the source code of the CWA will remain accessible in the GitHub repositories. The duration of the source code's reachability will be based on GitHub's processes and policies.",
+                                    "Until May 31, 2023, the source code will be maintained as part of CWA development.",
+                                    "For handling bug reports and bug fixes in GitHub, see also  FAQ: <a href='#ramp_down_reports' target='_blank'>What if the app has malfunctions/has errors, will they not be fixed? Can I still report those bugs?</a>"
+                                ]
+                            },
+                            {
+                                "title": "Until when is the CWA mailbox read and processed?",
+                                "anchor": "ramp_down_mailbox",
+                                "active": false,
+                                "textblock": [
+                                    "Until May 31, 2023 there will be community support, in which incoming messages will be read and answered if applicable."
+                                ]
+                            },
+                            {
+                                "title": "What happens with my personal data in the emails?",
+                                "anchor": "ramp_down_mailbox_data",
+                                "active": false,
+                                "textblock": [
+                                    "An automatic deletion is set up for the CWA mailbox: All emails that are now in our CWA mailbox or still reach that mailbox will be deleted irreversibly without replacement, after 6 months at the latest, to ensure the protection of your data."
+                                ]
+                            },
+                            {
+                                "title": "What happens to the CWA's website at www.coronawarn.app?",
+                                "anchor": "ramp_down_website",
+                                "active": false,
+                                "textblock": [
+                                    "The <a href='../../' target='_blank'>Corona-Warn-App website</a> will continue to be reachable. Among other things, the Science Blog will be updated with new articles."
+                                ]
+                            },
+                            {
+                                "title": "What happens to the EFGS for cross-country risk determination? How long will this service continue to run?",
+                                "anchor": "ramp_down_efgs",
+                                "active": false,
+                                "textblock": [
+                                    "The participating member states agreed to discontinue the EFGS (European Federation Gateway Service) in February 2023. This means all countries, including Germany, have been detached from the EFGS."
                                 ]
                             }
                         ]
                     },
                     {
-                        "title": "Impacts",
+                        "title": "Impact",
                         "id": "ramp_down_effects",
                         "indexed": true,
                         "accordion": [
                             {
-                                "title": "Here we will inform you about the functional impacts of the end of development work on the CWA.",
-                                "anchor": "ramp_down_effects",
+                                "title": "Which functions remain in the app after the end of development?",
+                                "anchor": "ramp_down_features",
                                 "active": false,
                                 "textblock": [
-                                    ""
+                                    "Even after the end of the development work on the CWA, you can still access your already scanned digital certificates and you can use the contact diary. However, you will not be able to scan any more certificates or to renew existing certificates. You will also no longer receive notifications about the certificates. Additionally, you can still view statistics of the Pandemic Radar; you can find a corresponding link on the status screen of the app.",
+                                    "In Release 3.2, functionality has been reduced, but this will not be activated until May 1, 2023. Up to and including April 30, 2023, releases 3.1 and 3.2 of the app will therefore not differ in functionality."
+                                ]
+                            },
+                            {
+                                "title": "Can I still obtain test results/digital test certificates via the app?",
+                                "anchor": "ramp_down_tests",
+                                "active": false,
+                                "textblock": [
+                                    "No, this will also no longer be possible from April 20, 2023 onwards, since the connection of the test centers to the CWA infrastructure is no longer available. To retrieve test results and lab reports, please use the app of the respective provider or laboratory."
+                                ]
+                            },
+                            {
+                                "title": "After a positive test result, can I continue to warn others via the CWA?",
+                                "anchor": "ramp_down_warn",
+                                "active": false,
+                                "textblock": [
+                                    "You can still warn other CWA users about a positive test result until April 30, 2023."
+                                ]
+                            },
+                            {
+                                "title": "Am I still able to issue event QR codes for the CWA?",
+                                "anchor": "ramp_down_qr_codes",
+                                "active": false,
+                                "textblock": [
+                                    "Generation of new QR codes will be possible until April 30, 2023."
+                                ]
+                            },
+                            {
+                                "title": "Can I still check-in and warn others if I have an existing event QR code?",
+                                "anchor": "ramp_down_check_in",
+                                "active": false,
+                                "textblock": [
+                                    "No, warning via the event QR codes is no longer possible due to the missing infrastructure. Therefore, the app will also no longer offer this function in release 3.2 starting May 1, 2023"
+                                ]
+                            },
+                            {
+                                "title": "What if the app has malfunctions/has errors, will they not be fixed? Can I still report those bugs?",
+                                "anchor": "ramp_down_reports",
+                                "active": false,
+                                "textblock": [
+                                    "Until April 30, 2023, error reports can still be transmitted to the development team. After this date, any bugs and errors can be reported until May 31, 2023. However, bug fixes can only be produced for errors received up to May 15, 2023. Accordingly, issues can also no longer be opened on GitHub as of May 16, 2023."
+                                ]
+                            },
+                            {
+                                "title": "If I remove the app, will random identifiers for encounters no longer be exchanged?",
+                                "anchor": "ramp_down_exchange",
+                                "active": false,
+                                "textblock": [
+                                    "The exchange of random identifiers for contact tracing is done by the ENF (Exposure Notification Framework) as part of your operating system of your smartphone. To ensure the ENF is also deactivated after uninstalling the CWA, please proceed as follows:",
+                                    "<details><summary>Step-by-step guide: iOS</summary><ul><li>In the \"Exposure Notifications\" section of your iPhone's settings, make sure that the Corona-Warn-App for the region \"Germany\" is used, not any other app, as well as that exposure logging is still active. <div><img src='/assets/img/faq/ramp_down_exchange_iPhone_1_EN.png' width=300></div></li><li>Uninstall the Corona-Warn-App from your iPhone</li><li>You should have now received a notification that nearby devices will no longer be logged and you will no longer be notified of possible encounters. <div><img src='/assets/img/faq/ramp_down_exchange_iPhone_2_EN.png' width=300></div></li><li>Return to the \"Exposure Notifications\" settings by tapping on the previously received notification. <div><img src='/assets/img/faq/ramp_down_exchange_iPhone_3_EN.png' width=300></div></li><li>Now tap on \"Turn Off Exposure Notifications\"</li><li>A notice will appear at the bottom of your iPhone stating that disabling the ENF will delete all data and messages. Proceed with this by tapping \"Turn Off and Delete Data\". <div><img src='/assets/img/faq/ramp_down_exchange_iPhone_4_EN.png' width=300></div></li><li>Now the Exposure Notifications on your iPhone are completely disabled. <div><img src='/assets/img/faq/ramp_down_exchange_iPhone_5_EN.png' width=300></div></ul></details>",
+                                    "<details><summary>Step-by-step guide: Android</summary><ul><li>Open the \"COVID-19 Exposure Notifications\" in the settings of your smartphone and disable the \"Use Exposure Notifications\" checkbox. <div><img src='/assets/img/faq/ramp_down_exchange_Android_1_EN.png' width=300></div></li><li>If not already done, uninstall the Corona-Warn-App from the smartphone.</li><li>Then go to \"COVID-19 Exposure Notifications\" in the settings again and check that neither the app nor a region is configured for notifications <div><img src='/assets/img/faq/ramp_down_exchange_Android_2_EN.png' width=300></div></details>"
+                                ]
+                            },
+                            {
+                                "title": "Can I still use the app to warn if I do not update it to the latest version?",
+                                "anchor": "ramp_down_version",
+                                "active": false,
+                                "textblock": [
+                                    "Even with an older version of the CWA, you can still trigger a warning until April 30, 2023. After that, however, the warning of others will no longer be possible."
                                 ]
                             }
                         ]
@@ -65,11 +194,28 @@
                         "indexed": true,
                         "accordion": [
                             {
-                                "title": "Here we are preparing answers to questions about what options there will be after the end of development work on the CWA.",
-                                "anchor": "ramp_down_alternatives",
+                                "title": "What happens to the CovPass apps? Will they be discontinued as well? If yes, when?",
+                                "anchor": "ramp_down_covpass",
                                 "active": false,
                                 "textblock": [
-                                    ""
+                                    "The CovPass apps will continue to be operated in alignment with the validity terms of the legal principles under European law. The relevant EU Regulation 2021/953 is currently valid until June 30, 2023."
+                                ]
+                            },
+                            {
+                                "title": "Can I get my data from the app? Is there a backup option?",
+                                "anchor": "ramp_down_backup",
+                                "active": false,
+                                "textblock": [
+                                    "Yes, to backup your certificates please use the single export (on the certificate detail view) or export certificates functions for group export of all certificates to a PDF file. A guidance on how to export certificates can be found here in the FAQ: <a href='#eu_dcc_export' target='_blank'>How do I create a printout of EU Digital COVID Certificates?</a>",
+                                    "To backup your data from the contact diary, please use the “Export Entries” function in the diary. You can find more information about this in the <a href='../../blog/2020-12-28-corona-warn-app-version-1-10/' target='_blank'>blog article for the contact diary</a>"
+                                ]
+                            },
+                            {
+                                "title": "Can I transfer my data/certificates to other apps?",
+                                "anchor": "ramp_down_transfer",
+                                "active": false,
+                                "textblock": [
+                                    "Certificates exported from the Corona-Warn-App can usually be registered in other apps as well, provided they have such an import function."
                                 ]
                             }
                         ]
