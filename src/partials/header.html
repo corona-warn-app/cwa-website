@@ -1,3 +1,10 @@
+<div class="col-sm-12 text-center banner pt-2 pb-2">
+  {{#if lang_de}}
+    {{{global.banner.de}}}
+  {{else}}
+    {{{global.banner.en}}}
+  {{/if}}
+</div>
 <header class="header{{#unless page-name}}{{#ifpage 'index'}} header_home{{/ifpage}}{{/unless}}{{#ifequal page-name 'index'}} header_home{{/ifequal}}{{#if header-cls}} header-cls{{/if}}">
   <div class="container">
   {{#unless lang_de}}
