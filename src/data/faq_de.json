@@ -45,12 +45,22 @@
                                 ]
                             },
                             {
+                                "title": "Was kann ich jetzt tun? Was muss ich wissen?",
+                                "anchor": "ramp_down_info",
+                                "active": false,
+                                "textblock": [
+                                    "Nach dem 30. April 2023 stehen die Funktionalitäten des Erkennens von Begegnungen mit anderen aktiven Corona-Warn-App-Systemen und die Erzeugung sowie der Austausch von Zufalls-IDs nicht mehr zur Verfügung. Diese Funktionalitäten werden deaktiviert. Zu diesem Zeitpunkt bereits vorhandene Begegnungsinformationen werden gelöscht.",
+                                    "Das „Exposure Notification Framework“ (ENF) können Sie zudem manuell deaktivieren. Hinweise dazu finden Sie in den <a href='#ramp_down_exchange' target='_blank'>FAQ zu den Zufalls-Kennungen</a>.",
+                                    "Mit dem Beginn des sogenannten Ruhemodus wird die technische Weiterentwicklung der Corona-Warn-App beendet und gleichzeitig werden die vorhandenen Funktionen des Systems reduziert. Sie können bei Bedarf Ihre importierten Zertifikate (Impfung bzw. Genesung) sichern (s.&nbsp;a. die Hinweise in der <a href='#ramp_down_backup' target='_blank'>FAQ zum Backup der Daten</a>). Gleiches gilt für den Export der Einträge Ihres Kontakttagebuchs.",
+                                    "Die exportierten Daten werden zunächst lokal auf Ihrem Gerät gespeichert und liegen außerhalb der Reichweite der Corona-Warn-App. Eine Sicherung der Daten außerhalb des Geräts muss von Ihnen selber durchgeführt werden. Bei einer eventuell später erfolgenden Deinstallation der Corona-Warn-App von Ihrem Gerät werden exportierte Daten nicht automatisch mit entfernt und müssen von Ihnen bei Bedarf manuell gelöscht werden."
+                                ]
+                            },
+                            {
                                 "title": "Wird die App weiterhin in den Stores von Apple und Google zum Download zur Verfügung stehen?",
                                 "anchor": "ramp_down_stores",
                                 "active": false,
                                 "textblock": [
-                                    "Die Corona-Warn-App wird noch bis einschließlich 31. Mai 2023 in den Appstores von Apple und Google verfügbar sein.",
-                                    "Ob die CWA danach noch auf anderen Plattformen heruntergeladen werden kann, ist uns nicht bekannt und liegt in der Verantwortung der jeweiligen Plattform-Betreiber."
+                                    "Die Corona-Warn-App wird noch bis einschließlich 31. Mai 2023 in den Appstores von Apple und Google verfügbar sein."
                                 ]
                             },
                             {
@@ -66,8 +76,8 @@
                                 "anchor": "ramp_down_apk",
                                 "active": false,
                                 "textblock": [
-                                    "Nein, von der CWA-Entwicklung werden keine reproduzierbaren Builds oder APKs (Android Package Kit als Paket-Format, um sich die App lokal selbst zu erstellen) bereitgestellt.",
-                                    "Grundsätzlich ist es aber möglich, auf Basis der bereitgestellten Dokumentation die benötigte Infrastruktur in der Community selbst aufzusetzen und produktiv zu betreiben. Support dafür wird es seitens BMG und RKI nicht geben."
+                                    "Nein, von der CWA-Entwicklung werden keine reproduzierbaren Builds oder APKs (Android Package Kit als Paket-Format, um die App lokal selbst zu installieren) bereitgestellt.",
+                                    "Grundsätzlich ist es aber möglich, auf Basis der bereitgestellten Dokumentation die benötigte Infrastruktur in der Community selbst aufzusetzen und produktiv zu betreiben. Support dafür wird es seitens BMG oder RKI nicht geben."
                                 ]
                             },
                             {
@@ -125,7 +135,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Auch nach dem 1. Juni 2023 können Sie noch auf Ihre bereits eingescannten Zertifikate zugreifen und das Kontakt-Tagebuch benutzen. Sie können allerdings keine weiteren Zertifikate hinzufügen oder bestehende Zertifikate erneuern. Sie erhalten auch keine Benachrichtigungen zu Ihren Zertifikaten mehr. Außerdem können Sie noch Statistiken des Pandemieradars einsehen; einen entsprechenden Link finden sie auf der Status-Seite der App.",
-                                    "Im Release 3.2 wurde eine Reduktion der Funktionalität umgesetzt, die aber erst zum 1. Mai 2023 aktiviert wird. Bis einschließlich 30. April 2023 werden sich die Releases 3.1 und 3.2 der App daher funktional nicht unterscheiden."
+                                    "Im Release 3.2 wird eine Reduktion der Funktionalität umgesetzt, die aber erst zum 1. Mai 2023 aktiviert wird. Bis einschließlich 30. April 2023 unterscheiden sich die Releases 3.1 und 3.2 der App daher funktional nicht."
                                 ]
                             },
                             {
@@ -133,7 +143,7 @@
                                 "anchor": "ramp_down_tests",
                                 "active": false,
                                 "textblock": [
-                                    "Dies wird nur noch bis 19. April 2023 möglich sein, wenn die Infrastruktur abgeschaltet wird. Bitte erkundigen Sie sich für den Abruf von Testergebnissen und Laborbefunden bei dem jeweiligen Anbieter."
+                                    "Dies wird nur noch bis 19. April 2023 möglich sein, da dann die Infrastruktur abgeschaltet wird. Bitte erkundigen Sie sich für den Abruf von Testergebnissen und Laborbefunden bei dem jeweiligen Anbieter."
                                 ]
                             },
                             {
@@ -3043,6 +3053,7 @@
                                 "anchor": "rat_differences_pcr",
                                 "active": false,
                                 "textblock": [
+                                    "<div class='update'>Ansprüche auf kostenlose Testung bestanden bis einschließlich zum 28. Februar 2023. Seitdem bestehen keine Ansprüche mehr auf kostenlose COVID-19-Testungen. Siehe <a href='https://www.bundesgesundheitsministerium.de/coronavirus/nationale-teststrategie/faq-covid-19-tests.html' target='_blank' rel='noopener noreferrer'>FAQ des BMG</a></div>",
                                     "PCR-Tests sind der 'Goldstandard' unter den Corona-Tests. Die Probenentnahme erfolgt durch medizinisches Personal – die Auswertung durch Labore.",
                                     "Antigen-Schnelltests: Haben ihren Namen, weil das Ergebnis schnell vorliegt. Sie können nur von geschultem Personal durchgeführt werden. Dafür wird ähnlich wie beim PCR-Test ein Nasen- oder Rachenabstrich gemacht. Die Auswertung erfolgt im Gegensatz zu den PCR-Test aber direkt vor Ort. Seit dem 8. März 2021 hat jeder Anspruch auf mindestens einen Schnelltest pro Woche.",
                                     "Selbsttests: Haben ihren Namen, weil jeder diese Tests selber machen kann, zum Beispiel zu Hause. Die Selbsttests sind zur Anwendung durch Privatpersonen bestimmt. Dafür muss die Probenentnahme und -auswertung entsprechend einfach sein. Der Test kann zum Beispiel mit einem Nasenabstrich oder mit Speichel erfolgen. Das Bundesinstitut für Arzneimittel und Medizinprodukte überprüft zusammen mit dem Paul-Ehrlich-Institut Qualität und Aussagekraft der Tests.",
