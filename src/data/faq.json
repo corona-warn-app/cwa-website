@@ -45,12 +45,22 @@
                                 ]
                             },
                             {
+                                "title": "What can I do now? What do I need to know?",
+                                "anchor": "ramp_down_info",
+                                "active": false,
+                                "textblock": [
+                                    "After April 30, 2023, the Corona-Warn-App will deactivate the ENF (Exposure Notification Framework). This will cause the smartphone’s operating system to stop exchanging random IDs and to delete all encounter information. ",
+                                    "The ENF can also be deactivated manually; your guidance on this can be found in the <a href='#ramp_down_exchange' target='_blank'>FAQ on random IDs</a>.",
+                                    "At the end of the Corona-Warn-App development and the cutback of the functions you can still back up your entries and certificates (see also the advice in the <a href='#ramp_down_backup' target='_blank'>FAQ on backup of data</a>).",
+                                    "The exported data falls outside the scope of CWA and is therefore the responsibility of the user.  This data must be carefully handled by the user and manually deleted if deemed necessary or requested."
+                                ]
+                            },
+                            {
                                 "title": "Is the CWA going to stay available for download in the Apple and Google app stores?",
                                 "anchor": "ramp_down_stores",
                                 "active": false,
                                 "textblock": [
-                                    "The CWA will be available in the app stores of Apple and Google until May 31, 2023.",
-                                    "Whether the CWA will still be available and/or downloadable on other platforms is not known by us and is the responsibility of the respective operators of these platforms or software distribution channels."
+                                    "The CWA will be available in the app stores of Apple and Google until May 31, 2023."
                                 ]
                             },
                             {
@@ -62,12 +72,12 @@
                                 ]
                             },
                             {
-                                "title": "Will reproducible builds/APKs still be provided? Is a community-operated backend supported?",
+                                "title": "Will reproducible builds/APKs be provided? Is a community-operated backend supported?",
                                 "anchor": "ramp_down_apk",
                                 "active": false,
                                 "textblock": [
-                                    "No, no reproducible builds or APKs are provided by the CWA development (APK...Android Package Kit = package format to build the app locally by yourself).",
-                                    "However, it is possible (albeit with considerable effort) to set up the required infrastructure in the community itself and run it productively based on the provided documentation. Please note, support for this setup will not be provided by BMG and RKI."
+                                    "No, no reproducible builds or APKs are provided by the CWA development (APK...Android Package Kit = package format to install the app locally by yourself).",
+                                    "However, it is possible (albeit with considerable effort) to set up the required infrastructure in the community itself and run it productively based on the provided documentation. Please note, support for this setup will not be provided by BMG or RKI."
                                 ]
                             },
                             {
@@ -125,7 +135,7 @@
                                 "active": false,
                                 "textblock": [
                                     "Even after the end of the development work on the CWA, you can still access your already scanned digital certificates and you can use the contact diary. However, you will not be able to scan any more certificates or to renew existing certificates. You will also no longer receive notifications about the certificates. Additionally, you can still view statistics of the Pandemic Radar; you can find a corresponding link on the status screen of the app.",
-                                    "In Release 3.2, functionality has been reduced, but this will not be activated until May 1, 2023. Up to and including April 30, 2023, releases 3.1 and 3.2 of the app will therefore not differ in functionality."
+                                    "A reduction in functionality will be implemented in Release 3.2, but this will not be activated until May 1, 2023. Up to and including April 30, 2023, releases 3.1 and 3.2 of the app will therefore not differ in functionality."
                                 ]
                             },
                             {
@@ -3075,6 +3085,7 @@
                                 "anchor": "rat_differences_pcr",
                                 "active": false,
                                 "textblock": [
+                                    "<div class='update'>Entitlements to free testing existed up to and including February 28, 2023, and since then, there have been no entitlements to free COVID-19 testing. See <a href='https://www.bundesgesundheitsministerium.de/coronavirus/nationale-teststrategie/faq-covid-19-tests.html' target='_blank' rel='noopener noreferrer'>FAQ of the Federal Ministry of Health (German)</a></div>",
                                     "PCR tests are the 'gold standard' among corona tests. Sampling is performed by medical personnel - evaluation by laboratories.",
                                     "Rapid antigen tests: Have their name because the result is available quickly. They can only be performed by trained personnel. Similar to the PCR test, a nasal or throat swab is taken. However, in contrast to the PCR test, the evaluation takes place directly on site. Since March 8, 2021, everyone is entitled to at least one rapid test per week.",
                                     "Self-tests: Have their name because anyone can do these tests themselves, for example at home. The self-tests are intended for use by private individuals. For this purpose, sample collection and evaluation must be appropriately simple. The test can be performed with a nasal swab or saliva, for example. The Federal Institute for Drugs and Medical Devices, together with the Paul Ehrlich Institute, checks the quality and significance of the tests.",
