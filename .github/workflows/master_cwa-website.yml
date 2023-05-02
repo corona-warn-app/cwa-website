@@ -44,31 +44,6 @@ jobs:
       # https://github.com/s3tools/s3cmd/issues/643
       - name: Remove python3-magic due to s3cmd incompatibility
         run: sudo dpkg --remove --force-depends python3-magic
-        
-      - name: Zip artifact for deployment
-        run: zip release.zip public -r
-        
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: cwa-website
-          path: release.zip
-          
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: cwa-website
-          
-      - name: unzip artifact for deployment
-        run: unzip release.zip
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
