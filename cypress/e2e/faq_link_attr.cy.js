@@ -7,6 +7,11 @@ describe("Check attributes of FAQ links", () => {
     const faqResultsUrl = '/faq/results/';
     const languages = ["en", "de"];
 
+    // This works around some timeout issues
+    beforeEach(() => {
+        cy.visit('/')
+    })
+
     describe("Check links are using _blank to open in new frame", () => {
 
         const containers = [
