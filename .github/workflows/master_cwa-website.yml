@@ -51,5 +51,5 @@ jobs:
         with:
           app-name: 'cwa-website'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_03FDC8296FD34A30A37D15B4D3359576 }}
+          publish-profile: ${{ secrets.DIGITAL_CUISINE_DEPLOYMENT }}
           package: public
