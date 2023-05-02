@@ -15,7 +15,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    if: "github.repository == 'corona-warn-app/cwa-website'"
+    # if: "github.repository == 'corona-warn-app/cwa-website'"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
