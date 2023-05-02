@@ -10,8 +10,7 @@ on:
 
 jobs:
   Cypress-Test-Production:
-#    runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       NO_COLOR: true
       TERM: xterm
