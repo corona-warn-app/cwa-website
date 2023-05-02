@@ -1,4 +1,4 @@
-name: Deploy Website
+name: Deploy Website Digital Cuisine
 # Test locally with act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 -j prod
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -44,12 +44,15 @@ jobs:
       # https://github.com/s3tools/s3cmd/issues/643
       - name: Remove python3-magic due to s3cmd incompatibility
         run: sudo dpkg --remove --force-depends python3-magic
-      
+        
+      - name: Zip artifact for deployment
+        run: zip release.zip public -r
+        
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: cwa-website
-          path: public
+          path: release.zip
           
   deploy:
     runs-on: windows-latest
@@ -63,6 +66,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: cwa-website
+          
+      - name: unzip artifact for deployment
+        run: unzip release.zip
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -71,4 +77,4 @@ jobs:
           app-name: 'cwa-website'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_03FDC8296FD34A30A37D15B4D3359576 }}
-          package: .
+          package: public
