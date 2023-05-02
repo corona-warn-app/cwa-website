@@ -6,7 +6,7 @@ import { DateTime, Settings } from 'luxon';
 Settings.defaultLocale = documentLang;
 
 const dateLocaleFormat = (documentLang == "de")? "dd'.'LL'.'yyyy": "dd'/'LL'/'yyyy";
-const now = (DateTime.local() < DateTime.fromISO("2023-04-30")) ? DateTime.local() : DateTime.fromISO("2023-04-30");
+const now = DateTime.fromISO("2023-04-30");
 
 
 
