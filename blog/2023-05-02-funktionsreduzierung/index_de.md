@@ -17,7 +17,7 @@ Nutzerinnen und Nutzer haben aber weiterhin Zugriff auf ihre **bereits gescannte
 
 **Hinweis:** Features, die die CWA-Infrastruktur benötigen, also z.&nbsp;B. die Risiko-Ermittlung, der Abruf von Testergebnissen, das Warnen anderer oder Check-Ins, **funktionieren auch in älteren Versionen seit gestern nicht mehr.**
 
-Die Entwicklung und Betreuung der Corona-Warn-App enden dann, angesichts einer gewachsenen Immunität der Bevölkerung, leicht übertragbarer Virusvarianten und der Rückkehr zu einem öffentlichen Leben (weitgehend) ohne Corona-Maßnahmen, am 1. Juni 2023. Die [CWA-Website](../../) wird aber zunächst weiterbetrieben. Dort sollen auch zukünftig noch u.a. Forschungsergebnisse zur Nutzung der App veröffentlicht werden.
+Die Entwicklung und Betreuung der Corona-Warn-App enden dann, angesichts einer gewachsenen Immunität der Bevölkerung, leicht übertragbarer Virusvarianten und der Rückkehr zu einem öffentlichen Leben (weitgehend) ohne Corona-Maßnahmen, am 1. Juni 2023. Die [CWA-Website](../../) wird aber zunächst weiterbetrieben. Dort sollen auch zukünftig noch u.&nbsp;a. Forschungsergebnisse zur Nutzung der App veröffentlicht werden.
 
 Antworten auf Fragen zum Ende der CWA-Entwicklung finden Sie in den [FAQ](../../faq/results/#ramp_down).
 
