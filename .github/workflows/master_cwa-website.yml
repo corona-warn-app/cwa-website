@@ -55,14 +55,12 @@ jobs:
 #          package: public
           
       - name: Deployment 
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          server: ${{ secrets.DEPLOYMENT_SERVER }}
-          username: ${{ secrets.DEPLOYMENT_USER }}
+          host: ${{ secrets.DEPLOYMENT_SERVER }}
+          user: ${{ secrets.DEPLOYMENT_USER }}
           password: ${{ secrets.DEPLOYMENT_PASS }}
-          protocol: ftps
-          security: strict
-          port: 990
-          local-dir: public/
-          server-dir: '/site/wwwroot/'
-    
+          localDir: "public"
+          remoteDir: "/site/wwwroot"
+          forceSsl: true
+
