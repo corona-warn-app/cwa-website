@@ -1,38 +1,49 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
+name: Deploy Website
+# Test locally with act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 -j prod
 
-name: Build and deploy ASP.Net Core app to Azure Web App - cwa-website
-
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
 on:
   push:
-    branches:
-      - master
-  workflow_dispatch:
-
+    branches: ["master"]
+  schedule:
+    - cron: '0 11 * * *'
+    - cron: '0 17 * * *'
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "prod"
   build:
-    runs-on: windows-latest
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    if: "github.repository == 'corona-warn-app/cwa-website'"
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
+      - name: Install requirements
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
+          sudo apt-get install -y libnode-dev libssl-dev automake npm nodejs libpng-dev libjpeg-dev s3cmd
 
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v1
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js 18 environment
+        uses: actions/setup-node@v3
         with:
-          dotnet-version: '6.0.x'
-          include-prerelease: true
+          node-version: 'lts/hydrogen'
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
+      - name: npm install
+        run: npm install
 
-      - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      - name: gulp build
+        run: npm run build
 
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+      - name: keepalive.html
+        run: echo "OK" > public/keepalive.html
+      
+      # https://github.com/s3tools/s3cmd/issues/643
+      - name: Remove python3-magic due to s3cmd incompatibility
+        run: sudo dpkg --remove --force-depends python3-magic
 
   deploy:
     runs-on: windows-latest
