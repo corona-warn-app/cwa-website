@@ -62,6 +62,6 @@ jobs:
           password: ${{ secrets.DEPLOYMENT_PASS }}
           protocol: ftps
           port: 990
-          local-dir: public
-          server-dir: '/site/wwwroot'
+          local-dir: public/
+          server-dir: '/site/wwwroot/'
     
