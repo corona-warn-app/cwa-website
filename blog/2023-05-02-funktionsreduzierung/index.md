@@ -21,7 +21,7 @@ The development and support of the Corona-Warn-App will then end on June 1, 2023
 
 Answers to questions about the end of CWA development can be found in the [FAQ](../../faq/results/#ramp_down).
 
-As an alternative to the CWA, you can use the [CovPass app](https://digitaler-impfnachweis-app.de/en) to manage your certificates; we also recommend [NINA](https://bbk.bund.de/DE/Warning-Prevention/Warning-App-NINA/warn-app-nina_node.html) if you want to receive important warnings for a variety of danger situations.
+As an alternative to the CWA, you can use the [CovPass app](https://digitaler-impfnachweis-app.de/en) to manage your certificates; we also recommend [NINA](https://www.bbk.bund.de/EN/International-Visitors/international-visitors_node.html) if you want to receive important warnings for a variety of danger situations.
 
 To date, the Corona-Warn-App has been downloaded more than 48 million times. According to estimates, there were at least 25 million active users of the app last year alone. During the peak of the pandemic, 270 laboratories and 20,000 testing sites were connected. More than 240 million test results could thus be made available digitally. A total of nine million positive test results were shared.
 
