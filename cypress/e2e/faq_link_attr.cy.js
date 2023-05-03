@@ -25,9 +25,8 @@ describe("Check attributes of FAQ links", () => {
                 cy.visit(faqUrl);
                 containers.forEach(container => {
                     cy.get(container).find("a:not([href*='mailto:'],[href*='tel:'],[href$='#top'],.faq-anchor,.email)")
-                        .each(($el) => {
-                            softExpect($el, ($el).prop('href') + " in " + faqUrl).to.have.attr('target', '_blank');
-                        });
+                        .not("[target='_blank']")
+                        .should("have.length", 0);
                 });
             });
         });
@@ -53,9 +52,8 @@ describe("Check attributes of FAQ links", () => {
                 let faqUrl = "/" + lang + faqResultsUrl;
                 cy.visit(faqUrl);
                 cy.get("a:not([href^='https://'])[target='_blank']")
-                    .each(($el) => {
-                        softExpect($el, ($el).prop('href') + " in " + faqUrl).not.to.have.attr('rel');
-                    });
+                    .filter("[rel]")
+                    .should("have.length", 0);
             });
         });
     });
