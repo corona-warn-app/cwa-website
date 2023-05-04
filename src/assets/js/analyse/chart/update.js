@@ -36,7 +36,7 @@ const testVAnnotation = {
 
 const testInfrastructureShutdownAnnotation = {
   key: 'test-infrastructure-shutdown',
-  label_de: 'Abschaltung der Test-Infrastruktur',
+  label_de: 'Abschaltung der Testinfrastruktur',
   label_en: 'Test infrastructure shutdown',
   targetCharts: ['chart1'],
   dataPoints: {
