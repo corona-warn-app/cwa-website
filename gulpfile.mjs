@@ -71,8 +71,8 @@ gulp.task(
     cleanScienceBlogs,
     buildBlogFiles,
     buildScienceBlogFiles,
-    analyseData,
     cwaaJs,
+    analyseData,
     javascript,
     gulp.parallel(pages, images_minify, copy, copyFAQs, copyFAQRedirects, copyFAQsDuplicate, copyBlogEntries),
     images_webp,
@@ -147,24 +147,18 @@ function buildScienceBlogFiles(done) {
 }
 
 function analyseData() {
-  async function fallbackdataFn() {
-    const response = await fetch(analyseConfig.fetchUrl, { method: 'GET' });
-    const data = await response.json();
-    return JSON.stringify(data);
-  }
-
-  return fallbackdataFn()
-    .then((e) => {
-      fs.writeFileSync('src/data/analyse-backup.json', e, { flag: 'w' });
-      return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, e);
-    })
-    .catch((e) => {
-      const data = fs.readFileSync('src/data/analyse-backup.json', 'utf8');
+  return new Promise((resolve, reject) => {
+    try {
+      const data = fs.readFileSync('src/data/analyse-data.json', 'utf8');
       if (!fs.existsSync('public/assets/dashboard')) {
         fs.mkdirSync('public/assets/dashboard');
       }
-      return fs.writeFileSync(`./public/${analyseConfig.fallbackFile}`, data, { flag: 'w' });
-    });
+      fs.writeFileSync(`./public/${analyseConfig.dataFile}`, data, { flag: 'w' });
+      resolve();
+    } catch (err) {
+      reject(err);
+    }
+  });
 }
 
 // Copy page templates into finished HTML files
@@ -530,7 +524,7 @@ function replaceVersionNumbers() {
     .src([PATHS.dist + '/**/*.html', PATHS.dist + '/**/*.json'])
     .pipe(replace('[ios.minimum-required-os-version]', '12.5'))
     .pipe(replace('[ios.minimum-app-version]', '1.5.3'))
-    .pipe(replace('[ios.current-app-version]', '3.2.0'))
+    .pipe(replace('[ios.current-app-version]', '3.2.1'))
     .pipe(replace('[android.latest-os-version]', '13'))
     .pipe(replace('[android.minimum-required-os-version]', '6'))
     .pipe(replace('[android.minimum-app-version]', '1.0.4'))
