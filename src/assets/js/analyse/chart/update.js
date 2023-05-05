@@ -34,6 +34,17 @@ const testVAnnotation = {
   },
 };
 
+const testInfrastructureShutdownAnnotation = {
+  key: 'test-infrastructure-shutdown',
+  label_de: 'Abschaltung der Testinfrastruktur',
+  label_en: 'Test infrastructure shutdown',
+  targetCharts: ['chart1'],
+  dataPoints: {
+    daily: `__${DateTime.fromISO('2023-04-21').toLocaleString({ day: '2-digit', month: 'short', year: '2-digit' })}__`,
+    weekly: documentLang == 'de' ? '__KW 16 2023__' : '__CW 16 2023__',
+  },
+};
+
 const update = async function (
   { barthreshold, categories, data, date, keys, mode, range, reallabels, switchId, tabs1, tabs2, tooltipDate, updated },
   i
@@ -160,6 +171,26 @@ const update = async function (
         text: documentLang == 'de' ? testVAnnotation.label_de : testVAnnotation.label_en,
         style: {
           background: '#b2578d',
+        },
+      },
+    });
+  }
+
+  if (testInfrastructureShutdownAnnotation.targetCharts.includes(id)) {
+    const annotationPosition = calculateAnnotationPosition(testInfrastructureShutdownAnnotation);
+    
+    ApexCharts.exec(id, 'addXaxisAnnotation', {
+      x: mode === 'weekly' ? testInfrastructureShutdownAnnotation.dataPoints.weekly : testInfrastructureShutdownAnnotation.dataPoints.daily,
+      strokeDashArray: 0,
+      borderColor: '#7ab2cf',
+      label: {
+        orientation: 'horizontal',
+        textAnchor: annotationPosition.textAnchor,
+        offsetX: annotationPosition.offsetX,
+        offsetY: 0,
+        text: documentLang == 'de' ? testInfrastructureShutdownAnnotation.label_de : testInfrastructureShutdownAnnotation.label_en,
+        style: {
+          background: '#7ab2cf',
         },
       },
     });
