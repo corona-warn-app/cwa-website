@@ -2,6 +2,11 @@
 <section class="section component qrgenerator comment">
   <div class="container">
     <div class="container-inner container-inner_lg">
+      <div>
+        {{#each page-contents.section-notice.textblock}}
+        <p>{{{.}}}</p>
+        {{/each}}
+      </div>
       <h1 class="h2 headline">{{page-contents.section-main.headline.title}}</h1>
 
       <p>{{page-contents.section-main.intro}}</p>
