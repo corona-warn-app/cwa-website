@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Cypress run
-        run: npx cypress run -s 'cypress/e2e/*.js,!cypress/e2e/faq_link_attr.cy.js' -c baseUrl=https://www.coronawarn.app --e2e --headless --browser chrome
+        run: npx cypress run -s 'cypress/e2e/*.js' -c baseUrl=https://www.coronawarn.app --e2e --headless --browser chrome
         env:
           # See issue https://github.com/cypress-io/cypress/issues/25357
           ELECTRON_EXTRA_LAUNCH_ARGS: '--disable-gpu'
