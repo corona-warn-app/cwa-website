@@ -2,7 +2,17 @@
 <section class="comment">
   <div class="container">
     <div class="container-inner contents-normal comment">
-      
+      <div>
+        {{#if lang_de}}
+          {{#each page-contents.de.section-notice.textblock}}
+          <p>{{{.}}}</p>
+          {{/each}}
+        {{else}}
+          {{#each page-contents.en.section-notice.textblock}}
+          <p>{{{.}}}</p>
+          {{/each}}
+        {{/if}}
+      </div>
       {{#if lang_de}}
       <h1 class="headline headline-heavy">
         {{page-contents.de.headline.title}}

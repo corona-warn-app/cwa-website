@@ -49,14 +49,11 @@ jobs:
       - name: Remove python3-magic due to s3cmd incompatibility
         run: sudo dpkg --remove --force-depends python3-magic
 
-      - name: Upload files to S3
-        run: |
-          s3cmd --version
-          s3cmd sync --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --follow-symlinks --no-mime-magic --guess-mime-type --exclude "*.js" --exclude "*.css" ./public/* s3://${{secrets.AWS_S3_BUCKET }}
-          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --follow-symlinks -m 'text/css' --exclude "*" --include "*.css" ./public/* s3://${{secrets.AWS_S3_BUCKET }}
-          s3cmd put --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive --acl-public --follow-symlinks -m 'text/javascript' --exclude "*" --include "*.js" ./public/* s3://${{secrets.AWS_S3_BUCKET }}
-
-      - name: Set mime type for FAQ redirects
-        run: |
-          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/de/faq/
-          s3cmd --access_key=${{ secrets.AWS_ACCESS_KEY_ID }} --secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }} --verbose --human-readable-sizes --stop-on-error --region=${{ secrets.AWS_REGION }} --host=${{ secrets.AWS_S3_ENDPOINT }} --host-bucket=${{ secrets.AWS_S3_ENDPOINT }} --recursive modify --add-header='content-type':'text/html' s3://${{secrets.AWS_S3_BUCKET }}/en/faq/
+      - name: Deployment to Staging
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'cwa-website'
+          slot-name: 'staging'
+          publish-profile: ${{ secrets.DIGITAL_CUISINE_DEPLOYMENT }}
+          package: public
