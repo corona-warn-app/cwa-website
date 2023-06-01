@@ -7,7 +7,7 @@ author: CWA-Team, 10:00 am
 layout: blog
 ---
 
-Today marks the end of more than three years of development work on one of the most important digital projects in the pandemic: the Corona Warning App. Since its launch on June 16, 2020, the CWA has been downloaded more than 48 million times. More than nine million alerts have been triggered since then, and many millions of people have been notified of risk encounters with red and green tiles on their smartphones.
+Today marks the end of more than three years of development work on one of the most important digital projects in the pandemic: the Corona-Warn-App. Since its launch on June 16, 2020, the CWA has been downloaded more than 48 million times. More than nine million alerts have been triggered since then, and many millions of people have been notified of risk encounters with red and green tiles on their smartphones.
 
 <!-- overview -->
 
