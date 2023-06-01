@@ -60,7 +60,7 @@
                                 "anchor": "ramp_down_stores",
                                 "active": false,
                                 "textblock": [
-                                    "The CWA will be available in the app stores of Apple and Google until May 31, 2023."
+                                    "The CWA will be available in the app stores of Apple and Google until mid June 2023."
                                 ]
                             },
                             {
@@ -95,7 +95,7 @@
                                 "anchor": "ramp_down_mailbox",
                                 "active": false,
                                 "textblock": [
-                                    "Until May 31, 2023 there will be community support, in which incoming messages will be read and answered if applicable."
+                                    "The community support, which includes reading and answering messages (if applicable) received by <a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>, will continue until May 31, 2023. After that, the mailbox <a href='CoronaWarnApp...RKI...de' class='email'>CoronaWarnApp...RKI...de</a> will still be available, which is planned to be maintained until the end of 2023."
                                 ]
                             },
                             {
@@ -103,7 +103,7 @@
                                 "anchor": "ramp_down_mailbox_data",
                                 "active": false,
                                 "textblock": [
-                                    "An automatic deletion is set up for the CWA mailbox: All emails that are now in our CWA mailbox or still reach that mailbox will be deleted irreversibly without replacement, after 6 months at the latest, to ensure the protection of your data."
+                                    "Automatic deletion is set up for the CWA mailbox of SAP (<a href='corona-warn-app.opensource...sap...com' class='email'>corona-warn-app.opensource...sap...com</a>): All emails that are now in our CWA mailbox or still reach that mailbox will be completely deleted, after 6 months at the latest, to ensure the protection of your data."
                                 ]
                             },
                             {
@@ -194,6 +194,23 @@
                                 "active": false,
                                 "textblock": [
                                     "Even with an older version of the CWA, you can still trigger a warning until April 30, 2023. After that, however, the warning of others will no longer be possible."
+                                ]
+                            },
+                            {
+                                "title": "Why do I get a notification from my iPhone that exposure notifications have been disabled?",
+                                "anchor": "ramp_down_iOS",
+                                "active": false,
+                                "textblock": [
+                                    "If you have iOS 16.4 or later installed on your iPhone, you will receive a notification on June 1, 2023 informing you that exposure notifications have been disabled. This notification is not issued by the Corona-Warn-App, but directly by the operating system.",
+                                    "<b>Important:</b> Since May 1, 2023, the Corona-Warn-App no longer performs exposure checks. If no other country's contact tracing app is installed that uses your operating system's ENF (Exposure Notification Framework), exposure logging by the operating system will no longer be active and random IDs will not be exchanged with other devices via the ENF."
+                                ]
+                            },
+                            {
+                                "title": "Why am I being redirected to the Corona-Warn-App website?",
+                                "anchor": "ramp_down_redirect",
+                                "active": false,
+                                "textblock": [
+                                    "Various domains (Internet addresses) were part of the Corona-Warn-App open source project. The resources (services, web pages) that were available through these domains were removed when the Corona-Warn-App development ended on May 31, 2023. If you try to access these resources, you will be redirected to the Corona-Warn-App website. For more information, click here: <a href='#ramp_down' target='_blank'> What is the background for the end of the development of the CWA?</a>"
                                 ]
                             }
                         ]
