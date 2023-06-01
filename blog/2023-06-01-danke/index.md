@@ -1,6 +1,6 @@
 ---
-page-title: 'The Corona-Warn-App team says &#34;Thank You!&#34;'
-page-description: 'The Corona-Warn-App team says &#34;Thank You!&#34;'
+page-title: 'The Corona-Warn-App team says “Thank You!”'
+page-description: 'The Corona-Warn-App team says “Thank You!”'
 page-name: thank-you
 page-name_de: thank-you
 author: CWA-Team, 10:00 am
