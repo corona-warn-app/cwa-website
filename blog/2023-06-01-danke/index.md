@@ -1,6 +1,6 @@
 ---
-page-title: 'The Corona-Warn-App team says &#34;Thank You!&#34;'
-page-description: 'The Corona-Warn-App team says &#34;Thank You!&#34;'
+page-title: 'The Corona-Warn-App team says “Thank You!”'
+page-description: 'The Corona-Warn-App team says “Thank You!”'
 page-name: thank-you
 page-name_de: thank-you
 author: CWA-Team, 10:00 am
@@ -23,10 +23,8 @@ In addition to the core function of receiving test results and warning others in
 
 You can read about how the app worked [here](../../science/).
 
-A special thanks to the CWA community that has formed around the project over the last three years. The work of the community has improved the app. 
-
-Thanks to everyone who has contributed to the Corona-Warn-App development process on [GitHub](https://github.com/corona-warn-app), made suggestions for improvements or new features, and reported bugs. 
-
+A special thanks to the CWA community that has formed around the project over the last three years. The work of the community has improved the app.
+Thanks to everyone who has contributed to the Corona-Warn-App development process on [GitHub](https://github.com/corona-warn-app), made suggestions for improvements or new features, and reported bugs.
 Thanks are also due to the users who discussed, helped others, and answered questions about the app on Twitter and other social media platforms.
 
 The CWA project team would also like to thank all of the [partners](../../#partners) who have accompanied and supported the development of the app over the past few years. 
@@ -36,5 +34,3 @@ This site will remain available until further notice, and new [science blogs](..
 In the Corona-Warn-App itself, you can still access previously saved certificates and the contact diary. For more info, see the [FAQ](../../faq/).
 
 If you want to receive important warnings for different danger situations in the future, we recommend the warning app [NINA](https://www.bbk.bund.de/EN/International-Visitors/international-visitors_node.html) of the Federal Office of Civil Protection and Disaster Assistance.
-
-
