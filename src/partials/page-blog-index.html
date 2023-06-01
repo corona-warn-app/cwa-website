@@ -2,6 +2,17 @@
 <section>
   <div class="container">
     <div class="container-inner contents-normal">
+      <div>
+        {{#if lang_de}}
+          {{#each page-contents.de.section-notice.textblock}}
+          <p>{{{.}}}</p>
+          {{/each}}
+        {{else}}
+          {{#each page-contents.en.section-notice.textblock}}
+          <p>{{{.}}}</p>
+          {{/each}}
+        {{/if}}
+      </div>
       <span class="link-news-archive">
         {{#unless lang_de}}
         {{> button-link-component
