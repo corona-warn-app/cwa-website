@@ -23,13 +23,11 @@ Neben der Kernfunktion, Testergebnisse zu erhalten und bei positivem Ergebnis an
 
 Wie die App gewirkt hat, können Sie [hier](../../science/) nachlesen.
 
-Ein besonderer Dank geht an die CWA-Community, die sich in den letzten drei Jahren um das Projekt gebildet hat. Die Arbeit der Community hat die App verbessert. 
-
-Danke an alle, die sich auf [GitHub](https://github.com/corona-warn-app) in den Entwicklungsprozess der Corona-Warn-App eingebracht, Vorschläge für Verbesserungen oder neue Funktionen gemacht und Fehler gemeldet haben. 
-
+Ein besonderer Dank geht an die CWA-Community, die sich in den letzten drei Jahren um das Projekt gebildet hat. Die Arbeit der Community hat die App verbessert.
+Danke an alle, die sich auf [GitHub](https://github.com/corona-warn-app) in den Entwicklungsprozess der Corona-Warn-App eingebracht, Vorschläge für Verbesserungen oder neue Funktionen gemacht und Fehler gemeldet haben.
 Ein Dank gebührt auch den Nutzer*innen, die auf Twitter und anderen Social-Media-Plattformen diskutiert, anderen geholfen und Fragen zur App beantwortet haben.
 
-Das CWA-Projektteam bedankt sich zudem bei allen [Partnerinnen und Partnern](../../#partners), die die Entwicklung der App über die letzten Jahre begleitet und unterstützt haben. 
+Das CWA-Projektteam bedankt sich zudem bei allen [Partnerinnen und Partnern](../../#partners), die die Entwicklung der App über die letzten Jahre begleitet und unterstützt haben.
 
 Diese Website bleibt bis auf Weiteres verfügbar und es werden auch weiterhin neue [Science Blogs](../../science/) veröffentlicht. Die restlichen Inhalte dieser Seite bleiben vorerst weitgehend unverändert.
 
