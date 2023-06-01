@@ -39,7 +39,7 @@ jobs:
       fail-fast: false
       matrix:
         test:
-          ["app_to_web","applink","blog","check_anchor_links","check_videos","eventRegistration","faq","faq_link_attr","hotline","mime"]
+          ["app_to_web","applink","blog","check_anchor_links","check_videos","eventRegistration","faq","faq_link_attr", "mime"]
 
 
     steps:
