@@ -2902,4 +2902,4 @@ The RKI intends to publish further articles based on the data gathered with the 
 
 <div id="footnote1"></div>
 
-[1] [CWA data donation](../2021-06-15-science-blog-1/#data-donation) refers to the voluntary provision of usage data (Privacy Preserving Analytics, PPA) by the users of the Corona-Warn-App
+[[1]](#2-the-balancing-act-between-minimising-data-collection-and-the-need-for-data-for-research) The [CWA data donation](../2021-06-15-science-blog-1/#data-donation) refers to the voluntary provision of usage data (Privacy Preserving Analytics, PPA) by the users of the Corona-Warn-App.
