@@ -16,7 +16,7 @@ We use GitHub to manage reviews of pull requests.
 
 * If you have a trivial fix or improvement, go ahead and create a pull request, addressing (with `@...`) a suitable maintainer of this repository (see [CODEOWNERS](CODEOWNERS) of the repository you want to contribute to) in the description of the pull request.
 
-* If you plan to do something more involved, please reach out to us and send an [CoronaWarnApp@rki.de](mailto:CoronaWarnApp@rki.de). This will avoid unnecessary work and surely give you and us a good deal of inspiration.
+* If you plan to do something more involved, please reach out to us and send an email to [CoronaWarnApp@rki.de](mailto:CoronaWarnApp@rki.de). This will avoid unnecessary work and surely give you and us a good deal of inspiration.
 
 * Relevant coding style guidelines are available in the respective sub-repositories as they are programming language-dependent.
 
