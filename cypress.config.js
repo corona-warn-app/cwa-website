@@ -12,10 +12,14 @@ module.exports = defineConfig({
   responseTimeout: 50000,
   pageLoadTimeout: 100000,
   e2e: {
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      return require('./cypress/plugins/index.js')(on, config)
+      // This enables us to log to console by using cy.task("log", "Message to log")
+      on('task', {
+        log(message) {
+          console.log(message)
+          return null
+        },
+      })
     },
     baseUrl: 'http://localhost:8000',
   },

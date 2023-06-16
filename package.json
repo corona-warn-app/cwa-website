@@ -27,7 +27,7 @@
     "cypress:run:checklinks": "cypress run -s 'cypress/e2e/hybrid/check_links.cy.js' --e2e --browser chrome --headless",
     "test:checklinks:phase2": "start-server-and-test start-server http://localhost:8000 cypress:run:checklinks"
   },
-  "author": "SAP Corona-Warn-App Open Source Team <corona-warn-app.opensource@sap.com>",
+  "author": "SAP Corona-Warn-App Open Source Team",
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/core": "^7.21.3",

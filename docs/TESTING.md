@@ -71,7 +71,6 @@ The command `npm run test:short` runs all Cypress tests from the top level direc
 | check_videos       | Detects broken videos throughout the website.                                                                           |
 | eventRegistration  | Checks that all fields in event-registration exist and fills them to create a QR code.                                  |
 | faq                | Simulates an FAQ search and checks the result for mobile and desktop view.                                              |
-| hotline_spec       | Verify that Hotline App is correctly displayed on the home page.                                                        |
 | mime               | Checks that CSS and JS files have the correct [MIME](https://developer.mozilla.org/en-US/docs/Glossary/MIME_type) type. |
 
 ### `npm run test:links`
