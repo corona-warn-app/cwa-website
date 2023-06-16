@@ -2913,4 +2913,4 @@ Das RKI wird in den nächsten Wochen weitere Beiträge aus EDUS veröffentlichen
 
 <div id="footnote1"></div>
 
-[1] [CWA-Datenspende](../2021-06-15-science-blog-1/#datenspende) bezieht sich auf das freiwillige Zurverfügungstellen von Nutzungsdaten (Privacy Preserving Analytics, PPA) durch die Nutzenden der Corona-Warn-App.
+[[1]](#2-der-spagat-zwischen-datensparsamkeit-und-wissenschaftlichen-erkenntnissen) Die [CWA-Datenspende](../2021-06-15-science-blog-1/#datenspende) bezieht sich auf das freiwillige Zurverfügungstellen von Nutzungsdaten (Privacy Preserving Analytics, PPA) durch die Nutzenden der Corona-Warn-App.
