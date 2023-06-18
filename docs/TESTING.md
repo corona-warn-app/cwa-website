@@ -65,7 +65,6 @@ The command `npm run test:short` runs all Cypress tests from the top level direc
 | Cypress test name  | Purpose                                                                                                                 |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
 | app_to_web         | Checks that all links to the website used by the Android and iOS apps are working.                                      |
-| applink_spec       | Detects broken links or missing OS badges to download mobile app in home page.                                          |
 | blog_spec          | Checks if the blog archive is accessible.                                                                               |
 | check_anchor_links | Detects broken anchor links throughout the website.                                                                     |
 | check_videos       | Detects broken videos throughout the website.                                                                           |
