@@ -58,7 +58,7 @@ Die ereignisbezogene Befragung (EDUS) hat u.&nbsp;a. ergeben, dass
 
 ## 2 Der Spagat zwischen Datensparsamkeit und wissenschaftlichen Erkenntnissen
 
-Die Corona-Warn-App zeichnet sich durch ihren datensparsamen Ansatz und hohen Sicherheitsstandard aus. Abgesehen von funktionsrelevanten Daten werden keine weiteren Informationen über die Nutzenden erhoben. Damit geht einher, dass Fragen bezüglich der Funktionalität, der Wirksamkeit und des Nutzens der Corona-Warn-App nur dann detailliert beantwortet werden können, wenn auf freiwilliger Basis zusätzliche Daten erhoben werden. Möglich ist dies mit der [ereignisbezogenen Befragung](../2021-06-15-science-blog-1/#ereignisbezogenen-befragung) (<em>Event-Driven-User-Survey</em>, kurz <em>EDUS</em>), die in diesem Beitrag beleuchtet wird oder mit der [CWA-Datenspende](../2021-06-15-science-blog-1/#datenspende) [[1](#footnote1)], die in kommenden Beiträgen ausgewertet wird.
+<p> Die Corona-Warn-App zeichnet sich durch ihren datensparsamen Ansatz und hohen Sicherheitsstandard aus. Abgesehen von funktionsrelevanten Daten werden keine weiteren Informationen über die Nutzenden erhoben. Damit geht einher, dass Fragen bezüglich der Funktionalität, der Wirksamkeit und des Nutzens der Corona-Warn-App nur dann detailliert beantwortet werden können, wenn auf freiwilliger Basis zusätzliche Daten erhoben werden. Möglich ist dies mit der <a href='../2021-06-15-science-blog-1/#ereignisbezogenen-befragung' target='_blank'>ereignisbezogenen Befragung</a> (<em>Event-Driven-User-Survey</em>, kurz <em>EDUS</em>), die in diesem Beitrag beleuchtet wird oder mit der <a href='../2021-06-15-science-blog-1/#datenspende' target='_blank'>CWA-Datenspende</a> [1], <span class='aside'>[1] Die <a href='../2021-06-15-science-blog-1/#datenspende' target='_blank'>CWA-Datenspende</a> bezieht sich auf das freiwillige Zurverfügungstellen von Nutzungsdaten (Privacy Preserving Analytics, PPA) durch die Nutzenden der Corona-Warn-App.</span> die in kommenden Beiträgen ausgewertet wird.</p>
 
 ### 2.1  Event-Driven-User-Survey (EDUS)
 
@@ -169,8 +169,7 @@ Weitere Fluktuationen der täglichen Teilnehmenden-Zahlen entstanden, da an Woch
 <em>Abb. 3: EDUS Teilnehmende in Basis- und Folgebefragung und Warnende (aus CWA-Datenspende).</em>
 </p>
 </div>
-</div>
-</div>
+
 
 ## 4 Die Studienpopulation im Vergleich zur Gesamtbevölkerung
 
@@ -2908,9 +2907,3 @@ Befragte, die ihr Risiko für eine Infektion vor der Warnmeldung für hoch, eher
 
 Das RKI wird in den nächsten Wochen weitere Beiträge aus EDUS veröffentlichen. Ein Schwerpunkt wird das Thema „Warnung“ sein und die Frage, wie sich die Nutzenden verhalten haben, wenn ihnen die App ein „erhöhtes Risiko“ angezeigt hat.
 
----
-
-
-<div id="footnote1"></div>
-
-[[1]](#2-der-spagat-zwischen-datensparsamkeit-und-wissenschaftlichen-erkenntnissen) Die [CWA-Datenspende](../2021-06-15-science-blog-1/#datenspende) bezieht sich auf das freiwillige Zurverfügungstellen von Nutzungsdaten (Privacy Preserving Analytics, PPA) durch die Nutzenden der Corona-Warn-App.

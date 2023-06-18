@@ -59,7 +59,7 @@ Among other things, the event-driven user survey (EDUS) demonstrated:
 
 ## 2 The balancing act between minimising data collection and the need for data for research
 
-The Corona-Warn-App uses an approach that minimises data collection and implements high security standards. This means that it only collects function-relevant data and does not gather any other information about its users. In order to answer questions about the functionality, effectiveness and use of the CWA, app users were therefore asked to provide additional data on a voluntary basis. User data have been collected in this manner in two ways: through the [event-driven user survey](../2021-06-15-science-blog-1/#the-event-driven-user-survey) (<em>EDUS</em>), which is the focus of this article, and [data donation](../2021-06-15-science-blog-1/#data-donation) [[1](#footnote1)], which will be discussed in a future article.
+<p>The Corona-Warn-App uses an approach that minimises data collection and implements high security standards. This means that it only collects function-relevant data and does not gather any other information about its users. In order to answer questions about the functionality, effectiveness and use of the CWA, app users were therefore asked to provide additional data on a voluntary basis. User data have been collected in this manner in two ways: through the <a href='../2021-06-15-science-blog-1/#the-event-driven-user-survey' target='_blank'>event-driven user survey</a> (<em>EDUS</em>), which is the focus of this article, and <a href='../2021-06-15-science-blog-1/#data-donation' target='_blank'>data donation</a> [1]<span class='aside'>[1] The <a href='../2021-06-15-science-blog-1/#data-donation' target='_blank'>CWA data donation</a> refers to the voluntary provision of usage data (Privacy Preserving Analytics, PPA) by the users of the Corona-Warn-App.</span>, which will be discussed in a future article.</p>
 
 ### 2.1 Event-Driven User Surveys (EDUS)
 
@@ -2897,9 +2897,3 @@ Respondents who had believed that their risk of infection was ‘high’, ‘rat
 ## 8 What to expect in the future
 
 The RKI intends to publish further articles based on the data gathered with the EDUS in the next few weeks. One focus will be the topic of warnings and how users behave after having received a warning. 
-
----
-
-<div id="footnote1"></div>
-
-[[1]](#2-the-balancing-act-between-minimising-data-collection-and-the-need-for-data-for-research) The [CWA data donation](../2021-06-15-science-blog-1/#data-donation) refers to the voluntary provision of usage data (Privacy Preserving Analytics, PPA) by the users of the Corona-Warn-App.
