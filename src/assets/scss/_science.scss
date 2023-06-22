@@ -35,3 +35,25 @@
     background-color: #D4EAF7;
     padding: 15px;
 }
+
+/*Marginal Notes on Desktop*/
+aside, .aside {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 10vw;
+    margin-right: -14vw;
+    font-size: 14px;
+    color:grey;  
+}
+
+/*Marginal Notes on mobile*/
+@media (max-width: 768px) {
+    aside, .aside {
+    display: block;
+    float: none;
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+    font-size: 15px;
+    color:gray;
+}}
