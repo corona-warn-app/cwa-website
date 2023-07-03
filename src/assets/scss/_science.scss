@@ -37,7 +37,7 @@
 }
 
 /*Marginal Notes on Desktop*/
-aside, .aside {
+.side-note {
     display: inline;
     float: right;
     position: relative;
@@ -49,7 +49,7 @@ aside, .aside {
 
 /*Marginal Notes on mobile*/
 @media (max-width: 768px) {
-    aside, .aside {
+    .side-note {
     display: block;
     float: none;
     margin: 5% 10% 5% 10%;
