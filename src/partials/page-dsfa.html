@@ -1,0 +1,36 @@
+{{#if page-contents}}
+<section class="section">
+    <div class="container">
+        <div class="container-inner container-inner_lg">
+            <div class="row">
+                <h1 class="h2 headline">{{page-contents.section-main.headline.title}}</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="h3"><b>{{page-contents.section-main.website-headline.title}}</b></h2>
+                    <div>
+                        {{#each page-contents.section-main.website-content.textblock}}
+                        <p>{{{.}}}</p>
+                        {{/each}}
+                        {{> text-component page-contents.section-main.content}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br/>
+                {{> headline-small-component page-contents.section-main.current-version-headline}}
+                {{> text-component page-contents.section-main.current-version-content}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br/>
+                {{> headline-small-component page-contents.section-main.previous-version-headline}}
+                {{> text-component page-contents.section-main.previous-version-content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}
